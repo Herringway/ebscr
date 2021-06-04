@@ -1,0 +1,537 @@
+;///////////////////////モンスターの特殊攻撃（２／３）////////////////////////
+
+MSG_BTL_PPDOWN;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｍａｄｅ↓
+　　ｓｏｍｅｔｈｉｎｇ　ｓｐｉｎ　ａｒｏｕｎｄ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　なにかを　ぐるぐるとまわした！
+@KEY()
+@!
+
+MSG_BTL_OKORU;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｌｏｓｔ↓
+　　ｈｉｓ　ｔｅｍｐｅｒ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　つい　かっとなってしまった！
+@KEY()
+@!
+
+MSG_BTL_KITANAI_KOTOBA;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓａｉｄ↓
+　　ｓｏｍｅｔｈｉｎｇ　ｎａｓｔｙ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　きたないことばを　なげつけた！
+@SE(SE_se54_foe_word)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_SUIBUN;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｕｓｅｄ　ａ↓
+　　ｖａｃｕｕｍ　ａｔｔａｃｋ！
+;jpn:　@DSP_ACTOR()の↓
+;jpn:　すいこみ
+;jpn:こうげきだ！
+@KEY()
+@!
+
+MSG_BTL_ENERGY;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｒｅｐｌｅｎｉｓｈｅｄ　ａ↓
+　　ｆｕｅｌ　ｓｕｐｐｌｙ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　エネルギーを　ちゅうにゅうした！
+@SE(SE_se59_foe_enrgy)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_DOKU_KAMITUKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｔｏｏｋ　ａ　ｂｉｔｅ↓
+　　ｕｓｉｎｇ　ｉｔｓ　ｐｏｉｓｏｎｏｕｓ　ｆａｎｇｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　どくのきばで　かみついた！
+@KEY()
+@!
+
+MSG_BTL_YORO_MISSILE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｆｉｒｅｄ↓
+　　ａ　ｍｉｓｓｉｌｅ，　ｍａｋｉｎｇ　ｉｔｓｅｌｆ　ｄｉｚｚｙ．
+;jpn:　@DSP_ACTOR()は　よろけながら↓
+;jpn:　ミサイルを　はっしゃした！
+@SE(SE_se46_b_rocket)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_MULTI_ATTACK;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｔａｒｔｅｄ　ａ↓
+　　ｃｏｎｔｉｎｕｏｕｓ　ａｔｔａｃｋ！
+;jpn:　@DSP_ACTOR()の↓
+;jpn:　れんぞくこうげき！
+@KEY()
+@!
+
+MSG_BTL_MIGAMAE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ↓
+　　ｏｎ　ｇｕａｒｄ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　みがまえている！
+@KEY()
+@!
+
+MSG_BTL_FIREBALL;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｐｅｗｅｄ　ｏｕｔ↓
+　　ａ　ｆｌａｍｉｎｇ　ｆｉｒｅｂａｌｌ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　まっかな　ほのおを　ふきだした！
+@SE(SE_se4b_foe_burning)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_GEKITOTU;
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｒｕｓｈｅｄ　ｉｎ，↓
+　　ａｎｄ　ｉｎｔｅｒｔｗｉｎｅｄ　ｗｉｔｈ　ｙｏｕ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　からみあいながら　つっこんできた！
+@KEY()
+@!
+
+MSG_BTL_KARATE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ａｔｔａｃｋｅｄ↓
+　　ｗｉｔｈ　ａ　ｃｒｕｓｈｉｎｇ　ｃｈｏｐ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　はりてチョップを　くりだした！
+@KEY()
+@!
+
+MSG_BTL_TOMOE;
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｇｒａｐｐｌｅｄ　ａｎｄ　ｕｓｅｄ↓
+　　ｈｉｓ　ｓｕｂｍｉｓｓｉｏｎ　ｈｏｌｄ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　サブミッションを　かけてきた！
+@KEY()
+@!
+
+MSG_BTL_BOUSOU;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｒｅｖｖｅｄ　ａｎｄ　ａｃｃｅｌｅｒａｔｅｄ！↓
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ぼうそうした！
+@KEY()
+@!
+
+MSG_BTL_KNIFE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｂｒａｎｄｉｓｈｅｄ↓
+　　ａ　ｋｎｉｆｅ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ナイフを　ふりまわした！
+@KEY()
+@!
+
+MSG_BTL_TOSSIN;
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｔｏｒｅ↓
+　　ｉｎｔｏ　ｙｏｕ！
+;jpn:　@DSP_ACTOR()が↓
+;jpn:　とっしんしてきた！
+@KEY()
+@!
+
+MSG_BTL_KAMITUKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｕｓｅｄ　ａ↓
+　　ｂｉｔｉｎｇ　ａｔｔａｃｋ！
+;jpn:　@DSP_ACTOR()の↓
+;jpn:　かみつきこうげきだ！
+@KEY()
+@!
+
+MSG_BTL_HIKKAKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｃｌａｗｅｄ↓
+　　ｗｉｔｈ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｓｈａｒｐ　ｎａｉｌｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　するどいつめで　ひっかいた！
+@KEY()
+@!
+
+MSG_BTL_SIPPO;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｗｕｎｇ↓
+　　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｔａｉｌ　ｖｅｒｙ　ｈａｒｄ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　しっぽを　つよく　ふりまわした！
+@KEY()
+@!
+
+MSG_BTL_NOSHIKAKARI;
+;metamorph
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｇｒｏｗｌｅｄ↓
+　　ａｎｄ　ｌｕｎｇｅｄ　ｆｏｒｗａｒｄ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　のしかかりこうげきだ！
+;　のしかかってきた！
+@KEY()
+@!
+
+MSG_BTL_KAMIBUKURO;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｗｉｅｌｄｅｄ↓
+　　ａ　ｓｈｏｐｐｉｎｇ　ｂａｇ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　かいものぶくろを　ふりまわした！
+@KEY()
+@!
+
+MSG_BTL_KONBOU;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｗｕｎｇ↓
+　　ａ　ｃｌｕｂ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こんぼうを　ふりまわした！
+@KEY()
+@!
+
+MSG_BTL_TATUMAKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｇｅｎｅｒａｔｅｄ↓
+　　ａ　ｔｏｒｎａｄｏ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　たつまきを　おこした！
+@SE(SE_se5a_foe_tatumaki)
+@KEY()
+@!
+
+MSG_BTL_WATER;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｐｒａｙｅｄ　ａ　ｇｉｇａｎｔｉｃ　ｂｌａｓｔ　ｏｆ　ｗａｔｅｒ！↓
+;jpn:　@DSP_ACTOR()の↓
+;jpn:　はげしい　ほうすいこうげきだ！
+@KEY()
+@!
+
+MSG_BTL_FUTEKI_SMILE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｆｌａｓｈｅｄ↓
+　　ａ　ｍｅｎａｃｉｎｇ　ｓｍｉｌｅ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ぞっとするような　わらいをうかべた！
+@KEY()
+@!
+
+MSG_BTL_LOUD_SMILE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｔａｒｔｅｄ↓
+　　ｌａｕｇｈｉｎｇ　ｈｙｓｔｅｒｉｃａｌｌｙ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　おおごえで　わらいだした！
+@KEY()
+@!
+
+MSG_BTL_NIJIRIYORU;
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｅｄｇｅｄ↓
+　　ｃｌｏｓｅｒ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　にじりよってきた！
+@KEY()
+@!
+
+MSG_BTL_TUBUYAKI1;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｍｕｔｔｅｒｅｄ↓
+@MESSAGE_SOUND(2)
+　　”１．．．”
+@MESSAGE_SOUND(1)
+;;jpn:　@DSP_ACTOR()は↓
+;@MESSAGE_SOUND(2)
+;;jpn:　「１‥‥」
+;@MESSAGE_SOUND(1)
+;;jpn:とつぶやいた。
+@KEY()
+@!
+
+MSG_BTL_TUBUYAKI2;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｍｕｒｍｕｒｅｄ↓
+@MESSAGE_SOUND(2)
+　　”２．．．”
+@MESSAGE_SOUND(1)
+;;jpn:　@DSP_ACTOR()は↓
+;@MESSAGE_SOUND(2)
+;;jpn:　「２‥‥」
+;@MESSAGE_SOUND(1)
+;;jpn:とつぶやいた。
+@KEY()
+@!
+
+MSG_BTL_TUBUYAKI3;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｗｈｉｓｐｅｒｅｄ↓
+@MESSAGE_SOUND(2)
+　　”３．．．”
+@MESSAGE_SOUND(1)
+;;jpn:　@DSP_ACTOR()は↓
+;@MESSAGE_SOUND(2)
+;;jpn:　「３‥‥」
+;@MESSAGE_SOUND(1)
+;;jpn:とつぶやいた。
+@KEY()
+@!
+
+MSG_BTL_KOROBU;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｆｅｌｌ　ｄｏｗｎ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ころんだ！
+@SE(SE_se22_b_hit_miss)
+@KEY()
+@!
+
+MSG_BTL_BOOTTO;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ　ｂｅｉｎｇ↓
+　　ａｂｓｅｎｔｍｉｎｄｅｄ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ぼーっとしている。
+@KEY()
+@!
+
+MSG_BTL_JYOUKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｇｅｎｅｒａｔｅｄ↓
+　　ａ　ｂｕｒｓｔ　ｏｆ　ｓｔｅａｍ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　はげしく　じょうきを　はいた！
+@KEY()
+@!
+
+MSG_BTL_YOROYORO;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ↓
+　　ｗｏｂｂｌｙ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　よろよろしている。
+@KEY()
+@!
+
+MSG_BTL_FURAFURA;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ↓
+　　ｒｅｅｌｉｎｇ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ふらふらしている。
+@KEY()
+@!
+
+MSG_BTL_NITANITA;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｈａｓ↓
+　　ａ　ｂｉｇ　ｇｒｉｎ　ｏｎ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｆａｃｅ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　にたにた　わらっている！
+@KEY()
+@!
+
+MSG_BTL_KOKYUU;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ　ｔａｋｉｎｇ　ｄｅｅｐ　ｂｒｅａｔｈｓ　ｆｏｒ　ｔｈｅ　ｎｅｘｔ　ａｓｓａｕｌｔ．↓
+;jpn:　@DSP_ACTOR()は　ふたりの↓
+;jpn:　こきゅうを　ととのえている。
+@KEY()
+@!
+
+MSG_BTL_AISATU;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｅｎｄｓ↓
+　　ａ　ｇｒｅｅｔｉｎｇ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　あいさつを　した！
+@KEY()
+@!
+
+MSG_BTL_UNARI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ↓
+　　ｍａｋｉｎｇ　ａ　ｌｏｕｄ，　ｐｉｅｒｃｉｎｇ　ｈｏｗｌ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ひくいうなりごえを　あげている。
+@KEY()
+@!
+
+MSG_BTL_KACHIKACHI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ↓
+　　ｓａｙｉｎｇ　”ｔｉｃｋ－ｔｏｃｋ．”
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　コチコチいっている。
+@KEY()
+@!
+
+MSG_BTL_MABUSII_HIKARI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｅｍｉｔｔｅｄ↓
+　　ａ　ｇｌｏｒｉｏｕｓ　ｌｉｇｈｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　まばゆいひかりを　はなった！
+@KEY()
+@!
+
+MSG_BTL_BIRIBIRI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｕｓｅｄ　ａｎ↓
+　　ｅｌｅｃｔｒｉｃａｌ　ｓｈｏｃｋ　ａｔｔａｃｋ！
+;jpn:　@DSP_ACTOR()の↓
+;jpn:　でんきショックこうげきだ！
+@KEY()
+@!
+
+MSG_BTL_KAFUN;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｃａｔｔｅｒｅｄ↓
+　　ｉｔｓ　ｐｏｌｌｅｎ　ａｒｏｕｎｄ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　かふんを　まきちらした！
+@SE(SE_se52_foe_spore)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_COLD_HAND;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｒｅａｃｈｅｄ　ｏｕｔ↓
+　　ｗｉｔｈ　ｉｔｓ　ｉｃｙ　ｈａｎｄ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　つめたいてを　のばしてきた！
+@KEY()
+@!
+
+MSG_BTL_POISON_BREATH;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｐｌａｙｅｄ↓
+　　ａ　ｆｌｕｔｅ　ｗｉｔｈ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｐｏｉｓｏｎｏｕｓ　ｂｒｅａｔｈ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　どくのいきで　ふえをふいた！
+@KEY()
+@!
+
+MSG_BTL_HAIKI_GAS;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｐｅｗｅｄ↓
+　　ｅｘｈａｕｓｔ　ｆｕｍｅｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　はいきガスを　まきちらした！
+@KEY()
+@!
+
+MSG_BTL_LAUGH_HEN;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｔａｒｔｅｄ↓
+　　ｌａｕｇｈｉｎｇ　ｍａｎｉａｃａｌｌｙ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　くるったように　おおわらいした！
+@KEY()
+@!
+
+MSG_BTL_FUE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆Ｔｈｅ　@DSP_ACTOR()　ｂｒｅａｔｈｅｄ↓
+　　ｉｎ　ｔｈｒｏｕｇｈ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｆｌｕｔｅ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ふえを　すった！
+@KEY()
+@!
+
+MSG_BTL_JUMP_TO_FACE;
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｌｅａｐｅｄ↓
+　　ｆｏｒｗａｒｄ　ａｎｄ　ｓｐｒｅａｄ　ｉｔｓ　ｗｉｎｇｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　はねをひろげて　とびかかってきた！
+@KEY()
+@!
+
+MSG_BTL_CHOU_ONPA;
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｂｅｃａｍｅ↓
+　　ｆｒｉｅｎｄｌｙ　ａｎｄ　ａｆｆｅｃｔｉｏｎａｔｅ！@KEY()↓
+◆Ｙｏｕ　ｂａｃｋｅｄ　ｏｆｆ．↓
+　　ｓｔｉｌｌ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　あいそよく　なついてきた！↓
+;jpn:　@DSP_LCNAME()は　たちすくんだ！
+@KEY()
+@!
+

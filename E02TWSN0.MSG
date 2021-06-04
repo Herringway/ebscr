@@ -1,0 +1,1655 @@
+;
+; $Id: e02twsn0.msg,v 1.17 1995/03/25 13:53:00 masa Exp $
+;
+;-----------------------------------------------------
+;            at the bicycle shop
+;@Habitat:ツーソン／サイクルショップ／サイクルショップ
+;@Person:チャーリー
+;@Figure:パンク青年
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_CYCLE_WELCOME
+MSG_TWSN_CYCLE_WELCOME;
+;「自転車屋のチャーリー」
+;自転車を愛し、自転車を売ることを愛し、パンクロックを
+;愛する地道な青年。しかし、彼は自転車に乗れないのだ。
+@GOSUB(MSG_SUB_Q_DEAD)
+@TRUE_GOTO(_TWSN_CYCLE_NESS_DEAD)
+@CHKFGOTO(FLG_TWSN_ASHI,_TWSN_CYCLE_LATER)
+@CHKFGOTO(FLG_TWSN_POLA_APPEAR,_TWSN_CYCLE_GREET);ポーラ帰したら自転車借りれる
+@CHKFGOTO(FLG_POLA,_TWSN_CYCLE_LATER2)
+@CHKFGOTO(FLG_POLA_GRFD,_TWSN_CYCLE_LATER2)
+_TWSN_CYCLE_GREET;
+◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｃｙｃｌｅ　ｓｈｏｐ@WI(5)　”Ｐｕｎｋ－Ｓｕｒｅ”！@KEY()↓
+◆Ｂｉｃｙｃｌｅｓ　ａｒｅ　ｓｏ　ｍｕｃｈ　ｆｕｎ　ａｎｄ　ａｒｅ　ｓｏ　ｃｏｎｖｅｎｉｅｎｔ．．．@KEY()↓
+◆Ｉｔ’ｓ　ａ　ｌｏｔ　ｆａｓｔｅｒ　ｔｈａｎ　ｗａｌｋｉｎｇ．@KEY()↓
+◆Ｙｏｕ’ｌｌ　ｂｅ　ｒｅａｌｌｙ　ｐｏｐｕｌａｒ　ｗｉｔｈ　ｔｈｅ　ｂｉｋｉｎｇ　ｃｒｏｗｄ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ａ　ｂｉｃｙｃｌｅ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;DAN:We say "pank" for "flat tire."
+;jpn:◆サイクルショップ「パンク」だよ。@WI(15)↓
+;jpn:　じてんしゃは　たのしくて↓
+;jpn:　べんりなアイテムだぜ。@KEY()↓
+;jpn:◆あるくより　すこしは　はやいし↓
+;jpn:　じてんしゃマニアの　ギャルに↓
+;jpn:　もてもてに　なっちゃうぞ。@KEY()↓
+;jpn:◆ほしいかい？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_CYCLE_HOSHII,_TWSN_CYCLE_NO)
+
+_TWSN_CYCLE_NO;
+@Q_HAVE(PC_ALL,GDS_TOOL_BICYCLE)
+@TRUE_GOTO(_TWSN_CYCLE_KAESU)
+@CHKFGOTO(FLG_ITEM_CYCLE,_TWSN_CYCLE_NOTHAVE)
+◆Ｏｈ．．．ｙｏｕ　ｄｏｎ’ｔ　ｋｎｏｗ　ｈｏｗ　ｔｏ　ｒｉｄｅ　ａ　ｂｉｋｅ．@KEY()↓
+◆Ｍｅ　ｎｅｉｔｈｅｒ．
+;jpn:◆そうか。@WI(15)のれないのか‥‥。↓
+;jpn:　‥‥‥@KEY()↓
+;jpn:◆おれと　おなじだな。
+@KEYNP()
+』
+
+_TWSN_CYCLE_HOSHII;
+@CHKFGOTO(FLG_ITEM_CYCLE,_TWSN_CYCLE_KARITERU)
+◆Ｕｎｆｏｒｔｕｎａｔｅｌｙ，　ｗｅ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｒｅ　ｂｉｋｅｓ　ｆｏｒ　ｓａｌｅ．@WI(20)　　Ｗｅ　ｏｎｌｙ　ｈａｖｅ　ｒｅｎｔａｌｓ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｒｅｎｔ　ｏｎｅ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆ざんねんだなぁ。レンタルしか↓
+;jpn:　のこってないんだ。@KEY()↓
+;jpn:◆かりるかい？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_CYCLE_YES,_TWSN_CYCLE_NO)
+@GOTO(_TWSN_CYCLE_NO)
+
+_TWSN_CYCLE_YES;
+◆Ｉ　ｒｅａｌｌｙ　ｌｉｋｅ　ｙｏｕｒ　ｓｔｒａｉｇｈｔ－ｆｏｒｗａｒｄ　ｓｔｙｌｅ．@KEY()↓
+◆Ｉ’ｌｌ　ｔｅｌｌ　ｙｏｕ　ｗｈａｔ，@WI(15)　Ｉ’ｌｌ　ｌｅｔ　ｙｏｕ　ｂｏｒｒｏｗ　ａ　ｂｉｋｅ　ｆｏｒ　ｆｒｅｅ．
+;jpn:◆「はい」という　すなおなへんじが↓
+;jpn:　きにいったね。@WI(15)ただで　かすよ。
+@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_TWSN_CYCLE_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_BICYCLE)
+@GOSUB(MSG_SUB_GETGOODS)@KEY()↓
+@SETF(FLG_ITEM_CYCLE)
+◆Ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　ｔｗｏ　ｐｅｏｐｌｅ　ｃａｎ’ｔ　ｒｉｄｅ　ｏｎ　ｏｎｅ　ｂｉｃｙｃｌｅ，@KEY()↓
+◆ｓｏ　ｏｆ　ｃｏｕｒｓｅ　ｔｈｒｅｅ　ｏｒ　ｆｏｕｒ　ｐｅｏｐｌｅ　ｏｎ　ａ　ｂｉｋｅ　ｗｏｕｌｄ　ｂｅ　ｉｍｐｏｓｓｉｂｌｅ！@KEY()↓
+
+◆Ｄｉｄ　ｙｏｕ　ａｌｓｏ　ｋｎｏｗ　ｔｈａｔ　ｙｏｕ　ｃａｎ’ｔ　ｒｉｄｅ　ａ　ｂｉｋｅ　ｗｉｔｈ　ａｎｙｔｈｉｎｇ　ｆｏｌｌｏｗｉｎｇ　ｙｏｕ？@KEY()↓
+◆Ｔｅｄｄｙ　ｂｅａｒｓ，　ｆｏｒ　ｅｘａｍｐｌｅ．．．@KEY()↓
+◆Ｃａｒｒｙｉｎｇ　ａ　ｂｅａｒ　ａｎｄ　ｒｉｄｉｎｇ　ｉｓ　ｉｍｐｏｓｓｉｂｌｅ　ｆｏｒ　ｙｏｕ．
+◆Ａｎｄ　ｄｏｎ’ｔ　ｅｖｅｎ　ｔｈｉｎｋ　ａｂｏｕｔ　ｒｉｄｉｎｇ　ａ　ｂｉｋｅ　ｉｎｔｏ　ａ　ｃａｖｅ．
+;jpn:◆ふたりのりは　もちろん↓
+;jpn:　さんにんのりとか　よにんのりは↓
+;jpn:　できないからな！@KEY()↓
+;jpn:◆どうくつやなんかで　のるのも↓
+;jpn:　やめてくれよ。
+@KEYNP()
+』
+
+;◆ツーソンのまちのなかなら↓;二人のりは禁止だけど‥‥
+;　のりほうだいだ。@WI(20)↓
+;　ちゃんと　かえしに　こいよな。@KEYNP()
+』
+
+_TWSN_CYCLE_ITEMFULL;
+←
+@SE(SE_se05_undo)
+◆Ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｉｔｅｍｓ．@WI(20)　　Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ　ａｎｄ　ｃｏｍｅ　ｂａｃｋ．@KEY()↓
+◆Ｉ　ｋｎｏｗ　ｙｏｕ　ｗａｎｔ　ｉｔ　ｎｏｗ，@WI(15)　ｂｕｔ　ｍｙ　ｈａｎｄｓ　ａｒｅ　ｔｉｅｄ．．．
+;jpn:◆もちものが　いっぱいだぜ。@WI(20)↓
+;jpn:　いちど　にもつを　せいりしてから↓
+;jpn:　また　きなよ。@KEY()↓
+;jpn:◆はやる　きもちは　わかるけどな。
+@KEYNP()
+』
+
+_TWSN_CYCLE_KARITERU;
+←
+◆Ｄｉｄｎ’ｔ　ｙｏｕ　ａｌｒｅａｄｙ　ｂｏｒｒｏｗ　ａ　ｂｉｃｙｃｌｅ？@WI(20)　　Ｗｅ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｒｅ　ｒｉｇｈｔ　ｎｏｗ．．．
+;jpn:◆もう　１だい　かしてるだろ。@WI(20)↓
+;jpn:　うちには　もうのこってないよ。
+@KEYNP()
+』
+
+_TWSN_CYCLE_KAESU;
+←
+@GOODSOUT(PC_ALL,GDS_TOOL_BICYCLE);@TRUE_GOTO(_TWSN_CYCLE_NOTHAVE)
+◆Ｙｏｕ’ｒｅ　ｈｅｒｅ　ｔｏ　ｒｅｔｕｒｎ　ｙｏｕｒ　ｂｉｋｅ？@KEY()↓
+@SETF(FLG_TWSN_ASHI)
+@CLRF(FLG_ITEM_CYCLE)
+◆Ｌｏｏｋ　ｈｏｗ　ｌｏｗ　ｙｏｕｒ　ｓｅａｔ　ｉｓ！@WI(20)　　Ｇｅｅｚ，@WI(15)　ｙｏｕ　ｍｕｓｔ　ｈａｖｅ　ｓｈｏｒｔ　ｌｅｇｓ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｉｔ！@WI(20)　　Ｉ’ｌｌ　ｃａｌｌ　ｙｏｕ　ｓｔｕｂｂｙ　ｌｅｇｓ！
+;jpn:◆かえしにきたのか。@WI(20)↓
+;@SETF(FLG_TWSN_ASHI)
+;@CLRF(FLG_ITEM_CYCLE)
+;jpn:　あらま　ずいぶんサドルを↓
+;jpn:　ひくくして‥‥。@KEY()↓
+;jpn:◆あし@WI(20)↓
+;jpn:　みじかいんだねぇ。@KEYNP()↓
+;◆ヘーイ！　あしみじかいやつ！
+@KEYNP()
+@SE(SE_se76_my_give)
+』
+
+_TWSN_CYCLE_NOTHAVE;
+←
+◆Ｙｅａｈ，@WI(10)　ｙｅａｈ，@WI(5)　ｓｕｒｅ，　ｓｕｒｅ．@WI(20)　　Ｙｏｕ’ｖｅ　ａｌｒｅａｄｙ　ｂｏｒｒｏｗｅｄ　ａ　ｂｉｃｙｃｌｅ．
+;jpn:◆そうだよな。↓
+;jpn:　１だい　かしてるもんな。
+@KEYNP()
+』
+
+_TWSN_CYCLE_LATER;
+◆Ｈｅｙ！@WI(15)　　Ｓｔｕｂｂｙ　ｌｅｇｓ！
+;jpn:◆ヘーイ！　あしみじかいやつ！
+@KEY()↓
+@CHKFGOTO(FLG_TWSN_POLA_APPEAR,_TWSN_CYCLE_GREET);ポーラ帰したら自転車借りれる
+@CHKFGOTO(FLG_POLA_GRFD,_TWSN_CYCLE_LATER2)
+@CHKFGOTO(FLG_POLA,_TWSN_CYCLE_LATER2)
+@GOTO(_TWSN_CYCLE_GREET)
+
+_TWSN_CYCLE_LATER2;
+@SET_LOOPREG(PC_NESS)
+◆Ｄｏ　ｙｏｕ　ｗａｎｎａ　ｒｉｄｅ　ａ　ｂｉｋｅ？@KEY()↓
+◆Ｔｈａｔ’ｓ　ｎｏｔ　ｇｏｎｎａ　ｗｏｒｋ．．．ｔｗｏ　ｐｅｏｐｌｅ　ｏｎ　ｏｎｅ　ｂｉｋｅ　ｉｓ　ｓｔｒｉｃｔｌｙ　ｆｏｒｂｉｄｄｅｎ．@KEY()
+;jpn:◆じてんしゃに　のりたいのかい？@KEY()↓
+;jpn:◆ざんねんだな。ふたりのりは↓
+;jpn:　きんしだよ。
+@Q_HAVE(PC_ALL,GDS_TOOL_BICYCLE)
+@TRUE_GOTO(_TWSN_CYCLE_RETURN)
+@KEYNP()
+』
+
+_TWSN_CYCLE_RETURN;
+@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｈｅｒｅ　ｔｏ　ｒｅｔｕｒｎ　ｔｈｅ　ｂｉｃｙｃｌｅ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆かえしにきたのかい？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_CYCLE_KAESU,_TWSN_CYCLE_RETURN_NO)
+
+_TWSN_CYCLE_RETURN_NO;
+◆Ｗｅｌｌ，@WI(15)　ｄｏｎ’ｔ　ｆｏｒｇｅｔ　ｔｏ　ｒｅｔｕｒｎ　ｉｔ．．．@WI(20)　　Ｙｏｕ’ｒｅ　ｇｏｎｎａ　ｈａｖｅ　ｔｏ　ｓｏｏｎｅｒ　ｏｒ　ｌａｔｅｒ．
+;jpn:◆ちゃんと　かえしに　こいよ。@KEY()↓
+;jpn:◆おまえのじんせいと↓
+;jpn:　プライドのすべてを　かけてナ！
+@KEYNP()
+』
+
+_TWSN_CYCLE_NESS_DEAD;
+◆Ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　ｔｗｏ　ｐｅｏｐｌｅ　ｃａｎ’ｔ　ｒｉｄｅ　ａ　ｂｉｋｅ，@KEY()↓
+◆ｂｕｔ　ｄｉｄ　ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　ｙｏｕ　ｃａｎ’ｔ　ｒｉｄｅ　ａ　ｂｉｋｅ@KEY()↓
+◆ｗｈｅｎ　ｙｏｕ　ａｒｅ　ｃａｒｒｙｉｎｇ　ａｎ　ｕｎｃｏｎｓｃｉｏｕｓ　ｆｒｉｅｎｄ’ｓ　ｓｔｕｆｆ？
+◆Ｃａｒｒｙｉｎｇ　ａ　ｌｏｔ　ｏｆ　ｉｔｅｍｓ　ａｎｄ　ｒｉｄｉｎｇ　ａｒｏｕｄ　ｉｓ　ｉｍｐｏｓｓｉｂｌｅ　ｆｏｒ　ｙｏｕ．
+;jpn:◆ふたりのりも↓
+;jpn:　きんしだけど@KEY()↓
+;jpn:◆「ふたりのりふう」↓
+;jpn:　‥‥っていうのも↓
+;jpn:　きんしなんだよ。@KEY()↓
+;jpn:◆「ふたりのりふう」の↓
+;jpn:　「ふう」は@KEY()↓
+;jpn:◆「てうちふう」とか↓
+;jpn:　「てづくりふう」の↓
+;jpn:　「ふう」だ！
+@KEYNP()
+』
+
+;----------------------------------------
+;@Habitat:ツーソン／幼稚園／遊技室
+;@Person:ポーラ母
+;@Figure:ポーラ母
+;@AppearanceKey:0
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_ISABELLA
+MSG_TWSN_ISABELLA;
+;やる時ゃやるタイプのおかぁさん。「ポーラを信じているので
+;何も心配しない」というが、細かい心づかいもあるのです。
+;《幼稚園児をいつもゾロゾロひきつれて登場する》
+@CHKFGOTO(FLG_WIN_GIEGU,_TWSN_ISABELLA_END)
+@CHKFGOTO(FLG_GLOBAL_POLA_KIDNAPPED,_TWSN_ISABELLA_MAIN);誘拐中
+@CHKFGOTO(FLG_TWSN_ITEM_TONCHIKI,_TWSN_ISABELLA_LATER)
+@CHKFGOTO(FLG_TWSN_ITEM_ISABELLA,_TWSN_ISABELLA_GOODLUCK)
+@CHKFGOTO(FLG_POLA_GRFD,_TWSN_ISABELLA_OK)
+◆Ｗｈｉｓｔｌｅ，　ｗｈｉｓｔｌｅ　ａｎｙｗｈｅｒｅ@WI(10)↓
+　　Ｉｔ　ｍａｋｅｓ　ｍｅ　ｓｍｉｌｅ@WI(10)↓
+　　ａｌｌ　ｔｈｅ　ｗｈｉｌｅ．@KEY()↓
+◆Ｉ’ｍ　@DSP_NAME(PC_PAULA)’ｓ　ｍｏｔｈｅｒ．@WI(20)　　Ｉ’ｍ　ｂｕｓｙ　ｔａｋｉｎｇ　ｃａｒｅ　ｏｆ　ｔｈｅｓｅ　ｋｉｄｓ．
+;jpn:◆音くちぶえふけば　おとがでる@WI(20)↓
+;jpn:　どーんなときでも　ニッコニコ音@KEY()↓
+;jpn:◆わたしは　@DSP_STS(STS_PC_NAME_PAULA)のママですが@WI(20)↓
+;jpn:　ようちえんの　こどもたちの↓
+;jpn:　せわが　たいへんなのよ。
+@KEY()↓
+_TWSN_ISABELLA_MAIN;誘拐中
+◆Ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｗｏｒｒｙ　ａｂｏｕｔ　@DSP_NAME(PC_PAULA)．@WI(20)　　Ｓｈｅ　ｈａｓ　ａ　ｇｕａｒｄｉａｎ　ａｎｇｅｌ，@WI(15)　ｉｔ　ｓｅｅｍｓ．
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)のことなら↓
+;jpn:　なんのしんぱいも　いらないわ。@WI(20)↓
+;jpn:　あのこには　カミサマがついてる。
+@KEYNP()
+』
+
+_TWSN_ISABELLA_OK;
+@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_ISABELLA_OK_DEAD)
+@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_ISABELLA_OK_NES_DEAD)
+◆Ｙａｈｏｏ！@WI(5)　　Ｉ　ｋｎｅｗ　ｉｔ！@WI(20)　　Ｙｏｕ　ｓａｖｅｄ　@DSP_NAME(PC_PAULA)．
+;jpn:◆ヤッホー！　やっぱり↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)をたすけてくれたのね。
+@KEY()↓
+@GOSUB(_TWSN_ISABELLA_GOODLUCK)↓
+
+_TWSN_ISABELLA_ITEM;
+◆@DSP_NAME(PC_PAULA)　ｉｆ　ｙｏｕ　ｍｕｓｔ　ｔａｋｅ　ａ　ｔｒｉｐ，@WI(15)　ｂｅ　ｓｕｒｅ　ｔｏ　ｂｒｉｎｇ　ｔｈｉｓ　ａｌｏｎｇ．@KEY()↓
+◆Ｉｔ’ｓ　ｍｙ　ｖｅｒｙ　ｏｗｎ　ｈａｎｄ－ｍａｄｅ　ｂａｎｄ－ａｉｄ！@WI(20)　　Ｏｏｏ！@WI(15)　ｔｈａｔ　ｒｈｙｍｅｓ！
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)@WI(15)　たびにでるなら↓
+;jpn:　これを　もっておゆき。@WI(20)↓
+;jpn:　ハンドメイドのバンドエイドよ。
+@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_TWSN_ISABELLA_OK_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_HAND_AID)
+@GOSUB(MSG_SUB_GETGOODS)@KEYNP()
+@SETF(FLG_TWSN_ITEM_ISABELLA)
+←
+◆Ｄｉｄ　ｙｏｕ　ｍｅｅｔ　ｄａｄ？@KEY()↓
+◆Ｈｅ　ｗａｓ　ｓｏｒｒｙ　ｔｈａｔ　ｈｅ　ｓｕｓｐｅｃｔｅｄ　Ｍｒ．　Ｅｖｅｒｄｒｅｄ　ｉｎ　Ｂｕｒｇｌｉｎ　Ｐａｒｋ．
+;DAN:"Nusutto" means "Burglar's"
+;jpn:◆パパには　もうあった？@KEY()↓
+;jpn:◆パパったら　ヌスットひろばの↓
+;jpn:　トンチキさんを↓
+;jpn:　うたがっていたことを@KEY()↓
+;jpn:◆こうかいして　おちこんでいたわ。
+@KEYNP()　　　
+』
+_TWSN_ISABELLA_OK_DEAD;
+◆Ｉｓ　ｔｈａｔ　ｙｏｕ，　@DSP_NAME(PC_PAULA)？@WI(20)　　Ｏｈ，@WI(15)　Ｉ　ｔｈｏｕｇｈｔ　ｓｈｅ　ｗｏｕｌｄ　ｂｅ　ｂａｃｋ，@WI(15)　ｂｕｔ　ｎｏｔ　ｙｅｔ．．．@KEY()↓
+◆Ｏｈ　ｎｏ，　Ｉ’ｍ　ｎｏｔ　ｗｏｒｒｉｅｄ．．．Ｉ’ｌｌ　ｂｅ　ｏｋａｙ．
+;jpn:◆ああ　@DSP_STS(STS_PC_NAME_PAULA)↓
+;jpn:　やっぱり　かえって‥‥@KEY()↓
+;jpn:◆きたようにおもったけど↓
+;jpn:　まだみたいね。@KEY()↓
+;jpn:◆いえ　@DSP_STS(STS_PC_NAME_NES)さん↓
+;jpn:　わたし　しんぱいなんか↓
+;jpn:　してませんわ。@KEY()↓
+;jpn:◆へーっちゃら音
+@KEYNP()
+』
+
+_TWSN_ISABELLA_GOODLUCK;
+@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_ISABELLA_GOODLUCK_DEAD)
+◆Ｉ　ｄｏｎ’ｔ　ｒｅａｌｌｙ　ｕｎｄｅｒｓｔａｎｄ　ｉｔ，@KEY()↓
+◆ｂｕｔ　Ｉ　ｋｎｏｗ　ｔｈａｔ　@DSP_NAME(PC_PAULA)’ｓ　ｍｉｒａｃｕｌｏｕｓ　ｐｏｗｅｒ@KEY()↓
+◆ａｎｄ　ｙｏｕｒ　ｇｒｅａｔ　ｃｏｕｒａｇｅ　ｗｉｌｌ　ａｌｌｏｗ　ｙｏｕ　ｔｏ　ｓｔａｎｄ　ｕｐ　ｔｏ　ａｎｙ　ｃｈａｌｌｅｎｇｅ．
+;jpn:◆わたしには　よくわかんないけど↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)の　ふしぎなちからと↓
+;jpn:　あなたのゆうきが　あわされば@KEY()↓
+;jpn:◆きっと　どんなこんなんにも↓
+;jpn:　たちむかえると　おもうの。@KEY()↓
+;jpn:◆しんぱいもない　わけじゃないけど@WI(20)↓
+;jpn:　よろこんで　むすめを↓
+;jpn:　おくりだすわ。
+@KEYNP()
+』
+_TWSN_ISABELLA_OK_NES_DEAD;ネス気絶
+◆Ｙａｈｏｏ！@WI(15)　　Ｉ　ｋｎｅｗ　ｉｔ！@WI(20)　　Ｙｏｕ　ｇｏｔ　ｂａｃｋ　ｈｅｒｅ　ｗｉｔｈ　ｎｏ　ｐｒｏｂｌｅｍ．@KEY()↓
+◆Ｉｓｎ’ｔ　@DSP_NAME(PC_NESS)　ｗｉｔｈ　ｙｏｕ？@KEY()↓
+◆．．．@DSP_NAME(PC_PAULA)，@WI(15)　ｙｏｕｒ　ｍｏｍ　ｉｓ　ｔｒｕｓｔｉｎｇ　ｈｉｓ　ｃｏｕｒａｇｅ　ａｎｄ　ｙｏｕｒ　ｍｉｒａｃｕｌｏｕｓ　ｐｏｗｅｒ．@KEY()↓
+◆Ｉ　ｗｏｎ’ｔ　ｓａｙ　Ｉ’ｍ　ｎｏｔ　ｗｏｒｒｉｅｄ．@KEY()↓
+◆Ｂｕｔ　Ｉ’ｌｌ　ｌｅｔ　ｙｏｕ　ｇｏ　ａｌｏｎｇ．．．Ｉｔ’ｓ　ｆｏｒ　ａ　ｇｏｏｄ　ｃａｕｓｅ．．．
+;jpn:◆ヤッホー@WI(15)　やっぱり↓
+;jpn:　げんきで　かえってきたわね。@KEY()↓
+;jpn:◆あの　@DSP_STS(STS_PC_NAME_NES)って　おとこのコと↓
+;jpn:　いっしょじゃなかったのね‥‥。@KEY()↓
+_TWSN_ISABELLA_GOODLUCK_DEAD;
+;jpn:◆‥‥@DSP_STS(STS_PC_NAME_PAULA)‥‥。@KEY()↓
+;jpn:◆ママは　あのコのゆうきと↓
+;jpn:　あなたのふしぎなちからを↓
+;jpn:　しんじるわ。@KEY()↓
+;jpn:◆まったく　しんぱいもないって‥‥↓
+;jpn:　わけじゃないけど@KEY()↓
+;jpn:◆あのコのちからに↓
+;jpn:　なってあげると　いいわ。@KEY()↓
+;jpn:◆きっと　それは↓
+;jpn:　たいせつなことだと　おもったの。
+@CHKFGOTO(FLG_TWSN_ITEM_ISABELLA,_TWSN_ISABELLA_OK_DEADEND)
+@KEY()↓
+@GOTO(_TWSN_ISABELLA_ITEM)
+
+_TWSN_ISABELLA_OK_DEADEND;
+@KEYNP()
+』
+
+_TWSN_ISABELLA_LATER;
+@CHKFGOTO(FLG_TWSN_ITEM_ISABELLA,_TWSN_ISABELLA_LATER1)
+◆@DSP_NAME(PC_PAULA)，@WI(15)　ｉｆ　ｙｏｕ　ｍｕｓｔ　ｇｏ，@WI(15)　ｂｅ　ｓｕｒｅ　ｔｏ　ｂｒｉｎｇ　ｔｈｉｓ　ａｌｏｎｇ．@KEY()↓
+◆Ｉｔ’ｓ　ｍｙ　ｖｅｒｙ　ｏｗｎ　ｈａｎｄ－ｍａｄｅ　ｂａｎｄ－ａｉｄ！@WI(20)　　Ｉ　ｌｏｖｅ　ｔｈｅ　ｗａｙ　ｔｈａｔ　ｒｈｙｍｅｓ！
+;jpn:◆たびにでるなら↓
+;jpn:　これを　もっておゆき。@WI(20)↓
+;jpn:　ハンドメイドのバンドエイドよ。
+@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_TWSN_ISABELLA_OK_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_HAND_AID)
+@GOSUB(MSG_SUB_GETGOODS)@KEYNP()
+@SETF(FLG_TWSN_ITEM_ISABELLA)
+』
+
+_TWSN_ISABELLA_OK_ITEMFULL;イザベラ
+←
+◆Ｗｈａｔ’ｓ　ｔｈａｔ？@WI(15)　　Ｙｏｕ’ｒｅ　ｂｅｉｎｇ　ａ　ｌｉｔｔｌｅ　ｉｍｐａｔｉｅｎｔ．．．@KEY()↓
+◆Ｙｏｕ　ｎｅｅｄ　ｔｏ　ｓｅｌｌ，@WI(15)　ｕｓｅ　ｏｒ　ｄｒｏｐ　ｓｏｍｅｔｈｉｎｇ．@WI(20)　　Ａｆｔｅｒ　ｔｈａｔ，@WI(15)　Ｉ　ｃａｎ　ｇｉｖｅ　ｔｈｉｓ　ｔｏ　ｙｏｕ．
+;◆Ｈｕｈ？　　Ｙｏｕ　ｓｅｅｍ　ｌｉｋｅ　ｙｏｕ　ｃａｎ’ｔ　ｗａｉｔ．@KEY()↓
+;◆Ｓｅｌｌ　ｏｒ　ｕｓｅ　ｏｒ　ｄｒｏｐ　ｙｏｕｒ　ｇｏｏｄｓ　ａｎｄ　ｃｏｍｅ　ｂａｃｋ．@KEY()↓
+;◆Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ，ｔｈｅｎ．
+;jpn:◆あら@WI(15)　もちきれないみたいね。@WI(20)↓
+;jpn:　もちものを　うるかつかうか↓
+;jpn:　すてるかしてきなさい。@KEY()↓
+;jpn:◆あらためて　あげるから。
+@KEYNP()
+』
+
+_TWSN_ISABELLA_LATER1;
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆Ｗｅｌｌ，　ｈｅｒｅ　ｙｏｕ　ａｒｅ，@WI(15)　@DSP_NAME(PC_NESS)．@KEY()↓
+◆Ｉ’ｌｌ　ｍａｋｅ　ｙｏｕ　ｓｏｍｅ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)，@WI(20)　ｅｖｅｎ　ｔｈｏｕｇｈ　Ｉ’ｍ　ｎｏｔ　ａ　ｖｅｒｙ　ｇｏｏｄ　ｃｏｏｋ．
+;jpn:◆まぁまぁ　ようこそ　@DSP_NAME(0)！@WI(20)↓
+;jpn:　じゃ　あんまりおいしくない↓
+;jpn:　@DSP_STS(STS_PARTY_FAVORITE_FOODS)をつくるわねッ。
+@KEY()
+;体力回復（暗転ワープなし、ＢＧＭあり、夜鍋なし、セリフ替えなし）
+@GOSUB(MSG_SUB_BGM_LIFEUP)
+@GOSUB(MSG_SUB_HOTEL_LIFEUP)
+』
+
+_TWSN_ISABELLA_END;＆最終戦闘後のママ
+◆Ｙｏｕ’ｖｅ　ｌｏｓｔ　ｓｏｍｅ　ｗｅｉｇｈｔ　ｓｉｎｃｅ　Ｉ　ｓａｗ　ｙｏｕ　ｌａｓｔ，　@DSP_NAME(PC_NESS)．@KEY()↓
+◆@DSP_NAME(PC_PAULA)　ｍｕｓｔ　ｈａｖｅ　ｈａｄ　ｑｕｉｔｅ　ａｎ　ａｄｖｅｎｔｕｒｅ！@WI(20)　　Ｉ’ｍ　ｇｌａｄ　ｙｏｕ　ｌｉｖｅ　ｓｏ　ｃｌｏｓｅ　ｔｏ　ｕｓ．@KEY()↓
+◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｄｒｏｐ　ｂｙ　ｍｏｒｅ　ｏｆｔｅｎ？@WI(20)　　Ｉ’ｍ　ｗｏｒｋｉｎｇ　ａｔ　ｍａｋｉｎｇ　ｂｅｔｔｅｒ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)．
+
+;jpn:◆まえに　あったときより↓
+;jpn:　@DSP_STS(STS_PC_NAME_NES)ちゃん↓
+;jpn:　ちょっと　やせたかしら。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)にも↓
+;jpn:　いろいろ　きっと　いいけいけんに↓
+;jpn:　なったとおもうわ。@KEY()↓
+;jpn:◆いえも　となりまちなんだし↓
+;jpn:　これからも　ちょくちょく↓
+;jpn:　あそびにきてね。@KEY()↓
+;jpn:◆@DSP_STS(STS_PARTY_FAVORITE_FOODS)を↓
+;jpn:　じょうずに　つくれるように↓
+;jpn:　しておくから。
+@KEYNP()
+』
+
+;@Habitat:ツーソン／幼稚園／遊技室
+;@Person:園児Ａ
+;@Figure:少年Ａ
+;@AppearanceKey:0
+;@ActionScript:◆落ちつかない
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_POLESTAR_A
+MSG_TWSN_POLESTAR_A;
+;「幼稚園の子供」
+@CHKFGOTO(FLG_POLA,_TWSN_POLESTAR_A_LATER)
+@CHKFGOTO(FLG_POLA_GRFD,_TWSN_POLESTAR_A_LATER)
+◆@DSP_NAME(PC_PAULA)　ｉｓｎ’ｔ　ｈｅｒｅ！@KEY()↓
+◆Ｓｈｅ　ｓｕｄｄｅｎｌｙ　ｌｅｆｔ，@WI(15)　ａｎｄ　Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈｅｒｅ　ｓｈｅ　ｗｅｎｔ．
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)は　いないよ。@WI(20)↓
+;jpn:　さっき　あわてて↓
+;jpn:　どこかへ　いったんだ。
+@KEYNP()
+』
+
+_TWSN_POLESTAR_A_LATER;
+@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_POLESTAR_A_DEAD)
+◆（Ｈｅ’ｓ　ｓｍｉｌｉｎｇ）．
+;jpn:◆にこにこ。
+@KEYNP()
+』
+_TWSN_POLESTAR_A_DEAD;
+◆Ｏｈ，　@DSP_NAME(PC_PAULA)！@WI(20)　　Ｕｈ．．．ｓｏｒｒｙ，@WI(15)　Ｉ　ｔｈｏｕｇｈｔ　ｙｏｕ　ｗｅｒｅ　@DSP_NAME(PC_PAULA)．
+;jpn:◆あ　@DSP_STS(STS_PC_NAME_PAULA)！↓
+;jpn:　おっと@WI(20)　みまちがえた。
+@KEYNP()
+』
+
+;@Habitat:ツーソン／幼稚園／遊技室
+;@Person:園児Ｂ
+;@Figure:リボン
+;@AppearanceKey:0
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_POLESTAR_C
+MSG_TWSN_POLESTAR_C;
+;「幼稚園の子供C」
+@GET_ORDER_PLAYER(1)
+@EQ(PC_PAULA)@TRUE_GOTO(_TWSN_POLESTAR_B_PAULA)
+@CHKFGOTO(FLG_POLA,_TWSN_POLESTAR_B_LATER)
+@CHKFGOTO(FLG_POLA_GRFD,_TWSN_POLESTAR_B_LATER)
+◆Ｗｅｌｌ，@WI(15)　Ｉ　ｗａｎｔｅｄ　ｔｏ　ｐｌａｙ　ｗｉｔｈ　@DSP_NAME(PC_PAULA)，@WI(15)　ｂｕｔ　ｓｈｅ’ｓ　ｇｏｎｅ　ｓｏｍｅ　ｐｌａｃｅ．．．
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)と↓
+;jpn:　あそぼうとおもったのに↓
+;jpn:　どこかへ　いっちゃってさ‥‥。
+@KEYNP()
+』
+
+_TWSN_POLESTAR_B_LATER;
+@CHKFGOTO(FLG_GLOBAL_POLA_KIDNAPPED,_TWSN_POLESTAR_B_DEAD);誘拐中
+@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_POLESTAR_B_DEAD)
+◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｓａｖｉｎｇ　@DSP_NAME(PC_PAULA)．@WI(20)　　Ｙｏｕ　ａｒｅ　ｍｙ　ｈｅｒｏ．
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)を　たすけてくれて↓
+;jpn:　ありがとう。@WI(20)↓
+;jpn:　‥‥にくいひと！
+@KEYNP()
+』
+_TWSN_POLESTAR_B_DEAD;
+◆Ｈｅｌｐ　@DSP_NAME(PC_PAULA)！@WI(20)　　Ｈｕｒｒｙ，　ｈｕｒｒｙ！
+;jpn:◆はやく　@DSP_STS(STS_PC_NAME_PAULA)を↓
+;jpn:　たすけてきてよー。
+@KEYNP()
+』
+_TWSN_POLESTAR_B_PAULA;
+◆@DSP_NAME(PC_PAULA)，@WI(15)　Ｉ　ｗａｓ　ｗｏｒｒｉｅｄ　ａｂｏｕｔ　ｙｏｕ．@KEY()↓
+◆Ｉ’ｍ　ｎｏｔ　ｇｏｉｎｇ　ｔｏ　ａｓｋ　ｔｈｅ　ｔｗｏ　ｏｆ　ｙｏｕ　ｗｈｅｒｅ　ｙｏｕ　ｗｅｒｅ　ｗａｎｄｅｒｉｎｇ．．．
+;DAN:"U fufufu..." is laugh ...
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)おねえちゃん↓
+;jpn:　しんぱいしちゃったじゃないの。@KEY()↓
+;jpn:◆どこにいってたかは↓
+;jpn:　きかないわ。@KEY()↓
+;jpn:◆ウ・フ・フ‥‥。
+@KEYNP()
+』
+　
+
+;@Habitat:ツーソン／幼稚園／遊技室
+;@Person:園児Ｃ
+;@Figure:ヘルメット
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_POLESTAR_B
+MSG_TWSN_POLESTAR_B;
+;「幼稚園の子供B」
+@GET_ORDER_PLAYER(1)
+@EQ(PC_PAULA)@TRUE_GOTO(_TWSN_POLESTAR_C_PAULA)
+@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_POLESTAR_C_DEAD)
+;DAN: He talks like an adult.
+◆@DSP_NAME(PC_PAULA)　ｉｓ　ｌｉｋｅ　ａ　ｍｏｔｈｅｒ　ｔｏ　ｍｅ．@KEY()↓
+◆Ｙｏｕ　ｍａｙ　ｎｏｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｃｏｍｐｒｅｈｅｎｄ　ｍｙ　ｅｍｏｔｉｏｎｓ．@KEY()↓
+◆Ｉ　ｍｉｇｈｔ　ｈａｖｅ　ａ　ｂａｂｙ　ｆａｃｅ，@WI(15)　ｂｕｔ　Ｉ　ｐｏｓｓｅｓｓ　ｔｈｅ　ｍｉｎｄ　ｏｆ　ａｎ　ａｄｕｌｔ．@KEY()↓
+◆Ｉ　ｂｅｇ　ｙｏｕｒ　ｐａｒｄｏｎ．
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)は　おいらにとって↓
+;jpn:　おっかさんのような　そんざいさ。@WI(20)↓
+;jpn:　おまえさんにゃあ　わかるまいが。@KEY()↓
+;jpn:◆おれ　かおは　おさないけど↓
+;jpn:　かんがえかたが　ふけてるんだ。@WI(20)↓
+;jpn:　ゆるせ。
+@KEYNP()
+』
+_TWSN_POLESTAR_C_DEAD;松（切り方変？）
+◆@DSP_NAME(PC_PAULA)？@KEY()↓
+◆Ｙｏｕ　ｋｎｏｗ，@WI(15)　Ｉ　ｔｈｏｕｇｈｔ　Ｉ　ｓａｗ　ｈｅｒ@KEY()↓
+◆ｆｏｒ　ａ　ｓｅｃｏｎｄ　ｏｕｔ　ｏｆ　ｔｈｅ　ｃｏｒｎｅｒ　ｏｆ　ｍｙ　ｅｙｅ．．．ｍａｙｂｅ　Ｉ　ｗａｓ　ｊｕｓｔ　ｄｒｅａｍｉｎｇ．．．
+;jpn:◆おっと　@DSP_STS(STS_PC_NAME_PAULA)ちゃん@WI(60)↓
+;jpn:　おいらのめには@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)ちゃんが↓
+;jpn:　ここにいなさるように↓
+;jpn:　おもえたが‥‥@KEY()↓
+;jpn:◆まぼろしを　みたのかなぁ。
+@KEYNP()
+』
+_TWSN_POLESTAR_C_PAULA;
+◆@DSP_NAME(PC_PAULA)，@WI(15)　ｙｏｕ　ｌｏｏｋ　ｎｉｃｅ　ａｎｄ　ｈｅａｌｔｈｙ．@WI(20)　　Ｗｈａｔ　ｇｒｅａｔ　ｔｉｍｉｎｇ　ｈａｖｉｎｇ　ｙｏｕ　ｓｈｏｗ　ｕｐ　ｎｏｗ！
+;jpn:◆おっと　@DSP_STS(STS_PC_NAME_PAULA)ちゃん@WI(20)↓
+;jpn:　げんきで　いなすったか。@KEY()↓
+;jpn:◆あらわれるタイミングが↓
+;jpn:　なんとも　イキだねぇ。
+@KEYNP()
+』
+
+MSG_TWSN_POLESTAR_D;園児Ｄ（ポーラいない）
+@GET_ORDER_PLAYER(1)
+@EQ(PC_PAULA)@TRUE_GOTO(_TWSN_POLESTAR_D_PAULA)
+@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_POLESTAR_D_DEAD)
+;DAN: She talks like a baby.
+◆Ｗｈｅｎ　Ｉ　ｇｒｏｗ　ｕｐ，@WI(15)　Ｉ　ｗａｎｎａ　ｂｅ　ｊｕ@WI(5)ｕ@WI(5)ｕ@WI(5)ｕ@WI(5)ｓｔ　ｌｉｋｅ　@DSP_NAME(PC_PAULA)．
+;jpn:◆わたち　おとなになったら↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)おねえちゃんに↓
+;jpn:　なりたいの。
+@KEYNP()
+』
+_TWSN_POLESTAR_D_PAULA;救出時
+@CHKFGOTO(FLG_TLPT_THRK,_TWSN_POLESTAR_D_PAULA_LATER)
+◆Ｙｏｕ　ｓｋｉｎｎｅｄ　ｙｏｕｒ　ｋｎｅｅ，@WI(10)　ｈｕｈ．
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)おねぇちゃん↓
+;jpn:　ひざこぞ　すりむいてる。
+@KEYNP()
+』
+_TWSN_POLESTAR_D_DEAD;死んでる。
+◆Ｗｈａｔ　ｈａｐｐｅｎｅｄ　ｔｏ　@DSP_NAME(PC_PAULA)？
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)おねえちゃんは↓
+;jpn:　どうちちゃったの？
+@KEYNP()
+』
+_TWSN_POLESTAR_D_PAULA_LATER;通常
+◆Ｗｈｅｎ　Ｉ　ｇｅｔ　ｂｉｇ，@WI(15)　Ｉ’ｍ　ｇｏｎｎａ　ｂｅ　ｇｒｏｗｎ－ｕｐ　@DSP_NAME(PC_PAULA)．@KEY()↓
+◆Ｔｈｅｎ，@WI(20)　ｌａｔｅｒ　Ｉ’ｌｌ　ｂｅ　ｏｌｄ　ｌａｄｙ　@DSP_NAME(PC_PAULA)．
+;jpn:◆わたち　おとなになったら↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)おねえちゃんになって@WI(20)↓
+;jpn:　そのあと‥‥@KEY()↓
+;jpn:◆もっと　おとなになったら↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)おばあちゃんになるの。
+@KEYNP()
+』
+
+;@Habitat:ツーソン／幼稚園／両親の部屋
+;@Person:ポーラ父
+;@Figure:ポーラ父
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ#2.3（改）FLG..UPSETであわてる
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_PAUL
+MSG_TWSN_PAUL;
+;ポーラの父「ポール・ジョーンズ」氏
+;頭はカタイが気はやさしい。ゆうずうの効かないところが
+;ちょっと困りものではあるが、若い時はならしたという
+;暴力的なまでの正義感は、頼りがいがある。
+@CHKFGOTO(FLG_WIN_GIEGU,_TWSN_PAUL_END)
+@CHKFGOTO(FLG_TWSN_ITEM_TONCHIKI,MSG_TWSN_PAUL_LATER)
+@CHKFGOTO(FLG_POLA,MSG_TWSN_PAUL_OK1)
+@CHKFGOTO(FLG_POLA_GRFD,MSG_TWSN_PAUL_OK)
+@CHKFGOTO(FLG_TWSN_PAUL_UPSET,_TWSN_PAUL_POPO)
+@CHKFGOTO(FLG_TWSN_PAUL,_TWSN_PAUL_NO_1)
+◆Ｓｏ，@WI(15)　ｙｏｕ　ｗａｎｎａ　ｓｅｅ　@DSP_NAME(PC_PAULA)？@KEY()↓
+◆Ｍａｎｙ　ｃｏｍｅ　ｈｅｒｅ　ｔｏ　ｓｅｅ　ｈｅｒ　ｍｉｒａｃｕｌｏｕｓ　ｐｏｗｅｒｓ，@WI(15)　ｂｕｔ　ｔｈｅｙ’ｒｅ　ｊｕｓｔ　ｌｅｅｃｈｅｓ．@KEY()↓
+◆Ｓｏ．．．ａｒｅ　ｙｏｕ　ｆｒｏｍ　ａ　ＴＶ　ｓｔａｔｉｏｎ，　ｏｒ　ｗｈａｔ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)に　あいたいって？@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)のふしぎなちからを↓
+;jpn:　りようしようとして↓
+;jpn:　いろんなやつが　たずねてくるが@KEY()↓
+;jpn:◆みんな　ろくなもんじゃない。@KEY()↓
+;jpn:◆あなたも　テレビきょくか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_PAUL_YES,_TWSN_PAUL_NO)
+
+_TWSN_PAUL_NO;
+◆Ｔｏ　ｍｅｅｔ　ｙｏｕ　ｏｒ　ｎｏｔ　ｔｏ　ｍｅｅｔ　ｙｏｕ　ｃａｎ　ｏｎｌｙ　ｂｅ　ｄｅｃｉｄｅｄ　ｂｙ　@DSP_NAME(PC_PAULA)．@KEY()↓
+◆@DSP_NAME(PC_PAULA)　ｈａｓ　ｓａｉｄ　ｔｈａｔ　ｓｈｅ　ｗｏｕｌｄ　ｏｎｌｙ　ｍｅｅｔ　ｗｉｔｈ　ａ　ｂｏｙ　ｎａｍｅｄ　@DSP_NAME(PC_NESS)．@KEY()↓
+◆Ｓｏ　ｙｏｕ’ｒｅ　@DSP_NAME(PC_NESS)！@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｔｈｅ　ｏｎｅ　ｔｈａｔ　ｗａｓ　ｉｎ　@DSP_NAME(PC_PAULA)’ｓ　ｄｒｅａｍ．@WI(20)　　Ｙｏｕ　ｗｉｌｌ　ｓａｖｅ　ｔｈｅ　ｗｏｒｌｄ！@KEY()↓
+◆Ｌｅｔ　ｍｅ　ｇｏ　ｃａｌｌ　@DSP_NAME(PC_PAULA)．
+;jpn:◆あいにきた　にんげんに↓
+;jpn:　あうべきか　あうべきでないかは↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)じしんが　きめる。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)は　@DSP_STS(STS_PC_NAME_NES)という↓
+;jpn:　しょうねんだけには　あうと↓
+;jpn:　いっておったが‥‥@KEY()↓
+;jpn:◆えっ　きみが　@DSP_STS(STS_PC_NAME_NES)！@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)のゆめに↓
+;jpn:　でてきたという↓
+;jpn:　せかいを　すくう　しょうねんか。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)をよんでこよう。
+@KEY()
+@GOSUB(MSG_EVT_28_PAUL)
+◆Ｓｈｅ　ｄｏｅｓｎ’ｔ　ｓｅｅｍ　ｔｏ　ｂｅ　ｈｅｒｅ．@KEY()↓
+◆Ｉ　ｗｏｎｄｅｒ　ｗｈｅｒｅ　ｓｈｅ　ｗｅｎｔ？@WI(20)　　Ｉ’ｍ　ｓｏｒｒｙ，@WI(20)　ｃｏｕｌｄ　ｙｏｕ　ｃｏｍｅ　ｂａｃｋ　ｌａｔｅｒ？
+;jpn:◆いないようだ。@WI(20)↓
+;jpn:　どこへ　でかけたんだろう？@KEY()↓
+;jpn:◆わるいが　でなおしてください。
+@KEYNP()
+@SETF(FLG_TWSN_PAUL)
+@SETF(FLG_TWSN_POLA_TELEPATHY);ポーラのテレパシーセット
+;@SETF(FLG_TEMP_1)
+』
+
+_TWSN_PAUL_YES;
+◆Ｐｌｅａｓｅ　ｌｅａｖｅ．@KEY()↓
+◆Ｍｙ　ｄａｕｇｈｔｅｒ　ｄｏｅｓ’ｎｔ　ｗａｎｔ　ｔｏ　ｔａｌｋ　ｔｏ　ｍｅｄｉａ　ｍｏｎｋｅｙｓ　ｌｉｋｅ　ｙｏｕ．
+;jpn:◆かえってくれ。@WI(20)↓
+;jpn:　うちのむすめは↓
+;jpn:　サルぐんだんじゃない！
+@KEYNP()
+』
+
+_TWSN_PAUL_NO_1;
+◆Ｎｏｗ　ｗｈｅｒｅ　ｄｉｄ　ｓｈｅ　ｇｏ？@KEY()↓
+◆Ｉ’ｍ　ｓｏｒｒｙ，@WI(15)　ｃｏｕｌｄ　ｙｏｕ　ｃｏｍｅ　ｂａｃｋ　ａｆｔｅｒ　ａ　ｗｈｉｌｅ？
+;jpn:◆どこへ　でかけたんだろう？@WI(20)↓
+;jpn:　わるいが　でなおしてください。
+@KEYNP()
+』
+
+_TWSN_PAUL_POPO;
+@SET_LOOPREG(1)
+@GET_PLAYER_NAME(PC_PAULA)
+@SET_REG(0)
+◆@DSP_CHAR(0)@WI(5)　@DSP_CHAR(0)@WI(5)　@DSP_NAME(PC_PAULA)’ｓ　ｎｏｔ　ｈｏｍｅ　ｙｅｔ．@KEY()↓
+◆Ｅｖｅｒｄｒｅｄ　ｉｎ　Ｂｕｒｇｌｉｎ　Ｐａｒｋ　ｍｉｇｈｔ　ｋｎｏｗ　ｓｏｍｅｔｈｉｎｇ．@KEY()↓
+◆Ｏｈ，　ｂｏｙ！@WI(20)　　Ｎｏｗ　Ｉ’ｍ　ｒｅａｌｌｙ　ｗｏｒｒｉｅｄ．
+;jpn:◆@DSP_CHAR(0)　@DSP_CHAR(0)　@DSP_STS(STS_PC_NAME_PAULA)が↓
+;jpn:　まだ　もどらないんだ。@KEY()↓
+;jpn:◆ヌスットひろばの↓
+;jpn:　トンチキってボスが↓
+;jpn:　どうも　あやしいらしいんだが‥‥@KEY()↓
+;jpn:◆うー@WI(20)　うー‥‥@WI(60)しんぱいだっ！
+@KEYNP()
+@SETF(FLG_TWSN_INFO_TONCHIKI)
+』
+
+MSG_TWSN_PAUL_LATER;
+@CHKFGOTO(FLG_GLOBAL_POLA_KIDNAPPED,_TWSN_PAUL_LATER_PAULA_DEAD);誘拐中
+@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_PAUL_LATER_NES_DEAD)
+@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_PAUL_LATER_PAULA_DEAD)
+◆Ｙｏｕ’ｒｅ　ｂｏｔｈ　ｆｉｎｅ．．．Ｉ’ｍ　ｓｏ　ｒｅｌｉｅｖｅｄ！@KEY()↓
+◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｇｅｔ　ｓｏｍｅ　ｒｅｓｔ　ｈｅｒｅ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆おお　@DSP_STS(STS_PC_NAME_NES)くん。@DSP_STS(STS_PC_NAME_PAULA)！@WI(20)↓
+;jpn:　げんきそうで　なによりだ。@KEY()↓
+;jpn:◆きょうは　ここに　とまりなさい。↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_PAUL_LATER_YES,_TWSN_PAUL_LATER_NO)
+
+_TWSN_PAUL_LATER_NO;
+◆Ｃｏｍｅ　ｏｎ，@WI(15)　ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｐｕｔ　ｙｏｕｒ　ｄｏｇｓ　ｕｐ　ａｎｄ　ｒｅ@WI(5)ｅ@WI(5)ｅ@WI(5)ｅ@WI(5)ｌａｘ．
+;jpn:◆ゆっくり　やすんだらいいのに。
+@KEYNP()
+』
+
+_TWSN_PAUL_LATER_YES;
+◆@DSP_NAME(PC_NESS)，　ｙｏｕ’ｌｌ　ｓｌｅｅｐ　ｏｎ　ｔｈｅ　ｃｏｕｃｈ　ｉｎ　ｔｈｅ　ｄｅｎ．．．
+;jpn:◆べつべつの　へやにな‥‥。
+@KEY()
+;体力回復（暗転ワープあり、ＢＧＭあり、夜鍋あり、セリフ替えなし）
+@GOSUB(MSG_GLOBAL_MYHOME)
+@WARP(WARP_PAULASTAR_BED)
+@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
+←
+
+;◆さらば　@DSP_STS(STS_PC_NAME_PAULA)！↓
+;　パパ@WI(20)　ないてなんかいないぞ。@KEYNP()
+』
+_TWSN_PAUL_LATER_PAULA_DEAD;ポーラ死に
+@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_PAUL_LATER_BOTH_DEAD)
+◆Ｈｅｙ！　　Ｃｏｍｅ　ｏｎ　ｉｎ！@KEY()↓
+◆Ｎｏ，　Ｉ　ｄｏｎ’ｔ　ｎｅｅｄ　ｔｏ　ｈｅａｒ　ａｂｏｕｔ　ｗｈａｔ　ｈａｐｐｅｎｅｄ．．．@WI(20)　　@DSP_NAME(PC_PAULA)　ｗｉｌｌ　ｂｅ　ｏｋａｙ．@KEY()↓
+◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｊｕｓｔ　ｒｅｓｔ　ｆｏｒ　ｎｏｗ．@KEY()↓
+◆Ｙｏｕ　ｋｎｏｗ　ｗｈｅｒｅ　ｔｈｅ　ｃｏｕｃｈ　ｉｎ　ｔｈｅ　ｄｅｎ　ｉｓ．．．
+;jpn:◆やあやあ　いらっしゃい。@KEY()↓
+;jpn:◆いやいや　じじょうは↓
+;jpn:　きくまい。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)は　どうせ↓
+;jpn:　げんきにきまっとる。@KEY()↓
+;jpn:◆ゆっくり　やすんでいきなさい。
+@KEY()
+;体力回復（暗転ワープあり、ＢＧＭあり、夜鍋あり、セリフ替えなし）
+@GOSUB(MSG_GLOBAL_MYHOME)
+@WARP(WARP_PAULASTAR_BED)
+@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
+』
+_TWSN_PAUL_LATER_NES_DEAD;ネス死に
+@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_PAUL_LATER_BOTH_DEAD)
+◆Ｏｈ　@DSP_NAME(PC_PAULA)！@KEY()↓
+◆Ｓｏ　ｅｖｅｎ　ａ　ｔｏｍｂｏｙ　ｌｉｋｅ　ｙｏｕ　ｔｈｉｎｋｓ　ｏｆ　ｈｅｒ　ｆａｔｈｅｒ　ｏｃｃａｓｉｏｎａｌｌｙ！@KEY()↓
+◆Ｙｏｕ　ｓｈｏｕｌｄ　ｒｅｓｔ，@WI(15)　ｓｅｅｉｎｇ　ｈｏｗ　ｔｈｉｓ　ｉｓ　ｙｏｕｒ　ｏｗｎ　ｈｏｍｅ．@KEY()↓
+◆Ｈｏｗ　ａｂｏｕｔ　ｗｅ　ｓｈａｒｅ　ａ　ｐｉｅｃｅ　ｏｆ　ｐｉｅ　ｌｉｋｅ　ｗｅ　ｕｓｅｄ　ｔｏ？　　Ｈａ　ｈａ　ｈａ！
+;jpn:◆おお　@DSP_STS(STS_PC_NAME_PAULA)か！@KEY()↓
+;jpn:◆おまえみたいな↓
+;jpn:　おてんばでも@KEY()↓
+;jpn:◆たまには　パパのことを↓
+;jpn:　おもいだしたりもするんだな。@KEY()↓
+;jpn:◆なつかしの　わがやで↓
+;jpn:　きょうは↓
+;jpn:　ゆっくりしていきなさい。@KEY()↓
+;jpn:◆パパと　おふろにはいるか？@WI(20)↓
+;jpn:　ワハハハハハ！
+@KEY()
+;体力回復（暗転ワープあり、ＢＧＭあり、夜鍋あり、セリフ替えなし）
+@GOSUB(MSG_GLOBAL_MYHOME)
+@WARP(WARP_PAULASTAR_BED)
+@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
+』
+_TWSN_PAUL_LATER_BOTH_DEAD;
+◆Ｈｍｍ．．．Ｉ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
+◆Ｓｏ　ｙｏｕ’ｒｅ　ａ　ｆｒｉｅｎｄ　ｏｆ　@DSP_NAME(PC_PAULA)’ｓ？@KEY()↓
+◆Ｌｏｏｋ　ｍｅ　ｉｎ　ｔｈｅ　ｅｙｅ．．．@WI(20)Ｙｅｓ，　ｙｏｕ’ｒｅ　ｔｅｌｌｉｎｇ　ｔｈｅ　ｔｒｕｔｈ．@KEY()↓
+◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｇｅｔ　ｓｏｍｅ　ｓｈｕｔ　ｅｙｅ？
+;jpn:◆フムフム。@WI(20)↓
+;jpn:　なるほど。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)の↓
+;jpn:　ともだちなのか。@KEY()↓
+;jpn:◆わたしのめを　みなさい。@KEY()↓
+;jpn:◆‥‥‥@WI(60)↓
+;jpn:　うそを　ついてるわけでは↓
+;jpn:　なさそうだ。@KEY()↓
+;jpn:◆あたたかい　ベッドで↓
+;jpn:　やすんでいきなさい。
+@KEY()
+;体力回復（暗転ワープあり、ＢＧＭあり、夜鍋あり、セリフ替えなし）
+@GOSUB(MSG_GLOBAL_MYHOME)
+@WARP(WARP_PAULASTAR_BED)
+@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
+』
+_TWSN_PAUL_END;＆
+◆Ｙｏｕ’ｒｅ　ａ　ｖｅｒｙ　ｓｔｒｏｎｇ，　ｙｏｕｎｇ　ｍａｎ．@WI(20)　　Ｍｙ　ｏｐｉｎｉｏｎ　ｏｆ　ｙｏｕ　ｈａｓ　ｃｈａｎｇｅｄ．@KEY()↓
+◆Ｐｅｒｈａｐｓ　ｙｏｕ　ｓｈｏｕｌｄ　ｃｏｎｔｉｎｕｅ　ｄａｔｉｎｇ　@DSP_NAME(PC_PAULA)．@KEY()↓
+◆Ｊｕｓｔ　ｔｒｅａｔ　ｈｅｒ　ｒｉｇｈｔ．．．@KEY()↓
+◆Ｃｏｍｅ　ｂｙ　ａｎｄ　ｖｉｓｉｔ　ａｎｙｔｉｍｅ．@KEY()↓
+◆Ｙｏｕ　ｃａｎ　ｅｖｅｎ　ｓｌｅｅｐ　ｏｎ　ｔｈｅ　ｌｉｖｉｎｇ　ｒｏｏｍ　ｃｏｕｃｈ　ｉｎｓｔｅａｄ　ｏｆ　ｔｈｅ　ｏｎｅ　ｉｎ　ｔｈｅ　ｄｅｎ．．．
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)くん↓
+;jpn:　きみは　ほんとうに↓
+;jpn:　しっかりした　しょうねんだ。@KEY()↓
+;jpn:◆あらためて　みなおしたよ。@KEY()↓
+;jpn:◆もし　きみが　のぞむなら↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)と　これからも↓
+;jpn:　こうさいしてくれたまえ。@KEY()↓
+;jpn:◆せいねんらしい↓
+;jpn:　せいせいどうどうとした↓
+;jpn:　つきあいを　たのむよ。@KEY()↓
+;jpn:◆たまには↓
+;jpn:　あそびにきてくれたまえ。@KEY()↓
+;jpn:◆わたしの　へやにも↓
+;jpn:　とまれるし‥‥。
+@KEYNP()
+』
+
+;----------------------------------------
+;@Habitat:ツーソン／有望青年Ａの家／有望青年Ａの家
+;@Person:オレンジキッド
+;@Figure:有望青年Ａ
+;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_ORANGE
+MSG_TWSN_ORANGE;
+;将来有望な青年Ａ（オレンジキッド）
+;ツーソンの町で評判の神童のひとり。いろんな工夫や
+;発明をしてＮＥＳを助けてくれそう。純真で利発そうな瞳は
+;プレイヤーたちの信頼をえずにはいられないが、ろくでも
+;ないやつに、すぐなりさがる。（オレンジは、黄信号の意と記憶しよう）
+@CHKFGOTO(FLG_WIN_GIEGU,_TWSN_ORANGE_END_A)
+@CHKFGOTO(FLG_TWSN_ORANGE_THANKS,_TWSN_ORANGE_THANKS_MAIN)
+@CHKFGOTO(FLG_TWSN_INFO_TACO,_TWSN_ORANGE_2)
+◆Ｇｒｅｅｔｉｎｇｓ．@WI(20)　　Ｉ’ｍ　Ｏｒａｎｇｅ　Ｋｉｄ，　ｔｈｅ　ｉｎｖｅｎｔｏｒ．@KEY()↓
+◆Ｈａｖｅ　ｙｏｕ　ｈｅａｒｄ　ｏｆ　ｍｅ？@WI(20)　　Ｉ’ｍ　ａ　ｂｉｔ　ｅｍｂａｒｒａｓｓｅｄ　ａｂｏｕｔ　ｍｙ　ｒｅｐｕｔａｔｉｏｎ．@KEY()↓
+◆Ｉ　ｈａｖｅ　ａ　ｌｏｔ　ｏｆ　ｉｎｖｅｎｔｉｏｎｓ　ｉｎ　ｄｅｖｅｌｏｐｍｅｎｔ，　ｂｕｔ　Ｉ’ｍ　ｒｕｎｎｉｎｇ　ｓｈｏｒｔ　ｏｆ　ｃａｓｈ．@KEY()↓
+◆Ｉ’ｍ　ｂａｓｉｃａｌｌｙ　ａ　ｈａｐｐｙ－ｇｏ－ｌｕｃｋｙ　ｐｅｒｓｏｎ，@WI(15)　ｓｏ　Ｉ’ｍ　ｎｏｔ　ｗｏｒｒｉｅｄ．@KEY()↓
+◆Ｙｏｕ　ｋｎｏｗ，@WI(15)　Ｉ’ｍ　ｗｏｒｋｉｎｇ　ｏｎ　ｔｈｉｓ　ｍａｃｈｉｎｅ@KEY()↓
+◆ｔｈａｔ　ｗｏｕｌｄ　ｒｅａｌｌｙ　ｈｅｌｐ　ｙｏｕ　ｉｎ　Ｐｅａｃｅｆｕｌ　Ｒｅｓｔ　Ｖａｌｌｅｙ．@KEY()↓
+◆Ｉ　ｈｏｐｅ　ｉｔ’ｓ　ｒｅａｄｙ　ｓｏｏｎ．．．ｗｈａｔ？@KEY()↓
+◆Ｙｏｕ’ｒｅ　ａｃｔｕａｌｌｙ　ｗｉｌｌｉｎｇ　ｔｏ　ｈｅｌｐ　ｆｉｎａｎｃｅ　ｔｈｅ　ｐｒｏｊｅｃｔ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆ようこそ。↓
+;jpn:　ぼくが　はつめいかの↓
+;jpn:　オレンジキッドです。@KEY()↓
+;jpn:◆ぼくの　ひょうばんを↓
+;jpn:　きいたんですか‥‥いやぁ↓
+;jpn:　てれちゃうなぁ。@KEY()↓
+;jpn:◆いま　かいはつちゅうの　はつめい↓
+;jpn:　いろいろあるんですが@KEY()↓
+;jpn:◆おかねが　たりなくて↓
+;jpn:　くろうしてます。@KEY()↓
+;jpn:◆でも　ぼく　へいきです。@WI(20)↓
+;jpn:　あかるいせいかくですから。@KEY()↓
+;jpn:◆グレートフルデッドのたにの↓
+;jpn:　うわさのモンスターを　たおすにも@WI(20)↓
+;jpn:　このマシンさえ　かんせいすれば‥@KEY()↓
+;jpn:◆‥‥しきんを　えんじょして↓
+;jpn:　くれるんですか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_ORANGE_YES,_TWSN_ORANGE_NO)
+
+_TWSN_ORANGE_NO;
+◆Ｉ　ｇｕｅｓｓ　Ｉ　ｗａｓ　ｊｕｓｔ　ｔｏｏ　ｈｏｐｅｆｕｌ．@WI(20)　　Ｏｈ　ｗｅｌｌ，　ｎｅｖｅｒ　ｍｉｎｄ．
+;jpn:◆ちょっとでも　あてにした↓
+;jpn:　ぼくが　あまかったです。@WI(20)↓
+;jpn:　きに　しないでください。
+@KEYNP()
+』
+
+_TWSN_ORANGE_YES;
+◆Ｏｈ　ｇｏｏｄｙ！@WI(20)　　Ｗｏｕｌｄ　ｉｔ　ｂｅ　ｏｋａｙ　ｔｏ　ｇｅｔ　＄２００　ｔｏ　ｂｕｙ　ｍａｔｅｒｉａｌｓ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆そしたら　ざいりょうひってことで↓
+;jpn:　２００ドル↓
+;jpn:　おねがいします。@KEY()↓
+@WINR_MONEY()
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_ORANGE_THANKS,_TWSN_ORANGE_NO)
+@GOTO(_TWSN_ORANGE_NO)
+
+_TWSN_ORANGE_THANKS;
+@Q_MONEY(200)
+@TRUE_GOTO(_TWSN_ORANGE_NOMONEY)
+@SE(SE_se76_my_give)
+@MONEYOUT(200)
+@WINR_MONEY()
+;
+_TWSN_ORANGE_THANKS_THANKS;
+◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ！@KEY()↓
+◆Ｙｏｕｒ　ｓｕｐｐｏｒｔ　ｓｈｏｕｌｄ　ｈａｖｅ　ａ　ｔｒｅｍｅｎｄｏｕｓ　ｉｍｐａｃｔ　ｏｎ　ａｌｌ　ｍａｎｋｉｎｄ．
+;jpn:◆ありがとうありがとう。@WI(20)↓
+;jpn:　これは　せかいてきに↓
+;jpn:　いみのあるおこないと　いえます！
+@KEY()↓
+@SETF(FLG_TWSN_ORANGE_THANKS)
+;
+_TWSN_ORANGE_THANKS_MAIN;
+@CHKFGOTO(FLG_ITEM_GREATORANGE,_TWSN_ORANGE_LATER_1)
+◆Ｌｅｔ　ｍｅ　ｇｉｖｅ　ｙｏｕ　ｍｙ　ｎｅｗ　”Ｓｕｐｅｒ　Ｏｒａｎｇｅ　Ｍａｃｈｉｎｅ．”@KEY()↓
+◆Ｉ　ｃａｌｌ　ｉｔ　”@DSP_GOODS(GDS_TOOL_GREORE_MACHINE)”　ｆｏｒ　ｓｈｏｒｔ．@KEY()↓
+;jpn:◆さっそく　かんせいしたばかりの↓
+;jpn:　「グレートオレンジマシーン」↓
+;jpn:　りゃくしょう‥‥@KEY()↓
+;jpn:◆「グレオレマシーン」を↓
+;jpn:　さしあげましょう！
+@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_TWSN_ORANGE_THANKS_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_GREORE_MACHINE)
+@GOSUB(MSG_SUB_GETGOODS)
+@SETF(FLG_ITEM_GREATORANGE)
+@KEY()↓
+◆Ｐｌｅａｓｅ　ｕｓｅ　ｉｔ　ｆｏｒ　ｓｐｒｅａｄｉｎｇ　ｐｅａｃｅ　ａｎｄ　ｇｏｏｄｗｉｌｌ　ｏｎ　Ｅａｒｔｈ．
+;jpn:◆せかいへいわのために↓
+;jpn:　やくにたててください。
+@KEYNP()
+』
+
+;（使うと「オレンジキッドをたたえるうたが　きこえた」）
+_TWSN_ORANGE_THANKS_GOODSFULL;
+◆Ａｈ　ｈａ！@WI(20)　　Ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｉｔｅｍｓ．@KEY()↓
+◆Ｉ　ｈｏｐｅ　ｙｏｕ’ｌｌ　ａｃｃｅｐｔ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_GREORE_MACHINE)，@WI(15)　ｅｖｅｎ　ｉｆ　ｙｏｕ　ｈａｖｅ　ｔｏ　ｔｏｓｓ　ｓｏｍｅ　ｏｆ　ｙｏｕｒ　ｆｏｏｄ．．．
+;jpn:◆ああ　にもつが↓
+;jpn:　いっぱいのようですね。@KEY()↓
+;jpn:◆たべものの　ひとつやふたつ↓
+;jpn:　すててでも　マシーンを↓
+;jpn:　もっていってほしいなぁ‥‥。
+@KEYNP()
+』
+
+_TWSN_ORANGE_NOMONEY;
+◆Ｗｈａｔ？！@WI(15)　　Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｈａｔ　ｍｕｃｈ　ｍｏｎｅｙ？@KEY()↓
+◆Ｗｅｌｌ，　ｐｅｒｈａｐｓ　ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｂｅ　ｙａｐｐｉｎ’　ａｂｏｕｔ　ｈａｖｉｎｇ　ｃａｓｈ　ｔｈｅｎ，@WI(15)　ｂｕｄｄｙ．
+;jpn:◆エッ？！↓
+;jpn:　まさか‥‥おかねがない？@KEY()↓
+;jpn:◆あなた　くちさきばっかりの↓
+;jpn:　にんげんみたいですね。
+@KEYNP()
+』
+
+_TWSN_ORANGE_LATER_1;
+@CHKF(FLG_ITEM_GREATORANGE)@FALSE_GOTO(_TWSN_ORANGE_THANKS_MAIN)
+@CHKFGOTO(FLG_TWSN_ORANGE_LATER,_TWSN_ORANGE_LATER_2)
+◆Ｉ’ｍ　ｈａｒｄ　ａｔ　ｗｏｒｋ．．．ｄｏｎ’ｔ　ｗｏｒｒｙ，@WI(15)　ｍｙ　ｂｒｉｌｌｉａｎｔ　ｉｎｖｅｎｔｉｏｎ　ｗｉｌｌ　ｂｅ　ｒｅａｄｙ　ｓｏｏｎ．@KEY()↓
+◆Ｏｋａｙ，　ｏｋａｙ．．．@WI(20)　　Ｉ’ｌｌ　ｇｅｔ　ｂａｃｋ　ｔｏ　ｗｏｒｋ！
+;jpn:◆がんばってますから　もうすぐ↓
+;jpn:　かんせいしますよ。@WI(20)↓
+;jpn:　よーし！　やるぞぉ！
+@KEYNP()
+@SETF(FLG_TWSN_ORANGE_LATER)
+』
+
+_TWSN_ORANGE_LATER_2;
+◆Ｉ’ｍ　ｈａｖｉｎｇ　ｍｏｒｅ　ｔｒｏｕｂｌｅ　ｔｈａｎ　Ｉ　ｅｘｐｅｃｔｅｄ．@KEY()↓
+◆Ｉ　ｆｏｕｎｄ　ａ　ｐｒｏｂｌｅｍ　ｉｎ　ｏｎｅ　ｏｆ　Ｅｉｎｓｔｅｉｎ’ｓ　ｔｈｅｏｒｉｅｓ．．．
+;jpn:◆おもったより　くしんしています。@WI(20)↓
+;jpn:　アインシュタインのげんりに↓
+;jpn:　ちょっと　もんだいがあって‥‥。
+@KEYNP()
+@CLRF(FLG_TWSN_ORANGE_LATER)
+』
+
+_TWSN_ORANGE_2;
+◆Ｙｏｕ　ｄｉｄｎ’ｔ　ｉｎｖｅｓｔ　ａｎｙ　ｍｏｎｅｙ　ｉｎ　ｍｙ　ｖｅｎｔｕｒｅ，@KEY()↓
+◆ｂｕｔ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｄｏｎａｔｅｄ　ａ　ｆｅｗ　ｍｉｌｌｉｏｎ　ｂｕｃｋｓ，@WI(15)　ｓｏ　ｅｖｅｒｙｔｈｉｎｇ　ｉｓ　ｇｒｅａｔ．@KEY()↓
+◆Ｓｏ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｉｎｖｅｓｔ，@WI(10)　ｓａｙ，@WI(15)　５０　ｂｕｃｋｓ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆あなたは　ぼくに↓
+;jpn:　とうし　してくれませんでしたが@KEY()↓
+;jpn:◆とくめいの　かたから@KEY()↓
+;jpn:◆なんびゃくまんおくドルの↓
+;jpn:　きふの　もうしこみが↓
+;jpn:　あったんですよ！@KEY()↓
+;jpn:◆あなたも　５０ドルばかり↓
+;jpn:　とうし　しますか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_ORANGE_2_YES,_TWSN_ORANGE_2_NO)
+
+_TWSN_ORANGE_2_NO;
+◆Ｏｈ，@WI(15)　Ｉ’ｍ　ｓｏｒｒｙ　ｔｏ　ｈｅａｒ　ｔｈａｔ．@KEY()↓
+◆．．．Ａｎｄ　ｙｏｕ　ｎｅｖｅｒ　ｈｅａｒｄ　ｈｏｗ　ｍｕｃｈ　ｍｏｎｅｙ　Ｉ　ｇｏｔ，　ｔｏｏ．@WI(15)　　Ｒｉｇｈｔ？　＊ｗｉｎｋ＊　＊ｗｉｎｋ＊．．．
+;jpn:◆あ　ごめんなさい↓
+;jpn:　おたがい　きかなかったことに↓
+;jpn:　しましょう。
+@KEYNP()
+』
+
+_TWSN_ORANGE_2_YES;
+@Q_MONEY(50)
+@TRUE_GOTO(_TWSN_ORANGE_NOMONEY)
+@SE(SE_se76_my_give)
+@MONEYOUT(50)
+@WINR_MONEY()
+@GOTO(_TWSN_ORANGE_THANKS_THANKS)
+
+_TWSN_ORANGE_END_A;＆
+;投資していない
+@CHKFGOTO(FLG_TWSN_ORANGE_THANKS,_TWSN_ORANGE_END_B)
+◆Ｗｅｌｌ，　ｙｏｕ　ｎｅｖｅｒ　ｉｎｖｅｓｔｅｄ　ｉｎ　ｍｙ　ｇｅｎｉｕｓ，@WI(15)　ｄｉｄ　ｙｏｕ？@KEY()↓
+◆Ｙｏｕ　ｈａｄ　ｎｏ　ｉｄｅａ　ｏｆ　ｗｈａｔ　Ｉ　ｃｏｕｌｄ　ｄｏ．．．@KEY()↓
+◆＊ｃｈｏｒｔｌｅ＊@KEY()↓
+◆Ｙｏｕ　ｓｏｒｒｙ　ｌｏｓｅｒ．
+;jpn:◆ぼくという　てんさいを↓
+;jpn:　いちども　しえんしなかった↓
+;jpn:　@DSP_STS(STS_PC_NAME_NES)さん。@KEY()↓
+;jpn:◆ぼくが　どれくらい↓
+;jpn:　たいしたおとこか↓
+;jpn:　とうとう　しらないままに@KEY()↓
+;jpn:◆‥‥ふっふっふ@WI(20)↓
+;jpn:　‥‥なりましたね。
+@KEYNP()
+』
+_TWSN_ORANGE_END_B;投資した
+◆Ｄｉｄ　ｙｏｕ　ｃｏｍｅ　ｈｅｒｅ　ｔｏ　ｇｅｔ　ｙｏｕｒ　ｉｎｖｅｓｔｍｅｎｔ　ｍｏｎｅｙ　ｂａｃｋ？@KEY()↓
+◆Ｎｏ？@WI(15)　　Ｃａｎ　ｙｏｕ　ｗａｉｔ　ａ　ｌｉｔｔｌｅ　ｌｏｎｇｅｒ？@KEY()↓
+◆Ｉ　ｐｒｏｍｉｓｅ　Ｉ’ｌｌ　ｆｉｎｉｓｈ　ｍｙ　ｂｒｉｌｌｉａｎｔ　ｉｎｖｅｎｔｉｏｎ．@KEY()↓
+◆Ｉ　ｒｅｌｙ　ｏｎ　ｙｏｕｒ　ｓｕｐｐｏｒｔ，@WI(15)　ｅｖｅｎ　ｔｈｏｕｇｈ　Ｉ　ａｍ　ａ　ｓｕｐｅｒ　ｇｅｎｉｕｓ．
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)さん↓
+;jpn:　いままで　とうししたおかねの↓
+;jpn:　かいしゅうに　きたんですか？@KEY()@WI(20)↓
+;jpn:◆あ　ちがう。@KEY()↓
+;jpn:◆‥‥もうちょっと↓
+;jpn:　まってさえくれれば@KEY()↓
+;jpn:◆かならず　はつめいは↓
+;jpn:　かんせいしますから。@KEY()↓
+;jpn:◆きながに　ぼくという↓
+;jpn:　てんさいを　みまもってください。
+@KEYNP()
+』
+
+;----------------------------------------
+;@Habitat:ツーソン／有望青年Ｂの家／有望青年Ｂの家
+;@Person:アップルキッド
+;@Figure:有望青年Ｂ
+;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/off
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_APPLEKID
+;将来有望な青年Ｂ（アップルキッド）
+;もうひとりの神童。デブで目つきは悪いが、やっぱり
+;たいしたやつらしい。なんとなくゴロゴロしててたよりになり
+;そうもなく見えてしまうが、本当はこいつが心強い味方に
+;なってくれるのだ。マウスという名のねずみを飼っている。
+
+MSG_TWSN_APPLEKID;
+MSG_TWSN_APPLE;
+@CHKFGOTO(FLG_ITEM_PHONE,_TWSN_APPLE_BYE)
+@CHKFGOTO(FLG_TWSN_APPLE_THANKS,_TWSN_APPLE_THANKS)
+@CHKFGOTO(FLG_TWSN_APPLE_FOOD,_TWSN_APPLE_FOOD)
+◆Ｗｅｌｌ，@WI(15)　Ｉ　ｈａｖｅ　ｓｏｒｔ　ｏｆ　ｎｅｇｌｅｃｔｅｄ　ｄｏｉｎｇ　ｍｙ　ｈｏｕｓｅｗｏｒｋ．．．@KEY()↓
+◆Ｉ　ｋｎｏｗ　ｉｔ’ｓ　ａ　ｂｉｔ　ｏｆ　ａ　ｐｉｇ　ｓｔｙ，@WI(15)　ｂｕｔ　ａｎｙｗａｙ．．．@KEY()↓
+◆Ｉ’ｍ　Ａｐｐｌｅ　Ｋｉｄ．@KEY()↓
+◆Ｉ　ｈａｖｅｎ’ｔ　ｔａｋｅｎ　ａ　ｂａｔｈ　ｉｎ　ｑｕｉｔｅ　ａ　ｗｈｉｌｅ，@WI(15)　ｓｏ　Ｉ　ｍａｙ　ｂｅ　ｋｉｎｄ　ｏｆ　ｓｔｉｎｋｙ．
+;DAN:"take a shower" is better for American teeens?  Also, is it better to say "I'm a little　ｓｔｉｎｋ．”？
+;jpn:◆そうじしてないから　ちらかってて↓
+;jpn:　きたないけど‥‥@KEY()↓
+;jpn:◆‥‥‥@KEY()↓
+;jpn:◆ぼくが　アップルキッドですが↓
+;jpn:　‥‥おふろはいってないから↓
+;jpn:　ちょっと　きたないけど‥‥
+@KEY()↓
+@WI(60)
+◆Ｂｙ　ｔｈｅ　ｗａｙ，@WI(15)　Ｉ’ｍ　ｓｔａｒｖｉｎｇ．@WI(20)　　Ｄｏ　ｙｏｕ　ｈａｖｅ　ｓｏｍｅｔｈｉｎｇ　ｔｏ　ｅａｔ？@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｄｏ，@WI(15)　ｃａｎ　Ｉ　ｈａｖｅ　ｓｏｍｅ？↓
+;jpn:◆はらへったなぁ。↓
+;jpn:　なにか　たべもの　ありますか？@KEY()↓
+;jpn:◆そして　それを　くれますか？↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_TWSN_APPLE_YES,_TWSN_APPLE_NO)
+
+_TWSN_APPLE_NO;
+◆Ｗｅｌｌ，　ｇｏ　ａｈｅａｄ　ａｎｄ　ｍａｋｅ　ｙｏｕｒｓｅｌｆ　ｃｏｍｆｏｒｔａｂｌｅ　ａｎｙｗａｙ．@WI(15)　　Ｙｏｕ　ｃａｎ　ｆｌｏｐ　ｄｏｗｎ　ａｎｙｗｈｅｒｅ．
+;jpn:◆じゃ　そこいらへんで↓
+;jpn:　ごろごろしててください。↓
+;jpn:　じゃまにならないように。
+@GOTO(_TWSN_APPLE_END)
+
+_TWSN_APPLE_YES;
+◆Ｗｈａｔ　ｃａｎ　ｙｏｕ　ｇｉｖｅ　ｍｅ？
+;jpn:◆どれを　くれるんですか？
+@KEY()
+@DSP_PL()
+@GOSUB(MSG_SEL_GOODS)
+↓
+@FALSE_GOTO(_TWSN_APPLE_NO)		;キャンセル？
+@SAVE_REG()				;主レ=PLAYER_ID:副レ=GOODSの位置で保存
+@GET_PLAYER_GOODS(0,0)			;主レ=PLAYER_ID:副レ=GOODS_ID
+@GOODS_TYPE_P(TYPE_EAT)			;グッズタイプチェック。
+@TRUE_GOTO(_TWSN_APPLE_SELECT_FOOD)	;食べ物？
+◆Ｐｌｅａｓｅ　ｃｈｏｏｓｅ　ｓｏｍｅｔｈｉｎｇ　ｅｄｉｂｌｅ．．．Ｉ’ｍ　ｎｏｔ　ａ　ｇａｒｂａｇｅ　ｃａｎ，　ｙｏｕ　ｋｎｏｗ．
+;jpn:◆たべものに　してください。↓
+;jpn:　ぼくは　ゴミばこじゃないんで‥。
+@GOTO(_TWSN_APPLE_END)
+
+_TWSN_APPLE_SELECT_FOOD;
+@LOAD_REG()				;主レ=PLAYER_ID:副レ=GOODSの位置
+@GOODSOUT_PLAYER(0,0)			;グッズ削除。
+@SE(SE_se76_my_give)				;??
+@WI(1)
+◆Ｔｈａｎｋｓ．@WI(20)　　Ｙｏｕ　ｓｅｅｍ　ｖｅｒｙ　ｎｉｃｅ．@WI(20)　　Ｕｈ，@WI(15)　Ｉ　ｗｏｎｄｅｒ　ｉｆ．．．
+;jpn:◆ありがとう。↓
+;jpn:　あなた　いいひとですね。@KEY()↓
+;jpn:◆ついでみたいで　わるいけど
+@KEY()↓
+@SETF(FLG_TWSN_APPLE_FOOD)
+;
+_TWSN_APPLE_FOOD_MAIN;
+◆Ｍａｙｂｅ　ｙｏｕ　ｗｏｕｌｄ　ｌｉｋｅ　ｔｏ　ｉｎｖｅｓｔ　ｓｏｍｅ　ｍｏｎｅｙ　ｉｎ　ｍｙ　ｉｎｖｅｎｔｉｏｎｓ？@KEY()↓
+;jpn:◆ぼくのはつめいに　しきんの↓
+;jpn:　えんじょを　してくれますか？↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_TWSN_APPLE_OK,_TWSN_APPLE_NO)
+@GOTO(_TWSN_APPLE_NO)
+
+_TWSN_APPLE_OK;
+◆Ｙｅｓ！　　Ｙｅｓ！　　Ｙｅｓ！　　Ｏｈ．　　Ｅｘｃｕｓｅ　ｍｅ．　　Ｉ　ｍｅａｎ　ｔｈａｎｋ　ｙｏｕ！@KEY()↓
+◆Ｂｙ　ｔｈｅ　ｗａｙ，　Ｉ　ｃｏｕｌｄ　ｒｅａｌｌｙ　ｕｓｅ　＄２００．
+;jpn:◆そうか。やったなぁ。いいぞ。@KEY()↓
+;jpn:◆さっそくですけど　２００ドル↓
+;jpn:　おねがいします！↓
+@GOSUB(MSG_SUB_YESNO_MONEY)
+@SELGOTO(_TWSN_APPLE_PAYOK,_TWSN_APPLE_NO)
+@GOTO(_TWSN_APPLE_NO)
+_TWSN_APPLE_PAYOK;
+@Q_MONEY(200)
+@TRUE_GOTO(_TWSN_APPLE_NOMONEY)
+@MONEYOUT(200)
+@WINR_MONEY()
+@SE(SE_se76_my_give)
+@WI(1)
+_TWSN_APPLE_THANKS;
+◆Ｔｈａｎｋ　ｙｏｕ．@WI(20)　　Ｉ　ｗｏｎ’ｔ　ｌｅｔ　ｙｏｕ　ｄｏｗｎ．
+;jpn:◆ありがとう。↓
+;jpn:　できるかぎり　がんばってみます。
+@KEYNP()
+@CLOSEALL()
+@SETF(FLG_TWSN_APPLE_THANKS)
+@SETF(FLG_WARP_APPLE_TWSN)
+@FUNC(5)				;マップ上での全滅禁止
+@GOTO(MSG_EVT_27_APPLE);ネズミ移動
+』
+_TWSN_APPLE_NOMONEY;@MiuraAppended
+◆Ｏｈ，　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ，　ｄｏ　ｙｏｕ？
+;jpn:◆あっ。↓
+;jpn:　おかね　ないんですね。
+@KEY()↓
+@GOTO(_TWSN_APPLE_NO)
+
+_TWSN_APPLE_BYE;
+◆Ｍａｙｂｅ　ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｓｐｅｎｄ　ｔｏｏ　ｍｕｃｈ　ｔｉｍｅ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ　Ｔｗｏｓｏｎ．
+;jpn:◆いつまでも　ツーソンで↓
+;jpn:　うろうろしてても　しょうがない。↓
+;jpn:　ぼくは　そうおもうんですよ。
+_TWSN_APPLE_END;
+@KEYNP()
+@!
+
+;食べ物をあげている場合のスタート
+_TWSN_APPLE_FOOD;
+◆Ｉｔ　ｓｅｅｍｓ　ｌｉｋｅ　ｙｏｕ　ａｒｅ　ｅｘｐｅｃｔｉｎｇ　ｓｏｍｅｔｈｉｎｇ　ｆｒｏｍ　ｍｅ．
+;jpn:◆なんか　ぼくに↓
+;jpn:　きたいしてくれてる↓
+;jpn:　みたいですね。
+@KEY()↓
+@GOTO(_TWSN_APPLE_FOOD_MAIN)
+
+
+;@Habitat:ツーソン／有望青年Ｂの家／有望青年Ｂの家
+;@Person:ペット
+;@Figure:ねずみ
+;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/off
+;@ActionScript:◆演出コンテ#2.5
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_MOUSE_0
+MSG_TWSN_MOUSE_0;
+;アップルキッドのねずみ（マウス）
+;アップルにはマウスが付きものなので登場した。
+@CLRF(FLG_WARP_APPLE_TWSN)
+@CHKFGOTO(FLG_ITEM_PHONE,_TWSN_MOUSE_LATER)
+@CHKFGOTO(FLG_TWSN_APPLE_THANKS,_TWSN_MOUSE)
+_TWSN_MOUSE_LATER;
+◆Ｉ　ａｍ　ａ　ｍｏｕｓｅ．@WI(20)　　Ｎｏ　ｏｎｅ　ｈａｓ　ｇｉｖｅｎ　ｍｅ　ａ　ｎａｍｅ　ｙｅｔ．
+;DAN: This script came from a famous Japanese ｎｏｖｅｌ　ｗｒｉｔｔｅｎ　ｂｙ　Ｓｏｕｓｅｋｉ　Ｎａｔｓｕｍｅ．Ｍａｊｏｒｉｔｙ　ｏｆ　Ｊａｐａｎｅｓｅ　ｍｕｓｔ　ｋｎｏｗ　ｔｈｉｓ　ｌｉｎｅ．
+;jpn:◆わがはいは　マウスである。@WI(30)↓
+;jpn:　なまえは　まだない。
+@CHKFGOTO(FLG_TEMP_3,_TWSN_MOUSE_BYE);マウスドアにいたら移動
+@KEYNP()
+』
+
+_TWSN_MOUSE;
+@FUNC(6)				;マップ上での全滅許可
+◆Ｉ　ａｍ　ａ　ｍｏｕｓｅ．@WI(20)　　Ｎｏ　ｏｎｅ　ｈａｓ　ｇｉｖｅ　ｍｅ　ａ　ｎａｍｅ　ｙｅｔ．@KEY()↓
+◆Ｙｏｕ　ｔｏｏｋ　ｃａｒｅ　ｏｆ　ｍｙ　ｍａｓｔｅｒ．@KEY()↓
+◆Ｉｎ　ｒｅｔｕｒｎ，@WI(15)　Ｉ　ｗａｎｔ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ｔｈｉｓ．@WI(20)　　Ｐｌｅａｓｅ　ｔａｋｅ　ｉｔ　ａｎｄ　ｓａｙ　ｎｏｔｈｉｎｇ．
+;jpn:◆わがはいは　マウスである。@WI(30)↓
+;jpn:　なまえは　まだない。@KEY()↓
+;jpn:◆しゅじんが↓
+;jpn:　せわになった　おれいに↓
+;jpn:　こんなものを　さしあげたい。@KEY()↓
+;jpn:◆えんりょなく　もらってくれ。
+@KEY()
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_TWSN_MOUSE_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_PHONE_RECEIVER)
+@GOSUB(MSG_SUB_GETGOODS_S)
+@SETF(FLG_ITEM_PHONE)
+@CHKFGOTO(FLG_TEMP_3,_TWSN_MOUSE_BYE);マウスドアにいたら移動
+@KEYNP()
+』
+
+_TWSN_MOUSE_BYE;
+@KEY()↓
+◆Ｏｈ！　@WI(20)　Ｉ　ｍｕｓｔ　ｂｅ　ｂｏｔｈｅｒｉｎｇ　ｙｏｕ！@WI(10)　＊ｚｚｉｉｐｐ！＊
+;DAN:"Sasa"is sound of moving fast.
+;jpn:◆‥‥あ↓
+;jpn:　わがはいが　ここにいたら↓
+;jpn:　じゃまだったな。@WI(10)　ササッ！
+@KEY()
+@CLOSEALL()
+@GOSUB(_SUB_CHK_MOUSE_DIR)
+@GOSUB(MSG_EVT_27_MOUSE)
+@CLRF(FLG_WARP_APPLE_TWSN)
+@CLRF(FLG_TEMP_3)	;もうドアの前にいない。
+』
+
+_TWSN_MOUSE_ITEMFULL;
+@WI(60)↓
+◆Ｕｎｆｏｒｔｕｎａｔｅｌｙ，@WI(15)　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｉｔｅｍｓ．@WI(20)　　Ｔｈｅｒｅｆｏｒｅ，　Ｉ　ｃａｎ’ｔ　ｇｉｖｅ　ｔｈｉｓ　ｔｏ　ｙｏｕ．
+;jpn:◆しかし　きみは　にもつが↓
+;jpn:　いっぱいのようだ。@WI(20)↓
+;jpn:　ざんねんながら　わたせないな。
+@CHKFGOTO(FLG_TEMP_3,_TWSN_MOUSE_BYE);マウスドアにいたら移動
+@KEYNP()
+』
+
+_SUB_CHK_MOUSE_DIR;
+@GET_PLAYER_DIR(PC_ALL,2,PRSN_TWSN_APPLE_B)
+@XCHG()
+@SAVE_REG()
+@EQ(1)
+@TRUE_GOTO(_SUB_MOUSE_SETF)
+@LOAD_REG()
+@EQ(2)
+@TRUE_GOTO(_SUB_MOUSE_SETF)
+@LOAD_REG()
+@EQ(8)
+@TRUE_GOTO(_SUB_MOUSE_SETF)
+@!
+_SUB_MOUSE_SETF;
+@SETF(FLG_ANIM_PORT_0)
+@!
+
+;----------------------------------------
+;@Habitat:ツーソン／カオス劇場／受付
+;@Person:切符きり(キャロットちゃん)
+;@Figure:アーティスト
+;@AppearanceKey:FLG_TWSN_CARROT_B_APPEAR/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:MSG_TWSN_CARROT_RECEIVE
+;@CheckMessage:0
+;@Message:MSG_TWSN_CARROT
+MSG_TWSN_CARROT;
+@CHKFGOTO(FLG_TLPT_THRK,_TWSN_CARROT_LATER)
+@CHKFGOTO(FLG_TEMP_1,_TWSN_CARROT_TEMP)
+@CHKFGOTO(FLG_TWSN_TONZURA_FREE,_TWSN_CARROT_BYE)
+@GET_PLAYER_DIR(PC_ALL,2,PRSN_TWSN_CHAOS_FRONT_A)
+@GOSUB(MSG_SUB_Q_FRONT)
+@FALSE_GOTO(_TWSN_CARROT_BYE)
+◆Ｈｅｌｌｏ，@WI(15)　ｐｌｅａｓｅ　ｐｒｅｓｅｎｔ　ｙｏｕｒ　ｔｉｃｋｅｔ．
+;jpn:◆こんにちは。↓
+;jpn:　チケット　おねがいします。
+@KEYNP()
+』
+
+_TWSN_CARROT_LATER;
+◆Ｓｏｒｒｙ，@WI(15)　ｔｈｅ　ｓｈｏｗ　ｉｓ　ｃｌｏｓｅｄ　ｆｏｒ　ａ　ｗｈｉｌｅ．
+;jpn:◆しばらく　ショーは　おやすみよ。
+@KEYNP()
+』
+
+_TWSN_CARROT_BYE;
+◆Ｏｈ，　ｐａｒｄｏｎ　ｍｅ．
+;jpn:◆あら　ごめんなさい。
+@KEY()
+@CLOSEALL()
+@CHKFGOTO(FLG_TWSN_TONZURA_FREE,_TWSN_CARROT_BYE_R)
+@GOSUB(MSG_EVT_31_CARROT_D)
+@SETF(FLG_TEMP_1)
+』
+_TWSN_CARROT_BYE_R;
+@GOSUB(MSG_EVT_31_CARROT_R)
+@SETF(FLG_TEMP_1)
+』
+
+_TWSN_CARROT_TEMP;
+◆Ｓｅｅ　ｙｏｕ．
+;jpn:◆ごくろうさまです。
+@KEYNP()
+』
+
+MSG_TWSN_CARROT_RECEIVE;
+@SAVE_REG()
+@CHKFGOTO(FLG_TEMP_1,_TWSN_CARROT_RECEIVE_TEMP)
+@CHKFGOTO(FLG_TWSN_TONZURA_FREE,_TWSN_CARROT_RECEIVE_LATER)
+@LOAD_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@SAVE_REG()
+@EQ(GDS_TOOL_BACKSTAGE_PASS)
+@TRUE_GOTO(_TWSN_CARROT_RECEIVE_TICKET)
+;@LOAD_REG()
+;@EQ(GDS_TOOL_THEATER_TICKET_X)
+;@TRUE_GOTO(_TWSN_CARROT_RECEIVE_IMITATION)
+;-----
+@GET_PLAYER_DIR(PC_ALL,2,PRSN_TWSN_CHAOS_FRONT_A)
+@GOSUB(MSG_SUB_Q_FRONT)		;前からじゃなかったら
+@FALSE_GOTO(_TWSN_CARROT_BYE)	;下に移動
+◆Ｐｌｅａｓｅ　ｓｈｏｗ　ｍｅ　ｙｏｕｒ　ｔｉｃｋｅｔ．
+;jpn:◆チケット　おねがいします。
+@KEYNP()
+』
+
+_TWSN_CARROT_RECEIVE_TICKET;
+@GET_PLAYER_DIR(PC_ALL,2,PRSN_TWSN_CHAOS_FRONT_A)
+@GOSUB(MSG_SUB_Q_FRONT)		;前からじゃなかったら
+@FALSE_GOTO(_TWSN_CARROT_BYE)	;下に移動
+@SE(SE_se76_my_give)
+;@GOODSOUT(PC_ALL,GDS_TOOL_BACKSTAGE_PASS)
+◆Ｈｅｒｅ　ｙｏｕ　ｇｏ．@WI(15)　　Ｈｕｒｒｙ！@WI(20)　　Ｙｏｕ’ｒｅ　ｊｕｓｔ　ｉｎ　ｔｉｍｅ　ｔｏ　ｓｅｅ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　Ｓｈｏｗ！
+;jpn:◆どうぞ。ちょうどいまなら↓
+;jpn:　トンズラブラザーズの　ステージに↓
+;jpn:　まにあうわよ。
+@KEY()
+@GOSUB(MSG_EVT_31_CARROT_R)
+@SETF(FLG_TWSN_FIELD_TONZ_DISAPPEAR)
+@SETF(FLG_TEMP_1)
+』
+
+;_TWSN_CARROT_RECEIVE_IMITATION;
+;@SE(SE_se76_my_give)
+;@GOODSOUT(PC_ALL,GDS_TOOL_THEATER_TICKET_X)
+
+;◆あらら　このチケットは↓
+;　にせものよ。@WI(20)ほら　よくみると↓
+;　スカシがはいってないでしょ。@KEY()↓
+;◆あなた　わるいひとたちの↓
+;　なかまなんじゃないの。@KEYNP()
+;』
+
+_TWSN_CARROT_RECEIVE_LATER;
+◆Ｔｈｅ　ｓｈｏｗ　ｉｓ　ｃｌｏｓｅｄ　ｆｏｒ　ａ　ｗｈｉｌｅ．
+;jpn:◆しばらく　ショーは　おやすみよ。
+@KEYNP()
+』
+
+_TWSN_CARROT_RECEIVE_TEMP;
+◆Ｈｏｗ　ｄｏ　ｙｏｕ　ｄｏ？
+;jpn:◆こんにちは。
+@KEYNP()
+』
+
+
+;@Habitat:ツーソン／カオス劇場／受付
+;@Person:（チケットを渡した後の）切符きり(キャロット)Ｂ
+;@Figure:アーティスト
+;@AppearanceKey:FLG_TWSN_CARROT_B_APPEAR/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:MSG_TWSN_CARROT_RECEIVE
+;@CheckMessage:0
+;@Message:MSG_TWSN_CARROT_B
+MSG_TWSN_CARROT_B;
+◆Ｏｈ，　ｈｅｒｅ　ｙｏｕ　ａｒｅ！@WI(20)　　Ｈｕｒｒｙ　ｕｐ，　ｙｏｕ’ｒｅ　ｊｕｓｔ　ｉｎ　ｔｉｍｅ　ｔｏ　ｓｅｅ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｓｈｏｗ．
+;jpn:◆どうぞ。ちょうどいまなら↓
+;jpn:　トンズラブラザーズの　ステージに↓
+;jpn:　まにあうわよ。
+@KEY()
+』
+
+;@Habitat:ツーソン／カオス劇場／受付
+;@Person:客
+;@Figure:青年
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage;0
+;@Message:MSG_TWSN_CHAOS_F
+MSG_TWSN_CHAOS_F;
+;カオス劇場受付客
+@CHKFGOTO(FLG_TWSN_TONZURA_FREE,_TWSN_CHAOS_F_TMP)
+◆Ｉ　ｇｕｅｓｓ　Ｉ　ｌｏｓｔ　ｍｙ　ｔｉｃｋｅｔ，@WI(15)　ｓｏ　ｎｏｗ　Ｉ　ｃａｎ’ｔ　ｇｅｔ　ｉｎ．@KEY()↓
+◆Ｔｈｅ　ｔｉｃｋｅｔ　ｃｏｕｎｔｅｒ　ａｔ　ｔｈｅ　ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ　ｗａｓ　ｅｖｅｎ　ｓｏｌｄ　ｏｕｔ．
+;jpn:◆チケットをなくしちまって↓
+;jpn:　にゅうじょう　できないんだよ。@KEY()↓
+;jpn:◆デパートのチケットうりばでも↓
+;jpn:　もう　うりきれなんだろうなぁ。
+@KEYNP()
+』
+_TWSN_CHAOS_F_TMP;トンズラ解放時のメッセージ
+◆＊Ｓｎｉｆｆ＊@WI(15)　Ｉ　ｓｕｐｐｏｓｅ　Ｉ’ｌｌ　ｎｅｖｅｒ　ｓｅｅ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ’ｓ　ｓｈｏｗ　ａｇａｉｎ．
+;DAN:He's sad.
+;jpn:◆ぼく　いっしょう↓
+;jpn:　トンズラブラザーズの↓
+;jpn:　ステージを　みられないのか‥‥。
+@KEYNP()
+』
+MSG_TWSN_CHAOS_E_LATER;＆
+◆Ｄｉｄｎ’ｔ　Ｉ　ｓｅｅ　ｙｏｕ　ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ　Ｔｈｅａｔｅｒ　ｉｎ　Ｆｏｕｒｓｉｄｅ？@KEY()↓
+◆Ｓｏ　ｙｏｕ’ｒｅ　ａ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｇｒｏｕｐｉｅ，　ｔｏｏ！
+;DAN:I'm not sure about spelling of groopy.Ａｌｓｏ，ｇｒｏｏｐｙ　ｍａｙ　ｂｅ　ｓｌｉｇｈｔｌｙ　ｄｉｆｆｅｒｅｎｔ　ｉｎ　ｔｈｅ　ＵＳ．ａｎｄ　Ｊａｐａｎ．Ｌｅｔ’ｓ　ｄｉｓｃｕｓｓ．
+;jpn:◆やぁ。@WI(20)フォーサイドの↓
+;jpn:　トポロげきじょうで↓
+;jpn:　きみのかおを　みたよ。@KEY()↓
+;jpn:◆きみも　トンズラの↓
+;jpn:　「おっかけ」だったんだね。
+@KEYNP()
+』
+
+;@Habitat:ツーソン／フィールド
+;@Person:アップルマウス
+;@Figure:ねずみ
+;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/on
+;@ActionScript:◆ちょこまかと
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_CHAOS_MOUSE
+MSG_TWSN_CHAOS_MOUSE;
+;幼稚園前にいるマウス
+◆Ｉ　ａｍ　ａ　ｍｏｕｓｅ．@KEY()↓
+◆Ｍｙ　ｍａｓｔｅｒ，　Ａｐｐｌｅ　Ｋｉｄ，　ｈａｓ　ｂｅｅｎ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆Ｗｅ　ｓｔａｒｔｅｄ　ｔｏ　ｎｏｄ　ｏｆｆ　ｗｈｉｌｅ　ｗａｉｔｉｎｇ．．．
+;jpn:◆わがはいは　マウスである。@WI(20)↓
+;jpn:　しゅじんのアップルキッドは↓
+;jpn:　あんたを　まっていた。@KEY()↓
+;jpn:◆‥‥ふたりで↓
+;jpn:　あくびをしておった。
+@KEYNP()
+』
+
+;　なかにいる。@KEY()↓
+
+;◆なにをしてるかは↓
+;　わがはいは　しらぬ。@KEYNP()
+;』
+
+
+;@Habitat:ツーソン／カオス劇場／ホール
+;@Person:ミーハーのミチコ
+;@Figure:少女Ａ
+;@AppearanceKey:MSG_TWSN_MICHIKO_APPEAR/on
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_MICHIKO
+MSG_TWSN_MICHIKO;
+@CHKFGOTO(FLG_TWSN_TONZURA_FREE,MSG_TWSN_MICHIKO_LATER)
+@CHKFGOTO(FLG_TWSN_MICHIKO_THANKYOU,_TWSN_MICHIKO_THANKYOU)
+◆Ｌｕｃｋｙ　ｏｆ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｔｏｌｄ　ｍｅ　Ｉ　ｃｏｕｌｄ　ｇｏ　ｂａｃｋｓｔａｇｅ，@WI(15)　ｂｕｔ　Ｉ　ｄｏｎ’ｔ　ｈａｖｅ　ａ　ｐａｓｓ．@KEY()↓
+◆Ｉ’ｍ　ｓｕｒｅ　ｓｅｃｕｒｉｔｙ　ｗｉｌｌ　ｓｔｏｐ　ｍｅ．@WI(20)　　Ｈｅｙ！@WI(20)　　Ｒｅａｌｌｙ？@WI(30)　　Ｙｏｕ　ｈａｖｅ　ａ　ｐａｓｓ？@KEY()↓
+◆Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　ｉｔ！@WI(20)　　Ｃａｎ　ｙｏｕ　ｔａｋｅ　ｍｅ　ｗｉｔｈ　ｙｏｕ，　ｐｌｅａｓｅ@WI(5)　ｐｌｅａｓｅ@WI(10)　ｐｌｅａｓｅ？@KEY()↓
+◆Ｉ　ｃｏｕｌｄ　ｐｏｓｅ　ａｓ　ｙｏｕｒ　ｓｉｓｔｅｒ．@WI(15)　　Ｙｅｓ？　　Ｔｈｉｓ　ｒｏｃｋｓ．@WI(15)　　Ｌｅｔ’ｓ　ｇｏ．@KEY()↓
+◆Ｏｏｏ．@WI(15)　Ｍｙ　ｈｅａｒｔ　ｉｓ　ｐｏｕｎｄｉｎｇ．
+;jpn:◆トンズラのラッキーさんに↓
+;jpn:　がくやに　あそびにおいでって↓
+;jpn:　いわれたんだけどー@KEY()↓
+;jpn:◆バックステージパスを↓
+;jpn:　もってないから↓
+;jpn:　とめられちゃうのよね。@KEY()↓
+;jpn:◆‥‥えー@WI(10)　うっそー！@WI(15)↓
+;jpn:　なんで　あなたがパスもってるの？@WI(20)↓
+;jpn:　しんじられなーい！@KEY()↓
+;jpn:◆ねえ　ねえ　わたしのこと↓
+;jpn:　いもうとだってことにして↓
+;jpn:　がくやに　つれてってよ。@KEY()↓
+;jpn:◆やったー！↓
+;jpn:　サイコーじゃん！↓
+;jpn:　いこ　いこ。@KEY()↓
+;jpn:◆‥‥ドキドキするう。@KEY()
+;◆はずかしくって　ひとりじゃ↓
+;　いけないわけ。↓
+;　@WI(15)いっしょにきて　くれる？@KEY()↓
+;◆たのもしいしー。↓
+;　いこ。@WI(15)↓
+;　‥‥ドキドキするう。
+@KEY()
+@CLOSEALL()
+@GOSUB(MSG_EVT_39_MICHIKO)
+@CLRF(FLG_TWSN_MICHIKO_APPEAR)
+@SETF(FLG_TWSN_MICHIKO_THANKYOU)
+』
+
+_TWSN_MICHIKO_THANKYOU;
+◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｙｏｕｒ　ｋｉｎｄｎｅｓｓ！
+;jpn:◆このあいだは↓
+;jpn:　どうもありがとー！
+@KEYNP()
+』
+
+
+MSG_TWSN_MICHIKO_LATER;
+◆Ｉ’ｍ　ｇｏｎｎａ　ｍｉｓｓ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｗｈｅｎ　ｔｈｅｙ　ｆｉｎａｌｌｙ　ｌｅａｖｅ．@WI(20)　　Ｂｕｔ　ｔｈａｔ’ｓ　ｌｉｆｅ！
+;jpn:◆トンズラのみんなが↓
+;jpn:　このまちをでちゃうのは↓
+;jpn:　さみしいけどー‥‥。
+@KEYNP()
+』
+
+
+;@Habitat:ツーソン／カオス劇場／ホール
+;@Person:客Ａ
+;@Figure:ツッパリ
+;@AppearanceKey:0
+;@ActionScript:◆○○向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_CHAOS_A
+MSG_TWSN_CHAOS_A;
+;カオス劇場ホール客Ａ
+◆Ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ａｒｅ　ｇｏｉｎｇ　ｔｏ　ｂｅ　ａ　ｗｏｒｌｄ－ｆａｍｏｕｓ　ｂａｎｄ　ｓｏｍｅｄａｙ．
+;jpn:◆トンズラブラザーズって↓
+;jpn:　いつかは　せかいにはばたく↓
+;jpn:　バンドになるぜ。
+@KEYNP()
+』
+
+
+;@Habitat:ツーソン／カオス劇場／ホール
+;@Person:客Ｂ
+;@Figure:インディ
+;@AppearanceKey:0
+;@ActionScript:◆○○向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_CHAOS_B
+MSG_TWSN_CHAOS_B;
+;カオス劇場ホール客Ｂ
+◆Ｄｏ　ｙｏｕ　ｌｉｋｅ　ｂａｓｅｂａｌｌ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆おまえ　やきゅうがすきなの？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_TWSN_CHAOS_B_YES,_TWSN_CHAOS_B_NO)
+
+_TWSN_CHAOS_B_NO;
+◆Ａｈ．．．Ｉ　ｓｅｅ．@KEY()↓
+◆Ｗｅｌｌ，　ｙｏｕ　ｄｏｎ’ｔ　ｌｏｏｋ　ｌｉｋｅ　ｙｏｕ　ｃｏｕｌｄ　ｆｉｇｕｒｅ　ｏｕｔ@KEY()↓
+◆ａ　ｓｏｐｈｉｓｔｉｃａｔｅｄ　ｇａｍｅ　ｌｉｋｅ　ｂａｓｅｂａｌｌ　ａｎｙｗａｙ．
+;jpn:◆ヘタそうだもんな。
+@KEYNP()
+』
+_TWSN_CHAOS_B_YES;
+@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_TWSN_CHAOS_B_YES_POLA)
+◆Ｉ　ｋｎｅｗ　ｉｔ！@WI(20)　　Ｙｏｕｒ　ｃａｐ　ｇａｖｅ　ｉｔ　ａｗａｙ．
+;jpn:◆ぼうしで　わかったんだ。
+@KEYNP()
+』
+_TWSN_CHAOS_B_YES_POLA;ポーラの時「ハイ」
+◆Ｙｏｕ　ｈａｖｅ　ｔｈｅ　ｇｒａｃｅｆｕｌ　ｍｏｖｅｍｅｎｔ　ｏｆ　ａ　ｂａｓｅｂａｌｌ　ｐｌａｙｅｒ．@KEY()↓
+◆Ｉ’ｍ　ｏｎ　ａ　ｂａｓｅｂａｌｌ　ｔｅａｍ，@WI(15)　ｓｏ　Ｉ　ｃａｎ　ｒｅｃｏｇｎｉｚｅ　ｔｈｅｓｅ　ｔｈｉｎｇｓ．
+;jpn:◆そのめは　やきゅうぶの　めだ。@WI(30)↓
+;jpn:　おれも　やきゅうぶだから↓
+;jpn:　わかるのさ。
+@KEYNP()
+』
+
+;@Habitat:ツーソン／カオス劇場／ホール
+;@Person:客Ｃ
+;@Figure:ゴロツキ
+;@AppearanceKey:0
+;@ActionScript:◆○○向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_CHAOS_C
+MSG_TWSN_CHAOS_C;
+;カオス劇場ホール客Ｃ
+◆Ｈｅｙ，　ｈｅｙ，　ｈｅｙ！@WI(15)　　Ｄｏｎ’ｔ　ｇｅｔ　ｔｏｏ　ｃｌｏｓｅ　ｔｏ　ｍｅ．@KEY()↓
+◆Ｉ　ｊｕｓｔ　ｆａｒｔｅｄ，@WI(15)　ｈｅｈ，　ｈｅｈ．．．ｓｏｒｒｙ．
+;jpn:◆おれに　ちかよるんじゃねぇ！↓
+;jpn:　‥‥‥↓
+;jpn:　‥‥‥@KEY()↓
+;jpn:◆いま　へをしたところなんだ。↓
+;jpn:　わるかったな。
+@KEYNP()
+』
+
+
+;@Habitat:ツーソン／カオス劇場／ホール
+;@Person:客Ｄ
+;@Figure:ＯＬＧ
+;@AppearanceKey:0
+;@ActionScript:◆○○向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_CHAOS_D
+MSG_TWSN_CHAOS_D;
+;カオス劇場ホール客Ｄ
+◆Ｙｏｕ　ｋｉｄｓ　ａｒｅ　ｂｏｕｎｃｉｎｇ　ａｒｏｕｎｄ，@WI(15)　ｔａｌｋｉｎｇ　ｔｏ　ｅｖｅｒｙｏｎｅ．@WI(20)　　Ｉｔ’ｓ　ｇｅｔｔｉｎｇ　ａｎｎｏｙｉｎｇ．
+;jpn:◆あちこち　はなしかけてるから↓
+;jpn:　めざわりで　しょうがないわ。↓
+;jpn:　うるさいガキどもね。
+@KEYNP()
+』
+
+
+;@Habitat:ツーソン／カオス劇場／ホール
+;@Person:アップルキッド
+;@Figure:有望青年Ｂ
+;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/on
+;@ActionScript:◆○○向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_APPLE_CHAOS
+MSG_TWSN_APPLE_CHAOS;
+;ヌスット広場前
+@CHKFGOTO(FLG_ITEM_TACO_ERASER,_TWSN_APPLE_CHAOS_LATER)
+◆Ｉ’ｍ　ｆｅｅｌｉｎｇ　ｒｅａｌｌｙ　ｏｕｔ　ｏｆ　ｉｔ　ｂｅｃａｕｓｅ　ｌａｔｅｌｙ　Ｉ’ｖｅ　ｂｅｅｎ　ｗｏｒｋｉｎｇ　ａｌｌ　ｎｉｇｈｔ，@KEY()↓
+◆ｂｕｔ　ｆｉｎａｌｌｙ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_KEY_TAKOKESHI)　ｉｓ　ｒｅａｄｙ．@KEY()↓
+◆Ｔｈｉｓ　ｍａｃｈｉｎｅ　ｗｉｌｌ　ｅｒａｄｉｃａｔｅ　ａｌｌ　ｐｅｎｃｉｌ－ｓｈａｐｅｄ　ｆｉｇｕｒｅｓ　ｉｎ　ｊｕｓｔ　ｏｎｅ　ｓｅｃｏｎｄ．@KEY()↓
+◆Ｉｔ’ｓ　ｉｎｃｒｅｄｉｂｌｙ　ｐｏｗｅｒｆｕｌ．@WI(20)　　Ｊｕｓｔ　ｄｏｎ’ｔ　ｕｓｅ　ｉｔ　ｎｅａｒ　ａ　ｓｈｏｐ　ｔｈａｔ　ｓｅｒｖｅｓ　ｐｅｎｃｉｌ．@KEY()↓
+◆Ｈｅｒｅ，　ｉｔ’ｓ　ｙｏｕｒｓ　ｎｏｗ．
+;DAN:TAKO is,as you know, Octopus.KESHI means to erase.
+;jpn:◆てつやが　つづいて↓
+;jpn:　ぼーっとしてますけど↓
+;jpn:　タコけしマシンが　できてます。@KEY()↓
+;jpn:◆これは　タコのかたちをしたものを↓
+;jpn:　いっしゅんのうちに↓
+;jpn:　けしてしまう‥‥@KEY()↓
+;jpn:◆おそろしいウエポンです。@WI(20)↓
+;jpn:　タコヤキやの　きんじょで↓
+;jpn:　つかわないでくださいね。@KEY()↓
+;jpn:◆さぁ　もってっていいです。
+@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_TWSN_APPLE_CHAOS_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_KEY_TAKOKESHI)
+@GOSUB(MSG_SUB_GETGOODS_S)
+@KEY()↓
+◆Ｉｆ　Ｉ　ｉｎｖｅｎｔ　ｓｏｍｅ　ｏｔｈｅｒ　ｂｒｉｌｌｉａｎｔ　ｉｔｅｍ，@WI(15)　Ｉ’ｌｌ　ｃａｌｌ　ｙｏｕ．
+;jpn:◆また　なにかあったら↓
+;jpn:　でんわします。
+@KEYNP()
+@CLOSEALL()
+@CLRF(FLG_TWSN_CHAOSAPPLE_APPEAR)
+@SETF(FLG_HAPPY_SWITCH)
+@SETF(FLG_ITEM_TACO_ERASER)
+』
+
+_TWSN_APPLE_CHAOS_ITEMFULL;
+◆Ｏｈ，　ｉｔ　ｗｏｎ’ｔ　ｆｉｔ　ｉｎ　ｙｏｕｒ　ｂａｃｋｐａｃｋ．@KEY()↓
+◆Ｃｏｍｅ　ｂａｃｋ　ａｆｔｅｒ　ｙｏｕ　ｈａｖｅ　ｇｏｔｔｅｎ　ｒｉｄ　ｏｆ　ｓｏｍｅ　ｓｔｕｆｆ．
+;jpn:◆おっと　にもつのリュックに↓
+;jpn:　はいりきれませんね。@KEY()↓
+;jpn:◆にもつを　へらしてから↓
+;jpn:　また　きてください。
+@KEYNP()
+』
+
+_TWSN_APPLE_CHAOS_LATER;
+◆Ｔｈｉｓ　ｍａｃｈｉｎｅ　ｗｉｌｌ　ｅｒａｄｉｃａｔｅ　ａｌｌ　ｐｅｎｃｉｌ－ｓｈａｐｅｄ　ｆｉｇｕｒｅｓ　ｉｎ　ｊｕｓｔ　ｏｎｅ　ｓｅｃｏｎｄ．@KEY()↓
+◆Ｉｔ’ｓ　ｉｎｃｒｅｄｉｂｌｙ　ｐｏｗｅｒｆｕｌ．@WI(20)　　Ｊｕｓｔ　ｄｏｎ’ｔ　ｕｓｅ　ｉｔ　ｎｅａｒ　ａ　ｓｈｏｐ　ｔｈａｔ　ｓｅｒｖｅｓ　ｐｅｎｃｉｌ．@KEY()↓
+◆Ｉ’ｌｌ　ｃａｌｌ　ｙｏｕ　ｉｆ　Ｉ　ｉｎｖｅｎｔ　ａｎｏｔｈｅｒ　ｂｒｉｌｌｉａｎｔ　ｉｔｅｍ．
+;jpn:◆これは　タコのかたちをしたものを↓
+;jpn:　いっしゅんのうちに↓
+;jpn:　けしてしまう‥‥@KEY()↓
+;jpn:◆おそろしいウエポンです。@WI(20)↓
+;jpn:　タコヤキやの　きんじょで↓
+;jpn:　つかわないでくださいね。@KEY()↓
+;jpn:◆また　なにかあったら↓
+;jpn:　でんわします。
+@KEYNP()
+』
+;-------------------------------------------------

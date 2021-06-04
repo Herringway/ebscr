@@ -1,0 +1,415 @@
+;///////////////////////モンスターの特殊攻撃（１／３）////////////////////////
+
+;#仲間を呼ぶ
+MSG_BTL_NAKAMA0;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｃａｌｌｅｄ↓
+　　ｆｏｒ　ｈｅｌｐ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　おうえんを　よんだ！
+@SE(SE_se48_foe_friend_call)
+@KEY()
+;@WI(1)
+@!
+
+;#種を巻く
+MSG_BTL_TANEMAKI0;
+@SE(SE_se19_b_foe_hitsign)
+←
+◆@DSP_ACTOR()　ｓｏｗｅｄ↓
+　　ｓｏｍｅ　ｓｅｅｄｓ　ａｒｏｕｎｄ　ｉｔｓｅｌｆ！
+;jpn:　@DSP_ACTOR()は　じぶんのまわりに↓
+;jpn:　たねを　まいた！
+@SE(SE_se48_foe_friend_call)
+@KEY()
+;@WI(1)
+@!
+
+;#爆発する
+MSG_BTL_EXPLOSION;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｅｘｐｌｏｄｅｄ↓
+　　ｉｎｔｏ　ｂｉｔｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　だいばくはつを　おこした！
+@SE(SE_se5b)
+@KEY()
+@WI(30)
+@!
+
+MSG_BTL_BURN;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｂｕｒｓｔ↓
+　　ｉｎｔｏ　ｆｌａｍｅｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　はげしく　もえあがった！
+@SE(SE_se4b_foe_burning)
+@KEY()
+@WI(30)
+@!
+
+MSG_BTL_GOODS;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は　どさくさにまぎれて↓
+@GET_CITEM()
+@FALSE_GOTO(_BTL_GOODS_FAILED)
+@XCHG()
+　ｓｔｏｌｅ　ａ　@DSP_GOODS(0)@KEY()↓↓
+◆ｉｎ　ｔｈｅ　ｃｏｎｆｕｓｉｏｎ　ｏｆ　ｔｈｅ　ｂａｔｔｌｅ！
+;jpn:　@DSP_GOODS(0)を　ぬすんだ！
+@KEY()
+@!
+
+_BTL_GOODS_FAILED;
+　ｔｒｉｅｄ　ｔｏ↓
+　　ｓｔｅａｌ　ｓｏｍｅｔｈｉｎｇ，　ｂｕｔ　ｆａｉｌｅｄ！
+;jpn: なにか　ぬすもうとしたが↓
+;jpn: しっぱいした！
+@KEY()
+@!
+
+MSG_BTL_TIMESTOP;
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｆｒｏｚｅ↓
+　　ｙｏｕ　ｉｎ　ｔｉｍｅ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　@DSP_LCNAME()の　じかんをとめた！
+@BGMSTART(0,BGM_non)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_MANAZASHI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｇｌａｒｅｄ↓
+　　ｗｉｔｈ　ｉｔｓ　ｅｅｒｉｅ　ｅｙｅｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ぶきみなめで　にらみつけた！
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_KAIDENPA;
+@SE(SE_se19_b_foe_hitsign)
+←
+◆@DSP_ACTOR()　ｇｅｎｅｒａｔｅｄ↓
+　　ａ　ｍｙｓｔｅｒｉｏｕｓ　ｅｌｅｃｔｒｉｃ　ｆｉｅｌｄ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　かいでんぱを　とばした！
+@SE(SE_se4d_foe_elewave)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_YORO_KAIDENPA;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｔｕｍｂｌｅｄ，　ｂｕｔ　ｆｉｒｅｄ　ａ　↓
+　　ｓｔｒａｎｇｅ　ｂｅａｍ．
+;jpn:　@DSP_ACTOR()は　よろけながら↓
+;jpn:　かいこうせんを　はっしゃした！
+@SE(SE_se4d_foe_elewave)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_GEPPU_IKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｂｕｒｐｅｄ↓
+　　ａｎｄ　ｂｌｅｗ　ｈｉｓ　ｎａｕｓｅａｔｉｎｇ　ｂｒｅａｔｈ　ａｔ　ｙｏｕ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　とんでもなくくさい　いきをはきかけた！
+@SE(SE_se4e_foe_gepu)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_DOKUBARI;
+;metamorph
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｔｕｎｇ↓
+　　ｗｉｔｈ　ｉｔｓ　ｐｏｉｓｏｎ　ｓｔｉｎｇｅｒ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　どくばりを　つきさした！
+;　どくばりを　つきさしてきた！
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_DEATH_KISS;
+;metamorph
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｇａｖｅ↓
+　　ｔｈｅ　ｋｉｓｓ　ｏｆ　ｄｅａｔｈ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　しのくちずけを　した！
+;　しのくちずけを　してきた！
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_TUMETAI_IKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｅｘｈａｌｅｄ↓
+　　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ａｒｃｔｉｃ－ｃｏｌｄ　ｂｒｅａｔｈ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ひえびえとする　いきを　はきかけた！
+@SE(SE_se51_foe_haku)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_HOUSHI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｃａｔｔｅｒｅｄ↓
+　　ｓｏｍｅ　ｓｐｏｒｅｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ほうしを　ばらまいた！
+@SE(SE_se52_foe_spore)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_TORITUKI;ｔｒｉｅｄ　ｔｏでよかった。（三浦）
+;metamorph prohibited
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｔｒｉｅｄ　ｔｏ　ｐｏｓｓｅｓｓ　ｙｏｕ↓
+　　ｉｎ　ａ　ｆｒｉｇｈｔｅｎｉｎｇ　ｍａｎｎｅｒ．
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　いやらしく　とりついてきた！
+@SE(SE_se60_monster_appear)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_YOI_KAORI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｐｒｉｎｋｌｅｄ↓
+　　ａｒｏｕｎｄ　ｓｏｍｅ　ｗｏｎｄｅｒｆｕｌ－ｓｍｅｌｌｉｎｇ　ｐｏｗｄｅｒ．
+;(,it makes you feel entranced!)
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ウットリするかおりの　こなを　ふりまいた！
+@SE(SE_se52_foe_spore)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_KABI_HOUSI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｃａｔｔｅｒｅｄ↓
+　　ｓｏｍｅ　ｍｏｌｄ　ｓｐｏｒｅｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　カビの　ほうしを　まきちらした！
+@SE(SE_se52_foe_spore)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_SHIBARI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｅｍｐｌｏｙｅｄ　ａ↓
+　　ｂｉｎｄｉｎｇ　ａｔｔａｃｋ！
+;jpn:　@DSP_ACTOR()の↓
+;jpn:　しばりこうげきだ！
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_NENEKI;
+;metamorph
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｐｉｔ　ｏｕｔ
+　　ａ　ｓｔｉｃｋｙ　ｍｕｃｕｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ねんえきを　はきかけた！
+;　ねんえきを　はきかけてきた！
+@SE(SE_se51_foe_haku)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_HAEMITU;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｐｅｗｅｄ↓
+　　”Ｆｌｙ　Ｈｏｎｅｙ”　ｏｕｔ　ｏｆ　ｈｉｓ　ｍｏｕｔｈ！
+;jpn:　@DSP_ACTOR()は　くちから↓
+;jpn:　はえみつを　ふきだした！
+@SE(SE_se51_foe_haku)
+@KEY()
+@WI(1)
+@!
+
+;MSG_BTL_G_HAEMITU;用途不明削除（三浦）
+;◆（Ｉｔ’ｓ　＄ｄｕｍｍｙ．　Ｔｈｅ　ｌａｂｅｌ　ｉｓ　Ｇ　ＨＡＥＭＩＴＵ．）
+;;jpn:◆（＄ダミーです。↓
+;;jpn:　　ラベルは↓
+;　　Ｇ　ＨＡＥＭＩＴＵ）
+;@KEY()
+;@!
+
+MSG_BTL_OSHIRI_ITO;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｈｏｔ↓
+　　ｓｐｉｄｅｒ　ｓｉｌｋ　ｏｕｔ　ｏｆ　ｉｔｓ　ｂｏｄｙ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　おしりから　いとを　はきだした！
+@KEY()
+@!
+
+MSG_BTL_KOWAI_KOTOBA;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓａｉｄ　ｓｏｍｅｔｈｉｎｇ　ｒｅａｌｌｙ↓
+　　ｓｃａｒｙ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こわいことばを　なげつけた！
+@SE(SE_se54_foe_word)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_AYASHI_KOTO;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｄｉｄ↓
+　　ｓｏｍｅｔｈｉｎｇ　ｖｅｒｙ　ｍｙｓｔｅｒｉｏｕｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　なにやら　あやしいことをした！
+@SE(SE_se55_foe_ayashii)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_FUUIN;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｄｉｓｒｕｐｔｅｄ↓
+　　ｙｏｕｒ　ｓｅｎｓｅｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　いしきを　かきみだした！
+@KEY()
+@!
+
+MSG_BTL_TACHIBA_THINK;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｉｓ↓
+　　ｓｉｚｉｎｇ　ｕｐ　ｔｈｅ　ｓｉｔｕａｔｉｏｎ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　たちばを　かんがえている！
+@KEY()
+@!
+
+MSG_BTL_KOGEPPU_IKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｅｘｈａｌｅｄ↓
+　　ａ　ｂｌａｓｔ　ｏｆ　ｓｔｉｎｋｙ　ｂｒｅａｔｈ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　くさいいきを　はきかけた！
+@SE(SE_se5c)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_TYPHOON;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｕｍｍｏｎｅｄ↓
+　　ａ　ｓｔｏｒｍ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　あらしを　よびよせた！
+@SE(SE_se56_foe_typhoon)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_COFFEE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｐｉｌｌｅｄ↓
+　　ｓｏｍｅ　ｓｃａｌｄｉｎｇ　ｈｏｔ　ｅｓｐｒｅｓｓｏ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　あついコーヒーを　こぼした！
+@KEY()
+@!
+
+MSG_BTL_MUSIC;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｐｌａｙｅｄ↓
+　　ａ　ｈａｕｎｔｉｎｇ　ｍｅｌｏｄｙ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ふしぎなきょくを　えんそうした！
+;@SE(SE_se57_foe_ferformance)
+;コントロールコードによってBGMをおかしくする。未設定？（三浦）
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_SYOUKA_EKI;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｄｉｓｐｅｎｓｅｄ　ａｎ↓
+　　ｅｘｔｉｎｇｕｉｓｈｉｎｇ　ｂｌａｓｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　しょうかえきを　ふきだした！
+@SE(SE_se58_foe_fire_water)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_KAMINARI;γ
+;metamorph
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｕｓｅｄ　ａ↓
+　　Ｃｒａｓｈｉｎｇ　Ｂｏｏｍ　Ｂａｎｇ　ａｔｔａｃｋ！
+;jpn:　@DSP_ACTOR()の↓
+;jpn:　バチバチこうげきだ！
+@KEY()
+@!
+
+MSG_BTL_FIRE;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｓｈｏｔ　ｏｕｔ↓
+　　ａ　ｓｐｒａｙ　ｏｆ　ｆｉｒｅ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　あたりを　ひのうみにした！
+@SE(SE_se4b_foe_burning)
+@KEY()
+@WI(1)
+@!
+
+MSG_BTL_FIRE_BREATH;
+←
+@SE(SE_se19_b_foe_hitsign)
+◆@DSP_ACTOR()　ｂｒｅａｔｈｅｄ↓
+　　ｆｉｒｅ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ひを　ふいた！
+@SE(SE_se4b_foe_burning)
+@KEY()
+@WI(1)
+@!
+

@@ -1,0 +1,674 @@
+;最終戦闘のギーグ
+
+MSG_BTL_GYIYYIG;＠ギーグの声ランダムで
+@RAND(13)
+@ONGOTO(MSG_BTL_GYIYYIG_TALK_B,MSG_BTL_GYIYYIG_TALK_C,MSG_BTL_GYIYYIG_TALK_D,MSG_BTL_GYIYYIG_TALK_E,MSG_BTL_GYIYYIG_TALK_F,MSG_BTL_GYIYYIG_TALK_G,MSG_BTL_GYIYYIG_TALK_H,MSG_BTL_GYIYYIG_TALK_I,MSG_BTL_GYIYYIG_TALK_J,MSG_BTL_GYIYYIG_TALK_K,MSG_BTL_GYIYYIG_TALK_L,MSG_BTL_GYIYYIG_TALK_M,MSG_BTL_GYIYYIG_TALK_N)
+MSG_BTL_GYIYYIG_TALK_A;
+←
+@MESSAGE_SOUND(2)
+◆”．．．．．．@DSP_STS(STS_PC_NAME_NES)@WI(1)．．．”
+;jpn:　‥‥‥‥@DSP_STS(STS_PC_NAME_NES)@WI(1)サン‥‥。
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_B;
+←
+@MESSAGE_SOUND(2)
+◆”Ｉｔ　ｈｕｒｔｓ，@WI(30)↓
+　　@DSP_STS(STS_PC_NAME_NES)@WI(1)．．．”
+;jpn:　イタイ@WI(30)↓
+;jpn:　‥‥‥@DSP_STS(STS_PC_NAME_NES)サン‥‥。
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_C;
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｉ’ｍ　ｈ．．．@WI(10)ａ．．．@WI(10)ｐ．．．@WI(10)ｐ．．．@WI(10)ｙ．．．”
+;jpn:　‥‥‥ウ@WI(10)レ@WI(10)シ@WI(10)イ‥‥
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_D;
+←
+@MESSAGE_SOUND(2)
+◆”．．．@WI(20)ｆｒｉｅｎｄｓ．．．”
+;jpn:　‥‥‥@WI(20)トモダチ‥‥
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_E;
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｉｔ　ｈｕｒｔｓ，@WI(20)．．．ｉｔ　ｈｕｒｔｓ．．．”
+;jpn:　‥‥イタイ@WI(20)　イタイ‥‥
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_F;
+@MESSAGE_SOUND(2)
+←
+◆”@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)，
+　@WI(1)@DSP_STS(STS_PC_NAME_NES)，　@WI(1)@DSP_STS(STS_PC_NAME_NES)
+@WI(5)　@WI(15)．．．．．”
+
+;jpn:　@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)サン@WI(1)@DSP_STS(STS_PC_NAME_NES)@WI(5)サ@WI(15)ン‥‥
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_G;
+←
+@MESSAGE_SOUND(2)
+◆”．．．@WI(1)ｇｏ．．．　@WI(1)ｂ．．．@WI(1)ａ．．．@WI(1)ｃ．．．@WI(1)ｋ．．．”
+;jpn:　‥@WI(1)‥@WI(1)カ@WI(1)エ@WI(1)レ@WI(1)‥
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_H;
+←
+@MESSAGE_SOUND(2)
+◆”．．．@DSP_STS(STS_PC_NAME_NES)@WI(1)．．．”
+;jpn:　‥‥‥‥@DSP_STS(STS_PC_NAME_NES)@WI(1)サン‥‥。
+;　！
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_I;
+←
+@MESSAGE_SOUND(2)
+◆”Ｉ　@WI(15)ｆｅｅｌ　．．．@WI(15)ｇ．．．@WI(15)ｏ．．．@WI(15)ｏ．．．@WI(15)ｄ．．．”
+;jpn:　キ@WI(15)　モ@WI(15)　チ@WI(15)　イ@WI(15)　イ‥‥
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_J;
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｉ’ｍ　ｓｏ　ｓａｄ．．．↓
+　　．．．．．．@DSP_STS(STS_PC_NAME_NES)@WI(1)．”
+;jpn:　‥カナシイ‥‥@WI(30)↓
+;jpn:　　@DSP_STS(STS_PC_NAME_NES)サン。
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_K;
+←
+@MESSAGE_SOUND(2)
+◆”@DSP_STS(STS_PC_NAME_NES)！”
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_L;
+←
+@MESSAGE_SOUND(2)
+◆”　　Ａｈ，@WI(20)　Ｇｒｒｒ，　@WI(15)　Ｏｈｈｈ．．．”
+;jpn:　　アー@WI(20)　アー@WI(20)　アー
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_M;
+←
+@MESSAGE_SOUND(2)
+◆”Ａｒｇｈ．．．Ｙａａａｇｈ！．．．”
+;jpn:　　ウー　ウー‥‥
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+MSG_BTL_GYIYYIG_TALK_N;
+←
+@MESSAGE_SOUND(2)
+◆”Ｉｔ’ｓ　ｎｏｔ　ｒｉｇｈｔ．．．@WI(20)　ｎｏｔ　ｒｉｇｈｔ．．．@WI(20)　ｎｏｔ　ｒｉｇｈｔ．．．”
+;jpn:　　チガウ‥‥@WI(20)チガウ‥‥@WI(10)チガウ
+@MESSAGE_SOUND(1)
+@KEY()
+@!
+
+;最終戦闘にて、ポーラが「いのる」したときのメッセージ
+MSG_BTL_INORU_FROM_PAULA_1;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｐｌｅａｓｅ　ｇｉｖｅ　ｕｓ　ｓｔｒｅｎｇｔｈ，@FKEY()↓
+◆ｉｆ　ｉｔ　ｉｓ　ｐｏｓｓｉｂｌｅ．．．↓
+　　Ｐｌｅａｓｅ．．．”@FKEY()↓
+◆”．．．．．．．．．．．．．．．．”
+　　Ｓｏｍｅｂｏｄｙ．．．ｈｅｌｐ　ｕｓ．．．”
+;jpn:　　‥‥わたしたちに　ちからを↓
+;jpn:　　ちからを　かしてください。@FKEY()↓
+;jpn:　　かみさまが　いるのなら↓
+;jpn:　　かみさま‥‥。@FKEY()↓
+;jpn:　　‥‥‥‥‥‥‥↓
+;jpn:　　だれか‥‥。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_2;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+
+◆．．．Ｐｌｅａｓｅ　ｇｉｖｅ　ｕｓ　ｓｔｒｅｎｇｔｈ！@FKEY()↓
+◆Ａｎｙｏｎｅ　ｗｈｏ　ｃａｎ　ｈｅａｒ　ｏｕｒ　ｐｌｅａ．．．．↓
+　　Ｈｅｌｐ　ｕｓ．．．”
+;jpn:　　‥‥‥どうぞ　わたしたちに↓
+;jpn:　　ちからを　かしてください！@FKEY()↓
+;jpn:　　わたしたちの　おもいが↓
+;jpn:　　とどいたひと‥‥だれか‥‥。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_3;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｐｌｅａｓｅ　ｇｉｖｅ　ｕｓ　ｓｔｒｅｎｇｔｈ！@FKEY()↓
+◆Ｓｐｅｅｄ　ｔｈｉｓ　ｐｒａｙｅｒ↓
+　　ｔｏ　ａｌｌ　ｔｈｅ　ｐｅｏｐｌｅ　ｏｆ　ｔｈｅ　ｅａｒｔｈ．”
+;jpn:　　‥‥わたしたちに↓
+;jpn:　　ちからを　かしてください！@FKEY()↓
+;jpn:　　このいのりを　どうぞ↓
+;jpn:　　せかいじゅうに　とどけてください。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_4;以降くり返し●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｐｌｅａｓｅ　ｇｉｖｅ　ｕｓ　ｓｔｒｅｎｇｔｈ！@FKEY()↓
+◆Ａｎｙｏｎｅ　ｗｈｏ　ｃａｎ　ｈｅａｒ　ｏｕｒ　ｐｌｅａ．．．↓
+　　Ｈｅｌｐ　ｕｓ．．．”
+;jpn:　　‥‥‥どうぞ　わたしたちに↓
+;jpn:　　ちからを　かしてください！@FKEY()↓
+;jpn:　　わたしたちの　おもいが↓
+;jpn:　　とどいたひと‥‥だれか‥‥。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_5;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｐｌｅａｓｅ　ｇｒａｎｔ　ｕｓ　ｐｏｗｅｒ！@FKEY()↓
+◆Ａｎｙｏｎｅ　ｗｈｏ　ｃａｎ　ｈｅａｒ　ｏｕｒ　ｐｌｅａ．．．↓
+　　Ｈｅｌｐ　ｕｓ．．．”
+;jpn:　　‥‥わたしたちに↓
+;jpn:　　ちからを　かしてください！@FKEY()↓
+;jpn:　　このいのりを　どうぞ↓
+;jpn:　　せかいじゅうに　とどけてください。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_6;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｐｌｅａｓｅ　ｇｒａｎｔ　ｕｓ　ｓｔｒｅｎｇｔｈ！@FKEY()↓
+◆Ａｎｙｏｎｅ　ｗｈｏ　ｃａｎ　ｈｅａｒ　ｏｕｒ　ｐｌｅａ．．．↓
+　　Ｗｅ　ａｓｋ　ｆｏｒ　ｔｈｉｓ．．．”
+;jpn:　　‥‥‥どうぞ　わたしたちに↓
+;jpn:　　ちからを　かしてください！@FKEY()↓
+;jpn:　　わたしたちの　おもいが↓
+;jpn:　　とどいたひと‥‥だれか‥‥。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_7;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”．．．Ｐｌｅａｓｅ　ｇｒａｎｔ　ｕｓ　ｐｏｗｅｒ！@FKEY()↓
+◆Ｓｐｅｅｄ　ｔｈｉｓ　ｐｒａｙｅｒ↓
+　　ｔｏ　ａｌｌ　ｔｈｅ　ｐｅｏｐｌｅ　ｏｆ　ｔｈｅ　ｅａｒｔｈ．．．”
+;jpn:　　‥‥わたしたちに↓
+;jpn:　　ちからを　かしてください！@FKEY()↓
+;jpn:　　このいのりを　どうぞ↓
+;jpn:　　せかいじゅうに　とどけてください。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_8;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”Ｉ　ｃａｎ’ｔ　ｔｈｉｎｋ　ｏｆ↓
+　　ａｎｙｏｎｅ　ｅｌｓｅ．．．@FKEY()↓
+◆．．．Ｓｏｍｅｏｎｅ，　ａｎｙｏｎｅ．．．↓
+　　．．．ｐｌｅａｓｅ　ｈｅｌｐ　ｕｓ．”
+;jpn:　　もう　だれのなまえも↓
+;jpn:　　おもいうかばない。@FKEY()↓
+;jpn:　　‥‥だれか　だれか↓
+;jpn:　　わたしたちを　たすけて。
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_FROM_PAULA_9;●(akm0616 w/itoi)
+←
+@SE(SE_se1c_b_my_pray)
+◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
+　　ｆｒｏｍ　ｂｏｔｔｏｍ　ｏｆ　ｈｅｒ　ｈｅａｒｔ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　こころをこめて　いのった！
+@KEY()
+@WI(60)
+←
+@MESSAGE_SOUND(2)
+◆”Ｓｏｍｅｏｎｅ．．．　ｃａｎ　ｙｏｕ　ｈｅａｒ　ｍｅ？！@FKEY()↓
+◆Ｐｌｅａｓｅ，　ｇｉｖｅ　ｕｓ　ｓｔｒｅｎｇｔｈ！”
+;jpn:　　だれか‥‥きこえますか？@FKEY()↓
+;jpn:　　だれか　わたしたちに↓
+;jpn:　　ちからを　かして！
+@MESSAGE_SOUND(1)
+@WI(150);←わざとです。
+;@FKEY()
+@!
+
+;最終戦闘にて、ポーラの「いのる」に答える人達 (マップ画面)
+MSG_BTL_INORU_BACK_TO_PC_1;●(akm0616 w/itoi)
+@OPEN(1)
+◆（Ｓｕｄｄｅｎｌｙ，↓
+　　@DSP_STS(STS_PC_NAME_NES)’ｓ　ｍｏｔｈｅｒ↓
+　　ｆｅｌｔ　ｔｅｒｒｉｂｌｙ　ｕｎｅａｓｙ，@FKEY()↓
+◆ａｎｄ　ｓｈｅ　ｂｅｇａｎ　ｔｏ　ｐｒａｙ　ｆｏｒ　ｔｈｅ　ｓａｆｅｔｙ　ｏｆ　ｈｅｒ　ｓｏｎ　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ．）
+;jpn:◆（@DSP_STS(STS_PC_NAME_NES)のママは↓
+;jpn:　とつぜん　おおきな↓
+;jpn:　むなさわぎを　かんじて）@FKEY()↓
+;jpn:◆（むすこたちのぶじを↓
+;jpn:　つよくいのった）
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_2;●(akm0616 w/itoi)
+@OPEN(1)
+◆（Ｓｕｄｄｅｎｌｙ，↓
+　　ｏｎｅ　ｏｆ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｆｅｌｔ↓
+　　ｓｏｍｅｔｈｉｎｇ　ｓｔｏｐ　ｈｉｍ，@FKEY()↓
+◆ａｎｄ　ｈｅ　ｐｒａｙｅｄ　ｆｅｒｖｅｎｔｌｙ　ｆｏｒ　ｔｈｅ　ｓａｆｅｔｙ　ｏｆ　@DSP_STS(STS_PC_NAME_NES)　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ．）
+;jpn:◆（トンズラブラザースのナイスは↓
+;jpn:　とつぜん　だれかに↓
+;jpn:　よびとめられたようなきがして）@FKEY()↓
+;jpn:◆（@DSP_STS(STS_PC_NAME_NES)たちのぶじを↓
+;jpn:　つよくいのった）
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_3;●(akm0616 w/itoi)
+@OPEN(1)
+◆（@DSP_STS(STS_PC_NAME_PAULA)’ｓ　ｆａｔｈｅｒ↓
+　　ｔｈｏｕｇｈｔ　ｈｅ　ｓｏｍｅｈｏｗ　ｈｅａｒｄ↓
+　　ｈｉｓ　ｄａｕｇｈｔｅｒ’ｓ　ｖｏｉｃｅ，@FKEY()↓
+◆ａｎｄ　ｐｒａｙｅｄ　ｓｉｎｃｅｒｅｌｙ　ｆｏｒ　ｔｈｅ↓
+　　ｓａｆｅｔｙ　ｏｆ　@DSP_STS(STS_PC_NAME_PAULA)　ａｎｄ↓
+　　ｈｅｒ　ｆｒｉｅｎｄｓ．）
+
+;jpn:◆（@DSP_STS(STS_PC_NAME_PAULA)のパパは↓
+;jpn:　ふいに　むすめのこえが↓
+;jpn:　きこえたようなきがして）@FKEY()↓
+;jpn:◆（@DSP_STS(STS_PC_NAME_PAULA)たちのぶじを↓
+;jpn:　つよくいのった）
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_4;●(akm0616 w/itoi)
+@OPEN(1)
+◆（Ｓｕｄｄｅｎｌｙ，↓
+　　Ｔｏｎｙ　ｆｅｌｔ　ａｎｘｉｏｕｓ　ａｂｏｕｔ↓
+　　@DSP_STS(STS_PC_NAME_JEFF)，@FKEY()↓
+◆ａｎｄ　ｈｅ　ｐｒａｙｅｄ　ｓｔｒｏｎｇｌｙ　ｆｏｒ　ｔｈｅ　ｓａｆｅｔｙ　ｏｆ　@DSP_STS(STS_PC_NAME_JEFF)　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ．）
+;jpn:◆（トニーは↓
+;jpn:　@DSP_STS(STS_PC_NAME_JEFF)のことが↓
+;jpn:　きゅうに　きがかりになって）@FKEY()↓
+;jpn:◆（@DSP_STS(STS_PC_NAME_JEFF)たちのぶじを↓
+;jpn:　つよくいのった）
+@WI(150);←わざとです。
+@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_5;●(akm0616 w/itoi)
+@OPEN(1)
+◆（Ａ　ｙｏｕｎｇ　ｗｏｍａｎ　ｉｎ　Ｄａａｌａｍ　ｗｏｋｅ　ｆｒｏｍ　ａ　ｄｒｅａｍ　ｉｎ　ｗｈｉｃｈ　Ｐｒｉｎｃｅ　@DSP_STS(STS_PC_NAME_POO)　ｄｉｅｄ，@FKEY()↓
+◆ａｎｄ　ｓｈｅ　ｂｅｇａｎ　ｔｏ　ｐｒａｙ　ｆｏｒ　ｔｈｅ　ｗｅｌｌ－ｂｅｉｎｇ　ｏｆ　@DSP_STS(STS_PC_NAME_POO)　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ．）
+;jpn:◆（ランマの　わかいおんなは↓
+;jpn:　@DSP_STS(STS_PC_NAME_POO)おうじが↓
+;jpn:　しんだゆめから　さめて）@FKEY()↓
+;jpn:◆（@DSP_STS(STS_PC_NAME_POO)おうじたちのぶじを↓
+;jpn:　つよくいのった）
+@WI(150);←わざとです。
+@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_6;●(akm0616 w/itoi)
+@OPEN(1)
+◆（Ｓｕｄｄｅｎｌｙ，↓
+　　Ｆｒａｎｋ　ｒｅｃａｌｌｅｄ　@DSP_STS(STS_PC_NAME_NES)’ｓ　ｓｈｉｎｉｎｇ　ｙｏｕｎｇ　ｆａｃｅ，@FKEY()↓
+◆ａｎｄ　ｂｅｇａｎ　ｔｏ　ｐｒａｙ　ｄｉｌｉｇｅｎｔｌｙ　ｆｏｒ　ｔｈｅ　ｓａｆｅｔｙ　ｏｆ　@DSP_STS(STS_PC_NAME_NES)　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ．）
+;jpn:◆（フランクは↓
+;jpn:　ふと　@DSP_STS(STS_PC_NAME_NES)の　おさないかおを↓
+;jpn:　おもいだして）@FKEY()↓
+;jpn:◆（@DSP_STS(STS_PC_NAME_NES)たちのぶじを↓
+;jpn:　つよくいのった）
+@WI(150);←わざとです。
+@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_7;●(akm0616 w/itoi)
+@OPEN(1)
+◆（Ａｌｌ　ｏｆ　ｔｈｅ　Ｍｒ．　Ｓａｔｕｒｎｓ　ｆｅｌｔ　ａ　ｎｅｗ，@FKEY()
+　　ｓｔａｒｔｌｉｎｇ　ｆｅｅｌｉｎｇ　ｔｈｅｙ　ｈａｄ　ｎｅｖｅｒ　ｅｘｐｅｒｉｅｎｃｅｄ　ｂｅｆｏｒｅ，@FKEY()↓
+◆ａｎｄ　ｔｈｅｙ　ａｌｌ　ｓｔａｒｔｅｄ　ｐｒａｙｉｎｇ　ｆｏｒ　ｔｈｅ　ｓａｆｅｔｙ　ｏｆ　@DSP_STS(STS_PC_NAME_NES)　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ．）
+;jpn:◆（どせいさんたちは↓
+;jpn:　いまだかつてない↓
+;jpn:　きもちのたかぶりを　かんじて）@FKEY()↓
+;jpn:◆（@DSP_STS(STS_PC_NAME_NES)たちのぶじを↓
+;jpn:　つよくいのった）
+@WI(150);←わざとです。
+@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_8;●(akm0616 w/itoi)
+@WI(60)
+@OPEN(1)
+◆@DSP_STS(STS_PC_NAME_PAULA)’ｓ　ｃａｌｌ@WI(30)↓
+　　ｗａｓ　ａｂｓｏｒｂｅｄ@WI(30)↓
+　　ｂｙ　ｔｈｅ　ｄａｒｋｎｅｓｓ．
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)のよびかけは@WI(30)↓
+;jpn:　やみのなかに@WI(30)↓
+;jpn:　すいこまれていった。
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+MSG_BTL_INORU_BACK_TO_PC_9;●(akm0616 w/itoi)γ松（プレーヤー名の歯抜け表示）
+@WI(60)
+@OPEN(1)
+◆@DSP_STS(STS_PC_NAME_PAULA)　ａｎｄ　ｈｅｒ　ｆｒｉｅｎｄｓ’↓
+　　ｃａｌｌｓ　ｔｏｕｃｈｅｄ　ｔｈｅ　ｈｅａｒｔ↓
+　　ｏｆ
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)たちの　よびかけは@WI(30)↓
+@DSP_CHAR(32);全角スペース
+;@日本語プレイヤー名の60%歯抜け表示
+@SET_LOOPREG(1)
+_INORU_BACK_TO_PC_9_1_LOOP;
+@GET_STS_CHAR(STS_PARTY_NAME_KANA)
+@FALSE_GOTO(_INORU_BACK_TO_PC_9_1_END)
+@XCHG()
+@RAND(99)
+@CMP(60,0)
+@FALSE_GOTO(_INORU_BACK_TO_PC_9_1_FUSE)
+@DSP_CHAR(0)
+_INORU_BACK_TO_PC_9_1_INC;
+@INC()
+@GOTO(_INORU_BACK_TO_PC_9_1_LOOP)
+_INORU_BACK_TO_PC_9_1_END;
+．
+;の@WI(30)↓
+;jpn:　むねに　とどいた。
+@FKEY()
+@WI(120)
+@CLS()
+◆
+;@日本語プレイヤー名の60%歯抜け表示
+@SET_LOOPREG(1)
+_INORU_BACK_TO_PC_9_2_LOOP;
+@GET_STS_CHAR(STS_PARTY_NAME_KANA)
+@FALSE_GOTO(_INORU_BACK_TO_PC_9_2_END)
+@XCHG()
+@RAND(99)
+@CMP(60,0)
+@FALSE_GOTO(_INORU_BACK_TO_PC_9_2_FUSE)
+@DSP_CHAR(0)
+_INORU_BACK_TO_PC_9_2_INC;
+@INC()
+@GOTO(_INORU_BACK_TO_PC_9_2_LOOP)
+_INORU_BACK_TO_PC_9_2_END;
+;は@WI(30)↓
+@WI(30)↓
+　　ｐｒａｙｅｄ　ｆｏｒ　ｔｈｅ　ｋｉｄｓ　ｔｈａｔ　ｈｅ↓
+　　ｄｉｄｎ’ｔ　ｅｖｅｎ　ｋｎｏｗ．
+;＠ｈｅ三浦
+;jpn:　みしらぬしょうねんたちの　ために@WI(30)↓
+;jpn:　いのった。
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+_INORU_BACK_TO_PC_9_1_FUSE;
+．．．．．
+@GOTO(_INORU_BACK_TO_PC_9_1_INC)
+
+_INORU_BACK_TO_PC_9_2_FUSE;
+．．．．．
+@GOTO(_INORU_BACK_TO_PC_9_2_INC)
+
+;決定稿:
+;　アキヒコたちの　よびかけは
+;　み‥ら‥‥‥‥この　むねに　とどいた。
+;
+;　‥‥ら　‥‥ひ‥は
+;　みしらぬしょうねんたちの　ために　いのった。
+
+;候補1:
+;　みしらぬ しょうねんたちの　よびかけは
+;　み‥ら‥‥‥‥この　むねに　とどいた。
+;
+;　‥‥ら　‥‥ひ‥は
+;　みしらぬしょうねんたちのために　いのった。
+
+;候補2:
+;　み‥ら‥‥‥‥こは　とつぜんの
+;　よびかけに　きがつき
+;
+;　みしらぬしょうねんたちを
+;　イメージして　いのった。
+
+;候補3:
+;　みしらぬ しょうねんたちの　よびかけに
+;
+;　み‥ら‥‥‥‥こは
+;　かれらのために　いのった。
+
+
+MSG_BTL_INORU_BACK_TO_PC_F_1;●(akm0616 w/itoi)γ
+←
+@WI(60)
+@OPEN(1)
+◆
+;@日本語プレイヤー名の40%歯抜け表示
+@SET_LOOPREG(1)
+_INORU_BACK_TO_PC_F_LOOP;
+@GET_STS_CHAR(STS_PARTY_NAME_KANA)
+@FALSE_GOTO(_INORU_BACK_TO_PC_F_END)
+@XCHG()
+@RAND(99)
+@CMP(40,0)
+@FALSE_GOTO(_INORU_BACK_TO_PC_F_FUSE)
+@DSP_CHAR(0)
+_INORU_BACK_TO_PC_F_INC;
+@INC()
+@GOTO(_INORU_BACK_TO_PC_F_LOOP)
+_INORU_BACK_TO_PC_F_END;
+@WI(30)↓
+　　ｋｅｐｔ　ｐｒａｙｉｎｇ．
+;は@WI(30)↓
+;jpn:　いのりつづけた。
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+_INORU_BACK_TO_PC_F_FUSE;
+．．．．．
+@GOTO(_INORU_BACK_TO_PC_F_INC)
+
+MSG_BTL_INORU_BACK_TO_PC_F_2;●(akm0616 w/itoi)
+←
+@WI(60)
+@OPEN(1)
+◆
+;@日本語プレイヤー名の20%歯抜け表示
+@SET_LOOPREG(1)
+_INORU_BACK_TO_PC_F_2_LOOP;
+@GET_STS_CHAR(STS_PARTY_NAME_KANA)
+@FALSE_GOTO(_INORU_BACK_TO_PC_F_2_END)
+@XCHG()
+@RAND(99)
+@CMP(20,0)
+@FALSE_GOTO(_INORU_BACK_TO_PC_F_2_FUSE)
+@DSP_CHAR(0)
+_INORU_BACK_TO_PC_F_2_INC;
+@INC()
+@GOTO(_INORU_BACK_TO_PC_F_2_LOOP)
+_INORU_BACK_TO_PC_F_2_END;
+;は@WI(30)↓
+@WI(30)↓
+　　ｋｅｐｔ　ｐｒａｙｉｎｇ．
+;jpn:　いのりつづけた。
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+_INORU_BACK_TO_PC_F_2_FUSE;
+．．．．．
+@GOTO(_INORU_BACK_TO_PC_F_2_INC)
+
+MSG_BTL_INORU_BACK_TO_PC_F_3;●(akm0616 w/itoi)
+←
+@WI(60)
+@OPEN(1)
+◆@DSP_STS(STS_PARTY_NAME_KANA)↓
+　　ｋｅｐｔ　ｐｒａｙｉｎｇ．
+;jpn:◆@DSP_STS(STS_PARTY_NAME_KANA)は@WI(30)↓
+;jpn:　いのりつづけた。
+@WI(150);←わざとです。
+;@FKEY()
+@CLOSEALL()
+@!
+
+;最終戦闘にて、ポーラの「いのる」によってギーグが受けるダメージ
+MSG_BTL_INORU_DAMAGE_1;●(akm0616 w/itoi)
+←
+;@WI(120)
+;@SE(SE_se40_b_pk_starstorm1)
+;@WI(30)
+◆Ｇｉｙｇａｓ’　ｄｅｆｅｎｓｅｓ　ｂｅｃａｍｅ↓
+　　ｕｎｓｔａｂｌｅ．
+;jpn:　ギーグのディフェンスが↓
+;jpn:　ふあんていに　なった。
+@SE(SE_se5a_foe_tatumaki)
+@WI(70)
+@SE(SE_se5a_foe_tatumaki)
+@WI(65)
+@SE(SE_se5a_foe_tatumaki)
+@WI(74)
+@SE(SE_se5a_foe_tatumaki)
+@!

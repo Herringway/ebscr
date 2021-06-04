@@ -1,0 +1,2147 @@
+;-----------------------------------------
+
+;@Habitat:フォーサイド／トポロ劇場／事務室
+;@Person:ミスフェイク
+;@Figure:ＯＬＣ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:MSG_FOUR_MISSFAKE_RECEIVE
+;@CheckMessage:0
+;@Message:MSG_FOUR_MISSFAKE
+MSG_FOUR_MISSFAKE;
+;トポロ劇場のマネージャー♀
+;ミス・フェイクさん↓
+@CHKFGOTO(FLG_TLPT_SUMS,_FOUR_MISSFAKE_END)
+@CHKFGOTO(FLG_FOUR_TONZURA_FREE,_FOUR_MISSFAKE_LATER)
+◆Ｓｏ，　ｙｏｕ’ｒｅ　ａ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｆａｎ，　ｈｕｈ？@KEY()↓
+◆Ｗｈａｔ？@KEY()↓
+◆Ｅｘｃｕｓｅ　ｍｅ？@KEY()↓
+◆Ｎｏ，　ｎｏ！@KEY()↓
+◆Ｔｈｉｓ　ｂａｎｄ　ｏｗｅｓ　ｍｅ　ａ　ｍｉｌｌｉｏｎ　ｂｕｃｋｓ．@KEY()↓
+◆Ｉｆ　ｔｈｅｙ　ｂｒｅａｋ　ｔｈｅｉｒ　ｃｏｎｔｒａｃｔ，　ｔｈｅｙ’ｌｌ　ｂｅ　ｉｎ　ｄｅｅｐ　ｄｏｏｄｏｏ　ｗｉｔｈ　ｔｈｅ　ｐｏｌｉｃｅ．@KEY()↓
+◆Ｔｈｅ　ｐｏｌｉｃｅ　ｗｏｕｌｄ　ｐｒｏｂａｂｌｙ　ｓａｙ，　”Ｈｅｙ，　ｙｏｕ　ｇｕｙｓ！”　ｏｒ　ｓｏｍｅｔｈｉｎｇ　ｌｉｋｅ　ｔｈａｔ．．．@KEY()↓
+◆Ｕｎｌｅｓｓ　ｙｏｕ’ｒｅ　ａｂｌｅ　ｔｏ　ｐａｙ　ａ　ｍｉｌｌｉｏｎ　ｄｏｌｌａｒｓ　ｏｎ　ｔｈｅｉｒ　ｂｅｈａｌｆ？@KEY()↓
+◆Ｙｏｕ’ｄ　ｈａｖｅ　ｔｏ　ｆｉｎｄ　ｂｕｒｉｅｄ　ｇｏｌｄ，@KEY()↓
+◆ｏｒ　ｙｏｕ　ｗｏｕｌｄ　ｎｅｖｅｒ　ｂｅ　ａｂｌｅ　ｔｏ　ｐａｙ　ｓｕｃｈ　ａ　ｈｕｇｅ　ｓｕｍ　ｏｆ　ｍｏｎｅｙ．@KEY()↓
+◆Ｈｏ　ｈｏ　ｈｏ．．．．．@KEY()↓
+◆Ｈｏ　ｈｏ　ｈｏ　ｈｏ　ｈｏ　ｈｏ　ｈｏ！
+@KEYNP()
+;jpn:◆そう　あなた@GOSUB(MSG_SUB_TATI)　トン・ブラの↓
+;jpn:　ファンなの。@KEY()↓
+;jpn:◆なーに？　えっ？　ダメダメ！↓
+;jpn:　このバンドは　１００まんドルの↓
+;jpn:　しゃっきんを　うちに　してるの。@KEY()↓
+;jpn:◆けいやくを　やぶったら↓
+;jpn:　おまわりさんに　コラッて↓
+;jpn:　おしおきされちゃうのよ。ホホホ@KEY()↓
+;jpn:◆それとも　ぼくちゃん@GOSUB(MSG_SUB_TATI)↓
+;jpn:　１００まんドルたてかえて↓
+;jpn:　あげられるの？@KEY()↓
+;jpn:◆まいぞうきんでも↓
+;jpn:　ほりあてなきゃ　ムリよね‥‥↓
+;jpn:　ホホホ‥‥‥@KEY()↓
+;jpn:◆ホホホホホホホ！@KEYNP()
+@SETF(FLG_FOUR_MISSFAKE)
+@CHKFGOTO(FLG_DSRT_SYOZI_1,_FOUR_MISSFAKE_SWITCH)
+』
+_FOUR_MISSFAKE_SWITCH;
+@SETF(FLG_DSRT_SWITCH)
+@!
+
+_FOUR_MISSFAKE_LATER;＃
+◆（Ｔｈｕｍｐ，　ｔｈｕｍｐ！．．．ｔｈｕｍｐ，　ｔｈｕｍｐ！@KEY()↓
+◆Ｉ　ｍａｄｅ　ｓｏ　ｍｕｃｈ　ｍｏｎｅｙ，　Ｉ　ｃａｎ　ｈｅａｒ　ｍｙ　ｈｅａｒｔｂｅａｔ！）
+@KEYNP()
+;jpn:◆（ドキドキ　ドキドキ↓
+;jpn:　すっごく　もうかっちゃったわ）@KEYNP()
+』
+_FOUR_MISSFAKE_END;
+
+◆Ｏｋ？@KEY()↓
+◆Ｄｏｎ’ｔ　ｆｏｒｇｅｔ．@KEY()↓
+◆Ｌｉｆｅ　ｉｓ　ｍｏｎｅｙ．@KEY()↓
+◆Ｉ’ｖｅ　ｌｉｖｅｄ　ｔｈａｔ　ｌｉｆｅ．@KEY()↓
+◆Ｙｏｕ　ｃａｎ　ｂｕｙ　ｅｖｅｒｙｔｈｉｎｇ　ｂｕｔ　”ｌｏｖｅ，”　”ｆｒｉｅｎｄｓｈｉｐ”　ａｎｄ　”ｅｘｐ　ｐｏｉｎｔｓ．”
+@KEYNP()
+;jpn:◆いい？@WI(20)　きみ↓
+;jpn:　じんせいは　おかねもうけよ。@WI(30)↓
+;jpn:　それを　わすれちゃだめ。@KEY()↓
+;jpn:◆わたしは　そうやって↓
+;jpn:　いきてきた。@KEY()↓
+;jpn:◆おかねで　かえないものなんて↓
+;jpn:　「あい」と「ゆうじょう」と↓
+;jpn:　「けいけんち」くらいのもんよ。@KEYNP()
+』
+
+
+MSG_FOUR_MISSFAKE_RECEIVE;
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_TOOL_DIAMOND)
+@TRUE_GOTO(_FOUR_MISSFAKE_RECEIVE_DIA)
+@GOTO(MSG_SYS_GOODS_USE_NG)
+
+_FOUR_MISSFAKE_RECEIVE_DIA;
+@GET_ORDER_PLAYER(1)
+@GET_PLAYER_DIR(0,2,PRSN_FRSD_TOPOLLO_MANAGER_A)
+@XCHG()
+@SAVE_REG()
+@EQ(DIR_M_UP)
+@TRUE_GOTO(_FOUR_MISSFAKE_RECEIVE_F)
+@LOAD_REG()
+@EQ(DIR_M_UP_RIGHT)
+@TRUE_GOTO(_FOUR_MISSFAKE_RECEIVE_F)
+@LOAD_REG()
+@EQ(DIR_M_UP_LEFT)
+@TRUE_GOTO(_FOUR_MISSFAKE_RECEIVE_F)
+;
+@GOODSOUT(PC_ALL,GDS_TOOL_DIAMOND)
+@FUNC(5)				;マップ上全滅禁止
+@SE(SE_se76_my_give)
+@GET_CHAR_DIR(PRSN_FRSD_TOPOLLO_MANAGER_A,1,PC_NESS);ネスの方を向く
+@SET_CHAR_DIR(PRSN_FRSD_TOPOLLO_MANAGER_A,0)
+◆Ｙａａａｉｅｅｅｅ！！@KEY()↓
+◆Ｔｈａｔ　ｔｈａｔ　ｔｈａｔ　@DSP_GOODS(GDS_TOOL_DIAMOND)．．．ｙｏｕ’ｒｅ　ｇｏｉｎｇ　ｔｏ　ｐａｙ　ｗｉｔｈ　ｔｈａｔ　@DSP_GOODS(GDS_TOOL_DIAMOND)？！@KEY()↓
+◆Ｏ．．．ｏ．．．ｏｋａｙ，ｔｈ．．．ｔｈａｔ’ｓ　ｆｉｎｅ．@KEY()↓
+◆Ｉ’ｌｌ　ｒｉｐ　ｕｐ　ｔｈｉｓ　ｃｏｎｔｒａｃｔ．@KEY()↓
+◆＊ｒｒｒｒｒｉｐ！＊@KEY()↓
+◆Ｄｏｎ’ｔ　ｔｅｌｌ　ａｎｙｏｎｅ　ａｂｏｕｔ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_DIAMOND)．．．@KEY()↓
+◆Ｎｏｗ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ａｒｅ　ｆｒｅｅ！@KEY()↓
+◆．．．Ｙｏｕ　ｓｈｏｕｌｄ　ｔｈａｎｋ　ｍｅ．@KEY()↓
+◆Ｔｈａｔ　@DSP_GOODS(GDS_TOOL_DIAMOND)　ｉｓ　ｗｏｒｔｈ　ｍａｙｂｅ．．．ＭＡＹＢＥ．．．＄５０．@KEY()↓
+◆Ｓｏ　Ｉ　ｇａｖｅ　ｙｏｕ　ａ　ｂａｒｇａｉｎ．@KEY()↓
+◆（Ｔｈｕｍｐ，　ｔｈｕｍｐ．．．Ｔｈｕｍｐ，ｔｈｕｍｐ！@KEY()↓
+◆Ｉ　ｍａｋｅ　ｌｏｔｓ　ｏｆ　ｍｏｎｅｙ．．．）
+@KEYNP()
+;jpn:◆ガーン！　そ　そ　その↓
+;jpn:　ダイヤモンドで　はらうって？！↓
+;jpn:　い　い　いーわよ　いーわよ。@KEY()↓
+;jpn:◆このけいやくしょは　やぶるわ。↓
+;jpn:　ビリビリビリッ！↓
+;jpn:　ダイヤのことは　ほかのひとには@KEY()↓
+;jpn:◆ないしょよ。↓
+;jpn:　さぁ　トンズラブラザーズは↓
+;jpn:　いまから　じゆうのみよ！@KEY()↓
+;jpn:◆‥‥ま　このダイヤだったら↓
+;jpn:　ごご　ごじゅうドルくらいだけど↓
+;jpn:　おおまけにしといて　あげるから。@KEY()↓
+;jpn:◆（ドキドキ　ドキドキ↓
+;jpn:　すっごく　もうかっちゃったわ）@KEYNP()
+@SETF(FLG_FOUR_TONZURA_FREE)
+@SETF(FLG_FOUR_INFO_D_APPEAR);デパート開店情報の人出現
+@GOTO(MSG_EVT_64_TONZURA_FREE_2)
+』
+_FOUR_MISSFAKE_RECEIVE_F;正面から‥‥
+◆Ｗｈａｔ，　ｗｈａｔ，　ｗｈａｔ？@KEY()↓
+◆Ｉ　ｃａｎ’ｔ　ｔｅｌｌ　ｗｈａｔ　ｉｔ　ｉｓ　ｆｒｏｍ　ｔｈｉｓ　ｄｉｓｔａｎｃｅ．@KEY()↓
+◆Ｂｒｉｎｇ　ｉｔ　ｃｌｏｓｅｒ！
+@KEYNP()
+;jpn:◆な@WI(10)　なにかしら？？　それは？？@WI(20)↓
+;jpn:　もっと　よく‥‥ちかくでみなきゃ↓
+;jpn:　わからないわ！@KEYNP()
+』
+
+
+;@Habitat:フォーサイド／トポロ劇場／ホール
+;@Person:楽屋の係員
+;@Figure:サラリーマンＡ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_THEATERBOY
+MSG_FOUR_THEATERBOY;
+@CHKFGOTO(FLG_TEMP_8,MSG_FOUR_THEATERBOY_TEMP_V)
+@CHKFGOTO(FLG_TEMP_9,MSG_FOUR_THEATERBOY_TEMP_T)
+@CHKFGOTO(FLG_FOUR_TONZURA_THANKS,_FOUR_THEATERBOY_LATER)
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+@EQ(1)
+@TRUE_GOTO(_FOUR_THEATERBOY_NES)
+◆Ｈｅｙ，　ｋｉｄ．．．@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ａ　ｒｅｓｔｒｉｃｔｅｄ　ａｒｅａ．@KEY()↓
+◆Ｂａｃｋ　ｓｔａｇｅ　ｉｓ　ｒｉｇｈｔ　ｂｅｈｉｎｄ　ｔｈｉｓ　ｄｏｏｒ．
+@KEYNP()
+;jpn:◆あ　ぼく@GOSUB(MSG_SUB_TATI)‥‥↓
+;jpn:　ここからは　がくやだから↓
+;jpn:　たちいりきんしだよ。@KEYNP()
+』
+
+_FOUR_THEATERBOY_NES;
+◆Ｗｈｅｎ　@DSP_NAME(PC_NESS)　ａｒｒｉｖｅｓ，　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｔｏｌｄ　ｍｅ　ｔｏ　ｌｅｔ　ｈｉｍ　ｉｎ．@KEY()↓
+◆Ｓｏ　ｐｌｅａｓｅ　ｃｏｍｅ　ｉｎ．
+@KEY()
+;jpn:◆いつか　@DSP_STS(STS_PC_NAME_NES)さんというかたが↓
+;jpn:　たずねてきたら↓
+;jpn:　おとおしするようにと@KEY()↓
+;jpn:◆トンズラのかたがたから↓
+;jpn:　いわれていました。↓
+;jpn:　どうぞ　おはいりください。@KEY()
+@CLOSEALL()
+@REMOVE_CHAR(PRSN_FRSD_TOPOLLO_HALL_A,ANIM_TOPOLLO_HALL_A)
+@WAITSYS()
+@HIDE_CHAR(PRSN_FRSD_TOPOLLO_HALL_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_FRSD_TOPOLLO_HALL_B,ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE)
+@SETF(FLG_FOUR_TOPOLO_BOY_B_APPEAR)
+@SETF(FLG_TEMP_9)
+』
+
+_FOUR_THEATERBOY_LATER;
+;（トンズラ解放後）
+◆Ａｈ，　ｙｏｕ’ｒｅ　ａ　ｆｒｉｅｎｄ　ｏｆ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ．．．@KEY()↓
+◆Ｄｉｄ　ｙｏｕ　ｃｏｍｅ　ｔｏ　ｓｅｅ　Ｍｉｓｓ　Ｖｅｎｕｓ？@KEY()↓
+◆Ｃｏｍｅ　ｉｎｓｉｄｅ　ｑｕｉｃｋｌｙ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｌｅｔ　ｔｈｅ　ｏｔｈｅｒ　ｆａｎｓ　ｓｅｅ　ｙｏｕ　ｅｎｔｅｒ．
+@KEY()
+;jpn:◆ああ　トンズラのともだちだね。↓
+;jpn:　ビーナスおねぇさんに↓
+;jpn:　あいにきたのかな。@KEY()↓
+;jpn:◆ほかのファンに↓
+;jpn:　みつからないように↓
+;jpn:　サッと　はいっておくれ。@KEY()
+@CLOSEALL()
+@REMOVE_CHAR(PRSN_FRSD_TOPOLLO_HALL_A,ANIM_TOPOLLO_HALL_A)
+@WAITSYS()
+@HIDE_CHAR(PRSN_FRSD_TOPOLLO_HALL_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_FRSD_TOPOLLO_HALL_B,ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE)
+@SETF(FLG_FOUR_TOPOLO_BOY_B_APPEAR)
+@SETF(FLG_TEMP_8)
+』
+MSG_FOUR_THEATERBOY_TEMP_T;
+◆Ｉｆ　@DSP_NAME(PC_NESS)　ａｒｒｉｖｅｓ，　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｔｏｌｄ　ｍｅ　ｔｏ　ｌｅｔ　ｈｉｍ　ｉｎ．
+@KEY()
+;jpn:◆いつか　@DSP_STS(STS_PC_NAME_NES)さんというかたが↓
+;jpn:　たずねてきたら↓
+;jpn:　おとおしするようにと@KEY()↓
+;jpn:◆トンズラのかたがたから↓
+;jpn:　いわれていました。↓
+;jpn:　どうぞ　おはいりください。@KEY()
+』
+
+MSG_FOUR_THEATERBOY_TEMP_V;
+◆Ａｈ，　ｙｏｕ’ｒｅ　ａ　ｆｒｉｅｎｄ　ｏｆ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ？@KEY()↓
+◆Ｄｉｄ　ｙｏｕ　ｃｏｍｅ　ｔｏ　ｓｅｅ　Ｍｉｓｓ　Ｖｅｎｕｓ？@KEY()↓
+◆Ｃｏｍｅ　ｉｎｓｉｄｅ　ｑｕｉｃｋｌｙ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｌｅｔ　ｔｈｅ　ｏｔｈｅｒ　ｆａｎｓ　ｓｅｅ　ｙｏｕ　ｅｎｔｅｒ．
+@KEY()
+;jpn:◆ああ　トンズラのともだちだね。↓
+;jpn:　ビーナスおねぇさんに↓
+;jpn:　あいにきたのかな。@KEY()↓
+;jpn:◆ほかのファンに↓
+;jpn:　みつからないように↓
+;jpn:　サッと　はいっておくれ。@KEY()
+』
+MSG_FOUR_THEATERBOY_B;
+@CHKFGOTO(FLG_FOUR_TONZURA_THANKS,MSG_FOUR_THEATERBOY_TEMP_V)
+@GOTO(MSG_FOUR_THEATERBOY_TEMP_T)
+
+;@Habitat:フォーサイド／トポロ劇場／楽屋
+;@Person:ビーナス
+;@Figure:ビーナス
+;@AppearanceKey:FLG_FOUR_TONZURA_THANKS/on
+;@ActionScript:◆背面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_VENUS
+MSG_FOUR_VENUS;＠ｍａｎ三浦
+@CHKFGOTO(FLG_TEMP_9,_FOUR_VENUS_2_TMP)
+@CHKFGOTO(FLG_ITEM_BANANA,_FOUR_VENUS_2)
+@CHKFGOTO(FLG_FOUR_KOMORITA,_FOUR_VENUS_1)
+◆Ｏｈ，　ｙｏｕ’ｒｅ　ｊｕｓｔ　ａ　ｌｉｔｔｌｅ　ｋｉｄ．@KEY()↓
+◆Ｉ’ｍ　ｔｏｏ　ｂｕｓｙ　ｒｉｇｈｔ　ｎｏｗ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ｍｙ　ａｕｔｏｇｒａｐｈ．@KEY()↓
+◆Ｍａｙｂｅ　ｎｅｘｔ　ｔｉｍｅ，　ｌｉｔｔｌｅ　ｍａｎ．
+;＠ｌｉｔｔｌｅ　ｇｉｒｌ．（ポーラだったら）
+@KEYNP()
+;jpn:◆あら　ちいさいファンね。↓
+;jpn:　いま　いそがしいから↓
+;jpn:　サインは　また　こんどにしてね。@KEYNP()
+』
+
+_FOUR_VENUS_1;
+◆Ｏｈ，　ｙｏｕ　ｗａｎｔ　ａｎ　ａｕｔｏｇｒａｐｈ？@KEY()↓
+◆Ｏｋａｙ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ｍｙ　ａｕｔｏｇｒａｐｈ　ｏｎ　ｔｈｉｓ　ｂａｎａｎａ　ｐｅｅｌ．．．@KEY()↓
+◆Ｈｅｒｅ　ｙｏｕ　ｇｏ．@KEY()↓
+;jpn:◆あら　サイン？@KEY()↓
+;jpn:◆いいわよ。@WI(20)↓
+;jpn:　じゃ　このバナナに@WI(1)サ@WI(5)イ@WI(10)ン@WI(10)して‥‥@WI(30)↓
+;jpn:　ハイ　どうぞ。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_FOUR_VENUS_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_BANANA_SIGNED)
+@GOSUB(MSG_SUB_GETGOODS_S)
+@KEY()↓
+◆Ｏｈ，　ａｎｄ　ｔｈｉｓ　ｉｓ　ａ　ｂｏｎｕｓ．．．@KEY()↓
+◆Ｓｍａｃｋ！
+@KEYNP()
+;DAN:In Japan, kissing sound is "chu!"
+
+;jpn:◆あ　これは　おまけよ。@WI(60)↓
+;jpn:　チュッ！@KEYNP()
+@CLOSEALL()
+@SETF(FLG_ITEM_BANANA)
+@SETF(FLG_TEMP_9)
+』
+
+_FOUR_VENUS_ITEMFULL;
+◆Ｏｈ，　ｕｈ　ｈｕｈ．．．@KEY()↓
+◆Ｉ　ｃａｎ’ｔ　ｇｉｖｅ　ｙｏｕ　ｔｈｅ　ｂａｎａｎａ　’ｃａｕｓｅ　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．
+@KEYNP()
+;jpn:◆あらっ　うっふん。↓
+;jpn:　もちものがいっぱいで↓
+;jpn:　バナナが　わたせないじゃないの。@KEYNP()
+』
+
+_FOUR_VENUS_2;
+;ビーナスアイテムプレゼント後
+@CHKFGOTO(FLG_FOUR_VENUS_ENCORE,_FOUR_VENUS_2_ENCORE)
+◆Ｏｈ，　ｙｏｕ　ａｇａｉｎ．．．@KEY()↓
+◆Ｌｏｏｋ，　Ｉ’ｍ　ｂｕｓｙ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
+◆Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａｎ　ａｕｔｏｇｒａｐｈ　ｎｅｘｔ　ｔｉｍｅ．@KEY()↓
+◆Ａｒｅ　ｙｏｕ　ｈｅｒｅ　ｔｏ　ｓｅｅ　ｍｙ　ｓｈｏｗ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆あら　またあなたね。@WI(20)↓
+;jpn:　いま　いそがしいから↓
+;jpn:　サインは　また　こんどにしてね。@KEY()↓
+;jpn:◆それとも　わたしのステージを↓
+;jpn:　みにきてくれたの？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_FOUR_VENUS_2_YES,_FOUR_VENUS_2_NO)
+_FOUR_VENUS_2_NO;
+◆．．．Ｏｈ，　Ｉ　ｓｅｅ．@KEY()↓
+;jpn:◆‥‥あら　そう。@KEY()↓
+_FOUR_VENUS_2_TMP;
+◆Ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ　ａｒｅｎ’ｔ　ｔｏｏ　ｂｕｓｙ．@KEY()↓
+◆Ｍａｋｅ　ｙｏｕｒｓｅｌｆ　ａｔ　ｈｏｍｅ　ｆｏｒ　ａ　ｗｈｉｌｅ．
+@KEYNP()
+;jpn:◆ひまそうだから↓
+;jpn:　ゆっくりしてってね。@KEYNP()
+』
+_FOUR_VENUS_2_YES;
+◆Ｏｋａｙ．@KEY()↓
+;jpn:◆オーケー。@KEY()↓
+_FOUR_VENUS_2_ENCORE;演奏は後。三浦
+◆．．．Ｔｈｅｎ，　ｙｏｕ　ｓｈｏｕｌｄ　ｇｉｖｅ　ｍｅ　ａ　ｂｉｇ　ｈａｎｄ．
+@KEYNP()
+;jpn:◆‥‥じゃ↓
+;jpn:　さいこうのはくしゅを↓
+;jpn:　おねがいね。@KEYNP()
+@SETF(FLG_FOUR_VENUS_ENCORE)
+』
+
+
+;MSG_FOUR_VENUS_BETA;
+;◆音かね　それは　ほしいもの↓
+;　　かね　とても‥‥@KEY()↓
+;◆トンズラのみんな‥‥@KEY()↓
+;◆いきさきもつげず↓
+;　まるでトンズラするように↓
+;　どこかにいっちゃったわ。@KEYNP()
+;』
+
+;@Habitat:フォーサイド／トポロ劇場／楽屋
+;@Person:ゴーヂャス
+;@Figure:ゴージャス
+;@AppearanceKey:FLG_FOUR_TONZURA_THANKS/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_TONZURA_GORGEOUS
+MSG_FOUR_TONZURA_GORGEOUS;
+;トンズラのゴーヂャス（リーダー）
+;@CHKFGOTO(FLG_FOUR_TONZURA_FREE,_FOUR_TONZURA_GORGEOUS_LATER)
+◆Ａｇａｉｎ，　ｗｅ’ｖｅ　ｂｅｅｎ　ｃｈｅａｔｅｄ　ｂｙ　ｔｈｅ　ｔｈｅａｔｅｒ　ｏｗｎｅｒ．@KEY()↓
+◆Ｗｅ’ｒｅ　ｓｔｕｃｋ　ｈｅｒｅ　ｗｉｔｈ　ａ　ｐｈｏｎｙ　ｃｏｎｔｒａｃｔ．@KEY()↓
+◆Ｏｈ　ｙｅａｈ！
+@KEYNP()
+;jpn:◆また　このげきじょうのオーナーに↓
+;jpn:　だまされちまったよ。@KEY()↓
+;jpn:◆にせのけいやくしょで↓
+;jpn:　しばられちゃってるんだ。イエイ！@KEYNP()
+』
+
+_FOUR_TONZURA_GORGEOUS_LATER;
+◆Ｏｎｃｅ　ａｇａｉｎ，　Ｉ’ｖｅ　ｍａｄｅ　ｔｒｏｕｂｌｅ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ｉｔ．．．　ｗｅ’ｌｌ　ｓｔｏｐ　ｂｅｉｎｇ　ｓｏ　ｎａｉｖｅ．．．@KEY()↓
+◆Ｂｕｔ　ｒｉｇｈｔ　ｎｏｗ，　ｏｕｒ　ｆａｎｓ　ａｒｅ　ｗａｉｔｉｎｇ　ｆｏｒ　ｕｓ．@KEY()↓
+◆Ｗｅ’ｌｌ　ｓｉｎｇ　ｏｎｅ　ｍｏｒｅ　ｓｏｎｇ　ｂｅｆｏｒｅ　ｗｅ　ｇｏ．@KEY()↓
+◆Ｒｅａｄｙ？@KEY()↓
+◆Ｏｋａｙ，　ｌｅｔ’ｓ　ｇｏ！@KEY()↓
+◆Ｔｈａｎｋｓ，　ｂｏｏｇｉｅ　ｂｏｙ！
+@KEY()
+;jpn:◆またまた　めいわくを↓
+;jpn:　かけちまったなぁ。@KEY()↓
+;jpn:◆でも　おれたちの　おひとよしも↓
+;jpn:　これで　さいごにするけど‥‥@WI(20)↓
+;jpn:　ファンが　まってるから@KEY()↓
+;jpn:◆もうワンステージだけ↓
+;jpn:　うたってから↓
+;jpn:　ここと　おさらばしよう。@KEY()↓
+;jpn:◆じゃ　いくぜ！　ありがとうよ！@KEY()
+;@SETF(FLG_FOUR_TONZURA_THANKS)
+;@GOSUB(MSG_EVENT_STAGE_TONZURA)
+』
+
+;@Habitat:フォーサイド／トポロ劇場／楽屋
+;@Person:オッケー
+;@Figure:オッケー
+;@AppearanceKey:FLG_FOUR_TONZURA_THANKS/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_TONZURA_OKEY
+MSG_FOUR_TONZURA_OKEY;
+;トンズラのオッケー
+◆Ｗｅ　ｋｎｏｗ　ｈｏｗ　ｔｏ　ｓｉｎｇ　ｂｕｔ　ｗｅ　ｄｏｎ’ｔ　ｋｎｏｗ　ｈｏｗ　ｔｏ　ｈａｎｄｌｅ　ｍｏｎｅｙ　ｏｒ　ｗｏｍｅｎ．@KEY()↓
+◆Ｄｏ－ｗａｐ，　ｄｏ　ｄｏ　ｗｏｐ．
+@KEYNP()
+;jpn:◆うたは　とくいな　おれたちだけど↓
+;jpn:　かねと　おんなにゃ↓
+;jpn:　よわいのよー　ドゥワッドワッ音@KEYNP()
+』
+
+;@Habitat:フォーサイド／トポロ劇場／楽屋
+;@Person:ナイス
+;@Figure:ナイス
+;@AppearanceKey:FLG_FOUR_TONZURA_THANKS/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_TONZURA_NICE
+MSG_FOUR_TONZURA_NICE;
+;トンズラのナイス
+◆Ｗｅ　ｏｗｅ　ｙｏｕ　ｇｕｙｓ　ｓｏ　ｍｕｃｈ．@KEY()↓
+◆Ｓｏｒｒｙ．
+@KEYNP()
+;jpn:◆あんたらには　ほんとに↓
+;jpn:　かりばっかり　つくってのう。↓
+;jpn:　もうしわけないのう。@KEYNP()
+』
+
+;@Habitat:フォーサイド／トポロ劇場／楽屋
+;@Person:ラッキー
+;@Figure:ラッキー
+;@AppearanceKey:FLG_FOUR_TONZURA_THANKS/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_TONZURA_LUCKY
+MSG_FOUR_TONZURA_LUCKY;トンズラのラッキー
+◆Ｗｅ’ｒｅ　ｓｏ　ｈｅｌｐｌｅｓｓ．@KEY()↓
+◆Ｒｅａｌｌｙ　ｈｅｌｐｌｅｓｓ，　ａｎｄ　ｈｏｐｅｌｅｓｓ．．．@KEY()↓
+◆Ｈｙｕｋ　ｈｙｕｋ　ｈｙｕｋ．
+@KEYNP()
+;jpn:◆わてら　アカン音↓
+;jpn:　どーも　アカン音↓
+;jpn:　カッカッカ（わらいごえ）@KEYNP()
+』
+
+;@Habitat:フォーサイド／トポロ劇場／楽屋
+;@Person:グルービー
+;@Figure:グルービー
+;@AppearanceKey:FLG_FOUR_TONZURA_THANKS/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_TONZURA_GROOVY
+MSG_FOUR_TONZURA_GROOVY;
+◆Ｔｏ　ｍｅｅｔ　Ｇｅｌｄｅｇａｒｄｅ　Ｍｏｎｏｔｏｌｉ，　ｙｏｕ’ｌｌ　ｎｅｅｄ　ｏｕｒ　ｈｅｌｐ．@KEY()↓
+◆Ｉ　ｄｏｎ’ｔ　ｅｘａｃｔｌｙ　ｋｎｏｗ　ｗｈｙ．．．ｉｔ’ｓ　ｊｕｓｔ　ａ　ｈｕｎｃｈ．
+@KEYNP()
+;jpn:◆モノモッチ・モノトリーに↓
+;jpn:　あうためには↓
+;jpn:　おれたちの　ちからがひつようだ。@KEY()↓
+;jpn:◆はっきりしたりゆうは↓
+;jpn:　いえないけど　おんがくやの↓
+;jpn:　ちょっかん　ってやつかな。@KEYNP()
+』
+
+;@Habitat:フォーサイド／トポロ劇場／受付
+;@Person:チケット売り
+;@Figure:サラリーマンＢ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いてそのまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_THEATER_TICKETPIA
+MSG_FOUR_THEATER_TICKETPIA;
+◆Ｄｏ　ｙｏｕ　ｗａｎｎａ　ｂｕｙ　ａ　ｔｉｃｋｅｔ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆チケットをおもとめですか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_FOUR_THEATER_TICKETPIA_YES,_FOUR_THEATER_TICKETPIA_NO)
+
+_FOUR_THEATER_TICKETPIA_NO;
+◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．
+@KEYNP()
+;jpn:◆また　ごりようください。@KEYNP()
+』
+
+_FOUR_THEATER_TICKETPIA_YES;
+◆３０　ｂｕｃｋｓ，　ｐｌｅａｓｅ．↓
+;jpn:◆３０ドルです。↓
+@WINR_MONEY()
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_FOUR_THEATER_TICKETPIA_BUY,_FOUR_THEATER_TICKETPIA_NO)
+@GOTO(_FOUR_THEATER_TICKETPIA_NO)
+
+_FOUR_THEATER_TICKETPIA_BUY;
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_FOUR_THEATER_TICKETPIA_ITEMFULL)
+@SAVE_REG()
+@Q_MONEY(30)
+@TRUE_GOTO(_FOUR_THEATER_TICKETPIA_NOMONEY)
+@SE(SE_se76_my_give)
+@WI(1)
+@MONEYOUT(30)
+@WINR_MONEY()
+◆Ｔｈａｎｋｓ　ａ　ｌｏｔ．
+@KEYNP()
+;jpn:◆ありがとうございました。@KEYNP()
+@SE(SE_se74_my_get)
+@LOAD_REG()
+@GOODSIN_PLAYER(0,GDS_TOOL_THEATER_TICKET)
+』
+
+_FOUR_THEATER_TICKETPIA_ITEMFULL;
+◆Ｅｘｃｕｓｅ　ｍｅ　@GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM)，　ｂｕｔ　ｙｏｕｒ　ｈａｎｄｓ　ａｒｅ　ｆｕｌｌ．．．
+@KEYNP()
+;jpn:◆しつれいですが↓
+;jpn:　もちきれない　ごようすですね‥‥@KEYNP()
+』
+
+_FOUR_THEATER_TICKETPIA_NOMONEY;松（　（　）　ｄｏｌｌａｒｓ．だった）
+◆Ｉ’ｍ　ｓｏｒｒｙ　ｓｉｒ．．．@KEY()↓
+;jpn:◆もうしわけありません‥‥@KEY()↓
+@SET_CHAR_DIR(PRSN_FRSD_DEPT_B,DIR_M_LEFT)
+◆Ｗｅ　ｄｏｎ’ｔ　ｊｕｓｔ　ｇｉｖｅ　ａｗａｙ　ｔｈｅ　ｔｉｃｋｅｔｓ．．．ｙｏｕ　ｍｕｓｔ　ｐａｙ　３０　ｄｏｌｌａｒｓ．
+@KEYNP()
+;jpn:◆@DSP_STS(STS_PARTY_MONEY)ドルでは↓
+;jpn:　ちょっと‥‥@KEYNP()
+』
+
+
+;@Habitat:フォーサイド／トポロ劇場／受付
+;@Person:切符きり
+;@Figure:サラリーマンＡ
+;@AppearanceKey:FLG_FOUR_CARROT_B_APPEAR/off
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:MSG_FOUR_CARROT_RECEIVE
+;@CheckMessage:0
+;@Message:MSG_FOUR_THEATER_USHER
+MSG_FOUR_THEATER_USHER;
+@CHKFGOTO(FLG_TEMP_1,_FOUR_CARROT_TEMP)
+@CHKFGOTO(FLG_FOUR_TONZURA_THANKS,_FOUR_CARROT_MAIN)
+@CHKFGOTO(FLG_FOUR_TONZURA_FREE,_FOUR_CARROT_STOP)
+_FOUR_CARROT_MAIN;
+@GET_PLAYER_DIR(PC_ALL,2,PRSN_FRSD_TOPOLLO_FRONT_B)
+@GOSUB(MSG_SUB_Q_FRONT)
+@FALSE_GOTO(_FOUR_CARROT_BYE)
+◆Ｐｌｅａｓｅ　ｈａｖｅ　ｙｏｕｒ　ｔｉｃｋｅｔｓ　ｒｅａｄｙ．．．
+@KEYNP()
+;jpn:◆おきゃくさま↓
+;jpn:　チケットを↓
+;jpn:　はいけんいたします。@KEYNP()
+』
+
+_FOUR_CARROT_STOP;
+;ラストステージ終わってたら戻る
+@CHKFGOTO(FLG_FOUR_TONZURA_THANKS,_FOUR_CARROT_RECEIVE_MAIN)
+◆Ｂｏｙｓ　ａｎｄ　ｇｉｒｌｓ，　ｌａｄｉｅｓ　ａｎｄ　ｇｅｎｔｓ．．．ｔｈｉｓ　ｉｓ　ａ　ｖｅｒｙ　ｓｐｅｃｉａｌ　ｓｈｏｗ，@KEY()↓
+◆ｔｈｅ　ｆｉｎａｌ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｓｈｏｗ　ｈｅｒｅ　ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ！@KEY()↓
+◆Ｐｌｅａｓｅ，　ｐｌｅａｓｅ，　ｐｌｅａｓｅ　ｄｏｎ’ｔ　ｍｉｓｓ　ｔｈｉｓ　ｏｎｃｅ　ｉｎ　ａ　ｌｉｆｅｔｉｍｅ　ｃｈａｎｃｅ　ｔｏ　ｓｅｅ　ｔｈｅｉｒ　ｓｈｏｗ．
+@KEYNP()
+;jpn:◆おきゃくさま↓
+;jpn:　トンズラブラザーズの@KEY()↓
+;jpn:◆スペシャルな↓
+;jpn:　ラストステージで↓
+;jpn:　ございますよ！@KEY()↓
+;jpn:◆ぜひ　ぜひ　ぜひ↓
+;jpn:　ごらんになって↓
+;jpn:　くださいませ。@KEYNP()
+』
+
+_FOUR_CARROT_BYE;
+◆Ｏｈ，　ｈｉ．
+@KEYNP()
+;jpn:◆あ　どうも。@KEYNP()
+@CLOSEALL()
+@GOSUB(MSG_EVT_62_CARROT_D)
+@SETF(FLG_TEMP_1)
+』
+
+_FOUR_CARROT_TEMP;
+◆Ａｒｅ　ｙｏｕ　ｅｎｊｏｙｉｎｇ　ｙｏｕｒｓｅｌｆ？
+@KEYNP()
+;jpn:◆おたのしみですか？@KEYNP()
+』
+
+MSG_FOUR_CARROT_RECEIVE;
+@CHKFGOTO(FLG_FOUR_TONZURA_FREE,_FOUR_CARROT_STOP)
+_FOUR_CARROT_RECEIVE_MAIN;
+@CHKFGOTO(FLG_TEMP_1,_FOUR_CARROT_TEMP);一度動いてたら移動しない
+@SAVE_REG()
+@LOAD_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@SAVE_REG()
+@EQ(GDS_TOOL_THEATER_TICKET)
+@TRUE_GOTO(_FOUR_CARROT_RECEIVE_TICKET)
+;-----
+@GET_PLAYER_DIR(PC_ALL,2,PRSN_FRSD_TOPOLLO_FRONT_B)
+@GOSUB(MSG_SUB_Q_FRONT)		;前からじゃなかったら
+@FALSE_GOTO(_FOUR_CARROT_BYE)	;下に移動
+◆Ｎｏ　ｋｉｄｄｉｎｇ．．．
+@KEYNP()
+;jpn:◆ごじょうだんを‥‥。@KEYNP()
+』
+
+_FOUR_CARROT_RECEIVE_TICKET;
+;-----
+@GET_PLAYER_DIR(PC_ALL,2,PRSN_FRSD_TOPOLLO_FRONT_B)
+@GOSUB(MSG_SUB_Q_FRONT)		;前からじゃなかったら
+@FALSE_GOTO(_FOUR_CARROT_BYE)	;下に移動
+;-----
+@CHKFGOTO(FLG_TEMP_1,_FOUR_CARROT_TEMP)
+@SE(SE_se76_my_give)
+@WI(1)
+@GOODSOUT(PC_ALL,GDS_TOOL_THEATER_TICKET)
+◆Ｔｈａｎｋｓ　ａ　ｌｏｔ．@KEY()↓
+◆Ｐｌｅａｓｅ　ｈｕｒｒｙ．@KEY()↓
+◆Ｔｈｅ　ｓｈｏｗ　ｗｉｌｌ　ｂｅ　ｓｔａｒｔｉｎｇ　ａｔ　ａｎｙ　ｍｏｍｅｎｔ．
+@KEYNP()
+;jpn:◆ありがとうございます。@KEY()↓
+;jpn:◆おいそぎください。↓
+;jpn:　ステージが↓
+;jpn:　はじまるところです。@KEY()
+@CLOSEALL()
+@GOSUB(MSG_EVT_62_CARROT_R)
+@SETF(FLG_TEMP_1)
+』
+
+
+;@Habitat:フォーサイド／トポロ劇場／受付
+;@Person:（チケットを渡した後の）切符きりＢ
+;@Figure:サラリーマンＡ
+;@AppearanceKey:FLG_FOUR_CARROT_B_APPEAR/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:MSG_FOUR_CARROT_RECEIVE
+;@CheckMessage:0
+;@Message:MSG_FOUR_THEATER_USHER_B
+MSG_FOUR_THEATER_USHER_B;
+◆Ｔｈａｎｋｓ　ａ　ｌｏｔ．@KEY()↓
+◆Ｐｌｅａｓｅ　ｈｕｒｒｙ．@KEY()↓
+◆Ｔｈｅ　ｓｈｏｗ　ｗｉｌｌ　ｂｅ　ｓｔａｒｔｉｎｇ　ａｔ　ａｎｙ　ｍｏｍｅｎｔ．
+@KEYNP()
+;jpn:◆ありがとうございます。@KEY()↓
+;jpn:◆おいそぎください。↓
+;jpn:　ステージが↓
+;jpn:　はじまるところです。@KEY()↓
+』
+
+；----------------------------------------
+;@Habitat:フォーサイド／ベーカリー／１階
+;@Person:店員
+;@Figure:コック
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_BAKERY_BAKER
+MSG_FOUR_BAKERY_BAKER;@MiuraAppended
+@GOSUB(MSG_SHOP_FOUR_BAKERY)
+』
+
+;@Habitat:フォーサイド／ベーカリー／１階
+;@Person:客
+;@Figure:おばさんＢ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_BAKERY_OWNER
+MSG_FOUR_BAKERY_OWNER;
+◆Ｂｒｅａｄ　ｉｎ　ｔｈｉｓ　ｔｏｗｎ　ｈａｓ　ａ　ｖｅｒｙ　ｐｌａｉｎ，　ｎｏｎｄｅｓｃｒｉｐｔ　ｆｌａｖｏｒ　ｔｏ　ｉｔ．@KEY()↓
+◆Ｔｏ　ｔｅｌｌ　ｙｏｕ　ｔｈｅ　ｔｒｕｔｈ，　Ｉ’ｍ　ｔｈｅ　ｏｗｎｅｒ　ｏｆ　ｔｈｉｓ　ｂａｋｅｒｙ．
+@KEYNP()
+;jpn:◆このまちのパンは　すばらしく↓
+;jpn:　とかいてきな　おいしさなのよね。↓
+;jpn:　じつは　わたし‥‥@KEY()↓
+;jpn:◆このみせのオーナーなんだけど。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ベーカリー／２階
+;@Person:ベテネラジョバンニ
+;@Figure:モヒカン
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:MSG_FOUR_PETENERA_RECEIVE
+;@CheckMessage:0
+;@Message:MSG_FOUR_PETENERA
+MSG_FOUR_PETENERA;
+◆Ｉ　ｗａｓ　ｔｈｉｎｋｉｎｇ　”Ｔｈｅｒｅ’ｓ　ａ　ｔｉｇｈｔ　ｗａｄ　ｂｏｒｎ　ｅｖｅｒｙ　ｍｉｎｕｔｅ．．．”
+@KEYNP()
+;jpn:◆いま「よのなかには↓
+;jpn:　ケチなやつがいるもんだ」@KEY()↓
+;jpn:◆ってことについて↓
+;jpn:　かんがえていたところなんです。@KEYNP()
+』
+
+MSG_FOUR_PETENERA_RECEIVE;
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_TOOL_CONTACT_LENS)
+@TRUE_GOTO(_FOUR_PETENERA_RECEIVE_LENS)
+@GOTO(MSG_SYS_GOODS_USE_NG)
+
+_FOUR_PETENERA_RECEIVE_LENS;
+◆Ｗｈａｔ？@KEY()↓
+◆Ｙｏｕ　ｃａｍｅ　ｔｏ　ｄｅｌｉｖｅｒ　ｍｙ　ｇｒａｎｄｍａ’ｓ　ｍｏｍｅｎｔｏ，　ｔｈｅ　ｃｏｎｔａｃｔ　ｌｅｎｓｅｓ？！@KEY()↓
+◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Ｔｈａｎｋ　ｙｏｕ　ｓｏｏｏｏｏ　ｍｕｃｈ！@KEY()↓
+◆Ｉｔ’ｓ　ｏｕｒ　ｆａｍｉｌｙ　ｔｒａｄｉｔｉｏｎ　ｔｏ　ｋｅｅｐ　ｔｈｉｎｇｓ　ｆｏｒｅｖｅｒ．@KEY()↓
+◆．．．Ｏｋａｙ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ｓｏｍｅｔｈｉｎｇ　ａｓ　ａ　ｒｅｗａｒｄ．@KEY()↓
+◆Ｈｅｒｅ’ｓ　ｍｙ　ｓｏｃｋｓ　ｔｈａｔ　Ｉ　ｕｓｅ　ｏｎｌｙ　ｆｏｒ　ｓｐｅｃｉａｌ　ｏｃｃａｓｉｏｎｓ．@KEY()↓
+◆Ｉ’ｖｅ　ｗｏｒｎ　ｔｈｅｓｅ　ｓｏｃｋｓ　ｆｏｒ　ｊｕｓｔ　ｆｉｖｅ　ｙｅａｒｓ．@KEY()↓
+◆Ｔｈｅｒｅ　ａｒｅ　ｎｏ　ｈｏｌｅｓ，　ａｎｄ　ｔｈｅｙ’ｖｅ　ｏｎｌｙ　ｂｅｅｎ　ｗｏｒｎ　ｏｎｃｅ　ｓｉｎｃｅ　ｔｈｅ　ｌａｓｔ　ｗａｓｈｉｎｇ．@KEY()↓
+◆Ｔｈｅｙ　ｓｔｉｎｋ　ａ　ｌｉｔｔｌｅ．．．ｂｕｔ　ｔｈｅｙ’ｒｅ　ｓｔｉｌｌ　ｇｏｏｄ．@KEY()↓
+◆Ｈｅｙ，　ｄｏｎ’ｔ　ｒｅｆｕｓｅ　ｍｅ　ｈｅｒｅ．．．Ｉ’ｍ　ｂｅｉｎｇ　ｇｅｎｅｒｏｕｓ！@KEY()↓
+;jpn:◆えっ@WI(20)　おばあさんのかたみの↓
+;jpn:　コンタクトレンズを　とどけに？！@WI(30)↓
+;jpn:　ありがとう　ありがとう。@KEY()↓
+;jpn:◆ぼくの　かけいは↓
+;jpn:　ものを　たいせつにするんです。@WI(20)↓
+;jpn:　‥‥じゃ　さっそくなにか‥‥@KEY()↓
+;jpn:◆おれいの　しなものを‥‥。@WI(30)↓
+;jpn:　まだ５ねんしか　はいてない↓
+;jpn:　ぼくの　よそいきのくつしたです。@KEY()↓
+;jpn:◆あなも　あいてないし↓
+;jpn:　こないだせんたくしてから↓
+;jpn:　いちどしか　はいてません。@KEY()↓
+;jpn:◆ほんのすこし　におうけど‥‥@WI(30)↓
+;jpn:　だいじょうぶ！@WI(20)です。↓
+;jpn:　えんりょなく　どうぞ。@KEY()↓
+@SE(SE_se74_my_get)
+@GOODSOUT(PC_ALL,GDS_TOOL_CONTACT_LENS)
+@Q_GOODSFULL(PC_ALL)
+@GOODSIN_PLAYER(0,GDS_TOOL_SOCKS_STINK)
+@GOSUB(MSG_SUB_GETGOODS)@KEY()↓
+◆Ｐｌｅａｓｅ　ｔａｋｅ　ｇｏｏｄ　ｃａｒｅ　ｏｆ　ｍｙ　ｓｏｃｋｓ．．．＊ｓｎｉｆｆ！＊
+@KEYNP()
+;jpn:◆‥‥たいせつにしてくださいね。@KEYNP()
+@SETF(FLG_FOUR_PETENERA);カンバンのメッセージ変更用
+』
+
+;----------------------------------------
+;@Habitat:フォーサイド／ビル1階／エレベーター内
+;@Person:エレベーターガール
+;@Figure:ＯＬＦ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いてそのまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_ELEVGIRL
+MSG_FOUR_ELEVGIRL;
+@CHKFGOTO(FLG_TEMP_9,_FOUR_ELEVGIRL_TEMP)
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_ELEVGIRL_LATER)
+◆Ｔｈｉｓ　ｅｌｅｖａｔｏｒ　ｉｓ　ｏｎｌｙ　ｆｏｒ　Ｍａｓｔｅｒ　Ｐｏｋｅｙ’ｓ　ｕｓｅ．@KEY()↓
+◆Ｉｔ　ｇｏｅｓ　ｄｉｒｅｃｔｌｙ　ｔｏ　ｔｈｅ　４７ｔｈ　ｆｌｏｏｒ．@KEY()↓
+◆Ｑｕｉｔ　ｓｔａｒｉｎｇ　ａｔ　ｍｙ　ｈｉｐｓ．．．ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｓｔａｎｄ　ｓｏｍｅｗｈｅｒｅ　ｅｌｓｅ　ｉｎｓｔｅａｄ　ｏｆ　ｂｅｈｉｎｄ　ｍｅ？
+@KEY()
+;jpn:◆このエレベーターは↓
+;jpn:　ポーキーさませんようで↓
+;jpn:　４７かいまで　ちょくつうです。@KEY()↓
+;jpn:◆うしろに　くっついて↓
+;jpn:　ヒップを　じろじろみないでね。@KEY()
+_FOUR_ELEVGIRL_MAIN;
+@CLOSEALL()
+@SET_CHAR_DIR(PRSN_FRSD_BUIL_1F_ELEV_A,DIR_M_UP);後ろを向く
+@BGMSTART(0,BGM_elup)
+@MOVE_GOM_CHAR(GOM_HIT_CHR2,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE)	;釘付け
+@WI(1)	;GOM_HIT_CHR2の登録待ち
+;@SET_CAMERA_PARTY()	←なんでこうなるの？（欽ちゃん）
+@SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
+@FRESH_PLAYER(PC_ALL)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_ELEVATER_UP,OBJFX_SHOW_NONE)
+@WAITSYS()
+@BGMSTART(0,BGM_elstop)
+@WI( 90 )	;エレベータ到着音終了待ち
+@SET_CAMERA_PARTY()
+@COLD_PLAYER(PC_ALL)
+@HIDE_GOM_CHAR(GOM_HIT_CHR2,OBJFX_HIDE_NONE)
+@SETF(FLG_FOUR_ELEV)
+@SETF(FLG_TEMP_9)
+』
+_FOUR_ELEVGIRL_TEMP;
+◆４７ｔｈ　ｆｌｏｏｒ．．．
+@KEYNP()
+;jpn:◆４７かいでございます。@KEYNP()
+』
+_FOUR_ELEVGIRL_LATER;
+◆Ｔｈｉｓ　ｅｌｅｖａｔｏｒ　ｇｏｅｓ　ｄｉｒｅｃｔｌｙ　ｔｏ　ｔｈｅ　４７ｔｈ　ｆｌｏｏｒ．@KEY()↓
+◆Ａｌｌ　ａｂｏａｒｄ！@KEY()↓
+◆Ｊｕｓｔ　ｋｉｄｄｉｎｇ．
+@KEY()
+;jpn:◆このエレベーターは↓
+;jpn:　４７かいへ　まいります。@WI(20)↓
+;jpn:　はっしゃ　オーライ！@KEY()↓
+;jpn:◆ギャグよ　ギャグ。@KEY()
+@GOTO(_FOUR_ELEVGIRL_MAIN)
+
+;@Habitat:フォーサイド／ビル1階／受付
+;@Person:ビジネスマンＡ
+;@Figure:サラリーマンＡ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_MONOBLDG_A
+MSG_FOUR_MONOBLDG_A;
+◆Ｌａｓｔ　ｎｉｇｈｔ　ｔｈｅｒｅ　ｗａｓ　ａ　ｓｏｌｉｔａｉｒｅ　ｔｏｕｒｎａｍｅｎｔ．@KEY()↓
+◆．．．Ｉ　ｌｏｓｔ　ｍｙ　ｓｈｉｒｔ．．．．@KEY()↓
+◆Ｉ’ｌｌ　ｉｎｖｉｔｅ　ｙｏｕ　ｎｅｘｔ　ｔｉｍｅ．@KEY()↓
+◆Ｈｅｙ，　ｗａｉｔ．．．Ｄｏ　ｙｏｕ　ｅｖｅｎ　ｋｎｏｗ　ｗｈａｔ　ｓｏｌｉｔａｉｒｅ　ｉｓ？
+@KEYNP()
+;jpn:◆ゆうべ　モノポリーのたいかいが↓
+;jpn:　あってさ。↓
+;jpn:　いやぁ‥‥まけたまけた。@KEY()↓
+;jpn:◆きみも　こんどさそってやるよ。↓
+;jpn:　スーパーファミコンでも↓
+;jpn:　できるけどさ。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル1階／受付
+;@Person:ビジネスマンＢ
+;@Figure:サラリーマンＢ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_MONOBLDG_B
+MSG_FOUR_MONOBLDG_B;
+@CHKFGOTO(FLG_WIN_GIEGU,_FOUR_MONOBLDG_B_END)
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_MONOBLDG_B_LATER)
+◆Ｉ’ｍ　ａｎ　ｅｌｉｔｅ　ｂｕｓｉｎｅｓｓｍａｎ　ｗｈｏ　ｗｏｒｋｓ　ｉｎ　Ｍｒ．　Ｍｏｎｏｔｏｌｉ’ｓ　ｏｆｆｉｃｅ．
+@KEYNP()
+;jpn:◆モノトリーさんの↓
+;jpn:　りっぱなオフィスで　はたらく↓
+;jpn:　わたしは　エリートです。@KEYNP()
+』
+
+_FOUR_MONOBLDG_B_LATER;＃
+◆Ｉ　ｈｏｐｅ　ｍｙ　ｓａｌａｒｙ　ｓｔａｙｓ　ｔｈｅ　ｓａｍｅ．@KEY()↓
+◆Ｙｏｕ　ｄｏｎ’ｔ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ａ　ｈｕｇｅ　ｃｏｎｃｅｒｎ　ｏｆ　ｅｌｉｔｅ　ｂｕｓｉｎｅｓｓｍｅｎ　ｌｉｋｅ　ｍｅ．
+@KEYNP()
+;jpn:◆きゅうりょうが↓
+;jpn:　さがらなければいいが　と↓
+;jpn:　かんがえてます。@KEY()↓
+;jpn:◆あなたには　りかいできない↓
+;jpn:　わたしの↓
+;jpn:　エリートとしての　なやみ。@KEYNP()
+』
+_FOUR_MONOBLDG_B_END;＆
+◆Ｉｔ　ｓｏｕｎｄｓ　ｌｉｋｅ　ｙｏｕｒ　ｌｉｆｅｓｔｙｌｅ@KEY()↓
+◆．．．ｉｓｎ’ｔ　ｓｏｍｅｔｈｉｎｇ　Ｉ’ｄ　ｂｅ　ｔｈａｔ　ｐｒｏｕｄ　ｏｆ！
+@KEYNP()
+;jpn:◆‥‥なんだか　きみたちの↓
+;jpn:　いきかたが　うらやま‥‥@KEY()↓
+;jpn:◆しくなんかないさ！@KEYNP()
+』
+
+
+;@Habitat:フォーサイド／ビル1階／受付
+;@Person:公衆電話
+;@Figure:電話ボックス
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+;@Habitat:フォーサイド／ビル1階／受付
+;@Person:受付嬢
+;@Figure:ＯＬＦ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_MONOBLDG_RECEPTION
+MSG_FOUR_MONOBLDG_RECEPTION;＃
+@CHKFGOTO(FLG_WIN_GIEGU,_FOUR_MONOBLDG_RECEPTION_END)
+◆Ｈｅｌｌｏ，　ｂａｂｙ　ｆａｃｅ．@KEY()↓
+◆Ｗｈａｔ　ｂｒｉｎｇｓ　ｙｏｕ　ｔｏ　ｔｈｅ　Ｍｏｎｏｔｏｌｉ　Ｂｕｉｌｄｉｎｇ？
+@KEYNP()
+;jpn:◆ハロー　ベビーフェイス。@WI(20)↓
+;jpn:　モノトリービルに　なんのごよう？@KEYNP()
+』
+_FOUR_MONOBLDG_RECEPTION_END;＆
+◆Ｈｅｌｌｏ，　ｂａｂｙ　ｆａｃｅ．@KEY()↓
+◆Ｗｈａｔ　ｂｒｉｎｇｓ　ｙｏｕ　ｔｏ　ｔｈｅ　Ｅｎｒｉｃｈ　Ｆｌａｖｏｒ　Ｂｕｉｌｄｉｎｇ？
+@KEYNP()
+;jpn:◆ハロー　ベビーフェイス。@WI(30)↓
+;jpn:　エンリッチ・フレーバー　ビルに↓
+;jpn:　なんのごよう？@KEYNP()
+』
+;----------------------------------------
+;@Habitat:フォーサイド／ビル47階／エレベーターホール
+;@Person:用心棒Ａ
+;@Figure:用心棒
+;@AppearanceKey:0
+;@ActionScript:◆正面向いてそのまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_GUARD_MONOTOLY_A
+MSG_FOUR_GUARD_MONOTOLY_A;
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_GUARD_MONOTOLY_A_LATER)
+◆Ａｒｅ　ｙｏｕ　ａ　ｆｒｉｅｎｄ　ｏｆ　Ｍａｓｔｅｒ　Ｐｏｋｅｙ？@KEY()↓
+◆Ｉｔ’ｓ　ｏｋａｙ　ｔｏ　ｖｉｓｉｔ　ｈｉｍ　ｈｅｒｅ，　ｂｕｔ　ｄｏｎ’ｔ　ｗａｎｄｅｒ　ａｒｏｕｎｄ　ｔｈｅ　ｂｕｉｌｄｉｎｇ．@KEY()↓
+◆Ｓｏｍｅｏｎｅ　ｍｉｇｈｔ　ｂｅ　ｓｕｓｐｉｃｉｏｕｓ　ｏｆ　ｙｏｕ　ａｎｄ　ｔａｋｅ　ａ　ｐｏｔ　ｓｈｏｔ　ａｔ　ｙｏｕ　ｗｉｔｈ　ａ　ｍａｃｈｉｎｅ　ｇｕｎ．．．
+@KEYNP()
+;jpn:◆きみは　ポーキーさまの↓
+;jpn:　ともだちかな？@KEY()↓
+;jpn:◆あそびにくるのは　いいけれど↓
+;jpn:　こんなところを　うろうろしちゃ↓
+;jpn:　いけないよ。@KEY()↓
+;jpn:◆あやしいやつと　まちがって‥‥@KEY()↓
+;jpn:◆マシンガンで↓
+;jpn:　うちころされてしまうことだって↓
+;jpn:　あるからね。@KEYNP()
+』
+
+_FOUR_GUARD_MONOTOLY_A_LATER;
+◆Ａ　ｌｏｔ　ｈａｓ　ｈａｐｐｅｎｅｄ　ｔｏ　ｍｅ．@KEY()↓
+◆Ｉ　ｈａｖｅ　ｔｏ　ｔｒｙ　ａｎｄ　ｓｏｒｔ　ｉｔ　ａｌｌ　ｏｕｔ．．．ｔｈｉｎｋｉｎｇ　ｉｓ　ｔｏｕｇｈ　ｆｏｒ　ｍｅ．
+@KEYNP()
+;jpn:◆いろんなことが　あった。↓
+;jpn:　バカなおれだが↓
+;jpn:　いろいろ　かんがえさせられたよ。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル47階／エレベーターホール
+;@Person:用心棒Ｂ
+;@Figure:用心棒
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_GUARD_MONOTOLY_B
+MSG_FOUR_GUARD_MONOTOLY_B;
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_GUARD_MONOTOLY_B_LATER)
+◆Ｗｈｏｏｐｓ．．．@KEY()↓
+◆Ｉ　ｗａｓ　ａｌｍｏｓｔ　ｇｏｎｎａ　ｂｅａｔ　ｙｏｕ　ｕｐ．
+@KEYNP()
+;jpn:◆うおーっ@WI(20)‥‥と。@WI(10)↓
+;jpn:　あぶねぇぜ↓
+;jpn:　なぐりたおすところだった。@KEYNP()
+』
+
+_FOUR_GUARD_MONOTOLY_B_LATER;
+◆Ｗｈｅｎ　Ｉ’ｍ　ｏｆｆ　ｄｕｔｙ　ｆｒｏｍ　ｍｙ　ｂｏｄｙ　ｇｕａｒｄ　ｊｏｂ，　Ｉ　ｓｔｉｌｌ　ｈａｖｅ　ａ　ｌｏｔ　ｏｆ　ｐｅｎｔ－ｕｐ　ｅｎｅｒｇｙ．@KEY()↓
+◆Ｂｕｔ　ｄｏｎ’ｔ　ｗｏｒｒｙ，　Ｉ　ｗｏｎ’ｔ　ｃｏｍｅ　ａｆｔｅｒ　ｙｏｕ．@KEY()↓
+◆Ｕｎｌｅｓｓ　ｙｏｕ’ｒｅ　ｋｉｎｄａ　ｉｔｃｈｉｎ’　ｆｏｒ　ａ　ｆｉｇｈｔ．．．
+@KEYNP()
+;jpn:◆おれ　ようじんぼうを↓
+;jpn:　やめてから↓
+;jpn:　ちからが　あまっちゃってさ。@KEY()↓
+;jpn:◆いや@WI(15)　ちからじまんを↓
+;jpn:　しただけさ。@WI(20)↓
+;jpn:　ついていかないよ。@KEY()↓
+;jpn:◆ちょっと　きたい↓
+;jpn:　した？@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル47階／エレベーター内
+;@Person:エレベーターガール
+;@Figure:ＯＬＦ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_ELEVGIRL_DOWN
+MSG_FOUR_ELEVGIRL_DOWN;
+;下りエレベーター
+@CHKFGOTO(FLG_TEMP_9,_FOUR_ELEVGIRL_DOWN_TEMP)
+◆Ｔｈｉｓ　ｅｌｅｖａｔｏｒ　ｉｓ　ｇｏｉｎｇ　ｄｏｗｎ．@KEY()↓
+◆Ｌｏｏｋ，　ｄｏｎ’ｔ　ｓｔａｎｄ　ｂｅｈｉｎｄ　ｍｅ　ａｎｄ　ｓｔａｒｅ　ａｔ　ｍｙ　ｈｉｐｓ！
+@KEYNP()
+;jpn:◆エレベーターは　これから↓
+;jpn:　したに　さがります。@KEY()↓
+;jpn:◆うしろにくっついて↓
+;jpn:　ヒップを　ちらちらみないでね。@KEY()
+@CLOSEALL()
+@SET_CHAR_DIR(PRSN_FRSD_BUIL_1F_ELEV_A,DIR_M_UP);後ろを向く
+@BGMSTART(0,BGM_eldown)
+@MOVE_GOM_CHAR(GOM_HIT_CHR2,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
+@FRESH_PLAYER(PC_ALL)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_ELEVATER_DOWN,OBJFX_SHOW_NONE)
+@WAITSYS()
+@BGMSTART(0,BGM_elstop)
+@WI( 90 )	;エレベータ到着音終了待ち
+@SET_CAMERA_PARTY()
+@COLD_PLAYER(PC_ALL)
+@HIDE_GOM_CHAR(GOM_HIT_CHR2,OBJFX_HIDE_NONE)
+@SETF(FLG_FOUR_ELEV)
+@SETF(FLG_TEMP_9)
+』
+_FOUR_ELEVGIRL_DOWN_TEMP;
+◆Ｇｒｏｕｎｄ　ｆｌｏｏｒ．
+@KEYNP()
+;jpn:◆１かいでございます。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル47階／ポーキーの部屋
+;@Person:出世したポーキー
+;@Figure:太ったポーキー
+;@AppearanceKey:FLG_FOUR_OK/off
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_POKEY
+MSG_FOUR_POKEY;
+@CHKFGOTO(FLG_WIN_MANIMANI,_FOUR_POKEY_LATER)
+;どういうわけなのだろう、いつのまにかフォーサイドＮＯ１の
+;権力者モノトリー氏にとりいって、養子のようになっている。ひとまわり
+;デブになってタキシード（チェックとかストライプの異様なもの）、蝶タイで
+;まるで漫才師のようだ。
+_FOUR_POKEY_MAIN;
+◆Ｏｏｏｏ　ｌａ　ｌａ．@KEY()↓
+◆Ｔｈｉｓ．．．ｔｈｉｓ　ｉｓ　ｍｙ　ｐｏｏｒ　ｏｌｄ　ｆｒｉｅｎｄ．．．@KEY()↓
+◆Ａｈ．．．ｗｈａｔ’ｓ　ｙｏｕｒ　ｎａｍｅ．．．@KEY()↓
+;jpn:◆ウーララ　これはこれは↓
+;jpn:　むかしの　まずしいゆうじんの↓
+;jpn:　えーと　なんてったかな‥‥@KEY()↓
+@SET_LOOPREG(PC_NESS)
+@GOSUB(MSG_SUB_Q_DEAD)
+@FALSE_GOTO(_FOUR_POKEY_NESS_ALIVE)
+
+;ネス以外の時挿入
+◆Ａｈ，　Ｐｉｇ’ｓ　Ｂｕｔｔ．．．@KEY()↓
+◆Ｎｏ，　Ｙｏｕ’ｒｅ　@DSP_NAME(PC_NESS)’ｓ　ｆｒｉｅｎｄ．@KEY()↓
+◆Ｐｉｇ’ｓ　Ｂｕｔｔ，　ｙｏｕ　ｃａｍｅ　ｈｅｒｅ　ｔｏ　ｂｅｇ　ｍｅ　ｆｏｒ　ｓｏｍｅ　ｍｏｎｅｙ，　ｒｉｇｈｔ？
+@KEY()↓
+;jpn:◆ぶたのけつくん‥‥じゃなくて↓
+;jpn:　そうそう　@DSP_STS(STS_PC_NAME_NES)くん@KEY()↓
+;jpn:◆の　ともだちの↓
+;　ぶたのけつの　ゴミくんたち。@WI(20)↓
+;jpn:　ぶたのけつの　ゴミくん。@WI(20)↓
+;jpn:　ものごいにでも　きたのかな？@KEY()↓
+@GOTO(_FOUR_POKEY_NESS_MAIN)
+
+_FOUR_POKEY_NESS_ALIVE;
+◆Ｐｉｇ’ｓ　Ｂｕｔｔ．．．ｎｏ　ｎｏ，　@DSP_NAME(PC_NESS)！@KEY()↓
+◆Ｄｉｄｎ’ｔ　ｙｏｕ　ｃｏｍｅ　ｈｅｒｅ　ｔｏ　ｂｅｇ　ｍｅ　ｆｏｒ　ｓｏｍｅ　ｍｏｎｅｙ？
+@KEY()↓
+;jpn:◆ぶたのけつくん‥‥じゃなくて↓
+;jpn:　そうそう　@DSP_STS(STS_PC_NAME_NES)くん！@WI(30)↓
+;jpn:　ものごいにでも　きたのかな？@KEY()↓
+_FOUR_POKEY_NESS_MAIN;
+◆Ｏｏｏｏ　ｌａ　ｌａ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｒｅｃｏｇｎｉｚｅ　ｍｅ？@KEY()↓
+◆Ｉ’ｍ　Ｍａｓｔｅｒ　Ｐｏｋｅｙ！@KEY()↓
+◆Ｐｏｋｅｙ！@KEY()↓
+◆Ｇｅｔ　ｉｔ？@KEY()↓
+◆Ｉ’ｍ　ｎｏｗ　Ｇｅｌｄｅｇａｒｄｅ　Ｍｏｎｏｔｏｌｉ’ｓ　ｐａｒｔｎｅｒ，@KEY()↓
+◆ａｎｄ　Ｉ　ｇｉｖｅ　ｈｉｍ　ｐｏｌｉｔｉｃａｌ　ａｎｄ　ｅｃｏｎｏｍｉｃ　ａｄｖｉｃｅ．@KEY()↓
+◆Ｉ　ｈｅａｒｄ　ｔｈｅｒｅ　ｗｅｒｅ　ｓｏｍｅ　ｒａｔｔｙ－ｌｏｏｋｉｎｇ　ｋｉｄｓ　ａｓｋｉｎｇ　ｆｏｒ　Ｍｒ．　Ｍｏｎｏｔｏｌｉ．．．@KEY()↓
+;jpn:◆ウーララ　ぼくが　だれだか↓
+;jpn:　わからないのかな？↓
+;jpn:　ポーキーさんだよ。ぽーきー！@KEY()↓
+;jpn:◆いまは　モノモッチ・モノトリーの↓
+;jpn:　パートナーとして@KEY()↓
+;jpn:◆せいじや↓
+;jpn:　けいざいに　かんするアドバイスを↓
+;jpn:　している　せいかつさ。@KEY()↓
+;jpn:◆みすぼらしいガキどもが@KEY()↓
+;jpn:◆ミスター・モノトリーのことを↓
+;jpn:　かぎまわってるという↓
+;jpn:　じょうほうが　あったが‥‥@KEY()↓
+@SET_LOOPREG(PC_NESS)
+@GOSUB(MSG_SUB_Q_DEAD)
+@TRUE_GOTO(_FOUR_POKEY_NESS_DEAD)
+◆Ｗａｓ　ｔｈａｔ　ｙｏｕ　@DSP_NAME(PC_NESS)？@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)！　きみだったのか？！@KEY()↓
+_FOUR_POKEY_NESS_DEAD;
+◆Ｔｈｉｓ　ｉｓｎ’ｔ　ａ　ｐｌａｃｅ　ｆｏｒ　ｔｈｅ　ｌｉｋｅｓ　ｏｆ　ｙｏｕ！@KEY()↓
+◆Ｇｅｔ　ｏｕｔｔａ　ｈｅｒｅ！　　Ｎｏｗ，　ｌｏｓｅｒ！
+@KEY()
+;jpn:◆ここは　おまえみたいなチビスケの↓
+;jpn:　こられるところじゃない！@KEY()↓
+;jpn:◆ぼくの　しかいから　きえろ！@KEY()
+@CLOSEALL()
+@GOTO(MSG_EVT_70_POKEY)
+
+_FOUR_POKEY_LATER;ポーキーのセリフ替え（いちごとうふ）
+@CHKFGOTO(FLG_FOUR_POKEY,_FOUR_POKEY_MAIN)
+◆Ｏｏｏｏ　ｌａ　ｌａ．@KEY()↓
+◆Ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｂｅ　ｓａｔｉｓｆｉｅｄ　ｗｉｔｈ　ｅａｔｉｎｇ　ｊｕｓｔ　ｓｏｍｅ　ｍｏｒｅ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)．@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｓｏ　ｏｕｔ　ｏｆ　ｉｔ．@KEY()↓
+◆Ｉ’ｖｅ　ｏｒｄｅｒｅｄ　”Ｔｒｏｕｔ－ｆｌａｖｏｒｅｄ　Ｙｏｇｕｒｔ．”@KEY()↓
+◆Ｉｔ’ｓ　ｖｅｒｙ　ｐｏｐｕｌａｒ　ａｍｏｎｇ　ｇｏｕｒｍｅｔｓ．@KEY()↓
+◆Ａｒｅｎ’ｔ　　ｙｏｕ　ｊｅａｌｏｕｓ　ｔｈａｔ　Ｉ　ｇｅｔ　ｔｏ　ｅａｔ　ｓｕｃｈ　ａ　ｔｏｎｇｕｅ－ｔｉｃｋｌｉｎｇ　ｔｒｅａｔ？@KEY()↓
+◆Ｈａ　ｈａ　ｈａ！@KEY()↓
+◆”Ｔｒｏｕｔ－ｆｌａｖｏｒｅｄ　Ｙｏｇｕｒｔ”．．．Ｏｏｏｏ，　Ｉ　ｃａｎ’ｔ　ｗａｉｔ！@KEY()↓
+◆Ｉ’ｍ　ｓｔａｒｔｉｎｇ　ｔｏ　ｄｒｏｏｌ　ａｌｌ　ｏｖｅｒ　ｍｙｓｅｌｆ　ｊｕｓｔ　ｔｈｉｎｋｉｎｇ　ａｂｏｕｔ　ｉｔ．
+@KEYNP()
+;jpn:◆ウーララ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)なんかで↓
+;jpn:　まんぞくしている　こせがれくん。@KEY()↓
+;jpn:◆ぼくは　いま　メイドに↓
+;jpn:　グルメのあいだで↓
+;jpn:　だいひょうばんの@KEY()↓
+;jpn:◆「いちごとうふ」を↓
+;jpn:　リクエストした　ところさ。@KEY()↓
+;jpn:◆そんな　おやつを↓
+;jpn:　たべられる　ぼくが↓
+;jpn:　うらやましいかい？@KEY()↓
+;jpn:◆ヒャッ　ヒャッ　ヒャ！@WI(15)↓
+;jpn:　「いちごとうふ」@WI(15)↓
+;jpn:　‥‥まだかなー@KEY()↓
+;jpn:◆あー　よだれがでちゃう。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル47階／ミンチの部屋
+;@Person:出世したミンチ
+;@Figure:ミンチ
+;@AppearanceKey:FLG_FOUR_OK/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_POKEY_OYAZI
+MSG_FOUR_POKEY_OYAZI;
+@SET_LOOPREG(PC_NESS)
+@GOSUB(MSG_SUB_Q_DEAD)
+@TRUE_GOTO(_FOUR_POKEY_OYAZI_NESS_DEAD)
+◆Ｙｏｕ　ｈａｖｅｎ’ｔ　ｃｈａｎｇｅｄ　ｍｕｃｈ，　@DSP_NAME(PC_NESS)．@KEY()↓
+;jpn:◆あいかわらずだな　@DSP_STS(STS_PC_NAME_NES)くん。@KEY()↓
+@GOTO(_FOUR_POKEY_OYAZI_NESS_ALIVE)
+
+_FOUR_POKEY_OYAZI_NESS_DEAD;ネス死に以外の時
+◆Ｈａｖｅ　Ｉ　ｍｅｔ　ｙｏｕ　ｂｅｆｏｒｅ？@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｊｕｓｔ　ａｎｎｏｙｉｎｇ　ｋｉｄｓ　ｔｏ　ｍｅ．．．@KEY()↓
+;jpn:◆しょたいめんだったかな？↓
+;　こうるさい　ガキのみなさん。@KEY()↓
+;jpn:　こうるさい　ガキンチョさん。@KEY()↓
+_FOUR_POKEY_OYAZI_NESS_ALIVE;
+◆Ｉ’ｍ　Ａｌｏｙｓｉｕｓ　Ｍｉｎｃｈ，　Ｐｏｋｅｙ’ｓ　ｄａｄ．@KEY()↓
+◆Ｄｕｅ　ｔｏ　ｍｙ　ｓｏｎ’ｓ　ｓｕｃｃｅｓｓ，　Ｉ　ｎｏｗ　ｌｉｖｅ　ｔｈｅ　ｌｉｆｅ　ｏｆ　ａ　ｒｉｃｈ　ｍａｎ．@KEY()↓
+◆”Ｅｖｅｒｙ　ｄｏｇ　ｈａｓ　ｉｔｓ　ｄａｙ．．．”@KEY()↓
+◆Ｔｈａｔ’ｓ　ｔｈｅ　ｐｅｒｆｅｃｔ　ｐｒｏｖｅｒｂ　ｔｏ　ｄｅｓｃｒｉｂｅ　ｍｅ！@KEY()↓
+◆ＨＡ！　Ｈａｈａ！　ｈａｈａｈａ！　　ｈｏｈｏｈｏｈｏ！@KEY()↓
+◆ＧＷＡ　ＨＡ　Ｈａ　Ｈａ　ｈａｈａｈａｈａ！@KEY()↓
+◆Ｈｅｅ　ｈａ　ｈａｈａ　ｈｅｈｅ　ｈａｈａ！@KEY()↓
+◆Ｈａ　ｈａｈａｈａ．．．＊ｃｏｕｇｈ，ｃｏｕｇｈ，↓
+　　ＣＯＯＯＯＵＧＨ！＊@KEY()↓
+◆Ｏｏｏｏ．．．ｍｙ　ｊａｗ　ｉｓ　ｔｉｒｅｄ！
+@KEYNP()
+;jpn:◆ポーキーのちちおやの↓
+;jpn:　アンブラミだよ。@KEY()↓
+;jpn:◆むすこの　さいかくのおかげで↓
+;jpn:　おれも　リッチマンのなかまいり。@WI(20)↓
+;jpn:　にくまれっこ　よにはばかる‥‥@KEY()↓
+;jpn:◆そんな　すばらしいコトバも↓
+;jpn:　あったっけ。@WI(15)↓
+;jpn:　ヌハハハハハハハハハ　ヌハヌハヌ@KEY()↓
+;jpn:◆ハハハハハハハハハハハハハハハハ↓
+;jpn:　ハハハハハハハハハハハハハハハハ↓
+;jpn:　ハ・・ああ@WI(15)　あごがつかれた。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル47階／プライベートエレベーター
+;@Person:エレベーターガール
+;@Figure:ＯＬＦ
+;@AppearanceKey:FLG_FOUR_MAID_THANKS/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_ELEVGIRL_PRIVATE
+MSG_FOUR_ELEVGIRL_PRIVATE;＃
+;いちごとうふ後、プライベートエレベータに出現
+@CHKFGOTO(FLG_TEMP_9,_FOUR_ELEVGIRL_PRIVATE_TEMP)
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_ELEVGIRL_PRIVATE_LATER)
+◆Ｓｈｈｈ！　Ｑｕｉｅｔ！↓
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+　　Ａｒｅｎ’ｔ　ｙｏｕ　@DSP_NAME(0)？@KEY()↓
+◆Ｍｒ．　Ｍｏｎｏｔｏｌｉ’ｓ　ｍａｉｄ，　Ｅｌｅｃｔｒａ，　ｔｏｌｄ　ｍｅ　ａｂｏｕｔ　ｙｏｕ．@KEY()↓
+◆Ｉ’ｌｌ　ｔａｋｅ　ｙｏｕ　ｔｏ　Ｍｒ．　Ｍｏｎｏｔｏｌｉ’ｓ　ｏｆｆｉｃｅ　ｏｎ　ｔｈｅ　４８ｔｈ　ｆｌｏｏｒ．@KEY()↓
+◆Ｏｎｌｙ　ｙｏｕ　ｍａｙ　ｇｏ．@KEY()
+;jpn:◆しっ　しずかに！@WI(15)↓
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+;jpn:　@DSP_NAME(0)さんでしょ。@WI(15)↓
+;jpn:◆あなたのことは↓
+;jpn:　メイドの　エツコさんから↓
+;jpn:　きいているわ。@KEY()↓
+;jpn:◆とくべつに　モノトリーさんのいる↓
+;jpn:　４８かいまで　エレベーターを↓
+;jpn:　うごかすわ。@KEY()
+_FOUR_ELEVGIRL_PRIVATE_MAIN;
+@CLOSEALL()
+@SET_CHAR_DIR(PRSN_FRSD_BUIL_47F_PELEV_A,DIR_M_UP);後ろを向く
+@BGMSTART(0,BGM_elup)
+@MOVE_GOM_CHAR(GOM_HIT_CHR2,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
+@FRESH_PLAYER(PC_ALL)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_ELEVATER_UP,OBJFX_SHOW_NONE)
+@WAITSYS()
+@BGMSTART(0,BGM_elstop)
+@WI( 90 )	;エレベータ到着音終了待ち
+@SET_CAMERA_PARTY()
+@COLD_PLAYER(PC_ALL)
+@HIDE_GOM_CHAR(GOM_HIT_CHR2,OBJFX_HIDE_NONE)
+@SETF(FLG_FOUR_ELEV)
+@SETF(FLG_TEMP_9)
+』
+_FOUR_ELEVGIRL_PRIVATE_TEMP;＃
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_ELEV_PRIVATE_LATER_TMP)
+◆４８ｔｈ　ｆｌｏｏｒ．@KEY()↓
+◆Ａ　ｒｏｂｏｔ　ｂｏｄｙｇｕａｒｄ　ｉｓ　ｐａｔｒｏｌｌｉｎｇ　ｔｈｅ　ｆｌｏｏｒ．@KEY()↓
+◆Ｂｅ　ｃａｒｅｆｕｌ！
+@KEYNP()
+;jpn:◆さあ　４８かいよ。@KEY()↓
+;jpn:◆このフロアには↓
+;jpn:　ようじんぼうロボットが↓
+;jpn:　うろうろしているわ。@KEY()↓
+;jpn:◆ちゅういしてね！@KEYNP()
+』
+
+_FOUR_ELEVGIRL_PRIVATE_LATER;
+◆Ｔｈｉｓ　ｅｌｅｖａｔｏｒ　ｇｏｅｓ　ｔｏ　ｔｈｅ　ｔｏｐ　ｏｆ　ｔｈｉｓ　ｂｕｉｌｄｉｎｇ，　ｔｈｅ　４８ｔｈ　ｆｌｏｏｒ．@KEY()↓
+◆Ｅｎｊｏｙ　ｙｏｕｒ　ｒｉｄｅ，　ｅｖｅｎ　ｔｈｏｕｇｈ　ｉｔ’ｓ　ｏｎｌｙ　ｏｎｅ　ｆｌｏｏｒ．@KEY()
+;jpn:◆このエレベーターは↓
+;jpn:　さいじょうかい↓
+;jpn:　４８かいへ　まいります。@KEY()↓
+;jpn:◆たった　１フロアだけど↓
+;jpn:　すてきなじかんを　すごしてね。@KEY()
+@GOTO(_FOUR_ELEVGIRL_PRIVATE_MAIN)
+
+_FOUR_ELEV_PRIVATE_LATER_TMP;
+◆４８ｔｈ　ｆｌｏｏｒ．
+@KEYNP()
+;jpn:◆４８かいで　ございます。@KEYNP()
+』
+
+MSG_FOUR_GUARD_47_A;ポーキーの部屋のガード
+◆Ｇｅｔ　ａｗａｙ　ｆｒｏｍ　ｍｅ，　ｋｉｄ！
+@KEYNP()
+;jpn:◆ちかよるな　こぞう！@KEYNP()
+』
+
+MSG_FOUR_GUARD_47_B;
+◆Ｙｏｕ　ｗｏｎ’ｔ　ｇｅｔ　ａｗａｙ　ｆｒｏｍ　ｍｅ，　ｋｉｄ！
+@KEYNP()
+;jpn:◆にげるなよ　こぞう！@KEYNP()
+』
+
+;----------------------------------------
+;@Habitat:フォーサイド／ビル48階／プライベートエレベーター
+;@Person:エレベーターガール
+;@Figure:ＯＬＦ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_ELEVGIRL_48PRIVATE
+MSG_FOUR_ELEVGIRL_48PRIVATE;@MiuraAdapted
+@CHKFGOTO(FLG_TEMP_9,_FOUR_ELEVGIRL_48PRIVATE_TEMP)
+@CHKFGOTO(FLG_TLPT_SUMS,_FOUR_48PRV_LATER)
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_ELEVGIRL_48PRIVATE_AFTER)
+;◆しっ　しずかに！@KEY()↓
+;@GET_ORDER_PLAYER(1)
+;@SET_REG(0)
+;　@DSP_NAME(0)さんでしょ。@KEY()↓
+;◆あなたのことは↓
+;　メイドの　エツコさんから↓
+;　きいているわ。@KEY()
+;◆とくべつに　モノトリーさんのいる↓
+;　４８かいまで　エレベーターを↓
+;　うごかすわ。@KEY()
+◆Ｙｏｕ　ｍｉｇｈｔ　ｒｕｎ　ｉｎｔｏ　ｔｈｅ　ｍａｉｄ，　Ｅｌｅｃｔｒａ．@KEY()↓
+◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ　ｙｏｕｒ　ｒｅｌａｔｉｏｎｓｈｉｐ　ｉｓ．．．（ｓｍｉｌｅ）．@KEY()↓
+◆Ｔｈｉｓ　ｅｌｅｖａｔｏｒ　ｔａｋｅｓ　ｙｏｕ　ｔｏ　ｔｈｅ　４７ｔｈ　ｆｌｏｏｒ．
+@KEY()
+;jpn:◆メイドの　エツコさんには↓
+;jpn:　あえたのね。@KEY()↓
+;jpn:◆どういうごかんけい↓
+;jpn:　なのかしらね‥‥あなたがたと。@WI(20)↓
+;jpn:　ウフッ。@KEY()↓
+;jpn:◆４７かいに　まいりーます。@KEY()
+_FOUR_48PRV_MAIN;
+@CLOSEALL()
+@SET_CHAR_DIR(PRSN_FRSD_BUIL_48F_PELEV_A,DIR_M_UP);後ろを向く
+@BGMSTART(0,BGM_eldown)
+@MOVE_GOM_CHAR( GOM_HIT_CHR2, ANIM_STAGE_PARTY, OBJFX_SHOW_NONE )
+@WI( 1 )
+;@SET_CAMERA_PARTY();なんでこーなるノ？（丸田）
+@SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
+@FRESH_PLAYER( PC_ALL )
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_ELEVATER_DOWN,OBJFX_SHOW_NONE )
+@WAITSYS()
+@BGMSTART( 0, BGM_elstop )
+@WI( 90 )	;エレベータ到着音終了待ち
+@SET_CAMERA_PARTY()
+@COLD_PLAYER(PC_ALL)
+@HIDE_GOM_CHAR(GOM_HIT_CHR2,OBJFX_HIDE_NONE)
+@SETF(FLG_FOUR_ELEV)
+@SETF(FLG_TEMP_9)
+』
+_FOUR_ELEVGIRL_48PRIVATE_TEMP;
+◆４７ｔｈ　ｆｌｏｏｒ．
+@KEYNP()
+;jpn:◆４７かいでございます。@KEYNP()
+;◆さあ　４７かいよ。@KEYNP()
+』
+_FOUR_ELEVGIRL_48PRIVATE_AFTER;＃
+◆Ａｒｅ　ｙｏｕ　ａ　ｆｒｉｅｎｄ　ｏｆ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ？@KEY()↓
+◆Ｗｏｕｌｄ　ａｎ　ａｕｔｏｇｒａｐｈ　ｂｅ　ａｓｋｉｎｇ　ｆｏｒ　ｔｏｏ　ｍｕｃｈ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆あなたたち↓
+;jpn:　トンズラブラザーズの↓
+;jpn:　かんけいしゃのかただったの？@KEY()↓
+;jpn:◆サインとか↓
+;jpn:　おねがいしたら↓
+;jpn:　しつれいよね？@KEY()↓
+;jpn:　　<しつれい>　　<そうでもない>
+@DSP_ITEM(2)
+@SELGOTO(_FOUR_48PRV_YES,_FOUR_48PRV_NO)
+_FOUR_48PRV_NO;
+_FOUR_48PRV_YES;
+◆Ｉ　ｄｏｎ’ｔ　ｍｅａｎ　ｙｏｕｒ　ａｕｔｏｇｒａｐｈ，　ｓｉｌｌｙ．
+@KEYNP()
+;jpn:◆あなたたちの↓
+;jpn:　サインが↓
+;jpn:　ほしいわけじゃないのよ。@KEY()
+@CLOSEALL()
+@SET_CHAR_DIR(PRSN_FRSD_BUIL_48F_PELEV_A,DIR_M_UP);後ろを向く
+@BGMSTART(0,BGM_eldown)
+@MOVE_GOM_CHAR(GOM_HIT_CHR2,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
+@FRESH_PLAYER(PC_ALL)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_ELEVATER_DOWN,OBJFX_SHOW_NONE)
+@WAITSYS()
+@BGMSTART(0,BGM_elstop)
+@WI( 90 )	;エレベータ到着音終了待ち
+@SET_CAMERA_PARTY()
+@COLD_PLAYER(PC_ALL)
+@HIDE_GOM_CHAR(GOM_HIT_CHR2,OBJFX_HIDE_NONE)
+@SETF(FLG_FOUR_ELEV)
+@SETF(FLG_TEMP_9)
+』
+_FOUR_48PRV_LATER;
+◆Ｔｈｉｓ　ｅｌｅｖａｔｏｒ　ｔａｋｅｓ　ｙｏｕ　ｔｏ　ｔｈｅ　４７ｔｈ　ｆｌｏｏｒ．
+@KEYNP()
+;jpn:◆このエレベーターは↓
+;jpn:　４７かいへ　まいります。@KEY()
+@GOTO(_FOUR_48PRV_MAIN)
+
+;@Habitat:フォーサイド／ビル48階／メイドの部屋
+;@Person:メイド
+;@Figure:ウェートレスＢ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_MAID_48
+MSG_FOUR_MAID_48;
+@CHKFGOTO(FLG_WIN_GIEGU,_FOUR_MAID_48_2)
+@CHKFGOTO(FLG_TEMP_1,_FOUR_MAID_48_0)
+@CHKFGOTO(FLG_FOUR_MAID_48,_FOUR_MAID_48_2)
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_FOUR_MAID_48_0)
+@GOODSIN_PLAYER(0,GDS_FOOD_ICHIGO_TOFU)
+◆Ｙｏｕｒ　Ｔｒｏｕｔ－ｆｌａｖｏｒｅｄ　ｙｏｇｕｒｔ，　ｓｉｒ．@KEY()
+;＠ポーラｍａ’ａｍ？三浦
+;jpn:◆はい。@WI(15)　いちごとうふ。@KEY()
+@SETF(FLG_FOUR_MAID_48)
+@SETF(FLG_TEMP_1)
+@GOSUB(MSG_SUB_GETGOODS)@KEY()↓
+_FOUR_MAID_48_0;
+◆Ｍａｓｔｅｒ　Ｐｏｋｅｙ’ｓ　ｃｏｏｌ！@KEY()↓
+◆Ｈｅ　ｇａｖｅ　ｍｅ　ｓｏｍｅｔｈｉｎｇ　ｔｈｅ　ｏｔｈｅｒ　ｄａｙ，　ａｎｄ　ｓａｉｄ　”ｔｈｉｓ　ｉｓ　ｆｉｔ　ｆｏｒ　ａ　ｍａｉｄ．．．”
+@KEYNP()
+;jpn:◆ポーキーさまって　すてき。↓
+;jpn:　このまえ　わたしに↓
+;jpn:　おみやげを　くださって@KEY()↓
+;jpn:◆メイドのみやげだよ‥‥ですって。↓
+;jpn:　にっぽんの　ことわざと　えいごを↓
+;jpn:　ミックスしたジョークでしょ。@KEYNP()
+』
+
+_FOUR_MAID_48_2;
+◆Ｔｈａｎｋｓ　ｆｏｒ　ｄｒｏｐｐｉｎｇ　ｂｙ，　ｅｖｅｎ　ｔｈｏｕｇｈ　ｔｈｅｒｅ’ｓ　ｎｏｔｈｉｎｇ　ｔｏ　ｄｏ，　ｈｏｎｅｙ．
+@KEYNP()
+;jpn:◆ようじもないのに↓
+;jpn:　よくたずねてきて　くれるわね。@WI(20)↓
+;jpn:　カワイイひと@GOSUB(MSG_SUB_TATI)！@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル48階／モノトリーの部屋
+;@Person:モノモッチ・モノトリー
+;@Figure:モノトリー氏
+;@AppearanceKey:FLG_PU/off
+;@ActionScript:◆怯え
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_MONOTOLY_1
+MSG_FOUR_MONOTOLY_1;
+;もともとずるくて弱々しいひくつな男だったが、「マニマニの
+;あくま」を手に入れたことで、とてつもないパワーを得た。しかし、「マニ…」
+;が破壊されたとたんに、もとの只のひくつな男に戻ってしまった。
+;※この部屋のひとつ手前のユダンロボを倒すとカギが手に入り、部屋をあける
+;とポーラといっしょにブルブルふるえている。
+@CHKFGOTO(FLG_FOUR_HELI_DISAPPEAR,_FOUR_MONOTOLY_LATER2)
+@CHKFGOTO(FLG_POLA_1,_FOUR_MONOTOLY_LATER)
+◆Ｌｏｏｋ　ａｔ　ｍｙ　ｓｋｉｎｎｙ　ａｒｍｓ，@KEY()↓
+◆ｔｈｉｎ　ｂｏｄｙ，@KEY()↓
+◆Ａｎｄ　ｇｒａｙ　ｈａｉｒ．．．@KEY()↓
+◆Ｉ’ｖｅ　ｂｅｃｏｍｅ　ｓｏ　ｗｅａｋ　ｓｉｎｃｅ　Ｉ　ｌｏｓｔ　ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　Ｓｔａｔｕｅ．@KEY()↓
+◆Ｉ’ｍ　ｓｏｒｒｙ　Ｉ　ｋｉｄｎａｐｐｅｄ　@DSP_NAME(PC_PAULA)．@KEY()↓
+◆Ｉ　ｈａｖｅｎ’ｔ　ｄｏｎｅ　ａｎｙｔｈｉｎｇ　ｔｏ　ｈｅｒ．@KEY()↓
+◆．．．@DSP_NAME(PC_PAULA)　ｉｓ　ａ　ｎｉｃｅ　ｇｉｒｌ．@KEY()
+;jpn:◆この　ほそいうでを　みてくれ。↓
+;jpn:　ほら　うすいむね。↓
+;jpn:　あたまは　しらがで　まっしろだ。@KEY()↓
+;jpn:◆あの「マニマニのあくま」が↓
+;jpn:　なくなってしまった　いまでは↓
+;jpn:　わたしに　なんのパワーもない！@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)を　さらったのは↓
+;jpn:　わるかった。@KEY()↓
+;jpn:◆なんのきがいも　くわえてないし↓
+;jpn:　‥‥@DSP_STS(STS_PC_NAME_PAULA)は↓
+;jpn:　ほんとうに　やさしいこだった。@KEY()↓
+@CLOSEALL()
+@WI(60)
+@SET_CHAR_DIR( PRSN_FRSD_BUIL_48F_MONO_A, DIR_M_RIGHT )
+@WI(10)
+@OPEN( 1 )
+◆@DSP_NAME(PC_PAULA)．@KEY()↓
+◆Ｒｅｔｕｒｎ　ｔｏ　@DSP_NAME(PC_NESS)．@KEY()↓
+◆Ｉ’ｍ　ｓｏｒｒｙ　Ｉ’ｖｅ　ｃｒｅａｔｅｄ　ｓｏ　ｍｕｃｈ　ｔｒｏｕｂｌｅ　ｆｏｒ　ｙｏｕ．
+@KEY()
+;jpn:◆さぁ　@DSP_STS(STS_PC_NAME_PAULA)ちゃん↓
+;jpn:　@DSP_STS(STS_PC_NAME_NES)くんのところに↓
+;jpn:　おもどり。@KEY()↓
+;jpn:◆いろいろ　しんぱいをかけて↓
+;jpn:　ほんとうに↓
+;jpn:　もうしわけなかったね。@KEY()
+@CLOSEALL()
+@WI(60)
+@GOSUB(MSG_ADD_PAULA_FOUR)
+@SETF(FLG_POLA_1)
+@CLRF(FLG_GLOBAL_POLA_KIDNAPPED);誘拐中
+@GET_CHAR_DIR( PRSN_FRSD_BUIL_48F_MONO_A, 1, PC_ALL )	;パーティの方を向く
+@SET_CHAR_DIR( PRSN_FRSD_BUIL_48F_MONO_A, 0)
+;------------
+@MUSISTART()
+;------------
+@WI( 120 )
+@OPEN(1)
+_FOUR_MONOTOLY_1_MAIN;繰りかえし位置
+◆．．．．．@KEY()↓
+◆Ｉ’ｌｌ　ｔｅｌｌ　ｙｏｕ　ｅｖｅｒｙｔｈｉｎｇ．@KEY()↓
+◆Ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　Ｓｔａｔｕｅ　ｃｒｅａｔｅｓ　ａｎ　ｉｌｌｕｓｉｏｎ．@KEY()↓
+◆Ｉｔ　ａｔｔｒａｃｔｓ　ｅｖｉｌ　ｓｐｉｒｉｔｓ　ａｎｄ　ｗｅａｋｅｎｓ　ｙｏｕｒ　ｈｅａｒｔ．@KEY()↓
+◆Ｔｈｅ　ｐｏｗｅｒ　ｓｃａｒｅｄ　ｍｅ　ｓｏ　ｍｕｃｈ，　Ｉ　ｈｉｄ　ｔｈｅ　ｓｔａｔｕｅ　ｉｎ　ｔｈｅ　ｗａｒｅｈｏｕｓｅ　ａｔ　Ｊａｃｋｉｅ’ｓ　Ｃａｆｅ．@KEY()↓
+◆Ｉ　ｏｆｔｅｎ　ｗｅｎｔ　ｔｈｅｒｅ　ｔｏ　ｐｒａｙ．@KEY()↓
+◆．．．@KEY()↓
+◆Ｃｒｙｐｔｉｃ　ｗｏｒｄｓ　ａｐｐｅａｒｅｄ　ｔｏ　ｍｅ　ｗｈｉｌｅ　Ｉ　ｗａｓ　ｉｎ　ｔｈｅ　ｉｌｌｕｓｉｏｎ．@KEY()↓
+◆@DSP_NAME(PC_NESS)，　ｙｏｕｒ　ｎａｍｅ　ａｐｐｅａｒｅｄ　ｉｎ　ｔｈｅ　ｃｒｙｐｔｉｃ　ｍｅｓｓａｇｅｓ．@KEY()↓
+◆”Ｓｔｏｐ　@DSP_NAME(PC_NESS)，　ａｎｄ　ｄｏ　ｓｏ　ｂｙ　ｙｏｕｒ　ｏｗｎ　ｈａｎｄ．”@KEY()↓
+◆Ｏｒ．．．@KEY()↓
+◆”Ｄｏｎ’ｔ　ｌｅｔ　ｔｈｅｍ　ｇｏ　ｔｏ　Ｓｕｍｍｅｒｓ．”@KEY()↓
+◆Ｏｒ．．．@KEY()↓
+◆”Ｍａｋｅ　ｓｕｒｅ　ｔｈｅｙ　ｋｎｏｗ　ｎｏｔｈｉｎｇ　ｏｆ　ｔｈｅ　Ｐｙｒａｍｉｄ”．．．@KEY()↓
+◆Ｉ　ｄｏｎ’ｔ　ｆｕｌｌｙ　ｕｎｄｅｒｓｔａｎｄ　ｔｈｅ　ｍｅｓｓａｇｅｓ，@KEY()↓
+◆ｂｕｔ　ｓｏｍｅｏｎｅ　ｏｂｖｉｏｕｓｌｙ　ｄｏｅｓｎ’ｔ　ｗａｎｔ　ｙｏｕ　ｔｏ　ｇｏ　ｔｏ　Ｓｕｍｍｅｒｓ．@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆わたしのしっていることを↓
+;jpn:　すべて　はなそう。@KEY()↓
+;jpn:◆「マニマニのあくま」は↓
+;jpn:　ひとに　まぼろしを　みせる。@KEY()↓
+;jpn:◆そして　じゃあくなこころを　まし↓
+;jpn:　あくまのパワーを　もたらすのだ。@WI(30)↓
+;jpn:　わたしは　そのちからが　こわくて@KEY()↓
+;jpn:◆ボルヘスのさかばの　そうこに↓
+;jpn:　あれを　かくして↓
+;jpn:　ときどき　おがみに　いっていた。@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆まぼろしのなかには↓
+;jpn:　なぞのようなコトバが↓
+;jpn:　ふくまれていて@KEY()↓
+;jpn:◆そのなかには　@DSP_STS(STS_PC_NAME_NES)くん↓
+;jpn:　きみたちの　なまえもあった。@KEY()↓
+;jpn:◆「@DSP_STS(STS_PC_NAME_NES)を　おまえのてで↓
+;jpn:　くいとめろ」とか‥‥@KEY()↓
+;jpn:◆「サマーズへ　ゆかせるな」とか。↓
+;jpn:　「ピラミッドを　みせるな」‥‥@KEY()↓
+;jpn:◆わたしには　よくわからんが↓
+;jpn:　きみたちを　サマーズに↓
+;jpn:　ゆかせぬように　したいらしい。@KEY()↓
+@WI(60)↓
+◆．．．Ｅｖｉｌ．．．Ｇｉｙｇａｓ．．．ｏｒ　ｓｏｍｅｔｈｉｎｇ．．．Ｉ　ｃｏｕｌｄ　ｈｅａｒ　ｔｈｅ　ｎａｍｅ．．．@KEY()↓
+◆Ａｎｙｗａｙ，　ｔｈｅ　ｅｖｉｌ　ｓｉｄｅ　ｗｏｕｌｄ　ｂｅ　ｉｎ　ｔｒｏｕｂｌｅ　ｉｆ　ｙｏｕ　ｖｉｓｉｔ　Ｓｕｍｍｅｒｓ．．．@KEY()↓
+◆Ｏｈ！，　Ｏｎ　ｔｈｅ　ｃｏｎｔｒａｒｙ，　ｙｏｕ　ｓｈｏｕｌｄ　ｄｅｆｉｎｉｔｅｌｙ　ｇｏ　ｔｏ　Ｓｕｍｍｅｒｓ，@KEY()↓
+◆ｅｓｐｅｃｉａｌｌｙ　ｂｅｃａｕｓｅ　ｔｈｅｙ　ｄｏｎ’ｔ　ｗａｎｔ　ｙｏｕ　ｔｏ　ｍａｋｅ　ｉｔ　ｔｈｅｒｅ．@KEY()↓
+◆．．．@KEY()↓
+◆．．．Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｈｅａｒ　ｔｈｅ　ｗｈｏｌｅ　ｓｔｏｒｙ　ａｇａｉｎ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆‥‥あくまの@WI(20)‥‥ギーグとか@WI(20)‥‥も↓
+;jpn:　きこえたが‥‥@KEY()↓
+;jpn:◆あくまのほうは　きみたちが↓
+;jpn:　サマーズにゆくと　こまるらしい。@WI(20)↓
+;jpn:　‥‥とすれば　ぎゃくに@KEY()↓
+;jpn:◆なんとしても　サマーズに↓
+;jpn:　むかうべきなのだろう。@WI(20)↓
+;jpn:　‥‥‥@KEY()↓
+;jpn:◆‥‥もういちど↓
+;jpn:　はなしたほうがいいか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_FOUR_MONOTOLY_1_MAIN,_FOUR_MONOTOLY_1_NO)
+_FOUR_MONOTOLY_1_NO;
+◆Ｓｕｍｍｅｒｓ　ｉｓ　ｌｏｃａｔｅｄ　ａｃｒｏｓｓ　ｔｈｅ　ｏｃｅａｎ．@KEY()↓
+◆Ｔａｋｅ　ｍｙ　ｈｅｌｉｃｏｐｔｅｒ．@KEY()↓
+◆Ｉ’ｌｌ　ｏｐｅｎ　ｔｈｅ　ｄｏｏｒ　ｔｏ　ｍｙ　ｈｅｌｉｐｏｒｔ．@KEY()
+;jpn:◆サマーズは　うみのむこう。@WI(15)↓
+;jpn:　わたしの　ヘリコプターを↓
+;jpn:　つかってくれ。@KEY()↓
+;jpn:◆ヘリポートを　あけよう。@KEY()
+@CLOSEALL()
+@WI(1)
+;剥製熊を動かしに行く
+@REMOVE_CHAR( PRSN_FRSD_BUIL_48F_MONO_A, ANIM_EVT_MONOTOLY_GO_SWITCH )
+@WAITSYS()
+;熊の剥製をドア前まで動かす
+@REMOVE_CHAR( PRSN_FRSD_BUIL_48F_MONO_3A, ANIM_EVT_MONOKUMA_MOVE )
+@WAITSYS()
+@REMOVE_CHAR( PRSN_FRSD_BUIL_48F_MONO_3A, ANIM_MAPOBJSTILL_LIVE )
+;隠し壁を上げる
+@COLD_CHAR( PRSN_FRSD_BUIL_48F_MONO_A )	;モノトリー凍結
+@BGM_EFFECT( 3 )	;長いフェードアウト
+@WI( 180 )		;ＢＧＭが消えるのを待つ
+@BGMSTART( 0, BGM_unbo )	;「ヴぃいいい…ん。」
+@REMOVE_CHAR( PRSN_FRSD_BUIL_48F_MONO_3B, ANIM_EVT_MONOKABE_MOVE )
+@WAITSYS()
+@REMOVE_CHAR( PRSN_FRSD_BUIL_48F_MONO_3B, ANIM_MAPOBJSTILL )
+@BGM_EFFECT( 2 )	;フェードアウト
+@WI( 30 )		;イフェクト終了待ち
+@SE( SE_se1c_b_my_pray )	;「謎が解けました」音
+@WI( 60 )			;効果音終了待ち
+@MUSISTART()
+;モノトリー持ち場に戻りつつネスに近寄る
+@FRESH_CHAR( PRSN_FRSD_BUIL_48F_MONO_A )
+@WAITSYS()
+@REMOVE_CHAR( PRSN_FRSD_BUIL_48F_MONO_A, ANIM_MAPOBJSTILL )
+@OPEN(1)
+◆Ｙｏｕ　ｍｕｓｔ　ｇｏ　ｏｎ！@KEY()↓
+◆@DSP_NAME(PC_NESS)！@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ｙｏｕｒ　ｄｅｓｔｉｎｙ．@KEY()↓
+;jpn:◆わたしは　もう　つかれた。@WI(20)↓
+;jpn:　きみたちじしんのちからで↓
+;jpn:　きっと　なんとかできるだろう。@KEY()↓
+;jpn:◆そんな　うんめいを↓
+;jpn:　@DSP_STS(STS_PC_NAME_NES)くん！@WI(20)↓
+;jpn:　きみは　もっているらしい。@KEY()↓
+@SETF(FLG_FOUR_STAIRWAY_APPEAR)
+@SETF(FLG_FOUR_MONOTOLY_APPEAR)
+;
+_FOUR_MONOTOLY_LATER;繰りかえし位置
+◆@DSP_STS(STS_PC_NAME_PAULA)，@KEY()↓
+◆Ｉｔ’ｓ　ｔｉｍｅ　ｗｅ　ｓａｉｄ　ｇｏｏｄｂｙｅ．@KEY()↓
+◆Ｔａｋｅ　ｃａｒｅ．
+@KEYNP()
+;jpn:◆じゃ　@DSP_STS(STS_PC_NAME_PAULA)↓
+;jpn:　さよなら↓
+;jpn:　きをつけて　いくんだよ。@KEYNP()
+@CLOSEALL()
+@SETF(FLG_FOUR_MIHARI_1_DISAPPEAR)
+@SETF(FLG_FOUR_MIHARI_2_DISAPPEAR)
+@SETF(FLG_FOUR_MIHARI_3_DISAPPEAR)
+@SETF(FLG_FOUR_MIHARI_4_DISAPPEAR)
+@SETF(FLG_FOUR_MIHARI_5_DISAPPEAR)
+@SETF(FLG_FOUR_YUDANROBO_DISAPPEAR)
+;@SETF(FLG_TEMP_9)
+@SETF(FLG_SYS_MONSTER_OFF)	;ポーキーが去るまでモンスターを出現させない
+@SETF( FLG_SYS_DISTLPT )	;ヘリポートではテレポートを禁ずる
+@SETF(FLG_SYS_DISTLPT_EVENT)	;イベントによるテレポート禁止
+@CLRF(FLG_FOUR_TOPOLO_AB_APPEAR);ロビーの客出現フラグリセット
+』
+_FOUR_MONOTOLY_LATER2;モノトリーポーキー脱出後
+◆Ｐｏｋｅｙ　ｔｏｏｋ　ｔｈｅ　ｈｅｌｉｃｏｐｔｅｒ．．．@KEY()↓
+◆Ｉ　ｈｏｐｅ　ｈｅ’ｓ　ｏｋａｙ．．．
+@KEYNP()
+;jpn:◆ポーキーくんが↓
+;jpn:　ヘリコプターを‥‥@KEY()↓
+;jpn:◆だいじょうぶだろうか‥‥@KEYNP()
+』
+
+
+;@Habitat:フォーサイド／ビル48階／モノトリーの部屋
+;@Person:自慢の剥製
+;@Figure:くま
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:MSG_FOUR_MONOBLDG_BEAR
+;@Message:0
+MSG_FOUR_MONOBLDG_BEAR;
+◆（Ｔｈｉｓ　ｂｅａｒ　ｗｏｎ’ｔ　ａｔｔａｃｋ　ｙｏｕ．@WI(20)↓
+　　Ｈｅ’ｓ　ｓｔｕｆｆｅｄ！）
+@KEYNP()
+;jpn:◆（このくまは　おそいかからない。@WI(20)↓
+;jpn:　なぜならば↓
+;jpn:　はくせい　だからだ）@KEYNP()
+』
+
+;@Habitat:フォーサイド／ビル48階／モノトリーの部屋
+;@Person:捕われのポーラ
+;@Figure:ポーラ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_POLA
+MSG_FOUR_POLA;
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆．．．@DSP_NAME(PC_NESS)！@KEY()↓
+◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｍａｄｅ　ｉｔ　ｈｅｒｅ！@KEY()↓
+◆．．．Ｉ’ｍ　ｆｉｎｅ．@KEY()↓
+◆Ｉ　ｂｅｌｉｅｖｅｄ　ｙｏｕ’ｄ　ｃｏｍｅ　ａｎｄ　ｓａｖｅ　ｍｅ．@KEY()↓
+;jpn:◆‥‥わたしは　だいじょうぶよ。@KEY()↓
+;jpn:◆きっと　あなたが↓
+;jpn:　きてくれると　おもっていた。@KEY()↓
+@WI(60)↓
+◆Ｍｒ．　Ｍｏｎｏｔｏｌｉ　ｉｓｎ’ｔ　ｒｅａｌｌｙ　ａ　ｂａｄ　ｐｅｒｓｏｎ．@KEY()↓
+◆Ｔａｋｅ　ｓｏｍｅ　ｔｉｍｅ　ｔｏ　ｌｉｓｔｅｎ　ｔｏ　ｈｉｍ．
+@KEYNP()
+;jpn:◆モノトリーさんは↓
+;jpn:　ほんとうは↓
+;jpn:　わるいひとじゃないわ。@KEY()↓
+;jpn:◆とにかく　はなしを↓
+;jpn:　きいてあげて。@KEYNP()
+@SETF(FLG_TEMP_9)	;ポーラのセリフをパーティー参加時繰り返さないように
+;@GOSUB(MSG_ADD_PAULA_FOUR)
+;@SETF(FLG_POLA_1)
+』
+
+;@Habitat:フォーサイド／ビル48階／部屋ダンジョン
+;@Person:見張りロボット
+;@Figure:ロボット
+;@AppearanceKey:FLG_FOUR_GUARDROBOT_A_DISAPPEAR/off
+;@ActionScript:◆中範囲うろつきで接触したらMSG_FOUR_GUARD_ROBOT_Aを発行
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_GUARD_ROBOT_A
+MSG_FOUR_GUARD_ROBOT_1;
+;ミハリロボット（ａ～ｅくらい複数配置したい）
+@CHKFGOTO(FLG_FOUR_MIHARI_1_DISAPPEAR,MSG_SYS_HANASU_NG)
+@GOSUB(MSG_FOUR_GUARD_BATTLE)
+@GOSUB(MSG_BATTLE_GUARDROBOT)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+;@CLRF(FLG_FOUR_GUARDROBOT_A_DISAPPEAR)
+@WI(1)
+@REMOVE_CHAR(PRSN_FRSD_BUIL_48F_2_A,ANIM_BLINK_SUICIDE)
+@SETF(FLG_FOUR_MIHARI_1_DISAPPEAR)
+』
+
+MSG_FOUR_GUARD_ROBOT_2;
+@CHKFGOTO(FLG_FOUR_MIHARI_2_DISAPPEAR,MSG_SYS_HANASU_NG)
+@GOSUB(MSG_FOUR_GUARD_BATTLE)
+@GOSUB(MSG_BATTLE_GUARDROBOT)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+;@CLRF(FLG_FOUR_GUARDROBOT_A_DISAPPEAR)
+@WI(1)
+@REMOVE_CHAR(PRSN_FRSD_BUIL_48F_4_A,ANIM_BLINK_SUICIDE)
+@SETF(FLG_FOUR_MIHARI_2_DISAPPEAR)
+』
+
+MSG_FOUR_GUARD_ROBOT_3;
+@CHKFGOTO(FLG_FOUR_MIHARI_3_DISAPPEAR,MSG_SYS_HANASU_NG)
+@GOSUB(MSG_FOUR_GUARD_BATTLE)
+@GOSUB(MSG_BATTLE_GUARDROBOT)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+;@CLRF(FLG_FOUR_GUARDROBOT_A_DISAPPEAR)
+@WI(1)
+@REMOVE_CHAR(PRSN_FRSD_BUIL_48F_PASS_A,ANIM_BLINK_SUICIDE)
+@SETF(FLG_FOUR_MIHARI_3_DISAPPEAR)
+』
+
+MSG_FOUR_GUARD_ROBOT_4;
+@CHKFGOTO(FLG_FOUR_MIHARI_4_DISAPPEAR,MSG_SYS_HANASU_NG)
+@GOSUB(MSG_FOUR_GUARD_BATTLE)
+@GOSUB(MSG_BATTLE_GUARDROBOT)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+;@CLRF(FLG_FOUR_GUARDROBOT_A_DISAPPEAR)
+@WI(1)
+@REMOVE_CHAR(PRSN_FRSD_BUIL_48F_PASS_B,ANIM_BLINK_SUICIDE)
+@SETF(FLG_FOUR_MIHARI_4_DISAPPEAR)
+』
+
+MSG_FOUR_GUARD_ROBOT_5;
+@CHKFGOTO(FLG_FOUR_MIHARI_5_DISAPPEAR,MSG_SYS_HANASU_NG)
+@GOSUB(MSG_FOUR_GUARD_BATTLE)
+@GOSUB(MSG_BATTLE_GUARDROBOT)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+;@CLRF(FLG_FOUR_GUARDROBOT_A_DISAPPEAR)
+@WI(1)
+@REMOVE_CHAR(PRSN_FRSD_BUIL_48F_5_A,ANIM_BLINK_SUICIDE)
+@SETF(FLG_FOUR_MIHARI_5_DISAPPEAR)
+』
+
+MSG_FOUR_GUARD_YUDANROBO;
+;ユダンロボ
+@CHKFGOTO(FLG_FOUR_YUDANROBO_DISAPPEAR,MSG_SYS_HANASU_NG)
+@GOSUB(MSG_FOUR_YUDANROBOT)
+@GOSUB(MSG_BATTLE_YUDANROBOT)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@WI(1)
+@REMOVE_CHAR(PRSN_FRSD_BUIL_48F_ROBO_A,ANIM_BLINK_SUICIDE)
+@SETF(FLG_FOUR_YUDANROBO_DISAPPEAR)
+@SETF(FLG_FOUR_BLDG_TONZURA_APPEAR);→BTLGDS
+;@WARP(WARP_FOUR_YUDAN);トンズラを出現させる;最終戦闘行動でシステムが行う
+』
+MSG_FOUR_YUDANROBOT;ユダンロボのセリフ
+@OPEN(1)
+◆Ｐｉｎｇ！　Ｃｌａｎｋｅｔｙ　ｃｌａｎｋｅｔｙ．．．@KEY()↓
+◆Ｒａｔｔｌｅ，　ｒａｔｔｌｅ　ｄｗｏｕｒｒｒｒｒ！．．．@KEY()↓
+◆Ｓｑｕｅｅｅｅｋ，　ｔｗｅｅｔ　ｔｗｅｅｔ．．．ＣＬＡＮＫ！！
+@KEYNP()
+;jpn:◆ガチャガチャ　ピーピー↓
+;jpn:　ボロボロ　ズルズル@WI(30)↓
+;jpn:　ドンガラガッシャン@WI(15)　ポッ@WI(10)ピー@KEY()
+@CLOSEALL()
+』
+
+MSG_FOUR_GUARD_BATTLE;
+@OPEN(1)
+◆Ｓｅｃｒｅｔ　ｃｏｄｅ，　ｐｌｅａｓｅ．@KEY()↓
+◆Ｓａｙ　ｙｏｕｒ　ｃｏｄｅ　ｉｎ　１０　ｓｅｃｏｎｄｓ．@KEY()↓
+◆１０@WI(50)，　９@WI(45)，　８@WI(40)，　７@WI(35)，　６@WI(30)，　５@WI(25)，　４@WI(20)，　３@WI(15)，　２@WI(10)，　１@WI(10)．
+;jpn:◆アナタノ　コードナンバーヲ↓
+;jpn:　イッテ　クダサイ。@KEY()↓
+;jpn:◆１０ビョウ　イナイニ　イッテ↓
+;jpn:　クダサイ。１０@WI(50)・９@WI(45)・８@WI(40)・７@WI(35)・６@WI(30)・↓
+;　５@WI(25)・４@WI(20)・３@WI(15)・２@WI(10)・１@WI(10)
+@CLOSEALL()
+@!
+
+；----------------------------------------
+;@Habitat:フォーサイド／ホテル／フロント
+;@Person:フロントマン
+;@Figure:おじさんＢ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HOTEL_FOUR
+
+;@Habitat:フォーサイド／ホテル／フロント
+;@Person:ボーイ
+;@Figure:ホテルボーイ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_HOTELPORTER
+MSG_FOUR_HOTELPORTER;
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆@DSP_NAME(0)，　@XCHG()@GOSUB(MSG_ESUB_SIR_MAAM)@KEY()↓
+◆Ａｒｅ　ｙｏｕ　ｓｔａｙｉｎｇ　ｈｅｒｅ　ｔｏｎｉｇｈｔ？@KEY()↓
+◆Ｔｈａｎｋｓ　ｆｏｒ　ｂｅｉｎｇ　ｓｏ　ｇｅｎｅｒｏｕｓ　ｗｉｔｈ　ｙｏｕｒ　ｔｉｐｓ．．．@KEY()↓
+◆．．．Ｙｏｕ　ｎｅｖｅｒ　ｇａｖｅ　ｍｅ　ａ　ｔｉｐ？．．．ｎｅｖｅｒ　ｍｉｎｄ．．．
+@KEYNP()
+;jpn:◆@DSP_NAME(0)さま‥‥↓
+;jpn:　こんやも　おとまりですか。@KEY()↓
+;jpn:◆いつもチップを↓
+;jpn:　ありがとうございます。@KEY()↓
+;jpn:◆‥‥あ　もらってなかったでした。↓
+;jpn:　しつれいしました。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ホテル／フロント
+;@Person:電話
+;@Figure:電話
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+;@Habitat:フォーサイド／ホテル／ＣＤルーム
+;@Person:キャッシュディスペンサ
+;@Figure:ＣＤ
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:MSG_GLOBAL_CD_RECEIVE
+;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
+;@Message:0
+
+;@Habitat:フォーサイド／ホテル／廊下
+;@Person:客
+;@Figure:青年
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_HOTEL_A
+MSG_FOUR_HOTEL_A;
+◆Ｈｅｙ，　ｙｏｕ！．．．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｍｅｅｔ　ａ　ｂｅａｕｔｉｆｕｌ，　ｓｅｄｕｃｔｉｖｅ　ｗｏｍａｎ　ｗｈｏ’ｓ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｍｅ，　ｔｅｌｌ　ｈｅｒ　”ｈｉ．”@KEY()↓
+◆．．．Ａｎｙ　ｗａｙ，　Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ａ　ｗｏｍａｎ　ｌｉｋｅ　ｔｈａｔ　ｗｏｕｌｄ　ｂｅ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｍｅ．．．
+@KEYNP()
+;jpn:◆き　きみ‥‥ぼくをさがしてる↓
+;jpn:　うつくしいじょせいがいたら↓
+;jpn:　よろしくいってくれたまえね。@KEY()↓
+;jpn:◆‥‥そんなひとは↓
+;jpn:　いないとおもうけどさ。@KEYNP()
+』
+
+；----------------------------------------
+;@Habitat:フォーサイド／ボルヘス酒場／酒場
+;@Person:ジャック
+;@Figure:酒場のマスター
+;@AppearanceKey:0
+;@ActionScript:◆止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_BAR_ONEEYEDJACK
+MSG_FOUR_BAR_ONEEYEDJACK;
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_BAR_JACK_LATER)
+◆Ｗｈａｔ？@KEY()↓
+◆Ｄｏｅｓ　Ｍｒ．　Ｇｅｌｄｅｇａｒｄｅ　Ｍｏｎｏｔｏｌｉ　ｃｏｍｅ　ｈｅｒｅ　ｏｆｔｅｎ？@KEY()↓
+◆Ｈｅｌｌｏ！@KEY()↓
+◆Ｔｉｍｅ　ｔｏ　ｇｅｔ　ｕｐ！！@KEY()↓
+◆Ｉｔ　ｃｏｕｌｄ　ｎｅｖｅｒ　ｈａｐｐｅｎ！．．．@KEY()↓
+◆Ｗｅｌｌ，　ａｃｔｕａｌｌｙ　ｔｈａｔ’ｓ　ｎｏｔ　ｔｒｕｅ．
+@KEYNP()
+;jpn:◆なんだって？↓
+;jpn:　モノモッチ・モノトリーさんが↓
+;jpn:　ここに　でいりしてるかって？@KEY()↓
+;jpn:◆こぞう　なにをねぼけているんだ。↓
+;jpn:　そ　そんなこと‥‥あるはずが↓
+;jpn:　なな　ないじゃないか。@KEYNP()
+』
+
+_FOUR_BAR_JACK_LATER;
+◆Ｓｏｒｒｙ　ａｂｏｕｔ　ｔｈｅ　ｏｔｈｅｒ　ｄａｙ．@KEY()↓
+◆Ｔｈｉｓ　ｓｉｄｅｗａｌｋ　ｃａｆｅ　ｉｓｎ’ｔ　ａｓ　ｐｒｏｆｉｔａｂｌｅ　ａｓ　ｉｔ　ｕｓｅｄ　ｔｏ　ｂｅ．@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ｊｕｓｔ　ａ　ｈａｎｇｏｕｔ　ｆｏｒ　ｔｈｅ　ｒｅｇｕｌａｒｓ．
+@KEYNP()
+;jpn:◆いつかは　すまなかった。↓
+;jpn:　このボルヘスのさかばも↓
+;jpn:　いまは　もうけはすくないが@KEY()↓
+;jpn:◆みんなに　よろこばれる↓
+;jpn:　たのしいみせに　なってるよ。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ボルヘス酒場／酒場
+;@Person:（ムーンサイド入り口を塞ぐ）酒場の女房ベティ
+;@Figure:おばさんＣ
+;@AppearanceKey:FLG_FOUR_DEPT_OK/off
+;@ActionScript:◆正面向いてそのまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_BAR_BETTY
+MSG_FOUR_BAR_BETTY;
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_BAR_BETTY_LATER)
+◆Ｋｉｄｓ　ｓｈｏｕｌｄｎ’ｔ　ｂｅ　ｄｒｉｎｋｉｎｇ　ｅｓｐｒｅｓｓｏ！@KEY()↓
+◆Ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｂｅ　ｈａｎｇｉｎｇ　ａｒｏｕｎｄ　ｈｅｒｅ．@KEY()↓
+◆Ｗｈａｔ？@KEY()↓
+◆Ｍｒ．　Ｍｏｎｏｔｏｌｉ’ｓ　ｈｅｒｅ？@KEY()↓
+◆Ｙｏｕ　ｇｏｔ　ｔｈａｔ　ｗｒｏｎｇ，　ｋｉｄ！
+@KEYNP()
+;jpn:◆あんたら　コドモなんだから↓
+;jpn:　さけのめないだろ。↓
+;jpn:　ウロチョロするんじゃないよ。@KEY()↓
+;jpn:◆えっ　モノトリーさんが↓
+;jpn:　このみせに　きてるだろうって？↓
+;jpn:　ひとまちがいだよ！@KEYNP()
+』
+
+;@Habitat:フォーサイド／ボルヘス酒場／酒場
+;@Person:（デパートダンジョンクリア後の）酒場の女房ベティ
+;@Figure:おばさんＣ
+;@AppearanceKey:FLG_FOUR_DEPT_OK/on
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_BAR_BETTY_1
+MSG_FOUR_BAR_BETTY_1;
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_BAR_BETTY_LATER)
+@CHKFGOTO(FLG_FOUR_TONCHIKI,_FOUR_BAR_BETTY_2)
+◆Ｔｈｅｒｅ’ｓ　ａ　ｌｏｕｄ　ｎｏｉｓｅ　ｏｕｔｓｉｄｅ．@KEY()↓
+◆Ｍｕｓｔ　ｂｅ　ｔｈｅ　ｓｅｖｅｎｔｈ　ｉｎｎｉｎｇ　ｓｔｒｅｔｃｈ，@KEY()↓
+◆ａｎｄ　ｔｈｅ　ｆａｎｓ　ａｒｅ　ｓｉｎｇｉｎｇ　”Ｔａｋｅ　ｍｅ　ｏｕｔ　ｔｏ　ｔｈｅ　ｂａｌｌｇａｍｅ”　ａｔ　ｔｈｅ　ｓｔａｄｉｕｍ．
+@KEYNP()
+;jpn:◆なんだか　みせのそとが↓
+;jpn:　さわがしいわねぇ‥‥。@KEY()↓
+;jpn:◆スワローズファンが↓
+;jpn:　「トーキョー　オンド」でも↓
+;jpn:　うたってるのかしら。@KEYNP()
+@SETF(FLG_FOUR_TONCHIKI_APPEAR)
+』
+
+_FOUR_BAR_BETTY_2;
+;トンチキのムーンサイド入り口情報後
+◆Ｋｉｄｓ　ｓｈｏｕｌｄｎ’ｔ　ｄｒｉｎｋ　ｅｓｐｒｅｓｓｏ．　　Ｉｔ’ｌｌ　ｓｔｕｎｔ　ｙｏｕｒ　ｇｒｏｗｔｈ，　ｓｔｕｂｂｙ！@KEY()↓
+◆Ａｎｄ　ｑｕｉｔ　ｈａｎｇｉｎｇ　ｏｕｔ　ａｒｏｕｎｄ　ｈｅｒｅ．@KEY()↓
+◆Ｗｈａｔ？@KEY()↓
+◆Ｍｒ．　Ｍｏｎｏｔｏｌｉ’ｓ　ｈｅｒｅ？@KEY()↓
+◆Ｙｏｕ　ｍｕｓｔ　ｂｅ　ｔｈｉｎｋｉｎｇ　ｏｆ　ｓｏｍｅｏｎｅ　ｅｌｓｅ！
+@KEYNP()
+;jpn:◆あんたら　コドモなんだから↓
+;jpn:　さけのめないだろ。↓
+;jpn:　ウロチョロするんじゃないよ。@KEY()↓
+;jpn:◆えっ　モノトリーさんが↓
+;jpn:　このみせに　きてるだろうって？↓
+;jpn:　ひとまちがいだよ！@KEYNP()
+』
+
+_FOUR_BAR_BETTY_LATER;
+◆Ｇｏｏｄ　ｅｖｅｎｉｎｇ，　ｈｅｒｏ！　　Ｈｏｗ　ａｂｏｕｔ　ａｎ　ｅｓｐｒｅｓｓｏ？
+@KEYNP()
+;jpn:◆こんばんは↓
+;jpn:　えいゆうさんっ！@KEYNP()
+』
+
+
+;@Habitat:フォーサイド／ボルヘス酒場／酒場
+;@Person:客ジミー
+;@Figure:ジミな男
+;@AppearanceKey:0
+;@ActionScript:◆背面向いてそのまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_BAR_JIMMY
+MSG_FOUR_BAR_JIMMY;
+@CHKFGOTO(FLG_WIN_GIEGU,_FOUR_BAR_JIMMY_END)
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_BAR_JIMMY_LATER)
+◆Ｉ’ｍ　ｓｕｒｐｒｉｓｅｄ　ｙｏｕ　ｔａｌｋｅｄ　ｔｏ　ａｎ　ｏｒｄｉｎａｒｙ　ｇｕｙ　ｌｉｋｅ　ｍｅ．@KEY()↓
+◆Ｉ　ｈａｖｅ　ｎｏ　ｉｎｆｏｒｍａｔｉｏｎ　ｏｒ　ｉｔｅｍｓ　ｔｏ　ｈｅｌｐ　ｙｏｕ　ｏｕｔ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｉｔ’ｓ　ｎａｔｕｒａｌ　ｆｏｒ　ａ　ｇｕｙ　ｌｉｋｅ　ｍｅ　ｔｏ　ｂｅ　ｈｅｒｅ？！@KEY()↓
+◆Ｉ　ｅｎｊｏｙ　ｔｈｅ　ａｔｍｏｓｐｈｅｒｅ　ｈｅｒｅ．@KEY()↓
+◆Ｂｙ　ｔｈｅ　ｗａｙ，　ｌｅｔ　ｍｅ　ｑｕｉｚ　ｙｏｕ．@KEY()↓
+◆Ｔｈｅｒｅ　ａｒｅ　５　ａｐｐｌｅｓ．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｅａｔ　ｏｎｅ，　ｈｏｗ　ｍａｎｙ　ａｒｅ　ｌｅｆｔ？@KEY()↓
+◆５　ｍｉｎｕｓ　１　ｉｓ　４．．．ｓｏ　４’ｓ　ｌｅｆｔ．@KEY()↓
+◆．．．Ａｈ，　ｉｔ’ｓ　ｎｏｔ　ｆｕｎｎｙ？　　Ｏｋａｙ，　ｈｅｒｅ’ｓ　ａｎｏｔｈｅｒ　ｏｎｅ．．．@KEY()↓
+◆Ｍａｓｔｅｒ　Ｐｏｋｅｙ’ｓ　ｍａｉｄ　Ｅｌｅｃｔｒａ　ｉｓ　”ｍａｉｄ”　ｔｏ　ｏｒｄｅｒ．．．@KEY()↓
+◆．．．Ｏｈ，　ｐｕｎｓ　ａｒｅｎ’ｔ　ｆｕｎｎｙ　ｅｉｔｈｅｒ．．．．
+@KEYNP()
+;jpn:◆こんなにジミな　このおれに↓
+;jpn:　よく　はなしかけるきになったな。@KEY()↓
+;jpn:◆おれは　なんのじょうほうも↓
+;jpn:　もってないし↓
+;jpn:　やくにたつグッズも　ない。@KEY()↓
+;jpn:◆だけどさー↓
+;jpn:　そんなおとこが　いたって↓
+;jpn:　いいだろう？！@KEY()↓
+;jpn:◆おれは　いいとおもって↓
+;jpn:　ここで　のんでるんだよ。@KEY()↓
+;jpn:◆そうだ。@WI(15)クイズをだそう。@KEY()↓
+;jpn:◆リンゴが５つありました。@KEY()↓
+;jpn:◆ひとつたべたら　のこりは↓
+;jpn:　いくつでしょう？@KEY()↓
+;jpn:◆５ひく１は４で‥‥@WI(15)４こさ。@KEY()↓
+;jpn:◆ああ　ウケない！@WI(15)↓
+;jpn:　カレーは　かれーなぁ‥‥@WI(20)↓
+;jpn:　ダジャレも　ウケないや。@KEYNP()
+』
+
+_FOUR_BAR_JIMMY_LATER;＃
+◆Ｉ’ｖｅ　ｂｅｅｎ　ｔｒｙｉｎｇ　ｔｏ　ｔｈｉｎｋ　ｏｆ　ｓｏｍｅ　ｆｕｎｎｙ　ｊｏｋｅｓ．．．@KEY()↓
+◆Ｉ　ｓｃｒｅａｍ，　ｙｏｕ　ｓｃｒｅａｍ，　ｗｅ　ａｌｌ　ｓｃｒｅａｍ　ｆｏｒ　ｉｃｅ　ｃｒｅａｍ！@KEY()↓
+◆Ｗａａａ　ｈａ　ｈａ　ｈａ　ｈａ　ｈａ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｓｏ　ｆｕｎｎｙ！@KEY()↓
+◆Ｔｈａｔ　ｓｈｏｕｌｄ　ｒｅａｌｌｙ　ｍａｋｅ　ｙｏｕ　ｌａｕｇｈ．@KEY()↓
+◆Ｃ’ｍｏｎ，　ｌａｕｇｈ！@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｈｅａｒ　ａｎｙ　ｆｕｎｎｙ　ｊｏｋｅｓ，　ｂｅ　ｓｕｒｅ　ｙｏｕ　ｌｅｔ　ｌｏｏｓｅ　ａｎｄ　ｌａｕｇｈ．．．@KEY()↓
+◆Ｐｌｅａｓｅ．．．Ｉ’ｍ　ｃｏｕｎｔｉｎｇ　ｏｎ　ｙｏｕ　ｔｏ　ｌａｕｇｈ！@KEY()↓
+◆＊ｂｏｏ　ｈｏｏ　ｈｏｏ＊．．．
+@KEYNP()
+;jpn:◆あれから　ずっと↓
+;jpn:　おもしろいジョークを↓
+;jpn:　かんがえてたんだ。@KEY()↓
+;jpn:◆こんにゃくってさー@WI(30)↓
+;jpn:　きのう　くっても↓
+;jpn:　こんにゃくう！　ワハハハハ‥‥@KEY()↓
+;jpn:◆あー　おかしい！↓
+;jpn:　これは　バカウケまちがいなしだ。@WI(60)↓
+;jpn:　‥‥えっ？！@KEY()↓
+;jpn:◆わらえよう！@WI(20)↓
+;jpn:　おもしろいジョークを　きいたら↓
+;jpn:　もっと　わらえよう！@KEY()↓
+;jpn:◆なぁ‥‥↓
+;jpn:　たのむよ！@WI(15)↓
+;jpn:　シクシク‥‥。@KEYNP()
+』
+_FOUR_BAR_JIMMY_END;＆
+◆Ｈｅｙ，　ｌｏｎｇ　ｔｉｍｅ　ｎｏ　ｓｅｅ！@KEY()↓
+◆Ｉ’ｖｅ　ｔｈｏｕｇｈｔ　ｏｆ　ａ　ｎｅｗ　ｊｏｋｅ　ｓｉｎｃｅ　ｂｅｆｏｒｅ．．．@KEY()↓
+◆Ｋｎｏｃｋ，ｋｎｏｃｋ！．．．（ｗｈｏ’ｓ　ｔｈｅｒｅ？）@KEY()↓
+◆Ｓａｗｙｅｒ．．．（Ｓａｗｙｅｒ　ｗｈｏ？）@KEY()↓
+◆Ｓａｗｙｅｒ　ｄｏｉｎ’　ｗｅｌｌ，　Ｉ’ｍ　ｆｉｎｅ，　ｔｏｏ！@KEY()↓
+◆Ｂａａａ　ｈａ　ｈａ　ｈａ！．．．@KEY()↓
+◆．．．Ｙｏｕ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｉｔ’ｓ　ｆｕｎｎｙ？@KEY()↓
+◆Ｉ　ｒｅａｌｌｙ　ｔｈｏｕｇｈｔ　ｔｈｉｓ　ｗｏｕｌｄ　ｂｅ　ｆｕｎｎｙ　ｔｏ　ｙｏｕ．@KEY()↓
+◆Ｎｏｗ　ｍｙ　ｓｅｌｆ　ｃｏｎｆｉｄｅｎｃｅ　ｉｓ　ＴＯＴＡＬＬＹ　ｓｈｏｔ！　　Ｂａｃｋ　ｔｏ　ｔｈｅｒａｐｙ．．．
+@KEYNP()
+;jpn:◆やあ　ひさしぶりだね！@KEY()↓
+;jpn:◆あれから　おれ↓
+;jpn:　ずっと　かんがえてたんだ@WI(15)↓
+;jpn:　あたらしい　ジョーク‥‥@KEY()↓
+;jpn:◆パンのすきなどうぶつは↓
+;jpn:　なんだろう？@WI(60)↓
+;jpn:　‥‥「にんげん」。@KEY()↓
+;jpn:◆「パンダ」ってこたえようと↓
+;jpn:　おもったろう？@KEY()↓
+;jpn:◆その　うらを　かいたんだ。@WI(60)↓
+;jpn:　‥‥これも　うけないの？@KEY()↓
+;jpn:◆おれは↓
+;jpn:　おもしろいと　おもうんだけど。@WI(20)↓
+;jpn:　じしん　なくしちゃったなぁ。@KEYNP()
+』
+
+
+;@Habitat:フォーサイド／ボルヘス酒場／酒場
+;@Person:酒場の客ノック
+;@Figure:酒場の客
+;@AppearanceKey:0
+;@ActionScript:◆正面向いてそのまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_FOUR_BAR_KNOCK
+MSG_FOUR_BAR_KNOCK;
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_BAR_KNOCK_LATER)
+◆Ｉ　ｗａｓ　ｉｎ　ｔｈｅ　ｍｉｄｄｌｅ　ｏｆ　ａ　ｃａｆｆｅｉｎｅ　ｂｕｚｚ，@KEY()↓
+◆ａｎｄ　Ｉ　ｈａｄ　ｔｏ　ｇｅｔ　ｔｏ　ｔｈｅ　ｂａｔｈｒｏｏｍ　ｆａｓｔ！@KEY()↓
+◆Ｗｈｅｎ　Ｉ　ｇｏｔ　ｔｈｅｒｅ，@KEY()↓
+◆Ｉ　ａｃｃｉｄｅｎｔａｌｌｙ　ｋｎｏｃｋｅｄ　ｏｎ　ｔｈｅ　ｗａｌｌ　ｉｎｓｔｅａｄ　ｏｆ　ｔｈｅ　ｒｅｓｔｒｏｏｍ　ｄｏｏｒ．．．@KEY()↓
+◆Ｔｈｅ　ｎｅｘｔ　ｔｈｉｎｇ　Ｉ　ｋｎｅｗ，　ｓｏｍｅｏｎｅ　ａｓｋｅｄ　”Ｗｈｏ　ｉｓ　ｉｔ？”　ａｎｄ　ｒｅａｌｌｙ　ｓｕｒｐｒｉｓｅｄ　ｍｅ！@KEY()↓
+◆Ｍａｙｂｅ　Ｉ　ｊｕｓｔ　ｉｍａｇｉｎｅｄ　ｉｔ？．．．
+@KEYNP()
+;jpn:◆よっぱらってたもんで↓
+;jpn:　トイレとまちがえて↓
+;jpn:　かべをノックしたんだよ。@KEY()↓
+;jpn:◆そしてら「だれだ？！」って↓
+;jpn:　こえがきこえて↓
+;jpn:　ぶったまげたことが　あったな。@KEY()↓
+;jpn:◆きのせい‥‥だったのかなぁ。@KEYNP()
+』
+
+_FOUR_BAR_KNOCK_LATER;
+◆Ｔｈｅ　ｈｉｎｔ　ｔｈａｔ　Ｉ　ｇａｖｅ　ｙｏｕ　ｗａｓ　ｃｒｉｔｉｃａｌ　ｔｏ　ｈｅｌｐｉｎｇ　ｙｏｕ　ｗｉｎ．．．@KEY()↓
+◆Ｈａｐｐｙ　ｈａｐｐｙ！@KEY()↓
+◆Ｗｅ　ｒｏｃｋ！．@KEY()↓
+◆Ｈａ　ｈａ　ｈａ．
+@KEYNP()
+;jpn:◆おまえの　かつやくの　かげには↓
+;jpn:　おれの　じゅうようなヒントが↓
+;jpn:　やくにたってたよなぁ‥‥。@KEY()↓
+;jpn:◆ゆかい　ゆかい。↓
+;jpn:　おれたちは　すごいやつらだ！@WI(15)↓
+;jpn:　なぁ！　ワハハ。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ボルヘス酒場／酒場
+;@Person:客フレーバー
+;@Figure:おじさんＤ
+;@AppearanceKey:0
+;@ActionScript:◆その場でアニメーション
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:SG_FOUR_BAR_ENRICH
+MSG_FOUR_BAR_ENRICH;
+;酒場の客（エンリッチ・フレーバー）
+@CHKFGOTO(FLG_FOUR_OK,_FOUR_BAR_ENRICH_LATER)
+◆Ｉ　ｕｓｅｄ　ｔｏ　ｂｅ　Ｍｏｎｏｔｏｌｉ’ｓ　ｅｍｐｌｏｙｅｒ．@KEY()↓
+◆Ｔｈｅｎ　Ｉ　ｒｅａｌｉｚｅｄ　ｈｉｓ　ｓｃｈｅｍｅｓ　ｍａｄｅ　ｍｙ　ｃｏｍｐａｎｙ　ｇｏ　ｂａｎｋｒｕｐｔ．@KEY()↓
+◆Ｍｙ　ｈｏｕｓｅ　ａｎｄ　ｌａｎｄ　ｗｅｒｅ　ｔａｋｅｎ　ａｗａｙ．．．@KEY()↓
+◆Ｎｏｗ　Ｉ’ｍ　ｈｏｍｅｌｅｓｓ．．．@KEY()↓
+◆Ｍｏｎｏｔｏｌｉ　ｄｉｄｎ’ｔ　ｕｓｅｄ　ｔｏ　ｂｅ　ｓｏ　ｐｏｗｅｒｆｕｌ．@KEY()↓
+◆Ｉ　ｗａｎｔ　ｔｏ　ｆｉｎｄ　ｏｕｔ　ｈｉｓ　ｓｅｃｒｅｔｓ，　ｓｏ　Ｉ’ｍ　ｓｐｅｎｄｉｎｇ　ｍｙ　ｔｉｍｅ　ｈｅｒｅ，@KEY()↓
+◆ｗａｔｃｈｉｎｇ　ｔｏ　ｓｅｅ　ｉｆ　ｈｅ　ｅｖｅｒ　ｄｒｏｐｓ　ｉｎ．
+@KEYNP()
+;jpn:◆わたしは　かつて　モノトリーを↓
+;jpn:　やとっていたものだ。@WI(20)↓
+;jpn:　しかし　いつのまにか@KEY()↓
+;jpn:◆やつの　わるだくみで↓
+;jpn:　かいしゃは　とうさん。@WI(15)↓
+;jpn:　いえも　とちも　とられて‥‥@KEY()↓
+;jpn:◆ホームレスのみぶんだ。@WI(30)↓
+;jpn:　むかしのモノトリーは　あんなに↓
+;jpn:　パワーのあるおとこじゃなかった。@KEY()↓
+;jpn:◆そのひみつを　つきとめようと↓
+;jpn:　ここで　かれがくるのを↓
+;jpn:　みはってるんだ。@KEYNP()
+』
+
+_FOUR_BAR_ENRICH_LATER;
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆Ｉ　ｗａｎｎａ　ｓａｙ　ｔｈａｎｋｓ．@KEY()↓
+◆Ｍｏｎｏｔｏｌｉ　ｄｅｓｔｒｏｙｅｄ　ｍｙ　ｌｉｆｅ．．．ｂｕｔ　Ｉ’ｖｅ　ｄｅｃｉｄｅｄ　ｎｏｔ　ｔｏ　ｂｌａｍｅ　ａｎｙｏｎｅ．@KEY()↓
+◆Ｉ’ｍ　ｈａｖｉｎｇ　ａ　ｗｏｎｄｅｒｆｕｌ　ｔｉｍｅ　ｅａｃｈ　ａｎｄ　ｅｖｅｒｙ　ｄａｙ　ｎｏｗ．@KEY()↓
+◆Ｔｈａｎｋ　ｙｏｕ，　ｔｈａｎｋ　ｙｏｕ！
+@KEYNP()
+;jpn:◆@DSP_NAME(0)くん！@WI(15)↓
+;jpn:　きみに　おれいをいいたい。@WI(20)↓
+;jpn:　モノトリーに　だいなしにされた@KEY()↓
+;jpn:◆わたしの　じんせいだったが‥‥↓
+;jpn:　もう　だれをうらむことも↓
+;jpn:　やめた。@KEY()↓
+;jpn:◆すがすがしい　ひびを↓
+;jpn:　おくっているよ。@WI(20)↓
+;jpn:　ありがとう。　ありがとう。@KEYNP()
+』
+MSG_FOUR_ENRICH_END;＆
+◆Ｙｏｕ’ｖｅ　ｂｒｏｕｇｈｔ　ｔｈｅ　ｔｏｗｎ　ｏｆ　Ｆｏｕｒｓｉｄｅ　ｂａｃｋ　ｔｏ　ｌｉｆｅ．@KEY()↓
+◆Ｉ　ａｐｐｒｅｃｉａｔｅ　ｉｔ　ｆｒｏｍ　ｔｈｅ　ｂｏｔｔｏｍ　ｏｆ　ｍｙ　ｈｅａｒｔ．@KEY()↓
+◆Ｔｈａｎｋ　ｙｏｕ．
+@KEYNP()
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)くん↓
+;jpn:　きみの　おかげで↓
+;jpn:　わたしだけじゃなく@KEY()↓
+;jpn:◆フォーサイドのまち　ぜんたいが↓
+;jpn:　いきをふきかえした↓
+;jpn:　ようなきがする。@KEY()↓
+;jpn:◆こころから　かんしゃするよ。@WI(30)↓
+;jpn:　ありがとう。@KEYNP()
+』
+
+;@Habitat:フォーサイド／ボルヘス酒場／酒場
+;@Person:ジュークボックス
+;@Figure:ジュークボックス
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:MSG_FOUR_BAR_JUKEBOX
+;@Message:0
+MSG_FOUR_BAR_JUKEBOX;
+;ジュークボックスチェック時
+◆Ｓｅｅｍｓ　ｌｉｋｅ　ｉｔ’ｓ　ｊｕｓｔ　ｆｏｒ　ｄｅｃｏｒａｔｉｏｎ．
+@KEYNP()
+
+;jpn:◆ただの　かざりものらしい。@KEYNP()
+』
+;◆（このジュークボックスは↓
+;　タダで　きかせてやるので↓
+;　きょくを　かってに　えらべ）@KEY()
+;@GOSUB(MSG_FOUR_BAR_JUKEBOX)
+;』
+
+；----------------------------------------

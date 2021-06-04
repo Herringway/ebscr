@@ -1,0 +1,1572 @@
+;-------------------------------------------
+;@Habitat:ハッピー村／ＨＨ教団の館／祭壇の間
+;@Person:マニマニの像
+;@Figure:黄金のオスカー
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:MSG_HAPPY_CHECK_MANIMANI
+;@Message:0
+MSG_HAPPY_CHECK_MANIMANI;
+◆（Ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　Ｓｔａｔｕｅ　ｉｓ　ｇｌｏｗｉｎｇ　ｓｔｒａｎｇｅｌｙ．．．）
+;jpn:◆（おうごんの　ぞうは↓
+;jpn:　あやしくかがやいている‥‥）
+@KEYNP()
+@SE(SE_se71_bunboon_stop);怪しく光っている音
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／祭壇の間
+;@Person:カーペインター
+;@Figure:カーペインター
+;@AppearanceKey:FLG_WIN_CARPAINTER/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_CARPAINTER
+MSG_HAPPY_CARPAINTER;
+;カーペインターさん
+;もともとは、一介の「不満の多いペンキ職人」だったが、
+;ある夜、「神の啓示」を受けて新興宗教ハッピーハッピー
+;教の教祖に。カミナリみたいなものを落として、とりあえず
+;無敵なのだが、ポーラにもらったフランクリンバッジで避けられる。
+@CHKFGOTO(FLG_HAPPY_CARPAINTER_ITEMFULL,_HAPPY_CARPAINTER_WIN_AGAIN)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_CARPAINTER_LATER)
+@SETF(FLG_HAPPY_THUNDER)
+◆Ｔｈａｎｋｓ　ｆｏｒ　ｃｏｍｉｎｇ！@WI(15)　　Ｉ’ｖｅ　ｂｅｅｎ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆Ｉ　ｎｅｅｄ　ｙｏｕｒ　ａｓｓｉｓｔａｎｃｅ　ｔｏ　ｈｅｌｐ　ｍａｋｅ　ｔｈｅ　ｗｏｒｌｄ　ｂｌｕｅ@KEY()↓
+◆ａｎｄ　ｃｈａｎｇｅ　ｉｔ　ｉｎｔｏ　ａ　ｈａｐｐｙ　ａｎｄ　ｐｅａｃｅｆｕｌ　ｓｏｃｉｅｔｙ．@KEY()↓
+◆Ｗｉｌｌ　ｙｏｕ　ｂｅ　ｍｙ　ｒｉｇｈｔ－ｈａｎｄ　ａｓｓｉｓｔａｎｔ？↓
+　　<Ｙｅｓ>　　<Ｎｏ>
+;DAN:In Japan, we say someone who is a partner of a company as right arm.So, here basically　ｓａｙｉｎｇ　”Ｃａｎ　ｙｏｕ　ｂｅ　ｍｙ　ｐａｒｔｎｅｒ？”
+;jpn:◆よく　きてくれたね　@DSP_STS(STS_PC_NAME_NES)！@WI(20)↓
+;jpn:　きみを　まっていたんだよ。@KEY()↓
+;jpn:◆せかいのすべてを　ブルーにして↓
+;jpn:　しあわせな　しゃかいをきずくため↓
+;jpn:　きみのちからを　かりたいんだ。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)とともに↓
+;jpn:　わたしの　みぎうでになって↓
+;jpn:　くれないかね？@KEY()↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_HAPPY_CARPAINTER_YES,_HAPPY_CARPAINTER_NO)
+
+_HAPPY_CARPAINTER_NO;
+◆Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ　ｂｅ　ｍｙ　ｒｉｇｈｔ　ｈａｎｄ，@WI(15)　ｍｙ　ｌｅｆｔ　ｗｏｕｌｄ　ｂｅ　ｊｕｓｔ　ｆｉｎｅ．．．@KEY()↓
+◆Ｊｕｓｔ　ｋｉｄｄｉｎｇ！@WI(20)　　Ｙｏｕｒ　ｅｘｉｓｔｅｎｃｅ　ｉｓ　ａ　ｐｒｏｂｌｅｍ　ｆｏｒ　ｍｅ　ａｎｄ　ｍｙ　ｒｅｌｉｇｉｏｎ．@KEY()↓
+◆Ｄｅｆｙ　ｍｅ，@WI(15)　ａｎｄ　Ｉ　ｅｎｄ　ｙｏｕｒ　ｐｉｔｉｆｕｌ　ｇａｍｅ！
+;jpn:◆みぎうでが　いやなら↓
+;jpn:　ひだりうででも　いいんだよ‥‥@WI(20)↓
+;jpn:　いや　じょうだんじょうだん！@KEY()↓
+;jpn:◆おまえが　いきていることは↓
+;jpn:　わたしと　わたしのかみにとって↓
+;jpn:　ひじょうに　こまるのだ。@KEY()↓
+;jpn:◆しね！@WI(20)　しんでこのゲームを↓
+;jpn:　ここで　おわりにしてくれ！
+@KEY()
+@GOSUB(MSG_BATTLE_CARPAINTER)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@Q_HAVE(PC_ALL,GDS_HAVE_FRANKLIN_BADGE)
+@TRUE_GOTO(_HAPPY_CARPAINTER_WIN)
+』
+
+_HAPPY_CARPAINTER_YES;
+◆Ｙｏｕ　ｆｏｏｌ，@WI(20)　Ｉ　ｈａｖｅ　ｄｒａｗｎ　ｙｏｕ　ｉｎｔｏ　ｍｙ　ｔｒａｐ．
+;jpn:◆‥‥バカだね@WI(20)　@DSP_STS(STS_PC_NAME_NES)！@WI(20)↓
+;jpn:　こんなはなしは　ワナに↓
+;jpn:　きまってるじゃないか！
+@KEYNP()
+@GOSUB(MSG_BATTLE_CARPAINTER)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@Q_HAVE(PC_ALL,GDS_HAVE_FRANKLIN_BADGE)
+@TRUE_GOTO(_HAPPY_CARPAINTER_WIN)
+』
+
+_HAPPY_CARPAINTER_WIN;
+;@GOSUB(MSG_SUB_BGM_FADEOUT_SHORT);コメントアウト（三浦）
+@OPEN(1)
+←
+◆Ｄｏ　ｙｏｕ　ｓｅｅ　ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　Ｓｔａｔｕｅ　ｂｅｈｉｎｄ　ｍｅ．．．@KEY()↓
+◆Ｓｉｎｃｅ　Ｉ　ｇｏｔ　ｔｈｅ　ｓｔａｔｕｅ，@WI(15)　Ｉ　ｈａｖｅ　ｂｅｅｎ　ｄｏｉｎｇ　ｐｅｃｕｌｉａｒ　ｔｈｉｎｇｓ．
+;jpn:◆わたしの　うしろにある↓
+;jpn:　きんいろの　にんぎょう‥‥@KEY()↓
+;jpn:◆こいつを　ひろってから@KEY()↓
+;jpn:◆じぶんでも　わからないような↓
+;jpn:　こうどうをとるように↓
+;jpn:　なっていた。
+@KEY()↓
+@SETF(FLG_HAPPY_POKEY_APPEAR)	;豚男登場
+
+_HAPPY_CARPAINTER_WIN_AGAIN;
+◆Ｐｌｅａｓｅ　ｆｏｒｇｉｖｅ　ｍｅ，　ｉｆ　ｙｏｕ　ｃａｎ．．．@WI(20)　　Ｉ　ｊｕｓｔ　ｗａｎｔｅｄ　ｔｏ　ｈａｖｅ　ａ　ｎｏｒｍａｌ　ｌｉｆｅ．@KEY()↓
+◆Ｉ　ａｐｏｌｏｇｉｚｅ@WI(20)　ｔｏ　ｅｖｅｒｙｏｎｅ．@KEY()↓
+◆Ｈｅｒｅ’ｓ　ｔｈｅ　ｋｅｙ　ｔｏ　ｏｐｅｎ　ｔｈｅ　ｊａｉｌ　ｉｎ　ｔｈｅ　ｍｏｕｎｔａｉｎ　ｃａｂｉｎ　ｗｈｅｒｅ　@DSP_NAME(PC_PAULA)　ｉｓ　ｂｅｉｎｇ　ｈｅｌｄ．@KEY()↓
+◆Ｔａｋｅ　ｔｈｅ　ｋｅｙ　ａｎｄ　ｇｏ．
+;jpn:◆もし　ゆるせるものなら↓
+;jpn:　わたしを　ゆるしてくれ。@KEY()↓
+;jpn:◆‥‥ただの　へいぼんなくらしを↓
+;jpn:　していたかったのに。@WI(20)↓
+;jpn:　みんなに‥‥@WI(20)すまなかった。@KEY()↓
+;jpn:◆これが↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)のいる　やまごやの↓
+;jpn:　ろうやのカギだ。@KEY()↓
+;jpn:◆さあ　もっていきなさい。
+@KEY()↓
+@SETF(FLG_WIN_CARPAINTER)
+@CLRF(FLG_HAPPY_SWITCH)
+@CLRF(FLG_GRFD_POKEY_APPEAR);勝ったら山小屋のポーキーも登場しない
+@SETF(FLG_HAPPY_UPRIGHT_1_DISAPPEAR);バトル信者は消える
+@SETF(FLG_HAPPY_UPRIGHT_2_DISAPPEAR)
+@SETF(FLG_HAPPY_UPRIGHT_3_DISAPPEAR)
+@SETF(FLG_HAPPY_UPRIGHT_4_DISAPPEAR)
+@SETF(FLG_HAPPY_UPRIGHT_5_DISAPPEAR)
+@SETF(FLG_HAPPY_UPRIGHT_6_DISAPPEAR)
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_HAPPY_CARPAINTER_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_KEY_PRISON)
+@GOSUB(MSG_SUB_GETGOODS_S)
+@KEYNP()
+@CLOSEALL()
+@CLRF(FLG_HAPPY_CARPAINTER_ITEMFULL)
+』
+
+
+_HAPPY_CARPAINTER_ITEMFULL;
+@SETF(FLG_HAPPY_CARPAINTER_ITEMFULL)
+◆Ｙｏｕｒ　ｂａｃｋｐａｃｋ　ｉｓ　ｆｕｌｌ．．．@KEY()↓
+◆Ｙｏｕ　ｓｈｏｕｌｄ　ｔａｋｅ　ｔｈｉｓ　ｅｖｅｎ　ｉｆ　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｔｈｒｏｗ　ａｗａｙ　ｏｎｅ　ｏｆ　ｙｏｕｒ　ｉｔｅｍｓ．
+;jpn:◆もちものがいっぱいか‥‥。@KEY()↓
+;jpn:◆ほかのなにかを　すててでも↓
+;jpn:　もってゆくべきだろう。
+@KEYNP()
+』
+
+_HAPPY_CARPAINTER_LATER;
+◆Ｐｌｅａｓｅ　ｆｏｒｇｉｖｅ　ｍｅ，　ｉｆ　ｙｏｕ　ｃａｎ．．．@WI(20)　　Ｉ　ｊｕｓｔ　ｗａｎｔｅｄ　ｔｏ　ｈａｖｅ　ａ　ｎｏｒｍａｌ　ｌｉｆｅ．@KEY()↓
+◆Ｉ　ａｐｏｌｏｇｉｚｅ　ｔｏ　ｅｖｅｒｙｏｎｅ．
+;jpn:◆もし　ゆるせるものなら↓
+;jpn:　わたしを　ゆるしてくれ。@KEY()↓
+;jpn:◆‥‥ただの　へいぼんなくらしを↓
+;jpn:　していたかったのに。@WI(20)↓
+;jpn:　みんなに‥‥@WI(20)すまなかった。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／受付
+;@Person:受付係
+;@Figure:おじさんＡ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_RECEPTION
+MSG_HAPPY_RECEPTION;
+;本部完成後の受付
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_RECEPTION_LATER)
+◆Ａａｉ@WI(5)ｉ@WI(5)ｉ@WI(5)ｉ@WI(5)ｅ@WI(5)ｅ@WI(5)ｅ@WI(5)ｅ@WI(5)ｅ@WI(5)ｅ！@WI(20)↓
+　　Ｉ　ｓｃｒｅａｍｅｄ．．．@KEY()↓
+◆’ｃａｕｓｅ　Ｉ　ｄｉｄｎ’ｔ　ｋｎｏｗ　ｗｈａｔ　ｅｌｓｅ　ｔｏ　ｄｏ！
+;jpn:◆くせもの！@WI(20)↓
+;jpn:　‥‥と　さけんではみたけれど↓
+;jpn:　どうしていいやら　わからない！
+@KEYNP()
+』
+
+_HAPPY_RECEPTION_LATER;
+;カーペインター倒したその帰り
+◆Ｓｏ　ｙｏｕ’ｒｅ　ｔｈｅ　ｂｏｙ　ｔｈａｔ．．．　ｔｈａｔ．．．@KEY()↓
+◆Ｙｏｕ　ｗｅｎｔ　ａｆｔｅｒ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ａｎｄ．．．@WI(20)　ｙｏｕ’ｒｅ　ａｗｅｓｏｍｅ！
+;jpn:◆あ　あ　あんたが↓
+;jpn:　カーペインターさまを‥‥@KEY()↓
+;jpn:◆お　お　おそるべし！
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:塞ぎ信者1
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_BLOCKER_1
+MSG_HAPPY_HONBU_BLOCKER_1;
+;道を開けてくれる信徒1
+@CHKFGOTO(FLG_TEMP_1,_HAPPY_HONBU_BLOCKER_1_MOVED)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｏｈ，　ｙｏｕ’ｄ　ｌｉｋｅ　ｔｏ　ｂｅ　ｏｎｅ　ｏｆ　ｕｓ？@KEY()↓
+◆Ｔｈｅｎ，　ｇｉｖｅ　ｕｐ　ｗｈａｔ　ｙｏｕ’ｒｅ　ｄｏｉｎｇ@KEY()↓
+◆ａｎｄ　ｇｏ　ｍｅｅｔ　ｔｈｅ　ｇｒｅａｔ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ａｓ　ｓｏｏｎ　ａｓ　ｐｏｓｓｉｂｌｅ．
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆おお　おお。あんたも　われわれの↓
+;jpn:　なかまに　なりたいらしいな。@KEY()↓
+;jpn:◆だったら　なにはともあれ↓
+;jpn:　いだいなる　カーペインターさまに↓
+;jpn:　はやいとこ　あうこったな。
+@KEY()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_A,ANIM_CARP_DUNG_L);移動
+@WAITSYS()
+@SETF(FLG_TEMP_1)
+』
+
+_HAPPY_HONBU_BLOCKER_1_MOVED;
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｇｉｖｅ　ｕｐ　ｗｈａｔ　ｙｏｕ’ｒｅ　ｄｏｉｎｇ　ａｎｄ@KEY()↓
+◆ｇｏ　ｍｅｅｔ　ｔｈｅ　ｇｒｅａｔ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ａｓ　ｓｏｏｎ　ａｓ　ｐｏｓｓｉｂｌｅ．
+;jpn:◆ブルー　ブルー。↓
+;jpn:　いだいなる　カーペインターさまに↓
+;jpn:　なにはともあれ　あうこったよ。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:塞ぎ信者2
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_BLOCKER_2
+MSG_HAPPY_HONBU_BLOCKER_2;
+;道を開けてくれる信徒2
+@CHKFGOTO(FLG_TEMP_2,_HAPPY_HONBU_BLOCKER_2_MOVED)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆．．．Ｗｈａｔ？　　Ｉ’ｍ　ｂｌｏｃｋｉｎｇ　ｙｏｕ？@WI(20)　　Ｏｋ，　Ｉ’ｌｌ　ｍｏｖｅ　ｏｕｔ　ｏｆ　ｙｏｕｒ　ｗａｙ．
+;jpn:◆ブルー　ブルー。↓
+;jpn:　‥‥なに？　おれが　じゃまだと？@WI(20)↓
+;jpn:　じゃ@WI(20)　ま@WI(20)　どいてやろう。
+@KEY()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_B,ANIM_CARP_DUNG_L);移動
+@WAITSYS()
+@SETF(FLG_TEMP_2)
+』
+
+_HAPPY_HONBU_BLOCKER_2_MOVED;
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｉ　ｍｏｖｅｄ　ｏｕｔ　ｏｆ　ｙｏｕｒ　ｗａｙ．
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆おれは　どいてやったぞ。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:塞ぎ信者3
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_BLOCKER_3
+MSG_HAPPY_HONBU_BLOCKER_3;
+;道を開けてくれる信徒3
+@CHKFGOTO(FLG_TEMP_3,_HAPPY_HONBU_BLOCKER_3_MOVED)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆．．．Ｄｏｎ’ｔ　ｂｏｔｈｅｒ　ｕｓ．@WI(20)　　Ｗｅ’ｒｅ　ｉｎ　ｔｈｅ　ｍｉｄｄｌｅ　ｏｆ　ｐｒａｙｅｒ．@KEY()↓
+◆Ｏｋａｙ，　Ｉ’ｌｌ　ｍｏｖｅ　ｏｕｔ　ｏｆ　ｙｏｕｒ　ｗａｙ．　　Ｇｏ　ｑｕｉｃｋｌｙ！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆‥‥おいのりの　じゃまを↓
+;jpn:　しないでちょうだい！@KEY()↓
+;jpn:◆どいてあげるから　さっさと↓
+;jpn:　とおりなさいよ　まったく！
+@KEY()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_C,ANIM_CARP_DUNG_L);移動
+@WAITSYS()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_C,ANIM_PEOPLEWALK0_LIVE);死なない人に
+@SETF(FLG_TEMP_3)
+』
+
+_HAPPY_HONBU_BLOCKER_3_MOVED;
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆．．．Ｉｓ　ｉｔ　ｙｏｕｒ　ｈｏｂｂｙ　ｏｒ　ｓｏｍｅｔｈｉｎｇ　ｔｏ　ｂｏｔｈｅｒ　ｏｔｈｅｒｓ　ｗｈｉｌｅ　ｔｈｅｙ　ｐｒａｙ？！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆‥‥あなたの　しゅみは↓
+;jpn:　ひとの　おいのりの↓
+;jpn:　じゃまを　することなのッ？！
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:塞ぎ信者4
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_BLOCKER_4
+MSG_HAPPY_HONBU_BLOCKER_4;
+;道を開けてくれる信徒4
+@CHKFGOTO(FLG_TEMP_4,_HAPPY_HONBU_BLOCKER_4_MOVED)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆．．．Ｗｈａｔ？　　Ａｒｅ　ｙｏｕ　ｓａｙｉｎｇ　ｔｈａｔ　Ｉ’ｍ　ｏｎｌｙ　ｃａｐａｂｌｅ　ｏｆ　ｗａｌｋｉｎｇ　ｉｎ　ｐｌａｃｅ？@KEY()↓
+◆Ｔｈａｔ’ｓ　ｎｏｔ　ｔｒｕｅ，　ｓｅｅ！
+;jpn:◆ブルー　ブルー。↓
+;jpn:　‥‥なに？　このおれが？@WI(20)↓
+;jpn:　あしぶみするしか　のうがない？@KEY()↓
+;jpn:◆そんなことは　ないぞ！↓
+;jpn:　ほらっ！
+@KEY()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_D,ANIM_CARP_DUNG_R);移動
+@WAITSYS()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_D,ANIM_PEOPLEWALK0_LIVE);死なない人に
+@SETF(FLG_TEMP_4)
+』
+
+_HAPPY_HONBU_BLOCKER_4_MOVED;
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｙｏｕ　ｍｕｓｔ　ｎｅｅｄ　ｈｅｌｐ，　ｂｅｃａｕｓｅ　ｙｏｕ’ｒｅ　ｊｕｓｔ　ｓｔａｎｄｉｎｇ　ａｒｏｕｎｄ！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆おれに　きょうみが　あるのか？↓
+;jpn:　おまえってやつは。
+@KEYNP()
+』
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:塞ぎ信者5
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_BLOCKER_5
+MSG_HAPPY_HONBU_BLOCKER_5;
+;道を開けてくれる信徒5
+@CHKFGOTO(FLG_TEMP_5,_HAPPY_HONBU_BLOCKER_5_MOVED)
+◆Ｇｒｅｅｎ，　ｇｒｅｅｎ．@KEY()↓
+◆Ｏｏｏｐｓ，　ｔｈａｔ’ｓ　ｎｏｔ　ｉｔ．．．@WI(20)　　Ｉ’ｍ　ｓｔｉｌｌ　ｎｅｗ　ａｔ　ｔｈｉｓ．
+;jpn:◆グリーン　グリーン。@KEY()↓
+;jpn:◆あ　まちがえちゃった‥‥。@WI(20)↓
+;jpn:　わたし　まだ　しんまいなのよ。
+@KEY()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_E,ANIM_CARP_DUNG_L);移動
+@WAITSYS()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_E,ANIM_PEOPLEWALK0_LIVE);死なない人に
+@SETF(FLG_TEMP_5)
+』
+
+_HAPPY_HONBU_BLOCKER_5_MOVED;
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｎｏｗ　Ｉ　ｇｏｔ　ｉｔ．@WI(20)↓
+　　Ｂｌｕｅ，　ｂｌｕｅ．
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆これで　いいのよ↓
+;jpn:　ブルー　ブルー。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:塞ぎ信者6
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_BLOCKER_6
+MSG_HAPPY_HONBU_BLOCKER_6;
+;道を開けてくれる信徒6
+@CHKFGOTO(FLG_TEMP_6,_HAPPY_HONBU_BLOCKER_6_MOVED)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｉ’ｌｌ　ｓｔａｎｄ　ｓｏｍｅｗｈｅｒｅ　ｅｌｓｅ．
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆なんとなく↓
+;jpn:　たつばしょを　かえてみよっと。
+@KEY()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_F,ANIM_CARP_DUNG_R);移動
+@WAITSYS()
+@SETF(FLG_TEMP_6)
+』
+
+_HAPPY_HONBU_BLOCKER_6_MOVED;
+◆Ｂｌｕｅ，　ｂｌｕｅ@KEY()↓
+◆Ｌａｇｏｏｎ　ｂｌｕｅ，　ｂｌｕｅ．
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆かぎりなく↓
+;jpn:　とうめいに　ちかくない↓
+;jpn:　ブルー　ブルー。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:塞ぎ信者7
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_BLOCKER_7
+MSG_HAPPY_HONBU_BLOCKER_7;
+;道を開けてくれる信徒7
+@CHKFGOTO(FLG_TEMP_7,_HAPPY_HONBU_BLOCKER_7_MOVED)
+◆Ｂｌｅｗ，　ｂｌｅｗ．@KEY()↓
+◆Ｉ’ｍ　ｔｒｙｉｎｇ　ｔｏ　ｌｅａｒｎ　ｈｏｗ　ｔｏ　ｗｈｉｓｔｌｅ．@KEY()↓
+◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｗｈｉｓｔｌｉｎｇ　ｍａｋｅｓ　ｏｎｅ　ｓｍｉｌｅ．　　Ｉ’ｌｌ　ｐｒａｃｔｉｃｅ　ｏｖｅｒ　ｔｈｅｒｅ．
+;jpn:◆ブルブル‥‥。@KEY()↓
+;jpn:◆そんな　こわいめで　にらむなよ。↓
+;jpn:　わかったよ　わかったよ‥‥@WI(20)↓
+;jpn:　ここを　どけば　いいんだろ。
+@KEY()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_G,ANIM_CARP_DUNG_L);移動
+@WAITSYS()
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_G,ANIM_PEOPLEWALK0_LIVE);死なない人に
+@SETF(FLG_TEMP_7)
+』
+
+_HAPPY_HONBU_BLOCKER_7_MOVED;
+◆Ｂｌｅｗ，　ｂｌｅｗ．@KEY()↓
+◆Ｗｈｉｓｔｌｉｎｇ　ｉｓ　ｈａｒｄ．．．
+;jpn:◆ブルブル‥‥。@KEY()↓
+;jpn:◆おれを　びびらせて↓
+;jpn:　そんなに　たのしいか。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:戦闘信者1
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_UPRIGHT_1
+MSG_HAPPY_HONBU_UPRIGHT_1;
+;突っ立っている信徒1
+@CHKFGOTO(FLG_HAPPY_UPRIGHT_1_DISAPPEAR,MSG_SYS_HANASU_NG)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｉ　ｓａｙ，@WI(15)　”Ａｒｍ　ｔｈｅ　ｔｏｒｐｅｄｏｅｓ，　ｆｕｌｌ　ｓｐｅｅｄ　ａｈｅａｄ！”．．．@KEY()↓
+◆ｏｒ　ｓｏｍｅｔｈｉｎｇ　ｌｉｋｅ　ｔｈａｔ．@WI(20)　　Ｓｏ　ｎｏｗ　Ｉ’ｌｌ　ｃｒｕｓｈ　ｙｏｕ！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆とんで　ひにいる　ふつうのやつ！↓
+;jpn:　ひねりつぶしてやる！
+@KEY()
+@GOSUB(MSG_BATTLE_BELIEVER_1)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@WI(1)
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_H,ANIM_BLINK_SUICIDE)
+@SETF(FLG_HAPPY_UPRIGHT_1_DISAPPEAR)
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:戦闘信者2
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_UPRIGHT_2
+MSG_HAPPY_HONBU_UPRIGHT_2;
+;突っ立っている信徒2
+@CHKFGOTO(FLG_HAPPY_UPRIGHT_2_DISAPPEAR,MSG_SYS_HANASU_NG)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｄｉｓｒｕｐｔ　ｏｕｒ　ｍｅｅｔｉｎｇ！@WI(15)　　Ｉ’ｌｌ　ｓｔｏｍｐ　ｏｎ　ｙｏｕ！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆しゅうかいの　じゃまをするな！↓
+;jpn:　たたきつぶすぞ！
+@KEY()
+@GOSUB(MSG_BATTLE_BELIEVER_2)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@WI(1)
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_I,ANIM_BLINK_SUICIDE)
+@SETF(FLG_HAPPY_UPRIGHT_2_DISAPPEAR)
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:戦闘信者3
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_UPRIGHT_3
+MSG_HAPPY_HONBU_UPRIGHT_3;
+;突っ立っている信徒3
+@CHKFGOTO(FLG_HAPPY_UPRIGHT_3_DISAPPEAR,MSG_SYS_HANASU_NG)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｙｏｕ　ｓｔｒａｎｇｅ，　ｕｎｍａｓｋｅｄ　ｆｅｌｌｏｗ．　　Ｄｏｎ’ｔ　ｇｏ　ｔｏ　ｈｅａｖｅｎ！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆ふくめんしてない　あやしいやつ！↓
+;jpn:　てんごくにいくな！
+@KEY()
+@GOSUB(MSG_BATTLE_BELIEVER_3)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@WI(1)
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_J,ANIM_BLINK_SUICIDE)
+@SETF(FLG_HAPPY_UPRIGHT_3_DISAPPEAR)
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:戦闘信者4
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_UPRIGHT_4
+MSG_HAPPY_HONBU_UPRIGHT_4;
+;突っ立っている信徒4
+@CHKFGOTO(FLG_HAPPY_UPRIGHT_4_DISAPPEAR,MSG_SYS_HANASU_NG)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｈｅｙ　ｙｏｕ！　　Ａｎｔｉ－ｂｌｕｅ　ｂｏｙ！@WI(15)　　Ｙｏｕ’ｒｅ　ｇｅｔｔｉｎｇ　ｏｎ　ｍｙ　ｎｅｒｖｅｓ！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆あおくないやつ！↓
+;jpn:　じゃまをするか！
+@KEY()
+@GOSUB(MSG_BATTLE_BELIEVER_4)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@WI(1)
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_K,ANIM_BLINK_SUICIDE)
+@SETF(FLG_HAPPY_UPRIGHT_4_DISAPPEAR)
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:うろつき信者1
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_WANDER_1
+MSG_HAPPY_HONBU_WANDER_1;
+;うろついている信徒1
+@CHKFGOTO(FLG_HAPPY_UPRIGHT_5_DISAPPEAR,MSG_SYS_HANASU_NG)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｔｈｏｓｅ　ｗｈｏ　ａｒｅｎ’ｔ　ｂｅｌｉｅｖｅｒｓ　ｍｕｓｔ　ｎｏｔ　ｂｅ　ｇｏｏｄ！@WI(15)　　Ｔｏ　ｅｔｅｒｎｉｔｙ　ｗｉｔｈ　ｙｏｕ！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆しんじないものは　すくわれぬ！↓
+;jpn:　じごくに　おちろ！
+@KEY()
+@GOSUB(MSG_BATTLE_BELIEVER_W1)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@WI(1)
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_L,ANIM_BLINK_SUICIDE)
+@SETF(FLG_HAPPY_UPRIGHT_5_DISAPPEAR)
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:うろつき信者2
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_WANDER_2
+MSG_HAPPY_HONBU_WANDER_2;
+;うろついている信徒2
+@CHKFGOTO(FLG_HAPPY_UPRIGHT_6_DISAPPEAR,MSG_SYS_HANASU_NG)
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｔｈｉｓ　ｓｈｏｕｌｄ　ｗａｋｅ　ｙｏｕ　ｕｐ！@WI(15)↓
+　　Ａａ@WI(5)ａ@WI(5)ａ@WI(5)ａ@WI(5)ａ@WI(5)ｇ@WI(5)ｇ@WI(5)ｈ@WI(5)ｈ@WI(5)ｈ！！！
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆おまえの　めを　さましてやる！↓
+;jpn:　キェーイッ！
+@KEY()
+@GOSUB(MSG_BATTLE_BELIEVER_W2)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@WI(1)
+@REMOVE_CHAR(PRSN_HAPY_CARP_DUNG_M,ANIM_BLINK_SUICIDE)
+@SETF(FLG_HAPPY_UPRIGHT_6_DISAPPEAR)
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:うろつき信者3
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_WANDER_3
+MSG_HAPPY_HONBU_WANDER_3;
+;うろついている信徒3
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｙｏｕｒ　ｏｕｔｆｉｔ．．．@WI(20)ｔｈｅ　ｃｏｌｏｒ　ｉｓ　ｗｉｃｋｅｄ．
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆あなたの　その　ふく‥‥@WI(20)↓
+;jpn:　じゃあくな　いろを　してるわね。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:うろつき信者4
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_WANDER_4
+MSG_HAPPY_HONBU_WANDER_4;
+;うろついている信徒4
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｗｈｙ　ｗｏｕｌｄ　ａ　ｐｅｒｓｏｎ　ｗｈｏ’ｓ　ｎｏｔ　ｂｌｕｅ　ｂｅ　ｈｅｒｅ？
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆おまえのような　あおくないやつが↓
+;jpn:　どうして　ここに　いるんだ？
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／ＨＨ教団の館／人間ダンジョンの間
+;@Person:うろつき信者5
+;@Figure:ＨＨ教信者
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ「人間ダンジョン」
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_HONBU_WANDER_5
+MSG_HAPPY_HONBU_WANDER_5;
+;うろついている信徒5
+◆Ｂｌｕｅ，　ｂｌｕｅ．@KEY()↓
+◆Ｙｏｕ　ｃａｎ’ｔ　ｂｅ　ｈａｐｐｙ　ｕｎｌｅｓｓ　ｙｏｕ　ｋｎｏｗ　ｈａｐｐｙ－ｈａｐｐｙｉｓｍ．
+;jpn:◆ブルー　ブルー。@KEY()↓
+;jpn:◆ハッピーハッピーきょうに↓
+;jpn:　はいらずして　ハッピーと↓
+;jpn:　いうなかれ。
+@KEYNP()
+』
+
+
+;----------------------------------------
+
+MSG_HAPPY_THANKYOU;＆ハッピーハッピー村内汎用感謝のセリフ
+◆Ｔｈａｎｋｓ，　ａｈｅａｄ　ｏｆ　ｔｉｍｅ．
+;jpn:◆いつかは　ありがとう。
+@KEYNP()
+』
+;----------------------------------------
+
+;@Habitat:ハッピー村／寄付屋／寄付屋
+;@Person:寄付を求める人
+;@Figure:おじさんＡ
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ#3.1
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_KIFU
+MSG_HAPPY_KIFU;
+;寄付をもとめる人
+;つきまとってくるというふうにはできないか？
+;「えはがき」は、アイテムとして「つかう」と
+;「なんだか　むなしかった」
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_KIFU_LATER)
+@OPEN(1)
+◆Ｅｘｃｕｓｅ　ｍｅ，　ｔｏｕｒｉｓｔ．@KEY()↓
+◆Ｉ’ｍ　ｃｏｌｌｅｃｔｉｎｇ　ｄｏｎａｔｉｏｎｓ　ｔｏ　ｈｅｌｐ　ｐｒｏｔｅｃｔ　ｔｈｅ　ｗｏｒｌｄ　ｆｒｏｍ　ｃｏｎｔａｍｉｎａｎｔｓ．@KEY()↓
+◆Ｄｏｎａｔｅ　ｗｈａｔｅｖｅｒ　ｙｏｕ　ｃａｎ．↓
+@WINR_MONEY()
+<Ｙｅｓ>　　<Ｎｏ>
+;jpn:◆すいません　たびのかた@WI(20)↓
+;jpn:　せかいを　けがれないものに↓
+;jpn:　するために@KEY()↓
+;jpn:◆きふを　もとめています。@WI(20)↓
+;jpn:　いくらでもいいから　しなさい。↓
+;jpn:@WINR_MONEY()
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_HAPPY_KIFU_YES,_HAPPY_KIFU_NO)
+
+_HAPPY_KIFU_NO;
+@Q_MONEY(1)
+@TRUE_GOTO(_HAPPY_KIFU_NOMONEY)
+◆Ｉ’ｌｌ　ｂｅ　ｙｏｕｒ　ｓｈａｄｏｗ，　ｔｈｅｎ．
+;jpn:◆つきまとってやるぞ。
+@KEYNP()
+@CLOSEALL()
+@GOTO(MSG_EVT_29_KIFU_X)
+』
+_HAPPY_KIFU_NOMONEY;本当にお金なし
+◆Ｉｎｃｒｅｄｉｂｌｅ！@KEY()↓
+◆Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　ｐｅｏｐｌｅ　ｅｘｉｓｔ　ｗｈｏ　ｈａｖｅ　ｎｏ　ｍｏｎｅｙ　ａｔ　ａｌｌ．．．@KEY()↓
+◆Ｂｌｕｅ，　ｂｌｕｅ！
+;jpn:◆ほんとに　まるっきりの↓
+;jpn:　もんなしが　このよに↓
+;jpn:　そんざいするとは‥‥@KEY()↓
+;jpn:◆しんじられないわ！@WI(20)↓
+;jpn:　‥‥ブルーブルー！
+@KEYNP()
+@CLOSEALL()
+@GOTO(MSG_EVT_29_KIFU)
+
+_HAPPY_KIFU_YES;
+◆Ｈｏｗ　ｍｕｃｈ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｄｏｎａｔｅ？
+;jpn:◆いくら　しはらいますか？
+↓
+　　　　＄@INPUT(2)
+@CLRLINE()
+@XCHG()
+@CMP(1,1)
+@FALSE_GOTO(_HAPPY_KIFU_NO)
+@Q_MONEY(0)
+@TRUE_GOTO(_HAPPY_KIFU_LUCK)
+@SE(SE_se76_my_give)
+@MONEYOUT(0)
+@WINR_MONEY()
+_HAPPY_KIFU_THANKS;
+◆Ｙｏｕｒ　ｇｏｏｄ　ｄｅｅｄ　ｗｉｌｌ　ｂｅ　ｒｅｗａｒｄｅｄ．@WI(20)　　Ｈｅｒｅ’ｓ　ａ　ｐｏｓｔｃａｒｄ　ｆｏｒ　ｙｏｕ．
+;jpn:◆あなたは　いいことをしました。↓
+;jpn:　これは　きねんのえはがきです。
+@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_HAPPY_KIFU_YES_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_POSTCARD)
+@GOSUB(MSG_SUB_GETGOODS)
+@KEY()←
+◆Ｇｏ　ａｎｄ　ｂｅ　ｈａｐｐｙ！
+;jpn:◆しあわせになれますよ。
+@KEYNP()
+@CLOSEALL()
+@GOTO(MSG_EVT_29_KIFU)
+
+_HAPPY_KIFU_YES_ITEMFULL;
+◆Ｉ　ｗａｎｔｅｄ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ａ　ｐｏｓｔｃａｒｄ．@WI(20)　　Ｂｕｔ．．．ｙｏｕ　ｃａｎ’ｔ　ａｃｃｅｐｔ　ｉｔ．@KEY()↓
+◆Ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｉｔｅｍｓ．
+;jpn:◆えはがきを　わたしたいのに↓
+;jpn:　うけとってもらえない。↓
+;jpn:　‥‥もちものが　おおすぎますよ。
+@KEYNP()
+@CLOSEALL()
+』
+
+_HAPPY_KIFU_LUCK;
+@Q_MONEY(1)
+@TRUE_GOTO(_HAPPY_KIFU_NOMONEY)
+◆．．．ｎｏ　ｊｏｋｅｓ　ａｌｌｏｗｅｄ．
+;jpn:◆‥‥ごじょうだんは↓
+;jpn:　いけませんね。
+@KEYNP()
+@CLOSEALL()
+@!
+_HAPPY_KIFU_LATER;
+◆Ｆｉｎａｌｌｙ，　Ｉ　ｈａｖｅ　ａ　ｃｈａｎｃｅ　ｔｏ　ａｐｏｌｏｇｉｚｅ．
+;jpn:◆いつぞやは　すいませんでしたね。
+@KEYNP()
+@CLOSEALL()
+』
+
+;----------------------------------------
+
+;@Habitat:ハッピー村／土星さんの家／土星さんの家
+;@Person:土星さん
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_DOSEI
+MSG_HAPPY_DOSEI;
+;ハッピーハッピー村の土星さん
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_DOSEI_LATER)
+◆Ｉ　ｎｏｔ　ｋｎｏｗ　ｙｏｕ．@KEY()↓
+◆Ｍｙ　ｋｉｎｄ　ａｒｅ　ｉｎ　ｖａｌｌｅｙ　ｏｖｅｒ　ｔｈｅｒｅ．@KEY()↓
+◆Ｂｙｅ　ｂｙｅ．
+;jpn:◆よくわかんない。@KEY()↓
+;jpn:◆ぼくのなかまは↓
+;jpn:　スリークの@KEY()↓
+;jpn:◆むこうの　たにに↓
+;jpn:　いるんだよ。
+@KEYNP()
+@FONTSTD()
+』
+
+_HAPPY_DOSEI_LATER;
+◆Ｈｉ，@WI(15)　ｙｏｕ．@KEY()↓
+;jpn:◆あ　こんにちは。
+@KEYNP()
+@FONTSTD()
+』
+
+
+；----------------------------------------
+
+;@Habitat:ハッピー村／ドラッグストア／ドラッグストア
+;@Person:店員（初めはいない）
+;@Figure:サラリーマンＤ
+;@AppearanceKey:FLG_WIN_CARPAINTER/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_DRUGSTORE_CLERK
+MSG_HAPPY_DRUGSTORE_CLERK;@MaltaAppended
+@GOSUB(MSG_SHOP_HAPPY_DRUG)
+』
+
+
+；----------------------------------------
+
+;@Habitat:ハッピー村／住宅Ａ／２階
+;@Person:住人（信徒Ｄ）
+;@Figure:ジミな男
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_D
+MSG_HAPPY_SHINTO_D;＆
+@CHKFGOTO(FLG_WIN_GIEGU,MSG_HAPPY_THANKYOU)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_D_LATER)
+◆Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｗａｎｔｓ　ａ　ｇｉｒｌ．@KEY()↓
+◆Ｎｏ，　Ｉ　ｄｏｎ’ｔ　ｍｅａｎ　ｉｔ　ｌｉｋｅ　ｔｈａｔ．@KEY()↓
+◆Ｉ　ｍｅａｎｔ　ｈｅ’ｓ　ｌｏｏｋｉｎｇ　ｆｏｒ　ａ　ｇｉｒｌ　ｗｈｏ　ｃａｎ　ｂｅ　ｔｈｅ　ｈｉｇｈ　ｐｒｉｅｓｔｅｓｓ　ｏｆ　Ｈａｐｐｙ－ｈａｐｐｙｉｓｍ．@KEY()↓
+◆Ｉ　ｈｅａｒｄ　ｈｅ’ｓ　ａｌｒｅａｄｙ　ｇｏｔ　ｈｅｒ．
+;jpn:◆カーペインターさまは↓
+;jpn:　おんなのコを　もとめて↓
+;jpn:　いらっしゃった。@KEY()↓
+;jpn:◆いやその　そういういみじゃなく。@KEY()↓
+;jpn:◆ハッピーハッピーきょうだんの↓
+;jpn:　ひめがみさまとしての↓
+;jpn:　おんなのコを　さがしてたんだ。@KEY()↓
+;jpn:◆もう　みつけたっていう↓
+;jpn:　ハナシだったけどなー。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_D_LATER;
+◆Ｉ　ａｐｏｌｏｇｉｚｅ．
+;jpn:◆はんせいしてるよ。
+@KEYNP()
+』
+
+;@Habitat:ハッピー村／住宅Ｂ／住宅Ｂ
+;@Person:住人（信徒Ｆ）
+;@Figure:マスク
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_F
+MSG_HAPPY_SHINTO_F;＆
+@CHKFGOTO(FLG_WIN_GIEGU,MSG_HAPPY_THANKYOU)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_F_LATER)
+@CHKFGOTO(FLG_TEMP_1,_HAPPY_SHINTO_F_1)
+◆Ｐｓｓｓ　ｐｓｓｓ　Ｐｓｓｓ　ｐｓｓｓ@KEY()↓
+◆Ｔｈａｔ　ｏｖｅｒｗｅｉｇｈｔ　ｋｉｄ　ｈｅｌｐｅｄ　ｍｅ．@WI(20)　　Ｗｅ　ｋｉｄｎａｐｐｅｄ　@DSP_NAME(PC_PAULA)．@KEY()↓
+◆Ｙｏｕ　ｋｎｏｗ，　ｓｈｅ’ｓ　ｈｉｄｄｅｎ　ｉｎ　ａ　ｍｏｕｎｔａｉｎ　ｃａｂｉｎ．@KEY()↓
+;jpn:◆ヒソヒソ　ヒソヒソ↓
+;jpn:　ボソボソ　ボソボソ@KEY()↓
+;jpn:◆となりまちからきた↓
+;jpn:　ポーキーとかいうデブに↓
+;jpn:　てつだわせてよー@KEY()↓
+;jpn:◆うまく　@DSP_STS(STS_PC_NAME_PAULA)ってむすめを↓
+;jpn:　さらってきたぜ。@WI(20)↓
+;jpn:　れいの　こやに　かくしてある。@KEY()↓
+
+◆Ｏｈ，　@WI(20)ｏｈ！　@WI(20)Ｎｏｗ　Ｉ’ｖｅ　ｄｏｎｅ　ｉｔ！@KEY()↓
+◆Ｉ　ｔｈｏｕｇｈｔ　ｙｏｕ　ｗｅｒｅ　ｏｎｅ　ｏｆ　ｕｓ！@WI(20)　　Ｙｏｕ　ｋｎｏｗ　Ｉ　ｗａｓ　ｊｏｋｉｎｇ！@KEY()↓
+◆Ｈａ　ｈａ　ｈａ！．．．Ｊｕｓｔ　ｆｏｒｇｅｔ　ａｂｏｕｔ　ｔｈｉｓ．．．
+;jpn:◆！@WI(20)！@WI(20)！@WI(20)↓
+;jpn:　しまった！@KEY()↓
+;jpn:◆なかまかと　おもって↓
+;jpn:　はなしかけたが‥‥@WI(20)このはなしは↓
+;jpn:　じょうだんだよ！
+@SE(SE_se72);あやしい音
+@KEYNP()
+@SETF(FLG_TEMP_1)
+』
+
+_HAPPY_SHINTO_F_1;
+◆Ｉ　ｗｏｎ’ｔ　ｔｅｌｌ　ｙｏｕ　ａｎｙｔｈｉｎｇ．
+;jpn:◆おまえにゃ　なんにも↓
+;jpn:　おしえないよ。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_F_LATER;
+◆Ｙｏｕ　ｒｅａｌｌｙ　ｔｈｉｎｋ　Ｉ　ｗａｓ　ａ　ｂａｄ　ｂｏｙ？
+;jpn:◆おれ　もともとは↓
+;jpn:　わるいやつじゃ　なかったんだ。
+@KEYNP()
+』
+;----------------------------------------
+
+;@Habitat:ハッピー村／フィールド／HH教団の館付近
+;@Person:あっかんべポーキー
+;@Figure:ポーキー
+;@AppearanceKey:FLG_HAPPY_POKEY_APPEAR/on
+;@ActionScript:◆ＨＨ教館から出てきたネスに近寄り、去る
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GRFD_POKEY_LATER
+MSG_GRFD_POKEY_LATER;
+@REMOVE_CHAR( PRSN_HAPY_FIELD_A, ANIM_AKANBE_POKEY )　;近寄る豚男
+@WAITSYS()
+@COLD_CHAR(PRSN_HAPY_FIELD_A)
+;@GET_PLAYER_DIR(PC_NESS,2,PRSN_HAPY_FIELD_A)
+;@SET_PLAYER_DIR(PC_NESS,0)
+@OPEN(1)
+◆Ｗｈａｔ　ａ　ｈｏｒｒｉｂｌｅ　ｎｉｇｈｔｍａｒｅ．@WI(20)　　Ｉ　ｓｏｍｅｈｏｗ　ｗｏｋｅ　ｕｐ．@KEY()↓
+◆@DSP_NAME(PC_NESS)，@WI(15)　ｌｅｔ’ｓ　ｂｅ　ｆｒｉｅｎｄｓ　ａｇａｉｎ．@KEY()↓
+◆Ｐｌｅａｓｅ　ａｎｓｗｅｒ　ｍｅ．　　Ｉ　ｐｒｏｍｉｓｅ　ｔｏ　ｂｅ　ｇｏｏｄ．@WI(60)　　．．．ｕｈ．．．ｏｋａｙ？
+;jpn:◆すごかったなぁ@DSP_STS(STS_PC_NAME_NES)。@WI(20)↓
+;jpn:　おれも　なんだか　めがさめたよ。@WI(20)↓
+;jpn:　また　ともだちになろうぜ。@KEY()↓
+;jpn:◆へんじしてくれよー。↓
+;jpn:　いいやつになるからさ。@WI(60)↓
+;jpn:　‥‥ダメか。
+@KEY()↓
+@CLOSEALL()
+;背を向けてとぼとぼ歩く豚男
+@FRESH_CHAR( PRSN_HAPY_FIELD_A )
+@WAITSYS()
+@COLD_CHAR( PRSN_HAPY_FIELD_A )
+@OPEN(1)
+◆Ｈａｈ！　　Ｉ　ｌｉｅｄ！@WI(20)　　Ｓｅｅ　ｙｏｕ，　ｓｕｃｋｅｒ！
+;jpn:◆あっかんべー！↓
+;jpn:　うっそだよー！@WI(20)　いつかみてろよ！
+@KEY()
+@CLOSEALL()
+;遠退く豚男
+@FRESH_CHAR( PRSN_HAPY_FIELD_A )
+@CLRF(FLG_HAPPY_POKEY_APPEAR)
+@FUNC(6)			;配達毒死許可
+』
+
+
+;@Habitat:ハッピー村／フィールド／無人販売所付近
+;@Person:無人販売所監視員
+;@Figure:ゴロツキ
+;@AppearanceKey:FLG_HAPPY_WIN_GUARD/off
+;@ActionScript:◆北向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_AUTOSHOP_GUARD
+MSG_HAPPY_AUTOSHOP_GUARD;
+@CHKFGOTO(FLG_WIN_GIEGU,_HAPPY_AUTOSHOP_GUARD_END)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_AUTOSHOP_GUARD_LATER)
+@CHKFGOTO(FLG_HAPPY_WIN_GUARD,_HAPPY_AUTOSHOP_GUARD_WIN)
+◆Ｉ’ｍ　ｍｏｎｉｔｏｒｉｎｇ　ｔｈｏｓｅ　ｗｈｏ　ｄｏｎ’ｔ　ｐａｙ　ａｔ　ｔｈｅ　ｆｏｏｄ　ｓｔａｎｄ．
+;jpn:◆むじんのはんばいじょで↓
+;jpn:　かねをはらわないやつを↓
+;jpn:　かんししてるんだ。
+@CHKFGOTO(FLG_HAPPY_AUTOSHOP,_HAPPY_AUTOSHOP_GUARD_OK)
+@KEYNP()
+』
+
+_HAPPY_AUTOSHOP_GUARD_OK;
+@KEY()
+@CHKFGOTO(FLG_HAPPY_AUTOSHOP_FOUL,_HAPPY_AUTOSHOP_GUARD_ALART)
+←
+◆Ｈａｖｅ　ｙｏｕ　ａｌｒｅａｄｙ　ｐａｉｄ？@WI(20)　　Ｏｋ，　ｏｋ．
+;jpn:◆おまえ　ちゃんと　はらったな。@WI(20)↓
+;jpn:　よしよし。
+@KEYNP()
+@CLRF(FLG_HAPPY_AUTOSHOP)
+』
+
+_HAPPY_AUTOSHOP_GUARD_ALART;
+←
+◆Ｉ　ｎｏｔｉｃｅｄ　ｙｏｕ　ｄｉｄｎ’ｔ　ｐａｙ！
+;jpn:◆おれは　みた。@WI(20)↓
+;jpn:　おまえは　かねを　はらってない！
+@KEY()
+@GOSUB(MSG_BATTLE_SHOPGUARD)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@OPEN(1)
+←
+_HAPPY_AUTOSHOP_GUARD_WIN;
+◆Ｙｏｕ　ｗｏｎ　ｔｈｉｓ　ｃｏｎｆｒｏｎｔａｔｉｏｎ．@KEY()↓
+◆Ｂｕｔ　ｔｈｅ　ｇｏｏｄ　ｓｉｄｅ　ｏｆ　ｙｏｕ　ｍｕｓｔ　ａｃｈｅ　ｗｉｔｈ　ｒｅｇｒｅｔ．　　Ｈａ　ｈａ　ｈａ．
+;jpn:◆バトルでは　おれにかったが↓
+;jpn:　おまえの　りょうしんは↓
+;jpn:　いたむだろうな。@WI(20)フッフッフ。
+@KEYNP()
+@SETF(FLG_HAPPY_WIN_GUARD)
+』
+_HAPPY_AUTOSHOP_GUARD_LATER;
+◆Ｔｈｅｙ　ｓａｉｄ　ｓｏｍｅｏｎｅ　ｎａｍｅｄ　Ｐｏｋｅｙ　ｓｔｏｌｅ　ａｌｌ　ｔｈｅ　ｆｏｏｄ　ｆｒｏｍ　ｔｈｅ　ｆｏｏｄ　ｓｔａｎｄ．
+;jpn:◆ポーキーとかってやつが↓
+;jpn:　むじんはんばいじょの　くいものを↓
+;jpn:　みんな　ぬすんでいっちまった。
+@KEYNP()
+』
+_HAPPY_AUTOSHOP_GUARD_END;＆
+◆Ｉｎ　ａ　ｄｉｆｆｅｒｅｎｔ　ｗａｙ　ｔｈａｎ　ｂｅｆｏｒｅ，　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｈａｓ　ｂｅｃｏｍｅ　ａ　ｖｅｒｙ　ｇｏｏｄ　ｍａｎ．
+;jpn:◆カーペインターさんは↓
+;jpn:　すっかり　べつのいみで↓
+;jpn:　いいひとになったよ。
+@KEYNP()
+』
+
+;@Habitat:ハッピー村／フィールド／無人販売所ドア前
+;@Person:無人販売所立て札
+;@Figure:立て札
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:MSG_HAPPY_CHECK_AUTOSHOP
+;@Message:0
+MSG_HAPPY_CHECK_AUTOSHOP;
+;お金の払い方でFLG_HAPPY_AUTOSHOP,FLG_HAPPY_AUTOSHOP_FOULを設定
+;無人販売所たてふだ
+;アイテム名　　金額ドルくらい
+;アイテム名　　金額ドルていど
+;アイテム名　　金額ドルかな
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_AUTOSHOP_LATER)
+@GOSUB(MSG_SHOP_HAPPY_AUTOSHOP)
+』
+
+_HAPPY_AUTOSHOP_LATER;
+;カーペインター倒したその後
+◆（Ｔｈａｎｋｓ　ｆｏｒ　ｙｏｕｒ　ｓｕｐｐｏｒｔ　ｏｖｅｒ　ｔｈｅ　ｙｅａｒｓ．@KEY()↓
+◆Ｔｈｅ　ｆｏｏｄ　ｓｔａｎｄ　ｉｓ　ｇｏｉｎｇ　ｏｕｔ　ｏｆ　ｂｕｓｉｎｅｓｓ　ｄｕｅ　ｔｏ　ｐｅｒｓｏｎａｌ　ｒｅａｓｏｎｓ．）
+;jpn:◆（ながねんの　ごあいこ↓
+;jpn:　ありがとうございました。@KEY()↓
+;jpn:◆むじんはんばいじょは↓
+;jpn:　じじょうにより↓
+;jpn:　みせじまいさせていただきました）
+@KEYNP()
+』
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ａ
+;@Figure:アーティスト
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_A
+MSG_HAPPY_SHINTO_A;＆
+@CHKFGOTO(FLG_WIN_GIEGU,MSG_HAPPY_THANKYOU)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_A_LATER)
+◆Ｏｎｅ　ｄａｙ，　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｒｅｃｅｉｖｅｄ　ａ　ｒｅｖｅｌａｔｉｏｎ．@KEY()↓
+◆Ｈｅ　ｎｏｗ　ｓｐｅａｋｓ　ｔｈｅ　ｒｅａｌ　ｔｒｕｔｈ．
+;jpn:◆カーペインターさまは↓
+;jpn:　あるひ　とつぜん　かみさまの↓
+;jpn:　けいじを　うけたのよ。@KEY()↓
+;jpn:◆あのかたのコトバは↓
+;jpn:　かみのコトバよ。
+@KEYNP()
+』
+_HAPPY_SHINTO_A_LATER;
+◆Ｉ　ｗｏｋｅ　ｕｐ　ｆｒｏｍ　ｔｈｅ　ｄｒｅａｍ．
+;jpn:◆ゆめから　さめたみたい。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ｂ
+;@Figure:ツッパリ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_B
+MSG_HAPPY_SHINTO_B;＆
+@CHKFGOTO(FLG_WIN_GIEGU,MSG_HAPPY_THANKYOU)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_B_LATER)
+◆Ｙｏｕ　ｄｏｎ’ｔ　ｓｅｅｍ　ｔｏ　ｕｎｄｅｒｓｔａｎｄ，@WI(15)　ｓｏ　Ｉ’ｌｌ　ｅｘｐｌａｉｎ　ｉｔ　ｔｏ　ｙｏｕ．@KEY()↓
+◆Ｗｈｅｎ　ｔｈｅ　ｗｏｒｌｄ　ｉｓ　ｃｈａｎｇｅｄ　ｔｏ　ｂｌｕｅ，@WI(15)　ａ　ｐｅａｃｅｆｕｌ　ｃｏｕｎｔｒｙ　ｃａｎ　ｂｅ　ｅｓｔａｂｌｉｓｈｅｄ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｕｎｄｅｒｓｔａｎｄ　ｎｏｗ？↓
+　　<Ｙｅｓ>　　<Ｎｏ>
+;jpn:◆おまえにゃ　わかんねぇだろうから↓
+;jpn:　かいせつしてやるが@KEY()↓
+;jpn:◆せかいを　ブルーにかえたら↓
+;jpn:　しあわせのくには　やってくる。@KEY()↓
+;jpn:◆わかるだろ？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_HAPPY_SHINTO_B_YES,_HAPPY_SHINTO_B_NO)
+
+_HAPPY_SHINTO_B_NO;
+◆Ａｌｔｈｏｕｇｈ　ｙｏｕ　ｄｏｎ’ｔ　ｕｎｄｅｒｓｔａｎｄ　ｎｏｗ，　ｓｏｍｅ　ｄａｙ　ｙｏｕ　ｗｉｌｌ．
+;jpn:◆いまは　わからなくても↓
+;jpn:　いずれわかるんだよ。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_B_YES;
+◆Ｉ　ｃａｎ　ｔｅｌｌ　ｂｙ　ｙｏｕｒ　ｆａｃｅ　ｔｈａｔ　ｙｏｕ’ｒｅ　ｏｎｌｙ　ｐｒｅｔｅｎｄｉｎｇ　ｔｏ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
+◆Ｙｏｕ　ｊｕｓｔ　ｗａｎｔ　ｓｏｍｅｔｈｉｎｇ！
+;jpn:◆そのかおは↓
+;jpn:　「わかったふりをしてるかお」だ。@WI(20)↓
+;jpn:　おちょうしものめ！
+@KEYNP()
+』
+
+_HAPPY_SHINTO_B_LATER;
+◆Ｉ　ｔｏｏ　ｗａｓ　ｗｒｏｎｇ　ｉｎ　ｍａｙ　ｗａｙｓ．
+;jpn:◆いろいろ　おれも　まちがってた。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ｃ
+;@Figure:ボロ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_C
+MSG_HAPPY_SHINTO_C;
+@CHKFGOTO(FLG_WIN_GIEGU,_HAPPY_SHINTO_C_END)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_C_LATER)
+◆Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｃｏｍｍｕｎｉｃａｔｅｓ　ｗｉｔｈ　ｔｈｅ　ｄｉｖｉｎｅ，@KEY()↓
+◆ｓｏ　ｈｅ　ｉｓ　ａｂｌｅ　ｔｏ　ｄｅｌｉｖｅｒ　ｉｎｓｐｉｒｅｄ　ｍｅｓｓａｇｅｓ．
+;jpn:◆カーペインターさまは↓
+;jpn:　いろんな　かみさまと↓
+;jpn:　こうしんできるんだぜ。@KEY()↓
+;jpn:◆そいでもって↓
+;jpn:　おつげを　くださるんだ。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_C_LATER;
+◆Ｗｅ　ｍｉｇｈｔ　ｈａｖｅ　ｂｅｅｎ　ｌｉｓｔｅｎｉｎｇ　ｔｏ　ｅｖｉｌ　ｍｅｓｓａｇｅｓ　ｒａｔｈｅｒ　ｔｈａｎ　ｇｏｏｄ．
+;jpn:◆おれたち　かみさまじゃなくて↓
+;jpn:　あくまの　おつげを↓
+;jpn:　きいていたのかも　しれない‥‥。
+@KEYNP()
+』
+_HAPPY_SHINTO_C_END;
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｔｈｅ　ｍｅｎｔａｌ　ｈｅａｌｔｈ　ｏｆ　ｅｖｅｒｙｏｎｅ　ｉｎ　ｔｈｅ　ｖｉｌｌａｇｅ　ｉｓ　ｉｍｐｒｏｖｅｄ？
+;jpn:◆このむらのやつら　みんな↓
+;jpn:　げんきそうになっただろ？
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ｅ
+;@Figure:レゲエ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_E
+MSG_HAPPY_SHINTO_E;＆
+@CHKFGOTO(FLG_WIN_GIEGU,MSG_HAPPY_THANKYOU)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_E_LATER)
+◆Ｙｏｕ　ｍｉｇｈｔ　ｍｉｓｕｎｄｅｒｓｔａｎｄ　ｗｈａｔ　Ｉ　ｈａｖｅ　ｔｏ　ｓａｙ，@KEY()↓
+◆Ｂｕｔ　Ｃａｒｐａｉｎｔｅｒ’ｓ　ｖｏｉｃｅ　ａｆｆｅｃｔｓ　ｐｅｏｐｌｅ’ｓ　ｍｉｎｄ，　ｌｉｋｅ　ａ　ｈｙｐｎｏｔｉｓｔ．
+;jpn:◆こういうと　ゴカイされちゃう↓
+;jpn:　かもしれないけど@KEY()↓
+;jpn:◆カーペインターさんの　おハナシは↓
+;jpn:　まるで　さいみんじゅつのように↓
+;jpn:　ひとのココロを　うごかすんだよ。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_E_LATER;
+◆Ｓｅｅｍｓ　ｌｉｋｅ　Ｉ’ｍ　ｎｏ　ｌｏｎｇｅｒ　ｈｙｐｎｏｔｉｚｅｄ．
+;jpn:◆さいみんじゅつが　とけたみたい。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ｇ
+;@Figure:おじさんＢ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_G
+MSG_HAPPY_SHINTO_G;
+@CHKFGOTO(FLG_WIN_GIEGU,_HAPPY_SHINTO_G_END)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_G_LATER)
+◆Ｗｈｅｎ　Ｉ　ｐａｉｎｔｅｄ　ｅｖｅｒｙｔｈｉｎｇ　ｂｌｕｅ，　ａｓ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｓａｉｄ，@KEY()↓
+◆ｍｙ　ｗｉｆｅ　ｗｈｏ　ｈａｄ　ｒｕｎ　ｏｕｔ　ｏｎ　ｍｅ　ｒｅｔｕｒｎｅｄ　ｈｏｍｅ！
+;jpn:◆カーペインターさんの　いうとおり↓
+;jpn:　あちこちを　ブルーにぬったら@KEY()↓
+;jpn:◆にげたにょうぼが↓
+;jpn:　もどってきたんだよ。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_G_LATER;
+◆Ｍｙ　ｗｉｆｅ　ｈａｓ　ｒｕｎ　ａｗａｙ　ｆｏｒ　ａ　ｓｅｃｏｎｄ　ｔｉｍｅ．@WI(20)　　Ｉ’ｍ　ｓｕｃｈ　ａ　ｌｕｃｋｙ　ｍａｎ！
+;jpn:◆もどったにょうぼが　またにげた。@WI(20)↓
+;jpn:　なんか　ツイてないなぁ。
+@KEYNP()
+』
+_HAPPY_SHINTO_G_END;＆
+◆Ｗｏｗ，　ｉｔ’ｓ　ｂｅｅｎ　ａ　ｌｏｎｇ　ｔｉｍｅ．@WI(20)　　Ｙｏｕｒ　ｃａｐ．．．　　Ｄｏ　ｙｏｕ　ｅｖｅｒ　ｗａｓｈ　ｉｔ？
+;jpn:◆やあ　なつかしいなぁ。@WI(30)↓
+;jpn:　そのぼうし↓
+;jpn:　たまには　あらうの？
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ｈ
+;@Figure:青年
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_H
+MSG_HAPPY_SHINTO_H;
+@CHKFGOTO(FLG_TLPT_THRK,_HAPPY_SHINTO_H_END)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_H_LATER)
+◆Ｉ　ｔｈｉｎｋ　ｔｈａｔ　ｔｈｏｓｅ　ｗｈｏ　ｗｏｎ’ｔ　ｐａｉｎｔ　ｅｖｅｒｙｔｈｉｎｇ　ｂｌｕｅ　ａｒｅ　ｏｐｐｏｓｅｄ　ｔｏ　ｐｅａｃｅ．@KEY()↓
+◆Ｉ　ｗａｎｔ　ｔｈｅｍ　ａｌｌ　ｔｏ　ｌｉｓｔｅｎ，@WI(15)　ｅｖｅｎ　ｉｆ　ｉｔ　ｒｅｑｕｉｒｅｓ　ｋｉｃｋｉｎｇ　ｔｈｅｉｒ　ｂｕｔｔｓ．
+;jpn:◆おれ　あちこちを↓
+;jpn:　ブルーにぬらないやつらって↓
+;jpn:　しあわせのてきだと　おもうんだ。@KEY()↓
+;jpn:◆そういうやつは↓
+;jpn:　ぶっとばしてでも　いうことを↓
+;jpn:　きかせてやろうと　おもうね。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_H_LATER;
+◆Ｗｅ　ｎｅｅｄ　ｔｏ　ｒｅｔｕｒｎ　ｔｈｅ　ｔｏｗｎ　ｔｏ　ｉｔｓ　ｏｒｉｇｉｎａｌ　ｃｏｌｏｒｓ．@WI(20)　　Ｉ’ｌｌ　ｂｅ　ｖｅｒｙ　ｂｕｓｙ．
+;jpn:◆ブルーに　ぬりたくったまちを↓
+;jpn:　もとにもどさないとな。@WI(20)↓
+;jpn:　ああ　いそがしい。
+@KEYNP()
+』
+_HAPPY_SHINTO_H_END;＆
+◆Ｉ　ｓｈｏｕｌｄｎ’ｔ　ｂｅ　ｓｏ　ｄｅｓｐｅｒａｔｅ　ｔｏ　ｃｈａｓｅ　ａｆｔｅｒ　ｈａｐｐｉｎｅｓｓ．
+;jpn:◆ひっしになって↓
+;jpn:　しあわせを　さがすなんて↓
+;jpn:　しあわせじゃなかったね。
+@KEYNP()
+』
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ｉ
+;@Figure:トランペッター
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_I
+MSG_HAPPY_SHINTO_I;
+@CHKFGOTO(FLG_WIN_GIEGU,_HAPPY_SHINTO_I_END)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_I_LATER)
+◆Ｂｌｕｅ，　ｂｌｕｅ！@KEY()↓
+◆Ｉ　ｗｉｓｈ　ｆｏｒ　ｅｖｅｒｙｔｈｉｎｇ　ｉｎ　ｔｈｉｓ　ｗｏｒｌｄ　ｔｏ　ｂｅｃｏｍｅ　ｂｌｕｅ．
+;jpn:◆ブルーブルー！↓
+;jpn:　せかいじゅうが　ブルーに↓
+;jpn:　なりますように。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_I_LATER;
+◆Ｉｔ　ｗａｓ　ｈａｒｄ　ｏｎ　ｔｈｅ　ｅｙｅｓ　ｔｏ　ｈａｖｅ　ｅｖｅｒｙｔｈｉｎｇ　ｂｌｕｅ．
+;jpn:◆まちじゅうブルーってのは↓
+;jpn:　めに　わるかったよな。たしかに。
+@KEYNP()
+』
+_HAPPY_SHINTO_I_END;＆
+◆Ｈｅｙ，@WI(15)　ｌｏｎｇ　ｔｉｍｅ　ｎｏ　ｓｅｅ．@KEY()↓
+◆Ｙｏｕ’ｒｅ　ａ　ｆｒｉｅｎｄ　ｏｆ　ｔｈｅ　ｆａｍｏｕｓ　Ｒｕｎａｗａｙ　Ｆｉｖｅ．
+;jpn:◆やあ　ごぶさた。@KEY()↓
+;jpn:◆きみ　あの　ゆうめいな↓
+;jpn:　トンズラブラザーズの↓
+;jpn:　ともだちだったんだね。@KEY()↓
+;jpn:◆うらやましいなぁ。
+@KEYNP()
+』
+
+
+;@Habitat:ハッピー村／フィールド／村の至る所
+;@Person:信徒Ｊ
+;@Figure:ＯＬＡ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_SHINTO_J
+MSG_HAPPY_SHINTO_J;
+@CHKFGOTO(FLG_WIN_GIEGU,_HAPPY_SHINTO_J_END)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_SHINTO_J_LATER)
+◆Ｙｏｕ　ｗａｎｔ　ｔｏ　ｔａｌｋ　ｔｏ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｄｉｒｅｃｔｌｙ？@KEY()↓
+◆Ｙｏｕ　ｍｕｓｔ　ｔｈｉｎｋ　ｙｏｕ’ｒｅ　ｐｒｅｔｔｙ　ｉｍｐｏｒｔａｎｔ，　ｂｕｔ　ｙｏｕ　ｈａｖｅ　ａ　ｌｏｔ　ｏｆ　ｎｅｒｖｅ！@KEY()↓
+◆Ｙｏｕ　ｄｅｓｅｒｖｅ　ｔｏ　ｂｅ　ｓｔｒｕｃｋ　ｂｙ　ｌｉｇｈｔｎｉｎｇ．
+;jpn:◆カーペインターさまと↓
+;jpn:　ちょくせつ↓
+;jpn:　おはなししたいですって？@KEY()↓
+;jpn:◆なんて　ずうずうしいの！@KEY()↓
+;jpn:◆あんたみたいな　こどもは↓
+;jpn:　カミナリにうたれて↓
+;jpn:　しんでしまえば　いいわ。
+@KEYNP()
+』
+
+_HAPPY_SHINTO_J_LATER;
+◆Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｗａｓ　ｐｒｅｔｔｙ　ｓｔｒａｎｇｅ．@WI(20)　　Ｂｕｔ　ｓｏ　ｗａｓ　ｅｖｅｒｙｏｎｅ　ｅｌｓｅ．
+;jpn:◆カーペインターも　ヘンだったけど↓
+;jpn:　みんなも　おかしくなってたのね。
+@KEYNP()
+』
+_HAPPY_SHINTO_J_END;＆
+◆Ｈｉ！@WI(20)　　Ｉ’ｍ　ｆｉｎｅ．@WI(30)　　Ｙｏｕ　ｌｏｏｋ　ｆｉｎｅ　ａｌｓｏ．
+;jpn:◆ハーイ！@WI(20)↓
+;jpn:　わたしは　げんきよ。@WI(30)↓
+;jpn:　あたたも　げんきそうね。
+@KEYNP()
+』
+
+;@Habitat:ハッピー村／フィールド／牧場
+;@Person:牛
+;@Figure:うし
+;@AppearanceKey:0
+;@ActionScript:◆牛な動きだモー
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_HAPPY_USHI
+MSG_HAPPY_USHI;
+@CHKFGOTO(FLG_WIN_GIEGU,_HAPPY_USHI_END)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_USHI_LATER)
+@CHKFGOTO(FLG_TEMP_9,_HAPPY_USHI_TEMP)
+@CHKFGOTO(FLG_HAPPY_USHI,_HAPPY_USHI_1)
+◆（Ｉ’ｍ　ｊｕｓｔ　ａ　ｐｌａｉｎ　ｏｌ’　ｃｏｗ，@WI(15)　　ｂｕｔ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ’ｓ　ｍｅｓｓａｇｅｓ　ａｌｗａｙｓ　ｍｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｖｅ　ｍｅ．）
+;jpn:◆（わしは　ただのうしですけんど@WI(15)↓
+;jpn:　カーペインターさんの　おはなしは↓
+;jpn:　こころに　しみいるです）
+@KEYNP()
+@SETF(FLG_HAPPY_USHI)
+』
+
+_HAPPY_USHI_1;
+◆（Ｍｏｏ！）
+;jpn:◆（もう！）
+@KEYNP()
+@CLRF(FLG_HAPPY_USHI)
+』
+
+_HAPPY_USHI_LATER;
+◆（Ｔｈｅ　ｂｌｕｅ　ｃｏｗ　ｔｈｉｎｇ　ｗａｓｎ’ｔ　ｓｕｃｈ　ａ　ｇｒｅａｔ　ｉｄｅａ　ａｆｔｅｒ　ａｌｌ，　ｈｕｈ．）
+;jpn:◆（やっぱり　あおいうしは↓
+;jpn:　まずかったですよね）
+@KEYNP()
+』
+
+_HAPPY_USHI_TEMP;
+◆（Ｙｏｕ　ｇｏｔ　ｍｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｖｅｄ　ｈｅｒｅ　ｂｅｃａｕｓｅ　ｙｏｕ　ｇａｖｅ　Ｍｒ．Ｃａｒｐａｉｎｔｅｒ　ｓｏｍｅ　ｌｉｐ．）
+;jpn:◆（カーペインターさんに@WI(30)↓
+;jpn:　さからいなすっただね？）
+@KEYNP()
+』
+_HAPPY_USHI_END;＆
+◆（Ｉ　ｈａｖｅ　ｍｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｒｅ　ｒｅｓｐｅｃｔ　ｆｏｒ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｔｈａｎ　ｏｔｈｅｒｓ．@KEY()↓
+◆Ｅｖｅｎ　ｉｆ　Ｉ　ｂｅｃｏｍｅ　ｓｏｍｅｏｎｅ’ｓ　ｓｔｅａｋ　ｄｉｎｎｅｒ，@WI(15)　Ｉ’ｌｌ　ｓｔｉｌｌ　ｒｅｓｐｅｃｔ　ｈｉｍ．）
+;jpn:◆（わしは　いまでも↓
+;jpn:　カーペインターさんのことを↓
+;jpn:　そんけいしておるです。@KEY()↓
+;jpn:◆わしは　たとえ↓
+;jpn:　ステーキになっても@KEY()↓
+;jpn:◆カーペインターさんを↓
+;jpn:　そんけいしつづけるでしょう）
+@KEYNP()
+』
+
+;-------------------------------------------------
+
+MSG_HAPPY_KANBAN_TO_GRFD;
+◆（Ｐｅａｃｅｆｕｌ　Ｒｅｓｔ　Ｖａｌｌｅｙ　ａｈｅａｄ．@WI(20)　　Ｐｒｏｃｅｅｄ　ｔｈｒｏｕｇｈ　ｃａｖｅ．）
+;jpn:◆（このどうくつの　さき↓
+;jpn:　グレートフルデッドのたに）
+@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_HAPPY_INN;ハッピーハッピーむらの宿泊所
+@GOSUB(MSG_HOTEL_HAPPY)
+@!
+
+MSG_HAPPY_PEOPLE_BRIDGE;橋の人
+;カーペインターを倒したあとに出現する
+@CHKFGOTO(FLG_WIN_GIEGU,_HAPPY_PEOPLE_BRIDGE_LATER)
+◆Ｂｌｕｅ，　ｂｌｕｅ．．．@KEY()↓
+◆Ｏｏｐｓ！　　Ｉ　ｗｏｎ’ｔ　ｓａｙ　ｉｔ　ａｇａｉｎ．@KEY()↓
+◆Ｉ　ｆｉｘｅｄ　ｔｈｅ　ｂｒｉｄｇｅ　ａｓ　ａ　ｓｉｇｎ　ｏｆ　ａｐｏｌｏｇｙ．@WI(20)　　Ｉ’ｍ　ｊｕｓｔ　ｔｒｙｉｎｇ　ｔｏ　ｈｅｌｐ．
+;jpn:◆ブルーブルー‥‥@KEY()↓
+;jpn:◆とは@KEY()↓
+;jpn:◆もう　いわない。@KEY()↓
+;jpn:◆つみほろぼしに↓
+;jpn:　こわれたはしを　なおしたんだ。@KEY()↓
+;jpn:◆みんなの　やくに↓
+;jpn:　たちたくてね。
+@KEYNP()
+』
+_HAPPY_PEOPLE_BRIDGE_LATER;＆
+◆Ｉｓ　ｔｈａｔ　@DSP_STS(STS_PC_NAME_NES)？@WI(15)　　Ｙｏｕ’ｒｅ　ａｌｗａｙｓ　ｓｏ　ｃｈｅｅｒｆｕｌ！@KEY()↓
+◆Ｔｈａｎｋｓ　ｆｏｒ　ｔｈｅ　ｈｅｌｐ　ｔｈｅ　ｏｔｈｅｒ　ｄａｙ．
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)くんって↓
+;jpn:　いったっけ？@KEY()↓
+;jpn:◆きみは　いつも↓
+;jpn:　あかるいねぇ！@KEY()↓
+;jpn:◆いつかは　どうも　ありがとう。
+@KEYNP()
+』
+
+MSG_HAPPY_PEOPLE_LLPT_A;リリパット前の人
+@CHKFGOTO(FLG_WIN_LLPT_BOSS,_HAPPY_PEOPLE_LLPT_A_AFTER)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HAPPY_PEOPLE_LLPT_A_LATER)
+◆Ｔｈｅｒｅ’ｓ　ａ　ｐｌａｃｅ　ａｈｅａｄ　ｔｈａｔ　ｃａｎ’ｔ　ｂｅ　ｐａｉｎｔｅｄ　ｂｌｕｅ．@KEY()↓
+◆Ｉｔ’ｓ　ａ　ｓｔｒａｎｇｅ　ａｎｄ　ａｎｔｉ－ｂｌｕｅ　ｐｌａｃｅ．@KEY()↓
+◆Ｉ　ｃａｎ’ｔ　ｓｔｏｐ　ｔｈｉｎｋｉｎｇ　ａｂｏｕｔ　ｉｔ．．．ａｎｄ　Ｉ　ｃａｎ’ｔ　ｅｖｅｎ　ｇｏ　ｎｅａｒ　ｔｈａｔ　ｐｌａｃｅ．
+;jpn:◆この　おくには↓
+;jpn:　なんか　ブルーにそまらない@KEY()↓
+;jpn:◆とくべつな　いやな↓
+;jpn:　ばしょが　ある。@KEY()↓
+;jpn:◆きに　なってしょうがないんだが↓
+;jpn:　はいることも　できないんだ。
+@KEYNP()
+』
+_HAPPY_PEOPLE_LLPT_A_LATER;カーペインター倒した後
+◆Ｉ’ｍ　ａ　ｃｈａｎｇｅｄ　ｐｅｒｓｏｎ．@WI(20)　　Ｉ’ｍ　ｎｏ　ｌｏｎｇｅｒ　ａ　ｂｅｌｉｅｖｅｒ　ｉｎ　Ｈａｐｐｙ－ｈａｐｐｉｓｍ．@KEY()↓
+◆Ａｎｙｗａｙ，　Ｉ’ｍ　ｖｅｒｙ　ｃｕｒｉｏｕｓ　ａｂｏｕｔ　ｔｈｅ　ｐｌａｃｅ　ｔｈａｔ　ｌｉｅｓ　ａｈｅａｄ　ｏｆ　ｈｅｒｅ．
+;jpn:◆おれ　もう　こないだまでの↓
+;jpn:　ハッピーハッピーきょうの↓
+;jpn:　しんじゃじゃないよ。@KEY()↓
+;jpn:◆それは　そうとしても↓
+;jpn:　このおくが　どうなってるか↓
+;jpn:　きになるんだよなぁ。
+@KEYNP()
+』
+_HAPPY_PEOPLE_LLPT_A_AFTER;リリパット後
+◆Ｗｈａｔ　ｗａｓ　ｔｈｅ　ａｎｔｉ－ｂｌｕｅ　ｐｌａｃｅ　ｌｉｋｅ？@KEY()↓
+◆Ｗａｓ　ｉｔ　ｓｃａｒｙ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆この　おく‥‥↓
+;jpn:　どうなってた？↓
+;jpn:　こわかった？@KEY()↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_HAPPY_PEOPLE_LLPT_A_YES,_HAPPY_PEOPLE_LLPT_A_NO)
+_HAPPY_PEOPLE_LLPT_A_NO;
+◆Ｙｏｕ　ｓｅｅｍ　ｔｏ　ｔｈｒｉｖｅ　ｉｎ　ｐｌａｃｅｓ　ｌｉｋｅ　ｔｈａｔ．
+;jpn:◆おまえには↓
+;jpn:　あいしょうのいい↓
+;jpn:　ばしょらしいな。
+@KEYNP()
+』
+_HAPPY_PEOPLE_LLPT_A_YES;
+◆Ｄｉｄ　ｙｏｕ　ｓｅｅ　ａ　ｈｕｇｅ　ｍｏｌｅ，　ｌｉｋｅ　Ｉ’ｖｅ　ｈｅａｒｄ　ｌｉｖｅｓ　ｔｈｅｒｅ？
+;jpn:◆やっぱり　きょだいなモグラとか↓
+;jpn:　いたんだろ？@KEY()↓
+;jpn:◆うわさどおりだな。
+@KEYNP()
+』
+
+MSG_HAPPY_PEOPLE_LLPT_B;リリパット情報ノ女（リリパットをクリアしたら消える）
+◆Ｉ　ｈｅａｒｄ　ｍａｎｙ　ｆｏｏｔｐｒｉｎｔｓ　ｅｘｉｓｔ　ｄｅｅｐ　ｄｏｗｎ　ｉｎ　ｔｈｅ　ｅａｓｔ　ｃａｖｅ．@KEY()↓
+◆Ｐｅｏｐｌｅ　ｃａｌｌ　ｔｈａｔ　ｐｌａｃｅ　Ｌｉｌｌｉｐｕｔ　Ｓｔｅｐｓ，　ａｎｄ　ｉｔ　ｍａｋｅｓ　ｔｈｅｍ　ｎｅｒｖｏｕｓ．
+;jpn:◆ひがしの　どうくつの↓
+;jpn:　おくの　おくに‥‥@KEY()↓
+;jpn:◆ちいさな　あしあとが↓
+;jpn:　いっぱいあるらしいの。@KEY()↓
+;jpn:◆みんなは↓
+;jpn:　「リリパット・ステップ」とよんで↓
+;jpn:　きみわるがっているわ。
+@KEYNP()
+』
+
+MSG_HAPPY_MDUNGEON_AFTER_A;ダンジョンの跡（３人）
+◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａｌｍｏｓｔ　ｅｖｅｒｙｏｎｅ　ｗｏｋｅ　ｕｐ　ａｎｄ　ｌｅｆｔ．．．
+;jpn:◆とほほほ。↓
+;jpn:　みんな　めがさめたみたいな↓
+;jpn:　かおをして‥‥@KEY()↓
+;jpn:◆さっさと　かえっちゃったよ。
+@KEYNP()
+』
+MSG_HAPPY_MDUNGEON_AFTER_B;
+◆Ｔｈｅｒｅ　ａｒｅ　ｏｎｌｙ　ｔｈｒｅｅ　ｐｅｏｐｌｅ　ｒｅｍａｉｎｉｎｇ．．．@KEY()↓
+◆Ｉ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ　ｓｔａｙ．@WI(20)　　Ｉ’ｌｌ　ｇｅｔ　ｏｕｔ　ｏｆ　ｈｅｒｅ．．．
+;jpn:◆のこったのは　３にんだけか‥‥。@KEY()↓
+;jpn:◆かえりそびれちゃった↓
+;jpn:　だけなんだけどなー。
+@KEYNP()
+』
+MSG_HAPPY_MDUNGEON_AFTER_C;
+◆Ｓｏｒｒｙ　ａｂｏｕｔ　ｅｖｅｒｙｔｈｉｎｇ！@WI(15)　　Ｌｅｔ’ｓ　ｂｅ　ｂｕｄｄｉｅｓ．
+;jpn:◆さっきは　ゴメンね。↓
+;jpn:　なかよく　してね。
+@KEYNP()
+』
+;------------------------------------------------
+
+MSG_HAPPY_KIFU_A;
+◆Ｗｅ　ｗａｎｔｅｄ　ｔｏ　ｊｏｉｎ　ｔｈｅ　Ｈａｐｐｙ－Ｈａｐｐｙ　ｒｅｌｉｇｉｏｕｓ　ｇｒｏｕｐ．@KEY()↓
+◆Ｗｅ’ｒｅ　ａ　ｍａｒｒｉｅｄ　ｃｏｕｐｌｅ　ｆｒｏｍ　Ｔｗｏｓｏｎ．
+;jpn:◆ハッピーハッピーきょうだんに↓
+;jpn:　いれてもらおうとおもって@KEY()↓
+;jpn:◆ふうふで　ツーソンのまちから↓
+;jpn:　やってきたんだけどね。
+@KEYNP()
+』
+
+MSG_HAPPY_KIFU_B;
+◆Ｏｕｒ　ｃｈｉｌｄ　ｉｓ　ｗａｉｔｉｎｇ　ｆｏｒ　ｕｓ　ｉｎ　Ｔｗｏｓｏｎ．@KEY()↓
+◆Ａｓ　ａ　ｓｏｕｖｅｎｉｒ　ｗｅ’ｄ　ｌｉｋｅ　ｔｏ　ｂｒｉｎｇ　ｈｉｍ　ｓｏｍｅ　ｈａｐｐｉｎｅｓｓ．
+;jpn:◆わたしたちの　こどもが↓
+;jpn:　ツーソンのじたくで↓
+;jpn:　るすばんしてるんだけど@KEY()↓
+;jpn:◆しあわせを　おみやげに↓
+;jpn:　もってかえろうと　おもうの。
+@KEYNP()
+』
+
+MSG_HAPPY_KIFU_C;
+◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｆａｍｏｕｓ　Ｈａｐｐｙ－Ｈａｐｐｙｉｓｍ　ｃｏｕｎｓｅｌｉｎｇ　ｏｆｆｉｃｅ．@KEY()↓
+◆Ｗｈｅｎ　ｙｏｕ　ｏｂｔａｉｎ　ｈａｐｐｉｎｅｓｓ@KEY()↓
+◆ｙｏｕ　ｓｈｏｕｌｄ　ｖｉｓｉｔ　ｔｈｅ　Ｈａｐｐｙ－Ｈａｐｐｙｉｓｍ　ｈｅａｄｑｕａｒｔｅｒｓ．@KEY()↓
+◆Ｉｔ’ｓ　ｌｏｃａｔｅｄ　ａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　ｔｈｅ　ｖｉｌｌａｇｅ．
+;jpn:◆ここが　ゆうめいな↓
+;jpn:　ハッピーハッピーきょうの↓
+;jpn:　しあわせそうだんじょです。@KEY()↓
+;jpn:◆ハッピーを　てにいれたいなら↓
+;jpn:　とにもかくにも@KEY()↓
+;jpn:◆このむらの　ちゅうおうにある↓
+;jpn:　きょうだんほんぶの　たてものを↓
+;jpn:　たずねることですよ。
+@KEYNP()
+』
+;------------------------------------------------
+MSG_HAPPY_CARPAINTER_END;＆カーペインター
+◆Ｈｅｙ，　@DSP_STS(STS_PC_NAME_NES)　　ｉｔ’ｓ　ｂｅｅｎ　ａ　ｌｏｎｇ　ｔｉｍｅ．@KEY()↓
+◆Ｓｉｎｃｅ　ｗｅ　ｌａｓｔ　ｍｅｔ，　ｔｈｅ　ｗｈｏｌｅ　ｔｏｗｎ　ｈａｓ　ｗｏｋｅｎ　ｕｐ．@KEY()↓
+◆Ｔｈｅ　ｂｅｓｔ　ｈａｐｐｉｎｅｓｓ　ｃｏｍｅｓ　ｆｒｏｍ　ｂｅｉｎｇ　ｆｒｅｅ．．．ｙｏｕ　ｋｉｄｓ　ｍａｄｅ　ｍｅ　ｒｅａｌｉｚｅ　ｔｈａｔ．
+;jpn:◆やあ　@DSP_STS(STS_PC_NAME_NES)くん↓
+;jpn:　ずいぶん　ひさしぶりだ。@KEY()↓
+;jpn:◆あれから　わしも↓
+;jpn:　このむらも↓
+;jpn:　すっかり　めがさめたよ。@KEY()↓
+;jpn:◆ひとりひとりの　ひとたちが↓
+;jpn:　のびのびと　じゆうにくらせるのが↓
+;jpn:　なによりなんだね。@KEY()↓
+;jpn:◆‥‥きみたちの　おかげで↓
+;jpn:　そんな　かんたんなことが↓
+;jpn:　やっと　わかるようになったよ。
+@KEYNP()
+』
+;------------------------------------------------
+
+;ハッピー村のドラッグストアに看板
+MSG_HAPPY_CHECK_DRUGSHOP;
+@CHKFGOTO( FLG_WIN_CARPAINTER, _HAPPY_CHECK_DRUGSHOP_LATER )
+◆（Ａｌｌ　ｏｆ　ｏｕｒ　ｐｒｏｄｕｃｔｓ　ａｒｅ　ｂｌｅｓｓｅｄ．@WI(20)↓
+　　　　　　　　　　　　　－－Ｂｌｕｅ－Ｂｌｕｅ　Ｄｒｕｇｓｔｏｒｅ）
+;jpn:◆（すべての　しょうひん↓
+;jpn:　おいのりずみ↓
+;jpn:　　　　　ブルーブルーショップ）
+@KEYNP()
+』
+_HAPPY_CHECK_DRUGSHOP_LATER;
+◆（Ｎｏｔ　ａｌｌ　ｏｆ　ｏｕｒ　ｐｒｏｄｕｃｔｓ　ａｒｅ　ｂｌｅｓｓｅｄ．↓
+　　　　　－－Ｎｏｔｈｉｎｇ　Ｂｌｕｅ　Ｄｒｕｇｓｔｏｒｅ）
+;jpn:◆（すべての　しょうひんは↓
+;jpn:　おいのりとか　していません。↓
+;jpn:　　　　ドラッグストア・おなじみ）
+@KEYNP()
+』
+;------------------------------------------------

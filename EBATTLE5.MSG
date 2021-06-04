@@ -1,0 +1,753 @@
+;/////////////////////////////////回復/////////////////////////////////
+
+MSG_BTL_HPMAX_KAIFUKU;
+←
+◆@DSP_OBJECT()’ｓ　ＨＰ　ａｒｅ↓
+　　ｍａｘｅｄ　ｏｕｔ！
+;jpn:　@DSP_OBJECT()のＨＰが↓
+;jpn:　まんタンになる！
+@SE(SE_se24_b_lifeup)
+@KEY()
+@!
+
+MSG_BTL_HP_KAIFUKU;
+←
+◆@DSP_OBJECT()　ｒｅｃｏｖｅｒｅｄ↓
+　　@DSP_CNUM()　ＨＰ！
+;jpn:　@DSP_OBJECT()のＨＰが↓
+;jpn:　@DSP_CNUM()かいふくする！
+@SE(SE_se24_b_lifeup)
+@KEY()
+@!
+
+MSG_BTL_PP_KAIFUKU;
+←
+◆@DSP_OBJECT()　ｒｅｃｏｖｅｒｅｄ↓
+　　@DSP_CNUM()　ＰＰ！
+;jpn:　@DSP_OBJECT()のＰＰが↓
+;jpn:　@DSP_CNUM()かいふくする！
+@SE(SE_se24_b_lifeup)
+@KEY()
+@!
+
+;///////////////////////////////チェック///////////////////////////////////
+
+MSG_BTL_CHECK_OFFENSE;
+←
+◆@DSP_OBJECT()’ｓ↓
+　　ｏｆｆｅｎｓｅ　ｉｓ　@DSP_CNUM()．
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　オフェンスが@DSP_CNUM()！
+@KEY()
+@!
+
+MSG_BTL_CHECK_DEFENSE;
+←
+　　Ｄｅｆｅｎｓｅ　ｉｓ　@DSP_CNUM()！
+;jpn:　ディフェンスが@DSP_CNUM()！
+@KEY()
+@!
+
+
+
+MSG_BTL_CHECK_ANTI_FIRE;●(akm0616 w/itoi)
+←
+◆Ｖｕｌｎｅｒａｂｌｅ　ｔｏ　ＰＳＩ　Ｆｉｒｅ！
+;jpn:　ＰＫファイアーに　よわい！
+@KEY()
+@!
+
+MSG_BTL_CHECK_ANTI_FREEZE;●(akm0616 w/itoi)
+←
+◆Ｖｕｌｎｅｒａｂｌｅ　ｔｏ　ＰＳＩ　Ｆｒｅｅｚｅ！
+;jpn:　ＰＫフリーズに　よわい！
+@KEY()
+@!
+
+MSG_BTL_CHECK_ANTI_FLASH;●(akm0616 w/itoi)
+←
+◆Ｖｕｌｎｅｒａｂｌｅ　ｔｏ　ＰＳＩ　Ｆｌａｓｈ！
+;jpn:　ＰＫフラッシュに　よわい！
+@KEY()
+@!
+
+MSG_BTL_CHECK_ANTI_PARALYSIS;●(akm0616 w/itoi)
+←
+◆Ｖｕｌｎｅｒａｂｌｅ　ｔｏ　Ｐａｒａｌｙｓｉｓ！
+;jpn:　パラライシスに　よわい！
+@KEY()
+@!
+
+MSG_BTL_CHECK_BRAIN_LEVEL_0;●(akm0616 w/itoi)
+←
+◆Ｏｐｅｎ　ｔｏ　Ｈｙｐｎｏｓｉｓ！
+;jpn:　さいみんじゅつに　よわい！
+@KEY()
+@!
+
+MSG_BTL_CHECK_BRAIN_LEVEL_3;●(akm0616 w/itoi)
+←
+◆Ｓｕｓｃｅｐｔｉｂｌｅ　ｔｏ　Ｂｒａｉｎ　Ｓｈｏｃｋ．
+;jpn:　ブレインショックに　よわい！
+@KEY()
+@!
+
+;//////////////////////////////特殊状態にかかる//////////////////////////////
+
+MSG_BTL_METAMORPHOSE_OK;●(akm0616 w/itoi)
+←
+◆Ｙｉｋｅｓ！　@DSP_ACTOR()　ｔｕｒｎｅｄ　ｉｎｔｏ↓
+　　@DSP_OBJECT()！
+;jpn:　なんと　@DSP_ACTOR()は　@DSP_OBJECT()に↓
+;jpn:　へんしんしてしまった！
+@KEY()
+@!
+
+MSG_BTL_METAMORPHOSE_NG;●(akm0616 w/itoi)
+←
+◆@DSP_ACTOR()　ｃｏｕｌｄ　ｎｏｔ　ｔｕｒｎ↓
+　　ｉｎｔｏ　@DSP_OBJECT()！
+;jpn:　@DSP_ACTOR()は　@DSP_OBJECT()に↓
+;jpn:　へんしんできなかった‥‥。
+@KEY()
+@!
+
+MSG_BTL_DAIYA_ON;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｄｉａｍｏｎｄｉｚｅｄ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　ダイヤモンドじょうたいに　なってしまった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_SHIBIRE_ON;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ↓
+　　ｂｅｃａｍｅ　ｎｕｍｂ！
+;jpn:　@DSP_OBJECT()のからだは↓
+;jpn:　しびれてしまった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_KIMOCHI_ON;
+←
+◆@DSP_OBJECT()　ｆｅｌｔ↓
+　　ｓｏｍｅｗｈａｔ　ｎａｕｓｅｏｕｓ．．．
+;jpn:　@DSP_OBJECT()は　なんだか↓
+;jpn:　きもちわるくなってしまった‥‥。
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_MODOKU_ON;
+←
+◆@DSP_OBJECT()　ｇｏｔ↓
+　　ｐｏｉｓｏｎｅｄ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　どくに　おかされた！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_KAZE_ON;
+←
+◆@DSP_OBJECT()　ｃａｕｇｈｔ　ａ　ｃｏｌｄ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　かぜを　ひいてしまった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+_SUB_GOBJECT_1;
+@GET_OBJECT(1)
+@ONGOTO(_GOBJECT_11,_GOBJECT_12,_GOBJECT_13)
+_GOBJECT_11;
+（ｈｅ）
+@!
+_GOBJECT_12;
+（ｓｈｅ）
+@!
+_GOBJECT_13;
+（ｉｔ）
+@!
+_SUB_GOBJECT_2;
+@GET_OBJECT(2)
+@ONGOTO(_GOBJECT_21,_GOBJECT_22,_GOBJECT_23)
+_GOBJECT_21;
+（１）
+@!
+_GOBJECT_22;
+（２）
+@!
+_GOBJECT_23;
+（３）
+@!
+
+
+MSG_BTL_KINOKO_ON;
+←
+◆@DSP_OBJECT()　ｂｅｇａｎ　ｔｏ↓
+　　ｆｅｅｌ　ｓｔｒａｎｇｅ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　ふしぎな　きもちになった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_TORITSU_ON;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｐｏｓｓｅｓｓｅｄ　ｂｙ　ａ　ｍｉｎｉ－ｇｈｏｓｔ！
+;jpn:　@DSP_OBJECT()は　ミニミニユーレイに↓
+;jpn:　とりつかれてしまった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_NAMIDA_ON;
+←
+◆@DSP_OBJECT()　ｃｏｕｌｄ　ｎｏｔ↓
+　　ｓｔｏｐ　ｃｒｙｉｎｇ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　なみだが　とまらなくなった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_SHIBARA_ON;
+←
+◆@DSP_OBJECT()　ｓｕｄｄｅｎｌｙ↓
+　　ｃｏｕｌｄ　ｎｏｔ　ｍｏｖｅ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　うごけなく　なってしまった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_KOORI_ON;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ↓
+　　ｓｏｌｉｄｉｆｉｅｄ！
+;jpn:　@DSP_OBJECT()のからだは↓
+;jpn:　かたまってしまった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_FUUIN_ON;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｎｏｔ　ａｂｌｅ　ｔｏ　ｃｏｎｃｅｎｔｒａｔｅ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　コンセントレーションが　できなくなった！
+@SE(SE_se53_foe_possess)
+@KEY()↓
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｎｏｔ　ａｂｌｅ　ｔｏ　ｕｓｅ　ＰＳＩ！
+;jpn:　ＰＳＩが↓
+;jpn:　つかえなくなった！
+@KEY()
+@!
+
+MSG_BTL_HEN_ON;
+←
+◆@DSP_OBJECT()　ｆｅｌｔ↓
+　　ａ　ｌｉｔｔｌｅ　ｓｔｒａｎｇｅ．．．
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　すこし　ヘンになった‥‥。
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_NEMURI_ON;
+←
+◆@DSP_OBJECT()　ｆｅｌｌ↓
+　　ａｓｌｅｅｐ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　ねむってしまった！
+@SE(SE_se53_foe_possess)
+@KEY()
+@!
+
+MSG_BTL_KIZETU_ON;
+←
+◆@DSP_OBJECT()　ｇｏｔ　ｈｕｒｔ↓
+　　ａｎｄ　ｃｏｌｌａｐｓｅｄ．．．
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　きずつき　たおれた‥‥。
+@SE(SE_se20_b_my_down)
+@KEY()
+@!
+
+MSG_SYS_NPCDEAD_FLYINGMAN;
+←
+◆@DSP_OBJECT()　ｇｏｔ　ｈｕｒｔ↓
+　　ａｎｄ　ｃｏｌｌａｐｓｅｄ．．．
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　きずつきたおれた‥‥。
+@SE(SE_se20_b_my_down)
+@CLRF(FLG_BGM_FLYINGMAN)
+@KEY()↓
+@CHKFGOTO(FLG_SYS_FLYINGMAN_DEAD_D,_FLYDEAD_E)
+@CHKFGOTO(FLG_SYS_FLYINGMAN_DEAD_C,_FLYDEAD_D)
+@CHKFGOTO(FLG_SYS_FLYINGMAN_DEAD_B,_FLYDEAD_C)
+@CHKFGOTO(FLG_SYS_FLYINGMAN_DEAD_A,_FLYDEAD_B)
+@SETF(FLG_SYS_FLYINGMAN_DEAD_A)
+@GOSUB(_SUB_FLYDEAD_DEL)
+』
+
+_FLYDEAD_B;
+@SETF(FLG_SYS_FLYINGMAN_DEAD_B)
+@GOSUB(_SUB_FLYDEAD_DEL)
+@!
+
+_FLYDEAD_C;
+@SETF(FLG_SYS_FLYINGMAN_DEAD_C)
+@GOSUB(_SUB_FLYDEAD_DEL)
+@!
+
+_FLYDEAD_D;
+@SETF(FLG_SYS_FLYINGMAN_DEAD_D)
+@GOSUB(_SUB_FLYDEAD_DEL)
+@!
+
+_FLYDEAD_E;
+@SETF(FLG_SYS_FLYINGMAN_DEAD_E)
+@GOSUB(_SUB_FLYDEAD_DEL)
+@!
+
+_SUB_FLYDEAD_DEL;
+@GET_ORDER_PLAYER(2)
+@SAVE_REG()
+@EQ(PC_FLYINGMAN1)
+@FALSE_GOTO(_FDEAD_DEL_2)
+@DEL_PARTY(PC_FLYINGMAN1)
+@!
+_FDEAD_DEL_2;
+@LOAD_REG()
+@EQ(PC_FLYINGMAN2)
+@FALSE_GOTO(_FDEAD_DEL_3)
+@DEL_PARTY(PC_FLYINGMAN2)
+@!
+_FDEAD_DEL_3;
+@LOAD_REG()
+@EQ(PC_FLYINGMAN3)
+@FALSE_GOTO(_FDEAD_DEL_4)
+@DEL_PARTY(PC_FLYINGMAN3)
+@!
+_FDEAD_DEL_4;
+@LOAD_REG()
+@EQ(PC_FLYINGMAN4)
+@FALSE_GOTO(_FDEAD_DEL_5)
+@DEL_PARTY(PC_FLYINGMAN4)
+@!
+_FDEAD_DEL_5;
+@DEL_PARTY(PC_FLYINGMAN5)
+@!
+
+MSG_SYS_NPCDEAD_NUIGURUMI;
+←
+◆@DSP_OBJECT()　ｂｅｃａｍｅ↓
+　　ａ　ｐｉｌｅ　ｏｆ　ｆｌｕｆｆ．．．
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　ボロボロに　こわれてしまった‥‥。
+@SE(SE_se20_b_my_down)
+@KEY()↓
+@GOODSOUT(PC_ALL,GDS_HAVE_NUIGURUMI)
+』
+
+MSG_SYS_NPCDEAD_NUIGURUMI_S;
+←
+◆@DSP_OBJECT()　ｂｅｃａｍｅ↓
+　　ａ　ｂｉｇ　ｐｉｌｅ　ｏｆ　ｆｌｕｆｆ．．．
+;jpn: @DSP_OBJECT()は↓
+;jpn: ﾎﾞﾛﾎﾞﾛに こわれてしまった‥‥。
+@SE(SE_se20_b_my_down)
+@KEY()↓
+@GOODSOUT(PC_ALL,GDS_HAVE_NUIGURUMI_SUPER)
+@!
+
+;以下は、最後に@KEY()を付けてはいけない。三浦兄
+;----------------------------------------------
+MSG_BTL_KIZETU_ON_M;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｄｅｆｅａｔｅｄ！
+;jpn:　@DSP_OBJECT()を↓
+;jpn:　たおした！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_UGOKANAKU;
+←
+◆@DSP_OBJECT()　ｓｔｏｐｐｅｄ↓
+　　ｍｏｖｉｎｇ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　うごかなくなった！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_OTONASHIKU;
+←
+◆@DSP_OBJECT()　ｂｅｃａｍｅ↓
+　　ｔａｍｅ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　おとなしくなった！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_KIESARU;
+←
+◆@DSP_OBJECT()　ｄｉｓａｐｐｅａｒｅｄ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　きえさった！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_KAKIKIERU;
+←
+◆Ｔｈｅ　ｆｉｇｕｒｅ　ｏｆ　@DSP_OBJECT()↓
+　　ｍｅｌｔｅｄ　ｉｎｔｏ　ｔｈｉｎ　ａｉｒ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　かききえた！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_KUDAKERU;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｂｒｏｋｅｎ　ｉｎｔｏ　ｐｉｅｃｅｓ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　こなごなに　くだけた！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_HAKAI;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｄｅｓｔｒｏｙｅｄ！
+;jpn:　@DSP_OBJECT()を↓
+;jpn:　はかいした！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_PONKOTSU;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ｔｏｔａｌｌｙ　ｓｃｒａｐｐｅｄ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　ポンコツに　なった！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_WARENI;
+←
+◆@DSP_OBJECT()　ｔｕｒｎｅｄ　ｂａｃｋ↓
+　　ｔｏ　ｎｏｒｍａｌ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　われに　かえった！
+@SE(SE_se21_b_foe_down)
+@!
+
+MSG_BTL_KIZETU_ON_TSUCHINI;
+←
+◆@DSP_OBJECT()　ｒｅｔｕｒｎｅｄ　ｔｏ　ｔｈｅ↓
+　　ｄｕｓｔ　ｏｆ　ｔｈｅ　ｅａｒｔｈ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　つちに　かえった！
+@SE(SE_se21_b_foe_down)
+@!
+
+
+;////////////////////////////特殊状態からの回復//////////////////////////
+
+MSG_BTL_DAIYA_OFF;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ↓
+　　ｒｅｔｕｒｎｅｄ　ｔｏ　ｎｏｒｍａｌ！
+;jpn:　@DSP_OBJECT()のからだは↓
+;jpn:　もとのすがたに　もどった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_SHIBIRE_OFF;
+←
+◆@DSP_OBJECT()’ｓ　ｎｕｍｂｎｅｓｓ↓
+　　ｉｓ　ｇｏｎｅ！
+;jpn:　@DSP_OBJECT()の↓
+;jpn:　からだのしびれが　きえた！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_KIMOCHI_OFF;
+←
+◆@DSP_OBJECT()　ｆｅｌｔ↓
+　　ｍｕｃｈ　ｂｅｔｔｅｒ！
+;jpn:　@DSP_OBJECT()の　きぶんは↓
+;jpn:　よくなった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_MODOKU_OFF;
+←
+◆Ｔｈｅ　ｐｏｉｓｏｎ　ｗａｓ　ｒｅｍｏｖｅｄ↓
+　　ｆｒｏｍ　@DSP_OBJECT()’ｓ　ｂｏｄｙ！
+;jpn:　@DSP_OBJECT()のからだから↓
+;jpn:　どくが　きえた！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_KAZE_OFF;
+←
+◆@DSP_OBJECT()　ｇｏｔ　ｏｖｅｒ↓
+　　ｔｈｅ　ｃｏｌｄ！
+;jpn:　@DSP_OBJECT()の　かぜが↓
+;jpn:　なおった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_NAMIDA_OFF;
+←
+◆@DSP_OBJECT()　ｆｉｎａｌｌｙ↓
+　　ｓｔｏｐｐｅｄ　ｃｒｙｉｎｇ．．．
+;jpn:　@DSP_OBJECT()の　なみだは↓
+;jpn:　ようやく　とまった‥‥。
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_SHIBARA_OFF;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ↓
+　　ａｇａｉｎ　ｍｏｖｅｄ　ｆｒｅｅｌｙ！
+;jpn:　@DSP_OBJECT()のからだは↓
+;jpn:　じゆうになった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_KOORI_STAT;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ａｂｌｅ　ｔｏ　ｍｏｖｅ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　うごけるようになった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_HEN_OFF;
+←
+◆@DSP_OBJECT()　ｗｅｎｔ↓
+　　ｂａｃｋ　ｔｏ　ｎｏｒｍａｌ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　もとにもどった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_NISSYA_OFF;
+←
+◆@DSP_OBJECT()’ｓ　ｓｕｎｓｔｒｏｋｅ↓
+　　ｗａｓ　ｃｕｒｅｄ！
+;jpn:　@DSP_OBJECT()の↓
+;jpn:　にっしゃびょうが　なおった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_NEMURI_OFF;
+←
+◆@DSP_OBJECT()　ｗｏｋｅ　ｕｐ！
+;jpn:　@DSP_OBJECT()は　めをさました！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_FUUIN_OFF;
+←
+◆@DSP_OBJECT()　ｗａｓ↓
+　　ａｂｌｅ　ｔｏ　ｃｏｎｃｅｎｔｒａｔｅ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　コンセントレーションできるように　なった！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_IKIKAERI;
+←
+◆@DSP_OBJECT()　ｗａｓ　ｒｅｖｉｖｅｄ！
+;jpn:　@DSP_OBJECT()は↓
+;jpn:　カムバックした！
+@SE(SE_se25_b_healing)
+@KEY()
+@!
+
+MSG_BTL_IKIKAERI_F;
+←
+◆Ｉｔ　ｄｉｄｎ’ｔ　ｗｏｒｋ．．．
+;jpn:　だめでした‥‥。
+@KEY()
+@!
+
+;////////////////////////////////シールド/////////////////////////////////////
+MSG_BTL_SHIELD_ON;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ　ｗａｓ↓
+　　ｐｒｏｔｅｃｔｅｄ　ｂｙ　ｔｈｅ　ｌｉｇｈｔ　ｆｒｏｍ　ｔｈｅ　Ｓｈｉｅｌｄ！
+;jpn:　@DSP_OBJECT()のからだが↓
+;jpn:　ひかりのシールドに　つつまれた！
+@KEY()
+@!
+
+MSG_BTL_SHIELD_ADD;
+←
+◆Ｔｈｅ　ｌｉｇｈｔ　ｆｒｏｍ　@DSP_OBJECT()’ｓ↓
+　　Ｓｈｉｅｌｄ　ｂｅｃａｍｅ　ｂｒｉｇｈｔｅｒ！
+;jpn:　@DSP_OBJECT()の　シールドの↓
+;jpn:　ひかりが　つよくなった！
+@KEY()
+@!
+
+MSG_BTL_POWER_ON;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ　ｗａｓ↓
+　　ｐｒｏｔｅｃｔｅｄ　ｂｙ　ｔｈｅ　Ｃｏｕｎｔｅｒ－ａｔｔａｃｋ　Ｓｈｉｅｌｄ！
+;jpn:　@DSP_OBJECT()のからだが↓
+;jpn:　はんげきのシールドに　つつまれた！
+@KEY()
+@!
+
+MSG_BTL_POWER_ADD;
+←
+◆@DSP_OBJECT()’ｓ　Ｃｏｕｎｔｅｒ－↓
+　　ａｔｔａｃｋ　Ｓｈｉｅｌｄ　ｂｅｃａｍｅ　ｓｔｒｏｎｇｅｒ！
+;jpn:　@DSP_OBJECT()の↓
+;jpn:　はんげきのシールドの　つよさが　ました！
+@KEY()
+@!
+
+MSG_BTL_PSYCO_ON;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ　ｗａｓ↓
+　　ｐｒｏｔｅｃｔｅｄ　ｂｙ　ｔｈｅ　Ｐｓｙｃｈｉｃ　Ｓｈｉｅｌｄ！
+;jpn:　@DSP_OBJECT()のからだが↓
+;jpn:　サイコシールドに　つつまれた！
+@KEY()
+@!
+
+MSG_BTL_PSYCO_ADD;
+←
+◆@DSP_OBJECT()’ｓ↓
+　　Ｐｓｙｃｈｉｃ　Ｓｈｉｅｌｄ　ｂｅｃａｍｅ　ｓｔｒｏｎｇｅｒ！
+;jpn:　@DSP_OBJECT()の　サイコシールドの↓
+;jpn:　つよさが　ました！
+@KEY()
+@!
+
+MSG_BTL_PSYPOWER_ON;
+←
+◆@DSP_OBJECT()’ｓ　ｂｏｄｙ　ｗａｓ↓
+　　ｐｒｏｔｅｃｔｅｄ　ｂｙ　ｔｈｅ　Ｃｏｕｎｔｅｒ－ａｔｔａｃｋ@KEY()↓
+◆Ｐｓｙｃｈｉｃ　Ｓｈｉｅｌｄ！
+;jpn:　@DSP_OBJECT()のからだが↓
+;jpn:　はんげきのサイコシールドに　つつまれた！
+@KEY()
+@!
+
+MSG_BTL_PSYPOWER_ADD;
+←
+◆@DSP_OBJECT()’ｓ　Ｃｏｕｎｔｅｒ－↓
+　　ａｔｔａｃｋ　Ｐｓｙｃｈｉｃ　Ｓｈｉｅｌｄ@KEY()↓
+◆ｂｅｃａｍｅ　ｓｔｒｏｎｇｅｒ！
+;jpn:　@DSP_OBJECT()の↓
+;jpn:　はんげきのサイコシールドの
+;@KEY()
+;↓
+;;jpn:　つよさが　ました！
+@KEY()
+@!
+
+MSG_BTL_SHIELD_OFF;
+←
+◆@DSP_OBJECT()’ｓ　Ｓｈｉｅｌｄ↓
+　　ｄｉｓａｐｐｅａｒｅｄ！
+;jpn:　@DSP_OBJECT()のシールドは↓
+;jpn:　きえて　なくなった！
+@KEY()
+@!
+
+MSG_BTL_POWER_TURN;
+←
+◆Ｔｈｅ　Ｃｏｕｎｔｅｒ－ａｔｔａｃｋ　Ｓｈｉｅｌｄ↓
+　　ｄｅｆｌｅｃｔｅｄ　ｔｈｅ　ａｔｔａｃｋ！
+;jpn:　はんげきのシールドが↓
+;jpn:　こうげきを　はねかえした！
+@SE(SE_se5d)
+@WI(30)
+@KEY()
+@!
+
+MSG_BTL_PSYPOWER_TURN;
+←
+◆Ｔｈｅ　Ｃｏｕｎｔｅｒ－ａｔｔａｃｋ　Ｓｈｉｅｌｄ↓
+;jpn:　はんげきのサイコシールドが↓
+@GET_CITEM()
+@XCHG()
+　　ｄｅｆｌｅｃｔｅｄ　@DSP_PSI(0)！
+;jpn:　@DSP_PSI(0)を　はねかえした！
+@SE(SE_se5d)
+@KEY()
+@!
+
+MSG_BTL_PSYCO_TURN;
+←
+◆@DSP_OBJECT()’ｓ↓
+　　Ｐｓｙｃｈｉｃ　Ｓｈｉｅｌｄ　ｍａｄｅ@KEY()↓
+;jpn:　@DSP_OBJECT()の　サイコシールドが↓
+@GET_CITEM()
+@XCHG()
+　　@DSP_PSI(0)　ｄｉｓａｐｐｅａｒ！
+;jpn:　@DSP_PSI(0)を　かきけした！
+;@SE((しゅんん))
+@KEY()
+@!
+
+MSG_BTL_NEUTRALIZE_RESULT;
+;@SE(SE_)
+←
+◆Ｔｈｅ　ｅｆｆｅｃｔｓ　ｏｆ　ＰＳＩ　ｏｎ↓
+　　@DSP_OBJECT()　ｉｓ　ｇｏｎｅ！
+;jpn:　@DSP_OBJECT()に　かかっていた↓
+;jpn:　ＰＳＩのこうりょくが　きえた！
+@SE(SE_se29_b_defense_down)
+@KEY()
+@!
+
+MSG_BTL_NEUTRALIZE_METAMORPH;
+←
+◆@DSP_STS(STS_PC_NAME_POO)　ｒｅｔｕｒｎｅｄ↓
+　　ｔｏ　ｈｉｓ　ｏｒｉｇｉｎａｌ　ｆｏｒｍ！
+;jpn:　@DSP_STS(STS_PC_NAME_POO)は↓
+;jpn:　もとのすがたに　もどった！
+@KEY()
+@!
+
+MSG_BTL_FRANKLIN_TURN;
+←
+◆Ｔｈｅ　Ｆｒａｎｋｌｉｎ　Ｂａｄｇｅ　ｄｅｆｌｅｃｔｅｄ↓
+　　ｔｈｅ　ｌｉｇｈｔｎｉｎｇ！
+;jpn:　フランクリンバッジが↓
+;jpn:　いなずまを　はねかえした！
+@SE(SE_se5d)
+@KEY()
+@!
+

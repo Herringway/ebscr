@@ -1,0 +1,1363 @@
+;
+;	ホテルでの新聞スクリプト
+;
+_SUB_PAPER_CHKF;
+@CHKFGOTO(FLG_WIN_GIEGU,_PCHKF_29)
+@CHKFGOTO(FLG_POWR_ALL,_PCHKF_28)
+@CHKFGOTO(FLG_GUMI_CAVEOPEN,_PCHKF_27)
+@CHKFGOTO(FLG_TLPT_MAKY,_PCHKF_26)
+@CHKFGOTO(FLG_ITEM_TAKANOME,_PCHKF_25)
+@CHKFGOTO(FLG_SPHINX_OK,_PCHKF_24)
+@CHKFGOTO(FLG_TLPT_SKRB,_PCHKF_23)
+@CHKFGOTO(FLG_PU,_PCHKF_22)
+@CHKFGOTO(FLG_FOUR_OK,_PCHKF_21)
+@CHKFGOTO(FLG_WIN_MANIMANI,_PCHKF_20)
+@CHKFGOTO(FLG_FOUR_DEPT_OK,_PCHKF_19)
+@CHKFGOTO(FLG_FOUR_DEPT_BOSS_APPEAR,_PCHKF_18)
+@CHKFGOTO(FLG_TLPT_FOUR,_PCHKF_17)
+@CHKFGOTO(FLG_WIN_GEPPU,_PCHKF_16)
+@CHKFGOTO(FLG_WIN_MATENT,_PCHKF_15)
+@CHKFGOTO(FLG_WINS_START,_PCHKF_14)
+@CHKFGOTO(FLG_THRK_BIKINIZOMBI_APPEAR,_PCHKF_13)
+@CHKFGOTO(FLG_TLPT_THRK,_PCHKF_12)
+@CHKFGOTO(FLG_TWSN_ITEM_TONCHIKI,_PCHKF_11)
+@CHKFGOTO(FLG_POLA_GRFD,_PCHKF_10)
+@CHKFGOTO(FLG_WIN_CARPAINTER,_PCHKF_09)
+@CHKFGOTO(FLG_ITEM_FRANKLINBADGE,_PCHKF_08)
+@CHKFGOTO(FLG_TWSN_PAUL_UPSET,_PCHKF_07)
+@CHKFGOTO(FLG_ONET_GATEOPEN,_PCHKF_06)
+@CHKFGOTO(FLG_POWR_GIAN,_PCHKF_05)
+@CHKFGOTO(FLG_KEY_TABIGOYA,_PCHKF_04)
+@CHKFGOTO(FLG_WIN_FRANK,_PCHKF_03)
+@CHKFGOTO(FLG_ONET_GUARDSHARK_DISAPPEAR,_PCHKF_02)
+_PCHKF_01;
+@SET_LOOPREG(1)
+@!
+_PCHKF_02;
+@SET_LOOPREG(2)
+@!
+_PCHKF_03;
+@SET_LOOPREG(3)
+@!
+_PCHKF_04;
+@SET_LOOPREG(4)
+@!
+_PCHKF_05;
+@SET_LOOPREG(5)
+@!
+_PCHKF_06;
+@SET_LOOPREG(6)
+@!
+_PCHKF_07;
+@SET_LOOPREG(7)
+@!
+_PCHKF_08;
+@SET_LOOPREG(8)
+@!
+_PCHKF_09;
+@SET_LOOPREG(9)
+@!
+_PCHKF_10;
+@SET_LOOPREG(10)
+@!
+_PCHKF_11;
+@SET_LOOPREG(11)
+@!
+_PCHKF_12;
+@SET_LOOPREG(12)
+@!
+_PCHKF_13;
+@SET_LOOPREG(13)
+@!
+_PCHKF_14;
+@SET_LOOPREG(14)
+@!
+_PCHKF_15;
+@SET_LOOPREG(15)
+@!
+_PCHKF_16;
+@SET_LOOPREG(16)
+@!
+_PCHKF_17;
+@SET_LOOPREG(17)
+@!
+_PCHKF_18;
+@SET_LOOPREG(18)
+@!
+_PCHKF_19;
+@SET_LOOPREG(19)
+@!
+_PCHKF_20;
+@SET_LOOPREG(20)
+@!
+_PCHKF_21;
+@SET_LOOPREG(21)
+@!
+_PCHKF_22;
+@SET_LOOPREG(22)
+@!
+_PCHKF_23;
+@SET_LOOPREG(23)
+@!
+_PCHKF_24;
+@SET_LOOPREG(24)
+@!
+_PCHKF_25;
+@SET_LOOPREG(25)
+@!
+_PCHKF_26;
+@SET_LOOPREG(26)
+@!
+_PCHKF_27;
+@SET_LOOPREG(27)
+@!
+_PCHKF_28;
+@SET_LOOPREG(28)
+@!
+_PCHKF_29;
+@SET_LOOPREG(29)
+@!
+
+MSG_HOTEL_ONET_PAPERBOY;
+@GOSUB(_SUB_PAPER_CHKF)
+@SET_REG(1)
+@XCHG()
+@ONGOSUB(_PAPER_ONET_01,_PAPER_ONET_02,_PAPER_ONET_03,_PAPER_ONET_04,_PAPER_ONET_05,_PAPER_ONET_06,_PAPER_ONET_07,_PAPER_ONET_08,_PAPER_ONET_09,_PAPER_ONET_10,_PAPER_ONET_11,_PAPER_ONET_12,_PAPER_ONET_13,_PAPER_ONET_14,_PAPER_ONET_15,_PAPER_ONET_16,_PAPER_ONET_17,_PAPER_ONET_18,_PAPER_ONET_19,_PAPER_ONET_20,_PAPER_ONET_21,_PAPER_ONET_22,_PAPER_ONET_23,_PAPER_ONET_24,_PAPER_ONET_25,_PAPER_ONET_26,_PAPER_ONET_27,_PAPER_ONET_28,_PAPER_ONET_29)
+@!
+
+_PAPER_ONET_PARTS_1;marcus
+◆Ｇｏｏｄ　ｍｏｒｎｉｎｇ！↓
+　　Ｈｅｒｅ’ｓ　ｙｏｕｒ　ｆｒｅｅ　ｃｏｐｙ　ｏｆ　ｔｈｅ　ｍｏｒｎｉｎｇ　ｎｅｗｓｐａｐｅｒ！
+;jpn:◆おはようございます。↓
+;jpn:　モーニングしんぶんサービスです。
+@KEY()↓
+@!
+
+_PAPER_ONET_PARTS_2;marcus
+◆Ｈｅｒｅ’ｓ　ｔｏｄａｙ’ｓ　ｈｅａｄｌｉｎｅｓ　ｉｎ　ｔｈｅ　Ｏｎｅｔｔ　Ｔｉｍｅｓ．．．
+;jpn:◆けさの　オネットタイムスには↓
+;jpn:　こんなきじが　のっています‥‥
+@KEY()↓
+@!
+
+_PAPER_ONET_PARTS_3;marcus
+◆Ｔｈｅｒｅ’ｓ　ａｎ　ａｄｖｅｒｔｉｓｅｍｅｎｔ　ｉｎ　ｔｏｄａｙ’ｓ　Ｏｎｅｔｔ　Ｔｉｍｅｓ　ｔｈａｔ　ｌｏｏｋｓ　ｉｎｔｅｒｅｓｔｉｎｇ．
+;jpn:◆けさの　オネットタイムスには↓
+;jpn:　こんなこうこくが↓
+;jpn:　のっています‥‥
+@KEY()↓
+@!
+
+_PAPER_ONET_01;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｍｙｓｔｅｒｉｏｕｓ　ｍｅｔｅｏｒｉｔｅ　ｎｏｒｔｈ　ｏｆ　Ｏｎｅｔｔ　ｓｔｉｌｌ　ｂｕｒｎｉｎｇ　ｂｒｉｇｈｔｌｙ”
+;jpn:◆「オネットほくぶにおちた↓
+;jpn:　なぞのいんせきは　いまもなお↓
+;jpn:　あかあかともえつづけている」
+@KEYNP()
+@!
+
+_PAPER_ONET_02;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｒｏａｄ　ｔｏ　Ｔｗｏｓｏｎ　ｓｔｉｌｌ　ｃｌｏｓｅｄ”
+;jpn:◆「ツーソンにつづく　どうろ↓
+;jpn:　いぜん　つうこうどめのまま」
+@KEYNP()
+@!
+
+_PAPER_ONET_03;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｃｏｍｐｌａｉｎｔｓ　ａｂｏｕｔ　Ｓｈａｒｋｓ　ｇａｎｇ　ｓｕｄｄｅｎｌｙ　ｍｅｌｔ　ｉｎｔｏ　ｔｈｉｎ　ａｉｒ”
+;jpn:◆「シャークだんにかんする↓
+;jpn:　オネットしみんの　くじょう↓
+;jpn:　とつぜん　ゼロになる」
+@KEYNP()
+@!
+
+_PAPER_ONET_04;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｍａｙｏｒ　ｏｆ　Ｏｎｅｔｔ　ｔｅａｃｈｅｓ　Ｓｈａｒｋｓ　ａ　ｌｅｓｓｏｎ，　ｂｒｉｎｇｓ　ｐｅａｃｅ　ｔｏ　Ｏｎｅｔｔ”
+;jpn:◆「オネットしちょう　みずから↓
+;jpn:　シャークだんを　こらしめ↓
+;jpn:　まちに　へいわを　とりもどす」
+@KEYNP()
+@!
+
+_PAPER_ONET_05;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｔａｍｅｒ　ｏｆ　ｔｈｅ　Ｓｈａｒｋｓ　ａｃｔｕａｌｌｙ　ａ　ｂｏｙ　ｉｎ　ａ　ｒｅｄ　ｃａｐ！”
+;jpn:◆「シャークだんを　こらしめたのは↓
+;jpn:　あかいぼうしをかぶった↓
+;jpn:　ひとりの　しょうねんだった！」
+@KEYNP()
+@!
+
+_PAPER_ONET_06;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｍａｎｙ　ｃｉｔｉｚｅｎｓ　ｏｆ　Ｏｎｅｔｔ　ｓｕｆｆｅｒ　ｄｕｅ　ｔｏ　ｃｒｏｏｋｅｄ　ｒｅａｌ　ｅｓｔａｔｅ　ａｇｅｎｔｓ”
+;jpn:◆「オネットしみんの　あいだに↓     
+;jpn:　インチッキーふどうさんによる↓
+;jpn:　サギのひがい　ぞくしゅつ！」
+@KEYNP()
+@!
+
+_PAPER_ONET_07;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｇｉｒｌ　ｎａｍｅｄ　@DSP_STS(STS_PC_NAME_PAULA)　ｌｉｓｔｅｄ　ａｓ　ｍｉｓｓｉｎｇ　ｉｎ　ｎｅｉｇｈｂｏｒｉｎｇ　ｔｏｗｎ　ｏｆ　Ｔｗｏｓｏｎ”
+;jpn:◆「となりまち　ツーソンで↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)というなまえの↓
+;jpn:　しょうじょが　ゆくえふめい」
+@KEYNP()
+@!
+
+_PAPER_ONET_08;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+◆Ｙｅｓ．．．ｔｈｅ　Ｏｎｅｔｔ　Ｔｉｍｅｓ．．．Ｕｈｈｈ．．．@KEY()↓
+◆Ｗｅｌｌ，　@WI(10)　Ｉ　ｍａｄｅ　ａ　ｍｉｓｔａｋｅ　ａｎｄ　ｂｒｏｕｇｈｔ　ｙｏｕ　ａ　ｎｅｗｓｐａｐｅｒ　ｃａｌｌｅｄ　ＯｎｅｔｔＳｔａｒ　ｏｎ　ａｃｃｉｄｅｎｔ．@KEY()↓
+　　Ｌｅｔ　ｍｅ　ｒｅａｄ　ｙｏｕ　ｔｈｅ　ｈｅａｄｌｉｎｅ　ａｎｙｗａｙ．．．@KEY()↓
+◆”Ｓｏ　ｃａｌｌｅｄ　Ｍｒ．　Ｌｅａｄｅｒ　Ｇｕｙ　ｒｕｎｎｉｎｇ　ｆｏｒ　ｍａｙｏｒ　ｏｆ　Ｏｎｅｔｔ”@KEY()↓
+◆Ｗｅｌｌ，@WI(10)　ｔｈａｔ’ｓ　ＯｎｅｔｔＳｔａｒ　ｆｏｒ　ｙｏｕ．
+;jpn:◆けさの　オネットタイムスには‥‥@KEY()↓
+;jpn:◆あ@WI(10)　まちがえて　オネスポって↓
+;jpn:　しんぶん　もってきちゃいました。↓
+;jpn:　いちおう　よんでみますね‥‥@KEY()↓
+;jpn:◆「いわゆるチョーさん↓
+;jpn:　オネットしちょうに　りっこうほ」@KEY()↓
+;jpn:◆ま@WI(10)　なんというか↓
+;jpn:　オネスポですからねぇ。
+@KEYNP()
+@!
+
+_PAPER_ONET_09;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_3)
+◆”Ｉｓｎ’ｔ　ｉｔ　ａｂｏｕｔ　ｔｉｍｅ　ｆｏｒ　ａ　ｆａｎｔａｓｔｉｃ　ｖａｃａｔｉｏｎ　ｔｏ　ｔｈｅ　ｄｒｅａｍ　ｒｅｓｏｒｔ　ｏｆ　Ｓｕｍｍｅｒｓ？@KEY()↓
+◆Ｓｏｍｅｄａｙ，　ｗｅ’ｌｌ　ｓｅｅ　ｙｏｕ　ｔｈｅｒｅ．．．”
+；jpn:◆「ゆめの　ビーチリゾート↓
+;jpn:　サマーズで　バカンスはいかが？↓
+;jpn:　あなたも　いつか　きっと‥‥」
+@KEYNP()
+@!
+
+_PAPER_ONET_10;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｔｗｏｓｏｎ　ｋｉｄｎａｐ　ｖｉｃｔｉｍ　@DSP_STS(STS_PC_NAME_PAULA)　ｒｅｓｃｕｅｄ　ｂｙ　ｌｏｃａｌ　Ｏｎｅｔｔ　ｈｅｒｏ　　@DSP_NAME(PC_NESS)”
+;jpn:◆「となりまちの　ゆうかいじけん。↓
+;jpn:　@DSP_STS(STS_PC_NAME_PAULA)ちゃんを　たすけたのは↓
+;jpn:　わがまちの　@DSP_STS(STS_PC_NAME_NES)くん！」
+@KEYNP()
+@!
+
+_PAPER_ONET_11;marcus
+_PAPER_ONET_12;marcus
+_PAPER_ONET_13;marcus
+_PAPER_ONET_14;marcus
+_PAPER_ONET_15;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｓｉｔｕａｔｉｏｎ　ｉｎ　ｔｈｅ　ｔｏｗｎ　ｏｆ　Ｔｈｒｅｅｄ　ｉｓ　ｄｉｒｅ”
+;jpn:◆「スリークのまちは↓
+;jpn:　かなり　とんでもないじたいに↓
+;jpn:　みまわれているもよう」
+@KEYNP()
+@!
+
+_PAPER_ONET_16;marcus
+_PAPER_ONET_17;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_3)
+◆”Ｅｖｅｎ　ｏｕｒ　ｃｌｅｒｋｓ　ｇｅｔ　ｌｏｓｔ　ｉｎ　ｔｈｅ　ｓｔｏｒｅ！@KEY()↓
+◆Ｔｈｅ　ｗｏｒｌｄ’ｓ　ｌａｒｇｅｓｔ　ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ，　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｇｒａｎｄ”
+;jpn:◆「てんいんも　まいごになる！？↓
+;jpn:　せかいさいだいの　デパート↓
+;jpn:　フォーサイド　グランドストア」
+@KEYNP()
+@!
+
+_PAPER_ONET_18;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｍｅｔｅｏｒｉｔｅ　ｎｏｒｔｈ　ｏｆ　Ｏｎｅｔｔ　ｓｔｉｌｌ　ｂｕｒｎｉｎｇ　ｈｏｔ”
+;jpn:◆「オネットほくぶの　いんせきあと↓
+;jpn:　いぜん　こうねつが　さめず」
+@KEYNP()
+@!
+
+_PAPER_ONET_19;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+◆．．．．．@WI(10)Ｏｈ，@WI(10)ｔｈｅｒｅ’ｓ　ｎｏ　ｉｓｓｕｅ　ｔｏｄａｙ．．．ｓｏｒｒｙ．
+;jpn:◆‥‥@WI(10)あ@WI(10)　きょうは　しんぶんの↓
+;jpn:　きゅうかんびでしたよ。
+@KEYNP()
+@!
+
+_PAPER_ONET_20;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”@DSP_STS(STS_PARTY_FAVORITE_FOODS)　ｆｏｕｎｄ　ｔｏ　ｂｅ　ｍａｊｏｒ　ｓｏｕｒｃｅ　ｏｆ　ｎｕｔｒｉｔｉｏｎ　ａｎｄ　ｅｎｅｒｇｙ”
+;jpn:◆「@DSP_STS(STS_PARTY_FAVORITE_FOODS)には↓
+;jpn:　げんきのもとが　たっぷりと↓
+;jpn:　ふくまれていることがわかった」
+@KEYNP()
+@!
+
+_PAPER_ONET_21;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_3)
+◆”Ｅｘｏｔｉｃ　ａｔｍｏｓｐｈｅｒｅ！↓
+　　Ｈｉｓｔｏｒｉｃａｌ　ｓｉｔｅｓ！@KEY()↓
+◆Ｃｏｍｅ　ｔｏ　ｔｈｅ　ｇｌｏｒｉｏｕｓ　ｊｅｗｅｌ　ｎａｍｅｄ　Ｓｃａｒａｂａ！@KEY()↓
+◆Ｓｃａｒａｂａ　Ｔｏｕｒｉｓｔ　Ａｓｓｏｃｉａｔｉｏｎ”
+;jpn:◆「いこくじょうちょ　たっぷり！↓
+;jpn:　れきしのおもみが　ちがいます！↓
+;jpn:　スカラビ　かんこうきょうかい」
+@KEYNP()
+@!
+
+_PAPER_ONET_22;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｏｎｅｔｔ　Ｐｏｌｉｃｅ　ｃｈｉｅｆ　ｓｔｉｌｌ　ｎｏｔ　ｔｈｒｏｕｇｈ　ｐｌａｙｉｎｇ　ＥａｒｔｈＢｏｕｎｄ！”
+;jpn:◆「オネットけいさつしょちょう↓
+;jpn:　マザー２　まだ　おわらず」
+@KEYNP()
+@!
+
+_PAPER_ONET_23;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｏｆ　Ｄａｌａａｍ　ｔｒａｖｅｌｉｎｇ　ｉｎｃｏｇｎｉｔｏ　ｔｏ　Ｏｎｅｔｔ？”
+;jpn:◆「ランマの　@DSP_STS(STS_PC_NAME_POO)おうじ↓
+;jpn:　おしのびで　オネットに！？」
+@KEYNP()
+@!
+
+_PAPER_ONET_24;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_3)
+◆”Ｅｖｅｎ　ａ　ｓｅａｓｏｎｅｄ　ｗｏｒｌｄ　ｔｒａｖｅｌｅｒ　ｅｎｊｏｙｓ　ｓｔａｙｉｎｇ　ｈｅｒｅ．@KEY()↓
+◆Ｈｏｔｅｌ　Ｏｎｅｔｔ　ｉｎ　ｌｏｖｅｌｙ　ｄｏｗｎｔｏｗｎ　Ｏｎｅｔｔ．@KEY()↓
+◆．．．Ｈｅｙ，　ｔｈｉｓ　ｉｓ　ｏｕｒ　ａｄ！
+;jpn:◆「せかいを　たびした　あなたにも↓
+;jpn:　きっと　ごまんぞくいただけます↓
+;jpn:　ホテルオネット　ホテルオネット」@KEY()↓
+;jpn:◆‥‥@WI(10)あ@WI(30)　うちの　こうこくでした。
+@KEYNP()
+@!
+
+_PAPER_ONET_25;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｉｎｔｅｒｎａｔｉｏｎａｌ　ｎｅｗｓ：　　Ｐｙｒａｍｉｄ　ｉｎ　Ｓｃａｒａｂａ　ｖａｎｄａｌｉｚｅｄ”
+;jpn:◆「かいがいの　ニュースより。↓
+;jpn:　スカラビの　ピラミッド↓
+;jpn:　なにものかに　あらされる！？」
+@KEYNP()
+@!
+
+_PAPER_ONET_26;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｏｎｅｔｔ　Ｌｉｂｒａｒｙ　ｆａｃｉｎｇ　ｃｒｉｓｉｓ@KEY()↓
+◆Ｍａｎｙ　ｂｏｏｋ　ｂｏｒｒｏｗｅｒｓ　ｇｉｖｉｎｇ　ｌｉｂｒａｒｙ　ｂｏｏｋｓ　ａｗａｙ　ｏｒ　ｎｅｖｅｒ　ｒｅｔｕｒｎｉｎｇ　ｔｈｅｍ”
+;jpn:◆「オネットとしょかん　こまった。↓
+;jpn:　かりた　ほんを　またがししたり↓
+;jpn:　わすれたりするきゃく　おおい」
+@KEYNP()
+@!
+
+_PAPER_ONET_27;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｌｏｃａｌ　ｓｕｒｖｅｙ　ｓｈｏｗｓ　ｍｏｓｔ　ｐｏｐｕｌａｒ　ｃａｒｅｅｒ　ａｍｏｎｇ　ｋｉｄｓ　ｉｎ　Ｏｎｅｔｔ　ｉｓ　ａｄｖｅｎｔｕｒｅｒ”
+;jpn:◆「オネットの　こどもたちの↓
+;jpn:　あこがれの　しょくぎょう。↓
+;jpn:　ナンバー１は　ぼうけんか」
+@KEYNP()
+@!
+
+_PAPER_ONET_28;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｍｅｔｅｏｒｉｔｅ　ｌａｎｄｉｎｇ　ｉｎ　ｎｏｒｔｈ　Ｏｎｅｔｔ　ｆｉｎａｌｌｙ　ｂｅｇｉｎｎｉｎｇ　ｔｏ　ｃｏｏｌ　ｏｆｆ”
+;jpn:◆「オネットほくぶの　いんせきあと↓
+;jpn:　ようやく　こうねつが　さめる」
+@KEYNP()
+@!
+
+_PAPER_ONET_29;marcus
+@GOSUB(_PAPER_ONET_PARTS_1)
+@GOSUB(_PAPER_ONET_PARTS_2)
+◆”Ｏｎｅｔｔ　ｐｏｌｉｃｅ　ｃｈｉｅｆ　ｆｉｎｉｓｈｅｓ　ＥａｒｔｈＢｏｕｎｄ，　ａｓｋｓ，　”Ｗｈｅｒｅ　ｉｓ　ｔｈｅ　ｓｅｑｕｅｌ？”
+;jpn:◆「オネットけいさつしょちょう↓
+;jpn:　マザー２　ついに　おわらせる！↓
+;jpn:　そして　ひとこと　３はまだか！」
+@KEYNP()
+@!
+
+MSG_HOTEL_TWSN_PAPERBOY;marcus
+@GOSUB(_SUB_PAPER_CHKF)
+@SET_REG(1)
+@XCHG()
+@ONGOSUB(_PAPER_TWSN_01,_PAPER_TWSN_02,_PAPER_TWSN_03,_PAPER_TWSN_04,_PAPER_TWSN_05,_PAPER_TWSN_06,_PAPER_TWSN_07,_PAPER_TWSN_08,_PAPER_TWSN_09,_PAPER_TWSN_10,_PAPER_TWSN_11,_PAPER_TWSN_12,_PAPER_TWSN_13,_PAPER_TWSN_14,_PAPER_TWSN_15,_PAPER_TWSN_16,_PAPER_TWSN_17,_PAPER_TWSN_18,_PAPER_TWSN_19,_PAPER_TWSN_20,_PAPER_TWSN_21,_PAPER_TWSN_22,_PAPER_TWSN_23,_PAPER_TWSN_24,_PAPER_TWSN_25,_PAPER_TWSN_26,_PAPER_TWSN_27,_PAPER_TWSN_28,_PAPER_TWSN_29)
+@!
+
+_PAPER_TWSN_PART_1;marcus
+◆Ｈｏｗ　ａｂｏｕｔ　ｒｅａｄｉｎｇ　ｔｈｅ　ｎｅｗｓｐａｐｅｒ　ｂｅｆｏｒｅ　ｙｏｕ　ｇｏ？
+;jpn:◆おでかけのまえに　しんぶんでも↓
+;jpn:　いかがでしょうか。
+@KEY()↓
+@!
+
+_PAPER_TWSN_PART_2;marcus
+◆Ｈｅｒｅ　ｉｓ　ｔｈｉｓ　ｍｏｒｎｉｎｇ’ｓ　Ｔｗｏｓｏｎ　Ｔｒｉｂｕｎｅ　ｈｅａｄｌｉｎｅ．．．
+;jpn:◆けさの　ツーソントゥデイは↓
+;jpn:　こんな　ぐあいです‥‥
+@KEY()↓
+@!
+
+_PAPER_TWSN_01;marcus
+_PAPER_TWSN_02;marcus
+_PAPER_TWSN_03;marcus
+_PAPER_TWSN_04;marcus
+_PAPER_TWSN_05;marcus
+_PAPER_TWSN_06;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｇｈｏｓｔｓ　ｆｏｕｎｄ　ｔｏ　ｉｎｈａｂｉｔ　ｔｕｎｎｅｌ　ｔｏ　Ｔｈｒｅｅｄ”
+;jpn:◆「スリークにつづくトンネルは↓
+;jpn:　あいかわらず　ゴーストどもが！」
+@KEYNP()
+@!
+
+_PAPER_TWSN_07;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｔｈｅ　ｂｒａｖｅ　ｌｏｃａｌ　ｈｅｒｏ　ｎａｍｅｄ　@DSP_NAME(PC_NESS)　ｗｈｏ　ｂｒｏｋｅ　ｕｐ　ｔｈｅ　Ｓｈａｒｋｓ　ｈａｓ　ｌｅｆｔ　Ｏｎｅｔｔ．@KEY()↓
+◆”Ｒｅｐｏｒｔｓ　ｔｈａｔ　ｔｈｅ　Ｍａｙｏｒ　ｓｔｏｐｐｅｄ　ｔｈｅ　Ｓｈａｒｋｓ　ｈａｖｅ　ｂｅｅｎ　ｐｒｏｖｅｎ　ｔｏ　ｂｅ　ｆａｌｓｅ”
+;jpn:◆「となりまちの　オネットの↓
+;jpn:　あくめいたかき　シャークだんを↓
+;jpn:　たちなおらせた　ゆうきある@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)しょうねんは　いまは↓
+;jpn:　オネットには　いないもよう」@KEY()↓
+;jpn:◆わたしは　オネットしちょうの↓
+;jpn:　おてがらだと　ききましたけど↓
+;jpn:　どうも　ちがうようですね。
+@KEYNP()
+@!
+
+_PAPER_TWSN_08;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｍｉｓｓｉｎｇ　ｇｉｒｌ　ｓｔｉｌｌ　ｎｏｔ　ｆｏｕｎｄ”
+;jpn:◆「ゆくえふめいの　しょうじょ↓
+;jpn:　いまだ　てがかり　つかめず」
+@KEYNP()
+@!
+
+_PAPER_TWSN_09;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｒｅｇａｒｄｉｎｇ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ↓
+　　Ｆｏｌｌｏｗｅｒ　ｓｔａｔｅｓ　Ｈａｐｐｙ　Ｈａｐｐｙｉｓｍ　ｉｓ　ｗｒｏｎｇ@KEY()↓
+◆Ｆｏｌｌｏｗｅｒ　ｃｌａｉｍｓ　ｔｅｍｐｏｒａｒｙ　ｉｎｓａｎｉｔｙ．．．”
+;jpn:◆「カーぺインターさんは　かたる。↓
+;jpn:　ハッピーハッピーきょうは↓
+;jpn:　いまおもえば　まちがいでした。@KEY()↓
+;jpn:◆わたしは　どうかしていたのです。↓
+;jpn:　おわびの　ことばも　ありません」
+@KEYNP()
+@!
+_PAPER_TWSN_10;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”@DSP_NAME(PC_PAULA)　ｆｏｕｎｄ　ｓａｆｅ！↓
+　　Ｐａｒｅｎｔｓ　ｄｅｌｉｇｈｔｅｄ　ｔｏ　ｈａｖｅ　ｈｅｒ　ｂａｃｋ”
+;jpn:◆「@DSP_STS(STS_PC_NAME_PAULA)ちゃんは↓
+;jpn:　ぶじだった！↓
+;jpn:　ごりょうしんも　おおよろこび」
+@KEYNP()
+@!
+
+_PAPER_TWSN_11;marcus
+_PAPER_TWSN_12;marcus
+_PAPER_TWSN_13;marcus
+_PAPER_TWSN_14;marcus
+_PAPER_TWSN_15;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｇｈｏｓｔｓ　ｃｏｎｔｉｎｕｅ　ｔｏ　ｉｎｈａｂｉｔ　ｔｕｎｎｅｌ　ｔｏ　Ｔｈｒｅｅｄ”
+;jpn:◆「スリークにつづく　トンネルには↓
+;jpn:　あいかわらず　ばけものが！」
+@KEYNP()
+@!
+
+_PAPER_TWSN_16;marcus
+_PAPER_TWSN_17;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+◆Ｔｈｉｓ　ｍｏｒｎｉｎｇ’ｓ　Ｔｗｏｓｏｎ　Ｔｒｉｂｕｎｅ．．．@KEY()↓
+◆．．．Ｏｏｏｐｓ！　　Ｍｙ　ｍｉｓｔａｋｅ．．．Ｉ　ｂｒｏｕｇｈｔ　ｔｈｅ　ＴｗｏｓｏｎＳｔａｒ　ｎｅｗｓｐａｐｅｒ　ｉｎｓｔｅａｄ．．．@KEY()↓
+◆Ｗｅｌｌ，　ｌｅｔ　ｍｅ　ｒｅａｄ　ｔｈｉｓ　ａｎｙｗａｙ．．．@KEY()↓
+◆”Ｔｅｓｓｉｅ　ｉｎ　Ｌａｋｅ　Ｔｅｓｓ　ｉｓ　ｃｏｕｓｉｎ　ｏｆ　Ｎｅｓｓｉｅ”@KEY()↓
+◆．．．Ｔｈａｔ’ｓ　ａｂｏｕｔ　ｉｔ．
+;jpn:◆けさの　ツーソントゥデイは‥‥@KEY()↓
+;jpn:◆あ　まちがえて　ツゥースポって↓
+;jpn:　もってきちゃいました。↓
+;jpn:　とりあえず　よんでみますと‥‥@KEY()↓
+;jpn:◆「タスこの　タッシーは↓
+;jpn:　ネッシーの　いとこだった！」@KEY()↓
+;jpn:◆‥‥なんなんでしょうね。
+@KEYNP()
+@!
+
+_PAPER_TWSN_18;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｅｘｐｌｏｓｉｏｎ　ｈｅａｒｄ　ｒｅｃｅｎｔｌｙ　ｃａｕｓｅｄ　ｂｙ　ｕｎｋｎｏｗｎ　ｃｒａｆｔ　ｃｒａｓｈｉｎｇ　@KEY()↓
+◆ｉｎｔｏ　ｔｈｅ　ｇｒａｖｅｙａｒｄ　ｉｎ　Ｔｈｒｅｅｄ”
+；jpn:◆「せんじつの　ばくはつおんは↓
+;jpn:　スリークの　きょうどうぼちに↓
+;jpn:　おちた　へんなものが　げんいん」
+@KEYNP()
+@!
+
+_PAPER_TWSN_19;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｐｒｅｓｅｎｔ　ｐｏｐｕｌａｒ　ｓｈｏｗ　ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ　Ｔｈｅａｔｅｒ@KEY()↓
+◆ｉｎ　ｄｏｗｎｔｏｗｎ　Ｆｏｕｒｓｉｄｅ”
+;jpn:◆「だいとかい　フォーサイドの↓
+;jpn:　あの　トポロげきじょうで↓
+;jpn:　われらがトンズラ　だいにんき！」
+@KEYNP()
+@!
+
+_PAPER_TWSN_20;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｅｖｅｒｄｒｅｄ，　Ｂｕｒｇｌｉｎ　Ｐａｒｋ　ｃｒｉｍｅ　ｂｏｓｓ，　ｍｉｓｓｉｎｇ”
+;jpn:◆「ヌスットひろばの　ぬし↓
+;jpn:　トンチキさん　しょうそくふめい」
+@KEYNP()
+@!
+
+_PAPER_TWSN_21;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｒｕｎａｗａｙ　Ｆｉｖｅ’ｓ　ｄｅｂｕｔ　ｒｅｌｅａｓｅ　ｓｅｌｌｓ　ｏｕｔ　ｉｎ　ｍｉｎｕｔｅｓ”
+;jpn:◆「トンズラブラザーズの↓
+;jpn:　ねんがんの　デビューレコード↓
+;jpn:　はつばいとどうじに　うりきれ！」
+@KEYNP()
+@!
+
+_PAPER_TWSN_22;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+◆．．．Ｔｈｅｒｅ　ｗａｓ　ｎｏ　ｍｏｒｎｉｎｇ　ｅｄｉｔｉｏｎ　ｔｏｄａｙ．．．
+;jpn:◆‥‥@WI(10)あ@WI(10)　きょうは　しんぶんの↓
+;jpn:　きゅうかんびでしたっけ。
+@KEYNP()
+@!
+
+_PAPER_TWSN_23;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｏｆ　Ｄａｌａａｍ　ｓｅｃｒｅｔｌｙ　ｖｉｓｉｔｉｎｇ　Ｔｗｏｓｏｎ？”
+;jpn:◆「ランマの　@DSP_STS(STS_PC_NAME_POO)おうじ↓
+;jpn:　おしのびで　ツーソンに！？」
+@KEYNP()
+@!
+
+_PAPER_TWSN_24;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｆｏｒｍｅｒ　Ｈａｐｐｙ　Ｈａｐｐｙｉｓｍ　ｆｏｌｌｏｗｅｒｓ　ｃｌａｉｍ　ｔｏ　ｈａｖｅ　ｂｅｅｎ　ｎａｉｖｅ”
+;jpn:◆「あのころの　わたしたちは↓
+;jpn:　まだまだ　あおかった。@KEY()↓
+;jpn:◆もと　ハッピーハッピーきょうの↓
+;jpn:　しんじゃたち　むかしをかたる」
+@KEYNP()
+@!
+
+_PAPER_TWSN_25;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｙｏｕ！　Ｗｉｔｈ　ｔｈｅ　ｃｏｎｔｒｏｌｌｅｒ　ｉｎ　ｙｏｕｒ　ｈａｎｄ！　Ｈａｖｅ　ｙｏｕ　ｂｅｅｎ　ｇｅｔｔｉｎｇ　ｅｎｏｕｇｈ　ｓｌｅｅｐ　ｌａｔｅｌｙ？”
+;jpn:◆「コントローラー　てにしたあなた↓
+;jpn:　すいみんは　たりてますか？」
+@KEYNP()
+@!
+
+_PAPER_TWSN_26;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+◆Ｔｈｅｒｅ’ｓ　ａｎ　ｉｎｔｅｒｅｓｔｉｎｇ　ａｄｖｅｒｔｉｓｅｍｅｎｔ　ｉｎ　ｔｏｄａｙ’ｓ　Ｔｗｏｓｏｎ　Ｔｒｉｂｕｎｅ．@KEY()↓
+◆”Ａｒｅ　ｙｏｕ　ｓｈｙ？　　Ｄｏ　ｙｏｕ　ｈａｖｅ　ｔｒｏｕｂｌｅ　ｔａｌｋｉｎｇ　ｔｏ　ｐｅｏｐｌｅ　ｙｏｕ　ｄｏｎ’ｔ　ｋｎｏｗ？@KEY()↓
+◆Ｉｆ　ｓｏ，　ｔｈｅ　ｂｏｏｋ　”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ”　ｉｓ　ｙｏｕｒ　ｓｅｌｆ－ｈｅｌｐ　ｇｕｉｄｅ　ｔｏ　ｂｅｃｏｍｉｎｇ　ｍｏｒｅ　ｏｕｔｇｏｉｎｇ．@KEY()↓
+◆Ｔｈｉｓ　ｔｉｔｌｅ　ｉｓ　ｎｏｗ　ａｖａｉｌａｂｌｅ　ａｔ　ｙｏｕｒ　ｌｏｃａｌ　ｂｏｏｋｓｔｏｒｅ　ｏｒ　ｌｉｂｒａｒｙ．”
+;jpn:◆けさの　ツーソントゥデイに↓
+;jpn:　こんな　こうこくが@KEY()↓
+;jpn:◆「むくちが　いっぱつで　なおる！↓
+;jpn:　そのなも　むくちをなおすほん。↓
+;jpn:　としょかんにて　かしだしちゅう」
+@KEYNP()
+@!
+
+_PAPER_TWSN_27;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｉｎ　Ｔｗｏｓｏｎ，　Ｎｉｎｔｅｎｄｏ’ｓ　ｅｉｇｈｔ－ｂｉｔ　ｓｙｓｔｅｍ，　ｔｈｅ　ＮＥＳ，　ｍａｋｅｓ　ａ　ｃｏｍｅｂａｃｋ！”
+
+;jpn:◆「ツーソンの　ひとびとのあいだで↓
+;jpn:　むかしのマザーが　だいにんき！↓
+;jpn:　ニンテンドーも　おおあわて！」
+@KEYNP()
+@!
+
+_PAPER_TWSN_28;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｏｎｅｔｔ　Ｔｉｍｅｓ　ａ　ｂｅｔｔｅｒ　ｎｅｗｓｐａｐｅｒ　ｔｈａｎ　ｗｅ　ｉｍａｇｉｎｅｄ　ｈｅｒｅ　ａｔ　ｔｈｅ　Ｔｗｏｓｏｎ　Ｔｒｉｂｕｎｅ”
+;jpn:◆「となりまちの　しんぶん↓
+;jpn:　オネットタイムスも↓
+;jpn:　なかなか　あなどれない」
+@KEYNP()
+@!
+
+_PAPER_TWSN_29;marcus
+@GOSUB(_PAPER_TWSN_PART_1)
+@GOSUB(_PAPER_TWSN_PART_2)
+◆”Ｍｏｎｓｔｅｒｓ　ｄｉｓａｐｐｅａｒ！↓
+　Ａｎｉｍａｌｓ　ｃａｌｍ　ｄｏｗｎ！↓
+　Ｔｈｅ　ｔｏｗｎ　ｉｓ　ａｔ　ｐｅａｃｅ！”
+;jpn:◆「モンスターたち　きえる！↓
+;jpn:　どうぶつたち　おとなしくなる！↓
+;jpn:　ほんとの　へいわ　もどる！」
+@KEYNP()
+@!
+
+MSG_HOTEL_THRK_PAPERBOY;
+@GOSUB(_SUB_PAPER_CHKF)
+@SET_REG(1)
+@XCHG()
+@ONGOSUB(_PAPER_THRK_01,_PAPER_THRK_02,_PAPER_THRK_03,_PAPER_THRK_04,_PAPER_THRK_05,_PAPER_THRK_06,_PAPER_THRK_07,_PAPER_THRK_08,_PAPER_THRK_09,_PAPER_THRK_10,_PAPER_THRK_11,_PAPER_THRK_12,_PAPER_THRK_13,_PAPER_THRK_14,_PAPER_THRK_15,_PAPER_THRK_16,_PAPER_THRK_17,_PAPER_THRK_18,_PAPER_THRK_19,_PAPER_THRK_20,_PAPER_THRK_21,_PAPER_THRK_22,_PAPER_THRK_23,_PAPER_THRK_24,_PAPER_THRK_25,_PAPER_THRK_26,_PAPER_THRK_27,_PAPER_THRK_28,_PAPER_THRK_29)
+@!
+
+_PAPER_THRK_PART_1;marcus
+◆Ｓ．．．ｓｉｒ．．．．？↓
+;jpn:◆お　おきゃくさま‥‥↓
+@!
+_PAPER_THRK_PART_2;marcus
+◆Ｔｈｅ　ｇｕｅｓｔ’ｓ　ｎｅｗｓｐａｐｅｒｓ　ｔｈａｔ　ｗｅｒｅ　ｄｅｌｉｖｅｒｅｄ　ｔｏ　ｔｈｅ　ｈｏｔｅｌ　ｔｏｄａｙ　ａｒｅ　ｄｉｆｆｅｒｅｎｔ　ｔｈａｎ　ｎｏｒｍａｌ．@KEY()↓
+◆Ｔｈｅ　ｐａｐｅｒ　ｉｓ　ｃａｌｌｅｄ　ｔｈｅ　Ｚｏｍｂｉｅ　Ｈｅｒａｌｄ．．．@KEY()↓
+◆Ｉ’ｍ　ｓｃａｒｅｄ，　ｂｕｔ　ｌｅｔ　ｍｅ　ｔｅｌｌ　ｙｏｕ　ｗｈａｔ　ｉｓ　ｉｎ　ｉｔ．．．
+;jpn:◆けさ　ゾンビワールドという↓
+;jpn:　しんぶんが　とどけられてまして↓
+;jpn:　こ　こわいけど　よんでみます‥‥
+@KEY()↓
+@!
+_PAPER_THRK_PART_3;
+◆Ｇｏｏｄ　Ｍｏｒｎｉｎｇ！！
+;jpn:◆おっはようございます！
+@KEY()↓
+@!
+_PAPER_THRK_PART_4;marcus
+◆Ｈｅｒｅ’ｓ　ｙｏｕｒ　ｃｏｐｙ　ｏｆ　ｔｈｅ　Ｔｈｒｅｅｄ　Ｊｏｕｒｎａｌ．
+;jpn:◆けさの　スリークジャーナルを↓
+;jpn:　およみいたしましょう‥‥
+@KEY()↓
+@!
+
+_PAPER_THRK_01;marcus
+_PAPER_THRK_02;marcus
+_PAPER_THRK_03;marcus
+_PAPER_THRK_04;marcus
+_PAPER_THRK_05;marcus
+_PAPER_THRK_06;marcus
+_PAPER_THRK_07;marcus
+_PAPER_THRK_08;marcus
+_PAPER_THRK_09;marcus
+_PAPER_THRK_10;marcus
+_PAPER_THRK_11;marcus
+_PAPER_THRK_12;marcus
+@GOSUB(_PAPER_THRK_PART_1)
+　　Ａｒｅ　ｙｏｕ　ｇｏｉｎｇ　ｏｕｔ？
+;jpn:　おでかけなさるんですか。
+@KEY()↓
+@GOSUB(_PAPER_THRK_PART_2)
+◆”Ｄｅｓｔｒｏｙ　ｔｈｅ　ｈｕｍａｎｓ！@KEY()↓
+◆Ｈｏｌｄ　ｔｈｅ　ｔｏｗｎ　ｆｏｒ　ｏｕｒ　ｇｌｏｒｙ，　ａｎｄ　ｆｏｒ　ｔｈｅ　ｇｌｏｒｙ　ｏｆ　ｏｕｒ　ｍａｓｔｅｒ！”
+;jpn:◆「にんげんどもに　おそいかかれ！↓
+;jpn:　このまちを　われらのものに↓
+;jpn:　われらが　おやかたのために」
+@KEYNP()
+@!
+
+_PAPER_THRK_13;marcus
+@GOSUB(_PAPER_THRK_PART_1)
+　　Ｔｈｅ　ｗｅａｔｈｅｒ　ｆｏｒ　ｔｏｄａｙ　ｉｓ　ｄａｒｋ　ａｎｄ　ｇｌｏｏｍｙ
+;jpn:　そとは　いやなおてんきですよ。
+@KEY()↓
+@GOSUB(_PAPER_THRK_PART_2)
+◆”Ｔｏｄａｙ’ｓ　ｗｅａｔｈｅｒ：　ｔｈｉｃｋ，　ｇｒａｙ　ｃｌｏｕｄｓ　ａｌｌ　ｄａｙ”↓
+;jpn:◆「てんきよほう↓
+;jpn:　きょうも　どんよりとした↓
+;jpn:　じつによい　くもりぞらでしょう」
+@KEYNP()
+@!
+
+_PAPER_THRK_14;marcus
+@GOSUB(_PAPER_THRK_PART_1)
+　　Ｏｈ，　ｙｏｕ　ｇｏｔ　ｕｐ　ｅａｒｌｙ　ｔｏｄａｙ．
+;jpn:　おはやい　おめざめですね。
+@KEY()↓
+@GOSUB(_PAPER_THRK_PART_2)
+◆”Ｔｗｏ　ｈｕｍａｎ　ｋｉｄｓ　ｅｓｃａｐｅ　ｂｙ　ｓｏｍｅｈｏｗ　ｏｐｅｎｉｎｇ　ｔｈｅｉｒ　ｃａｇｅ”
+;jpn:◆「にんげんのこども　２ひき↓
+;jpn:　オリのカギをあけて　にげだす！」
+@KEYNP()
+@!
+
+_PAPER_THRK_15;marcus
+@GOSUB(_PAPER_THRK_PART_1)
+　　Ｙｏｕ’ｒｅ　ｗｏｒｋｉｎｇ　ｈａｒｄ，　ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ’ｒｅ　ｙｏｕｎｇ．
+;jpn:　おわかいのに　たいへんですね。
+@KEY()↓
+@GOSUB(_PAPER_THRK_PART_2)
+◆”Ｂｏｏｇｅｙ　Ｔｅｎｔ　ｆａｌｌｓ！　　Ｙｏｕｎｇ　ｈｕｍａｎ　ｔｏ　ｂｌａｍｅ！”
+;jpn:◆「われわれのどうし　ばけテントが↓
+;jpn:　なにものかに　たおされる」
+@KEYNP()
+@!
+
+_PAPER_THRK_16;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+◆Ｔｈｅ　ｐｒｉｄｅ　ｏｆ　ｔｈｅ　Ｔｈｒｅｅｄ　ｐｕｂｌｉｓｈｉｎｇ　ｃｏｍｍｕｎｉｔｙ，@KEY()↓
+◆ｔｈｅ　Ｔｈｒｅｅｄ　Ｊｏｕｒｎａｌ，　ｉｓ　ｂａｃｋ　ｗｉｔｈ　ａ　ｖｅｎｇｅａｎｃｅ！@KEY()↓
+◆”Ｚｏｍｂｉｅｓ　ｖａｎｑｕｉｓｈｅｄ！↓
+　　Ｔｕｎｎｅｌ　ｎｏｗ　ｏｐｅｎ！”
+;jpn:◆このまちがほこる　しんぶん↓
+;jpn:　スリークジャーナルが　めでたく↓
+;jpn:　ふっかつ　したんですよ！@KEY()↓
+;jpn:◆「ツーソンから　ゾンビきえる！↓
+;jpn:　トンネルも　つうこうかのうに！」
+@KEYNP()
+@!
+
+_PAPER_THRK_17;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｔｅｓｓｉｅ　ｅｘｉｓｔｓ，　ｅｙｅｗｉｔｎｅｓｓｅｓ　ｒｅｐｏｒｔ！@KEY()↓
+◆Ｂｕｔ　Ｔｅｓｓｉｅ　Ｗａｔｃｈｉｎｇ　Ｓｏｃｉｅｔｙ　ｍｅｍｂｅｒ　ｆｏｒｇｅｔｓ　ｔｏ　ｐｕｔ　ｆｉｌｍ　ｉｎ　ｈｉｓ　ｃａｍｅｒａ！”
+;jpn:◆「タスこの　タッシーは↓
+;jpn:　たーしかに　いた！？@KEY()↓
+;jpn:◆しかし　タッシーそうさくたい↓
+;jpn:　カメラにフィルム　いれわすれる」
+@KEYNP()
+@!
+
+_PAPER_THRK_18;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ　ｐａｎｉｃ！@KEY()↓
+◆Ｂｌａｃｋｏｕｔ　ｈｉｔｓ　ｐｏｐｕｌａｒ　ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ　ｉｎ　ｂｒｏａｄ　ｄａｙｌｉｇｈｔ”
+;jpn:◆「だいとかい　フォーサイドの↓
+;jpn:　にんきデパート　なぞのていでん！↓
+;jpn:　まひるの　だいパニック！」
+@KEYNP()
+@!
+
+_PAPER_THRK_19;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｓｏｍｅｏｎｅ　ｗｏｒｋｉｎｇ　ｔｏ　ｆｉｘ　ｍａｃｈｉｎｅ　ｌｅｆｔ　ｉｎ　ｈｏｌｅ　ａｔ　ｔｈｅ　Ｔｈｒｅｅｄ　ｇｒａｖｅｙａｒｄ”
+;jpn:◆「きょうどうぼちの　ちかしつに↓
+;jpn:　ほうちされた　マシンを↓
+;jpn:　せっせと　なおすひとたちがいた」
+@KEYNP()
+@!
+
+_PAPER_THRK_20;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”@DSP_NAME(PC_NESS)　ａｎｄ　ｃｏｍｐａｎｙ　ｓａｖｅ　Ｔｈｒｅｅｄ@KEY()↓
+◆ｃｏｎｆｉｒｍｓ　ｃｈｉｅｆ　ｏｆ　Ｚｏｍｂｉｅ　Ｒｅｌｉｅｆ　Ｃｏｒｐｓ”
+;jpn:◆「@DSP_STS(STS_PC_NAME_NES)くんたちが↓
+;jpn:　このまちを　すくってくれた。@KEY()↓
+;jpn:◆もと　ゾンビたいさくほんぶちょう↓
+;jpn:　しみじみと　かたる」
+@KEYNP()
+@!
+
+_PAPER_THRK_21;marcus松（シャレになっていない）
+@GOSUB(_PAPER_THRK_PART_3)
+◆Ｔｈｉｓ　ｍｏｒｎｉｎｇ’ｓ　Ｔｈｒｅｅｄ　Ｊｏｕｒｎａｌ　ｈｅａｄｌｉｎｅｓ　ｒｅａｄ　ｌｉｋｅ　ｔｈｉｓ．．．@KEY()↓
+◆Ｕｈｈ，　Ｉ　ｍａｄｅ　ａ　ｍｉｓｔａｋｅ　ａｎｄ　ｂｒｏｕｇｈｔ　ｔｈｅ　ＴｈｒｅｅｄＳｔａｒ　ｂｙ　ａｃｃｉｄｅｎｔ．．．@KEY()↓
+◆Ｗｅｌｌ，　ｌｅｔ　ｍｅ　ｒｅａｄ　ｉｔ　ｔｏ　ｙｏｕ　ａｎｙｗａｙ．．．@KEY()↓
+◆”Ｚｏｍｂｉｅ　ｇｉｖｅｓ　ｂｉｒｔｈ　ｔｏ　ｈａｗｋ　ｃｈｉｌｄ”@KEY()↓
+◆Ｈｅｈ，　ｈｅｈ，　ｈｅｈ．．．ｙｅａｈ，　ｒｉｇｈｔ．．．
+;jpn:◆けさの　スリークジャーナルを‥‥@KEY()↓
+;jpn:◆あ　まちがえて　スリスポって↓
+;jpn:　しんぶん　もってきちゃいました。↓
+;jpn:　ちょっと　よんでみましょうか‥‥@KEY()↓
+;jpn:◆「ゾンビが　タカをうんだ！」@KEY()↓
+;jpn:◆‥‥うむわけ　ないですよね。
+@KEYNP()
+@!
+
+_PAPER_THRK_22;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｓｕｐｅｒｎａｔｕｒａｌ　ｐｏｗｅｒｓ　ｄｏ　ｎｏｔ　ｅｘｉｓｔ@KEY()↓
+◆Ｈｕｍａｎ　ｂｅｉｎｇｓ　ｃａｎｎｏｔ　ｕｓｅ　ｔｅｌｅｐｏｒｔａｔｉｏｎ　ｓｔａｔｅｓ　ｕｎｉｖｅｒｓｉｔｙ　ｐｒｏｆｅｓｓｏｒ”
+;jpn:◆「だいがくの　せんせい　かたる。↓
+;jpn:　ちょうのうりょくは　ありえない。↓
+;jpn:　テレポートなど　できるわけない」
+@KEYNP()
+@!
+
+_PAPER_THRK_23;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｏｆ　Ｄａｌａａｍ　ｓｅｃｒｅｔｌｙ　ｖｉｓｉｔｉｎｇ　Ｔｈｒｅｅｄ？”
+;jpn:◆「ランマの　@DSP_STS(STS_PC_NAME_POO)おうじ↓
+;jpn:　おしのびで　スリークに？！」
+@KEYNP()
+@!
+
+_PAPER_THRK_24;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｚｏｍｂｉｅ　ｐｒｉｓｏｎ　ｗａｒｄｅｎ　ｓｔａｔｅｓ　ｉｎｍａｔｅｓ　ｂｅｌｉｅｖｅ　Ｏｕｒ　Ｎｅｓｔ　ｉｓ　Ｂｅｓｔ”
+;jpn:◆「スリークみなみの　オリのなかの↓
+;jpn:　ゾンビたちは　かたる。↓
+;jpn:　なれれば　けっこう　いいくらし」
+@KEYNP()
+@!
+
+_PAPER_THRK_25;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｐｙｒａｍｉｄ　ｍｙｓｔｅｒｉｏｕｓｌｙ　ｏｐｅｎｓ　ｉｎ　ｄｉｓｔａｎｔ　Ｓｃａｒａｂａ．↓
+◆Ｉｓ　ｔｈｉｓ　ａ　ｇｏｏｄ　ｐｏｒｔｅｎｔ？”
+；ｊｐｎ:◆「はるか　スカラビのくにの↓
+;jpn:　ピラミッドのとびら　ひらく！↓
+;jpn:　こううんの　きざしか？」
+@KEYNP()
+@!
+
+_PAPER_THRK_26;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+◆Ｈｅｒｅ’ｓ　ａｎ　ｉｎｔｅｒｅｓｔｉｎｇ　ａｄｖｅｒｔｉｓｅｍｅｎｔ　ｉｎ　ｔｏｄａｙ’ｓ　Ｔｈｒｅｅｄ　Ｊｏｕｒｎａｌ．．．@KEY()↓
+◆”Ｍｏｒｎｉｎｇ　ｎｅｗｓｐａｐｅｒｓ　ｂｒｏｕｇｈｔ　ｔｏ　ｙｏｕｒ　ｒｏｏｍ　ｂｙ　ａ　ｈａｎｄｓｏｍｅ，　ｆｒｉｅｎｄｌｙ　ｂｅｌｌｂｏｙ．@KEY()↓
+◆Ｔｈｒｅｅｄ　Ｓｕｎｓｅｔ　Ｈｏｔｅｌ”@KEY()↓
+◆．．．Ｕｈｈｈ．．．ｈｅｙ！．．．ｔｈｉｓ　ｉｓ　ｏｕｒ　ａｄ！
+;jpn:◆けさの　スリークジャーナルに↓
+;jpn:　こんな　こうこくが　のってます。@KEY()↓
+;jpn:◆「げんきな　しんぶんがかりが↓
+;jpn:　さわやかな　あさを　えんしゅつ。↓
+;jpn:　スリークサンセットホテル」@KEY()↓
+;　かいてきホテル　スリークイン」@KEY()↓
+;jpn:◆‥‥あ　うちの　こうこくでした。
+@KEYNP()
+@!
+
+_PAPER_THRK_27;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+◆Ｈｅｒｅ’ｓ　ｔｏｄａｙ’ｓ　Ｔｈｒｅｅｄ　Ｊｏｕｒｎａｌ！．．．@KEY()↓
+◆Ｕｈ．．．ｗｈｏｏｐｓ．．．ｔｈｅｒｅ　ｉｓ　ｎｏ　ｅｄｉｔｉｏｎ　ｔｏｄａｙ．．．
+;jpn:◆けさの　スリークジャーナルを@KEY()↓
+;jpn:◆‥‥@WI(10)あ@WI(10)　きょうは　しんぶんの↓
+;jpn:　きゅうかんびでしたよ。
+@KEYNP()
+@!
+
+_PAPER_THRK_28;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”Ｔｈｅ　Ｔｗｏｓｏｎ　Ｔｒｉｂｕｎｅ，　ｔｈｅ　ｎｅｉｇｈｂｏｒｉｎｇ　ｔｏｗｎ’ｓ　ｎｅｗｓｐａｐｅｒ，　ａｌｓｏ　ｗｏｔｈ　ｒｅａｄｉｎｇ”
+;jpn:◆「となりのまちの　しんぶん↓
+;jpn:　ツーソントゥデイも↓
+;jpn:　いがいと　よみごたえ　あり」
+@KEYNP()
+@!
+
+_PAPER_THRK_29;marcus
+@GOSUB(_PAPER_THRK_PART_3)
+@GOSUB(_PAPER_THRK_PART_4)
+◆”@DSP_NAME(PC_NESS)　ａｎｄ　ｆｒｉｅｎｄｓ　ｍａｄｅ　ｈｏｎｏｒａｒｙ　ｃｉｔｉｚｅｎｓ！”
+;jpn:◆「@DSP_STS(STS_PC_NAME_NES)しょうねんと↓
+;jpn:　その　なかまたちが↓
+;jpn:　スリークの　めいよしみんに！」
+@KEYNP()
+@!
+
+MSG_HOTEL_FOUR_PAPERBOY;
+@GOSUB(_SUB_PAPER_CHKF)
+@SET_REG(1)
+@XCHG()
+@ONGOSUB(_PAPER_FOUR_01,_PAPER_FOUR_02,_PAPER_FOUR_03,_PAPER_FOUR_04,_PAPER_FOUR_05,_PAPER_FOUR_06,_PAPER_FOUR_07,_PAPER_FOUR_08,_PAPER_FOUR_09,_PAPER_FOUR_10,_PAPER_FOUR_11,_PAPER_FOUR_12,_PAPER_FOUR_13,_PAPER_FOUR_14,_PAPER_FOUR_15,_PAPER_FOUR_16,_PAPER_FOUR_17,_PAPER_FOUR_18,_PAPER_FOUR_19,_PAPER_FOUR_20,_PAPER_FOUR_21,_PAPER_FOUR_22,_PAPER_FOUR_23,_PAPER_FOUR_24,_PAPER_FOUR_25,_PAPER_FOUR_26,_PAPER_FOUR_27,_PAPER_FOUR_28,_PAPER_FOUR_29)
+@!
+
+_PAPER_FOUR_PART_1;marcus
+◆Ｇｏｏｄ　ｍｏｒｎｉｎｇ！@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ａ　ｕｎｉｑｕｅ　ｓｅｒｖｉｃｅ，　ｅｘｃｌｕｓｉｖｅ　ｔｏ　ｏｕｒ　ｈｏｔｅｌ　ｏｎｌｙ！@KEY()↓
+◆Ｉ’ｍ　ｈｅｒｅ　ｔｏ　ｒｅａｄ　ｙｏｕ　ｔｏｄａｙ’ｓ　ｈｅａｄｌｉｎｅ．
+@KEY()↓
+;jpn:◆おはようございます。@KEY()↓
+;jpn:◆とうホテルだけの↓
+;jpn:　しんぶん　よみあげサービスです。@WI(10)↓
+@!
+
+_PAPER_FOUR_PART_2;marcus
+◆Ｏｎ　ｔｈｅ　ｆｒｏｎｔ　ｐａｇｅ　ｏｆ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ．．．
+;jpn:　フォーサイドポスト　だい１めん
+@KEY()↓
+@!
+
+_PAPER_FOUR_01;Marcus
+_PAPER_FOUR_02;
+_PAPER_FOUR_03;
+_PAPER_FOUR_04;
+_PAPER_FOUR_05;
+_PAPER_FOUR_06;
+_PAPER_FOUR_07;
+_PAPER_FOUR_08;
+_PAPER_FOUR_09;
+_PAPER_FOUR_10;
+_PAPER_FOUR_11;
+_PAPER_FOUR_12;
+_PAPER_FOUR_13;
+_PAPER_FOUR_14;
+_PAPER_FOUR_15;
+_PAPER_FOUR_16;
+_PAPER_FOUR_17;
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｏｖｅｒ　７０％　ｏｆ　Ｆｏｕｒｓｉｄｅ　ｃｉｔｉｚｅｎｓ　ｓｕｐｐｏｒｔ　Ｍｏｎｏｔｏｌｉ”
+;jpn:◆「フォーサイドしみんによる↓
+;jpn:　モノトリーしの　しじりつ↓
+;jpn:　７０パーセントを　こえる！」
+@KEYNP()
+@!
+
+_PAPER_FOUR_18;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｏｖｅｒ　８０％　ｏｆ　Ｆｏｕｒｓｉｄｅ　ｃｉｔｉｚｅｎｓ　ｓｕｐｐｏｒｔ　Ｍｏｎｏｔｏｌｉ”
+;jpn:◆「フォーサイドしみんによる↓
+;jpn:　モノトリーしの　しじりつ↓
+;jpn:　８０パーセントを　こえる！」
+@KEYNP()
+@!
+
+_PAPER_FOUR_19;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｏｖｅｒ　９０％　ｏｆ　Ｆｏｕｒｓｉｄｅ　ｃｉｔｉｚｅｎｓ　ｓｕｐｐｏｒｔ　Ｍｏｎｏｔｏｌｉ”@KEY()↓
+◆Ｔｈｅｎ　ｏｎ　ｐａｇｅ　１７，　@KEY()↓
+◆”Ｍｙｓｔｅｒｉｏｕｓ　ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ　ｂｌａｃｋｏｕｔ　ｃａｕｓｅｄ　ｂｙ　ｍｏｕｓｅ”
+;jpn:◆「フォーサイドしみんによる↓
+;jpn:　モノトリーしの　しじりつ↓
+;jpn:　９０パーセントを　こえる！」@KEY()↓
+;jpn:◆フォーサイドポスト　だい１７めん@KEY()↓
+;jpn:◆「デパートの　なぞのていでん↓
+;jpn:　げんいんは　ネズミのイタズラ」
+@KEYNP()
+@!
+
+_PAPER_FOUR_20;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｏｖｅｒ　５０％　ｏｆ　Ｆｏｕｒｓｉｄｅ　ｃｉｔｉｚｅｎｓ　ｎｏｗ　ｓｕｐｐｏｒｔ　Ａｎｔｉ－Ｍｏｎｏｔｏｌｉ　ｃａｍｐａｉｇｎ”@KEY()↓
+◆Ａｎｄ　ｏｎ　ｐａｇｅ　２３　ｏｆ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ．@KEY()↓
+◆”Ｌｏｎｅｌｙ　ｄｅｍｉｓｅ　ｉｎ　ｔｈｅ　ｃｉｔｙ．　　Ｌｏｎｇ－ｈａｉｒｅｄ　ｍａｎ　ｗｉｔｈ　ｂｅａｒｄ，@KEY()↓
+◆ｓｕｎｇｌａｓｓｅｓ　ａｎｄ　ａｌｏｈａ　ｓｈｉｒｔ　ｆｏｕｎｄ　ｉｎ　ｓｔｒｅｅｔ”
+;jpn:◆「フォーサイドしみんによる↓
+;jpn:　モノトリーしの　しじりつ↓
+;jpn:　５０パーセントを　したまわる！」@KEY()↓
+;jpn:◆フォーサイドポスト　だい２３めん@KEY()↓
+;jpn:◆「とかいの　こどくな　し。↓
+;jpn:　サングラス　ひげ　ちょうはつ↓
+;jpn:　アロハシャツの　だんせい」
+@KEYNP()
+@!
+
+_PAPER_FOUR_21;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｆａｍｅｄ　Ｍｒ．　Ｍｏｎｏｔｏｌｉ　ｌｅａｖｅｓ　Ｆｏｕｒｓｉｄｅ．　　Ｓｔａｔｅｓ　ｈｅ　ｉｓ　ｇｏｉｎｇ　ｏｎ　ａ　ｔｒｉｐ”
+;jpn:◆「あの　モノトリーし↓
+;jpn:　たびにでると　いいのこしたまま↓
+;jpn:　フォーサイドから　すがたをけす」
+@KEYNP()
+@!
+
+_PAPER_FOUR_22;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+◆Ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ　ｓａｙｓ．．．@KEY()↓
+◆Ｙｏｉｃｋｓ！　Ｉ　ｍａｄｅ　ａ　ｍｉｓｔａｋｅ　ａｎｄ　ｂｒｏｕｇｈｔ　ａ　ｎｅｗｓｐａｐｅｒ　ｃａｌｌｅｄ　ＦｏｕｒｓｉｄｅＳｔａｒ．@KEY()↓
+◆Ｌｅｔ　ｍｅ　ｒｅａｄ　ｔｈｉｓ　ａｎｙｗａｙ．．．@KEY()↓
+◆”Ｌｕｃｋｙ　ｏｆ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｆｏｕｎｄ　ｔｏ　ｈａｖｅ　ｂｅｅｎ　ｉｎ　ｓｔａｔｅ　Ｈｏｕｓｅ　ｏｆ　Ｒｅｐｒｅｓｅｎｔａｔｉｖｅｓ”@KEY()↓
+◆．．．Ｔｈａｔ’ｓ　ｇｏｔ　ｔｏ　ｂｅ　ａ　ｌｉｅ．．．
+;jpn:　フォーサイドポストの‥‥@KEY()↓
+;jpn:◆あ　まちがえて　フォースポって↓
+;jpn:　しんぶん　もってきちゃいました。↓
+;jpn:　どうせだから　よんでみます‥‥@KEY()↓
+;jpn:◆「トンズラのラッキーは　むかし↓
+;jpn:　がっきゅういいんだった！」↓@KEY()
+;jpn:◆‥‥@WI(10)うそに　きまってますよね。
+@KEYNP()
+@!
+
+_PAPER_FOUR_23;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｏｆ　Ｄａｌａａｍ　ｖｉｓｉｔｉｎｇ　Ｆｏｕｒｓｉｄｅ　ｉｎ　ｓｅｃｒｅｔ？”
+;jpn:◆「ランマの　@DSP_STS(STS_PC_NAME_POO)おうじ↓
+;jpn:　おしのびで　フォーサイドに？！」
+@KEYNP()
+@!
+
+_PAPER_FOUR_24;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+◆Ｏｎ　ｐａｇｅ　２５　ｏｆ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ．．．@KEY()↓
+◆”Ｖｅｎｕｓ　ｂｅｃｏｍｅｓ　ｔｏａｓｔ　ｏｆ　Ｆｏｕｒｓｉｄｅ　Ａｕｔｏｇｒａｐｈ　ｈｕｎｔｅｒｓ　ｃｒｅａｔｉｎｇ　ｐｒｏｂｌｅｍｓ　ｆｏｒ　ｆａｍｅｄ　ｓｉｎｇｅｒ”
+；ｊｐｎ：　フォーサイドポスト　だい２５めん@KEY()↓
+；ｊｐｎ：◆「いま　フォーサイドで↓
+;jpn:　ビーナスにんき　ふっとうちゅう！↓
+;jpn:　まいにちが　サインぜめ」
+@KEYNP()
+@!
+
+_PAPER_FOUR_25;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+◆Ｏｎ　ｐａｇｅ　３　ｏｆ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ．．．@KEY()↓
+◆”Ｃｒｉｍｉｎａｌ　ａｃｔｉｖｉｔｙ　ｉｎ　Ｓｃａｒａｂａ？@KEY()↓
+◆Ｓａｃｒｅｄ　ｔｒｅａｓｕｒｅ　ｏｆ　ｐｙｒａｍｉｄ，　ｔｈｅ　@DSP_GOODS(GDS_TOOL_EAGLE_EYE)　ｓｔｏｌｅｎ”
+;jpn:　フォーサイドポスト　だい３めん@KEY()↓
+;jpn:◆「スカラビに　せっとうだん？！↓
+;jpn:　ピラミッドの　ひほう　@DSP_GOODS(GDS_TOOL_EAGLE_EYE)が↓
+;jpn:　なにものかに　もちさられる」
+@KEYNP()
+@!
+
+_PAPER_FOUR_26;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+◆Ｈｅｒｅ’ｓ　ａｎ　ａｄｖｅｒｔｉｓｅｍｅｎｔ　ｉｎ　ｔｏｄａｙ’ｓ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ．@KEY()↓
+◆”Ｈｉｇｈｅｒ　ｔｈａｎ　ｅｖｅｒｙｗｈｅｒｅ　ｅｌｓｅ！↓
+　（Ｔｈａｔ’ｓ　ｈｅｉｇｈｔ，　ｎｏｔ　ｐｒｉｃｅ）↓
+　Ｍｏｎｏｔｏｌｉ　Ｇｒａｎｄ　Ｈｏｔｅｌ@KEY()↓
+◆Ｈｅｙ！　　Ｔｈａｔ’ｓ　ｏｕｒ　ｈｏｔｅｌ！
+;jpn:　フォーサイドポスト　こうこくらん@KEY()↓
+;jpn:◆「どこよりも　たかい！↓
+;jpn:　（ねだんじゃなくて　せのたかさ）↓
+;jpn:　モノトリーグランドホテル」@KEY()↓
+;　ホテル・ザ・フォーサイド」@KEY()↓
+;jpn:◆‥‥このホテルのことですよ。
+@KEYNP()
+@!
+
+_PAPER_FOUR_27;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+◆ｏｎ　ｐａｇｅ　１３　ｏｆ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ．．．@KEY()↓
+◆”Ｎｅｗｓｐａｐｅｒ　ｒｅａｄｉｎｇ　ｂｙ　ｂｅｌｌｂｏｙｓ　ｉｓ　ｎｏｔ　ｅｘｃｌｕｓｉｖｅ　ｔｏ　Ｆｏｕｒｓｉｄｅ　ｏｎｌｙ@KEY()↓
+◆Ｄｏ　ｎｏｔ　ｂｅ　ｔａｋｅｎ　ｉｎ　ｂｙ　ｂｅｌｌｂｏｙｓ　ｊｕｓｔ　ｌｏｏｋｉｎｇ　ｆｏｒ　ａ　ｔｉｐ”@KEY()↓
+◆．．．Ｉ’ｍ　ｓｏ　ａｓｈａｍｅｄ．．．
+;jpn:　フォーサイドポスト　だい１３めん@KEY()↓
+;jpn:◆「しんぶん　よみあげサービスは↓
+;jpn:　いまどき　どこでも　あたりまえ。↓
+;jpn:　だまされないよう　ちゅうい」@KEY()↓
+;jpn:◆‥‥おはずかしい。
+@KEYNP()
+@!
+
+_PAPER_FOUR_28;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｔｈｅ　ｂｅｓｔ　ｎｅｗｓｐａｐｅｒ　ｏｆ　ａｌｌ　ｔｈｅ　ｏｔｈｅｒｓ@KEY()↓
+◆Ｅｖｅｒｙｏｎｅ　ｒｅａｄｓ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｐｏｓｔ　ｅａｃｈ　ｍｏｒｎｉｎｇ”@KEY()↓
+◆Ｉｓ　ｔｈｉｓ　ｔｈｅ　ｐａｇｅ　ｏｎｅ　ｈｅａｄｌｉｎｅ？
+;jpn:◆「しんぶんのなかの　しんぶん。↓
+;jpn:　フォーサイドポストを↓
+;jpn:　けさも　みなさん　よんでいる」@KEY()↓
+;jpn:◆これが　トップきじですか‥‥。
+@KEYNP()
+@!
+
+_PAPER_FOUR_29;marcus
+@GOSUB(_PAPER_FOUR_PART_1)
+@GOSUB(_PAPER_FOUR_PART_2)
+◆”Ｍｅｇａｌｏｐｏｌｉｓ　Ｆｏｕｒｓｉｄｅ　ｔｏ　ｈａｖｅ　ａｎｏｔｈｅｒ　ｂｕｓｙ　ｄａｙ”
+;jpn:◆「だいとかい　フォーサイドは↓
+;jpn:　きょうも　いつもとかわらず↓
+;jpn:　あわただしく　なるもよう」
+@KEYNP()
+@!
+
+MSG_HOTEL_SUMS_PAPERBOY;
+@GOSUB(_SUB_PAPER_CHKF)
+@SET_REG(1)
+@XCHG()
+@ONGOSUB(_PAPER_SUMS_01,_PAPER_SUMS_02,_PAPER_SUMS_03,_PAPER_SUMS_04,_PAPER_SUMS_05,_PAPER_SUMS_06,_PAPER_SUMS_07,_PAPER_SUMS_08,_PAPER_SUMS_09,_PAPER_SUMS_10,_PAPER_SUMS_11,_PAPER_SUMS_12,_PAPER_SUMS_13,_PAPER_SUMS_14,_PAPER_SUMS_15,_PAPER_SUMS_16,_PAPER_SUMS_17,_PAPER_SUMS_18,_PAPER_SUMS_19,_PAPER_SUMS_20,_PAPER_SUMS_21,_PAPER_SUMS_22,_PAPER_SUMS_23,_PAPER_SUMS_24,_PAPER_SUMS_25,_PAPER_SUMS_26,_PAPER_SUMS_27,_PAPER_SUMS_28,_PAPER_SUMS_29)
+@!
+_PAPER_SUMS_PART_1;marcus
+◆Ａｈ，　ｓｉｒ．．．↓
+　Ａｒｅ　ｙｏｕ　ａｌｒｅａｄｙ　ｏｎ　ｙｏｕｒ　ｗａｙ　ｔｏ　ｔｈｅ　ｂｅａｃｈ？
+;jpn:◆これは　これは　おきゃくさま。↓
+;jpn:　もう　ビーチへ　おでかけですか。
+@KEY()↓
+@!
+_PAPER_SUMS_PART_2;marcus
+◆Ｈｅｒｅ　ｉｓ　ｔｈｉｓ　ｍｏｒｎｉｎｇ’ｓ　ｈｅａｄｌｉｎｅｓ　ｆｒｏｍ　ｔｈｅ　Ｄａｉｌｙ　Ｓｕｍｍｅｒｓ．．．
+;jpn:◆けさの　デイリーサマーズの↓
+;jpn:　トップニュースはですね‥‥
+@KEY()↓
+@!
+
+_PAPER_SUMS_01;marcus
+_PAPER_SUMS_02;
+_PAPER_SUMS_03;
+_PAPER_SUMS_04;
+_PAPER_SUMS_05;
+_PAPER_SUMS_06;
+_PAPER_SUMS_07;
+_PAPER_SUMS_08;
+_PAPER_SUMS_09;
+_PAPER_SUMS_10;
+_PAPER_SUMS_11;
+_PAPER_SUMS_12;
+_PAPER_SUMS_13;
+_PAPER_SUMS_14;
+_PAPER_SUMS_15;
+_PAPER_SUMS_16;
+_PAPER_SUMS_17;
+_PAPER_SUMS_18;
+_PAPER_SUMS_19;
+_PAPER_SUMS_20;
+_PAPER_SUMS_21;
+@GOSUB(_PAPER_SUMS_PART_1)
+@GOSUB(_PAPER_SUMS_PART_2)
+◆”Ｐｅｏｐｌｅ　ｒｅｐｏｒｔｅｄ　ｍｉｓｓｉｎｇ　ｏｎｅ　ａｆｔｅｒ　ａｎｏｔｈｅｒ　ｉｎ　ｏｕｒ　ｓｉｓｔｅｒ　ｃｉｔｙ　Ｗｉｎｔｅｒｓ”
+;jpn:◆「しまいとし　ウィンターズで↓
+;jpn:　ゆくえふめいしゃ　ぞくしゅつ」
+@KEYNP()
+@!
+
+_PAPER_SUMS_22;marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+@GOSUB(_PAPER_SUMS_PART_2)
+◆”Ｙｅｓｔｅｒｄａｙ　ｔｈｅ　ｓａｍｅ　ａｓ　ｔｈｅ　ｄａｙ　ｂｅｆｏｒｅ　ｙｅｓｔｅｒｄａｙ@KEY()↓
+◆Ｔｏｄａｙ　ｔｏ　ｂｅ　ｔｈｅ　ｓａｍｅ　ａｓ　ｙｅｓｔｅｒｄａｙ”
+;jpn:◆「きのうは　おとといと　おなじ。↓
+;jpn:　きょうはきのうと　おなじもよう」
+@KEYNP()
+@!
+
+_PAPER_SUMS_23;marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+@GOSUB(_PAPER_SUMS_PART_2)
+◆”Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｏｆ　Ｄａｌａａｍ　ｖｉｓｉｔｉｎｇ　Ｓｕｍｍｅｒｓ　ｓｅｃｒｅｔｌｙ？”
+;jpn:◆「ランマの　@DSP_STS(STS_PC_NAME_POO)おうじ↓
+;jpn:　おしのびで　サマーズに？！」
+@KEYNP()
+@!
+
+_PAPER_SUMS_24;marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+◆Ｔｏｄａｙ’ｓ　Ｄａｉｌｙ　Ｓｕｍｍｅｒｓ　ｓａｙｓ．．．@KEY()↓
+◆Ｏｏｏ　ｌａ　ｌａ，@WI(10)　Ｉ　ｂｒｏｕｇｈｔ　ｔｈｅ　ｗｒｏｎｇ　ｐａｐｅｒ　ｂｙ　ｍｉｓｔａｋｅ．　　Ｉｔ　ｉｓ　ｔｈｅ　Ｓｕｍｍｅｒ　Ｉｎｑｕｉｒｅｒｅｒ@KEY()↓
+◆Ｌｉｓｔｅｎ　ｔｏ　ｔｈｉｓ　ｈｅａｄｌｉｎｅ．．．@KEY()↓
+◆”Ｈｕｇｅ　ｒａｔ　ｆｏｕｎｄ　ｌｉｖｉｎｇ　ｉｎ　ｓｅｗｅｒ　ｓｙｓｔｅｍ”@KEY()↓
+◆．．．Ｉ　ｒｅａｌｌｙ　ｄｏ　ｎｏｔ　ｔｈｉｎｋ　ｓｏ．．．
+;jpn:◆けさの　デイリーサマーズ‥‥@KEY()↓
+;jpn:◆あ@WI(10)　まちがえて　サマスポって↓
+;jpn:　しんぶん　もってきちゃいました。↓
+;jpn:　この　みだし　すごいですよ‥‥@KEY()↓
+;jpn:◆「フォーサイドの　げすいどうに↓
+;jpn:　きょだいねずみがいた？！」↓
+;jpn:◆‥‥いるわけないですよね。
+@KEYNP()
+@!
+
+_PAPER_SUMS_25;marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+@GOSUB(_PAPER_SUMS_PART_2)
+◆”Ｉｎｔｒｕｄｅｒｓ　ｉｎ　Ｓｃａｒａｂａ　Ｐｙｒａｍｉｄ！@WI(10)　Ｓｕｍｍｅｒｓ　ｒｅｍａｉｎｓ　ａ　ｐｅａｃｅｆｕｌ　ｐａｒａｄｉｓｅ”
+;jpn:◆「スカラビの　ピラミッドに↓
+;jpn:　なにものかが　しんにゅう？！↓
+;jpn:　‥‥@WI(10)サマーズは　へいわそのもの」
+@KEYNP()
+@!
+
+_PAPER_SUMS_26;marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+@GOSUB(_PAPER_SUMS_PART_2)
+◆”Ｂｒｅｅｚｅ　ｂｌｅｗ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｐａｌｍ　ｔｒｅｅｓ　ｌａｓｔ　ｎｉｇｈｔ”@KEY()↓
+◆．．．@WI(10)　Ｔｈｉｓ　ｉｓ　ｂｉｇ　ｎｅｗｓ　ｈｅｒｅ．
+;jpn:◆「さくばん　かぜがふいて↓
+;jpn:　やしのきが　けっこうゆれる！」@KEY()↓
+;jpn:◆‥‥@WI(10)ここでは　ビッグニュースです。
+@KEYNP()
+@!
+
+_PAPER_SUMS_27;marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+@GOSUB(_PAPER_SUMS_PART_2)
+◆”Ｋｒａｋｅｎ　Ｆｉｎ　ｍａｋｅｓ　ａ　ｂｅａｕｔｉｆｕｌ　ｓｏｕｐ！@KEY()↓
+◆Ｎｅｗ　ｇｏｕｒｍｅｔ　ｄｉｓｈ　ｍａｋｅｓ　ｂｉｇ　ｗａｖｅｓ　ａｔ　ｔｈｅ　ｂｅａｃｈ”
+;jpn:◆「ビーチに　クラーケンのヒレが↓
+;jpn:　うちあげられ　みんなでスープに。↓
+;jpn:　レストランでも　しんメニューに」
+@KEYNP()
+@!
+
+_PAPER_SUMS_28;marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+◆Ｔｈｅｒｅ’ｓ　ａ　ｇｒｅａｔ　ａｄｖｅｒｔｉｓｅｍｅｎｔ　ｉｎ　ｔｈｉｓ　ｍｏｒｎｉｎｇ’ｓ　Ｄａｉｌｙ　Ｓｕｍｍｅｒｓ@KEY()↓
+◆”Ｓｔｏｐ　ｄｏｉｎｇ　ａｎｙｔｈｉｎｇ　ｃｏｍｐｌｉｃａｔｅｄ．@KEY()↓
+◆Ｆｏｒｇｅｔ　ａｂｏｕｔ　ｓｏｌｖｉｎｇ　ｍｙｓｔｅｒｉｅｓ　ａｎｄ　ｃｏｍｐｌｅｔｉｎｇ　ｓｔａｇｅｓ！@KEY()↓
+◆Ｗｅｌｃｏｍｅ　ｔｏ　ｔｈｅ　ｅａｓｙ　ｌｉｆｅ　ｉｎ　Ｓｕｍｍｅｒｓ！”
+；ｊｐｎ：◆けさの　デイリーサマーズに↓
+;jpn:　すてきな　こうこくがのってます。@KEY()↓
+;jpn:◆「ややこしいこと　やめましょう。↓
+;jpn:　ナゾとか　クリアとか　かんがえず↓
+;jpn:　サマーズで　のんきライフ！」
+@KEYNP()
+@!
+
+_PAPER_SUMS_29;Marcus
+@GOSUB(_PAPER_SUMS_PART_1)
+@GOSUB(_PAPER_SUMS_PART_2)
+◆”Ｙｅｓｔｅｒｄａｙ　ｗａｓ　ｔｈｅ　ｓａｍｅ　ａｓ　ｔｈｅ　ｄａｙ　ｂｅｆｏｒｅ　ｙｅｓｔｅｒｄａｙ@KEY()↓
+◆Ｔｏｄａｙ　ｗｉｌｌ　ｂｅ　ｔｈｅ　ｓａｍｅ　ａｓ　ｙｅｓｔｅｒｄａｙ”
+;jpn:◆「きのうは　おとといと　おなじ。↓
+;jpn:　きょうはきのうと　おなじもよう」
+@KEYNP()
+@!
+
+MSG_HOTEL_SKRB_PAPERBOY;
+@GOSUB(_SUB_PAPER_CHKF)
+@SET_REG(1)
+@XCHG()
+@ONGOSUB(_PAPER_SKRB_01,_PAPER_SKRB_02,_PAPER_SKRB_03,_PAPER_SKRB_04,_PAPER_SKRB_05,_PAPER_SKRB_06,_PAPER_SKRB_07,_PAPER_SKRB_08,_PAPER_SKRB_09,_PAPER_SKRB_10,_PAPER_SKRB_11,_PAPER_SKRB_12,_PAPER_SKRB_13,_PAPER_SKRB_14,_PAPER_SKRB_15,_PAPER_SKRB_16,_PAPER_SKRB_17,_PAPER_SKRB_18,_PAPER_SKRB_19,_PAPER_SKRB_20,_PAPER_SKRB_21,_PAPER_SKRB_22,_PAPER_SKRB_23,_PAPER_SKRB_24,_PAPER_SKRB_25,_PAPER_SKRB_26,_PAPER_SKRB_27,_PAPER_SKRB_28,_PAPER_SKRB_29)
+@!
+
+_PAPER_SKRB_PART_1;marcus
+◆Ｇｏｏｄ　ｍｏｒｎｉｎｇ，　ｇｏｏｄ　ｓｉｒ！@KEY()↓
+◆Ｐｌｅａｓｅ　ａｌｌｏｗ　ｍｅ　ｔｏ　ｒｅａｄ　ｔｏ　ｙｏｕ　ｆｒｏｍ　ｔｈｅ　ｌｏｃａｌ　ｎｅｗｓｐａｐｅｒ，@KEY()↓
+◆ｔｈｅ　Ｓｃａｒａｂａ　Ｐａｐｙｒｕｓ．．．
+;jpn:◆グッド　モーニング　サー！@KEY()↓
+;jpn:◆このくにの　ゆうめいなしんぶん↓
+;jpn:　スカラビパピルス　およみします。
+@KEY()↓
+@!
+
+_PAPER_SKRB_PART_2;marcus
+◆．．．@WI(10)Ｗｅｌｌ．．．ｔｈｅｒｅ　ｉｓ　ｓｏｍｅ　ｎｅｗ　ｈｅｒｅ　ａｂｏｕｔ．．．
+;jpn:　‥‥@WI(10)というウワサ　ながれる」
+@KEYNP()
+@!
+
+_PAPER_SKRB_01;marcus
+_PAPER_SKRB_02;
+_PAPER_SKRB_03;
+_PAPER_SKRB_04;
+_PAPER_SKRB_05;
+_PAPER_SKRB_06;
+_PAPER_SKRB_07;
+_PAPER_SKRB_08;
+_PAPER_SKRB_09;
+_PAPER_SKRB_10;
+_PAPER_SKRB_11;
+_PAPER_SKRB_12;
+_PAPER_SKRB_13;
+_PAPER_SKRB_14;
+_PAPER_SKRB_15;
+_PAPER_SKRB_16;
+_PAPER_SKRB_17;
+_PAPER_SKRB_18;
+_PAPER_SKRB_19;
+_PAPER_SKRB_20;
+_PAPER_SKRB_21;
+_PAPER_SKRB_22;
+_PAPER_SKRB_23;
+@GOSUB(_PAPER_SKRB_PART_1)
+◆”Ｋｒａｋｅｎ，　ｔｈｅ　ｅｖｉｌ　ｓｅａ　ｍｏｎｓｔｅｒ，　ｎｏｗ　ｇｏｎｅ　ｆｏｒｅｖｅｒ！”@KEY()↓
+;jpn:◆「いまわしき　うみの　かいぶつ↓
+;jpn:　クラーケンが　すがたをけす！
+@GOSUB(_PAPER_SKRB_PART_2)
+@!
+
+_PAPER_SKRB_24;marcus
+@GOSUB(_PAPER_SKRB_PART_1)
+◆”Ａｃｔｉｖｉｔｙ　ａｔ　ｐｙｒａｍｉｄ　ｔｈｅ　ｆｉｒｓｔ　ｉｎ　３００　ｙｅａｒｓ”@KEY()↓
+;jpn:◆「さばくの　ピラミッド↓
+;jpn:　３００ねんぶりにトビラがひらいた
+@GOSUB(_PAPER_SKRB_PART_2)
+@!
+
+_PAPER_SKRB_25;marcus
+@GOSUB(_PAPER_SKRB_PART_1)
+◆”@DSP_GOODS(GDS_TOOL_EAGLE_EYE)　ｓｔｏｌｅｎ　ｆｒｏｍ　ｔｈｅ　ｐｙｒａｍｉｄ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ！”@KEY()↓
+;jpn:◆「さばくの　ピラミッドから↓
+;jpn:　@DSP_GOODS(GDS_TOOL_EAGLE_EYE)が　ぬすみだされる
+@GOSUB(_PAPER_SKRB_PART_2)
+@!
+
+_PAPER_SKRB_26;marcus
+@GOSUB(_PAPER_SKRB_PART_1)
+◆”Ｍｙｓｔｅｒｉｏｕｓ　ｍｏｖｉｎｇ　ｔｏｗｅｒ　ｓｉｇｈｔｅｄ　ｉｎ　ｄｅｓｅｒｔ！”@KEY()↓
+;jpn:◆「さばくにたつ　ふしぎなとうが↓
+;jpn:　ズルズルと　うごきまわっていた！
+@GOSUB(_PAPER_SKRB_PART_2)
+@!
+
+_PAPER_SKRB_27;marcus
+@GOSUB(_PAPER_SKRB_PART_1)
+◆”Ｍｉｒａｃｕｌｏｕｓ　ｆｏｒｅｉｇｎ　ｃｈｉｌｄｒｅｎ　ｏｖｅｒｗｈｅｌｍ　Ｋｒａｋｅｎ！”@KEY()↓
+;jpn:◆「あのクラーケンを　たおしたのは↓
+;jpn:　がいこくの　こどもたちだった。
+@GOSUB(_PAPER_SKRB_PART_2)
+@!
+
+_PAPER_SKRB_28;marcus
+@GOSUB(_PAPER_SKRB_PART_1)
+◆”Ｃｈｉｌｄｒｅｎ　ｗｈｏ　ｄａｓｈ　ｔｈｅｎ　ｄｉｓａｐｐｅａｒ　ｓｉｇｈｔｅｄ，　ｂｕｔ　ｏｎｌｙ　ｆｏｒ　ａｎ　ｉｎｓｔａｎｔ”@KEY()↓
+;jpn:◆「とつぜん　はしりだし　パッと↓
+;jpn:　きえてしまう　こどもたちがいる。
+@GOSUB(_PAPER_SKRB_PART_2)
+@!
+
+_PAPER_SKRB_29;marcus
+@GOSUB(_PAPER_SKRB_PART_1)
+◆”Ｔｅｒｒｉｂｌｅ　ｓｏｕｎｄ　ｒｅｃｅｎｔｌｙ　ｈｅａｒｄ@KEY()↓
+◆Ｐｏｓｓｉｂｌｙ　ｔｈｅ　ｓｏｕｎｄ　ｏｆ　ｅｖｉｌ　ｂｅｉｎｇ　ｄｅｓｔｒｏｙｅｄ　ｂｅｙｏｎｄ　ｏｕｒ　ｔｉｍｅ　ａｎｄ　ｓｐａｃｅ”@KEY()↓
+；jpn:◆「せんじつ　じくうをこえて↓
+;jpn:　あくが　ほろびる　おとがした。
+@GOSUB(_PAPER_SKRB_PART_2)
+@!
+
+MSG_HOTEL_MOON_PAPERBOY;marcus
+◆Ｇｏｏｄ　ｍｏｒｎ．．．@WI(10)Ｕｈｈｈ．．．ｎｏｔ　ｍｏｒｎｉｎｇ．@WI(10)@KEY()↓
+◆Ｈｅｒｅ@WI(5)　ｉｎ　Ｍｏｏｎｓｉｄｅ，　ｉｔ’ｓ　ａｌｗａｙｓ　ｔｈｅ　ｍｉｄｄｌｅ　ｏｆ　ｔｈｅ　ｎｉｇｈｔ@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ａ　ｈｅａｄｌｉｎｅ　ｆｒｏｍ　ｔｏｎｉｇｈｔ’ｓ　Ｍｏｏｎｓｉｄｅ　Ｐｒｅｓｓ．．．@KEY()↓
+◆”Ｍａｎｉ　Ｍａｎｉ　ｉｓ　@WI(10)　ａｌｗａｙｓ　Ｍａｎｉ　Ｍａｎｉ　@WI(10)　ａｔ　Ｍａｎｉ　Ｍａｎｉ　ｗｉｔｈ　ａｌｌ　@WI(10)　Ｍａｎｉ　Ｍａｎｉ　@WI(10)　Ｍａｎｉ”
+;jpn:◆おはようございま‥‥@WI(10)せん。@WI(10)↓
+;jpn:　ここ@WI(5)　ムーンサイドのまちは↓
+;jpn:　いつだって　まよなかなんですよ。@KEY()↓
+;jpn:◆こんやの　ムーンサイドプレスに↓
+;jpn:　ほうら@WI(10)　こんなニュースが@KEY()↓
+;jpn:◆「マニマニは@WI(10)　マニマニに@WI(10)　いつも@WI(10)↓
+;jpn:　すべての@WI(10)　マニマニの@WI(10)　マニマニが@WI(10)↓
+;jpn:　マニ@WI(10)　すべて@WI(10)　ママ@WI(10)　マニマニ」
+@KEYNP()
+@!
+

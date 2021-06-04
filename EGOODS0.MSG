@@ -1,0 +1,450 @@
+;//////////////////////////グッズ系の行動時メッセージ/////////////////
+
+MSG_BTL_HP4;
+MSG_BTL_HP50G;
+MSG_BTL_HP200G;
+MSG_BTL_LIFEUP_A;
+MSG_BTL_LIFEUP_B;
+MSG_BTL_LIFEUP_Y;
+MSG_BTL_PP20G;
+MSG_BTL_PP80G;
+MSG_BTL_BENTO;
+MSG_BTL_CANDY;
+MSG_BTL_MAZUI_PAN;
+MSG_BTL_UMAI_PAN;
+MSG_BTL_G_WATER;
+MSG_BTL_IQ4;
+MSG_BTL_GUTS4;
+MSG_BTL_SPEED4;
+MSG_BTL_VITA4;
+MSG_BTL_LUCK4;
+MSG_BTL_EAT_ONE;＠＄
+
+@GET_CITEM()
+@XCHG()
+@GET_GOODS_EAT(0)
+@EQ(2)
+@TRUE_GOTO(_BTL_DRINK)
+@GET_SPICE(0)
+@TRUE_GOTO(_BTL_SPICE)
+@Q_SELF()
+@TRUE_GOTO(_BTL_EAT_SELF)
+←
+◆@DSP_ACTOR()　ｔｏｏｋ↓
+　　ｔｈｅ　@DSP_GOODS(0)　ｏｕｔ　ａｎｄ@KEY()↓
+◆@DSP_OBJECT()　ａｔｅ　ｉｔ．
+;jpn:◆@DSP_ACTOR()は↓
+;jpn:　@DSP_GOODS(0)を　とりだし@KEY()↓
+;jpn:◆@DSP_OBJECT()に　たべさせた。
+@SE(SE_se44_b_eat)
+@KEY()
+@!
+
+_BTL_EAT_SELF;
+←
+◆@DSP_ACTOR()
+;jpn:◆@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ａｔｅ↓
+　　ｔｈｅ　@DSP_GOODS(0)．
+;jpn:　@DSP_GOODS(0)を　たべた。
+@SE(SE_se44_b_eat)
+@KEY()
+@WI(1)
+@!
+
+_BTL_SPICE;＠＄
+@XCHG()
+@SAVE_REG()
+@Q_SELF()
+@TRUE_GOTO(_BTL_SPICE_SELF)
+←
+@SAVE_REG()
+◆@DSP_ACTOR()
+;jpn:◆@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｔｏｏｋ↓
+　　ｔｈｅ　@DSP_GOODS(0)，@KEY()↓
+;jpn:　@DSP_GOODS(0)を　とりだし@KEY()↓
+@LOAD_REG()
+　　ｐｕｔ　ｉｔ　ｏｎ↓
+　　@DSP_GOODS(0)　ａｎｄ@KEY()↓
+　　@DSP_OBJECT()　ａｔｅ　ｉｔ．
+;jpn:◆@DSP_GOODS(0)を　かけて↓
+;jpn:　@DSP_OBJECT()に　たべさせた。
+@SE(SE_se44_b_eat)
+@WI(1)
+@KEY()
+@!
+
+_BTL_SPICE_SELF;＠＄
+←
+◆@DSP_ACTOR()
+;jpn:◆@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｔｏｏｋ↓
+　　ｔｈｅ　@DSP_GOODS(0)@KEY()↓
+;jpn:　@DSP_GOODS(0)を　とりだし@KEY()↓
+@LOAD_REG()
+◆ａｎｄ　ａｔｅ　ｉｔ　ｏｖｅｒ↓
+　　ｔｈｅ　@DSP_GOODS(0)．
+;jpn:◆@DSP_GOODS(0)を↓
+;jpn:　かけて　たべた。
+@SE(SE_se44_b_eat)
+@WI(1)
+@KEY()
+@!
+
+_BTL_DRINK;＠＄
+@Q_SELF()
+@TRUE_GOTO(_BTL_DRINK_SELF)
+←
+◆@DSP_ACTOR()
+;jpn:◆@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｔｏｏｋ↓
+　　ｔｈｅ　@DSP_GOODS(0)@KEY()↓
+　　ａｎｄ　@DSP_OBJECT()　ｄｒａｎｋ　ｉｔ．
+;jpn:　@DSP_GOODS(0)を　とりだして@KEY()↓
+;jpn:◆@DSP_OBJECT()に　のませた。
+@SE(SE_se44_b_eat)
+@WI(1)
+@KEY()
+@!
+
+_BTL_DRINK_SELF;
+←
+◆@DSP_ACTOR()
+;jpn:◆@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｄｒａｎｋ↓
+　　ｔｈｅ　@DSP_GOODS(0)．
+;jpn:　@DSP_GOODS(0)を　のんだ。
+@SE(SE_se44_b_eat)
+@WI(1)
+@KEY()
+@!
+
+MSG_BTL_EAT_ALL;
+←
+◆@GOSUB(MSG_ESUB_DSP_PARTY)
+;jpn:◆@DSP_LCNAME()は　みんなで↓
+@GET_CITEM()
+@XCHG()
+　ａｔｅ↓
+　　ｔｈｅ　@DSP_GOODS(0)　ｔｏｇｅｔｈｅｒ．
+;jpn:　@DSP_GOODS(0)を　たべた。
+@SE(SE_se44_b_eat)
+@WI(1)
+@KEY()
+@!
+
+MSG_BTL_EAT_SPICE_ATARI;
+@Q_SELF()
+@FALSE_GOTO(_ATARI_END)
+←
+◆Ｉｔ　ｗａｓ　ｐｒｅｔｔｙ　ｇｏｏｄ．
+;jpn:◆けっこう　おいしかった。
+@KEY()
+_ATARI_END;
+@!
+
+MSG_BTL_EAT_SPICE_HAZURE;
+@Q_SELF()
+@FALSE_GOTO(_HAZURE_END)
+←
+◆Ｉｔ　ｄｉｄｎ’ｔ　ｔａｓｔｅ　ｖｅｒｙ　ｇｏｏｄ．
+;jpn:◆あんまり　おいしくなかった。
+@KEY()
+_HAZURE_END;
+@!
+
+MSG_BTL_DRAGON;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は　じぶんに↓
+@GET_CITEM()
+@XCHG()
+　ｓｐｒｉｎｋｌｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)　ｏｖｅｒ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｈｅａｄ．
+;jpn:　@DSP_GOODS(0)を　ふりかけた！
+@KEY()↓
+◆Ｙｏｉｃｋｓ！！　@DSP_ACTOR()　ｔｕｒｎｅｄ↓
+　　ｉｎｔｏ　ａ　ｇｉｇａｎｔｉｃ，　ｆｉｒｅ－ｂｒｅａｔｈｉｎｇ　ｄｒａｇｏｎ！
+;jpn:　なんと　@DSP_ACTOR()は　きょだいなドラゴンに↓
+;jpn:　へんしんして　ほのおを　はきだした！
+@KEY()
+@!
+
+MSG_BTL_SPRAY;
+MSG_BTL_SPRAY_SP;
+MSG_BTL_RUST;
+MSG_BTL_RUST_SP;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｓｐｒａｙｅｄ　ａ　ｂｌａｓｔ　ｏｆ↓
+　　@DSP_GOODS(0)　ｏｕｔ！
+;jpn:　@DSP_GOODS(0)を　ふんしゃした！
+@SE(SE_se47_b_spray)
+@KEY()
+@!
+
+MSG_BTL_PHARAOH;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｕｓｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:@DSP_GOODS(0)を　つかった！
+@KEY()↓
+◆Ｓｕｄｄｅｎｌｙ，　ｓｏｍｅｔｈｉｎｇ　ｕｎｋｎｏｗｎ　ｂｕｒｓｔ　ｆｒｏｍ　ｔｈｅ　ｂｏｘ．
+;jpn:　はこから　わけのわからぬものが↓
+;jpn:　とんででた！
+@KEY()
+@!
+
+
+MSG_BTL_NEBANEBA;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｕｓｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:　@DSP_GOODS(0)を　つかった！
+@KEY()↓
+◆Ｔｈｅｎ，　ｓｏｍｅｔｈｉｎｇ　ｓｔｉｃｋｙ↓
+　　ｓｔｕｃｋ　ｔｏ　ｔｈｅ　ｅｎｅｍｙ！
+;jpn:　ねばねばしたものが↓
+;jpn:　てきに　くっついた！
+@KEY()
+@!
+;#####
+MSG_BTL_TOFU;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｕｓｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:　@DSP_GOODS(0)を　つかった！
+@KEY()↓
+◆Ｓｕｄｄｅｎｌｙ，　ｓｏｍｅ　Ｔｒｏｕｔ　Ｙｏｇｕｒｔ↓
+　　ｗａｓ　ｐｒｏｄｕｃｅｄ！
+;jpn:　なかから　いちごとうふが↓
+;jpn:　とびだした！
+@KEY()
+@!
+
+MSG_BTL_ROCKET;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｆｉｒｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:　@DSP_GOODS(0)を　はっしゃした！
+@SE(SE_se46_b_rocket)
+@KEY()
+@!
+
+MSG_BTL_ROCKET5;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｆｉｒｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;◆@DSP_ACTOR()　ｆｉｒｅｄ↓
+;　　ｔｈｅ　ｆｉｖｅ　ｐｅｎｃｉｌ　ｒｏｃｋｅｔｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ペンシルロケットを　５はつ　はっしゃした！
+@SE(SE_se46_b_rocket)
+@WI(8)
+@SE(SE_se46_b_rocket)
+@WI(8)
+@SE(SE_se46_b_rocket)
+@WI(8)
+@SE(SE_se46_b_rocket)
+@WI(8)
+@SE(SE_se46_b_rocket)
+@WI(8)
+@KEY()
+@!
+
+MSG_BTL_ROCKET20;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｆｉｒｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:　@DSP_GOODS(0)を　はっしゃした！
+;◆@DSP_ACTOR()　ｆｉｒｅｄ↓
+;　　ｔｈｅ　ｔｗｅｎｔｙ　ｐｅｎｃｉｌ　ｒｏｃｋｅｔｓ！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　ペンシルロケットを　２０ぱつ　はっしゃした！
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@SE(SE_se46_b_rocket)
+@WI(4)
+@KEY()
+@!
+
+MSG_BTL_BAZOOKA
+MSG_BTL_BAZOOKA_SP
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｆｉｒｅｄ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:　@DSP_GOODS(0)を　はっしゃした！
+@SE(SE_se46_b_rocket)
+@KEY()
+@!
+
+MSG_BTL_BOMB;
+MSG_BTL_BOMBSP;
+MSG_BTL_KUWAGATA;
+MSG_BTL_SOCKS;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｔｈｒｅｗ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:　@DSP_GOODS(0)を　なげつけた！
+@SE(SE_se46_b_rocket)
+;@SE(SE_se1a_b_my_hit)
+@KEY()
+@!
+
+MSG_BTL_SNAKEBAG;
+@GET_CITEM()
+@XCHG()
+←
+◆@DSP_ACTOR()　ｔｏｏｋ　ａ　ｓｎａｋｅ↓
+　　ｏｕｔ　ｏｆ　ｔｈｅ　@DSP_GOODS(0)@KEY()↓
+　　ａｎｄ　ｔｈｒｅｗ　ｉｔ！
+;jpn:　@DSP_ACTOR()は　@DSP_GOODS(0)から↓
+;jpn:　へびをとりだして　なげつけた！
+@KEY()
+@!
+
+MSG_BTL_HABURASHI;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｕｓｅｄ　@DSP_GOODS(0)　ａｎｄ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｔｅｅｔｈ↓
+　　ｗｅｒｅ　ｗｈｉｔｅ　ａｎｄ　ｂｒｅａｔｈ　ｗａｓ　ｆｒｅｓｈ！
+;@Its teeth were bright and fresh!
+;jpn: @DSP_GOODS(0)で　はをみがいた！↓
+;jpn:　すばらしく　はが　ひかった！
+@KEY()
+↓
+◆Ｔｈｅ　ｂｒｉｇｈｔｎｅｓｓ　ｏｆ↓
+　　@DSP_ACTOR()’ｓ　ｔｅｅｔｈ@KEY()↓
+　　ｍａｄｅ　ｔｈｅ　ｅｎｅｍｙ　ｓｃａｒｅｄ！
+;jpn:　@DSP_ACTOR()の　はのひかりに↓
+;jpn:　てきは　ひるんだ！
+@KEY()
+@!
+
+MSG_BTL_HOUTAI;
+MSG_BTL_BELT;
+←
+@GET_CITEM()
+@XCHG()
+◆@DSP_ACTOR()　ｌａｓｈｅｄ　ｏｕｔ↓
+　　ｗｉｔｈ　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:　@DSP_ACTOR()は↓
+;jpn:　@DSP_GOODS(0)で　ぶった！
+@KEY()
+@!
+
+MSG_BTL_GUM;
+←
+@GET_ORDER_PLAYER(2)
+@EQ(PC_BALLOONMONKEY)
+@FALSE_GOTO(_GUM_NG)
+@GOSUB(MSG_EVT_46_51_BALLOON)
+@!
+
+_GUM_NG;S_EVENT中に
+@GOTO(MSG_EVT_BALLOON_NG)
+』
+
+MSG_BTL_SNAKE;
+MSG_BTL_SNAKE_POISON;
+←
+◆@DSP_ACTOR()
+;jpn:　@DSP_ACTOR()は↓
+@GET_CITEM()
+@XCHG()
+　ｔｈｒｅｗ↓
+　　ｔｈｅ　@DSP_GOODS(0)！
+;jpn:@DSP_GOODS(0)を　なげつけた！
+@KEY()↓
+◆Ｔｈｅ　@DSP_GOODS(0)　ｉｓ↓
+　　ｂｉｔｉｎｇ！
+;jpn:@DSP_GOODS(0)の　かみつきこうげきだ！
+@KEY()↓
+@!
+
+

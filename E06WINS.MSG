@@ -1,0 +1,2129 @@
+;-----------------------------------------
+
+;@Habitat:ウィンタース／寄宿舎／Tonyの部屋
+;@Person:寝ているトニー
+;@Figure:寝ているトニー
+;@AppearanceKey:FLG_WINS_TONY/off
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_TONY_IN_BED
+MSG_WINS_TONY_IN_BED;
+;寝ているトニー
+◆Ａｈ，　@DSP_NAME(PC_JEFF)，@WI(15)　Ｉ　ｊｕｓｔ　ｄｒｅａｍｔ　ｔｈａｔ　ｙｏｕ　ａｎｄ　Ｉ　ｗｅｒｅ　ｔａｋｉｎｇ　ａ　ｗａｌｋ．@KEY()↓
+◆．．．Ｗｈａｔ’ｓ　ｗｒｏｎｇ？
+@KEYNP()
+;jpn:◆あ@WI(15)　@DSP_STS(STS_PC_NAME_JEFF)！↓
+;jpn:　ぼく@WI(15)　いま　きみと↓
+;jpn:　さんぽしてるゆめを@KEY()↓
+;jpn:◆‥‥みてたところだったんだよ。@WI(15)↓
+;jpn:　どうかしたのかい。@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／寄宿舎／Tonyの部屋
+;@Person:寝ているジェフ
+;@Figure:寝ているジェフ
+;@AppearanceKey:FLG_WINS_START/off
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:0
+
+;@Habitat:ウィンタース／寄宿舎／サイエンスクラブ室
+;@Person:ガウス
+;@Figure:ジミな男
+;@AppearanceKey:FLG_PU/off
+;@ActionScript:◆背面向いて止まったまま→中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_GAUS
+MSG_WINS_GAUS;
+@CHKFGOTO(FLG_ITEM_GAUS,_WINS_GAUS_LATER_2)
+@CHKFGOTO(FLG_WINS_LOCKER_FAILED,_WINS_GAUS_CHOTTO)
+@CHKFGOTO(FLG_ITEM_KEY_LOCKER,_WINS_GAUS_LATER_2)
+◆Ｏｈ，@WI(15)　@DSP_NAME(PC_JEFF)　ａｎｄ　Ｔｏｎｙ．@WI(20)　　Ｙｏｕ　ｓｔａｒｔｌｅｄ　ｍｅ．@KEY()↓
+◆Ａｒｅ　ｙｏｕ　ｌｏｏｋｉｎｇ　ｆｏｒ　ａ　ｌａｔｅ　ｎｉｇｈｔ　ｓｎａｃｋ？@KEY()↓
+◆Ｉ’ｍ　ｈａｖｉｎｇ　ｓｏｍｅ　ｔｒｏｕｂｌｅ　ｗｉｔｈ　ｍｙ　ｐｒｏｊｅｃｔ．@KEY()↓
+◆Ｉｆ　ｏｎｌｙ　@DSP_NAME(PC_JEFF)’ｓ　ｆａｔｈｅｒ，　Ｄｒ．　Ａｎｄｏｎｕｔｓ，　ｗｅｒｅ　ｈｅｒｅ．@KEY()↓
+◆Ｈｅ’ｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｐｒｏｖｉｄｅ　ａ　ｇｒｅａｔ　ｄｅａｌ　ｏｆ　ｈｅｌｐ．@KEY()↓
+◆Ｉ　ｈｅａｒｄ　ｈｅ’ｓ　ａｎ　ａｓｔｏｕｎｄｉｎｇ　ｐｅｒｓｏｎ．@KEY()↓
+◆Ｈｅ　ｗａｓ　ｔｈｅ　ｆｉｒｓｔ　ｌｅａｄｅｒ　ｏｆ　ｏｕｒ　Ｕｌｔｒａ　Ｓｃｉｅｎｃｅ　Ｃｌｕｂ．．．@KEY()↓
+◆Ｉ　ｈｅａｒｄ　ｈｅ’ｓ　ａ　ｇｒｅａｔｅｒ　ｓｃｉｅｎｔｉｓｔ　ｔｈａｎ　Ｅｉｎｓｔｅｉｎ　ｏｒ　Ｈｅｉｓｅｎｂｅｒｇ．@KEY()↓
+◆Ｒｕｍｏｒ　ｈａｓ　ｉｔ　ｈｅ’ｓ　ａｌｓｏ　ｖｅｒｙ　ｓｔｒａｎｇｅ．@KEY()↓
+◆Ｉｆ　ｙｏｕ’ｒｅ　ｈｅａｄｉｎｇ　ｔｏ　ｔｈｅ　ｌｏｃｋｅｒ　ｒｏｏｍ，　ｔａｋｅ　ｔｈｉｓ　ｋｅｙ　ａｌｏｎｇ．@KEY()↓
+◆Ｉｔ’ｓ　ａ　ｌｉｔｔｌｅ　ｂｅｎｔ　ｔｈｏｕｇｈ．
+;jpn:◆おお　びっくりした。↓
+;jpn:　@DSP_STS(STS_PC_NAME_JEFF)に　トニーじゃないか。@WI(15)↓
+;jpn:　やしょくでも　さがしてるのか。@KEY()↓
+;jpn:◆おれも　けんきゅうが↓
+;jpn:　いきづまっててさ。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)のおやじの↓
+;jpn:　アンドーナッツはかせが　いたら↓
+;jpn:　たすかるのになぁ‥‥。@KEY()↓
+;jpn:◆すごいひとだったらしいぜ。@WI(15)↓
+;jpn:　わがウルトラサイエンスクラブの↓
+;jpn:　しょだいぶちょうで‥‥@KEY()↓
+;jpn:◆アインシュタインや↓
+;jpn:　ハイゼンベルグいじょうの↓
+;jpn:　かがくしゃってことらしい。@KEY()↓
+;jpn:◆すっごい　かわりものだっていう↓
+;jpn:　うわさも　あるけどな。@KEY()↓
+;jpn:◆ロッカールームに↓
+;jpn:　ようじが　あるんだったら@KEY()↓
+;jpn:◆ロッカーのカギを↓
+;jpn:　もっていけよ。@WI(20)↓
+;jpn:　ちょっと　まがってるけどな。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_WINS_GAUS_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_KEY_LOCKER)
+@GOSUB(MSG_SUB_GETGOODS_S)
+@KEY()↓
+@SETF(FLG_ITEM_KEY_LOCKER)
+◆Ｉｆ　ｙｏｕ　ｌｅａｖｅ，@WI(15)　ｃａｌｌ　ｍｅ，　ａｎｄ　Ｉ’ｌｌ　ｒｅｃｏｒｄ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ．@KEY()↓
+◆Ｉｔ’ｓ　ｌｉｋｅ　ｓａｖｉｎｇ　ｔｈｅ　ｇａｍｅ．@WI(15)　　Ａｈ，　ｈａ，　ｈａ，　ｈａ，　ｈａ．
+;jpn:◆もし　そとにでたら　おれに↓
+;jpn:　かならず　でんわしろよ。@KEY()↓
+;jpn:◆ぼうけんのきろくを↓
+;jpn:　つけといてやるからな。@KEY()↓
+;jpn:◆ま　ゲームでいうところの↓
+;jpn:　セーブみたいなもんだ。@WI(15)ハハハ。
+@KEYNP()
+@CLOSEALL()
+』
+
+_WINS_GAUS_CHOTTO;ガウスさんのメッセージ２回目
+@GOODSOUT(PC_ALL,GDS_TOOL_KEY_LOCKER)
+◆Ｈａｈ，　ｈａ，　ｈａ．　　Ｔｈｅ　ｋｅｙ　ｄｉｄｎ’ｔ　ｗｏｒｋ，　ｄｉｄ　ｉｔ？@KEY()↓
+◆Ｉ　ｔｈｏｕｇｈｔ　ｔｈａｔ　ｍｉｇｈｔ　ｂｅ　ｔｈｅ　ｃａｓｅ．@WI(15)　　Ｓｏ　Ｉ　ｊｕｓｔ　ｉｎｖｅｎｔｅｄ@WI(10)　ｔｈｅ．．．@KEY()↓
+◆”Ｍａｃｈｉｎｅ　ｔｈａｔ　Ｏｐｅｎｓ　Ｄｏｏｒｓ，　ｅｓｐｅｃｉａｌｌｙ　ｗｈｅｎ　ｙｏｕ　ｈａｖｅ　ａ　ｓｌｉｇｈｔｌｙ　ｂａｄ　ｋｅｙ．”@KEY()↓
+◆Ｓｏｒｒｙ　ｆｏｒ　ｔｈｅ　ｉｎｃｏｎｖｅｎｉｅｎｃｅ．
+;jpn:◆わっはっは。↓
+;jpn:　やっぱり　あのカギは↓
+;jpn:　つかいものに　ならなかったか。@KEY()↓
+;jpn:◆そんなことも　あろうかと↓
+;jpn:　おもって@KEY()↓
+;jpn:◆「ちょっとしたカギなら↓
+;jpn:　いがいとカンタンに↓
+;jpn:　あけられるマシン」を@KEY()↓
+;jpn:◆いま　つくってみたんだ。@WI(20)↓
+;jpn:　これなら　だいじょうぶ。↓
+;jpn:　てまをかけて　わるかったな。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_WINS_GAUS_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_KEY_CHOTTO)
+@GOSUB(MSG_SUB_GETGOODS_S)@KEY()↓
+@SETF(FLG_ITEM_GAUS)
+◆Ｉｆ　ｙｏｕ　ａｒｅ　Ｄｒ．　Ａｎｄｏｎｕｔ’ｓ　ｓｏｎ，@KEY()↓
+◆ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｒｅｐａｉｒ　ｓｍａｌｌ　ｔｏｏｌｓ　ａｎｄ　ｍａｋｅ　ｔｈｅｍ　ｕｓｅｆｕｌ．@KEY()↓
+◆Ｊｕｓｔ　ｔｒｙ　ｔｏ　ｋｅｅｐ　ａ　ｐｏｓｉｔｉｖｅ　ａｔｔｉｔｕｄｅ．
+;jpn:◆おまえも↓
+;jpn:　アンドーナッツはかせの↓
+;jpn:　むすこなら@KEY()↓
+;jpn:◆ちょっとした　どうぐくらいなら↓
+;jpn:　ひとばんで　しゅうりして↓
+;jpn:　やくに　たてるとか‥‥@KEY()↓
+;jpn:◆そのくらいのことは↓
+;jpn:　できそうだぞ。@KEY()↓
+;jpn:◆もっと　せっきょくてきに↓
+;jpn:　いきてみろよ。@WI(15)↓
+;　@DSP_STS(STS_PC_NAME_JEFF)！
+@KEYNP()
+@CLOSEALL()
+』
+
+_WINS_GAUS_ITEMFULL;
+◆Ｓｅｅｍｓ　ｌｉｋｅ　ｙｏｕ’ｒｅ　ｔｒｙｉｎｇ　ｔｏ　ｃａｒｒｙ　ｔｏｏ　ｍｕｃｈ．　　Ｙｏｕ　ａｒｅｎ’ｔ　ａｂｌｅ　ｔｏ　ｃａｒｒｙ　ｔｈｅ　ｋｅｙ．@KEY()↓
+◆Ｈａｈ，　ｈａ，　ｈａ．　　Ｗｈａｔ　ａ　ｇｒｅｅｄｙ　ｇｕｙ！　　Ｈａｈ，　ｈａ，　ｈａ．
+;jpn:◆もちものを　よくばって↓
+;jpn:　もちすぎてるから　カギが↓
+;jpn:　わたせないぞ。@WI(15)ワッハッハ。@KEY()↓
+;jpn:◆この　よくばりメガネおとこめ！@WI(15)↓
+;jpn:　ワッハッハ。
+@KEYNP()
+』
+
+;_WINS_GAUS_LATER;
+;◆こまったことがあったら↓
+;　また　ここにきな。
+;@KEYNP()
+;@!
+
+_WINS_GAUS_LATER_2;
+◆Ｉｆ　ｙｏｕ　ｌｅａｖｅ，　ｃａｌｌ　ｍｅ，　ａｎｄ　Ｉ’ｌｌ　ｒｅｃｏｒｄ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ．@KEY()↓
+◆Ｉｔ’ｓ　ｌｉｋｅ　ｓａｖｉｎｇ　ａ　ｇａｍｅ．@KEY()↓
+◆Ｈａ，　ｈａ，　ｈａ．
+@KEYNP()
+;jpn:◆そとにでたら　おれに↓
+;jpn:　でんわしろよ。@KEY()↓
+;jpn:◆ぼうけんのきろくを↓
+;jpn:　つけといてやるからな。@KEY()↓
+;jpn:◆ま　ゲームでいうところの↓
+;jpn:　セーブみたいなもんだ。@WI(15)ハハハ。@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／寄宿舎／ロビー
+;@Person:電話
+;@Figure:電話
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+；----------------------------------------
+;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Person:コンビニ店員Ａ
+;@Figure:サラリーマンＤ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_DRUGSTORE
+MSG_WINS_DRUGSTORE;@MiuraAppended
+;◆いらっしゃーい！@KEY()
+@GOSUB(MSG_SHOP_WINS_DRUG)
+』
+
+;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Person:コンビニ店員Ｂ
+;@Figure:ＯＬＧ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_NANCY
+MSG_WINS_NANCY;ガムはガウスさんにもらう形に変更したし（現金もたせない）
+;<ショップ>コンビニ店員Ｂ（ナンシー）
+;店員Ａは、ふつうの売り子
+@CHKFGOTO(FLG_ITEM_BUBBLE_GUM,_WINS_NANCY_2)
+◆Ｔｈｅｒｅ’ｓ　ａ　ｍｏｎｋｅｙ　ａｔ　ｔｈｅ　ｅｎｔｒａｎｃｅ．@WI(15)　　Ｔａｋｅ　ｔｈｅ　ｍｏｎｋｅｙ．　　Ｈｅ’ｓ　ｒｅａｌｌｙ　ｎｏｉｓｙ．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｂｕｙ　ａ　ｐａｃｋ　ｏｆ　ｂｕｂｂｌｅ　ｇｕｍ，　ｙｏｕ　ｃａｎ　ｈａｖｅ　ｔｈｅ　ｍｏｎｋｅｙ　ｆｏｒ　ｆｒｅｅ．@KEY()↓
+◆Ｏｔｈｅｒｗｉｓｅ，@WI(15)　ｈｅ　ｗｉｌｌ　ｃｏｓｔ　ｙｏｕ　ａ　ｂｕｃｋ．　　Ｓｏ，　ｄｏ　ｙｏｕ　ｗａｎｔ　ｈｉｍ？
+@WINR_MONEY()
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆いりぐちのところにいる↓
+;jpn:　サルですけどね@WI(15)↓
+;jpn:　うるさいから　あげますよ。@KEY()↓
+;jpn:◆フーセンガムを　かってくれたら↓;
+;jpn:　おまけに　さしあげます。@KEY()↓
+;jpn:◆１ドルですが↓
+;jpn:　かってくれますか？↓
+;jpn:<はい>
+;jpn:<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_WINS_NANCY_YES,_WINS_NANCY_NO)
+_WINS_NANCY_NO;
+◆Ｙｏｕ　ａｂｓｏｌｕｔｅｌｙ，@WI(15)　ｐｏｓｉｔｉｖｅｌｙ　ｓｈｏｕｌｄ　ｂｕｙ　ｈｉｍ．@WI(20)　　Ｙｏｕ　ｋｎｏｗ　ｗｈａｔ　Ｉ　ｍｅａｎ？
+;jpn:◆ぜーったいに↓
+;jpn:　かったほうが　いいんだけど↓
+;jpn:　わかってもらえないのかしら。@KEYNP()
+』
+_WINS_NANCY_YES;
+@Q_MONEY(1)
+@TRUE_GOTO(_WINS_NANCY_NOMONEY)
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_WINS_NANCY_GOODSFULL)
+@WI(1)
+@MONEYOUT(1)
+@GOODSIN_PLAYER(PC_JEFF,GDS_FOOD_BUBBLE_GUM)
+@SAVE_REG()
+@SE(SE_se76_my_give)
+@WINR_MONEY()
+◆Ｔｈａｎｋｓ！@WI(15)　　Ｔｈｅ　ｍｏｎｋｅｙ’ｓ　ｙｏｕｒｓ．
+;jpn:◆ありがとうございます。↓
+;jpn:　もう　おサルはあなたの↓
+;jpn:　ものですよ。@KEY()
+@GOSUB(MSG_SUB_GETGOODS_S)
+@SETF(FLG_ITEM_BUBBLE_GUM)
+@KEYNP()
+@!
+
+_WINS_NANCY_NOMONEY;
+◆Ｗｈａｔ？@WI(20)　　Ｙｏｕ　ｄｏｎ’ｔ　ｅｖｅｎ　ｈａｖｅ　ａ　ｂｕｃｋ？@KEY()↓
+◆Ｔｈｅｎ，　Ｉ’ｌｌ　ｌｅｔ　ｙｏｕ　ｈａｖｅ　ｔｈｅ　ｍｏｎｋｅｙ　ｆｏｒ　ｆｒｅｅ．@KEY()↓
+;jpn:◆あららっ　おかね↓
+;jpn:　１ドルも　もってないんですか？@KEY()↓
+;jpn:◆ならば　とくべつに↓
+;jpn:　ただで　あげるわよ。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_WINS_NANCY_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_FOOD_BUBBLE_GUM)
+◆Ｈｅｒｅ’ｓ　ａ　ｐａｃｋ　ｏｆ　ｂｕｂｂｌｅ　ｇｕｍ．@WI(20)　　Ｄｏｎ’ｔ　ｆｏｒｇｅｔ　ｔｏ　ｔａｋｅ　ｔｈｅ　ｍｏｎｋｅｙ．
+;jpn:◆はいっ　フーセンガム↓
+;jpn:　おサルも　つれていって↓
+;jpn:　くださいね。@KEY()
+@GOSUB(MSG_SUB_GETGOODS_S)
+@SETF(FLG_ITEM_BUBBLE_GUM)
+@KEYNP()
+@!
+
+_WINS_NANCY_GOODSFULL;
+◆Ｏｈ，　ｏｈ，@WI(15)　ｙｏｕ　ｃａｎ’ｔ　ｃａｒｒｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ．@KEY()↓
+◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｒｅｔｕｒｎ　ａｆｔｅｒ　ｙｏｕ　ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ．
+;jpn:◆あららっ　もちものが↓
+;jpn:　いっぱいみたいですね。@KEY()↓
+;jpn:◆いらないものを↓
+;jpn:　うるなり　すてるなりしてから↓
+;jpn:　かいにきてください。
+@KEYNP()
+@!
+
+_WINS_NANCY_2;
+◆Ｓｏｒｒｙ，　ｔｈｅ　ｂｕｂｂｌｅ　ｇｕｍ　ｉｓ　ｓｏｌｄ　ｏｕｔ．
+;jpn:◆フーセンガムは↓
+;jpn:　うりきれに↓
+;jpn:　なっちゃったんですよー。
+@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Person:コンビニの客
+;@Figure:
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_A
+MSG_WINS_A;＃
+;コンビニの客
+@CHKFGOTO(FLG_ITEM_BUBBLE_GUM,_WINS_A_LATER)
+◆Ｔｈｅ　ｂｕｂｂｌｅ　ｇｕｍ　ｈｅｒｅ　ｉｓ　ｉｎｃｒｅｄｉｂｌｅ．@KEY()↓
+◆Ｙｏｕ　ｓｈｏｕｌｄ　ｓｅｅ　ｔｈｅ　ｓｉｚｅ　ｏｆ　ｔｈｅ　ｂｕｂｂｌｅｓ　Ｉ　ｃａｎ　ｂｌｏｗ！
+@KEYNP()
+;jpn:◆ここでうってる　フーセンガムは↓
+;jpn:　よくふくらむんだよねー。@KEYNP()
+』
+_WINS_A_LATER;＆
+◆Ｉｓ　ｉｔ　ｃｏｌｄ　ｏｕｔｓｉｄｅ？
+;jpn:◆そと@WI(15)　さむい？@KEYNP()
+@KEYNP()
+』
+
+;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Person:バルーンモンキー
+;@Figure:バルーンモンキー
+;@AppearanceKey:FLG_BALLOONMONKEY/off
+;@ActionScript:◆せわしなくサル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_BALLOONMONKEY_YEAH
+MSG_WINS_BALLOONMONKEY_YEAH;
+@Q_HAVE(PC_ALL,GDS_FOOD_BUBBLE_GUM)
+@TRUE_GOTO(_WINS_BALLOONMONKEY_GUM)
+◆Ｋｙｅｅ　Ｋｙｅｅ！　（Ｙｅａｈ！）
+;DAN:Kya-kya is monkey's scream.
+;jpn:◆キャッキャッ（イエイ！）。
+@KEYNP()
+』
+
+_WINS_BALLOONMONKEY_GUM;
+◆Ｋｙｕ　Ｕｋｙｅｅ　（Ｇｉｍｍｅ　ｓｏｍｅ　ｇｕｍ．）@KEY()↓
+◆（Ｔｈｅ　ｍｏｎｋｅｙ　ｇｏｔ　ａ　ｐｉｅｃｅ　ｏｆ　ｂｕｂｂｌｅ　ｇｕｍ　ｆｒｏｍ　@DSP_NAME(PC_JEFF)　ａｎｄ　ｂｌｅｗ　ａ　ｂｕｂｂｌｅ！）@KEY()
+;jpn:◆キャッキャッ（ガムくれ）。@KEY()↓
+;jpn:◆（サルは　@DSP_STS(STS_PC_NAME_JEFF)の↓
+;jpn:　フーセンガムを　１まい↓
+;jpn:　うばいとって　ふくらませた）@KEY()↓
+@CLOSEALL()
+@SETF(FLG_WINS_BMONKEY_DISAPPEAR)
+@SETF(FLG_BALLOONMONKEY)
+@GOSUB(MSG_EVT_46_BMONKEY_FLOAT_FIRST)
+@GOSUB(MSG_ADD_MONKEY)
+;@FRESH_PLAYER(PC_ALL)
+』
+
+
+;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Person:電話
+;@Figure:電話
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+；----------------------------------------
+;@Habitat:ウィンタース／タッシー隊テントＡ／タッシー隊テントＡ
+;@Person:食事係の隊員
+;@Figure:タッシー隊Ａ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_WATCHERS_C
+MSG_WINS_WATCHERS_C;
+;タッシーウォッチング隊員Ｃ
+◆Ｉ’ｍ　ｔｈｅ　ｃｏｏｋ　ｆｏｒ　ｔｈｅ　Ｔｅｓｓｉｅ－Ｗａｔｃｈｉｎｇ　ｃｌｕｂ．@KEY()↓
+◆Ｈｏｗ　ａｂｏｕｔ　ｓｏｍｅ　ｓｔｅｗ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆わたしは　タッシーウォッチングの↓
+;jpn:　しょくじがかりです。@KEY()↓
+;jpn:◆シチュー　たべますか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_WINS_WATCHERS_C_YES,_WINS_WATCHERS_C_NO)
+_WINS_WATCHERS_C_NO;
+←
+◆Ｙｏｕ’ｒｅ　ｆｕｌｌ，　ａｒｅｎ’ｔ’　ｙｏｕ？
+;jpn:◆おなかいっぱい　なんですね。
+@KEYNP()
+』
+
+_WINS_WATCHERS_C_YES;
+◆Ｎｏ，　ｎｏ．@WI(20)　　Ｔｈｅｒｅ’ｓ　ｎｏ　ｎｅｅｄ　ｔｏ　ｐａｙ　ｍｅ．@KEY()
+;jpn:◆どうぞどうぞ。↓
+;jpn:　おかねなんか　いりませんよ。@KEY()
+@GOSUB(MSG_GLOBAL_MYHOME)
+@WARP(WARP_WINS_TENT_TASSI)
+@CHKFGOTO(FLG_PHOTO_7,_WINS_WATCHERS_C_YES_TMP)
+@SETF(FLG_PHOTO_TACY);撮り頃フラグ
+;-----
+_WINS_WATCHERS_C_YES_TMP;
+@CHKFGOTO(FLG_JEFF,MSG_END)
+;@CHKF(FLG_WINS_TASS_BMONKEY_APPEAR)@FALSE_GOTO(_WINS_TENT_BMONKEY_CHECK)
+;_WINS_TENT_SETF;バルーンモンキーがいるか検査してフラグ設定
+@SETF(FLG_WINS_TASSI_ENTER)
+@SET_HIT_RECT(1,HRECT_WINS_TASSI_OFF,MSG_WINS_TASSI_OFF);テントから遠ざかった時
+@CHKF(FLG_BALLOONMONKEY)@FALSE_GOTO(MSG_END)
+@SET_HIT_RECT(2,HRECT_WINS_GUM,MSG_WINS_MONKEY_GUM);入り江の突端に入ると
+』
+
+;_WINS_TENT_BMONKEY_CHECK;
+;@CHKF(FLG_BALLOONMONKEY)@FALSE_GOTO(MSG_END)
+;@GOTO(_WINS_TENT_SETF)
+
+MSG_WINS_MONKEY_GUM;食事の後入り江に近づくとサルがしゃべりだす
+;プレイヤーに近づくバルモン
+@HIDE_PLAYER(PC_BALLOONMONKEY,OBJFX_HIDE_NONE)
+@MOVE_GOM_CHAR(GOM_BMONKEY,ANIM_TACY_NEAR_BMONKEY,OBJFX_SHOW_NONE)
+@WAITSYS()
+@GET_PLAYER_DIR(PC_JEFF,3,GOM_BMONKEY)	;バルモンの方を
+@SET_PLAYER_DIR(PC_JEFF,0)		;ジェフが向く
+;@COLD_GOM_CHAR(GOM_BMONKEY)
+;グッズ「つかう」をするのはプレイヤー
+@SHOW_MANPU_GOM_CHAR(GOM_BMONKEY,MANPU_BIKKURI)
+@WI(60)
+@HIDE_MANPU_GOM_CHAR(GOM_BMONKEY)
+@OPEN(1)
+◆Ｋｙａ　ｋｙｉ　ｋｙａ　ｋｙｏｏ．↓
+　　（Ｇｉｖｅ　ｍｅ　ｓｏｍｅ　ｇｕｍ　ｎｏｗ．）@KEY()↓
+◆Ｋａｋｉ　ｋｕｋｅ　ｋｏ．↓
+　　（Ｉ’ｌｌ　ｔａｋｅ　ｃａｒｅ　ｏｆ　ｅｖｅｒｙｔｈｉｎｇ．）
+;DAN:I need to explain what Kya-ki-kyu-ke-kyo
+;jpn:◆イマ　キャッキャッキャ↓
+;jpn:　（いま　ガムをくれ）@KEY()↓
+;jpn:◆キャキキュケキョ↓
+;jpn:　（そして　おれに　まかせるんだ）
+@KEYNP()
+@CLOSEALL()
+@WI(30)
+;@SET_PLAYER_DIR(PC_JEFF,DIR_M_DOWN)
+@GOTO(MSG_EVT_47_BMONKEY_FLOAT)
+;@SET_HIT_RECT(2,HRECT_WINS_GUM,MSG_WINS_TASSI_OFF);入り江の突端に入ると
+』
+;-------------------------------------------------
+
+
+
+;@Habitat:ウィンタース／タッシー隊テントＣ／タッシー隊テントＣ
+;@Person:名もない隊員
+;@Figure:タッシー隊Ａ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_WATCHERS_D
+MSG_WINS_WATCHERS_D;
+;名もないタッシー隊員
+@CHKFGOTO(FLG_SEBASTIAN_DISAPPEAR,_WINS_WATCHERS_D_AFTER)
+@CHKFGOTO(FLG_WINS_TASCO_ACROSS,_WINS_WATCHERS_D_LATER)
+◆Ｉｆ　Ｉ　ｆｉｎｄ　Ｔｅｓｓｉｅ，　ｄｏ　ｙｏｕ　ｔｈｉｎｋ　Ｉ’ｌｌ　ｇｅｔ　ｉｎ　ｔｈｅ　ｎｅｗｓｐａｐｅｒ？@KEY()↓
+◆Ｉ’ｍ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｍｙ　１５　ｍｉｎｕｔｅｓ　ｏｆ　ｆａｍｅ．．．
+;jpn:◆タッシーをはっけんしたら↓
+;jpn:　しんぶんにでますかねぇ‥‥。@WI(15)↓
+;jpn:　わたしは　めだちたくないもので。
+@KEYNP()
+』
+
+_WINS_WATCHERS_D_LATER;
+;タッシー確認後のセリフ
+◆Ｄｏ　ｙｏｕ　ｔｈｉｎｋ　ｍｙ　ｎａｍｅ　ｗｉｌｌ　ｍａｋｅ　ｉｔ　ｉｎｔｏ　ｔｈｅ　ｎｅｗｓｐａｐｅｒ？
+;jpn:◆ぼくのこと↓
+;jpn:　しんぶんに　でてますかねぇ。
+@KEYNP()
+』
+_WINS_WATCHERS_D_AFTER;
+◆Ｄｏ　ｙｏｕ　ｔｈｉｎｋ　Ｓｅｂａｓｔｉａｎ’ｓ　ｋｉｄｎａｐｐｉｎｇ　ｗｉｌｌ　ｂｅ　ｉｎ　ｔｏｍｏｒｒｏｗ’ｓ　ｐａｐｅｒ？
+;jpn:◆なかまの　セバスチャンが↓
+;jpn:　さらわれたこと‥‥@KEY()↓
+;jpn:◆あしたあたり↓
+;jpn:　しんぶんに　でますかねぇ。
+@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／タッシー隊テントＣ／タッシー隊テントＣ
+;@Person:電話
+;@Figure:電話
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+；----------------------------------------
+;@Habitat:ウィンタース／アンドーナッツ研究所／１階
+;@Person:アンドーナッツ博士
+;@Figure:アンドーナッツ博士
+;@AppearanceKey:FLG_PU/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_ANDONUT
+MSG_WINS_ANDONUT;
+;アンドーナッツ博士
+;天才であることはまちがいないのだが、どうにもこうにも
+;「天才すぎて」。ジェフの父であり、偉大なる発明家であり、
+;やや軽はずみな「マイウェイ」の人。
+@CHKFGOTO(FLG_JEFF,_WINS_ANDONUT_LATER)
+@CHKFGOTO(FLG_WINS_ANDONUT,_WINS_ANDONUT_2B)
+◆Ｍｒ．　Ｂｒｉｃｋｒｏａｄ，　ｔｈｅ　ｄｕｎｇｅｏｎ　ｍａｋｅｒ　ｒｅｆｅｒｒｅｄ　ｙｏｕ，　ｒｉｇｈｔ？@KEY()↓
+◆Ａｎｄ　ｎｏｔ　ｏｎｌｙ　ｔｈａｔ．．．Ｗｈａｔ？@WI(15)　　Ｗｈｏ？@WI(15)　　Ｍｙ　ｓｏｎ？@WI(20)　　Ｏｈ．．．Ｉ．．．ｃａｎ’ｔ．．．　Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　ｉｔ．．．@KEY()↓
+◆Ｙｏｕ’ｒｅ　@DSP_NAME(PC_JEFF)，　ｍｙ　ｓｏｎ．@WI(15)　　Ｉｔ’ｓ　ｂｅｅｎ　ｍａｙｂｅ　１０　ｙｅａｒｓ　ｓｉｎｃｅ　Ｉ　ｌａｓｔ　ｓａｗ　ｙｏｕ．@KEY()↓
+◆Ｉ’ｍ　ｓｏ　ｇｌａｄ　ｙｏｕ’ｒｅ　ｓｕｃｈ　ａ　ｈｅａｌｔｈｙ　ｂｏｙ．@KEY()↓
+◆Ｕｈ，　ｔｈｏｓｅ　ｇｌａｓｓｅｓ　ｌｏｏｋ　ｇｏｏｄ　ｏｎ　ｙｏｕ．@KEY()↓
+◆Ｈｏｗ　ａｂｏｕｔ　ａ　ｄｏｎｕｔ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆ダンジョンしょくにんの↓
+;jpn:　ブリックロードさんから↓
+;jpn:　しょうかいされたかただね。@KEY()↓
+;jpn:◆？@WI(20)　それだけじゃない‥‥と。@WI(15)↓
+;jpn:　むすこ？@WI(15)　むすこって‥‥あの‥‥↓
+;jpn:　あ@WI(15)　そうか　@DSP_STS(STS_PC_NAME_JEFF)か。@KEY()↓
+;jpn:◆１０ねんくらいぶりだな。@WI(15)↓
+;jpn:　おたがい　よくいきていたもんだ。↓
+;jpn:　めがねが　にあうな。@KEY()↓
+;jpn:◆ドーナッツが　たべたいか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_WINS_ANDONUT_YES,_WINS_ANDONUT_NO)
+
+_WINS_ANDONUT_NO;
+◆Ｔｈａｔ’ｓ　ｏｋａｙ．
+@KEY()↓
+;jpn:◆そんなら　それでいいんだ。@KEY()↓
+@GOTO(_WINS_ANDONUT_1)
+
+_WINS_ANDONUT_YES;
+◆Ｗｅｌｌ，　Ｉ　ｗａｓ　ｏｎｌｙ　ｏｆｆｅｒｉｎｇ．．．　　Ｉ’ｄ　ａｌｓｏ　ｌｉｋｅ　ａ　ｄｏｎｕｔ　ｒｉｇｈｔ　ａｂｏｕｔ　ｎｏｗ．
+@KEY()↓
+;jpn:◆ただきいてみただけだ。↓
+;jpn:　わたしも　たべたい。@KEY()↓
+
+_WINS_ANDONUT_1;
+◆Ｈａｖｅ　ｙｏｕ　ａｌｒｅａｄｙ　ｃｈｅｃｋｅｄ　ｏｕｔ　Ｓｔｏｎｅｈｅｎｇｅ？@KEY()↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆ストーンヘンジは↓
+;jpn:　もう　しらべてみたか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_WINS_ANDONUT_1_YES,_WINS_ANDONUT_1_NO)
+
+_WINS_ANDONUT_1_NO;
+◆Ｗｅｌｌ，　ａｔ　ｌｅａｓｔ　Ｉ　ａｓｋｅｄ．．．@KEY()↓
+;jpn:◆いちおう　きいてみたんだ。@KEY()↓
+@GOTO(_WINS_ANDONUT_2)
+
+_WINS_ANDONUT_1_YES;
+◆Ｗｅｌｌ，　ａｔ　ｌｅａｓｔ　Ｉ　ａｓｋｅｄ．．．@KEY()↓
+;jpn:◆いちおう　きいてみたんだ。@KEY()↓
+
+_WINS_ANDONUT_2;
+◆Ｍｍｍｍ．．．ｍｍｈｍｍ　ｏｋａｙ．@KEY()↓
+◆Ｂｙ　ｔｈｅ　ｗａｙ，　ｗｈｙ　ａｒｅ　ｙｏｕ　ｈｅｒｅ？@KEY()↓
+◆Ｏｈ，　Ｉ　ｓｅｅ．@KEY()↓
+◆Ｔｈａｔ　ｇｉｒｌ　ｎａｍｅｄ　@DSP_NAME(PC_PAULA)　ｍｕｓｔ　ｈａｖｅ　ｓｅｎｓｅｄ　Ｉ　ｗａｓ　ｈｅｒｅ．@KEY()↓
+◆Ｏｋ，　Ｉ’ｌｌ　ｔｒｙ　ｔｏ　ｈｅｌｐ　ｙｏｕ　ｏｕｔ．@KEY()↓
+◆Ｉ’ｍ　ｔｒｙｉｎｇ　ｔｏ　ｍａｋｅ　ａ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ　ｔｈａｔ　ｃａｎ　ｃｏｎｎｅｃｔ　ｔｗｏ　ｐｏｉｎｔｓ　ｉｎ　ｓｐａｃｅ　ａｎｄ　ｔｉｍｅ．@KEY()↓
+◆Ｉｔ’ｓ　ｓｔｉｌｌ　ｉｎｃｏｍｐｌｅｔｅ．@KEY()↓
+◆Ｉ’ｌｌ　ｌｅｔ　ｙｏｕ　ｕｓｅ　ａｎｏｔｈｅｒ　ｉｎｖｅｎｔｉｏｎ　Ｉ　ｃａｌｌ　ｔｈｅ　Ｓｋｙ　Ｒｕｎｎｅｒ．@KEY()↓
+◆Ｉｔ’ｓ　ａ　ｌｉｔｔｌｅ　ｂｉｔ　ｏｌｄ　ｂｕｔ　ｉｔ’ｌｌ　ｃｅｒｔａｉｎｌｙ　ｈｅｌｐ．@KEY()↓
+◆Ｗｈｅｎ　ｙｏｕ　ｂｏａｒｄ，　ａｌｗａｙｓ　ｌｉｓｔｅｎ　ｆｏｒ　ｔｈｅ　ｍｅｓｓａｇｅ　ｔｈａｔ　ｃｏｍｅｓ　ｆｒｏｍ　ｙｏｕｒ　ｄｅｓｔｉｎａｔｉｏｎ．@KEY()↓
+◆Ｙｏｕ’ｌｌ　ｇｅｔ　ｔｈｅｒｅ　ｆｏｒ　ｓｕｒｅ　ｉｆ　ｙｏｕ　ｌｉｓｔｅｎ　ｔｏ　ｔｈｅ　ｍｅｓｓａｇｅ．@KEY()↓
+◆Ｔｈｅ　ｒｏｕｎｄ　ｍａｃｈｉｎｅ　ｏｖｅｒ　ｔｈｅｒｅ　ｉｓ　ｔｈｅ　Ｓｋｙ　Ｒｕｎｎｅｒ．@KEY()↓
+◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｔｈｉｎｋ？　　Ｉｓｎ’ｔ　ｉｔ　ｎｅａｔ？@WI(20)　　Ｇｅｔ　ｉｎ！@KEY()↓
+;jpn:◆んー‥‥。@KEY()↓
+;jpn:◆あー‥‥。@KEY()↓
+;jpn:◆ところで　どうしてここに？@KEY()↓
+;jpn:◆ふむふむ　なるほど。@WI(15)↓
+;jpn:　その　@DSP_STS(STS_PC_NAME_PAULA)とかいう↓
+;jpn:　しょうじょは　むいしきのうちに@KEY()↓
+;jpn:◆わたしが　ここにいることを↓
+;jpn:　あてにしていたに　ちがいない。@WI(15)↓
+;jpn:　よし。なんとかしてみよう。@KEY()↓
+;jpn:◆わたしが　けんきゅうしているのは↓
+;jpn:　じくうかんの　にんいの２てんを↓
+;jpn:　つなげてしまう@KEY()↓
+;jpn:◆スペーストンネルなのだが‥‥↓
+;jpn:　それは　まだ　みかんせいなのだ。@KEY()↓
+;jpn:◆ちょっとふるいけど↓
+;jpn:　スカイウォーカーというマシンを↓
+;jpn:　きみに　あげよう。@KEY()↓
+;jpn:◆これにのって　あいてからの↓
+;jpn:　よびかけを　きいていれば↓
+;jpn:　もくてきちに　つくはずだ。@KEY()↓
+;jpn:◆その　おくの↓
+;jpn:　まるっこい　マシンだ。@KEY()↓
+;jpn:◆どうだ　カッコイイだろう。@WI(15)↓
+;jpn:　のりなさい。@KEY()↓
+_WINS_ANDONUT_2B;
+◆Ｌｅｔ’ｓ　ｇｅｔ　ｔｏｇｅｔｈｅｒ　ａｇａｉｎ　ｉｎ　１０　ｙｅａｒｓ　ｏｒ　ｓｏ．
+@KEYNP()
+;jpn:◆１０ねんいないに　またあおう！@KEYNP()
+@REMOVE_CHAR(PRSN_WINS_LABO_1F_4A,ANIM_SW_WINS)
+@SETF(FLG_WINS_ANDONUT)
+』
+
+;ジェフのスカイウォーカーに乗る時のセリフ
+;（アンドーナッツ博士に会わないとサマーズに行けない）
+_WINS_ANDONUT_LATER;
+@SETF(FLG_DOSEI_ANDONUT)
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+@EQ(3)
+@TRUE_GOTO(_DOSEI_ANDONUT_JEFF)
+@CHKFGOTO(FLG_DOSEI_ANDONUT,_DOSEI_ANDONUT_1)
+◆Ｏｈ！　　Ｙｏｕ　ｓｕｒｐｒｉｓｅ　ｍｅ！@KEY()↓
+;jpn:◆こいつは@WI(15)　おどろいた！@KEY()↓
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+;◆‥‥おお@WI(15)　きみが↓
+;　@DSP_NAME(0)くんかね。@KEY()↓
+◆Ｙｏｕ’ｒｅ　@DSP_NAME(0)，　ａｒｅｎ’ｔ　ｙｏｕ？@KEY()↓
+;jpn:◆きみが　@DSP_NAME(0)くんかね。@KEY()↓
+@GOTO(_DOSEI_ANDONUT_2)
+
+_DOSEI_ANDONUT_JEFF
+◆Ｏｈ，　@DSP_NAME(PC_JEFF)－－ｉｔ’ｓ　ｙｏｕ！@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)じゃないか。@KEY()↓
+@GOTO(_DOSEI_ANDONUT_3)
+
+_DOSEI_ANDONUT_1;
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆Ｏｈ，　@DSP_NAME(0)！@KEY()↓
+;jpn:◆おお　@DSP_NAME(0)くん！@KEY()↓
+;@CHKFGOTO(FLG_CAPSULE_OK,_DOSEI_ANDONUT_3)
+
+_DOSEI_ANDONUT_2;
+←
+◆@DSP_NAME(PC_JEFF)　ｗｅｔｓ　ｈｉｓ　ｂｅｄ　ｓｏｍｅｔｉｍｅｓ．@WI(15)　　Ｂｕｔ　ｏｔｈｅｒ　ｔｈａｎ　ｔｈａｔ，　ｈｅ’ｓ　ａ　ｇｏｏｄ　ｂｏｙ．@KEY()↓
+◆Ｔａｋｅ　ｃａｒｅ　ｏｆ　ｙｏｕｒｓｅｌｆ　ａｎｄ　@DSP_NAME(PC_JEFF)！．．．@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)は　ときどき↓
+;jpn:　おねしょはするが　いいこだ。@WI(20)↓
+;jpn:　よろしく　たのむよ。@KEY()↓
+_DOSEI_ANDONUT_3;
+@CHKF(FLG_TLPT_SUMS)@FALSE_GOTO(_WINS_ANDONUT_RAIN)
+@CHKFGOTO(FLG_PU,_WINS_ANDONUT_AFTER)
+◆Ａｐｐｏｋｉｄ？@KEY()↓
+◆Ｎｏ，　Ｉ’ｖｅ　ｎｅｖｅｒ　ｔｒｉｅｄ　ｉｔ　ｂｅｆｏｒｅ，　ｏｒ，　Ｉ　ｍｅａｎ，@WI(15)　Ｉ’ｖｅ　ｎｅｖｅｒ　ｍｅｔ　ｈｉｍ．．．
+@KEYNP()
+;jpn:◆アッポーキッド？@WI(20)↓
+;jpn:　いや　まだ　たべたことも↓
+;jpn:　あったことも　ないが‥‥。@KEYNP()
+』
+_WINS_ANDONUT_AFTER;
+◆Ａ　ｂｏｙ　ｎａｍｅｄ　Ａｐｐｌｅ　Ｋｉｄ　ｃａｌｌｅｄ．@KEY()↓
+◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｈｏｗ　ｈｅ　ｇｏｔ　ｔｈｅ　ｐｈｏｎｅ　ｎｕｍｂｅｒ．．．@WI(15)　　Ｈｅ’ｓ　ｓｏｕｎｄｓ　ｖｅｒｙ　ｓｍａｒｔ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｗｏｒｒｙ，　ｈｅ’ｓ　ｏｎ　ｈｉｓ　ｗａｙ　ｈｅｒｅ．
+@KEYNP()
+;jpn:◆アッポーキッドとかいう↓
+;jpn:　しょうねんから↓
+;jpn:　でんわがあったぞ。@KEY()↓
+;jpn:◆どこでどうやって↓
+;jpn:　ばんごうをしらべたのか‥‥@KEY()↓
+;jpn:◆なかなか　スルドイ↓
+;jpn:　しょうねんのようだな。@KEY()↓
+;jpn:◆こちらに　むかってるそうだから↓
+;jpn:　あんしんしたまえ。@KEYNP()
+』
+
+_WINS_ANDONUT_RAIN;アンドーナッツ博士
+@CHKFGOTO(FLG_POWR_RAIN,_WINS_ANDONUT_RAIN_FIXED)
+◆Ｔｈｅ　Ｂｕｂｂｌｅ　Ｍｏｎｋｅｙ　ｓａｉｄ　ｔｈｅｒｅ’ｓ　ａ　ｃａｖｅ　ｎｏｒｔｈ　ｏｆ　Ｓｔｏｎｅｈｅｎｇｅ．@KEY()↓
+◆Ｉ’ｖｅ　ｋｎｏｗｎ　ａｂｏｕｔ　ｉｔ　ｆｏｒ　ａ　ｌｏｎｇ　ｔｉｍｅ．@KEY()↓
+◆Ｔｈｅ　ｌｏｃａｌｓ　ｃａｌｌ　ｔｈｅ　ａｒｅａ　”Ｒａｉｎｙ　Ｃｉｒｃｌｅ，”@WI(15)　ｂｕｔ　Ｉ　ｈａｖｅｎ’ｔ　ｂｅｅｎ　ｔｈｅｒｅ．@KEY()↓
+◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ’ｓ　ｉｎｓｉｄｅ　ｔｈｅ　ｃａｖｅ．．．Ｉ　ｕｈ，　ｈｕｈ．．．Ｉ　ｕｎｄｅｒｓｔａｎｄ．．．@KEY()↓
+◆Ｗｈｉｌｅ　ｙｏｕ’ｒｅ　ｃｈｅｃｋｉｎｇ　ｏｕｔ　ｔｈａｔ　ｐｌａｃｅ，　Ｉ’ｌｌ　ｗｏｒｋ　ｏｎ　ｒｅｍｏｄｅｌｉｎｇ　Ｓｋｙ　Ｒｕｎｎｅｒ．
+;jpn:◆バルーンモンキーくんの↓
+;jpn:　いっている　ストーンヘンジの↓
+;jpn:　きたの　どうくつは@KEY()↓
+;jpn:◆わたしも　まえから↓
+;jpn:　きになっていたんだ。@KEY()↓
+;jpn:◆じもとのひとは↓
+;jpn:　「レイニーサークル」とか↓
+;jpn:　よんで‥‥@WI(15)ちかよらないんだが@KEY()↓
+;jpn:◆‥‥なにが　あるんだろう？！@KEY()↓
+;@WI(60)↓
+;jpn:◆ふむふむ‥‥わかった。@KEY()↓
+;jpn:◆きみ@GOSUB(MSG_SUB_TATI)が　あのばしょを↓
+;jpn:　しらべてるあいだに@KEY()↓
+;jpn:◆わたしは　スカイウォーカーを↓
+;jpn:　かいぞうしておこう。
+@CHKFGOTO(FLG_TEMP_5,_WINS_ANDONUT_RAIN_TMP)
+@KEY()↓
+◆Ｏｈ　ｙｅｓ，　ｙｅｓ．@WI(15)　　Ｍｙ　ｃｏ－ｗｏｒｋｅｒ，@WI(15)　Ｂｉｇ　Ｆｏｏｔ　ｄｉｓｌｉｋｅｓ　ｖｉｏｌｅｎｃｅ．@KEY()↓
+◆Ｈｅ’ｓ　ｓｕｃｈ　ａ　ｎｉｃｅ　ｇｕｙ，　ａｎｄ　ｈｅ　ｌｏｖｅｓ　ｐｅｏｐｌｅ．@KEY()↓
+◆Ｈｅ　ｏｆｔｅｎ　ｓｈａｒｅｓ　ｈｉｓ　ｂｅｅｆ　ｊｅｒｋｅｙ　ｗｉｔｈ　ｍｅ．．．
+@KEYNP()
+;jpn:◆あ　そうそう。@KEY()↓
+;jpn:◆そこにいる　ビックフットくんは↓
+;jpn:　ぼうりょくぎらいで↓
+;jpn:　にんげんずきの　ナイスガイだ。@KEY()↓
+;jpn:◆わたしはよく　かれから↓
+;jpn:　ほしにくをうってもらったりして↓
+;jpn:　せわになってるんだよ。@KEYNP()
+@SETF(FLG_TEMP_5)
+』
+_WINS_ANDONUT_RAIN_TMP;
+@KEYNP()
+』
+
+_WINS_ANDONUT_RAIN_FIXED;レイニーサークルのボスを倒したら
+◆Ｈｍｍ．．．@KEY()↓
+◆．．．Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ　ｆｏｕｎｄ　ｓｏｍｅｔｈｉｎｇ　ｏｕｔ．@KEY()↓
+◆Ｉ　ｆｉｎｉｓｈｅｄ　ｒｅｍｏｄｅｌｉｎｇ　ｔｈｅ　Ｓｋｙ　Ｒｕｎｎｅｒ．@KEY()↓
+◆Ｙｏｕ　ｃａｎ　ｌｅａｖｅ　ｆｏｒ　Ｓｕｍｍｅｒｓ　ｗｈｅｎｅｖｅｒ　ｙｏｕ　ｗｉｓｈ．@KEY()↓
+◆Ｉｔ　ｓｈｏｕｌｄｎ’ｔ　　ｂｒｅａｋ　ｔｈｉｓ　ｔｉｍｅ．．．@WI(20)　　Ｗｅｌｌ，　ｍａｙｂｅ．．．
+@KEYNP()
+;jpn:◆うむ‥‥。@KEY()↓
+;jpn:◆‥‥なにかしらの↓
+;jpn:　しゅうかくが　あったようだな。@KEY()↓
+;jpn:◆わたしのほうは↓
+;jpn:　スカイウォーカーのかいぞうは↓
+;jpn:　かんりょうした。@KEY()↓
+;jpn:◆いつでも　サマーズへ↓
+;jpn:　いくことが　できるぞ。@KEY()↓
+;jpn:◆こんどは‥‥@WI(15)たぶん‥‥@WI(20)↓
+;jpn:　‥‥こわれないとおもう。@KEYNP()
+;スカイウォーカー２に乗れる
+@REMOVE_CHAR(PRSN_WINS_LABO_1F_4A,ANIM_SW2_WINS)
+』
+;_DOSEI_ANDONUT_3;
+;←
+;◆@DSP_STS(STS_PC_NAME_JEFF)は　ときどき
+;　おねしょはするが　いいこだ。↓
+;　よろしく　たのむよ。@KEY()↓
+;』
+;-----------------------------------------------
+
+;@Habitat:ウィンタース／アンドーナッツ研究所／１階
+;@Person:電話
+;@Figure:電話
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+;@Habitat:ウィンタース／アンドーナッツ研究所／１階
+;@Person:スカイウォーカー
+;@Figure:スカイウォーカー
+;@AppearanceKey:0
+;@ActionScript:◆演出コンテ#8.8
+;@GoodsMessage:0
+;@CheckMessage;0
+;@Message:0
+
+；----------------------------------------
+;@Habitat:ウィンタース／フィールド／寄宿舎前
+;@Person:トニーを探すガウス
+;@Figure:ジミな男
+;@AppearanceKey:FLG_PU/on
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_GAUS_B
+MSG_WINS_GAUS_B;
+;ガウスさん（プー合流後）
+@SET_LOOPREG(PC_JEFF)
+@GOSUB(MSG_SUB_Q_DEAD)
+@TRUE_GOTO(_WINS_GAUS_B_JEFF_DEAD)
+◆@DSP_NAME(PC_JEFF)！@WI(15)　　Ｌｏｎｇ　ｔｉｍｅ　ｎｏ　ｓｅｅ．@WI(20)　　Ｙｏｕ’ｖｅ　ｇｏｔｔｅｎ　ｔａｌｌｅｒ．．．@KEY()↓
+◆Ｏｈ，　Ｉ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｉｍｅ　ｔｏ　ｃｈａｔ　ｒｉｇｈｔ　ｎｏｗ．@WI(20)　　Ｔｏｎｙ’ｓ　ｍｉｓｓｉｎｇ．@KEY()↓
+◆Ｉ　ｔｈｏｕｇｈｔ　ｈｅ　ｗａｓ　ｗｉｔｈ　ｙｏｕ．．．　　Ｈｅ　ｓｕｄｄｅｎｌｙ　ｄｉｓａｐｐｅａｒｅｄ．@KEY()↓
+◆Ｈｅ’ｓ　ｕｓｕａｌｌｙ　ｖｅｒｙ　ｒｅｓｐｏｎｓｉｂｌｅ　ａｎｄ　ｌｅａｖｅｓ　ａ　ｎｏｔｅ　ａｔ　ｌｅａｓｔ．．．
+@KEYNP()
+;◆@DSP_STS(STS_PC_NAME_JEFF)！@WI(15)↓
+;jpn:　なつかしいじゃないか。@WI(20)↓
+;jpn:　すこし　せがのびたかな‥‥@KEY()↓
+;jpn:◆おっと　それどころじゃないんだ。@WI(20)↓
+;jpn:　トニーのやつが↓
+;jpn:　ゆくえふめいなんだよ。@KEY()↓
+;jpn:◆きみといっしょだと↓
+;jpn:　おもっていたんだが‥‥↓
+;jpn:　きゅうに　いなくなっちまって。@KEY()↓
+;jpn:◆きちょうめんなやつだったから↓
+;jpn:　メモくらいは　のこして↓
+;jpn:　でかけるはずなのに‥‥@KEYNP()
+』
+
+_WINS_GAUS_B_JEFF_DEAD;
+◆Ｗｈａｔ？@WI(20)　　Ｙｏｕ’ｒｅ　@DSP_NAME(PC_JEFF)’ｓ　ｆｒｉｅｎｄｓ？@KEY()↓
+◆Ｇｏｏｄ　ｔｉｍｉｎｇ．@KEY()↓
+◆Ｔｏｎｙ，　@DSP_NAME(PC_JEFF)’ｓ　ｆｒｉｅｎｄ，@WI(15)　ｓｕｄｄｅｎｌｙ　ｄｉｓａｐｐｅａｒｅｄ．@WI(15)　　Ｉ　ｔｈｏｕｇｈｔ　ｈｅ　ｌｅｆｔ　ｔｏ　ｇｏ　ｓｅｅ　@DSP_NAME(PC_JEFF)．．．@KEY()↓
+◆．．．Ｔｈｅｒｅ　ｉｓ　ａ　ｇｏｏｄ　ｐｒｏｂａｂｉｌｉｔｙ　ｔｈａｔ　ｓｏｍｅｔｈｉｎｇ　ｉｓ　ｗｒｏｎｇ．
+@KEYNP()
+;jpn:◆えっ　@DSP_STS(STS_PC_NAME_JEFF)の↓
+;jpn:　ともだちだって？@KEY()↓
+;jpn:◆ちょうど　いいところにきた。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)のともだちの↓
+;jpn:　トニーっていうやつが↓
+;jpn:　きゅうに　いなくなっちまって。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)のところに↓
+;jpn:　むかったんだとばっかり↓
+;jpn:　おもっていたが‥‥@KEY()↓
+;jpn:◆‥‥‥こうなると@KEY()↓
+;jpn:◆なにか　じけんの↓
+;jpn:　かのうせいも　あるなぁ。@KEYNP()
+』
+
+;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Person:隊員Ａ
+;@Figure:タッシー隊Ｂ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_WATCHERS_A
+MSG_WINS_WATCHERS_A;
+;タッシーウォッチング隊員Ａ
+@CHKFGOTO(FLG_CAPSULE_OK,_WINS_WATCHERS_A3)
+@CHKFGOTO(FLG_WINS_TASSI_ENTER,_WINS_WATCHERS_A_TMP)
+@CHKFGOTO(FLG_MASTER_TLPT,_WINS_WATCHERS_A2)
+◆Ｙｏｕ’ｒｅ　ｒｉｇｈｔ．@KEY()↓
+◆Ｗｅ’ｒｅ　ｈｅｒｅ　ａｔ　”Ｌａｋｅ　Ｔｅｓｓ”@WI(15)　ｗａｉｔｉｎｇ　ｔｏ　ｓｅｅ　”Ｔｅｓｓｉｅ．”@KEY()↓
+◆Ｗｅ’ｒｅ　ｋｎｏｗｎ　ａｓ　ｔｈｅ　”Ｔｅｓｓｉｅ－Ｗａｔｃｈｉｎｇ　Ｃｌｕｂ”．．．@KEYNP()
+;jpn:◆そうです。@KEY()↓
+;jpn:◆わたしたちは↓
+;jpn:　ここ　「タスこ」で@KEY()↓
+;jpn:◆でんせつの‥‥@WI(20)↓
+;jpn:　「タッシー」の↓
+;jpn:　かんそくを　もくてきとする@KEY()↓
+;jpn:◆「タッシー・ウォッチングたい」@WI(20)↓
+;jpn:　‥‥なのです。@KEYNP()
+』
+_WINS_WATCHERS_A_TMP;
+◆Ｔｈｉｓ　ｉｓ　ｗｈａｔ　ｗｅ’ｖｅ　ｂｅｅｎ　ｗａｉｔｉｎｇ　ｆｏｒ！@WI(15)　　Ｆｉｎａｌｌｙ．．．ｉｔ’ｓ　ｃｏｍｉｎｇ　ｏｕｔ！@KEY()↓
+◆．．．@WI(30)＊ｆａｒｔ＊．．．@WI(15)’ｓｃｕｓｅ　ｍｅ．．．@KEY()↓
+◆Ｔｅｓｓｉｅ　ｉｓ　ｅｍｅｒｇｉｎｇ！
+@KEYNP()
+;jpn:◆これは‥‥@WI(20)いよいよ‥‥↓
+;jpn:　でますよ。@KEY()↓
+;jpn:◆‥‥@WI(20)プーッ。@KEY()↓
+;jpn:◆タッシーが　でますよ！@KEY()↓
+』
+
+;_WINS_WATCHERS_A_TMP;該当シーンなしにつき保留
+;◆あなた　みたですか？@WI(15)↓
+;　わたしは　みましたよ。↓
+;　たーしかに　いた！@KEY()↓
+;◆あれが「タスこ」の↓
+;　でんせつの　タッシーですよ！@WI(15)↓
+;　わたしは　１０ねんも　まって‥‥@KEY()↓
+;◆まって‥‥まちつづけて@WI(15)↓
+;　やっと　このめで　みた！@WI(20)↓
+;　なみだが　でてきましたよ。@KEYNP()
+;@SETF(FLG_TEMP_1)
+;』
+
+_WINS_WATCHERS_A2;
+;プー合流後
+◆Ｉ　ｆｉｎａｌｌｙ　ｓａｗ　Ｔｅｓｓｉｅ！@KEY()↓
+◆Ｉｔ’ｓ　ｌｉｋｅ　ｓｅｅｉｎｇ　ａ　ＵＦＯ．@KEY()↓
+◆Ｉｔ　ｅｍｅｒｇｅｄ　ｆｒｏｍ　ｔｈｅ　ｌａｋｅ　ａｎｄ　ｆｌｅｗ　ｔｏｗａｒｄ　Ｓｔｏｎｅｈｅｎｇｅ．@KEY()↓
+◆．．．Ｉｔ　ｋｉｄｎａｐｐｅｄ　ｏｎｅ　ｏｆ　ｍｙ　ｆｒｉｅｎｄｓ　ａｌｏｎｇ　ｔｈｅ　ｗａｙ．
+@KEYNP()
+;jpn:◆ついに　タッシーをみたと↓
+;jpn:　おもったら@KEY()↓
+;jpn:◆こんどは　ユーフォーを↓
+;jpn:　みちまったです。@KEY()↓
+;jpn:◆ストーンヘンジのほうへ↓
+;jpn:　シュワーン　シュワーンっと↓
+;jpn:　とんでった。@KEY()↓
+;jpn:◆‥‥ぼくらの　なかまを↓
+;jpn:　さらってね。@KEYNP()
+』
+
+_WINS_WATCHERS_A3;
+;トニー等救出後
+◆Ｉ’ｍ　ｓｏ　ｇｌａｄ　Ｉ　ｆｉｎａｌｌｙ　ｓａｗ　ｉｔ．@KEY()↓
+◆Ｉ’ｍ　ｓｏ　ｈａｐｐｙ，　ｉｔ　ｂｒｉｎｇｓ　ｔｅａｒｓ　ｔｏ　ｍｙ　ｅｙｅｓ　ａｎｄ　ｍａｋｅｓ　ｍｙ　ｎｏｓｅ　ｒｕｎ．@KEY()↓
+◆Ｂｏｏ　ｈｏｏ　ｈｏｏ．@WI(20)　＊ｓｎｏｒｔ＊　Ｂｏｏ　ｈｏｏ．．．
+@KEYNP()
+;jpn:◆かんどうです。↓
+;jpn:　ついにみたんですよ。@KEY()↓
+;jpn:◆なみだも　はなみずも↓
+;jpn:　でほうだいですよ。@WI(20)↓
+;jpn:　ヒーヒー　ジュルジュル。@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Person:隊員Ｂ
+;@Figure:タッシー隊Ａ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_WATCHERS_B
+MSG_WINS_WATCHERS_B;
+;タッシーウォッチング隊員Ｂ
+;こうして話しているうちにタッシーが
+;近づいてくる。
+@CHKFGOTO(FLG_CAPSULE_OK,_WINS_WATCHERS_B3)
+@CHKFGOTO(FLG_WINS_TASSI_ENTER,_WINS_WATCHERS_B_TMP)
+@CHKFGOTO(FLG_MASTER_TLPT,_WINS_WATCHERS_B2)
+;@ANIM(ANIM_TASSIE_ENTER)
+◆Ｓｏ，　ｙｏｕ’ｖｅ　ａｌｓｏ　ｂｅｅｎ　ｂｉｔｔｅｎ　ｂｙ　Ｔｅｓｓｉｅ－ｍａｎｉａ．@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｉｎ　ｌｕｃｋ．@KEY()↓
+◆Ｗｅ　ｍａｙ　ｂｅ　ａｂｌｅ　ｔｏ　ｓｅｅ　Ｔｅｓｓｉｅ　ｔｏｍｏｒｒｏｗ．　　Ｉ　ｃａｎ’ｔ　ｗａｉｔ．．．
+@KEYNP()
+;jpn:◆お　きみも↓
+;jpn:　「タッシーおたく」の↓
+;jpn:　こどもかな？@KEY()↓
+;jpn:◆きみは　ラッキーだよ。@KEY()↓
+;jpn:◆あしたあたり↓
+;jpn:　タッシーが　みられるかも↓
+;jpn:　しれないぞ。@KEYNP()
+』
+_WINS_WATCHERS_B_TMP;
+◆Ｍａｙｂｅ　ｔｈａｔ　ｗｈｉｒｌｐｏｏｌ　ｉｓ．．．
+@KEYNP()
+;jpn:◆おお　あのうずまきは‥‥↓
+;jpn:　もしや‥‥@KEYNP()
+』
+
+;_WINS_WATCHERS_B_TMP;該当シーンなしにつき保留
+;◆ほんとうに　タッシーが↓
+;　いたんですねぇ‥‥。@WI(15)↓
+;　かんどうしています。@KEY()↓
+;◆かわいらしいかおしてますねぇ。@WI(15)↓
+;　タッシーに　エサをやってみたい。@WI(20)↓
+;　あ　わらってるみたいですよ！@KEYNP()
+;』
+
+_WINS_WATCHERS_B2;
+;プー合流後
+◆Ｗｈｅｒｅ　ａｒｅ　ｙｏｕ，　ｍｙ　ｆｒｉｅｎｄ？@KEY()↓
+◆Ｔｈｅｙ　ｃａｍｅ　ａｎｄ　ｔｏｏｋ　ｙｏｕ　ａｗａｙ．@KEY()↓
+◆Ｃｏｍｅ　ｂａｃｋ，　Ｓｅｂａｓｔｉａｎ．@KEY()↓
+◆Ｈｅｙ，　ｔｈａｔ’ｓ　ａ　Ｈａｉｋｕ　ｐｏｅｍ！
+@KEYNP()
+;jpn:◆さらわれた@WI(15)↓
+;jpn:　なかまのなまえは　セバスチャン。@WI(15)↓
+;jpn:　５・７・５で　いってみました。@KEYNP()
+』
+
+_WINS_WATCHERS_B3;松（Ｈａｉｋｕの意味通じない？）
+;トニー等救出後
+◆Ｉ　ｗａｉｔｅｄ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆Ｉ’ｍ　ｇｌａｄ　ｔｏ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ．@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｂａｃｋ，　Ｓｅｂａｓｔｉａｎ．@KEY()↓
+◆．．．Ｉ　ｊｕｓｔ　ｌｏｖｅ　ｍａｋｉｎｇ　Ｈａｉｋｕ．
+@KEYNP()
+;jpn:◆セバスチャン@WI(15)↓
+;jpn:　たすけられても　セバスチャン。@WI(15)↓
+;jpn:　５・７・５で　いってみました。@KEYNP()
+』
+
+;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Person:セバスチャン
+;@Figure:タッシー隊Ａ
+;@AppearanceKey:FLG_SEBASTIAN_DISAPPEAR/off
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_WATCHERS_GUM
+MSG_WINS_WATCHERS_GUM;
+;タッシー隊セバスチャン
+@CHKFGOTO(FLG_CAPSULE_OK,_WINS_WATCHERS_GUM_LATER)
+@CHKFGOTO(FLG_BALLOONMONKEY,_WINS_WATCHERS_GUM_TMP)
+◆Ｗｈｙ，　ｈｅｌｌｏ！@WI(20)　　Ｉ　ｗｏｎｄｅｒ　ｉｆ　ｔｈｅｒｅ　ａｒｅ　ａｎｙ　ｍｏｎｋｅｙｓ　ａｒｏｕｎｄ！@KEY()↓
+◆Ｙ’ｋｎｏｗ，　ｔｈｅｙ　ｓａｙ　ｔｈａｔ　Ｔｅｓｓｉｅ　ｉｓ　ｆｒｉｅｎｄｌｙ　ｗｉｔｈ　ｍｏｎｋｅｙｓ．．．@KEYNP()
+;jpn:◆やぁ　ぼうや。@WI(20)↓
+;jpn:　どこかで　おサルを↓
+;jpn:　みなかったかなぁ？@KEY()↓
+;jpn:◆タッシーとおサルが↓
+;jpn:　なかよしだっていう@KEY()↓
+;jpn:◆みかくにんじょうほうも↓
+;jpn:　あるんだよ。@KEYNP()
+』
+
+_WINS_WATCHERS_GUM_TMP;
+◆Ｗｈａｔ　ａ　ｃｕｔｅ　ｌｉｔｔｌｅ　ｍｏｎｋｅｙ．@WI(15)　　Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ａ　ｐｉｅｃｅ　ｏｆ　ｇｕｍ？@KEY()↓
+◆Ｍａｙｂｅ　ｍｏｎｋｅｙｓ　ｄｏｎ’ｔ　ｌｉｋｅ　ｇｕｍ．
+@KEYNP()
+;jpn:◆やぁ　かわいいサルだねぇ。↓
+;jpn:　ガムでも　あげようか。@KEY()↓
+;jpn:◆おサルは　ガムなんか↓
+;jpn:　ほしがらないかな。@KEY()↓
+;jpn:◆ハハハハハ。@KEYNP()
+』
+;　おじさん　ガムをあげちゃおう。@KEY()↓
+;◆‥‥あらまっ！@KEY()
+;@ANIM(ANIM_BALLOON_MONKEY_TASSIE)
+;』
+
+_WINS_WATCHERS_GUM_LATER;
+◆Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　ｔｈａｔ　Ｉ　ｗａｓ　ｓｏ　ｂｒａｖｅ．．．
+;jpn:◆ぼく　ぼくじしんのゆうきに↓
+;jpn:　いま　かんどうしています。
+@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Person:バルーンモンキー
+;@Figure:バルーンモンキー
+;@AppearanceKey:FLG_PU/on
+;@ActionScript:◆せわしなくサル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_BALLOONMONKEY_WATCHERS
+MSG_WINS_BALLOONMONKEY_WATCHERS;
+;バルーンモンキー（プー合流後タス湖に出現）
+@CHKFGOTO(FLG_WIN_GIEGU,_WINS_BMONKEY_END)
+◆Ｋｉ－ｋｙｅ－ｋｙｅ－ｋｙｅ－ｋｉｉｉ．@KEY()↓
+◆（Ｙｅｐ，　Ｉ　ｈａｖｅ　ｓｏｍｅ　ｃｈｅ@WI(5)ｅ@WI(5)ｅ@WI(5)ｅｗｉｎｇ　ｇｕｍ！）
+@KEYNP()
+;jpn:◆キャキャキャキャ　キャッキャ。↓
+;jpn:　（ガムなら　もってるよーん）@KEY()
+@CLOSEALL()
+;@ANIM(ANIM_BALLOON_MONKEY_TASSIE)
+;@GOSUB(MSG_DEBUG_EVENT_83)
+@GOTO(MSG_EVT_83_TASSI_2)
+』
+_WINS_BMONKEY_END;＆
+◆Ｋｙａ　ｋｅ　ｋｅ　ｋｉｙａ．↓
+　　（Ｉｎ　ｔｈｅ　ｍｏｎｋｅｙ　ｃｏｍｍｕｎｉｔｙ，@WI(15)　@DSP_NAME(PC_NESS)　ｉｓ　ｆａｍｏｕｓ．@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｓｕｃｈ　ａ　ｇｒｅａｔ　ｍａｎ．）
+@KEYNP()
+;jpn:◆キッキッ　キャ↓
+;jpn:　（サルのせかいじゃ↓
+;jpn:　@DSP_STS(STS_PC_NAME_NES)さんのことは@KEY()↓
+;jpn:◆だいひょうばんですよ。@WI(30)↓
+;jpn:　やあ　たいしたもんだ）@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／フィールド／職人ダンジョンの前
+;@Person:ブリックロード氏
+;@Figure:ダンジョン職人
+;@AppearanceKey:FLG_WINS_BRICK_BARKER_DISAPPEAR/off
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_BRICKROAD
+;MSG_WINS_BRICKROAD;
+;ダンジョン職人（ブリックロード氏）
+;この男は、なにゆえにダンジョンを作るのであろうか？
+;さらに、どうしてこのような複雑怪奇なダンジョンを作ることが
+;できるのだろうか？この爺さんは、やっぱり「サバン症候群」の
+;一例と考えてもらうしかないな。
+;◆わしは　ダンジョンしょくにんの↓
+;　ブリックロードといいやす。@KEY()↓
+;◆ダンジョンづくりに↓
+;　いのちを　かけてるんでやす。@KEY()↓
+;◆ためしに　さいしんさくの↓
+;　ダンジョンに　はいってみて↓
+;　おくんなさい。@KEYNP()
+;@GOSUB(MSG_SPACE_KAIHUKU)
+;』
+
+
+;@Habitat:ウィンタース／フィールド／職人ダンジョンの出口
+;@Person:ブリックロード氏
+;@Figure:ダンジョン職人
+;@AppearanceKey:FLG_WINS_BRICK_THANKS_APPEAR/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_BRICKROAD_OK
+MSG_WINS_BRICKROAD_OK;ダンジョンクリア後のダンジョン男のセリフ
+@CHKFGOTO(FLG_WINS_BRICK_BARKER_DISAPPEAR,_WINS_BRICKROAD_OK_MAIN)
+◆Ｍａｙｂｅ　ｉｔ　ｗａｓ　ｔｏｏ　ｅａｓｙ．．．？
+@KEY()↓
+;jpn:◆ちょっと　かんたんすぎたかな‥‥@KEY()↓
+_WINS_BRICKROAD_OK_MAIN;
+◆Ｍｙ　ｎａｍｅ’ｓ　Ｂｒｉｃｋｒｏａｄ，　ｔｈｅ　ｄｕｎｇｅｏｎ　ｄｅｖｅｌｏｐｅｒ．@KEY()↓
+◆Ｉ’ｖｅ　ｄｅｖｏｔｅｄ　ｍｙ　ｌｉｆｅ　ｔｏ　ｍａｋｉｎｇ　ｄｕｎｇｅｏｎｓ．@KEY()↓
+◆Ｗｅｌｌ，　ｂｙ　ｃｏｍｂｉｎｉｎｇ　ｍｙ　ｓｋｉｌｌｓ　ａｎｄ　Ｄｒ．　Ａｎｄｏｎｕｔｓ　ｉｎｔｅｌｌｉｇｅｎｃｅ，@KEY()↓
+◆Ｉ　ｃａｎ　ｂｅｃｏｍｅ　”Ｄｕｎｇｅｏｎ　Ｍａｎ，”　Ｔｈｅ　ｆｉｒｓｔ　ｃｏｍｂｉｎａｔｉｏｎ　ｏｆ　ｈｕｍａｎ　ａｎｄ　ｄｕｎｇｅｏｎ　ｉｎ　ｈｉｓｔｏｒｙ．@KEY()↓
+◆Ｌｅｔ’ｓ　ｍｅｅｔ　ａｇａｉｎ　ｏｎｃｅ　Ｉ　ｈａｖｅ　ｂｅｃｏｍｅ　ｄｕｎｇｅｏｎ　ｍａｎ．@KEY()↓
+;jpn:◆わしは　ダンジョンしょくにんの↓
+;jpn:　ブリックロードといいやす。@KEY()↓
+;jpn:◆ダンジョンづくりに↓
+;jpn:　いのちを　かけてるんでやす。@KEY()↓
+;jpn:◆わしの　ぎじゅつと↓
+;jpn:　アンドーナッツはかせの↓
+;jpn:　ちえが　かさなれば@KEY()↓
+;jpn:◆わしは　じんるいしじょう　はつの↓
+;jpn:　ダンジョンおとこに↓
+;jpn:　なれるんでやす。@KEY()↓
+;jpn:◆いつか　また↓
+;jpn:　ダンジョンおとことして↓
+;jpn:　おあいしましょう！@KEY()↓
+@SETF(FLG_WINS_BRICK_BARKER_DISAPPEAR)
+◆．．．Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｇｅｔ　ａ　ｇｏｏｄ　ｎｉｇｈｔ’ｓ　ｒｅｓｔ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆‥‥ところで@WI(30)↓
+;jpn:　いっぱく　やすんでいきやすか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_WINS_BRICKROAD_OK_YES,_WINS_BRICKROAD_OK_NO)
+_WINS_BRICKROAD_OK_NO;いいえ
+◆Ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ　ｒｅｓｔ？
+@KEYNP()
+;jpn:◆やすみたくねぇんでやすか。@KEYNP()
+』
+_WINS_BRICKROAD_OK_YES;
+@GOSUB(MSG_GLOBAL_MYHOME)
+@WARP(WARP_WINS_LIFEUP_BRICK)
+@COLD_PLAYER(PC_ALL)
+@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
+@OPEN(1)
+◆Ｔａｋｅ　ｃａｒｅ．　　Ｃｏｍｅ　ｂａｃｋ　ａｇａｉｎ．
+@KEYNP()
+;jpn:◆いってらっしゃいで　やす。@KEYNP()
+@CLOSEALL()
+@FRESH_PLAYER(PC_ALL)
+』
+;
+;◆ちょっと　かんたんすぎたかな@KEY()↓
+;◆わしの　ぎじゅつと↓
+;　アンドーナッツはかせの↓
+;　ちえが　かさなれば@KEY()↓
+;◆わしは　じんるいしじょう　はつの↓
+;　ダンジョンおとこに↓
+;　なれるんでやす。@KEY()↓
+;◆いつか　また↓
+;　ダンジョンおとことして↓
+;　おあいしましょう！@KEYNP()
+;@CLRF(FLG_WINS_BRICK_THANKS_APPEAR)
+;』
+
+
+;@Habitat:ウィンタース／フィールド／Rainy-Circle出口
+;@Person:バルーンモンキー彼女
+;@Figure:バルーンモンキー彼女
+;@AppearanceKey:FLG_BALLOONMONKEY/on
+;@ActionScript:◆演出コンテ#8.7
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:0
+MSG_WINS_BALLOONSHE;
+@!
+
+
+;@Habitat:ウィンタース／フィールド／StoneHenge付近
+;@Person:StoneHenge解説者
+;@Figure:おじさんＤ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_STONEHENGE_A
+MSG_WINS_STONEHENGE_A;基地クリアしたら消してしまう
+;ストーンヘンジの解説者
+◆Ｙｏｕ　ｋｉｄｓ　ｄｏｎ’ｔ　ｌｏｏｋ　ｖｅｒｙ　ｂｒｉｇｈｔ．@WI(15)　　Ｌｅｔ　ｍｅ　ｅｘｐｌａｉｎ．@KEY()↓
+◆Ｔｈｅｓｅ　ｓｔｏｎｅｓ　ａｒｅ　ｍａｋｉｎｇ　ａ　ｐａｔｔｅｒｎ．@WI(20)　　Ｉｔ’ｓ　ｃａｌｌｅｄ　Ｓｔｏｎｅｈｅｎｇｅ．@KEY()↓
+◆ＵＦＯ’ｓ　ｏｆｔｅｎ　ｖｉｓｉｔ　ｈｅｒｅ．@WI(20)　　Ｙｏｕ　ｍｕｓｔ　ｈａｖｅ　ｓｅｅｎ　ｉｔ　ｏｎ　ＴＶ　ｏｒ　ｒｅａｄ　ｉｔ　ｉｎ　ｔｈｅ　ｔａｂｌｏｉｄｓ．@KEY()↓
+◆Ｙｅｓ，@WI(15)　ＴＨＡＴ　Ｓｔｏｎｅｈｅｎｇｅ．
+@KEYNP()
+;jpn:◆あなたは　おみうけしたところ@WI(15)↓;あなたがた
+;jpn:　むちで　むきょうような↓
+;jpn:　たんなるガキらしいので@KEY()↓
+;jpn:◆あえて　おおしえしておくが@WI(15)↓
+;jpn:　この　いし　の　ならびかたは↓
+;jpn:　いわゆる　ひとつの@KEY()↓
+;jpn:◆ストーンヘンジというものですぞ。@KEY()↓
+;jpn:◆テレビや　ざっしで　おなじみの@WI(15)↓
+;jpn:　ユーフォーなんかも↓
+;jpn:　よく　とんでくるという‥‥あの@KEY()↓
+;jpn:◆ストーンヘンジなんですぞ。@KEYNP()
+』
+
+;----------------------------------------
+
+;@Habitat:ウィンタース／レイニーサークル／大広間
+;@Person:ジャイアントステップのボス
+;@Figure:ガーディアン
+;@AppearanceKey:FLG_WIN_RAIN_BOSS/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_RAIN_BOSS
+MSG_WINS_RAIN_BOSS;
+@CHKFGOTO(FLG_WIN_RAIN_BOSS,MSG_SYS_HANASU_NG)
+@GET_ORDER_PLAYER(1)
+@EQ(PC_NESS)
+@FALSE_GOTO(MSG_GLOBAL_BOSS_NG)
+@SET_LOOPREG(PC_NESS)
+@GOSUB(MSG_SUB_Q_DEAD)
+@TRUE_GOTO(MSG_GLOBAL_BOSS_NG)
+@BGMSTART(0,BGM_msc24);ボスのセリフ曲
+◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｇｏｔ　ｈｅｒｅ．@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｆｏｕｒｔｈ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ”　ｌｏｃａｔｉｏｎ．@WI(20)　　Ｂｕｔ　ｉｔ’ｓ　ｍｉｎｅ　ｎｏｗ．@KEY()↓
+◆Ｔａｋｅ　ｉｔ　ｆｒｏｍ　ｍｅ，@WI(30)　ｉｆ　ｙｏｕ　ｄａｒｅ．．．
+;jpn:◆よくきた。@KEY()↓
+;jpn:◆ここは　４ばんめの↓
+;jpn:「おまえのばしょ」だ。@KEY()↓
+;jpn:◆しかし　いまは↓
+;jpn:　わたしのばしょだ。@KEY()↓
+;jpn:◆うばいかえせばよい。@KEY()↓
+;jpn:◆‥‥できるものなら。
+@KEY()
+@GOSUB(MSG_BATTLE_RAIN_BOSS)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@HIDE_CHAR(PRSN_WINS_RAINY_1_A,OBJFX_HIDE_HSTRIPE)
+@WI(120)
+@SETF(FLG_WIN_RAIN_BOSS)
+』
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:捕われアップルキッド
+;@Figure:アップルキッド
+;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_NO_RESPONSE
+MSG_WINS_CAPSULE_NO_RESPONSE;
+◆（Ｔｈｅｒｅ’ｓ　ｎｏ　ｒｅｓｐｏｎｓｅ．）
+@KEYNP()
+;jpn:◆へんじがない。@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:開放アップルキッド
+;@Figure:アップルキッド
+;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
+;@ActionScript:◆中範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_APPLE
+MSG_WINS_CAPSULE_APPLE;
+;カプセルから脱出したアップル
+◆Ｉ　ｅｘｐｅｃｔｅｄ　ｔｈｅｒｅ　ｔｏ　ｂｅ　ａｂｏｕｔ　ａ　ｓｅｖｅｎ　ｐｅｒｃｅｎｔ　ｃｈａｎｃｅ　ｔｈａｔ　ｙｏｕ　ｗｏｕｌｄ　ｒｅｓｃｕｅ　ｍｅ．@KEY()↓
+◆Ｉ　ｊｕｓｔ　ｔｈｏｕｇｈｔ　ｉｔ　ｗａｓ　ａ　ｇｏｏｄ　ｏｐｐｏｒｔｕｎｉｔｙ　ｔｏ　ｍｅｅｔ　Ｍｒ．　Ｓａｔｕｒｎ．@KEY()↓
+◆Ｉ　ａｌｓｏ　ｇｏｔ　ｔｏ　ｍｅｅｔ　Ｄｒ．　Ａｎｄｏｎｕｔｓ．．．@WI(20)　　Ｓｅｅ　ｙｏｕ．@KEY()↓
+;jpn:◆かくりつ　７パーセントくらいで↓
+;jpn:　たすけてもらえると↓
+;jpn:　おもっていました。@KEY()↓
+;jpn:◆でも　ここで　どせいさんに↓
+;jpn:　しりあえたのは↓
+;jpn:　おおきな　しゅうかくでした。@KEY()↓
+;jpn:◆それに↓
+;jpn:　アンドーナッツはかせにも↓
+;jpn:　とうとう　おあいできたし。@KEY()↓
+;jpn:◆‥‥じゃ@KEY()↓
+@WI(60)↓
+@WI(60)↓
+◆Ｗｈａｔ？@KEY()↓
+◆Ｙｏｕ’ｒｅ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｔｈｅ　ｂｏｏｋ　”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ”？@KEY()↓
+◆Ｉ　ｒｅｔｕｒｎｅｄ　ｉｔ　ｔｏ　ｔｈｅ　Ｏｎｅｔｔ　ｌｉｂｒａｒｙ．@KEY()↓
+◆Ｐｌｅａｓｅ　ｕｓｅ　ｔｈｅ　ｂｏｏｋ　ｔｏ　ｈｅｌｐ　ｔｈｅ　ｓｈｙ　Ｔｅｎｄａ　ｔｒｉｂｅ．@KEY()↓
+◆．．．Ａｎｙｗａｙ，@WI(15)　ｂｅｃａｕｓｅ　Ｉ　ｋｎｅｗ　ｙｏｕ，　Ｉ　ｈａｄ　ａｎ　ｉｎｃｒｅｄｉｂｌｅ　ｅｘｐｅｒｉｅｎｃｅ．．．ｗｏｗ！@KEY()↓
+◆Ｉ　ｗａｓ　ｋｉｄｎａｐｐｅｄ　ｂｙ　ｓｏｍｅ　ｏｆ　Ｇｉｙｇａｓ’　ｔｏａｄｉｅｓ！@KEYNP()
+;jpn:◆えっ？@KEY()↓
+;jpn:◆「むくちをなおすほん」ですか？@KEY()↓
+;jpn:◆オネットのとしょかんに↓
+;jpn:　かえしときましたから↓
+;jpn:　としょかんに　あるはずです。@KEY()↓
+;jpn:◆グミぞくの　みなさんの↓
+;jpn:　やくにたててあげてください。@KEY()↓
+;jpn:◆‥‥それにしても↓
+;jpn:　きみと　しりあったおかげで@KEY()↓
+;jpn:◆ギーグのてしたに↓
+;jpn:　ゆうかいされるなんて↓
+;jpn:　いいけいけんが　できました。@KEYNP()
+@CLRF(FLG_WINS_ESCAPE_MOUSE_NG);解放された博士たちと話すまではネズミ禁止
+』
+;◆アンドーナッツはかせに↓
+;　あいにゆくときに　えんばんに↓
+;　さらわれちまったんです。@KEY()↓
+;◆でも　どせいさんと↓
+;　ともだちになれたのは↓
+;　おおきなしゅうかくでした。@KEY()↓
+;◆‥‥ぼく　これから↓
+;　サターンバレーに　むかいます。@KEYNP()
+;』
+;◆アンドーナッツはかせは↓
+;　どうやら　どせいさんのいる↓
+;　サターンバレーに@KEY()↓
+;◆むかったようです。@WI(20)↓
+;　ぼくも　すぐに↓
+;　そちらにむかいます。@KEY()↓
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:捕われ土星さん
+;@Figure:土星さん
+;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_NO_RESPONSE
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:開放土星さん
+;@Figure:土星さん
+;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
+;@ActionScript:◆中範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_DOSEI
+MSG_WINS_CAPSULE_DOSEI;
+;同じく土星さん
+@FONTBAKA()
+◆Ｋｉｄｎａｐｐｅｄ．　　Ｈａｐｐｙ．@KEY()↓
+◆Ｒｅｓｃｕｅｄ．
+;jpn:◆さら@WI(15)　われた。↓
+;jpn:　うれしい。@WI(15)↓
+;jpn:　たすかった。
+@CHKF(FLG_ITEM_DOSEI_RIBBON)
+@FALSE_GOTO(_WINS_CAPSULE_DOSEI_MAIN)
+@KEYNP()
+』
+_WINS_CAPSULE_DOSEI_MAIN;追加設定
+@KEY()↓
+◆Ｉ　ｇｉｖｅ　ｙｏｕ　ｒｉｂｂｏｎ．@KEY()↓
+;jpn:◆りぼんあげます。@KEY()↓
+@FONTSTD()
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_WINS_CAPSULE_DOSEI_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_EQUIP_RIBBON_DOSEI)
+@GOSUB(MSG_SUB_GETGOODS)@KEYNP()
+@SETF(FLG_ITEM_DOSEI_RIBBON)
+』
+_WINS_CAPSULE_DOSEI_GOODSFULL;
+◆Ｔｏｏ　ｍｕｃｈ．@KEY()↓
+◆．．．ｃａｎ’ｔ　ｃａｒｒｙ　ａｌｌ．
+@KEYNP()
+;jpn:◆にもついっぱい↓
+;jpn:　‥‥もらえない。@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:捕われトニー
+;@Figure:トニー
+;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_NO_RESPONSE
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:開放トニー
+;@Figure:トニー
+;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
+;@ActionScript:◆中範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_TONY
+MSG_WINS_CAPSULE_TONY;
+;同じくトニー
+@SET_LOOPREG(PC_JEFF)
+@GOSUB(MSG_SUB_Q_DEAD)
+@TRUE_GOTO(_WINS_CAPSULE_TONY_JEFF_DEAD)
+◆@DSP_NAME(PC_JEFF)，　@DSP_NAME(PC_JEFF)　ｂｕｄｄｙ！@KEY()↓
+◆Ｏｈ　ｍｅ，　ｏｈ　ｍｙ．．．@KEY()↓
+◆Ｙｏｕ．．．ｃａｍｅ　ｔｏ　ｒｅｓｃｕｅ　ｍｅ！@WI(15)　　Ｐａｌ！↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)！@WI(20)　@DSP_STS(STS_PC_NAME_JEFF)ーッ！↓
+;jpn:　ばかばかばか！@WI(15)↓
+;　@DSP_STS(STS_PC_NAME_JEFF)！@KEY()↓
+;jpn:◆ぼくを‥‥↓
+;jpn:　たすけにきて　くれたんだね！@WI(20)↓
+;jpn:　@DSP_STS(STS_PC_NAME_JEFF)ったら！
+;
+;ジェフ以外に誰かいたらその人用メッセージ
+@SET_LOOPREG(PC_NESS)
+@GOSUB(MSG_SUB_Q_DEAD)
+@FALSE_GOTO(_WINS_CAPSULE_TONY_NESS_ALIVE)
+@SET_LOOPREG(PC_POO)
+@GOSUB(MSG_SUB_Q_DEAD)
+@FALSE_GOTO(_WINS_CAPSULE_TONY_POO_ALIVE)
+@SET_LOOPREG(PC_PAULA)
+@GOSUB(MSG_SUB_Q_DEAD)
+@FALSE_GOTO(_WINS_CAPSULE_TONY_PAULA_ALIVE)
+@KEYNP()
+』
+_WINS_CAPSULE_TONY_NESS_ALIVE;
+@KEY()↓
+◆．．．Ｏｈ，　@DSP_NAME(PC_NESS)？
+
+;jpn:◆‥‥あっ　@DSP_STS(STS_PC_NAME_NES)くん？@KEY()↓
+@GOTO(_WINS_CAPSULE_TONY_ALIVE_MAIN)
+
+_WINS_CAPSULE_TONY_PAULA_ALIVE;
+@KEY()↓
+◆．．．Ｏｈ，　@DSP_NAME(PC_PAULA)？
+
+;jpn:◆‥‥あっ　@DSP_STS(STS_PC_NAME_PAULA)ちゃん？@KEY()↓
+@GOTO(_WINS_CAPSULE_TONY_ALIVE_MAIN)
+
+_WINS_CAPSULE_TONY_POO_ALIVE;
+@KEY()↓
+◆．．．Ｏｈ，　@DSP_NAME(PC_POO)？
+
+;jpn:◆‥‥あっ　@DSP_STS(STS_PC_NAME_POO)くん？@KEY()↓
+@GOTO(_WINS_CAPSULE_TONY_ALIVE_MAIN)
+
+_WINS_CAPSULE_TONY_ALIVE_MAIN;合流
+@KEY()↓
+◆Ｉ’ｍ　Ｔｏｎｙ．@KEY()↓
+◆Ｉ’ｍ　@DSP_NAME(PC_JEFF)’ｓ　ｂｅｓｔ　ｆｒｉｅｎｄ．@WI(20)　　Ｉ’ｖｅ　ｋｎｏｗｎ　ｈｉｍ　ｆｏｒ　ｔｈｅ　ｌｏｎｇｅｓｔ　ｔｉｍｅ．
+@KEYNP()
+;jpn:　ぼく@WI(15)　おおむかしからの↓
+;jpn:　@DSP_STS(STS_PC_NAME_JEFF)のしんゆうの↓
+;jpn:　トニーです。@KEYNP()
+』
+_WINS_CAPSULE_TONY_JEFF_DEAD;
+◆Ｗｈｅｒｅ’ｓ　@DSP_NAME(PC_JEFF)？@KEY()↓
+@GET_ORDER_PLAYER(1)
+@XCHG()
+◆@DSP_NAME(0)，　ｙｏｕ’ｖｅ　ａｌｔｅｒｅｄ　@DSP_NAME(PC_JEFF)’ｓ　ｄｅｓｔｉｎｙ．@KEY()↓
+◆Ｂｒｉｎｇ　ｂａｃｋ　@DSP_NAME(PC_JEFF)！@KEY()↓
+◆Ｂｒｉｎｇ　ｂａｃｋ　ｍｙ　ｆｒｉｅｎｄｓｈｉｐ　ｗｉｔｈ　@DSP_NAME(PC_JEFF)！！
+@KEYNP()
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)は　どこにいるのっ？↓
+　@DSP_STS(STS_PC_NAME_JEFF)　@DSP_STS(STS_PC_NAME_JEFF)！@KEY()↓
+;jpn:◆きみ@GOSUB(MSG_SUB_TATI)が　@DSP_STS(STS_PC_NAME_JEFF)の↓
+;jpn:　うんめいを　くるわせたんだ！@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)を　かえせ！@KEY()↓
+;jpn:◆ぼくと　@DSP_STS(STS_PC_NAME_JEFF)の↓
+;jpn:　ゆうじょうを　かえせ！！@KEYNP()
+@!
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:捕われセバスチャン
+;@Figure:タッシー隊Ａ
+;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_NO_RESPONSE
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:開放セバスチャン
+;@Figure:タッシー隊Ａ
+;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
+;@ActionScript:◆中範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_WATCHERS
+MSG_WINS_CAPSULE_WATCHERS;
+;同じく隊員セバスチャン
+◆Ｉ　ｗａｓ　ｓｃａｒｅｄ，　ｂｕｔ　Ｉ　ｋｎｅｗ　Ｉ’ｄ　ｂｅ　ｓａｖｅｄ　ｉｆ　Ｉ　ｃｏｕｒａｇｅｏｕｓｌｙ@KEY()↓
+◆ｊｕｓｔ　ｓａｔ　ｈｅｒｅ　ａｎｄ　ｗａｉｔｅｄ　ｌｏｎｇ　ｅｎｏｕｇｈ．．．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｗｈａｔ　Ｉ　ｔｈｏｕｇｈｔ，　ｂｕｔ　Ｉ　ｂｅｇａｎ　ｔｏ　ｌｏｓｅ　ｈｏｐｅ．．．@KEY()↓
+◆Ｉ’ｍ　ｓｏ　ｇｌａｄ　ｙｏｕ　ｓａｖｅｄ　ｍｅ　ａｆｔｅｒ　ａｌｌ．
+@KEYNP()
+;jpn:◆こわかったけれど↓
+;jpn:　ゆうきをもって　ぼーっとしてれば↓
+;jpn:　いつか　たすかると‥‥@KEY()↓
+;jpn:◆はじめのうちは　おもってました。@WI(15)↓
+;jpn:　でも　とちゅうから↓
+;jpn:　くじけてきて‥‥@KEY()↓
+;jpn:◆しかし　たすけてもらったので↓
+;jpn:　けっかてきには↓
+;jpn:　よかったわけです。@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:開放民間人Ａ
+;@Figure:モヒカン
+;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
+;@ActionScript:◆中範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_A
+MSG_WINS_CAPSULE_A;
+;同じく民間人Ａ
+◆Ｉ　ｗａｓ　ｋｉｄｎａｐｐｅｄ　ｗｈｉｌｅ　ｍｉｌｋｉｎ’　ａ　ｃｏｗ　ｏｎ　ｍ’　ｆａｒｍ．@KEY()↓
+◆Ｉ　ｄｉｄｎ’ｔ　ｔｈｉｎｋ　ｔｈｅｙ’ｄ　ｇｉｔ　ａ　ｒａｎｓｏｍ　ｂｙ　ｋｉｄｎａｐｐｉｎ’　ｌｉｔｔｌｅ　ｏｌ’　ｍｅ．
+@KEYNP()
+;jpn:◆おら　ぼくじょうで↓
+;jpn:　うしのちちを　しぼってるときに↓
+;jpn:　さらわれちまっただよ。@KEY()↓
+;jpn:◆おらを　さらったところで↓
+;jpn:　みのしろきんも　とれねぇのによ。@KEYNP()
+』
+
+
+;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Person:開放民間人Ｂ
+;@Figure:ジミな男
+;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
+;@ActionScript:◆中範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_WINS_CAPSULE_B
+MSG_WINS_CAPSULE_B;
+;同じく民間人Ｂ
+◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｈａｐｐｉｅｓｔ　ｍｏｍｅｎｔ　ｏｆ　ｍｙ　ｌｉｆｅ．@KEY()↓
+◆Ｎｏ　ｍａｔｔｅｒ　ｗｈａｔ　ｈａｐｐｅｎｓ　Ｉ　ｗｉｌｌ　ｌｉｖｅ，　ｌｉｖｅ，　ｌｉｖｅ　ｔｅｎ　ｔｈｏｕｓａｎｄ　ｙｅａｒｓ．@KEY()↓
+◆Ｔｈａｎｋｓ　ｆｏｒ　ａｌｌ　ｔｈａｔ　ｙｏｕ’ｖｅ　ｄｏｎｅ．
+@KEYNP()
+;jpn:◆いままで　いきてきて↓
+;jpn:　いちばん　うれしいです。@KEY()↓
+;jpn:◆あと１まんねんくらい↓
+;jpn:　いきて　いきて　いきて　いきて↓
+;jpn:　いきぬいてやるつもりです。@KEY()↓
+;jpn:◆ありがとうございました。@KEYNP()
+』
+
+;----------------------------------------
+
+;タッシー隊追加
+
+MSG_WINS_WATCHERS_E;
+@CHKFGOTO(FLG_SEBASTIAN_DISAPPEAR,_WINS_WATCHERS_E_AFTER);誘拐中
+@CHKFGOTO(FLG_MASTER_TLPT,_WINS_WATCHERS_E2)
+◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｔｈｅ　ｗｉｎｄ　ｉｓ　ａｌｗａｙｓ　ｂｌｏｗｉｎｇ　ｗｈｅｎ　Ｔｅｓｓｉｅ　ａｐｐｅａｒｓ．@KEY()↓
+◆Ａｈｈ　Ｃｈｏｏ！@KEY()↓
+◆Ｉ　ｆｅｅｌ　ｌｉｋｅ　Ｉ’ｍ　ｃａｔｃｈｉｎｇ　ａ　ｃｏｌｄ．
+@KEYNP()
+;jpn:◆タッシーが　あらわれるときは↓
+;jpn:　いつも　かぜがふいている↓
+;jpn:　‥‥らしいんですけどね。@KEY()↓
+;jpn:◆ヘックシン！@KEY()↓
+;jpn:◆わたし　かぜ　ひきそうです。@KEYNP()
+』
+_WINS_WATCHERS_TMP;
+;（↓タッシーが現れた後）
+◆Ｂｏｏ　ｈｏｏ　ｈｏｏ．↓
+　　Ｔｅ　Ｔｅ　Ｔｅ　Ｔｅｓｓｉｅ！@KEY()↓
+◆Ｉ’ｍ　ｆｏｇｇｉｎｇ　ｕｐ　ｍｙ　ｂｉｎｏｃｕｌａｒｓ！↓
+　　Ｂｏｏ　ｈｏｏ　ｈｏｏ！
+@KEYNP()
+;jpn:◆う　う　う‥‥↓
+;jpn:　タ　タ　タッシーが‥‥@KEY()↓
+;jpn:◆な　なみだで↓
+;jpn:　そうがんきょうが↓
+;jpn:　くもっちゃって‥‥。@KEYNP()
+』
+
+;（↓プー合流後）
+_WINS_WATCHERS_E2
+◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ　Ｔｅｓｓｉｅ　ｔｈｉｎｋｓ　ｏｆ　ｍｅ？
+@KEYNP()
+;jpn:◆タッシーは　わたしのこと↓
+;jpn:　どう　おもってるのでしょう？@KEYNP()
+』
+_WINS_WATCHERS_E_AFTER;誘拐中
+◆Ｓｅｂａｓｔｉａｎ，　ｃｈｕｍ，@WI(15)　ｗａｓ　ｋｉｄｎａｐｐｅｄ！
+@KEYNP()
+;jpn:◆セバスチャンちゃんが↓
+;jpn:　さらわれちゃったよー！@KEYNP()
+』
+
+MSG_WINS_WATCHERS_F;
+@CHKFGOTO(FLG_SEBASTIAN_DISAPPEAR,_WINS_WATCHERS_F3)
+@CHKFGOTO(FLG_MASTER_TLPT,_WINS_WATCHERS_F2)
+◆Ｔｅｓｓｉｅ　ｍａｙ　ｕｎｅｘｐｅｃｔｅｄｌｙ　ｂｅ　ｌｉｖｉｎｇ　ｉｎ　ｔｈｅ　ｗｏｏｄｓ．@KEY()↓
+◆Ｉ　ｐｅｒｓｏｎａｌｌｙ　ｔｈｉｎｋ　ｓｏ．
+@KEYNP()
+;jpn:◆いや　あの　タッシーは↓
+;jpn:　いがいと　もりのなかに↓
+;jpn:　いたりするんじゃないかと。@KEY()↓
+;jpn:◆わたし　かってに↓
+;jpn:　おもってるわけでして。@KEYNP()
+』
+
+;（↓タッシーが現れた後）
+◆Ｉ　ｈａｖｅ　ｎｏ　ｗｏｒｄｓ　ｔｏ　ｄｅｓｃｒｉｂｅ　ｍｙ　ｆｅｅｌｉｎｇ．
+;jpn:◆かんむりょうの↓
+;jpn:　ひとことです。
+@KEYNP()
+』
+_WINS_WATCHERS_F2;
+;（↓プー合流後）
+◆Ｔｅｓｓｉｅ　ａｐｐｅａｒｅｄ　ａｇａｉｎ　ｔｏｄａｙ　ａｎｄ　ｓｍｉｌｅｄ　ａｔ　ｍｅ．
+@KEYNP()
+;jpn:◆きょうも　タッシーが↓
+;jpn:　あらわれて　わたしに↓
+;jpn:　わらいかけてくれたんですよ。@KEYNP()
+』
+_WINS_WATCHERS_F3;誘拐中
+◆．．．Ｉｔ’ｓ　ｓｏ　ｓｈｏｃｋｉｎｇ．．．@WI(20)　　Ｈｅ　ｗａｓ　ｓｕｃｈ　ａ　ｇｒｅａｔ　ｇｕｙ．．．
+@KEYNP()
+;jpn:◆‥‥ショックです。@WI(30)↓
+;jpn:　いいやつ　だったのに‥‥。@KEYNP()
+』
+;-------------------------------------------------
+
+;012_A_1
+MSG_WINS_PUPIL_A;寄宿舎の生徒Ａ
+◆Ｉ　ｈｅａｒｄ　ａ　ｃｒｅａｔｕｒｅ　ｃａｌｌｅｄ　Ｔｅｓｓｉｅ　ｌｉｖｅｓ　ｉｎ　ｔｈｅ　ｓｏｕｔｈｅｒｎ　ｌａｋｅ．．．@KEY()↓
+◆Ｉ　ｄｏｎ’ｔ　ｂｅｌｉｅｖｅ　ｉｔ！@WI(20)　　Ｉ　ｔｈｉｎｋ　ｓｏｍｅｏｎｅ　ｍａｄｅ　ａ　ｍｏｄｅｌ　ａｎｄ　ｐｌａｃｅｄ　ｉｔ　ｉｎ　ｔｈｅ　ｌａｋｅ．
+@KEYNP()
+;jpn:◆あの　みなみの　みずうみに↓
+;jpn:　タッシーっていう　いきものが↓
+;jpn:　いるってはなし‥‥ねぇ。@KEY()↓
+;jpn:◆ぼくは　モケイのおもちゃが↓
+;jpn:　うかんでるだけの↓
+;jpn:　デッチあげ　だと　おもうな。@KEYNP()
+』
+MSG_WINS_PUPIL_B;012_A_2
+◆Ｉ　ｈｅａｒｄ　ａ　ｍｏｒｅ　ｉｎｔｅｒｅｓｔｉｎｇ　ｓｔｏｒｙ　ｔｈａｎ　ｔｈｅ　ｒｕｍｏｒ　ａｂｏｕｔ　Ｔｅｓｓｉｅ．@KEY()↓
+◆Ｉｔ’ｓ　ａｂｏｕｔ　ｔｈｅ　Ｂｉｇ　Ｆｏｏｔ　ｍｅｎ　ａｔ　Ｓｔｏｎｅｈｅｎｇｅ．@KEY()↓
+◆Ｍａｎｙ　ｃｌａｉｍ　ｔｏ　ｈａｖｅ　ａｃｔｕａｌｌｙ　ｓｅｅｎ　ｔｈｅｍ．
+@KEYNP()
+;jpn:◆タッシーの　うわさより↓
+;jpn:　すごいのは@KEY()↓
+;jpn:◆「ストーンヘンジ」の↓
+;jpn:　きょじんぞくの　はなしだよな。@KEY()↓
+;jpn:◆ほんとに　みたってひとが↓
+;jpn:　なんにんも　いるらしいよ。@KEYNP()
+』
+MSG_WINS_PUPIL_C;
+◆Ｉ　ｗｏｎｄｅｒ　ｉｆ　ｔｈｅ　ｒｕｍｏｒ　ｉｓ　ｔｒｕｅ@KEY()↓
+◆ｔｈａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　Ｓｔｏｎｅｈｅｎｇｅ　ｈａｓ　ａｎ　ｅｎｔｒａｎｃｅ　ｔｏ　ｓｏｍｅｐｌａｃｅ．@KEY()↓
+◆Ｓｏｍｅ　ｄａｙ，　ｗｅ　ｓｈｏｕｌｄ　ｃｈｅｃｋ　ｉｔ　ｏｕｔ．
+@KEYNP()
+;jpn:◆いちばん　しりたいのは↓
+;jpn:　「ストーンヘンジ」の↓
+;jpn:　ちゅうしんが@KEY()↓
+;jpn:◆どこかにつながる↓
+;jpn:　いりぐちだっていう　うわさかな。@KEY()↓
+;jpn:◆いつか　ぼくらで↓
+;jpn:　しらべてみたいもんだよねぇ。@KEYNP()
+』
+MSG_WINS_PUPIL_D;
+◆Ｉ’ｍ　ｓｌｅｅｐｙ．@KEY()↓
+◆Ｉ’ｌｌ　ｗａｓｈ　ｍｙ　ｆａｃｅ，　ｂｒｕｓｈ　ｍｙ　ｔｅｅｔｈ，　ｄｏ　ｍｙ　ｂｕｓｉｎｅｓｓ，　ａｎｄ　ｇｏ　ｔｏ　ｂｅｄ．
+@KEYNP()
+;jpn:◆おれ　ねむいよ。↓
+;jpn:　もう　おしっこして　ねようよ。@KEYNP()
+』
+
+MSG_WINS_PUPIL_E;012_B
+◆Ｉｆ　ｙｏｕ’ｒｅ　ｇｏｉｎｇ　ｏｕｔｓｉｄｅ，@WI(15)　ｓｔｏｐ　ｂｙ　ａｎｄ　ｓａｙ　ｈｉ　ｔｏ　Ｍａｘｗｅｌｌ　ｂｅｆｏｒｅ　ｙｏｕ　ｌｅａｖｅ．@KEY()↓
+◆Ｈｅ　ａｌｗａｙｓ　ｌｏｏｋｓ　ｏｕｔ　ｆｏｒ　ｔｈｅ　ｙｏｕｎｇｅｒ　ｓｔｕｄｅｎｔｓ．@KEY()↓
+◆Ｍａｘｗｅｌｌ　ｉｓ　ｓｔｉｌｌ　ｗｏｒｋｉｎｇ　ｈａｒｄ　ｉｎ　ｔｈｅ　ｌａｂ　ｄｏｗｎｓｔａｉｒｓ．@KEY()↓
+◆Ａｎｙｗａｙ，　ｔｈｅｓｅ　ｄａｙｓ　ｔｈｅｒｅ　ａｒｅ　ｍａｎｙ　ｄａｎｇｅｒｏｕｓ　ａｎｉｍａｌｓ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ　ｏｕｔｓｉｄｅ．
+@KEYNP()
+;◆@DSP_STS(STS_PC_NAME_JEFF)！@WI(15)↓
+;jpn:　がいしゅつするんだったら@KEY()↓
+;jpn:◆めんどうみのいい↓
+;jpn:　ガウスせんぱいに↓
+;jpn:　ほうこくしてから　いけよ。@KEY()↓
+;jpn:◆ガウスさん‥‥@WI(15)たしか↓
+;jpn:　まだ　したの　けんきゅうしつで↓
+;jpn:　がんばってるみたいだったから‥。@KEY()↓
+;jpn:◆とにかく　さいきん↓
+;jpn:　おもては　キケンなどうぶつが↓
+;jpn:　ウロウロしてるからな。@KEYNP()
+』
+
+MSG_WINS_PUPIL_F;＃テントの学生Ａ（ギーグ倒したら出ない）
+@CHKFGOTO(FLG_POLA_1,_WINS_PUPIL_F_B)
+◆Ｔｈｅ　ｔａｍｅ　ａｎｉｍａｌｓ　ｈａｖｅ　ｂｅｃｏｍｅ　ｗｉｌｄ．@WI(20)　　Ｓｏｍｅｔｈｉｎｇ　ｅｖｉｌ　ｉｓ　ｇｏｉｎｇ　ｏｎ．
+@KEYNP()
+;jpn:◆むかしは　おとなしかった↓
+;jpn:　どうぶつたちが↓
+;jpn:　あれくるってるんだ。@KEY()↓
+;jpn:◆なにか　イヤなことが↓
+;jpn:　おこってるんだろうな。@KEYNP()
+』
+_WINS_PUPIL_F_B;	ストーンヘンジ攻略後
+◆Ｏｕｔｓｉｄｅ　ｔｈｅｒｅ　ａｒｅ　ｍａｎｙ　ｍｏｎｓｔｅｒｓ　Ｉ’ｖｅ　ｎｅｖｅｒ　ｓｅｅｎ　ｂｅｆｏｒｅ．．．@KEY()↓
+◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ’ｓ　ｈａｐｐｅｎｉｎｇ．@KEY()↓
+◆Ｙｏｕ　ｓｈｏｕｌｄ　ｓｔａｙ　ｈｅｒｅ　ｗｈｅｒｅ　ｉｔ’ｓ　ｓａｆｅ．@WI(15)　　Ｗｅ　ｄｏｎ’ｔ　ｍｉｎｄ　ｉｆ　ｙｏｕ　ｓｔａｙ．
+@KEYNP()
+;jpn:◆そとには　みたこともない↓
+;jpn:　ばけものが　ウヨウヨ‥‥。@KEY()↓
+;jpn:◆いったい　なにが↓
+;jpn:　どうしちゃったんだ？！@KEY()↓
+;jpn:◆きみも　ずっとここに↓
+;jpn:　いたほうが　あんぜんだよ。↓
+;jpn:　ぼくらは　かまわないからさ。@KEYNP()
+』
+
+MSG_WINS_PUPIL_G;＃テントの学生Ｂ
+@CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_PUPIL_B_AFTER)
+◆Ｓｏ，　ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｒｅｓｔ　ｈｅｒｅ　ｆｏｒ　ａ　ｓｈｏｒｔ　ｗｈｉｌｅ．．．@WI(15)　　Ｈａｖｅ　ｓｏｍｅｔｈｉｎｇ　ｔｏ　ｄｒｉｎｋ，@KEY()↓
+◆ｐｅｒｈａｐｓ　ｓｏｍｅ　ｔｅａ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆とにかく　ここで　すこし↓
+;jpn:　やすんで　いけよ‥‥↓
+;jpn:　こうちゃでも　のんでさ。@KEY()↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_WINS_PUPIL_G_YES,_WINS_PUPIL_G_NO)
+_WINS_PUPIL_G_NO;
+』
+_WINS_PUPIL_G_YES;
+@CHKFGOTO(FLG_WINS_DAYBREAK,_PUPIL_B_YES_B)
+@SETF(FLG_HOTEL_PAPERBOY_APPEAR)
+@GOSUB(MSG_SUB_BGM_LIFEUP)
+@GOSUB(MSG_SUB_HOTEL_LIFEUP)
+@OPEN(1)
+◆Ａｒｅ　ｙｏｕ　ｆｅｅｌｉｎｇ　ｍｕｃｈ　ｂｅｔｔｅｒ　ｎｏｗ？@WI(20)　　Ｇｏｏｄ　ｌｕｃｋ．
+@KEYNP()
+;◆ねぐるしそうだったけど↓
+;jpn:◆つかれは　とれたかい？@WI(20)↓
+;jpn:　じゃ　がんばってな。@KEYNP()
+@CLOSEALL()
+
+』
+_PUPIL_B_YES_B;
+@GOSUB(MSG_GLOBAL_MYHOME)
+@WARP(WARP_WINS_TENT_FRIEND)
+@!
+
+_PUPIL_B_AFTER;
+◆Ａｒｅ　ｙｏｕ　ｆｅｅｌｉｎｇ　ｍｕｃｈ　ｂｅｔｔｅｒ　ｎｏｗ？@WI(20)　　Ｇｏｏｄ　ｌｕｃｋ．
+@KEYNP()
+;jpn:◆つかれは　とれたかい？@WI(20)↓
+;jpn:　じゃ　がんばってな。@KEYNP()
+@!
+;--------------------------------
+
+MSG_WINS_WATCHERS_G;013_D
+@CHKFGOTO(FLG_TLPT_FOUR,_WINS_WATCHERS_G_LATER)
+◆Ｔｈｅｒｅ’ｓ　ｓｏｍｅｔｈｉｎｇ．．．@KEY()↓
+◆ｓｏｕｔｈ　ｏｆ　ｔｈｅ　ｌａｋｅ．．．@KEY()↓
+◆ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｒｅｓｅａｒｃｈ　ｂｕｉｌｄｉｎｇ．
+@KEYNP()
+;jpn:◆みずうみの　みなみ‥‥↓
+;jpn:　はるかむこうに　なにか‥‥@KEY()↓
+;jpn:◆けんきゅうじょのような↓
+;jpn:　たてものが　みえますねぇ。@KEYNP()
+』
+_WINS_WATCHERS_G_LATER;
+◆Ｉｔ　ｉｓ　ｏｆ　ｃｏｕｒｓｅ，　ｓｏｍｅ　ｓｏｒｔ　ｏｆ　ｌａｂ　ｗｈｅｒｅ　ｔｈｅｙ　ｄｏ　ｓｏｍｅ　ｈｉｇｈ－ｌｅｖｅｌ　ｓｃｉｅｎｔｉｆｉｃ　ｒｅｓｅａｒｃｈ．@KEY()↓
+◆Ｉ　ｇｅｔ　ｔｈｅ　ｆｅｅｌｉｎｇ　ｔｈａｔ　ｉｔ　ｉｓ　ａ　ｖｅｒｙ　ｉｍｐｏｒｔａｎｔ　ｌａｂ．
+@KEYNP()
+;jpn:◆やっぱり　みずうみのむこうに↓
+;jpn:　みえたのは　なにかの↓
+;jpn:　けんきゅうじょなんですね。@KEY()↓
+;jpn:◆おれって　いいカンしてるなぁ。@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_WINS_LABO_MOUSE;研究所のマウス
+@CHKFGOTO(FLG_WIN_GANSEKIMAN,_WINS_LABO_MOUSE_AFTER)
+@CHKFGOTO(FLG_ITEM_KOKESHI,_WINS_LABO_MOUSE_LATER)
+◆Ｉ’ｖｅ　ｂｅｅｎ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆Ｍｙ　ｍａｓｔｅｒ，　Ａｐｐｌｅ　Ｋｉｄ　ｃｏｍｐｌｅｔｅｄ　ｔｈｉｓ　”Ｅｒａｓｅｒ　Ｅｒａｓｅｒ　Ｍａｃｈｉｎｅ．”@KEY()↓
+;コケシ入れ替え
+◆Ｗｈｉｌｅ　ｈｅ　ｗａｓ　ｃａｌｌｉｎｇ　ｙｏｕ，　ｈｅ　ｗａｓ　ｋｉｄｎａｐｐｅｄ．@WI(20)　　Ｈｅ　ｆｅｌｔ　ｌｉｋｅ　ｔｈｉｓ．．．！@WI(5)！@WI(5)！@WI(5)！@WI(5)！@KEY()↓
+◆Ｉ　ｗａｓ　ｔｈｅｒｅ，　ｂｕｔ　ｗａｓ　ｈｅｌｐｌｅｓｓ．@WI(15)　　Ｓｏｒｒｙ　ａｂｏｕｔ　ｔｈａｔ．@KEY()↓
+◆Ａｎｙｗａｙ，　ｔａｋｅ　ｔｈｉｓ　ｍａｃｈｉｎｅ．@KEY()↓
+;jpn:◆あんたがたを　まっていたんだ。@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆わがはいの　しゅじんの↓
+;jpn:　アップルキッドが@KEY()↓
+;jpn:◆この　「こけしけしマシン」を↓
+;jpn:　かんせいさせて↓
+;jpn:　あんたがたに　でんわしてるとき@KEY()↓
+;jpn:◆！@WI(10)！@WI(10)！@WI(10)！@WI(10)！@WI(10)‥‥というぐあいに↓;音
+;jpn:　ゆうかいされてしまった。@KEY()↓
+;jpn:◆わがはいは　みていたが↓
+;jpn:　なにを　することも↓
+;jpn:　できなかった。@KEY()↓
+;jpn:◆‥‥@WI(20)ふがいなくて　スマン。@KEY()↓
+;jpn:◆とにかく　この↓
+;jpn:　「こけしけしマシン」を↓
+;jpn:　もっていってくれ。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_WINS_LABO_MOUSE_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_KEY_KOKESHIKESHI)
+@GOSUB(MSG_SUB_GETGOODS_S)
+@KEYNP()
+@SETF(FLG_ITEM_KOKESHI)
+』
+_WINS_LABO_MOUSE_ITEMFULL;荷物一杯
+◆Ｉ　ｔｈｉｎｋ　ｔｈｉｓ　ｉｓ　ａｎ　ｉｍｐｏｒｔａｎｔ　ｉｔｅｍ．@KEY()↓
+◆Ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ　ｙｏｕ　ｄｏｎ’ｔ　ｎｅｅｄ，　ａｎｄ　ｃｏｍｅ　ｂａｃｋ　ｆｏｒ　ｉｔ．
+@KEYNP()
+;jpn:◆なにか　だいじなものだとおもう。↓
+;jpn:　いらない　にもつを　せいりして↓
+;jpn:　もっていってくれ。@KEYNP()
+』
+_WINS_LABO_MOUSE_LATER;
+◆Ｗａｙ　ｔｏ　ｇｏ．
+@KEYNP()
+;jpn:◆いやはや‥‥。@KEYNP()
+』
+_WINS_LABO_MOUSE_AFTER;
+◆Ｉ’ｖｅ　ｂｅｅｎ　ｔａｋｉｎｇ　ｃａｒｅ　ｏｆ　ｔｈｉｓ　ｐｌａｃｅ　ｗｈｉｌｅ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆Ｉ　ｎｏ　ｌｏｎｇｅｒ　ｎｅｅｄ　ｔｏ　ｓｔａｙ，　ｓｉｎｃｅ　ｙｏｕ　ｈａｖｅ　ａｒｒｉｖｅｄ．．．@KEY()↓
+◆Ｉ’ｌｌ　ｌｅａｖｅ　ｆｏｒ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ　ａｓ　ｑｕｉｅｔ　ａｓ　ａ　ｍｏｕｓｅ．
+@KEYNP()
+;jpn:◆あんたがたが↓
+;jpn:　またくるとおもって↓
+;jpn:　しばらく　るすばんを　しとった。@KEY()↓
+;jpn:◆あえたから　もう　いいか‥‥@KEY()↓
+;jpn:◆わがはいも　マウスなりの↓
+;jpn:　どくじの　ほうほうで@KEY()↓
+;jpn:◆サターンバレーに↓
+;jpn:　いくことに　しよう。@KEYNP()
+@CLRF(FLG_WINS_LABO_MOUSE_APPEAR)
+』
+
+MSG_DOSEI_MOUSE;ギーグを倒した後ようやくサターンバレーに出現
+◆Ｉｔ　ｗａｓ　ｉｎ　Ｗｉｎｔｅｒｓ　ｔｈａｔ　ｗｅ　ｌａｓｔ　ｍｅｔ？@KEY()↓
+◆Ｉ　ｊｕｓｔ　ｇｏｔ　ｈｅｒｅ．　　Ｔｅｅ　ｔｅｅ　ｔｅｅ．
+@KEYNP()
+;jpn:◆このまえ　あったのは↓
+;jpn:　ウィンターズだったかのう‥‥@KEY()↓
+;jpn:◆さっき　やっと↓
+;jpn:　わがはいもここに↓
+;jpn:　ついたところじゃ。@KEY()↓
+;jpn:◆いやはや‥‥。@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_WINS_KANAI;
+@CHKFGOTO(FLG_WIN_GIEGU,_WINS_KANAI_END)
+@CHKFGOTO(FLG_WINS_TASS_BMONKEY_APPEAR,_WINS_KANAI_LATER)
+;（主人はアンドーナッツ博士の研究所に行っております。
+;動物実験にでもされてやしないかと心配で‥‥）
+◆Ｋｙｉ　ｋｙａ　ｋｉｋｏ　ｋｒｅｅ．@KEY()↓
+◆（Ｉ　ｓａｗ　ｙｏｕ　ｏｎｃｅ　ｂｅｆｏｒｅ　ｊｕｓｔ　ｆｏｒ　ａ　ｓｅｃｏｎｄ．．．　　Ｙｏｕ　ｋｎｏｗ　ｍｙ　ｆｉａｎｃｅｅ．）@KEY()↓
+◆Ｋｏｏ　ｋｙａ　ｋｅｋｅ↓
+　　（Ｍｙ　ｆｉａｎｃｅｅ　ｌｏｖｅｓ　ｔｏ　ｃｈｅｗ　ｇｕｍ．@KEY()↓
+◆Ｈｅ　ｗｅｎｔ　ｔｏ　ｖｉｓｉｔ　Ｄｒ．　Ａｎｄｏｎｕｔｓ’　ｌａｂ．．．@WI(15)　ｂｕｔ　ｈｅ　ｈａｓｎ’ｔ　ｒｅｔｕｒｎｅｄ　ｙｅｔ．）@KEY()↓
+◆Ｋｙｅ　ｋｏｋｏ　ｋｉｋｋｙａ　ｋｅｋｒａ，↓
+　　（Ｉ　ｗａｎｔ　ｔｏ　ｇｏ　ｔｈｅｒｅ　ｓｏ　Ｉ　ｃａｎ　ｇｅｔ　ｈｉｍ　ｈｏｍｅ，@KEY()↓
+◆ｂｕｔ　ｗｉｔｈｏｕｔ　ｈｉｍ，　Ｉ　ｃａｎ’ｔ　ｃｒｏｓｓ　Ｌａｋｅ　Ｔｅｓｓ．）@KEY()↓
+◆Ｋｒｉ　ｋｅｋｋｏ　ｋｙａ　ｋｏ@KEY()↓
+◆（Ｉ’ｍ　ｒｅａｌｌｙ　ｗｏｒｒｉｅｄ　ｔｈａｔ　ｔｈｅ　ｍａｄ　ｄｏｃｔｏｒ　ｗｉｌｌ　ｕｓｅ　ｈｉｍ　ｉｎ　ａ　ｃｒａｓｈ　ｔｅｓｔ．）
+@KEYNP()
+;jpn:◆キャイ　キャイ↓
+;jpn:　（これは　これは‥‥↓
+;jpn:　わたし　いぜん　いっしゅんだけ@KEY()↓
+;jpn:◆とうじょうした↓
+;jpn:　サルの　おんなのコ‥‥↓
+;jpn:　カナイと　もうします）@KEY()↓
+;jpn:◆キャキャ　キャッキャ↓
+;jpn:　（ガムずきの　カレが@KEY()↓
+;jpn:◆アンドーナッツはかせの↓
+;jpn:　けんきゅうじょに　いって‥‥@KEY()↓
+;jpn:◆なかなか　かえって↓
+;jpn:　こないんですの）@KEY()↓
+;jpn:◆キャキャン　キャッキャ↓
+;jpn:　（むかえに　いきたくても↓
+;jpn:　カレが　いないと@KEY()↓
+;jpn:◆タスこが　わたれないし‥‥）@KEY()↓
+;jpn:◆キャンン　キャキャ　キャンン↓
+;jpn:　（あの　ヘンな　はかせに↓
+;jpn:　どうぶつじっけんの@KEY()↓
+;jpn:◆モルモットにでもされてやしないか↓
+;jpn:　しんぱいで‥‥）@KEYNP()
+』
+_WINS_KANAI_LATER;
+◆Ｋｕ　ｋｙｏ　ｋｉｋａ．@KEY()↓
+◆（Ｉｔ’ｓ　ｍｅ　ａｇａｉｎ，　ｔｈａｔ　ｃｈｅｗｉｎｇ　ｇｕｍ　ｍｏｎｋｅｙ’ｓ　ｗｉｆｅ．）@KEY()↓
+◆Ｋａｋｏ　ｋｙｕｋａ　ｋｒｅ．@KEY()↓
+◆（Ｍｙ　ｈｕｓｂａｎｄ　ｌｅｆｔ　ｍｅ　ｈｅｒｅ　ｔｏ　ｇｏ　ｐｌａｙ　ｗｉｔｈ　Ｔｅｓｓｉｅ　ａｌｏｎｇ　ｔｈｅ　ｓｈｏｒｅｓ　ｏｆ　Ｌａｋｅ　Ｔｅｓｓ．）
+@KEYNP()
+;jpn:◆キー　キャッキャ↓
+;jpn:　（カナイでございます）@KEY()↓
+;jpn:◆キー　キー　キー↓
+;jpn:　（しゅじんは　わたしをおいて↓
+;jpn:　タスこの　ほとりで@KEY()↓
+;jpn:◆タッシーのり　をして↓
+;jpn:　あそんでるんですの。まーったく）@KEYNP()
+』
+_WINS_KANAI_END;＆
+◆Ｋｙａｋｋｒｏ　ｋｉ　ｋｙｏｋｋｅ↓
+　　（Ａｈ，　@DSP_NAME(PC_NESS)，@KEY()↓
+◆ｍｙ　ｈｕｓｂａｎｄ　ｈａｓ　ｂｅｅｎ　ｒｅｔｕｒｎｉｎｇ　ｈｏｍｅ　ｌａｔｅ　ｔｈｅｓｅ　ｄａｙｓ．@WI(20)　　Ｈｅ　ｓａｙｓ　ｈｅ’ｓ　ｂｕｓｙ．）@KEY()↓
+◆Ｋｙａ．@KEY()↓
+◆（Ｉ　ｋｎｏｗ　ｈｅ’ｓ　ｏｕｔ　ｓａｖｉｎｇ　ｔｈｅ　ｅａｒｔｈ，　ｂｕｔ　ａ　ｍａｒｒｉａｇｅ　ｉｓ　ａｌｓｏ　ｉｍｐｏｒｔａｎｔ．）
+@KEYNP()
+;jpn:◆キンキリキン　キーキー↓
+;jpn:　（まあ　@DSP_STS(STS_PC_NAME_NES)さん@KEY()↓
+;jpn:◆このごろ　しごとが↓
+;jpn:　いそがしいとかって@KEY()↓
+;jpn:◆しゅじんの　かえりが↓
+;jpn:　おそいんですの）@KEY()↓
+;jpn:◆キーキキキー↓
+;jpn:　（ちきゅうのききも↓
+;jpn:　いいですけど@KEY()↓
+;jpn:◆かていを　たいせつにして↓
+;jpn:　くれなくちゃね）@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_EVT_WINS_LABO_KANAI;サル（家内）
+@OPEN(1)
+◆Ｋｅｋｙｅ　ｋｏｏ　ｋｉｋｋｒｏ↓
+　　（Ｔｈａｎｋｓ　ｆｏｒ　ｔａｋｉｎｇ　ｃａｒｅ　ｏｆ　ｍｙ　ｈｕｓｂａｎｄ　ｔｈｅ　ｏｔｈｅｒ　ｄａｙ．．．）@KEY()↓
+◆（Ｏｈ　ｙｅｓ，　ｗｅ　ｆｉｎａｌｌｙ　ｔｉｅｄ　ｔｈｅ　ｋｎｏｔ．．．）@KEY()↓
+;jpn:◆キャ　キャーン↓
+;jpn:　（いつぞやは　しゅじんが↓
+;jpn:　おせわになりまして‥‥）@KEY()↓
+;jpn:◆キャッ　キャン↓
+;jpn:　（あ　わたしたち‥‥@WI(30)↓
+;jpn:　けっこんしたんですの）@KEY()↓
+@CLOSEALL()
+@WI(30)
+@SET_CHAR_DIR(PRSN_WINS_LABO_1F_C,DIR_M_DOWN)
+@WI(30)
+@OPEN(1)
+◆Ｋｏｏｋｉ　ｋｅｋｙｅ　ｋｉ！@KEY()↓
+◆（Ｈｏｎｅｙ，　ｄｏｎ’ｔ　ｊｕｓｔ　ｓｔａｎｄ　ｔｈｅｒｅ　ｗｉｔｈ　ｙｏｕｒ　ｍｏｕｔｈ　ｏｐｅｎ，　ｓａｙ　ｈｅｌｌｏ！）@KEY()
+;jpn:◆キャキュ　キャキュ！↓
+;jpn:　（あんた。ぐずぐずしてないで↓
+;jpn:　ごあいさつなさい！）@KEY()
+@CLOSEALL()
+』
+MSG_EVT_WINS_LABO_BMONKEY;バルーンモンキー
+@SET_CHAR_DIR(PRSN_WINS_LABO_1F_C,DIR_M_UP)
+@OPEN(1)
+◆Ｋｒｉｋｋｏ　ｋｙａｋｙａ↓
+　　（Ｓｏ．．．）@KEY()↓
+◆Ｋｅｋｒｏｏ　ｋｙａｋｉ↓
+　　（Ｙｏｕ　ｐａｓｓｅｄ　ｂｙ　ａ　ｃａｖｅ　ｎｏｒｔｈ　ｏｆ　Ｓｔｏｎｅｈｅｎｇｅ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｅｖｅｒ　ｗｏｎｄｅｒ　ｗｈａｔ’ｓ　ｉｎｓｉｄｅ？）@KEY()↓
+◆Ｋｉｋｋｙｏ　ｋｕｋｒｕ　ｋｉ↓
+　　（Ｃａｎ’ｔ　ｓｅｅｍ　ｔｏ　ｓｔｏｐ　ｔｈｉｎｋｉｎｇ　ａｂｏｕｔ　ｉｔ！）@KEY()↓
+◆Ｋｅｋｅ　ｋｉｋｅ↓
+　　（Ｇｏ　ａｎｄ　ｓｅｅ　ｗｈａｔ’ｓ　ｔｈｅｒｅ！）@KEY()↓
+◆Ｋｙｏｋｅ　ｋｙａｋｒｏｏ　ｋｏｏ↓
+　　（Ｗｅ’ｒｅ　ｇｏｉｎｇ　ｔｏ　ｇｅｔ　ｏｕｔ　ｏｆ　ｈｅｒｅ．@KEY()↓
+◆Ｗｅ’ｒｅ　ｓｔｉｌｌ　ｎｅｗｌｙｗｅｄｓ，　ｙｏｕ　ｋｎｏｗ．．．@WI(20)　　Ｂｙｅ－ｂｙｅ！）
+@KEYNP()
+;jpn:◆キャッ　キャ↓
+;jpn:　（そんなわけで‥‥）@KEY()↓
+;jpn:◆キャキャキャーン　キャ↓
+;jpn:　（まえに　とおりかかった↓
+;jpn:　あの　ストーンヘンジのきたの@KEY()↓
+;jpn:◆どうくつが　きにならないか？）@KEY()↓
+;jpn:◆キャキャ！↓
+;jpn:　（オレは　きになる！）@KEY()↓
+;jpn:◆キャキャ　キャ！↓
+;jpn:　（ぜひ　いって‥‥↓
+;jpn:　なんなんだか　みてきてくれ！）@KEY()↓
+;jpn:◆キャッキー！↓
+;jpn:　（じゃ　おれたちは↓
+;jpn:　しんこんさん　なんで@KEY()↓
+;jpn:◆これで　しつれいするよ。↓
+;jpn:　バイバイ！）@KEY()
+@CLOSEALL()
+@CLRF(FLG_WINS_LABO_MONKEY_APPEAR)
+』
+;-------------------------------------------------
+
+MSG_WINS_PUPIL_H;ウィンターズ寄宿舎の一室に
+;周囲にクッキー入りのプレゼント箱を、最大10ケ配置したい
+@CHKFGOTO(FLG_BOX_WINS_DORM_2_COOKIE1,_WINS_PUPIL_H_AFTER)
+@CHKFGOTO(FLG_BOX_WINS_DORM_2_COOKIE2,_WINS_PUPIL_H_AFTER)
+@CHKFGOTO(FLG_BOX_WINS_DORM_2_COOKIE3,_WINS_PUPIL_H_AFTER)
+@CHKFGOTO(FLG_BOX_WINS_DORM_2_COOKIE4,_WINS_PUPIL_H_AFTER)
+@CHKFGOTO(FLG_BOX_WINS_DORM_2_COOKIE5,_WINS_PUPIL_H_AFTER)
+@CHKFGOTO(FLG_BOX_WINS_DORM_2_COOKIE6,_WINS_PUPIL_H_AFTER)
+@CHKFGOTO(FLG_BOX_WINS_DORM_2_COOKIE7,_WINS_PUPIL_H_AFTER)
+◆Ｉ’ｍ　ｓｏ　ｓｌｅｅｐｙ．@WI(20)　　Ｔｏｎｙ’ｓ　ｂｉｒｔｈｄａｙ　ｐａｒｔｙ　ｉｓ　ｔｏｍｏｒｒｏｗ．@KEY()↓
+◆Ｉ　ｈａｎｄ　ｄｅｃｏｒａｔｅｄ　ｅａｃｈ　ｃｏｏｋｉｅ　ｔｏ　ｐａｓｓ　ｏｕｔ　ａｔ　ｔｈｅ　ｐａｒｔｙ　ｔｏｍｏｒｒｏｗ．
+@KEYNP()
+;jpn:◆あー　ねむい。@WI(20)↓
+;jpn:　あしたは　トニーの↓
+;jpn:　おたんじょうかいだろ？@KEY()↓
+;jpn:◆だから　みんなに　くばる↓
+;jpn:　クッキーを　ひとつずつ↓
+;jpn:　こころをこめて　つつんでたんだ。@KEYNP()
+』
+_WINS_PUPIL_H_AFTER;プレゼントを開けてしまったら
+◆@DSP_NAME(PC_JEFF)，@WI(15)　Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　ｙｏｕ　ｃｏｕｌｄ　ｄｏ　ｓｏｍｅｔｈｉｎｇ　ｓｏ　ｎａｓｔｙ．．．
+@KEYNP()
+;jpn:◆きょうの　@DSP_STS(STS_PC_NAME_JEFF)は↓
+;jpn:　ずいぶん　ひどいことを↓
+;jpn:　するんだな。@KEYNP()
+』
+;-----------------------------------------------
+
+MSG_WINS_RECOVER;研究所での回復機能
+◆Ｉｎｓｔａｎｔ　Ｒｅｖｉｔａｌｉｚｉｎｇ　Ｄｅｖｉｃｅ@KEY()↓
+◆（Ｉｎ　ｏｎｌｙ　ａ　ｆｅｗ　ｓｅｃｏｎｄｓ，　ｔｈｉｓ　ｍａｃｈｉｎｅ　ｆｕｌｌｙ　ｒｅｖｉｔａｌｉｚｅｓ　ｙｏｕ，@KEY()↓
+◆ｊｕｓｔ　ｌｉｋｅ　ａ　ｇｏｏｄ　ｎｉｇｈｔ’ｓ　ｓｌｅｅｐ．）
+@KEY()
+;jpn:◆「インスタント　エナジーマシン」@WI(30)↓
+;jpn:　（これは　しゅんかんにして@KEY()↓
+;jpn:◆いっぱく　しゅくはくしたくらいの↓
+;jpn:　エナジーを　かいふくできる↓
+;jpn:　マシーンである）@KEY()
+@GOSUB(MSG_SUB_ALLHEAL_POWR)
+@BGMSTART(0,BGM_lifeup)
+@WI(200)
+@MUSISTART()
+』
+;-----------------------------------------------
+
+MSG_WINS_CAPSULE_ANDONUT;
+;カプセルから解放されたアンドーナッツ博士
+◆Ｓｉｎｃｅ　ｏｕｒ　ｉｍｐｒｉｓｏｎｍｅｎｔ　ｉｓ　ｎｏｗ　ｏｖｅｒ，@KEY()↓
+◆Ｉ　ｗａｎｔ　ｔｏ　ｓｔａｒｔ　ｏｎ　ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ　ａｓ　ｓｏｏｎ　ａｓ　ｐｏｓｓｉｂｌｅ．@KEY()↓
+◆．．．Ｏｈ，　Ｉ　ａｌｍｏｓｔ　ｆｏｒｇｏｔ　ｔｏ　ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｗｏｒｒｙ　ａｂｏｕｔ　ｕｓ．@WI(15)　　Ｙｏｕ’ｖｅ　ｇｏｔ　ｉｍｐｏｒｔａｎｔ　ｔｈｉｎｇｓ　ｔｏ　ｄｏ．．．
+@KEYNP()
+;jpn:◆さらわれただの↓
+;jpn:　たすかっただのは↓
+;jpn:　もう　かこのことだ。@KEY()↓
+;jpn:◆わたしは　すぐにでも↓
+;jpn:　スペーストンネルの↓
+;jpn:　かいはつに　かかりたい。@KEY()↓
+;jpn:◆‥‥あ@WI(15)　おれいくらいは↓
+;jpn:　いわなくてはな。@KEY()↓
+;jpn:◆ありがとう。@KEY()↓
+;jpn:◆さあ　ここは　わたしたちに↓
+;jpn:　まかせて　はやく　ゆきなさい。@KEYNP()
+@CLRF(FLG_WINS_ESCAPE_MOUSE_NG);解放された博士たちと話すまではネズミ禁止
+』
+;-----------------------------------------------
+
+MSG_WINS_GAUS_END;＆ガウスさん（金網ごし？）
+◆@DSP_NAME(PC_JEFF)　ｊｕｓｔ　ｃａｌｌｅｄ．@WI(20)　　Ｈｅ’ｓ　ｗｉｔｈ　Ｄｒ．　Ａｎｄｏｎｕｔｓ．@KEY()↓
+◆Ｔｈｅ　ｔｗｏ　ｏｆ　ｔｈｅｍ　ｍａｙ　ｂｅ　ａｂｌｅ　ｔｏ　ｄｅｖｅｌｏｐ　ａ　ｎｅｗ　ｓｃｉｅｎｔｉｆｉｃ　ｔｈｅｏｒｙ．@KEY()↓
+◆Ｙｏｕ’ｖｅ　ｈｅｌｐｅｄ　ｍａｋｅ　ａ　ｂｅａｕｔｉｆｕｌ　ｌｉｆｅ　ｆｏｒ　ｅｖｅｒｙｏｎｅ．．．
+@KEYNP()
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)から　でんわがきて↓
+;jpn:　アンドーナッツはかせと↓
+;jpn:　いっしょにいるってさ。@KEY()↓
+;jpn:◆あのふたりなら　なにか↓
+;jpn:　あたらしい　りろんを↓
+;jpn:　うみだすかもしれない。@KEY()↓
+;jpn:◆ほんとに　きみたちの↓
+;jpn:　かつやくは　みんなのために↓
+;jpn:　なったとおもうよ‥‥。@KEYNP()
+』
+
+MSG_WINS_TONY_END;＆トニー
+◆．．．@DSP_NAME(PC_JEFF)　ｄｏｅｓｎ’ｔ　ｃａｌｌ　ｍｅ．@KEY()↓
+◆Ｍａｙｂｅ　ｈｅ　ｔｈｉｎｋｓ　Ｉ’ｍ　ｔｏｏ　ａｎｎｏｙｉｎｇ．．．@KEY()↓
+◆Ｂｕｔ　Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｓｏ．@KEY()↓
+◆@DSP_NAME(PC_NESS)，　ｄｉｄ　ｙｏｕ　ｔｅｌｌ　ｈｉｍ　ｎｏｔ　ｔｏ　ｃａｌｌ　ｍｅ？@KEY()↓
+◆．．．Ｎｏ，　Ｉ　ｋｎｏｗ　ｙｏｕ　ｗｏｕｌｄｎ’ｔ　ｄｏ　ｔｈａｔ．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｓｅｅ　@DSP_NAME(PC_JEFF)，@WI(15)　ｐｌｅａｓｅ，@WI(15)　ｐｌｅａｓｅ　ａｓｋ　ｈｉｍ　ｔｏ　ｃａｌｌ　Ｔｏｎｙ．　　Ｔｈａｎｋｓ！
+@KEYNP()
+;jpn:◆‥‥@DSP_STS(STS_PC_NAME_JEFF)　ぼくには↓
+;jpn:　でんわを　くれないんだ。@KEY()↓
+;jpn:◆ぼくのこと　しつこいって↓
+;jpn:　おもってるのかなぁ‥‥。@KEY()↓
+;jpn:◆そんなんじゃ　ないのに。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)　まさか　きみが↓
+;jpn:　でんわを　とめてるんじゃ↓
+;jpn:　ないだろうね？@KEY()↓
+;jpn:◆そんなやつじゃないってことは↓
+;jpn:　‥‥わかるけど。@KEY()↓
+;jpn:◆もし　@DSP_STS(STS_PC_NAME_JEFF)にあったら↓
+;jpn:　トニーにでんわしろよって↓
+;jpn:　いってね。@WI(20)　たのむよ。@KEYNP()
+』
+;-----------------------------------------------
+
+MSG_WINS_STARMAN;基地のスターマンのセリフ
+@OPEN(1)
+◆Ｙｏｕ’ｒｅ　ｍｕｃｈ　ｓｔｒｏｎｇｅｒ　＊ｗｈｉｒｒｒ＊　ｔｈａｎ　ｏｕｒ　ｉｎｔｅｌｌｉｇｅｎｃｅ　ｉｎｄｉｃａｔｅｄ．．．@KEY()↓
+◆Ｗｅ　ｗｅｒｅ　ｎｏｔ　＊ｂｅｅｐ＊　ｐｒｅｐａｒｅｄ　ｆｏｒ　ｔｈａｔ　ｅｖｅｎｔｕａｌｉｔｙ．．．@KEY()↓
+◆Ｔｈｅ　Ｐｒｏｐｈｅｃｙ　ｆｒｏｍ　ｔｈｅ　＊ｃｌｉｃｋ＊　Ａｐｐｌｅ　ｏｆ　Ｅｎｌｉｇｈｔｅｎｍｅｎｔ　ｍａｙ　ｂｅ　ｔｒｕｅ．．．@KEY()↓
+◆ｂｕｔ　ｙｏｕ　ｍｕｓｔ　ｎｏｔ　＊ｗｈｉｒｒｒ＊　ｕｎｄｅｒｅｓｔｉｍａｔｅ　ｕｓ．
+@KEY()
+;jpn:◆ホウコクデ　キイテイタヨリ↓
+;jpn:　ズット　テゴワイ　コドモダ。@WI(20)↓
+;jpn:　‥‥ユダンシタ。@KEY()↓
+;jpn:◆「ちえのリンゴ」ノ　ヨゲンハ↓
+;jpn:　‥‥タダシイノカモ　シレナイ。@KEY()↓
+;jpn:◆シカシ　ワタシタチヲ↓
+;jpn:　アマクミルナヨ@KEY()
+@CLOSEALL()
+』
+;-------------------------------------------------
+
+MSG_WINS_CHECK_DRUG;
+◆（Ｄｒｕｇ　Ｓｔｏｒｅ　”Ｂｅｓｔ　Ｆｒｉｅｎｄ”）
+@KEYNP()
+;jpn:◆ドラッグショップ↓
+;jpn:　「ベストフレンド」@KEYNP()
+』
+;-------------------------------------------------
+;	added 0717
+;■ストーンヘンジで確実にアップルキッドと会えるように■■■■■■■■■■■■■■
+;
+;　カプセルの中に捕われた人々がいることを、もっとわかってもらうための新設定。
+;カプセルに向かって「はなす」と出るメッセージ。
+
+
+;（おにいさん用）
+MSG_WINS_CAPSULE_IN_B;
+◆＊Ｂｌｏｏｐ＊　＊Ｇｌｕｂ＊↓
+　　Ｃａｎ’ｔ．．．@WI(15)　ｌａｓｔ．．．@WI(15)　ｍｕｃｈ．．．@WI(15)　ｌｏｎｇｅｒ．．．
+;jpn:◆も　@WI(20)もう（ブクブク）@WI(20)だめ‥‥。
+@KEYNP()
+』
+
+
+;（アップルキッド用）
+MSG_WINS_CAPSULE_IN_APPLE;
+◆Ｎｅｘｔ　＊Ｂｌｏｏｐ＊@WI(20)↓
+　　Ｎｅｘｔ　＊Ｂｌｏｏｐ＊@WI(15)
+　　Ｒｏｏｍ．．．
+;jpn:◆となり（ブクブク）‥‥↓
+;jpn:　@WI(20)となりの（ブクブク）‥‥↓
+;jpn:　@WI(20)へ@WI(20)や‥‥
+@KEYNP()
+』
+
+
+;（モヒカン用）
+MSG_WINS_CAPSULE_IN_A;
+◆＊Ｇｌｕｂ＊　．．．ｃａｎ’ｔ　ｂｒｅａｔｈｅ．．．
+;jpn:◆く@WI(20)（ブクブク）@WI(20)くるし‥‥。
+@KEYNP()
+』
+
+
+;（どせいさん用）
+MSG_WINS_CAPSULE_IN_DOSEI;
+@FONTBAKA()
+◆Ｋａｙ－ｏ．@WI(15)　　Ｃａｎ　ｂｒｅａｔｈｅ．．．@KEY()↓
+◆＊Ｂｌｏｏｐ＊@WI(15)　＊Ｂｌｏｏｐ＊@WI(15)　＊Ｂｌｏｏｐ＊@WI(30)↓
+　　Ｏｈ，　ｎｏ！
+;jpn:◆へーき↓
+;jpn:　いき　できる。↓
+;jpn:　@WI(40)でも　@WI(10)あああ。
+@FONTSTD()
+@KEYNP()
+』
+
+
+;（トニー用）
+MSG_WINS_CAPSULE_IN_TONY;
+◆Ｏｈ，　ｎｏ．．．　＊Ｂｌｏｏｐ＊　＊Ｇｌｕｂ＊@WI(20)↓
+　　Ｃａｎ’ｔ　ｓｅｅ　ａｎｙｔｈｉｎｇ．．．@KEY()↓
+◆＊Ｂｌｏｏｐ＊　＊Ｇｌｕｂ＊↓
+　　@DSP_NAME(PC_JEFF)！．．．@WI(15)　＊Ｂｌｏｏｐ＊．．．
+◆Ｗｈｅｒｅ．．．@WI(15)　ｉｓ．．．@WI(15)　@DSP_NAME(PC_JEFF)．．．
+　　＊Ｂｌｏｏｐ＊
+;jpn:◆もう（ブクブク）@WI(20)なにも↓
+;jpn:　@WI(20)み　@WI(20)みえないよ（ブクブク）‥‥↓
+;jpn:　@WI(30)@DSP_NAME(PC_JEFF)@WI(10)は　@WI(10)ど　@WI(10)こ‥‥。
+@KEYNP()
+』
+;-------------------------------------------------

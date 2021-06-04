@@ -1,0 +1,1729 @@
+;-----------------------------------------------
+;・"どせいさん数字"で「バカフォント状態での数字使用箇所」が検索可能
+;　他ファイルにも使用箇所あり。変更時には注意/上野
+
+
+;@Habitat:土星さん谷／土星さん宿屋／土星さん宿屋
+;@Person:宿主土星さん
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_HOTEL
+MSG_DOSEI_HOTEL;@MiuraAppended
+;◆おやすみなさい。@KEY()
+;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
+@FONTBAKA()
+@CHKFGOTO(FLG_TEMP_9,_DOSEI_HOTEL_TMP)
+◆Ｄｏ　ｙｏｕ　ｗａｎｔ↓
+　ｓｌｕｍｂｅｒ？↓
+;jpn:◆とまれるよん。↓
+@FONTSTD()
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:<とまる><とまらない>
+@DSP_ITEM(2)
+@SELGOTO(_DOSEI_HOTEL_YES,_DOSEI_HOTEL_NO)
+_DOSEI_HOTEL_NO;
+@FONTBAKA()
+◆Ｋａｙ－ｏ．
+;jpn:◆そうかよーん。
+@KEYNP()
+@FONTSTD()
+』
+_DOSEI_HOTEL_YES;
+@FONTBAKA()
+◆Ｋａｙ－ｏ．
+;jpn:◆そうかよーん。
+@KEY()
+@CLOSEALL()
+@FONTSTD()
+;@GOSUB(MSG_GLOBAL_MYHOME)
+@GOSUB(MSG_SUB_SYUKUHAKU)
+@GOSUB(MSG_SUB_HOTEL_LIFEUP)
+@WARP(WARP_HOTEL_DOSEI)
+;@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
+@SETF(FLG_TEMP_9);セリフ替え用
+』
+_DOSEI_HOTEL_TMP;宿泊後
+◆Ｈｅａｌｔｈｆｕｌ↓
+　　ａｎｄ　ｄａｎｄｙ！
+;jpn:◆げんき　げんき。
+@KEYNP()
+@FONTSTD()
+』
+
+;----------------------------------------
+;@Habitat:土星さん谷／土星さん宿屋／土星さん宿屋
+;@Person:電話
+;@Figure:電話
+;@AppearanceKey:0
+;@ActionScript:＊固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+；----------------------------------------
+;@Habitat:土星さん谷／土星さん医者／土星さん医者
+;@Person:医者土星さん
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_HOSPITAL
+MSG_DOSEI_HOSPITAL;@MiuraAppended
+;◆なおしましょう。@KEY()
+@GOSUB(MSG_DOCTOR_DOSEI)
+』
+
+；----------------------------------------
+;@Habitat:土星さん谷／土星さん道具屋／土星さん道具屋
+;@Person:道具屋土星さん
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:
+;@Message:MSG_DOSEI_SHOP
+MSG_DOSEI_SHOP;@MiuraAppended
+;◆いらっしゃいです。@KEY()
+@GOSUB(MSG_SHOP_DOSEI_BAKA)
+』
+
+；----------------------------------------
+;@Habitat:土星さん谷／フィールド／土星さんに始めて会うような位置
+;@Person:土星さん１
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_1
+MSG_DOSEI_1;
+;土星からの移民らしい。地球の人間の尺度で
+;はかると「バカみたい」なのだが、卓越した科学力と
+;直感を持っているらしい。
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_A)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_1_LATER)
+◆Ｗｅ　ｆｅｅｌ↓
+　　ｇｒｏｏｖｅ！@KEY()↓
+◆Ｈｉ　ｈｏ．↓
+　　Ｍｅ↓
+　　Ｍｒ．　Ｓａｔｕｒｎ．@KEY()↓
+◆Ｔｈｉｓ　ｐｌａｃｅ，↓
+　　ａｌｌ　ａｒｅ↓
+　　Ｍｒ．　Ｓａｔｕｒｎ．
+;jpn:◆ぼくらは　いつも↓
+;jpn:　げんきですけど↓
+;jpn:　こんにちは。@KEY()↓
+;jpn:◆じぶんは↓
+;jpn:　どせいさんと↓
+;jpn:　いうものですよ。@KEY()↓
+;jpn:◆ここは　みんな↓
+;jpn:　どせいさん↓
+;jpn:　なんです。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_1_LATER;
+◆Ｉｍｐｒｅｓｓｅｄ！@KEY()↓
+◆Ｓｏｍｅｄａｙ，↓
+　　Ｓｏｍｅｔｉｍｅ↓
+　　Ｗｅ　ｈｅｌｐ　ｙｏｕ．
+;jpn:◆すごいや。↓
+;jpn:　ぼくらは　いつか↓
+;jpn:　おれいするです。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_END_A;＃どせいさんＡ
+◆Ｉ　ｄｏ↓
+　　Ｗｈａｔ　Ｉ　ｓａｙ．．．↓
+　　Ｃｒｏｓｓ　ｈｅａｒｔ．．．
+;jpn:◆やるときゃ　やる。
+@KEYNP()
+@FONTSTD()
+』
+
+
+;@Habitat:土星さん谷／フィールド／適当な所
+;@Person:土星さん２
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_2
+MSG_DOSEI_2;
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_B)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_2_LATER)
+◆Ｏｎｃｅ　ｕｐｏｎ
+　　ａ　ｔｉｍｅ，@KEY()↓
+◆ｗｅ　ｗｅｒｅ↓
+　　ｍａｎｙ，　ｍａｎｙ．@KEY()↓
+◆Ｅｖｅｒｙｄａｙ，↓
+　　ｓｌｏｗｌｙ@KEY()↓
+◆ａｒｅ↓
+　　ｌｅｓｓ，　ｌｅｓｓ．@KEY()↓
+◆Ｗｈｙ？　　Ｈｍｍｍｍ．．．↓
+　　Ｂｏｉｎｇ！
+;jpn:◆むかしは　ぼくら↓
+;jpn:　いっぱいいたのに↓
+;jpn:　‥‥のに。@KEY()↓
+;jpn:◆まいにち↓
+;jpn:　だんだん↓
+;jpn:　へってるらしい。@KEY()↓
+;jpn:◆どしてだろ？↓
+;jpn:　？　プー。↓
+;jpn:　あらあら。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_2_LATER;
+◆Ｄｅｌｉｃｉｏｕｓ．↓
+;jpn:◆やったね。↓
+@GET_ORDER_PLAYER(1)
+@XCHG()
+　　@DSP_NAME(0)！@KEY()↓
+◆Ｙｏｕ↓
+　　ｇｏｏｄ　ｎａｍｅ．@KEY()↓
+;jpn:いいなまえだね。@KEY()↓
+◆Ｗｅ　ｎｏ　ｎａｍｅ！↓
+　　Ｂｏｉｎｇ！@KEY()↓
+◆．．．Ａｌｌ　ｈａｖｅ↓
+　　ｓａｍｅ　ｎａｍｅ！
+;jpn:◆ぼくたち　なまえ↓
+;jpn:　ないんだよ。↓
+;jpn:　みんな　おなじ。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_END_B;＃
+◆Ｚｏｏｍ！
+;jpn:◆ふー。
+@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:土星さん谷／フィールド／温泉近く
+;@Person:土星さん３
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_3
+MSG_DOSEI_3;
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_C)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_3_LATER)
+◆Ｈｏｔ　ｓｐｒｉｎｇｓ↓
+　　ｍａｋｅ　ｈａｐｐｙ．．．！@KEY()↓
+◆Ｈａｐｐｙ　ｈａｐｐｙ！↓
+　　Ｄｉｎｇ　ｄｉｎｇ！@KEY()↓
+◆Ｊｕｍｐ　ｉｎ↓
+　　ｈｏｔ　ｓｐｒｉｎｇ！
+;jpn:◆おんせんに↓
+;jpn:　はいると↓
+;jpn:　うれしいぞ！@KEY()↓
+;jpn:◆うれしいぞ！↓
+;jpn:　おんせんに↓
+;jpn:　はいると。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_3_LATER;
+@CHKF(FLG_DOSEI_ONSEN_GERO)@FALSE_GOTO(_DOSEI_END_C)
+◆Ｇｏ　ｉｎ　ｈｏｔ↓
+　　ｓｐｒｉｎｇ．@KEY()↓
+◆Ｗａｓｈ↓
+　　ｂａｒｆ　ｏｆｆ↓
+　　ｙｏｕ　ｂｏｄｙ！
+;jpn:◆おんせんに↓
+;jpn:　はいって↓
+;jpn:　からだについた@KEY()↓
+;jpn:◆ゲロを　おとせ。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_END_C;＃
+◆Ｓｗｅｅｔ　ｆｒｅｓｈ↓
+　　ｆｅｅｌ．
+;jpn:◆えーなー。
+@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:土星さん谷／フィールド／適当な所
+;@Person:土星さん４
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_4_GOODS
+MSG_DOSEI_4;
+MSG_DOSEI_4_GOODS;
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_D)
+;◆あなた　わたし↓
+;　すこしにている。@KEY()↓
+;◆たからもの↓
+;　やります。↓
+;　だから。@KEY()↓
+;◆かえりに↓
+;　やるので↓
+;　いま　やらない。@KEY()↓
+;◆またなー！@KEY()
+;@FONTSTD()
+;』
+
+;_DOSEI_4_LATER;
+;◆「ラブのくすり」↓
+;　「ほん」↓
+;　「くわがたむし」@KEY()↓
+;◆あげましょう。@KEY()
+;@SUB(SUB_GET_BAKAITEM)
+;@FONTSTD()
+;』
+
+;_DOSEI_4_LATER2;
+;◆あげるもの↓
+;　もう　ない↓
+;　ざんねん。@KEY()
+;@FONTSTD()
+;』
+
+@CHKFGOTO(FLG_DOSEI_GOODS3,_DOSEI_4_GOODSEND)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_4_LATER)
+◆Ｗｅ　ｌｏｏｋ↓
+　　ｌｉｋｅ　ｓａｍｅ！@KEY()↓
+◆Ｉ　ｇｉｖｅ　ｙｏｕ↓
+　　ｓｐｅｃｉａｌ↓
+　　ｔｈｉｎｇ．@KEY()↓
+◆Ｎｏｔ　ｎｏｗ，↓
+　　Ｚｏｏｍ！@KEY()↓
+◆Ｉ　ｇｉｖｅ　ｙｏｕ↓
+　　ｏｎ　ｔｈｅ　ｗａｙ↓
+　　ｂａｃｋ，ｂｏｉｎｇ！@KEY()↓
+◆Ｂｙｅ　ｌａｔｅｒ！
+;jpn:◆あなた　わたし↓
+;jpn:　すこしにている。@KEY()↓
+;jpn:◆たからもの↓
+;jpn:　やります。↓
+;jpn:　だから。@KEY()↓
+;jpn:◆かえりに↓
+;jpn:　やるので↓
+;jpn:　いま　やらない。@KEY()↓
+;jpn:◆またなー！
+@GOTO(_DOSEI_4_END)
+
+_DOSEI_4_LATER;
+◆Ｈｅｒｅ　ｉｓ↓
+　　ｐｒｅｓｅｎｔ．@KEY()↓
+;jpn:◆ものを　あげます。@KEY()↓
+_DOSEI_4_LTR_GOODS;
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_DOSEI_4_LATER_GOODSFULL)
+@SAVE_REG()
+@CHKFGOTO(FLG_DOSEI_GOODS2,_DOSEI_4_GOODS3)
+@CHKFGOTO(FLG_DOSEI_GOODS1,_DOSEI_4_GOODS2)
+@LOAD_REG()
+@GOODSIN_PLAYER(0,GDS_TOOL_LIFE_HORN_E)
+@GET_PLAYER_GOODS(0,0)
+@SETF(FLG_DOSEI_GOODS1)
+←
+◆Ｉ　ｈａｎｄ　ｙｏｕ↓
+　　@DSP_GOODS(0)．
+;◆@DSP_GOODS(0)↓
+;jpn:　あげます。
+@KEY()
+@SE(SE_se74_my_get)
+@GOTO(_DOSEI_4_LTR_GOODS)
+_DOSEI_4_GOODS2;
+@LOAD_REG()
+@GOODSIN_PLAYER(0,GDS_EQUIP_COIN_DOSEI)
+@GET_PLAYER_GOODS(0,0)
+@SETF(FLG_DOSEI_GOODS2)
+←
+◆Ｉ　ｈａｎｄ　ｙｏｕ↓
+　　@DSP_GOODS(0)．
+;◆@DSP_GOODS(0)↓
+;jpn:　あげます
+@KEY()
+@SE(SE_se74_my_get)
+@GOTO(_DOSEI_4_LTR_GOODS)
+_DOSEI_4_GOODS3;
+@LOAD_REG()
+@GOODSIN_PLAYER(0,GDS_TOOL_KUWAGATA)
+@GET_PLAYER_GOODS(0,0)
+@SETF(FLG_DOSEI_GOODS3)
+←
+◆Ｉ　ｎｏ　ｈａｎｄ　ｙｏｕ↓
+　　ｍｙ↓
+　　@DSP_GOODS(0)．．．@KEY()↓
+◆Ｏｈ！↓
+　　Ｔｅａｓｅ　ｙｏｕ！
+◆@DSP_GOODS(0)↓
+;jpn:　あげません。↓
+;jpn:　うそです。
+@KEY()
+@SE(SE_se74_my_get)
+_DOSEI_4_GOODSEND;
+←
+◆Ｉ　ｈａｖｅ　ｎｏ↓
+　　ｓｏｍｅｔｈｉｎｇ．
+;jpn:◆もうないです。
+@FONTSTD()
+@KEYNP()
+@!
+
+_DOSEI_4_LATER_GOODSFULL;
+←
+◆Ｙｏｕ　ｎｏ　ｒｏｏｍ．↓
+　　Ｂｙｅ　ｌａｔｅｒ！@KEY()↓
+;jpn:◆もちもの　いっぱい。↓
+;jpn:　さようなら。
+_DOSEI_4_END;
+@FONTSTD()
+@KEYNP()
+@!
+
+_DOSEI_END_D;＠ユーリカ！（三浦）
+◆Ｅｕｒｅｋａ！↓
+　　Ｄｉｎｇ！@KEYNP()
+;jpn:◆ユーレイカ！@KEYNP()
+@FONTSTD()
+』
+
+
+;@Habitat:土星さん谷／フィールド／適当な所
+;@Person:土星さん５
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_5
+MSG_DOSEI_5;
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_E)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_5_LATER)
+◆Ｓｃａｒｙ，　ｓｃａｒｙ↓
+　　ｇｕｙ，　ｂｏｉｎｇ！@KEY()↓
+◆Ｇｒａｐｅｆｒｕｉｔ↓
+　　Ｆａｌｌｓ！@KEY()↓
+◆Ｓｃａｒｙ，　ｓｉｃｋ，↓
+　　ｂａｒｆｙ．．．@KEY()↓
+◆Ｇｏ　ａｎｄ．．．↓
+　　ｌａ　ｌａ　ｌａ！@KEY()↓
+◆Ｄｉｎｇ！↓
+　　Ｓｃａｒｙ！
+;jpn:◆グレープフルーツ↓
+;jpn:　のたきには↓
+;jpn:　こわいやつ‥‥@KEY()↓
+;jpn:◆こわいぞう！↓
+;jpn:　こわくてピー↓
+;jpn:　きもちわるい。@KEY()↓
+;jpn:◆いくと　ラララ↓
+;jpn:　こわいよう！
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_5_LATER;
+◆Ｎｏ　ｓｃａｒｅｄ．
+;jpn:◆もう　こわくない。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_END_E;＃
+◆Ｍａｋｅ↓
+　ｎｅｗ　ｔｈｉｎｇ！@KEY()↓
+◆Ｍｕｓｔ　ｍａｋｅ！↓
+　　Ｄａｄｄｙ！↓
+　　Ｂｏｉｎｇ！
+;jpn:◆はつめいは↓
+;jpn:　ひつようの　パパ。
+@KEYNP()
+@FONTSTD()
+』
+
+
+;@Habitat:土星さん谷／フィールド／適当な所
+;@Person:土星さん６
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_6
+MSG_DOSEI_6;
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_F)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_6_LATER)
+◆Ｌｏｔｓ　ｏｆ↓
+　　ｆｒｉｅｎｄｓ．．．@KEY()↓
+◆Ｔａｋｅｎ↓
+　　ｂｅｈｉｎｄ　ｆａｌｌｓ．．．@KEY()↓
+◆Ｗｈｙ？　　Ｗｈｙ？↓
+　　Ｂｏｉｎｇ！
+;jpn:◆ともだちたくさん↓
+;jpn:　たきの　むこうへ↓
+;jpn:　さらわれた。@KEY()↓
+;jpn:◆どうして　さらう。↓
+;jpn:　ブー　ブー！
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_6_LATER;
+◆Ａｌｌ　ｈｏｍｅ！↓
+　　Ｚｏｏｍ！
+;jpn:◆みんな　かえって↓
+;jpn:　きたよ　ブーブー。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_END_F;＃
+◆Ｄａｋｏｔａ！
+;jpn:◆ぐんまけん！
+@KEYNP()
+@FONTSTD()
+』
+;＆＠
+◆Ｃｈａｔｔａｎｏｏｇａ！
+;jpn:◆とっとりけん！
+@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:土星さん谷／フィールド／適当な所
+;@Person:土星さん７
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_7
+MSG_DOSEI_7;
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_GIEGU,_DOSEI_G_END)
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_G)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_7_LATER)
+◆Ｔｈｒｅｅｄ　ｉｓ↓
+　　ｚｏｍｂｉｅ　ｆｕｌｌ！@KEY()↓
+◆Ｉ　ｓａｗ！↓
+　　Ｂａｄ　ｓｔｉｎｋ↓
+　　ｂｅｈｉｎｄ　ｆａｌｌｓ！@KEY()↓
+◆Ｚｏｏｍ！
+;jpn:◆スリークのまちに↓
+;jpn:　ゾンビはこんでる。↓
+;jpn:　ぼくは　みた。@KEY()↓
+;jpn:◆たきの　むこう↓
+;jpn:　わるいやつ　だ。↓
+;jpn:　ポエーン。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_7_LATER;
+◆Ａｐｐｒｅｃｉａｔｅ！
+;jpn:◆かんしゃ。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_END_G;＃
+◆Ｄａｎｃｅ　ｉｓ　ｏｖｅｒ．．．
+;jpn:◆ダンスがスンダ。
+@KEYNP()
+@FONTSTD()
+』
+_DOSEI_G_END;＆
+◆Ｈｅａｌｔｈｆｕｌｌ！
+;jpn:◆げんき！
+@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:土星さん谷／フィールド／適当な所
+;@Person:土星さん８（秘密基地情報）
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_8
+MSG_DOSEI_8;＠３分待つのは自分（三浦）
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_GIEGU,_DOSEI_8_END)
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_8_LATER)
+◆Ｂａｓｅ．．．ｓｅｃｒｅｔ．@KEY()↓
+◆Ｂａｓｅ　ｂｅｈｉｎｄ↓
+　　Ｇｒａｐｅｆｒｕｉｔ↓
+　　Ｆａｌｌｓ．@KEY()↓
+◆Ｐａｓｓｗｏｒｄ？↓
+　　Ｉ　ｔｅｌｌ．@KEY()↓
+◆Ｂｅｌｃｈ　ｍａｎ
+　　ｓａｙ@KEY()↓
+◆”Ｓａｙ↓
+　　ｐａｓｓｗｏｒｄ．”@KEY()↓
+◆Ｔｈｅｎ↓
+　　ｓｔａｎｄ　ｓｔｉｌｌ，@KEY()↓
+◆ｗａｉｔ　ｆｏｒ↓
+　　ｔｈｒｅｅ↓
+　　ｍｉｎｕｔｅｓ．
+;jpn:◆ひみつきち　ある↓
+;jpn:　ぐれぷふるつのたき↓
+;jpn:　の　ところ。@KEY()↓
+;jpn:◆あいことば↓
+;jpn:　しってる　わし。@KEY()↓
+;jpn:◆ゲップーの　こぶん↓
+;jpn:　「あいことばを　いえ」↓
+;jpn:　と　いう。@KEY()↓
+;jpn:◆そしたら↓
+;jpn:　そのまま　だまって↓
+;jpn:　３　ぷん　まつんだ。
+;どせいさん数字
+@SE(SE_se72);あやしい音
+@WI( 120 )
+@KEYNP()
+@SETF(FLG_DOSEI_SECRETCODE)
+@FONTSTD()
+』
+
+_DOSEI_8_LATER;＃
+;合言葉を教えてくれた土星さん８
+◆Ｙｏｕ　ｗａｉｔ　ｔｈｒｅｅ↓
+　　ｍｉｎｕｔｅｓ！@KEY()↓
+◆Ｚｏｏｍ！@KEY()↓
+◆Ｙｏｕ　ｃｏｍｅ↓
+　　ｈｅｒｅ　ｔｏ↓
+　　ｗａｉｔ@KEY()↓
+◆ｔｈｒｅｅ↓
+　　ｍｉｎｕｔｅｓ？↓
+　　Ｎｏ？
+;jpn:◆３　ぷん　まって　よかったな。@KEY()↓	;どせいさん数字
+;jpn:◆また　３　ぷん　まちに↓			;どせいさん数字
+;jpn:　きたか。↓
+;jpn:　そうでもないか。
+@KEYNP()
+@FONTSTD()
+』
+_DOSEI_8_END;＆
+◆Ｉ　ｗｉｓｈ↓
+　　ｆａｌｌ　ｉｎ↓
+　　ｌｏｖｅ．．．
+;jpn:◆こいをしたい。
+@KEYNP()
+@FONTSTD()
+』
+
+
+;@Habitat:土星さん谷／フィールド／テーブル
+;@Person:コーヒータイム
+;@Figure:土星さん
+;@AppearanceKey:0
+;@ActionScript:＊東を向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DPFT_CAFE
+MSG_GPFT_CAFE;
+@FONTBAKA()
+◆Ｄｒｉｎｋ　ｃｏｆｆｅｅ↓
+　　ｂｅｆｏｒｅ　ｇｏ？@KEY()↓
+◆Ｓａｙ　ｙｅｓ↓
+　　ｔｏ　ｍｅ？@KEY()↓
+◆Ｓａｙ　ｎｏ↓
+　　ｔｏ　ｍｅ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆コーヒーを↓
+;jpn:　のんでって↓
+;jpn:　ください。@KEY()↓
+;jpn:◆はいですか？↓
+;jpn:　いいえですか？↓
+@FONTSTD()
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_GPFT_DOSEICAFE_YES,_GPFT_DOSEICAFE_NO)
+
+_GPFT_DOSEICAFE_NO;
+@FONTBAKA()
+◆Ｗｈｙ　ｙｏｕ↓
+　　ｓａｙ　ｎｏ？
+;jpn:◆たまには↓
+;jpn:　いいじゃ↓
+;jpn:　ありませんか。
+@KEYNP()
+@FONTSTD()
+』
+
+_GPFT_DOSEICAFE_YES;
+@FONTBAKA()
+◆Ｂｏｔｔｏｍｓ　ｕｐ！↓
+　　Ｂｏｉｎｇ！
+;jpn:◆どうぞです。
+@KEYNP()
+@FONTSTD()
+@CLOSEALL()
+_GPFT_DOSEICAFE_MAIN;
+@CHKFGOTO(FLG_TLPT_DKFD,MSG_END)
+@GOSUB(MSG_SUB_BGM_FADEOUT_05SECOND);＄
+@BGMSTART(0,BGM_time)
+@FUNC(1)
+;@GOSUB(MSG_COFFEETIME)
+;@GOSUB(MSG_SUB_BGM_CHANGE_1)
+』
+
+;MSG_COFFEETIME;
+;←
+;◆おもえば　とおく　きたものだ。↓
+;　@DSP_STS(STS_PC_NAME_NES)‥‥きみが↓
+;　この　ながく　まがりくねった↓
+;　ぼうけんのたびじを↓
+;　あゆむようになったのは↓
+;　あの　さいあくの　りんじん‥‥↓
+;　ポーキーの　ノックのおとが↓
+;　きっかけだった。↓
+;@WI(60)↓
+;　しかし↓
+;　きみは　あるきつづけ↓
+;　かんがえつづけ↓
+;　たたかいつづけてきた。↓
+;　ゆうきを　うしなわず↓
+;　なんども　きずつきながら↓
+;　かくじつに↓
+;　つよくなってきた。↓
+;@WI(60)↓
+;　しかも　もう　きみは↓
+;　ひとりじゃない。↓
+;　かわいくて　やさしい↓
+;　しっかりものの@DSP_STS(STS_PC_NAME_PAULA)も↓
+;　うんめいに　ひきよせられるように↓
+;　とおいくにから↓
+;　かけつけてくれた↓
+;　きよわだが　きれものの↓
+;　@DSP_STS(STS_PC_NAME_JEFF)も　いる。↓
+;@WI(60)↓
+;　どうやら　@DSP_STS(STS_PC_NAME_NES)↓
+;　きみは　なにか　とてもおおきな↓
+;　うんめいを　せおった↓
+;　しょうねんのようだ。↓
+;@WI(60)↓
+;　これからさきの　たびも↓
+;　いままでいじょうに↓
+;　ながく　くるしいものに↓
+;　なるだろう。↓
+;　でも↓
+;　きみなら　だいじょうぶだ。↓
+;@WI(60)↓
+;　ただしいものと↓
+;　ただしくないものとが　いて↓
+;　それが　たたかったとして‥‥↓
+;　ただしいものが　まけると↓
+;　きみは　おもうかね。↓
+;@WI(60)↓
+;　けっして　うしなっては↓
+;　ならないのは　ゆうきだ。↓
+;　ゆうきは　さいごのしょうりを↓
+;　しんじることから　うまれる。↓
+;　くるしいことも　つらいことも↓
+;　まだまだ　たくさん↓
+;　あるだろうが↓
+;　そんなことを　たのしむくらいの↓
+;　ユーモアも　もっているのが↓
+;　きみたちだ。↓
+;@WI(60)↓
+;　コーヒーをのみおえたら↓
+;　また　ぼうけんは　はじまる。↓
+;　‥‥こうだいな　さばくをぬけて↓
+;　だいとかいフォーサイドへと↓
+;　きみたちは　むかう。↓
+;@WI(60)↓
+;　@DSP_STS(STS_PC_NAME_NES)↓
+;　@DSP_STS(STS_PC_NAME_PAULA)↓
+;　@DSP_STS(STS_PC_NAME_JEFF)↓
+;　きみたちに　いつも↓
+;　こううんのめがみが↓
+;　ほほえみかけて　くれるように‥。@KEYNP()
+;』
+
+
+;@Habitat:土星さん谷／フィールド／(ゲップーを倒した後)適当な位置
+;@Person:開放後の土星さんＡ
+;@Figure:土星さん
+;@AppearanceKey:FLG_WIN_GEPPU/on
+;@ActionScript:＊小範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_A
+MSG_DOSEI_A;
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_A_LATER)
+◆Ｗｈｙ？　　Ｗｈｙ？@KEY()↓
+◆Ｙｏｕ　ｎｏ↓
+　　ｇｏ　ｔｏ↓
+　　ｈｏｔ　ｓｐｒｉｎｇｓ．．．@KEY()↓
+◆Ｂｏｏ　ｂｏｏ’ｓ．
+;jpn:◆どーして　おんせんに↓
+;jpn:　いけないのかなー。@WI(30)↓
+;jpn:　ぶーぶー。
+@KEYNP()
+』
+_DOSEI_A_LATER;
+◆Ａｐｐｒｅｃｉａｔｅ！@KEY()↓
+◆Ｉ　ｓｏ　ｈａｐｐｙ，↓
+　　ｈａｐｐｙ，　ｈａｐｐｙ．．．↓
+　　Ｚｏｏｍ！
+;jpn:◆おかげさまで↓
+;jpn:　ランランランだ。
+@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:土星さん谷／フィールド／(ゲップーを倒した後)適当な位置
+;@Person:開放後の土星さんＢ
+;@Figure:土星さん
+;@AppearanceKey:FLG_WIN_GEPPU/on
+;@ActionScript:＊小範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_B
+MSG_DOSEI_B;
+@FONTBAKA()
+◆Ｏｈ！　　Ｏｈ！↓
+　　＊ｗｈｅｅｚｅ＊@KEY()↓
+◆Ｂｒｅａｔｈｅ　ｉｓ↓
+　　ｓｏｏｏｏｏ↓
+　　ｇｏｏｄ！
+;jpn:◆いきてて　よかった。↓
+;jpn:　よーーかったーー。
+@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:土星さん谷／フィールド／(ゲップーを倒した後)適当な位置
+;@Person:開放後の土星さんＣ
+;@Figure:土星さん
+;@AppearanceKey:FLG_WIN_GEPPU/on
+;@ActionScript:＊小範囲あわて
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_C
+MSG_DOSEI_C;
+@FONTBAKA()
+◆Ｉ　ｔｈｉｎｋ↓
+　　ｎｅｗ　ｔｈｉｎｇｓ．．．@KEY()↓
+◆Ｄｉｆｆｉｃｕｌｔ↓
+　　ｔｈｉｎｇｓ．．．↓
+　　ｆｒｏｍ　ｎｏｗ．．．
+;jpn:◆なんか　むつかしいことを↓
+;jpn:　かんがえよう。↓
+;jpn:　これからの　ぼくは。
+@KEYNP()
+@FONTSTD()
+』
+
+;@Habitat:土星さん谷／フィールド／広場
+;@Person:アップルキッド
+;@Figure:有望青年Ｂ
+;@AppearanceKey:FLG_CAPSULE_OK/on
+;@ActionScript:＊正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_APPLE
+MSG_DOSEI_APPLE;@MiuraAdapted
+@CHKFGOTO(FLG_WIN_GIEGU,_DOSEI_END_APPLEKID_LATER)
+@CHKFGOTO(FLG_XYZ_OK,_DOSEI_END_APPLEKID_2)
+@CHKFGOTO(FLG_INFO_XYZ,_DOSEI_APPLE_LATER)
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_APPLEKID)
+;@CHKFGOTO(FLG_TEMP_1,_DOSEI_APPLE_LATER)
+;@CHKFGOTO(FLG_ITEM_MUKUCHI,_DOSEI_APPLE_LATER)
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆Ａｈ，　@DSP_NAME(0)．@KEY()↓
+;jpn:◆あ　@DSP_NAME(0)さん。@KEY()↓
+;jpn::　せかいはひろいですねえ‥‥え？@KEY()↓
+;：@CHKFGOTO(FLG_LIBRARY_INFO_MUKUCHI,_DOSEI_APPLE_BOOK)
+;jpn::◆むくちをなおすほん　ですか？@KEY()↓
+;jpn::◆そのほんなら↓
+;jpn::　オネットの　としょかんに↓
+;jpn::　あったはずです。@KEYNP()
+;：@SETF(FLG_TEMP_1)
+;：』
+;：_ＤＯＳＥＩ_ＡＰＰＬＥ_ＢＯＯＫ
+;jpn::◆むくちをなおすほんを　ぼくが？@KEY()↓
+;jpn::◆ほんとうだ。うっかりしてました。↓
+;jpn::　どうぞ。‥‥またがしは↓
+;jpn::　いけないんですけどね。@KEYNP()
+;：@Q_GOODSFULL(PC_ALL)
+;：@FALSE_GOTO(_DOSEI_APPLE_ITEMFULL)
+;：@GOODSIN_PLAYER(0,GDS_TOOL_BOOK_CHAT)
+;：@GOSUB(MSG_SUB_GETGOODS_S)
+;jpn::@SETF(FLG_ITEM_MUKUCHI)図書館で？
+;：@KEYNP()
+;：』
+;_DOSEI_APPLE_ITEMFULL;
+;@KEY()
+;←
+;◆おっと　にもつのバッグに↓
+;　はいりきれませんね。@KEY()↓
+;◆にもつを　へらしてから↓
+;　また　きてください。@KEYNP()
+;』
+;
+_DOSEI_APPLE_LATER;
+◆Ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ　ｗｉｌｌ　ｃｅｒｔａｉｎｌｙ　ｂｅ　ｃｏｍｐｌｅｔｅｄ　ｓｏｍｅｄａｙ，@KEY()↓
+◆ｉｎ　ｍｙ　ｈｕｍｂｌｅ　ｏｐｉｎｉｏｎ．
+;jpn:◆スペーストンネルは↓
+;jpn:　きっと　かんせいする。@WI(20)↓
+;jpn:　ぼくはそうおもうんですよ。
+@KEYNP()
+』
+
+_DOSEI_END_APPLEKID;
+◆Ｅｘｃｅｌｌｅｎｔ，　ｅｘｃｅｌｌｅｎｔ！↓
+　　Ｅｖｅｒｙｔｈｉｎｇ　ｐｒｏｃｅｅｄｅｄ　ａｓ　ｐｌａｎｎｅｄ．@KEY()↓
+◆Ｄｒ．　Ａｎｄｏｎｕｔｓ，　Ｍｒ．　Ｓａｔｕｒｎ　ａｎｄ　Ｉ　ｗｏｒｋｅｄ　ｔｏｇｅｔｈｅｒ@KEY()↓
+◆ａｎｄ　ｆｉｎａｌｌｙ　ｃｏｍｐｌｅｔｅｄ　ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ．@KEY()↓
+◆Ｔｈｅ　ｐｕｒｐｏｓｅ　ｏｆ　ｔｈｅ　ｄｅｖｉｃｅ　ｉｓ　ｔｏ　ｅｎａｂｌｅ　Ｉｎｓｔａｎｔａｎｅｏｕｓ　ｔｒａｖｅｌ@KEY()↓
+◆ｔｈｒｏｕｇｈ　ｓｐａｃｅ　ａｎｄ　ｔｉｍｅ．@KEY()↓
+◆Ｉｎ　ｔｈｉｓ　ｐｒｏｔｏｔｙｐｅ，　ｙｏｕ　ｃａｎ　ｏｎｌｙ　ｔｒａｖｅｌ　ｔｏ　ｄｉｆｆｅｒｅｎｔ　ｐｏｉｎｔｓ@KEY()↓
+◆ｗｉｔｈｉｎ　ｉｎ　ｔｈｅ　ｓａｍｅ　ｔｉｍｅ　ｐｅｒｉｏｄ．@KEY()↓
+◆Ｉｔ　ｉｓ　ａｂｌｅ，　ｈｏｗｅｖｅｒ，　ｔｏ　ｓｅａｒｃｈ　ｏｕｔ　ｔｈｅ　ｌｏｃａｔｉｏｎｓ　ｏｆ　ｅｎｅｍｉｅｓ．@KEY()↓
+◆Ｒｉｇｈｔ　ｎｏｗ，　ｉｔ　ｉｓ　ｉｎｄｉｃａｔｉｎｇ　ｔｈｅ　ｐｒｅｓｅｎｃｅ　ｏｆ　ｅｎｅｍｉｅｓ　ｉｎ　ｔｈｅ　Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ！
+;jpn:◆よかった。@WI(15)よていどおりだ！@WI(20)↓
+;jpn:　ぼくと　アンドーナッツはかせと↓
+;jpn:　どせいさんたちとで@KEY()↓
+;jpn:◆ついに「スペーストンネル」を↓
+;jpn:　かんせいさせたんです。@KEY()↓
+;jpn:◆これは↓
+;jpn:　「じくうかん・しゅんかん・↓
+;jpn:　いどうそうち」なんです。@KEY()↓
+;jpn:◆でも@WI(10)　まだ　くうかんいどうが↓
+;jpn:　できるだけの　じょうたいですが↓
+;jpn:　てきのいるばしょを@KEY()↓
+;jpn:◆サーチします。@WI(20)↓
+;jpn:　それがどうやら@WI(10)　でんせつの↓
+;jpn:　ちていたいりくを@WI(10)　しめして@KEY()↓
+;jpn:◆‥‥‥いるんです！
+@KEYNP()
+』
+_DOSEI_END_APPLEKID_2;
+@CHKFGOTO(FLG_DAY_AFTER,_DOSEI_APPLE_LATER)
+@GOTO(_DOSEI_END_APPLEKID)
+
+_DOSEI_END_APPLEKID_LATER;＆
+◆Ｔｈｅ　ｃｈａｎｃｅ　ｏｆ　Ｇｉｙｇａｓ　ｇａｉｎｉｎｇ　ｖｉｃｔｏｒｙ　ｗｉｔｈ　ｈｉｓ　ｍｏｎｓｔｒｏｕｓ　ｐｌａｎ　ｉｓ　９９％．@KEY()↓
+◆Ｈｏｗｅｖｅｒ，　ｙｏｕｒ　ｃｏｕｒａｇｅ　ｈａｓ　ｐｒｏｄｕｃｅｄ　ａ　１％　ｃｈａｎｃｅ　ｔｈａｔ　Ｇｉｙｇａｓ　ｆａｉｌｓ．@KEY()↓
+◆Ｉ　ｍｕｓｔ　ｔｒｙ　ｔｏ　ｃｏｍｅ　ｔｏ　ａ　ｄｅｅｐｅｒ　ｕｎｄｅｒｓｔａｎｄｉｎｇ　ｏｆ　ｔｈｉｓ　ｔｒａｉｔ　ｃａｌｌｅｄ　”ｃｏｕｒａｇｅ．”
+;jpn:◆‥‥ギーグとの　たたかいは↓
+;jpn:　かくりつてきには↓
+;jpn:　９９パーセント　やぶれる@KEY()↓
+;jpn:◆ということだったんですが‥‥@KEY()↓
+;jpn:◆あなたがたの　ゆうきが↓
+;jpn:　１パーセントの　すきまを↓
+;jpn:　こじあけたんですね。@KEY()↓
+;jpn:◆ぼくも　にんげんの↓
+;jpn:　「ゆうき」とかについて↓
+;jpn:　もっと　しりたくなった‥‥。
+@KEYNP()
+』
+
+
+;@Habitat:土星さん谷／フィールド／広場
+;@Person:アンドーナツ博士
+;@Figure:アンドーナッツ博士
+;@AppearanceKey:FLG_PU/on
+;@ActionScript:＊小範囲あわて
+;@GoodsMessage:MSG_EVENT_XYZ_ANDONUT_RECEIVE
+;@CheckMessage:0
+;@Message:MSG_DOSEI_ANDONUT_0
+MSG_DOSEI_ANDONUT_0;
+@CHKFGOTO(FLG_WIN_GIEGU,MSG_DKFD_END_ANDONUT_4)
+@CHKFGOTO(FLG_DOSEI_INFO_EQUIP,_DOSEI_END_ANDONUT_GOGO)
+@CHKFGOTO(FLG_XYZ_OK,MSG_DOSEI_END_ANDONUT_GO)
+@CHKFGOTO(FLG_INFO_XYZ,_DOSEI_END_ANDONUT_XYZINFO)
+◆Ｙａｈａｈ！　　Ｔｈｅ　Ｍｒ．　Ｓａｔｕｒｎｓ　ａｒｅ　ｉｎｃｒｅｄｉｂｌｅ　ｆｏｌｋ．@KEY()↓
+◆Ａｎｄ　ｙｏｕ，　Ａｐｐｌｅ　ｍ’ｂｏｙ．．．Ｙｏｕ　ａｒｅ　ａ　ｍｏｓｔ　ｅｘｃｅｐｔｉｏｎａｌ　ｙｏｕｎｇ　ｍａｎ，@KEY()↓
+◆ｖｅｒｙ　ｄｉｆｆｅｒｅｎｔ　ｆｒｏｍ　ｏｔｈｅｒ　ｋｉｄｓ．@KEY()↓
+◆．．．Ｗｅｌｌ，　ａｎｙｗａｙ．．．↓
+　　Ｔｈｅ　ｐｒｏｔｏｔｙｐｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ　ｈａｓ　ｂｅｅｎ　ｓｔｏｌｅｎ．@KEY()↓
+◆ｓｏｍｅｏｎｅ　ｒｅｓｅｍｂｌｉｎｇ　ａ　ｐｉｇ　ｗｅａｒｉｎｇ　ｃｌｏｔｈｅｓ　ｔｈｒｅａｔｅｎｅｄ　Ｍｒ．　Ｓａｔｕｒｎ@KEY()↓
+◆ａｎｄ　ｔｈｅｎ　ｓｔｏｌｅ　ｔｈｅ　ｄｅｖｉｃｅ！
+;jpn:◆いやぁ　かれら　どせいくんたちは↓
+;jpn:　じつに　すばらしいひとびとだよ！@KEY()↓
+;jpn:◆うん@WI(15)　アップルくんも↓
+;jpn:　わかいのに　たいしたもんだ。@KEY()↓
+;jpn:◆‥‥それは　さておき@KEY()↓
+;
+;jpn:◆しょきがたの↓
+;jpn:　「スペーストンネル」が↓
+;jpn:　ぬすまれてしまったんだ。@KEY()↓
+;jpn:◆ふくをきたブタのようなものが↓
+;jpn:　どせいさんを　おどかして↓
+;jpn:　のっていったという。
+@KEYNP()
+@CLOSEALL()
+@WI(1)
+@REMOVE_CHAR(PRSN_DOSE_FIELD_3A,ANIM_DOSE_SPACETUNNEL)
+』
+
+_DOSEI_END_ANDONUT_XYZINFO;@MiuraAdapted
+◆Ｈｍｍｍｍ．．．@KEY()↓
+◆Ｉｆ　Ｉ　ｏｎｌｙ　ｈａｄ　ａ　ｐｉｅｃｅ　ｏｆ　ａ　ｍｅｔｅｏｒｉｔｅ，@KEY()↓
+◆Ｉ　ｍｉｇｈｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｅｘｔｒａｃｔ　ｓｏｍｅ　Ｚｅｘｏｎｙｔｅ．
+;jpn:◆うーむ。@KEY()↓
+;jpn:◆いんせきのかけらでもあれば↓
+;jpn:　ぶっしつＸＹＺを↓
+;jpn:　ごうせいできるのだが‥‥。
+@KEYNP()
+』
+
+MSG_EVENT_XYZ_ANDONUT_RECEIVE;
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_TOOL_OBJECT_XYZ)
+@TRUE_GOTO(_EVENT_XYZ_ANDONUT_RECEIVE_XYZ)
+@GOTO(MSG_SYS_GOODS_USE_NG)
+
+_EVENT_XYZ_ANDONUT_RECEIVE_XYZ;
+@GOODSOUT(PC_ALL,GDS_TOOL_OBJECT_XYZ)
+@SE(SE_se76_my_give)
+◆Ａｈ，　ｙｅｓ！↓
+　　Ｔｈｉｓ　ｉｓ　ｆａｎｔａｓｔｉｃ！↓
+　　Ｗｈａｔ？@KEY()↓
+◆Ｗｅｌｌ，　Ｉ’ｖｅ　ｎｅｖｅｒ　ａｃｔｕａｌｌｙ　ｓｅｅｎ　ｔｈｉｓ　ｉｎｃｒｅｄｉｂｌｙ　ｒａｒｅ　ｅｌｅｍｅｎｔ　ｂｅｆｏｒｅ．．．@KEY()↓
+◆Ｉｔ　ｉｓ　ｖｅｒｙ　ｉｎｔｒｉｇｕｉｎｇ．@KEY()↓
+◆Ａｌｌ　ｒｉｇｈｔ，　ｌｅａｖｅ　ｅｖｅｒｙｔｈｉｎｇ　ｔｏ　ｕｓ，　ａｎｄ　ｙｏｕ　ｇｅｔ　ｓｏｍｅ　ｒｅｓｔ．@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ｇｅｔｔｉｎｇ　ｍｏｓｔ　ｆａｓｃｉｎａｔｉｎｇ！
+;jpn:◆それだ！@WI(20)　ん？@WI(10)↓
+;jpn:　みたこともない　きんぞくだ！@KEY()↓
+;jpn:◆うーん　じつにおもしろい。@KEY()↓
+;jpn:◆あとは　わたしたちにまかせて↓
+;jpn:　やすみなさい。@KEY()↓
+;jpn:◆これは　おもしろくなってきたぞ！
+@KEYNP()
+@SETF(FLG_XYZ_OK)
+@SETF(FLG_DAY_AFTER)
+』
+
+MSG_DOSEI_END_ANDONUT_GO;
+@CHKFGOTO(FLG_DAY_AFTER,_DOSEI_END_ANDONUT_WAIT)
+◆Ｆｉｎａｌｌｙ，　ｉｔ’ｓ　ｃｏｍｐｌｅｔｅ！　@KEY()↓
+◆Ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ，　ｖｅｒｓｉｏｎ　ｔｗｏ，　ｉｓ　ｅｑｕｉｐｐｅｄ　ｗｉｔｈ　ｔｗｏ　ｎｅｗ　ｆｅａｔｕｒｅｓ．@KEY()↓
+◆Ｆｉｒｓｔ，　ｉｔ　ｃａｎ　ｒｅｐａｉｒ　ｙｏｕｒ　ｂｉｏｌｏｇｉｃａｌ　ｆｕｎｃｔｉｏｎｓ．@KEY()↓
+◆Ｓｅｃｏｎｄ，　ｉｔ　ｃａｎ　ｓａｖｅ　ｙｏｕｒ　ｐｒｏｇｒｅｓｓ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｂｅ　ａｆｒａｉｄ，↓
+　　Ｇｅｔ　ｒｉｇｈｔ　ｉｎ！@KEY()↓
+◆．．．Ｔｈｅｒｅ　ｉｓ　ｊｕｓｔ　ｏｎｅ　ｔｈｉｎｇ，　ｔｈｏｕｇｈ．．．@KEY()↓
+◆Ｙｏｕ　ｍｉｇｈｔ　ｎｏｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｒｅｔｕｒｎ．　　Ｓｏ，　ｍａｋｅ　ｓｕｒｅ　ｙｏｕ　ａｒｅ　ｏｐｔｉｍａｌｌｙ　ｏｕｔｆｉｔｔｅｄ@KEY()↓
+
+◆Ａｒｅ　ｙｏｕ　ｒｅａｄｙ　ｔｏ　ｇｏ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆いま　ついに　かんせいした！@KEY()↓
+;jpn:◆スペーストンネル２には↓
+;jpn:　たいりょくかいふく　と↓
+;jpn:　ぼうけんのデータきおく‥‥@KEY()↓
+;jpn:◆このふたつの　きのうが↓
+;jpn:　ついている。@WI(20)↓
+;jpn:　しんぱいせずに　のりこみたまえ。@KEY()↓
+;jpn:◆‥‥しかし！@KEY()↓
+;jpn:◆にどと　かえれぬたびに↓
+;jpn:　なるかもしれない。@KEY()↓
+;jpn:◆その　じゅんびを↓
+;jpn:　パーフェクトにしてから↓
+;jpn:　いくべきかもしれない。@KEY()↓
+;jpn:◆そうびは　かんぜんかね？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_DOSEI_END_ANDONUT_GO_YES,_DOSEI_END_ANDONUT_GO_NO)
+_DOSEI_END_ANDONUT_GO_NO;
+_DOSEI_END_ANDONUT_GO_YES;
+◆Ｅｖｅｎ　ｉｆ　ｙｏｕ’ｒｅ　ｎｏｔ　１００％，　ｐｅｒｆｅｃｔｌｙ，　ｃｏｍｐｌｅｔｅｌｙ　ｒｅａｄｙ．．．@KEY()↓
+◆Ｗｅｌｌ，　ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ａｓ　ｐｒｅｐａｒｅｄ　ａｓ　ｐｏｓｓｉｂｌｅ．@KEY()↓
+◆Ｉｔ　ｗｏｕｌｄ　ｂｅ　ｆｏｒ　ｔｈｅ　ｂｅｓｔ．@KEY()↓
+◆Ｗｉｔｈｏｕｔ　ｃａｒｅｆｕｌ　ｐｒｅｐａｒａｔｉｏｎ，　ｙｏｕ　ｗｏｕｌｄ　ｂｅ　ｉｎ　ｂｉｇ　ｔｒｏｕｂｌｅ．@KEY()↓
+◆Ｉ　ｊｕｓｔ　ｗａｎｔ　ｔｏ　ｍａｋｅ　ｓｕｒｅ　ｙｏｕ’ｒｅ　ｒｅａｄｙ．@KEY()↓
+◆Ｌｅｔ　ｍｅ　ｋｎｏｗ　ｗｈｅｎ　ｙｏｕｒ　ｐｒｅｐａｒａｔｉｏｎｓ　ａｒｅ　ｃｏｍｐｌｅｔｅ．
+;jpn:◆かんぜんに　かんぜんと↓
+;jpn:　いえないまでも@WI(15)　かなり↓
+;jpn:　かんぜんにしておきたまえ。@KEY()↓
+;jpn:◆そのほうがいい。@KEY()↓
+;jpn:◆‥‥うっかり　はだかで↓
+;jpn:　でかけていったりしたら↓
+;jpn:　おおごとだからね。@KEY()↓
+;jpn:◆たしかめて　おきたかったんだ。@KEY()↓
+;jpn:◆そうびが　しっかりしたら↓
+;jpn:　わたしに　こえを　かけてくれ。
+@KEYNP()
+@SETF(FLG_DOSEI_INFO_EQUIP);装備情報を聞いた（セリフ替え）
+』
+_DOSEI_END_ANDONUT_GOGO;
+◆Ｇｏｏｄ．↓
+　　Ａｔ　ｌａｓｔ，　ｔｈｅ　ｔｉｍｅ　ｈａｓ　ｃｏｍｅ．@KEY()↓
+◆Ａｒｅ　ｙｏｕ　ｒｅａｄｙ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆よし　いよいよ↓
+;jpn:　そのときが　きたようだな。@KEY()↓
+;jpn:◆そうびは　かんぜんかね？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_DOSEI_END_ANDONUT_GOGO_YES,_DOSEI_END_ANDONUT_GO_NO)
+@GOTO(_DOSEI_END_ANDONUT_GO_NO)
+_DOSEI_END_ANDONUT_GOGO_YES;
+◆Ｒｅｍｅｍｂｅｒ，　ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ，　ｖｅｒｓｉｏｎ　２，　ｉｓ　ｅｑｕｉｐｐｅｄ　ｗｉｔｈ　ｔｗｏ　ｎｅｗ　ｆｅａｔｕｒｅｓ．@KEY()↓
+◆Ｆｉｒｓｔ，　ｉｔ　ｃａｎ　ｒｅｐａｉｒ　ｙｏｕｒ　ｂｉｏｌｏｇｉｃａｌ　ｆｕｎｃｔｉｏｎｓ．@KEY()↓
+◆Ｓｅｃｏｎｄ，　ｉｔ　ｃａｎ　ｓａｖｅ　ｙｏｕｒ　ｐｒｏｇｒｅｓｓ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｂｅ　ａｆｒａｉｄ！　　Ｇｅｔ　ｒｉｇｈｔ　ｉｎ！
+;jpn:◆スペーストンネル２には↓
+;jpn:　たいりょくかいふく　と↓
+;jpn:　ぼうけんのデータきおく‥‥@KEY()↓
+;jpn:◆このふたつの　きのうが↓
+;jpn:　ついている。@WI(20)↓
+;jpn:　しんぱいせずに　のりこみたまえ。
+@KEYNP()
+@SETF(FLG_SPACETUNNEL2_START)
+@REMOVE_CHAR(PRSN_DOSE_FIELD_3A,ANIM_DOSE_SPACETUNNEL)
+』
+
+_DOSEI_END_ANDONUT_WAIT;
+◆Ｙｅｓ．．．Ｍｏｓｔ　ｉｎｔｒｉｇｕｉｎｇ．．．@KEY()↓
+◆Ｌｅａｖｅ　ｅｖｅｒｙｔｈｉｎｇ　ｔｏ　ｕｓ，ａｎｄ　ｙｏｕ　ｇｅｔ　ｓｏｍｅ　ｒｅｓｔ．@KEY()↓
+◆Ｔｈｉｓ　ｉｓ　ｇｅｔｔｉｎｇ　ｍｏｓｔ　ｆａｓｃｉｎａｔｉｎｇ！
+;jpn:◆うーん　じつにおもしろい。@KEY()↓
+;jpn:◆あとは　わたしたちにまかせて↓
+;jpn:　やすみなさい。@KEY()↓
+;jpn:◆これは　おもしろくなってきたぞ！
+@KEYNP()
+』
+
+MSG_DKFD_END_ANDONUT_4;＆
+◆Ｉｔ’ｓ　ａ　ｍｉｒａｃｌｅ！@KEY()↓
+◆Ａ　ｍｉｒａｃｌｅ　ｔｈａｔ　ｈａｓ　ｏｎｌｙ　ｈａｐｐｅｎｅｄ　ｂｅｃａｕｓｅ　ｏｆ　ｙｏｕｒ　ｇｒｅａｔ　ｃｏｕｒａｇｅ！@KEY()↓
+◆．．．Ｂｅｌｉｅｖｅ　ｍｅ，　Ｉ　ｗｅｎｔ　ｔｈｒｏｕｇｈ　ａ　ｌｉｆｅｔｉｍｅ’ｓ　ｗｏｒｔｈ　ｏｆ　ｓｔｒｅｓｓ　ｗｈｉｌｅ　ｙｏｕ　ｗｅｒｅ　ｇｏｎｅ．．．@KEY()↓
+◆Ｉ　ｊｕｓｔ　ｗｉｓｈ　Ｉ　ｃｏｕｌｄ　ｈａｖｅ　ｃｏｍｅ　ｗｉｔｈ　ｙｏｕ　ａｓ　ａ　ｒｏｂｏｔ．@KEY()↓
+◆Ｉ　ｓｈｏｕｌｄ　ｈａｖｅ　ｕｓｅｄ　ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ．@KEY()↓
+◆Ｗｈａｔ　ａ　ｓｔｏｒｙ　ｔｈａｔ　ｗｏｕｌｄ　ｈａｖｅ　ｂｅｅｎ．．．@KEY()↓
+◆”Ｓｃｉｅｎｔｉｓｔ　ａｎｄ　ｆｏｕｒ　ｋｉｄｓ　ｓａｖｅ　ｔｈｅ　ｗｏｒｌｄ！”@KEY()↓
+◆Ｗａｈ　ｈａ　ｈａ　ｈａ　ｈａ！
+;jpn:◆きせきだ！@WI(30)↓
+;jpn:　きみたちの　ゆうきがおこした↓
+;jpn:　きせきだ！@KEY()@WI(30)↓
+;jpn:◆‥‥わしは　いままでの↓
+;jpn:　いっしょうぶんの　なみだを↓
+;jpn:　ながしてしまったよ。@KEY()↓
+;jpn:◆‥‥わしも　あのとき↓
+;jpn:　きみたちといっしょに↓
+;jpn:　ロボットのすがたで@KEY()↓
+;jpn:◆スペーストンネルに↓
+;jpn:　のりこむべきだったんじゃないか@WI(30)↓
+;jpn:　‥‥そんなことも　かんがえた。@KEY()↓
+;jpn:◆４にんの　こどもたちと↓
+;jpn:　ひとりの　おじさんで↓
+;jpn:　ちきゅうをすくう‥‥@KEY()↓
+;jpn:◆そんな　はなしも↓
+;jpn:　ありかなぁとおもって‥‥。@WI(30)↓
+;jpn:　アハハハハ
+@KEYNP()
+』
+
+
+;@Habitat:土星さん谷／フィールド／広場
+;@Person:ショージ・モッチー
+;@Figure:ショージ・モッチー
+;@AppearanceKey:FLG_WIN_OSCAR/on
+;@ActionScript:＊正面向いてそのまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DOSEI_END_SYOZI
+MSG_DOSEI_END_SYOZI;
+@CHKFGOTO(FLG_WIN_GIEGU,_DOSEI_END_SYOZI_END)
+@CHKFGOTO(FLG_WIN_OSCAR,_DOSEI_END_SYOZI_LATER)
+_DOSEI_SYOZI_MAIN;
+
+◆Ｔｈｅ　Ａｐｐｌｅ　Ｋｉｄ　ｗａｓ　ｌｏｓｔ，　ａｎｄ　ｈｅ　ｗａｓ　ｊｕｓｔ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ，　ｓｏ　Ｉ　ｂｒｏｕｇｈｔ　ｈｉｍ　ｈｅｒｅ．@KEY()↓
+◆Ｔｈａｔ　ｗａｓ　ｇｕｉｔｅ　ａ　ｗｈｉｌｅ　ａｇｏ．．．　Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｓｏｍｅ　ｔｅａ？　@KEY()↓
+◆Ａｈ，　Ｉ　ｓｅｅ　ｔｈａｔ　ｙｏｕ’ｒｅ　ｂｕｓｙ．@KEY()↓
+◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｉｎｇｓ　ａｒｅ　ｐｒｅｔｔｙ　ｒｏｕｇｈ．　　Ｙｏｕ　ｔａｋｅ　ｃａｒｅ　ｎｏｗ．．．
+;jpn:◆アップルキッドが↓
+;jpn:　みちにまよってたもんで↓;変更が必要？
+;jpn:　ここまで　おくってきたんだいね。@KEY()↓
+;jpn:◆ひさしぶりだねぇ。↓
+;jpn:　おちゃでも　のんでいくかい？↓
+;jpn:　あ　いそがしいんだね。@KEY()↓
+;jpn:◆なんだか　タイヘンだねぇ。↓
+;jpn:　きをつけて　いってくれや。
+@KEYNP()
+@SETF(FLG_DOSEI_SYOZI);セリフ切替用
+』
+_DOSEI_END_SYOZI_LATER;
+@CHKFGOTO(FLG_DOSEI_SYOZI,_DOSEI_SYOZI_MAIN)
+◆Ｉ’ｍ　ｎｏｔ　ｓｕｒｅ　ｗｈａｔ　ｗｉｌｌ　ｈａｐｐｅｎ，　ｂｕｔ　Ｉ　ｓｅｎｓｅ　ｂｉｇ－ｔｉｍｅ　ｔｒｏｕｂｌｅ　ａｈｅａｄ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｓｔａｙ　ｈｅｒｅ　ｆｏｒ　ａ　ｗｈｉｌｅ　ａｎｄ　ｈｅｌｐ　Ｍｒ．　Ｓａｔｕｒｎ．@KEY()↓
+◆Ｉｔ’ｓ　ｉｍｐｏｒｔａｎｔ　ｆｏｒ　ａ　ｍａｎ　ｔｏ　ｅｎｊｏｙ　ｄｏｉｎｇ　ｈｉｓ　ｄｕｔｙ．
+;jpn:◆なんだか↓
+;jpn:　タイヘンなことらしいから↓
+;jpn:　おれ　しばらくは　ここで@KEY()↓
+;jpn:◆どせいさんたちの　てつだいを↓
+;jpn:　することにしたよ。@KEY()↓
+;jpn:◆おとこは　ぎりとにんじょうを↓
+;jpn:　だいじにするもんなんだいね。
+@KEYNP()
+』
+_DOSEI_END_SYOZI_END;＆
+◆Ｉｎｃｒｅｄｉｂｌｅ！↓
+　Ｅｘｃｅｌｌｅｎｔ！@KEY()↓
+◆Ｉ’ｍ　ｎｏｔ　ｑｕｉｔｅ　ｓｕｒｅ　ｗｈａｔ　ｆｏｒ，　ｂｕｔ　ｃｏｎｇｒａｔｕｌａｔｉｏｎｓ　ｏｎ　ａ　ｊｏｂ　ｗｅｌｌ　ｄｏｎｅ！@KEY()↓
+◆Ｉｆ　ｗｅ　ｅｖｅｒ　ｈａｖｅ　ｔｈｅ　ｃｈａｎｃｅ　ｔｏ　ｇｅｔ　ｔｏｇｅｔｈｅｒ　ａｇａｉｎ，@KEY()↓
+◆ｌｅｔ’ｓ　ｇｏ　ｏｎ　ａ　ｐｉｃｎｉｃ　ｏｒ　ｓｏｍｅｔｈｉｎｇ．@KEY()↓
+◆Ｍａｙｂｅ　ｗｅ　ｃｏｕｌｄ　ｐｌａｙ　ｈｏｒｓｅｓｈｏｅｓ，　ｔｏｏ！
+;jpn:◆やったじゃねぇか。↓
+;jpn:　すげーよ。@DSP_STS(STS_PC_NAME_NES)。@KEY()↓
+;jpn:◆なんだか　よくわかんねぇけど↓
+;jpn:　とにかく　たいしたもんだ。@KEY()↓
+;jpn:◆また　どっかで↓
+;jpn:　えんがあって　あえたら↓
+;jpn:　いっぱいのみてえやね。@KEY()↓
+;jpn:◆‥‥カラオケもいいか！
+@KEYNP()
+』
+
+
+;@Habitat:土星さん谷／フィールド／広場
+;@Person:スペーストンネル
+;@Figure:スペーストンネル
+;@AppearanceKey:FLG_WIN_OSCAR/on
+;@ActionScript:＊演出コンテ#16.1（未完）
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:0
+
+
+;@Habitat:土星さん谷／フィールド／温泉場
+;@Person:温泉の立て札
+;@Figure:立て札
+;@AppearanceKey:0
+;@ActionScript:＊固定
+;@GoodsMessage:0
+;@CheckMessage:MSG_DOSEI_KANBAN_ONSEN
+;@Message:0
+MSG_DOSEI_KANBAN_ONSEN;
+@FONTBAKA()
+◆（Ｈｏｔ↓
+　　ｓｐｒｉｎｇｓ．．．↓
+　　Ｒｅｓｔ　ｈｅｒｅ．）
+;jpn:◆（おんせん‥‥↓
+;jpn:　ゆっくりしろ）
+@KEYNP()
+@FONTSTD()
+』
+
+MSG_DOSEI_9;
+@FONTBAKA()
+◆Ｈａｐｐｙ．↓
+　　Ｂｏｉｎｇ．@KEY()↓
+◆Ｍｏｒｅ　ｈａｐｐｙ．↓
+　　Ｄｉｎｇ↓
+　　ｄｉｎｇ．@KEY()↓
+◆Ｍｕｃｈ　ｍｏｒｅ↓
+　　Ｈａｐｐｙ．↓
+　　Ｂｏｏ　ｂｏｏ’ｓ．@KEY()↓
+◆Ｂｉｇ　ｂｉｇ↓
+　　ｈａｐｐｙ．↓
+　　Ｚｏｏｏｏｏｍ！
+;jpn:◆うれしい↓
+;jpn:　ぷー。@KEY()↓
+;jpn:◆もっと　うれしい↓
+;jpn:　ぷーぷー@KEY()↓
+;jpn:◆もっと　もっと↓
+;jpn:　うれしい↓
+;jpn:　ぷーぷーぷー@KEY()↓
+;jpn:◆いっぱい　うれしい↓
+;jpn:　ぽえーん。
+@KEYNP()
+@FONTSTD()
+;◆ちきゅうさん　やるやる。@KEY()↓
+;◆ぼくらは　どせいさんたちは↓
+;　うれしいな。@KEYNP()
+』
+
+MSG_DOSEI_10;
+@FONTBAKA()
+◆Ｗａｓ　ｓｃａｒｅｄ．@KEY()↓
+　　Ｎｏｗ　ｋａｙ－ｏ@KEY()↓
+◆Ｉ　ｓｔｒｏｎｇ．↓
+　　Ｂｏｉｎｇ！
+;jpn:◆こわかったです。@KEY()↓
+;jpn:◆へいきです。↓
+;jpn:　つおいから。@KEY()↓
+;jpn:◆ぽえーん。@KEYNP()
+@FONTSTD()
+;◆こわかったですか。@KEY()↓
+;◆でも　ぷーえ　もうへいき。↓
+;　こわくなくなったよ　わーい。
+@KEYNP()
+』
+
+;-----------------------------------------------
+
+
+;《プー》
+
+MSG_DOSEI_POO;
+@OPEN(1)
+◆Ｏｕｒ　ｔｒａｖｅｌｓ　ｔｏｇｅｔｈｅｒ　ｅｎｄ　ｈｅｒｅ．@KEY()↓
+◆Ｉ　ｍｕｓｔ　ｒｅｔｕｒｎ　ｔｏ　Ｄａｌａａｍ，　ａｎｄ　ｕｓｅ　ｔｈｉｓ　ｅｘｐｅｒｉｅｎｃｅ　ｆｏｒ　ｔｈｅ　ｇｏｏｄ　ｏｆ　ｍｙ　ｃｏｕｎｔｒｙ．@KEY()↓
+◆@DSP_STS(STS_PC_NAME_NES)，↓
+　@DSP_STS(STS_PC_NAME_PAULA)，↓
+　@DSP_STS(STS_PC_NAME_JEFF)．．．@KEY()↓
+◆Ｌｅｔ　ｍｅ　ｄｅｍｏｎｓｔｒａｔｅ　ａ　ｓｔｒａｎｇｅ　ｐｏｗｅｒ　ｂｅｆｏｒｅ　Ｉ　ｇｏ．　　Ｉ　ｒｅａｌｉｚｅｄ　ｔｈｉｓ　ｐｏｗｅｒ　ａｓ　ａ　ｃｈｉｌｄ．@KEY()↓
+◆ＰＳＩ　Ｆａｒｅｗｅｌｌ！　　Ｎｏｗ！
+;jpn:◆おれとおまえの　たびは↓
+;jpn:　ここまでのようだな。@KEY()↓
+;jpn:◆ランマにかえって↓
+;jpn:　この　けいけんを↓
+;jpn:　やくにたてるよ。@KEY()↓
+◆@DSP_STS(STS_PC_NAME_NES)↓
+　@DSP_STS(STS_PC_NAME_PAULA)↓
+　@DSP_STS(STS_PC_NAME_JEFF)@KEY()↓
+;jpn:◆おれが　もっと↓
+;jpn:　ちいさいときに　おぼえた↓
+;jpn:　おもしろい　わざを@KEY()↓
+;jpn:◆さいごにみせるよ。@KEY()↓
+;jpn:◆ＰＫ　サヨナラ！　だ！
+@KEY()
+;＠これで消える。ランマに会いにいったら無言の行をしている。
+@CLOSEALL()
+@SETF(FLG_RAMA_PU_APPEAR)	;ランマのプー出現
+』
+;◆おいら　くちべただから↓
+;　あんまりうまくは　いえないけど@KEY()↓
+;◆‥‥‥‥↓
+;　うまく　いえないから@KEY()↓
+;◆とっておきのＰＫを↓
+;　おいら　みんなにみせて↓
+;　そして　さよならする。@KEY()↓
+;◆‥‥‥‥↓
+;　‥‥‥‥↓
+;　ＰＫ@DSP_STS(STS_PC_NAME_NES)！@KEY()
+;』
+
+
+;《ジェフ》
+
+MSG_DOSEI_JEFF;
+@OPEN(1)
+◆@DSP_STS(STS_PC_NAME_PAULA)↓
+　@DSP_STS(STS_PC_NAME_NES)@KEY()↓
+◆Ｉｔ　ｗａｓ　ｇｒｅａｔ　ｔｏ　ｈａｎｇ　ｏｕｔ　ｗｉｔｈ　ｙｏｕ　ｇｕｙｓ．　　Ｉｔ　ｒｅａｌｌｙ　ｗａｓ．@KEY()↓
+◆Ｉ’ｍ　ｇｌａｄ　ｔｈａｔ　Ｉ　ｈａｄ　ｔｈｅ　ｃｈａｎｃｅ　ｔｏ　ｕｓｅ　ｓｏｍｅ　ｏｆ　ｔｈｅ　ｔｈｅｏｒｉｅｓ@KEY()↓
+◆ｔｈａｔ　Ｉ　ｈａｖｅ　ｂｅｅｎ　ｓｔｕｄｙｉｎｇ　ｓｏ　ｈａｒｄ．@KEY()↓
+◆Ｉｔ’ｓ　ｒｅｍａｒｋａｂｌｅ．@KEY()↓
+◆．．．@KEY()↓
+◆Ｉｆ．．．@KEY()↓
+◆Ｊｕｓｔ　ｍａｙｂｅ．．．@KEY()↓
+◆Ｗｅｌｌ，　Ｉｆ　ｙｏｕ　ｔｗｏ　ｇｅｔ　ｈｉｔｃｈｅｄ　ｓｏｍｅｄａｙ，@KEY()↓
+◆ｍａｙｂｅ　Ｉ’ｌｌ　ｂｅ　ｔｈｅ　ｏｎｅ　ｔｈａｔ　ｆｉｘｅｓ　ｙｏｕｒ　ｂｒｏｋｅｎ　ｅｌｅｃｔｒｏｎｉｃ　ａｐｐｌｉａｎｃｅｓ．@KEY()↓
+◆．．．@KEY()↓
+◆Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｓｔａｙ　ｈｅｒｅ　ｆｏｒ　ａ　ｗｈｉｌｅ　ａｎｄ　ｓｅｅ　ｉｆ　Ｉ　ｃａｎ　ｌｅａｒｎ　ｍｏｒｅ　ｆｒｏｍ　Ｄｒ．　Ａｎｄｏｎｕｔｓ．@KEY()↓
+◆Ｉ　ｍｅａｎ，　ｆｒｏｍ　ｍｙ　ｄａｄ．@KEY()↓
+◆．．．Ｓｏ　ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｉｓ　ｉｓ　ｇｏｏｄ　ｂｙｅ　ｆｏｒ　ｎｏｗ，　ｍｙ　ｆｒｉｅｎｄｓ．
+;◆@DSP_STS(STS_PC_NAME_PAULA)↓
+;　@DSP_STS(STS_PC_NAME_NES)@KEY()↓
+;jpn:◆きみたちと　いられて↓
+;jpn:　ほんとうに　たのしかったよ。@KEY()↓
+;jpn:◆ぼくが　いままで↓
+;jpn:　べんきょうしてきたことが↓
+;jpn:　あんなにも　やくにたったなんて@KEY()↓
+;jpn:◆ほんとうに　ゆめのようだ。@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆もし@KEY()↓
+;jpn:◆もしだけどね‥‥@KEY()↓
+;jpn:◆きみたちが　しょうらい↓
+;jpn:　けっこんする↓
+;jpn:　ようなことがあったら@KEY()↓
+;jpn:◆でんきせいひんの↓
+;jpn:　しゅうりは↓
+;jpn:　ぼくに　まかせてくれ。@KEY()↓;＠ポーラ赤くなる？二人に汗の漫符
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆ぼくは　しばらく↓
+;jpn:　ここにのこって@KEY()↓
+;jpn:◆もうすこし↓
+;jpn:　アンドーナッツはかせから‥‥@KEY()↓
+;jpn:◆いや　パパから↓
+;jpn:　いろいろなことを↓
+;jpn:　おしえてもらうよ。@KEY()↓
+;jpn:◆‥‥とりあえず↓
+;jpn:　さよなら‥‥↓
+;jpn:　しんゆうたち。
+@KEYNP()
+@CLOSEALL()
+』
+MSG_DOSEI_JEFF_LATER;
+◆Ｉｔ　ｗａｓ　ｆｕｎ　ｈａｎｇｉｎｇ　ｏｕｔ　ｔｏｇｅｔｈｅｒ．
+;jpn:◆きみたちと　いられて↓
+;jpn:　ほんとうに　たのしかったよ。
+@KEYNP()
+』
+
+;◆（ジェフ　わかれのあいさつ。↓
+;　かれは　このセリフのあと↓
+;　まずポーラと　つぎにネスと@KEY()↓
+;◆それぞれ　あくしゅをかわし↓
+;　アンドーナツのよこに↓
+;　いどうする。@KEY()↓
+;◆サターンバレーにすみこんで↓
+;　ちちおやといっしょに　なにかの↓
+;　けんきゅうを　するのかも？）@KEYNP()
+;』
+
+;（↓ジェフがパーティを離れた後）
+;MSG_DOSEI_JEFF_LATER;
+;◆こんかいのぼうけんは↓
+;　ぼくの　いっしょうの↓
+;　おもいでだよ。@KEY()↓
+;◆ありがとう。@KEYNP()
+;』
+
+
+;《ポーラ》
+
+MSG_DOSEI_POLA;
+@OPEN(1)
+◆@DSP_STS(STS_PC_NAME_NES)，　ｗｉｌｌ　ｙｏｕ　ｅｓｃｏｒｔ　ｍｅ　ｈｏｍｅ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)　わたしを↓
+;jpn:　おくっていってくれる？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_DOSEI_POLA_YES,_DOSEI_POLA_NO)
+_DOSEI_POLA_NO;
+◆Ｗｅｌｌ　ｔｈｅｎ，　Ｉ’ｌｌ　ｅｓｃｏｒｔ　ｙｏｕ！
+;jpn:◆じゃあ　わたしが↓
+;jpn:　おくっていってあげる。
+@KEYNP()↓
+@CLOSEALL()
+』
+_DOSEI_POLA_YES;
+◆Ｉ’ｌｌ　ｍｉｓｓ　ａｌｌ　ｏｆ　ｙｏｕ，　ｂｕｔ，　Ｉ　ｈａｖｅ　ｔｏ　ｇｏ　ｂａｃｋ　ｔｏ　ｂｅｉｎｇ　ｊｕｓｔ　ａ　ｒｅｇｕｌａｒ　ｋｉｄ．．．@KEY()↓
+◆Ｗｅｌｌ，　Ｉ　ｇｏｔｔａ　ｇｅｔ　ｇｏｉｎｇ．．．
+;jpn:◆みんなと　おわかれするのは↓
+;jpn:　さみしいけれど@KEY()↓
+;jpn:◆もとの　ただのこどもに↓
+;jpn:　もどらなきゃね。@KEY()↓
+;jpn:◆いきましょう‥‥。
+@KEYNP()
+@CLOSEALL()
+@!
+
+
+;◆（ポーラのセリフ。↓
+;　ネスとかえりみちが　いっしょの↓
+;　かのじょは　このセリフのあと@KEY()↓
+;◆ふたたび　ネスと↓
+;　パーティになる。@KEY↓
+;◆ネスとのわかれは↓
+;　もうすこしあとです）@KEYNP()
+;』
+
+
+;幼稚園に近づくと、左右に網をはる。自動的にネスの家の網はなくなるのだ
+MSG_POLA_POLASTAR_BYE_PREPARE;
+@RES_HIT_RECT(2)
+@GOSUB(MSG_POLA_POLASTAR_BYE)		;別れのセリフ
+@GET_PLAYER_DIR(PC_NESS,1,PC_PAULA)	;ポーラからネスの方向を調べる
+@XCHG()
+@SAVE_REG()
+@EQ(4)
+@TRUE_GOTO(_POLA_POLASTAR_BYE_R)
+@LOAD_REG()
+@EQ(5)
+@TRUE_GOTO(_POLA_POLASTAR_BYE_R)
+@LOAD_REG()
+@EQ(6)
+@TRUE_GOTO(_POLA_POLASTAR_BYE_L)
+;それ以外
+@MOVE_GOM_CHAR(GOM_POLA,ANIM_POLA_POLASTAR_RETURN,OBJFX_SHOW_NONE)
+@GOTO(MSG_POLA_POLASTAR_ENTER)
+
+;ネスの左側を通って
+_POLA_POLASTAR_BYE_L
+@MOVE_GOM_CHAR(GOM_POLA,ANIM_POLA_POLASTAR_RETURN_L,OBJFX_SHOW_NONE)
+@GOTO(MSG_POLA_POLASTAR_ENTER)
+
+;ネスの右側を通って
+_POLA_POLASTAR_BYE_R
+@MOVE_GOM_CHAR(GOM_POLA,ANIM_POLA_POLASTAR_RETURN_R,OBJFX_SHOW_NONE)
+@GOTO(MSG_POLA_POLASTAR_ENTER)
+
+;
+;＠（↓幼稚園の前の“別れポイント”で）
+MSG_POLA_POLASTAR_BYE;
+@COLD_PLAYER(PC_ALL)
+;@SHOW_MANPU_PLAYER(PC_PAULA,MANPU_SURPRISE);「毛」漫符出さない
+@WI(30)
+@GET_PLAYER_DIR(PC_NESS,1,PC_PAULA);ネスからポーラの方向を調べる
+@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+@GET_PLAYER_DIR(PC_PAULA,1,PC_NESS);ポーラからネスの方向を調べる
+@SET_PLAYER_DIR(PC_PAULA,0);ポーラをその方向に向ける
+@WI(30)
+@OPEN(1)
+◆@DSP_STS(STS_PC_NAME_NES)．．．↓
+　Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｅｓｃｏｒｔｉｎｇ　ｍｅ　ｈｏｍｅ．@KEY()↓
+◆．．．↓
+　　．．．@KEY()↓
+◆．．．　Ｔｈｅｒｅ　ｗａｓ　ｓｏｍｅｔｈｉｎｇ　Ｉ　ｗａｎｔｅｄ　ｔｏ　ｔｅｌｌ　ｙｏｕ，　ｂｕｔ　Ｉ’ｖｅ　ｆｏｒｇｏｔｔｅｎ　ｉｔ．@KEY()↓
+◆Ｉ’ｍ　ｓｕｒｅ　Ｉ’ｌｌ　ｒｅｍｅｍｂｅｒ　ｂｙ　ｔｈｅ　ｔｉｍｅ　Ｉ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ．@KEY()↓
+◆Ｗｅｌｌ，　Ｉ　ｇｕｅｓｓ　ｔｈｉｓ　ｉｓ　ｉｔ．．．@KEY()↓
+◆Ｇｏｏｄ－ｂｙｅ．@KEY()↓
+◆Ｕｈｈｈ．．．↓
+　．．．Ｓｏ　ｌｏｎｇ@KEY()↓
+◆．．．Ｓｅｅ　ｙａ．@KEY()↓
+◆．．．Ｂｙｅ．
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)‥‥↓
+;jpn:　おくってくれて　ありがとう。@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆‥‥いいたいことがあったけど↓
+;jpn:　わすれちゃった。@KEY()↓
+;jpn:◆こんどあったときまでに↓
+;jpn:　おもいだしておくわ。@KEY()↓
+;jpn:◆‥‥じゃあ@WI(60)
+;jpn:　‥‥さよなら。@KEY()↓
+;jpn:◆あ‥‥@WI(60)↓
+;jpn:　‥‥さよなら。@KEY()↓
+;jpn:◆‥‥またね。@KEY()↓
+;jpn:◆‥‥‥。
+@KEYNP()
+@CLOSEALL()
+;@HIDE_MANPU_PLAYER(PC_PAULA)
+@HIDE_PLAYER(PC_PAULA,OBJFX_HIDE_NONE)
+@!
+
+;幼稚園に入って行く
+MSG_POLA_POLASTAR_ENTER;
+;@MOVE_GOM_CHAR(GOM_POLA,ANIM_POLA_POLASTAR_RETURN,OBJFX_SHOW_NONE)
+@WAITSYS()
+@COLD_GOM_CHAR(GOM_POLA)
+@SET_PLAYER_DIR(PC_NESS,DIR_M_UP)
+@WI(60)
+@FRESH_GOM_CHAR(GOM_POLA)		;中に入る
+@WAITSYS()
+@DEL_PARTY(PC_PAULA)		;ポーラ脱退
+@SETF(FLG_TWSN_POLA_APPEAR)	;室内のポーラ出現
+@FRESH_PLAYER(PC_ALL)
+』
+;◆ロボットになったときの↓
+;　（ネス）って↓
+;　ちょっと　かわいかったな。@KEY()↓
+;◆わたしのロボットすがたって↓
+;　かっこわるかったでしょ？↓
+;　　<はい>　　<いいえ>
+;@DSP_ITEM(2)
+;@SELGOTO(_POLA_POLASTAR_BYE_YES,_POLA_POLASTAR_BYE_NO)
+
+;_POLA_POLASTAR_BYE_NO;
+;◆アハハ↓
+;　（ネス）ったら。@KEY()
+;◆じゃ　またね！@KEYNP()
+;』
+
+;_POLA_POLASTAR_BYE_YES;
+;◆アハハ↓
+;　（ネス）ったら。@KEY()
+;◆じゃ　またね！@KEYNP()
+;』
+
+;
+;MSG_POLA_HAPPY_BYE;
+;MSG_POLA_TWSN_TUNNEL_BYE;
+;MSG_POLA_TWSN_TLPT_BYE;
+;MSG_POLA_ONET_TLPT_BYE;
+;
+
+;＠（↓ネスの家の前の“別れポイント”で）
+MSG_POLA_NESHOME_BYE;
+@GET_PLAYER_DIR(PC_NESS,1,PC_PAULA);ネスからポーラの方向を調べる
+@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+@GET_PLAYER_DIR(PC_PAULA,1,PC_NESS);ポーラからネスの方向を調べる
+@SET_PLAYER_DIR(PC_PAULA,0);ポーラをその方向に向ける
+@WI(30)
+@OPEN(1)
+◆Ｉ　ｒｅａｌｌｙ　ｓｈｏｕｌｄ　ｇｏ　ｈｏｍｅ．　　Ｉ　ｓｈｏｕｌｄｎ’ｔ　ｂｅ　ｏｕｔ　ｊｕｓｔ　ｗａｎｄｅｒｉｎｇ　ｈｅｒｅ　ａｎｄ　ｔｈｅｒｅ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｓｏ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆わたし　もうほんとに↓
+;jpn:　おうちにかえらなくちゃ。@KEY()↓
+;jpn:◆よりみちも　ほどほどにしないと↓
+;jpn:　いけないわよね？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_POLA_NESHOME_BYE_YES,_POLA_NESHOME_BYE_NO)
+@GOTO(_POLA_NESHOME_BYE_NO)
+
+_POLA_NESHOME_BYE_YES;
+◆Ａｌｌ　ｒｉｇｈｔ．　　Ｌｅｔ’ｓ　ｇｏ　ｂａｃｋ　ｔｏ　Ｐｏｌｅｓｔａｒ　Ｐｒｅｓｃｈｏｏｌ　ｉｎ　Ｔｗｏｓｏｎ．．．@KEY()↓
+◆Ｙｏｕ　ｒｅｍｅｍｂｅｒ　ｗｈｅｒｅ　ｉｔ　ｉｓ，　ｒｉｇｈｔ？@KEY()↓
+◆Ｌｅｔ’ｓ　ｇｏ．．．
+;jpn:◆ありがとう。@KEY()↓
+;jpn:◆じゃ　ツーソンの↓
+;jpn:　ポーラスターようちえんまで↓
+;jpn:　つれていって‥‥。@KEY()↓
+;jpn:◆ばしょは　おぼえてるわね？@KEY()↓
+;jpn:◆いきましょう‥‥。
+@KEYNP()
+@CLOSEALL()
+』
+;◆アハハ↓
+;　（ネス）ったら↓
+;　まるで　わたしのパパみたい。@KEY()↓
+;◆じゃ　またね！@KEYNP()
+;』
+
+_POLA_NESHOME_BYE_NO;
+◆Ｗｅｌｌ．．．Ｏｋａｙ．↓
+　　Ｉ　ｇｕｅｓｓ　Ｉ　ｗｏｕｌｄ　ｌｉｋｅ　ｔｏ　ｂｅ　ｗｉｔｈ　ｙｏｕ　ａ　ｌｉｔｔｌｅ　ｌｏｎｇｅｒ．
+;jpn:◆‥‥いいわ。↓
+;jpn:　わたしも　もうすこし↓
+;jpn:　あなたと　いたかったから。
+@KEYNP()
+@CLOSEALL()
+』
+;◆アハハ↓
+;　（ネス）ったら。@KEYNP()
+;』
+
+
+;（↓その他４ヶ所の“別れポイント”で）ポーラのメッセージは両家の前
+;MSG_POLA_BYE;
+;◆たのしかったけど↓
+;　@DSP_STS(STS_PC_NAME_NES)‥‥。@KEY()↓
+;◆わたし　そろそろ↓
+;　おうちにかえらなくちゃ。@KEY↓
+;◆@DSP_STS(STS_PC_NAME_NES)も↓
+;　そうおもうでしょ？↓
+;　　<はい>　　<いいえ>
+;@DSP_ITEM(2)
+;@SELGOTO(_POLA_BYE_YES,_POLA_BYE_NO)
+;
+;_POLA_BYE_YES;
+;◆ありがとう。@KEY()↓
+;◆じゃ　ツーソンの↓
+;　ポーラスターようちえんまで↓
+;　つれていって‥‥。@KEY()↓
+;◆ばしょは　おぼえてるわね？@KEY()↓
+;◆いきましょう‥‥。@KEYNP()
+;』
+;◆あ　おもいだしちゃった。@KEY()↓
+;◆ロボットになったときの↓
+;　（ネス）って↓
+;　ちょっと　かわいかったな。@KEY()
+;◆アハハ@KEY()
+;◆じゃ　またね！@KEYNP()
+;』
+;
+;_POLA_BYE_NO;
+;◆‥‥いいわ。↓
+;　わたしも　もうすこし↓
+;　あなたと　いたかったから。@KEYNP()
+;』
+;-------------------------------------------------
+
+MSG_DOSEI_11;＄
+@FONTBAKA()
+◆Ｙｏｕ　ｗｏｒｎ↓
+　　ｄｏｗｎ？@KEY()↓
+◆Ａｈｈｈ．．．↓
+　　Ｂｏｉｎｇ！
+;jpn:◆くたびれた↓
+;jpn:　ですか。@WI(30)↓
+;jpn:　そーですか。
+@CHKF(FLG_DOSEI_ONSEN_GERO)@FALSE_GOTO(_DOSEI_11_MAIN)
+@CHKF(FLG_TLPT_FOUR)@FALSE_GOTO(_DOSEI_11_TMP)
+_DOSEI_11_MAIN;
+@KEYNP()
+』
+_DOSEI_11_TMP;
+@KEY()↓
+◆Ｂｕｕｕｒｐ！↓
+　　Ｂａｒｆ！@KEY()↓
+◆Ｓｔｉｎｋｙ！↓
+　　Ｐｅｅｅｅ－↓
+　　ｙｅｕｕｕ！
+;jpn:◆げっぷ　げろげろの↓
+;jpn:　においが　ぷーん。
+@KEYNP()
+@FONTSTD()
+』
+
+MSG_DOSEI_12;＃
+@FONTBAKA()
+@CHKFGOTO(FLG_WIN_GIEGU,_DOSEI_12_END)
+◆Ｌｏｎｇｅｒ↓
+　　ｌａｄｄｅｒ！@KEY()↓
+◆Ｃａｎ↓
+　　ｇｏ　ｔｏ↓
+　　ｈｏｔ　ｓｐｒｉｎｇｓ！
+;jpn:◆はしご　ながくした。↓
+;jpn:　おんせんに　こられた。
+@KEYNP()
+@FONTSTD()
+』
+
+_DOSEI_12_END;＆
+◆Ｂｅｌｌ　ｒｉｎｇｓ↓
+　　ｄｉｎｇ，　ｄｉｎｇ．
+　　Ｂｏｉｎｇ！
+;jpn:◆すずむし　リンリン。
+@KEYNP()
+@FONTSTD()
+』
+;-------------------------------------------------
+
+MSG_EVT_DOSEI_ONSEN_HEAL;
+;土星谷温泉での治癒処理
+;温泉に入ったことで、看板のアニメから呼ばれる
+@COLD_CHAR( PRSN_DOSE_FIELD_3C )
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+@OPEN( 1 )
+@CHKFGOTO(FLG_DOSEI_ONSEN_GERO,_EVT_DOSEI_ONSEN_GERO)
+◆（Ｙｏｕ　ｅｎｊｏｙｅｄ　ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇｓ　ｉｍｍｅｎｓｅｌｙ．　　Ｉｔ　ｍａｄｅ　ｙｏｕ　ｆｅｅｌ　ｒｅｂｏｒｎ．）
+;jpn:◆（おんせんで　ゆっくりしたので↓
+;jpn:　@DSP_NAME(0)@GOSUB(MSG_SUB_TATI_ONSEN)は↓
+;jpn:　いきかえったようになった）
+@KEYNP()
+;				　ここでパレット操作は絶対にしないこと！
+_EVT_DOSEI_ONSEN_MAIN;
+@GOSUB(MSG_SUB_ZENKAI)
+@CLOSEALL()
+@FRESH_CHAR( PRSN_DOSE_FIELD_3C )
+』
+_EVT_DOSEI_ONSEN_GERO;
+◆（Ｙｏｕ　ｇｏｔ　ｉｎ　ａｎｄ　ｗａｓｈｅｄ　ａｌｌ　ｏｆ　ｔｈｅ　ｅｘｔｒｅｍｅｌｙ
+　ｄｉｒｔｙ　ｇｕｎｋ　ｏｆｆ　ｏｆ　ｙｏｕｒ　ｂｏｄｙ．）
+;jpn:◆（おんせんにはいったので↓
+;jpn:　からだについた　とんでもなく↓
+;jpn:　キタナイものが　おちた）
+@KEYNP()
+@CLRF(FLG_DOSEI_ONSEN_GERO)
+@GOTO(_EVT_DOSEI_ONSEN_MAIN)
+;-------------------------------------------------

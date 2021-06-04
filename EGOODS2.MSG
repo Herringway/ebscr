@@ -1,0 +1,196 @@
+;/////////////////////////マップ専用グッズ（２／３）////////////////////////
+
+;穴抜けネズミ
+MSG_BTL_ESCAPE_MOUSE;
+@SAVE_REG()
+←
+@Q_DUNGEON()
+@FALSE_GOTO(_MOUSE_NOTD)
+;イベント？
+@CHKFGOTO(FLG_SYS_DIS_MOUSE,_MOUSE_CANTUSE)
+;-----
+@CHKF(FLG_DELIVERY_PIZZA)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_PIZZA)
+@CHKF(FLG_DELIVERY_UNSOU)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_ESCARGO)
+@CHKF(FLG_DELIVERY_UNSOU_B)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_ESCARGO)
+@CHKF(FLG_DELIVERY_CUSTOMER)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_KANBAN)
+@CHKF(FLG_DELIVERY_CUSTOMER_B)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_KANBAN)
+@CHKF(FLG_DELIVERY_CUSTOMER_C)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_KANBAN)
+@CHKF(FLG_DELIVERY_CUSTOMER_D)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_KANBAN)
+@CHKF(FLG_DELIVERY_HOIHOI)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_PIZZA)
+@CHKF(FLG_DELIVERY_UNSOU_TAKOKESHI)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_ESCARGO)
+@CHKF(FLG_DELIVERY_UNSOU_TAKANOME)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_ESCARGO)
+;-----
+;ストーンヘンジのカプセルを前に逃げてはいけないチェック
+@CHKFGOTO(FLG_WINS_ESCAPE_MOUSE_NG,_BTL_ESCAPE_MOUSE_CAPSULE)
+;-----
+_BTL_ESCAPE_MOUSE_MAIN;
+@FUNC(5)			;配達禁止
+◆（Ｔｈｅ　ｍｏｕｓｅ　ｆｏｕｎｄ　ｔｈｅ　ｗａｙ　ｏｕｔ　ａｎｄ　ｗａｖｅｄ　ｆｏｒ　ｙｏｕ　ｔｏ　ｆｏｌｌｏｗ．）
+;jpn:◆（あなぬけネズミは↓
+;jpn:　いりぐちのほうへ　かけだして↓
+;jpn:　てまねきした）
+@KEY()
+;***ここで「ねずみバッファ」に保存された座標にワープする***
+@WARP_MOUSE_POS()
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+@CLRF(FLG_ITEM_ESCAPE_MOUSE)
+@FUNC(6)			;配達許可
+@GOSUB(MSG_SUB_TLPTOK_OTHERDELIVERY)	;デリバリー中以外ならテレポート許可
+@!
+
+_MOUSE_NOTD;
+◆（Ｔｈｅ　Ｅｘｉｔ　Ｍｏｕｓｅ　ｃａｎｎｏｔ　ｄｏ　ｉｔｓ　ｊｏｂ@KEY()↓
+　　ｕｎｌｅｓｓ　ｉｔ　ｉｓ　ｉｎ　ａ　ｈｏｌｅ，　ｃａｖｅ，　ｏｒ　ｓｏｍｅ　ｐｌａｃｅ　ｗｉｔｈ　ａｎ　ｅｘｉｔ！）
+;;jpn:◆（あなぬけネズミは↓
+;;jpn:　そのなのとおり↓
+;;jpn:　あなや　どうくつでないと
+;@KEY()
+;↓
+;;jpn:　かつやくできないのだ）
+@KEYNP()
+@!
+
+_MOUSE_CANTUSE;			;穴ぬけ鼠使用禁止時
+_MOUSE_NOWEVENT;
+◆（Ａｔ　ｔｈｉｓ　ｐｏｉｎｔ　ｉｎ　ｔｉｍｅ，　ｔｈｅ　ｍｏｕｓｅ　ｉｓ　ｆａｓｔ　ａｓｌｅｅｐ．）
+;jpn:◆（この　だいじな　ばめんに↓
+;jpn:　あなぬけネズミは↓
+;jpn:　ねむりこけている）
+@KEYNP()
+@!
+
+_BTL_ESCAPE_MOUSE_PIZZA;ピザ配達中
+◆Ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｌｅｔ　ｔｈｅ　ｍｏｕｓｅ　ｇｏ　ｕｎｔｉｌ　ｔｈｅ　ｐｉｚｚａ　ｈａｓ　ａｒｒｉｖｅｄ．
+;jpn:◆ピザがくるまで↓
+;jpn:　ねずみを　はなしてはいけない。
+@KEYNP()
+』
+
+_BTL_ESCAPE_MOUSE_KANBAN;（古道具屋の客が向かってる）
+◆Ｉｆ　ｙｏｕ　ｒｅｌｅａｓｅ　ｔｈｅ　ｍｏｕｓｅ　ｎｏｗ，　ｉｔ　ｍｉｇｈｔ　ｂｅ　ｓｔｅｐｐｅｄ　ｏｎ　ｂｙ　ｔｈｅ　ａｐｐｒｏａｃｈｉｎｇ　ｃｕｓｔｏｍｅｒ．@KEY()↓
+◆Ｓｏ．．．　ｉｔ’ｓ　ｎｏｔ　ａ　ｇｏｏｄ　ｉｄｅａ　ｔｏ　ｒｅｌｅａｓｅ　ｔｈｅ　ｍｏｕｓｅ　ｎｏｗ．
+;jpn:◆いま　ねずみをはなすと↓
+;jpn:　ふるどうぐと　まちがえられて↓
+;jpn:　しまうかもしれないぞ。@KEY()↓
+;jpn:◆‥‥だから↓
+;jpn:　やめなさい。
+@KEYNP()
+』
+
+_BTL_ESCAPE_MOUSE_ESCARGO;（エスカルゴ運送配達中）
+◆Ｐｌｅａｓｅ　ｓｔｉｃｋ　ａｒｏｕｎｄ　ｕｎｔｉｌ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ　ａｒｒｉｖｅｓ．@KEY()↓
+◆Ｓｏ．．．　ｄｏ　ｎｏｔ　ｕｓｅ　ｔｈｅ　Ｅｘｉｔ　Ｍｏｕｓｅ！
+;jpn:◆エスカルゴうんそうが↓
+;jpn:　くるまでは↓
+;jpn:　このへんに　いてやってほしい。@KEY()↓
+;jpn:◆したがって↓
+;jpn:　あなぬけねずみは‥‥↓
+;jpn:　つかわないこと！@KEYNP()
+』
+_BTL_ESCAPE_MOUSE_CAPSULE;解放された博士たちと話していない。
+◆Ｆｏｒ　ｓｏｍｅ　ｒｅａｓｏｎ，　ｔｈｅ　ｅｘｉｔ　ｍｏｕｓｅ　ｉｓｎ’ｔ　ｂｅｉｎｇ　ａｇｒｅｅａｂｌｅ．
+;jpn:◆なぜか　あなぬけねずみの↓
+;jpn:　きげんが　わるい。
+@KEYNP()
+』
+
+;ヒエログリフのコピー
+MSG_BTL_HIERO;
+@XCHG()
+◆@DSP_NAME(0)　ｒｅａｄ　ｔｈｅ　ｈｉｅｒｏｇｌｙｐｈｓ．@KEY()↓
+◆”Ｔｏ　ｆｉｇｈｔ　ａｇａｉｎｓｔ　ｔｈｅ　ｉｎｖａｄｅｒｓ，　ｗｅ　ｂｕｉｌｔ　ｔｈｉｓ　ｐｙｒａｍｉｄ　ｆｏｒｔｒｅｓｓ．@KEY()↓
+◆Ｈｏｗｅｖｅｒ，　ｏｕｒ　ｅｆｆｏｒｔｓ　ｗｅｒｅ　ｆｕｔｉｌｅ，　ａｎｄ　ｗｅ　ｌｏｓｔ．@KEY()↓
+◆Ｎｏｎｅｔｈｅｌｅｓｓ，　ｏｕｒ　ｐｙｒａｍｉｄ　ｗａｓ　ｐｒｏｔｅｃｔｅｄ　ｂｙ　ｔｈｅ　ｇｏｄｓ　ｏｆ　Ｓｃａｒａｂａ．@KEY()↓
+◆Ｔｈｅ　ｉｎｖａｄｅｒｓ　ｗｉｌｌ　ｂｅ　ｒｅｂｏｒｎ　ｅｖｅｒｙ　ｍｉｌｌｅｎｎｉｕｍ　ａｎｄ　ｗｉｌｌ　ａｔｔａｃｋ　ａｇａｉｎ．@KEY()↓
+◆Ｅｖｅｎ　ｎｏｗ，　ｔｈｅ　ｉｎｖａｄｅｒｓ　ｈｉｄｅ　ｂｅｙｏｎｄ　ｓｐａｃｅ　ａｎｄ　ｔｉｍｅ　ａｎｄ　ｂｕｉｌｄ　ｔｈｅｉｒ　ｅｖｉｌ　ｓｔｒｏｎｇｈｏｌｄ．@KEY()↓
+◆Ａ　ｐｌａｃｅ　ｏｕｔ　ｏｆ　ｔｉｍｅ　ｉｓ　ｂｅｙｏｎｄ　ｔｈｅ　Ｄａｒｋ，　ａｎｄ　ｉｓ　ｅｖｅｎ　ｆａｒｔｈｅｒ　ｂｅｙｏｎｄ　ｔｈｅ　Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ．@KEY()↓
+◆Ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ　ｉｓ　ｓｈｒｏｕｄｅｄ，　ｉｔ　ｉｓ　ｗｉｔｈｏｕｔ　ｌｉｇｈｔ．@KEY()↓
+◆Ｏｎｌｙ　ｏｎｅ　ｗｉｔｈ　ｔｈｅ　Ｈａｗｋ　Ｅｙｅ　ｃａｎ　ｐｉｅｒｃｅ　ｔｈｅ　ｄａｒｋ．@KEY()↓
+◆Ｔｈｅ　Ｓｐｈｉｎｘ　ｎｏｗ　ｗａｔｃｈｅｓ　ｏｖｅｒ　ｅｖｅｒｙｔｈｉｎｇ，@KEY()↓
+◆ｗａｉｔｉｎｇ　ｆｏｒ　ｔｈｅ　ｃｏｍｉｎｇ　ｏｆ　ａ　ｔｒｕｌｙ　ｂｒａｖｅ　ｈｅｒｏ．@KEY()↓
+◆　　　・↓
+　　４　　　３↓
+　　　２　５@KEY()↓
+◆Ｄａｎｃｅ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　Ｓｐｈｉｎｘ！”
+;;jpn:◆@DSP_NAME(0)は↓
+;;jpn:　ヒエログリフのコピーを　よんだ。
+;@KEY()↓
+;;jpn:◆「てんよりの　しんりゃくしゃに↓
+;;jpn:　われわれは　しかくすいの↓
+;;jpn:　ようさいを　けんぞうし
+;@KEY()↓
+;;jpn:◆たたかいに　そなえた。↓
+;;jpn:　しかし　われわれは　やぶれた。
+;@KEY()↓
+;;jpn:◆だが　われわれの　ようさいは↓
+;;jpn:　スカラビの　かみがみによって↓
+;;jpn:　まもられた。
+;@KEY()↓
+;;jpn:◆てんからきた　しんりゃくしゃは↓
+;;jpn:　１０００ねんごとに　うまれかわり↓
+;;jpn:　おそってくるという。
+;@KEY()↓
+;;jpn:◆しんりゃくしゃは↓
+;;jpn:　ときの　かなたにかくれ↓
+;;jpn:　あくの「すばこ」を　おいた。
+;@KEY()↓
+;;jpn:◆ときの　かなたは↓
+;;jpn:　まきょうの　はるか　さき。↓
+;;jpn:　ちのそこの　むこう。
+;@KEY()↓
+;;jpn:◆まきょうは　くらき　やみ。↓
+;;jpn:　「たかのめ」だけが　みる。
+;@KEY()↓
+;;jpn:◆スフィンクスが↓
+;;jpn:　すべてを　まもり
+;@KEY()↓
+;;jpn:◆しんの　ゆうしゃの↓
+;;jpn:　おとづれを　まつ。
+;@KEY()↓
+;◆　　　・↓
+;　　４　　　３↓
+;　　　２　５
+;@KEY()↓
+;;jpn:◆スフィンクスのまえで　おどれ」
+@KEYNP()
+@!
+
+
+;【新規】町の地図を使ったばあい。
+;	オネットなどの地名を表示する場合には、
+;	メッセージスクリプト内で分岐して、表示して下さい。
+
+MSG_BTL_TOWN_MAP;
+;地図に載っている場合
+@FUNC(7)
+@FALSE_GOTO(_TOWN_MAP_NG)
+@!
+
+_TOWN_MAP_NG;
+;地図に載っていない場合
+◆Ｔｈｉｓ　ｔｏｗｎ　ｉｓ　ｎｏｔ　ｓｈｏｗｎ　ｏｎ　ｔｈｅ　ｍａｐ．
+;jpn:　ちずに　このまちの↓
+;jpn:　ページはなかった‥‥。
+@KEYNP()
+@!
+
+MSG_ONET_TABIGOYA;
+@CHKFGOTO(FLG_OPEN_TABIGOYA,_ONET_TABIGOYA_END)
+@GOSUB(_SUB_DOOR_LOCKED_MES)
+_ONET_TABIGOYA_END;
+@!
+
+MSG_ONET_TABIGOYA_RECEIVE;
+@SAVE_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_TOOL_KEY_TABIGOYA)
+@FALSE_GOTO(_ONET_TABIGOYA_RECEIVE_NG)
+@GOSUB(_SUB_DOOR_OPEN_MES)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+@HIDE_CHAR(PRSN_ONET_FIELD_X,OBJFX_HIDE_NONE)
+@SETF(FLG_OPEN_TABIGOYA)
+@!
+

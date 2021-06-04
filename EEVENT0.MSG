@@ -1,0 +1,1935 @@
+;
+; ##########################################################################
+;#                                                                          #
+;#	#特殊 Event用 Message(/MasterScenario)	;conteNo  ;TrackSheetの有無 #
+;#                                                                          #
+; ##########################################################################
+
+;	<目次>
+
+;#1	タイトル
+;#2	デモ
+;#3	冒険の記録選択
+;#4	名前その他入力
+;#5	"各種設定(MSG Speed, Stereo/mono etc.)"
+;#6	ポーキー登場他（オープニング）	1.1	T
+;#7	市街に行くネスを引き止めるポーキー	1.2	T
+;#8	ピッキー救出	1.3	T
+;#9	隕石落下跡から帰る犬	1.3	T
+;#10	ブンブーン仲間に	1.4	T
+;#11	ポーキー、ピッキーと別れる	1.5	T
+;#12	ブンブーンの最期	1.5	T
+;#13	マニマニの悪魔を見せる水野さん		-
+;#14	(スケボーに乗る)シャーク団		-
+;#15	図書館のトイレ（男子用）	1.6	T
+;#16	ホテルのカップル	1.7	T
+;#17	市長室からつまみ出される	1.8	T
+;#18	シャーク団を倒し中庭に	1.9	T
+;#19	VSフランク＆フランキー	-	-
+;#20	サウンド確認画面（最初）
+;#21	(立ち入り禁止について)警官に説教される	1.?	T
+;#22	警官５人抜き	1.1o	T
+;#23	封鎖警官（車止めを移動）	1.11	T
+;#24	スリーク行のバスを呼ぶ	2.8	T
+;#25	スリーク行のバスに乗る	2.8	T
+;#26	ゴーストトンネル（バスor自転車or歩き）	ゝ
+;#27	受信電話をくれるマウス	2.5	T
+;#28	ポーラを呼びに行く父	2.3	T
+;#29	つきまとう寄付屋	3.1	T
+;#30	電話が掛かってくる（最初）
+;#31	カオス劇場入場	2.6
+;#32	トンズラステージ
+;#33	ハッピー教団本部完成（青い村に変化）	3.1	T
+;#34	雷を落とされる（外に飛ばされる）
+;#35	フランクリンバッジを渡すポーラ	4.2	T
+;#36	雷を受け止めるフランクリンバッジ	3.2	T
+;#37	ポーラ救出（ポーラを仲間にする）	4.3	T
+;#38	ポーラ父との別れ	2.9	T
+;#39	ミチコと楽屋潜入
+;#40	トンズラの解放
+;#41	トンズラバスに乗る		T
+;#42	トンズラと別れる	5.1	T
+;#43	ゾンビに捕まり気絶		T
+;#44	寄宿舎の部屋（夜）	8.1	T
+;#45	寄宿舎を脱出（体当たりで金網を破る）
+;#46	バルーンモンキー空中浮遊	8.3	T
+;#47	タッシー登場
+;#48	タッシーに乗りタス湖縦断
+;#49	タッシー帰る
+;#50	バルーンモンキー拾い食い（バナナなど）
+;#51	バルーンモンキーロープを降ろす	8.6	T
+;#52	バルーンモンキー雌サルを追って消える	8.7	-
+;#53	スカイウォーカー発進！～飛行～墜落	8.8	T
+;#54	魔テント消える
+;#55	ゾンビホイホイ使用	ゝ
+;#56	秘密基地に入る
+;#57	ゲップーの特殊攻撃	ゝ
+;#58	コーヒータイム	-	-
+;#59	明るくなったスリーク
+;#60	大渋滞	9.1	T
+;#61	バスから降りる（大渋滞）	9.2	T
+;#62	トポロ劇場に入場	-	-
+;#63	ビーナスのステージ（１回目）
+;#64	トンズラのステージ（２回目）
+;#65	トポロ劇場楽屋の係員	10.2	T
+;#66	埋蔵金発掘現場（セル替え大穴）
+;#67	発掘を開始するモッチーたち
+;#68	シゲちゃんユンボで登場	9.4	T
+;#69	トンズラ最後のステージ（３回目）
+;#70	ポーキーの子分に叩き出される	10.4	T
+;#71	停電デパート	10.5	T
+;#72	トンチキさんの最期	10.6	T
+;#73	ムーンサイドに入る
+;#74	フォーサイドに戻る（倉庫）
+;#75	モノトリー氏の部屋
+;#76	トンズラバスに乗る（２回目）
+;#77	スカイウォーカーでサマーズ
+;#78	マッサージの女（ランマへ）	11.1	T
+;#79	プーの修業
+;#80	プー登場	11.o	T
+;#81	ビーナスのステージ（２回目）
+;#82	マグネットヒルへ続く下水の蓋を開ける	-	-
+;#83	タッシー（２回目）
+;#84	基地機能の破壊（人々の救出）
+;#85	乗船→クラーケン	11.3	T
+;#86	「ブタのはな」を使う(マジックトリフ探し)
+;#87	星型に石を踏む
+;#88	まぼろしの老人	13.4	T
+;#89	ダンジョン男を仲間に	13.5	T
+;#90	ダンジョン男ハマリ（別れる）	13.5	T
+;#91	サブマリン貸出し	13.5	T
+;#92	サブマリン発進	13.6	T
+;#93	テレポートサル
+;#94	「たかのめ」を使う
+;#95	プー再登場	13.2	T
+;#96	ティータイム
+;#97	プレイヤー名の確認（英語→日本語）
+;#98	ダンジョン入口の栓をあける	13.9	T
+;#99	話しかけてくる大岩	13.1o	T
+;#100	ひかりごけ
+;#101	地底大陸へ落下
+;#102	８つのサウンド集まる（サウンド確認画面）
+;#103	マジカントへ	13.13
+;#104	フライングマン	14.1	T
+;#105	フライングマンの墓	14.2
+;#106	マジカントを出る	14.3
+;#107	スペーストンネル1.5失敗（黒焦げ）
+;#108	スペーストンネル２完成	16.1	-
+;#109	スペーストンネル２（ワープ）	16.1
+;#110	ネスたち機械化	-	-
+;#111	スペーストンネル３（タイムワープ）
+;#112	最終戦闘
+;#113	ネスたちの魂の帰還
+;#114	祝福
+;#115	エンディング・シークエンス
+;-------------------------------------------------
+
+;	（青から元に戻っている）
+;	（「ちょっとかぎマシン」を使う）
+;-------------------------------------------------
+
+
+;	（魔テント出現）
+
+;-------------------------------------------------
+;	（ゾンビホイホイ配達(マッハピザ)）
+;	（夢→ランマ→プー仲間に）
+;	（土星谷にワープ）
+;	「どうぐやのかんばん」を使う
+;	「なまたまご」が「ひよこ」に
+;	２時間パパ
+;	エスカルゴ運送の配達
+;	プレイヤー名の入力
+;	マッハピザの配達
+;	写真屋登場→記念写真撮影
+
+;以下追加
+
+;	オネット図書館の受付嬢
+;	フォーサイド行きのバス
+;	グミの村に掛かってくる電話
+
+
+;------------------------------------------------------------------
+
+;	<本編>
+
+;#1	タイトル
+;#2	デモ
+;#3	冒険の記録選択
+;#4	名前その他入力
+;#5	"各種設定(MSG Speed, Stereo/mono etc.)"
+;------------------------------------------------
+
+;#2	デモ
+
+;       Ｆ－１  「トトの町」
+MSG_MD_TOTO
+@SETF(FLG_ONET_AMBRAMI);パレット替え用
+@SETF(FLG_MAKYO_USE_TAKANOME);パレット替え用
+@ADD_PARTY(PC_PAULA)
+@ADD_PARTY(PC_JEFF)
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_1)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_TOTO,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+MSG_MD_TOTO_SENCHOU
+@SET_CHAR_DIR(PRSN_SUMS_FIELD_P,DIR_M_RIGHT)
+@REMOVE_CHAR(PRSN_SUMS_FIELD_P,ANIM_MAPOBJSTILL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－２  「スリークの墓地」
+MSG_MD_THRK
+@ADD_PARTY(PC_PAULA)
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_2)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_THRK,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－３  「魔境」
+MSG_MD_MAKYO
+@ADD_PARTY(PC_PAULA)
+@ADD_PARTY(PC_JEFF)
+@ADD_PARTY(PC_POO)
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_3)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_MAKYO,OBJFX_SHOW_NONE)
+@MOVE_GOM_CHAR(GOM_RAFURESIA,ANIM_MAPOBJSTILL_LIVE,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+MSG_MD_MAKYO_RAFURESIA
+@REMOVE_GOM_CHAR(GOM_RAFURESIA,ANIM_MD_MAKYO_RAFURESIA)
+』
+
+;-------------------------------------------------------
+;       Ｆ－４  「橋」
+MSG_MD_HASHI
+@COLD_PLAYER(PC_ALL)
+@HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
+@WARP(WARP_DEMO_4)
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_MD_HASHI_BUS,OBJFX_SHOW_NONE)
+@MOVE_GOM_CHAR(GOM_YUNBO,ANIM_MD_HASHI_YUNBO,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_BUS)
+@FRESH_PLAYER(PC_ALL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－５  「ピラミッドダンジョン」
+MSG_MD_DUNG
+@ADD_PARTY(PC_PAULA)
+@ADD_PARTY(PC_JEFF)
+@ADD_PARTY(PC_POO)
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_5)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_DUNG,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－６  「ツーソン」
+MSG_MD_TWSN
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_6)
+@RIDE_CYCLE()
+@COLD_PLAYER(PC_NESS)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_TWSN,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－７  「スカラビ」
+MSG_MD_SKRB
+@ADD_PARTY(PC_PAULA)
+@ADD_PARTY(PC_JEFF)
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_7)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_SKRB,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－８  「フォーサイド」
+MSG_MD_FRSD
+@SETF(FLG_FOUR_TONCHIKI_APPEAR)
+@ADD_PARTY(PC_JEFF)
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_8)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_FRSD,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+MSG_MD_FRSD_YAJIUMA
+@SET_CHAR_DIR(PRSN_FRSD_FIELD_M,DIR_M_LEFT)
+@REMOVE_CHAR(PRSN_FRSD_FIELD_M,ANIM_MAPOBJSTILL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－９  「サマーズ(夕焼け)」
+MSG_MD_SUMS
+@ADD_PARTY(PC_PAULA)
+@ADD_PARTY(PC_JEFF)
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_9)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_SUMS,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+;-------------------------------------------------------
+;       Ｆ－１０  「オネット」
+MSG_MD_ONET
+@COLD_PLAYER(PC_ALL)
+@WARP(WARP_DEMO_10)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_MD_ONET,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+@FRESH_PLAYER(PC_ALL)
+』
+
+
+;------------------------------------------------
+
+
+;プロローグ
+
+MSG_EVT_PROLOGUE_NEW;
+;@BGMSTART(0,BGM_mornin2)
+@SETF(FLG_YAZIUMA_DISAPPEAR)	;野次馬を消しておく
+@SETF(FLG_SYS_MONSTER_OFF)
+@HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_PROLOGUE_POKEY_1,OBJFX_SHOW_NONE)
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
+...;@WI(1)
+...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+...;@FRESH_PLAYER(PC_ALL)
+...;@WAITSYS()
+...;@SET_CAMERA_PARTY()
+...;@COLD_PLAYER(PC_ALL)
+;
+@WARP(WARP_INSEKI_B)
+@COLD_CHAR(PRSN_ONET_FIELD_3S)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_PROLOGUE_POKEY_2,OBJFX_SHOW_NONE)
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
+...;@WI(1)
+...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+...;@FRESH_PLAYER(PC_ALL)
+...;@WAITSYS()
+...;@SET_CAMERA_PARTY()
+...;@COLD_PLAYER(PC_ALL)
+;
+@WARP(WARP_INSEKI_C)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_PROLOGUE_POKEY_3,OBJFX_SHOW_NONE)
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
+...;@WI(1)
+...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+...;@FRESH_PLAYER(PC_ALL)
+...;@WAITSYS()
+...;@SET_CAMERA_PARTY()
+...;@COLD_PLAYER(PC_ALL)
+;
+@SETF( FLG_MYHOME_SLEEPNES_APPEAR )
+@SETF(FLG_BGM_INSEKI_FALL_A)
+;@BGMSTART( 0, BGM_msc16 )
+@SETF(FLG_MYHOME_NES_CHANGE)		;寝間着に着替えておく
+@WARP(WARP_MYHOME)			;ネスの部屋にワープ
+@FRESH_CHAR(PRSN_ONET_NES_NES_A)
+@FRESH_CHAR(PRSN_ONET_NES_NES_B)	;←追加（Ｚｚｚ...）
+@WI(120)
+@WI(120)
+@WI(120)
+@WI(120)
+@WI(120)
+@WI(60)
+@HIDE_CHAR( PRSN_ONET_NES_NES_B, OBJFX_HIDE_NONE )
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_NES_HOME_YURE,OBJFX_SHOW_NONE);振動
+@CLRF(FLG_BGM_INSEKI_FALL_A)
+@SETF(FLG_BGM_INSEKI_FALL_B)
+@MUSISTART()
+@WAITSYS()
+@HIDE_CHAR( PRSN_ONET_NES_NES_A, OBJFX_HIDE_NONE )
+@SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
+@REMOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_INSEKI_WAKEUP_WALK)
+@SET_CAMERA_GOM_CHAR( GOM_HIT_CHR )
+@FRESH_PLAYER( PC_ALL )
+@WAITSYS()
+@SET_CAMERA_PARTY()
+;
+@SETF(FLG_INSEKI_STOPPER_APPEAR)
+@CLRF(FLG_MYHOME_SLEEPNES_APPEAR)
+@CLRF(FLG_YAZIUMA_DISAPPEAR)
+;-----
+@SAVE_GAME()			;プロローグ終了でセーブ
+』
+
+;------------------------------------------------
+
+
+;#6	ポーキー登場他（オープニング）	1.1	T
+
+;★ポーキーのノック「ノックさん」がネスを発見したら（ネスが近づいたら）
+;自分を消し（＆自分が消えるフラグを立て）「ドアを塞ぐポーキー」を出現させ
+;（そのフラグを立てて）FLG_MYHOME_POKEY_ENTER を ON にする。
+
+MSG_EVT_KNOCK;ノックを追加する（ネスのママのアニメーションから起動される）
+@SETF(FLG_MYHOME_START)
+@MUSISTART()
+;@BGMSTART(0,BGM_msc2)
+;@DIS_BGMCHG()
+@MOVE_CHAR(PRSN_ONET_NES_1F_3B,ANIM_KNOCKDOOR,OBJFX_SHOW_NONE)
+』
+
+MSG_EVT_KNOCK_NEAR;ノックさんのアニメーションスクリプトから呼ばれるメッセージ
+@CHKFGOTO(FLG_MYHOME_TO_BE,MSG_EVT_KNOCK_TO_BE);続く！イベント２
+@BGMSTOP(0)
+@SE(SE_se08_door_in)
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_NESS_TOBINOKU,OBJFX_SHOW_NONE)
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
+...;@WI(1)
+...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+...;@FRESH_PLAYER(PC_ALL)
+...;@WAITSYS()			;飛びのくのを待つ
+...;@SET_CAMERA_PARTY()
+...;@COLD_PLAYER(PC_ALL)
+
+@MOVE_CHAR(PRSN_ONET_NES_1F_D,ANIM_PEOPLEWALK0_A,OBJFX_SHOW_NONE);ポーキー登場
+@HIDE_CHAR(PRSN_ONET_NES_1F_3B,OBJFX_HIDE_NONE);ノックを消す
+@SE(SE_se09_door_out)
+@SET_CAMERA_PARTY()
+@GET_CHAR_DIR(PRSN_ONET_NES_1F_D,1,PC_NESS);ネスの方を向く
+@SET_CHAR_DIR(PRSN_ONET_NES_1F_D,0)
+@GET_PLAYER_DIR(PC_NESS,2,PRSN_ONET_NES_1F_D);ネスからポーキーの方向を調べる
+@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+@COLD_PLAYER(PC_ALL)
+@WI(1)
+@COLD_CHAR(PRSN_ONET_NES_1F_D)
+@SETF(FLG_MYHOME_POKEY_ENTER)
+@SETF(FLG_MYHOME_POKEY_APPEAR)
+@CLRF(FLG_MYHOME_KNOCK_APPEAR)
+@SETF(FLG_MYHOME_DOOR_CLOSE)
+@SETF(FLG_MYHOME_1F_TRACY_APPEAR)
+@CLRF(FLG_KAIDAN_TRACY_APPEAR)
+@OPEN(1)
+@GOSUB(MSG_MYHOME_POKEY)
+@CLOSEALL()
+』
+
+MSG_EVT_6_RING;電話止る
+@REMOVE_CHAR(PRSN_ONET_NES_1F_3A,ANIM_MAPOBJSTILL)
+』
+MSG_EVT_6_PHONE_RING;階段WARPより呼ばれる（電話鳴る）
+@REMOVE_CHAR(PRSN_ONET_NES_1F_3A,ANIM_TEL_RING)
+』
+
+;MSG_EVT_6_MAMA;
+;@REMOVE_CHAR(PRSN_ONET_NES_1F_A,ANIM_NESS_MAMA_TO_NESS);ママが近づく
+;@WAITSYS()
+;@COLD_CHAR(PRSN_ONET_NES_1F_A)
+;@GET_PLAYER_DIR(PC_NESS,2,PRSN_ONET_NES_1F_A);ネスからママの方向を調べる
+;@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+;@OPEN(1)
+;@GOSUB(MSG_MYHOME_MAMA_0)
+;@CLOSEALL()
+;』
+
+MSG_EVT_SOFER_POKEY;
+@FRESH_CHAR(PRSN_ONET_NES_1F_F)
+@WAITSYS()
+@COLD_CHAR(PRSN_ONET_NES_1F_F)
+@OPEN(1)
+@GOTO(MSG_MYHOME_POKEY)
+』
+
+MSG_EVT_5_MYDOG;
+@HIDE_CHAR(PRSN_ONET_NES_1F_C,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_ONET_NES_1F_E,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+』
+
+; ###########################################################
+;# ★自動イベントや、プレイヤーパーティーの誰かのセリフなど、#
+;# プレイヤーキャラに対面するキャラクター以外の人のセリフは、#
+;# 原則として、誰がしゃべっているのかが明らかになるように    #
+;# 「漫符」を表示する。                                      #
+; ###########################################################
+
+;--------------------------------------------------------
+
+
+;#7	市街に行くネスを引き止めるポーキー	1.2	T
+
+;★ポーキーを連れている間は、プレイヤーをオネット市街に入れないようにする。
+;オネット市街に入ろうとすると（図書館脇の一本道で）
+;MSG_INSEKI_POKEY_ONET を表示して、それ以上先に進めなくする。
+;●方法：セル替え。FLG_ONET_AMBRAMI / ON 時（ポーキー、ピッキーと別れた時）に
+;セル替えを行うまでは通れないようにしておく。
+;（ＢＧにオートメッセージを設定して MSG_INSEKI_POKEY_ONET を自動表示。）
+;★メッセージ表示時、ネスに後ろを向かせて、
+;後ろにいるポーキーがしゃべっているように演出する。
+
+MSG_INSEKI_POKEY_ONET;ＢＧイベント
+;ポーキーに漫符表示
+@SHOW_MANPU_PLAYER(PC_POKEY,MANPU_BIKKURI)
+@WI(60)
+@HIDE_MANPU_PLAYER(PC_POKEY);ポーキーの漫符消す
+@OPEN(1)
+◆Ｈｅｙ　@DSP_STS(STS_PC_NAME_NES)！@WI(20)↓
+@GET_PLAYER_DIR(PC_NESS,1,PC_POKEY)
+@SET_PLAYER_DIR(PC_NESS,0)
+　　Ｓｏ，　ａｒｅ　ｙｏｕ　ｊｕｓｔ　ｇｏｎｎａ　ｗａｎｄｅｒ　ａｒｏｕｎｄ　ｗｈｅｒｅｖｅｒ　ｙｏｕ　ｐｌｅａｓｅ？@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｙｏｕ　ｓｈｏｕｌｄ　ｔａｋｅ　Ｐｉｃｋｙ　ｈｏｍｅ　ｎｏｗ？
+;;jpn:◆おいおい　@DSP_STS(STS_PC_NAME_NES)！↓
+;@GET_PLAYER_DIR(PC_NESS,1,PC_POKEY)
+;@SET_PLAYER_DIR(PC_NESS,0)
+;;jpn:　そんなに　じぶんのつごうばかりで↓
+;;jpn:　こうどうしないでくれよ。@KEY()↓
+;;jpn:◆ピッキーを↓
+;;jpn:　いえに　つれてくのが　さきだろ。
+@KEY()
+@CLOSEALL()
+』
+
+;---------------------------------------
+
+
+;#8	●ピッキー救出	1.3	T
+
+MSG_INSEKI_PICKEY;はぐれたピッキーのセリフ
+;ピッキーに漫符表示
+;@SHOW_MANPU_CHAR(PRSN_ONET_FIELD_A,MANPU_BIKKURI)
+;@WI(5)
+;@HIDE_MANPU_CHAR(PRSN_ONET_FIELD_A)
+;@WI(5)
+@SHOW_MANPU_CHAR(PRSN_ONET_FIELD_A,MANPU_BIKKURI)
+@WI(60)
+@HIDE_MANPU_CHAR(PRSN_ONET_FIELD_A);ピッキーの漫符消す
+@HIDE_CHAR(PRSN_ONET_FIELD_A,OBJFX_HIDE_NONE)
+@MOVE_GOM_CHAR(GOM_PICKEY,ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE)
+◆Ｗｈａ－！
+;jpn:◆わっ！
+@KEY()↓
+@GET_GOM_CHAR_DIR(GOM_PICKEY,1,PC_NESS)
+@SET_GOM_CHAR_DIR(GOM_PICKEY,0)
+◆Ｏｈ！@KEY()↓
+◆Ｙｏｕ　ｗｏｋｅ　ｍｅ　ｕｐ．．．@KEY()↓
+◆Ｐｏｋｅｙ！@WI(15)　　Ｉ’ｖｅ　ｂｅｅｎ　ｌｏｏｋｉｎｇ　ａｌｌ　ｏｖｅｒ　ｆｏｒ　ｙｏｕ．．．@KEY()↓
+◆Ｙｏｕ　ｓｅｅ，　Ｐｏｋｅｙ　ｇｏｔ　ｓｃａｒｅｄ　ａｎｄ　ｒａｎ　ａｗａｙ　．．．@KEY()↓
+◆Ｗｅｌｌ，　Ｉ’ｍ　ｇｌａｄ　ｔｈａｔ　ｙｏｕ’ｒｅ　ｏｋａｙ　ａｔ　ｌｅａｓｔ．．．@KEY()↓
+◆Ｌｅｔ’ｓ　ｇｏ　ｈｏｍｅ　ｎｏｗ．@WI(20)　　Ｉ　ｂｅｔ　ｍｏｍ　ａｎｄ　ｄａｄ　ａｒｅ　ｗｏｒｒｉｅｄ　ｓｉｃｋ　ａｂｏｕｔ　ｕｓ．@KEY()↓
+◆Ｇｅｅｚ！@WI(15)　　Ｓｏｍｅｔｉｍｅｓ　Ｉ　ｗｏｎｄｅｒ　ｗｈｉｃｈ　ｏｎｅ　ｏｆ　ｕｓ　ｉｓ　ｔｈｅ　ｒｅａｌ　ｂｉｇ　ｂｒｏｔｈｅｒ．
+;jpn:◆ポーキーが　こわがって↓
+;jpn:　いなくなっちゃったから↓
+;jpn:　ずいぶん　さがしてたんだぜ。@KEY()↓
+;jpn:◆ぶじで　よかったよ。@WI(15)↓
+;jpn:　はやく　うちに　かえろうぜ。@WI(15)↓
+;jpn:　おやも　しんぱい　してるぞ。@KEY()↓
+;jpn:◆まったく　どっちが　あにきだか↓
+;jpn:　わかりゃしないよ。
+@KEY()
+@SE(SE_se10_present_open)
+@GOSUB( MSG_ADD_PICKEY )	;パーティー参加のスクリプト
+@SETF(FLG_PICKEY)
+@SETF(FLG_ONET_MINCES_APPEAR);ポーキーパパ出現
+@SETF(FLG_ONET_LARDNA_APPEAR);ポーキーママ出現
+;@SETF(FLG_INSEKI_HITMAN_APPEAR);検査君は使用しない
+@SET_HIT_RECT(1,HRECT_ONET_BUNBUN,MSG_INSEKI_POKEY)
+@SETF(FLG_INSEKI)
+@CLRF(FLG_INSEKI_PICKEY_APPEAR)
+@CLRF(FLG_ONET_POKEY_DOOR_CLOSE)
+@SETF(FLG_SYS_MONSTER_OFF);スターマンを倒すまではモンスターを出さない
+』
+
+;----------------------------------------
+
+
+;#9	隕石落下跡から帰る犬	1.3	T
+
+;★ピッキーを仲間にする前に、犬を仲間からはずさなければならない。
+;★ピッキーがネスをサーチして、発見したら MSG_DOG_BYE を発行する。
+
+;●→ピッキーのスクリプト
+
+MSG_DOG_BYE;はぐれたピッキーのスクリプトから起動
+@GET_ORDER_PLAYER(3)
+@EQ(PC_MYHOMEDOG)
+@FALSE_GOTO(MSG_END)
+;犬に漫符表示
+@OPEN(1)
+@GET_PLAYER_DIR(PC_NESS,1,PC_MYHOMEDOG);ネスから犬の方向を調べる
+@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+@GET_PLAYER_DIR(PC_POKEY,1,PC_MYHOMEDOG);ポーキーから犬の方向を調べる
+@SET_PLAYER_DIR(PC_POKEY,0);ポーキーをその方向に向ける
+;◆（あ　もう　ごはんの　じかんだ。↓
+;　かえらなくちゃ　かえらなくちゃ）@KEY()
+◆Ａｗｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｏｆ！@KEY()↓
+◆（Ｉｆ　Ｉ　ｋｎｅｗ　ｔｈｉｓ　ｗａｓ　ｇｏｉｎｇ　ｔｏ　ｂｅ　ｓｕｃｈ　ａ　ｓｃａｒｙ　ｐｌａｃｅ，@KEY()↓
+◆Ｉ　ｗｏｕｌｄｎ’ｔ　ｈａｖｅ　ｃｏｍｅ　ａｌｏｎｇ．．．Ｉ’ｍ　ｏｕｔｔａ　ｈｅｒｅ！）
+;jpn:◆（！@WI(10)！@WI(10)！@WI(10)！@WI(10)！@WI(10)　こんな↓
+;jpn:　こわいところだと　しってたら‥‥@KEY()↓
+;jpn:◆ぼく　こなかったよ。@WI(20)↓
+;jpn:　‥‥かえる！）
+@KEYNP()
+;犬の漫符消す
+@GOSUB(MSG_REMOVE_DOG)
+@CLOSEALL()
+@MOVE_GOM_CHAR(GOM_MYDOG,ANIM_RETURNDOG,OBJFX_SHOW_NONE);家に帰る犬のオブジェ追加
+@WAITSYS()
+@REMOVE_CHAR(PRSN_ONET_FIELD_A,ANIM_PEOPLESLEEP);ピッキー検査止める
+@SETF(FLG_DOG_LATER_APPEAR)
+』
+;----------------------------------------
+
+
+;#10	ブンブーン仲間に	1.4	T	こまわり君シート参照
+
+;★隕石落下跡からの帰り道で透明な検査君が
+;ピッキーを仲間にしたネスが近づくのを待っています。
+;（FLG_PICKEY が ON 状態のプレイヤー）
+;★検査君はピッキーを仲間にしたネスを発見したらMSG_INSEKI_POKEY を発行。
+
+MSG_EVT_BUNBUNBUN;
+@CHKFGOTO(FLG_BUNBUN,MSG_EVT_BUNBUNBUN_10)
+』
+MSG_EVT_BUNBUNBUN_10;
+@MOVE_GOM_CHAR(GOM_BUN,ANIM_BUNBUUN,OBJFX_SHOW_NONE)
+』
+
+MSG_INSEKI_POKEY;検査君から呼ばれるメッセージのはずだけど
+MSG_EVT_ADD_BUNBUUN;
+@RES_HIT_RECT(1)
+;ポーキーに漫符表示
+@GET_PLAYER_DIR(PC_POKEY,1,PC_NESS);ポーキーからネスの方向を調べる
+@SET_PLAYER_DIR(PC_POKEY,0);ポーキーをその方向に向ける
+@OPEN(1)
+;◆@DSP_STS(STS_PC_NAME_NES)！
+;@KEY()↓
+@GET_PLAYER_DIR(PC_NESS,1,PC_POKEY);ネスからポーキーの方向を調べる
+@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+◆@DSP_NAME(PC_NESS)！@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｈｅａｒ　ａ　ｂｕｚｚｉｎｇ　ｔｈａｔ　ｓｏｕｎｄｓ　ｌｉｋｅ　ａ　ｂｅｅ　ｆｌｙｉｎｇ　ａｒｏｕｎｄ？@KEY()↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆ブーンブーンっていう↓
+;jpn:　カブトむしが　とんでるみたいな↓
+;jpn:　おとが　きこえないか？@KEY()↓
+;jpn:　　<きこえる>　　<きこえない>
+@DSP_ITEM(2)
+@SELGOTO(_INSEKI_POKEY_YES,_INSEKI_POKEY_NO)
+
+_INSEKI_POKEY_NO;
+◆Ｏｈ，　ｃ’ｍｏｎ．．．　　Ｙｏｕ　ｍｕｓｔ　ｈｅａｒ　ｉｔ．．．
+;jpn:◆きこえろよォ！
+@KEY()↓
+@GOTO(_INSEKI_POKEY_BUN)
+
+_INSEKI_POKEY_YES;
+◆Ｙｅｓ！　　Ｙｏｕ　ｃａｎ　ｈｅａｒ　ｉｔ！
+;jpn:◆そうだろう！↓
+;jpn:　やっぱり　きこえるよな。
+@KEY()↓
+
+_INSEKI_POKEY_BUN;
+@CLOSEALL()
+@BGMSTART(0,BGM_kobu0)	;「ぶんぶん」鳴り出してから向くように変更
+@WI( 60 )		;  (1994.6.10 malta)
+@GET_PLAYER_DIR(PC_NESS,2,PRSN_ONET_FIELD_4F);隕石落下跡を見る
+@SET_PLAYER_DIR(PC_NESS,0)
+@GET_PLAYER_DIR(PC_POKEY,2,PRSN_ONET_FIELD_4F);隕石落下跡を見る
+@SET_PLAYER_DIR(PC_POKEY,0)
+@GET_PLAYER_DIR(PC_PICKEY,2,PRSN_ONET_FIELD_4F);隕石落下跡を見る
+@SET_PLAYER_DIR(PC_PICKEY,0)
+
+@FRESH_GOM_CHAR(GOM_METEOMARK)	;隕石動く（PEOPLEWALKE0）
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_BUNBUUN_BEAM,OBJFX_SHOW_NONE)	;光線
+@WAITSYS()
+@MOVE_GOM_CHAR(GOM_BUN,ANIM_BUNBUN_APPEAR,OBJFX_SHOW_NONE)	;ブンブーン
+@WAITSYS()
+;@COLD_GOM_CHAR(GOM_BUN)
+;@WI(120);ウェイト
+;@WI(60);ウェイト
+MSG_INSEKI_BUNBUN;
+;ブンブーンに漫符表示
+@OPEN(1)
+◆Ａ　ｂｅｅ　Ｉ　ａｍ@KEY()↓
+◆ｎｏｔ．．．@KEY()↓
+◆Ｉ’ｍ　ｆｒｏｍ　１０　ｙｅａｒｓ　ｉｎ　ｔｈｅ　ｆｕｔｕｒｅ．@KEY()↓
+◆Ａｎｄ，@KEY()↓
+◆ｉｎ　ｔｈｅ　ｆｕｔｕｒｅ，@WI(15)　ａｌｌ　ｉｓ　ｄｅｖａｓｔａｔｉｏｎ．．．@KEY()↓
+◆Ｇｉｙｇａｓ，　ｔｈｅ　ｕｎｉｖｅｒｓａｌ　ｃｏｓｍｉｃ　ｄｅｓｔｒｏｙｅｒ，@KEY()↓
+◆ｓｅｎｔ　ａｌｌ　ｔｏ　ｔｈｅ　ｈｏｒｒｏｒ　ｏｆ　ｅｔｅｒｎａｌ　ｄａｒｋｎｅｓｓ．．．@KEY()↓
+◆．．．@KEY()↓
+◆Ｈｏｗｅｖｅｒ，　ｙｏｕ　ｍｕｓｔ　ｌｉｓｔｅｎ！@KEY()↓
+◆Ｗｈｅｒｅ　Ｉ　ａｍ　ｆｒｏｍ，@KEY()↓
+◆ｔｈｅｒｅ　ｉｓ　ａ　ｗｅｌｌ－ｋｎｏｗｎ　ｌｅｇｅｎｄ　ｔｈａｔ　ｈａｓ　ｂｅｅｎ　ｈａｎｄｅｄ　ｄｏｗｎ　ｆｒｏｍ　ａｎｃｉｅｎｔ　ｔｉｍｅｓ．@KEY()↓
+◆Ｉｔ　ｓａｙｓ　”Ｗｈｅｎ　ｔｈｅ　ｃｈｏｓｅｎ　ｂｏｙ　ｒｅａｃｈｅｓ　ｔｈｅ　ｐｏｉｎｔ，@WI(15)　ｈｅ　ｗｉｌｌ　ｆｉｎｄ　ｔｈｅ　ｌｉｇｈｔ．@KEY()↓
+◆Ｔｈｅ　ｐａｓｓｉｎｇ　ｏｆ　ｔｉｍｅ　ｗｉｌｌ　ｓｈａｔｔｅｒ　ｔｈｅ　ｎｉｇｈｔｍａｒｅ　ｒｏｃｋ@KEY()↓
+◆ａｎｄ　ｗｉｌｌ　ｒｅｖｅａｌ　ｔｈｅ　ｐａｔｈ　ｏｆ　ｌｉｇｈｔ．”@KEY()↓
+◆Ｙｏｕ　ｓｅｅ，@WI(15)　ｉｔ　ｉｓ　ｍｙ　ｏｐｉｎｉｏｎ　ｔｈａｔ　ｙｏｕ　ａｒｅ　ｔｈａｔ　ｂｏｙ，　@DSP_NAME(PC_NESS)．@KEY()↓
+◆Ｔｈｉｓ　Ｉ　ｂｅｌｉｅｖｅ．．．@KEY()↓
+◆．．．@KEY()↓
+◆Ｇｉｙｇａｓ’　ｍｏｎｓｔｒｏｕｓ　ｐｌａｎ　ｍｕｓｔ　ｈａｖｅ　ｂｅｅｎ　ｓｅｔ　ｉｎ　ｍｏｔｉｏｎ　ｓｏｍｅｗｈｅｒｅ　ｏｎ　Ｅａｒｔｈ．．．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｓｔａｒｔ　ｔｏ　ｃｏｎｆｒｏｎｔ　ｔｈｅ　ｅｎｅｍｙ　ｉｍｍｅｄｉａｔｅｌｙ，@KEY()↓
+◆ｙｏｕ　ｍａｙ　ｈａｖｅ　ｔｉｍｅ　ｔｏ　ｃｏｕｎｔｅｒ　ｔｈｅ　ｅｖｉｌ　ｉｎｔｅｎｔｉｏｎｓ　ｏｆ　Ｇｉｙｇａｓ．@KEY()↓
+;jpn:◆わしは　カブトむし@KEY()↓
+;jpn:◆では　ない！@KEY()↓
+;jpn:◆１０ねんごの　みらいから↓
+;jpn:　やってきたもの@KEY()↓
+;jpn:◆じゃ！@KEY()↓
+;jpn:◆みらいは　もう　さんたんたる↓
+;jpn:　ありさま‥‥@WI(60)じゃ！@KEY()↓
+;jpn:◆ギーグという　ぎんがうちゅう↓
+;jpn:　さいだいの　はかいぬしが@KEY()↓
+;jpn:◆なにもかもを　じごくの↓
+;jpn:　くらやみに　たたきこんで↓
+;jpn:　しまったのじゃ！@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆しかし@WI(30)　しかしじゃ‥‥@KEY()↓
+;jpn:◆わしのいる　みらいに↓
+;jpn:　ふしぎな　いいつたえが↓
+;jpn:　のこっているのじゃ！@KEY()↓
+;jpn:◆「しょうねんが　そこにたどり↓
+;jpn:　つくならば　ただしきものは↓
+;jpn:　ひかりを　みつける。@KEY()↓
+;jpn:◆ときの　ながれは　あくむの↓
+;jpn:　おおいわを　くだき↓
+;jpn:　ひかりの　みちができる」‥‥と。@KEY()↓
+;jpn:◆その　しょうねんが@WI(30)　@DSP_STS(STS_PC_NAME_NES)！↓
+;jpn:　あんた　なのじゃということが@KEY()↓
+;jpn:◆わしのするどいちょっかんで↓
+;jpn:　わかったの@KEY()↓
+;jpn:◆じゃ！@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆ギーグの　あくのけいかくは↓
+;jpn:　もうすでに　ちきゅうの　いちぶに↓
+;jpn:　およんで　いるはず　じゃ！
+;@KEY()↓
+;◆だが　その　じゃあくな　ちからに↓
+;　あらがう　エナジーを@KEY()↓
+;◆ちきゅうと　にんげんは↓
+;　もっているはず　なのじゃ！@KEY()↓
+;jpn:　はじめれば　まにあうはず@KEY()↓
+;jpn:◆じゃ！！@KEY()↓
+;◆@DSP_STS(STS_PC_NAME_NES)よ！↓
+;　あんたが　たたかうのは@KEY()↓
+;◆ギーグの　おくりこんだ　てきたち↓
+;　ばかりでは　ない。@KEY()↓
+;◆おなじ　ちきゅうのなかの↓
+;　あしきこころの　にんげんたちも@KEY()↓
+;◆あんたの　ぼうけんのたびを↓
+;　ぼうがいするじゃろう。@KEY()↓
+;◆‥‥‥‥‥‥‥‥‥‥‥‥‥‥‥
+◆Ｔｈｒｅｅ　ｔｈｉｎｇｓ　ａｒｅ　ｏｆ　ｔｈｅ　ｕｔｍｏｓｔ　ｉｍｐｏｒｔａｎｃｅ：@WI(15)　ｗｉｓｄｏｍ，@WI(15)　ｃｏｕｒａｇｅ，@WI(20)　ａｎｄ　ｆｒｉｅｎｄｓｈｉｐ．@KEY()↓
+◆．．．Ｔｈｅ　ｌｅｇｅｎｄｓ　ｆｒｏｍ　ｔｈｅ　ａｎｃｉｅｎｔ　ｔｉｍｅｓ　ｔｅｌｌ　ｏｆ　ｔｈｒｅｅ　ｂｏｙｓ　ａｎｄ　ａ　ｇｉｒｌ@KEY()↓
+◆ｗｈｏ　ｄｅｆｅａｔ　Ｇｉｙｇａｓ．@KEY()↓
+◆．．．Ｉ　ｗｉｌｌ　ｔｅｌｌ　ｙｏｕ　ｍｏｒｅ　ｌａｔｅｒ．@KEY()↓
+◆Ｇｏ　ｎｏｗ！@WI(20)　　Ａｎｄ　ｄｏ　ｎｏｔ　ｂｅ　ａｎｘｉｏｕｓ　ａｂｏｕｔ　ｔｈｅ　ｆｕｔｕｒｅ．@KEY()↓
+◆Ｙｏｕ　ｈａｖｅ　ｍｕｃｈ　ｗｏｒｋ　ｔｏ　ｄｏ，　@DSP_NAME(PC_NESS)．@KEY()↓
+◆Ｄｉｄ　ｙｏｕ　ｌｉｓｔｅｎ　ｔｏ　ｗｈａｔ　Ｉ　ｔｏｌｄ　ｙｏｕ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆たいせつなのは@WI(20)　ちえと　ゆうき↓
+;jpn:　そして　なかまたち。@KEY()↓
+;jpn:◆‥‥いいつたえでは@KEY()↓
+;jpn:◆３にんの　しょうねんと↓
+;jpn:　ひとりの　しょうじょが↓
+;jpn:　ギーグを　たおすという。@KEY()↓
+;jpn:◆くわしいことは↓
+;jpn:　あとでおしえる。@KEY()↓
+;jpn:◆いくぞ！　しんぱいするな。@KEY()↓
+;jpn:◆‥‥とはいうものの　@DSP_STS(STS_PC_NAME_NES)！@KEY()↓
+;jpn:◆わしのはなしを↓
+;jpn:　ちゃんと　きいていたか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_INSEKI_BUNBUN_YES,_INSEKI_BUNBUN_NO)
+_INSEKI_BUNBUN_NO;
+◆Ｉ　ｈａｔｅ　ｔｏ　ｇｏ　ｏｖｅｒ　ｉｔ　ａｇａｉｎ，@WI(15)　ｂｕｔ　Ｉ　ｇｕｅｓｓ　Ｉ’ｌｌ　ｓｔａｒｔ　ｏｖｅｒ．．．@KEY()↓
+◆Ｗｅ’ｌｌ　ｂｅ　ｈｅｒｅ　’ｔｉｌ　ｓｕｎｒｉｓｅ！
+;jpn:◆しつこいくらい　ながいけど↓
+;jpn:　もういっかい　はじめから↓
+;jpn:　かたってやろう。@KEY()↓
+;jpn:◆よがあけるまでな！
+@KEY()↓
+@GOTO(MSG_INSEKI_BUNBUN)
+
+_INSEKI_BUNBUN_YES;
+◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｌｉｓｔｅｎｉｎｇ　ｔｏ　ｍｙ　ｌｏｎｇ　ｓｔｏｒｙ．@KEY()↓
+◆Ｙｏｕ　ａｒｅ　ａｓ　ｅｘｃｅｐｔｉｏｎａｌ　ａｓ　Ｉ　ｅｘｐｅｃｔｅｄ　ｙｏｕ　ｔｏ　ｂｅ．．．
+;jpn:◆ながいはなしを↓
+;jpn:　よくきいた。@KEY()↓
+;jpn:◆みこみどおりの↓
+;jpn:　かんしんな　しょうねんじゃ！
+@KEY()
+@CLOSEALL()
+@BGMSTART(0,BGM_friend)
+@WI(120)
+@WI(60)
+@WI(120)
+@WI(120)
+@OPEN(1)
+◆Ｂｕｚｚ　Ｂｕｚｚ　ｎｏｗ　ｊｏｉｎｓ　ｙｏｕ．
+;＠ｙｏｕじゃないほうがいい？三浦
+;jpn:◆（ブンブーンが　なかまになった）
+@KEY()
+@CLOSEALL()
+@FRESH_GOM_CHAR(GOM_BUN)	;ブンブーンはネスの頭上へ
+@SETF(FLG_BUNBUN)
+@MUSISTART()
+;@BGMSTART(0,BGM_kobu)
+
+MSG_INSEKI_POKEY2;
+@FRESH_GOM_CHAR(GOM_BUN)
+@WI(60)
+@SHOW_MANPU_PLAYER(PC_POKEY,MANPU_BIKKURI);ポーキーに漫符表示
+@WI(60)
+@HIDE_MANPU_PLAYER(PC_POKEY)
+@COLD_GOM_CHAR(GOM_BUN)
+@OPEN(1)
+◆@DSP_NAME(PC_NESS)！@KEY()↓
+◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ’ｒｅ　ｒｅａｌｌｙ　ｉｎ　ａ　ｌｏｔ　ｏｆ　ｔｒｏｕｂｌｅ　ｔｈｉｓ　ｔｉｍｅ．．．@KEY()↓
+◆Ｔｈｒｅｅ　ｂｏｙｓ，@WI(15)　ｈｅ　ｓａｉｄ？　　．．．Ｕｈｈｈ．．．@KEY()↓
+◆Ｉ’ｍ　ｎｏｔ　ｏｎｅ　ｏｆ　ｔｈｏｓｅ　ｔｈｒｅｅ，　ａｍ　Ｉ？．．．@KEY()↓
+◆．．．’Ｃａｕｓｅ．．．Ｉ’ｍ　ｎｏｔ　ｉｎｔｏ　ｔｈｉｓ　　ｋｉｎｄ　ｏｆ　ｔｈｉｎｇ　ａｔ　ａｌｌ．．．@KEY()↓
+◆ｇｅｅｚ．@WI(20)　　Ｍｙ　ｈｅａｒｔ　ｉｓ　ａｌｍｏｓｔ　ｐｏｕｎｄｉｎｇ　ｒｉｇｈｔ　ｏｕｔ　ｏｆ　ｍｙ　ｃｈｅｓｔ！．．．
+;◆@DSP_STS(STS_PC_NAME_NES)！@KEY()↓
+;jpn:◆ずいぶん　やっかいなことに↓
+;jpn:　まきこまれた　みたいだな。@KEY()↓
+;jpn:◆３にんの　しょうねん@WI(5)って@WI(30)↓
+;jpn:　おれも　はいってるのかなぁ。@WI(20)↓
+;jpn:　‥‥いやだなぁ。@WI(20)ドキドキ
+@KEY()
+@CLOSEALL()
+;@CLRF(FLG_INSEKI_HITMAN_APPEAR);検査君を出現させなくする
+@SET_HIT_RECT(1,HRECT_INSEKI_STARMAN,MSG_INSEKI_STARMAN)
+』
+
+;------------------------------------------------
+
+
+;#11	●ポーキー、ピッキーと別れる	1.5	T	こまわり君参照
+
+;★ポーキー父アンブラミが MSG_AMBRAMI_MINCE の途中
+;ポーキー、ピッキーを連れて左側画面外に消え、
+;「ピシッパシッ！」の効果音の後、一人で戻ってきてセリフの残りを続ける。
+
+MSG_AMBRAMI_MINCE;ポーキー父ミンチ氏のセリフ
+@CHKFGOTO(FLG_ONET_AMBRAMI,_AMBRAMI_MINCE2)
+◆Ｉ’ｍ　ｒｅａｌｌｙ　ｓｏｒｒｙ　ｔｈａｔ　ｍｙ　ｋｉｄｓ　ｔｒｏｕｂｌｅｄ　ｙｏｕ　ｓｏ　ｍｕｃｈ．．．@KEY()↓
+◆Ｂｏｔｈ　ｏｆ　ｙｏｕ　ａｒｅ　ｒｅａｌｌｙ　ｇｏｉｎｇ　ｔｏ　ｇｅｔ　ｉｔ　ｎｏｗ！
+;jpn:◆うちのガキどもが　どえらい↓
+;jpn:　ごめいわくを　かけたようで↓
+;jpn:　すまなかったね。@KEY()↓
+;jpn:◆ふたりとも　おしおきだぞ！
+@KEY()
+;@GOSUB(MSG_REMOVE_POKEY)
+;@GOSUB(MSG_REMOVE_PICKEY)
+@CLOSEALL()
+@FRESH_GOM_CHAR(GOM_BUN)
+@FRESH_CHAR(PRSN_ONET_POKEY_1F_B)
+@DEL_PARTY(PC_POKEY)
+@MOVE_GOM_CHAR(GOM_POKEY,ANIM_OSHIOKI_POKEY,OBJFX_SHOW_NONE)
+@DEL_PARTY(PC_PICKEY)
+@MOVE_GOM_CHAR(GOM_PICKEY,ANIM_OSHIOKI_PICKEY,OBJFX_SHOW_NONE)
+@WAITSYS()
+@REMOVE_CHAR(PRSN_ONET_POKEY_1F_A,ANIM_OSHIOKI_MINCE)
+@WAITSYS()
+;@COLD_GOM_CHAR(GOM_BUN)
+@COLD_CHAR(PRSN_ONET_POKEY_1F_B)
+@GET_PLAYER_DIR(PC_NESS,2,PRSN_ONET_POKEY_1F_A);ネスからおやじの方向を調べる
+@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+@OPEN(1)
+◆Ｂｙ　ｔｈｅ　ｗａｙ，　Ｉ　ｗｏｕｌｄ　ｂｅ　ｈａｐｐｙ　ｉｆ　ｙｏｕ　ｌｅｆｔ　ｓｏｍｅｔｉｍｅ　ｓｏｏｎ．@KEY()↓
+◆Ｉ’ｍ　ｔｉｒｅｄ　ｏｆ　ｙｏｕｒ　ｆａｍｉｌｙ　ｌｉｖｉｎｇ　ｎｅｘｔ　ｄｏｏｒ．@KEY()↓
+◆Ｗｅ’ｖｅ　ｌｏａｎｅｄ　ｙｏｕｒ　ｆａｔｈｅｒ　ａ　ｌｏｔ　ｏｆ　ｍｏｎｅｙ．@KEY()↓
+◆Ｉｔ　ｍａｙ　ｈａｖｅ　ｂｅｅｎ　ａ　ｈｕｎｄｒｅｄ　ｔｈｏｕｓａｎｄ　ｄｏｌｌａｒｓ　ｏｒ　ｍｏｒｅ．．．@KEY()↓
+◆Ｗｅｌｌ，　Ｉ　ｇｕｅｓｓ　ｉｔ　ｒｅａｌｌｙ　ｃｏｕｌｄ　ｈａｖｅ　ｂｅｅｎ　ｌｅｓｓ，@KEY()↓
+◆ｂｕｔ　ｂｅｃａｕｓｅ　ｏｆ　ｔｈｅ　ｌｏａｎ，　ｍｙ　ｆａｍｉｌｙ　ａｎｄ　Ｉ　ｎｏｗ　ｌｉｖｅ　ｉｎ　ｐｏｖｅｒｔｙ！
+;jpn:◆ところで　おたくのいえ@WI(15)↓
+;jpn:　いいかげんに　たちのいちゃ↓
+;jpn:　くれないもんかねぇ‥‥@KEY()↓
+;jpn:◆あんたの　おやじさんにゃ↓
+;jpn:　どえらい　かねを　かしてるのさ。@KEY()↓
+;jpn:◆なんびゃくまんおくドル‥‥@KEY()↓
+;jpn:◆に　ちょっと　かけるくらいのな。@KEY()↓
+;jpn:◆おかげで　うちは↓
+;jpn:　びんぼうぐらしを　してるのさ。
+@KEY()
+@CLOSEALL()
+@FRESH_GOM_CHAR(GOM_BUN)
+@REMOVE_CHAR(PRSN_ONET_POKEY_1F_A,ANIM_PEOPLEWALK1)
+
+;★ここでラードナ（ポーキー母）のアニメーション切り替え
+@REMOVE_CHAR(PRSN_ONET_POKEY_1F_B,ANIM_LARDNA_KEE)
+@WAITSYS()
+;@COLD_GOM_CHAR(GOM_BUN)
+@COLD_CHAR(PRSN_ONET_POKEY_1F_A)
+_LARDNA_MINCE2;
+@GET_PLAYER_DIR(PC_NESS,2,PRSN_ONET_POKEY_1F_B);ネスからラードナの方向を調べる
+@SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
+@OPEN(1)
+◆Ｍｙ　ｈｕｓｂａｎｄ　ｉｓ　ｍｕｃｈ　ｔｏｏ　ｌｅｎｉｅｎｔ　ｗｉｔｈ　ｔｈｅ　ｃｈｉｌｄｒｅｎ．@KEY()↓
+◆Ｏｈ　ｗｅｌｌ，　ｎｉｃｅ　ｇｕｙｓ　ｆｉｎｉｓｈ　ｌａｓｔ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｔｈｅ　ｓｔｏｒｙ　ｏｆ　ｏｕｒ　ｌｉｆｅ．．．
+;jpn:◆ほんとに　うちのひとの↓
+;jpn:　おひとよしにゃ　あきれるよ。@KEY()↓
+;jpn:◆しょうじきもんは　そんして↓
+;jpn:　ばーっかり‥‥@KEY()↓
+;jpn:◆あたしらみたいに　ね。
+@KEY()↓
+@CLOSEALL()
+@FRESH_GOM_CHAR(GOM_BUN)
+@FRESH_CHAR(PRSN_ONET_POKEY_1F_A)
+@FRESH_CHAR(PRSN_ONET_POKEY_1F_B)
+
+;★台詞中ブンブーン（虫）が出現して画面を飛び回ってポーキー母の近くへ。
+;@SE(SE_se70_bunboon_move)
+@REMOVE_GOM_CHAR(GOM_BUN,ANIM_BUNBUN_DIE)
+@RESF(FLG_TEMP_1)
+@WAITSYS()
+@WI(120)
+@COLD_GOM_CHAR(GOM_BUN)
+@COLD_CHAR(PRSN_ONET_POKEY_1F_A)
+@COLD_CHAR(PRSN_ONET_POKEY_1F_B)
+;
+@OPEN(1)
+◆Ａｙａａａｅｅｅ！@KEY()↓
+◆Ｉ　ｔｈｉｎｋ　ｉｔ’ｓ　ａ　ｄｕｎｇ　ｂｅｅｔｌｅ！@KEY()↓
+◆Ｉ’ｌｌ　ｓｍａｓｈ　ｙｏｕｒ　ｇｕｔｓ　ｏｕｔ！
+;jpn:◆キイイー！@WI(20)↓
+;jpn:　こうるさい　べんじょバエだよ！@WI(15)↓
+;jpn:　しんで　じごくへいけ！！
+@KEY()
+@CLOSEALL()
+@FRESH_GOM_CHAR(GOM_BUN)
+@REMOVE_CHAR( PRSN_ONET_POKEY_1F_B, ANIM_LARDNA_SLAP_BUNBUUN );ラードナが叩く
+@WAITSYS()
+@BGMSTART(0,BGM_bun2)
+@SETF(FLG_TEMP_1);ブンブーンたたかれた！
+@WAITSYS()
+@SETF(FLG_ONET_AMBRAMI);（この位置にあるのは曲設定の為）
+;@MUSISTART();叩かれた後は無音に
+@HIDE_GOM_CHAR(GOM_BUN,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_ONET_POKEY_1F_C,ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE)
+@FRESH_CHAR(PRSN_ONET_POKEY_1F_A)
+@REMOVE_CHAR(PRSN_ONET_POKEY_1F_B,ANIM_PEOPLEWALK1)
+@SETF(FLG_ONET_MYHOME_BUNBUN_APPEAR)
+@SETF(FLG_1FMIZUNO_APPEAR)
+@SETF(FLG_ONET_2FPOKEY_APPEAR)
+@SETF(FLG_ONET_2FPICKEY_APPEAR)
+@SETF(FLG_ONET_MIZUNO_DOOR_OPEN);水野家に入れる
+@CLRF(FLG_POKEY)
+@CLRF(FLG_PICKEY)
+@CLRF(FLG_BUNBUN)
+@CLRF(FLG_SYS_MONSTER_OFF);ブンブーンと別れたら敵を出す
+@SETF(FLG_ONET_LARDNA)
+@SET_HIT_RECT(1,HRECT_BUNBUN_DEATH,MSG_BUNBUN_SINI)
+;
+;カメラマンのスタンバイ
+;
+@SETF(FLG_PHOTO_MYHOME);撮り頃フラグ
+@SETF(FLG_PHOTO_ONETMISAKI);撮り頃フラグ
+@SETF(FLG_PHOTO_CYCLESHOP);撮り頃フラグ
+;@SETF(FLG_PHOTO_CHAOS);撮り頃フラグ;パス入手時に変更
+;@SETF(FLG_PHOTO_MAZE);撮り頃フラグ;Ｄ男カンバンチェックに変更
+@SETF(FLG_PHOTO_HAKABA);撮り頃フラグ
+@SETF(FLG_PHOTO_WATERFALL);撮り頃フラグ
+@SETF(FLG_PHOTO_BRIDGE);撮り頃フラグ
+@SETF(FLG_PHOTO_DINOSOR);撮り頃フラグ
+@SETF(FLG_PHOTO_BUILDING);撮り頃フラグ
+@SETF(FLG_PHOTO_STONEHENGE);撮り頃フラグ
+@SETF(FLG_PHOTO_SUMS_HOTEL);撮り頃フラグ
+@SETF(FLG_PHOTO_SUMS_REST);撮り頃フラグ
+@SETF(FLG_PHOTO_SUMS_BEACH);撮り頃フラグ
+;@SETF(FLG_PHOTO_TOTO);撮り頃フラグ;ランマ篇の後に変更
+@SETF(FLG_PHOTO_SKARABI);撮り頃フラグ
+@SETF(FLG_PHOTO_PYRAMID);撮り頃フラグ
+;@SETF(FLG_PHOTO_GUMI);撮り頃フラグ;長老に本を渡すメッセージからに変更
+;
+;@SETF(FLG_THRK_URBAN_ZOMBI_GONE);CES用フラグ設定（CES終了につき解除。三浦）
+;
+』
+
+_AMBRAMI_MINCE2;あらためて話し掛けると
+◆＊Ｓｉｇｈ＊．．．Ｉ’ｍ　ｓｏ　ｔｉｒｅｄ．．．ｎａｇ，　ｎａｇ，　ｎａｇ．．．
+;jpn:◆まったく　もう‥‥ブツブツ。
+@KEYNP()
+』
+
+;---------------------------------------------------------------------
+
+
+;#12	●ブンブーンの最期	1.5	T
+
+;ネスがブンブーン（PRSN_）に接触する程近づいたらメッセージ
+;MSG_BUNBUN_SINI を発行する。
+
+MSG_BUNBUN_SINI;
+@CHKF(FLG_ONET_MYHOME_BUNBUN_APPEAR)	;消えてるはず
+@FALSE_GOTO(MSG_SYS_HANASU_NG)		;なので台詞なし
+;漫符の絵を表示（瀕死のブンブーンの近く）
+@SHOW_MANPU_CHAR(PRSN_ONET_POKEY_1F_C,MANPU_BIKKURI)
+@WI(60)
+@HIDE_MANPU_CHAR(PRSN_ONET_POKEY_1F_C)
+@GET_PLAYER_DIR(PC_NESS,2,PRSN_ONET_POKEY_1F_C)
+@SET_PLAYER_DIR(PC_NESS,0)
+@BGMSTOP(0)
+@OPEN(1)
+◆Ａｇｈ！　＊Ｇａｓｐ＊@KEY()↓
+◆Ｉ　ｗａｓ．．．@KEY()↓
+◆ｍｕｃｈ　ｗｅａｋｅｒ　ｔｈａｎ　Ｉ　ｔｈｏｕｇｈｔ．．．@KEY()↓
+◆Ｓｏ　ｙｏｕ　ｍｕｓｔ　ｎｏｗ　ｂｅｇｉｎ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ．．．@KEY()↓
+◆ｓｅｅ．．．@KEY()↓
+◆ｙｏｕ．．．
+;jpn:◆う　う　おもったよりも↓
+;jpn:　ずっと　ずっと↓
+;jpn:　かなり‥‥@KEY()↓
+;jpn:◆わしは　よわかった。↓
+;jpn:　しかし　あんたは　わしにかまわず↓
+;jpn:　ぼうけんのたびに　でるの@KEY()↓
+;jpn:◆じ‥‥@KEY()↓
+;jpn:◆ゃ‥‥
+@KEYNP()
+@CLOSEALL()
+@WI(60)↓
+@WI(60)↓
+@OPEN( 1 )
+◆Ｏｈ，↓
+　　Ｉ　ｊｕｓｔ　ｒｅｍｅｍｂｅｒｅｄ．．．@KEY()↓
+◆ｌｉｓｔｅｎ　ｔｏ　ｍｙ　ｆｉｎａｌ　ｗｏｒｄｓ．．．
+;jpn:◆あっ@KEY()↓
+;jpn:◆そうだ！@KEY()↓
+;jpn:◆ゆいごんを　きいてから↓
+;jpn:　ゆけ！
+@KEY()↓
+@WI(60)↓
+@WI(60)↓
+@BGMSTART(0,BGM_home0);エデン序曲
+_BUNBUN_SINI_MAIN;
+◆Ｔｏ　ｄｅｆｅａｔ　Ｇｉｙｇａｓ，↓
+　　ｙｏｕｒ　ｏｗｎ　ｐｏｗｅｒ　ｍｕｓｔ　ｕｎｉｔｅ　ｗｉｔｈ　ｔｈｅ　Ｅａｒｔｈ’ｓ．．．@KEY()↓
+◆ｔｈｅ　Ｅａｒｔｈ　ｗｉｌｌ　ｔｈｅｎ　ｃｈａｎｎｅｌ　ｙｏｕｒ　ｐｏｗｅｒ　ａｎｄ　ｍｕｌｔｉｐｌｙ　ｉｔ．．．@KEY()↓
+◆Ｔｈｅｒｅ　ａｒｅ　ｅｉｇｈｔ　ｐｏｉｎｔｓ　ｔｈａｔ　ｙｏｕ　ｍｕｓｔ　ｖｉｓｉｔ．　　Ｍａｋｅ　ｔｈｅｓｅ　ｐｌａｃｅｓ　ｙｏｕｒ　ｏｗｎ．．．@KEY()↓
+◆Ｅａｃｈ　ｏｆ　ｔｈｅｓｅ　ｌｏｃａｔｉｏｎｓ　ｉｓ　ｃａｌｌｅｄ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ．”@KEY()↓
+◆Ｏｎｅ　ｏｆ　ｔｈｅｍ　ｉｓ　ｎｅａｒ　Ｏｎｅｔｔ．@KEY()↓
+◆Ｉｔ　ｉｓ　ｃａｌｌｅｄ　”Ｇｉａｎｔ　Ｓｔｅｐ．”@KEY()↓
+◆Ｇｏ　ｔｈｅｒｅ　ｆｉｒｓｔ．．．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｕｎｄｅｒｓｔａｎｄ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆ギーグをたおすには‥‥@KEY()↓
+;jpn:◆ちきゅうと　おまえのちからを↓
+;jpn:　ひとつにすることが↓
+;jpn:　ひつようなのじゃ。@KEY()↓
+;jpn:◆このちきゅうには↓
+;jpn:　おまえのパワーを　ゆりおこし↓
+;jpn:　つよめてくれる‥‥@KEY()↓
+;jpn:◆「おまえだけのばしょ」が↓
+;jpn:　８かしょある。@WI(30)↓
+;jpn:　そこを　すべて　おとずれるのだ。@KEY()↓
+;jpn:◆そのひとつのばしょは↓
+;jpn:　このオネットにある。@KEY()↓
+;jpn:◆「ジャイアントステップ」と↓
+;jpn:　よばれているばしょ@KEY()↓
+;jpn:◆じゃ！@WI(20)↓
+;jpn:　まず　そこへ　ゆけ！@KEY()↓
+;;◆@DSP_STS(STS_PC_NAME_NES)！@WI(20)↓
+;jpn:　わかったか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_BUNBUN_SINI_MAIN_YES,_BUNBUN_SINI_MAIN_NO)
+_BUNBUN_SINI_MAIN_NO;
+◆．．．Ｉ　ｓｅｅ．@KEY()↓
+◆Ｉ　ａｐｏｌｏｇｉｚｅ．　　Ｉ　ｇｕｅｓｓ　Ｉ　ｄｉｄｎ’ｔ　ｅｘｐｌａｉｎ　ｉｔ　ｗｅｌｌ　ｅｎｏｕｇｈ．．．
+;jpn:◆‥‥そうか↓
+;jpn:　わしの　はなしかたが↓
+;jpn:　わるかったか。
+@KEY()↓
+@GOTO(_BUNBUN_SINI_MAIN)
+
+_BUNBUN_SINI_MAIN_YES;
+◆Ａｌｌ　ｒｉｇｈｔ．@KEY()↓
+◆Ｙｏｕ　ａｒｅ　ａ　ｖｅｒｙ　ｉｎｔｅｌｌｉｇｅｎｔ　ｙｏｕｎｇ　ｍａｎ．．．↓
+　　ａｎｄ．．．@KEY()↓
+◆Ｏｈ！　　Ｔｈｅ　Ｐａｉｎ！．．．Ｅｖｅｒｙｔｈｉｎｇ　ｉｓ　ｇｅｔｔｉｎｇ　ｄａｒｋ．．．@KEY()↓
+◆ｕｒｇｈ！．．．＊Ｇａｓｐ＊．．．@KEY()↓
+◆Ｂｅｆｏｒｅ　Ｉ　ｐａｓｓ　ｏｎ，　Ｉ　ｗａｎｔ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ｓｏｍｅｔｈｉｎｇ．．．@KEY()↓
+◆Ｉｔ　ｉｓ　ｔｈｅ　Ｓｏｕｎｄ　Ｓｔｏｎｅ．@KEY()↓
+◆Ｙｏｕ　ｃａｎ　ｒｅｃｏｒｄ　ｔｈｅ　ｍｅｌｏｄｉｅｓ　ｆｒｏｍ　ｔｈｅ　ｅｉｇｈｔ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ”　ｌｏｃａｔｉｏｎｓ@KEY()↓
+◆ｉｎｔｏ　ｔｈｉｓ　ｓｔｏｎｅ．@KEY()↓
+◆Ｉｔ　ｉｓ　ａｎ　ａｗｅｓｏｍｅ　ｉｔｅｍ．．．@KEY()↓
+◆Ｂｙ　ｔｈｅ　ｗａｙ．．．Ｉ’ｍ　ａｌｍｏｓｔ　ｇｏｎｅ，@KEY()↓
+◆ｂｕｔ　ｄｉｄ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｈｅａｒ　ｔｈｅ　ｓｔｏｒｙ　ｏｎｅ　ｍｏｒｅ　ｔｉｍｅ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆そうか。↓
+;jpn:　ものわかりのよいこ　じゃ。@KEY()↓
+;jpn:◆では‥‥@KEY()↓
+;jpn:◆ああ　くるしい。↓
+;jpn:　しにそうだ‥‥うっ　うっ。@KEY()↓
+;jpn:◆し　しかし　わしが　しぬまえに↓
+;jpn:　これを　わたしておかねば↓
+;jpn:　なるまい。@KEY()↓
+;jpn:◆「おとのいし」じゃ！@KEY()↓
+;jpn:◆ちきゅうじょうに↓
+;jpn:　８かしょある↓
+;jpn:　「おまえだけのばしょ」の‥‥@KEY()↓
+;jpn:◆おとを　しみこませる↓
+;jpn:　グレートな　アイテムじゃ。@WI(15)↓
+;jpn:　うれしいじゃろう。@KEY()↓
+;jpn:◆あ　さて‥‥@KEY()↓
+;jpn:◆わしは　もう　しにそうじゃが↓
+;jpn:　あえて　もういちど　ききたいか？↓
+;◆ようけん　その１@KEY()↓
+;◆「おまえだけの　ばしょ」を↓
+;　おとずれるの@KEY()↓
+;◆じゃ！@KEY()↓
+;◆「おまえだけの　ばしょ」は↓
+;　このちきゅうに　８かしょある。@KEY()↓
+;◆そのうちのひとつが↓
+;　オネットのまちにある@KEY()↓
+;◆「ジャイアントステップ」と↓
+;　よばれているばしょ@KEY()↓
+;◆じゃ！@KEY()↓
+;◆そこへ↓
+;　その「ジャイアントステップ」へ↓
+;　いくの@KEY()↓
+;◆じゃ！@KEY()↓
+;◆これを　まず↓
+;　やりなさい。@KEY()↓
+;@WI(60)↓
+;@WI(60)↓
+;◆ようけん　その２@KEY()↓
+;◆わすれそうなら↓
+;　メモをとれ！@KEY()↓
+;◆ジャイアントステップのつぎは↓
+;　ツーソンのまちへ　ゆくのじゃ！@KEY()↓
+;◆そこに　おまえの↓
+;　なかまがいる。@KEY()↓
+;◆@WI(20)おんなじゃ！@KEY()↓
+;@WI(60)↓
+;@WI(60)↓
+;◆では　ようけん　その３！@KEY()↓
+;◆ああ　くるしい↓
+;　しにそうだ。@KEY()↓
+;◆さて　わしがしぬまえに↓
+;　ビッグな　プレゼントじゃ！@KEY()↓
+;◆「おとのいし」じゃ！@KEY()↓
+;◆このいしは↓
+;　ちきゅうじょう８かしょにある↓
+;　「おまえだけのばしょ」の@KEY()↓
+;◆おとを　しみこませることが↓
+;　できるグレートな　アイテムじゃ！@KEY()↓
+;◆わしは　しにそうじゃが↓
+;　あえて　もういっかいききたいか？
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_BUNBUN_SINI_YES,_BUNBUN_SINI_NO)
+_BUNBUN_SINI_NO;
+◆Ｇｏｏｄ！
+;jpn:◆よかった‥‥。
+@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_BUNBUN_SINI_GOODSFULL)
+◆Ｉｔ’ｓ　ａｌｒｅａｄｙ　ｄａｗｎ　ｏｕｔｓｉｄｅ．．．@KEY()↓
+◆Ｂｕｔ　ｉｔ　ｄｏｅｓｎ’ｔ　ｍａｔｔｅｒ　ｔｏ　ｍｅ．↓
+　　Ｉ’ｍ　ｆａｄｉｎｇ　ｆａｓｔ．．．@KEY()↓
+◆Ａｒｇｈ！　　＊Ｇａｓｐ＊
+;jpn:◆もう　そとは↓
+;jpn:　よあけに　なったのう‥‥@KEY()↓
+;jpn:◆しんでゆく　わしには↓
+;jpn:　かんけいないこと@KEY()↓
+;jpn:◆じゃ‥‥。
+@KEY()
+@GOODSIN_PLAYER(0,GDS_TOOL_SOUND_STONE)
+@GOSUB(MSG_SUB_GETGOODS_S)@KEYNP()
+_BUNBUN_SINI_LAST;
+@CLOSEALL()
+@WI(1)
+@REMOVE_CHAR(PRSN_ONET_POKEY_1F_C,ANIM_BLINK_SUICIDE)
+@CLRF(FLG_ONET_MYHOME_BUNBUN_APPEAR)
+@RES_HIT_RECT(1)
+@MUSISTART()
+』
+_BUNBUN_SINI_YES;
+◆Ｏｈ，　ｏｋａｙ．．．
+;jpn:◆そ@WI(15)　そうか‥‥。
+@KEY()↓
+@GOTO(_BUNBUN_SINI_MAIN)
+
+_BUNBUN_SINI_GOODSFULL;
+◆Ｗｈａｔ　ｔｈｅ．．．？@KEY()↓
+◆Ｉｔ　ｓｅｅｍｓ　ｔｈａｔ　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ｔｏ　ｃａｒｒｙ　ａｌｒｅａｄｙ．．．@KEY()↓
+◆Ｓｉｎｃｅ　ｙｏｕ　ｃａｎ’ｔ　ｔａｋｅ　ｉｔ，　Ｉ’ｌｌ　ｇｉｖｅ　ｉｔ　ｔｏ　ｙｏｕｒ　ｓｉｓｔｅｒ．@KEY()↓
+◆Ｉｎ　ｔｈｅ　ｂｌｉｎｋ　ｏｆ　ａｎ　ｅｙｅ，　ｌｉｋｅ　ｍａｇｉｃ，↓
+　　ｓｈｅ’ｌｌ　ｈａｖｅ　ｉｔ．@KEY()↓
+◆Ｅｅｅｙａｈ！@KEY()↓
+◆．．．@KEY()↓
+◆Ｉｔ’ｓ　ａｌｒｅａｄｙ　ｄａｗｎ　ｏｕｔｓｉｄｅ．．．@KEY()↓
+◆ｂｕｔ　ｉｔ　ｄｏｅｓｎ’ｔ　ｍａｔｔｅｒ　ｔｏ　ｍｅ．
+　　Ｉ’ｍ　ｆａｄｉｎｇ　ｆａｓｔ．．．@KEY()↓
+◆Ａｒｇｈ！　　＊Ｇａｓｐ＊
+;jpn:◆‥‥ん？@KEY()↓
+;jpn:◆もちものが　いっぱいの↓
+;jpn:　ようじゃな‥‥@KEY()↓
+;jpn:◆しかたがないから↓
+;jpn:　いもうとに↓
+;jpn:　あずけておくぞ。@KEY()↓
+;jpn:◆おまえが↓
+;jpn:　ぼんやりしているうちに↓
+;jpn:　サッと　まほうのように@KEY()↓
+;jpn:◆じゃ！@KEY()↓
+;jpn:◆‥‥‥。@KEY()↓
+;jpn:◆もう　そとは↓
+;jpn:　よあけに　なったのう‥‥@KEY()↓
+;jpn:◆しんでゆく　わしには↓
+;jpn:　かんけいないこと@KEY()↓
+;jpn:◆じゃ‥‥。
+@KEYNP()
+@SETF(FLG_ONET_STONE_REJECTED)
+@GOTO(_BUNBUN_SINI_LAST)
+;------------------------------------------------
+
+
+;#13	●マニマニの悪魔を見せる水野さん		-
+
+;★オネット／水野さんの家／一階でスタート。
+;水野さんのセリフ MSG_INSEKI_MIZUNO_1F 後、
+;水野さんを地下へ続く穴に移動させ、消去する。
+;（フラグ設定により、一階の水野さんは消え、
+;水野家の地下洞窟／洞窟２に別の水野さんが出現する。）
+;★洞窟２の水野さんも同様に、洞窟４に移動させる。
+
+MSG_EVT_13_MIZUNO_A;地下へ降りて行く水野さん
+@REMOVE_CHAR(PRSN_ONET_MIZUNO_A,ANIM_MIZUNO_A)
+@WAITSYS()
+』
+
+MSG_EVT_13_MIZUNO_2_A;マニマニの悪魔を見せる水野さん
+;@MOVE_CHAR(PRSN_ONET_MIZUNO_2_A,ANIM_MIZUNO_2_A,OBJFX_SHOW_NONE)
+;@WAITSYS()
+』
+
+MSG_EVT_13_MIZUNO_3A;
+@FRESH_CHAR( PRSN_ONET_MIZUNO_3_A )	;奥へ行く水野さん
+@WI( 20 )	;早足でも追い付けないように
+@SETF( FLG_B3MIZUNO_B_APPEAR )
+@CLRF( FLG_B3MIZUNO_A_APPEAR )
+』
+
+;---------------------------------------------------
+;#14	●(スケボーに乗る)シャーク団		-
+;------------------------------------------------------
+
+
+;#15	図書館のトイレ（男子用）	1.6	T
+
+MSG_EVT_LIBRARY_TOILET;
+;範囲検査する透明君から発行される
+@FRESH_CHAR( PRSN_ONET_LIB_PASS_A )
+@WAITSYS()
+』
+
+
+
+
+@OPEN(1)
+◆Ｑｕｉｅｔ！！↓
+　　Ｄｏｎ’ｔ　ｂｅ　ｕｐｓｅｔ！
+;jpn:◆うるさーい！！↓
+;jpn:　あわてるんじゃないよ！
+@KEYNP()
+@CLOSEALL()
+』
+
+@OPEN(1)
+
+◆Ｄｏｅｓｎ’ｔ　ｉｔ　ｓｅｅｍ　ｌｉｋｅ　ｒｅｓｔｒｏｏｍｓ　ｉｎ　ｂｏｏｋｓｔｏｒｅｓ　ａｎｄ　ｌｉｂｒａｒｉｅｓ　ａｒｅ　ａｌｗａｙｓ　ｃｒｏｗｄｅｄ？
+;jpn:◆ほんやさんとか　としょかんって↓
+;jpn:　なんかトイレが↓
+;jpn:　こんでるのよねぇ。
+@KEYNP()
+@CLOSEALL()
+』
+
+MSG_LIBRARY_TOILET_B;<イベント><ピープル>扉のメッセージ
+@CHKFGOTO(FLG_TEMP_1,_LIBRARY_TOILET_TEMP)
+@CHKFGOTO(FLG_LIBRARY_TOILET,_LIBRARY_TOILET_BB)
+◆’Ｓｃｕｓｅ　ｍｅ！　　Ｊｕｓｔ　ｔｅｎ　ｍｏｒｅ　ｍｉｎｕｔｅｓ，　ｐｌｅａｓｅ！@KEY()↓
+◆Ｓｈｏｗ　ｓｏｍｅ　ｓｅｌｆ　ｃｏｎｔｒｏｌ，　ｗｉｌｌ　ｙａ！
+;jpn:◆あと　１０ぷんくらいだ。↓
+;jpn:　ガマンしろやい！
+@KEYNP()
+@SETF(FLG_LIBRARY_TOILET)
+@SETF(FLG_TEMP_1)
+』
+
+_LIBRARY_TOILET_TEMP;
+◆’Ｓｃｕｓｅ　ｍｅ！　　Ｊｕｓｔ　ｔｅｎ　ｍｏｒｅ　ｍｉｎｕｔｅｓ，　ｐｌｅａｓｅ！@KEY()↓
+◆Ｓｈｏｗ　ｓｏｍｅ　ｓｅｌｆ　ｃｏｎｔｒｏｌ，　ｗｉｌｌ　ｙａ！
+;jpn:◆あと　１０ぷんくらいだ。↓
+;jpn:　ガマンしろやい！
+@KEYNP()
+』
+
+_LIBRARY_TOILET_BB;＠不明（三浦）
+;◆
+;◆
+;@ANIM(ANIM_EFFECTS_TOILET)
+@KEY()
+』
+
+MSG_LIBRARY_TOILET_B2;
+;FLG_LIBRARY_TOILET がオンの時に出現するピープル
+◆Ｓｏｒｒｙ　ｆｏｒ　ｋｅｅｐｉｎｇ　ｙｏｕｒ　ｗａｉｔｉｎｇ！@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｎｅｅｄ　ａ　ｃｈａｎｇｅ　ｏｆ　ｐａｎｔｓ？
+◆Ａｈ　ｈａ　ｈａ　ｈａ！
+;jpn:◆またせたな。↓
+;jpn:　もらさなかったか？　アハハハハ。
+@KEYNP()
+』
+;-----------------------------------------------
+;#16	●ホテルのカップル	1.7	T
+;--------------------------------------------------------------
+
+
+;#17	市長室からつまみ出される	1.8	T
+
+;★オネット／市役所／市長室のガードマンがプレイヤーを発見したら
+;接近してきて MSG_ONET_MAYOR_COP を発行。
+;★プレイヤーキャラを入り口まで押し戻す（不明）。
+
+MSG_ONET_MAYOR_COP_WARP;
+@SHOW_MANPU_CHAR(PRSN_ONET_HALL_MAYOR_C,MANPU_BIKKURI)
+@WI(60)
+@HIDE_MANPU_CHAR(PRSN_ONET_HALL_MAYOR_C)
+@REMOVE_CHAR(PRSN_ONET_HALL_MAYOR_C,ANIM_HALL_MAYOR_C)
+@WAITSYS()
+@COLD_CHAR(PRSN_ONET_HALL_MAYOR_C)
+@OPEN(1)
+◆Ｔｈｅ　Ｍａｙｏｒ　ｉｓ　ｂｕｓｔｉｎｇ　ｈｉｓ　ｂｕｔｔ　ｗｉｔｈ　ａｌｌ　ｔｈｅ　ｔｒｏｕｂｌｅｓ　ｉｎ　ｔｏｗｎ，@KEY()↓
+◆ｌｉｋｅ　ｔｈｅ　Ｓｈａｒｋｓ　ａｎｄ　ｔｈｅ　ｍｅｔｅｏｒｉｔｅ．．．@KEY()↓
+◆Ｈｅｙ，　ａｒｅ　ｙｏｕ　ｔｈｅ　ｇｕｙ　ｔｈａｔ’ｓ　ｔｒｙｉｎｇ　ｔｏ　ｒｅｆｏｒｍ　ｔｈｅ　Ｓｈａｒｋｓ？@KEY()↓
+◆Ｗａ　ｈｏ！　　Ｗａ　ｈｏ！　　Ｗａ　ｈｏ！@KEY()↓
+◆Ｙｏｕ’ｖｅ　ｇｏｔ　ｔｏ　ｂｅ　ｋｉｄｄｉｎｇ！@KEY()↓
+◆Ｓｃｒａｍ！
+;jpn:◆しちょうさんは　シャークだんやら↓
+;jpn:　いんせきやらの　てんやわんやで↓
+;jpn:　おいそがしいんだ。@KEY()↓
+;jpn:◆それとも　おまえが↓
+;jpn:　あの　やっかいものの↓
+;jpn:　シャークだんを@KEY()↓
+;jpn:◆かいしんさせてやろう↓
+;jpn:　とでもいうのかい？@WI(20)↓
+;jpn:　ワハハハハ！@KEY()↓
+;jpn:◆‥‥じょうだんを↓
+;jpn:　いってるひまは　ないんだ。@KEY()↓
+;jpn:◆とっとと　かえれ！
+@KEY()
+;◆たびげいにんの↓
+;　こやのカギなんか↓
+;　わたすわけないだろ！@KEY()↓
+;◆おまえみたいな↓
+;　ただの　コドモに！@KEY()↓
+@CLOSEALL()
+@FRESH_CHAR(PRSN_ONET_HALL_MAYOR_C)
+@MOVE_GOM_CHAR(GOM_GOMA_WHITE,ANIM_GET_OUT_HALL_MAYOR,OBJFX_SHOW_NONE)
+@WI(1)
+@SET_CAMERA_GOM_CHAR(GOM_GOMA_WHITE)
+@FRESH_PLAYER(PC_ALL)
+@WAITSYS()
+@SET_CAMERA_PARTY()
+@WARP(WARP_ONET_MAYOR_2F_1F)
+@SETF(FLG_TEMP_1);秘書のセリフ替え用
+』
+
+MSG_ONET_MAYOR_COP;
+◆Ｔｈａｎｋ　ｙｏｕ　ｓｏ　ｍｕｃｈ　ｆｏｒ　ａｌｌ　ｏｆ　ｙｏｕｒ　ｈｅｌｐ．．．
+;jpn:◆おつとめ↓
+;jpn:　ごくろうさまで　あります！
+@KEYNP()
+』
+
+;--------------------------------------------------------------
+;#18	●シャーク団を倒し中庭に	1.9	T
+;#19	●VSフランク＆フランキー	-	-
+;-----------------------------------------------
+
+
+;#20	サウンド確認画面（最初）
+
+;★専用の「サウンド確認画面」表示。
+
+;-----------------------------------------------
+
+
+;#21	(立ち入り禁止について)警官に説教される	1.?	T
+
+MSG_EVT_21_KANBANCOP;
+@SET_PLAYER_DIR( PC_NESS, DIR_M_RIGHT )	;ネスを東に向ける
+@WI( 30 )
+@REMOVE_CHAR( PRSN_ONET_FIELD_C, ANIM_GIANTSTEP_COP )
+@WAITSYS()
+@COLD_CHAR(PRSN_ONET_FIELD_C)
+@GOSUB(MSG_ONET_POLICE_KANBAN)
+@FRESH_CHAR(PRSN_ONET_FIELD_C)
+@WI(80)
+』
+
+;----------------------------------------------------------------
+
+
+;#22	警官５人抜き	1.1o	T
+
+;★ジャイアントステップクリア後のオネット警察署長のセリフ
+;_ONET_STRONG_YES の後、警察署長はプレイヤーキャラを引き連れて、
+;受付→道場へ移動し MSG_ONET_5COP_START 発行。出口となる扉を塞ぐ。
+;（ここで牽引終了でプレイヤーは自由動き。）
+
+;★道場内には警官が５人いて、イベント終了まで外には出られない。
+;（●FLG_ONET_GATEOPEN がオンになるまで＝５人抜きが終わるまで
+;扉の中から外へのワープが出来ない設定にしました。）
+
+;★警官たちのアニメーションスクリプトを「ネスにじりじりと近づく動き」
+;に設定します。
+;★ネスに接触したら、それぞれのセリフ後（先着順で）戦闘に入ります。
+
+;★警官を一人倒す毎にマップに戻ります。負けた警官は戦闘後のセリフの後、
+;出口に移動して消える。
+
+;★４人目の警官を倒した後マップに戻ると（以降オートイベント）、
+;今倒した警官が戦闘後のセリフをしゃべって逃げて行き、
+;残りの一人も（ＡからＥの誰であっても）捨てセリフ MSG_ONET_5COPS_HELPME
+;を残して出口に逃げて行き、消えます。
+
+;★ネスだけになった道場に警察署長が警官５人を引き連れて入ってくる。
+;（署長は前に進み、警官たちは入口近くをフォーメーションを組んで陣取る。）
+
+;★署長はプレイヤーキャラに接近して MSG_ONET_5COPS_STRONG を発行→戦闘へ。
+;（この間、プレイヤーは画面中央に固定。）
+
+;★警察署長に勝ったら、戦闘後のセリフで受付にワープ。
+;受付で電話を掛ける警察署長（グラフィックなし）のシーンとして
+;MSG_ONET_5COPS_STRONG_PHONEを表示する。
+
+MSG_EVT_22_STRONG;
+@CLRF(FLG_POLICE_STRONG_B_APPEAR);５人抜き署長の出現禁止
+@REMOVE_CHAR( PRSN_ONET_POLICE_FRONT_E, ANIM_SYOCHO_A )	;署長は西の門へ
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_FOLLOW_TO_SYOCHO_A,OBJFX_SHOW_NONE);ついてく人
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
+...;@WI(1)
+...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+...;@FRESH_PLAYER(PC_ALL)
+...;@WAITSYS()
+...;@SET_CAMERA_PARTY()
+...;@COLD_PLAYER(PC_ALL)
+;廊下にワープ
+@MOVE_GOM_CHAR( GOM_POLICE, ANIM_SYOCHO_B, OBJFX_AFTER_WARP );ワープ後に表示
+@WARP( WARP_ONET_POLICE_F_P )	;廊下の東ドアへ
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_FOLLOW_TO_SYOCHO_B,OBJFX_SHOW_NONE);ついてく人
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
+...;@WI(1)
+...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+...;@FRESH_PLAYER(PC_ALL)
+...;@WAITSYS()
+...;@SET_CAMERA_PARTY()
+...;@COLD_PLAYER(PC_ALL)
+;道場にワープ
+@MOVE_GOM_CHAR( GOM_POLICE, ANIM_SYOCHO_C, OBJFX_AFTER_WARP );ワープ後に表示
+@WARP( WARP_ONET_POLICE_P_G )
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_FOLLOW_TO_SYOCHO_C,OBJFX_SHOW_NONE)
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
+...;@WI(1)
+...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
+...;@FRESH_PLAYER(PC_ALL)
+...;@WAITSYS()
+...;@SET_CAMERA_PARTY()
+...;@COLD_PLAYER(PC_ALL)
+@HIDE_GOM_CHAR(GOM_HIT_CHR,OBJFX_HIDE_NONE)
+@COLD_GOM_CHAR( GOM_POLICE )
+@BGM_EFFECT( 2 )	;ＢＧＭフェードアウト
+@WI( 10 )
+@OPEN(1)
+MSG_ONET_5COP_START;
+◆Ｓｈｏｗ　ｍｅ　ｗｈａｔ　ｙｏｕ　ｇｏｔ．．．
+;jpn:◆それでは　それだけのしかくが↓
+;jpn:　あるというところを　みせてくれ。
+@WI(20)↓
+@SETF( FLG_TEMP_5 )	;五人抜き用に
+@MUSISTART()		;　　　　　　曲を変える
+◆Ｓｅｅ　ｉｆ　ｙｏｕ　ｃａｎ　ｇｅｔ　ｐａｓｔ　ｆｉｖｅ　ｏｆ　ｍｙ　ｂｅｓｔ　ｍｅｎ．．．
+;jpn:　５にんぬきだ！
+@KEY()
+@CLOSEALL()
+@FRESH_GOM_CHAR( GOM_POLICE );署長は入り口へ
+@WAITSYS();署長の移動を待つ
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_E,ANIM_COP5_E);五人フォーメーション
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_D,ANIM_COP5_D);五人フォーメーション
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_C,ANIM_COP5_C);五人フォーメーション
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_B,ANIM_COP5_B);五人フォーメーション
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_A,ANIM_COP5_A);五人フォーメーション
+@WAITSYS()
+@WI( 30 )
+;警官Ａネスへ
+@REMOVE_CHAR( PRSN_ONET_POLICE_GYM_A, ANIM_COP5_TO_NESS_A )
+@WAITSYS()
+@OPEN(1)
+
+MSG_ONET_COPA;
+◆Ｅｅｅｅｙａｈ！@KEY()↓
+◆Ｈｅｙ，　ｓｍａｌｌ　ｆｒｙ！↓
+　　Ｙｏｕ　ｍｕｓｔ　ｂｅ　ｓｈａｋｉｎｇ　ｉｎ　ｙｏｕｒ　ｂｏｏｔｓ！
+;jpn:◆キエーイ！@WI(15)↓
+;jpn:　なんだ　ぼくちゃん↓
+;jpn:　ブルブルふるえてるね。
+@KEY()
+@GOSUB(MSG_BATTLE_5COPS_A)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@OPEN(1)
+←
+◆Ｙｏｕ’ｒｅ　ｔｏｕｇｈ．　　Ｙｏｕ　ｓｈｏｕｌｄ　ｊｏｉｎ　ｔｈｅ　ｐｏｌｉｃｅ　ｆｏｒｃｅ！
+;jpn:◆あんたは　つよい。@WI(15)↓
+;jpn:　このけいさつしょに↓
+;jpn:　しゅうしょくすれば　いいのに。
+@KEYNP()
+@SETF( FLG_ONET_COPA_DISAPPEAR )
+@CLOSEALL()
+;逃げて行く
+@REMOVE_CHAR( PRSN_ONET_POLICE_GYM_A, ANIM_COP5_ESCAPE )
+@WAITSYS()
+@WI(30)
+;警官Ｂネスへ
+@REMOVE_CHAR( PRSN_ONET_POLICE_GYM_B, ANIM_COP5_TO_NESS_B )
+@WAITSYS()
+@OPEN(1)
+
+MSG_ONET_COPB;
+◆Ｙｏｕｒ　ａｖｅｒａｇｅ　ｐｏｌｉｃｅｍａｎ　ｉｓ　ｓｔｒｏｎｇｅｒ　ｔｈａｎ　ａｎｙ　ｓｕｐｅｒ　ｈｅｒｏ！
+;jpn:◆チェーストーッ！@WI(15)↓
+;jpn:　スーパーマンより　つおいのは↓
+;jpn:　ポリスマンだぜ。
+@KEY()
+@GOSUB(MSG_BATTLE_5COPS_B)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@OPEN(1)
+←
+◆Ｏｈ．．．ｙｏｕ　ｗｏｎ．．．
+;jpn:◆あんたにゃ　まいった。
+@KEYNP()
+@SETF(FLG_ONET_COPB_DISAPPEAR)
+@CLOSEALL()
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_B,ANIM_COP5_ESCAPE);逃げて行く
+@WAITSYS()
+@WI(30)
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_C,ANIM_COP5_TO_NESS_C);ネスへ
+@WAITSYS()
+@OPEN(1)
+
+MSG_ONET_COPC;
+◆Ｄｏｎ’ｔ　ｌｅｔ　ｔｈｅ　Ｍａｙｏｒ’ｓ　ｃｏｍｐｌｉｍｅｎｔｓ　ｇｉｖｅ　ｙｏｕ　ａ　ｂｉｇ　ｈｅａｄ．．．@KEY()↓
+◆Ｂｒｉｎｇ　ｉｔ　ｏｎ，　ｆａｔ　ｂｏｙ！
+;jpn:◆しちょうさんに　ちょっとばかり↓
+;jpn:　おだてられたからって↓
+;jpn:　いいきに　なるなよ！
+@KEY()
+@GOSUB(MSG_BATTLE_5COPS_C)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@OPEN(1)
+←
+◆Ｌｅｔ’ｓ　ｄｏ　ｔｈｉｓ　ａｇａｉｎ　ｓｏｍｅｔｉｍｅ．．．@KEY()↓
+◆Ｎｅｘｔ　ｔｉｍｅ，　Ｉ’ｌｌ　ｔａｋｅ　ｙｏｕ　ｏｕｔ　ｗｉｔｈ　ｍｙ　ｎｕｃｌｅａｒ　ｓｕｐｌｅｘ　ａｔｔａｃｋ！
+;jpn:◆いつか　また　やろうぜ！@WI(15)↓
+;jpn:　ぜったい　こんどは↓
+;jpn:　じごくがためを　キメてやるさ。
+@KEYNP()
+@SETF(FLG_ONET_COPC_DISAPPEAR)
+@CLOSEALL()
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_C,ANIM_COP5_ESCAPE);逃げて行く
+@WAITSYS()
+@WI(30)
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_D,ANIM_COP5_TO_NESS_D);ネスへ
+@WAITSYS()
+@OPEN(1)
+
+MSG_ONET_COPD;
+◆Ｃ’ｍｏｎ！↓
+　　Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｔａｋｅ　ｙｏｕ　ａｐａｒｔ　ｒｉｇｈｔ　ｈｅｒｅ，　ｒｉｇｈｔ　ｎｏｗ，　ｂａｂｙ！
+;jpn:◆カモーン！@WI(15)↓
+;jpn:　みのほどしらずの　ベイビー！
+@KEY()
+@GOSUB(MSG_BATTLE_5COPS_D)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@OPEN(1)
+←
+◆Ｇｒｒｒ．．．↓
+　　Ｉ　ｌｏｓｔ．．．
+;jpn:◆ギャフン！@WI(15)↓
+;jpn:　やられちゃったよーん。
+@KEYNP()
+@SETF(FLG_ONET_COPD_DISAPPEAR)
+@CLOSEALL()
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_D,ANIM_COP5_ESCAPE);逃げて行く
+@WAITSYS()
+@WI(30)
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_E,ANIM_COP5_TO_NESS_E);ネスへ
+@WAITSYS()
+@OPEN(1)
+
+MSG_ONET_5COPS_HELPME;
+◆Ｔｈａｔ’ｓ　ｉｔ，　ｂｕｄｄｙ．．．@KEY()↓
+◆Ｙｏｕ　ｃａｎ　ｆｏｒｇｅｔ　ａｂｏｕｔ　ｍｅ，　Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｃａｌｌ　ｆｏｒ　ｍｙ　ｂｏｓｓ！
+;jpn:◆えーい　おれじゃあ↓
+;jpn:　はなしにならん！
+@KEY()↓
+@SETF(FLG_ONET_COPE_DISAPPEAR)
+@CLOSEALL()
+@REMOVE_CHAR(PRSN_ONET_POLICE_GYM_E,ANIM_COP5_ESCAPE);逃げて行く
+@WAITSYS()
+@WI(30)
+@REMOVE_GOM_CHAR(GOM_POLICE,ANIM_SYOCHO_TO_NESS);署長が近寄る
+@WAITSYS()
+@OPEN(1)
+
+MSG_ONET_5COPS_STRONG;警察署長
+◆Ｔｈｅｒｅ　ｉｓ　ｎｏ　ｗａｙ　Ｉ　ｃａｎ　ｂｅａｔ　ｙｏｕ　ｉｎ　ａ　ｓｔｒａｉｇｈｔ　ｃｏｍｐｅｔｉｔｉｏｎ，　ｓｏ．．．@KEY()↓
+◆ｇｅｔ　ｒｅａｄｙ　ｆｏｒ　ｍｙ　”Ｓｕｐｅｒ　Ｕｌｔｒａ　Ｍａｍｂｏ－Ｔａｎｇｏ－Ｆｏｘｔｒｏｔ　ｍａｒｔｉａｌ　ａｒｔｓ！
+;jpn:◆ただの　ちからじまんでは↓
+;jpn:　きみのあいては　ムリなようだ。@WI(15)↓
+;jpn:　よし‥‥@KEY()↓
+;jpn:◆わたしの「スーパーウルトラ↓
+;jpn:　サンボマンボマーシャルアーツ」と↓
+;jpn:　たいけつしてもらおうか。
+@KEYNP()
+@GOSUB(MSG_BATTLE_5COPS_STRONG)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+;@GET_GOM_CHAR_DIR(GOM_POLICE,1,PC_NESS)
+;@SET_GOM_CHAR_DIR(GOM_POLICE,0)
+@BGMSTOP(0)
+@WI(60)
+@OPEN(1)
+←
+◆Ｉ　ｄｉｄｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｗｏｕｌｄ　ｄｏ　ｓｏ　ｗｅｌｌ　ａｇａｉｎｓｔ　ｔｈｅ　ｍｉｇｈｔｙ　Ｏｎｅｔｔ　ｐｏｌｉｃｅ　ｆｏｒｃｅ．．．@KEY()↓
+◆Ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｏｐｅｎ　ｔｈｅ　ｒｏａｄ　ｔｏ　Ｔｗｏｓｏｎ？@KEY()↓
+◆Ｈａｎｇ　ｏｎ　ｆｏｒ　ａ　ｓｅｃ，　Ｉ’ｌｌ　ｒａｄｉｏ　ｍｙ　ｓｔａｆｆ　ａｎｄ　ｇｉｖｅ　ｔｈｅｍ　ｔｈｅ　ｗｏｒｄ．．．
+;jpn:◆オネットけいさつの　つわものを↓
+;jpn:　あいてに　これほどの↓
+;jpn:　ちからを　みせるとは‥‥@KEY()↓
+;jpn:◆ツーソンへのみちを　あけよう。@KEYNP()↓
+;jpn:◆すこし　まちなさい。↓
+;jpn:　むせんで　れんらくをするから‥‥
+@KEY()↓
+@CLOSEALL()
+@CLRF(FLG_POLICE_5COP_APPEAR)
+@CLRF(FLG_POLICE_KANBANCOP_APPEAR)
+@SET_GOM_CHAR_DIR(GOM_POLICE,DIR_M_DOWN)
+@SHOW_MANPU_GOM_CHAR(GOM_POLICE,MANPU_MUSEN)
+@WI(60)
+MSG_ONET_5COPS_STRONG_PHONE;
+@OPEN(1)
+◆＊Ｂｅｅｐ，　ｂｅｅｐ＊．．．＊Ｃｌｉｃｋ＊．．．＊Ｒｒｒｒ＊@KEY()↓
+◆＊Ｃｌｉｃｋ＊　　Ｓｔｒｏｎｇ　ｈｅｒｅ．．．ｄｏ　ｙｏｕ　ｒｅａｄ　ｍｅ？@KEY()↓
+◆．．．＊Ｋｒｒｒｒ＊．．．Ｈｅｙ！．．．@KEY()↓
+◆．．．Ｉｔ’ｓ　ｍｅ，　Ｃａｐｔａｉｎ　Ｓｔｒｏｎｇ！．．．@KEY()↓
+◆Ｏｋａｙ，　ｌｉｓｔｅｎ，　ａ　ｋｉｄ　ｎａｍｅｄ　@DSP_NAME(PC_NESS)　ｗｉｌｌ　ｂｅ　ｔｈｅｒｅ　ｉｎ　ａ　ｆｅｗ　ｍｉｎｕｔｅｓ．．．@KEY()↓
+◆Ｈｅ’ｓ　ａ　ｋｉｄ　ｉｎ　ａ　ｒｅｄ　ｃａｐ．．．Ｉ　ｗａｎｔ　ｙｏｕ　ｔｏ　ｏｐｅｎ　ｔｈｅ　ｒｏａｄ　ｔｏ　Ｔｗｏｓｏｎ　ｆｏｒ　ｈｉｍ．．．@KEY()↓
+◆Ｉ　ｋｎｏｗ　ｔｈａｔ．．．@KEY()↓
+◆Ｉ　ｋｎｏｗ　ｔｈａｔ！．．．@KEY()↓
+◆Ｄｏｎ’ｔ　ａｓｋ　ｍｅ　ｗｈｙ，　ｊｕｓｔ　ｄｏ　ｉｔ！　　Ｔｈａｔ’ｓ　ａｎ　ｏｒｄｅｒ！．．．Ｓｔｒｏｎｇ　ｏｕｔ．．．
+;jpn:◆（ピー@WI(10)ピー　@WI(20)ピー@WI(10)ガー）↓
+;jpn:　@WI(20)あー　あー　@WI(10)きこえるか？↓
+;jpn:　わたしだ　@WI(20)ストロングだ。@KEY()↓
+;jpn:◆@DSP_NAME(PC_NESS)という　あかいぼうしの↓
+;jpn:　しょうねんが　いくから
+;◆あ　わたしだ。↓
+;　@DSP_STS(STS_PC_NAME_NES)というしょうねんが↓
+;　いくから@KEY()↓
+;◆Ｏｐｅｎ　ｔｈｅ　ｒｏａｄ　ｔｏ　Ｔｗｏｓｏｎ　ｆｏｒ　ｈｉｍ．@KEY()↓
+;◆Ｔｈａｔ’ｓ　ａ　ｄｉｒｅｃｔ　ｏｒｄｅｒ！
+;jpn:◆ツーソンへのどうろの↓
+;jpn:　ふうさを　ときなさい。@KEY()↓
+;jpn:◆これは　めいれいである。
+@KEYNP()
+@CLOSEALL()
+@WI( 60 )
+@HIDE_MANPU_GOM_CHAR(GOM_POLICE)
+@WI( 30 )
+;--------------
+@CLRF( FLG_TEMP_5 )
+@MUSISTART()
+;--------------
+@WI( 60 )
+@GET_GOM_CHAR_DIR(GOM_POLICE,1,PC_NESS)
+@SET_GOM_CHAR_DIR(GOM_POLICE,0)
+@OPEN( 1 )
+◆Ｗｅｌｌ　ｋｉｄ，　Ｉ’ｍ　ｎｏｔ　ｇｏｉｎｇ　ｔｏ　ｑｕｅｓｔｉｏｎ　ｙｏｕ　ｎｏｗ，@KEY()↓
+◆ｂｕｔ　Ｉ　ｄｏ　ｗａｎｔ　ｔｏ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ．．．@KEY()↓
+◆Ｇｏｏｄ　ｌｕｃｋ！
+;　　@DSP_STS(STS_PC_NAME_NES)．
+;jpn:◆じじょうは　きかないが↓
+;jpn:　けんとうを　いのるよ。@KEY()↓
+;jpn:◆また　あいたいね↓
+;jpn:　@DSP_STS(STS_PC_NAME_NES)くん。
+@KEYNP()
+@CLOSEALL()
+;署長はドアに消える
+@REMOVE_GOM_CHAR(GOM_POLICE,ANIM_SYOCHO_ESCAPE)
+@WAITSYS()
+@SETF(FLG_ONET_GATEOPEN)
+@CLRF(FLG_POLICE_STRONG_DISAPPEAR)
+@CLRF(FLG_ONET_2FPOKEY_APPEAR)
+@CLRF(FLG_ONET_MINCES_APPEAR);ポーキーパパ蒸発
+@CLRF(FLG_ONET_LARDNA_APPEAR);ポーキーママ家出
+』
+
+;------------------------------------------------
+;#23	●封鎖警官（車止めを移動）	1.11	T
+;------------------------------------------------
+
+
+;#24	スリーク行のバスを呼ぶ	2.8	T
+
+;★バス停の標識を「チェック」すると画面外から
+;道路に沿ってバスがやってくる。
+
+MSG_READ_TWSN_BUSSTOP;バス停ＢＧをチェックした時のメッセージ
+;MSG_TWSN_CALL_HIGHWAYBUS;@MaltaAppended
+@GOSUB(MSG_SUB_BSTOP_TWSN_THRK_DIR)
+@TRUE_GOTO(MSG_BUSSTOP_DANGER)
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆（@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｕｓ　ｓｃｈｅｄｕｌｅ．）
+;jpn:◆@DSP_NAME(0)は　バスの↓
+;jpn:　じこくひょうを　しらべた。
+@KEY()↓
+@CHKFGOTO(FLG_TEMP_9,MSG_TWSN_BUSSTOP_TEMP)
+◆（Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｅ　ｎｅｘｔ　ｂｕｓ　ｗｉｌｌ　ｃｏｍｅ　ｐｒｅｔｔｙ　ｓｏｏｎ．）
+;jpn:◆バスは　もうすぐ　くるようだ。
+@KEY()
+@CLOSEALL()
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TWSN_THRK_IN,OBJFX_SHOW_NONE)
+@WAITSYS()
+@SETF(FLG_TEMP_9)
+』
+
+MSG_TWSN_BUSSTOP_TEMP;
+◆（Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｉｔ’ｓ　ｇｏｉｎｇ　ｔｏ　ｂｅ　ａ　ｗｈｉｌｅ　ｂｅｆｏｒｅ　ｔｈｅ　ｎｅｘｔ　ｂｕｓ　ｃｏｍｅｓ．）
+;jpn:◆バスは　しばらくこないようだ。
+@KEYNP()
+』
+
+MSG_THRK_BUSSTOP_TWSN;ツーソン行きのバス停
+@CHKF(FLG_WIN_GEPPU)
+@FALSE_GOTO(MSG_THRK_BUSSTOP_NG);ゲップーを倒すまではバスに乗れない。
+@GOSUB(_SUB_BUSSTOP_TWSN_DIR)
+@TRUE_GOTO(MSG_BUSSTOP_DANGER)
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆（@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｕｓ　ｓｃｈｅｄｕｌｅ．）
+;jpn:◆@DSP_NAME(0)は　バスの↓
+;jpn:　じこくひょうを　しらべた。
+@KEY()↓
+@CHKFGOTO(FLG_TEMP_9,MSG_TWSN_BUSSTOP_TEMP)
+◆（Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｅ　ｎｅｘｔ　ｂｕｓ　ｗｉｌｌ　ｃｏｍｅ　ｐｒｅｔｔｙ　ｓｏｏｎ．）
+;jpn:◆バスは　もうすぐ　くるようだ。
+@KEY()
+@CLOSEALL()
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_THRK_TWSN_IN,OBJFX_SHOW_NONE)
+@WAITSYS()
+@SETF(FLG_TEMP_9)
+』
+
+MSG_THRK_BUSSTOP_FOUR;フォーサイド行きのバス停
+@CHKF(FLG_WIN_GEPPU)
+@FALSE_GOTO(MSG_THRK_BUSSTOP_NG);ゲップーを倒すまではバスに乗れない。
+@GOSUB(_SUB_BUSSTOP_FOUR_DIR)
+@TRUE_GOTO(MSG_BUSSTOP_DANGER)
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆（@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｕｓ　ｓｃｈｅｄｕｌｅ．）
+;jpn:◆@DSP_NAME(0)は　バスの↓
+;jpn:　じこくひょうを　しらべた。
+@KEY()↓
+@CHKFGOTO(FLG_TEMP_9,MSG_TWSN_BUSSTOP_TEMP)
+◆（Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｅ　ｎｅｘｔ　ｂｕｓ　ｗｉｌｌ　ｃｏｍｅ　ｐｒｅｔｔｙ　ｓｏｏｎ．）
+;jpn:◆バスは　もうすぐ　くるようだ。
+@KEY()
+@CLOSEALL()
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_THRK_DSRT_IN,OBJFX_SHOW_NONE)
+@WAITSYS()
+@SETF(FLG_TEMP_9)
+』
+
+MSG_THRK_BUSSTOP_NG;
+◆Ｄｕｅ　ｔｏ　ｈａｚａｒｄｏｕｓ　ｃｏｎｄｉｔｉｏｎｓ，↓
+　　ｂｕｓ　ｓｅｒｖｉｃｅ　ｈａｓ　ｂｅｅｎ　ｃａｎｃｅｌｅｄ　ｉｎ　ｔｈｉｓ　ａｒｅａ．@KEY()↓
+◆（Ｚｏｍｂｉｅ　Ｒｅｌｉｅｆ　Ｃｏｒｐｓ．）
+;jpn:◆きけんにつき↓
+;jpn:　ろせんバスの　うんこうは↓
+;jpn:　ちゅうししております。@KEY()↓
+;jpn:◆（ゾンビたいさくほんぶ）
+@KEYNP()
+』
+_SUB_BUSSTOP_TWSN_DIR;
+@GET_ORDER_PLAYER(1)
+@GET_PLAYER_DIR(0,2,PRSN_THRK_FIELD_3B)
+@GOSUB(_SUB_BSTOP_Q_DIR_B)
+@!
+_SUB_BUSSTOP_FOUR_DIR;
+@GET_ORDER_PLAYER(1)
+@GET_PLAYER_DIR(0,2,PRSN_THRK_FIELD_3L)
+@GOSUB(_SUB_BSTOP_Q_DIR_A)
+@!
+MSG_SUB_BSTOP_TWSN_THRK_DIR;ツーソンスリークバス停の向きチェック用
+@GET_ORDER_PLAYER(1)
+@GET_PLAYER_DIR(0,2,PRSN_TWSN_FIELD_3D)
+@GOSUB(_SUB_BSTOP_Q_DIR_A)
+@!
+MSG_SUB_BSTOP_DSRT_THRK_DIR;ドコドコ砂漠スリークバス停の向きチェック用
+@GET_ORDER_PLAYER(1)
+@GET_PLAYER_DIR(0,2,PRSN_DEST_FIELD_3N)
+@GOSUB(_SUB_BSTOP_Q_DIR_B)
+@!
+MSG_SUB_BSTOP_DSRT_FOUR_DIR;ドコドコ砂漠フォーサイドバス停の向きチェック用
+@GET_ORDER_PLAYER(1)
+@GET_PLAYER_DIR(0,2,PRSN_DEST_FIELD_3O)
+@GOSUB(_SUB_BSTOP_Q_DIR_A)			;下から調べられるのが正しい
+@!
+MSG_SUB_BSTOP_FOUR_THRK_DIR;フォーサイドスリークバス停の向きチェック用
+@GET_ORDER_PLAYER(1)
+@GET_PLAYER_DIR(0,2,PRSN_FRSD_FIELD_3A)
+@GOSUB(_SUB_BSTOP_Q_DIR_B)
+@!
+MSG_BUSSTOP_DANGER;
+◆Ｄａｎｇｅｒ！@KEY()↓
+◆Ｄｏ　ｎｏｔ　ｓｔａｎｄ　ｉｎ　ｔｈｅ　ｓｔｒｅｅｔ．@KEY()↓
+◆（Ｒｅａｄ　ｔｈｅ　ｓｃｈｅｄｕｌｅ　ｆｒｏｍ　ｔｈｅ　ｓｉｄｅｗａｌｋ．）
+;jpn:◆あぶない！@WI(20)↓
+;jpn:　どうろに　でては↓
+;jpn:　いけません。@KEY()↓
+;jpn:◆（じこくひょうは↓
+;jpn:　しょうめんから　よみましょう）
+@KEYNP()
+;　うらがわです）@KEYNP()
+@!
+
+
+;	812
+;	7 3
+;	654
+;バス停用。下から調べた場合のみ真
+_SUB_BSTOP_Q_DIR_A;
+@XCHG()
+@SAVE_REG()
+@EQ(4)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(5)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(6)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(3)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(7)
+@TRUE_GOTO(MSG_END)
+;@LOAD_REG()			;検査甘く(斜めからも可)
+;@EQ(2)
+;@TRUE_GOTO(MSG_END)
+;@LOAD_REG()
+;@EQ(8)
+;@TRUE_GOTO(MSG_END)
+;以下2linesまっつんのわからないメッセージ
+;;@EQ(1)
+;;@NOT(1)
+@!
+
+;	812	ハンドル使えよー>まっつん
+;	7 3
+;	654
+;バス停用。上から調べた場合のみ真
+_SUB_BSTOP_Q_DIR_B;
+@XCHG()
+@SAVE_REG()
+@EQ(1)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(2)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(8)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(3)
+@TRUE_GOTO(MSG_END)
+@LOAD_REG()
+@EQ(7)
+@TRUE_GOTO(MSG_END)
+;@LOAD_REG()
+;@EQ(4)
+;@TRUE_GOTO(MSG_END)
+;@LOAD_REG()
+;@EQ(6)
+;@TRUE_GOTO(MSG_END)
+;以下2lines、まっつんの宇宙メッセージ(なんだかわからん)
+;;@EQ(1)
+;;@NOT(1)
+@!
+
+;_SUB_BSTOP_Q_DIR_A;	
+;;@XCHG()
+;;@SAVE_REG()
+;;@EQ(4)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(5)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(6)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(3)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(7)
+;@EQ(1)
+;@NOT(1)
+;@!
+;
+;_SUB_BSTOP_Q_DIR_B;
+;;@XCHG()
+;;@SAVE_REG()
+;;@EQ(1)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(2)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(8)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(3)
+;;@TRUE_GOTO(MSG_END)
+;;@LOAD_REG()
+;;@EQ(7)
+;@EQ(1)
+;@NOT(1)
+;@!
+
+

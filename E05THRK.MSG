@@ -1,0 +1,1842 @@
+;-----------------------------------------------------
+
+;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Person:避難民Ｄ
+;@Figure:ＯＬＣ
+;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_TENT_1
+MSG_THRK_TENT_1;
+;テントのなかの人１
+@CHKFGOTO(FLG_TLPT_FOUR,_THRK_TENT_1_END)
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_1_LATER)
+@CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_1_HOIHOI)
+@CHKFGOTO(FLG_ITEM_HOIHOI,_THRK_TENT_1_HOI)
+◆Ｈｏｗ　ｃａｎ　ｗｅ　ｄｅｆｅａｔ　ｔｈｅ　ｚｏｍｂｉｅｓ？@WI(20)　　．．．Ｏｈ．．．Ｕｈ．．．Ｉ　ｊｕｓｔ　ｄｏｎ’ｔ　ｋｎｏｗ！
+;jpn:◆ゾンビは　どうやったら↓
+;jpn:　たおせるのかしら。@WI(15)↓
+;jpn:　‥‥ああ　わからない！
+@KEYNP()
+』
+_THRK_TENT_1_HOI;
+◆Ｗｅ　ｓｈｏｕｌｄ　ｔｒｙ　Ｚｏｍｂｉｅ　Ｐａｐｅｒ　ｏｒ　ｓｏｍｅ　ｋｉｎｄ　ｏｆ　ｔｒａｐ．@WI(20)　　Ｗｅ　ｈａｖｅ　ｔｏ　ｄｏ　ｓｏｍｅｔｈｉｎｇ！
+;jpn:◆「ゾンビホイホイ」でもなんでも↓
+;jpn:　ききめがあるんだったら@KEY()↓
+;jpn:◆いま　すぐにでも↓
+;jpn:　つかってみたいわ。
+@KEYNP()
+』
+_THRK_TENT_1_HOIHOI;
+;ゾンビホイホイをセットした直後のセリフ
+◆Ｊｕｓｔ　ｉｍａｇｉｎｅ．．．ｗｈｅｎ　ｗｅ　ｗａｋｅ　ｕｐ　ｔｏｍｏｒｒｏｗ　ｍｏｒｎｉｎｇ．．．@KEY()↓
+◆Ｕｇｈ！　＊ｓｈｉｖｅｒ＊　Ｉｔ’ｌｌ　ｂｅ　ｒｅａｌｌｙ　ｇｒｏｓｓ．
+;DAN:"BuruBuru" is sound of shivering.
+;jpn:◆これでひとばんたてば‥‥@WI(20)↓
+;jpn:　ああ　きもちわるっ‥‥ブルブル。
+@KEYNP()
+』
+MSG_THRK_TENT_1_CAPTURED;
+;ゾンビホイホイ作戦が成功した後
+◆Ｙｕｃｋ！@WI(15)　　Ｗｅ　ｃａｕｇｈｔ　ａ　ｌｏｔ　ｚｏｍｂｉｅｓ！@WI(20)　　Ｕｇｈ！　＊ｓｈｉｖｅｒ＊　Ｉｔ’ｓ　ｒｅａｌｌｙ　ｇｒｏｓｓ．
+;jpn:◆ゾンビを　いっぱいつかまえたわ！@WI(20)↓
+;jpn:　ああ　きもちわるっ‥‥ブルブル。
+@KEYNP()
+』
+_THRK_TENT_1_LATER;＃
+◆Ｔｈｅ　ｍｏｎｓｔｅｒｓ　ａｒｅ　ｎｏ　ｌｏｎｇｅｒ　ｉｎ　ｔｈｅ　ｔｕｎｎｅｌ！
+;jpn:◆トンネルのモンスターも↓
+;jpn:　いなくなったのね！
+@KEYNP()
+』
+_THRK_TENT_1_END;＆
+◆Ｓｉｎｃｅ　ｔｈｅ　ｔｕｎｎｅｌ　ｗａｓ　ｃｌｅａｒｅｄ，@WI(15)　ｍａｎｙ　ｃａｒｓ　ｈａｖｅ　ｓｔａｒｔｅｄ　ｄｒｉｖｉｎｇ　ｔｈｒｏｕｇｈ　ｉｔ．@KEY()↓
+◆Ｉｔ’ｓ　ｉｎｃｒｅｄｉｂｌｙ　ｎｏｉｓｙ．
+;jpn:◆トンネルが　とおれるようになって↓
+;jpn:　くるまが　いっぱいとおるから@WI(20)↓
+;jpn:　‥‥うるさくなったわ。
+@KEYNP()
+』
+
+;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Person:避難民Ｂ
+;@Figure:サラリーマンＤ
+;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_TENT_2
+MSG_THRK_TENT_2;
+;テントのなかの人２
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_2_LATER)
+@CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_2_HOIHOI)
+@CHKFGOTO(FLG_ITEM_HOIHOI,_THRK_TENT_2_HOI)
+◆Ｗｈｙ　ｄｏｎ’ｔ　ｗｅ　ｇｅｔ　ａｌｌ　ｔｈｅ　ｚｏｍｂｉｅｓ　ｉｎ　ｔｈｉｓ　ｔｅｎｔ　ａｎｄ　ｔｈｅｎ　ｓｅｔ　ｉｔ　ｏｎ　ｆｉｒｅ？@KEY()↓
+◆Ｗｅ　ｍａｙ　ａｌｌ　ｇｅｔ　ｍｕｎｃｈｅｄ　ｂｅｆｏｒｅ　ｉｔ　ｈａｐｐｅｎｓ．．．
+;jpn:◆このテントのなかに↓
+;jpn:　ゾンビをあつめてしまって↓
+;jpn:　ひをかけてみては　どうだろうか。@KEY()↓
+;jpn:◆そのまえに　ぼくらが↓
+;jpn:　やられちゃうかな。
+@KEYNP()
+』
+_THRK_TENT_2_HOI;
+◆Ｍａｙｂｅ　ａ　ｇｏｏｄ　ｉｄｅａ　ｗｏｕｌｄ　ｂｅ　ｔｏ　ｔｒｙ　ｔｏ　ｇｅｔ　ａｌｌ　ｔｈｅ　ｚｏｍｂｉｅｓ　ｉｎｔｏ　ａ　ｓｉｎｇｌｅ　ｓｐｏｔ．
+;jpn:◆なんにせよ　ゾンビを↓
+;jpn:　ひとところに　あつめてしまうのが↓
+;jpn:　とくさくだろうな。
+@KEYNP()
+』
+_THRK_TENT_2_HOIHOI;
+;ゾンビホイホイをセットした直後のセリフ
+◆Ｈｅｙ！　　Ｓｔｕｐｉｄ　ｚｏｍｂｉｅｓ！@WI(20)　　Ｃｏｍｅ　ｏｕｔ，　ｃｏｍｅ　ｏｕｔ　ｗｈｅｒｅｖｅｒ　ｙｏｕ　ａｒｅ！@KEY()↓
+◆Ｔｈｅ　ｓｕｓｐｅｎｓｅ　ｉｓ　ｋｉｌｌｉｎｇ　ｍｅ．．．
+;jpn:◆さあ　ゾンビたちよ　あつまれ！@KEY()↓
+;jpn:◆ドキドキするなぁ。
+@KEYNP()
+』
+
+MSG_THRK_TENT_2_CAPTURED;
+;ゾンビホイホイ作戦が成功した後
+◆Ｉ　ｗａｓ　ａｂｌｅ　ｔｏ　ａｒｒｅｓｔ↓
+　　ｍａｎｙ　ｚｏｍｂｉｅｓ　ｂｅｃａｕｓｅ　ｏｆ　ｙｏｕｒ　ｈｅｌｐ．@KEY()↓
+◆”Ａｒｒｅｓｔ”　ｓｏｕｎｄｓ　ｓｔｒａｎｇｅ，　ｄｏｅｓｎ’ｔ　ｉｔ．．．
+;jpn:◆あんたのおかげで↓
+;jpn:　ゾンビをいっぱい↓
+;jpn:　たいほできたよ。@KEY()↓
+;jpn:◆「たいほ」ってことばは↓
+;jpn:　ヘンか‥‥。
+@KEYNP()
+』
+
+_THRK_TENT_2_LATER;
+◆Ｉｔ　ｂｅｃａｍｅ　ｐｅａｃｅｆｕｌ　ｃｏｍｐａｒｅｄ　ｔｏ　ｂｅｆｏｒｅ．
+;jpn:◆むかしにくらべりゃ↓
+;jpn:　ずいぶん↓
+;jpn:　へいわになったもんだよ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Person:避難民Ｃ
+;@Figure:ＯＬＡ
+;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_TENT_3
+MSG_THRK_TENT_3;
+;テントのなかの人３
+@CHKFGOTO(FLG_TLPT_FOUR,_THRK_TENT_3_END)
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_3_LATER)
+@CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_3_HOIHOI)
+@CHKFGOTO(FLG_ITEM_HOIHOI,_THRK_TENT_3_HOI)
+◆Ｉ’ｍ　ｇｌａｄ　ｙｏｕ’ｒｅ　ｇｏｉｎｇ　ｔｏ　ｈｅｌｐ　ｕｓ，@WI(20)　ｂｕｔ　ｙｏｕ’ｒｅ　ｐｒｅｔｔｙ　ｙｏｕｎｇ．
+;jpn:◆あなた　わたしたちを↓
+;jpn:　てつだってくれるのは↓
+;jpn:　うれしいけど@KEY()↓
+;jpn:◆‥‥コドモじゃあねぇ。
+@KEYNP()
+』
+_THRK_TENT_3_HOI;
+◆Ｗｅｌｌ，　ｗｅ’ｌｌ　ｇｉｖｅ　ｉｔ　ａ　ｔｒｙ．@WI(20)　　Ｉｔ’ｓ　ｂｅｔｔｅｒ　ｔｈａｎ　ｎｏｔｈｉｎｇ，　Ｉ　ｇｕｅｓｓ．
+;jpn:◆どんな　ほうほうでも↓
+;jpn:　やらないより　ましだわ。@KEY()↓
+;jpn:◆やる！@WI(20)　やってみる。
+@KEYNP()
+』
+_THRK_TENT_3_HOIHOI;
+;ゾンビホイホイをセットした直後のセリフ
+◆Ｈｅｒｅ，　ｚｏｍｂｉｅ，　ｚｏｍｂｉｅ，　ｚｏｍｂｉｅ．．．　　Ｉ　ｈａｖｅ　ａ　ｎｉｃｅ　ｂｏｎｅ　ｆｏｒ　ｙｏｕ．．．
+;jpn:◆音ゾ@WI(20)　ゾ@WI(20)　ゾーンビこい@WI(30)↓
+;jpn:　こっちのえーさは　おいしいぞ。
+@KEYNP()
+』
+MSG_THRK_TENT_3_CAPTURED;
+;ゾンビホイホイ作戦が成功した後
+◆Ｙｏｕ　ｍｉｇｈｔ　ｎｏｔ　ｕｎｄｅｒｓｔａｎｄ　ｍｙ　ｓａｙｉｎｇ　ｔｈｉｓ，@WI(10)　ｂｕｔ，@WI(10)　ｐｏｏｒ　ｚｏｍｂｉｅｓ．．．
+;jpn:◆こういういいかたは↓
+;jpn:　ごかいをされそうだけど@KEY()↓
+;jpn:◆なんだか　ゾンビもかわいそうね。
+@KEYNP()
+』
+_THRK_TENT_3_LATER;＃
+◆Ｎｏｗ　ｙｏｕ　ｃａｎ　ｇｏ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｔｕｎｎｅｌ　ａｎｙｔｉｍｅ　ｙｏｕ　ｗａｎｔ！
+;jpn:◆もう　トンネルも↓
+;jpn:　とおりほうだいね！
+@KEYNP()
+』
+_THRK_TENT_3_END;＆
+◆Ａｃｔｕａｌｌｙ，　Ｉ’ｍ　ｋｉｎｄ　ｏｆ　ｇｌａｄ　Ｉ　ｇｏｔ　ｔｏ　ｓｅｅ　ｒｅａｌ　ｚｏｍｂｉｅｓ．
+;jpn:◆‥‥でも@WI(20)　ほんもののゾンビを↓
+;jpn:　みたりできたなんて↓
+;jpn:　あるいみじゃ　しあわせよね。
+@KEYNP()
+』
+
+;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Person:避難民Ａ
+;@Figure:おじさんＤ
+;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_TENT_4
+MSG_THRK_TENT_4;
+;テントのなかの人４
+@CHKFGOTO(FLG_TLPT_FOUR,_THRK_TENT_4_END)
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_4_LATER)
+@CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_4_HOIHOI)
+@CHKFGOTO(FLG_ITEM_HOIHOI,_THRK_TENT_4_HOI)
+@CHKFGOTO(FLG_JEFF,_THRK_TENT_4_JEFF)
+◆Ｔｈｅ　ｚｏｍｂｉｅｓ　ａｒｅ　ｍｏｖｉｎｇ　ｔｏｗａｒｄ　ｔｈｅ　ｔｅｎｔ．@KEY()↓
+◆Ｒｅｐｅａｔ－－@WI(15)ｔｈｅ　ｚｏｍｂｉｅｓ　ａｒｅ　ｏｎ　ｔｈｅ　ｍｏｖｅ！
+;jpn:◆このテントにむかって↓
+;jpn:　ゾンビたちが　いどうしてるって↓
+;jpn:　じょうほうも　あるぞ。
+@KEYNP()
+』
+_THRK_TENT_4_JEFF;
+◆Ｓｏ，　ｔｈｉｓ　ｗｅｉｒｄ　ｏｂｊｅｃｔ　ｗａｓ　ｆｌｙｉｎｇ　ａｒｏｕｎｄ　ａｎｄ　ｃｒａｓｈｅｄ　ｉｎ　ｔｈｅ　ｇｒａｖｅｙａｒｄ．．．@KEY()↓
+◆Ｉｔ　ｌｏｏｋｅｄ　ｌｉｋｅ　ｉｔ　ｗａｓ　ｓｔｒａｉｇｈｔ　ｏｕｔ　ｏｆ　ａ@WI(20)　Ｓａｔｕｒｄａｙ　ｍｏｒｎｉｎｇ　ｃａｒｔｏｏｎ！@KEY()↓
+◆Ｗｏｗ！　　Ｄｉｄ　ｙｏｕ　ｃｏｍｅ　ｈｅｒｅ　ｉｎ　ｔｈａｔ　ｆｌｙｉｎｇ　ｃｏｎｔｒａｐｔｉｏｎ？
+;jpn:◆むかしのマンガみたいな↓
+;jpn:　のりものが　そらをとんできてね。@KEY()↓
+;jpn:◆はかばの　あたりに↓
+;jpn:　ついらくしたらしいけど‥‥@KEY()↓
+;jpn:◆えっ　きみたちが↓
+;jpn:　それに　のってきたのか。
+@KEYNP()
+』
+_THRK_TENT_4_HOI;
+◆Ｓｏ　ｙｏｕ’ｒｅ　ｇｏｉｎｇ　ｔｏ　ｕｓｅ　ｔｈｉｓ　ｔｅｎｔ　ａｓ　ａ　ｔｒａｐ．．．
+;jpn:◆このテントを　いっそ↓
+;jpn:　ワナとしてつかうってことか‥‥
+@KEYNP()
+』
+_THRK_TENT_4_HOIHOI;
+;ゾンビホイホイをセットした直後のセリフ
+◆Ｈｅｙ，　ｈｅｙ，　ｈｅｙ！　　．．．ｓｔｕｐｉｄ　ｚｏｍｂｉｅｓ．．．　ｃｏｍｅ　ｏｎ　ｏｖｅｒ！
+;jpn:◆さあこい　ゾンビ！
+@KEYNP()
+』
+
+MSG_THRK_TENT_4_CAPTURED;
+;ゾンビホイホイ作戦が成功した後
+◆Ｗｅ　ｄｉｄ　ｉｔ！@WI(15)　　Ｄｉｄ　ｙｏｕ　ｌｏｏｋ　ｉｎ　ｔｈｅ　ｔｅｎｔ？@KEY()↓
+◆Ｙａ　ｈａ！　　Ｗｅ　ｔａｕｇｈｔ　ｔｈｏｓｅ　ｓｔｕｐｉｄ　ｚｏｍｂｉｅｓ　ａ　ｌｅｓｓｏｎ！
+;jpn:◆やったぞ！　あんた↓
+;jpn:　テントのなかを　みたかい？！@KEY()↓
+;jpn:◆おもいしったか　ゾンビどもめ！
+@KEYNP()
+』
+_THRK_TENT_4_LATER;＃
+;◆Ｓｅｅｍｓ　ｌｉｋｅ　ｔｈｅ　ｍｏｎｓｔｅｒｓ　ｉｎ　ｔｈｅ　ｔｕｎｎｅｌ　ｄｉｓａｐｐｅａｒｅｄ．
+;◆トンネルの　ばけものも↓
+;　きえたらしいな。
+;@KEYNP()
+;』
+◆Ｔｈａｔ　ｒｏｕｎｄ　ｆｌｙｉｎｇ　ｏｂｊｅｃｔ．．．　ａ　ｋｉｄ　ｗｉｔｈ　ｇｌａｓｓｅｓ　ｗａｓ　ｏｎ　ｂｏａｒｄ．@KEY()↓
+◆Ｔｈｅ　ｃｒａｆｔ　ｌａｎｄｅｄ　ｎｅａｒ　ｔｈｅ　ｇｒａｖｅｙａｒｄ，　ｒｉｇｈｔ？@KEY()↓
+◆Ｃａｎ　ｙｏｕ　ｆｉｘ　ｉｔ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆メガネのぼうやが　のってきた↓
+;jpn:　あの　まるいのりもの‥‥@KEY()↓
+;jpn:◆はかばのちかで↓
+;jpn:　やすらかに↓
+;jpn:　ねむってるそうじゃないか。@KEY()↓
+;jpn:◆もう↓
+;jpn:　どうしようもないのかい？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_THRK_TENT_4_LATER_YES,_THRK_TENT_4_LATER_NO)
+
+_THRK_TENT_4_LATER_YES
+;（はい）
+◆Ｉｔ　ｗａｓ　ｈｅａｖｉｌｙ　ｄａｍａｇｅｄ，　ｔｈｏｕｇｈ，　ｒｉｇｈｔ？
+;jpn:◆もったいないけど↓
+;jpn:　しかたないのかな‥‥。
+@KEYNP()
+』
+_THRK_TENT_4_LATER_NO
+;（いいえ）
+◆Ｉｔ’ｓ　ｓｕｃｈ　ａ　ｗａｓｔｅ，　ｂｕｔ　ｗｅ　ｃａｎ’ｔ　ｄｏ　ｍｕｃｈ　ａｂｏｕｔ　ｉｔ．．．
+;jpn:◆でも　けっこう↓
+;jpn:　メチャメチャに　こわれたって↓
+;jpn:　はなしじゃないか。
+@KEYNP()
+』
+
+_THRK_TENT_4_END;＆
+◆Ｉ　ｄｉｄｎ’ｔ　ｌｉｋｅ　ｆｉｇｈｔｉｎｇ　ｔｈｅ　ｚｏｍｂｉｅｓ，@WI(15)　ｂｕｔ　ｔｈｏｓｅ　ｄａｙｓ　ｗｅｒｅ　ｎｅｖｅｒ　ｄｕｌｌ！
+;jpn:◆ゾンビと　たたかってたときって↓
+;jpn:　いやだったけど↓
+;jpn:　おもしろかったよね。@KEY()↓
+;jpn:◆まいにち　わくわくしてさぁ。
+@KEYNP()
+』
+
+;----------------------------------------
+
+;@Habitat:スリーク／地下牢／地下牢
+;@Person:SkyWalker見送り人Ａ
+;@Figure:おじさんＤ
+;@AppearanceKey:FLG_THRK_FIXED_SKYW_APPEAR/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_SENDOFF_A
+MSG_THRK_SENDOFF_A;
+◆Ｗｅ　ｐａｉｎｔｅｄ　ｏｖｅｒ　ａｌｌ　ｔｈｅ　ｄａｍａｇｅｄ　ｐａｒｔｓ　ｏｆ　ｔｈｅ　Ｓｋｙ　Ｒｕｎｎｅｒ．@KEY()↓
+◆Ｎｏｗ　Ｉ　ｗｏｎｄｅｒ　ｈｏｗ　ｙｏｕ　ｓｔａｒｔ　ｔｈｉｓ　ｔｈｉｎｇ　ｕｐ？
+;jpn:◆このスカイウォーカーだけど↓
+;jpn:　そとは　ペンキぬったりして↓
+;jpn:　ごまかしてみたんだけどね@KEY()↓
+;jpn:◆メカがわかんないから↓
+;jpn:　うごかせないんだよ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／地下牢／地下牢
+;@Person:SkyWalker見送り人Ｂ
+;@Figure:サラリーマンＤ
+;@AppearanceKey:FLG_THRK_FIXED_SKYW_APPEAR/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_SENDOFF_B
+MSG_THRK_SENDOFF_B;
+◆Ｉ　ｗａｎｔ　ｙｏｕ　ｔｏ　ｓｔａｙ，@WI(15)　ｂｕｔ　ｉｆ　ｙｏｕ　ｃａｎ’ｔ．．．ｓｏ　ｌｏｎｇ！@KEY()↓
+◆Ｔｈａｎｋｓ　ｆｏｒ　ｅｖｅｒｙ　ｌｉｔｔｌｅ　ｏｌ’　ｔｈｉｎｇ．
+;jpn:◆ゆっくりしていって　ほしいが↓
+;jpn:　いそぐじじょうが↓
+;jpn:　あるんでしょう。@KEY()↓
+;jpn:◆さよなら。@KEY()↓
+;jpn:◆あなたがたには↓
+;jpn:　ほんとうに↓
+;jpn:　かんしゃしています。@KEY()↓
+;jpn:◆おきをつけて。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／地下牢／地下牢
+;@Person:修理済みSkyWalker
+;@Figure:スカイウォーカー
+;@AppearanceKey:FLG_THRK_FIXED_SKYW_APPEAR/on
+;@ActionScript:◆演出コンテ#8.8
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:0
+
+;----------------------------------------
+
+;@Habitat:スリーク／ホテル／フロント
+;@Person:ホテルマン
+;@Figure:ホテルボーイ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HOTELMAN
+MSG_THRK_HOTELMAN;@MaltaAppended
+;◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｔｈｒｅｅｋ　Ｈｏｔｅｌ．
+;;◆ようこそ　スリークホテルへ。@KEY()↓
+@GOSUB(MSG_GLOBAL_HOTEL)
+;;←
+;◆Ｃｏｍｅ　ｂａｃｋ　ａｇａｉｎ．
+;;◆また　どうぞ。@KEYNP()
+』
+
+
+;@Habitat:スリーク／ホテル／フロント
+;@Person:電話
+;@Figure:電話
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+;@Habitat:スリーク／ホテル／ＣＤルーム
+;@Person:キャッシュディスペンサ
+;@Figure:ＣＤ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:MSG_GLOBAL_CD_RECEIVE
+;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
+;@Message:0
+
+;@Habitat:スリーク／ホテル／部屋２
+;@Person:ホテル客
+;@Figure:サラリーマンＡ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HOTEL_A
+MSG_THRK_HOTEL_A;
+;ホテルの客Ａ
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_HOTEL_A_LATER)
+◆Ｂｅ　ｃａｒｅｆｕｌ　ｗｈｉｌｅ　ｗａｌｋｉｎｇ　ａｒｏｕｎｄ　ｏｕｔｓｉｄｅ，@WI(15)　ｅｓｐｅｃｉａｌｌｙ　ｎｅａｒ　ｔｈｅ　ｇｒａｖｅｙａｒｄ．
+;jpn:◆そとをあるくときは↓
+;jpn:　ようじんしたほうがいいよ。@WI(15)↓
+;jpn:　とくに　ぼちのあたりはあぶない。
+@KEYNP()
+』
+
+_THRK_HOTEL_A_LATER;
+◆Ｅｓｐｅｃｉａｌｌｙ　ｎｅａｒ　ｔｈｅ　ｇｒａｖｅｙａｒｄ，@WI(15)　ｉｔ’ｓ　ｄａｎｇｅｒｏｕｓ．@KEY()↓
+◆Ｂｕｔ　ｎｏｗ　ｉｔ’ｓ　ｂｅｅｎ　ｃｌｅａｎｅｄ　ｕｐ，　ｓｏ　ｉｔ’ｓ　ｓａｆｅ，　@WI(20)ｊｕｓｔ　ｔｏ　ｌｅｔ　ｙｏｕ　ｋｎｏｗ．
+;jpn:◆ぼちのあたりは　あぶない@WI(15)　と↓
+;jpn:　まえに　ちゅうこくしたものです。@KEY()↓
+;jpn:◆もう　あぶなくないですから↓
+;jpn:　それを　おつたえしときます。
+@KEYNP()
+』
+
+;----------------------------------------
+;@Habitat:スリーク／病院／受付
+;@Person:受付係
+;@Figure:看護婦
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HOSPITAL_USHER
+MSG_THRK_HOSPITAL_USHER;@MaltaAppended
+;◆Ｗｈｏ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｍｅｅｔ？
+;;◆どなたに　ごめんかいですか？@KEY()
+@GOSUB(MSG_NURSE_THRK)
+;@GOSUB(MSG_SHOP_THRK_HOSPITAL)
+』
+
+
+;@Habitat:スリーク／病院／受付
+;@Person:ケガ人（おじさん）
+;@Figure:おじさんＢ
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HOSP_A
+MSG_THRK_HOSP_A;
+;怪我人Ａ
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_HOSP_A_LATER)
+◆Ｉ’ｍ　ｓｔｒｏｎｇｅｒ　ｔｈａｎ　ａ　ｚｏｍｂｉｅ，@WI(15)　ｂｕｔ　ａ　ｂｕｎｃｈ　ｏｆ　ｚｏｍｂｉｅｓ　ｇａｎｇｅｄ　ｕｐ　ｏｎ　ｍｅ．
+;jpn:◆わたしは　ゾンビよりつよいが↓
+;jpn:　ゾンビのやつら↓
+;jpn:　おおぜいで　かかってきやがって！
+@KEYNP()
+』
+
+_THRK_HOSP_A_LATER;
+◆Ｉｆ　ｙｏｕ　ｗｏｕｌｄ　ｈａｖｅ　ｔａｋｅｎ　ｍｅ　ａｌｏｎｇ　ｔｏ　ｈｕｎｔ　ｚｏｍｂｉｅｓ　ｏｒ　ｓｏｍｅｔｈｉｎｇ，@KEY()↓
+◆Ｉ　ｗｏｕｌｄ　ｈａｖｅ　ｂｅｅｎ　ａ　ｂｉｇ　ｈｅｌｐ．
+;jpn:◆わたしを　ゾンビたいじとかに↓
+;jpn:　つれてってくれたら@KEY()↓
+;jpn:◆さぞかし　だいかつやくを↓
+;jpn:　したことで　ありましょう。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／病院／部屋２
+;@Person:ケガ人
+;@Figure:マスク
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HOSP_B
+MSG_THRK_HOSP_B;
+;怪我人Ｂ
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_HOSP_B_LATER)
+◆Ｔｈｅ　ｚｏｍｂｉｅｓ　ｇｏｔ　ｍｅ．．．@KEY()↓
+◆Ｉ　ｓｈｏｕｌｄ　ｈａｖｅ　ｇｏｔｔｅｎ　ｓｏｍｅ　ｚｏｍｂｉｅ　ｉｎｓｕｒａｎｃｅ．
+;jpn:◆ゾンビに　やられた‥‥。@KEY()↓
+;jpn:◆ゾンビほけんに↓
+;jpn:　はいってればよかった。
+@KEYNP()
+』
+
+_THRK_HOSP_B_LATER;
+◆Ｉ’ｍ　ｎｏｔ　ａｆｒａｉｄ　ｏｆ　ｎｏ　ｚｏｍｂｉｅ．@KEY()↓
+◆Ｗｈｅｎ　ｔｈｅｙ　ｃｏｍｅ　ｏｕｔ，　Ｉ’ｌｌ　ｂｅａｔ　ｔｈｅｍ　ｂｙ　ｍｙｓｅｌｆ．@KEY()↓
+◆Ａｃｔｕａｌｌｙ　Ｉ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｈｅｍ　ｔｏ　ｃｏｍｅ　ｏｕｔ．@WI(20)　　Ｔｈｅｙ’ｒｅ　ｗａｙ　ｔｏｏ　ｓｃａｒｙ．
+;jpn:◆もうゾンビなんか　こわくない。@KEY()↓
+;jpn:◆こんどでたら↓
+;jpn:　おれひとりで　やっつけてやる。@KEY()↓
+;jpn:◆でも　でないでほしい。↓
+;jpn:　こわいから。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／病院／診察室
+;@Person:医者
+;@Figure:医者
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HOSPITAL_DOCTOR
+MSG_THRK_HOSPITAL_DOCTOR;@MaltaAppended
+;◆Ｗｈｏ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｓｅｅ？
+;;◆みてもらいたいのは　だれだね？@KEY()
+@GOSUB(MSG_DOCTOR_THRK)
+』
+
+
+;----------------------------------------
+
+;@Habitat:スリーク／ドラッグストア／ドラッグストア
+;@Person:ドラッグストア店員
+;@Figure:サラリーマンＤ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_DRUG1
+MSG_THRK_DRUG1;@MaltaAppeded
+;◆Ｍａｙ　Ｉ　ｈｅｌｐ　ｙｏｕ？
+;;◆いらっしゃい。@KEY()
+@GOSUB(MSG_SHOP_THRK_DRUG1)
+』
+
+;@Habitat:スリーク／ドラッグストア／ドラッグストア
+;@Person:ドラッグストア店員
+;@Figure:おじいさん
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_DRUG2
+MSG_THRK_DRUG2;@MaltaAppeded
+;◆Ｍａｙ　Ｉ　ｈｅｌｐ　ｙｏｕ？
+;;◆いらっしゃい。@KEY()
+@GOSUB(MSG_SHOP_THRK_DRUG2)
+』
+
+;----------------------------------------
+
+;@Habitat:スリーク／マッハピザ／マッハピザ
+;@Person:ピザ屋店員
+;@Figure:ウェートレスＡ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_TWSN_MACH
+
+;----------------------------------------
+
+;@Habitat:スリーク／ベーカリー／ベーカリー
+;@Person:ベーカリー店員
+;@Figure:コック
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_BAKERY_CLERK
+MSG_THRK_BAKERY_CLERK;@MiuraAppended
+;◆Ｍａｙ　Ｉ　ｈｅｌｐ　ｙｏｕ？
+;;◆いらっしゃい！@KEY()
+@GOSUB(MSG_SHOP_THRK_BAKERY)
+』
+
+;----------------------------------------
+
+;@Habitat:スリーク／ヒントショップ／ヒントショップ
+;@Person:ヒント屋
+;@Figure:ヒント屋
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HINTMAN
+;MSG_THRK_HINTMAN;しょっぷ２へ
+;@GOTO(MSG_HINT);グローバルのヒントメッセージへ
+;◆Ｗａｉｔ　ａ　ｓｅｃｏｎｄ！　Ｙｏｕｎｇ　ｍａｎ．
+;　　Ｉ’ｄ　ｌｉｋｅ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ａ　ｈｉｎｔ．
+;　　Ｂｕｔ　Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈａｔ．
+;◆Ｓｏｒｒｙ．
+;◆ちょっとまった！ヤングマン@WI(20)↓
+;　ヒントを　あげたいんだけど↓
+;　まだ　おもいつかないんだ。@KEY()↓
+;◆わるいね。@KEYNP()
+;』
+
+;----------------------------------------
+
+;@Habitat:スリーク／フィールド／街に入りたての所
+;@Person:通行人Ｚ
+;@Figure:マスク
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_Z
+MSG_THRK_Z;
+;通行人Ｚ
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_Z_LATER)
+◆Ｚｏｍｂｉｅｓ　ａｎｄ　ｇｈｏｓｔｓ　ａｒｅ　ｏｎ　ｔｈｅ　ｌｏｏｓｅ　ｈｅｒｅ．@WI(20)　　Ｗｅｌｃｏｍｅ　ｔｏ　Ｔｈｒｅｅｄ．
+;jpn:◆ゾンビとゴーストでいっぱいの↓
+;jpn:　ぶきみなまちスリークに↓
+;jpn:　よーこそー。
+@KEYNP()
+』
+
+_THRK_Z_LATER;
+;スリークの入口の人のクリア後のセリフ
+◆Ｚｏｍｂｉｅｓ　ａｎｄ　ｇｈｏｓｔｓ　ａｒｅ@WI(20)　ｎｏｔ　ｏｎ　ｔｈｅ　ｌｏｏｓｅ　ａｎｙｍｏｒｅ．@KEY()↓
+◆Ｏｈ　ｙｅａｈ，　ｙｏｕ　ｇｕｙｓ　ｇｏｔ　ｒｉｄ　ｏｆ　ｔｈｅ　ｍｏｎｓｔｅｒｓ．　　Ｏｏｏｐｓ！　　Ｈｅ　ｈｅ．
+;jpn:◆ゾンビもゴーストも↓
+;jpn:　すっかりかたづいた↓
+;jpn:　スリークのまちに　ようこそ。@KEY()↓
+;jpn:◆アハハ　あんたたちの↓
+;jpn:　おかげだったよね。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行人Ａ
+;@Figure:ジミな男
+;@AppearanceKey:FLG_WIN_GEPPU/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_A
+MSG_THRK_A;
+;通行人Ａ
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_A_LATER)
+@CHKFGOTO(FLG_THRK_ZOMBI_CAPTURED,_THRK_A_TMP)
+◆Ｚｏｍｂｉｅｓ　ａｎｄ　ｇｈｏｓｔｓ　ａｒｅ　ｏｎ　ｔｈｅ　ｌｏｏｓｅ　ｈｅｒｅ，　ｓｏ　Ｉ　ｃａｎ’ｔ　ｇｅｔ　ｔｏ　Ｔｗｏｓｏｎ　ｏｒ　Ｆｏｕｒｓｉｄｅ．@KEY()↓
+◆Ｍａｙｂｅ　ｔｈｅ　ｈｉｄｄｅｎ　ｒｏａｄ　ｉｎ　ｔｈｅ　ｇｒａｖｅｙａｒｄ　ｉｓ　ｓａｆｅ．．．
+;jpn:◆ゾンビどもが　このまちを↓
+;jpn:　うろうろしてるあいだは@KEY()↓
+;jpn:◆ツーソンにも　フォーサイドにも↓
+;jpn:　いけやしない。@KEY()↓
+;jpn:◆はかばの　ぬけみちを　とおれば↓
+;jpn:　なんとかなりそうなんだが‥‥。
+@KEYNP()
+』
+_THRK_A_TMP;
+◆Ｙｏｕ　ｇｕｙｓ　ｇｏｔ　ｒｉｄ　ｏｆ　ｔｈｅ　ｚｏｍｂｉｅｓ，@KEY()↓
+◆’ｃｅｐｔ　ｔｈｅ　ｇｈｏｓｔｓ　ｉｎ　ｔｈｅ　ｔｕｎｎｅｌ　ｓｅｅｍ　ｓｃａｒｉｅｒ　ｔｈａｎ　ｅｖｅｒ！
+;jpn:◆あんたたちのおかげで↓
+;jpn:　ゾンビが　まちから↓
+;jpn:　いなくなったよ！@KEY()↓
+;jpn:◆‥‥でも↓
+;jpn:　トンネルのゴーストたちは↓
+;jpn:　まだ　ぴんぴんしてるらしい。
+@KEYNP()
+』
+
+_THRK_A_LATER;
+◆Ｉｆ　ｙｏｕ　ｗｅｒｅｎ’ｔ　ｈｅｒｅ，@WI(15)　Ｉ　ｍｉｇｈｔ　ｈａｖｅ　ｈａｄ　ｔｏ　ｂｅ　ｆｒｉｅｎｄｌｙ　ｗｉｔｈ　ｔｈｅ　ｚｏｍｂｉｅｓ！
+;jpn:◆きみたちが　いなかったら↓
+;jpn:　ぼくも　ゾンビのなかまに↓
+;jpn:　なっていたかもしれない。@KEY()↓
+;jpn:◆ほんとに　よかった。
+@KEYNP()
+』
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行人Ｋ
+;@Figure:少年Ｂ
+;@AppearanceKey:0
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_K
+MSG_THRK_K;
+;通行人Ｋ
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_K_LATER)
+◆Ｔｈｉｓ　ｔｏｗｎ　ｓｅｅｍｓ　ｖｅｒｙ　ｄａｒｋ，　ｒｉｇｈｔ？@KEY()↓
+◆Ｔｈｅ　ｐｅｏｐｌｅ　ａｒｅ　ｍｏｓｔｌｙ　ｌｉｖｉｎｇ　ａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　ｔｏｗｎ．@KEY()↓
+◆Ｉ　ｗｏｎｄｅｒ　ｈｏｗ　ｗｅ　ｓｈｏｕｌｄ　ｇｅｔ　ｔｈｅ　ｔｏｗｎ　ｂａｃｋ　ｆｒｏｍ　ｔｈｅ　ｚｏｍｂｉｅｓ？
+;jpn:◆くらいだろ　このまち。@KEY()↓
+;jpn:◆にんげんたちは↓
+;jpn:　まちのまんなかに　まとまって↓
+;jpn:　ひっそりと　くらしてるんだ。@KEY()↓
+;jpn:◆なんとか　ゾンビどもから↓
+;jpn:　まちを　とりかえしたくて↓
+;jpn:　そうだんをしてるわけさ。
+@KEYNP()
+』
+
+_THRK_K_LATER;
+◆Ｔｈｉｓ　ｔｏｗｎ　ｕｓｅｄ　ｔｏ　ｂｅ　ｄａｒｋ，@WI(15)　ｂｕｔ　ｔｈａｎｋｓ　ｔｏ　ｙｏｕ，　ｎｏｗ　ｉｔ’ｓ　ｂｒｉｇｈｔ．
+;jpn:◆くらかった　このまちも↓
+;jpn:　あんたの　おかげで↓
+;jpn:　あかるくなったよ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行人Ｇ
+;@Figure:少女Ｄ
+;@AppearanceKey:0
+;@ActionScript:◆中範囲うろつき＋逃げ
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_G
+MSG_THRK_G;
+;通行人Ｇ♀
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_G_LATER)
+◆Ｈｅｙ，　ｙｏｕ　ｄｏｎ’ｔ　ｌｏｏｋ　ｓｏ　ｈａｐｐｙ，@WI(15)　ｙｏｕ’ｄ　ｂｅｔｔｅｒ　ｃｈｅｅｒ　ｕｐ，　ｏｒ　ｙｏｕ’ｌｌ　ｂｅｃｏｍｅ　ａ　ｚｏｍｂｉｅ．@KEY()↓
+◆Ｓｏｍｅ　ｐｅｏｐｌｅ　ｈａｖｅ　ａｌｒｅａｄｙ　ｂｅｃｏｍｅ　ｔｏｏｌｓ　ｏｆ　ｔｈｅ　ｚｏｍｂｉｅｓ．
+;jpn:◆げんきなさそうよ　あんた。@WI(15)↓
+;jpn:　ようきにしてないと↓
+;jpn:　ゾンビのなかまに　されるわよ。@KEY()↓
+;jpn:◆ゾンビのてさきになって↓
+;jpn:　はたらいているやつも↓
+;jpn:　いるんだから。
+@KEYNP()
+』
+
+_THRK_G_LATER;
+@GET_ORDER_PLAYER(1)
+@EQ(PC_PAULA)
+;@TRUE_GOTO(_THRK_G_PAULA)
+◆Ｉ’ｍ　ｓｏ　ｇｌａｄ　ｙｏｕ　ｗｉｐｅｄ　ｏｕｔ　ｔｈｅ　ｚｏｍｂｉｅｓ．@WI(15)　　Ｌｅｔ　ｍｅ　ｇｉｖｅ　ｙｏｕ　ａ　ｋｉｓｓ．@KEY()↓
+◆＊ｓｍｏｏｃｈ＊　　Ｔｅｅ　ｈｅｅ　ｈｅｅ．．．　　Ｉ’ｍ　ｂｌｕｓｈｉｎｇ．
+@KEYNP()
+;jpn:◆ゾンビを　やっつけてもらって↓
+;jpn:　ほんとに　うれしいわ。@WI(15)↓
+;jpn:　チューして　あげよう。@KEY()↓
+;jpn:◆キャッ！@WI(15)　はずかしい。@KEY()
+;逃げる？
+』
+
+;_THRK_G_PAULA;
+;◆（ポーラが↓
+;　せんとうだったときの↓
+;　メッセージです）
+;@KEYNP()
+;@!
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行人Ｍ
+;@Figure:おじさんＢ
+;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_M
+MSG_THRK_M;
+;通行人Ｍ
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_M_LATER)
+@CHKFGOTO(FLG_THRK_ZOMBI_CAPTURED,_THRK_M_TMP)
+◆Ｔｈｅ　ｈｅａｄｑｕａｒｔｅｒｓ　ｏｆ　ｔｈｅ　Ｚｏｍｂｉｅ　Ｒｅｌｉｅｆ　Ｃｏｒｐｓ@KEY()↓
+◆ｉｓ　ｉｎ　ｔｈｅ　ｃｉｒｃｕｓ　ｔｅｎｔ　ａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　ｔｏｗｎ．@KEY()↓
+◆Ｗｅ　ｗａｎｔ　ｔｏ　ｃｒｕｓｈ　ｔｈｅ　ｚｏｍｂｉｅｓ，　ｅｘｃｅｐｔ　Ｉ　ｔｈｉｎｋ　ｔｈｅｙ’ｌｌ　ｃｒｕｓｈ　ｕｓ．
+;jpn:◆まちのまんなかのひろばの↓
+;jpn:　サーカスのテントを↓
+;jpn:　「ゾンビたいさくほんぶ」にして@KEY()↓
+;jpn:◆ばけものどもと　たたかおうと↓
+;jpn:　いうわけなんだが@KEY()↓
+;jpn:◆ぎゃくに　ゾンビどもに↓
+;jpn:　しゅうげきされそうなんだよ。
+@KEYNP()
+』
+_THRK_M_TMP;
+◆Ｉ　ｔｈｏｕｇｈｔ　ｔｈｅ　ｚｏｍｂｉｅｓ　ｗｅｒｅ　ｇｏｎｅ．．．　　Ｂｕｔ　ｌｏｏｋ　ａｔ　ｔｈｅ　ｓｕｒｒｏｕｎｄｉｎｇｓ．．．@KEY()↓
+◆Ｉｔ’ｓ　ｓｔｉｌｌ　ｄａｒｋ！
+;jpn:◆ゾンビが↓
+;jpn:　たいじできたと　おもったのに↓
+;jpn:　まだ　このまちの　ふんいきは@KEY()↓
+;jpn:◆‥‥くらい！
+
+@KEYNP()
+』
+_THRK_M_LATER;
+◆Ｗｅ　ｗｏｎ　ｂｅｃａｕｓｅ　ｏｆ　ｏｕｒ　ｂｒａｉｎｓ，@WI(15)　ｇｕｔｓ，@WI(15)　ａｎｄ　ｔｏｇｅｔｈｅｒｎｅｓｓ．@KEY()↓
+◆Ｗｏｗ！@WI(15)　　Ｗｈａｔ　ａ　ｒｕｓｈ！
+;jpn:◆ちえと　ゆうきと↓
+;jpn:　だんけつの　しょうりだったね！@KEY()↓
+;jpn:◆きもちいいよ！
+@KEYNP()
+』
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:墓場情報の人
+;@Figure:少年Ａ
+;@AppearanceKey:FLG_WIN_GEPPU/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_GRAVE
+MSG_THRK_GRAVE;
+;墓場の情報をくれる人
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_GRAVE_LATER)
+◆Ｔｈｅｒｅ’ｓ　ａ　ｒｕｍｏｒ　ｔｈａｔ　ｔｈｅｒｅ　ｉｓ　ａｎ　ｕｎｄｅｒｇｒｏｕｎｄ　ｐａｔｈ　ａｔ　ｔｈｅ　ｅｄｇｅ　ｏｆ　ｔｈｅ　ｇｒａｖｅｙａｒｄ@KEY()↓
+◆ｔｈａｔ　ｔａｋｅｓ　ｙｏｕ　ｓｏｍｅｗｈｅｒｅ．@KEY()↓
+◆Ｗｈｅｎ　ｙｏｕ　ｇｅｔ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｐａｔｈ，@KEY()↓
+◆ｙｏｕ’ｌｌ　ｍｅｅｔ　ａ　ｄｉｒｔｙ，@WI(15)　ｓｔｉｎｋｙ，@WI(15)　ｕｇｌｙ，@WI(15)　ｐｏｗｅｒｆｕｌ　ｍｏｎｓｔｅｒ．@KEY()↓
+◆Ｉ　ｗｅｔ　ｍｙ　ｐａｎｔｓ　ｊｕｓｔ　ｔｈｉｎｋｉｎｇ　ａｂｏｕｔ　ｉｔ．
+;jpn:◆はかばのおくに↓
+;jpn:　どっかにつうじる　めいろが↓
+;jpn:　あるってうわさなんだよね。@KEY()↓
+;jpn:◆めいろのむこうには↓
+;jpn:　このよのものとは↓
+;jpn:　おもえないくらい‥‥@KEY()↓
+;jpn:◆きたなくって　みにくくって↓
+;jpn:　つよくって　わるいばけものが↓
+;jpn:　まちかまえてるんだってさ。@KEY()↓
+;jpn:◆おれ@WI(20)　そうぞうしただけで↓
+;jpn:　こわくてさー。
+@KEYNP()
+』
+_THRK_GRAVE_LATER;
+◆Ｙｏｕ’ｖｅ　ｂｅｅｎ　ｔｈｒｏｕｇｈ　ｓｏｍｅ　ｔｏｕｇｈ　ｂａｔｔｌｅｓ！
+;jpn:◆きみたち↓
+;jpn:　たいへんな　たたかいを↓
+;jpn:　してきたらしいねぇ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:魔テント情報の人
+;@Figure:ＯＬＦ
+;@AppearanceKey:FLG_JEFF/on
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_MATENT
+MSG_THRK_MATENT;
+;魔テント情報の人
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_MATENT_LATER)
+@CHKFGOTO(FLG_WIN_MATENT,_THRK_MATENT_AFTER)
+◆？@WI(5)？@WI(5)？　　Ｔｈｅｒｅ’ｓ　ｂｅｅｎ　ａ　ｃｉｒｃｕｓ　ｔｅｎｔ　ａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　ｔｏｗｎ　ｆｏｒ　ａ　ｌｏｎｇ　ｔｉｍｅ．@KEY()↓
+◆Ｉ　ｓａｗ　ａｎｏｔｈｅｒ　ｔｅｎｔ　ｔｏ　ｔｈｅ　ｓｏｕｔｈ．　　Ｉ　ｗｏｎｄｅｒ　ｗｈｅｎ　ｉｔ　ｗｅｎｔ　ｕｐ？
+;jpn:◆？？？？　まちのなかのテントは↓
+;jpn:　まえから　あるんだけど‥‥@KEY()↓
+;jpn:◆まちのみなみの↓
+;jpn:　サーカスみたいなテントは↓
+;jpn:　いつからたっていたのかしら？
+@KEYNP()
+』
+
+_THRK_MATENT_AFTER;
+◆Ｔｈａｔ　ｓｔｒａｎｇｅ　ｔｅｎｔ．．．@WI(20)　　Ｉｔ　ｗａｓ　ａ　ｍｏｎｓｔｅｒ！@KEY()↓
+◆Ｉ’ｍ　ｇｌａｄ　Ｉ　ｄｉｄｎ’ｔ　ｇｏ　ｉｎｓｉｄｅ！
+;jpn:◆あの　へんなテント‥‥@WI(15)↓
+;jpn:　ばけものだったのねぇ。@KEY()↓
+;jpn:◆ちかよらなくて　よかった。
+@KEYNP()
+』
+
+_THRK_MATENT_LATER;
+◆Ｖｉｓｉｔ　Ｔｈｒｅｅｄ　ａｇａｉｎ！
+;jpn:◆また　きっと↓
+;jpn:　スリークのまちに↓
+;jpn:　あそびにきてね。
+@KEYNP()
+』
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行幼児
+;@Figure:キャップ
+;@AppearanceKey:0
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_FIELD_KID
+MSG_THRK_FIELD_KID;
+;スリークフィールド通行幼児
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_FIELD_KID_LATER)
+@CHKFGOTO(FLG_THRK_ZOMBI_CAPTURED,_THRK_FIELD_KID_LATER)
+◆Ｉ’ｍ　ｓｏ　ｓｃａｒｅｄ　ｏｆ　ｔｈｅ　ｚｏｍｂｉｅｓ，　Ｉ　ｓｐｅｎｄ　ａｌｌ　ｏｆ　ｍｙ　ｔｉｍｅ　ｒｕｎｎｉｎｇ　ｆｒｏｍ　ｔｈｅｍ．@KEY()↓
+◆Ｉ　ｃａｎ’ｔ　ｅｖｅｎ　ｇｅｔ　ｈｏｍｅ！
+;jpn:◆ゾンビが　こわいので↓
+;jpn:　ぼくは　にげまわってます。@KEY()↓
+;jpn:◆おかげで　うちに　かえれない。
+@KEYNP()
+』
+
+_THRK_FIELD_KID_LATER;
+◆Ｉ　ｈａｄ　ｔｏ　ｒｕｎ　ａｌｌ　ｏｖｅｒ　ｔｏ　ｅｓｃａｐｅ　ｔｈｅ　ｚｏｍｂｉｅｓ．@KEY()↓
+◆Ｎｏｗ　Ｉ　ｃａｎ’ｔ　ｒｅｍｅｍｂｅｒ　ｗｈｅｒｅ　ｍｙ　ｈｏｕｓｅ　ｉｓ．．．
+;jpn:◆ゾンビから　にげまわって↓
+;jpn:　うちに　かえらなかったので↓
+;jpn:　うちを　わすれてしまったよ。
+@KEYNP()
+』
+MSG_THRK_FIELD_KID_LATER;どこかの家に入れておく
+◆Ｈｅｙ，　ｄｏ　ｙｏｕ　ｒｅｍｅｍｂｅｒ　ｍｅ？@KEY()↓
+◆Ｉ　ｈａｄ　ｔｏ　ｒｕｎ　ａｌｌ　ｏｖｅｒ　ｔｏ　ｅｓｃａｐｅ　ｔｈｅ　ｚｏｍｂｉｅｓ．@KEY()↓
+◆Ｎｏｗ　Ｉ　ｃａｎ’ｔ　ｒｅｍｅｍｂｅｒ　ｗｈｅｒｅ　ｍｙ　ｈｏｕｓｅ　ｉｓ．．．
+◆Ｉ　ｔｏｌｄ　ｙｏｕ　ｔｈｉｓ　ｂｅｆｏｒｅ，　ｒｅｍｅｍｂｅｒ？@KEY()↓
+◆Ｈｕｈ？　　Ｉ　ｎｅｖｅｒ　ｓａｗ　ｙｏｕ　ｂｅｆｏｒｅ？@KEY()↓
+◆Ｉ　ｇｕｅｓｓ　Ｉ　ｃａｎ’ｔ　ｒｅｍｅｍｂｅｒ　ａｎｙｔｈｉｎｇ　ｒｉｇｈｔ．
+;jpn:◆おにいちゃん@GOSUB(MSG_SUB_TATI)↓
+;jpn:　ボクを　おぼえてる？@KEY()↓
+;jpn:◆ゾンビから　にげまわって↓
+;jpn:　うちに　かえれなかったので↓
+;jpn:　うちを　わすれてしまったよ‥‥@KEY()↓
+;jpn:◆っていってた　おとこのコだよ。@KEY()↓
+;jpn:◆‥‥あれ？↓
+;jpn:　あってなかったっけ？@KEY()↓
+;jpn:◆とにかく　ボク↓
+;jpn:　わすれっぽいから。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行ねずみ
+;@Figure:ねずみ
+;@AppearanceKey:FLG_WIN_GEPPU/off
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_FIELD_MOUSE
+MSG_THRK_FIELD_MOUSE;
+;通行ねずみ
+◆（Ｙｏｕ’ｒｅ　ａｗｆｕｌｌｙ　ｋｉｎｄ　ｔａｋｉｎｇ　ｔｉｍｅ　ｏｕｔ　ｔｏ　ｔａｌｋ　ｔｏ　ａ　ｍｏｕｓｅ．@WI(20)　　Ｔｈｉｓ　ｍｏｕｓｅ　ｌｏｖｅｓ　ｙｏｕ！）
+;jpn:◆ねずみにさえ　はなしかける。@WI(20)↓
+;jpn:　そんなあなたを↓
+;jpn:　ねずみは　だいすきです。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行犬
+;@Figure:チリドッグ
+;@AppearanceKey:0
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_FIELD_STRAYDOG
+MSG_THRK_FIELD_STRAYDOG;
+;@CHKFGOTO(FLG_WIN_GEPPU,_THRK_FIELD_STRAYDOG_LATER)
+◆Ｏｗｏｏｏｏ！
+;DAN: This is dog's cry.
+;jpn:◆クーン。
+@KEY()
+』
+;◆Ｍｉｓｓ！
+;	（Ｔｈｉｓ　ｄｏｇ　ｄｏｅｓｎ’ｔ　ｓｐｅａｋ．）
+;◆ハズレ！@WI(20)↓
+;　（このイヌは　しゃべらない）@KEYNP()
+;』
+;
+;_THRK_FIELD_STRAYDOG_LATER;@MaltaAppended
+;◆Ｂｏｗ！
+;◆ワン！@KEY()
+;』
+
+;@Habitat:スリーク／フィールド／街の至る所
+;@Person:通行老婆
+;@Figure:おばあさん
+;@AppearanceKey:0
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_FIELD_OLDWOMAN
+MSG_THRK_FIELD_OLDWOMAN;
+;通行老婆
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_FIELD_OLDWOMAN_LATER)
+◆Ｈｏｗ　ｃａｎ　ｙｏｕ　ｓｍｉｌｅ　ｌｉｋｅ　ｔｈａｔ　ｉｎ　ａ　ｄａｎｇｅｒｏｕｓ　ｐｌａｃｅ　ｌｉｋｅ　ｔｈｉｓ？
+;jpn:◆こんな　ぶっそうなまちで↓
+;jpn:　よくそんなふうにニコニコと↓
+;jpn:　わらってられるわねぇ。
+@KEYNP()
+』
+
+_THRK_FIELD_OLDWOMAN_LATER;
+;通行老婆
+◆Ｉ　ｔｈｏｕｇｈｔ　ｔｈｅｒｅ　ｗａｓ　ｓｏｍｅｔｈｉｎｇ　ｍｏｒｅ　ｔｏ　ｙｏｕ　ｔｈａｎ　ｊｕｓｔ　ｙｏｕｒ　ｓｍｉｌｅ．
+;jpn:◆あんたの　えがおにゃ↓
+;jpn:　なにかあると↓
+;jpn:　わたしは　おもっていたよ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／ハイウェイ寄り
+;@Person:ハイウェイ情報の人
+;@Figure:船長
+;@AppearanceKey:FLG_WIN_GEPPU/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_HIGHWAY
+MSG_THRK_HIGHWAY;
+;ハイウェイのそばの人
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_HIGHWAY_LATER)
+◆Ｉ　ｓａｗ　ａ　ｂｅａｔ－ｕｐ　ｔｏｕｒ　ｂｕｓ　ｇｏｉｎｇ　ｔｏ　Ｆｏｕｒｓｉｄｅ．@WI(20)　　Ｗｅ　ｃａｎ’ｔ　ｇｏ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｔｕｎｎｅｌ．@KEY()↓
+◆Ｔｈｅ　ｂａｎｄ　ｗａｓ　ｒｅａｌｌｙ　ｎｏｉｓｙ，@WI(15)　ｓｏ　ｔｈｅ　ｇｈｏｓｔｓ　ｄｉｄｎ’ｔ　ａｐｐｒｏａｃｈ　ｔｈｅ　ｂｕｓ．@KEY()↓
+◆Ｉｔ　ｍｕｓｔ　ｂｅ　ｇｒｅａｔ　ｔｏ　ｂｅ　ｓｏ　ｈａｐｐｙ－ｇｏ－ｌｕｃｋｙ，　ｈｕｈ！
+;jpn:◆バンドマンの　ボロぐるまが↓
+;jpn:　フォーサイドのほうへ　いったけど@WI(15)↓
+;jpn:　ふつうのひとにゃ　むりだろうよ。@KEY()↓
+;jpn:◆バンドマンのやつらは↓
+;jpn:　おおさわぎしてたから　きっと↓
+;jpn:　ばけもんに　きづかなかったんだ。@KEY()↓
+;jpn:◆おめでたいせいかくってのは↓
+;jpn:　トクなんだよねぇ。
+@KEYNP()
+』
+_THRK_HIGHWAY_LATER;
+◆Ｉ　ｗａｎｔｅｄ　ｔｏ　ｃａｔｃｈ　ｏｎｅ　ｏｆ　ｔｈｅ　ｇｈｏｓｔｓ　ｉｎ　ｔｈｅ　ｔｕｎｎｅｌ　ａｎｄ　ｋｅｅｐ　ｉｔ　ａｓ　ａ　ｐｅｔ．@KEY()↓
+◆Ｉ’ｍ　ｊｕｓｔ　ｔｅａｓｉｎ’．　　Ｉ　ｃａｎ　ｔｅａｓｅ　ｌｉｋｅ　ｔｈａｔ　ｎｏｗ　ｔｈａｔ　ｔｈｅｙ’ｒｅ　ｇｏｎｅ．
+;jpn:◆トンネルの　ゴーストを↓
+;jpn:　いっぴきつかまえて↓
+;jpn:　いえで　かいたかったなぁ。@KEY()↓
+;jpn:◆あ　うそうそ！@WI(20)↓
+;jpn:　いなくなったから　そんな↓
+;jpn:　じょうだんも　いえるんだよ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／偽テント付近
+;@Person:ゾンビ派のバッチー
+;@Figure:ボロ
+;@AppearanceKey:FLG_JEFF/on
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_BATCHY
+MSG_THRK_BATCHY;
+;ゾンビにとりいる男（バッチー）
+@CHKFGOTO(FLG_WIN_GIEGU,_THRK_BATCHY_END)
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_BATCHY_LATER)
+◆Ｉ’ｍ　ｏｎｌｙ　ｔｅｌｌｉｎｇ　ｙｏｕ　ｔｈｉｓ　ｂｅｃａｕｓｅ　ｙｏｕ　ｌｏｏｋ　ｌｉｋｅ　ｙｏｕ’ｒｅ　ｊｕｓｔ　ｐａｓｓｉｎｇ　ｔｈｒｏｕｇｈ．@KEY()↓
+◆Ｔｈｅ　ｔｒｕｔｈ　ｉｓ，@WI(15)　Ｉ　ｗｏｒｋ　ｆｏｒ　ｔｈｅ　ｍｏｎｓｔｅｒｓ．@KEY()↓
+◆Ｔｈｅ　ｈｕｍａｎｓ　ｓｅｅｍ　ｔｏ　ｂｅ　ｌｏｓｉｎｇ，@KEY()↓
+◆ｓｏ　Ｉ’ｍ　ｏｎ　ｔｈｅ　ｚｏｍｂｉｅｓ’　ｓｉｄｅ　ｆｏｒ　ｍｙ　ｏｗｎ　ｐｒｏｔｅｃｔｉｏｎ．@KEY()↓
+◆Ｔｈｅ　ｚｏｍｂｉｅｓ’　ｌｅａｄｅｒ　ｌｉｋｅｓ　Ｆｌｙ　Ｈｏｎｅｙ．　　Ｈｅ　ｍａｋｅｓ　ｈｉｓ　ｆｏｌｌｏｗｅｒｓ　ｃｏｌｌｅｃｔ　ｉｔ．@KEY()↓
+◆Ｙｏｕ　ｋｎｏｗ－－ｂｅｅｓ　ｍａｋｅ　ｂｅｅ　ｈｏｎｅｙ　ａｎｄ　ｆｌｉｅｓ　ｍａｋｅ　Ｆｌｙ　Ｈｏｎｅｙ．@KEY()↓
+◆Ｔｈｅ　ｚｏｍｂｉｅ　ｌｅａｄｅｒ　ｉｓ　ｓｔｒｏｎｇ　ｂｅｃａｕｓｅ@KEY()↓
+◆ｈｅ　ａｌｗａｙｓ　ｅａｔｓ　ｐｅａｎｕｔ　ｂｕｔｔｅｒ　ａｎｄ　Ｆｌｙ　Ｈｏｎｅｙ　ｓａｎｄｗｉｃｈｅｓ．．．
+;jpn:◆おまえは　よそものらしいから↓
+;jpn:　おしえてやるが@WI(15)↓
+;jpn:　じつは　おれはよー@KEY()↓
+;jpn:◆ばけものどもの　みかたになって↓
+;jpn:　はたらいているんだ。@KEY()↓
+;jpn:◆にんげんのほうが　まけそうだろ。@WI(15)↓
+;jpn:　じぶんのみを　まもるためには↓
+;jpn:　ゾンビがわに　ついたほうがいい。@KEY()↓
+;jpn:◆やつらの　おおおやぶんてのが↓
+;jpn:　「はえみつ」ってやつが　すきで↓
+;jpn:　あつめさせてるんだよ。@KEY()↓
+;jpn:◆「はえみつ」ってのは↓
+;jpn:　はえのあつめた　みつだよ。@KEY()↓
+;jpn:◆はちがあつめりゃ　はちみつ。@WI(15)↓
+;jpn:　はえがあつめるのは　はえみつ。@KEY()↓
+;jpn:◆ばけものの　おおおやぶんは↓
+;jpn:　こいつをなめてるから↓
+;jpn:　どえらくつよいらしいぜ。
+@CHKFGOTO(FLG_WIN_MATENT,_THRK_BATCHY_AFTER)
+@KEY()↓
+◆Ｉ　ｇｏｔ　ｌｏｔｓ　ｏｆ　Ｆｌｙ　Ｈｏｎｅｙ　ｓｔｏｒｅｄ　ｉｎ　ｔｈｅ　ｔｅｎｔ　ｔｏ　ｔｈｅ　ｓｏｕｔｈ．　　Ｉ’ｌｌ　ｄｅｌｉｖｅｒ　ｉｔ　ｓｏｏｎ．
+@KEYNP()
+;jpn:◆そっちの　ばけテントのなかに↓
+;jpn:　たっぷりためこんであるから↓
+;jpn:　もうじき　とどけにいくんだ。@KEYNP()
+』
+_THRK_BATCHY_AFTER;
+@KEYNP()
+』
+
+_THRK_BATCHY_LATER;＃
+;バッチーその後
+◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｙｏｕ　ｂｅａｔ　ｔｈｅ　ｚｏｍｂｉｅ　ｌｅａｄｅｒ@KEY()↓
+◆ａｆｔｅｒ　ｙｏｕ　ｇｏｔ　ｓｏｍｅ　ｉｍｐｏｒｔａｎｔ　ｉｎｆｏ　ｆｒｏｍ　ｍｅ．@KEY()↓
+◆Ｈｅｈ　ｈｅｈ　ｈｅｈ．．．@KEY()↓
+◆Ｙｏｕ　ｓｈｏｕｌｄ　ａｔ　ｌｅａｓｔ　ｔｈａｎｋ　ｍｅ．．．　ｏｒ　ｈｏｗ　ａｂｏｕｔ　ａ　ｓｈｏｕｌｄｅｒ　ｍａｓｓａｇｅ．．．@KEY()↓
+◆Ｗｈｙ　ａｒｅ　ｙｏｕ　ｇｉｖｉｎｇ　ｍｅ　ｓｕｃｈ　ａ　ｄｉｒｔｙ　ｌｏｏｋ，　ｙｏｕ　ｂｒａｔ！@WI(10)　　Ｐｔｏｏｉｅ！
+;jpn:◆おれの　たいせつな↓
+;jpn:　じょうほうを　きいといたおかげで@KEY()↓
+;jpn:◆ばけものの　おおおやぶんを↓
+;jpn:　たおしたらしいね。@WI(15)ヒッヒッヒ。@KEY()↓
+;jpn:◆かんしゃしたり↓
+;jpn:　かたもんだり@KEY()↓
+;jpn:◆おれいを　いってくれても↓
+;jpn:　いいんじゃないのかい。@KEY()↓
+;jpn:◆‥‥あ　おれのこと↓
+;jpn:　けいべつしてる　まなざし！@KEY()↓
+;jpn:◆ってやんでぇ！@WI(15)　ペッ！
+@KEYNP()
+』
+_THRK_BATCHY_END;＆
+◆．．．Ｓｉｎｃｅ　ｔｈｅｎ，　Ｉ’ｖｅ　ｒｅａｌｌｙ　ｍａｔｕｒｅｄ．@KEY()↓
+◆Ｉ　ａｍ　ｄｏｉｎｇ　ｗｅｌｌ　ｉｎ　ｔｈｅ　ｈｅａｌｔｈ　ｆｏｏｄ　ｂｕｓｉｎｅｓｓ．@KEY()↓
+◆Ｐｅｏｐｌｅ　ｃａｎ　ｇｅｔ　ｏｖｅｒ　ａｎｙ　ｉｌｌｎｅｓｓ　ｔｈｅｙ　ｍｉｇｈｔ　ｃａｔｃｈ．@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｉｔ’ｓ　ａ　ｇｒｅａｔ　ｂｕｓｉｎｅｓｓ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆‥‥おれ　そのご↓
+;jpn:　すっげぇ　まじめに↓
+;jpn:　じんせいに　とりくんでるんだ。@KEY()↓
+;jpn:◆けんこうしょくひんの↓
+;jpn:　はんばいとか　すっごくもうかるし↓
+;jpn:　どんなびょうきも　なおるし‥‥@KEY()↓
+;jpn:◆まじめな　しょうばいだろ？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_THRK_BATCHY_END_YES,_THRK_BATCHY_END_NO)
+_THRK_BATCHY_END_NO;いいえ
+◆Ｏｋａｙ．．．ｓｏ　ｉｔ’ｓ　ｎｏｔ　ｆｏｒ　ｙｏｕ．
+;jpn:◆‥‥おまえには　むいてないな。
+@KEYNP()
+』
+_THRK_BATCHY_END_YES;はい
+◆Ｉ　ｃｏｕｌｄ　ｍａｋｅ　ｙｏｕ　ｂｅｌｉｅｖｅ　ａｎｙｔｈｉｎｇ．．．
+;jpn:◆‥‥おまえ　あいかわらず↓
+;jpn:　おひとよしだな。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／大通りの南
+;@Person:ツ-ソンデパ-トの彼女
+;@Figure:少女Ｃ
+;@AppearanceKey:FLG_WIN_GEPPU/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_DEPTD
+MSG_THRK_DEPTD;
+;デパート３階客Ｄがクリア後のスリークに出現
+◆Ａｆｔｅｒ　ｔｈｅ　ｂｕｓｓｅｓ　ｓｔａｒｔｅｄ　ｒｕｎｎｉｎｇ　ａｇａｉｎ，@KEY()↓
+◆Ｉ　ｄｅｃｉｄｅｄ　ｔｏ　ｃｏｍｅ　ｓｅｅ　ｍｙ　ｂｏｙｆｒｉｅｎｄ．．．Ｉ　ｒｅａｌｌｙ　ｓｈｏｕｌｄｎ’ｔ　ｈａｖｅ，　ｔｈｏｕｇｈ．
+;jpn:◆バスがうごくようになったので↓
+;jpn:　こいびとに　あいにきたんだけど↓
+;jpn:　‥‥こないほうが　よかった。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／大通りの南
+;@Person:デパ-ト彼女の元彼氏
+;@Figure:ゴロツキ
+;@AppearanceKey:FLG_WIN_GEPPU/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_DEPTD_BF
+MSG_THRK_DEPTD_BF;
+;デパート３階客Ｄの恋人（スリーク）
+◆Ｗｏ！　　Ｄｕｄｅ！@WI(15)　　Ｌｉｋｅ，@WI(15)　ｍｙ　ｏｌｄ　ｇｉｒｌｆｒｉｅｎｄ　ｆｒｏｍ　Ｔｗｏｓｏｎ　ｈｕｎｔｅｄ　ｍｅ　ｄｏｗｎ，　ｍａｎ．@KEY()↓
+◆Ｉ’ｍ　ｔｏｔａｌｌｙ　ｂｕｍｍｅｄ，　’ｃａｕｓｅ　Ｉ　ｈａｖｅ　ａｎｏｔｈｅｒ　ｇｉｒｌｆｒｉｅｎｄ　ｈｅｒｅ　ｉｎ　Ｔｈｒｅｅｄ．
+;jpn:◆むかしの　ノカジョが↓
+;jpn:　ソンツーから　おいかけてきてさ↓
+;jpn:　ターマイツだよ。@KEY()↓
+;jpn:◆いまは　こいつと↓
+;jpn:　つきあってるのにさ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／大通りの南
+;@Person:彼氏の新彼女
+;@Figure:少女Ａ
+;@AppearanceKey:FLG_WIN_GEPPU/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_DEPTD_GF
+MSG_THRK_DEPTD_GF;
+;上の人の彼女
+◆Ｈａ　ｈａ　ｈａ．．．ｃｈｅｃｋ　ｈｉｍ　ｏｕｔ．@KEY()↓
+◆Ｉ　ｔｈｉｎｋ　ｈｅ’ｓ　ｔｈｅ　ｂｅｅ’ｓ　ｋｎｅｅｓ，@WI(15)　ｏｏｐｓ，　Ｉ　ｍｅａｎ　ｗａｙ　ｃｏｏｌ．@WI(20)　　Ｈｅ　ｕｓｅｄ　ｔｏ　ｂｅ　ｉｎ　ａ　ｂａｎｄ．
+;jpn:◆ふふっ　このひとって↓
+;jpn:　カッコイーでしょ。@WI(15)↓
+;jpn:　バンドやってたことが　あるのよ。
+@KEYNP()
+』
+
+
+;@Habitat:スリーク／フィールド／魔テント地点
+;@Person:魔テントの左眼
+;@Figure:魔テント眼
+;@AppearanceKey:FLG_THRK_MATENT_APPEAR/on
+;@ActionScript:◆左向いてギョロギョロと
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:0
+
+;@Habitat:スリーク／フィールド／魔テント地点
+;@Person:魔テントの右眼
+;@Figure:魔テント眼
+;@AppearanceKey:FLG_THRK_MATENT_APPEAR/on
+;@ActionScript:◆右向いてギョロギョロと
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:0
+
+;@Habitat:スリーク／フィールド／魔テント地点
+;@Person:魔テントの牙
+;@Figure:魔テント牙
+;@AppearanceKey:FLG_THRK_MATENT_APPEAR/on
+;@ActionScript:◆ガウガウな感じ
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_MATENT_GAO
+MSG_THRK_MATENT_GAO;
+;魔テントの台詞
+@OPEN(1)
+◆Ｇａ@WI(5)ａ@WI(5)ｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｒ@WI(5)ｒ@WI(5)ｇ@WI(5)ｇ！！！
+;jpn:◆ガルルルルルー
+@KEY()
+@CLOSEALL()
+@WI(1)
+;-----セル替え用フラグ操作
+@CLRF(FLG_THRK_MATENT_APPEAR)
+;-----
+@GOSUB(MSG_BATTLE_MATENT)
+@TRUE_GOTO(_THRK_MATENT_GAO_LOSE)
+;-----
+@HIDE_CHAR(PRSN_THRK_FIELD_Q,OBJFX_HIDE_VSTRIPE)
+@HIDE_CHAR(PRSN_THRK_FIELD_R,OBJFX_HIDE_VSTRIPE)
+@HIDE_CHAR(PRSN_THRK_FIELD_S,OBJFX_HIDE_VSTRIPE)
+@WI(120)
+;-----
+@SETF(FLG_BOX_THRK_MATENT)
+@SETF(FLG_WIN_MATENT)
+@CLRF(FLG_THRK_MATENT_FACE_APPEAR)
+@WI(1)
+@WARP(WARP_THRK_MATENT);セル替えの為（削除予定）
+@WI(1)
+@COLD_PLAYER(PC_ALL)
+@GOSUB(MSG_EVT_THRK_WIN_MATENT); 魔テントが負けて逃げていくゾンビ
+@CLRF(FLG_SYS_MONSTER_OFF);ワンダリングモンスターを出す
+@GOTO(MSG_THRK_SET_HRECT_HOIHOI);S_EVENT2ホイホイ電話セットへ
+
+_THRK_MATENT_GAO_LOSE;負けた時はフラグを戻す
+@CLRF(FLG_SYS_MONSTER_OFF);ワンダリングモンスターを出す
+@SETF(FLG_THRK_MATENT_APPEAR)
+』
+
+;@Habitat:スリーク／フィールド／地下墓地への細道
+;@Person:封鎖ゾンビＡ
+;@Figure:ゾンビ
+;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
+;@ActionScript:◆西向いて道塞ぐ
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_GATEKEEPER_A
+MSG_THRK_GATEKEEPER_A;
+@OPEN(1)
+◆（Ｈｅ　ｓｔａｒｅｓ　ｉｎｔｏ　ｙｏｕｒ　ｓｏｕｌ．）
+;DAN:Jirori explains someone staring sharply.
+;jpn:◆ジロリ
+@KEY()
+@CLOSEALL()
+@CHKFGOTO(FLG_JEFF,MSG_END)
+@SETF(FLG_THRK_BIKINIZOMBI_APPEAR)
+@SETF(FLG_THRK_HOTELMAN_DISAPPEAR);ビキニゾンビ中はホテルマンを消す
+@SETF(FLG_THRK_INFO_D_DISAPPEAR);ビキニゾンビ情報男消える
+』
+
+
+;プレイヤーが近づいたら
+MSG_THRK_GATEKEEPER_AB;
+@GET_CHAR_DIR(PRSN_THRK_FIELD_T,1,PC_ALL);プレイヤーの方を向く
+@SET_CHAR_DIR(PRSN_THRK_FIELD_T,0)
+@SHOW_MANPU_CHAR(PRSN_THRK_FIELD_T,MANPU_BIKKURI)
+@WI(30)
+@HIDE_MANPU_CHAR(PRSN_THRK_FIELD_T)
+@OPEN(1)
+◆（Ｈｅ　ｓｔａｒｅｓ　ｉｎｔｏ　ｙｏｕｒ　ｓｏｕｌ．）
+;jpn:◆ジロリ
+@KEY()
+@CLOSEALL()
+@SE(SE_se72)
+@WI(60)
+@REMOVE_CHAR(PRSN_THRK_FIELD_U,ANIM_BLOCK_ZOMBI_B)
+@WAITSYS()
+@COLD_CHAR(PRSN_THRK_FIELD_U)
+@GET_CHAR_DIR(PRSN_THRK_FIELD_U,1,PC_NESS);プレイヤーの方を向く
+@SET_CHAR_DIR(PRSN_THRK_FIELD_U,0)
+@SHOW_MANPU_CHAR(PRSN_THRK_FIELD_U,MANPU_BIKKURI)
+@WI(30)
+@HIDE_MANPU_CHAR(PRSN_THRK_FIELD_U)
+@OPEN(1)
+◆（Ｈｅ　ｌｏｏｋｓ　ｙｏｕ　ｏｖｅｒ．）
+;DAN:JIRO-JIRO is same as JIRORI.
+;jpn:◆ジロジロ
+@KEY()
+@CLOSEALL()
+@FRESH_CHAR(PRSN_THRK_FIELD_U)
+@CHKFGOTO(FLG_JEFF,MSG_END)
+@SETF(FLG_THRK_BIKINIZOMBI_APPEAR)
+@SETF(FLG_THRK_HOTELMAN_DISAPPEAR);ビキニゾンビ中はホテルマンを消す
+@SETF(FLG_THRK_INFO_D_DISAPPEAR);ビキニゾンビ情報男消える
+』
+
+
+;@Habitat:スリーク／フィールド／地下墓地への細道
+;@Person:封鎖ゾンビＢ
+;@Figure:ゾンビ
+;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
+;@ActionScript:◆西向いて道塞ぐ
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_GATEKEEPER_B
+MSG_THRK_GATEKEEPER_B;
+@OPEN(1)
+◆（Ｈｅ　ｌｏｏｋｓ　ｙｏｕ　ｏｖｅｒ．）
+;jpn:◆ジロジロ
+@KEY()
+@CLOSEALL()
+@CHKFGOTO(FLG_JEFF,MSG_END)
+@SETF(FLG_THRK_BIKINIZOMBI_APPEAR)
+@SETF(FLG_THRK_HOTELMAN_DISAPPEAR)
+@SETF(FLG_THRK_INFO_D_DISAPPEAR);ビキニゾンビ情報男消える
+』
+
+
+;@Habitat:スリーク／フィールド／中西部
+;@Person:武器専門男
+;@Figure:武器男
+;@AppearanceKey:0
+;@ActionScript:◆きょろきょろ
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_WEAPON
+MSG_THRK_WEAPON;
+@GOSUB(MSG_SHOP_THRK_WEAPON)
+』
+
+;-------------------------------------------------
+
+;@Habitat:スリーク／フィールド／ホテル付近
+;@Person:ビキニゾンビ情報の男
+;@Figure:
+;@AppearanceKey:FLG_THRK_BIKINIZOMBI_APPEAR/on
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_THRK_INFO_BIKINIZOMBI
+MSG_THRK_INFO_BIKINIZOMBI;
+◆Ｔａｋｅ　ａ　ｌｏｏｋ　ａｔ　ｔｈａｔ　ｃｈｉｃｋ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　ｈｏｔｅｌ．@KEY()↓
+◆Ｅｘｃｅｐｔ　ｆｏｒ　ｔｈｅ　ｃｏｍｐｌｅｘｉｏｎ，　ｓｈｅ　ｉｓ　ｏｎｅ　ｈｏｔ　ｂａｂｅ！
+;jpn:◆あの　ホテルのまえにいる↓
+;jpn:　おんな‥‥@KEY()↓
+;jpn:◆かおいろは　わるいけど↓
+;jpn:　いいおんなだなぁ‥‥！
+@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_THRK_INFORMER_A;スリークのゾンビ復活情報009_A
+@CHKFGOTO(FLG_TLPT_FOUR,_THRK_INFORMER_A_END)
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_INFORMER_A_AFTER)
+◆Ｉ　ｏｖｅｒｈｅａｒｄ　ｔｈｅ　ｚｏｍｂｉｅｓ　ｗｈｉｓｐｅｒ，@KEY()↓
+◆”Ｍａｓｔｅｒ　Ｂｅｌｃｈ　ｗｉｌｌ　ｇｉｖｅ　ｕｓ　ｏｕｒ　ｌｉｖｅｓ　ｂａｃｋ．”@KEY()↓
+◆．．．Ｍａｓｔｅｒ　Ｂｅｌｃｈ　ｉｓ　ｔｈｅ　ｚｏｍｂｉｅ　ｌｅａｄｅｒ．@WI(15)　　Ｈｅ　ｍｕｓｔ　ｂｅ　ｒｅａｌｌｙ　ｐｕｋｅｙ．@KEYNP()
+;jpn:◆ゾンビどうしが↓
+;jpn:　ヒソヒソばなしをしてるのを↓
+;jpn:　たちぎきしたの。@KEY()↓
+;jpn:◆「ゲップーさまが　おれたちを↓
+;jpn:　つぎつぎに　よみがえらせて↓
+;jpn:　くれる」って‥‥@KEY()↓
+;jpn:◆その　ゲップーっていうのが↓
+;jpn:　きっと　わるのおやだまの↓
+;jpn:　ゲロゲロやろうなのよね。@KEYNP()
+』
+_THRK_INFORMER_A_AFTER;クリア後＃
+◆Ｌｉｋｅ　Ｉ　ｔｏｌｄ　ｙｏｕ，　ｔｈｅｒｅ　ｗａｓ　ａ　ｂａｒｆｙ　ｂａｄ　ｇｕｙ　ｎａｍｅｄ　Ｂｅｌｃｈ．@KEY()↓
+◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｇｉｖｉｎｇ　ｈｉｍ　ｔｈｅ　ｂｉｇ　ｆｌｕｓｈ．
+;jpn:◆やっぱり　ゲップーっていう↓
+;jpn:　わるのおやだまが　いたのね。@KEY()↓
+;jpn:◆そんな　きたならしいやつを↓
+;jpn:　よく　たおしてくれたわ。
+@KEYNP()
+』
+_THRK_INFORMER_A_END;＆
+◆Ｔｈｉｓ　ｔｏｗｎ　ｈａｓ　ｃｏｍｐｌｅｔｅｌｙ　ｃｈａｎｇｅｄ　ｆｒｏｍ　ｔｈｅ　ｆｉｒｓｔ　ｔｉｍｅ　ｙｏｕ　ｗｅｒｅ　ｈｅｒｅ．@KEY()↓
+◆Ｃａｎ　ｙｏｕ　ｆｅｅｌ　ｔｈｅ　ｌｏｖｅ？
+;jpn:◆あなたが　はじめてきたときと↓
+;jpn:　いまとでは@KEY()↓
+;jpn:◆このまちのいんしょう↓
+;jpn:　ぜんぜん　ちがうでしょ。
+@KEYNP()
+』
+
+
+MSG_THRK_INFORMER_B;
+@CHKFGOTO(FLG_WIN_GIEGU,_THRK_INFORMER_B_END)
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_INFORMER_B_AFTER)
+◆Ｔｈａｔ’ｓ　ｒｉｇｈｔ，　ｔｈｅｒｅ　ｉｓ　ａ　ｒｕｍｏｒ　ｔｈａｔ　ａ　ｍｏｎｓｔｅｒ　ｃａｌｌｅｄ　Ｂｅｌｃｈ　ｉｓ　ｓｃｒｅｗｉｎｇ　ｕｐ　ｔｈｅ　ｔｏｗｎ．@KEY()↓
+◆Ｂｅｌｃｈ！@WI(20)　　Ｔｈａｔ’ｓ　ａ　ｇｒｏｓｓ，@WI(15)　ｔｗｉｓｔｅｄ　ｎａｍｅ　ｅｖｅｎ　ｆｏｒ　ａ　ｍｏｎｓｔｅｒ！
+;jpn:◆やっぱり　ゲップーとかっていう↓
+;jpn:　うわさの　ばけものが‥‥@KEY()↓
+;jpn:◆このまちを　ぐちゃぐちゃに↓
+;jpn:　しようと　してるのかしら。@KEY()↓
+;jpn:◆ゲーップ！@WI(20)↓
+;jpn:　いやな　なまえよねぇ‥‥↓
+;jpn:　わるいやつにしても。
+@KEYNP()
+』
+_THRK_INFORMER_B_AFTER;クリア後＃
+◆Ｂｕ@WI(5)ｕ@WI(5)ｕ@WI(5)ｕ@WI(5)ｒｐ！@KEY()↓
+◆Ｏｏｐｓ．．．ｎｏｗ　Ｉ’ｌｌ　ｇｅｔ　”Ｂｅｌｃｈ”　ｆｏｒ　ａ　ｎｉｃｋｎａｍｅ．　　Ｈｅｅ　ｈｅｅ　ｈｅｅ．．．ｕｈ．．．ｃｒｕｄ．
+;DAN:Kya, ha, ha, ha is shy laugh.
+;jpn:◆ゲーップ。@WI(30)↓
+;jpn:　あら　いやだ。↓
+;jpn:　これじゃ　わたし‥‥@KEY()↓
+;jpn:◆ゲップーなんて　アダナが↓
+;jpn:　ついちゃうじゃないの。↓
+;jpn:　キャハハハ。
+@KEYNP()
+』
+_THRK_INFORMER_B_END;＆
+◆Ｉｓｎ’ｔ　ｙｏｕｒ　ｂａｃｋｐａｃｋ　ｗｏｒｎ　ｏｕｔ？@WI(20)　　Ｏｈ，　ｉｆ　ｏｎｌｙ　ｔｈｏｓｅ　ｓｔｒａｐｓ　ｃｏｕｌｄ　ｔａｌｋ．．．
+;jpn:◆そのリュック　だいぶボロに↓
+;jpn:　なったんじゃない？@KEY()↓
+;jpn:◆きっと　いろんなおもいでが↓
+;jpn:　いっぱい↓
+;jpn:　つまってるんでしょうね。
+@KEYNP()
+』
+
+MSG_THRK_INFORMER_C;009_C
+;ゲップーを倒したら消える
+◆Ｙｅａｈ，　Ｉ　ｗｏｒｋｅｄ　ｆｏｒ　ｔｈｅ　ｚｏｍｂｉｅｓ，@KEY()↓
+◆ｂｕｔ　Ｉ　ｂｅｔｒａｙｅｄ　ｔｈｅｍ　ｔｏｏ．@WI(20)　　Ｉ’ｍ　ａ　ｃｏｎ　ｍａｎ，　ｓｏ　Ｉ　ｋｎｏｗ　ｔｈｅ　ｓｃｏｒｅ．@KEY()↓
+◆Ｂｅｌｃｈ　ｇｉｖｅｓ　ｌｉｆｅ　ｔｏ　ｔｈｅ　ｚｏｍｂｉｅｓ，　ｂｕｔ　Ｂｅｌｃｈ　ｗｏｒｋｓ　ｆｏｒ　Ｇｉｙｇａｓ，@KEY()↓
+◆ｗｈｏ　Ｉ　ｈｅａｒｄ　ｍｉｇｈｔ　ｂｅ　ｆｅｍａｌｅ．@KEY()↓
+◆Ｗｅｌｌ，　Ｉ’ｍ　ｎｏｔ　ｒｅａｌｌｙ　ｓｕｒｅ　ｗｈｅｔｈｅｒ　Ｇｉｙｇａｓ　ｉｓ　ａ　ｍａｌｅ　ｏｒ　ａ　ｆｅｍａｌｅ．@KEY()↓
+◆Ｉ’ｍ　ａ　ｈｅｌｐｆｕｌ　ｃｏｎ　ｍａｎ，　ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ？
+;jpn:◆わたしは　ゾンビどもの↓
+;jpn:　てさきを　やっていて@KEY()↓
+;jpn:◆はやくも　やつらを　うらぎった↓
+;jpn:　せいぎのヒキョーもの　ですがね。@KEY()↓
+;jpn:◆ゲップーってのが　ゾンビを↓
+;jpn:　よみがえらせていて‥‥@WI(20)↓
+;jpn:　さらに@KEY()↓
+;jpn:◆ゲップーってのは↓
+;jpn:　ギーグとかって　おんなの↓
+;jpn:　こぶんらしいんですよ。@KEY()↓
+;jpn:◆いや‥‥おんななのかどうかは↓
+;jpn:　わたしの　そうぞうですがね。@KEY()↓
+;jpn:◆どうです。@WI(30)↓
+;jpn:　わたしって↓
+;jpn:　やくにたつ　ヒキョーものでしょ。
+@KEYNP()
+』
+
+MSG_THRK_INFORMER_D;ビキニゾンビの伏線。ビキニゾンビ前に消える。
+◆Ｉ　ｓａｗ　ａ　ｓｕｓｐｉｃｉｏｕｓ　ｗｏｍａｎ　ｔａｌｋｉｎｇ　ｗｉｔｈ　ｔｈｅ　ｚｏｍｂｉｅｓ　ａｒｏｕｎｄ　ｈｅｒｅ．
+;jpn:◆このあたりに↓
+;jpn:　ゾンビと　たちばなしをしてる↓
+;jpn:　あやしいおんなが　いたんだよな。
+@KEYNP()
+』
+
+;-------------------------------------------------
+
+MSG_THRK_TENT_5;改善015_A
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_5_LATER)
+@CHKFGOTO(FLG_THRK_ZOMBI_CAPTURED,_THRK_TENT_5_AFTER)
+@CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_5_HOIHOI)
+@CHKFGOTO(FLG_ITEM_HOIHOI,_THRK_TENT_5_HOI)
+◆Ｆｒａｎｋｌｙ，　Ｉ’ｍ　ｒｕｎｎｉｎｇ　ｓｃａｒｅｄ．@KEY()↓
+◆Ｉ　ｄｏｎ’ｔ　ｍｅａｎ　ｔｈａｔ　Ｉ　ａｃｔｕａｌｌｙ　ｒｕｎ　ａｒｏｕｎｄ．@WI(20)　　Ｉ　ｊｕｓｔ　ｍｅａｎ　Ｉ　ａｍ　ｆｒｉｇｈｔｅｎｅｄ．@KEY()↓
+◆Ｃｏｎｄｉｔｉｏｎｓ　ｉｎ　ｔｈｅ　ｔｏｗｎ　ａｒｅ　ｇｅｔｔｉｎｇ　ｗｏｒｓｅ．
+;jpn:◆もう　はっきりいって↓
+;jpn:　きょうふ　きょうふの↓
+;jpn:　まいにちだね。@KEY()↓
+;jpn:◆きょう　ふのミソシルとかって↓
+;jpn:　シャレじゃなく@KEY()↓
+;jpn:◆オソロシイってことさね。@KEY()↓
+;jpn:◆まちの　じょうきょうは↓
+;jpn:　ますます　わるくなってるよ。
+@KEYNP()
+』
+
+_THRK_TENT_5_HOI;
+◆Ｔｈｉｓ　ｇｕｙ　ａｔ　ｔｈｅ　ｐｉｚｚａ　ｊｏｉｎｔ　ｔｏｌｄ　ｍｅ　ａｂｏｕｔ　ａ　ｎｅｗ　ｐｒｏｄｕｃｔ　ｃａｌｌｅｄ　”Ｚｏｍｂｉｅ　Ｐａｐｅｒ．”
+@KEYNP()
+;jpn:◆きみのことを　さがしまわってた↓
+;jpn:　ピザやのおっさんから↓
+;jpn:　きいたんだけど@KEY()↓
+;jpn:◆「ゾンビホイホイ」ってものが↓
+;jpn:　できたそうじゃないか。@KEYNP()
+』
+_THRK_TENT_5_HOIHOI;
+◆”Ｚｏｍｂｉｅ　Ｐａｐｅｒ”　ｉｓ　ａ　ｓｔｕｐｉｄ　ｐｒｏｄｕｃｔ　ｎａｍｅ．
+;jpn:◆「ゾンビホイホイ」なんて↓
+;jpn:　なまえからして↓
+;jpn:　インチキくさいけど‥‥。
+@KEYNP()
+』
+_THRK_TENT_5_AFTER;
+◆Ｚｏｍｂｉｅ　Ｐａｐｅｒ　ｒｅａｌｌｙ　ｗｏｒｋｓ，　ｓｏ　Ｉ　ｈｏｐｅ　ｓｏｍｅｏｎｅ　ｃｏｍｅｓ　ｕｐ　ｗｉｔｈ　”ｐｒｅｔｔｙ　ｇｉｒｌ　ｐａｐｅｒ．”@KEY()↓
+◆Ｏｏｐｓ，@WI(15)　ｔｈａｔ　ｗａｓｎ’ｔ　ａ　ｎｉｃｅ　ｔｈｉｎｇ　ｔｏ　ｓａｙ．
+;jpn:◆ゾンビホイホイが↓
+;jpn:　こんなに　きくんだったら@KEY()↓
+;jpn:◆「びじんホイホイ」とかも↓
+;jpn:　つくってくれると　いいなぁ@KEY()↓
+;jpn:◆おっと　これは　しつげんでした。
+@KEYNP()
+』
+_THRK_TENT_5_LATER;
+◆Ｙｏｕ　ｍａｄｅ　ｏｕｒ　ｌｉｖｅｓ　ｐｅａｃｅｆｕｌ．　　Ｉ　ｃａｎ　ｓｌｅｅｐ　ａｇａｉｎ．@KEY()↓
+◆Ｉｔ’ｓ　ｌｉｋｅ　ｙｏｕ　ｕｓｅｄ　ａ　ｂｕｎｃｈ　ｏｆ　”ｐｅａｃｅ　ｐａｐｅｒ，”　ｒｉｇｈｔ？　　Ｈａ　ｈａ　ｈａ．
+;jpn:◆きみの　おかげで↓
+;jpn:　あんしんして　くらせるように↓
+;jpn:　なったよ。@KEY()↓
+;jpn:◆きみって↓
+;jpn:　「あんしんホイホイ」かも↓
+;jpn:　しれないなぁ。@KEY()↓
+;jpn:◆ハハハハハ！
+@KEYNP()
+』
+
+MSG_THRK_TENT_6;015_A
+@CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_6_LATER)
+@CHKFGOTO(FLG_THRK_ZOMBI_CAPTURED,_THRK_TENT_6_AFTER)
+@CHKFGOTO(FLG_ITEM_HOIHOI,_THRK_TENT_6_HOI)
+◆Ｐｅｏｐｌｅ　ｕｓｅｄ　ｔｏ　ｃａｌｌ　ｍｅ　ｅｖｉｌ，　ｂｕｔ　ｔｈｅｓｅ　ｚｏｍｂｉｅｓ　ａｒｅ　ｍｕｃｈ　ｍｏｒｅ　ｓｃａｒｙ．@KEY()↓
+◆Ｉ　ｌｅｆｔ　ｍｙ　ｗｉｆｅ　ａｎｄ　ｋｉｄｓ　ａｔ　ｈｏｍｅ　ｔｏ　ｅｓｃａｐｅ　ｔｏ　ｔｈｉｓ　ｔｅｎｔ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｈｏｗ　ｓｃａｒｙ　ｔｈｅ　ｚｏｍｂｉｅｓ　ａｒｅ．
+;jpn:◆わたしは　オニとかアクマとか↓
+;jpn:　よばれたことさえある　おとこ。@KEY()↓
+;jpn:◆しかし　わたしより↓
+;jpn:　ゾンビのほうが　ずっとこわい。@KEY()↓
+;jpn:◆おさないこどもと　にょうぼを↓
+;jpn:　おきざりにして@KEY()↓
+;jpn:◆このテントに　にげてきたんだ。@KEY()↓
+;jpn:◆それくらい　ゾンビは↓
+;jpn:　こわいってことだ。
+@KEYNP()
+』
+_THRK_TENT_6_HOI;
+◆Ｙｏｕ　ｃａｎ　ｄｏ　ｗｈａｔｅｖｅｒ　ｙｏｕ　ｗａｎｔ－－@KEY()↓
+◆ｊｕｓｔ　ｓａｖｅ　ｍｙ　ｌｉｆｅ．
+;jpn:◆なにをやろうと↓
+;jpn:　きみたちの　じゆうだろうが@KEY()↓
+;jpn:◆わたしの　いのちだけは↓
+;jpn:　まもってくれ。
+@KEYNP()
+』
+_THRK_TENT_6_AFTER;
+◆Ｔｈｏｓｅ　ｚｏｍｂｉｅｓ　ｓｔｕｃｋ　ｔｏ　ｔｈｅ　ｆｌｏｏｒ．．．@KEY()↓
+◆Ｉ　ｗｏｎｄｅｒ　ｉｆ　ｔｈｅｙ　ｃｏｕｌｄ　ｓｔｉｌｌ　ｇｅｔ　ｍｅ．@KEY()↓
+◆Ｉ　ｄｏｎ’ｔ　ｃａｒｅ　ｗｈａｔ　ｈａｐｐｅｎｓ　ｔｏ　ａｎｙｏｎｅ　ｅｌｓｅ，@WI(15)　Ｉ　ｊｕｓｔ　ｗａｎｔ　ｔｏ　ｓａｖｅ　ｍｙ　ｏｗｎ　ｓｋｉｎ！
+;jpn:◆テントのなかに↓
+;jpn:　ベタベタくっついてるゾンビ‥‥@KEY()↓
+;jpn:◆はがれて　おれに↓
+;jpn:　おそいかかってこないかなぁ。@KEY()↓
+;jpn:◆たにんは　どうなってもいいけど↓
+;jpn:　おれのいのちだけは↓
+;jpn:　しんぱいだろ。@WI(20)　な？
+@KEYNP()
+』
+_THRK_TENT_6_LATER;
+◆Ｔｈｅ　ｔｏｗｎ　ｉｓ　ａｔ　ｐｅａｃｅ，@WI(15)　ｂｕｔ　ｍｙ　ｗｉｆｅ　ａｎｄ　ｋｉｄｓ　ｗｏｎ’ｔ　ｓｐｅａｋ　ｔｏ　ｍｅ．@KEY()↓
+◆Ｗｈａｔ’ｓ　ｔｈｅ　ｐｒｏｂｌｅｍ？
+;jpn:◆まちは↓
+;jpn:　へいわになった　みたいだけど@KEY()↓
+;jpn:◆こどもも　にょうぼも↓
+;jpn:　なんだか　おれに　つめたいんだ。@KEY()↓
+;jpn:◆どうしてだろう？
+@KEYNP()
+』
+
+MSG_THRK_HOTEL_BOY;015_B
+◆Ａ　ｆｅｗ　ｄａｙｓ　ａｇｏ，　ｔｈｅ　ｚｏｍｂｉｅｓ　ｇｏｔ　ｓｏｍｅ　ｋｉｄｓ　ｆｒｏｍ　ｔｈｉｓ　ｈｏｔｅｌ．
+;jpn:◆すうじつまえに↓
+;jpn:　このホテルで　こどもたちが↓
+;jpn:　ゾンビに　つかまったんですよ。
+@KEY()↓
+@CLRF(FLG_THRK_HOTEL_BOY_APPEAR);セリフ後消える
+@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@FALSE_GOTO(_THRK_HOTEL_BOY_NES)
+◆Ｔｈｅ　ｂｏｙ　ｈａｄ　ａ　ｒｅｄ　ｃａｐ．．．@WI(30)　ｏｒ　ｗａｓ　ｉｔ　ａ　ｂｌｕｅ　ｃａｐ？
+;jpn:◆あかいぼうしの‥‥@WI(30)あれっ？↓
+;jpn:　あおい　ぼうしだったかな？？
+@KEYNP()
+』
+_THRK_HOTEL_BOY_NES;
+◆Ｔｈｅ　ｂｏｙ　ｈａｄ　ａ　ｒｅｄ　ｃａｐ．．．@WI(30)　　Ｈｅｙ！@WI(15)　　Ｉｔ　ｗａｓ　ｙｏｕ！
+;jpn:◆あかいぼうしの‥‥@WI(30)あっ@WI(10)↓
+;jpn:　あなた　でしたね。
+@KEYNP()
+』
+
+;MSG_THRK_TENT_7;015_Cテント内の人のセリフに流用
+;◆Ｉ　ｓａｗ　ａｎ　ｏｌｄ　ｃａｒｔｏｏｎｉｓｈ　ｆｌｙｉｎｇ　ｏｂｊｅｃｔ．
+;◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｃｒｕｓｈｅｄ　ａｒｏｕｎｄ
+;　　ｔｈｅ　ｇｒａｖｅ　ｙａｒｄ．．．
+;◆Ｗｈａｔ？　Ｙｏｕ　ｋｉｄｓ　ｃａｍｅ　ｈｅｒｅ　ｗｉｔｈ　ｔｈａｔ　
+;　　ｆｌｙｉｎｇ　ｏｂｊｅｃｔ？
+;◆むかしのマンガみたいな↓
+;　のりものが　そらをとんできてね。@KEY()↓
+;◆はかばの　あたりに↓
+;　ついらくしたらしいけど‥‥@KEY()↓
+;◆えっ　きみたちが↓
+;　それに　のってきたのか。@KEYNP()
+;』
+;-------------------------------------------------
+
+MSG_THRK_THANKS_A;ゲップークリア後に墓場で出迎え018_B
+◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｂｒｉｎｇｉｎｇ　ｐｅａｃｅ　ａｎｄ　ｈａｐｐｉｎｅｓｓ　ｂａｃｋ　ｔｏ　Ｔｈｒｅｅｄ．　　Ｔｈａｎｋｓ！@KEY()↓
+◆Ｐｅａｃｅ！@WI(20)　　Ｌｏｖｅ！
+;jpn:◆スリークのまちを↓
+;jpn:　あかるく　へいわに　してくれて↓
+;jpn:　ありがとう。@KEY()↓
+;jpn:◆サンキュー！↓
+;jpn:　ラブ！↓
+;jpn:　ピース！
+@KEYNP()
+;◆Ｗｈｅｎ　Ｉ　ｈａｖｅ　ａ　ｋｉｄ，　Ｉ　ｗｉｌｌ　ｈａｖｅ　ｈｉｍ／ｈｅｒ　ｗｅａｒ　ａ　ｒｅｄ　ｃａｐ．
+;◆わたし　こどもがうまれたら↓
+;　あかいぼうしを↓
+;　かぶらせるわ。@KEYNP()
+』
+
+MSG_THRK_THANKS_B;018_B
+◆Ｉ　ｒｅａｌｌｙ　ｄｉｄｎ’ｔ　ｔｈｉｎｋ　ｔｈｏｓｅ　ｋｉｄｓ　ｃｏｕｌｄ　ｈａｖｅ　ｓａｖｅｄ　ｔｈｅ　ｔｏｗｎ．@KEY()↓
+◆Ｗｈｏ　ｗｏｕｌｄ　ｈａｖｅ　ｅｖｅｒ　ｉｍａｇｉｎｅｄ　ｉｔ？
+;jpn:◆こんな　しょうねんたちに↓
+;jpn:　まちを　すくってもらえるとは‥‥@KEY()↓
+;jpn:◆だれが　そうぞうしたろうか。
+@KEYNP()
+』
+
+MSG_THRK_THANKS_C;018_B
+◆Ｉ　ｗｏｎ’ｔ　ｆｏｒｇｅｔ　ｙｏｕ．@KEY()↓
+◆Ｗｏｎ’ｔ　ｙｏｕ　ｃｏｍｅ　ｂａｃｋ　ｔｏ　Ｔｈｒｅｅｄ　ｓｏｍｅｔｉｍｅ？
+;jpn:◆わたしたち　あなたのこと↓
+;jpn:　わすれません。@KEY()↓
+;jpn:◆また　きっと↓
+;jpn:　スリークのまちに↓
+;jpn:　きてくれますよね。
+@KEYNP()
+』
+
+MSG_THRK_THANKS_D;018_B
+◆Ｓｉｎｃｅ　ｔｈｅ　ｌｅａｄｅｒ　ｏｆ　ｔｈｅ　ｍｏｎｓｔｅｒｓ　ｉｓ　ｇｏｎｅ，@KEY()↓
+◆ｔｈｅ　ｇｈｏｓｔｓ　ｉｎ　ｔｈｅ　ｔｕｎｎｅｌ　ｈａｖｅ　ｄｉｓａｐｐｅａｒｅｄ．@KEY()↓
+◆Ｔｈｅ　ｂｕｓｅｓ　ｃａｎ　ｇｅｔ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｔｕｎｎｅｌ　ｎｏｗ．
+;jpn:◆ばけものの　おやかたを↓
+;jpn:　やっつけたから↓
+;jpn:　トンネルのゴーストも　きえたね。@KEY()↓
+;jpn:◆おかげで　バスが↓
+;jpn:　とおれるように　なったよ。
+@KEYNP()
+』
+
+MSG_THRK_THANKS_E;018_E
+◆Ｉ　ｗａｎｔ　ｔｏ　ｇｏ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｄｅｓｅｒｔ　ａｎｄ　ｏｎ　ｔｏ　ｔｈｅ　ｂｉｇ　ｃｉｔｙ．@KEY()↓
+◆Ｉ　ｗａｎｔ　ｔｏ　ｓｅｅ　ｔｈｅ　ｃｉｔｙ，　ａｎｄ　Ｉ　ｗａｎｔ　ｔｏ　ｓｍｅｌｌ　ｌｉｋｅ　ｔｈｅ　ｂｉｇ　ｃｉｔｙ．@KEY()@KEY()↓
+◆Ｉ’ｍ　ａ　ｒｅａｌ　ｕｒｂａｎ－ｔｙｐｅ　ｏｆ　ｇｕｙ．
+;jpn:◆バスで　さばくをぬけて↓
+;jpn:　だいとかいへ　いって‥‥@KEY()↓
+;jpn:◆とかいてきな　においを↓
+;jpn:　みにつけるんだ。@KEY()↓
+;jpn:◆いまでも　けっこう↓
+;jpn:　とかいてきだけどね　オレって。
+@KEYNP()
+』
+
+MSG_THRK_THANKS_F;018_E
+◆Ｆｒｏｍ　ｔｈｅ　ｂｕｓ　ｓｔｏｐ　ａｔ　ｔｈｅ　ｈｏｔｅｌ　ａｌｌ　ｔｈｅ　ｗａｙ　ｔｏ　Ｆｏｕｒｓｉｄｅ．．．@KEY()↓
+◆ｉｓ　ｈｏｗ　ｍｕｃｈ？　　Ｄｏ　ｙｏｕ　ｒｅｍｅｍｂｅｒ？
+;jpn:◆ホテルのまえの↓
+;jpn:　バスのりばから↓
+;jpn:　フォーサイドまで　いくには‥‥@KEY()↓
+;jpn:◆いくらぐらい↓
+;jpn:　かかるんだっけ？
+@KEYNP()
+』
+
+MSG_THRK_THANKS_G;018_F
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆Ｔｈａｎｋ　ｙｏｕ！
+;jpn:◆@DSP_NAME(0)さん！@WI(15)↓
+;jpn:　ありがとう。
+@KEYNP()
+』
+
+MSG_THRK_THANKS_H;018_F
+◆Ｙｏｕ’ｒｅ　ｈｅｒｏｅｓ．@WI(20)　　Ｔｈａｔ　ｒｏｃｋｓ！
+;jpn:◆ヒーローだよ　きみたちは。@WI(20)↓
+;jpn:　すんばらしい！
+@KEYNP()
+』
+
+MSG_THRK_THANKS_I;018_F
+◆Ｓｗｅｅｔ！
+;jpn:◆カッコイイぜ！
+@KEYNP()
+』
+
+MSG_THRK_THANKS_J;018_F
+◆Ａｌｌ　ｒｉｇｈｔｙ！
+;jpn:◆やりぃ！
+@KEYNP()
+』
+
+;-------------------------------------------------
+
+MSG_THRK_INFORMER_E;019_A
+◆Ｉ　ｃａｍｅ　ｆｒｏｍ　Ｆｏｕｒｓｉｄｅ　ｂｙ　ｂｕｓ．@KEY()↓
+◆Ｂｕｆｆａｌｏ？@WI(15)　　Ｏｈ　ｙｅａｈ，　Ｉ　ｓａｗ　ｌｏｔｓ．@WI(20)　　Ｉｔ’ｓ　ａｗｅｓｏｍｅ．
+;jpn:◆バスで　フォーサイドから↓
+;jpn:　きたんだけどね@WI(20)↓
+;jpn:　バッファロー@WI(15)　ずいぶん　みたよ。@KEY()↓
+;jpn:◆かっこよかったなー。
+@KEYNP()
+』
+
+MSG_THRK_INFORMER_F;
+@CHKFGOTO(FLG_FOUR_TONZURA_FREE,_THRK_INFORMER_F_LATER)
+◆Ａ　ｇｉｒｌ　ｉｎ　Ｆｏｕｒｓｉｄｅ　ｃａｌｌｅｄ　ｍｅ．@KEY()↓
+◆Ｎｏｗ，　ｔｈｅｒｅ　ｉｓ　ａ　ｒｅａｌｌｙ　ｐｏｐｕｌａｒ　ｂａｎｄ　ｔｈｅｒｅ　ｎｏｗ．@KEY()↓
+◆Ｉ　ｔｈｉｎｋ　ｔｈｅｙ’ｒｅ　ｃａｌｌｅｄ　ｔｈｅ　”Ｒｕｎｗａｙ　Ｆｉｒｅ．”
+@KEYNP()
+;jpn:◆フォーサイドのカノジョに↓
+;jpn:　でんわで　きいたんだけど@WI(20)↓
+;jpn:　いま　フォーサイドじゃあ@KEY()↓
+;jpn:◆ドンブリブラジャースとかいう↓
+;jpn:　いなかバンドが↓
+;jpn:　にんきらしいんだよ。@KEYNP()
+』
+_THRK_INFORMER_F_LATER;
+◆Ｉ　ｔｏｌｄ　ｙｏｕ　ｔｈｅ　ｗｒｏｎｇ　ｂａｎｄ　ｎａｍｅ　ｂｅｆｏｒｅ．　　Ｉ　ｓａｉｄ　”Ｒｕｎｗａｙ　Ｆｉｒｅ．”@KEY()↓
+◆Ｔｈｅ　ｒｅａｌ　ｎａｍｅ　ｉｓ　”Ｒｕｎａｗａｙ　Ｆｉｖｅ．”@KEY()↓
+◆Ｍｙ　ｇｉｒｌｆｒｉｅｎｄ　ｃｏｒｒｅｃｔｅｄ　ｍｅ．．．
+;jpn:◆まえに　おれ↓
+;jpn:　ドンブリブラジャースとか↓
+;jpn:　まちがって　おしえちゃったけど@KEY()↓
+;jpn:◆あれって↓
+;jpn:　「トンズラブラザーズ」って↓
+;jpn:　いうのが　せいかいらしいよ。@KEY()↓
+;jpn:◆‥‥かのじょに↓
+;jpn:　なおされちゃったんだ。
+@KEYNP()
+』
+
+
+MSG_THRK_INFORMER_G;砂漠の埋蔵金情報＃
+@CHKFGOTO(FLG_WIN_GIEGU,_THRK_INFORMER_G_END)
+◆Ｉ　ｈｅａｒｄ　ｔｈｅｒｅ　ｉｓ　ａ　ｇｕｙ　ｗｈｏ　ｉｓ　ｄｉｇｇｉｎｇ　ｆｏｒ　ｂｕｒｉｅｄ　ｔｒｅａｓｕｒｅ　ｉｎ　Ｄｕｓｔｙ　Ｄｕｎｅｓ　ｄｅｓｅｒｔ．@KEY()↓
+◆Ａ　ｓｈａｒｅ　ｏｆ　ｔｈａｔ　ｔｒｅａｓｕｒｅ　”ｓｈａｒｅ”　ｗｏｕｌｄ　ｂｅ　ｎｉｃｅ．
+;jpn:◆ドコドコさばくで↓
+;jpn:　まいぞうきんを　ほってるひとが↓
+;jpn:　いるらしいよね。@KEY()↓
+;jpn:◆でたら　ちょっと↓
+;jpn:　わけてもらいたいよね。
+@KEYNP()
+』
+_THRK_INFORMER_G_END;＆
+◆Ｈｅｙ！　　Ｉ　ｈｅａｒｄ　ｙｏｕ　ｇｏｔ　ａ　ｓｈａｒｅ　ｏｆ　ｔｈｅ　ｔｒｅａｓｕｒｅ　ｆｏｕｎｄ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ．@KEY()↓
+◆Ｉｔ　ｄｉｄｎ’ｔ　ｓｅｅｍ　ｔｏ　ｃｈａｎｇｅ　ｙｏｕ　ａｔ　ａｌｌ，　ｔｈｏｕｇｈ．
+;jpn:◆きみ‥‥@WI(30)↓
+;jpn:　まいぞうきんの　わけまえ↓
+;jpn:　もらったんだってね。@KEY()↓
+;jpn:◆それにしちゃ‥‥↓
+;jpn:　あいかわらずだね。
+@KEYNP()
+』
+
+
+MSG_THRK_INFORMER_COP;刑事（ツーソンから）
+◆Ｉ’ｍ　ａ　ｄｅｔｅｃｔｉｖｅ　ｆｒｏｍ　Ｔｗｏｓｏｎ．@KEY()↓
+◆Ｔｈｅ　ｓｔａｔｕｅ　ｃａｌｌｅｄ　Ｍａｎｉ　Ｍａｎｉ　ｏｒ　ｓｏｍｅｔｈｉｎｇ　ｏｒ　ｏｔｈｅｒ@KEY()↓
+◆ｗａｓ　ｓｔｏｌｅｎ　ｆｒｏｍ　ｔｈｅ　Ｈａｐｐｙ－Ｈａｐｐｙｉｓｍ　ｈｅａｄｑｕａｒｔｅｒｓ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙ　ｃｌｕｅｓ　ｆｏｒ　ｍｅ？↓
+<Ｙｅｓ>　<Ｎｏ>
+;jpn:◆おれは　ツーソンの　けいじだが↓
+;jpn:　ハッピーハッピーきょうの↓
+;jpn:　ほんぶから‥‥@KEY()↓
+;jpn:◆「マニマニのあくま」とかいう↓
+;jpn:　おうごんの　ぞうが↓
+;jpn:　ぬすまれた。@KEY()↓
+;jpn:◆おまえ　こころあたり　ないか？↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_THRK_INFORMER_COP_YES,_THRK_INFORMER_COP_NO)
+_THRK_INFORMER_COP_NO;
+◆Ｏｈ，　Ｉ　ｓｅｅ．．．
+;jpn:◆そうか！
+@KEYNP()
+』
+_THRK_INFORMER_COP_YES;
+◆Ｄｏｎ’ｔ　ｔｒｙ　ｔｏ　ｆｅｅｄ　ｍｅ　ｙｏｕｒ　ｌｉｅｓ！
+;jpn:◆でまかせを　いうんじゃない！
+@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_THRK_TENT_ZOMBI_A;
+◆Ｉｆ　Ｉ　ｔｒｙ　ｔｏ　ｇｅｔ　ａｗａｙ，　ｍｙ　ｂｏｄｙ　ｗｉｌｌ　ｊｕｓｔ　ｆａｌｌ　ａｐａｒｔ．@KEY()↓
+◆Ｉｔ’ｓ　ｂｅｃａｕｓｅ　Ｉ’ｍ　ａ　ｚｏｍｂｉｅ．．．
+;jpn:◆むりに　にげようとすると↓
+;jpn:　カラダが　バラバラに↓
+;jpn:　なっちまうんだ‥‥@WI(20)ゾンビだから。
+@KEYNP()
+』
+MSG_THRK_TENT_ZOMBI_B;
+◆Ｉ’ｌｌ　ｂｌａｍｅ　ｙｏｕ　ｆｏｒ　ｔｈｅ　ｒｅｓｔ　ｏｆ　ｍｙ　”ｌｉｆｅ．”
+;jpn:◆いっしょう　うらむからな！
+@KEYNP()
+』
+MSG_THRK_TENT_ZOMBI_C;
+◆Ｉ’ｌｌ　ｂｌａｍｅ　ｙｏｕ　ａｆｔｅｒ　ｍｙ　”ｄｅａｔｈ．”
+;jpn:◆しんでも　うらむぞ！
+@KEYNP()
+』
+MSG_THRK_TENT_ZOMBI_D;
+◆Ｙｏｕ’ｒｅ　ｔｈｅ　ｅｎｅｍｙ　ｏｆ　ａｌｌ　ｚｏｍｂｉｅｓ！@KEY()↓
+◆Ｙｏｕ　ｍｏｎｓｔｅｒ！
+;jpn:◆ゾンビのてき！@WI(20)↓
+;jpn:　オニ！@WI(15)　アクマ！
+@KEYNP()
+』
+MSG_THRK_TENT_ZOMBI_E;
+◆Ｃｏｕｌｄ．．．ｙｏｕ．．．ｈｅｌｐ　ｍｅ？@WI(20)　　．．．Ｍａｙｂｅ　ｎｏｔ．
+;jpn:◆たすけて‥‥@WI(30)くれない‥‥@WI(20)よね。
+@KEYNP()
+』
+MSG_THRK_TENT_ZOMBI_F;
+◆Ｙｏｕ　ｈｕｍａｎｓ　ａｒｅ　ｓｕｃｈ　ｃｏｗａｒｄｓ！
+;jpn:◆ひきょうな　にんげんたちめ！
+@KEYNP()
+』
+MSG_THRK_TENT_ZOMBI_G;
+◆＊Ｇａｓｐ＊　＊Ｇａｓｐ＊
+;jpn:◆ムギュー。
+@KEYNP()
+』
+MSG_THRK_TENT_ZOMBI_H;
+◆Ｉ　ｄｏｎ’ｔ　ｃａｒｅ　ｉｆ　Ｉ　ｐａｓｓ　ａｗａｙ．．．@KEY()↓
+◆Ｈａ！　　Ｉ’ｍ　ｄｅａｄ　ａｌｒｅａｄｙ！
+;jpn:◆もう　しんでもいい‥‥って↓
+;jpn:　あ@WI(30)　おれ　しんでるんだっけ‥‥@WI(20)↓
+;jpn:　ほんとは。
+@KEYNP()
+』
+;-------------------------------------------------
+
+
+;added 0717
+;■壊れたスカイウォーカーのメッセージ■■■■■■■■■■■■■■■■■■■
+Ｍｅｓｓａｇｅ　ｏｆ　ｔｈｅ　ｂｒｏｋｅｎ　ＳｋｙＷａｌｋｅｒ．
+
+MSG_THRK_BROKEN_SKYW
+◆（Ｉｔ’ｓ　ｉｍｐｏｓｓｉｂｌｅ　ｔｏ　ｆｉｘ．．．　ｆｏｒ　ｔｈｅ　ｔｉｍｅ　ｂｅｉｎｇ．）
+;jpn:◆しゅうりすることは↓
+;jpn:　ふかのうに　ちかいだろう↓
+;jpn:　@WI(30)‥‥@WI(20)いまは。
+@KEYNP()
+』
+;--------------------------------------------------

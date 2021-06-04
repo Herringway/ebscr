@@ -1,0 +1,2783 @@
+;-----------------------------------------------------
+
+;@Habitat:ドコドコ砂漠／ドラッグストア／ドラッグストア
+;@Person:道具売り
+;@Figure:サラリーマンＤ
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_SHOP
+MSG_DSRT_SHOP;@MiuraAppended
+@GOSUB(MSG_SHOP_DSRT_DRUG)
+』
+
+
+;@Habitat:ドコドコ砂漠／ドラッグストア／ドラッグストア
+;@Person:宿係
+;@Figure:ジミな男
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_MOTEL
+MSG_DSRT_MOTEL;＠ポーラだったらマアム→松
+◆Ｓｉｒ，　ｗｅ　ａｌｓｏ　ｈａｖｅ　ｍｏｔｅｌ　ｆａｃｉｌｉｔｉｅｓ．
+;jpn:◆うちは　やどやも↓
+;jpn:　やってるんですけどねぇ@WI(20)↓
+;jpn:　おきゃくさん。@KEY()
+@GOSUB(MSG_GLOBAL_MYHOME)
+』
+
+
+;@Habitat:ドコドコ砂漠／ドラッグストア／ドラッグストア
+;@Person:ＣＤ
+;@Figure:ＣＤ
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:MSG_GLOBAL_CD_RECEIVE
+;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
+;@Message:0
+
+；----------------------------------------
+;@Habitat:ドコドコ砂漠／モッチーの家／モッチーの家
+;@Person:宿泊係
+;@Figure:しげちゃん
+;@AppearanceKey:0
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_HOTEL
+MSG_DSRT_HOTEL;砂漠のホテル機能の人
+◆Ｔｈａｎｋ　ｙｏｕ！@KEY()↓
+◆Ｉｔ’ｓ　ａ　ｓｍａｌｌ　ｈｏｕｓｅ，　ｂｕｔ　ｐｌｅａｓｅ　ｓｔａｙ　ｔｈｅ　ｎｉｇｈｔ．
+@KEY()
+
+;jpn:◆おせわに　なってます！@WI(10)↓
+;jpn:　とまってってください。@WI(20)↓
+;jpn:　ちっこい　いえだけどさ。@KEY()
+;夜にする
+@GOSUB(MSG_SUB_SYUKUHAKU)
+@GOSUB(MSG_SUB_SE_LIFEUP)
+@GOSUB(MSG_SUB_HOTEL_LIFEUP)
+@WARP(WARP_YADOYA_DSRT_SHIGE)
+@CHKFGOTO(FLG_DSRT_DIA_RESERVE,_DSRT_HOTEL_SHIGE_DIA);ダイヤもらってなかったら
+』
+_DSRT_HOTEL_SHIGE_DIA;
+@COLD_PLAYER(PC_ALL)
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_DSRT_HOTEL_SHIGE_ITEMFULL)
+@OPEN(1)
+◆Ｈｅｒｅ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ｔｈｉｓ　ｎｏｗ．．．ｆｏｒ　ｓｕｒｅ．
+@KEY()↓
+;jpn:◆では　あらためて↓
+;jpn:　‥‥これ　たしかに　わたします。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_DSRT_HOTEL_SHIGE_ITEMFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_DIAMOND)
+@SETF(FLG_DSRT_ITEM_DIA)
+@CLRF(FLG_DSRT_DIA_RESERVE);		ダイア後からもらえるフラグ
+;@CLRF(FLG_FOUR_SHIGE)
+@GOSUB(MSG_SUB_GETGOODS_S)@KEYNP()
+@CLOSEALL()
+@FRESH_PLAYER(PC_ALL)
+』
+_DSRT_HOTEL_SHIGE_ITEMFULL;
+@OPEN(1)
+◆Ｃｏｍｅ　ｏｎ！　　Ｙｏｕ　ｈａｖｅｎ’ｔ　ｇｏｔ　ｒｏｏｍ　ａｇａｉｎ！@KEY()↓
+◆Ｐｌｅａｓｅ　ｔａｋｅ　ｃａｒｅ　ｏｆ　ｉｔ　ｒｉｇｈｔ　ａｗａｙ．
+@KEYNP()
+
+;jpn:◆あれっ？！　またまた↓
+;jpn:　にもつがいっぱいですね。@WI(20)↓
+;jpn:　なんとかしてくださいな。@KEYNP()
+@CLOSEALL()
+@FRESH_PLAYER(PC_ALL)
+』
+;----------------------------------------
+
+;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Person:渋滞被害者Ａ
+;@Figure:ＯＬＣ
+;@AppearanceKey:FLG_DSRT_CLEAR/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_HIGHWAY_A
+MSG_DSRT_HIGHWAY_A;
+◆Ｔｈｉｓ　ｔｒａｆｆｉｃ　ｊａｍ　ｉｓ　ｔａｋｉｎｇ　ｆｏｒｅｖｅｒ．@KEY()↓
+◆．．．Ｍａｎ，　ｄｏ　Ｉ　ｎｅｅｄ　ｔｏ　ｇｏ．．．
+@KEYNP()
+;jpn:◆このじゅうたいは↓
+;jpn:　えいえんに　つづきそうだわ。↓
+;jpn:　‥‥ああ　おしっこしたい。@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Person:渋滞被害者Ｂ
+;@Figure:青年
+;@AppearanceKey:FLG_DSRT_CLEAR/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_HIGHWAY_B
+MSG_DSRT_HIGHWAY_B;
+◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　ａ　ｌｉｔｔｌｅ　ｗａｙｓ　ａｈｅａｄ　ａ　ｈｅｒｄ　ｏｆ　ｂｕｆｆａｌｏ　ｉｓ　ｒｕｎｎｉｎｇ　ａｃｒｏｓｓ　ｔｈｅ　ｒｏａｄ．@KEY()↓
+◆Ｉ’ｍ　ｃａｎ’ｔ　ｍｏｖｅ　ａｎ　ｉｎｃｈ！
+@KEYNP()
+;jpn:◆このさきのほうで↓
+;jpn:　バッファローのたいぐんが↓
+;jpn:　どうろを　おうだんしてるらしい。@KEY()↓
+;jpn:◆これじゃ　すすめないよなぁ。@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Person:渋滞被害者Ｃ
+;@Figure:リゾート男
+;@AppearanceKey:FLG_DSRT_CLEAR/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_HIGHWAY_C
+MSG_DSRT_HIGHWAY_C;
+◆Ｉ　ｆｅｅｌ　ｓｏｒｒｙ　ｆｏｒ　ｔｈｅ　ｇｕｙｓ　ｂｅｈｉｎｄ　　ｍｅ，　ｂｕｔ　Ｉ’ｍ　ｓｏ　ｂｅｎｔ，@KEY()↓
+◆Ｉ’ｍ　ｌｅａｖｉｎｇ　ｍｙ　ｃａｒ　ｈｅｒｅ　ａｎｄ　ｗａｌｋｉｎｇ　ｉｎｓｔｅａｄ！
+@KEYNP()
+;jpn:◆おいら　うしろのやつらにゃ↓
+;jpn:　わるいけど↓
+;jpn:　クルマほっぽりだして@KEY()↓
+;jpn:◆あるいてっちゃおうかって↓
+;jpn:　おもってるわけよ。↓
+;jpn:　イライラするぜー！@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Person:渋滞被害者Ｄ
+;@Figure:ツッパリ
+;@AppearanceKey:FLG_DSRT_CLEAR/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_HIGHWAY_D
+MSG_DSRT_HIGHWAY_D;
+◆Ｉ　ｗａｓ　ｇｏｉｎｇ　ｔｏ　ｓｅｅ　ｍｙ　ｇｉｒｌｆｒｉｅｎｄ　ｉｎ　Ｆｏｕｒｓｉｄｅ．．．@KEY()↓
+◆Ａｔ　ｔｈｉｓ　ｐａｃｅ　Ｉ’ｌｌ　ｂｅ　ａ　１００　ｙｅａｒｓ　ｏｌｄ　ｂｙ　ｔｈｅ　ｔｉｍｅ　Ｉ　ｇｅｔ　ｔｈｅｒｅ！
+@KEYNP()
+;jpn:◆フォーサイドの　かのじょに↓
+;jpn:　あいたくて　はしってたのに↓
+;jpn:　このままじゃ‥‥@KEY()↓
+;jpn:◆おれも　かのじょも↓
+;jpn:　１００さいに　なっちまうよォ！@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／ドラッグストア前
+;@Person:電話
+;@Figure:電話ボックス
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_GLOBAL_TELEPHONE
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠の西
+;@Person:日光浴好きの男
+;@Figure:寝ている男
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_SUNTANMAN
+MSG_DSRT_SUNTANMAN;
+◆Ｗｅ　ｓｌｅｅｐ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ，　ｓｏ　ｗｅ’ｒｅ　ｏｆｔｅｎ　ｍｉｓｔａｋｅｎ　ｆｏｒ　ｃｏｒｐｓｅｓ．@KEY()↓
+◆Ｂｕｔ　ａ　ｃｏｒｐｓｅ　ｄｏｅｓｎ’ｔ　ｕｓｕａｌｌｙ　ｗｅａｒ　ａ　ｂａｔｈｉｎｇ　ｓｕｉｔ，　ｒｉｇｈｔ？@KEY()↓
+◆Ｈｅｙ，　ｓｔｏｐ　ｓｔａｒｉｎｇ　ａｔ　ｍｙ　ｔａｎ　ｌｉｎｅｓ．．．Ｇｏ　ａｗａｙ．
+@KEYNP()
+;jpn:◆おれたち　さばくでねてるんで↓
+;jpn:　よく　したいと↓
+;jpn:　まちがわれるんだよね。@KEY()↓
+;jpn:◆でも　したいって↓
+;jpn:　みずぎで　ねてないだろ。@KEY()↓
+;jpn:◆‥‥いつまでも　こんなとこで↓
+;jpn:　ジロジロみてるなよ。↓
+;jpn:　あっち　いけよ。@KEYNP()
+;◆あっちのほうに　なにか↓
+;　あなみたいなものが↓
+;　あるらしいから　いってみれば？@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠の西
+;@Person:日光浴好きの女
+;@Figure:寝ている女
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_SUNTANGAL
+MSG_DSRT_SUNTANGAL;
+◆Ａｎｎｏｙｉｎｇ　ｋｉｄｓ．．．)↓
+　　Ｗｈａｔ　ａ　ｇｒｏｕｐ　ｏｆ　ｂｒａｔｓ！．．．@KEY()↓
+◆Ｓｃａｔ　ｙｏｕ　ｌｉｔｔｌｅ　ｍｏｎｓｔｅｒｓ！
+@KEYNP()
+;DAN:"Sh Sh" means you want someone to go away.  
+	
+;jpn:◆るさいわねー‥‥↓
+;jpn:　こどもがゾロゾロ‥‥↓
+;jpn:　しっ　しっ！@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠の西ハイウェイの脇
+;@Person:コンタクトの立て札
+;@Figure:立札
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:MSG_DSRT_CHECK_CONTACTLENS
+;@Message:0
+MSG_DSRT_CHECK_CONTACTLENS;＃
+◆（Ｉ　ｌｏｓｔ　ａ　ｐａｉｒ　ｏｆ　ｃｏｎｔａｃｔ　ｌｅｎｓｅｓ　ｈｅｒｅ　ｉｎ　ｔｈｅ　Ｄｕｓｔｙ　Ｄｕｎｅｓ　Ｄｅｓｅｒｔ．@KEY()↓
+◆Ｔｈｅｙ　ｗｅｒｅ　ａ　ｍｏｍｅｎｔｏ　ｆｒｏｍ　ｍｙ　ｇｒａｎｄｍａ，　ａｎｄ　ｖｅｒｙ　ｉｍｐｏｒｔａｎｔ　ｔｏ　ｍｅ．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｆｉｎｄ　ｔｈｅｍ，　　ｂｒｉｎｇ　ｔｈｅｍ　ｔｏ　ｍｅ　ａｎｄ　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａ　ｒｅｗａｒｄ．@KEY()↓
+◆Ｉ’ｍ　Ｐｅｎｅｔｅｌｌａ　Ｇｉｏｖａｎｎｉ．@KEY()↓
+◆Ｆｉｎｄ　ｍｅ　ａｔ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｂａｋｅｒｙ，　ｓｅｃｏｎｄ　ｆｌｏｏｒ．）
+;jpn:◆（このドコドコさばくで↓
+;jpn:　コンタクトレンズを↓
+;jpn:　おとしました。@KEY()↓
+;jpn:◆おばあさんの　かたみで↓
+;jpn:　とても　たいせつにしていたもの↓
+;jpn:　なので@KEY()↓
+;jpn:◆みつけて　とどけてくださったら↓
+;jpn:　おれいを　します。@KEY()↓
+;jpn:◆フォーサイド　パンやの２かい↓
+;jpn:　ペテネラ・ジョバンニ）
+@CHKFGOTO(FLG_FOUR_PETENERA,_DSRT_CONTACTLENS_LATER)
+@KEYNP()
+』
+_DSRT_CONTACTLENS_LATER;上に続けて
+@KEY()↓
+◆（Ｔｈａｎｋ　ｙｏｕ，　Ｉ　ｆｏｕｎｄ　ｔｈｅｍ．@KEY()↓
+◆Ｔｈａｎｋｓ　ａｇａｉｎ　ｆｏｒ　ａｌｌ　ｙｏｕｒ　ｈｅｌｐ．）
+@KEYNP()
+;jpn:◆（おかげさまで　みつかりました。@WI(30)
+;jpn:　ごきょうりょく↓
+;jpn:　ありがとうございました）@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／モッチーの家の前
+;@Person:ショージ・モッチー
+;@Figure:ショージ・モッチー
+;@AppearanceKey:FLG_DSRT_SYOZI_DISAPPEAR/off
+;@ActionScript:◆小範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_SYOZI_START
+MSG_DSRT_SYOZI_START;
+MSG_DSRT_SYOZI;
+@CHKFGOTO(FLG_DSRT_DIA_RESERVE,_DSRT_SYOZI_DIA);ダイヤチュージモチ時
+@CHKFGOTO(FLG_DSRT_ITEM_DIA,_DSRT_SYOZI_DIA)
+@CHKFGOTO(FLG_WIN_DSRT_BOSS,_DSRT_SYOZI_2)
+@CHKFGOTO(FLG_DSRT_SYOZI_1,_DSRT_SYOZI_LATER)
+◆Ｔｈｉｓ　ｈｏｌｅ’ｓ　ｇｒｅａｔ！@KEY()↓
+◆Ｇｏｏｄ　ｈｏｌｅ，　ｇｏｏｄ　ｈｏｌｅ，　ｇｏｏｄ　ｈｏｌｅ．．．@KEY()↓
+◆Ｆｉｒｓｔ，　ｓｏｍｅｏｎｅ　ａｓｋｅｄ　ｍｅ　ｔｏ　ｄｉｇ　ｆｏｒ　ｂｕｒｉｅｄ　ｇｏｌｄ．@KEY()↓
+◆Ｉ　ｂｅｇａｎ　ｔｏ　ｆｅｅｌ　ｌｉｋｅ　Ｉ　ｗａｓ　ｏｂｌｉｇａｔｅｄ　ｔｏ　ｆｉｎｄ　ｉｔ．@KEY()↓
+◆Ｍａｎ，　ａｍ　Ｉ　ｓｔａｒｖｉｎｇ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙ　ｆｏｏｄ　ｙｏｕ　ｃａｎ　ｓｐａｒｅ？↓
+;jpn:◆このあなは　すげぇよ。@WI(20)↓
+;jpn:　いいあなだ。@KEY()↓
+;jpn:◆もともと　ひとにたのまれて↓
+;jpn:　ここで　まいぞうきんを↓
+;jpn:　ほりはじめたんだけど‥‥@KEY()↓
+;jpn:◆とちゅうから　イジになってさ。@WI(20)↓
+;jpn:　なんとか　みつけたいんだいね。@WI(30)↓
+;jpn:　はら　へったなー。@KEY()↓
+;jpn:◆なんか　くいものを↓
+;jpn:　わけてくんないかい？↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_DSRT_SYOZI_YES,_DSRT_SYOZI_NO)
+
+_DSRT_SYOZI_NO;
+◆Ｔｈｅ　ｈｕｍａｎｉｔａｒｉａｎ　ｔｈｉｎｇ　ｉｓ　ｔｏ　ｈｅｌｐ　ｐｅｏｐｌｅ　ｏｕｔ　ｗｈｅｎ　ｔｈｅｙ’ｒｅ　ｈｕｎｇｒｙ．@KEY()↓
+◆Ａｌｔｈｏｕｇｈ　Ｉ　ｈａｔｅ　ｉｔ，　@DSP_GOODS(GDS_FOOD_PIZZA)　ｗｏｕｌｄ　ｗｏｒｋ　ｆｏｒ　ｍｅ．．．
+;jpn:◆おたがいに　はらへってるときに↓
+;jpn:　くいものを　わけあうってのが↓
+;jpn:　ひとのみち　じゃないのかねぇ。@KEY()↓
+;jpn:◆おれ　だいっきらいなんだけど↓
+;jpn:　ピザでも　いいや。@WI(20)↓
+;jpn:　たのむよ。
+@GOTO(_DSRT_SYOZI_END)
+
+_DSRT_SYOZI_YES;
+◆Ｓｅｅｍｓ　ｌｉｋｅ　ｙｏｕ　ｈａｖｅ　ａ　ｌｏｔ　ｏｆ　ｓｔｕｆｆ．@KEY()↓
+◆Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｇｏｎｎａ　ｇｉｖｅ　ｍｅ？
+
+;jpn:◆いろいろもってる　みてぇだけど↓
+;jpn:　どれを　くれるんだい？
+@KEY()
+@DSP_PL()
+@GOSUB(MSG_SEL_GOODS)			;グッズ選択
+←
+@FALSE_GOTO(_DSRT_SYOZI_NO)		;キャンセル？
+@SAVE_REG()				;主レ=PLAYER_ID:副レ=GOODSの位置を保存
+@GET_PLAYER_GOODS(0,0)			;主レ=PLAYER_ID:副レ=GOODS_ID
+@GOODS_TYPE_P(TYPE_EAT)			;グッズタイプチェック
+@FALSE_GOTO(_DSRT_SYOZI_NOTFOOD)	;食べ物？
+@LOAD_REG()				;主レ=PLAYER_ID:副レ=GOODSの位置
+@GOODSOUT_PLAYER(0,0)			;グッズ削除。
+
+_DSRT_SYOZI_SELECT_FOOD;
+@SE(SE_se76_my_give)
+◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Ｉｆ　Ｉ　ｆｉｎｄ　ｔｈｅ　ｇｏｌｄ，　Ｉ’ｌｌ　ｇｉｖｅ　ｉｔ　ｔｏ　ｙｏｕ．
+
+;jpn:◆ありがとね。↓
+;jpn:　きんを　めっけたら↓
+;jpn:　ぜんぶ　あんたにやるからさ。
+@KEYNP()
+@SETF(FLG_DSRT_SYOZI_1)
+@SETF(FLG_DSRT_SYOZI_DISAPPEAR)
+@SETF(FLG_DSRT_SYOZI_DUNGEON_APPEAR)
+@CHKFGOTO(FLG_FOUR_MISSFAKE,_DSRT_SYOZI_SWITCH)
+@!
+_DSRT_SYOZI_SWITCH;
+@SETF(FLG_DSRT_SWITCH_BEFORE)
+@!
+
+_DSRT_SYOZI_NOTFOOD;
+◆Ｃｏｍｅ　ｏｎ！　Ｉ　ｃａｎ’ｔ　ｅａｔ　ｔｈｉｓ！
+;DAN:He has country side accent.
+
+;jpn:◆こりゃあ　くえねぇーべ。@KEY()↓
+@!
+
+
+_DSRT_SYOZI_LATER;
+◆Ｉ’ｍ　ｓｔｉｌｌ　ｈａｒｄ　ａｔ　ｗｏｒｋ　ｄｉｇｇｉｎｇ　ａｎｄ　ｄｉｇｇｉｎｇ．@KEY()↓
+◆Ｈｅｙ，　ｗａｉｔ　ａ　ｓｅｃｏｎｄ．
+
+;jpn:◆いまも　ガンガンほってるかんね。↓
+;jpn:　もう　ちっと　まっててくんない。
+@GOTO(_DSRT_SYOZI_END)
+
+_DSRT_SYOZI_2;@MiuraAppended
+◆Ｙｏｕ’ｖｅ　ｇｏｔｔｅｎ　ｒｉｄ　ｏｆ　ｔｈｅ　ｍｏｎｓｔｅｒ？！@KEY()↓
+◆Ｇｏｏｄ　ｊｏｂ．@KEY()↓
+◆Ｏｋ，　ｆｒｏｍ　ｈｅｒｅ　ｏｎ，　ｊｕｓｔ　ｌｅｔ　ｍｅ　ｄｉｇ．．．@KEY()↓
+◆Ｙｏｕ’ｌｌ　ｓｅｅ，　Ｉ’ｌｌ　ｆｉｎｄ　ｔｈｅ　ｂｕｒｉｅｄ　ｇｏｌｄ！@KEY()↓
+◆Ｂｅｆｏｒｅ　Ｉ　ｓｔａｒｔ　ｄｉｇｇｉｎｇ　Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｓｅｔ　ａ　ｃａｒｅｆｕｌ　ｐｌａｎ　ｏｆ　ａｃｔｉｏｎ．．．
+@KEYNP()
+;jpn:◆ばけもんを↓
+;jpn:　のしちまったって？！@WI(20)↓
+;jpn:　ごくろうさんだったねぇ。@KEY()↓
+;jpn:◆よし！@WI(30)　このさきは↓
+;jpn:　おれに　まかしてくれ。@KEY()↓
+;jpn:◆バーンと　まいぞうきんを↓
+;jpn:　ほりあてて　やるからさ！@KEY()↓
+;jpn:◆じゃ　おれ↓
+;jpn:　しごとのだんどりを　きめてから↓
+;jpn:　はじめるからね。@KEYNP()
+@SETF(FLG_DSRT_YUMBO_SHIGE_APPEAR)
+;@GOTO(MSG_EVT_67_SYOZI);ユンボモチのイベントヤメ
+@SETF(FLG_DSRT_SYOZI_DISAPPEAR);モッチー姿を消す
+』
+
+_DSRT_SYOZI_DIA;
+◆Ｉｆ　ｗｅ　ｃｏｕｌｄ　ｊｕｓｔ　ｆｉｎｄ　ａ　ｄｉａｍｏｎｄ　ｅｖｅｎ．．．@KEY()↓
+◆Ｉｔ’ｓ　ａ　ｓｈａｍｅ　ｔｈａｔ　ａ　ｄｉｇｇｅｒ　ｌｉｋｅ　ｍｅ　ｃａｎ’ｔ　ｆｉｎｄ　ｂｕｒｉｅｄ　ｇｏｌｄ．@KEY()↓
+◆Ｉ’ｌｌ　ｔｒｙ　ｅｖｅｎ　ｈａｒｄｅｒ．
+;jpn:◆ダイヤしか　でなかったんじゃ↓
+;jpn:　まいぞうきんほりとしちゃ↓
+;jpn:　あかっぱじ　だかんね。@KEY()↓
+;jpn:◆がんばってみますよ　もっと。
+
+_DSRT_SYOZI_END;
+@KEYNP()
+@!
+
+
+;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Person:見物人Ａ
+;@Figure:ＯＬＧ
+;@AppearanceKey:FLG_DSRT_SWITCH/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_A
+MSG_DSRT_A;
+@CHKFGOTO(FLG_DSRT_ITEM_DIA,MSG_DSRT_A_LATER)
+◆Ｉ’ｖｅ　ｂｅｅｎ　ｗａｔｃｈｉｎｇ　ｔｈｅｍ　ｄｉｇ　ｆｏｒ　ａ　ｗｈｉｌｅ．．．@KEY()↓
+◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ　ｔｈｅｙ’ｌｌ　ｆｉｎｄ．
+@KEYNP()
+;jpn:◆この　あなほりを↓
+;jpn:　ずうっと　みてるんだけど‥‥↓
+;jpn:　なんか　でるのかしらねぇ。@KEYNP()
+』
+
+MSG_DSRT_A_LATER;
+◆Ｔｈｅｙ　ｏｎｌｙ　ｆｏｕｎｄ　ａ　ｄｉａｍｏｎｄ．．．ｗｅｌｌ，　ｙｏｕ　ｔａｋｅ　ｗｈａｔ　ｙｏｕ　ｇｅｔ．．．
+@KEYNP()
+;jpn:◆ダイヤがでてもねぇ‥‥。↓
+;jpn:　しょうがないんだよねぇ‥‥。@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Person:見物人Ｂ
+;@Figure:少女Ａ
+;@AppearanceKey:FLG_DSRT_SWITCH/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_B
+MSG_DSRT_B;
+@CHKFGOTO(FLG_DSRT_ITEM_DIA,MSG_DSRT_A_LATER)
+◆Ｉｆ　ｔｈｅｙ　ｈａｖｅ　ａ　ｌｉｖｅ　ｂｒｏａｄｃａｓｔ，　Ｉ　ｃａｎ　ｗａｔｃｈ　ｔｈｅ　ｄｉｇ　ｗｈｉｌｅ　ｌｙｉｎｇ　ｏｎ　ｔｈｅ　ｆｌｏｏｒ．
+@KEYNP()
+;jpn:◆テレビちゅうけいでも↓
+;jpn:　してくれたら　ねころんで↓
+;jpn:　みてられるのにね。@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Person:見物人Ｃ
+;@Figure:ツッパリ
+;@AppearanceKey:FLG_DSRT_SWITCH/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_C
+MSG_DSRT_C;
+@CHKFGOTO(FLG_DSRT_ITEM_DIA,MSG_DSRT_A_LATER)
+◆Ｉ　ｔｈｉｎｋ　ｈｅ　ｓｈｏｕｌｄ　ｄｉｇ　ｓｏｍｅｗｈｅｒｅ　ｅｌｓｅ．
+@KEYNP()
+;jpn:◆おれは　もっとちがうところを↓
+;jpn:　ほるべきだと　おもうんだよね。@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Person:見物人Ｄ
+;@Figure:サラリーマンＣ
+;@AppearanceKey:FLG_DSRT_SWITCH/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_D
+MSG_DSRT_D;
+@CHKFGOTO(FLG_DSRT_ITEM_DIA,MSG_DSRT_A_LATER)
+◆Ｉ　ｈａｖｅ　ｌｏｔｓ　ｏｆ　ｗｏｒｋ　ｔｏ　ｄｏ，　ｂｕｔ　Ｉ　ｃａｎ’ｔ　ｓｅｅｍ　ｔｏ　ｍｏｖｅ．@KEY()↓
+◆Ｉ’ｍ　ｓｏ　ｃｕｒｉｏｕｓ　ａｂｏｕｔ　ｔｈｅ　ｄｉｇ．@KEY()↓
+◆Ｉ　ｃａｎ’ｔ　ｈｅｌｐ　ｉｔ．
+@KEYNP()
+;jpn:◆しごとが　たまってるんだけど↓
+;jpn:　ここが　きがかりで↓
+;jpn:　うごけないんだよ。@KEY()↓
+;jpn:◆こまったもんだ。@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Person:スロットマシン
+;@Figure:スロットマシン
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:
+MSG_DSRT_SLOTMACHINE;
+@GOSUB(MSG_DSRT_SLOTMAIN)			;←これを追加すべし
+』
+
+MSG_DSRT_SLOTMAIN;
+@GET_ORDER_PLAYER(1)				;mainReg <- 先頭のplayer id
+@GET_PLAYER_DIR(0,2,PRSN_DEST_FIELD_3B)		;スロットマシンへの向きcheck
+@XCHG()
+@SAVE_REG()
+@EQ(1)					;main.reg == 5 then main.reg = 1
+@TRUE_GOTO(_SLOTMACHINE_FRONT)
+@LOAD_REG()
+@EQ(2)
+@TRUE_GOTO(_SLOTMACHINE_FRONT)
+@LOAD_REG()
+@EQ(8)
+@TRUE_GOTO(_SLOTMACHINE_FRONT)
+@GOTO(_SLOTMACHINE_NOT_FRONT)
+_SLOTMACHINE_FRONT
+;@GET_ORDER_PLAYER(1)
+;@SET_REG(0)
+◆（Ｉ’ｍ　ａ　ｂｒｏｋｅｎ　ｓｌｏｔ　ｍａｃｈｉｎｅ．@KEY()↓
+◆Ｂｕｔ，　ｔｈｅ　Ｓａｎｃｈｅｚ　Ｂｒｏｔｈｅｒｓ　ａｎｄ　ｔｈｅｉｒ　ｆｒｉｅｎｄ　ａｒｅ　ａ　ｖｅｒｙ　ｃｈｅｅｒｆｕｌ　ｔｒｉｏ．．．@KEY()↓
+◆ｔｈｅｙ　ｗｉｌｌ　ｍａｋｅ　ｙｏｕ　ｈａｐｐｙ．）@KEY()↓
+;jpn:◆（ぼくは　スロットマシンだ。↓
+;jpn:　ただし　こわれている。@KEY()↓
+;jpn:◆でもね‥‥ぼくのうしろにいる↓
+;jpn:　パンチョ　ピンチョきょうだいと↓
+;jpn:　そのともだち‥‥@KEY()↓
+;jpn:◆ようきな　３にんぐみが@KEY()↓
+;jpn:◆きみ@GOSUB(MSG_SUB_TATI)を　ハッピーにして↓
+;jpn:　くれるはずさ）@KEY()↓
+;２回め以降
+◆（Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｉｎｓｅｒｔ　ａ　ｂｕｃｋ？）↓
+;jpn:◆（１ドル　いれてみますか？）@KEY()↓
+;はいいいえ
+@GOSUB(MSG_SUB_YESNO_MONEY)
+@SELGOTO(_SLOT_START,_SLOT_CANCEL)
+@GOTO(_SLOT_CANCEL)
+
+_SLOT_START
+@Q_MONEY(1)
+@TRUE_GOTO(_SLOT_NOMONEY)
+@WI(1)
+@MONEYOUT(1)
+@WINR_MONEY()
+@GOSUB(MSG_SLOTBROS_ROTATE)
+@!
+
+_SLOT_CANCEL
+◆（Ｏｋａｙ．．．）
+@KEYNP()
+;jpn:◆（そうですか‥‥）@KEYNP()
+@!
+_SLOT_NOMONEY
+◆（Ｙｏｕ　ｈａｖｅ　ｎｏ　ｍｏｎｅｙ）．
+@KEYNP()
+;jpn:◆（おかねを↓
+;jpn:　もっていませんでしたね）@KEYNP()
+@!
+
+;◆さばくの　かざりだと↓
+;　おもってくれて　かまわない。@KEY()↓
+;◆よくぞ　ここまで　きてくれたね）@KEYNP()
+
+_SLOTMACHINE_NOT_FRONT
+◆（Ｉ’ｍ　ａ　ｓｌｏｔ　ｍａｃｈｉｎｅ．@KEY()↓
+◆Ｃａｎ　ｙｏｕ　ｔａｌｋ　ｔｏ　ｍｅ　ｆｒｏｍ　ｔｈｅ　ｆｒｏｎｔ　ｓｉｄｅ？）
+@KEYNP()
+;jpn:◆（ぼくは　スロットマシンだ@KEY()↓
+;jpn:　わるいけど　まえから↓
+;jpn:　はなしかけてくれないか）@KEYNP()
+』
+;◆しょうめんにきて↓
+;　きみのかおを　ぼくに↓
+;　みせてくれないか）@KEYNP()
+;@!
+
+;-----------------------------------------------------slotbros 
+MSG_SLOTBROS_ROTATE;
+@CLOSEALL()					;message windowのclose
+@WI(2)
+@REMOVE_CHAR(PRSN_DEST_FIELD_L,ANIM_SLOTBROS_ROTATE_L)
+@WI(2)
+@REMOVE_CHAR(PRSN_DEST_FIELD_M,ANIM_SLOTBROS_ROTATE_M)
+@WI(2)
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_ROTATE_N)
+@WI(120)
+@WI(120)
+
+;-------------兄の停止と分岐
+@REMOVE_CHAR(PRSN_DEST_FIELD_L,ANIM_SLOTBROS_STOP_L)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_ANI_1x)	;if(port0){
+						;	goto ANI_1x;
+						;}
+_SLOTBROS_ANI_0x				;_ANI_0x
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_OTOTO_01)	;if(port1){
+						;	goto _OTOTO_01;
+@GOTO(_SLOTBROS_OTOTO_00)			;} else {
+						;	goto _OTOTO_00;
+						;}
+_SLOTBROS_ANI_1x				;_ANI_1x
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_OTOTO_11)	;if(port1){
+						;	goto _OTOTO_11;
+@GOTO(_SLOTBROS_OTOTO_10)			;} else {
+						;	goto _OTOTO_10;
+						;}
+
+;-------------弟の停止と分岐
+_SLOTBROS_OTOTO_00				;_OTOTO_00
+@REMOVE_CHAR(PRSN_DEST_FIELD_M,ANIM_SLOTBROS_STOP_M)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_HAZURE)	;if(port0){
+						;	goto _HAZURE;
+						;}
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_HAZURE)	;if(port1){
+						;	goto _HAZURE;
+						;}
+@GOTO(_SLOTBROS_TOMO_00)			;goto _TOMO_00;
+
+_SLOTBROS_OTOTO_01				;_OTOTO_01
+@REMOVE_CHAR(PRSN_DEST_FIELD_M,ANIM_SLOTBROS_STOP_M)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_HAZURE)	;if(port0){
+						;	goto _HAZURE;
+						;}
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_TOMO_01)	;if(port1){
+						;	goto _TOMO_01
+						;}
+@GOTO(_SLOTBROS_HAZURE)				;goto _HAZURE;
+
+_SLOTBROS_OTOTO_10				;_OTOTO_10
+@REMOVE_CHAR(PRSN_DEST_FIELD_M,ANIM_SLOTBROS_STOP_M)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_HAZURE)	;if(port1){
+						;	goto _HAZURE;
+						;}
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_TOMO_10)	;if(port0){
+						;	goto _TOMO_10
+						;}
+@GOTO(_SLOTBROS_HAZURE)				;goto _HAZURE;
+
+_SLOTBROS_OTOTO_11				;_OTOTO_11
+@REMOVE_CHAR(PRSN_DEST_FIELD_M,ANIM_SLOTBROS_STOP_M)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_OTOTO_1x)	;if(port0){
+						;	goto _OTOTO_1x;
+						;}
+@GOTO(_SLOTBROS_HAZURE)				;goto _HAZURE;
+_SLOTBROS_OTOTO_1x				;_OTOTO_1x
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_TOMO_11)	;if(port1){
+						;	goto _TOMO11;
+						;}
+@GOTO(_SLOTBROS_HAZURE)				;goto _HAZURE;
+
+;-------------友の停止と分岐
+_SLOTBROS_TOMO_00				;_TOMO_00
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_STOP_N_REACH)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_HAZURE_2)	;if(port0){
+						;	goto _HAZURE_2;
+						;}
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_HAZURE_2)	;if(port1){
+						;	goto _HAZURE_2;
+						;}
+@GOTO(_SLOTBROS_ATARI_00)			;goto _ATARI_00;
+
+_SLOTBROS_TOMO_01				;_TOMO_01
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_STOP_N_REACH)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_HAZURE_2)	;if(port0){
+						;	goto _HAZURE_2;
+						;}
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_ATARI_01)	;if(port1){
+						;	goto _ATARI_01
+						;}
+@GOTO(_SLOTBROS_HAZURE_2)			;goto _HAZURE_2;
+
+_SLOTBROS_TOMO_10				;_TOMO_10
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_STOP_N_REACH)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_HAZURE_2)	;if(port1){
+						;	goto _HAZURE_2;
+						;}
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_ATARI_10)	;if(port0){
+						;	goto _ATARI_10;
+						;}
+@GOTO(_SLOTBROS_HAZURE_2)			;goto _HAZURE_2;
+
+_SLOTBROS_TOMO_11				;_TOMO_11
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_STOP_N_REACH)
+@WAITSYS()
+@CHKFGOTO(FLG_ANIM_PORT_0,_SLOTBROS_TOMO_1x)	;if(port0){
+						;	goto _TOMO_1x;
+						;}
+@GOTO(_SLOTBROS_HAZURE_2)			;goto _HAZURE_2;
+_SLOTBROS_TOMO_1x				;_TOMO_1x
+@CHKFGOTO(FLG_ANIM_PORT_1,_SLOTBROS_ATARI_11)	;if(port1){
+						;	goto _ATARI_11;
+						;}
+@GOTO(_SLOTBROS_HAZURE_2)			;goto _HAZURE_2;
+
+;-------------ゾロ目処理
+_SLOTBROS_ATARI_00					;黄△	2等
+@WI(120)
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_PRESENT)	;友、前に出る
+@WAITSYS()
+@COLD_CHAR(PRSN_DEST_FIELD_N)				;added
+@OPEN(1)						;message win open
+◆Ａｍｉｇｏ，　ｙｏｕ　ｗｏｎ　ａ　ｖｅｒｙ　ｂｉｇ　ｊａｃｋｐｏｔ！@KEY()↓
+◆Ｈｅｒｅ’ｓ　ａ　ｂｉｇ　ｐｒｉｚｅ　ｆｏｒ　ｙｏｕ，　ａｍｉｇｏ！
+@KEY()↓
+;jpn:◆いちだいじでござるぜアミーゴ！↓
+;jpn:　すごい　おおあたりでござるぜ↓
+;jpn:　セニョールセニョリータ！@KEY()↓
+;jpn:◆かほうものの　アミーゴに↓
+;jpn:　ビッグな　みつぎものでござるぜ！@KEY()↓
+;
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_SLOTBROS_ATARI_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_HIYOKO)	;このあたりは後でまっつんルーチンに差し替え
+◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｗｏｎ　ａ　@DSP_GOODS(GDS_TOOL_HIYOKO)　ａｓ　ａ　ｐｒｉｚｅ．
+@KEYNP()
+;jpn:◆@DSP_LCNAME()は↓
+;jpn:　けいひんとして↓
+;jpn:　@DSP_GOODS(GDS_TOOL_HIYOKO)を　もらった@KEYNP()↓
+@SE(SE_se74_my_get)
+@CLOSEALL()
+@FRESH_CHAR(PRSN_DEST_FIELD_N)		;友、所定の位置に戻る
+;@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_RETURN)	;友、所定の位置に戻る
+@WAITSYS()
+@GOTO(_SLOTBROS_EXIT)
+
+_SLOTBROS_ATARI_01					;青<<	3等
+@WI(120)
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_PRESENT)	;友、前に出る
+@WAITSYS()
+@COLD_CHAR(PRSN_DEST_FIELD_N)
+@OPEN(1)						;message win open
+;以下5linesが糸井さんoriginal(1,2,4等は2line目を少し変えました/上野)
+◆Ａｍｉｇｏ，　ｙｏｕ　ｗｏｎ！@KEY()↓
+◆Ａ　ｖｅｒｙ　ｂｉｇ　ｗｉｎｎｉｎｇ，　Ｉ　ｔｈｉｎｋ！@KEY()↓
+◆Ｈｅｒｅ’ｓ　ａ　ｖｅｒｙ　ｎｉｃｅ　ｐｒｉｚｅ　ｆｏｒ　ｔｈｅ　ｉｍｐｏｒｔａｎｔ　ａｍｉｇｏ！
+@KEY()↓
+;jpn:◆いちだいじでござるぜアミーゴ！↓
+;jpn:　おおあたりでござるぜ↓
+;jpn:　セニョールセニョリータ！@KEY()↓
+;jpn:◆かほうものの　アミーゴに↓
+;jpn:　ビッグな　みつぎものでござるぜ！@KEY()↓
+;◆オーケー　アミーゴ！↓
+;　すごい　おおあたりだぜ↓
+;　セニョールセニョリータ！@KEY()↓
+;◆ハッピーな　あんたに↓
+;　これをプレゼントフォーユー@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_SLOTBROS_ATARI_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_FOOD_SKIP_SAND)	;このあたりは後でまっつんルーチンに差し替え
+◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｗｏｎ　ａ　@DSP_GOODS(GDS_FOOD_SKIP_SAND)　ａｓ　ａ　ｐｒｉｚｅ．
+@KEYNP()
+
+;jpn:◆@DSP_LCNAME()は↓
+;jpn:　けいひんとして↓
+;jpn:　@DSP_GOODS(GDS_FOOD_SKIP_SAND)を　もらった@KEYNP()
+@SE(SE_se74_my_get)
+@CLOSEALL()
+@FRESH_CHAR(PRSN_DEST_FIELD_N)
+;@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_RETURN)	;友、所定の位置に戻る
+@WAITSYS()
+@GOTO(_SLOTBROS_EXIT)
+
+_SLOTBROS_ATARI_10					;赤7	1等
+@WI(120)
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_PRESENT)	;友、前に出る
+@WAITSYS()
+@COLD_CHAR(PRSN_DEST_FIELD_N)
+@OPEN(1)						;message win open
+◆Ａｍｉｇｏ，　ｙｏｕ　ｗｏｎ！@KEY()↓
+◆Ａ　ｖｅｒｙ　ｂｉｇ　ｗｉｎｎｉｎｇ，　ａｎｄ　ｙｏｕ　ｈｉｔ　ｉｔ！@KEY()↓
+◆Ｈｅｒｅ’ｓ　ｔｈｅ　ｐｒｉｚｅ　ｆｏｒ　ｔｈｅ　ｉｍｐｏｒｔａｎｔ　ａｍｉｇｏ！
+@KEY()↓
+;jpn:◆いちだいじでござるぜアミーゴ！↓
+;jpn:　あらしのような↓
+;jpn:　おおあたりでござるぜ@KEY()↓
+;jpn:◆かほうものの　アミーゴに↓
+;jpn:　ビッグな　みつぎものでござるぜ！@KEY()↓
+;◆オーケー　アミーゴ！↓
+;　ものすごい　おおあたりだぜ↓
+;　セニョールセニョリータ！@KEY()↓
+;◆ラッキーナイスな　あんたに↓
+;　これをプレゼントフォーユー@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_SLOTBROS_ATARI_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_FOOD_PSYCHO_CARAMEL)	;このあたりは後でまっつんルーチンに差し替え
+◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｗｏｎ　ａ　@DSP_GOODS(GDS_FOOD_PSYCHO_CARAMEL)　ａｓ　ａ　ｐｒｉｚｅ．
+@KEYNP()
+
+;jpn:◆@DSP_LCNAME()は↓
+;jpn:　けいひんとして↓
+;jpn:　@DSP_GOODS(GDS_FOOD_PSYCHO_CARAMEL)を　もらった@KEYNP()
+@SE(SE_se74_my_get)
+@CLOSEALL()
+@FRESH_CHAR(PRSN_DEST_FIELD_N)
+;@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_RETURN)	;友、所定の位置に戻る
+@WAITSYS()
+@GOTO(_SLOTBROS_EXIT)
+
+_SLOTBROS_ATARI_11					;青>>	4等
+@WI(120)
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_PRESENT)	;友、前に出る
+@WAITSYS()
+@COLD_CHAR(PRSN_DEST_FIELD_N)
+@OPEN(1)						;message win open
+◆Ａｍｉｇｏ，　ｙｏｕ　ｗｏｎ！@KEY()↓
+◆Ａ　ｖｅｒｙ　ｂｉｇ　ｗｉｎｎｉｎｇ，　ｍｙ　ｆｒｉｅｎｄ！@KEY()↓
+◆Ｈｅｒｅ’ｓ　ｔｈｅ　ｂｉｇ　ｐｒｉｚｅ　ｆｏｒ　ｙｏｕ！
+@KEY()↓
+;jpn:◆いちだいじでござるぜアミーゴ！↓
+;jpn:　おおあたりでござるぜ@KEY()↓
+;jpn:◆かほうものの　アミーゴに↓
+;jpn:　ビッグな　みつぎものでござるぜ！@KEY()↓
+;◆オーケー　アミーゴ！↓
+;　ひるいなき　おおあたりだ↓
+;　セニョールセニョリータ！@KEY()↓
+;◆ハッピーナイスな　あんたに↓
+;　これをプレゼントフォーユー@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_SLOTBROS_ATARI_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_FOOD_JUICE_ORANGE)	;このあたりは後でまっつんルーチンに差し替え
+◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｗｏｎ　ａ　@DSP_GOODS(GDS_FOOD_JUICE_ORANGE)　ａｓ　ａ　ｐｒｉｚｅ．
+@KEYNP()
+;jpn:◆@DSP_LCNAME()は↓
+;jpn:　けいひんとして↓
+;jpn:　@DSP_GOODS(GDS_FOOD_JUICE_ORANGE)を　もらった。@KEYNP()
+@SE(SE_se74_my_get)
+@CLOSEALL()
+@FRESH_CHAR(PRSN_DEST_FIELD_N)
+;@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_RETURN)	;友、所定の位置に戻る
+@WAITSYS()
+@GOTO(_SLOTBROS_EXIT)
+
+_SLOTBROS_ATARI_GOODSFULL;
+←
+◆Ｔｈａｔ’ｓ　ｗｈａｔ　Ｉ　ｔｈｏｕｇｈｔ，　ｂｕｔ　ａｍｉｇｏ，　ｙｏｕ　ｈａｖｅ　ｎｏ　ｍｏｒｅ　ｒｏｏｍ．@KEY()↓
+◆Ｉ’ｍ　ｓｏｒｒｙ，　ｂｕｔ　ｔｈｅ　ｄｅａｌ’ｓ　ｏｆｆ．@KEY()↓
+◆Ｙｏｕｒ　ｐａｙ　ｏｆｆ　ｔｏｏｋ　ｔｈｅ　ｄａｙ　ｏｆｆ，　ａｍｉｇｏ．
+@KEYNP()
+;jpn:◆と　おもったが↓
+;jpn:　アミーゴは　どうやら　もちものが↓
+;jpn:　いっぱいのようでござるな。@KEY()↓
+;jpn:◆すまぬが↓
+;jpn:　このはなしは　なかったことに↓
+;jpn:　してくださらんか　セニョール@KEY()↓
+;jpn:◆かたじけナイチンゲール！！@KEYNP()
+@CLOSEALL()
+@FRESH_CHAR(PRSN_DEST_FIELD_N)
+;@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_RETURN)	;友、所定の位置に戻る
+@WAITSYS()
+@GOTO(_SLOTBROS_EXIT)
+
+;-------------ハズレ処理 (弟の時点でハズレ)
+_SLOTBROS_HAZURE
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_SLOTBROS_STOP_N)	;友停止
+@WAITSYS()
+;-------------ハズレ処理2(友の時点でハズレ)
+_SLOTBROS_HAZURE_2
+;-------------SLOTBROS後始末
+_SLOTBROS_EXIT
+@WI(2)
+@REMOVE_CHAR(PRSN_DEST_FIELD_L,ANIM_MAPOBJSTILL)
+@WI(2)
+@REMOVE_CHAR(PRSN_DEST_FIELD_M,ANIM_MAPOBJSTILL)
+@WI(2)
+@REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_MAPOBJSTILL)
+@!
+
+;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Person:スロットBros.兄
+;@Figure:スロットブラザース
+;@AppearanceKey:0
+;@ActionScript:◆スロット兄動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_SLOTBROS_A
+MSG_DSRT_SLOTBROS_A;@MiuraAppended
+◆Ｉ’ｍ　ｂｉｇ　ｂｒｏｔｈｅｒ　Ｐａｎｃｈｏ．
+@KEYNP()
+;jpn:◆あにのパンチョでーす。@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Person:スロットBros.弟
+;@Figure:スロットブラザース
+;@AppearanceKey:0
+;@ActionScript:◆スロット弟動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_SLOTBROS_B
+MSG_DSRT_SLOTBROS_B;@MiuraAppended
+◆Ｉ’ｍ　ｋｉｄ　ｂｒｏｔｈｅｒ　Ｐｉｎｃｈｏ．
+@KEYNP()
+;jpn:◆おとうとのピンチョでーす。@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Person:スロットBros.友
+;@Figure:スロットブラザース
+;@AppearanceKey:0
+;@ActionScript:◆スロット友だち動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_SLOTBROS_C
+MSG_DSRT_SLOTBROS_C;@MiuraAppended
+◆Ｉ’ｍ　Ｔｏｍａｓ　Ｊｅｆｆｅｒｓｏｎ．
+@KEYNP()
+;jpn:◆ともだちの@WI(30)↓
+;jpn:　おおしおへいはちろうです。@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Person:うまのほね
+;@Figure:骨
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_HORSEBONE
+MSG_DSRT_HORSEBONE;
+◆（．．．Ｉ’ｍ　ｊｕｓｔ　ａ　ｐｉｌｅ　ｏｆ　ｂｌｅａｃｈｅｄ　ｂｏｎｅｓ．　Ｉ　ｃａｎ’ｔ　ｔａｌｋ．）
+@KEYNP()
+;jpn:◆（‥‥おれは　たんなる↓
+;jpn:　うまのほね　だから↓
+;jpn:　しゃべらないよ）@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Person:うしのほね
+;@Figure:骨
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_COWBONE
+MSG_DSRT_COWBONE;
+◆（Ｅｖｅｎ　ｔｈｏｕｇｈ　Ｉ’ｍ　ｊｕｓｔ　ａ　ｐｉｌｅ　ｏｆ　ｂｏｎｅｓ，@KEY()↓
+◆Ｉ　ｃａｎ　ｔａｌｋ　ａｎｄ　Ｉ’ｍ　ｌｏｎｅｌｙ　ｏｕｔ　ｈｅｒｅ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ．）
+@KEYNP()
+;jpn:◆（うしのほね　とはいえ↓
+;jpn:　さばくに　ずっといるのは↓
+;jpn:　さみしいものだね）@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Person:くろゴマ
+;@Figure:黒ゴマ
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_BLACKSESAME
+MSG_DSRT_BLACKSESAME;
+◆（Ｗｈｙ　ｗｏｕｌｄ　ｙｏｕ　ｆｅｅｌ　ｌｉｋｅ　ｔａｌｋｉｎｇ　ｔｏ　ａ　ｔｉｎｙ　ｂｌａｃｋ　ｓｅｓａｍｅ　ｌｉｋｅ　ｍｅ．）@KEY()↓
+◆（Ｉ　ｗａｎｎａ　ａｐｏｌｏｇｉｚｅ　ｔｏ　ｔｈｅ　ｗｈｉｔｅ　ｓｅｓａｍｅ　ｔｈａｔ　Ｉ　ｈｕｒｔ　ｂｅｆｏｒｅ．@KEY()↓
+◆Ｉｆ　Ｉ　ｃｏｕｌｄ　ｊｕｓｔ　ｓｅｅ　ｈｅｒ．）
+;jpn:◆（よく　こんなにちいさな↓
+;jpn:　くろゴマに　はなしかけるきに↓
+;jpn:　なったものですね）@KEY()↓
+;jpn:◆（むかし　つめたくしたしろゴマに↓
+;jpn:　もしも　あえたら　あやまりたい）
+@CHKFGOTO(FLG_DSRT_WHITESESAME,_DSRT_BLACKSESAME_1)
+@KEYNP()
+@CLOSEALL()
+@SETF(FLG_DSRT_BLACKSESAME)
+@CHKFGOTO(FLG_PHOTO_13,MSG_END)
+@WI(60)
+@GOSUB(MSG_GLOBAL_PHOTO_13);撮影
+』
+
+_DSRT_BLACKSESAME_1;
+@KEY()↓
+◆（Ｗｈａｔ？@KEY()↓
+◆Ｔｈｅ　ｗｈｉｔｅ　ｓｅｓａｍｅ　ｓｔｉｌｌ．．．ｌｏｖｅｓ　ｍｅ？！@KEY()↓
+◆Ｗｅｅｐ，　ｗｅｅｐ．．．）
+@KEYNP()
+;jpn:◆（えっ@WI(20)　しろゴマが‥‥まだ↓
+;jpn:　おれを　すきだと？！↓
+;jpn:　ホロリ‥‥）@KEYNP()
+@CLOSEALL()
+@SETF(FLG_DSRT_BLACKSESAME)
+@CHKFGOTO(FLG_PHOTO_13,MSG_END)
+@WI(60)
+@GOSUB(MSG_GLOBAL_PHOTO_13);撮影
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Person:しろゴマ
+;@Figure:白ゴマ
+;@AppearanceKey:0
+;@ActionScript:◆固定
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_WHITESESAME
+MSG_DSRT_WHITESESAME;
+◆（Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｔｈｅ　ｂｌａｃｋ　ｓｅｓａｍｅ　Ｉ　ｕｓｅｄ　ｔｏ　ｌｏｖｅ　ｉｓ　ｓｏｍｅｗｈｅｒｅ　ｉｎ　ｔｈｉｓ　ｄｅｓｅｒｔ．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｓｅｅ　ｈｉｍ，　ｐｌｅａｓｅ　ｔｅｌｌ　ｈｉｍ　ｔｈａｔ　Ｉ　ｓｔｉｌｌ　ｌｏｖｅ　ｈｉｍ．）
+;jpn:◆（むかし　すきだったくろゴマが↓
+;jpn:　このさばくの　どこかにいるって↓
+;jpn:　きいたんですが@KEY()↓
+;jpn:◆もし　あったら↓
+;jpn:　しろゴマは　いまもすきよって↓
+;jpn:　つたえてね。）
+@CHKFGOTO(FLG_DSRT_BLACKSESAME,_DSRT_WHITESESAME_1)
+@SETF(FLG_DSRT_WHITESESAME)
+@KEYNP()
+』
+
+_DSRT_WHITESESAME_1;
+@KEY()↓
+◆（Ｒｅａｌｌｙ？@KEY()↓
+◆Ｙｏｕ’ｖｅ　ｓｅｅｎ　ｈｉｍ　ａｌｒｅａｄｙ？@KEY()↓
+◆Ｗａｓ　ｈｅ　ｏｋａｙ？@KEY()↓
+◆．．．Ｈｍｍｍ，　Ｉ　ｓｅｅ．）
+@KEYNP()
+;jpn:◆（えっ　もう　あった？！@WI(30)↓
+;jpn:　げんきでしたか@WI(30)↓
+;jpn:　‥‥そうですか。）@KEYNP()
+@SETF(FLG_DSRT_WHITESESAME)
+;御褒美？
+』
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Person:コンタクトレンズ
+;@Figure:光
+;@AppearanceKey:0
+;@ActionScript:◆その場でアニメーション
+;@GoodsMessage:0
+;@CheckMessage:MSG_DSRT_CONTACTLENS
+;@Message:0
+MSG_DSRT_CONTACTLENS;@MiuraAppended
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+◆@DSP_NAME(0)　ｓｐｏｔｔｅｄ　ｓｏｍｅｔｈｉｎｇ　ｓｈｉｎｙ．@KEY()↓
+◆Ｉｔ　ｗａｓ　ａ　ｓｅｔ　ｏｆ　ｃｏｎｔａｃｔ　ｌｅｎｓｅｓ！
+@KEY()↓
+;jpn:◆@DSP_NAME(0)は　ひかるものを↓
+;jpn:　チェックした。@KEY()↓
+;jpn:◆コンタクトレンズをみつけた。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_DSRT_CONTACTLENS_ITEMFULL)
+@GOODSIN_PLAYER(PC_ALL,GDS_TOOL_CONTACT_LENS)
+@HIDE_CHAR(PRSN_DEST_FIELD_4B,OBJFX_HIDE_NONE)
+@GOSUB(MSG_SUB_GETGOODS)
+@SETF(FLG_ITEM_CONTACTLENS)
+@KEYNP()
+』
+
+_DSRT_CONTACTLENS_ITEMFULL;
+◆Ｙｏｕ　ｈａｖｅ　ｎｏ　ｍｏｒｅ　ｒｏｏｍ．
+@KEYNP()
+
+;jpn:◆にもつが　いっぱいで　もてない。@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠中央オアシス
+;@Person:デザートモンキー
+;@Figure:さる
+;@AppearanceKey:0
+;@ActionScript:◆せわしなくサル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_MONKEY_A
+MSG_DSRT_MONKEY_A;
+;砂漠のサル
+◆Ａｓ　ｓｅａ　ｍｏｎｋｅｙｓ　ｌｉｖｅ　ｉｎ　ｔｈｅ　ｓｅａ．．．ｄｅｓｅｒｔ　ｍｏｎｋｅｙｓ　ｌｉｖｅ　ｉｎ　ｔｈｅ　ｄｅｓｓｅｒｔ．@KEY()↓
+◆Ｉ　ｍｅａｎ　ｄｅｓｅｒｔ，　ｎｏｔ　ｄｅｓｓｅｒｔ！@KEY()↓
+◆Ｉ　ａｍ　ｈａｐｐｙ　ｔｈａｔ　ｔｈｅｒｅ　ａｒｅ　ａｎｉｍａｌｓ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ，　ａｒｅｎ’ｔ　ｙｏｕ？
+@KEYNP()
+;jpn:◆うみに　シーモンキーが↓
+;jpn:　いるように‥‥さばくには↓
+;jpn:　デザートモンキーがいるわけだ。@KEY()↓
+;jpn:◆デザートっていっても↓
+;jpn:　しょくごのおかしじゃないぞ。↓
+;jpn:　「さばく」って　いみだ。@KEY()↓
+;jpn:◆さばくで　いきものにあうと↓
+;jpn:　ちょいと　ほっとするよな。↓
+;jpn:　おたがいに　な。@KEYNP()
+』
+
+
+;@Habitat:ドコドコ砂漠／フィールド／砂漠中央オアシス
+;@Person:武器専門男
+;@Figure:武器男
+;@AppearanceKey:0
+;@ActionScript:◆きょろきょろ
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_WEAPON
+MSG_DSRT_WEAPON;
+@GOSUB(MSG_SHOP_DSRT_WEAPON)
+』
+
+
+;▼▲▼▲▼▲▼▲　ドコドコ砂漠　▼▲▼▲▼▲▼▲
+
+;^^^^^^^^ドコドコ砂漠：サルダンジョン^^^^^^^^
+
+;@Habitat:ドコドコ砂漠／サルダンジョン／どこか
+;@Person:タライ・ジャブ
+;@Figure:タライジャブ
+;@AppearanceKey:0
+;@ActionScript:止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_TARAIJAB
+MSG_DSRT_TARAIJAB;チベット僧（タライ・ジャブ）
+;神秘的な僧。宗教的直感（？）によって、ＮＥＳたちと
+;世界のうんめいを（バクゼンと）知っている。
+;チベットの人々というのは、みんなこんなふうなんじゃないか
+;と思う私たちは、軽薄ですよね。
+@CHKFGOTO(FLG_WIN_GIEGU,_DSRT_TARAIJAB_LATER)
+@CHKFGOTO(FLG_DSRT_INFO_TLPT,_DSRT_TARAIJAB_AFTER);サル出て行った
+@CHKFGOTO(FLG_ITEM_TOFU,_DSRT_TARAIJAB_MAIN)
+@BGMSTART(0,BGM_home0);エデン序曲
+◆Ｔｈｅ　ｔｒｕｔｈ　ｏｆ　ｓｐａｃｅ　ａｎｄ　ｔｉｍｅ　ｍｏｖｅｓ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｕｎｉｖｅｒｓｅ　ｌｉｋｅ　ａ　ｗａｖｅ．．．@KEY()↓
+◆Ｔｒｕｔｈ　ｓｐｅａｋｓ　ｔｈｒｏｕｇｈ　ｓｐａｃｅ　ａｎｄ　ｍａｔｔｅｒ　ａｎｄ　ｍａｋｅｓ　ｉｔｓｅｌｆ　ｋｎｏｗｎ　ｔｏ　ｈｕｍａｎ　ｂｅｉｎｇｓ．@KEY()↓
+◆Ｉ　ｗａｓ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ，@WI(15)　ａｎｄ　ｙｏｕ　ｃａｍｅ．@WI(20)　　Ｔｈｉｓ　ｗａｓ　ｄｅｓｔｉｎｅｄ　ｔｏ　ｈａｐｐｅｎ．@KEY()↓
+◆Ｉｎ　ｔｒｕｔｈ，　ａｌｌ　ｉｓ　ｐｒｅ－ｄｅｔｅｒｍｉｎｅｄ．．．@KEY()↓
+;jpn:◆うちゅうの　しんりは↓
+;jpn:　つぶのように　なみのように↓
+;jpn:　うちゅうを　かけめぐり@KEY()↓
+;jpn:◆ひと　という　うちゅうに↓
+;jpn:　かたりかけているものじゃ。@KEY()↓
+;jpn
+:◆あなたがたが　ここにくること@WI(20)↓
+;jpn:　わたしが　ここで　まつこと‥‥@WI(30)↓
+;jpn:　すべて　さだめられた　しんり。@KEY()↓
+◆@DSP_STS(STS_PC_NAME_NES)
+@SET_LOOPREG(PC_NESS)
+@GOSUB(MSG_SUB_ALLHEAL_ONE)
+@SE(SE_se25_b_healing)
+@WI(20)
+　@DSP_STS(STS_PC_NAME_PAULA)↓
+@SET_LOOPREG(PC_PAULA)
+@GOSUB(MSG_SUB_ALLHEAL_ONE)
+@WI(20)
+　@DSP_STS(STS_PC_NAME_JEFF)
+@SET_LOOPREG(PC_JEFF)
+@GOSUB(MSG_SUB_ALLHEAL_ONE)
+@SE(SE_se25_b_healing)
+@WI(20)
+　　ａｎｄ　@DSP_STS(STS_PC_NAME_POO)@WI(30)，@KEY()↓
+◆ｗｈｅｎ　ｔｈｅｓｅ　ｆｏｕｒ　ｐｏｗｅｒｓ　ｇａｔｈｅｒ，@KEY()↓
+◆ｔｗｉｓｔｅｄ　ｓｐａｃｅ　ｗｉｌｌ　ｂｒｉｎｇ　ｂａｃｋ　ｐｅａｃｅ　ｔｏ　ｔｈｅ　ｗｏｒｌｄ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｕｎｄｅｒｓｔａｎｄ？↓
+　　Ｉｔ　ｄｏｅｓｎ’ｔ　ｍａｔｔｅｒ．↓
+　　Ｐｒｏｃｅｅｄ　ａｓ　ｙｏｕ　ｗｉｓｈ．@KEY()↓
+◆Ｏｐｅｎ　ｔｈｅ　ｔｒｅａｓｕｒｅ　ｂｏｘ　ａｎｄ　ｔａｋｅ　ｗｈａｔ　ｉｓ　ｉｎｓｉｄｅ　ｗｉｔｈ　ｙｏｕ．@KEY()↓
+;jpn:　そして@DSP_STS(STS_PC_NAME_POO)@WI(30)↓
+;jpn:　４つのちからが　であうとき@KEY()↓
+;jpn:◆ねじれようとしている↓
+;jpn:　うちゅうは‥‥やすらかな↓
+;jpn:　こきゅうを　とりもどす。@KEY()↓
+;jpn:◆わかるかね。@WI(30)↓
+;jpn:　わからんでも　よい。@KEY()↓
+;jpn:◆あなたがたの　すきなように↓
+;jpn:　あゆんでゆけば　それでよい。@KEY()↓
+;jpn:◆たからばこを　あけて↓
+;jpn:　じゆうに　たからを↓
+;jpn:　もっていきなさい。@KEY()↓
+@WI(60)↓
+◆Ｄｉｄ　ｙｏｕ　ｃｏｍｅ　ｉｎ　ｓｅａｒｃｈ　ｏｆ　ｔｈｉｓ？@KEY()↓
+◆．．．Ｓｏｍｅｏｎｅ　ｌｅｆｔ　ｉｔ　ｂｅｈｉｎｄ　ｉｎ　ｔｈｉｓ　ｈｏｌｅ．
+;jpn:◆もしかすると↓
+;jpn:　これを　さがしに　きたのかな。@KEY()↓
+;jpn:◆‥‥うっかりものが↓
+;jpn:　あなに　おとしていきよったが。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_DSRT_TARAIJAB_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_ICHIGO_TOFU)
+@SETF(FLG_ITEM_TOFU)
+@GOSUB(MSG_SUB_GETGOODS_S)
+@KEY()↓
+;↓
+_DSRT_TARAIJAB_MAIN;
+@OPEN(1)
+◆Ｔｈｅ　ａｄｖｅｎｔｕｒｅ　ｔｈａｔ　ｌｉｅｓ　ａｈｅａｄ　ｗｏｎ’ｔ　ｂｅ　ｅａｓｙ．@KEY()↓
+◆Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａ　ｓｐｅｃｉａｌ　ｓｋｉｌｌ　ｔｏ　ｈｅｌｐ　ｙｏｕ　ｍｏｖｅ　ｔｈｒｏｕｇｈ　ｓｐａｃｅ　ａｓ　ｙｏｕ　ｗｉｓｈ．@KEY()↓
+◆Ｌｅａｒｎ　ｔｈｅ　ｓｋｉｌｌ　ｆｒｏｍ　ｔｈｅ　ｍｏｎｋｅｙ　ｏｖｅｒ　ｔｈｅｒｅ．．．@KEY()↓
+◆ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｌｅａｒｎ　ｔｈｉｓ　ｓｐｅｃｉａｌ　ｐｏｗｅｒ？↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆ここから　さきのたびも↓
+;jpn:　なみたいていの　ものでは↓
+;jpn:　なかろう。@KEY()↓
+;jpn:◆くうかんを　じゆうに↓
+;jpn:　いどうする　ちからを↓
+;jpn:　さずけてあげよう。@KEY()↓
+;jpn:◆そこの　サルに↓
+;jpn:　ならっていきなさい。@KEY()↓
+;jpn:◆それとも　そんなちからは↓
+;jpn:　いらないか？↓
+;jpn:　　<いる>　　<いらない>
+@DSP_ITEM(2)
+@SELGOTO(_DSRT_TARAIJAB_MAIN_YES,_DSRT_TARAIJAB_MAIN_NO)
+_DSRT_TARAIJAB_MAIN_NO;いらない
+◆Ｈａ　ｈａ　ｈａ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｏｎｅ　ｗａｙ．@KEY()↓
+◆Ｂｅ　ｓｕｒｅ　ｔｈａｔ　ｙｏｕ　ｄｏ　ｎｏｔ　ｔａｌｋ　ｔｏ　ｔｈｅ　ｍｏｎｋｅｙ，　ａｎｄ　ｇｏ．
+@KEYNP()
+;jpn:◆ハッハッハ。@WI(20)↓
+;jpn:　それも　ひとつの　こたえだ。@KEY()↓
+;jpn:◆あえて　サルに　はなしかけずに↓
+;jpn:　そのままいきなさい。@KEYNP()
+@SETF( FLG_TEMP_1 )	;テレポート情報聞いた
+@CLOSEALL()
+;------------
+@BGM_EFFECT(3)
+@WI(20)
+@MUSISTART()
+;------------
+』
+_DSRT_TARAIJAB_MAIN_YES;
+◆Ｈａ　ｈａ　ｈａ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｗｏｎｄｅｒｆｕｌ！@KEY()↓
+◆Ｓｐｅａｋ　ｔｏ　ｔｈｅ　ｍｏｎｋｅｙ　ｏｖｅｒ　ｔｈｅｒｅ．
+@KEYNP()
+;jpn:◆ハッハッハ。@WI(20)↓
+;jpn:　それは　そうじゃろう！@KEY()↓
+;jpn:◆だったら　そこにいる↓
+;jpn:　サルに　はなしかけてごらん。@KEYNP()
+@SETF( FLG_TEMP_1 )	;テレポート情報聞いた
+@CLOSEALL()
+;------------
+@BGM_EFFECT(3)
+@WI(20)
+@MUSISTART()
+;------------
+』
+_DSRT_TARAIJAB_GOODSFULL;
+◆Ｙｏｕ　ｃａｎｎｏｔ　ｃａｒｒｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ．@KEY()↓
+◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ　ｙｏｕ　ｄｏｎ’ｔ　ｎｅｅｄ．@KEY()↓
+◆Ｙｏｕ　ｗｉｌｌ　ｎｅｅｄ　ｔｈｉｓ，　ｔｈｅ　Ｇｏｕｒｍｅｔ　Ｙｏｇｕｒｔ　Ｍａｃｈｉｎｅ．
+@KEYNP()
+;jpn:◆にもつが　いっぱいか。@WI(20)↓
+;jpn:　なにか　いらないものを↓
+;jpn:　しまつして@KEY()↓
+;jpn:◆この‥‥↓
+;　「グルメとうふマシン」とやらを↓
+;jpn:　「ぐるめとうふマシン」とやらを↓
+;jpn:　もっていきなさい。@KEYNP()
+;------------
+@BGM_EFFECT(3)
+@WI(20)
+@MUSISTART()
+;------------
+』
+
+_DSRT_TARAIJAB_AFTER;＄
+◆Ｔｈｅ　ｔｒｕｔｈ　ｏｆ　ｓｐａｃｅ　ａｎｄ　ｔｉｍｅ　ｍｏｖｅｓ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｕｎｉｖｅｒｓｅ　ｌｉｋｅ　ａ　ｗａｖｅ．．．@KEY()↓
+◆Ｔｒｕｔｈ　ｓｐｅａｋｓ　ｔｈｒｏｕｇｈ　ｓｐａｃｅ　ａｎｄ　ｍａｔｔｅｒ　ａｎｄ　ｍａｋｅｓ　ｉｔｓｅｌｆ　ｋｎｏｗｎ　ｔｏ　ｈｕｍａｎ　ｂｅｉｎｇｓ．@KEY()↓
+◆Ｉ　ｗａｓ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ，@WI(15)　ａｎｄ　ｙｏｕ　ｃａｍｅ．@WI(20)　　Ｔｈｉｓ　ｗａｓ　ｄｅｓｔｉｎｅｄ　ｔｏ　ｈａｐｐｅｎ．@KEY()↓
+◆Ｉｎ　ｔｒｕｔｈ，　ａｌｌ　ｉｓ　ｐｒｅ－ｄｅｔｅｒｍｉｎｅｄ．．．@KEY()↓
+@KEYNP()
+;jpn:◆うちゅうの　しんりは↓
+;jpn:　つぶのように　なみのように↓
+;jpn:　うちゅうを　かけめぐり@KEY()↓
+;jpn:◆ひと　という　うちゅうに↓
+;jpn:　かたりかけているものじゃ。@KEY()↓
+;jpn:◆あなたがたが　ここにくること@WI(20)↓
+;jpn:　わたしが　ここで　まつこと‥‥@WI(30)↓
+;jpn:　すべて　さだめられた　しんり。@KEYNP()
+』
+
+_DSRT_TARAIJAB_LATER;＆
+◆Ｙｏｕ’ｖｅ　ｂｅｅｎ　ｅｘｃｅｅｄｉｎｇｌｙ　ｐａｔｉｅｎｔ．@KEY()↓
+◆Ｙｏｕ’ｖｅ　ｏｖｅｒｃｏｍｅ　ｍａｎｙ　ｈａｒｄｓｈｉｐｓ．@KEY()↓
+◆Ｉ　ｐｒａｉｓｅ　ａｌｌ　ｏｆ　ｙｏｕ　ｆｏｒ　ｙｏｕｒ　ｃｏｕｒａｇｅ．
+@KEYNP()
+;jpn:◆よくたえた。@KEY()↓
+;jpn:◆よくのりこえた。@KEY()↓
+;jpn:◆あなががたの　ゆうきを↓
+;jpn:　たたえます。@KEYNP()
+』
+
+;▼▲▼▲▼▲▼▲　ドコドコ砂漠　▼▲▼▲▼▲▼▲
+
+;^^^^^^^^ドコドコ砂漠：モッチーダンジョン^^^^^^^^
+
+;@Habitat:ドコドコ砂漠／モッチーダンジョン／入口付近
+;@Person:ショージ・モッチー
+;@Figure:ショージ・モッチー
+;@AppearanceKey:FLG_DSRT_SYOZI_DUNGEON_APPEAR/on
+;@ActionScript:◆正面向いて止まったまま
+;@GoodsMessage:0
+;@CheckMessage;0
+;@Message:MSG_DSRT_SYOZI_DUNGEON
+MSG_DSRT_SYOZI_DUNGEON;
+◆Ｉ　ｄｉｄｎ’ｔ　ｈａｖｅ　ａ　ｐｒｏｂｌｅｍ　ｄｉｇｇｉｎｇ　ｕｎｔｉｌ　ｔｈｉｓ．．．Ｉ　ｆｏｕｎｄ　ａ　ｍａｚｅ．@KEY()↓
+◆Ｌｏｔｓ　ｏｆ　ｍｏｎｓｔｅｒｓ　ａｐｐｅａｒｅｄ，　ｓｏ　Ｉ　ｃｏｕｌｄｎ’ｔ　ｐｒｏｃｅｅｄ．@KEY()↓
+◆Ｔｈｅｒｅ’ｓ　５　ｂｉｇ　ｍｏｌｅｓ．．．！@KEY()↓
+◆Ｉｆ　Ｉ　ｂｅａｔ　ｔｈｅ　ｍｏｎｓｔｅｒｓ，　Ｉ　ｃａｎ　ｃｏｎｔｉｎｕｅ　ｏｎ．@KEY()↓
+◆Ｉ　ｔｈｉｎｋ　Ｉ　ｈａｖｅ　ａ　ｂｌｅｅｄｉｎｇ　ｕｌｃｅｒ　ｆｒｏｍ　ｗｏｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ．@KEY()↓
+◆Ｉ’ｍ　ｈｅｌｐｌｅｓｓ　ｔｏ　ｒｅａｌｌｙ　ｄｏ　ａｎｙｔｈｉｎｇ．
+@KEYNP()
+;jpn:◆ここんとこまでは　ラクショーで↓
+;jpn:　あなを　ほってきてさ↓
+;jpn:　めいろを　めっけたんだけどね。@KEY()↓
+;jpn:◆ばーけもんが　うーんとでてきて↓
+;jpn:　さきに　すすめなく↓
+;jpn:　なっちまったんさね。@KEY()↓
+;jpn:◆でっけー　モグラが↓
+;jpn:　‥‥どうやら　５ひきもいる！@KEY()↓
+;jpn:◆ばけものさえ　のしちまえば↓
+;jpn:　もっと　さきまで↓
+;jpn:　すすめるんだいね。@KEY()↓
+;jpn:◆おらぁ　いが　いてぇよ。↓
+;jpn:　なやんじまってさ。↓
+;jpn:　フー　まいったいねぇ。@KEYNP()
+』
+
+;@Habitat:ドコドコ砂漠／モッチーダンジョン／1大迷路
+;@Person:巨大モグラＡ
+;@Figure:モグラ
+;@AppearanceKey:FLG_WIN_DSRT_BOSS_A/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_DSRT_BOSS_A
+
+MSG_DSRT_DSRT_BOSS_A;
+@CHKFGOTO(FLG_WIN_DSRT_BOSS_A,MSG_SYS_HANASU_NG)
+@GOSUB(_SUB_DSRT_BOSS_MESSAGE)
+@GOSUB(MSG_BATTLE_DSRT_BOSS_A)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@GOSUB(_SUB_DSRT_BOSS_SETF)
+@WI(1)
+@REMOVE_CHAR(PRSN_DEST_MOCHY_1_B,ANIM_BLINK_SUICIDE)
+@SETF(FLG_WIN_DSRT_BOSS_A)
+@GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
+』
+
+;@Habitat:ドコドコ砂漠／モッチーダンジョン／1大迷路
+;@Person:巨大モグラＢ
+;@Figure:モグラ
+;@AppearanceKey:FLG_WIN_DSRT_BOSS_B/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_DSRT_BOSS_B
+MSG_DSRT_DSRT_BOSS_B;
+@CHKFGOTO(FLG_WIN_DSRT_BOSS_B,MSG_SYS_HANASU_NG)
+@GOSUB(_SUB_DSRT_BOSS_MESSAGE)
+@GOSUB(MSG_BATTLE_DSRT_BOSS_B)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@GOSUB(_SUB_DSRT_BOSS_SETF)
+@WI(1)
+@REMOVE_CHAR(PRSN_DEST_MOCHY_1_C,ANIM_BLINK_SUICIDE)
+@SETF(FLG_WIN_DSRT_BOSS_B)
+@GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
+』
+
+;@Habitat:ドコドコ砂漠／モッチーダンジョン／1大迷路
+;@Person:巨大モグラＣ
+;@Figure:モグラ
+;@AppearanceKey:FLG_WIN_DSRT_BOSS_C/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_DSRT_BOSS_C
+MSG_DSRT_DSRT_BOSS_C;
+@CHKFGOTO(FLG_WIN_DSRT_BOSS_C,MSG_SYS_HANASU_NG)
+@GOSUB(_SUB_DSRT_BOSS_MESSAGE)
+@GOSUB(MSG_BATTLE_DSRT_BOSS_C)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@GOSUB(_SUB_DSRT_BOSS_SETF)
+@WI(1)
+@REMOVE_CHAR(PRSN_DEST_MOCHY_1_D,ANIM_BLINK_SUICIDE)
+@SETF(FLG_WIN_DSRT_BOSS_C)
+@GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
+』
+
+;@Habitat:ドコドコ砂漠／モッチーダンジョン／2小迷路
+;@Person:巨大モグラＤ
+;@Figure:モグラ
+;@AppearanceKey:FLG_WIN_DSRT_BOSS_D/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_DSRT_BOSS_D
+MSG_DSRT_DSRT_BOSS_D;
+@CHKFGOTO(FLG_WIN_DSRT_BOSS_D,MSG_SYS_HANASU_NG)
+@GOSUB(_SUB_DSRT_BOSS_MESSAGE)
+@GOSUB(MSG_BATTLE_DSRT_BOSS_D)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@GOSUB(_SUB_DSRT_BOSS_SETF)
+@WI(1)
+@REMOVE_CHAR(PRSN_DEST_MOCHY_2_A,ANIM_BLINK_SUICIDE)
+@SETF(FLG_WIN_DSRT_BOSS_D)
+@GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
+』
+
+;@Habitat:ドコドコ砂漠／モッチーダンジョン／3中迷路
+;@Person:巨大モグラＥ
+;@Figure:モグラ
+;@AppearanceKey:FLG_WIN_DSRT_BOSS_E/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_DSRT_DSRT_BOSS_E
+MSG_DSRT_DSRT_BOSS_E;
+@CHKFGOTO(FLG_WIN_DSRT_BOSS_E,MSG_SYS_HANASU_NG)
+@GOSUB(_SUB_DSRT_BOSS_MESSAGE)
+@GOSUB(MSG_BATTLE_DSRT_BOSS_E)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@GOSUB(_SUB_DSRT_BOSS_SETF)
+@WI(1)
+@REMOVE_CHAR(PRSN_DEST_MOCHY_3_A,ANIM_BLINK_SUICIDE)
+@SETF(FLG_WIN_DSRT_BOSS_E)
+@GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
+』
+
+_SUB_DSRT_BOSS_MESSAGE;
+@BGMSTART(0,BGM_msc24);ボスのセリフ曲
+@CHKFGOTO(FLG_DSRT_BOSS_4,_DSRT_BOSS_MESS_5)
+@CHKFGOTO(FLG_DSRT_BOSS_3,_DSRT_BOSS_MESS_4)
+@CHKFGOTO(FLG_DSRT_BOSS_2,_DSRT_BOSS_MESS_3)
+@CHKFGOTO(FLG_DSRT_BOSS_1,_DSRT_BOSS_MESS_2)
+_DSRT_BOSS_MESS_1;
+@OPEN(1)
+◆Ｉ’ｍ　ｏｎｅ　ｏｆ　ｔｈｅ　ｍａｓｔｅｒｓ　ｏｆ　ｔｈｉｓ　ｈｏｌｅ．@KEY()↓
+◆Ｔｈｅｒｅ　ａｒｅ　ｆｉｖｅ　ｍａｓｔｅｒｓ　ｉｎ　ａｌｌ．@WI(20)　　Ｗｅ　ａｒｅ　ａｌｌ　ｍｏｌｅｓ，　ｏｆ　ｃｏｕｒｓｅ．@KEY()↓
+◆Ｉ　ｂｅｌｉｅｖｅ　Ｉ’ｍ　ｔｈｅ　ｔｈｉｒｄ　ｓｔｒｏｎｇｅｓｔ　ａｍｏｎｇｓｔ　ｕｓ．@KEY()↓
+◆Ｔａｋｅ　ｙｏｕｒ　ｂｅｓｔ　ｓｈｏｔ！
+;jpn:◆おれは↓
+;jpn:　このあなの↓
+;jpn:　ぬしだ。@KEY()↓
+;jpn:◆このあなには↓
+;jpn:　５にんの↓
+;jpn:　ぬしがいる。@KEY()↓
+;jpn:◆５にんといっても↓
+;jpn:　もぐらだから@KEY()↓
+;jpn:◆せいかくには↓
+;jpn:　５ひきだ。@KEY()↓
+;jpn:◆おれがおもうには↓
+;jpn:　おれは　そのうちで↓
+;jpn:　３ばんめに　つよい。@KEY()↓
+;jpn:◆どこからでも↓
+;jpn:　かかってこい！
+@KEY()
+@CLOSEALL()
+@!
+_DSRT_BOSS_MESS_2;
+@OPEN(1)
+◆Ｉ’ｍ　ｒｅａｌｌｙ　ｔｈｅ　ｔｈｉｒｄ　ｓｔｒｏｎｇｅｓｔ　ｍａｓｔｅｒ．@KEY()↓
+◆Ｉ’ｌｌ　ｄｅｓｔｒｏｙ　ｙｏｕ　ｎｏｗ！@KEY()
+;jpn:◆おれが　ほんとうに↓
+;jpn:　３ばんめに　つよい↓
+;jpn:　このあなのぬしだ。@KEY()↓
+;jpn:◆しょうぶしてやる！@KEY()
+@CLOSEALL()
+@!
+_DSRT_BOSS_MESS_3;
+@OPEN(1)
+◆Ｍｙ　ｓｔｒｅｎｇｔｈ　ｆａｌｌｓ　ｂｅｔｗｅｅｎ　ｔｈｅ　ｓｅｃｏｎｄ　ａｎｄ　ｆｏｕｒｔｈ　ｓｔｒｏｎｇｅｓｔ　ｍａｓｔｅｒｓ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｗａｎｎａ　ｔｅｓｔ　ｍｅ？@KEY()↓
+;jpn:◆おれは↓
+;jpn:　２ばんめにつよい↓
+;jpn:　あなのぬしより　よわいが@KEY()↓
+;jpn:◆４ばんめのやつより
+;jpn:　つよい。@KEY()↓
+;jpn:◆おれの　うでを↓
+;jpn:　ためしてみるか？@KEY()↓
+;jpn:◆こい！@KEY()
+@CLOSEALL()
+@!
+_DSRT_BOSS_MESS_4;
+@OPEN(1)
+◆Ｉ’ｍ　ｔｒｕｌｙ　ｔｈｅ　ｔｈｉｒｄ　ｓｔｒｏｎｇｅｓｔ　ｍａｓｔｅｒ　ｏｆ　ｔｈｉｓ　ｈｏｌｅ．@KEY()↓
+◆Ｉ’ｌｌ　ｄｅｍｏｎｓｔｒａｔｅ　ｔｈｅ　ｐｏｗｅｒ　ｏｆ　ｂｅｉｎｇ　ｔｈｉｒｄ　ｔｏ　ｙｏｕ！
+@KEY()
+;jpn:◆おれが↓
+;jpn:　しょうしんしょうめいの@KEY()↓
+;jpn:◆ナンバースリーの↓
+;jpn:　このあなのぬしだ。@KEY()↓
+;jpn:◆ほんものの↓
+;jpn:　ちゅうくらいの　つよさを↓
+;jpn:　みせてやる！@KEY()
+@CLOSEALL()
+@!
+_DSRT_BOSS_MESS_5;
+@OPEN(1)
+◆Ｈａ　ｈａ　ｈａ．@KEY()↓
+◆Ｙｏｕ’ｖｅ　ｆｏｕｇｈｔ　ｔｈｅ　ｓｔｒｏｎｇｅｓｔ　ｍａｓｔｅｒ　ｏｆ　ｔｈｉｓ　ｈｏｌｅ，@KEY()↓
+◆ｔｈｅ　ｓｅｃｏｎｄ　ｓｔｒｏｎｇｅｓｔ　ｍａｓｔｅｒ　ｏｆ　ｔｈｉｓ　ｈｏｌｅ，@KEY()↓
+◆ｔｈｅ　ｆｏｕｒｔｈ　ｓｔｒｏｎｇｅｓｔ　ｍａｓｔｅｒ　ｏｆ　ｔｈｉｓ　ｈｏｌｅ，@KEY()↓
+◆ａｎｄ　ｔｈｅ　ｗｅａｋｅｓｔ　ｍａｓｔｅｒ　ｏｆ　ｔｈｉｓ　ｈｏｌｅ！@KEY()↓
+◆Ｉ’ｍ　ｔｒｕｌｙ　ｔｈｅ　ｔｈｉｒｄ　ｓｔｒｏｎｇｅｓｔ　ｍａｓｔｅｒ　ｏｆ　ｔｈｉｓ　ｈｏｌｅ．@KEY()↓
+◆Ｎｏｗ　ｙｏｕ　ｓｅｅ　ｔｈｅ　ｔｒｕｅ　ａｄｖａｎｔａｇｅ　ｏｆ　ｂｅｉｎｇ　ｔｈｉｒｄ！
+@KEY()
+;jpn:◆ふっふっふ。@KEY()↓
+;jpn:◆おまえは　いままでに↓
+;jpn:　１ばんつよい↓
+;jpn:　このあなのぬしと@KEY()↓
+;jpn:◆２ばんめに　つよい↓
+;jpn:　このあなのぬしと@KEY()↓
+;jpn:◆４ばんめにつよい↓
+;jpn:　このあなのぬしと@KEY()↓
+;jpn:◆１ばんよわい↓
+;jpn:　このあなのぬしと↓
+;jpn:　たたかったはずだ！@KEY()↓
+;jpn:◆おれが！@KEY()↓
+;jpn:◆おれが！@KEY()↓
+;jpn:◆しんの↓
+;jpn:　３ばんめにつよい↓
+;jpn:　このあなのぬしなのだ！@KEY()↓
+;jpn:◆いくぞ！@KEY()
+@CLOSEALL()
+@!
+
+_SUB_DSRT_CHK_WIN_ALLBOSS;
+@CHKF(FLG_WIN_DSRT_BOSS_A)@FALSE_GOTO(_CHK_WIN_ALLBOSS_END)
+@CHKF(FLG_WIN_DSRT_BOSS_B)@FALSE_GOTO(_CHK_WIN_ALLBOSS_END)
+@CHKF(FLG_WIN_DSRT_BOSS_C)@FALSE_GOTO(_CHK_WIN_ALLBOSS_END)
+@CHKF(FLG_WIN_DSRT_BOSS_D)@FALSE_GOTO(_CHK_WIN_ALLBOSS_END)
+@CHKF(FLG_WIN_DSRT_BOSS_E)@FALSE_GOTO(_CHK_WIN_ALLBOSS_END)
+@SETF(FLG_DSRT_DUNGEON_OK)
+@SETF(FLG_WIN_DSRT_BOSS);モッチーのセリフ替え
+@GOSUB(MSG_SUB_BGM_CHANGE_2)
+@CLRF(FLG_DSRT_SYOZI_DUNGEON_APPEAR)
+@CLRF(FLG_DSRT_SYOZI_DISAPPEAR)
+@SETF(FLG_PHOTO_EXCAVATION);撮り頃フラグ
+_CHK_WIN_ALLBOSS_END;
+@!
+_SUB_DSRT_BOSS_SETF;
+@CHKFGOTO(FLG_DSRT_BOSS_4,_DSRT_BOSS_SETF_5)
+@CHKFGOTO(FLG_DSRT_BOSS_3,_DSRT_BOSS_SETF_4)
+@CHKFGOTO(FLG_DSRT_BOSS_2,_DSRT_BOSS_SETF_3)
+@CHKFGOTO(FLG_DSRT_BOSS_1,_DSRT_BOSS_SETF_2)
+_DSRT_BOSS_SETF_1;
+@SETF(FLG_DSRT_BOSS_1)
+@!
+_DSRT_BOSS_SETF_2;
+@SETF(FLG_DSRT_BOSS_2)
+@!
+_DSRT_BOSS_SETF_3;
+@SETF(FLG_DSRT_BOSS_3)
+@!
+_DSRT_BOSS_SETF_4;
+@SETF(FLG_DSRT_BOSS_4)
+@!
+_DSRT_BOSS_SETF_5;
+@!
+
+;▼部屋１（右のさる）▼▼▼▼▼▼▼▼（スキップサンド）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_A;
+@CHKFGOTO(FLG_SARUDUNGEON_A_OK,_SARUD_A_AFTER)
+◆Ｕｋｉｐｐｋｙａｋｏ　Ｕｋｉｋｉｋｉ？@KEY()↓
+◆（Ｄｏ　ｙｏｕ　ｈａｖｅ↓
+　　ａ　@DSP_GOODS(GDS_FOOD_SKIP_SAND)？）@KEY()↓
+◆Ｕｋｉｉ　Ｕｋｉｅｋｉ．．．@KEY()↓
+◆（Ｉ’ｌｌ　ｍｏｖｅ　ａｗａｙ　ｉｆ　ｙｏ　ｇｉｖｅ　ｍｅ　ｏｎｅ．）@KEY()↓
+◆Ｕｋｉｋｉ？@KEY()↓
+◆（Ｃａｎ　ｙｏｕ　ｇｉｖｅ　ｍｅ　ｏｎｅ？）↓
+;jpn:◆ウキップキャコ　ウキキッキ？↓
+;jpn:（スキップサンド　もってるか？）@KEY()↓
+;jpn:◆ウキー　ウキキ‥‥↓
+;jpn:（ひとつ　くれたら↓
+;jpn:　どいてやるけど‥‥）@KEY()↓
+;jpn:◆ウキ～？↓
+;jpn:（くれるか？）↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_A_YES,_SARUD_A_NO)
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「スキップサンド」以外を選ぶと〕
+_SARUD_A_NO;
+◆Ｕｋｉ，　Ｕｋｙａｋｉｋｙａ@KEY()↓
+◆（Ｉ　ｗｏｎ’ｔ　　ｍｏｖｅ．）
+@KEYNP()
+;jpn:◆ウキ　ウキャキキャ↓
+;jpn:（おれ　どかない）@KEYNP()
+』
+_SARUD_A_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_A_NO)
+@SAVE_REG()
+@GOSUB(_SARUD_Q_SKIP)
+@FALSE_GOTO(_SARUD_A_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「スキップサンド」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｋｉｐｐｕ　Ｋｙａｋｏ！@KEY()↓
+◆（Ａ　@DSP_GOODS(GDS_FOOD_SKIP_SAND)！）
+@KEYNP()
+;jpn:◆ウキップキャコ！↓
+;jpn:（スキップサンド！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_2_B,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_2_D,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_A_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_A_AFTER;
+◆Ｕｋｋｉ．@KEY()↓
+◆（Ｌｕｃｋｙ．）
+@KEYNP()
+;jpn:◆ウッキー↓
+;jpn:（ラッキー）
+@KEYNP()
+』
+;▼部屋１（左のさる）▼▼▼▼▼▼▼▼（えんそくランチ）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_B;
+@CHKFGOTO(FLG_SARUDUNGEON_B_OK,_SARUD_B_AFTER)
+◆Ｋｉｋｉｋｉ　Ｋｉｋｉ！@KEY()↓
+◆（Ｉ　ｗａｎｎａ　ｅａｔ　ａ　@DSP_GOODS(GDS_FOOD_LUNCH)！）@KEY()↓
+◆Ｋｉｋｉｋｉ　Ｋｉｋｉ@KEY()↓
+◆（Ｉｆ　ｙｏｕ　ｇｒａｎｔ　ｍｙ　ｗｉｓｈ，　Ｉ　ｍｉｇｈｔ　ｏｐｅｎ　ｔｈｅ　ｅｎｔｒａｎｃｅ．）@KEY()↓
+◆Ｋｉｋｉｋｉ　Ｋｉｋｉ？@KEY()↓
+◆（Ｗｉｌｌ　ｙｏｕ　ｇｉｖｅ　ｍｅ　ａ　@DSP_GOODS(GDS_FOOD_LUNCH)？）↓
+;jpn:◆キッキッキッ　キキッ！↓
+;jpn:（えんそくランチ　たべたい！）@KEY()↓
+;jpn:◆キッキッキッ　キキッ↓
+;jpn:（のぞみを　かなえてくれたら↓
+;jpn:　いりぐち　あけてあげようかな）@KEY()↓
+;jpn:◆キッキッキッ　キキッ？↓
+;jpn:（えんそくランチ　くれる？）↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_B_YES,_SARUD_B_NO)
+_SARUD_B_NO;
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「クッキー」以外を選ぶと〕
+◆Ｋｉｋｉｋｉ　Ｋｉｋｉ！@KEY()↓
+◆（Ｉ　ｗａｎｎａ　ｅａｔ　ａ　@DSP_GOODS(GDS_FOOD_LUNCH)！）
+@KEYNP()
+;jpn:◆キッキッキッ　キキッ！↓
+;jpn:（えんそくランチ　たべたい！）@KEYNP()
+』
+_SARUD_B_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_B_NO)
+@SAVE_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_FOOD_LUNCH)
+@FALSE_GOTO(_SARUD_B_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「えんそくランチ」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｋｉｋｉｅ！@KEY()↓
+◆（Ｇｒｅａｔ！）
+@KEYNP()
+;jpn:◆キキー！↓
+;jpn:（やったー！）
+;@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_2_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_2_C,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_B_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_B_AFTER;
+◆Ｋｉｋｋｉ@KEY()↓
+◆（Ｈｅｅ　ｈｅ　ｈｅ）
+@KEYNP()
+;jpn:◆キッキ↓
+;jpn:（えへへ）
+;@KEYNP()
+』
+;▼部屋２（右のさる）▼▼▼▼▼▼▼▼（ぬれタオル）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_C;
+@CHKFGOTO(FLG_SARUDUNGEON_C_OK,_SARUD_C_AFTER)
+◆Ｕｋｉ　Ｕｋｉｋｉｅ@KEY()↓
+◆（Ｄｏｅｓｎ’ｔ　ｉｔ　ｆｅｅｌ　ｈｏｔ　ｉｎ　ｈｅｒｅ？　　Ｍｙ　ｆｕｒ’ｓ　ａｌｌ　ｓｗｅａｔｙ！）@KEY()↓
+◆Ｕｋｉｅ　Ｋｉｋｕｋｉｅ@KEY()↓
+◆（Ｍａｙｂｅ　ｙｏｕ　ｄｏｎ’ｔ　ｕｓｕａｌｌｙ　ｋｅｅｐ　ａ　@DSP_GOODS(GDS_TOOL_WET_TOWEL)，　ｂｕｔ　）@KEY()↓
+◆Ｕｋｋｅ　Ｕｋｉｋｉ　Ｕｋｋｉｋｉｅ？@KEY()↓
+◆（ｉｆ　ｙｏｕ　ｈａｖｅ　ｏｎｅ，　ｗｉｌｌ　ｙｏｕ　ｓｈａｒｅ　ｉｔ　ｗｉｔｈ　ｍｅ？）↓
+;jpn:◆ウキー　ウキキー↓
+;jpn:（なんか　むしますよねえ）@KEY()↓
+;jpn:◆ウキキー　ウキー↓
+;jpn:（ぬれタオルなんて　ふつう↓
+;jpn:　もってないとおもいますけども）@KEY()↓
+;jpn:◆ウキー　ウキキ　ウキキー？↓
+;jpn:（もし　もってたらば↓
+;jpn:　ゆずってもらえませんかあ？）@KEY()↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_C_YES,_SARUD_C_NO)
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「ぬれタオル」以外を選ぶと〕
+_SARUD_C_NO;松（メッセージなし）
+◆Ｕｋｉｅ　Ｕｋｉｅ　Ｕｋｉｋｉｅ
+	（Ａｎｙ　ｗａｙ，　ｉｔ　ｉｓ　ｈｕｍｉｄ　ｉｎ　ｈｅｒｅ．）
+
+;jpn:◆ウキー　ウキー　ウキキー↓
+;jpn:（いやはや　それにしても↓
+;jpn:　ここは　むしますよねえ）
+@KEYNP()
+』
+_SARUD_C_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_C_NO)
+@SAVE_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_TOOL_WET_TOWEL)
+@FALSE_GOTO(_SARUD_C_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「ぬれタオル」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｋｏｋｋｉｅ？　　Ｕｋｉｋｅ？@KEY()↓
+◆（Ｄｏ　ｙｏｕ　ｈａｖｅ　ｏｎｅ？@KEY()↓
+◆Ｔｈａｎｋ　ｙｏｕ！）
+@KEYNP()
+;jpn:◆ウキキー？　ウキキー！↓
+;jpn:（もってたんですかあ？↓
+;jpn:　ありがとうございますう！）
+;@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_4_B,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_4_D,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_C_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_C_AFTER;
+◆Ｕｋｒｉ　Ｕｋｒｉｋｉｅ@KEY()↓
+◆（Ｉｔ’ｓ　ｈｕｍｉｄ　ｈｅｒｅ．）
+;jpn:◆ウキー　ウキキー↓
+;jpn:（とにかく　ここは↓
+;jpn:　むしますよねえ）
+@KEYNP()
+』
+;▼部屋２（左のさる）▼▼▼▼▼▼▼▼（ピザ・ピザ（Ｌサイズ））
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_D;
+@CHKFGOTO(FLG_SARUDUNGEON_D_OK,_SARUD_D_AFTER)
+◆Ｕｋｋｋｉｎ　Ｕｋｉ　Ｕｋｉ　Ｕｋｋｉｎ@KEY()↓
+◆（Ｏｏｏｏｏｏｏｏ．．．，　Ｉ’ｍ　Ｍｏｎｋｏｎｎａ．@KEY()↓
+◆Ｉ　ｗａｎｎａ　ｅａｔ　ａ　ｔａｓｔｙ　@DSP_GOODS(GDS_FOOD_PIZZA)．）↓
+◆Ｕｋｋｙｏｕ　ｋｉｋｉｎｋｙｏｕ@KEY()↓
+　　（Ｉｆ　ｙｏｕ　ｈａｖｅ　ｓｏｍｅ，　ｗｉｌｌ　ｙｏｕ　ｇｉｖｅ　ｉｔ　ｔｏ　ｍｅ？）
+;◆Ｕｋｋｋｉｎ　Ｕｋｉ　Ｕｋｉ　Ｕｋｋｉｎ
+;	（Ｕｆｆｕｎ　Ｉ’ｍ　Ｓａｒｕｄｏｎｎａ．
+;　　Ｉ　ｗａｎｎａ　ｅａｔ　ｔａｓｔｙ　ｐｉｚｚａ．）
+;DAN:As you know, saru is monkey. So, 
+;Ｓａｒｕｄｏｎｎａ　ｉｓ　ａ　ｃｏｍｂｉｎｅｄ　ｗｏｒｄｓ　ｏｆ　Ｓａｒｕ　ａｎｄ　
+;Ｍａｄｏｎｎａ．
+;◆Ｕｋｋｉｎ　Ｕｕｎ？
+;	（Ｉｆ　ｙｏｕ　ｈａｖｅ　ｏｎｅ，　ｃａｎ　ｙｏｕ　ｇｉｖｅ　ｍｅ？）
+;jpn:◆ウッキン　ウキウキウッキン↓
+;jpn:（うっふん　わたし　サルドンナ。↓
+;jpn:　おいしいピザ　たべたいわん）@KEY()↓
+;jpn:◆ウッキン　ウ～ン？↓
+;jpn:（もってたら　ちょうだ～い？）↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_D_YES,_SARUD_D_NO)
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「ピザ・ピザ（Ｌサイズ）」以外を選ぶと〕
+_SARUD_D_NO;
+◆Ｕｋｉ　Ｕｋｉｅｋｋｉｋｉ！@KEY()↓
+◆（Ｙｏｕ　ｕｓｅｌｅｓｓ　ｍｏｎｋｅｙ　ｈａｔｅｒ！）
+;jpn:◆ウキ　ウキキキキ！↓
+;jpn:（この　さるでなし！）
+@KEYNP()
+』
+_SARUD_D_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_D_NO)
+@SAVE_REG()
+@GOSUB(_SARUD_Q_PIZZA)
+@FALSE_GOTO(_SARUD_D_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「ピザ・ピザ（Ｌサイズ）」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｋｋｉｎ　Ｕｋｋｉｋｅｅｎ@KEY()↓
+◆（Ｈａｈ，　Ｍｏｎｋｏｎｎａ’ｓ　ｈａｐｐｙ．）
+;jpn:◆ウッキ～ン　ウッキッキ～ン↓
+;jpn:（いっや～ん↓
+;jpn:　サルドンナ　うれし～ん）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_4_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_4_C,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_D_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_D_AFTER;
+◆Ｕｋｋｉｅｎ@KEY()↓
+◆（Ｏｏｏｏｏｏｏｏ．．．）
+;jpn:◆ウッキ～ン↓
+;jpn:（うっふ～ん）
+@KEYNP()
+』
+;▼部屋３（右のさる）▼▼▼▼▼▼▼▼（おとなのドリンク）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_E;
+@CHKFGOTO(FLG_SARUDUNGEON_E_OK,_SARUD_E_AFTER)
+◆Ｕｋｙａｋｋｉ　ＫｙａＫｙｅ@KEY()↓
+◆（Ｉ’ｄ　ｌｉｋｅ　ｔｏ　ｈａｖｅ　ａｎ　@DSP_GOODS(GDS_FOOD_DRINK_ADULT)．）@KEY()↓
+◆Ｋｙａ　Ｋｙａ？@KEY()↓
+◆（Ｃａｎ　ｙｏｕ　ｇｉｖｅ　ｍｅ　ｏｎｅ？）↓
+;jpn:◆キャッキャッ　キャキャッ↓
+;jpn:（のんでみたいな↓
+;jpn:　おとなのドリンク）@KEY()↓
+;jpn:◆キャッキャッ？↓
+;jpn:（ぼくに　ちょうだい？）↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_E_YES,_SARUD_E_NO)
+_SARUD_E_NO;
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「おとなのドリンク」以外を選ぶと〕
+◆ＫｙａＫｙａ　Ｋｙｏｋｙｏｋｙｏ？@KEY()↓
+◆（’Ｃａｕｓｅ　Ｉ’ｍ　ｓｔｉｌｌ　ａ　ｋｉｄ？）
+;jpn:◆キャキャッ　キョキョキョ？↓
+;jpn:（ぼくが　こどもだから？）
+@KEYNP()
+』
+_SARUD_E_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_E_NO)
+@SAVE_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_FOOD_DRINK_ADULT)
+@FALSE_GOTO(_SARUD_E_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「おとなのドリンク」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｇｕｌｐ，　ｇｕｌｐ．．．Ｂｌｉｅｋｋｉ！@KEY()↓
+◆（Ｇｕｌｐ，　ｇｕｌｐ．．．Ｂｌｉｅｋｋｉ！）
+;jpn:◆ぐびぐび@WI(20)‥‥キョケー！@WI(20)↓
+;jpn:（ぐびぐび@WI(20)‥‥キョケー！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_C_B,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_C_D,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_E_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_E_AFTER;
+◆Ｋｙａ　Ｋｙａ@KEY()↓
+◆（Ｋｙａ　Ｋｙａ）
+;jpn:◆キャッキャッ↓
+;jpn:（きゃっきゃっ）
+@KEYNP()
+』
+;▼部屋３（左のさる）▼▼▼▼▼▼▼▼（ピザ・ピザ（Ｌサイズ））
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_F;
+@CHKFGOTO(FLG_SARUDUNGEON_F_OK,_SARUD_F_AFTER)
+◆Ｉｆ　ｙｏｕ　ｈａｖｅ　ａ　@DSP_GOODS(GDS_FOOD_PIZZA)，　ｐｌｅａｓｅ　ｇｉｖｅ　ｍｅ　ｏｎｅ．@KEY()↓
+◆．．．Ｕｋｉｋｉ　Ｕｋｋｉｋｅ@KEY()↓
+◆（．．．Ｗｏｏｐｓ，　Ｉ　ｓｐｏｋｅ　ｔｏ　ｙｏｕ　ｉｎ　ｔｈｅ　ｈｕｍａｎ’ｓ　ｌａｎｇｕａｇｅ．）@KEY()↓
+◆Ｕｋｉｋｉ　Ｕｋｋｉｋｅ@KEY()↓
+◆（Ｉｆ　ｙｏｕ　ｈａｖｅ　ａ　@DSP_GOODS(GDS_FOOD_PIZZA)，　ｐｌｅａｓｅ　ｇｉｖｅ　ｍｅ　ｏｎｅ．）↓
+;jpn:◆ピザもってたら　ちょうだい。@KEY()↓
+;jpn:◆‥‥ウキッキ　ウキウキ　キキ↓
+;jpn:（‥‥しまった　にんげんの↓
+;jpn:　ことばで　しゃべっちゃった）@KEY()↓
+;jpn:◆ウキキ　ウッキッキー↓
+;jpn:（ピザもってたら　ちょうだい）↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_F_YES,_SARUD_F_NO)
+_SARUD_F_NO;
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「ピザ・ピザ（Ｌサイズ）」以外を選ぶと〕
+◆Ｋｙｅ．．．@KEY()↓
+◆（Ｄａｒｎ．．．）
+;jpn:◆キェッ‥‥↓
+;jpn:（ちぇっ‥‥）
+@KEYNP()
+』
+_SARUD_F_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_F_NO)
+@SAVE_REG()
+@GOSUB(_SARUD_Q_PIZZA)
+@FALSE_GOTO(_SARUD_F_NO)
+_SARUD_F_YES_B;
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「ピザ・ピザ（Ｌサイズ）」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｋｋｉ　Ｕｋｉｋｉｉ！@KEY()↓
+◆（Ｇｒｅａｔ，　ｐｉｚｚａ　ｔｉｍｅ！）
+;jpn:◆ウッキ　ウキッキー！↓
+;jpn:（やったぞ　ピザだ！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_C_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_C_C,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_F_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_F_AFTER;
+◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆．．．Ｋｉｅ　ｕｋｋｙａ@KEY()↓
+◆（．．．ｃｒａｐ，　Ｉ　ｕｓｅｄ　ｔｈｅ　ｈｕｍａｎ’ｓ　ｌａｎｇｕａｇｅ　ａｇａｉｎ．）
+;jpn:◆どうも。@KEY()↓
+;jpn:◆‥‥ウキッキ　ウキウキ　キキ↓
+;jpn:（‥‥しまった　にんげんの↓
+;jpn:　ことばで　しゃべっちゃった）
+@KEYNP()
+』
+;▼部屋５（右のさる）▼▼▼▼▼▼▼▼（ハンバーガー・ダブルバーガー）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_G;
+@CHKFGOTO(FLG_SARUDUNGEON_G_OK,_SARUD_G_AFTER)
+◆Ｕｎｋｉｋｉｅ！　　Ｕｕｋｉｕｋｉ！@KEY()↓
+◆（Ｉ　ｌｏｖｅ　ｈａｍｂｕｒｇｅｒｓ！）@KEY()↓
+◆Ｕｋｉｅ　Ｕｎｋｉｋｉｅ．．．@KEY()↓
+◆（Ｔｈｅ　ｍｏｎｋｅｙ　ｎｅｘｔ　ｔｏ　ｍｅ　ｌｏｖｅｓ　ｈａｍｂｕｒｇｅｒｓ　ｔｏｏ．．．）@KEY()↓
+◆Ｕｕｕ．　　Ｕｎｋｉｋｋｉｅ　Ｕｋｉ？@KEY()↓
+◆（Ｉｆ　ｙｏｕ　ｈａｖｅ　ａ　@DSP_GOODS(GDS_FOOD_HAMBURGER)，　ｗｉｌｌ　ｙｏｕ　ｐｌｅａｓｅ　ｇｉｖｅ　ｉｔ　ｔｏ　ｍｅ？）↓
+;jpn:◆ウンキッキー　ウーキウキ！↓
+;jpn:（ハンバーガー　だーいすき！）@KEY()↓
+;jpn:◆ウキー　ウンキッキー‥‥↓
+;jpn:（となりの　おさるも↓
+;jpn:　ハンバーガー　すきみたい‥‥）@KEY()↓
+;jpn:◆ウー　ウンキッキー　ウキ？↓
+;jpn:（ねえ　ハンバーガーもってたら↓
+;jpn:　ぼくだけに　ちょうだい？）@KEY()↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_G_YES,_SARUD_G_NO)
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「ハンバーガー・ダブルバーガー」以外を選ぶと〕
+_SARUD_G_NO;
+◆．．．@KEY()↓
+◆（．．．）
+;jpn:◆‥‥‥‥↓
+;jpn:（‥‥‥‥）
+@KEYNP()
+』
+_SARUD_G_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_G_NO)
+@SAVE_REG()
+@GOSUB(_SARUD_Q_HAMBERGER)
+@FALSE_GOTO(_SARUD_G_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「ハンバーガー・ダブルバーガー」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｎｋｉｋｉｅ！@KEY()↓
+◆（@DSP_GOODS(GDS_FOOD_HAMBURGER)！）
+;jpn:◆ウンキッキー！↓
+;jpn:（ハンバーガー！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_8_B,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_8_D,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_G_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_G_AFTER;
+◆Ｕｋｉ　Ｕｎｋｉｎｋｉ　Ｕｋｉｎｋｉｅ@KEY()↓
+◆（Ｔｒｕｔｈ　ｉｓ，　ｔｈｅ　ｍｏｎｋｅｙ　ｎｅｘｔ　ｔｏ　ｍｅ　ｉｓ　ｍｙ　ｔｗｉｎ　ｂｒｏｔｈｅｒ．）
+;jpn:◆ウキ　ウッキンキ　ウキンキー↓
+;jpn:（じつは　となりのおさるとは↓
+;jpn:　ふたごのかんけいなんだ）
+@KEYNP()
+』
+;▼部屋５（左のさる）▼▼▼▼▼▼▼▼（ハンバーガー・ダブルバーガー）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_H;
+@CHKFGOTO(FLG_SARUDUNGEON_H_OK,_SARUD_H_AFTER)
+◆Ｕｎｋｉｋｋｉｅ　Ｕｕｋｉ　Ｕｋｉ！@KEY()↓
+◆（Ｉ　ｌｏｖｅ　ｈａｍｂｕｒｇｅｒｓ！）@KEY()↓
+◆Ｕｋｉｅ　Ｕｎｋｉｋｉｅ．．．@KEY()↓
+◆（Ｔｈｅ　ｍｏｎｋｅｙ　ｎｅｘｔ　ｔｏ　ｍｅ　ｌｏｖｅｓ　ｈａｍｂｕｒｇｅｒｓ　ｔｏｏ．．．）@KEY()↓
+◆Ｕｕｕ．　　Ｕｎｋｉｋｋｉｅ　Ｕｋｉ？@KEY()↓
+◆（Ｉｆ　ｙｏｕ　ｈａｖｅ　ａ　@DSP_GOODS(GDS_FOOD_HAMBURGER)，　ｗｉｌｌ　ｙｏｕ　ｐｌｅａｓｅ　ｇｉｖｅ　ｉｔ　ｔｏ　ｍｅ？）↓
+;jpn:◆ウンキッキー　ウーキウキ！↓
+;jpn:（ハンバーガー　だーいすき！）@KEY()↓
+;jpn:◆ウキー　ウンキッキー‥‥↓
+;jpn:（となりの　おさるも↓
+;jpn:　ハンバーガー　すきみたい‥‥）@KEY()↓
+;jpn:◆ウー　ウンキッキー　ウキ？↓
+;jpn:（ねえ　ハンバーガーもってたら↓
+;jpn:　ぼくだけに　ちょうだい？）@KEY()↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_H_YES,_SARUD_H_NO)
+_SARUD_H_NO;
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「ハンバーガー・ダブルバーガー」以外を選ぶと〕
+◆．．．．．@KEY()↓
+◆（．．．．．）
+
+;jpn:◆‥‥‥‥↓
+;jpn:（‥‥‥‥）
+@KEYNP()
+』
+_SARUD_H_YES
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_H_NO)
+@SAVE_REG()
+@GOSUB(_SARUD_Q_HAMBERGER)
+@FALSE_GOTO(_SARUD_H_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「ハンバーガー・ダブルバーガー」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｎｋｉｋｋｉｅ！@KEY()↓
+◆（@DSP_GOODS(GDS_FOOD_HAMBURGER)！）
+
+;jpn:◆ウンキッキー！↓
+;jpn:（ハンバーガー！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_8_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_8_C,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_H_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_H_AFTER;
+◆Ｕｋｉ　Ｕｋｋｉｎｋｉ　Ｕｋｉｎｋｉｅ@KEY()↓
+◆（Ｔｈｅ　ｍｏｎｋｅｙ　ｎｅｘｔ　ｔｏ　ｍｅ　ｉｓ　ｍｙ　ｔｗｉｎ　ｂｒｏｔｈｅｒ．）
+
+;jpn:◆ウキ　ウッキンキ　ウキンキー↓
+;jpn:（じつは　となりのおさるとは↓
+;jpn:　ふたごのかんけいなんだ）
+@KEYNP()
+』
+;▼部屋６（右のさる）▼▼▼▼▼▼▼▼（キングバナナ）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_I;
+@CHKFGOTO(FLG_SARUDUNGEON_I_OK,_SARUD_I_AFTER)
+◆Ｕｋｉｅ　Ｕｋｉｋｉｋｉｅ@KEY()↓
+◆（Ｉ　ａｍ　Ｍａｎ　Ｋ．　Ｍａｎ．）@KEY()↓
+◆Ｕｋｉｅ　Ｕｋｉｋｉｋｉｅ@KEY()↓
+◆（Ｔｏ　ｍｅ　ｔｈｅ　ｍｏｓｔ　ｉｎｔｅｒｅｓｔｉｎｇ　ｔｈｉｎｇ　ｉｓ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_DRY_MEAT_SPECIAL)．）@KEY()↓
+◆Ｕｋｉｅ　Ｕｋｉｋｉｋｉｅ@KEY()↓
+◆（Ｗｈａｔ？@KEY()↓
+◆Ａｒｅ　ｙｏｕ　ｇｉｖｉｎｇ　ｍｅ　ａ　ｐｒｅｓｅｎｔ？）↓
+;jpn:◆ウキー　ウキキキー↓
+;jpn:（ぼく　やまださるおです）@KEY()↓
+;jpn:◆ウキー　ウキキキー↓
+;jpn:（いま　いちばんきょうみあるのは↓
+;jpn:　やっぱり　キングバナナです）@KEY()↓
+;jpn:◆ウキー　ウキキキー↓
+;jpn:（え？　もしかして　ぼくに↓
+;jpn:　プレゼントしてくれるとか？）@KEY()↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_I_YES,_SARUD_I_NO)
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「キングバナナ」以外を選ぶと〕
+_SARUD_I_NO;
+◆Ｕｋｉ．．．@KEY()↓
+◆（Ｔｉｇｈｔ　ｗａｄ．．．）
+
+;jpn:◆ウキ‥‥↓
+;jpn:（けち‥‥）
+@KEYNP()
+』
+_SARUD_I_YES
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_I_NO)
+@SAVE_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_TOOL_DRY_MEAT_SPECIAL)
+@FALSE_GOTO(_SARUD_I_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「キングバナナ」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｋｉｅ！@KEY()↓
+◆（Ｏｈ，　Ｉ’ｖｅ　ｄｉｅｄ　ａｎｄ　ｇｏｎｅ　ｔｏ　ｍｏｎｋｅｙ　ｈｅａｖｅｎ！）
+;jpn:◆ウキー！↓
+;jpn:（やりー！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_I_B,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_I_D,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_I_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_I_AFTER;
+◆Ｕｋｋｉ　Ｕｋｉｋｉｅ@KEY()↓
+◆（Ｉ　ａｍ　Ｍａｎ　Ｋ．　Ｍａｎ．）
+
+;jpn:◆ウキー　ウキキキー↓
+;jpn:（ぼく　やまださるおです）
+@KEYNP()
+』
+;▼部屋６（左のさる）▼▼▼▼▼▼▼▼（ハンバーガー・ダブルバーガー）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_J;
+@CHKFGOTO(FLG_SARUDUNGEON_J_OK,_SARUD_J_AFTER)
+◆Ｕｉｋｋｉｅ　Ｕｉｋｉ　Ｕｋｉ@KEY()↓
+◆（Ｌｅｔ’ｓ　ｇｅｔ　ｔｏ　ｔｈｅ　ｐｏｉｎｔ．@KEY()↓
+◆Ｇｉｖｅ　ｍｅ　ａ　@DSP_GOODS(GDS_FOOD_HAMBURGER)．）↓
+;jpn:◆ウィッキー　ウィキウィキ↓
+;jpn:（けつろんから　さきにいうと↓
+;jpn:　ハンバーガーください）@KEY()↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_J_YES,_SARUD_J_NO)
+_SARUD_J_NO;
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「ハンバーガー・ダブルバーガー」以外を選ぶと〕
+◆Ｕｉｋｉ　Ｕｉｋｋｉ@KEY()↓
+◆（Ｏｋ，　ｓｈｏｖｅ　ｏｆｆ　ｔｈｅｎ．）
+;jpn:◆ウィキ　ウィッキ↓
+;jpn:（じゃ　いいです）
+@KEYNP()
+』
+_SARUD_J_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_J_NO)
+@SAVE_REG()
+@GOSUB(_SARUD_Q_HAMBERGER)
+@FALSE_GOTO(_SARUD_J_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「ハンバーガー・ダブルバーガー」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｕｉｋｋｉ　Ｕｉｋｉ　Ｕｉｋｉ　Ｕｉｋｉ@KEY()↓
+◆（Ｉ’ｍ　ｖｅｒｙ　ｇｒａｔｅｆｕｌ　ｔｏ　ｙｏｕ．）
+;jpn:◆ウィキウィキ　ウィキウィキ↓
+;jpn:（かんしゃのきもちで↓
+;jpn:　いっぱいです）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_I_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_I_C,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_J_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_J_AFTER;
+◆Ｕｉｋｉ@KEY()↓
+◆（Ｐｌｅａｓｅ　ｔａｋｅ　ｃａｒｅ．）
+;jpn:◆ウィキ↓
+;jpn:（よろしくどうぞ）
+@KEYNP()
+』
+;▼部屋７（右のさる）▼▼▼▼▼▼▼▼（うみたてたまご）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_K;
+@CHKFGOTO(FLG_SARUDUNGEON_K_OK,_SARUD_K_AFTER)
+◆Ｍｅｏｗ　Ｍｅｏｗ　ｆｓｓ　ｆｓｓ　ｆｓｓｓｓ？@KEY()↓
+◆（Ｗｈａｔ　ｓｔｒａｎｇｅ　ｃｈａｔｔｅｒｉｎｇ　ｆｏｒ　ａ　ｍｏｎｋｅｙ．）@KEY()↓
+◆Ｃｏｏ　Ｃｏｏ　ｐｅｐｅｐｅ．@KEY()↓
+◆（Ｉｆ　Ｉ　ｅａｔ　ａ　@DSP_GOODS(GDS_FOOD_EGG_RAW)，　Ｉ　ｒｅｃｏｖｅｒ　ｓｏｍｅ　ｈｅａｌｔｈ．）@KEY()↓
+◆Ｃｒｏａｋ　ｃｒｏａｋ　ｂｒｅｅｅｅｅｅｐ？@KEY()↓
+◆（Ｉｆ　ｙｏｕ　ｈａｖｅ　ｏｎｅ，　ｃａｎ　Ｉ　ｈａｖｅ　ｏｎｅ？）↓
+;jpn:◆ニャーニャー　ホケキョ？↓
+;jpn:（さるのくせに　へんな↓
+;jpn:　なきごえでしょ？）@KEY()↓
+;jpn:◆クルルー　ポッポッポー↓
+;jpn:（うみたてたまご　のめば↓
+;jpn:　なおるんだけどな）@KEY()↓
+;jpn:◆ホーシーツクツク？↓
+;jpn:（もってるなら　くれませんか？）↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_K_YES,_SARUD_K_NO)
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、または「
+;うみたてたまご」以外を選ぶと〕
+_SARUD_K_NO;
+◆Ｂｏｗ　ｗｏｗ　ｒｕｆｆ　ｒｕｆｆ　ｂａｒｋ！@KEY()↓
+◆（Ｆｉｎｅ，　Ｉ’ｌｌ　ｊｕｓｔ　ｂｅ　ａ　ｗｅｉｒｄ　ｍｏｎｋｅｙ．）
+;jpn:◆パオーン　チューチュー↓
+;jpn:（いいんだ　へんなさるで）
+@KEYNP()
+@!
+_SARUD_K_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_K_NO)
+@SAVE_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_FOOD_EGG_RAW)
+@FALSE_GOTO(_SARUD_K_NO)
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「うみたてたまご」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｇｕｌｐ，　ｇｕｌｐ．．．Ｕｋｉｋｉ！@KEY()↓
+◆（Ｇｕｌｐ，　ｇｕｌｐ．．．Ｓｅｅ！）
+;DAN:Gokkun is sound of drinking.
+
+;jpn:◆ごっくん‥‥ウキキッ！↓
+;jpn:（ごっくん‥‥ほらねっ！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_E_B,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_E_D,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_K_OK)
+@!
+;Ｄ〔移動後に話すと〕
+_SARUD_K_AFTER;
+◆Ｕｋｉｋｉ！@KEY()↓
+◆（Ｍｏｎｋｅｙ’ｓ　ｔｒｕｅ　ｃｈａｔｔｅｒｉｎｇ！）
+
+;jpn:◆ウキキッ！↓
+;jpn:（さるほんらいの　なきごえ！）
+@KEYNP()
+』
+;▼部屋７（左のさる）▼▼▼▼▼▼▼▼（ものさし）
+;Ａ〔入口ふさいでる状態のさるに話すと〕
+MSG_SARUDUNGEON_L;
+@CHKFGOTO(FLG_SARUDUNGEON_L_OK,_SARUD_L_AFTER)
+◆Ｋｉｋｉ　ｋｉｋｋｅｋｉ！@KEY()↓
+◆（Ｏｈ，　Ｉ　ｗａｎｎａ　ｍｅａｓｕｒｅ　ｓｏｍｅｔｈｉｎｇ！）@KEY()↓
+◆Ｋｉｋｉ　ｋｉｋｕ　ｅｋｉ！@KEY()↓
+◆（Ｂｕｔ　Ｉ　ｄｏｎ’ｔ　ｈａｖｅ　ａ　@DSP_GOODS(GDS_TOOL_MONOSASHI)．．．）@KEY()↓
+◆Ｋｕｋｉ　ｋｅｉｋｕｋｉ？@KEY()↓
+◆（Ｄｏ　ｙｏｕ　ｈａｖｅ　ｏｎｅ　Ｉ　ｍａｙ　ｂｏｒｒｏｗ？）↓
+;jpn:◆キキ　キキキキキ！↓
+;jpn:（ああ　なにか↓
+;jpn:　はかりたいわ！）@KEY()↓
+;jpn:◆キキ　キキキキキ‥‥↓
+;jpn:（でも　ものさし↓
+;jpn:　もってないの‥‥）@KEY()↓
+;jpn:◆キキ　キキキキキ？↓
+;jpn:（あなた　もってたら↓
+;jpn:　わたしに　ちょうだい？）@KEY()↓
+@GOSUB(MSG_SUB_YESNO)
+@SELGOTO(_SARUD_L_YES,_SARUD_L_NO)
+_SARUD_L_NO;
+;Ｃ〔「いいえ」を選ぶか、「はい」でウインドウ開いた後にキャンセル、
+;または「ものさし」以外を選ぶと〕
+◆Ｋｉｋｉ　Ｋｉｋｕｒｅｋ　ｋｉ！@KEY()↓
+◆（Ｎｏ　ｍｅａｓｕｒｉｎｇ！）
+;jpn:◆キキ　キキキキキ！↓
+;jpn:（ああ　はかられたわ！）
+@KEYNP()
+』
+_SARUD_L_YES;
+@GOSUB(MSG_SEL_GOODS)
+@FALSE_GOTO(_SARUD_L_NO)
+@SAVE_REG()
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@EQ(GDS_TOOL_MONOSASHI)
+@FALSE_GOTO(_SARUD_L_NO)
+_SARUD_L_YES_2;
+@LOAD_REG()
+@GOODSOUT_PLAYER(0,0)
+;Ｂ〔「はい」で開いたウインドウ内の「ものさし」を選ぶと〕
+@SE(SE_se76_my_give)
+@WI(10)
+◆Ｋｉｋｋｉ　ｅｋｒｕｉｋｉ！@KEY()↓
+◆（Ｆｉｎａｌｌｙ，　Ｉ　ｃａｎ　ｍｅａｓｕｒｅ　ｍｙ　ｏｗｎ　ｔａｉｌ！）
+;jpn:◆キッキ　キキキキキキキ！↓
+;jpn:（これで　じぶんのしっぽが↓
+;jpn:　はかれるわ！）
+@KEYNP()
+@CLOSEALL()
+@HIDE_CHAR(PRSN_DEST_MONKEY_E_A,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_DEST_MONKEY_E_C,ANIM_PEOPLEWALK1_LIVE,OBJFX_SHOW_NONE)
+@SETF(FLG_SARUDUNGEON_L_OK)
+』
+;Ｄ〔移動後に話すと〕
+_SARUD_L_AFTER;
+◆Ｋｉｋｏｋｅ　Ｕｋｉｋｅ！@KEY()↓
+◆（Ｉ　ｃａｎ　ｍｅａｓｕｒｅ　ｈｉｓ　ｔａｉｌ　ｔｏｏ！）
+;jpn:◆キキキキキキキ！↓
+;jpn:（かれのしっぽも↓
+;jpn:　はかれるわ！）
+@KEYNP()
+』
+
+_SARUD_Q_HAMBERGER;
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@SET_REG(0)
+@EQ(GDS_FOOD_HAMBURGER)
+@TRUE_GOTO(_Q_HAMBERGER_END)
+@XCHG()
+@EQ(GDS_FOOD_HAMBURGER_DOUBLE)
+_Q_HAMBERGER_END;
+@!
+
+_SARUD_Q_PIZZA;
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@SET_REG(0)
+@EQ(GDS_FOOD_PIZZA)
+@TRUE_GOTO(_Q_PIZZA_END)
+@XCHG()
+@EQ(GDS_FOOD_PIZZA_LARGE)
+_Q_PIZZA_END;
+@!
+
+_SARUD_Q_SKIP;
+@GET_PLAYER_GOODS(0,0)
+@XCHG()
+@SET_REG(0)
+@EQ(GDS_FOOD_SKIP_SAND)
+@TRUE_GOTO(_Q_SKIP_END)
+@XCHG()
+@EQ(GDS_FOOD_SKIP_SAND_SP)
+_Q_SKIP_END;
+@!
+
+;▼部屋８（差し替え）▼▼▼▼▼▼▼▼
+;〔初めてはなすと〕
+MSG_SARUDUNGEON_M;
+@CHKFGOTO(FLG_SARUDUNGEON_M_OK,_SARUD_M_AFTER)
+◆Ｋｙａｋｙａｋｏ　Ｋｙａｋｉｅ@KEY()↓
+◆（Ｓｏｍｅｗｈｅｒｅ　ａｍｏｎｇｓｔ　ａｌｌ　ｔｈｅｓｅ　ｒｏｏｍｓ．．．）@KEY()↓
+◆Ｕｋｋｉｋｉ　Ｋｙａｋｏ　Ｋｙａｋｋｉ@KEY()↓
+◆（ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｏｂｔａｉｎ　Ｄｒａｇｏｎｉｔｅ．）@KEY()↓
+◆Ｕｋｙａｋｋｉ　Ｋｉｋｉｙａｋｏｋｅ？@KEY()↓
+◆（Ｄｏ　ｙｏｕ　ｔｈｉｎｋ　Ｄｒａｇｏｎｉｔｅ　ｉｓ　ｒｅａｌｌｙ　ｍａｄｅ　ｆｒｏｍ　ｄｒａｇｏｎｓ？）@KEY()↓
+◆ＫｙｏｋｅＫｙｏｋｅ　Ｕｋｙｏｋｉｅ@KEY()↓
+◆（Ｂｙ　ｔｈｅ　ｗａｙ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａ　@DSP_GOODS(GDS_FOOD_EGG_RAW)．）@KEY()↓
+◆Ｕｋｙａｋｙｏｋｙｏ　Ｋｉｅｋｙｏ@KEY()↓
+◆（Ｉｆ　ｙｏｕ　ｒｕｎ　ｏｕｔ，　ｊｕｓｔ　ｃｏｍｅ　ｂａｃｋ　ａｎｄ　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａｓ　ｍａｎｙ　ｅｇｇｓ　ａｓ　ｙｏｕ　ｗａｎｔ．）@KEY()↓
+;jpn:◆キャキャコ　キャキー↓
+;jpn:（たくさんあるへやの↓
+;jpn:　どこかで‥‥）@KEY()↓
+;jpn:◆ウッキッキ　キャコキャッキ↓
+;jpn:（ドラゴンパウダーが↓
+;jpn:　てにはいるらしいんだ）@KEY()↓
+;jpn:◆ウキャッキ　キキャコケ？↓
+;jpn:（ドラゴンパウダーって↓
+;jpn:　ドラゴンパの　ウダーかな？）@KEY()↓
+;jpn:◆キョケキョケ　ウキョキー↓
+;jpn:（それはそうと↓
+;jpn:　うみたてたまご　あげます）@KEY()↓
+;jpn:◆ウキャキョキョ　キーキョ↓
+;jpn:（なくなったら　またくれば↓
+;jpn:　なんどでも　あげちゃうよ）@KEY()
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_SARUD_M_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_FOOD_EGG_RAW)
+@GOSUB(MSG_SUB_GETGOODS)
+@SETF(FLG_SARUDUNGEON_M_OK)
+@KEYNP()
+』
+_SARUD_M_GOODSFULL;
+@KEY()↓
+◆Ｋｙｏｋｙｕｋｙｏ　ｋｙａｋｉｅ@KEY()↓
+◆（Ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ！）
+;jpn:◆キョキュキョ　キャキー↓
+;jpn:（もちものが　いっぱいだよ！）
+@KEYNP()
+@!
+_SARUD_M_AFTER;
+;〔２回目以降〕
+◆Ｕｋｙａｋｏ　ｋｙａｋｋｉ？@KEY()↓
+◆（Ｄｉｄ　ｙｏｕ　ｆｉｎｄ　ａ　@DSP_GOODS(GDS_EQUIP_PENDANT_HONOO)？）@KEY()↓
+◆Ｕｋｙａｋｋｉ　Ｋｏｋｅｋｙａｋｙａ？@KEY()↓
+◆（Ｏｈ　ｎｏ，　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｏ　ａｎｓｗｅｒ．）@KEY()↓
+◆ＫｙｏｋｅＫｙｏｋｅ　Ｕｋｙｏｋｉｅ@KEY()↓
+◆（Ｈｅｒｅ’ｓ　ａｎｏｔｈｅｒ　@DSP_GOODS(GDS_FOOD_EGG_RAW)．．．）@KEY()↓
+;jpn:◆ウッキコ　キャッキ？↓
+;jpn:（ほのおのペンダントは↓
+;jpn:　もう　みつけた？）@KEY()↓
+;jpn:◆ウキャッキ　コケキキャ？↓
+;jpn:（あ　こたえなくてもいいよ）@KEY()↓
+;jpn:◆キョケキョケ　ウキョキー↓
+;jpn:（それはそうと　うみたてたまご↓
+;jpn:　もうひとつ　あげます）@KEY()
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_SARUD_M_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_FOOD_EGG_RAW)
+@GOSUB(MSG_SUB_GETGOODS)
+@KEYNP()
+』
+;▼部屋１１（差し替え）▼▼▼▼▼▼▼▼（キングバナナくれる）
+;〔初めてはなすと〕
+MSG_SARUDUNGEON_N;
+@CHKFGOTO(FLG_SARUDUNGEON_N_OK,_SARUD_N_AFTER)
+◆Ｋｙｕｉｅ@KEY()↓
+◆（Ｏｎｅ　ｏｆ　ｍｙ　ｆｒｉｅｎｄｓ　ｃａｎ　ｕｓｅ　ｔｈｅ　ｔｅｌｅｐｏｒｔ．）@KEY()↓
+◆Ｋｙｕ？　　Ｋｙｉｋｋｉ？@KEY()↓
+◆（Ｗｈａｔ？@KEY()↓
+◆Ｙｏｕ’ｖｅ　ｎｅｖｅｒ　ｈｅａｒｄ　ｏｆ　ｉｔ？）@KEY()↓
+◆Ｋｙｕｋｙｕ　Ｋｙｕｉ@KEY()↓
+◆（Ｔｈｅｎ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　@DSP_GOODS(GDS_TOOL_DRY_MEAT_SPECIAL)．）@KEY()↓
+;jpn:◆キュイー↓
+;jpn:（わたしたちの　なかまのひとりは↓
+;jpn:　テレポートが　つかえるのよ）@KEY()↓
+;jpn:◆キュ？　キュイッキ？↓
+;jpn:（え？　そんなこと↓
+;jpn:　きいてないよって？）@KEY()↓
+;jpn:◆キュッキュ　キュイー↓
+;jpn:（それなら　ほら↓
+;jpn:　キングバナナ　あげるわ）@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_SARUD_N_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_DRY_MEAT_SPECIAL)
+◆Ｋｙｕ　Ｕｋｙｕｋｕｉ？@KEY()↓
+◆（Ｔｈａｔ　ｄｉｄｎ’ｔ　ｍａｋｅ　ｓｅｎｓｅ，　ｄｉｄ　ｉｔ？@KEY()↓
+◆Ｂｕｔ，　ａｎｙｗａｙ，　Ｉ’ｍ　ａｔｔｒａｃｔｉｖｅ，　ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ？）@KEY()
+;jpn:◆キュー　ウキュキュイ？↓
+;jpn:（わたしって　しりめつれつで↓
+;jpn:　なんかみりょくてきでしょ？）@KEY()
+@GOSUB(MSG_SUB_GETGOODS_S)
+@SETF(FLG_SARUDUNGEON_N_OK)
+@KEYNP()
+』
+_SARUD_N_GOODSFULL;
+◆Ｋｉｅｅ　Ｋｉｅｅ@KEY()↓
+◆（Ｙｏｕ　ｃａｎ’ｔ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ　ｉｔｅｍｓ．@KEY()↓
+◆Ｙｏｕ’ｖｅ　ｇｏｔ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．）
+;jpn:◆キ　キー
+;jpn:（もちものがいっぱいで↓
+;jpn:　それいじょう　もてないわね）
+@KEYNP()
+@!
+_SARUD_N_AFTER;
+;〔２回目以降〕
+◆Ｋｙｕ　Ｋｙｕｉｉ@KEY()↓
+◆（Ｗｅ’ｒｅ　ｂｏｒｎ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ．）@KEY()↓
+◆Ｋｙｕ？　　Ｋｙｕｉｋｋｉ？@KEY()↓
+◆（Ｗｈａｔ？@KEY()↓
+◆Ｙｏｕ　ｄｉｄｎ’ｔ　ｋｎｏｗ　ｔｈａｔ？）@KEY()↓
+◆Ｋｙｕｋｙｕ　Ｋｙｕｉ　ｋｙｕｋｙｕ@KEY()↓
+◆（Ｙｏｕ　ｇｕｙｓ　ｍｕｓｔ　ｂｅ　ｈａｒｄ　ｗｏｒｋｅｒｓ．）@KEY()↓
+◆Ｋｙｕ　ｕｋｙｕｋｙｏｉ？@KEY()↓
+◆（Ｉ’ｍ　ｎｏｔ　ｍａｋｉｎｇ　ｓｅｎｓｅ，　ａｍ　Ｉ？@KEY()↓
+◆Ｂｕｔ　Ｉ　ａｍ　ａｔｔｒａｃｔｉｖｅ，　ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ？）
+;jpn:◆キュキューイ↓
+;jpn:（わたしたちは↓
+;jpn:　さばくうまれなのよ）@KEY()↓
+;jpn:◆キュ？　キュイッキ？↓
+;jpn:（え？　そんなこと↓
+;jpn:　きいてないよって？）@KEY()↓
+;jpn:◆キュッキュ　キュイキュキュ↓
+;jpn:（じゃあ　あなたたちは↓
+;jpn:　きっと　がんばりやさんね）@KEY()↓
+;jpn:◆キュー　ウキュキュイ？↓
+;jpn:（わたしって　しりめつれつで↓
+;jpn:　なんかみりょくてきでしょ？）
+@KEYNP()
+』
+
+;▼部屋１３▼▼▼▼▼▼▼▼
+
+;〔初めてはなすと〕
+MSG_SARUDUNGEON_O;
+◆Ｕｋｉｋｋｉ　Ｒｕｋｉｋｋｉ@KEY()↓
+◆（Ｉ　ｌｏｖｅ　Ｔａｌａｈ　Ｒａｍａ　ｔｈｅ　ｍｏｓｔ．）@KEY()↓
+◆Ｗａａｋｉｋｋｉ　Ｈｏｉｋｉｋｋｉ@KEY()↓
+◆（Ｈｅ’ｓ　ａ　ｆｒｉｅｎｄ　ｏｆ　ｔｈｅ　ｍｏｎｋｅｙｓ．@KEY()↓
+◆Ｈｏｉｋｉｋｋｉ）．@KEY()↓
+◆．．．Ｕｋｉ　Ｕｋｉｕｋｉｕｋｙａ@KEY()↓
+◆（．．．Ｈｅｒｅ’ｓ　ａ　ｓｏｎｇ　Ｉ　ｍａｄｅ　ｕｐ　ｆｏｒ　Ｔａｌａｈ　Ｒａｍａ！）
+;jpn:◆ウーキッキ　ルーキッキ↓
+;jpn:（タライ・ジャブさま↓
+;jpn:　　いちばん　すきすき）@KEY()↓
+;jpn:◆ワーキッキ　ホイキッキ↓
+;jpn:（おさるの　みかただ↓
+;jpn:　ほいキッキ）@KEY()↓
+;jpn:◆‥‥ウキ　ウキウキウキャ！↓
+;jpn:（‥‥これ　ぼくがつくった↓
+;jpn:　タライ・ジャブさまのうた！）
+@KEYNP()
+』
+;@CHKFGOTO(FLG_SARUDUNGEON_O_OK,_SARUD_O_AFTER)
+;◆ウー‥‥↓
+;（このおくに‥‥）@KEY()↓
+;◆ウー　ウー‥‥↓
+;（しるさるぞ　しる↓
+;　いだいなるおかた‥‥）@KEY()↓
+;◆キャキャイ・キャキュ‥‥↓
+;（そのなも↓
+;　タライ・ジャブさまが‥‥）@KEY()↓
+;◆ウキョッ！↓
+;（いるよっ！）
+;@KEYNP()
+;@SETF(FLG_SARUDUNGEON_O_OK)
+;』
+;
+;〔２回目以降〕
+;_SARUD_O_AFTER;
+;◆ウー‥‥↓
+;（どうやら　そなたたち‥‥）@KEY()↓
+;◆ウー　ウー‥‥↓
+;（いだいなるおかた↓
+;　タライ・ジャブさまに‥‥）@KEY()↓
+;◆ウキョ　ウキョ　ウキョッ！↓
+;（きにいられたみたいねっ！）
+;@KEYNP()
+;』
+
+
+
+;▼部屋１４▼▼▼▼▼▼▼▼
+
+MSG_SARUDUNGEON_P;
+@CHKFGOTO(FLG_MASTER_TLPT,_SARUDUNGEON_P_LATER);同じセリフ
+@CHKFGOTO(FLG_ITEM_TOFU,_SARUDUNGEON_P_AFTER)
+◆Ｋｙａｋｙａｋｙａａ　Ｋｙａ@KEY()↓
+◆（Ｉ’ｖｅ　ｂｅｅｎ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．）
+;jpn:◆キャキャキャーキャ↓
+;jpn:（おまちしてました）
+@KEYNP()
+』
+
+_SARUDUNGEON_P_AFTER;テレポートを教えるサル
+◆Ｋｙａｋｙｅｋｙａｉ　ｋｙａ@KEY()↓
+◆（Ｉ’ｌｌ　ｔｅａｃｈ　ｙｏｕ　ｔｅｌｅｐｏｒｔａｔｉｏｎ．）@KEY()↓
+◆Ｋｙａｋｙａｋｙａ@KEY()↓
+◆（Ｌｅｔ’ｓ　ｇｏ　ｏｕｔｓｉｄｅ．）
+;jpn:◆キャキャキャーキャ↓
+;jpn:（テレポーテーションを↓
+;jpn:　おしえます）@KEY()↓
+;jpn:◆キャキャキャ↓
+;（さあ　ひろいところに↓;＄
+;jpn:（さあ　ちじょうに↓
+;jpn:　でましょう）
+@KEYNP()
+@CLOSEALL()
+@REMOVE_CHAR( PRSN_DEST_MONKEY_M_A, ANIM_LEAVE_SARUSENSEI )
+@WAITSYS()
+@SETF(FLG_DSRT_INFO_TLPT)	;テレポート情報を聞いた
+@SETF(FLG_DSRT_TSARU_DISAPPEAR)
+@SETF(FLG_DSRT_TSARU_A_APPEAR);サルセンセイＡ表示
+』
+_SARUDUNGEON_P_LATER;＄テレポート修得後のサル先生
+◆Ｋｙａｋｙａ　ｋｙｅｋｙｉ？@KEY()↓
+◆（Ｓｏ．．．ｈｏｗ　’ｖｅ　ｙｏｕ　ｂｅｅｎ？）
+;jpn:◆キャキャキャーキャ？↓
+;jpn:（おげんきでしたか？）
+@KEYNP()
+』
+
+MSG_EVT_LEAD_SARUSENSEI;
+◆Ｈｉｋｉｋｋｉ．@KEY()↓
+◆（Ｆｏｌｌｏｗ　ｍｅ，　ｌｉｋｅ　ｔｈｉｓ　ｗａｙ．）
+;jpn:◆ホイキッキ↓
+;jpn:（こっちだ）@KEYNP
+@CLOSEALL()
+@REMOVE_CHAR( PRSN_DEST_FIELD_S, ANIM_LEAD_SARUSENSEI )
+』
+
+MSG_EVT_READY_SARUSENSEI;
+;誘導してきたサル先生Ａを、サル先生Ｂと交換
+@HIDE_CHAR( PRSN_DEST_FIELD_S,OBJFX_HIDE_NONE)
+@MOVE_CHAR( PRSN_DEST_FIELD_T, ANIM_MAPOBJSTILL, OBJFX_SHOW_NONE )
+@RESF( FLG_DSRT_TSARU_A_APPEAR)
+@SETF( FLG_DSRT_TSARU_B_APPEAR);サル先生Ｂ表示
+@WI(1)	;PRSN_DEST_FIELD_サル先生Ｂ の登録待ち(念のため)
+@GET_CHAR_DIR( PRSN_DEST_FIELD_T, 1, PC_ALL )
+@SET_CHAR_DIR( PRSN_DEST_FIELD_T, 0 )	;サル先生Ｂをネスの方に向かせる
+』
+
+MSG_EVT_LESSON_TELEPORT;
+@CHKFGOTO(FLG_MASTER_TLPT,_EVT_LESSON_TELEPORT_BYE)
+@SET_LOOPREG(PC_NESS)
+@GOSUB(MSG_SUB_Q_DEAD)
+@TRUE_GOTO(_DSRT_SARUSENSEI_DEAD);ネス死んでたらダメ
+@CHKFGOTO( FLG_TEMP_1, MSG_EVT_SARUSENSEI_TRYAGAIN )	;再トライ用
+_EVT_SARUSENSEI_TRYAGAIN_YES;
+◆Ｋｙａｋｙａ　Ｋｙｏｋｙｏ@KEY()↓
+◆（Ｏｋ，　Ｉ’ｌｌ　ｄｏ　ａ　ｔｅａｃｈｅｒ’ｓ　ｄｅｍｏｎｓｔｒａｔｉｏｎ．）@KEY()↓
+◆Ｋｙａｋｙａｋｙａ　Ｋｙａｋｋｙａ@KEY()↓
+◆（Ｉｆ　ｙｏｕ　ｃａｎ　ｌｅａｒｎ　ｔｈｉｓ，　ｙｏｕ　ｃａｎ　ｇｏ　ａｎｙｗｈｅｒｅ　ｙｏｕ’ｖｅ　ｂｅｅｎ　ｐｒｅｖｉｏｕｓｌｙ．）@KEY()↓
+◆Ｋｙａｋｋｙａｋｉ　ｋｉｋｉ@KEY()↓
+◆（Ｙｏｕ　ｃａｎ　ｇｏ　ｔｈｅｒｅ　ｉｎｓｔａｎｔｌｙ．）@KEY()↓
+◆Ｋｙａｋｋｉ　Ｋｙａｋｉ@KEY()↓
+◆（Ｔｈｉｓ　ｓｋｉｌｌ　ｃａｎ’ｔ　ｂｅ　ｕｓｅｄ　ｉｎ　ａ　ｒｏｏｍ　ｏｒ　ｕｎｄｅｒｇｒｏｕｎｄ，　ｔｈｏｕｇｈ．）@KEY()
+;jpn:◆キャッキャッ　キョキョ↓
+;jpn:（じゃあ　せんせいが　まず↓
+;jpn:　みほんをみせよう）@KEY()↓
+;jpn:◆キャキャキャ　キャッキャ↓
+;jpn:（これが　できるようになると↓
+;jpn:　いちど　いったところなら）@KEY()↓
+;jpn:◆キャキャキ　キキ↓
+;jpn:（あっ　というまに↓
+;jpn:　いけるようになります）@KEY()↓
+;jpn:◆キャッキ　キャキ↓
+;jpn:（ちかや　へやのなかでは↓
+;jpn:　このちからは　つかえません）@KEY()↓;＄
+@CLOSEALL()
+;お手本見せるアニメ
+@REMOVE_CHAR( PRSN_DEST_FIELD_T, ANIM_TELEPORT_SARUSENSEI )
+@WAITSYS()
+@COLD_CHAR( PRSN_DEST_FIELD_T )
+@BGMSTART( 0, BGM_telep )	;テレポートＢＧＭ始め
+@FRESH_CHAR( PRSN_DEST_FIELD_T )
+@WAITSYS()
+@COLD_CHAR( PRSN_DEST_FIELD_T )
+@MUSISTART()			;テレポートＢＧＭ終わり
+@FRESH_CHAR( PRSN_DEST_FIELD_T )
+@WAITSYS()
+@REMOVE_CHAR( PRSN_DEST_FIELD_T, ANIM_MAPOBJSTILL )
+@GET_CHAR_DIR( PRSN_DEST_FIELD_T, 1, PC_ALL )	;組
+@SET_CHAR_DIR( PRSN_DEST_FIELD_T, 0 )		;み
+@WI( 30 )
+@OPEN(1)
+◆Ｕｋｋｉｅ@KEY()↓
+◆（Ｉ　ｗｅｎｔ　ｔｏ　Ｆｏｕｒｓｉｄｅ　ａｎｄ　ｒｅｔｕｒｎｅｄ．）@KEY()↓
+◆Ｋｙａａｋｙａｋｋｙａ@KEY()↓
+◆（Ｉ　ｓｈｏｗｅｄ　ｙｏｕ　ｔｈｅ　ｂａｓｉｃ，　ｓｔｒａｉｇｈｔ　ｃｏｕｒｓｅ，@KEY()↓
+◆ｂｕｔ　ｙｏｕ　ｃａｎ　ａｌｓｏ　ｂｕｉｌｄ　ｕｐ　ｅｎｏｕｇｈ　ｓｐｅｅｄ　ｗｈｉｌｅ　ｔｕｒｎｉｎｇ，　ｉｆ　ｙｏｕ　ｈａｖｅ　ｅｎｏｕｇｈ　ｒｏｏｍ．）@KEY()↓
+◆Ｕｋｋｉｋｉｅ@KEY()↓
+◆（Ｏｋ！@WI(15)↓
+　　Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｔｒｙ　ｉｔ，　ｙｏｕｎｇ　ｍａｎ！）
+@KEYNP()
+;jpn:◆ウッキー↓
+;jpn:（フォーサイドのまちにいって↓
+;jpn:　すぐに　もどってきました）@KEY()↓;＄
+;jpn:◆キャーキャッキャ↓
+;jpn:（せんせいは　きほんてきな↓
+;jpn:　まっすぐコースで　やったけれど@KEY()↓
+;jpn:◆きょりさえあれば↓
+;jpn:　まがっても　できるからね）@KEY()↓
+;jpn:◆ウッキッキー↓
+;jpn:（さあ！@WI(15)　やってみなさい。↓
+;jpn:　わかものよ！）@KEYNP
+@CLOSEALL()
+@SETF( FLG_TEMP_1 )	;再トライ用
+;この後ネスの強制テレポート開始
+』
+
+MSG_EVT_SARUSENSEI_TRYAGAIN;
+@OPEN(1)
+◆Ｋｙａｋｙａｋｙａｋｙａ@KEY()↓
+◆（Ｔｒｙ　ａｇａｉｎ　ｂｙ　ｂｅｌｉｅｖｉｎｇ　ｉｎ　ｔｈｅ　ｍｏｎｋｅｙ　ｔｅａｃｈｅｒ．）↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆キャーキャキャキャ↓
+;jpn:（もういちどトライしてみようよ。↓
+;jpn:　サルのせんせいを　しんじて）@KEY()↓
+;jpn:　　<はい>　　<いいえ>
+@DSP_ITEM(2)
+@SELGOTO( _EVT_SARUSENSEI_TRYAGAIN_YES, _EVT_SARUSENSEI_TRYAGAIN_NO )
+
+_EVT_SARUSENSEI_TRYAGAIN_NO;
+◆Ｋｙａｋｙａｋｙａ@KEY()↓
+◆（Ｙｏｕ　ｄｏｎ’ｔ　ｌｉｋｅ　ｔｈｅ　ｍｏｎｋｅｙ　ｔｅａｃｈｅｒ？．．．）
+@KEYNP()
+;jpn:◆キャッキャキャ↓
+;jpn:（やっぱり↓
+;jpn:　サルのせんせいじゃ　いやか‥‥）@KEYNP()
+@CLOSEALL()
+』
+_DSRT_SARUSENSEI_DEAD;
+◆ｕＫＩ？@KEY()↓
+◆（Ｗｈａｔ　ｈａｐｐｅｎｅｄ　ｔｏ　ｔｈｅ　ｂｏｙ　ｗｉｔｈ　ｔｈｅ　ｒｅｄ　ｃａｐ？@KEY()↓
+◆Ｉ　ｗａｓ　ｏｎｌｙ　ｇｏｉｎｇ　ｔｏ　ｔｅａｃｈ　ｈｉｍ　ｓｏｍｅｔｈｉｎｇ．）@KEY()↓
+◆Ｋｙａｋｙｏ@KEY()↓
+◆（Ｈｅ’ｓ　ｎｏｔ　ｈｅｒｅ．．．）
+;jpn:◆ウキ？↓
+;jpn:（あれ？　ともだちの↓
+;jpn:　あかいぼうしのコに‥‥だけ）@KEY()↓
+;jpn:◆キャッキョ↓
+;jpn:（おしえようと　おもったんだけど↓
+;jpn:　‥‥いないのか）
+@KEYNP()
+』
+
+MSG_EVT_MASTER_TLPT;
+@OPEN(1)
+◆@DSP_NAME(PC_NESS)　ｌｅａｒｎｅｄ　ｈｏｗ　ｔｏ　ｕｓｅ　ＰＳＩ　Ｔｅｌｅｐｏｒｔａｔｉｏｎ．
+@KEYNP()
+;jpn:◆（@DSP_STS(STS_PC_NAME_NES)は↓
+;jpn:　ＰＳＩテレポーテーションαが↓
+;jpn:　つかえるようになった）@KEYNP
+@CLOSEALL()
+@ADD_PSI( PC_NESS, 1 )
+@SETF( FLG_MASTER_TLPT )
+;サル先生Ｂをネスのいる方に向かせる
+@GET_CHAR_DIR( PRSN_DEST_FIELD_T, 1, PC_ALL )	;植物
+@SET_CHAR_DIR( PRSN_DEST_FIELD_T, 0 )		;物語
+@SHOW_MANPU_CHAR( PRSN_DEST_FIELD_T, MANPU_BIKKURI )
+@WI(60)
+@HIDE_MANPU_CHAR( PRSN_DEST_FIELD_T )
+;サル先生Ｂを、ネスに近寄るアニメと交換
+@REMOVE_CHAR( PRSN_DEST_FIELD_T, ANIM_APPROACH_CONT_SCRIPT )
+@WAITSYS()
+@OPEN(1)
+◆Ｋｙａｈｏ！@KEY()↓
+◆（Ｇｒｅａｔ！↓
+　　Ｏｋａｙ，　ｔｈｅ　ｔｅａｃｈｅｒ　ｉｓ　ｇｏｉｎｇ　ｈｏｍｅ　ｎｏｗ．）
+@KEYNP()
+;jpn:◆キャッホー！
+;jpn:（すごいぞ！@KEY()↓
+;jpn:◆それじゃ　せんせいは↓
+;jpn:　かえるから）@KEYNP
+@CLOSEALL()
+;サル先生Ｂをジャブ穴に帰す
+@REMOVE_CHAR( PRSN_DEST_FIELD_T, ANIM_RETURN_SARUSENSEI )
+@RESF( FLG_TEMP_1 )
+@RESF( FLG_DSRT_TSARU_B_APPEAR )	;サル先生Ｂを表示しないように
+@RESF( FLG_DSRT_TSARU_DISAPPEAR )	;タライジャブの部屋にサルを表示する
+』
+_EVT_LESSON_TELEPORT_BYE;去るサル先生
+◆Ｋｙａｉ　Ｋｙａｉ@KEY()↓
+◆（Ｂｙｅ　ｂｙｅ．）
+@KEYNP()
+;jpn:◆キャイキャイ↓
+;jpn:（バイバイ@WI(20)　ね）@KEYNP()
+』
+;-------------------------------------------------
+
+
+;▼入口近くにいるさる（地上）▼▼▼▼▼▼▼▼
+
+MSG_DSRT_MONKEY_SARUDUNGEON;
+◆Ｋｕｋｋｕｋｕｋｋｕ@KEY()↓
+◆（Ｗｅｌｃｏｍｅ！）@KEY()↓
+◆Ｋｉｋｉｋｉｙｋｋｉ@KEY()↓
+◆（Ｏｕｒ　ｐａｒａｄｉｓｅ　ｅｘｉｓｔｓ　ｂｅｎｅａｔｈ　ｔｈａｔ　ｈｏｌｅ．）@KEY()↓
+◆Ｋｕｙｋｋｕ　ｋｉｋｋｉ．．．@KEY()↓
+◆（Ｔａｌａｈ　Ｒａｍａ　ｉｓ　ｇｒｅａｔ　ａｎｄ　ｋｉｎｄ．．．）@KEY()↓
+◆Ｋｉｋｋｉ　Ｋｕｙｋｋｕ@KEY()↓
+◆（ａｎｄ　ｈｅ　ｋｎｏｗｓ　ｅｖｅｒｙｔｈｉｎｇ，　Ｔａｌａｈ　Ｒａｍａ　ｄｏｅｓ．．．）@KEY()↓
+◆Ｋｉｋｋｕ　Ｋｕｅｋｋｉ@KEY()↓
+◆（Ｈｅ　ｍａｄｅ　ｕｓ　ｔｈｅ　ｕｎｄｅｒｇｒｏｕｎｄ　ｒｏｏｍｓ．．．）
+@KEYNP()
+;jpn:◆クッククック↓
+;jpn:（ようこそ　ここへ）@KEY()↓
+;jpn:◆キッキキッキ↓
+;jpn:（そこの　あなのしたは↓
+;jpn:　ぼくらの　らくえん）@KEY()↓
+;jpn:◆クックキッキ‥‥↓
+;jpn:（いだいで　やさしい↓
+;jpn:　タライ・ジャブさまが‥‥）@KEY()↓
+;jpn:◆キッキクック‥‥↓
+;jpn:（なんでも　しっている↓
+;jpn:　タライ・ジャブさまが‥‥）@KEY()↓
+;jpn:◆キッククッキ↓
+;jpn:（ぼくらのために　つくって↓
+;jpn:　くれた　ちかしつなのです）@KEYNP()
+』
+
+
+
+;▲以上です▲▲▲▲▲▲▲▲▲▲▲▲▲
+;-------------------------------------------------
+
+;以下増補
+
+MSG_DSRT_MONKEY_TJAB;
+;断食のタライジャブ脇のサル
+◆Ｋｙａｋｋｙｅｋｙａｅｋｙａ　Ｋｙｉｋｋｙａ@KEY()↓
+◆（Ｔａｌａｈ　Ｒａｍａ　ｉｓ　ｎｏｗ　ｆａｓｔｉｎｇ　ａｎｄ@KEY()↓
+◆Ｋｙａｋｋｙａｋｙｅｋｙａｋｙａ@KEY()↓
+◆ｐｒａｃｔｉｃｉｎｇ　ｓｉｌｅｎｔ　ｍｅｄｉｔａｉｏｎ，@KEY()↓
+◆ｈｅ　ｉｓ　ａｌｓｏ　ａｂｓｔａｉｎｉｎｇ　ｆｒｏｍ　ａｎｙｔｈｉｎｇ　ｔｈａｔ　ｗｏｕｌｄ　ｍａｋｅ　ｈｉｍ　ｓｉｃｋ　ｏｒ　ｓｍｅｌｌｙ　ｔｏｏ．）@KEY()↓
+◆Ｋｙａｐｉ　Ｋｙａｐｉ@KEY()↓
+◆（Ｐｌｅａｓｅ　ｄｏｎ’ｔ　ｂｏｔｈｅｒ　ｈｉｍ．）
+@KEYNP()
+;jpn:◆キャッキャキャ　キャッキャッ↓
+;jpn:（タライ・ジャブさまは↓
+;jpn:　ただいま　だんじきと）@KEY()↓
+;jpn:◆キャキャキャキャキャ↓
+;jpn:（むごんのぎょうと↓
+;jpn:　きんしゅ　きんえんを）@KEY()↓
+;jpn:◆キャピキャピ↓
+;jpn:（なさっておられる。↓
+;jpn:　じゃまを　なさいませんように）@KEYNP()
+』
+
+MSG_DSRT_TJAB;
+;タライジャブは無言
+◆．．．．．
+
+;jpn:◆‥‥‥。
+@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_DSRT_CHECK_SYOZI;
+◆（Ｄｕｓｔｙ　Ｄｕｎｅｓ　Ｈｅａｄｑｕａｒｔｅｒｓ　ｆｏｒ　ｆｉｎｄｉｎｇ　ｂｕｒｉｅｄ　ｇｏｌｄ．）
+@KEYNP()
+;jpn:◆（ドコドコさばく↓
+;jpn:　まいぞうきん　はっくつほんぶ）@KEYNP()
+』
+;-------------------------------------------------
+
+MSG_CHECK_DESERT_SIGN;＄
+◆（Ｅａｓｔ　ｔｏ　Ｆｏｕｒｓｉｄｅ．）
+@KEYNP()
+;jpn:◆（ひがし↓
+;jpn:　　フォーサイドほうめん）@KEYNP()
+』
+;-------------------------------------------------

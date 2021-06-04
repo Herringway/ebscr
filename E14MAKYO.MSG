@@ -1,0 +1,659 @@
+;-----------------------------------------------
+
+;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Person:テレポートザル
+;@Figure:さる
+;@AppearanceKey:0
+;@ActionScript:◆テレポート失敗
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_MONKEY_TELEPORT
+MSG_MAKYO_MONKEY_TELEPORT;テレポートを覚えるサル
+@CHKFGOTO(FLG_ITEM_MONKY_MIND,_MAKYO_MONKEY_TELEPORT_LATER)
+@CHKFGOTO(FLG_TEMP_9,_MAKYO_T_MONKEY_TMP)
+◆Ｉ　ｈｅａｒｄ　ｍｏｎｋｅｙｓ　ｌｉｖｉｎｇ　ｉｎ　ｓｏｍｅ　ｄｅｓｅｒｔ　ｃａｎ　ｔｅｌｅｐｏｒｔ．@KEY()↓
+◆Ｏｈ，　ｙｏｕ　ｌｅａｒｎｅｄ　ｈｏｗ　ｔｏ　ｔｅｌｅｐｏｒｔ　ｆｒｏｍ　ｔｈｅ　ｍｏｎｋｅｙｓ？@KEY()↓
+;jpn:◆どこかの　さばくのサルは↓
+;jpn:　テレポーテーションとかが↓
+;jpn:　できるんだってね。@KEY()↓
+;jpn:◆えっ　きみたち↓
+;jpn:　おそわってきたんだって？！↓
+@WI(60)↓
+◆．．．Ｉ　ｗａｎｎａ　ｔｒｙ！@KEY()↓
+◆Ｗｉｌｌ　ｙｏｕ　ｔｅｌｌ　ｍｅ　ｈｏｗ　ｔｏ　ｄｏ　ｉｔ？！↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆‥‥ぼくも　やってみたい。@KEY()↓
+;jpn:◆お　おしえてくれないか！↓
+;jpn:　　<おしえる>　　<おしえない>
+@DSP_ITEM(2)
+@SELGOTO(_MAKYO_MONKEY_TELEPORT_YES,_MAKYO_MONKEY_TELEPORT_NO)
+_MAKYO_MONKEY_TELEPORT_NO;
+◆Ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ　ｈａｖｅ　ａ　ｍｏｎｋｅｙ　ｆｏｒ　ａ　ｓｔｕｄｅｎｔ，　ｄｏ　ｙｏｕ？
+@KEYNP()
+;jpn:◆サルのせいとじゃ　いやか‥‥。@KEYNP()
+』
+_MAKYO_MONKEY_TELEPORT_YES;
+@CLOSEALL()
+@WI(30)
+@OPEN(1)
+◆Ｏｋａｙ．．．@KEY()↓
+◆Ｉ’ｌｌ　ｔｒｙ　ｉｔ．@KEY()
+;jpn:◆よ　よし。やってみるよ！@KEY()
+@CLOSEALL()
+@REMOVE_CHAR(PRSN_MKYO_FIELD_A,ANIM_TELEPORT_FAIL)
+@WAITSYS()
+@COLD_CHAR(PRSN_MKYO_FIELD_A)
+@WI(60)					;間
+@FRESH_CHAR(PRSN_MKYO_FIELD_A)
+@BGMSTART(0,BGM_telep)			;テレポート音
+@WAITSYS()
+@HIDE_CHAR(PRSN_MKYO_FIELD_A,OBJFX_HIDE_NONE)
+@MOVE_GOM_CHAR(GOM_PLAYER_KUROKOGE,ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE)
+@BGMSTART(0,BGM_expu)			;失敗音
+@WI(120)
+@MUSISTART()
+@HIDE_GOM_CHAR(GOM_PLAYER_KUROKOGE,OBJFX_HIDE_NONE)
+@MOVE_CHAR(PRSN_MKYO_FIELD_A,ANIM_TELEPORT_SUCCESS,OBJFX_SHOW_NONE)
+@WAITSYS()
+@COLD_CHAR(PRSN_MKYO_FIELD_A)
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+@GET_CHAR_DIR(PRSN_MKYO_FIELD_A,1,0);[ 先頭の方を向かせる ]
+@SET_CHAR_DIR(PRSN_MKYO_FIELD_A,0)
+@OPEN(1)
+;失敗後
+◆Ｉ’ｌｌ　ｎｅｖｅｒ　ｇｉｖｅ　ｕｐ！@KEY()↓
+◆Ｉ　ｗａｎｎａ　ｔｒｙ　ａｇａｉｎ．@KEY()
+;jpn:◆ま　まけないぞ！↓
+;jpn:　もう１かい　やってみるよ。@KEY()
+@CLOSEALL()
+@FRESH_CHAR(PRSN_MKYO_FIELD_A)
+@WAITSYS()
+@BGMSTART(0,BGM_telep)			;テレポート音
+@WAITSYS()
+@MUSISTART()
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+@GET_CHAR_DIR(PRSN_MKYO_FIELD_A,1,0);[ 先頭の方を向かせる ]
+@SET_CHAR_DIR(PRSN_MKYO_FIELD_A,0)
+@OPEN(1)
+;成功後
+◆Ｉ　ｄｉｄ　ｉｔ！@KEY()↓
+◆Ｄｉｄ　ｙｏｕ　ｓｅｅ　ｍｅ？@KEY()↓
+◆Ｔｈａｔ’ｓ　ａｗｅｓｏｍｅ！@KEY()↓
+;jpn:◆で　できたよね。↓
+;jpn:　み　みてたよね。うれしいなぁ。@KEY()↓
+_MAKYO_T_MONKEY_TMP;
+◆Ｈｅｒｅ’ｓ　ａ　ｓｍａｌｌ　ｇｉｆｔ　ｔｏ　ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+;jpn:◆おれいに　ほんのきもちだけど↓
+;jpn:　プレゼントを　あげるよ。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+@FALSE_GOTO(_MAKYO_T_MONKEY_GOODSFULL)
+@GOODSIN_PLAYER(0,GDS_TOOL_MONKY_MIND)
+@SAVE_GLOBAL_REG()
+@GOSUB(MSG_SUB_GETGOODS)
+@SETF(FLG_ITEM_MONKY_MIND)
+@CLRF(FLG_TEMP_9)
+@KEYNP()
+』
+_MAKYO_T_MONKEY_GOODSFULL;
+◆Ａｒｅ　ｙｏｕ　ｓｕｒｅ　ｙｏｕ　ｃａｎ’ｔ　ａｃｃｅｐｔ　ｔｈｉｓ？@KEY()↓
+◆．．．Ｉ　ｋｎｏｗ　ｙｏｕ　ｈａｖｅ　ｎｏ　ｒｏｏｍ，　ｓｏ　ｙｏｕ　ｃａｎ’ｔ　ｃａｒｒｙ　ｉｔ，　ｂｕｔ．．．@KEY()↓
+◆．．．Ｉ　ｗａｎｔｅｄ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ｔｈｅ　”@DSP_GOODS(GDS_TOOL_MONKY_MIND)．”
+@KEYNP()
+;jpn:◆もてないの？@WI(20)↓
+;jpn:　‥‥にもつがいっぱいだと↓
+;jpn:　もてないのか。@KEY()↓
+;jpn:◆‥‥サルのきもちなのに。@KEYNP()
+@SETF(FLG_TEMP_9)
+』
+_MAKYO_MONKEY_TELEPORT_LATER;
+◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ｔｈｅ　”@DSP_GOODS(GDS_TOOL_MONKY_MIND)”？
+@KEYNP()
+;jpn:◆もってるかーい？！↓
+;jpn:　サルのきもち。@KEYNP()
+』
+;-------------------------------------------------
+;@CHKFGOTO(FLG_TEMP_1,MSG_MAKYO_MONKEY_TRYAGAIN)
+;◆あー　だれかに　テレポートが↓
+;　おしえてあげたい！@KEY()↓
+;◆だれか　テレポートを↓
+;　やってみたいやつ　いないかなぁ。@KEY()↓
+;@CHKFGOTO(FLG_MASTER_TLPT,_MAKYO_MONKEY_TELEPORT_AFTER)
+;@SET_LOOPREG(PC_NESS)
+;@GOSUB(MSG_SUB_Q_DEAD)
+;@TRUE_GOTO(_MOKYO_MONKEY_TLPT_NESS_DEAD)
+;◆サルのせんせいじゃ　いやかな。↓
+;　　<いや>　　<そんなことはない>
+;@DSP_ITEM(2)
+;@SELGOTO(_MAKYO_MONKEY_TELEPORT_NO,_MAKYO_MONKEY_TELEPORT_YES)
+;_MAKYO_MONKEY_TELEPORT_NO;
+;◆はずかしがらないで↓
+;　さっそくやろう！@KEY()
+;@GOTO(MSG_EVT_93_TELEPORT)
+;
+;_MAKYO_MONKEY_TELEPORT_YES;
+;◆さっそくやろう！@KEY()
+;@GOTO(MSG_EVT_93_TELEPORT)
+;
+;_MAKYO_MONKEY_TELEPORT_AFTER;
+;◆なーんだ。↓
+;　もう　しってるのかぁ。@KEYNP()
+;』
+;
+;_MOKYO_MONKEY_TLPT_NESS_DEAD;
+;◆あれ？　ともだちの↓
+;　あかいぼうしのコに↓
+;　おしえようと　おもったんだけど@KEY()↓
+;◆‥‥いないのか。@KEYNP()
+;』
+;
+;
+;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Person:たかのめ情報ザル
+;@Figure:さる
+;@AppearanceKey:0
+;@ActionScript:◆サル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_MONKEY_A
+MSG_MAKYO_MONKEY_A;＃タカのめ使用後を‥‥
+@CHKFGOTO(FLG_MAKYO_USE_TAKANOME,_SKRB_MAKYO_MONKEY_A_LATER)
+◆Ｉｔ’ｓ　ｒｅａｌｌｙ　ｄａｒｋ　ｈｅｒｅ　ｉｎ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ，　ｉｓｎ’ｔ　ｉｔ？@KEY()↓
+◆Ｉｔ’ｓ　ｐｒｅｔｔｙ　ｃｒｅｅｐｙ，　ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ？@KEY()↓
+◆Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_EAGLE_EYE)　ｈｅｒｅ，　ｙｏｕ’ｒｅ　ｈｅｌｐｌｅｓｓ．
+@KEYNP()
+;jpn:◆まきょうは　くらいだろ。↓
+;jpn:　いやな　かんじだろ。@KEY()↓
+;jpn:◆@DSP_GOODS(GDS_TOOL_EAGLE_EYE)　ってのがないと↓
+;jpn:　だめなんだよね。@KEYNP()
+』
+_SKRB_MAKYO_MONKEY_A_LATER;＆
+◆Ｉ　ｗａｓ　ｂｏｒｎ　ｉｎ　ｔｈｉｓ　ｄａｒｋ，　ｃｒｅｅｐｙ　ａｒｅａ．@KEY()↓
+◆Ｉ　ｌｉｖｅ，　ｇｒｏｗ　ｕｐ．．．ａｎｄ　ｄｉｅ　ｈｅｒｅ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｍｙ　ｅｎｔｉｒｅ　ｌｉｆｅ　ａｓ　ａ　ｍｏｎｋｅｙ！．．．
+@KEYNP()
+;jpn:◆こんな　くらく　いやなかんじの↓
+;jpn:　とちに　ぼくはうまれ‥‥@WI(30)↓
+;jpn:　そして　そこで　いき‥‥@KEY()↓
+;jpn:◆そこで　しぬんだ。@WI(30)↓
+;jpn:　ぼくっていうサルの↓
+;jpn:　いっしょうって‥‥！@KEYNP()
+』
+
+
+;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Person:宿ザル
+;@Figure:さる
+;@AppearanceKey:0
+;@ActionScript:◆サル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_MONKEY_INN
+MSG_MAKYO_MONKEY_INN;
+@GOSUB(MSG_HOTEL_MAKYO)
+@!
+;◆サルのやどでよかったら↓
+;　やすんでいけば？↓
+;　　<はい>　　<いいえ>
+;@DSP_ITEM(2)
+;@SELGOTO(_MAKYO_MONKEY_INN_YES,_MAKYO_MONKEY_INN_NO)
+;_MAKYO_MONKEY_INN_NO;
+;◆やすむのが　おきらいとみえる。@KEYNP()
+;』
+
+;_MAKYO_MONKEY_INN_YES;
+;◆いっしょうに　いちどぐらい↓
+;　サルのやども　いいもんだよ。@KEY()
+;@GOSUB(MSG_GLOBAL_MYHOME)
+;』
+
+
+;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Person:病院ザル
+;@Figure:さる
+;@AppearanceKey:0
+;@ActionScript:◆サル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_MONKEY_DOCTOR
+;MSG_MAKYO_MONKEY_DOCTOR;
+;◆どこか　わるいのかい？@KEY()↓
+;◆サルのいしゃで　よかったら↓
+;　なおしてあげるよ。@KEY()
+;@GOSUB(MSG_DOCTOR_MAKYO)
+;』
+
+;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Person:道具屋ザル
+;@Figure:さる
+;@AppearanceKey:0
+;@ActionScript:◆サル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_MONKEY_SHOP
+;MSG_MAKYO_MONKEY_SHOP;
+;@GOSUB(MSG_SHOP_MAKYO_DRUG)
+;』
+　
+;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Person:電話ザル
+;@Figure:さる
+;@AppearanceKey:0
+;@ActionScript:◆サル動き
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_MONKEY_PHONE
+;MSG_MAKYO_MONKEY_PHONE;
+;◆サルのでんわでよかったら↓
+;　つかってくれい。@KEY()↓
+;@GOTO(MSG_GLOBAL_TELEPHONE)
+;』
+
+;@Habitat:魔境／フィールド／魔境出口付近
+;@Person:魔境のボス、ゲロップ
+;@Figure:大ムッド２
+;@AppearanceKey:FLG_WIN_GEROPP/off
+;@ActionScript:◆正面向いて止ったまま
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_GEROPP
+MSG_MAKYO_GEROPP;
+@CHKFGOTO(FLG_WIN_GEROPP,MSG_SYS_HANASU_NG)
+@BGMSTART(0,BGM_msc10);ゲロ入り曲
+◆Ｙｏｕ　ｍａｙ　ｈａｖｅ　ｆｏｒｇｏｔｔｅｎ，　ｂｕｔ　＊Ｂｕｕｕｕｕｒｐ！＊．．．@KEY()↓
+◆Ｉ’ｍ　ｔｈｅ　ｒｅｔｕｒｎ　ｏｆ　Ｂｅｌｃｈ！@KEY()↓
+◆Ｉ’ｖｅ　ｆｏｕｇｈｔ　ｙｏｕ　ｂｅｆｏｒｅ．@KEY()↓
+;jpn:◆おまえは　わすれたかも↓
+;jpn:　しれないけど@KEY()@SE(SE_se4e_foe_gepu)↓
+;jpn:◆グゲグゲ‥‥@WI(30)おれは↓
+;jpn:　かえってきたゲップー！@SE(SE_se4e_foe_gepu)@KEY()↓
+;jpn:◆むかし　おまえと↓
+;jpn:　たたかったことがある。@KEY()↓
+@SE(SE_se4e_foe_gepu)@WI(1)
+◆Ｐｅｅｅｅｙｏｕｕｕ！@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｒｅｍｅｍｂｅｒ　ｍｙ　ｒｉｐｅ　ｏｄｏｒ？@KEY()↓
+◆Ｂｅｌｃｈ　ｈａｓ　ｔｒａｉｎｅｄ　ｍｏｒｅ　ａｎｄ　ｈａｓ　ｒｅｔｕｒｎｅｄ　ｍｕｃｈ　ｓｔｒｏｎｇｅｒ．@KEY()↓
+◆Ｂｕｕｕｕｒｐ！@KEY()↓
+◆Ｂｅｌｃｈ　ｈａｓ　ａｌｓｏ　ｃｈａｎｇｅｄ　ｈｉｓ　ｎａｍｅ　ｔｏ　Ｐｕｋｅ！．．．@KEY()↓
+◆Ｂａｒｆ！　ｖｏｍｉｔ！　ｂａｒｆ，　ｂａｒｆ！　ｃｈｕｃｋ！　ｃｈｕｃｋ！@KEY()↓
+◆Ｄｒｏｗｎ　ｔｏ　ｄｅａｔｈ　ｉｎ　ｐｕｋｅ！@KEY()↓
+◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｔｈａｔ’ｓ　ａｎ　ｉｎｃｒｅｄｉｂｌｙ　ｍａｓｃｕｌｉｎｅ　ｔａｕｎｔ　ｔｏ　ｔｈｒｏｗ　ａｔ　ｙｏｕ？
+@KEY()
+;jpn:◆プハーッ！@KEY()↓
+;jpn:◆このにおいでも↓
+;jpn:　おもいださないか？@KEY()↓
+;jpn:◆あの　ゲップーさまが↓
+;jpn:　しゅぎょうを　つんで↓
+;jpn:　もっとつよくなって@KEY()↓
+;jpn:◆ふっかつしたのさ@WI(20)　ゲローップ！@SE(SE_se4e_foe_gepu)↓
+;jpn:　なまえも　かえたんだ。@SE(SE_se4e_foe_gepu)↓
+;jpn:　ゲロゲロゲロゲロゲロゲロゲロ@KEY()↓
+;jpn:◆ゲロにまみれて　しね！@KEY()@SE(SE_se4e_foe_gepu)↓
+;jpn:◆おとこっぽい　セリフだろ？@KEY()
+@GOSUB(MSG_BATTLE_GEROPP)
+@TRUE_GOTO(MSG_BATTLE_LOSE)
+@ADD_PARTY(PC_POO);戦闘後プー参加
+@ADD_PSI(PC_POO,2);スターストーム学習
+@SETF(FLG_WIN_GEROPP)
+@WI(1)
+@REMOVE_CHAR(PRSN_MKYO_FIELD_G,ANIM_BLINK_SUICIDE)
+』
+
+;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Person:魔境の九官鳥
+;@Figure:九官鳥
+;@AppearanceKey:0
+;@ActionScript:◆中範囲うろつき
+;@GoodsMessage:0
+;@CheckMessage:0
+;@Message:MSG_MAKYO_BIRD
+MSG_MAKYO_BIRD;
+◆Ｋａｗｅｅｅｅｋ！@KEY()↓
+◆Ｖｉｌｌａｇｅ　Ｇｕｍｉ’ｓ　Ｃｏｍｅｓ　Ｎｏｂｏｄｙ@KEY()↓
+◆Ｆａｒ　Ｉｔ’ｓ　Ｂｅｃａｕｓｅ．@KEY()↓
+◆Ｋｗｅｅｋ．
+@KEYNP()
+;jpn:◆クエーッ。↓
+;jpn:　むらには　グミの　こない　だれも↓
+;jpn:　からだろう　とおい。クエッ@KEYNP()
+』
+
+MSG_MAKYO_MTRUFFLE_1;
+@GOSUB(_MAKYO_MTRUFFLE_MAIN)
+@FALSE_GOTO(_MTRUFFLE_GOODSFULL)
+@GOSUB(_MTRUFFLE_GET)
+@SETF(FLG_MAKYO_MTRUFFLE_1_DISAPPEAR)
+@HIDE_CHAR(PRSN_MKYO_FIELD_3A,OBJFX_HIDE_NONE)
+@!
+
+MSG_MAKYO_MTRUFFLE_2;
+@GOSUB(_MAKYO_MTRUFFLE_MAIN)
+@FALSE_GOTO(_MTRUFFLE_GOODSFULL)
+@GOSUB(_MTRUFFLE_GET)
+@SETF(FLG_MAKYO_MTRUFFLE_2_DISAPPEAR)
+@HIDE_CHAR(PRSN_MKYO_FIELD_3B,OBJFX_HIDE_NONE)
+@!
+
+MSG_MAKYO_MTRUFFLE_3;
+@GOSUB(_MAKYO_MTRUFFLE_MAIN)
+@FALSE_GOTO(_MTRUFFLE_GOODSFULL)
+@GOSUB(_MTRUFFLE_GET)
+@SETF(FLG_MAKYO_MTRUFFLE_3_DISAPPEAR)
+@HIDE_CHAR(PRSN_MKYO_FIELD_3C,OBJFX_HIDE_NONE)
+@!
+
+MSG_MAKYO_MTRUFFLE_4;
+@GOSUB(_MAKYO_MTRUFFLE_MAIN)
+@FALSE_GOTO(_MTRUFFLE_GOODSFULL)
+@GOSUB(_MTRUFFLE_GET)
+@SETF(FLG_MAKYO_MTRUFFLE_4_DISAPPEAR)
+@HIDE_CHAR(PRSN_MKYO_FIELD_3D,OBJFX_HIDE_NONE)
+@!
+
+MSG_MAKYO_MTRUFFLE_5;
+@GOSUB(_MAKYO_MTRUFFLE_MAIN)
+@FALSE_GOTO(_MTRUFFLE_GOODSFULL)
+@GOSUB(_MTRUFFLE_GET)
+@SETF(FLG_MAKYO_MTRUFFLE_5_DISAPPEAR)
+@HIDE_CHAR(PRSN_MKYO_FIELD_3E,OBJFX_HIDE_NONE)
+@!
+;-----
+_MAKYO_MTRUFFLE_MAIN;共通メッセージ
+◆Ｈｅｙ！@KEY()↓
+◆Ｔｈｅｒｅ’ｓ　ａ　@DSP_GOODS(GDS_FOOD_MAGIC_TRUFFLE)　ａｔ　ｙｏｕｒ　ｆｅｅｔ．
+@KEY()↓
+;jpn:◆おっと！@WI(15)　あしもとに↓
+;jpn:　マジックトリフがはえている。@KEY()↓
+@Q_GOODSFULL(PC_ALL)
+』
+;-----
+_MTRUFFLE_GET;
+@GOODSIN_PLAYER(0,GDS_FOOD_MAGIC_TRUFFLE)
+@GOSUB(MSG_SUB_GETGOODS)
+@KEYNP()
+@!
+
+_MTRUFFLE_GOODSFULL;
+◆Ｂｕｔ　ｙｏｕ　ｈａｖｅ　ｎｏ　ｒｏｏｍ．@KEY()↓
+◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｇｉｖｅｓ　ｕｐ　ｔｈｅ　@DSP_GOODS(GDS_FOOD_MAGIC_TRUFFLE)．
+
+;jpn:◆しかし　もちものが↓
+;jpn:　いっぱいだった。@KEY()↓
+;jpn:◆@DSP_LCNAME()は↓
+;jpn:　マジックトリフを↓
+;jpn:　あきらめた。
+@KEYNP()
+@!
+;-------------------------------------------------
+
+MSG_MAKYO_DOCTOR;魔境の医者
+◆Ｉ　ｄｏｎ’ｔ　ｆｅｅｌ　ｉｔ’ｓ　ｎｅｃｅｓｓａｒｙ　ｆｏｒ　ｕｓ　ｔｏ　ｔａｌｋ．
+@KEYNP()
+;jpn:◆わたしと　あなたが↓
+;jpn:　はなしをする　ひつようを@WI(20)↓
+;jpn:　わたしは　かんじないのだ。@KEYNP()
+』
+
+MSG_MAKYO_TRADER;
+;商社マン
+◆Ｈｉ，　ｈｏｗ　ａｒｅ　ｙｏｕ？@KEY()↓
+◆Ｉ’ｍ　ｎｏｔ　ａ　ｂａｄ　ｇｕｙ．@KEY()↓
+◆Ｉ　ｃａｍｅ　ｆｒｏｍ　ｏｎｅ　ｏｆ　ｔｈｅ　ｗｏｒｌｄ’ｓ　ｌａｒｇｅｓｔ　ｅｃｏｎｏｍｉｃ　ｐｏｗｅｒｓ@KEY()↓
+◆ｔｏ　ｔｈｉｓ　ｓｍａｌｌ　ｒｕｒａｌ　ｖｉｌｌａｇｅ．@KEY()↓
+◆Ａ　ｂｕｓｉｎｅｓｓｍａｎ　ｔｈａｔ　ｉｓ　ｔｒｕｌｙ　ｔｏｕｇｈ　ｈａｓ　ｔｏ　ｔｒａｖｅｌ　ｔｈｉｓ　ｆａｒ@KEY()↓
+◆ｆｏｒ　ｔｈｅ　ｂｅｓｔ　ｏｐｐｏｒｔｕｎｉｔｉｅｓ．@KEY()↓
+◆．．．ａｎｄ　Ｉ’ｍ　ａ　ｔｏｕｇｈ　ｂｕｓｉｎｅｓｓｍａｎ，　ｙｅｓｓｉｒ！@KEY()↓
+◆Ｉ　ａｌｓｏ　ａ　ｒｅｐｒｅｓｅｎｔａｔｉｖｅ　ｏｆ　ｔｈｅ　ｄｏｃｔｏｒ　ｏｖｅｒ　ｔｈｅｒｅ．@KEY()↓
+◆Ａ：　Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ．．．？@KEY()↓
+◆Ｂ：　Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｈｅａｌ．．．？@KEY()↓
+<Ａ>
+<Ｂ>
+;jpn:◆あ　ドーモ。@WI(20)↓
+;jpn:　あやしいものじゃありませんって。@KEY()↓
+;jpn:◆ある　けいざいたいこくから↓
+;jpn:　こんないなかまで　やってきた@KEY()↓
+;jpn:◆ガッツある　しょうしゃマン↓
+;jpn:　‥‥それは　わたしです！@KEY()↓
+;jpn:◆そっちにいる　センセイの↓
+;jpn:　エージェンシーも↓
+;jpn:　やってましてね。@KEY()↓
+;jpn:◆Ａ：かいもの‥‥ですか？↓
+;jpn:　Ｂ：ちりょう‥‥ですか？↓
+@DSP_ITEM(2)
+@SELGOTO(_MAKYO_TRADER_SHOP,_MAKYO_TRADER_DOCTOR)
+@GOTO(_MAKYO_TRADER_NO)
+
+_MAKYO_TRADER_SHOP;
+◆．．．Ｎｅｅｄｌｅｓｓ　ｔｏ　ｓａｙ，　ｔｈｉｓ　ｉｓ　ａ　ｒｕｒａｌ　ｖｉｌｌａｇｅ．@KEY()↓
+◆．．．Ｈｅｈ　ｈｅｈ，　ｗｅ　ｈａｖｅ　ｐｏｏｒ　ｉｔｅｍｓ．@KEY()↓
+;jpn:◆‥‥といっても↓
+;jpn:　こんないなかですから↓
+;jpn:　‥‥へっへ　こんなものですが。@KEY()↓
+@GOSUB(MSG_SHOP_MAKYO_DRUG)
+』
+
+_MAKYO_TRADER_DOCTOR;治療
+◆Ｉｆ　ｙｏｕ　ｍｕｓｔ　ｔａｌｋ　ｔｏ　ｔｈｅ　ｄｏｃｔｏｒ，　ｐｌｅａｓｅ，　ＰＬＥＡＳＥ　ｔａｌｋ　ｔｏ　ｍｅ　ｆｉｒｓｔ．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ｂｕｓｉｎｅｓｓ　ｗｉｔｈ　ｔｈｅ　ｄｏｃｔｏｒ？@KEY()↓
+<Ｙｅｓ>
+<Ｎｏ>
+;jpn:◆センセイに　はなしがあったら↓
+;jpn:　かならず！↓
+;jpn:　わたしを　とおしてください。@KEY()↓
+;jpn:◆なにか　センセイに↓
+;jpn:　ごようが　おありですか？@KEY()↓
+;jpn:<はい>
+;jpn:<いいえ>
+@DSP_ITEM(2)
+@SELGOTO(_MAKYO_TRADER_DOCTOR_YES,_MAKYO_TRADER_NO)
+
+_MAKYO_TRADER_NO;
+◆Ｏｋａｙ．@KEY()↓
+◆Ｉｆ　ｙｏｕ　ａｔｔｅｍｐｔ　ｔｏ　ｔａｌｋ　ｗｉｔｈ　ｔｈｅ　ｄｏｃｔｏｒ　ｗｉｔｈｏｕｔ　ｆｉｒｓｔ　ｇｏｉｎｇ　ｔｈｒｏｕｇｈ　ｍｅ，@KEY()↓
+◆ｉｔ　ｖｉｏｌａｔｅｓ　ｔｈｅ　ｌａｗ．@KEY()↓
+◆Ｐｌｅａｓｅ　ｂｅ　ｃａｒｅｆｕｌ．
+@KEYNP()
+;jpn:◆そうですか。↓
+;jpn:　わたしに　ないしょで↓
+;jpn:　センセイと　おはなしすると@KEY()↓
+;jpn:◆ホーリツいはんに　なりますから↓
+;jpn:　きをつけてくださいね。@KEYNP()
+』
+
+_MAKYO_TRADER_DOCTOR_YES;はい
+;@SET_LOOPREG(500)
+;@SET_REG(1)
+◆Ｉｔ’ｓ　ａ　ｓｐｅｃｉａｌ　ｔｒｅａｔｍｅｎｔ．@KEY()↓
+◆Ｙｏｕ’ｌｌ　ｂｅ　ｉｎ　ｐｅｒｆｅｃｔ　ｈｅａｌｔｈ　ｗｉｔｈ　ｊｕｓｔ　ｏｎｅ　ｔｒｅａｍｅｎｔ．@KEY()↓
+◆Ｔｈｅ　ｆｅｅ　ｆｏｒ　ｏｎｅ　ｔｒｅａｍｅｎｔ　ｉｓ　＄５００．@KEY()↓
+◆Ｄｏ　ｙｏｕ　ａｇｒｅｅ　ｔｏ　ｔｈｅ　ｆｅｅ？↓
+;jpn:◆とくしゅちりょうですので↓
+;jpn:　いちどに　なんにんでも↓
+;jpn:　ピンピンのシャンシャンにします。@KEY()↓
+;jpn:◆しんさつりょうは↓
+;jpn:　いちりつ　５００ドルです。@KEY()↓
+;jpn:◆よろしいですね？↓
+@GOSUB(MSG_SUB_YESNO_MONEY_PANEL)
+@SELGOTO(_TRADER_DOCTOR_YES_1,_MAKYO_TRADER_NO)
+@GOTO(_MAKYO_TRADER_NO)
+_TRADER_DOCTOR_YES_1;
+◆Ｉ　ｃａｎ　ｐｉｃｋ　ｕｐ　ｔｈｅ　ｆｅｅ　ｆｏｒ　ｙｏｕ　ｎｏｗ，　ｉｆ　ｙｏｕ　ｗａｎｔ．@KEY()↓
+◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｄｏ？↓
+<Ｌｅｔ　ｈｉｍ　ｐａｙ>
+<Ｃａｓｈ>
+;jpn:◆たてかえておくことも↓
+;jpn:　できますよ。@WI(20)どうします？↓
+;jpn:<たてかえ>
+;jpn:<げんきん>
+@DSP_ITEM(2)
+@SELGOTO(_TRADER_DOCTOR_TATEKAE,_TRADER_DOCTOR_GENKIN)
+@GOTO(_MAKYO_TRADER_NO)
+_TRADER_DOCTOR_GENKIN;
+@Q_MONEY(500)
+@TRUE_GOTO(_TRADER_DOCTOR_GENKIN_NOMONEY)
+@MONEYOUT(500)
+@SE(SE_se76_my_give)
+@GOSUB(_TRADER_DOCTOR_HEAL)
+@!
+_TRADER_DOCTOR_GENKIN_NOMONEY;
+◆Ｏｈ，　Ｏｈ．．．@KEY()↓
+◆Ｙｏｕ　ｄｏｎ’ｔ　ｓｅｅｍ　ｔｏ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+;jpn:◆あれれれれれれ？@WI(20)　おかねが↓
+;jpn:　たりないみたいですね。@KEY()↓
+_TRADER_DOCTOR_TATEKAE;
+@SETF(FLG_MAKYO_TRADER_DEBT)
+◆Ｉ　ｃａｎ　ｐａｙ　ｆｏｒ　ｙｏｕ　ｎｏｗ．@KEY()↓
+;jpn:◆じゃ　おかねを↓
+;jpn:　たてかえておきますね。@KEY()↓
+@SE(SE_se76_my_give)
+@GOSUB(_TRADER_DOCTOR_HEAL)
+@!
+
+_TRADER_DOCTOR_HEAL;
+@GET_CHAR_DIR( PRSN_MKYO_FIELD_P, 2, PRSN_MKYO_FIELD_Q )	;医者の方を
+@SET_CHAR_DIR( PRSN_MKYO_FIELD_P, 0 )			;　　　　向く
+@WI( 10 )
+◆Ｄｏｃ，　ｐｌｅａｓｅ　ｔｒｅａｔ　ｔｈｅ　ｎｅｘｔ　ｐａｔｉｅｎｔ！@KEY()↓
+◆．．．Ｔｒｅａｔ　@GOSUB(_TRADER_HIM_HER)　ｒｉｇｈｔ，　ｏｋ！？@KEYNP()
+;jpn:◆センセイ↓
+;jpn:　おしごとおねがいしまーす！@KEY()↓
+;jpn:◆‥‥ていねいに↓
+;jpn:　おねがいしますね。@KEYNP()
+@CLOSEALL()
+;医者をネスに寄るアニメと交換
+@REMOVE_CHAR( PRSN_MKYO_FIELD_Q, ANIM_MAKYO_DOCTOR_APPROACH )
+@WAITSYS()
+@COLD_CHAR( PRSN_MKYO_FIELD_Q )	;元の位置に帰ろうとする医者を抑制
+;セリフ：治療メッセージ
+@GET_ORDER_PLAYER(1)
+@SET_REG(0)
+@OPEN( 1 )
+◆（Ｔｈｅ　ｇｒｅａｔ　ｄｏｃｔｏｒ　ｗｈｉｓｐｅｒｅｄ　ｉｎ　ｅａｃｈ　ｅａｒ，　ｆｉｒｓｔ　ｒｉｇｈｔ　ｔｈｅｎ　ｌｅｆｔ，　”ｂｅ　ｈｅａｌｔｈｙ．”）
+@KEYNP()
+;jpn:◆（えらいセンセイは↓
+;jpn:　@DSP_NAME(0)たちの　みみもとで↓
+;jpn:　「ゲンキニナレ」と　ささやいた）@KEY()↓
+@GOSUB(MSG_SUB_ZENKAI)
+@CLOSEALL()
+;元の位置に帰るアニメと交換
+@FRESH_CHAR( PRSN_MKYO_FIELD_Q )	;医者、持ち場に帰る
+@WAITSYS()
+@REMOVE_CHAR( PRSN_MKYO_FIELD_Q, ANIM_MAPOBJTBACK )
+@WI( 1 )		;アニメ登録待ち
+@SET_CHAR_DIR( PRSN_MKYO_FIELD_Q, 3 )			;右向く
+@WI( 30 )
+@GET_CHAR_DIR( PRSN_MKYO_FIELD_P, 1, PC_ALL )
+@SET_CHAR_DIR( PRSN_MKYO_FIELD_P, 0 )	;商社マン、ネスの方を向く
+@WI( 10 )
+;セリフ：「また来て下さい。」
+@OPEN( 1 )
+◆Ｉ’ｍ　ｈａｐｐｙ　ｔｏ　ｄｏ　ｂｕｓｉｎｅｓｓ　ｗｉｔｈ　ｍｅｎ　ｏｕｔｓｉｄｅ　ｏｆ　ｔｈｅ　ｍｏｎｋｅｙ　ｒｅａｌｍ．@KEY()↓
+◆Ｐｌｅａｓｅ　ｃｏｍｅ　ｂａｃｋ　ａｇａｉｎ．
+@KEYNP()
+;jpn:◆サルばっかりの　ちほうで↓
+;jpn:　にんげんあいてに↓
+;jpn:　ビジネスできるなんて@KEY()↓
+;jpn:◆しあわせだったなぁ。@WI(20)↓
+;jpn:　また　きてください。@KEYNP()
+@CLOSEALL()
+』
+
+_TRADER_HIM_HER;
+@GET_ORDER_PLAYER(1)
+@EQ(PC_PAULA)
+@TRUE_GOTO(_TRADER_HIM_HER_B)
+ｈｉｍ
+@!
+_TRADER_HIM_HER_B;
+ｈｅｒ
+@!
+
+;
+;魔境の闇ドル屋
+;
+
+MSG_MAKYO_YAMI;
+@GOSUB(MSG_SUB_MAKYO_CDMAN)
+@!
+;-------------------------------------------------
+
+MSG_MAKYO_HELI;魔境の壊れたヘリ
+;ジェフのセリフ
+;他のプレイヤージェフの方を向いて‥‥
+@CHKFGOTO(FLG_WIN_GIEGU,_MAKYO_HELI_MAIN)
+@SET_LOOPREG(PC_JEFF)			;ジェフのＩＤを主レジに格納
+@GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
+@TRUE_GOTO(_MAKYO_HELI_MAIN)
+@GET_PLAYER_DIR(PC_NESS,1,PC_JEFF)
+@SET_PLAYER_DIR(PC_NESS,0)
+@GET_PLAYER_DIR(PC_PAULA,1,PC_JEFF)
+@SET_PLAYER_DIR(PC_PAULA,0)
+@OPEN(1)
+@WI(20)
+◆Ｉｔ’ｓ　ｃｏｍｐｌｅｔｅｌｙ　ｂｒｏｋｅｎ．@KEY()↓
+◆Ｉ　ｔｈｏｕｇｈｔ　Ｉ　ｃｏｕｌｄ　ｆｉｘ　ｉｔ，　ｂｕｔ　ｏｎ　ｒｅ－ｅｘａｍｉｎａｔｉｏｎ．．．@KEY()↓
+◆．．．Ｉ　ｎｏｔｉｃｅｄ　ｔｈａｔ　ｔｈｅｒｅ’ｓ　ｎｏ　ｅｎｇｉｎｅ．@KEY()↓
+◆Ｍｍｍｍ．
+@KEYNP()
+;jpn:◆かんぜんに　こわれているね。@WI(20)↓
+;jpn:　でも　ぼくならなおせ‥‥@KEY()↓
+;jpn:◆る　とおもったけど@WI(30)↓
+;jpn:　‥‥エンジンが　ないんじゃなぁ。@KEYNP()
+@CLOSEALL()
+』
+_MAKYO_HELI_MAIN;
+◆（Ｉｔ’ｓ　ｕｓｅｌｅｓｓ　ｂｒｏｋｅｎ．@KEY()↓
+◆Ｎｏｂｏｄｙ’ｓ　ｉｎ　ｔｈｅ　ｐｉｌｏｔ’ｓ　ｓｅａｔ．）
+@KEYNP()
+;jpn:◆（こわれて　つかいものに↓
+;jpn:　ならないようだ。@KEY()↓
+;jpn:◆うんてんせきには↓
+;jpn:　だれも　のっていない）@KEYNP()
+』
+
+;電話鳥
+MSG_MAKYO_BIRD_PHONE;
+◆＊Ｒｉｎｇ＊　＊ｒｉｎｇ＊@KEY()↓
+;DAN:Sound of phone's ringing.
+
+;jpn:◆トゥルルルル@KEY()↓
+@GOSUB(MSG_TEL)
+@!
+;-------------------------------------------------
+
+;新規配置
+;（女さる）
+MSG_MAKYO_MONKEY_B;＄β
+◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ．@KEY()↓
+◆Ｗｈｅｎ　ｙｏｕ　ｗａｌｋ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｓｗａｍｐ，　ｙｏｕ　ｅｎｄａｎｇｅｒ　ｙｏｕ　ｈｅａｌｔｈ．@KEY()↓
+◆Ｙｏｕ　ｃａｎ’ｔ　ｈｅｌｐ　ｉｔ．@KEY()↓
+◆Ｔｈａｔ’ｓ　ｗｈｙ　ｉｔ’ｓ　ｃａｌｌｅｄ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ．
+@KEYNP()
+;jpn:◆ここは　まきょうなのよ。@KEY()↓
+;jpn:◆ぬまのなかを　あるくと↓
+;jpn:　たいりょくが　へるけど↓
+;jpn:　しかたないのよ。@KEY()↓
+;jpn:◆そのへんが↓
+;jpn:　まきょうならではなのよ。@KEYNP()
+』
+;（男さる）
+MSG_MAKYO_MONKEY_C;＄β
+◆Ｉ　ｗａｎｎａ　ｂｅｃｏｍｅ　ａ　ｐｉｇ．@KEY()↓
+◆Ｉｆ　Ｉ　ｂｅｃｏｍｅ　ａ　ｐｉｇ，　Ｉ　ｃａｎ　ｆｉｎｄ　ｔｈｅ　ｍｕｓｈｒｏｏｍｓ　ｃａｌｌｅｄ　Ｍａｇｉｃ　ｔｒｕｆｆｌｅｓ．@KEY()↓
+◆Ｔｈｅｙ’ｒｅ　ｌｏｃａｔｅｄ　ｉｎ　ｔｈｅ　ｓｗａｍｐ　ａｎｄ　ｃａｎ　ｂｅ　ｆｏｕｎｄ　ｂｙ　ｓｃｅｎｔ．@KEY()↓
+◆Ｙｏｕ　ｋｎｏｗ，　ａ　Ｐｉｇ’ｓ　ｎｏｓｅ　ｗｏｕｌｄ　ｂｅ　ｅｎｏｕｇｈ@KEY()↓
+◆ｔｏ　ｆｉｎｄ　ｔｈｏｓｅ　ｇｒｅａｔ　ｔｒｕｆｆｌｅｓ　ｂｙ　ｓｃｅｎｔ　ａｌｏｎｅ．
+@KEYNP()
+;jpn:◆ぼくはブタになりたい。@KEY()↓
+;jpn:◆だって　ブタになれば↓
+;jpn:　ぬまのなかに　はえている↓
+;jpn:　マジックトリフっていう@KEY()↓
+;jpn:◆ふしぎなキノコを↓
+;jpn:　においでみつけることが↓
+;jpn:　できるんだもん。@KEY()↓
+;jpn:◆ブタのはなって↓
+;jpn:　きょうりょくだからね。@KEYNP()
+』
+;-------------------------------------------------
