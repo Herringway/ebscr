@@ -3,8 +3,8 @@
 ;「ボルヘスの酒場」を出ると、ムーンサイドの「怪しい酒場」の裏に出る。
 
 ;@Habitat:ムーンサイド／フィールド／ムーンサイドボルヘス近く
-;@Person:通行人Ａ
-;@Figure:サラリーマンＣ
+;@Person:通行人A
+;@Figure:サラリーマンC
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
 ;@GoodsMessage:0
@@ -12,12 +12,12 @@
 ;@Message:MSG_MOON_A
 MSG_MOON_A;
 ;最初に話しかけるであろう「通行人」。
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｍｏｏｎｓｉｄｅ．@KEY()↓
-◆Ｗｅｌ　　ｃｏｍｅ　　ｔｏ　ｍｏｏ　　　ｎｓｉ　　ｎｓ　　ｄｅｍ　ｏｏｎｓ　ｉｄｅ．
+◆Welcome to Moonside.@KEY()↓
+◆Wel  come  to moo   nsi  ns  dem oons ide.
 
-;jpn:◆ようこそ　ムーンサイドへ。@KEY()↓
-;jpn:◆よう@WI(15)　こそムー@WI(15)　そムー@WI(15)↓
-;jpn:　ンサイ@WI(15)　ンサイ@WI(15)　ンサイ@KEY()↓
+;jpn:◆ようこそ ムーンサイドへ。@KEY()↓
+;jpn:◆よう@WI(15) こそムー@WI(15) そムー@WI(15)↓
+;jpn: ンサイ@WI(15) ンサイ@WI(15) ンサイ@KEY()↓
 ;jpn:◆‥‥ドへ。
 @KEYNP()
 』
@@ -35,37 +35,37 @@ MSG_MOON_A;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_MASTER
 MSG_MOON_BAR_MASTER;
-◆Ｎｏ，　ｔｈａｔ’ｓ　ｒｉｇｈｔ．↓
-　　Ｉ　ａｍ　ｔｈｅ　ｈｏｓｔ　ｈｅｒｅ．
+◆No, that’s right.↓
+  I am the host here.
 ;DAN:"master" here means bartender.
 
-;jpn:◆いいえ　そのとおり。↓
-;jpn:　わたしは　ここのマスターだ。
+;jpn:◆いいえ そのとおり。↓
+;jpn: わたしは ここのマスターだ。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／ムーンサイドボルヘス／ムーンサイドボルヘス
 ;@Person:ママもどき
-;@Figure:おばさんＣ
+;@Figure:おばさんC
 ;@AppearanceKey:0
 ;@ActionScript:＊中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_BETTY
 MSG_MOON_BAR_BETTY;
-◆Ｙｅｓ，　ｔｈａｔ’ｓ　ｗｒｏｎｇ．↓
-　　Ｉ　ａｍ　ｔｈｅ　ｈｏｓｔｅｓｓ　ｈｅｒｅ．
+◆Yes, that’s wrong.↓
+  I am the hostess here.
 ;DAN:I mean "hostess" who is in charge of this bar.
 
-;jpn:◆はい　ちがうわよ。↓
-;jpn:　わたしは　ここのママなのよ。
+;jpn:◆はい ちがうわよ。↓
+;jpn: わたしは ここのママなのよ。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／ムーンサイドボルヘス／ムーンサイドボルヘス
-;@Person:客Ａ
+;@Person:客A
 ;@Figure:酒場の客
 ;@AppearanceKey:0
 ;@ActionScript:＊背面向いて止ったまま
@@ -73,44 +73,44 @@ MSG_MOON_BAR_BETTY;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_A
 MSG_MOON_BAR_A;
-◆Ｗｈａｔ？↓
-　　Ｆｏｕｒｓｉｄｅ？↓
-　　Ａｒｅ　ｙｏｕ　ｓｔｉｌｌ　ｓｌｅｅｐｉｎｇ？@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　Ｍｏｏｎｓｉｄｅ．
+◆What?↓
+  Fourside?↓
+  Are you still sleeping?@KEY()↓
+◆This is Moonside.
 
-;jpn:◆え？@WI(20)　フォーサイド？@KEY()↓
-;jpn:◆なに　ねぼけてるんだ？@WI(20)↓
-;jpn:　ここは　ムーンサイドだぜ。
+;jpn:◆え?@WI(20) フォーサイド?@KEY()↓
+;jpn:◆なに ねぼけてるんだ?@WI(20)↓
+;jpn: ここは ムーンサイドだぜ。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／ムーンサイドボルヘス／ムーンサイドボルヘス
-;@Person:客Ｂ
-;@Figure:ＯＬＣ
+;@Person:客B
+;@Figure:OLC
 ;@AppearanceKey:0
 ;@ActionScript:＊背面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_B
 MSG_MOON_BAR_B;
-◆”Ｙｅｓ”　ｉｓ　”Ｎｏ”　ａｎｄ↓
-　　”Ｎｏ”　ｉｓ　”Ｙｅｓ．”@KEY()↓
-◆Ｉｔ　ｍａｋｅｓ　ｐｅｒｆｅｃｔ　ｓｅｎｓｅ　ｉｎ　Ｍｏｏｎｓｉｄｅ．
+◆”Yes” is ”No” and↓
+  ”No” is ”Yes.”@KEY()↓
+◆It makes perfect sense in Moonside.
 ;jpn:◆「はい」が「いいえ」で↓
-;jpn:　「いいえ」が「はい」。@KEY()↓
-;jpn:◆ここ　ムーンサイドじゃ↓
-;jpn:　それが　じょうしき。
+;jpn: 「いいえ」が「はい」。@KEY()↓
+;jpn:◆ここ ムーンサイドじゃ↓
+;jpn: それが じょうしき。
 @KEYNP()
 』
 
 
 ;以上の「酒場の人たち」のセリフにより
-;ムーンサイドでの受け応え（はいor いいえ）は
+;ムーンサイドでの受け応え(はいor いいえ)は
 ;「逆さまが正しい」ことがわかる。
 ；----------------------------------------
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｂ
+;@Person:通行人B
 ;@Figure:リゾート男
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -118,26 +118,26 @@ MSG_MOON_BAR_B;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_B
 MSG_MOON_B;
-;（このセリフは数人がしゃべる。ワープ先が違う）
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ！
+;(このセリフは数人がしゃべる。ワープ先が違う)
+◆Hello!@KEY()↓
+◆And...good−bye!
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
-;jpn:◆グッドバイ！
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
+;jpn:◆グッドバイ!
 @KEY()
 @CLOSEALL()
 @WI(1)
 @WARP(WARP_MOON_B)
 』
 MSG_MOON_S;
-;（このセリフは数人がしゃべる。ワープ先が違う）
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ！@KEY()
+;(このセリフは数人がしゃべる。ワープ先が違う)
+◆Hello!@KEY()↓
+◆And...good−bye!@KEY()
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
-;jpn:◆グッドバイ！@KEY()
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
+;jpn:◆グッドバイ!@KEY()
 @CLOSEALL()
 @WI(1)
 @WARP(WARP_MOON_S)
@@ -145,37 +145,37 @@ MSG_MOON_S;
 MSG_MOON_T;
 MSG_MOON_U;
 MSG_MOON_V;
-;（このセリフは数人がしゃべる。ワープ先が違う）
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ！@KEY()
+;(このセリフは数人がしゃべる。ワープ先が違う)
+◆Hello!@KEY()↓
+◆And...good−bye!@KEY()
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
-;jpn:◆グッドバイ！@KEY()
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
+;jpn:◆グッドバイ!@KEY()
 @CLOSEALL()
 @WI(1)
 @WARP(WARP_MOON_T)
 』
 MSG_MOON_W;
-;（このセリフは数人がしゃべる。ワープ先が違う）
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ！@KEY()
+;(このセリフは数人がしゃべる。ワープ先が違う)
+◆Hello!@KEY()↓
+◆And...good−bye!@KEY()
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
-;jpn:◆グッドバイ！@KEY()
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
+;jpn:◆グッドバイ!@KEY()
 @CLOSEALL()
 @WI(1)
 @WARP(WARP_MOON_W)
 』
 MSG_MOON_X;
-;（このセリフは数人がしゃべる。ワープ先が違う）
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ！@KEY()
+;(このセリフは数人がしゃべる。ワープ先が違う)
+◆Hello!@KEY()↓
+◆And...good−bye!@KEY()
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
-;jpn:◆グッドバイ！@KEY()
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
+;jpn:◆グッドバイ!@KEY()
 @CLOSEALL()
 @WI(1)
 @CHKFGOTO(FLG_MOON_WARP_X,_MOON_X_ROOM)
@@ -187,32 +187,32 @@ _MOON_X_ROOM;正しく部屋へ
 』
 
 MSG_MOON_Y;
-;（このセリフは数人がしゃべる。ワープ先が違う）
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ！@KEY()
+;(このセリフは数人がしゃべる。ワープ先が違う)
+◆Hello!@KEY()↓
+◆And...good−bye!@KEY()
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
-;jpn:◆グッドバイ！@KEY()
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
+;jpn:◆グッドバイ!@KEY()
 @CLOSEALL()
 @WI(1)
 @WARP(WARP_MOON_Y)
 』
 MSG_MOON_Z;
-;（このセリフは数人がしゃべる。ワープ先が違う）
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ！@KEY()
+;(このセリフは数人がしゃべる。ワープ先が違う)
+◆Hello!@KEY()↓
+◆And...good−bye!@KEY()
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
-;jpn:◆グッドバイ！@KEY()
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
+;jpn:◆グッドバイ!@KEY()
 @CLOSEALL()
 @WI(1)
 @WARP(WARP_MOON_Z)
 』
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｃ
+;@Person:通行人C
 ;@Figure:リゾート女
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -220,19 +220,19 @@ MSG_MOON_Z;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_C
 MSG_MOON_C;
-◆Ｂｅｆｏｒｅ　ｔｈｅ　ｓｏｕｐ　ｇｅｔｓ　ｃｏｌｄ，　ｗｅ　ｍｕｓｔ　ｃａｒｅ　ｆｏｒ　Ｍａｎｉ　Ｍａｎｉ．@KEY()↓
-◆Ｂｅｆｏｒｅ　ｔｈｅ　ｋｎｉｆｅ　ｇｅｔｓ　ｒｕｓｔｙ，　ｗｅ　ｍｕｓｔ　ｃａｒｅ　ｆｏｒ　Ｍａｎｉ　Ｍａｎｉ．
+◆Before the soup gets cold, we must care for Mani Mani.@KEY()↓
+◆Before the knife gets rusty, we must care for Mani Mani.
 
-;jpn:◆スープが　さめないうちに↓
-;jpn:　マニマニを　なんとかしないと。@KEY()↓
-;jpn:◆ナイフが　さびないうちに↓
-;jpn:　マニマニを　なんとかしないと。
+;jpn:◆スープが さめないうちに↓
+;jpn: マニマニを なんとかしないと。@KEY()↓
+;jpn:◆ナイフが さびないうちに↓
+;jpn: マニマニを なんとかしないと。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｄ
+;@Person:通行人D
 ;@Figure:ツッパリ
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -240,88 +240,88 @@ MSG_MOON_C;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_D
 MSG_MOON_D;
-◆Ｉ’ｌｌ　ｔｅｌｌ　ｙａ　ｗｈａｔ　Ｉ　ｈａｔｅ　ｉｎ　ｔｈｉｓ　ｗｏｒｌｄ．@KEY()↓
-◆Ｔｈａｔ’ｓ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)．@KEY()↓
-◆Ｔｈｅ　ｃｏｌｏｒ，　ｔｈｅ　ｓｍｅｌｌ，　ｔｈｅ　ｔａｓｔｅ，　ｔｈｅ　ｔｅｘｔｕｒｅ．．．@KEY()↓
-◆Ｈｅｙ　ｙｏｕ，　ｙｏｕ’ｒｅ　ｄｒｏｏｌｉｎｇ！
+◆I’ll tell ya what I hate in this world.@KEY()↓
+◆That’s @DSP_STS(STS_PARTY_FAVORITE_FOODS).@KEY()↓
+◆The color, the smell, the taste, the texture...@KEY()↓
+◆Hey you, you’re drooling!
 
-;jpn:◆おれの　いっちばん↓
-;jpn:　きらいなもの　おしえてやろう。@KEY()↓
-;jpn:◆それは　@DSP_STS(STS_PARTY_FAVORITE_FOODS)さ。@KEY()↓
-;jpn:◆あのいろ@WI(15)　あのにおい@WI(15)　あのあじ@WI(15)↓
-;jpn:　あのしたざわり‥‥@KEY()↓
-;jpn:◆おまえ　よだれがでてるぞ？！
+;jpn:◆おれの いっちばん↓
+;jpn: きらいなもの おしえてやろう。@KEY()↓
+;jpn:◆それは @DSP_STS(STS_PARTY_FAVORITE_FOODS)さ。@KEY()↓
+;jpn:◆あのいろ@WI(15) あのにおい@WI(15) あのあじ@WI(15)↓
+;jpn: あのしたざわり‥‥@KEY()↓
+;jpn:◆おまえ よだれがでてるぞ?!
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／病院／部屋
-;@Person:通行人Ｅ
-;@Figure:ＯＬＧ
+;@Person:通行人E
+;@Figure:OLG
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_E
 MSG_MOON_E;
-◆”Ｙｅｓ”　ｍｅａｎｓ　”Ｎｏ”↓
-　　”Ｎｏ”　ｍｅａｎｓ　”Ｙｅｓ．”@KEY()↓
-◆Ｏｒ　ｄｉｄ　ｙｏｕ　ａｌｒｅａｄｙ　ｋｎｏｗ　ｔｈｉｓ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆”Yes” means ”No”↓
+  ”No” means ”Yes.”@KEY()↓
+◆Or did you already know this?↓
+<Yes>
+<No>
 
 ;jpn:◆「はい」が「いいえ」で↓
-;jpn:　「いいえ」が「はい」ってこと↓
-;jpn:　とうぜん　しってるわよね？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: 「いいえ」が「はい」ってこと↓
+;jpn: とうぜん しってるわよね?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MOON_E_YES,_MOON_E_NO)
 
 _MOON_E_NO;
-◆Ａｈ！　　Ｙｏｕ　ｋｎｅｗ　ｉｔ．　　Ｔｈａｔ’ｓ　ｇｏｏｄ．↓
-　　Ｉ　ｗａｓ　ｊｕｓｔ　ｗｏｎｄｅｒｉｎｇ．
-;jpn:◆しってるなら　いいのよ。↓
-;jpn:　ただ　きいてみただけなの。
+◆Ah!  You knew it.  That’s good.↓
+  I was just wondering.
+;jpn:◆しってるなら いいのよ。↓
+;jpn: ただ きいてみただけなの。
 @KEYNP()
 』
 
 _MOON_E_YES;
-◆Ｏｈ　ｙｅａｈ？↓
-　　Ｙｏｕ　ｄｉｄｎ’ｔ　ｋｎｏｗ？
-;jpn:◆えっ　しらないの？！
+◆Oh yeah?↓
+  You didn’t know?
+;jpn:◆えっ しらないの?!
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｆ
-;@Figure:サラリーマンＢ
+;@Person:通行人F
+;@Figure:サラリーマンB
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_F
 MSG_MOON_F;
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ａｎｄ．．．ｇｏｏｄ−ｂｙｅ．．．@KEY()↓
-◆Ｓｈａｌｌ　Ｉ．．．？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆Hello!@KEY()↓
+◆And...good−bye...@KEY()↓
+◆Shall I...?↓
+<Yes>
+<No>
 
-;jpn:◆ハロー！@WI(20)↓
-;jpn:　そして‥‥@KEY()↓
+;jpn:◆ハロー!@WI(20)↓
+;jpn: そして‥‥@KEY()↓
 ;jpn:◆グッドバイ‥‥↓
-;jpn:　するかい？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: するかい?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MOON_F_YES,_MOON_F_NO)
 
 _MOON_F_NO;
 ;出口の無い部屋にワープ
-◆Ｔｈｅｎ．．．@WI(20)↓
-　　ｇｏｏｄ−ｂｙｅ！
+◆Then...@WI(20)↓
+  good−bye!
 ;jpn:◆では‥‥@WI(20)↓
-;jpn:　グッドバイ！
+;jpn: グッドバイ!
 @KEY()
 @CLOSEALL()
 @WI(1)
@@ -329,19 +329,19 @@ _MOON_F_NO;
 』
 
 _MOON_F_YES;
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｍｏｏｎｓｉｄｅ．@KEY()↓
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｍｏｏ　　　Ｍｏｏ　　Ｍｏｏ　　ｎｓｉ　　　ｎｓｉ　　　ｎｓｉ　　　ｎｓｉ．．．ｎｓｉｄｅ．
+◆Welcome to Moonside.@KEY()↓
+◆Welcome to Moo   Moo  Moo  nsi   nsi   nsi   nsi...nside.
 
-;jpn:◆ようこそ　ムーンサイドへ。@KEY()↓
-;jpn:◆ようこそ　ムー@WI(15)　ムー@WI(15)　ムー@WI(15)↓
-;jpn:　ンサ@WI(15)　ンサ@WI(15)　ンサ@WI(15)　ンサ@KEY()↓
+;jpn:◆ようこそ ムーンサイドへ。@KEY()↓
+;jpn:◆ようこそ ムー@WI(15) ムー@WI(15) ムー@WI(15)↓
+;jpn: ンサ@WI(15) ンサ@WI(15) ンサ@WI(15) ンサ@KEY()↓
 ;jpn:◆‥‥ンサイドへ。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｇ
+;@Person:通行人G
 ;@Figure:ジミな男
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -349,65 +349,65 @@ _MOON_F_YES;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_G
 MSG_MOON_G;
-◆Ｉ’ｍ　ｐｒｅｔｔｙ　ｆｏｒｇｅｔｆｕｌ．↓
-　　Ｉ　ｅｖｅｎ　ｆｏｒｇｏｔ　ｗｈｙ　Ｉ’ｍ　ｈｅｒｅ．@KEY()↓
-◆Ｈｍｍ．．．@KEY()↓
-◆Ｉ　ｊｕｓｔ　ｆｏｒｇｏｔ　ｓｏｍｅｔｈｉｎｇ．．．@KEY()↓
-◆Ｗｈｏ　ａｍ　Ｉ？@KEY()↓
-◆Ａｍ　Ｉ　ａ　ｍａｎ？
+◆I’m pretty forgetful.↓
+  I even forgot why I’m here.@KEY()↓
+◆Hmm...@KEY()↓
+◆I just forgot something...@KEY()↓
+◆Who am I?@KEY()↓
+◆Am I a man?
 
-;jpn:◆おれは　わすれやすい　おとこ。@WI(20)↓
-;jpn:　なぜ　おれが　ここにいるのか↓
-;jpn:　わすれてしまった。@KEY()↓
-;jpn:◆‥‥‥いま　おれは　なにを↓
-;jpn:　わすれてしまったんだっけ？@KEY()↓
+;jpn:◆おれは わすれやすい おとこ。@WI(20)↓
+;jpn: なぜ おれが ここにいるのか↓
+;jpn: わすれてしまった。@KEY()↓
+;jpn:◆‥‥‥いま おれは なにを↓
+;jpn: わすれてしまったんだっけ?@KEY()↓
 ;jpn:◆‥‥‥‥‥‥‥おれは↓
-;jpn:　どんなおとこだった？@KEY()↓
-;jpn:◆‥‥おれは　おとこか？
+;jpn: どんなおとこだった?@KEY()↓
+;jpn:◆‥‥おれは おとこか?
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｈ
-;@Figure:サラリーマンＤ
+;@Person:通行人H
+;@Figure:サラリーマンD
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_H
 MSG_MOON_H;
-◆Ｄｏ　ｙｏｕ　ｕｎｄｅｒｓｔａｎｄ　ａｌｌ　ｔｈｉｓ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆Do you understand all this?↓
+<Yes>
+<No>
 
-;jpn:◆わかるかい？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆わかるかい?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MOON_H_YES,_MOON_H_NO)
 
 _MOON_H_NO;
-◆Ｇｏｏｄ，@WI(20)↓
-　　Ｉ’ｍ　ｇｌａｄ　ｙｏｕ　ｇｅｔ　ｉｔ．
+◆Good,@WI(20)↓
+  I’m glad you get it.
 
 ;jpn:◆わかるのか。@WI(20)↓
-;jpn:　それなら　よかった。
+;jpn: それなら よかった。
 @KEYNP()
 』
 
 _MOON_H_YES;
-◆Ｎｏ？　　Ｙｏｕ　ｄｏｎ’ｔ？@WI(20)↓
-　　Ｔｏ　ｔｅｌｌ　ｙｏｕ　ｔｈｅ　ｔｒｕｔｈ，　ｎｅｉｔｈｅｒ　ｄｏ　Ｉ．
+◆No?  You don’t?@WI(20)↓
+  To tell you the truth, neither do I.
 
 ;jpn:◆わからないのか。@WI(20)↓
-;jpn:　じつは　おれにも↓
-;jpn:　よく　わからないんだ。
+;jpn: じつは おれにも↓
+;jpn: よく わからないんだ。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／ホテル／受け付け
-;@Person:通行人Ｉ
+;@Person:通行人I
 ;@Figure:レゲエ
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -415,22 +415,22 @@ _MOON_H_YES;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_I
 MSG_MOON_I;
-◆Ｉｆ　Ｉ　ｓｔａｙ　ｈｅｒｅ　ｔｏｏ　ｌｏｎｇ，　Ｉ’ｌｌ　ｅｎｄ　ｕｐ　ｆｒｙｉｎｇ　ｍｙ　ｂｒａｉｎ．@KEY()↓
-◆Ｙｅｓ，　Ｉ　ｗｉｌｌ．↓
-　　Ｎｏ，　Ｉ　ｗｉｌｌ．．．ｎｏｔ．↓
-　　Ｙｅｓｎｏ，　Ｉ　ｗｉｌｌ　ｗｏｎ’ｔ．
+◆If I stay here too long, I’ll end up frying my brain.@KEY()↓
+◆Yes, I will.↓
+  No, I will...not.↓
+  Yesno, I will won’t.
 
-;jpn:◆ずっとここに　いると↓
-;jpn:　あたまが↓
-;jpn:　ぼんよよよんに@KEY()↓
+;jpn:◆ずっとここに いると↓
+;jpn: あたまが↓
+;jpn: ぼんよよよんに@KEY()↓
 ;jpn:◆なる。@WI(20)↓
-;jpn:　ならない。@WI(20)↓
-;jpn:　なるない。
+;jpn: ならない。@WI(20)↓
+;jpn: なるない。
 @KEYNP()
 』
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｊ（数字男Ｂ案）
+;@Person:通行人J(数字男B案)
 ;@Figure:ボロ
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -441,61 +441,61 @@ MSG_MOON_J_NUMBERMAN_B;
 @CHKFGOTO(FLG_MOON_NUMBERMAN_B3,_MOON_I_NUMBERMAN_B_AFTER3)
 @CHKFGOTO(FLG_MOON_NUMBERMAN_B2,_MOON_I_NUMBERMAN_B_AFTER2)
 @CHKFGOTO(FLG_MOON_NUMBERMAN_B1,_MOON_I_NUMBERMAN_B_AFTER1)
-◆２５７　　２５６　　２５５　　２５４　　２５３．．．@KEY()↓
-◆Ｓｏ　ｗｈａｔ’ｓ　ｙｏｕｒ　ｐｒｏｂｌｅｍ？↓
-　　Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ａｎｙｔｈｉｎｇ，　ｇｅｔ　ｏｕｔｔａ　ｈｅｒｅ．@KEY()↓
-◆Ｉ’ｍ　ｃｏｕｎｔｉｎｇ　ｂａｃｋｗａｒｄｓ．@KEY()↓
-◆２５２　　２５１　　２５０．．．
+◆２５７  ２５６  ２５５  ２５４  ２５３...@KEY()↓
+◆So what’s your problem?↓
+  If you don’t want anything, get outta here.@KEY()↓
+◆I’m counting backwards.@KEY()↓
+◆２５２  ２５１  ２５０...
 
-;◆２５７@WI(20)　２５６@WI(20)　２５５@WI(20)↓
-;jpn:　２５４@WI(20)　２５３‥‥@KEY()↓
-;jpn:◆なにか　ようか？@WI(20)↓
-;jpn:　なにも　ようじがないんなら↓
-;jpn:　あっち　いけ。@KEY()↓
-;jpn:◆いま　おれは　すうじを↓
-;jpn:　へらしているところなんだ。@KEY()↓
-;jpn:◆２５２@WI(20)　２５１@WI(20)　２５０‥‥
+;◆２５７@WI(20) ２５６@WI(20) ２５５@WI(20)↓
+;jpn: ２５４@WI(20) ２５３‥‥@KEY()↓
+;jpn:◆なにか ようか?@WI(20)↓
+;jpn: なにも ようじがないんなら↓
+;jpn: あっち いけ。@KEY()↓
+;jpn:◆いま おれは すうじを↓
+;jpn: へらしているところなんだ。@KEY()↓
+;jpn:◆２５２@WI(20) ２５１@WI(20) ２５０‥‥
 @KEYNP()
 @SETF(FLG_MOON_NUMBERMAN_B1)
 』
 
 _MOON_I_NUMBERMAN_B_AFTER1;
-◆６９　　６８　　６７　　６６　　６５　　６４　　６３．．．@KEY()↓
-◆Ｗｈａｔ？　　Ｉｓ　ｔｈｉｓ　ａ　ｓｐｅｃｉａｌ　ｈｏｂｂｙ　ｏｆ　ｙｏｕｒｓ？　　Ｙｏｕ　ｌｉｋｅ　ｗａｔｃｈｉｎｇ　ｐｅｏｐｌｅ　ｃｏｕｎｔ　ｂａｃｋｗａｒｄｓ？@KEY()↓
-◆６２　　６１　　６０　　５９．．．
+◆６９  ６８  ６７  ６６  ６５  ６４  ６３...@KEY()↓
+◆What?  Is this a special hobby of yours?  You like watching people count backwards?@KEY()↓
+◆６２  ６１  ６０  ５９...
 
-◆６９@WI(15)　６８@WI(15)　６７@WI(15)　６６@WI(15)↓
-;jpn:　６５@WI(15)　６４@WI(15)　６３‥‥@KEY()↓
-;jpn:◆おまえは　すうじを↓
-;jpn:　へらしているとこを　みるのが↓
-;jpn:　しゅみなのか？@KEY()↓
-;jpn:◆６２@WI(15)　６１@WI(15)　６０@WI(15)　５９‥‥
+◆６９@WI(15) ６８@WI(15) ６７@WI(15) ６６@WI(15)↓
+;jpn: ６５@WI(15) ６４@WI(15) ６３‥‥@KEY()↓
+;jpn:◆おまえは すうじを↓
+;jpn: へらしているとこを みるのが↓
+;jpn: しゅみなのか?@KEY()↓
+;jpn:◆６２@WI(15) ６１@WI(15) ６０@WI(15) ５９‥‥
 @KEYNP()
 @SETF(FLG_MOON_NUMBERMAN_B2)
 』
 
 _MOON_I_NUMBERMAN_B_AFTER2;
-◆９　　８　　７　　６　　５　　４　　３　　２　　１　　０．．．↓
-　　Ｂａｂｏｏｏｏｏｏｏｏｍ！！@KEY()↓
-◆Ｗｏｗ！　　Ｉ　ｓｃａｒｅｄ　ｍｙｓｅｌｆ．
+◆９  ８  ７  ６  ５  ４  ３  ２  １  ０...↓
+  Baboooooooom!!@KEY()↓
+◆Wow!  I scared myself.
 
-;◆９　８　７　６　５　４↓
-;jpn:　３　２　１　０‥‥↓
-;jpn:　ドッカアーーーーン！！@KEY()↓
-;jpn:◆‥‥ああ@WI(20)　びっくりした！
+;◆９ ８ ７ ６ ５ ４↓
+;jpn: ３ ２ １ ０‥‥↓
+;jpn: ドッカアーーーーン!!@KEY()↓
+;jpn:◆‥‥ああ@WI(20) びっくりした!
 @KEYNP()
 @SETF(FLG_MOON_NUMBERMAN_B3)
 』
 
 _MOON_I_NUMBERMAN_B_AFTER3;
-◆Ｉ　ｇｏｔ　ｓｕｒｐｒｉｓｅｄ．
-;jpn:◆さっきは　びっくりしたよな。
+◆I got surprised.
+;jpn:◆さっきは びっくりしたよな。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｋ
+;@Person:通行人K
 ;@Figure:ランマ女
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -503,25 +503,25 @@ _MOON_I_NUMBERMAN_B_AFTER3;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_K
 MSG_MOON_K;
-◆Ｉ　ｓｐｙ　ｗｉｔｈ　ｍｙ　ｌｉｔｔｌｅ　ｅｙｅ．．．↓
-　　Ａｌｌａｋａｚａｍ！@KEY()↓
-◆Ｉ　ｓｅｅ　ａ　ｃｏｕｎｔｒｙ　ｉｎ　ｓｕｍｍｅｒ　ａｎｄ　ａ　ｂｉｇ　ｓｉｌｖｅｒ　ｂａｌｌ．@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｂｕｒｎｔ，　ｂｕｔ　ｙｏｕ’ｒｅ　ｆｉｎｅ．@KEY()↓
-◆．．．Ｔｈａｔ　ｉｓ　ｗｈａｔ　Ｉ　ｓｅｅ．
+◆I spy with my little eye...↓
+  Allakazam!@KEY()↓
+◆I see a country in summer and a big silver ball.@KEY()↓
+◆You’re burnt, but you’re fine.@KEY()↓
+◆...That is what I see.
 
-;jpn:◆ケッハ　モルタア！@WI(20)↓
-;jpn:　ケッハ　モヌラタア！@KEY()↓
-;jpn:◆ぎんいろの　おおきなたまで↓
-;jpn:　なつのくに@KEY()↓
-;jpn:◆くろこげの　あなたは↓
-;jpn:　どっこい　だいじょうぶ@KEY()↓
-;jpn:◆‥‥わたしには　みえるのです。
+;jpn:◆ケッハ モルタア!@WI(20)↓
+;jpn: ケッハ モヌラタア!@KEY()↓
+;jpn:◆ぎんいろの おおきなたまで↓
+;jpn: なつのくに@KEY()↓
+;jpn:◆くろこげの あなたは↓
+;jpn: どっこい だいじょうぶ@KEY()↓
+;jpn:◆‥‥わたしには みえるのです。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｌ
+;@Person:通行人L
 ;@Figure:パンク青年
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -529,37 +529,37 @@ MSG_MOON_K;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_L
 MSG_MOON_L;
-◆Ｈａ！　ｅｖｅｒｙｏｎｅ　ｉｓ　ｓｏｍｅｏｎｅ！@KEY()↓
-◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｓｏ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆Ha! everyone is someone!@KEY()↓
+◆Don’t you think so?↓
+<Yes>
+<No>
 
-;jpn:◆どいつも　こいつもだ！@KEY()↓
-;jpn:◆‥‥そう　おもわないか？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆どいつも こいつもだ!@KEY()↓
+;jpn:◆‥‥そう おもわないか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MOON_L_YES,_MOON_L_NO)
 
 _MOON_L_NO;
-◆Ｗａ　ｈａ　ｈａ！@KEY()↓
-◆．．．Ｈｅ　ｈｅ　ｈｅ．．．！
+◆Wa ha ha!@KEY()↓
+◆...He he he...!
 
-;jpn:◆アッハッハ！@KEY()↓
-;jpn:◆‥‥イヒヒ！
+;jpn:◆アッハッハ!@KEY()↓
+;jpn:◆‥‥イヒヒ!
 @KEYNP()
 』
 
 _MOON_L_YES;
-◆Ｍｏｏ　ｎｓｉ　ｄｅｍ　ｏｏｎｓ　ｉｄｅ．
+◆Moo nsi dem oons ide.
 
-;jpn:◆ムーンサ@WI(15)　ムーンサ@WI(15)　ンサイ@WI(15)↓
-;jpn:　ンサイ@WI(15)　ンサイ@WI(15)　ムーンサ。
+;jpn:◆ムーンサ@WI(15) ムーンサ@WI(15) ンサイ@WI(15)↓
+;jpn: ンサイ@WI(15) ンサイ@WI(15) ムーンサ。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｍ
+;@Person:通行人M
 ;@Figure:用心棒
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -567,13 +567,13 @@ _MOON_L_YES;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_M
 MSG_MOON_M;
-;（病院に飛ばされる。親切？）
-◆Ｉ　ｗｉｌｌ　ｓｅｎｄ　ｔｈｅ　ｆｉｒｓｔ　ａｎｄ　ｔｈｅ　ｓｅｃｏｎｄ．．．@KEY()↓
-◆ｔｏ　ｔｈｅ　ｈｏｓｐｉｔａｌ．
+;(病院に飛ばされる。親切?)
+◆I will send the first and the second...@KEY()↓
+◆to the hospital.
 
-;jpn:◆おまえ　その１と↓
-;jpn:　おまえ　その２を‥‥@KEY()↓
-;jpn:◆びょういんおくりに　してやる！
+;jpn:◆おまえ その１と↓
+;jpn: おまえ その２を‥‥@KEY()↓
+;jpn:◆びょういんおくりに してやる!
 @KEY()
 @CLOSEALL()
 @WI(1)
@@ -582,7 +582,7 @@ MSG_MOON_M;
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｎ
+;@Person:通行人N
 ;@Figure:マスク
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -590,39 +590,39 @@ MSG_MOON_M;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_N
 MSG_MOON_N;
-;（驚かすだけ。ＨＰはそのまま）
-◆@DSP_STS(STS_PC_NAME_NES)’ｓ　ＨＰ　ｄｒｏｐｓ　ｔｏ　０！@KEY()↓
-◆@DSP_STS(STS_PC_NAME_JEFF)’ｓ　ＨＰ　ｄｒｏｐｓ　ｔｏ　０！
+;(驚かすだけ。HPはそのまま)
+◆@DSP_STS(STS_PC_NAME_NES)’s HP drops to ０!@KEY()↓
+◆@DSP_STS(STS_PC_NAME_JEFF)’s HP drops to ０!
 
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)のＨＰは↓
-;jpn:　０になった！@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)のＨＰは↓
-;jpn:　０になった！
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)のHPは↓
+;jpn: ０になった!@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)のHPは↓
+;jpn: ０になった!
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｏ
-;@Figure:サラリーマンＡ
+;@Person:通行人O
+;@Figure:サラリーマンA
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_O
 MSG_MOON_O;
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｍｏｏｎｓｉｄｅ．@KEY()↓
-◆Ｗｅｃｏｍｅｌ　ｔｏ　Ｓｏｏｎｍｉｄｅ．@KEY()↓
-◆Ｍｏｏｎｗｅｌ　ｏｔ　ｃｏｓｉｄｍｅ．
-;jpn:◆ようこそ　ムーンサイドへ。@KEY()↓
-;jpn:◆よムうこ　そーンサイドへ。@KEY()↓
-;jpn:◆ムよーン　サうイこドそへ。
+◆Welcome to Moonside.@KEY()↓
+◆Wecomel to Soonmide.@KEY()↓
+◆Moonwel ot cosidme.
+;jpn:◆ようこそ ムーンサイドへ。@KEY()↓
+;jpn:◆よムうこ そーンサイドへ。@KEY()↓
+;jpn:◆ムよーン サうイこドそへ。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｐ
+;@Person:通行人P
 ;@Figure:ゴロツキ
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -630,24 +630,24 @@ MSG_MOON_O;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_P
 MSG_MOON_P;
-◆Ｈｏｗ　ａｂｏｕｔ　Ｉ　ｓｈａｒｐｅｎ　ｙｏｕ？@KEY()↓
-◆Ｉ　ｊｕｓｔ　ｌｏｖｅ　ｓｈａｒｐｅｎｉｎｇ．↓
-　　Ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｍｅ　ｔｏ　ｓｈａｒｐｅｎ？@KEY()↓
-◆Ｓｉｄｅｍ　ｏｏｎｓｉ　ｄｅｍｏｏｎ．↓
-　　Ｗｅｌｃ　ｗｅｌｃ　ｏｍｅｗｅｌｃ　ｏｍｅｏｍｅ．
+◆How about I sharpen you?@KEY()↓
+◆I just love sharpening.↓
+  You don’t want me to sharpen?@KEY()↓
+◆Sidem oonsi demoon.↓
+  Welc welc omewelc omeome.
 
-;jpn:◆けずって　あげようか？@WI(20)↓
-;jpn:　おれは　けずるの　すきだな。@WI(20)↓
-;jpn:　きみたち　けずられたいんだろ？@KEY()↓
-;◆きみたち　エンピツだもんな。@KEY()↓
-;jpn:◆ンサイ@WI(15)　ンサイ@WI(15)　ンサイドムー@WI(15)↓
-;jpn:　こそよう@WI(15)　こそよう@WI(15)　こそよう。
+;jpn:◆けずって あげようか?@WI(20)↓
+;jpn: おれは けずるの すきだな。@WI(20)↓
+;jpn: きみたち けずられたいんだろ?@KEY()↓
+;◆きみたち エンピツだもんな。@KEY()↓
+;jpn:◆ンサイ@WI(15) ンサイ@WI(15) ンサイドムー@WI(15)↓
+;jpn: こそよう@WI(15) こそよう@WI(15) こそよう。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｑ
+;@Person:通行人Q
 ;@Figure:アーティスト
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -655,17 +655,17 @@ MSG_MOON_P;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_Q
 MSG_MOON_Q;
-◆Ｈｅｙ！　　Ｐａｒｋｉｎｇ　ｍｅｔｅｒｓ！↓
-　　Ａｎｄ　ｙｏｕ’ｒｅ　ｗａｌｋｉｎｇ　ａｒｏｕｎｄ！@KEY()↓
-◆Ｈａ　ｈａ　ｈａ．．．Ｔｈａｔ’ｓ　ｓｏ　ｆｕｎｎｙ@KEY()↓
-◆Ｗｗｗｗｅｅｅｌｃｏｍｅ　ｃｏｍｅ　ｔｏ　Ｍｍｍｍｍｏｏｏｏｎｓｉｄｄｅｅｅ．
+◆Hey!  Parking meters!↓
+  And you’re walking around!@KEY()↓
+◆Ha ha ha...That’s so funny@KEY()↓
+◆Wwwweeelcome come to Mmmmmoooonsiddeee.
 
 ;jpn:◆あんたたちったら↓
-;jpn:　ゆうびんポストのくせして↓
-;jpn:　ふらふら　あるきまわったりして。@KEY()
-;jpn:◆おかしいったら　ありゃしない。@KEY()↓
+;jpn: ゆうびんポストのくせして↓
+;jpn: ふらふら あるきまわったりして。@KEY()
+;jpn:◆おかしいったら ありゃしない。@KEY()↓
 ;jpn:◆ムムーーンンササイイドドへへ↓
-;jpn:　よよううここそそ。
+;jpn: よよううここそそ。
 @KEYNP()
 』
 
@@ -680,34 +680,34 @@ MSG_MOON_Q;
 ;@Message:MSG_MOON_VISIBLEMAN
 MSG_MOON_VISIBLEMAN;
 ;「不透明人間」
-;（ある「通行人」から飛ばされる先が「ドアのない部屋」で、彼はそこの住人）
+;(ある「通行人」から飛ばされる先が「ドアのない部屋」で、彼はそこの住人)
 @CHKFGOTO(FLG_MOON_INVISIBLEMAN,_MOON_VISIBLEMAN_AFTER)
-◆Ｉ’ｍ　ｒｅａｌｌｙ　ｂｕｓｙ　ｄｏｉｎｇ　ｎｏｔｈｉｎｇ，　ｓｏ　Ｉ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｉｍｅ　ｔｏ　ｔａｌｋ　ｔｏ　ｙｏｕ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｎｅｅｄ　ｓｏｍｅｔｈｉｎｇ，　ｔａｌｋ　ｔｏ　ｍｙ　ｐａｒｔｎｅｒ．@KEY()↓
-◆Ｈｅ’ｓ　ｒｉｇｈｔ　ｏｖｅｒ　ｔｈｅｒｅ．．．ｓｅｅ？@KEY()↓
-◆Ｙｏｕ　ｍｅａｎ　ｙｏｕ　ｃａｎ’ｔ　ｓｅｅ　ｈｉｍ？
-;jpn:◆おれは　いま　ヒマでヒマで↓
-;jpn:　てが　はなせねえのよ。@KEY()↓
-;jpn:◆ようじが　あるんなら↓
-;jpn:　そこにいる　おれの　あいぼうに↓
-;jpn:　はなしかけてみちゃ　どうだ？@KEY()↓
-;jpn:◆ほら　そこに　いるだろうよ。
+◆I’m really busy doing nothing, so I don’t have time to talk to you.@KEY()↓
+◆If you need something, talk to my partner.@KEY()↓
+◆He’s right over there...see?@KEY()↓
+◆You mean you can’t see him?
+;jpn:◆おれは いま ヒマでヒマで↓
+;jpn: てが はなせねえのよ。@KEY()↓
+;jpn:◆ようじが あるんなら↓
+;jpn: そこにいる おれの あいぼうに↓
+;jpn: はなしかけてみちゃ どうだ?@KEY()↓
+;jpn:◆ほら そこに いるだろうよ。
 
 @KEYNP()
 』
 
 _MOON_VISIBLEMAN_AFTER;
-;（室外に飛ばされる。つまり脱出できる）
-◆Ｗｈａｔ　ｔｈｅ．．．？↓
-　　Ｙｏｕ’ｒｅ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｓｏｍｅ　ｋｉｎｄ　ｏｆ　ｄｏｏｒ？@KEY()↓
-◆Ｗｅｌｌ，　ｙｏｕ’ｒｅ　ｎｏｔ　ｇｏｎｎａ　ｆｉｎｄ　ｏｎｅ！@KEY()↓
-◆Ｓｏ，　ｇｅｔ　ｏｕｔ　ｏｆ　ｍｙ　ｆａｃｅ，　ｌｏｓｅｒ．．．@KEY()↓
-◆Ｉ　ｈａｖｅ　ｎｏ　ｐａｔｉｅｎｃｅ　ｗｈｅｎ　ｐｅｏｐｌｅ　ｉｎｔｅｒｒｕｐｔ　ｍｅ　ｗｈｉｌｅ　Ｉ’ｍ　ｂｕｓｙ　ｄｏｉｎｇ　ｎｏｔｈｉｎｇ．
-;jpn:◆あんだって？@WI(20)↓
-;jpn:　ドアを　さがしてる？@KEY()↓
-;jpn:◆そんなもな　ここにゃ　ねえよ！@KEY()↓
-;jpn:◆おれのヒマを　じゃまするやつぁ↓
-;jpn:　こっから　でてけっ！
+;(室外に飛ばされる。つまり脱出できる)
+◆What the...?↓
+  You’re looking for some kind of door?@KEY()↓
+◆Well, you’re not gonna find one!@KEY()↓
+◆So, get out of my face, loser...@KEY()↓
+◆I have no patience when people interrupt me while I’m busy doing nothing.
+;jpn:◆あんだって?@WI(20)↓
+;jpn: ドアを さがしてる?@KEY()↓
+;jpn:◆そんなもな ここにゃ ねえよ!@KEY()↓
+;jpn:◆おれのヒマを じゃまするやつぁ↓
+;jpn: こっから でてけっ!
 @KEY()
 @CLOSEALL()
 @WI(1)
@@ -724,26 +724,26 @@ _MOON_VISIBLEMAN_AFTER;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_INVISIBLEMAN
 MSG_MOON_INVISIBLEMAN;
-;「透明人間」（「ドアのない部屋」にいる。見えないがヒットする）
-◆Ｃａｎ　ｙｏｕ　ｓｅｅ　ｍｅ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+;「透明人間」(「ドアのない部屋」にいる。見えないがヒットする)
+◆Can you see me?↓
+<Yes>
+<No>
 
-;jpn:◆あんたら　おいらが　みえるのか？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆あんたら おいらが みえるのか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MOON_INVISIBLEMAN_YES,_MOON_INVISIBLEMAN_NO)
 
 _MOON_INVISIBLEMAN_NO;
-◆Ｈａ　ｈａ．↓
-　　Ｙｏｕ　ｃａｎ，　ｈｕｈ？@KEY()↓
-◆Ｈｅ　ｈｅ．↓
-　　Ｙｏｕ’ｖｅ　ｂｅｃｏｍｅ　ａ　ｒｅａｌ　Ｍｏｏｎｓｉｄｉａｎ，　ｈａｖｅｎ’ｔ　ｙｏｕ？
+◆Ha ha.↓
+  You can, huh?@KEY()↓
+◆He he.↓
+  You’ve become a real Moonsidian, haven’t you?
 
 ;jpn:◆ヒッヒ。@WI(15)↓
-;jpn:　おいらが　みえるってか。@KEY()↓
-;jpn:◆ヒッヒ@WI(15)　あんたら　りっぱな↓
-;jpn:　ムーンサイドびとだぁよ。
+;jpn: おいらが みえるってか。@KEY()↓
+;jpn:◆ヒッヒ@WI(15) あんたら りっぱな↓
+;jpn: ムーンサイドびとだぁよ。
 @KEYNP()
 @SETF(FLG_MOON_INVISIBLEMAN)
 @SET_HIT_RECT(1,HRECT_MOON_A,MSG_MOON_INVISIBLE_1)
@@ -752,16 +752,16 @@ _MOON_INVISIBLEMAN_NO;
 』
 
 _MOON_INVISIBLEMAN_YES;
-◆Ｈａ　ｈａ．↓
-　　Ｙｏｕ　ｃａｎ’ｔ？@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｄｅｆｉｎｉｔｅｌｙ　ｎｏｔ　ｆｒｏｍ　ａｒｏｕｎｄ　ｈｅｒｅ．@KEY()↓
-◆Ｈｅｅ　ｈｅｅ．↓
-　　Ｇｅｔ　ｇｏｉｎｇ　ｎｏｗ．　　Ｈｅｒｅ’ｓ　ｙｏｕｒ　ｈａｔ，　ｗｈａｔ’ｓ　ｙｏｕｒ　ｈｕｒｒｙ．．．
+◆Ha ha.↓
+  You can’t?@KEY()↓
+◆You’re definitely not from around here.@KEY()↓
+◆Hee hee.↓
+  Get going now.  Here’s your hat, what’s your hurry...
 ;jpn:◆ヒッヒ。@WI(15)↓
-;jpn:　おいらが　みえねえってか。@KEY()↓
-;jpn:◆あんたら　ムーンサイドびとじゃ↓
-;jpn:　ねえようだな@WI(15)　ヒッヒ。@KEY()↓
-;jpn:◆はええとこ　でていきな@WI(15)　ヒッヒ。
+;jpn: おいらが みえねえってか。@KEY()↓
+;jpn:◆あんたら ムーンサイドびとじゃ↓
+;jpn: ねえようだな@WI(15) ヒッヒ。@KEY()↓
+;jpn:◆はええとこ でていきな@WI(15) ヒッヒ。
 @KEYNP()
 』
 
@@ -780,21 +780,21 @@ MSG_MOON_INVISIBLE_1;
 ;ネスたちが歩いていると数秒おき
 ;あるいは数歩おきに出てくるセリフ
 @OPEN(1)
-◆Ｈｅ　ｈｅ　ｈａ！　　Ｉｔ’ｓ　ｍｅ！↓
-　　Ｙｏｕ　ｃａｎ　ｓｅｅ　ｍｅ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ｓｏｍｅｔｈｉｎｇ　ｉｎｔｅｒｅｓｔｉｎｇ　ａｂｏｕｔ　ｙｏｕ，　ｓｏ　Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｆｏｌｌｏｗ　ｙｏｕ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｗｏｒｒｙ，　ｔｈｏｕｇｈ．．．↓
-　　Ｈｅｈ　ｈｅｈ．．．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｇｅｔ　ｉｎｔｏ　ａ　ｆｉｇｈｔ，　Ｉ’ｌｌ　ｓｔａｙ　ｏｕｔ　ｏｆ　ｉｔ．．．
+◆He he ha!  It’s me!↓
+  You can see me, right?@KEY()↓
+◆There’s something interesting about you, so I’m going to follow you.@KEY()↓
+◆Don’t worry, though...↓
+  Heh heh...@KEY()↓
+◆If you get into a fight, I’ll stay out of it...
 
-;jpn:◆ヒッヒ@WI(15)　おいらだよ　おいら。↓
-;jpn:　あんたらには　おいらのすがたが↓
-;jpn:　みえている‥‥@WI(15)と。@KEY()↓
-;jpn:◆なんだか　おもしろそうだから↓
-;jpn:　おいらもいっしょに　ついていく。@KEY()↓
-;jpn:◆しんぱい　すんなって@WI(15)　ヒッヒ。↓
-;jpn:　あんたらが　バトルになっても↓
-;jpn:　おいら@WI(15)　なーんも　しねえから。
+;jpn:◆ヒッヒ@WI(15) おいらだよ おいら。↓
+;jpn: あんたらには おいらのすがたが↓
+;jpn: みえている‥‥@WI(15)と。@KEY()↓
+;jpn:◆なんだか おもしろそうだから↓
+;jpn: おいらもいっしょに ついていく。@KEY()↓
+;jpn:◆しんぱい すんなって@WI(15) ヒッヒ。↓
+;jpn: あんたらが バトルになっても↓
+;jpn: おいら@WI(15) なーんも しねえから。
 @KEYNP()
 @SET_HIT_RECT(1,HRECT_MOON_B,MSG_MOON_INVISIBLE_2)
 @CLOSE()
@@ -810,12 +810,12 @@ MSG_MOON_INVISIBLE_1;
 ;@Message:MSG_MOON_INVISIBLE_2
 MSG_MOON_INVISIBLE_2;
 @OPEN(1)
-◆Ｈｅｈ　ｈｅｈ．↓
-　　Ｙｏｕ　ｃａｎ’ｔ　ｓｅｅ　ｍｅ．．．ｒｉｇｈｔ？
+◆Heh heh.↓
+  You can’t see me...right?
 
 ;jpn:◆ヒッヒ。@KEY()↓
-;jpn:◆あんたらには　おいらのすがたが↓
-;jpn:　みえている‥‥@WI(15)と。
+;jpn:◆あんたらには おいらのすがたが↓
+;jpn: みえている‥‥@WI(15)と。
 @KEYNP()
 @SET_HIT_RECT(1,HRECT_MOON_C,MSG_MOON_INVISIBLE_3)
 @CLOSE()
@@ -831,16 +831,16 @@ MSG_MOON_INVISIBLE_2;
 ;@Message:MSG_MOON_INVISIBLE_3
 MSG_MOON_INVISIBLE_3;
 @OPEN(1)
-◆Ｈｙｕｋ　ｈｕｙｋ．↓
-　　Ｈｅｙ！@KEY()↓
-◆Ｄｏｎ’ｔ　ｙｏｕ　ｗｉｓｈ　ｙｏｕ　ｈａｄ　ａ　ｇｏｌｄ　ｔｏｏｔｈ　ｌｉｋｅ　ｍｉｎｅ？@KEY()↓
-◆Ｇｉｖｅ　ｍｅ　ａ　ｓｍｉｌｅ！↓
-　　Ｈｅｈ　ｈｅｈ
+◆Hyuk huyk.↓
+  Hey!@KEY()↓
+◆Don’t you wish you had a gold tooth like mine?@KEY()↓
+◆Give me a smile!↓
+  Heh heh
 ;jpn:◆ヒッヒ。↓
-;jpn:　なぁ　おい　あんたら‥‥@KEY()↓
-;jpn:◆おいらの　この　きんば@WI(15)↓
-;jpn:　うらやましいだろう？@KEY()↓
-;jpn:◆にかっ　にかっ。
+;jpn: なぁ おい あんたら‥‥@KEY()↓
+;jpn:◆おいらの この きんば@WI(15)↓
+;jpn: うらやましいだろう?@KEY()↓
+;jpn:◆にかっ にかっ。
 @KEYNP()
 @SET_HIT_RECT(1,HRECT_MOON_D1,MSG_MOON_INVISIBLE_4_A)
 @SET_HIT_RECT(2,HRECT_MOON_D2,MSG_MOON_INVISIBLE_4_B)
@@ -858,10 +858,10 @@ MSG_MOON_INVISIBLE_3;
 MSG_MOON_INVISIBLE_4;
 MSG_MOON_INVISIBLE_4_A;
 @OPEN(1)
-◆＊Ｇｒｉｎ＊Ｇｒｉｎ＊．@KEY()↓
-◆Ｈｅｈ　ｈｅｈ．
+◆＊Grin＊Grin＊.@KEY()↓
+◆Heh heh.
 
-;jpn:◆にかっ　にかっ。@KEY()↓
+;jpn:◆にかっ にかっ。@KEY()↓
 ;jpn:◆ヒッヒ。
 @KEYNP()
 @RES_HIT_RECT(2)
@@ -871,10 +871,10 @@ MSG_MOON_INVISIBLE_4_A;
 
 MSG_MOON_INVISIBLE_4_B;
 @OPEN(1)
-◆＊Ｓｍｉｌｅ＊Ｓｍｉｌｅ＊@KEY()↓
-◆Ｈｅｈ　ｈｅｈ．
+◆＊Smile＊Smile＊@KEY()↓
+◆Heh heh.
 
-;jpn:◆にかっ　にかっ。@KEY()↓
+;jpn:◆にかっ にかっ。@KEY()↓
 ;jpn:◆ヒッヒ。
 @KEYNP()
 @RES_HIT_RECT(1)
@@ -892,15 +892,15 @@ MSG_MOON_INVISIBLE_4_B;
 ;@Message:MSG_MOON_INVISIBLE_5
 MSG_MOON_INVISIBLE_5;
 @OPEN(1)
-◆Ｕｈ．．．Ｈｅｈ　ｈｅｈ．．．↓
-　　Ｙｏ！@KEY()↓
-◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｍｙ　ｅｙｅｂｒｏｗｓ　ｒｏｃｋ？@KEY()↓
-◆Ｃｈｅｃｋ’ｅｍ　ｏｕｔ．．．ｔｈｅｙ’ｒｅ　ｃｏｎｎｅｃｔｅｄ！
+◆Uh...Heh heh...↓
+  Yo!@KEY()↓
+◆Don’t you think my eyebrows rock?@KEY()↓
+◆Check’em out...they’re connected!
  
 ;jpn:◆ヒッヒ。↓
-;jpn:　なぁ　おい　あんたら‥‥@KEY()↓
-;jpn:◆おいらの　この　まゆげ@WI(15)↓
-;jpn:　つながってて　カッコエエだろ？
+;jpn: なぁ おい あんたら‥‥@KEY()↓
+;jpn:◆おいらの この まゆげ@WI(15)↓
+;jpn: つながってて カッコエエだろ?
 @KEYNP()
 @CLOSE()
 @FUNC(6)                ;毒死許可
@@ -909,7 +909,7 @@ MSG_MOON_INVISIBLE_5;
 
 
 ;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:通行人Ｒ
+;@Person:通行人R
 ;@Figure:若い船乗り
 ;@AppearanceKey:FLG_MOON_R_DISAPPEAR/off
 ;@ActionScript:＊小範囲うろつき
@@ -917,40 +917,40 @@ MSG_MOON_INVISIBLE_5;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_R
 MSG_MOON_R;
-;（彼がジャマで「マニマニ」のエリアに入ることができない）
+;(彼がジャマで「マニマニ」のエリアに入ることができない)
 @CHKFGOTO(FLG_MOON_INVISIBLEMAN,_MOON_R_AFTER)
-◆Ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　Ｓｔａｔｕｅ　ｉｓ　ｕｐ　ａｈｅａｄ，　ｂｕｔ　Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｓｔｏｐ　ｙｏｕ　ｒｉｇｈｔ　ｈｅｒｅ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｅｖｅｎ　ｔｈｉｎｋ　ａｂｏｕｔ　ｇｅｔｔｉｎｇ　ｐａｓｔ　ｍｅ，@KEY()↓
-◆’ｃａｕｓｅ　ｙｏｕ　ａｒｅｎ’ｔ　ｗｉｔｈ　ａ　ｇｕｙ@KEY()↓
-◆ｗｈｏｓｅ　ｅｙｅｂｒｏｗｓ　ａｒｅ　ｃｏｎｎｅｃｔｅｄ　ａｎｄ　ｗｈｏ　ａｌｓｏ　ｈａｓ　ａ　ｇｏｌｄ　ｔｏｏｔｈ．
+◆The Mani Mani Statue is up ahead, but I’m going to stop you right here.@KEY()↓
+◆Don’t even think about getting past me,@KEY()↓
+◆’cause you aren’t with a guy@KEY()↓
+◆whose eyebrows are connected and who also has a gold tooth.
 
 ;jpn:◆マニマニのぞうなら↓
-;jpn:　この　すぐさきに　ある。@WI(20)↓
-;jpn:　だけど　おれが　じゃましてる。@KEY()↓
+;jpn: この すぐさきに ある。@WI(20)↓
+;jpn: だけど おれが じゃましてる。@KEY()↓
 ;jpn:◆まゆげがつながってて↓
-;jpn:　きんばのおとこの　ひとりも↓
-;jpn:　つれていないようなやつに@KEY()↓
-;jpn:◆ここをとおる　しかくが↓
-;jpn:　あるとおもうなよ！
+;jpn: きんばのおとこの ひとりも↓
+;jpn: つれていないようなやつに@KEY()↓
+;jpn:◆ここをとおる しかくが↓
+;jpn: あるとおもうなよ!
 @KEYNP()
 @SETF(FLG_MOON_WARP_X)
 』
 
 _MOON_R_AFTER;
-◆Ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　Ｓｔａｔｕｅ　ｉｓ　ｕｐ　ａｈｅａｄ，　ｂｕｔ　Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｓｔｏｐ　ｙｏｕ　ｒｉｇｈｔ　ｈｅｒｅ．@KEY()↓
-◆Ｈｕｚｚａｈ！↓
-　　Ｙｏｕ　ｒｅａｌｌｙ　ｓｕｒｐｒｉｓｅｄ　ｍｅ！@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｔｈｅ　ｍａｎ　ｗｈｏｓｅ　ｅｙｅｂｒｏｗｓ　ａｒｅ　ｃｏｎｎｅｃｔｅｄ　ａｎｄ　ｗｈｏ　ｈａｓ　ａ　ｇｏｌｄ　ｔｏｏｔｈ！@KEY()↓
-◆Ｈｏｗ　ａｂｏｕｔ　ｗｅ　ｄｕｍｐ　ｔｈｅｓｅ　ｋｉｄｓ　ａｎｄ　ｇｏ　ｇｅｔ　ｓｏｍｅｔｈｉｎｇ　ｔｏ　ｄｒｉｎｋ！？
+◆The Mani Mani Statue is up ahead, but I’m going to stop you right here.@KEY()↓
+◆Huzzah!↓
+  You really surprised me!@KEY()↓
+◆You’re the man whose eyebrows are connected and who has a gold tooth!@KEY()↓
+◆How about we dump these kids and go get something to drink!?
  
 ;jpn:◆マニマニのぞうなら↓
-;jpn:　この　すぐさきに　ある。↓
-;jpn:　だけど　おれが　じゃまして‥‥@KEY()↓
-;jpn:◆おやおや　これは　おどろいた！@WI(20)↓
-;jpn:　まゆげつながりの　きんばさん！@KEY()↓
-;jpn:◆こんなガキども　ほっといて↓
-;jpn:　バーボンでも　ひっかけに↓
-;jpn:　さあ　いきましょうぜ！
+;jpn: この すぐさきに ある。↓
+;jpn: だけど おれが じゃまして‥‥@KEY()↓
+;jpn:◆おやおや これは おどろいた!@WI(20)↓
+;jpn: まゆげつながりの きんばさん!@KEY()↓
+;jpn:◆こんなガキども ほっといて↓
+;jpn: バーボンでも ひっかけに↓
+;jpn: さあ いきましょうぜ!
 @KEY()
 @REMOVE_CHAR(PRSN_MNSD_FIELD_R,ANIM_MONO_R_MAN)
 @WAITSYS()
@@ -966,10 +966,10 @@ _MOON_R_AFTER;
 ;@CheckMessage:MSG_MOON_MANIMANI
 ;@Message:0
 MSG_MOON_MANIMANI;
-◆（Ｉｔ　ｉｓ　ａ　ｇｏｌｄｅｎ　ｓｔａｔｕｅ　ｔｈａｔ　ｙｏｕ　ｈａｖｅ　ｓｅｅｎ　ｂｅｆｏｒｅ．）
+◆(It is a golden statue that you have seen before.)
 
-;jpn:◆（まえに　みたことのある↓
-;jpn:　おうごんぞうだった）
+;jpn:◆(まえに みたことのある↓
+;jpn: おうごんぞうだった)
 @KEY()
 @GOSUB(MSG_BATTLE_MANIMANI)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
@@ -986,13 +986,13 @@ MSG_MOON_MANIMANI;
 @WI(20)
 MSG_CHECK_FOUR_MANIMANI;壊れたマニマニチェック時
 @OPEN(1)
-◆（Ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　ｓｔａｔｕｅ　ｗａｓ　ａｃｔｕａｌｌｙ　ａ　ｄｅｖｉｃｅ　ｔｈａｔ　ｃｒｅａｔｅｄ　ｉｌｌｕｓｉｏｎｓ．@KEY()↓
-◆Ｔｈｅ　ｉｌｌｕｓｉｏｎ　ｄｅｖｉｃｅ　ｗａｓ　ｄｅｓｔｒｏｙｅｄ．）
+◆(The Mani Mani statue was actually a device that created illusions.@KEY()↓
+◆The illusion device was destroyed.)
 
-;jpn:◆（「マニマニのあくま」は↓
-;jpn:　げんえいマシーンだった。@KEY()↓
+;jpn:◆(「マニマニのあくま」は↓
+;jpn: げんえいマシーンだった。@KEY()↓
 ;jpn:◆げんえいマシーンは↓
-;jpn:　はかいされた）
+;jpn: はかいされた)
 @KEYNP()
 @CLOSEALL()
 @SET_COMEBACK_POS(TLPT_FOURSIDE)
@@ -1001,47 +1001,47 @@ MSG_CHECK_FOUR_MANIMANI;壊れたマニマニチェック時
 
 ;-------------------------------------------------
 ;@Habitat:ムーンサイド／ムーンサイド博物館／どこか
-;@Person:館員Ａ
-;@Figure:サラリーマンＤ
+;@Person:館員A
+;@Figure:サラリーマンD
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_MUSEUM_A
 MSG_MOON_MUSEUM_A;
-◆Ｂｏｎｅｓ　ａｒｅ　ｇｒｅａｔ！↓
-　　Ｄｏ　ｙｏｕ　ｌｉｋｅ　ｂｏｎｅｓ，　ｔｏｏ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆Bones are great!↓
+  Do you like bones, too?↓
+<Yes>
+<No>
 
-;jpn:◆ほねは　すばらしいです。@KEY()↓
-;jpn:◆あなたも　ほねが↓
-;jpn:　おすきなんですか？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆ほねは すばらしいです。@KEY()↓
+;jpn:◆あなたも ほねが↓
+;jpn: おすきなんですか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MOON_MUSEUM_A_YES,_MOON_MUSEUM_A_NO)
 
 _MOON_MUSEUM_A_NO;
-◆Ｙｏｕ　ｌｉｋｅ　ｂｏｎｅｓ？↓
-　　Ｂｏｎｅ　ｂｏｎｅ　ｂｏｎｅ．
+◆You like bones?↓
+  Bone bone bone.
 
-;jpn:◆ほねが　おすきなんですね。↓
-;jpn:　ほね@WI(15)　ほね@WI(15)　ほね。
+;jpn:◆ほねが おすきなんですね。↓
+;jpn: ほね@WI(15) ほね@WI(15) ほね。
 @KEYNP()
 』
 
 _MOON_MUSEUM_A_YES;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｌｉｋｅ　ｂｏｎｅｓ？↓
-　　Ｂｏｎｅ　Ｂｏｎｅ　Ｂｏｎｅ．
+◆You don’t like bones?↓
+  Bone Bone Bone.
 
-;jpn:◆ほねが　おきらいですか。↓
-;jpn:　ほね@WI(15)　ほね@WI(15)　ほね。
+;jpn:◆ほねが おきらいですか。↓
+;jpn: ほね@WI(15) ほね@WI(15) ほね。
 @KEYNP()
 』
 
 
 ;@Habitat:ムーンサイド／ムーンサイド博物館／どこか
-;@Person:館員Ｂ
+;@Person:館員B
 ;@Figure:コモリター
 ;@AppearanceKey:0
 ;@ActionScript:＊小範囲うろつき
@@ -1049,26 +1049,26 @@ _MOON_MUSEUM_A_YES;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_MUSEUM_B
 MSG_MOON_MUSEUM_B;
-◆Ｄｏ　ｙｏｕ　ｋｎｏｗ　ｗｈｏｓｅ　ｂｏｎｅｓ　ａｒｅ　ｏｎ　ｄｉｓｐｌａｙ　ｈｅｒｅ？@KEY()↓
-◆Ｔｈｅ　ａｎｓｗｅｒ　ｉｓ．．．ｙｏｕｒ　ｂｏｎｅｓ．@KEY()↓
-◆Ｍｙ　ｂｏｎｅｓ．@KEY()↓
-◆Ｂｏｎｅ’ｓ　ｂｏｎｅｓ．@KEY()↓
-◆Ｂｏｎｅ　ｂｏｎｅ　ｂｏｎｅ．
+◆Do you know whose bones are on display here?@KEY()↓
+◆The answer is...your bones.@KEY()↓
+◆My bones.@KEY()↓
+◆Bone’s bones.@KEY()↓
+◆Bone bone bone.
 
-;jpn:◆ここに　てんじちゅうの　ほね@WI(15)↓
-;jpn:　なんのほねか　わかりますか？↓
-;jpn:　こたえはですね‥‥@KEY()↓
+;jpn:◆ここに てんじちゅうの ほね@WI(15)↓
+;jpn: なんのほねか わかりますか?↓
+;jpn: こたえはですね‥‥@KEY()↓
 ;jpn:◆あなたのほね。@KEY()↓
 ;jpn:◆わたしのほね。@KEY()↓
 ;jpn:◆ほねのほね。@KEY()↓
-;jpn:◆ほね@WI(15)　ほね@WI(15)　ほね。
+;jpn:◆ほね@WI(15) ほね@WI(15) ほね。
 @KEYNP()
 』
 
 ；----------------------------------------
 ;@Habitat:ムーンサイドホテル／フロント
 ;@Person:フロントマン
-;@Figure:おじさんＢ
+;@Figure:おじさんB
 ;@AppearanceKey:0
 ;@ActionScript:＊正面向いて止まったまま
 ;@GoodsMessage:0
@@ -1090,16 +1090,16 @@ MSG_MOON_HOTEL_DESK;
 MSG_MOON_HOTELPORTER;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｓｔａｙ　ｏｖｅｒｎｉｇｈｔ？
-◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ａｌｗａｙｓ　ｇｉｖｉｎｇ　ｓｕｃｈ　ｇｅｎｅｒｏｕｓ　ｔｉｐｓ！@KEY()↓
-◆．．．Ｏｈ，　Ｅｘｃｕｓｅ　ｍｅ，　Ｉ　ｈａｖｅｎ’ｔ　ｇｏｔｔｅｎ　ａｎｙ　ｔｉｐｓ　ｆｒｏｍ　ｙｏｕ．
+◆Would you like to stay overnight?
+◆Thank you for always giving such generous tips!@KEY()↓
+◆...Oh, Excuse me, I haven’t gotten any tips from you.
 
 ;jpn:◆@DSP_NAME(0)さま‥‥@WI(15)↓
-;jpn:　こんやも　おとまりですか。@KEY()↓
+;jpn: こんやも おとまりですか。@KEY()↓
 ;jpn:◆いつもチップを↓
-;jpn:　ありがとうございます。@KEY()↓
-;jpn:◆‥‥あ@WI(15)　もらってなかったでした。↓
-;jpn:　しつれいしました。
+;jpn: ありがとうございます。@KEY()↓
+;jpn:◆‥‥あ@WI(15) もらってなかったでした。↓
+;jpn: しつれいしました。
 @KEYNP()
 』
 
@@ -1122,7 +1122,7 @@ MSG_MOON_HOTELPORTER;
 ;@CheckMessage:0
 ;@Message:MSG_MOON_HOSPITAL_USHER
 MSG_MOON_HOSPITAL_USHER;@MiuraAppended
-;◆どなたに　ごめんかいですか？@KEY()
+;◆どなたに ごめんかいですか?@KEY()
 @GOSUB(MSG_NURSE_MOON)
 』
 
@@ -1136,18 +1136,18 @@ MSG_MOON_HOSPITAL_USHER;@MiuraAppended
 ;@Message:MSG_MOON_HOSPITAL_DOCTOR
 MSG_MOON_HOSPITAL_DOCTOR;@MiuraAppended
 ;◆みてもらいたいのは↓
-;　だれだね？@KEY()
+; だれだね?@KEY()
 @GOSUB(MSG_DOCTOR_MOON)
 』
 ;------------------------------------------------
 
 MSG_MOON_MONOTOLY;ムーンサイドのモノトリー
-◆Ｄｏｎ’ｔ　ｄｏ　ａｎｙｔｈｉｎｇ　ｔｏ　ｍｅ！↓
-　　Ｉ　ａｍ．．．Ｉ　ａｍ　ｎｏｔ　Ｍｏｎｏｔｏｌｉ！
+◆Don’t do anything to me!↓
+  I am...I am not Monotoli!
 
-;jpn:◆つきまとうな！@WI(30)↓
-;jpn:　わ‥わたしは↓
-;jpn:　モノトリーなんかじゃない！
+;jpn:◆つきまとうな!@WI(30)↓
+;jpn: わ‥わたしは↓
+;jpn: モノトリーなんかじゃない!
 @KEY()
 @HIDE_CHAR(PRSN_MNSD_FIELD_Q,OBJFX_HIDE_VSTRIPE)
 @WI(120)
@@ -1156,16 +1156,16 @@ MSG_MOON_MONOTOLY;ムーンサイドのモノトリー
 ;------------------------------------------------
 
 MSG_MOON_MUSEUM_PLATE;
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｍｏｏｎｓｉｄｅ！
-　　Ｗｈｙ　ｄｉｄ　ｙｏｕ　ｃｏｍｅ　ｔｏ　Ｍｏｏｎｓｉｄｅ？
-　　Ｈｏｗ　ｌｏｎｇ　ａｒｅ　ｙｏｕ　ｓｔａｙｉｎｇ　ｉｎ　Ｍｏｏｎｓｉｄｅ？
+◆Welcome to Moonside!
+  Why did you come to Moonside?
+  How long are you staying in Moonside?
 
-;jpn:◆ようこそ　ムーンサイドへ！↓
-;jpn:　どうして　ムーンサイドを？↓
-;jpn:　いつまで　ムーンサイドに？
+;jpn:◆ようこそ ムーンサイドへ!↓
+;jpn: どうして ムーンサイドを?↓
+;jpn: いつまで ムーンサイドに?
 @KEYNP()
 』
 ;------------------------------------------------
-;{ＰＡＧＥ}
+;{PAGE}
 
 

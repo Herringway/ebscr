@@ -3,29 +3,29 @@
 MSG_BTL_GOODS_NO_EFFECT;
 ←
 ◆@DSP_ACTOR()
-;jpn:　@DSP_ACTOR()は↓
+;jpn: @DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｕｓｅｄ↓
-　　ｔｈｅ　@DSP_GOODS(0)．
-;jpn:　@DSP_GOODS(0)を　つかった！
+ used↓
+  the @DSP_GOODS(0).
+;jpn: @DSP_GOODS(0)を つかった!
 @KEY()↓
-◆Ｂｕｔ　ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ．
-;jpn:　しかし　なにもおこらなかった！
+◆BCut nothing happened.
+;jpn: しかし なにもおこらなかった!
 @KEY()
 @!
 
 MSG_BTL_GOODS_NO_EFFECT_ON_BTL;
 ◆@DSP_ACTOR()
-;jpn:　@DSP_ACTOR()は↓
+;jpn: @DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｕｓｅｄ↓
-　　ｔｈｅ　@DSP_GOODS(0)．
-;jpn:　@DSP_GOODS(0)を　つかった！
+ used↓
+  the @DSP_GOODS(0).
+;jpn: @DSP_GOODS(0)を つかった!
 @KEY()↓
-◆Ｂｕｔ　ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ．
-;jpn:　しかし　なにもおこらなかった！
+◆BCut nothing happened.
+;jpn: しかし なにもおこらなかった!
 @KEY()
 @!
 
@@ -34,10 +34,10 @@ MSG_BTL_EQUIP_OK;
 @GET_CITEM()
 @XCHG()
 ←
-◆@DSP_ACTOR()　ｅｑｕｉｐｐｅｄ↓
-　　ｔｈｅ　@DSP_GOODS(0)　ｉｎｓｔｅａｄ．
-;jpn:　@DSP_ACTOR()は　@DSP_GOODS(0)に↓
-;jpn:　そうびしなおした！
+◆@DSP_ACTOR() equipped↓
+  the @DSP_GOODS(0) instead.
+;jpn: @DSP_ACTOR()は @DSP_GOODS(0)に↓
+;jpn: そうびしなおした!
 @SE(SE_se73_my_fitout)
 @KEY()
 @!
@@ -46,16 +46,16 @@ MSG_BTL_EQUIP_NG_WEAPON;
 ←
 @GET_CITEM()
 @XCHG()
-◆@DSP_ACTOR()　ｃｏｕｌｄ　ｎｏｔ↓
-　　ｅｑｕｉｐ　ｔｈｅ　@DSP_GOODS(0)．
-;jpn:　@DSP_ACTOR()は　@DSP_GOODS(0)を↓
-;jpn:　そうびできなかった！
+◆@DSP_ACTOR() could not↓
+  equip the @DSP_GOODS(0).
+;jpn: @DSP_ACTOR()は @DSP_GOODS(0)を↓
+;jpn: そうびできなかった!
 @KEY()
 ↓
-◆Ｓｉｎｃｅ　ｔｈｅｒｅ　ｗａｓ　ｎｏ　ａｌｔｅｒｎａｔｉｖｅ，↓
-　　@GOSUB(MSG_ESUB_HE_SHE_GACT)　ｆｏｕｇｈｔ　ｗｉｔｈ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｒｅｖｉｏｕｓ　ｗｅａｐｏｎ．
-;jpn:　しかたがないので↓
-;jpn:　もとのぶきで　こうげきした！
+◆Since there was no alternative,↓
+  @GOSUB(MSG_ESUB_HE_SHE_GACT) fought with @GOSUB(MSG_ESUB_HIS_HER_GACT) revious weapon.
+;jpn: しかたがないので↓
+;jpn: もとのぶきで こうげきした!
 @KEY()
 @!
 
@@ -64,16 +64,16 @@ MSG_BTL_EQUIP_NG_ARMOR
 ←
 @GET_CITEM()
 @XCHG()
-◆@DSP_ACTOR()　ｔｒｉｅｄ↓
-　　ｔｏ　ｅｑｕｉｐ　ｔｈｅ　@DSP_GOODS(0)．
-;jpn:　@DSP_ACTOR()は　@DSP_GOODS(0)を↓
-;jpn:　そうびしようとした！
+◆@DSP_ACTOR() tried↓
+  to equip the @DSP_GOODS(0).
+;jpn: @DSP_ACTOR()は @DSP_GOODS(0)を↓
+;jpn: そうびしようとした!
 @KEY()
 ↓
-◆　ｂｕｔ　@DSP_GOODS(0)　ｗａｓｎ’ｔ　ｍｅａｎｔ　ｆｏｒ　↓
-　　@DSP_ACTOR()．
-;jpn:　しかし　@DSP_GOODS(0)は
-;jpn:　@DSP_ACTOR()に　むいていなかった！
+◆ but @DSP_GOODS(0) wasn’t meant for ↓
+  @DSP_ACTOR().
+;jpn: しかし @DSP_GOODS(0)は
+;jpn: @DSP_ACTOR()に むいていなかった!
 @KEY()
 @!
 
@@ -81,23 +81,23 @@ MSG_BTL_GOODS_WRONG_USER;
 ←
 @GET_CITEM()
 @XCHG()
-◆@DSP_ACTOR()　ｔｒｉｅｄ↓
-　　ｔｏ　ｕｓｅ　ｔｈｅ　@DSP_GOODS(0)．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　@DSP_GOODS(0)を　つかおうとした！
+◆@DSP_ACTOR() tried↓
+  to use the @DSP_GOODS(0).
+;jpn: @DSP_ACTOR()は↓
+;jpn: @DSP_GOODS(0)を つかおうとした!
 @KEY()↓
-◆ｂｕｔ　@DSP_ACTOR()　ｃｏｕｌｄ　ｎｏｔ　ｕｓｅ↓
-　　ｔｈｅ　@DSP_GOODS(0)　ｖｅｒｙ　ｗｅｌｌ．
-;jpn:　しかし　@DSP_ACTOR()には↓
-;jpn:　つかいこなせなかった‥‥。
+◆but @DSP_ACTOR() could not use↓
+  the @DSP_GOODS(0) very well.
+;jpn: しかし @DSP_ACTOR()には↓
+;jpn: つかいこなせなかった‥‥。
 @KEY()
 @!
 
 MSG_SYS_GOODS_USE_NG_USER;
-◆@DSP_ACTOR()　ｃｏｕｌｄ　ｎｏｔ　ｕｓｅ↓
-　　ｔｈｅ　@DSP_GOODS(0)　ｖｅｒｙ　ｗｅｌｌ．
-;jpn:◆しかし　@DSP_ACTOR()には↓
-;jpn:　つかいこなせなかった‥‥。
+◆@DSP_ACTOR() could not use↓
+  the @DSP_GOODS(0) very well.
+;jpn:◆しかし @DSP_ACTOR()には↓
+;jpn: つかいこなせなかった‥‥。
 @KEY()
 @!
 

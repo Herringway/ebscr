@@ -1,10 +1,10 @@
-;/////////////////////////マップ専用グッズ（３／３）////////////////////////
+;/////////////////////////マップ専用グッズ(３／３)////////////////////////
 
 ;寄宿舎のロッカー
 MSG_WINS_LOCKER;
-◆Ｔｈｉｓ　ｏｎｅ　ｉｓ　ｌｏｃｋｅｄ．
+◆This one is locked.
 ;jpn:◆ロッカーには↓
-;jpn:　カギが　かかっている。
+;jpn: カギが かかっている。
 @KEYNP()
 @!
 
@@ -97,20 +97,20 @@ _SUB_WINS_LOCKER_PART1B;
 _SUB_WINS_LOCKER_PART2;
 @LOAD_REG()
 @XCHG()
-◆@DSP_NAME(0)　ｏｐｅｎｅｄ　ｔｈｅ　ｌｏｃｋｅｒ　ｕｓｉｎｇ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_KEY_CHOTTO)．
+◆@DSP_NAME(0) opened the locker using the @DSP_GOODS(GDS_TOOL_KEY_CHOTTO).
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　「ちょっとカギマシン」をつかって↓
-;jpn:　ロッカーを　あけた。
+;jpn: 「ちょっとカギマシン」をつかって↓
+;jpn: ロッカーを あけた。
 @SE(SE_se77_my_open_locker)
 @KEY()
 ←
 @!
 _SUB_WINS_LOCKER_PART3;●(akm0616 w/itoi)
 @SET_REG(1)
-◆Ｔｈｅｒｅ　ｗａｓ　ａ　@DSP_GOODS(0)　ｉｎ　ｔｈｅ　ｌｏｃｋｅｒ．
+◆There was a @DSP_GOODS(0) in the locker.
 ;jpn:◆ロッカーのなかには↓
-;jpn:　@DSP_GOODS(0)が↓
-;jpn:　はいっていた。
+;jpn: @DSP_GOODS(0)が↓
+;jpn: はいっていた。
 @KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_WINS_LOCKER_GOODSFULL)
@@ -121,11 +121,11 @@ _SUB_WINS_LOCKER_PART3;●(akm0616 w/itoi)
 ◆@DSP_NAME(0)
 ;jpn:◆@DSP_NAME(0)は↓
 @XCHG()
-　ｇｏｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)．
-;＠ｉｔ？三浦
-;jpn:　@DSP_GOODS(0)を↓
-;jpn:　てにいれた。
+ got↓
+  the @DSP_GOODS(0).
+;＠it?三浦
+;jpn: @DSP_GOODS(0)を↓
+;jpn: てにいれた。
 @KEYNP()
 @SE(SE_se74_my_get)
 @WI(1)
@@ -134,35 +134,35 @@ _SUB_WINS_LOCKER_PART3;●(akm0616 w/itoi)
 _WINS_LOCKER_LOCKER;
 @LOAD_REG()
 ←
-◆（Ｔｈｅ　ｋｅｙ　ｉｓ　ｂｅｎｔ　ａｎｄ　ｄｏｅｓｎ’ｔ　ｆｉｔ　ｉｎｔｏ　ｔｈｅ　ｋｅｙ　ｈｏｌｅ！）
-;jpn:◆（カギが　まがっていて↓
-;jpn:　カギあなに　はいらない！）
+◆(The key is bent and doesn’t fit into the key hole!)
+;jpn:◆(カギが まがっていて↓
+;jpn: カギあなに はいらない!)
 @KEYNP()
 @SETF(FLG_WINS_LOCKER_FAILED)
 @!
 
 _WINS_LOCKER_EMPTY;
-◆（Ｕｎｆｏｒｔｕｎａｔｅｌｙ，　ｔｈｅｒｅ　ｉｓ　ｎｏｔｈｉｎｇ　ｉｎ　ｔｈｉｓ　ｌｏｃｋｅｒ．）
-;jpn:◆（ざんねんながら↓
-;jpn:　このロッカーには↓
-;jpn:　なにもなかった）
+◆(Unfortunately, there is nothing in this locker.)
+;jpn:◆(ざんねんながら↓
+;jpn: このロッカーには↓
+;jpn: なにもなかった)
 @KEYNP()
 @!
 
 _WINS_LOCKER_GOODSFULL;
-◆Ｈｏｗｅｖｅｒ，　ｙｏｕ　ａｌｒｅａｄｙ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ｔｏ　ｃａｒｒｙ．
-;jpn:◆しかし　もちものが↓
-;jpn:　いっぱいだった。
+◆However, you already have too many things to carry.
+;jpn:◆しかし もちものが↓
+;jpn: いっぱいだった。
 @KEY()↓
 @GET_ORDER_PLAYER(1)
 @XCHG()
 ◆@DSP_NAME(0)
 ;jpn:◆@DSP_NAME(0)は↓
 @XCHG()
-　ｌｅｆｔ　ｔｈｅ　@DSP_GOODS(0)　ｉｎ　ｔｈｅ　ｌｏｃｋｅｒ．
-;＠ｉｔ？
-;jpn:　@DSP_GOODS(0)を↓
-;jpn:　ロッカーにもどした。
+ left the @DSP_GOODS(0) in the locker.
+;＠it?
+;jpn: @DSP_GOODS(0)を↓
+;jpn: ロッカーにもどした。
 @KEYNP()
 @!
 
@@ -189,9 +189,9 @@ MSG_THRK_PRISON_RECEIVE;
 
 _SUB_DOOR_LOCKED_MES;
 @OPEN(1)
-◆Ｔｈｅ　ｄｏｏｒ　ｉｓ　ｌｏｃｋｅｄ．
-;jpn:◆とびらには　カギが↓
-;jpn:　かかっている。
+◆The door is locked.
+;jpn:◆とびらには カギが↓
+;jpn: かかっている。
 @KEYNP()
 @CLOSEALL()
 @!
@@ -203,12 +203,12 @@ _SUB_DOOR_OPEN_MES;
 ◆@DSP_NAME(0)
 ;jpn:◆@DSP_NAME(0)は↓
 @XCHG()
-　ｕｓｅｄ↓
-　　ｔｈｅ　@DSP_GOODS(0)．
-;jpn:　@DSP_GOODS(0)を　つかった。
+ used↓
+  the @DSP_GOODS(0).
+;jpn: @DSP_GOODS(0)を つかった。
 @KEY()↓
-◆Ｔｈｅ　ｄｏｏｒ　ｏｐｅｎｅｄ．
-;jpn:◆とびらが　ひらいた。
+◆The door opened.
+;jpn:◆とびらが ひらいた。
 @KEYNP()
 @SE(SE_se77_my_open_locker)
 @!
@@ -216,61 +216,61 @@ _SUB_DOOR_OPEN_MES;
 _ONET_TABIGOYA_RECEIVE_NG;
 _WINS_LOCKER_RECEIVE_NG;
 _THRK_PRISON_RECEIVE_NG;
-◆Ｉｔ　ｗａｓｎ’ｔ　ｔｈｅ　ｒｉｇｈｔ　ｋｅｙ．
-;jpn:◆カギが　あわなかった。
+◆It wasn’t the right key.
+;jpn:◆カギが あわなかった。
 @KEYNP()
 @!
 
 MSG_BTL_GREORE_MACHINE;
 ←
-◆Ｔｈｅ　Ｓｕｐｏｒｍａ　ｓａｎｇ　ｔｈｅ　ｓｏｎｇ　”Ｏｄｅ　ｔｏ　Ｏｒａｎｇｅ　Ｋｉｄ．”@KEY()↓
-◆Ａｓ　ｓｏｏｎ　ａｓ　ｉｔ　ｆｉｎｉｓｈｅｄ，　ｔｈｅ　ｍａｃｈｉｎｅ　ｂｒｏｋｅ　ｄｏｗｎ．
+◆The Suporma sang the song ”Ode to Orange Kid.”@KEY()↓
+◆As soon as it finished, the machine broke down.
 ;jpn:◆オレンジキッドを↓
-;jpn:　たたえるうたが　きこえた。@KEY()↓
-;jpn:◆うたうだけ　うたうと↓
-;jpn:　マシーンはこわれてしまった。
+;jpn: たたえるうたが きこえた。@KEY()↓
+;jpn:◆うたうだけ うたうと↓
+;jpn: マシーンはこわれてしまった。
 @KEYNP()
 @!
 
 MSG_BTL_NOT_SO_GOOD;
 ←
-◆Ｂｙ　ｕｓｉｎｇ　ｔｈｅ　Ｉｎｓｉｇｎｉｆｉｃａｎｔ　Ｐｒｅｓｅｎｔ，　ｙｏｕ　ｈａｄ　ａ　ｖｅｒｙ　ｆｒｕｉｔｆｕｌ　ｅｘｐｅｒｉｅｎｃｅ@KEY()↓
-◆ｔｈａｔ　ｃａｎｎｏｔ　ｂｅ　ｕｎｄｅｒｓｔｏｏｄ　ｂｙ　ｓｏｍｅｏｎｅ　ｗｈｏ　ｄｏｅｓ　ｎｏｔ　ｕｓｅ　ｓｏｍｅｔｈｉｎｇ　ｉｎｓｉｇｎｉｆｉｃａｎｔ．
+◆By using the Insignificant Present, you had a very fruitful experience@KEY()↓
+◆that cannot be understood by someone who does not use something insignificant.
 ;jpn:◆たいしたことないものを↓
-;jpn:　つかうことで‥‥@KEY()↓
+;jpn: つかうことで‥‥@KEY()↓
 ;jpn:◆たいしたことないものを↓
-;jpn:　つかわないひとには　えられない↓
-;jpn:　ゆういぎな　けいけんをした。
+;jpn: つかわないひとには えられない↓
+;jpn: ゆういぎな けいけんをした。
 @KEYNP()
 @!
 
 
 MSG_BTL_MONKEY_MIND;●(akm0616 w/itoi)
 ←
-　@DSP_ACTOR()　ｕｓｅｄ　ｔｈｅ　Ｍｏｎｋｅｙ　Ｌｏｖｅ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　サルのきもちを　つかった！
+ @DSP_ACTOR() used the Monkey Love.
+;jpn: @DSP_ACTOR()は↓
+;jpn: サルのきもちを つかった!
 @KEY()
 ↓
-　Ａｌｌ　ｏｆ　ａ　ｓｕｄｄｅｎ，　ａ　ｍｏｎｋｅｙ　ｃａｍｅ　ａｌｏｎｇ，
-;jpn:　とつぜん↓
-;jpn:　サルがやってきて↓
+ All of a sudden, a monkey came along,
+;jpn: とつぜん↓
+;jpn: サルがやってきて↓
 @KEY()
 ↓
-　ａｎｄ　ｐｉｎｎｅｄ　ｔｈｅ　ｅｎｅｍｙ　ｄｏｗｎ　ｗｉｔｈ　ｉｔｓ　ｔｉｎｙ　ｍｏｎｋｅｙ　ｂｏｄｙ．
-;jpn:　ちいさいくせに↓
-;jpn:　てきを　はがいじめにした！
+ and pinned the enemy down with its tiny monkey body.
+;jpn: ちいさいくせに↓
+;jpn: てきを はがいじめにした!
 @KEY()
 @!
 
 
 MSG_BTL_GUMIDORIAN;
-;グミドリアン「つかう（たべる）」
+;グミドリアン「つかう(たべる)」
 ←
-◆Ｉｔ　ｓｍｅｌｌｅｄ　ｓｏ　ｕｎｂｅｌｉｅｖａｂｌｙ　ｂａｄ　ｔｈａｔ　ｙｏｕ　ｃｏｕｌｄ　ｎｏｔ　ｅａｔ　ｉｔ．
+◆It smelled so unbelievably bad that you could not eat it.
 ;jpn:◆このよのものとは↓
-;jpn:　おもえないくらい　くさくて↓
-;jpn:　たべられなかった。
+;jpn: おもえないくらい くさくて↓
+;jpn: たべられなかった。
 @KEYNP()
 』
 
@@ -281,38 +281,38 @@ MSG_BTL_LETTER_MAMA;
 ;プレゼントの中の手紙
 ;ママ
 ←
-◆（Ｄｅａｒ　@DSP_STS(STS_PC_NAME_NES)，↓
-　Ｈｏｗ　ａｒｅ　ｙｏｕ？@KEY()↓
-◆Ｓｉｎｃｅ　ｙｏｕ　ｌｅｆｔ　ｈｏｍｅ　ｏｎ　ｙｏｕｒ　ｊｏｕｒｎｅｙ，　ｔｈｉｎｇｓ　ｈａｖｅ　ｃｈａｎｇｅｄ　ａｒｏｕｎｄ　ｈｅｒｅ．@KEY()↓
-◆Ｆｏｒ　ｅｘａｍｐｌｅ，　Ｉ　ｄｏｎ’ｔ　ｈａｖｅ　ａｓ　ｍｕｃｈ　ｌａｕｎｄｒｙ．@KEY()↓
-◆Ａｌｓｏ，　ｗｅ　ｄｏｎ’ｔ　ｓｅｅｍ　ｔｏ　ｅａｔ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)　ａｓ　ｍｕｃｈ　ａｓ　ｗｅ　ｕｓｅｄ　ｔｏ．@KEY()↓
-◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｙｏｕ　ｄｅｆｅａｔｅｄ　ｓｏｍｅ　ｕｎｉｖｅｒｓａｌ　ｅｖｉｌ　ｃｈａｒａｃｔｅｒ−−ｗｈａｔ　ｗａｓ　ｉｔ，@KEY()↓
-◆Ｇｏｏｇｉ，　ｏｒ　ｓｏｍｅｔｈｉｎｇ　ｌｉｋｅ　ｔｈａｔ？@KEY()↓
-◆Ｗｅｌｌ，　ｔｈａｔ　ｓｏｕｎｄｓ　ｒｅａｌｌｙ　ｇｒｅａｔ！↓
-　　Ｉ　ｗａｎｔ　ｔｏ　ｈｅａｒ　ａｌｌ　ｔｈｅ　ｄｅｔａｉｌｓ，　ｓｏ　ｈｕｒｒｙ　ｈｏｍｅ，　ｏｋａｙ？@KEY()↓
-◆Ｔｒａｃｙ，　@DSP_STS(STS_PARTY_DOG_NAME)　ａｎｄ　Ｉ　ａｒｅ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．↓
-　　　　　　　　　　　　　　　　Ｌｏｖｅ，↓
-　　　　　　　　　　　　　　　　Ｍａｍａ）
-;jpn:◆（@DSP_STS(STS_PC_NAME_NES)　げんき？@WI(20)↓
-;jpn:　あなたが↓
-;jpn:　ぼうけんの　たびにでてから@KEY()↓
-;jpn:◆いろいろ　わがやにも↓
-;jpn:　へんかが　ありました。@KEY()↓
+◆(Dear @DSP_STS(STS_PC_NAME_NES),↓
+ How are you?@KEY()↓
+◆Since you left home on your journey, things have changed around here.@KEY()↓
+◆For example, I don’t have as much laundry.@KEY()↓
+◆Also, we don’t seem to eat @DSP_STS(STS_PARTY_FAVORITE_FOODS) as much as we used to.@KEY()↓
+◆I heard that you defeated some universal evil character−−what was it,@KEY()↓
+◆Googi, or something like that?@KEY()↓
+◆Well, that sounds really great!↓
+  I want to hear all the details, so hurry home, okay?@KEY()↓
+◆Tracy, @DSP_STS(STS_PARTY_DOG_NAME) and I are waiting for you.↓
+                Love,↓
+                Mama)
+;jpn:◆(@DSP_STS(STS_PC_NAME_NES) げんき?@WI(20)↓
+;jpn: あなたが↓
+;jpn: ぼうけんの たびにでてから@KEY()↓
+;jpn:◆いろいろ わがやにも↓
+;jpn: へんかが ありました。@KEY()↓
 ;jpn:◆ひとつは↓
-;jpn:　あなたの　せんたくものが↓
-;jpn:　へったこと。@KEY()↓
-;jpn:◆もうひとつは　あなたがいないので↓
-;jpn:　@DSP_STS(STS_PARTY_FAVORITE_FOODS)を　たべるかいすうが↓
-;jpn:　へったことです。@KEY()↓
-;jpn:◆ところで　グーギとかいう↓
-;jpn:　あくの　とりしまりを↓
-;jpn:　たいじしたんですってね。@KEY()↓
+;jpn: あなたの せんたくものが↓
+;jpn: へったこと。@KEY()↓
+;jpn:◆もうひとつは あなたがいないので↓
+;jpn: @DSP_STS(STS_PARTY_FAVORITE_FOODS)を たべるかいすうが↓
+;jpn: へったことです。@KEY()↓
+;jpn:◆ところで グーギとかいう↓
+;jpn: あくの とりしまりを↓
+;jpn: たいじしたんですってね。@KEY()↓
 ;jpn:◆すごいわ。@WI(30)↓
-;jpn:　ママも　はなしを　ききたいから↓
-;jpn:　はやく　かえってきてね。@KEY()↓
+;jpn: ママも はなしを ききたいから↓
+;jpn: はやく かえってきてね。@KEY()↓
 ;jpn:◆トレーシーと@DSP_STS(STS_PARTY_DOG_NAME)と↓
-;jpn:　まっています。↓
-;jpn:　　　　　　　　　　　ママより）
+;jpn: まっています。↓
+;jpn:           ママより)
 @KEYNP()
 』
 
@@ -320,36 +320,36 @@ MSG_BTL_LETTER_MAMA;
 MSG_BTL_LETTER_TONY;
 ;トニー
 ←
-◆（Ｄｅａｒ　@DSP_STS(STS_PC_NAME_JEFF)，↓
-　　Ｅｖｅｒｙｔｈｉｎｇ’ｓ　ｒｅａｌｌｙ　ｇｏｉｎｇ　ｇｒｅａｔ　ｈｅｒｅ．@KEY()↓
-◆Ｉ　ｗｉｓｈ　Ｉ　ｃｏｕｌｄ　ｈａｖｅ　ｇｏｎｅ　ｗｉｔｈ　ｙｏｕ　ｏｎ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ，　ｅｖｅｎ　ｊｕｓｔ　ｐａｒｔ　ｏｆ　ｔｈｅ　ｗａｙ，@KEY()↓
-◆ｂｕｔ　ｉｎｓｔｅａｄ　Ｉ’ｍ　ｓｉｔｔｉｎｇ　ｈｅｒｅ，　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ　ｉｎ　Ｗｉｎｔｅｒｓ．@KEY()↓
-◆Ｉ　ｗａｎｔ　ｔｏ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ　ａｓ　ｓｏｏｎ　ａｓ　ｐｏｓｓｉｂｌｅ．　　Ｉ　ｃａｎ’ｔ　ｗａｉｔ　ｔｏ　ｓｅｅ　ｙｏｕｒ　ｃｈｅｅｒｆｕｌ　ｆａｃｅ．@KEY()↓
-◆Ｉ　ｂｅｔ　ｙｏｕｒ　ｇｌａｓｓｅｓ　ａｒｅ　ｄｉｒｔｙ．．．　Ｉｆ　ｙｏｕ　ｃｏｍｅ　ｂａｃｋ，　Ｉ’ｌｌ　ｃｌｅａｎ　ｔｈｅｍ　ｆｏｒ　ｙｏｕ！@KEY()↓
-◆Ｌｉｋｅ　Ｉ　ｓａｉｄ，　Ｉ’ｍ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．↓
-　　　　　　　　　　　　　　　　Ｙｏｕｒｓ　ｔｒｕｌｙ，↓
-　　　　　　　　　　　　　　　　Ｔｏｎｙ　@KEY()↓
+◆(Dear @DSP_STS(STS_PC_NAME_JEFF),↓
+  Everything’s really going great here.@KEY()↓
+◆I wish I could have gone with you on your adventure, even just part of the way,@KEY()↓
+◆but instead I’m sitting here, waiting for you in Winters.@KEY()↓
+◆I want to see you again as soon as possible.  I can’t wait to see your cheerful face.@KEY()↓
+◆I bet your glasses are dirty... If you come back, I’ll clean them for you!@KEY()↓
+◆Like I said, I’m waiting for you.↓
+                Yours truly,↓
+                Tony @KEY()↓
 ↓
-◆Ｐ．Ｓ．　　Ｄｏｎ’ｔ　ｓｈｏｗ　ｔｈｉｓ　ｌｅｔｔｅｒ　ｔｏ　ａｎｙｏｎｅ！）
-;jpn:◆（しんあいなる　@DSP_STS(STS_PC_NAME_JEFF)↓
-;jpn:　ぼくは　げんきです。@KEY()↓
-;jpn:◆ぼくも　きみの　ぼうけんのたびの↓
-;jpn:　てつだいが　ちょっとでも↓
-;jpn:　できたらいいと　おもったけど@KEY()↓
-;jpn:◆けっきょく　ぼくは‥‥@KEY()↓
-;jpn:◆きみを　ウィンターズで↓
-;jpn:　まっていることしか↓
-;jpn:　できませんでした。@KEY()↓
-;jpn:◆はやく　あいたいよ。@WI(20)↓
-;jpn:　きみの　げんきなかおを↓
-;jpn:　いっこくも　はやく　みたい。@KEY()↓
-;jpn:◆きみの　めがねのくもりを↓
-;jpn:　ふいてあげたい。@KEY()↓
+◆P.S.  Don’t show this letter to anyone!)
+;jpn:◆(しんあいなる @DSP_STS(STS_PC_NAME_JEFF)↓
+;jpn: ぼくは げんきです。@KEY()↓
+;jpn:◆ぼくも きみの ぼうけんのたびの↓
+;jpn: てつだいが ちょっとでも↓
+;jpn: できたらいいと おもったけど@KEY()↓
+;jpn:◆けっきょく ぼくは‥‥@KEY()↓
+;jpn:◆きみを ウィンターズで↓
+;jpn: まっていることしか↓
+;jpn: できませんでした。@KEY()↓
+;jpn:◆はやく あいたいよ。@WI(20)↓
+;jpn: きみの げんきなかおを↓
+;jpn: いっこくも はやく みたい。@KEY()↓
+;jpn:◆きみの めがねのくもりを↓
+;jpn: ふいてあげたい。@KEY()↓
 ;jpn:◆まってるよ。@WI(30)↓
-;jpn:　しんあいなる　@DSP_STS(STS_PC_NAME_JEFF)へ。@KEY()↓
-;jpn:　　　　　　　　　　トニーより@KEY()@WI(60)↓↓
-;jpn:◆ＰＳ　このてがみは↓
-;jpn:　ほかのひとには　みせないでね）
+;jpn: しんあいなる @DSP_STS(STS_PC_NAME_JEFF)へ。@KEY()↓
+;jpn:          トニーより@KEY()@WI(60)↓↓
+;jpn:◆PS このてがみは↓
+;jpn: ほかのひとには みせないでね)
 @KEYNP()
 』
 
@@ -357,40 +357,40 @@ MSG_BTL_LETTER_TONY;
 MSG_BTL_LETTER_CHILD;
 ;幼稚園児
 ←
-◆（Ｄｅａｒ　@DSP_STS(STS_PC_NAME_PAULA)，↓
-　　Ｈｏｗ　ａｒｅ　ｙｏｕ　ｄｏｉｎｇ？↓
-　　Ｉ’ｍ　ｆｉｎｅ．@KEY()↓
-◆Ｉ　ｆｉｎｅ　ｔｏｏ！@KEY()↓
-◆Ｓｏ　ａｒｅ　ｍｅ！@KEY()↓
-◆Ｍｅ　ａｌｓｏ！@KEY()↓
-◆Ｍｅ　ｏｋａｙ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｎｄ　ｐｌａｙ　ｗｉｔｈ　ｕｓ　ａｇａｉｎ　ａｔ　ｔｈｅ　Ｐｏｌｅｓｔａｒ　Ｐｒｅ−ｓｃｈｏｏｌ．@KEY()↓
-◆Ｏｈ　ｙｅａｈ，　ｏｎｅ　ｍｏｒｅ　ｔｈｉｎｇ，　ｂｒｉｎｇ　ｕｓ　ｓｏｍｅ　ｐｒｅｓｅｎｔｓ．．．ｉｆ　ｙｏｕ　ｈａｖｅ　ａｎｙ．@KEY()↓
-◆　　　　　　　　　　　　　　　Ｓｉｎｃｅｒｅｌｙ，↓
-　　　　　　　　　　　　　　　　Ｙｏｕｒ　ｆｒｉｅｎｄｓ　ａｔ　ｔｈｅ↓
-　　　　　　　　　　　　　　　　Ｐｏｌｅｓｔａｒ　Ｐｒｅ−ｓｃｈｏｏｌ）
-;jpn:◆（@DSP_STS(STS_PC_NAME_PAULA)　おねえちゃん。@WI(20)↓
-;jpn:　おげんきですか？↓
-;jpn:　わたしは　げんきです。@KEY()↓
-;jpn:◆ぼくも　げんきです。@KEY()↓
-;jpn:◆ぼくも　げんきです。@KEY()↓
-;jpn:◆おいらも　げんきです。@KEY()↓
-;jpn:◆あたいも　げんきです。@KEY()↓
-;jpn:◆また　ポーラスターようちえんで↓
-;jpn:　いっぱい　あそんでください。@KEY()↓
+◆(Dear @DSP_STS(STS_PC_NAME_PAULA),↓
+  How are you doing?↓
+  I’m fine.@KEY()↓
+◆I fine too!@KEY()↓
+◆So are me!@KEY()↓
+◆Me also!@KEY()↓
+◆Me okay.@KEY()↓
+◆Please come and play with us again at the Polestar Pre−school.@KEY()↓
+◆Oh yeah, one more thing, bring us some presents...if you have any.@KEY()↓
+◆               Sincerely,↓
+                Your friends at the↓
+                Polestar Pre−school)
+;jpn:◆(@DSP_STS(STS_PC_NAME_PAULA) おねえちゃん。@WI(20)↓
+;jpn: おげんきですか?↓
+;jpn: わたしは げんきです。@KEY()↓
+;jpn:◆ぼくも げんきです。@KEY()↓
+;jpn:◆ぼくも げんきです。@KEY()↓
+;jpn:◆おいらも げんきです。@KEY()↓
+;jpn:◆あたいも げんきです。@KEY()↓
+;jpn:◆また ポーラスターようちえんで↓
+;jpn: いっぱい あそんでください。@KEY()↓
 ;jpn:◆おみやげ‥‥もしあったら↓
-;jpn:　もってきてね。@KEY()↓
-;jpn:◆　ポーラスターようちえんの↓
-;jpn:　　　　　　　　　　みんなより）
+;jpn: もってきてね。@KEY()↓
+;jpn:◆ ポーラスターようちえんの↓
+;jpn:          みんなより)
 @KEYNP()
 』
 
 MSG_BTL_DRY_MEAT_SPECIAL;●(akm0616 w/itoi)
 ←
-◆Ｙｏｕ　ｗｏｕｌｄ　ｐｒｏｂａｂｌｙ　ｒｅｇｒｅｔ　ｉｔ　ｉｆ　ｙｏｕ　ａｔｅ　ｔｈｉｓ　ｎｏｗ．．．
+◆You would probably regret it if you ate this now...
 ;jpn:◆たべてしまうと↓
-;jpn:　あとで　こまるような↓
-;jpn:　きがする‥‥たぶん。
+;jpn: あとで こまるような↓
+;jpn: きがする‥‥たぶん。
 @KEY()
 @!
 
@@ -398,10 +398,10 @@ MSG_BTL_DRY_MEAT_SPECIAL;●(akm0616 w/itoi)
 
 MSG_BTL_PHONE_RECEIVER;
 ←
-◆Ｔｈｉｓ　ｐｈｏｎｅ　　ｏｎｌｙ　ｒｅｃｅｉｖｅｓ　ｃａｌｌｓ．　　Ｙｏｕ　ｃａｎｎｏｔ　ｍａｋｅ　ｏｕｔｇｏｉｎｇ　ｃａｌｌｓ　ｆｒｏｍ　ｉｔ．
+◆This phone  only receives calls.  You cannot make outgoing calls from it.
 ;jpn:◆このでんわは↓
-;jpn:　じゅしんせんようなので↓
-;jpn:　こちらからは　かけられません。
+;jpn: じゅしんせんようなので↓
+;jpn: こちらからは かけられません。
 @KEY()
 @!
 

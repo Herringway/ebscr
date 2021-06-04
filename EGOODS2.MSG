@@ -1,4 +1,4 @@
-;/////////////////////////マップ専用グッズ（２／３）////////////////////////
+;/////////////////////////マップ専用グッズ(２／３)////////////////////////
 
 ;穴抜けネズミ
 MSG_BTL_ESCAPE_MOUSE;
@@ -6,7 +6,7 @@ MSG_BTL_ESCAPE_MOUSE;
 ←
 @Q_DUNGEON()
 @FALSE_GOTO(_MOUSE_NOTD)
-;イベント？
+;イベント?
 @CHKFGOTO(FLG_SYS_DIS_MOUSE,_MOUSE_CANTUSE)
 ;-----
 @CHKF(FLG_DELIVERY_PIZZA)@TRUE_GOTO(_BTL_ESCAPE_MOUSE_PIZZA)
@@ -25,10 +25,10 @@ MSG_BTL_ESCAPE_MOUSE;
 ;-----
 _BTL_ESCAPE_MOUSE_MAIN;
 @FUNC(5)			;配達禁止
-◆（Ｔｈｅ　ｍｏｕｓｅ　ｆｏｕｎｄ　ｔｈｅ　ｗａｙ　ｏｕｔ　ａｎｄ　ｗａｖｅｄ　ｆｏｒ　ｙｏｕ　ｔｏ　ｆｏｌｌｏｗ．）
-;jpn:◆（あなぬけネズミは↓
-;jpn:　いりぐちのほうへ　かけだして↓
-;jpn:　てまねきした）
+◆(The mouse found the way out and waved for you to follow.)
+;jpn:◆(あなぬけネズミは↓
+;jpn: いりぐちのほうへ かけだして↓
+;jpn: てまねきした)
 @KEY()
 ;***ここで「ねずみバッファ」に保存された座標にワープする***
 @WARP_MOUSE_POS()
@@ -40,119 +40,119 @@ _BTL_ESCAPE_MOUSE_MAIN;
 @!
 
 _MOUSE_NOTD;
-◆（Ｔｈｅ　Ｅｘｉｔ　Ｍｏｕｓｅ　ｃａｎｎｏｔ　ｄｏ　ｉｔｓ　ｊｏｂ@KEY()↓
-　　ｕｎｌｅｓｓ　ｉｔ　ｉｓ　ｉｎ　ａ　ｈｏｌｅ，　ｃａｖｅ，　ｏｒ　ｓｏｍｅ　ｐｌａｃｅ　ｗｉｔｈ　ａｎ　ｅｘｉｔ！）
-;;jpn:◆（あなぬけネズミは↓
-;;jpn:　そのなのとおり↓
-;;jpn:　あなや　どうくつでないと
+◆(The Exit Mouse cannot do its job@KEY()↓
+  unless it is in a hole, cave, or some place with an exit!)
+;;jpn:◆(あなぬけネズミは↓
+;;jpn: そのなのとおり↓
+;;jpn: あなや どうくつでないと
 ;@KEY()
 ;↓
-;;jpn:　かつやくできないのだ）
+;;jpn: かつやくできないのだ)
 @KEYNP()
 @!
 
 _MOUSE_CANTUSE;			;穴ぬけ鼠使用禁止時
 _MOUSE_NOWEVENT;
-◆（Ａｔ　ｔｈｉｓ　ｐｏｉｎｔ　ｉｎ　ｔｉｍｅ，　ｔｈｅ　ｍｏｕｓｅ　ｉｓ　ｆａｓｔ　ａｓｌｅｅｐ．）
-;jpn:◆（この　だいじな　ばめんに↓
-;jpn:　あなぬけネズミは↓
-;jpn:　ねむりこけている）
+◆(At this point in time, the mouse is fast asleep.)
+;jpn:◆(この だいじな ばめんに↓
+;jpn: あなぬけネズミは↓
+;jpn: ねむりこけている)
 @KEYNP()
 @!
 
 _BTL_ESCAPE_MOUSE_PIZZA;ピザ配達中
-◆Ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｌｅｔ　ｔｈｅ　ｍｏｕｓｅ　ｇｏ　ｕｎｔｉｌ　ｔｈｅ　ｐｉｚｚａ　ｈａｓ　ａｒｒｉｖｅｄ．
+◆You shouldn’t let the mouse go until the pizza has arrived.
 ;jpn:◆ピザがくるまで↓
-;jpn:　ねずみを　はなしてはいけない。
+;jpn: ねずみを はなしてはいけない。
 @KEYNP()
 』
 
-_BTL_ESCAPE_MOUSE_KANBAN;（古道具屋の客が向かってる）
-◆Ｉｆ　ｙｏｕ　ｒｅｌｅａｓｅ　ｔｈｅ　ｍｏｕｓｅ　ｎｏｗ，　ｉｔ　ｍｉｇｈｔ　ｂｅ　ｓｔｅｐｐｅｄ　ｏｎ　ｂｙ　ｔｈｅ　ａｐｐｒｏａｃｈｉｎｇ　ｃｕｓｔｏｍｅｒ．@KEY()↓
-◆Ｓｏ．．．　ｉｔ’ｓ　ｎｏｔ　ａ　ｇｏｏｄ　ｉｄｅａ　ｔｏ　ｒｅｌｅａｓｅ　ｔｈｅ　ｍｏｕｓｅ　ｎｏｗ．
-;jpn:◆いま　ねずみをはなすと↓
-;jpn:　ふるどうぐと　まちがえられて↓
-;jpn:　しまうかもしれないぞ。@KEY()↓
+_BTL_ESCAPE_MOUSE_KANBAN;(古道具屋の客が向かってる)
+◆If you release the mouse now, it might be stepped on by the approaching customer.@KEY()↓
+◆So... it’s not a good idea to release the mouse now.
+;jpn:◆いま ねずみをはなすと↓
+;jpn: ふるどうぐと まちがえられて↓
+;jpn: しまうかもしれないぞ。@KEY()↓
 ;jpn:◆‥‥だから↓
-;jpn:　やめなさい。
+;jpn: やめなさい。
 @KEYNP()
 』
 
-_BTL_ESCAPE_MOUSE_ESCARGO;（エスカルゴ運送配達中）
-◆Ｐｌｅａｓｅ　ｓｔｉｃｋ　ａｒｏｕｎｄ　ｕｎｔｉｌ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ　ａｒｒｉｖｅｓ．@KEY()↓
-◆Ｓｏ．．．　ｄｏ　ｎｏｔ　ｕｓｅ　ｔｈｅ　Ｅｘｉｔ　Ｍｏｕｓｅ！
+_BTL_ESCAPE_MOUSE_ESCARGO;(エスカルゴ運送配達中)
+◆Please stick around until Escargo Express arrives.@KEY()↓
+◆So... do not use the Exit Mouse!
 ;jpn:◆エスカルゴうんそうが↓
-;jpn:　くるまでは↓
-;jpn:　このへんに　いてやってほしい。@KEY()↓
+;jpn: くるまでは↓
+;jpn: このへんに いてやってほしい。@KEY()↓
 ;jpn:◆したがって↓
-;jpn:　あなぬけねずみは‥‥↓
-;jpn:　つかわないこと！@KEYNP()
+;jpn: あなぬけねずみは‥‥↓
+;jpn: つかわないこと!@KEYNP()
 』
 _BTL_ESCAPE_MOUSE_CAPSULE;解放された博士たちと話していない。
-◆Ｆｏｒ　ｓｏｍｅ　ｒｅａｓｏｎ，　ｔｈｅ　ｅｘｉｔ　ｍｏｕｓｅ　ｉｓｎ’ｔ　ｂｅｉｎｇ　ａｇｒｅｅａｂｌｅ．
-;jpn:◆なぜか　あなぬけねずみの↓
-;jpn:　きげんが　わるい。
+◆For some reason, the exit mouse isn’t being agreeable.
+;jpn:◆なぜか あなぬけねずみの↓
+;jpn: きげんが わるい。
 @KEYNP()
 』
 
 ;ヒエログリフのコピー
 MSG_BTL_HIERO;
 @XCHG()
-◆@DSP_NAME(0)　ｒｅａｄ　ｔｈｅ　ｈｉｅｒｏｇｌｙｐｈｓ．@KEY()↓
-◆”Ｔｏ　ｆｉｇｈｔ　ａｇａｉｎｓｔ　ｔｈｅ　ｉｎｖａｄｅｒｓ，　ｗｅ　ｂｕｉｌｔ　ｔｈｉｓ　ｐｙｒａｍｉｄ　ｆｏｒｔｒｅｓｓ．@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　ｏｕｒ　ｅｆｆｏｒｔｓ　ｗｅｒｅ　ｆｕｔｉｌｅ，　ａｎｄ　ｗｅ　ｌｏｓｔ．@KEY()↓
-◆Ｎｏｎｅｔｈｅｌｅｓｓ，　ｏｕｒ　ｐｙｒａｍｉｄ　ｗａｓ　ｐｒｏｔｅｃｔｅｄ　ｂｙ　ｔｈｅ　ｇｏｄｓ　ｏｆ　Ｓｃａｒａｂａ．@KEY()↓
-◆Ｔｈｅ　ｉｎｖａｄｅｒｓ　ｗｉｌｌ　ｂｅ　ｒｅｂｏｒｎ　ｅｖｅｒｙ　ｍｉｌｌｅｎｎｉｕｍ　ａｎｄ　ｗｉｌｌ　ａｔｔａｃｋ　ａｇａｉｎ．@KEY()↓
-◆Ｅｖｅｎ　ｎｏｗ，　ｔｈｅ　ｉｎｖａｄｅｒｓ　ｈｉｄｅ　ｂｅｙｏｎｄ　ｓｐａｃｅ　ａｎｄ　ｔｉｍｅ　ａｎｄ　ｂｕｉｌｄ　ｔｈｅｉｒ　ｅｖｉｌ　ｓｔｒｏｎｇｈｏｌｄ．@KEY()↓
-◆Ａ　ｐｌａｃｅ　ｏｕｔ　ｏｆ　ｔｉｍｅ　ｉｓ　ｂｅｙｏｎｄ　ｔｈｅ　Ｄａｒｋ，　ａｎｄ　ｉｓ　ｅｖｅｎ　ｆａｒｔｈｅｒ　ｂｅｙｏｎｄ　ｔｈｅ　Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ．@KEY()↓
-◆Ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ　ｉｓ　ｓｈｒｏｕｄｅｄ，　ｉｔ　ｉｓ　ｗｉｔｈｏｕｔ　ｌｉｇｈｔ．@KEY()↓
-◆Ｏｎｌｙ　ｏｎｅ　ｗｉｔｈ　ｔｈｅ　Ｈａｗｋ　Ｅｙｅ　ｃａｎ　ｐｉｅｒｃｅ　ｔｈｅ　ｄａｒｋ．@KEY()↓
-◆Ｔｈｅ　Ｓｐｈｉｎｘ　ｎｏｗ　ｗａｔｃｈｅｓ　ｏｖｅｒ　ｅｖｅｒｙｔｈｉｎｇ，@KEY()↓
-◆ｗａｉｔｉｎｇ　ｆｏｒ　ｔｈｅ　ｃｏｍｉｎｇ　ｏｆ　ａ　ｔｒｕｌｙ　ｂｒａｖｅ　ｈｅｒｏ．@KEY()↓
-◆　　　・↓
-　　４　　　３↓
-　　　２　５@KEY()↓
-◆Ｄａｎｃｅ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　Ｓｐｈｉｎｘ！”
+◆@DSP_NAME(0) read the hieroglyphs.@KEY()↓
+◆”To fight against the invaders, we built this pyramid fortress.@KEY()↓
+◆However, our efforts were futile, and we lost.@KEY()↓
+◆Nonetheless, our pyramid was protected by the gods of Scaraba.@KEY()↓
+◆The invaders will be reborn every millennium and will attack again.@KEY()↓
+◆Even now, the invaders hide beyond space and time and build their evil stronghold.@KEY()↓
+◆A place out of time is beyond the Dark, and is even farther beyond the Lost Underworld.@KEY()↓
+◆The Deep Darkness is shrouded, it is without light.@KEY()↓
+◆Only one with the Hawk Eye can pierce the dark.@KEY()↓
+◆The Sphinx now watches over everything,@KEY()↓
+◆waiting for the coming of a truly brave hero.@KEY()↓
+◆   ・↓
+  ４   ３↓
+   ２ ５@KEY()↓
+◆Dance in front of the Sphinx!”
 ;;jpn:◆@DSP_NAME(0)は↓
-;;jpn:　ヒエログリフのコピーを　よんだ。
+;;jpn: ヒエログリフのコピーを よんだ。
 ;@KEY()↓
-;;jpn:◆「てんよりの　しんりゃくしゃに↓
-;;jpn:　われわれは　しかくすいの↓
-;;jpn:　ようさいを　けんぞうし
+;;jpn:◆「てんよりの しんりゃくしゃに↓
+;;jpn: われわれは しかくすいの↓
+;;jpn: ようさいを けんぞうし
 ;@KEY()↓
-;;jpn:◆たたかいに　そなえた。↓
-;;jpn:　しかし　われわれは　やぶれた。
+;;jpn:◆たたかいに そなえた。↓
+;;jpn: しかし われわれは やぶれた。
 ;@KEY()↓
-;;jpn:◆だが　われわれの　ようさいは↓
-;;jpn:　スカラビの　かみがみによって↓
-;;jpn:　まもられた。
+;;jpn:◆だが われわれの ようさいは↓
+;;jpn: スカラビの かみがみによって↓
+;;jpn: まもられた。
 ;@KEY()↓
-;;jpn:◆てんからきた　しんりゃくしゃは↓
-;;jpn:　１０００ねんごとに　うまれかわり↓
-;;jpn:　おそってくるという。
+;;jpn:◆てんからきた しんりゃくしゃは↓
+;;jpn: １０００ねんごとに うまれかわり↓
+;;jpn: おそってくるという。
 ;@KEY()↓
 ;;jpn:◆しんりゃくしゃは↓
-;;jpn:　ときの　かなたにかくれ↓
-;;jpn:　あくの「すばこ」を　おいた。
+;;jpn: ときの かなたにかくれ↓
+;;jpn: あくの「すばこ」を おいた。
 ;@KEY()↓
-;;jpn:◆ときの　かなたは↓
-;;jpn:　まきょうの　はるか　さき。↓
-;;jpn:　ちのそこの　むこう。
+;;jpn:◆ときの かなたは↓
+;;jpn: まきょうの はるか さき。↓
+;;jpn: ちのそこの むこう。
 ;@KEY()↓
-;;jpn:◆まきょうは　くらき　やみ。↓
-;;jpn:　「たかのめ」だけが　みる。
+;;jpn:◆まきょうは くらき やみ。↓
+;;jpn: 「たかのめ」だけが みる。
 ;@KEY()↓
 ;;jpn:◆スフィンクスが↓
-;;jpn:　すべてを　まもり
+;;jpn: すべてを まもり
 ;@KEY()↓
-;;jpn:◆しんの　ゆうしゃの↓
-;;jpn:　おとづれを　まつ。
+;;jpn:◆しんの ゆうしゃの↓
+;;jpn: おとづれを まつ。
 ;@KEY()↓
-;◆　　　・↓
-;　　４　　　３↓
-;　　　２　５
+;◆   ・↓
+;  ４   ３↓
+;   ２ ５
 ;@KEY()↓
-;;jpn:◆スフィンクスのまえで　おどれ」
+;;jpn:◆スフィンクスのまえで おどれ」
 @KEYNP()
 @!
 
@@ -169,9 +169,9 @@ MSG_BTL_TOWN_MAP;
 
 _TOWN_MAP_NG;
 ;地図に載っていない場合
-◆Ｔｈｉｓ　ｔｏｗｎ　ｉｓ　ｎｏｔ　ｓｈｏｗｎ　ｏｎ　ｔｈｅ　ｍａｐ．
-;jpn:　ちずに　このまちの↓
-;jpn:　ページはなかった‥‥。
+◆This town is not shown on the map.
+;jpn: ちずに このまちの↓
+;jpn: ページはなかった‥‥。
 @KEYNP()
 @!
 

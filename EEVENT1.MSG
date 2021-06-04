@@ -3,8 +3,8 @@
 
 ;#25	スリーク行のバスに乗る	2.8	T
 
-;★バス停に到着したバスに（手前側から）近寄ると、
-;窓から運転手が顔を出して（顔だけのオブジェ有り）
+;★バス停に到着したバスに(手前側から)近寄ると、
+;窓から運転手が顔を出して(顔だけのオブジェ有り)
 ;MSG_TWSN_BUSDRIVER を発行。
 
 ;★_TWSN_BUSDRIVER_YES 、_TWSN_BUSDRIVER_LATER_YES の後で
@@ -30,30 +30,30 @@ MSG_EVT_BUS_START;
 MSG_EVT_RIDE_BUS_TWSN_THRK;バスに近付くと呼ばれるメッセージ
 MSG_TWSN_BUSDRIVER;
 ;バスの運転手
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	　;運転手
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
 @CHKFGOTO(FLG_WIN_GEPPU,_TWSN_BUSDRIVER_LATER)
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆Ｙｅｐ，　ｔｈｉｓ　ｉｓ　ｔｈｅ　ｂｕｓ　ｔｏ　Ｔｈｒｅｅｄ，@KEY()↓
-◆ｂｕｔ，．．．Ｉ’ｍ　ｎｏｔ　ｓｕｒｅ　ｉｆ　ｗｅ　ｃａｎ　ｇｅｔ　ｔｈｅｒｅ　ｏｒ　ｎｏｔ．@KEY()↓
-◆Ｔｈｅ　ｆａｒｅ　ｉｓ　＄@DSP_NUM(0)．@KEY()↓
-◆．．．ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
-<Ｙｅｓ>　<Ｎｏ>
+◆Yep, this is the bus to Threed,@KEY()↓
+◆but,...I’m not sure if we can get there or not.@KEY()↓
+◆The fare is ＄@DSP_NUM(0).@KEY()↓
+◆...do you want to go?↓
+<Yes> <No>
 ;jpn:◆スリークゆきのバスだども↓
-;jpn:　いけるかどうかは　わがんねっす。↓
-;jpn:　んでも　りょうきん@DSP_NUM(0)ドルす。@KEY()↓
-;jpn:◆いぐか？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: いけるかどうかは わがんねっす。↓
+;jpn: んでも りょうきん@DSP_NUM(0)ドルす。@KEY()↓
+;jpn:◆いぐか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @WINR_MONEY()
 @SELGOTO(_TWSN_BUSDRIVER_YES,_TWSN_BUSDRIVER_NO)
 
 _TWSN_BUSDRIVER_NO;
-◆．．．Ｙｅｐ，　Ｉ　ｐｅｒｓｏｎａｌｌｙ　ｔｈｉｎｋ　ｉｔ’ｓ　ｂｅｔｔｅｒ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｇｏ．@KEY()↓
-◆．．．Ｉ’ｍ　ａｌｓｏ　ｎｏｔ　ｒｅａｌ　ｃｏｎｆｉｄｅｎｔ　ａｂｏｕｔ　ｇｅｔｔｉｎｇ　ｔｈｅｒｅ．
-;jpn:◆いがねぇほうが　いいだ。↓
-;jpn:　おらも　じしんがねぇし。
+◆...Yep, I personally think it’s better if you don’t go.@KEY()↓
+◆...I’m also not real confident about getting there.
+;jpn:◆いがねぇほうが いいだ。↓
+;jpn: おらも じしんがねぇし。
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
@@ -66,19 +66,19 @@ _TWSN_BUSDRIVER_YES;
 @WI(1)
 @MONEYOUT(0)
 @WINR_MONEY()
-◆Ｏｋａｙ．　　Ｌｅｔ’ｓ　ｇｉｖｅ　ｉｔ　ａ　ｓｈｏｔ．@KEY()↓
-◆．．．Ｉ　ｈａｖｅ　ａ　ｆｅｅｌｉｎｇ　ｔｈｉｓ　ｃｏｕｌｄ　ｇｅｔ　ｕｇｌｙ，　ｔｈｏｕｇｈ．
-;jpn:◆じゃ　いってみるべ。↓
-;jpn:　おっがねぇけどもな。
+◆Okay.  Let’s give it a shot.@KEY()↓
+◆...I have a feeling this could get ugly, though.
+;jpn:◆じゃ いってみるべ。↓
+;jpn: おっがねぇけどもな。
 @KEY()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
 @GOTO(MSG_EVT_BUS_START)
 
 _TWSN_BUSDRIVER_NOMONEY;
-◆．．．Ｉ　ｃａｎ’ｔ　ｌｅｔ　ｙｏｕ　ｏｎ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｐａｙ．
-;jpn:◆かね　はらえねぇんじゃ↓
-;jpn:　だめだべ。
+◆...I can’t let you on if you don’t pay.
+;jpn:◆かね はらえねぇんじゃ↓
+;jpn: だめだべ。
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
@@ -87,29 +87,29 @@ _TWSN_BUSDRIVER_NOMONEY;
 _TWSN_BUSDRIVER_LATER;
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-;jpn:◆このバスは　スリークをとおって↓
-;jpn:　フォーサイドに　いぐけんども
+;jpn:◆このバスは スリークをとおって↓
+;jpn: フォーサイドに いぐけんども
 ;@KEY()↓
 ;@GOSUB(MSG_EVT_BUS_MES_B)		;メッセージのサブルーチンへ
-◆．．．Ｔｈｉｓ　ｂｕｓ　ｇｏｅｓ　ｔｏ　Ｆｏｕｒｓｉｄｅ　ｖｉａ　Ｔｈｒｅｅｄ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｐａｙ　＄@DSP_NUM(0)　ｆｏｒ　ｔｈｅ　ｆａｒｅ，　Ｉ　ｃａｎ’ｔ　ｔａｋｅ　ｙｏｕ　ｔｈｅｒｅ．@KEY()↓
-◆．．．Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
-<Ｙｅｓ>　<Ｎｏ>
+◆...This bus goes to Fourside via Threed.@KEY()↓
+◆If you don’t pay ＄@DSP_NUM(0) for the fare, I can’t take you there.@KEY()↓
+◆...Do you want to go?↓
+<Yes> <No>
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
-;jpn:　のせてやらねぇだよ。@KEY()↓
-;jpn:◆いぐか？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: のせてやらねぇだよ。@KEY()↓
+;jpn:◆いぐか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @WINR_MONEY()
 @SELGOTO(_TWSN_BUSDRIVER_LATER_YES,_TWSN_BUSDRIVER_LATER_NO)
 
 _TWSN_BUSDRIVER_LATER_NO;
-◆．．．Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ，　ｙｏｕ　ｓｈｏｕｌｄ　ｓｔｒｏｌｌ　ａｒｏｕｎｄ．@KEY()↓
-◆Ｂｅｓｉｄｅｓ，　ｗａｌｋｉｎｇ　ｉｓ　ｇｏｏｄ　ｆｏｒ　ｙｏｕ．．．
-;jpn:◆かねが　ねぇんだったら↓
-;jpn:　エッチラ　オッチラ↓
-;jpn:　あるいていくが　いいだよ。@KEY()↓
-;jpn:◆けんこうにも　いいし。
+◆...If you don’t have any money, you should stroll around.@KEY()↓
+◆Besides, walking is good for you...
+;jpn:◆かねが ねぇんだったら↓
+;jpn: エッチラ オッチラ↓
+;jpn: あるいていくが いいだよ。@KEY()↓
+;jpn:◆けんこうにも いいし。
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
@@ -121,8 +121,8 @@ _TWSN_BUSDRIVER_LATER_YES;
 @SE(SE_se76_my_give)
 @MONEYOUT(0)
 @WINR_MONEY()
-◆．．．Ｗｅｌｌ，　ｈｏｐ　ａｂｏａｒｄ　ｔｈｅｎ！
-;jpn:◆んじゃ　いってみるべ！
+◆...Well, hop aboard then!
+;jpn:◆んじゃ いってみるべ!
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
@@ -131,12 +131,12 @@ _TWSN_BUSDRIVER_LATER_YES;
 @!
 
 _TWSN_BUSDRIVER_LATER_NOMONEY;
-◆．．．Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ，　ｙｏｕ　ｓｈｏｕｌｄ　ｓｔｒｏｌｌ　ａｒｏｕｎｄ．@KEY()↓
-◆Ｂｅｓｉｄｅｓ，　ｗａｌｋｉｎｇ　ｉｓ　ｇｏｏｄ　ｆｏｒ　ｙｏｕ．．．
-;jpn:◆かねが　ねぇんだったら↓
-;jpn:　エッチラ　オッチラ↓
-;jpn:　あるいていくが　いいだよ。@KEY()↓
-;jpn:◆けんこうにも　いいし。
+◆...If you don’t have any money, you should stroll around.@KEY()↓
+◆Besides, walking is good for you...
+;jpn:◆かねが ねぇんだったら↓
+;jpn: エッチラ オッチラ↓
+;jpn: あるいていくが いいだよ。@KEY()↓
+;jpn:◆けんこうにも いいし。
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
@@ -175,19 +175,19 @@ MSG_EVT_BUS_INTO_THRK;トンネルからスリークへ
 
 ;スリークについた
 MSG_EVT_TOUCH_THRK;
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	　;運転手
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
-◆．．．Ｔｈｉｓ　ｂｕｓ　ｃｏｎｔｉｎｕｅｓ　ｏｎ　ｔｏ　Ｆｏｕｒｓｉｄｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｏｆｆ　ｈｅｒｅ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆このバスは　フォーサイドまで↓
-;jpn:　いぐけんども　ここでおりるか？↓
-;jpn:　　<はい>　　<いいえ>
+◆...This bus continues on to Fourside.@KEY()↓
+◆Do you want to get off here?↓
+<Yes> <No>
+;jpn:◆このバスは フォーサイドまで↓
+;jpn: いぐけんども ここでおりるか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_THROUGH_THRK_TO_FOUR_YES,_THROUGH_THRK_TO_FOUR_NO)
 _THROUGH_THRK_TO_FOUR_NO;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @COLD_GOM_CHAR(GOM_BUS)
 @CLRF(FLG_WIN_GEPPU)		;バスが出ない様に
 @REMOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_THRK_TO_DSRT);バス乗車
@@ -197,7 +197,7 @@ _THROUGH_THRK_TO_FOUR_NO;
 
 _THROUGH_THRK_TO_FOUR_YES;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_OUT_BUS_L,OBJFX_SHOW_NONE)
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
@@ -241,38 +241,38 @@ MSG_EVT_BUS_RETURN_TWSN_A;
 MSG_TWSN_GHOSTTUNNEL;
 ;バスでスリークへ行けなかった
 @OPEN(1)
-◆（Ｆｏｒ　ｓｏｍｅ　ｒｅａｓｏｎ，　ｔｈｅ　ｂｕｓ　ｒｅｔｕｒｎｅｄ　ｔｏ　Ｔｗｏｓｏｎ．）
-;jpn:◆（バスはなぜかツーソンに↓
-;jpn:　もどってしまった）
+◆(For some reason, the bus returned to Twoson.)
+;jpn:◆(バスはなぜかツーソンに↓
+;jpn: もどってしまった)
 @KEY()
 @CLOSEALL()
 @WI(30)
 MSG_TWSN_GHOSTTUNNEL_BUSDRIVER;
 ←
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	　;運転手
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
-◆．．．Ｙｅｐ！　　Ｊｕｓｔ　ｌｉｋｅ　Ｉ　ｔｈｏｕｇｈｔ．．．@KEY()↓
-◆．．．Ｏｋａｙ，　Ｉ’ｍ　ｓｔａｒｔｉｎｇ　ｔｏ　ｇｅｔ　ｔｈｅ　ｃｒｅｅｐｓ．．．@KEY()↓
-◆Ｗｅ’ｒｅ　ｇｏｉｎｇ　ｂａｃｋ　ｔｏ　ｔｈｅ　ｂｕｓ　ｓｔａｔｉｏｎ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｏｆｆ　ｈｅｒｅ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆やっぱり　おらが↓
-;jpn:　いったとおりだ。@KEY()↓
-;jpn:◆‥‥おら　ぶきみわりぃだよ。@KEY()↓
-;jpn:◆バスは　バスステーションまで↓
-;jpn:　もどるけんども　ここでおりるか？↓
-;jpn:　　<はい>　　<いいえ>
+◆...Yep!  Just like I thought...@KEY()↓
+◆...Okay, I’m starting to get the creeps...@KEY()↓
+◆We’re going back to the bus station.@KEY()↓
+◆Do you want to get off here?↓
+<Yes> <No>
+;jpn:◆やっぱり おらが↓
+;jpn: いったとおりだ。@KEY()↓
+;jpn:◆‥‥おら ぶきみわりぃだよ。@KEY()↓
+;jpn:◆バスは バスステーションまで↓
+;jpn: もどるけんども ここでおりるか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(MSG_EVT_BUS_RETURN_TWSN_A_YES,MSG_EVT_BUS_RETURN_TWSN_A_NO)
 
 MSG_EVT_BUS_RETURN_TWSN_A_NO;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	　;運転手
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	 ;運転手
 @REMOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_RETURN_TWSN_B)
 』
 MSG_EVT_BUS_RETURN_TWSN_A_YES;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	　;運転手
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	 ;運転手
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_OUT_BUS_L,OBJFX_SHOW_NONE)
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
@@ -296,25 +296,25 @@ MSG_EVT_BUS_RETURN_TWSN_A_YES;
 
 MSG_EVT_RIDE_BUS_THRK_TWSN;
 MSG_THRK_HIGHWAYBUS_HURRY_T;
-;ハイウェイバスの運転手（ハリー）
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	　;運転手
+;ハイウェイバスの運転手(ハリー)
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
 @CHKFGOTO(FLG_TLPT_SUMS,_EVT_RIDE_BUS_THRK_TWSN_LATER)
-◆Ｆｉｎａｌｌｙ，　ｔｈｅ　ｂｕｓ　ｃａｎ　ｍａｋｅ　ｉｔｓ　ｆｕｌｌ　ｒｕｎ．
-;jpn:◆やっと　ハイウェイバスが↓
-;jpn:　とおれるように　なったんだ。
+◆Finally, the bus can make its full run.
+;jpn:◆やっと ハイウェイバスが↓
+;jpn: とおれるように なったんだ。
 @KEY()↓
-_EVT_RIDE_BUS_THRK_TWSN_LATER;松（ＮＯＡのコメント）
+_EVT_RIDE_BUS_THRK_TWSN_LATER;松(NOAのコメント)
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆Ｔｏ　Ｔｗｏｓｏｎ，　ｉｔ’ｓ　ｇｏｉｎｇ　ｔｏ　ｃｏｓｔ　＄@DSP_NUM(0)．@KEY()↓
-◆（ｆｏｒ　ｔｈｅ　ｌｏｔ　ｏｆ　ｙｏｕ）．@KEY()↓
-;◆Ｍｏｓｈｉ_ｐａｒｔｙ_ｇａ_ｆｕｔａｒｉ_ｉｚｙｏｕ_ｄａｔｔａｒａ_ｋｏｎｏ_ｇｙｏｕｗｏ_ｔａｓｕ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
-<Ｙｅｓ>　<Ｎｏ>
+◆To Twoson, it’s going to cost ＄@DSP_NUM(0).@KEY()↓
+◆(for the lot of you).@KEY()↓
+;◆Moshi_party_ga_futari_izyou_dattara_kono_gyouwo_tasu.@KEY()↓
+◆Do you want to go?↓
+<Yes> <No>
 ;jpn:◆ツーソンゆきは↓		
-;jpn:　みんなで@DSP_NUM(0)ドルになるけど↓
-;jpn:　のってくかい？↓
+;jpn: みんなで@DSP_NUM(0)ドルになるけど↓
+;jpn: のってくかい?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_THRK_HIGHWAYBUS_HURRY_T_YES,_THRK_HIGHWAYBUS_HURRY_T_NO)
 @GOTO(_THRK_HIGHWAYBUS_HURRY_T_NO)
@@ -327,8 +327,8 @@ _THRK_HIGHWAYBUS_HURRY_T_YES;@MiuraAppended
 @SETF(FLG_SYS_MONSTER_OFF)
 @FUNC(5)			;配達禁止
 @MOVE_GOM_CHAR( GOM_HIT_CHR4, ANIM_FORBID_CONTROL, OBJFX_SHOW_NONE );入力禁止
-◆Ｏｋ，　ｗｅ’ｒｅ　ｏｆｆ！
-;jpn:◆しゅっぱーつ！
+◆Ok, we’re off!
+;jpn:◆しゅっぱーつ!
 @KEY()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)						;運転手消す
@@ -346,9 +346,9 @@ _FOUR_THRK_TWSN;フォーサイドからのバスはココにつながる
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 』
 _THRK_HIGHWAYBUS_HURRY_T_NOMONEY;
-◆Ｉ　ｃａｎ’ｔ　ｄｏ　ｍｕｃｈ　ｆｏｒ　ｙｏｕ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ．．．
+◆I can’t do much for you if you don’t have any money...
 ;jpn:◆おかねがないんじゃ↓
-;jpn:　しょうがないなぁ。
+;jpn: しょうがないなぁ。
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)						;運転手消す
@@ -396,11 +396,11 @@ MSG_EVT_BUS_TOUCH_TWSN;
 
 
 MSG_DSRT_BUSSTOP_NG;
-◆（Ｄｕｅ　ｔｏ　ｔｒａｆｆｉｃ　ｊａｍｓ，@KEY()↓
-◆ｂｕｓ　ｓｅｒｖｉｃｅ　ｈａｓ　ｂｅｅｎ　ｔｅｍｐｏｒａｒｉｌｙ　ｓｕｓｐｅｎｄｅｄ．）
-;jpn:◆（じゅうたい　はっせいちゅう！@WI(30)↓
-;jpn:　グレイハンドバスの　うんこうは↓
-;jpn:　いちじ　おやすみします）
+◆(Due to traffic jams,@KEY()↓
+◆bus service has been temporarily suspended.)
+;jpn:◆(じゅうたい はっせいちゅう!@WI(30)↓
+;jpn: グレイハンドバスの うんこうは↓
+;jpn: いちじ おやすみします)
 @KEYNP()
 』
 
@@ -415,35 +415,35 @@ MSG_DSRT_BUSSTOP_THRK
 @TRUE_GOTO(MSG_BUSSTOP_DANGER)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆（@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｕｓ　ｓｃｈｅｄｕｌｅ．
-;jpn:◆@DSP_NAME(0)は　バスの↓
-;jpn:　じこくひょうを　しらべた。
+◆(@DSP_NAME(0) checked the bus schedule.
+;jpn:◆@DSP_NAME(0)は バスの↓
+;jpn: じこくひょうを しらべた。
 @KEY()↓
 @CHKFGOTO(FLG_TEMP_9,MSG_TWSN_BUSSTOP_TEMP)
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｅ　ｎｅｘｔ　ｂｕｓ　ｗｉｌｌ　ｃｏｍｅ　ｐｒｅｔｔｙ　ｓｏｏｎ．）
-;jpn:◆バスは　もうすぐ　くるようだ。
+◆It looks like the next bus will come pretty soon.)
+;jpn:◆バスは もうすぐ くるようだ。
 @KEY()
 @CLOSEALL()
 @MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_DSRT_THRK_IN,OBJFX_SHOW_NONE)		;バス登場
-@WAITSYS()	　　;停留所につくまで待つ
+@WAITSYS()	  ;停留所につくまで待つ
 @SETF(FLG_TEMP_9)
 』
 
-MSG_EVT_RIDE_BUS_DSRT_THRK;松（ＮＯＡのコメント）
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	　;運転手
+MSG_EVT_RIDE_BUS_DSRT_THRK;松(NOAのコメント)
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆Ｔｏ　Ｔｈｒｅｅｄ，　ｉｔ’ｓ　ｇｏｉｎｇ　ｔｏ　ｃｏｓｔ　＄@DSP_NUM(0)．@KEY()↓
-◆（ｆｏｒ　ｔｈｅ　ｌｏｔ　ｏｆ　ｙｏｕ．）@KEY()↓
-;◆Ｍｏｓｈｉ_ｐａｒｔｙ_ｇａ_ｆｕｔａｒｉ_ｉｚｙｏｕ_ｄａｔｔａｒａ_ｋｏｎｏ_ｇｙｏｕｗｏ_ｔａｓｕ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
-<Ｙｅｓ>　<Ｎｏ>
+◆To Threed, it’s going to cost ＄@DSP_NUM(0).@KEY()↓
+◆(for the lot of you.)@KEY()↓
+;◆Moshi_party_ga_futari_izyou_dattara_kono_gyouwo_tasu.@KEY()↓
+◆Do you want to go?↓
+<Yes> <No>
 ;jpn:◆スリークゆきは↓		
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-;jpn:　みんなで@DSP_NUM(0)ドルになるけど↓
-;jpn:　のってくかい？↓
+;jpn: みんなで@DSP_NUM(0)ドルになるけど↓
+;jpn: のってくかい?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_DSRT_THRK_HIGHWAYBUS_HURRY_YES,_DSRT_THRK_HIGHWAYBUS_HURRY_NO)
 @GOTO(_DSRT_THRK_HIGHWAYBUS_HURRY_NO)
@@ -457,11 +457,11 @@ _DSRT_THRK_HIGHWAYBUS_HURRY_YES
 @SETF(FLG_SYS_MONSTER_OFF)
 @FUNC(5)			;配達禁止
 @MOVE_GOM_CHAR( GOM_HIT_CHR4, ANIM_FORBID_CONTROL, OBJFX_SHOW_NONE );入力禁止
-◆Ｏｋａｙ，　ｗｅ’ｒｅ　ｏｆｆ！
-;jpn:◆しゅっぱーつ！
+◆Okay, we’re off!
+;jpn:◆しゅっぱーつ!
 @KEY()
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_INTO_BUS,OBJFX_SHOW_NONE);乗車する透明人間
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
@@ -487,35 +487,35 @@ MSG_DSRT_BUSSTOP_FOUR
 @TRUE_GOTO(MSG_BUSSTOP_DANGER)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆（@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｕｓ　ｓｃｈｅｄｕｌｅ．
-;jpn:◆@DSP_NAME(0)は　バスの↓
-;jpn:　じこくひょうを　しらべた。
+◆(@DSP_NAME(0) checked the bus schedule.
+;jpn:◆@DSP_NAME(0)は バスの↓
+;jpn: じこくひょうを しらべた。
 @KEY()↓
 @CHKFGOTO(FLG_TEMP_9,MSG_TWSN_BUSSTOP_TEMP)
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｅ　ｎｅｘｔ　ｂｕｓ　ｗｉｌｌ　ｃｏｍｅ　ｐｒｅｔｔｙ　ｓｏｏｎ．）
-;jpn:◆バスは　もうすぐ　くるようだ。
+◆It looks like the next bus will come pretty soon.)
+;jpn:◆バスは もうすぐ くるようだ。
 @KEY()
 @CLOSEALL()
 @MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_DSRT_FOUR_IN,OBJFX_SHOW_NONE)		;バス登場
-@WAITSYS()	　　;停留所につくまで待つ
+@WAITSYS()	  ;停留所につくまで待つ
 @SETF(FLG_TEMP_9)
 』
 
 MSG_EVT_RIDE_BUS_DSRT_FOUR
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	　;運転手
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆Ｔｈｉｓ　ｂｕｓ　ｇｏｅｓ　ｔｏ　Ｆｏｕｒｓｉｄｅ．
+◆This bus goes to Fourside.
 ;jpn:◆このバスは↓
-;jpn:　フォーサイドに　いぐけんども
+;jpn: フォーサイドに いぐけんども
 @KEY()↓
 ;@GOSUB(MSG_EVT_BUS_MES_B)		;メッセージのサブルーチンへ
-◆Ｉ　ｃａｎ’ｔ　ｌｅｔ　ｙｏｕ　ｏｎ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｐａｙ　＄@DSP_NUM(0)　ｆｏｒ　ｔｈｅ　ｆａｒｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
+◆I can’t let you on if you don’t pay ＄@DSP_NUM(0) for the fare.@KEY()↓
+◆Do you want to go?↓
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
-;jpn:　のせてやらねぇだよ。@KEY()↓
-;jpn:◆いぐか？↓
+;jpn: のせてやらねぇだよ。@KEY()↓
+;jpn:◆いぐか?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_DSRT_FOUR_HIGHWAYBUS_HURRY_YES,_TWSN_BUSDRIVER_LATER_NO)
 @GOTO(_TWSN_BUSDRIVER_LATER_NO)
@@ -529,11 +529,11 @@ _DSRT_FOUR_HIGHWAYBUS_HURRY_YES
 @SETF(FLG_SYS_MONSTER_OFF)
 @FUNC(5)			;配達禁止
 @MOVE_GOM_CHAR( GOM_HIT_CHR4, ANIM_FORBID_CONTROL, OBJFX_SHOW_NONE );入力禁止
-◆Ｏｋ，　ｗｅ’ｒｅ　ｏｆｆ！
-;jpn:◆しゅっぱーつ！
+◆Ok, we’re off!
+;jpn:◆しゅっぱーつ!
 @KEY()
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消;す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消;す
 ;@TRUE_GOTO(MSG_END)
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_INTO_BUS,OBJFX_SHOW_NONE);乗車する透明人間
 @WI(1)
@@ -554,20 +554,20 @@ _THRK_DSRT_FOUR;スリークからのバスはココにつながる
 
 MSG_EVT_RIDE_BUS_THRK_DSRT;
 MSG_THRK_HIGHWAYBUS_HURRY;
-;ハイウェイバスの運転手（ハリー）
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	　;運転手
+;ハイウェイバスの運転手(ハリー)
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆Ｔｈｉｓ　ｂｕｓ　ｇｏｅｓ　ｔｏ　Ｆｏｕｒｓｉｄｅ．
+◆This bus goes to Fourside.
 ;jpn:◆このバスは↓
-;jpn:　フォーサイドに　いぐけんども
+;jpn: フォーサイドに いぐけんども
 @KEY()↓
-◆Ｉ　ｃａｎ’ｔ　ｌｅｔ　ｙｏｕ　ｏｎ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｐａｙ　＄@DSP_NUM(0)　ｆｏｒ　ｔｈｅ　ｆａｒｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
+◆I can’t let you on if you don’t pay ＄@DSP_NUM(0) for the fare.@KEY()↓
+◆Do you want to go?↓
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
-;jpn:　のせてやらねぇだよ。@KEY()↓
-;jpn:◆いぐか？↓
+;jpn: のせてやらねぇだよ。@KEY()↓
+;jpn:◆いぐか?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_THRK_HIGHWAYBUS_HURRY_YES,_TWSN_BUSDRIVER_LATER_NO)
 @GOTO(_TWSN_BUSDRIVER_LATER_NO)
@@ -577,11 +577,11 @@ _THRK_HIGHWAYBUS_HURRY_YES;@MiuraAppended
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｏｋ，　ｗｅ’ｒｅ　ｏｆｆ！
-;jpn:◆しゅっぱーつ！
+◆Ok, we’re off!
+;jpn:◆しゅっぱーつ!
 @KEY()
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 ;@TRUE_GOTO(MSG_END)
 @SETF(FLG_SYS_MONSTER_OFF)
 @FUNC(5)			;配達禁止
@@ -605,11 +605,11 @@ _DSRT_FOUR_HIGHWAYBUS_HURRY_NO;
 _THRK_HIGHWAYBUS_HURRY_NO;
 _THRK_HIGHWAYBUS_HURRY_T_NO;
 _FOUR_HIGHWAYBUS_HURRY_NO;
-◆Ｏｈ．．．ｏｋａｙ．．．ｓｅｅ　ｙｏｕ！
-;jpn:◆あ　そう。
+◆Oh...okay...see you!
+;jpn:◆あ そう。
 @KEYNP()
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 』
 
 
@@ -650,25 +650,25 @@ MSG_EVT_BUS_TUNNEL_DSRT_R;
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @WAITSYS()
 ; バス停
-@COLD_GOM_CHAR(GOM_BUS)						　;バス停止
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	　;運転手
+@COLD_GOM_CHAR(GOM_BUS)						 ;バス停止
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_R,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
-◆Ｔｈｉｓ　ｂｕｓ　ｇｏｅｓ　ｔｏ　Ｆｏｕｒｓｉｄｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｏｆｆ　ｈｅｒｅ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆このバスは　フォーサイドまで↓
-;jpn:　いくけんども　ここでおりるか？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+◆This bus goes to Fourside.@KEY()↓
+◆Do you want to get off here?↓
+<Yes> <No>
+;jpn:◆このバスは フォーサイドまで↓
+;jpn: いくけんども ここでおりるか?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_THROUGH_DSRT_TO_FOUR_YES,_THROUGH_DSRT_TO_FOUR_NO)
 _THROUGH_DSRT_TO_FOUR_NO
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @GOTO(_THRK_DSRT_FOUR)
 
 _THROUGH_DSRT_TO_FOUR_YES
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @CLRF(FLG_BGM_BUS)
 @MUSISTART()
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_OUT_BUS_R,OBJFX_SHOW_NONE)	;降りる人
@@ -755,36 +755,36 @@ MSG_FOUR_BUSSTOP_THRK;
 @TRUE_GOTO(MSG_BUSSTOP_DANGER)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆（@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｕｓ　ｓｃｈｅｄｕｌｅ．
-;jpn:◆@DSP_NAME(0)は　バスの↓
-;jpn:　じこくひょうを　しらべた。
+◆(@DSP_NAME(0) checked the bus schedule.
+;jpn:◆@DSP_NAME(0)は バスの↓
+;jpn: じこくひょうを しらべた。
 @KEY()↓
 @CHKFGOTO(FLG_TEMP_9,MSG_TWSN_BUSSTOP_TEMP)
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｔｈｅ　ｎｅｘｔ　ｂｕｓ　ｗｉｌｌ　ｃｏｍｅ　ｓｏｏｎ．）
-;jpn:◆バスは　もうすぐ　くるようだ。
+◆It looks like the next bus will come soon.)
+;jpn:◆バスは もうすぐ くるようだ。
 @KEY()
 @CLOSEALL()
 @MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_FOUR_THRK_IN,OBJFX_SHOW_NONE)		;バス登場
-@WAITSYS()	　　;停留所につくまで待つ
+@WAITSYS()	  ;停留所につくまで待つ
 @SETF(FLG_TEMP_9)
 』
 
 MSG_EVT_RIDE_BUS_FOUR_DSRT;
-MSG_FOUR_HIGHWAYBUS_HURRY;松（ＮＯＡのコメント）
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	　;運転手
+MSG_FOUR_HIGHWAYBUS_HURRY;松(NOAのコメント)
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
-◆Ｔｈｉｓ　ｂｕｓ　ｇｏｅｓ　ｔｏ　Ｔｗｏｓｏｎ　ｖｉａ　Ｔｈｒｅｅｄ．
-;jpn:◆このバスは　スリークけいゆ↓
-;jpn:　ツーソンゆきだよ。
+◆This bus goes to Twoson via Threed.
+;jpn:◆このバスは スリークけいゆ↓
+;jpn: ツーソンゆきだよ。
 @KEY()↓
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆Ｉｔ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃｏｓｔ　＄@DSP_NUM(0)．@KEY()↓
-◆（ｆｏｒ　ｔｈｅ　ｌｏｔ　ｏｆ　ｙｏｕ）．@KEY()↓
-;◆Ｍｏｓｈｉ_ｐａｒｔｙ_ｇａ_ｆｕｔａｒｉ_ｉｚｙｏｕ_ｄａｔｔａｒａ_ｋｏｎｏ_ｇｙｏｕｗｏ_ｔａｓｕ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
+◆It is going to cost ＄@DSP_NUM(0).@KEY()↓
+◆(for the lot of you).@KEY()↓
+;◆Moshi_party_ga_futari_izyou_dattara_kono_gyouwo_tasu.@KEY()↓
+◆Do you want to go?↓
 ;jpn:◆みんなで@DSP_NUM(0)ドルになるけど↓
-;jpn:　のってくかい？↓
+;jpn: のってくかい?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_FOUR_HIGHWAYBUS_HURRY_YES,_FOUR_HIGHWAYBUS_HURRY_NO)
 @GOTO(_FOUR_HIGHWAYBUS_HURRY_NO)
@@ -795,13 +795,13 @@ _FOUR_HIGHWAYBUS_HURRY_YES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｏｋ，　ｗｅ’ｒｅ　ｏｆｆ！
-;jpn:◆しゅっぱーつ！
+◆Ok, we’re off!
+;jpn:◆しゅっぱーつ!
 @KEY()
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 ;
-@SETF(FLG_SYS_MONSTER_OFF)							　　;モンスター出さない
+@SETF(FLG_SYS_MONSTER_OFF)							  ;モンスター出さない
 @FUNC(5)			;配達禁止
 @MOVE_GOM_CHAR( GOM_HIT_CHR4, ANIM_FORBID_CONTROL, OBJFX_SHOW_NONE );入力禁止
 ;
@@ -809,72 +809,72 @@ _FOUR_HIGHWAYBUS_HURRY_YES;
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()											　　;乗車するまで待つ
+@WAITSYS()											  ;乗車するまで待つ
 @SETF(FLG_BGM_BUS)
 @MUSISTART()
 ;@BGMSTART(0,BGM_basu);虫を無視
-@REMOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_FOUR_THRK_GO)		　;バス発車
+@REMOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_FOUR_THRK_GO)		 ;バス発車
 @HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
-@WAITSYS()									　　;トンネルまで
+@WAITSYS()									  ;トンネルまで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; トンネルへ
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_FOUR_TUNNEL,OBJFX_AFTER_WARP)　;トンネル内のバス
-@WARP(WARP_BUS_FOUR_TUNNEL)					　;トンネル内へワープ
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_FOUR_TUNNEL,OBJFX_AFTER_WARP) ;トンネル内のバス
+@WARP(WARP_BUS_FOUR_TUNNEL)					 ;トンネル内へワープ
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;トンネル出口まで
+@WAITSYS()									  ;トンネル出口まで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; 橋へ
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_BRDG_L,OBJFX_AFTER_WARP)　;橋のバス
-@WARP(WARP_BUS_TUNNEL_BRDG_L)					　
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_BRDG_L,OBJFX_AFTER_WARP) ;橋のバス
+@WARP(WARP_BUS_TUNNEL_BRDG_L)					 
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;橋出口まで
+@WAITSYS()									  ;橋出口まで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; トンネルへ
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_BRDG_TUNNEL_L,OBJFX_AFTER_WARP)　;トンネル内のバス
-@WARP(WARP_BUS_BRDG_TUNNEL_L)					　
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_BRDG_TUNNEL_L,OBJFX_AFTER_WARP) ;トンネル内のバス
+@WARP(WARP_BUS_BRDG_TUNNEL_L)					 
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;トンネル出口まで
+@WAITSYS()									  ;トンネル出口まで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; 砂漠へ
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_DSRT_L,OBJFX_AFTER_WARP)　;砂漠のバス
-@WARP(WARP_BUS_TUNNEL_DSRT_L)				　　　;砂漠へワープ
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_DSRT_L,OBJFX_AFTER_WARP) ;砂漠のバス
+@WARP(WARP_BUS_TUNNEL_DSRT_L)				   ;砂漠へワープ
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;トンネルまで
+@WAITSYS()									  ;トンネルまで
 @COLD_GOM_CHAR(GOM_BUS)
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	　;運転手
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
-◆Ｔｈｉｓ　ｂｕｓ　ｃｏｎｔｉｎｕｅｓ　ｏｎ　ｔｏ　Ｔｗｏｓｏｎ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｏｆｆ　ｈｅｒｅ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆このバスは　ツーソンまで↓
-;jpn:　いくけど　ここでおりるかい？↓
-;jpn:　　<はい>　　<いいえ>
+◆This bus continues on to Twoson.@KEY()↓
+◆Do you want to get off here?↓
+<Yes> <No>
+;jpn:◆このバスは ツーソンまで↓
+;jpn: いくけど ここでおりるかい?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_THROUGH_DSRT_TO_THRK_YES,_THROUGH_DSRT_TO_THRK_NO)
 _THROUGH_DSRT_TO_THRK_NO;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @GOTO(_FOUR_DSRT_THRK)
 
 _THROUGH_DSRT_TO_THRK_YES;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @CLRF(FLG_BGM_BUS)
 @MUSISTART()
-@MOVE_GOM_CHAR(GOM_HIT_CHR, ANIM_OUT_BUS_R,OBJFX_SHOW_NONE)　　;降りる人
+@MOVE_GOM_CHAR(GOM_HIT_CHR, ANIM_OUT_BUS_R,OBJFX_SHOW_NONE)  ;降りる人
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
 @FRESH_PLAYER(PC_ALL)
@@ -884,7 +884,7 @@ _THROUGH_DSRT_TO_THRK_YES;
 @COLD_PLAYER(PC_ALL)
 @FRESH_GOM_CHAR(GOM_BUS)						;バスははける
 @WAITSYS()
-@RESF(FLG_SYS_MONSTER_OFF)							　　;モンスター出る
+@RESF(FLG_SYS_MONSTER_OFF)							  ;モンスター出る
 @FUNC(6)			;配達許可
 @MOVE_GOM_CHAR( GOM_HIT_CHR4, ANIM_PERMIT_CONTROL, OBJFX_SHOW_NONE );入力許可
 』
@@ -892,65 +892,65 @@ _THROUGH_DSRT_TO_THRK_YES;
 ; トンネルへ
 MSG_EVT_BUS_TUNNEL_HWAY_L
 @SET_CAMERA_PARTY()
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_DSRT_TUNNEL_L,OBJFX_AFTER_WARP)　;トンネルのバス
-@WARP(WARP_BUS_DSRT_TUNNEL_L)				　　　;トンネルへワープ
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_DSRT_TUNNEL_L,OBJFX_AFTER_WARP) ;トンネルのバス
+@WARP(WARP_BUS_DSRT_TUNNEL_L)				   ;トンネルへワープ
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;トンネル出口まで
+@WAITSYS()									  ;トンネル出口まで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; 高速へ
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_HWAY_L,OBJFX_AFTER_WARP)　;トンネルのバス
-@WARP(WARP_BUS_TUNNEL_HWAY_L)				　　　;高速へワープ
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_HWAY_L,OBJFX_AFTER_WARP) ;トンネルのバス
+@WARP(WARP_BUS_TUNNEL_HWAY_L)				   ;高速へワープ
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;高速出口まで
+@WAITSYS()									  ;高速出口まで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; トンネルへ
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_HWAY_TUNNEL_L,OBJFX_AFTER_WARP)　;トンネルのバス
-@WARP(WARP_BUS_HWAY_TUNNEL_L)				　　　;トンネルへワープ
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_HWAY_TUNNEL_L,OBJFX_AFTER_WARP) ;トンネルのバス
+@WARP(WARP_BUS_HWAY_TUNNEL_L)				   ;トンネルへワープ
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;トンネル出口まで
+@WAITSYS()									  ;トンネル出口まで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; スリークへ
-@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_THRK_L,OBJFX_AFTER_WARP)　;スリークのバス
-@WARP(WARP_BUS_TUNNEL_THRK_L)				　　　;スリークへワープ
+@MOVE_GOM_CHAR(GOM_BUS,ANIM_BUS_TUNNEL_THRK_L,OBJFX_AFTER_WARP) ;スリークのバス
+@WARP(WARP_BUS_TUNNEL_THRK_L)				   ;スリークへワープ
 ;@WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_BUS)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()									　　;バス停まで
+@WAITSYS()									  ;バス停まで
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 ; バス停
-@COLD_GOM_CHAR(GOM_BUS)						　;バス停止
-@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	　;運転手
+@COLD_GOM_CHAR(GOM_BUS)						 ;バス停止
+@MOVE_GOM_CHAR(GOM_BUS_DRIVER,ANIM_BUS_DRIVER_L,OBJFX_SHOW_NONE)	 ;運転手
 @OPEN(1)
-◆Ｔｈｉｓ　ｂｕｓ　ｃｏｎｔｉｎｕｅｓ　ｏｎ　ｔｏ　Ｔｗｏｓｏｎ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｏｆｆ　ｈｅｒｅ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆このバスは　ツーソンまで↓
-;jpn:　いくけど　ここでおりるかい？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+◆This bus continues on to Twoson.@KEY()↓
+◆Do you want to get off here?↓
+<Yes> <No>
+;jpn:◆このバスは ツーソンまで↓
+;jpn: いくけど ここでおりるかい?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_THROUGH_THRK_TO_TWSN_YES,_THROUGH_THRK_TO_TWSN_NO)
 _THROUGH_THRK_TO_TWSN_NO;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @GOTO(_FOUR_THRK_TWSN)
 
 _THROUGH_THRK_TO_TWSN_YES;
 @CLOSEALL()
-@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					　　　;運転手消す
+@HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)					   ;運転手消す
 @CLRF(FLG_BGM_BUS)
 @MUSISTART()
 ;@BGMSTART(0,BGM_threek)
-@MOVE_GOM_CHAR(GOM_HIT_CHR, ANIM_OUT_BUS_R,OBJFX_SHOW_NONE)　　;降りる人
+@MOVE_GOM_CHAR(GOM_HIT_CHR, ANIM_OUT_BUS_R,OBJFX_SHOW_NONE)  ;降りる人
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
 @FRESH_PLAYER(PC_ALL)
@@ -961,22 +961,22 @@ _THROUGH_THRK_TO_TWSN_YES;
 @FRESH_GOM_CHAR(GOM_BUS)						;バスははける
 @WAITSYS()
 ;
-@RESF(FLG_SYS_MONSTER_OFF)							　　;モンスター出る
+@RESF(FLG_SYS_MONSTER_OFF)							  ;モンスター出る
 @FUNC(6)			;配達許可
 @MOVE_GOM_CHAR( GOM_HIT_CHR4, ANIM_PERMIT_CONTROL, OBJFX_SHOW_NONE );入力許可
 ;
 』
 
 MSG_EVT_BUS_MES_A;
-◆Ｉｔ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃｏｓｔ　＄@DSP_NUM(0)　ｆｏｒ　ｔｈｅ　ｌｏｔ　ｏｆ　ｙｏｕ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
-;jpn:　みんなで@DSP_NUM(0)ドルになるけど↓
-;jpn:　のってくかい？↓
+◆It is going to cost ＄@DSP_NUM(0) for the lot of you.@KEY()↓
+◆Do you want to go?↓
+;jpn: みんなで@DSP_NUM(0)ドルになるけど↓
+;jpn: のってくかい?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_BUS_MES_A_YES,_BUS_MES_A_NO)
 _BUS_MES_A_NO;
-◆Ｏｈ．．．ｏｋａｙ．．．ｓｅｅ　ｙｏｕ！
-;jpn:◆あ　そう。
+◆Oh...okay...see you!
+;jpn:◆あ そう。
 _BUS_MES_A_NO_2;
 @KEYNP()
 @SET_LOOPREG(1)
@@ -990,34 +990,34 @@ _BUS_MES_A_YES;
 @TRUE_GOTO(_BUS_MES_A_NOMONEY)
 @MONEYOUT(0)
 @WINR_MONEY()
-◆Ｏｋ，　ｗｅ’ｒｅ　ｏｆｆ！
-;jpn:◆しゅっぱーつ！
+◆Ok, we’re off!
+;jpn:◆しゅっぱーつ!
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
 @!
 _BUS_MES_A_NOMONEY;
-◆Ｉ　ｃａｎ’ｔ　ｌｅｔ　ｙｏｕ　ｏｎ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｐａｙ．
+◆I can’t let you on if you don’t pay.
 ;jpn:◆おかねがないんじゃ↓
-;jpn:　しょうがないなぁ。
+;jpn: しょうがないなぁ。
 @GOTO(_BUS_MES_A_NO_2)
 
 
 MSG_EVT_BUS_MES_B;
-◆Ｉ　ｃａｎ’ｔ　ｌｅｔ　ｙｏｕ　ｏｎ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｐａｙ　＄@DSP_NUM(0)　ｆｏｒ　ｔｈｅ　ｆａｒｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ？↓
+◆I can’t let you on if you don’t pay ＄@DSP_NUM(0) for the fare.@KEY()↓
+◆Do you want to go?↓
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
-;jpn:　のせてやらねぇだよ。@KEY()↓
-;jpn:◆いぐか？↓
+;jpn: のせてやらねぇだよ。@KEY()↓
+;jpn:◆いぐか?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_BUS_MES_B_YES,_BUS_MES_B_NO)
 _BUS_MES_B_NO;
-◆Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ，　ｙｏｕ　ｓｈｏｕｌｄ　ｊｕｓｔ　ｓｔｒｏｌｌ　ａｒｏｕｎｄ．@KEY()↓
-◆Ｂｅｓｉｄｅｓ，　ｗａｌｋｉｎｇ　ｉｓ　ｇｏｏｄ　ｆｏｒ　ｙｏｕ．
-;jpn:◆かねが　ねぇんだったら↓
-;jpn:　エッチラ　オッチラ↓
-;jpn:　あるいていくが　いいだよ。@KEY()↓
-;jpn:◆けんこうにも　いいし。
+◆If you don’t have any money, you should just stroll around.@KEY()↓
+◆Besides, walking is good for you.
+;jpn:◆かねが ねぇんだったら↓
+;jpn: エッチラ オッチラ↓
+;jpn: あるいていくが いいだよ。@KEY()↓
+;jpn:◆けんこうにも いいし。
 @SET_LOOPREG(1)
 @SET_REG(1)
 @XCHG()
@@ -1031,8 +1031,8 @@ _BUS_MES_B_YES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｏｋａｙ，　ｌｅｔ’ｓ　ｇｉｖｅ　ｉｔ　ａ　ｓｈｏｔ！
-;jpn:◆んじゃ　いってみるべ！
+◆Okay, let’s give it a shot!
+;jpn:◆んじゃ いってみるべ!
 @KEYNP()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_BUS_DRIVER,OBJFX_HIDE_NONE)	;運転手消す
@@ -1044,7 +1044,7 @@ _BUS_MES_B_YES;
 ;-------------------------------------------------
 
 
-;#26	ゴーストトンネル（バスor自転車or歩き）	ゝ
+;#26	ゴーストトンネル(バスor自転車or歩き)	ゝ
 
 ;★ツーソンとスリーク、スリークとドコドコ砂漠を結ぶトンネルには、
 ;グレープフルーツの滝の秘密基地のボス「ゲップー」を倒すまでは
@@ -1060,10 +1060,10 @@ _BUS_MES_B_YES;
 MSG_EVT_GHOST_1;
 @OPEN(1)
 @SE(SE_se60_monster_appear)
-◆Ｗｏｏｏｏ！　Ｗｏｏｏ！　Ｗｏｏｏｏｏｏｏ！@KEY()↓
-◆（Ｇｏ　ｂａｃｋ！　　Ｇｏ　ｂａｃｋ！）
+◆Woooo! Wooo! Wooooooo!@KEY()↓
+◆(Go back!  Go back!)
 ;jpn:◆ケケケケケ。↓
-;jpn:　（も〜どれ〜〜。も〜どれ〜）
+;jpn: (も〜どれ〜〜。も〜どれ〜)
 @KEY()
 @CLOSEALL()
 』
@@ -1071,10 +1071,10 @@ MSG_EVT_GHOST_1;
 MSG_EVT_GHOST_WARP;
 @OPEN(1)
 @SE(SE_se60_monster_appear)
-◆Ｗｏｏｏ！　Ｗｏｏｏ！　Ｗｏｏｏｏｏｏ！@KEY()↓
-◆（Ｇｏ　ｂａｃｋ！　　Ｇｏ　ｂａｃｋ！）
+◆Wooo! Wooo! Woooooo!@KEY()↓
+◆(Go back!  Go back!)
 ;jpn:◆ケケケケケ。↓
-;jpn:　（も〜どれ〜〜。も〜どれ〜）
+;jpn: (も〜どれ〜〜。も〜どれ〜)
 @KEY()
 @CLOSEALL()
 @MOVE_GOM_CHAR(GOM_ZOMBIGHOST,ANIM_GHOST_PLUS1,OBJFX_SHOW_NONE);二匹追加
@@ -1106,10 +1106,10 @@ _EVT_26_WR;ツーソンから歩きで行った場合
 MSG_EVT_GHOST_WARP_THRK;
 @OPEN(1)
 @SE(SE_se60_monster_appear)
-◆Ｗｏｏｏ！　　Ｗｏｏｏ！　　Ｗｏｏｏｏｏｏ！@KEY()↓
-◆（Ｇｏ　ｂａｃｋ！　　Ｇｏ　ｂａｃｋ！）
+◆Wooo!  Wooo!  Woooooo!@KEY()↓
+◆(Go back!  Go back!)
 ;jpn:◆ケケケケケ。↓
-;jpn:　（も〜どれ〜〜。も〜どれ〜）
+;jpn: (も〜どれ〜〜。も〜どれ〜)
 @KEY()
 @CLOSEALL()
 @MOVE_GOM_CHAR(GOM_ZOMBIGHOST,ANIM_GHOST_THRK_PLUS1,OBJFX_SHOW_NONE);２匹追加
@@ -1129,15 +1129,15 @@ MSG_EVT_GHOST_WARP_THRK;
 
 ;★アップルキッドに食べ物をあげて FLG_TWSN_APPLE_THANKS が ON に
 ;なったらマウスをドアの前に移動させる。
-;（フラグを見て自分で移動するのか、強制的に移動させるのかどちらがよいの？）
+;(フラグを見て自分で移動するのか、強制的に移動させるのかどちらがよいの?)
 ;●答え：この場合は強制的に移動させるのがよい。
-;　　　　ダイレクトに命令を下せる場合は、命令する原則でいこう。
+;    ダイレクトに命令を下せる場合は、命令する原則でいこう。
 ;★マウスはネスに話し掛けられたら MSG_TWSN_MOUSE_0 を発行する。
 
-;★有望青年Ｂの家からツーソンフィールドへのワープポイントに
+;★有望青年Bの家からツーソンフィールドへのワープポイントに
 ;検査フラグ FLG_WARP_APPLE_TWSN を設定。
 ;★FLG_WARP_APPLE_TWSN /ON の時はワープ禁止。
-;（アップルに食べ物をあげたら、マウスと話すまでは外に出られない。）
+;(アップルに食べ物をあげたら、マウスと話すまでは外に出られない。)
 
 MSG_EVT_27_APPLE;マウスはドアへ
 @REMOVE_CHAR(PRSN_TWSN_APPLE_B,ANIM_MOUSE_DOOR)
@@ -1175,7 +1175,7 @@ MSG_EVT_28_PAUL;
 ;#29	つきまとう寄付屋	3.1	T
 
 ;★ハッピーハッピー村の寄付屋で寄付を拒否すると
-;プレイヤーキャラの後を（少し離れて）追いかけさせる。
+;プレイヤーキャラの後を(少し離れて)追いかけさせる。
 
 MSG_EVT_KIFUYA;
 @SHOW_MANPU_CHAR(PRSN_HAPY_FIELD_L,MANPU_BIKKURI)
@@ -1200,7 +1200,7 @@ MSG_EVT_29_KIFU_X;寄付しなかったら
 ;-----------------------------------------------------
 
 
-;#30	電話が掛かってくる（最初）	こまわり君シート対応
+;#30	電話が掛かってくる(最初)	こまわり君シート対応
 
 ;★リリパットステップのダンジョンで通路を塞いでいる
 ;「てつのタコ」がプレイヤーキャラを発見したら FLG_TWSN_TACO_DISCOVER
@@ -1210,24 +1210,24 @@ MSG_EVT_29_KIFU_X;寄付しなかったら
 ;プレイヤーが「受信専用電話」を獲得しているかを調べて、さらに
 ;FLG_TWSN_TACO_DISCOVER が on であったら
 ;アップルキッドから電話が掛かってくる。
-;★まず電話呼出音の曲に切り替え（トゥルルル‥‥）、
+;★まず電話呼出音の曲に切り替え(トゥルルル‥‥)、
 ;キー入力があったら MSG_PHONE_TACO_ERASER を表示する。
 
 ;★メッセージ後、音楽は元の曲に戻す。
 
 ;鉄のタコ
-;Ｇフルデッド、ウィンターズ、ドコドコ砂漠に存在する
+;Gフルデッド、ウィンターズ、ドコドコ砂漠に存在する
 
 MSG_GRFD_LLPT_TACO;
 MSG_WINS_TACO;
 MSG_DSRT_SARUDUNGEON_TACO;
 MSG_GRFD_TACO_ERASER;
-◆（Ｆｏｒ　ｓｏｍｅ　ｗｅｉｒｄ　ｒｅａｓｏｎ，@KEY()↓
-◆ａｎ　ｐｅｎｃｉｌ−ｓｈａｐｅｄ　ｉｒｏｎ　ｓｔａｔｕｅ　ｉｓ　ｂｌｏｃｋｉｎｇ　ｔｈｅ　ｐａｔｈ．）
+◆(For some weird reason,@KEY()↓
+◆an pencil−shaped iron statue is blocking the path.)
 
-;jpn:◆（なぜか　タコのかたちをした↓
-;jpn:　てつのかたまりが↓
-;jpn:　みちを　ふさいでいる）
+;jpn:◆(なぜか タコのかたちをした↓
+;jpn: てつのかたまりが↓
+;jpn: みちを ふさいでいる)
 @KEYNP()
 』
 
@@ -1269,12 +1269,12 @@ MSG_WINS_TACO_RECEIVE;
 _SUB_TACO_ERASE;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)　ｕｓｅｄ　ｔｈｅ　Ｐｅｎｃｉｌ　Ｅｒａｓｅｒ．@KEY()↓
+◆@DSP_NAME(0) used the Pencil Eraser.@KEY()↓
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　タコけしマシンを　つかった！@KEY()↓
-;jpn:◆なぜか　てつのタコは↓
-;jpn:　いっしゅんのうちに↓
-;jpn:　きえさった！
+;jpn: タコけしマシンを つかった!@KEY()↓
+;jpn:◆なぜか てつのタコは↓
+;jpn: いっしゅんのうちに↓
+;jpn: きえさった!
 @KEYNP()
 @SE(SE_se21_b_foe_down)
 @!
@@ -1286,10 +1286,10 @@ _SUB_TACO_ERASE;
 @LOAD_REG()
 @GOSUB(MSG_SUB_GOODS_TUKATTA)
 ←
-◆Ｆｏｒ　ｓｏｍｅ　ｗｅｉｒｄ　ｒｅａｓｏｎ，　ｔｈｅ　ｉｒｏｎ　ｐｅｎｃｉｌ　ｓｔａｔｕｅ　ｗａｓ　ｅｒａｓｅｄ！
-;jpn:◆なぜか　てつのタコは↓
-;jpn:　いっしゅんのうちに↓
-;jpn:　きえさった！
+◆For some weird reason, the iron pencil statue was erased!
+;jpn:◆なぜか てつのタコは↓
+;jpn: いっしゅんのうちに↓
+;jpn: きえさった!
 @KEYNP()
 @WI(1)
 
@@ -1300,18 +1300,18 @@ MSG_PHONE_TACO_ERASER;
 @BGMSTOP(0)
 @SE(SE_se0b_tel_put)
 @OPEN(1)
-◆Ｈｅｌｌｏ．．．ｔｈｉｓ　ｉｓ　ｔｈｅ　Ａｐｐｌｅ　Ｋｉｄ．@KEY()↓
-◆Ｉ’ｖｅ　ｊｕｓｔ　ｆｉｎｉｓｈｅｄ　ｗｏｒｋ　ｏｎ　ｔｈｉｓ　ｇｒｅａｔ　ｉｎｖｅｎｔｉｏｎ！@KEY()↓
-◆Ｇｅｔ　ｏｖｅｒ　ｈｅｒｅ　ａｓ　ｆａｓｔ　ａｓ　ｙｏｕ　ｃａｎ！@KEY()↓
-◆Ｔｈｉｓ　ｔｈｉｎｇ　ｉｓ　ｓｏｏｏｏ　ｃｏｏｌ！@KEY()↓
-◆Ｓｅｅ　ｙｏｕ　ｓｏｏｎ！@KEY()↓
-◆Ｓｌａｍ！　　Ｂｅｅｅｅｐ．．．
+◆Hello...this is the Apple Kid.@KEY()↓
+◆I’ve just finished work on this great invention!@KEY()↓
+◆Get over here as fast as you can!@KEY()↓
+◆This thing is soooo cool!@KEY()↓
+◆See you soon!@KEY()↓
+◆Slam!  Beeeep...
 ;jpn:◆もしもし‥‥アップルキッドです。↓
-;jpn:　ブリリアントなアイテムが↓
-;jpn:　ついに　かんせいしました。@KEY()↓
-;jpn:◆すぐに　とりにきてください。↓
-;jpn:　すっごいんです！↓
-;jpn:　じゃ！　ガチャン！@KEY()↓
+;jpn: ブリリアントなアイテムが↓
+;jpn: ついに かんせいしました。@KEY()↓
+;jpn:◆すぐに とりにきてください。↓
+;jpn: すっごいんです!↓
+;jpn: じゃ! ガチャン!@KEY()↓
 ;jpn:◆ツーツーツー
 @KEYNP()
 @CLOSEALL()
@@ -1327,8 +1327,8 @@ MSG_PHONE_TACO_ERASER;
 
 ;#31	カオス劇場入場	2.6	こまわり君シート対応
 
-;★カオス劇場チケットもぎり嬢にチケット（GDS_TOOL_THEATER_TICKET）を
-;「つかう」と、（MSG_TWSN_CARROT_RECEIVE）により
+;★カオス劇場チケットもぎり嬢にチケット(GDS_TOOL_THEATER_TICKET)を
+;「つかう」と、(MSG_TWSN_CARROT_RECEIVE)により
 ;もぎり嬢は東に2キャラ移動して劇場ホールへ続く通路をあける。
 
 MSG_EVT_31_CARROT_R;
@@ -1336,8 +1336,8 @@ MSG_EVT_31_CARROT_R;
 @WAITSYS()
 』
 
-;★（劇場に入った後）チケットもぎり嬢に話し掛けた場合
-;（下以外の方向から話し掛けた場合）は、
+;★(劇場に入った後)チケットもぎり嬢に話し掛けた場合
+;(下以外の方向から話し掛けた場合)は、
 ;もぎり嬢はカウンターの外側に移動して出口への通路をあける。
 
 MSG_EVT_31_CARROT_D;
@@ -1366,8 +1366,8 @@ MSG_EVT_32_TONZURASTAGE;
 @GOSUB(MSG_EVT_CHAOS_TONZURA_MC);カオスステージ開始のアナウンス
 ;-----
 @MOVE_GOM_CHAR(GOM_TEN,ANIM_TSTAGE1_SCR_1,OBJFX_SHOW_NONE);暗転、スクロール
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE)　;固まるプレーヤー
-@SET_GOM_CHAR_DIR(GOM_HIT_CHR,DIR_M_UP_RIGHT);（ステージの方を向く）
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE) ;固まるプレーヤー
+@SET_GOM_CHAR_DIR(GOM_HIT_CHR,DIR_M_UP_RIGHT);(ステージの方を向く)
 ;@HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
 ;パーティーを GOM で表示する。気絶状態などのチェックが必要。
 ;@GET_ORDER_PLAYER(1)
@@ -1380,10 +1380,10 @@ MSG_EVT_32_TONZURASTAGE;
 ;_MSG_EVT_32_CONT
 @MOVE_GOM_CHAR(GOM_MIKE,ANIM_TSTAGE1_MIKE_L,OBJFX_SHOW_NONE)
 @MOVE_GOM_CHAR(GOM_MIKE,ANIM_TSTAGE1_MIKE_R,OBJFX_SHOW_NONE)
-@MOVE_GOM_CHAR(GOM_KEYBOARD,ANIM_TSTAGE1_THANK,OBJFX_SHOW_NONE)　;サンキュー
-@MOVE_GOM_CHAR(GOM_OK,ANIM_TSTAGE1_OK,OBJFX_SHOW_NONE)　　　　　　　;オーケー
-@MOVE_GOM_CHAR(GOM_NICE,ANIM_TSTAGE1_NICE,OBJFX_SHOW_NONE)　　　;ナイス
-@MOVE_GOM_CHAR(GOM_GROOVE,ANIM_TSTAGE1_GROOVE,OBJFX_SHOW_NONE)　　　　　　　;グルービー
+@MOVE_GOM_CHAR(GOM_KEYBOARD,ANIM_TSTAGE1_THANK,OBJFX_SHOW_NONE) ;サンキュー
+@MOVE_GOM_CHAR(GOM_OK,ANIM_TSTAGE1_OK,OBJFX_SHOW_NONE)       ;オーケー
+@MOVE_GOM_CHAR(GOM_NICE,ANIM_TSTAGE1_NICE,OBJFX_SHOW_NONE)   ;ナイス
+@MOVE_GOM_CHAR(GOM_GROOVE,ANIM_TSTAGE1_GROOVE,OBJFX_SHOW_NONE)       ;グルービー
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
 @WI(1)
@@ -1397,15 +1397,15 @@ MSG_EVT_TSTAGE1_A
 @REMOVE_GOM_CHAR(GOM_NICE,ANIM_TSTAGE1_FLIP)
 @REMOVE_GOM_CHAR(GOM_GROOVE,ANIM_TSTAGE1_FLIP_TURN)
 @WI(80)
-@MOVE_GOM_CHAR(GOM_GORGEOUS,ANIM_TSTAGE1_GORGEOUS,OBJFX_SHOW_NONE)　　　;ゴージャス
-@MOVE_GOM_CHAR(GOM_LUCKY,ANIM_TSTAGE1_LUCKY,OBJFX_SHOW_NONE)　;ラッキー
+@MOVE_GOM_CHAR(GOM_GORGEOUS,ANIM_TSTAGE1_GORGEOUS,OBJFX_SHOW_NONE)   ;ゴージャス
+@MOVE_GOM_CHAR(GOM_LUCKY,ANIM_TSTAGE1_LUCKY,OBJFX_SHOW_NONE) ;ラッキー
 @WAITSYS()
-@MOVE_GOM_CHAR(GOM_GORGEOUS_DANCE,ANIM_TSTAGE1_GORGEOUS_DANCE,OBJFX_SHOW_NONE)　;ゴージャス
-@MOVE_GOM_CHAR(GOM_LUCKY_DANCE,ANIM_TSTAGE1_LUCKY_DANCE,OBJFX_SHOW_NONE)　;ラッキー
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;ステージ終了待ち
+@MOVE_GOM_CHAR(GOM_GORGEOUS_DANCE,ANIM_TSTAGE1_GORGEOUS_DANCE,OBJFX_SHOW_NONE) ;ゴージャス
+@MOVE_GOM_CHAR(GOM_LUCKY_DANCE,ANIM_TSTAGE1_LUCKY_DANCE,OBJFX_SHOW_NONE) ;ラッキー
+@WAITSYS()                                              ;ステージ終了待ち
 @REMOVE_GOM_CHAR(GOM_TEN,ANIM_TSTAGE1_SCR_2);スクロール、明
 ;@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_TSTAGE1_SCR_2,OBJFX_SHOW_NONE);スクロール、明
-@MUSISTART();ここで曲スタート？
+@MUSISTART();ここで曲スタート?
 』
 
 MSG_EVT_TSTAGE1_B
@@ -1424,7 +1424,7 @@ MSG_EVT_TSTAGE1_B
 @HIDE_GOM_CHAR(GOM_MIKE,OBJFX_HIDE_NONE)	;2
 ;-----
 @CLRF(FLG_TWSN_CHAOS_ONSTAGE)	;演奏終了客出現
-@WARP(WARP_TWSN_CHAOS_HALL)	;暗転で　　↑
+@WARP(WARP_TWSN_CHAOS_HALL)	;暗転で  ↑
 @WI(1)
 ;@MOVE_CHAR(PRSN_TWSN_CHAOS_HALL_B,ANIM_PEOPLE_TBACK,OBJFX_SHOW_NONE)
 ;@MOVE_CHAR(PRSN_TWSN_CHAOS_HALL_C,ANIM_PEOPLE_TBACK,OBJFX_SHOW_NONE)
@@ -1443,84 +1443,84 @@ MSG_EVT_TSTAGE1_B
 
 MSG_EVT_CHAOS_TONZURA_MC;カオスステージ開始のアナウンス
 @OPEN(1)
-◆Ｙｅａｈ！　　Ｔｈａｔ’ｓ　ｒｉｇｈｔ！@KEY()↓
-◆Ｔｏｎｉｇｈｔ，　ｙｏｕ　ｇｏｔ　ｔｈｅ　Ｃｈａｏｓ　Ｔｈｅａｔｅｒ’ｓ　Ｓｏｕｌ　Ｍｅｎ　ｃｏｍｉｎ’　ａｔ　ｙａ！@KEY()↓
-◆Ｒｏｃｋｉｎ’　ａｎｄ　ｒｏｌｌｉｎ’　ｌｉｖｅ　ｏｎ　ｔｈｉｓ　ｈｅｒｅ　ｓｔａｇｅ　ｆｏｒ　ａ　ｌｉｍｉｔｅｄ　ｔｉｍｅ　ｏｎｌｙ！@KEY()↓
-◆Ｔｈｅ　ｗｏｒｌｄ’ｓ　ｇｒｅａｔｅｓｔ　Ｂｌｕｅｓｍｅｎ，@KEY()↓
-◆ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ！　　Ａｎｄ　ｈｅｒｅ　ｔｈｅｙ　ｃｏｍｅ！@KEY()↓
-◆Ｏｈ　ｙｅａｈ！　　Ｂａｂｙ！
-;jpn:◆イエーイ！↓
-;jpn:　カオスげきじょうの↓
-;jpn:　ソウルメーーーン！！@KEY()↓
-;jpn:◆セクシーで　エキサイティング！↓
-;jpn:　ダイナマイトな　ステージ！@KEY()↓
-;jpn:◆カモーン！@WI(20)↓
-;jpn:　グレイティスト　ブルースメン‥‥@KEY()↓
-;jpn:◆トンズラブラザーズバーンド！！@WI(20)↓
-;jpn:　ヒア　ウィー　カム！@WI(15)↓
-;jpn:　ガッチャ！　ガッチャ！
+◆Yeah!  That’s right!@KEY()↓
+◆Tonight, you got the Chaos Theater’s Soul Men comin’ at ya!@KEY()↓
+◆Rockin’ and rollin’ live on this here stage for a limited time only!@KEY()↓
+◆The world’s greatest Bluesmen,@KEY()↓
+◆the Runaway Five!  And here they come!@KEY()↓
+◆Oh yeah!  Baby!
+;jpn:◆イエーイ!↓
+;jpn: カオスげきじょうの↓
+;jpn: ソウルメーーーン!!@KEY()↓
+;jpn:◆セクシーで エキサイティング!↓
+;jpn: ダイナマイトな ステージ!@KEY()↓
+;jpn:◆カモーン!@WI(20)↓
+;jpn: グレイティスト ブルースメン‥‥@KEY()↓
+;jpn:◆トンズラブラザーズバーンド!!@WI(20)↓
+;jpn: ヒア ウィー カム!@WI(15)↓
+;jpn: ガッチャ! ガッチャ!
 @KEY()
 @CLOSEALL()
 』
 
 MSG_TWSN_CHAOS_MOHIKAN;モヒカン
-◆Ａ　ｙｏｕｎｇ　ｆａｎ　ｌｉｋｅ　ｙｏｕ　ｒｅａｌｌｙ　ｇｅｔｓ　ｉｎｔｏ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ’ｓ　ｍｕｓｉｃ？@KEY()↓
-◆Ｗｏｗ，　Ｉ’ｍ　ｉｍｐｒｅｓｓｅｄ！
+◆A young fan like you really gets into the Runaway Five’s music?@KEY()↓
+◆Wow, I’m impressed!
 ;jpn:◆わかいのにトンズラの↓
-;jpn:　ブルースのこころが↓
-;jpn:　わかるなんて‥‥@KEY()↓
+;jpn: ブルースのこころが↓
+;jpn: わかるなんて‥‥@KEY()↓
 ;jpn:◆みあげたもんだ。
 @KEYNP()
 』
 
 MSG_TWSN_CHAOS_HALL_E;
 @CHKFGOTO(FLG_TWSN_CHAOS_STAGE_START,_TWSN_CHAOS_HALL_E_TEMP)
-◆Ｓｅｅｉｎｇ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｏｎ　ｓｔａｇｅ　ｉｓ　ｍｙ　ｌｉｆｅ．．．
+◆Seeing the Runaway Five on stage is my life...
 ;jpn:◆わたしトンズラの↓
-;jpn:　ステージだけが↓
-;jpn:　じんせいの　いきがいなの！
+;jpn: ステージだけが↓
+;jpn: じんせいの いきがいなの!
 @KEYNP()
 』
 _TWSN_CHAOS_HALL_E_TEMP;
-◆Ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ａｒｅ　ｓｏ　ｓｅｘｙ！@KEY()↓
-◆Ｍｙ　ｈｕｓｂａｎｄ　ｄｅｆｉｎｉｔｅｌｙ　ｉｓ@KEY()↓
-◆ｉｎ　ｎｅｅｄ　ｏｆ　ｓｏｍｅ　ｈｅｌｐ　ｉｎ　ｔｈａｔ　ａｒｅａ！
-;jpn:◆うちの　しゅじんも↓
-;jpn:　トンズラみたいに↓
-;jpn:　セクシー@KEY()↓
+◆The Runaway Five are so sexy!@KEY()↓
+◆My husband definitely is@KEY()↓
+◆in need of some help in that area!
+;jpn:◆うちの しゅじんも↓
+;jpn: トンズラみたいに↓
+;jpn: セクシー@KEY()↓
 ;jpn:◆‥‥ならねぇ。
 @KEYNP()
 』
 
 MSG_TWSN_CHAOS_HALL_F;
 @CHKFGOTO(FLG_TWSN_CHAOS_STAGE_START,_TWSN_CHAOS_HALL_F_TEMP)
-◆Ｗｈｅｎ　Ｉ　ｓｉｔ　ｃｌｏｓｅ　ｔｏ　ｔｈｅ　ｓｔａｇｅ，@KEY()↓
-◆ｓｏｍｅｔｉｍｅｓ　Ｉ　ｇｅｔ　ｓｗｅａｔ　ｏｒ　ｓｐｉｔ　ｏｎ　ｍｅ　ｆｒｏｍ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ．
-;jpn:◆ステージの　まえのほうでみてると↓
-;jpn:　トンズラの　アセやツバが↓
-;jpn:　とんでくるようなきがして@KEY()↓
+◆When I sit close to the stage,@KEY()↓
+◆sometimes I get sweat or spit on me from the Runaway Five.
+;jpn:◆ステージの まえのほうでみてると↓
+;jpn: トンズラの アセやツバが↓
+;jpn: とんでくるようなきがして@KEY()↓
 ;jpn:◆たまんないのよ。↓
-;jpn:　オホホホホホ！
+;jpn: オホホホホホ!
 @KEYNP()
 』
 _TWSN_CHAOS_HALL_F_TEMP;
-◆Ｏｈ，　ｔｈａｔ　ｗａｓ　ａｌｍｏｓｔ　ｔｏｏ　ｍｕｃｈ！
-;jpn:◆あー　こうふんした！
+◆Oh, that was almost too much!
+;jpn:◆あー こうふんした!
 @KEYNP()
 』
 
 ;--------------------------------------------------------
-;#33	●ハッピー教団本部完成（青い村に変化）	3.1	T
+;#33	●ハッピー教団本部完成(青い村に変化)	3.1	T
 ;--------------------------------------------------------
 
 
-;#34	雷を落とされる（外に飛ばされる）
+;#34	雷を落とされる(外に飛ばされる)
 
-;●ハッピー村／ＨＨ教団の館／祭壇の間のカーペインターと話した時、
+;●ハッピー村／HH教団の館／祭壇の間のカーペインターと話した時、
 ;プレイヤーパーティーが「フランクリンバッジ」を所持していなかったら
 ;_BATTLE_CARPAINTER_NOTHAVE が呼ばれる。
 ;★ここで雷を落とされた効果
-;（画面のフラッシュと効果音の組み合わせ。詳細は未定）
+;(画面のフラッシュと効果音の組み合わせ。詳細は未定)
 ;を挿入して、プレイヤーパーティーを人間ダンジョンの間にワープさせる。
 
 ;--------------------------------------------------------------------
@@ -1540,29 +1540,29 @@ MSG_EVT_KOYA_POKEY_BATTLE
 @COLD_CHAR( PRSN_GRFD_FIELD_A )
 @OPEN(1)
 MSG_GRFD_POKEY;
-◆Ｈｅｙ　@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｊｕｓｔ　ｈｅｒｅ　ｔｏ　ｂｏｔｈｅｒ　ｍｅ，↓
-　　ａｒｅｎ’ｔ　ｙｏｕ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｃａｌｌ　ｍｅ　Ｍａｓｔｅｒ　Ｐｏｋｅｙ，@KEY()↓
-◆ｓｉｎｃｅ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｍａｄｅ　ｍｅ　ａｎ　ｉｍｐｏｒｔａｎｔ　ｐｅｒｓｏｎ　ｉｎ　Ｈａｐｐｙ−Ｈａｐｐｙｉｓｍ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｊｏｉｎ　ｕｓ，　ｂｕｔ　Ｉ　ｋｎｏｗ　ｙｏｕ　ｗｏｎ’ｔ．．．Ｉ’ｍ　ｇｌａｄ　Ｉ　ｊｏｉｎｅｄ．．．@KEY()↓
-◆Ｉ’ｍ　ｎｏｔ　ｇｏｉｎｇ　ｔｏ　ｆｉｇｈｔ　ｙｏｕ，@KEY()↓
-◆ｂｕｔ　ｔｈｅｓｅ　ｇｕｙｓ　ｗｉｌｌ．．．Ｌａｔｅｒ　ｐｏｔａｔｅｒ．．．
-;jpn:◆やい！　@DSP_STS(STS_PC_NAME_NES)！@WI(15)↓
-;jpn:　どうして　このポーキーさまの↓
-;jpn:　じゃまを　しにきたんだよー。@KEY()↓
-;jpn:◆カーペインターさまの　おかげで↓
-;jpn:　ハッピーハッピーきょうの↓
-;jpn:　えらいひとに　なれそうなのに‥。@KEY()↓
-;jpn:◆おまえも　なかまに　なれよー！@KEY()↓
-;jpn:◆‥‥ならないんだよな@WI(15)　きっと。↓
-;jpn:　じゃ@WI(15)　おれは　やるぜ！！@KEY()↓
-;jpn:◆でも　ぼくは　たたかわないよ。↓
-;jpn:　かわりに　こいつらがいくぜい！@WI(15)↓
-;jpn:　あばよ！
+◆Hey @DSP_NAME(PC_NESS)!@KEY()↓
+◆You’re just here to bother me,↓
+  aren’t you.@KEY()↓
+◆You can call me Master Pokey,@KEY()↓
+◆since Mr. Carpainter made me an important person in Happy−Happyism.@KEY()↓
+◆You should join us, but I know you won’t...I’m glad I joined...@KEY()↓
+◆I’m not going to fight you,@KEY()↓
+◆but these guys will...Later potater...
+;jpn:◆やい! @DSP_STS(STS_PC_NAME_NES)!@WI(15)↓
+;jpn: どうして このポーキーさまの↓
+;jpn: じゃまを しにきたんだよー。@KEY()↓
+;jpn:◆カーペインターさまの おかげで↓
+;jpn: ハッピーハッピーきょうの↓
+;jpn: えらいひとに なれそうなのに‥。@KEY()↓
+;jpn:◆おまえも なかまに なれよー!@KEY()↓
+;jpn:◆‥‥ならないんだよな@WI(15) きっと。↓
+;jpn: じゃ@WI(15) おれは やるぜ!!@KEY()↓
+;jpn:◆でも ぼくは たたかわないよ。↓
+;jpn: かわりに こいつらがいくぜい!@WI(15)↓
+;jpn: あばよ!
 @KEY()
 @CLOSEALL()
-@CLRF(FLG_SYS_MONSTER_OFF)	;モンスター出現許可（勝っても負けても）
+@CLRF(FLG_SYS_MONSTER_OFF)	;モンスター出現許可(勝っても負けても)
 @CLRF(FLG_GRFD_POKEY_APPEAR)	;ポーキー＆手下出現禁止
 ;ポーキー去る
 @FRESH_CHAR( PRSN_GRFD_FIELD_A )
@@ -1582,7 +1582,7 @@ MSG_EVT_BATTLE_HH12KARASU;教徒1,2,カラスのいずれかと接触すると�
 @REMOVE_CHAR(PRSN_GRFD_FIELD_B,ANIM_BLINK_SUICIDE)
 @REMOVE_CHAR(PRSN_GRFD_FIELD_C,ANIM_BLINK_SUICIDE)
 @REMOVE_CHAR(PRSN_GRFD_FIELD_D,ANIM_BLINK_SUICIDE)
-@WI(60)	;ポーキーが去るのを待つ（手抜き）
+@WI(60)	;ポーキーが去るのを待つ(手抜き)
 @FUNC(6)			;マップ上での全滅許可
 』
 _EVT_KOYA_POKEY_LOSE;
@@ -1594,13 +1594,13 @@ _EVT_KOYA_POKEY_LOSE;
 ;#36	雷を受け止めるフランクリンバッジ	3.2	T
 
 ;★雷を受け止める効果
-;（画面のフラッシュと効果音の組み合わせ。詳細は未定）を挿入する。
+;(画面のフラッシュと効果音の組み合わせ。詳細は未定)を挿入する。
 ;トリガーは _BATTLE_CARPAINTER_HAVE。
 
 ;--------------------------------------------------------
 
 
-;#37	●ポーラ救出（ポーラを仲間にする）	4.3	T
+;#37	●ポーラ救出(ポーラを仲間にする)	4.3	T
 
 MSG_GRFD_YAMAGOYA_RECEIVE;牢屋の扉に山小屋のカギを使った時のメッセージ
 @SAVE_REG()
@@ -1609,9 +1609,9 @@ MSG_GRFD_YAMAGOYA_RECEIVE;牢屋の扉に山小屋のカギを使った時のメ
 @EQ(GDS_TOOL_KEY_PRISON)
 @FALSE_GOTO(_GRFD_YAMAGOYA_RECEIVE_X)
 @GOODSOUT(PC_ALL,GDS_TOOL_KEY_PRISON)
-◆（@GOSUB(MSG_ESUB_DSP_PARTY_SREG)　ｕｓｅｄ　ｔｈｅ　ｊａｉｌ　ｋｅｙ．）
-;jpn:◆（@DSP_LCNAME()は↓
-;jpn:　ろうやのカギを　つかった）
+◆(@GOSUB(MSG_ESUB_DSP_PARTY_SREG) used the jail key.)
+;jpn:◆(@DSP_LCNAME()は↓
+;jpn: ろうやのカギを つかった)
 @KEY()↓
 @CLOSEALL()
 @SE(SE_se77_my_open_locker)
@@ -1620,28 +1620,28 @@ MSG_GRFD_YAMAGOYA_RECEIVE;牢屋の扉に山小屋のカギを使った時のメ
 @OPEN( 1 )
 MSG_GRFD_POLA_LATER_USEKEY;
 ;牢内のポーラ
-◆Ｔｈａｎｋ　ｙｏｕ，　@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｊｕｓｔ　ｌｉｋｅ　Ｉ　ｉｍａｇｉｎｅｄ　ｙｏｕ　ｗｏｕｌｄ　ｂｅ．．．@KEY()↓
-◆Ｉ’ｍ　ｓｕｒｅ　ｔｈａｔ　ｓｏｍｅ　ｐｅｏｐｌｅ　ｉｎ　Ｔｗｏｓｏｎ　ａｒｅ　ｗｏｒｒｉｅｄ　ａｂｏｕｔ　ｍｅ．．．@KEY()↓
-◆Ｇｅｔｔｉｎｇ　ｂａｃｋ　ｔｈｅｒｅ　ｍａｙ　ｂｅ　ｄａｎｇｅｒｏｕｓ，@KEY()↓
-◆ｂｕｔ　ｗｅ　ｃａｎ　ｄｏ　ｉｔ　ｉｆ　ｗｅ　ｃｏｍｂｉｎｅ　ｏｕｒ　ｓｔｒｅｎｇｔｈ．@KEY()↓
-◆Ｉ’ｍ　ａｂｌｅ　ｔｏ　ｕｓｅ　ａ　ｌｉｔｔｌｅ　ｐｓｙｃｈｉｃ　ｐｏｗｅｒ　ｔｈａｔ　ｉｓ　ａｃｔｕａｌｌｙ　ｐｒｅｔｔｙ　ｄｅａｄｌｙ．．．@KEY()↓
-◆Ｌｅｔ’ｓ　ｈｅａｄ　ｂａｃｋ　ｔｏ　Ｔｗｏｓｏｎ！
-;jpn:◆ありがとう　@DSP_STS(STS_PC_NAME_NES)！↓
-;jpn:　わたしのおもったとおりの↓
-;jpn:　ひとだったわ！@KEY()↓
-;jpn:◆ほんとに　ありがとう。@WI(30)↓
-;jpn:　ツーソンのひとたちが　きっと↓
-;jpn:　しんぱいしてるとおもうの。@KEY()↓
+◆Thank you, @DSP_NAME(PC_NESS)!@KEY()↓
+◆You’re just like I imagined you would be...@KEY()↓
+◆I’m sure that some people in Twoson are worried about me...@KEY()↓
+◆Getting back there may be dangerous,@KEY()↓
+◆but we can do it if we combine our strength.@KEY()↓
+◆I’m able to use a little psychic power that is actually pretty deadly...@KEY()↓
+◆Let’s head back to Twoson!
+;jpn:◆ありがとう @DSP_STS(STS_PC_NAME_NES)!↓
+;jpn: わたしのおもったとおりの↓
+;jpn: ひとだったわ!@KEY()↓
+;jpn:◆ほんとに ありがとう。@WI(30)↓
+;jpn: ツーソンのひとたちが きっと↓
+;jpn: しんぱいしてるとおもうの。@KEY()↓
 ;jpn:◆かえりみちも↓
-;jpn:　きっと　あぶないけれど@KEY()↓
-;jpn:◆ふたりで　ちからをあわせて↓
-;jpn:　なんとか　もどりましょう。@KEY()↓
-;jpn:◆‥‥わたし　ちょっとくらいなら↓
-;jpn:　アブナイちょうのうりょくを↓
-;jpn:　つかえるのよ。@KEY()↓
-;jpn:◆がんばって　ツーソンまで↓
-;jpn:　かえりましょうね。
+;jpn: きっと あぶないけれど@KEY()↓
+;jpn:◆ふたりで ちからをあわせて↓
+;jpn: なんとか もどりましょう。@KEY()↓
+;jpn:◆‥‥わたし ちょっとくらいなら↓
+;jpn: アブナイちょうのうりょくを↓
+;jpn: つかえるのよ。@KEY()↓
+;jpn:◆がんばって ツーソンまで↓
+;jpn: かえりましょうね。
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR(PRSN_GRFD_CABIN_WATCH_A,ANIM_GRFD_POLA_ADD_PARTY);ポーラ仲間に
@@ -1660,9 +1660,9 @@ MSG_GRFD_POLA_LATER_USEKEY;
 @MUSISTART()
 ;@BGMSTART(0,BGM_child)
 @OPEN(1)
-◆@DSP_NAME(PC_PAULA)　ｊｏｉｎｅｄ　ｙｏｕ．
-;jpn:◆（@DSP_STS(STS_PC_NAME_PAULA)が↓
-;jpn:　なかまになった）
+◆@DSP_NAME(PC_PAULA) joined you.
+;jpn:◆(@DSP_STS(STS_PC_NAME_PAULA)が↓
+;jpn: なかまになった)
 @KEY()
 @CLOSEALL()
 @SETF(FLG_POLA_GRFD)
@@ -1674,9 +1674,9 @@ MSG_GRFD_POLA_LATER_USEKEY;
 』
 
 _GRFD_YAMAGOYA_RECEIVE_X;
-◆（Ｙｏｕ　ｍｕｓｔ　ｕｓｅ　ｔｈｅ　Ｍｏｕｎｔａｉｎ　Ｃａｂｉｎ　Ｋｅｙ　ｔｏ　ｏｐｅｎ　ｔｈｉｓ．）
-;jpn:◆（ろうやのカギ　でないと↓
-;jpn:　ここは　あかない）
+◆(You must use the Mountain Cabin Key to open this.)
+;jpn:◆(ろうやのカギ でないと↓
+;jpn: ここは あかない)
 @KEYNP()
 @CLOSEALL()
 』
@@ -1694,12 +1694,12 @@ _GRFD_YAMAGOYA_RECEIVE_X;
 MSG_EVT_PAURA_FATHER_WAKARE;
 @COLD_CHAR(PRSN_TWSN_POLA_FRONT_A)
 MSG_TWSN_PAUL_OK;
-@SET_LOOPREG(PC_PAULA)			;ポーラのＩＤを主レジに格納
+@SET_LOOPREG(PC_PAULA)			;ポーラのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_EVT_PAURA_FATHER_WAKARE_DEAD)
 @OPEN(1)
-◆Ｏｈ　@DSP_NAME(PC_PAULA)！
-;jpn:◆おお！@WI(20)　@DSP_STS(STS_PC_NAME_PAULA)！
+◆Oh @DSP_NAME(PC_PAULA)!
+;jpn:◆おお!@WI(20) @DSP_STS(STS_PC_NAME_PAULA)!
 @KEY()
 @CLOSEALL()
 @GET_PLAYER_DIR(PC_NESS,2,PRSN_TWSN_POLA_FRONT_A)
@@ -1711,24 +1711,24 @@ MSG_TWSN_PAUL_OK;
 @COLD_CHAR( PRSN_TWSN_POLA_FRONT_A )
 @SET_CHAR_DIR(PRSN_TWSN_POLA_FRONT_A,DIR_M_RIGHT)	;追加・上野(Jul.15,1994)
 @OPEN(1)
-@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@SET_LOOPREG(PC_NESS)			;ネスのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_EVT_PAURA_FATHER_NES_DEAD)
-◆@DSP_NAME(PC_NESS)，　ｔｈａｎｋ　ｙｏｕ　ｓｏ　ｍｕｃｈ！@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｂｅ　ｔｈｅ　ｂｏｙ　ｗｈｏ　ｗｉｌｌ　ｓａｖｅ　ｔｈｅ　ｗｏｒｌｄ，　ｌｉｋｅ　ｉｎ　@DSP_NAME(PC_PAULA)’ｓ　ｄｒｅａｍ．@KEY()↓
+◆@DSP_NAME(PC_NESS), thank you so much!@KEY()↓
+◆You must be the boy who will save the world, like in @DSP_NAME(PC_PAULA)’s dream.@KEY()↓
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)くん↓
-;jpn:　ありがとうよ。@KEY()↓
-;jpn:◆たしかに　きみは↓
-;jpn:　@DSP_STS(STS_PC_NAME_PAULA)が　ゆめでみたとおりの@KEY()↓
-;jpn:◆せかいをすくう　しょうねんかも↓
-;jpn:　しれないぞ。@KEY()↓
+;jpn: ありがとうよ。@KEY()↓
+;jpn:◆たしかに きみは↓
+;jpn: @DSP_STS(STS_PC_NAME_PAULA)が ゆめでみたとおりの@KEY()↓
+;jpn:◆せかいをすくう しょうねんかも↓
+;jpn: しれないぞ。@KEY()↓
 _TWSN_PAULA_PAPA_WAKARE_MAIN;
-◆@DSP_NAME(PC_PAULA)，　Ｉ’ｍ　ｓｕｒｅ　ｙｏｕ’ｄ　ｂｅ　ａ　ｂｉｇ　ｈｅｌｐ　ｔｏ　@DSP_NAME(PC_NESS)．@KEY()↓
-◆Ｉｔ’ｓ　ｎｏｔ　ｅｖｅｒｙ　ｄａｙ　ａ　ｆａｔｈｅｒ　ｌｅｔｓ　ｈｉｓ　ｄａｕｇｈｔｅｒ　ｅｍｂａｒｋ　ｏｎ　ａ　ｊｏｕｒｎｅｙ　ｔｏ　ｓａｖｅ　ｔｈｅ　ｗｏｒｌｄ！
-;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)@WI(20)　@DSP_STS(STS_PC_NAME_NES)くんの↓
-;jpn:　ちからになって　あげなさい。@KEY()↓
-;jpn:◆パパは　よろこんで　おまえを↓
-;jpn:　たびに　だすつもりだ。
+◆@DSP_NAME(PC_PAULA), I’m sure you’d be a big help to @DSP_NAME(PC_NESS).@KEY()↓
+◆It’s not every day a father lets his daughter embark on a journey to save the world!
+;jpn:◆@DSP_STS(STS_PC_NAME_PAULA)@WI(20) @DSP_STS(STS_PC_NAME_NES)くんの↓
+;jpn: ちからになって あげなさい。@KEY()↓
+;jpn:◆パパは よろこんで おまえを↓
+;jpn: たびに だすつもりだ。
 @KEY()
 @CLOSEALL()
 ;@SE(SE_se10_present_open)
@@ -1741,24 +1741,24 @@ _TWSN_PAULA_PAPA_WAKARE_MAIN;
 @WI(60)
 @HIDE_MANPU_PLAYER( PC_PAULA )
 @OPEN(1)
-◆Ｄａｄ，　ｄｏｎ’ｔ　ｗｏｒｒｙ　ａｂｏｕｔ　ｍｅ．@KEY()↓
-◆@DSP_NAME(PC_NESS)　ａｎｄ　Ｉ　ｗｉｌｌ　ｂｅ　ａｂｌｅ　ｔｏ　ｔａｋｅ　ｃａｒｅ　ｏｆ　ｏｕｒｓｅｌｖｅｓ．@KEY()↓
-◆Ｉｎ　Ｔｈｒｅｅｄ，　ｔｈｅ　ｎｅｘｔ　ｔｏｗｎ，　ｗｅ’ｌｌ　ｍｅｅｔ　ａｎｏｔｈｅｒ　ｆｒｉｅｎｄ．@KEY()↓
-◆Ｉｆ　ｔｈｅ　ｔｈｒｅｅ　ｏｆ　ｕｓ　ｃａｎ　ｃｏｍｂｉｎｅ　ｏｕｒ　ｐｏｗｅｒ，　ｎｏ　ｏｎｅ　ｃａｎ　ｂｅａｔ　ｕｓ．@KEY()↓
-◆Ｎｏｗ　ｗｉｐｅ　ｙｏｕｒ　ｅｙｅｓ，　ｂｌｏｗ　ｙｏｕｒ　ｎｏｓｅ，　ａｎｄ　ｓｍｉｌｅ　ｂｅｆｏｒｅ　ｗｅ　ｔａｋｅ　ｏｆｆ．
-;jpn:◆パパ　しんぱいしないでね。@WI(20)↓
-;jpn:　わたしだけじゃなくて↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)も　ついているし@KEY()↓
-;jpn:◆たぶん　つぎのスリークのまちで↓
-;jpn:　もうひとりの　なかまにも↓
-;jpn:　あえるはずよ。@KEY()↓
-;jpn:◆この　３にんで↓
-;jpn:　ちからを　あわせれば@KEY()↓
-;jpn:◆きっと　どんなことにも↓
-;jpn:　まけないわ。@KEY()↓
+◆Dad, don’t worry about me.@KEY()↓
+◆@DSP_NAME(PC_NESS) and I will be able to take care of ourselves.@KEY()↓
+◆In Threed, the next town, we’ll meet another friend.@KEY()↓
+◆If the three of us can combine our power, no one can beat us.@KEY()↓
+◆Now wipe your eyes, blow your nose, and smile before we take off.
+;jpn:◆パパ しんぱいしないでね。@WI(20)↓
+;jpn: わたしだけじゃなくて↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)も ついているし@KEY()↓
+;jpn:◆たぶん つぎのスリークのまちで↓
+;jpn: もうひとりの なかまにも↓
+;jpn: あえるはずよ。@KEY()↓
+;jpn:◆この ３にんで↓
+;jpn: ちからを あわせれば@KEY()↓
+;jpn:◆きっと どんなことにも↓
+;jpn: まけないわ。@KEY()↓
 ;jpn:◆‥‥ね。@KEY()↓
-;jpn:◆だから　はなみずをふいて↓
-;jpn:　わらって　おくってちょうだい。
+;jpn:◆だから はなみずをふいて↓
+;jpn: わらって おくってちょうだい。
 @KEY()
 @CLOSEALL()
 @SETF(FLG_TWSN_MESSENGER_APPEAR);チンピラメッセンジャー出現
@@ -1766,13 +1766,13 @@ _TWSN_PAULA_PAPA_WAKARE_MAIN;
 @WI(10)
 MSG_TWSN_PAUL_OK1;
 @OPEN(1)
-◆Ｇｏｏｄｂｙｅ　@DSP_NAME(PC_PAULA)．@KEY()↓
-◆Ｄｏｎ’ｔ　ｗｏｒｒｙ，　Ｉ　ｗｏｎ’ｔ　ｃｒｙ　ａｎｙｍｏｒｅ．．．
-;jpn:◆さらば　@DSP_STS(STS_PC_NAME_PAULA)！↓
-;jpn:　パパ@WI(20)　ないてなんかいないぞ。
+◆Goodbye @DSP_NAME(PC_PAULA).@KEY()↓
+◆Don’t worry, I won’t cry anymore...
+;jpn:◆さらば @DSP_STS(STS_PC_NAME_PAULA)!↓
+;jpn: パパ@WI(20) ないてなんかいないぞ。
 @KEYNP()
 @CLOSEALL()
-;２度話したらパパをうろうろ動きに（ハマり防止）
+;２度話したらパパをうろうろ動きに(ハマり防止)
 @CHKFGOTO( FLG_TEMP_0, _TWSN_PAUL_OK1_2ND )
 _TWSN_PAUL_OK1_1ST
 @SETF( FLG_TEMP_0 )
@@ -1783,16 +1783,16 @@ _TWSN_PAUL_OK1_2ND
 
 _EVT_PAURA_FATHER_WAKARE_DEAD;
 @OPEN(1)
-◆Ｏｈ，　@DSP_NAME(PC_PAULA)！@KEY()↓
-◆．．．@KEY()↓
-◆Ａｍ　Ｉ　ｄｒｅａｍｉｎｇ？↓
-　　Ｉ　ｆｅｅｌ　ｌｉｋｅ　ｓｈｅ　ｊｕｓｔ　ｃａｍｅ　ｈｏｍｅ．．．
-;jpn:◆おお　@DSP_STS(STS_PC_NAME_PAULA)！@KEY()↓
+◆Oh, @DSP_NAME(PC_PAULA)!@KEY()↓
+◆...@KEY()↓
+◆Am I dreaming?↓
+  I feel like she just came home...
+;jpn:◆おお @DSP_STS(STS_PC_NAME_PAULA)!@KEY()↓
 ;jpn:◆‥‥‥。@KEY()↓
 ;jpn:◆きのせいだったのか‥‥。@WI(60)↓
 @SET_CHAR_DIR(PRSN_TWSN_POLA_FRONT_A,DIR_M_RIGHT)
-;jpn:　いま　@DSP_STS(STS_PC_NAME_PAULA)が↓
-;jpn:　かえってきたようなきがしたが‥‥
+;jpn: いま @DSP_STS(STS_PC_NAME_PAULA)が↓
+;jpn: かえってきたようなきがしたが‥‥
 @KEY()
 @SE(SE_se08_door_in)
 @CLOSEALL()
@@ -1802,18 +1802,18 @@ _EVT_PAURA_FATHER_WAKARE_DEAD;
 』;駆け込んできて、セリフ後石になり、とぼとぼ出て行く
 
 _EVT_PAURA_FATHER_NES_DEAD;ネス気絶時
-◆Ｗｈｅｒｅ’ｓ　@DSP_NAME(PC_NESS)？@KEY()↓
-◆Ｈｅ　ｉｓｎ’ｔ　ｈｅｒｅ？↓
-　　Ｉ　ｊｕｓｔ　ｗａｎｔｅｄ　ｔｏ　ｔｈａｎｋ　ｈｉｍ．@KEY()↓
-◆Ｙｏｕ　ｋｎｏｗ，　Ｉ　ｂｅｔ　ｈｅ’ｓ　ｔｈｅ　ｂｏｙ　ｙｏｕ　ｄｒｅａｍｔ　ｗｏｕｌｄ　ｓａｖｅ　ｔｈｅ　ｗｏｒｌｄ．．．
+◆Where’s @DSP_NAME(PC_NESS)?@KEY()↓
+◆He isn’t here?↓
+  I just wanted to thank him.@KEY()↓
+◆You know, I bet he’s the boy you dreamt would save the world...
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)くん‥‥は↓
-;jpn:　いないのか‥‥？@KEY()↓
-;jpn:◆いや@WI(10)　かれに　かんしゃしたいと↓
-;jpn:　おもったんだが。@KEY()↓
-;jpn:◆‥‥たしかに　あのコは↓
-;jpn:　おまえが　ゆめでみたという@KEY()↓
-;jpn:◆せかいをすくう　しょうねんかも↓
-;jpn:　しれないな。
+;jpn: いないのか‥‥?@KEY()↓
+;jpn:◆いや@WI(10) かれに かんしゃしたいと↓
+;jpn: おもったんだが。@KEY()↓
+;jpn:◆‥‥たしかに あのコは↓
+;jpn: おまえが ゆめでみたという@KEY()↓
+;jpn:◆せかいをすくう しょうねんかも↓
+;jpn: しれないな。
 @KEY()↓
 @GOTO(_TWSN_PAULA_PAPA_WAKARE_MAIN)
 
@@ -1822,11 +1822,11 @@ _EVT_PAURA_FATHER_NES_DEAD;ネス気絶時
 
 ;#39	ミチコと楽屋潜入
 
-;★カオス劇場／ホールの「ミーハーのミチコ」のセリフ（MSG_TWSN_MICHIKO）
-;「一緒に来てくれる？」でプレイヤーキャラを牽引してホールから楽屋に移動する。
+;★カオス劇場／ホールの「ミーハーのミチコ」のセリフ(MSG_TWSN_MICHIKO)
+;「一緒に来てくれる?」でプレイヤーキャラを牽引してホールから楽屋に移動する。
 
 MSG_EVT_39_MICHIKO;
-;（ホール）ミチコは楽屋へのドアへ
+;(ホール)ミチコは楽屋へのドアへ
 @FUNC(5)			;毒死配達禁止
 @REMOVE_CHAR(PRSN_TWSN_CHAOS_HALL_A,ANIM_MICHIKO_INTO_ROOM);ミチコはドアへ
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_FOLLOW_TO_MICHIKO,OBJFX_SHOW_NONE);ついてく人
@@ -1837,7 +1837,7 @@ MSG_EVT_39_MICHIKO;
 ...;@WAITSYS()			;ドアに入るのを待つ
 ...;@SET_CAMERA_PARTY()
 ...;@COLD_PLAYER(PC_ALL)
-;（楽屋）ミチコは部屋の中央へ
+;(楽屋)ミチコは部屋の中央へ
 @MOVE_GOM_CHAR( GOM_GIRL_A, ANIM_MICHIKO_INTO_ROOM_B, OBJFX_AFTER_WARP )
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_FOLLOW_TO_MICHIKO_B,OBJFX_AFTER_WARP);ついてく人
 @WARP(WARP_TWSN_CHAOS_HALL_BACKS)
@@ -1862,9 +1862,9 @@ MSG_EVT_39_MICHIKO;
 
 ;★カオス劇場／支配人の部屋の「劇場支配人ドッグフード氏」に
 ;「さつたば」を「つかう」と _TWSN_CHAOS_RECEIVE_SATUTABA をきっかけに
-;トンズラブラザーズが入り口から登場する（ＢＧＭも切り替える）。
+;トンズラブラザーズが入り口から登場する(BGMも切り替える)。
 ;★ゴージャス、ラッキー、ナイス、オッケー、
-;グルービー（MSG_TWSN_TONZURA_GROOVY）の順にプレイヤーキャラに近づいて
+;グルービー(MSG_TWSN_TONZURA_GROOVY)の順にプレイヤーキャラに近づいて
 ;以下のオートメッセージを発行し、また扉から出て行く。
 
 MSG_EVT_40_DOGFOOD;さつたばつかうのあと
@@ -1918,36 +1918,36 @@ MSG_EVT_40_DOGFOOD;さつたばつかうのあと
 』
 
 MSG_TWSN_TONZURA_GORGEOUS_LATER;
-◆Ｗｅｌｌ，　ｗｈａｔ　ｄｏ　ｙｏｕ　ｋｎｏｗ？@KEY()↓
-◆Ｔｈｉｓ　ｌｉｔｔｌｅ　ｎｉｐｐｅｒ　ｔｏｏｋ　ｕｓ　ｆｒｏｍ　ａ　ｎｉｇｈｔｍａｒｅ　ｔｏ　ａ　ｄｒｅａｍ．．．
+◆Well, what do you know?@KEY()↓
+◆This little nipper took us from a nightmare to a dream...
 ;jpn:◆なんてこったい。↓
-;jpn:　こんなチビスケのおかげで↓
-;jpn:　じごくから　てんごくだ。
+;jpn: こんなチビスケのおかげで↓
+;jpn: じごくから てんごくだ。
 @KEY()
 』
 
 MSG_TWSN_TONZURA_LUCKY_LATER;
-◆Ｏｗ！↓
-　　Ｔｈｉｓ　ｍｅａｎｓ　ｗｅ　ｃａｎ　ｇｅｔ　ｏｕｔ　ｏｆ　ｔｈｉｓ　ｄｕｍｐ！
-;jpn:◆ブラボー！↓
-;jpn:　このまちを　でられる。
+◆Ow!↓
+  This means we can get out of this dump!
+;jpn:◆ブラボー!↓
+;jpn: このまちを でられる。
 @KEY()
 』
 
 MSG_TWSN_TONZURA_NICE_LATER;
-◆Ｉ’ｍ　ａ　ｇｏｏｄ　ｄｒｉｖｅｒ．@KEY()↓
-◆Ｃ’ｍｏｎ，　ｌｅｔ　ｍｅ　ｄｒｉｖｅ．
-;jpn:◆わし　くるまのうんてん↓
-;jpn:　とくいじゃけん。↓
-;jpn:　まかせてくれんかのう。
+◆I’m a good driver.@KEY()↓
+◆C’mon, let me drive.
+;jpn:◆わし くるまのうんてん↓
+;jpn: とくいじゃけん。↓
+;jpn: まかせてくれんかのう。
 @KEY()
 』
 
 MSG_TWSN_TONZURA_OKEY_LATER;
-◆Ａｌｌ　ｒｉｇｈｔ，　ｌｅｔ’ｓ　ｍｏｖｅ　ｏｎ　ｔｏ　ｔｈｅ　ｎｅｘｔ　ｔｏｗｎ．@KEY()↓
-◆Ｉ’ｍ　ｓｕｒｅ　ｔｈｉｓ　ｏｌ’　ｈｕｎｋ　ｏ’　ｊｕｎｋ　ｗｉｌｌ　ｇｅｔ　ｕｓ　ｔｈｅｒｅ．．．
-;jpn:◆つぎのまちへ　レッツゴー！↓
-;jpn:　さぁ　オンボロぐるまで　いこう。
+◆All right, let’s move on to the next town.@KEY()↓
+◆I’m sure this ol’ hunk o’ junk will get us there...
+;jpn:◆つぎのまちへ レッツゴー!↓
+;jpn: さぁ オンボロぐるまで いこう。
 @KEY()
 』
 
@@ -1959,10 +1959,10 @@ MSG_TWSN_TONZURA_OKEY_LATER;
 ;★トンズラを開放してカオス劇場からツーソンフィールドにワープすると
 ;劇場前の道路には黒塗りのトンズラバスが横付けされている。
 ;★列になったトンズラブラザーズが丁度
-;バスに乗り込んでいる（バスに接触したら消去する）。
+;バスに乗り込んでいる(バスに接触したら消去する)。
 ;jpn::★ラッキーだけが乗らずに、バスの前でプレイヤーキャラの接近するのを待つ。
 ;★プレイヤーキャラが接触したら、MSG_TWSN_TONZURA_NICE_LATER2 を
-;発行して、プレイヤーを消し、ラッキー自身もバスに乗り（消えて）、
+;発行して、プレイヤーを消し、ラッキー自身もバスに乗り(消えて)、
 ;バスは音楽とともに移動を開始する。
 
 MSG_EVT_41_TONZURABUS_GORGEOUS;包囲網ににかかったら以下を発行
@@ -1981,12 +1981,12 @@ MSG_EVT_41_TONZURABUS_GORGEOUS;包囲網ににかかったら以下を発行
 @SET_PLAYER_DIR(0,0)
 @OPEN(1)
 ;MSG_TWSN_TONZURA_NICE_LATER2;
-◆Ｈｕｒｒｙ　ａｎｄ　ｇｅｔ　ｏｎ！@KEY()↓
-◆Ｏｕｒ　ｔｏｕｒ　ｂｕｓ　ｉｓ　ｔｏｏ　ｌｏｕｄ　ｆｏｒ　ｔｈｅ　ｇｈｏｓｔｓ！
-;jpn:◆はやく　のらんかい。@KEY()↓
+◆Hurry and get on!@KEY()↓
+◆Our tour bus is too loud for the ghosts!
+;jpn:◆はやく のらんかい。@KEY()↓
 ;jpn:◆わしらのトラベリンバスには↓
-;jpn:　おばけとやらも↓
-;jpn:　うるそうて　でるまくが　ないわ。
+;jpn: おばけとやらも↓
+;jpn: うるそうて でるまくが ないわ。
 @KEY()
 @CLOSEALL()
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_TO_GORGEOUS_CHAOUS,OBJFX_SHOW_NONE)
@@ -2002,7 +2002,7 @@ MSG_EVT_41_TONZURABUS_GORGEOUS;包囲網ににかかったら以下を発行
 MSG_EVT_RIDE_TONZURABUS_CHAOUS;トンズラバスに近づくと以下を発行
 @MOVE_GOM_CHAR( GOM_HIT_CHR4, ANIM_FORBID_CONTROL, OBJFX_SHOW_NONE );入力禁止
 @FUNC(5)			;配達禁止
-@SETF(FLG_TWSN_TONZURA_GO)	;トンズラバスに乗ったフラグ（トンネル通行可）
+@SETF(FLG_TWSN_TONZURA_GO)	;トンズラバスに乗ったフラグ(トンネル通行可)
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_INTO_TONZURABUS_CHAOUS,OBJFX_SHOW_NONE);乗車する透明人間
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
 @FRESH_PLAYER(PC_ALL)
@@ -2027,15 +2027,15 @@ MSG_EVT_RIDE_TONZURABUS_CHAOUS;トンズラバスに近づくと以下を発行
 』
 
 MSG_TWSN_TONZURA_NICE_LETSGO;
-◆Ｏｋａｙ，　ｇｕｙｓ　ｈｅｒｅ　ｗｅ　ｇｏ！
-;jpn:◆さぁ　ノリノリで　いくぜい！
+◆Okay, guys here we go!
+;jpn:◆さぁ ノリノリで いくぜい!
 @KEY()
 』
 
 MSG_EVT_TONZURABUS_CHAOUS;
 @OPEN(1)
-◆Ｈｅｙ，　ｓｉｄｅｗａｌｋ！　Ｇｅｔ　ｏｕｔ　ｏｆ　ｍｙ　ｗａｙ！
-;jpn:◆じゃまな　ほどうじゃのう！
+◆Hey, sidewalk! Get out of my way!
+;jpn:◆じゃまな ほどうじゃのう!
 @KEY()
 @CLOSEALL()
 』
@@ -2132,7 +2132,7 @@ MSG_EVT_TBUS_TOUCH_THRK;スリークについた
 ;★スリークにバスが到着したら
 ;ゴージャスを外に出現させてから、プレイヤーキャラたちを外に出現させる。
 ;★ゴージャスはオートメッセージ MSG_THRK_TONZURA_GORGEOUS を発行して、
-;再びバスに乗る（消去する）。その後、
+;再びバスに乗る(消去する)。その後、
 ;★バスの窓から「顔だけのナイス」を出現させて、MSG_THRK_TONZURA_NICE を発行。
 ;★バスは道路に沿ってフォーサイドの方向の画面外に消える。
 
@@ -2145,12 +2145,12 @@ MSG_EVT_TBUS_TOUCH_THRK;スリークについた
 MSG_THRK_TONZURA_GORGEOUS;
 @OPEN(1)
 ;トンズラのゴージャス
-◆Ｌｏｏｋｓ　ｌｉｋｅ　ｗｅ　ｈａｖｅ　ｔｏ　ｓａｙ　ｇｏｏｄｂｙｅ　ｆｏｒ　ｎｏｗ．@KEY()↓
-◆Ｔｈｉｓ　ｔｏｗｎ　ｓｅｅｍｓ　ｐｒｅｔｔｙ　ｇｌｏｏｍｙ，@KEY()↓
-◆ｂｕｔ　Ｉ’ｍ　ｓｕｒｅ　ｙｏｕ　ｃａｎ　ｌｉｇｈｔ　ｕｐ　ｔｈｅ　ｐｌａｃｅ　ｗｉｔｈ　ｙｏｕｒ　ｏｗｎ　ｌｉｔｔｌｅ　ｂｒａｎｄ　ｏｆ　ｓｕｎｌｉｇｈｔ．．．
-;jpn:◆とりあえずは　ここでおわかれだ。↓
-;jpn:　このまちは　くらいムードだけど↓
-;jpn:　あかるいきもちで　がんばれよ。
+◆Looks like we have to say goodbye for now.@KEY()↓
+◆This town seems pretty gloomy,@KEY()↓
+◆but I’m sure you can light up the place with your own little brand of sunlight...
+;jpn:◆とりあえずは ここでおわかれだ。↓
+;jpn: このまちは くらいムードだけど↓
+;jpn: あかるいきもちで がんばれよ。
 @KEY()
 @CLOSEALL()
 』
@@ -2165,13 +2165,13 @@ MSG_THRK_TONZURA_GORGEOUS;
 MSG_THRK_TONZURA_NICE;
 ;トンズラのナイス
 @OPEN(1)
-◆Ｈｏｐｅ　ｔｏ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ　ｓｏｍｅｔｉｍｅ．@KEY()↓
-◆Ｌｏｏｋ　ｆｏｒ　ｕｓ　ｔｏ　ｂｅ　ｓｉｎｇｉｎｇ　ａｔ　ｓｏｍｅ　ｔｈｅａｔｅｒ　ｉｎ　Ｆｏｕｒｓｉｄｅ．．．
-;jpn:◆またどこかで　あえると↓
-;jpn:　ええのう。@KEY()↓
-;jpn:◆わしらは　フォーサイドのまちの↓
-;jpn:　どこかのげきじょうで↓
-;jpn:　うたっとるはずじゃ‥‥。
+◆Hope to see you again sometime.@KEY()↓
+◆Look for us to be singing at some theater in Fourside...
+;jpn:◆またどこかで あえると↓
+;jpn: ええのう。@KEY()↓
+;jpn:◆わしらは フォーサイドのまちの↓
+;jpn: どこかのげきじょうで↓
+;jpn: うたっとるはずじゃ‥‥。
 @KEY()
 ;@ANIM(ANIM_START_TONZURABUS)
 @CLOSEALL()
@@ -2185,7 +2185,7 @@ MSG_THRK_TONZURA_NICE;
 ;●スリークの墓場の地下ダンジョンへの道を塞いでいるゾンビと話すと
 ;ホテル前に「ビキニゾンビ」が出現する。
 ;★プレイヤーキャラが近づくとビキニゾンビは
-;ホテルの入り口に移動し消える（MSG_EVT_BIKINI_X_NEAR_2）。
+;ホテルの入り口に移動し消える(MSG_EVT_BIKINI_X_NEAR_2)。
 
 MSG_EVT_BIKINI_X_NEAR;入り口前へ移動開始
 @FRESH_CHAR(PRSN_THRK_FIELD_X)
@@ -2199,15 +2199,15 @@ MSG_EVT_BIKINI_X_NEAR_2;ホテル内へ
 @SETF(FLG_THRK_BIKINIZOMBI_F_APPEAR)
 』
 
-;★（後を追って）ホテルに入ると、フロントにいたビキニゾンビは
-;廊下の入り口に移動して、消える（MSG_EVT_BIKINIZOMBI_F）。
+;★(後を追って)ホテルに入ると、フロントにいたビキニゾンビは
+;廊下の入り口に移動して、消える(MSG_EVT_BIKINIZOMBI_F)。
 
 MSG_EVT_BIKINIZOMBI_F;
 ;ネスが近づいたら左のドアに消える
 @CLRF(FLG_THRK_BIKINIZOMBI_F_APPEAR)
 @SETF(FLG_THRK_BIKINIZOMBI_P_APPEAR)
 』
-;★（後を追って）廊下に移動すると、
+;★(後を追って)廊下に移動すると、
 ;廊下にいたビキニゾンビは部屋１入り口に移動して消える。
 
 MSG_EVT_BIKINIZOMBI_P;
@@ -2217,13 +2217,13 @@ MSG_EVT_BIKINIZOMBI_P;
 』
 ;★その後プレイヤーキャラが部屋１に入ったら、
 ;フラグ FLG_THRK_HOTELZOMBI_APPEAR によりゾンビたち出現し、
-;（ワープメッセージ中の予約でプレイヤーに驚きの漫符を表示する。）
-;ゾンビ、接近しながら暗転。効果音「ポカッ！」で
+;(ワープメッセージ中の予約でプレイヤーに驚きの漫符を表示する。)
+;ゾンビ、接近しながら暗転。効果音「ポカッ!」で
 ;MSG_THRK_FADEOUT を発行する。
 ;暗転後、ゾンビに連行されて墓地の地下牢に連れていかれるネス達。
 ;→ウィンタースのジェフ編スタート
 
-MSG_EVT_HOTELZOMBI;ワープポイントで予約されたメッセージ（ワープ直後に起動）
+MSG_EVT_HOTELZOMBI;ワープポイントで予約されたメッセージ(ワープ直後に起動)
 @COLD_PLAYER(PC_ALL)
 ;プレイヤーに漫符表示他
 @FUNC(5)			;配達禁止
@@ -2237,19 +2237,19 @@ MSG_EVT_HOTELZOMBI;ワープポイントで予約されたメッセージ（ワ�
 @FRESH_CHAR(PRSN_THRK_HOTEL_1_E)
 @BGM_EFFECT( 2 )	;フェードアウト
 @WI(10)
-;★BGM_cheng の合わせてフェードアウトする。暗くなると「ポカッ！」
+;★BGM_cheng の合わせてフェードアウトする。暗くなると「ポカッ!」
 @BGMSTART( 0, BGM_cheng )
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_STRIKE_NESS, OBJFX_SHOW_NONE )
 @WAITSYS()
 @WI( 120 )
 MSG_THRK_FADEOUT;
 @OPEN(1)
-◆（Ｏｈ，　ｏｈ．．．ｙｏｕ’ｒｅ　ｌｏｓｉｎｇ　ｃｏｎｓｃｉｏｕｓｎｅｓｓ．．．@KEY()↓
-◆Ｗｈａｔ　ｃｏｕｌｄ　ｂｅ　ｔｈｅ　ｆａｔｅ　ｏｆ　@DSP_NAME(PC_NESS)　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ？）
+◆(Oh, oh...you’re losing consciousness...@KEY()↓
+◆What could be the fate of @DSP_NAME(PC_NESS) and his friends?)
 ;jpn:◆あー‥‥‥@WI(20)↓
-;jpn:　いしきが　とおざかって　いく‥。@KEY()↓
+;jpn: いしきが とおざかって いく‥。@KEY()↓
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)たちのうんめいや↓
-;jpn:　いかに？！
+;jpn: いかに?!
 @KEYNP()
 @CLOSEALL()
 ;-----
@@ -2258,11 +2258,11 @@ MSG_THRK_FADEOUT;
 @SETF( FLG_SYS_MONSTER_OFF )		;ワンダリングモンスター出現禁止
 ;-----
 @HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
-;-----以降設定変更（連行イベントカット）
+;-----以降設定変更(連行イベントカット)
 ;
 ;; ホテルの外を連行されるネス達
 ;;-----
-;;通行人を消しておく為の設定（すぐに戻す）
+;;通行人を消しておく為の設定(すぐに戻す)
 ;@SETF(FLG_THRK_PEOPLE_DISAPPEAR)
 ;@SETF(FLG_GPFT_MINIGEPPU_A_DISAPPEAR)
 ;@SETF(FLG_TLPT_FOUR)
@@ -2351,22 +2351,22 @@ MSG_EVT_PAULA_TELEPATHY_PRISON;牢屋の扉出ようとしたら‥‥ジェフ�
 @COLD_GOM_CHAR( GOM_HIT_CHR )
 @WI(120)
 @OPEN(1)
-◆Ｉ’ｍ　ｃａｌｌｉｎｇ　ｏｕｔ　ｔｏ　ｙｏｕ　ｗｈｏ　Ｉ’ｖｅ　ｎｅｖｅｒ　ｍｅｔ．．．@KEY()↓
-◆Ｉ’ｍ　ｃａｌｌｉｎｇ　ｏｕｒ　ｆｒｉｅｎｄ　ｗｈｏ　ｗｅ’ｖｅ　ｎｅｖｅｒ　ｍｅｔ．．．@KEY()↓
-◆@DSP_NAME(PC_JEFF)！　@DSP_NAME(PC_JEFF)！↓
-　　Ｗｅ　ｎｅｅｄ　ｙｏｕｒ　ｈｅｌｐ！@KEY()↓
-◆Ｉ　ａｍ　@DSP_NAME(PC_PAULA)　ａｎｄ　Ｉ　ａｍ　ｗｉｔｈ　ａｎｏｔｈｅｒ　ｆｒｉｅｎｄ，　@DSP_NAME(PC_NESS)．．．@KEY()↓
-◆Ｗｅ　ａｒｅ　ｔｒｙｉｎｇ　ｔｏ　ｃｏｎｔａｃｔ　ｙｏｕ．．．
-;jpn:◆まだ　あったことのない↓
-;jpn:　なかまに　よびかけます。@KEY()↓
-;jpn:◆まだ　あったことのない↓
-;jpn:　わたしたちのなかまに↓
-;jpn:　よびかけます！@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)！@DSP_STS(STS_PC_NAME_JEFF)！↓
-;jpn:　あなたの　たすけが　ほしい‥‥。@KEY()↓
-;jpn:◆わたしは　@DSP_STS(STS_PC_NAME_PAULA)@WI(20)↓
-;jpn:　そして　もうひとり　@DSP_STS(STS_PC_NAME_NES)‥‥@WI(20)↓
-;jpn:　あなたに　よびかけています。
+◆I’m calling out to you who I’ve never met...@KEY()↓
+◆I’m calling our friend who we’ve never met...@KEY()↓
+◆@DSP_NAME(PC_JEFF)! @DSP_NAME(PC_JEFF)!↓
+  We need your help!@KEY()↓
+◆I am @DSP_NAME(PC_PAULA) and I am with another friend, @DSP_NAME(PC_NESS)...@KEY()↓
+◆We are trying to contact you...
+;jpn:◆まだ あったことのない↓
+;jpn: なかまに よびかけます。@KEY()↓
+;jpn:◆まだ あったことのない↓
+;jpn: わたしたちのなかまに↓
+;jpn: よびかけます!@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)!@DSP_STS(STS_PC_NAME_JEFF)!↓
+;jpn: あなたの たすけが ほしい‥‥。@KEY()↓
+;jpn:◆わたしは @DSP_STS(STS_PC_NAME_PAULA)@WI(20)↓
+;jpn: そして もうひとり @DSP_STS(STS_PC_NAME_NES)‥‥@WI(20)↓
+;jpn: あなたに よびかけています。
 @KEYNP()@WI(30)
 @CLOSEALL()
 @WI(1)
@@ -2405,17 +2405,17 @@ MSG_EVT_PAULA_TELEPATHY_PRISON;牢屋の扉出ようとしたら‥‥ジェフ�
 ;----------------------------------------
 
 
-;#44	寄宿舎の部屋（夜）	8.1	T
+;#44	寄宿舎の部屋(夜)	8.1	T
 
 ;★スリークでビキニゾンビの罠にはまったら、プレイヤーキャラを
 ;ウィンタースのジェフに交代する。
 ;★ウィンタース／寄宿舎／ジェフの部屋からスタート。
 ;★まず、MSG_WINS_POLANESS を発行。ジェフとトニーはベッドで寝ている。
 
-;★MSG_WINS_POLANESS が終わった後で（FLG_WINS_START/on）
-;キー入力があったら、ジェフはベッドを出て立ち上がる（寝ているジェフを消す）。
+;★MSG_WINS_POLANESS が終わった後で(FLG_WINS_START/on)
+;キー入力があったら、ジェフはベッドを出て立ち上がる(寝ているジェフを消す)。
 
-;★ジェフの部屋から外に出ようとすると（ワープ時メッセージで）
+;★ジェフの部屋から外に出ようとすると(ワープ時メッセージで)
 ;MSG_WINS_TONY_WAKEUP を発行。その後
 ;★トニーを扉の前のプレイヤーキャラの前に移動させて、
 ;セリフ MSG_WINS_TONY を発行。
@@ -2436,43 +2436,43 @@ MSG_WINS_POLANESS;
 @WI( 180 )
 ;ポーラとネスの声
 @OPEN(1)
-;◆まだ　あったことのない↓
-;　なかまに　よびかけます。@KEY()↓
-;◆まだ　あったことのない↓
-;　わたしたちのなかまに↓
-;　よびかけます！@KEY()↓
-;◆@DSP_STS(STS_PC_NAME_JEFF)！@DSP_STS(STS_PC_NAME_JEFF)！↓
-;　あなたの　たすけが　ほしい‥‥。@KEY()↓
-◆Ｉ　ａｍ　@DSP_NAME(PC_PAULA)，　ａｎｄ　Ｉ　ａｍ　ｗｉｔｈ　ａｎｏｔｈｅｒ　ｆｒｉｅｎｄ，　@DSP_NAME(PC_NESS)．．．@KEY()↓
-◆Ｗｅ　ａｒｅ　ｔｒｙｉｎｇ　ｔｏ　ｃｏｎｔａｃｔ　ｙｏｕ．．．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｈｅａｒ　ｍｅ，　ｐｌｅａｓｅ　ｗａｋｅ　ｕｐ　ａｎｄ．．．@KEY()↓
-◆ｈｅａｄ　ｓｏｕｔｈ！@KEY()↓
-◆Ｏｎｌｙ　ｙｏｕ，　ｔｈｏｕｇｈ　ｆａｒ　ａｗａｙ，　ｃａｎ　ｓａｖｅ　ｕｓ，↓
-　　@DSP_NAME(PC_JEFF)．．．@KEY()↓
-◆Ｐｌｅａｓｅ　ｈｅａｒ　ｍｙ　ｃａｌｌ　ａｎｄ　ｂｅｇｉｎ　ｈｅａｄｉｎｇ　ｓｏｕｔｈ．．．@KEY()↓
-◆@DSP_NAME(PC_JEFF)！　　Ｙｏｕ　ａｒｅ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　ｗｅ’ｖｅ　ｎｅｖｅｒ　ｍｅｔ．．．@KEY()↓
-◆Ｂｕｔ　ｙｏｕ　ａｒｅ　ｏｕｒ　ｏｎｅ　ａｎｄ　ｏｎｌｙ　ｈｏｐｅ！．．．
-;jpn:◆わたしは　@DSP_STS(STS_PC_NAME_PAULA)@WI(20)↓
-;jpn:　そして　もうひとり　@DSP_STS(STS_PC_NAME_NES)‥‥@WI(20)↓
-;jpn:　あなたに　よびかけています。@KEY()↓
-;jpn:◆このよびかけが　きこえたら↓
-;jpn:　めを　あけて！@KEY()↓
+;◆まだ あったことのない↓
+; なかまに よびかけます。@KEY()↓
+;◆まだ あったことのない↓
+; わたしたちのなかまに↓
+; よびかけます!@KEY()↓
+;◆@DSP_STS(STS_PC_NAME_JEFF)!@DSP_STS(STS_PC_NAME_JEFF)!↓
+; あなたの たすけが ほしい‥‥。@KEY()↓
+◆I am @DSP_NAME(PC_PAULA), and I am with another friend, @DSP_NAME(PC_NESS)...@KEY()↓
+◆We are trying to contact you...@KEY()↓
+◆If you hear me, please wake up and...@KEY()↓
+◆head south!@KEY()↓
+◆Only you, though far away, can save us,↓
+  @DSP_NAME(PC_JEFF)...@KEY()↓
+◆Please hear my call and begin heading south...@KEY()↓
+◆@DSP_NAME(PC_JEFF)!  You are a friend who we’ve never met...@KEY()↓
+◆But you are our one and only hope!...
+;jpn:◆わたしは @DSP_STS(STS_PC_NAME_PAULA)@WI(20)↓
+;jpn: そして もうひとり @DSP_STS(STS_PC_NAME_NES)‥‥@WI(20)↓
+;jpn: あなたに よびかけています。@KEY()↓
+;jpn:◆このよびかけが きこえたら↓
+;jpn: めを あけて!@KEY()↓
 ;jpn:◆そして‥‥@WI(20)↓
-;jpn:　みなみに　むかって↓
-;jpn:　しゅっぱつして　ください。@KEY()↓
-;jpn:◆とおくにいる　あなただけが↓
-;jpn:　わたしたちを　すくえるのよ。↓
-;jpn:　@DSP_STS(STS_PC_NAME_JEFF)！@KEY()↓
-;jpn:◆このこえを　しんじて↓
-;jpn:　おきあがって　あるきだして！↓
-;jpn:　みなみにむかって‥‥@WI(20)すぐに！@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)　おねがい！↓
-;jpn:　まだ　あったことのない‥‥@WI(20)↓
-;jpn:　かけがえのない‥‥@WI(20)なかま！
+;jpn: みなみに むかって↓
+;jpn: しゅっぱつして ください。@KEY()↓
+;jpn:◆とおくにいる あなただけが↓
+;jpn: わたしたちを すくえるのよ。↓
+;jpn: @DSP_STS(STS_PC_NAME_JEFF)!@KEY()↓
+;jpn:◆このこえを しんじて↓
+;jpn: おきあがって あるきだして!↓
+;jpn: みなみにむかって‥‥@WI(20)すぐに!@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF) おねがい!↓
+;jpn: まだ あったことのない‥‥@WI(20)↓
+;jpn: かけがえのない‥‥@WI(20)なかま!
 @KEY()
 @CLOSEALL()
 ;---------
-@BGM_EFFECT(3)		;ＢＧＭフェードアウト長め
+@BGM_EFFECT(3)		;BGMフェードアウト長め
 @WI( 120 )
 ;---------
 @WI( 180 )
@@ -2489,8 +2489,8 @@ MSG_WINS_POLANESS;
 MSG_EVT_WAKEUP_TONY;
 MSG_WINS_TONY_WAKEUP;
 ;ポーラのよびかけに応えてジェフが出かけようと
-;すると、ドアの前に急に立ちふさがる（ジェフが一歩
-;あるくと、目ざめて先回りする感じ）。ホモっぽいやつさ。
+;すると、ドアの前に急に立ちふさがる(ジェフが一歩
+;あるくと、目ざめて先回りする感じ)。ホモっぽいやつさ。
 @SHOW_MANPU_CHAR( PRSN_WINS_DORM_JEFF_A, MANPU_BIKKURI )
 @WI( 60 )
 @HIDE_MANPU_CHAR( PRSN_WINS_DORM_JEFF_A )
@@ -2500,9 +2500,9 @@ MSG_WINS_TONY_WAKEUP;
 @WI(1)
 @COLD_GOM_CHAR(GOM_TONY)
 @OPEN(1)
-◆@DSP_NAME(PC_JEFF)，　ｗｈｅｒｅ　ａｒｅ　ｙｏｕ　ｇｏｉｎｇ　ｉｎ　ｔｈｅ　ｍｉｄｄｌｅ　ｏｆ　ｔｈｅ　ｎｉｇｈｔ？
-;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)！　こんなよなかに↓
-;jpn:　どこへいくんだい？
+◆@DSP_NAME(PC_JEFF), where are you going in the middle of the night?
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)! こんなよなかに↓
+;jpn: どこへいくんだい?
 @KEY()↓
 @CLOSEALL()
 @FRESH_GOM_CHAR(GOM_TONY)
@@ -2510,36 +2510,36 @@ MSG_WINS_TONY_WAKEUP;
 @COLD_GOM_CHAR(GOM_TONY)
 MSG_WINS_TONY;
 @OPEN(1)
-◆Ｙｏｕ　ｋｎｏｗ　ｔｈｅ　ｄｏｒｍ　ｒｕｌｅｓ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｇｅｔ　ｃａｕｇｈｔ，　ｙｏｕ’ｌｌ　ｇｅｔ　ｐｕｎｉｓｈｅｄ　ｂｉｇ　ｔｉｍｅ．．．@KEY()↓
-◆Ｗ．．．ｗｈａｔ’ｓ　ｗｒｏｎｇ，　@DSP_NAME(PC_JEFF)．
+◆You know the dorm rules, right?@KEY()↓
+◆If you get caught, you’ll get punished big time...@KEY()↓
+◆W...what’s wrong, @DSP_NAME(PC_JEFF).
 ;jpn:◆このきしゅくしゃのルールは↓
-;jpn:　しってるはずだろう？↓
-;jpn:　みつかったら　しりたたきだよ。@KEY()↓
-;jpn:◆‥‥どうしたのさ　@DSP_STS(STS_PC_NAME_JEFF)！
+;jpn: しってるはずだろう?↓
+;jpn: みつかったら しりたたきだよ。@KEY()↓
+;jpn:◆‥‥どうしたのさ @DSP_STS(STS_PC_NAME_JEFF)!
 @KEY()↓
 @GET_PLAYER_DIR(PC_JEFF,3,GOM_TONY);ジェフ、トニーの方を向く
 @SET_PLAYER_DIR(PC_JEFF,0)
-◆．．．Ａｌｌ　ｒｉｇｈｔ．@KEY()↓
-◆Ｔｈｅｒｅ　ｍｕｓｔ　ｂｅ　ｓｏｍｅ　ｒｅａｓｏｎ　ｔｈａｔ　Ｉ　ｄｏｎ’ｔ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
-◆Ｉ　ｗｏｎ’ｔ　ｓｔｏｐ　ｙｏｕ．@KEY()↓
-◆Ｂｕｔ　ｉｔ’ｓ　ｄａｎｇｅｒｏｕｓ　ｔｏ　ｌｅａｖｅ　ｗｉｔｈｏｕｔ　ｔａｋｉｎｇ　ａｎｙｔｈｉｎｇ　ａｌｏｎｇ．@KEY()↓
-◆Ｈｅｙ，　Ｉ　ｔｈｉｎｋ　ｔｈｅｒｅ’ｓ　ｓｏｍｅ　ｓｔｕｆｆ　ｉｎ　ｔｈｅ　ｌｏｃｋｅｒ　ｒｏｏｍ　ｔｈａｔ　ｙｏｕ　ｓｈｏｕｌｄ　ｇｅｔ．@KEY()↓
-◆Ｉ’ｌｌ　ｈｅｌｐ　ｙｏｕ　ｇｅｔ　ｏｕｔ　ｏｆ　ｈｅｒｅ．．．
+◆...All right.@KEY()↓
+◆There must be some reason that I don’t understand.@KEY()↓
+◆I won’t stop you.@KEY()↓
+◆But it’s dangerous to leave without taking anything along.@KEY()↓
+◆Hey, I think there’s some stuff in the locker room that you should get.@KEY()↓
+◆I’ll help you get out of here...
 ;jpn:◆‥‥@KEY()↓
 ;jpn:◆わかったよ。↓
-;jpn:　ぼくにはわからない　りゆうが↓
-;jpn:　あるんだろうね。@KEY()↓
+;jpn: ぼくにはわからない りゆうが↓
+;jpn: あるんだろうね。@KEY()↓
 ;jpn:◆とめないことにするよ。@KEY()↓
-;jpn:◆でも　なんにせよ　まよなかに↓
-;jpn:　むぼうびで　でかけるのは↓
-;jpn:　きけんだよ。@KEY()↓
+;jpn:◆でも なんにせよ まよなかに↓
+;jpn: むぼうびで でかけるのは↓
+;jpn: きけんだよ。@KEY()↓
 ;jpn:◆みをまもるどうぐを↓
-;jpn:　もっていくほうがいい。@KEY()↓
+;jpn: もっていくほうがいい。@KEY()↓
 ;jpn:◆ロッカールームに↓
-;jpn:　なにかあると　おもうから↓
-;jpn:　よっていくといいよ。@KEY()↓
-;jpn:◆いっしょに　いってあげるよ。
+;jpn: なにかあると おもうから↓
+;jpn: よっていくといいよ。@KEY()↓
+;jpn:◆いっしょに いってあげるよ。
 @KEY()
 @CLOSEALL()
 @ADD_PARTY(PC_TONY)
@@ -2554,8 +2554,8 @@ MSG_WINS_TONY;
 ;@MUSISTART()			;ウィンドウ閉じるまでは無音
 ;@BGMSTART(0,BGM_msc7)
 @OPEN(1)
-◆（Ｔｏｎｙ　ｊｏｉｎｅｄ　ｙｏｕ．）
-;jpn:◆（トニーが　なかまになった）
+◆(Tony joined you.)
+;jpn:◆(トニーが なかまになった)
 @KEY()
 @CLOSEALL()
 @SETF(FLG_WINS_TONY)
@@ -2566,10 +2566,10 @@ MSG_WINS_TONY;
 ;------------------------------------------
 
 
-;#45	寄宿舎を脱出（フェンス越え）
+;#45	寄宿舎を脱出(フェンス越え)
 
-;★プレイヤーキャラが寄宿舎の（唯一の出口となる）フェンスに近づくと
-;MSG_WINS_TONY_WALLを発行（ジェフにトニーの方向を向かせる）。
+;★プレイヤーキャラが寄宿舎の(唯一の出口となる)フェンスに近づくと
+;MSG_WINS_TONY_WALLを発行(ジェフにトニーの方向を向かせる)。
 ;★_WINS_TONY_WALL_GO でトニーを踏み台にして、フェンスを越える。
 ;フェンスを越える演出の詳細は未定。
 
@@ -2582,13 +2582,13 @@ MSG_WINS_TONY_WALL;包囲網に触れたら
 @GET_PLAYER_DIR(PC_JEFF,1,PC_TONY)
 @SET_PLAYER_DIR(PC_JEFF,0)
 @OPEN(1)
-◆Ｉ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｇｅｔ　ｏｕｔ　ｂｙ　ｇｏｉｎｇ　ｏｖｅｒ　ｔｈｅ　ｇａｔｅ．．．@KEY()↓
-◆Ｂｕｔ　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｇｅｔ　ｓｏｍｅ　ｓｔｕｆｆ　ｔｏ　ｔａｋｅ　ｗｉｔｈ　ｙｏｕ．
-;jpn:◆あのフェンスから　そとに↓
-;jpn:　でられそうだけどなぁ‥‥。@KEY()↓
-;jpn:◆でも　そのまえに↓
-;jpn:　なにか　みをまもるものを↓
-;jpn:　とってこなくちゃ。
+◆I think you can get out by going over the gate...@KEY()↓
+◆But you need to get some stuff to take with you.
+;jpn:◆あのフェンスから そとに↓
+;jpn: でられそうだけどなぁ‥‥。@KEY()↓
+;jpn:◆でも そのまえに↓
+;jpn: なにか みをまもるものを↓
+;jpn: とってこなくちゃ。
 @KEYNP()
 @CLOSEALL()
 』
@@ -2603,13 +2603,13 @@ _WINS_TONY_WALL_TONY;
 』
 
 MSG_WINS_TONY_WALL_GO;
-◆Ｏｋａｙ，　ｎｏｗ　ｕｓｅ　ｍｅ　ａｓ　ａ　ｓｔｅｐ　ａｎｄ　ｃｌｉｍｂ　ｏｖｅｒ　ｔｈｅ　ｇａｔｅ．
-;jpn:◆さぁ　ぼくをふみだいにして↓
-;jpn:　このフェンスを　よじのぼるんだ。
+◆Okay, now use me as a step and climb over the gate.
+;jpn:◆さぁ ぼくをふみだいにして↓
+;jpn: このフェンスを よじのぼるんだ。
 @KEY()
 @CLOSEALL()
 @HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)	;ジェフ表示消す
-@MOVE_GOM_CHAR(GOM_JEF_FALL,ANIM_JUMP_JEF,OBJFX_SHOW_NONE)　;ジャンプジェフ追加
+@MOVE_GOM_CHAR(GOM_JEF_FALL,ANIM_JUMP_JEF,OBJFX_SHOW_NONE) ;ジャンプジェフ追加
 @MOVE_GOM_CHAR(GOM_SHADOW_FALL,ANIM_JUMP_JEF_S,OBJFX_SHOW_NONE);ジャンプジェフの影
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_SHADOW_FALL)
@@ -2618,13 +2618,13 @@ MSG_WINS_TONY_WALL_GO;
 @COLD_GOM_CHAR(GOM_JEF_FALL)
 @COLD_GOM_CHAR(GOM_SHADOW_FALL)
 @OPEN(1)
-◆Ｗｅｌｌ．．．Ｉ’ｌｌ　ｓａｙ　ｇｏｏｄｂｙｅ　ｆｏｒ　ｎｏｗ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈｅｒｅ　ｙｏｕ’ｒｅ　ｇｏｉｎｇ　ｏｒ　ｗｈｙ，@KEY()↓
-◆ｂｕｔ　ｒｅｍｅｍｂｅｒ，　ｗｅ　ａｒｅ　ｂｅｓｔ　ｆｒｉｅｎｄｓ　ｆｏｒｅｖｅｒ．
+◆Well...I’ll say goodbye for now.@KEY()↓
+◆I don’t know where you’re going or why,@KEY()↓
+◆but remember, we are best friends forever.
 ;jpn:◆とりあえず‥‥さよなら。@KEY()↓
-;jpn:◆きみが　どこへいくのか↓
-;jpn:　なにをしにいくのか　しらないけど↓
-;jpn:　ぼくら　ずっと　しんゆうだぜ！
+;jpn:◆きみが どこへいくのか↓
+;jpn: なにをしにいくのか しらないけど↓
+;jpn: ぼくら ずっと しんゆうだぜ!
 @KEY()
 @CLOSEALL()
 @FRESH_GOM_CHAR(GOM_JEF_FALL)	;ジェフジャンプ

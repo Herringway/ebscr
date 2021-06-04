@@ -10,7 +10,7 @@
 ;@Message:MSG_GPFT_PASSWORD
 
 ;@Habitat:グレープフルーツの滝／ゲップーダンジョン／入り口付近
-;@Person:ゲップー手下Ａ（ハエ蜜検査）
+;@Person:ゲップー手下A(ハエ蜜検査)
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
 ;@ActionScript:◆止ったまま
@@ -20,20 +20,20 @@
 MSG_GPFT_MINIGEPPU_A;
 @CHKFGOTO(FLG_GPFT_MINIGEPPU_A_DISAPPEAR,MSG_SYS_HANASU_NG)
 @OPEN(1)
-◆Ｄｉｄ　ｙｏｕ　ｂｒｉｎｇ　ｓｏｍｅ　”Ｆｌｙ　Ｈｏｎｅｙ”？@KEY()↓
-◆Ｉｔ’ｓ　Ｍａｓｔｅｒ　Ｂｅｌｃｈ’ｓ　ｆａｖｏｒｉｔｅ．↓
-<ＹＥＳ>　<ＮＯ>
-;jpn:◆ゲップーさまの　だいこうぶつの↓
-;jpn:　「はえみつ」を↓
-;jpn:　もってきたのか？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+◆Did you bring some ”Fly Honey”?@KEY()↓
+◆It’s Master Belch’s favorite.↓
+<YES> <NO>
+;jpn:◆ゲップーさまの だいこうぶつの↓
+;jpn: 「はえみつ」を↓
+;jpn: もってきたのか?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_GPFT_MINIGEPPU_A_YESNO,_GPFT_MINIGEPPU_A_NO)
 
 _GPFT_MINIGEPPU_A_NO;
-◆Ｔｈｅｎ，　ｗｈｙ　ａｒｅ　ｙｏｕ　ｈｅｒｅ？！
+◆Then, why are you here?!
 @KEY()
-;jpn:◆じゃ　なにをしにきたんだ！@KEY()
+;jpn:◆じゃ なにをしにきたんだ!@KEY()
 @CLOSEALL()
 @GOSUB(MSG_BATTLE_MINIGEPPU_A)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
@@ -45,12 +45,12 @@ _GPFT_MINIGEPPU_A_NO;
 _GPFT_MINIGEPPU_A_YESNO;
 @Q_HAVE(PC_ALL,GDS_FOOD_HAEMITSU)
 @TRUE_GOTO(_GPFT_MINIGEPPU_A_YES)
-◆Ｙｏｕ　ｄｉｄｎ’ｔ　ｂｒｉｎｇ　ｉｔ？@WI(20)　　Ｙｏｕ　ｓｅｅｍ　ｋｉｎｄ　ｏｆ　ｓｕｓｐｉｃｉｏｕｓ　ｔｏ　ｍｅ．．．@KEY()↓
-◆Ｙｏｕ　ｃａｎｎｏｔ　ｐａｓｓ　ｔｈｒｏｕｇｈ　ｈｅｒｅ！
+◆You didn’t bring it?@WI(20)  You seem kind of suspicious to me...@KEY()↓
+◆You cannot pass through here!
 @KEY()
-;jpn:◆もってないじゃないか！@WI(15)↓
-;jpn:　あやしいやつめ↓
-;jpn:　ここは　とおせぬ！@KEY()
+;jpn:◆もってないじゃないか!@WI(15)↓
+;jpn: あやしいやつめ↓
+;jpn: ここは とおせぬ!@KEY()
 @CLOSEALL()
 @GOSUB(MSG_BATTLE_MINIGEPPU_A)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
@@ -60,19 +60,19 @@ _GPFT_MINIGEPPU_A_YESNO;
 』
 
 _GPFT_MINIGEPPU_A_YES;
-◆Ｏｋ，　ｙｏｕ　ｍａｙ　ｐａｓｓ　ｔｈｒｏｕｇｈ．@KEY()↓
-◆Ｈｅｙ，　ｂｅ　ｃａｒｅｆｕｌ！@WI(20)　　Ｂｅ　ｓｕｒｅ　ｙｏｕ　ｄｏｎ’ｔ　ｄｒｏｐ　ｉｔ！
+◆Ok, you may pass through.@KEY()↓
+◆Hey, be careful!@WI(20)  Be sure you don’t drop it!
 @KEY()
-;jpn:◆よし　とおれ。@WI(15)↓
-;jpn:　こぼさないように↓
-;jpn:　きをつけて　いけよ！@KEY()
+;jpn:◆よし とおれ。@WI(15)↓
+;jpn: こぼさないように↓
+;jpn: きをつけて いけよ!@KEY()
 @CLOSEALL()
 ;@ANIM(ANIM_RETIRE)
 』
 
 
 ;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
-;@Person:ゲップー手下Ｂ
+;@Person:ゲップー手下B
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
 ;@ActionScript:◆小範囲うろつき
@@ -80,17 +80,17 @@ _GPFT_MINIGEPPU_A_YES;
 ;@CheckMessage:0
 ;@Message:MSG_GPFT_MINIGEPPU_B
 MSG_GPFT_MINIGEPPU_B;
-◆Ｕｒｐ！@KEY()↓
-◆．．．Ｉｔ’ｓ　ｈａｒｄ　ｔｏ　ｍａｋｅ　ｔｈｅ　ｇｒｏｓｓ　ｓｏｕｎｄｓ　ｔｈａｔ　Ｍａｓｔｅｒ　Ｂｅｌｃｈ　ｄｏｅｓ．@KEY()↓
-◆Ｉ　ｋｎｏｗ　Ｉ　ｃａｎ’ｔ　ｄｏ　ｉｔ．
+◆Urp!@KEY()↓
+◆...It’s hard to make the gross sounds that Master Belch does.@KEY()↓
+◆I know I can’t do it.
 @KEYNP()
-;jpn:◆ゲーップ！@WI(15)↓
-;jpn:　‥‥なかなかゲップーさまのような↓
-;jpn:　きたならしいおとが　でないなぁ。@KEYNP()
+;jpn:◆ゲーップ!@WI(15)↓
+;jpn: ‥‥なかなかゲップーさまのような↓
+;jpn: きたならしいおとが でないなぁ。@KEYNP()
 』
 
 ;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
-;@Person:ゲップー手下Ｃ
+;@Person:ゲップー手下C
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
 ;@ActionScript:◆止ったまま
@@ -98,18 +98,18 @@ MSG_GPFT_MINIGEPPU_B;
 ;@CheckMessage:0
 ;@Message:MSG_GPFT_MINIGEPPU_C
 MSG_GPFT_MINIGEPPU_C;
-◆Ｍａｓｔｅｒ　Ｂｅｌｃｈ　ｉｓ　ｔｈｅ　ｓｌｉｍｉｅｓｔ！@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　Ｉ　ｈｅａｒｄ　ｈｅ’ｓ　ａｌｓｏ　ｓｅｒｖｉｎｇ　ｓｏｍｅ　Ｇｉｙｇａｓ　ｇｕｙ．@WI(15)　　Ｔｈａｔ　Ｉ　ｃａｎｎｏｔ　ｂｅｌｉｅｖｅ．
+◆Master Belch is the slimiest!@KEY()↓
+◆However, I heard he’s also serving some Giygas guy.@WI(15)  That I cannot believe.
 @KEYNP()
-;jpn:◆ゲップーさまは　すごいけど@WI(15)↓
-;jpn:　ゲップーさまだって↓
-;jpn:　ギーなんとかさまの@KEY()↓
+;jpn:◆ゲップーさまは すごいけど@WI(15)↓
+;jpn: ゲップーさまだって↓
+;jpn: ギーなんとかさまの@KEY()↓
 ;jpn:◆ぶかだっていうじゃないか。@WI(15)↓
-;jpn:　かんがえられねぇよなぁ‥‥。@KEYNP()
+;jpn: かんがえられねぇよなぁ‥‥。@KEYNP()
 』
 
 ;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
-;@Person:ゲップー手下Ｄ
+;@Person:ゲップー手下D
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
 ;@ActionScript:◆近寄ってくる
@@ -119,21 +119,21 @@ MSG_GPFT_MINIGEPPU_C;
 MSG_GPFT_MINIGEPPU_D;
 @CHKFGOTO(FLG_GPFT_MINIGEPPU_D_DISAPPEAR,MSG_SYS_HANASU_NG)
 @OPEN(1)
-◆Ａｒｅｎ’ｔ　ｙｏｕ　ｔｈｅ　Ｆｌｙ　Ｈｏｎｅｙ　ｄｅｌｉｖｅｒｙ　ｂｏｙ？@WI(15)　　Ｗｈａｔ’ｓ　ｔｈｅ　ｐａｓｓｗｏｒｄ！@KEY()↓
-◆Ｉｔ　ｄｏｅｓｎ’ｔ　ｍｅａｎ　Ｉ　ｄｏｎ’ｔ　ｔｒｕｓｔ　ｙｏｕ．@WI(15)　　Ｊｕｓｔ　ｓａｙ　ｉｔ！@KEY()↓
-◆Ｓａｙ　ｉｔ　ｎｏｗ！@KEY()↓
-◆Ｓｏｍｅｏｎｅ　ｓｏ　ｑｕｉｅｔ　ｉｓ　ｅｉｔｈｅｒ　ｅｘｔｒｅｍｅｌｙ　ｓｈｙ　ｏｒ　ｅｘｔｒｅｍｅｌｙ　ｄａｎｇｅｒｏｕｓ．．．@KEY()↓
-◆Ｗｈａｔ　ａ　ｓｕｓｐｉｃｉｏｕｓ　ｆｅｌｌｏｗ！
+◆Aren’t you the Fly Honey delivery boy?@WI(15)  What’s the password!@KEY()↓
+◆It doesn’t mean I don’t trust you.@WI(15)  Just say it!@KEY()↓
+◆Say it now!@KEY()↓
+◆Someone so quiet is either extremely shy or extremely dangerous...@KEY()↓
+◆What a suspicious fellow!
 @KEY()
-;jpn:◆「はえみつ」の　はいたつか？@WI(15)↓
-;jpn:　いちおう　あいことばを　いえ！@WI(15)↓
-;jpn:　うたがうわけじゃないけどな。@KEY()↓
-;jpn:◆はやく　いえよ！@KEY()↓
-;jpn:◆いえってば！@KEY()↓
-;jpn:◆こんなに　だまってるってことは↓
-;jpn:　ものすごくむくちなやつか↓
-;jpn:　てき！@WI(15)ってことだぞ。@KEY()↓
-;jpn:◆くせもの！！@KEY()
+;jpn:◆「はえみつ」の はいたつか?@WI(15)↓
+;jpn: いちおう あいことばを いえ!@WI(15)↓
+;jpn: うたがうわけじゃないけどな。@KEY()↓
+;jpn:◆はやく いえよ!@KEY()↓
+;jpn:◆いえってば!@KEY()↓
+;jpn:◆こんなに だまってるってことは↓
+;jpn: ものすごくむくちなやつか↓
+;jpn: てき!@WI(15)ってことだぞ。@KEY()↓
+;jpn:◆くせもの!!@KEY()
 @CLOSEALL()
 @GOSUB(MSG_BATTLE_MINIGEPPU_D)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
@@ -143,7 +143,7 @@ MSG_GPFT_MINIGEPPU_D;
 』
 
 ;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
-;@Person:ゲップー手下Ｅ
+;@Person:ゲップー手下E
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
 ;@ActionScript:◆近寄ってくる
@@ -153,11 +153,11 @@ MSG_GPFT_MINIGEPPU_D;
 MSG_GPFT_MINIGEPPU_E;
 @CHKFGOTO(FLG_GPFT_MINIGEPPU_E_DISAPPEAR,MSG_SYS_HANASU_NG)
 @OPEN(1)
-◆Ｓｏ，　ｙｏｕ’ｒｅ　ｔｈｅ　ｏｎｅｓ　ｗｈｏ　ｄｅｓｔｒｏｙｅｄ　ｔｈｅ　ｚｏｍｂｉｅｓ　ｔｈａｔ　Ｉ　ａｓｓｉｇｎｅｄ　ｔｏ　Ｔｈｒｅｅｄ！！
+◆So, you’re the ones who destroyed the zombies that I assigned to Threed!!
 @KEY()
-;jpn:◆スリークに　おくりこんだ↓
-;jpn:　ゾンビを　やっつけたのは↓
-;jpn:　おまえたちだったんだな！！@KEY()
+;jpn:◆スリークに おくりこんだ↓
+;jpn: ゾンビを やっつけたのは↓
+;jpn: おまえたちだったんだな!!@KEY()
 @CLOSEALL()
 @GOSUB(MSG_BATTLE_MINIGEPPU_E)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
@@ -167,7 +167,7 @@ MSG_GPFT_MINIGEPPU_E;
 』
 
 ;@Habitat:グレープフルーツの滝／ゲップーダンジョン／ベルトコンベア付近
-;@Person:囚われの土星さんＡ
+;@Person:囚われの土星さんA
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GEPPU/off
 ;@ActionScript:◆止ったまま
@@ -176,17 +176,17 @@ MSG_GPFT_MINIGEPPU_E;
 ;@Message:MSG_GPFT_DOSEI_A
 MSG_GPFT_DOSEI_A;
 @FONTBAKA()
-◆Ｔｉｒｅｄ．@KEY()↓
-◆Ｂｕｔ　ｓｏ　ｇｏｏｄ．　　Ｄｉｎｇ！
+◆Tired.@KEY()↓
+◆But so good.  Ding!
 @KEYNP()
 ;jpn:◆くたびれたー。↓
-;jpn:　でも↓
-;jpn:　だいじょうぶさ。@KEYNP()
+;jpn: でも↓
+;jpn: だいじょうぶさ。@KEYNP()
 @FONTSTD()
 』
 
 ;@Habitat:グレープフルーツの滝／ゲップーダンジョン／ベルトコンベア付近
-;@Person:囚われの土星さんＢ
+;@Person:囚われの土星さんB
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GEPPU/off
 ;@ActionScript:◆止ったまま
@@ -195,13 +195,13 @@ MSG_GPFT_DOSEI_A;
 ;@Message:MSG_GPFT_DOSEI_B
 MSG_GPFT_DOSEI_B;
 @FONTBAKA()
-◆Ａｈ！　　Ｓｏ@WI(5)ｏ@WI(5)ｏ@WI(5)ｏ．．．
-　　Ｈｏｎｅｓｔ！@KEY()↓
-◆Ｓｍｉｌｅ．　　Ｂｏｉｎｇ！
+◆Ah!  So@WI(5)o@WI(5)o@WI(5)o...
+  Honest!@KEY()↓
+◆Smile.  Boing!
 @KEYNP()
-;jpn:◆あー　もー‥‥。↓
-;jpn:　ほんとにー！@WI(20)↓
-;jpn:　ニコニコ。@KEYNP()
+;jpn:◆あー もー‥‥。↓
+;jpn: ほんとにー!@WI(20)↓
+;jpn: ニコニコ。@KEYNP()
 @FONTSTD()
 』
 
@@ -221,77 +221,77 @@ MSG_GPFT_GEPPU;＄
 @CHKFGOTO(FLG_WIN_GEPPU,MSG_SYS_HANASU_NG)
 @BGMSTART(0,BGM_msc10);ゲップ入りの曲
 @SE(SE_se4e_foe_gepu)
-◆Ｂｕｕｕｒｐ！@KEY()↓
-◆Ｓｏ　ｙｏｕ　ａｒｅ　@DSP_NAME(PC_NESS)？@KEY()↓
-;jpn:◆@SE(SE_se4e_foe_gepu)@WI(40)グエーップ！@WI(15)↓
-;jpn:　おまえが　@DSP_STS(STS_PC_NAME_NES)か。@KEY()↓
-@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+◆Buuurp!@KEY()↓
+◆So you are @DSP_NAME(PC_NESS)?@KEY()↓
+;jpn:◆@SE(SE_se4e_foe_gepu)@WI(40)グエーップ!@WI(15)↓
+;jpn: おまえが @DSP_STS(STS_PC_NAME_NES)か。@KEY()↓
+@SET_LOOPREG(PC_NESS)			;ネスのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_GPFT_GEPPU_DEAD)
-◆．．．Ｉ　ｓｅｅ．．．Ｇｙｏｒｋ！@WI(15)　　Ｇｙｏｒｋ！@WI(15)　　Ｇｙｏｒｋ！@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ａ　ｐｒｏｐｈｅｃｙ　ｔｈａｔ　ａ　ｂｏｙ　ｗｉｌｌ　ｄｅｓｔｒｏｙ　Ｍａｓｔｅｒ　Ｇｉｙｇａｓ．@KEY()↓
-◆Ｈｅｅｇ！　　Ｈｅｅｇ！　　Ｈｅｅｇ！↓
-　　Ｙｏｕ　ｍａｋｅ　ｍｅ　ｌａｕｇｈ　ｓｏ　ｈａｒｄ，．．．@KEY()↓
+◆...I see...Gyork!@WI(15)  Gyork!@WI(15)  Gyork!@KEY()↓
+◆There’s a prophecy that a boy will destroy Master Giygas.@KEY()↓
+◆Heeg!  Heeg!  Heeg!↓
+  You make me laugh so hard,...@KEY()↓
 ;jpn:◆‥‥そうか‥‥ゴゲゴゲゴゲ。@KEY()↓
-;jpn:◆おまえが　ギーグさまを↓
-;jpn:　たおすと↓
-;jpn:　よげんが　あったらしいぞ。@KEY()↓
+;jpn:◆おまえが ギーグさまを↓
+;jpn: たおすと↓
+;jpn: よげんが あったらしいぞ。@KEY()↓
 ;jpn:◆ゲハゲハゲハゲハ↓
-;jpn:　わらわせるなぁ。@WI(15)↓
-;jpn:　こんな　くそったれを‥‥@KEY()↓
+;jpn: わらわせるなぁ。@WI(15)↓
+;jpn: こんな くそったれを‥‥@KEY()↓
 ;@SE(SE_se4e_foe_gepu)@WI(40)↓
-◆Ｉｆ　Ｍａｓｔｅｒ　Ｇｉｙｇａｓ　ｉｓ　ｓｃａｒｅｄ　ｏｆ　ｓｏｍｅｏｎｅ．．．@KEY()↓
+◆If Master Giygas is scared of someone...@KEY()↓
 @SE(SE_se4e_foe_gepu)
-◆ｈｅ　ｗｏｕｌｄ　ｈａｖｅ　ｔｏ　ｂｅ　ｗｏｒｓｅ　ｔｈａｎ　ｔｈｅ　ｇｒｅａｔｅｓｔ　ｅｖｉｌ．．．@KEY()↓
-◆Ｇａｒｇ！　　Ｇａ！　　Ｇａｒｇ！　　Ｇａ！　　Ｇａ！　　Ｇａ！@KEY()↓
-;jpn:◆ギーグさまが　すこしでも↓
-;jpn:　おそれているとしたら‥‥@KEY()@SE(SE_se4e_foe_gepu)@WI(40)↓
-;jpn:◆よのなか　おにも　あくまも↓
-;jpn:　ないものか‥‥ゲヒヒヒヒヒ。@KEY()↓
+◆he would have to be worse than the greatest evil...@KEY()↓
+◆Garg!  Ga!  Garg!  Ga!  Ga!  Ga!@KEY()↓
+;jpn:◆ギーグさまが すこしでも↓
+;jpn: おそれているとしたら‥‥@KEY()@SE(SE_se4e_foe_gepu)@WI(40)↓
+;jpn:◆よのなか おにも あくまも↓
+;jpn: ないものか‥‥ゲヒヒヒヒヒ。@KEY()↓
 ;@SE(SE_se4e_foe_gepu)@WI(40)↓
-◆Ｉ’ｌｌ　ｔａｋｅ　ｙｏｕ　ｄｏｗｎ　ｂｉｇ　ｔｉｍｅ，　ｓｏ　ｇｅｔ　ｒｅａｄｙ　ｆｏｒ　ｔｈｅ　ｗｏｒｓｔ　ｆｉｇｈｔ　ｏｆ　ｙｏｕｒ　ｌｉｆｅ！
+◆I’ll take you down big time, so get ready for the worst fight of your life!
 @KEY()↓
-;jpn:◆おれさまが　いまから↓
-;jpn:　さいあくのたたかいで↓
-;jpn:　おまえを　しまつしてやる！@KEY()↓
+;jpn:◆おれさまが いまから↓
+;jpn: さいあくのたたかいで↓
+;jpn: おまえを しまつしてやる!@KEY()↓
 @SE(SE_se4e_foe_gepu)@WI(40)↓
 
 _GPFT_GEPPU_MAIN;合流点
-◆Ｇｈａ　Ｇｈａ　Ｇｈａ！↓
-　　Ｇｅｔ　ｒｅａｄｙ　ｔｏ　ｆｅｅｌ　ｔｈｅ　ｐａｉｎ　ｏｆ　ｔｒｕｅ　ｎａｕｓｅａ！@KEY()↓
+◆Gha Gha Gha!↓
+  Get ready to feel the pain of true nausea!@KEY()↓
 @SE(SE_se4e_foe_gepu)@WI(40)
-◆Ｇｈｅ　Ｇｈｅ！↓
-　　Ｃｏｍｅ　ｏｎ，　ｌｅｔ’ｓ　ｇｏ！
+◆Ghe Ghe!↓
+  Come on, let’s go!
 @KEY()
 ;jpn:◆グッグッグッグッ↓
-;jpn:　へどまみれになって　くるしめ！@KEY()@SE(SE_se4e_foe_gepu)@WI(40)↓
-;jpn:◆ゴゲッ　ゴゲッ↓
-;jpn:　さぁ　こい！@KEY()
+;jpn: へどまみれになって くるしめ!@KEY()@SE(SE_se4e_foe_gepu)@WI(40)↓
+;jpn:◆ゴゲッ ゴゲッ↓
+;jpn: さぁ こい!@KEY()
 @GOSUB(MSG_BATTLE_GEPPU)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
 @OPEN(1)
 ;---------
 @BGMSTART(0,BGM_msc10);ゲップ入りの曲
 ;---------
-◆@SE(SE_se4e_foe_gepu)@WI(40)Ｌｏｏｋｓ　ｌｉｋｅ　ｉｔ　ｗａｓ　ａｎ　ｅｖｅｎ　ｆｉｇｈｔ．．．@WI(20)　　Ｂｕｕｒｐ！@KEY()↓
-◆Ｂｕｔ，　Ｍａｓｔｅｒ　Ｇｉｙｇａｓ　ｈａｓ　ｍａｎａｇｅｄ　ｔｏ　ｇｅｔ　ｔｈｅ　Ｍａｎｉ　Ｍａｎｉ　ｓｔａｔｕｅ　ｉｎｔｏ　Ｆｏｕｒｓｉｄｅ．@WI(20)@SE(SE_se4e_foe_gepu)@WI(40)@KEY()↓
-◆Ｔｈｅ　ｃｉｔｙ　ｗｉｌｌ　ｓｏｏｎ　ｂｅ　ｉｎ　ｗｏｒｓｅ　ｃｏｎｄｉｔｉｏｎ　ｔｈａｎ　ｌｉｖｉｎｇ　ｉｎ　ｙｏｕｒ　ｏｗｎ　ｐｕｋｅ！@KEY()↓
-◆Ｓｕｆｆｅｒ，　ｓｐａｎｋｙ！@WI(20)@SE(SE_se4e_foe_gepu)↓
-　　@WI(40)Ｇｈａ，　Ｇｈａ，　Ｇｈａ，　Ｇｈａ，　Ｇｈａ！@KEY()↓
-◆Ｂｕ@WI(5)ｕ@WI(5)ｕ@WI(5)ｕｒｐ！@SE(SE_se4e_foe_gepu)@WI(40)
-;jpn:◆@SE(SE_se4e_foe_gepu)@WI(40)グブグブ@WI(20)　ゲーゲ@WI(10)　ゲーゲ@WI(15)↓
-;jpn:　おれとのたたかいは　じじつじょう↓
-;jpn:　ひきわけってことだな。@KEY()↓
-;jpn:◆ゲーーーップ！@WI(20)↓
-;jpn:　だが　ギーグさまが↓
-;jpn:　しゅうとうにしかけた@KEY()↓
-;jpn:◆@WI(20)@SE(SE_se4e_foe_gepu)@WI(40)「マニマニのあくま」の　せいで↓
-;jpn:　だいとかい　フォーサイドは@KEY()↓
+◆@SE(SE_se4e_foe_gepu)@WI(40)Looks like it was an even fight...@WI(20)  Buurp!@KEY()↓
+◆But, Master Giygas has managed to get the Mani Mani statue into Fourside.@WI(20)@SE(SE_se4e_foe_gepu)@WI(40)@KEY()↓
+◆The city will soon be in worse condition than living in your own puke!@KEY()↓
+◆Suffer, spanky!@WI(20)@SE(SE_se4e_foe_gepu)↓
+  @WI(40)Gha, Gha, Gha, Gha, Gha!@KEY()↓
+◆Bu@WI(5)u@WI(5)u@WI(5)urp!@SE(SE_se4e_foe_gepu)@WI(40)
+;jpn:◆@SE(SE_se4e_foe_gepu)@WI(40)グブグブ@WI(20) ゲーゲ@WI(10) ゲーゲ@WI(15)↓
+;jpn: おれとのたたかいは じじつじょう↓
+;jpn: ひきわけってことだな。@KEY()↓
+;jpn:◆ゲーーーップ!@WI(20)↓
+;jpn: だが ギーグさまが↓
+;jpn: しゅうとうにしかけた@KEY()↓
+;jpn:◆@WI(20)@SE(SE_se4e_foe_gepu)@WI(40)「マニマニのあくま」の せいで↓
+;jpn: だいとかい フォーサイドは@KEY()↓
 ;jpn:◆ゲロゲロいじょうの↓
-;jpn:　ひどいことに　なるはずさ。@WI(60)ゲプッ@KEY()↓
-;jpn:◆くるしみに　いくがいいさ！@SE(SE_se4e_foe_gepu)@WI(40)↓
-;jpn:　ゲボゲボゲボ@WI(10)　ゲホゲボ@WI(15)↓
-;jpn:　ゲローーップ！@SE(SE_se4e_foe_gepu)@WI(40)
+;jpn: ひどいことに なるはずさ。@WI(60)ゲプッ@KEY()↓
+;jpn:◆くるしみに いくがいいさ!@SE(SE_se4e_foe_gepu)@WI(40)↓
+;jpn: ゲボゲボゲボ@WI(10) ゲホゲボ@WI(15)↓
+;jpn: ゲローーップ!@SE(SE_se4e_foe_gepu)@WI(40)
 @KEY()↓
 @CLOSEALL()
 @WI(1)
@@ -315,32 +315,32 @@ _GPFT_GEPPU_MAIN;合流点
 ;--------
 』
 _GPFT_GEPPU_DEAD;
-◆．．．Ｎｏ？．．．↓
-　　Ｇｙｏｒｋ，　Ｇｙｏｒｋ，　Ｇｙｏｒｋ！@KEY()↓
-◆Ｉ　ｈｅａｒｄ　ｔｈｅｒｅ’ｓ　ａ　ｐｒｏｐｈｅｃｙ　ｔｈａｔ　ｈｅ　ｗｏｕｌｄ　ｄｅｆｅａｔ　Ｍａｓｔｅｒ　Ｇｉｙｇａｓ．．．@KEY()↓
-◆Ｈｅｅｇ　Ｈｅｅｇ　Ｈｅｅｇ↓
-　　Ｙｏｕ　ｍａｋｅ　ｍｅ　ｌａｕｇｈ　ｓｏ　ｈａｒｄ！@KEY()↓
+◆...No?...↓
+  Gyork, Gyork, Gyork!@KEY()↓
+◆I heard there’s a prophecy that he would defeat Master Giygas...@KEY()↓
+◆Heeg Heeg Heeg↓
+  You make me laugh so hard!@KEY()↓
 ;jpn:◆‥‥ちがうのか‥‥ゴゲゴゲゴゲ。@KEY()↓
-;jpn:◆そいつが　ギーグさまを↓
-;jpn:　たおすと↓
-;jpn:　よげんが　あったらしいぞ。@KEY()↓
+;jpn:◆そいつが ギーグさまを↓
+;jpn: たおすと↓
+;jpn: よげんが あったらしいぞ。@KEY()↓
 ;jpn:◆ゲハゲハゲハゲハ↓
-;jpn:　わらわせるなぁ。@WI(15)↓
-;jpn:　こんな　くそったれどもを‥‥@KEY()↓
+;jpn: わらわせるなぁ。@WI(15)↓
+;jpn: こんな くそったれどもを‥‥@KEY()↓
 ;@SE(SE_se4e_foe_gepu)@WI(40)↓
-◆Ｉｆ　Ｍａｓｔｅｒ　Ｇｉｙｇａｓ　ｉｓ　ｓｃａｒｅｄ　ｏｆ　ｓｏｍｅｏｎｅ．．．@SE(SE_se4e_foe_gepu)@KEY()↓
-◆ｈｅ　ｗｏｕｌｄ　ｈａｖｅ　ｔｏ　ｂｅ　ｗｏｒｓｅ　ｔｈａｎ　ｔｈｅ　ｇｒｅａｔｅｓｔ　ｅｖｉｌ．．．
+◆If Master Giygas is scared of someone...@SE(SE_se4e_foe_gepu)@KEY()↓
+◆he would have to be worse than the greatest evil...
 @KEY()↓
-;jpn:◆ギーグさまが　すこしでも↓
-;jpn:　おそれているとしたら‥‥@KEY()@SE(SE_se4e_foe_gepu)@WI(40)↓
-;jpn:◆よのなか　おにも　あくまも↓
-;jpn:　ないものか‥‥ゲヒヒヒヒヒ。@KEY()↓
+;jpn:◆ギーグさまが すこしでも↓
+;jpn: おそれているとしたら‥‥@KEY()@SE(SE_se4e_foe_gepu)@WI(40)↓
+;jpn:◆よのなか おにも あくまも↓
+;jpn: ないものか‥‥ゲヒヒヒヒヒ。@KEY()↓
 ;@SE(SE_se4e_foe_gepu)@WI(40)↓
-◆Ｉ’ｌｌ　ｔａｋｅ　ｙｏｕ　ｄｏｗｎ　ｂｉｇ　ｔｉｍｅ，@WI(15)　ｓｏ　ｇｅｔ　ｒｅａｄｙ　ｆｏｒ　ｔｈｅ　ｗｏｒｓｔ　ｆｉｇｈｔ　ｏｆ　ｙｏｕｒ　ｌｉｆｅ！
+◆I’ll take you down big time,@WI(15) so get ready for the worst fight of your life!
 @KEY()↓
-;jpn:◆おれさまが　いまから↓
-;jpn:　さいあくのたたかいで↓
-;jpn:　おまえ@GOSUB(MSG_SUB_TATI)を　しまつしてやる！@KEY()↓
+;jpn:◆おれさまが いまから↓
+;jpn: さいあくのたたかいで↓
+;jpn: おまえ@GOSUB(MSG_SUB_TATI)を しまつしてやる!@KEY()↓
 ;@SE(SE_se4e_foe_gepu)@WI(40)↓
 @GOTO(_GPFT_GEPPU_MAIN);合流点へ
 
@@ -359,14 +359,14 @@ MSG_GPFT_MLKY_BOSS;
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(MSG_GLOBAL_BOSS_NG);ネス死んでたらダメ
 @BGMSTART(0,BGM_msc24);ボスのセリフ曲
-◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｇｏｔ　ｈｅｒｅ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｔｈｉｒｄ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ”　ｌｏｃａｔｉｏｎ．@WI(20)　　Ｂｕｔ　ｉｔ’ｓ　ｍｉｎｅ　ｎｏｗ．@KEY()↓
-◆Ｔａｋｅ　ｉｔ　ｆｒｏｍ　ｍｅ，@WI(30)　ｉｆ　ｙｏｕ　ｄａｒｅ．．．
+◆You finally got here.@KEY()↓
+◆This is the third ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
+◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは　３ばんめの↓
+;jpn:◆ここは ３ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
-;jpn:◆しかし　いまは↓
-;jpn:　わたしのばしょだ。@KEY()↓
+;jpn:◆しかし いまは↓
+;jpn: わたしのばしょだ。@KEY()↓
 ;jpn:◆うばいかえせばよい。@KEY()↓
 ;jpn:◆‥‥できるものなら。
 @KEY()
@@ -381,23 +381,23 @@ MSG_GPFT_MLKY_BOSS;
 MSG_GPFT_HAKAMORI;
 @GOSUB(MSG_SHOP_GPFT_GRAVEKEEPER)
 @!
-;◆あんたたち　おハカのしたを↓
-;　ぬけてきたのか？！@KEY()↓
+;◆あんたたち おハカのしたを↓
+; ぬけてきたのか?!@KEY()↓
 ;◆むてっぽうなことするねぇ。@WI(20)↓
-;　‥‥ハラもへったことだろう。↓
-;◆あ@WI(15)　ちょうどいい。@WI(20)↓
-;　おじさん　たべものをもってたよ。@KEY()↓
+; ‥‥ハラもへったことだろう。↓
+;◆あ@WI(15) ちょうどいい。@WI(20)↓
+; おじさん たべものをもってたよ。@KEY()↓
 
 ;取り引きのあとに
 ;◆ぜんめんてきに↓
-;　つかれを　いやしたいなら@KEY()↓
-;◆このさきに　おもろいひとたちの↓
-;　むらがあるから↓
-;　そっちで　やすめばいい。@KEY()↓
+; つかれを いやしたいなら@KEY()↓
+;◆このさきに おもろいひとたちの↓
+; むらがあるから↓
+; そっちで やすめばいい。@KEY()↓
 ;◆おじさんは↓
-;　こまったひとたちを　たすけるのが↓
-;　ほんとに　すきなんだ。@KEY()↓
-;◆‥‥おかねは　とるけどね。@KEY()↓
+; こまったひとたちを たすけるのが↓
+; ほんとに すきなんだ。@KEY()↓
+;◆‥‥おかねは とるけどね。@KEY()↓
 ;』
 ;-------------------------------------------------
 
@@ -405,30 +405,30 @@ MSG_THRK_BOSS_GRAVE;墓場のボス
 @Q_HAVE(PC_ALL,GDS_FOOD_HAEMITSU)
 @TRUE_GOTO(_THRK_BOSS_GRAVE_HAVE)
 ;ハエミツなし
-◆Ｇｙｏｒｋ　Ｇｙｏｒｋ！@KEY()↓
-◆Ｈｅｙ　ｙｏｕ，　ｃｏｍｍｏｎｅｒ！@WI(20)　　Ｙｏｕ　ｔｈｅｒｅ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ　ｗｉｔｈｏｕｔ　ａｎｙ　”Ｆｌｙ　Ｈｏｎｅｙ”．．．@KEY()↓
-◆Ｉ　ａｍ　ｔｈｅ　ｍｏｒｔａｌ　ｅｎｅｍｙ　ｏｆ　ｙｏｕｒ　ｋｉｎｄ．
+◆Gyork Gyork!@KEY()↓
+◆Hey you, commoner!@WI(20)  You there wandering around without any ”Fly Honey”...@KEY()↓
+◆I am the mortal enemy of your kind.
 @KEY()
-;jpn:◆グケッ　グケッ。@KEY()↓
-;jpn:◆「はえみつ」も　もたずに↓
-;jpn:　このあたりを　うろついているとは↓
-;jpn:　‥‥ふつうのやつ！@KEY()↓
-;jpn:◆おれと　おまえは↓
-;jpn:　つまり　てきどうし！@KEY()
+;jpn:◆グケッ グケッ。@KEY()↓
+;jpn:◆「はえみつ」も もたずに↓
+;jpn: このあたりを うろついているとは↓
+;jpn: ‥‥ふつうのやつ!@KEY()↓
+;jpn:◆おれと おまえは↓
+;jpn: つまり てきどうし!@KEY()
 ;戦闘に
 』
 
 _THRK_BOSS_GRAVE_HAVE;ハエミツあり
-◆Ｇｙｏｒｋ！　　Ｇｙｏｒｋ！@KEY()↓
-◆Ｓｉｎｃｅ　ｙｏｕ　ｈａｄ　”Ｆｌｙ　Ｈｏｎｅｙ，”　Ｉ　ｃｏｎｓｉｄｅｒｅｄ　ｙｏｕ　ａ　ｆｒｉｅｎｄ．@KEY()↓
-◆Ｂｕｔ　ａｃｔｕａｌｌｙ，　ｙｏｕ’ｒｅ　ｊｕｓｔ　ａ　ｃｏｍｍｏｎｅｒ！@WI(20)　　Ｉ　ａｍ　ｔｈｅ　ｍｏｒｔａｌ　ｅｎｅｍｙ　ｏｆ　ｙｏｕｒ　ｋｉｎｄ．
+◆Gyork!  Gyork!@KEY()↓
+◆Since you had ”Fly Honey,” I considered you a friend.@KEY()↓
+◆But actually, you’re just a commoner!@WI(20)  I am the mortal enemy of your kind.
 @KEY()
-;jpn:◆グケッ　グケッ。@KEY()↓
-;jpn:◆「はえみつ」を　もっているから↓
-;jpn:　なかまかとおもったら↓
-;jpn:　どうやら　ふつうのやつ！@KEY()↓
-;jpn:◆そんな　ふつうのやつは↓
-;jpn:　おれの　てきだ！@KEY()
+;jpn:◆グケッ グケッ。@KEY()↓
+;jpn:◆「はえみつ」を もっているから↓
+;jpn: なかまかとおもったら↓
+;jpn: どうやら ふつうのやつ!@KEY()↓
+;jpn:◆そんな ふつうのやつは↓
+;jpn: おれの てきだ!@KEY()
 ;戦闘に
 』
 
@@ -437,34 +437,34 @@ MSG_THRK_BOSS_GRAVE_DIE;戦闘後
 @Q_HAVE(PC_ALL,GDS_FOOD_HAEMITSU)
 @TRUE_GOTO(_THRK_BOSS_GRAVE_DIE_HAVE)
 ;ハエミツなし
-◆Ｙｏｕ　ｈａｖｅ　ｄｅｆｅａｔｅｄ　ｍｅ．．．@KEY()↓
-◆Ａｌｌｏｗ　ｍｅ　ｔｏ　ｅａｔ　ｓｏｍｅ　Ｆｌｙ　Ｈｏｎｅｙ　ｆｏｒ　ｔｈｅ　ｌａｓｔ　ｔｉｍｅ．．．@KEY()↓
-◆Ｍａｓｔｅｒ　Ｂｅｌｃｈ　ｈａｔｅｓ　ｐｅｏｐｌｅ　ｌｉｋｅ　ｙｏｕ．@KEY()↓
-◆．．．Ｙｏｕ　ｓｅｅ，　ｔｈｏｓｅ　ｗｈｏ　ｄｏｎ’ｔ　ｈａｖｅ　”Ｆｌｙ　Ｈｏｎｅｙ”　ａｒｅ　ｏｕｒ　ｍｏｒｔａｌ　ｅｎｅｍｉｅｓ．．．
+◆You have defeated me...@KEY()↓
+◆Allow me to eat some Fly Honey for the last time...@KEY()↓
+◆Master Belch hates people like you.@KEY()↓
+◆...You see, those who don’t have ”Fly Honey” are our mortal enemies...
 @KEY()
-;jpn:◆おれを　たおすんだったら‥‥@KEY()↓
-;jpn:◆せめて@WI(30)　しぬまえに↓
-;jpn:　「はえみつ」を　なめさせて↓
-;jpn:　ほしかったなぁ。@KEY()↓
-;jpn:◆ゲップーさまは　おまえみたいな↓
-;jpn:　やつが　だいきらいなんだ。@KEY()↓
+;jpn:◆おれを たおすんだったら‥‥@KEY()↓
+;jpn:◆せめて@WI(30) しぬまえに↓
+;jpn: 「はえみつ」を なめさせて↓
+;jpn: ほしかったなぁ。@KEY()↓
+;jpn:◆ゲップーさまは おまえみたいな↓
+;jpn: やつが だいきらいなんだ。@KEY()↓
 ;jpn:◆‥‥つまり@WI(30)↓
-;jpn:　「はえみつ」を↓
-;jpn:　もっていないような「てき」がな。@KEY()
+;jpn: 「はえみつ」を↓
+;jpn: もっていないような「てき」がな。@KEY()
 @CLOSEALL()
 』
 _THRK_BOSS_GRAVE_DIE_HAVE;ハエミツあり
-◆Ｉ　ｗａｎｔｅｄ　ｔｏ　ｇｅｔ　ｙｏｕｒ　Ｆｌｙ　Ｈｏｎｅｙ　ａｎｄ　ｇｕｌｐ　ｉｔ　ｄｏｗｎ．@KEY()↓
-◆Ｍａｓｔｅｒ　Ｂｅｌｃｈ　ａｎｄ　Ｉ　ｌｏｖｅ　Ｆｌｙ　Ｈｏｎｅｙ．@WI(20)↓
-　　Ｇｙｏｒｇ　Ｇｙｏｒｇ！．．．
+◆I wanted to get your Fly Honey and gulp it down.@KEY()↓
+◆Master Belch and I love Fly Honey.@WI(20)↓
+  Gyorg Gyorg!...
 @KEY()
-;jpn:◆せめて@WI(15)　おまえの　もっている↓
-;jpn:　「はえみつ」を　なめてから↓
-;jpn:　まけたかったなぁ。@KEY()↓
-;jpn:◆おれとか　ゲップーさまは↓
-;jpn:　「はえみつ」が↓
-;jpn:　だーいすきなんだ音@KEY()↓
-;jpn:◆グケッ@WI(10)　グケー！@KEY()
+;jpn:◆せめて@WI(15) おまえの もっている↓
+;jpn: 「はえみつ」を なめてから↓
+;jpn: まけたかったなぁ。@KEY()↓
+;jpn:◆おれとか ゲップーさまは↓
+;jpn: 「はえみつ」が↓
+;jpn: だーいすきなんだ音@KEY()↓
+;jpn:◆グケッ@WI(10) グケー!@KEY()
 @CLOSEALL()
 』
 ;-------------------------------------------------

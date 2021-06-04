@@ -1,7 +1,7 @@
 ;-----------------------------------------------------
 
 ;@Habitat:サマーズ／クラブストイック／クラブストイック
-;@Person:客Ａ
+;@Person:客A
 ;@Figure:ジミな男
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止まったまま
@@ -9,42 +9,42 @@
 ;@CheckMessage:0
 ;@Message:DMSG_SUMS_CLUB_A
 MSG_SUMS_CLUB_A;
-◆Ｄｉｄａｃｔｉｃａｌｌｙ　ｓｐｅａｋｉｎｇ，　ｓｅｍｉｎａｌ　ｅｖｉｄｅｎｃｅ　ｓｅｅｍｓ　ｔｏ　ｅｘｐｌｉｃａｔｅ　ｔｈｅ　ｆａｃｔ　ｔｈａｔ@KEY()↓
-◆ｙｏｕｒ　ｒｅｐｕｄｉａｔｉｏｎ　ｏｆ　ｅｎｔｒｏｐｙ　ｓｕｐｐｏｒｔｓ　ｍｙ　ｔｈｅｏｒｙ　ｏｆ　ｓｐａｃｅ−ｔｉｍｅ　ｓｙｎｔｈｅｓｉｓ．@KEY()↓
-◆Ｏｆ　ｔｈｉｓ，　Ｉ　ａｍ　ｉｒｒｅｆｕｔａｂｌｙ　ｃｏｎｆｉｄｅｎｔ．
-;jpn:◆つまり　いまのせかいでは↓
-;jpn:　エントロピーの　ぞうだいっていう↓
-;jpn:　ながれに　あらがうことは@KEY()↓
-;jpn:◆ぼうちょうする　うちゅうを↓
-;jpn:　ひていしつづける　いしが↓
-;jpn:　ひょうめいされているってこと‥‥
+◆Didactically speaking, seminal evidence seems to explicate the fact that@KEY()↓
+◆your repudiation of entropy supports my theory of space−time synthesis.@KEY()↓
+◆Of this, I am irrefutably confident.
+;jpn:◆つまり いまのせかいでは↓
+;jpn: エントロピーの ぞうだいっていう↓
+;jpn: ながれに あらがうことは@KEY()↓
+;jpn:◆ぼうちょうする うちゅうを↓
+;jpn: ひていしつづける いしが↓
+;jpn: ひょうめいされているってこと‥‥
 @KEYNP()
 』
 
 ;@Habitat:サマーズ／クラブストイック／クラブストイック
-;@Person:客Ｂ♀
-;@Figure:ＯＬＣ
+;@Person:客B♀
+;@Figure:OLC
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_CLUB_B
 MSG_SUMS_CLUB_B;
-◆Ｍｍｍｍｍ．@KEY()↓
-◆Ｉ　ｔｈｉｎｋ　ｉｔ’ｓ　ａ　ｖｅｒｙ　ｃｏｍｐｌｉｃａｔｅｄ　ｉｓｓｕｅ．@KEY()↓
+◆Mmmmm.@KEY()↓
+◆I think it’s a very complicated issue.@KEY()↓
 ;jpn:◆うーん。↓
-;jpn:　わたしが　かんがえるに↓
-;jpn:　それは　むつかしいもんだいね。@KEY()↓
+;jpn: わたしが かんがえるに↓
+;jpn: それは むつかしいもんだいね。@KEY()↓
 @WI(60)↓
-◆．．．．．．Ｏｈ，　ｓｏｒｒｙ！@KEY()↓
-◆Ｉ　ｗａｓ　ｓｌｅｅｐｉｎｇ．．．
+◆......Oh, sorry!@KEY()↓
+◆I was sleeping...
 @KEYNP()
-;jpn:◆‥@WI(30)‥@WI(30)あ@WI(15)　ごめんなさい。@WI(20)↓
-;jpn:　ねむってたわ。@KEYNP()
+;jpn:◆‥@WI(30)‥@WI(30)あ@WI(15) ごめんなさい。@WI(20)↓
+;jpn: ねむってたわ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／クラブストイック／クラブストイック
-;@Person:客Ｃ
+;@Person:客C
 ;@Figure:青年
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止まったまま
@@ -52,20 +52,20 @@ MSG_SUMS_CLUB_B;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_CLUB_C
 MSG_SUMS_CLUB_C;
-◆Ｙｏｕ　ｇｕｙｓ　ｃａｎ’ｔ　ｅｎｖｉｓｉｏｎ　ｔｈｅ　ｆｉｎａｌ　ｃｏｌｌａｐｓｅ　ｏｆ　ｃａｐｉｔａｌｉｓｍ？@KEY()↓
-◆Ｉｎｃｒｅｄｉｂｌｅ！
+◆You guys can’t envision the final collapse of capitalism?@KEY()↓
+◆Incredible!
 @KEYNP()
-;jpn:◆えっ　きみたちって↓
-;jpn:　しほんしゅぎの↓
-;jpn:　さいしゅうイメージを@KEY()↓
+;jpn:◆えっ きみたちって↓
+;jpn: しほんしゅぎの↓
+;jpn: さいしゅうイメージを@KEY()↓
 ;jpn:◆そうぞうすることさえも↓
-;jpn:　しないで↓
-;jpn:　いきてるわけ？！@KEYNP()
+;jpn: しないで↓
+;jpn: いきてるわけ?!@KEYNP()
 』
 
 ;@Habitat:サマーズ／クラブストイック／クラブストイック
-;@Person:客Ｄ
-;@Figure:おじさんＤ
+;@Person:客D
+;@Figure:おじさんD
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止まったまま
 ;@GoodsMessage:0
@@ -73,54 +73,54 @@ MSG_SUMS_CLUB_C;
 ;@Message:MSG_SUMS_CLUB_D
 MSG_SUMS_CLUB_D;
 @CHKFGOTO(FLG_SUMS_STOIC_WIFE_DISAPPEAR,_SUMS_CLUB_B_LATER)
-◆Ｙｏｕ　ｋｎｏｗ，　Ｉ　ｒｅａｌｌｙ　ｗａｎｔ　ｔｏ　ｅａｔ　ｓｏｍｅ　Ｍａｇｉｃ　ｃａｋｅ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｍｙｓｔｅｒｉｏｕｓ　ｗｏｒｋ　ｏｆ　ａｒｔ．．．@KEY()↓
-◆Ｉ　ｃａｎ’ｔ　ｇｅｔ　ｔｈａｔ　ｃａｋｅ　ｏｆｆ　ｍｙ　ｍｉｎｄ．@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ｏｎｌｙ　ｏｎｅ　ｗｏｍａｎ　ｗｈｏ　ｃａｎ　ｍａｋｅ　Ｍａｇｉｃ　ｃａｋｅ．．．@KEY()↓
-◆Ｓｈｅ’ｓ　ｈａｎｇｉｎｇ　ｏｕｔ　ｉｎ　ｔｈｉｓ　ｃｌｕｂ．@KEY()↓
-◆Ｙｅａｈ，　ｓｈｅ’ｓ　ｏｖｅｒ　ｔｈｅｒｅ　ａｔ　ｔｈｅ　ｅｎｔｒａｎｃｅ．．．@KEY()↓
-◆Ａｎｙｗａｙ，　ｔｈｅ　ａｂｓｏｌｕｔｅ　ｉｒｏｎｙ　ａｎｄ　ｓｔｕｄｙ　ｏｆ　ｓｅｌｆ−ｉｄｅｎｔｉｆｉｃａｔｉｏｎ　ｉｓ．．．@KEY()↓
-◆Ｂｌａｈ，　ｂｌａｈ，　ｂｌａｈ．．．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈａｔ　ｔｏ　ｄｏ！
+◆You know, I really want to eat some Magic cake.@KEY()↓
+◆It’s a mysterious work of art...@KEY()↓
+◆I can’t get that cake off my mind.@KEY()↓
+◆There’s only one woman who can make Magic cake...@KEY()↓
+◆She’s hanging out in this club.@KEY()↓
+◆Yeah, she’s over there at the entrance...@KEY()↓
+◆Anyway, the absolute irony and study of self−identification is...@KEY()↓
+◆Blah, blah, blah...@KEY()↓
+◆I don’t know what to do!
 @KEYNP()
-;jpn:◆ボクはねぇ@WI(20)　キミ↓
-;jpn:　あの　げんそうてきで　かんびな↓
-;jpn:　げいじゅつひんともいえるところの@KEY()↓
+;jpn:◆ボクはねぇ@WI(20) キミ↓
+;jpn: あの げんそうてきで かんびな↓
+;jpn: げいじゅつひんともいえるところの@KEY()↓
 ;jpn:◆マジックケーキ‥‥を@WI(20)↓
-;jpn:　もういちど　しょくしてみたいと@KEY()↓
+;jpn: もういちど しょくしてみたいと@KEY()↓
 ;jpn:◆こころから↓
-;jpn:　ねがってやまないんだよ。@KEY()↓
+;jpn: ねがってやまないんだよ。@KEY()↓
 ;jpn:◆しかし‥‥@KEY()↓
 ;jpn:◆マジックケーキをつくる↓
-;jpn:　せかいで　ゆいいつともいえる↓
-;jpn:　じょせいがね‥‥@KEY()↓
-;jpn:◆このクラブに　いりびたりで@WI(30)↓
-;jpn:　つくろうと　しないんだよ。@KEY()↓
-;jpn:◆あの　いりぐちのところに↓
-;jpn:　いるんだが‥‥@KEY()↓
-;jpn:◆この　ぜったいむじゅんてき↓
-;jpn:　じこどういつせいというか↓
-;jpn:　‥‥クドクド‥‥@KEY()↓
-;jpn:◆こまっちゃうんだよね　ボク。@KEYNP()
+;jpn: せかいで ゆいいつともいえる↓
+;jpn: じょせいがね‥‥@KEY()↓
+;jpn:◆このクラブに いりびたりで@WI(30)↓
+;jpn: つくろうと しないんだよ。@KEY()↓
+;jpn:◆あの いりぐちのところに↓
+;jpn: いるんだが‥‥@KEY()↓
+;jpn:◆この ぜったいむじゅんてき↓
+;jpn: じこどういつせいというか↓
+;jpn: ‥‥クドクド‥‥@KEY()↓
+;jpn:◆こまっちゃうんだよね ボク。@KEYNP()
 @CHKFGOTO(FLG_PU,MSG_END)
 @SETF(FLG_SUMS_MASSAGE_APPEAR);この人と女房のセリフ替え用。夕焼けはヤメ
 ;@SETF(FLG_SYS_MONSTER_OFF);ワンダリングモンスターを出現させなくする
 』
 _SUMS_CLUB_B_LATER;
-◆Ｔｈｅ　ｗｏｍａｎ　ｗｈｏ　ｓｅｌｌｓ　ｍａｇｉｃ　ｃａｋｅ@KEY()↓
-◆ｓｅｅｍｓ　ｔｏ　ｈａｖｅ　ｂｅｅｎ　ｒｅｍｏｖｅｄ　ｆｒｏｍ　ｔｈｅ　ｍｅｍｂｅｒｓ　ｌｉｓｔ．
+◆The woman who sells magic cake@KEY()↓
+◆seems to have been removed from the members list.
 @KEYNP()
-;jpn:◆マジックケーキうりの　カノジョ↓
-;jpn:　どうやら　ボクらの　メンバーから↓
-;jpn:　はずれたようだね。@KEYNP()
+;jpn:◆マジックケーキうりの カノジョ↓
+;jpn: どうやら ボクらの メンバーから↓
+;jpn: はずれたようだね。@KEYNP()
 』
-;◆カリヨンビーチにはねぇ　キミ↓
-;　なかなかおもしろい↓
-;　マッサージをしてくれる@KEY()↓
-;◆ジルって　じょせいが　いてね‥‥@KEY()↓
-;◆いいゆめを　みせてくれるらしい。↓
-;　いいゆめ‥‥だよ‥‥キミ。↓
-;　すてきじゃないか‥‥ねぇ。@KEYNP()
+;◆カリヨンビーチにはねぇ キミ↓
+; なかなかおもしろい↓
+; マッサージをしてくれる@KEY()↓
+;◆ジルって じょせいが いてね‥‥@KEY()↓
+;◆いいゆめを みせてくれるらしい。↓
+; いいゆめ‥‥だよ‥‥キミ。↓
+; すてきじゃないか‥‥ねぇ。@KEYNP()
 ;@CHKFGOTO(FLG_PU,MSG_END)
 ;@SETF(FLG_SUMS_MASSAGE_APPEAR)
 ;@SETF(FLG_SYS_MONSTER_OFF);ワンダリングモンスターを出現させなくする
@@ -136,28 +136,28 @@ _SUMS_CLUB_B_LATER;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_CLUB_OWNER
 MSG_SUMS_CLUB_OWNER;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｕｎｄｅｒｓｔａｎｄ　ｗｈａｔ　ｔｈｅ　ｈｅｙ　ｅｖｅｒｙｏｎｅ　ｉｓ　ｔａｌｋｉｎｇ　ａｂｏｕｔ，　ｄｏ　ｙｏｕ？@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｅｉｔｈｅｒ，　ｂｕｔ　Ｉ　ｔｒｙ　ｔｏ　ｂｅ　ｐａｔｉｅｎｔ　ｗｉｔｈ　ｔｈｅ　ｃｕｓｔｏｍｅｒｓ．@KEY()↓
-◆Ｔｈｅｙ　ｐａｙ　ｈｉｇｈ　ｐｒｉｃｅｓ　ｊｕｓｔ　ｆｏｒ　ａ　ｇｌａｓｓ　ｏｆ　ｗａｔｅｒ@KEY()↓
-◆ａｎｄ　ｔｈｅ　ｃｈａｎｃｅ　ｔｏ　ｈａｖｅ　ｓｅｒｉｏｕｓ，　ｉｎｔｅｌｌｅｃｔｕａｌ　ｄｉｓｃｕｓｓｉｏｎｓ．@KEY()↓
-◆Ａｃｔｕａｌｌｙ，　ｉｔ’ｓ　ａｎ　ｅａｓｙ　ｂｕｓｉｎｅｓｓ．@KEY()↓
-◆Ｙｏｕ　ｗａｎｔ　ａ　ｄｒｉｎｋ？@KEY()↓
-◆Ｗｅ　ｏｎｌｙ　ｓｅｒｖｅ　ｗａｔｅｒ，　ｔｈｏｕｇｈ．．．
+◆You don’t understand what the hey everyone is talking about, do you?@KEY()↓
+◆I don’t either, but I try to be patient with the customers.@KEY()↓
+◆They pay high prices just for a glass of water@KEY()↓
+◆and the chance to have serious, intellectual discussions.@KEY()↓
+◆Actually, it’s an easy business.@KEY()↓
+◆You want a drink?@KEY()↓
+◆We only serve water, though...
 @KEYNP()
-;jpn:◆きゃくたちが　なにいってるのか↓
-;jpn:　わかんないだろ。@WI(20)↓
-;jpn:　がまんしてるんだ　おれも。@KEY()↓
+;jpn:◆きゃくたちが なにいってるのか↓
+;jpn: わかんないだろ。@WI(20)↓
+;jpn: がまんしてるんだ おれも。@KEY()↓
 ;jpn:◆たかいかねはらって↓
-;jpn:　みずだけのんで　ペチャクチャと↓
-;jpn:　こむずかしいこと　しゃべってさ。@KEY()↓
-;jpn:◆でも　いいしょうばいだよ。@WI(20)↓
-;jpn:　あんたも　なにか？@WI(10)↓
-;jpn:　メニューは　みずだけだけど‥‥。@KEYNP()
+;jpn: みずだけのんで ペチャクチャと↓
+;jpn: こむずかしいこと しゃべってさ。@KEY()↓
+;jpn:◆でも いいしょうばいだよ。@WI(20)↓
+;jpn: あんたも なにか?@WI(10)↓
+;jpn: メニューは みずだけだけど‥‥。@KEYNP()
 』
 
 ;@Habitat:サマーズ／クラブストイック／クラブストイック
-;@Person:ウェイトレス（ジョシー）
-;@Figure:ウェートレスＢ
+;@Person:ウェイトレス(ジョシー)
+;@Figure:ウェートレスB
 ;@AppearanceKey:0
 ;@ActionScript:◆中範囲うろつき
 ;@GoodsMessage:0
@@ -167,13 +167,13 @@ MSG_SUMS_CLUB_WAITRESS;
 ;クラブストイックは、
 ;表の看板に
 ;「水あります」と記されている
-◆Ｔｈｅ　ｓｈｏｗ？@KEY()↓
-◆Ｉｔ’ｓ　ａｌｒｅａｄｙ　ｓｔａｒｔｅｄ．@KEY()↓
-◆Ｅｖｅｒｙｏｎｅ　ｓｔａｒｅｓ　ａｔ　ｔｈｅ　ｓｔｏｎｅ　ｏｎ　ｓｔａｇｅ　ａｎｄ　ｐｈｉｌｏｓｏｐｈｉｚｅｓ．@KEY()↓
-◆．．．Ｄｏｅｓｎ’ｔ　ｉｔ　ｓｏｕｎｄ　ｓｔｕｐｉｄ？
-;jpn:◆ショー？@WI(20)　もうはじまってるわよ。↓
-;jpn:　ステージのいしを　みつめて↓
-;jpn:　いろいろてつがくするのよ。@KEY()↓
+◆The show?@KEY()↓
+◆It’s already started.@KEY()↓
+◆Everyone stares at the stone on stage and philosophizes.@KEY()↓
+◆...Doesn’t it sound stupid?
+;jpn:◆ショー?@WI(20) もうはじまってるわよ。↓
+;jpn: ステージのいしを みつめて↓
+;jpn: いろいろてつがくするのよ。@KEY()↓
 ;jpn:◆‥‥バカらしいでしょ。
 @CHKFGOTO(FLG_PU,_SUMS_CLUB_WAITRESS_PU)
 @KEYNP()
@@ -181,16 +181,16 @@ MSG_SUMS_CLUB_WAITRESS;
 
 _SUMS_CLUB_WAITRESS_PU;
 @KEY()↓
-◆Ｉｆ　ｙｏｕ　ｊｕｓｔ　ｗａｎｔ　ｗａｔｅｒ，　ｇｏ　ｔｏ　ｔｈｅ　ｄｒｕｇ　ｓｔｏｒｅ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｌｏｔ　ｃｈｅａｐｅｒ　ｔｈｅｒｅ．
+◆If you just want water, go to the drug store.@KEY()↓
+◆It’s a lot cheaper there.
 @KEYNP()
-;jpn:◆みずだけ　ほんとに　ほしいなら↓
-;jpn:　ドラッグストアで↓
-;jpn:　やすく　うってるわよ。@KEYNP()
+;jpn:◆みずだけ ほんとに ほしいなら↓
+;jpn: ドラッグストアで↓
+;jpn: やすく うってるわよ。@KEYNP()
 』
 
 ；----------------------------------------
-;@Habitat:サマーズ／トトの住宅Ａ／トトの住宅Ａ
+;@Habitat:サマーズ／トトの住宅A／トトの住宅A
 ;@Person:住人
 ;@Figure:スペイン人
 ;@AppearanceKey:0
@@ -199,18 +199,18 @@ _SUMS_CLUB_WAITRESS_PU;
 ;@CheckMessage:0
 ;@Message:MSG_TOTO_HOUSE_A
 MSG_TOTO_HOUSE_A;
-◆Ａｃｒｏｓｓ　ｔｈｅ　ｓｅａ，　ｔｈｅｒｅ’ｓ　ａ　ｔｏｗｎ　ｃａｌｌｅｄ　Ｓｃａｒａｂａ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｍｙｓｔｅｒｉｏｕｓ　ｔｏｗｎ．@KEY()↓
-◆Ｉｔ’ｓ　ｍｙ　ｄｒｅａｍ　ｔｏｗｎ．
+◆Across the sea, there’s a town called Scaraba.@KEY()↓
+◆It’s a mysterious town.@KEY()↓
+◆It’s my dream town.
 @KEYNP()
 ;jpn:◆うみのかなたには↓
-;jpn:　スカラビという　まちがある。@WI(20)↓
-;jpn:　しんぴのまち。あこがれのまち。@KEYNP()
+;jpn: スカラビという まちがある。@WI(20)↓
+;jpn: しんぴのまち。あこがれのまち。@KEYNP()
 』
 
 ；----------------------------------------
-;@Habitat:サマーズ／トトの住宅Ｃ／トトの住宅Ｃ
-;@Person:街の人Ｂ
+;@Habitat:サマーズ／トトの住宅C／トトの住宅C
+;@Person:街の人B
 ;@Figure:スペイン人
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -218,21 +218,21 @@ MSG_TOTO_HOUSE_A;
 ;@CheckMessage:0
 ;@Message:MSG_TOTO_B
 MSG_TOTO_B;
-◆Ｉ’ｍ　ａ　ｇｒａｖｅ　ｒｏｂｂｅｒ．@KEY()↓
-◆Ｉ　ｗａｓ　ｓｃａｒｅｄ　ｏｆ　ｔｈｅ　ｐｙｒａｍｉｄ　ｉｎ　Ｓｃａｒａｂａ．．．@KEY()↓
-◆ｓｏ，　Ｉ　ｄｉｄｎ’ｔ　ｇｏ　ｉｎ．．．@KEY()↓
-◆ｂｕｔ　Ｉ　ｔｅｌｌ　ｐｅｏｐｌｅ　ｔｈａｔ　Ｉ　ｓａｗ　ｍｕｍｍｙ−ｔｙｐｅ　ｍｏｎｓｔｅｒｓ　ｗｉｔｈ　ｍｙ　ｖｅｒｙ　ｏｗｎ　ｅｙｅｓ！
+◆I’m a grave robber.@KEY()↓
+◆I was scared of the pyramid in Scaraba...@KEY()↓
+◆so, I didn’t go in...@KEY()↓
+◆but I tell people that I saw mummy−type monsters with my very own eyes!
 @KEYNP()
-;jpn:◆わたしは　はかドロボーなんだわ。@WI(20)↓
-;jpn:　スカラビのピラミッドは↓
-;jpn:　あんまりこわくて‥‥@KEY()↓
+;jpn:◆わたしは はかドロボーなんだわ。@WI(20)↓
+;jpn: スカラビのピラミッドは↓
+;jpn: あんまりこわくて‥‥@KEY()↓
 ;jpn:◆はいれなかったんだわ。↓
-;jpn:　だけどね　ミイラのばけもんとか↓
-;jpn:　このめでみたのは　じまんでしょ。@KEYNP()
+;jpn: だけどね ミイラのばけもんとか↓
+;jpn: このめでみたのは じまんでしょ。@KEYNP()
 』
 
 ；----------------------------------------
-;@Habitat:サマーズ／トトの住宅Ｄ／トトの住宅Ｄ
+;@Habitat:サマーズ／トトの住宅D／トトの住宅D
 ;@Person:住人
 ;@Figure:レゲエ
 ;@AppearanceKey:0
@@ -242,37 +242,37 @@ MSG_TOTO_B;
 ;@Message:MSG_TOTO_D
 MSG_TOTO_D;＃
 @CHKFGOTO(FLG_SUMS_STOIC_WIFE_DISAPPEAR,_TOTO_D_LATER)
-◆Ｄｏ　ｙｏｕ　ｋｎｏｗ　ｔｈｅ　Ｓｔｏｉｃ　Ｃｌｕｂ，　ｉｎ　Ｓｕｍｍｅｒｓ？@KEY()↓
-◆Ｙｏｕ　ｎｅｅｄ　ｔｏ　ｃａｌｌ　ａ　ｓｅｃｒｅｔ　ｎｕｍｂｅｒ　ｆｏｒ　ａ　ｒｅｓｅｒｖａｔｉｏｎ　ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｉｎ．@KEY()↓
-◆Ｗｈａｔ？@KEY()↓
-◆Ｙｅａｈ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ｔｈｅ　ｓｅｃｒｅｔ　ｎｕｍｂｅｒ．@KEY()↓
-◆Ｉ　ｗａｒｎ　ｙｏｕ　ｔｈｏｕｇｈ，　ｉｔ’ｓ　ａ　ｓｔｒａｎｇｅ　ｐｌａｃｅ．．．
+◆Do you know the Stoic Club, in Summers?@KEY()↓
+◆You need to call a secret number for a reservation if you want to get in.@KEY()↓
+◆What?@KEY()↓
+◆Yeah, I’ll give you the secret number.@KEY()↓
+◆I warn you though, it’s a strange place...
 @KEYNP()
 ;jpn:◆サマーズのまちの↓
-;jpn:　ストイッククラブってあるだろ。@WI(20)↓
-;jpn:　あそこって@KEY()↓
-;jpn:◆ひみつの　でんわで↓
-;jpn:　よやくしないと　はいれないんだ。@WI(20)↓
-;jpn:　え　おれ？@KEY()↓
-;jpn:◆おれは　しってるよ。↓
-;jpn:　でんわばんごうくらい↓
-;jpn:　おしえてやるさ。@KEY()↓
+;jpn: ストイッククラブってあるだろ。@WI(20)↓
+;jpn: あそこって@KEY()↓
+;jpn:◆ひみつの でんわで↓
+;jpn: よやくしないと はいれないんだ。@WI(20)↓
+;jpn: え おれ?@KEY()↓
+;jpn:◆おれは しってるよ。↓
+;jpn: でんわばんごうくらい↓
+;jpn: おしえてやるさ。@KEY()↓
 ;jpn:◆へんなみせだけどな。@KEYNP()
 @SE(SE_se74_my_get)
 @SETF(FLG_SYS_PHONE_STOIC)
 @FUNC(5)			;毒死配達禁止
 』
 _TOTO_D_LATER;＆
-◆Ｉ　ｔｈｉｎｋ　ｔｈｉｓ　ｉｓ　ａ　ｎｉｃｅ　ｔｏｗｎ．@KEY()↓
-◆Ｃｏｍｅ　ｂａｃｋ　ｗｈｅｎ　ｙｏｕ　ｇｒｏｗ　ｕｐ！
+◆I think this is a nice town.@KEY()↓
+◆Come back when you grow up!
 @KEYNP()
-;jpn:◆おれは　このまちが　すきだなぁ@WI(30)↓
-;jpn:　おとなになったら　また↓
-;jpn:　このまちに　こいよ　な。@KEYNP()
+;jpn:◆おれは このまちが すきだなぁ@WI(30)↓
+;jpn: おとなになったら また↓
+;jpn: このまちに こいよ な。@KEYNP()
 』
 
 ;----------------------------------------
-;@Habitat:サマーズ／トトの住宅Ｇ／トトの住宅Ｇ
+;@Habitat:サマーズ／トトの住宅G／トトの住宅G
 ;@Person:住人
 ;@Figure:トランペッター
 ;@AppearanceKey:0
@@ -281,16 +281,16 @@ _TOTO_D_LATER;＆
 ;@CheckMessage:0
 ;@Message:MSG_TOTO_HOUSE_G
 MSG_TOTO_HOUSE_G;
-◆Ｉｆ　ｙｏｕ　ｃｏｍｅ　ｃｌｏｓｅｒ，　Ｉ’ｌｌ　ｐｌａｙ　ｔｈｅ　ｔｒｕｍｐｅｔ！@KEY()↓
-◆．．．．．@KEY()↓
-◆Ｕｈｈｈ，　Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｈｏｗ　ｔｏ　ｐｌａｙ　ｙｅｔ．
+◆If you come closer, I’ll play the trumpet!@KEY()↓
+◆.....@KEY()↓
+◆Uhhh, I don’t know how to play yet.
 @KEYNP()
-;jpn:◆ちかよると　ふくぞ！@WI(20)↓
-;jpn:　‥‥‥↓
-;jpn:　まだ　ふけないんだけどさ。@KEYNP()
+;jpn:◆ちかよると ふくぞ!@WI(20)↓
+;jpn: ‥‥‥↓
+;jpn: まだ ふけないんだけどさ。@KEYNP()
 』
 
-;@Habitat:サマーズ／トトの住宅Ｇ／トトの住宅Ｇ
+;@Habitat:サマーズ／トトの住宅G／トトの住宅G
 ;@Person:ペット
 ;@Figure:チリドッグ
 ;@AppearanceKey:0
@@ -299,14 +299,14 @@ MSG_TOTO_HOUSE_G;
 ;@CheckMessage:0
 ;@Message:MSG_TOTO_HOUSE_GDOG
 MSG_TOTO_HOUSE_GDOG;
-◆Ｂｏｗ．．．@KEY()↓
-◆．．．ｎｏｗ　ｂｒｏｗｎ　ｃｏｗ？
+◆Bow...@KEY()↓
+◆...now brown cow?
 @KEYNP()
 ;jpn:◆ウーーー‥‥@KEY()↓
-;jpn:◆マンボ！@KEYNP()
+;jpn:◆マンボ!@KEYNP()
 』
-;◆ハズレ！@WI(20)↓
-;　（このイヌは　しゃべらない）@KEYNP()
+;◆ハズレ!@WI(20)↓
+; (このイヌは しゃべらない)@KEYNP()
 ;』
 
 ;----------------------------------------
@@ -336,25 +336,25 @@ MSG_SUMS_DRUGSTORE;@MiuraAppended
 』
 
 ;@Habitat:サマーズ／ドラッグストア／ドラッグストア
-;@Person:客Ａ
-;@Figure:Ｔシャツ
+;@Person:客A
+;@Figure:Tシャツ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SOUVENIR_A
 MSG_SUMS_SOUVENIR_A;
-;サマーズのお土産屋客Ａ
-◆Ｔｈｅｒｅ’ｓ　ａ　ｂｉｇ　ｍｏｎｓｔｅｒ　ｌｉｖｉｎｇ　ｉｎ　ｔｈｅ　ｓｅａ　ｂｅｔｗｅｅｎ　ｈｅｒｅ　ａｎｄ　Ｓｃａｒａｂａ．@KEY()↓
-◆Ｉ’ｖｅ　ｓｅｅｎ　ａ　ｐｉｃｔｕｒｅ　ｏｆ　ｉｔ．
+;サマーズのお土産屋客A
+◆There’s a big monster living in the sea between here and Scaraba.@KEY()↓
+◆I’ve seen a picture of it.
 @KEYNP()
-;jpn:◆スカラビにわたる　うみには↓
-;jpn:　どえらいバケモノが　いるのよね。@WI(15)↓
-;jpn:　しゃしんでみたことあるのよね。@KEYNP()
+;jpn:◆スカラビにわたる うみには↓
+;jpn: どえらいバケモノが いるのよね。@WI(15)↓
+;jpn: しゃしんでみたことあるのよね。@KEYNP()
 』
 
 ;@Habitat:サマーズ／ドラッグストア／ドラッグストア
-;@Person:客Ｂ
+;@Person:客B
 ;@Figure:アーティスト
 ;@AppearanceKey:0
 ;@ActionScript:◆足踏み＆方向転換
@@ -362,43 +362,43 @@ MSG_SUMS_SOUVENIR_A;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SOUVENIR_B
 MSG_SUMS_SOUVENIR_B;
-;サマーズのお土産屋客Ｂ
+;サマーズのお土産屋客B
 @CHKFGOTO(FLG_PU,_SUMS_SOUVENIR_B_TMP)
 _SUMS_SOUVENIR_B_MAIN;
-◆Ｈｏｗ　ａｎｎｏｙｉｎｇ！@KEY()↓
-◆Ｗｈｙ　ａｒｅ　ｙｏｕ　ａｒｅ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ？@KEY()↓
-◆Ｓｕｍｍｅｒｓ　ｉｓ　ａ　ｐｏｓｈ　ｒｅｓｏｒｔ，　ｍａｄｅ　ｆｏｒ　ａｄｕｌｔｓ．
+◆How annoying!@KEY()↓
+◆Why are you are wandering around?@KEY()↓
+◆Summers is a posh resort, made for adults.
 @KEYNP()
-;jpn:◆なんだか　こどもが↓
-;jpn:　うろうろしてて↓
-;jpn:　じゃまねぇ。@KEY()↓
-;jpn:◆サマーズは　おとなのための↓
-;jpn:　こうきゅうリゾートち　なのに。@KEYNP()
+;jpn:◆なんだか こどもが↓
+;jpn: うろうろしてて↓
+;jpn: じゃまねぇ。@KEY()↓
+;jpn:◆サマーズは おとなのための↓
+;jpn: こうきゅうリゾートち なのに。@KEYNP()
 』
 _SUMS_SOUVENIR_B_TMP;
 @CHKFGOTO(FLG_WIN_GIEGU,_SUMS_SOUVENIR_B_MAIN);プーと別れていたら
-@SET_LOOPREG(PC_POO)			;プーのＩＤを主レジに格納
+@SET_LOOPREG(PC_POO)			;プーのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_SUMS_SOUVENIR_B_MAIN)
-◆Ｔｈａｔ　Ｋｕｎｇ　Ｆｕ−ｌｉｋｅ　ｈａｉｒｓｔｙｌｅ！@KEY()↓
-◆Ｙｏｕ　ｌｏｏｋ　ｓｏ　ｃｏｏｌ！@KEY()↓
-◆Ｉ　ｍａｙ　ｆａｌｌ　ｉｎ　ｌｏｖｅ　ｗｉｔｈ　ｙｏｕ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｔｈｉｎｋ　Ｉ’ｍ　ｔｏｏ　ｆｏｒｗａｒｄ？
+◆That Kung Fu−like hairstyle!@KEY()↓
+◆You look so cool!@KEY()↓
+◆I may fall in love with you.@KEY()↓
+◆Do you think I’m too forward?
 @KEYNP()
-;jpn:◆そちらの　べんぱつのかた↓
-;jpn:　なんだか　すっごくステキ！@KEY()↓
-;jpn:◆すきに　なっちゃいそう。@WI(20)↓
-;jpn:　わたしったら↓
-;jpn:　いけない　おんなかしら。@KEYNP()
+;jpn:◆そちらの べんぱつのかた↓
+;jpn: なんだか すっごくステキ!@KEY()↓
+;jpn:◆すきに なっちゃいそう。@WI(20)↓
+;jpn: わたしったら↓
+;jpn: いけない おんなかしら。@KEYNP()
 』
-;◆ちかごろ　かたがこって‥‥。↓
-;　うでのいいマッサージしが↓
-;　いたんだけど　みつからなくて。@KEYNP()
+;◆ちかごろ かたがこって‥‥。↓
+; うでのいいマッサージしが↓
+; いたんだけど みつからなくて。@KEYNP()
 ;』
 
 ；----------------------------------------
 ;@Habitat:サマーズ／ホテル／廊下ロビー
-;@Person:客Ａ
+;@Person:客A
 ;@Figure:ジミな男
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -406,36 +406,36 @@ _SUMS_SOUVENIR_B_TMP;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_HOTEL_A
 MSG_SUMS_HOTEL_A;
-◆Ｄｏｎ’ｔ　ｇｅｔ　ｔｏｏ　ｅｘｃｉｔｅｄ　ａｂｏｕｔ　ｔｈｉｓ　ｔｏｗｎ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｔｏｕｒｉｓｔ　ｔｒａｐ．@KEY()↓
-◆Ｅｖｅｒｙｏｎｅ　ｓｅｅｍｓ　ｔｏ　ｂｅ　ｎｉｃｅ，　ｂｕｔ　ｔｈｅｙ’ｒｅ　ｊｕｓｔ　ｄｏｉｎｇ　ｉｔ　ｆｏｒ　ｔｈｅ　ｍｏｎｅｙ．@KEY()↓
-◆Ｉ　ｋｎｏｗ　ｆｒｏｍ　ｅｘｐｅｒｉｅｎｃｅ．
+◆Don’t get too excited about this town.@KEY()↓
+◆It’s a tourist trap.@KEY()↓
+◆Everyone seems to be nice, but they’re just doing it for the money.@KEY()↓
+◆I know from experience.
 @KEYNP()
-;jpn:◆このまちで　うかれていては↓
-;jpn:　いけません。↓
-;jpn:　ここは　かんこうち　なんです。@KEY()↓
-;jpn:◆みんな　しんせつぶってるけど↓
-;jpn:　しょうばいで　しんせつに↓
-;jpn:　してるんですよ。　きっと。@KEYNP()
+;jpn:◆このまちで うかれていては↓
+;jpn: いけません。↓
+;jpn: ここは かんこうち なんです。@KEY()↓
+;jpn:◆みんな しんせつぶってるけど↓
+;jpn: しょうばいで しんせつに↓
+;jpn: してるんですよ。 きっと。@KEYNP()
 』
 
 ;@Habitat:サマーズ／ホテル／廊下ロビー
-;@Person:客Ｂ
-;@Figure:ＯＬＣ
+;@Person:客B
+;@Figure:OLC
 ;@AppearanceKey:0
 ;@ActionScript:◆中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_HOTEL_B
 MSG_SUMS_HOTEL_B;
-◆Ｅｘｃｕｓｅ　ｍｅ．
-;jpn:◆エクスキューズ　ミー。
+◆Excuse me.
+;jpn:◆エクスキューズ ミー。
 @KEYNP()
 』
 
 ;@Habitat:サマーズ／ホテル／廊下ロビー
-;@Person:客Ｃ
-;@Figure:おばさんＢ
+;@Person:客C
+;@Figure:おばさんB
 ;@AppearanceKey:0
 ;@ActionScript:◆中範囲うろつき
 ;@GoodsMessage:0
@@ -443,56 +443,56 @@ MSG_SUMS_HOTEL_B;
 ;@Message:MSG_SUMS_HOTEL_C
 MSG_SUMS_HOTEL_C;＃
 @CHKFGOTO(FLG_ITEM_HIEROGLYPH,_SUMS_HOTEL_C_END)
-◆Ｉ　ｈｅａｒｄ　ｔｈｅ　ｓｅｃｕｒｉｔｙ　ｇｕａｒｄ　ｉｎ　ｔｈｅ　Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ　ｉｓｎ’ｔ　ｖｅｒｙ　ｎｉｃｅ．@KEY()↓
-◆Ｂｕｔ　ｈｅ　ｃａｎ　ｂｅ　ｈｅｌｐｆｕｌ．
+◆I heard the security guard in the Scaraba Cultural Museum isn’t very nice.@KEY()↓
+◆But he can be helpful.
 @KEYNP()
 ;jpn:◆「スカラビぶんかはくぶつかん」↓
-;jpn:　にいる　ガードマンって‥‥@KEY()↓
-;jpn:◆あんまり　たちが↓
-;jpn:　よくないって　はなしだけど@WI(20)↓
-;jpn:　りようできるおとこ　らしいわ。@KEYNP()
+;jpn: にいる ガードマンって‥‥@KEY()↓
+;jpn:◆あんまり たちが↓
+;jpn: よくないって はなしだけど@WI(20)↓
+;jpn: りようできるおとこ らしいわ。@KEYNP()
 』
 _SUMS_HOTEL_C_END;＆
-◆Ｆｏｒｇｅｔ　ａｂｏｕｔ　ｔｈｅ　ａｄｖｅｎｔｕｒｅ，@KEY()↓
-◆Ｃｏｍｅ　ｂａｃｋ　ａｇａｉｎ！
+◆Forget about the adventure,@KEY()↓
+◆Come back again!
 @KEYNP()
 ;jpn:◆いつかまた↓
-;jpn:　ぼうけんなんか　わすれて↓
-;jpn:　あそびにきてね。@KEYNP()
+;jpn: ぼうけんなんか わすれて↓
+;jpn: あそびにきてね。@KEYNP()
 』
 
 
-;◆ビーチにいた　マッサージさん↓
-;　すっごく　じょうずだったわ。↓
-;　ゆめごこちよ。@KEYNP()
+;◆ビーチにいた マッサージさん↓
+; すっごく じょうずだったわ。↓
+; ゆめごこちよ。@KEYNP()
 』
 
 
 ;■サマーズホテル西の部屋■■■■■■■■■■■■■■■■■■■■■■■■■
 ;added 0717 toda -> ueno
 MSG_SUMS_HOTEL_D
-◆Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　ｙｏｕ　ｐｒｏｎｏｕｎｃｅ　Ｈｏｔｅｌ　ａｓ　”Ｈｏｔｅｌ．”@KEY()↓
-◆Ｉｎ　ｔｈｉｓ　ｃｏｕｎｔｒｙ，　Ｈｏｔｅｌ　ｉｓ　ｐｒｏｎｏｕｎｃｅｄ　”ｏｔｅｌ．”@KEY()↓
-◆．．．Ｗｈａｔ？@KEY()↓
-◆Ｓｏ　ｔｈｅｎ　ｉｎ　ｙｏｕｒ　ｃｏｕｎｔｒｙ，　ｉｓ　ｏｔｔｅｒ　ｐｒｏｎｏｕｎｃｅｄ　ａｓ　”Ｈｏｔｔｅｒ”？@KEY()↓
-◆’Ｏｗ　ｓｈｏｕｌｄ　Ｉ　ｋｎｏｗ　ｔｈｅｓｅ　ｔｈｉｎｇｓ？．
+◆I can’t believe you pronounce Hotel as ”Hotel.”@KEY()↓
+◆In this country, Hotel is pronounced ”otel.”@KEY()↓
+◆...What?@KEY()↓
+◆So then in your country, is otter pronounced as ”Hotter”?@KEY()↓
+◆’Ow should I know these things?.
 @KEYNP()
-;jpn:◆ホテルを　ホテルと↓
-;jpn:　はつおんしてるようじゃ↓
-;jpn:　おさとが　しれるね。@KEY()↓
+;jpn:◆ホテルを ホテルと↓
+;jpn: はつおんしてるようじゃ↓
+;jpn: おさとが しれるね。@KEY()↓
 ;jpn:◆このくにでは↓
-;jpn:　ホテルは　オテルなのさ。@KEY()↓
-;jpn:◆‥‥え？↓
-;jpn:　じゃ　ホタルはオタルかって？@KEY()↓
+;jpn: ホテルは オテルなのさ。@KEY()↓
+;jpn:◆‥‥え?↓
+;jpn: じゃ ホタルはオタルかって?@KEY()↓
 ;jpn:◆そんなことは↓
-;jpn:　シラーヌ・ド・ゾンゼーヌ。@KEYNP()
+;jpn: シラーヌ・ド・ゾンゼーヌ。@KEYNP()
 』
 
 
 
 ;@Habitat:サマーズ／ホテル／受付
 ;@Person:フロントマン
-;@Figure:おじさんＢ
+;@Figure:おじさんB
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止まったまま
 ;@GoodsMessage:0
@@ -512,19 +512,19 @@ MSG_SUMS_HOTEL_DESK;@MiuraAppended
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_HOTELPORTER
 MSG_SUMS_HOTELPORTER;
-;jpn:◆いつも　どうも　ポーキ‥‥@WI(20)↓
+;jpn:◆いつも どうも ポーキ‥‥@WI(20)↓
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆Ｔｈａｎｋ　ｙｏｕ　ａｇａｉｎ，　Ｐｏｋｅ．．．@KEY()↓
-◆Ｕｈｈｈ，　Ｍｒ．　@DSP_NAME(0)．
+◆Thank you again, Poke...@KEY()↓
+◆Uhhh, Mr. @DSP_NAME(0).
 @KEYNP()
-;＠ポーラだったら変える「Ｍｉｓｓ」
-;jpn:　いえ　@WI(20)@DSP_NAME(0)さま。@KEYNP()
+;＠ポーラだったら変える「Miss」
+;jpn: いえ @WI(20)@DSP_NAME(0)さま。@KEYNP()
 』
 
 ;@Habitat:サマーズ／ホテル／キャッシュディスペンサ
 ;@Person:キャッシュディスペンサ
-;@Figure:ＣＤ
+;@Figure:CD
 ;@AppearanceKey:0
 ;@ActionScript:◆固定
 ;@GoodsMessage:MSG_GLOBAL_CD_RECEIVE
@@ -549,83 +549,83 @@ MSG_SUMS_DINER;
 
 ;@Habitat:サマーズ／レストラン／レストラン
 ;@Person:ウェートレス
-;@Figure:ウェートレスＢ
+;@Figure:ウェートレスB
 ;@AppearanceKey:0
 ;@ActionScript:◆中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_RESTAURANT_WAITRESS
 MSG_SUMS_RESTAURANT_WAITRESS;
-◆@DSP_STS(STS_PARTY_FAVORITE_FOODS)？@KEY()↓
-◆Ｐｌｅａｓｅ．．．ｗｅ　ｄｏ　ｎｏｔ　ｈａｖｅ　ｓｕｃｈ　ｔｒａｓｈ　ｏｎ　ｏｕｒ　ｍｅｎｕ．
+◆@DSP_STS(STS_PARTY_FAVORITE_FOODS)?@KEY()↓
+◆Please...we do not have such trash on our menu.
 @KEYNP()
-;◆@DSP_STS(STS_PARTY_FAVORITE_FOODS)？@WI(20)↓
-;jpn:　うちのメニューには　ないわ。@KEYNP()
+;◆@DSP_STS(STS_PARTY_FAVORITE_FOODS)?@WI(20)↓
+;jpn: うちのメニューには ないわ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／レストラン／レストラン
-;@Person:客Ａ
-;@Figure:おじさんＢ
+;@Person:客A
+;@Figure:おじさんB
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_RESTAURANT_A
 MSG_SUMS_RESTAURANT_A;
-◆Ｈｅｙ，　ｔａｌｋｉｎｇ　ｔｏ　ｐｅｏｐｌｅ　ａｔ　ａｎｏｔｈｅｒ　ｔａｂｌｅ　ｉｎ　ａ　ｒｅｓｔａｕｒａｎｔ　ｉｓ　ｌｉｋｅ．．．@KEY()↓
-◆ｂｒｅａｋｉｎｇ　ｉｎｔｏ　ｔｈｅｉｒ　ｒｏｏｍ　ａｎｄ　ｃｈｅｃｋｉｎｇ　ｔｈｅｉｒ　ｄｒａｗｅｒｓ　ｆｏｒ　ｖａｌｕａｂｌｅｓ．@KEY()↓
-◆Ｙｅａｈ，　ｏｔｈｅｒ　ｐｅｏｐｌｅ　ｏｎ　ｉｍｐｏｒｔａｎｔ　ａｄｖｅｎｔｕｒｅｓ　ｄｏ　ｓｕｃｈ　ｔｈｉｎｇｓ，@KEY()↓
-◆ｂｕｔ　ｙｏｕ　ｈａｖｅ　ｔｏ　ａｄｍｉｔ　ｔｈａｔ　ｉｔ’ｓ　ｂｉｚａｒｒｅ！
+◆Hey, talking to people at another table in a restaurant is like...@KEY()↓
+◆breaking into their room and checking their drawers for valuables.@KEY()↓
+◆Yeah, other people on important adventures do such things,@KEY()↓
+◆but you have to admit that it’s bizarre!
 @KEYNP()
-;jpn:◆きみ　レストランの↓
-;jpn:　べつのテーブルのきゃくに↓
-;jpn:　やたらに　はなしかけることは‥‥@KEY()↓
-;jpn:◆こんやくしゃの　へやに　はいって↓
-;jpn:　ものもいわずに↓
-;jpn:　タンスのひきだしを　しらべて‥‥@KEY()↓
-;jpn:◆ちいさなメダルを　さがすような↓
-;jpn:　いじょうな　こういだよ。@WI(20)↓
-;jpn:　ま‥‥@KEY()↓
+;jpn:◆きみ レストランの↓
+;jpn: べつのテーブルのきゃくに↓
+;jpn: やたらに はなしかけることは‥‥@KEY()↓
+;jpn:◆こんやくしゃの へやに はいって↓
+;jpn: ものもいわずに↓
+;jpn: タンスのひきだしを しらべて‥‥@KEY()↓
+;jpn:◆ちいさなメダルを さがすような↓
+;jpn: いじょうな こういだよ。@WI(20)↓
+;jpn: ま‥‥@KEY()↓
 ;jpn:◆じじょうがあるなら↓
-;jpn:　しかたがないけど　ね。@KEYNP()
+;jpn: しかたがないけど ね。@KEYNP()
 』
 
 ;@Habitat:サマーズ／レストラン／レストラン
-;@Person:客Ｂ
-;@Figure:おばさんＡ
+;@Person:客B
+;@Figure:おばさんA
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_RESTAURANT_B
 MSG_SUMS_RESTAURANT_B;
-◆Ｉ　ｌｉｋｅ　ｔｈｅ　ａｔｍｏｓｐｈｅｒｅ　ｉｎ　ｔｈｉｓ　ｒｅｓｔａｕｒａｎｔ．@KEY()↓
-◆Ｔｈｅｙ　ｈａｖｅ　ｇｏｏｄ　ｆｏｏｄ，　ｔｏｏ．
+◆I like the atmosphere in this restaurant.@KEY()↓
+◆They have good food, too.
 @KEYNP()
 ;jpn:◆このみせって↓
-;jpn:　ふんいきもいいけど↓
-;jpn:　おりょうりが　すばらしいわ。@KEYNP()
+;jpn: ふんいきもいいけど↓
+;jpn: おりょうりが すばらしいわ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／レストラン／レストラン
-;@Person:客Ｃ
-;@Figure:おじさんＤ
+;@Person:客C
+;@Figure:おじさんD
 ;@AppearanceKey:0
 ;@ActionScript:◆背面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_RESTAURANT_C
 MSG_SUMS_RESTAURANT_C;
-◆Ｉ’ｌｌ　ｈａｖｅ　ｔｈｅ　Ｂｒａｉｓｅｄ　Ｂｏａ　Ｏｖｅｒ　Ｍｉｎｃｅｄ　Ｂａｂｙ　Ｌｅｅｋｓ．．．@KEY()↓
-◆Ｏｈ，　ｙｏｕ’ｒｅ　ｎｏｔ　ｔｈｅ　ｗａｉｔｅｒ．
+◆I’ll have the Braised Boa Over Minced Baby Leeks...@KEY()↓
+◆Oh, you’re not the waiter.
 @KEYNP()
 ;jpn:◆チャバネヘビの↓
-;jpn:　おにがらやきを　くれ。↓
-;jpn:　おっと　みせのひとじゃないのか。@KEYNP()
+;jpn: おにがらやきを くれ。↓
+;jpn: おっと みせのひとじゃないのか。@KEYNP()
 』
 
 ;@Habitat:サマーズ／レストラン／レストラン
-;@Person:客Ｄ
+;@Person:客D
 ;@Figure:おばあさん
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -633,20 +633,20 @@ MSG_SUMS_RESTAURANT_C;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_RESTAURANT_D
 MSG_SUMS_RESTAURANT_D;
-◆Ｉ　ｈａｖｅ　ｆａｋｅ　ｔｅｅｔｈ，@KEY()↓
-◆ｓｏ　Ｉ　ｌｉｋｅ　ｓｏｆｔ　ｆｏｏｄｓ．@KEY()↓
-◆Ｎｏｔ　ｌｉｋｅ　ｒｏｃｋｓ　ｏｒ　ｓｔｏｎｅｓ．@KEY()↓
-◆Ｔｈｅｙ’ｒｅ　ｔｏｏ　ｈａｒｄ．
+◆I have fake teeth,@KEY()↓
+◆so I like soft foods.@KEY()↓
+◆Not like rocks or stones.@KEY()↓
+◆They’re too hard.
 @KEYNP()
-;jpn:◆わたしは　いればなので↓
-;jpn:　やわらかいものが　すきなの。@WI(20)↓
-;jpn:　いわとか　いしは　かたくって。@KEYNP()
+;jpn:◆わたしは いればなので↓
+;jpn: やわらかいものが すきなの。@WI(20)↓
+;jpn: いわとか いしは かたくって。@KEYNP()
 』
 
 ；----------------------------------------
 ;@Habitat:サマーズ／博物館／受付
 ;@Person:受付嬢(オードリー)
-;@Figure:ＯＬＧ
+;@Figure:OLG
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
@@ -654,35 +654,35 @@ MSG_SUMS_RESTAURANT_D;
 ;@Message:MSG_SUMS_MUSEUM_AUDREY
 MSG_SUMS_MUSEUM_AUDREY;
 @CHKFGOTO(FLG_GLOBAL_MUSEUM_PAID,_SUMS_MUSEUM_PAID)
-◆Ｒｉｇｈｔ　ｎｏｗ，　ｐａｒｔ　ｏｆ　ｔｈｅ　Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ　ｉｓ　ｂｅｉｎｇ　ｒｅｍｏｄｅｌｉｎｇ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｓｔｉｌｌ　ｗａｎｔ　ｔｏ　ｅｎｔｅｒ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆Right now, part of the Scaraba Cultural Museum is being remodeling.@KEY()↓
+◆Do you still want to enter?↓
+<Yes>
+<No>
 ;jpn:◆いま↓
-;jpn:　「スカラビぶんかはくぶつかん」は↓
-;jpn:　いちぶ　かいそうちゅうですが@KEY()↓
-;jpn:◆それでも　いいですか？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: 「スカラビぶんかはくぶつかん」は↓
+;jpn: いちぶ かいそうちゅうですが@KEY()↓
+;jpn:◆それでも いいですか?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SUMS_MUSEUM_AUDREY_YES,_SUMS_MUSEUM_AUDREY_NO)
 
 _SUMS_MUSEUM_AUDREY_NO;
-◆Ｓｉｎｃｅ　ｔｈｅ　Ｈｉｅｒｏｇｌｙｐｈ　ｄｉｓｐｌａｙ　ｉｓ　ｃｌｏｓｅｄ，　ｐｅｏｐｌｅ　ｈａｖｅｎ’ｔ　ｗａｎｔｅｄ　ｔｏ　ｖｉｓｉｔ．
+◆Since the Hieroglyph display is closed, people haven’t wanted to visit.
 @KEYNP()
-;jpn:◆ヒエログリフが　みられないので↓
-;jpn:　おきゃくさまが　ほとんど↓
-;jpn:　はいらないんですよ。@KEYNP()
+;jpn:◆ヒエログリフが みられないので↓
+;jpn: おきゃくさまが ほとんど↓
+;jpn: はいらないんですよ。@KEYNP()
 』
 
 _SUMS_MUSEUM_AUDREY_YES;
-◆Ｔｈｒｅｅ　ｄｏｌｌａｒｓ　ｐｅｒ　ｐｅｒｓｏｎ．@KEY()↓
-◆Ｓｔｕｄｙ　ｈａｒｄ．↓
-;jpn:◆では　おひとり３ドルです。↓
-;jpn:　しっかり　べんきょうしてね。↓
+◆Three dollars per person.@KEY()↓
+◆Study hard.↓
+;jpn:◆では おひとり３ドルです。↓
+;jpn: しっかり べんきょうしてね。↓
 @WINR_MONEY()
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:　　<はい>　　<いいえ>
+<Yes>
+<No>
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SUMS_MUSEUM_AUDREY_YESYES,_SUMS_MUSEUM_AUDREY_NO)
 @GOTO(_SUMS_MUSEUM_AUDREY_NO)
@@ -696,123 +696,123 @@ _SUMS_MUSEUM_AUDREY_YESYES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SETF(FLG_GLOBAL_MUSEUM_PAID)
-@CHKFGOTO(FLG_WIN_GIEGU,MSG_END)	;別れのＨＲＥＣＴを保つ為
+@CHKFGOTO(FLG_WIN_GIEGU,MSG_END)	;別れのHRECTを保つ為
 @RES_HIT_RECT(1)			;お金を払ったら包囲網を解く
 』
 
 _SUMS_MUSEUM_AUDREY_NOMONEY;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｏｋａｙ，　ｓｉｎｃｅ　ｙｏｕ　ｋｉｄｓ　ｌｏｏｋ　ｌｉｋｅ　ｙｏｕ　ｗｏｕｌｄ　ｓｔｕｄｙ　ｈａｒｄ，　ｙｏｕ　ｍａｙ　ｅｎｔｅｒ，@KEY()↓
-◆ｆｒｅｅ　ｏｆ　ｃｈａｒｇｅ！@KEY()↓
-◆Ｏｈ　ｗａｉｔ．．．Ｉ　ｃａｎ’ｔ　ｄｏ　ｔｈａｔ！@KEY()↓
-◆Ｇｏｏｄ　ｂｙｅ．
+◆You don’t have any money, right?@KEY()↓
+◆Okay, since you kids look like you would study hard, you may enter,@KEY()↓
+◆free of charge!@KEY()↓
+◆Oh wait...I can’t do that!@KEY()↓
+◆Good bye.
 @KEYNP()
-;jpn:◆おかねがないんですね？@KEY()↓
+;jpn:◆おかねがないんですね?@KEY()↓
 ;jpn:◆それじゃあ↓
-;jpn:　べんきょうねっしんな↓
-;jpn:　こども@GOSUB(MSG_SUB_TATI)だから@KEY()↓
-;jpn:◆ただ！@KEY()↓
-;jpn:◆むりょう！@KEY()↓
-;jpn:◆に　するわけにいかないのよ。↓
-;jpn:　さよなら。@KEYNP()
+;jpn: べんきょうねっしんな↓
+;jpn: こども@GOSUB(MSG_SUB_TATI)だから@KEY()↓
+;jpn:◆ただ!@KEY()↓
+;jpn:◆むりょう!@KEY()↓
+;jpn:◆に するわけにいかないのよ。↓
+;jpn: さよなら。@KEYNP()
 』
 _SUMS_MUSEUM_PAID;
-◆Ｓｉｎｃｅ　ｔｈｅ　Ｈｉｅｒｏｇｌｙｐｈ　ｄｉｓｐｌａｙ　ｉｓ　ｃｌｏｓｅｄ，　ｐｅｏｐｌｅ　ｈａｖｅｎ’ｔ　ｗａｎｔｅｄ　ｔｏ　ｖｉｓｉｔ．
+◆Since the Hieroglyph display is closed, people haven’t wanted to visit.
 @KEYNP()
-;jpn:◆ヒエログリフが　みられないので↓
-;jpn:　おきゃくさまが　ほとんど↓
-;jpn:　はいらないんですよ。@KEYNP()
+;jpn:◆ヒエログリフが みられないので↓
+;jpn: おきゃくさまが ほとんど↓
+;jpn: はいらないんですよ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／博物館／展示室大
-;@Person:係員（オマール）
-;@Figure:スカラビ男Ｃ
+;@Person:係員(オマール)
+;@Figure:スカラビ男C
 ;@AppearanceKey:0
 ;@ActionScript:◆西を向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_MUSEUM_OMAR
 MSG_SUMS_MUSEUM_OMAR;
-◆Ｔｈｉｓ　ｒｏｏｍ　ｉｓ　ｂｅｉｎｇ　ｒｅｍｏｄｅｌｅｄ，　ｓｏ　Ｉ　ｃａｎ’ｔ　ｓｈｏｗ　ｉｔ　ｔｏ　ｙｏｕ．．．@KEY()↓
-;jpn:◆このへやは　かいそうちゅうで↓
-;jpn:　みせるわけには　いかないが‥‥@KEY()↓
+◆This room is being remodeled, so I can’t show it to you...@KEY()↓
+;jpn:◆このへやは かいそうちゅうで↓
+;jpn: みせるわけには いかないが‥‥@KEY()↓
 @CHKFGOTO(FLG_PU,MSG_SUMS_MUSEUM_OMAR_PU)
 _SUMS_MUSEUM_OMAR_PU_DEAD;
-◆Ｉ　ｃａｎ’ｔ．．．ｗｅｌｌ，　Ｉ　ｕｓｕａｌｌｙ　ｄｏｎ’ｔ．．．@KEY()↓
-◆ｓｈｏｗ　ｔｈｉｓ　ｒｏｏｍ．．．@KEY()↓
-◆Ｏｎｃｅ　ｙｏｕ　ｈｉｔ　ａｄｕｌｔｈｏｏｄ，　ｙｏｕ’ｌｌ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
-◆Ｉ　ｄｏ，　ｈｏｗｅｖｅｒ，　ｌｉｋｅ　ｊｅｗｅｌｒｙ．@KEY()↓
-◆Ｐｅｒｈａｐｓ　ａ　ｌｉｔｔｌｅ，　ｓｈａｌｌ　ｗｅ　ｓａｙ，　”ｕｎｄｅｒ　ｔｈｅ　ｔａｂｌｅ　ｄｅａｌ”　ｗｏｕｌｄ　ｂｅ　ｉｎ　ｏｒｄｅｒ．．．
+◆I can’t...well, I usually don’t...@KEY()↓
+◆show this room...@KEY()↓
+◆Once you hit adulthood, you’ll understand.@KEY()↓
+◆I do, however, like jewelry.@KEY()↓
+◆Perhaps a little, shall we say, ”under the table deal” would be in order...
 @KEYNP()
 ;jpn:◆いかないが‥‥いや↓
-;jpn:　なんでもない。↓
-;jpn:　ふつうは　みせない‥‥と。@KEY()↓
-;jpn:◆ま　おとななら↓
-;jpn:　わかってもらえるんだろうが@KEY()↓
-;jpn:◆わたしは　ほうせきに↓
-;jpn:　きょうみが　あってねぇ。@KEY()↓
-;jpn:◆うーむ　そでのしたのほうが↓
-;jpn:　なんか　スースーするなぁ。↓
-;jpn:　コホン@KEYNP()
+;jpn: なんでもない。↓
+;jpn: ふつうは みせない‥‥と。@KEY()↓
+;jpn:◆ま おとななら↓
+;jpn: わかってもらえるんだろうが@KEY()↓
+;jpn:◆わたしは ほうせきに↓
+;jpn: きょうみが あってねぇ。@KEY()↓
+;jpn:◆うーむ そでのしたのほうが↓
+;jpn: なんか スースーするなぁ。↓
+;jpn: コホン@KEYNP()
 』
 MSG_SUMS_MUSEUM_OMAR_RECEIVE;
 @GET_PLAYER_GOODS(0,0)
 @XCHG()
 @EQ(GDS_TOOL_TINY_RUBY)
 @FALSE_GOTO(MSG_SYS_GOODS_USE_NG)
-@SET_LOOPREG(PC_POO)			;プーのＩＤを主レジに格納
+@SET_LOOPREG(PC_POO)			;プーのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(MSG_SYS_GOODS_USE_NG)
 @GOTO(MSG_SUMS_MUSEUM_OMAR_PU)
 』
 
 MSG_SUMS_MUSEUM_OMAR_PU;
-@SET_LOOPREG(PC_POO)			;プーのＩＤを主レジに格納
+@SET_LOOPREG(PC_POO)			;プーのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_SUMS_MUSEUM_OMAR_PU_DEAD)
-◆Ｏｈ，　ｔｈｅ　ｓａｍｕｒａｉ　ｋｉｄ　ｉｓ　ｈｅｒｅ．@KEY()↓
-◆Ｗｉｌｌ　ｈｅ　ｂｅ　ｇｉｖｉｎｇ　ｍｅ　ｔｈａｔ　ｇｅｍ？↓
-;＠プーだけだったら「ｙｏｕ」
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆おっと　そっちのべんぱつのひと↓
-;jpn:　その　ほうせきを　わたしに？↓
-;jpn:　　<はい>　　<いいえ>
+◆Oh, the samurai kid is here.@KEY()↓
+◆Will he be giving me that gem?↓
+;＠プーだけだったら「you」
+<Yes>
+<No>
+;jpn:◆おっと そっちのべんぱつのひと↓
+;jpn: その ほうせきを わたしに?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SUMS_MUSEUM_OMAR_PU_YES,_SUMS_MUSEUM_OMAR_PU_NO)
 
 _SUMS_MUSEUM_OMAR_PU_NO;
 @SE(SE_se76_my_give)
-◆Ｅｘｃｕｓｅ　ｍｅ？@KEY()↓
-◆Ｓｏ，　ｗｈａｔ　ｈｅ　ｊｕｓｔ　ｈａｎｄｅｄ　ｍｅ　ｉｓ　ｎｏｔ　ａ　ｇｅｍ．@KEY()↓
-;＠プーだけだったら「ｙｏｕ」
-◆Ｈａｈ　ｈａ　ｈａ．@KEY()↓
-◆Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｒｅａｌｌｙ　ｅｎｊｏｙ　ｔｈｅ　”ｃｏｏｋｉｅ”　ｔｈａｔ　Ｉ　ｊｕｓｔ　ｇｏｔ．@KEY()↓
-◆Ｌｅｔ’ｓ　ｐｒｅｔｅｎｄ　ｔｈｉｓ　ｃｏｎｖｅｒｓａｔｉｏｎ　ｎｅｖｅｒ　ｔｏｏｋ　ｐｌａｃｅ．．．@KEY()↓
-◆Ｗｈｉｌｅ　Ｉ’ｍ　ｐｒｅｔｅｎｄｉｎｇ，　ｙｏｕ　ｇｏ　ｏｎ　ｉｎ．．．
+◆Excuse me?@KEY()↓
+◆So, what he just handed me is not a gem.@KEY()↓
+;＠プーだけだったら「you」
+◆Hah ha ha.@KEY()↓
+◆I’m going to really enjoy the ”cookie” that I just got.@KEY()↓
+◆Let’s pretend this conversation never took place...@KEY()↓
+◆While I’m pretending, you go on in...
 @KEY()
-;jpn:◆えっ　ほうせきじゃないけど‥‥@KEY()↓
+;jpn:◆えっ ほうせきじゃないけど‥‥@KEY()↓
 ;jpn:◆エッヘッヘ↓
-;jpn:　わたしの　そでのしたに↓
-;jpn:　おもりを　つけろって　ですか。@KEY()↓
-;◆えっ　それでハナをかむ？↓
-;　ハナをかんだら　そのカミクズは↓
-;　わたしに　くれると？！　おお！@KEY()↓
+;jpn: わたしの そでのしたに↓
+;jpn: おもりを つけろって ですか。@KEY()↓
+;◆えっ それでハナをかむ?↓
+; ハナをかんだら そのカミクズは↓
+; わたしに くれると?! おお!@KEY()↓
 ;jpn:◆わたし‥‥みてみぬふりを↓
-;jpn:　しますから　そのすきに↓
-;jpn:　はいっていいです。へっへっへ。@KEY()
+;jpn: しますから そのすきに↓
+;jpn: はいっていいです。へっへっへ。@KEY()
 @GOTO(MSG_EVT_SUMS_OMAR)
 』
 
 _SUMS_MUSEUM_OMAR_PU_YES;
 @SE(SE_se76_my_give)
-◆Ｙｏｕ’ｒｅ　ｓｕｃｈ　ａ　ｇｏｏｄ　ｓｔｕｄｅｎｔ．@KEY()↓
-◆Ｉ’ｍ　ｉｍｐｒｅｓｓｅｄ　ｂｙ　ｙｏｕｒ　ｐａｓｓｉｏｎ　ｆｏｒ　ｌｅａｒｎｉｎｇ．@KEY()↓
-◆Ｃｏｍｅ　ｉｎ．
+◆You’re such a good student.@KEY()↓
+◆I’m impressed by your passion for learning.@KEY()↓
+◆Come in.
 @KEY()
 ;jpn:◆よほどべんきょうねっしんなかた。↓
-;jpn:　そのきもちに　うたれました。↓
-;jpn:　どうぞ　おはいりください。@KEY()
+;jpn: そのきもちに うたれました。↓
+;jpn: どうぞ おはいりください。@KEY()
 @GOTO(MSG_EVT_SUMS_OMAR)
 』
 
@@ -827,49 +827,49 @@ MSG_EVT_SUMS_OMAR;
 
 MSG_SUMS_OMAR_B;
 @CHKFGOTO(FLG_TEMP_9,MSG_SUMS_OMAR_B_TEMP)
-◆Ｅｘｃｅｌｌｅｎｔ！@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｆｅｅｌ　ｌｉｋｅ　ｙｏｕ’ｒｅ　ｒｅａｌｌｙ　ｅｘｐｅｒｉｅｎｃｉｎｇ　ｔｈｉｓ　ｇｒｅａｔ　ｈｉｓｔｏｒｉｃａｌ　ｐｅｒｉｏｄ？@KEY()↓
-◆Ｔｈｅ　ｅｘｐｅｒｉｅｎｃｅ　ｉｓ　ｍｏｒｅ　ｖａｌｕａｂｌｅ　ｔｈａｎ　ａ　ｓｍａｌｌ　ｇｅｍ．．．@KEY()↓
-◆Ｈａ　ｈａ　ｈａ！@KEY()↓
-◆Ｔｈｅ　ｏｔｈｅｒ　ｄａｙ，　ａ　ｒｉｃｈ　ｋｉｄ　ｃａｍｅ　ｔｏ　Ｓｕｍｍｅｒｓ　ｂｙ　ｈｅｌｉｃｏｐｔｅｒ．．．@KEY()↓
-◆Ｈｅ　ａｌｓｏ　ｔｏｏｋ　ａ　ｐｉｃｔｕｒｅ　ｏｆ　ｔｈｅ　Ｈｉｅｒｏｇｌｙｐｈｓ．@KEY()↓
-◆Ｉ　ｇｏｔ　ｌｏｔｓ　ｏｆ　ｍｏｎｅｙ　ｆｒｏｍ　ｈｉｍ．@KEY()↓
-◆Ｈｅｈ　ｈｅｈ　ｈｅｈ．
+◆Excellent!@KEY()↓
+◆Do you feel like you’re really experiencing this great historical period?@KEY()↓
+◆The experience is more valuable than a small gem...@KEY()↓
+◆Ha ha ha!@KEY()↓
+◆The other day, a rich kid came to Summers by helicopter...@KEY()↓
+◆He also took a picture of the Hieroglyphs.@KEY()↓
+◆I got lots of money from him.@KEY()↓
+◆Heh heh heh.
 @KEYNP()
-;jpn:◆すばらしい！@KEY()↓
-;jpn:◆いだいなる　れきしを↓
-;jpn:　かんじるでしょう？@KEY()↓
-;jpn:◆この　ちいさな↓
-;jpn:　ほうせき　いじょうの↓
-;jpn:　かちのある‥‥@KEY()↓
-;jpn:◆ワッハッハ！@KEY()↓
-;jpn:◆こないだも　ヘリコプターで↓
-;jpn:　サマーズにやってきた↓
-;jpn:　ふごうの　しょうねんがね‥‥@KEY()↓
+;jpn:◆すばらしい!@KEY()↓
+;jpn:◆いだいなる れきしを↓
+;jpn: かんじるでしょう?@KEY()↓
+;jpn:◆この ちいさな↓
+;jpn: ほうせき いじょうの↓
+;jpn: かちのある‥‥@KEY()↓
+;jpn:◆ワッハッハ!@KEY()↓
+;jpn:◆こないだも ヘリコプターで↓
+;jpn: サマーズにやってきた↓
+;jpn: ふごうの しょうねんがね‥‥@KEY()↓
 ;jpn:◆ヒエログリフを↓
-;jpn:　しゃしんにとって↓
-;jpn:　いきましたよ。@KEY()↓
-;jpn:◆あんときゃ　げんきんを↓
-;jpn:　たっぷり　もらったっけなぁ↓
-;jpn:　ヘッヘッヘ。@KEYNP()
+;jpn: しゃしんにとって↓
+;jpn: いきましたよ。@KEY()↓
+;jpn:◆あんときゃ げんきんを↓
+;jpn: たっぷり もらったっけなぁ↓
+;jpn: ヘッヘッヘ。@KEYNP()
 』
 
 MSG_SUMS_OMAR_B_TEMP;
-◆Ｈｅｒｅ’ｓ　ａ　ｐｉｃｔｕｒｅ　ｏｆ　ｔｈｅ　ｈｉｅｒｏｇｌｙｐｈｓ，　ｊｕｓｔ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｒｅｗａｒｄ　ｆｏｒ　ｓｔｕｄｙｉｎｇ　ｓｏ　ｈａｒｄ．@KEY()↓
-;jpn:◆べんきょうねっしんな　かたに↓
-;jpn:　「ヒエログリフのうつし」を↓
-;jpn:　とくべつに　さしあげましょう。@KEY()↓
+◆Here’s a picture of the hieroglyphs, just for you.@KEY()↓
+◆It’s a reward for studying so hard.@KEY()↓
+;jpn:◆べんきょうねっしんな かたに↓
+;jpn: 「ヒエログリフのうつし」を↓
+;jpn: とくべつに さしあげましょう。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_SUMS_OMAR_B_ITEMFULL_TEMP)
 @GOODSIN_PLAYER(0,GDS_TOOL_HIEROGLYPH_COPY)
 @GOSUB(MSG_SUB_GETGOODS)@KEY()↓
-◆Ｕｓｅ　ｉｔ　ｉｎ　ｙｏｕｒ　Ｈｕｍａｎ　Ｃｉｖｉｌｉｚａｔｉｏｎ　ｃｌａｓｓ．@KEY()↓
-◆Ｈａ　ｈａ　ｈａ！
+◆Use it in your Human Civilization class.@KEY()↓
+◆Ha ha ha!
 @KEYNP()
-;jpn:◆じんるいの　ぶんかのために↓
-;jpn:　やくだててください。@KEY()↓
-;jpn:◆ワッハッハ！@KEYNP()
+;jpn:◆じんるいの ぶんかのために↓
+;jpn: やくだててください。@KEY()↓
+;jpn:◆ワッハッハ!@KEYNP()
 @SETF(FLG_ITEM_HIEROGLYPH)
 @CLRF(FLG_TEMP_9)
 @CHKFGOTO(FLG_FOUR_KOMORITA,MSG_END)	;ライスボウルの話しを聞いてなければ
@@ -877,16 +877,16 @@ MSG_SUMS_OMAR_B_TEMP;
 』
 _SUMS_OMAR_B_ITEMFULL_TEMP;
 @SE(SE_se05_undo)
-◆Ｏｈ，　ｙｏｕ　ｃａｎ’ｔ　ｃａｒｒｙ　ｉｔ　’ｃａｕｓｅ　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｐｉｔｙ．@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｓｕｃｈ　ａ　ｈａｒｄ　ｗｏｒｋｅｒ．@KEY()↓
-◆Ｈａ　ｈａ　ｈａ！
+◆Oh, you can’t carry it ’cause you have too much stuff.@KEY()↓
+◆It’s a pity.@KEY()↓
+◆You’re such a hard worker.@KEY()↓
+◆Ha ha ha!
 @KEYNP()
-;jpn:◆おお　にもつが
-;jpn:　いっぱいで　もてない！@KEY()↓
+;jpn:◆おお にもつが
+;jpn: いっぱいで もてない!@KEY()↓
 ;jpn:◆べんきょうねっしんなかたなのに↓
-;jpn:　もてないとは　ざんねんですな。@KEY()↓
-;jpn:◆ワッハッハ！@KEYNP()
+;jpn: もてないとは ざんねんですな。@KEY()↓
+;jpn:◆ワッハッハ!@KEYNP()
 @SETF(FLG_TEMP_9)
 』
 
@@ -901,23 +901,23 @@ MSG_SUMS_OMAR_B_EVT;
 @WAITSYS()
 @COLD_CHAR( PRSN_SUMS_HIERO_EXHI2_A )	;「去るオマール」凍結
 @OPEN(1)
-◆Ｗａｉｔ　ｏｎｅ　ｓｅｃｏｎｄ．@KEY()↓
-◆Ｈｅｒｅ’ｓ　ａ　ｐｉｃｔｕｒｅ　ｏｆ　ｔｈｅ　ｈｉｅｒｏｇｌｙｐｈｓ　ｊｕｓｔ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｒｅｗａｒｄ　ｆｏｒ　ｓｔｕｄｙｉｎｇ　ｓｏ　ｈａｒｄ．@KEY()↓
-;jpn:◆ちょっと　おまちを。@KEY()↓
-;jpn:◆べんきょうねっしんな　かたに↓
-;jpn:　「ヒエログリフのうつし」を↓
-;jpn:　とくべつに　さしあげましょう。@KEY()↓
+◆Wait one second.@KEY()↓
+◆Here’s a picture of the hieroglyphs just for you.@KEY()↓
+◆It’s a reward for studying so hard.@KEY()↓
+;jpn:◆ちょっと おまちを。@KEY()↓
+;jpn:◆べんきょうねっしんな かたに↓
+;jpn: 「ヒエログリフのうつし」を↓
+;jpn: とくべつに さしあげましょう。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_SUMS_OMAR_B_ITEMFULL)
 @GOODSIN_PLAYER(0,GDS_TOOL_HIEROGLYPH_COPY)
 @GOSUB(MSG_SUB_GETGOODS)@KEY()↓
-◆Ｕｓｅ　ｉｔ　ｉｎ　ｙｏｕｒ　Ｈｕｍａｎ　Ｃｉｖｉｌｉｚａｔｉｏｎ　ｃｌａｓｓ．@KEY()↓
-◆Ｈａ　ｈａ　ｈａ！
+◆Use it in your Human Civilization class.@KEY()↓
+◆Ha ha ha!
 @KEYNP()
-;jpn:◆じんるいの　ぶんかのために↓
-;jpn:　やくだててください。@KEY()↓
-;jpn:◆ワッハッハ！@KEYNP()
+;jpn:◆じんるいの ぶんかのために↓
+;jpn: やくだててください。@KEY()↓
+;jpn:◆ワッハッハ!@KEYNP()
 @CLOSEALL()
 @FRESH_CHAR( PRSN_SUMS_HIERO_EXHI2_A )	;「去るオマール」
 @WAITSYS()
@@ -927,16 +927,16 @@ MSG_SUMS_OMAR_B_EVT;
 』
 _SUMS_OMAR_B_ITEMFULL;
 @SE(SE_se05_undo)
-◆Ｏｈ，　ｙｏｕ　ｃａｎ’ｔ　ｃａｒｒｙ　ｉｔ　’ｃａｕｓｅ　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｐｉｔｙ．@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｓｕｃｈ　ａ　ｈａｒｄ　ｗｏｒｋｅｒ．@KEY()↓
-◆Ｈａ　ｈａ　ｈａ！
+◆Oh, you can’t carry it ’cause you have too much stuff.@KEY()↓
+◆It’s a pity.@KEY()↓
+◆You’re such a hard worker.@KEY()↓
+◆Ha ha ha!
 @KEYNP()
-;jpn:◆おお　にもつが
-;jpn:　いっぱいで　もてない！@KEY()↓
+;jpn:◆おお にもつが
+;jpn: いっぱいで もてない!@KEY()↓
 ;jpn:◆べんきょうねっしんなかたなのに↓
-;jpn:　もてないとは　ざんねんですな。@KEY()↓
-;jpn:◆ワッハッハ！@KEYNP()
+;jpn: もてないとは ざんねんですな。@KEY()↓
+;jpn:◆ワッハッハ!@KEYNP()
 @CLOSEALL()
 @FRESH_CHAR( PRSN_SUMS_HIERO_EXHI2_A )	;「去るオマール」
 @WAITSYS()
@@ -946,7 +946,7 @@ _SUMS_OMAR_B_ITEMFULL;
 
 ;@Habitat:サマーズ／博物館／展示室大
 ;@Person:学芸員
-;@Figure:サラリーマンＤ
+;@Figure:サラリーマンD
 ;@AppearanceKey:0
 ;@ActionScript:◆中範囲うろつき
 ;@GoodsMessage:0
@@ -955,47 +955,47 @@ _SUMS_OMAR_B_ITEMFULL;
 MSG_SUMS_MUSEUM_KOMORITA;＃
 @CHKFGOTO(FLG_WIN_GIEGU,_SUMS_MUSEUM_KOMORITA_END)
 @CHKFGOTO(FLG_FOUR_KOMORITA_APPEAR,_SUMS_MUSEUM_KOMORITA_LATER)
-◆Ｗｈａｔ？　　Ｍｒ．　Ｓｐｏｏｎ　ｉｓ　ｃａｌｌｉｎｇ　ｆｒｏｍ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　ｍｕｓｅｕｍ？@KEY()↓
-◆Ｈｅ’ｓ　ｊｕｓｔ　ｂｒａｇｇｉｎｇ　ａｂｏｕｔ　ｓｏｍｅｔｈｉｎｇ．．．@KEY()↓
-◆Ｌｅｔ　ｈｉｍ　ｓａｙ　ｗｈａｔ　ｈｅ　ｗａｎｔｓ！@KEY()↓
-◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ　ｈｅ　ｗａｎｔｓ　ｔｏ　ｔｅｌｌ　ｍｅ？@KEY()↓
-◆Ｉ　ｄａｒｅ　ｈｉｍ　ｔｏ　ｔｒｙ　ａｎｄ　ｕｐｓｔａｇｅ　ｍｅ．．．@KEY()↓
-◆Ｏｈ，　ｓｏｒｒｙ．．．Ｉ　ｗａｓ　ｊｕｓｔ　ｔａｌｋｉｎｇ　ｔｏ　ｍｙｓｅｌｆ．．．＊ｃｏｕｇｈ＊
+◆What?  Mr. Spoon is calling from the Fourside museum?@KEY()↓
+◆He’s just bragging about something...@KEY()↓
+◆Let him say what he wants!@KEY()↓
+◆I wonder what he wants to tell me?@KEY()↓
+◆I dare him to try and upstage me...@KEY()↓
+◆Oh, sorry...I was just talking to myself...＊cough＊
 @KEYNP()
 ;jpn:◆「フォーサイド↓
-;jpn:　しぜんはくぶつかん」の↓
-;jpn:　ライスボウルくんが@KEY()↓
-;jpn:◆なにか　じまんそうなでんわを↓
-;jpn:　かけてきてるらしいんだが‥‥@KEY()↓
-;jpn:◆‥‥なんなんだろう？@WI(20)↓
-;jpn:　あー　しりたい！@WI(15)↓
-;jpn:　あー　くやしい！@KEY()↓
-;jpn:◆‥‥あ　いまのは　ひとりごとさ。@WI(20)↓
-;jpn:　きに　しないで　くれたまえね。@WI(15)↓
-;jpn:　コホン。@KEYNP()
+;jpn: しぜんはくぶつかん」の↓
+;jpn: ライスボウルくんが@KEY()↓
+;jpn:◆なにか じまんそうなでんわを↓
+;jpn: かけてきてるらしいんだが‥‥@KEY()↓
+;jpn:◆‥‥なんなんだろう?@WI(20)↓
+;jpn: あー しりたい!@WI(15)↓
+;jpn: あー くやしい!@KEY()↓
+;jpn:◆‥‥あ いまのは ひとりごとさ。@WI(20)↓
+;jpn: きに しないで くれたまえね。@WI(15)↓
+;jpn: コホン。@KEYNP()
 @SE(SE_se72);あやしい音
 @KEYNP()
 』
 _SUMS_MUSEUM_KOMORITA_LATER;
-◆Ｉｔ　ｍｕｓｔ　ｂｅ　ｓｏｍｅｔｈｉｎｇ　ｔｅｅｎｙ　ｗｅｅｎｙ　ｔｈａｔ　Ｍｒ．　Ｓｐｏｏｎ　ｈａｓ　ｆｏｕｎｄ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｎｅｅｄ　ｔｏ　ｋｎｏｗ　ｔｈｅ　ｓｐｅｃｉｆｉｃｓ．
+◆It must be something teeny weeny that Mr. Spoon has found.@KEY()↓
+◆I don’t need to know the specifics.
 @KEYNP()
 ;jpn:◆ライスボウルくんの↓
-;jpn:　はっけんなんて@WI(20)↓
-;jpn:　どうせ　たいしたことなかったろ？@KEY()↓
-;jpn:◆ぼくは　あんまり↓
-;jpn:　しりたくないな。@KEYNP()
+;jpn: はっけんなんて@WI(20)↓
+;jpn: どうせ たいしたことなかったろ?@KEY()↓
+;jpn:◆ぼくは あんまり↓
+;jpn: しりたくないな。@KEYNP()
 』
 _SUMS_MUSEUM_KOMORITA_END;＆
-◆Ｙｏｕ　ｈａｖｅ　ａ　ｇｏｏｄ　ｒｅｐｕｔａｉｔｏｎ．@KEY()↓
-◆Ｗｏｕｌｄｎ’ｔ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｆｏｃｕｓ　ｙｏｕｒ　ｈａｒｄ　ｗｏｒｋｉｎｇ　ｅｎｅｒｇｙ@KEY()↓
-◆ｉｎ　ｔｈｅ　ｅｘｃｉｔｉｎｇ　ｆｉｅｌｄ　ｏｆ　ａｒｃｈａｅｏｌｏｇｙ？
+◆You have a good reputaiton.@KEY()↓
+◆Wouldn’t you like to focus your hard working energy@KEY()↓
+◆in the exciting field of archaeology?
 @KEYNP()
-;jpn:◆きみの　いいうわさは↓
-;jpn:　いろいろ　きいてるよ。@KEY()↓
-;jpn:◆その　こんじょうを↓
-;jpn:　これから　こうこがくの↓
-;jpn:　けんきゅうに　いかさないか？@KEYNP()
+;jpn:◆きみの いいうわさは↓
+;jpn: いろいろ きいてるよ。@KEY()↓
+;jpn:◆その こんじょうを↓
+;jpn: これから こうこがくの↓
+;jpn: けんきゅうに いかさないか?@KEYNP()
 』
 
 
@@ -1009,23 +1009,23 @@ _SUMS_MUSEUM_KOMORITA_END;＆
 ;@Message:MSG_SUMS_MUSEUM_A
 MSG_SUMS_MUSEUM_A;＃
 @CHKFGOTO(FLG_WIN_GIEGU,_SUMS_MUSEUM_A_END)
-◆Ｉ　ｓａｗ　ａ　ｃｈｕｂｂｙ　ｋｉｄ　ａｂｏｕｔ　ｙｏｕｒ　ａｇｅ　ｈｅｒｅ．@KEY()↓
-◆Ｈｅ　ｌｏｏｋｅｄ　ｌｉｋｅ　ｈｅ　ｗａｓ　ａｗｆｕｌｌｙ　ｗｅａｌｔｈｙ．　　Ｈｅ　ｗａｓ　ｂｅｉｎｇ　ｅｘｔｒａｖａｇａｎｔ！
+◆I saw a chubby kid about your age here.@KEY()↓
+◆He looked like he was awfully wealthy.  He was being extravagant!
 @KEYNP()
-;jpn:◆ちょうど　おまえらと↓
-;jpn:　おないどしくらいの　デブが↓
-;jpn:　さっきまで　いたぜ。@KEY()↓
-;jpn:◆やたらに　かねまわりの↓
-;jpn:　よさそうな　ガキだった。@KEYNP()
+;jpn:◆ちょうど おまえらと↓
+;jpn: おないどしくらいの デブが↓
+;jpn: さっきまで いたぜ。@KEY()↓
+;jpn:◆やたらに かねまわりの↓
+;jpn: よさそうな ガキだった。@KEYNP()
 』
 _SUMS_MUSEUM_A_END;＆
-◆Ｉｔ’ｓ　ｎｉｃｅ　ｓｅｅｉｎｇ　ｙｏｕ　ｉｎ　ｓｕｃｈ　ｇｏｏｄ　ｓｈａｐｅ．@KEY()↓
-◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ　ｐｏｒｋｙ　Ｐｏｋｅｙ’ｓ　ｄｏｉｎｇ．@KEY()↓
-◆Ｙｅａｈ，　ｔｈａｔ’ｓ　ｔｈｅ　ｂｏｙ　Ｉ　ｍｅｔ　ｂｅｆｏｒｅ．
+◆It’s nice seeing you in such good shape.@KEY()↓
+◆I wonder what porky Pokey’s doing.@KEY()↓
+◆Yeah, that’s the boy I met before.
 @KEYNP()
-;jpn:◆きみは　げんきそうでよかったけど@WI(20)↓
-;jpn:　まえに　あった　あの↓
-;jpn:　ポーキーとかいう　デブは@KEY()↓
+;jpn:◆きみは げんきそうでよかったけど@WI(20)↓
+;jpn: まえに あった あの↓
+;jpn: ポーキーとかいう デブは@KEY()↓
 ;jpn:◆どうしてるだろうなぁ。@KEYNP()
 』
 ;----------------------------------------
@@ -1038,7 +1038,7 @@ _SUMS_MUSEUM_A_END;＆
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_HOSPITAL_USHER
 MSG_SUMS_HOSPITAL_USHER;@MiuraAppended
-;◆どなたに　ごめんかいですか？@KEY()
+;◆どなたに ごめんかいですか?@KEY()
 @GOSUB(MSG_NURSE_SUMS)
 ;@GOSUB(MSG_SHOP_SUMS_HOSPITAL)
 』
@@ -1053,7 +1053,7 @@ MSG_SUMS_HOSPITAL_USHER;@MiuraAppended
 ;@Message:MSG_SUMS_HOSPITAL_DOCTOR
 MSG_SUMS_HOSPITAL_DOCTOR;@MiuraAppended
 ;◆みてもらいたいのは↓
-;　だれだね？@KEY()
+; だれだね?@KEY()
 @GOSUB(MSG_DOCTOR_SUMS)
 』
 
@@ -1066,77 +1066,77 @@ MSG_SUMS_HOSPITAL_DOCTOR;@MiuraAppended
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_HOSP_GIRL
 MSG_SUMS_HOSP_GIRL;
-◆Ｍｙ　ｃｏｕｓｉｎ　ｉｓ　ａ　ｎｕｒｓｅ　ｉｎ　Ｔｗｏｓｏｎ．@KEY()↓
-◆Ｓｈｅ’ｓ　ｎｏｔ　ｇｏｏｄ　ａｔ　ａｄｍｉｎｉｓｔｅｒｉｎｇ　ｓｈｏｔｓ．@KEY()↓
-◆Ｔｈｅ　ｏｎｅ　ｓｈｅ　ｇａｖｅ　ｍｅ　ｗａｓ　ｐａｉｎｆｕｌ．
+◆My cousin is a nurse in Twoson.@KEY()↓
+◆She’s not good at administering shots.@KEY()↓
+◆The one she gave me was painful.
 @KEYNP()
-;jpn:◆わたしのいとこが　ツーソンで↓
-;jpn:　かんごふをしてるんだけど↓
-;jpn:　ちゅうしゃがへたで　いたいのよ。@KEYNP()
+;jpn:◆わたしのいとこが ツーソンで↓
+;jpn: かんごふをしてるんだけど↓
+;jpn: ちゅうしゃがへたで いたいのよ。@KEYNP()
 』
 
 ；----------------------------------------
 ;@Habitat:サマーズ／フィールド／ビーチ
-;@Person:水着の男Ａ
-;@Figure:海パンＢ
+;@Person:水着の男A
+;@Figure:海パンB
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SWIMSUITMAN_A
 MSG_SUMS_SWIMSUITMAN_A;
-◆Ｗａｋｅ　ｕｐ　ｉｎ　ｔｈｅ　ｍｏｒｎｉｎｇ，　ｆａｌｌ　ｉｎ　ｌｏｖｅ．@KEY()↓
-◆Ｅａｔ　ｌｕｎｃｈ，　ｆａｌｌ　ｉｎ　ｌｏｖｅ．．．@KEY()↓
-◆Ａｎｄ　ａｔ　ｎｉｇｈｔ，　ｆａｌｌ　ｉｎ　ｌｏｖｅ　ａｇａｉｎ．．．@KEY()↓
-◆Ｔｈａｔ’ｓ　ｍｙ　ｄｒｅａｍ　ｌｉｆｅ．
+◆Wake up in the morning, fall in love.@KEY()↓
+◆Eat lunch, fall in love...@KEY()↓
+◆And at night, fall in love again...@KEY()↓
+◆That’s my dream life.
 @KEYNP()
-;jpn:◆あさおきて　こいをして↓
-;jpn:　ランチをたべて　こいをして‥‥↓
-;jpn:　よるになったら　こいをして‥‥。@KEY()↓
+;jpn:◆あさおきて こいをして↓
+;jpn: ランチをたべて こいをして‥‥↓
+;jpn: よるになったら こいをして‥‥。@KEY()↓
 ;jpn:◆そういうじんせいが↓
-;jpn:　ぼくの　のぞみ。@KEYNP()
+;jpn: ぼくの のぞみ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／ビーチ
-;@Person:水着の女Ａ
-;@Figure:ビキニＡ
+;@Person:水着の女A
+;@Figure:ビキニA
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SWIMSUITGAL_A
 MSG_SUMS_SWIMSUITGAL_A;
-◆Ｔｈｅ　ｇｕｙ　ｎｅｘｔ　ｔｏ　ｍｅ　ｉｓ　ｒｅａｌｌｙ　ｂｕｇｇｉｎｇ　ｍｅ．@KEY()↓
-◆Ｈｅ　ｋｅｅｐｓ　ｆｏｌｌｏｗｉｎｇ　ｍｅ　ａｒｏｕｎｄ．
+◆The guy next to me is really bugging me.@KEY()↓
+◆He keeps following me around.
 @KEYNP()
 ;jpn:◆となりのおとこ↓
-;jpn:　うるさくて　しかたないのよ。↓
-;jpn:　しつこく　ついてくるの。@KEYNP()
+;jpn: うるさくて しかたないのよ。↓
+;jpn: しつこく ついてくるの。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／ビーチ
-;@Person:水着の男Ｂ
-;@Figure:海パンＡ
+;@Person:水着の男B
+;@Figure:海パンA
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SWIMSUITMAN_B
 MSG_SUMS_SWIMSUITMAN_B;
-◆Ｉ　ｗｏｎｄｅｒ　ｗｈｙ　ｓｕｃｈ　ｓｅｒｉｏｕｓ　ｌｏｏｋｉｎｇ　ｋｉｄｓ@KEY()↓
-◆ａｓ　ｙｏｕ　ｗｏｕｌｄ　ｃｏｍｅ　ｔｏ　ｔｈｉｓ　ｒｅｓｏｒｔ　ｔｏｗｎ．．．@KEY()↓
-◆Ｙｏｕ　ｇｕｙｓ　ａｒｅ　ｓｐｏｉｌｉｎｇ　ｔｈｅ　ａｔｍｏｓｐｈｅｒｅ．．．
+◆I wonder why such serious looking kids@KEY()↓
+◆as you would come to this resort town...@KEY()↓
+◆You guys are spoiling the atmosphere...
 @KEYNP()
 ;jpn:◆きみたちみたいな↓
-;jpn:　せっぱつまった　かおつきの↓
-;jpn:　ひとびとが‥‥@KEY()↓
-;jpn:◆どうして　こんなリゾートちに↓
-;jpn:　きているんだろうねぇ。↓
-;jpn:　ふんいき　こわしちゃうなぁ。@KEYNP()
+;jpn: せっぱつまった かおつきの↓
+;jpn: ひとびとが‥‥@KEY()↓
+;jpn:◆どうして こんなリゾートちに↓
+;jpn: きているんだろうねぇ。↓
+;jpn: ふんいき こわしちゃうなぁ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／道路
-;@Person:水着の男Ｃ（元サーファー）
+;@Person:水着の男C(元サーファー)
 ;@Figure:リゾート男
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -1144,42 +1144,42 @@ MSG_SUMS_SWIMSUITMAN_B;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SWIMSUITMAN_C
 MSG_SUMS_SWIMSUITMAN_C;
-◆Ｉ’ｍ　ａｃｔｕａｌｌｙ　ａ　ｓｕｒｆｅｒ．@KEY()↓
-◆Ｂｕｔ　ｙｏｕ　ｃａｎ’ｔ　ｓｕｒｆ　ａｔ　ｔｈｉｓ　Ｓｕｍｍｅｒ’ｓ　ｂｅａｃｈ．@KEY()↓
-◆Ｓｈｏｕｌｄ　Ｉ　ｂｅｃｏｍｅ　ａ　ｐｏｒｔｅｒ　ｓｏ　ｔｈａｔ　Ｉ　ｃａｎ　ｇｅｔ　ｔｉｐｓ　ｆｒｏｍ　ａｌｌ　ｔｈｅ　ｏｌｄ　ｆｏｌｋｓ？
+◆I’m actually a surfer.@KEY()↓
+◆But you can’t surf at this Summer’s beach.@KEY()↓
+◆Should I become a porter so that I can get tips from all the old folks?
 @KEYNP()
-;jpn:◆おれは　もともとサーファーだけど↓
-;jpn:　このサマーズのビーチじゃ↓
-;jpn:　なみのりは　むりだね。@KEY()↓
-;jpn:◆ジーさん　バーさんから↓
-;jpn:　チップをもらって↓
-;jpn:　にもつはこびでも　やるか。@KEYNP()
+;jpn:◆おれは もともとサーファーだけど↓
+;jpn: このサマーズのビーチじゃ↓
+;jpn: なみのりは むりだね。@KEY()↓
+;jpn:◆ジーさん バーさんから↓
+;jpn: チップをもらって↓
+;jpn: にもつはこびでも やるか。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／ビーチ
-;@Person:水着の男Ｄ
-;@Figure:海パンＢ
+;@Person:水着の男D
+;@Figure:海パンB
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SWIMSUITMAN_D
 MSG_SUMS_SWIMSUITMAN_D;
-◆Ａｒｅ　ｙｏｕ　ｆｒｏｍ　ＥａｇｌｅＬａｎｄ？@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｌｉｋｅ　ａｄｖｅｎｔｕｒｅ，　ｔｈｉｓ　ｉｓｎ’ｔ　ｙｏｕｒ　ｋｉｎｄ　ｏｆ　ｐｌａｃｅ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｔｒａｖｅｌ　ａｃｒｏｓｓ　ｔｈｅ　ｓｅａ　ｔｏ　Ｓｃａｒａｂａ　ｆｒｏｍ　Ｔｏｔｏ，　ｔｈｅ　ｐｏｒｔ　ｔｏｗｎ．
+◆Are you from EagleLand?@KEY()↓
+◆If you like adventure, this isn’t your kind of place.@KEY()↓
+◆You should travel across the sea to Scaraba from Toto, the port town.
 @KEYNP()
-;jpn:◆イーグルランドから　きたのかい。↓
-;jpn:　ぼうけんずきなら↓
-;jpn:　このまちは　あわないとおもうよ。@KEY()↓
-;jpn:◆トトっていう　みなとまちから↓
-;jpn:　ふねで　スカラビに↓
-;jpn:　わたるんだな。@KEYNP()
+;jpn:◆イーグルランドから きたのかい。↓
+;jpn: ぼうけんずきなら↓
+;jpn: このまちは あわないとおもうよ。@KEY()↓
+;jpn:◆トトっていう みなとまちから↓
+;jpn: ふねで スカラビに↓
+;jpn: わたるんだな。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／ビーチ
-;@Person:水着の女Ｂ
-;@Figure:ビキニＢ
+;@Person:水着の女B
+;@Figure:ビキニB
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
@@ -1188,25 +1188,25 @@ MSG_SUMS_SWIMSUITMAN_D;
 MSG_SUMS_SWIMSUITGAL_B;
 @CHKFGOTO(FLG_PU,_SUMS_SWIMSUITGAL_B_TMP)
 _SUMS_SWIMSUITGAL_B_MAIN;
-◆Ｄｏｎ’ｔ　ｔａｌｋ　ｔｏ　ｍｅ．@KEY()↓
-◆Ｍｙ　ｍｉｎｄ　ｉｓ　ａ　ｃｏｍｐｌｅｔｅ　ｂｌａｎｋ．
+◆Don’t talk to me.@KEY()↓
+◆My mind is a complete blank.
 @KEYNP()
-;jpn:◆はなしかけるの　やめてよね@WI(15)↓
-;jpn:　あたし　なーんにも↓
-;jpn:　かんがえてないんだから。@KEYNP()
+;jpn:◆はなしかけるの やめてよね@WI(15)↓
+;jpn: あたし なーんにも↓
+;jpn: かんがえてないんだから。@KEYNP()
 』
 _SUMS_SWIMSUITGAL_B_TMP;
 @CHKFGOTO(FLG_WIN_GIEGU,_SUMS_SWIMSUITGAL_B_MAIN);プーと別れていたら
-@SET_LOOPREG(PC_POO)			;プーのＩＤを主レジに格納
+@SET_LOOPREG(PC_POO)			;プーのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_SUMS_SWIMSUITGAL_B_MAIN)
-◆Ａｓｉａｎ　ｂｏｙ，　ｙｏｕ’ｒｅ　ｓｏ　ｃｏｏｌ．．．@KEY()↓
-◆Ｄｏｎ’ｔ　ｌｏｏｋ　ａｔ　ｍｅ　ｌｉｋｅ　ｔｈａｔ．．．
+◆Asian boy, you’re so cool...@KEY()↓
+◆Don’t look at me like that...
 @KEYNP()
-;jpn:◆あら　オリエンタルで↓
-;jpn:　クールで　すてきな　おとこ‥‥@KEY()↓
-;jpn:◆そんなめで　みつめないで‥‥@WI(20)↓
-;jpn:　すてきすぎるー音@KEYNP()
+;jpn:◆あら オリエンタルで↓
+;jpn: クールで すてきな おとこ‥‥@KEY()↓
+;jpn:◆そんなめで みつめないで‥‥@WI(20)↓
+;jpn: すてきすぎるー音@KEYNP()
 』
 
 
@@ -1222,78 +1222,78 @@ MSG_SUMS_OILMASSAGE;
 @CHKFGOTO(FLG_WIN_GIEGU,_SUMS_WIFE_END)
 @CHKFGOTO(FLG_PU,MSG_SUMS_WIFE);ランマに行ってたらマジックタルト売りに
 @FUNC(5)			;配達禁止
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈｏ　ｔｏｌｄ　ｙｏｕ．@KEY()↓
-◆Ｙｏｕ　ｃａｍｅ　ｆｒｏｍ　ｆａｒ　ｏｆｆ　ｊｕｓｔ　ｔｏ　ｅａｔ　ｍｙ　Ｍａｇｉｃ　ｃａｋｅ？．．．@KEY()↓
-◆Ｉ　ｔｈｏｕｇｈｔ　ｍａｋｉｎｇ　ｃａｋｅｓ　ｗｏｕｌｄ　ｂｅ　ｔｈｅ　ｂｅｓｔ　ｃａｒｅｅｒ　ｆｏｒ　ｍｅ．@KEY()↓
-◆Ｄｉｇ　ｉｎ！@KEY()↓
-◆Ｉ　ｕｓｅｄ　ａｌｌ　ｌｅｆｔｏｖｅｒ　ｍａｔｅｒｉａｌｓ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ａ　ｖｅｒｙ　ｓｐｅｃｉａｌ　Ｍａｇｉｃ　ｃａｋｅ！
+◆I don’t know who told you.@KEY()↓
+◆You came from far off just to eat my Magic cake?...@KEY()↓
+◆I thought making cakes would be the best career for me.@KEY()↓
+◆Dig in!@KEY()↓
+◆I used all leftover materials.@KEY()↓
+◆This is a very special Magic cake!
 @KEY()
-;jpn:◆だれにきいたか　しらないけれど@KEY()↓
-;jpn:◆とおいくにから　わざわざ↓
-;jpn:　わたしの　マジックケーキを↓
-;jpn:　たべにきてくれたなんて‥‥@KEY()↓
-;jpn:◆やっぱり　わたし　ケーキづくりが↓
-;jpn:　いちばん　じぶんに　あってる。@WI(30)↓
-;jpn:　そう　おもったの。@KEY()↓
-;jpn:◆さあ　たくさんたべて！@KEY()↓
-;jpn:◆さいごの　ざいりょうを↓
-;jpn:　ぜんぶつかった　スペシャルな↓
-;jpn:　マジックケーキよ！@KEY()↓
+;jpn:◆だれにきいたか しらないけれど@KEY()↓
+;jpn:◆とおいくにから わざわざ↓
+;jpn: わたしの マジックケーキを↓
+;jpn: たべにきてくれたなんて‥‥@KEY()↓
+;jpn:◆やっぱり わたし ケーキづくりが↓
+;jpn: いちばん じぶんに あってる。@WI(30)↓
+;jpn: そう おもったの。@KEY()↓
+;jpn:◆さあ たくさんたべて!@KEY()↓
+;jpn:◆さいごの ざいりょうを↓
+;jpn: ぜんぶつかった スペシャルな↓
+;jpn: マジックケーキよ!@KEY()↓
 @CLOSEALL()
 @CLRF(FLG_SUMS_MASSAGE_APPEAR)
 @GOTO(MSG_EVT_78_GIL)
 』
 _SUMS_WIFE_END;
-◆Ｉ　ｃａｎ’ｔ　ｍａｋｅ　ａｎｙｍｏｒｅ　Ｍａｇｉｃ　ｃａｋｅｓ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｔｒｙ　ｓｏｍｅｔｈｉｎｇ　ｔａｓｔｉｅｒ．．．@KEY()↓
-◆Ｉ　ｈａｖｅ　ａ　”@DSP_GOODS(GDS_FOOD_MAGIC_TORTE)．”@KEY()↓
-◆Ｔｒｙ　ｉｔ．@KEY()↓
+◆I can’t make anymore Magic cakes.@KEY()↓
+◆If you want to try something tastier...@KEY()↓
+◆I have a ”@DSP_GOODS(GDS_FOOD_MAGIC_TORTE).”@KEY()↓
+◆Try it.@KEY()↓
 @KEYNP()
 ;jpn:◆マジックケーキは↓
-;jpn:　もうつくれないけど↓
-;jpn:　おいしさなら　それいじょうの‥‥@KEY()↓
+;jpn: もうつくれないけど↓
+;jpn: おいしさなら それいじょうの‥‥@KEY()↓
 ;jpn:◆「マジックタルト」を↓
-;jpn:　うってるのよ。@KEY()↓
-;jpn:◆あじみ　してね。@KEY()↓
+;jpn: うってるのよ。@KEY()↓
+;jpn:◆あじみ してね。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_SUMS_WIFE_GOODSFULL)
 @GOODSIN_PLAYER(PC_ALL,GDS_FOOD_MAGIC_TORTE)
 @SE(SE_se74_my_get)
-◆．．．Ｉ　ｃｏｕｌｄ　ｍａｋｅ　ｏｎｅ　ｅｘｔｒａ　ｇｏｏｄ　ｔｏｄａｙ．
-;jpn:◆‥‥きょうは　また↓
-;jpn:　おいしくできたのよ。
+◆...I could make one extra good today.
+;jpn:◆‥‥きょうは また↓
+;jpn: おいしくできたのよ。
 @KEYNP()
 @!
 _SUMS_WIFE_GOODSFULL;
-◆Ｙｏｕ　ｓｅｅｍ　ｔｏ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ　ｔｏ　ｃａｒｒｙ．@KEY()↓
-◆Ｃｏｍｅ　ｂａｃｋ　ａｆｔｅｒ　ｙｏｕ　ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ．
+◆You seem to have too much stuff to carry.@KEY()↓
+◆Come back after you get rid of something.
 @KEYNP()
-;jpn:◆もちものが　いっぱいよ↓
-;jpn:　にもつを　へらしてから↓
-;jpn:　またきてね。@KEYNP()
+;jpn:◆もちものが いっぱいよ↓
+;jpn: にもつを へらしてから↓
+;jpn: またきてね。@KEYNP()
 @!
 
-;オイルマッサージの女（マーサ）
-;◆とろけるような　ゆめごこち。@WI(20)↓
-;　オイルマッサージは　いかが。@KEY()↓
-;◆ためしてみる？↓
-;　　<はい>　　<いいえ>
+;オイルマッサージの女(マーサ)
+;◆とろけるような ゆめごこち。@WI(20)↓
+; オイルマッサージは いかが。@KEY()↓
+;◆ためしてみる?↓
+;  <はい>  <いいえ>
 ;@DSP_ITEM(2)
 ;@SELGOTO(_SUMS_OILMASSAGE_YES,_SUMS_OILMASSAGE_NO)
 ;_SUMS_OILMASSAGE_NO;
-;◆じゃ　また　こんどね。バーイ。@KEYNP()
+;◆じゃ また こんどね。バーイ。@KEYNP()
 ;』
 ;_SUMS_OILMASSAGE_YES;
-;◆じゃ　こっちのひかげでね。@KEY()
+;◆じゃ こっちのひかげでね。@KEY()
 ;@CLOSEALL()
 ;@CLRF(FLG_SUMS_MASSAGE_APPEAR)
 ;@GOTO(MSG_EVT_78_GIL)
 ;』
 
 
-;@Habitat:サマーズ／フィールド／ビーチ（スカイウォーカーそば）
-;@Person:リゾート客Ａ
+;@Habitat:サマーズ／フィールド／ビーチ(スカイウォーカーそば)
+;@Person:リゾート客A
 ;@Figure:リゾート女
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -1301,20 +1301,20 @@ _SUMS_WIFE_GOODSFULL;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_RESORT_A
 MSG_SUMS_RESORT_A;
-◆Ｙｏｕ　ｌｏｏｋ　ｓｏ　ｓｅｒｉｏｕｓ．．．@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｉｎ　Ｓｕｍｍｅｒｓ，　ａ　ｄｒｅａｍ　ｐａｒａｄｉｓｅ．@KEY()↓
-◆Ｒｅｌａｘ，　ａｎｄ　ｈａｖｅ　ｓｏｍｅ　ｆｕｎ．
+◆You look so serious...@KEY()↓
+◆You’re in Summers, a dream paradise.@KEY()↓
+◆Relax, and have some fun.
 @KEYNP()
-;jpn:◆きみ@GOSUB(MSG_SUB_TATI)　ずいぶん↓
-;jpn:　きんちょうしたかお　してるね。@KEY()↓
-;jpn:◆ここは　サマーズ。@WI(20)↓
-;jpn:　ゆめのパラダイスだよ。@KEY()↓
-;jpn:◆もっと　リゾートっぽく↓
-;jpn:　らくに　しなさいよ。@KEYNP()
+;jpn:◆きみ@GOSUB(MSG_SUB_TATI) ずいぶん↓
+;jpn: きんちょうしたかお してるね。@KEY()↓
+;jpn:◆ここは サマーズ。@WI(20)↓
+;jpn: ゆめのパラダイスだよ。@KEY()↓
+;jpn:◆もっと リゾートっぽく↓
+;jpn: らくに しなさいよ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／道路
-;@Person:リゾート客Ｂ
+;@Person:リゾート客B
 ;@Figure:リゾート男
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -1322,34 +1322,34 @@ MSG_SUMS_RESORT_A;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_RESORT_B
 MSG_SUMS_RESORT_B;
-◆Ｔｈｅ　ｓｋｙ’ｓ　ｂｌｕｅ　ａｎｄ　ｔｈｅ　ｓｕｎ　ｉｓ　ｈｉｇｈ．@KEY()↓
-◆Ｔｈｅ　ｐｒｉｃｅｓ　ｈｅｒｅ　ａｒｅ　ｓｏ　ｈｉｇｈ，　ｉｔ’ｌｌ　ｍａｋｅ　ｙｏｕｒ　ｆａｃｅ　ｔｕｒｎ　ｂｌｕｅ！@KEY()↓
-◆Ｔｈａｔ’ｓ　Ｓｕｍｍｅｒｓ！
+◆The sky’s blue and the sun is high.@KEY()↓
+◆The prices here are so high, it’ll make your face turn blue!@KEY()↓
+◆That’s Summers!
 @KEYNP()
-;jpn:◆そらは　あおくて　たかいし↓
-;jpn:　ぶっかも　あおくなるほど↓
-;jpn:　たかい！　サマーズって　まちは。@KEYNP()
+;jpn:◆そらは あおくて たかいし↓
+;jpn: ぶっかも あおくなるほど↓
+;jpn: たかい! サマーズって まちは。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／道路
 ;@Person:街の人１
-;@Figure:Ｔシャツ
+;@Figure:Tシャツ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_1
 MSG_SUMS_1;
-◆Ｉｆ　ｙｏｕ’ｒｅ　ｂｏｒｅｄ，　ｇｏ　ｃｈｅｃｋ　ｏｕｔ　ｔｈｅ　”Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ．”@KEY()↓
-◆Ｉｔ　ｍａｙ　ｂｅ　ｈｅｌｐｆｕｌ　ｔｏ　ｙｏｕ．@KEY()↓
-◆Ｔｈｅｙ　ｈａｖｅ　ａ　ｈｉｅｒｏｇｌｙｐｈ　ｆｒｏｍ　ａ　ｐｙｒａｍｉｄ．
+◆If you’re bored, go check out the ”Scaraba Cultural Museum.”@KEY()↓
+◆It may be helpful to you.@KEY()↓
+◆They have a hieroglyph from a pyramid.
 @KEYNP()
 ;jpn:◆たいくつしてるなら↓
-;jpn:　「スカラビぶんかはくぶつかん」↓
-;jpn:　にでも　いったら　どうだい。@KEY()↓
+;jpn: 「スカラビぶんかはくぶつかん」↓
+;jpn: にでも いったら どうだい。@KEY()↓
 ;jpn:◆ためになるよ。↓
-;jpn:　ピラミッドのヒエログリフとかが↓
-;jpn:　あるらしいしさ。@KEYNP()
+;jpn: ピラミッドのヒエログリフとかが↓
+;jpn: あるらしいしさ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／道路
@@ -1361,12 +1361,12 @@ MSG_SUMS_1;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_2
 MSG_SUMS_2;
-◆Ａｎｏｔｈｅｒ　ｎｉｃｅ　ｄａｙ．@KEY()↓
-◆Ｓｕｍｍｅｒｓ　ａｌｗａｙｓ　ｈａｓ　ｓｕｎｎｙ　ｄａｙｓ．
+◆Another nice day.@KEY()↓
+◆Summers always has sunny days.
 @KEYNP()
-;jpn:◆きょうも　いいてんきね。@KEY()↓
-;jpn:◆サマーズの　かいがんって↓
-;jpn:　いつも　いいおてんきなのよ。@KEYNP()
+;jpn:◆きょうも いいてんきね。@KEY()↓
+;jpn:◆サマーズの かいがんって↓
+;jpn: いつも いいおてんきなのよ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／道路
@@ -1378,9 +1378,9 @@ MSG_SUMS_2;
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_ICELOLLY
 MSG_SUMS_ICELOLLY;
-;◆Ｗａｎｔ　ａ　ｐｏｐｓｉｃｌｅ？
+;◆Want a popsicle?
 ;jpn:◆アイスキャンディーは↓;
-;jpn:　いかがっすか？@KEY()↓
+;jpn: いかがっすか?@KEY()↓
 @GOSUB(MSG_SUMS_ICE)
 』
 
@@ -1397,8 +1397,8 @@ MSG_SUMS_BIRD;
 ;この九官鳥は、サマーズのまちのあちこちを
 ;適当にとびまわっています。そして、サマーズの人々の
 ;セリフをアトランダムにしゃべるのです。
-◆（Ｉｔ’ｓ　ａ　Ｍｙｎａ　ｂｉｒｄ！）@KEY()↓
-;jpn:◆キューカンチョーッ！@KEY()↓
+◆(It’s a Myna bird!)@KEY()↓
+;jpn:◆キューカンチョーッ!@KEY()↓
 @RAND(5)
 @ONGOTO(MSG_SUMS_SWIMSUITGAL_A,MSG_SUMS_SWIMSUITGAL_B,MSG_SUMS_SWIMSUITMAN_D,MSG_SUMS_1,MSG_TOTO_A)
 @GOTO(MSG_SUMS_SWIMSUITMAN_A)
@@ -1406,7 +1406,7 @@ MSG_SUMS_BIRD;
 
 
 ;@Habitat:サマーズ／フィールド／トトの街の辺り
-;@Person:街の人Ａ
+;@Person:街の人A
 ;@Figure:若い船乗り
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -1415,36 +1415,36 @@ MSG_SUMS_BIRD;
 ;@Message:MSG_TOTO_A
 MSG_TOTO_A;＃
 @CHKFGOTO(FLG_TLPT_SKRB,_TOTO_A_LATER)
-◆Ｔｏ　ｇｏ　ｔｏ　Ｓｃａｒａｂａ，　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｃｒｏｓｓ　ｔｈｅ　ｓｅａ．@KEY()↓
-◆Ｈｏｗｅｖｅｒ　ａ　ｍｏｎｓｔｅｒ　ｎａｍｅｄ　Ｋｒａｋｅｎ　ｌｉｖｅｓ　ｉｎ　ｔｈｅ　ｏｐｅｎ　ｓｅａ．@KEY()↓
-◆Ｈｅ　ａｔｔａｃｋｓ　ｓｈｉｐｓ　ｔｈａｔ　ｐａｓｓ　ｔｈｒｏｕｇｈ．@KEY()↓
-◆Ａｒｅ　ｙｏｕ　ｓｃａｒｅｄ？
+◆To go to Scaraba, you need to cross the sea.@KEY()↓
+◆However a monster named Kraken lives in the open sea.@KEY()↓
+◆He attacks ships that pass through.@KEY()↓
+◆Are you scared?
 @KEYNP()
-;jpn:◆スカラビには　うみをわたらねば↓
-;jpn:　ならないんだわな。@KEY()↓
+;jpn:◆スカラビには うみをわたらねば↓
+;jpn: ならないんだわな。@KEY()↓
 ;jpn:◆とはいえ↓
-;jpn:　あれたうみには↓
-;jpn:　クラーケンたらいう　バケモンが@KEY()↓
-;jpn:◆げんきに　ふねを↓
-;jpn:　おそってくれるんだわー。@KEY()↓
-;jpn:◆こわいっしょ？@KEYNP()
+;jpn: あれたうみには↓
+;jpn: クラーケンたらいう バケモンが@KEY()↓
+;jpn:◆げんきに ふねを↓
+;jpn: おそってくれるんだわー。@KEY()↓
+;jpn:◆こわいっしょ?@KEYNP()
 』
 _TOTO_A_LATER;
-◆Ｉ’ｍ　ａ　ｍｉｇｈｔｙ　ｓａｉｌｏｒ　ｍａｎ@KEY()↓
-◆Ａ　ｍｏｕｎｔａｉｎ　ｍａｎ　Ｉ’ｍ　ｎｏｔ@KEY()↓
-◆Ｔｈｅ　ｏｐｅｎ　ｓｅａ　ｉｓ　ｈｏｍｅ　ｆｏｒ　ｍｅ@KEY()↓
-◆Ａｎｄ　ｍｏｕｎｔａｉｎｓ　ａｒｅｎ’ｔ　ｗｏｒｔｈ　ｓｎｏｔ@KEY()↓
-◆．．．Ｉ’ｍ　ｗｒｉｔｉｎｇ　ａ　ｓｏｎｇ　ｆｏｒ　ｓａｉｌｏｒｓ．
+◆I’m a mighty sailor man@KEY()↓
+◆A mountain man I’m not@KEY()↓
+◆The open sea is home for me@KEY()↓
+◆And mountains aren’t worth snot@KEY()↓
+◆...I’m writing a song for sailors.
 @KEYNP()
-;jpn:◆音うみの　おとこはよー@WI(20)↓
-;jpn:　やまの　おとことはよー@WI(20)↓
-;jpn:　ちょと@WI(15)　ちがうよー音@KEY()↓
-;jpn:◆‥‥いま　うみのおとこのうたを↓
-;jpn:　つくってるところなんだ。@KEYNP()
+;jpn:◆音うみの おとこはよー@WI(20)↓
+;jpn: やまの おとことはよー@WI(20)↓
+;jpn: ちょと@WI(15) ちがうよー音@KEY()↓
+;jpn:◆‥‥いま うみのおとこのうたを↓
+;jpn: つくってるところなんだ。@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／トトの街の辺り
-;@Person:街の人Ｃ
+;@Person:街の人C
 ;@Figure:スペイン人
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -1452,23 +1452,23 @@ _TOTO_A_LATER;
 ;@CheckMessage:0
 ;@Message:MSG_TOTO_C
 MSG_TOTO_C;
-◆Ｄｉｎｏｓａｕｒｓ　ｅｘｉｓｔｅｄ！@KEY()↓
-◆Ｉ　ｓａｗ　ｏｎｅ！@KEY()↓
-◆Ｉｔ　ｈａｄ　ｂｅｅｎ　ｏｕｔ　ｏｆ　ｔｈｅ　ｕｎｄｅｒｇｒｏｕｎｄ　ｗｈｅｎ　ｉｔ　ｄｒｉｅｄ　ｏｕｔ．@KEY()↓
-◆Ｏｆ　ｃｏｕｒｓｅ，　ｉｔ　ｗａｓ　ｄｅａｄ！@KEY()↓
-◆Ｂｅｌｉｅｖｅ　ｗｈａｔ　Ｉ’ｍ　ｓａｙｉｎｇ！
+◆Dinosaurs existed!@KEY()↓
+◆I saw one!@KEY()↓
+◆It had been out of the underground when it dried out.@KEY()↓
+◆Of course, it was dead!@KEY()↓
+◆Believe what I’m saying!
 @KEYNP()
-;jpn:◆きょうりゅうは　いる！↓
-;jpn:　おれは　みたんだってば！@KEY()↓
+;jpn:◆きょうりゅうは いる!↓
+;jpn: おれは みたんだってば!@KEY()↓
 ;jpn:◆じめんのしたから↓
-;jpn:　はいあがってきて↓
-;jpn:　ひからびて　しんでたんだわ！@KEY()↓
-;jpn:◆おれの　いうことを↓
-;jpn:　しんじてくでーっ！@KEYNP()
+;jpn: はいあがってきて↓
+;jpn: ひからびて しんでたんだわ!@KEY()↓
+;jpn:◆おれの いうことを↓
+;jpn: しんじてくでーっ!@KEYNP()
 』
 
 ;@Habitat:サマーズ／フィールド／トトの波止場
-;@Person:船乗りＡ
+;@Person:船乗りA
 ;@Figure:若い船乗り
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -1480,109 +1480,109 @@ MSG_TOTO_SAILOR_A;
 @CHKFGOTO(FLG_PU,_TOTO_SAILOR_AFTER)
 @CHKFGOTO(FLG_TEMP_9,_TOTO_SAILOR_TMP)
 _TOTO_SAILOR_A_START;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ａ　ｂｏａｔ　ｒｉｄｅ？↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆ふねに　のりたいのかい？↓
-;jpn:　　<はい>　　<いいえ>
+◆Would you like a boat ride?↓
+<Yes>
+<No>
+;jpn:◆ふねに のりたいのかい?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_TOTO_SAILOR_A_YES,_TOTO_SAILOR_A_NO)
 _TOTO_SAILOR_A_NO;
-◆Ｏｋ，　Ｉ　ｕｎｄｅｒｓｔａｎｄ．
-;jpn:◆そうか　そんなら　いいんだ。
+◆Ok, I understand.
+;jpn:◆そうか そんなら いいんだ。
 @CHKF(FLG_TEMP_9)@FALSE_GOTO(_TOTO_SAILOR_A_YES_A)
 @KEYNP()
 』
 _TOTO_SAILOR_A_YES_A;
 @KEY()↓
 _TOTO_SAILOR_A_YES;
-◆Ｉ　ｄｏｎ’ｔ　ｆｅｅｌ　ｌｉｋｅ　ｓｅｎｄｉｎｇ　ａ　ｓｈｉｐ　ｏｕｔ．@KEY()↓
-◆Ｉ’ｍ　ｗｏｒｒｉｅｄ　ａｂｏｕｔ　ｍｙ　ｗｉｆｅ．．．@KEY()↓
-◆Ｉ’ｍ　ｎｏｔ　ａｆｒａｉｄ　ｏｆ　ｔｈｅ　Ｋｒａｋｅｎ！@KEY()↓
-◆．．．．．@KEY()↓
-;jpn:◆ふねをだす　きに↓
-;jpn:　なれねぇんだよ。@KEY()↓
-;jpn:◆にょうぼの　ことで↓
-;jpn:　なやんでてね‥‥。@KEY()↓
+◆I don’t feel like sending a ship out.@KEY()↓
+◆I’m worried about my wife...@KEY()↓
+◆I’m not afraid of the Kraken!@KEY()↓
+◆.....@KEY()↓
+;jpn:◆ふねをだす きに↓
+;jpn: なれねぇんだよ。@KEY()↓
+;jpn:◆にょうぼの ことで↓
+;jpn: なやんでてね‥‥。@KEY()↓
 ;jpn:◆クラーケンが↓
-;jpn:　こわいわけじゃねぇんだ。@KEY()↓
+;jpn: こわいわけじゃねぇんだ。@KEY()↓
 @WI(60)↓
-◆Ｍｙ　ｗｉｆｅ’ｓ　ｔｏｔａｌｌｙ　ｉｇｎｏｒｉｎｇ　ｈｅｒ　Ｍａｇｉｃ　ｃａｋｅ　ｂｕｓｉｎｅｓｓ．@KEY()↓
-◆Ｔｈｅｓｅ　ｄａｙｓ　ｓｈｅ　ｓｐｅｎｄｓ　ｈｅｒ　ｔｉｍｅ　ｈａｎｇｉｎｇ　ｏｕｔ　ｉｎ　ａ　ｓｔｒａｎｇｅ　ｃｌｕｂ．@KEY()↓
-◆Ｗｅ　ｎｏ　ｌｏｎｇｅｒ　ｈａｖｅ　ａｎｙ　ｍｕｔｕａｌ　ｉｎｔｅｒｅｓｔｓ　ｔｏ　ｄｉｓｃｕｓｓ．@KEY()↓
-◆Ｉｓ　ｏｕｒ　ｒｅｌａｔｉｏｎｓｈｉｐ　ｏｖｅｒ？@KEY()↓
-◆．．．＊Ｓｉｇｈ＊
+◆My wife’s totally ignoring her Magic cake business.@KEY()↓
+◆These days she spends her time hanging out in a strange club.@KEY()↓
+◆We no longer have any mutual interests to discuss.@KEY()↓
+◆Is our relationship over?@KEY()↓
+◆...＊Sigh＊
 @KEYNP()
 ;jpn:◆‥‥‥。@KEY()↓
 ;jpn:◆にょうぼが↓
-;jpn:　「マジックケーキ」うりの↓
-;jpn:　しょうばい　そっちのけで@KEY()↓
-;jpn:◆おかしな　みせに↓
-;jpn:　いりびたっててよう。@KEY()↓
-;jpn:◆はなしが　ぜんぜん↓
-;jpn:　あわなくなっちまったんだ。@KEY()↓
-;jpn:◆おれたち　もう　おしまいかなぁ。↓
-;jpn:　‥‥フー。@KEYNP()
+;jpn: 「マジックケーキ」うりの↓
+;jpn: しょうばい そっちのけで@KEY()↓
+;jpn:◆おかしな みせに↓
+;jpn: いりびたっててよう。@KEY()↓
+;jpn:◆はなしが ぜんぜん↓
+;jpn: あわなくなっちまったんだ。@KEY()↓
+;jpn:◆おれたち もう おしまいかなぁ。↓
+;jpn: ‥‥フー。@KEYNP()
 @SETF(FLG_TEMP_9)
 』
 _TOTO_SAILOR_TMP;
-◆Ｄｏ　ｙｏｕ　ｗａｎｎａ　ｈｅａｒ　ｔｈｅ　ｓａｍｅ　ｓｔｏｒｙ　ａｇａｉｎ？↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆なんども　おんなじはなしを↓
-;jpn:　きくんだな？↓
-;jpn:　　<はい>　　<いいえ>
+◆Do you wanna hear the same story again?↓
+<Yes>
+<No>
+;jpn:◆なんども おんなじはなしを↓
+;jpn: きくんだな?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_TOTO_SAILOR_A_YES,_TOTO_SAILOR_A_NO)
 @GOTO(_TOTO_SAILOR_A_NO)
 
 _TOTO_SAILOR_AFTER;
 @CHKFGOTO(FLG_TOTO_SAILOR_MSGCHG,_TOTO_SAILOR_AFTER_MAIN)
-◆Ｔｈａｎｋ　ｙｏｕ！@KEY()↓
-◆Ｙｏｕ　ｍａｄｅ　ｍｙ　ｗｉｆｅ　ｗａｋｅ　ｕｐ．@KEY()↓
-◆Ｓｈｅ　ｑｕｉｔ　ｔａｌｋｉｎｇ　ａｂｏｕｔ　ａｌｌ　ｔｈａｔ　ｓｅｒｉｏｕｓ　ｃｒａｐ．．．@KEY()↓
-◆Ｙｅａｈ！@KEY()↓
-◆Ｌｅｔ’ｓ　ｗｏｒｋ　ｈａｒｄ！@KEY()↓
-;jpn:◆あんたたちの　おかげで↓
-;jpn:　にょうぼが↓
-;jpn:　めを　さましてくれた。@KEY()↓
-;jpn:◆ぜんっぜん　ムツカシイことも↓
-;jpn:　いわなくなったし‥‥。@KEY()↓
-;jpn:◆さぁ！@WI(15)　おれも　はりきるぞ！@KEY()↓
+◆Thank you!@KEY()↓
+◆You made my wife wake up.@KEY()↓
+◆She quit talking about all that serious crap...@KEY()↓
+◆Yeah!@KEY()↓
+◆Let’s work hard!@KEY()↓
+;jpn:◆あんたたちの おかげで↓
+;jpn: にょうぼが↓
+;jpn: めを さましてくれた。@KEY()↓
+;jpn:◆ぜんっぜん ムツカシイことも↓
+;jpn: いわなくなったし‥‥。@KEY()↓
+;jpn:◆さぁ!@WI(15) おれも はりきるぞ!@KEY()↓
 @SETF(FLG_TOTO_SAILOR_MSGCHG)
 ;
 _TOTO_SAILOR_AFTER_MAIN;２度目以降
-◆Ｉｆ　ｙｏｕ’ｒｅ　ｃｏｕｒａｇｅｏｕｓ，　ｇｅｔ　ｏｎ　ｔｈｉｓ　ｂｏａｔ．@KEY()↓
-◆Ｙｏｕ’ｌｌ　ｐｒｏｂａｂｌｙ　ｓｅｅ　ｔｈｅ　Ｋｒａｋｅｎ　ａｎｄ　ｅｘｐｅｒｉｅｎｃｅ　ｇｅｔｔｉｎｇ　ｓｅａｓｉｃｋ！@KEY()↓
-◆Ａｆｔｅｒ　ａｌｌ，　ｉｔ　ｃｏｕｌｄ　ｏｎｌｙ　ｃｏｓｔ　ｙｏｕ　ｙｏｕｒ　ｌｉｆｅ，　ａｎｄ　ｙｏｕ　ｇｏｔ　ｔｈａｔ　ｆｏｒ　ｆｒｅｅ！@KEY()↓
-◆Ｌｕｃｋ　ｗｉｌｌ　ｄｅｔｅｒｍｉｎｅ　ｔｈｅ　ｏｕｔｃｏｍｅ　ｏｆ　ｔｈｉｓ　ｖｏｙａｇｅ．@KEY()↓
-◆Ｓｏ，　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓａｉｌ　ｔｈｅ　ｓｅａｓ　ｔｏ　Ｓｃａｒａｂａ？@KEY()↓
+◆If you’re courageous, get on this boat.@KEY()↓
+◆You’ll probably see the Kraken and experience getting seasick!@KEY()↓
+◆After all, it could only cost you your life, and you got that for free!@KEY()↓
+◆Luck will determine the outcome of this voyage.@KEY()↓
+◆So, do you want to sail the seas to Scaraba?@KEY()↓
 ;jpn:◆ゆうきのあるやつなら↓
-;jpn:　ふねに　のんなよ。@KEY()↓
-;jpn:◆クラーケンも　みられるし↓
-;jpn:　ふなよいも　けいけんできるぜ。@KEY()↓
-;jpn:◆どうせ　ただでもらった　いのち。↓
-;jpn:　ひろうも　おとすも　うんしだい。↓
-;jpn:　スカラビに　わたるかね？@KEY()↓
+;jpn: ふねに のんなよ。@KEY()↓
+;jpn:◆クラーケンも みられるし↓
+;jpn: ふなよいも けいけんできるぜ。@KEY()↓
+;jpn:◆どうせ ただでもらった いのち。↓
+;jpn: ひろうも おとすも うんしだい。↓
+;jpn: スカラビに わたるかね?@KEY()↓
 _TOTO_SAILOR_LATER_MAIN;;
-◆Ｔｗｅｎｔｙ　ｂｕｃｋｓ　ｐｅｒ　ｐｅｒｓｏｎ　ｉｓ　ｆｉｎｅ　ｗｉｔｈ　ｍｅ．↓
-;jpn:◆ひとり　２０ドルで　いいぜ。↓
+◆Twenty bucks per person is fine with me.↓
+;jpn:◆ひとり ２０ドルで いいぜ。↓
 @WINR_MONEY()
-<Ｙｅｓ>
-<Ｎｏ>
+<Yes>
+<No>
 
-;jpn:　　<はい>　　<いいえ>
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_TOTO_SAILOR_A_AFTER_YES,_TOTO_SAILOR_A_AFTER_NO)
 
 _TOTO_SAILOR_A_AFTER_NO;
-◆Ｉ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
-◆Ｓｔａｙ　ｈｅｒｅ　ａｎｄ　ｓｈｉｖｅｒ　ｉｎ　ｆｅａｒ　ｆｏｒ　ｙｏｕｒ　ｆｕｔｕｒｅ！@KEY()↓
-◆Ｈａ　ｈａ　ｈａ　ｈａ　ｈａ　ｈａ！
+◆I understand.@KEY()↓
+◆Stay here and shiver in fear for your future!@KEY()↓
+◆Ha ha ha ha ha ha!
 @KEYNP()
-;jpn:◆そうか　むりもないな。↓
-;jpn:　そのへんで　ぶるぶるふるえてな。@WI(20)↓
-;jpn:　ハハハハハ！@KEYNP()
+;jpn:◆そうか むりもないな。↓
+;jpn: そのへんで ぶるぶるふるえてな。@WI(20)↓
+;jpn: ハハハハハ!@KEYNP()
 』
 
 _TOTO_SAILOR_A_AFTER_YES;
@@ -1593,103 +1593,103 @@ _TOTO_SAILOR_A_AFTER_YES;
 @SE(SE_se76_my_give)
 @MONEYOUT(0)
 @WINR_MONEY()
-◆Ｒｅａｄｙ！@KEY()↓
-◆Ｗｅ’ｒｅ　ｒｅｃｋｌｅｓｓ，　ｂａｂｙ！@KEY()↓
-◆Ｂｏｎ　Ｖｏｙａｇｅ！
+◆Ready!@KEY()↓
+◆We’re reckless, baby!@KEY()↓
+◆Bon Voyage!
 @KEYNP()
-;jpn:◆ようし！↓
-;jpn:　いのちしらずたちよ！↓
-;jpn:　ヨーソロー！@KEY()
+;jpn:◆ようし!↓
+;jpn: いのちしらずたちよ!↓
+;jpn: ヨーソロー!@KEY()
 @CLOSEALL()
 @GOTO(MSG_EVT_85_ONBOARD)
 』
 
 _TOTO_SAILOR_A_NOMONEY;
-◆Ｗｈａｔ？@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｎｏ　ｍｏｎｅｙ？！@KEY()↓
-◆Ｃｏｍｅ　ｂａｃｋ　ａｆｔｅｒ　ｙｏｕ　ｍａｋｅ　ｓｏｍｅ　ｍｏｎｅｙ．
+◆What?@KEY()↓
+◆You have no money?!@KEY()↓
+◆Come back after you make some money.
 @KEYNP()
-;jpn:◆えっ　かねがない？！↓
-;jpn:　どっかで　かせいで　またおいで。@KEYNP()
+;jpn:◆えっ かねがない?!↓
+;jpn: どっかで かせいで またおいで。@KEYNP()
 』
 _TOTO_SAILOR_LATER;
-◆Ｃｏｍｐａｒｅｄ　ｔｏ　ｔｈｅ　ｏｌｄｅｎ　ｄａｙｓ，　ｔｈｉｓ　ｂｏａｔ　ｒｉｄｅ　ｉｓ　ｌｉｋｅ　ｂｅｉｎｇ　ｏｎ　ａ　ｌｕｘｕｒｙ　ｌｉｎｅｒ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ａｎｏｔｈｅｒ　ｒｉｄｅ？@KEY()↓
-◆Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａ　ｒｉｄｅ　ｉｆ　ｙｏｕ　ｗａｎｔ，　ｓｉｎｃｅ　ｙｏｕ　ｄｅｓｔｒｏｙｅｄ　ｔｈｅ　Ｋｒａｋｅｎ．@KEY()↓
+◆Compared to the olden days, this boat ride is like being on a luxury liner.@KEY()↓
+◆Do you want another ride?@KEY()↓
+◆I’ll give you a ride if you want, since you destroyed the Kraken.@KEY()↓
 ;jpn:◆むかしにくらべりゃ↓
-;jpn:　この　ふねのたびも↓
-;jpn:　まるで　ゆうらんせんさ。@KEY()↓
-;jpn:◆おまえたちが　クラーケンを↓
-;jpn:　たいじしてくれたから‥‥@WI(30)↓
-;jpn:　また　のるかい？@KEY()↓
+;jpn: この ふねのたびも↓
+;jpn: まるで ゆうらんせんさ。@KEY()↓
+;jpn:◆おまえたちが クラーケンを↓
+;jpn: たいじしてくれたから‥‥@WI(30)↓
+;jpn: また のるかい?@KEY()↓
 @GOTO(_TOTO_SAILOR_LATER_MAIN)
 
 MSG_CAT_1;ネコ
-◆Ｆｓｓｔ　Ｆｓｓｔ．
+◆Fsst Fsst.
 @KEYNP()
 ;DAN: Just ask me.
 ;jpn:◆ゴロゴロ@KEYNP()
 』
 MSG_CAT_2;やなぎのネコ
-◆Ｍｅｏｗ．
+◆Meow.
 @KEYNP()
 ;jpn:◆ニャア@KEYNP()
 』
 ;-------------------------------------------------
 
-MSG_SUMS_STOIC_WIFE;マジックケーキ売り（ストイック）
-◆Ｉ’ｖｅ　ｆｉｎａｌｌｙ　ａｗａｋｅｎｅｄ　ｔｈｅ　ｉｎｎｅｒ　ｍｅ，　ｔｈｅ　ｔｒｕｅ　ｓｅｌｆ．@KEY()↓
-◆Ｔｈｅ　ｐａｔｒｏｎｓ　ｏｆ　ｔｈｉｓ　ｃｌｕｂ　ａｒｅ　ａｂｌｅ　ｔｏ　ｓｔａｒｅ　ｉｎｔｏ　ｔｈｅｉｒ　ｏｗｎ　ｓｏｕｌ　ｈａｒｄ@KEY()↓
-◆ｅｎｏｕｇｈ　ｔｏ　ｂｕｒｎ　ａ　ｈｏｌｅ　ｉｎ　ｔｈｅｉｒ　ｐｓｙｃｈｅ．@KEY()↓
-◆Ｉ’ｍ　ｎｏｗ　ｃｏｍｆｏｒｔａｂｌｅ　ｅｎｏｕｇｈ　ｔｏ　ｓｔａｒｅ　ａｔ　ｔｈｅ　ｒｅａｌ　ｍｅ，　ｔｈｅ　ｔｒｕｅ　ｓｅｌｆ，@KEY()↓
-◆ａｎｄ　ｂｕｒｎ　ｔｈｅ　ｉｍｐｒｅｓｓｉｏｎ　ｉｎｔｏ　ｍｙ　ｓｕｐｅｒ−ｅｇｏ．@KEY()↓
-◆Ｉ　ｗａｎｔ　ｔｏ　ｂｅ　ｉｎ　ｔｈｉｓ　ｃｏｍｆｏｒｔ　ｚｏｎｅ　ａｔ　ａｎｙ　ｔｉｍｅ，　ａｌｌ　ｔｈｅ　ｔｉｍｅ　ｏｒ　ａｔ　ｎｏ　ｔｉｍｅ．@KEY()↓
-◆Ｍｙ　ｉｄ　ｉｓ　ｔｅｌｌｉｎｇ　ｍｅ．．．
-;jpn:◆わたし　やっと　このごろ↓
-;jpn:　じいしきに　めざめたと↓
-;jpn:　いっていいとおもうの。@KEY()↓
-;jpn:◆このクラブの　ひとたちって@KEY()↓
-;jpn:◆じこの　そんざいを↓
-;jpn:　あなが　あくほど↓
-;jpn:　みつめていて‥‥@KEY()↓
-;jpn:◆わたし　あながあきそうに↓
-;jpn:　ここちいい　じこよ。@KEY()↓
+MSG_SUMS_STOIC_WIFE;マジックケーキ売り(ストイック)
+◆I’ve finally awakened the inner me, the true self.@KEY()↓
+◆The patrons of this club are able to stare into their own soul hard@KEY()↓
+◆enough to burn a hole in their psyche.@KEY()↓
+◆I’m now comfortable enough to stare at the real me, the true self,@KEY()↓
+◆and burn the impression into my super−ego.@KEY()↓
+◆I want to be in this comfort zone at any time, all the time or at no time.@KEY()↓
+◆My id is telling me...
+;jpn:◆わたし やっと このごろ↓
+;jpn: じいしきに めざめたと↓
+;jpn: いっていいとおもうの。@KEY()↓
+;jpn:◆このクラブの ひとたちって@KEY()↓
+;jpn:◆じこの そんざいを↓
+;jpn: あなが あくほど↓
+;jpn: みつめていて‥‥@KEY()↓
+;jpn:◆わたし あながあきそうに↓
+;jpn: ここちいい じこよ。@KEY()↓
 ;jpn:◆しろくじちゅうも↓
-;jpn:　ごろくじちゅうも@KEY()↓
+;jpn: ごろくじちゅうも@KEY()↓
 ;jpn:◆このみせに↓
-;jpn:　そんざいしていたいわ。
+;jpn: そんざいしていたいわ。
 @CHKFGOTO(FLG_SUMS_MASSAGE_APPEAR,_SUMS_STOIC_WIFE_TMP)
 @KEYNP()
 』
 _SUMS_STOIC_WIFE_TMP;
 @KEY()↓
-◆Ｗｈａｔ？　　Ｗｈａｔ？@WI(15)　　Ｍａｇｉｃ　Ｃａｋｅ？@KEY()↓
-◆Ｙｏｕ　ｃａｍｅ　ａｌｌ　ｔｈｉｓ　ｗａｙ　ｊｕｓｔ　ｔｏ　ｅａｔ　ｍｙ　Ｍａｇｉｃ　Ｃａｋｅ？↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆えっ@WI(20)　マジックケーキですって？↓
-;jpn:　わたしの　マジックケーキを↓
-;jpn:　たべたくて　わざわざ　ここまで？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+◆What?  What?@WI(15)  Magic Cake?@KEY()↓
+◆You came all this way just to eat my Magic Cake?↓
+<Yes>
+<No>
+;jpn:◆えっ@WI(20) マジックケーキですって?↓
+;jpn: わたしの マジックケーキを↓
+;jpn: たべたくて わざわざ ここまで?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SUMS_STOIC_WIFE_YES,_SUMS_STOIC_WIFE_NO)
 _SUMS_STOIC_WIFE_NO;
-◆Ｏｋａｙ　ｔｈｅｎ，　ｄｏｎ’ｔ　ｇｅｔ　ｉｎ　ｍｙ　ｗａｙ　ｗｈｉｌｅ　Ｉ　ｓｅａｒｃｈ　ｆｏｒ　ｔｈｅ　ｌｉｔｔｌｅ　ｇｉｒｌ　ｗｉｔｈｉｎ　ｍｅ．．．
+◆Okay then, don’t get in my way while I search for the little girl within me...
 @KEYNP()
-;jpn:◆そう‥‥じゃ　わたしの↓
-;jpn:　なんかいのだいぼうけんというか↓
-;jpn:　むつかしばなしというか‥‥の@KEY()↓
-;jpn:◆じゃまな　きんしを　しないで。@KEYNP()
+;jpn:◆そう‥‥じゃ わたしの↓
+;jpn: なんかいのだいぼうけんというか↓
+;jpn: むつかしばなしというか‥‥の@KEY()↓
+;jpn:◆じゃまな きんしを しないで。@KEYNP()
 』
 _SUMS_STOIC_WIFE_YES;
-◆Ｉ　ｓｅｅ．．．ｏｋａｙ．．．@KEY()↓
-◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｓｔｏｐ　ｂｙ　ａ　ｌｉｔｔｌｅ　ｃａｒｔ　ｏｕｔ　ｏｎ　ｔｈｅ　ｂｅａｃｈ　ｌａｔｅｒ？
+◆I see...okay...@KEY()↓
+◆Why don’t you stop by a little cart out on the beach later?
 @KEYNP()
-;jpn:◆‥‥そ@WI(15)　そう。↓
+;jpn:◆‥‥そ@WI(15) そう。↓
 @WI(60)↓
-;jpn:　‥‥‥。@KEY()↓
-;jpn:◆じゃ　あとで　ビーチの↓
-;jpn:　ワゴンまで　いらっしゃい。@KEY()
+;jpn: ‥‥‥。@KEY()↓
+;jpn:◆じゃ あとで ビーチの↓
+;jpn: ワゴンまで いらっしゃい。@KEY()
 @CLOSEALL()
 ;ケーキ妻を階段に消えるアニメと交換
 @REMOVE_CHAR( PRSN_SUMS_STOIC_G, ANIM_GO_OUT_CAKEWIFE )
@@ -1701,34 +1701,34 @@ _SUMS_STOIC_WIFE_YES;
 ;更に追加分
 
 MSG_SUMS_SWIMSUITMAN_E;
-◆Ｏｎｌｙ　ａ　ｔａｎｎｉｎｇ　ｐｒｏ　ｌｉｋｅ　ｍｅ　ｉｓ　ａｂｌｅ　ｔｏ　ｇｅｔ　ａｎ　ａｃｔｕａｌ　ｓｕｎｔａｎ　ｏｎ　ｔｈｅ　ｐａｌｍｓ　ｏｆ　ｈｉｓ　ｈａｎｄｓ！
+◆Only a tanning pro like me is able to get an actual suntan on the palms of his hands!
 @KEYNP()
-;jpn:◆（おれみたいな　ひやけのプロは@WI(20)↓
-;jpn:　こうして　てのひらもやくもんだ）@KEYNP()
+;jpn:◆(おれみたいな ひやけのプロは@WI(20)↓
+;jpn: こうして てのひらもやくもんだ)@KEYNP()
 』
 MSG_SUMS_SWIMSUITGAL_C;
-◆Ｉ’ｍ　ｊｕｓｔ　ｔｒｙｉｎｇ　ｔｏ　ｔａｋｅ　ａ　ｎａｐ　ｉｎ　ｔｈｅ　ｓｈａｄｅ．　　Ｄｏｎ’ｔ　ｂｏｔｈｅｒ　ｍｅ！
+◆I’m just trying to take a nap in the shade.  Don’t bother me!
 @KEYNP()
-;jpn:◆（ひかげで　ひるねしてるの。@WI(20)↓
-;jpn:　じゃましないでね）@KEYNP()
+;jpn:◆(ひかげで ひるねしてるの。@WI(20)↓
+;jpn: じゃましないでね)@KEYNP()
 』
 ;-------------------------------------------------
 
 MSG_SUMS_RESTAURANT_E;
-◆Ｐｏｏｏｏｗｅｅｅｅｔ！@WI(60)↓
-　　Ｏｏｏｏ．．．ｓｏｒｒｙ．．．@KEY()↓
-◆Ｙ’ｋｎｏｗ，　Ｉ　ｃａｎ’ｔ　ｑｕｉｔｅ　ｄｅｓｃｒｉｂｅ　ｉｔ．．．@KEY()↓
-◆Ｄｒｉｎｋｉｎｇ　ｇｌａｓｓ　ａｆｔｅｒ　ｇｌａｓｓ　ｏｆ　ｉｃｅ　ｃｏｆｆｅｅ　ｉｓ．．．ｗｅｌｌ．．．@KEY()↓
-◆Ｂｕｕｕｕｒｐ！@WI(90)↓
-　　Ｏｏｏｏ．．．’ｓｃｕｓｅ　ｍｅ．．．
+◆Pooooweeeet!@WI(60)↓
+  Oooo...sorry...@KEY()↓
+◆Y’know, I can’t quite describe it...@KEY()↓
+◆Drinking glass after glass of ice coffee is...well...@KEY()↓
+◆Buuuurp!@WI(90)↓
+  Oooo...’scuse me...
 @KEYNP()
-;jpn:◆プハーーーーッ！@WI(90)↓
-;jpn:　いや　しっけいしっけい。@KEY()↓
-;jpn:◆なんちゅうか　この↓
-;jpn:　ひるまのビールっちゅうのは↓
-;jpn:　じつに　なんちゅうか‥‥@KEY()↓
-;jpn:◆ゲフーッ！@WI(90)↓
-;jpn:　いや　しっけいしっけい。@KEYNP()
+;jpn:◆プハーーーーッ!@WI(90)↓
+;jpn: いや しっけいしっけい。@KEY()↓
+;jpn:◆なんちゅうか この↓
+;jpn: ひるまのビールっちゅうのは↓
+;jpn: じつに なんちゅうか‥‥@KEY()↓
+;jpn:◆ゲフーッ!@WI(90)↓
+;jpn: いや しっけいしっけい。@KEYNP()
 』
 ;-------------------------------------------------
 
@@ -1736,41 +1736,41 @@ MSG_SUMS_RESTAURANT_E;
 ;0717
 
 MSG_TOTO_WELCOME
-◆（Ｅａｓｔ　ｏｆ　ｈｅｒｅ　ｉｓ　ｔｈｅ　ｐｏｒｔ　ｔｏｗｎ　ｏｆ　Ｔｏｔｏ）@KEY()↓
-◆．．．Ｎｏ，　ｎｏ．．．↓
-　　Ｉ’ｍ　ｎｏｔ　ａ　ｂｉｌｌｂｏａｒｄ．．．
+◆(East of here is the port town of Toto)@KEY()↓
+◆...No, no...↓
+  I’m not a billboard...
 @KEYNP()
 
-;jpn:◆（ここから　ひがしは↓
-;jpn:　みなとのあるまち「トト」）↓
+;jpn:◆(ここから ひがしは↓
+;jpn: みなとのあるまち「トト」)↓
 @KEY()↓
-;jpn:◆@WI(10)‥‥わ　@WI(20)わしは↓
-;jpn:　かんばんじゃ　ないぞ。@KEYNP()
+;jpn:◆@WI(10)‥‥わ @WI(20)わしは↓
+;jpn: かんばんじゃ ないぞ。@KEYNP()
 』
 
 
 ;《ストイッククラブの近く》
 MSG_READ_SUMMERS_SIGN3
-◆（Ｈａｖｅ　ａ　ｆａｎｔａｓｔｉｃ　ｖａｃａｔｉｏｎ！@KEY()↓
-◆Ａｔ　ｌｅａｓｔ　ｕｎｔｉｌ　ｙｏｕ　ｒｕｎ　ｏｕｔ　ｏｆ　ｍｏｎｅｙ．↓
-　　　　　　Ｈｏｔｅｌ　Ｄｕ　Ｓｕｍｍｅｒｓ）
+◆(Have a fantastic vacation!@KEY()↓
+◆At least until you run out of money.↓
+      Hotel Du Summers)
 @KEYNP()
-;jpn:◆（よいバカンスを！@WI(20)↓
-;jpn:　あなたの　おかねのつづくかぎり）↓
-;jpn:　　　　　「オテル・ド・サマーズ」@KEYNP()
+;jpn:◆(よいバカンスを!@WI(20)↓
+;jpn: あなたの おかねのつづくかぎり)↓
+;jpn:     「オテル・ド・サマーズ」@KEYNP()
 』
 
 
 ;《病院の近く》
 MSG_READ_SUMMERS_SIGN5
-◆Ｔｈｅｒｅ　ｉｓ　ｇｒａｆｆｉｔｉ　ｏｎ　ｔｈｅ　ｂｏａｒｄ．．．Ｔｈｅ　ｈａｎｄｗｒｉｔｉｎｇ　ｉｓ　ｈａｒｄ　ｔｏ　ｒｅａｄ．．．@KEY()↓
-◆（@DSP_NAME(PC_NESS)　ｃａｎ　ｅａｔ　ｍｙ　ｓｈｏｒｔｓ！@WI(20)↓
-　　Ｆｏｒ　ａ　ｎｅｉｇｈｂｏｒ，　ｈｅ’ｓ　ａ　ｌｏｓｅｒ！）
+◆There is graffiti on the board...The handwriting is hard to read...@KEY()↓
+◆(@DSP_NAME(PC_NESS) can eat my shorts!@WI(20)↓
+  For a neighbor, he’s a loser!)
 @KEYNP()
-;jpn:◆かんばんには　へたなもじで↓
-;jpn:　らくがきが　されていた。@KEY()↓
-;jpn:◆（ボンジュール　@DSP_STS(STS_PC_NAME_NES)！@WI(20)↓
-;jpn:　おまえが　これをよんでるころ↓
-;jpn:　おれは　もう　へっへっへ！）@KEYNP()
+;jpn:◆かんばんには へたなもじで↓
+;jpn: らくがきが されていた。@KEY()↓
+;jpn:◆(ボンジュール @DSP_STS(STS_PC_NAME_NES)!@WI(20)↓
+;jpn: おまえが これをよんでるころ↓
+;jpn: おれは もう へっへっへ!)@KEYNP()
 』
 ;-------------------------------------------------

@@ -12,98 +12,98 @@ MSG_RAMA_MASTER;
 @CHKFGOTO(FLG_PU,_RAMA_MASTER_PU)
 @CHKFGOTO(FLG_RAMA_OK,_RAMA_MASTER_OK)
 @CHKFGOTO(FLG_TEMP_9,_RAMA_MASTER_1)
-◆Ｉ　ｗｏｎ’ｔ　ｓａｙ　ａｎｙｔｈｉｎｇ．@KEY()↓
-◆Ｇｏ　ｔｏ　”Ｍｕ，”　ｔｈｅ　ｐｌａｃｅ　ｏｆ　ｅｍｐｔｉｎｅｓｓ　ａｇａｉｎ．
+◆I won’t say anything.@KEY()↓
+◆Go to ”Mu,” the place of emptiness again.
 @KEYNP()
-;jpn:◆なにも　もうしあげませぬ。↓
-;jpn:　もういちど　ムのばしょへ↓
-;jpn:　おいきくだされ。@KEYNP()
+;jpn:◆なにも もうしあげませぬ。↓
+;jpn: もういちど ムのばしょへ↓
+;jpn: おいきくだされ。@KEYNP()
 @GOSUB(MSG_EVT_79_MU_SET_HRECT_A);修行再セット
 』
 _RAMA_MASTER_1;
-◆Ｇｏ　ｑｕｉｃｋｌｙ！
+◆Go quickly!
 @KEYNP()
-;jpn:◆さぁ　はやく！@KEYNP()
+;jpn:◆さぁ はやく!@KEYNP()
 』
 
 _RAMA_MASTER_OK;修行後のセリフとして
-◆Ｉ　ａｍ　ｐｒｏｕｄ．@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｃｏｍｐｌｅｔｅｄ　ｙｏｕｒ　Ｍｕ　ｔｒａｉｎｉｎｇ．@KEY()↓
-◆Ｔｈｅｒｅ　ｉｓ　ｎｏｔｈｉｎｇ　ｍｏｒｅ　ｔｏ　ｔｅａｃｈ　ｙｏｕ　ｆｒｏｍ　ｔｈｅ　ｈｏｌｙ　ｗｒｉｔｉｎｇｓ．
+◆I am proud.@KEY()↓
+◆You have completed your Mu training.@KEY()↓
+◆There is nothing more to teach you from the holy writings.
 @KEYNP()
 ;jpn:◆「ムのしゅぎょう」に↓
-;jpn:　よくぞ　たえてくれました。@KEY()↓
-;jpn:◆これで　このイースーチーめが↓
-;jpn:　あなたに　おおしえすることは↓
-;jpn:　なにも　なくなりました。@KEYNP()
+;jpn: よくぞ たえてくれました。@KEY()↓
+;jpn:◆これで このイースーチーめが↓
+;jpn: あなたに おおしえすることは↓
+;jpn: なにも なくなりました。@KEYNP()
 @CLOSE()
 @GOSUB( MSG_SUB_BGM_FADEOUT_LONG )
 @BGMSTART(0,BGM_home0);エデン序曲
 @WI(60)
 @OPEN( 1 )
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)，@KEY()↓
-◆Ｉ　ｓｈａｌｌ　ｒｅｌａｙ　ａ　ｍｅｓｓａｇｅ　ｔｏ　ｙｏｕ　ｆｒｏｍ　Ｅｔｅｒｎｉｔｙ．@KEY()↓
-◆Ｔｈｅ　ｅｖｉｌ　ｅｎｔｉｔｙ　ｔｈａｔ　ｃｏｎｔｒｏｌｓ　ａｌｌ　ｗｉｃｋｅｄｎｅｓｓ　ｉｓ　ｐｒｅｐａｒｉｎｇ　ｆｏｒ@KEY()↓
-◆ｔｈｅ　ｇｒｅａｔｅｓｔ　ｓｔｒｕｇｇｌｅ　ｏｆ　ａｌｌ　ｔｉｍｅ．．．@KEY()↓
-◆Ｔｈｅ　ｏｎｌｙ　ｏｎｅｓ　ｗｈｏ　ｃａｎ　ｃｈａｌｌｅｎｇｅ　ｔｈｅ　ｅｎｔｉｔｙ　ａｒｅ　ｔｈｒｅｅ　ｂｏｙｓ　ａｎｄ　ｏｎｅ　ｇｉｒｌ．@KEY()↓
-◆Ｏｎｅ　ｎａｍｅｄ　@DSP_NAME(PC_NESS)　ｉｓ　ｔｈｅ　ｌｅａｄｅｒ　ｏｆ　ｔｈｅ　ｆｏｕｒ．@KEY()↓
-◆Ｏｎｅ　ｏｆ　ｔｈｅ　ｂｏｙｓ　ｉｓ　ｙｏｕ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．@KEY()↓
-◆Ｎｏｗ　ｔｈａｔ　ｙｏｕ’ｖｅ　ｃｏｍｐｌｅｔｅｄ　ｙｏｕｒ　ｔｒａｉｎｉｎｇ，　ｓｅａｒｃｈ　ｏｕｔ　@DSP_NAME(PC_NESS)　ａｔ　ｏｎｃｅ．@KEY()↓
-◆Ｆｏｒ　ａｌｌ　ｂｅｉｎｇｓ，　ｆｏｒ　ｔｈｅ　ｅａｒｔｈ　ｈｅｒｓｅｌｆ．．．@KEY()↓
-◆Ｉ　ｐｒａｙ　ｆｏｒ　ｇｒｏｗｔｈ　ｉｎ　ｔｈｅ　ｍｉｇｈｔ　ｏｆ　ｔｈｅ　ｆｏｕｒ．@KEYNP()
+◆Prince @DSP_NAME(PC_POO),@KEY()↓
+◆I shall relay a message to you from Eternity.@KEY()↓
+◆The evil entity that controls all wickedness is preparing for@KEY()↓
+◆the greatest struggle of all time...@KEY()↓
+◆The only ones who can challenge the entity are three boys and one girl.@KEY()↓
+◆One named @DSP_NAME(PC_NESS) is the leader of the four.@KEY()↓
+◆One of the boys is you, Prince @DSP_NAME(PC_POO).@KEY()↓
+◆Now that you’ve completed your training, search out @DSP_NAME(PC_NESS) at once.@KEY()↓
+◆For all beings, for the earth herself...@KEY()↓
+◆I pray for growth in the might of the four.@KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさま@KEY()↓
 ;jpn:◆えらばれしランマのおうじの↓
-;jpn:　あなたに↓
-;jpn:　てんのおつげを　つたえまする。@KEY()↓
+;jpn: あなたに↓
+;jpn: てんのおつげを つたえまする。@KEY()↓
 ;jpn:◆すべてのじゃあくなるものを↓
-;jpn:　うごかし　しはいするカミが@KEY()↓
-;jpn:◆れきしじょう　さいだいの↓
-;jpn:　たたかいを　いどんでおりまする。@KEY()↓
-;jpn:◆これを　うけてたてるものは↓
-;jpn:　たった４にんの　しょうねんたち。@KEY()↓
+;jpn: うごかし しはいするカミが@KEY()↓
+;jpn:◆れきしじょう さいだいの↓
+;jpn: たたかいを いどんでおりまする。@KEY()↓
+;jpn:◆これを うけてたてるものは↓
+;jpn: たった４にんの しょうねんたち。@KEY()↓
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)というものが↓
-;jpn:　その　かしらになりまする。@KEY()↓
-;jpn:◆４にんのうちの　ひとりが↓
-;jpn:　@DSP_STS(STS_PC_NAME_POO)おうじ‥‥あなたです。@KEY()↓
-;jpn:◆さいごの　しれんに　うちかった↓
-;jpn:　いま！@KEY()↓
-;jpn:◆すぐに　@DSP_STS(STS_PC_NAME_NES)どののもとへ↓
-;jpn:　とんでくだされ！@KEY()↓
-;jpn:◆おおくの　ひとびとのために↓
-;jpn:　このよの　へいわのために‥‥@KEY()↓
+;jpn: その かしらになりまする。@KEY()↓
+;jpn:◆４にんのうちの ひとりが↓
+;jpn: @DSP_STS(STS_PC_NAME_POO)おうじ‥‥あなたです。@KEY()↓
+;jpn:◆さいごの しれんに うちかった↓
+;jpn: いま!@KEY()↓
+;jpn:◆すぐに @DSP_STS(STS_PC_NAME_NES)どののもとへ↓
+;jpn: とんでくだされ!@KEY()↓
+;jpn:◆おおくの ひとびとのために↓
+;jpn: このよの へいわのために‥‥@KEY()↓
 ;jpn:◆おおきなちからに↓
-;jpn:　なってくだされませい！@KEYNP()
+;jpn: なってくだされませい!@KEYNP()
 @CLOSEALL()
 @WI(1)
 @OPEN(14)
-@EXP_UP_POINT(PC_POO,6000)	;経験値アップ！
-@FKEY()				;必要？
+@EXP_UP_POINT(PC_POO,6000)	;経験値アップ!
+@FKEY()				;必要?
 @CLOSEALL()
 @GOTO(MSG_EVT_80_ADD_PU_SUMS)	;S_EVENTへ
 』
 ;
-;◆あらゆる　しゅぎょうをつんだ↓
-;　あなたですが@KEY()↓
-;◆さいごのしれんに　うちかったら↓
-;　@DSP_STS(STS_PC_NAME_NES)のいるところへ↓
-;　かけつけることになりましょう。@KEY()↓
-;◆‥‥のこされたときは　わずか。@KEY()↓
-;◆すぐに　しれんのちに↓
-;　おもむいてくだされ。@KEY()↓
+;◆あらゆる しゅぎょうをつんだ↓
+; あなたですが@KEY()↓
+;◆さいごのしれんに うちかったら↓
+; @DSP_STS(STS_PC_NAME_NES)のいるところへ↓
+; かけつけることになりましょう。@KEY()↓
+;◆‥‥のこされたときは わずか。@KEY()↓
+;◆すぐに しれんのちに↓
+; おもむいてくだされ。@KEY()↓
 ;◆アンニャやまの「ムのばしょ」へ↓
-;　すぐに　いって↓
-;　しれんを　うけてくださりませ。@KEYNP()
+; すぐに いって↓
+; しれんを うけてくださりませ。@KEYNP()
 』
 _RAMA_MASTER_PU;
-◆Ｙｏｕｒ　ｆｕｔｕｒｅ　ｂａｔｔｌｅ　ｗｉｌｌ　ｂｅ　ｃｏｎｓｉｄｅｒａｂｌｙ　ｍｏｒｅ　ｄａｎｇｅｒｏｕｓ　ｔｈａｎ　ｙｏｕ　ｅｘｐｅｃｔ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｂｅ　ｃａｒｅｌｅｓｓ．．．
+◆Your future battle will be considerably more dangerous than you expect.@KEY()↓
+◆Don’t be careless...
 @KEY()
-;jpn:◆あなたがたの　これからの↓
-;jpn:　たたかいには@KEY()↓
-;jpn:◆ますます　ふきつなかげが↓
-;jpn:　いろこくさしています。@KEY()↓
+;jpn:◆あなたがたの これからの↓
+;jpn: たたかいには@KEY()↓
+;jpn:◆ますます ふきつなかげが↓
+;jpn: いろこくさしています。@KEY()↓
 ;jpn:◆くれぐれも↓
-;jpn:　ゆだんめされぬように‥‥。@KEY()
+;jpn: ゆだんめされぬように‥‥。@KEY()
 @CLOSEALL()			;ワープ前にウィンドウ閉じる
 @GOSUB(MSG_SUB_ALLHEAL_POWR)	;全回復しておく
 @SE(SE_se25_b_healing)
@@ -111,21 +111,21 @@ _RAMA_MASTER_PU;
 @WARP(WARP_RAMA_147)
 』
 _RAMA_MASTER_END;＆
-◆Ａｓ　Ｉ　ｔｈｏｕｇｈｔ，　ｔｈｅ　ｐｒｏｐｈｅｃｙ　ｆｏｒｅｔｏｌｄ　ｏｆ　ｏｕｒ　ｏｎｌｙ　ｃｈａｎｃｅ　ｆｏｒ　ｓｕｃｃｅｓｓ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｅｎｊｏｙ　ｔｈｅ　ｌｉｆｅ　ａｈｅａｄ　ｏｆ　ｙｏｕ　ａｓ　ａ　ｒｅｇｕｌａｒ　ｂｏｙ．
+◆As I thought, the prophecy foretold of our only chance for success.@KEY()↓
+◆Please enjoy the life ahead of you as a regular boy.
 @KEYNP()
-;jpn:◆やはり　よげんは↓
-;jpn:　もっとも　よいかたちで↓
-;jpn:　じょうじゅしました。@KEY()↓
-;jpn:◆あとは　おもいきり↓
-;jpn:　ふつうのしょうねんとしての↓
-;jpn:　ひびを　おたのしみくだされ。@KEYNP()
+;jpn:◆やはり よげんは↓
+;jpn: もっとも よいかたちで↓
+;jpn: じょうじゅしました。@KEY()↓
+;jpn:◆あとは おもいきり↓
+;jpn: ふつうのしょうねんとしての↓
+;jpn: ひびを おたのしみくだされ。@KEYNP()
 』
 
 
 ;@Habitat:ランマ／宮殿／玉座の間
-;@Person:仕え人Ａ
-;@Figure:ランマ男Ｂ
+;@Person:仕え人A
+;@Figure:ランマ男B
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
@@ -134,39 +134,39 @@ _RAMA_MASTER_END;＆
 MSG_RAMA_A;
 @CHKFGOTO(FLG_WIN_GIEGU,_RAMA_A_END)
 @CHKFGOTO(FLG_PU,_RAMA_A_LATER)
-◆Ｕｓｅ　ｔｈｅ　ｔｒｅａｓｕｒｅｓ　ｏｆ　Ｄａｌａａｍ　ａｓ　ｙｏｕ　ｗｉｓｈ．@KEY()↓
-◆Ｇｏ　ｉｎ　ｐｅａｃｅ．
+◆Use the treasures of Dalaam as you wish.@KEY()↓
+◆Go in peace.
 @KEYNP()
-;jpn:◆ランマのくにの　たからは↓
-;jpn:　あなたさまが　ごじゆうに↓
-;jpn:　おつかいください。@KEY()↓
+;jpn:◆ランマのくにの たからは↓
+;jpn: あなたさまが ごじゆうに↓
+;jpn: おつかいください。@KEY()↓
 ;jpn:◆おげんきで。@KEYNP()
 』
 _RAMA_A_LATER;
-◆Ｄｉｄｎ’ｔ　ｙｏｕ　ｍｅｅｔ　ｕｐ　ｗｉｔｈ　ｍａｎｙ　ｍｏｎｓｔｅｒｓ　ａｌｏｎｇ　ｔｈｅ　ｗａｙ？@KEY()↓
-◆Ｒｅｃｅｎｔｌｙ，　ｓｅｖｅｒａｌ　ｂａｄ　ｉｎｃｉｄｅｎｔｓ　ｏｃｃｕｒｒｅｄ　ｉｎ　ｔｈｉｓ　ｐｅａｃｅｆｕｌ　ｃｏｕｎｔｒｙ．．．
+◆Didn’t you meet up with many monsters along the way?@KEY()↓
+◆Recently, several bad incidents occurred in this peaceful country...
 @KEYNP()
-;jpn:◆みちみち　バケモノに↓
-;jpn:　あわれませんでしたか？@KEY()↓
-;jpn:◆このごろは　どうも↓
-;jpn:　この　へいわなくに　にも↓
-;jpn:　よからぬ　ことが‥‥@KEYNP()
+;jpn:◆みちみち バケモノに↓
+;jpn: あわれませんでしたか?@KEY()↓
+;jpn:◆このごろは どうも↓
+;jpn: この へいわなくに にも↓
+;jpn: よからぬ ことが‥‥@KEYNP()
 』
 _RAMA_A_END;＆
-◆Ｗｅ　ｕｎｄｅｒｓｔａｎｄ　ｔｈａｔ　ｙｏｕ’ｖｅ　ｅｘｐｅｒｉｅｎｃｅｄ　ｈａｒｄｓｈｉｐ　ｉｎ　ｔｈｅ　ｐａｓｔ．@KEY()↓
-◆Ｎｏ　ｏｎｅ　ｃｏｕｌｄ　ｆｉｇｈｔ　ｔｈｅ　ｅｖｉｌ　ｅｎｔｉｔｙ，　ｅｘｃｅｐｔ　ｙｏｕ．@KEY()↓
-◆Ｗｅ　ａｒｅ　ｐｒｏｕｄ．@KEY()↓
-◆Ｗｅ　ａｒｅ　ｈａｐｐｙ．
+◆We understand that you’ve experienced hardship in the past.@KEY()↓
+◆No one could fight the evil entity, except you.@KEY()↓
+◆We are proud.@KEY()↓
+◆We are happy.
 @KEYNP()
-;jpn:◆わたくしたちは　あなたがたの↓
-;jpn:　いままでの　くなんのふかさを↓
-;jpn:　ぞんじあげております。@KEY()↓
+;jpn:◆わたくしたちは あなたがたの↓
+;jpn: いままでの くなんのふかさを↓
+;jpn: ぞんじあげております。@KEY()↓
 ;jpn:◆だれひとりとして↓
-;jpn:　あなたがたのかわりに↓
-;jpn:　たたかうことなど@KEY()↓
+;jpn: あなたがたのかわりに↓
+;jpn: たたかうことなど@KEY()↓
 ;jpn:◆できなかったでありましょう。@WI(30)↓
-;jpn:　おみごとでございました。@WI(30)↓
-;jpn:　うれしゅうございます。@KEYNP()
+;jpn: おみごとでございました。@WI(30)↓
+;jpn: うれしゅうございます。@KEYNP()
 』
 
 
@@ -196,28 +196,28 @@ MSG_RAMA_PHONEMASTER;
 @CHKFGOTO(FLG_BOX_RAMA_1,MSG_BOX_EMPTY)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)　ｏｐｅｎｅｄ　ｔｈｅ　ｐｒｅｓｅｎｔ．@KEY()↓
-◆Ｉｎｓｉｄｅ　ｗａｓ　ｔｈｅ　@DSP_GOODS(GDS_FOOD_LUNCH_KING)．
+◆@DSP_NAME(0) opened the present.@KEY()↓
+◆Inside was the @DSP_GOODS(GDS_FOOD_LUNCH_KING).
 @KEYNP()
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　プレゼントのはこを　あけた。@KEY()↓
-;jpn:◆おうじゃのべんとうが　あった。@KEY()↓
+;jpn: プレゼントのはこを あけた。@KEY()↓
+;jpn:◆おうじゃのべんとうが あった。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(MSG_BOX_ITEMFULL)
 @SE(SE_se74_my_get)
 @GOODSIN(PC_ALL,GDS_FOOD_LUNCH_KING)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)　ｇｏｔ　ｉｔ．
+◆@DSP_NAME(0) got it.
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　おうじゃのべんとうを↓
-;jpn:　てにいれた。
+;jpn: おうじゃのべんとうを↓
+;jpn: てにいれた。
 @KEYNP()
 @SETF(FLG_BOX_RAMA_1)
 』
 
 ;@Habitat:ランマ／宮殿／廊下
-;@Person:仕え人Ｂ
+;@Person:仕え人B
 ;@Figure:ランマ女
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -240,55 +240,55 @@ _RAMA_B_2;
 @SET_LOOPREG(PC_POO)
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(_RAMA_B_POO_NO)
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｍｙ　ｆａｖｏｒｉｔｅ．@KEY()↓
-◆（ｂｌｕｓｈ）　ｔｅｅ　ｈｅｅ　ｈｅｅ．
+◆Prince @DSP_NAME(PC_POO).@KEY()↓
+◆You’re my favorite.@KEY()↓
+◆(blush) tee hee hee.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさま。↓
-;jpn:　きょうも　ス・@WI(20)テ・@WI(20)キ@WI(20)　です。↓
-;jpn:　ポッ@KEYNP()
+;jpn: きょうも ス・@WI(20)テ・@WI(20)キ@WI(20) です。↓
+;jpn: ポッ@KEYNP()
 』
 
 _RAMA_B_POO_NO;ネスと共に
-◆Ｓｉｎｃｅ　ｙｏｕ　ｌｅｆｔ　ｆｏｒ　ａ　ｆｏｒｅｉｇｎ　ｃｏｕｎｔｒｙ，@KEY()↓
-◆ｔｈｅ　ｇｉｒｌｓ　ｏｆ　Ｄａｌａａｍ　ｈａｖｅ　ｈａｄ　ｔｏ　ｅｎｄｕｒｅ　ｔｈｅｉｒ　ｌｏｎｅｌｉｎｅｓｓ　ｗｉｔｈｏｕｔ　ｙｏｕ．
+◆Since you left for a foreign country,@KEY()↓
+◆the girls of Dalaam have had to endure their loneliness without you.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまが↓
-;jpn:　がいこくに　いかれてから↓
-;jpn:　ランマの　おんなのコたちは@KEY()↓
-;jpn:◆さみしさを　かみころして↓
-;jpn:　いきておりますわ。@KEYNP()
+;jpn: がいこくに いかれてから↓
+;jpn: ランマの おんなのコたちは@KEY()↓
+;jpn:◆さみしさを かみころして↓
+;jpn: いきておりますわ。@KEYNP()
 』
 _RAMA_B_END;＆
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｈａｓ　ｒｅｔｕｒｎｅｄ，　ｓｏ　ｅｖｅｒｙｏｎｅ　ｉｓ　ｅｘｔｒｅｍｅｌｙ　ｈａｐｐｙ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｓｔａｙ　ａｎｄ　ｒｅｌａｘ．
+◆Prince @DSP_NAME(PC_POO) has returned, so everyone is extremely happy.@KEY()↓
+◆Please stay and relax.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじも↓
-;jpn:　もどってこられたし↓
-;jpn:　みんな　おおよろこび。@KEY()↓
+;jpn: もどってこられたし↓
+;jpn: みんな おおよろこび。@KEY()↓
 ;jpn:◆ゆっくりしてってね。@@KEYNP()
 』
 
 ;----------------------------------------
-;@Habitat:ランマ／住人の家Ａ／住人の家Ａ
-;@Person:住人Ａ
-;@Figure:ランマ男Ａ
+;@Habitat:ランマ／住人の家A／住人の家A
+;@Person:住人A
+;@Figure:ランマ男A
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_RAMA_HOUSE_A
 MSG_RAMA_HOUSE_A;
-;（プレゼントボックスを置く）
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ｉｎ．@KEY()↓
-◆Ｌｏｏｋ　ａｒｏｕｎｄ　ｔｈｅ　ｈｏｕｓｅ　ａｓ　ｍｕｃｈ　ａｓ　ｙｏｕ　ｗａｎｔ．
+;(プレゼントボックスを置く)
+◆Please come in.@KEY()↓
+◆Look around the house as much as you want.
 @KEYNP()
-;jpn:◆これは　これは。↓
-;jpn:　いくらでも　いえのなかを↓
-;jpn:　ごらんください。@KEYNP()
+;jpn:◆これは これは。↓
+;jpn: いくらでも いえのなかを↓
+;jpn: ごらんください。@KEYNP()
 』
 
-;@Habitat:ランマ／住人の家Ａ／住人の家Ａ
+;@Habitat:ランマ／住人の家A／住人の家A
 ;@Person:プレゼント箱
 ;@Figure:東洋風プレゼント箱
 ;@AppearanceKey:0
@@ -300,27 +300,27 @@ MSG_RAMA_HOUSE_A;
 @CHKFGOTO(FLG_BOX_RAMA_2,MSG_BOX_EMPTY)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)　ｏｐｅｎｅｄ　ｔｈｅ　ｐｒｅｓｅｎｔ．@KEY()↓
-◆Ｉｎｓｉｄｅ　ｗａｓ　ａ　@DSP_GOODS(GDS_TOOL_ANGEL_SEED)．@KEY()↓
+◆@DSP_NAME(0) opened the present.@KEY()↓
+◆Inside was a @DSP_GOODS(GDS_TOOL_ANGEL_SEED).@KEY()↓
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　プレゼントのはこを　あけた。@KEY()↓
-;jpn:◆エンジェルシードが　あった。@KEY()↓
+;jpn: プレゼントのはこを あけた。@KEY()↓
+;jpn:◆エンジェルシードが あった。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(MSG_BOX_ITEMFULL)
 @SE(SE_se74_my_get)
 @GOODSIN(PC_ALL,GDS_TOOL_ANGEL_SEED)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)　ｇｏｔ　ｉｔ．
+◆@DSP_NAME(0) got it.
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　エンジェルシードを↓
-;jpn:　てにいれた。
+;jpn: エンジェルシードを↓
+;jpn: てにいれた。
 @KEYNP()
 @SETF(FLG_BOX_RAMA_2)
 』
 
-;@Habitat:ランマ／住人の家Ｂ／住人の家Ｂ
-;@Person:住人Ｂ
+;@Habitat:ランマ／住人の家B／住人の家B
+;@Person:住人B
 ;@Figure:ランマ女
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -329,23 +329,23 @@ MSG_RAMA_HOUSE_A;
 ;@Message:MSG_RAMA_HOUSE_B
 MSG_RAMA_HOUSE_B;
 @CHKFGOTO(FLG_PU,_RAMA_HOUSE_B_LATER)
-◆Ｉ　ｊｕｓｔ　ｒｏａｓｔｅｄ　ｓｏｍｅ　ｇａｒｌｉｃ　ａｎｄ　ａｔｅ　ｉｔ，@KEY()↓
-◆ｓｏ　ｔｈｅ　ｒｏｏｍ　ｓｔｉｌｌ　ｓｔｉｎｋｓ．
+◆I just roasted some garlic and ate it,@KEY()↓
+◆so the room still stinks.
 @KEYNP()
-;jpn:◆いま　にんにくやいてたべてたから↓
-;jpn:　へやのなかが　くさいんです。@KEYNP()
+;jpn:◆いま にんにくやいてたべてたから↓
+;jpn: へやのなかが くさいんです。@KEYNP()
 』
 _RAMA_HOUSE_B_LATER;
-◆Ｉ　ｄｉｄｎ’ｔ　ｅａｔ　ａｎｙ　ｇａｒｌｉｃ　ｔｏｄａｙ，　ｓｏ　ｔｈｅ　ｒｏｏｍ　ｄｏｅｓｎ’ｔ　ｓｔｉｎｋ．
+◆I didn’t eat any garlic today, so the room doesn’t stink.
 @KEYNP()
-;jpn:◆きょうは　にんにくを↓
+;jpn:◆きょうは にんにくを↓
 ;jpn:	たべなかったから↓
-;jpn:　へやのなかが　くさくない。@KEYNP()
+;jpn: へやのなかが くさくない。@KEYNP()
 』
 
-;@Habitat:ランマ／住人の家Ｃ／住人の家Ｃ
-;@Person:住人Ｃ
-;@Figure:ランマ男Ｂ
+;@Habitat:ランマ／住人の家C／住人の家C
+;@Person:住人C
+;@Figure:ランマ男B
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
@@ -354,56 +354,56 @@ _RAMA_HOUSE_B_LATER;
 MSG_RAMA_HOUSE_C;
 ;@SE(SE_se72);不明
 @CHKFGOTO(FLG_WIN_GIEGU,_RAMA_HOUSE_C_END)
-@SET_LOOPREG(PC_POO)			;プーのＩＤを主レジに格納
+@SET_LOOPREG(PC_POO)			;プーのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_RAMA_HOUSE_C_TMP)
-◆Ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　ｙｏｕ　ｄｏ　ｄｏ　ｅｖｅｒｙｔｈｉｎｇ　ｗｅｌｌ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｄｏ　ｄｏ？　　Ｏｏｏｐｓ．@KEY()↓
-◆Ｓａｙ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)，　ａｒｅ　ｙｏｕ　ｓｔｉｌｌ　ｐｏｐｕｌａｒ　ｗｉｔｈ　ｔｈｅ　ｇｉｒｌｓ？@KEY()↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆ほっぺたに　ちからが↓
-;jpn:　とまってました。↓
-;jpn:　おっとちがった。　カ　でしたね。@KEY()↓
-;jpn:◆どうです？@WI(15)　@DSP_STS(STS_PC_NAME_POO)おうじ↓
-;jpn:　このごろも　もててますか？↓
-;jpn:　　<はい>　　<いいえ>
+◆You know that you do do everything well, right?@KEY()↓
+◆Do do?  Ooops.@KEY()↓
+◆Say, Prince @DSP_NAME(PC_POO), are you still popular with the girls?@KEY()↓
+<Yes>
+<No>
+;jpn:◆ほっぺたに ちからが↓
+;jpn: とまってました。↓
+;jpn: おっとちがった。 カ でしたね。@KEY()↓
+;jpn:◆どうです?@WI(15) @DSP_STS(STS_PC_NAME_POO)おうじ↓
+;jpn: このごろも もててますか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_RAMA_HOUSE_C_YES,_RAMA_HOUSE_C_NO)
 _RAMA_HOUSE_C_NO;
-◆Ｙｏｕ’ｖｅ　ｂｅｅｎ　ａｃｔｉｎｇ　ｖｅｒｙ　ｓｅｒｉｏｕｓ　ｌａｔｅｌｙ．@KEYNP()
-;jpn:◆さいきん　なんか↓
-;jpn:　きびしすぎるかんじだもんなぁ。@KEYNP()
+◆You’ve been acting very serious lately.@KEYNP()
+;jpn:◆さいきん なんか↓
+;jpn: きびしすぎるかんじだもんなぁ。@KEYNP()
 』
 _RAMA_HOUSE_C_YES;
-◆Ｉ　ｈｅａｒｄ　ｙｏｕ’ｒｅ　ｌｉｖｉｎｇ　ａ　ｍｏｒｅ　ｓｅｒｉｏｕｓ　ｌｉｆｅｓｔｙｌｅ　ｔｈｅｓｅ　ｄａｙｓ．
+◆I heard you’re living a more serious lifestyle these days.
 @KEYNP()
-;jpn:◆と　いっても↓
-;jpn:　すっごくまじめに　やってるって↓
-;jpn:　うわさですよ。@KEYNP()
+;jpn:◆と いっても↓
+;jpn: すっごくまじめに やってるって↓
+;jpn: うわさですよ。@KEYNP()
 』
 _RAMA_HOUSE_C_TMP;
-◆Ｗｅ　ｈａｖｅ　ｄｉｆｆｉｃｕｌｔｙ　ｃｏｍｍｕｎｉｃａｔｉｎｇ　ｗｉｔｈ　ｆｏｒｅｉｇｎｅｒｓ．
+◆We have difficulty communicating with foreigners.
 @KEYNP()
 ;jpn:◆わたしたち↓
-;jpn:　がいこくの　かたには↓
-;jpn:　うまく　はなしができないんです。@KEYNP()
+;jpn: がいこくの かたには↓
+;jpn: うまく はなしができないんです。@KEYNP()
 』
 _RAMA_HOUSE_C_END;＆
-◆Ｈｅｌｌｏ．@KEY()↓
-◆Ｃｏｎｇｒａｔｕｌａｔｉｏｎｓ．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ．．．@KEY()↓
-◆．．．Ｏｈ，　ｍｙ　ｆｏｒｅｉｇｎ　ｌａｎｇｕａｇｅ　ｓｋｉｌｌｓ　ｗｏｒｋｅｄ！
+◆Hello.@KEY()↓
+◆Congratulations.@KEY()↓
+◆Thank you...@KEY()↓
+◆...Oh, my foreign language skills worked!
 @KEYNP()
 ;jpn:◆こんにちは。@WI(20)おめでとう。@WI(20)↓
-;jpn:　ありがとう‥‥@KEY()↓
-;jpn:◆‥‥あらま　ぼくったら↓
-;jpn:　がいこくごが　つうじたみたい。@KEYNP()
+;jpn: ありがとう‥‥@KEY()↓
+;jpn:◆‥‥あらま ぼくったら↓
+;jpn: がいこくごが つうじたみたい。@KEYNP()
 』
 
 ;----------------------------------------
 ;@Habitat:ランマ／フィールド／フィールドの適当なところ
-;@Person:外のランマ人Ａ
+;@Person:外のランマ人A
 ;@Figure:ロープマジック男
 ;@AppearanceKey:0
 ;@ActionScript:◆固定
@@ -411,18 +411,18 @@ _RAMA_HOUSE_C_END;＆
 ;@CheckMessage:0
 ;@Message:MSG_RAMA_FIELD_A
 MSG_RAMA_FIELD_A;
-◆．．．．．@KEY()↓
-◆ｐｒｅｅｅｔ！．．．@KEY()↓
-◆ｐｏｏｏｏｏｔ！．．．
+◆.....@KEY()↓
+◆preeet!...@KEY()↓
+◆pooooot!...
 @KEYNP()
 ;jpn:◆‥‥‥。↓
-;jpn:　‥‥‥　　　　@WI(60)プッ‥‥‥↓
-;jpn:　‥‥‥@WI(20)プピー‥‥。@KEYNP()
+;jpn: ‥‥‥    @WI(60)プッ‥‥‥↓
+;jpn: ‥‥‥@WI(20)プピー‥‥。@KEYNP()
 』
 
 ;@Habitat:ランマ／フィールド／フィールドの適当なところ
-;@Person:外のランマ人Ｂ
-;@Figure:ランマ男Ａ
+;@Person:外のランマ人B
+;@Figure:ランマ男A
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
@@ -431,45 +431,45 @@ MSG_RAMA_FIELD_A;
 MSG_RAMA_FIELD_B;
 @CHKFGOTO(FLG_WIN_GIEGU,_RAMA_FIELD_B_END)
 @CHKFGOTO(FLG_PU,_RAMA_FIELD_B_LATER)
-◆Ｗｈａｔ　ｉｓ　ｉｍｍｏｒｔａｌｉｔｙ．．．．．？@KEY()↓
-◆Ｉｓ　ｉｔ　ｅｖｅｒｌａｓｔｉｎｇ　ｌｉｆｅ？@KEY()↓
-◆Ｍｍｍｍｍ　Ｍｍｍｍｍ．
+◆What is immortality.....?@KEY()↓
+◆Is it everlasting life?@KEY()↓
+◆Mmmmm Mmmmm.
 @KEYNP()
-;jpn:◆ふめつ‥‥とは　なにか？↓
-;jpn:　そんざいの　たえられないかるさ。↓
-;jpn:　うーむ　うーむ。@KEYNP()
+;jpn:◆ふめつ‥‥とは なにか?↓
+;jpn: そんざいの たえられないかるさ。↓
+;jpn: うーむ うーむ。@KEYNP()
 』
 _RAMA_FIELD_B_LATER;＃
-◆Ｗｈａｔ’ｓ　ｔｈｅ　ｄｉｆｆｅｒｅｎｃｅ　ｂｅｔｗｅｅｎ　”ｅｘｉｓｔｉｎｇ”　ａｎｄ　”ｅｘｉｔｉｎｇ”@KEY()↓
-◆．．．．．Ｎｏｔｈｉｎｇ？@KEY()↓
-◆Ｍｍｍｍｍ　Ｍｍｍｍｍ
+◆What’s the difference between ”existing” and ”exiting”@KEY()↓
+◆.....Nothing?@KEY()↓
+◆Mmmmm Mmmmm
 @KEYNP()
 ;jpn:◆「そんざい」と「ぞんざい」の↓
-;jpn:　おおきな　ちがいは‥‥@KEY()↓
-;jpn:◆‥‥ないのではないか？↓
-;jpn:　うーむ　うーむ。@KEYNP()
+;jpn: おおきな ちがいは‥‥@KEY()↓
+;jpn:◆‥‥ないのではないか?↓
+;jpn: うーむ うーむ。@KEYNP()
 』
 _RAMA_FIELD_B_END;＆
-◆Ｉ’ｍ　ａ　ｌｉｔｔｌｅ　ｅｍｂａｒｒａｓｓｅｄ　ｔｏ　ｓａｙ　ｉｔ，　ｂｕｔ　Ｉ’ｌｌ　ｔｅｌｌ　ｙｏｕ　ａｎｙｗａｙ．．．@KEY()↓
-◆Ｉ　ｔｈｏｕｇｈｔ　”Ｐｈｉｌｏｓｏｐｈｙ”　ｗａｓ　ｔｈｅ　ｓｔｕｄｙ　ｏｆ　ｓｔｏｎｅｓ．@KEY()↓
-◆Ｉ　ｎｏｗ　ｒｅａｌｉｚｅ　ｉｔ’ｓ　ａｂｏｕｔ　ｓｔｕｄｙｉｎｇ　ａｌｌ　ｎｉｇｈｔ．．．@KEY()↓
-◆．．．Ｗｈａｔ？@KEY()↓
-◆Ｉｔ’ｓ　ｎｏｔ？
+◆I’m a little embarrassed to say it, but I’ll tell you anyway...@KEY()↓
+◆I thought ”Philosophy” was the study of stones.@KEY()↓
+◆I now realize it’s about studying all night...@KEY()↓
+◆...What?@KEY()↓
+◆It’s not?
 @KEYNP()
 ;jpn:◆‥‥いまさら↓
-;jpn:　はずかしいんだけどね@WI(30)↓
-;jpn:　ぼくは‥‥@KEY()↓
-;jpn:◆「てつがく」って@WI(20)　てつのことを↓
-;jpn:　けんきゅうするのかと↓
-;jpn:　おもっていたんだよ。@KEY()↓
+;jpn: はずかしいんだけどね@WI(30)↓
+;jpn: ぼくは‥‥@KEY()↓
+;jpn:◆「てつがく」って@WI(20) てつのことを↓
+;jpn: けんきゅうするのかと↓
+;jpn: おもっていたんだよ。@KEY()↓
 ;jpn:◆てつやで↓
-;jpn:　べんきょうすること↓
-;jpn:　だったんだねぇ‥‥。@KEY()@WI(30)↓
-;jpn:◆‥‥えっ　ちがうの？@KEYNP()
+;jpn: べんきょうすること↓
+;jpn: だったんだねぇ‥‥。@KEY()@WI(30)↓
+;jpn:◆‥‥えっ ちがうの?@KEYNP()
 』
 
 ;@Habitat:ランマ／フィールド／フィールドの適当なところ
-;@Person:外のランマ人Ｃ
+;@Person:外のランマ人C
 ;@Figure:ランマ女
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -478,28 +478,28 @@ _RAMA_FIELD_B_END;＆
 ;@Message:MSG_RAMA_FIELD_C
 MSG_RAMA_FIELD_C;
 @CHKFGOTO(FLG_PU,_RAMA_FIELD_C_LATER)
-◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｉｓ　ｄｅｅｐｌｙ　ｉｎｔｏ　”Ｍｏｏ　Ｔｒａｉｎｉｎｇ．”@KEY()↓
-◆．．．Ｉ　ｗａｎｔ　ｔｏ　ｈｅｌｐ　ｈｉｍ，　ｉｆ　Ｉ　ｃａｎ．
+◆I heard that Prince @DSP_NAME(PC_POO) is deeply into ”Moo Training.”@KEY()↓
+◆...I want to help him, if I can.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさま↓
-;jpn:　さいきん　「メのしゅぎょう」に↓
-;jpn:　こってらっしゃるって　ホント？@KEY()↓
-;jpn:◆わたし　うまれつき↓
-;jpn:　メは　いいほうなの。@WI(20)↓
-;jpn:　‥‥おしえてあげたいわ。@KEYNP()
-;◆うちのくにが　オリンピックに↓
-;　さんかするようになったら↓
-;　どんなユニホームに　なるかしら。@KEYNP()
+;jpn: さいきん 「メのしゅぎょう」に↓
+;jpn: こってらっしゃるって ホント?@KEY()↓
+;jpn:◆わたし うまれつき↓
+;jpn: メは いいほうなの。@WI(20)↓
+;jpn: ‥‥おしえてあげたいわ。@KEYNP()
+;◆うちのくにが オリンピックに↓
+; さんかするようになったら↓
+; どんなユニホームに なるかしら。@KEYNP()
 』
 _RAMA_FIELD_C_LATER;
-◆Ｉ　ｗｏｎｄｅｒ　ｉｆ　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｓｕｃｃｅｅｄｅｄ　ｉｎ　”Ｍｏｏ　Ｔｒａｉｎｉｎｇ”？@KEY()↓
-◆Ｉ　ｗａｎｔｅｄ　ｈｉｍ　ｔｏ　ｃｏｍｅ　ｂｙ　ａｎｄ　ｓｈｏｗ　ｍｅ　ｈｉｓ　ｂｅｓｔ　ｂａｒｎｙａｒｄ　ｉｍｐｒｅｓｓｉｏｎ．
+◆I wonder if Prince @DSP_NAME(PC_POO) succeeded in ”Moo Training”?@KEY()↓
+◆I wanted him to come by and show me his best barnyard impression.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまの↓
-;jpn:　「メのしゅぎょう」は↓
-;jpn:　うまくいったのかしら。@KEY()↓
-;jpn:◆よくなった　メで↓
-;jpn:　わたしを　みつめてほしかった。@KEYNP()
+;jpn: 「メのしゅぎょう」は↓
+;jpn: うまくいったのかしら。@KEY()↓
+;jpn:◆よくなった メで↓
+;jpn: わたしを みつめてほしかった。@KEYNP()
 』
 
 ;@Habitat:ランマ／フィールド／無の場所
@@ -511,24 +511,24 @@ _RAMA_FIELD_C_LATER;
 ;@CheckMessage:MSG_RAMA_CHECK_MU
 ;@Message:0
 MSG_RAMA_CHECK_MU;
-◆（Ｔｈｉｓ　ｉｓ　Ｍｕ，　ｔｈｅ　ｐｌａｃｅ　ｏｆ　ｎｏｔｈｉｎｇｎｅｓｓ．@KEY()↓
-◆Ｐｅｏｐｌｅ　ｗｈｏ　ｔｒａｉｎ　ｈｅｒｅ　ｍｕｓｔ　ｆｉｒｓｔ　ｃｌｅａｒ　ｅｖｅｒｙｔｈｉｎｇ　ｆｒｏｍ　ｔｈｅｉｒ　ｍｉｎｄ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｃａｎ　ｍａｋｅ　ｙｏｕｒ　ｍｉｎｄ　ｂｌａｎｋ　ａｎｄ　ｌｅａｒｎ　ｔｈｅ　ｔｒｕｅ　ｍｅａｎｉｎｇ　ｏｆ　”Ｍｕ，”@KEY()↓
-◆ｙｏｕ’ｌｌ　ｐａｓｓ　ｔｈｒｏｕｇｈ．　　Ｍｕ　ｉｓ　Ｍｕ．．．）
+◆(This is Mu, the place of nothingness.@KEY()↓
+◆People who train here must first clear everything from their mind.@KEY()↓
+◆If you can make your mind blank and learn the true meaning of ”Mu,”@KEY()↓
+◆you’ll pass through.  Mu is Mu...)
 @KEYNP()
-;jpn:◆（これは　ムのばしょ。↓
-;jpn:　ここにて　しれんをうけるものは↓
-;jpn:　すべてを　ムにし@KEY()↓
-;jpn:◆いっさいを　クウにし↓
-;jpn:　ムのなんたるかを　しるときに↓
-;jpn:　このばしょを　ぬけるものなり。@KEY()↓
-;jpn:◆ムとはム）@KEYNP()
+;jpn:◆(これは ムのばしょ。↓
+;jpn: ここにて しれんをうけるものは↓
+;jpn: すべてを ムにし@KEY()↓
+;jpn:◆いっさいを クウにし↓
+;jpn: ムのなんたるかを しるときに↓
+;jpn: このばしょを ぬけるものなり。@KEY()↓
+;jpn:◆ムとはム)@KEYNP()
 ;@GOSUB(MSG_DEBUG_EVENT_79)
 』
 
 ;@Habitat:ランマ／フィールド／ピンククラウド入り口
 ;@Person:ピンククラウド番人
-;@Figure:ランマ男Ｂ
+;@Figure:ランマ男B
 ;@AppearanceKey:FLG_PU/off
 ;@ActionScript:◆正面向いてとまったまま
 ;@GoodsMessage:0
@@ -537,24 +537,24 @@ MSG_RAMA_CHECK_MU;
 MSG_RAMA_GUARD;
 ;鉄のタコ近くの人
 @CHKFGOTO(FLG_RAMA_RABBIT_DISAPPEAR,_RAMA_GUARD_LATER)
-◆Ｂｌａｃｋ　ｒａｂｂｉｔｓ．．．ｔｈｅｙ’ｒｅ　ｂｌｏｃｋｉｎｇ　ｙｏｕｒ　ｐａｔｈ　ｔｏ　ｔｈｅ　ｃａｖｅ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｔｈｉｎｋ　ａｂｏｕｔ　ｔｈｅｍ，　ｙｏｕ　ｓｈｏｕｌｄ　ｆｅｅｌ　ｋｉｎｄ　ｏｆ　ｅｍｐｔｙ．@KEY()↓
-◆．．．Ｂｕｔ　Ｉ　ｃａｎ’ｔ　ｓｅｅｍ　ｔｏ　ｇｅｔ　ｔｈｅｍ　ｏｆｆ　ｏｆ　ｍｙ　ｍｉｎｄ．
+◆Black rabbits...they’re blocking your path to the cave.@KEY()↓
+◆If you think about them, you should feel kind of empty.@KEY()↓
+◆...But I can’t seem to get them off of my mind.
 @KEYNP()
-;jpn:◆どうくつの　いりぐちをふさぐ↓
-;jpn:　くろウサギ‥‥@KEY()↓
+;jpn:◆どうくつの いりぐちをふさぐ↓
+;jpn: くろウサギ‥‥@KEY()↓
 ;jpn:◆それについて↓
-;jpn:　ふかく　かんがえるのは↓
-;jpn:　とても　むなしい。@KEY()↓
+;jpn: ふかく かんがえるのは↓
+;jpn: とても むなしい。@KEY()↓
 ;jpn:◆‥‥しかし↓
-;jpn:　なんだか　きになるなぁ。@KEYNP()
+;jpn: なんだか きになるなぁ。@KEYNP()
 』
 _RAMA_GUARD_LATER;ウサギバリアを消した後
-◆Ｉｆ　ｉｔ’ｓ　ｓａｆｅ，　Ｉ　ｗａｎｔ　ｔｏ　ｂｅ　ｉｎｓｉｄｅ．
+◆If it’s safe, I want to be inside.
 @KEYNP()
-;jpn:◆もし　あんぜんなら↓
-;jpn:　わたしも　なかに　はいって↓
-;jpn:　みたかった。@KEYNP()
+;jpn:◆もし あんぜんなら↓
+;jpn: わたしも なかに はいって↓
+;jpn: みたかった。@KEYNP()
 』
 
 ;@Habitat:ランマ／ピンククラウド／大部屋
@@ -571,14 +571,14 @@ MSG_RAMA_PINK_BOSS;
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(MSG_GLOBAL_BOSS_NG);ネス死んでたらダメ
 @BGMSTART(0,BGM_msc24);ボスのセリフ曲
-◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｇｏｔ　ｈｅｒｅ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｓｉｘｔｈ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ”　ｌｏｃａｔｉｏｎ．@WI(20)　　Ｂｕｔ　ｉｔ’ｓ　ｍｉｎｅ　ｎｏｗ．@KEY()↓
-◆Ｔａｋｅ　ｉｔ　ｆｒｏｍ　ｍｅ，@WI(30)　ｉｆ　ｙｏｕ　ｄａｒｅ．．．
+◆You finally got here.@KEY()↓
+◆This is the sixth ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
+◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは　６ばんめの↓
+;jpn:◆ここは ６ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
-;jpn:◆しかし　いまは↓
-;jpn:　わたしのばしょだ。@KEY()↓
+;jpn:◆しかし いまは↓
+;jpn: わたしのばしょだ。@KEY()↓
 ;jpn:◆うばいかえせばよい。@KEY()↓
 ;jpn:◆‥‥できるものなら。
 @KEY()
@@ -594,114 +594,114 @@ MSG_RAMA_PINK_BOSS;
 
 MSG_RAMA_GIRL_A;ランマ娘
 @CHKFGOTO(FLG_PU,_RAMA_GIRL_A_LATER)
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｉｓ　ａｌｗａｙｓ　ｉｎ　ｔｒａｉｎｉｎｇ　ｔｈｅｓｅ　ｄａｙｓ．．．@KEY()↓
-◆Ｈｅ　ｗｏｎ’ｔ　ｐｌａｙ　ｗｉｔｈ　ｍｅ　ａｔ　ａｌｌ．@KEY()↓
-◆Ｉ　ｆｅｅｌ　ｓｏ　ｌｏｎｅｌｙ．
+◆Prince @DSP_NAME(PC_POO) is always in training these days...@KEY()↓
+◆He won’t play with me at all.@KEY()↓
+◆I feel so lonely.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまったら↓
-;jpn:　ちかごろは　しゅぎょうばかり↓
-;jpn:　なさっていて‥‥@KEY()↓
+;jpn: ちかごろは しゅぎょうばかり↓
+;jpn: なさっていて‥‥@KEY()↓
 ;jpn:◆ちっとも↓
-;jpn:　あそんでくださらないのね。@KEY()↓
-;jpn:◆わたし　さみしい。@KEYNP()
+;jpn: あそんでくださらないのね。@KEY()↓
+;jpn:◆わたし さみしい。@KEYNP()
 』
 _RAMA_GIRL_A_LATER;
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｈａｓ　ｇｏｏｄ　ｒｅｌａｔｉｏｎｓｈｉｐｓ　ｗｉｔｈ　ｆｏｒｅｉｇｎｅｒｓ．@KEY()↓
-◆．．．Ｗｈａｔ　ａｎ　ｉｎｔｅｒｎａｔｉｏｎａｌ　ｐｅｒｓｏｎ！
+◆Prince @DSP_NAME(PC_POO) has good relationships with foreigners.@KEY()↓
+◆...What an international person!
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさま↓
-;jpn:　がいこくの　かたと↓
-;jpn:　おつきあいなさってて@KEY()↓
-;jpn:◆‥‥こくさいてき！@KEYNP()
+;jpn: がいこくの かたと↓
+;jpn: おつきあいなさってて@KEY()↓
+;jpn:◆‥‥こくさいてき!@KEYNP()
 』
 
 MSG_RAMA_GIRL_B;
 @CHKFGOTO(FLG_WIN_GIEGU,_RAMA_GIRL_B_END)
 @CHKFGOTO(FLG_PU,_RAMA_GIRL_B_LATER)
 _RAMA_GIRL_B_MAIN;
-◆Ｏｈ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ｔｉｍｅ　ｔｏ　ｐｌａｙ　ｗｉｔｈ　ｍｅ？↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆あら　@DSP_STS(STS_PC_NAME_POO)おうじさま@KEY()↓
-;jpn:◆ひさしぶりに　わたしと↓
-;jpn:　いちゃいちゃ↓
-;jpn:　してくれるんですか？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+◆Oh, Prince @DSP_NAME(PC_POO).@KEY()↓
+◆Do you have time to play with me?↓
+<Yes>
+<No>
+;jpn:◆あら @DSP_STS(STS_PC_NAME_POO)おうじさま@KEY()↓
+;jpn:◆ひさしぶりに わたしと↓
+;jpn: いちゃいちゃ↓
+;jpn: してくれるんですか?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_RAMA_GIRL_B_YES,_RAMA_GIRL_B_NO)
 _RAMA_GIRL_B_NO;
-◆Ｈａｈ，　Ｉ　ｋｎｅｗ　ｉｔ．@KEY()↓
-◆”Ｔｒａｉｎｉｎｇ”　ｃｈａｎｇｅｄ　ｙｏｕ！@KEY()↓
-◆Ｉ’ｍ　ｊｅａｌｏｕｓ　ｏｆ　ｙｏｕｒ　”ｔｒａｉｎｉｎｇ”！
+◆Hah, I knew it.@KEY()↓
+◆”Training” changed you!@KEY()↓
+◆I’m jealous of your ”training”!
 @KEYNP()
 ;jpn:◆やっぱり↓
-;jpn:　「しゅぎょう」のせいね！@KEY()↓
-;jpn:◆わたし　「しゅぎょう」が↓
-;jpn:　にくい！@KEYNP()
+;jpn: 「しゅぎょう」のせいね!@KEY()↓
+;jpn:◆わたし 「しゅぎょう」が↓
+;jpn: にくい!@KEYNP()
 』
 _RAMA_GIRL_B_YES;
-◆Ｈａｐｐｙ　ｍｅ！@KEY()↓
-◆（ｐａｔｔｙ　ｃａｋｅ，　ｐａｔｔｙ　ｃａｋｅ．．．）
+◆Happy me!@KEY()↓
+◆(patty cake, patty cake...)
 @KEYNP()
-;jpn:◆うれしい！@WI(20)↓
-;jpn:　（いちゃいちゃ）@KEYNP()
+;jpn:◆うれしい!@WI(20)↓
+;jpn: (いちゃいちゃ)@KEYNP()
 』
 _RAMA_GIRL_B_LATER;その後
-◆Ｔｈｅｒｅ　ａｒｅ　ｓｏ　ｍａｎｙ　ｍｏｎｓｔｅｒｓ　ａｒｏｕｎｄ　ｒｅｃｅｎｔｌｙ，　ｗｅ　ｃａｎ’ｔ　ｒｅｌａｘ　ａｎｄ　ｈａｖｅ　ｆｕｎ．@KEY()↓
-◆（ｗｅｅｐ）
+◆There are so many monsters around recently, we can’t relax and have fun.@KEY()↓
+◆(weep)
 @KEYNP()
 』
 _RAMA_GIRL_B_END;＆
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｉｓ　ｓｏ　ｃｏｏｌ，　ｂｕｔ　ｙｏｕ’ｒｅ　ａｌｓｏ　ｙｏｕｎｇ　ａｎｄ　ｔｏｕｇｈ．
+◆Prince @DSP_NAME(PC_POO) is so cool, but you’re also young and tough.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまも↓
-;jpn:　ステキだけど　@DSP_STS(STS_PC_NAME_NES)さまも↓
-;jpn:　‥‥さわやかで　ステキ。@KEYNP()
+;jpn: ステキだけど @DSP_STS(STS_PC_NAME_NES)さまも↓
+;jpn: ‥‥さわやかで ステキ。@KEYNP()
 』
 
-MSG_RAMA_GIRL_C;松（後半メッセージなし）
+MSG_RAMA_GIRL_C;松(後半メッセージなし)
 @CHKFGOTO(FLG_PU,_RAMA_GIRL_C_LATER)
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．．．（ｂｌｕｓｈ）．@KEY()↓
-◆Ｈｅ　ｉｓ　ｓｕｃｈ　ａ　ｈｕｎｋ．
-;＠プーがいたら「Ｙｏｕ　ａｒｅ」
+◆Prince @DSP_NAME(PC_POO)...(blush).@KEY()↓
+◆He is such a hunk.
+;＠プーがいたら「You are」
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまって↓
-;jpn:　‥‥ポ@KEY()↓
-;jpn:◆このごろ　とても↓
-;jpn:　ストイックで↓
-;jpn:　すてきなかんじですー。
+;jpn: ‥‥ポ@KEY()↓
+;jpn:◆このごろ とても↓
+;jpn: ストイックで↓
+;jpn: すてきなかんじですー。
 @KEYNP()
 』
 _RAMA_GIRL_C_LATER;その後
-◆Ｉ’ｍ　ｗａｉｔｉｎｇ　ｆｏｒ　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)　ｔｏ　ｓｅｅ　ｍｅ　ａｎｄ　ｓａｙ　”Ｉ　ｌｏｖｅ　ｙｏｕ．”
-;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまが　いつか↓
-;jpn:　わたしのところに@KEY()↓
+◆I’m waiting for Prince @DSP_NAME(PC_POO) to see me and say ”I love you.”
+;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまが いつか↓
+;jpn: わたしのところに@KEY()↓
 ;jpn:◆「すきだよ」とか↓
-;jpn:　いいにきてくれるのを↓
-;jpn:　まってるんですー。
+;jpn: いいにきてくれるのを↓
+;jpn: まってるんですー。
 @KEYNP()
 』
 
 MSG_RAMA_OLDMAN_258;リャン・ウー・パー
-◆Ｙｏｕ　ｈａｖｅ　ｎｉｃｅ　ｅｙｅｓ．@KEY()↓
-◆．．．Ｙｏｕ　ｍｕｓｔ　ｂｅ　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．@KEY()↓
-◆Ｌｏｎｇ　ａｇｏ，　Ｉ　ｃｏｍｐｌｅｔｅｄ　Ｍｕ　Ｔｒａｉｎｉｎｇ．@KEY()↓
-◆Ｉ　ｗａｎｔ　ｔｏ　ｓｈｏｗ　ｙｏｕ　ａ　ｈｉｇｈｅｒ　ｌｅｖｅｌ　ｏｆ　ｉｎｔｅｌｌｉｇｅｎｃｅ．．．@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　Ｉ’ｍ　ｓｔｉｌｌ　ｒｅａｌｉｚｉｎｇ　ａｎｄ　ｌｅａｒｎｉｎｇ　ｔｈｉｓ　ｈｉｇｈ　ｌｅｖｅｌ．．．@KEY()↓
-◆Ｉ’ｌｌ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ．@KEY()↓
-◆Ｓｏ　ｌｏｎｇ！
+◆You have nice eyes.@KEY()↓
+◆...You must be Prince @DSP_NAME(PC_POO).@KEY()↓
+◆Long ago, I completed Mu Training.@KEY()↓
+◆I want to show you a higher level of intelligence...@KEY()↓
+◆However, I’m still realizing and learning this high level...@KEY()↓
+◆I’ll see you again.@KEY()↓
+◆So long!
 @KEYNP()
-;jpn:◆なかなか　よい　めをしておる。↓
-;jpn:　‥‥@DSP_STS(STS_PC_NAME_POO)おうじだな。@KEY()↓
-;jpn:◆わしも　いちどは↓
-;jpn:　「ムのしゅぎょう」を↓
-;jpn:　なしとげたもの。@KEY()↓
-;jpn:◆さらに　こうどな　ちえを↓
-;jpn:　おまえに　つたえたいが‥‥@KEY()↓
-;jpn:◆まだ　わしとて↓
-;jpn:　しゅぎょうちゅうなのじゃ。@KEY()↓
-;jpn:◆いずれ　また　あおう。↓
-;jpn:　さらば！@KEYNP()
+;jpn:◆なかなか よい めをしておる。↓
+;jpn: ‥‥@DSP_STS(STS_PC_NAME_POO)おうじだな。@KEY()↓
+;jpn:◆わしも いちどは↓
+;jpn: 「ムのしゅぎょう」を↓
+;jpn: なしとげたもの。@KEY()↓
+;jpn:◆さらに こうどな ちえを↓
+;jpn: おまえに つたえたいが‥‥@KEY()↓
+;jpn:◆まだ わしとて↓
+;jpn: しゅぎょうちゅうなのじゃ。@KEY()↓
+;jpn:◆いずれ また あおう。↓
+;jpn: さらば!@KEYNP()
 ;竜巻を成して消える
 @SE( SE_se28_b_offence_up )
 @SETF(FLG_RAMA_258_DISAPPEAR)
@@ -709,27 +709,27 @@ MSG_RAMA_OLDMAN_258;リャン・ウー・パー
 ;-------------------------------------------------
 
 MSG_RAMA_PU;
-◆Ｙｏｕ’ｒｅ　ｈｅｒｅ！@KEY()↓
-◆Ｗｅ　ｈａｖｅ　ｌｉｔｔｌｅ，　ｂｕｔ　ｓｔａｙ　ａｎｄ　ｒｅｓｔ　ｆｏｒ　ａ　ｗｈｉｌｅ．@KEY()↓
-;jpn:◆もう　きてくれたのか！@KEY()↓
-;jpn:◆ここは　なにもない　ところだけど↓
-;jpn:　ゆっくりしてってくれ。@KEY()
+◆You’re here!@KEY()↓
+◆We have little, but stay and rest for a while.@KEY()↓
+;jpn:◆もう きてくれたのか!@KEY()↓
+;jpn:◆ここは なにもない ところだけど↓
+;jpn: ゆっくりしてってくれ。@KEY()
 @GOSUB(MSG_SUB_ALLHEAL_POWR)	;全回復しておく
 @SE(SE_se25_b_healing)
 @WI(90)↓
-◆Ｂｕｔ　Ｉ’ｍ　ｉｍｐｒｅｓｓｅｄ！　　Ｙｏｕ　ｄｉｄ　ｓｏ　ｗｅｌｌ　ｆｏｒ　ｏｎｅ　ｗｈｏ　ｈａｓｎ’ｔ　ｈａｄ　ｍｕｃｈ　ｔｒａｉｎｉｎｇ．
+◆But I’m impressed!  You did so well for one who hasn’t had much training.
 @KEYNP()
 ;jpn:◆しかし↓
-;jpn:　しゅぎょうも　つんでない↓
-;jpn:　おまえが　あれほどやるとはなぁ。@KEYNP()
+;jpn: しゅぎょうも つんでない↓
+;jpn: おまえが あれほどやるとはなぁ。@KEYNP()
 』
 ;-------------------------------------------------
 
 MSG_RAMA_RABBIT;ウサギチェック
-◆（Ａｓ　ｓｔｒａｎｇｅ　ａｓ　ｔｈｉｓ　ｍａｙ　ｓｏｕｎｄ，　ｔｈｅｒｅ　ａｒｅ　ｓｔａｔｕｅｓ　ｏｆ　ｒａｂｂｉｔｓ　ｂｌｏｃｋｉｎｇ　ｙｏｕｒ　ｗａｙ．）@KEYNP()
-;jpn:◆（テコでも　どかない↓
-;jpn:　ウサギぞうが　ゆくてを↓
-;jpn:　ふさいでいる）@KEYNP()
+◆(As strange as this may sound, there are statues of rabbits blocking your way.)@KEYNP()
+;jpn:◆(テコでも どかない↓
+;jpn: ウサギぞうが ゆくてを↓
+;jpn: ふさいでいる)@KEYNP()
 』
 
 ;
@@ -745,12 +745,12 @@ MSG_RAMA_RABBIT_RECEIVE;
 @LOAD_GLOBAL_REG()
 @GOODSOUT_PLAYER(0,0)
 ←
-◆（Ｈｏｗ　ｓｔｒａｎｇｅ！@KEY()↓
-◆Ｔｈｅ　ｒａｂｂｉｔｓ　ａｎｄ　ｃａｒｒｏｔｓ　ｄｉｓａｐｐｅａｒｅｄ　ａｌｌ　ａｔ　ｏｎｃｅ！）
+◆(How strange!@KEY()↓
+◆The rabbits and carrots disappeared all at once!)
 @KEYNP()	
-;jpn:◆（あら　ふしぎ！@WI(20)↓
-;jpn:　ウサギとニンジンは↓
-;jpn:　いちどに　きえてしまった！）@KEYNP()
+;jpn:◆(あら ふしぎ!@WI(20)↓
+;jpn: ウサギとニンジンは↓
+;jpn: いちどに きえてしまった!)@KEYNP()
 @SE(SE_se21_b_foe_down)
 @HIDE_CHAR(PRSN_RAMA_FIELD_I,OBJFX_HIDE_HSTRIPE)
 @HIDE_CHAR(PRSN_RAMA_FIELD_J,OBJFX_HIDE_HSTRIPE)
@@ -760,20 +760,20 @@ MSG_RAMA_RABBIT_RECEIVE;
 
 _RABBIT_RECEIVE_NG;
 ←
-◆Ｔｈａｔ　ｗｏｎ’ｔ　ｍｏｖｅ　ｔｈｅ　ｒａｂｂｉｔｓ．
+◆That won’t move the rabbits.
 @KEYNP()
 ;jpn:◆そういうものでは↓
-;jpn:　ウサギは　うごかせない。
+;jpn: ウサギは うごかせない。
 ;@KEYNP()
 @!
 
 ;-------------------------------------------------
 
 MSG_RAMA_CHECK_SHOP;ランマショップのカンバン
-◆Ｄａｌａａｍａ　Ｒｅｓｔａｕｒａｎｔ．@KEY()↓
-◆（Ｗｅ　ａｃｃｅｐｔ　＄　ｄｏｌｌａｒｓ．）
+◆Dalaama Restaurant.@KEY()↓
+◆(We accept ＄ dollars.)
 @KEYNP()
-;jpn:◆ランマりょうりの　みせ↓
-;jpn:　（＄ドルも　つかえます）@KEYNP()
+;jpn:◆ランマりょうりの みせ↓
+;jpn: (＄ドルも つかえます)@KEYNP()
 』
 ;-------------------------------------------------

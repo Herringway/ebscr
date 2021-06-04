@@ -2,110 +2,110 @@
 
 MSG_BTL_OFFENSE_UP;
 ←
-◆@DSP_OBJECT()’ｓ　ｏｆｆｅｎｓｅ↓
-　　ｗｅｎｔ　ｕｐ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　オフェンスが↓
-;jpn:　@DSP_CNUM()あがった！
+◆@DSP_OBJECT()’s offense↓
+  went up by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の オフェンスが↓
+;jpn: @DSP_CNUM()あがった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_DEFENSE_UP;
 ←
-◆@DSP_OBJECT()’ｓ　ｄｅｆｅｎｓｅ↓
-　　ｗｅｎｔ　ｕｐ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　ディフェンスが↓
-;jpn:　@DSP_CNUM()あがった！
+◆@DSP_OBJECT()’s defense↓
+  went up by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の ディフェンスが↓
+;jpn: @DSP_CNUM()あがった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_IQ_UP;
 ←
-◆@DSP_OBJECT()’ｓ　ＩＱ↓
-　　ｗｅｎｔ　ｕｐ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　ＩＱが↓
-;jpn:　@DSP_CNUM()あがった！
+◆@DSP_OBJECT()’s IQ↓
+  went up by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の IQが↓
+;jpn: @DSP_CNUM()あがった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_GUTS_UP;
 ←
-◆@DSP_OBJECT()’ｓ　ｇｕｔｓ↓
-　　ｗｅｎｔ　ｕｐ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　ガッツが↓
-;jpn:　@DSP_CNUM()あがった！
+◆@DSP_OBJECT()’s guts↓
+  went up by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の ガッツが↓
+;jpn: @DSP_CNUM()あがった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_GUTS_DOWN;
 ←
-◆@DSP_OBJECT()’ｓ　ｇｕｔｓ↓
-　　ｗｅｎｔ　ｄｏｗｎ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()のガッツが↓
-;jpn:　@DSP_CNUM()さがった！
+◆@DSP_OBJECT()’s guts↓
+  went down by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()のガッツが↓
+;jpn: @DSP_CNUM()さがった!
 @SE(SE_se29_b_defense_down)
 @KEY()
 @!
 
 MSG_BTL_2GUTS_UP;
 ←
-◆Ａｍａｚｉｎｇｌｙ　ｅｎｏｕｇｈ，　@DSP_OBJECT()’ｓ　ｇｕｔｓ↓
-　　ｂｅｃａｍｅ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　ガッツが↓
-;jpn:　なんと　@DSP_CNUM()になった！
+◆Amazingly enough, @DSP_OBJECT()’s guts↓
+  became @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の ガッツが↓
+;jpn: なんと @DSP_CNUM()になった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_SPEED_UP;
 ←
-◆@DSP_OBJECT()’ｓ　ｓｐｅｅｄ↓
-　　ｗｅｎｔ　ｕｐ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　スピードが↓
-;jpn:　@DSP_CNUM()あがった！
+◆@DSP_OBJECT()’s speed↓
+  went up by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の スピードが↓
+;jpn: @DSP_CNUM()あがった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_VITA_UP;
 ←
-◆@DSP_OBJECT()’ｓ　ｖｉｔａｌｉｔｙ↓
-　　ｗｅｎｔ　ｕｐ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　バイタリティが↓
-;jpn:　@DSP_CNUM()あがった！
+◆@DSP_OBJECT()’s vitality↓
+  went up by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の バイタリティが↓
+;jpn: @DSP_CNUM()あがった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_LUCK_UP;
 ←
-◆@DSP_OBJECT()’ｓ　ｌｕｃｋ↓
-　　ｗｅｎｔ　ｕｐ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()の　ラックが↓
-;jpn:　@DSP_CNUM()あがった！
+◆@DSP_OBJECT()’s luck↓
+  went up by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()の ラックが↓
+;jpn: @DSP_CNUM()あがった!
 @SE(SE_se28_b_offence_up)
 @KEY()
 @!
 
 MSG_BTL_OFFENSE_DOWN;
 ←
-◆@DSP_OBJECT()’ｓ　ｏｆｆｅｎｓｅ↓
-　　ｗｅｎｔ　ｄｏｗｎ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()のオフェンスが↓
-;jpn:　@DSP_CNUM()さがった！
+◆@DSP_OBJECT()’s offense↓
+  went down by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()のオフェンスが↓
+;jpn: @DSP_CNUM()さがった!
 @SE(SE_se29_b_defense_down)
 @KEY()
 @!
 
 MSG_BTL_DEFENSE_DOWN;
 ←
-◆@DSP_OBJECT()’ｓ　ｄｅｆｅｎｓｅ↓
-　　ｗｅｎｔ　ｄｏｗｎ　ｂｙ　@DSP_CNUM()！
-;jpn:　@DSP_OBJECT()のディフェンスが↓
-;jpn:　@DSP_CNUM()さがった！
+◆@DSP_OBJECT()’s defense↓
+  went down by @DSP_CNUM()!
+;jpn: @DSP_OBJECT()のディフェンスが↓
+;jpn: @DSP_CNUM()さがった!
 @SE(SE_se29_b_defense_down)
 @KEY()
 @!
@@ -114,29 +114,29 @@ MSG_BTL_DEFENSE_DOWN;
 
 MSG_BTL_G_HAEMITU_G;
 ←
-◆@DSP_ACTOR()　ｏｐｅｎｅｄ↓
-　　ｔｈｅ　ｊａｒ　ｏｆ　”Ｆｌｙ　Ｈｏｎｅｙ”！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　はえみつのびんを　あけてみた！
+◆@DSP_ACTOR() opened↓
+  the jar of ”Fly Honey”!
+;jpn: @DSP_ACTOR()は↓
+;jpn: はえみつのびんを あけてみた!
 @KEY()↓
-◆Ｍａｓｔｅｒ　Ｂｅｌｃｈ　ｇｒａｂｂｅｄ↓
-　　ｔｈｅ　”Ｆｌｙ　Ｈｏｎｅｙ”！
-;jpn:　ゲップーは↓
-;jpn:　はえみつを　うばいとった！
+◆Master Belch grabbed↓
+  the ”Fly Honey”!
+;jpn: ゲップーは↓
+;jpn: はえみつを うばいとった!
 ;@SE((ばしっ))
 @KEY()
 @!
 
 MSG_BTL_G_HAEMITU_NG;
 ←
-◆@DSP_ACTOR()　ｏｐｅｎｅｄ↓
-　　ｔｈｅ　ｊａｒ　ｏｆ　”Ｆｌｙ　Ｈｏｎｅｙ”！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　はえみつのびんを　あけてみた！
+◆@DSP_ACTOR() opened↓
+  the jar of ”Fly Honey”!
+;jpn: @DSP_ACTOR()は↓
+;jpn: はえみつのびんを あけてみた!
 @KEY()↓
-◆Ｉｔ　ｄｉｄｎ’ｔ　ｓｍｅｌｌ　ｌｉｋｅ↓
-　　ｓｏｍｅｔｈｉｎｇ　@GOSUB(MSG_ESUB_HE_SHE_GACT)　ｗｏｕｌｄ　ｌｉｋｅ！
-;jpn:　すきになりにくい　においがした！
+◆It didn’t smell like↓
+  something @GOSUB(MSG_ESUB_HE_SHE_GACT) would like!
+;jpn: すきになりにくい においがした!
 @KEY()
 @!
 
@@ -144,59 +144,59 @@ MSG_BTL_G_HAEMITU_NG;
 
 MSG_BTL_INORU_1;●(akm0616 w/itoi)
 ←
-◆Ａ　ｍｙｓｔｅｒｉｏｕｓ　ｌｉｇｈｔ　ｅｎｖｅｌｏｐｅｄ↓
-　　@GOSUB(MSG_ESUB_DSP_PARTY)！
-;jpn:　ふしぎなひかりが↓
-;jpn:　@DSP_LCNAME()を　つつんだ！
+◆A mysterious light enveloped↓
+  @GOSUB(MSG_ESUB_DSP_PARTY)!
+;jpn: ふしぎなひかりが↓
+;jpn: @DSP_LCNAME()を つつんだ!
 @KEY()
 @!
 
 MSG_BTL_INORU_2;
 ←
 ;@SE((ほわーん))
-◆Ａ　ｗａｒｍ　ｌｉｇｈｔ　ｓｕｒｒｏｕｎｄｅｄ↓
-　　@GOSUB(MSG_ESUB_DSP_PARTY)！
-;jpn:　あたたかいひかりが↓
-;jpn:　@DSP_LCNAME()を　つつんだ！
+◆A warm light surrounded↓
+  @GOSUB(MSG_ESUB_DSP_PARTY)!
+;jpn: あたたかいひかりが↓
+;jpn: @DSP_LCNAME()を つつんだ!
 @KEY()
 @!
 
 MSG_BTL_INORU_3;
 ←
 ;@SE((ぶしししっ))
-◆Ａ　ｄａｚｚｌｉｎｇ　ｌｉｇｈｔ　ｅｎｖｅｌｏｐｅｄ↓
-　　@GOSUB(MSG_ESUB_DSP_PARTY)！
-;jpn:　まぶしいひかりが↓
-;jpn:　あたりに　ふりそそいだ！
+◆A dazzling light enveloped↓
+  @GOSUB(MSG_ESUB_DSP_PARTY)!
+;jpn: まぶしいひかりが↓
+;jpn: あたりに ふりそそいだ!
 @KEY()
 @!
 
 MSG_BTL_INORU_4;
 ←
 ;@SE((どよーん))
-◆Ｓｏｍｅ　ｈｅａｖｙ　ａｉｒ　ｆｌｏｗｅｄ↓
-　　ｉｎｔｏ　ｔｈｅ　ａｒｅａ！
-;jpn:　おもいくうきが↓
-;jpn:　あたりを　つつみこんだ！
+◆Some heavy air flowed↓
+  into the area!
+;jpn: おもいくうきが↓
+;jpn: あたりを つつみこんだ!
 @KEY()
 @!
 
 MSG_BTL_INORU_5;
 ←
 ;@SE((ばっしーん))
-◆Ｔｈｅ　ｄａｚｚｌｉｎｇ　ｌｉｇｈｔ　ｃｈａｓｅｄ↓
-　　ｔｈｅ　ｅｎｅｍｙ！
-;jpn:　まばゆいひかりが↓
-;jpn:　てきを　おいかけた！
+◆The dazzling light chased↓
+  the enemy!
+;jpn: まばゆいひかりが↓
+;jpn: てきを おいかけた!
 @KEY()
 @!
 
 MSG_BTL_INORU_6;●(akm0616 w/itoi)
 ←
-◆Ａ　ｖｅｒｙ　ｓｕｂｔｌｅ　ｌｉｇｈｔ　ｅｎｇｕｌｆｅｄ↓
-　　@GOSUB(MSG_ESUB_DSP_PARTY)！
-;jpn:　ほのかなひかりが↓
-;jpn:　@DSP_LCNAME()を　つつんだ！
+◆A very subtle light engulfed↓
+  @GOSUB(MSG_ESUB_DSP_PARTY)!
+;jpn: ほのかなひかりが↓
+;jpn: @DSP_LCNAME()を つつんだ!
 @KEY()
 @!
 
@@ -204,63 +204,63 @@ MSG_BTL_INORU_6;●(akm0616 w/itoi)
 MSG_BTL_INORU_7;
 ←
 ;@SE((ほわーん))
-◆Ａ　ｇｏｌｄｅｎ　ｌｉｇｈｔ　ｐｏｕｒｅｄ↓
-　　ｏｖｅｒ　ｔｈｅ　ａｒｅａ！
-;jpn:　きんいろのひかりが↓
-;jpn:　あたりに　ふりそそいだ！
+◆A golden light poured↓
+  over the area!
+;jpn: きんいろのひかりが↓
+;jpn: あたりに ふりそそいだ!
 @KEY()
 @!
 
 MSG_BTL_INORU_8;●(akm0616 w/itoi)
 ←
-◆Ｒａｉｎｂｏｗ　ｃｏｌｏｒｅｄ　ｌｉｇｈｔ↓
-　　ｓｈｏｎｅ　ｉｎｔｏ　ｔｈｅ　ａｒｅａ！
-;jpn:　なないろのひかりが↓
-;jpn:　あたりに　ふりそそいだ！
+◆Rainbow colored light↓
+  shone into the area!
+;jpn: なないろのひかりが↓
+;jpn: あたりに ふりそそいだ!
 @KEY()
 @!
 
 MSG_BTL_INORU_9;●(akm0616 w/itoi)
 ←
-◆Ａ　ｍｙｓｔｅｒｉｏｕｓ　ａｒｏｍａ　ｗａｆｔｅｄ↓
-　　ｉｎｔｏ　ｔｈｅ　ａｒｅａ！
-;jpn:　あやしいかおりが↓
-;jpn:　あたりに　ただよった！
+◆A mysterious aroma wafted↓
+  into the area!
+;jpn: あやしいかおりが↓
+;jpn: あたりに ただよった!
 @KEY()
 @!
 
 MSG_BTL_INORU_10;●(akm0616 w/itoi)
 ←
-◆Ａ　ｔｅｒｒｉｂｌｅ，　ｈｅａｖｅｎ　ｒｅｎｄｉｎｇ　ｓｏｕｎｄ，↓
-　　ｅｃｈｏｅｄ　ｉｎ　ｔｈｅ　ａｒｅａ！
-;jpn:　くうきをきりさくような　おとが↓
-;jpn:　とどろきわたった！
+◆A terrible, heaven rending sound,↓
+  echoed in the area!
+;jpn: くうきをきりさくような おとが↓
+;jpn: とどろきわたった!
 @KEY()
 @!
 
-MSG_BTL_PP_ZERO;何人でも「ｔｈｅｉｒ」はＯＫ
+MSG_BTL_PP_ZERO;何人でも「their」はOK
 ←
-◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｌｏｓｔ　ｔｈｅｉｒ　ＰＰ！
-;jpn:　ぜんいんの　ＰＰが↓
-;jpn:　なくなって　しまった！
+◆@GOSUB(MSG_ESUB_DSP_PARTY) lost their PP!
+;jpn: ぜんいんの PPが↓
+;jpn: なくなって しまった!
 @KEY()
 @!
 
 MSG_BTL_ZENKAI;
 ←
-◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｒｅｃｏｖｅｒｅｄ↓
-　　ｃｏｍｐｌｅｔｅｌｙ！
-;jpn:　@DSP_LCNAME()は↓
-;jpn:　かんぜんに　かいふくした！
+◆@GOSUB(MSG_ESUB_DSP_PARTY) recovered↓
+  completely!
+;jpn: @DSP_LCNAME()は↓
+;jpn: かんぜんに かいふくした!
 @KEY()
 @!
 
-;////////////////////////////////ＰＳＩ///////////////////////////////////
+;////////////////////////////////PSI///////////////////////////////////
 
 MSG_BTL_PSI_CANNOT_MENU;
 ←
-◆Ｎｏｔ　ｅｎｏｕｇｈ　ＰＰ！
-;jpn:◆ＰＰがたりない！
+◆Not enough PP!
+;jpn:◆PPがたりない!
 @KEY()
 @!
 
@@ -278,32 +278,32 @@ _PSI_CANNOT_PLAYER_SIDE
 ;
 _SIDE_QUIT3
 ◆@DSP_ACTOR()
-;jpn:　@DSP_ACTOR()は↓
+;jpn: @DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｔｒｉｅｄ↓
-　　@DSP_PSI(0)！
-;jpn:　@DSP_PSI(0)をこころみた！
+ tried↓
+  @DSP_PSI(0)!
+;jpn: @DSP_PSI(0)をこころみた!
 @KEY()↓
-◆Ｂｕｔ，　@GOSUB(MSG_ESUB_HE_SHE_GACT)　ｄｉｄｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ＰＰ．
-;jpn:　しかし　ＰＰがたりなかった！
+◆But, @GOSUB(MSG_ESUB_HE_SHE_GACT) didn’t have enough PP.
+;jpn: しかし PPがたりなかった!
 @KEY()
 @!
 
 MSG_BTL_KAMINARI_HAZURE;
 ←
-;　しかし↓
-◆Ｉｔ　ｄｉｄｎ’ｔ　ｈｉｔ　ａｎｙｏｎｅ！
-;jpn:　だれにも　あたらなかった！
+; しかし↓
+◆It didn’t hit anyone!
+;jpn: だれにも あたらなかった!
 @KEY()
 @!
 
 MSG_BTL_PPSUCK_ZERO;
 ←
-◆@DSP_OBJECT()　ｄｏｅｓ　ｎｏｔ↓
-　　ｈａｖｅ　ａｎｙ　ＰＰ！
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　ＰＰを　もっていなかった！
+◆@DSP_OBJECT() does not↓
+  have any PP!
+;jpn: @DSP_OBJECT()は↓
+;jpn: PPを もっていなかった!
 @KEY()
 @!
 
@@ -318,31 +318,31 @@ MSG_BTL_MECHPOKEY_1_TALK;
 ←
 @SET_BTL_MSG(0)		;バトルメッセージ機能をリセットする
 ;@MESSAGE_SOUND(2)
-◆Ｉ　ｕｎｄｅｒｓｔａｎｄ　ｙｏｕ　ｇｕｙｓ　ａｒｅ　ａｌｒｅａｄｙ　ｃｌａｉｍｉｎｇ　ｔｏ　ｂｅ　ｈｅｒｏｅｓ．@FKEY()↓
-◆Ｗｅｌｌ，　ｉｔ　ｉｓ　ａ　ｇａｚｉｌｌｉｏｎ　ｙｅａｒｓ　ｔｏｏ　ｅａｒｌｙ　ｆｏｒ　ｙｏｕ　ｔｏ　ｏｐｐｏｓｅ　Ｇｉｙｇａｓ！@FKEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｆｅｅｌ　ｐｒｅｔｔｙ　ｓｔｕｐｉｄ　ｔｏ　ｋｅｅｐ　ｆｉｇｈｔｉｎｇ　ｗｉｔｈｏｕｔ　ｅｖｅｎ　ｋｎｏｗｉｎｇ@FKEY()↓
-◆ｗｈａｔ　Ｇｉｙｇａｓ　ｌｏｏｋｓ　ｌｉｋｅ！@FKEY()↓
-◆Ｉｆ　ｙｏｕ　ｗｅｒｅ　ｔｏ　ｅｖｅｒ　ｓｅｅ　Ｇｉｙｇａｓ，　ｙｏｕ’ｄ　ｂｅ　ｓｏ　ｐｅｔｒｉｆｉｅｄ　ｗｉｔｈ　ｆｅａｒ，@FKEY()↓
-◆ｙｏｕ’ｄ　ｎｅｖｅｒ　ｂｅ　ａｂｌｅ　ｔｏ　ｒｕｎ　ａｗａｙ！@FKEY()↓
-◆．．．Ｔｈａｔ’ｓ　ｈｏｗ　ｓｃａｒｙ　ｉｔ　ｉｓ！@FKEY()↓
-◆Ｓｏ，　ｄｏ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｔｕｒｎ　ｏｆｆ　ｔｈｅ　”Ｄｅｖｉｌ’ｓ↓　Ｍａｃｈｉｎｅ？”@FKEY()↓
-◆Ｗｅｌｌ，　ｐｒｅｐａｒｅ　ｔｏ　ｂｅ　ａｍａｚｅｄ！
+◆I understand you guys are already claiming to be heroes.@FKEY()↓
+◆Well, it is a gazillion years too early for you to oppose Giygas!@FKEY()↓
+◆You must feel pretty stupid to keep fighting without even knowing@FKEY()↓
+◆what Giygas looks like!@FKEY()↓
+◆If you were to ever see Giygas, you’d be so petrified with fear,@FKEY()↓
+◆you’d never be able to run away!@FKEY()↓
+◆...That’s how scary it is!@FKEY()↓
+◆So, do you want me to turn off the ”Devil’s↓ Machine?”@FKEY()↓
+◆Well, prepare to be amazed!
 ;jpn:◆おまえたちは↓
-;jpn:　すっかり　えいゆうきどりで↓
-;jpn:　いるらしいけど@FKEY()↓
-;jpn:◆ギーグさまに　はむかうなんて↓
-;jpn:　８まんねん　はやいや！@FKEY()↓
-;jpn:◆だいたい　ギーグさまの↓
-;jpn:　おすがたさえ　みえないで↓
-;jpn:　たたかってるなんて@FKEY()↓
-;jpn:◆むなしいだろ！　ハハハハ！@FKEY()↓
-;jpn:◆この　すがたを　みたら↓
-;jpn:　それだけで　こしをぬかすぜ！@FKEY()↓
-;jpn:◆‥‥ほっんとに　こわいんだから。@FKEY()↓
+;jpn: すっかり えいゆうきどりで↓
+;jpn: いるらしいけど@FKEY()↓
+;jpn:◆ギーグさまに はむかうなんて↓
+;jpn: ８まんねん はやいや!@FKEY()↓
+;jpn:◆だいたい ギーグさまの↓
+;jpn: おすがたさえ みえないで↓
+;jpn: たたかってるなんて@FKEY()↓
+;jpn:◆むなしいだろ! ハハハハ!@FKEY()↓
+;jpn:◆この すがたを みたら↓
+;jpn: それだけで こしをぬかすぜ!@FKEY()↓
+;jpn:◆‥‥ほっんとに こわいんだから。@FKEY()↓
 ;jpn:◆ちょっとだけ「あくまのマシン」の↓
-;jpn:　スイッチをきって↓
-;jpn:　みせてやろうか。@FKEY()↓
-;jpn:　おどろけよ！
+;jpn: スイッチをきって↓
+;jpn: みせてやろうか。@FKEY()↓
+;jpn: おどろけよ!
 @SE(SE_se4a_foe_explosion)
 @WI(150);←わざとです。
 ;@KEYNP()
@@ -357,30 +357,30 @@ MSG_BTL_MECHPOKEY_1_TALK_B;
 @OPEN(1)
 @SET_BTL_MSG(0)		;バトルメッセージ機能をリセットする
 ;@MESSAGE_SOUND(2)
-◆Ｓｏ，　ｉｓｎ’ｔ　ｔｈｉｓ　ｔｅｒｒｉｆｙｉｎｇ？@WI(30)↓
-　　Ｉ’ｍ　ｔｅｒｒｉｆｉｅｄ，　ｔｏｏ．@FKEY()↓
-◆Ｇｉｙｇａｓ　ｃａｎｎｏｔ　ｔｈｉｎｋ　ｒａｔｉｏｎａｌｌｙ　ａｎｙ　ｍｏｒｅ，@FKEY()↓
-◆ａｎｄ　ｈｅ　ｉｓｎ’ｔ　ｅｖｅｎ　ａｗａｒｅ　ｏｆ　ｗｈａｔ　ｈｅ　ｉｓ　ｄｏｉｎｇ　ｎｏｗ．@FKEY()↓
-◆Ｈｉｓ　ｏｗｎ　ｍｉｎｄ　ｗａｓ　ｄｅｓｔｒｏｙｅｄ　ｂｙ　ｈｉｓ　ｉｎｃｒｅｄｉｂｌｅ　ｐｏｗｅｒ．@FKEY()↓
-◆Ｗｈａｔ　ａｎ　ａｌｌ−ｍｉｇｈｔｙ　ｉｄｉｏｔ！@WI(30)@FKEY()↓
-◆Ｙｅｐ，　ｔｈａｔ’ｓ　ｗｈａｔ　ｈｅ　ｉｓ！@FKEY()↓
-◆Ｈｅｈ　ｈｅｈ　ｈｅｈ　ｈｅｈ．．．@WI(30)↓
-　　ａｎｄ　ｙｏｕ．．．ｙｏｕ　ｗｉｌｌ　ｂｅ．．．@WI(30)↓
-　　ｊｕｓｔ　ａｎｏｔｈｅｒ　ｍｅａｌ　ｔｏ　ｈｉｍ！
-;jpn:◆こわいだろ！@WI(30)↓
-;jpn:　おれだって　こわいよ。@FKEY()↓
-;jpn:◆ギーグは　もう↓
-;jpn:　かんがえることすら　できないし@FKEY()↓
-;jpn:◆じぶんが　なにをしているのかも↓
-;jpn:　もう　わからないんだ。@FKEY()↓
-;jpn:◆ギーグは　じぶんの　ちからの↓
-;jpn:　あまりのつよさで@FKEY()↓
-;jpn:◆じぶんの　じんかくさえ↓
-;jpn:　はかいしてしまったのさ。@FKEY()↓
-;jpn:◆とんでもない　ちからの↓
-;jpn:　おおばかやろうさ！@WI(30)ギーグは！@FKEY()↓
-;jpn:◆けっ　けっ　けっ！@DSP_STS(STS_PC_NAME_NES)↓
-;jpn:　エサに　なれよ‥‥@WI(30)ギーグの！
+◆So, isn’t this terrifying?@WI(30)↓
+  I’m terrified, too.@FKEY()↓
+◆Giygas cannot think rationally any more,@FKEY()↓
+◆and he isn’t even aware of what he is doing now.@FKEY()↓
+◆His own mind was destroyed by his incredible power.@FKEY()↓
+◆What an all−mighty idiot!@WI(30)@FKEY()↓
+◆Yep, that’s what he is!@FKEY()↓
+◆Heh heh heh heh...@WI(30)↓
+  and you...you will be...@WI(30)↓
+  just another meal to him!
+;jpn:◆こわいだろ!@WI(30)↓
+;jpn: おれだって こわいよ。@FKEY()↓
+;jpn:◆ギーグは もう↓
+;jpn: かんがえることすら できないし@FKEY()↓
+;jpn:◆じぶんが なにをしているのかも↓
+;jpn: もう わからないんだ。@FKEY()↓
+;jpn:◆ギーグは じぶんの ちからの↓
+;jpn: あまりのつよさで@FKEY()↓
+;jpn:◆じぶんの じんかくさえ↓
+;jpn: はかいしてしまったのさ。@FKEY()↓
+;jpn:◆とんでもない ちからの↓
+;jpn: おおばかやろうさ!@WI(30)ギーグは!@FKEY()↓
+;jpn:◆けっ けっ けっ!@DSP_STS(STS_PC_NAME_NES)↓
+;jpn: エサに なれよ‥‥@WI(30)ギーグの!
 ;@MESSAGE_SOUND(1)
 @WI(150);←わざとです。
 ;@KEYNP()
@@ -397,65 +397,65 @@ MSG_BTL_MECHPOKEY_2_TALK_2;
 @SET_BTL_MSG(0)		;バトルメッセージ機能をリセットする
 ;@MESSAGE_SOUND(2)
 ←
-◆Ｈｅｈ　ｈｅｈ　ｈｅｈ　ｈｅｈ．@WI(30)↓
-　　Ｙｏｕ　ｍｕｓｔ　ｒｅａｌｌｙ　ｂｅ↓
-　　ａｔ　ｔｈｅ　ｅｎｄ　ｏｆ　ｙｏｕｒ　ｒｏｐｅ．@FKEY()↓
-◆Ｉｎ　ｔｈｉｓ　ｂｉｚａｒｒｅ　ｄｉｍｅｎｓｉｏｎ，↓
-　　ｙｏｕ　ｆｏｕｒ　ａｒｅ　ｔｈｅ　ｏｎｌｙ　ｆｏｒｃｅ　ｆｉｇｈｔｉｎｇ　ｆｏｒ　ｊｕｓｔｉｃｅ．．．@FKEY()↓
-◆Ａｎｄ　ｈｅｒｅ　ｙｏｕ　ｓｔａｎｄ，@FKEY()↓
-◆ｗａｉｔｉｎｇ　ｔｏ　ｂｅ　ｂｕｒｎｅｄ　ｕｐ　ｗｉｔｈ　ａｌｌ　ｔｈｅ　ｒｅｓｔ　ｏｆ　ｔｈｅ　ｇａｒｂａｇｅ　ｏｆ　ｔｈｉｓ　ｕｎｉｖｅｒｓｅ．．．@FKEY()↓
-◆Ｈａａａａａｈ！@WI(30)↓
-　　Ｔｈａｔ’ｓ　ｓｏ　ｓａｄ．　Ｉ　ｃａｎ’ｔ　ｈｅｌｐ↓
-　　ｂｕｔ　ｓｈｅｄ　ａ　ｔｅａｒ．@FKEY()↓
-◆Ｙｏｕ　ｋｎｏｗ，　ｍｙ　ｈｅａｒｔ　ｉｓ　ｂｅａｔｉｎｇ　ｉｎｃｒｅｄｉｂｌｙ　ｆａｓｔ，@WI(30)↓
+◆Heh heh heh heh.@WI(30)↓
+  You must really be↓
+  at the end of your rope.@FKEY()↓
+◆In this bizarre dimension,↓
+  you four are the only force fighting for justice...@FKEY()↓
+◆And here you stand,@FKEY()↓
+◆waiting to be burned up with all the rest of the garbage of this universe...@FKEY()↓
+◆Haaaaah!@WI(30)↓
+  That’s so sad. I can’t help↓
+  but shed a tear.@FKEY()↓
+◆You know, my heart is beating incredibly fast,@WI(30)↓
 @FKEY()↓
-◆．．．Ｉ　ｍｕｓｔ　ｂｅ　ｅｘｐｅｒｉｅｎｃｉｎｇ　ａｂｓｏｌｕｔｅ　ｔｅｒｒｏｒ！@FKEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｃｒｅａｍ　ｆｏｒ　ｈｅｌｐ↓
-　　ｈｅｒｅ　ｉｎ　ｔｈｅ　ｄａｒｋ？！@FKEY()↓
-◆Ｈａ　ｈａ　ｈａ　ｈａ　ｈａ！@FKEY()↓
-◆Ｗｈｙ　ｎｏｔ　ｃａｌｌ　ｙｏｕｒ　ｍｏｍｍｙ，↓
-　　@DSP_STS(STS_PC_NAME_NES)！@FKEY()↓
-◆Ｓａｙ，　”Ｍｏｍｍｙ！　　Ｄａｄｄｙ！↓
-　　Ｉ’ｍ　ｓｏ　ｆｒｉｇｈｔｅｎｅｄ！　@WI(30)Ｉ　ｔｈｉｎｋ↓
-　　Ｉ’ｍ　ｇｏｎｎａ　ｗｅｔ　ｍｙ　ｐａｎｔｓ！”@FKEY()↓
-◆Ｉ　ｋｎｏｗ　ｙｏｕ　ｈａｖｅ　ｔｅｌｅｐａｔｈｙ，　ｏｒ　ｓｏｍｅｔｈｉｎｇ，　ｓｏ　ｊｕｓｔ　ｔｒｙ　ａｎｄ　ｃａｌｌ　ｆｏｒ　ｈｅｌｐ，@FKEY()↓
-◆ｙｏｕ　ｐａｔｈｅｔｉｃａｌｌｙ　ｗｅａｋ↓
-　　ｈｅｒｏｅｓ　ｏｆ　ｓｏ−ｃａｌｌｅｄ　ｊｕｓｔｉｃｅ！@FKEY()↓
-◆Ｎｏ　ｏｎｅ　ｗｉｌｌ　ｈｅｌｐ　ｙｏｕ　ｎｏｗ！@FKEY()↓
-◆Ｈａ　ｈａ　ｈａ　ｈａａｈ．．．@FKEY()↓
-◆Ｄｏｎ’ｔ　ｗｏｒｒｙ，　ｙｏｕｒ　ｐｉｔｉｆｕｌ　ｓｕｆｆｅｒｉｎｇ↓
-　　ｗｉｌｌ　ｂｅ　ｏｖｅｒ　ｓｏｏｎ！
-;jpn:◆けっ　けっ　けっ　けっ。@WI(30)↓
-;jpn:　おまえたちの　ちからも↓
-;jpn:　そんなもんで　せいいっぱいだろ。@FKEY()↓
-;jpn:◆この　いじげんくうかんに↓
-;jpn:　せいぎのみかたとやらは↓
-;jpn:　おまえら　よにんだけ‥‥。@FKEY()↓
-;jpn:◆だれにも　しられず↓
-;jpn:　うちゅうのゴミになって↓
-;jpn:　きえるのを　まつばかり‥‥。@FKEY()↓
+◆...I must be experiencing absolute terror!@FKEY()↓
+◆Do you want to scream for help↓
+  here in the dark?!@FKEY()↓
+◆Ha ha ha ha ha!@FKEY()↓
+◆Why not call your mommy,↓
+  @DSP_STS(STS_PC_NAME_NES)!@FKEY()↓
+◆Say, ”Mommy!  Daddy!↓
+  I’m so frightened! @WI(30)I think↓
+  I’m gonna wet my pants!”@FKEY()↓
+◆I know you have telepathy, or something, so just try and call for help,@FKEY()↓
+◆you pathetically weak↓
+  heroes of so−called justice!@FKEY()↓
+◆No one will help you now!@FKEY()↓
+◆Ha ha ha haah...@FKEY()↓
+◆Don’t worry, your pitiful suffering↓
+  will be over soon!
+;jpn:◆けっ けっ けっ けっ。@WI(30)↓
+;jpn: おまえたちの ちからも↓
+;jpn: そんなもんで せいいっぱいだろ。@FKEY()↓
+;jpn:◆この いじげんくうかんに↓
+;jpn: せいぎのみかたとやらは↓
+;jpn: おまえら よにんだけ‥‥。@FKEY()↓
+;jpn:◆だれにも しられず↓
+;jpn: うちゅうのゴミになって↓
+;jpn: きえるのを まつばかり‥‥。@FKEY()↓
 ;jpn:◆くーっ@WI(30)↓
-;jpn:　かなしいはなしだよ。↓
-;jpn:　なみだが　でるね。@FKEY()↓
-;jpn:◆おれも　ドキドキしてるんだよ。@WI(30)↓
-;jpn:　‥‥こわくてさ。@FKEY()↓
-;jpn:◆この　まっくらやみに　むかって↓
-;jpn:　たすけを　よんでみるかい。@FKEY()↓
+;jpn: かなしいはなしだよ。↓
+;jpn: なみだが でるね。@FKEY()↓
+;jpn:◆おれも ドキドキしてるんだよ。@WI(30)↓
+;jpn: ‥‥こわくてさ。@FKEY()↓
+;jpn:◆この まっくらやみに むかって↓
+;jpn: たすけを よんでみるかい。@FKEY()↓
 ;jpn:◆ハハハハハ。@FKEY()↓
-;jpn:◆ママーッ！　@WI(20)って↓
-;jpn:　さけんで　みろよ↓
-　@DSP_STS(STS_PC_NAME_NES)！@FKEY()↓
-;jpn:◆ママーッ！　パパーッ！↓
-;jpn:　おしっこもれちゃいそうに↓
-;jpn:　こわいよう！　@WI(30)ってか。@FKEY()↓
+;jpn:◆ママーッ! @WI(20)って↓
+;jpn: さけんで みろよ↓
+ @DSP_STS(STS_PC_NAME_NES)!@FKEY()↓
+;jpn:◆ママーッ! パパーッ!↓
+;jpn: おしっこもれちゃいそうに↓
+;jpn: こわいよう! @WI(30)ってか。@FKEY()↓
 ;jpn:◆テレパシーでもなんでも↓
-;jpn:　つかえるもんなら↓
-;jpn:　たすけをよんでみれば　いいさ。@FKEY()↓
+;jpn: つかえるもんなら↓
+;jpn: たすけをよんでみれば いいさ。@FKEY()↓
 ;jpn:◆よわむしけむしの↓
-;jpn:　せいぎのみかたさん！@FKEY()↓
-;jpn:◆だーれも　きちゃ　くれないぞ。@FKEY()↓
+;jpn: せいぎのみかたさん!@FKEY()↓
+;jpn:◆だーれも きちゃ くれないぞ。@FKEY()↓
 ;jpn:◆けっけっけっけっ‥‥。@FKEY()↓
-;jpn:◆はやく　らくになりなっ！
+;jpn:◆はやく らくになりなっ!
 ;@MESSAGE_SOUND(1)
 @WI(150);←わざとです。
 ;@KEYNP()
@@ -472,24 +472,24 @@ MSG_BTL_POKEY_RUN_AWAY;
 @OPEN(1)
 @SET_BTL_MSG(0)		;バトルメッセージ機能をリセットする
 ;@MESSAGE_SOUND(2)
-◆@DSP_STS(STS_PC_NAME_NES)！@WI(30)　Ｎｏｗ，　Ｉ．．．↓
-　　ｗｅｌｌ．．．　@WI(20)Ｉｔ’ｓ　ｇｏｉｎｇ　ｔｏ　ｓｅｅｍ　ｌｉｋｅ↓
-　　Ｉ’ｍ　ｒｕｎｎｉｎｇ　ａｗａｙ．@FKEY()↓
-◆Ｂｕｔ　ｐｅｒｈａｐｓ　Ｉ’ｌｌ　ｊｕｓｔ　ｓｎｅａｋ　ａｗａｙ　ｔｏ　ａｎｏｔｈｅｒ　ｅｒａ　ｔｏ　ｔｈｉｎｋ　ａｂｏｕｔ　ｍｙ　ｎｅｘｔ　ｐｌａｎ．@FKEY()↓
-◆Ｉｔ’ｓ　ａ　ｇｏｏｄ　ｂｅｔ　ｔｈａｔ　ｗｅ　ｗｉｌｌ　ｓｅｅ　ｅａｃｈ↓
-　　ｏｔｈｅｒ　ａｇａｉｎ．．．．@WI(30)↓
-　　Ａｌｌ　ｒｉｇｈｔ！　　Ｉ’ｌｌ　ｂｅ　ｓｅｅｉｎｇ　ｙｏｕ！@FKEY()↓
-◆Ｓｏ　ｎｏｗ　ｗｈｉｃｈ　ｏｎｅ　ｏｆ　ｕｓ　ｄｏ　ｙｏｕ　ｔｈｉｎｋ　ｉｓ　ｔｈｅ　ｃｏｏｌ　ｇｕｙ？！
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)！@WI(30)　ぼくは　いまは↓
-;jpn:　つまり　その@WI(20)　あえて↓
-;jpn:　にげるような　こうどうをとる。@FKEY()↓
-;jpn:◆どこかのじだいに　もぐりこんで↓
-;jpn:　ひとまず　つぎのプランを↓
-;jpn:　ねるつもりさ。@FKEY()↓
-;jpn:◆えんがあったら　また　あうさ。↓
-;jpn:　シー　ユー　アゲイン！@FKEY()↓
-;jpn:◆ほんとに　カッコイイのは↓
-;jpn:　どっちかな？！
+◆@DSP_STS(STS_PC_NAME_NES)!@WI(30) Now, I...↓
+  well... @WI(20)It’s going to seem like↓
+  I’m running away.@FKEY()↓
+◆But perhaps I’ll just sneak away to another era to think about my next plan.@FKEY()↓
+◆It’s a good bet that we will see each↓
+  other again....@WI(30)↓
+  All right!  I’ll be seeing you!@FKEY()↓
+◆So now which one of us do you think is the cool guy?!
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)!@WI(30) ぼくは いまは↓
+;jpn: つまり その@WI(20) あえて↓
+;jpn: にげるような こうどうをとる。@FKEY()↓
+;jpn:◆どこかのじだいに もぐりこんで↓
+;jpn: ひとまず つぎのプランを↓
+;jpn: ねるつもりさ。@FKEY()↓
+;jpn:◆えんがあったら また あうさ。↓
+;jpn: シー ユー アゲイン!@FKEY()↓
+;jpn:◆ほんとに カッコイイのは↓
+;jpn: どっちかな?!
 ;@MESSAGE_SOUND(1)
 @WI(150);←わざとです。
 ;@KEYNP()

@@ -1,5 +1,5 @@
 ;
-;================================　医者　======================================
+;================================ 医者 ======================================
 ;
 
 ;オネット
@@ -12,11 +12,11 @@ MSG_DOCTOR_TWSN;
 @SET_LOOPREG(30)
 @GOSUB(_SUB_DOCTOR_1)
 @!
-;ＨＨ村
+;HH村
 MSG_HAPPY_HOSPITAL_DOCTOR;
 @SET_LOOPREG(35)
 @CHKFGOTO(FLG_WIN_CARPAINTER,_HH_DOCTOR_B)
-◆Ｂｌｕｅ．．．　ｂｌｕｅ．@KEY()↓
+◆Blue... blue.@KEY()↓
 
 ;jpn:◆ブルーブルー。@KEY()↓
 _HH_DOCTOR_B;
@@ -30,12 +30,12 @@ MSG_DOCTOR_THRK;
 ;ドコドコ砂漠
 MSG_DSRT_HOSPITAL_DOCTOR;
 @SET_LOOPREG(45)
-◆Ｉ’ｍ　ａ　ｒｏａｍｉｎｇ　ｄｏｃｔｏｒ．↓
-　　Ｌｅｔ　ｍｅ　ｋｎｏｗ　ｉｆ　ｙｏｕ’ｒｅ　ｎｏｔ　ｆｅｅｌｉｎｇ　ｗｅｌｌ．@KEY()↓
+◆I’m a roaming doctor.↓
+  Let me know if you’re not feeling well.@KEY()↓
 
-;jpn:◆わたしは　さすらいのドクター。↓
-;jpn:　わるいところがあったら↓
-;jpn:　えんりょなく　いってごらん。@KEY()↓
+;jpn:◆わたしは さすらいのドクター。↓
+;jpn: わるいところがあったら↓
+;jpn: えんりょなく いってごらん。@KEY()↓
 @GOSUB(_SUB_DOCTOR_1)
 @!
 
@@ -62,7 +62,7 @@ MSG_DOCTOR_MOON;
 @CLRF(FLG_SHOPTEMP_4)
 @!
 ;
-;================================　看護婦　==================================
+;================================ 看護婦 ==================================
 ;
 
 ;オネット
@@ -75,12 +75,12 @@ MSG_NURSE_TWSN;
 @SET_LOOPREG(100)   
 @GOSUB(_SUB_NURSE)
 @!
-;ＨＨ村
+;HH村
 MSG_HAPPY_HOSPITAL_USHER;
 @SETF(FLG_TEMP_9)
 @SET_LOOPREG(110)   
 @CHKFGOTO(FLG_WIN_CARPAINTER,_HH_NURSE_B)
-◆Ｂｌｕｅ．．．　ｂｌｕｅ．．．@KEY()↓
+◆Blue... blue...@KEY()↓
 
 ;jpn:◆ブルーブルー。@KEY()↓
 _HH_NURSE_B;
@@ -121,50 +121,50 @@ MSG_NURSE_MOON;
 @CLRF(FLG_SHOPTEMP_4)
 @!
 
-;================================　特殊回復　================================
+;================================ 特殊回復 ================================
 
 ;
-;Ｇフルデッドのキノコ少女
+;Gフルデッドのキノコ少女
 ;
 
 MSG_SUB_GRFD_KINOKOGIRL;
-◆　Ｈｕｍｍ　ｄｅｅ　ｄｕｍ　ｄｕｍ　ｄｕｍ．↓
-　　Ｉ’ｍ　ｈｕｎｔｉｎｇ　ｆｏｒ　ｍｕｓｈｒｏｏｍｓ！@KEY()↓
+◆ Humm dee dum dum dum.↓
+  I’m hunting for mushrooms!@KEY()↓
  
 ;jpn:◆ランラン音@WI(30)↓
-;jpn:　わたし　キノコがりにきてるの。@KEY()↓
+;jpn: わたし キノコがりにきてるの。@KEY()↓
 @GOSUB(_SUB_KINOKO_CHK)
 @FALSE_GOTO(_KINOKOGIRL_KENKO)
-◆Ｈｅｙ！　　Ｗｏｕｌｄ　ｙｏｕ　ｂｅ　ｗｉｌｌｉｎｇ　ｔｏ　ｓｅｌｌ　ｔｈａｔ　ｍｕｓｈｒｏｏｍ　ｏｎ　ｙｏｕｒ　ｈｅａｄ　ｆｏｒ　＄５０？@KEY()↓
+◆Hey!  Would you be willing to sell that mushroom on your head for ＄５０?@KEY()↓
 
-;jpn:◆あなたの　あたまにのってるキノコ↓
-;jpn:　５０ドルで　ゆずって？@WI(30)↓
+;jpn:◆あなたの あたまにのってるキノコ↓
+;jpn: ５０ドルで ゆずって?@WI(30)↓
 @GOSUB(MSG_SUB_YESNO_MONEY_PANEL)
 @SELGOTO(_KINOKOGIRL_YES,_KINOKOGIRL_NO)
 _KINOKOGIRL_NO;
-◆Ｏｈｈｈ．．．↓
-　　Ｉｔ’ｓ　ｙｏｕｒ　ｓｐｅｃｉａｌ　ｍｕｓｈｒｏｏｍ．
+◆Ohhh...↓
+  It’s your special mushroom.
 
 ;jpn:◆そう‥‥。@WI(30)↓
-;jpn:　だいじにしてるのね。
+;jpn: だいじにしてるのね。
 @KEYNP()
 @!
 _KINOKOGIRL_YES;
 @GOSUB(_SUB_HEAL_KINOKO)
 ←
-◆Ｔｈａｎｋ　ｙｏｕ．↓
-　　Ｓｕｃｈ　ａ　ｇｒｅａｔ　ｍｕｓｈｒｏｏｍ．↓
-　　Ｉ’ｍ　ｓｏ　ｈａｐｐｙ　Ｉ　ｇｏｔ　ｉｔ．
+◆Thank you.↓
+  Such a great mushroom.↓
+  I’m so happy I got it.
 
 ;jpn:◆ありがとう。@WI(30)↓
-;jpn:　こんなりっぱなキノコ‥‥↓
-;jpn:　ほんとに　うれしいわ。
+;jpn: こんなりっぱなキノコ‥‥↓
+;jpn: ほんとに うれしいわ。
 @KEYNP()
 @!
 _KINOKOGIRL_KENKO;
-◆Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｃｏｌｌｅｃｔ　ａ　ｔｏｎ　ｏｆ　ｍｕｓｈｒｏｏｍｓ！
+◆I’m going to collect a ton of mushrooms!
 
-;jpn:◆いっぱいキノコを　あつめるわ！
+;jpn:◆いっぱいキノコを あつめるわ!
 @KEYNP()
 @!
 
@@ -174,38 +174,38 @@ MSG_DOCTOR_DOSEI;
 ←
 @FONTBAKA()
 @CHKFGOTO(FLG_TEMP_1,_DOCTOR_DOSEI_AFTER)
-◆Ｉ’ｍ↓
-　　Ｄｒ．　Ｓａｔｕｒｎ．　　Ｚｏｏｍ！@KEY()↓
-◆ａｎｄ　Ｉ　ｃａｎ↓
-　　ｒｅｐａｉｒ↓
-　　ｙｏｕｒ　ｂｏｄｙ．@KEY()↓
-◆Ｂｏｉｎｇ！@KEY()↓
-◆Ｄｏ　ｙｏｕ↓
-　　ｗａｎｔ　ｍｅ@KEY()↓
-◆ｔｏ　ｏｐｅｒａｔｅ↓
-　　ｏｎ　ｙｏｕ？↓
-　　Ｄｉｎｇ？@KEY()↓
+◆I’m↓
+  Dr. Saturn.  Zoom!@KEY()↓
+◆and I can↓
+  repair↓
+  your body.@KEY()↓
+◆Boing!@KEY()↓
+◆Do you↓
+  want me@KEY()↓
+◆to operate↓
+  on you?↓
+  Ding?@KEY()↓
 
 ;jpn:◆からだをなおす。@KEY()↓
 ;jpn:◆どせいさんです。@KEY()↓
 ;jpn:◆からだ↓
-;jpn:　なおされますか？↓
+;jpn: なおされますか?↓
 @FONTSTD()
 ;@GOSUB(MSG_SUB_YESNO)
-<Ｙｅｓ>
-<Ｎｏ>
+<Yes>
+<No>
 @DSP_ITEM(2)
 @SELGOTO(_DOCTOR_DOSEI_YES,_DOCTOR_DOSEI_NO)
 _DOCTOR_DOSEI_NO;
 @FONTBAKA()
-◆Ａｒｅ　ｙｏｕ　ｋａｙ−ｏ？@KEY()↓
-◆Ｉｆ　ｙｏｕ↓
-　　ａｌｌ　ｒｉｇｈｔ，↓
-　　ｔｈａｔ’ｓ　ｇｒｅａｔ．@KEY()↓
-◆ｚｏｏｍｅｒ！
+◆Are you kay−o?@KEY()↓
+◆If you↓
+  all right,↓
+  that’s great.@KEY()↓
+◆zoomer!
  
 ;jpn:◆だいじょぶか。↓
-;jpn:　だいじょぶならいい。
+;jpn: だいじょぶならいい。
 @KEYNP()
 @FONTSTD()
 @!
@@ -213,9 +213,9 @@ _DOCTOR_DOSEI_NO;
 _DOCTOR_DOSEI_YES;
 @GOSUB(_SUB_ZENKAI)
 @FONTBAKA()
-◆Ｙｏｕ　ａａａａａａａｌｌ↓
-　　ｆｉｘｅｄ　ｕｐ．@KEY()↓
-◆Ｇｏｏｄｙ！　　Ｂｏｉｎｇ！
+◆You aaaaaaall↓
+  fixed up.@KEY()↓
+◆Goody!  Boing!
  
 ;jpn:◆なおった。なおった。@KEY()↓
 ;jpn:◆よかったー。
@@ -224,14 +224,14 @@ _DOCTOR_DOSEI_YES;
 @SETF(FLG_TEMP_1)
 @!
 ;◆ほかのひとも
-;◆なおされますか？
-;（はい　いいえ）
+;◆なおされますか?
+;(はい いいえ)
 
 _DOCTOR_DOSEI_AFTER;
-◆Ｈｅａｌｔｈｙ，↓
-　　ｈｅａｌｔｈｙ．
+◆Healthy,↓
+  healthy.
 
-;jpn:◆げんき　げんき。
+;jpn:◆げんき げんき。
 @KEYNP()
 @FONTSTD()
 @!
@@ -240,13 +240,13 @@ _DOCTOR_DOSEI_AFTER;
 ;回復ベンチ
 ;
 MSG_BENCH_LIFEUP;
-◆”Ｇｏｏｄｎｉｇｈｔ　Ｂｅｎｃｈ”@KEY()↓
-◆Ｙｏｕｒ　ｆａｔｉｇｕｅ　ｗｉｌｌ　ｌｅａｖｅ　ｙｏｕ，　ａｎｄ　ｙｏｕｒ　ｅｎｅｒｇｙ　ａｎｄ　ｐｏｗｅｒ　ｗｉｌｌ　ｒｅｔｕｒｎ．
+◆”Goodnight Bench”@KEY()↓
+◆Your fatigue will leave you, and your energy and power will return.
  
 ;jpn:◆「おやすみベンチ」↓
-;jpn:　つかれが　すっかりとれ@KEY()↓
-;jpn:◆きりょく　たいりょくが↓
-;jpn:　かいふくします。
+;jpn: つかれが すっかりとれ@KEY()↓
+;jpn:◆きりょく たいりょくが↓
+;jpn: かいふくします。
 @KEYNP()
 @GOSUB(MSG_GLOBAL_MYHOME)
 ;@MOVE_GOM_CHAR( GOM_HIT_CHR,ANIM_INTO_NIGHT,OBJFX_SHOW_NONE )
@@ -256,28 +256,28 @@ MSG_BENCH_LIFEUP;
 ;
 
 MSG_GUMI_HEAL;
-◆Ｈｉ！　　Ｈｏｗ　ａｒｅ　ｙｏｕ　ｔｏｄａｙ？↓
-　　Ｏｈ，　ｙｏｕ’ｒｅ　ｎｏｔ　ｆｅｅｌｉｎｇ　ｗｅｌｌ？↓
-　　Ｂｅ　ｈｅａｌｔｈｙ！
+◆Hi!  How are you today?↓
+  Oh, you’re not feeling well?↓
+  Be healthy!
 
-;jpn:◆やあ　げんきか↓
-;jpn:　そうでもないか。@WI(20)↓
-;jpn:　げんきになれ。
+;jpn:◆やあ げんきか↓
+;jpn: そうでもないか。@WI(20)↓
+;jpn: げんきになれ。
 @KEYNP()
 @!
 
 ;地底大陸の岩 
 
 MSG_DKFD_HEALSTONE;
-◆（Ｔｈｉｓ　ｉｓ　ａ　＄ｈｅａｌｓｔｏｎｅ．）
+◆(This is a ＄healstone.)
 
-;jpn:◆（＄かいふくいわです。）
+;jpn:◆(＄かいふくいわです。)
 @KEYNP()
 @GOSUB(MSG_SPACE_KAIHUKU)
 @!
 
 
-;================================　ホテル　==================================
+;================================ ホテル ==================================
 
 
 ;オネット
@@ -285,9 +285,9 @@ MSG_HOTEL_ONET;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_ONET_HOTEL_MORNING)
 @MUL_ACTIVE_PLAYER(35)          ;一人分の宿泊費を記入してください。
 @XCHG()
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｈｏｔｅｌ　Ｏｎｅｔｔ．@KEY()↓
+◆Welcome to Hotel Onett.@KEY()↓
 
-;jpn:◆ホテルオネットに　ようこそ。@KEY()↓
+;jpn:◆ホテルオネットに ようこそ。@KEY()↓
 @GOSUB(_SUB_HOTEL_SELECT)
 @SELGOTO(_ONET_HOTEL_YES,_ONET_HOTEL_NO)
 _ONET_HOTEL_NO;
@@ -312,9 +312,9 @@ MSG_HOTEL_TWSN;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_TWSN_HOTEL_MORNING)
 @MUL_ACTIVE_PLAYER(50)          ;一人分の宿泊費を記入してください。
 @XCHG()
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｈｏｔｅｌ　Ｔｗｏｓｏｎ．@KEY()↓
+◆Welcome to Hotel Twoson.@KEY()↓
 
-;jpn:◆ツーソンホテルに　ようこそ。@KEY()↓
+;jpn:◆ツーソンホテルに ようこそ。@KEY()↓
 @GOSUB(_SUB_HOTEL_SELECT)
 @SELGOTO(_TWSN_HOTEL_YES,_TWSN_HOTEL_NO)
 _TWSN_HOTEL_NO;
@@ -334,72 +334,72 @@ _TWSN_HOTEL_NOMONEY;
 _TWSN_HOTEL_MORNING;
 @GOSUB(_SUB_HOTEL_MORNING)
 @!
-;ＨＨ村
+;HH村
 MSG_HOTEL_HAPPY;
 @MUL_ACTIVE_PLAYER(50)
 @XCHG()
 @CHKFGOTO(FLG_WIN_CARPAINTER,_HOTEL_HAPPY_LATER)
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_HOTEL_HAPPY_MORNING)
-◆Ｗｅ’ｒｅ　ａｌｌ　ｌｉｋｅ　ｏｎｅ　ｂｉｇ，　ｈａｐｐｙ　ｆａｍｉｌｙ　ｈｅｒｅ　ｉｎ　Ｈａｐｐｙ　Ｈａｐｐｙ　Ｖｉｌｌａｇｅ！@KEY()↓
-◆Ｂａｓｉｃａｌｌｙ，　ｏｕｒ　ｐｏｌｉｃｙ　ｉｓ　ｔｏ　ｏｎｌｙ　ａｌｌｏｗ　ｆａｍｉｌｙ　ｍｅｍｂｅｒｓ　ｔｏ　ｓｔａｙ　ｈｅｒｅ　ｉｎ　ｔｈｅ　ｖｉｌｌａｇｅ．@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　ｉｆ　ｙｏｕ　ａｒｅ　ｉｎｔｅｒｅｓｔｅｄ　ｉｎ　ｌｅａｒｎｉｎｇ　ａｂｏｕｔ　Ｈａｐｐｙ　Ｈａｐｐｙｉｓｍ，@KEY()↓
-◆ｗｅ　ｍａｙ　ｍａｋｅ　ａｎ　ｅｘｃｅｐｔｉｏｎ　ａｎｄ　ｌｅｔ　ｙｏｕ　ｓｔａｙ　ｆｏｒ　＄@DSP_NUM(0)．↓ 
+◆We’re all like one big, happy family here in Happy Happy Village!@KEY()↓
+◆Basically, our policy is to only allow family members to stay here in the village.@KEY()↓
+◆However, if you are interested in learning about Happy Happyism,@KEY()↓
+◆we may make an exception and let you stay for ＄@DSP_NUM(0).↓ 
 ;jpn:◆ハッピーハッピーむらは↓
-;jpn:　みんな　ひとつの↓
-;jpn:　かぞくみたいなものなんだ。@KEY()↓
+;jpn: みんな ひとつの↓
+;jpn: かぞくみたいなものなんだ。@KEY()↓
 ;jpn:◆かぞくいがいは↓
-;jpn:　とめたくないんだが‥‥@KEY()↓
-;jpn:◆これから　じょじょに↓
-;jpn:　ハッピーハッピーきょうについて↓
-;jpn:　まなんでいくと　いうなら‥‥@KEY()↓
-;jpn:◆@DSP_NUM(0)ドルで　とくべつに↓
-;jpn:　とめてあげよう。↓
+;jpn: とめたくないんだが‥‥@KEY()↓
+;jpn:◆これから じょじょに↓
+;jpn: ハッピーハッピーきょうについて↓
+;jpn: まなんでいくと いうなら‥‥@KEY()↓
+;jpn:◆@DSP_NUM(0)ドルで とくべつに↓
+;jpn: とめてあげよう。↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_HOTEL_HAPPY_YES,_HOTEL_HAPPY_NO)
 _HOTEL_HAPPY_NO;
-◆Ｎｅｖｅｒ　ｈａｖｅ　Ｉ　ｈｅａｒｄ　ｓｕｃｈ　ｄｉｓｒｅｓｐｅｃｔ！↓
-　　Ｇｅｔ　ｏｕｔ　ａｎｄ　ｓｔａｙ　ｏｕｔ！
+◆Never have I heard such disrespect!↓
+  Get out and stay out!
  
-;jpn:◆ふしんじんものめ！↓
-;jpn:　もうくるな！
+;jpn:◆ふしんじんものめ!↓
+;jpn: もうくるな!
 @KEYNP()
 @!
 _HOTEL_HAPPY_YES;
-;体力回復（暗転ワープあり、ＢＧＭあり、夜鍋あり、セリフ替えあり）
+;体力回復(暗転ワープあり、BGMあり、夜鍋あり、セリフ替えあり)
 @Q_MONEY(0)
 @TRUE_GOTO(_HOTEL_HAPPY_NOMONEY)
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｖｅｒｙ　ｗｅｌｌ．．．　ｂｅ　ｓｕｒｅ　ｔｏ　ｄｏ　ｙｏｕｒ　”ｂｌｕｅ．．．　ｂｌｕｅ．．．”↓
-　　ｃｈａｎｔ　ｂｅｆｏｒｅ　ｂｅｄ　ｔｉｍｅ．
+◆Very well... be sure to do your ”blue... blue...”↓
+  chant before bed time.
 
-;jpn:◆じゃ　ねるまえに↓
-;jpn:　ブルーブルーを　おいのりしてね。
+;jpn:◆じゃ ねるまえに↓
+;jpn: ブルーブルーを おいのりしてね。
 @KEYNP()
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_HAPPY_BED)
 @!
 
 _HOTEL_HAPPY_NOMONEY;
-◆Ｎｏ　ｆａｉｔｈ．．．↓
-　　Ｎｏ　ｍｏｎｅｙ．．．↓
-　　Ｙｏｕ　ａｒｅ　ａ　ｈｏｐｅｌｅｓｓ　ｃａｓｅ．
+◆No faith...↓
+  No money...↓
+  You are a hopeless case.
 
-;jpn:◆しんこうは　ない‥‥↓
-;jpn:　かねは　ない‥‥@WI(15)か。↓
-;jpn:　すくわれない　やつだ。
+;jpn:◆しんこうは ない‥‥↓
+;jpn: かねは ない‥‥@WI(15)か。↓
+;jpn: すくわれない やつだ。
 @KEYNP()
 @!
 
 _HOTEL_HAPPY_MORNING;
-◆Ａｒｅ　ｙｏｕ　ｐｒｅｐａｒｅｄ　ｔｏ　ｓｈｏｗ　ｔｈｅ　ｐｒｏｐｅｒ　ｒｅｓｐｅｃｔ　ｔｏ　Ｍｒ．　Ｃａｒｐａｉｎｔｅｒ　ｎｏｗ？@KEY()↓
-◆Ｂｌｕｅ．．．　ｂｌｕｅ．．．
+◆Are you prepared to show the proper respect to Mr. Carpainter now?@KEY()↓
+◆Blue... blue...
 
 ;jpn:◆すこしは↓
-;jpn:　カーペインターさんを‥‥@KEY()↓
+;jpn: カーペインターさんを‥‥@KEY()↓
 ;jpn:◆そんけいできるように↓
-;jpn:　なったかな？　ブルーブルー。
+;jpn: なったかな? ブルーブルー。
 @KEYNP()
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
 @!
@@ -408,43 +408,43 @@ _HOTEL_HAPPY_LATER;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_HOTEL_HAPPY_AFTER_MORNING)
 @GET_ORDER_PLAYER(1)
 @XCHG()
-◆Ｇｒｅｅｔｉｎｇｓ，　@DSP_NAME(0)．↓
-　　Ｐｌｅａｓｅ　ｆｏｒｇｉｖｅ　ｍｙ　ｌｅｃｔｕｒｅ　ｅａｒｌｉｅｒ．@KEY()↓
-◆Ｙｏｕ　ａｒｅ　ｎｏｗ　ｗｅｌｃｏｍｅ　ｔｏ　ｓｔａｙ　ｆｒｅｅ　ｏｆ　ｃｈａｒｇｅ．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｓｔａｙ？↓
+◆Greetings, @DSP_NAME(0).↓
+  Please forgive my lecture earlier.@KEY()↓
+◆You are now welcome to stay free of charge.@KEY()↓
+◆Would you like to stay?↓
  
-;jpn:◆やあ　@DSP_NAME(0)くん↓
-;jpn:　いつぞやは　せっきょうして↓
-;jpn:　すまなかったね。@KEY()↓
-;jpn:◆これからは　むりょうで↓
-;jpn:　しゅくはくしても　いいよ。@KEY()↓
-;jpn:◆とまっていくかね？↓
+;jpn:◆やあ @DSP_NAME(0)くん↓
+;jpn: いつぞやは せっきょうして↓
+;jpn: すまなかったね。@KEY()↓
+;jpn:◆これからは むりょうで↓
+;jpn: しゅくはくしても いいよ。@KEY()↓
+;jpn:◆とまっていくかね?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_HOTEL_HAPPY_AFTER_YES,_HOTEL_HAPPY_AFTER_NO)
 _HOTEL_HAPPY_AFTER_NO;
-◆Ｖｅｒｙ　ｗｅｌｌ．　　Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ，　ａｎｙ　ｔｉｍｅ．
+◆Very well.  Please come again, any time.
 
-;jpn:◆そうかい　また　いつでもおいで。
+;jpn:◆そうかい また いつでもおいで。
 @KEYNP()
 @!
 _HOTEL_HAPPY_AFTER_YES;
-◆Ｅｘｃｅｌｌｅｎｔ．　　Ｐｌｅａｓｅ　ｍａｋｅ　ｙｏｕｒｓｅｌｆ　ｃｏｍｆｏｒｔａｂｌｅ，　ｏｎ　ｙｏｕｒ　ｂｌｕｅ　ｓｈｅｅｔｓ．．．@KEY()↓
-◆Ｎｏ，　ｎｏ，　Ｉ’ｍ　ｊｕｓｔ　ｋｉｄｄｉｎｇ！　　Ｈａ　ｈａ　ｈａｈ！
+◆Excellent.  Please make yourself comfortable, on your blue sheets...@KEY()↓
+◆No, no, I’m just kidding!  Ha ha hah!
 
-;jpn:◆じゃ　ごゆっくり。↓
-;jpn:　シーツはブルー‥‥@WI(30)じゃないよ。↓
-;jpn:　ハハハハ。↓
+;jpn:◆じゃ ごゆっくり。↓
+;jpn: シーツはブルー‥‥@WI(30)じゃないよ。↓
+;jpn: ハハハハ。↓
 @KEYNP()
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_HAPPY_BED)
 @!
 _HOTEL_HAPPY_AFTER_MORNING;
-◆Ｇｏｏｄ　ｍｏｒｎｉｎｇ．↓
-　　Ｔａｋｅ　ｃａｒｅ　ａｎｄ　ｇｏｏｄ　ｌｕｃｋ．
+◆Good morning.↓
+  Take care and good luck.
 
 ;jpn:◆グッドモーニング。↓
-;jpn:　げんきでいっといで。
+;jpn: げんきでいっといで。
 @KEYNP()
 @!
 
@@ -453,10 +453,10 @@ MSG_HOTEL_THRK;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_THRK_HOTEL_MORNING)
 @MUL_ACTIVE_PLAYER(60)
 @XCHG()
-◆Ｗｅｌｃｏｍｅ　ｔｏ　ｔｈｅ　Ｔｈｒｅｅｄ　Ｓｕｎｓｅｔ　Ｈｏｔｅｌ．@KEY()↓
+◆Welcome to the Threed Sunset Hotel.@KEY()↓
 
 ;jpn:◆スリークサンセットホテルに↓
-;jpn:　ようこそ。@KEY()↓
+;jpn: ようこそ。@KEY()↓
 @GOSUB(_SUB_HOTEL_SELECT)
 @SELGOTO(_THRK_HOTEL_YES,_THRK_HOTEL_NO)
 _THRK_HOTEL_NO;
@@ -489,66 +489,66 @@ MSG_HOTEL_DSRT;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_HOTEL_DSRT_MORNING)
 @MUL_ACTIVE_PLAYER(70)          ;一人分の宿泊費を記入してください。
 @XCHG()
-◆Ｗｅ　ａｒｅ　ａｌｓｏ　ｒｕｎｎｉｎｇ　ａｎ　ｉｎｎ，　ｍｉｓｔｅｒ．@KEY()↓
-◆Ｉｔ’ｓ　＄@DSP_NUM(0)　ａ　ｎｉｇｈｔ　ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｔａｙ　ｈｅｒｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｔａｙ？↓
+◆We are also running an inn, mister.@KEY()↓
+◆It’s ＄@DSP_NUM(0) a night if you want to stay here.@KEY()↓
+◆Do you want to stay?↓
  
-;jpn:◆うちは　やどやも↓
-;jpn:　やってるんですけどねぇ↓
-;jpn:　おきゃくさん。@KEY()↓
+;jpn:◆うちは やどやも↓
+;jpn: やってるんですけどねぇ↓
+;jpn: おきゃくさん。@KEY()↓
 ;jpn:◆とまっていくなら↓
-;jpn:　ひとばん@DSP_NUM(0)ドルです。@KEY()↓
-;jpn:◆とまりますか？↓
+;jpn: ひとばん@DSP_NUM(0)ドルです。@KEY()↓
+;jpn:◆とまりますか?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_DSRT_HOTEL_YES,_DSRT_HOTEL_NO)
 _DSRT_HOTEL_NO;
-◆Ｔｈａｔ’ｓ　ｐｒｏｂａｂｌｙ　ｆｏｒ　ｔｈｅ　ｂｅｓｔ．@KEY()↓
-◆Ｙｏｕ　ｓｅｅ．．．　ｏｕｒ　ｂｅｄｓ　ａｒｅ　ｒｅａｌｌｙ　ｏｌｄ　ａｎｄ　ｄｕｓｔｙ．
+◆That’s probably for the best.@KEY()↓
+◆You see... our beds are really old and dusty.
 
 ;jpn:◆そうですね。↓
-;jpn:　それが　いいでしょう。↓
-;jpn:　‥‥ベッドもボロだし。
+;jpn: それが いいでしょう。↓
+;jpn: ‥‥ベッドもボロだし。
 @KEYNP()
 @!
 _DSRT_HOTEL_YES;
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
 @Q_MONEY(0)
 @TRUE_GOTO(_DSRT_HOTEL_NOMONEY)
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｗｅｌｌ，　ｈａｖｅ　ａ　ｇｏｏｄ　ｒｅｓｔ．　　Ｙｏｕ’ｌｌ　ｗａｋｅ　ｕｐ　ｒｅｆｒｅｓｈｅｄ！
+◆Well, have a good rest.  You’ll wake up refreshed!
 
-;jpn:◆じゃあ　ゆっくりやすんで↓
-;jpn:　つかれを　いやしてください。
+;jpn:◆じゃあ ゆっくりやすんで↓
+;jpn: つかれを いやしてください。
 @KEYNP()
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_YADOYA_DSRT)
 @!
 _DSRT_HOTEL_NOMONEY;
-◆Ｙｏｕ．．．．ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．
+◆You....don’t have enough money.
 
 ;jpn:◆おかね‥‥もってないんですね。
 @KEYNP()
 @!
-_HOTEL_DSRT_MORNING;＠ｗｅｔ　ｗａｓｈ　ｃｌｏｔｈ三浦
-;◆そとは　あついですから
-;　きをつけて。
-◆Ｗｈｅｎ　ｙｏｕ　ｔｒａｖｅｌ　ｔｈｏｕｇｈ　ｔｈｅ　ｄｅｓｅｒｔ，　ｙｏｕ　ｍａｙ　ｂｅ　ｈｉｔ　ｂｙ　ｓｕｎｓｔｒｏｋｅ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｓｅｅ　ｆｌａｓｈｉｎｇ　ｌｉｇｈｔｓ　ｂｅｆｏｒｅ　ｙｏｕｒ　ｅｙｅｓ，　ｙｏｕ　ｍａｙ　ｈａｖｅ　ｓｕｎｓｔｒｏｋｅ！@KEY()↓
-◆Ｂｕｔ　ｄｏｎ’ｔ　ｗｏｒｒｙ　ｔｏｏ　ｍｕｃｈ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｈａｖｅ　ａ　Ｗｅｔ　Ｔｏｗｅｌ，　ｙｏｕ’ｌｌ　ｂｅ　ａｌｌ　ｒｉｇｈｔ．
- ;jpn:◆さばくを　あるいてると↓
-;jpn:　にっしゃびょうに↓
-;jpn:　かかることが　あるですよ。@KEY()↓
-;jpn:◆めのまえが　@WI(20)ピカッ　@WI(20)ピカッ↓
-;jpn:　@WI(30)‥‥なんて↓
-;jpn:　ひかるようにかんじたら@KEY()↓
-;jpn:◆そうですね　@WI(30)それ　おそらく↓
-;jpn:　にっしゃびょうですね。@KEY()↓
-;jpn:◆でも　しんぱいないですよ↓
-;jpn:　ぜんぜん　ほんとに。↓
-;jpn:　@WI(40)ぬれタオル　もってさえいれば。@KEYNP()
+_HOTEL_DSRT_MORNING;＠wet wash cloth三浦
+;◆そとは あついですから
+; きをつけて。
+◆When you travel though the desert, you may be hit by sunstroke.@KEY()↓
+◆If you see flashing lights before your eyes, you may have sunstroke!@KEY()↓
+◆But don’t worry too much.@KEY()↓
+◆If you have a Wet Towel, you’ll be all right.
+ ;jpn:◆さばくを あるいてると↓
+;jpn: にっしゃびょうに↓
+;jpn: かかることが あるですよ。@KEY()↓
+;jpn:◆めのまえが @WI(20)ピカッ @WI(20)ピカッ↓
+;jpn: @WI(30)‥‥なんて↓
+;jpn: ひかるようにかんじたら@KEY()↓
+;jpn:◆そうですね @WI(30)それ おそらく↓
+;jpn: にっしゃびょうですね。@KEY()↓
+;jpn:◆でも しんぱいないですよ↓
+;jpn: ぜんぜん ほんとに。↓
+;jpn: @WI(40)ぬれタオル もってさえいれば。@KEYNP()
 @KEYNP()
 @!
 
@@ -558,10 +558,10 @@ MSG_HOTEL_FOUR;
 @MUL_ACTIVE_PLAYER(75)
 @XCHG()
 @CHKFGOTO(FLG_WIN_GIEGU,_HOTEL_FOUR_LATER)
-◆Ｗｅｌｃｏｍｅ　ｔｏ　ｔｈｅ　Ｍｏｎｏｔｏｌｉ　Ｇｒａｎｄ　Ｈｏｔｅｌ．@KEY()↓
+◆Welcome to the Monotoli Grand Hotel.@KEY()↓
 
 ;jpn:◆モノトリーグランドホテルに↓
-;jpn:　ようこそ。@KEY()↓
+;jpn: ようこそ。@KEY()↓
 _HOTEL_FOUR_MAIN;
 @GOSUB(_SUB_HOTEL_SELECT)
 @SELGOTO(_FOUR_HOTEL_YES,_FOUR_HOTEL_NO)
@@ -569,10 +569,10 @@ _FOUR_HOTEL_NO;
 @GOSUB(_SUB_HOTEL_NO)
 @!
 _HOTEL_FOUR_LATER;最終戦闘後は
-◆Ｗｅｌｃｏｍｅ　ｔｏ　ｔｈｅ　Ｅｎｒｉｃｈ　Ｇｒａｎｄ　Ｈｏｔｅｌ．@KEY()↓
+◆Welcome to the Enrich Grand Hotel.@KEY()↓
 
 ;jpn:◆エンリッチ・グランドホテルに↓
-;jpn:　ようこそ。@KEY()↓
+;jpn: ようこそ。@KEY()↓
 @GOTO(_HOTEL_FOUR_MAIN)
 
 _FOUR_HOTEL_YES;
@@ -594,39 +594,39 @@ MSG_HOTEL_SUMS;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_SUMS_HOTEL_MORNING)
 @MUL_ACTIVE_PLAYER(150)         ;一人分の宿泊費を記入してください。
 @XCHG()
-◆Ｗｅｌｃｏｍｅ　ｔｏ↓
-　　Ｌ’ｈｏｔｅｌ　ｄｅ　Ｓｕｍｍｅｒｓ．@KEY()↓
-◆Ｍｙ　ｎａｍｅ　ｉｓ↓
-　　Ｒｉｓｏｓｈａ　Ｒｉｃｈｍｏｎｄｅ，@KEY()↓
-◆ａｎｄ　Ｉ　ａｍ　ｔｈｅ　ａｓｓｉｓｔａｎｔ　ｍａｎａｇｅｒ．@KEY()↓
-◆Ｉ’ｍ　ｓｏｒｒｙ　@GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM)，　ｂｕｔ　Ｉ’ｍ　ａｆｒａｉｄ↓
-　　ｔｈａｔ　ｗｅ　ｄｏ　ｎｏｔ　ｈａｖｅ　ａｎｙ　ｒｅｓｅｒｖａｔｉｏｎ　ｕｎｄｅｒ　ｙｏｕｒ　ｎａｍｅ．@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　ｗｅ　ｃａｎ　ｏｆｆｅｒ　ｙｏｕ　ａ　ｒｏｏｍ　ａｔ　＄@DSP_NUM(0)　ａ　ｎｉｇｈｔ．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｂｅ　ｉｎｔｅｒｅｓｔｅｄ　ｉｎ　ａ　ｒｏｏｍ？↓
+◆Welcome to↓
+  L’hotel de Summers.@KEY()↓
+◆My name is↓
+  Risosha Richmonde,@KEY()↓
+◆and I am the assistant manager.@KEY()↓
+◆I’m sorry @GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM), but I’m afraid↓
+  that we do not have any reservation under your name.@KEY()↓
+◆However, we can offer you a room at ＄@DSP_NUM(0) a night.@KEY()↓
+◆Would you be interested in a room?↓
 
 ;jpn:◆オテル@WI(5)・ド@WI(5)・サマーズに↓
-;jpn:　ようこそいらっしゃいました。@KEY()↓
+;jpn: ようこそいらっしゃいました。@KEY()↓
 ;jpn:◆わたくしが↓
-;jpn:　しはいにんだいりの‥‥@KEY()@WI(10)↓
+;jpn: しはいにんだいりの‥‥@KEY()@WI(10)↓
 ;jpn:◆リゾッチャ@WI(5)・リッチモンド↓
-;jpn:　でございます。@KEY()↓
+;jpn: でございます。@KEY()↓
 ;jpn:◆おきゃくさま@WI(5)↓
-;jpn:　ごよやくは　ございませんね。@KEY()↓
+;jpn: ごよやくは ございませんね。@KEY()↓
 ;jpn:◆@DSP_NUM(0)ドルのおへやが↓
-;jpn:　ごよういできますが@KEY()↓
-;jpn:◆おとまりになりますか？↓
+;jpn: ごよういできますが@KEY()↓
+;jpn:◆おとまりになりますか?↓
 @GOSUB(_SUB_HOTEL_SELECT_NOMES)
 @SELGOTO(_SUMS_HOTEL_YES,_SUMS_HOTEL_NO)
 _SUMS_HOTEL_NO;
-◆Ｔｈａｔ’ｓ　ｔｏｏ　ｂａｄ，　@GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM)．@KEY()↓
-◆Ｐｌｅａｓｅ　ｋｅｅｐ　ｕｓ　ｉｎ　ｍｉｎｄ　ｔｈｅ　ｎｅｘｔ　ｔｉｍｅ　ｙｏｕ　ｃｏｍｅ　ｈｅｒｅ　ｏｎ　ｙｏｕｒ　ｈｏｌｉｄａｙ．
+◆That’s too bad, @GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM).@KEY()↓
+◆Please keep us in mind the next time you come here on your holiday.
 
 ;jpn:◆それは↓
-;jpn:　ざんねんでございます。@KEY()↓
+;jpn: ざんねんでございます。@KEY()↓
 ;jpn:◆こんどの↓
-;jpn:　おやすみのときには@KEY()↓
-;jpn:◆ぜひ　ごゆっくり↓
-;jpn:　おこしください。
+;jpn: おやすみのときには@KEY()↓
+;jpn:◆ぜひ ごゆっくり↓
+;jpn: おこしください。
 @KEYNP()
 @!
 _SUMS_HOTEL_YES;
@@ -635,14 +635,14 @@ _SUMS_HOTEL_YES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｅｘｃｅｌｌｅｎｔ　ｃｈｏｉｃｅ，　@GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM)！@KEY()↓
-◆Ｗｅ　ｈｏｐｅ　ｙｏｕ　ｅｎｊｏｙ　ｏｕｒ　ｗｏｎｄｅｒｆｕｌ　ｏｃｅａｎ　ｖｉｅｗ．
+◆Excellent choice, @GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM)!@KEY()↓
+◆We hope you enjoy our wonderful ocean view.
 
 ;jpn:◆おきゃくさま↓
-;jpn:　ラッキーでございます。@KEY()↓
+;jpn: ラッキーでございます。@KEY()↓
 ;jpn:◆すばらしい↓
-;jpn:　オーシャンビューを↓
-;jpn:　おたのしみください。
+;jpn: オーシャンビューを↓
+;jpn: おたのしみください。
 @KEYNP()
 @GOSUB(_SUB_HOTEL_YES_NOMES)
 @MUSISTART()                ;曲変更のタイミングを合わせる
@@ -650,67 +650,67 @@ _SUMS_HOTEL_YES;
 @GOSUB(MSG_SUB_HOTEL_LIFEUP)
 @!
 _SUMS_HOTEL_NOMONEY;
-◆Ｉｆ　ｙｏｕ　ｄｏ　ｎｏｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｃａｓｈ　ｗｉｔｈ　ｙｏｕ，@KEY()↓
-◆ｐｌｅａｓｅ　ｆｅｅｌ　ｆｒｅｅ　ｔｏ　ｕｓｅ　ｔｈｅ　ＡＴＭ　ｊｕｓｔ　ｏｖｅｒ　ｔｈｅｒｅ．
+◆If you do not have enough cash with you,@KEY()↓
+◆please feel free to use the ATM just over there.
 
-;jpn:◆おきゃくさま　キャッシュを↓
-;jpn:　おもちでないようで↓
-;jpn:　ございましたら@KEY()↓
+;jpn:◆おきゃくさま キャッシュを↓
+;jpn: おもちでないようで↓
+;jpn: ございましたら@KEY()↓
 ;jpn:◆あちらの↓
-;jpn:　キャッシュディスペンサーを↓
-;jpn:　ごりようくださいませ。
+;jpn: キャッシュディスペンサーを↓
+;jpn: ごりようくださいませ。
 @KEYNP()
 @!
 _SUMS_HOTEL_MORNING;
-◆Ｄｉｄ　ｙｏｕ　ｈａｖｅ　ａ　ｒｅｌａｘｉｎｇ　ｓｌｅｅｐ？@KEY()↓
-◆Ｔｈｅ　ｓｏｕｎｄ　ｏｆ　ｔｈｅ　ｏｃｅａｎ　ｗａｖｅｓ　ｄｉｄｎ’ｔ　ｄｉｓｔｕｒｂ　ｙｏｕ，　Ｉ　ｔｒｕｓｔ．
+◆Did you have a relaxing sleep?@KEY()↓
+◆The sound of the ocean waves didn’t disturb you, I trust.
 
 ;jpn:◆ゆっくりおやすみに↓
-;jpn:　なられましたか？@KEY()↓
+;jpn: なられましたか?@KEY()↓
 ;jpn:◆うみのおとが↓
-;jpn:　うるさくは↓
-;jpn:　ございませんでしたか？
+;jpn: うるさくは↓
+;jpn: ございませんでしたか?
 @KEYNP()
 @!
 ;スカラビ
 MSG_HOTEL_SKRB;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_SKRB_HOTEL_MORNING)
-◆Ｗｅｌｃｏｍｅ　ｔｏ　ｔｈｅ　”Ｇｒｅａｔ　Ｓｏｕｔｈｅｒｎ　Ｉｎｔｅｒｎａｔｉｏｎａｌ　Ｒｅｓｏｒｔ　Ｈｏｔｅｌ．”@KEY()↓
-◆Ｏｕｒ　ｒｏｏｍｓ　ｒａｎｇｅ　ｉｎ　ｐｒｉｃｅ↓
-　　ｆｒｏｍ
+◆Welcome to the ”Great Southern International Resort Hotel.”@KEY()↓
+◆Our rooms range in price↓
+  from
 @MUL_ACTIVE_PLAYER(15)
 @XCHG()
-　　＄@DSP_NUM(0)
+  ＄@DSP_NUM(0)
 @MUL_ACTIVE_PLAYER(100)         ;一人分の宿泊費を記入してください。
 @XCHG()
-　ｔｏ　＄@DSP_NUM(0)↓
-　　ａ　ｎｉｇｈｔ．@KEY()↓
-◆Ｒｉｇｈｔ　ｎｏｗ，　ｔｈｏｕｇｈ，　ｗｅ　ｏｎｌｙ　ｈａｖｅ　ｏｕｒ　ｓｕｐｅｒ　ｄｅｌｕｘｅ　ｓｕｉｔｅ　ａｖａｉｌａｂｌｅ．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｓｔａｙ？↓
+ to ＄@DSP_NUM(0)↓
+  a night.@KEY()↓
+◆Right now, though, we only have our super deluxe suite available.@KEY()↓
+◆Would you like to stay?↓
  
 ;jpn:◆「グレート・サザーン・↓
-;jpn:　こくさい・かんこうホテル」へ↓
-;jpn:　ようこそ！@KEY()↓
+;jpn: こくさい・かんこうホテル」へ↓
+;jpn: ようこそ!@KEY()↓
 ;jpn:◆ひとばん↓
 ;@MUL_ACTIVE_PLAYER(15)
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルから↓
+;jpn: @DSP_NUM(0)ドルから↓
 ;@MUL_ACTIVE_PLAYER(100)            ;一人分の宿泊費を記入してください。
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルですが@KEY()↓
-;jpn:◆ただいま　@DSP_NUM(0)ドルの↓
-;jpn:　スーパーデラックスルームしか↓
-;jpn:　ごよういできません。@KEY()↓
-;jpn:◆おとまりになりますか？↓
+;jpn: @DSP_NUM(0)ドルですが@KEY()↓
+;jpn:◆ただいま @DSP_NUM(0)ドルの↓
+;jpn: スーパーデラックスルームしか↓
+;jpn: ごよういできません。@KEY()↓
+;jpn:◆おとまりになりますか?↓
 @GOSUB(_SUB_HOTEL_SELECT_NOMES)
 @SELGOTO(_SKRB_HOTEL_YES,_SKRB_HOTEL_NO)
 _SKRB_HOTEL_NO;
-◆Ｗｅ　ａｒｅ　ｖｅｒｙ　ｓｏｒｒｙ@KEY()↓
-◆ｔｈａｔ　ｗｅ　ｄｏ　ｎｏｔ　ｈａｖｅ　ａｎｙ　ｏｆ　ｏｕｒ　ｌｅｓｓ　ｅｘｐｅｎｓｉｖｅ　ｒｏｏｍｓ　ａｖａｉｌａｂｌｅ　ａｔ　ｔｈｉｓ　ｔｉｍｅ．
+◆We are very sorry@KEY()↓
+◆that we do not have any of our less expensive rooms available at this time.
 
 ;jpn:◆あなたむけの↓
-;jpn:　やすい　おへやがあいてなくて↓
-;jpn:　しつれいしました。
+;jpn: やすい おへやがあいてなくて↓
+;jpn: しつれいしました。
 @KEYNP()
 @!
 
@@ -720,11 +720,11 @@ _SKRB_HOTEL_YES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｐｌｅａｓｅ　ｌｅｔ　ｕｓ　ｋｎｏｗ　ｉｆ　ｙｏｕ　ｆｉｎｄ　ａｎｙ　ｓｃｏｒｐｉｏｎｓ．．．@KEY()↓
-◆Ｉｔ’ｓ　ｖｅｒｙ　ｕｎｌｉｋｅｌｙ　ｔｈａｔ　ｔｈｅｙ　ｗｉｌｌ　ｃｏｍｅ　ｏｕｔ，　ｂｕｔ　ｙｏｕ　ｎｅｖｅｒ　ｃａｎ　ｔｅｌｌ．．．
+◆Please let us know if you find any scorpions...@KEY()↓
+◆It’s very unlikely that they will come out, but you never can tell...
 
 ;jpn:◆サソリがでたら↓
-;jpn:　おしらせください。@KEY()↓
+;jpn: おしらせください。@KEY()↓
 ;jpn:◆たぶんでないとおもいますが。
 @KEYNP()
 @CLOSEALL()
@@ -740,12 +740,12 @@ _SKRB_HOTEL_NOMONEY;
 @GOSUB(_SKRB_HOTEL_NO)
 @!
 _SKRB_HOTEL_MORNING;
-◆Ｇｏｏｄ　ｍｏｒｎｉｎｇ！@KEY()↓
-◆Ｔｈｉｓ　ｓｕｒｅ　ｉｓ　ｓｏｍｅ　ｎｉｃｅ　ｗｅａｔｈｅｒ　ｗｅ’ｒｅ　ｈａｖｉｎｇ　ｉｎ　Ｓｃａｒａｂａ　ｌａｔｅｌｙ．
+◆Good morning!@KEY()↓
+◆This sure is some nice weather we’re having in Scaraba lately.
 
 ;jpn:◆おはようございます。@KEY()↓
-;jpn:◆スカラビは　きょうも↓
-;jpn:　いいてんきでございます。
+;jpn:◆スカラビは きょうも↓
+;jpn: いいてんきでございます。
 @KEYNP()
 』
 ;ムーンサイド
@@ -753,20 +753,20 @@ MSG_HOTEL_MOON;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_MOON_HOTEL_MORNING)
 @MUL_ACTIVE_PLAYER(75)          ;一人分の宿泊費を記入してください。
 @XCHG()
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　Ｄａｒｋ　Ｍｏｏｎ　Ｈｏｔｅｌ．@KEY()↓
-◆Ｏｎｅ　ｓｌｅｅｐ　ｐｅｒｉｏｄ　ｉｓ　＄@DSP_NUM(0)．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｌｅｅｐ？↓
+◆This is the Dark Moon Hotel.@KEY()↓
+◆One sleep period is ＄@DSP_NUM(0).@KEY()↓
+◆Do you want to sleep?↓
 ;jpn:◆ホテル・ダークムーンです。@KEY()↓
-;jpn:◆ひとねむり@WI(10)　@DSP_NUM(0)ドルです。@KEY()↓
-;jpn:◆ねむりますか？↓
+;jpn:◆ひとねむり@WI(10) @DSP_NUM(0)ドルです。@KEY()↓
+;jpn:◆ねむりますか?↓
 @GOSUB(_SUB_HOTEL_SELECT_NOMES)
 @SELGOTO(_MOON_HOTEL_NO,_MOON_HOTEL_YES)
 @GOTO(_MOON_HOTEL_YES)
 _MOON_HOTEL_NO;
-◆Ｙｏｕ’ｒｅ　ａｃｔｕａｌｌｙ　ｇｏｉｎｇ　ｔｏ　ｔｒｙ　ｔｏ　ｓｔａｙ　ｕｐ．．．？　　Ｈａｈ　ｈａｈ　ｈａｈ！
+◆You’re actually going to try to stay up...?  Hah hah hah!
  
-;jpn:◆ずっと　おきているんですね。↓
-;jpn:　ホッホッホ！
+;jpn:◆ずっと おきているんですね。↓
+;jpn: ホッホッホ!
 @KEYNP()
 @!
 _MOON_HOTEL_YES;
@@ -775,9 +775,9 @@ _MOON_HOTEL_YES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ａｌｌ　ｒｉｇｈｔ．　　Ｈｅｒｅ　ｗｅ　ｇｏ！
+◆All right.  Here we go!
 
-;jpn:◆それじゃ　どうぞ。
+;jpn:◆それじゃ どうぞ。
 @KEYNP()
 @GOSUB(_SUB_HOTEL_YES_NOMES)
 @MUSISTART()                ;曲変更のタイミングを合わせる
@@ -785,17 +785,17 @@ _MOON_HOTEL_YES;
 @GOSUB(MSG_SUB_HOTEL_LIFEUP)
 @!
 _MOON_HOTEL_NOMONEY;
-◆Ｍｏｎｅｙ　ｒｕｌｅｓ　ｈｅｒｅ　ｉｎ　Ｍｏｏｎｓｉｄｅ，　ｔｏｏ．@KEY()↓
-◆Ａｎｄ　ｙｏｕ　ｄｏ　ｎｏｔ　ｓｅｅｍ　ｔｏ　ｈａｖｅ　ａｎｙ　ａｔ　ｔｈｉｓ　ｍｏｍｅｎｔ．
+◆Money rules here in Moonside, too.@KEY()↓
+◆And you do not seem to have any at this moment.
 
 ;jpn:◆ムーンサイドも↓
-;jpn:　かねしだい‥‥。@KEY()↓
+;jpn: かねしだい‥‥。@KEY()↓
 ;jpn:◆おかねが↓
-;jpn:　ないみたいですね。
+;jpn: ないみたいですね。
 @KEYNP()
 @!
 _MOON_HOTEL_MORNING;
-◆Ｔｈａｎｋｓ．
+◆Thanks.
 
 ;jpn:◆どうも
 @KEYNP()
@@ -804,28 +804,28 @@ _MOON_HOTEL_MORNING;
 ;魔境のおサル
 MSG_HOTEL_MAKYO;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_HOTEL_MAKYO_MORNING)
-◆Ｔｈｅ　ｍｏｎｋｅｙｓ　ｒｕｎ　ａｎ　ｉｎｎ　ｉｎ　ｔｈｅ　ｆｏｒｅｓｔ．　　Ｙｏｕ　ｃａｎ　ｓｔａｙ　ｔｈｅｒｅ　ｆｏｒ　ｆｒｅｅ！@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｐｅｎｄ　ｔｈｅ　ｎｉｇｈｔ？↓
+◆The monkeys run an inn in the forest.  You can stay there for free!@KEY()↓
+◆Do you want to spend the night?↓
 
-;jpn:◆この　もりのなかに↓
-;jpn:　おサルのやどが　あるんだ。↓
-;jpn:　ただで　とまれるよ。@KEY()↓
-;jpn:◆とまってくかい？↓
+;jpn:◆この もりのなかに↓
+;jpn: おサルのやどが あるんだ。↓
+;jpn: ただで とまれるよ。@KEY()↓
+;jpn:◆とまってくかい?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_HOTEL_MAKYO_YES,_HOTEL_MAKYO_NO)
 _HOTEL_MAKYO_NO;
 ;イイエの場合
-◆Ｉ　ｓｗｅａｒ，　ｉｔ　ｄｏｅｓｎ’ｔ　ｓｍｅｌｌ　ｌｉｋｅ　ｍｏｎｋｅｙｓ．
+◆I swear, it doesn’t smell like monkeys.
 
-;jpn:◆べつに　おサルくさくないよ。
+;jpn:◆べつに おサルくさくないよ。
 @KEYNP()
 @!
 _HOTEL_MAKYO_YES;
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
-◆Ｙｏｕ’ｒｅ　ｓｕｒｅ　ｔｏ　ｈａｖｅ　ｆｏｎｄ　ｍｅｍｏｒｉｅｓ　ｏｆ　ｔｈｅ　ｍｏｎｋｅｙ’ｓ　ｉｎｎ　ａｆｔｅｒ　ｙｏｕｒ　ｔｒｉｐ．．．
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+◆You’re sure to have fond memories of the monkey’s inn after your trip...
 
-;jpn:◆たびの　おもいでに‥‥↓
-;jpn:　おさるのやどやも　いいもんだよ。
+;jpn:◆たびの おもいでに‥‥↓
+;jpn: おさるのやどやも いいもんだよ。
 @KEYNP()
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_YADOYA_MAKYO)
@@ -836,11 +836,11 @@ _HOTEL_MAKYO_MORNING;
 ;ハイの場合、宿泊後
 @COLD_PLAYER(PC_ALL)
 @OPEN(1)
-◆Ｄｉｄｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｉｔ　ｗａｓ　ｃｏｍｆｏｒｔａｂｌｅ？　　Ｔａｋｅ　ｃａｒｅ　ａｎｄ　ｇｏｏｄ　ｂｙｅ．
+◆Didn’t you think it was comfortable?  Take care and good bye.
 
-;jpn:◆あんがい　かいてきだったろう？↓
-;jpn:　じゃ　きをつけて↓
-;jpn:　いってらっしゃーい。
+;jpn:◆あんがい かいてきだったろう?↓
+;jpn: じゃ きをつけて↓
+;jpn: いってらっしゃーい。
 @KEYNP()
 @CLOSEALL()
 @FRESH_PLAYER(PC_ALL)
@@ -850,25 +850,25 @@ _HOTEL_MAKYO_MORNING;
 ;グミの村
 MSG_HOTEL_GUMI;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_HOTEL_GUMI_MORNING)
-◆Ｉｎ　ｔｈｅ　ｈｏｌｅ，　ｉｎｎ　ｗｅ　ｈａｖｅ．@KEY()↓
-◆Ｆｒｅｅ．　Ｓｔａｙ？↓
+◆In the hole, inn we have.@KEY()↓
+◆Free. Stay?↓
 
-;jpn:◆あなの　なか　この↓
-;jpn:　ある　やどや。@KEY()↓
-;jpn:◆タダ。　やすむか？↓
+;jpn:◆あなの なか この↓
+;jpn: ある やどや。@KEY()↓
+;jpn:◆タダ。 やすむか?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_HOTEL_GUMI_YES,_HOTEL_GUMI_NO)
 _HOTEL_GUMI_NO;
-◆．．．．．
+◆.....
 
 ;jpn:◆‥‥‥。
 @KEYNP()
 』
 _HOTEL_GUMI_YES;
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
-◆Ｏｋａｙ．　Ｙｏｕ　ｓｔａｙ．
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+◆Okay. You stay.
 
-;jpn:◆じゃ　やすめ。
+;jpn:◆じゃ やすめ。
 @KEYNP()
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_YADOYA_GUMI)
@@ -876,9 +876,9 @@ _HOTEL_GUMI_YES;
 
 ;ハイの時、宿泊後
 _HOTEL_GUMI_MORNING;
-◆Ｎｉｃｅ　ｓｔａｙ？
+◆Nice stay?
 
-;jpn:◆やすんだ。　おまえ。
+;jpn:◆やすんだ。 おまえ。
 @KEYNP()
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
 』
@@ -887,25 +887,25 @@ _HOTEL_GUMI_MORNING;
 MSG_DKFD_GUMI_HOTEL;
 @MUL_ACTIVE_PLAYER(100)         ;一人分の宿泊費を記入してください。
 @XCHG()
-◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｃｏｍｉｎｇ　ａｌｌ　ｔｈｅ　ｗａｙ　ｉｎｔｏ　ｔｈｉｓ　ｐｒｉｍｉｔｉｖｅ　ｃｏｕｎｔｒｙ．@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｂｅ　ｔｉｒｅｄ．↓
-　　Ｔｏ　ｓｔａｙ，↓
-　　ｉｔ’ｌｌ　ｒｕｎ　ｙｏｕ　＄@DSP_NUM(0)．@KEY()↓
-◆Ｙｏｕ　ａｒｅ　ｇｏｉｎｇ　ｔｏ　ｓｔａｙ，ａｒｅｎ’ｔ　ｙｏｕ？↓
+◆Thank you for coming all the way into this primitive country.@KEY()↓
+◆You must be tired.↓
+  To stay,↓
+  it’ll run you ＄@DSP_NUM(0).@KEY()↓
+◆You are going to stay,aren’t you?↓
 
-;jpn:◆こんな　いなかまで↓
-;jpn:　よくきてくれましたね。@KEY()↓
-;jpn:◆おつかれでしょ？↓
-;jpn:　おとまりなら　@DSP_NUM(0)ドルですがぁ@KEYNP()↓
-;jpn:◆とまりますよね？↓
+;jpn:◆こんな いなかまで↓
+;jpn: よくきてくれましたね。@KEY()↓
+;jpn:◆おつかれでしょ?↓
+;jpn: おとまりなら @DSP_NUM(0)ドルですがぁ@KEYNP()↓
+;jpn:◆とまりますよね?↓
 @GOSUB(_SUB_HOTEL_SELECT_NOMES)
 @SELGOTO(_DKFD_HOTEL_YES,_DKFD_HOTEL_NO)
 _DKFD_HOTEL_NO;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．．．↓
-　　Ｍｒ．　Ｔｒａｖｅｌｅｒ．
+◆Please come again...↓
+  Mr. Traveler.
 
-;jpn:◆また　ぜひ　きてくださいね↓
-;jpn:　‥‥たびのかた。
+;jpn:◆また ぜひ きてくださいね↓
+;jpn: ‥‥たびのかた。
 @KEYNP()
 @!
 
@@ -915,46 +915,46 @@ _DKFD_HOTEL_YES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｗｅｌｌ，　ｍａｋｅ　ｙｏｕｒｓｅｌｆ　ｃｏｍｆｏｒｔａｂｌｅ．
+◆Well, make yourself comfortable.
 
-;jpn:◆それじゃあ　ごゆっくり。
+;jpn:◆それじゃあ ごゆっくり。
 @KEYNP()
 @CLOSEALL()
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えあり）
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えあり)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_YADOYA_DKFD)
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
 @!
 _DKFD_HOTEL_NOMONEY;
-◆Ｍｏｎｅｙ　ｒｕｌｅｓ　ｅｖｅｎ　ａｔ　ｔｈｅ　ｅｎｄ　ｏｆ　ｔｈｅ　ｗｏｒｌｄ．@KEY()↓
-◆Ｗｅ　ｃａｎｎｏｔ　ａｃｃｅｐｔ　ａ　ｇｕｅｓｔ　ｗｈｏ　ｈａｓ　ｎｏ　ｍｏｎｅｙ．
-;jpn:◆いなかのはても　かねしだいと↓
-;jpn:　もうしましてね‥‥↓
-;jpn:　おかねのないかたは　どうも‥‥。
+◆Money rules even at the end of the world.@KEY()↓
+◆We cannot accept a guest who has no money.
+;jpn:◆いなかのはても かねしだいと↓
+;jpn: もうしましてね‥‥↓
+;jpn: おかねのないかたは どうも‥‥。
 @KEYNP()
 @!
 
 ;ホテル用サブルーチン
 ;金額表示と選択
 _SUB_HOTEL_SELECT;
-◆Ａ　ｏｎｅ　ｎｉｇｈｔ　ｓｔａｙ　ｗｉｌｌ　ｃｏｓｔ　ｙｏｕ　＄@DSP_NUM(0)．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｓｔａｙ？↓
+◆A one night stay will cost you ＄@DSP_NUM(0).@KEY()↓
+◆Would you like to stay?↓
  
 ;jpn:◆ごしゅくはくは↓
-;jpn:　@DSP_NUM(0)ドルです。@KEY()↓
-;jpn:◆おとまりになりますか？↓
+;jpn: @DSP_NUM(0)ドルです。@KEY()↓
+;jpn:◆おとまりになりますか?↓
 _SUB_HOTEL_SELECT_NOMES;
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @!
 
-;ホテルに宿泊（お金支払う、フェードアウト、ＢＧＭ変更、ジェフの夜なべ）
+;ホテルに宿泊(お金支払う、フェードアウト、BGM変更、ジェフの夜なべ)
 _SUB_HOTEL_YES;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｈａｖｅ　ａ　ｎｉｃｅ　ｓｔａｙ．
+◆Have a nice stay.
 
-;jpn:◆では　ごゆっくりどうぞ。
+;jpn:◆では ごゆっくりどうぞ。
 @KEYNP()
 MSG_SUB_SYUKUHAKU;
 _SUB_HOTEL_YES_NOMES;
@@ -976,31 +976,31 @@ _SUB_HOTEL_YES_END;
 
 ;宿泊しない
 _SUB_HOTEL_NO;
-◆Ｓｅｅ　ｙｏｕ　ｎｅｘｔ　ｔｉｍｅ．
+◆See you next time.
 
-;jpn:◆では　またのきかいに。
+;jpn:◆では またのきかいに。
 @KEYNP()
 @!
 
 ;お金がない。
 _SUB_HOTEL_NOMONEY;
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ↓
-　　＄@DSP_NUM(0)．．．
+◆It looks like you don’t have↓
+  ＄@DSP_NUM(0)...
 
 ;jpn:◆@DSP_NUM(0)ドル↓
-;jpn:　おもちになって↓
-;jpn:　おられないようですが‥‥。
+;jpn: おもちになって↓
+;jpn: おられないようですが‥‥。
 @KEYNP()
 @!
 
 ;宿泊後のメッセージ
 _SUB_HOTEL_MORNING;
-◆Ｇｏｏｄ　ｍｏｒｎｉｎｇ．↓
-　　Ｄｉｄ　ｙｏｕ　ｓｌｅｅｐ　ｗｅｌｌ？
+◆Good morning.↓
+  Did you sleep well?
 
 ;jpn:◆おはようございます。@WI(10)↓
-;jpn:　よくおやすみに↓
-;jpn:　なれましたか？
+;jpn: よくおやすみに↓
+;jpn: なれましたか?
 @KEYNP()
 @!
 
@@ -1015,17 +1015,17 @@ _SUB_HOTEL_MORNING;
 _SUB_DOCTOR_1;
 @SET_REG(1)
 @SAVE_REG()
-◆Ｉ　ｃａｎ　ｅｘａｍｉｎｅ　ｅａｃｈ　ｏｎｅ　ｏｆ　ｙｏｕ　ｆｏｒ　＄@DSP_NUM(0)．↓
+◆I can examine each one of you for ＄@DSP_NUM(0).↓
 @SAVE_WIN()
 @DSP_PL()
 @OPEN(37)
 @WINR_MONEY()
 @DSP_PL()
-<ｙｅｓ，　ｐｌｅａｓｅ>
-<ｎｏ，　ｔｈａｎｋｓ>
+<yes, please>
+<no, thanks>
 
-;jpn:◆はい　ひとり@DSP_NUM(0)ドルで↓
-;jpn:　みてあげるよ。↓
+;jpn:◆はい ひとり@DSP_NUM(0)ドルで↓
+;jpn: みてあげるよ。↓
 ;jpn:<みてもらう>
 ;jpn:<いらない>
 ;@DSP_ITEM(2)
@@ -1039,11 +1039,11 @@ _SUB_DOCTOR_1;
 @ONGOTO(_DCTR_YES,_DCTR_NO)
 
 _DCTR_NO;               ;キャンセル
-◆Ｙｏｕ　ｒｅａｌｌｙ　ｄｏｎ’ｔ　ｎｅｅｄ　ａｎｙ　ｔｒｅａｔｍｅｎｔ？↓
-　　Ａｌｌ　ｒｉｇｈｔ．
+◆You really don’t need any treatment?↓
+  All right.
 
-;jpn:◆ほんとに　ちりょうは　いらない？↓
-;jpn:　あっそ。
+;jpn:◆ほんとに ちりょうは いらない?↓
+;jpn: あっそ。
 _DCTR_END;              ;終了
 @GOSUB(_DCTR_HOMESICK)
 @KEYNP()
@@ -1051,20 +1051,20 @@ _DCTR_END;              ;終了
 
 
 _DCTR_YES;
-@Q_MONEY(0)             ;お金足りる？
+@Q_MONEY(0)             ;お金足りる?
 @TRUE_GOTO(_DCTR_NOMONEY)
 
 _DCTR_WHO;
-@Q_MEMBER(2)            ;パーティーは何人？
+@Q_MEMBER(2)            ;パーティーは何人?
 @TRUE_GOTO(_DCTR_ONE)       ;一人なら「だれが・・・」をとばす。
 
-◆Ｗｈｏ　ｉｓ　ｓｉｃｋ？
+◆Who is sick?
 
-;jpn:◆どなたが　おわるいんですか？
+;jpn:◆どなたが おわるいんですか?
 @DSP_PL()
 @SEL_PQ(0,0,0,0,1)          ;診てもらいたいキャラ選択。
 ↓
-@FALSE_GOTO(_DCTR_NO)           ;キャンセル？
+@FALSE_GOTO(_DCTR_NO)           ;キャンセル?
 _DCTR_OK;
 @SAVE_REG()
 @GET_SPECIAL(0,1)           ;特殊状態＃１のIDを得る。
@@ -1075,11 +1075,11 @@ _DCTR_ONE;              ;一人パーティーの処理。
 @GOTO(_DCTR_OK)
 
 _DCTR_NOMONEY;          ；お金足りない。
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．↓
-　　Ｇｏ　ｈｏｍｅ，　ａｎｄ　ｔｈｅｎ　ｃｏｍｅ　ａｇａｉｎ．
+◆You don’t have enough money.↓
+  Go home, and then come again.
 
-;jpn:◆おかねが　たりないな。↓
-;jpn:　でなおして　くるんだな。
+;jpn:◆おかねが たりないな。↓
+;jpn: でなおして くるんだな。
 @GOTO(_DCTR_END)
 
 _DCTR_NEXTCHK;
@@ -1088,30 +1088,30 @@ _DCTR_NEXTCHK;
 @ONGOTO(_DCTR_NOPROBLEM,_DCTR_KINOKO,_DCTR_TORITSUKI)
 
 _DCTR_NOPROBLEM;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｔｈｅｒｅ　ｉｓ　ａｎｙｔｈｉｎｇ　ｗｒｏｎｇ　ｗｉｔｈ　ｙｏｕ．
+◆I don’t think there is anything wrong with you.
 
 ;jpn:◆わたしのみたてでは↓
-;jpn:　どこも　わるくないようだよ。
+;jpn: どこも わるくないようだよ。
 @GOTO(_DCTR_END)
 
 _DCTR_KIZETSU;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ａｎｙｏｎｅ　ｈａｓ　ａｎｙｔｈｉｎｇ　ｌｉｋｅ　ｔｈａｔ．@KEY()↓
-◆Ｏｒ　Ｉｓ　ｉｔ　ｊｕｓｔ　ｍｙ　ｍｉｓｕｎｄｅｒｓｔａｎｄｉｎｇ？
+◆I don’t think anyone has anything like that.@KEY()↓
+◆Or Is it just my misunderstanding?
 
-;jpn:◆そんなひと　いないみたいだけど↓
-;jpn:　わたしのおもいちがいかなあ‥‥。
+;jpn:◆そんなひと いないみたいだけど↓
+;jpn: わたしのおもいちがいかなあ‥‥。
 @GOTO(_DCTR_END)
 
 _DCTR_DAIYA;
 _DCTR_SIBIRE;
 _DCTR_KINOKO;
 _DCTR_TORITSUKI;
-◆Ｉ　ｃａｎ　ｏｎｌｙ　ｔｒｅａｔ　ａｎ　ｉｌｌｎｅｓｓ．↓
-　　Ｓｏｒｒｙ．
+◆I can only treat an illness.↓
+  Sorry.
 
-;jpn:◆うちじゃ　びょうきしか↓
-;jpn:　なおせないんだよ。↓
-;jpn:　わるいね。
+;jpn:◆うちじゃ びょうきしか↓
+;jpn: なおせないんだよ。↓
+;jpn: わるいね。
 @GOSUB(_DCTR_END)
 
 _DCTR_HOMESICK;
@@ -1119,48 +1119,48 @@ _DCTR_HOMESICK;
 @FALSE_GOTO(_DCTR_HOMESICK_END)
 @KEY()↓
 ;jpn:
-◆@WI(15)．．．．．@WI(15)ｂｙ　ｔｈｅ　ｗａｙ，@KEY()↓
-◆Ｗｈａｔ　ａ　ｓａｄ　ｌｏｏｋ　ｉｎ　ｙｏｕｒ　ｅｙｅｓ．．．　　ｙｏｕ，　ｔｈｅ　ｂｏｙ　ｉｎ　ａ　ｒｅｄ　ｃａｐ．@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｂｅ　ｈｏｍｅｓｉｃｋ．@KEY()↓
-◆Ｔｈａｔ’ｓ　ｎｏｔｈｉｎｇ　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｂｅ　ａｓｈａｍｅｄ　ｏｆ．@KEY()↓
-◆Ａｎｙｂｏｄｙ　ｗｈｏ　ｉｓ　ｏｎ　ａ　ｌｏｎｇ　ｔｒｉｐ　ｗｉｌｌ　ｍｉｓｓ　ｈｏｍｅ．@KEY()↓
-◆Ｉｎ　ｔｈｉｓ　ｃａｓｅ，@KEY()↓
-◆ｔｈｅ　ｂｅｓｔ　ｔｈｉｎｇ　ｔｏ　ｄｏ　ｉｓ　ｔｏ　ｃａｌｌ　ｈｏｍｅ　ａｎｄ　ｈｅａｒ　ｙｏｕｒ　ｍｏｍ’ｓ　ｖｏｉｃｅ．@KEYNP()
+◆@WI(15).....@WI(15)by the way,@KEY()↓
+◆What a sad look in your eyes...  you, the boy in a red cap.@KEY()↓
+◆You must be homesick.@KEY()↓
+◆That’s nothing you need to be ashamed of.@KEY()↓
+◆Anybody who is on a long trip will miss home.@KEY()↓
+◆In this case,@KEY()↓
+◆the best thing to do is to call home and hear your mom’s voice.@KEYNP()
 ;jpn:◆@WI(15)‥‥@WI(15)ところで@WI(30)↓
-;jpn:　あかいぼうしのきみの↓
-;jpn:　そのさみしげな　まなざし。@KEY()↓
-;jpn:◆どうやら　ホームシックに↓
-;jpn:　かかってしまったようだね。@KEY()↓
+;jpn: あかいぼうしのきみの↓
+;jpn: そのさみしげな まなざし。@KEY()↓
+;jpn:◆どうやら ホームシックに↓
+;jpn: かかってしまったようだね。@KEY()↓
 ;jpn:◆はずかしいことじゃない。↓
-;jpn:　だれだって　ながたびにでれば↓
-;jpn:　いえがこいしくなるもんだ。@KEY()↓
+;jpn: だれだって ながたびにでれば↓
+;jpn: いえがこいしくなるもんだ。@KEY()↓
 ;jpn:◆こういうばあい↓
-;jpn:　ママのこえを　きくのが↓
-;jpn:　いちばんのくすりだよ。
+;jpn: ママのこえを きくのが↓
+;jpn: いちばんのくすりだよ。
 _DCTR_HOMESICK_END;
 @!
 
 _DCTR_KAZE;
-◆Ｙｏｕ　ｈａｖｅ　ａ　ｃｏｌｄ．
+◆You have a cold.
 
 ;jpn:◆カゼだね。
 @GOTO(_DCTR_CURE)
 
 _DCTR_NISSYA;
-◆Ｙｏｕ　ｈａｖｅ　ｓｕｎｓｔｒｏｋｅ．
+◆You have sunstroke.
 
 ;jpn:◆にっしゃびょうだね。
 @GOTO(_DCTR_CURE)
 
 _DCTR_POISON;
-◆Ｙｏｕ’ｖｅ　ｂｅｅｎ　ｐｏｉｓｏｎｅｄ．
+◆You’ve been poisoned.
 ;jpn:◆どくにやられたんだね。
 @GOTO(_DCTR_CURE)
 
 _DCTR_KIMO;
-◆Ｙｏｕ　ｍｕｓｔ　ｆｅｅｌ　ｎａｕｓｅｏｕｓ．
+◆You must feel nauseous.
 
-;jpn:◆きぶんが　わるかったんだね。
+;jpn:◆きぶんが わるかったんだね。
 @GOTO(_DCTR_CURE)
 
 _DCTR_CURE;             ;治療する。
@@ -1172,11 +1172,11 @@ _DCTR_CURE;             ;治療する。
 @SE(SE_se25_b_healing)
 @WI(50)
 @KEY()↓
-◆Ｙｏｕ’ｒｅ　ａｌｌ　ｗｅｌｌ　ｎｏｗ．↓
-　　Ｗｈａｔ　ａ　ｇｒｅａｔ　ｄｏｃｔｏｒ　ａｍ　Ｉ！
+◆You’re all well now.↓
+  What a great doctor am I!
 
-;jpn:　はい　すっかりよくなったよ。↓
-;jpn:　わたしって　エライ！
+;jpn: はい すっかりよくなったよ。↓
+;jpn: わたしって エライ!
 @GOTO(_DCTR_END)
 
 ;--------------------------------------------------------------------------
@@ -1190,9 +1190,9 @@ _SUB_NURSE;
 @SET_REG(1)
 @GOSUB(_NURSE_Q_ALLLIVING)
 @FALSE_GOTO(_NURSE_ADVICE)
-◆Ｗｈｏ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｅｅ？
+◆Who do you want to see?
 
-;jpn:◆どなたに　ごめんかいですか？
+;jpn:◆どなたに ごめんかいですか?
 @DSP_PL()
 @SEL_PQ(0,0,0,0,1)          ;誰に面会かを選択。
 ↓
@@ -1204,35 +1204,35 @@ _SUB_NURSE;
 _NURSE_SEL_CURE;
 @LOAD_REG()             ;主レ=PLAYER_ID:副レ=治療費
 @XCHG()
-◆@DSP_NAME(0)　ｗａｓ　ｊｕｓｔ　ｂｒｏｕｇｈｔ　ｉｎ，　ａｎｄ　ｉｓ　ｓｔｉｌｌ　ｕｎｃｏｎｓｃｉｏｕｓ．@KEY()↓
+◆@DSP_NAME(0) was just brought in, and is still unconscious.@KEY()↓
 
-;jpn:◆@DSP_NAME(0)さんなら　さきほど↓
-;jpn:　はこびこまれました↓
-;jpn:　いしきが　もどらないんですが。@KEY()↓
+;jpn:◆@DSP_NAME(0)さんなら さきほど↓
+;jpn: はこびこまれました↓
+;jpn: いしきが もどらないんですが。@KEY()↓
 @XCHG()
-◆Ｐｌｅａｓｅ　ｐａｙ　＄@DSP_NUM(0)　ｆｏｒ　ｔｈｅ　ｄｏｃｔｏｒ’ｓ　ｆｅｅ．↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆Please pay ＄@DSP_NUM(0) for the doctor’s fee.↓
+<Yes>
+<No>
 
-;jpn:◆ちりょうひを　@DSP_NUM(0)ドル↓
-;jpn:　おしはらいください。↓
+;jpn:◆ちりょうひを @DSP_NUM(0)ドル↓
+;jpn: おしはらいください。↓
 @WINR_MONEY()
 ;jpn:<はい>
 ;jpn:<いいえ>
 @DSP_ITEM(2)
 @GOSUB(MSG_SUB_SELQ_FORMOON)
-@ONGOTO(_NURSE_CURE_YES,_NURSE_CURE_NO);お金払う？
+@ONGOTO(_NURSE_CURE_YES,_NURSE_CURE_NO);お金払う?
 _NURSE_CURE_NO;
-◆Ｙｏｕｒ　ｆｒｉｅｎｄ，ｒｉｇｈｔ？．．．　　Ｉｔ’ｓ　ｖｅｒｙ　ｓｅｒｉｏｕｓ．
+◆Your friend,right?...  It’s very serious.
 
-;jpn:◆あなたの　おともだちでしょ↓
-;jpn:　しんじゃいますよ。
+;jpn:◆あなたの おともだちでしょ↓
+;jpn: しんじゃいますよ。
 @KEYNP()
 @!
 
 _NURSE_CURE_YES;            ;お金払う。
 @Q_MONEY(0)
-@TRUE_GOTO(_NURSE_NOMONEY)      ;お金足りる？
+@TRUE_GOTO(_NURSE_NOMONEY)      ;お金足りる?
 @MONEYOUT(0)
 @WINR_MONEY()               ;金額書換
 @LOAD_REG()             ;主レ=PLAYER_ID
@@ -1243,96 +1243,96 @@ _NURSE_CURE_YES;            ;お金払う。
 @SET_SPECIAL(0,6,1)
 @LOAD_REG()
 @XCHG()
-@HP_UP(0,100)               ;HP100%回復？（PLAYER_ID=副レジスタ）
-@PP_UP(0,100)               ;HP100%回復？（PLAYER_ID=副レジスタ）
+@HP_UP(0,100)               ;HP100%回復?(PLAYER_ID=副レジスタ)
+@PP_UP(0,100)               ;HP100%回復?(PLAYER_ID=副レジスタ)
 @SE(SE_se25_b_healing)
 @WI(50)
-◆Ｉ’ｍ　ｓｏ　ｇｌａｄ　ｔｈａｔ　ｙｏｕ　ｒｅｃｏｖｅｒｅｄ，　@DSP_NAME(0)．@KEY()↓
-◆Ｃｏｍｅ　ｂａｃｋ　ａｎｙ　ｔｉｍｅ　ｙｏｕ　ｎｅｅｄ．
+◆I’m so glad that you recovered, @DSP_NAME(0).@KEY()↓
+◆Come back any time you need.
 
 ;jpn:◆@DSP_NAME(0)さん↓
-;jpn:　げんきになって↓
-;jpn:　よかったわね。@KEY()↓
-;jpn:◆また　いつでもどうぞ。
+;jpn: げんきになって↓
+;jpn: よかったわね。@KEY()↓
+;jpn:◆また いつでもどうぞ。
 @KEYNP()
 @!
 
 _NURSE_NOPLAYER;            ;気絶していない。
 @LOAD_REG()
 @XCHG()
-◆Ｗｅ　ｄｏｎ’ｔ　ｈａｖｅ　ａ　ｐｅｒｓｏｎ　ｌｉｋｅ　ｔｈａｔ　ｉｎ　ｏｕｒ　ｈｏｓｐｉｔａｌ．
+◆We don’t have a person like that in our hospital.
 
 ;jpn:◆そういうかたは↓
-;jpn:　にゅういん　なさってません。
+;jpn: にゅういん なさってません。
 @KEYNP()
 @!
 
 _NURSE_NOMONEY;             ;お金が足りない。
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．．．？↓
-　　Ｔｈａｔ’ｓ　ｔｏｏ　ｂａｄ．
+◆You don’t have enough money...?↓
+  That’s too bad.
 
-;jpn:◆おかねが　たりないんですか‥‥↓
-;jpn:　そうですか‥‥。
+;jpn:◆おかねが たりないんですか‥‥↓
+;jpn: そうですか‥‥。
 @KEYNP()
 @!
 
 _NURSE_KANZYA;
 @CHKFGOTO(FLG_TEMP_9,_NURSE_KANZYA_B)
-◆Ｉｆ　ｙｏｕ　ａｒｅ　ｔｈｅ　ｐａｔｉｅｎｔ，　ｃｏｍｅ　ｉｎｔｏ　ｔｈｅ　ｂａｃｋ　ｒｏｏｍ．
+◆If you are the patient, come into the back room.
 
 ;jpn:◆かんじゃさんなら↓
-;jpn:　おくのへやに　どうぞ。
+;jpn: おくのへやに どうぞ。
 @KEYNP()
 @!
 _NURSE_KANZYA_B;
-◆Ｙｏｕ　ｎｅｅｄ　ｔｏ　ｂｅ　ｅｘａｍｉｎｅｄ？↓
-　　Ｔｈｅｎ，　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｓｅｅ　ｔｈｅ　ｄｏｃｔｏｒ．．．　　ｎｏｔ　ｍｅ．
+◆You need to be examined?↓
+  Then, you need to see the doctor...  not me.
 
-;jpn:◆しんさつですか？↓
-;jpn:　でしたら　わたしじゃなくて↓
-;jpn:　センセイに　みてもらいなさいね。
+;jpn:◆しんさつですか?↓
+;jpn: でしたら わたしじゃなくて↓
+;jpn: センセイに みてもらいなさいね。
 @KEYNP()
 @!
 _NURSE_ADVICE;
-◆Ｉ’ｍ　ｎｏｔ　ｂｕｓｙ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
-◆Ｓｈａｌｌ　Ｉ　ｅｘｐｌａｉｎ　ａｂｏｕｔ　ｔｈｅ　ｈｏｓｐｉｔａｌ　ｓｙｓｔｅｍ？↓
+◆I’m not busy right now.@KEY()↓
+◆Shall I explain about the hospital system?↓
 
-;jpn:◆わたしも　ひまだから@KEY()↓
-;jpn:◆びょういんの　システムでも↓
-;jpn:　せつめいしましょうか？↓
+;jpn:◆わたしも ひまだから@KEY()↓
+;jpn:◆びょういんの システムでも↓
+;jpn: せつめいしましょうか?↓
 @GOSUB(MSG_SUB_YESNO)
 @GOSUB(MSG_SUB_SELQ_FORMOON)
 @ONGOTO(_NURSE_ADVICE_YES,_NURSE_ADVICE_NO)
 _NURSE_ADVICE_NO;
-◆Ｙｅａｈ，　ｗｅｌｌ，　Ｉ　ａｍ　ａｃｔｕａｌｌｙ　ｐｒｅｔｔｙ　ｂｕｓｙ．
+◆Yeah, well, I am actually pretty busy.
 
-;jpn:◆そういえば　わたしも↓
-;jpn:　ひまなんかじゃ　なかったわ。
+;jpn:◆そういえば わたしも↓
+;jpn: ひまなんかじゃ なかったわ。
 @KEYNP()
 @!
 _NURSE_ADVICE_YES;
-◆Ｉｆ　ａ　ｇｏｏｄ　ｆｒｉｅｎｄ　ｏｆ　ｙｏｕｒｓ　ｂｅｃｏｍｅｓ　ｕｎｃｏｎｓｃｉｏｕｓ，@KEY()↓
-◆ｃｏｍｅ　ｔｏ　ｔｈｅ　ｈｏｓｐｉｔａｌ　ｒｉｇｈｔ　ａｗａｙ．@KEY()↓
-◆Ａｓ　ｌｏｎｇ　ａｓ　ｙｏｕ　ｈａｖｅ　ｍｏｎｅｙ　ｆｏｒ　ｔｈｅ　ｄｏｃｔｏｒ’ｓ　ｆｅｅ，@KEY()↓
-◆ｙｏｕ’ｌｌ　ｂｅ　ａｂｌｅ　ｔｏ　ｓｅｅ　ｙｏｕｒ　ｆｒｉｅｎｄ　ｃｏｍｐｌｅｔｅｌｙ　ｒｅｃｏｖｅｒｅｄ　ｉｎ　ｎｏ　ｔｉｍｅ．@KEY()↓
-◆Ｂｅｓｉｄｅｓ　ｂｅｉｎｇ　ｕｎｃｏｎｓｃｉｏｕｓ，　ｗｈｅｎｅｖｅｒ@KEY()↓
-◆ｙｏｕ　ｄｏｎ’ｔ　ｆｅｅｌ　ｓｏ　ｗｅｌｌ，　ｃｏｍｅ　ａｎｄ　ｔａｌｋ　ｔｏ　ａ　ｄｏｃｔｏｒ．@KEY()↓
-◆Ｅｖｅｒｙｔｈｉｎｇ　Ｉ　ｊｕｓｔ　ｔｏｌｄ　ｙｏｕ　ａｐｐｌｉｅｓ　ｔｏ　ｈｏｓｐｉｔａｌｓ　ａｌｌ　ｏｖｅｒ　ｔｈｅ　ｗｏｒｌｄ．
-;jpn:◆だいじな　おともだちが↓
-;jpn:　きぜつしちゃったときには@KEY()↓
-;jpn:◆とにかく　びょういんに↓
-;jpn:　いらっしゃい。@KEY()↓
+◆If a good friend of yours becomes unconscious,@KEY()↓
+◆come to the hospital right away.@KEY()↓
+◆As long as you have money for the doctor’s fee,@KEY()↓
+◆you’ll be able to see your friend completely recovered in no time.@KEY()↓
+◆Besides being unconscious, whenever@KEY()↓
+◆you don’t feel so well, come and talk to a doctor.@KEY()↓
+◆Everything I just told you applies to hospitals all over the world.
+;jpn:◆だいじな おともだちが↓
+;jpn: きぜつしちゃったときには@KEY()↓
+;jpn:◆とにかく びょういんに↓
+;jpn: いらっしゃい。@KEY()↓
 ;jpn:◆ちりょうひさえあれば↓
-;jpn:　きっと　げんきなおともだちと↓
-;jpn:　さいかいできるわよ。@KEY()↓
+;jpn: きっと げんきなおともだちと↓
+;jpn: さいかいできるわよ。@KEY()↓
 ;jpn:◆きぜついがいにも↓
-;jpn:　からだの　ぐあいが↓
-;jpn:　おかしいなって　おもったら@KEY()↓
-;jpn:◆とにかく　せんせいに↓
-;jpn:　そうだんしてみることね。@KEY()↓
-;jpn:◆いま　おはなししたことって↓
-;jpn:　このびょういんだけじゃなく↓
-;jpn:　せかい　きょうつうなのよ。
+;jpn: からだの ぐあいが↓
+;jpn: おかしいなって おもったら@KEY()↓
+;jpn:◆とにかく せんせいに↓
+;jpn: そうだんしてみることね。@KEY()↓
+;jpn:◆いま おはなししたことって↓
+;jpn: このびょういんだけじゃなく↓
+;jpn: せかい きょうつうなのよ。
 @KEYNP()
 @!
 
@@ -1353,7 +1353,7 @@ _ALLLIVING_END;
 ;       MSG_SUB_HOTEL_LIFEUP
 ;
 ;-------------------------------------------------------------------------
-;ホテル回復（ＨＰ回復、ＢＧＭ変更なし）
+;ホテル回復(HP回復、BGM変更なし)
 MSG_SUB_HOTEL_LIFEUP;
 @SET_LOOPREG(1)
 _TEST_HOTEL_LOOP;
@@ -1369,7 +1369,7 @@ _TEST_HOTEL_LOOP;
 @TRUE_GOTO(_TEST_HOTEL_LOOPNEXT)
 @LOAD_REG()
 @XCHG()
-@HP_UP(0,100)               ;ＨＰ・ＰＰ全回復
+@HP_UP(0,100)               ;HP・PP全回復
 @PP_UP(0,100)               
 _TEST_HOTEL_LOOPNEXT;
 @INC()
@@ -1391,11 +1391,11 @@ MSG_SUB_BGM_LIFEUP;
 MSG_SUB_SE_LIFEUP;
 @BGMSTART(0,BGM_lifeup)
 @WI(200)
-@MUSISTART();コメントアウトを外した（三浦）
+@MUSISTART();コメントアウトを外した(三浦)
 @WI(1);同上
 @!
 
-;スペーストンネル回復（ＨＰ回復、全特殊状態治療、ＢＧＭ変更あり、夜鍋なし）
+;スペーストンネル回復(HP回復、全特殊状態治療、BGM変更あり、夜鍋なし)
 MSG_SUB_SPACE_KAIHUKU;
 MSG_SPACE_KAIHUKU;
 ;@GOSUB(MSG_JEFF_YONABE)
@@ -1405,7 +1405,7 @@ MSG_SPACE_KAIHUKU;
 @CLRF(FLG_DAY_AFTER)
 @!
 
-;ＰＳ回復（ＨＰ回復、全特殊状態治療、ＢＧＭ変更なし、夜鍋なし）
+;PS回復(HP回復、全特殊状態治療、BGM変更なし、夜鍋なし)
 MSG_SUB_ALLHEAL_POWR;
 @SET_LOOPREG(1)
 _ALLH_POWR_LOOP;
@@ -1428,7 +1428,7 @@ _ALLHEAL_INC;           ;7/26に挿入
 _ALLH_END;
 @!
 
-;土星医者回復（全特殊状態回復、気絶時のみＨＰＰＰ回復、ＳＥならす）
+;土星医者回復(全特殊状態回復、気絶時のみHPPP回復、SEならす)
 MSG_SUB_ZENKAI;
 _SUB_ZENKAI;
 @SET_LOOPREG(1)         ;loopR = 1
@@ -1443,7 +1443,7 @@ _ZENKAI_LOOP;
 @LOAD_REG()         ;pop mainR,subR,loopR
 @SET_SPECIAL(0,1,1)     ;気絶直す
 @XCHG()             ;xchg subR,mainR(→subR=気絶状態,mainR=playerId)
-@HP_UP(0,100)           ;ＨＰ・ＰＰ全回復
+@HP_UP(0,100)           ;HP・PP全回復
 @PP_UP(0,100)           ;全特殊状態が通常に。
 _ZENKAI_2;          ;生きてるときはここに来る
 @LOAD_REG()
@@ -1456,7 +1456,7 @@ _ZENKAI_2;          ;生きてるときはここに来る
 _ZENKAI_END;
 @!
 
-;タライ・ジャブ回復（一人だけＨＰＰＰ回復、全特殊状態治療、ＢＧＭなし）
+;タライ・ジャブ回復(一人だけHPPP回復、全特殊状態治療、BGMなし)
 MSG_SUB_ALLHEAL_ONE;
 @SET_REG(1)
 @XCHG()
@@ -1470,7 +1470,7 @@ MSG_SUB_ALLHEAL_ONE;
 
 
 
-;マイホーム回復（体力回復、暗転ワープあり、ＢＧＭあり、夜鍋あり、この後ワープ）
+;マイホーム回復(体力回復、暗転ワープあり、BGMあり、夜鍋あり、この後ワープ)
 MSG_GLOBAL_MYHOME;
 @GOSUB(MSG_SUB_SYUKUHAKU)
 @GOSUB(MSG_SUB_BGM_LIFEUP)
@@ -1644,15 +1644,15 @@ _HEALER_SEL;
 @ONGOTO(_HEALER_0_YES,_HEALER_NO)
 @GOTO(_HEALER_NO)
 _HEALER_0_YES;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｄｏ？↓
+◆What do you want me to do?↓
 
-;jpn:◆どうしてほしい？↓
+;jpn:◆どうしてほしい?↓
 @SAVE_WIN()
 @DSP_PL()
 @OPEN(37)
-<Ｓｏｆｔｅｎ>
-<Ｒｅｓｔｏｒｅ　ｆｅｅｌｉｎｇ>
-<Ｐｕｒｉｆｙ>
+<Soften>
+<Restore feeling>
+<Purify>
 
 ;jpn:<やわらかくする>
 ;jpn:<ビリビリをとる>
@@ -1666,10 +1666,10 @@ _HEALER_0_YES;
 @FALSE_GOTO(_HEALER_NO)
 @ONGOSUB(_HEALER_SEL_DIA,_HEALER_SEL_SIBIRE,_HEALER_SEL_OHARAI)
 @SET_REG(1)
-◆Ｉ　ｎｅｅｄ　ｔｏ　ｃｈａｒｇｅ　ｙｏｕ　＄@DSP_NUM(0)．↓
+◆I need to charge you ＄@DSP_NUM(0).↓
 
-;jpn:◆@DSP_NUM(0)ドル　いただいて↓
-;jpn:　おこうか。↓
+;jpn:◆@DSP_NUM(0)ドル いただいて↓
+;jpn: おこうか。↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 ;
 @GOSUB(MSG_SUB_SELQ_FORMOON)
@@ -1677,8 +1677,8 @@ _HEALER_0_YES;
 ;
 _HEALER_SEL_MONEY_NO;
 ←
-◆Ｍｍｍ，　ｃｏｍｅ　ｂａｃｋ　ｗｈｅｎ　ｎｅｃｅｓｓａｒｙ．
-;jpn:◆おお　そうか　そうしなさい。
+◆Mmm, come back when necessary.
+;jpn:◆おお そうか そうしなさい。
 @KEYNP()
 @GOSUB(_SUB_HEALER_FLG_CLR)
 @!
@@ -1691,9 +1691,9 @@ _HEALER_SEL_MONEY_YES;
 @GET_ORDER_PLAYER(1)
 @GOTO(_HEALER_WHO2)
 _HEALER_WHO;
-◆Ｗｈｏ　ｎｅｅｄｓ　ｈｅａｌｉｎｇ？
+◆Who needs healing?
 
-;jpn:◆だれを　ヒーリングする？
+;jpn:◆だれを ヒーリングする?
 _HEALER_WHO_SEL;
 @SEL_PQ(0,0,0,0,1)
 @FALSE_GOTO(_HEALER_SEL_MONEY_NO)
@@ -1730,30 +1730,30 @@ _HEALER_DIA_NO;
 @LOAD_REG()
 @XCHG()
 ←
-◆@DSP_NAME(0)　ｉｓｎ’ｔ　ｈａｒｄ　ｌｉｋｅ　ａ　ｄｉａｍｏｎｄ．
+◆@DSP_NAME(0) isn’t hard like a diamond.
  
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　ダイヤじょうたいじゃないな。
+;jpn: ダイヤじょうたいじゃないな。
 @GOTO(_HEALER_Q_NEXT)
 
 _HEALER_SIBIRE_NO;
 @LOAD_REG()
 @XCHG()
 ←
-◆@DSP_NAME(0)　ｉｓｎ’ｔ　ｎｕｍｂ．
+◆@DSP_NAME(0) isn’t numb.
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　しびれておらんぞ。
+;jpn: しびれておらんぞ。
 @GOTO(_HEALER_Q_NEXT)
 
 _HEALER_OHARAI_NO;
 @LOAD_REG()
 @XCHG()
 ←
-◆@DSP_NAME(0)　ｉｓｎ’ｔ　ｐｏｓｓｅｓｓｅｄ．
+◆@DSP_NAME(0) isn’t possessed.
   
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　とりつかれては　おらんぞ。
+;jpn: とりつかれては おらんぞ。
 @GOTO(_HEALER_Q_NEXT)
 
 _HEALER_Q_NEXT;
@@ -1761,9 +1761,9 @@ _HEALER_Q_NEXT;
 @Q_MEMBER(2)
 @TRUE_GOTO(_HEALER_Q_NEXT_END)
 ←
-　　Ｗｈｏ　ｎｅｅｄｓ　ｔｏ　ｂｅ　ｈｅａｌｅｄ？
+  Who needs to be healed?
 
-;jpn:　だれを　ヒーリングする？
+;jpn: だれを ヒーリングする?
 @GOTO(_HEALER_WHO_SEL)
 _HEALER_Q_NEXT_END;
 @KEYNP()
@@ -1771,18 +1771,18 @@ _HEALER_Q_NEXT_END;
 @!
 
 _HEALER_NO;
-◆Ｍｍｍ，　ｃｏｍｅ　ｂａｃｋ　ｗｈｅｎ　ｎｅｃｅｓｓａｒｙ．
-;jpn:◆おお　そうか　そうしなさい。
+◆Mmm, come back when necessary.
+;jpn:◆おお そうか そうしなさい。
 @KEYNP()
 @GOSUB(_SUB_HEALER_FLG_CLR)
 @!
 
 _HEALER_NOMONEY;
 ←
-◆Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ，　ｙｏｕ’ｌｌ　ｊｕｓｔ　ｈａｖｅ　ｔｏ　ｋｅｅｐ　ｏｎ　ｇｏｉｎｇ　ｉｎ　ｙｏｕｒ　ｃｕｒｒｅｎｔ　ｓｔａｔｅ．
+◆If you don’t have any money, you’ll just have to keep on going in your current state.
 
-;jpn:◆おかねが　ないなら↓
-;jpn:　そのまま　いきなさい。
+;jpn:◆おかねが ないなら↓
+;jpn: そのまま いきなさい。
 @KEYNP()
 @GOSUB(_SUB_HEALER_FLG_CLR)
 @!
@@ -1799,26 +1799,26 @@ _SUB_HEALER_HEAL;
 @WI(30)
 @XCHG()
 ←
-◆Ｈｅｙ！　　Ｙｏｕ’ｒｅ　ａｌｒｅａｄｙ　ｈｅａｌｅｄ！↓
-　　Ｃａｎ　Ｉ　ｄｏ　ｍｙ　ｊｏｂ　ｗｅｌｌ，　ｏｒ　ｗｈａｔ！
+◆Hey!  You’re already healed!↓
+  Can I do my job well, or what!
 
-;jpn:◆っはい！　もうなおってる。↓
-;jpn:　わたしって　スゴイ！
+;jpn:◆っはい! もうなおってる。↓
+;jpn: わたしって スゴイ!
 @KEYNP()
 @GOSUB(_SUB_HEALER_FLG_CLR)
 @!
 
 _SUB_KINOKO_CHK;
 @GET_MEMBERS()
-@SET_LOOPREG(1)             ;（キノコの状態のプレーヤーの合計を
-_KINOKO_CHK_LOOP;           ;求める）
+@SET_LOOPREG(1)             ;(キノコの状態のプレーヤーの合計を
+_KINOKO_CHK_LOOP;           ;求める)
 @SET_REG(1)
 @Q_MEMBER(0)
 @TRUE_GOTO(_KINOKO_CHK_END2)        ;全プレーヤーでループさせる。
 @GET_ORDER_PLAYER(0)
-@FALSE_GOTO(_KINOKO_CHK_END)        ;プレーヤー未だいる？
+@FALSE_GOTO(_KINOKO_CHK_END)        ;プレーヤー未だいる?
 @Q_SPECIAL(0,2,2)           ;キノコチェック。
-@TRUE_GOTO(_KINOKO_CHK_END)     ;キノコ？
+@TRUE_GOTO(_KINOKO_CHK_END)     ;キノコ?
 @INC()
 @GOTO(_KINOKO_CHK_LOOP)
 _KINOKO_CHK_END;
@@ -1828,33 +1828,33 @@ _KINOKO_CHK_END2;
 @!
 
 _SUB_HEALER_KINOKO;
-◆Ｈｅｙ，　ｎｏｗ　ｔｈａｔ　Ｉ　ｎｏｔｉｃｅ，@KEY()↓
-◆ｃｏｕｌｄ　ｙｏｕ　ｓｅｌｌ　ｍｅ　ｔｈｅ　ｍｕｓｈｒｏｏｍ　ｇｒｏｗｉｎｇ　ｏｎ　ｔｏｐ　ｏｆ　ｙｏｕｒ　ｈｅａｄ？@KEY()↓
-◆Ｃｏｍｅ　ｏｎ，　ｌｅｔ’ｓ　ｍａｋｅ　ａ　ｄｅａｌ．@KEY()↓
-<Ｓｅｌｌ>
-<Ｎｏ>
-;jpn:◆おっ　そこのきみ。↓
-;jpn:　その　あたまのうえに　はえてる↓
-;jpn:　キノコを　うってくれないか。@KEY()↓
-;jpn:◆はなしは　それからね。↓
+◆Hey, now that I notice,@KEY()↓
+◆could you sell me the mushroom growing on top of your head?@KEY()↓
+◆Come on, let’s make a deal.@KEY()↓
+<Sell>
+<No>
+;jpn:◆おっ そこのきみ。↓
+;jpn: その あたまのうえに はえてる↓
+;jpn: キノコを うってくれないか。@KEY()↓
+;jpn:◆はなしは それからね。↓
 @WINR_MONEY()
 ;jpn:<うる>
 ;jpn:<うらない>
 @DSP_ITEM(2)
 @SELGOTO(_HEALER_KINOKO_YES,_HEALER_KINOKO_NO)
 _HEALER_KINOKO_NO;
-◆Ｈｍｍｍｍｍ．．．．．．．↓
-　　Ｔｈａｔ’ｓ　ｔｏｏ　ｂａｄ．@KEY()
+◆Hmmmmm.......↓
+  That’s too bad.@KEY()
 ;jpn:◆そうか‥‥↓
-;jpn:　それは　ざんねん@KEY()
+;jpn: それは ざんねん@KEY()
 @!
 _HEALER_KINOKO_YES;５００→５０ドルに修正
-◆Ｔｈａｎｋｓ．↓
-　　Ｉ’ｌｌ　ｐａｙ　ｙｏｕ　＄５０　ｆｏｒ　ｅａｃｈ　ｍｕｓｈｒｏｏｍ．@KEY()↓
-◆Ａｌｌ　ｒｉｇｈｔ，　ｌｅｔ’ｓ　ｄｏ　ｉｔ！@KEY()
+◆Thanks.↓
+  I’ll pay you ＄５０ for each mushroom.@KEY()↓
+◆All right, let’s do it!@KEY()
 ;jpn:◆ありがとう。↓
-;jpn:　じゃ　ひとつ５０ドルで　かうよ。↓
-;jpn:　そらっ。@KEY()
+;jpn: じゃ ひとつ５０ドルで かうよ。↓
+;jpn: そらっ。@KEY()
 @GOSUB(_SUB_HEAL_KINOKO)
 @!
 
@@ -1890,34 +1890,34 @@ _SUB_HEALER_FLG_CLR;
 @!
 
 _SUB_HEALMES_1;
-◆Ｔｈｏｕｇｈ　ｙｏｕ　ｍａｙ　ｎｏｔ　ｂｅｌｉｅｖｅ　ｉｔ，　Ｉ’ｍ　ａ　ｈｅａｌｅｒ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｈａｖｅ　ｓｏｍｅ　ｉｌｌｎｅｓｓ　ｔｈａｔ　ｃａｎ　ｎｏｔ　ｂｅ　ｔｒｅａｔｅｄ　ａｔ　ｔｈｅ　ｈｏｓｐｉｔａｌ，@KEY()↓
-◆ｉｔ’ｓ　ｍｙ　ｊｏｂ　ｔｏ　ｃｕｒｅ　ｙｏｕ．@KEY()↓
+◆Though you may not believe it, I’m a healer.@KEY()↓
+◆If you have some illness that can not be treated at the hospital,@KEY()↓
+◆it’s my job to cure you.@KEY()↓
   
-;jpn:◆しんじようが　しんじまいが↓
-;jpn:　わたしは　ヒーラー。@KEY()↓
-;jpn:◆びょういんで　なおせない↓
-;jpn:　びょうきなら　わしのでばんじゃ。@KEY()↓
+;jpn:◆しんじようが しんじまいが↓
+;jpn: わたしは ヒーラー。@KEY()↓
+;jpn:◆びょういんで なおせない↓
+;jpn: びょうきなら わしのでばんじゃ。@KEY()↓
 @!
 
 _SUB_HEALMES_1B;
 ←
-◆Ｄｏ　ｙｏｕ　ｎｅｅｄ　ａｎｙ　ｈｅｌｐ？↓
+◆Do you need any help?↓
 
-;jpn:◆たすけが　ひつようか？↓
+;jpn:◆たすけが ひつようか?↓
 @!
 
 _SUB_HEALMES_2;
 ←
-◆Ｂｙ　ｔｈｅ　ｗａｙ，　ｄｏ　ｙｏｕ　ｎｅｅｄ　ａｎｙ　ｈｅｌｐ？↓
+◆By the way, do you need any help?↓
 
-;jpn:◆ところで　たすけがひつようか？↓
-;◆ところで　どうしたい？↓
+;jpn:◆ところで たすけがひつようか?↓
+;◆ところで どうしたい?↓
 @!
 _SUB_HEALMES_3;
 ←
-◆Ｄｏ　ｙｏｕ　ｎｅｅｄ　ｓｏｍｅ　ｈｅｌｐ？↓
+◆Do you need some help?↓
 
-;jpn:◆たすけがひつようか？↓
-;◆どうしてほしい？↓
+;jpn:◆たすけがひつようか?↓
+;◆どうしてほしい?↓
 @!

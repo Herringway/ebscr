@@ -7,11 +7,11 @@ MSG_GUMI_RECEIVE;グミ族にグッズを使った時の共通メッセージ
 @GOTO(MSG_SYS_GOODS_USE_NG)
 
 _GUMI_1_RECEIVE_OK;グミドリアン使うと When Gumidorian is used
-◆Ｔｈｅ　Ｔｅｎｄａ　ｔｕｒｎｅｄ　ｉｔ　ｄｏｗｎ，　ｂｕｔ　ｒｅａｌｌｙ　ｓｅｅｍｅｄ　ｔｅｍｐｔｅｄ．．．
+◆The Tenda turned it down, but really seemed tempted...
 @KEYNP()
 ;jpn:◆グミぞくは↓
-;jpn:　とても　ほしそうにしたが↓
-;jpn:　えんりょした。@KEYNP()
+;jpn: とても ほしそうにしたが↓
+;jpn: えんりょした。@KEYNP()
 』
 ;-------------------------------------------------
 
@@ -26,22 +26,22 @@ _GUMI_1_RECEIVE_OK;グミドリアン使うと When Gumidorian is used
 MSG_GUMI_1;
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_1_AFTER)
 MSG_GUMI_MUKUCHI;
-◆．．．．@KEY()↓
-◆Ｗｅ’ｒｅ　ｓｈｙ．．．．
+◆....@KEY()↓
+◆We’re shy....
 @KEYNP()
 ;jpn:◆‥‥@WI(60)↓
-;jpn:　むくち@WI(20)↓
-;jpn:　おれたち‥‥@KEYNP()
+;jpn: むくち@WI(20)↓
+;jpn: おれたち‥‥@KEYNP()
 』
 _GUMI_1_AFTER;
-◆Ｗｅｌｃｏｍｅ．@KEY()↓
-◆Ｔｏ　ｔｈｉｓ　ｆａｒ．@KEY()↓
-◆Ｔａｋｅ　ａ　ｒｅｓｔ．@KEY()↓
-◆Ｌｏｎｇ　ｊｏｕｒｎｅｙ，　ｍｕｓｔ　ｈａｖｅ　ｂｅｅｎ．
+◆Welcome.@KEY()↓
+◆To this far.@KEY()↓
+◆Take a rest.@KEY()↓
+◆Long journey, must have been.
 @KEYNP()
-;jpn:◆よくきたな@WI(20)　とこまで↓
-;jpn:　こんなとおい@WI(20)　　やすめ↓
-;jpn:　ようこそだ@KEYNP()
+;jpn:◆よくきたな@WI(20) とこまで↓
+;jpn: こんなとおい@WI(20)  やすめ↓
+;jpn: ようこそだ@KEYNP()
 』
 
 ;MSG_GUMI_1_RECEIVE;
@@ -49,22 +49,22 @@ _GUMI_1_AFTER;
 ;@XCHG()
 ;@EQ(GDS_TOOL_BOOK_CHAT)
 ;@TRUE_GOTO(_GUMI_1_RECEIVE_OK)
-;◆‥‥なにそれ？
+;◆‥‥なにそれ?
 ;@KEYNP()
 ;@!
 ;_GUMI_1_RECEIVE_OK;
 ;@CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_1_RECEIVE_DONE)
-;◆よめない　おれ。
+;◆よめない おれ。
 ;@SETF(FLG_GUMI_1_BOOK)
 ;@KEYNP()
 ;@!
 ;_GUMI_1_RECEIVE_DONE;
-;◆すでに　つかっています。
+;◆すでに つかっています。
 ;@KEYNP()
 ;@!
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族２（宿係）
+;@Person:グミ族２(宿係)
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -73,19 +73,19 @@ _GUMI_1_AFTER;
 ;@Message:MSG_GUMI_2
 MSG_GUMI_2;
 ;@CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_2_AFTER)
-◆．．．．@KEY()↓
-◆Ｗｅ’ｒｅ　ｓｈｙ．．．．
+◆....@KEY()↓
+◆We’re shy....
 @KEYNP()
 ;◆‥‥@WI(60)↓
-;　むくち@WI(20)↓
-;　おれたち‥‥@KEY()
+; むくち@WI(20)↓
+; おれたち‥‥@KEY()
 ;』
 ;_GUMI_2_AFTER;
 @GOSUB(MSG_HOTEL_GUMI)
 』
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族（長老）
+;@Person:グミ族(長老)
 ;@Figure:グミの長老
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -96,31 +96,31 @@ MSG_GUMI_OLDMAN;
 @CHKFGOTO(FLG_WIN_GIEGU,_GUMI_OLDMAN_END)
 @CHKFGOTO(FLG_GUMI_OLDMAN_ITEM,_GUMI_OLDMAN_LATER)
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_OLDMAN_AFTER)
-◆．．．Ｗｅ’ｒｅ　ａｌｌ　ｓｈｙ．@KEY()↓
-◆Ｒｕｍｏｒ，　Ｉ　ｈｅａｒｄ　ａ　ｂｏｏｋ　ｔｏ　ｆｉｘ　ｓｈｙｎｅｓｓ，　ｔｈｅｒｅ　ｉｓ．@KEY()↓
-◆Ｗｈｅｒｅ？@KEY()↓
-◆Ｄｏｎ’ｔ　ｋｎｏｗ．@KEY()↓
-◆Ｊｕｓｔ　ａ　ｒｕｍｏｒ．
+◆...We’re all shy.@KEY()↓
+◆Rumor, I heard a book to fix shyness, there is.@KEY()↓
+◆Where?@KEY()↓
+◆Don’t know.@KEY()↓
+◆Just a rumor.
 @KEYNP()
-;jpn:◆‥‥わしたち@WI(20)　ぜんたい↓
-;jpn:　むくち。@KEY()↓
-;jpn:◆むくちなおすほん@WI(20)　ある@WI(20)　うわさ。↓
-;jpn:　どこ？@WI(15)　しらない‥‥。↓
-;jpn:　ある　うわさ。@KEYNP()
+;jpn:◆‥‥わしたち@WI(20) ぜんたい↓
+;jpn: むくち。@KEY()↓
+;jpn:◆むくちなおすほん@WI(20) ある@WI(20) うわさ。↓
+;jpn: どこ?@WI(15) しらない‥‥。↓
+;jpn: ある うわさ。@KEYNP()
 ;◆‥‥↓
-;　オネットに@WI(15)　むくちをなおすほん↓
-;　ある。@KEY()↓
-;◆としょかん。@WI(15)　ある。↓
-;　もてくる。@WI(15)　みんなうれしい。@KEYNP()
+; オネットに@WI(15) むくちをなおすほん↓
+; ある。@KEY()↓
+;◆としょかん。@WI(15) ある。↓
+; もてくる。@WI(15) みんなうれしい。@KEYNP()
 @SETF(FLG_GUMI_INFO_MUKUCHI)
 』
 
-_GUMI_OLDMAN_AFTER;無口じゃないセリフにする？
-◆Ｓｉｎｃｅ　ｗｅ　ｏｖｅｒｃａｍｅ　ｏｕｒ　ｓｈｙｎｅｓｓ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａ　@DSP_GOODS(GDS_TOOL_DRAGON_POWDER)．@KEY()↓
-◆Ｔａｋｅ　ｉｔ．
+_GUMI_OLDMAN_AFTER;無口じゃないセリフにする?
+◆Since we overcame our shyness, I’ll give you a @DSP_GOODS(GDS_TOOL_DRAGON_POWDER).@KEY()↓
+◆Take it.
 @KEYNP()
-;jpn:◆むくちなおった　おれいに↓
-;jpn:　ドラゴンパウダーやる。@KEY()↓
+;jpn:◆むくちなおった おれいに↓
+;jpn: ドラゴンパウダーやる。@KEY()↓
 ;jpn:◆もらえ。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_GUMI_OLDMAN_ITEMFULL)
@@ -131,20 +131,20 @@ _GUMI_OLDMAN_AFTER;無口じゃないセリフにする？
 』
 
 _GUMI_OLDMAN_ITEMFULL;
-◆Ｂｕｔ，　ｙｏｕ　ｃａｎ’ｔ　ｔａｋｅ　ｉｔ．@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｎｏ　ｓｐａｃｅ　ｆｏｒ　ｉｔ．@KEY()↓
-◆Ｇｏ　ａｎｄ　ｄｏ　ｗｈａｔｅｖｅｒ　ｙｏｕ　ｈａｖｅ　ｔｏ　ａｎｄ　ｃｏｍｅ　ｂａｃｋ．
+◆But, you can’t take it.@KEY()↓
+◆You have no space for it.@KEY()↓
+◆Go and do whatever you have to and come back.
 @KEYNP()
-;jpn:◆でも　アカン↓
-;jpn:　もちもの　まんいん。↓
-;jpn:　どうにか　してこい。@KEYNP()
+;jpn:◆でも アカン↓
+;jpn: もちもの まんいん。↓
+;jpn: どうにか してこい。@KEYNP()
 』
 
-_GUMI_OLDMAN_LATER;松（メッセージ来てない）
-◆Ｓｏ　ｌｏｎｇ．
-　　Ｉ　ｓａｙ　ｇｏｏｄ−ｂｙｅ．
+_GUMI_OLDMAN_LATER;松(メッセージ来てない)
+◆So long.
+  I say good−bye.
 ;jpn:◆さらばじゃ。@WI(20)↓
-;jpn:　アイ　セイ　グッバイじゃ。
+;jpn: アイ セイ グッバイじゃ。
 @KEYNP()
 @CLOSEALL()
 @WI(1)
@@ -153,16 +153,16 @@ _GUMI_OLDMAN_LATER;松（メッセージ来てない）
 
 _GUMI_OLDMAN_END;＆ギーグを倒したあとの長老のセリフ
 @CHKFGOTO(FLG_GUMI_OLDMAN_END,_GUMI_OLDMAN_END_FINAL)
-◆Ｔｈｅ　ｂｏｏｋ　”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ”　ｗａｓ　ｖｅｒｙ　ｈｅｌｐｆｕｌ　ｔｏ　ｕｓ！@KEY()↓
-◆Ｗｅ’ｖｅ　ｋｅｐｔ　ｉｔ　ｆｏｒ　ａ　ｌｏｎｇ　ｔｉｍｅ，　ｂｕｔ　Ｉ’ｌｌ　ｒｅｔｕｒｎ　ｉｔ　ｎｏｗ．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．
+◆The book ”Overcoming Shyness” was very helpful to us!@KEY()↓
+◆We’ve kept it for a long time, but I’ll return it now.@KEY()↓
+◆Thank you very much.
 @KEY()↓
 ;jpn:◆「むくちをなおすほん」は↓
-;jpn:　たいへん　やくにたちました↓
-;jpn:　でございます。@KEY()↓
-;jpn:◆ながいこと　おかりしていましたが↓
-;jpn:　おかえしいたします。@KEY()↓
-;jpn:◆どうも　ありがとうございました。@KEY()↓
+;jpn: たいへん やくにたちました↓
+;jpn: でございます。@KEY()↓
+;jpn:◆ながいこと おかりしていましたが↓
+;jpn: おかえしいたします。@KEY()↓
+;jpn:◆どうも ありがとうございました。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_GUMI_OLDMAN_END_GOODSFULL)
 @GOODSIN_PLAYER(0,GDS_TOOL_BOOK_CHAT)
@@ -170,22 +170,22 @@ _GUMI_OLDMAN_END;＆ギーグを倒したあとの長老のセリフ
 @SETF(FLG_GUMI_OLDMAN_END)
 @KEY()↓
 _GUMI_OLDMAN_END_FINAL;
-◆Ｗｅ’ｒｅ　ｌｉｖｉｎｇ　ｉｎ　ｐｅａｃｅ　ｎｏｗ，　ｉｎ　ａ　ｗｉｄｅ　ｖａｒｉｅｔｙ　ｏｆ　ｌｉｆｅｓｔｙｌｅｓ．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．
+◆We’re living in peace now, in a wide variety of lifestyles.@KEY()↓
+◆Thank you very much.
 @KEYNP()
-;jpn:◆あらゆるいみで　わたしたちは↓
-;jpn:　いま　へいわに　くらせています。@KEY()↓
-;jpn:◆かんしゃ　ベリマッチ　です。@KEYNP()
+;jpn:◆あらゆるいみで わたしたちは↓
+;jpn: いま へいわに くらせています。@KEY()↓
+;jpn:◆かんしゃ ベリマッチ です。@KEYNP()
 @REMOVE_CHAR(PRSN_GUMI_FIELD_C,ANIM_PEOPLEWALK1);暗転で重なる危険ないので自由
 』
 _GUMI_OLDMAN_END_GOODSFULL;荷物いっぱい
-◆Ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ　ｔｏ　ｒｅｃｅｉｖｅ　ｔｈｅ　ｂｏｏｋ．@KEY()↓
-◆Ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ．
+◆You have too much stuff to receive the book.@KEY()↓
+◆Get rid of something.
 @KEYNP()
-;jpn:◆にもつが　いっぱいで↓
-;jpn:　ほんが　かえせません。@KEY()↓
-;jpn:◆ほかのものを　しょぶんして↓
-;jpn:　ください。@KEYNP()
+;jpn:◆にもつが いっぱいで↓
+;jpn: ほんが かえせません。@KEY()↓
+;jpn:◆ほかのものを しょぶんして↓
+;jpn: ください。@KEYNP()
 』
 
 MSG_GUMI_OLDMAN_RECEIVE;
@@ -200,35 +200,35 @@ MSG_GUMI_OLDMAN_RECEIVE;
 
 _GUMI_OLDMAN_RECEIVE_BOOK;
 @FUNC(5)			;配達禁止
-◆．．．！@KEY()↓
-◆Ｂｏｏｋ！@KEY()↓
-◆Ｃａｎ　ｆｉｘ　ｓｈｙｎｅｓｓ．@KEY()↓
-◆Ｔｈａｎｋｓ．@KEY()↓
-◆Ｒｅｌａｘ．@KEY()↓
-◆Ｉ’ｌｌ　ｒｅａｄ　ｔｏ　ｅｖｅｒｙｏｎｅ．@KEY()↓
-◆Ｏｈ！@KEY()↓
-◆Ｊｕｓｔ　ｈｏｌｄｉｎｇ　ｔｈｉｓ　ｂｏｏｋ　ｉｎ　ｍｙ　ｈａｎｄｓ　ｍａｋｅｓ　ｍｅ　ｆｅｅｌ　ｌｉｋｅ@KEY()↓
-◆Ｉ’ｍ　ｏｖｅｒｃｏｍｉｎｇ　ｍｙ　ｓｈｙｎｅｓｓ　ａｌｒｅａｄｙ！@KEY()↓
-◆Ｉ’ｌｌ　ｒｅａｌｌｙ　ｔａｋｅ　ｔｉｍｅ　ｔｏ　ｒｅａｄ　ｉｔ　ｔｏ　ｅｖｅｒｙｏｎｅ！
-;jpn:◆‥‥！　ほんだ@WI(15)　それ↓
-;jpn:　むくち　なおす↓
-;jpn:　よくきた@WI(15)　やすめ@KEY()↓
-;jpn:◆わし　むくちなおすほん　みんなに↓
-;jpn:　よんできかせる。@WI(15)お@WI(10)　おお！@KEY()↓
-;jpn:◆このほん　もっただけで↓
-;jpn:　すこし　むくちなおってきた。@KEY()↓
-;jpn:◆みんなに　むくちなおすほん↓
-;jpn:　よんできかせる！
+◆...!@KEY()↓
+◆Book!@KEY()↓
+◆Can fix shyness.@KEY()↓
+◆Thanks.@KEY()↓
+◆Relax.@KEY()↓
+◆I’ll read to everyone.@KEY()↓
+◆Oh!@KEY()↓
+◆Just holding this book in my hands makes me feel like@KEY()↓
+◆I’m overcoming my shyness already!@KEY()↓
+◆I’ll really take time to read it to everyone!
+;jpn:◆‥‥! ほんだ@WI(15) それ↓
+;jpn: むくち なおす↓
+;jpn: よくきた@WI(15) やすめ@KEY()↓
+;jpn:◆わし むくちなおすほん みんなに↓
+;jpn: よんできかせる。@WI(15)お@WI(10) おお!@KEY()↓
+;jpn:◆このほん もっただけで↓
+;jpn: すこし むくちなおってきた。@KEY()↓
+;jpn:◆みんなに むくちなおすほん↓
+;jpn: よんできかせる!
 @SE(SE_se79_my_open_fanfare)
 @KEY()
 @CLOSEALL()
 @MOVE_GOM_CHAR( GOM_HIT_CHR,ANIM_INTO_NIGHT,OBJFX_SHOW_NONE );フェードアウト
 @WAITSYS()
 @OPEN(1)
-◆（Ｔｈｅ　ｌｅａｄｅｒ　ｏｆ　ｔｈｅ　Ｔｅｎｄａ　ｔｒｉｂｅ　ｒｅａｄ　”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ”　ｔｏ　ｅｖｅｒｙｏｎｅ．）@KEY()
-;jpn:◆（グミぞくの　ちょうろうは↓
-;jpn:　「むくちをなおすほん」を↓
-;jpn:　みんなに　よんできかせた）@KEY()
+◆(The leader of the Tenda tribe read ”Overcoming Shyness” to everyone.)@KEY()
+;jpn:◆(グミぞくの ちょうろうは↓
+;jpn: 「むくちをなおすほん」を↓
+;jpn: みんなに よんできかせた)@KEY()
 @CLOSEALL()
 ;@BGMSTART(0,BGM_lifeup)
 @GOSUB(MSG_SUB_HOTEL_LIFEUP)
@@ -238,22 +238,22 @@ _GUMI_OLDMAN_RECEIVE_BOOK;
 @MUSISTART()
 @OPEN(1)
 ←
-◆Ｃｈａｔ，　Ｃｈａｔ　ｗｈｉｓｐｅｒ，　ｗｈｉｓｐｅｒ@KEY()↓
-◆Ｉ’ｄ　ｌｉｋｅ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ｓｏｍｅ　”@DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN)”　ｉｎ　ｒｅｔｕｒｎ．@KEY()↓
-◆”@DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN)”　ｉｓ　ａ　ｔｙｐｅ　ｏｆ　ｄｉｓｈ　ｔｈａｔ　ａｌｌ　Ｔｅｎｄａ　ｌｉｋｅ．@KEY()↓
-◆Ｉｔ　ｓｔｉｎｋｓ，　ｂｕｔ　ｉｔ　ｔａｓｔｅｓ　ｗｏｎｄｅｒｆｕｌ．
+◆Chat, Chat whisper, whisper@KEY()↓
+◆I’d like to give you some ”@DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN)” in return.@KEY()↓
+◆”@DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN)” is a type of dish that all Tenda like.@KEY()↓
+◆It stinks, but it tastes wonderful.
 @KEY()↓
-;jpn:◆みんな　むくち　なおった！↓
-;jpn:　おしゃべり　ペラペラ。@KEY()↓
-;jpn:◆ぜひとも　おれいしたいで↓
-;jpn:　ございますから↓
-;jpn:　「グミドリアン」やる。@KEY()↓
+;jpn:◆みんな むくち なおった!↓
+;jpn: おしゃべり ペラペラ。@KEY()↓
+;jpn:◆ぜひとも おれいしたいで↓
+;jpn: ございますから↓
+;jpn: 「グミドリアン」やる。@KEY()↓
 ;jpn:◆「グミドリアン」は↓
-;jpn:　グミぞくの　だれもが　だいすきな@KEY()↓
-;jpn:◆すばらしい　くだもので↓
-;jpn:　ございます。@KEY()↓
-;jpn:◆ものすごく　くさいが↓
-;jpn:　グミぞくは　みな　だいすき。@KEY()↓
+;jpn: グミぞくの だれもが だいすきな@KEY()↓
+;jpn:◆すばらしい くだもので↓
+;jpn: ございます。@KEY()↓
+;jpn:◆ものすごく くさいが↓
+;jpn: グミぞくは みな だいすき。@KEY()↓
 @GOODSOUT(PC_ALL,GDS_TOOL_BOOK_CHAT)
 @GOODSIN_PLAYER(0,GDS_TOOL_KEY_GUMIDORIAN)
 @SAVE_GLOBAL_REG()
@@ -261,18 +261,18 @@ _GUMI_OLDMAN_RECEIVE_BOOK;
 @WI(60)
 @OPEN(1)
 ;＠先頭に
-◆@DSP_NAME(PC_NESS)　ｌｅｎｄｓ　ｔｈｅ　ｌｅａｄｅｒ　ｏｆ　ｔｈｅ　Ｔｅｎｄａ　ｔｒｉｂｅ　ｔｈｅ　ｂｏｏｋ　”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ．”
+◆@DSP_NAME(PC_NESS) lends the leader of the Tenda tribe the book ”Overcoming Shyness.”
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)は↓
-;jpn:　グミぞくの　ちょうろうに@KEY()↓
+;jpn: グミぞくの ちょうろうに@KEY()↓
 ;jpn:◆「むくちをなおすほん」を↓
-;jpn:　またがし　した。@KEY()↓
+;jpn: またがし した。@KEY()↓
 @GOSUB(MSG_SUB_GETGOODS_S)
 @KEYNP()
 @CLOSEALL()
 ;
 @SETF(FLG_GUMI_USEBOOK)
 @WI(60)
-@SETF(FLG_PHOTO_GUMI)		;プラオリティー変更用？
+@SETF(FLG_PHOTO_GUMI)		;プラオリティー変更用?
 @GOSUB(MSG_GLOBAL_PHOTO_31);写真撮影
 @GOSUB(MSG_GUMI_OLDMAN_KANA);＠プレイヤーの名前入力
 @FRESH_PLAYER(PC_ALL)
@@ -291,17 +291,17 @@ MSG_GUMI_3;
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_3_AFTER)
 @GOTO(MSG_GUMI_MUKUCHI)
 ;◆‥‥↓
-;　むくち↓
-;　おれたち‥‥@KEYNP()
+; むくち↓
+; おれたち‥‥@KEYNP()
 ;』
 _GUMI_3_AFTER;
-◆Ｈｉ！　　（ｓｍｉｌｅ）
-;jpn:◆やぁ！　ニコッ
+◆Hi!  (smile)
+;jpn:◆やぁ! ニコッ
 @KEYNP()
 』
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族４（道具）
+;@Person:グミ族４(道具)
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -312,14 +312,14 @@ MSG_GUMI_4;
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_4_AFTER)
 @GOTO(MSG_GUMI_MUKUCHI)
 ;◆‥‥↓
-;　むくち↓
-;　おれたち‥‥@KEYNP()
+; むくち↓
+; おれたち‥‥@KEYNP()
 ;』
 _GUMI_4_AFTER;
 ;近くにプレゼントボックスを配置したし
 @GOSUB(MSG_SUB_GUMI_BUTUBUTU)
-;◆あるもの　ここに　だからな↓
-;　もってけ　ともだち@KEYNP()
+;◆あるもの ここに だからな↓
+; もってけ ともだち@KEYNP()
 』
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
@@ -334,25 +334,25 @@ MSG_GUMI_5;
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_5_AFTER)
 @GOTO(MSG_GUMI_MUKUCHI)
 ;◆‥‥↓
-;　むくち↓
-;　おれたち‥‥@KEYNP()
+; むくち↓
+; おれたち‥‥@KEYNP()
 ;』
 _GUMI_5_AFTER;
-◆Ｕｎｄｅｒｇｒｏｕｎｄ，　ｖｅｒｙ　ｌａｒｇｅ　ａｒｅａ．@KEY()↓
-◆Ｅｘｉｓｔ．@KEY()↓
-◆Ｄｉｎｏｓａｕｒｓ．@KEY()↓
-◆Ｂｉｇ．@KEY()↓
-◆Ｓｃａｒｙ．@KEY()↓
-◆”Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ．”@KEY()↓
-◆Ｓｔｏｎｅ．@KEY()↓
-◆Ｔｈｅｒｅ　ｉｓ．@KEY()↓
-◆Ｔａｌｋｓ　ｌｏｔｓ．
+◆Underground, very large area.@KEY()↓
+◆Exist.@KEY()↓
+◆Dinosaurs.@KEY()↓
+◆Big.@KEY()↓
+◆Scary.@KEY()↓
+◆”Lost Underworld.”@KEY()↓
+◆Stone.@KEY()↓
+◆There is.@KEY()↓
+◆Talks lots.
 @KEYNP()
-;jpn:◆つちのした　あるんだ↓
-;jpn:　ひろいひろい　いる　きょうりゅう↓
-;jpn:　でかい　ぞ　こわいんだ@KEY()↓
-;jpn:◆「ちていたいりく」　？？↓
-;jpn:　いし　ある　おしゃべりな@KEYNP()
+;jpn:◆つちのした あるんだ↓
+;jpn: ひろいひろい いる きょうりゅう↓
+;jpn: でかい ぞ こわいんだ@KEY()↓
+;jpn:◆「ちていたいりく」 ??↓
+;jpn: いし ある おしゃべりな@KEYNP()
 』
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
@@ -367,15 +367,15 @@ MSG_GUMI_6;
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_6_AFTER)
 @GOTO(MSG_GUMI_MUKUCHI)
 ;◆‥‥↓
-;　むくち↓
-;　おれたち‥‥@KEYNP()
+; むくち↓
+; おれたち‥‥@KEYNP()
 ;』
 _GUMI_6_AFTER;
-◆Ｉ’ｍ　ａ　ｗｏｍａｎ．@KEY()↓
-◆Ｄｉｄ　ｙｏｕ　ｔｈｉｎｋ　Ｉ　ｗａｓ　ａ　ｍａｎ？
+◆I’m a woman.@KEY()↓
+◆Did you think I was a man?
 @KEYNP()
-;jpn:◆おれ　おんなだ↓
-;jpn:　まちがえたか　おとこと@KEYNP()
+;jpn:◆おれ おんなだ↓
+;jpn: まちがえたか おとこと@KEYNP()
 』
 
 ;@Habitat:グミ族の村／フィールド／ティータイムの場所
@@ -390,26 +390,26 @@ MSG_GUMI_7;
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_7_AFTER)
 @GOTO(MSG_GUMI_MUKUCHI)
 ;◆‥‥↓
-;　むくち↓
-;　おれたち‥‥@KEYNP()
+; むくち↓
+; おれたち‥‥@KEYNP()
 ;』
 _GUMI_7_AFTER;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｓｏｍｅ　ｔｅａ？↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆のむか？　ちゃ↓
-;jpn:　　<はい>　　<いいえ>
+◆Would you like some tea?↓
+<Yes>
+<No>
+;jpn:◆のむか? ちゃ↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_GUMI_TEATIME,_GUMI_7_AFTER_NO)
 
-_GUMI_7_AFTER_NO;松（メッセージ来てない）
-◆ＯＫ．
+_GUMI_7_AFTER_NO;松(メッセージ来てない)
+◆OK.
 
 ;jpn:◆そーか@KEYNP()
 』
 
-_GUMI_TEATIME;松（メッセージ来てない）
-◆Ｄｒｉｎｋ．
+_GUMI_TEATIME;松(メッセージ来てない)
+◆Drink.
 
 ;jpn:◆のめ
 @KEYNP()
@@ -424,78 +424,78 @@ _GUMI_TEATIME;松（メッセージ来てない）
 
 ;MSG_TEATIME;
 ;←
-;◆まるで　ぶさいくな↓
-;　タピストリーのように↓
-;　ものがたりの　たてのいとと↓
-;　よこのいと　とが↓
-;　であい↓
-;　わかれ↓
-;　からまりあって↓
-;　おおきな　えが　あらわれてきた。↓
+;◆まるで ぶさいくな↓
+; タピストリーのように↓
+; ものがたりの たてのいとと↓
+; よこのいと とが↓
+; であい↓
+; わかれ↓
+; からまりあって↓
+; おおきな えが あらわれてきた。↓
 ;@WI(60)↓
-;　きみは　ここまで↓
-;　なんどとなく↓
-;　この　はてしないたびを↓
-;　のろったことだろう。↓
-;　きずつき　たおれたことだって↓
-;　かぞえきれないほど↓
-;　あったのだと　おもう。↓
+; きみは ここまで↓
+; なんどとなく↓
+; この はてしないたびを↓
+; のろったことだろう。↓
+; きずつき たおれたことだって↓
+; かぞえきれないほど↓
+; あったのだと おもう。↓
 ;@WI(60)↓
-;　それでも　ここまで↓
-;　たどりついたのは↓
-;　きみに　もともと　そなわっていた↓
-;　ちえと　ゆうきの　おかげだ。↓
-;　なかまたちと↓
-;　たがいに　しんじあい↓
-;　はげましあってきた　おかげだ。↓
+; それでも ここまで↓
+; たどりついたのは↓
+; きみに もともと そなわっていた↓
+; ちえと ゆうきの おかげだ。↓
+; なかまたちと↓
+; たがいに しんじあい↓
+; はげましあってきた おかげだ。↓
 ;@WI(60)↓
-;　きみのちからが↓
-;　どれほど　おおきくなったのか↓
-;　かんがえてみたことが　あるかい。↓
-;　いまの　きみに↓
-;　オネットや　ツーソンで　であった↓
-;　てきが　おそいかかっても↓
-;　きっと　いちげきで↓
-;　たおされてしまうのだろうな。↓
+; きみのちからが↓
+; どれほど おおきくなったのか↓
+; かんがえてみたことが あるかい。↓
+; いまの きみに↓
+; オネットや ツーソンで であった↓
+; てきが おそいかかっても↓
+; きっと いちげきで↓
+; たおされてしまうのだろうな。↓
 ;@WI(60)↓
-;　もう　もどることは　できない。↓
-;　あきらかに　ギーグという↓
-;　とてつもなく　おおきなてきは↓
-;　@DSP_STS(STS_PC_NAME_NES)！↓
-;　きみを　おそれている。↓
-;　きみの　ぜんしんを↓
-;　さまたげようと　している。↓
+; もう もどることは できない。↓
+; あきらかに ギーグという↓
+; とてつもなく おおきなてきは↓
+; @DSP_STS(STS_PC_NAME_NES)!↓
+; きみを おそれている。↓
+; きみの ぜんしんを↓
+; さまたげようと している。↓
 ;@WI(60)↓
-;　これからさきの　たびは↓
-;　いままでいじょうに↓
-;　スケールのおおきな↓
-;　そうぞうをぜっする↓
-;　ぼうけんに　なるだろう。↓
-;　ギーグの　ふところへ↓
-;　かくじつに　きみは↓
-;　ちかづいているのだ。↓
+; これからさきの たびは↓
+; いままでいじょうに↓
+; スケールのおおきな↓
+; そうぞうをぜっする↓
+; ぼうけんに なるだろう。↓
+; ギーグの ふところへ↓
+; かくじつに きみは↓
+; ちかづいているのだ。↓
 ;@WI(60)↓
-;　きみが　つらいばめんは↓
-;　てきも　くるしいじょうきょうだ↓
-;　それを　いつも↓
-;　おぼえていてくれ。↓
-;　それにしても　あの↓
-;　ポーキーはどこへいったのだ。↓
+; きみが つらいばめんは↓
+; てきも くるしいじょうきょうだ↓
+; それを いつも↓
+; おぼえていてくれ。↓
+; それにしても あの↓
+; ポーキーはどこへいったのだ。↓
 ;@WI(60)↓
-;　おちゃを　のんだら↓
-;　また　しゅっぱつだ。↓
-;　うんめいは　きみを↓
-;　よいほうへ　よいほうへと↓
-;　みちびいてくれるはずだ。↓
-;　しんじて　まえへ！↓
+; おちゃを のんだら↓
+; また しゅっぱつだ。↓
+; うんめいは きみを↓
+; よいほうへ よいほうへと↓
+; みちびいてくれるはずだ。↓
+; しんじて まえへ!↓
 ;@WI(60)↓
-;　@DSP_STS(STS_PC_NAME_NES)↓
-;　@DSP_STS(STS_PC_NAME_PAULA)↓
-;　@DSP_STS(STS_PC_NAME_JEFF)↓
-;　@DSP_STS(STS_PC_NAME_POO)↓
-;　きみたちに　いつも↓
-;　こううんの　めがみが↓
-;　ほほえみかけて　くれるように‥。@KEYNP()
+; @DSP_STS(STS_PC_NAME_NES)↓
+; @DSP_STS(STS_PC_NAME_PAULA)↓
+; @DSP_STS(STS_PC_NAME_JEFF)↓
+; @DSP_STS(STS_PC_NAME_POO)↓
+; きみたちに いつも↓
+; こううんの めがみが↓
+; ほほえみかけて くれるように‥。@KEYNP()
 ;』
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
@@ -511,69 +511,69 @@ MSG_GUMI_SPEAKER_NEW;
 ;設定にしようかと思っています。
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_SPEAKER_NEW_AFTER)
 @CHKFGOTO(FLG_TEMP_1,_GUMI_SPEAKER_NEW_TEMP)
-◆Ｔｈｅｒｅ’ｓ　ｏｎｌｙ　ｏｎｅ　Ｔｅｎｄａ　ｗｈｏ’ｓ　ｎｏｔ　ｓｈｙ．@KEY()↓
-◆Ｉｔ’ｓ　ｍｅ，　ｂｕｂｂｙ！@KEY()↓
-◆Ｙｏｕ　ｋｎｏｗ　ｗｈａｔ？@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ｓｏｍｅｔｈｉｎｇ　ｓｃａｒｙ　ｔｈａｔ　ｃｏｍｅｓ　ｆｒｏｍ　ｔｈｅ　ｕｎｄｅｒｇｒｏｕｎｄ．@KEY()↓
-◆Ｓｏ，　ｗｅ　ｃｏｖｅｒｅｄ　ｕｐ　ｔｈｅ　ｈｏｌｅ．@KEY()↓
-◆Ｔｈｅｒｅ　ａｒｅ　ｌｏｔｓ　ｏｆ　ｄｉｎｏｓａｕｒｓ　ｔｈｅｒｅ．@KEY()↓
-◆Ｉ　ｗｅｎｔ　ｔｈｅｒｅ　ｏｎｃｅ，　ｂｕｔ　Ｉ　ｃａｍｅ　ｒｉｇｈｔ　ｂａｃｋ．@KEY()↓
-◆’Ｃａｕｓｅ　Ｉ　ｗａｓ　ｓｏ　ｓｕｒｐｒｉｓｅｄ@KEY()↓
-◆Ｔｈｅｒｅ　ｗａｓ　ａ　ｔａｌｋｉｎｇ　ｓｔｏｎｅ　ｔｈａｔ　ｔａｌｋｓ　ａ　ｌｏｔ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｎａ　ｇｏ　ａｎｄ　ｓｅｅ？@KEY()↓
-◆Ｉ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
-◆Ｂｕｔ　Ｉ’ｍ　ｎｏｔ　ａｓ　ｓｔｒｏｎｇ　ａｓ　Ｉ　ｌｏｏｋ．@KEY()↓
-◆Ｉ’ｍ　ｓｏｒｒｙ，　Ｉ　ｇｕｅｓｓ　Ｉ　ｃａｎ’ｔ　ｈｅｌｐ　ｙｏｕ．@KEY()↓
-◆Ｔｈｅ　ｇｕｙ　ｎｅｘｔ　ｔｏ　ｍｅ　ｉｓ　ｓｔｒｏｎｇ，　ｂｕｔ　ｈｅ　ｌａｃｋｓ　ｃｏｎｖｅｒｓａｔｉｏｎ　ｓｋｉｌｌｓ．@KEY()↓
-◆Ｈｅ　ｎｅｅｄｓ　ｔｏ　ｏｖｅｒｃｏｍｅ　ｈｉｓ　ｓｈｙｎｅｓｓ　ｆｉｒｓｔ．
+◆There’s only one Tenda who’s not shy.@KEY()↓
+◆It’s me, bubby!@KEY()↓
+◆You know what?@KEY()↓
+◆There’s something scary that comes from the underground.@KEY()↓
+◆So, we covered up the hole.@KEY()↓
+◆There are lots of dinosaurs there.@KEY()↓
+◆I went there once, but I came right back.@KEY()↓
+◆’Cause I was so surprised@KEY()↓
+◆There was a talking stone that talks a lot.@KEY()↓
+◆Do you wanna go and see?@KEY()↓
+◆I understand.@KEY()↓
+◆But I’m not as strong as I look.@KEY()↓
+◆I’m sorry, I guess I can’t help you.@KEY()↓
+◆The guy next to me is strong, but he lacks conversation skills.@KEY()↓
+◆He needs to overcome his shyness first.
 @KEYNP()
-;jpn:◆むくちでない　グミぞくも　ひとり↓
-;jpn:　います。それは　わたしです。ねぇ↓
-;jpn:　しってるますか？　じめんのした@KEY()↓
-;jpn:◆から　こわいものが　でてくるので↓
-;jpn:　わたしたち　フタをしております。↓
-;jpn:　きょうりゅうが　いっぱいいます。@KEY()↓
-;jpn:◆いちど　いってみて　あーわてて↓
-;jpn:　かえってきたことが　ありますが↓
-;jpn:　しゃべるいわも　あったんですよ。@KEY()↓
-;jpn:◆いってみたいですか　そうですか。↓
-;jpn:　でも　わたしは　こうみえても↓
-;jpn:　ひよわな　おとこですので@KEY()↓
-;jpn:◆それは　できないそうだんで↓
-;jpn:　ございますんですよ。@KEY()↓
-;jpn:◆ちからが　あるのは↓
-;jpn:　となりのおとこでございますよ。@KEY()↓
-;jpn:◆でも　となりのおとことは↓
-;jpn:　かいわが↓
-;jpn:　なりたたないんでございますよ。@KEY()↓
-;jpn:◆あいつの　むくちをなおさないと。@KEYNP()
+;jpn:◆むくちでない グミぞくも ひとり↓
+;jpn: います。それは わたしです。ねぇ↓
+;jpn: しってるますか? じめんのした@KEY()↓
+;jpn:◆から こわいものが でてくるので↓
+;jpn: わたしたち フタをしております。↓
+;jpn: きょうりゅうが いっぱいいます。@KEY()↓
+;jpn:◆いちど いってみて あーわてて↓
+;jpn: かえってきたことが ありますが↓
+;jpn: しゃべるいわも あったんですよ。@KEY()↓
+;jpn:◆いってみたいですか そうですか。↓
+;jpn: でも わたしは こうみえても↓
+;jpn: ひよわな おとこですので@KEY()↓
+;jpn:◆それは できないそうだんで↓
+;jpn: ございますんですよ。@KEY()↓
+;jpn:◆ちからが あるのは↓
+;jpn: となりのおとこでございますよ。@KEY()↓
+;jpn:◆でも となりのおとことは↓
+;jpn: かいわが↓
+;jpn: なりたたないんでございますよ。@KEY()↓
+;jpn:◆あいつの むくちをなおさないと。@KEYNP()
 @SETF(FLG_TEMP_1)
 』
 _GUMI_SPEAKER_NEW_TEMP;＃
-◆Ｏｈ，　Ｉ　ｗａｎｎａ　ｔａｌｋ．．．
+◆Oh, I wanna talk...
 @KEYNP()
-;jpn:◆ああ　なんかしゃべりたいなぁ‥。@KEYNP()
+;jpn:◆ああ なんかしゃべりたいなぁ‥。@KEYNP()
 』
 _GUMI_SPEAKER_NEW_AFTER;＆
-◆Ｒｅｃｅｎｔｌｙ，　ｅｖｅｒｙｏｎｅ　ｉｓ　ａｂｌｅ　ｔｏ　ｔａｌｋ　ａ　ｌｏｔ，　ｓｏ　Ｉ’ｖｅ　ｌｏｓｔ　ｍｙ　ｉｄｅｎｔｉｔｙ．
+◆Recently, everyone is able to talk a lot, so I’ve lost my identity.
 @KEYNP()
-;jpn:◆さいきん　みんなが↓
-;jpn:　おしゃべりになって@KEY()↓
-;jpn:◆わたしの　どくじせいが↓
-;jpn:　うすれちゃったんでございますよ。@KEYNP()
+;jpn:◆さいきん みんなが↓
+;jpn: おしゃべりになって@KEY()↓
+;jpn:◆わたしの どくじせいが↓
+;jpn: うすれちゃったんでございますよ。@KEYNP()
 』
 
 
-;◆フタあけてみましょうか。えいや！@SE(SE_se78_my_open_rock)↓
+;◆フタあけてみましょうか。えいや!@SE(SE_se78_my_open_rock)↓
 ;@ANIM(ANIM_OPEN_GUMICAVE)↓
-;　とりあえず　だいじょうぶですね。@KEY()
+; とりあえず だいじょうぶですね。@KEY()
 ;@SE(SE_se78_my_open_rock)
 ;@ANIM(ANIM_CLOSE_GUMICAVE)
 ;@SETF(FLG_TEMP_1)
 ;』
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族（蘇生）
+;@Person:グミ族(蘇生)
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -584,13 +584,13 @@ MSG_GUMI_COMEBACK;
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_8_AFTER)
 @GOTO(MSG_GUMI_MUKUCHI)
 ;◆‥‥↓
-;　むくち↓
-;　おれたち‥‥@KEY()
+; むくち↓
+; おれたち‥‥@KEY()
 ;』
 _GUMI_8_AFTER;
 @GOSUB(MSG_GUMI_HEAL)
-;◆わたし　グミドリアン↓
-;　だいすきよー@KEYNP()
+;◆わたし グミドリアン↓
+; だいすきよー@KEYNP()
 』
 
 ;@Habitat:グミ族の村／フィールド／村の適当なところ
@@ -604,7 +604,7 @@ _GUMI_8_AFTER;
 ;----------------------------------------
 
 ;@Habitat:グミ族の村／フィールド／喋る岩の部屋
-;@Person:喋る岩Ａ
+;@Person:喋る岩A
 ;@Figure:喋る岩
 ;@AppearanceKey:0
 ;@ActionScript:◆固定
@@ -617,14 +617,14 @@ MSG_DKFD_ROCK_A;
 ;@SETF(FLG_DKFD_ROCK_A)
 ;@GOTO(MSG_DKFD_ROCK_INFO_POWER)
 ;_DKFD_ROCK_A_AFTER;
-◆Ｔｈａｎｋｓ　ｆｏｒ　ｔａｌｋｉｎｇ　ｔｏ　ｍｅ．
+◆Thanks for talking to me.
 @KEYNP()
 ;jpn:◆はなしかけてくれて↓
-;jpn:　ありがとよ。@KEYNP()
+;jpn: ありがとよ。@KEYNP()
 』
 
 ;@Habitat:グミ族の村／フィールド／喋る岩の部屋
-;@Person:喋る岩Ｂ
+;@Person:喋る岩B
 ;@Figure:喋る岩
 ;@AppearanceKey:0
 ;@ActionScript:◆固定
@@ -637,17 +637,17 @@ MSG_DKFD_ROCK_B;
 ;@SETF(FLG_DKFD_ROCK_B)
 ;@GOTO(MSG_DKFD_ROCK_INFO_POWER)
 ;_DKFD_ROCK_B_AFTER;
-◆Ｔｈｅ　ｕｎｄｅｒｇｒｏｕｎｄ　ｔａｌｋｉｎｇ　ｒｏｃｋ　ｓｅｅｍｓ　ｔｏ　ｗａｎｔ　ｔｏ　ｔａｌｋ　ａ　ｌｏｔ　ｍｏｒｅ　ｔｈａｎ　Ｉ　ｄｏ．
+◆The underground talking rock seems to want to talk a lot more than I do.
 @KEYNP()
-;jpn:◆おれよりも　この　ちかにいる↓
-;jpn:　しゃべるいわは↓
-;jpn:　もっと　しゃべりたがってたぞ。@KEYNP()
+;jpn:◆おれよりも この ちかにいる↓
+;jpn: しゃべるいわは↓
+;jpn: もっと しゃべりたがってたぞ。@KEYNP()
 』
-;◆いしに　そうだんして↓
-;　よかったな。@KEYNP()
+;◆いしに そうだんして↓
+; よかったな。@KEYNP()
 
 ;@Habitat:グミ族の村／フィールド／喋る岩の部屋
-;@Person:喋る岩Ｃ
+;@Person:喋る岩C
 ;@Figure:喋る岩
 ;@AppearanceKey:0
 ;@ActionScript:◆固定
@@ -660,9 +660,9 @@ MSG_DKFD_ROCK_C;
 ;@SETF(FLG_DKFD_ROCK_C)
 ;@GOTO(MSG_DKFD_ROCK_INFO_POWER)
 ;_DKFD_ROCK_C_AFTER;
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｅａｒｔｈ’ｓ　ｂｅｌｌｙ　ｂｕｔｔｏｎ！
+◆This is the earth’s belly button!
 @KEYNP()
-;jpn:◆ここは　ちきゅうのへそだ！@KEYNP()
+;jpn:◆ここは ちきゅうのへそだ!@KEYNP()
 』
 
 MSG_DKFD_ROCK_INFO_POWER;
@@ -670,9 +670,9 @@ MSG_DKFD_ROCK_INFO_POWER;
 @CHKFGOTO(FLG_INFO_POWR,MSG_SYS_HANASU_NG)
 @CHKFGOTO(FLG_POWR_ALL,_DKFD_ROCK_INFO_POWER_LATER)
 @BGMSTART(0,BGM_home0);エデン序曲
-@CHKFGOTO(FLG_TEMP_1,_DKFD_ROCK_INFO_POWER_TEMP)	;松（次の行メッセージ来てない）
-◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｃａｍｅ，　@DSP_STS(STS_PC_NAME_NES)．
-;jpn:◆とうとう　きたな　@DSP_STS(STS_PC_NAME_NES)。
+@CHKFGOTO(FLG_TEMP_1,_DKFD_ROCK_INFO_POWER_TEMP)	;松(次の行メッセージ来てない)
+◆You finally came, @DSP_STS(STS_PC_NAME_NES).
+;jpn:◆とうとう きたな @DSP_STS(STS_PC_NAME_NES)。
 @KEY()↓
 ;ここでネスだけ全回復
 @SET_SPECIAL(PC_NESS,1,1)
@@ -682,151 +682,151 @@ MSG_DKFD_ROCK_INFO_POWER;
 @PP_UP(PC_NESS,100)
 @SE(SE_se25_b_healing)
 @WI(10)
-◆Ｆｉｎａｌｌｙ，　ｙｏｕ　ｔａｌｋ　ｔｏ　ｍｅ．@KEY()↓
-◆Ｌｉｓｔｅｎ　@DSP_STS(STS_PC_NAME_NES)）．@KEY()↓
-◆Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｔｅｌｌ　ｙｏｕ　ｓｏｍｅｔｈｉｎｇ　ｖｅｒｙ　ｉｍｐｏｒｔａｎｔ．@KEY()↓
-◆Ｙｏｕ　ｍａｙ　ｗａｎｔ　ｔｏ　ｔａｋｅ　ｎｏｔｅｓ．@KEY()↓
-◆Ｒｅａｄｙ？@KEY()↓
-;jpn:◆やっと　はなしかけてくれたな。@WI(20)↓
-;jpn:　いいか　@DSP_STS(STS_PC_NAME_NES)↓
-;jpn:　よく　きくのだ。@KEY()↓
-;jpn:◆メモを　とってほしいくらい↓
-;jpn:　たいせつなことを　おしえるから。@WI(15)↓
-;jpn:　いいな！@KEY()↓
+◆Finally, you talk to me.@KEY()↓
+◆Listen @DSP_STS(STS_PC_NAME_NES)).@KEY()↓
+◆I’m going to tell you something very important.@KEY()↓
+◆You may want to take notes.@KEY()↓
+◆Ready?@KEY()↓
+;jpn:◆やっと はなしかけてくれたな。@WI(20)↓
+;jpn: いいか @DSP_STS(STS_PC_NAME_NES)↓
+;jpn: よく きくのだ。@KEY()↓
+;jpn:◆メモを とってほしいくらい↓
+;jpn: たいせつなことを おしえるから。@WI(15)↓
+;jpn: いいな!@KEY()↓
 @WI(60)↓
-◆Ｙｏｕ’ｒｅ　ｔｈｅ　ｃｈｏｓｅｎ　ｏｎｅ．@KEY()↓
-◆Ｙｏｕｒ　ｄｅｓｔｉｎｙ　ｉｓ　ｎｏｔ　ｏｎｌｙ　ｙｏｕｒｓ．．．@KEY()↓
-◆Ｉｔ’ｓ　ｔｈｅ　ｄｅｓｔｉｎｙ　ｏｆ　ｔｈｅ　ｗｈｏｌｅ　ｕｎｉｖｅｒｓｅ．@KEY()↓
-◆Ｔｈｅｒｅ　ｗｉｌｌ　ｂｅ　ａ　ｔｉｍｅ　ｉｎ　ｗｈｉｃｈ　ａｌｌ　ｏｆ　ｙｏｕ　ｉｎ　ｔｈｅ　ｕｎｉｖｅｒｓｅ　ｗｉｌｌ　ｏｖｅｒｌａｐ　ｅａｃｈ　ｏｔｈｅｒ．@KEY()↓
-◆．．．Ｉｔ’ｓ　ｎｏｔ　ｎｅｃｅｓｓａｒｙ　ｔｏ　ｕｎｄｅｒｓｔａｎｄ　ｎｏｗ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｒｅｍｅｍｂｅｒ　”Ｇｉａｎｔ　Ｓｔｅｐ”　ｉｎ　Ｏｎｅｔｔ？@KEY()↓
-◆Ｔｈａｔ　ｉｓ　ｏｎｅ　ｏｆ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ．”@KEY()↓
-◆Ｉｔ　ｉｓ　ａ　ｓｐｏｔ　ｗｈｉｃｈ　ｇｉｖｅｓ　ｙｏｕ　ｐｏｗｅｒ@KEY()↓
-◆ａｎｄ　ａｌｌｏｗｓ　ｙｏｕ　ｔｏ　ｒｅａｌｉｚｅ　ａｌｌ　ｙｏｕｒ　ｓｋｉｌｌｓ．@KEY()↓
-◆Ｔｈｅｒｅ　ｗａｓ　ａ　ｍｏｎｓｔｅｒ　ｔｈａｔ　ｐｒｏｔｅｃｔｅｄ　ｉｔ．@KEY()↓
-◆Ｔｈｅ　ｍｏｎｓｔｅｒ　ｗａｓ　ｉｎｆｌｕｅｎｃｅｄ　ｂｙ　ｔｈｅ　ｐｏｗｅｒ　ｏｆ　ｔｈｅ　ｐｌａｃｅ．@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｈａｖｅ　ｂｅａｔｅｎ　ｔｈｏｓｅ　ｍｏｎｓｔｅｒｓ．@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｒｅａｃｈ　ａｌｌ　ｏｆ　ｔｈｅ　ｅｉｇｈｔ　ｐｏｗｅｒ　ｓｐｏｔｓ　ｉｎ　ｔｈｅ　ｗｏｒｌｄ．．．@KEY()↓
-◆Ｗｈｅｎ　ｔｈｅ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｓ　ｔｈｅ　ｍｅｌｏｄｉｅｓ　ｏｆ　ａｌｌ　ｅｉｇｈｔ　ｐｏｗｅｒ　ｓｐｏｔｓ，@KEY()↓
-◆ｙｏｕ　ｃａｎ　ｆｉｎａｌｌｙ　ｓｅｅ　”Ｙｏｕｒ　Ｗｏｒｌｄ．”
+◆You’re the chosen one.@KEY()↓
+◆Your destiny is not only yours...@KEY()↓
+◆It’s the destiny of the whole universe.@KEY()↓
+◆There will be a time in which all of you in the universe will overlap each other.@KEY()↓
+◆...It’s not necessary to understand now.@KEY()↓
+◆Do you remember ”Giant Step” in Onett?@KEY()↓
+◆That is one of ”Your Sanctuary.”@KEY()↓
+◆It is a spot which gives you power@KEY()↓
+◆and allows you to realize all your skills.@KEY()↓
+◆There was a monster that protected it.@KEY()↓
+◆The monster was influenced by the power of the place.@KEY()↓
+◆You must have beaten those monsters.@KEY()↓
+◆You must reach all of the eight power spots in the world...@KEY()↓
+◆When the Sound Stone records the melodies of all eight power spots,@KEY()↓
+◆you can finally see ”Your World.”
 @KEY()↓
-;jpn:◆おまえは　えらばれたものだ。↓
-;jpn:　おまえの　うんめいは↓
-;jpn:　おまえひとりのもので　なく‥‥@KEY()↓
+;jpn:◆おまえは えらばれたものだ。↓
+;jpn: おまえの うんめいは↓
+;jpn: おまえひとりのもので なく‥‥@KEY()↓
 ;jpn:◆うちゅうぜんたいの↓
-;jpn:　システムとして　つくられている。@KEY()↓
-;jpn:◆おまえの　すべてが↓
-;jpn:　うちゅうのすべてと↓
-;jpn:　かさなるときが　くるのだ。@KEY()↓
-;jpn:◆‥‥いまは　わからなくともよい。@KEY()↓
+;jpn: システムとして つくられている。@KEY()↓
+;jpn:◆おまえの すべてが↓
+;jpn: うちゅうのすべてと↓
+;jpn: かさなるときが くるのだ。@KEY()↓
+;jpn:◆‥‥いまは わからなくともよい。@KEY()↓
 ;jpn:◆オネットにあった↓
-;jpn:　「ジャイアントステップ」を↓
-;jpn:　おぼえているか。@KEY()↓
-;jpn:◆あれは　「おまえのばしょ」の↓
-;jpn:　ひとつだ。@KEY()↓
-;jpn:◆おまえに　パワーをあたえ↓
-;jpn:　おまえの　すべてを　ひきだす↓
-;jpn:　スポットなのだ。@KEY()↓
-;jpn:◆そこには　そのパワーの↓
-;jpn:　えいきょうをうけた　モンスターが↓
-;jpn:　いて　そのばを　まもっている。@KEY()↓
-;jpn:◆しかし　それらを　おまえは↓
-;jpn:　たおしてきたはずだ。@KEY()↓
-;jpn:◆おまえが　このせかいに８つある↓
-;jpn:　パワースポットのすべてに↓
-;jpn:　たったとき‥‥@KEY()↓
+;jpn: 「ジャイアントステップ」を↓
+;jpn: おぼえているか。@KEY()↓
+;jpn:◆あれは 「おまえのばしょ」の↓
+;jpn: ひとつだ。@KEY()↓
+;jpn:◆おまえに パワーをあたえ↓
+;jpn: おまえの すべてを ひきだす↓
+;jpn: スポットなのだ。@KEY()↓
+;jpn:◆そこには そのパワーの↓
+;jpn: えいきょうをうけた モンスターが↓
+;jpn: いて そのばを まもっている。@KEY()↓
+;jpn:◆しかし それらを おまえは↓
+;jpn: たおしてきたはずだ。@KEY()↓
+;jpn:◆おまえが このせかいに８つある↓
+;jpn: パワースポットのすべてに↓
+;jpn: たったとき‥‥@KEY()↓
 ;jpn:◆「おとのいし」が↓
-;jpn:　すべてのパワースポットの↓
-;jpn:　メロディーを　きおくしたとき@KEY()↓
+;jpn: すべてのパワースポットの↓
+;jpn: メロディーを きおくしたとき@KEY()↓
 ;jpn:◆「おまえのせかい」が↓
-;jpn:　はじめて　みえてくる。@KEY()↓
+;jpn: はじめて みえてくる。@KEY()↓
 _DKFD_ROCK_INFO_POWER_TEMP;
-◆Ｉ’ｌｌ　ｔｅｌｌ　ｙｏｕ　ａｌｌ　ｏｆ　ｔｈｅ　ｐｏｗｅｒ　ｓｐｏｔｓ．@KEY()↓
+◆I’ll tell you all of the power spots.@KEY()↓
 
-;jpn:◆すべてを　おしえておこう。↓
+;jpn:◆すべてを おしえておこう。↓
 @WI(60)↓
-◆１．　”Ｇｉａｎｔ　Ｓｔｅｐ”　ｉｎ　Ｏｎｅｔｔ．@KEY()↓
+◆１. ”Giant Step” in Onett.@KEY()↓
 
-;jpn:◆１　オネットの↓
-;jpn:　　「ジャイアントステップ」@KEY()↓
+;jpn:◆１ オネットの↓
+;jpn:  「ジャイアントステップ」@KEY()↓
 @WI(30)↓
-◆２．　”Ｌｉｌｌｉｐｕｔ　Ｓｔｅｐｓ”　ｉｎ　Ｇｒａｔｅｆｕｌ　Ｄｅａｄ　Ｖａｌｌｅｙ　ｎｅａｒ　Ｔｗｏｓｏｎ．@KEY()↓
+◆２. ”Lilliput Steps” in Grateful Dead Valley near Twoson.@KEY()↓
 
-;jpn:◆２　ツーソンからゆく↓
-;jpn:　　　グレートフルデッドのたにの↓
-;jpn:　　「リリパットステップ」@KEY()↓
+;jpn:◆２ ツーソンからゆく↓
+;jpn:   グレートフルデッドのたにの↓
+;jpn:  「リリパットステップ」@KEY()↓
 @WI(30)↓
-◆３．　”Ｍｉｌｋｙ　Ｗｅｌｌ”　ｉｎ　Ｇｒａｐｅｆｒｕｉｔ　Ｆａｌｌｓ　ｉｎ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ．@KEY()↓
+◆３. ”Milky Well” in Grapefruit Falls in Saturn Valley.@KEY()↓
  
-;jpn:◆３　グレープフルーツのたきから↓
-;jpn:　　　ゆく　サターンバレーの↓
-;jpn:　　「ミルキーウェル」@KEY()↓
+;jpn:◆３ グレープフルーツのたきから↓
+;jpn:   ゆく サターンバレーの↓
+;jpn:  「ミルキーウェル」@KEY()↓
 @WI(30)↓
-◆４．　”Ｒａｉｎｙ　Ｃｉｒｃｌｅ”　ｆｏｕｎｄ　ｂｙ　@DSP_NAME(PC_JEFF)　ｉｎ　Ｗｉｎｔｅｒｓ．@KEY()↓
+◆４. ”Rainy Circle” found by @DSP_NAME(PC_JEFF) in Winters.@KEY()↓
 
-;jpn:◆４　ウィンターズで↓
-;jpn:　　　@DSP_STS(STS_PC_NAME_JEFF)が　みつけた↓
-;jpn:　　「レイニーサークル」@KEY()↓
+;jpn:◆４ ウィンターズで↓
+;jpn:   @DSP_STS(STS_PC_NAME_JEFF)が みつけた↓
+;jpn:  「レイニーサークル」@KEY()↓
 @WI(30)↓
-◆５．　”Ｍａｇｎｅｔ　Ｈｉｌｌ”　ａｔ　ｔｈｅ　ｅｄｇｅ　ｏｆ　ｔｈｅ　ｃｉｔｙ　ｏｆ　Ｆｏｕｒｓｉｄｅ．@KEY()↓
+◆５. ”Magnet Hill” at the edge of the city of Fourside.@KEY()↓
 
-;jpn:◆５　フォーサイドの↓
-;jpn:　　　まちはずれにある↓
-;jpn:　　「マグネットヒル」@KEY()↓
+;jpn:◆５ フォーサイドの↓
+;jpn:   まちはずれにある↓
+;jpn:  「マグネットヒル」@KEY()↓
 @WI(30)↓
-◆６．　”Ｐｉｎｋ　Ｃｌｏｕｄ”　ｗｈｉｃｈ　@DSP_NAME(PC_POO)　ｋｎｏｗｓ．@KEY()↓
+◆６. ”Pink Cloud” which @DSP_NAME(PC_POO) knows.@KEY()↓
 
-;jpn:◆６　ランマの↓
-;jpn:　　　@DSP_STS(STS_PC_NAME_POO)も　しっている↓
-;jpn:　　「ピンククラウド」@KEY()↓
+;jpn:◆６ ランマの↓
+;jpn:   @DSP_STS(STS_PC_NAME_POO)も しっている↓
+;jpn:  「ピンククラウド」@KEY()↓
 @WI(30)↓
-◆７．　ａｎｄ．．．”Ｌｕｍｉｎｅ　Ｈｏｌｅ”　ｗｈｅｒｅ　ｔｈｅ　ｓｈｉｎｉｎｇ　ｌｉｃｈｅｎ　ｌｉｖｅｓ　ｉｎ　ｔｈｅ　ｃａｖｅ．@KEY()↓
+◆７. and...”Lumine Hole” where the shining lichen lives in the cave.@KEY()↓
 
-;jpn:◆７‥‥そして　あの↓
-;jpn:　　　ひかりごけの　どうくつ↓
-;jpn:　　「ルミネホール」@KEY↓
+;jpn:◆７‥‥そして あの↓
+;jpn:   ひかりごけの どうくつ↓
+;jpn:  「ルミネホール」@KEY↓
 @WI(30)↓
-◆８．　Ａ　ｎｅｗ　ｐｌａｃｅ　ｉｓ　ｎｏｗ　ｇｏｉｎｇ　ｔｏ　ｂｅ　ｏｐｅｎｅｄ　ｕｐ　ｔｏ　ｙｏｕ．@KEY()↓
-◆”Ｆｉｒｅ　Ｓｐｒｉｎｇ，”　ｌｏｃａｔｅｄ　ｓｏｕｔｈｗｅｓｔ　ｏｆ　ｈｅｒｅ．@KEY()↓
+◆８. A new place is now going to be opened up to you.@KEY()↓
+◆”Fire Spring,” located southwest of here.@KEY()↓
 
-;jpn:◆８　さらに　これから↓
-;jpn:　　　とびらが　ひらこうとしている@KEY()↓
-;jpn:◆　ここより　にしみなみの↓;＠
-;jpn:　　パワースポットが↓
-;jpn:　「ファイアスプリング」だ。@KEY()↓
+;jpn:◆８ さらに これから↓
+;jpn:   とびらが ひらこうとしている@KEY()↓
+;jpn:◆ ここより にしみなみの↓;＠
+;jpn:  パワースポットが↓
+;jpn: 「ファイアスプリング」だ。@KEY()↓
 @WI(60)↓
-◆Ｌｉｓｔｅｎ　ｔｏ　ｔｈｅ　ｍｅｌｏｄｉｅｓ　ｏｆ　ａｌｌ　ｅｉｇｈｔ　ｐｏｗｅｒ　ｓｐｏｔｓ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｄｏ　ｎｏｔ　ｆａｉｌ，　ｙｏｕ　ｍａｙ　ｕｐｓｅｔ　Ｇｉｙｇａｓ’　ｐｌａｎｓ．．．@KEY()↓
-◆Ｕｎｄｅｒｓｔａｎｄ，　@DSP_NAME(PC_NESS)？@KEY()↓
-◆Ｔｈｅ　ｔｉｍｅ　ｗｉｌｌ　ｃｏｍｅ．@KEY()↓
-◆Ｔｈｅ　ｔｉｍｅ　ｗｈｅｎ　ｔｈｅ　ｄｅｓｔｉｎｙ　ｏｆ　ｙｏｕ　ａｎｄ　ｔｈｅ　ｗｈｏｌｅ　ｕｎｉｖｅｒｓｅ　ｗｉｌｌ　ｏｖｅｒｌａｐ．．．@KEY()↓
-◆Ｉｔ　ｉｓ　ｆａｓｔ　ａｐｐｒｏａｃｈｉｎｇ．
+◆Listen to the melodies of all eight power spots.@KEY()↓
+◆If you do not fail, you may upset Giygas’ plans...@KEY()↓
+◆Understand, @DSP_NAME(PC_NESS)?@KEY()↓
+◆The time will come.@KEY()↓
+◆The time when the destiny of you and the whole universe will overlap...@KEY()↓
+◆It is fast approaching.
 @KEYNP()
 
 ;jpn:◆この８つのパワースポットの↓
-;jpn:　すべての　おとを　きくのだ。@KEY()↓
-;jpn:◆それを　せぬうちは↓
-;jpn:　ギーグの　おもわくを↓
-;jpn:　くつがえすことは‥‥むりだ。@KEY()↓
-;jpn:◆わかったな　@DSP_STS(STS_PC_NAME_NES)。@KEY()↓
-;jpn:◆おまえの　うんめいが↓
-;jpn:　うちゅうぜんたいの　うんめいと↓
-;jpn:　かさなりあうときが‥‥@KEY()↓
-;jpn:◆もうすぐ　くるだろう。@KEYNP()
-;◆‥‥ああ@WI(20)　ながくしゃべって@KEY()↓
+;jpn: すべての おとを きくのだ。@KEY()↓
+;jpn:◆それを せぬうちは↓
+;jpn: ギーグの おもわくを↓
+;jpn: くつがえすことは‥‥むりだ。@KEY()↓
+;jpn:◆わかったな @DSP_STS(STS_PC_NAME_NES)。@KEY()↓
+;jpn:◆おまえの うんめいが↓
+;jpn: うちゅうぜんたいの うんめいと↓
+;jpn: かさなりあうときが‥‥@KEY()↓
+;jpn:◆もうすぐ くるだろう。@KEYNP()
+;◆‥‥ああ@WI(20) ながくしゃべって@KEY()↓
 ;◆‥‥‥つかれた。@KEYNP()
 @MUSISTART()
 @SETF(FLG_TEMP_1)
 』
 _DKFD_ROCK_INFO_POWER_LATER;
 ;すべてのパワースポットを獲得したら
-◆Ｉ　ｄｏｎ’ｔ　ｎｅｅｄ　ｗｏｒｄｓ　ａｎｙｍｏｒｅ．@KEY()↓
-◆Ｉ’ｌｌ　ｔｕｒｎ　ｂａｃｋ　ｉｎｔｏ　ａ　ｓｉｍｐｌｅ　ｒｏｃｋ．
+◆I don’t need words anymore.@KEY()↓
+◆I’ll turn back into a simple rock.
 @KEYNP()
-;jpn:◆わたしに　もう↓
-;jpn:　ことばは　いらない。@KEY()↓
-;jpn:◆わたしは　もとの　ただの↓
-;jpn:　いわにもどる。@KEYNP()
+;jpn:◆わたしに もう↓
+;jpn: ことばは いらない。@KEY()↓
+;jpn:◆わたしは もとの ただの↓
+;jpn: いわにもどる。@KEYNP()
 @SETF(FLG_INFO_POWR);このセリフ以降は、「だれにはなしているのだ」に。
 』
 
@@ -845,14 +845,14 @@ MSG_MAKYO_LUMI_BOSS;
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(MSG_GLOBAL_BOSS_NG);ネス死んでたらダメ
 @BGMSTART(0,BGM_msc24);ボスのセリフ曲
-◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｇｏｔ　ｈｅｒｅ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｓｅｖｅｎｔｈ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ”　ｌｏｃａｔｉｏｎ．@WI(20)　　Ｂｕｔ　ｉｔ’ｓ　ｍｉｎｅ　ｎｏｗ．@KEY()↓
-◆Ｔａｋｅ　ｉｔ　ｆｒｏｍ　ｍｅ，@WI(30)　ｉｆ　ｙｏｕ　ｄａｒｅ．．．
+◆You finally got here.@KEY()↓
+◆This is the seventh ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
+◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは　７ばんめの↓
+;jpn:◆ここは ７ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
-;jpn:◆しかし　いまは↓
-;jpn:　わたしのばしょだ。@KEY()↓
+;jpn:◆しかし いまは↓
+;jpn: わたしのばしょだ。@KEY()↓
 ;jpn:◆うばいかえせばよい。@KEY()↓
 ;jpn:◆‥‥できるものなら。
 @KEY()
@@ -865,25 +865,25 @@ MSG_MAKYO_LUMI_BOSS;
 ;-------------------------------------------------
 
 MSG_GUMI_TALKERSTONE;グミの下の岩
-◆Ｇｏｏｄ　ｅｖｅｎｉｎｇ．@KEY()↓
-◆Ｉ’ｍ　ａ　ｔａｌｋｉｎｇ　ｒｏｃｋ．@KEY()↓
-◆Ｂｕｔ　ｔｈｅ　ｒｏｃｋｓ　ａｒｏｕｎｄ　ｈｅｒｅ　ｄｏｎ’ｔ　ｔａｌｋ　ｔｏｏ　ｍｕｃｈ．@KEY()↓
-◆Ｔｈｅ　ｒｏｃｋ　ｔｈａｔ　ｔａｌｋｓ　ｔｈｅ　ｍｏｓｔ　ｉｓ　ｄｅｅｐ　ｄｏｗｎ　ｉｎ　ｔｈｅ　ｌａｂｙｒｉｎｔｈ　ａ　ｗａｙｓ　ａｈｅａｄ．．．@KEY()↓
-◆ｉｎ　ｔｈｅ　”Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ．”@KEY()↓
-◆Ｄｏｎ’ｔ　ｆｏｒｇｅｔ　ｔｏ　ｔａｌｋ　ｔｏ　ｔｈｅ　ｒｏｃｋ！　　Ｉｔ’ｓ　ｉｍｐｏｒｔａｎｔ！
+◆Good evening.@KEY()↓
+◆I’m a talking rock.@KEY()↓
+◆But the rocks around here don’t talk too much.@KEY()↓
+◆The rock that talks the most is deep down in the labyrinth a ways ahead...@KEY()↓
+◆in the ”Lost Underworld.”@KEY()↓
+◆Don’t forget to talk to the rock!  It’s important!
 @KEYNP()
-;jpn:◆こんばんは　しゃべるいわです。@WI(20)↓
-;jpn:　でも　このきんじょの↓
-;jpn:　しゃべるいわは@KEY()↓
-;jpn:◆あんまり　ながばなしは↓
-;jpn:　しません。@KEY()↓
-;jpn:◆いちばん　よくしゃべるのは↓
-;jpn:　このさきの　めいろの↓
-;jpn:　おくのおくのした‥‥@KEY()↓
+;jpn:◆こんばんは しゃべるいわです。@WI(20)↓
+;jpn: でも このきんじょの↓
+;jpn: しゃべるいわは@KEY()↓
+;jpn:◆あんまり ながばなしは↓
+;jpn: しません。@KEY()↓
+;jpn:◆いちばん よくしゃべるのは↓
+;jpn: このさきの めいろの↓
+;jpn: おくのおくのした‥‥@KEY()↓
 ;jpn:◆「ちていたいりく」にある@KEY()↓
 ;jpn:◆しゃべるいわです。@KEY()↓
-;jpn:◆かれとは　かならず↓
-;jpn:　はなしをしてください。@KEYNP()
+;jpn:◆かれとは かならず↓
+;jpn: はなしをしてください。@KEYNP()
 @SETF(FLG_GUMI_TALKERSTONE)
 』
 ;-------------------------------------------------

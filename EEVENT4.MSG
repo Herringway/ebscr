@@ -8,7 +8,7 @@
 ;以下s_event2
 
 
-;	（ゾンビホイホイ配達(マッハピザ)）
+;	(ゾンビホイホイ配達(マッハピザ))
 
 MSG_THRK_SET_HRECT_HOIHOI;ホイホイ電話検査
 @SET_HIT_RECT(1,HRECT_THRK_HOIHOI,MSG_THRK_TELE_APPLEKID)
@@ -17,7 +17,7 @@ MSG_THRK_SET_HRECT_HOIHOI;ホイホイ電話検査
 MSG_THRK_TELE_APPLEKID;
 @GOSUB(MSG_SUB_Q_NOW_DELIVERY)		;配達フラグが立ってたら
 @TRUE_GOTO(MSG_THRK_SET_HRECT_HOIHOI)	;やりなおし
-;アップルキッドのＴＥＬ
+;アップルキッドのTEL
 @BGMSTART(0,BGM_msc1)
 @WI(60)
 @KEYNP()
@@ -25,62 +25,62 @@ MSG_THRK_TELE_APPLEKID;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_kowa4)
 @OPEN(1)
-◆Ｈｅｌｌｏ，　ｔｈｉｓ　ｉｓ　Ａｐｐｌｅ　Ｋｉｄ．@KEY()↓
-◆Ｉ　ｊｕｓｔ　ｗａｎｔｅｄ　ｔｏ　ｌｅｔ　ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　Ｉ　ｆｉｎｉｓｈｅｄ　ａ　ｐｒｅｔｔｙ　ｕｎｉｑｕｅ　ｉｎｖｅｎｔｉｏｎ．@KEY()↓
-◆Ｉ’ｍ　ｎｏｔ　ｓｕｒｅ　ｉｆ　ｉｔ　ｗｉｌｌ　ｈｅｌｐ　ｙｏｕ　ｏｒ　ｎｏｔ．．．@KEY()↓
-◆Ｉｔ’ｓ　ｃａｌｌｅｄ　”Ｚｏｍｂｉｅ　Ｐａｐｅｒ，”　ａｎｄ　ｉｔ　ｃａｎ　ｂｅ　ｕｓｅｄ　ｔｏ　ｔｒａｐ　ｚｏｍｂｉｅｓ．@KEY()↓
-◆Ｉｔ　ｗｏｒｋｓ　ｋｉｎｄ　ｏｆ　ｌｉｋｅ　ｆｌｙ　ｐａｐｅｒ．．．@KEY()↓
-◆Ａｌｌ　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｄｏ　ｉｓ　ｐｌａｃｅ　ｔｈｅ　ｐａｐｅｒ　ｏｎ　ｔｈｅ　ｆｌｏｏｒ　ｏｆ　ａ　ｔｅｎｔ　ｏｒ　ｓｏｍｅｔｈｉｎｇ．．．@KEY()↓
-◆Ｙｏｕ’ｖｅ　ｓｅｅｎ　ａｔ　ｌｅａｓｔ　ｏｎｅ　ｔｅｎｔ　ａｒｏｕｎｄ，　ｒｉｇｈｔ？．．．．@KEY()↓
-◆ａｎｄ　ｔｈｅｎ　ｔｈｅ　ｚｏｍｂｉｅｓ　ｇｅｔ　ｓｔｕｃｋ　ｔｏ　ｔｈｅ　ｐａｐｅｒ@KEY()↓
-◆ｗｈｅｎ　ｔｈｅｙ　ｍｏｖｅ　ａｒｏｕｎｄ　ｉｎｓｉｄｅ　ｔｈｅ　ｔｅｎｔ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｃａｔｃｈ　ａ　ｌｏｔ　ｏｆ　ｚｏｍｂｉｅｓ　ｔｈｉｓ　ｗａｙ．．．Ｉｎ　ｆａｃｔ，@KEY()↓
-◆Ｉ　ｂｅｔ　ｙｏｕ　ｃｏｕｌｄ　ｇｅｔ　ｒｉｄ　ｏｆ　ａｌｌ　ｔｈｅ　ｚｏｍｂｉｅｓ@KEY()↓
-◆ｔｈａｔ　ａｒｅ　ｔｅｒｒｏｒｉｚｉｎｇ　ｔｈｅ　ａｒｅａ　ｗｉｔｈ　ｔｈｉｓ　ｐａｐｅｒ！
-;jpn:◆もしもし　アップルキッドです。@WI(20)↓
-;jpn:　へんなものが　できたんですが↓
-;jpn:　やくにたつかどうか‥‥@KEY()↓
+◆Hello, this is Apple Kid.@KEY()↓
+◆I just wanted to let you know that I finished a pretty unique invention.@KEY()↓
+◆I’m not sure if it will help you or not...@KEY()↓
+◆It’s called ”Zombie Paper,” and it can be used to trap zombies.@KEY()↓
+◆It works kind of like fly paper...@KEY()↓
+◆All you need to do is place the paper on the floor of a tent or something...@KEY()↓
+◆You’ve seen at least one tent around, right?....@KEY()↓
+◆and then the zombies get stuck to the paper@KEY()↓
+◆when they move around inside the tent.@KEY()↓
+◆You can catch a lot of zombies this way...In fact,@KEY()↓
+◆I bet you could get rid of all the zombies@KEY()↓
+◆that are terrorizing the area with this paper!
+;jpn:◆もしもし アップルキッドです。@WI(20)↓
+;jpn: へんなものが できたんですが↓
+;jpn: やくにたつかどうか‥‥@KEY()↓
 ;jpn:◆「ゾンビホイホイ」っていって↓
-;jpn:　これを　つかうと　ゾンビが↓
-;jpn:　あつまる　マシンです。@KEY()↓
+;jpn: これを つかうと ゾンビが↓
+;jpn: あつまる マシンです。@KEY()↓
 ;jpn:◆この「ゾンビホイホイ」は↓
-;jpn:　テントのようなばしょの↓
-;jpn:　まんなかに　おきます。@KEY()↓
-;jpn:◆テントは　どこかにありますよね。@KEY()↓
+;jpn: テントのようなばしょの↓
+;jpn: まんなかに おきます。@KEY()↓
+;jpn:◆テントは どこかにありますよね。@KEY()↓
 ;jpn:◆‥‥おいておけば↓
-;jpn:　おもしろいように↓
-;jpn:　ゾンビどもが　くっつきますから。@KEY()↓
-;jpn:◆いっぱい　とってください。@KEY()↓
-;jpn:◆ちじょうにいる　ゾンビは↓
-;jpn:　たぶん　これで　ぜんぶ↓
-;jpn:　たいじできると　おもいます。
+;jpn: おもしろいように↓
+;jpn: ゾンビどもが くっつきますから。@KEY()↓
+;jpn:◆いっぱい とってください。@KEY()↓
+;jpn:◆ちじょうにいる ゾンビは↓
+;jpn: たぶん これで ぜんぶ↓
+;jpn: たいじできると おもいます。
 @KEY()↓
 @WI(60)↓
-◆Ａｎｙｗａｙ，　Ｉ　ｊｕｓｔ　ａｓｋｅｄ　ｔｈｅ　Ｍａｃｈ　Ｐｉｚｚａ　ｄｅｌｉｖｅｒｙ　ｍａｎ@KEY()↓
-◆ｔｏ　ｄｅｌｉｖｅｒ　ｔｈｅ　Ｚｏｍｂｉｅ　Ｐａｐｅｒ　ｔｏ　ｙｏｕ，　@DSP_NAME(PC_NESS)．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｇｅｔ　ｉｔ　ｐｒｅｔｔｙ　ｓｏｏｎ．@KEY()↓
-◆Ｉ’ｖｅ　ｎｅｖｅｒ　ａｃｔｕａｌｌｙ　ｓｅｅｎ　ａ　ｚｏｍｂｉｅ，　ｂｕｔ　ｉｆ　ｔｈｅｒｅ　ｒｅａｌｌｙ　ａｒｅ　ａｎｙ，@KEY()↓
-◆Ｚｏｍｂｉｅ　Ｐａｐｅｒ　ｗｏｕｌｄ　ｂｅ　ｖｅｒｙ　ｕｓｅｆｕｌ．．．@KEY()↓
-◆Ｉ’ｌｌ　ｂｅ　ｃａｌｌｉｎｇ　ｙｏｕ　ｉｆ　Ｉ　ｃｏｍｅ　ｕｐ　ｗｉｔｈ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ．．．@KEY()↓
-◆＊Ｃｌｉｃｋ！＊　Ｂｅｅｅｅｅｐ！
-;jpn:◆さっき　マッハピザのひとに↓
-;jpn: @DSP_STS(STS_PC_NAME_NES)さんに　とどけるよう↓
-;jpn:　たのんだので@KEY()↓
-;jpn:◆ちかいうちに　つくとおもいます。@WI(30)↓
-;jpn:　ゾンビなんて　みたことないけど↓
-;jpn:　もし　ほんとにいるとしたら@KEY()↓
-;jpn:◆このマシンは　きっと↓
-;jpn:　つかえるはずです。@KEY()↓
-;jpn:◆また　なんかあったら↓
-;jpn:　でんわします。@WI(20)↓
-;jpn:　ガチャン　ツーツーツー
+◆Anyway, I just asked the Mach Pizza delivery man@KEY()↓
+◆to deliver the Zombie Paper to you, @DSP_NAME(PC_NESS).@KEY()↓
+◆You should get it pretty soon.@KEY()↓
+◆I’ve never actually seen a zombie, but if there really are any,@KEY()↓
+◆Zombie Paper would be very useful...@KEY()↓
+◆I’ll be calling you if I come up with anything else...@KEY()↓
+◆＊Click!＊ Beeeeep!
+;jpn:◆さっき マッハピザのひとに↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)さんに とどけるよう↓
+;jpn: たのんだので@KEY()↓
+;jpn:◆ちかいうちに つくとおもいます。@WI(30)↓
+;jpn: ゾンビなんて みたことないけど↓
+;jpn: もし ほんとにいるとしたら@KEY()↓
+;jpn:◆このマシンは きっと↓
+;jpn: つかえるはずです。@KEY()↓
+;jpn:◆また なんかあったら↓
+;jpn: でんわします。@WI(20)↓
+;jpn: ガチャン ツーツーツー
 @KEYNP()
 @SE(SE_se0b_tel_put)
 @CLOSEALL()
 ;-----------
 @MUSISTART()
 ;-----------
-@DELIVERY(DELIVERY_HOIHOI);配達！
+@DELIVERY(DELIVERY_HOIHOI);配達!
 @SETF(FLG_DELIVERY_HOIHOI)
 @SETF(FLG_SYS_DISTLPT);テレポート禁止
 』
@@ -89,41 +89,41 @@ MSG_THRK_TELE_APPLEKID;
 MSG_THRK_MACH;
 ;マッハピザの店員
 @OPEN(1)
-◆Ｗｈｉｌｅ　ｄｅｌｉｖｅｒｉｎｇ　ｐｉｚｚａ，　ｔｈｉｓ　ｗｅｉｒｄ　ｇｕｙ　ａｓｋｅｄ　ｍｅ　ｔｏ　ｈｅｌｐ　ｈｉｍ　ｏｕｔ．．．@KEY()↓
-◆Ｈｅ　ｗａｎｔｅｄ　ｍｅ　ｔｏ　ｄｅｌｉｖｅｒ　ｔｈｉｓ　ｔｏ　ｓｏｍｅｏｎｅ　ｎａｍｅｄ　@DSP_NAME(PC_NESS)@KEY()↓
-◆ｗｈｏ　ｉｓ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ　Ｔｈｒｅｅｄ．@KEY()↓
-◆Ｎｏ　ｏｎｅ　ｅｌｓｅ　ｋｎｏｗｓ　ａｂｏｕｔ　ｔｈｉｓ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｌｅｔ’ｓ　ｊｕｓｔ　ｐｒｅｔｅｎｄ　ｔｈａｔ　ｙｏｕ’ｒｅ　@DSP_NAME(PC_NESS)，↓
-　　ａｎｄ　Ｉ’ｌｌ　ｇｉｖｅ　ｔｈｉｓ　ｔｏ　ｙｏｕ．@KEY()↓
-◆Ｏｈ！　　Ｈｅｌｌｏ，　@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｊｕｓｔ　ｇｏ　ａｌｏｎｇ　ｗｉｔｈ　ｍｅ　ｏｎ　ｔｈｉｓ　ｏｎｅ，　ｏｋａｙ．@KEY()↓
-◆Ｉ　ｍａｄｅ　ｔｈｅ　ｄｅｃｉｓｉｏｎ　ｔｈａｔ　ｙｏｕ’ｒｅ　@DSP_NAME(PC_NESS)，　ｎｏ　ｍａｔｔｅｒ　ｗｈａｔ．．．
+◆While delivering pizza, this weird guy asked me to help him out...@KEY()↓
+◆He wanted me to deliver this to someone named @DSP_NAME(PC_NESS)@KEY()↓
+◆who is wandering around Threed.@KEY()↓
+◆No one else knows about this, right?@KEY()↓
+◆Let’s just pretend that you’re @DSP_NAME(PC_NESS),↓
+  and I’ll give this to you.@KEY()↓
+◆Oh!  Hello, @DSP_NAME(PC_NESS)!@KEY()↓
+◆Just go along with me on this one, okay.@KEY()↓
+◆I made the decision that you’re @DSP_NAME(PC_NESS), no matter what...
 ;jpn:◆ピザのはいたつしてたら↓
-;jpn:　とんでもない　たのまれごとを↓
-;jpn:　しちまって‥‥@KEY()↓
-;jpn:◆スリークあたりを　うろついている↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)ってやつに@KEY()↓
+;jpn: とんでもない たのまれごとを↓
+;jpn: しちまって‥‥@KEY()↓
+;jpn:◆スリークあたりを うろついている↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)ってやつに@KEY()↓
 ;jpn:◆とどけてくれって‥‥@WI(20)↓
-;jpn:　みつかりゃしないよな。@KEY()↓
+;jpn: みつかりゃしないよな。@KEY()↓
 ;jpn:◆あんたが@DSP_STS(STS_PC_NAME_NES)だってことに↓
-;jpn:　しちまってさ@WI(15)↓
-;jpn:　こいつを　わたして　かえるわ。@KEY()↓
-;jpn:◆あんたが@DSP_STS(STS_PC_NAME_NES)だ！@WI(20)↓
-;jpn:　こたえなくていい！↓
-;jpn:　おれが　そうきめたんだ！！
+;jpn: しちまってさ@WI(15)↓
+;jpn: こいつを わたして かえるわ。@KEY()↓
+;jpn:◆あんたが@DSP_STS(STS_PC_NAME_NES)だ!@WI(20)↓
+;jpn: こたえなくていい!↓
+;jpn: おれが そうきめたんだ!!
 @KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_THRK_MACH_ITEMFULL)
 _THRK_MACH_MAIN;
 @GOODSIN_PLAYER(0,GDS_TOOL_ZOMBI_HOIHOI)
 @GOSUB(MSG_SUB_GETGOODS_S)@KEY()↓
-◆Ｔｈａｔ’ｓ　ｒｉｇｈｔ，　@DSP_NAME(PC_NESS)．．．＊ｗｉｎｋ，　ｗｉｎｋ＊@KEY()↓
-◆Ｉ’ｖｅ　ｄｏｎｅ　ｍｙ　ｄｕｔｙ　ａｎｄ　ｇｉｖｅｎ　ｙｏｕ　Ａｐｐｌｅ　Ｋｉｄ’ｓ　ｔｈｉｎｇａｍａｊｉｇ．．．@KEY()↓
-◆Ｗｅｌｌ，　ｇｏｏｄｂｙｅ！．．．
+◆That’s right, @DSP_NAME(PC_NESS)...＊wink, wink＊@KEY()↓
+◆I’ve done my duty and given you Apple Kid’s thingamajig...@KEY()↓
+◆Well, goodbye!...
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)さん↓
-;jpn:　アップルキッドからの　とどけもの↓
-;jpn:　たしかに　わたしたよ！@KEY()↓
-;jpn:◆じゃ　サイナラー！
+;jpn: アップルキッドからの とどけもの↓
+;jpn: たしかに わたしたよ!@KEY()↓
+;jpn:◆じゃ サイナラー!
 @KEY()
 @CLOSEALL()
 @CLRF(FLG_DELIVERY_HOIHOI)
@@ -134,23 +134,23 @@ _THRK_MACH_MAIN;
 』
 
 _THRK_MACH_ITEMFULL;@MaltaAppended
-◆Ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ，　ｓｏ　Ｉ　ｃａｎ’ｔ　ｇｉｖｅ　ｔｈｉｓ　ｔｏ　ｙｏｕ．．．@KEY()↓
-◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆もちものが　いっぱいで↓
-;jpn:　わたせないじゃないか！@KEY()↓
-;jpn:◆なんとかして　へらしてくれ。↓
-;jpn:　　<はい>　　<いいえ>
+◆You have too much stuff, so I can’t give this to you...@KEY()↓
+◆Why don’t you get rid of something?↓
+<Yes> <No>
+;jpn:◆もちものが いっぱいで↓
+;jpn: わたせないじゃないか!@KEY()↓
+;jpn:◆なんとかして へらしてくれ。↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_THRK_MACH_YES,_THRK_MACH_NO)
 
 _THRK_MACH_NO;それでもイイエだったら
-◆Ｌｏｏｋ，　ｔｈｉｓ　ｉｓ　ｒｅａｌｌｙ　ｉｍｐｏｒｔａｎｔ！@KEY()↓
-◆Ｙｏｕ’ｖｅ　ｇｏｔ　ｔｏ　ｄｕｍｐ　ｓｏｍｅｔｈｉｎｇ！！↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆だいじなことだぞ！@KEY()↓
-;jpn:◆なんとかして　へらしてくれ。↓
-;jpn:　　<はい>　　<いいえ>
+◆Look, this is really important!@KEY()↓
+◆You’ve got to dump something!!↓
+<Yes> <No>
+;jpn:◆だいじなことだぞ!@KEY()↓
+;jpn:◆なんとかして へらしてくれ。↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_THRK_MACH_YES,_THRK_MACH_NO_NO)
 @GOTO(_THRK_MACH_NO_NO)
@@ -167,23 +167,23 @@ _THRK_MACH_YES;
 @GOTO(_THRK_MACH_MAIN)
 
 _THRK_MACH_NO_NO;
-◆Ａｌｌ　ｒｉｇｈｔｙ，　Ｉ’ｍ　ｊｕｓｔ　ｇｏｉｎｇ　ｔｏ　ｈａｎｇ　ｏｕｔ　ａｒｏｕｎｄ　ｈｅｒｅ，　ｔｈｅｎ．@KEY()↓
-◆Ｙａ　ｇｏｔｔａ　ｈａｖｅ　ｓｏｍｅ　ｓｐａｃｅ　ｆｏｒ　ｔｈｉｓ　ｔｈｉｎｇ　ｂｙ　ｔｈｅ　ｔｉｍｅ　Ｉ　ｃｏｍｅ　ｂａｃｋ，　ｏｋａｙ？
-;jpn:◆じゃあさー@WI(20)　おれ↓
-;jpn:　そのへんを↓
-;jpn:　ぶらぶらしてくるからさー。@KEY()↓
-;jpn:◆なんか　へらしといてくれよ。@WI(60)↓
-;jpn:　たのむよ！
+◆All righty, I’m just going to hang out around here, then.@KEY()↓
+◆Ya gotta have some space for this thing by the time I come back, okay?
+;jpn:◆じゃあさー@WI(20) おれ↓
+;jpn: そのへんを↓
+;jpn: ぶらぶらしてくるからさー。@KEY()↓
+;jpn:◆なんか へらしといてくれよ。@WI(60)↓
+;jpn: たのむよ!
 @KEY()
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
 @CLRF(FLG_SYS_DISTLPT);テレポート許可
 』
 _THRK_MACH_DROP_NG;
-◆Ｈａｎｇ　ｏｎ！　　Ｔｈａｔ’ｓ　ｗａｙ　ｔｏｏ　ｃｏｏｌ　ｔｏ　ｊｕｓｔ　ｔｈｒｏｗ　ａｗａｙ！@KEY()↓
-◆Ｋｅｅｐ　ｉｔ！
-;jpn:◆ちょっとまった！@WI(30)↓
-;jpn:　それはすてちゃだめだよ。
+◆Hang on!  That’s way too cool to just throw away!@KEY()↓
+◆Keep it!
+;jpn:◆ちょっとまった!@WI(30)↓
+;jpn: それはすてちゃだめだよ。
 @KEY()↓
 @GOTO(_THRK_MACH_YES)
 』
@@ -192,7 +192,7 @@ MSG_EVT_HOIHOI_RETRY;だめでもリトライホイホイ
 』
 
 
-;	（ぐるめとうふマシン配達(エスカルゴ運送)）
+;	(ぐるめとうふマシン配達(エスカルゴ運送))
 
 MSG_MOON_TELE_APPLE_TOFU;
 @BGMSTART(0,BGM_msc1)
@@ -202,39 +202,39 @@ MSG_MOON_TELE_APPLE_TOFU;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_fors)
 @OPEN(1)
-◆Ｈｅｌｌｏ，　ｔｈｉｓ　ｉｓ　Ａｐｐｌｅ　Ｋｉｄ．@KEY()↓
-◆Ｉ’ｖｅ　ｃｏｍｅ　ｕｐ　ｗｉｔｈ　ａｎｏｔｈｅｒ　ｗａｃｋｙ　ｉｎｖｅｎｔｉｏｎ　ｔｈａｔ　Ｉ　ｔｈｉｎｋ　ｈａｓ　ｒｅａｌ　ｐｏｔｅｎｔｉａｌ．@KEY()↓
-◆Ｍａｙｂｅ　ｙｏｕ　ｗｏｎ’ｔ，　ｂｕｔ　ａｎｙｗａｙ．．．@KEY()↓
-◆ｉｔ’ｓ　ｃａｌｌｅｄ　ｔｈｅ　”Ｇｏｕｒｍｅｔ　Ｙｏｇｕｒｔ　Ｍａｃｈｉｎｅ．”@KEY()↓
-◆Ｉｔ　ｍａｋｅｓ　ｍａｎｙ　ｄｉｆｆｅｒｅｎｔ　ｆｌａｖｏｒｓ　ｏｆ　ｙｏｇｕｒｔ．@KEY()↓
-◆Ｔｈｅ　ｏｎｌｙ　ｐｒｏｂｌｅｍ　ｉｓ，　ｒｉｇｈｔ　ｎｏｗ，@KEY()↓
-◆ｉｔ　ｃａｎ　ｏｎｌｙ　ｍａｋｅ　ｔｒｏｕｔ−ｆｌａｖｏｒｅｄ　ｙｏｇｕｒｔ．．．@KEY()↓
-◆Ｓｏ，　Ｉ’ｍ　ｈａｖｉｎｇ　ｔｈｅ　ｍａｃｈｉｎｅ　ｄｅｌｉｖｅｒｅｄ　ｔｏ　ｙｏｕ　ｖｉａ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
-◆Ｉｔ’ｓ　ｃｏｍｉｎｇ　”Ｎｅｇｌｅｃｔｅｄ　Ｃｌａｓｓ．”@KEY()↓
-◆Ｈｏｐｅｆｕｌｌｙ，　ｙｏｕ’ｌｌ　ｇｅｔ　ｉｔ　ｓｏｏｎ．@KEY()↓
-◆Ｙｅａｈ，　ｅｖｅｒｙｔｈｉｎｇ　ｉｓ．．．
-;jpn:◆もしもし　アップルキッドです。↓
-;jpn:　へんなものが　できたんですが↓
-;jpn:　やくにたつかどうか‥‥。@KEY()↓
+◆Hello, this is Apple Kid.@KEY()↓
+◆I’ve come up with another wacky invention that I think has real potential.@KEY()↓
+◆Maybe you won’t, but anyway...@KEY()↓
+◆it’s called the ”Gourmet Yogurt Machine.”@KEY()↓
+◆It makes many different flavors of yogurt.@KEY()↓
+◆The only problem is, right now,@KEY()↓
+◆it can only make trout−flavored yogurt...@KEY()↓
+◆So, I’m having the machine delivered to you via Escargo Express.@KEY()↓
+◆It’s coming ”Neglected Class.”@KEY()↓
+◆Hopefully, you’ll get it soon.@KEY()↓
+◆Yeah, everything is...
+;jpn:◆もしもし アップルキッドです。↓
+;jpn: へんなものが できたんですが↓
+;jpn: やくにたつかどうか‥‥。@KEY()↓
 ;jpn:◆「ぐるめとうふマシン」っていって↓
-;jpn:　いろんなおいしさの　とうふが↓
-;jpn:　できちゃうんです。@KEY()↓
-;jpn:◆でも　いまのところ↓
-;jpn:　「いちごとうふ」しか↓
-;jpn:　うまくいかなくって‥‥@KEY()↓
-;jpn:◆ま　とにかく@KEY()↓
+;jpn: いろんなおいしさの とうふが↓
+;jpn: できちゃうんです。@KEY()↓
+;jpn:◆でも いまのところ↓
+;jpn: 「いちごとうふ」しか↓
+;jpn: うまくいかなくって‥‥@KEY()↓
+;jpn:◆ま とにかく@KEY()↓
 ;jpn:◆エスカルゴうんそうの↓
-;jpn:　「ウッカリとっきゅうびん」で↓
-;jpn:　とどけてもらいますから@KEY()↓
-;jpn:◆ちかいうちに　つくとおもいます。↓
-;jpn:　おっと　けんきゅうしつのほうが
+;jpn: 「ウッカリとっきゅうびん」で↓
+;jpn: とどけてもらいますから@KEY()↓
+;jpn:◆ちかいうちに つくとおもいます。↓
+;jpn: おっと けんきゅうしつのほうが
 @KEY()↓
 ;＠ドッカーン
-◆（Ｋａｂｏｏｏｏｍ！）@KEY()↓
-◆．．．Ｕｈ，　Ｉ’ｖｅｇｏｔｓｏｍｅｐｒｏｂｌｅｍｓｈｅｒｅｇｏｔｔａｇｏ，　ｂｙｅ！
-;jpn:◆じゃ　ちょっと↓
-;jpn:　とりこんでるんで↓
-;jpn:　しつれいしまーす！
+◆(Kaboooom!)@KEY()↓
+◆...Uh, I’vegotsomeproblemsheregottago, bye!
+;jpn:◆じゃ ちょっと↓
+;jpn: とりこんでるんで↓
+;jpn: しつれいしまーす!
 @KEYNP()
 @SE(SE_se0b_tel_put)
 @CLOSEALL()
@@ -247,61 +247,61 @@ MSG_FOUR_ESCARGO_TOFU;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-◆＊Ｃｒａｓｈ＊@KEY()↓
-◆Ｏｏｏｐｓ！@KEY()↓
-◆＊Ｃｒｕｎｃｈ＊@KEY()↓
-◆Ｏｏｏｐｓ！@KEY()↓
-◆．．．Ｇｒｅｅｔｉｎｇｓ！　　（Ｉｔ’ｓ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ’ｓ　ｎｅｇｌｅｃｔｅｄ　ｃｌａｓｓ．）
-;jpn:◆おっと！@KEY()↓
-;jpn:◆おおーっと！　とっ！↓
-;jpn:　「ウッカリとっきゅうびん」↓
-;jpn:　でーす！
+◆＊Crash＊@KEY()↓
+◆Ooops!@KEY()↓
+◆＊Crunch＊@KEY()↓
+◆Ooops!@KEY()↓
+◆...Greetings!  (It’s Escargo Express’s neglected class.)
+;jpn:◆おっと!@KEY()↓
+;jpn:◆おおーっと! とっ!↓
+;jpn: 「ウッカリとっきゅうびん」↓
+;jpn: でーす!
 @KEY()↓
 ;@WI(60)↓
-◆Ｗｈｅｗ！　　Ｉ　ｊｕｓｔ　ｇｏｔ　ｈｅｒｅ　ｆｒｏｍ　ｔｈｅ　Ｄｕｓｔｙ　Ｄｕｎｅ　ｄｅｓｅｒｔ．@KEY()↓
-◆Ｔｈｅｒｅ　ｗａｓ　ｔｈｉｓ　ｓｕｎｂａｔｈｉｎｇ　ｇｕｙ，@KEY()↓
-◆ａｎｄ　ｈｅ　ｔｏｌｄ　ｍｅ　ａｂｏｕｔ　ａ　ｃａｖｅ　ｗｉｔｈ　ｌｏｔｓ　ｏｆ　ｍｏｎｋｅｙｓ．．．ｏｒ　ｗａｓ　ｉｔ　ｏｒａｎｇｕｔａｎｓ？@KEY()↓
-◆Ａｎｙｗａｙ，　ｈｅ　ｓａｉｄ．．．ｗｅｌｌ．．．ｕｈ．．．Ｉ　ｆｏｒｇｏｔ．@KEY()↓
-◆Ｙｅｐ，　Ｉ　ｆｏｒｇｏｔ．．．ａｃｔｕａｌｌｙ　Ｉ　ｆｏｒｇｏｔ　ｔｈｅ　ｓｔｕｆｆ　Ｉ　ｗａｓ　ｓｕｐｐｏｓｅｄ　ｔｏ　ｄｅｌｉｖｅｒ，　ｔｏｏ．@KEY()↓
-◆Ｉ　ｔｈｉｎｋ　ｉｔ　ｗａｓ　ｓｏｍｅ　ｗｅｉｒｄ　ｍａｃｈｉｎｅ　ｔｏ　ｍａｋｅ　ｔｒｏｕｔ−@KEY()↓
-◆ｆｌａｖｏｒｅｄ　ｙｏｇｕｒｔ．@KEY()↓
-◆Ｙｅａｈ，　Ｉ　ｆｏｒｇｏｔ　ｉｔ　ａｔ　ｔｈｅ　ｄｅｓｅｒｔ．．．@KEY()↓
-◆Ｉ’ｍ　ｎｏｔ　ｇｏｉｎｇ　ｂａｃｋ　ｔｈａｔ　ｗａｙ，　ｓｏ　ｄｏｎ’ｔ　ａｓｋ　ｍｅ　ｔｏ　ｇｅｔ　ｔｈｅ　ｐａｃｋａｇｅ．．．@KEY()↓
-◆Ｉ　ｍｅａｎ，　ｉｔ’ｓ　ｙｏｕｒ　ｐａｃｋａｇｅ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｓｏ　ＹＯＵ　ｇｏ　ｇｅｔ　ｉｔ！@KEY()↓
-◆Ｇｏ　ｏｎ，　ｇｅｔ　ｏｕｔ　ｏｆ　ｈｅｒｅ．@KEY()↓
-◆Ｍａｙｂｅ　ｔｈａｔ　ｔｈｉｎｇ　Ｉ　ｆｏｒｇｏｔ　ｉｓ　ｉｍｐｏｒｔａｎｔ　ｔｏ　ｙｏｕ．．．@KEY()↓
-◆Ｓｏ．．．ｈａｖｅ　ａ　ｇｏｏｄ　ｔｉｍｅ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ！．．．
-;jpn:◆ドコドコさばくって　ホラ↓
-;jpn:　あるじゃないですか。@KEY()↓
-;jpn:◆あそこで　にっこうよくしてる↓
-;jpn:　おとこが　いましてね‥‥↓
-;jpn:　そいつが　サルのおおいどうくつを@KEY()↓
+◆Whew!  I just got here from the Dusty Dune desert.@KEY()↓
+◆There was this sunbathing guy,@KEY()↓
+◆and he told me about a cave with lots of monkeys...or was it orangutans?@KEY()↓
+◆Anyway, he said...well...uh...I forgot.@KEY()↓
+◆Yep, I forgot...actually I forgot the stuff I was supposed to deliver, too.@KEY()↓
+◆I think it was some weird machine to make trout−@KEY()↓
+◆flavored yogurt.@KEY()↓
+◆Yeah, I forgot it at the desert...@KEY()↓
+◆I’m not going back that way, so don’t ask me to get the package...@KEY()↓
+◆I mean, it’s your package, right?@KEY()↓
+◆So YOU go get it!@KEY()↓
+◆Go on, get out of here.@KEY()↓
+◆Maybe that thing I forgot is important to you...@KEY()↓
+◆So...have a good time in the desert!...
+;jpn:◆ドコドコさばくって ホラ↓
+;jpn: あるじゃないですか。@KEY()↓
+;jpn:◆あそこで にっこうよくしてる↓
+;jpn: おとこが いましてね‥‥↓
+;jpn: そいつが サルのおおいどうくつを@KEY()↓
 ;jpn:◆おしえてくれまして‥‥エート↓
-;jpn:　つまり‥‥@KEY()↓
-;jpn:◆わすれてきちゃった　わけですよ。@KEY()↓
+;jpn: つまり‥‥@KEY()↓
+;jpn:◆わすれてきちゃった わけですよ。@KEY()↓
 ;jpn:◆この@KEY()↓
-;jpn:◆わたしが！@KEY()↓
+;jpn:◆わたしが!@KEY()↓
 ;jpn:◆アップルキッドさんからの↓
-;jpn:　おとどけものを　ね。@KEY()↓
-;jpn:◆いちごとうふを　つくるとかの↓
-;jpn:　マシンとかを　ね。@KEY()↓
-;jpn:◆わすれてきた　と。@KEY()↓
-;jpn:◆わたしが！@KEY()↓
-;jpn:◆でも　わたしは　とりにいかない。@KEY()↓
-;jpn:◆なぜなら　あなたのものだから！@KEY()↓
-;jpn:◆ゆけ！↓
-;jpn:　ゆきなさい。↓
-;jpn:　わすれものを　とりに！@KEY()↓
-;jpn:◆すすめ　@DSP_NAME(0)↓
-;jpn:　しゅっぱつだー！
+;jpn: おとどけものを ね。@KEY()↓
+;jpn:◆いちごとうふを つくるとかの↓
+;jpn: マシンとかを ね。@KEY()↓
+;jpn:◆わすれてきた と。@KEY()↓
+;jpn:◆わたしが!@KEY()↓
+;jpn:◆でも わたしは とりにいかない。@KEY()↓
+;jpn:◆なぜなら あなたのものだから!@KEY()↓
+;jpn:◆ゆけ!↓
+;jpn: ゆきなさい。↓
+;jpn: わすれものを とりに!@KEY()↓
+;jpn:◆すすめ @DSP_NAME(0)↓
+;jpn: しゅっぱつだー!
 @KEYNP()
 @CLOSEALL()
 』
 
 ;---------------------------------
-;	●（夢→ランマ→プー仲間に）
-;	●（土星谷にワープ）
+;	●(夢→ランマ→プー仲間に)
+;	●(土星谷にワープ)
 ;	「どうぐやのかんばん」を使う
 ;	「なまたまご」が「ひよこ」に
 ;	２時間パパ
@@ -320,9 +320,9 @@ MSG_EVT_PHOTOGRAPHER;
 @BGMSTART(0,BGM_came1)
 @WI(180)
 @WI(60)
-@MOVE_GOM_CHAR(GOM_PHOTO,ANIM_PHOTOGRAPHER,OBJFX_SHOW_NONE)　　　　　　　　　　;写真屋
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;落下待ち
-@MOVE_GOM_CHAR(GOM_SHADOW_FALL,ANIM_PHOTOGRAPHER_S,OBJFX_SHOW_NONE)　　;影
+@MOVE_GOM_CHAR(GOM_PHOTO,ANIM_PHOTOGRAPHER,OBJFX_SHOW_NONE)          ;写真屋
+@WAITSYS()                                      ;落下待ち
+@MOVE_GOM_CHAR(GOM_SHADOW_FALL,ANIM_PHOTOGRAPHER_S,OBJFX_SHOW_NONE)  ;影
 @WAITSYS()
 @COLD_GOM_CHAR(GOM_PHOTO)
 @GET_ORDER_PLAYER(1)
@@ -330,48 +330,48 @@ MSG_EVT_PHOTOGRAPHER;
 @SET_PARTY_DIR(0)
 @OPEN(1)
 @FUNC(18)	;自転車から降ろす
-◆Ｐｉｃｔｕｒｅｓ　ｔａｋｅｎ　ｉｎｓｔａｎｔａｎｅｏｕｓｌｙ！@KEY()↓
-◆Ｉ’ｍ　ａ　ｐｈｏｔｏｇｒａｐｈｉｃ　ｇｅｎｉｕｓ，　ｉｆ　Ｉ　ｄｏ　ｓａｙ　ｓｏ　ｍｙｓｅｌｆ！@KEY()↓
-◆Ｏｋａｙ，　ｇｅｔ　ｒｅａｄｙ　ｆｏｒ　ａｎ　ｉｎｓｔａｎｔ　ｍｅｍｏｒｙ！@KEY()↓
-◆Ｌｏｏｋ　ａｔ　ｔｈｅ　ｃａｍｅｒａ．．．@KEY()↓
-◆Ｒｅａｄｙ．．．@KEY()↓
-◆Ｓａｙ，　”ｆｕｚｚｙ　ｐｉｃｋｌｅｓ．”
-;jpn:◆かけつけるのも　はやい↓
-;jpn:　とるのも　はやい。@KEY()↓
+◆Pictures taken instantaneously!@KEY()↓
+◆I’m a photographic genius, if I do say so myself!@KEY()↓
+◆Okay, get ready for an instant memory!@KEY()↓
+◆Look at the camera...@KEY()↓
+◆Ready...@KEY()↓
+◆Say, ”fuzzy pickles.”
+;jpn:◆かけつけるのも はやい↓
+;jpn: とるのも はやい。@KEY()↓
 ;jpn:◆てんさいしゃしんかでーす。@KEY()↓
-;jpn:◆おもいでの　しゃしんを↓
-;jpn:　とりますからねー。@KEY()↓
-;jpn:◆さあ　こっちむいて↓
-;jpn:　とりますよーっ！@KEY()↓
-;jpn:◆チー@WI(10)ズ@WI(15)　サンドイッチ！
+;jpn:◆おもいでの しゃしんを↓
+;jpn: とりますからねー。@KEY()↓
+;jpn:◆さあ こっちむいて↓
+;jpn: とりますよーっ!@KEY()↓
+;jpn:◆チー@WI(10)ズ@WI(15) サンドイッチ!
 @KEY()↓
 @CLOSEALL()
 @HIDE_PLAYER(PC_NESS,OBJFX_HIDE_NONE)
 @CHKFGOTO( FLG_PHOTO_GUMI, _EVT_PHOTOGRAPH_FOR_GUMI )
-@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE,OBJFX_SHOW_NONE)　;ピース
+@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE,OBJFX_SHOW_NONE) ;ピース
 @GOTO( _EVT_PHOTOGRAPH_FOR_GUMI_EXIT )
 _EVT_PHOTOGRAPH_FOR_GUMI;グミ村撮影専用最強プライオリティピースネス
-@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE_SAIKYOU,OBJFX_SHOW_NONE)　;ピース
+@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE_SAIKYOU,OBJFX_SHOW_NONE) ;ピース
 _EVT_PHOTOGRAPH_FOR_GUMI_EXIT;
 @WI(64)
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_CAMERA_EYE,OBJFX_SHOW_NONE)　　;シャッター
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_CAMERA_EYE,OBJFX_SHOW_NONE)  ;シャッター
 @WAITSYS()
-@HIDE_GOM_CHAR(GOM_NES_PEACE,OBJFX_HIDE_NONE)　　　　　　　　;ピース消す
+@HIDE_GOM_CHAR(GOM_NES_PEACE,OBJFX_HIDE_NONE)        ;ピース消す
 @SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)
 
 @OPEN(1)
-◆Ｗｏｗ，　ｗｈａｔ　ａ　ｇｒｅａｔ　ｐｈｏｔｏｇｒａｐｈ！@KEY()↓
-◆Ｉｔ　ｗｉｌｌ　ａｌｗａｙｓ　ｂｒｉｎｇ　ｂａｃｋ　ｔｈｅ　ｆｏｎｄｅｓｔ　ｏｆ　ｍｅｍｏｒｉｅｓ．．．
-;jpn:◆おー　いいしゃしんがとれた。@KEY()↓
-;jpn:◆このしゃしんは　きっと↓
-;jpn:　さいこうの↓
-;jpn:　おもいでになりますよ。
+◆Wow, what a great photograph!@KEY()↓
+◆It will always bring back the fondest of memories...
+;jpn:◆おー いいしゃしんがとれた。@KEY()↓
+;jpn:◆このしゃしんは きっと↓
+;jpn: さいこうの↓
+;jpn: おもいでになりますよ。
 @KEY()↓
 @CLOSEALL()
 
-@FRESH_GOM_CHAR(GOM_PHOTO)　　　　　　　　　　　　　　　　　　　　　　;写真屋帰る
+@FRESH_GOM_CHAR(GOM_PHOTO)                      ;写真屋帰る
 @WAITSYS()
-@HIDE_GOM_CHAR(GOM_SHADOW_FALL,OBJFX_HIDE_NONE)　　　　　　;影を消す
+@HIDE_GOM_CHAR(GOM_SHADOW_FALL,OBJFX_HIDE_NONE)      ;影を消す
 @WAITSYS()
 ;-----
 @BGM_EFFECT(3)
@@ -398,50 +398,50 @@ MSG_PHONE_GUMI_ORANGE;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)，　Ｉ　ｈａｖｅｎ’ｔ　ｔａｌｋｅｄ　ｗｉｔｈ　ｙｏｕ　ｉｎ　ａｇｅｓ！@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　Ｏｒａｎｇｅ　Ｋｉｄ．@KEY()↓
-◆Ｗｅ’ｒｅ　ｆｉｎａｌｌｙ　ｃｏｍｉｎｇ　ｎｅａｒ　ｔｏ　ｔｈｅ　ｅｎｄ　ｏｆ　ｏｕｒ　ｒｅｓｅａｒｃｈ　ｏｎ@KEY()↓
-◆ｈｏｗ　ｔｏ　ｃｈａｎｇｅ　ａ　ｂｏｉｌｅｄ　ｅｇｇ　ｂａｃｋ　ｉｎｔｏ　ａ　ｒａｗ　ｅｇｇ．@KEY()↓
-◆Ｂｙ　ｔｈｅ　ｗａｙ，　Ａｐｐｌｅ　Ｋｉｄ　ｉｓ　ｍｉｓｓｉｎｇ．@KEY()↓
-◆Ｈｅ　ｌｅｆｔ　ｈｅｒｅ　ｓａｙｉｎｇ　ｔｈａｔ　ｈｅ　ｗａｓ　ｇｏｉｎｇ　ｔｏ　ｓｅｅ　Ｄｒ．　Ａｎｄｏｎｕｔｓ　ｉｎ　Ｗｉｎｔｅｒｓ，@KEY()↓
-◆ａｎｄ　ｈｅ　ｎｅｖｅｒ　ｃａｍｅ　ｂａｃｋ．@KEY()↓
-◆Ｉ　ｗａｓ　ｈｏｐｉｎｇ　ｔｏ　ｂｏｒｒｏｗ　ｔｈｅ　ｂｏｏｋ　”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ”　ｆｒｏｍ　ｈｉｍ，@KEY()↓
-◆ｂｕｔ　ｓｕｄｄｅｎｌｙ，　ｈｅ　ｄｉｓａｐｐｅａｒｅｄ．．．@KEY()↓
-◆Ｉ　ｈａｖｅｎ’ｔ　ｒｅａｄ　ｔｈｅ　ｂｏｏｋ，　ｓｏ　Ｉ’ｍ　ｎｏｔ　ｖｅｒｙ　ｇｏｏｄ　ａｔ　ｔａｌｋｉｎｇ．．．ｓｏｒｒｙ．@KEY()↓
-◆Ｉ’ｍ　ａｌｓｏ　ｗｏｒｋｉｎｇ　ｈａｒｄ　ｏｎ　ｍｙ　ｉｎｖｅｎｔｉｏｎ，@KEY()↓
-◆ｓｏ　Ｉ　ｈｏｐｅ　ｙｏｕ’ｌｌ　ｕｎｄｅｒｓｔａｎｄ．@KEY()↓
-◆Ｓａｙ　ｈｅｌｌｏ　ｔｏ　ｙｏｕｒ　ｆｒｉｅｎｄｓ　ｆｏｒ　ｍｅ！@KEY()↓
-◆＊ｃｌｉｃｋ＊
-;jpn:◆@DSP_NAME(0)さん　おひさしぶりです。↓
-;jpn:　オレンジキッドです。@KEY()↓
-;jpn:◆ゆでたまごを　なまたまごに↓
-;jpn:　もどすけんきゅうも　いよいよ↓
-;jpn:　おおづめをむかえました。@KEY()↓
+◆@DSP_NAME(PC_NESS), I haven’t talked with you in ages!@KEY()↓
+◆This is Orange Kid.@KEY()↓
+◆We’re finally coming near to the end of our research on@KEY()↓
+◆how to change a boiled egg back into a raw egg.@KEY()↓
+◆By the way, Apple Kid is missing.@KEY()↓
+◆He left here saying that he was going to see Dr. Andonuts in Winters,@KEY()↓
+◆and he never came back.@KEY()↓
+◆I was hoping to borrow the book ”Overcoming Shyness” from him,@KEY()↓
+◆but suddenly, he disappeared...@KEY()↓
+◆I haven’t read the book, so I’m not very good at talking...sorry.@KEY()↓
+◆I’m also working hard on my invention,@KEY()↓
+◆so I hope you’ll understand.@KEY()↓
+◆Say hello to your friends for me!@KEY()↓
+◆＊click＊
+;jpn:◆@DSP_NAME(0)さん おひさしぶりです。↓
+;jpn: オレンジキッドです。@KEY()↓
+;jpn:◆ゆでたまごを なまたまごに↓
+;jpn: もどすけんきゅうも いよいよ↓
+;jpn: おおづめをむかえました。@KEY()↓
 ;jpn:◆ところで↓
-;jpn:　アップルキッドなんですが↓
-;jpn:　‥‥ゆくえふめいなんです。@KEY()↓
+;jpn: アップルキッドなんですが↓
+;jpn: ‥‥ゆくえふめいなんです。@KEY()↓
 ;jpn:◆ウィンターズの↓
-;jpn:　アンドーナッツはかせに↓
-;jpn:　あいにいくといったきり@KEY()↓
+;jpn: アンドーナッツはかせに↓
+;jpn: あいにいくといったきり@KEY()↓
 ;jpn:◆かえってこないんです。@KEY()↓
 ;jpn:◆かれに「むくちをなおすほん」を↓
-;jpn:　かりようと　おもってたのに@KEY()↓
-;jpn:◆‥‥とつぜん　ゆくえふめいに↓
-;jpn:　なっちゃうなんて‥‥@KEY()↓
-;jpn:◆おかげで　ぼく　くちべたで‥‥↓
-;jpn:　まことに　もうしわけありません。@KEY()↓
-;jpn:◆けんきゅうは　いのちをかけて↓
-;jpn:　がんばってますから‥‥どうか↓
-;jpn:　よろしく　おねがいします！@KEY()↓
+;jpn: かりようと おもってたのに@KEY()↓
+;jpn:◆‥‥とつぜん ゆくえふめいに↓
+;jpn: なっちゃうなんて‥‥@KEY()↓
+;jpn:◆おかげで ぼく くちべたで‥‥↓
+;jpn: まことに もうしわけありません。@KEY()↓
+;jpn:◆けんきゅうは いのちをかけて↓
+;jpn: がんばってますから‥‥どうか↓
+;jpn: よろしく おねがいします!@KEY()↓
 ;jpn:◆それでは↓
-;jpn:　みなさまにも　よろしく。@WI(20)↓
-;jpn:　ガチャン　ツーツーツー@KEY()
+;jpn: みなさまにも よろしく。@WI(20)↓
+;jpn: ガチャン ツーツーツー@KEY()
 ;◆むかしの「マザー」っていう↓
-;　ゲームソフトを　かしてたんで↓
-;　かえしてもらおうと　おもって‥‥@KEY()↓
-;◆じゃ　そこには　いないんですね。↓
-;　しつれいしました。@KEY()↓
-;◆ガチャン　ツーツーツー
+; ゲームソフトを かしてたんで↓
+; かえしてもらおうと おもって‥‥@KEY()↓
+;◆じゃ そこには いないんですね。↓
+; しつれいしました。@KEY()↓
+;◆ガチャン ツーツーツー
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
@@ -463,40 +463,40 @@ MSG_PHONE_GUMI_APPLE;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-◆Ｈｅｌｌｏ，　ｉｔ’ｓ　ｂｅｅｎ　ａ　ｗｈｉｌｅ　ｓｉｎｃｅ　ｗｅ　ｔａｌｋｅｄ．．．ｔｈｉｓ　ｉｓ　Ａｐｐｌｅ　Ｋｉｄ．@KEY()↓
-◆Ｗｅ’ｒｅ　ｈａｖｉｎｇ　ｂｅａｕｔｉｆｕｌ　ｗｅａｔｈｅｒ　ｈｅｒｅ．．．@KEY()↓
-◆Ｉ’ｍ　ｎｏｗ　ａｔ　Ｄｒ．　Ａｎｄｏｎｕｔｓ　ｌａｂ　ｉｎ　Ｗｉｎｔｅｒｓ．@KEY()↓
-◆Ｔｈｅ　ｄｏｃｔｏｒ　ｄｏｅｓｎ’ｔ　ｓｅｅｍ　ｔｏ　ｂｅ　ａｒｏｕｎｄ　ｒｉｇｈｔ　ｎｏｗ，@KEY()↓
-◆ｂｕｔ　Ｉ’ｍ　ｊｕｓｔ　ｗｏｒｋｉｎｇ　ｏｎ　ｍｙ　Ｅｒａｓｅｒ　Ｅｒａｓｅｒ　Ｍａｃｈｉｎ．．．@KEY()↓
+◆Hello, it’s been a while since we talked...this is Apple Kid.@KEY()↓
+◆We’re having beautiful weather here...@KEY()↓
+◆I’m now at Dr. Andonuts lab in Winters.@KEY()↓
+◆The doctor doesn’t seem to be around right now,@KEY()↓
+◆but I’m just working on my Eraser Eraser Machin...@KEY()↓
 @BGMSTART(0,BGM_poky0)
 @WI(160)↓
-◆！@WI(30)　　！@WI(10)！@WI(10)！@WI(10)！@WI(10)！
+◆!@WI(30)  !@WI(10)!@WI(10)!@WI(10)!@WI(10)!
 @BGMSTART(0,BGM_msc22)
 @KEY()↓
 @WI(60)↓
-◆Ｈｅｙ！　　Ｏｈ　ｎｏ！　　Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｄｏｉｎｇ　ｔｏ　ｍｅ？@KEY()↓
+◆Hey!  Oh no!  What are you doing to me?@KEY()↓
 @WI(60)↓
-◆Ｗｈｏ　ａｒｅ　ｙｏｕ　？！！！．．．＊ｃｌｉｃｋ＊
-;jpn:◆もしもし　おひさしぶりです↓
-;jpn:　アップルキッドです。↓
-;jpn:　こっちは　いいおてんきですよ。@KEY()↓
-;jpn:◆いま　ウィンターズの↓
-;jpn:　アンドーナッツはかせの↓
-;jpn:　けんきゅうじょに　きてるんです。@KEY()↓
-;jpn:◆‥‥はかせは　るすのようですが↓
-;jpn:　ぼく　かってに　ここで↓
-;jpn:　こけしけしマ@WI(20)　！@WI(10)！@WI(10)！@WI(10)！@WI(10)！@KEY()↓
+◆Who are you ?!!!...＊click＊
+;jpn:◆もしもし おひさしぶりです↓
+;jpn: アップルキッドです。↓
+;jpn: こっちは いいおてんきですよ。@KEY()↓
+;jpn:◆いま ウィンターズの↓
+;jpn: アンドーナッツはかせの↓
+;jpn: けんきゅうじょに きてるんです。@KEY()↓
+;jpn:◆‥‥はかせは るすのようですが↓
+;jpn: ぼく かってに ここで↓
+;jpn: こけしけしマ@WI(20) !@WI(10)!@WI(10)!@WI(10)!@WI(10)!@KEY()↓
 ;jpn:@BGMSTART(0,BGM_poky0)
 ;jpn:@WI(160)↓
-;jpn:◆！@WI(30)　　！@WI(10)！@WI(10)！@WI(10)！@WI(10)！
+;jpn:◆!@WI(30)  !@WI(10)!@WI(10)!@WI(10)!@WI(10)!
 ;jpn:@BGMSTART(0,BGM_msc22)
 ;jpn:@KEY()↓
 ;jpn:@WI(60)↓
-;jpn:　なにするんだ！@KEY()↓
+;jpn: なにするんだ!@KEY()↓
 ;jpn:@WI(60)↓
-;jpn:◆だ　だれだ！！！ガチャン！@WI(30)↓
+;jpn:◆だ だれだ!!!ガチャン!@WI(30)↓
 ;jpn:@GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
-;jpn:　ツーツーツー‥‥
+;jpn: ツーツーツー‥‥
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
@@ -508,7 +508,7 @@ MSG_PHONE_GUMI_APPLE;
 ;	モノトリービルに掛かってくる電話
 
 MSG_FOUR_TELE_APPLEKID;
-;アップルキッドＴＥＬ
+;アップルキッドTEL
 ;モノトリービルに掛かってくる
 @BGMSTART(0,BGM_msc1)
 @WI(60)
@@ -517,40 +517,40 @@ MSG_FOUR_TELE_APPLEKID;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_child)
 @OPEN(1)
-◆Ｈｅｌｌｏ！　　Ｈｏｗ　ａｒｅ　ｙｏｕ？@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　Ａｐｐｌｅ　Ｋｉｄ．@KEY()↓
-◆Ｉ　ｔｈｉｎｋ　Ｉ’ｍ　ａ　ｒｅａｌ　ｇｅｎｉｕｓ．．．Ｉｎ　ｆａｃｔ，　Ｉ　ｋｎｏｗ　Ｉ’ｍ　ａ　ｇｅｎｉｕｓ．@KEY()↓
-◆Ｗｈｙ？　　Ｗｅｌｌ，　Ｉ　ｈａｖｅ　ｄｉｓｃｏｖｅｒｅｄ　ｔｈｅ　ｐｒｉｍａｒｙ　ｅｎｅｍｙ　ｏｆ　@DSP_NAME(PC_NESS)　ａｎｄ　ｏｆ　ａｌｌ　ｈｕｍａｎｉｔｙ．@KEY()↓
-◆Ｗｅ　ｈａｖｅ　ｔｏ　ｆｉｇｈｔ　ａｎｄ　ｄｅｆｅａｔ　ｔｈｉｓ　ｂｅｉｎｇ．．．@KEY()↓
-◆Ｔｏ　ｄｏ　ｓｏ，　ｗｅ　ｎｅｅｄ　ｔｏ　ｉｎｖｅｎｔ　ａ　ｍａｃｈｉｎｅ　ｃａｌｌｅｄ　ｔｈｅ　”Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ．”@KEY()↓
-◆Ｉ’ｖｅ　ｇｏｔ　ｔｏ　ｆｉｎｄ　ｔｈｅ　ｗａｎｄｅｒｉｎｇ　ｓｃｉｅｎｔｉｓｔ，@KEY()↓
-◆Ｄｒ．　Ａｎｄｏｎｕｔｓ，　ａｎｄ　ｍａｋｅ　ｔｈｅ　ｄｉｓｔｏｒｔｅｒ．@KEY()↓
-◆Ｓｏ，　Ｉ　ｍａｙ　ｂｅ　ｇｏｎｅ　ｆｏｒ　ａ　ｗｈｉｌｅ．@KEY()↓
-◆Ｌａｔｅｒ．．．＊ｃｌｉｃｋ＊
-;jpn:◆もしもし　ひさしぶり。↓
-;jpn:　アップルキッドです。↓
-;jpn:　やっぱり　ぼくは　てんさいです。@KEY()↓
+◆Hello!  How are you?@KEY()↓
+◆This is Apple Kid.@KEY()↓
+◆I think I’m a real genius...In fact, I know I’m a genius.@KEY()↓
+◆Why?  Well, I have discovered the primary enemy of @DSP_NAME(PC_NESS) and of all humanity.@KEY()↓
+◆We have to fight and defeat this being...@KEY()↓
+◆To do so, we need to invent a machine called the ”Phase Distorter.”@KEY()↓
+◆I’ve got to find the wandering scientist,@KEY()↓
+◆Dr. Andonuts, and make the distorter.@KEY()↓
+◆So, I may be gone for a while.@KEY()↓
+◆Later...＊click＊
+;jpn:◆もしもし ひさしぶり。↓
+;jpn: アップルキッドです。↓
+;jpn: やっぱり ぼくは てんさいです。@KEY()↓
 ;jpn:◆てんさいだってことが↓
-;jpn:　ハッキリしましたよ。↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)さんたちと@KEY()↓
-;jpn:◆すべての　じんるいの↓
-;jpn:　てきが　なんであるかが↓
-;jpn:　わかりました。@KEY()↓
+;jpn: ハッキリしましたよ。↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)さんたちと@KEY()↓
+;jpn:◆すべての じんるいの↓
+;jpn: てきが なんであるかが↓
+;jpn: わかりました。@KEY()↓
 ;jpn:◆それでですね↓
-;jpn:　なんとか　このてきとのたたかいに↓
-;jpn:　かたなきゃ　いけないわけで@KEY()↓
+;jpn: なんとか このてきとのたたかいに↓
+;jpn: かたなきゃ いけないわけで@KEY()↓
 ;jpn:◆「スペーストンネル」というものを↓
-;jpn:　つくるひつようが　あるんです。↓
-;jpn:　だから　ぼくは　これから@KEY()↓
-;jpn:◆さすらいの　かがくしゃ↓
-;jpn:　アンドーナッツはかせを　さがして↓
-;jpn:　いっしょに@KEY()↓
+;jpn: つくるひつようが あるんです。↓
+;jpn: だから ぼくは これから@KEY()↓
+;jpn:◆さすらいの かがくしゃ↓
+;jpn: アンドーナッツはかせを さがして↓
+;jpn: いっしょに@KEY()↓
 ;jpn:◆「スペーストンネル」を↓
-;jpn:　つくるんですよ。↓
-;jpn:　つまり@KEY()↓
-;jpn:◆しばらく　るすにするんで↓
-;jpn:　よろしく！↓
-;jpn:　ガチャン　ツー　ツー　ツー
+;jpn: つくるんですよ。↓
+;jpn: つまり@KEY()↓
+;jpn:◆しばらく るすにするんで↓
+;jpn: よろしく!↓
+;jpn: ガチャン ツー ツー ツー
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
@@ -563,7 +563,7 @@ MSG_FOUR_TELE_APPLEKID;
 』
 
 MSG_FOUR_TELE_ORANGEKID;
-;オレンジキッドＴＥＬ
+;オレンジキッドTEL
 ;これもモノトリービルに掛かってくる
 @BGMSTART(0,BGM_msc1)
 @WI(60)
@@ -572,23 +572,23 @@ MSG_FOUR_TELE_ORANGEKID;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_child)
 @OPEN(1)
-◆Ｈｅｌｌｏ！　　Ｔｈｉｓ　ｉｓ　Ｏｒａｎｇｅ　Ｋｉｄ．@KEY()↓
-◆Ｓｏｒｒｙ　Ｉ　ｈａｖｅｎ’ｔ　ｃａｌｌｅｄ　ｌａｔｅｌｙ．@KEY()↓
-◆Ｉ’ｍ　ｓｔｉｌｌ　ｗｏｒｋｉｎｇ　ｏｎ　ｔｈｅ　ｗａｙ　ｔｏ　ｃｈａｎｇｅ　ｂｏｉｌｅｄ　ｅｇｇｓ　ｉｎｔｏ　ｒａｗ　ｅｇｇｓ．@KEY()↓
-◆Ｉｔ’ｓ　ｔａｋｉｎｇ　ｌｏｎｇｅｒ　ｔｈａｎ　Ｉ　ｔｈｏｕｇｈｔ．．．@KEY()↓
-◆Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｒｅａｌｌｙ　ｗｏｒｋ　ａｔ　ｉｔ，　ｔｈｏｕｇｈ．．．ｔａｌｋ　ｔｏ　ｍｅ　ｌａｔｅｒ．@KEY()↓
-◆＊ｃｌｉｃｋ＊
-;jpn:◆もしもし　れんらくできなくて↓
-;jpn:　すみませんでした。↓
-;jpn:　オレンジキッドです。@KEY()↓
-;jpn:◆ゆでたまごを　なまたまごに↓
-;jpn:　もどすけんきゅうを　してまして。@KEY()↓
-;jpn:◆まだ　もうちょっと↓
-;jpn:　じかんが　かかりそうなんです。@KEY()↓
-;jpn:◆がんばりますので　どうか↓
-;jpn:　ひとつよろしくおねがいしますね。@KEY()↓
+◆Hello!  This is Orange Kid.@KEY()↓
+◆Sorry I haven’t called lately.@KEY()↓
+◆I’m still working on the way to change boiled eggs into raw eggs.@KEY()↓
+◆It’s taking longer than I thought...@KEY()↓
+◆I’m going to really work at it, though...talk to me later.@KEY()↓
+◆＊click＊
+;jpn:◆もしもし れんらくできなくて↓
+;jpn: すみませんでした。↓
+;jpn: オレンジキッドです。@KEY()↓
+;jpn:◆ゆでたまごを なまたまごに↓
+;jpn: もどすけんきゅうを してまして。@KEY()↓
+;jpn:◆まだ もうちょっと↓
+;jpn: じかんが かかりそうなんです。@KEY()↓
+;jpn:◆がんばりますので どうか↓
+;jpn: ひとつよろしくおねがいしますね。@KEY()↓
 ;jpn:◆では‥‥しつれいします。↓
-;jpn:　ガチャン　ツー　ツー　ツー
+;jpn: ガチャン ツー ツー ツー
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
@@ -604,16 +604,16 @@ MSG_FOUR_TELE_ORANGEKID;
 
 ;HRECT_FOUR_MUSEUMより呼ばれるメッセージ
 MSG_EVT_MUSEUM_AS_HRECT;
-;@[ 漫符(！)発行 ]
+;@[ 漫符(!)発行 ]
 @SHOW_MANPU_CHAR(PRSN_FRSD_MUSEUM_FRONT_A,MANPU_BIKKURI)
 @WI(30)
 ;@[ 漫符削除 ]
 @HIDE_MANPU_CHAR(PRSN_FRSD_MUSEUM_FRONT_A)
 @OPEN(1)
-◆Ｈｅｙ，　ｙｏｕ！　　Ｏｖｅｒ　ｔｈｅｒｅ！@KEY()↓
-◆Ｇｅｔ　ｏｖｅｒ　ｈｅｒｅ！
-;jpn:◆あら　いやーね↓
-;jpn:　そこの　ぼく！
+◆Hey, you!  Over there!@KEY()↓
+◆Get over here!
+;jpn:◆あら いやーね↓
+;jpn: そこの ぼく!
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_FOUR_MUSEUM_BILK )
@@ -624,26 +624,26 @@ MSG_EVT_MUSEUM_AS_HRECT;
 @GET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,1,0);[ 先頭の方を向かせる ]
 @SET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,0)
 @OPEN(1);[ window open ]
-◆Ｔｈｅ　ａｄｍｉｓｓｉｏｎ　ｆｅｅ　ｉｓ　＄５．００　ｐｅｒ　ｐｅｒｓｏｎ．@KEY()↓
-◆Ｉｓ　ｔｈａｔ　ｏｋａｙ　ｗｉｔｈ　ｙｏｕ？↓
-<Ｙｅｓ>　<Ｎｏ>
+◆The admission fee is ＄５.００ per person.@KEY()↓
+◆Is that okay with you?↓
+<Yes> <No>
 @WINR_MONEY()
 ;jpn:◆にゅうじょうりょう↓
-;jpn:　ひとり５ドルです。↓
-;jpn:　よろしいですか？
-;jpn:　　<はい>　　<いいえ>
+;jpn: ひとり５ドルです。↓
+;jpn: よろしいですか?
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_EVT_MUSEUM_AS_HRECT_YES,_EVT_MUSEUM_AS_HRECT_NO)
 
 _EVT_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(5)
 @XCHG()
-◆Ｙｏｕ　ｃａｎ’ｔ　ａｆｆｏｒｄ↓
-　　ｔｏ　ｓｐｅｎｄ　＄@DSP_NUM(0)？，@KEY()↓
-◆ｏｒ　ａｒｅ　ｙｏｕ　ｊｕｓｔ　ｎｏｔ　ｉｎｔｏ　ｄｉｎｏｓａｕｒｓ？　　Ｙｏｕ　ｍｕｓｔ　ｂｅ　ｎｕｔｓ．．．
-;jpn:◆@DSP_NUM(0)ドルが　おしいのかしら。↓
-;jpn:　きょうりゅうに　きょうみが↓
-;jpn:　ないのかしら？　かわったひと！
+◆You can’t afford↓
+  to spend ＄@DSP_NUM(0)?,@KEY()↓
+◆or are you just not into dinosaurs?  You must be nuts...
+;jpn:◆@DSP_NUM(0)ドルが おしいのかしら。↓
+;jpn: きょうりゅうに きょうみが↓
+;jpn: ないのかしら? かわったひと!
 @KEYNP()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_FOUR_MUSEUM_RID )
@@ -663,13 +663,13 @@ _EVT_MUSEUM_AS_HRECT_NO
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(5)
 @XCHG()
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｅｖｅｎ↓
-　　ｈａｖｅ　＄@DSP_NUM(0)？，@KEY()↓
-◆Ａｎ　ｕｎｕｓｕａｌ　ｓｐｅｃｉｍｅｎ　ｌｉｋｅ　ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ｏｎ　ｄｉｓｐｌａｙ　ｉｎ　ｔｈｅ　ｍｕｓｅｕｍ．
+◆You don’t even↓
+  have ＄@DSP_NUM(0)?,@KEY()↓
+◆An unusual specimen like you should be on display in the museum.
 ;jpn:◆たった@DSP_NUM(0)ドルも↓
-;jpn:　もっていないなんて@KEY()↓
-;jpn:◆あなたが　はくぶつかんいり↓
-;jpn:　するべきじゃないかしら。
+;jpn: もっていないなんて@KEY()↓
+;jpn:◆あなたが はくぶつかんいり↓
+;jpn: するべきじゃないかしら。
 @KEY()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_HIT_CHR,OBJFX_HIDE_NONE)
@@ -687,11 +687,11 @@ _EVT_MUSEUM_AS_HRECT_YES
 @SE(SE_se76_my_give)
 @MONEYOUT(0)
 @WINR_MONEY()
-◆Ｐｌｅａｓｅ　ｇｏ　ｉｎ．@KEY()↓
-◆Ｙｏｕ’ｌｌ　ｆｉｎｄ　ａｎ　ｅｘｐｅｒｔ　ｉｎ　ｔｈｅ　ａｒｅａ　ｏｆ　Ａｒｔｓ　ａｎｄ　Ｓｃｉｅｎｃｅｓ．
-;jpn:◆じゃ　どうぞ。↓
-;jpn:　なかに　がくじゅつけんきゅういん↓
-;jpn:　が　おります。
+◆Please go in.@KEY()↓
+◆You’ll find an expert in the area of Arts and Sciences.
+;jpn:◆じゃ どうぞ。↓
+;jpn: なかに がくじゅつけんきゅういん↓
+;jpn: が おります。
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_FOUR_MUSEUM_RETURN )
@@ -705,16 +705,16 @@ _EVT_MUSEUM_AS_HRECT_YES
 ;
 ;HRECT_SUMS_MUSEUMより呼ばれるメッセージ
 MSG_EVT_SUMS_MUSEUM_AS_HRECT;
-;@[ 漫符(！)発行 ]
+;@[ 漫符(!)発行 ]
 @SHOW_MANPU_CHAR(PRSN_SUMS_HIERO_FRONT_A,MANPU_BIKKURI)
 @WI(30)
 ;@[ 漫符削除 ]
 @HIDE_MANPU_CHAR(PRSN_SUMS_HIERO_FRONT_A)
 @OPEN(1)
-◆Ｔｓｋ，　ｔｓｋ，　ｔｓｋ．．．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｋｎｏｗ　ｂｅｔｔｅｒ．．．
+◆Tsk, tsk, tsk...@KEY()↓
+◆You should know better...
 ;jpn:◆とっとっとっと‥‥↓
-;jpn:　ちいさい　しんしのみなさん。
+;jpn: ちいさい しんしのみなさん。
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR(PRSN_SUMS_HIERO_FRONT_A,ANIM_SUMS_MUSEUM_BILK)
@@ -725,29 +725,29 @@ MSG_EVT_SUMS_MUSEUM_AS_HRECT;
 @GET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,1,0);[ 先頭の方を向かせる ]
 @SET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,0)
 @OPEN(1);[ window open ]
-◆Ｙｏｕ　ｃａｎｎｏｔ　ｇｅｔ　ｉｎ　ｗｉｔｈｏｕｔ　ｐａｙｉｎｇ　ａｄｍｉｓｓｉｏｎ．　　Ｉｔ’ｓ　＄３　ｐｅｒ　ｐｅｒｓｏｎ．@KEY()↓
-◆Ｙｏｕ’ｌｌ　ｐａｙ，　ｗｏｎ’ｔ　ｙｏｕ？↓
+◆You cannot get in without paying admission.  It’s ＄３ per person.@KEY()↓
+◆You’ll pay, won’t you?↓
 @WINR_MONEY()
-<Ｙｅｓ>　<Ｎｏ>
+<Yes> <No>
 ;jpn:◆にゅうじょうりょうを↓
-;jpn:　はらわないで　はいっては↓
-;jpn:　いけなかったわね。@KEY()↓
+;jpn: はらわないで はいっては↓
+;jpn: いけなかったわね。@KEY()↓
 ;jpn:◆ひとり３ドルです。@WI(20)↓
-;jpn:　おしはらいになるわね？@KEY()↓
+;jpn: おしはらいになるわね?@KEY()↓
 ;jpn:@WINR_MONEY()
-;jpn:　　<はい>　　<いいえ>
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_EVT_SUMS_MUSEUM_AS_HRECT_YES,_EVT_SUMS_MUSEUM_AS_HRECT_NO)
 
 _EVT_SUMS_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(3)
 @XCHG()
-◆Ｉｓ　＄@DSP_NUM(0)　ｔｏｏ　ｅｘｐｅｎｓｉｖｅ↓
-　　ｆｏｒ　ｙｏｕ？@KEY()↓
-◆Ｏｒ　ａｒｅ　ｙｏｕ　ｊｕｓｔ　ｎｏｔ　ｉｎｔｅｒｅｓｔｅｄ　ｉｎ　ａｎｃｉｅｎｔ　ｃｕｌｔｕｒｅ？
-;jpn:◆@DSP_NUM(0)ドルは　たかかったのかしら。↓
-;jpn:　それとも　こだいぶんかに↓
-;jpn:　きょうみがないのかしら。
+◆Is ＄@DSP_NUM(0) too expensive↓
+  for you?@KEY()↓
+◆Or are you just not interested in ancient culture?
+;jpn:◆@DSP_NUM(0)ドルは たかかったのかしら。↓
+;jpn: それとも こだいぶんかに↓
+;jpn: きょうみがないのかしら。
 @KEYNP()
 @CLOSEALL()
 @REMOVE_CHAR(PRSN_SUMS_HIERO_FRONT_A,ANIM_SUMS_MUSEUM_RID)
@@ -767,13 +767,13 @@ _EVT_SUMS_MUSEUM_AS_HRECT_NO
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(3)
 @XCHG()
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｅｖｅｎ↓
-　　ｈａｖｅ　＄@DSP_NUM(0)？@KEY()↓
-◆Ｉｆ　ｉｔ　ｗｅｒｅ　ｕｐ　ｔｏ　ｍｅ，　ａｎ　ｏｄｄｉｔｙ　ｌｉｋｅ　ｙｏｕ　ｗｏｕｌｄ　ｂｅ　ｅｘｈｉｂｉｔｅｄ　ｉｎ　ｔｈｅ　ｍｕｓｅｕｍ．．．
+◆You don’t even↓
+  have ＄@DSP_NUM(0)?@KEY()↓
+◆If it were up to me, an oddity like you would be exhibited in the museum...
 ;jpn:◆たった@DSP_NUM(0)ドルも↓
-;jpn:　もっていないなんて@KEY()↓
-;jpn:◆あなたが　はくぶつかんいり↓
-;jpn:　するべきじゃないかしら。
+;jpn: もっていないなんて@KEY()↓
+;jpn:◆あなたが はくぶつかんいり↓
+;jpn: するべきじゃないかしら。
 @KEY()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_HIT_CHR,OBJFX_HIDE_NONE)
@@ -791,11 +791,11 @@ _EVT_SUMS_MUSEUM_AS_HRECT_YES
 @SE(SE_se76_my_give)
 @MONEYOUT(0)
 @WINR_MONEY()
-◆Ｐｌｅａｓｅ　ｇｏ　ｒｉｇｈｔ　ｉｎ．@KEY()↓
-◆Ａｓｋ　ｓｏｍｅｏｎｅ　ｉｎｓｉｄｅ　ｆｏｒ　ｍｏｒｅ　ｄｅｔａｉｌｅｄ　ｉｎｆｏｒｍａｔｉｏｎ．
-;jpn:◆じゃ　どうぞ。↓
-;jpn:　くわしい　せつめいは↓
-;jpn:　なかのひとに　きいてね。
+◆Please go right in.@KEY()↓
+◆Ask someone inside for more detailed information.
+;jpn:◆じゃ どうぞ。↓
+;jpn: くわしい せつめいは↓
+;jpn: なかのひとに きいてね。
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_SUMS_HIERO_FRONT_A, ANIM_SUMS_MUSEUM_RETURN )
@@ -826,7 +826,7 @@ MSG_EVT_ROOF_TONCHIKI;
 @WAITSYS()
 @WI( 10 )
 @OPEN(1)
-@GOSUB(MSG_TWSN_TONCHIKI);喋るトンチキ;セリフ：勝負だ！
+@GOSUB(MSG_TWSN_TONCHIKI);喋るトンチキ;セリフ：勝負だ!
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_TWSN_FIELD_1I, ANIM_TONCHIKI_ENTER_HOUSE )
 @WAITSYS()
@@ -859,45 +859,45 @@ MSG_EVT_KUROKOGEZARU
 @SET_CHAR_DIR( PRSN_FRSD_FIELD_1B, 0 );ぶつかりザルをネスの方に向かせる]
 ;ジャブが呼んでいる
 @OPEN(1)
-◆Ｋｉｋｙｅ　ｕｋｅ　ｋｙａ↓
-　　（Ｉ’ｍ　ｎｏｔ　ａ　ｄｅｌｉｖｅｒｙ　ｍａｎ．）@KEY()↓
-◆Ｋｅｋｅ　ｋｕ　ｉｏｋｋｉ　ｋｏｋｙｏ↓
-　　（Ｉ　ｃａｎ’ｔ　ｒｅｍｅｍｂｅｒ　ｉｆ　ｗｅ’ｖｅ　ｍｅｔ．）@KEY()↓
-◆Ｋｙｕ　ｕｋｋｉ　ｕｋｋｉ　ｋｏ↓
-　　（Ｔｅｒｒａ　Ｊｉａｎ　ｊｕｓｔ　ｆｉｎｉｓｈｅｄ　ｆａｓｔｉｎｇ）@KEY()↓
-◆Ｋｙｕ　ｕｋｙｏ　ｕｋｉ↓
-　　（ａｎｄ　ｎｏｗ　ｗａｎｔｓ　ｔｏ　ｍｅｅｔ　ｙｏｕ）@KEY()↓
-◆Ｕｋｏ　ｕｋｅ　ｋａｕｉｋｅ↓
-　　（ａｔ　ｔｈｅ　ｗｅｓｔ　ｅｎｄ　ｏｆ　Ｄｕｓｔｙ　Ｄｕｎｅｓ　ｄｅｓｅｒｔ）@KEY()↓
-◆Ｋｅｋｏｉ　ｋｉｋｏ　ｕｋｋｅｋｅ↓
-　　（ｉｎ　ａ　ｃａｖｅ　ｗｉｔｈ　ｌｏｔｓ　ｏｆ　ｍｏｎｋｅｙｓ．）@KEY()↓
-◆Ｋｏｋｙｕ　ｕｋｅ　ｋｕ　ａｋｋｉ↓
-　　（Ｉ’ｌｌ　ｕｓｅ　ｍｙ　ｔｅｌｅｐｏｒｔａｔｉｏｎ　ｔｏ．．．）@KEY()↓
-◆Ｋｙａ↓
-　　（Ｂｙｅ！）
+◆Kikye uke kya↓
+  (I’m not a delivery man.)@KEY()↓
+◆Keke ku iokki kokyo↓
+  (I can’t remember if we’ve met.)@KEY()↓
+◆Kyu ukki ukki ko↓
+  (Terra Jian just finished fasting)@KEY()↓
+◆Kyu ukyo uki↓
+  (and now wants to meet you)@KEY()↓
+◆Uko uke kauike↓
+  (at the west end of Dusty Dunes desert)@KEY()↓
+◆Kekoi kiko ukkeke↓
+  (in a cave with lots of monkeys.)@KEY()↓
+◆Kokyu uke ku akki↓
+  (I’ll use my teleportation to...)@KEY()↓
+◆Kya↓
+  (Bye!)
 ;jpn:◆キャキャーキャ↓
-;jpn:　（わたしは　たっきゅうびんでは↓
-;jpn:　ありませーん）@KEY()↓
+;jpn: (わたしは たっきゅうびんでは↓
+;jpn: ありませーん)@KEY()↓
 ;jpn:◆キャッキュキョ↓
-;jpn:　（まえに　あなたと↓
-;jpn:　あったか　あわなかったか@KEY()↓
-;jpn:◆おぼえていませんが）@KEY()↓
+;jpn: (まえに あなたと↓
+;jpn: あったか あわなかったか@KEY()↓
+;jpn:◆おぼえていませんが)@KEY()↓
 ;jpn:◆キャンキッキ↓
-;jpn:　（だんじきを　おえた↓
-;jpn:　タライジャブさまが）@KEY()↓
-;jpn:◆キッキ　キキー↓
-;jpn:　（あなたに　あいたがっています）@KEY()↓
+;jpn: (だんじきを おえた↓
+;jpn: タライジャブさまが)@KEY()↓
+;jpn:◆キッキ キキー↓
+;jpn: (あなたに あいたがっています)@KEY()↓
 ;jpn:◆ウッキッキー↓
-;jpn:　（ばしょは　ドコドコさばくの↓
-;jpn:　にしの　はじのほう）@KEY()↓
+;jpn: (ばしょは ドコドコさばくの↓
+;jpn: にしの はじのほう)@KEY()↓
 ;jpn:◆キーキキーキキ↓
-;jpn:　（いわゆる↓
-;jpn:　「サルのおおいどうくつ」です）@KEY()↓
-;jpn:◆キンキキ　キキン　キーキー↓
-;jpn:　（じゃ　わたくしは↓
-;jpn:　テレポーテーションで‥‥）@KEY()↓
-;jpn:◆キャ！↓
-;jpn:　（しつれいします）
+;jpn: (いわゆる↓
+;jpn: 「サルのおおいどうくつ」です)@KEY()↓
+;jpn:◆キンキキ キキン キーキー↓
+;jpn: (じゃ わたくしは↓
+;jpn: テレポーテーションで‥‥)@KEY()↓
+;jpn:◆キャ!↓
+;jpn: (しつれいします)
 @KEY()↓
 @CLOSEALL()
 ;道路まで歩いて、助走用あとずさり
@@ -936,25 +936,25 @@ MSG_EVT_KUROKOGEZARU
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_MAID )	;「メイドが去る」のを凍結
 @OPEN( 1 )
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ｉ　ｈｅａｒｄ　ｙｏｕ　ｔａｌｋｉｎｇ　ａｂｏｕｔ　ｔｒｏｕｔ−ｆｌａｖｏｒｅｄ　ｙｏｇｕｒｔ．@KEY()↓
-◆Ｉ’ｍ　ａ　ｍａｉｄ　ｗｈｏ　ｓｅｒｖｅｓ　Ｍｒ．　Ｍｏｎｏｔｏｌｉ，@KEY()↓
-◆ａｎｄ　Ｉ’ｍ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｔｒｏｕｔ−ｆｌａｖｏｒｅｄ　ｙｏｇｕｒｔ　ｔｏ　ｇｉｖｅ　ｔｏ　ｏｕｒ　ｓｐｅｃｉａｌ　ｇｕｅｓｔ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｋｎｏｗ　ａｎｙｔｈｉｎｇ　ａｂｏｕｔ　ｉｔ，　ｐｌｅａｓｅ　ｔｅｌｌ　ｍｅ！@KEY()↓
-◆Ｉ’ｖｅ　ｂｅｅｎ　ｓｅａｒｃｈｉｎｇ　ａｎｄ　ｓｅａｒｃｈｉｎｇ．．．
-;jpn:◆もしもし！↓
-;jpn:　いま　「いちごとうふ」とか↓
-;jpn:　はなして　いたでしょう？@KEY()↓
-;jpn:◆わたしは　モノトリーさまに↓
-;jpn:　つかえている　メイドですが‥‥@KEY()↓
-;jpn:◆たいせつな　おきゃくさまの↓
-;jpn:　ごきぼうで　「いちごとうふ」を↓
-;jpn:　さがしているんです。@KEY()↓
-;jpn:◆あなた　ごぞんじでしたら↓
-;jpn:　おしえてください。↓
-;jpn:　おねがいです。@KEY()↓
-;jpn:◆わたしも　いっしょうけんめい↓
-;jpn:　さがしますから‥‥
+◆Hello!@KEY()↓
+◆I heard you talking about trout−flavored yogurt.@KEY()↓
+◆I’m a maid who serves Mr. Monotoli,@KEY()↓
+◆and I’m looking for trout−flavored yogurt to give to our special guest.@KEY()↓
+◆If you know anything about it, please tell me!@KEY()↓
+◆I’ve been searching and searching...
+;jpn:◆もしもし!↓
+;jpn: いま 「いちごとうふ」とか↓
+;jpn: はなして いたでしょう?@KEY()↓
+;jpn:◆わたしは モノトリーさまに↓
+;jpn: つかえている メイドですが‥‥@KEY()↓
+;jpn:◆たいせつな おきゃくさまの↓
+;jpn: ごきぼうで 「いちごとうふ」を↓
+;jpn: さがしているんです。@KEY()↓
+;jpn:◆あなた ごぞんじでしたら↓
+;jpn: おしえてください。↓
+;jpn: おねがいです。@KEY()↓
+;jpn:◆わたしも いっしょうけんめい↓
+;jpn: さがしますから‥‥
 @KEY()↓
 ;走り去る
 @FRESH_GOM_CHAR( GOM_MAID )
@@ -968,11 +968,11 @@ MSG_EVT_KUROKOGEZARU
 
 ;地底大陸の間欠泉
 
-;東の回復噴水ＯＢＪのアニメから呼ばれるスクリプト
+;東の回復噴水OBJのアニメから呼ばれるスクリプト
 MSG_EVT_FOUNTAIN_A;
 @GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;一定時間地震
-@CHKF( FLG_ANIM_PORT_4 )		;噴水口Ａ近くじゃ
-@FALSE_GOTO( _EVT_FOUTAIN_A_NOLIFT )	;　　　なかったら分岐
+@CHKF( FLG_ANIM_PORT_4 )		;噴水口A近くじゃ
+@FALSE_GOTO( _EVT_FOUTAIN_A_NOLIFT )	;   なかったら分岐
 ;ネスたちが噴水口に近づく
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_TO_FOUNTAIN_A, OBJFX_SHOW_NONE )
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
@@ -984,9 +984,9 @@ MSG_EVT_FOUNTAIN_A;
 @WI( 1 )
 @OPEN( 1 )
 ;体力回復のメッセージ
-◆（Ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇ　ｅｎｅｒｇｉｚｅｄ　ｙｏｕ　ｃｏｍｐｌｅｔｅｌｙ．）
-;jpn:◆（おんせんの　おかげで↓
-;jpn:　すっかり　げんきになった）
+◆(The hot spring energized you completely.)
+;jpn:◆(おんせんの おかげで↓
+;jpn: すっかり げんきになった)
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_HOTEL_LIFEUP);回復のみ
@@ -999,11 +999,11 @@ _EVT_FOUTAIN_A_NOLIFT
 @WI( 1 )
 』
 
-;北の治療噴水ＯＢＪのアニメから呼ばれるスクリプト
+;北の治療噴水OBJのアニメから呼ばれるスクリプト
 MSG_EVT_FOUNTAIN_B;
 @GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;一定時間地震
-@CHKF( FLG_ANIM_PORT_5 )		;噴水口Ｂ近くじゃ
-@FALSE_GOTO( _EVT_FOUTAIN_B_NOLIFT )	;　　　なかったら分岐
+@CHKF( FLG_ANIM_PORT_5 )		;噴水口B近くじゃ
+@FALSE_GOTO( _EVT_FOUTAIN_B_NOLIFT )	;   なかったら分岐
 ;ネスたちが噴水口に近づく
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_TO_FOUNTAIN_B, OBJFX_SHOW_NONE )
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
@@ -1014,10 +1014,10 @@ MSG_EVT_FOUNTAIN_B;
 @COLD_CHAR( PRSN_CHKA_FIELD_4B )
 @WI( 1 )
 @OPEN( 1 )
-;全回復（特殊状態から）のメッセージ
-◆（Ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇ　ｃｕｒｅｄ　ｙｏｕ　ｃｏｍｐｌｅｔｅｌｙ．）
-;jpn:◆（おんせんの　おかげで↓
-;jpn:　すっかり　よくなった）
+;全回復(特殊状態から)のメッセージ
+◆(The hot spring cured you completely.)
+;jpn:◆(おんせんの おかげで↓
+;jpn: すっかり よくなった)
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_ZENKAI)			;←治療処理
@@ -1031,11 +1031,11 @@ _EVT_FOUTAIN_B_NOLIFT
 @WI( 1 )
 』
 
-;噴水ＯＢＪのアニメから呼ばれるスクリプト
+;噴水OBJのアニメから呼ばれるスクリプト
 MSG_EVT_FOUNTAIN_C;
 @GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;一定時間地震
-@CHKF( FLG_ANIM_PORT_6 )		;噴水口Ａ近くじゃ
-@FALSE_GOTO( _EVT_FOUTAIN_C_NOLIFT )	;　　　なかったら分岐
+@CHKF( FLG_ANIM_PORT_6 )		;噴水口A近くじゃ
+@FALSE_GOTO( _EVT_FOUTAIN_C_NOLIFT )	;   なかったら分岐
 ;ネスたちが噴水口に近づく
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_TO_FOUNTAIN_C, OBJFX_SHOW_NONE )
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
@@ -1047,9 +1047,9 @@ MSG_EVT_FOUNTAIN_C;
 @WI( 1 )
 @OPEN( 1 )
 ;体力回復のメッセージ
-◆（Ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇ　ｅｎｅｒｇｉｚｅｓ　ｙｏｕ　ｃｏｍｐｌｅｔｅｌｙ．）
-;jpn:◆（おんせんの　おかげで↓
-;jpn:　すっかり　げんきになった）
+◆(The hot spring energizes you completely.)
+;jpn:◆(おんせんの おかげで↓
+;jpn: すっかり げんきになった)
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_HOTEL_LIFEUP);回復のみ
@@ -1066,21 +1066,21 @@ _EVT_FOUTAIN_C_NOLIFT
 
 MSG_EVT_FOUNTAIN_QUAKE_SUBR;
 ;一定時間地震を起こすサブルーチン( どこでも使えるのよ)
-@BGM_EFFECT( 25 )	;地震効果スタート！
+@BGM_EFFECT( 25 )	;地震効果スタート!
 @MOVE_GOM_CHAR(GOM_HIT_CHR2,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE);プレイヤー釘付け
 @WI( 1 )	;GOM_HIT_CHR2の登録待ち
 @SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
 @FRESH_PLAYER( PC_ALL )
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_CHITEI_QUAKE, OBJFX_SHOW_NONE );振動
 @WAITSYS()
-@BGM_EFFECT( 26 )	;地震効果終了！
+@BGM_EFFECT( 26 )	;地震効果終了!
 @SET_CAMERA_PARTY()
 @COLD_PLAYER( PC_ALL )
 @HIDE_GOM_CHAR( GOM_HIT_CHR2, OBJFX_HIDE_NONE )
 』
 
 MSG_EVT_FOUNTAIN_LIFT_NES_SUBR;
-;先頭メンバを調べて、対応するＧＯＭにアニメを与えるサブルーチン
+;先頭メンバを調べて、対応するGOMにアニメを与えるサブルーチン
 @GET_ORDER_PLAYER(1)
 @ONGOTO(_EVT_FOUNTAIN_A_NES,_EVT_FOUNTAIN_A_POLA,_EVT_FOUNTAIN_A_JEFF,_EVT_FOUNTAIN_A_PU)
 _EVT_FOUNTAIN_A_NES;
@@ -1096,7 +1096,7 @@ _EVT_FOUNTAIN_A_PU;
 @MOVE_GOM_CHAR( GOM_POO_SMALL, ANIM_LIFT_BY_FOUNTAIN, OBJFX_SHOW_NONE )
 @GOTO(_EVT_FOUNTAIN_MAIN)
 _EVT_FOUNTAIN_MAIN;
-@WAITSYS()	;噴水が消え、ＧＯＭが着地するのをじっと待つ
+@WAITSYS()	;噴水が消え、GOMが着地するのをじっと待つ
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )		;パーティ出す
 』
 ;-------------------------------------------------
@@ -1108,12 +1108,12 @@ MSG_EVT_GUMI_ONSEN_HEAL;
 @GET_ORDER_PLAYER( 1 )
 @SET_REG( 0 )
 @OPEN( 1 )
-◆（Ｒｅｓｔｉｎｇ　ｗｅｌｌ　ｉｎ　ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇ　ｈｅａｌｅｄ　ｙｏｕ．）
-;jpn:◆（おんせんで　ゆっくりしたので↓
-;jpn:　@DSP_NAME(0)@GOSUB(MSG_SUB_TATI_ONSEN)は↓
-;jpn:　いきかえったようになった）
+◆(Resting well in the hot spring healed you.)
+;jpn:◆(おんせんで ゆっくりしたので↓
+;jpn: @DSP_NAME(0)@GOSUB(MSG_SUB_TATI_ONSEN)は↓
+;jpn: いきかえったようになった)
 @KEYNP()
-;				　ここでパレット操作は絶対にしないこと！
+;				 ここでパレット操作は絶対にしないこと!
 @GOSUB(MSG_SUB_ZENKAI)
 @CLOSEALL()
 @FRESH_CHAR( PRSN_GUMI_FIELD_3F )
@@ -1139,7 +1139,7 @@ MSG_EVT_PRAY_1_NES_MAMA;
 @MOVE_GOM_CHAR( GOM_MAMA, ANIM_EVT_PRAY_1_MAMA, OBJFX_SHOW_NONE )
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_MAMA )
-;途中で何かを察知（漫符表示）
+;途中で何かを察知(漫符表示)
 @SHOW_MANPU_GOM_CHAR( GOM_MAMA, MANPU_BIKKURI )
 @WI(60)
 @HIDE_MANPU_GOM_CHAR( GOM_MAMA )
@@ -1161,7 +1161,7 @@ MSG_EVT_PRAY_1_NES_MAMA;
 @FRESH_GOM_CHAR( GOM_MAMA )
 @WAITSYS()
 @WI( 60 )
-;画面外東から犬が二人に接近（犬を目で追うママ＆トレーシー）
+;画面外東から犬が二人に接近(犬を目で追うママ＆トレーシー)
 @MOVE_GOM_CHAR( GOM_MYDOG, ANIM_EVT_PRAY_1_DOG, OBJFX_SHOW_NONE )
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_MAMA )
@@ -1170,7 +1170,7 @@ MSG_EVT_PRAY_1_NES_MAMA;
 @WI( 30 )
 @GOSUB(MSG_BTL_INORU_BACK_TO_PC_1);セリフ「〜は祈った」
 @SETF( FLG_ANIM_PORT_0 )	;楕円ウィンドウ閉じる用フラグ立てる
-@WAITSYS()			;楕円ウィンドウ閉じ待ち（この後自殺）
+@WAITSYS()			;楕円ウィンドウ閉じ待ち(この後自殺)
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
@@ -1215,7 +1215,7 @@ MSG_EVT_PRAY_2_TONZURA;
 @MOVE_GOM_CHAR( GOM_GROOVE, ANIM_EVT_PRAY_2_GROOVY, OBJFX_SHOW_NONE )
 @WAITSYS()
 @WI( 30 )
-;全員南向く（ゴージャスは最初から南向き）
+;全員南向く(ゴージャスは最初から南向き)
 ;ラッキー
 @SET_CHAR_DIR( PRSN_SUMS_FIELD_W, DIR_M_DOWN )
 @WI( 20 )
@@ -1236,7 +1236,7 @@ MSG_EVT_PRAY_2_TONZURA;
 @WI( 60 )
 @GOSUB(MSG_BTL_INORU_BACK_TO_PC_2);セリフ「〜は祈った」
 @SETF( FLG_ANIM_PORT_0 )	;楕円ウィンドウ閉じる用フラグ立てる
-@WAITSYS()			;楕円ウィンドウ閉じ待ち（この後自殺）
+@WAITSYS()			;楕円ウィンドウ閉じ待ち(この後自殺)
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
@@ -1272,22 +1272,22 @@ MSG_EVT_PRAY_3_PAULA_PAPA;
 @MOVE_GOM_CHAR( GOM_POLA_MOTHER, ANIM_EVT_PRAY_3_POLAMAMA, OBJFX_SHOW_NONE )
 ;少し間を置く
 @WI( 30 )
-;幼稚園から出てくる園児Ａ
+;幼稚園から出てくる園児A
 @MOVE_GOM_CHAR( GOM_CAP, ANIM_EVT_PRAY_3_CHILDA, OBJFX_SHOW_NONE )
 ;少し間を置く
 @WI( 30 )
-;幼稚園から出てくる園児Ｂ
+;幼稚園から出てくる園児B
 @MOVE_GOM_CHAR( GOM_RIBBON, ANIM_EVT_PRAY_3_CHILDB, OBJFX_SHOW_NONE )
 ;少し間を置く
 @WI( 30 )
-;幼稚園から出てくる園児Ｄ
+;幼稚園から出てくる園児D
 @MOVE_GOM_CHAR( GOM_DANGO, ANIM_EVT_PRAY_3_CHILDD, OBJFX_SHOW_NONE )
 @WAITSYS()
 ;少し間を置く
 @WI( 30 )
 @GOSUB(MSG_BTL_INORU_BACK_TO_PC_3);セリフ「〜は祈った」
 @SETF( FLG_ANIM_PORT_0 )	;楕円ウィンドウ閉じる用フラグ立てる
-@WAITSYS()			;楕円ウィンドウ閉じ待ち（この後自殺）
+@WAITSYS()			;楕円ウィンドウ閉じ待ち(この後自殺)
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
@@ -1303,7 +1303,7 @@ MSG_EVT_PRAY_4_TONY;
 @RESF( FLG_ANIM_PORT_0 )		;ウィンドウ閉じる用トリガ初期化
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
 ;寄宿舎２階にワープ
-@WARP( WARP_EVT_INORU_DORMITORY )	;寄宿舎２Ｆにワープ
+@WARP( WARP_EVT_INORU_DORMITORY )	;寄宿舎２Fにワープ
 @COLD_PLAYER(PC_ALL)
 @WI( 120 )
 ;トニーがドアから部屋の中央に走る
@@ -1351,7 +1351,7 @@ MSG_EVT_PRAY_4_TONY;
 @WI( 60 )
 @GOSUB(MSG_BTL_INORU_BACK_TO_PC_4);セリフ「〜は祈った」
 @SETF( FLG_ANIM_PORT_0 )	;楕円ウィンドウ閉じる用フラグ立てる
-@WAITSYS()			;楕円ウィンドウ閉じ待ち（この後自殺）
+@WAITSYS()			;楕円ウィンドウ閉じ待ち(この後自殺)
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
@@ -1371,33 +1371,33 @@ MSG_EVT_PRAY_5_RAMA;
 @COLD_PLAYER( PC_ALL )		;ワープ後は自動解凍しているのだよチミ
 ;間を置く
 @WI( 120 )
-;漫符表示を娘Ａに
+;漫符表示を娘Aに
 @SHOW_MANPU_CHAR( PRSN_RAMA_FIELD_L, MANPU_BIKKURI )
 @WI( 60 )
 @HIDE_MANPU_CHAR( PRSN_RAMA_FIELD_L )
-;きょろきょろする娘Ａ
-;南向く娘Ａ
+;きょろきょろする娘A
+;南向く娘A
 @REMOVE_CHAR( PRSN_RAMA_FIELD_L, ANIM_EVT_PRAY_5_GIRL_A )
 @WAITSYS()
 @WI( 50 )
-;宮殿から出てくる娘Ｂ
-;宮殿前できょろきょろする娘Ｂ
-;娘Ｂを見つめる娘Ａ
-;娘Ａの隣に移動する娘Ｂ
-;娘Ａの方を向く娘Ｂ
+;宮殿から出てくる娘B
+;宮殿前できょろきょろする娘B
+;娘Bを見つめる娘A
+;娘Aの隣に移動する娘B
+;娘Aの方を向く娘B
 @MOVE_GOM_CHAR( GOM_INDIAN_WOMAN, ANIM_EVT_PRAY_5_GIRL_B, OBJFX_SHOW_NONE )
 @WAITSYS()
-;娘Ｂの方を向く娘Ａ
+;娘Bの方を向く娘A
 ; 試しに@SET_CHAR_DIR( PRSN_RAMA_FIELD_L, DIR_M_RIGHT )
 @WI( 30 )
-;南向く娘ＡとＢ
+;南向く娘AとB
 @REMOVE_CHAR( PRSN_RAMA_FIELD_L, ANIM_EVT_PRAY_4_DIR_DOWN )
 @REMOVE_GOM_CHAR( GOM_INDIAN_WOMAN, ANIM_EVT_PRAY_4_DIR_DOWN )
 ;間を置く
 @WI( 50 )
-;娘Ｃが東画面外から登場
-;娘Ｃを見つめる娘Ａ＆Ｂ
-;娘ＡＢの南に移動する娘Ｃ
+;娘Cが東画面外から登場
+;娘Cを見つめる娘A＆B
+;娘ABの南に移動する娘C
 ;全員南向く
 @REMOVE_CHAR( PRSN_RAMA_FIELD_M, ANIM_EVT_PRAY_5_GIRL_C )
 @WAITSYS()
@@ -1405,7 +1405,7 @@ MSG_EVT_PRAY_5_RAMA;
 @WI( 60 )
 @GOSUB(MSG_BTL_INORU_BACK_TO_PC_5);セリフ「〜は祈った」
 @SETF( FLG_ANIM_PORT_0 )	;楕円ウィンドウ閉じる用フラグ立てる
-@WAITSYS()			;楕円ウィンドウ閉じ待ち（この後自殺）
+@WAITSYS()			;楕円ウィンドウ閉じ待ち(この後自殺)
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
@@ -1437,7 +1437,7 @@ MSG_EVT_PRAY_6_FRANK;
 @WI( 30 )
 @GOSUB(MSG_BTL_INORU_BACK_TO_PC_6);セリフ「〜は祈った」
 @SETF( FLG_ANIM_PORT_0 )	;楕円ウィンドウ閉じる用フラグ立てる
-@WAITSYS()			;楕円ウィンドウ閉じ待ち（この後自殺）
+@WAITSYS()			;楕円ウィンドウ閉じ待ち(この後自殺)
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
@@ -1469,15 +1469,15 @@ MSG_EVT_PRAY_7_DOSEI;
 ;モッチーが足踏みやめる
 @REMOVE_CHAR( PRSN_DOSE_FIELD_L, ANIM_MAPOBJSTILL )
 @WI( 9 )
-;土星さんが足踏みやめてＳＴを見る
+;土星さんが足踏みやめてSTを見る
 @SET_CHAR_DIR( PRSN_DOSE_FIELD_W, DIR_M_RIGHT )
 @WI( 1 )
 @REMOVE_CHAR( PRSN_DOSE_FIELD_W, ANIM_MAPOBJSTILL )
 @WI(120)
 @WI(30)
-;ＳＴからアンドーナツ博士登場
+;STからアンドーナツ博士登場
 @MOVE_CHAR( PRSN_DOSE_FIELD_K, ANIM_EVT_PRAY_7_ANDOUGHNUT, OBJFX_SHOW_NONE )
-;ＳＴからアップルキッド登場
+;STからアップルキッド登場
 @MOVE_CHAR( PRSN_DOSE_FIELD_J, ANIM_EVT_PRAY_7_APPLEKID, OBJFX_SHOW_NONE )
 @WAITSYS()
 ;@MUSI_START()
@@ -1525,7 +1525,7 @@ MSG_EVT_PRAY_7_DOSEI;
 @WI( 50 )
 @GOSUB(MSG_BTL_INORU_BACK_TO_PC_7);セリフ「〜は祈った」
 @SETF( FLG_ANIM_PORT_0 )	;楕円ウィンドウ閉じる用フラグ立てる
-@WAITSYS()			;楕円ウィンドウ閉じ待ち（この後自殺）
+@WAITSYS()			;楕円ウィンドウ閉じ待ち(この後自殺)
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
@@ -1545,10 +1545,10 @@ MSG_EVT_HELIPOKEY;
 @COLD_GOM_CHAR( GOM_HIT_CHR )
 ;------------------
 @BGM_EFFECT( 3 )	;長いフェードアウト
-@WI( 120 )		;ＢＧＭが消えるのを待つ
+@WI( 120 )		;BGMが消えるのを待つ
 ;------------------
 ;プロペラ回転スタート
-@BGMSTART( 0, BGM_heli )	;プロペラ音「バッ　バッ　バラバラバラ・・・」
+@BGMSTART( 0, BGM_heli )	;プロペラ音「バッ バッ バラバラバラ・・・」
 @REMOVE_CHAR( PRSN_FRSD_FIELD_3S, ANIM_EVT_HELI_FWING_START )
 @REMOVE_CHAR( PRSN_FRSD_FIELD_3T, ANIM_EVT_HELI_RWING_START )
 @FRESH_CHAR( PRSN_FRSD_FIELD_3R )	;胴体解放
@@ -1566,23 +1566,23 @@ MSG_EVT_HELIPOKEY;
 @MOVE_GOM_CHAR( GOM_POKEY_FACE, ANIM_HELI_POKEY_FACE, OBJFX_SHOW_NONE )
 @WI(60)
 @OPEN( 1 )
-◆@DSP_NAME(PC_NESS)，　ｙｏｕ　ｐｉｎ−ｈｅａｄｅｄ　ｉｄｉｏｔ，↓
-　　ｙｏｕ’ｒｅ　ｊｕｓｔ　ａ　ｈａｌｆ−ｓｔｅｐ　ｔｏｏ　ｓｌｏｗ！@KEY()↓
-◆Ｉ’ｍ　ｇｅｔｔｉｎｇ　ｏｕｔｔａ　ｈｅｒｅ！@KEY()↓
-◆Ｓｉｎｃｅ　Ｍｏｎｏｔｏｌｉ　ｈａｓ　ｂｅｃｏｍｅ　ａ　ｐｌａｉｎ，@KEY()↓
-◆ｏｌｄ　ｍａｎ　ａｇａｉｎ，　Ｉ　ｈａｖｅ　ｎｏ　ｍｏｒｅ　ｕｓｅ　ｆｏｒ　ｈｉｍ．@KEY()↓
-◆Ｔｈｉｓ　ｈｅｌｉｃｏｐｔｅｒ　ｗｉｌｌ　ｒｅａｌｌｙ　ｃｏｍｅ　ｉｎ　ｈａｎｄｙ．@KEY()↓
-◆Ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ’ｒｅ　ｔｈｅ　ｗｏｒｌｄ−ｃｌａｓｓ　ｌｏｓｅｒ　ａｇａｉｎ！
-;jpn:◆とんまやろうの　@DSP_STS(STS_PC_NAME_NES)！↓
-;jpn:　じたばたしても　おそいぜ！↓
-;jpn:　バイバイ！@KEY()↓
-;jpn:◆おひとよしに　もどっちまった↓
-;jpn:　モノトリーじいさんには↓
-;jpn:　もう　ようは　ないね。@KEY()↓
-;jpn:◆おれ　ヘリコプターにのれて↓
-;jpn:　うれしいぜ！@KEY()↓
-;jpn:◆おしり　ペンペーン！@KEY()↓
-;jpn:◆アッカン　ベロベロベー！
+◆@DSP_NAME(PC_NESS), you pin−headed idiot,↓
+  you’re just a half−step too slow!@KEY()↓
+◆I’m getting outta here!@KEY()↓
+◆Since Monotoli has become a plain,@KEY()↓
+◆old man again, I have no more use for him.@KEY()↓
+◆This helicopter will really come in handy.@KEY()↓
+◆Looks like you’re the world−class loser again!
+;jpn:◆とんまやろうの @DSP_STS(STS_PC_NAME_NES)!↓
+;jpn: じたばたしても おそいぜ!↓
+;jpn: バイバイ!@KEY()↓
+;jpn:◆おひとよしに もどっちまった↓
+;jpn: モノトリーじいさんには↓
+;jpn: もう ようは ないね。@KEY()↓
+;jpn:◆おれ ヘリコプターにのれて↓
+;jpn: うれしいぜ!@KEY()↓
+;jpn:◆おしり ペンペーン!@KEY()↓
+;jpn:◆アッカン ベロベロベー!
 @KEYNP()
 @CLOSEALL()
 @WI( 20 )
@@ -1598,8 +1598,8 @@ MSG_EVT_HELIPOKEY;
 @HIDE_CHAR( PRSN_FRSD_FIELD_3R,OBJFX_HIDE_NONE )	
 @HIDE_CHAR( PRSN_FRSD_FIELD_3S,OBJFX_HIDE_NONE )	
 @HIDE_CHAR( PRSN_FRSD_FIELD_3T,OBJFX_HIDE_NONE )	
-@WI( 12 )		;ＢＧＭが消えるのを待つ
-;@MUSISTART()			;フォーサイドＢＧＭ再開（田中さんの要望でなし）
+@WI( 12 )		;BGMが消えるのを待つ
+;@MUSISTART()			;フォーサイドBGM再開(田中さんの要望でなし)
 @SETF(FLG_FOUR_HELI_DISAPPEAR)
 @CLRF(FLG_SYS_MONSTER_OFF);モンスター出す
 』
@@ -1608,31 +1608,31 @@ MSG_EVT_HELIPOKEY;
 
 ;#101	地底大陸へ落下
 
-;★落下（ルミネホールのダンジョン出口から地底大陸へのワープ）の演出。
+;★落下(ルミネホールのダンジョン出口から地底大陸へのワープ)の演出。
 ;長い暗転。専用効果音あり。
 
 ;-------------------------------------------------------------------
 
 
-;#102	８つのサウンド集まる（サウンド確認画面）
+;#102	８つのサウンド集まる(サウンド確認画面)
 
 ;★特殊イベント２０番と同じ。
 ;★専用の「サウンド確認画面」表示。
 
 MSG_POWR_GIAN;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy1)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_GIAN_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｇｉａｎｔ　Ｓｔｅｐ
+◆The power of Giant Step
 @GOSUB(_POWR_MINAGIRU)
 ;jpn:◆ジャイアントステップ
 ;jpn:@GOSUB(_POWR_MINAGIRU)
@@ -1644,17 +1644,17 @@ _POWR_GIAN_10;
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_GIAN,_POWR_GIAN_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｃａｕｇｈｔ　ａ　ｇｌｉｍｐｓｅ　ｏｆ　ａ　ｓｍａｌｌ，　ｃｕｔｅ　ｐｕｐｐｙ．
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)のめに　いっしゅん↓
-;jpn:　ちいさな　むくいぬの↓
-;jpn:　すがたがみえた。
+◆@DSP_NAME(PC_NESS) caught a glimpse of a small, cute puppy.
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)のめに いっしゅん↓
+;jpn: ちいさな むくいぬの↓
+;jpn: すがたがみえた。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　ｔｈｅ　Ｇｉａｎｔ　Ｓｔｅｐ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of the Giant Step.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆ジャイアントステップのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_GIAN)
 @SETF(FLG_ONET_KANBANCOP_APPEAR)
@@ -1668,19 +1668,19 @@ _POWR_GIAN_2;
 』
 
 MSG_POWR_LLPT;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy2)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_LLPT_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｌｉｌｉｐａｔ　ｓｔｅｐ
+◆The power of Lilipat step
 ;jpn:◆リリパットステップ
 @GOSUB(_POWR_MINAGIRU)
 _POWR_LLPT_10;
@@ -1691,17 +1691,17 @@ _POWR_LLPT_10;
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_LLPT,_POWR_LLPT_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｂｒｉｅｆｌｙ　ｈａｄ　ａ　ｖｉｓｉｏｎ　ｏｆ　ａ　ｂａｂｙ　ｉｎ　ａ　ｒｅｄ　ｃａｐ．
+◆@DSP_NAME(PC_NESS) briefly had a vision of a baby in a red cap.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)は↓
-;jpn:　あかいぼうしを　かぶった↓
-;jpn:　あかちゃんの　まぼろしをみた。
+;jpn: あかいぼうしを かぶった↓
+;jpn: あかちゃんの まぼろしをみた。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　ｔｈｅ　Ｌｉｌｌｉｐｕｔ　Ｓｔｅｐｓ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of the Lilliput Steps.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆リリパットステップのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_LLPT)
 @CLOSE()
@@ -1719,19 +1719,19 @@ _POWR_LLPT_2B;
 
 
 MSG_POWR_RAIN;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy3)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_RAIN_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｒａｉｎｙ　ｃｉｒｃｌｅ
+◆The power of Rainy circle
 ;jpn:◆レイニーサークル
 @GOSUB(_POWR_MINAGIRU)
 ;サウンド獲得しました。
@@ -1742,17 +1742,17 @@ _POWR_RAIN_10;
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_RAIN,_POWR_RAIN_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｃａｕｇｈｔ　ａ　ｗｈｉｆｆ　ｏｆ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)，　ｂｕｔ　ｊｕｓｔ　ｆｏｒ　ａ　ｓｅｃｏｎｄ．
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)は　いっしゅん↓
-;jpn:　@DSP_STS(STS_PARTY_FAVORITE_FOODS)の↓
-;jpn:　においを　かんじた。
+◆@DSP_NAME(PC_NESS) caught a whiff of @DSP_STS(STS_PARTY_FAVORITE_FOODS), but just for a second.
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)は いっしゅん↓
+;jpn: @DSP_STS(STS_PARTY_FAVORITE_FOODS)の↓
+;jpn: においを かんじた。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　ｔｈｅ　Ｒａｉｎｙ　Ｃｉｒｃｌｅ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of the Rainy Circle.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆レイニーサークルのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_RAIN)
 @CLOSE()
@@ -1763,19 +1763,19 @@ _POWR_RAIN_2;
 @!
 
 MSG_POWR_MLKY;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy4)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_MLKY_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｍｉｌｋｅｙ　ｗｅｌｌ
+◆The power of Milkey well
 ;jpn:◆ミルキーウェル
 @GOSUB(_POWR_MINAGIRU)
 ;サウンド獲得しました。
@@ -1786,20 +1786,20 @@ _POWR_MLKY_10;
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_MLKY,_POWR_MLKY_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｔｈｏｕｇｈｔ　ｈｅ　ｈｅａｒｄ　ｈｉｓ　ｍｏｔｈｅｒ　ｆｒｏｍ　ｆａｒ　ａｗａｙ．．．ｓｈｅ　ｓａｉｄ@KEY()↓
-◆”Ｂｅ　ａ　ｔｈｏｕｇｈｔｆｕｌ，　ｓｔｒｏｎｇ　ｂｏｙ．．．”
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)は　とおくに↓
-;jpn:　ママのこえが　したように↓
-;jpn:　おもった。@KEY()↓
+◆@DSP_NAME(PC_NESS) thought he heard his mother from far away...she said@KEY()↓
+◆”Be a thoughtful, strong boy...”
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)は とおくに↓
+;jpn: ママのこえが したように↓
+;jpn: おもった。@KEY()↓
 ;jpn:◆おもいやりのある↓
-;jpn:　つよいこに‥‥と　きこえた。
+;jpn: つよいこに‥‥と きこえた。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　ｔｈｅ　Ｍｉｌｋｙ　Ｗｅｌｌ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of the Milky Well.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆ミルキーウェルのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_MLKY)
 @CLOSE()
@@ -1815,19 +1815,19 @@ _POWR_MLKY_2B;
 @!
 
 MSG_POWR_MGNT;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy5)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_MGNT_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｍａｇｎｅｔ　ｈｉｌｌ
+◆The power of Magnet hill
 ;jpn:◆マグネットヒル
 @GOSUB(_POWR_MINAGIRU)
 ;サウンド獲得しました。
@@ -1838,16 +1838,16 @@ _POWR_MGNT_10;
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_MGNT,_POWR_MGNT_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｓａｗ　ａ　ｂａｂｙ’ｓ　ｂｏｔｔｌｅ，　ｂｕｔ　ｊｕｓｔ　ｆｏｒ　ａｎ　ｉｎｓｔａｎｔ．
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)のめに　いっしゅん↓
-;jpn:　ほにゅうびんが　みえた。
+◆@DSP_NAME(PC_NESS) saw a baby’s bottle, but just for an instant.
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)のめに いっしゅん↓
+;jpn: ほにゅうびんが みえた。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　Ｍａｇｎｅｔ　Ｈｉｌｌ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of Magnet Hill.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆マグネットヒルのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_MGNT)
 @SETF(FLG_PHOTO_DINO_MUSEUM);撮り頃フラグ
@@ -1856,19 +1856,19 @@ _POWR_MGNT_2;
 』
 
 MSG_POWR_PINK;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy6)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_PINK_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｐｉｎｋ　ｃｌｏｕｄ
+◆The power of Pink cloud
 ;jpn:◆ピンククラウド
 @GOSUB(_POWR_MINAGIRU)
 _POWR_PINK_10;
@@ -1879,17 +1879,17 @@ _POWR_PINK_10;
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_PINK,_POWR_PINK_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｈａｄ　ａ　ｓｈｏｒｔ　ｖｉｓｉｏｎ　ｏｆ　ｓｅｅｉｎｇ　ｈｉｓ　ｍｏｔｈｅｒ　ｗｈｅｎ　ｓｈｅ　ｗａｓ　ｙｏｕｎｇ．
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)は　わかいときの↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)のママを↓
-;jpn:　みたような　きがした。
+◆@DSP_NAME(PC_NESS) had a short vision of seeing his mother when she was young.
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)は わかいときの↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)のママを↓
+;jpn: みたような きがした。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　ｔｈｅ　Ｐｉｎｋ　Ｃｌｏｕｄ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of the Pink Cloud.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆ピンククラウドのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_PINK)
 @CLOSE()
@@ -1912,22 +1912,22 @@ MSG_POWR_LUMI;
 @WI(1)				;念のため
 @SET_PALLETSET( 26, 2, 60 )	;パレットアニメしているので色を固定する
 @SET_PARTY_DIR(DIR_M_UP)
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_KOKE,OBJFX_SHOW_NONE)　　　　　　　;光ゴケ
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;終了待ち
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_KOKE,OBJFX_SHOW_NONE)       ;光ゴケ
+@WAITSYS()                                              ;終了待ち
 _POWR_LUMI_1;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy7)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_LUMI_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｌｕｎｉｍｅ　Ｈａｌｌ
+◆The power of Lunime Hall
 ;jpn:◆ルミネホール
 @GOSUB(_POWR_MINAGIRU)
 _POWR_LUMI_10;
@@ -1938,16 +1938,16 @@ _POWR_LUMI_10;
 ;サウンド獲得しました。
 @CHKFGOTO(FLG_POWR_LUMI,_POWR_LUMI_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｓａｗ　ａ　ｖｉｓｉｏｎ　ｏｆ　ｈｉｓ　ｆａｔｈｅｒ　ｈｏｌｄｉｎｇ　ｈｉｍ．
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)は　じぶんをだいている↓
-;jpn:　パパの　まぼろしを　みた。
+◆@DSP_NAME(PC_NESS) saw a vision of his father holding him.
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)は じぶんをだいている↓
+;jpn: パパの まぼろしを みた。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　Ｌｕｍｉｎｅ　Ｈａｌｌ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of Lumine Hall.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆ルミネホールのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_LUMI)
 @CLOSE()
@@ -1957,19 +1957,19 @@ _POWR_LUMI_2;
 』
 
 MSG_POWR_FIRE;
-;各々固有ＢＧＭ設定
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)　　　　;明暗アニメ
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ初期化
+;各々固有BGM設定
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)    ;明暗アニメ
+@RESF(FLG_TEMP_1)               ;曲終了フラグ初期化
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy8)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　;曲終了フラグ設定
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;画面の正常化待ち
+@SETF(FLG_TEMP_1)               ;曲終了フラグ設定
+@WAITSYS()                      ;画面の正常化待ち
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_FIRE_10)
 @OPEN(1)
-◆Ｔｈｅ　ｐｏｗｅｒ　ｏｆ　Ｆｉｒｅ　Ｓｐｒｉｎｇ
+◆The power of Fire Spring
 ;jpn:◆ファイアスプリング
 @GOSUB(_POWR_MINAGIRU)
 _POWR_FIRE_10;
@@ -1980,18 +1980,18 @@ _POWR_FIRE_10;
 ;サウンド獲得しました。
 @CHKFGOTO(FLG_POWR_FIRE,_POWR_FIRE_2)
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)　ｈａｄ　ｔｈｅ　ｆｅｅｌｉｎｇ　ｔｈａｔ　ｈｅ　ｗａｓ　ｂｅｉｎｇ　ｗａｔｃｈｅｄ　ｂｙ　ｈｉｍｓｅｌｆ　ａｓ　ａ　ｂａｂｙ．
+◆@DSP_NAME(PC_NESS) had the feeling that he was being watched by himself as a baby.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)は↓
-;jpn:　おさないころの　じぶんに@KEY()↓
+;jpn: おさないころの じぶんに@KEY()↓
 ;jpn:◆みつめられているように↓
-;jpn:　かんじた。
+;jpn: かんじた。
 @KEY()
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)’ｓ　Ｓｏｕｎｄ　Ｓｔｏｎｅ　ｒｅｃｏｒｄｅｄ　ｔｈｅ　ｍｅｌｏｄｙ　ｏｆ　ｔｈｅ　Ｆｉｒｅ　Ｓｐｒｉｎｇ．
+◆@DSP_NAME(PC_NESS)’s Sound Stone recorded the melody of the Fire Spring.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
-;jpn:　「おとのいし」が@KEY()↓
+;jpn: 「おとのいし」が@KEY()↓
 ;jpn:◆ファイアスプリングのおとを↓
-;jpn:　きおくした。
+;jpn: きおくした。
 @KEYNP()
 @SETF(FLG_POWR_FIRE)
 @CLOSE()
@@ -2024,14 +2024,14 @@ MSG_SYSMSG_POWR_LUMI;
 @CLRF(FLG_ANIM_PORT_2)
 』
 
-_POWR_MINAGIRU;松（
-　ｆｌｏｗｅｄ　ｉｎｔｏ　@DSP_NAME(PC_NESS)．@KEY()↓
-◆@DSP_NAME(PC_NESS)　ｗａｓ　ｒｅｖｉｖｅｄ．
-;’ｓ　ｐｏｗｅｒ　ｉｓ　ｆｉｌｌｅｄ　ｉｎｓｉｄｅ　ｏｆ　@DSP_NAME(PC_NESS)．@KEY()↓
-;◆@DSP_NAME(PC_NESS)　ｉｓ　ｆｕｌｌｙ　ｒｅｃｏｖｅｒｅｄ．
+_POWR_MINAGIRU;松(
+ flowed into @DSP_NAME(PC_NESS).@KEY()↓
+◆@DSP_NAME(PC_NESS) was revived.
+;’s power is filled inside of @DSP_NAME(PC_NESS).@KEY()↓
+;◆@DSP_NAME(PC_NESS) is fully recovered.
 ;jpn:のパワーが↓
-;jpn:　@DSP_NAME(PC_NESS)に　みなぎった。@KEY()↓
-;jpn:◆@DSP_NAME(PC_NESS)は　カムバックした。
+;jpn: @DSP_NAME(PC_NESS)に みなぎった。@KEY()↓
+;jpn:◆@DSP_NAME(PC_NESS)は カムバックした。
 @KEY()
 @CLOSEALL()
 @!

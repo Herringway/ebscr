@@ -31,8 +31,8 @@ MSG_GLOBAL_TELEPHONE_DKFD;
 MSG_GLOBAL_TELEPHONE;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)　ｐｉｃｋｅｄ　ｕｐ　ｔｈｅ　ｒｅｃｅｉｖｅｒ．
-;◆@DSP_NAME(0)は　じゅわきをとった。
+◆@DSP_NAME(0) picked up the receiver.
+;◆@DSP_NAME(0)は じゅわきをとった。
 @KEY()↓
 @SE(SE_se0b_tel_put)
 @GOSUB(MSG_TEL)
@@ -52,8 +52,8 @@ MSG_GLOBAL_TELEPHONE_2;
 @TRUE_GOTO(_TEL_2_NOMONEY)
 @GET_ORDER_PLAYER(1)
 @XCHG()
-◆@DSP_NAME(0)　ｐｉｃｋｅｄ　ｕｐ　ｔｈｅ　ｒｅｃｅｉｖｅｒ．
-;jpn:◆@DSP_NAME(0)は　じゅわきをとった。
+◆@DSP_NAME(0) picked up the receiver.
+;jpn:◆@DSP_NAME(0)は じゅわきをとった。
 @KEY()↓
 @MONEYOUT(1)
 @WINR_MONEY()
@@ -61,9 +61,9 @@ MSG_GLOBAL_TELEPHONE_2;
 @GOSUB(MSG_TEL_2)
 』
 _TEL_2_NOMONEY;
-◆（Ｔｈｅ　ｐａｙ　ｐｈｏｎｅ　ｃｏｓｔｓ　ｏｎｅ　ｄｏｌｌａｒ．）
-;◆（こうしゅうでんわは↓
-;　りょうきん　１ドルです）
+◆(The pay phone costs one dollar.)
+;◆(こうしゅうでんわは↓
+; りょうきん １ドルです)
 @KEYNP()
 @!
 
@@ -80,9 +80,9 @@ MSG_GLOBAL_TEL;
 MSG_GLOBAL_CASHDISPENSER;
 @Q_HAVE(PC_ALL,GDS_TOOL_CASHCARD)
 @TRUE_GOTO(MSG_CD)
-◆Ｐｌｅａｓｅ　ｉｎｓｅｒｔ　ｙｏｕｒ　ＡＴＭ　ｃａｒｄ．
-;◆キャッシュカード　ヲ↓
-;　イレテクダサイ
+◆Please insert your ATM card.
+;◆キャッシュカード ヲ↓
+; イレテクダサイ
 @KEYNP()
 』
 
@@ -91,8 +91,8 @@ MSG_GLOBAL_CD_RECEIVE;
 @XCHG()
 @EQ(GDS_TOOL_CASHCARD)
 @TRUE_GOTO(_GLOBAL_CD_RECEIVE_GOODS)
-◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ．
-;◆なにも　おこらない。
+◆Nothing happened.
+;◆なにも おこらない。
 @KEYNP()
 』
 _GLOBAL_CD_RECEIVE_GOODS
@@ -118,14 +118,14 @@ MSG_GLOBAL_COMEBACK;
 
 MSG_EVENT_ONET_SWITCH_DAYBREAK;
 ←
-;◆（ここで　オネットに↓
-;　あさが　くる。）@KEYNP()
+;◆(ここで オネットに↓
+; あさが くる。)@KEYNP()
 』
 
 MSG_EVENT_STAGE_TONZURA;@MiuraAppended
 ←
-;◆（トンズラの　すばらしい↓
-;　さいごの　ステージのシーン。）@KEYNP()
+;◆(トンズラの すばらしい↓
+; さいごの ステージのシーン。)@KEYNP()
 ;@ANIM(ANIM_FOUR_TONZURA_FINALGIG)
 』
 
@@ -147,9 +147,9 @@ MSG_ADD_DOG;
 @MUSISTART()
 ;@BGMSTART(0,BGM_home2)
 @OPEN(1)
-◆@DSP_STS(STS_PARTY_DOG_NAME)　ｊｏｉｎｓ　ｙｏｕ．
-;◆（@DSP_STS(STS_PARTY_DOG_NAME)が↓
-;　なかまになった）
+◆@DSP_STS(STS_PARTY_DOG_NAME) joins you.
+;◆(@DSP_STS(STS_PARTY_DOG_NAME)が↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 @SETF(FLG_DOG)
@@ -169,9 +169,9 @@ _ADD_DOG_LATER;
 @MUSISTART()
 ;@BGMSTART(0,BGM_home2)
 @OPEN(1)
-◆@DSP_STS(STS_PARTY_DOG_NAME)　ｊｏｉｎｓ　ｙｏｕ．
-;◆（@DSP_STS(STS_PARTY_DOG_NAME)が↓
-;　なかまになった）
+◆@DSP_STS(STS_PARTY_DOG_NAME) joins you.
+;◆(@DSP_STS(STS_PARTY_DOG_NAME)が↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -193,8 +193,8 @@ MSG_ADD_POKEY;
 @MUSISTART()
 ;@BGMSTART(0,BGM_home2)
 @OPEN(1)
-◆（Ｐｏｋｅｙ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（ポーキーが　なかまになった）
+◆(Pokey joins you.)
+;◆(ポーキーが なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -209,8 +209,8 @@ _ADD_POKEY_D;
 @MUSISTART()
 ;@BGMSTART(0,BGM_home2)
 @OPEN(1)
-◆（Ｐｏｋｅｙ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（ポーキーが　なかまになった）
+◆(Pokey joins you.)
+;◆(ポーキーが なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -218,15 +218,15 @@ _ADD_POKEY_D;
 MSG_REMOVE_POKEY;
 ←
 @DEL_PARTY(PC_POKEY)
-;◆（@DSP_LCNAME()は↓
-;　ポーキーと　わかれた。）@KEY()
+;◆(@DSP_LCNAME()は↓
+; ポーキーと わかれた。)@KEY()
 』
 
 MSG_REMOVE_PICKEY;
 ←
 @DEL_PARTY(PC_PICKEY)
-;◆（@DSP_LCNAME()は↓
-;　ピッキーと　わかれた。）@KEY()
+;◆(@DSP_LCNAME()は↓
+; ピッキーと わかれた。)@KEY()
 』
 
 MSG_ADD_PICKEY;
@@ -243,15 +243,15 @@ MSG_ADD_PICKEY;
 @MUSISTART()
 ;@BGMSTART(0,BGM_house4)
 @OPEN(1)
-◆（Ｐｉｃｋｅｙ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（ピッキーが　なかまになった）
+◆(Pickey joins you.)
+;◆(ピッキーが なかまになった)
 @KEY()
 @CLOSEALL()
 』
 
 ;MSG_ADD_PAULA;
 ;←
-;◆（ポーラが　なかまになった）@KEY()
+;◆(ポーラが なかまになった)@KEY()
 ;@BGMSTART(0,BGM_friend)
 ;@WI(1)
 ;@BGMSTART(0,BGM_child)
@@ -274,9 +274,9 @@ MSG_ADD_MONKEY;
 @MUSISTART()
 ;@BGMSTART(0,BGM_shop)
 @OPEN(1)
-◆（Ｔｈｅ　Ｂｕｂｂｌｅ　Ｍｏｎｋｅｙ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（バルーンモンキーが↓
-;　なかまになった）
+◆(The Bubble Monkey joins you.)
+;◆(バルーンモンキーが↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -303,21 +303,21 @@ _ADD_PAULA_FOUR_MAIN;
 @MUSISTART()
 ;@BGMSTART(0,BGM_child)
 @OPEN(1)
-◆（@DSP_NAME(PC_PAULA)　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（@DSP_NAME(PC_PAULA)が　なかまになった）
+◆(@DSP_NAME(PC_PAULA) joins you.)
+;◆(@DSP_NAME(PC_PAULA)が なかまになった)
 @KEY()
 @CLOSEALL()
 』
 
 ;MSG_ADD_JEFF;
 ;←
-;◆（ジェフが　なかまになった）@KEY()
+;◆(ジェフが なかまになった)@KEY()
 ;@ADD_PARTY(PC_JEFF)
 ;』
 
 ;MSG_ADD_POO;
 ;←
-;◆（プーが　なかまになった）@KEY()
+;◆(プーが なかまになった)@KEY()
 ;@ADD_PARTY(PC_POO)
 ;』
 
@@ -335,9 +335,9 @@ MSG_ADD_FLYINGMAN1;
 @MUSISTART()
 ;@BGMSTART(0,BGM_flyman)
 @OPEN(1)
-◆（Ｔｈｅ　Ｆｌｙｉｎｇ　Ｍａｎ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（フライングマンが↓
-;　なかまになった）
+◆(The Flying Man joins you.)
+;◆(フライングマンが↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -356,9 +356,9 @@ MSG_ADD_FLYINGMAN2;
 @MUSISTART()
 ;@BGMSTART(0,BGM_flyman)
 @OPEN(1)
-◆（Ｔｈｅ　Ｆｌｙｉｎｇ　Ｍａｎ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（フライングマンが↓
-;　なかまになった）
+◆(The Flying Man joins you.)
+;◆(フライングマンが↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -377,9 +377,9 @@ MSG_ADD_FLYINGMAN3;
 @MUSISTART()
 ;@BGMSTART(0,BGM_flyman)
 @OPEN(1)
-◆（Ｔｈｅ　Ｆｌｙｉｎｇ　Ｍａｎ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（フライングマンが↓
-;　なかまになった）
+◆(The Flying Man joins you.)
+;◆(フライングマンが↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -398,9 +398,9 @@ MSG_ADD_FLYINGMAN4;
 @MUSISTART()
 ;@BGMSTART(0,BGM_flyman)
 @OPEN(1)
-◆（Ｔｈｅ　Ｆｌｙｉｎｇ　Ｍａｎ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（フライングマンが↓
-;　なかまになった）
+◆(The Flying Man joins you.)
+;◆(フライングマンが↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 』
@@ -419,31 +419,31 @@ MSG_ADD_FLYINGMAN5;
 @MUSISTART()
 ;@BGMSTART(0,BGM_flyman)
 @OPEN(1)
-◆（Ｔｈｅ　Ｆｌｙｉｎｇ　Ｍａｎ　ｊｏｉｎｓ　ｙｏｕ．）
-;◆（フライングマンが↓
-;　なかまになった）
+◆(The Flying Man joins you.)
+;◆(フライングマンが↓
+; なかまになった)
 @KEY()
 @CLOSEALL()
 』
 
 MSG_REMOVE_DOG;
-;◆（@DSP_LCNAME()は↓
-;　@DSP_STS(STS_PARTY_DOG_NAME)と　わかれた。）@KEY()
+;◆(@DSP_LCNAME()は↓
+; @DSP_STS(STS_PARTY_DOG_NAME)と わかれた。)@KEY()
 @DEL_PARTY(PC_MYHOMEDOG)
 』
 
 MSG_REMOVE_TONY;
 ←
 @DEL_PARTY(PC_TONY)
-;◆（@DSP_LCNAME()は↓
-;　トニーと　わかれた。）@KEY()
+;◆(@DSP_LCNAME()は↓
+; トニーと わかれた。)@KEY()
 』
 
 ;MSG_REMOVE_MONKEY;
 ;←
 ;@DEL_PARTY(PC_BALLOONMONKEY)
-;◆（@DSP_LCNAME()は↓
-;　バルーンモンキーと　わかれた。）@KEY()
+;◆(@DSP_LCNAME()は↓
+; バルーンモンキーと わかれた。)@KEY()
 ;』
 
 ;---------------------------------
@@ -453,54 +453,54 @@ MSG_BATTLE_LOSE;戦闘に負けた後、終了する為のメッセージ
 
 MSG_BATTLE_SHARK_A;
 ←
-;◆（シャークだんＡとの↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(シャークだんAとの↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_SKATER)
 』
 
 MSG_BATTLE_SHARK_B;
 ←
-;◆（シャークだんＢとの↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(シャークだんBとの↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HOPPER)
 』
 
 MSG_BATTLE_SHARK_C;
 ←
-;◆（シャークだんＣとの↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(シャークだんCとの↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HOPPER)
 』
 
 MSG_BATTLE_SHARK_D;
 ←
-;◆（シャークだんＤとの↓
-;　たたかい！）@KEY()↓
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()↓
+;◆(シャークだんDとの↓
+; たたかい!)@KEY()↓
+;◆(YOU WIN!)@KEY()↓
 @CLOSEALL()
 @BATTLE(MSET_FIX_HULAHOOPER)
 』
 
 MSG_BATTLE_FRANK;
 ←
-;◆（シャークだんの　リーダー↓
-;　フランク・フライとの↓
-;　たたかい！）@KEY()↓
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(シャークだんの リーダー↓
+; フランク・フライとの↓
+; たたかい!)@KEY()↓
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_FRANK)
 』
 
 MSG_BATTLE_STEIN2;
 ←
-;◆（フランキースタイン２との↓
-;　たたかい！）@KEY()↓
+;◆(フランキースタイン２との↓
+; たたかい!)@KEY()↓
 @CLOSEALL()
 @BATTLE(MSET_FIX_FRANKEE2)
 』
@@ -572,17 +572,17 @@ MSG_BATTLE_5COPS_E;
 
 MSG_BATTLE_5COPS_STRONG;
 ←
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_STRONG)
 @!
 
 MSG_BATTLE_TONCHIKI;
 ←
-;◆（ヌスットひろばの　ヌシ↓
-;　トンチキさんとの↓
-;　たたかい！）@KEY()↓
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ヌスットひろばの ヌシ↓
+; トンチキさんとの↓
+; たたかい!)@KEY()↓
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_TONCHIKI)
 @!
@@ -590,10 +590,10 @@ MSG_BATTLE_TONCHIKI;
 
 MSG_BATTLE_YOWAOTOKO;
 ←
-;◆（ツーソンいち↓
-;　よわいおとこ　との↓
-;　たたかい！）@KEY()↓
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ツーソンいち↓
+; よわいおとこ との↓
+; たたかい!)@KEY()↓
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_KANSHIIN)		;監視員
 ;@BATTLE(MSET_FIX_WEAKEST_MAN)
@@ -601,34 +601,34 @@ MSG_BATTLE_YOWAOTOKO;
 
 MSG_BATTLE_CARPAINTER;
 ←
-;◆（カーぺインターとの↓
-;　たたかい！）@KEY()↓
+;◆(カーぺインターとの↓
+; たたかい!)@KEY()↓
 @Q_HAVE(PC_ALL,GDS_HAVE_FRANKLIN_BADGE)
 @TRUE_GOTO(_BATTLE_CARPAINTER_HAVE)
-;◆（フランクリンバッジを↓
-;　もっていないので↓
-;　へやのそとに　とばされる。）@KEY()
+;◆(フランクリンバッジを↓
+; もっていないので↓
+; へやのそとに とばされる。)@KEY()
 @CLOSEALL()
 @WI(1)
 @BGMSTART(0,BGM_msc6)
-;稲妻ＢＧ３アニメ(１２０フレーム弱）
+;稲妻BG３アニメ(１２０フレーム弱)
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_CARPAINTER_THUNDER, OBJFX_SHOW_NONE )
 @WI( 80 )
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;←OBJFXを使わないこと！！
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;←OBJFXを使わないこと!!
 @WI( 70 )
-@WARP( WARP_HAPY_USHI )	;ＨＨ村の牛の元にワープ
+@WARP( WARP_HAPY_USHI )	;HH村の牛の元にワープ
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_BLINK )
 ;@MUSISTART()
 ;@BGMSTART(0,BGM_hapy)
-@SETF(FLG_TEMP_9)	;牛の「◆逆らいなすっただね？」用
+@SETF(FLG_TEMP_9)	;牛の「◆逆らいなすっただね?」用
 』
 
 _BATTLE_CARPAINTER_HAVE;
-;フランクリンバッジを持っているので、稲妻を跳ね返す！
+;フランクリンバッジを持っているので、稲妻を跳ね返す!
 @CLOSEALL()
 @WI(1)
 @BGMSTART(0,BGM_msc6)
-;稲妻落ちて跳ね返すＢＧ３アニメ
+;稲妻落ちて跳ね返すBG３アニメ
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_CARPAINTER_THUNDERHEAD, OBJFX_SHOW_NONE )
 @WAITSYS()
 @BGM_EFFECT( 2 )
@@ -636,19 +636,19 @@ _BATTLE_CARPAINTER_HAVE;
 @OPEN(1)
 @Q_HAVE(PC_PAULA,GDS_HAVE_FRANKLIN_BADGE)
 @TRUE_GOTO(_CARPAINTER_HAVE_PAULA)
-◆@DSP_STS(STS_PC_NAME_NES)’ｓ↓
+◆@DSP_STS(STS_PC_NAME_NES)’s↓
 ;◆@DSP_STS(STS_PC_NAME_NES)のもっている↓
 @GOTO(_CARPAINTER_HAVE_MAIN)
 
-_CARPAINTER_HAVE_PAULA;松（つなげかたわかりません）
-◆@DSP_STS(STS_PC_NAME_PAULA)’ｓ↓
+_CARPAINTER_HAVE_PAULA;松(つなげかたわかりません)
+◆@DSP_STS(STS_PC_NAME_PAULA)’s↓
 ;◆@DSP_STS(STS_PC_NAME_PAULA)のもっている↓
 
 _CARPAINTER_HAVE_MAIN;
-◆Ｃａｒｐａｉｎｔｅｒ’ｓ　ｌｉｇｈｔｎｉｎｇ　ｗａｓ　ｒｅｆｌｅｃｔｅｄ　ｂｙ　ｔｈｅ　Ｆｒａｎｋｌｉｎ　Ｂａｄｇｅ．
-;　フランクリンバッジが@KEY()↓
-;◆カーペインターの　カミナリを↓
-;　そのまま　はねかえした！
+◆Carpainter’s lightning was reflected by the Franklin Badge.
+; フランクリンバッジが@KEY()↓
+;◆カーペインターの カミナリを↓
+; そのまま はねかえした!
 @KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_CARPAINTER)
@@ -656,151 +656,151 @@ _CARPAINTER_HAVE_MAIN;
 
 MSG_BATTLE_BELIEVER_1;
 ←
-;◆（ハッピーハッピーきょう↓
-;　しんじゃ１　との↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ハッピーハッピーきょう↓
+; しんじゃ１ との↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HAPPYFREAK)
 』
 
 MSG_BATTLE_BELIEVER_2;
 ←
-;◆（ハッピーハッピーきょう↓
-;　しんじゃ２　との↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ハッピーハッピーきょう↓
+; しんじゃ２ との↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HAPPYFREAK)
 』
 
 MSG_BATTLE_BELIEVER_3;
 ←
-;◆（ハッピーハッピーきょう↓
-;　しんじゃ３　との↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ハッピーハッピーきょう↓
+; しんじゃ３ との↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HAPPYFREAK)
 』
 
 MSG_BATTLE_BELIEVER_4;
 ←
-;◆（ハッピーハッピーきょう↓
-;　しんじゃ４　との↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ハッピーハッピーきょう↓
+; しんじゃ４ との↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HAPPYFREAK)
 』
 
 MSG_BATTLE_BELIEVER_W1;
 ←
-;◆（ハッピーハッピーきょう↓
-;　うろつきしんじゃ１　との↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ハッピーハッピーきょう↓
+; うろつきしんじゃ１ との↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HAPPYFREAK)
 』
 
 MSG_BATTLE_BELIEVER_W2;
 ←
-;◆（ハッピーハッピーきょう↓
-;　うろつきしんじゃ２　との↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ハッピーハッピーきょう↓
+; うろつきしんじゃ２ との↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_HAPPYFREAK)
 』
 
 MSG_BATTLE_SHOPGUARD;
 ←
-;◆（むじんはんばいしょの↓
-;　かんしにん　との↓
-;　たたかい！）@KEY()↓
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(むじんはんばいしょの↓
+; かんしにん との↓
+; たたかい!)@KEY()↓
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_KANSHIIN)
 』
 
 MSG_BATTLE_POKEYBOYS;
 ←
-;◆（ポーキーのこぶん↓
-;　との　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ポーキーのこぶん↓
+; との たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_YAMAGOYA)
 』
 
 MSG_BATTLE_MATENT;
 ←
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_TENT)
 』
 
 MSG_BATTLE_MINIGEPPU_A;
 ←
-;◆（ゲップーのこぶんＡ↓
-;　との　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ゲップーのこぶんA↓
+; との たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_GEPPU_FOLLOWER)
 』
 
 MSG_BATTLE_MINIGEPPU_D;
 ←
-;◆（ゲップーのこぶんＤ↓
-;　との　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ゲップーのこぶんD↓
+; との たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_GEPPU_FOLLOWER)
 』
 
 MSG_BATTLE_MINIGEPPU_E;
 ←
-;◆（ゲップーのこぶんＥ↓
-;　との　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ゲップーのこぶんE↓
+; との たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_GEPPU_FOLLOWER)
 』
 
 MSG_BATTLE_GEPPU;
 ←
-;◆（ゲップーとの　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ゲップーとの たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_GEPPU)
 』
 
 MSG_BATTLE_DEPT_BOSS;
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_BOSS_DEPARTMENT)
 』
 
 MSG_BATTLE_GUARDROBOT;
-;（見張りロボ）
+;(見張りロボ)
 @CLOSEALL()
 @BATTLE(MSET_FIX_MIHARIROBO)
 』
 
 MSG_BATTLE_YUDANROBOT;
 ←
-;◆（ゆだんロボとの　たたかい！）@KEY()
+;◆(ゆだんロボとの たたかい!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_YUDANROBO)
 』
 
 MSG_BATTLE_GEROPP;
 ←
-;◆（ゲロップとの　たたかい！）@KEY()↓
-;◆（@DSP_STS(STS_PC_NAME_POO)が↓
-;　ほしをおとすほうほう　を↓
-;　おぼえて　かえってくる。）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(ゲロップとの たたかい!)@KEY()↓
+;◆(@DSP_STS(STS_PC_NAME_POO)が↓
+; ほしをおとすほうほう を↓
+; おぼえて かえってくる。)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_GEPPU_RETURNS)
 』
@@ -812,18 +812,18 @@ MSG_BATTLE_FINAL;
 
 MSG_BATTLE_OSCAR;
 ←
-;◆（おうごんのオスカーとの↓
-;　たたかい！）@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(おうごんのオスカーとの↓
+; たたかい!)@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_BOSS_MAGICANT)
 』
 
 MSG_BATTLE_MANIMANI;
 ←
-;◆（げんえい　マシン↓
-;　との　たたかい！@KEY()
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(げんえい マシン↓
+; との たたかい!@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_MANI_MANI)
 』
@@ -849,7 +849,7 @@ MSG_BATTLE_DSRT_BOSS_D;
 』
 
 MSG_BATTLE_DSRT_BOSS_E;
-;◆（ＹＯＵ　ＷＩＮ！）@KEY()
+;◆(YOU WIN!)@KEY()
 @CLOSEALL()
 @BATTLE(MSET_FIX_BOSS_MOCHY_DUNGEON)
 』
@@ -859,7 +859,7 @@ MSG_BATTLE_SKRB_KRAKEN;クラーケンとのバトル
 @BATTLE(MSET_FIX_SEA_ROUTE)
 』
 
-MSG_BATTLE_INSEKI_STARMAN;スターマンの息子（殺し屋）
+MSG_BATTLE_INSEKI_STARMAN;スターマンの息子(殺し屋)
 @CLOSEALL()
 @BATTLE(MSET_FIX_STARMAN_SON)
 』
@@ -868,17 +868,17 @@ MSG_BATTLE_INSEKI_STARMAN;スターマンの息子（殺し屋）
 MSG_BOX_ITEMFULL;
 ;全プレゼントボックス共通のアイテムフルメッセージ
 ←
-◆Ｂｕｔ，　ｙｏｕ　ｃａｎ’ｔ　ｃａｒｒｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ．
-;◆しかし　これいじょう↓
-;　ものを　もてない。
+◆But, you can’t carry anything else.
+;◆しかし これいじょう↓
+; ものを もてない。
 @KEYNP()
 』
 
 MSG_BOX_EMPTY;
-;すでに　グッズをとっている場合共通
+;すでに グッズをとっている場合共通
 ←
-◆Ｂｕｔ，　ｉｔ　ｗａｓ　ｅｍｐｔｙ．
-;◆しかし　からっぽだった。
+◆But, it was empty.
+;◆しかし からっぽだった。
 @KEYNP()
 ;』
 
@@ -897,18 +897,18 @@ _JEFF_YONABE_2;
 @FALSE_GOTO(_YONABE_END)
 @OPEN(1)
 ←
-◆Ｗｏｒｋｉｎｇ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｎｉｇｈｔ，　@DSP_NAME(PC_JEFF)　ｆｉｘｅｄ　ｔｈｅ　@DSP_GOODS(0)．
-;◆@DSP_STS(STS_PC_NAME_JEFF)は　よなべをして↓
-;　@DSP_GOODS(0)を↓
-;;　なおしてくれた。@KEY()↓
-;　なおした。
+◆Working through the night, @DSP_NAME(PC_JEFF) fixed the @DSP_GOODS(0).
+;◆@DSP_STS(STS_PC_NAME_JEFF)は よなべをして↓
+; @DSP_GOODS(0)を↓
+;; なおしてくれた。@KEY()↓
+; なおした。
 @KEY()↓
-◆Ａｆｔｅｒ　ｂｅｉｎｇ　ｆｉｘｅｄ，　ｔｈｅ　@DSP_GOODS(0)　ｂｅｃａｍｅ　ｔｈｅ　
+◆After being fixed, the @DSP_GOODS(0) became the 
 @XCHG()
-@DSP_GOODS(0)．
+@DSP_GOODS(0).
 ;◆@DSP_GOODS(0)は↓
 ;@XCHG()
-;　@DSP_GOODS(0)だった。
+; @DSP_GOODS(0)だった。
 @KEY()
 @SETF(FLG_WINS_JEFF_REPAIR)
 @CLOSEALL()
@@ -943,83 +943,83 @@ MSG_GLOBAL_POWERSAVE_MAIN;
 @MUSISTART()
 ;@BGMSTART(0,BGM_child)
 @OPEN(1)
-◆Ｈｅｌｌｏ，　ｉｔ’ｓ　ｍｅ．．．ｙｏｕｒ　ｄａｄ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｍｅａｎ　ｔｏ　ｂｕｔｔ　ｉｎ，　ｂｕｔ　ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｙｏｕ　ｓｈｏｕｌｄ　ｔａｋｅ　ａ　ｂｒｅａｋ？@KEY()↓
-<Ｙｅｓ>
-<Ｎｏ>
-;◆あ　パパだ。@KEY()↓
+◆Hello, it’s me...your dad.@KEY()↓
+◆I don’t mean to butt in, but don’t you think you should take a break?@KEY()↓
+<Yes>
+<No>
+;◆あ パパだ。@KEY()↓
 ;◆おせっかいかもしれないが↓
-;　ちょっと　きゅうけいしては↓
-;　どうかね。@KEY()↓
-;　　<はい>　　<いいえ>
+; ちょっと きゅうけいしては↓
+; どうかね。@KEY()↓
+;  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_GLOBAL_POWERSAVE_YES,_GLOBAL_POWERSAVE_NO)
 
 _GLOBAL_POWERSAVE_NO;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆Ｌｉｋｅ　ｍｏｔｈｅｒ，　ｌｉｋｅ　ｓｏｎ．．．@KEY()↓
-◆@DSP_NAME(PC_NESS)，　ｙｏｕ　ａｒｅ　ａ　ｈａｒｄ　ｗｏｒｋｅｒ．@KEY()↓
-◆Ｉ’ｖｅ　ｍａｄｅ　ａ　ｒｅｃｏｒｄ　ｏｆ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｗｏｒｋ　ｔｏｏ　ｈａｒｄ，　ｔｈｏｕｇｈ．．．@KEY()↓
-◆＊Ｃｌｉｃｋ！＊
-;◆@DSP_NAME(0)も　ママににて↓
-;　がんばりやだなあ。@KEY()↓
+◆Like mother, like son...@KEY()↓
+◆@DSP_NAME(PC_NESS), you are a hard worker.@KEY()↓
+◆I’ve made a record of your adventure.@KEY()↓
+◆Don’t work too hard, though...@KEY()↓
+◆＊Click!＊
+;◆@DSP_NAME(0)も ママににて↓
+; がんばりやだなあ。@KEY()↓
 ;◆ぼうけんのきろくは↓
-;　つけておいたからね。@KEY()↓
+; つけておいたからね。@KEY()↓
 ;◆むりするなよ。@KEY()↓
-;◆ガチャン　ツーツーツー
+;◆ガチャン ツーツーツー
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
 』
 
 _GLOBAL_POWERSAVE_YES;
-◆Ｏｋａｙ．@KEY()↓
-◆Ｙ’ｋｎｏｗ，　Ｉ’ｍ　ｆｅｅｌｉｎｇ　ｋｉｎｄ　ｏｆ　ｔｉｒｅｄ　ｍｙｓｅｌｆ．@KEY()↓
-◆Ｉ　ｍａｄｅ　ａ　ｒｅｃｏｒｄ　ｏｆ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ．@KEY()↓
-◆Ｎｏｗ　Ｉ’ｍ　ｇｏｎｎａ　ｈｉｔ　ｔｈｅ　ｓａｃｋ．@KEY()↓
-◆Ｂｅ　ｓｕｒｅ　ｙｏｕ　ｇｅｔ　ｓｏｍｅ　ｒｅｓｔ．↓
-<Ｃｏｎｔｉｎｕｅ>
-<Ｑｕｉｔ>
+◆Okay.@KEY()↓
+◆Y’know, I’m feeling kind of tired myself.@KEY()↓
+◆I made a record of your adventure.@KEY()↓
+◆Now I’m gonna hit the sack.@KEY()↓
+◆Be sure you get some rest.↓
+<Continue>
+<Quit>
 ;◆そうか。↓
-;　パパも　もう　きょうは↓
-;　やすもうと　おもってたところだ。@KEY()↓
+; パパも もう きょうは↓
+; やすもうと おもってたところだ。@KEY()↓
 ;◆ぼうけんのきろくは↓
-;　つけといたよ。@KEY()↓
+; つけといたよ。@KEY()↓
 ;◆おやすみ‥‥@KEY()↓
-;　　<つづける>　　<おわる>
+;  <つづける>  <おわる>
 @DSP_ITEM(2)
 @SELGOTO(_POWERSAVE_CONTINUE,_POWERSAVE_END)
 
 _POWERSAVE_CONTINUE;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)，　ｙｏｕ’ｒｅ　ａ　ｈａｒｄ　ｗｏｒｋｅｒ，　ｊｕｓｔ　ｌｉｋｅ　ｙｏｕｒ　ｍｏｍ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｗｏｒｋ　ｔｏｏ　ｈａｒｄ，　ｔｈｏｕｇｈ．．．@KEY()↓
-◆＊Ｃｌｉｃｋ＊
-;◆@DSP_NAME(0)も　ママににて↓
-;　がんばりやだなあ。@KEY()↓
+◆@DSP_NAME(0), you’re a hard worker, just like your mom.@KEY()↓
+◆Don’t work too hard, though...@KEY()↓
+◆＊Click＊
+;◆@DSP_NAME(0)も ママににて↓
+; がんばりやだなあ。@KEY()↓
 ;◆むりするなよ。@KEY()↓
-;◆ガチャン　ツーツーツー
+;◆ガチャン ツーツーツー
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
 』
 
 _POWERSAVE_END;
-◆Ｗｈａｔ　ａ　ｇｒｅａｔ　ａｄｖｅｎｔｕｒｅ　ｗｅ　ｈａｄ　ｔｏｇｅｔｈｅｒ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｔｕｒｎ　ｏｆｆ　ｔｈｅ　ｐｏｗｅｒ．
-;◆おたがい　よくやったよな。@KEY()↓
-;◆それじゃ　リセットボタンを↓
-;　おさないで　でんげんを　ＯＦＦに↓
-;　しなさい。　わかったね。
+◆What a great adventure we had together.@KEY()↓
+◆Please turn off the power.
+;◆おたがい よくやったよな。@KEY()↓
+;◆それじゃ リセットボタンを↓
+; おさないで でんげんを OFFに↓
+; しなさい。 わかったね。
 @DISKEY()
 』
 
 ;----------------------------------------------
 
-;写真屋登場！
+;写真屋登場!
 
 MSG_GLOBAL_PHOTO_1;
 @CLRF(FLG_PHOTO_MYHOME)
@@ -1174,7 +1174,7 @@ MSG_GLOBAL_PHOTO_30;
 MSG_GLOBAL_PHOTO_31;
 @TAKE_PHOTO(31)
 @SETF(FLG_PHOTO_31)
-@CLRF(FLG_PHOTO_GUMI);プラオリティー変更用？
+@CLRF(FLG_PHOTO_GUMI);プラオリティー変更用?
 』
 MSG_GLOBAL_PHOTO_32;
 @TAKE_PHOTO(32)
@@ -1189,31 +1189,31 @@ MSG_GLOBAL_PHOTO_32;
 ;MSG_HINT;
 ;@CHKFGOTO(FLG_TEMP_1,_HINT_YES_TEMP)
 ;@CHKFGOTO(FLG_ONET_GATEOPEN,MSG_TEMP_HINT)
-;◆ちょっとまった！ヤングマン@KEY()↓
+;◆ちょっとまった!ヤングマン@KEY()↓
 ;◆たった５ドルで↓
-;　すばらしいヒントを↓
-;　あげよう。@KEY()↓
-;◆ヒントが　ほしいだろう？↓
-;　　<はい>　　<いいえ>
+; すばらしいヒントを↓
+; あげよう。@KEY()↓
+;◆ヒントが ほしいだろう?↓
+;  <はい>  <いいえ>
 ;@DSP_ITEM(2)
 ;@SELGOTO(MSG_HINT_YES,MSG_HINT_NO)
 ;MSG_HINT_NO;
-;◆ヒントは　いらないって？@KEY()↓
+;◆ヒントは いらないって?@KEY()↓
 ;◆きがつよいのか↓
-;　５ドルが　おしいのか@KEY()↓
-;◆いまどき　めずらしい↓
-;　わかものだ。@KEY()↓
+; ５ドルが おしいのか@KEY()↓
+;◆いまどき めずらしい↓
+; わかものだ。@KEY()↓
 ;◆でぐちは↓
-;　いりぐちと　おんなじだよ。@KEY()↓
+; いりぐちと おんなじだよ。@KEY()↓
 ;◆さようなら。@KEYNP()
 ;』
 ;MSG_HINT_NOMONEY;
-;◆あらま　おかねがない。@WI(20)↓
-;　でも　おじさんも↓
-;　しょうばいだから@KEY()↓
-;◆ただで　ヒントを↓
-;　あげるわけには↓
-;　いかないんだよ　ぼうや。@KEYNP()
+;◆あらま おかねがない。@WI(20)↓
+; でも おじさんも↓
+; しょうばいだから@KEY()↓
+;◆ただで ヒントを↓
+; あげるわけには↓
+; いかないんだよ ぼうや。@KEYNP()
 ;』
 ;MSG_HINT_YES;
 ;@Q_MONEY(5)
@@ -1254,19 +1254,19 @@ MSG_GLOBAL_PHOTO_32;
 ;@CHKFGOTO(FLG_KEY_TABIGOYA,_HINT_KEY_TABIGOYA)
 ;@CHKFGOTO(FLG_WIN_FRANK,_HINT_WIN_FRANK)
 ;◆どうやら↓
-;　オネットの　まちのひとは@KEY()↓
-;◆シャークだん　とかいう↓
-;　ふりょうグループに↓
-;　めいわくしてるらしい。@KEY()↓
-;◆あんたが　いって↓
-;　フランクとかいうボスを↓
-;　やっつけなはれ。@KEY()↓
-;◆きょうは　ここまで。@KEYNP()
+; オネットの まちのひとは@KEY()↓
+;◆シャークだん とかいう↓
+; ふりょうグループに↓
+; めいわくしてるらしい。@KEY()↓
+;◆あんたが いって↓
+; フランクとかいうボスを↓
+; やっつけなはれ。@KEY()↓
+;◆きょうは ここまで。@KEYNP()
 ;』
 ;_HINT_WIN_GEPPU;
-;◆ちょっとまった！ヤングマン@WI(20)↓
-;　ヒントを　あげたいんだけど↓
-;　まだ　おもいつかないんだ。@KEY()↓
+;◆ちょっとまった!ヤングマン@WI(20)↓
+; ヒントを あげたいんだけど↓
+; まだ おもいつかないんだ。@KEY()↓
 ;◆わるいね。@KEYNP()
 ;』
 ;_HINT_GPFT_PASSWORD_OK;
@@ -1295,43 +1295,43 @@ MSG_GLOBAL_PHOTO_32;
 ;_HINT_TLPT_TWSN;
 ;_HINT_ONET_GATEOPEN;
 ;◆となりまちツーソンの↓
-;　ちょうのうりょく↓
-;　しょうじょ‥‥@KEY()↓
+; ちょうのうりょく↓
+; しょうじょ‥‥@KEY()↓
 ;◆@DSP_STS(STS_PC_NAME_PAULA)の↓
-;　うわさは　きいたかな？@KEY()↓
-;◆まちの　みなみから↓
-;　ツーソンに　いってみなさい。@KEY()↓
-;◆きょうは　ここまで。@KEYNP()
+; うわさは きいたかな?@KEY()↓
+;◆まちの みなみから↓
+; ツーソンに いってみなさい。@KEY()↓
+;◆きょうは ここまで。@KEYNP()
 ;』
 ;_HINT_POWR_GIAN;
 ;_HINT_OPEN_TABIGOYA;
 ;◆ジャイアントステップに↓
-;　ゆくんだろ？@KEY()↓
-;◆だったら　けいかんを↓
-;　しげきしないように↓
-;　きを　つけるんだね。@KEY()↓
-;◆きょうは　ここまで。@KEYNP()
+; ゆくんだろ?@KEY()↓
+;◆だったら けいかんを↓
+; しげきしないように↓
+; きを つけるんだね。@KEY()↓
+;◆きょうは ここまで。@KEYNP()
 ;』
 ;_HINT_KEY_TABIGOYA;
-;◆ほくせいに　すすみなさい。@KEY()↓
+;◆ほくせいに すすみなさい。@KEY()↓
 ;◆たびげいにんが↓
-;　カギが　あかないって↓
-;　こまってたみたいだぞ。@KEY()↓
-;◆きょうは　ここまで。@KEYNP()
+; カギが あかないって↓
+; こまってたみたいだぞ。@KEY()↓
+;◆きょうは ここまで。@KEYNP()
 ;』
 ;_HINT_WIN_FRANK;
 ;◆オネットしちょうの↓
-;　ゲー・ハー・ピカールには↓
-;　あったかな？@KEY()↓
+; ゲー・ハー・ピカールには↓
+; あったかな?@KEY()↓
 ;◆ピカールしちょうは↓
-;　しちょうしゃの↓
-;　２かいにいるよ。@KEY()↓
-;◆きょうは　ここまで。@KEYNP()
+; しちょうしゃの↓
+; ２かいにいるよ。@KEY()↓
+;◆きょうは ここまで。@KEYNP()
 ;』
 ;MSG_TEMP_HINT;仮
-;◆ちょっとまった！ヤングマン@WI(20)↓
-;　ヒントを　あげたいんだけど↓
-;　まだ　おもいつかないんだ。@KEY()↓
+;◆ちょっとまった!ヤングマン@WI(20)↓
+; ヒントを あげたいんだけど↓
+; まだ おもいつかないんだ。@KEY()↓
 ;◆わるいね。@KEYNP()
 ;』
 ;--------------------------------------------------------
@@ -1347,55 +1347,55 @@ MSG_SYS_INPUT_PLAYER_NAME;
 @SE(SE_se0b_tel_put)
 ;@MUSISTART()
 @OPEN(1)
-◆Ｈｅｌｌｏ，　@DSP_NAME(PC_JEFF)？@KEY()↓
-◆Ｏｈ，　ｈａｐｐｙ　ｄａｙ！@KEY()↓
-◆Ｉ　ｆｉｎａｌｌｙ　ｇｏｔ　ａ　ｈｏｌｄ　ｏｆ　ｙｏｕ．．．
-;◆もしもし　@DSP_STS(STS_PC_NAME_JEFF)ー？↓
-;　うれしい　やっとでんわが↓
-;　つうじた！
+◆Hello, @DSP_NAME(PC_JEFF)?@KEY()↓
+◆Oh, happy day!@KEY()↓
+◆I finally got a hold of you...
+;◆もしもし @DSP_STS(STS_PC_NAME_JEFF)ー?↓
+; うれしい やっとでんわが↓
+; つうじた!
 @KEY()↓
-@SET_LOOPREG(PC_JEFF)			;ジェフのＩＤを主レジに格納
+@SET_LOOPREG(PC_JEFF)			;ジェフのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_INPUT_PLAYER_NAME_JEFF_DEAD)
-◆Ｏｈ，　@DSP_STS(STS_PC_NAME_JEFF)！
-;◆あ@WI(15)　@DSP_STS(STS_PC_NAME_JEFF)！
+◆Oh, @DSP_STS(STS_PC_NAME_JEFF)!
+;◆あ@WI(15) @DSP_STS(STS_PC_NAME_JEFF)!
 @KEY()↓
 @GOTO(_INPUT_PLAYER_NAME_MAIN)
 
 _INPUT_PLAYER_NAME_JEFF_DEAD;ジェフいない時
-◆Ｈｅｙ．．．@KEY()↓
-◆Ｏｈ，　ｎｏ！@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｎｏｔ　@DSP_NAME(PC_JEFF)！@KEY()↓
-◆Ｉ’ｖｅ　ｇｏｔ　ｔｏ　ｃｏｎｔａｃｔ　@DSP_NAME(PC_JEFF)！@KEY()↓
-◆Ｉ　ｋｎｏｗ．．．ｊｕｓｔ　ｐｕｔ　ｔｈｅ　ｒｅｃｅｉｖｅｒ　ｃｌｏｓｅ　ｔｏ　ｈｉｓ　ｅａｒ，　ａｎｄ　ｈｅ’ｌｌ　ｈｅａｒ　ｍｅ．．．@KEY()↓
-◆Ｉ　ｋｎｏｗ　ｈｅ　ｗｉｌｌ．
+◆Hey...@KEY()↓
+◆Oh, no!@KEY()↓
+◆You’re not @DSP_NAME(PC_JEFF)!@KEY()↓
+◆I’ve got to contact @DSP_NAME(PC_JEFF)!@KEY()↓
+◆I know...just put the receiver close to his ear, and he’ll hear me...@KEY()↓
+◆I know he will.
 ;◆もしもし‥‥@KEY()↓
-;◆あ@WI(15)　@DSP_STS(STS_PC_NAME_JEFF)じゃないのか！@KEY()↓
+;◆あ@WI(15) @DSP_STS(STS_PC_NAME_JEFF)じゃないのか!@KEY()↓
 ;◆きぜつしている↓
-;　@DSP_STS(STS_PC_NAME_JEFF)の　みみもとに@KEY()↓
-;◆ぼくの　こえを↓
-;　きかせてあげて　ください。@KEY()↓
-;◆きっと　つうじるから‥‥
+; @DSP_STS(STS_PC_NAME_JEFF)の みみもとに@KEY()↓
+;◆ぼくの こえを↓
+; きかせてあげて ください。@KEY()↓
+;◆きっと つうじるから‥‥
 @KEY()↓
 
 _INPUT_PLAYER_NAME_MAIN;
-◆Ｈｉ，　ｉｔ’ｓ　ｍｅ−−Ｔｏｎｙ．@KEY()↓
-◆Ｉ’ｍ　ｃｏｌｌｅｃｔｉｎｇ　ｐｌａｙｅｒ’ｓ　ｎａｍｅｓ　ｆｏｒ　ａ　ｓｃｈｏｏｌ　ｐｒｏｊｅｃｔ．@KEY()↓
-◆Ｙｏｕ　ｋｎｏｗ，　ｐｌａｙｅｒｓ　ｊｕｓｔ　ｌｉｋｅ　ｙｏｕ！@KEY()↓
-◆Ｔｈａｔ’ｓ　ｒｉｇｈｔ，　ｙｏｕ−−ｔｈｅ　ｏｎｅ　ｈｏｌｄｉｎｇ　ｔｈｅ　ｃｏｎｔｒｏｌｌｅｒ．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｒｅｇｉｓｔｅｒ　ｙｏｕｒ　ｎａｍｅ，　ｐｌｅａｓｅ？@KEY()↓
-◆Ｄｏｎ’ｔ　ｓｐｅｌｌ　ｙｏｕｒ　ｎａｍｅ　ｗｒｏｎｇ！
-;◆ぼくだよ　トニーだよ！@KEY()↓
-;◆がっこうの　しゅくだいで↓
-;　このゲームの　プレイヤーの↓
-;　なまえを　しらべてるんだ。@KEY()↓
-;◆いま　コントローラーを↓
-;　うごかしてるひとの　ことさ。@KEY()↓
-;◆なまえを　にゅうりょく↓
-;　してもらって　くれないか？@KEY()↓
-;◆ローマじ　ひょうきだから↓
-;　くれぐれも　まちがえないように↓
-;　ちゅういしてね。
+◆Hi, it’s me−−Tony.@KEY()↓
+◆I’m collecting player’s names for a school project.@KEY()↓
+◆You know, players just like you!@KEY()↓
+◆That’s right, you−−the one holding the controller.@KEY()↓
+◆Would you register your name, please?@KEY()↓
+◆Don’t spell your name wrong!
+;◆ぼくだよ トニーだよ!@KEY()↓
+;◆がっこうの しゅくだいで↓
+; このゲームの プレイヤーの↓
+; なまえを しらべてるんだ。@KEY()↓
+;◆いま コントローラーを↓
+; うごかしてるひとの ことさ。@KEY()↓
+;◆なまえを にゅうりょく↓
+; してもらって くれないか?@KEY()↓
+;◆ローマじ ひょうきだから↓
+; くれぐれも まちがえないように↓
+; ちゅういしてね。
 @KEY()
 @CLOSEALL()
 ;--------------
@@ -1405,12 +1405,12 @@ _INPUT_PLAYER_NAME_MAIN;
 ;--------------
 @FUNC(3);入力
 @OPEN(1)
-◆Ｔｈａｎｋｓ，　ｇａｍｅ　ｐｌａｙｅｒ！@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ！@KEY()↓
-◆Ｉｓ　ｔｈｉｓ　ｃｏｒｒｅｃｔ？
+◆Thanks, game player!@KEY()↓
+◆Thank you very much!@KEY()↓
+◆Is this correct?
 ;◆プレイヤーのかた↓
-;　どうも　ありがとうございます。@KEY()↓
-;◆これで　まちがいないですか？
+; どうも ありがとうございます。@KEY()↓
+;◆これで まちがいないですか?
 @KEY()
 @CLOSEALL()
 @FUNC(3);入力
@@ -1419,54 +1419,54 @@ _INPUT_PLAYER_NAME_MAIN;
 @WI(30)
 ;--------------
 @OPEN(1)
-◆Ｉ　ａｐｏｌｏｇｉｚｅ　ｆｏｒ　ａｎｙ　ｔｒｏｕｂｌｅ　ｔｈｉｓ　ｍａｙ　ｈａｖｅ　ｃａｕｓｅｄ　ｙｏｕ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｐｕｔ　ｍｙ　ｆｒｉｅｎｄ　@DSP_NAME(PC_JEFF)　ｉｎ　ａｎｙ　ｄａｎｇｅｒｏｕｓ　ｓｉｔｕａｔｉｏｎｓ，　ｏｋａｙ？@KEY()↓
-◆Ｉ　ｗｏｒｒｙ　ａｂｏｕｔ　ｈｉｍ．@KEY()↓
-◆Ｉ　ｒｅａｌｌｙ　ｄｏ．．．@KEY()↓
-◆Ｗｅｌｌ，　ｔａｌｋ　ｔｏ　ｙｏｕ　ｌａｔｅｒ．．．@KEY()↓
-◆．．．@DSP_NAME(PC_JEFF)．．．@KEY()↓
+◆I apologize for any trouble this may have caused you.@KEY()↓
+◆Don’t put my friend @DSP_NAME(PC_JEFF) in any dangerous situations, okay?@KEY()↓
+◆I worry about him.@KEY()↓
+◆I really do...@KEY()↓
+◆Well, talk to you later...@KEY()↓
+◆...@DSP_NAME(PC_JEFF)...@KEY()↓
 ;◆おてすうかけて↓
-;　すみませんでした。@KEY()↓
-;◆ともだちの　@DSP_STS(STS_PC_NAME_JEFF)を↓
-;　あんまり　あぶないめに↓
-;　あわせないでくださいね。@KEY()↓
-;◆ぼく　しんぱいで↓
-;　しんぱいで‥‥@DSP_STS(STS_PC_NAME_JEFF)。@KEY()↓
-;◆‥‥じゃあ@WI(20)　@DSP_STS(STS_PC_NAME_JEFF)↓
-@SET_LOOPREG(PC_JEFF)			;ジェフのＩＤを主レジに格納
+; すみませんでした。@KEY()↓
+;◆ともだちの @DSP_STS(STS_PC_NAME_JEFF)を↓
+; あんまり あぶないめに↓
+; あわせないでくださいね。@KEY()↓
+;◆ぼく しんぱいで↓
+; しんぱいで‥‥@DSP_STS(STS_PC_NAME_JEFF)。@KEY()↓
+;◆‥‥じゃあ@WI(20) @DSP_STS(STS_PC_NAME_JEFF)↓
+@SET_LOOPREG(PC_JEFF)			;ジェフのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @FALSE_GOTO(_INPUT_PLAYER_NAME_JEFF_MAIN2)
-◆Ｉｔ　ｓｅｅｍｓ　ｌｉｋｅ　ｙｏｕ’ｒｅ　ｎｏｔ　ｆｅｅｌｉｎｇ　ｗｅｌｌ．．．@KEY()↓
-◆Ｇｅｔ　ｂｅｔｔｅｒ　ｓｏｏｎ．．．
+◆It seems like you’re not feeling well...@KEY()↓
+◆Get better soon...
 ;◆からだのぐあい↓↓
-;　わるいみたいだけど↓
-;　はやく　なおしてね。
+; わるいみたいだけど↓
+; はやく なおしてね。
 @KEY()↓
 _INPUT_PLAYER_NAME_JEFF_MAIN2;
-◆Ｉ　ｈｏｐｅ　ｔｈａｔ　Ｉ　ｃａｎ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ　ｗｈｅｎ　ｙｏｕ　ａｒｅ　ｆｅｅｌｉｎｇ　ｕｐ　ｔｏ　ｉｔ．．．@KEY()↓
-◆Ｆｒｏｍ　Ｔ＊Ｏ＊Ｎ＊Ｙ＊．．．@KEY()↓
-◆Ｙｏｕ　ｇｏｔ　ｔｈａｔ？@KEY()↓
-◆Ｗｅｌｌ　Ｉ’ｖｅ　ｂｅｅｎ　ｏｎ　ｔｈｅ　ｐｈｏｎｅ　ｔｏｏ　ｌｏｎｇ．．．@KEY()↓
-◆Ｇｏｔｔａ　ｇｏ．．．@KEY()↓
-◆Ｇｏｏｄ　ｌｕｃｋ．．．@KEY()↓
-◆Ｔａｋｅ　ｃａｒｅ．．．@KEY()↓
-◆Ｓｏ　ｌｏｎｇ．．．@KEY()↓
-◆Ｔｈｉｓ　ｔｉｍｅ，　Ｉ’ｍ　ｒｅａｌｌｙ　ｇｏｎｎａ　ｈａｎｇ　ｕｐ．@KEY()↓
-◆Ｇｏｏｄｂｙｅ．@KEY()↓
-◆＊Ｂｅｅｅｅｅｐ＊
-;◆また　げんきなすがたの↓
-;　きみに　あえることを@KEY()↓
+◆I hope that I can see you again when you are feeling up to it...@KEY()↓
+◆From T＊O＊N＊Y＊...@KEY()↓
+◆You got that?@KEY()↓
+◆Well I’ve been on the phone too long...@KEY()↓
+◆Gotta go...@KEY()↓
+◆Good luck...@KEY()↓
+◆Take care...@KEY()↓
+◆So long...@KEY()↓
+◆This time, I’m really gonna hang up.@KEY()↓
+◆Goodbye.@KEY()↓
+◆＊Beeeeep＊
+;◆また げんきなすがたの↓
+; きみに あえることを@KEY()↓
 ;◆こころから↓
-;　おいのりしているよ！@KEY()↓
-;◆きみのともだち　ト@WI(10)ニ@WI(10)ー@WI(10)よ@WI(10)り@KEY()↓
+; おいのりしているよ!@KEY()↓
+;◆きみのともだち ト@WI(10)ニ@WI(10)ー@WI(10)よ@WI(10)り@KEY()↓
 ;◆‥‥でした。@KEY()↓
-;◆あ@WI(15)　でんわが↓
-;　ながくなっちゃうから↓
-;　もう　きるね。@KEY()↓
+;◆あ@WI(15) でんわが↓
+; ながくなっちゃうから↓
+; もう きるね。@KEY()↓
 ;◆さよなら。@KEY()↓
 ;◆がんばってね。@KEY()↓
-;◆きを　つけてね。@KEY()↓
-;◆ほんとに　きるからね。@KEY()↓
+;◆きを つけてね。@KEY()↓
+;◆ほんとに きるからね。@KEY()↓
 ;◆バーイ‥‥@KEY()↓
 ;◆‥‥ツーツーツー
 @KEYNP()
@@ -1482,36 +1482,36 @@ _INPUT_PLAYER_NAME_JEFF_MAIN2;
 
 MSG_ONET_POLA_TELEPATHY;003_A
 @OPEN(1)
-◆．．．@KEY()↓
-◆@DSP_NAME(PC_NESS)？@KEY()↓
-◆．．．@KEY()↓
+◆...@KEY()↓
+◆@DSP_NAME(PC_NESS)?@KEY()↓
+◆...@KEY()↓
 ◆@DSP_NAME(PC_NESS)@KEY()↓
 ;◆‥‥‥@KEY()↓
 ;◆‥‥@DSP_STS(STS_PC_NAME_NES)@KEY()↓
 @WI(60)↓
 @WI(60)↓
-◆．．．@DSP_NAME(PC_NESS)．．．@KEY()↓
-◆Ｉ’ｍ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　ｙｏｕ　ｈａｖｅ　ｎｅｖｅｒ　ｍｅｔ　ｂｅｆｏｒｅ．．．@KEY()↓
-◆Ｍｙ　ｎａｍｅ　ｉｓ　@DSP_NAME(PC_PAULA)．@KEY()↓
+◆...@DSP_NAME(PC_NESS)...@KEY()↓
+◆I’m a friend who you have never met before...@KEY()↓
+◆My name is @DSP_NAME(PC_PAULA).@KEY()↓
 ;◆@DSP_STS(STS_PC_NAME_NES)‥‥。@KEY()↓
-;◆まだ　あったことのない↓
-;　わたしのともだち‥‥。@KEY()↓
+;◆まだ あったことのない↓
+; わたしのともだち‥‥。@KEY()↓
 ;◆わたしは↓
-;　@DSP_STS(STS_PC_NAME_PAULA)です。
+; @DSP_STS(STS_PC_NAME_PAULA)です。
 @KEY()↓
 @WI(60)↓
-◆Ｃａｎ　ｙｏｕ　ｈｅａｒ　ｍｅ　ｃａｌｌｉｎｇ　ｙｏｕ？@KEY()↓
-◆Ｉ　ａｍ　@DSP_NAME(PC_PAULA)．．．@KEY()↓
-◆．．．
-;◆わたしの　よびかけを↓
-;　かんじますか？@KEY()↓
-;◆@DSP_STS(STS_PC_NAME_NES)　@DSP_STS(STS_PC_NAME_NES)↓
-;　‥‥わたしは　@DSP_STS(STS_PC_NAME_PAULA)です。@KEY()↓
+◆Can you hear me calling you?@KEY()↓
+◆I am @DSP_NAME(PC_PAULA)...@KEY()↓
+◆...
+;◆わたしの よびかけを↓
+; かんじますか?@KEY()↓
+;◆@DSP_STS(STS_PC_NAME_NES) @DSP_STS(STS_PC_NAME_NES)↓
+; ‥‥わたしは @DSP_STS(STS_PC_NAME_PAULA)です。@KEY()↓
 ;◆‥‥‥
 @KEY()↓
 @WI(60)↓
 @WI(60)↓
-◆．．．
+◆...
 ;◆‥‥
 @KEYNP()
 @CLOSEALL()
@@ -1522,31 +1522,31 @@ MSG_ONET_POLA_TELEPATHY;003_A
 
 MSG_TWSN_POLA_TELEPATHY;003_B
 @OPEN(1)
-◆．．．@KEY()↓
-◆@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｉ．．．@DSP_NAME(PC_PAULA)．．．@KEY()↓
-◆Ｉ　ａｍ　@DSP_NAME(PC_PAULA)．．．@KEY()↓
-◆Ｃａｎ　ｙｏｕ　ｈｅａｒ　ｍｅ　ｃａｌｌｉｎｇ　ｙｏｕ？@KEY()↓
-◆Ｈｅｌｐ！@KEY()↓
-◆Ｃｏｍｅ　ａｎｄ　ｈｅｌｐ　ｍｅ！@KEY()↓
-◆Ｕｍ，　Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈｅｒｅ　Ｉ　ａｍ．．．@KEY()↓
-◆Ｉ　ｃａｎ　ｈｅａｒ　ｗａｔｅｒ　ｒｕｎｎｉｎｇ　ｉｎ　ｔｈｅ　ｄｉｓｔａｎｃｅ．．．@KEY()↓
-;◆‥‥しは　@DSP_STS(STS_PC_NAME_PAULA)↓
-;　わたしは　@DSP_STS(STS_PC_NAME_PAULA)です。@KEY()↓
-;◆わたしの　よびかけを↓
-;　かんじますか？　@DSP_STS(STS_PC_NAME_NES)@KEY()↓
-;◆たすけて！↓
-;　たすけにきて！@KEY()↓
-;◆ここが　どこなのか↓
-;　わからない。@KEY()↓
+◆...@KEY()↓
+◆@DSP_NAME(PC_NESS)!@KEY()↓
+◆I...@DSP_NAME(PC_PAULA)...@KEY()↓
+◆I am @DSP_NAME(PC_PAULA)...@KEY()↓
+◆Can you hear me calling you?@KEY()↓
+◆Help!@KEY()↓
+◆Come and help me!@KEY()↓
+◆Um, I don’t know where I am...@KEY()↓
+◆I can hear water running in the distance...@KEY()↓
+;◆‥‥しは @DSP_STS(STS_PC_NAME_PAULA)↓
+; わたしは @DSP_STS(STS_PC_NAME_PAULA)です。@KEY()↓
+;◆わたしの よびかけを↓
+; かんじますか? @DSP_STS(STS_PC_NAME_NES)@KEY()↓
+;◆たすけて!↓
+; たすけにきて!@KEY()↓
+;◆ここが どこなのか↓
+; わからない。@KEY()↓
 ;◆‥‥とおくから↓
-;　みずの　ながれるおとが↓
-;　きこえる‥‥。@KEY()↓
-;◆@DSP_STS(STS_PC_NAME_NES)！
+; みずの ながれるおとが↓
+; きこえる‥‥。@KEY()↓
+;◆@DSP_STS(STS_PC_NAME_NES)!
 @WI(20)↓
 @WI(60)↓
-◆@DSP_NAME(PC_NESS)，　ｐｌｅａｓｅ　ｈｅｌｐ　ｍｅ！
-;◆@DSP_STS(STS_PC_NAME_NES)　たすけにきて！
+◆@DSP_NAME(PC_NESS), please help me!
+;◆@DSP_STS(STS_PC_NAME_NES) たすけにきて!
 @KEYNP()
 @CLOSEALL()
 @WI(1)
@@ -1556,17 +1556,17 @@ MSG_TWSN_POLA_TELEPATHY;003_B
 
 MSG_WINS_POLA_TELEPATHY;013_B
 @OPEN(1)
-◆Ｙｏｕ　ａｒｅ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　Ｉ　ｈａｖｅ　ｎｅｖｅｒ　ｍｅｔ　ｂｅｆｏｒｅ．．．@KEY()↓
-◆@DSP_NAME(PC_JEFF)．．．@KEY()↓
-◆Ｈｅａｄ　ｓｏｕｔｈ．．．@KEY()↓
-◆Ｉ　ａｍ　@DSP_STS(STS_PC_NAME_PAULA)．．．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｈｅａｒ　ｔｈｉｓ　ｍｅｓｓａｇｅ，　ｇｏ　ｔｏ　ｔｈｅ　ｓｏｕｔｈ．．．
-;◆まだ　あったことのない↓
-;　わたしたちのなかま‥‥@DSP_STS(STS_PC_NAME_JEFF)！@KEY()↓
-;◆とにかく　みなみに　むかって。↓
-;　‥‥わたしは　@DSP_STS(STS_PC_NAME_PAULA)‥‥。@KEY()↓
-;◆わたしの　こころを　かんじたら↓
-;　みなみに　むかってください‥‥
+◆You are a friend who I have never met before...@KEY()↓
+◆@DSP_NAME(PC_JEFF)...@KEY()↓
+◆Head south...@KEY()↓
+◆I am @DSP_STS(STS_PC_NAME_PAULA)...@KEY()↓
+◆If you hear this message, go to the south...
+;◆まだ あったことのない↓
+; わたしたちのなかま‥‥@DSP_STS(STS_PC_NAME_JEFF)!@KEY()↓
+;◆とにかく みなみに むかって。↓
+; ‥‥わたしは @DSP_STS(STS_PC_NAME_PAULA)‥‥。@KEY()↓
+;◆わたしの こころを かんじたら↓
+; みなみに むかってください‥‥
 @KEYNP()
 @CLOSEALL()
 @CLRF(FLG_WINS_POLA_TELEPATHY)
@@ -1578,21 +1578,21 @@ MSG_WINS_POLA_TELEPATHY;013_B
 
 MSG_EVT_BIKINI_WHISPER_A;フィールドでホテルの扉前に移動し、くるりと振り返った時
 @OPEN(1)
-◆Ａｈｈｈｈｈ．
+◆Ahhhhh.
 ;◆アッハン。
 @KEY()
 @CLOSEALL()
 』
 MSG_EVT_BIKINI_WHISPER_B;フロントで
 @OPEN(1)
-◆Ｈｕｍｍｍｍｍｍ．
+◆Hummmmmm.
 ;◆ウッフン。
 @KEY()
 @CLOSEALL()
 』
 MSG_EVT_BIKINI_WHISPER_C;廊下で
 @OPEN(1)
-◆Ｈｅ　ｈｅ　ｈｅｈ．
+◆He he heh.
 ;◆クックック。
 @KEY()
 @CLOSEALL()
@@ -1600,11 +1600,11 @@ MSG_EVT_BIKINI_WHISPER_C;廊下で
 ;-------------------------------------------------
 
 MSG_CHECK_WINS_BRICKROAD;ブリックロードのダンジョンの看板
-◆（Ｔｈｉｓ　ｄｕｎｇｅｏｎ　ｈａｓ　ｎｏ　ｅｎｔｒａｎｃｅ　ｆｅｅ．@KEY()↓
-◆Ｃｏｍｅ　ｏｎ　ｉｎ！）
-;◆（このダンジョンは↓
-;　にゅうじょうりょう↓
-;　いりません。@WI(20)どうぞ　どうぞ）
+◆(This dungeon has no entrance fee.@KEY()↓
+◆Come on in!)
+;◆(このダンジョンは↓
+; にゅうじょうりょう↓
+; いりません。@WI(20)どうぞ どうぞ)
 @KEYNP()
 』
 
@@ -1614,65 +1614,65 @@ MSG_CHECK_WINS_BRICKROAD;ブリックロードのダンジョンの看板
 ;「デパートのかいじん」
 ;-------------------------------------------------
 
-;ヘリコプターのポーキー（S_EVENTに）
-;◆とんまやろうの　@DSP_STS(STS_PC_NAME_NES)！↓
-;　じたばたしても　おそいぜ！↓
-;　バイバイ！@KEY()↓
-;◆おひとよしに　もどっちまった↓
-;　モノトリーじいさんには↓
-;　もう　ようは　ないね。@KEY()↓
-;◆おれ　ヘリコプターにのれて↓
-;　うれしいぜ！@KEY()↓
-;◆おしり　ペンペーン！@KEY()↓
-;◆アッカン　ベロベロベー！@KEYNP()
+;ヘリコプターのポーキー(S_EVENTに)
+;◆とんまやろうの @DSP_STS(STS_PC_NAME_NES)!↓
+; じたばたしても おそいぜ!↓
+; バイバイ!@KEY()↓
+;◆おひとよしに もどっちまった↓
+; モノトリーじいさんには↓
+; もう ようは ないね。@KEY()↓
+;◆おれ ヘリコプターにのれて↓
+; うれしいぜ!@KEY()↓
+;◆おしり ペンペーン!@KEY()↓
+;◆アッカン ベロベロベー!@KEYNP()
 ;』
 
 MSG_FOUR_CHECK_HELIDOOR;ヘリポートへのドア
-◆（Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｄｏｏｒｗａｙ．．．）
-;◆（‥‥ドアがあるようなふんいき）
+◆(It looks like a doorway...)
+;◆(‥‥ドアがあるようなふんいき)
 @KEYNP()
 』
 ;-------------------------------------------------
 
-MSG_SUMS_PHONE_RICEBOWL;博物館の電話（ライスボウル）
+MSG_SUMS_PHONE_RICEBOWL;博物館の電話(ライスボウル)
 @SE(SE_se0b_tel_put)@WI(20)
 @GOSUB(MSG_EVT_SUMS_RING_STOP);電話止む
-◆Ｈｅｌｌｏ！@KEY()↓
-◆Ｉｓ　ｔｈｉｓ　Ｍｒ．　Ｆｏｒｋ　ｏｆ　ｔｈｅ　Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ？．．．@KEY()↓
-◆Ｉｔ　ｄｏｅｓｎ’ｔ　ｓｏｕｎｄ　ｌｉｋｅ　ｙｏｕ．．．@KEY()↓
-◆Ｗｅｌｌ，　Ｉ’ｌｌ　ｑｕｉｃｋｌｙ　ｔｅｌｌ　ｙｏｕ　ｍｙ　ｓｔｏｒｙ，　’ｃａｕｓｅ　Ｉ’ｍ　ｂｕｓｙ，　ｂｕｓｙ，　ｂｕｓｙ！@KEY()↓
-◆Ｉ　ｆｏｕｎｄ　ｓｏｍｅｔｈｉｎｇ　ｓｏ　ｅｘｔｒａｏｒｄｉｎａｒｙ　ｔｈａｔ　ｍｅｒｅ　ｗｏｒｄｓ　ｃｏｕｌｄ　ｎｏｔ　ｄｏ　ｉｔ　ｊｕｓｔｉｃｅ．@KEY()↓
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｍｅａｎ　”ｗｈｏ　ａｍ　Ｉ”？@KEY()↓
-◆Ｄｏｎ’ｔ　ｙｏｕ　ｒｅｃｏｇｎｉｚｅ　ｍｙ　ｖｏｉｃｅ？@KEY()↓
-◆Ｉｔ’ｓ　ｍｅ，　Ｍｒ．　Ｓｐｏｏｎ　ｆｒｏｍ　ｔｈｅ　Ｆｏｕｒｓｉｄｅ　Ｍｕｓｅｕｍ　ｏｆ　Ｎａｔｕｒａｌ　Ｈｉｓｔｏｒｙ！@KEY()↓
-◆Ｌｏｏｋ　Ｍｒ．　Ｆｏｒｋ，　Ｉ’ｍ　ｎｏｔ　ｅｘａｇｇｅｒａｔｉｎｇ　ｔｈｉｓ　ｆｉｎｄ！@KEY()↓
-◆Ｉ’ｍ　ｔｅｌｌｉｎｇ　ｙｏｕ．．．@KEY()↓
-◆Ｉｔ’ｓ　ｆａｎｔａｓｔｉｃ！．．．．．@KEY()↓
-◆Ｉｔ’ｓ　ｏｕｔｒａｇｅｏｕｓ！．．．@KEY()↓
-◆＊Ｃｌｉｃｋ＊　　Ｂｅｅｅｅｅｐ
-;◆もしもし！@WI(10)↓
-;　「スカラビぶんかはくぶつかん」の↓
-;　チャップスティックくんかい！？@KEY()↓
-;◆‥‥ちょっと　こえが↓
-;　ちがうみたいだけど@WI(15)↓
-;　ま　いいや。@KEY()↓
-;◆ぼくは　じぶんのようじだけ↓
-;　いいます。@WI(15)↓
-;　‥‥いそがしいから。@KEY()↓
-;◆とにかく　くちでは↓
-;　いえないくらい↓
-;　たいへんなものを@KEY()↓
-;◆はっけんしたんですよ！@KEY()↓
-;◆‥‥だれって　わたしですよ！@WI(10)↓
-;　「フォーサイド↓
-;　しぜんはくぶつかん」の@KEY()↓
-;◆ライスボウルですよ！@KEY()↓
-;◆べつに　これは↓
-;　じまんばなしじゃないんだよ。@KEY()↓
-;◆でも　わたしは‥‥↓
-;　ある「とんでもないもの」を↓
-;　はっけんした！　と‥‥。@KEY()↓
-;◆ガチャン！　ツーツーツー
+◆Hello!@KEY()↓
+◆Is this Mr. Fork of the Scaraba Cultural Museum?...@KEY()↓
+◆It doesn’t sound like you...@KEY()↓
+◆Well, I’ll quickly tell you my story, ’cause I’m busy, busy, busy!@KEY()↓
+◆I found something so extraordinary that mere words could not do it justice.@KEY()↓
+◆What do you mean ”who am I”?@KEY()↓
+◆Don’t you recognize my voice?@KEY()↓
+◆It’s me, Mr. Spoon from the Fourside Museum of Natural History!@KEY()↓
+◆Look Mr. Fork, I’m not exaggerating this find!@KEY()↓
+◆I’m telling you...@KEY()↓
+◆It’s fantastic!.....@KEY()↓
+◆It’s outrageous!...@KEY()↓
+◆＊Click＊  Beeeeep
+;◆もしもし!@WI(10)↓
+; 「スカラビぶんかはくぶつかん」の↓
+; チャップスティックくんかい!?@KEY()↓
+;◆‥‥ちょっと こえが↓
+; ちがうみたいだけど@WI(15)↓
+; ま いいや。@KEY()↓
+;◆ぼくは じぶんのようじだけ↓
+; いいます。@WI(15)↓
+; ‥‥いそがしいから。@KEY()↓
+;◆とにかく くちでは↓
+; いえないくらい↓
+; たいへんなものを@KEY()↓
+;◆はっけんしたんですよ!@KEY()↓
+;◆‥‥だれって わたしですよ!@WI(10)↓
+; 「フォーサイド↓
+; しぜんはくぶつかん」の@KEY()↓
+;◆ライスボウルですよ!@KEY()↓
+;◆べつに これは↓
+; じまんばなしじゃないんだよ。@KEY()↓
+;◆でも わたしは‥‥↓
+; ある「とんでもないもの」を↓
+; はっけんした! と‥‥。@KEY()↓
+;◆ガチャン! ツーツーツー
 @KEYNP()
 @SE(SE_se0b_tel_put)
 @CLRF(FLG_SUMS_MUSEUM_PHONE_RING)
@@ -1688,18 +1688,18 @@ MSG_MANIMANI_RECEIVE;タコけしマシンを「マジカントのあくま」�
 @LOAD_REG()
 @EQ(GDS_TOOL_KEY_TAKOKESHI)
 @FALSE_GOTO(MSG_SYS_GOODS_USE_NG)
-◆Ｄｏ　ｙｏｕ　ｒｅａｌｌｙ　ｔｈｉｎｋ　ｔｈｉｓ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｐｅｎｃｉｌ？
-;◆このてきの　どこが↓
-;　タコに　にているというのだ？
+◆Do you really think this looks like a pencil?
+;◆このてきの どこが↓
+; タコに にているというのだ?
 @KEYNP()
 』
 _MANIMANI_RECEIVE_KOKESHI;
-◆Ｉｔ　ｌｏｏｋｓ　ｓｏｒｔ　ｏｆ　ｌｉｋｅ　ｓｏｍｅ　ｐｒｉｍｉｔｉｖｅ　ｈｕｍａｎ　ｓｔａｔｕｅ@KEY()↓
-◆ｉｆ　ｙｏｕ　ｌｏｏｋ　ａｔ　ｉｔ　ｆｒｏｍ　ｔｈｅ　ｒｉｇｈｔ　ａｎｇｌｅ．．．@KEY()↓
-◆Ｂｕｔ　ｉｔ　ｄｅｆｉｎｉｔｅｌｙ　ｄｏｅｓｎ’ｔ　ｌｏｏｋ　ｌｉｋｅ　ａｎ　ｅｒａｓｅｒ．．．ｄｏｅｓ　ｉｔ？
-;◆これは　みようによっては↓
-;　こけしにも　にているが↓
-;　こけしとは　いえない。
+◆It looks sort of like some primitive human statue@KEY()↓
+◆if you look at it from the right angle...@KEY()↓
+◆But it definitely doesn’t look like an eraser...does it?
+;◆これは みようによっては↓
+; こけしにも にているが↓
+; こけしとは いえない。
 @KEYNP()
 』
 
@@ -1708,10 +1708,10 @@ MSG_HAPPY_USHI_RECEIVE;うしに「ニンジン」
 @XCHG()
 @EQ(GDS_TOOL_KEY_CARROT)
 @FALSE_GOTO(MSG_SYS_GOODS_USE_NG)
-◆Ｃｏｗｓ　ａｎｄ　ｃａｒｒｏｔｓ？．．．@KEY()↓
-◆Ｔｈａｔ’ｓ　ａ　ｎｕｔｔｙ　ｃｏｍｂｉｎａｔｉｏｎ！
-;◆ウシには　ニンジンは↓
-;　にあわない‥‥だろう？
+◆Cows and carrots?...@KEY()↓
+◆That’s a nutty combination!
+;◆ウシには ニンジンは↓
+; にあわない‥‥だろう?
 @KEYNP()
 』
 ;-------------------------------------------------
@@ -1723,18 +1723,18 @@ MSG_DOSEI_JEFF_RECEIVE;上の手紙をもらったジェフのセリフ
 @FALSE_GOTO(MSG_SYS_GOODS_USE_NG)
 @GET_CHAR_DIR(PRSN_DOSE_FIELD_V,1,PC_NESS);ネスの方を向く
 @SET_CHAR_DIR(PRSN_DOSE_FIELD_V,0)
-◆Ａｈ，　@DSP_NAME(PC_NESS)．．．ｙｏｕ’ｖｅ　ｒｅａｄ　ｉｔ　ａｌｒｅａｄｙ．@KEY()↓
-◆．．．Ｔｈａｔ　Ｔｏｎｙ　ｈａｓ　ａ　ｈｅａｒｔ　ｏｆ　ｇｏｌｄ．．．
+◆Ah, @DSP_NAME(PC_NESS)...you’ve read it already.@KEY()↓
+◆...That Tony has a heart of gold...
 ;◆あ‥‥@WI(20)@DSP_STS(STS_PC_NAME_NES)↓
-;　きみ@WI(15)　これ　よんじゃったね。@KEY()↓
+; きみ@WI(15) これ よんじゃったね。@KEY()↓
 ;◆‥‥トニーって↓
-;　ねは　いいやつなんだよ。
+; ねは いいやつなんだよ。
 @KEYNP()
 』
 ;-------------------------------------------------
 
 ;デリバリーフラグを降ろすサブルーチン
-MSG_GLOBAL_DELIVERY_RESET;（場面転換時に配達を中止）
+MSG_GLOBAL_DELIVERY_RESET;(場面転換時に配達を中止)
 @CLRF(FLG_DELIVERY_PIZZA)
 @CLRF(FLG_DELIVERY_UNSOU)
 @CLRF(FLG_DELIVERY_UNSOU_B)
@@ -1750,27 +1750,27 @@ MSG_GLOBAL_DELIVERY_RESET;（場面転換時に配達を中止）
 ;------------------------------------------------------------
 
 MSG_GLOBAL_BOSS_NG;対ガーディアン時ネス死にの場合共通
-◆Ｏｎｌｙ　@DSP_NAME(PC_NESS)　ｃａｎ　ａｂｓｏｒｂ　ｔｈｅ　ｐｏｗｅｒ　ｏｆ　ｔｈｉｓ　ｐｌａｃｅ．
-;◆@DSP_STS(STS_PC_NAME_NES)いがいの　ものには↓;ネスじゃない時のセリフ
-;　このばしょの　パワーを↓
-;　ひきだすことができない。
+◆Only @DSP_NAME(PC_NESS) can absorb the power of this place.
+;◆@DSP_STS(STS_PC_NAME_NES)いがいの ものには↓;ネスじゃない時のセリフ
+; このばしょの パワーを↓
+; ひきだすことができない。
 @KEYNP()
 』
 ;------------------------------------------------------------
 
 ;追加メッセージ
 MSG_SUMS_OPENCAR;
-◆Ｈｅｙ，　ｈｅｙ！！@KEY()↓
-◆Ｓｔｏｐ　ｐｕｔｔｉｎｇ　ｙｏｕｒ　ｇｒｉｍｙ　ｆｉｎｇｅｒｐｒｉｎｔｓ　ａｌｌ　ｏｖｅｒ　ｍｙ　ｃａｒ，　ｙｏｕ　ｌｉｔｔｌｅ　ｐｕｎｋ！
-;◆おいおい！@WI(20)　オレのクルマに↓
-;　べたべたべったべた　しもん↓
-;　つけんじゃねえっての！
+◆Hey, hey!!@KEY()↓
+◆Stop putting your grimy fingerprints all over my car, you little punk!
+;◆おいおい!@WI(20) オレのクルマに↓
+; べたべたべったべた しもん↓
+; つけんじゃねえっての!
 @KEYNP()
 』
 
 MSG_DSRT_HIGHWAY_E;			;added 0717
-◆Ｗｅｌｃｏｍｅ　ｔｏ　ｔｈｅ　ｖｅｒｙ　ｅｎｄ　ｏｆ　ｔｈｅ　ｗｏｒｌｄ’ｓ　ｌｏｎｇｅｓｔ　ｔｒａｆｆｉｃ　ｊａｍ！
-;◆じゅうたいのケツへ　ヨーコソ！
+◆Welcome to the very end of the world’s longest traffic jam!
+;◆じゅうたいのケツへ ヨーコソ!
 @KEYNP()
 @!
 
@@ -1785,55 +1785,55 @@ MSG_TWSN_HOTEL_A;
 @CHKFGOTO(FLG_TEMP_3,_TWSN_HOTEL_A_3)
 @CHKFGOTO(FLG_TEMP_2,_TWSN_HOTEL_A_2)
 @CHKFGOTO(FLG_TEMP_1,_TWSN_HOTEL_A_1)
-◆Ｗｈａｔ？
-;◆なに？
+◆What?
+;◆なに?
 @KEYNP()
 @SETF(FLG_TEMP_1)
 』
 _TWSN_HOTEL_A_1;
-◆Ｓｏ．．．ｗｈａｔ？
-;◆だから@WI(20)　なに？
+◆So...what?
+;◆だから@WI(20) なに?
 @KEYNP()
 @SETF(FLG_TEMP_2)
 』
 _TWSN_HOTEL_A_2;
-◆Ｈｕｈ？
-;◆えっ？
+◆Huh?
+;◆えっ?
 @KEYNP()
 @SETF(FLG_TEMP_3)
 』
 _TWSN_HOTEL_A_3;
-◆Ｐａｒｄｏｎ？
-;◆なんだあ？
+◆Pardon?
+;◆なんだあ?
 @KEYNP()
 @SETF(FLG_TEMP_4)
 』
 _TWSN_HOTEL_A_4;
-◆Ｇｅｅｚ．．．
+◆Geez...
 ;◆ちっ。
 @KEYNP()
 @SETF(FLG_TEMP_5)
 』
 _TWSN_HOTEL_A_5;
-◆Ｍｍｍ？
-;◆あ〜ん？
+◆Mmm?
+;◆あ〜ん?
 @KEYNP()
 @SETF(FLG_TEMP_6)
 』
 _TWSN_HOTEL_A_6;
-◆Ｙｏｕ’ｒｅ　ａｎｎｏｙｉｎｇ！
+◆You’re annoying!
 ;◆しつこいぞ。
 @KEYNP()
 @SETF(FLG_TEMP_7)
 』
 _TWSN_HOTEL_A_7;
-◆Ｄａｎｇ　ｍｅ！
+◆Dang me!
 ;◆ったく。
 @KEYNP()
 @SETF(FLG_TEMP_8)
 』
 _TWSN_HOTEL_A_8;
-◆Ｙｅａｈ，　ｙｅａｈ！
+◆Yeah, yeah!
 ;◆はいはい。
 @KEYNP()
 @SETF(FLG_TWSN_HOTEL_A)
@@ -1854,54 +1854,54 @@ _TWSN_HOTEL_A_9;
 @CHKFGOTO(FLG_TEMP_3,_TWSN_HOTEL_A_12)
 @CHKFGOTO(FLG_TEMP_2,_TWSN_HOTEL_A_11)
 @CHKFGOTO(FLG_TEMP_1,_TWSN_HOTEL_A_10)
-◆Ａｈ，　ｈａ　ｈａ！
+◆Ah, ha ha!
 ;◆あはは。
 @KEYNP()
 @SETF(FLG_TEMP_1)
 』
 _TWSN_HOTEL_A_10;
-◆Ｈｅｙ，　ｙｏｕ！
-;◆こらっ！
+◆Hey, you!
+;◆こらっ!
 @KEYNP()
 @SETF(FLG_TEMP_2)
 』
 _TWSN_HOTEL_A_11;
-◆Ｌａｔｅｒ　ｄａｙｓ，　ｐａｌ！
-;jpn:◆ばいばい@WI(20)　ね。
+◆Later days, pal!
+;jpn:◆ばいばい@WI(20) ね。
 @KEYNP()
 @SETF(FLG_TEMP_3)
 』
 _TWSN_HOTEL_A_12;
-◆Ａｈ！　　Ｈａｈ　Ｈａｈｈｈｈ．．．
-;◆あはははは！
+◆Ah!  Hah Hahhhh...
+;◆あはははは!
 @KEYNP()
 @SETF(FLG_TEMP_4)
 』
 _TWSN_HOTEL_A_13;
-◆Ｉｔ’ｓ　ｓｏｏｏ　ｈｏｔ　ｔｏｄａｙ．@KEY()↓
-◆Ｉｔ　ｒｏｃｋｓ！
-;◆きょうは　あついな。
+◆It’s sooo hot today.@KEY()↓
+◆It rocks!
+;◆きょうは あついな。
 @KEYNP()
 @SETF(FLG_TEMP_5)
 』
 _TWSN_HOTEL_A_14;
-◆Ｉｓ　ｉｔ　ｃｏｌｄ　ｔｏｄａｙ？
-;◆きょうは　さむいか？
+◆Is it cold today?
+;◆きょうは さむいか?
 @KEYNP()
 @SETF(FLG_TEMP_6)
 』
 _TWSN_HOTEL_A_15;
-◆Ｏｈ　ｈｏ　ｈｏ！@KEY()↓
-◆Ｓｅｅ　ｙａ！
-;◆あはは@WI(30)　じゃあな。
+◆Oh ho ho!@KEY()↓
+◆See ya!
+;◆あはは@WI(30) じゃあな。
 @KEYNP()
 @SETF(FLG_TEMP_7)
 』
 _TWSN_HOTEL_A_16;
-◆Ｈｅｒｅ，　ｇｅｔ　ｙｏｕｒｓｅｌｆ　ａ　ｊｕｉｃｅ　ｏｒ　ｓｏｍｅｔｈｉｎｇ．．．@KEY()↓
-◆＊Ｋａ−ｃｈｉｎｇ＊
-;◆これで@WI(20)（ジャラジャラ）@WI(20)↓
-;　ジュースでもかいなよ。
+◆Here, get yourself a juice or something...@KEY()↓
+◆＊Ka−ching＊
+;◆これで@WI(20)(ジャラジャラ)@WI(20)↓
+; ジュースでもかいなよ。
 @KEY()↓
 @MONEYIN(50)
 @SE(SE_se74_my_get)
@@ -1909,15 +1909,15 @@ _TWSN_HOTEL_A_16;
 @WI(60)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(PC_NESS)　ｇｏｔ　５０　ｄｏｌｌａｒｓ．
-;◆（@DSP_NAME(0)は↓
-;　５０ドル　もらった）
+◆@DSP_NAME(PC_NESS) got ５０ dollars.
+;◆(@DSP_NAME(0)は↓
+; ５０ドル もらった)
 @KEYNP()
 @SETF(FLG_TWSN_HOTEL_A_END)
 』
 _TWSN_HOTEL_A_END;
-◆Ｇｏｏｄ　ｌｕｃｋ，　ｏｋ？
-;◆がんばれ@WI(20)　な。
+◆Good luck, ok?
+;◆がんばれ@WI(20) な。
 @KEYNP()
 』
 ;------------------------------------------------------------
@@ -1930,45 +1930,45 @@ MSG_GLOBAL_PHONE_TRACY_LOSTITEM;
 ;@GOSUB(MSG_SUB_BGM_FADEOUT_05SECOND)
 @SE(SE_se0b_tel_put)
 @OPEN(1)
-◆Ｓｏｒｒｙ　ｔｏ　ｂｏｔｈｅｒ　ｙｏｕ，　ｂｉｇ　ｂｒｏ．．．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
-◆Ｉ　ｈａｄ　ａ　ｐｈｏｎｅ　ｃａｌｌ　ｆｒｏｍ　ａ　ｆｒｉｅｎｄ　ｏｆ　ｙｏｕｒｓ　ｒｅｃｅｎｔｌｙ　ｃａｌｌｅｄ．@KEY()↓
+◆Sorry to bother you, big bro...@KEY()↓
+◆This is Escargo Express.@KEY()↓
+◆I had a phone call from a friend of yours recently called.@KEY()↓
 @CHKFGOTO(FLG_SKRB_PU_TAKANOME,_PHONE_TRACY_LOSTITEM_PU)
-◆Ｓｈｅ　ａｓｋｅｄ　ｍｅ　ｔｏ　ｈｏｌｄ　ｏｎｔｏ　ｔｈｅ　Ｐｅｎｃｉｌ　Ｅｒａｓｅｒ　ｍａｃｈｉｎｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｋｎｏｗ　ａｎｙｔｈｉｎｇ　ａｂｏｕｔ　ｔｈｉｓ？
+◆She asked me to hold onto the Pencil Eraser machine.@KEY()↓
+◆Do you know anything about this?
 ;◆いそがしいところに↓
-;　でんわして　ごめんね。@WI(20)↓
-;　エスカルゴうんそうでーす。@KEY()↓
-;◆さっき　おにいちゃんの↓
-;　ともだちっていう↓
+; でんわして ごめんね。@WI(20)↓
+; エスカルゴうんそうでーす。@KEY()↓
+;◆さっき おにいちゃんの↓
+; ともだちっていう↓
 ;@CHKFGOTO(FLG_SKRB_PU_TAKANOME,_PHONE_TRACY_LOSTITEM_PU)
-;　おんなのこから　でんわがあって@KEY()↓
+; おんなのこから でんわがあって@KEY()↓
 ;◆「タコけしマシン」ってのを↓
 @SETF(FLG_GLOBAL_LOST_TAKOKESHI)
 @GOTO(_PHONE_TRACY_LOSTITEM_MAIN)
 
 _PHONE_TRACY_LOSTITEM_PU;
-◆Ｈｅ　ａｓｋｅｄ　ｍｅ　ｔｏ　ｈｏｌｄ　ｏｎｔｏ　ｔｈｅ　Ｈａｗｋ　Ｅｙｅ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｋｎｏｗ　ａｎｙｔｈｉｎｇ　ａｂｏｕｔ　ｔｈｉｓ？
-;jpn:　ひとから　でんわがあって@KEY()↓
+◆He asked me to hold onto the Hawk Eye for you.@KEY()↓
+◆Do you know anything about this?
+;jpn: ひとから でんわがあって@KEY()↓
 ;jpn:◆「タカのめ」ってのを↓
 @SETF(FLG_GLOBAL_LOST_TAKANOME)
 
 _PHONE_TRACY_LOSTITEM_MAIN;
-◆Ｗｅｌｌ，　ｓｉｎｃｅ　ｙｏｕ　ｋｎｏｗ　ａｂｏｕｔ　ｔｈｅ　ｉｔｅｍ，　Ｉ’ｌｌ　ｈｏｌｄ　ｏｎｔｏ　ｉｔ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｎｅｅｄ　ｉｔ，　Ｉ’ｌｌ　ｄｅｌｉｖｅｒ　ｉｔ　ｔｏ　ｙｏｕ　ａｎｙｔｉｍｅ　ｙｏｕ　ｗａｎｔ．@KEY()↓
-◆Ｏｈ　ｙｅａｈ，　ｂｉｇ　ｂｒｏ．．．@KEY()↓
-◆Ｉ’ｍ　ｇｌａｄ　ｔｈａｔ　Ｉ　ｃｏｕｌｄ　ｈｅｌｐ　ｏｕｔ　ｙｏｕ　ａｎｄ　ｙｏｕｒ　ｆｒｉｅｎｄｓ．@KEY()↓
-◆＊Ｃｌｉｃｋ＊
-;　あずかったんだけど‥‥↓
-;　いたずらかなぁと　おもって。@KEY()↓
-;◆もし　ほんとなら↓
-;　わたしがあずかってるから@KEY()↓
+◆Well, since you know about the item, I’ll hold onto it for you.@KEY()↓
+◆If you need it, I’ll deliver it to you anytime you want.@KEY()↓
+◆Oh yeah, big bro...@KEY()↓
+◆I’m glad that I could help out you and your friends.@KEY()↓
+◆＊Click＊
+; あずかったんだけど‥‥↓
+; いたずらかなぁと おもって。@KEY()↓
+;◆もし ほんとなら↓
+; わたしがあずかってるから@KEY()↓
 ;◆ひつようなときは↓
-;　いつでも　おとどけするわ。@KEY()↓
+; いつでも おとどけするわ。@KEY()↓
 ;◆‥‥やっぱり↓
-;　いたずらじゃなかったのかぁ。@KEY()↓
-;◆ガチャン　ツーツーツー
+; いたずらじゃなかったのかぁ。@KEY()↓
+;◆ガチャン ツーツーツー
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
@@ -1981,24 +1981,24 @@ _PHONE_TRACY_LOSTITEM_MAIN;
 MSG_GLOBAL_DELIVERY_TACO;
 ;遺失物配達
 @OPEN(1)
-◆Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ！@KEY()↓
-◆”Ｗｅ　ｔｒｅａｔ　ｙｏｕｒ　ｐａｃｋａｇｅ　ｌｉｋｅ　ｉｔ　ｗａｓ　ｏｕｒ　ｏｎｌｙ　ｃｈｉｌｄ”．．．@KEY()↓
-◆Ｉ’ｍ　ｈｅｒｅ　ｗｉｔｈ　ｙｏｕｒ　Ｐｅｎｃｉｌ　Ｅｒａｓｅｒ．
+◆Escargo Express!@KEY()↓
+◆”We treat your package like it was our only child”...@KEY()↓
+◆I’m here with your Pencil Eraser.
 ;◆エスカルゴうんそう↓
-;　しっかりたっきゅうびん↓
-;　でーっす！@KEY()↓
+; しっかりたっきゅうびん↓
+; でーっす!@KEY()↓
 ;◆「タコけしマシン」を↓
-;　だいしきゅう↓
-;　おとどけに　まいりましたー。
+; だいしきゅう↓
+; おとどけに まいりましたー。
 @KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_DELIVERY_TACO_ITEMFULL)
 @GOODSIN_PLAYER(0,GDS_TOOL_KEY_TAKOKESHI)
 @SE(SE_se76_my_give)
-◆Ｈｅｒｅ　ｙｏｕ　ａｒｅ．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ！
-;◆ハイ　たしかに。@WI(20)↓
-;　ありやと　やんしたー。
+◆Here you are.@KEY()↓
+◆Thank you very much!
+;◆ハイ たしかに。@WI(20)↓
+; ありやと やんしたー。
 @KEYNP()
 @CLRF(FLG_DELIVERY_UNSOU_TAKOKESHI)
 @CLRF(FLG_GLOBAL_LOST_TAKOKESHI)
@@ -2009,11 +2009,11 @@ MSG_GLOBAL_DELIVERY_TACO;
 』
 
 _DELIVERY_TACO_ITEMFULL;
-◆Ｙｏｕ’ｖｅ　ｒｅａｌｌｙ　ｇｏｔ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｉ　ｈｏｐｅ　Ｉ　ｃａｎ　ｄｅｌｉｖｅｒ　ｔｈｉｓ　ｔｏ　ｙｏｕ　ｓｏｏｎ！
-;◆あれ　にもつが↓
-;　いっぱいですね。@WI(20)↓
-;　じゃ　また　よろしく。
+◆You’ve really got too much stuff already.@KEY()↓
+◆I hope I can deliver this to you soon!
+;◆あれ にもつが↓
+; いっぱいですね。@WI(20)↓
+; じゃ また よろしく。
 @KEY()
 @CLOSEALL()
 @CLRF(FLG_DELIVERY_UNSOU_TAKOKESHI)
@@ -2026,23 +2026,23 @@ _DELIVERY_TACO_ITEMFULL;
 MSG_GLOBAL_DELIVERY_TAKA;
 ;遺失物配達
 @OPEN(1)
-◆Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
-◆”Ｗｅ　ｔｒｅａｔ　ｙｏｕｒ　ｐａｃｋａｇｅ　ｌｉｋｅ　ｉｔ　ｗａｓ　ｏｕｒ　ｏｎｌｙ　ｃｈｉｌｄ”．．．@KEY()↓
-◆Ｉ’ｍ　ｈｅｒｅ　ｔｏ　ｄｅｌｉｖｅｒ　ｔｈｅ　Ｈａｗｋ　Ｅｙｅ．
+◆Escargo Express.@KEY()↓
+◆”We treat your package like it was our only child”...@KEY()↓
+◆I’m here to deliver the Hawk Eye.
 ;◆エスカルゴうんそう↓
-;　しっかりたっきゅうびん↓
-;　でーっす！@KEY()↓
+; しっかりたっきゅうびん↓
+; でーっす!@KEY()↓
 ;◆「タカのめ」を↓
-;　おとどけに　まいりましたー。
+; おとどけに まいりましたー。
 @KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_DELIVERY_TAKA_ITEMFULL)
 @GOODSIN_PLAYER(0,GDS_TOOL_EAGLE_EYE)
 @SE(SE_se76_my_give)
-◆Ｈｅｒｅ　ｙｏｕ　ａｒｅ．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ！
-;◆ハイ　たしかに。@WI(20)↓
-;　ありやと　やんしたー。
+◆Here you are.@KEY()↓
+◆Thank you very much!
+;◆ハイ たしかに。@WI(20)↓
+; ありやと やんしたー。
 @KEYNP()
 @CLOSEALL()
 @CLRF(FLG_DELIVERY_UNSOU_TAKANOME)
@@ -2053,11 +2053,11 @@ MSG_GLOBAL_DELIVERY_TAKA;
 』
 
 _DELIVERY_TAKA_ITEMFULL;
-◆Ｙｏｕ’ｖｅ　ｒｅａｌｌｙ　ｇｏｔ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｉ　ｈｏｐｅ　Ｉ　ｃａｎ　ｄｅｌｉｖｅｒ　ｔｈｉｓ　ｔｏ　ｙｏｕ　ｓｏｏｎ！
-;◆あれ　にもつが↓
-;　いっぱいですね。@WI(20)↓
-;　じゃ　また　よろしく。
+◆You’ve really got too much stuff already.@KEY()↓
+◆I hope I can deliver this to you soon!
+;◆あれ にもつが↓
+; いっぱいですね。@WI(20)↓
+; じゃ また よろしく。
 @KEY()
 @CLOSEALL()
 @CLRF(FLG_DELIVERY_UNSOU_TAKANOME)
@@ -2082,7 +2082,7 @@ MSG_GLOBAL_CHECK_HOMESICK;ホームシック検査
 @SET_REG(0)
 @EQ(PC_NESS)
 @FALSE_GOTO(MSG_END)
-@Q_SPECIAL(PC_NESS,6,2);ホームシック？
+@Q_SPECIAL(PC_NESS,6,2);ホームシック?
 @FALSE_GOTO(MSG_END)
 @GOSUB(MSG_SYS_RECOVER_HOMESICK);ホームシック状態回復のナレーション
 』
@@ -2094,21 +2094,21 @@ MSG_GLOBAL_CHECK_HOMESICK;ホームシック検査
 
 ;【回復グッズ・移動スピードが一定時間早くなるものについて・スキップサンド】
 
-;配置場所：ツーソンデパート・パン売り場近く（並んでいる感じ）
-;配置オブジェ：（女の子）
+;配置場所：ツーソンデパート・パン売り場近く(並んでいる感じ)
+;配置オブジェ：(女の子)
 
 MSG_TWSN_SYSINFO_SKIP;
-◆Ｙｕｍ　ｙｕｍ．．．ｍｍｍ．．．Ｉ’ｍ　ｅａｔｉｎｇ　ａ　ｓｋｉｐ　ｓａｎｄｗｉｃｈ．@KEY()↓
-◆Ｉｔ　ｍａｋｅｓ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｔａｒｔ　ｓｋｉｐｐｉｎｇ！@KEY()↓
-◆Ｉ　ｓａｗ　ｉｔ　ｏｎ　ａ　ＴＶ　ａｄ，　ａｎｄ　Ｉ　ｊｕｓｔ　ｈａｄ　ｔｏ　ｔｒｙ　ｏｎｅ．@KEY()↓
-◆Ｉ’ｌｌ　ｂｅｔ　Ｉ　ｃａｎ　ｒｅａｌｌｙ　ｍｏｖｅ　ａｆｔｅｒ　ｅａｔｉｎｇ　ｔｈｉｓ．．．
-;◆はしりだしたくなる　おいしさ！@WI(20)↓
-;　すきすき　スキップサンド！@KEY()↓
+◆Yum yum...mmm...I’m eating a skip sandwich.@KEY()↓
+◆It makes you want to start skipping!@KEY()↓
+◆I saw it on a TV ad, and I just had to try one.@KEY()↓
+◆I’ll bet I can really move after eating this...
+;◆はしりだしたくなる おいしさ!@WI(20)↓
+; すきすき スキップサンド!@KEY()↓
 ;◆‥‥っていうコマーシャルに↓
-;　のせられて　スキップサンドを↓
-;　かいにきたのよ　わたし。@KEY()↓
-;◆ほんとに　あしがはやくなったら↓
-;　いいのにね。
+; のせられて スキップサンドを↓
+; かいにきたのよ わたし。@KEY()↓
+;◆ほんとに あしがはやくなったら↓
+; いいのにね。
 @KEYNP()
 』
 
@@ -2116,44 +2116,44 @@ MSG_TWSN_SYSINFO_SKIP;
 
 ;【回復グッズ・ラッキーサンドについて】
 
-;配置場所：オネット・パン屋（あるいはツーソン）
-;配置オブジェ：（女性＆男性）
+;配置場所：オネット・パン屋(あるいはツーソン)
+;配置オブジェ：(女性＆男性)
 
 MSG_ONET_SYSINFO_LUCKY;
-◆Ｉｔ　ｓｅｅｍｓ　ｌｉｋｅ　ｅｖｅｒｙ　ｂａｋｅｒｙ　ｈａｓ　ｂｅｅｎ　ｍａｋｉｎｇ　ｌｕｃｋｙ　ｓａｎｄｗｉｃｈｅｓ　ｔｈｅｓｅ　ｄａｙｓ．@KEY()↓
-◆Ｔｈｅｙ’ｒｅ　ｋｉｎｄ　ｏｆ　ｌｉｋｅ　ｆｏｒｔｕｎｅ　ｃｏｏｋｉｅｓ，　ｅｘｃｅｐｔ　ｙｏｕ　ｃａｎ　ｗｉｎ　ｓｔｕｆｆ．@KEY()↓
-◆Ｏｈ　ｙｅａｈ，　ａｎｄ　ｉｔ’ｓ　ａ　ｓａｎｄｗｉｃｈ．@KEY()↓
-◆Ｏｋａｙ，　ｓｏ　ｍａｙｂｅ　ｉｔ’ｓ　ｎｏｔ　ｌｉｋｅ　ａ　ｆｏｒｔｕｎｅ　ｃｏｏｋｉｅ．@KEY()↓
-◆Ａｎｙｗａｙ，　ｔｈｅ　ｂｅｓｔ　ｔｈｉｎｇ　ｔｈａｔ　ｃａｎ　ｈａｐｐｅｎ　ｉｓ　”ｒｅｃｏｖｅｒ　ＰＰ．”@KEY()↓
-◆Ｉ　ｊｕｓｔ　ｗｉｓｈ　Ｉ　ｋｎｅｗ　ｗｈａｔ　”ＰＰ”　ｗａｓ．．．
-;◆さいきん　どこのパンやでも↓
-;　ラッキーサンドを↓
-;　おいてるみたいだけど@KEY()↓
+◆It seems like every bakery has been making lucky sandwiches these days.@KEY()↓
+◆They’re kind of like fortune cookies, except you can win stuff.@KEY()↓
+◆Oh yeah, and it’s a sandwich.@KEY()↓
+◆Okay, so maybe it’s not like a fortune cookie.@KEY()↓
+◆Anyway, the best thing that can happen is ”recover PP.”@KEY()↓
+◆I just wish I knew what ”PP” was...
+;◆さいきん どこのパンやでも↓
+; ラッキーサンドを↓
+; おいてるみたいだけど@KEY()↓
 ;◆あたりはずれのある↓
-;　まるで　おみくじみたいな↓
-;　サンドイッチなんだってね。@KEY()↓
+; まるで おみくじみたいな↓
+; サンドイッチなんだってね。@KEY()↓
 ;◆おおあたりが↓
-;　「ＰＰ　かいふく」ってことだけど↓
-;　「ＰＰ」って‥‥なに？？
+; 「PP かいふく」ってことだけど↓
+; 「PP」って‥‥なに??
 @KEYNP()
 』
 
 ;【たべものは基本的に値段の高いものほど良く回復する、と覚えておけば良いことの説明】
 
 ;配置場所：オネット・ハンバーガー屋
-;配置オブジェ：（キャップ）
+;配置オブジェ：(キャップ)
 
 MSG_ONET_SYSINFO_PRICE;
 ;１２３４５６７８９０１２３４５６７８９
-◆Ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｙｏｕ　ｇｅｔ　ｍｏｒｅ　ｆｏｏｄ　ｖａｌｕｅ　ｏｕｔ　ｏｆ　１４　ｂｕｃｋｓ　ｗｏｒｔｈ　ｏｆ　ｂｕｒｇｅｒｓ@KEY()↓
-◆ｔｈａｎ　８　ｂｕｃｋｓ　ｗｏｒｔｈ　ｏｆ　ｆｒｅｎｃｈ　ｆｒｉｅｓ？@KEY()↓
-◆Ｙｏｕ’ｌｌ　ｆｅｅｌ　ｂｅｔｔｅｒ　ａｎｄ　ｍｏｒｅ　ｅｎｅｒｇｅｔｉｃ　ｉｆ　ｙｏｕ　ｅａｔ　ｂｅｔｔｅｒ　ｆｏｏｄｓ．@KEY()↓
-◆Ｙｏｕ　ｋｎｏｗ−−ｙｏｕ’ｌｌ　ｒｅｃｏｖｅｒ　ｍｏｒｅ　ｈｅａｌｔｈ　ｉｆ　ｙｏｕ　ｅａｔ　ｍｏｒｅ　ｅｘｐｅｎｓｉｖｅ　ｆｏｏｄ．
+◆Don’t you think you get more food value out of １４ bucks worth of burgers@KEY()↓
+◆than ８ bucks worth of french fries?@KEY()↓
+◆You’ll feel better and more energetic if you eat better foods.@KEY()↓
+◆You know−−you’ll recover more health if you eat more expensive food.
 ;◆８ドルのポテトフライより↓
-;　１４ドルのハンバーガーのほうが↓
-;　たべたきに　なるわよね。@KEY()↓
-;◆そのぶんだけ　たくさんげんきに↓
-;　なるってことかな。
+; １４ドルのハンバーガーのほうが↓
+; たべたきに なるわよね。@KEY()↓
+;◆そのぶんだけ たくさんげんきに↓
+; なるってことかな。
 @KEYNP()
 』
 
@@ -2161,25 +2161,25 @@ MSG_ONET_SYSINFO_PRICE;
 
 ;【すっきりハーブの説明】
 
-;配置場所：ＨＰ村のドラッグストア
-;配置オブジェ：（ビーナスの母）
+;配置場所：HP村のドラッグストア
+;配置オブジェ：(ビーナスの母)
 
 MSG_HAPPY_SYSINFO_HERB;
-◆Ｔｈｅ　ｉｎｆｏｒｍａｔｉｏｎ　ｏｎ　ｔｈｅ　ｂａｃｋ　ｏｆ　ｔｈｅ　”ｒｅｆｒｅｓｈｉｎｇ　ｈｅｒｂ”　ｒｅａｄｓ　ａｓ　ｆｏｌｌｏｗｓ：@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｃａｔｃｈ　ａ　ｃｏｌｄ，　ｉｆ　ｙｏｕ’ｒｅ　ｉｌｌ，　ｏｒ　ｉｆ　ｙｏｕ　ｃａｎ’ｔ　ｓｅｅｍ　ｔｏ　ｈｅａｌ，@KEY()↓
-◆ｉｆ　ｙｏｕ’ｒｅ　ｐｏｉｓｏｎｅｄ，　ｉｆ　ｙｏｕ’ｒｅ　ｄｅｐｒｅｓｓｅｄ，　ａ　ｒｅｆｒｅｓｈｉｎｇ　ｈｅｒｂ　ｉｓ　ｔｈｅ　ｒｅａｌ　ｄｅａｌ．@KEY()↓
-◆Ｉ　ｋｎｏｗ，　ｉｔ　ｓｅｅｍｓ　ｐｒｅｔｔｙ　ｉｆｆｙ，　ｂｕｔ　ｙｏｕ　ｓｈｏｕｌｄ　ｇｉｖｅ　ｉｔ　ａ　ｔｒｙ！
+◆The information on the back of the ”refreshing herb” reads as follows：@KEY()↓
+◆If you catch a cold, if you’re ill, or if you can’t seem to heal,@KEY()↓
+◆if you’re poisoned, if you’re depressed, a refreshing herb is the real deal.@KEY()↓
+◆I know, it seems pretty iffy, but you should give it a try!
 ;◆すっきりハーブの↓
-;　パッケージのうらに↓
-;　こんなこと　かいてあるのよ‥‥@KEY()↓
-;◆「かぜぎみの　あなた！@WI(20)↓
-;　きぶんのわるい　あなたや↓
-;　なみだがとまらない　あなた！@KEY()↓
-;◆どくをくらっている　あなた！↓
-;　そのほか　いろいろなあなた！↓
-;　ぜひ　いちどおためしあれ」@KEY()↓
+; パッケージのうらに↓
+; こんなこと かいてあるのよ‥‥@KEY()↓
+;◆「かぜぎみの あなた!@WI(20)↓
+; きぶんのわるい あなたや↓
+; なみだがとまらない あなた!@KEY()↓
+;◆どくをくらっている あなた!↓
+; そのほか いろいろなあなた!↓
+; ぜひ いちどおためしあれ」@KEY()↓
 ;◆そんなに「あなたあなた」って↓
-;　どなられてもねぇ‥‥。
+; どなられてもねぇ‥‥。
 @KEYNP()
 』
 
@@ -2188,19 +2188,19 @@ MSG_HAPPY_SYSINFO_HERB;
 ;【うらカンポー＆いのちのつのぶえの説明】
 
 ;配置場所：土星谷のドラッグストア下の洞窟内
-;配置オブジェ：（土星さん）
+;配置オブジェ：(土星さん)
 
 MSG_DOSEI_SYSMSG_COMEBACKITEM;＠
 @FONTBAKA()
-◆Ｓｏ　Ｂｏｉｎｇ！　　Ｙｏｕ　ｈａｖｅ　３８０　ｄｏｌｌａｒｓ，　ｗｅ　ｔｒａｄｅ　”@DSP_GOODS(GDS_TOOL_DIAMOND_CRASHER)．”
-;◆３８０　どる　あったら↓		;どせいさん数字
-;　うらカンポー↓
-;　かえるのになー。
+◆So Boing!  You have ３８０ dollars, we trade ”@DSP_GOODS(GDS_TOOL_DIAMOND_CRASHER).”
+;◆３８０ どる あったら↓		;どせいさん数字
+; うらカンポー↓
+; かえるのになー。
 @KEY()↓
-◆Ｓｏ　Ｂｏｉｎｇ！　　Ｙｏｕ　ｈａｖｅ　１７８０　ｄｏｌｌａｒｓ，　ｗｅ　ｔｒａｄｅ　”@DSP_GOODS(GDS_TOOL_LIFE_HORN)．”
-;◆１７８０　どる　あったら↓		;どせいさん数字
-;　いのちのつのぶえ↓
-;　かえるのになー。
+◆So Boing!  You have １７８０ dollars, we trade ”@DSP_GOODS(GDS_TOOL_LIFE_HORN).”
+;◆１７８０ どる あったら↓		;どせいさん数字
+; いのちのつのぶえ↓
+; かえるのになー。
 @KEYNP()
 @FONTSTD()
 』
@@ -2210,20 +2210,20 @@ MSG_DOSEI_SYSMSG_COMEBACKITEM;＠
 ;【ぬいぐるみが魅力的なグッズであること】
 
 ;配置場所：ツーソン・デパート
-;配置オブジェ：（ボロ）
+;配置オブジェ：(ボロ)
 
 MSG_TWSN_SYSMSG_NUIGURUMI;
-◆Ｔｈａｔ　ｔｅｄｄｙ　ｂｅａｒ　ｔｈｅｙ　ｓｅｌｌ　ｏｖｅｒ　ｔｈｅｒｅ．．．Ｉ　ｈｅａｒｄ　ｉｔ　ｈｅｌｐｓ　ｉｎ　ｂａｔｔｌｅ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈａｔ　ｔｈｅｙ’ｒｅ　ｔａｌｋｉｎｇ　ａｂｏｕｔ．@KEY()↓
-◆Ｉｔ’ｓ　ｊｕｓｔ　ａ　ｐｌａｉｎ　ｏｌ’　ｔｅｄｄｙ　ｂｅａｒ　ｔｏ　ｍｅ．．．
+◆That teddy bear they sell over there...I heard it helps in battle.@KEY()↓
+◆I don’t know what they’re talking about.@KEY()↓
+◆It’s just a plain ol’ teddy bear to me...
 
-;◆そこで　うっている↓
-;　ぬいぐるみ‥‥@KEY()↓
+;◆そこで うっている↓
+; ぬいぐるみ‥‥@KEY()↓
 ;◆「バトルにやくにたつ」って↓
-;　わけのわからない　ことを↓
-;　いわれたんだけど‥‥@KEY()↓
-;◆かわいいだけじゃ　ないのかなぁ。@WI(20)↓
-;　かってみようかなー。
+; わけのわからない ことを↓
+; いわれたんだけど‥‥@KEY()↓
+;◆かわいいだけじゃ ないのかなぁ。@WI(20)↓
+; かってみようかなー。
 @KEYNP()
 』
 
@@ -2232,158 +2232,158 @@ MSG_TWSN_SYSMSG_NUIGURUMI;
 ;【装備系グッズの装備時のドラムの点滅の説明】
 
 ;配置場所：オネットのドラッグストア
-;配置オブジェ：（イヌ）
+;配置オブジェ：(イヌ)
 
 MSG_ONET_SYSMSG_EQUIP;
 @CHKFGOTO(FLG_WIN_GIEGU,_ONET_SYSMSG_EQUIP_END)
-◆Ｗｏｏｆ！　Ｗｏｏｆ！@KEY()↓
-◆Ｉ’ｍ　Ｒｕｆｆｉｎｉ　ｔｈｅ　ｄｏｇ．@KEY()↓
-◆Ｉ’ｍ　ｂｅｉｎｇ　ｐｏｓｓｅｓｓｅｄ　ｂｙ　ｔｈｅ　ｓｐｉｒｉｔ　ｏｆ　ｔｈｅ　ｇａｍｅ　ｄｅｓｉｇｎｅｒ．．．（ＲＵＦＦ！）@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｓｅｅ　ｔｈｅ　ｗｉｎｄｏｗ　ｓｈｏｗｉｎｇ　ＨＰ　ａｎｄ　ＰＰ　ａｔ　ｔｈｅ　ｂｏｔｔｏｍ　ｏｆ　ｔｈｅ　ｓｃｒｅｅｎ？@KEY()↓
-◆Ｗｈｅｎ　ｙｏｕ　ｇｏ　ｔｏ　ａ　ｓｔｏｒｅ　ｔｈａｔ　ｈａｓ　ｅｑｕｉｐｐａｂｌｅ　ｉｔｅｍｓ，@KEY()↓
-◆ｔｈｉｓ　ｗｉｎｄｏｗ　ｗｉｌｌ　ｅｉｔｈｅｒ　ｆｌａｓｈ，　ｌｏｏｋ　ｎｏｒｍａｌ　ｏｒ　ｂｅｃｏｍｅ　ｂｌａｃｋ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ａｒｅ　ａｌｌｏｗｅｄ　ｔｏ　ｅｑｕｉｐ　ａｎ　ｉｔｅｍ，　ａｎｄ　ｉｔ　ｉｓ　ｓｔｒｏｎｇｅｒ　ｔｈａｎ　ｙｏｕ　ｃｕｒｒｅｎｔ　ｉｔｅｍ，@KEY()↓
-◆ｔｈｅ　ｗｉｎｄｏｗ　ｗｉｌｌ　ｆｌａｓｈ．@KEY()↓
-◆Ｉｆ　ｔｈｅ　ｉｔｅｍ’ｓ　ｐｏｗｅｒ　ｉｓ　ｅｑｕａｌ　ｔｏ，　ｏｒ　ｌｅｓｓ　ｔｈａｎ　ｙｏｕ　ｃｕｒｒｅｎｔ　ｅｑｕｉｐｐｅｄ　ｉｔｅｍ，@KEY()↓
-◆ｔｈｅ　ｗｉｎｄｏｗ　ｌｏｏｋｓ　ｎｏｒｍａｌ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｃａｎ’ｔ　ｅｑｕｉｐ　ａｎ　ｉｔｅｍ，　ｔｈｅ　ｗｉｎｄｏｗ　ｉｓ　ｂｌａｃｋ．@KEY()↓
-◆＊Ｒｕｆｆ＊　　Ｉ　ｔｈｏｕｇｈｔ　ｙｏｕ’ｄ　ｌｉｋｅ　ｔｏ　ｋｎｏｗ．@KEY()↓
-◆Ｎｏｗ　ｉｔ’ｓ　ｔｉｍｅ　ｔｏ　ｂｅｃｏｍｅ　ａ　ｒｅｇｕｌａｒ　ｄｏｇ　ａｇａｉｎ．．．）
-;◆（う　う　わしは‥‥@WI(20)↓
-;　イタコ・ドッグじゃ。@KEY()↓
-;◆いま　あるゲームデザイナーの↓
-;　れいが　ひょういしておる‥‥@WI(30)↓
-;　ゴホン　ゴホン‥‥@KEY()↓
-;◆「‥‥がめんの　したのほうに↓
-;　ＨＰとか　ＰＰとか‥‥が↓
-;　ひょうじされたパネルがあるだろ？@KEY()↓
-;◆おみせで　そうびグッズを↓
-;　かうときは‥‥そのパネルを↓
-;　みるといいんだ。@KEY()↓
+◆Woof! Woof!@KEY()↓
+◆I’m Ruffini the dog.@KEY()↓
+◆I’m being possessed by the spirit of the game designer...(RUFF!)@KEY()↓
+◆Do you see the window showing HP and PP at the bottom of the screen?@KEY()↓
+◆When you go to a store that has equippable items,@KEY()↓
+◆this window will either flash, look normal or become black.@KEY()↓
+◆If you are allowed to equip an item, and it is stronger than you current item,@KEY()↓
+◆the window will flash.@KEY()↓
+◆If the item’s power is equal to, or less than you current equipped item,@KEY()↓
+◆the window looks normal.@KEY()↓
+◆If you can’t equip an item, the window is black.@KEY()↓
+◆＊Ruff＊  I thought you’d like to know.@KEY()↓
+◆Now it’s time to become a regular dog again...)
+;◆(う う わしは‥‥@WI(20)↓
+; イタコ・ドッグじゃ。@KEY()↓
+;◆いま あるゲームデザイナーの↓
+; れいが ひょういしておる‥‥@WI(30)↓
+; ゴホン ゴホン‥‥@KEY()↓
+;◆「‥‥がめんの したのほうに↓
+; HPとか PPとか‥‥が↓
+; ひょうじされたパネルがあるだろ?@KEY()↓
+;◆おみせで そうびグッズを↓
+; かうときは‥‥そのパネルを↓
+; みるといいんだ。@KEY()↓
 ;◆そのグッズが↓
-;　そうびできるときには‥‥↓
-;　パネルが　あかるくなる。@KEY()↓
-;◆そのグッズを　そうびして↓
-;　パワーアップするときには↓
-;　パネルは‥‥ピカピカする！@KEY()↓
+; そうびできるときには‥‥↓
+; パネルが あかるくなる。@KEY()↓
+;◆そのグッズを そうびして↓
+; パワーアップするときには↓
+; パネルは‥‥ピカピカする!@KEY()↓
 ;◆そうびできないばあいには‥‥↓
-;　パネルは　くらくなる。@KEY()↓
-;◆‥‥このことを　ぜひ↓
-;　つたえておきたくてね‥‥」@KEY()↓
-;◆ワワワワワン！！@KEY()↓
-;◆ハッ　わしは‥‥いま↓
-;　なにやら　わからぬことを↓
-;　しゃべっておった。@KEY()↓
-;◆もとのイヌに　もどろう）
+; パネルは くらくなる。@KEY()↓
+;◆‥‥このことを ぜひ↓
+; つたえておきたくてね‥‥」@KEY()↓
+;◆ワワワワワン!!@KEY()↓
+;◆ハッ わしは‥‥いま↓
+; なにやら わからぬことを↓
+; しゃべっておった。@KEY()↓
+;◆もとのイヌに もどろう)
 @KEYNP()
 』
 _ONET_SYSMSG_EQUIP_END;＆
-◆Ｗｏｏｆ！　Ｗｏｏｆ！@KEY()↓
-◆Ｉ’ｍ　Ｒｕｆｆｉｎｉ　ｔｈｅ　ｄｏｇ．@KEY()↓
-◆Ｈｅｒｅ　ｃｏｍｅｓ　ｔｈｅ　ｓｐｉｒｉｔ　ｏｆ　ｔｈｅ　ｇａｍｅ　ｄｅｓｉｇｎｅｒ　ａｇａｉｎ．．．@KEY()↓
-◆Ｒｕｆｆ！@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｆｉｎａｌｌｙ　ａｌｍｏｓｔ　ｔｏ　ｔｈｅ　ｅｎｄ　ｏｆ　ｔｈｅ　ｇａｍｅ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｔｅｌｌ　ｍｅ　ｙｏｕｒ　ｃｏｍｅｎｔｓ　ｏｎ　ｔｈｉｓ　ｇａｍｅ，@KEY()↓
-◆ｙｏｕ　ｍａｙ　ｗｒｉｔｅ　ｔｏ　ｍｅ　ｕｓｉｎｇ　Ｎｉｎｔｅｎｄｏ’ｓ　ａｄｄｒｅｓｓ　ｏｎ　ｔｈｅ　ｂｏｘ．@KEY()↓
-◆Ｓｅｎｄ　ｙｏｕｒ　ｃｏｍｍｅｎｔｓ　ａｔｔｅｎｔｉｏｎ　ＥａｒｔｈＢｏｕｎｄ，　Ｒｕｆｆｉｎｉ　ｔｈｅ　ｄｏｇ．@KEY()↓
-◆Ｎｏｗ，　ｇｅｔ　ｒｅａｄｙ　ｆｏｒ　ｔｈｅ　ｅｎｄｉｎｇ！@KEY()↓
-◆Ｉｔ’ｓ　ａｌｌ　ｔｈａｔ’ｓ　ｌｅｆｔ．．．ｅｎｊｏｙ　ｉｔ！@KEY()↓
-◆Ｂｏｗ　ｗｏｏｗ　ｗｏｗ！@KEY()↓
-◆Ｗｅｌｌ，　Ｉ　ｔｏｌｄ　ｙｏｕ　ｓｏｍｅ　ｓｔｒａｎｇｅ　ｉｎｆｏ　ａｇａｉｎ．．．@KEY()↓
-◆Ｉ’ｌｌ　ｇｏ　ｂａｃｋ　ｔｏ　ｂｅｉｎｇ　ａ　ｎｏｒｍａｌ　ｄｏｇ　ｎｏｗ．．．@KEY()↓
-◆Ｗｏｏｆ！
-;◆（う　う　わしは‥‥@WI(20)↓
-;　イタコ・ドッグじゃ。@KEY()↓
+◆Woof! Woof!@KEY()↓
+◆I’m Ruffini the dog.@KEY()↓
+◆Here comes the spirit of the game designer again...@KEY()↓
+◆Ruff!@KEY()↓
+◆You’re finally almost to the end of the game.@KEY()↓
+◆If you want to tell me your coments on this game,@KEY()↓
+◆you may write to me using Nintendo’s address on the box.@KEY()↓
+◆Send your comments attention EarthBound, Ruffini the dog.@KEY()↓
+◆Now, get ready for the ending!@KEY()↓
+◆It’s all that’s left...enjoy it!@KEY()↓
+◆Bow woow wow!@KEY()↓
+◆Well, I told you some strange info again...@KEY()↓
+◆I’ll go back to being a normal dog now...@KEY()↓
+◆Woof!
+;◆(う う わしは‥‥@WI(20)↓
+; イタコ・ドッグじゃ。@KEY()↓
 ;◆また‥‥あるゲームデザイナーの↓
-;　れいが　ひょういしておる‥‥@WI(30)↓
-;　ゴホン　ゴホン‥‥@KEY()↓
+; れいが ひょういしておる‥‥@WI(30)↓
+; ゴホン ゴホン‥‥@KEY()↓
 ;◆「とうとうゲームしゅうりょうが↓
-;　ちかづきましたね。@WI(20)↓
-;　もし　よろしかったら‥‥@KEY()↓
-;◆かんそうを　およせください。@KEY()↓
+; ちかづきましたね。@WI(20)↓
+; もし よろしかったら‥‥@KEY()↓
+;◆かんそうを およせください。@KEY()↓
 ;◆パッケージに↓
-;　じゅうしょのかいてある↓
-;　にんてんどう　の@KEY()↓
-;◆マザー２　イタコ・ドッグがかりに↓
-;　おくってくださいね。@KEY()↓
-;◆さあ　あとはエンディングを↓
-;　みるばかりですね。@WI(20)↓
-;　ごゆっくり　おたのしみください」@KEY()↓
-;◆ワワワワワン！！@KEY()↓
-;◆ハッ　わしは‥‥いま↓
-;　なにやら　わからぬことを↓
-;　しゃべっておった。@KEY()↓
-;◆もとのイヌに　もどろう）
+; じゅうしょのかいてある↓
+; にんてんどう の@KEY()↓
+;◆マザー２ イタコ・ドッグがかりに↓
+; おくってくださいね。@KEY()↓
+;◆さあ あとはエンディングを↓
+; みるばかりですね。@WI(20)↓
+; ごゆっくり おたのしみください」@KEY()↓
+;◆ワワワワワン!!@KEY()↓
+;◆ハッ わしは‥‥いま↓
+; なにやら わからぬことを↓
+; しゃべっておった。@KEY()↓
+;◆もとのイヌに もどろう)
 @KEYNP()
 』
-;◆（おみせで　そうびグッズを↓
-;　かうときには　ＨＰメーターに↓
-;　ちゅうもくすると　いい。@KEY()↓
-;◆そのグッズが　そうびできて↓
-;　なおかつ　そうびしたことで↓
-;　いまよりパワーアップするばあい@KEY()↓
+;◆(おみせで そうびグッズを↓
+; かうときには HPメーターに↓
+; ちゅうもくすると いい。@KEY()↓
+;◆そのグッズが そうびできて↓
+; なおかつ そうびしたことで↓
+; いまよりパワーアップするばあい@KEY()↓
 ;◆メーターのわくがピカピカする。@KEY()↓
-;◆また　そうびできないばあいは↓
-;　メーターぜんたいが　くらくなる。@KEY()↓
+;◆また そうびできないばあいは↓
+; メーターぜんたいが くらくなる。@KEY()↓
 ;◆‥‥どうぶつのぼくには↓
-;　むずかしめのセリフを↓
-;　しゃべってみました）@KEYNP()
+; むずかしめのセリフを↓
+; しゃべってみました)@KEYNP()
 ;』
 
 ;`````````````````````````````````````````````````````````````````````````
 
-;【復活後はＰＰが０になっていることの説明】
+;【復活後はPPが０になっていることの説明】
 
 ;配置場所：図書館の客
-;配置オブジェ：（ＯＬ＿Ｆ）
+;配置オブジェ：(OL＿F)
 
 MSG_LIBRARY_SYSMSG_PP_0;
-◆Ｉ’ｍ　ｃｒａｍｍｉｎｇ　ｆｏｒ　ｔｈｅ　ｂｉｇ　ｔｅｓｔ　ｔｏｍｏｒｒｏｗ．@KEY()↓
-◆Ｉｔ’ｓ　ａｂｏｕｔ　ｇａｍｅｓ．@KEY()↓
-◆”Ｈｏｔｅｌ　Ｒｕｌｅ”．．．ｉｆ　ｙｏｕ　ｓｔａｙ　ａｔ　ａ　ｈｏｔｅｌ，　ｙｏｕ’ｌｌ　ｗａｋｅ　ｕｐ　ｗｉｔｈ　ｆｕｌｌ　ＨＰ　ａｎｄ　ＰＰ．@KEY()↓
-◆”Ｌｉｆｅ　Ｒｅｃｏｖｅｒｙ　Ｒｕｌｅ”@KEY()↓
-◆．．．ｒｅｃｏｖｅｒｉｎｇ　ｙｏｕｒ　ｌｉｆｅ　ｗｉｌｌ　ｇｉｖｅ　ｙｏｕ　ｆｕｌｌ　ＨＰ，　ｂｕｔ　ｚｅｒｏ　ＰＰ．@KEY()↓
-◆．．．Ｈｍｍｍ．．．Ｉ　ｂｅｔ　ｔｈｉｓ　ｓｔｕｆｆ　ｗｉｌｌ　ｂｅ　ｏｎ　ｔｈｅ　ｔｅｓｔ．．．
-;◆あした　ゲームのしけんがあって↓
-;　いっしょけんめい↓
-;　あんきしている　ところなの。@KEY()↓
+◆I’m cramming for the big test tomorrow.@KEY()↓
+◆It’s about games.@KEY()↓
+◆”Hotel Rule”...if you stay at a hotel, you’ll wake up with full HP and PP.@KEY()↓
+◆”Life Recovery Rule”@KEY()↓
+◆...recovering your life will give you full HP, but zero PP.@KEY()↓
+◆...Hmmm...I bet this stuff will be on the test...
+;◆あした ゲームのしけんがあって↓
+; いっしょけんめい↓
+; あんきしている ところなの。@KEY()↓
 ;◆「ホテルのほうそく」↓
-;　‥‥ホテルだいを　はらえば↓
-;　ＨＰ　ＰＰともにまんたんである。@KEY()↓
+; ‥‥ホテルだいを はらえば↓
+; HP PPともにまんたんである。@KEY()↓
 ;◆「カムバックのほうそく」↓
-;　‥‥カムバックは　むりょうだが↓
-;　ＰＰは０である。@KEY()↓
-;◆‥‥うーん　カムバックの　あと↓
-;　ＰＰが０　ってところが↓
-;　しけんにでそうね。
+; ‥‥カムバックは むりょうだが↓
+; PPは０である。@KEY()↓
+;◆‥‥うーん カムバックの あと↓
+; PPが０ ってところが↓
+; しけんにでそうね。
 @KEYNP()
 』
 ;`````````````````````````````````````````````````````````````````````````
 
-;【ＣＤ設置場所の説明】
+;【CD設置場所の説明】
 
 ;配置場所：図書館の客
-;配置オブジェ：（少年Ａ）
+;配置オブジェ：(少年A)
 
 MSG_LIBRARY_SYSMSG_CD_PLACE;
-◆Ｉ　ｒｅｃｅｎｔｌｙ　ｒｅａｄ　ａ　ｂｏｏｋ　ｔｉｔｌｅｄ　”Ｏｕｒ　Ｃｏｎｖｅｎｉｅｎｔ　Ｓｏｃｉｅｔｙ．”@KEY()↓
-◆Ｉｔ　ｓａｉｄ　ｔｈａｔ　ｏｕｒ　ｍｏｄｅｒｎ　ｓｏｃｉｅｔｙ　ｄｅｍａｎｄｓ@KEY()↓
-◆ｔｈａｔ　ｔｈｅｒｅ　ａｌｗａｙｓ　ｂｅ　ａｎ　ＡＴＭ　ｉｎ　ｈｏｔｅｌｓ　ａｎｄ　ｄｒｕｇｓｔｏｒｅｓ．@KEY()↓
-◆Ｊｕｓｔ　ｋｎｏｗｉｎｇ　ｔｈａｔ　ｉｓ　ｃｏｎｖｅｎｉｅｎｔ！@KEY()↓
-◆Ｉ’ｍ　ｇｌａｄ　Ｉ　ｒｅａｄ　ｔｈａｔ．．．@KEY()↓
-◆Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　Ｉ　ｄｉｄｎ’ｔ　ｋｎｏｗ　ｔｈａｔ．@KEY()↓
-◆Ｉ’ｌｌ　ｃｈｅｃｋ　ｗｈｅｔｈｅｒ　ｏｒ　ｎｏｔ　ｗｅ　ｈａｖｅ　ａｎ　ＡＴＭ　ｉｎ　ｏｕｒ　ｄｒｕｇｓｔｏｒｅ．．．
+◆I recently read a book titled ”Our Convenient Society.”@KEY()↓
+◆It said that our modern society demands@KEY()↓
+◆that there always be an ATM in hotels and drugstores.@KEY()↓
+◆Just knowing that is convenient!@KEY()↓
+◆I’m glad I read that...@KEY()↓
+◆I can’t believe I didn’t know that.@KEY()↓
+◆I’ll check whether or not we have an ATM in our drugstore...
 ;◆「べんりなよのなか」って↓
-;　ほんを　よんでたんだけど@KEY()↓
-;◆ホテルや　ドラッグストアには↓
-;　キャッシュディスペンサーが↓
-;　かならず　あるんだって‥‥。@KEY()↓
-;◆こういうことを　しっておくと↓
-;　いろいろと　べんりだよね。@WI(15)↓
-;　よんで　よかったよ　このほん。@KEY()↓
-;◆ぼく　かんどうしちゃったなぁ。@WI(20)↓
-;　こんどドラッグストアにいったら↓
-;　しらべてみよっと。
+; ほんを よんでたんだけど@KEY()↓
+;◆ホテルや ドラッグストアには↓
+; キャッシュディスペンサーが↓
+; かならず あるんだって‥‥。@KEY()↓
+;◆こういうことを しっておくと↓
+; いろいろと べんりだよね。@WI(15)↓
+; よんで よかったよ このほん。@KEY()↓
+;◆ぼく かんどうしちゃったなぁ。@WI(20)↓
+; こんどドラッグストアにいったら↓
+; しらべてみよっと。
 @KEYNP()
 』
 
@@ -2392,32 +2392,32 @@ MSG_LIBRARY_SYSMSG_CD_PLACE;
 ;【電話の説明】
 
 ;配置場所：図書館の客
-;配置オブジェ：（少女Ａ差し替え）
+;配置オブジェ：(少女A差し替え)
 
 MSG_LIBRARY_SYSMSG_TEL_PLACE;
-◆Ｉ　ｒｅａｄ　ｔｈｅ　ｂｏｏｋ　ｃａｌｌｅｄ　”Ｏｕｒ　Ｓｏｃｉｅｔｙ　ｉｓ　Ｃｏｎｖｅｎｉｅｎｔ．”@KEY()↓
-◆Ｉｔ　ｓａｉｄ　ｔｈａｔ　ｔｈｅｓｅ　ｄａｙｓ，　ｔｈｅｒｅ　ａｒｅ　ａｌｗａｙｓ　ｔｅｌｅｐｈｏｎｅｓ　ｉｎ　ｈｏｔｅｌｓ　ａｎｄ　ｄｒｕｇｓｔｏｒｅｓ．@KEY()↓
-◆Ｉ　ａｌｓｏ　ｌｅａｒｎｅｄ　ｔｈａｔ　ｔｏ　ｕｓｅ　ａ　ｇｒｅｅｎ　ｐａｙ　ｐｈｏｎｅ　ｃｏｓｔｓ　ａ　ｄｏｌｌａｒ，@KEY()↓
-◆ｗｈｉｌｅ　ｔｈｅ　ｂｌａｃｋ　ｐｈｏｎｅｓ　ａｒｅ　ｆｒｅｅ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｗｅｒｅｎ’ｔ　ａｗａｒｅ　ｏｆ　ｔｈｉｓ，@KEY()↓
-◆ａｌｌ　ｙｏｕｒ　ｍｏｎｅｙ　ｃｏｕｌｄ　ｇｅｔ　ｅａｔｅｎ　ｕｐ　ｂｙ　ｙｏｕｒ　ｐｈｏｎｅ　ｃａｌｌｓ．@KEY()↓
-◆Ｉ’ｍ　ｇｌａｄ　Ｉ　ｒｅａｄ　ｔｈａｔ　ｂｏｏｋ．．．
+◆I read the book called ”Our Society is Convenient.”@KEY()↓
+◆It said that these days, there are always telephones in hotels and drugstores.@KEY()↓
+◆I also learned that to use a green pay phone costs a dollar,@KEY()↓
+◆while the black phones are free.@KEY()↓
+◆If you weren’t aware of this,@KEY()↓
+◆all your money could get eaten up by your phone calls.@KEY()↓
+◆I’m glad I read that book...
 ;◆「よのなかのべんり」って↓
-;　ごほんを　よんでたの。@KEY()↓
-;◆ホテルや　ドラッグストアには↓
-;　でんわが　かならずあるって↓
-;　かいてあったわ。@KEY()↓
-;◆それに　みどりいろの↓
-;　こうしゅうでんわは↓
-;　１ドルかかるけど@KEY()↓
-;◆そのほかの　くろでんわとかは↓
-;　おかねが　かからないって。@KEY()↓
-;◆このことを　しらなかったら↓
-;　みどりいろの　こうしゅうでんわを↓
-;　かけまくって‥‥@KEY()↓
+; ごほんを よんでたの。@KEY()↓
+;◆ホテルや ドラッグストアには↓
+; でんわが かならずあるって↓
+; かいてあったわ。@KEY()↓
+;◆それに みどりいろの↓
+; こうしゅうでんわは↓
+; １ドルかかるけど@KEY()↓
+;◆そのほかの くろでんわとかは↓
+; おかねが かからないって。@KEY()↓
+;◆このことを しらなかったら↓
+; みどりいろの こうしゅうでんわを↓
+; かけまくって‥‥@KEY()↓
 ;◆おおぞんしてたかも↓
-;　しれないわよね。@WI(20)↓
-;　‥‥よんで　よかったぁ。
+; しれないわよね。@WI(20)↓
+; ‥‥よんで よかったぁ。
 @KEYNP()
 』
 
@@ -2426,101 +2426,101 @@ MSG_LIBRARY_SYSMSG_TEL_PLACE;
 ;【マジックバタフライの説明】
 
 ;配置場所：図書館の２階窓際の客
-;配置オブジェ：（サラリーマンＤ）
+;配置オブジェ：(サラリーマンD)
 
 MSG_LIBRARY_SYSMSG_BUTTERFLY;
-◆Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　Ｉ　ｓａｗ　ｉｔ　ｗｉｔｈ　ｍｙ　ｏｗｎ　ｅｙｅｓ．@KEY()↓
-◆Ｉ　ｗａｓ　ｓｔａｒｉｎｇ　ｏｕｔ　ｔｈｅ　ｗｉｎｄｏｗ　ａｎｄ　ｔｈｅｒｅ　ｉｔ　ｗａｓ，　ｊｕｓｔ　ｆｌｕｔｔｅｒｉｎｇ　ｔｈｅｒｅ．．．@KEY()↓
-◆Ｉ’ｄ　ｏｎｌｙ　ｓｅｅｎ　ｉｔ　ｉｎ　ｔｈｅ　ｅｎｃｙｃｌｏｐｅｄｉａ　ｂｅｆｏｒｅ．@KEY()↓
-◆Ｗｈａｔ　ｗａｓ　ｉｔ？@KEY()↓
-◆Ａ　ｍａｇｉｃ　ｂｕｔｔｅｒｆｌｙ！@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｇｅｔ　ｃｌｏｓｅ　ｔｏ　ａ　Ｍａｇｉｃ　Ｂｕｔｔｅｒｆｌｙ，　ａｌｌ　ｙｏｕｒ　ｃａｒｅｓ　ｆｌｙ　ａｗａｙ，@KEY()↓
-◆ｊｕｓｔ　ｌｉｋｅ　ａ　ｆｌｕｔｔｅｒｉｎｇ　ｂｕｔｔｅｒｆｌｙ．@KEY()↓
-◆Ｙｅｐ，　ｙｅｐ！@KEY()↓
-◆Ｔｈａｔ’ｓ　ｔｈｅ　ｅｆｆｅｃｔ　ｏｆ　ｔｈｅ　ｌｅｇｅｎｄａｒｙ　ｍａｇｉｃ　ｂｕｔｔｅｒｆｌｙ．@KEY()↓
-◆Ｉ　ｌｏｖｅ　ｔａｌｋｉｎｇ　ａｂｏｕｔ　ｉｔ！@KEY()↓
-◆Ｏｏｏｐｓ！@KEY()↓
-◆Ｓｏｒｒｙ　ａｂｏｕｔ　ｔｈｅ　ｏｕｔｂｕｒｓｔ．．．@KEY()↓
-◆Ｉ　ｇｏｔ　ｃａｒｒｉｅｄ　ａｗａｙ　ｗｉｔｈ　ａｌｌ　ｔｈｅ　ｔａｌｋ　ａｂｏｕｔ　ｌｏｖｅｌｙ　ｂｕｔｔｅｒｆｌｉｅｓ．．．
-;◆ぼくは　このめで　みた！@KEY()↓
-;◆まどから　なにげなく↓
-;　そとを　ながめていたら↓
-;　ひらひら　とんでいたんだ！@KEY()↓
-;◆ずかんでしか　みたことなかった↓
-;　あの　マジックバタフライが！@KEY()↓
+◆I can’t believe I saw it with my own eyes.@KEY()↓
+◆I was staring out the window and there it was, just fluttering there...@KEY()↓
+◆I’d only seen it in the encyclopedia before.@KEY()↓
+◆What was it?@KEY()↓
+◆A magic butterfly!@KEY()↓
+◆If you get close to a Magic Butterfly, all your cares fly away,@KEY()↓
+◆just like a fluttering butterfly.@KEY()↓
+◆Yep, yep!@KEY()↓
+◆That’s the effect of the legendary magic butterfly.@KEY()↓
+◆I love talking about it!@KEY()↓
+◆Ooops!@KEY()↓
+◆Sorry about the outburst...@KEY()↓
+◆I got carried away with all the talk about lovely butterflies...
+;◆ぼくは このめで みた!@KEY()↓
+;◆まどから なにげなく↓
+; そとを ながめていたら↓
+; ひらひら とんでいたんだ!@KEY()↓
+;◆ずかんでしか みたことなかった↓
+; あの マジックバタフライが!@KEY()↓
 ;◆ちかづいたものに↓
 ;;ちょいと変更/上野;OK!
-;;　ひらひらと　サイコパワーを↓
-;　ひらひらと　やすらぎを↓
-;　あたえてくれる‥‥@KEY()↓
-;◆あの　まぼろしの↓
-;　ちょうちょのことだよ！@KEY()↓
-;◆‥‥あ@WI(15)　すいません。@WI(30)↓
-;　としょかんで　さわいじゃって。
+;; ひらひらと サイコパワーを↓
+; ひらひらと やすらぎを↓
+; あたえてくれる‥‥@KEY()↓
+;◆あの まぼろしの↓
+; ちょうちょのことだよ!@KEY()↓
+;◆‥‥あ@WI(15) すいません。@WI(30)↓
+; としょかんで さわいじゃって。
 @KEYNP()
 』
 
 ;`````````````````````````````````````````````````````````````````````````
 
-;【敵との接触の向きによって有利不利があることの説明（緑色と赤色の意味）】
+;【敵との接触の向きによって有利不利があることの説明(緑色と赤色の意味)】
 
 ;配置場所：オネット
-;配置オブジェ：現状のホリー（現状のセリフはツーソン入ってスグのホリーに移植）
+;配置オブジェ：現状のホリー(現状のセリフはツーソン入ってスグのホリーに移植)
 
 MSG_ONET_SYSMSG_ENCOUNTER;
-◆（Ｉ　ａｍ　ｎｏｔ　ｙｏｕｒ　ｅｎｅｍｙ．@KEY()↓
-◆Ｉ　ａｍ　ｓｉｍｐｌｙ　ｙｏｕｒ　ａｖｅｒａｇｅ　ｒｕｎ−ｏｆ−ｔｈｅ−ｍｉｌｌ　ｍｏｌｅ．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｓｏｍｅ　ｈｉｎｔｓ　ｏｎ　ｆｉｇｈｔｉｎｇ　ｅｎｅｍｉｅｓ？）↓
-<Ｙｅｓ>
-<Ｎｏ>
-;◆（おれは　てきじゃない。↓
-;　ただの　もぐらさ。@KEY()↓
-;◆てきと　たたかうときの↓
-;　コツを　おしえようか？↓
-;　　<はい>　　<いいえ>
+◆(I am not your enemy.@KEY()↓
+◆I am simply your average run−of−the−mill mole.@KEY()↓
+◆Would you like some hints on fighting enemies?)↓
+<Yes>
+<No>
+;◆(おれは てきじゃない。↓
+; ただの もぐらさ。@KEY()↓
+;◆てきと たたかうときの↓
+; コツを おしえようか?↓
+;  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SYSMSG_ENCOUNTER_YES,_SYSMSG_ENCOUNTER_NO)
 _SYSMSG_ENCOUNTER_NO;
-◆Ａｈ，　Ｉ　ｓｅｅ．．．@KEY()↓
-◆Ｙｏｕ’ｖｅ　ａｌｒｅａｄｙ　ｇｏｔ　ａ　ｇｏｏｄ　ｇｒａｓｐ　ｏｆ　ｈｏｗ　ｔｏ　ｆｉｇｈｔ　ｅｆｆｅｃｔｉｖｅｌｙ．
-;◆（なるほど。@WI(20)↓
-;　きみはもう　たたかいのコツを↓
-;　つかんでいるんだね）
+◆Ah, I see...@KEY()↓
+◆You’ve already got a good grasp of how to fight effectively.
+;◆(なるほど。@WI(20)↓
+; きみはもう たたかいのコツを↓
+; つかんでいるんだね)
 @KEYNP()
 』
 _SYSMSG_ENCOUNTER_YES;
-◆Ｌｉｓｔｅｎ　ｃａｒｅｆｕｌｌｙ．@KEY()↓
-◆Ｍｙ　ｈｉｎｔ　ｉｎｖｏｌｖｅｓ　ｗｈｉｃｈ　ｗａｙ　ｙｏｕ　ａｒｅ　ｆａｃｉｎｇ　ｗｈｅｎ　ａ　ｂａｔｔｌｅ　ｗｉｔｈ　ａｎ　ｅｎｅｍｙ　ｏｃｃｕｒｓ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ａｌｌｏｗ　ｅｎｅｍｉｅｓ　ｔｏ　ａｐｐｒｏａｃｈ　ｙｏｕ　ｆｒｏｍ　ｙｏｕｒ　ｂａｃｋ　ｏｒ　ｓｉｄｅ，@KEY()↓
-◆ｔｈｅｙ　ｇｅｔ　ａ　ｓｕｒｐｒｉｓｅ　ｏｐｅｎｉｎｇ　ａｔｔａｃｋ．@KEY()↓
-◆Ｗｈｅｎ　ｔｈｅｙ　ａｐｐｒｏａｃｈ　ｙｏｕ　ｔｈｉｓ　ｗａｙ，　ｙｏｕｒ　ＴＶ　ｓｃｒｅｅｎ，　ｎｏ．．．ｎｏ．．．@KEY()↓
-◆Ｉ　ｍｅａｎ　ｔｈｅ　ｗｏｒｌｄ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｙｏｕ　ｗｉｌｌ　ｓｈｏｗ　ａ　ｒｅｄ　ｓｗｉｒｌ　ｆｏｒ　ａ　ｓｅｃｏｎｄ．@KEY()↓
-◆Ｏｎ　ｔｈｅ　ｏｔｈｅｒ　ｈａｎｄ，　ｉｆ　ｙｏｕ　ａｐｐｒｏａｃｈ　ａｎ　ｅｎｅｍｙ　ｆｒｏｍ　ｔｈｅ　ｂａｃｋ　ｏｒ　ｓｉｄｅ，@KEY()↓
-◆ｙｏｕ　ｇｅｔ　ａ　ｓｕｒｐｒｉｓｅ　ｏｐｅｎｉｎｇ　ａｔｔａｃｋ．@KEY()↓
-◆Ｉｎ　ｔｈａｔ　ｃａｓｅ，　ｙｏｕｒ　ＴＶ．．．Ｏｏｐｓ　ａｇａｉｎ！@KEY()↓
-◆．．．Ｔｈｅ　ｗｏｒｌｄ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｙｏｕ　ｓｈｏｗｓ　ａ　ｇｒｅｅｎ　ｓｗｉｒｌ．@KEY()↓
-◆Ｔｈｅ　ｐｏｉｎｔ　ｉｓ，　ｔｒｙ　ｔｏ　ｆｉｇｈｔ　ｓｏ　ｔｈａｔ　ｙｏｕ　ａｌｗａｙｓ　ｈａｖｅ　ｔｈｅ　ａｄｖａｎｔａｇｅ．
-;◆（いいかい？　ポイントは↓
-;　たたかいに　はいるまえの↓
-;　からだのむきだ。@KEY()↓
-;◆じぶんのせなかや　よこを↓
-;　てきにタッチされると@KEY()↓
+◆Listen carefully.@KEY()↓
+◆My hint involves which way you are facing when a battle with an enemy occurs.@KEY()↓
+◆If you allow enemies to approach you from your back or side,@KEY()↓
+◆they get a surprise opening attack.@KEY()↓
+◆When they approach you this way, your TV screen, no...no...@KEY()↓
+◆I mean the world in front of you will show a red swirl for a second.@KEY()↓
+◆On the other hand, if you approach an enemy from the back or side,@KEY()↓
+◆you get a surprise opening attack.@KEY()↓
+◆In that case, your TV...Oops again!@KEY()↓
+◆...The world in front of you shows a green swirl.@KEY()↓
+◆The point is, try to fight so that you always have the advantage.
+;◆(いいかい? ポイントは↓
+; たたかいに はいるまえの↓
+; からだのむきだ。@KEY()↓
+;◆じぶんのせなかや よこを↓
+; てきにタッチされると@KEY()↓
 ;◆せんせいこうげきを↓
-;　ゆるすことになる。@KEY()↓
-;◆そういうときは　テレビがめんが↓
-;　‥‥あ　いやいや　めのまえが↓
-;　いっしゅんあかく　なるはずだ。@KEY()↓
+; ゆるすことになる。@KEY()↓
+;◆そういうときは テレビがめんが↓
+; ‥‥あ いやいや めのまえが↓
+; いっしゅんあかく なるはずだ。@KEY()↓
 ;◆ぎゃくに↓
-;　てきのせなかや　よこを↓
-;　うまく　タッチすれば@KEY()↓
-;◆かならず　こちらが↓
-;　せんせいこうげき　できる。@KEY()↓
-;◆そんなときは　テレビがめんが↓
-;　‥‥あ　いやいや　めのまえが↓
-;　みどりいろに　なるからね。@KEY()↓
-;◆ま　ようするに‥‥↓
-;　まえむきに↓
-;　たたかおうってことさ）
+; てきのせなかや よこを↓
+; うまく タッチすれば@KEY()↓
+;◆かならず こちらが↓
+; せんせいこうげき できる。@KEY()↓
+;◆そんなときは テレビがめんが↓
+; ‥‥あ いやいや めのまえが↓
+; みどりいろに なるからね。@KEY()↓
+;◆ま ようするに‥‥↓
+; まえむきに↓
+; たたかおうってことさ)
 @KEYNP()
 』
 
@@ -2528,30 +2528,30 @@ _SYSMSG_ENCOUNTER_YES;
 
 ;【レベル差がついたときの無条件勝ちの説明】
 
-;配置場所：ＨＰ村入ってすぐ
+;配置場所：HP村入ってすぐ
 ;配置オブジェ：ホリー
 
 MSG_HAPPY_SYSMSG_EASY_BATTLE;
-◆Ｉ　ａｍ　ｎｏｔ　ｙｏｕｒ　ｅｎｅｍｙ．@KEY()↓
-◆Ｉ　ａｍ　ｊｕｓｔ　ａ　ｐｌａｉｎ　ｏｌ’　ｍｏｌｅ．@KEY()↓
-◆Ｙｏｕ　ａｒｅ　ｃｅｒｔａｉｎｌｙ　ｓｔｒｏｎｇｅｒ　ｔｈａｎ　ｙｏｕ　ｗｅｒｅ　ｗｈｉｌｅ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ　Ｏｎｅｔｔ．@KEY()↓
-◆Ｈａｖｅ　ｙｏｕ　ｅｖｅｒ　ｓｕｄｄｅｎｌｙ　ｇｏｔｔｅｎ　ｔｈｅ　”Ｙｏｕ　Ｗｏｎ”　ｍｅｓｓａｇｅ@KEY()↓
-◆ｗｈｅｎ　ｙｏｕ　ｍｅｔ　ａ　ｗｅａｋ　ｅｎｅｍｙ？@KEY()↓
-◆Ｔｈａｔ’ｓ　ｓｕｒｅ−ｆｉｒｅ　ｐｒｏｏｆ　ｔｈａｔ　ｙｏｕ’ｖｅ　ｂｅｃｏｍｅ　ｓｔｒｏｎｇｅｒ．@KEY()↓
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ　ｗａｓｔｅ　ｙｏｕｒ　ｔｉｍｅ　ｆｉｇｈｔｉｎｇ　ｗｉｍｐｙ　ｅｎｅｍｉｅｓ，　ｄｏ　ｙｏｕ？
-;◆（おれは　てきじゃない。↓
-;　ただの　もぐらさ。@KEY()↓
-;◆おまえ　オネットをうろうろ↓
-;　してたときにくらべて↓
-;　ずいぶん　つよくなっただろ。@KEY()↓
-;◆よわい　てきにあったとき↓
-;　いきなり　ＹＯＵ　ＷＩＮって↓
-;　ふんいきに　なったことないか？@KEY()↓
-;◆それは　おまえがつよくなった↓
-;　なによりのしょうこなんだぜ。@KEY()↓
-;◆あまりに　よわい　ザコと↓
-;　かったるく　たたかってなんて↓
-;　いられないだろ？！）
+◆I am not your enemy.@KEY()↓
+◆I am just a plain ol’ mole.@KEY()↓
+◆You are certainly stronger than you were while wandering around Onett.@KEY()↓
+◆Have you ever suddenly gotten the ”You Won” message@KEY()↓
+◆when you met a weak enemy?@KEY()↓
+◆That’s sure−fire proof that you’ve become stronger.@KEY()↓
+◆You don’t want to waste your time fighting wimpy enemies, do you?
+;◆(おれは てきじゃない。↓
+; ただの もぐらさ。@KEY()↓
+;◆おまえ オネットをうろうろ↓
+; してたときにくらべて↓
+; ずいぶん つよくなっただろ。@KEY()↓
+;◆よわい てきにあったとき↓
+; いきなり YOU WINって↓
+; ふんいきに なったことないか?@KEY()↓
+;◆それは おまえがつよくなった↓
+; なによりのしょうこなんだぜ。@KEY()↓
+;◆あまりに よわい ザコと↓
+; かったるく たたかってなんて↓
+; いられないだろ?!)
 @KEYNP()
 』
 
@@ -2563,58 +2563,58 @@ MSG_HAPPY_SYSMSG_EASY_BATTLE;
 ;配置オブジェ：ボルヘスママ
 
 MSG_ONET_SYSMSG_HEALER;
-◆Ｈｅｌｌｏ．．．ａｎｄ　ｙｏｕ　ａｒｅ．．．？@KEY()↓
-◆Ｓａｙ，　ｈａｖｅ　ｙｏｕ　ｅｖｅｒ　ｓｕｆｆｅｒｅｄ　ｆｒｏｍ　ｓｏｍｅ　ｔｙｐｅ　ｏｆ　ｓｉｃｋｎｅｓｓ　ｏｒ　ｃｏｎｄｉｔｉｏｎ@KEY()↓
-◆ｔｈａｔ　ｙｏｕ　ｃｏｕｌｄｎ’ｔ　ｇｅｔ　ｃｕｒｅｄ　ａｔ　ａ　ｈｏｓｐｉｔａｌ？@KEY()↓
-◆Ｆｏｒ　ｅｘａｍｐｌｅ，　ｂｅｉｎｇ　”Ｄｉａｍｏｎｄｉｚｅｄ，”　ｗｈｅｒｅ　ｙｏｕｒ　ｈｅａｄ　ｇｅｔｓ　ａｓ　ｈａｒｄ　ａｓ　ａ　ｄｉａｍｏｎｄ．．．@KEY()↓
-◆Ｏｒ．．．　”Ｍｕｓｈｒｏｏｍｉｚｅｄ，”　ｗｈｅｒｅ　ｙｏｕ　ｈａｖｅ　ａ　ｍｕｓｈｒｏｏｍ　ｏｎ　ｙｏｕｒ　ｈｅａｄ．．．@KEY()↓
-◆Ｉｆ　ｙｏｕ’ｒｅ　ｅｖｅｒ　ｓｔｕｃｋ　ｗｉｔｈ　ｔｈｅｓｅ　ｔｙｐｅｓ　ｏｆ　ｅｍｂａｒｒａｓｓｉｎｇ　ｃｏｎｄｉｔｉｏｎｓ，@KEY()↓
-◆ｗｅ　ｏｆ　ｔｈｅ　ｍａｇｉｃ　ｈｅａｌｉｎｇ　ｓｈｒｉｎｅ　ａｒｅ　ｈｅｒｅ　ｔｏ　ｅａｓｅ　ｙｏｕｒ　ｐａｉｎ．@KEY()↓
-◆Ｗｅ’ｒｅ　ｒｅａｄｙ　ａｎｄ　ｗａｉｔｉｎｇ．．．@KEY()↓
-◆ｉｎ　ｔｈｅ　ｌｏｂｂｙ　ｏｆ　ｈｏｓｐｉｔａｌｓ　ａｌｌ　ｏｖｅｒ　ｔｈｅ　ｗｏｒｌｄ．@KEY()↓
-◆Ｔｈｅ　ｐｅｒｓｏｎ　ｎｅｘｔ　ｔｏ　ｍｅ　ｉｓ　ｔｈｅ　ｇｒｅａｔ　ｔｅａｃｈｅｒ　ｏｆ　ｍａｇｉｃ　ｈｅａｌｉｎｇ．
-;◆もしもし　あなたは‥‥@KEY()↓
-;◆びょういんで　なおせない↓
-;　さまざまな　おなやみを↓
-;　かかえては　おられませんか？@KEY()↓
-;◆たとえば　ダイヤみたいに↓
-;　かたくなっちゃったとか‥‥@KEY()↓
-;◆たとえば！@WI(20)　あたまにキノコが↓
-;　はえちゃったとか‥‥@KEY()↓
-;◆そういう　ハズカシイなやみを↓
-;　おもちの　かたがたに@KEY()↓
+◆Hello...and you are...?@KEY()↓
+◆Say, have you ever suffered from some type of sickness or condition@KEY()↓
+◆that you couldn’t get cured at a hospital?@KEY()↓
+◆For example, being ”Diamondized,” where your head gets as hard as a diamond...@KEY()↓
+◆Or... ”Mushroomized,” where you have a mushroom on your head...@KEY()↓
+◆If you’re ever stuck with these types of embarrassing conditions,@KEY()↓
+◆we of the magic healing shrine are here to ease your pain.@KEY()↓
+◆We’re ready and waiting...@KEY()↓
+◆in the lobby of hospitals all over the world.@KEY()↓
+◆The person next to me is the great teacher of magic healing.
+;◆もしもし あなたは‥‥@KEY()↓
+;◆びょういんで なおせない↓
+; さまざまな おなやみを↓
+; かかえては おられませんか?@KEY()↓
+;◆たとえば ダイヤみたいに↓
+; かたくなっちゃったとか‥‥@KEY()↓
+;◆たとえば!@WI(20) あたまにキノコが↓
+; はえちゃったとか‥‥@KEY()↓
+;◆そういう ハズカシイなやみを↓
+; おもちの かたがたに@KEY()↓
 ;◆わたくしども↓
-;　マジックヒーリングきょうかいは↓
-;　あいのてを　さしのべています。@KEY()↓
-;◆ぜんこくの　びょういんの↓
-;　かたすみで　あなたを↓
-;　おまちしておりますわ。@KEY()↓
-;◆わたくしの　となりが↓
-;　マジックヒーラーの↓
-;　だいせんせいです。
+; マジックヒーリングきょうかいは↓
+; あいのてを さしのべています。@KEY()↓
+;◆ぜんこくの びょういんの↓
+; かたすみで あなたを↓
+; おまちしておりますわ。@KEY()↓
+;◆わたくしの となりが↓
+; マジックヒーラーの↓
+; だいせんせいです。
 @KEYNP()
 』
 
-;◆わたし　となりにいるおじさんに
-;　おいしゃさまでは
-;　なおせない　ことを‥‥
-;◆いろいろ　なおしてもらってるの。
-;　‥‥いやーねぇ！
-;　こいのやまい　じゃないわよ。
+;◆わたし となりにいるおじさんに
+; おいしゃさまでは
+; なおせない ことを‥‥
+;◆いろいろ なおしてもらってるの。
+; ‥‥いやーねぇ!
+; こいのやまい じゃないわよ。
 ;』
 
 ;◆おおきなこえじゃ↓
-;　いえないけどね‥‥@KEY()↓
-;◆わたしの　となりにいるひと↓
-;　ヒーラーなのよ。@KEY()↓
+; いえないけどね‥‥@KEY()↓
+;◆わたしの となりにいるひと↓
+; ヒーラーなのよ。@KEY()↓
 ;◆ヒーローじゃないわよ↓
-;　ヒーラーよ！@KEY()↓
-;◆なにも　びょういんで↓
-;　しょうばいしなくっても↓
-;　いいとおもうけど@KEY()↓
-;◆でも　@WI(15)びょういんにくれば↓
-;　なんでも　なおるんだから↓
-;　べんりはべんりだわよねえ。@KEYNP()
+; ヒーラーよ!@KEY()↓
+;◆なにも びょういんで↓
+; しょうばいしなくっても↓
+; いいとおもうけど@KEY()↓
+;◆でも @WI(15)びょういんにくれば↓
+; なんでも なおるんだから↓
+; べんりはべんりだわよねえ。@KEYNP()
 ;』
 
 ;`````````````````````````````````````````````````````````````````````````
@@ -2622,25 +2622,25 @@ MSG_ONET_SYSMSG_HEALER;
 ;【プーにのみ効果的・非効果的なグッズがあることの説明】
 
 ;配置場所：ランマのショップ
-;配置オブジェ：（女）
+;配置オブジェ：(女)
 
 MSG_RAMA_SYSMSG_PU_ITEM;
-◆Ｉ　ｗｉｓｈ　Ｉ　ｃｏｕｌｄ　ｒｅｃｏｖｅｒ　ｍｙ　ＰＰ　ｊｕｓｔ　ｂｙ　ｄｒｉｎｋｉｎｇ　ｗａｔｅｒ．．．@KEY()↓
-◆Ｅｖｅｎ　ｔｈｏｕｇｈ　Ｉ　ｈａｖｅ　ｎｅｖｅｒ　ｓｅｅｎ　ｈｉｍ　ｂｅｆｏｒｅ，　Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｔｈｅ　ｐｒｉｎｃｅ　ｃａｎ　ｄｏ　ｔｈａｔ．
-◆Ｉ　ｇｕｅｓｓ　Ｉ　ｎｅｅｄ　ｍｏｒｅ　ｔｒａｉｎｉｎｇ．．．@KEY()↓
-◆Ｂｙ　ｔｈｅ　ｗａｙ，　ｊｕｓｔ　ｗｈａｔ　ｉｓ　ＰＰ　ａｎｙｗａｙ？．．．
-;◆わたしも　しゅぎょうをつんで↓
-;　@DSP_STS(STS_PC_NAME_POO)おうじさまのように‥‥@KEY()↓
+◆I wish I could recover my PP just by drinking water...@KEY()↓
+◆Even though I have never seen him before, I heard that the prince can do that.
+◆I guess I need more training...@KEY()↓
+◆By the way, just what is PP anyway?...
+;◆わたしも しゅぎょうをつんで↓
+; @DSP_STS(STS_PC_NAME_POO)おうじさまのように‥‥@KEY()↓
 ;◆「みず」をのむだけで↓
-;　ＰＰをかいふくできるように↓
-;　なりたいと　おもっています。@KEY()↓
+; PPをかいふくできるように↓
+; なりたいと おもっています。@KEY()↓
 ;◆それはともかく↓
-;　ぴいぴいって‥‥@WI(40)なにかしら？？
+; ぴいぴいって‥‥@WI(40)なにかしら??
 @KEYNP()
 』
-;◆わたしも　しゅぎょうをつんで↓
-;　みずだけで　いきられるように↓
-;　なりたいと　おもっています。@KEY()↓
+;◆わたしも しゅぎょうをつんで↓
+; みずだけで いきられるように↓
+; なりたいと おもっています。@KEY()↓
 ;◆@DSP_STS(STS_PC_NAME_POO)おうじさまのように。@KEYNP()
 ;』
 
@@ -2648,26 +2648,26 @@ MSG_RAMA_SYSMSG_PU_ITEM;
 
 ;【ふりかけシステムの説明】
 
-;配置場所：ヌスット広場のふりかけ屋（ふりかけ屋のお兄さんと向き合う）
-;配置オブジェ：（女）
+;配置場所：ヌスット広場のふりかけ屋(ふりかけ屋のお兄さんと向き合う)
+;配置オブジェ：(女)
 
 MSG_TWSN_SYSMSG_FURIKAKE;
-◆Ｉ　ｃａｍｅ　ｔｏ　ｂｕｙ　ｃｏｎｄｉｍｅｎｔｓ．．．@KEY()↓
-◆Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ　ｗｏｕｌｄ　ｂｅ　ｇｏｏｄ．．．@KEY()↓
-◆Ｔｈｅ　ｒｉｇｈｔ　ｃｏｎｄｉｍｅｎｔ　ｍａｋｅｓ　ａ　ｄｉｓｈ　ｔａｓｔｅ　ｂｅｔｔｅｒ，@KEY()↓
-◆ｗｈｉｌｅ　ｔｈｅ　ｗｒｏｎｇ　ｏｎｅ　ｍａｋｅｓ　ｉｔ　ｔａｓｔｅ　ｗｏｒｓｅ．@KEY()↓
-◆Ｉｆ　ｔｈｅ　ｃｏｎｄｉｍｅｎｔ　ｍａｔｃｈｅｓ　ｔｈｅ　ｆｏｏｄ，@KEY()↓
-◆ｙｏｕ　ｗｉｌｌ　ｇｅｔ　ｍｏｒｅ　ｐｏｗｅｒ　ｔｈａｎ　ｉｆ　ｙｏｕ　ａｔｅ　ｔｈｅ　ｆｏｏｄ　ｉｔｅｍ　ｐｌａｉｎ．
-;◆あじつけ　こもの↓
-;　かいにきたんだけど↓
-;　なににしようか　まよっちゃう。@KEY()↓
-;◆こんだてによって　ふりかけて↓
-;　おいしいものと↓
-;　おいしくないものがあって@KEY()↓
-;◆ふりかけの　くみあわせが↓
-;　うまくいくと@KEY()↓
+◆I came to buy condiments...@KEY()↓
+◆I wonder what would be good...@KEY()↓
+◆The right condiment makes a dish taste better,@KEY()↓
+◆while the wrong one makes it taste worse.@KEY()↓
+◆If the condiment matches the food,@KEY()↓
+◆you will get more power than if you ate the food item plain.
+;◆あじつけ こもの↓
+; かいにきたんだけど↓
+; なににしようか まよっちゃう。@KEY()↓
+;◆こんだてによって ふりかけて↓
+; おいしいものと↓
+; おいしくないものがあって@KEY()↓
+;◆ふりかけの くみあわせが↓
+; うまくいくと@KEY()↓
 ;◆おなじたべものでも↓
-;　グンと　パワーがアップするのよ。
+; グンと パワーがアップするのよ。
 @KEYNP()
 』
 
@@ -2676,22 +2676,22 @@ MSG_TWSN_SYSMSG_FURIKAKE;
 ;【あなぬけねずみの説明】
 
 ;配置場所：オネットの穴抜けねずみの家
-;配置オブジェ：（ボロ）
+;配置オブジェ：(ボロ)
 
 MSG_ONET_SYSMSG_ESCAPE_MOUSE;
-◆Ｉ　ｌｉｖｅ　ｒｅｎｔ−ｆｒｅｅ　ｉｎ　ｔｈｅ　ｍｏｕｓｅ’ｓ　ｈｏｕｓｅ．@KEY()↓
-◆Ｔｈｅ　ｍｉｃｅ　ａｒｅ　ｋｎｏｗｎ　ａｓ　”Ｅｘｉｔ　Ｍｉｃｅ．”@KEY()↓
-◆Ｔｈｅｙ　ａｒｅ　ｖｅｒｙ　ｋｉｎｄ，　ａｎｄ　ｂｏｙ　ａｒｅ　ｔｈｅｙ　ｆａｓｔ！@KEY()↓
-◆Ｉ　ｒｅａｌｌｙ　ｌｏｖｅ　ｔｈｅｓｅ　ｇｕｙｓ！
+◆I live rent−free in the mouse’s house.@KEY()↓
+◆The mice are known as ”Exit Mice.”@KEY()↓
+◆They are very kind, and boy are they fast!@KEY()↓
+◆I really love these guys!
 ;◆ネズミのいえに↓
-;　いそうろうさせて↓
-;　もらってるんだ　おれ。@KEY()↓
+; いそうろうさせて↓
+; もらってるんだ おれ。@KEY()↓
 ;◆しんせつなかれらは↓
-;　「あなぬけネズミ」っていう↓
-;　しゅるいなんだ。@KEY()↓
-;◆とにかく　しんせつで↓
-;　すばしこくて↓
-;　さいこうの　ともだちさ！
+; 「あなぬけネズミ」っていう↓
+; しゅるいなんだ。@KEY()↓
+;◆とにかく しんせつで↓
+; すばしこくて↓
+; さいこうの ともだちさ!
 @KEYNP()
 』
 ;-------------------------------------------------
@@ -2699,83 +2699,83 @@ MSG_ONET_SYSMSG_ESCAPE_MOUSE;
 ;【ホームシックの説明２】追加
 
 ;配置場所：ツーソンバスステーション電話のそば
-;配置オブジェ：（ツッパリ）
+;配置オブジェ：(ツッパリ)
 
 
 MSG_TWSN_SYSINFO_HOMESICK;
-◆Ｉ　ａｌｗａｙｓ　ｆｅｅｌ　ｍｕｃｈ　ｂｅｔｔｅｒ　ａｆｔｅｒ　ｈｅａｒｉｎｇ　ｍｙ　ｍｏｍ’ｓ　ｖｏｉｃｅ　ｏｖｅｒ　ｔｈｅ　ｐｈｏｎｅ．@KEY()↓
-◆Ｉ　ｗａｓ　ｒｅａｌｌｙ　ｈｏｍｅｓｉｃｋ　ｒｅｃｅｎｔｌｙ，　ａｎｄ　ｍｙ　ｍｏｍ　ｃｈｅｅｒｅｄ　ｍｅ　ｒｉｇｈｔ　ｕｐ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｃａｌｌ　ｙｏｕｒ　ｍｏｍ　ｓｏｍｅｔｉｍｅ．@KEY()↓
-◆Ｂｅｌｉｅｖｅ　ｍｅ，　ｔｈｏｓｅ　ｍｅｌａｎｃｈｏｌｙ　ｆｅｅｌｉｎｇｓ　ｗｉｌｌ　ｂｅ　ｇｏｎｅ　ｂｅｆｏｒｅ　ｙｏｕ　ｋｎｏｗ　ｉｔ．
-;◆でんわの　おふくろのこえ@WI(20)↓
-;　げんきで　あんしんしたなあ。@KEY()↓
-;◆このところ　おれ↓
-;　ホームシックぎみだったけど@KEY()↓
-;◆ぎゃくに　おふくろに↓
-;　げんきづけられちゃったよ。@KEY()↓
-;◆おまえも　たまには↓
-;　でんわでも　してみろよ。@WI(20)↓
-;　さみしさなんて　ぶっとぶぜ！
+◆I always feel much better after hearing my mom’s voice over the phone.@KEY()↓
+◆I was really homesick recently, and my mom cheered me right up.@KEY()↓
+◆You should call your mom sometime.@KEY()↓
+◆Believe me, those melancholy feelings will be gone before you know it.
+;◆でんわの おふくろのこえ@WI(20)↓
+; げんきで あんしんしたなあ。@KEY()↓
+;◆このところ おれ↓
+; ホームシックぎみだったけど@KEY()↓
+;◆ぎゃくに おふくろに↓
+; げんきづけられちゃったよ。@KEY()↓
+;◆おまえも たまには↓
+; でんわでも してみろよ。@WI(20)↓
+; さみしさなんて ぶっとぶぜ!
 @KEYNP()
 』
-;　げんきでるぜ　おたがい。@KEYNP()
+; げんきでるぜ おたがい。@KEYNP()
 ;』
 
 ;```````````````````````````````````````````````````````````````````
 ;【ガラクタと修理の関係のヒント】追加
 
 ;配置場所：ツーソン・猫しかいない家
-;配置オブジェ：（男）
+;配置オブジェ：(男)
 
 
 MSG_TWSN_SYSINFO_REPAIR;
-◆Ｉ　ｈａｖｅ　ａ　ｌｏｔ　ｏｆ　ｏｌｄ，　ｂｒｏｋｅｎ　ｊｕｎｋ，　ｂｕｔ　Ｉ　ｈａｔｅ　ｔｏ　ｔｈｒｏｗ　ａｎｙｔｈｉｎｇ　ａｗａｙ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｈａｖｅ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　ｉｓ　ｋｎｏｗｌｅｄｇｅａｂｌｅ　ａｂｏｕｔ　ｍｅｃｈａｎｉｃｓ，@KEY()↓
-◆ｔｈａｔ　ｐｅｒｓｏｎ　ｍｉｇｈｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｆｉｘ　ｓｏｍｅｔｈｉｎｇ　ｆｏｒ　ｙｏｕ　ｏｖｅｒｎｉｇｈｔ．．．@KEY()↓
-◆Ｍａｎ，　ａ　ｆｒｉｅｎｄ　ｌｉｋｅ　ｔｈａｔ　ｗｏｕｌｄ　ｂｅ　ｓｏ　ｈａｎｄｙ．．．
+◆I have a lot of old, broken junk, but I hate to throw anything away.@KEY()↓
+◆If you have a friend who is knowledgeable about mechanics,@KEY()↓
+◆that person might be able to fix something for you overnight...@KEY()↓
+◆Man, a friend like that would be so handy...
 ;◆ガラクタが↓
-;　たまっちゃったんだけど↓
-;　すてられなくてねぇ。@KEY()↓
-;◆メカにつよい　ともだちでもいたら↓
-;　ひとばんで　チャッチャカチャと↓
-;　なおしてくれるだろうに‥‥。@KEY()↓
-;◆おまえも　そういうともだちを↓
-;　もってると　いいぞ。
+; たまっちゃったんだけど↓
+; すてられなくてねぇ。@KEY()↓
+;◆メカにつよい ともだちでもいたら↓
+; ひとばんで チャッチャカチャと↓
+; なおしてくれるだろうに‥‥。@KEY()↓
+;◆おまえも そういうともだちを↓
+; もってると いいぞ。
 @KEYNP()
 』
-;◆ガラクタや　こわれたものって↓
-;　すてるに　すてられないんだ。@KEY()↓
-;◆おれは　ぶきっちょだけど↓
-;　いつか　きようなともだちが↓
-;　できないとも　かぎらないし。@KEY()↓
-;◆そいつが　てつやして↓
-;　バッチリしゅうりして↓
-;　くれないとも　かぎらないし。@KEYNP()
+;◆ガラクタや こわれたものって↓
+; すてるに すてられないんだ。@KEY()↓
+;◆おれは ぶきっちょだけど↓
+; いつか きようなともだちが↓
+; できないとも かぎらないし。@KEY()↓
+;◆そいつが てつやして↓
+; バッチリしゅうりして↓
+; くれないとも かぎらないし。@KEYNP()
 ;』
 
 ;```````````````````````````````````````````````````````````````````
-;【シャーク団が強いなーと思ったらドラッグストアで買い物をしろ」と言う人】追加（丸ちゃん）
+;【シャーク団が強いなーと思ったらドラッグストアで買い物をしろ」と言う人】追加(丸ちゃん)
 
 ;配置場所：ゲーセン２階
-;配置オブジェ：（シャーク団）
+;配置オブジェ：(シャーク団)
 ;検査フラグ：FLG_ONET_SHARK_2F_DISAPPEAR /OFF
 
 MSG_ONET_SHARK_SYSINFO_BTL;
 @OPEN(1)
-◆Ｗｈｅｎ　ｙｏｕ　ｂｕｙ　ａｎ　ｉｔｅｍ　ｔｈａｔ　ｓｈｏｕｌｄ　ｂｅ　ｅｑｕｉｐｐｅｄ，@KEY()↓
-◆ｄｏ　ｙｏｕ　ｂｏｔｈｅｒ　ｔｏ　ａｃｔｕａｌｌｙ　ｅｑｕｉｐ　ｉｔ？@KEY()↓
-◆Ｈｅｈ　ｅｈ，　Ｉ　ｇａｖｅ　ａ　ｈｉｎｔ　ｔｏ　ｍｙ　ｏｗｎ　ｅｎｅｍｙ．．．@KEY()↓
-◆Ｉ’ｍ　ｓｕｃｈ　ａ　ｒｏｃｋｉｎ’　ｄｕｄｅ！@KEY()↓
-◆Ｉ　ｏｂｖｉｏｕｓｌｙ　ｈａｖｅ　ｔｏｔａｌ　ｃｏｎｆｉｄｅｎｃｅ　ｉｎ　ｍｙ　ｏｗｎ　ａｂｉｌｉｔｉｅｓ．@KEY()↓
-◆Ｓｏ．．．ａｒｅ　ｙｏｕ　ｒｅａｄｙ　ｔｏ　ｇｅｔ　ｉｔ　ｏｎ，　Ｓｐａｎｋｙ？
-;◆おまえ　ドラッグストアで↓
-;　ぶきとか　ぼうぐをかったとき↓
-;　ちゃんと「そうび」してるのか？@KEY()↓
+◆When you buy an item that should be equipped,@KEY()↓
+◆do you bother to actually equip it?@KEY()↓
+◆Heh eh, I gave a hint to my own enemy...@KEY()↓
+◆I’m such a rockin’ dude!@KEY()↓
+◆I obviously have total confidence in my own abilities.@KEY()↓
+◆So...are you ready to get it on, Spanky?
+;◆おまえ ドラッグストアで↓
+; ぶきとか ぼうぐをかったとき↓
+; ちゃんと「そうび」してるのか?@KEY()↓
 ;◆‥‥なんてぐあいに↓
-;　てきにヒントをあげちゃう↓
-;　よゆうのボクちゃん。@KEY()↓
+; てきにヒントをあげちゃう↓
+; よゆうのボクちゃん。@KEY()↓
 ;◆‥‥じゃ↓
-;　たたかおうか！
+; たたかおうか!
 @KEY()
 @CLOSEALL()
 @GOSUB(MSG_BATTLE_SHARK_A);バトルへ
@@ -2793,10 +2793,10 @@ MSG_BUTTERFLY_HIT;
 @WAITSYS()				;待機
 @OPEN(1)
 ←
-◆Ｔｈｅ　ｍａｇｉｃ　ｂｕｔｔｅｒｆｌｙ　ｍａｄｅ　@GOSUB(MSG_ESUB_DSP_PARTY)　ｒｅｌａｘ．
-;◆マジックバタフライの　おかげで↓
-;　@DSP_LCNAME()は↓
-;　とても　リラックスできた。
+◆The magic butterfly made @GOSUB(MSG_ESUB_DSP_PARTY) relax.
+;◆マジックバタフライの おかげで↓
+; @DSP_LCNAME()は↓
+; とても リラックスできた。
 @KEYNP()
 @CLOSEALL()
 @REMOVE_GOM_CHAR(GOM_BUTTERFLY,ANIM_MAGIC_BUTTERFLY_OUT)
@@ -2804,70 +2804,70 @@ MSG_BUTTERFLY_HIT;
 @!
 ;-------------------------------------------------
 MSG_ONET_CHECK_HOTEL_KANBAN;
-◆”Ｈｏｔｅｌ　Ｏｎｅｔｔ”@KEY()↓
-◆３５　ｄｏｌｌａｒｓ　ｐｅｒ　ｎｉｇｈｔ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”Hotel Onett”@KEY()↓
+◆３５ dollars per night for a single room.
 ;◆「ホテルオネット」↓
-;　ごしゅくはく↓
-;　おひとり　３５ドル
+; ごしゅくはく↓
+; おひとり ３５ドル
 @KEYNP()
 』
 MSG_TWSN_CHECK_HOTEL_KANBAN;
-◆”Ｔｗｏｓｏｎ　Ｈｏｔｅｌ”@KEY()↓
-◆５０　ｄｏｌｌａｒｓ　ｐｅｒ　ｎｉｇｈｔ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”Twoson Hotel”@KEY()↓
+◆５０ dollars per night for a single room.
 ;◆「ツーソンホテル」↓
-;　ごしゅくはく↓
-;　おひとり　５０ドル
+; ごしゅくはく↓
+; おひとり ５０ドル
 @KEYNP()
 』
 MSG_THRK_CHECK_HOTEL_KANBAN;
-◆”Ｔｈｒｅｅｄ　Ｓｕｎｓｅｔ　Ｈｏｔｅｌ”@KEY()↓
-◆６０　ｄｏｌｌａｒｓ　ｐｅｒ　ｎｉｇｈｔ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”Threed Sunset Hotel”@KEY()↓
+◆６０ dollars per night for a single room.
 ;◆「スリーク・サンセットホテル」↓
-;　ごしゅくはく↓
-;　おひとり　６０ドル
+; ごしゅくはく↓
+; おひとり ６０ドル
 @KEYNP()
 』
 MSG_SUMS_CHECK_HOTEL_KANBAN;
-◆”Ｌ’ｈｏｔｅｌ　ｄｕ　Ｓｕｍｍｅｒ”@KEY()↓
-◆１５０　ｄｏｌｌａｒｓ　ｐｅｒ　ｎｉｇｈｔ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”L’hotel du Summer”@KEY()↓
+◆１５０ dollars per night for a single room.
 ;◆「オテル・ド・サマーズ」↓
-;　ごしゅくはく↓
-;　おひとり　１５０ドル
+; ごしゅくはく↓
+; おひとり １５０ドル
 @KEYNP()
 』
 MSG_FOUR_CHECK_HOTEL_KANBAN;
 @CHKFGOTO(FLG_WIN_GIEGU,_FOUR_HOTEL_KANBAN_LATER)
-◆”Ｍｏｎｏｔｏｌｙ　Ｇｒａｎｄ　Ｈｏｔｅｌ”@KEY()↓
-◆７５　ｄｏｌｌａｒｓ　ｐｅｒ　ｎｉｇｈｔ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”Monotoly Grand Hotel”@KEY()↓
+◆７５ dollars per night for a single room.
 ;◆「モノトリーグランドホテル」↓
-;　ごしゅくはく↓
-;　おひとり　７５ドル
+; ごしゅくはく↓
+; おひとり ７５ドル
 @KEYNP()
 』
 _FOUR_HOTEL_KANBAN_LATER;
-◆”Ｅｎｒｉｃｈ　Ｇｒａｎｄ　Ｈｏｔｅｌ”@KEY()↓
-◆７５　ｄｏｌｌａｒｓ　ｐｅｒ　ｎｉｇｈｔ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”Enrich Grand Hotel”@KEY()↓
+◆７５ dollars per night for a single room.
 ;◆「エンリッチ・グランドホテル」↓
-;　ごしゅくはく↓
-;　おひとり　７５ドル
+; ごしゅくはく↓
+; おひとり ７５ドル
 @KEYNP()
 』
 
 MSG_MOON_CHECK_HOTEL_KANBAN;
-◆”Ｈｏｔｅｌ　Ｄａｒｋ　Ｍｏｏｎ”@KEY()↓
-◆７５　ｄｏｌｌａｒｓ　ｆｏｒ　ｏｎｅ　ｓｌｅｅｐ　ｐｅｒｉｏｄ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”Hotel Dark Moon”@KEY()↓
+◆７５ dollars for one sleep period for a single room.
 ;◆「ホテル・ダークムーン」↓
-;　ひとねむり↓
-;　おひとり　７５ドル
+; ひとねむり↓
+; おひとり ７５ドル
 @KEYNP()
 』
 MSG_SKRB_CHECK_HOTEL_KANBAN;
-◆”Ｇｒｅａｔ　Ｓｏｕｔｈｅｒｎ　Ｉｎｔｅｒｎａｔｉｏｎａｌ　Ｒｅｓｏｒｔ　Ｈｏｔｅｌ”@KEY()↓
-◆１００　ｄｏｌｌａｒｓ　ｐｅｒ　ｎｉｇｈｔ　ｆｏｒ　ａ　ｓｉｎｇｌｅ　ｒｏｏｍ．
+◆”Great Southern International Resort Hotel”@KEY()↓
+◆１００ dollars per night for a single room.
 ;◆「グレート・サザーン・↓
-;　こくさい・かんこうホテル」↓@KEY()
+; こくさい・かんこうホテル」↓@KEY()
 ;◆ごしゅくはく↓
-;　おひとり　１００ドル
+; おひとり １００ドル
 @KEYNP()
 』
 ;-------------------------------------------------
@@ -2875,67 +2875,67 @@ MSG_SKRB_CHECK_HOTEL_KANBAN;
 
 MSG_GPFT_DOSEI_C;
 @FONTBAKA()
-◆Ｉ　ｅｓｃａｐｅｄ．@KEY()↓
-◆Ｚｏｏｍ！@KEY()↓
-◆Ｂｕｕｒｐ！@KEY()↓
-◆Ｂｏｉｎｇ！@KEY()↓
-◆Ｇｏｏｄｙ！@KEY()↓
-◆Ｂｕｕｕｒｐ！
+◆I escaped.@KEY()↓
+◆Zoom!@KEY()↓
+◆Buurp!@KEY()↓
+◆Boing!@KEY()↓
+◆Goody!@KEY()↓
+◆Buuurp!
 ;◆にげてったよ↓
-;　げっぷー。@KEY()↓
+; げっぷー。@KEY()↓
 ;◆よかった↓
-;　ぽえーん。
+; ぽえーん。
 @KEYNP()
 @FONTSTD()
 』
 MSG_DOSEI_KANBAN_MILKY;
 @FONTBAKA()
-◆Ｈｏｌｅ　”Ｍｉｌｋｙ　Ｗｅｌｌ”．@KEY()↓
-◆Ｗｈａｔ　ｔｈｉｓ．．．Ｄｉｎｇ！@KEY()↓
-◆Ｄｉｎｇ！
+◆Hole ”Milky Well”.@KEY()↓
+◆What this...Ding!@KEY()↓
+◆Ding!
 ;◆こっちのあな↓
-;　「みるきーうぇる」↓
-;　なんだろう？？？
+; 「みるきーうぇる」↓
+; なんだろう???
 @KEYNP()
 @FONTSTD()
 』
 MSG_FOUR_HOSP_CAP;
-◆Ｇｒａｎｄｍａ’ｓ　ｇｏｎｎａ　ｇｅｔ　ｂｅｔｔｅｒ，　ｈｕｈ．
+◆Grandma’s gonna get better, huh.
 ;◆おばあちゃん↓
-;　げんきになるかなぁ。
+; げんきになるかなぁ。
 @KEYNP()
 』
 ;◆ぼくは「おばあちゃんを↓
-;　おみまいにきた　まご」っていう↓
-;　せっていなんだ。@KEY()↓
-;◆この　だいとかいには↓
-;　ちょっと　めずらしい↓
-;　シチュエーションでしょ？@KEYNP()
+; おみまいにきた まご」っていう↓
+; せっていなんだ。@KEY()↓
+;◆この だいとかいには↓
+; ちょっと めずらしい↓
+; シチュエーションでしょ?@KEYNP()
 ;』
 MSG_FOUR_HOSP_OLDWOMAN;
-◆Ｉ’ｍ　ｊｕｓｔ　ｅｎｊｏｙｉｎｇ　ｂｅｉｎｇ　ｗｉｔｈ　ｍｙ　ｇｒａｎｄｃｈｉｌｄｒｅｎ．@KEY()↓
-◆Ｉ’ｌｌ　ｂｅ　ｂｅｔｔｅｒ　ｓｏｏｎ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ｇｒａｎｄｃｈｉｌｄｒｅｎ？↓
-<Ｙｅｓ>
-<Ｎｏ>
-;◆まごのかおを　みるだけで↓
-;　なんだか　げんきになるんですよ。@KEY()↓
-;◆あなたには　おまごさん↓
-;　いらっしゃるのかしら？↓
-;　　<はい>　　<いいえ>
+◆I’m just enjoying being with my grandchildren.@KEY()↓
+◆I’ll be better soon.@KEY()↓
+◆Do you have grandchildren?↓
+<Yes>
+<No>
+;◆まごのかおを みるだけで↓
+; なんだか げんきになるんですよ。@KEY()↓
+;◆あなたには おまごさん↓
+; いらっしゃるのかしら?↓
+;  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_FOUR_HOSP_OLDWOMAN_YES,_FOUR_HOSP_OLDWOMAN_NO)
 _FOUR_HOSP_OLDWOMAN_NO;
-◆Ｙｅｓ，　ｙｅｓ．．．ｙｏｕ　ｓｅｅｍ　　ａ　ｌｉｔｔｌｅ　ｙｏｕｎｇ　ｆｏｒ　ｔｈａｔ．．．
-;◆まだ　おわかいようですもんね。
+◆Yes, yes...you seem  a little young for that...
+;◆まだ おわかいようですもんね。
 @KEYNP()
 』
 _FOUR_HOSP_OLDWOMAN_YES;
-◆Ｏｈ？@KEY()↓
-◆Ａｔ　ｙｏｕｒ　ａｇｅ？@KEY()↓
-◆Ｏｈ．．．ｔｈｅ　ｙｏｕｔｈ　ｏｆ　ｔｏｄａｙ　ｓｈｏｃｋ　ｍｅ．．．@KEY()↓
-◆Ｍｙ　ｌａｎｄｓ．．．
-;◆あらまぁ　びっくり。
+◆Oh?@KEY()↓
+◆At your age?@KEY()↓
+◆Oh...the youth of today shock me...@KEY()↓
+◆My lands...
+;◆あらまぁ びっくり。
 @KEYNP()
 』
 ;-------------------------------------------------
@@ -2947,22 +2947,22 @@ _FOUR_HOSP_OLDWOMAN_YES;
 ;This message appears when the player tries to enter the area that is not ready 
 ;to play in the CES version.  You can change whatever it fits better for the CES
 ;version.
-;MSG_CES_SORRY;デモ版につきあしからず（新規）
+;MSG_CES_SORRY;デモ版につきあしからず(新規)
 ;@OPEN(1)
-;◆Ｔｈｉｓ　ｉｓ　ａｓ　ｆａｒ　ａｓ　ｙｏｕ　ｃａｎ　ｇｏ　ｉｎ　ｔｈｉｓ　ｖｅｒｓｉｏｎ．@KEY()↓
-;◆Ｌｏｏｋ　ｆｏｒ　ｔｈｅ　ｆｉｎａｌ　ｖｅｒｓｉｏｎ　ｉｎ　Ｓｐｒｉｎｇ　ｏｆ　１９９５！@KEYNP()
+;◆This is as far as you can go in this version.@KEY()↓
+;◆Look for the final version in Spring of １９９５!@KEYNP()
 ;@WI(20)
 ;@CLOSEALL()
 ;@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_SoftReset,OBJFX_SHOW_NONE);リセット
 ;』
-;jpn:◆ここからさきは　いまは
-;jpn:　あそべません。おたのしみに。
+;jpn:◆ここからさきは いまは
+;jpn: あそべません。おたのしみに。
 
 ;-------------------------------------------------
 
-;■ＰＳＩの説明メッセージ（EXPL.MSG）
+;■PSIの説明メッセージ(EXPL.MSG)
 ;とりあえず、EXPL.MSGがいただけるまでは
-;どのＰＳＩを選択しても同じ説明が出るようにしたいと思います
+;どのPSIを選択しても同じ説明が出るようにしたいと思います
 ;PSI Explanation Message
 ;23 ライフアップα
 ;akm
@@ -2970,11 +2970,11 @@ _FOUR_HOSP_OLDWOMAN_YES;
 ;when the player selects any PSI.
 ;23 Life-Up SYMBOL 97 \f "Symbol"
 
-;MSG_CES_PSI_SORRY;ＣＥＳ版ＰＳＩ説明（新規）
+;MSG_CES_PSI_SORRY;CES版PSI説明(新規)
 ;MSG_EXPL_PSI_LIFEUP_ALFA;
-;◆Ｏｎｅ　ｏｆ　ｙｏｕｒ　ｆｒｉｅｎｄｓ　ｒｅｃｏｖｅｒｅｄ　ａｂｏｕｔ　１００　ＨＰ！
-;jpn:◆なかまひとりのＨＰを↓
-;jpn:　やく１００ポイント　かいふくする。
+;◆One of your friends recovered about １００ HP!
+;jpn:◆なかまひとりのHPを↓
+;jpn: やく１００ポイント かいふくする。
 ;@!
 
 ;------------------------------------------------
@@ -2988,20 +2988,20 @@ _FOUR_HOSP_OLDWOMAN_YES;
 ;If you want to show the message like "Demo Only" or "Still Under Development",
 ;please do so.
 
-;MSG_CES_GDS_EXP_SORRY;ＣＥＳ版グッズ説明（新規）
-;◆@DSP_STS(STS_PC_NAME_NES)　ｃａｎ　ｅｑｕｉｐ　ｔｈｉｓ　ｉｔｅｍ，　ｂｕｔ　ｉｔ　ｍａｙ　ｎｏｔ　ｗｏｒｋ　ｉｎ　ｔｈｅ　ＣＥＳ　ｖｅｒｓｉｏｎ．@KEYNP()
+;MSG_CES_GDS_EXP_SORRY;CES版グッズ説明(新規)
+;◆@DSP_STS(STS_PC_NAME_NES) can equip this item, but it may not work in the CES version.@KEYNP()
 ;』
-;jpn:◆（ネス）が　そうびできる
-;jpn:　ぶき。
+;jpn:◆(ネス)が そうびできる
+;jpn: ぶき。
 ;------------------------------------------------
 
 ;■ヒント屋のヒントなしメッセージ
 ;MSG_CES_HINT;
-;◆Ｈａｎｇ　ｏｎ　ｊｕｓｔ　ａ　ｓｅｃｏｎｄ，　ｙｏｕｎｇ　ｍａｎ！@WI(20)　　Ｉ　ｗａｎｔ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ａ　ｈｉｎｔ．@KEY()↓
-;◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｈｏｗ　ｔｏ　ｓａｙ　ｔｈｉｓ．．．@WI(20)　　Ｐｌｅａｓｅ　ｄｏｎ’ｔ　ｈａｔｅ　ｍｅ．
-;◆ちょっとまった！ヤングマン@WI(20)↓
-;　ヒントを　あげたいんだけど↓
-;　まだ　おもいつかないんだ。@KEY()↓
+;◆Hang on just a second, young man!@WI(20)  I want to give you a hint.@KEY()↓
+;◆I don’t know how to say this...@WI(20)  Please don’t hate me.
+;◆ちょっとまった!ヤングマン@WI(20)↓
+; ヒントを あげたいんだけど↓
+; まだ おもいつかないんだ。@KEY()↓
 ;◆わるいね。
 ;@KEYNP()
 ;』

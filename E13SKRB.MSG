@@ -2,7 +2,7 @@
 
 ;@Habitat:スカラビ／ドラッグストア／ドラッグストア
 ;@Person:店員
-;@Figure:スカラビ男Ｃ
+;@Figure:スカラビ男C
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
@@ -15,7 +15,7 @@ MSG_SKRB_DRUG;@MiuraAppended
 ；----------------------------------------
 ;@Habitat:スカラビ／ホテル／ホテル
 ;@Person:フロント
-;@Figure:スカラビ男Ａ
+;@Figure:スカラビ男A
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
@@ -23,13 +23,13 @@ MSG_SKRB_DRUG;@MiuraAppended
 ;@Message:MSG_SKRB_HOTEL
 ;MSG_SKRB_HOTEL;
 ;◆「グレート・サザーン・ホテル」へ↓
-;　ようこそ！@KEY()↓
+; ようこそ!@KEY()↓
 ;@GOSUB(MSG_GLOBAL_HOTEL)
 ;』
 
 ;@Habitat:スカラビ／ホテル／ホテル
 ;@Person:キャッシュディスペンサ
-;@Figure:ＣＤ
+;@Figure:CD
 ;@AppearanceKey:0
 ;@ActionScript:◆固定
 ;@GoodsMessage:MSG_GLOBAL_CD_RECEIVE
@@ -49,7 +49,7 @@ MSG_SKRB_WEAPON;@MiuraAppended
 』
 
 ；----------------------------------------
-;@Habitat:スカラビ／住人の家Ｂ／住人の家Ｂ
+;@Habitat:スカラビ／住人の家B／住人の家B
 ;@Person:住人
 ;@Figure:スカラビ女
 ;@AppearanceKey:0
@@ -58,15 +58,15 @@ MSG_SKRB_WEAPON;@MiuraAppended
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_HOUSE_B
 MSG_SKRB_HOUSE_B;
-◆Ｎｏ，　Ｉ　ｄｏｎ’ｔ　ｗａｎｔ　ａｎｙ　ｍｕｍｍｙ　ｂａｎｄａｇｅｓ！@KEY()↓
-◆Ｎｏ　ｓｏｌｉｃｉｔｉｎｇ　ａｌｌｏｗｅｄ　ｐｌｅａｓｅ！
+◆No, I don’t want any mummy bandages!@KEY()↓
+◆No soliciting allowed please!
 @KEYNP()
 ;jpn:◆ミイラのほうたいなんか↓
-;jpn:　いらないよ！↓
-;jpn:　おしうりおことわり！@KEYNP()
+;jpn: いらないよ!↓
+;jpn: おしうりおことわり!@KEYNP()
 』
 
-;@Habitat:スカラビ／住人の家Ｃ／住人の家Ｃ
+;@Habitat:スカラビ／住人の家C／住人の家C
 ;@Person:住人
 ;@Figure:おじいさん
 ;@AppearanceKey:0
@@ -75,13 +75,13 @@ MSG_SKRB_HOUSE_B;
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_HOUSE_C
 MSG_SKRB_HOUSE_C;
-◆Ｉ’ｖｅ　ｎｅｖｅｒ　ｓｅｅｎ　ｙｏｕ　ａｒｏｕｎｄ　ｈｅｒｅ．@KEY()↓
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ？@KEY()↓
-◆Ｉ　ｄｏ　ｎｏｔ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｙｏｕ　ｗｏｕｌｄ　ｗａｎｔ．
+◆I’ve never seen you around here.@KEY()↓
+◆What do you want?@KEY()↓
+◆I do not have anything you would want.
 @KEYNP()
-;jpn:◆このへんじゃ　みかけないかおだ。↓
-;jpn:　なにかようかな。↓
-;jpn:　わしのほうからは　ようはないよ。@KEYNP()
+;jpn:◆このへんじゃ みかけないかおだ。↓
+;jpn: なにかようかな。↓
+;jpn: わしのほうからは ようはないよ。@KEYNP()
 』
 
 ；----------------------------------------
@@ -94,7 +94,7 @@ MSG_SKRB_HOUSE_C;
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_HOSPITAL_USHER
 MSG_SKRB_HOSPITAL_USHER;@MiuraAppended
-;◆どなたに　ごめんかいですか？@KEY()
+;◆どなたに ごめんかいですか?@KEY()
 @GOSUB(MSG_NURSE_SKRB)
 ;@GOSUB(MSG_SHOP_SKRB_HOSPITAL)
 』
@@ -109,72 +109,72 @@ MSG_SKRB_HOSPITAL_USHER;@MiuraAppended
 ;@Message:MSG_SKRB_HOSPITAL_DOCTOR
 MSG_SKRB_HOSPITAL_DOCTOR;@MiuraAppended
 ;◆みてもらいたいのは↓
-;　だれだね？@KEY()
+; だれだね?@KEY()
 @GOSUB(MSG_DOCTOR_SKRB)
 』
 
 ；----------------------------------------
 ;@Habitat:スカラビ／フィールド／港の付近
 ;@Person:港の人
-;@Figure:スカラビ男Ｃ
+;@Figure:スカラビ男C
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_HARBOR
 MSG_SKRB_HARBOR;
-◆Ｄｉｄ　ｙｏｕ　ｃｏｍｅ　ｆｒｏｍ　Ｔｏｔｏ　ｂｙ　ｓｈｉｐ？@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ａ　ｓｃａｒｙ　ｍｏｎｓｔｅｒ　ｉｎ　ｔｈｅ　ｓｅａ．．．@KEY()↓
-◆．．．Ｄｉｄ　ｙｏｕ　ｂｅａｔ　ｈｉｍ？@KEY()↓
-◆Ｏｒ　ｄｉｄ　ｙｏｕ　ｅｓｃａｐｅ？@KEY()↓
-◆Ｅｉｔｈｅｒ　ｗａｙ，　ｙｏｕ　ａｒｅ　ｆａｎｔａｓｔｉｃ！
+◆Did you come from Toto by ship?@KEY()↓
+◆There’s a scary monster in the sea...@KEY()↓
+◆...Did you beat him?@KEY()↓
+◆Or did you escape?@KEY()↓
+◆Either way, you are fantastic!
 @KEYNP()
-;jpn:◆あんたがた　トトから　ふねで？！↓
-;jpn:　うみには　おそろしいばけものが↓
-;jpn:　いたっていうのに‥‥@KEY()↓
+;jpn:◆あんたがた トトから ふねで?!↓
+;jpn: うみには おそろしいばけものが↓
+;jpn: いたっていうのに‥‥@KEY()↓
 ;jpn:◆‥‥やっつけたのか。↓
-;jpn:　うまく　にげられたのか？↓
-;jpn:　どっちにしても　たいしたものだ。@KEYNP()
+;jpn: うまく にげられたのか?↓
+;jpn: どっちにしても たいしたものだ。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／蛇屋付近
-;@Person:蛇屋の人集りＡ
-;@Figure:スカラビ男Ａ
+;@Person:蛇屋の人集りA
+;@Figure:スカラビ男A
 ;@AppearanceKey:0
 ;@ActionScript:◆背面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_SNAKESHOP_A
 MSG_SKRB_SNAKESHOP_A;
-◆Ｓｎａｋｅｓ　ａｒｅ　ｓｏ　ｕｎｐｌｅａｓａｎｔ，　ｂｕｔ　ｓｏ　ｃｕｔｅ．．．@KEY()↓
-◆Ｏｈ，　Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈａｔ　Ｉ　ｍａｙ　ｂｅ　ｓａｙｉｎｇ．
+◆Snakes are so unpleasant, but so cute...@KEY()↓
+◆Oh, I don’t know what I may be saying.
 @KEYNP()
-;jpn:◆へびは　きもちわるいけど↓
-;jpn:　けっこう　かわいい‥けど↓
-;jpn:　ああ@KEY()↓
-;jpn:◆おれ　なにいってるのか↓
-;jpn:　わかんないや。@KEYNP()
+;jpn:◆へびは きもちわるいけど↓
+;jpn: けっこう かわいい‥けど↓
+;jpn: ああ@KEY()↓
+;jpn:◆おれ なにいってるのか↓
+;jpn: わかんないや。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／蛇屋付近
-;@Person:蛇屋の人集りＢ
-;@Figure:スカラビ男Ｃ
+;@Person:蛇屋の人集りB
+;@Figure:スカラビ男C
 ;@AppearanceKey:0
 ;@ActionScript:◆背面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_SNAKESHOP_B
 MSG_SKRB_SNAKESHOP_B;
-◆Ｓｈｏｕｌｄ　Ｉ　ｋｅｅｐ　ａ　ｓｎａｋｅ　ａｔ　ｈｏｍｅ？@KEY()↓
-◆Ｐｅｒｈａｐｓ　Ｉ　ｓｈｏｕｌｄ　”ａｓｐ”　ａｎ　ｅｘｐｅｒｔ．
+◆Should I keep a snake at home?@KEY()↓
+◆Perhaps I should ”asp” an expert.
 @KEYNP()
-;jpn:◆へび　かおうかなぁ↓
-;jpn:　うちでかうには↓
-;jpn:　ちょっと　ヘビーかな。@KEYNP()
+;jpn:◆へび かおうかなぁ↓
+;jpn: うちでかうには↓
+;jpn: ちょっと ヘビーかな。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／蛇屋付近
-;@Person:蛇屋の人集りＣ
+;@Person:蛇屋の人集りC
 ;@Figure:スカラビ女
 ;@AppearanceKey:0
 ;@ActionScript:◆背面向いて止ったまま
@@ -182,52 +182,52 @@ MSG_SKRB_SNAKESHOP_B;
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_SNAKESHOP_C
 MSG_SKRB_SNAKESHOP_C;
-◆Ｐｏｉｓｏｎｏｕｓ　ｓｎａｋｅｓ　ｃｏｓｔ　ｍｏｒｅ．@KEY()↓
-◆Ｗｈｙ　ｗｏｕｌｄ　ａ　ｆｉｎｅ　ｙｏｕｎｇ　ｍａｎ　ｌｉｋｅ　ｙｏｕ　ｎｅｅｄ　ｏｎｅ？
-;＠ポーラだったら「ｌａｄｙ」
+◆Poisonous snakes cost more.@KEY()↓
+◆Why would a fine young man like you need one?
+;＠ポーラだったら「lady」
 @KEYNP()
 ;jpn:◆どくへびのほうが↓
-;jpn:　ねだんが　たかいのねぇ↓
-;jpn:　なんにつかうのかしら。@KEYNP()
+;jpn: ねだんが たかいのねぇ↓
+;jpn: なんにつかうのかしら。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／蛇屋付近
 ;@Person:へび袋売り
-;@Figure:スカラビ男Ｂ
+;@Figure:スカラビ男B
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_SNAKESHOP_D
 MSG_SKRB_SNAKESHOP_D;
-◆Ｔｈｅ　@DSP_GOODS(GDS_TOOL_SNAKE_BAG)　ｃａｎ　ｈｏｌｄ　ｌｉｖｅ　ｓｎａｋｅｓ！@WI(20)　　Ｔｈｅｒｅ　ａｒｅ　ｓｎａｋｅｓ　ｉｎ　ｔｈｅ　ｓａｃｋ！@KEY()↓
-◆Ｐｌｅａｓｅ，　ｉｔ　ｉｓ　ａ　ｖｅｒｙ　ｕｓｅｆｕｌ　ｉｔｅｍ！@KEY()↓
-◆Ｓｈａｌｌ　ｙｏｕ　ｂｕｙ　ｏｎｅ？　　Ｉ　ａｍ　ｈｕｍｂｌｙ　ｏｆｆｅｒｉｎｇ　ｉｔ　ｔｏ　ｙｏｕ．．．↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆へびのはいった　へびぶくろ。↓
-;jpn:　ふくろのなかには　へびがいる。↓
-;jpn:　やくにたつよ。　かうか？@KEY()↓
+◆The @DSP_GOODS(GDS_TOOL_SNAKE_BAG) can hold live snakes!@WI(20)  There are snakes in the sack!@KEY()↓
+◆Please, it is a very useful item!@KEY()↓
+◆Shall you buy one?  I am humbly offering it to you...↓
+<Yes>
+<No>
+;jpn:◆へびのはいった へびぶくろ。↓
+;jpn: ふくろのなかには へびがいる。↓
+;jpn: やくにたつよ。 かうか?@KEY()↓
 ;jpn:<はい>
 ;jpn:<いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SKRB_SNAKESHOP_D_YES,_SKRB_SNAKESHOP_D_NO)
 
 _SKRB_SNAKESHOP_D_NO;
-◆Ｙｏｕ　ａｒｅ　ａｆｒａｉｄ　ｏｆ　ｓｎａｋｅｓ，　ａｒｅ　ｙｏｕ　ｎｏｔ？@KEY()↓
-◆Ｈｅｈ　ｈｅｈ　ｈｅｈ．
+◆You are afraid of snakes, are you not?@KEY()↓
+◆Heh heh heh.
 @KEYNP()
-;jpn:◆へびが　こわいんだろ↓
-;jpn:　へっへっへ。@KEYNP()
+;jpn:◆へびが こわいんだろ↓
+;jpn: へっへっへ。@KEYNP()
 』
 
 _SKRB_SNAKESHOP_D_YES;
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_SKRB_SNAKESHOP_D_ITEMFULL)
-◆Ｔｈａｔ　ｉｓ　２９０　ｄｏｌｌａｒｓ，　ｋｉｎｄ　@XCHG()@GOSUB(MSG_ESUB_SIR_MAAM)．↓
+◆That is ２９０ dollars, kind @XCHG()@GOSUB(MSG_ESUB_SIR_MAAM).↓
 @WINR_MONEY()
-<Ｙｅｓ>
-<Ｎｏ>
+<Yes>
+<No>
 ;jpn:◆２９０ドルだ。↓
 ;jpn:<はい>
 ;jpn:<いいえ>
@@ -244,37 +244,37 @@ _SKRB_SNAKESHOP_D_BUY;
 @MONEYOUT(98)
 @WINR_MONEY()
 @SE(SE_se78_my_open_rock)
-◆Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ａ　ｄｉｓｃｏｕｎｔ　ａｓ　ｔｈｅ　ｓａｃｋ　ｈａｓ　ａ　ｈｏｌｅ　ｉｎ　ｉｔ．@KEY()↓
-◆（Ｓｎａｋｅ　ｓａｃｋ　ｄｅａｌｅｒ　ｍａｒｋｅｄ　ｔｈｅ　ｐｒｉｃｅ　ｄｏｗｎ　ｔｏ　９８　ｄｏｌｌａｒｓ　ｆｒｏｍ　２９０　ｄｏｌｌａｒｓ．）
+◆I’ll give you a discount as the sack has a hole in it.@KEY()↓
+◆(Snake sack dealer marked the price down to ９８ dollars from ２９０ dollars.)
 @KEYNP()
-;jpn:◆あなが　あいてるから↓
-;jpn:　やすくしておいたよ。@KEY()↓
-;jpn:◆（ヘビぶくろうりは↓
-;jpn:　２９０ドルを↓
-;jpn:　９８ドルにしてくれた）
+;jpn:◆あなが あいてるから↓
+;jpn: やすくしておいたよ。@KEY()↓
+;jpn:◆(ヘビぶくろうりは↓
+;jpn: ２９０ドルを↓
+;jpn: ９８ドルにしてくれた)
 @KEYNP()
 』
 
 _SKRB_SNAKESHOP_D_NOMONEY;
-◆Ｗｉｔｈｏｕｔ　ａｎｙ　ｍｏｎｅｙ，　Ｉ　ｃａｎｎｏｔ　ｓｅｌｌ　ｔｏ　ｙｏｕ．．
+◆Without any money, I cannot sell to you..
 @KEYNP()
 ;jpn:◆かねがなくちゃあ↓
-;jpn:　かえねえな。@KEYNP()
+;jpn: かえねえな。@KEYNP()
 』
 
 _SKRB_SNAKESHOP_D_ITEMFULL;
-◆Ｓｉｎｃｅ　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｉｔｅｍｓ，　Ｉ　ｈｕｍｂｌｙ　ｋｅｅｐ　ｔｈｉｓ　ｉｍｐｏｒｔａｎｔ　@DSP_GOODS(GDS_TOOL_SNAKE_BAG)．
+◆Since you have too many items, I humbly keep this important @DSP_GOODS(GDS_TOOL_SNAKE_BAG).
 @KEYNP()
 ;jpn:◆ガラクタばっかり↓
-;jpn:　かかえこんでるから@KEY()↓
-;jpn:◆たいせつな　へびぶくろが↓
-;jpn:　もてねえようだぜ。@KEYNP()
+;jpn: かかえこんでるから@KEY()↓
+;jpn:◆たいせつな へびぶくろが↓
+;jpn: もてねえようだぜ。@KEYNP()
 』
 
 
 
 ;@Habitat:スカラビ／フィールド／蛇屋
-;@Person:へび屋（パンチョ）
+;@Person:へび屋(パンチョ)
 ;@Figure:へび屋のパンチョ
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -282,59 +282,59 @@ _SKRB_SNAKESHOP_D_ITEMFULL;
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_SNAKESHOP_PANCHO
 MSG_SKRB_SNAKESHOP_PANCHO;
-;◆ハイ　レッドスネーク・カモン！↓
-;　キッス　オブ　ファイア。↓
-;　わきげのエサ‥‥はくしゅー！@KEY()
+;◆ハイ レッドスネーク・カモン!↓
+; キッス オブ ファイア。↓
+; わきげのエサ‥‥はくしゅー!@KEY()
 @GOSUB(MSG_SHOP_SKRB_SNAKE)
 』
 
 ;@Habitat:スカラビ／フィールド／バザールの場
-;@Person:バザールの男（ゴザールさん）
-;@Figure:スカラビ男Ｃ
+;@Person:バザールの男(ゴザールさん)
+;@Figure:スカラビ男C
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_GOZAR
 MSG_SKRB_GOZAR;
-;◆めずらしいもの　いろいろあるよ。↓
-;　あったら　べんり↓
-;　なければ　たいへん！@KEY()↓
-;◆メニューみて　きめなはれ。@KEY()
+;◆めずらしいもの いろいろあるよ。↓
+; あったら べんり↓
+; なければ たいへん!@KEY()↓
+;◆メニューみて きめなはれ。@KEY()
 @GOSUB(MSG_SHOP_SKRB_BAZAR)
 』
 
 ;@Habitat:スカラビ／フィールド／バザールの場
-;@Person:バザールのヤジ馬Ａ
-;@Figure:スカラビ男Ａ
+;@Person:バザールのヤジ馬A
+;@Figure:スカラビ男A
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_BAZAR_A
 MSG_SKRB_BAZAR_A;＄β
-◆Ｉ　ｂｏｕｇｈｔ　ａ　”@DSP_GOODS(GDS_TOOL_NOSE_PIG)．”@KEY()↓
-◆Ｔｈｉｓ　ｗｉｌｌ　ｈｅｌｐ　ｏｕｔ　ａ　ｌａｒｇｅ　ａｍｏｕｎｔ@KEY()↓
-◆ｗｈｉｌｅ　Ｉ　ａｍ　ｈｕｍｂｌｙ　ｓｅａｒｃｈｉｎｇ　ｆｏｒ　ｔｈｅ　Ｍａｇｉｃ　ｔｒｕｆｆｌｅ　ｉｎ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ．@KEY()↓
-◆Ｙｏｕ　ｔｏｏ　ｃａｎ　ｌｅａｒｎ　ｈｏｗ　ｔｏ　ｕｓｅ　ａ　@DSP_GOODS(GDS_TOOL_NOSE_PIG)　ｗｉｔｈ　ｔｈｅ　”Ｕｓｅ”　ｃｏｍｍａｎｄ　ｕｎｄｅｒ　”Ｇｏｏｄｓ．”@KEY()↓
-◆Ｓｏ　ｐｌｅａｓｅ　ｒｅｓｔ　ｅａｓｙ．
+◆I bought a ”@DSP_GOODS(GDS_TOOL_NOSE_PIG).”@KEY()↓
+◆This will help out a large amount@KEY()↓
+◆while I am humbly searching for the Magic truffle in the Deep Darkness.@KEY()↓
+◆You too can learn how to use a @DSP_GOODS(GDS_TOOL_NOSE_PIG) with the ”Use” command under ”Goods.”@KEY()↓
+◆So please rest easy.
 @KEYNP()
 ;jpn:◆ぼく「ブタのはな」を↓
-;jpn:　かったんだよ。@KEY()↓
-;jpn:◆まきょうに　はえている↓
-;jpn:　マジックトリフを↓
-;jpn:　みつけるのには　これはべんりさ。@KEY()↓
-;jpn:◆「ブタのはな」の　つかいかたは↓
-;jpn:　「せつめい」で↓
-;jpn:　わかるらしいから@KEY()↓
+;jpn: かったんだよ。@KEY()↓
+;jpn:◆まきょうに はえている↓
+;jpn: マジックトリフを↓
+;jpn: みつけるのには これはべんりさ。@KEY()↓
+;jpn:◆「ブタのはな」の つかいかたは↓
+;jpn: 「せつめい」で↓
+;jpn: わかるらしいから@KEY()↓
 ;jpn:◆あんしんだね。@KEYNP()
 ;◆なんのことだか↓
-;　ぼく　わかんないや。@KEYNP()
+; ぼく わかんないや。@KEYNP()
 』
 ;◆ぼく「ぶたのはな」を↓
-;　かったんだよ。@KEY()↓
+; かったんだよ。@KEY()↓
 ;◆マジックトリフを↓
-;　みつけるのには　これはべんりさ。@KEYNP()
+; みつけるのには これはべんりさ。@KEYNP()
 ;』
 
 ;@Habitat:スカラビ／フィールド／バザールの場
@@ -347,30 +347,30 @@ MSG_SKRB_BAZAR_A;＄β
 ;@Message:MSG_SKRB_FORTUNETELLER
 MSG_SKRB_FORTUNETELLER;＃
 @CHKFGOTO(FLG_WIN_GIEGU,_SKRB_FORTUNETELLER_END)
-◆Ｏｈ，　ｙｏｕ　ｈａｖｅ　ｔｈｅ　ｍａｒｋ　ｏｆ　ｂａｄ　ｌｕｃｋ　ｏｎ　ｙｏｕｒ　ｆａｃｅ．．．@KEY()↓
-◆Ｎｏ．．．Ｄｏｎ’ｔ　ｗｏｒｒｙ．．．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｋｎｏｗ，　Ｉ’ｌｌ　ｈｕｍｂｌｙ　ｔｅｌｌ　ｙｏｕ．@KEY()↓
-◆”Ｙｏｕ　ｓｈａｌｌ　ｃｏｍｅ　ｂａｃｋ　ｈｅｒｅ．．．@KEY()↓
-◆Ａｆｔｅｒ　ｙｏｕ　ｈａｖｅ　ｅｎｃｏｕｎｔｅｒｅｄ　ａ　ｄａｎｇｅｒｏｕｓ　ｓｉｔｕａｔｉｏｎ．”@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　Ｉ　ｍａｙ　ｂｅ　ｗｒｏｎｇ，　ａｎｄ　ｉｆ　ｓｏ．．．ａ　ｔｈｏｕｓａｎｄ　ｐａｒｄｏｎｓ．
+◆Oh, you have the mark of bad luck on your face...@KEY()↓
+◆No...Don’t worry...@KEY()↓
+◆If you want to know, I’ll humbly tell you.@KEY()↓
+◆”You shall come back here...@KEY()↓
+◆After you have encountered a dangerous situation.”@KEY()↓
+◆However, I may be wrong, and if so...a thousand pardons.
 @KEYNP()
-;jpn:◆おっ@WI(20)　あんたのかおには↓
-;jpn:　ふきつな　かげが‥‥@WI(60)↓
-;jpn:　いや‥‥き@WI(15)　きにせんでもいい‥‥@KEY()↓
-;jpn:◆どうしても　ききたいなら　いう。@WI(30)↓
-;jpn:　あんたは　ひどいめにあって↓
-;jpn:　ここに　もどってくる‥‥。@KEY()↓
-;jpn:◆しかし　そんなことは↓
-;jpn:　ぜーんぜん　ないかも　しれない。@KEYNP()
+;jpn:◆おっ@WI(20) あんたのかおには↓
+;jpn: ふきつな かげが‥‥@WI(60)↓
+;jpn: いや‥‥き@WI(15) きにせんでもいい‥‥@KEY()↓
+;jpn:◆どうしても ききたいなら いう。@WI(30)↓
+;jpn: あんたは ひどいめにあって↓
+;jpn: ここに もどってくる‥‥。@KEY()↓
+;jpn:◆しかし そんなことは↓
+;jpn: ぜーんぜん ないかも しれない。@KEYNP()
 』
 _SKRB_FORTUNETELLER_END;＆
-◆Ｏｈ！@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｔｈｅ　ｍａｒｋ　ｏｆ　ｂａｄ　ｌｕｃｋ　ｏｎ　ｙｏｕｒ　ｆａｃｅ．．．@KEY()↓
-◆Ｙｅｔ，　Ｉ　ｃｏｕｌｄ　ｂｅ　ｗｒｏｎｇ，　ａｓ　ｙｏｕ　ｄｉｄｎ’ｔ　ｗａｓｈ　ｙｏｕｒ　ｆａｃｅ　ｌａｔｅｌｙ．
+◆Oh!@KEY()↓
+◆You have the mark of bad luck on your face...@KEY()↓
+◆Yet, I could be wrong, as you didn’t wash your face lately.
 @KEYNP()
-;jpn:◆あらま！@WI(20)　あんたのかおには↓
-;jpn:　ふけつなかげが‥‥@WI(60)↓
-;jpn:　たぶん　よごれてるだけだろうが。@KEYNP()
+;jpn:◆あらま!@WI(20) あんたのかおには↓
+;jpn: ふけつなかげが‥‥@WI(60)↓
+;jpn: たぶん よごれてるだけだろうが。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／街のなか
@@ -382,17 +382,17 @@ _SKRB_FORTUNETELLER_END;＆
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_C
 MSG_SKRB_C;
-◆Ｉｎ　ｔｈｅ　ｐｙｒａｍｉｄ　ｔｈｅｒｅ’ｓ　ｈｉｄｄｅｎ　ｔｒｅａｓｕｒｅ．@KEY()↓
-◆Ｍｙ　ｈｕｓｂａｎｄ　ｗａｓ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｉｔ．@KEY()↓
-◆Ｂｅｆｏｒｅ　ｈｅ　ｆｏｕｎｄ　ｉｔ．．．ｈｅ　ｓｌｉｐｐｅｄ　ｏｎ　ａ　ｂａｎａｎａ　ｐｅｅｌ．@KEY()↓
-◆．．．Ｓｏ　ｈｅ　ｇａｖｅ　ｕｐ　ｔｈｅ　ｓｅａｒｃｈ．
+◆In the pyramid there’s hidden treasure.@KEY()↓
+◆My husband was looking for it.@KEY()↓
+◆Before he found it...he slipped on a banana peel.@KEY()↓
+◆...So he gave up the search.
 @KEYNP()
 ;jpn:◆ピラミッドのなかには↓
-;jpn:　まだ　たからものが↓
-;jpn:　かくされているそうよ。@KEY()↓
-;jpn:◆わたしの　おっとは↓
-;jpn:　それをねらっていたんだけど↓
-;jpn:　こころざしなかばで‥‥@KEY()↓
+;jpn: まだ たからものが↓
+;jpn: かくされているそうよ。@KEY()↓
+;jpn:◆わたしの おっとは↓
+;jpn: それをねらっていたんだけど↓
+;jpn: こころざしなかばで‥‥@KEY()↓
 ;jpn:◆‥‥バナナのかわですべって@KEY()↓
 ;jpn:◆‥‥めげたの。@KEYNP()
 』
@@ -400,52 +400,52 @@ MSG_SKRB_C;
 
 ;プーを仲間にしないでスカラビに来たときのみ出現。
 ;◆「グレート・サザーン・ホテル」に↓
-;　とまると　いいゆめが↓
-;　みられるんですって。@KEY()↓
-;◆わたしは　じもとのにんげんだから↓
-;　なかなかチャンスがないのよ。@KEYNP()
+; とまると いいゆめが↓
+; みられるんですって。@KEY()↓
+;◆わたしは じもとのにんげんだから↓
+; なかなかチャンスがないのよ。@KEYNP()
 ;』
 
 ;@Habitat:スカラビ／フィールド／街のなか
-;@Person:町の人Ａ
-;@Figure:スカラビ男Ｃ
+;@Person:町の人A
+;@Figure:スカラビ男C
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_A
 MSG_SKRB_A;
-◆Ｔｈｅ　Ｔｅｎｄａ　ｔｒｉｂｅ　ｕｓｅｄ　ｔｏ　ｌｉｖｅ　ｈｅｒｅ．@KEY()↓
-◆Ｔｈｅｙ　ｗｅｎｔ　ｔｏ　ｔｈｅ　ｂａｃｋ　ｏｆ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ　ａｓ　ｔｈｅｙ　ｗｅｒｅ　ｔｏｏ　ｉｎｎｏｃｅｎｔ．@KEY()↓
-◆Ｉ　ｗｏｎｄｅｒ　ｉｆ　ｔｈｅｙ　ａｒｅ　ｓｔｉｌｌ　ａｌｉｖｅ．
+◆The Tenda tribe used to live here.@KEY()↓
+◆They went to the back of the Deep Darkness as they were too innocent.@KEY()↓
+◆I wonder if they are still alive.
 @KEYNP()
-;jpn:◆むかし　グミぞくって　ひとびとが↓
-;jpn:　いたらしいんだけど↓
-;jpn:　あんまり　ひとのいいやつらなんで@KEY()↓
-;jpn:◆まきょうの　おくへ↓
-;jpn:　おいやられちゃったんだよ。↓
-;jpn:　まだ　いるんだろうかねぇ。@KEYNP()
+;jpn:◆むかし グミぞくって ひとびとが↓
+;jpn: いたらしいんだけど↓
+;jpn: あんまり ひとのいいやつらなんで@KEY()↓
+;jpn:◆まきょうの おくへ↓
+;jpn: おいやられちゃったんだよ。↓
+;jpn: まだ いるんだろうかねぇ。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／街を出たところ
-;@Person:町の人Ｂ
-;@Figure:スカラビ男Ａ
+;@Person:町の人B
+;@Figure:スカラビ男A
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_B
 MSG_SKRB_B;
-◆Ｉｆ　ｙｏｕ’ｒｅ　ｇｏｉｎｇ　ｔｏ　ｔｈｅ　Ｐｙｒａｍｉｄ，　ｐｒｅｐａｒｅ　ｗｅｌｌ，@KEY()↓
-◆ａｎｄ　ｂｅ　ｒｅａｄｙ　ｆｏｒ　ｗｈａｔｅｖｅｒ　ｍａｙ　ｏｃｃｕｒ．
+◆If you’re going to the Pyramid, prepare well,@KEY()↓
+◆and be ready for whatever may occur.
 @KEYNP()
-;jpn:◆ピラミッドに　いくんだったら↓
-;jpn:　かなり　かくごして　いきなよ。@KEYNP()
+;jpn:◆ピラミッドに いくんだったら↓
+;jpn: かなり かくごして いきなよ。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／スフィンクス付近
 ;@Person:水売り
-;@Figure:スカラビ男Ｂ
+;@Figure:スカラビ男B
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
@@ -454,9 +454,9 @@ MSG_SKRB_B;
 MSG_SKRB_WATERSHOP;
 @GOSUB(MSG_SKRB_WATER)
 』
-;◆のどの　かわいたたびびとに↓
-;　みずを　うってあげましょう。↓
-;　たかいよ　１００ドル。@KEY()
+;◆のどの かわいたたびびとに↓
+; みずを うってあげましょう。↓
+; たかいよ １００ドル。@KEY()
 ;』
 
 ;@Habitat:スカラビ／フィールド／ピラミッド出口
@@ -472,45 +472,45 @@ MSG_SKRB_OLDMAN;
 ;ものがいる。はなしかけると
 ;１５００才くらいの老人があらわれる。
 @OPEN(1)
-◆Ｗｅｌｌ　ｄｏｎｅ．@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｍａｄｅ　ｉｔ！@KEY()
-;jpn:◆よくぞ　ここまで↓
-;jpn:　たどりついた！@KEY()
+◆Well done.@KEY()↓
+◆You have made it!@KEY()
+;jpn:◆よくぞ ここまで↓
+;jpn: たどりついた!@KEY()
 @CLOSEALL()
 @GOSUB(MSG_SUB_ALLHEAL_POWR)	;全回復しておく
 @SE(SE_se25_b_healing)
 @WI(90)
 @OPEN(1)
-◆Ｗｅ　ｆｉｎａｌｌｙ　ｍｅｅｔ，　Ｐｒｉｎｃｅ　@DSP_STS(STS_PC_NAME_POO)．
+◆We finally meet, Prince @DSP_STS(STS_PC_NAME_POO).
 @KEY()
-;jpn:◆とうとう　あえたのう。↓
-;jpn:　@DSP_STS(STS_PC_NAME_POO)おうじ。@KEY()
+;jpn:◆とうとう あえたのう。↓
+;jpn: @DSP_STS(STS_PC_NAME_POO)おうじ。@KEY()
 @CLOSEALL()
 』
 MSG_SKRB_OLDMAN_0;
 @OPEN(1)
-◆Ｔｈｅ　ｓｔａｒｓ　ｆｏｒｅｔｏｌｄ　ｔｈａｔ　Ｉ　ｗｏｕｌｄ　ｍｅｅｔ　ｙｏｕ　ｈｅｒｅ．．．@KEY()↓
-◆Ｓｏ，　ｎｏｗ　ｉｔ’ｓ　ｔｈｅ　ｔｉｍｅ　ｔｏ　ｓｈｏｗ　ｙｏｕ　ｔｈｅ　ｗａｙ　ｏｆ　ｔｈｅ　Ｓｔａｒｓｔｏｒｍ．．．@KEY()↓
+◆The stars foretold that I would meet you here...@KEY()↓
+◆So, now it’s the time to show you the way of the Starstorm...@KEY()↓
 ;jpn:◆ほしのいちが↓
-;jpn:　おまえに　であうことを↓
-;jpn:　つたえておったが‥‥やはり。@KEY()↓
+;jpn: おまえに であうことを↓
+;jpn: つたえておったが‥‥やはり。@KEY()↓
 ;jpn:◆いまこそ↓
-;jpn:　「ほしを　おとす　ほうほう」を↓
-;jpn:　でんじゅするとき。@KEY()↓
+;jpn: 「ほしを おとす ほうほう」を↓
+;jpn: でんじゅするとき。@KEY()↓
 ;@CHKFGOTO(FLG_POWR_PINK,_SKRB_OLDMAN_JEFF)
 ;◆しかしじゃ。そのまえに↓
-;　ランマのくにに@KEY()↓
-;◆まだ　ゆかねばならぬばしょが↓
-;　あろう？　ピンクのくものうえ‥。@KEY()
+; ランマのくにに@KEY()↓
+;◆まだ ゆかねばならぬばしょが↓
+; あろう? ピンクのくものうえ‥。@KEY()
 ;@CHKFGOTO(FLG_POWR_RAIN,_SKRB_OLDMAN_GO)
-;◆@DSP_STS(STS_PC_NAME_JEFF)！↓
-;　あめのふる　なぞのばしょを↓
-;　おぼえておろう？@KEY()↓
-;◆そこに　ゆくことが↓
-;　いま　ひつようなのじゃ。@KEY()↓
-;◆そこにゆき　そしてもういちど↓
-;　ここに　もどってくるのじゃ！↓
-;　カーーッツ！@KEY()
+;◆@DSP_STS(STS_PC_NAME_JEFF)!↓
+; あめのふる なぞのばしょを↓
+; おぼえておろう?@KEY()↓
+;◆そこに ゆくことが↓
+; いま ひつようなのじゃ。@KEY()↓
+;◆そこにゆき そしてもういちど↓
+; ここに もどってくるのじゃ!↓
+; カーーッツ!@KEY()
 ;@CLOSEALL()
 ;@WI(1)
 ;@WARP(WARP_SKRB_FORTUNETELLER)
@@ -519,14 +519,14 @@ MSG_SKRB_OLDMAN_0;
 ;_SKRB_OLDMAN_JEFF;
 ;@CHKFGOTO(FLG_POWR_RAIN,_SKRB_OLDMAN_OK)
 ;◆しかしじゃ。そのまえに@KEY()↓
-;◆@DSP_STS(STS_PC_NAME_JEFF)！↓
-;　あめのふる　なぞのばしょを↓
-;　おぼえておろう？@KEY()↓
-;◆そこに　ゆくことが↓
-;　いま　ひつようなのじゃ。@KEY()
-;◆そこにゆき　そしてもういちど↓
-;　ここに　もどってくるのじゃ！↓
-;　カーーッツ！@KEY()
+;◆@DSP_STS(STS_PC_NAME_JEFF)!↓
+; あめのふる なぞのばしょを↓
+; おぼえておろう?@KEY()↓
+;◆そこに ゆくことが↓
+; いま ひつようなのじゃ。@KEY()
+;◆そこにゆき そしてもういちど↓
+; ここに もどってくるのじゃ!↓
+; カーーッツ!@KEY()
 ;@CLOSEALL()
 ;@WI(1)
 ;@WARP(WARP_SKRB_FORTUNETELLER)
@@ -534,19 +534,19 @@ MSG_SKRB_OLDMAN_0;
 ;』
 ;
 ;_SKRB_OLDMAN_OK;
-◆Ｆｏｒ　ａ　ｗｈｉｌｅ，　ｙｏｕ　ｍｕｓｔ　ｌｉｖｅ　ｆａｒ　ａｗａｙ　ｆｒｏｍ　ｙｏｕｒ　ｆｒｉｅｎｄｓ　ａｎｄ　ｌｉｖｅ　ｗｉｔｈ　ｍｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｕｎｄｅｒｓｔａｎｄ？@KEY()↓
-◆．．．Ｔｈｅｒｅ’ｓ　ｏｎｌｙ　ｏｎｅ　ａｎｓｗｅｒ．@KEY()↓
-◆Ｉ　ｍｕｓｔ　ｓｔｏｐ　ｙｏｕ　ｈｅｒｅ　ｅｖｅｎ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ．@KEY()↓
-◆Ｓｔａｙ　ｆｏｒ　ａ　ｗｈｉｌｅ，　ｄｏ　ｙｏｕ　ｕｎｄｅｒｓｔａｎｄ？！
-;jpn:◆しばらくは　なかまとはなれて↓
-;jpn:　わしと　ともに↓
-;jpn:　くらさねばならぬが@KEY()↓
-;jpn:◆よいな？@KEY()↓
-;jpn:◆‥‥へんじは　ひとつ。↓
-;jpn:　むりにでも　ひきとめねばならぬ。↓
-;jpn:　しばし　ここに　とどまるのだ。@KEY()↓
-;jpn:◆よいな！！
+◆For a while, you must live far away from your friends and live with me.@KEY()↓
+◆Do you understand?@KEY()↓
+◆...There’s only one answer.@KEY()↓
+◆I must stop you here even if you don’t want to.@KEY()↓
+◆Stay for a while, do you understand?!
+;jpn:◆しばらくは なかまとはなれて↓
+;jpn: わしと ともに↓
+;jpn: くらさねばならぬが@KEY()↓
+;jpn:◆よいな?@KEY()↓
+;jpn:◆‥‥へんじは ひとつ。↓
+;jpn: むりにでも ひきとめねばならぬ。↓
+;jpn: しばし ここに とどまるのだ。@KEY()↓
+;jpn:◆よいな!!
 ;ビカビカっとフラッシュ
 @KEY()
 @CLOSEALL()
@@ -555,24 +555,24 @@ MSG_SKRB_OLDMAN_0;
 
 MSG_SKRB_OLDMAN_OK_1;
 @OPEN(1)
-◆Ｉｔ　ｄｅｐｅｎｄｓ　ｏｎ　@DSP_NAME(PC_POO)’ｓ　ｅｆｆｏｒｔｓ．　　Ｔｈａｔ　ｗｉｌｌ　ｄｅｔｅｒｍｉｎｅ　ｔｈｅ　ｒｅｕｎｉｔｉｎｇ　ｏｆ　ｔｈｅ　ｇｒｏｕｐ．@KEY()↓
-◆Ｂｅ　ｆａｉｔｈｆｕｌ，　ａｎｄ　ｗａｉｔ　ｕｎｔｉｌ　ｔｈｅ　ｔｉｍｅ　ｃｏｍｅｓ！
+◆It depends on @DSP_NAME(PC_POO)’s efforts.  That will determine the reuniting of the group.@KEY()↓
+◆Be faithful, and wait until the time comes!
 @KEYNP()
-;◆Ｄｅｐｅｎｄｉｎｇ　ｏｎ　@DSP_STS(STS_PC_NAME_POO)’ｓ　ｅｆｆｏｒｔｓ，
-;　　ｙｏｕ　ｃａｎ　ｇｏ　ｂａｃｋ　ｔｏ　ｙｏｕｒ　ｆｒｉｅｎｄｓ．
-;◆Ｂｅｌｉｅｖｅ　ｙｏｕｒｓｅｌｆ　ａｎｄ　ｗａｉｔ　ｕｎｔｉｌ　ｔｈｅ　ｔｉｍｅ　ｃｏｍｅｓ！
+;◆Depending on @DSP_STS(STS_PC_NAME_POO)’s efforts,
+;  you can go back to your friends.
+;◆Believe yourself and wait until the time comes!
 ;@KEYNP()
-;jpn:◆@DSP_STS(STS_PC_NAME_POO)の　どりょくしだいでは↓
-;jpn:　はやく　おまえたちのもとに↓
-;jpn:　もどることが　できる。@KEY()↓
-;jpn:◆しんじて　そのときを　まて！@KEY()
+;jpn:◆@DSP_STS(STS_PC_NAME_POO)の どりょくしだいでは↓
+;jpn: はやく おまえたちのもとに↓
+;jpn: もどることが できる。@KEY()↓
+;jpn:◆しんじて そのときを まて!@KEY()
 @CLOSEALL()
 』
 
 ;_SKRB_OLDMAN_GO;
-;◆そこにゆき　そしてもういちど↓
-;　ここに　もどってくるのじゃ！↓
-;　カーーッツ！@KEY()
+;◆そこにゆき そしてもういちど↓
+; ここに もどってくるのじゃ!↓
+; カーーッツ!@KEY()
 ;@CLOSEALL()
 ;@WI(1)
 ;@WARP(WARP_SKRB_FORTUNETELLER)
@@ -590,54 +590,54 @@ MSG_SKRB_OLDMAN_OK_1;
 ;@Message:MSG_SKRB_PUPUKA
 MSG_SKRB_PUPUKA;
 @CHKFGOTO(FLG_ITEM_KEY_PUPUKA,_SKRB_PUPUKA_AFTER)
-◆Ｉ’ｍ　ｄｏｉｎｇ　ｔｈｉｓ　ａｓ　ａ　ｈｏｂｂｙ．@KEY()↓
-◆Ｉｓｎ’ｔ　ｉｔ　ｃｏｏｌ？@KEY()↓
-◆Ｉ　ｒｅｃｅｎｔｌｙ　ｍａｄｅ　ａ　ｆｒｉｅｎｄ．@KEY()↓
-◆Ｈｅ　ｕｓｅｄ　ｔｏ　ｂｅ　ａ　Ｄｕｎｇｅｏｎ　Ｍａｋｅｒ．@KEY()↓
-◆Ａｎｄ　ｎｏｗ　ｈｅ’ｓ　ａ　”Ｄｕｎｇｅｏｎ　Ｍａｎ．”@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｍｅｅｔ　ｈｉｍ？↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆わたしは　しゅみで↓
-;jpn:　こういうことを　やっているんだ。↓
-;jpn:　カッコイイだろ。@KEY()↓
-;jpn:◆さいきん　ともだちができてね。↓
-;jpn:　ダンジョンづくりのしょくにんで↓
-;jpn:　とうとう‥‥フッフッフ@KEY()↓
+◆I’m doing this as a hobby.@KEY()↓
+◆Isn’t it cool?@KEY()↓
+◆I recently made a friend.@KEY()↓
+◆He used to be a Dungeon Maker.@KEY()↓
+◆And now he’s a ”Dungeon Man.”@KEY()↓
+◆Would you like to meet him?↓
+<Yes>
+<No>
+;jpn:◆わたしは しゅみで↓
+;jpn: こういうことを やっているんだ。↓
+;jpn: カッコイイだろ。@KEY()↓
+;jpn:◆さいきん ともだちができてね。↓
+;jpn: ダンジョンづくりのしょくにんで↓
+;jpn: とうとう‥‥フッフッフ@KEY()↓
 ;jpn:◆「ダンジョンおとこ」に↓
-;jpn:　なってしまったやつさ。@KEY()↓
-;jpn:◆あってみたいかい？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: なってしまったやつさ。@KEY()↓
+;jpn:◆あってみたいかい?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SKRB_PUPUKA_YES,_SKRB_PUPUKA_NO)
 
 _SKRB_PUPUKA_NO;
-◆Ｉ　ｕｎｄｅｒｓｔａｎｄ，　ｈｅ　ｉｓ　ａ　ｖｅｒｙ　ｓｔｒａｎｇｅ　ｆｅｌｌｏｗ．
+◆I understand, he is a very strange fellow.
 @KEYNP()
 ;jpn:◆そうかぁ‥‥↓
-;jpn:　かわりものだからなぁ　あいつ。↓
-;jpn:　しょうがないな。@KEYNP()
+;jpn: かわりものだからなぁ あいつ。↓
+;jpn: しょうがないな。@KEYNP()
 』
 
 _SKRB_PUPUKA_YES;
 ;@Q_GOODSFULL(PC_ALL)
 ;@FALSE_GOTO(_SKRB_PUPUKA_ITEMFULL)
-◆Ａｌｌ　ｒｉｇｈｔｙ　ｔｈｅｎ，　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ｔｈｅ　ｋｅｙ　ｓｏ　ｔｈａｔ　ｙｏｕ　ｃａｎ　ｅｎｔｅｒ　ｈｉｍ．@KEY()↓
-◆Ｏｈ　ｎｏ．．．Ｉ　ｄｏｎ’ｔ　ｈａｖｅ　ｉｔ！@KEY()↓
-◆Ｉ　ｍｕｓｔ　ｈａｖｅ　ｌｏｓｔ　ｉｔ　ｓｏｍｅｗｈｅｒｅ．@KEY()↓
-◆Ｉ’ｍ　ｓｏｒｒｙ，　Ｉ　ｄｏｎ’ｔ　ｗｏｒｒｙ　ａｂｏｕｔ　ｓｍａｌｌ　ｔｈｉｎｇｓ．
+◆All righty then, I’ll give you the key so that you can enter him.@KEY()↓
+◆Oh no...I don’t have it!@KEY()↓
+◆I must have lost it somewhere.@KEY()↓
+◆I’m sorry, I don’t worry about small things.
 @KEYNP()
 ;jpn:◆そうか。それじゃ↓
-;jpn:　かれのへやの　カギをあげよう。↓
-;jpn:◆あ‥‥@WI(15)ない！@WI(20)↓
-;jpn:　あらら　どっかで↓
-;jpn:　おとしちゃったかな。@KEY()↓
-;jpn:◆ごめん　ごめん。↓
-;jpn:　ちいさいことには　わたしは↓
-;jpn:　こだわらないんだよ。@KEYNP()
+;jpn: かれのへやの カギをあげよう。↓
+;jpn:◆あ‥‥@WI(15)ない!@WI(20)↓
+;jpn: あらら どっかで↓
+;jpn: おとしちゃったかな。@KEY()↓
+;jpn:◆ごめん ごめん。↓
+;jpn: ちいさいことには わたしは↓
+;jpn: こだわらないんだよ。@KEYNP()
 』
 
-;　よろしく　つたえてくれ。@KEY()
+; よろしく つたえてくれ。@KEY()
 ;@SE(SE_se74_my_get)
 ;@GOODSIN(PC_ALL,GDS_TOOL_KEY_DUNGEONMAN)
 ;@SETF(FLG_ITEM_KEY_PUPUKA)
@@ -645,22 +645,22 @@ _SKRB_PUPUKA_YES;
 ;
 ;_SKRB_PUPUKA_ITEMFULL;
 ;◆こりゃこまった。↓
-;　あんたら　にもつがおおすぎて↓
-;　カギがわたせんぞ。@KEYNP()
+; あんたら にもつがおおすぎて↓
+; カギがわたせんぞ。@KEYNP()
 ;』
 ;
 _SKRB_PUPUKA_AFTER;
-◆Ｉ　ｓｔａｙｅｄ　ｈｅｒｅ　ｔｈｅ　ｗｈｏｌｅ　ｔｉｍｅ　ｙｏｕ　ｗｅｒｅ　ｇｏｎｅ．@KEY()↓
-◆Ｂｕｔ　ｎｏｗ　Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈｙ　Ｉ　ｄｉｄ．@KEYNP()
-;jpn:◆みえはって　ずっと↓
-;jpn:　こんなところに　いるけど‥‥@KEY()↓
-;jpn:◆なんか　むなしいなぁ。@KEYNP()
+◆I stayed here the whole time you were gone.@KEY()↓
+◆But now I don’t know why I did.@KEYNP()
+;jpn:◆みえはって ずっと↓
+;jpn: こんなところに いるけど‥‥@KEY()↓
+;jpn:◆なんか むなしいなぁ。@KEYNP()
 』
-;◆わたしは　しゅみで↓
-;　こういうことを　やっているんだ。↓
-;　カッコイイだろ。@KEY()↓
+;◆わたしは しゅみで↓
+; こういうことを やっているんだ。↓
+; カッコイイだろ。@KEY()↓
 ;◆うーん@WI(30)↓
-;　‥‥カッコイイ。@KEYNP()
+; ‥‥カッコイイ。@KEYNP()
 ;』
 
 
@@ -675,21 +675,21 @@ _SKRB_PUPUKA_AFTER;
 MSG_SKRB_YARIMAN;
 @CHKFGOTO(FLG_ITEM_KEY_PUPUKA,_SKRB_YARIMAN_AFTER)
 ;ヤリ男
-◆Ｉ　ａｍ　ｎｏｔ　ｓｕｒｅ　ｉｆ　ｉｔ　ｗａｓ　ｔｈｅ　”Ｄｕｎｇｅｏｎ　Ｍａｎ，”　ｂｕｔ．．．@KEY()↓
-◆ｔｈｅｒｅ　ｉｓ　ａ　ｓｔｒａｎｇｅ　ｌｏｏｋｉｎｇ　ｔｏｗｅｒ　ｔｏ　ｔｈｅ　ｎｏｒｔｈｗｅｓｔ．@KEY()↓
-◆．．．Ｔｈｉｓ　ｋｅｙ　Ｉ　ｐｉｃｋｅｄ　ｕｐ　ａ　ｌｉｔｔｌｅ　ｗｈｉｌｅ　ａｇｏ　ｓｈａｌｌ　ｍａｙｂｅ　ｏｐｅｎ　ｔｈｅ　ｔｏｗｅｒ．@KEY()↓
-◆Ｙｏｕ　ｍａｙ　ｈａｖｅ　ｉｔ，　Ｉ　ｄｏ　ｎｏｔ　ｎｅｅｄ　ｉｔ．
+◆I am not sure if it was the ”Dungeon Man,” but...@KEY()↓
+◆there is a strange looking tower to the northwest.@KEY()↓
+◆...This key I picked up a little while ago shall maybe open the tower.@KEY()↓
+◆You may have it, I do not need it.
 ;jpn:◆「ダンジョンおとこ」かどうかは↓
-;jpn:　しらねぇけど‥‥↓
-;jpn:　おかしなとうなら@KEY()↓
-;jpn:◆ほくせいの　ほうがくに↓
-;jpn:　たってるぜ。@KEY()↓
+;jpn: しらねぇけど‥‥↓
+;jpn: おかしなとうなら@KEY()↓
+;jpn:◆ほくせいの ほうがくに↓
+;jpn: たってるぜ。@KEY()↓
 ;jpn:◆‥‥もしかすると↓
-;jpn:　さっきひろったカギは@KEY()↓
-;jpn:◆あのとうの　いりぐちのカギ↓
-;jpn:　かもしれねぇな。@KEY()↓
-;jpn:◆おれは　いらんから↓
-;jpn:　おまえさんに　やるよ。
+;jpn: さっきひろったカギは@KEY()↓
+;jpn:◆あのとうの いりぐちのカギ↓
+;jpn: かもしれねぇな。@KEY()↓
+;jpn:◆おれは いらんから↓
+;jpn: おまえさんに やるよ。
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_SKRB_YARIMAN_GOODSFULL)
 @KEY()
@@ -705,22 +705,22 @@ MSG_SKRB_YARIMAN;
 @GOSUB(MSG_GLOBAL_PHONE_TRACY_LOSTITEM)
 』
 _SKRB_YARIMAN_AFTER;グッズプレゼント後
-◆Ｉ’ｍ　ｎｏｔ　ｓｕｒｅ　ｉｆ　ｉｔ　ｗａｓ　ｔｈｅ　”Ｄｕｎｇｅｏｎ　Ｍａｎ”．．．@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ａ　ｓｔｒａｎｇｅ　ｌｏｏｋｉｎｇ　ｔｏｗｅｒ　ｔｏ　ｔｈｅ　ｎｏｒｔｈｗｅｓｔ．
+◆I’m not sure if it was the ”Dungeon Man”...@KEY()↓
+◆There’s a strange looking tower to the northwest.
 @KEYNP()
 ;jpn:◆「ダンジョンおとこ」かどうかは↓
-;jpn:　しらねぇけど‥‥↓
-;jpn:　おかしなとうなら@KEY()↓
-;jpn:◆ほくせいの　ほうがくに↓
-;jpn:　たってるぜ。@KEYNP()
+;jpn: しらねぇけど‥‥↓
+;jpn: おかしなとうなら@KEY()↓
+;jpn:◆ほくせいの ほうがくに↓
+;jpn: たってるぜ。@KEYNP()
 』
 
 _SKRB_YARIMAN_GOODSFULL;
 @KEY()↓
-◆．．．Ｂｕｔ　ｉｔ　ｓｅｅｍｓ　ｔｈａｔ　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．
+◆...But it seems that you have too many things.
 @KEYNP()
-;jpn:◆‥‥って　いっても↓
-;jpn:　もちものが　いっぱいか。@KEYNP()
+;jpn:◆‥‥って いっても↓
+;jpn: もちものが いっぱいか。@KEYNP()
 』
 
 ;@Habitat:スカラビ／フィールド／砂漠南部
@@ -733,15 +733,15 @@ _SKRB_YARIMAN_GOODSFULL;
 ;@Message:0
 MSG_SKRB_FIELD_DUNGEONMAN;
 @CHKFGOTO(FLG_SKRB_DUNGEONMAN_OPEN,_SKRB_DMAN_2)
-◆（Ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ　ｃｏｕｌｄ　ｅｎｔｅｒ，　ｂｕｔ　ｉｔ’ｓ　ｌｏｃｋｅｄ．）
+◆(Looks like you could enter, but it’s locked.)
 @KEYNP()
-;jpn:◆（なかに　はいれるらしいが↓
-;jpn:　カギが　かかっている）@KEYNP()
+;jpn:◆(なかに はいれるらしいが↓
+;jpn: カギが かかっている)@KEYNP()
 』
 
 _SKRB_DMAN_2;チェックしたら即ワープ
 ;◆いりぐちがあります。↓
-;　なかに　はいりますか？↓
+; なかに はいりますか?↓
 ;<はい>
 ;<いいえ>
 ;@DSP_ITEM(2)
@@ -770,11 +770,11 @@ MSG_SKRB_FIELD_DUNGEONMAN_RECEIVE;
 @LOAD_REG()
 @GOSUB(MSG_SUB_GOODS_TUKATTA)
 ←
-◆（Ｔｈｅ　ｋｅｙ　ｗｏｒｋｅｄ　ｔｏ　ｏｐｅｎ　ｔｈｅ　ｄｏｏｒ．@KEY()↓
-◆Ｙｏｕ　ｍａｙ　ｅｎｔｅｒ．）
+◆(The key worked to open the door.@KEY()↓
+◆You may enter.)
 @KEYNP()
-;jpn:◆（カギがあいて↓
-;jpn:　なかにはいれるようになった）
+;jpn:◆(カギがあいて↓
+;jpn: なかにはいれるようになった)
 @KEYNP()
 @SETF(FLG_SKRB_DUNGEONMAN_OPEN)
 @SE(SE_se77_my_open_locker)
@@ -784,14 +784,14 @@ MSG_SKRB_FIELD_DUNGEONMAN_RECEIVE;
 @!
 
 _SKRB_DMAN_KEY_NG;
-◆（Ｔｈｅ　ｋｅｙ　ｄｏｅｓｎ’ｔ　ｆｉｔ！）
-;jpn:◆（カギが　あわない！）
+◆(The key doesn’t fit!)
+;jpn:◆(カギが あわない!)
 @KEYNP()
 @!
 
 _SKRB_DMAN_ALREADY;
-◆（Ｔｈｅ　ｄｏｏｒ’ｓ　ａｌｒｅａｄｙ　ｏｐｅｎｅｄ．）
-;jpn:◆（すでに　とびらはあいている）
+◆(The door’s already opened.)
+;jpn:◆(すでに とびらはあいている)
 @KEYNP()
 @!
 
@@ -805,61 +805,61 @@ _SKRB_DMAN_ALREADY;
 ;@Message:MSG_SKRB_YARIMAN_2
 MSG_SKRB_YARIMAN_2;
 @CHKFGOTO(FLG_TLPT_MAKY,_SKRB_YARIMAN_2_LATER)
-◆Ａ　ｓｃａｒｙ　ｐｌａｃｅ　ｃａｌｌｅｄ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ　ｉｓ　ｏｎ　ｔｈｅ　ｏｔｈｅｒ　ｓｉｄｅ　ｏｆ　ｔｈｅ　ｒｉｖｅｒ．@KEY()↓
-◆Ｔｈｅ　ｍｏｎｓｔｅｒｓ　ａｒｅ　ｖｅｒｙ　ｓｔｒｏｎｇ　ａｎｄ　ｙｏｕ　ｃａｎ　ｌｏｓｅ　ｙｏｕｒ　ｈｅａｌｔｈ@KEY()↓
-◆ｊｕｓｔ　ｂｙ　ｗａｎｄｅｒｉｎｇ　ｉｎ　ｔｈｅ　ｓｗａｍｐ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｃｒｏｓｓ　ｔｈｅ　ｒｉｖｅｒ，　ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ　ｋｎｏｗ　ｉｔ’ｓ　ａ　ｓｔｕｐｉｄ　ｉｄｅａ？@KEY()↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆この　かわの　むこうは↓
-;jpn:　「まきょう」とよばれる↓
-;jpn:　おそろしいところだ。@KEY()↓
-;jpn:◆かいぶつは　つよいし↓
-;jpn:　どくのぬまは　あるくだけで↓
-;jpn:　たいりょくがへるぞ。@KEY()↓
-;jpn:◆かわを　わたりたいのか？↓
-;jpn:　ばかを　しょうちで。↓
-;jpn:　　<はい>　　<いいえ>
+◆A scary place called Deep Darkness is on the other side of the river.@KEY()↓
+◆The monsters are very strong and you can lose your health@KEY()↓
+◆just by wandering in the swamp.@KEY()↓
+◆Do you want to cross the river, even though you know it’s a stupid idea?@KEY()↓
+<Yes>
+<No>
+;jpn:◆この かわの むこうは↓
+;jpn: 「まきょう」とよばれる↓
+;jpn: おそろしいところだ。@KEY()↓
+;jpn:◆かいぶつは つよいし↓
+;jpn: どくのぬまは あるくだけで↓
+;jpn: たいりょくがへるぞ。@KEY()↓
+;jpn:◆かわを わたりたいのか?↓
+;jpn: ばかを しょうちで。↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SKRB_YARIMAN_2_YES,_SKRB_YARIMAN_2_NO)
 
 _SKRB_YARIMAN_2_NO;
-◆Ｉｔ　ｗａｓ　ｓｔｕｐｉｄ　ｏｆ　ｍｅ　ｔｏ　ａｓｋ．@KEY()↓
-◆Ｌｅｔ’ｓ　ｔｏｇｅｔｈｅｒ　ｗａｔｃｈ　ｔｈｅ　ｓｕｎｓｅｔ　ｏｖｅｒ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ　ｆｒｏｍ　ｈｅｒｅ．
+◆It was stupid of me to ask.@KEY()↓
+◆Let’s together watch the sunset over Deep Darkness from here.
 @KEYNP()
-;jpn:◆きいてみた　おれがばかだった。@KEY()↓
+;jpn:◆きいてみた おれがばかだった。@KEY()↓
 ;jpn:◆いっしょに↓
-;jpn:　「まきょう」にしずむ↓
-;jpn:　ゆうひでも　みよう。@KEYNP()
+;jpn: 「まきょう」にしずむ↓
+;jpn: ゆうひでも みよう。@KEYNP()
 』
 _SKRB_YARIMAN_2_YES;＃
-◆Ｔｈｅ　ｓｗａｍｐ　ｉｓ　ｂｏｔｔｏｍｌｅｓｓ．@KEY()↓
-◆Ｅｖｅｎ　ｉｆ　ｙｏｕ’ｒｅ　ｓｗｉｍｍｉｎｇ，　ｙｏｕ’ｌｌ　ｂｅ　ｄｒａｇｇｅｄ　ｉｎ．@KEY()↓
-◆Ｉｔ　ｉｓ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｔｏｒｙ　ｉｆ　ｙｏｕ　ｈａｖｅ　ａ　ｓｕｂｍａｒｉｎｅ．
+◆The swamp is bottomless.@KEY()↓
+◆Even if you’re swimming, you’ll be dragged in.@KEY()↓
+◆It is a different story if you have a submarine.
 @KEYNP()
 ;jpn:◆ぬまはそこなし。@WI(20)↓
-;jpn:　およいでいっても↓
-;jpn:　ひきずりこまれちまうぜ。@KEY()↓
+;jpn: およいでいっても↓
+;jpn: ひきずりこまれちまうぜ。@KEY()↓
 ;jpn:◆サブマリンでもあれば↓
-;jpn:　はなしはべつだが。@KEYNP()
+;jpn: はなしはべつだが。@KEYNP()
 @SETF(FLG_SKRB_YARIMAN)
 @SETF(FLG_DSRT_KANBAN_44_MOVE);カンバン移動サブマリンコースオープン
 』
 _SKRB_YARIMAN_2_LATER;＆
-◆Ｙｏｕ　ｒｅｔｕｒｎｅｄ　ｆｒｏｍ　ｅｘｐｌｏｒｉｎｇ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ？@KEY()↓
-◆Ｉ　ｃａｎｎｏｔ　ｂｅｌｉｅｖｅ　ｙｏｕ　ｍａｄｅ　ｉｔ　ｂａｃｋ　ａｌｉｖｅ．
+◆You returned from exploring the Deep Darkness?@KEY()↓
+◆I cannot believe you made it back alive.
 @KEYNP()
-;jpn:◆あの　おそろしい「まきょう」を↓
-;jpn:　たんけんしてきたんだってね。@KEY()↓
+;jpn:◆あの おそろしい「まきょう」を↓
+;jpn: たんけんしてきたんだってね。@KEY()↓
 ;jpn:◆いきてかえったなんて↓
-;jpn:　しんじられん。@KEYNP()
+;jpn: しんじられん。@KEYNP()
 』
 
-;▼▲▼▲▼▲▼▲　スカラビ　▼▲▼▲▼▲▼▲
+;▼▲▼▲▼▲▼▲ スカラビ ▼▲▼▲▼▲▼▲
 
 ;^^^^^^^^ダンジョン男内部：４階^^^^^^^^
 
-;@Habitat:スカラビ／ダンジョン男内部／洞窟４Ｆ最北部
+;@Habitat:スカラビ／ダンジョン男内部／洞窟４F最北部
 ;@Person:ブリックの顔
 ;@Figure:ダンジョン職人の顔
 ;@AppearanceKey:0
@@ -873,82 +873,82 @@ MSG_SKRB_BRICKROAD;
 @CHKFGOTO(FLG_TLPT_MAKY,_SKRB_BRICKROAD_MAIN)
 @CHKFGOTO(FLG_SKRB_YARIMAN,_SKRB_BRICKROAD_MAKYO_2)
 _SKRB_BRICKROAD_MAIN;
-◆Ｗｅｌｃｏｍｅ！
+◆Welcome!
 @KEY()
-;jpn:◆ウーェルカム！@KEY()
+;jpn:◆ウーェルカム!@KEY()
 @CLOSEALL()
 @GOSUB(MSG_SUB_ALLHEAL_POWR)	;全回復しておく
 @SE(SE_se25_b_healing)
 @WI(90)
 @OPEN(1)
 @CHKFGOTO(FLG_TLPT_MAKY,MSG_SKRB_DUNGEONMAN_END)
-◆Ｌｏｎｇ　ｔｉｍｅ，　ｎｏ　ｓｅｅ．@KEY()↓
-◆Ｍｒ．　@DSP_NAME(PC_JEFF)，　ｗｅ　ｍｅｔ　ｉｎ　Ｗｉｎｔｅｒｓ　ａ　ｌｏｎｇ　ｔｉｍｅ　ａｇｏ．@KEY()↓
-◆Ｉ’ｍ　Ｂｒｉｃｋ　Ｒｏａｄ．@KEY()↓
-◆Ｄｒ．　Ａｎｄｏｎｕｔｓ　ｆｉｎａｌｌｙ　ｍａｄｅ　ｍｅ　Ｄｕｎｇｅｏｎ　Ｍａｎ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ，　Ｉ’ｌｌ　ｃｏｍｅ　ｗｉｔｈ　ｙｏｕ　ｇｕｙｓ　ｆｏｒ　ａ　ｗｈｉｌｅ．@KEY()↓
-◆Ｔｈｅ　”Ｒｅｔｕｒｎ　Ｈｏｌｅ”　ｉｓ　ｏｖｅｒ　ｔｈｅｒｅ．
-◆Ｊｕｍｐ　ｉｎ　ｔｈａｔ　ｈｏｌｅ　ａｎｄ　ｔｈｅｎ　ｗａｌｋ　ｏｕｔ．
+◆Long time, no see.@KEY()↓
+◆Mr. @DSP_NAME(PC_JEFF), we met in Winters a long time ago.@KEY()↓
+◆I’m Brick Road.@KEY()↓
+◆Dr. Andonuts finally made me Dungeon Man.@KEY()↓
+◆If you want, I’ll come with you guys for a while.@KEY()↓
+◆The ”Return Hole” is over there.
+◆Jump in that hole and then walk out.
 @KEYNP()
 ;jpn:◆ひさしぶりでやんす。@WI(20)↓
-;jpn:　@DSP_STS(STS_PC_NAME_JEFF)さん　ずっとまえに↓
-;jpn:　ウィンターズで　あいやした@KEY()↓
-;jpn:◆ブリックロードで　ござんす。@KEY()↓
-;jpn:◆アンドーナッツはかせの　おかげで↓
-;jpn:　ついに　ダンジョンおとこに↓
-;jpn:　なれたんでやす。@KEY()↓
-;jpn:◆あんたがたさえ　よかったら↓
-;jpn:　しばらく　いっしょに↓
-;jpn:　ついていきやす。@KEY()↓
+;jpn: @DSP_STS(STS_PC_NAME_JEFF)さん ずっとまえに↓
+;jpn: ウィンターズで あいやした@KEY()↓
+;jpn:◆ブリックロードで ござんす。@KEY()↓
+;jpn:◆アンドーナッツはかせの おかげで↓
+;jpn: ついに ダンジョンおとこに↓
+;jpn: なれたんでやす。@KEY()↓
+;jpn:◆あんたがたさえ よかったら↓
+;jpn: しばらく いっしょに↓
+;jpn: ついていきやす。@KEY()↓
 ;jpn:◆そこにある「おかえりあな」↓
-;jpn:　‥‥という　あなから↓
-;jpn:　したに　おっこちて@KEY()↓
-;jpn:◆そとにでて　あるいてみて↓
-;jpn:　おくんなさい。@KEYNP()
-;◆はいってきた　とびらをでて↓
-;　あるいてみて　おくんなさい。@KEYNP()
+;jpn: ‥‥という あなから↓
+;jpn: したに おっこちて@KEY()↓
+;jpn:◆そとにでて あるいてみて↓
+;jpn: おくんなさい。@KEYNP()
+;◆はいってきた とびらをでて↓
+; あるいてみて おくんなさい。@KEYNP()
 @SETF(FLG_BRICKROAD)
 @SETF(FLG_SKRB_YARIMAN_B_APPEAR)
 @SET_HIT_RECT(1,HRECT_SKRB_DM_HAMARI,MSG_EVT_90_DM_HAMARI)
 @SETF(FLG_PHOTO_DUNGEONMAN);撮り頃フラグ
 』
 _SKRB_BRICKROAD_MAKYO_2;
-◆Ｔｈｅｒｅ’ｓ　ａｎ　ｏｌｄ　ｓｕｂｍａｒｉｎｅ　ａｔ　ｔｈｅ　ｂａｃｋ　ｏｆ　ｔｈｅ　ｄｕｎｇｅｏｎ．@KEY()↓
-◆Ｉｔ　ｃａｎ　ｂｅ　ｕｓｅｄ　ｔｏ　ｃｒｏｓｓ　ｔｈｅ　ｒｉｖｅｒ．@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ａ　”Ｇｏｏｄｂｙｅ　Ｅｘｉｔ”．．．ｏｖｅｒ　ｔｈｅｒｅ．@KEY()↓
-◆Ｉｔ　ｗｉｌｌ　ｔａｋｅ　ｙｏｕ　ｔｏ　ｔｈｅ　ｓｕｂｍａｒｉｎｅ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｍａｋｅ　ａ　ｍｉｓｔａｋｅ　ｏｎ　ｗｈｉｃｈ　ｅｘｉｔ　ｙｏｕ　ｔａｋｅ．@KEY()↓
-◆Ｙｏｕ　ｎｅｅｄ　ｔｏ　ｔａｋｅ　ｔｈｅ　”Ｇｏｏｄｂｙｅ　Ｅｘｉｔ！”@KEY()↓
-◆Ｈｏｐｅ　ｔｏ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ！
+◆There’s an old submarine at the back of the dungeon.@KEY()↓
+◆It can be used to cross the river.@KEY()↓
+◆There’s a ”Goodbye Exit”...over there.@KEY()↓
+◆It will take you to the submarine.@KEY()↓
+◆Don’t make a mistake on which exit you take.@KEY()↓
+◆You need to take the ”Goodbye Exit!”@KEY()↓
+◆Hope to see you again!
 @KEYNP()
-;jpn:◆このダンジョンの　おくに↓
-;jpn:　くたびれたサブマリンが↓
-;jpn:　ありやす。@KEY()↓
-;jpn:◆そいつで　むこうぎしに↓
-;jpn:　わたってくだせえやし。@KEY()↓
+;jpn:◆このダンジョンの おくに↓
+;jpn: くたびれたサブマリンが↓
+;jpn: ありやす。@KEY()↓
+;jpn:◆そいつで むこうぎしに↓
+;jpn: わたってくだせえやし。@KEY()↓
 ;jpn:◆このおくにある「さらばあな」@KEY()↓;＄追加
-;jpn:◆‥‥という　なまえのあなが↓
-;jpn:　サブマリンのばしょへ↓
-;jpn:　つうじているでやんす。@KEY()↓
-;jpn:◆くれぐれも　おちるあなを↓
-;jpn:　まちがえないでおくんなさい。@WI(20)↓
-;jpn:　「さらばあな」でやんすよ。@KEY()↓
-;jpn:◆えんが　あったら↓
-;jpn:　また　あいやしょう！@KEYNP()
+;jpn:◆‥‥という なまえのあなが↓
+;jpn: サブマリンのばしょへ↓
+;jpn: つうじているでやんす。@KEY()↓
+;jpn:◆くれぐれも おちるあなを↓
+;jpn: まちがえないでおくんなさい。@WI(20)↓
+;jpn: 「さらばあな」でやんすよ。@KEY()↓
+;jpn:◆えんが あったら↓
+;jpn: また あいやしょう!@KEYNP()
 』
 MSG_SKRB_DUNGEONMAN_END;＆動けなくなったままのダンジョン男
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｈｏｗ，　ｂｕｔ　ｍｙ　ｈｏｍｅｍａｄｅ　ｄｕｎｇｅｏｎ　ｈｅｌｐｅｄ　ｙｏｕ　ｏｕｔ．@KEY()↓
-◆Ｉ’ｍ　ｇｌａｄ．
+◆I don’t know how, but my homemade dungeon helped you out.@KEY()↓
+◆I’m glad.
 @KEYNP()
-;jpn:◆どんなふうにか　しらないけれど@WI(20)↓
-;jpn:　わしの　てづくりダンジョンが↓
-;jpn:　やくにたって　うれしいでやんす。@KEYNP()
+;jpn:◆どんなふうにか しらないけれど@WI(20)↓
+;jpn: わしの てづくりダンジョンが↓
+;jpn: やくにたって うれしいでやんす。@KEYNP()
 @CLOSEALL()
 』
 ;-------------------------------------------------
 
 
-;@Habitat:スカラビ／ダンジョン男内部／洞窟４Ｆ南東
+;@Habitat:スカラビ／ダンジョン男内部／洞窟４F南東
 ;@Person:看板４４
 ;@Figure:立札
 ;@AppearanceKey:FLG_SKRB_YARIMAN/off
@@ -957,24 +957,24 @@ MSG_SKRB_DUNGEONMAN_END;＆動けなくなったままのダンジョン男
 ;@CheckMessage;0
 ;@Message:MSG_SKRB_BRICKROAD
 MSG_BRICK_SIGN_44;
-;２回目の帰路（潜水艦の場所へ）
+;２回目の帰路(潜水艦の場所へ)
 ;１回目クリア前は看板で通路を封じ、クリア後は看板を消す
 @CHKFGOTO(FLG_TLPT_MAKY,_BRICK_SIGN_44_LATER)
-◆”Ｇｏｏｄｂｙｅ　Ｅｘｉｔ”@KEY()↓
-◆Ｓｏｍｅ　ｄａｙ，　ｙｏｕ　ｓｈｏｕｌｄ　ｅｎｔｅｒ　ｗｉｔｈ　ｃｏｕｒａｇｅ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ．
+◆”Goodbye Exit”@KEY()↓
+◆Some day, you should enter with courage.@KEY()↓
+◆...Brick Road.
 @KEYNP()
 ;jpn:◆「さらばあな」↓
-;jpn:　いずれ　ゆうきをだして↓
-;jpn:　とびこむべし。‥ブリック・ロード@KEYNP()
+;jpn: いずれ ゆうきをだして↓
+;jpn: とびこむべし。‥ブリック・ロード@KEYNP()
 』
 _BRICK_SIGN_44_LATER;後に
-◆Ｔｈｉｓ　ｐａｔｈ　ｉｓ　ｃｌｏｓｅｄ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ．
+◆This path is closed.@KEY()↓
+◆...Brick Road.
 @KEYNP()
-;jpn:◆こちらの　コースはへいさした。↓
+;jpn:◆こちらの コースはへいさした。↓
 ↓
-;jpn:　　　　　　　　‥ブリック・ロード@KEYNP()
+;jpn:        ‥ブリック・ロード@KEYNP()
 』
 
 
@@ -1023,22 +1023,22 @@ MSG_SKRB_DMAN_BENCH_3;
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
 @!
 _DMAN_BENCH_MES;
-◆”Ｇｏｏｄ　Ｎｉｇｈｔ　Ｂｅｎｃｈ．”@KEY()↓
-◆Ｍａｙ　ｙｏｕ　ｒｅｌａｘ　ａｎｄ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｈｅａｌｔｈ　ａｎｄ　ｓｐｉｒｉｔｓ．
+◆”Good Night Bench.”@KEY()↓
+◆May you relax and recover your health and spirits.
 @KEYNP()
 ;jpn:◆「おやすみベンチ」↓
-;jpn:　つかれが　すっかりとれ@KEY()↓
-;jpn:◆きりょく　たいりょくが↓
-;jpn:　かいふくします。
+;jpn: つかれが すっかりとれ@KEY()↓
+;jpn:◆きりょく たいりょくが↓
+;jpn: かいふくします。
 @KEYNP()
 @!
 
 _DMAN_BENCH_MES_2;
 ;@COLD_PLAYER(PC_ALL)
 @OPEN(1)
-◆@GOSUB(MSG_ESUB_DSP_PARTY)’ｓ　ｈｅａｌｔｈ　ｉｓ　ｒｅｓｔｏｒｅｄ．
+◆@GOSUB(MSG_ESUB_DSP_PARTY)’s health is restored.
 ;jpn:◆@DSP_LCNAME()は↓
-;jpn:　すっかり　げんきになった。
+;jpn: すっかり げんきになった。
 @KEYNP()
 @CLOSEALL()
 ;@FRESH_PLAYER(PC_ALL)
@@ -1057,98 +1057,98 @@ _DMAN_BENCH_MES_2;
 ;@Message:MSG_SKRB_BRICK_SUBMARINE
 MSG_SKRB_BRICK_SUBMARINE;
 ;潜水艦をチェックしたときのメッセージ
-@SET_LOOPREG(PC_JEFF)			;ジェフのＩＤを主レジに格納
+@SET_LOOPREG(PC_JEFF)			;ジェフのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_SKRB_BRICK_SUBMARINE_DEAD)
-◆（@DSP_NAME(PC_JEFF)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｒｏｋｅｎ　ｓｕｂｍａｒｉｎｅ．）@KEY()↓
-◆Ｙｅｓ！@KEY()↓
-◆Ｉｔ　ｃａｎ　ｓｔｉｌｌ　ｗｏｒｋ．
+◆(@DSP_NAME(PC_JEFF) checked the broken submarine.)@KEY()↓
+◆Yes!@KEY()↓
+◆It can still work.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)は↓
-;jpn:　こわれたサブマリンを↓
-;jpn:　チェックした。@KEY()↓
-;jpn:◆よし！↓
-;jpn:　これは　まだうごくぞ。@KEY()
+;jpn: こわれたサブマリンを↓
+;jpn: チェックした。@KEY()↓
+;jpn:◆よし!↓
+;jpn: これは まだうごくぞ。@KEY()
 @CLOSEALL()
 @GOTO(MSG_EVT_92_SUBMARINE)
 
 _SKRB_BRICK_SUBMARINE_DEAD;
-◆（Ｎｏ　ｏｎｅ　ｃａｎ　ｒｅｐａｉｒ　ｔｈｅ　ｓｕｂｍａｒｉｎｅ　ｅｘｃｅｐｔ　@DSP_NAME(PC_JEFF)．）
+◆(No one can repair the submarine except @DSP_NAME(PC_JEFF).)
 @KEYNP()
-;jpn:◆（@DSP_STS(STS_PC_NAME_JEFF)　いがいのものには↓
-;jpn:　サブマリンの↓
-;jpn:　しゅうりは　できない）@KEYNP()
+;jpn:◆(@DSP_STS(STS_PC_NAME_JEFF) いがいのものには↓
+;jpn: サブマリンの↓
+;jpn: しゅうりは できない)@KEYNP()
 』
 ;------------------------------------------------------------------
 
 ;この後増補
 
 MSG_SKRB_INFO_POKEY;
-◆Ｏｈ，　ｂｅ　ｃａｒｅｆｕｌ　ｗｈｅｒｅ　ｙｏｕ　ｗａｌｋ．@KEY()↓
-◆Ｉｔ’ｓ　ｆｉｌｔｈｙ．@KEY()↓
-◆Ａ　ｃｈｕｂｂｙ　ｋｉｄ　ｄｉｄ　ｈｉｓ　ｂｕｓｉｎｅｓｓ　ｏｕｔ　ｈｅｒｅ　ｓｏｍｅｗｈｅｒｅ．．．
+◆Oh, be careful where you walk.@KEY()↓
+◆It’s filthy.@KEY()↓
+◆A chubby kid did his business out here somewhere...
 @KEYNP()
-;jpn:◆あ　そのへんあるくと↓
-;jpn:　バッチイよ。@KEY()↓
-;jpn:◆がいこくから　きたとかいう↓
-;jpn:　ふとった　ガキが↓
-;jpn:　ノグソしてったから。@KEYNP()
+;jpn:◆あ そのへんあるくと↓
+;jpn: バッチイよ。@KEY()↓
+;jpn:◆がいこくから きたとかいう↓
+;jpn: ふとった ガキが↓
+;jpn: ノグソしてったから。@KEYNP()
 』
 MSG_SKRB_UNKO_POKEY;チェックすると
-◆（Ｐｏｋｅｙ’ｓ　ｓｔｉｎｋ　ｓｔｉｌｌ　ｈａｎｇｓ　ｉｎ　ｔｈｅ　ａｉｒ．．．）
+◆(Pokey’s stink still hangs in the air...)
 @KEYNP()
-;jpn:◆（ポーキーがいた↓
-;jpn:　なごりがある‥‥）@KEYNP()
+;jpn:◆(ポーキーがいた↓
+;jpn: なごりがある‥‥)@KEYNP()
 』
 
 MSG_SKRB_INFO_HIERO;
-◆Ｙｏｕ　ｎｅｅｄ　ｔｏ　ｂｅ　ａｂｌｅ　ｔｏ　ｒｅａｄ　ｈｉｅｒｏｇｌｙｐｈｓ　ｔｏ　ｓｏｌｖｅ　ｔｈｅ　ｍｙｓｔｅｒｙ　ｏｆ　ｔｈｅ　Ｐｙｒａｍｉｄ．@KEY()↓
-◆．．．Ｉ　ｃｏｕｌｄｎ’ｔ　ｓｏｌｖｅ　ｉｔ，　ａｌｔｈｏｕｇｈ　Ｉ　ｒｅａｄ　ｉｔ．@KEY()↓
-◆Ｄｉｄｎ’ｔ　ｙｏｕ　ｒｅａｄ　ｔｈｅ　ｈｉｅｒｏｇｌｙｐｈｓ　ａｔ　ｔｈｅ　ｍｕｓｅｕｍ　ｉｎ　Ｓｕｍｍｅｒｓ？@KEY()↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆You need to be able to read hieroglyphs to solve the mystery of the Pyramid.@KEY()↓
+◆...I couldn’t solve it, although I read it.@KEY()↓
+◆Didn’t you read the hieroglyphs at the museum in Summers?@KEY()↓
+<Yes>
+<No>
 ;jpn:◆ヒエログリフをよんで↓
-;jpn:　りかいしないと↓
-;jpn:　ピラミッドのなぞは　とけない。@KEYNP()
-;jpn:◆‥‥おれは　よんでも↓
-;jpn:　とけなかったんだけど@KEY()↓
+;jpn: りかいしないと↓
+;jpn: ピラミッドのなぞは とけない。@KEYNP()
+;jpn:◆‥‥おれは よんでも↓
+;jpn: とけなかったんだけど@KEY()↓
 ;jpn:◆きみ@GOSUB(MSG_SUB_TATI)↓
-;jpn:　サマーズのはくぶつかんで↓
-;jpn:　よんできたんだろ？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: サマーズのはくぶつかんで↓
+;jpn: よんできたんだろ?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_SKRB_INFO_HIERO_YES,_SKRB_INFO_HIERO_NO)
 _SKRB_INFO_HIERO_NO;
-◆Ｗｅｌｌ，　ｔｈａｔ　ｍｅａｎｓ　ｔｈａｔ　ｙｏｕ　ｍｕｓｔ　ｇｏ　ｂａｃｋ，　ｒｅａｄ　ｉｔ　ａｎｄ　ｔｈｅｎ　ｃｏｍｅ　ｂａｃｋ　ｈｅｒｅ．
+◆Well, that means that you must go back, read it and then come back here.
 @KEYNP()
-;jpn:◆そりゃあ　サマーズに↓
-;jpn:　ひきかえしてでも↓
-;jpn:　しっかり　よんでこなきゃ。@KEYNP()
+;jpn:◆そりゃあ サマーズに↓
+;jpn: ひきかえしてでも↓
+;jpn: しっかり よんでこなきゃ。@KEYNP()
 』
 _SKRB_INFO_HIERO_YES;
-◆Ｔｈｅｎ，　ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｓｏｌｖｅ　ｔｈｅ　ｍｙｓｔｅｒｙ　ｓｏｍｅｄａｙ．
+◆Then, you should be able to solve the mystery someday.
 @KEYNP()
-;jpn:◆じゃあ　いずれ↓
-;jpn:　なぞは　とけるだろうよ。@KEYNP()
+;jpn:◆じゃあ いずれ↓
+;jpn: なぞは とけるだろうよ。@KEYNP()
 』
 ;-------------------------------------------------
 
 MSG_SKRB_CHECK_SHOP;スカラビショップのカンバン
-◆Ｈａｓｓａｎ’ｓ　Ｓｈｏｐ@KEY()↓
-◆（＄　ｄｏｌｌａｒｓ　ａｃｃｅｐｔａｂｌｅ．）
+◆Hassan’s Shop@KEY()↓
+◆(＄ dollars acceptable.)
 @KEYNP()
-;jpn:◆ハッサンさんの　みせ↓
-;jpn:　（＄ドルも　つかえるよ）@KEYNP()
+;jpn:◆ハッサンさんの みせ↓
+;jpn: (＄ドルも つかえるよ)@KEYNP()
 』
 ;-------------------------------------------------
 
 MSG_BRICK_SIGN_FACE;
-◆Ｔｈａｔ　ｆａｃｅ　ｉｓ　ｍｉｎｅ．@KEY()↓
-◆（Ｆｅｅｌ　ｆｒｅｅ　ｔｏ　ｔａｌｋ　ｔｏ　ｉｔ．）@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ．
+◆That face is mine.@KEY()↓
+◆(Feel free to talk to it.)@KEY()↓
+◆...Brick Road.
 @KEYNP()
-;jpn:◆そこのかおは　わたしのである。↓
-;jpn:　（きがるに　はなしかけてみよう）↓
-;jpn:　　　　　　　　‥ブリック・ロード@KEYNP()
+;jpn:◆そこのかおは わたしのである。↓
+;jpn: (きがるに はなしかけてみよう)↓
+;jpn:        ‥ブリック・ロード@KEYNP()
 』
 ;-------------------------------------------------

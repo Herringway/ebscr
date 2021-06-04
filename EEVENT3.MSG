@@ -5,14 +5,14 @@
 ;●スカイウォーカーをチェックすると MSG_THRK_JEFF_FIXが表示される。
 ;★その後ジェフが最初にスカイウォーカーに乗り込み、他のキャラはそれに続く。
 ;★効果音「」とともにスカイウォーカーを揺らし、MSG_THRK_JEFF_FIX_2 発行。
-;★決定ボタンが押されたらスカイウォーカー発進！
+;★決定ボタンが押されたらスカイウォーカー発進!
 
 ;★スカイウォーカーはオートでウィンタースへ飛行。専用音楽有り。
 ;★マップとマップのつなぎに、雲の上を飛行する場面を挿入する。
-;（イベント５３に同じ。）
+;(イベント５３に同じ。)
 
 MSG_THRK_JEFF_FIX;
-@SET_LOOPREG(PC_JEFF)			;ジェフのＩＤを主レジに格納
+@SET_LOOPREG(PC_JEFF)			;ジェフのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_THRK_JEFF_FIX_DEAD)
 @CLOSEALL()
@@ -35,10 +35,10 @@ MSG_THRK_JEFF_FIX;
 @WI(60)
 @HIDE_MANPU_PLAYER(PC_JEFF)
 @OPEN(1)
-◆Ｉ　ｃａｎ’ｔ　ｓｅｅ　ｗｈｅｒｅ　ｔｈｅ　ｐｒｏｂｌｅｍ　ｉｓ　ｆｒｏｍ　ｔｈｉｓ　ｖａｎｔａｇｅ　ｐｏｉｎｔ．@KEY()↓
-◆Ｉ　ｎｅｅｄ　ｔｏ　ｂｅ　ｉｎ　ｔｈｅ　ｆｒｏｎｔ．
-;jpn:◆ここからだと　よくわからないな。↓
-;jpn:　まえからみてみないと‥‥
+◆I can’t see where the problem is from this vantage point.@KEY()↓
+◆I need to be in the front.
+;jpn:◆ここからだと よくわからないな。↓
+;jpn: まえからみてみないと‥‥
 @KEYNP()↓
 @CLOSEALL()
 @WI(30)
@@ -56,11 +56,11 @@ _JEFF_FIX_SKYWALKER
 @WI(60)
 @HIDE_MANPU_GOM_CHAR(GOM_JEF)
 @OPEN(1)
-◆Ａｈ！　　Ｈｅｒｅ’ｓ　ｔｈｅ　ｐｒｏｂｌｅｍ，　ａｎｄ　ｉｔ’ｓ　ｎｏｔ　ｔｏｏ　ｔｏｕｇｈ　ｔｏ　ｆｉｘ．@KEY()↓
-◆Ｈａｎｇ　ｏｎ　ｆｏｒ　ａ　ｓｅｃｏｎｄ　ｏｒ　ｔｗｏ．．．
-;jpn:◆おっ　こわれてるといっても↓
-;jpn:　たいしたことないや。↓
-;jpn:　よし　ちょっとまっててくれよ。
+◆Ah!  Here’s the problem, and it’s not too tough to fix.@KEY()↓
+◆Hang on for a second or two...
+;jpn:◆おっ こわれてるといっても↓
+;jpn: たいしたことないや。↓
+;jpn: よし ちょっとまっててくれよ。
 @KEY()
 @CLOSEALL()
 @WI(30)
@@ -76,39 +76,39 @@ _JEFF_FIX_SKYWALKER
 @MUSISTART()
 @OPEN(1)
 MSG_THRK_JEFF_FIX_2;
-◆Ｔｈｅｒｅ！@KEY()↓
-◆Ｔｈａｔ　ｓｈｏｕｌｄ　ｄｏ　ｉｔ！@KEY()↓
-◆Ｎｏｗ，　ｉｆ　@GOSUB(_THRK_JEFF_FIX_WE_I)　ｂｏａｒｄ，↓
-　　ｔｈｅ　Ｓｋｙ　Ｒｕｎｎｅｒ　ｗｉｌｌ　ｔａｋｅ　@GOSUB(_THRK_JEFF_FIX_ME_US)@KEY()↓
-◆ｂａｃｋ　ｔｏ　Ｗｉｎｔｅｒｓ．@KEY()↓
-◆Ｗｉｔｈ　Ｄｒ．　Ａｎｄｏｎｕｔｓ’　ｈｅｌｐ，↓
-　　Ｉ　ｃａｎ　ｍｏｄｉｆｙ　ｔｈｅ　ｍａｃｈｉｎｅ　ｔｏ　ｆｌｙ　ｔｏ　Ｓｕｍｍｅｒｓ．@KEY()↓
-◆．．．Ｉｆ　Ｄａｄ，　Ｉ　ｍｅａｎ　Ｄｒ．　Ａｎｄｏｎｕｔｓ，@KEY()↓
-◆ｉｓ　ｎｏｔ　ａｖａｉｌａｂｌｅ，　Ｉ’ｌｌ　ｈａｖｅ　ｔｏ　ｆｉｇｕｒｅ　ｉｔ　ｏｕｔ　ｂｙ　ｍｙｓｅｌｆ．@KEY()↓
-◆Ａｎｙｗａｙ，　ｌｅｔ’ｓ　ｇｏ　ｂａｃｋ　ｔｏ　ｔｈｅ　ｌａｂ　ｉｎ　Ｗｉｎｔｅｒｓ．@KEY()↓
-◆．．．Ｔｈａｔ’ｓ　ｉｔ．．．@KEY()↓
-◆Ｇｏ，　ｍａｃｈｉｎｅ，　ｇｏ！
-;jpn:◆よし！↓
-;jpn:　これで　うごくはずだ！@KEY()↓
-;jpn:◆‥‥ただ　スカイウォーカーは↓
-;jpn:　このまま　のりこんでも@KEY()↓
+◆There!@KEY()↓
+◆That should do it!@KEY()↓
+◆Now, if @GOSUB(_THRK_JEFF_FIX_WE_I) board,↓
+  the Sky Runner will take @GOSUB(_THRK_JEFF_FIX_ME_US)@KEY()↓
+◆back to Winters.@KEY()↓
+◆With Dr. Andonuts’ help,↓
+  I can modify the machine to fly to Summers.@KEY()↓
+◆...If Dad, I mean Dr. Andonuts,@KEY()↓
+◆is not available, I’ll have to figure it out by myself.@KEY()↓
+◆Anyway, let’s go back to the lab in Winters.@KEY()↓
+◆...That’s it...@KEY()↓
+◆Go, machine, go!
+;jpn:◆よし!↓
+;jpn: これで うごくはずだ!@KEY()↓
+;jpn:◆‥‥ただ スカイウォーカーは↓
+;jpn: このまま のりこんでも@KEY()↓
 ;jpn:◆ウィンターズに↓
-;jpn:　もどってしまうことになる。@KEY()↓
+;jpn: もどってしまうことになる。@KEY()↓
 ;jpn:◆‥‥アンドーナッツはかせに↓
-;jpn:　てつだってもらって@KEY()↓
+;jpn: てつだってもらって@KEY()↓
 ;jpn:◆サマーズにゆけるように↓
-;jpn:　かいぞうしてもらう↓
-;jpn:　ひつようがある。@KEY()↓
-;jpn:◆‥‥もし　パパが@WI(15)　いや‥‥↓
-;jpn:　アンドーナッツはかせが↓
-;jpn:　いなかったら‥‥@KEY()↓
-;jpn:◆ぼく　ひとりのちからで↓
-;jpn:　なんとかするしかないな。@KEY()↓
-;jpn:◆でも　ひとまず↓
-;jpn:　ウィンターズの↓
-;jpn:　けんきゅうじょまで　もどろう。@KEY()↓
+;jpn: かいぞうしてもらう↓
+;jpn: ひつようがある。@KEY()↓
+;jpn:◆‥‥もし パパが@WI(15) いや‥‥↓
+;jpn: アンドーナッツはかせが↓
+;jpn: いなかったら‥‥@KEY()↓
+;jpn:◆ぼく ひとりのちからで↓
+;jpn: なんとかするしかないな。@KEY()↓
+;jpn:◆でも ひとまず↓
+;jpn: ウィンターズの↓
+;jpn: けんきゅうじょまで もどろう。@KEY()↓
 ;jpn:◆‥‥それしかない。@WI(30)↓
-;jpn:　いこう！！
+;jpn: いこう!!
 @KEY()
 @CLOSEALL()
 ;----------
@@ -233,37 +233,37 @@ MSG_THRK_JEFF_FIX_2;
 』
 
 _THRK_JEFF_FIX_DEAD;
-◆（Ｏｎｌｙ　@DSP_NAME(PC_JEFF)　ｉｓ　ａｂｌｅ　ｔｏ　ｆｉｘ　ｔｈｅ　Ｓｋｙ　Ｒｕｎｎｅｒ．）
-;jpn:◆（@DSP_STS(STS_PC_NAME_JEFF)　いがいのものには↓
-;jpn:　スカイウォーカーの↓
-;jpn:　しゅうりは　できない）
+◆(Only @DSP_NAME(PC_JEFF) is able to fix the Sky Runner.)
+;jpn:◆(@DSP_STS(STS_PC_NAME_JEFF) いがいのものには↓
+;jpn: スカイウォーカーの↓
+;jpn: しゅうりは できない)
 @KEYNP()
 』
 
-_THRK_JEFF_FIX_WE_I;松（もったいない？）
+_THRK_JEFF_FIX_WE_I;松(もったいない?)
 @GET_ORDER_PLAYER(2)
 @Q_SPECIAL(0,1,2)
 @TRUE_GOTO(_THRK_JEFF_FIX_WE_I_2)
 @GET_ORDER_PLAYER(2)
 @Q_SPECIAL(0,1,3)
 @TRUE_GOTO(_THRK_JEFF_FIX_WE_I_2)
-ｗｅ
+we
 @!
 _THRK_JEFF_FIX_WE_I_2;
-Ｉ
+I
 @!
 
-_THRK_JEFF_FIX_ME_US;松（もったいない？）
+_THRK_JEFF_FIX_ME_US;松(もったいない?)
 @GET_ORDER_PLAYER(2)
 @Q_SPECIAL(0,1,2)
 @TRUE_GOTO(_THRK_JEFF_FIX_ME_US_2)
 @GET_ORDER_PLAYER(2)
 @Q_SPECIAL(0,1,3)
 @TRUE_GOTO(_THRK_JEFF_FIX_ME_US_2)
-ｕｓ
+us
 @!
 _THRK_JEFF_FIX_ME_US_2;
-ｍｅ
+me
 @!
 
 ;------------------------------------------------
@@ -271,7 +271,7 @@ _THRK_JEFF_FIX_ME_US_2;
 ;#	ウィンタースからサマーズ
 
 ;★サマーズに到着したら、ビーチに墜落させてスカーウォーカーは消してしまう。
-;★爆発の破片を飛び散らせて、黒こげの（テレポート失敗時の）
+;★爆発の破片を飛び散らせて、黒こげの(テレポート失敗時の)
 ;プレイヤーキャラを出現させる。
 
 MSG_EVT_RIDE_SW2_WINS_LAUNCH;
@@ -283,7 +283,7 @@ MSG_EVT_RIDE_SW2_WINS_LAUNCH;
 ;-----
 ;@BGMSTART(0,BGM_skyw)
 ;@DIS_BGMCHG();虫を無視
-;発進の効果？
+;発進の効果?
 @FRESH_CHAR(PRSN_WINS_LABO_1F_4A);発進
 @WAITSYS();上昇を待つ
 @WI(30)
@@ -354,11 +354,11 @@ MSG_EVT_RIDE_SW2_WINS_LAUNCH;
 ;------------------------------------------------
 
 
-;#78	マッサージの女（ランマへ）	11.1	T
+;#78	マッサージの女(ランマへ)	11.1	T
 
 ;★_SUMS_OILMASSAGE_YES から、ネスたちは夢を見るという設定で
-;ランマ（プレイヤーキャラがプー）篇に移行する。
-;夢におちるような演出がしたい（ラスターでゆらゆらとか）。
+;ランマ(プレイヤーキャラがプー)篇に移行する。
+;夢におちるような演出がしたい(ラスターでゆらゆらとか)。
 
 ;★スカラビのホテルからもランマ篇に行ける設定となっています。
 ;演出は同じ。
@@ -375,10 +375,10 @@ MSG_EVT_78_GIL;
 @OPEN(1)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆（@DSP_NAME(0)　ｈａｄ　ａ　ｄｒｅａｍ，　ｉｔ　ｗａｓ　ａ　ｖｅｒｙ　ｃｌｅａｒ，　ａｎｄ　ｖｅｒｙ　ｓｔｒａｎｇｅ，　ｄｒｅａｍ．）
-;jpn:◆（@DSP_NAME(0)は　ゆめをみた。@WI(30)↓
-;jpn:　とても　はっきりしていて↓
-;jpn:　ふしぎなゆめ　だった）
+◆(@DSP_NAME(0) had a dream, it was a very clear, and very strange, dream.)
+;jpn:◆(@DSP_NAME(0)は ゆめをみた。@WI(30)↓
+;jpn: とても はっきりしていて↓
+;jpn: ふしぎなゆめ だった)
 @KEY()
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_INTO_NIGHT, OBJFX_SHOW_NONE )
 @WAITSYS()
@@ -389,14 +389,14 @@ MSG_EVT_78_GIL;
 @DEL_PARTY(PC_NESS)
 @DEL_PARTY(PC_PAULA)
 @DEL_PARTY(PC_JEFF)
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;もーいっぺんパーティ消す（要るのか？）
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;もーいっぺんパーティ消す(要るのか?)
 ;前準備
 @SETF( FLG_SYS_MONSTER_OFF )		;ワンダリングモンスター出現禁止
 ;住宅のパンニングへ
 ;-------
 @BGM_EFFECT(3)
 @WI(60)
-;@MUSISTART()				;ランマ編ＯＰのＢＧＭ
+;@MUSISTART()				;ランマ編OPのBGM
 ;--------
 @WARP( WARP_RAMA_PANNING1 )
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_PANNING_RAMMA_1, OBJFX_SHOW_NONE )
@@ -424,13 +424,13 @@ MSG_EVT_78_GIL;
 @WARP(WARP_RAMA_START)
 @COLD_PLAYER( PC_ALL )
 @COLD_CHAR( PRSN_RAMA_PALACE_THRONE_A )		;「老師・イースーチー」
-@COLD_CHAR( PRSN_RAMA_PALACE_THRONE_B )		;「仕え人Ａ」
+@COLD_CHAR( PRSN_RAMA_PALACE_THRONE_B )		;「仕え人A」
 @WI( 120 )
 ;
 MSG_EVT_78_RAMA_START;
 ;老師のセリフ
 ;------------
-@BGM_EFFECT( 3 )	;ＢＧＭフェードアウト長め
+@BGM_EFFECT( 3 )	;BGMフェードアウト長め
 @WI( 120 )		;フェードアウト待ち
 ;------------
 ;プーの方を向く
@@ -441,22 +441,22 @@ MSG_EVT_78_RAMA_START;
 ;------------
 @SETF(FLG_SUMS_RAMMA_START);曲設定用として使用
 @OPEN(1)
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)，
-　　ｔｈｅ　ｔｉｍｅ　ｈａｓ　ｎｏｗ　ｃｏｍｅ　ｆｏｒ　ｙｏｕ　ｔｏ　ｕｎｄｅｒｔａｋｅ　ｙｏｕｒ　ｆｉｎａｌ　ｔｒｉａｌ．@KEY()↓
-◆Ｇｏ　ｔｏ　ｔｈｅ　”Ｐｌａｃｅ　ｏｆ　Ｅｍｐｔｉｎｅｓｓ”　ａｎｄ　ｅｎｄｕｒｅ　ｔｈｉｓ　ｆｉｎａｌ　ｔｅｓｔ．@KEY()↓
-◆Ｉ　ａｍ　ｐｒａｙｉｎｇ　ｆｏｒ　ｙｏｕｒ　ｓｕｃｃｅｓｓ　ｉｎ　ｔｈｉｓ　ｆｉｎａｌ　ｓｔａｇｅ　ｏｆ　ｙｏｕｒ　ｔｒａｉｎｉｎｇ．
+◆Prince @DSP_NAME(PC_POO),
+  the time has now come for you to undertake your final trial.@KEY()↓
+◆Go to the ”Place of Emptiness” and endure this final test.@KEY()↓
+◆I am praying for your success in this final stage of your training.
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさま@KEY()↓
-;jpn:◆いよいよ　さいごの↓
-;jpn:　しれんに　いどむときが↓
-;jpn:　きました。@KEY()↓
-;jpn:◆なるべく　はやく↓
-;jpn:　「ムのばしょ」へ↓
-;jpn:　おもむいてください。@KEY()↓
-;jpn:◆そして　さいごの　しれんを↓
-;jpn:　みごとに　のりこえてくだされ。@KEY()↓
-;jpn:◆かげながら　このイースーチーも↓
-;jpn:　しゅぎょうのせいこうを↓
-;jpn:　おいのりしておりまするぞ。
+;jpn:◆いよいよ さいごの↓
+;jpn: しれんに いどむときが↓
+;jpn: きました。@KEY()↓
+;jpn:◆なるべく はやく↓
+;jpn: 「ムのばしょ」へ↓
+;jpn: おもむいてください。@KEY()↓
+;jpn:◆そして さいごの しれんを↓
+;jpn: みごとに のりこえてくだされ。@KEY()↓
+;jpn:◆かげながら このイースーチーも↓
+;jpn: しゅぎょうのせいこうを↓
+;jpn: おいのりしておりまするぞ。
 @KEYNP()
 @CLOSEALL()
 @SETF(FLG_RAMA_MASTER)
@@ -483,23 +483,23 @@ MSG_EVT_78_RAMA_START;
 ;ということにつきます。
 ;イベント終了前に「無の場所」を離れてしまったり、
 ;「はい／いいえ」の選択で「いいえ」を選んでしまったら
-;その場でイベント終了（失敗やり直し）となります。
+;その場でイベント終了(失敗やり直し)となります。
 ;★まず、無の場所に立つと「老師の使い」が登場し、接近してセリフ
 ;MSG_RAMA_MESSENGER を発行し、元の方向に消えます。
 ;そのまま入力も移動もしなければ、数秒後に「先祖の霊」が登場して、
-;接近接触してバトル（擬似）モードに入ります。
+;接近接触してバトル(擬似)モードに入ります。
 ;★擬似バトルモードでは、メッセージ MSG_RAMA_GHOST_1 を表示します。
 ;FLG_RAMA_OK が ON になるまえにメッセージを終了させてしまったら、
 ;このイベントは振り出しに戻ります。
 ;★MSG_RAMA_OK が ON の状態でメッセージを終了したら
-;（経験地獲・レベルアップ／ＰＳＩ修得後）マップ画面に戻ります。
+;(経験地獲・レベルアップ／PSI修得後)マップ画面に戻ります。
 ;★マップ画面にはプーの隣に老師が登場していて、
 ;セリフ MSG_RAMA_MASTER_OK 発行後、テレポートの演出でランマ編終了。
-;（イベント８０番へ。）
+;(イベント８０番へ。)
 
-MSG_EVT_79_MU;包囲枠Ａにかかったら以下を発行
+MSG_EVT_79_MU;包囲枠Aにかかったら以下を発行
 @SETF(FLG_SYS_MONSTER_OFF)				;モンスターカット
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POO_SYUGYOU_1,OBJFX_SHOW_NONE)　　　　　　　;中央まで移動
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POO_SYUGYOU_1,OBJFX_SHOW_NONE)       ;中央まで移動
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
 ...;@WI( 1 )
 ...;@SET_CAMERA_GOM_CHAR( GOM_HIT_CHR )
@@ -521,63 +521,63 @@ MSG_EVT_79_MU;包囲枠Ａにかかったら以下を発行
 @MOVE_GOM_CHAR(GOM_POO_MEDITATION,ANIM_POO_SYUGYOU_2,OBJFX_SHOW_NONE)
 @BGMSTART(0,BGM_muuu)
 ;@DIS_BGMCHG()
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　　　　　　　　　;失敗フラグ初期化
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;動くか、時間が経つまで待つ
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_1)　　　　　　;動いて失敗？
+@RESF(FLG_TEMP_1)                       ;失敗フラグ初期化
+@WAITSYS()                              ;動くか、時間が経つまで待つ
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_1)      ;動いて失敗?
 @COLD_GOM_CHAR(GOM_POO_MEDITATION)
 ;
-@MOVE_GOM_CHAR(GOM_SISYOU_MESSENGER,ANIM_MESSENGER,OBJFX_SHOW_NONE)　　;使い登場
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;移動待ち
+@MOVE_GOM_CHAR(GOM_SISYOU_MESSENGER,ANIM_MESSENGER,OBJFX_SHOW_NONE)  ;使い登場
+@WAITSYS()                                                      ;移動待ち
 @COLD_GOM_CHAR(GOM_SISYOU_MESSENGER)
-@GOSUB(MSG_RAMA_MESSENGER)　　　　　　　　　　　　　　;使いのセリフ
-@FRESH_GOM_CHAR(GOM_SISYOU_MESSENGER)　　　　　　　　　　　　　　　　　　　　　　　　　　　;使い退場
+@GOSUB(MSG_RAMA_MESSENGER)              ;使いのセリフ
+@FRESH_GOM_CHAR(GOM_SISYOU_MESSENGER)                           ;使い退場
 @WAITSYS()
 ;
 @FRESH_GOM_CHAR(GOM_POO_MEDITATION)
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;動くか、時間が経つまで待つ
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_1)　　　　　　;動いて失敗？
+@WAITSYS()                              ;動くか、時間が経つまで待つ
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_1)      ;動いて失敗?
 ;フェードアウト〜イン
-@MOVE_GOM_CHAR(GOM_SPIRIT,ANIM_SENZO_1,OBJFX_SHOW_NONE)　　　;先祖の霊登場
-@RESF(FLG_TEMP_2)　　　　　　　　　　　　　　　;霊の移動フラグ初期化
-@SETF(FLG_TEMP_3)　　　　　　　　　　　　　　　;失敗時マップ画面復帰フラグ初期化
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;動くか、霊が移動するまで待つ
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)　　　　　　;動いて失敗？
+@MOVE_GOM_CHAR(GOM_SPIRIT,ANIM_SENZO_1,OBJFX_SHOW_NONE)   ;先祖の霊登場
+@RESF(FLG_TEMP_2)               ;霊の移動フラグ初期化
+@SETF(FLG_TEMP_3)               ;失敗時マップ画面復帰フラグ初期化
+@WAITSYS()                      ;動くか、霊が移動するまで待つ
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;動いて失敗?
 @SETF(FLG_TEMP_2)
 ;フェードアウト
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　;フェードアウト待ち
-@DSP_PL()　　　　　　　　　　　　　　　　　　　　　　　;パネル表示
-@REMOVE_GOM_CHAR(GOM_SPIRIT,ANIM_SENZO_2)　　　　;霊は中央に
-@RESF(FLG_TEMP_2)　　　　　　　　　　　　　　　;修行終了フラグ初期化
-@RESF(FLG_TEMP_4)　　　　　　　　　　　　　　　;目潰し状態トリガ初期化
+@WAITSYS()                      ;フェードアウト待ち
+@DSP_PL()                       ;パネル表示
+@REMOVE_GOM_CHAR(GOM_SPIRIT,ANIM_SENZO_2)    ;霊は中央に
+@RESF(FLG_TEMP_2)               ;修行終了フラグ初期化
+@RESF(FLG_TEMP_4)               ;目潰し状態トリガ初期化
 ;フェードイン
 @GOSUB(MSG_RAMA_GHOST_1);メータを１／３にする処理追加
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)　　　　　　;失敗？
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
 @GOSUB(MSG_RAMA_GHOST_2);メータを１にする処理追加
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)　　　　　　;失敗？
-@GOSUB(MSG_RAMA_GHOST_3);ＢＧＭ消す処理追加
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)　　　　　　;失敗？
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
+@GOSUB(MSG_RAMA_GHOST_3);BGM消す処理追加
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
 @GOSUB(MSG_RAMA_GHOST_4)
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)　　　　　　;失敗？
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
 ;メッセージウィンドウ以外を真っ黒にする処理
-@SETF( FLG_TEMP_4 )			;目潰し処理トリガＯＮ
+@SETF( FLG_TEMP_4 )			;目潰し処理トリガON
 @WAITSYS()				;目潰し処理終了待ち
 @GOSUB(MSG_RAMA_GHOST_5)
-@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)　　　　　　;失敗？
+@CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
 ;全て画面真っ黒にする処理追加予定
-@SETF(FLG_TEMP_2)　　　　　　　　　　　　　　　　　　　　　　　;修行終了待ち
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;マップ画面復帰待ち
-@HIDE_GOM_CHAR(GOM_SPIRIT,OBJFX_HIDE_NONE)　　　　　　　　;先祖の霊がいたら？消す
-@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)　　　　　　　　　;プレーヤー再表示
+@SETF(FLG_TEMP_2)                       ;修行終了待ち
+@WAITSYS()                              ;マップ画面復帰待ち
+@HIDE_GOM_CHAR(GOM_SPIRIT,OBJFX_HIDE_NONE)        ;先祖の霊がいたら?消す
+@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)         ;プレーヤー再表示
 @WI(1)
-;以下、仕様変更（使いが来て「宮殿にお戻り下さい」）
+;以下、仕様変更(使いが来て「宮殿にお戻り下さい」)
 ;@ENA_BGMCHG()
 @MUSISTART()
 @MOVE_GOM_CHAR(GOM_INDIAN_MAN_A,ANIM_MESSENGER,OBJFX_SHOW_NONE);使い登場
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;移動待ち
+@WAITSYS()                                                      ;移動待ち
 @COLD_GOM_CHAR( GOM_INDIAN_MAN_A)
 @SET_PLAYER_DIR( PC_POO, DIR_M_LEFT )
-@GOSUB(MSG_RAMA_MESSENGER_OK)　　　　　　　　　　　　　　;使いのセリフ
-@FRESH_GOM_CHAR(GOM_INDIAN_MAN_A)　　　　　　　　　　　　　		;使い退場
+@GOSUB(MSG_RAMA_MESSENGER_OK)              ;使いのセリフ
+@FRESH_GOM_CHAR(GOM_INDIAN_MAN_A)             		;使い退場
 @WAITSYS()
 』
 
@@ -601,7 +601,7 @@ MSG_EVT_80_ADD_PU_SUMS;
 @COLD_PLAYER(PC_ALL)
 @SET_COMEBACK_POS(TLPT_SUMMERS)
 ;-----
-@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)　　　　　　　　　;プレーヤー再表示
+@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)         ;プレーヤー再表示
 ;-----
 ;ホテルの場合はフィールドに出たら以下を実行
 MSG_EVT_80_ADD_PU_MAIN;
@@ -630,9 +630,9 @@ _EVT_80_ADD_PU_MAIN_MAIN;
 @WI(60)
 @MUSISTART()
 @OPEN(1)
-◆@DSP_NAME(PC_POO)　ｊｏｉｎｅｄ　ｙｏｕ．
-;jpn:◆（@DSP_STS(STS_PC_NAME_POO)が↓
-;jpn:　なかまになった）
+◆@DSP_NAME(PC_POO) joined you.
+;jpn:◆(@DSP_STS(STS_PC_NAME_POO)が↓
+;jpn: なかまになった)
 @KEY()
 @CLOSEALL()
 @CLRF(FLG_SYS_MONSTER_OFF)	;モンスター登場
@@ -645,26 +645,26 @@ _EVT_80_ADD_PU_MAIN_MAIN;
 
 ;失敗その１
 MSG_EVT_POO_SYUGYOU_SIPPAI_1
-@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)　　　　　　　　　;プレーヤー再表示
+@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)         ;プレーヤー再表示
 @HIDE_GOM_CHAR(GOM_POO_MEDITATION,OBJFX_HIDE_NONE)
-@HP_UP(PC_POO,100);ＨＰ回復
+@HP_UP(PC_POO,100);HP回復
 @MESSAGE_SOUND(1);メッセージ表示音通常に
 @MUSISTART()
-;@SET_HIT_RECT(1,HRECT_RAMA_MU_B,MSG_EVT_79_MU_SET_HRECT_A);包囲網Ｂの設定
+;@SET_HIT_RECT(1,HRECT_RAMA_MU_B,MSG_EVT_79_MU_SET_HRECT_A);包囲網Bの設定
 』
 
 
 ;失敗その２
 MSG_EVT_POO_SYUGYOU_SIPPAI_2
-@HP_UP(PC_POO,100);ＨＰ回復
+@HP_UP(PC_POO,100);HP回復
 @MESSAGE_SOUND(1);メッセージ表示音通常に
 @SETF(FLG_TEMP_2)
 @WI(1)
-@CHKFGOTO(FLG_TEMP_3,MSG_EVT_POO_SYUGYOU_SIPPAI_2)　　　　　　;マップ画面復帰待ち
+@CHKFGOTO(FLG_TEMP_3,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;マップ画面復帰待ち
 @RESF(FLG_TEMP_1)
-@HIDE_GOM_CHAR(GOM_SPIRIT,OBJFX_HIDE_NONE)　　　　　　　　;先祖の霊がいたら消す
-@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)　　　　　　　　　;プレーヤー再表示
-;@SET_HIT_RECT(1,HRECT_RAMA_MU_B,MSG_EVT_79_MU_SET_HRECT_A);包囲網Ｂの設定
+@HIDE_GOM_CHAR(GOM_SPIRIT,OBJFX_HIDE_NONE)        ;先祖の霊がいたら消す
+@SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)         ;プレーヤー再表示
+;@SET_HIT_RECT(1,HRECT_RAMA_MU_B,MSG_EVT_79_MU_SET_HRECT_A);包囲網Bの設定
 ;@MUSISTART()
 』
 
@@ -675,52 +675,52 @@ MSG_EVT_79_MU_SET_HRECT_A;
 MSG_RAMA_MESSENGER;
 ;老師の使いの者
 @OPEN(1)
-◆Ａｈ！　　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．．．@KEY()↓
-◆Ｉ　ａｍ　ａ　ｍｅｓｓｅｎｇｅｒ　ｆｒｏｍ　ｙｏｕｒ　ｍａｓｔｅｒ．．．@KEY()↓
-◆Ｈｅ　ｓｅｎｔ　ｍｅ　ｔｏ　ｔｅｌｌ　ｙｏｕ　ｔｈａｔ　ｙｏｕ　ｍｕｓｔ　ｓｔｏｐ　ｙｏｕｒ　ｍｅｄｉｔａｔｉｏｎ　ｉｍｍｅｄｉａｔｅｌｙ．@KEY()↓
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)！@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｃｏｍｅ　ｂａｃｋ　ｗｉｔｈ　ｍｅ　ｉｎｓｔｅａｄ　ｏｆ　ｓｔａｙｉｎｇ　ｉｎ　ａ　ｐｌａｃｅ　ｓｕｃｈ　ａｓ　ｔｈｉｓ．@KEY()↓
-◆Ｙｏｕｒ　Ｍａｓｔｅｒ　ｗｉｓｈｅｓ　ｉｔ．．．ｐｌｅａｓｅ　ｒｉｓｅ，↓
-　　Ｐｒｉｎｃｅ．．．@KEY()↓
-◆Ｙｏｕｒ　ｈｉｇｈｎｅｓｓ，　ｙｏｕ　ｍｕｓｔ　ｇｉｖｅ　ｕｐ　ｔｈｉｓ　ｔｒｉａｌ　ｆｏｒ　ｎｏｗ．．．ｂｅｌｉｅｖｅ　ｗｈａｔ　Ｉ　ｓａｙ，@KEY()↓
-◆ｉｔ　ｉｓ　ｔｈｅ　ｔｒｕｔｈ．．．
-;jpn:◆おお　おいたわしや↓
-;jpn:　@DSP_STS(STS_PC_NAME_POO)おうじさま。@KEY()↓
+◆Ah!  Prince @DSP_NAME(PC_POO)...@KEY()↓
+◆I am a messenger from your master...@KEY()↓
+◆He sent me to tell you that you must stop your meditation immediately.@KEY()↓
+◆Prince @DSP_NAME(PC_POO)!@KEY()↓
+◆You must come back with me instead of staying in a place such as this.@KEY()↓
+◆Your Master wishes it...please rise,↓
+  Prince...@KEY()↓
+◆Your highness, you must give up this trial for now...believe what I say,@KEY()↓
+◆it is the truth...
+;jpn:◆おお おいたわしや↓
+;jpn: @DSP_STS(STS_PC_NAME_POO)おうじさま。@KEY()↓
 ;jpn:◆イースーチーろうしの↓
-;jpn:　つかいのもので　ございます。@KEY()↓
-;jpn:◆たったいま　ろうしさまが↓
-;jpn:　「すぐに　めいそうを↓
-;jpn:　やめるように」と　つたえるよう@KEY()↓
-;jpn:◆わたしを　さしむけました。@KEY()↓
-;jpn:◆さぁ　いそいで　かえりましょう。@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_POO)さま！@WI(20)↓
-;jpn:　こんなところに　いないで↓
-;jpn:　まいりましょう。@KEY()↓
-;jpn:◆ろうしさまが　なげきます！@WI(20)↓
-;jpn:　さぁ　おたちください！@WI(20)↓
-;jpn:　さぁ！@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさま！@WI(20)↓
-;jpn:　しれんは　いちじ　ちゅうしです。↓
-;jpn:　ほんとうです。
+;jpn: つかいのもので ございます。@KEY()↓
+;jpn:◆たったいま ろうしさまが↓
+;jpn: 「すぐに めいそうを↓
+;jpn: やめるように」と つたえるよう@KEY()↓
+;jpn:◆わたしを さしむけました。@KEY()↓
+;jpn:◆さぁ いそいで かえりましょう。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_POO)さま!@WI(20)↓
+;jpn: こんなところに いないで↓
+;jpn: まいりましょう。@KEY()↓
+;jpn:◆ろうしさまが なげきます!@WI(20)↓
+;jpn: さぁ おたちください!@WI(20)↓
+;jpn: さぁ!@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさま!@WI(20)↓
+;jpn: しれんは いちじ ちゅうしです。↓
+;jpn: ほんとうです。
 @KEYNP()
 @CLOSEALL()
 』
 
-MSG_RAMA_GHOST_1;（プーの）先祖の霊
+MSG_RAMA_GHOST_1;(プーの)先祖の霊
 @OPEN(1)
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．．．@KEY()↓
-◆Ｉ　ａｍ　ｔｈｅ　ｓｐｉｒｉｔ　ｏｆ　ｙｏｕｒ　ａｎｃｉｅｎｔ　ｌｉｎｅａｇｅ．@KEY()↓
-◆Ｔｏ　ｃｏｍｐｌｅｔｅ　ｙｏｕｒ　ｔｒｉａｌ，　Ｉ　ａｍ　ｇｏｉｎｇ　ｔｏ　ｂｒｅａｋ　ｙｏｕｒ　ｌｅｇｓ．@KEY()↓
-◆Ｙｏｕ　ｗｉｌｌ　ｌｏｓｅ　ｔｈｅ　ｕｓｅ　ｏｆ　ｔｈｅｍ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ａｃｃｅｐｔ　ｔｈｉｓ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆さてさて　@DSP_STS(STS_PC_NAME_POO)おうじ。@WI(15)↓
-;jpn:　わたしは　おまえの↓
-;jpn:　せんぞのれい　じゃ。@KEY()↓
-;jpn:◆しれんの　しあげに↓
-;jpn:　おまえのあしを　おるが　よいな。@KEY()↓
-;jpn:◆あしを　うしなうが　よいな？@KEY()@WI(20)
-;jpn:　　<はい>　　<いいえ>
+◆Prince @DSP_NAME(PC_POO)...@KEY()↓
+◆I am the spirit of your ancient lineage.@KEY()↓
+◆To complete your trial, I am going to break your legs.@KEY()↓
+◆You will lose the use of them.@KEY()↓
+◆Do you accept this?↓
+<Yes> <No>
+;jpn:◆さてさて @DSP_STS(STS_PC_NAME_POO)おうじ。@WI(15)↓
+;jpn: わたしは おまえの↓
+;jpn: せんぞのれい じゃ。@KEY()↓
+;jpn:◆しれんの しあげに↓
+;jpn: おまえのあしを おるが よいな。@KEY()↓
+;jpn:◆あしを うしなうが よいな?@KEY()@WI(20)
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_RAMA_GHOST_1_YES,MSG_RAMA_GHOST_NO)
 
@@ -739,22 +739,22 @@ _RAMA_GHOST_1_YES;
 
 MSG_RAMA_GHOST_2;
 @OPEN(1)
-◆Ｓｏ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．．．@KEY()↓
-◆ｙｏｕ　ｃａｎｎｏｔ　ｗａｌｋ，　ａｓ　ｙｏｕｒ　ｌｅｇｓ　ａｒｅ　ｂｒｏｋｅｎ．@KEY()↓
-◆Ｎｅｘｔ，　Ｉ　ｗｉｌｌ　ｔｅａｒ　ｙｏｕｒ　ａｒｍｓ　ｏｆｆ．．．@KEY()↓
-◆Ｉ　ｓｈａｌｌ　ｔｈｅｎ　ｔａｋｅ　ｙｏｕｒ　ａｒｍｓ　ａｎｄ　ｆｅｅｄ　ｔｈｅｍ　ｔｏ　ｔｈｅ　ｃｒｏｗｓ．@KEY()↓
-◆Ｔｈｅ　ｔａｋｉｎｇ　ｏｆ　ｙｏｕｒ　ａｒｍｓ．．．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ａｃｃｅｐｔ　ｔｈｉｓ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆さても　さても　@DSP_STS(STS_PC_NAME_POO)おうじ。@WI(15)↓
-;jpn:　あしを　なくして　あるけぬか。@WI(20)↓
-;jpn:　つぎは　おまえの　うでをちぎる。@KEY()↓
-;jpn:◆うでを　ちぎって↓
-;jpn:　カラスどもに　くらわせるが@WI(20)↓
-;jpn:　よいのだな？@KEY()↓
-;jpn:◆うでを　ちぎるぞ。↓
-;jpn:　よいのだな？@WI(20)↓
-;jpn:　　<はい>　　<いいえ>
+◆So, Prince @DSP_NAME(PC_POO)...@KEY()↓
+◆you cannot walk, as your legs are broken.@KEY()↓
+◆Next, I will tear your arms off...@KEY()↓
+◆I shall then take your arms and feed them to the crows.@KEY()↓
+◆The taking of your arms...@KEY()↓
+◆Do you accept this?↓
+<Yes> <No>
+;jpn:◆さても さても @DSP_STS(STS_PC_NAME_POO)おうじ。@WI(15)↓
+;jpn: あしを なくして あるけぬか。@WI(20)↓
+;jpn: つぎは おまえの うでをちぎる。@KEY()↓
+;jpn:◆うでを ちぎって↓
+;jpn: カラスどもに くらわせるが@WI(20)↓
+;jpn: よいのだな?@KEY()↓
+;jpn:◆うでを ちぎるぞ。↓
+;jpn: よいのだな?@WI(20)↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_RAMA_GHOST_2_YES,MSG_RAMA_GHOST_NO)
 @GOTO(MSG_RAMA_GHOST_NO)
@@ -766,20 +766,20 @@ _RAMA_GHOST_2_YES;
 
 MSG_RAMA_GHOST_3;
 @OPEN(1)
-◆Ａｈ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．．．@KEY()↓
-◆Ｗｉｔｈｏｕｔ　ｌｅｇｓ　ａｎｄ　ａｒｍｓ，　ｙｏｕ　ｃａｎ　ｏｎｌｙ　ｌｉｅ　ｔｈｅｒｅ．．．@KEY()↓
-◆Ｎｏｗ，　Ｉ’ｌｌ　ｃｕｔ　ｙｏｕｒ　ｅａｒｓ　ｏｆｆ．@KEY()↓
-◆Ｙｏｕ　ｄｏ　ｎｏｔ　ｍｉｎｄ　ｍｙ　ｔａｋｉｎｇ　ｙｏｕｒ　ｈｅａｒｉｎｇ　ａｗａｙ，　ｄｏ　ｙｏｕ？@KEY()↓
-◆Ｄｏ　ｙｏｕ　ａｃｃｅｐｔ　ｔｈｉｓ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆はて　さて　@DSP_STS(STS_PC_NAME_POO)おうじ。@WI(20)↓
-;jpn:　あしも　うでもなく↓
-;jpn:　ここに　ころがりつづけるか。@KEY()↓
-;jpn:◆しからば　おまえの　みみをそぐ。@WI(30)↓
-;jpn:　みみを　そいでも　よいな？@KEY()↓
-;jpn:◆おとを　うしなうが　よいな？@KEY()↓
-;jpn:◆みみを　そいでも　よいのだな？@WI(20)↓
-;jpn:　　<はい>　　<いいえ>
+◆Ah, Prince @DSP_NAME(PC_POO)...@KEY()↓
+◆Without legs and arms, you can only lie there...@KEY()↓
+◆Now, I’ll cut your ears off.@KEY()↓
+◆You do not mind my taking your hearing away, do you?@KEY()↓
+◆Do you accept this?↓
+<Yes> <No>
+;jpn:◆はて さて @DSP_STS(STS_PC_NAME_POO)おうじ。@WI(20)↓
+;jpn: あしも うでもなく↓
+;jpn: ここに ころがりつづけるか。@KEY()↓
+;jpn:◆しからば おまえの みみをそぐ。@WI(30)↓
+;jpn: みみを そいでも よいな?@KEY()↓
+;jpn:◆おとを うしなうが よいな?@KEY()↓
+;jpn:◆みみを そいでも よいのだな?@WI(20)↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_RAMA_GHOST_3_YES,MSG_RAMA_GHOST_NO)
 @GOTO(MSG_RAMA_GHOST_NO)
@@ -792,26 +792,26 @@ _RAMA_GHOST_3_YES;
 MSG_RAMA_GHOST_4;
 @MESSAGE_SOUND(3);メッセージ表示音オフ
 @OPEN(1)
-◆（Ｓｏ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．@KEY()↓
-◆Ｎｏ　ｌｅｇｓ，　ｎｏ　ａｒｍｓ　ａｎｄ　ｎｏ　ｓｏｕｎｄ．．．@KEY()↓
-◆Ｂｙ　ｆｌｏａｔｉｎｇ　ｗｏｒｄｓ　ｔｈｒｏｕｇｈ　ｔｈｅ　ａｉｒ，　Ｉ　ｍｕｓｔ　ａｓｋ　ｙｏｕ．．．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｃａｒｅ　ｉｆ　Ｉ　ｔａｋｅ　ｙｏｕｒ　ｅｙｅｓ？@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｌｉｖｅ　ｉｎ　ｅｔｅｒｎａｌ　ｄａｒｋｎｅｓｓ？@KEY()↓
-◆Ｉ　ｓｈａｌｌ　ｓｔｅａｌ　ｙｏｕｒ　ｓｉｇｈｔ．．．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ａｃｃｅｐｔ　ｔｈｉｓ？）↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆これは　これは　@DSP_STS(STS_PC_NAME_POO)おうじ。@WI(20)↓
-;jpn:　あし　うでもなく　おともなし。↓
-;jpn:　そらに　ことばを　うかばせて‥‥@KEY()↓
-;jpn:◆わたしは　おまえに↓
-;jpn:　といかけてみようぞ。@WI(30)↓
-;jpn:　おまえの　まなこを　つぶすが‥‥@KEY()↓
-;jpn:◆それも　よしとするのか？@KEY()↓
-;jpn:◆くらやみのなかに　いきることを↓
-;jpn:　おまえは　のぞむのか？@KEY()↓
-;jpn:◆まなこを　つぶすぞ。@KEY()↓
-;jpn:◆よいな？@WI(20)↓
-;jpn:　　<はい>　　<いいえ>
+◆(So, Prince @DSP_NAME(PC_POO).@KEY()↓
+◆No legs, no arms and no sound...@KEY()↓
+◆By floating words through the air, I must ask you...@KEY()↓
+◆Do you care if I take your eyes?@KEY()↓
+◆Do you want to live in eternal darkness?@KEY()↓
+◆I shall steal your sight...@KEY()↓
+◆Do you accept this?)↓
+<Yes> <No>
+;jpn:◆これは これは @DSP_STS(STS_PC_NAME_POO)おうじ。@WI(20)↓
+;jpn: あし うでもなく おともなし。↓
+;jpn: そらに ことばを うかばせて‥‥@KEY()↓
+;jpn:◆わたしは おまえに↓
+;jpn: といかけてみようぞ。@WI(30)↓
+;jpn: おまえの まなこを つぶすが‥‥@KEY()↓
+;jpn:◆それも よしとするのか?@KEY()↓
+;jpn:◆くらやみのなかに いきることを↓
+;jpn: おまえは のぞむのか?@KEY()↓
+;jpn:◆まなこを つぶすぞ。@KEY()↓
+;jpn:◆よいな?@WI(20)↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_RAMA_GHOST_4_YES,MSG_RAMA_GHOST_NO)
 @GOTO(MSG_RAMA_GHOST_NO)
@@ -823,46 +823,46 @@ _RAMA_GHOST_4_YES;
 
 MSG_RAMA_GHOST_5;
 @OPEN(1)
-◆（Ｓｏ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)．@KEY()↓
-◆Ｎｏｗ，　Ｉ　ｃａｎ　ｏｎｌｙ　ｃｏｍｍｕｎｉｃａｔｅ　ｄｉｒｅｃｔｌｙ　ｗｉｔｈ　ｙｏｕｒ　ｍｉｎｄ．@KEY()↓
-◆Ｙｏｕｒ　ｍｉｎｄ　ｉｓ　ａｌｌ　ｙｏｕ　ｈａｖｅ　ｌｅｆｔ．．．@KEY()↓
-◆Ｉｎ　ｔｈｅ　ｅｎｄ，　Ｉ　ｗｉｌｌ　ｔａｋｅ　ｙｏｕｒ　ｍｉｎｄ，@KEY()↓
-◆ｔｈｏｕｇｈ　ｙｏｕ　ｐｒｏｂａｂｌｙ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ　ａｌｌｏｗ　ｔｈａｔ，　ｄｏ　ｙｏｕ？@KEY()↓
-◆Ｓｏ．．．ｙｏｕ　ｃａｎ’ｔ　ａｎｓｗｅｒ？　　Ｙｏｕ　ｃａｎ’ｔ　ｅｖｅｎ　ｍｏｖｅ？@KEY()↓
-◆Ａｒｅ　ｙｏｕ　ｓａｄ，　ａｒｅ　ｙｏｕ　ｌｏｎｅｌｙ？@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｌｏｓｅ　ｙｏｕｒ　ｍｉｎｄ，　ｙｏｕ　ａｌｓｏ　ｌｏｓｅ　ａｎｙ　ｆｅｅｌｉｎｇｓ　ｏｆ　ｓａｄｎｅｓｓ．．．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ａｃｃｅｐｔ　ｔｈｉｓ？@KEY()↓
-◆Ｉ　ｗｉｌｌ　ｔａｋｅ　ｙｏｕｒ　ｍｉｎｄ，　Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)，@KEY()↓
-◆ｋｎｏｗ　ｔｈａｔ　Ｉ　ｗｉｌｌ　ｐｏｓｓｅｓｓ　ｉｔ．．．）
-;jpn:◆（もう‥‥@DSP_STS(STS_PC_NAME_POO)おうじ！↓
-;jpn:　おまえのこころに　じかに↓
-;jpn:　といかけることしか@KEY()↓
+◆(So, Prince @DSP_NAME(PC_POO).@KEY()↓
+◆Now, I can only communicate directly with your mind.@KEY()↓
+◆Your mind is all you have left...@KEY()↓
+◆In the end, I will take your mind,@KEY()↓
+◆though you probably don’t want to allow that, do you?@KEY()↓
+◆So...you can’t answer?  You can’t even move?@KEY()↓
+◆Are you sad, are you lonely?@KEY()↓
+◆If you lose your mind, you also lose any feelings of sadness...@KEY()↓
+◆Do you accept this?@KEY()↓
+◆I will take your mind, Prince @DSP_NAME(PC_POO),@KEY()↓
+◆know that I will possess it...)
+;jpn:◆(もう‥‥@DSP_STS(STS_PC_NAME_POO)おうじ!↓
+;jpn: おまえのこころに じかに↓
+;jpn: といかけることしか@KEY()↓
 ;jpn:◆できなくなってしまった。@WI(20)↓
-;jpn:　もはや　おまえには↓
-;jpn:　こころしか　のこっておらぬ。@KEY()↓
-;jpn:◆さいごに　こころを↓
-;jpn:　うばいとるが　それだけは↓
-;jpn:　おまえにも　ゆるせまい？@KEY()↓
-;jpn:◆はて‥‥@WI(15)へんじもできぬ？↓
-;jpn:　うごくことも　できぬのか？@WI(20)↓
-;jpn:　かなしいか。@WI(15)さみしいか。@KEY()↓
+;jpn: もはや おまえには↓
+;jpn: こころしか のこっておらぬ。@KEY()↓
+;jpn:◆さいごに こころを↓
+;jpn: うばいとるが それだけは↓
+;jpn: おまえにも ゆるせまい?@KEY()↓
+;jpn:◆はて‥‥@WI(15)へんじもできぬ?↓
+;jpn: うごくことも できぬのか?@WI(20)↓
+;jpn: かなしいか。@WI(15)さみしいか。@KEY()↓
 ;jpn:◆つらいか。@WI(15)せつないか。@WI(20)↓
-;jpn:　こころをうばわれたなら↓
-;jpn:　かなしみさえも　うしなうのだぞ。@KEY()↓
-;jpn:◆よいのか？！@WI(30)↓
-;jpn:　こころを　うばいとるぞ！@WI(15)↓
-;jpn:　@DSP_STS(STS_PC_NAME_POO)！@WI(20)　こころを　とるぞ！
+;jpn: こころをうばわれたなら↓
+;jpn: かなしみさえも うしなうのだぞ。@KEY()↓
+;jpn:◆よいのか?!@WI(30)↓
+;jpn: こころを うばいとるぞ!@WI(15)↓
+;jpn: @DSP_STS(STS_PC_NAME_POO)!@WI(20) こころを とるぞ!
 @KEY()@WI(20)
 @CLOSEALL()
 @SETF(FLG_RAMA_OK)
 ;@SETF(FLG_PHOTO_RAMMA);撮り頃フラグ
-@HP_UP(PC_POO,100);ＨＰ回復
+@HP_UP(PC_POO,100);HP回復
 @MESSAGE_SOUND(1);メッセージ表示音通常に
 @SETF(FLG_RAMA_258_DISAPPEAR);話してなくても幻老人消える
 』
 
 MSG_RAMA_TRAINING1;@MiuraAppended
-;◆（あしが　おれた）@KEY()
+;◆(あしが おれた)@KEY()
 @SELECT_WIN( 1 )
 @CLOSE()
 @SE(SE_se3f_b_pk_thunder4)
@@ -876,7 +876,7 @@ MSG_RAMA_TRAINING1;@MiuraAppended
 』
 
 MSG_RAMA_TRAINING2;
-;◆（うでが　ちぎれた）@KEY()
+;◆(うでが ちぎれた)@KEY()
 @SELECT_WIN( 1 )
 @CLOSE()
 @SE(SE_se3f_b_pk_thunder4)
@@ -890,36 +890,36 @@ MSG_RAMA_TRAINING2;
 』
 
 MSG_RAMA_TRAINING3;
-;◆（みみが　そがれた）@KEY()
+;◆(みみが そがれた)@KEY()
 @SELECT_WIN( 1 )
 @CLOSE()
 @SE(SE_se3f_b_pk_thunder4)
 @WI( 10 )
 @SE(SE_se3d_b_pk_thunder2)
 @WI( 90 )
-@BGM_EFFECT( 2 )	;ＢＧＭフェードアウト短め
+@BGM_EFFECT( 2 )	;BGMフェードアウト短め
 @BGMSTOP(0)
 』
 
 MSG_RAMA_TRAINING4;
-;◆（めが　つぶれた）@KEY()
+;◆(めが つぶれた)@KEY()
 @CLOSEALL()
 』
 
 MSG_RAMA_MESSENGER_OK;
 @OPEN(1)
-◆Ｐｒｉｎｃｅ　@DSP_NAME(PC_POO)！@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｎｏｗ　ｃｏｍｐｌｅｔｅｄ　ｙｏｕｒ　ｔｒａｉｎｉｎｇ！@KEY()↓
-◆Ｔｈｅ　ｏｌｄ　Ｍａｓｔｅｒ　ｍｕｓｔ　ｂｅ　ｓｏ　ｐｌｅａｓｅｄ！@KEY()↓
-◆Ｈｕｒｒｙ，　ｎｏｗ，　ａｎｄ　ｒｅｔｕｒｎ　ｔｏ　ｔｈｅ　ｐａｌａｃｅ．
-;jpn:◆おお　@DSP_STS(STS_PC_NAME_POO)おうじさま！@WI(20)↓
-;jpn:　みごと　しゅぎょうを↓
-;jpn:　おえられましたな！@KEY()↓
+◆Prince @DSP_NAME(PC_POO)!@KEY()↓
+◆You have now completed your training!@KEY()↓
+◆The old Master must be so pleased!@KEY()↓
+◆Hurry, now, and return to the palace.
+;jpn:◆おお @DSP_STS(STS_PC_NAME_POO)おうじさま!@WI(20)↓
+;jpn: みごと しゅぎょうを↓
+;jpn: おえられましたな!@KEY()↓
 ;jpn:◆イースーチーろうしも↓
-;jpn:　およろこびで　ございましょう。@KEY()↓
-;jpn:◆ささ　すぐに↓
-;jpn:　すぐに　きゅうでんに↓
-;jpn:　おかえりくださいませ！
+;jpn: およろこびで ございましょう。@KEY()↓
+;jpn:◆ささ すぐに↓
+;jpn: すぐに きゅうでんに↓
+;jpn: おかえりくださいませ!
 @KEY()
 @CLOSEALL()
 』
@@ -957,22 +957,22 @@ MSG_SUMS_PU;
 ;もやとともに登場し、もやが消えると「はなす」ができるように
 ;なってパーティに加わる。
 @OPEN(1)
-◆Ｍｙ　ｎａｍｅ　ｉｓ　@DSP_NAME(PC_POO)．@KEY()↓
-◆Ｉ　ａｍ　ｔｈｅ　ｏｎｅ　ｗｈｏ　ｗｉｌｌ　ｆｉｇｈｔ　ｂｅｓｉｄｅ　ｙｏｕ．@KEY()↓
-◆Ｉ　ａｍ　ｔｈｅ　ｓｅｒｖａｎｔ　ｏｆ　@DSP_NAME(PC_NESS)．@KEY()↓
-◆Ｉ　ｗｉｌｌ　ｏｂｅｙ　@DSP_NAME(PC_NESS)．@KEY()↓
-◆@DSP_NAME(PC_NESS)！↓
-　　Ｍｙ　ｌｉｆｅ　ｉｓ　ｉｎ　ｙｏｕｒ　ｈａｎｄｓ．
-;jpn:◆おれのなは　@DSP_STS(STS_PC_NAME_POO)。↓
-;jpn:　きみたちと　ともに↓
-;jpn:　たたかうものだ。@KEY()↓
-;jpn:◆おれは　@DSP_STS(STS_PC_NAME_NES)に　したがう。↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)の　しもべなのだ。@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)！↓
-;jpn:　おれの　いのちを↓
-;jpn:　あずけたぞ。
+◆My name is @DSP_NAME(PC_POO).@KEY()↓
+◆I am the one who will fight beside you.@KEY()↓
+◆I am the servant of @DSP_NAME(PC_NESS).@KEY()↓
+◆I will obey @DSP_NAME(PC_NESS).@KEY()↓
+◆@DSP_NAME(PC_NESS)!↓
+  My life is in your hands.
+;jpn:◆おれのなは @DSP_STS(STS_PC_NAME_POO)。↓
+;jpn: きみたちと ともに↓
+;jpn: たたかうものだ。@KEY()↓
+;jpn:◆おれは @DSP_STS(STS_PC_NAME_NES)に したがう。↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)の しもべなのだ。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)!↓
+;jpn: おれの いのちを↓
+;jpn: あずけたぞ。
 @KEY()
-@SET_LOOPREG(PC_NESS)			;ネスのＩＤを主レジに格納
+@SET_LOOPREG(PC_NESS)			;ネスのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_SUMS_PU_DEAD)
 @CLOSEALL()
@@ -984,13 +984,13 @@ MSG_SUMS_PU;
 』
 _SUMS_PU_DEAD;
 ←
-◆．．．@KEY()↓
-◆Ｉ　ｊｕｓｔ　ｃｏｍｍｕｎｉｃａｔｅｄ　ｗｉｔｈ　@DSP_NAME(PC_NESS)’ｓ　ｓｏｕｌ．@KEY()↓
-◆Ｄｏ　ｎｏｔ　ｍｉｎｄ　ｍｅ．．．
+◆...@KEY()↓
+◆I just communicated with @DSP_NAME(PC_NESS)’s soul.@KEY()↓
+◆Do not mind me...
 ;jpn:◆‥‥‥。@KEY()↓
-;jpn:◆おれは　いま↓;ネス死にのときは最後が変化
-;jpn:　@DSP_STS(STS_PC_NAME_NES)の　たましいに↓
-;jpn:　よびかけたんだ。@KEY()↓
+;jpn:◆おれは いま↓;ネス死にのときは最後が変化
+;jpn: @DSP_STS(STS_PC_NAME_NES)の たましいに↓
+;jpn: よびかけたんだ。@KEY()↓
 ;jpn:◆きにしないでくれ。
 @KEY()
 @CLOSEALL()
@@ -1002,7 +1002,7 @@ _SUMS_PU_DEAD;
 ;----------------------------------
 
 
-;#81	ビーナスのステージ（２回目）
+;#81	ビーナスのステージ(２回目)
 
 ;★特殊イベント３２番の「トンズラステージ」と基本的には同じ。
 ;ビーナスが登場して歌い、袖に引っ込む。
@@ -1016,12 +1016,12 @@ _SUMS_PU_DEAD;
 ;#82	マグネットヒルへ続く下水の蓋を開ける	-	-
 
 ;●絵の問題として、マンホールのフタを移動させるのが難しい
-;とのことで（大山談）、現在はその手前の扉をあけるという設定に変わっています。
+;とのことで(大山談)、現在はその手前の扉をあけるという設定に変わっています。
 
 ;---------------------------------------------------------------------------
 
 
-;#83	●タッシー（２回目）
+;#83	●タッシー(２回目)
 
 ;バルモンとの会話で以下を実行
 
@@ -1045,22 +1045,22 @@ _UZU_ALREADY_APPEAR
 @BGMSTART(0,BGM_msc15)
 @FRESH_CHAR(PRSN_WINS_FIELD_4A)
 @FRESH_CHAR(PRSN_WINS_FIELD_4B)
-@HIDE_CHAR(PRSN_WINS_FIELD_E,OBJFX_HIDE_NONE)　　　　　　　　;バルモン消す
+@HIDE_CHAR(PRSN_WINS_FIELD_E,OBJFX_HIDE_NONE)        ;バルモン消す
 @MOVE_GOM_CHAR(GOM_BMONKEY_GUM,ANIM_BMONKEY_GUM,OBJFX_SHOW_NONE)
 @WAITSYS()
 @HIDE_GOM_CHAR(GOM_BMONKEY_GUM,OBJFX_HIDE_NONE)
 @MOVE_GOM_CHAR(GOM_BMONKEY_FLY,ANIM_BMONKEY_TASSI_1A,OBJFX_SHOW_NONE);浮遊猿
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;移動待ち
-@MOVE_GOM_CHAR(GOM_TACY_2,ANIM_TASSI_1,OBJFX_SHOW_NONE)　　　　　　;タッシー登場
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;浮き待ち
+@WAITSYS()                              ;移動待ち
+@MOVE_GOM_CHAR(GOM_TACY_2,ANIM_TASSI_1,OBJFX_SHOW_NONE)      ;タッシー登場
+@WAITSYS()                              ;浮き待ち
 @RESF(FLG_TEMP_1)
 @HIDE_GOM_CHAR(GOM_BMONKEY_FLY,OBJFX_HIDE_NONE)
 @MOVE_GOM_CHAR(GOM_BMONKEY,ANIM_BMONKEY_TASSI_1B,OBJFX_SHOW_NONE);猿はタッシーの頭に
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;さらに浮き待ち
+@WAITSYS()                              ;さらに浮き待ち
 @COLD_GOM_CHAR(GOM_TACY_2)
 @COLD_GOM_CHAR(GOM_BMONKEY)
 ;
-@RESF(FLG_WINS_TASSI_ENTER)　　　　　;画面外に出たうずが再度発生しないように
+@RESF(FLG_WINS_TASSI_ENTER)     ;画面外に出たうずが再度発生しないように
                                 ;かつ、木の葉を消すため
 @HIDE_CHAR(PRSN_WINS_FIELD_3A,OBJFX_HIDE_NONE)		;タッシーのマスク消し
 @HIDE_CHAR(PRSN_WINS_FIELD_3B,OBJFX_HIDE_NONE)
@@ -1072,7 +1072,7 @@ _UZU_ALREADY_APPEAR
 ;
 @FRESH_GOM_CHAR(GOM_BMONKEY)
 @FRESH_GOM_CHAR(GOM_TACY_2)
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;タッシー岸に近づき右キー入力待つ
+@WAITSYS()                              ;タッシー岸に近づき右キー入力待つ
 @COLD_GOM_CHAR(GOM_TACY_2)
 @SETF(FLG_BGM_TASSY)
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
@@ -1083,23 +1083,23 @@ _UZU_ALREADY_APPEAR
 @WI(1)
 @SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;乗り込み待ち
+@WAITSYS()                              ;乗り込み待ち
 ;
-@SETF(FLG_TEMP_1)　　　　　　　　　　　　　　　　　　　　　　　;バルモンが前を向くフラグ設定
+@SETF(FLG_TEMP_1)                       ;バルモンが前を向くフラグ設定
 @WI(60)
-@FRESH_GOM_CHAR(GOM_TACY_2)　　　　　　　　　　　　　;タッシー出発
+@FRESH_GOM_CHAR(GOM_TACY_2)             ;タッシー出発
 ;
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;タッシー岸に近づき左キー入力待つ
+@WAITSYS()                              ;タッシー岸に近づき左キー入力待つ
 @COLD_GOM_CHAR(GOM_TACY_2)
-@REMOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_OUT_TASSI_1)　　;タッシーから降りる人
-@RESF(FLG_TEMP_1)　　　　　　　　　　　　　　　　　　　　　　　;バルモンのアニメ変更
+@REMOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_OUT_TASSI_1)  ;タッシーから降りる人
+@RESF(FLG_TEMP_1)                       ;バルモンのアニメ変更
 @WAITSYS()
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
 @WI(60)
 ;
-@FRESH_GOM_CHAR(GOM_TACY_2)　　　　　　　　　　　　　;タッシー離れる
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+@FRESH_GOM_CHAR(GOM_TACY_2)             ;タッシー離れる
+@WAITSYS()                              
 ;
 @HIDE_GOM_CHAR(GOM_TACY_2,OBJFX_HIDE_NONE)
 ;
@@ -1111,7 +1111,7 @@ _UZU_ALREADY_APPEAR
 』
 
 ;-------------------------------------------------
-;#84	●基地機能の破壊（人々の救出）
+;#84	●基地機能の破壊(人々の救出)
 ;FLG_WIN_GANSEKIMAN/on	R4	9.5s	3.3s->yure
 
 MSG_READ_WINS_MACHINE;戦闘後のメッセージから呼ばれる
@@ -1135,11 +1135,11 @@ MSG_READ_WINS_MACHINE;戦闘後のメッセージから呼ばれる
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-◆Ｗｈｅｎ　ｙｏｕ　ｄｅｆｅａｔｅｄ　ｔｈｅ　Ｓｔａｒｍａｎ　ＤＸ，　ｔｈｅ　Ｓｔｏｎｅｈｅｎｇｅ　ｂａｓｅ　ｃｅａｓｅｄ　ｆｕｎｃｔｉｏｎｉｎｇ．
+◆When you defeated the Starman DX, the Stonehenge base ceased functioning.
 ;jpn:◆@DSP_NAME(0)たちが↓
-;jpn:　ＤＸスターマンを　たおすと@KEY()↓
+;jpn: DXスターマンを たおすと@KEY()↓
 ;jpn:◆ストーンヘンジきちは↓
-;jpn:　きのうを　ていしした。
+;jpn: きのうを ていしした。
 @KEY()
 @CLOSEALL()
 @SETF(FLG_WIN_GANSEKIMAN)
@@ -1205,7 +1205,7 @@ _EVT_85_ONBOARD_A;
 @MOVE_GOM_CHAR( GOM_KURAKEN, ANIM_EVT_KRAKEN_APPROACH, OBJFX_SHOW_NONE )
 @WAITSYS()	;for ANIM_EVT_KRAKEN_APPROACH
 
-;クラーケンと接触（スカラビ経験があっても接触する）
+;クラーケンと接触(スカラビ経験があっても接触する)
 _EVT_85_ONBOARD_B;
 @COLD_GOM_CHAR( GOM_SHIP_SMALL )
 @CHKFGOTO( FLG_TLPT_SKRB, _EVT_85_ONBOARD_C )	;スカラビに一度でも行ってたら
@@ -1215,30 +1215,30 @@ _EVT_85_ONBOARD_B;
 ;バトル後に再開するので要らぬ @MUSISTART()
 ;-----------
 @OPEN(1)
-◆Ｈ．．．．ｈ．．．．ｈｅｒｅ　ｉｔ　ｃｏｏｏｏｍｅｓ！
-;jpn:◆で@WI(10)　で@WI(10)　で@WI(10)　で@WI(10)　で@WI(15)↓
-;jpn:　どぇえーーーーーーたぁあああ！！
+◆H....h....here it coooomes!
+;jpn:◆で@WI(10) で@WI(10) で@WI(10) で@WI(10) で@WI(15)↓
+;jpn: どぇえーーーーーーたぁあああ!!
 @KEY()↓
 @CLOSEALL()
 @GOSUB(MSG_BATTLE_SKRB_KRAKEN)		;クラーケンとのバトル
 @TRUE_GOTO(_EVT_85_ONBOARD_LOSE)
-@REMOVE_GOM_CHAR( GOM_KURAKEN, ANIM_BLINK_SUICIDE )	;（高）倉建消滅
+@REMOVE_GOM_CHAR( GOM_KURAKEN, ANIM_BLINK_SUICIDE )	;(高)倉建消滅
 @WI(60)
 @OPEN(1)
-◆Ｈ．．．．ｈ．．．．ｈｅｒｅ　ｉｔ　ｃｏｏｏｏｍｅｓ！@KEY()↓
-◆Ｏｈ，　ｍａｎ！@KEY()↓
-◆Ｉ　ｔｈｏｕｇｈｔ　ｙｏｕ　ｇｕｙｓ　ｗｅｒｅ　ｊｕｓｔ　ｅｖｅｒｙｄａｙ　ｌｉｔｔｌｅ　ｋｉｄｓ，@KEY()↓
-◆ｂｕｔ　ｙｏｕ　ｄｅｆｅａｔｅｄ　ｔｈｅ　Ｋｒａｋｅｎ！@KEY()↓
-◆Ｉ　ａｌｓｏ　ｈｅｌｐｅｄ　ｉｎ　ｔｈｅ　ｂａｔｔｌｅ．．．@KEY()↓
-◆Ｉ　ｔｈｒｅｗ　ｍｙ　ｓｌｉｐｐｅｒｓ　ａｔ　ｔｈｅ　ｂｅａｓｔ．．．@KEY()↓
-◆Ｍａｙｂｅ　ｙｏｕ　ｄｉｄｎ’ｔ　ｎｏｔｉｃｅ．
-;jpn:◆‥‥ふんとに　まあ！↓
-;jpn:　あんたら　こどもだとおもったが@KEY()↓
-;jpn:◆あの　クラーケンを↓
-;jpn:　やっつけちまうとは！@KEY()↓
-;jpn:◆おれも　スリッパをぶつけて↓
-;jpn:　たたかいに　さんかしたんだけど↓
-;jpn:　‥‥きがつかなかったよね。
+◆H....h....here it coooomes!@KEY()↓
+◆Oh, man!@KEY()↓
+◆I thought you guys were just everyday little kids,@KEY()↓
+◆but you defeated the Kraken!@KEY()↓
+◆I also helped in the battle...@KEY()↓
+◆I threw my slippers at the beast...@KEY()↓
+◆Maybe you didn’t notice.
+;jpn:◆‥‥ふんとに まあ!↓
+;jpn: あんたら こどもだとおもったが@KEY()↓
+;jpn:◆あの クラーケンを↓
+;jpn: やっつけちまうとは!@KEY()↓
+;jpn:◆おれも スリッパをぶつけて↓
+;jpn: たたかいに さんかしたんだけど↓
+;jpn: ‥‥きがつかなかったよね。
 @KEYNP()
 @CLOSEALL()
 @WI(1)
@@ -1281,70 +1281,70 @@ _EVT_85_ONBOARD_LOSE;クラーケンに負けた時の追加処理
 
 MSG_EVT_SAILOR_CHAT;トトの船乗り
 @OPEN(1)
-◆ＷＡＡＡＡＩＴ！　Ｗａｉｔ！　Ｗａｉｔ．．．@KEY()↓
-◆Ｉ　ｎｅｅｄ　ｔｏ　ｓｔｏｐ　ｔｈｅ　ｂｏａｔ．@KEY()↓
-◆Ｉｔ’ｓ　ｂｅｅｎ　ａ　ｌｏｎｇ　ｔｉｍｅ　ｓｉｎｃｅ　Ｉ　ｗａｓ　ｏｕｔ　ｏｎ　ｔｈｅ　ｏｐｅｎ　ｓｅａ，@KEY()↓
-◆ｓｏ　Ｉ　ｆｅｅｌ　ｓｅａ　ｓｉｃｋ．．．@KEY()↓
-◆Ｏｈ，　ｍａｎ，　ｗｈａｔ　ａｍ　Ｉ　ｇｏｉｎｇ　ｔｏ　ｄｏ？　　Ａ　ｓａｉｌｏｒ　ｗｈｏ　ｇｅｔｓ　ｓｅａｓｉｃｋ？@KEY()↓
-;jpn:◆ちょっ@WI(20)　と！@WI(30)↓
-;jpn:　ふねを　とめさせてくれ。@KEY()↓
+◆WAAAAIT! Wait! Wait...@KEY()↓
+◆I need to stop the boat.@KEY()↓
+◆It’s been a long time since I was out on the open sea,@KEY()↓
+◆so I feel sea sick...@KEY()↓
+◆Oh, man, what am I going to do?  A sailor who gets seasick?@KEY()↓
+;jpn:◆ちょっ@WI(20) と!@WI(30)↓
+;jpn: ふねを とめさせてくれ。@KEY()↓
 ;jpn:◆ひさしぶりなんで@WI(15)↓
-;jpn:　‥‥ふなよいしちまって。@KEY()↓
-;jpn:◆ふなのりが　ふなよいするようじゃ↓
-;jpn:　どうしようもねぇんだけどね。
+;jpn: ‥‥ふなよいしちまって。@KEY()↓
+;jpn:◆ふなのりが ふなよいするようじゃ↓
+;jpn: どうしようもねぇんだけどね。
 @KEY()↓
 @WI(60)↓
-◆Ｓｏ　ｈｏｗ　ｃｏｍｅ　ｙｏｕ　ｇｕｙｓ　ａｒｅ　ａｌｌ　ｒｉｇｈｔ？
+◆So how come you guys are all right?
 ;jpn:◆あんたら‥‥@WI(15)↓
-;jpn:　よく　ふなよいしないね。
+;jpn: よく ふなよいしないね。
 @KEY()↓
 @CHKFGOTO(FLG_WIN_GIEGU,_EVT_SAILOR_CHAT_MAIN);合流
 @CHKFGOTO(FLG_PU_0,_EVT_SAILOR_CHKF)
 
 _EVT_SAILOR_TURURIN;
-◆Ｓｏ．．．ｔｈａｔ　ｂａｌｄ　ｇｕｙ　ｏｖｅｒ　ｔｈｅｒｅ．．．@KEY()↓
-◆ｙｏｕｒ　ｂｕｄｄｙ，　ｒｉｇｈｔ？．．．Ｈｅ　ｃａｍｅ　ｆｒｏｍ　Ｄａａｌａｍ？@KEY()↓
-◆Ｙｏｕ　ｇｕｙｓ　ｍｕｓｔ　ｂｅ　ｑｕｉｔｅ　ｔｈｅ　ａｄｖｅｎｔｕｒｅｒｓ！
-;jpn:◆ほー　そっちの↓
-;jpn:　あたまツルリンの　おきゃくさんは↓
-;jpn:　ランマから　きたってか！@KEY()↓
-;jpn:◆ずいぶんと　ぼうけんかだねぇ！
+◆So...that bald guy over there...@KEY()↓
+◆your buddy, right?...He came from Daalam?@KEY()↓
+◆You guys must be quite the adventurers!
+;jpn:◆ほー そっちの↓
+;jpn: あたまツルリンの おきゃくさんは↓
+;jpn: ランマから きたってか!@KEY()↓
+;jpn:◆ずいぶんと ぼうけんかだねぇ!
 @KEY()↓
 @CHKFGOTO(FLG_POWR_PINK,_EVT_SAILOR_CHAT_MAIN)
 
 ;ピンククラウドを取っていない場合
-◆Ａｒｅｎ’ｔ　ｔｈｅｒｅ　ｔｉｍｅｓ　ｗｈｅｎ　ｙｏｕ’ｄ　ｊｕｓｔ　ｌｉｋｅ　ｔｏ　ｇｏ　ｂａｃｋ　ｈｏｍｅ？@KEY()↓
-◆Ｓｏ，　ｙｏｕ’ｒｅ　ｎｏｔ　ｓｏｍｅ　ｍａｍａ’ｓ　ｂｏｙ．．．@KEY()↓
-◆Ｗｅｌｌ，　ｉｔ　ｗｏｕｌｄｎ’ｔ　ｈｕｒｔ　ｙｏｕ　ｔｏ　ｇｏ　ｂａｃｋ　ａｎｄ　ｖｉｓｉｔ　ｏｎｃｅ　ｉｎ　ａ　ｗｈｉｌｅ．
-;jpn:◆たまには　さとがえりも↓
-;jpn:　したくなるだろうねぇ。@KEY()↓
-;jpn:◆‥‥そんな　やわじゃねぇってか！@WI(20)↓
-;jpn:　でも　ときには　ふるさとに↓
-;jpn:　かえっても　バチはあたらねぇよ。
+◆Aren’t there times when you’d just like to go back home?@KEY()↓
+◆So, you’re not some mama’s boy...@KEY()↓
+◆Well, it wouldn’t hurt you to go back and visit once in a while.
+;jpn:◆たまには さとがえりも↓
+;jpn: したくなるだろうねぇ。@KEY()↓
+;jpn:◆‥‥そんな やわじゃねぇってか!@WI(20)↓
+;jpn: でも ときには ふるさとに↓
+;jpn: かえっても バチはあたらねぇよ。
 @KEY()↓
 @Q_HAVE(PC_ALL,GDS_TOOL_KEY_CARROT)@FALSE_GOTO(_EVT_SAILOR_CHAT_MAIN)
 
 ;人参を持っていたら‥‥
-◆Ｈｅｙ，　ｔｈａｔ’ｓ　ａｎ　ａｗｆｕｌｌｙ　ｓｔｒａｎｇｅ　ｃａｒｒｏｔ．@KEY()↓
-◆Ｗｈａｔ　ｋｉｎｄ　ｏｆ　ｂｕｎｎｙ　ｗｏｕｌｄ　ｅａｔ　ｔｈａｔ？
-;jpn:◆ありゃ？　その　にんじんは↓
-;jpn:　ずいぶん　めずらしいねぇ。@WI(20)↓
-;jpn:　‥‥どんなウサギが　くうのやら。
+◆Hey, that’s an awfully strange carrot.@KEY()↓
+◆What kind of bunny would eat that?
+;jpn:◆ありゃ? その にんじんは↓
+;jpn: ずいぶん めずらしいねぇ。@WI(20)↓
+;jpn: ‥‥どんなウサギが くうのやら。
 @KEY()↓
 
 _EVT_SAILOR_CHAT_MAIN;合流
-◆Ｈａｈａｈａ！↓
-　　Ｉ’ｍ　ｆｅｅｌｉｎｇ　ｍｕｃｈ　ｂｅｔｔｅｒ　ｎｏｗ！@KEY()↓
-◆Ａｎｃｈｏｒｓ　ａｗｅｉｇｈ！
-;jpn:◆ハハハ！@WI(20)↓
-;jpn:　おっと↓
-;jpn:　ふなよいも　なおってきた。@KEY()↓
+◆Hahaha!↓
+  I’m feeling much better now!@KEY()↓
+◆Anchors aweigh!
+;jpn:◆ハハハ!@WI(20)↓
+;jpn: おっと↓
+;jpn: ふなよいも なおってきた。@KEY()↓
 ;jpn:◆あらためて↓
-;jpn:　ヨーソロー！
+;jpn: ヨーソロー!
 @KEY()
 @CLOSEALL()
 』
-_EVT_SAILOR_CHKF;プーいる？
+_EVT_SAILOR_CHKF;プーいる?
 @CHKFGOTO(FLG_WIN_GEROPP,_EVT_SAILOR_TURURIN)
 @GOTO(_EVT_SAILOR_CHAT_MAIN)
 
@@ -1374,7 +1374,7 @@ MSG_SKRB_SWITCH_01;			;ピラミッドのスイッチ
 @CHKFGOTO(FLG_SPHINX_OK,_SKRB_SWITCH_DONE)
 @CHKFGOTO(FLG_TEMP_6,_SKRB_SWITCH_01_TMP)
 @GOSUB(MSG_SKRB_SPHINX)			;スフィンクスのセリフ
-_SKRB_SWITCH_01_TMP;			;　　　　は最初だけ
+_SKRB_SWITCH_01_TMP;			;    は最初だけ
 @CHKFGOTO(FLG_SPHINX,_SWITCH_01_1)
 _SKRB_SWITCH_NOTHING;
 @!
@@ -1476,24 +1476,24 @@ _SKRB_SWITCH_DONE;
 @!
 
 MSG_SKRB_PYRAMID_DOOR;
-◆（Ｔｈｅ　ｄｏｏｒ　ｏｆ　ｔｈｅ　ｐｙｒａｍｉｄ　ｉｓ　ｆｉｒｍｌｙ　ｓｅａｌｅｄ．．．）
-;jpn:◆（ピラミッドのとびらは↓
-;jpn:　かたく　とざされている‥‥）
+◆(The door of the pyramid is firmly sealed...)
+;jpn:◆(ピラミッドのとびらは↓
+;jpn: かたく とざされている‥‥)
 @KEYNP()
 @!
 
-MSG_SKRB_PYRAMID_SWITCH;	;棺を動かすスイッチ（オートメッセージ）
+MSG_SKRB_PYRAMID_SWITCH;	;棺を動かすスイッチ(オートメッセージ)
 @CHKFGOTO(FLG_SKRB_PYRAMID_OK,_PYRA_SWITCH_DONE)
 @OPEN(1)
-◆（Ｓｏｍｅｏｎｅ　ｍｕｓｔ　ｈａｖｅ　ｓｔｅｐｐｅｄ　ｏｎ　ａ　ｓｗｉｔｃｈ！）
-;jpn:◆（なにか　スイッチを↓
-;jpn:　ふんだようだ。
+◆(Someone must have stepped on a switch!)
+;jpn:◆(なにか スイッチを↓
+;jpn: ふんだようだ。
 @KEY()↓
 @SE(SE_se75_my_check)
-◆（Ｉｔ　ｓｏｕｎｄｓ　ｌｉｋｅ　ｓｏｍｅｔｈｉｎｇ　ｕｐ　ａｂｏｖｅ　ｉｓ　ｍｏｖｉｎｇ．）
+◆(It sounds like something up above is moving.)
 ;jpn:◆うえのほうで↓
-;jpn:　なにかが　うごく　↓
-;jpn:　おとがきこえた）
+;jpn: なにかが うごく ↓
+;jpn: おとがきこえた)
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se72)
@@ -1505,17 +1505,17 @@ _PYRA_SWITCH_DONE;
 
 MSG_SKRB_PYRAMID_TAKANOME;
 @CHKFGOTO(FLG_ITEM_TAKANOME,_PYRA_TAKANOME_DONE)
-◆（Ｔｈｅｒｅ　ｉｓ　ｓｏｍｅｔｈｉｎｇ　ｏｎ　ｔｈｅ　ｐｌａｔｆｏｒｍ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｉｔ？）↓
-;jpn:◆（だいざのうえに　なにかある）@KEY()↓
-;jpn:◆（てにいれますか？）↓
+◆(There is something on the platform.@KEY()↓
+◆Do you want to get it?)↓
+;jpn:◆(だいざのうえに なにかある)@KEY()↓
+;jpn:◆(てにいれますか?)↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_PYRA_TAKANOME_YES,_PYRA_TAKANOME_NO)
 _PYRA_TAKANOME_NO;
-◆（Ｗａｓｎ’ｔ　ｉｔ　ｔｈｅ　ｗｈｏｌｅ　ｒｅａｓｏｎ　ｙｏｕ　ｃａｍｅ　ｈｅｒｅ？）
-;jpn:◆（そのために↓
-;jpn:　ここまできたのでは↓
-;jpn:　なかったのか？！）
+◆(Wasn’t it the whole reason you came here?)
+;jpn:◆(そのために↓
+;jpn: ここまできたのでは↓
+;jpn: なかったのか?!)
 @KEYNP()
 @!
 _PYRA_TAKANOME_YES;
@@ -1530,11 +1530,11 @@ _PYRA_TAKANOME_YES;
 @!
 
 _PYRA_TAKANOME_GOODSFULL;
-◆（Ｉｔ’ｓ　ｕｎｂｅｌｉｅｖａｂｌｅ　ｔｈａｔ　ｙｏｕ　ｗｏｕｌｄ　ｇｅｔ　ｔｈｉｓ　ｆａｒ，@KEY()↓
-◆ａｎｄ　ｎｏｔ　ｃｌａｉｍ　ｙｏｕｒ　ｐｒｉｚｅ　ｊｕｓｔ　ｂｅｃａｕｓｅ　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．）
-;jpn:◆（このごにおよんで↓
-;jpn:　もちものがいっぱいで↓
-;jpn:　とれないとは‥‥！！）
+◆(It’s unbelievable that you would get this far,@KEY()↓
+◆and not claim your prize just because you have too much stuff.)
+;jpn:◆(このごにおよんで↓
+;jpn: もちものがいっぱいで↓
+;jpn: とれないとは‥‥!!)
 @KEYNP()
 @!
 
@@ -1544,9 +1544,9 @@ _PYRA_TAKANOME_DONE;
 @!
 
 MSG_SKRB_PRYAMID_BIGCOFFIN;	;下に落とし穴のある棺
-◆（Ｔｈｉｓ　ｃａｓｋｅｔ　ｓｅｅｍｓ　ａ　ｌｉｔｔｌｅ　ｓｕｓｐｉｃｉｏｕｓ．．．）
-;jpn:◆（あまりにも　あやしすぎる↓
-;jpn:　ひつぎだ‥‥）
+◆(This casket seems a little suspicious...)
+;jpn:◆(あまりにも あやしすぎる↓
+;jpn: ひつぎだ‥‥)
 @KEYNP()
 @!
 
@@ -1556,17 +1556,17 @@ MSG_SKRB_PRYAMID_BIGCOFFIN;	;下に落とし穴のある棺
 ;#88	まぼろしの老人	13.4	T
 
 ;★ピラミッドの出口に幻の老人が待ち構えていて、
-;プレイヤーパーティーが接近したら竜巻（オブジェ有り）の中から出現し、
+;プレイヤーパーティーが接近したら竜巻(オブジェ有り)の中から出現し、
 ;セリフ MSG_SKRB_OLDMAN 発行。
 
 ;★このときにパワースポットの「レイニーサークル」と「ピンククラウド」を
 ;クリアしてなかったらプレイヤーパーティーを
-;スカラビのバザールまでテレポートさせる（フラグで設定済み）。
+;スカラビのバザールまでテレポートさせる(フラグで設定済み)。
 
 ;★２つのパワースポットをクリアしていたら _SKRB_OLDMAN_OK で
 ;画面を「ビカビカ」っと光らせて、プーをプレイヤーパーティーから外して
 ;幻の老人の後ろに付け、その後でメッセージ _SKRB_OLDMAN_OK_1 を続ける。
-;★老人のセリフ後、（老人の後ろに付いた）プーが前に出て、
+;★老人のセリフ後、(老人の後ろに付いた)プーが前に出て、
 ;セリフ MSG_SKRB_PU_OLDMAN 発行。
 ;★プーのセリフが終わると、画面効果と共に、老人とプーは消える。
 
@@ -1576,7 +1576,7 @@ MSG_EVT_88_MABOROSHI;
 ;----------
 @SE(SE_se63_teleport_appear)
 ;----------
-@MOVE_GOM_CHAR(GOM_MABOROSHI,ANIM_MABOROSHI_IN,OBJFX_SHOW_NONE)　　　　　　;幻登場
+@MOVE_GOM_CHAR(GOM_MABOROSHI,ANIM_MABOROSHI_IN,OBJFX_SHOW_NONE)      ;幻登場
 @WAITSYS()
 @HIDE_GOM_CHAR(GOM_MABOROSHI,OBJFX_HIDE_NONE)
 @MOVE_GOM_CHAR(GOM_MAGICANTO_OLDMAN,ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE);老人登場
@@ -1586,7 +1586,7 @@ MSG_EVT_88_MABOROSHI;
 ;
 @GOSUB(MSG_SKRB_OLDMAN);老人のセリフ
 @DEL_PARTY(PC_POO)
-@MOVE_GOM_CHAR(GOM_POO,ANIM_POO_TO_OLDMAN,OBJFX_SHOW_NONE)　　　;プー移動
+@MOVE_GOM_CHAR(GOM_POO,ANIM_POO_TO_OLDMAN,OBJFX_SHOW_NONE)   ;プー移動
 @WAITSYS()
 @COLD_GOM_CHAR(GOM_POO)
 @GOTO(MSG_SKRB_OLDMAN_0);セリフ再開
@@ -1597,17 +1597,17 @@ MSG_EVT_88_MABOROSHI_PU;
 ;@SET_PLAYER_DIR(PC_POO,0)
 ;
 @GOSUB(MSG_SKRB_PU_OLDMAN);セリフ…
-@FRESH_GOM_CHAR(GOM_POO)　　　　　　　　　　　　　　　　　　　　　　　　;プーは老人の後ろへ
+@FRESH_GOM_CHAR(GOM_POO)                        ;プーは老人の後ろへ
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_POO )		;台詞中のプーの足踏みを止める
 @SET_GOM_CHAR_DIR(GOM_POO,DIR_M_UP)	;プー上を向く
 @GOSUB(MSG_SKRB_OLDMAN_OK_1);老人のセリフ…「◆プーの努力次第では・・・」
-@HIDE_GOM_CHAR(GOM_MAGICANTO_OLDMAN,OBJFX_HIDE_NONE)　;老人退場
+@HIDE_GOM_CHAR(GOM_MAGICANTO_OLDMAN,OBJFX_HIDE_NONE) ;老人退場
 ;----------
 @SE(SE_se63_teleport_appear)
 ;----------
 @MOVE_GOM_CHAR(GOM_MABOROSHI,ANIM_MABOROSHI_OUT_1,OBJFX_SHOW_NONE)
-@HIDE_GOM_CHAR(GOM_POO,OBJFX_HIDE_NONE)　　　　　　　　　　　　　　;プー退場
+@HIDE_GOM_CHAR(GOM_POO,OBJFX_HIDE_NONE)              ;プー退場
 @MOVE_GOM_CHAR(GOM_MABOROSHI,ANIM_MABOROSHI_OUT_2,OBJFX_SHOW_NONE)
 @WAITSYS()
 ;@GOTO(MSG_GLOBAL_POWERSAVE_SKRB)
@@ -1626,16 +1626,16 @@ MSG_SKRB_PU_OLDMAN;
 ;プーのセリフ
 @SET_GOM_CHAR_DIR(GOM_POO,DIR_M_UP)	;プー上を向く
 @OPEN(1)
-◆Ｉｔ　ｉｓ　ｉｍｐｏｒｔａｎｔ　ｔｈａｔ　Ｉ　ｓｔｕｄｙ　ａｎｄ　ｌｅａｒｎ　ｔｈｅ　”Ｓｔａｒｓｔｏｒｍ”@KEY()↓
-◆ｔｅｃｈｎｉｑｕｅ．．．ｉｔ　ｗｉｌｌ　ｂｅ　ｍｏｓｔ　ｈｅｌｐｆｕｌ　ｔｏ　ｕｓ．@KEY()↓
-◆ｏｎｃｅ　Ｉ　ｌｅａｒｎ　ｉｔ，　Ｉ’ｌｌ　ｍｅｅｔ　ｕｐ　ｗｉｔｈ　ｙｏｕ，　@DSP_NAME(PC_NESS)．@KEY()↓
-◆Ｔｒｕｓｔ　ｍｅ．．．Ｉ　ｗｉｌｌ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ．
-;jpn:◆おそらく　われわれにとって↓
-;jpn:　「ほしを　おとす　ほうほう」とは↓
-;jpn:　じゅうようなものなのだろう。@KEY()↓
-;jpn:◆おれは　それを　おぼえて↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)を　おいかける。↓
-;jpn:　しんじて　まっていてくれ！
+◆It is important that I study and learn the ”Starstorm”@KEY()↓
+◆technique...it will be most helpful to us.@KEY()↓
+◆once I learn it, I’ll meet up with you, @DSP_NAME(PC_NESS).@KEY()↓
+◆Trust me...I will see you again.
+;jpn:◆おそらく われわれにとって↓
+;jpn: 「ほしを おとす ほうほう」とは↓
+;jpn: じゅうようなものなのだろう。@KEY()↓
+;jpn:◆おれは それを おぼえて↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)を おいかける。↓
+;jpn: しんじて まっていてくれ!
 @KEY()
 @CLOSEALL()
 @SETF(FLG_PU_0)
@@ -1649,8 +1649,8 @@ MSG_SKRB_PU_OLDMAN;
 ;#89	ダンジョン男を仲間に	13.5	T
 
 ;★ダンジョン男の胎内から出てくるとダンジョン男が一緒に付いてくるという設定。
-;★ダンジョン男の胎内から出てきた所（マップイベント）でフラグをチェックして
-;ダンジョン男を仲間にするコマンドを実行する（未設定）。
+;★ダンジョン男の胎内から出てきた所(マップイベント)でフラグをチェックして
+;ダンジョン男を仲間にするコマンドを実行する(未設定)。
 
 MSG_EVT_89_DUNGEONMAN;
 @WARP(WARP_SKRB_DMAN_BODY)
@@ -1661,31 +1661,31 @@ MSG_EVT_89_DUNGEONMAN;
 ;---------------------------------------------------------------------------
 
 
-;#90	ダンジョン男ハマリ（別れる）	13.5	T
+;#90	ダンジョン男ハマリ(別れる)	13.5	T
 
 ;★魔境へ渡る大河の手前、狭い道を通過する時に
 ;メッセージ MSG_SKRB_BRICKROAD_MAKYO_0 を発してダンジョン男を切り離す。
 
-MSG_EVT_90_DM_HAMARI;ＨＲＥＣＴから呼ばれるメッセージ
+MSG_EVT_90_DM_HAMARI;HRECTから呼ばれるメッセージ
 @WI(20)
 @OPEN(1)
-◆Ｇｕａｒｇｈ！　　Ｏｈ　ｎｏ！　　Ｉ．．．ａｍ．．．@KEY()↓
-◆ｇｅｔｔｉｎｇ　ｃａｕｇｈｔ　ｉｎ　ｔｈｅ　ｐａｌｍ　ｔｒｅｅｓ！　　Ｍｍｍ．．．Ｉ　ｃａｎｎｏｔ　ｍｏｖｅ．@KEY()↓
-◆Ｗｅｌｌ，　ｉｆ　Ｉ　ｃａｎｎｏｔ　ｍｏｖｅ，　ｉｔ　ｉｓ　ｏｋａｙ．
-;jpn:◆‥‥っと@WI(20)　これは　なんと@WI(20)↓
-;jpn:　ヤシのきに@WI(20)　うっく@WI(20)　はさまれて@WI(20)↓
-;jpn:　う〜ん@WI(20)　うごけない‥‥。@KEY()↓
-;jpn:◆ま@WI(20)　うごけなきゃ　うごけないで↓
-;jpn:　あっしは　べつに↓
-;jpn:　かまわないでやんす。
+◆Guargh!  Oh no!  I...am...@KEY()↓
+◆getting caught in the palm trees!  Mmm...I cannot move.@KEY()↓
+◆Well, if I cannot move, it is okay.
+;jpn:◆‥‥っと@WI(20) これは なんと@WI(20)↓
+;jpn: ヤシのきに@WI(20) うっく@WI(20) はさまれて@WI(20)↓
+;jpn: う〜ん@WI(20) うごけない‥‥。@KEY()↓
+;jpn:◆ま@WI(20) うごけなきゃ うごけないで↓
+;jpn: あっしは べつに↓
+;jpn: かまわないでやんす。
 @KEY()↓
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)，　ｉｔ　ｍａｋｅｓ　ｍｅ　ｓａｄ，　ｂｕｔ　Ｉ　ｍｕｓｔ　ｓａｙ　ｇｏｏｄｂｙｅ　ｈｅｒｅ，@KEY()↓
-◆ａｔ　ｍｙ　ｅｔｅｒｎａｌ　ｒｅｓｔｉｎｇ　ｐｌａｃｅ．
-;jpn:◆@DSP_NAME(0)さん！@WI(20)↓
-;jpn:　たいへん　おなごりおしいですが@WI(15)↓
-;jpn:　ここで　わかれやしょう！
+◆@DSP_NAME(0), it makes me sad, but I must say goodbye here,@KEY()↓
+◆at my eternal resting place.
+;jpn:◆@DSP_NAME(0)さん!@WI(20)↓
+;jpn: たいへん おなごりおしいですが@WI(15)↓
+;jpn: ここで わかれやしょう!
 @KEY()
 @CLOSEALL()
 @WI(20)
@@ -1714,27 +1714,27 @@ MSG_SKRB_BRICKROAD_MAKYO_0;
 @CHKFGOTO(FLG_TLPT_MAKY,_SKRB_BRICKROAD_MAKYO_AFTER)
 @OPEN(1)
 @CHKFGOTO(FLG_SKRB_YARIMAN,_SKRB_BRICKROAD_MAKYO_1)
-◆Ｉ　ｂｅｌｉｅｖｅ　ｉｔ　ｉｓ　ｉｍｐｏｓｓｉｂｌｅ　ｆｏｒ　ｍｅ　ｔｏ　ｍｏｖｅ　ｆｒｏｍ　ｔｈｉｓ　ｓｐｏｔ．@KEY()↓
-◆Ｄｏ　ｎｏｔ　ｗｏｒｒｙ　ａｂｏｕｔ　ｍｅ．．．@KEY()↓
-◆Ｐｌｅａｓｅ　ｃｏｎｔｉｎｕｅ　ｏｎ．
-;jpn:◆どうやら　わしはもう↓
-;jpn:　いっぽも　うごけねぇようでやす。@KEY()↓
+◆I believe it is impossible for me to move from this spot.@KEY()↓
+◆Do not worry about me...@KEY()↓
+◆Please continue on.
+;jpn:◆どうやら わしはもう↓
+;jpn: いっぽも うごけねぇようでやす。@KEY()↓
 ;jpn:◆かまわず↓
-;jpn:　さきにいって　おくんなさい。
+;jpn: さきにいって おくんなさい。
 @KEYNP()
 @CLOSEALL()
 』
 
 _SKRB_BRICKROAD_MAKYO_1;
-◆Ａ　ｓｕｂｍａｒｉｎｅ？@KEY()↓
-◆Ｉ　ｂｅｌｉｅｖｅ．．．ｔｈａｔ　Ｉ　ｈａｖｅ　ｏｎｅ　ｉｎ　ｍｙ　ｏｌｄ　ｖｅｈｉｃｌｅ　ｃｏｌｌｅｃｔｉｏｎ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｅｎｔｅｒ．．．
-;jpn:◆サブマリンでやすか？@KEY()↓
+◆A submarine?@KEY()↓
+◆I believe...that I have one in my old vehicle collection.@KEY()↓
+◆Please enter...
+;jpn:◆サブマリンでやすか?@KEY()↓
 ;jpn:◆それでしたら↓
-;jpn:　たしか‥‥そうこの‥‥↓
-;jpn:　ガラクタのなかにありやした。@KEY()↓
-;jpn:◆ちょっと　あがってきて↓
-;jpn:　おくんなせえ。
+;jpn: たしか‥‥そうこの‥‥↓
+;jpn: ガラクタのなかにありやした。@KEY()↓
+;jpn:◆ちょっと あがってきて↓
+;jpn: おくんなせえ。
 @KEYNP()
 @CLOSEALL()
 @WI(1)
@@ -1748,12 +1748,12 @@ _SKRB_BRICKROAD_MAKYO_AFTER;魔境に行ってたら即ワープ
 
 ;#91	サブマリン貸出し	13.5	T
 
-;★切り離されたダンジョン男（切り離し時にセットされたシナリオフラグ
-;FLG_SKRB_BRICKROAD_MAKYO_APPEAR によって出現している）のセリフ
+;★切り離されたダンジョン男(切り離し時にセットされたシナリオフラグ
+;FLG_SKRB_BRICKROAD_MAKYO_APPEAR によって出現している)のセリフ
 ;_SKRB_BRICKROAD_MAKYO_1 でプレイヤーパーティーを
 ;ダンジョン男のダンジョンにワープさせる。
-;●（ダンジョン最上階のブリックロードの顔と話すと、
-;サブマリンのおいてある部屋に到達出来る。）
+;●(ダンジョン最上階のブリックロードの顔と話すと、
+;サブマリンのおいてある部屋に到達出来る。)
 
 ;--------------------------------------------------
 
@@ -1762,7 +1762,7 @@ _SKRB_BRICKROAD_MAKYO_AFTER;魔境に行ってたら即ワープ
 
 ;★潜水艦をチェックしたときのメッセージ MSG_SKRB_BRICK_SUBMARINE
 ;で暗転。マップに戻るとプレイヤーキャラは
-;サブマリンの「潜望鏡」になっている（ダンジョン男の近くの大河の中）。
+;サブマリンの「潜望鏡」になっている(ダンジョン男の近くの大河の中)。
 ;★オートで大河を渡り魔境へ。
 
 MSG_EVT_92_SUBMARINE;
@@ -1773,20 +1773,20 @@ MSG_EVT_92_SUBMARINE;
 @FUNC(5)		;マップ上での全滅・配達禁止
 ;-----
 @COLD_PLAYER(PC_ALL)
-@BGM_EFFECT( 3 )		;ＢＧＭフェードアウト長め
+@BGM_EFFECT( 3 )		;BGMフェードアウト長め
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_INTO_NIGHT, OBJFX_SHOW_NONE )
 @WAITSYS()
 @WI( 60 )
 @OPEN(1)
-◆（@DSP_NAME(PC_NESS)　ａｎｄ　ｈｉｓ　ｆｒｉｅｎｄｓ　ｃａｒｒｉｅｄ　ｏｕｔ　ｔｈｅ　ｓｕｂｍａｒｉｎｅ　ｔｈａｔ　@DSP_NAME(PC_JEFF)　ｆｉｘｅｄ．）
+◆(@DSP_NAME(PC_NESS) and his friends carried out the submarine that @DSP_NAME(PC_JEFF) fixed.)
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)たちは↓
-;jpn:　@DSP_STS(STS_PC_NAME_JEFF)のしゅうりした↓
-;jpn:　サブマリンを　はこびだした。
+;jpn: @DSP_STS(STS_PC_NAME_JEFF)のしゅうりした↓
+;jpn: サブマリンを はこびだした。
 @KEY()
 @CLOSEALL()
 @HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
 ;スカラビフィールド海上へワープ
-@MOVE_GOM_CHAR( GOM_PERISCOPE, ANIM_SUBMARINE_1, OBJFX_AFTER_WARP )	;発進！
+@MOVE_GOM_CHAR( GOM_PERISCOPE, ANIM_SUBMARINE_1, OBJFX_AFTER_WARP )	;発進!
 @WARP(WARP_SUBMARINE_START)
 @COLD_GOM_CHAR( GOM_PERISCOPE )
 ;-------------
@@ -1802,20 +1802,20 @@ MSG_EVT_92_SUBMARINE;
 @COLD_PLAYER(PC_ALL)
 ;WARP_SUBMARINE_ENDの座標を今だけ(02b7,0376)付近にしておいて下さい。
 @MOVE_GOM_CHAR(GOM_PERISCOPE,ANIM_SUBMARINE_2,OBJFX_AFTER_WARP)
-@WARP(WARP_SUBMARINE_END)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;魔境へワープ
+@WARP(WARP_SUBMARINE_END)                               ;魔境へワープ
 @SET_CAMERA_GOM_CHAR(GOM_PERISCOPE)
 @FRESH_PLAYER(PC_ALL)
-@WAITSYS()　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　;岸につくのを待つ
+@WAITSYS()                                              ;岸につくのを待つ
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
-;--魔境ＢＧＭに----
+;--魔境BGMに----
 @GOSUB( MSG_SUB_BGM_FADEOUT_LONG )
 @CLRF(FLG_BGM_FUNE1)
 @MUSISTART()
 ;-------------
 ;@REMOVE_GOM_CHAR( GOM_PERISCOPE, ANIM_MAPOBJSTILL )
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
-@MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_OUT_SUBMARINE, OBJFX_SHOW_NONE)　　　　　　　;降りる人
+@MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_OUT_SUBMARINE, OBJFX_SHOW_NONE)       ;降りる人
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
 ...;@WI(1)
 ...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
@@ -1834,8 +1834,8 @@ MSG_EVT_92_SUBMARINE;
 
 ;#94	「たかのめ」を使う
 
-;★グッズ「たかのめ」（GDS_TOOL_EAGLE_EYE）を魔境の暗闇部分（特定のエリア）で
-;つかうと、明るくなる（パレット切り替え）。
+;★グッズ「たかのめ」(GDS_TOOL_EAGLE_EYE)を魔境の暗闇部分(特定のエリア)で
+;つかうと、明るくなる(パレット切り替え)。
 
 MSG_EVT_94_TAKANOME;バトルグッズから呼ばれる
 @SET_PALLETSET(6,3,120)
@@ -1853,7 +1853,7 @@ MSG_EVT_94_TAKANOME;バトルグッズから呼ばれる
 
 
 
-;#97	プレイヤー名の確認（英語→日本語）
+;#97	プレイヤー名の確認(英語→日本語)
 
 ;★メッセージスクリプト内で処理します。
 
@@ -1861,19 +1861,19 @@ MSG_EVT_94_TAKANOME;バトルグッズから呼ばれる
 ;最終戦闘用ユーザー名かな表示の確認シークエンスに
 MSG_GUMI_OLDMAN_KANA;
 @OPEN(1)
-◆Ｈｅｙ，　ｙｏｕ！　　Ｉ　ｈａｖｅ　ａ　ｈａｐｐｙ　ｌｉｔｔｌｅ　ｑｕｅｓｔｉｏｎｓ　ｆｏｒ　ｙｏｕ．．．@KEY()↓
-◆．．．@KEY()↓
-◆　．．．@KEY()↓
+◆Hey, you!  I have a happy little questions for you...@KEY()↓
+◆...@KEY()↓
+◆ ...@KEY()↓
 ◆@DSP_STS(STS_PARTY_NAME_ALPHA)@KEY()↓
-◆@DSP_STS(STS_PARTY_NAME_ALPHA)，　ａｒｅ　ｙｏｕ　ｓｕｒｅ　ｔｈｉｓ　ｉｓ　ｔｈｅ　ｃｏｒｒｅｃｔ　ｐｌａｙｅｒ’ｓ　ｎａｍｅ？@KEY()↓
-◆Ｉｆ　ｉｔ’ｓ　ｎｏｔ　ｒｉｇｈｔ，　ｙｏｕ　ｃａｎ　ｃｈａｎｇｅ　ｉｔ．．．
-;jpn:◆おまえ　うれしい↓
-;jpn:　しつもんです@KEY()↓
+◆@DSP_STS(STS_PARTY_NAME_ALPHA), are you sure this is the correct player’s name?@KEY()↓
+◆If it’s not right, you can change it...
+;jpn:◆おまえ うれしい↓
+;jpn: しつもんです@KEY()↓
 ;jpn:◆‥@WI(30)‥@WI(30)@DSP_STS(STS_PARTY_NAME_KANA)@KEY()↓
-;jpn:◆@DSP_STS(STS_PARTY_NAME_KANA)？@KEY()↓
+;jpn:◆@DSP_STS(STS_PARTY_NAME_KANA)?@KEY()↓
 ;jpn:◆プレイヤーのなまえは↓
-;jpn:　ほんとうに　これでいいんだな。@KEY()↓
-;jpn:◆よくなければ　なおせ
+;jpn: ほんとうに これでいいんだな。@KEY()↓
+;jpn:◆よくなければ なおせ
 @KEY()
 @CLOSEALL()
 _GUMI_OLDMAN_KANA_1;@MiuraAppended
@@ -1882,7 +1882,7 @@ _GUMI_OLDMAN_KANA_1;@MiuraAppended
 @WI(30)
 @BGMSTART(0,BGM_name)
 ;--------------
-@FUNC(3);入力（英語版なので）
+@FUNC(3);入力(英語版なので)
 ;@FUNC(4)
 ;--------------
 @BGM_EFFECT(2)
@@ -1890,39 +1890,39 @@ _GUMI_OLDMAN_KANA_1;@MiuraAppended
 @MUSISTART()
 ;--------------
 ;@GOSUB(MSG_GUMI)
-;』松（プレーヤー名表示させないでもいい？）
+;』松(プレーヤー名表示させないでもいい?)
 @OPEN(1)
-◆Ａｒｅ　ｙｏｕ　ｓｕｒｅ　ｉｔ’ｓ　ｗｈａｔ　ｙｏｕ　ｗａｎｔ？@KEY()↓
-◆Ａｒｅ　ｙｏｕ　ｈａｐｐｙ　ｗｉｔｈ　ｔｈｅ　ｎａｍｅ？↓
-<Ｙｅｓ>　<Ｎｏ>
+◆Are you sure it’s what you want?@KEY()↓
+◆Are you happy with the name?↓
+<Yes> <No>
 ;jpn◆@DSP_STS(STS_PARTY_NAME_KANA)↓
-;jpn:　で　よいのだな。@WI(30)↓
-;jpn:　ミョージが　さきで@KEY()↓
-;jpn:◆ナマエが　あと‥‥に↓
-;jpn:　なっているだろうな？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: で よいのだな。@WI(30)↓
+;jpn: ミョージが さきで@KEY()↓
+;jpn:◆ナマエが あと‥‥に↓
+;jpn: なっているだろうな?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_GUMI_OLDMAN_KANA_YES,_GUMI_OLDMAN_KANA_NO)
 
 _GUMI_OLDMAN_KANA_NO;@MiuraAppended
-◆Ｈｅｒｅ’ｓ　ｙｏｕｒ　ｃｈａｎｃｅ　ｔｏ　ｃｈａｎｇｅ　ｉｔ．．．
-;jpn:◆じゃ　なおせ。
+◆Here’s your chance to change it...
+;jpn:◆じゃ なおせ。
 @KEY()
 @CLOSEALL()
 @GOTO(_GUMI_OLDMAN_KANA_1)
 
 _GUMI_OLDMAN_KANA_YES;@MiuraAppended
-◆Ａｒｅ　ｙｏｕ　ａｂｓｏｌｕｔｅｌｙ　ｃｅｒｔａｉｎ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆ほんとうに　いいのだな？↓
-;jpn:　　<はい>　　<いいえ>
+◆Are you absolutely certain?↓
+<Yes> <No>
+;jpn:◆ほんとうに いいのだな?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_GUMI_OLDMAN_KANA_YESYES,_GUMI_OLDMAN_KANA_NO)
 @GOTO(_GUMI_OLDMAN_KANA_NO)
 
 _GUMI_OLDMAN_KANA_YESYES;@MiuraAppended
-◆Ｙｅａｈ，　Ｉ　ｔｈｏｕｇｈｔ　ｔｈａｔ　ｙｏｕ　ｈａｄ　ｍａｄｅ　ｕｐ　ｙｏｕｒ　ｍｉｎｄ．．．
-;jpn:◆わしも　いいとおもう。
+◆Yeah, I thought that you had made up your mind...
+;jpn:◆わしも いいとおもう。
 @KEYNP()
 @CLOSEALL()
 』
@@ -1936,23 +1936,23 @@ MSG_GUMI_SPEAKER;
 @CHKFGOTO(FLG_GUMI_CAVEOPEN,_GUMI_SPEAKER_TEMP)
 @CHKFGOTO(FLG_GUMI_USEBOOK,_GUMI_SPEAKER_AFTER)
 ;@CHKFGOTO(FLG_GUMI_9_BOOK,_GUMI_SPEAKER_AFTER)
-◆．．．↓
-　　Ｓｈｙ．．．↓
-　　ｔｈａｔ　ｗｅ　ａｒｅ．．．
+◆...↓
+  Shy...↓
+  that we are...
 ;jpn:◆‥‥@WI(60)↓
-;jpn:　むくち@WI(20)↓
-;jpn:　おれたち‥‥
+;jpn: むくち@WI(20)↓
+;jpn: おれたち‥‥
 @KEYNP()
 』
 _GUMI_SPEAKER_AFTER;
-;◆あなた　ききました　じめんのした↓
-;　はいりたかった　のですね。　では↓
-;　わかりました　わたしたち　フタ@KEY()↓
-;◆あけてみましょう。えいや！
-◆Ｐｏｗｅｒｆｕｌ．．．Ｉ．．．@KEY()↓
-◆ｓｏ．．．ｓｈｏｗ．．．ｅｖｅｒｙｏｎｅ．．．
-;jpn:◆ちからもち@WI(20)　わたし@WI(10)　だから↓
-;jpn:　したい@WI(30)　じまん
+;◆あなた ききました じめんのした↓
+; はいりたかった のですね。 では↓
+; わかりました わたしたち フタ@KEY()↓
+;◆あけてみましょう。えいや!
+◆Powerful...I...@KEY()↓
+◆so...show...everyone...
+;jpn:◆ちからもち@WI(20) わたし@WI(10) だから↓
+;jpn: したい@WI(30) じまん
 @KEY()
 @CLOSEALL()
 @SET_CHAR_DIR(PRSN_GUMI_FIELD_I,DIR_M_RIGHT)
@@ -1960,8 +1960,8 @@ _GUMI_SPEAKER_AFTER;
 @WAITSYS()
 @COLD_CHAR( PRSN_GUMI_FIELD_3B )
 @OPEN(1);[window開く]
-◆Ｈｕｕｕｕｐ！　　Ｉ　ｇｏｔ　ｉｔ！　　Ｉ　ｇｏｔ　ｉｔ！　　Ｅｅｅｅｅ　ｙｅａｈ！！！
-;jpn:◆ぬ@WI(10)お@WI(10)ー@WI(10)ー@WI(10)ー@WI(30)っぷ！
+◆Huuuup!  I got it!  I got it!  Eeeee yeah!!!
+;jpn:◆ぬ@WI(10)お@WI(10)ー@WI(10)ー@WI(10)ー@WI(30)っぷ!
 @KEY()
 @CLOSEALL();[window閉じる]
 @FRESH_CHAR( PRSN_GUMI_FIELD_3B )
@@ -1971,9 +1971,9 @@ _GUMI_SPEAKER_AFTER;
 @SETF(FLG_GUMI_CAVEOPEN)
 』
 _GUMI_SPEAKER_TEMP;
-◆Ｍｙ．．．ｐｏｗｅｒ．．．ａｗｅ−ｉｎｓｐｉｒｉｎｇ！
-;jpn:◆わたしの　ちから↓
-;jpn:　いんしょうぶかい。
+◆My...power...awe−inspiring!
+;jpn:◆わたしの ちから↓
+;jpn: いんしょうぶかい。
 @KEYNP()
 』
 
@@ -1983,7 +1983,7 @@ _GUMI_SPEAKER_TEMP;
 ;#99	話しかけてくる大岩	13.1o	T
 
 ;★ルミネホールのダンジョンに配置する透明キャラに近づいたら
-;喋る岩Ａ〜Ｃに漫符を表示してセリフ MSG_DKFD_ROCK_0 を発行。
+;喋る岩A〜Cに漫符を表示してセリフ MSG_DKFD_ROCK_0 を発行。
 ;★また、一定距離より遠ざかる時にも同様に MSG_DKFD_ROCK_0 を発行。
 
 MSG_DKFD_ROCK_0;
@@ -1992,12 +1992,12 @@ MSG_DKFD_ROCK_0;
 ;@CHKFGOTO(FLG_DKFD_ROCK_B,_DKFD_ROCK_0_END)
 ;@CHKFGOTO(FLG_DKFD_ROCK_C,_DKFD_ROCK_0_END)
 @OPEN(1)
-◆Ｈｅｙ！　　Ｈｅｙ！．．．Ｔａｌｋ　ｔｏ　ｍｅ！↓
-　　Ｈｅｙ，　ｈｅｙ，　ｈｅｙ！↓
-　　Ｈｅｅｅｅｅｅｙ！！
-;jpn:◆おいおい　わたしにはなしかけろ。↓
-;jpn:　おい！　おい！↓
-;jpn:　おい！　おーい！
+◆Hey!  Hey!...Talk to me!↓
+  Hey, hey, hey!↓
+  Heeeeeey!!
+;jpn:◆おいおい わたしにはなしかけろ。↓
+;jpn: おい! おい!↓
+;jpn: おい! おーい!
 @KEYNP()
 @CLOSEALL()
 ;_DKFD_ROCK_0_END
@@ -2008,31 +2008,31 @@ MSG_DKFD_ROCK_0;
 
 ;#100	ひかりごけ
 
-;★キャラジェネで電光掲示板のような文字（背景）を横スクロールさせる。
+;★キャラジェネで電光掲示板のような文字(背景)を横スクロールさせる。
 ;トリガーは未定。
-;★背景として、ずっとループ表示させておくことが出来るのだろうか？
+;★背景として、ずっとループ表示させておくことが出来るのだろうか?
 
 MSG_LUMINE;
 ;ルミネホールの電光掲示板
-◆Ｉ’ｍ　@DSP_NAME(PC_NESS)．．．
-◆Ｉｔ’ｓ　ｂｅｅｎ　ａ　ｌｏｎｇ　ｒｏａｄ　ｇｅｔｔｉｎｇ　ｈｅｒｅ．．．
-◆Ｓｏｏｎ，　Ｉ’ｌｌ　ｂｅ．．．
-◆Ｓｏｏｎ，　Ｉ’ｌｌ　ｂｅ．．．
-◆Ｓｏｏｎ，　Ｉ’ｌｌ　ｂｅ．．．
-◆Ｗｈａｔ　ｗｉｌｌ　ｈａｐｐｅｎ　ｔｏ　ｕｓ？
-◆Ｗ．．．ｗｈａｔ’ｓ　ｈａｐｐｅｎｉｎｇ？
-◆Ｍｙ　ｔｈｏｕｇｈｔｓ　ａｒｅ　ｂｅｉｎｇ　ｗｒｉｔｔｅｎ　ｏｕｔ　ｏｎ　ｔｈｅ　ｗａｌｌ．．．
-◆ｏｒ　ａｒｅ　ｔｈｅｙ？
+◆I’m @DSP_NAME(PC_NESS)...
+◆It’s been a long road getting here...
+◆Soon, I’ll be...
+◆Soon, I’ll be...
+◆Soon, I’ll be...
+◆What will happen to us?
+◆W...what’s happening?
+◆My thoughts are being written out on the wall...
+◆or are they?
 ;jpn: ◆ぼくは@DSP_STS(STS_PC_NAME_NES)だ。↓
-;jpn:　ぼくは　ここまで　きた。↓
-;jpn:　ぼくは　もうすぐ↓
-;jpn:　ぼくは　もうすぐ‥↓
-;jpn:　ぼくは　もうすぐ？↓
-;jpn:　どうなるのだろうか。↓
-;jpn:　な　なんだ　これは↓
-;jpn:　ぼくの　こころが↓
-;jpn:　もじに　なっているのだろうか？↓
-;jpn:　それとも‥‥@KEYNP()
+;jpn: ぼくは ここまで きた。↓
+;jpn: ぼくは もうすぐ↓
+;jpn: ぼくは もうすぐ‥↓
+;jpn: ぼくは もうすぐ?↓
+;jpn: どうなるのだろうか。↓
+;jpn: な なんだ これは↓
+;jpn: ぼくの こころが↓
+;jpn: もじに なっているのだろうか?↓
+;jpn: それとも‥‥@KEYNP()
 』
 
 ;----------------------------------------

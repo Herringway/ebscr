@@ -12,64 +12,64 @@ MSG_PAST_POKEY;
 ;@SET_LOOPREG(PC_NESS)
 ;@GOSUB(MSG_SUB_Q_DEAD)
 ;@TRUE_GOTO(_PAST_POKEY_NESS_DEAD)
-◆@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ａｒｅ　ｙｏｕ　ｓｕｒｐｒｉｓｅｄ？@KEY()↓
-◆Ｉｔ’ｓ　ｍｅ，　Ｐｏｋｅｙ．@KEY()↓
-◆Ｉ　ａｓｓｉｓｔ　ｏｎｌｙ　ｔｈｅ　ｓｔｒｏｎｇ　ａｎｄ　ａｂｌｅ！@KEY()↓
-◆Ｔｈａｔ’ｓ　Ｐｏｋｅｙ．@KEY()↓
-◆Ｙｏｕ　ｇｕｙｓ　ｌｏｏｋ　ｐａｔｈｅｔｉｃ！@KEY()↓
-◆Ｔｈｅ　Ａｐｐｌｅ　ｏｆ　Ｅｎｌｉｇｈｔｅｎｍｅｎｔ　ｈａｓ　ａｌｒｅａｄｙ　ｍａｄｅ　ａ　ｐｒｅｄｉｃｔｉｏｎ．@KEY()↓
-◆．．．Ｂｕｔ　Ｉ　ｗｏｎ’ｔ　ｌｅｔ　ｗｈａｔ　ｔｈｅ　Ａｐｐｌｅ　ｏｆ　Ｅｎｌｉｇｈｔｅｎｍｅｎｔ　ｐｒｅｄｉｃｔｅｄ　ｔａｋｅ　ｐｌａｃｅ．@KEY()↓
-◆Ｙｏｕ　ｇｕｙｓ　ｗｉｌｌ　ｂｅ　ｂｅａｔｅｎ　ｂｙ　Ｇｉｙｇａｓ．@KEY()↓
-◆Ｇｉｙｇａｓ　ｗｉｌｌ　ｂｅ　ｓｔｒｏｎｇｅｒ，　ａ　ｍｏｒｅ　ｐｏｗｅｒｆｕｌ　ｅｎｔｉｔｙ　ｔｈａｎ　ａｎｙ　ｏｔｈｅｒ！@KEY()↓
-◆Ｗｈｙ？@KEY()↓
-◆’Ｃａｕｓｅ　ｏｆ　ｍｅ．@KEY()↓
-◆Ｉ　ｗａｓ　ｌｅｄ　ｂｙ　Ｇｉｙｇａｓ，　ａｎｄ　ｎｏｗ　Ｉ’ｍ　ｈｅｒｅ．@KEY()↓
-◆Ｔｈｅ　Ａｐｐｌｅ　ｏｆ　Ｅｎｌｉｇｈｔｅｎｍｅｎｔ　ｃｏｕｌｄｎ’ｔ　ｐｒｅｄｉｃｔ　ｔｈｉｓ．@KEY()↓
-◆Ｍａｓｔｅｒ　Ｇｉｙｇａｓ．@KEY()↓
-◆Ｎｏ，　Ｇｉｙｇａｓ　ｉｓ　ｎｏ　ｌｏｎｇｅｒ　ｔｈｅ　ｗｉｅｌｄｅｒ　ｏｆ　Ｅｖｉｌ．@KEY()↓
-◆Ｈｅ　ｈａｓ　ｂｅｃｏｍｅ　ｔｈｅ　ｅｍｂｏｄｉｍｅｎｔ　ｏｆ　Ｅｖｉｌ　ｉｔｓｅｌｆ．．．@KEY()↓
-◆ｗｈｉｃｈ　ｈｅ　ｃａｎｎｏｔ　ｃｏｎｔｒｏｌ　ｏｎ　ｈｉｓ　ｏｗｎ．@KEY()↓
-◆Ｈｅ　ｉｓ　ｔｈｅ　Ｅｖｉｌ　Ｐｏｗｅｒ．@KEY()
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)！@WI(15)　おどろいたか。@WI(20)↓
-;jpn:　ぼくだよ@WI(10)　ポーキーだよ。@KEY()↓
-;jpn:◆つよいものの　みかた！↓
-;jpn:　ポーキーだよ。@KEY()↓
-;jpn:◆みっともないすがたに　なったな。@KEY()↓
-;jpn:◆きみたちが　ここまで　やっと↓
-;jpn:　たどりつくことは@KEY()↓
+◆@DSP_NAME(PC_NESS)!@KEY()↓
+◆Are you surprised?@KEY()↓
+◆It’s me, Pokey.@KEY()↓
+◆I assist only the strong and able!@KEY()↓
+◆That’s Pokey.@KEY()↓
+◆You guys look pathetic!@KEY()↓
+◆The Apple of Enlightenment has already made a prediction.@KEY()↓
+◆...But I won’t let what the Apple of Enlightenment predicted take place.@KEY()↓
+◆You guys will be beaten by Giygas.@KEY()↓
+◆Giygas will be stronger, a more powerful entity than any other!@KEY()↓
+◆Why?@KEY()↓
+◆’Cause of me.@KEY()↓
+◆I was led by Giygas, and now I’m here.@KEY()↓
+◆The Apple of Enlightenment couldn’t predict this.@KEY()↓
+◆Master Giygas.@KEY()↓
+◆No, Giygas is no longer the wielder of Evil.@KEY()↓
+◆He has become the embodiment of Evil itself...@KEY()↓
+◆which he cannot control on his own.@KEY()↓
+◆He is the Evil Power.@KEY()
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)!@WI(15) おどろいたか。@WI(20)↓
+;jpn: ぼくだよ@WI(10) ポーキーだよ。@KEY()↓
+;jpn:◆つよいものの みかた!↓
+;jpn: ポーキーだよ。@KEY()↓
+;jpn:◆みっともないすがたに なったな。@KEY()↓
+;jpn:◆きみたちが ここまで やっと↓
+;jpn: たどりつくことは@KEY()↓
 ;jpn:◆「ちえのリンゴ」が↓
-;jpn:　ちゃんと　よげんしてたことさ。@KEY()↓
+;jpn: ちゃんと よげんしてたことさ。@KEY()↓
 ;jpn:◆‥‥でも↓
-;jpn:　「ちえのリンゴ」の↓
-;jpn:　よげんどおりには　ならないんだ。@KEY()↓
-;jpn:◆きみたちは　たおれる。@WI(15)↓
-;jpn:　ギーグさまは　もっと　つよい↓
-;jpn:　もっと　おそろしいものに　なる。@KEY()↓
-;jpn:◆なぜかって？@WI(20)　ぼくさ‥‥@WI(20)ぼくが↓
-;jpn:　このポーキーさまが@KEY()↓
-;jpn:◆ギーグさまに　みちびかれて↓
-;jpn:　ここに　きたからさ。@KEY()↓
-;jpn:◆このことは　「ちえのリンゴ」も↓
-;jpn:　よげんしちゃ　いなかったんだぜ。@KEY()↓
-;jpn:◆‥‥もう　ギーグさまは@WI(20)↓
-;jpn:　いや@WI(15)　ギーグは@KEY()↓
+;jpn: 「ちえのリンゴ」の↓
+;jpn: よげんどおりには ならないんだ。@KEY()↓
+;jpn:◆きみたちは たおれる。@WI(15)↓
+;jpn: ギーグさまは もっと つよい↓
+;jpn: もっと おそろしいものに なる。@KEY()↓
+;jpn:◆なぜかって?@WI(20) ぼくさ‥‥@WI(20)ぼくが↓
+;jpn: このポーキーさまが@KEY()↓
+;jpn:◆ギーグさまに みちびかれて↓
+;jpn: ここに きたからさ。@KEY()↓
+;jpn:◆このことは 「ちえのリンゴ」も↓
+;jpn: よげんしちゃ いなかったんだぜ。@KEY()↓
+;jpn:◆‥‥もう ギーグさまは@WI(20)↓
+;jpn: いや@WI(15) ギーグは@KEY()↓
 ;jpn:◆あくのけしん‥‥@WI(20)↓
-;jpn:　なんかじゃないんだ。@KEY()↓
+;jpn: なんかじゃないんだ。@KEY()↓
 ;jpn:◆ギーグじしんにも↓
-;jpn:　コントロールできない@WI(10)↓
-;jpn:　「あく」そのもの‥‥@KEY()↓
+;jpn: コントロールできない@WI(10)↓
+;jpn: 「あく」そのもの‥‥@KEY()↓
 ;jpn:◆じゃあくなちから↓
-;jpn:　そのものに　なってしまったんだ。@KEY()
+;jpn: そのものに なってしまったんだ。@KEY()
 』
 
-;◆そんな　うたなんか↓
-;　うたってるばあいか？　ハハハハ。@KEY()
+;◆そんな うたなんか↓
+; うたってるばあいか? ハハハハ。@KEY()
 ;』
 ;_PAST_POKEY_NESS_DEAD;
-;◆（ネスが↓
-;　きぜつかダイヤのときの↓
-;　メッセージです）
+;◆(ネスが↓
+; きぜつかダイヤのときの↓
+; メッセージです)
 ;@KEYNP()
 ;@!
 

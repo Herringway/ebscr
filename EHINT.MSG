@@ -54,44 +54,44 @@ MSG_SUB_HINTSHOP;marcus
 @SET_REG(1)
 @CHKFGOTO(FLG_TEMP_7,_HINTSHOP_ONEMORE)
 @GOSUB(_HINT_CHOTTO)
-◆Ｉ　ｃｏｕｌｄ　ｇｉｖｅ　ｙｏｕ　ａ　ｇｒｅａｔ　ｈｉｎｔ　ｆｏｒ　ｊｕｓｔ　＄@DSP_NUM(0)．@KEY()↓
-◆Ｙｏｕ’ｄ　ｌｉｋｅ　ａ　ｈｉｎｔ，　ｗｏｕｌｄｎ’ｔ　ｙｏｕ？↓
+◆I could give you a great hint for just ＄@DSP_NUM(0).@KEY()↓
+◆You’d like a hint, wouldn’t you?↓
 
-;jpn:　たった@DSP_NUM(0)ドルで↓
-;jpn:　すばらしいヒントを　あげよう。@KEY()↓
-;jpn:◆ヒントが　ほしいだろう？↓
+;jpn: たった@DSP_NUM(0)ドルで↓
+;jpn: すばらしいヒントを あげよう。@KEY()↓
+;jpn:◆ヒントが ほしいだろう?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_HINT_YES,_HINT_NO)
 _HINT_NO;
 ;@CHKFGOTO(FLG_SHOPTEMP_1,_HINT_NO_FIELD)
-◆Ｓｏ　ｙｏｕ’ｒｅ　ｔｅｌｌｉｎｇ　ｍｅ　ｔｈａｔ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ａ　ｈｉｎｔ？@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｅｉｔｈｅｒ　ａｗｆｕｌｌｙ　ｃｏｎｆｉｄｅｎｔ　ｏｒ　＄@DSP_NUM(0)　ｉｓ　ｔｏｏ　ｍｕｃｈ　ｔｏ　ｐａｙ．@KEY()↓
-◆Ａｎｙｗａｙ，　ａ　ｙｏｕｎｇ　ｍａｎ　ｌｉｋｅ　ｙｏｕ　ｉｓ　ｖｅｒｙ　ｕｎｕｓｕａｌ　ｔｈｅｓｅ　ｄａｙｓ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｈａｐｐｅｎ　ｔｏ　ｎｅｅｄ　ａ　ｈｉｎｔ，　ｃ’ｍｏｎ　ｂａｃｋ！@KEY()↓
-◆Ｉ’ｍ　ｈｅｒｅ　ａｌｌ　ｔｈｅ　ｔｉｍｅ．．．
-;jpn:◆ヒントは　いらないって？@KEY()↓
-;jpn:◆きが　つよいのか↓
-;jpn:　@DSP_NUM(0)ドルがおしいのか@KEY()↓
-;jpn:◆いまどき　めずらしい↓
-;jpn:　わかものだ。@KEY()↓
-;jpn:◆わたしは　いつも↓
-;jpn:　ここにいるから@KEY()↓
-;jpn:◆ようが　できたら↓
-;jpn:　またおいで。
+◆So you’re telling me that you don’t want a hint?@KEY()↓
+◆You’re either awfully confident or ＄@DSP_NUM(0) is too much to pay.@KEY()↓
+◆Anyway, a young man like you is very unusual these days.@KEY()↓
+◆If you happen to need a hint, c’mon back!@KEY()↓
+◆I’m here all the time...
+;jpn:◆ヒントは いらないって?@KEY()↓
+;jpn:◆きが つよいのか↓
+;jpn: @DSP_NUM(0)ドルがおしいのか@KEY()↓
+;jpn:◆いまどき めずらしい↓
+;jpn: わかものだ。@KEY()↓
+;jpn:◆わたしは いつも↓
+;jpn: ここにいるから@KEY()↓
+;jpn:◆ようが できたら↓
+;jpn: またおいで。
 @KEYNP()
 @!
 _HINT_NO_FIELD;marcus
-◆Ｓｏ　ｙｏｕ’ｒｅ　ｔｅｌｌｉｎｇ　ｍｅ　ｔｈａｔ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ａ　ｈｉｎｔ？@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｅｉｔｈｅｒ　ａｗｆｕｌｌｙ　ｃｏｎｆｉｄｅｎｔ　ｏｒ　＄@DSP_NUM(0)　ｉｓ　ｔｏｏ　ｍｕｃｈ　ｔｏ　ｐａｙ．@KEY()↓
-◆Ａｎｙｗａｙ，　ａ　ｙｏｕｎｇ　ｍａｎ　ｌｉｋｅ　ｙｏｕ　ｉｓ　ｖｅｒｙ　ｕｎｕｓｕａｌ　ｔｈｅｓｅ　ｄａｙｓ．@KEY()↓
-◆Ｙｏｕ　ｓａｙ　ｔｈａｔ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ａｎｙ　ｈｉｎｔ？@KEY()↓
-◆Ｗｅｌｌ，　ｓｏ　ｌｏｎｇ．
+◆So you’re telling me that you don’t want a hint?@KEY()↓
+◆You’re either awfully confident or ＄@DSP_NUM(0) is too much to pay.@KEY()↓
+◆Anyway, a young man like you is very unusual these days.@KEY()↓
+◆You say that you don’t want any hint?@KEY()↓
+◆Well, so long.
 
-;jpn:◆ヒントは　いらないって？@KEY()↓
-;jpn:◆きが　つよいのか↓
-;jpn:　@DSP_NUM(0)ドルがおしいのか@KEY()↓
-;jpn:◆いまどき　めずらしい↓
-;jpn:　わかものだ。@KEY()↓
+;jpn:◆ヒントは いらないって?@KEY()↓
+;jpn:◆きが つよいのか↓
+;jpn: @DSP_NUM(0)ドルがおしいのか@KEY()↓
+;jpn:◆いまどき めずらしい↓
+;jpn: わかものだ。@KEY()↓
 ;jpn:◆さようなら。
 @KEYNP()
 @!
@@ -106,7 +106,7 @@ _HINT_YES;
 @WI(10)
 _HINT_ONEMORE;
 @GOSUB(_SUB_HINT_Q_SUB)
-@CHKFGOTO(FLG_INFO_XYZ,_HINT_ITEM_XYZ)		;土星谷のアンドーナッツ博士から物質ＸＹＺ情報を聞いた
+@CHKFGOTO(FLG_INFO_XYZ,_HINT_ITEM_XYZ)		;土星谷のアンドーナッツ博士から物質XYZ情報を聞いた
 @CHKFGOTO(FLG_WIN_OSCAR,_HINT_GO_DOSEI2)	;マジカントの黄金のオスカーを倒した
 @CHKFGOTO(FLG_POWR_FIRE,_HINT_RESTSOUND)	;ファイアースプリングパワースポットへ行った
 @CHKFGOTO(FLG_POWR_LUMI,_HINT_GO_FIRE)		;ルミネホールパワースポットへ行った
@@ -135,7 +135,7 @@ _HINT_ONEMORE;
 @CHKFGOTO(FLG_FOUR_MAID_THANKS,_HINT_FOUR_PAULA)	;モノトリービルのプライベートエレベータにエレベータ嬢が出現
 @CHKFGOTO(FLG_ITEM_TOFU,_HINT_FOUR_MAID)	;グルメとうふマシンを入手
 @CHKFGOTO(FLG_DSRT_TJAB_MOVE,_HINT_GURUMETOFU)	;サルダンジョンの塞ぎタライジャブとお供サルが出現しない
-@CHKFGOTO(FLG_WIN_MANIMANI,_HINT_KUROKOGESARU)	;ムーンサイドで幻影マシン（マニマニの悪魔）を破壊
+@CHKFGOTO(FLG_WIN_MANIMANI,_HINT_KUROKOGESARU)	;ムーンサイドで幻影マシン(マニマニの悪魔)を破壊
 @CHKFGOTO(FLG_FOUR_TONCHIKI,_HINT_MOON)		;ボルヘスの酒場付近、瀕死のトンチキからムーンサイド情報を聞いた
 @CHKFGOTO(FLG_FOUR_TONCHIKI_APPEAR,_HINT_FOUR_TONCHIKI)	;フォーサイドのボルヘスの酒場付近に瀕死のトンチキが出現
 @CHKFGOTO(FLG_FOUR_DEPT_OK,_HINT_BRGS)		;フォーサイド、デパート・ダンジョンのボスを倒した
@@ -161,9 +161,9 @@ _HINT_ONEMORE;
 @CHKFGOTO(FLG_TWSN_TONZURA_FREE,_HINT_TOTHRK)		;カオス劇場からトンズラを開放
 @CHKFGOTO(FLG_TWSN_ITEM_TONCHIKI,_HINT_TONZURA_CHAOS)	;盗人広場のヌシ、トンチキのグッズ入手
 @CHKFGOTO(FLG_POLA,_HINT_TWSN_TONCHIKI)			;ポーラを仲間にした
-@CHKFGOTO(FLG_POLA_GRFD,_HINT_PAULAPAPA)		;Ｇデッド谷小屋からポーラを救出
-@CHKFGOTO(FLG_WIN_CARPAINTER,_HINT_RESCUE_PAULA)	;ＨＨ教教祖カーペインターを倒した
-@CHKFGOTO(FLG_ITEM_FRANKLINBADGE,_HINT_CARPAINTER)	;Ｇデッドの谷小屋のポーラからグッズ入手
+@CHKFGOTO(FLG_POLA_GRFD,_HINT_PAULAPAPA)		;Gデッド谷小屋からポーラを救出
+@CHKFGOTO(FLG_WIN_CARPAINTER,_HINT_RESCUE_PAULA)	;HH教教祖カーペインターを倒した
+@CHKFGOTO(FLG_ITEM_FRANKLINBADGE,_HINT_CARPAINTER)	;Gデッドの谷小屋のポーラからグッズ入手
 @CHKFGOTO(FLG_HAPPY_THUNDER,_HINT_FRANKRIN)		;カーペインターにカミナリを落とされた
 @CHKFGOTO(FLG_STEP_HAPPY,_HINT_GO_HHBASE)		;ハッピーハッピー村に足を踏みいれた
 @CHKFGOTO(FLG_ITEM_TACO_ERASER,_HINT_FIND_PAULA)	;アップルキッドにタコ消しマシンをもらった
@@ -179,151 +179,151 @@ _HINT_ONEMORE;
 ;オネット到着後	
 ;シャーク団のボスフランクを倒しなさい
 _HINT_SHARK;marcus
-◆Ｉｔ　ｓｅｅｍｓ　ｔｈａｔ　ｔｈｅ　ｃｉｔｉｚｅｎｓ　ｏｆ　Ｏｎｅｔｔ　ｈａｖｅ　ｂｅｅｎ　ｈａｒａｓｓｅｄ@KEY()↓
-◆ｂｙ　ｔｈｏｓｅ　ｄａｎｇ　ｓｔｒｅｅｔ　ｐｕｎｋｓ　ｃａｌｌｅｄ　ｔｈｅ　Ｓｈａｒｋｓ．@KEY()↓
-◆Ｉ　ｗｏｎｄｅｒ　ｉｆ　ｇｏｉｎｇ　ａｎｄ　ｔａｌｋｉｎｇ　ｔｏ　Ｆｒａｎｋ，@KEY()↓
-◆ｔｈｅ　ｌｅａｄｅｒ　ｏｆ　ｔｈｅ　Ｓｈａｒｋｓ，　ｗｏｕｌｄ　ｄｏ　ａｎｙ　ｇｏｏｄ？
+◆It seems that the citizens of Onett have been harassed@KEY()↓
+◆by those dang street punks called the Sharks.@KEY()↓
+◆I wonder if going and talking to Frank,@KEY()↓
+◆the leader of the Sharks, would do any good?
 ;jpn:◆どうやら↓
-;jpn:　オネットの　まちのひとは@KEY()↓
-;jpn:◆シャークだん　とかいう↓
-;jpn:　ふりょうグループに↓
-;jpn:　めいわくしてるらしい。@KEY()↓
-;jpn:◆あんたが　いって↓
-;jpn:　フランクとかいうボスと@KEY()↓
+;jpn: オネットの まちのひとは@KEY()↓
+;jpn:◆シャークだん とかいう↓
+;jpn: ふりょうグループに↓
+;jpn: めいわくしてるらしい。@KEY()↓
+;jpn:◆あんたが いって↓
+;jpn: フランクとかいうボスと@KEY()↓
 ;jpn:◆はなしあってみては↓
-;jpn:　どうだろう？
+;jpn: どうだろう?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;フランク倒した後
 ;ピカールから「たびごやのカギ」もらいなさい
 _HINT_PICARL;marcus
-◆Ｓｏ，　ｈａｖｅ　ｙｏｕ　ｍｅｔ　Ｂ．　Ｈ．　Ｐｉｒｋｌｅ，　ｔｈｅ　ｍａｙｏｒ　ｏｆ　Ｏｎｅｔｔ？@KEY()↓
-◆Ｍａｙｏｒ　Ｐｉｒｋｌｅ’ｓ　ｏｆｆｉｃｅ　ｉｓ　ｏｎ　ｔｈｅ　ｓｅｃｏｎｄ　ｆｌｏｏｒ　ｏｆ　Ｏｎｅｔｔ　Ｃｉｔｙ　Ｈａｌｌ．
+◆So, have you met B. H. Pirkle, the mayor of Onett?@KEY()↓
+◆Mayor Pirkle’s office is on the second floor of Onett City Hall.
 ;jpn:◆オネットしちょうの↓
-;jpn:　ゲーハー・ピカールには↓
-;jpn:　あったかな？@KEY()↓
+;jpn: ゲーハー・ピカールには↓
+;jpn: あったかな?@KEY()↓
 ;jpn:◆ピカールしちょうは↓
-;jpn:　しちょうしゃの↓
-;jpn:　２かいにいるよ。
+;jpn: しちょうしゃの↓
+;jpn: ２かいにいるよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;「たびごやのカギ」入手後
 ;旅芸人の扉を「たびごやのカギ」で開けなさい
 _HINT_TABIGOYA;marcus
-◆Ｇｏ　ｎｏｒｔｈｅａｓｔ．@KEY()↓
-◆Ａ　ｗａｎｄｅｒｉｎｇ　ｅｎｔｅｒｔａｉｎｅｒ　ｉｓ　ｈａｖｉｎｇ　ｓｏｍｅ　ｔｒｏｕｂｌｅ　ｇｅｔｔｉｎｇ　ｉｎｔｏ　ａ　ｌｏｃｋｅｄ　ｓｈａｃｋ．．．
-;＠ｔｒａｖｅｒｉｎｇ？
-;jpn:◆ほくせいに　すすみなさい。@KEY()↓
+◆Go northeast.@KEY()↓
+◆A wandering entertainer is having some trouble getting into a locked shack...
+;＠travering?
+;jpn:◆ほくせいに すすみなさい。@KEY()↓
 ;jpn:◆たびげいにんが↓
-;jpn:　カギが　あかないって↓
-;jpn:　こまってたみたいだぞ。
+;jpn: カギが あかないって↓
+;jpn: こまってたみたいだぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;旅小屋を扉を開けた後
 ;jpn:ジャイアントステップをクリアしなさい
 _HINT_GIAN;marcus
-◆Ｙｏｕ’ｒｅ　ｏｎ　ｙｏｕｒ　ｗａｙ　ｔｏ　Ｇｉａｎｔ　Ｓｔｅｐ，　ａｒｅｎ’ｔ　ｙｏｕ？@KEY()↓
-◆Ｊｕｓｔ　ｂｅ　ｃａｒｅｆｕｌ，　ｔｈｅ　ｐｏｌｉｃｅ　ａｒｅ　ｐｒｅｔｔｙ　ｔｏｕｃｈｙ　ａｂｏｕｔ　ｐｅｏｐｌｅ，@KEY()↓
-◆ｎｏｔ　ｔｏ　ｍｅｎｔｉｏｎ　ｋｉｄｓ，　ｇｏｉｎｇ　ｕｐ　ｔｈｅｒｅ．．．
-;＠改行？
+◆You’re on your way to Giant Step, aren’t you?@KEY()↓
+◆Just be careful, the police are pretty touchy about people,@KEY()↓
+◆not to mention kids, going up there...
+;＠改行?
 ;jpn:◆ジャイアントステップに↓
-;jpn:　ゆくんだろ？@KEY()↓
-;jpn:◆だったら　けいかんを↓
-;jpn:　しげきしないように↓
-;jpn:　きを　つけるんだね。
+;jpn: ゆくんだろ?@KEY()↓
+;jpn:◆だったら けいかんを↓
+;jpn: しげきしないように↓
+;jpn: きを つけるんだね。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;警官５人抜き成功後
-;（ポーラを仲間にするため）ツーソンに行きなさい	
+;(ポーラを仲間にするため)ツーソンに行きなさい	
 _HINT_POLICE;marcus
-;◆あらら　けいさつかんに↓
-;　よばれたのか。@KEY()↓
-◆Ｔｈｅ　ｐｏｌｉｃｅ　ｗｅｒｅ　ｈｅｒｅ　ｌｏｏｋｉｎｇ　ｆｏｒ　ｙｏｕ．　　Ｄｉｄ　ｙｏｕ　ｄｏ　ｓｏｍｅｔｈｉｎｇ　ｉｌｌｅｇａｌ？@KEY()↓
-◆Ｈｅａｄ　ｓｏｕｔｈ　ｏｎ　ｔｈｅ　ｓｔｒｅｅｔ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｍｙ　ｓｈｏｐ．　　Ｙｏｕ’ｌｌ　ｆｉｎｄ　ｔｈｅ　Ｏｎｅｔｔ　Ｐｏｌｉｃｅ　Ｓｔａｔｉｏｎ．@KEY()↓
-◆Ｉ　ｔｈｉｎｋ　ｉｔ’ｓ　ｂｅｓｔ　ｉｆ　ｙｏｕ　ｔｕｒｎ　ｙｏｕｒｓｅｌｆ　ｉｎ．．．ｎｏ　ｍａｔｔｅｒ　ｗｈａｔ　ｙｏｕ　ｍａｙ　ｈａｖｅ　ｄｏｎｅ．
+;◆あらら けいさつかんに↓
+; よばれたのか。@KEY()↓
+◆The police were here looking for you.  Did you do something illegal?@KEY()↓
+◆Head south on the street in front of my shop.  You’ll find the Onett Police Station.@KEY()↓
+◆I think it’s best if you turn yourself in...no matter what you may have done.
 ;jpn:◆けいさつかんが↓
-;jpn:　さがしてた　みたいだけど↓
-;jpn:　なにか　やらかしたのかい。@KEY()↓
+;jpn: さがしてた みたいだけど↓
+;jpn: なにか やらかしたのかい。@KEY()↓
 ;jpn:◆オネットけいさつは↓
-;jpn:　このみせのまえの　みちを@KEY()↓
-;jpn:◆みなみに　ずーっと↓
-;jpn:　あるくと　あるよ。
+;jpn: このみせのまえの みちを@KEY()↓
+;jpn:◆みなみに ずーっと↓
+;jpn: あるくと あるよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;警官５人抜き成功後
-;（ポーラを仲間にするため）ツーソンに行きなさい
+;(ポーラを仲間にするため)ツーソンに行きなさい
 _HINT_TOTWSN;marcus
-◆Ｈａｖｅ　ｙｏｕ　ｈｅａｒｄ　ｏｆ　ａ　ｇｉｒｌ　ｎａｍｅｄ　@DSP_NAME(PC_PAULA)？@KEY()↓
-◆Ｓｈｅ　ｌｉｖｅｓ　ｉｎ　Ｔｗｏｓｏｎ，　ｔｈｅ　ｔｏｗｎ　ｎｅｘｔ　ｔｏ　Ｏｎｅｔｔ．．．@KEY()↓
-◆Ｔｈｅｙ　ｓａｙ　ｓｈｅ　ｈａｓ　ｓｏｍｅ　ｐｒｅｔｔｙ　ｓｐｅｃｔａｃｕｌａｒ　ｓｕｐｅｒｎａｔｕｒａｌ　ｐｏｗｅｒｓ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｇｅｔ　ｔｏ　Ｔｗｏｓｏｎ　ｂｙ　ｈｅａｄｉｎｇ　ｓｏｕｔｈ．
+◆Have you heard of a girl named @DSP_NAME(PC_PAULA)?@KEY()↓
+◆She lives in Twoson, the town next to Onett...@KEY()↓
+◆They say she has some pretty spectacular supernatural powers.@KEY()↓
+◆You can get to Twoson by heading south.
 ;jpn:◆となりまちツーソンの↓
-;jpn:　ちょうのうりょく↓
-;jpn:　しょうじょ‥‥@KEY()↓
+;jpn: ちょうのうりょく↓
+;jpn: しょうじょ‥‥@KEY()↓
 ;jpn:◆@DSP_NAME(PC_PAULA)の↓
-;jpn:　うわさは　きいたかな？@KEY()↓
-;jpn:◆まちの　みなみから↓
-;jpn:　ツーソンに　いってみなさい。
+;jpn: うわさは きいたかな?@KEY()↓
+;jpn:◆まちの みなみから↓
+;jpn: ツーソンに いってみなさい。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ツーソン到着後
 ;アップルキッドに援助しなさい
 _HINT_APPLE;marcus
-◆Ｈａｖｅ　ｙｏｕ　ｂｅｅｎ　ｔｏ　Ａｐｐｌｅ　Ｋｉｄ　ａｎｄ　Ｏｒａｎｇｅ　Ｋｉｄ’ｓ　ｈｏｕｓｅｓ？@KEY()↓
-◆Ｔｈｅｉｒ　ｐｌａｃｅｓ　ａｒｅ　ｓｏｕｔｈ　ｏｆ　ｔｈｅ　Ｐｏｌｅｓｔａｒ　Ｐｒｅｓｃｈｏｏｌ．@KEY()↓
-◆Ｔｈｅｙ　ａｒｅ　ｇｒｅａｔ　ｉｎｖｅｎｔｏｒｓ．．．ｔｏ　ｂｅ．@KEY()↓
-◆Ｔｈｅｙ　ｎｅｅｄ　ｓｏｍｅ　ｆｉｎａｎｃｉａｌ　ｈｅｌｐ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｈｅｌｐ　ｔｈｅｍ．．．ｌａｔｅｒ，@KEY()↓
-◆ｆｏｒ　ｓｕｒｅ，@KEY()↓
-◆ｗｉｔｈｏｕｔ　ｆａｉｌ，@KEY()↓
-◆ｃｅｒｔａｉｎｌｙ，@KEY()↓
-◆ｓｏｍｅｔｈｉｎｇ　ｗｏｎｄｅｒｆｕｌ　ｗｉｌｌ　ｈａｐｐｅｎ．@KEY()↓
-◆Ｂｅｌｉｅｖｅ　ｍｅ，　ｔｈｉｓ　ｈｉｎｔ　ｉｓ　ｗｏｒｔｈ　ａ　ｌｏｔ　ｍｏｒｅ　ｔｈａｎ　ｙｏｕ　ｐａｉｄ．
+◆Have you been to Apple Kid and Orange Kid’s houses?@KEY()↓
+◆Their places are south of the Polestar Preschool.@KEY()↓
+◆They are great inventors...to be.@KEY()↓
+◆They need some financial help.@KEY()↓
+◆If you help them...later,@KEY()↓
+◆for sure,@KEY()↓
+◆without fail,@KEY()↓
+◆certainly,@KEY()↓
+◆something wonderful will happen.@KEY()↓
+◆Believe me, this hint is worth a lot more than you paid.
 ;jpn:◆ポーラスターようちえんの↓
-;jpn:　みなみにある@KEY()↓
+;jpn: みなみにある@KEY()↓
 ;jpn:◆アップルキッドと↓
-;jpn:　オレンジキッドの　いえには↓
-;jpn:　もういったかな？@KEY()↓
+;jpn: オレンジキッドの いえには↓
+;jpn: もういったかな?@KEY()↓
 ;jpn:◆かれらは↓
-;jpn:　いだいな　はつめいか‥‥@KEY()↓
-;jpn:◆の　たまごだ。@KEY()↓
+;jpn: いだいな はつめいか‥‥@KEY()↓
+;jpn:◆の たまごだ。@KEY()↓
 ;jpn:◆かれらは↓
-;jpn:　しきんなどの　えんじょを↓
-;jpn:　もとめている。@KEY()↓
-;jpn:◆えんじょを　すると↓
-;jpn:　あとで‥‥@KEY()↓
-;jpn:◆きっと！@KEY()↓
-;jpn:◆かならず！@KEY()↓
-;jpn:◆もれなく！@KEY()↓
+;jpn: しきんなどの えんじょを↓
+;jpn: もとめている。@KEY()↓
+;jpn:◆えんじょを すると↓
+;jpn: あとで‥‥@KEY()↓
+;jpn:◆きっと!@KEY()↓
+;jpn:◆かならず!@KEY()↓
+;jpn:◆もれなく!@KEY()↓
 ;jpn:◆いいことがあるはずだ。@KEY()↓
 ;jpn:◆もらった↓
-;jpn:　りょうきん　いじょうの↓
-;jpn:　サービスをしてしまった。
+;jpn: りょうきん いじょうの↓
+;jpn: サービスをしてしまった。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;アップル援助後
-;ＨＨ村に行きなさい
+;HH村に行きなさい
 _HINT_HH;marcus
-◆Ｉｆ　ｙｏｕ　ｇｏ　ｅａｓｔ　ｆｒｏｍ　ｔｈｅ　ｂｕｓ　ｓｔｏｐ，@KEY()↓
-◆ｙｏｕ　ｗｉｌｌ　ｅｎｔｅｒ　ｔｈｅ　Ｒｅｓｔｆｕｌ　Ｐｅａｃｅ　Ｖａｌｌｅｙ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｋｅｅｐ　ｇｏｉｎｇ　ｅａｓｔ，　ｙｏｕ　ｗｉｌｌ　ｃｏｍｅ　ｔｏ　Ｈａｐｐｙ　Ｈａｐｐｙ　Ｖｉｌｌａｇｅ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｍａｙｂｅ　ｇｏ　ｔｈｅｒｅ，　ｕｎｌｅｓｓ　ｙｏｕ　ｈａｖｅ　ｓｏｍｅｔｈｉｎｇ　ｂｅｔｔｅｒ　ｔｏ　ｄｏ？
+◆If you go east from the bus stop,@KEY()↓
+◆you will enter the Restful Peace Valley.@KEY()↓
+◆If you keep going east, you will come to Happy Happy Village.@KEY()↓
+◆You should maybe go there, unless you have something better to do?
 ;jpn:◆バスていを↓
-;jpn:　ひがしに　いくと@KEY()↓
+;jpn: ひがしに いくと@KEY()↓
 ;jpn:◆グレートフルデッドのたに↓
-;jpn:　がある。@KEY()↓
-;jpn:◆そこを　さらに↓
-;jpn:　ひがしに　いくと@KEY()↓
-;jpn:◆ハッピーハッピーむらが　ある。@KEY()↓
+;jpn: がある。@KEY()↓
+;jpn:◆そこを さらに↓
+;jpn: ひがしに いくと@KEY()↓
+;jpn:◆ハッピーハッピーむらが ある。@KEY()↓
 ;jpn:◆することがなければ↓
-;jpn:　いってみるかい？
+;jpn: いってみるかい?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -331,186 +331,186 @@ _HINT_HH;marcus
 ;アップル電話かかってきた後
 ;アップルキッドに会いに行きなさい
 _HINT_APPLEPHONE;marcus
-◆Ｙｏｕ　ｇｏｔ　ａ　ｃａｌｌ　ｆｒｏｍ　Ａｐｐｌｅ　Ｋｉｄ　ｏｎ　ｙｏｕｒ　ｐｏｒｔａｂｌｅ　ｐｈｏｎｅ？@KEY()↓
+◆You got a call from Apple Kid on your portable phone?@KEY()↓
 ;＠受信電話
-◆Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｄｏｉｎｇ　ｈｅｒｅ，　ｓｏ　ｆａｒ　ａｗａｙ　ｆｒｏｍ　ｈｏｍｅ？@KEY()↓
+◆What are you doing here, so far away from home?@KEY()↓
 ;＠アップルキッドから遠く
-◆Ｉ　ｃａｎ’ｔ　ｇｉｖｅ　ｙｏｕ　ａｎｙ　ｈｉｎｔｓ，　ｂｕｔ　Ｉ’ｌｌ　ｋｅｅｐ　ｙｏｕｒ　＄@DSP_NUM(0)．
+◆I can’t give you any hints, but I’ll keep your ＄@DSP_NUM(0).
 ;jpn:◆アップルキッドに↓
-;jpn:　じゅしんでんわで↓
-;jpn:　よばれたんだろ？@KEY()↓
+;jpn: じゅしんでんわで↓
+;jpn: よばれたんだろ?@KEY()↓
 ;jpn:◆こんなにとおくまで↓
-;jpn:　なにしにきたんだい？@KEY()↓
+;jpn: なにしにきたんだい?@KEY()↓
 ;jpn:◆ヒントはあげられないけど↓
-;jpn:　この@DSP_NUM(0)ドルは↓
-;jpn:　もらっとくよ。
+;jpn: この@DSP_NUM(0)ドルは↓
+;jpn: もらっとくよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;タコ消しマシン入手後
-;トンチキとはなしＧフルに行きなさい
+;トンチキとはなしGフルに行きなさい
 _HINT_FIND_PAULA;marcus
-◆Ｈａｖｅ　ｙｏｕ　ｓｐｏｋｅｎ　ｔｏ　Ｅｖｅｒｄｒｅｄ　ｉｎ　Ｂｕｒｇｌｉｎ　Ｐａｒｋ？↓
+◆Have you spoken to Everdred in Burglin Park?↓
 ;jpn:◆ヌスットひろばにいる↓
-;jpn:　トンチキさんから@KEY()↓
-;jpn:◆はなしはきいたかい？↓
+;jpn: トンチキさんから@KEY()↓
+;jpn:◆はなしはきいたかい?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_HINT_PAULA_YES,_HINT_PAULA_NO)
 _HINT_PAULA_NO;marcus
-◆Ｗｅｌｌ，　ｗｅｌｌ，　ｗｅｌｌ．．．Ｔｈａｔ’ｓ　ｎｏｔ　ｇｏｏｄ．@KEY()↓
-◆Ｙｏｕ　ｒｅａｌｌｙ　ｓｈｏｕｌｄ　ｔａｋｅ　ｔｈｅ　ｔｉｍｅ　ｏｕｔ　ｔｏ　ｍｅｅｔ　Ｅｖｅｒｄｒｅｄ．
+◆Well, well, well...That’s not good.@KEY()↓
+◆You really should take the time out to meet Everdred.
 ;jpn:◆いかん。↓
-;jpn:　そういうことではいかんな。@KEY()↓
+;jpn: そういうことではいかんな。@KEY()↓
 ;jpn:◆ヌスットひろばの↓
-;jpn:　トンチキさんにあって↓
-;jpn:　はなしをききなさい。
+;jpn: トンチキさんにあって↓
+;jpn: はなしをききなさい。
 @GOSUB(_HINT_KOKOMADE)
 @!
 _HINT_PAULA_YES;marcus
-◆Ｗｈａｔ？　　Ｙｏｕ　ＤＩＤ　ｔａｌｋ　ｔｏ　ｈｉｍ？　　Ｓｏ，　ｗｈｙ　ａｒｅ　ｙｏｕ　ｈｅｒｅ？@KEY()↓
-◆Ｇｏ　ｂａｃｋ　ｔｏ　ｔｈｅ　Ｒｅｓｔｆｕｌ　Ｐｅａｃｅ　Ｖａｌｌｅｙ．
-;jpn:◆なに！↓
-;jpn:　はなしをきいているのか。@KEY()↓
-;jpn:◆じゃあ　なんで↓
-;jpn:　こんなところにいるんだい？@KEY()↓
+◆What?  You DID talk to him?  So, why are you here?@KEY()↓
+◆Go back to the Restful Peace Valley.
+;jpn:◆なに!↓
+;jpn: はなしをきいているのか。@KEY()↓
+;jpn:◆じゃあ なんで↓
+;jpn: こんなところにいるんだい?@KEY()↓
 ;jpn:◆もういちど↓
-;jpn:　グレートフルほうめんへ↓
-;jpn:　いきなさい。
+;jpn: グレートフルほうめんへ↓
+;jpn: いきなさい。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;11　HH村到着後
+;11 HH村到着後
 ;教団本部へ行きなさい
 _HINT_GO_HHBASE;marcus
-◆Ｈａｖｅ　ｙｏｕ　ｂｅｅｎ　ｔｏ　ｔｈｅ　Ｈａｐｐｙ　Ｈａｐｐｙｉｓｍ　ｈｅａｄｑｕａｒｔｅｒｓ@KEY()↓
-◆ａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　Ｈａｐｐｙ　Ｈａｐｐｙ　ｖｉｌｌａｇｅ？@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ　ｔｈｅｒｅ？@KEY()↓
-◆Ｏｒ　ｎｏｔ？@KEY()↓
-◆Ｗｈａｔ？@KEY()↓
-◆Ｗｈｙ　ｃａｎ’ｔ　ｙｏｕ　ｍａｋｅ　ｕｐ　ｙｏｕｒ　ｍｉｎｄ！
+◆Have you been to the Happy Happyism headquarters@KEY()↓
+◆at the center of Happy Happy village?@KEY()↓
+◆Do you want to go there?@KEY()↓
+◆Or not?@KEY()↓
+◆What?@KEY()↓
+◆Why can’t you make up your mind!
 ;jpn:◆ハッピーハッピーむらの↓
-;jpn:　ちゅうおうにある↓
-;jpn:　きょうだんほんぶへ@KEY()↓
-;jpn:◆いくか？@KEY()↓
-;jpn:◆いってみるか？@KEY()↓
-;jpn:◆やめるか？@KEY()↓
-;jpn:◆え？@KEY()↓
-;jpn:◆どうするつもりだ？
+;jpn: ちゅうおうにある↓
+;jpn: きょうだんほんぶへ@KEY()↓
+;jpn:◆いくか?@KEY()↓
+;jpn:◆いってみるか?@KEY()↓
+;jpn:◆やめるか?@KEY()↓
+;jpn:◆え?@KEY()↓
+;jpn:◆どうするつもりだ?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;カーペインターに雷落とされた後
-;（カーペインターは雷を操るので）ポーラを探しなさい
+;(カーペインターは雷を操るので)ポーラを探しなさい
 _HINT_FRANKRIN;marcus
-◆Ｄｏ　ｙｏｕ　ｒｅｍｅｍｂｅｒ　ｓｅｅｉｎｇ　ａ　ｌｉｔｔｅ　ｍｏｕｎｔａｉｎ　ｃａｂｉｎ　ｏｎ　ｔｈｅ　ｗａｙ@KEY()↓
-◆ｔｈｒｏｕｇｈ　ｔｈｅ　Ｒｅｓｔｆｕｌ　Ｐｅａｃｅ　Ｖａｌｌｅｙ？@KEY()↓
-◆Ｔｈｅｒｅ　ｍｕｓｔ　ｂｅ　ａ　ｃａｖｅ　ｉｎ　ｔｈｅ　Ｈａｐｐｙ　Ｈａｐｐｙ　ｖｉｌｌａｇｅ　ｔｈａｔ　ｌｅａｄｓ　ｔｏ　ｔｈａｔ　ｃａｂｉｎ．
+◆Do you remember seeing a litte mountain cabin on the way@KEY()↓
+◆through the Restful Peace Valley?@KEY()↓
+◆There must be a cave in the Happy Happy village that leads to that cabin.
 ;jpn:◆グレートフルデッドのたにを↓
-;jpn:　ぬける　とちゅうに@KEY()↓
-;jpn:◆ほったてごや　が↓
-;jpn:　あっただろう？@KEY()↓
+;jpn: ぬける とちゅうに@KEY()↓
+;jpn:◆ほったてごや が↓
+;jpn: あっただろう?@KEY()↓
 ;jpn:◆ハッピーハッピーむらには↓
-;jpn:　そこへつうじる↓
-;jpn:　どうくつがあったはずだよ。
+;jpn: そこへつうじる↓
+;jpn: どうくつがあったはずだよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;Ｆバッチ獲得後
+;Fバッチ獲得後
 ;カーペインターを倒しなさい
 _HINT_CARPAINTER;marcus
-◆Ｔｈｉｓ　ｉｓ　ｍｙ　ｂｕｓｉｎｅｓｓ，　ｓｏ　Ｉ’ｍ　ｈａｐｐｙ　ｔｏ　ｈａｖｅ　ｃｕｓｔｏｍｅｒｓ．@KEY()↓
-◆Ｂｕｔ　ｔｈｉｓ　ｉｓ　ｎｏｔ　ｔｈｅ　ｔｉｍｅ　ｔｏ　ｂｅ　ｔａｌｋｉｎｇ　ａｂｏｕｔ　ｂｕｓｉｎｅｓｓ！@KEY()↓
-;＠こんなところに来ている場合じゃないだろう？
-◆Ａｎｙｗａｙ，　Ｉ’ｌｌ　ｋｅｅｐ　ｙｏｕｒ　＄@DSP_NUM(0)．
+◆This is my business, so I’m happy to have customers.@KEY()↓
+◆But this is not the time to be talking about business!@KEY()↓
+;＠こんなところに来ている場合じゃないだろう?
+◆Anyway, I’ll keep your ＄@DSP_NUM(0).
 ;jpn:◆おじさんも↓
-;jpn:　しょうばいだから@KEY()↓
+;jpn: しょうばいだから@KEY()↓
 ;jpn:◆きゃくがくるのは↓
-;jpn:　うれしいけど@KEY()↓
+;jpn: うれしいけど@KEY()↓
 ;jpn:◆いまは↓
-;jpn:　そんなばあいじゃ↓
-;jpn:　ないだろう！@KEY()↓
-;jpn:◆でも　この@DSP_NUM(0)ドルは↓
-;jpn:　もらっとくよ。
+;jpn: そんなばあいじゃ↓
+;jpn: ないだろう!@KEY()↓
+;jpn:◆でも この@DSP_NUM(0)ドルは↓
+;jpn: もらっとくよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;カーペインター倒した後
 ;ポーラを救出しなさい
 _HINT_RESCUE_PAULA;marcus
-◆Ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　@DSP_NAME(PC_PAULA)　ｉｓ　ｉｎ　ｔｈｅ　ｍｏｕｎｔａｉｎ　ｃａｂｉｎ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｂｙ　ｒｅｓｃｕｉｎｇ　ｈｅｒ，　ｙｏｕ　ａｃｔｕａｌｌｙ　ｒｅｓｃｕｅ　ｙｏｕｒｓｅｌｆ．
+◆You know that @DSP_NAME(PC_PAULA) is in the mountain cabin, right?@KEY()↓
+◆By rescuing her, you actually rescue yourself.
 ;jpn:◆@DSP_NAME(PC_PAULA)が↓
-;jpn:　あの　ほったてごや　に↓
-;jpn:　いることは@KEY()↓
-;jpn:◆しっているだろう？@KEY()↓
+;jpn: あの ほったてごや に↓
+;jpn: いることは@KEY()↓
+;jpn:◆しっているだろう?@KEY()↓
 ;jpn:◆かのじょを↓
-;jpn:　たすけることは@KEY()↓
-;jpn:◆けっきょく　じぶんを↓
-;jpn:　たすけることに↓
-;jpn:　なるだろう。
+;jpn: たすけることは@KEY()↓
+;jpn:◆けっきょく じぶんを↓
+;jpn: たすけることに↓
+;jpn: なるだろう。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ポーラ救出後
 ;ポーラをオヤジの元に届けなさい
 _HINT_PAULAPAPA;marcus
-◆@DSP_NAME(PC_PAULA)’ｓ　ｆａｔｈｅｒ　ａｔ　ｔｈｅ　Ｐｏｌｅｓｔａｒ　Ｐｒｅｓｃｈｏｏｌ　ｍｕｓｔ　ｂｅ　ｒｅａｌｌｙ　ｗｏｒｒｉｅｄ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ｃｏｎｓｉｄｅｒａｔｅ　ｏｆ　ａ　ｆａｔｈｅｒ’ｓ　ｆｅｅｌｉｎｇｓ　ｔｏｗａｒｄ　ｈｉｓ　ｄａｕｇｈｔｅｒ．@KEY()↓
-◆Ｈｅ’ｓ　ｏｎｌｙ　ｈｕｍａｎ，　ｙ’ｋｎｏｗ！
+◆@DSP_NAME(PC_PAULA)’s father at the Polestar Preschool must be really worried.@KEY()↓
+◆You should be considerate of a father’s feelings toward his daughter.@KEY()↓
+◆He’s only human, y’know!
 ;jpn:◆ポーラスターようちえんにいる↓
-;jpn:　@DSP_NAME(PC_PAULA)のちちおやは@KEY()↓
+;jpn: @DSP_NAME(PC_PAULA)のちちおやは@KEY()↓
 ;jpn:◆きっと↓
-;jpn:　しんぱいしている↓
-;jpn:　はずだよなあ。@KEY()↓
+;jpn: しんぱいしている↓
+;jpn: はずだよなあ。@KEY()↓
 ;jpn:◆こをおもう↓
-;jpn:　おやのきもち↓
-;jpn:　ってぇものを@KEY()↓
+;jpn: おやのきもち↓
+;jpn: ってぇものを@KEY()↓
 ;jpn:◆かんがえたほうが↓
-;jpn:　いいとおもうぞ↓
-;jpn:　ひととして。
+;jpn: いいとおもうぞ↓
+;jpn: ひととして。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ポーラ父と別れた後
 ;トンチキに会いに行きなさい
 _HINT_TWSN_TONCHIKI;marcus
-;ツーソン　ちちおやと分かれた後
-◆Ｇｏ　ａｎｄ　ｓｅｅ　Ｅｖｅｒｄｒｅｄ，　ｔｈｅ　ｂｏｓｓ　ｏｆ　Ｂｕｒｇｌｉｎ　Ｐａｒｋ．@KEY()↓
-◆Ｊｕｓｔ　ｔｒｕｓｔ　ｍｅ．．．ｙｏｕ　ｇｏ　ｓｅｅ　ｈｉｍ．
+;ツーソン ちちおやと分かれた後
+◆Go and see Everdred, the boss of Burglin Park.@KEY()↓
+◆Just trust me...you go see him.
 ;jpn:◆ヌスットひろばの↓
-;jpn:　おやぶん@KEY()↓
+;jpn: おやぶん@KEY()↓
 ;jpn:◆トンチキさんに↓
-;jpn:　あってみろ。@KEY()↓
+;jpn: あってみろ。@KEY()↓
 ;jpn:◆わるいことは↓
-;jpn:　いわないから↓
-;jpn:　あってみろって。
+;jpn: いわないから↓
+;jpn: あってみろって。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;トンチキのさつたばもらった後
 ;トンズラを「さつたば」で解放しなさい
 _HINT_TONZURA_CHAOS;
-◆Ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ，　ｔｈｅ　ｂａｎｄ　ａｔ　ｔｈｅ　Ｃｈａｏｓ　ｔｈｅａｔｅｒ，　ｉｓ　ｕｐ　ｔｈｅｉｒ　ｅｙｅｓ　ｉｎ　ｄｅｂｔ．@KEY()↓
-◆Ｃｏｕｌｄ　ａｎｙｏｎｅ　ｐａｙ　ｏｆｆ　ｔｈｅｉｒ　ｄｅｂｔ　ｆｏｒ　ｔｈｅｍ？
+◆The Runaway Five, the band at the Chaos theater, is up their eyes in debt.@KEY()↓
+◆Could anyone pay off their debt for them?
 ;jpn:◆カオスげきじょうの↓
-;jpn:　トンズラブラザーズは@KEY()↓
+;jpn: トンズラブラザーズは@KEY()↓
 ;jpn:◆しゃっきんで↓
-;jpn:　みうごきがとれない。@KEY()↓
+;jpn: みうごきがとれない。@KEY()↓
 ;jpn:◆しゃっきんを↓
-;jpn:　かたがわりできるやつは↓
-;jpn:　いないかなあ‥‥。
+;jpn: かたがわりできるやつは↓
+;jpn: いないかなあ‥‥。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;トンズラ解放（カオス劇場）後
+;トンズラ解放(カオス劇場)後
 ;スリークに行きなさい
 _HINT_TOTHRK;marcus
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｔｈｅｒｅ　ｉｓ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｄｏ　ｉｎ　ｔｈｉｓ　ｔｏｗｎ．@KEY()↓
-◆Ｉｔ’ｓ　ｏｋａｙ　ｏｆ　ｙｏｕ　ｓｔａｙ，　ｂｕｔ　ｉｔ’ｓ　ｒｅａｌｌｙ　ｏｋａｙ　ｉｆ　ｙｏｕ　ｌｅａｖｅ．．．
-;jpn:◆このまちで　すべきことは↓
-;jpn:　もうないはずだ。@KEY()↓
-;jpn:◆このまま　まちに↓
-;jpn:　のこるもよし。@KEY()↓
+◆I don’t think there is anything else you need to do in this town.@KEY()↓
+◆It’s okay of you stay, but it’s really okay if you leave...
+;jpn:◆このまちで すべきことは↓
+;jpn: もうないはずだ。@KEY()↓
+;jpn:◆このまま まちに↓
+;jpn: のこるもよし。@KEY()↓
 ;jpn:◆のこらないのもよし。
 @GOSUB(_HINT_KOKOMADE)
 @!
@@ -518,60 +518,60 @@ _HINT_TOTHRK;marcus
 ;スリーク到着後
 ;見張りゾンビに会いに行きなさい
 _HINT_MIHARIZOMBI;marcus
-;スリーク　当着後
-◆Ｔｈｅｒｅ’ｓ　ａ　ｔｕｎｎｅｌ　ｏｆ　ｔｈｉｓ　ｔｏｗｎ．@KEY()↓
-◆Ｔｈｅｒｅ　ａｒｅ　ｔｗｏ　ｇｕａｒｄ　ｚｏｍｂｉｅｓ　ｔｈａｔ　ｈａｎｇ　ｏｕｔ　ａｔ　ｔｈｅ　ｅｎｔｒａｎｃｅ．@KEY()↓
-◆Ｔｈｅｙ　ａｒｅ　ａｃｔｕａｌｌｙ　ｐｒｅｔｔｙ　ｎｉｃｅ　ｇｕｙｓ．．．．@KEY()↓
-◆Ｉｔ　ｍｉｇｈｔ　ｂｅ　ａ　ｇｏｏｄ　ｉｄｅａ　ｔｏ　ｍｅｅｔ　ｔｈｏｓｅ　ｇｕｙｓ．．．@KEY()↓
-◆Ｂｕｔ　ｉｔ’ｓ　ｑｕｉｔｅ　ａｌｌ　ｒｉｇｈｔ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ．．．@KEY()↓
-◆Ｔｈｏｕｇｈ　Ｉ　ｔｈｉｎｋ　ｔｈａｔ　ｙｏｕ　ｒｅａｌｌｙ　ｏｕｇｈｔ　ｔｏ　ｇｏ　ｔｈｅｒｅ．
-;jpn:◆このまちの　ほくせいに↓
-;jpn:　ちかつうろが　ある。@KEY()↓
+;スリーク 当着後
+◆There’s a tunnel of this town.@KEY()↓
+◆There are two guard zombies that hang out at the entrance.@KEY()↓
+◆They are actually pretty nice guys....@KEY()↓
+◆It might be a good idea to meet those guys...@KEY()↓
+◆But it’s quite all right if you don’t...@KEY()↓
+◆Though I think that you really ought to go there.
+;jpn:◆このまちの ほくせいに↓
+;jpn: ちかつうろが ある。@KEY()↓
 ;jpn:◆そこには↓
-;jpn:　ふたりの↓
-;jpn:　みはりゾンビがいる。@KEY()↓
-;jpn:◆ねは　いいやつらなんだが‥‥。@KEY()↓
+;jpn: ふたりの↓
+;jpn: みはりゾンビがいる。@KEY()↓
+;jpn:◆ねは いいやつらなんだが‥‥。@KEY()↓
 ;jpn:◆そこにいってみるのもいい。↓
-;jpn:　いってみないのもいい。@KEY()↓
+;jpn: いってみないのもいい。@KEY()↓
 ;jpn:◆でも↓
-;jpn:　いってみたほうが↓
-;jpn:　いいとおもうな。
+;jpn: いってみたほうが↓
+;jpn: いいとおもうな。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;見張りゾンビジロリ後
-;（ゾンビに捕まるために）スリークホテルに行きなさい
+;(ゾンビに捕まるために)スリークホテルに行きなさい
 _HINT_HOTELZOMBI;marcus
-◆Ｓｏ，　ｈｏｗ　ａｒｅ　ｙｏｕ　ｄｏｉｎ’，ｋｉｄ？@KEY()↓
-◆Ｉｆ　ｙｏｕ’ｒｅ　ｔｉｒｅｄ，　ｙｏｕ　ｓｈｏｕｌｄ　ｇｏ　ｔｏ　ｔｈｅ　ｈｏｔｅｌ　ａｎｄ　ｒｅｓｔ．
+◆So, how are you doin’,kid?@KEY()↓
+◆If you’re tired, you should go to the hotel and rest.
 
-;jpn:◆どうだい　ぼうや@KEY()↓
+;jpn:◆どうだい ぼうや@KEY()↓
 ;jpn:◆あるきつかれたら↓
-;jpn:　ホテルでやすんでみては↓
-;jpn:　どうだろう。
+;jpn: ホテルでやすんでみては↓
+;jpn: どうだろう。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ジェフ合流直後
 ;ばけテントを倒しなさい
 _HINT_MATENT;marcus
-;スリーク　ジェフ合流直後
-◆Ｄｏ　ｙｏｕ　ｋｎｏｗ　ａｂｏｕｔ　ｔｈａｔ　ｍｙｓｔｅｒｉｏｕｓ　ｔｅｎｔ　ｔｈａｔ　ａｐｐｅａｒｅｄ　ａｔ　ｔｈｅ　ｓｏｕｔｈ　ｅｎｄ　ｏｆ　ｔｏｗｎ？@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ，　ｂｕｔ．．．↓
-　　ｉｔ　ｌｏｏｋｓ　ｋｉｎｄａ．．．↓
-　　ｓｔｒａｎｇｅ．．．
+;スリーク ジェフ合流直後
+◆Do you know about that mysterious tent that appeared at the south end of town?@KEY()↓
+◆I don’t know, but...↓
+  it looks kinda...↓
+  strange...
 
 ;jpn:◆まちのみなみに↓
-;jpn:　ふしぎなテントが　できたのを↓
-;jpn:　しってるかい？@KEY()↓
+;jpn: ふしぎなテントが できたのを↓
+;jpn: しってるかい?@KEY()↓
 ;jpn:◆なんだか‥‥↓
-;jpn:　とっても‥‥↓
-;jpn:　あやしいかんじが‥‥。
+;jpn: とっても‥‥↓
+;jpn: あやしいかんじが‥‥。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ばけテント倒した後
-;ゾンビホイホイをピザ配達人からもらいなさい（今はヒントなし）
+;ゾンビホイホイをピザ配達人からもらいなさい(今はヒントなし)
 _HINT_ITEM_ZOMBIHOIHOI;
 @GOSUB(_HINT_WARUINE)
 @!
@@ -579,66 +579,66 @@ _HINT_ITEM_ZOMBIHOIHOI;
 ;ゾンビホイホイ獲得後
 ;ゾンビホイホイ仕掛けて一泊しなさい
 _HINT_ZOMBI_HOIHOI;marcus
-◆”Ｚｏｍｂｉｅ　Ｐａｐｅｒ　ｏｎｌｙ　ｗｏｒｋｓ　ｗｅｌｌ　ｉｎ　ａ　ｔｅｎｔ．”@KEY()↓
-◆”Ａｆｔｅｒ　ｙｏｕ　ｓｅｔ　ｔｈｅ　ｐａｐｅｒ　ｉｎ　ａ　ｔｅｎｔ，　ｇｏ　ｔｏ　ｔｈｅ　ｈｏｔｅｌ　ａｎｄ　ｐｕｔ　ｙｏｕｒ　ｄｏｇｓ　ｕｐ．”@KEY()↓
-◆Ｗｈａｔ，　ｄｉｄｎ’ｔ　ｙｏｕ　ｒｅａｄ　ｔｈｅ　Ｚｏｍｂｉｅ　ｐａｐｅｒ　ｉｎｓｔｒｕｃｔｉｏｎｓ？
+◆”Zombie Paper only works well in a tent.”@KEY()↓
+◆”After you set the paper in a tent, go to the hotel and put your dogs up.”@KEY()↓
+◆What, didn’t you read the Zombie paper instructions?
 
 ;jpn:◆「ゾンビホイホイは↓
-;jpn:　テントにしかけてこそ↓
-;jpn:　こうかがあります」@KEY()↓
+;jpn: テントにしかけてこそ↓
+;jpn: こうかがあります」@KEY()↓
 ;jpn:◆「そして↓
-;jpn:　テントにしかけたら↓
-;jpn:　ホテルでやすみます」@KEY()↓
+;jpn: テントにしかけたら↓
+;jpn: ホテルでやすみます」@KEY()↓
 ;jpn:◆ゾンビホイホイの↓
-;jpn:　しようじょうのちゅういを↓
-;jpn:　よまなかったのかい？
+;jpn: しようじょうのちゅういを↓
+;jpn: よまなかったのかい?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ゾンビ捕獲後
 ;墓場ダンジョンの先に行きなさい	○
 _HINT_BDUNGEON;marcus
-◆Ｔｈｅｒｅ’ｓ　ａｎ　ｕｎｄｅｒｇｒｏｕｎｄ　ｐａｔｈ　ｎｏｒｔｈｗｅｓｔ　ｏｆ　ｔｈｉｓ　ｔｏｗｎ．@KEY()↓
-◆Ｔｈｏｓｅ　ｇｕａｒｄ　ｚｏｍｂｉｅｓ　ｓｈｏｕｌｄ　ｂｅ　ｇｏｎｅ　ｎｏｗ．
+◆There’s an underground path northwest of this town.@KEY()↓
+◆Those guard zombies should be gone now.
 
-;jpn:◆このまちの　ほくせいに↓
-;jpn:　ちかつうろが　ある。@KEY()↓
-;jpn:◆もう　みはりゾンビも↓
-;jpn:　いないはずだよ。
+;jpn:◆このまちの ほくせいに↓
+;jpn: ちかつうろが ある。@KEY()↓
+;jpn:◆もう みはりゾンビも↓
+;jpn: いないはずだよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;墓場ダンジョンボス倒した後
-;土星谷へ行きなさい（いまはヒントなし）
+;土星谷へ行きなさい(いまはヒントなし)
 _HINT_GO_DOSEI;marcus
-◆♪Ｓａｔｕｒｎ　ｖａｌｌｅｙ　ｉｓ　ｖｅｒｙ　ｎｉｃｅ↓
-　　Ｙｏｕ　ｓｈｏｕｌｄ　ｇｏ↓
-　　ａｔ　ｌｅａｓｔ　ｏｎｃｅ　ｏｒ　ｔｗｉｃｅ．♪
+◆♪Saturn valley is very nice↓
+  You should go↓
+  at least once or twice.♪
 
-;jpn:◆音どせいだに　よいとーこー↓
-;jpn:　いちどーはー　おいでー↓
-;jpn:　ハァどっこいしょ音
+;jpn:◆音どせいだに よいとーこー↓
+;jpn: いちどーはー おいでー↓
+;jpn: ハァどっこいしょ音
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;土星谷に着いた
 ;秘密基地に入るため土星さんから合言葉聞きなさい
 _HINT_GET_PASSWORD;marcus
-◆Ｉｔ　ｓｅｅｍｓ　ｌｉｋｅ　ｙｏｕ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈａｔ　ｔｏ　ｄｏ　ｉｎ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ．@KEY()↓
-◆Ｔｈｅ　Ｍｒ．　Ｓａｔｕｒｎ　ｏｎ　ｔｈｅ　ｓｅｃｏｎｄ　ｆｌｏｏｒ　ｏｆ　ｔｈｅ　ｃａｖｅ　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｔｅｌｌ　ｙｏｕ　@KEY()↓
-◆ａ　ｐａｓｓｗｏｒｄ　ｔｏ　ｇｅｔ　ｙｏｕ　ｉｎｔｏ　ｔｈｅ　ｓｅｃｒｅｔ　ｂａｓｅ．@KEY()↓
-◆Ｎｏｗ　ｔｈａｔ　ｓｏｕｎｄｓ　ｌｉｋｅ　ｓｏｍｅ　ｈａｎｄｙ　ｉｎｆｏ！
+◆It seems like you don’t know what to do in Saturn Valley.@KEY()↓
+◆The Mr. Saturn on the second floor of the cave should be able to tell you @KEY()↓
+◆a password to get you into the secret base.@KEY()↓
+◆Now that sounds like some handy info!
 
 ;jpn:◆サターンバレーで↓
-;jpn:　することが↓
-;jpn:　わからないようだね。@KEY()↓
+;jpn: することが↓
+;jpn: わからないようだね。@KEY()↓
 ;jpn:◆ほらあなの２かいにいる↓
-;jpn:　どせいさんが@KEY()↓
-;jpn:◆ひみつきちに　はいる↓
-;jpn:　あいことばを↓
-;jpn:　おしえてくれるはずだ。@KEY()↓
-;jpn:◆それを　きくと↓
-;jpn:　いいかもしれない。
+;jpn: どせいさんが@KEY()↓
+;jpn:◆ひみつきちに はいる↓
+;jpn: あいことばを↓
+;jpn: おしえてくれるはずだ。@KEY()↓
+;jpn:◆それを きくと↓
+;jpn: いいかもしれない。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -646,99 +646,99 @@ _HINT_GET_PASSWORD;marcus
 ;合言葉聞いた
 ;合言葉通りの事をして秘密基地に入りなさい
 _HINT_GO_GEPPUBASE;marcus
-◆Ｍｒ．　Ｓａｔｕｒｎ　ｍｕｓｔ　ｈａｖｅ　ｔｏｌｄ　ｙｏｕ　ｔｏ　ｗａｉｔ　ｆｏｒ　ｔｈｒｅｅ　ｍｉｎｕｔｅｓ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　ｗａｔｅｒｆａｌｌ．@KEY()↓
-◆Ｗｈａｔ？　　Ｙｏｕ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈｅｒｅ　ｔｈｅ　ｗａｔｅｒｆａｌｌ　ｉｓ？@KEY()↓
-◆Ｔｈｅ　ｗａｔｅｒｆａｌｌ　ｉｓ　ａｃｔｕａｌｌｙ　ｎａｍｅｄ　Ｇｒａｐｅｆｒｕｉｔ　ｗａｔｅｒｆａｌｌ．@KEY()↓
-◆Ａｆｔｅｒ　ｙｏｕ　ｅｘｉｔ　ｔｈｅ　ｔｕｎｎｅｌ　ｔｈａｔ　ｂｅｇｉｎｓ　ｉｎ　ｔｈｅ　Ｔｈｒｅｅｄ　ｇｒａｖｅｙａｒｄ，@KEY()↓
-◆ｇｏ　ｔｏ　ｔｈｅ　ｎｏｒｔｈ．@KEY()↓
-◆Ｙｏｕ　ｃｅｒｔａｉｎｌｙ　ｋｎｏｗ　ａｂｏｕｔ　ｔｈｅ　ｃａｖｅ　ｔｏ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ　ｔｈａｔ　ｉｓ　ｔｈｅｎ　ｏｎ　ｙｏｕｒ　ｒｉｇｈｔ．@KEY()↓
-◆Ｂｕｔ．．．↓
-　　Ｙｏｕ　ｓｈｏｕｌｄ　ｎｏｔ　ｇｏ　ｉｎ　ｔｈａｔ　ｃａｖｅ．@KEY()↓
-◆Ｋｅｅｐ　ｇｏｉｎｇ　ｓｔｒａｉｇｈｔ　ｎｏｒｔｈ．@KEY()↓
-◆Ｙｏｕ’ｌｌ　ｅｖｅｎｔｕａｌｌｙ　ｃｏｍｅ　ｔｏ　ｔｈｅ　Ｇｒａｐｅｆｒｕｉｔ　Ｗａｔｅｒｆａｌｌ．@KEY()↓
-◆Ｔｈｅｎ，　ｗａｉｔ　ｐａｔｉｅｎｔｌｙ　ｆｏｒ　ｔｈｒｅｅ　ｍｉｎｕｔｅｓ．
+◆Mr. Saturn must have told you to wait for three minutes in front of the waterfall.@KEY()↓
+◆What?  You don’t know where the waterfall is?@KEY()↓
+◆The waterfall is actually named Grapefruit waterfall.@KEY()↓
+◆After you exit the tunnel that begins in the Threed graveyard,@KEY()↓
+◆go to the north.@KEY()↓
+◆You certainly know about the cave to Saturn Valley that is then on your right.@KEY()↓
+◆But...↓
+  You should not go in that cave.@KEY()↓
+◆Keep going straight north.@KEY()↓
+◆You’ll eventually come to the Grapefruit Waterfall.@KEY()↓
+◆Then, wait patiently for three minutes.
 
 ;jpn:◆たきのまえで↓
-;jpn:　３ぷんかん　まてと↓
-;jpn:　どせいさんは　いったはずだ。@KEY()↓
-;jpn:◆たきのばしょがわからない？@KEY()↓
+;jpn: ３ぷんかん まてと↓
+;jpn: どせいさんは いったはずだ。@KEY()↓
+;jpn:◆たきのばしょがわからない?@KEY()↓
 ;jpn:◆たきとは↓
-;jpn:　グレープフルーツのたき。@KEY()↓
-;jpn:◆スリークから　つづく↓
-;jpn:　はかばの　ちかつうろを↓
-;jpn:　でたら　きたへすすむ。@KEY()↓
+;jpn: グレープフルーツのたき。@KEY()↓
+;jpn:◆スリークから つづく↓
+;jpn: はかばの ちかつうろを↓
+;jpn: でたら きたへすすむ。@KEY()↓
 ;jpn:◆みぎがわに↓
-;jpn:　サターンバレーにむかう↓
-;jpn:　どうくつがあっただろう。@KEY()↓
-;jpn:◆だが　しかーし！@KEY()↓
-;jpn:◆そこに　はいってはいけない。@KEY()↓
-;jpn:◆そのまま　まっすぐ↓
-;jpn:　きたへすすむのだ。@KEY()↓
+;jpn: サターンバレーにむかう↓
+;jpn: どうくつがあっただろう。@KEY()↓
+;jpn:◆だが しかーし!@KEY()↓
+;jpn:◆そこに はいってはいけない。@KEY()↓
+;jpn:◆そのまま まっすぐ↓
+;jpn: きたへすすむのだ。@KEY()↓
 ;jpn:◆どんどんあるくと‥‥↓
-;jpn:　つきあたりが@KEY()↓
+;jpn: つきあたりが@KEY()↓
 ;jpn:◆グレープフルーツのたき↓
-;jpn:　‥‥で‥‥@KEY()↓
+;jpn: ‥‥で‥‥@KEY()↓
 ;jpn:◆ございませ。@KEY()↓
 ;jpn:◆そこで３ぷんかん↓
-;jpn:　じっとまつのだ。
+;jpn: じっとまつのだ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;秘密基地に入った後（「はえみつ」取ってない）
+;秘密基地に入った後(「はえみつ」取ってない)
 ;スリークの魔テント跡のゴミ箱を調べて「はえみつ」を手に入れなさい
 _HINT_ITEM_HAEMITU;marcus
-@CHKFGOTO(FLG_ITEM_HAEMITU,_HINT_GEPPU);無限ループ修正！
-◆Ｏｈ，↓
-　　ｙｏｕ’ｖｅ　ｆｏｒｇｏｔｔｅｎ　ｔｏ　ｇｅｔ　ｓｏｍｅｔｈｉｎｇ　ｒｅａｌｌｙ　ｉｍｐｏｒｔａｎｔ．@KEY()↓
-◆Ｂｅ　ｓｕｒｅ　ｔｏ　ｃｈｅｃｋ　ｔｈｅ　ｇａｒｂａｇｅ　ｃａｎ　ｔｈａｔ　ｉｓ　ｌｅｆｔ　ｂｅｈｉｎｄ　ｂｙ　ｔｈｅ　Ｂｏｏｇｅｙ　Ｔｅｎｔ．
+@CHKFGOTO(FLG_ITEM_HAEMITU,_HINT_GEPPU);無限ループ修正!
+◆Oh,↓
+  you’ve forgotten to get something really important.@KEY()↓
+◆Be sure to check the garbage can that is left behind by the Boogey Tent.
 
 ;jpn:◆うーん↓
-;jpn:　なにか　だいじなものを↓
-;jpn:　とりわすれている！@KEY()↓
+;jpn: なにか だいじなものを↓
+;jpn: とりわすれている!@KEY()↓
 ;jpn:◆スリークの↓
-;jpn:　ばけテントのあとにある↓
-;jpn:　ごみばこを@KEY()↓
+;jpn: ばけテントのあとにある↓
+;jpn: ごみばこを@KEY()↓
 ;jpn:◆チェックしてみるといいぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;秘密基地に入った後（「はえみつ」取った）
+;秘密基地に入った後(「はえみつ」取った)
 ;「はえみつ」使ってゲップーを倒しなさい
 _HINT_GEPPU;marcus
 
-;◆おや？↓
-;　ゲップーで↓
-;　くろうしているようだね。@KEY()↓
-◆Ｈｏｗ　ａｂｏｕｔ　ｔｈｉｓ　ｆｏｒ　ｓｏｍｅ　ｅｘｔｒａ　ｓｐｅｃｉａｌ　ｈｅｌｐ−−Ｉ’ｌｌ　ｔｅａｃｈ　ｙｏｕ@KEY()↓
-◆ｓｏｍｅ　ｇｒｅａｔ　ｔａｔｃｔｉｃｓ　ｆｏｒ　ｄｅａｌｉｎｇ　ｗｉｔｈ　Ｂｅｌｃｈ．@KEY()↓
-◆Ｂｅｌｃｈ　ｒｅａｌｌｙ　ｌｏｖｅｓ　Ｆｌｙ　Ｈｏｎｅｙ，　ｆｒｏｍ　ｗｈａｔ　Ｉ’ｖｅ　ｈｅａｒｄ．@KEY()↓
-◆Ｔｈｅｒｅｆｏｒｅ，　ｙｏｕ　ｓｈｏｕｌｄ　ｕｓｅ　ｔｈｅ　Ｆｌｙ　Ｈｏｎｅｙ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．
+;◆おや?↓
+; ゲップーで↓
+; くろうしているようだね。@KEY()↓
+◆How about this for some extra special help−−I’ll teach you@KEY()↓
+◆some great tatctics for dealing with Belch.@KEY()↓
+◆Belch really loves Fly Honey, from what I’ve heard.@KEY()↓
+◆Therefore, you should use the Fly Honey during battle.
 
-;jpn:◆それでは　だいサービス↓
-;jpn:　とくべつに　ゲップー↓
-;jpn:　こうりゃくじょうほうを@KEY()↓
+;jpn:◆それでは だいサービス↓
+;jpn: とくべつに ゲップー↓
+;jpn: こうりゃくじょうほうを@KEY()↓
 ;jpn:◆おしえてあげよう。@KEY()↓
 ;jpn:◆やつは「はえみつ」が↓
-;jpn:　だいすきらしい。@KEY()↓
+;jpn: だいすきらしい。@KEY()↓
 ;jpn:◆せんとうちゅう↓
-;jpn:　「はえみつ」を↓
-;jpn:　つかってみるのだ。
+;jpn: 「はえみつ」を↓
+;jpn: つかってみるのだ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ゲップー倒した後
-;フォーサイド到着後（モッチー援助していない）
-;ミスフェイクに会った後（モッチー援助してない）
+;フォーサイド到着後(モッチー援助していない)
+;ミスフェイクに会った後(モッチー援助してない)
 ;ドコドコ砂漠のショージモッチーを援助しなさい	○
 _HINT_SYOZI_FOOD;marcus
-◆Ｉｎ　ｔｈｅ　ｍｉｄｄｌｅ　ｏｆ　Ｄｕｓｔｙ　Ｄｕｎｅｓ　Ｄｅｓｅｒｔ，　ｔｈｅｒｅ　ｉｓ　ｓｏｍｅｏｎｅ　ｗｈｏ’ｓ　ｓｔａｒｖｉｎｇ．@KEY()↓
+◆In the middle of Dusty Dunes Desert, there is someone who’s starving.@KEY()↓
 
 ;jpn:◆ドコドコさばくの↓
-;jpn:　まんなかに@KEY()↓
+;jpn: まんなかに@KEY()↓
 ;jpn:◆たべものがなくて↓
-;jpn:　こまっているひとがいる。@KEY()↓
-;　あうかもしれない@KEY()↓
-◆．．．Ｉ　ｊｕｓｔ　ｓｅｎｓｅ　ｉｔ．
+;jpn: こまっているひとがいる。@KEY()↓
+; あうかもしれない@KEY()↓
+◆...I just sense it.
 
 ;jpn:◆‥‥ようなきがする。
 @GOSUB(_HINT_KOKOMADE)
@@ -747,209 +747,209 @@ _HINT_SYOZI_FOOD;marcus
 ;モッチー援助後
 ;フォーサイドに行きなさい
 _HINT_GO_FOUR;marcus
-◆Ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ　Ｔｈｅａｔｅｒ　ｉｎ　Ｆｏｕｒｓｉｄｅ，@KEY()↓
-◆ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｈａｖｅ　ｂｏｏｋｅｄ　ａ　ｓｅｒｉｅｓ　ｏｆ　ｇｉｇｓ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｊｕｓｔ　ａ　ｒｕｍｏｒ，　ｂｕｔ　Ｉ　ｈｅａｒ　ｔｈａｔ　ｔｈｅｙ’ｖｅ　ｂｅｅｎ　ｓｎｏｗｅｄ　ａｇａｉｎ@KEY()↓
-◆ａｎｄ　ａｒｅ　ｉｎ　ｓｏｍｅ　ｋｉｎｄ　ｏｆ　ｔｒｏｕｂｌｅ．@KEY()↓
-◆Ｓｏ．．．↓
-　　Ｉｆ　Ｉ　ｗｅｒｅ　ｙｏｕ，Ｉ’ｄ　ｇｏ　ａｎｄ　ｔａｌｋ　ｗｉｔｈ　ｔｈｅｍ．
+◆At the Topolla Theater in Fourside,@KEY()↓
+◆the Runaway Five have booked a series of gigs.@KEY()↓
+◆This is just a rumor, but I hear that they’ve been snowed again@KEY()↓
+◆and are in some kind of trouble.@KEY()↓
+◆So...↓
+  If I were you,I’d go and talk with them.
 
 ;jpn:◆フォーサイドの↓
-;jpn:　トポロげきじょうに@KEY()↓
+;jpn: トポロげきじょうに@KEY()↓
 ;jpn:◆あの‥‥↓
-;jpn:　トンズラブラザーズが↓
-;jpn:　しゅつえんしている。@KEY()↓
+;jpn: トンズラブラザーズが↓
+;jpn: しゅつえんしている。@KEY()↓
 ;jpn:◆かぜのうわさだが↓
-;jpn:　かれらは　また↓
-;jpn:　ひとにだまされて@KEY()↓
+;jpn: かれらは また↓
+;jpn: ひとにだまされて@KEY()↓
 ;jpn:◆こまっているらしい。@KEY()↓
 ;jpn:◆ま‥‥↓
-;jpn:　おじさんが　ぼうやだったら↓
-;jpn:　かれらの　はなしを@KEY()↓
+;jpn: おじさんが ぼうやだったら↓
+;jpn: かれらの はなしを@KEY()↓
 ;jpn:◆きいてあげるけどね。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;モッチー援助後
-;トンズラが働かされているトポロ劇場に行きなさい（ミスフェイクに会いなさい）
+;トンズラが働かされているトポロ劇場に行きなさい(ミスフェイクに会いなさい)
 _HINT_TOPOLO;
 @CHKF(FLG_DSRT_SYOZI_1)
 @FALSE_GOTO(_HINT_SYOZI_FOOD)
-◆Ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ　Ｔｈｅａｔｅｒ，↓
-　　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｈａｖｅ　ｂｏｏｋｅｄ　ａ　ｓｅｒｉｅｓ　ｏｆ　ｇｉｇｓ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｊｕｓｔ　ａ　ｒｕｍｏｒ，　ｂｕｔ　Ｉ　ｈｅａｒ　ｔｈａｔ　ｔｈｅｙ’ｖｅ　ｂｅｅｎ　ｓｎｏｗｅｄ　ａｇａｉｎ@KEY()↓
-◆ａｎｄ　ａｒｅ　ｉｎ　ｓｏｍｅ　ｋｉｎｄ　ｏｆ　ｔｒｏｕｂｌｅ．@KEY()↓
-◆Ｓｏ．．．↓
-　　Ｉｆ　Ｉ　ｗｅｒｅ　ｙｏｕ，Ｉ’ｄ　ｇｏ　ａｎｄ　ｔａｌｋ　ｗｉｔｈ　ｔｈｅｍ．
+◆At the Topolla Theater,↓
+  the Runaway Five have booked a series of gigs.@KEY()↓
+◆This is just a rumor, but I hear that they’ve been snowed again@KEY()↓
+◆and are in some kind of trouble.@KEY()↓
+◆So...↓
+  If I were you,I’d go and talk with them.
 
 
 ;jpn:◆トポロげきじょうに
-;jpn:　あの‥‥@KEY()↓
+;jpn: あの‥‥@KEY()↓
 ;jpn:◆トンズラブラザーズが↓
-;jpn:　しゅつえんしている。@KEY()↓
+;jpn: しゅつえんしている。@KEY()↓
 ;jpn:◆かぜのうわさだが↓
-;jpn:　かれらは　また↓
-;jpn:　ひとにだまされて@KEY()↓
+;jpn: かれらは また↓
+;jpn: ひとにだまされて@KEY()↓
 ;jpn:◆こまっているらしい。@KEY()↓
 ;jpn:◆ま‥‥↓
-;jpn:　おじさんが　ぼうやだったら↓
-;jpn:　かれらの　はなしを@KEY()↓
+;jpn: おじさんが ぼうやだったら↓
+;jpn: かれらの はなしを@KEY()↓
 ;jpn:◆きいてやるけどね。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;ミスフェイクに会った後（モッチー援助したが穴が開いていない）
-;どこかで１泊しなさい（砂漠に穴があく）
+;ミスフェイクに会った後(モッチー援助したが穴が開いていない)
+;どこかで１泊しなさい(砂漠に穴があく)
 _HINT_GOHOTEL_FORDSRT;marcus
 @CHKF(FLG_DSRT_SYOZI_1)
 @FALSE_GOTO(_HINT_SYOZI_FOOD)
-◆Ｉｆ　ｙｏｕ　ｈａｐｐｅｎ　ｔｏ　ｇｅｔ，　ｙｏｕ　ｓｈｏｕｌｄ　ｊｕｓｔ　ｇｏ　ｔｏ　ｓｌｅｅｐ．↓
-　　Ｔｈｉｓ　ｉｓ　ｂａｓｉｃ．@KEY()↓
-◆Ｔｈａｔ　ｗａｙ，　ｙｏｕ　ｃａｎ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｓｔｒｅｎｇｔｈ．
+◆If you happen to get, you should just go to sleep.↓
+  This is basic.@KEY()↓
+◆That way, you can recover your strength.
 
-;jpn:◆まよったら　ねる。↓
-;jpn:　これが　きほん。@KEY()↓
+;jpn:◆まよったら ねる。↓
+;jpn: これが きほん。@KEY()↓
 ;jpn:◆たいりょくも↓
-;jpn:　かいふくできるしね。
+;jpn: かいふくできるしね。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;ミスフェイクに会った後（モッチー援助した、砂漠に穴が開いた）
-;砂漠に穴が開いたので埋蔵金を掘りに行きなさい（砂漠の５匹のボスを倒しなさい）
+;ミスフェイクに会った後(モッチー援助した、砂漠に穴が開いた)
+;砂漠に穴が開いたので埋蔵金を掘りに行きなさい(砂漠の５匹のボスを倒しなさい)
 _HINT_DSRT_DUNGEON;
 @CHKF(FLG_DSRT_SYOZI_1)
 @FALSE_GOTO(_HINT_SYOZI_FOOD)
 _HINT_DDUNGEON_2;marcus
-◆Ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ，　ｗｈｏ　ａｒｅ　ｎｏｗ　ａｐｐｅａｒｉｎｇ　ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ　Ｔｈｅａｔｅｒ，　@KEY()↓
-◆ｇｏｔ　ｓｔｕｃｋ　ａｇａｉｎ　ｂｅｃａｕｓｅ　ｏｆ　ｆｉｎａｎｃｉａｌ　ｐｒｏｂｌｅｍｓ．@KEY()↓
-◆Ｔｏ　ｈｅｌｐ　ｔｈｅｍ，　ａ　ｔｒｅｍｅｎｄｏｕｓ　ａｍｏｕｎｔ　ｏｆ　ｍｏｎｅｙ　ｗｉｌｌ　ｂｅ　ｎｅｅｄｅｄ．@KEY()↓
-◆Ｈｅｙ，　ｔａｌｋｉｎｇ　ａｂｏｕｔ　ａ　ｔｒｅｍｅｎｄｏｕｓ　ａｍｏｕｎｔ　ｏｆ　ｍｏｎｅｙ，@KEY()↓
-◆ｄｏ　ｙｏｕ　ｋｎｏｗ　ａｂｏｕｔ　ｔｈｅ　Ｄｕｓｔｙ　Ｄｕｎｅｓ　Ｄｅｓｅｒｔ？@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｈｅａｄ　ｔｏ　ｔｈｅ　ｄｅｓｅｒｔ　ｔｏ　ｌｏｏｋ　ｆｏｒ　ｂｕｒｉｅｄ　ｔｒｅａｓｕｒｅ．@KEY()↓
-◆Ｉｔ　ｗｏｕｌｄ　ｂｅ　ｆａｂｕｌｏｕｓ　ｉｆ　ｙｏｕ　ｆｏｕｎｄ　ｉｔ！
+◆The Runaway Five, who are now appearing at the Topolla Theater, @KEY()↓
+◆got stuck again because of financial problems.@KEY()↓
+◆To help them, a tremendous amount of money will be needed.@KEY()↓
+◆Hey, talking about a tremendous amount of money,@KEY()↓
+◆do you know about the Dusty Dunes Desert?@KEY()↓
+◆You should head to the desert to look for buried treasure.@KEY()↓
+◆It would be fabulous if you found it!
 
 ;jpn:◆トポロげきじょうにいる↓
-;jpn:　トンズラブラザーズは↓
-;jpn:　しゃっきんに　しばられている。@KEY()↓
+;jpn: トンズラブラザーズは↓
+;jpn: しゃっきんに しばられている。@KEY()↓
 ;jpn:◆かれらを↓
-;jpn:　たすけるためには@KEY()↓
+;jpn: たすけるためには@KEY()↓
 ;jpn:◆とんでもないがくの↓
-;jpn:　おかねがいる。@KEY()↓
+;jpn: おかねがいる。@KEY()↓
 ;jpn:◆とんでもないがくの↓
-;jpn:　おかねといえば‥‥@KEY()↓
-;jpn:◆そう！↓
-;jpn:　ドコドコさばく！@KEY()↓
+;jpn: おかねといえば‥‥@KEY()↓
+;jpn:◆そう!↓
+;jpn: ドコドコさばく!@KEY()↓
 ;jpn:◆ドコドコさばくへ↓
-;jpn:　まいぞうきんをさがしに↓
-;jpn:　いってみてはどうだろう？
+;jpn: まいぞうきんをさがしに↓
+;jpn: いってみてはどうだろう?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;砂漠のボス倒した後（地上のモッチーと話してない）
-;モッチーから埋蔵金どうなったかを聞きなさい（埋蔵金発掘を再開させなさい）
+;砂漠のボス倒した後(地上のモッチーと話してない)
+;モッチーから埋蔵金どうなったかを聞きなさい(埋蔵金発掘を再開させなさい)
 _HINT_DSRT_SYOZI2;marcus
-◆Ｈａｖｅ　ｙｏｕ　ｔｏｌｄ　ｔｈｅ　ｔｒｅａｓｕｒｅ　ｈｕｎｔｅｒ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ　ｔｈａｔ　ｙｏｕ　ｂｅａｔ　ｆｉｖｅ　ｂｏｓｓｅｓ？@KEY()↓
-◆Ｉ　ｕｓｅｄ　ｔｏ　ｂｅ　ａ　ｂｕｓｉｎｅｓｓｍａｎ，　ａｎｄ　Ｉ　ｃａｎ　ｔｅｌｌ　ｙｏｕ　ｆｒｏｍ　ｅｘｐｅｒｉｅｎｃｅ@KEY()↓
-◆ｒｅｐｏｒｔｉｎｇ　ｉｎ　ｉｓ　ｃｒｕｃｉａｌ．
+◆Have you told the treasure hunter in the desert that you beat five bosses?@KEY()↓
+◆I used to be a businessman, and I can tell you from experience@KEY()↓
+◆reporting in is crucial.
 
 ;jpn:◆さばくのダンジョンの↓
-;jpn:　ショージ・モッチーさんに@KEY()↓
+;jpn: ショージ・モッチーさんに@KEY()↓
 ;jpn:◆５ひきのボスたちを↓
-;jpn:　たおしたことを　ちゃんと↓
-;jpn:　ほうこくしたかい？@KEY()↓
+;jpn: たおしたことを ちゃんと↓
+;jpn: ほうこくしたかい?@KEY()↓
 ;jpn:◆おじさんはむかし↓
-;jpn:　サラリーマンだったからね。@KEY()↓
+;jpn: サラリーマンだったからね。@KEY()↓
 ;jpn:◆そのけいけんから↓
-;jpn:　ひとこといわせてもらうけど@KEY()↓
+;jpn: ひとこといわせてもらうけど@KEY()↓
 ;jpn:◆だいじだよ‥‥↓
-;jpn:　ほうこくは。
+;jpn: ほうこくは。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;モッチー穴掘り再開した後
 ;鉄橋の上でシゲちゃんからダイヤをもらいなさい
 _HINT_DSRT_DIA;marcus
-◆Ｓｏ，　ｈａｖｅ　ｙｏｕ　ｂｅｅｎ　ｏｕｔ　ｔａｋｉｎｇ　ａｎｙ　ｗａｌｋｓ　ｌａｔｅｌｙ？@KEY()↓
-◆Ｗａｌｋｉｎｇ　ｉｓ　ｇｒｅａｔ．@KEY()↓
-◆Ｙｏｕ　ｋｎｏｗ，　ｉｔ’ｓ　ｎｏｔ　ｇｏｏｄ　ｆｏｒ　ｙｏｕ@KEY()↓
-◆ｔｏ　ａｌｗａｙｓ　ｂｅ　ｒｉｄｉｎｇ　ｔｈｅ　ｂｕｓ　’ｃａｕｓｅ　ｉｔ’ｓ　ｗａｙ　ｔｏｏ　ｅａｓｙ．@KEY()↓
-◆Ｗａｌｋ　ｄｏｗｎ　ｔｈｅ　ｒｏａｄ　ｂｅｔｗｅｅｎ　Ｄｕｓｔｙ　Ｄｕｎｅｓ　Ｄｅｓｅｒｔ　ａｎｄ　Ｆｏｕｒｓｉｄｅ．@KEY()↓
-◆Ｅｓｐｅｃｉａｌｌｙ　ｂｅ　ｓｕｒｅ　ｔｏ　ｗａｌｋ　ａｃｒｏｓｓ　ｔｈｅ　ｒａｉｌｗａｙ　ｂｒｉｄｇｅ．@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ｎｏｔｈｉｎｇ　ｑｕｉｔｅ　ａｓ　ｅｘｃｉｔｉｎｇ　ａｓ　ｗａｌｋｉｎｇ　ａｃｒｏｓｓ　ａ　ｒａｉｌｗａｙ　ｂｒｉｄｇｅ@KEY()↓
-◆ｗｈｅｎ　ｙｏｕ　ｄｏｎ’ｔ　ｋｎｏｗ　ｔｈｅ　ｔｒａｉｎ　ｓｃｈｅｄｕｌｅ．．．
+◆So, have you been out taking any walks lately?@KEY()↓
+◆Walking is great.@KEY()↓
+◆You know, it’s not good for you@KEY()↓
+◆to always be riding the bus ’cause it’s way too easy.@KEY()↓
+◆Walk down the road between Dusty Dunes Desert and Fourside.@KEY()↓
+◆Especially be sure to walk across the railway bridge.@KEY()↓
+◆There’s nothing quite as exciting as walking across a railway bridge@KEY()↓
+◆when you don’t know the train schedule...
 
 ;jpn:◆きみはさいきん↓
-;jpn:　さんぽをしてるかな？@KEY()↓
+;jpn: さんぽをしてるかな?@KEY()↓
 ;jpn:◆さんぽはいい。@KEY()↓
 ;jpn:◆かいてきで↓
-;jpn:　ラクチンだからといって@KEY()↓
+;jpn: ラクチンだからといって@KEY()↓
 ;jpn:◆バスにばっかり↓
-;jpn:　のっていてはいかんな。@KEY()↓
+;jpn: のっていてはいかんな。@KEY()↓
 ;jpn:◆ドコドコさばくとフォーサイドの↓
-;jpn:　あいだにあるみちを↓
-;jpn:　あるいてみよう。@KEY()↓
-;jpn:◆とくに　てっきょう。@KEY()↓
+;jpn: あいだにあるみちを↓
+;jpn: あるいてみよう。@KEY()↓
+;jpn:◆とくに てっきょう。@KEY()↓
 ;jpn:◆てっきょうをあるくのが↓
-;jpn:　さんぽのだいごみだな。
+;jpn: さんぽのだいごみだな。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ダイヤ入手後
 ;ダイヤを使ってドンズラを解放しなさい
 _HINT_FOUR_TONZURA_FREE;marcus
-◆Ｉｔ’ｓ　ｓｕｃｈ　ａ　ｐｉｔｙ．．．@KEY()↓
-◆Ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ　ｈａｖｅ　ｍａｎａｇｅｄ　ｔｏ　ｇｅｔ　ｓｔｕｃｋ　ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ　Ｔｈｅａｔｅｒ@KEY()↓
-◆ｂｅｃａｕｓｅ　ｏｆ　ｔｈｅｉｒ　ｄｅｂｔ　ｐｒｏｂｌｅｍｓ．@KEY()↓
-◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｇｏ　ａｎｄ　ｔａｌｋ　ｔｏ　Ｍｉｓｓ　Ｆａｋｅ，　ｔｈｅ　ｍａｎａｇｅｒ　ｏｆ　ｔｈｅ　ｔｈｅａｔｅｒ？@KEY()↓
-◆Ｔｈａｔ　ｄｉａｍｏｎｄ　ｙｏｕ’ｒｅ　ｃａｒｒｙｉｎｇ　ｓｈｏｕｌｄ　ｃｏｍｅ　ｉｎ　ｈａｎｄｙ．
+◆It’s such a pity...@KEY()↓
+◆The Runaway Five have managed to get stuck at the Topolla Theater@KEY()↓
+◆because of their debt problems.@KEY()↓
+◆Why don’t you go and talk to Miss Fake, the manager of the theater?@KEY()↓
+◆That diamond you’re carrying should come in handy.
 
 ;jpn:◆トポロげきじょうの↓
-;jpn:　トンズラブラザーズは@KEY()↓
+;jpn: トンズラブラザーズは@KEY()↓
 ;jpn:◆しゃっきんで↓
-;jpn:　みうごきがとれなくて↓
-;jpn:　かわいそうだね。@KEY()↓
+;jpn: みうごきがとれなくて↓
+;jpn: かわいそうだね。@KEY()↓
 ;jpn:◆しはいにんの↓
-;jpn:　ミス・フェイクに@KEY()↓
+;jpn: ミス・フェイクに@KEY()↓
 ;jpn:◆かけあってみたら↓
-;jpn:　どうだろう？@KEY()↓
+;jpn: どうだろう?@KEY()↓
 ;jpn:◆そのてに↓
-;jpn:　にぎりしめた@KEY()↓
+;jpn: にぎりしめた@KEY()↓
 ;jpn:◆ダイヤモンドが↓
-;jpn:　やくにたつはずだ。
+;jpn: やくにたつはずだ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;トンズラ開放後
 ;フォーサイドデパートが開店したので行きなさい
 _HINT_FOUR_DEPT;marcus
-◆Ｔｈｅ　ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ　ｉｎ　Ｆｏｕｒｓｉｄｅ　ｈａｓ　ｒｅｏｐｅｎｅｄ　ａｆｔｅｒ　ｂｅｉｎｇ　ｒｅｎｏｖａｔｅｄ．@KEY()↓
-◆Ｐｅｏｐｌｅ　ｓａｙ　ｔｈａｔ　ｔｈｅｙ　ｈａｖｅ　ａ　ｇｏｏｄ　ｖａｒｉｅｔｙ　ｏｆ　ｔｈｉｎｇｓ，@KEY()↓
-◆ｂｕｔ　ｔｈｅ　ｐｒｉｃｅｓ　ａｒｅ　ａ　ｌｉｔｔｌｅ　ｂｉｔ　ｈｉｇｈ．@KEY()↓
-◆Ｈａｖｅ　ｙｏｕ　ｂｅｅｎ　ｔｈｅｒｅ　ｙｅｔ？
+◆The department store in Fourside has reopened after being renovated.@KEY()↓
+◆People say that they have a good variety of things,@KEY()↓
+◆but the prices are a little bit high.@KEY()↓
+◆Have you been there yet?
 
 ;jpn:◆フォーサイドのデパートが↓
-;jpn:　しんそうかいてんに↓
-;jpn:　なったらしい。@KEY()↓
-;jpn:◆しなぞろえは　いいけど↓
-;jpn:　ちょっと　たかいって↓
-;jpn:　ウワサだね。@KEY()↓
-;jpn:◆いってみたかい？
+;jpn: しんそうかいてんに↓
+;jpn: なったらしい。@KEY()↓
+;jpn:◆しなぞろえは いいけど↓
+;jpn: ちょっと たかいって↓
+;jpn: ウワサだね。@KEY()↓
+;jpn:◆いってみたかい?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ポーラ誘拐後
 ;デパート屋上のボスを倒しなさい
 _HINT_DEPT_BOSS;marcus
-◆Ｗｅｌｌ．．．．．．．．．↓
-　　Ｉ’ｍ　ｎｏｔ　ｅｘａｃｔｌｙ　ｓｕｒｅ，　ｂｕｔ　ｉｔ　ｓｅｅｍｓ　ｔｏ　ｍｅ　ｔｈａｔ　．．．@KEY()↓
-◆ｔｈｅ　ｒｏｏｆ　ｏｆ　ｔｈｅ　ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ　ｉｓ　ｋｉｎｄ　ｏｆ　ｓｕｓｐｉｃｉｏｕｓ．．．
+◆Well.........↓
+  I’m not exactly sure, but it seems to me that ...@KEY()↓
+◆the roof of the department store is kind of suspicious...
 
 ;jpn:◆うーん‥‥↓
-;jpn:　おじさんも↓
-;jpn:　よくわからんが‥‥。@KEY()↓
+;jpn: おじさんも↓
+;jpn: よくわからんが‥‥。@KEY()↓
 ;jpn:◆デパートの↓
-;jpn:　いちばんうえのかいが↓
-;jpn:　あやしい‥‥。@KEY()↓
+;jpn: いちばんうえのかいが↓
+;jpn: あやしい‥‥。@KEY()↓
 ;jpn:◆‥‥ようなきがする。
 @GOSUB(_HINT_KOKOMADE)
 @!
@@ -957,62 +957,62 @@ _HINT_DEPT_BOSS;marcus
 ;デパートボス倒した後
 ;ボルヘス酒場に行きなさい
 _HINT_BRGS;marcus
-◆Ｈａｖｅ　ｙｏｕ　ｂｅｅｎ　ｔｏ　Ｊａｃｋｉｅ’ｓ　Ｃａｆｅ？@KEY()↓
-◆Ｉｔ’ｓ　ｎｏｔ　ｄｉｆｆｉｃｕｌｔ　ｔｏ　ｆｉｎｄ．．．ｔｈｅ　ｓｉｇｎ　ｓａｙｓ　”Ｃａｆｅ．”
+◆Have you been to Jackie’s Cafe?@KEY()↓
+◆It’s not difficult to find...the sign says ”Cafe.”
 
 ;jpn:◆ボルヘスのさかばには↓
-;jpn:　いったかな？@KEY()↓
-;jpn:◆ボルヘスのさかばは　かんばんに↓
-;jpn:　「ＢＡＲ」とかいてあるから↓
-;jpn:　すぐわかる。
+;jpn: いったかな?@KEY()↓
+;jpn:◆ボルヘスのさかばは かんばんに↓
+;jpn: 「BAR」とかいてあるから↓
+;jpn: すぐわかる。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 
 ;死にかけトンチキ出現後
-;ボルヘス酒場横の死に掛けトンチキに話しなさい（今はヒントなし）
+;ボルヘス酒場横の死に掛けトンチキに話しなさい(今はヒントなし)
 _HINT_FOUR_TONCHIKI;marcus
-◆Ｔｈｅｓｅ　ｄａｙｓ，　ｙｏｕｎｇ　ｐｅｏｐｌｅ　ｓｅｅｍ　ｔｏ　ｂｅ　ｓｏ　ｉｎｄｉｆｆｅｒｅｎｔ@KEY()↓
-◆ｔｏ　ｗｈａｔ’ｓ　ｈａｐｐｅｎｉｎｇ　ｉｎ　ｔｈｅ　ｒｅａｌ　ｗｏｒｌｄ．@KEY()↓
-◆Ｉｔ’ｓ　ｄｉｓａｐｐｏｉｎｔｉｎｇ　ｔｈａｔ　ｙｏｕ　ｓｅｅｍ　ｔｏ　ｂｅ　ｉｎｄｉｆｆｅｒｅｎｔ　ａｂｏｕｔ　ｔｈｅ　ｒｅａｌ　ｗｏｒｌｄ，　ｔｏｏ．@KEY()↓
-◆Ｆｏｒ　ｅｘａｍｐｌｅ，　ｉｆ　ｙｏｕ　ｓｅｅ　ｓｏｍｅｏｎｅ　ｌｙｉｎｇ　ｉｎ　ｔｈｅ　ｓｔｒｅｅｔ，@KEY()↓
-◆ｄｏｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｔｈａｔ　ｙｏｕ　ｓｈｏｕｌｄ　ｒｅａｌｌｙ　ｓｔｏｐ　ａｎｄ　ｔｒｙ　ｔｏ　ｈｅｌｐ　ｈｉｍ？
+◆These days, young people seem to be so indifferent@KEY()↓
+◆to what’s happening in the real world.@KEY()↓
+◆It’s disappointing that you seem to be indifferent about the real world, too.@KEY()↓
+◆For example, if you see someone lying in the street,@KEY()↓
+◆don’t you think that you should really stop and try to help him?
 
 ;jpn:◆ちかごろのわかものは↓
-;jpn:　よのなかのことに↓
-;jpn:　むかんしん　なんだな。@KEY()↓
+;jpn: よのなかのことに↓
+;jpn: むかんしん なんだな。@KEY()↓
 ;jpn:◆ぼうやたちも↓
-;jpn:　そうだったなんて@KEY()↓
-;jpn:◆おじさん　ちょっと↓
-;jpn:　ガッカリだな‥‥。@KEY()↓
+;jpn: そうだったなんて@KEY()↓
+;jpn:◆おじさん ちょっと↓
+;jpn: ガッカリだな‥‥。@KEY()↓
 ;jpn:◆たおれているひとが↓
-;jpn:　いるのなら@KEY()↓
+;jpn: いるのなら@KEY()↓
 ;jpn:◆たすけてやろうと↓
-;jpn:　おもうのが@KEY()↓
+;jpn: おもうのが@KEY()↓
 ;jpn:◆ひとのみち↓
-;jpn:　ってぇもんじゃないのか？
+;jpn: ってぇもんじゃないのか?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;死にかけトンチキ消滅後
 ;ボルヘス酒場のカウンターを調べなさい
 _HINT_MOON;marcus
-◆Ｄｉｄ　ｙｏｕ　ｇｏ　ｂａｃｋ　ｔｏ　Ｊａｃｋｉｅ’ｓ　Ｃａｆｅ？@KEY()↓
-◆Ｔｈｅｒｅ　ｓｅｅｍｓ　ｔｏ　ｂｅ　ｓｏｍｅｔｈｉｎｇ　ｍｉｇｈｔｙ　ｓｕｓｐｉｃｉｏｕｓ　ｕｎｄｅｒ　ｔｈｅ　ｃｏｕｎｔｅｒ．．．
+◆Did you go back to Jackie’s Cafe?@KEY()↓
+◆There seems to be something mighty suspicious under the counter...
 
 ;jpn:◆ボルヘスのさかばに↓
-;jpn:　もういちどいってみたかい？@KEY()↓
+;jpn: もういちどいってみたかい?@KEY()↓
 ;jpn:◆カウンターのしたが↓
-;jpn:　あやしいらしいぞ。
+;jpn: あやしいらしいぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ムーンサイドクリア後
 ;黒こげザルとはなしなさい
 _HINT_KUROKOGESARU;marcus
-◆Ｔｈｅ　ｍｏｎｋｅｙ．．．
-　　ｇｏｔ　ｃｈａｒｒｅｄ．@KEY()↓
-◆Ｉｓ　ｈｅ　ａｌｌ　ｒｉｇｈｔ？
+◆The monkey...
+  got charred.@KEY()↓
+◆Is he all right?
 
 ;jpn:◆さる‥‥@KEY()↓
 ;jpn:◆クロコゲだったよねぇ。@KEY()↓
@@ -1021,49 +1021,49 @@ _HINT_KUROKOGESARU;marcus
 @!
 
 ;黒こげザルと話した後
-;サルダンジョンでグルメどうふマシン入手しなさい（※テレポートを教わりなさい）
+;サルダンジョンでグルメどうふマシン入手しなさい(※テレポートを教わりなさい)
 _HINT_GURUMETOFU;marcus
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｆｉｎｄ　ｓｏｍｅｔｈｉｎｇ　ｏｕｔ　ａｔ　ｔｈｅ　Ｍｏｎｋｅｙ　Ｃａｖｅ@KEY()↓
-◆ｉｎ　ｔｈｅ　Ｄｕｓｔｙ　Ｄｕｎｅｓ　Ｄｅｓｅｒｔ．@KEY()↓
-◆Ｔｈａｔ’ｓ　ｗｈａｔ　Ｉ　ｓａｙ．．．ｏｎ　ｔｏ　ｔｈｅ　ｄｅｓｅｒｔ！
+◆You should be able to find something out at the Monkey Cave@KEY()↓
+◆in the Dusty Dunes Desert.@KEY()↓
+◆That’s what I say...on to the desert!
 
 ;jpn:◆ドコドコさばくの↓
-;jpn:　さるダンジョンに↓
-;jpn:　さがしものがあるはずだ。@KEY()↓
+;jpn: さるダンジョンに↓
+;jpn: さがしものがあるはずだ。@KEY()↓
 ;jpn:◆ドコドコさばくへ↓
-;jpn:　いってみよう。
+;jpn: いってみよう。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ぐるめとうふマシン入手後
 ;メイドにグルメどうふマシンを渡しなさい
 _HINT_FOUR_MAID;marcus
-◆Ｔｈｅ　ｍａｉｄ　ｏｕｔ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　Ｍｏｎｏｔｏｌｉ　Ｂｕｉｌｄｉｎｇ@KEY()↓
-◆ｉｓ　ｗａｉｔｉｎｇ　ｆｏｒ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_ICHIGO_TOFU)．
+◆The maid out front of the Monotoli Building@KEY()↓
+◆is waiting for the @DSP_GOODS(GDS_TOOL_ICHIGO_TOFU).
 
 ;jpn:◆モノトリービルのまえにいる↓
-;jpn:　メイドが@KEY()↓
+;jpn: メイドが@KEY()↓
 ;jpn:◆@DSP_GOODS(GDS_TOOL_ICHIGO_TOFU)を↓
-;jpn:　まってるぞ。
+;jpn: まってるぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;メイドにぐるめどうふマシンわたした後
-;モノトリービル４８Ｆに誰か（ポーラ）がいるので行きなさい	○
+;モノトリービル４８Fに誰か(ポーラ)がいるので行きなさい	○
 _HINT_FOUR_PAULA;marcus
-◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｙｏｕ　ｗｅｒｅ　ａｓｋｅｄ　ｔｏ　ｄｉｎｎｅｒ@KEY()↓
-◆ｂｙ　ｔｈｅ　ｃｕｔｅ　ｍａｉｄ　ａｔ　ｔｈｅ　Ｍｏｎｏｔｏｌｉ　Ｂｕｉｌｄｉｎｇ．@KEY()↓
-◆Ｌｕｃｋｙ　ｙｏｕ！↓
-　　Ｉ　ｅｎｖｙ　ｋｉｄｓ　ｌｉｋｅ　ｙｏｕ．．．ｂｕｔ　ｊｕｓｔ　ａ　ｂｉｔ．
+◆I heard that you were asked to dinner@KEY()↓
+◆by the cute maid at the Monotoli Building.@KEY()↓
+◆Lucky you!↓
+  I envy kids like you...but just a bit.
 
 ;jpn:◆あのかわいい↓
-;jpn:　モノトリービルの↓
-;jpn:　メイドさんに@KEY()↓
+;jpn: モノトリービルの↓
+;jpn: メイドさんに@KEY()↓
 ;jpn:◆しょくじに↓
-;jpn:　さそわれたんだって？@KEY()↓
+;jpn: さそわれたんだって?@KEY()↓
 ;jpn:◆いいなあ。@KEY()↓
 ;jpn:◆おじさん↓
-;jpn:　ちょっと　うらやましいぞ。
+;jpn: ちょっと うらやましいぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1071,72 +1071,72 @@ _HINT_FOUR_PAULA;marcus
 ;ポーラ救出後
 ;スリークの墓場に行きなさい
 _HINT_SW_WINS;marcus
-◆Ｉｔ　ｗａｓ　ａ　ｗｈｉｌｅ　ａｇｏ，　ｂｕｔ　Ｉ　ｈｅａｒｄ　ｔｈａｔ　ａ　ｓｉｌｖｅｒ　ｆｌｙｉｎｇ　ｃｏｎｔｒａｐｔｉｏｎ　ｏｆ　ｓｏｍｅ　ｓｏｒｔ　@KEY()↓
-◆ｃｒａｓｈ　ｌａｎｄｅｄ　ｉｎ　ｔｈｅ　ｇｒａｖｅｙａｒｄ　ｉｎ　Ｔｈｒｅｅｄ．
+◆It was a while ago, but I heard that a silver flying contraption of some sort @KEY()↓
+◆crash landed in the graveyard in Threed.
 
-;jpn:◆ちょっと　まえのことだが↓
-;jpn:　スリークの↓
-;jpn:　ぼちのあたりに@KEY()↓
+;jpn:◆ちょっと まえのことだが↓
+;jpn: スリークの↓
+;jpn: ぼちのあたりに@KEY()↓
 ;jpn:◆ぎんいろの↓
-;jpn:　そらとぶのりものが↓
-;jpn:　おちてきたぞい。
+;jpn: そらとぶのりものが↓
+;jpn: おちてきたぞい。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;スカイウォーカーでウィンタース行った後
 ;レイニーサークルクリアをクリアしなさい
 _HINT_POWR_RAIN;marcus
-◆Ｉｎ　Ｗｉｎｔｅｒｓ，　ｙｏｕ’ｖｅ　ｂｅｅｎ　ｔｏ　ｔｈｅ　ｃａｖｅ　ｎｏｒｔｈ　ｏｆ　Ｓｔｏｎｅｈｅｎｇｅ，　ｒｉｇｈｔ？@KEY()↓
-◆Ｉ　ｗｏｕｌｄ　ｂｅｔ　ｉｔ’ｓ　ｏｎｅ　ｏｆ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ．”
+◆In Winters, you’ve been to the cave north of Stonehenge, right?@KEY()↓
+◆I would bet it’s one of ”Your Sanctuary.”
 
 ;jpn:◆ウィンターズの↓
-;jpn:　ストーンヘンジのきたにある@KEY()↓
-;jpn:◆どうくつは　まえにも↓
-;jpn:　いったことがあるだろう？@KEY()↓
+;jpn: ストーンヘンジのきたにある@KEY()↓
+;jpn:◆どうくつは まえにも↓
+;jpn: いったことがあるだろう?@KEY()↓
 ;jpn:◆そこには↓
-;jpn:　「おまえだけのばしょ」が↓
-;jpn:　ある。
+;jpn: 「おまえだけのばしょ」が↓
+;jpn: ある。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;レイニーサークルクリア後
 ;スカイウォーカーでサマーズに行きなさい
 _HINT_SW_SUMS;marcus
-◆Ｄｏ　ｙｏｕ　ｒｅｍｅｍｂｅｒ　ｔｈａｔ　Ｄｒ．　ＡｎＤｏｎｕｔｓ　ｈａｄ　ｔｈｅ　ｓｋｙ　ｒｕｎｎｅｒ？@KEY()↓
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｓａｙ　ｔｏ　ｙｏｕｒ　ｇｏｉｎｇ　ａｎｄ　ｇｉｖｉｎｇ　ｉｔ　ａ　ｗｈｉｒｌ？
+◆Do you remember that Dr. AnDonuts had the sky runner?@KEY()↓
+◆What do you say to your going and giving it a whirl?
 
-;jpn:◆たしか　ウィンターズの↓
-;jpn:　アンドーナッツはかせの↓
-;jpn:　ところに@KEY()↓
+;jpn:◆たしか ウィンターズの↓
+;jpn: アンドーナッツはかせの↓
+;jpn: ところに@KEY()↓
 ;jpn:◆スカイウォーカーがあったよね。@KEY()↓
-;jpn:◆のってみるかい？
+;jpn:◆のってみるかい?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;サマーズ到着後
 ;ストイッククラブの電話番号を探しなさい
 _HINT_STOIC;marcus
-◆Ｙｏｕ　ｎｅｅｄ　ｔｏ　ｍａｋｅ　ａ　ｒｅｓｅｒｖａｔｉｏｎ　ｂｙ　ｐｈｏｎｅ　ｔｏ　ｇｏ　ｔｏ　ｔｈｅ　Ｓｔｏｉｃ　Ｃｌｕｂ．@KEY()↓
-◆Ｓｏｍｅｏｎｅ　ｉｎ　Ｔｏｔｏ，　ｔｈｅ　ｐｏｒｔ　ｔｏｗｎ　ｎｅｘｔ　ｔｏ　Ｓｕｍｍｅｒｓ，@KEY()↓
-◆ｓｈｏｕｌｄ　ｋｎｏｗ　ｔｈｅ　ｐｈｏｎｅ　ｎｕｍｂｅｒ．
+◆You need to make a reservation by phone to go to the Stoic Club.@KEY()↓
+◆Someone in Toto, the port town next to Summers,@KEY()↓
+◆should know the phone number.
 
 ;jpn:◆ストイッククラブには↓
-;jpn:　でんわよやくがひつようだよ。@KEY()↓
+;jpn: でんわよやくがひつようだよ。@KEY()↓
 ;jpn:◆でんわばんごうは↓
-;jpn:　トトのまちの↓
-;jpn:　だれかがしってるよ。
+;jpn: トトのまちの↓
+;jpn: だれかがしってるよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ストイッククラブの電話番号知った後
 ;ストイッククラブの電話予約しなさい
 _HINT_STOIC_PHONE;
-◆Ｔｒｙ　ｐｌａｃｉｎｇ　ａ　ｃａｌｌ　ｔｏ↓
-　　ｔｈｅ　Ｓｔｒｉｐ．．．ｏｏｏｐｓ！　ｓｏｒｒｙ，↓
-　　Ｉ　ｍｅａｎ　ｔｈｅ　Ｓｔｏｉｃ　Ｃｌｕｂ．
+◆Try placing a call to↓
+  the Strip...ooops! sorry,↓
+  I mean the Stoic Club.
 
-;jpn:◆いちど　でんわを↓
-;jpn:　かけてみなさい。@KEY()↓
+;jpn:◆いちど でんわを↓
+;jpn: かけてみなさい。@KEY()↓
 ;jpn:◆ストリップ‥‥じゃなかった@KEY()↓
 ;jpn:◆ストイッククラブに。
 @GOSUB(_HINT_KOKOMADE)
@@ -1145,15 +1145,15 @@ _HINT_STOIC_PHONE;
 ;ストイッククラブの電話予約した後
 ;ストイックのオヤジと話して、ケーキ女にケーキを作ってもらいなさい
 _HINT_STOIC_WIFE;marcus
-◆Ａｆｔｅｒ　ｙｏｕ　ｇｅｔ　ｉｎｔｏ　ｔｈｅ　Ｓｔｏｉｃ　Ｃｌｕｂ，@KEY()↓
-◆ｂｅ　ｓｕｒｅ　ｔｏ　ｔａｌｋ　ｔｏ　ｔｈｅ　ｍａｎ　ｗｉｔｈ　ｍｕｓｔａｃｈｅ　ａｔ　ｔｈｅ　ｂａｃｋ　ｔａｂｌｅ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ａ　ｐｒｅｔｔｙ　ｉｍｐｏｒｔａｎｔ　ｈｉｎｔ．
+◆After you get into the Stoic Club,@KEY()↓
+◆be sure to talk to the man with mustache at the back table.@KEY()↓
+◆This is a pretty important hint.
 
 ;jpn:◆ストイッククラブに↓
-;jpn:　はいったら@KEY()↓
-;jpn:◆まず　おくのテーブルの↓
-;jpn:　はなヒゲのおとこに↓
-;jpn:　はなしをきいてみるといい。@KEY()↓
+;jpn: はいったら@KEY()↓
+;jpn:◆まず おくのテーブルの↓
+;jpn: はなヒゲのおとこに↓
+;jpn: はなしをきいてみるといい。@KEY()↓
 ;jpn:◆これけっこうだいじ。
 @GOSUB(_HINT_KOKOMADE)
 @!
@@ -1161,39 +1161,39 @@ _HINT_STOIC_WIFE;marcus
 ;ケーキ女が浜辺に出た後
 ;浜辺のケーキ女に会いに行きなさい
 _HINT_MAGICCAKE;marcus
-;◆マジックケーキうり　が↓
-;　はまべに　いるらしいよ。@KEY()↓
-;◆おじさんも　しごとさえなけりゃ↓
-;　たべにいくのになあ。
+;◆マジックケーキうり が↓
+; はまべに いるらしいよ。@KEY()↓
+;◆おじさんも しごとさえなけりゃ↓
+; たべにいくのになあ。
 ;	差し替え 7/18
-◆Ｐｅｏｐｌｅ　ｓａｙ　ｔｈａｔ　ｔｈｅｒｅ　ｉｓ　ａ　Ｍａｇｉｃ　ｃａｋｅ　ｖｅｎｄｏｒ@KEY()↓
-◆ｏｎ　ｔｈｅ　ｐａｖｅｍｅｎｔ　ｂｙ　ｔｈｅ　ｂｅａｃｈ　ｉｎ　ｔｈｅ　ｒｅｓｏｒｔ　ｏｆ　Ｓｕｍｍｅｒｓ．@KEY()↓
-◆Ｏｈ　ｙｅａｈ，　”Ｐａｖｅｍｅｎｔ”　ｍｅａｎｓ　”ｓｉｄｅｗａｌｋ．”@KEY()↓
-◆Ｗｅｌｌ，　Ｉ　ｗａｓ　ｊｕｓｔ　ｔｅｓｔｉｎｇ　ｙｏｕ．．．@KEY()↓
-◆Ａｒｅ　ｙｏｕ　ａｎｇｒｙ？↓
-　　Ｉ　ｄｉｄｎ’ｔ　ｍｅａｎ　ｉｔ．．．ｓｏｒｒｙ！
+◆People say that there is a Magic cake vendor@KEY()↓
+◆on the pavement by the beach in the resort of Summers.@KEY()↓
+◆Oh yeah, ”Pavement” means ”sidewalk.”@KEY()↓
+◆Well, I was just testing you...@KEY()↓
+◆Are you angry?↓
+  I didn’t mean it...sorry!
 
-;jpn:◆ひしょち　サマーズの↓
-;jpn:　うみぞいのペイブメントに@KEY()↓
-;jpn:◆マジックケーキうり　が↓
-;jpn:　いるっていうウワサだね。@KEY()↓
-;jpn:◆あ　ペイブメントっていうのは↓
-;jpn:　「ほどう」っていういみだよ。@KEY()↓
+;jpn:◆ひしょち サマーズの↓
+;jpn: うみぞいのペイブメントに@KEY()↓
+;jpn:◆マジックケーキうり が↓
+;jpn: いるっていうウワサだね。@KEY()↓
+;jpn:◆あ ペイブメントっていうのは↓
+;jpn: 「ほどう」っていういみだよ。@KEY()↓
 ;jpn:◆おじさん↓
-;jpn:　がくのあるところを↓
-;jpn:　みせちゃったな。@KEY()↓
-;jpn:◆ちょっと　いやみだったかな。@KEY()↓
-;jpn:◆いや　しっけい　しっけい。
+;jpn: がくのあるところを↓
+;jpn: みせちゃったな。@KEY()↓
+;jpn:◆ちょっと いやみだったかな。@KEY()↓
+;jpn:◆いや しっけい しっけい。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;プー合流後
 ;スカラビ文化博物館に行きなさい	#54
 _HINT_HIEROGLYPH;marcus
-;サマーズ　プー合流後
-◆Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ．．．@KEY()↓
-◆Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ．．．@KEY()↓
-◆Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ．．．
+;サマーズ プー合流後
+◆Scaraba Cultural Museum...@KEY()↓
+◆Scaraba Cultural Museum...@KEY()↓
+◆Scaraba Cultural Museum...
 
 ;jpn:◆スカラビぶんかはくぶつかん‥‥@KEY()↓
 ;jpn:◆スカラビぶんかはくぶつかん‥‥@KEY()↓
@@ -1201,21 +1201,21 @@ _HINT_HIEROGLYPH;marcus
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;スカラビ到着後（ヒエログリフ読んでない）
+;スカラビ到着後(ヒエログリフ読んでない)
 ;スカラビ文化博物館に行きなさい
 _HINT_HIEROGLYPH_B;marcus
-◆Ｄｉｄ　ｙｏｕ　ｇｏ　ｔｏ　ｔｈｅ　ｓｅｃｏｎｄ　ｆｌｏｏｒ　ｏｆ　ｔｈｅ　Ｓｃａｒａｂａ　　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ　ｉｎ　Ｓｕｍｍｅｒｓ？@KEY()↓
-◆Ｉｆ　ｙｏｕ　ａｒｅ　ｌｕｃｋｙ．．．↓
-　　ｙｏｕ’ｌｌ　ｇｅｔ　ｔｏ　ｓｅｅ　ｔｈｅ　ｈｉｅｒｏｇｌｙｐｈ．@KEY()↓
-◆．．．Ｙｅａｈ，　ｙｏｕ　ｓｕｒｅ　ｗｏｕｌｄ　ｂｅ　ｌｕｃｋｙ．
+◆Did you go to the second floor of the Scaraba  Cultural Museum in Summers?@KEY()↓
+◆If you are lucky...↓
+  you’ll get to see the hieroglyph.@KEY()↓
+◆...Yeah, you sure would be lucky.
 
 ;jpn:◆サマーズにある↓
-;jpn:　スカラビぶんかはくぶつかんの↓
-;jpn:　２かいには　いったかい？@KEY()↓
+;jpn: スカラビぶんかはくぶつかんの↓
+;jpn: ２かいには いったかい?@KEY()↓
 ;jpn:◆ひょっとしたら‥‥@KEY()↓
 ;jpn:◆ヒエログリフを↓
-;jpn:　みることができる↓
-;jpn:　かもしれない。@KEY()↓
+;jpn: みることができる↓
+;jpn: かもしれない。@KEY()↓
 ;jpn:◆‥‥ようなきがする。
 @GOSUB(_HINT_KOKOMADE)
 @!
@@ -1224,36 +1224,36 @@ _HINT_HIEROGLYPH_B;marcus
 ;スカラビに行きなさい
 _HINT_GO_SKRB;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓａｉｌ　ａｃｒｏｓｓ　ｔｈｅ　ｏｃｅａｎ，　ｗｈｏ　ｂｅｔｔｅｒ　ｔｈａｎ　ｔｏ　ａｓｋ　ｂｕｔ　ａ　ｓａｉｌｏｒ？
+◆If you want to sail across the ocean, who better than to ask but a sailor?
 
 ;jpn:◆うみをわたるのなら↓
-;jpn:　トトのまちの↓
-;jpn:　ふなのりに@KEY()↓
+;jpn: トトのまちの↓
+;jpn: ふなのりに@KEY()↓
 ;jpn:◆たのんでみちゃあ↓
-;jpn:　どうだい？
+;jpn: どうだい?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;スカラビ到着後（ヒエログリフ読んだ）
+;スカラビ到着後(ヒエログリフ読んだ)
 ;床の謎を解いてピラミッドに入りなさい
 _HINT_SPHINX;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
 @CHKF(FLG_SUMS_HIEROGLYPH)@FALSE_GOTO(_HINT_HIEROGLYPH_B)
-◆Ａｆｔｅｒ　ｙｏｕ’ｖｅ　ｍａｄｅ　ａｌｌ　ｔｈｅ　ｎｅｃｅｓｓａｒｙ　ｐｒｅｐａｒａｔｉｏｎｓ，　ｇｏ　ｔｏ　ｔｈｅ　ｐｙｒａｍｉｄ．@KEY()↓
-◆Ｉｎ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　ｐｙｒａｍｉｄ，　ａｓ　ｔｈｅ　ｗｒｉｔｉｎｇ　ｏｎ　ｔｈｅ　ｈｉｅｒｏｇｌｙｐｈ　ｔｏｌｄ，@KEY()↓
-◆ｓｔｅｐ　ｏｎ　ｔｈｅ　ｒｏｕｎｄ　ｓｔｏｎｅ　ｐｌａｔｅｓ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　ｓｐｈｉｎｘ，　ａｎｄ　ｄｒａｗ　ａ　ｓｔａｒ．@KEY()↓
-◆Ｔｈａｔ　ｗａｓ　ｒｅａｌｌｙ　ｔｏｏ　ｍｕｃｈ　ｉｎｆｏ　ｔｏ　ｇｉｖｅ　ｏｕｔ　ａｓ　ａ　ｈｉｎｔ，　ｗａｓｎ’ｔ　ｉｔ？
+◆After you’ve made all the necessary preparations, go to the pyramid.@KEY()↓
+◆In front of the pyramid, as the writing on the hieroglyph told,@KEY()↓
+◆step on the round stone plates in front of the sphinx, and draw a star.@KEY()↓
+◆That was really too much info to give out as a hint, wasn’t it?
 
-;jpn:◆しっかりと　みじたくを↓
-;jpn:　ととのえたら↓
-;jpn:　ピラミッドにいくといい。@KEY()↓
-;jpn:◆そして　ピラミッドのまえで↓
-;jpn:　ヒエログリフに↓
-;jpn:　かかれている　とおりに@KEY()↓
+;jpn:◆しっかりと みじたくを↓
+;jpn: ととのえたら↓
+;jpn: ピラミッドにいくといい。@KEY()↓
+;jpn:◆そして ピラミッドのまえで↓
+;jpn: ヒエログリフに↓
+;jpn: かかれている とおりに@KEY()↓
 ;jpn:◆スフィンクスのまえの↓
-;jpn:　まるい　せきばんを↓
-;jpn:　ほしを　えがくように　ふむ。@KEY()↓
-;jpn:◆ちょっとサービスしすぎかな？
+;jpn: まるい せきばんを↓
+;jpn: ほしを えがくように ふむ。@KEY()↓
+;jpn:◆ちょっとサービスしすぎかな?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1261,16 +1261,16 @@ _HINT_SPHINX;marcus
 ;ピラミッド内で「タカのめ」を手に入れなさい
 _HINT_ITEM_TAKANOME;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｄｅｅｐ　ｉｎ　ｔｈｅ　ｐｙｒａｍｉｄ，　ｔｈｅｒｅ　ｉｓ　ａｎ　ｉｔｅｍ　ｃａｌｌｅｄ　ｔｈｅ　Ｈａｗｋ　Ｅｙｅ，　ｏｒ　ｓｏ　Ｉ’ｖｅ　ｈｅａｒｄ．@KEY()↓
-◆Ｙｏｕ　ｃａｎｎｏｔ　ｅｘｉｔ　ｔｈｅ　ｐｙｒａｍｉｄ　ｕｎｌｅｓｓ　ｙｏｕ　ｈａｖｅ　ｔｈｅ　Ｈａｗｋ　Ｅｙｅ．
+◆Deep in the pyramid, there is an item called the Hawk Eye, or so I’ve heard.@KEY()↓
+◆You cannot exit the pyramid unless you have the Hawk Eye.
 
-;jpn:◆ピラミッドの　おくふかく↓
-;jpn:　「タカのめ」があるという。@KEY()↓
+;jpn:◆ピラミッドの おくふかく↓
+;jpn: 「タカのめ」があるという。@KEY()↓
 ;jpn:◆「タカのめ」を↓
-;jpn:　てにいれないかぎり@KEY()↓
+;jpn: てにいれないかぎり@KEY()↓
 ;jpn:◆ピラミッドを↓
-;jpn:　ぬけでることは↓
-;jpn:　できないらしいぞ。
+;jpn: ぬけでることは↓
+;jpn: できないらしいぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1278,35 +1278,35 @@ _HINT_ITEM_TAKANOME;marcus
 ;ダンジョン男にあいなさい
 _HINT_ADD_DMAN;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｉｆ　ｈｅ’ｓ　ａｎ　ｅｎｅｍｙ　ｏｆ　ｙｏｕｒｓ　ｏｒ　ｎｏｔ，　ｂｕｔ@KEY()↓
-◆ｔｈｅ　ｇｕｙ　ｃａｌｌｅｄ　”Ｄｕｎｇｅｏｎ　Ｍａｎ”　ｓｅｅｍｓ　ｔｏ　ｂｅ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｈａｖｅ　ｙｏｕ　ａｌｒｅａｄｙ　ｍｅｔ　ｈｉｍ　ｂｅｆｏｒｅ　ｔｈｉｓ？
+◆I don’t know if he’s an enemy of yours or not, but@KEY()↓
+◆the guy called ”Dungeon Man” seems to be waiting for you.@KEY()↓
+◆Have you already met him before this?
 
-;jpn:◆てきか　みかたか↓
-;jpn:　わからないけど@KEY()↓
+;jpn:◆てきか みかたか↓
+;jpn: わからないけど@KEY()↓
 ;jpn:◆「ダンジョンおとこ」↓
-;jpn:　とかいうやつが@KEY()↓
+;jpn: とかいうやつが@KEY()↓
 ;jpn:◆ぼうやたちを↓
-;jpn:　まっているらしい。@KEY()↓
+;jpn: まっているらしい。@KEY()↓
 ;jpn:◆とりあえず↓
-;jpn:　あってみるかい？
+;jpn: あってみるかい?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ダンジョン男と別れた後
-;魔境に（サブマリンで）行きなさい
+;魔境に(サブマリンで)行きなさい
 _HINT_GO_MAKYO;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｔｈｅｒｅ　ｉｓ　ａ　ｂｒｏｋｅｎ　ｓｕｂｍａｒｉｎｅ　ｉｎ　ｔｈｅ　Ｄｕｎｇｅｏｎ　Ｍａｎ’ｓ　ｔｕｍｍｙ．@KEY()↓
-◆Ｏｎｃｅ　ｔｈｅ　ｓｕｂｍａｒｉｎｅ　ｇｅｔｓ　ｆｉｘｅｄ，　ｙｏｕ　ｃａｎ　ｇｏ　ｔｏ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ．@KEY()↓
-◆Ｕｈｈｈ．．．ｍａｙｂｅ．．．
+◆There is a broken submarine in the Dungeon Man’s tummy.@KEY()↓
+◆Once the submarine gets fixed, you can go to the Deep Darkness.@KEY()↓
+◆Uhhh...maybe...
 
 ;jpn:◆「ダンジョンおとこ」の↓
-;jpn:　おなかのなかには↓
-;jpn:　こわれたサブマリンがある。@KEY()↓
-;jpn:◆サブマリンさえ　なおれば↓
-;jpn:　まきょうへ↓
-;jpn:　いくことができる。@KEY()↓
+;jpn: おなかのなかには↓
+;jpn: こわれたサブマリンがある。@KEY()↓
+;jpn:◆サブマリンさえ なおれば↓
+;jpn: まきょうへ↓
+;jpn: いくことができる。@KEY()↓
 ;jpn:◆かもしれない。
 @GOSUB(_HINT_KOKOMADE)
 @!
@@ -1315,56 +1315,56 @@ _HINT_GO_MAKYO;marcus
 ;タカのめを使いなさい
 _HINT_USE_TAKANOME;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｉｆ　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｂｒｉｇｈｔｅｎ　ｕｐ　ａ　ｄａｒｋ　ｓｔｒｅｅｔ　ｙｏｕ　ｕｓｅ．．．@KEY()↓
-◆Ｙｅｐ，　ｔｈａｔ’ｓ　ｒｉｇｈｔ！　Ａ　ｆｌａｓｈｌｉｇｈｔ！@KEY()↓
-◆Ｏｈ．．．ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｏｎｅ？　　Ａｃｔｕａｌｌｙ，　Ｉ　ｋｎｅｗ　ｔｈａｔ　ｙｏｕ　ｄｉｄｎ’ｔ．@KEY()↓
-◆Ｗｅｌｌ，　ｗｈａｔ　ｃｏｍｅｓ　ｉｎ　ｈａｎｄｙ　ｉｓ　ｓｏｍｅｔｈｉｎｇ　ｔｈａｔ　ｙｏｕ，　ｙ’ｋｎｏｗ，@KEY()↓
-◆ｐｉｃｋｅｄ　ｕｐ　ｉｎ，　ｙ’ｋｎｏｗ，　ｔｈｅ　ｐｙｒａｍｉｄ．．．@KEY()↓
-◆Ｉ　ｆｏｒｇｏｔ　ｔｈｅ　ｎａｍｅ．．．Ｉｔ’ｓ　ｔｈａｔ　ｗｈａｔｃｈｙａｍａｃａｌｌｉｔ．．．ｏｈｈｈ．．．ｃｒｕｄ！
+◆If you need to brighten up a dark street you use...@KEY()↓
+◆Yep, that’s right! A flashlight!@KEY()↓
+◆Oh...you don’t have one?  Actually, I knew that you didn’t.@KEY()↓
+◆Well, what comes in handy is something that you, y’know,@KEY()↓
+◆picked up in, y’know, the pyramid...@KEY()↓
+◆I forgot the name...It’s that whatchyamacallit...ohhh...crud!
 
 ;jpn:◆くらいみちを↓
-;jpn:　あかるくするのは@KEY()↓
-;jpn:◆そう！↓
-;jpn:　かいちゅうでんとうだ！@KEY()↓
+;jpn: あかるくするのは@KEY()↓
+;jpn:◆そう!↓
+;jpn: かいちゅうでんとうだ!@KEY()↓
 ;jpn:◆そんなものは↓
-;jpn:　もってないって？@KEY()↓
-;jpn:◆いやいや　そんなことは↓
-;jpn:　おじさん　しってるよ。@KEY()↓
-;jpn:◆そこで　べんりなのが↓
-;jpn:　あのピラミッドで↓
-;jpn:　てにいれた@KEY()↓
+;jpn: もってないって?@KEY()↓
+;jpn:◆いやいや そんなことは↓
+;jpn: おじさん しってるよ。@KEY()↓
+;jpn:◆そこで べんりなのが↓
+;jpn: あのピラミッドで↓
+;jpn: てにいれた@KEY()↓
 ;jpn:◆そうそう‥‥↓
-;jpn:　えーと‥‥@KEY()↓
-;jpn:◆おじさん　なまえ↓
-;jpn:　わすれちゃった‥‥@KEY()↓
+;jpn: えーと‥‥@KEY()↓
+;jpn:◆おじさん なまえ↓
+;jpn: わすれちゃった‥‥@KEY()↓
 ;jpn:◆ごめんね。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;タカのめ使用後
-;グミの村を目指しなさい（途中でプーが加わる）
+;グミの村を目指しなさい(途中でプーが加わる)
 _HINT_GO_GUMI;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｉｔ’ｓ　ｔｏｕｇｈ，　ｂｕｔ　ｙｏｕ　ｈａｖｅ　ｔｏ　ｋｅｅｐ　ｐｒｅｓｓｉｎｇ　ｏｎ　ｔｈｒｏｕｇｈ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ．@KEY()↓
-◆Ｔｈａｔ　ｗａｙ，　ｙｏｕ’ｌｌ　ｆｉｎｄ　ｔｈｅ　ｖｉｌｌａｇｅ　ｏｆ　ｔｈｅ　Ｔｅｎｄａ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｇｉｖｅ　ｕｐ　ｙｅｔ．
+◆It’s tough, but you have to keep pressing on through the Deep Darkness.@KEY()↓
+◆That way, you’ll find the village of the Tenda.@KEY()↓
+◆Don’t give up yet.
 
 ;jpn:◆つらいだろうが↓
-;jpn:　まきょうをすすむのだ。@KEY()↓
-;jpn:◆きっと　かならず↓
-;jpn:　グミという　むらに↓
-;jpn:　たどりつくはず。@KEY()↓
+;jpn: まきょうをすすむのだ。@KEY()↓
+;jpn:◆きっと かならず↓
+;jpn: グミという むらに↓
+;jpn: たどりつくはず。@KEY()↓
 ;jpn:◆あきらめてはいかん。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;グミの村到着後（アップル誘拐後）
-;アンドーナッツ研究所にいきなさい（コケシけしマシンを手に入れなさい）
+;グミの村到着後(アップル誘拐後)
+;アンドーナッツ研究所にいきなさい(コケシけしマシンを手に入れなさい)
 _HINT_GO_LABO;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ａｐｐｌｅ．．．@KEY()↓
-◆Ｗｉｎｔｅｒｓ．．．@KEY()↓
-◆Ａｎｄｏｎｕｔｓ．．．
+◆Apple...@KEY()↓
+◆Winters...@KEY()↓
+◆Andonuts...
 ;jpn:◆アップル‥‥@KEY()↓
 ;jpn:◆ウィンターズ‥‥@KEY()↓
 ;jpn:◆アンドーナッツ‥‥。
@@ -1372,46 +1372,46 @@ _HINT_GO_LABO;marcus
 @!
 
 ;コケシ消しマシン入手後
-;ストーンヘンジ基地を破壊しなさい（アップル救出しなさい）
+;ストーンヘンジ基地を破壊しなさい(アップル救出しなさい)
 _HINT_ERASE_KOKESHI;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｔｈｅ　Ｐｅｎｃｉｌ　Ｅｒａｓｅｒ　ｍａｋｅｓ　ｐｅｎｃｉｌ−ｓｈａｐｅｄ　ｓｔｕｆｆ　ｄｉｓａｐｐｅａｒ．@KEY()↓
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｔｈｉｎｋ　ｔｈｅ　Ｅｒａｓｅｒ　Ｅｒａｓｅｒ　ｍａｃｈｉｎｅ　ｄｏｅｓ？
+◆The Pencil Eraser makes pencil−shaped stuff disappear.@KEY()↓
+◆What do you think the Eraser Eraser machine does?
 ;jpn:◆タコけしマシンは↓
-;jpn:　タコをけす。@KEY()↓
-;jpn:◆さて　コケシけしマシンは？
+;jpn: タコをけす。@KEY()↓
+;jpn:◆さて コケシけしマシンは?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;コケシ消した後
-;ストーンヘンジ基地を破壊しなさい（アップル救出しなさい）
+;ストーンヘンジ基地を破壊しなさい(アップル救出しなさい)
 _HINT_GO_STONE;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　Ａｐｐｌｅ　Ｋｉｄ　ｉｓ　ｔｒａｐｐｅｄ　ｄｅｅｐ，　ｄｅｅｐ，　ｄｅｅｐ　ｉｎ　ｔｈｅ　Ｓｔｏｎｅｈｅｎｇｅ　ｅｎｅｍｙ　ｂａｓｅ．
+◆It looks like Apple Kid is trapped deep, deep, deep in the Stonehenge enemy base.
 
 ;jpn:◆アップルキッドは↓
-;jpn:　ストーンヘンジきちの↓
-;jpn:　ふかーいところに@KEY()↓
+;jpn: ストーンヘンジきちの↓
+;jpn: ふかーいところに@KEY()↓
 ;jpn:◆つかまっているようだ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;ストーンヘンジ基地破壊後（アップルから無口本情報もらった後）
+;ストーンヘンジ基地破壊後(アップルから無口本情報もらった後)
 ;オネット図書館で「むくちをなおすほん」を手に入れなさい
 _HINT_ITEM_MUKUCHI;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｗｅｌｌ，　ｕｓｕａｌｌｙ　ｙｏｕ　ｆｉｎｄ　ｂｏｏｋｓ　ａｔ　ｔｈｅ　ｌｉｂｒａｒｙ．
-◆Ｏｎｅ　ｗｈｏ　ｇｏｅｓ　ｔｏ　ｔｈｅ　ｔｈｅ　ｆｉｓｈｍｏｎｇｅｒ　ａｎｄ　ｅｘｐｅｃｔｓ　ｔｏ　ｆｉｎｄ　ｂｏｏｋｓ　@KEY()↓
-◆ｉｓ　ｌｉｋｅｌｙ　ｔｏ　ｇｅｔ　ｖｅｒｙ　ｅｍｂａｒｒａｓｓｅｄ　ｉｎｄｅｅｄ．
+◆Well, usually you find books at the library.
+◆One who goes to the the fishmonger and expects to find books @KEY()↓
+◆is likely to get very embarrassed indeed.
 
 ;jpn:◆えー↓
-;jpn:　「ほん」というものは@KEY()↓
+;jpn: 「ほん」というものは@KEY()↓
 ;jpn:◆としょかんにあるものと↓
-;jpn:　そうばは　きまっておりますが@KEY()↓
+;jpn: そうばは きまっておりますが@KEY()↓
 ;jpn:◆ひねくれものは↓
-;jpn:　さかなやに　いってしまって@KEY()↓
-;jpn:◆おおはじを　かいてしまうもの↓
-;jpn:　で　ございやす。
+;jpn: さかなやに いってしまって@KEY()↓
+;jpn:◆おおはじを かいてしまうもの↓
+;jpn: で ございやす。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1419,30 +1419,30 @@ _HINT_ITEM_MUKUCHI;marcus
 ;グミ長老に「むくちをなおすほん」を使いなさい
 _HINT_GUMI_USEBOOK;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｔｏ　ｃｏｒｒｅｃｔ　ｓｈｙｎｅｓｓ，　ｙｏｕ　ｓｈｏｕｌｄ　ｌｅｔ　ｔｈａｔ　ｐｅｒｓｏｎ　ｒｅａｄ　ａ　ｓｅｌｆ−ｈｅｌｐ　ｂｏｏｋ．@KEY()↓
-◆”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ”　ｉｓ　ｐｒｏｂａｂｌｙ　ｔｈｅ　ｂｅｓｔ．．．Ｉ　ｗａｓ　ａ　ｂｅｓｔ−ｓｅｌｌｅｒ，　ｙ’ｋｎｏｗ．@KEY()↓
-◆Ｉｆ　ａ　ｗｈｏｌｅ　ｇｒｏｕｐ　ｉｓ　ｓｈｙ，　ｔｈｅ　ｌｅａｄｅｒ　ｏｆ　ｔｈｅ　ｇｒｏｕｐ　ｓｈｏｕｌｄ　ｒｅａｄ　ｔｈｅ　ｂｏｏｋ　ｏｎ　ｓｈｙｎｅｓｓ@KEY()↓
-◆ｔｏ　ａｌｌ　ｔｈｅ　ｇｒｏｕｐ　ｍｅｍｂｅｒｓ，　ａｎｄ　ｔｈｅ　ｗｈｏｌｅ　ｇｒｏｕｐ　ｍａｙ　ｇｅｔ　ｏｖｅｒ　ｓｈｙｎｅｓｓ，　ｔｈｏｕｇｈ　ａｔ　ｌｅａｓｔ　ａ　ｐａｒｔ　ｗｉｌｌ　ｃｅｒｔａｉｎｌｙ　ｓｔｏｐ　ｂｅｉｎｇ　ｓｈｙ．@KEY()↓
-◆Ｓｏ，　ｈｏｗ　ｍａｎｙ　ｔｉｍｅｓ　ｄｉｄ　Ｉ　ｕｓｅ　ｔｈｅ　ｗｏｒｄ　”ｓｈｙ”？
+◆To correct shyness, you should let that person read a self−help book.@KEY()↓
+◆”Overcoming Shyness” is probably the best...I was a best−seller, y’know.@KEY()↓
+◆If a whole group is shy, the leader of the group should read the book on shyness@KEY()↓
+◆to all the group members, and the whole group may get over shyness, though at least a part will certainly stop being shy.@KEY()↓
+◆So, how many times did I use the word ”shy”?
 
 ;jpn:◆むくちなひとの↓
-;jpn:　むくちをなおすためには@KEY()↓
+;jpn: むくちをなおすためには@KEY()↓
 ;jpn:◆「むくちをなおすほん」を↓
-;jpn:　よませるにかぎる。@KEY()↓
+;jpn: よませるにかぎる。@KEY()↓
 ;jpn:◆あるしゅうだんが↓
-;jpn:　すべてむくちなばあい@KEY()↓
+;jpn: すべてむくちなばあい@KEY()↓
 ;jpn:◆そのしゅうだんの↓
-;jpn:　リーダー（もちろんむくち）に@KEY()↓
+;jpn: リーダー(もちろんむくち)に@KEY()↓
 ;jpn:◆その「ほん」を↓
-;jpn:　よませると@KEY()↓
+;jpn: よませると@KEY()↓
 ;jpn:◆そのしゅうだんを↓
-;jpn:　こうせいする@KEY()↓
+;jpn: こうせいする@KEY()↓
 ;jpn:◆すべてのひとが↓
-;jpn:　むくちでなくなる↓
-;jpn:　ことがある。@KEY()↓
-;jpn:◆さて　わたしは↓
-;jpn:　なんど「むくち」と↓
-;jpn:　いったでしょう？
+;jpn: むくちでなくなる↓
+;jpn: ことがある。@KEY()↓
+;jpn:◆さて わたしは↓
+;jpn: なんど「むくち」と↓
+;jpn: いったでしょう?
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1450,26 +1450,26 @@ _HINT_GUMI_USEBOOK;marcus
 ;グミに岩を退けてもらいなさい
 _HINT_GUMI_CAVEOPEN;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｏｈ，　ｈｅｅｅｙ！@KEY()↓
-◆Ｈａｖｅ　ｙｏｕ　ｈａｖｅ　ｙｏｕ　ｓｐｏｋｅｎ　ｗｉｔｈ　ｌｉｋｅ，　ｔｈｅ　Ｔｅｎｄａ@KEY()↓
-◆ｄｅｅｐ　ｉｎ　ｔｈｅ　ｃｕｔｅ，　ｌｉｔｔｌｅ　Ｔｅｎｄａ　ｖｉｌｌａｇｅ？@KEY()↓
-◆Ｏｈ．．．ｍｙ．．．ｇｏｓｈ．．．↓
-　　Ｒｅａｌｌｙ？？？@KEY()↓
-◆Ａｒｅ　ｙｏｕ　ｌｉｋｅ，　ｒｅａｌｌｙ　ｓｅｒｉｏｕｓ？？？@KEY()↓
-◆Ｉ　ｓｏｕｎｄ　ｌｉｋｅ　ａ　ｙ’ｋｎｏｗ，　ｔｅｅｎａｇｅ　ｇｉｒｌ？@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｌｉｋｅ　ｔｈｅ　ｗａｙ　Ｉ　ｔａｌｋ　ｎｏｗ？
+◆Oh, heeey!@KEY()↓
+◆Have you have you spoken with like, the Tenda@KEY()↓
+◆deep in the cute, little Tenda village?@KEY()↓
+◆Oh...my...gosh...↓
+  Really???@KEY()↓
+◆Are you like, really serious???@KEY()↓
+◆I sound like a y’know, teenage girl?@KEY()↓
+◆Do you like the way I talk now?
 
 ;jpn:◆ねぇねぇねぇー@KEY()↓
 ;jpn:◆グミのむらのぉー↓
-;jpn:　おくにいるぅー@KEY()↓
+;jpn: おくにいるぅー@KEY()↓
 ;jpn:◆ちからじまんのぉー↓
-;jpn:　グミちゃんにはぁー↓
-;jpn:　はなしかけたぁー？@KEY()↓
-;jpn:◆エーッ！↓
-;jpn:　ホントー？↓
-;jpn:　マジー？@KEY()↓
+;jpn: グミちゃんにはぁー↓
+;jpn: はなしかけたぁー?@KEY()↓
+;jpn:◆エーッ!↓
+;jpn: ホントー?↓
+;jpn: マジー?@KEY()↓
 ;jpn:◆わかいじょせいバージョンで↓
-;jpn:　ヒントをだしてみました。
+;jpn: ヒントをだしてみました。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1478,13 +1478,13 @@ _HINT_GUMI_CAVEOPEN;marcus
 _HINT_GO_LUMI;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
 ;◆グミのむらのちかに↓
-;　すごくだいじな↓
-;　ばしょがある。@KEY()↓
-◆Ｔｈｅｒｅ　ｉｓ　ａ　ｖｅｒｙ　ｉｍｐｏｒｔａｎｔ　ｐｌａｃｅ　ｕｎｄｅｒ　ｔｈｅ　Ｔｅｎｄａ　Ｖｉｌｌａｇｅ．
+; すごくだいじな↓
+; ばしょがある。@KEY()↓
+◆There is a very important place under the Tenda Village.
 
 ;jpn:◆グミのむらのちかに↓
-;jpn:　すごくだいじな↓
-;jpn:　ばしょがある。
+;jpn: すごくだいじな↓
+;jpn: ばしょがある。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1492,110 +1492,110 @@ _HINT_GO_LUMI;marcus
 ;ファイアスプリングスに行きなさい
 _HINT_GO_FIRE;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｄｏ　ｙｏｕ　ｋｎｏｗ　ａｂｏｕｔ　ｔｈｅ　ｔａｌｋｉｎｇ　ｒｏｃｋ　ｉｎ　ｔｈｅ　Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ？@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｌｉｓｔｅｎ　ｔｏ　ｗｈａｔ　ｔｈｅ　ｒｏｃｋ　ｈａｓ　ｔｏ　ｓａｙ　ａｎｄ　ｔｈｅｎ　ｐｕｔ　ｉｔ　ｉｎｔｏ　ｐｒａｃｔｉｃｅ．
+◆Do you know about the talking rock in the Lost Underworld?@KEY()↓
+◆You should listen to what the rock has to say and then put it into practice.
 
 ;jpn:◆ちていたいりくにある↓
-;jpn:　しゃべるいわを↓
-;jpn:　しってるかい？@KEY()↓
+;jpn: しゃべるいわを↓
+;jpn: しってるかい?@KEY()↓
 ;jpn:◆しゃべるいわの↓
-;jpn:　はなしをきき@KEY()↓
-;jpn:◆それを　じっこうに↓
-;jpn:　うつすといい。
+;jpn: はなしをきき@KEY()↓
+;jpn:◆それを じっこうに↓
+;jpn: うつすといい。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;ファイアスプリングスクリア後（サウンドそろってない）
+;ファイアスプリングスクリア後(サウンドそろってない)
 ;地底大陸の喋る岩から残りの音の情報聞きなさい
 _HINT_RESTSOUND;marcus
 @FALSE_GOTO(_HINT_SUBHINT)
-◆Ｄｏ　ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　ｔａｌｋｉｎｇ　ｒｏｃｋ　ｉｎ　ｔｈｅ　Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ？@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｌｉｓｔｅｎ　ｔｏ　ｗｈａｔ　ｔｈｅ　ｒｏｃｋ　ｈａｓ　ｔｏ　ｓａｙ．
+◆Do you know that talking rock in the Lost Underworld?@KEY()↓
+◆You should listen to what the rock has to say.
 
 ;jpn:◆ちていたいりくにある↓
-;jpn:　しゃべるいわを↓
-;jpn:　しってるかい？@KEY()↓
+;jpn: しゃべるいわを↓
+;jpn: しってるかい?@KEY()↓
 ;jpn:◆しゃべるいわのはなしを↓
-;jpn:　きいてみるといいぞ。
+;jpn: きいてみるといいぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;マジカントクリア後;サターンバレーに行きなさい
 _HINT_GO_DOSEI2;marcus
-◆Ｍａｙｂｅ　．．．↓
-　　ｗｈｅｒｅ　ｙｏｕ　ｓｈｏｕｌｄ　ｖｉｓｉｔ　ｉｓ　@KEY()↓
-◆Ｓａｔｕｒｎ　Ｖａｌｌｅｙ．．．
+◆Maybe ...↓
+  where you should visit is @KEY()↓
+◆Saturn Valley...
 
 ;jpn:◆たぶん‥‥↓
-;jpn:　きみのいくべきところは‥‥@KEY()↓
+;jpn: きみのいくべきところは‥‥@KEY()↓
 ;jpn:◆サターンバレー‥‥。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;スペーストンネル１、５失敗後
-;オネットで物質ＸＹＺ手に入れなさい
+;オネットで物質XYZ手に入れなさい
 _HINT_ITEM_XYZ;marcus
-◆Ａ　ｖｅｒｙ　ｓｐｅｃｉａｌ　ｓｕｂｓｔａｎｃｅ　ｉｓ　ｎｅｃｅｓｓａｒｙ　ｔｏ　ｃｏｍｐｌｅｔｅ　ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ．@KEY()↓
-◆Ｙｏｕ　ｋｎｏｗ，　Ｉ　ｗｏｎｄｅｒ　ｉｆ　ｔｈｅ　ｓｉｔｅ　ｉｎ　Ｏｎｅｔｔ@KEY()↓
-◆ｗｈｅｒｅ　ｔｈｅ　ｍｅｔｅｏｒｉｔｅ　ｌａｎｄｅｄ　ｈａｓ　ｓｏｍｅｔｈｉｎｇ　ｔｏ　ｄｏ　ｗｉｔｈ　ｔｈｉｓ？@KEY()↓
-◆Ｉ　ｓａｙ，　ｇｏ　ｔｈｅｒｅ　ａｎｄ　ｃｈｅｃｋ　ｏｕｔ　ｔｈｅ　ｓｉｔｅ．
+◆A very special substance is necessary to complete the Phase Distorter.@KEY()↓
+◆You know, I wonder if the site in Onett@KEY()↓
+◆where the meteorite landed has something to do with this?@KEY()↓
+◆I say, go there and check out the site.
 
 ;jpn:◆スペーストンネルを↓
-;jpn:　かんせいさせるには↓
-;jpn:　とくしゅなぶっしつが@KEY()↓
+;jpn: かんせいさせるには↓
+;jpn: とくしゅなぶっしつが@KEY()↓
 ;jpn:◆ひつようだ。@KEY()↓
 ;jpn:◆オネットのいんせきあとが↓
-;jpn:　あやしくはないか？@KEY()↓
-;jpn:◆そこへ　いき↓
-;jpn:　いんせきあとを↓
-;jpn:　チェックしてみるのだ。
+;jpn: あやしくはないか?@KEY()↓
+;jpn:◆そこへ いき↓
+;jpn: いんせきあとを↓
+;jpn: チェックしてみるのだ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 _HINT_GO_SAITEI;marcus
 ;文章の流れが不自然なので、
-;ここにあった「ちょっとまった　ヤングマン」は取りました。/上野
-◆Ｉ　ｈａｖｅ　ｎｏ　ｍｏｒｅ　ｈｉｎｔｓ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｙｏｕ’ｖｅ　ｄｏｎｅ　ｓｕｃｈ　ａ　ｇｏｏｄ　ｊｏｂ　ｔｏ　ｔｈｉｓ　ｐｏｉｎｔ．@KEY()↓
-◆Ｆｒｏｍ　ｈｅｒｅ　ｏｎ　ｏｕｔ．．．@KEY()↓
-◆Ｔｒｕｓｔ　ｙｏｕｒ　ｊｕｄｇｅｍｅｎｔ，　ａｎｄ　ａｌｓｏ　ｙｏｕｒ　ｌｕｃｋ．
+;ここにあった「ちょっとまった ヤングマン」は取りました。/上野
+◆I have no more hints for you.@KEY()↓
+◆You’ve done such a good job to this point.@KEY()↓
+◆From here on out...@KEY()↓
+◆Trust your judgement, and also your luck.
 
 ;jpn:◆きみにつたえるヒントは↓
-;jpn:　@WI(10)‥@WI(10)‥@WI(10)‥@WI(10)‥@WI(30)
-;jpn:　もう　なにもない‥‥。@KEY()↓
-;jpn:◆きみは　これまで↓
-;jpn:　ほんとうに↓
-;jpn:　よくがんばった。@KEY()↓
+;jpn: @WI(10)‥@WI(10)‥@WI(10)‥@WI(10)‥@WI(30)
+;jpn: もう なにもない‥‥。@KEY()↓
+;jpn:◆きみは これまで↓
+;jpn: ほんとうに↓
+;jpn: よくがんばった。@KEY()↓
 ;jpn:◆あとは‥‥‥@KEY()↓
-;jpn:◆うんを　てんに↓
-;jpn:　まかせるだけだ。@KEYNP()
+;jpn:◆うんを てんに↓
+;jpn: まかせるだけだ。@KEYNP()
 @!
 
-;サターンバレー　ギーグ攻略後
+;サターンバレー ギーグ攻略後
 _HINT_WIN_GIEGU;marcus
-◆Ｗｅｌｌ，　Ｉ　ｗａｎｔ　ｔｏ　ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ａｌｌ　ｔｈｅ　ｔｉｍｅｓ@KEY()↓
-◆ｔｈａｔ　ｙｏｕ　ｕｓｅｄ　ｔｈｅ　ｈｉｎｔ　ｓｈｏｐ．　　Ｉｔ’ｓ　ｂｅｅｎ　ａ　ｗｈｉｌｅ　ｓｉｎｃｅ　Ｉ　ｆｉｒｓｔ　ｓａｗ　ｙｏｕ．．．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｍｙ　ｆｉｎａｌ　ｄａｙ　ｉｎ　ｂｕｓｉｎｅｓｓ．@KEY()↓
-◆@WI(10)．．@WI(10)．．@WI(10)．．@WI(10)．．@WI(30)．．@KEY()↓
-◆Ｗｅｌｌ，　ｓｏ　ｌｏｎｇ　ｋｉｄ，↓
-　　Ｎｏ，　ｎｏ．．．Ｍａｓｔｅｒ　@DSP_NAME(PC_NESS)．@KEY()↓
-◆Ｓｅｅ　ｙｏｕ　ａｇａｉｎ，↓
-　　ｉｆ　ｆａｔｅ　ａｌｌｏｗｓ　ｉｔ．
+◆Well, I want to thank you for all the times@KEY()↓
+◆that you used the hint shop.  It’s been a while since I first saw you...@KEY()↓
+◆This is my final day in business.@KEY()↓
+◆@WI(10)..@WI(10)..@WI(10)..@WI(10)..@WI(30)..@KEY()↓
+◆Well, so long kid,↓
+  No, no...Master @DSP_NAME(PC_NESS).@KEY()↓
+◆See you again,↓
+  if fate allows it.
 
 ;jpn:◆ながいあいだ↓
-;jpn:　ヒントや　を↓
-;jpn:　ごりよう　いただきまして@KEY()↓
+;jpn: ヒントや を↓
+;jpn: ごりよう いただきまして@KEY()↓
 ;jpn:◆まことに↓
-;jpn:　ありがとうございました。@KEY()↓
+;jpn: ありがとうございました。@KEY()↓
 ;jpn:◆ほんじつをもって↓
-;jpn:　ヒントや　は↓
-;jpn:　へいてん　いたします。@KEY()↓
+;jpn: ヒントや は↓
+;jpn: へいてん いたします。@KEY()↓
 ;jpn:◆@WI(10)‥@WI(10)‥@WI(10)‥@WI(10)‥@WI(30)。@KEY()↓
-;jpn:◆それじゃあ　ぼうや↓
-;jpn:　いや@WI(20)‥@WI(20)‥@WI(50)↓
-;jpn:　@DSP_NAME(PC_NESS)さん。@KEY()↓
+;jpn:◆それじゃあ ぼうや↓
+;jpn: いや@WI(20)‥@WI(20)‥@WI(50)↓
+;jpn: @DSP_NAME(PC_NESS)さん。@KEY()↓
 ;jpn:◆えんがあったら↓
-;jpn:　また　あいましょう。
+;jpn: また あいましょう。
 @KEYNP()
 @!
 
@@ -1615,60 +1615,60 @@ _HINT_SUBHINT;
 @CHKFGOTO(FLG_FOUR_KOMORITA,_HINT_VINUS)
 
 ;ヒエログリフ読んだ後
-;ライスボール（コモリター）に会いに行きなさい
+;ライスボール(コモリター)に会いに行きなさい
 _HINT_FOUR_KOMORITA_A;marcus
-◆Ａｔ　ｔｈｅ　Ｄｉｎｏｓａｕｒ　Ｍｕｓｅｕｍ　ｉｎ　Ｆｏｕｒｓｉｄｅ．．．．@KEY()↓
-◆Ａ　ｍａｎ　ｃａｌｌｅｄ　ｃａｌｌｅｄ　Ｍｒ．　Ｓｐｏｏｎ　ｈａｓ　ａ　ｈｅａｖｙ　ｍｕｓｔａｃｈｅ．．．．．
+◆At the Dinosaur Museum in Fourside....@KEY()↓
+◆A man called called Mr. Spoon has a heavy mustache.....
 
 ;jpn:◆フォーサイドの↓
-;jpn:　きょうりゅうはくぶつかん‥‥。@KEY()↓
+;jpn: きょうりゅうはくぶつかん‥‥。@KEY()↓
 ;jpn:◆ライスボウルとかいう↓
-;jpn:　ヒゲのこいおとこ‥‥。
+;jpn: ヒゲのこいおとこ‥‥。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ライスボールに会った後
 ;ビーナスにサインもらいなさい
 _HINT_VINUS;marcus
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｍｅｅｔ　Ｖｅｎｕｓ，　ｙｏｕ　ｓｈｏｕｌｄ　ｇｏ　ｂａｃｋｓｔａｇｅ　ａｔ　ｔｈｅ　Ｔｏｐｏｌｌａ　Ｔｈｅａｔｅｒ．
+◆If you want to meet Venus, you should go backstage at the Topolla Theater.
 
 ;jpn:◆ビーナスにあいたいなら↓
-;jpn:　トポロげきじょうの↓
-;jpn:　がくやにいってみなさい。
+;jpn: トポロげきじょうの↓
+;jpn: がくやにいってみなさい。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;サインもらった後
 ;ライスボールに「サインいりバナナ」を渡しなさい
 _HINT_FOUR_KOMORITA_B;
-◆Ａｎ　ａｕｔｏｇｒａｐｈ　ｗｉｔｈ　ａ　ｂａｎａｎａ！↓
-　　Ｉ　ｍｅａｎ，↓
-　　Ａ　ｂａｎａｎａ　ｗｉｔｈ　ａｎ　ａｕｔｏｇｒａｐｈ！@KEY()↓
-◆Ｙｏｕ’ｄ　ｂｅｔｔｅｒ　ｇｅｔ　ｔｈｉｓ　ｔｏ　Ｍｒ．　Ｓｐｏｏｎ　ｒｉｇｈｔ　ａｗａｙ！
+◆An autograph with a banana!↓
+  I mean,↓
+  A banana with an autograph!@KEY()↓
+◆You’d better get this to Mr. Spoon right away!
 
 ;jpn:◆バナナいりサイン‥‥↓
-;jpn:　いや↓
-;jpn:　サインいりバナナは@KEY()↓
+;jpn: いや↓
+;jpn: サインいりバナナは@KEY()↓
 ;jpn:◆ライスボウルに↓
-;jpn:　わたすといいぞ。
+;jpn: わたすといいぞ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ライスボールにサイン渡した後
 ;マグネットヒルをクリアしなさい
 _HINT_POWR_MGNT;marcus
-◆Ｈｅｃｋ，　ｓｉｎｃｅ　ｔｈｅ　ｄｏｏｒ　ｔｏ　ｔｈｅ　ｓｅｗｅｒ　ｉｓ　ｏｐｅｎ，@KEY()↓
-◆ｗｈｙ　ｎｏｔ　ｇｏ　ａｌｌ　ｔｈｅ　ｗａｙ　ｉｎｓｉｄｅ　ａｎｄ　ｌｏｏｋ　ａｒｏｕｎｄ？@KEY()↓
-◆Ｉ　ｋｎｏｗ　ｔｈｅ　ｓｔｉｎｋ　ａｎｄ　ｔｈｅ　ｖｅｒｍｉｎ　ｃｏｕｌｄ　ｏｖｅｒｐｏｗｅｒ　ｙｏｕ，@KEY()↓
-◆ｂｕｔ　ｉｔ　ｍｉｇｈｔ　ｍａｋｅ　ｙｏｕ　ｔｏｕｇｈｅｒ，　ｔｏｏ．
+◆Heck, since the door to the sewer is open,@KEY()↓
+◆why not go all the way inside and look around?@KEY()↓
+◆I know the stink and the vermin could overpower you,@KEY()↓
+◆but it might make you tougher, too.
 
 ;jpn:◆せっかく↓
-;jpn:　ちかの　げすいどうの↓
-;jpn:　トビラがあいたんだから@KEY()↓
-;jpn:◆さいごまで　すすんでいって↓
-;jpn:　みちゃあどうだい？@KEY()↓
+;jpn: ちかの げすいどうの↓
+;jpn: トビラがあいたんだから@KEY()↓
+;jpn:◆さいごまで すすんでいって↓
+;jpn: みちゃあどうだい?@KEY()↓
 ;jpn:◆つらいだろうけど↓
-;jpn:　きっと　いいことあるかもよ。
+;jpn: きっと いいことあるかもよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -1676,39 +1676,39 @@ _HINT_POWR_MGNT;marcus
 ;マグネットヒルで「ウサギごにみニンジン」を入手しなさい
 ;ランマでウサギを「ウサギごのみニンジン」で消しなさい
 _HINT_CARROT;marcus
-◆Ｉｆ　ｙｏｕ　ｈａｖｅ　ｔｈｅ　Ｃａｒｒｏｔ　Ｋｅｙ，　@KEY()↓
-◆ｙｏｕ　ｓｈｏｕｌｄ　ｇｏ　ｔｏ　Ｄａｌａａｍ　ａｎｄ　ｇｉｖｅ　ｉｔ　ｔｏ　ｔｈｅ　ｂｕｎｎｙ　ａｔ　Ｐｉｎｋ　Ｃｌｏｕｄ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｈｅ　Ｃａｒｒｏｔ　Ｋｅｙ，　ｙｏｕ　ｓｈｏｕｌｄ　ｇｏ　ｔｏ　Ｍａｇｎｅｔ　Ｈｉｌｌ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｆｉｎｄ　ｔｈｅ　Ｃａｒｒｏｔ　Ｋｅｙ　ｔｈｅｒｅ．
+◆If you have the Carrot Key, @KEY()↓
+◆you should go to Dalaam and give it to the bunny at Pink Cloud.@KEY()↓
+◆If you don’t have the Carrot Key, you should go to Magnet Hill.@KEY()↓
+◆You should be able to find the Carrot Key there.
 
 ;jpn:◆もし↓
-;jpn:　「ウサギごのみニンジン」↓
-;jpn:　をもっているなら@KEY()↓
+;jpn: 「ウサギごのみニンジン」↓
+;jpn: をもっているなら@KEY()↓
 ;jpn:◆ランマにむかい↓
-;jpn:　それをピンククラウドの@KEY()↓
+;jpn: それをピンククラウドの@KEY()↓
 ;jpn:◆ウサちゃんに↓
-;jpn:　あげてごらん。@KEY()↓
+;jpn: あげてごらん。@KEY()↓
 ;jpn:◆もし↓
-;jpn:　「ウサギごのみニンジン」↓
-;jpn:　をもってないなら@KEY()↓
+;jpn: 「ウサギごのみニンジン」↓
+;jpn: をもってないなら@KEY()↓
 ;jpn:◆マグネットヒルへいこう。@KEY()↓
 ;jpn:◆「ウサギごのみニンジン」は↓
-;jpn:　きっと　そこにあるはず。
+;jpn: きっと そこにあるはず。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
 ;ヒントがない
 _HINT_WARUINE;marcus
 @GOSUB(_HINT_CHOTTO)
-　　Ｉ’ｄ　ｌｏｖｅ　ｔｏ　ｇｉｖｅ　ｙｏｕ　ａ　ｈｉｎｔ，@KEY()↓
-◆ｂｕｔ　Ｉ　ｃａｎ’ｔ　ｔｈｉｎｋ　ｏｆ　ｅｖｅｎ　ｏｎｅ．@KEY()↓
-◆Ｉ’ｍ　ｓｏｒｒｙ．↓
-　　Ｉ’ｌｌ　ｒｅｔｕｒｎ　ｙｏｕｒ　ｍｏｎｅｙ．
+  I’d love to give you a hint,@KEY()↓
+◆but I can’t think of even one.@KEY()↓
+◆I’m sorry.↓
+  I’ll return your money.
 
 ;jpn:  ヒントをあげたいんだけど@KEY()↓
-;jpn:◆まだ　おもいつかないんだ。@KEY()↓
+;jpn:◆まだ おもいつかないんだ。@KEY()↓
 ;jpn:◆わるいね。@KEY()↓
-;jpn:◆おかねを　かえしておこうね。
+;jpn:◆おかねを かえしておこうね。
 @MONEYIN(0)
 @SE(SE_se74_my_get)
 @WINR_MONEY()
@@ -1718,51 +1718,51 @@ _HINT_WARUINE;marcus
 
 _HINT_NOMONEY;marcus
 ;＜はい＞でおかねがない場合
-◆Ｏｈ，　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ．↓
-　　Ｄｏｎ’ｔ　ｙｏｕ　ｕｎｄｅｒｓｔａｎｄ？@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｈｏｗ　Ｉ　ｍａｋｅ　ｍｙ　ｌｉｖｉｎｇ．．．Ｉ　ｃａｎ’ｔ　ｊｕｓｔ　ｇｉｖｅ　ｙｏｕ　ａ　ｈｉｎｔ　ｆｏｒ　ｆｒｅｅ，
+◆Oh, you don’t have any money.↓
+  Don’t you understand?@KEY()↓
+◆This is how I make my living...I can’t just give you a hint for free,
 
-;jpn:◆あらま　おかねがない。↓
-;jpn:　でも　おじさんも↓
-;jpn:　しょうばいだから@KEY()↓
-;jpn:◆ただで　ヒントを↓
-;jpn:　あげるわけには↓
-;jpn:　いかないんだよ
+;jpn:◆あらま おかねがない。↓
+;jpn: でも おじさんも↓
+;jpn: しょうばいだから@KEY()↓
+;jpn:◆ただで ヒントを↓
+;jpn: あげるわけには↓
+;jpn: いかないんだよ
 @GET_ORDER_PLAYER(1)
 @EQ(PC_PAULA)
 @TRUE_GOTO(_HINT_NOMONEY_PAULA)
-　ｋｉｄ．
+ kid.
 
-;jpn:　ぼうや。
+;jpn: ぼうや。
 @KEYNP()
 @!
 _HINT_NOMONEY_PAULA;
-　ｍｙ　ｄｅａｒ．
-;jpn:　おじょうちゃん。
+ my dear.
+;jpn: おじょうちゃん。
 @KEYNP()
 @!
 
 _HINT_CHOTTO;
-◆Ｎｏｗ　ｗａｉｔ　ａ　ｍｉｎｕｔｅ，　ｙｏｕｎｇ　ｍａｎ！@KEY()↓
+◆Now wait a minute, young man!@KEY()↓
 
-;jpn:◆ちょっとまった！　ヤングマン！↓
+;jpn:◆ちょっとまった! ヤングマン!↓
 @!
 
 _HINT_KOKOMADE;
 @KEY()
 ←
-◆Ｔｈａｔ’ｓ　ｉｔ　ｆｏｒ　ｔｏｄａｙ．
+◆That’s it for today.
 
-;jpn:◆きょうは　ここまで。
+;jpn:◆きょうは ここまで。
 @KEYNP()
 @!
 
 
 _HINTSHOP_ONEMORE;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｈｅａｒ　ｔｈｅ　ｈｉｎｔ　ｏｎｃｅ　ｍｏｒｅ？@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ａ　ｓｐｅｃｉａｌ　ｓｅｒｖｉｃｅ　ｊｕｓｔ　ｆｏｒ　ｙｏｕ．．．@KEY()↓
+◆Do you want to hear the hint once more?@KEY()↓
+◆This is a special service just for you...@KEY()↓
 
-;jpn:◆もういちど　ヒントを↓
-;jpn:　ききたいのかい？↓
-;jpn:　では　とくべつに。@KEY()↓
+;jpn:◆もういちど ヒントを↓
+;jpn: ききたいのかい?↓
+;jpn: では とくべつに。@KEY()↓
 @GOTO(_HINT_ONEMORE)

@@ -1,4 +1,4 @@
-;/////////////////////////マップ専用グッズ（１／３）////////////////////////
+;/////////////////////////マップ専用グッズ(１／３)////////////////////////
 
 MSG_BTL_PIGNOSE;
 ←
@@ -6,16 +6,16 @@ MSG_BTL_PIGNOSE;
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｐｕｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)　ｏｎ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｎｏｓｅ！
-;jpn:　@DSP_GOODS(0)を　はなにつけた！
+ put↓
+  the @DSP_GOODS(0) on @GOSUB(MSG_ESUB_HIS_HER_GACT) nose!
+;jpn: @DSP_GOODS(0)を はなにつけた!
 @SE(SE_se73_my_fitout)
 @KEY()↓
-◆@DSP_ACTOR()　ｓｅａｒｃｈｅｄ　ｆｏｒ↓
-　　ｔｈｅ　ｓｍｅｌｌ　ｏｆ　ｔｈｅ　ｍａｇｉｃ　ｍｕｓｈｒｏｏｍ．
+◆@DSP_ACTOR() searched for↓
+  the smell of the magic mushroom.
 ;jpn:◆@DSP_ACTOR()は↓
-;jpn:　マジックトリフの↓
-;jpn:　においを　さぐった。
+;jpn: マジックトリフの↓
+;jpn: においを さぐった。
 @KEY()↓
 @SEARCH_TRUFFLE()
 @FALSE_GOTO(MSG_SYS_PIGNOSE_NG)
@@ -28,20 +28,20 @@ MSG_BTL_PIGNOSE;
 MSG_SYS_PIGNOSE_NEAR;
 @LOAD_REG()
 ←
-◆（Ｉｔ　ｍｕｓｔ　ｂｅ　ａ　ｌｉｔｔｌｅ　ｆｕｒｔｈｅｒ　@ONGOSUB(MSG_BTL_NULL,_PNOSE2,_PNOSE3,_PNOSE4,_PNOSE5,_PNOSE6,_PNOSE7,_PNOSE8,_PNOSE9)．）
-;jpn:◆（もっと↓
-;　@ONGOSUB(MSG_BTL_NULL,_PNOSE2,_PNOSE3,_PNOSE4,_PNOSE5,_PNOSE6,_PNOSE7,_PNOSE8,_PNOSE9)
-;jpn:に　あるようだ）
+◆(It must be a little further @ONGOSUB(MSG_BTL_NULL,_PNOSE2,_PNOSE3,_PNOSE4,_PNOSE5,_PNOSE6,_PNOSE7,_PNOSE8,_PNOSE9).)
+;jpn:◆(もっと↓
+; @ONGOSUB(MSG_BTL_NULL,_PNOSE2,_PNOSE3,_PNOSE4,_PNOSE5,_PNOSE6,_PNOSE7,_PNOSE8,_PNOSE9)
+;jpn:に あるようだ)
 @KEYNP()
 @!
 
 MSG_SYS_PIGNOSE_FIND;●(akm0616 w/itoi)γ
 ←
-◆（Ｉｔ　ｍｕｓｔ　ｂｅ　ｒｉｇｈｔ　ｈｅｒｅ！）
-;jpn:◆（ズバリ！@WI(30)↓
-;jpn:　ここに　ありそうだ）
-;◆ジャン！@WI(30)↓
-;　マジックトリフを　さぐりあてた！
+◆(It must be right here!)
+;jpn:◆(ズバリ!@WI(30)↓
+;jpn: ここに ありそうだ)
+;◆ジャン!@WI(30)↓
+; マジックトリフを さぐりあてた!
 @KEYNP()
 @!
 ;@KEY()↓
@@ -51,77 +51,77 @@ MSG_SYS_PIGNOSE_FIND;●(akm0616 w/itoi)γ
 ;@SE(SE_se74_my_get)
 ;@XCHG()
 ;◆@DSP_NAME(0)は↓
-;　マジックトリフを　てにいれた！
+; マジックトリフを てにいれた!
 ;@KEYNP()
 ;@!
 
 ;_PIGNOSE_GOODSFULL;
-;◆しかし　これいじょう↓
-;　ものを　もてない。
+;◆しかし これいじょう↓
+; ものを もてない。
 ;@KEYNP()
 ;@!
 
 MSG_SYS_PIGNOSE_THISSCRN;
 ←
-◆（Ｉｔ　ｉｓ　ａｒｏｕｎｄ　ｈｅｒｅ　ｓｏｍｅｗｈｅｒｅ，　ｂｕｔ　ｙｏｕ　ｃａｎ’ｔ　ｐｉｎｐｏｉｎｔ　ｔｈｅ　ｅｘａｃｔ　ｌｏｃａｔｉｏｎ．）
-;jpn:　ばしょが　とくていできない）
+◆(It is around here somewhere, but you can’t pinpoint the exact location.)
+;jpn: ばしょが とくていできない)
 @KEYNP()
 @!
 
 MSG_SYS_PIGNOSE_NG;
 ←
-◆（Ｔｈｅ　Ｔｒｕｆｆｌｅ　ｄｏｅｓｎ’ｔ　ｓｅｅｍ　ｔｏ　ｂｅ　ａｒｏｕｎｄ　ｈｅｒｅ．）
-;jpn:◆（このあたりには↓
-;jpn:　マジックトリフは　なさそうだ）
+◆(The Truffle doesn’t seem to be around here.)
+;jpn:◆(このあたりには↓
+;jpn: マジックトリフは なさそうだ)
 @KEYNP()
 @!
 
 _PNOSE2;
-ｕｐ
+up
 ;jpn:うえ
 @!
 
 _PNOSE3;
-ｕｐ　ａｎｄ　ｒｉｇｈｔ
+up and right
 ;jpn:みぎうえ
 @!
 
 _PNOSE4;
-ｒｉｇｈｔ
+right
 ;jpn:みぎ
 @!
 
 _PNOSE5;
-ｄｏｗｎ　ａｎｄ　ｒｉｇｈｔ
+down and right
 ;jpn:みぎした
 @!
 
 _PNOSE6;
-ｄｏｗｎ
+down
 ;jpn:した
 @!
 
 _PNOSE7;
-ｄｏｗｎ　ａｎｄ　ｌｅｆｔ
+down and left
 ;jpn:ひだりした
 @!
 
 _PNOSE8;
-ｌｅｆｔ
+left
 ;jpn:ひだり
 @!
 
 _PNOSE9;
-ｕｐ　ａｎｄ　ｌｅｆｔ
+up and left
 ;jpn:ひだりうえ
 @!
 
 MSG_SYS_MAGIC_BUTTERFLY;
 ←
-◆Ｔｈａｎｋｓ　ｔｏ　ｔｈｅ　Ｍａｇｉｃ　Ｂｕｔｔｅｒｆｌｙ，　ｙｏｕ　ｗｅｒｅ　ａｂｌｅ　ｔｏ　ｔｏｔａｌｌｙ　ｒｅｌａｘ．
+◆Thanks to the Magic Butterfly, you were able to totally relax.
 ;jpn:◆マジックバタフライのおかげで↓
-;jpn:　@DSP_LCNAME()は↓
-;jpn:　とても　リラックスできた。
+;jpn: @DSP_LCNAME()は↓
+;jpn: とても リラックスできた。
 @KEYNP()
 @CLOSEALL()
 @!
@@ -141,13 +141,13 @@ MSG_BTL_KANBAN;
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｕｓｅｄ↓
-　　ｔｈｅ　@DSP_GOODS(0)！
-;jpn:　@DSP_GOODS(0)を　つかった！
+ used↓
+  the @DSP_GOODS(0)!
+;jpn: @DSP_GOODS(0)を つかった!
 @KEY()↓
-◆Ａ　ｃｕｓｔｏｍｅｒ　ｉｓ　ｈｅａｄｉｎｇ　ｔｈｉｓ　ｗａｙ．
-;jpn:◆いま　おきゃくさんは↓
-;jpn:　こちらに　むかっている。
+◆A customer is heading this way.
+;jpn:◆いま おきゃくさんは↓
+;jpn: こちらに むかっている。
 @KEYNP()
 @CLOSEALL()
 @RAND(3)
@@ -162,30 +162,30 @@ _BTL_KANBAN_ALREADY;
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｕｓｅｄ↓
-　　ｔｈｅ　@DSP_GOODS(0)！
-;jpn:　@DSP_GOODS(0)を　つかった！
+ used↓
+  the @DSP_GOODS(0)!
+;jpn: @DSP_GOODS(0)を つかった!
 @KEY()↓
-◆Ｗａｉｔ！　　Ｓｏｍｅｏｎｅ　ｉｓ　ａｌｒｅａｄｙ　ｈｅａｄｉｎｇ　ｔｈｉｓ　ｗａｙ．　　Ｗａｉｔ　ｆｏｒ　ｔｈｅｍ　ｔｏ　ｇｅｔ　ｈｅｒｅ　ｆｉｒｓｔ．
-;jpn:◆ウェイト！@WI(20)↓
-;jpn:　さきに　よんでるひとを↓
-;jpn:　まってください。
+◆Wait!  Someone is already heading this way.  Wait for them to get here first.
+;jpn:◆ウェイト!@WI(20)↓
+;jpn: さきに よんでるひとを↓
+;jpn: まってください。
 @KEYNP()
 』
 _BTL_KANBAN_END;
-◆Ｆｏｒ　ａ　ｌｏｎｇ　ｔｉｍｅ，　ｔｈｉｓ　”Ｆｏｒ　Ｓａｌｅ”　ｓｉｇｎ　ｈａｓ　ｂｅｅｎ　ｕｓｅｆｕｌ．．．@KEY()↓
-◆Ｎｏｗ，　ｉｔ　ｉｓ　ｏｌｄ，　ｉｔｓ　ｍｅｓｓａｇｅ　ｍａｄｅ　ｕｎｒｅａｄａｂｌｅ　ｂｙ　ｔｈｅ　ｐａｓｓａｇｅ　ｏｆ　ｔｉｍｅ．@KEY()↓
-◆Ｉｔ　ｈａｓ　ｎｏｗ　ｌｏｓｔ　ｉｔｓ　ｅｆｆｅｃｔｉｖｅｎｅｓｓ．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ，　ｓｉｇｎ．↓
-　Ｇｏｏｄ　ｂｙｅ，　ｓｉｇｎ．
-;jpn:◆ながいあいだ　ずいぶん↓
-;jpn:　べんりに　つかえた↓
-;jpn:　かんばんだったが‥‥@KEY()↓
+◆For a long time, this ”For Sale” sign has been useful...@KEY()↓
+◆Now, it is old, its message made unreadable by the passage of time.@KEY()↓
+◆It has now lost its effectiveness.@KEY()↓
+◆Thank you, sign.↓
+ Good bye, sign.
+;jpn:◆ながいあいだ ずいぶん↓
+;jpn: べんりに つかえた↓
+;jpn: かんばんだったが‥‥@KEY()↓
 ;jpn:◆ぼろぼろになり↓
-;jpn:　もじも　よめなくなって↓
-;jpn:　そのこうかは　うしなわれた。@KEY()↓
-;jpn:◆ありがとう@WI(15)　カンバン！@WI(20)↓
-;jpn:　さようなら@WI(15)　カンバン！
+;jpn: もじも よめなくなって↓
+;jpn: そのこうかは うしなわれた。@KEY()↓
+;jpn:◆ありがとう@WI(15) カンバン!@WI(20)↓
+;jpn: さようなら@WI(15) カンバン!
 @KEYNP()
 』
 
@@ -207,26 +207,26 @@ _KANBAN_3;
 
 MSG_BTL_BOOK_MUKUCHI;
 ←
-◆Ｔｈｉｓ　ｂｏｏｋ　ｓｈｏｕｌｄ　ｂｅ　ｒｅｑｕｉｒｅｄ　ｒｅａｄｉｎｇ　ｆｏｒ　ａｎｙ　ｑｕｉｅｔ，　ｓｈｙ　ｐｅｒｓｏｎ．
+◆This book should be required reading for any quiet, shy person.
 ;jpn:◆これは↓
-;jpn:　むくちなひとが　よむほんだ。
+;jpn: むくちなひとが よむほんだ。
 @KEY()
 @!
 
 MSG_BTL_POSTCARD;
 ←
-◆Ｙｏｕ　ｆｅｌｔ　ｓａｄ　ａｎｄ　ｅｍｐｔｙ．
-;jpn:◆なんだか　むなしかった。
+◆You felt sad and empty.
+;jpn:◆なんだか むなしかった。
 @KEY()
 @!
 
-MSG_BTL_PANKUZU;＠消す？（三浦）
+MSG_BTL_PANKUZU;＠消す?(三浦)
 ←
-◆（Ｉｆ　ｙｏｕ　ｇｅｔ　ｔｈｉｓ　ｍｅｓｓａｇｅ，　ｉｔ　ｍｅａｎｓ　ｔｈａｔ　ｓｏｍｅｔｈｉｎｇ　ｉｓ　ｗｒｏｎｇ．）
-;jpn:◆（このメッセージが↓
-;jpn:　でるということは↓
-;jpn:　なにかが　おかしい↓
-;jpn:　ということです）
+◆(If you get this message, it means that something is wrong.)
+;jpn:◆(このメッセージが↓
+;jpn: でるということは↓
+;jpn: なにかが おかしい↓
+;jpn: ということです)
 @KEY()
 @!
 
@@ -236,39 +236,39 @@ MSG_BTL_MANTRA;
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｏｐｅｎｅｄ↓
-　　ｔｈｅ　@DSP_GOODS(0)．
-;jpn:　@DSP_GOODS(0)を　ひらいた！
+ opened↓
+  the @DSP_GOODS(0).
+;jpn: @DSP_GOODS(0)を ひらいた!
 @KEY()↓
-◆Ｔｈｅ　ｅｎｅｍｙ　ｍａｙ　ｎｏｔ　ｎｏｔｉｃｅ　ｔｈａｔ　ｙｏｕ　ａｒｅ　ｐｒｅｓｅｎｔ．
-;jpn:◆けはいが　きえて↓
-;jpn:　てきに　きづかれなくなった↓
+◆The enemy may not notice that you are present.
+;jpn:◆けはいが きえて↓
+;jpn: てきに きづかれなくなった↓
 @KEY()
 @!
 
 
 MSG_BTL_CASHCARD;
 ←
-◆Ｔｏ　ｕｓｅ　ｔｈｉｓ，　ｇｏ　ｔｏ　ａ　ｃａｓｈ　ｍａｃｈｉｎｅ　ａｎｄ　ｉｎｓｅｒｔ　ｔｈｅ　ｃａｒｄ．
+◆To use this, go to a cash machine and insert the card.
 ;jpn:◆キャッシュディスペンサーにいれて↓
-;jpn:　つかいます。
+;jpn: つかいます。
 @KEY()
 @!
 
 
 MSG_USE_ZOMBIE_HOIHOI;
 ←
-◆Ｔｈｉｓ　ｉｓ　ａ　ｋｉｎｄ　ｏｆ　ｔｒａｐ　ｕｓｅｄ　ｔｏ　ｃａｐｔｕｒｅ　ｚｏｍｂｉｅｓ．
+◆This is a kind of trap used to capture zombies.
 ;jpn:◆ゾンビをあつめる↓
-;jpn:　ワナの　いっしゅです。
+;jpn: ワナの いっしゅです。
 @KEY()
 @!
 
 MSG_USE_EAGLE_EYE;
 ←
-◆Ｉｔ　ｍｉｇｈｔ　ｂｅ　ｕｓｅｆｕｌ　ｉｎ　ａ　ｄａｒｋ　ｐｌａｃｅ．
+◆It might be useful in a dark place.
 ;jpn:◆くらいところで↓
-;jpn:　やくにたつはずです。
+;jpn: やくにたつはずです。
 @KEY()
 @!
 
@@ -280,9 +280,9 @@ MSG_BTL_ZOMBIE_HOIHOI;
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｐｌａｃｅｄ　ｔｈｅ　@DSP_GOODS(0)　ｏｎ　ｔｈｅ　ｆｌｏｏｒ．
-;jpn:　@DSP_GOODS(0)を　↓
-;jpn:　ゆかに　しかけた。
+ placed the @DSP_GOODS(0) on the floor.
+;jpn: @DSP_GOODS(0)を ↓
+;jpn: ゆかに しかけた。
 @SE(SE_se73_my_fitout)
 @WI(1)
 @KEY()
@@ -300,8 +300,8 @@ MSG_BTL_EAGLE_EYE;
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｕｓｅｄ　ｔｈｅ　@DSP_GOODS(0)！
-;jpn:　@DSP_GOODS(0)を　つかった。
+ used the @DSP_GOODS(0)!
+;jpn: @DSP_GOODS(0)を つかった。
 @SE(SE_se5f_tasy_appear)
 @WI(1)
 @KEYNP()
@@ -314,18 +314,18 @@ MSG_BTL_EAGLE_EYE;
 ;@HIDE_CHAR(PRSN_MKYO_FIELD_L,OBJFX_HIDE_NONE)
 ;@HIDE_CHAR(PRSN_MKYO_FIELD_M,OBJFX_HIDE_NONE)
 ;@HIDE_CHAR(PRSN_MKYO_FIELD_N,OBJFX_HIDE_NONE)
-@GOSUB(MSG_EVT_94_TAKANOME)）
+@GOSUB(MSG_EVT_94_TAKANOME))
 @SETF(FLG_PHOTO_MAKYOU);撮り頃フラグ
 @!
 
 
 
-;こけし消しマシン（ストーンヘンジ）
+;こけし消しマシン(ストーンヘンジ)
 MSG_WINS_STONE_KOKESHI;
-◆（Ｆｏｒ　ｓｏｍｅ　ｒｅａｓｏｎ，@KEY()↓
-　　ｓｏｍｅｔｈｉｎｇ　ｔｈａｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｖｅｒｙ　ｌａｒｇｅ　ｂｒｏｎｚｅ　ｅｒａｓｅｒ　ｉｓ　ｉｎ　ｔｈｅ　ｗａｙ．）
-;jpn:◆（なぜか　こけしのようなものが↓
-;jpn:　みちを　ふさいでいる）
+◆(For some reason,@KEY()↓
+  something that looks like a very large bronze eraser is in the way.)
+;jpn:◆(なぜか こけしのようなものが↓
+;jpn: みちを ふさいでいる)
 @KEYNP()
 @!
 
@@ -336,10 +336,10 @@ MSG_WINS_STONE_KOKESHI_RECEIVE;
 @LOAD_REG()
 @GOSUB(MSG_SUB_GOODS_TUKATTA)
 ←
-◆（Ｆｏｒ　ｓｏｍｅ　ｒｅａｓｏｎ，　ｔｈｅ　ｂｒｏｎｚｅ　ｅｒａｓｅｒ　ｓｔａｔｕｅ　ｄｉｓａｐｐｅａｒｅｄ　ｉｎ　ａｎ　ｉｎｓｔａｎｔ！）
-;jpn:◆なぜか　こけしは↓
-;jpn:　いっしゅんのうちに↓
-;jpn:　きえさった！
+◆(For some reason, the bronze eraser statue disappeared in an instant!)
+;jpn:◆なぜか こけしは↓
+;jpn: いっしゅんのうちに↓
+;jpn: きえさった!
 @KEYNP()
 @CLOSEALL()
 @WI(1)
@@ -358,9 +358,9 @@ MSG_BTL_BICYCLE;
 @GET_ORDER_PLAYER(1)
 @Q_SPECIAL(0,2,2)
 @TRUE_GOTO(_BICYCLE_KINOKO)
-◆@DSP_ACTOR()　ｒｏｄｅ　ａ　ｂｉｃｙｃｌｅ．
+◆@DSP_ACTOR() rode a bicycle.
 ;jpn:◆@DSP_ACTOR()は↓
-;jpn:　じてんしゃに　のった。
+;jpn: じてんしゃに のった。
 @RIDE_CYCLE()
 @!
 _BICYCLE_NG;
@@ -368,26 +368,26 @@ _BICYCLE_NG;
 @!
 
 _BICYCLE_KINOKO;
-◆Ｉｆ　ｙｏｕ　ａｒｅ　ｎｏｔ　ｆｅｅｌｉｎｇ　ｗｅｌｌ，　ｙｏｕ　ｓｈｏｕｌｄ　ｎｏｔ　ｒｉｄｅ　ａ　ｂｉｃｙｃｌｅ．
-;jpn:◆けんこうに　じしんのないときには↓
-;jpn:　じてんしゃに↓
-;jpn:　のってはいけません。
+◆If you are not feeling well, you should not ride a bicycle.
+;jpn:◆けんこうに じしんのないときには↓
+;jpn: じてんしゃに↓
+;jpn: のってはいけません。
 @KEYNP()
 @!
 
 
-MSG_BTL_MONOSASHI;＠「ｈｅ」（三浦）
+MSG_BTL_MONOSASHI;＠「he」(三浦)
 ←
 ◆@DSP_ACTOR()
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｕｓｅｄ　@DSP_GOODS(0)！
-;jpn:　@DSP_GOODS(0)を　つかった！
+ used @DSP_GOODS(0)!
+;jpn: @DSP_GOODS(0)を つかった!
 @KEY()↓
-◆Ｎｏｗ，　ｈｅ　ｃａｎ　ｆｉｇｕｒｅ　ｏｕｔ　ｔｈｅ　ｌｅｎｇｔｈ　ｏｆ　ｔｈｉｎｇｓ　ｅａｓｉｌｙ．
-;jpn:◆これでまた　もののながさが↓
-;jpn:　よくわかった。
+◆Now, he can figure out the length of things easily.
+;jpn:◆これでまた もののながさが↓
+;jpn: よくわかった。
 @KEY()
 @!
 
@@ -398,12 +398,12 @@ MSG_BTL_BUNDOKI;
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｕｓｅｄ　ｔｈｅ　@DSP_GOODS(0)！
-;jpn:　@DSP_GOODS(0)を　つかった！
+ used the @DSP_GOODS(0)!
+;jpn: @DSP_GOODS(0)を つかった!
 @KEY()↓
-◆Ｎｏｗ，　ｈｅ　ｃａｎ　ｆａｉｒｌｙ　ｅａｓｉｌｙ　ｆｉｇｕｒｅ　ｏｕｔ　ｔｈｅ　ａｎｇｌｅ　ｏｆ　ｖａｒｉｏｕｓ　ｔｈｉｎｇｓ．
-;jpn:◆いろいろなものの　かくどが↓
-;jpn:　だいたい　わかった。
+◆Now, he can fairly easily figure out the angle of various things.
+;jpn:◆いろいろなものの かくどが↓
+;jpn: だいたい わかった。
 @KEY()
 @!
 
@@ -411,9 +411,9 @@ MSG_BTL_BUNDOKI;
 MSG_BTL_HIYOKO;
 ←
 @SE(SE_se65_ape)
-◆Ｓｅｅｉｎｇ　ｃｈｉｃｋｓ　ｍａｋｅｓ　ｙｏｕ　ｈａｐｐｙ．
+◆Seeing chicks makes you happy.
 ;jpn:◆ひよこをみて↓
-;jpn:　こころが　なごんだ。
+;jpn: こころが なごんだ。
 @SE(SE_se65_ape)
 @KEY()
 @!
@@ -424,25 +424,25 @@ MSG_BTL_NIWATORI;
 @SE(SE_se68_bodyguard)
 @WI(10)
 @SE(SE_se68_bodyguard)
-◆Ａ　ｃｈｉｃｋｅｎ　ｒａｎ　ａｗａｙ　ａｓ　ｆａｓｔ　ａｓ　ｉｔ　ｃｏｕｌｄ．
+◆A chicken ran away as fast as it could.
 ;jpn:◆にわとりは↓
-;jpn:　ぜんそくりょくで　にげだした。
+;jpn: ぜんそくりょくで にげだした。
 @KEY()
 @!
 
 ;テレポートボックス
 MSG_BTL_TLPTBOX_OK;
 ←
-　Ｔｈｅ　Ｔｅｌｅｐｏｒｔ　Ｂｏｘ　ｓｔａｒｔｅｄ　ｔｏ　ｇｒｏａｎ．
-;jpn:　テレポートボックスが↓
-;jpn:　うなりはじめた！
+ The Teleport Box started to groan.
+;jpn: テレポートボックスが↓
+;jpn: うなりはじめた!
 @SE(SE_se63_teleport_appear)
 @KEY()
 ↓
 @BTLFX(BFX_SHAKE_QUAKE_SIDE,BFX_NULL)
-　Ｔｈｅ　Ｔｅｌｅｐｏｒｔ　Ｂｏｘ　ｓｈａｔｔｅｒｅｄ　ｉｎｔｏ　ｐｉｅｃｅｓ　ｗｉｔｈ　ａ　ｌｏｕｄ　ｅｘｐｌｏｓｉｏｎ．
-;jpn:　テレポートボックスは↓
-;jpn:　おとをたてて　くだけちった！
+ The Teleport Box shattered into pieces with a loud explosion.
+;jpn: テレポートボックスは↓
+;jpn: おとをたてて くだけちった!
 @SE(SE_se63_teleport_appear)
 @BTLFX(BFX_TELEPORT_BOX,BFX_NULL)
 @KEYNP()
@@ -450,27 +450,27 @@ MSG_BTL_TLPTBOX_OK;
 
 MSG_BTL_TLPTBOX_NG;
 ←
-　Ｔｈｅ　Ｔｅｌｅｐｏｒｔ　Ｂｏｘ　ｂｅｇａｎ　ｔｏ　ｇｒｏａｎ．
-;jpn:　テレポートボックスが↓
-;jpn:　うなりはじめた！
+ The Teleport Box began to groan.
+;jpn: テレポートボックスが↓
+;jpn: うなりはじめた!
 @SE(SE_se63_teleport_appear)
 @KEY()
 ↓
 @BTLFX(BFX_SHAKE_QUAKE_SIDE,BFX_NULL)
-　Ｔｈｅ　Ｔｅｌｅｐｏｒｔ　Ｂｏｘ　ｄｉｄｎ’ｔ　ｗｏｒｋ　ｑｕｉｔｅ　ｒｉｇｈｔ．．．
-;jpn:　テレポートボックスは↓
-;jpn:　うまく　うごかなかった。
+ The Teleport Box didn’t work quite right...
+;jpn: テレポートボックスは↓
+;jpn: うまく うごかなかった。
 @SE(SE_se05_undo)
 @KEYNP()
 @!
 
 MSG_BTL_TLPTBOX_CANT;
 ←
-　Ｔｈｅ　Ｔｅｌｅｐｏｒｔ　Ｂｏｘ　ｃａｎ’ｔ　ｂｅ　ｕｓｅｄ　ｈｅｒｅ．
-;jpn:　テレポートボックスは↓
-;jpn:　ここでは　つかえない。
-;　しかし　テレポートボックスは↓
-;　うごかなかった！
+ The Teleport Box can’t be used here.
+;jpn: テレポートボックスは↓
+;jpn: ここでは つかえない。
+; しかし テレポートボックスは↓
+; うごかなかった!
 @KEYNP()
 @!
 
@@ -482,9 +482,9 @@ MSG_BTL_SOUND_STONE;
 ◆@DSP_ACTOR()
 ;jpn:◆@DSP_ACTOR()は↓
 @XCHG()
-　ｔｏｕｃｈｅｄ　ｔｈｅ　@DSP_GOODS(0)　ｔｏ　ｈｉｓ　ｆｏｒｅｈｅａｄ　ａｎｄ　ｇａｔｈｅｒｅｄ　ｈｉｓ　ｔｈｏｕｇｈｔｓ．
-;jpn:　@DSP_GOODS(0)を　ひたいにあてて↓
-;jpn:　いしきを　しゅうちゅうさせた。
+ touched the @DSP_GOODS(0) to his forehead and gathered his thoughts.
+;jpn: @DSP_GOODS(0)を ひたいにあてて↓
+;jpn: いしきを しゅうちゅうさせた。
 @KEY()
 @FUNC(9)				;ここでサウンド確認画面へ
 @!

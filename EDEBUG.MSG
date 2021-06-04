@@ -7,24 +7,24 @@
 MSG_DEBUG_00;
 @OPEN(1)
 ←
-◆ＮＮＷ　ＳＭＳＫ？
+◆NNW SMSK?
 @SAVE_WIN()
 @DSP_PL()
 @WINR_MONEY()
 @OPEN(2)
-<Ｐ−ＴｉＮＳｔＴＩ>
-<ＧｔＺＳｔＴＩ>
-<ＴＫＳｙＺｙＵＴＩ>
-<ＩＤＵ>
-<ＯＫＮＮＳｔＴＩ>
-<ＲＢＲＡｔＰ>
-<ＭＳＹＵＮＳＫＲＰＴ>
-<ＩＢＮＴ>
-<ＨＮＴＹ>
-<ＳＵＮＤ>
-<ＳＴＭＩ>
-<ＴＲＰ−Ｔ>
-<ＨＮＴＴＺ>
+<P−TiNStTI>
+<GtZStTI>
+<TKSyZyUTI>
+<IDU>
+<OKNNStTI>
+<RBRAtP>
+<MSYUNSKRPT>
+<IBNT>
+<HNTY>
+<SUND>
+<STMI>
+<TRP−T>
+<HNTTZ>
 @DSP_ITEML(2)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -34,13 +34,13 @@ MSG_DEBUG_00;
 ←
 @LOAD_GLOBAL_REG()
 @ONGOTO(_DBG_MAKEPARTY,_DBG_GOODS,_DBG_SPECIAL,_DBG_WARP,_DBG_MONEY,_DBG_LEVELUP,_DBG_SCRIPT,_DBG_EVENT_START,_DBG_HINT,_DBG_SOUND,_DBG_EXPL,_DBG_TLPT,_DBG_HINTMAP)
-◆ＹＭＭＳＴ．@KEYNP()
+◆YMMST.@KEYNP()
 @!
 
 _DBG_HINTMAP;
 ←
-◆ＨＮＴＹＷ↓
-　ＴＺＮＮＳＭＳ@KEY()↓
+◆HNTYW↓
+ TZNNSMS@KEY()↓
 @SETF(FLG_GM_ONET_HINT)
 @SETF(FLG_GM_TWOSON_HINT)
 @SETF(FLG_GM_THREEK_HINT)
@@ -50,9 +50,9 @@ _DBG_HINTMAP;
 @GOTO(MSG_DEBUG_00)
 
 _DBG_MAKEPARTY;
-◆ＮＮＷ　ＳＭＳＫ？↓
-<ＫＷＥＲ>
-<ＨＺＳ>
+◆NNW SMSK?↓
+<KWER>
+<HZS>
 @DSP_ITEM(2)
 @SELGOTO(_MKP_ADD,_MKP_DEL)
 @GOTO(MSG_DEBUG_00)
@@ -60,25 +60,25 @@ _DBG_MAKEPARTY;
 _MKP_ADD;
 _DBG_MP05;
 @DSP_PL()
-◆ＫＷＥＲ　ＰＲ−Ｙ−Ｗ↓
-　ＥＲＮＤＫＤＳＩ．
+◆KWER PR−Y−W↓
+ ERNDKDSI.
 _DBG_MP10;
 @OPEN(8)
-<ＮＳ>
-<Ｐ−Ｒ>
-<ＺｅＦ>
-<Ｐ−>
-<Ｐ−Ｋ−>
-<ＰｔＫ−>
-<ＩＮ>
-<ＴＮ−>
-<ＢＲ−ＮＭＮＫ−>
-<ＤＮＺｙＮＭＮ>
-<ＦＲＩＮＧＭＮ１>
-<ＦＲＩＮＧＭＮ２>
-<ＦＲＩＮＧＭＮ３>
-<ＦＲＩＮＧＭＮ４>
-<ＦＲＩＮＧＭＮ５>
+<NS>
+<P−R>
+<ZeF>
+<P−>
+<P−K−>
+<PtK−>
+<IN>
+<TN−>
+<BR−NMNK−>
+<DNZyNMN>
+<FRINGMN１>
+<FRINGMN２>
+<FRINGMN３>
+<FRINGMN４>
+<FRINGMN５>
 @DSP_ITEML(3)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -98,12 +98,12 @@ _MAKEPARTY_END;
 _MKP_DEL;
 @GET_ORDER_PLAYER(2)
 @FALSE_GOTO(_MKP_DEL_UNABLE)
-◆ＨＺＳＰＲ−Ｙ−ＮＩＴＷ↓
-　ＮｙＵＲｙＫＳＴＫＤＳＩ．↓
+◆HZSPR−Y−NITW↓
+ NyURyKSTKDSI.↓
 _MKP_DEL10;
 @GET_ORDER_PLAYER(2)
 @FALSE_GOTO(_MKP_DEL_END)
-　　@INPUT(1)
+  @INPUT(1)
 @FALSE_GOTO(_MKP_DEL_END)
 @CLRLINE()
 @XCHG()
@@ -111,29 +111,29 @@ _MKP_DEL10;
 @FALSE_GOTO(_MKP_DEL10)
 @XCHG()
 @DEL_PARTY(0)
-◆@DSP_NAME(0)Ｗ　ＨＺＳＭＳ．↓
+◆@DSP_NAME(0)W HZSMS.↓
 @GOTO(_MKP_DEL10)
 _MKP_DEL_END;
 @GOTO(MSG_DEBUG_00)
 
 _MKP_DEL_UNABLE;
-◆０ＮＮＮＨＤＫＭＳＮ．@KEYNP()
+◆０NNNHDKMSN.@KEYNP()
 @GOTO(MSG_DEBUG_00)
 
 _DBG_GOODS;
 ←
-◆ＧｔＺＮＳｔＴＩＷＳＭＳ．
+◆GtZNStTIWSMS.
 @SAVE_WIN()
 @DSP_PL()
 @WINR_MONEY()
 @OPEN(7)
-<ＧｔＺＫＷＥＲ>
-<ＺｙＵＹＵＧｔＺ>
-<ＧｔＺＭＮＴＮ>
-<ＧｔＺＳＫＺｙ>
-<ＡＺＫＲＳｙＭＮＴＮ>
-<ＡＺＫＲＳｙＫＲ>
-<ＳＩＫｙＵＢＫ>
+<GtZKWER>
+<ZyUYUGtZ>
+<GtZMNTN>
+<GtZSKZy>
+<AZKRSyMNTN>
+<AZKRSyKR>
+<SIKyUBK>
 @DSP_ITEML(1)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -147,51 +147,51 @@ _DBG_GOODS;
 
 _DBG_GETGOODS;
 _DBG_GG10;
-◆ＧｔＺＩＤＷ　ＮｙＵＲｙＫ↓
-　　　@INPUT(3)
+◆GtZIDW NyURyK↓
+   @INPUT(3)
 @CLRLINE()
 @FALSE_GOTO(_GETGOODS_END)
 @XCHG()
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_DBG_GG100)
 @SAVE_REG()
-◆@DSP_GOODS(0)ＤＳ．↓
-　ＤＲＮＳＭＳＫ？
+◆@DSP_GOODS(0)DS.↓
+ DRNSMSK?
 @GOSUB(MSG_SEL_GOODSIN)
 ↓
 @FALSE_GOTO(_DBG_GG10)
 @GOODSIN_PLAYER(0,0)
 ←
-◆ＧｔＺＲＮＮ　ＫＷＥＭＳＴ．@KEY()↓
+◆GtZRNN KWEMST.@KEY()↓
 @GOTO(_DBG_GG10)
 
 _DBG_GG100;
-◆ＭＴＭＮＩｔＰＩＤＳ．
+◆MTMNItPIDS.
 _GETGOODS_END;
 @GOTO(MSG_DEBUG_00)
 
 _DBG_GETGOODS_A;
 @SAVE_WIN()
 @OPEN(12)
-<ＴＢＧＹＮＫＧ>
-<ＺｙＳＮＤＮＷ>
-<ＴＫＫＳＭＳＮ>
-<ＦＲＮＫＲＮＢｔＺ>
-<ＲＵＹＮＫＧ>
-<ＳＴＴＢ>
-<ＴｙｔＴＫＧＭＳＮ>
-<ＺＮＢＨＩＨＩ>
-<ＤＩＹＭＮＤ>
-<ＧＲＭＤＵＦＭＳＮ>
-<ＨＥＲＧＲＦＮＫＰ−>
-<ＴＫＮＭ>
-<Ｆ−ＳＮＧＭ>
-<ＭＫＴＷＮＯＳＨＮ>
-<ＢｔＳＴＸＹＺ>
-<ＳＩＮＩＲＢＮＮ>
-<ＫＫＳＫＳＭＳＮ>
-<ＧＭＤＲＡＮ>
-<ＵＳＧＧＮＭＮＮＺＮ>
+<TBGYNKG>
+<ZySNDNW>
+<TKKSMSN>
+<FRNKRNBtZ>
+<RUYNKG>
+<STTB>
+<TytTKGMSN>
+<ZNBHIHI>
+<DIYMND>
+<GRMDUFMSN>
+<HERGRFNKP−>
+<TKNM>
+<F−SNGM>
+<MKTWNOSHN>
+<BtSTXYZ>
+<SINIRBNN>
+<KKSKSMSN>
+<GMDRAN>
+<USGGNMNNZN>
 
 @DSP_ITEML(1)
 @SELQ()
@@ -203,7 +203,7 @@ _DBG_GETGOODS_A;
 @LOAD_GLOBAL_REG()
 @FALSE_GOTO(_GETGOODS_END)
 @XCHG()
-◆ＤＲＮＳＭＳＫ．
+◆DRNSMSK.
 @GOSUB(MSG_SEL_GOODSIN)
 @FALSE_GOTO(_DBG_GETGOODS_A)
 @XCHG()
@@ -306,7 +306,7 @@ _GDS_19;
 @!
 
 _DBG_GOODSFULL;
-◆ＧｔＺＲＮＷＭＮＴＮＮＳＭＳ．@KEY()↓
+◆GtZRNWMNTNNSMS.@KEY()↓
 @GOSUB(_DBG_GFULL_2)
 @GOTO(MSG_DEBUG_00)
 
@@ -320,9 +320,9 @@ _DBG_GFULL_2_END;
 @!
 
 _DBG_DELGOODS;
-◆ＧｔＺＷＳＫＺｙＳＭＳ．↓
-<ＺＮＢ>
-<ＳＮＴＫ>
+◆GtZWSKZySMS.↓
+<ZNB>
+<SNTK>
 @DSP_ITEM(2)
 @SELGOTO(_DBG_GG50,_DBG_GG60)
 @GOTO(_GETGOODS_END)
@@ -357,8 +357,8 @@ _DBG_GG69;
 @!
 
 _DBG_TRACYFULL;
-◆ＡＺＫＲＳｙＷ↓
-　ＩｔＰＩＮ　ＳＭＳ．
+◆AZKRSyW↓
+ ItPIN SMS.
 @SET_LOOPREG(20)
 _TFULL_LOOP;
 @SET_REG(1)
@@ -373,7 +373,7 @@ _TFULL_END;
 @GOTO(MSG_DEBUG_00)
 
 _DBG_TRACYEMP;
-◆ＡＺＫＲＺｙＷ　ＫＲＮＳＭＳ．
+◆AZKRZyW KRNSMS.
 _TEMPTY_LOOP;
 @GET_TRACY_GOODS(1)
 @FALSE_GOTO(_TEMPTY_END)
@@ -384,8 +384,8 @@ _TEMPTY_END;
 @GOTO(MSG_DEBUG_00)
 
 _DBG_WEAPON;
-◆ＳＩＫｙＵＮＢＫＷ↓
-　ＫＷＥＭＳ．@KEY()
+◆SIKyUNBKW↓
+ KWEMS.@KEY()
 @GOSUB(_SUB_DBG_WEAPON)
 @GOTO(MSG_DEBUG_00)
 
@@ -457,27 +457,27 @@ _DBGWEA_POO;
 
 _DBG_SPECIAL;
 ←
-◆ＤＲＮＳＭＳＫ？
+◆DRNSMSK?
 @SEL_PQ(0,0,0,0,1)
 @FALSE_GOTO(_SPECIAL_END)
 @SAVE_REG()
 ↓
-◆ＤＲＮＳＲ？↓
+◆DRNSR?↓
 @SAVE_WIN()
 @OPEN(12)
-<ＫＮＫＵ>
-<ＫＺＴ>
-<ＤＩＹ>
-<ＳＢＲ>
-<ＨＫＫ>
-<ＭＵＤＫ>
-<ＮｔＳｙＢｙＵ>
-<ＫＺ>
-<ＫＮＫ>
-<ＴＲＴＫ>
-<Ｈ−ＭＳｔＫ>
-<ＨＰＨＲＳ>
-<ＰＰＨＲＳ>
+<KNKU>
+<KZT>
+<DIY>
+<SBR>
+<HKK>
+<MUDK>
+<NtSyByU>
+<KZ>
+<KNK>
+<TRTK>
+<H−MStK>
+<HPHRS>
+<PPHRS>
 @DSP_ITEML(2)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -584,28 +584,28 @@ _SP3_2;
 ;/////////////////////////////////
 
 _DBG_WARP;
-◆ＤＫＮ　ＩＤＵＳＭＳＫ？
+◆DKN IDUSMSK?
 @OPEN(8)
-<ＯＮｔＴ>
-<Ｔ−ＳＮ>
-<ＨＨＭＲ>
-<ＧＦＲＤｔＤ>
-<ＳＲ−Ｋ>
-<ＵｉＮＴ−Ｚ>
-<ＳＴ−ＮＢＲ−>
-<ＨＭＴＫＴ>
-<ＤＫＤＫＳＢＫ>
-<Ｆｏ−ＳＩＤ>
-<Ｍ−ＮＳＩＤ>
-<ＳＭ−Ｚ>
-<ＲＮＭ>
-<ＳＫＲＢ>
-<ＭＫｙＵ>
-<ＧＭ>
-<ＴＴＩＴＩＲＫ>
-<ＭＺＫＮＴ>
-<ＧＮＺＩＳＩＴＩ>
-<ＫＫＳＩＴＩＫＫ>
+<ONtT>
+<T−SN>
+<HHMR>
+<GFRDtD>
+<SR−K>
+<UiNT−Z>
+<ST−NBR−>
+<HMTKT>
+<DKDKSBK>
+<Fo−SID>
+<M−NSID>
+<SM−Z>
+<RNM>
+<SKRB>
+<MKyU>
+<GM>
+<TTITIRK>
+<MZKNT>
+<GNZISITI>
+<KKSITIKK>
 @DSP_ITEML(3)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -699,9 +699,9 @@ _WP_MGKT;
 ;////////////////////////////
 
 _DBG_LEVELUP;
-◆ＤＲＮＳＭＳＫ？↓
-<ＺＮＩＮ>
-<ＨＴＲ>
+◆DRNSMSK?↓
+<ZNIN>
+<HTR>
 @DSP_ITEM(2)
 @SELGOTO(_LVUP_ALL,_LVUP_ONE)
 @GOTO(MSG_DEBUG_00)
@@ -716,14 +716,14 @@ _LVUPA_LOOP;
 @SET_LEVEL(PC_JEFF,0)
 @SET_LEVEL(PC_POO,0)
 _LVUP_ALL_OK;
-◆ＲＢＲＷＳｔＴＩＳＭＳＴ．@KEYNP()
+◆RBRWStTISMST.@KEYNP()
 _LVUP_ALL_END;
 @GOTO(MSG_DEBUG_00)
 @!
 
 _LVUP_ONE;
 ←
-◆ＰＲ−Ｙ−ＷＳＮＴＫＳＴＫＤＳＩ．
+◆PR−Y−WSNTKSTKDSI.
 @SEL_PQ(0,0,0,0,1)
 @FALSE_GOTO(_LVUP_ONE_END)
 @XCHG()
@@ -738,24 +738,24 @@ _LVUP_ONE_END;
 
 _SUB_LEVELUP;
 ←
-◆ＲＢＲＷ　ＮｙＵＲｙＫ↓
-　ＳＴＫＤＳＩ．↓
-　　　@INPUT(2)
+◆RBRW NyURyK↓
+ STKDSI.↓
+   @INPUT(2)
 @CLRLINE()
 @!
 
 ;///////////////////
 _DBG_MONEY;
 ←
-◆ＯＫＮＮ　ＳＵＳＷ　ＳＭＳ．
+◆OKNN SUSW SMS.
 @SAVE_WIN()
 @DSP_PL()
 @WINR_MONEY()
 @OPEN(7)
-<ＧＮＫＵ　　ＭＮＴＮ>
-<ＳｙＺＫＮ　ＭＮＴＮ>
-<ＳｙＺＫＮ　ＳｔＴＩ>
-<ＳｙＺＫＮ　０ＤＲ>
+<GNKU  MNTN>
+<SyZKN MNTN>
+<SyZKN StTI>
+<SyZKN ０DR>
 @DSP_ITEML(1)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -767,8 +767,8 @@ _DBG_MONEY;
 @GOTO(MSG_DEBUG_00)
 
 _BANK_FULL;
-◆ＧＮＫＵＹＫＮＷ↓
-　９９９９９９９ＤＲＮＳＭＳ．@KEYNP()
+◆GNKUYKNW↓
+ ９９９９９９９DRNSMS.@KEYNP()
 @SET_LOOPREG(1)
 _OT05_LOOP;
 @SET_REG(1)
@@ -784,8 +784,8 @@ _OT05_END;
 @!
 
 _MONEY_FULL;
-◆ＳｙＺＫＮＷ↓
-　９９９９９ＤＲＮＳＭＳ．@KEYNP()
+◆SyZKNW↓
+ ９９９９９DRNSMS.@KEYNP()
 @MONEYIN(60000)
 @MONEYIN(40000)
 @WINR_MONEY()
@@ -793,8 +793,8 @@ _MONEY_FULL;
 @!
 
 _SET_MONEY;
-◆ＫＮＧＫＷ　ＳｔＴＩＳＴ↓
-　ＫＤＳＩ↓
+◆KNGKW StTIST↓
+ KDSI↓
 @LOC(4,10)
 ＆
 @LOC(4,2)
@@ -808,16 +808,16 @@ _SMONEY_OUT_LOOP;
 @XCHG()
 @MONEYIN(0)
 @WINR_MONEY()
-◆ＰＲ−Ｙ−ＮＳｙＺＫＮＷ↓
-　@DSP_NUM(0)ＤＲＮ　ＳＭＳＴ．@KEYNP()
+◆PR−Y−NSyZKNW↓
+ @DSP_NUM(0)DRN SMST.@KEYNP()
 _SETMONEY_END;
 @GOTO(MSG_DEBUG_00)
 @!
 
 _ZERO_MONEY;
 @GOSUB(_SUB_MONEY_ZERO)
-◆ＰＲ−Ｙ−ＮＳｙＺＫＮＷ↓
-　０ＤＲＮ　ＳＭＳＴ．@KEYNP()
+◆PR−Y−NSyZKNW↓
+ ０DRN SMST.@KEYNP()
 @GOTO(MSG_DEBUG_00)
 @!
 
@@ -842,17 +842,17 @@ _ZERO_MONEY_E;
 ;///////////////////
 
 _DBG_SCRIPT;
-◆ＭＳＹＵＮ　ＳＫＲＰＴＷ↓
-　ＨｔＳＩＳＳＭＳ．
+◆MSYUN SKRPTW↓
+ HtSISSMS.
 @SAVE_WIN()
 @DSP_PL()
 @WINR_MONEY()
 @OPEN(7)
-<ＥＳＫＲＧ　ＯＴＤＫ>
-<ＥＳＫＲＧ　ＡＺＫＲ>
-<ＭｔＨＰＺ　ＯＴＤＫ>
-<ＹＭＤＲＹ>
-<Ｅ−Ｇ　ＳＴｔＫ>
+<ESKRG OTDK>
+<ESKRG AZKR>
+<MtHPZ OTDK>
+<YMDRY>
+<E−G STtK>
 @DSP_ITEML(1)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -869,9 +869,9 @@ _DBG_SOUND;
 @DSP_PL()
 @WINR_MONEY()
 @OPEN(37)
-<ＢＧＭ>
-<ＳＥ>
-<ＥＦＦＥＣＴ>
+<BGM>
+<SE>
+<EFFECT>
 @DSP_ITEML(1)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -883,9 +883,9 @@ _DBG_SOUND;
 
 _DBG_BGM;
 ←
-◆ＢＧＭＷＳＮＴＫＳＴＫＤＳＩ．↓
+◆BGMWSNTKSTKDSI.↓
 _BGM_SEL;
-　　　　@INPUT(3)
+    @INPUT(3)
 @CLRLINE()
 @FALSE_GOTO(MSG_DEBUG_00)
 @XCHG()
@@ -894,9 +894,9 @@ _BGM_SEL;
 
 _DBG_SE;
 ←
-◆ＳＥＷＳＮＴＫＳＴＫＤＳＩ↓
+◆SEWSNTKSTKDSI↓
 _SE_SEL;
-　　　　　@INPUT(3)
+     @INPUT(3)
 @CLRLINE()
 @FALSE_GOTO(MSG_DEBUG_00)
 @XCHG()
@@ -905,9 +905,9 @@ _SE_SEL;
 
 _DBG_EFFECT;
 ←
-◆ＥＦｅＫＴＷＳＮＴＫＳＴＫＤＳＩ↓
+◆EFeKTWSNTKSTKDSI↓
 _EFFECT_SEL;
-　　　　　@INPUT(2)
+     @INPUT(2)
 @CLRLINE()
 @FALSE_GOTO(MSG_DEBUG_00)
 @XCHG()
@@ -916,45 +916,45 @@ _EFFECT_SEL;
 
 
 MSG_DEBUG_02;
-◆ＭｔＰＭＮＳＴ−ＮＳｔＴＩ↓
-<ＤＳ>
-<ＫＳ>
+◆MtPMNST−NStTI↓
+<DS>
+<KS>
 @DSP_ITEM(2)
 @SELGOTO(_DBG_MNS_ON,_DBG_MNS_OFF)
-◆ＭＴＮＭＭＤＳ．
+◆MTNMMDS.
 @!
 
 _DBG_MNS_ON;
-◆ＭＮＳＴ−ＷＤＳＭＳ．@KEYNP()
+◆MNST−WDSMS.@KEYNP()
 @CLRF(FLG_SYS_MONSTER_OFF)
 @!
 
 _DBG_MNS_OFF;
-◆ＭＮＳＴ−ＷＫＳＭＳ．@KEYNP()
+◆MNST−WKSMS.@KEYNP()
 @SETF(FLG_SYS_MONSTER_OFF)
 @!
 
 _DBG_HINT;
-◆ＨＮＴＹＮＭｔＳ−ＺＤＳ．↓
-　ＳＵＴＷ　ＮｙＵＲｙＫＳＴ↓
+◆HNTYNMtS−ZDS.↓
+ SUTW NyURyKST↓
 _DBG_HINT_001;
-　　　　　@INPUT(2)
+     @INPUT(2)
 @CLRLINE()
 @TRUE_GOTO(_DBG_HINT_2)
-◆ＹＭＭＳＴ@KEY()↓
+◆YMMST@KEY()↓
 @GOTO(MSG_DEBUG_00)
 _DBG_HINT_2;
 @SET_REG(0)
-◆@DSP_NUM(0)ＢＮＮＭｔＳ−ＺＷ↓
-　ＨｙＵＺＳＭＳ↓
+◆@DSP_NUM(0)BNNMtS−ZW↓
+ HyUZSMS↓
 @KEY()↓
 @GOSUB(MSG_DBG_HINT)
 ↓
 @GOTO(_DBG_HINT_001)
 
 _DBG_TLPT;
-◆ＴＲＰ−ＴＮＴＳＴＷＳＭＳ↓
-　　@INPUT(1)
+◆TRP−TNTSTWSMS↓
+  @INPUT(1)
 @CLRLINE()
 @ONGOTO(_DTLPT_1,_DTLPT_2,_DTLPT_3,_DTLPT_4)
 @GOTO(MSG_DEBUG_00)
@@ -977,17 +977,17 @@ _DTLPT_4;
 @!
 
 MSG_ADD_SKIP;
-◆ＳＫｔＰＳＮＤＷＫＷＥＭＳ．@KEYNP()
+◆SKtPSNDWKWEMS.@KEYNP()
 @GOSUB(_DBG_GFULL_2)
 @!
 MSG_DEBUG_01;
-◆ＮＮＭＤＫＭＳＮ．
+◆NNMDKMSN.
 @KEYNP()
 @!
 ;◆どこまですすめますか。↓
 @SAVE_WIN()
 @OPEN(7)
-;◆　エリア↓
+;◆ エリア↓
 ;<オネット>
 ;<ツーソン>
 ;<スリーク>
@@ -1006,12 +1006,12 @@ MSG_DEBUG_01;
 MSG_DEBUG03;
 _DBG_AREA1;
 @OPEN(7)
-;◆　シーン↓
-;<１　ポーキーなかまに>
-;<２　ブンブーンあらわる>
-;<３　ブンブーンしす>
-;<４　フランクたおす>
-;<５　オネットクリア>
+;◆ シーン↓
+;<１ ポーキーなかまに>
+;<２ ブンブーンあらわる>
+;<３ ブンブーンしす>
+;<４ フランクたおす>
+;<５ オネットクリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1026,11 +1026,11 @@ _DBG_SCENEEND;
 
 _DBG_AREA2;
 @OPEN(6)
-;◆　シーン↓
-;<１　ポーラゆうかい>
-;<２　フラバッジもらう>
-;<３　ポーラきゅうしゅつ>
-;<４　ツーソンクリア>
+;◆ シーン↓
+;<１ ポーラゆうかい>
+;<２ フラバッジもらう>
+;<３ ポーラきゅうしゅつ>
+;<４ ツーソンクリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1040,13 +1040,13 @@ _DBG_AREA2;
 
 _DBG_AREA3;
 @OPEN(6)
-;◆　シーン↓
-;<１　ゾンビにつかまる>
-;<２　タスこのタッシー>
-;<３　アンドナはかせ>
-;<４　ジェフなかまに>
-;<５　ゾンビぜんめつ>
-;<６　スリーククリア>
+;◆ シーン↓
+;<１ ゾンビにつかまる>
+;<２ タスこのタッシー>
+;<３ アンドナはかせ>
+;<４ ジェフなかまに>
+;<５ ゾンビぜんめつ>
+;<６ スリーククリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1056,12 +1056,12 @@ _DBG_AREA3;
 
 _DBG_AREA4;
 @OPEN(6)
-;◆　シーン↓
-;<１　モッチーおおあな>
-;<２　トンズラかいほう>
-;<３　とんちきしす>
-;<４　マニマニたおす>
-;<５　フォーサイドクリア>
+;◆ シーン↓
+;<１ モッチーおおあな>
+;<２ トンズラかいほう>
+;<３ とんちきしす>
+;<４ マニマニたおす>
+;<５ フォーサイドクリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1071,11 +1071,11 @@ _DBG_AREA4;
 
 _DBG_AREA5;
 @OPEN(6)
-;◆　シーン↓
-;<１　マッサージでランマ>
-;<２　ピンクとマグネ>
-;<３　ストヘンでスカラビ>
-;<４　ダンジョンおとこ>
+;◆ シーン↓
+;<１ マッサージでランマ>
+;<２ ピンクとマグネ>
+;<３ ストヘンでスカラビ>
+;<４ ダンジョンおとこ>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1085,12 +1085,12 @@ _DBG_AREA5;
 
 _DBG_AREA6;
 @OPEN(6)
-;◆　シーン↓
-;<１　ゲロップでプー>
-;<２　ルミネホール>
-;<３　サウンドそろう>
-;<４　マジカント>
-;<５　さいご>
+;◆ シーン↓
+;<１ ゲロップでプー>
+;<２ ルミネホール>
+;<３ サウンドそろう>
+;<４ マジカント>
+;<５ さいご>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1375,7 +1375,7 @@ _SCENE_FLG020;			;ポーラ誘拐
 @SETF(FLG_ITEM_PHONE)
 @CLRF(FLG_WARP_APPLE_TWSN)
 
-_SCENE_FLG021;			;ＨＨむらへ
+_SCENE_FLG021;			;HHむらへ
 @CMP(021,2)
 @FALSE_GOTO(_DBGFLG_END)
 @SETF(FLG_TWSN_TACO_DISCOVER)
@@ -1909,17 +1909,17 @@ _SCENE_FLG68;			;
 _DBGFLG_END;
 @!
 _DBG_EVENT_START;
-◆ＳＵＴＷ　ＮｙＵＳｙＫＳＴ↓
-　　@INPUT(2)
+◆SUTW NyUSyKST↓
+  @INPUT(2)
 ←
 @ONGOTO(_DEVT_01,_DEVT_02,_DEVT_03,_DEVT_04,_DEVT_05,_DEVT_06,_DEVT_07,_DEVT_08,_DEVT_09,_DEVT_10,_DEVT_11,_DEVT_12,_DEVT_13,_DEVT_14,_DEVT_15,_DEVT_16,_DEVT_17,_DEVT_18,_DEVT_19,_DEVT_20,_DEVT_21,_DEVT_22,_DEVT_23,_DEVT_24,_DEVT_25,_DEVT_26,_DEVT_27,_DEVT_28,_DEVT_29,_DEVT_30,_DEVT_31,_DEVT_32,_DEVT_33,_DEVT_34,_DEVT_35,_DEVT_36,_DEVT_37,_DEVT_38,_DEVT_39,_DEVT_40,_DEVT_41,_DEVT_42,_DEVT_43,_DEVT_44,_DEVT_45,_DEVT_46,_DEVT_47,_DEVT_48,_DEVT_49,_DEVT_50,_DEVT_51,_DEVT_52,_DEVT_53,_DEVT_54,_DEVT_55,_DEVT_56,_DEVT_57,_DEVT_58,_DEVT_59,_DEVT_60,_DEVT_61,_DEVT_62,_DEVT_63,_DEVT_64,_DEVT_65,_DEVT_66,_DEVT_67,_DEVT_68,_DEVT_69,_DEVT_70)
-◆ＹＭＭＳＴ．
+◆YMMST.
 @GOTO(MSG_DEBUG_00)
 
 
 _DEVT_01;
-　ＩＢＮＴ↓
-　ＢＮＢ−ＮＷＮＫＭＮＳＲ
+ IBNT↓
+ BNB−NWNKMNSR
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(10)
@@ -1931,8 +1931,8 @@ _DEVT_01;
 
 
 _DEVT_02;
-　ＩＢＮＴ↓
-　ＢＮＢ−ＮＮＳＩＧ
+ IBNT↓
+ BNB−NNSIG
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(11)
@@ -1943,8 +1943,8 @@ _DEVT_02;
 @!
 
 _DEVT_03;
-　ＩＢＮＴ↓
-　ＫＩＫＮ５ＮＮＮＫ↓
+ IBNT↓
+ KIKN５NNNK↓
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(13)
@@ -1958,10 +1958,10 @@ _DEVT_03;
 @!
 
 _DEVT_04;
-　ＩＢＮＴ↓
-　ＹＵＲＩＢＳ
-;　スリークいきのバス↓
-;　といろいろべんり
+ IBNT↓
+ YURIBS
+; スリークいきのバス↓
+; といろいろべんり
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(14)
@@ -1978,9 +1978,9 @@ _DEVT_04;
 @!
 
 _DEVT_05;
-　ＩＢＮＴ↓
-　ＴＮＺＲＳＴ−Ｚ↓
-　（ＫＯＳＧＫＺｙＵ）
+ IBNT↓
+ TNZRST−Z↓
+ (KOSGKZyU)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(22)
@@ -1993,9 +1993,9 @@ _DEVT_05;
 @!
 
 _DEVT_06;
-　ＩＢＮＴ↓
-　Ｋ−ＰＩＮＴ−Ｎ↓
-　ＫＭＮＲＷ　ＯＴＳＲＲ
+ IBNT↓
+ K−PINT−N↓
+ KMNRW OTSRR
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(20)
@@ -2005,8 +2005,8 @@ _DEVT_06;
 @!
 
 _DEVT_07;
-　ＩＢＮＴ↓
-　Ｐ−ＲＮＫｙＵＳｙＴ↓
+ IBNT↓
+ P−RNKyUSyT↓
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(21)
@@ -2018,9 +2018,9 @@ _DEVT_07;
 @!
 
 _DEVT_08;
-　ＩＢＮＴ↓
-　ＴＮＺＲＫＩＨＵ↓
-　（ＫＯＳＧＫＺｙＵ）
+ IBNT↓
+ TNZRKIHU↓
+ (KOSGKZyU)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(22)
@@ -2032,8 +2032,8 @@ _DEVT_08;
 @!
 
 _DEVT_09;
-　ＩＢＮＴ↓
-　ＺＮＢＮＴＫＭＲ
+ IBNT↓
+ ZNBNTKMR
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(23)
@@ -2044,9 +2044,9 @@ _DEVT_09;
 @!
 
 _DEVT_10;
-　ＩＢＮＴ↓
-　ＢＲ−ＮＭＮＫ−Ｎ↓
-　ＫＵＴｙＵＹＵＥＩ
+ IBNT↓
+ BR−NMNK−N↓
+ KUTyUYUEI
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(30)
@@ -2059,8 +2059,8 @@ _DEVT_10;
 @!
 
 _DEVT_11;
-　ＩＢＮＴ↓
-　ＴＳＫＮＴｔＳ−
+ IBNT↓
+ TSKNTtS−
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(31)
@@ -2077,8 +2077,8 @@ _DEVT_11;
 @!
 
 _DEVT_12;
-　ＩＢＮＴ↓
-　ＡＮＤ−ＮｔＴＨＫＳ
+ IBNT↓
+ AND−NtTHKS
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(32)
@@ -2089,8 +2089,8 @@ _DEVT_12;
 @!
 
 _DEVT_13;
-　ＩＢＮＴ↓
-　Ｂ−ＮＳ・ＴＮＺＲＳＴ−Ｚ
+ IBNT↓
+ B−NS・TNZRST−Z
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(40)
@@ -2101,8 +2101,8 @@ _DEVT_13;
 @!
 
 _DEVT_14;
-　ＩＢＮＴ↓
-　ＳＧＴｙＮＴＵＺｙＵ
+ IBNT↓
+ SGTyNTUZyU
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(40)
@@ -2122,8 +2122,8 @@ _DEVT_14;
 @!
 
 _DEVT_15;
-　ＩＢＮＴ↓
-　ＴＮＺＲＳＩＧＮＳＴ−Ｚ
+ IBNT↓
+ TNZRSIGNST−Z
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(41)
@@ -2137,8 +2137,8 @@ _DEVT_15;
 @!
 
 _DEVT_16;
-　ＩＢＮＴ↓
-　ＭＮＴＲ−
+ IBNT↓
+ MNTR−
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(43)
@@ -2149,9 +2149,9 @@ _DEVT_16;
 @!
 
 _DEVT_17;
-　ＩＢＮＴ↓
-　ＴＮＺＲＢＳ↓
-　（Ｆｏ−ＳＩＤ）
+ IBNT↓
+ TNZRBS↓
+ (Fo−SID)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(43)
@@ -2165,8 +2165,8 @@ _DEVT_17;
 @!
 
 _DEVT_18;
-　ＩＢＮＴ↓
-　ＳＫＩＵｏ−Ｋ−２
+ IBNT↓
+ SKIUo−K−２
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(44)
@@ -2178,8 +2178,8 @@ _DEVT_18;
 @!
 
 _DEVT_19;
-　ＩＢＮＴ↓
-　ＳＭ−ＺＮＭＺｔＫＫ−Ｋ
+ IBNT↓
+ SM−ZNMZtKK−K
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(44)
@@ -2193,8 +2193,8 @@ _DEVT_19;
 @!
 
 _DEVT_20;
-　ＩＢＮＴ↓
-　Ｐ−　ＭＮＳｙＧｙＵ
+ IBNT↓
+ P− MNSyGyU
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(50)
@@ -2206,8 +2206,8 @@ _DEVT_20;
 @!
 
 _DEVT_21;
-　ＩＢＮＴ↓
-　Ｂ−ＮＳＳＴ−ＺＳＮ２
+ IBNT↓
+ B−NSST−ZSN２
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(50)
@@ -2222,8 +2222,8 @@ _DEVT_21;
 @!
 
 _DEVT_22;
-　ＩＢＮＴ↓
-　ＴｔＳ−ＳＮ２
+ IBNT↓
+ TtS−SN２
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(51)
@@ -2233,9 +2233,9 @@ _DEVT_22;
 @!
 
 _DEVT_23;
-　ＩＢＮＴ↓
-　ＳＴ−ＮＨＮＺ
-;　（しゅうせいちゅう）
+ IBNT↓
+ ST−NHNZ
+; (しゅうせいちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(51)
@@ -2246,8 +2246,8 @@ _DEVT_23;
 @!
 
 _DEVT_24;
-　ＩＢＮＴ↓
-　ＵＭＮＫＵＲ
+ IBNT↓
+ UMNKUR
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(52)
@@ -2257,8 +2257,8 @@ _DEVT_24;
 @!
 
 _DEVT_25;
-　ＩＢＮＴ↓
-　ＧＭＴＧＭＤＲＡＮ
+ IBNT↓
+ GMTGMDRAN
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(61)
@@ -2269,8 +2269,8 @@ _DEVT_25;
 @!
 
 _DEVT_26;
-　ＩＢＮＴ↓
-　ＰＲＭｔＤＮＯＤＲ
+ IBNT↓
+ PRMtDNODR
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(52)
@@ -2280,8 +2280,8 @@ _DEVT_26;
 @!
 
 _DEVT_27;
-　ＩＢＮＴ↓
-　ＳＢＭＲＮ
+ IBNT↓
+ SBMRN
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(54)
@@ -2293,8 +2293,8 @@ _DEVT_27;
 @!
 
 _DEVT_28;
-　ＩＢＮＴ↓
-　ＨＫＲＧＫ
+ IBNT↓
+ HKRGK
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(60)
@@ -2305,8 +2305,8 @@ _DEVT_28;
 @!
 
 _DEVT_29;
-　ＩＢＮＴ↓
-　ＳＩＧＮＳＵＮＤ
+ IBNT↓
+ SIGNSUND
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(61)
@@ -2317,8 +2317,8 @@ _DEVT_29;
 @!
 
 _DEVT_30;
-　ＩＢＮＴ↓
-　ＳＰ−ＳＴＮＮＲ１・５
+ IBNT↓
+ SP−STNNR１・５
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(63)
@@ -2328,8 +2328,8 @@ _DEVT_30;
 @!
 
 _DEVT_31;
-　ＩＢＮＴ↓
-　ＳＰ−ＳＴＮＮＲ２Ｔ３
+ IBNT↓
+ SP−STNNR２T３
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(63)
@@ -2343,8 +2343,8 @@ _DEVT_31;
 @!
 
 _DEVT_32;
-　ＩＢＮＴ↓
-　ＳＲＤＮＺｙＮ
+ IBNT↓
+ SRDNZyN
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(43)
@@ -2371,8 +2371,8 @@ _DEVT_32;
 @!
 
 _DEVT_33;
-　ＩＢＮＴ↓
-　ＭＢＲＳＲＵＺＮ　ＳＩＴＩＫＫ
+ IBNT↓
+ MBRSRUZN SITIKK
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(43)
@@ -2386,8 +2386,8 @@ _DEVT_33;
 @!
 
 _DEVT_34;
-　ＩＢＮＴ↓
-　Ｐ−ＲＮＯＹＺ
+ IBNT↓
+ P−RNOYZ
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(14)
@@ -2397,8 +2397,8 @@ _DEVT_34;
 @!
 
 _DEVT_35;
-　ＩＢＮＴ↓
-　ＡｔＰＲＫｔＤ
+ IBNT↓
+ AtPRKtD
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(14)
@@ -2409,8 +2409,8 @@ _DEVT_35;
 @!
 
 _DEVT_36;
-　ＩＢＮＴ↓
-　ＩＮＴｔＫ−ＦＤＵＳＮ
+ IBNT↓
+ INTtK−FDUSN
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(12)
@@ -2420,8 +2420,8 @@ _DEVT_36;
 @!
 
 _DEVT_37;
-　ＩＢＮＴ↓
-　ＯＮｔＴＮＴＩＲＯＴＫ
+ IBNT↓
+ ONtTNTIROTK
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(12)
@@ -2430,8 +2430,8 @@ _DEVT_37;
 @!
 
 _DEVT_38;
-　ＩＢＮＴ↓
-　ＭＢＲＳＲＵＺＮ　ＰＲＭｔＤ
+ IBNT↓
+ MBRSRUZN PRMtD
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(52)
@@ -2444,8 +2444,8 @@ _DEVT_38;
 @!
 
 _DEVT_39;
-　ＩＢＮＴ↓
-　ＥＤＮＮＵＭ
+ IBNT↓
+ EDNNUM
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(62)
@@ -2455,9 +2455,9 @@ _DEVT_39;
 @!
 
 _DEVT_40;
-　ＩＢＮＴ↓
-　Ｋ−ＰＩＮＴ−ＳＮ↓
-　ＨＮＴＵＮＴＴＫＩ
+ IBNT↓
+ K−PINT−SN↓
+ HNTUNTTKI
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(21)
@@ -2467,8 +2467,8 @@ _DEVT_40;
 @!
 
 _DEVT_41;
-　ＩＢＮＴ↓
-　ＴＮＴＫＳＳ
+ IBNT↓
+ TNTKSS
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(41)
@@ -2481,8 +2481,8 @@ _DEVT_41;
 @!
 
 _DEVT_42;
-　ＩＢＮＴ↓
-　ＭＩＤＴＧＲＭＤＵＦ
+ IBNT↓
+ MIDTGRMDUF
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(43)
@@ -2493,8 +2493,8 @@ _DEVT_42;
 @!
 
 _DEVT_43;
-　ＩＢＮＴ↓
-　ＳＩＮＩＲＢＮＮＮＫＷ
+ IBNT↓
+ SINIRBNNNKW
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(50)
@@ -2510,8 +2510,8 @@ _DEVT_43;
 @!
 
 _DEVT_44;
-　ＩＢＮＴ↓
-　ＭＫｙＵＮＴＫＮＭ
+ IBNT↓
+ MKyUNTKNM
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(53)
@@ -2524,8 +2524,8 @@ _DEVT_44;
 @!
 
 _DEVT_45;
-　ＩＢＮＴ↓
-　ＧＲＭＤＵＦＮＨＩＴＴ
+ IBNT↓
+ GRMDUFNHITT
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(42)
@@ -2536,9 +2536,9 @@ _DEVT_45;
 @!
 
 _DEVT_46;
-;　イベント↓
-;　さくじょしました
-;　しゃしんや（フランクへん）
+; イベント↓
+; さくじょしました
+; しゃしんや(フランクへん)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(12)
@@ -2550,8 +2550,8 @@ _DEVT_46;
 @!
 
 _DEVT_47;
-　ＩＢＮＴ↓
-　ＺｅＦＤｔＳＵ
+ IBNT↓
+ ZeFDtSU
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(30)
@@ -2570,8 +2570,8 @@ _DEVT_47;
 @!
 
 _DEVT_48;
-　ＩＢＮＴ↓
-　ＨＩＴＴＫＮＫＩ
+ IBNT↓
+ HITTKNKI
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(51)
@@ -2584,8 +2584,8 @@ _DEVT_48;
 @!
 
 _DEVT_49;
-　ＩＢＮＴ↓
-　ＴｙＧＭ
+ IBNT↓
+ TyGM
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(60)
@@ -2602,8 +2602,8 @@ _DEVT_49;
 @!
 
 _DEVT_50;
-　ＩＢＮＴ↓
-　Ｋ−Ｈ−ＤＳＩ
+ IBNT↓
+ K−H−DSI
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(35)
@@ -2614,8 +2614,8 @@ _DEVT_50;
 @!
 
 _DEVT_51;
-　ＩＢＮＴ↓
-　ＺｅＦＮＹＮＢ
+ IBNT↓
+ ZeFNYNB
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(60)
@@ -2630,8 +2630,8 @@ _DEVT_51;
 @!
 
 _DEVT_52;
-　ＩＢＮＴ↓
-　ＳＩＳｙＵＳＮＴＵ
+ IBNT↓
+ SISyUSNTU
 @KEYNP()
 @SET_LOOPREG(65)
 @GOSUB(MSG_SUB_PREEVENT)
@@ -2646,8 +2646,8 @@ _DEVT_52;
 
 
 _DEVT_53;
-　ＩＢＮＴ↓
-　ＺＮＢＨＩＨＩ
+ IBNT↓
+ ZNBHIHI
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(33)
@@ -2661,8 +2661,8 @@ _DEVT_53;
 @WARP(WARP_DEBUG_THRK)
 @!
 _DEVT_54;
-　ＩＢＮＴ↓
-　ＭＴＮＴ
+ IBNT↓
+ MTNT
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(33)
@@ -2673,8 +2673,8 @@ _DEVT_54;
 @!
 
 _DEVT_55;
-　ＩＢＮＴ↓
-　ＴＴＩＴＩＲＫＮＯＴＲ
+ IBNT↓
+ TTITIRKNOTR
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(61)
@@ -2684,8 +2684,8 @@ _DEVT_55;
 @!
 
 _DEVT_56;
-　ＩＢＮＴ↓
-　ＴＲＰ−ＴＺＲ↓
+ IBNT↓
+ TRP−TZR↓
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(43)
@@ -2698,8 +2698,8 @@ _DEVT_56;
 @!
 
 _DEVT_57;
-　ＩＢＮＴ↓
-　ＤＮＺｙＮＭＮ
+ IBNT↓
+ DNZyNMN
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(53)
@@ -2712,8 +2712,8 @@ _DEVT_57;
 @!
 
 _DEVT_58;
-　ＩＢＮＴ↓
-　Ｐ−ＲＳＲＷＲＲ
+ IBNT↓
+ P−RSRWRR
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(41)
@@ -2726,9 +2726,9 @@ _DEVT_58;
 @!
 
 _DEVT_59;
-　ＩＢＮＴ↓
-　ＳＩＧＮＩＮＲＳＮ１↓
-;　（テストちゅう）
+ IBNT↓
+ SIGNINRSN１↓
+; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(65)
@@ -2740,9 +2740,9 @@ _DEVT_59;
 @!
 
 _DEVT_60;
-　ＩＢＮＴ↓
-　ＳＩＧＮＩＮＲＳＮ２↓
-;　（テストちゅう）
+ IBNT↓
+ SIGNINRSN２↓
+; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(65)
@@ -2754,9 +2754,9 @@ _DEVT_60;
 @!
 
 _DEVT_61;
-　ＩＢＮＴ↓
-　ＳＩＧＮＩＮＲＳＮ３↓
-;　（テストちゅう）
+ IBNT↓
+ SIGNINRSN３↓
+; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(65)
@@ -2768,9 +2768,9 @@ _DEVT_61;
 @!
 
 _DEVT_62;
-　ＩＢＮＴ↓
-　ＳＩＧＮＩＮＲＳＮ４↓
-;　（テストちゅう）
+ IBNT↓
+ SIGNINRSN４↓
+; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(65)
@@ -2782,9 +2782,9 @@ _DEVT_62;
 @!
 
 _DEVT_63;
-　ＩＢＮＴ↓
-　ＳＩＧＮＩＮＲＳＮ５↓
-;　（テストちゅう）
+ IBNT↓
+ SIGNINRSN５↓
+; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(65)
@@ -2796,9 +2796,9 @@ _DEVT_63;
 @!
 
 _DEVT_64;
-　ＩＢＮＴ↓
-　ＳＩＧＮＩＮＲＳＮ６↓
-;　（テストちゅう）
+ IBNT↓
+ SIGNINRSN６↓
+; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(65)
@@ -2810,9 +2810,9 @@ _DEVT_64;
 @!
 
 _DEVT_65;
-　ＩＢＮＴ↓
-　ＳＩＧＮＩＮＲＳＮ７↓
-;　（テストちゅう）
+ IBNT↓
+ SIGNINRSN７↓
+; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(65)
@@ -2824,8 +2824,8 @@ _DEVT_65;
 @!
 
 _DEVT_66;
-　ＩＢＮＴ↓
-　ＳＫＩＵｏ−Ｋ−３
+ IBNT↓
+ SKIUo−K−３
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(44)
@@ -2838,9 +2838,9 @@ _DEVT_66;
 @!
 
 _DEVT_67;
-　ＩＢＮＴ↓
-　ＨＫＢＴＫＮ
-;　もぎりがかり
+ IBNT↓
+ HKBTKN
+; もぎりがかり
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(50)
@@ -2853,8 +2853,8 @@ _DEVT_67;
 @!
 
 _DEVT_68;
-　ＩＢＮＴ↓
-　ＳＴ−ＭＮＮＭＳＫ
+ IBNT↓
+ ST−MNNMSK
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(11)
@@ -2866,8 +2866,8 @@ _DEVT_68;
 @!
 
 _DEVT_69;
-　ＩＢＮＴ↓
-　３ＨＴＤＫ
+ IBNT↓
+ ３HTDK
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(11)
@@ -2876,8 +2876,8 @@ _DEVT_69;
 @!
 
 _DEVT_70;
-　ＩＢＮＴ↓
-　Ｇ−ＧＷＴＯＳＴＡＴ
+ IBNT↓
+ G−GWTOSTAT
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(66)
@@ -2916,9 +2916,9 @@ _SUB_PCALL;
 
 ;
 ;#55	ゾンビホイホイ使用
-;　★ゾンビホイホイの入手に限って設定。
-;　★
-;※いつ発生させる？（とりあえず魔テントを倒した後から、にしていますが）
+; ★ゾンビホイホイの入手に限って設定。
+; ★
+;※いつ発生させる?(とりあえず魔テントを倒した後から、にしていますが)
 ;※グッズ欄いっぱいの時の処理
 ;
 
@@ -2928,21 +2928,21 @@ MSG_DEBUG_SCENE_13;
 @OPEN(1)
 @SETF(FLG_ITEM_HOIHOI)
 ;◆イベント５５↓
-;　アップルキッドから↓
-;　でんわが　かかってきます@KEY()↓
-;　アップルキッドから↓
-;　ゾンビホイホイが↓
-;　おくられてきます@KEY()↓
-;　（イベントせいさくちゅう！）@KEYNP()
+; アップルキッドから↓
+; でんわが かかってきます@KEY()↓
+; アップルキッドから↓
+; ゾンビホイホイが↓
+; おくられてきます@KEY()↓
+; (イベントせいさくちゅう!)@KEYNP()
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_EVENT_55_GOODSFULL)
 @GOODSIN_PLAYER(0,GDS_TOOL_ZOMBI_HOIHOI)
 @CLOSE()
 @!
 _EVENT_55_GOODSFULL;
-;◆もちものが　いっぱいなので↓
-;　なんかすててください。↓
-;　（ほんばんはどうなるかふめい）
+;◆もちものが いっぱいなので↓
+; なんかすててください。↓
+; (ほんばんはどうなるかふめい)
 _EVT_55_SEL_DROP;
 @GOSUB(MSG_SEL_GOODS)
 @FALSE_GOTO(_EVT_55_SEL_DROP)
@@ -2966,20 +2966,20 @@ _SCENE_END;
 MSG_DEBUG_ENTER_DUNGEONMAN;
 @OPEN(1)
 ;◆ダンジョンおとこの↓
-;　なかに　はいります@KEY()↓
-;　（イベントせいさくちゅう！）@KEYNP()
+; なかに はいります@KEY()↓
+; (イベントせいさくちゅう!)@KEYNP()
 ;@WARP(WARP_DEBUG_37_DMAN)
 @CLOSE()
 @!
 
 _DBG_EXPL;
-◆ＧｔＺＩＤＷＮｙＵＲｙＫ↓
-　　　@INPUT(3)
+◆GtZIDWNyURyK↓
+   @INPUT(3)
 @CLRLINE()
 @FALSE_GOTO(MSG_DEBUG_00)
 @XCHG()
-◆@DSP_GOODS(0)Ｎ↓
-　ＳＴＭＩＤＳ．@KEY()@CLS()
+◆@DSP_GOODS(0)N↓
+ STMIDS.@KEY()@CLS()
 @CMP(0,1)
 @ONGOSUB(MSG_EXPL_GDS_BAT_BOR)
 @CMP(1,1)
@@ -3491,6 +3491,6 @@ _DBG_EXPL;
 ↓
 @CMP(254,1)
 @FALSE_GOTO(_DBG_EXPL)
-◆ＧｔＺＮＳＩＤＩＴＨ↓
-　@DSP_NUM(253)ＤＳ．@KEY()
+◆GtZNSIDITH↓
+ @DSP_NUM(253)DS.@KEY()
 @GOTO(_DBG_EXPL)

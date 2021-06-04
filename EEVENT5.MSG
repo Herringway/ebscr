@@ -2,13 +2,13 @@
 ;#103	マジカントへ	13.13
 
 ;★８つのパワースポットのサウンドをすべて集めるとマジカントが出現する。
-;（マジカントへ次元スリップする。）
+;(マジカントへ次元スリップする。)
 ;★このとき、どこが８つめのパワースポットになっても、共通の演出で、
 ;ジャイアントステップからファイアスプリングまで８つのパワースポットを
 ;順々に巡って行くシーンが挿入される。
-;（つまり、どのパワースポットをトリガーとしても、
-;マジカントへは必ずファイアスプリングから行くこととなる。）
-;★ネス以外のキャラはファイアスプリングでネスの（意識が）戻るのを待つ
+;(つまり、どのパワースポットをトリガーとしても、
+;マジカントへは必ずファイアスプリングから行くこととなる。)
+;★ネス以外のキャラはファイアスプリングでネスの(意識が)戻るのを待つ
 ;という設定。
 ;★演出の詳細は未定。
 
@@ -58,11 +58,11 @@ _POWR_OK_2;
 @FUNC(5)		;マップ上での全滅・配達禁止
 ;-----
 ;サウンド確認画面スルー
-@BGM_EFFECT( 3 )	;ＢＧＭフェードアウト長め
+@BGM_EFFECT( 3 )	;BGMフェードアウト長め
 @MOVE_GOM_CHAR( GOM_HIT_CHR,ANIM_INTO_NIGHT,OBJFX_SHOW_NONE )	;フェードアウト
 @WAITSYS()
 @HIDE_PLAYER(PC_ALL,OBJFX_SHOW_NONE)
-@WARP( WARP_PUBLIC_BLACKSCREEN );真っ暗画面へワープ（無音）
+@WARP( WARP_PUBLIC_BLACKSCREEN );真っ暗画面へワープ(無音)
 @WI( 30 )
 @FUNC(16);自動演奏自動終了
 @WI( 30 )
@@ -77,7 +77,7 @@ _POWR_OK_2;
 @SET_CAMERA_PARTY()
 @COLD_PLAYER( PC_ALL )
 @HIDE_GOM_CHAR( GOM_NES_MO, OBJFX_HIDE_DOTS )	;モノクロネス消す
-@WI( 180 )		;ＯＢＪＦＸ効果の間
+@WI( 180 )		;OBJFX効果の間
 
 ;自己意識内マイホーム１階
 @WARP( WARP_PSYCHO_MYHOME_1F_E )
@@ -96,80 +96,80 @@ _POWR_OK_2;
 @WI( 120 )
 ;パパママのセリフ
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)．．．Ｈｍｍｍ．．．@KEY()↓
-◆Ｉ　ｔｈｉｎｋ　@DSP_NAME(PC_NESS)　ｉｓ　ｔｈｅ　ｒｉｇｈｔ　ｎａｍｅ　ｆｏｒ　ｈｉｍ．
+◆@DSP_NAME(PC_NESS)...Hmmm...@KEY()↓
+◆I think @DSP_NAME(PC_NESS) is the right name for him.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)‥‥@WI(30)↓
-;jpn:　うーん　やっぱり↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)ってなまえで　いいか。
+;jpn: うーん やっぱり↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)ってなまえで いいか。
 @KEY()
 @CLOSEALL()
 @WI( 60 )
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)．．．ｈｅ　ｓｍｉｌｅｄ　ｊｕｓｔ　ｆｒｏｍ　ｈｅａｒｉｎｇ　ｈｉｓ　ｏｗｎ　ｎａｍｅ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｔｈｉｎｋ　ｈｅ　ｌｉｋｅｓ　ｈｉｓ　ｎａｍｅ？
+◆@DSP_NAME(PC_NESS)...he smiled just from hearing his own name.@KEY()↓
+◆Do you think he likes his name?
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)‥‥@WI(30)このあかちゃん↓
-;jpn:　じぶんのなまえを　きいて↓
-;jpn:　わらったわよ。@KEY()↓
-;jpn:◆きに　いってるのかしらね。
+;jpn: じぶんのなまえを きいて↓
+;jpn: わらったわよ。@KEY()↓
+;jpn:◆きに いってるのかしらね。
 @KEY()
 @CLOSEALL()
 @WI( 60 )
 @WI( 60 )
 @OPEN(1)
-◆Ｔｒｙ　ｐｕｔｔｉｎｇ　ｔｈａｔ　ｒｅｄ　ｃａｐ　ｏｎ　ｈｉｍ．@KEY()↓
-◆Ｈａ　ｈａ　ｈａ！↓
-　　Ｉｔ’ｓ　ｔｏｏ　ｂｉｇ，　ｂｕｔ　ｉｔ　ｌｏｏｋｓ　ｇｏｏｄ　ｏｎ　ｈｉｍ．．．
-;jpn:◆ちょっと　その‥‥↓
-;jpn:　あかい　やきゅうぼうを↓
-;jpn:　かぶらせて　ごらんよ。@KEY()↓
+◆Try putting that red cap on him.@KEY()↓
+◆Ha ha ha!↓
+  It’s too big, but it looks good on him...
+;jpn:◆ちょっと その‥‥↓
+;jpn: あかい やきゅうぼうを↓
+;jpn: かぶらせて ごらんよ。@KEY()↓
 ;jpn:◆アッハッハ。@WI(20)↓
-;jpn:　ぶかぶかだけど　けっこう↓
-;jpn:　にあうじゃないか。
+;jpn: ぶかぶかだけど けっこう↓
+;jpn: にあうじゃないか。
 @KEY()
 @CLOSEALL()
 @WI( 60 )
 @OPEN(1)
-◆Ｉ　ｈｏｐｅ　@DSP_STS(STS_PARTY_DOG_NAME)　ｗｏｎ’ｔ　ｂｅ　ｊｅａｌｏｕｓ　ｏｆ　ｔｈｅ　ｂａｂｙ．
-;jpn:◆@DSP_STS(STS_PARTY_DOG_NAME)が　あかちゃんに↓
-;jpn:　やきもちやかないかしらね。
+◆I hope @DSP_STS(STS_PARTY_DOG_NAME) won’t be jealous of the baby.
+;jpn:◆@DSP_STS(STS_PARTY_DOG_NAME)が あかちゃんに↓
+;jpn: やきもちやかないかしらね。
 @KEY()
 @CLOSEALL()
 @WI( 60 )
 @WI( 60 )
 @OPEN(1)
-◆Ｌｅｔ’ｓ　ｃｅｌｅｂｒａｔｅ　ｗｉｔｈ　ｓｏｍｅ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)．@KEY()↓
-◆Ｔｈｉｓ　ｂａｂｙ　ｗｉｌｌ　ｇｒｏｗ　ｕｐ　ｔｏ　ｂｅ　ａ　ｈａｒｄ　ｗｏｒｋｅｒ　ｊｕｓｔ　ｌｉｋｅ　ｙｏｕ．
+◆Let’s celebrate with some @DSP_STS(STS_PARTY_FAVORITE_FOODS).@KEY()↓
+◆This baby will grow up to be a hard worker just like you.
 ;jpn:◆@DSP_STS(STS_PARTY_FAVORITE_FOODS)で↓
-;jpn:　おいわいを　しよう。@KEY()↓
-;jpn:◆このこも　おまえににて↓
-;jpn:　ガンバリやになるんだろうなぁ。
+;jpn: おいわいを しよう。@KEY()↓
+;jpn:◆このこも おまえににて↓
+;jpn: ガンバリやになるんだろうなぁ。
 @KEY()
 @CLOSEALL()
 @WI( 60 )
 @OPEN(1)
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｈｅ　ｎｅｅｄｓ　ｔｏ　ｂｅ　ｒｉｃｈ　ｏｒ　ｆａｍｏｕｓ．．．@KEY()↓
-◆ｂｕｔ　Ｉ　ｗａｎｔ　ｈｉｍ　ｔｏ　ｂｅ　ａ　ｔｈｏｕｇｈｔｆｕｌ，　ｓｔｒｏｎｇ　ｂｏｙ．
-;jpn:◆えらいひとや　おかねもちに↓
-;jpn:　ならなくてもいいけど‥‥@KEY()↓
+◆I don’t think he needs to be rich or famous...@KEY()↓
+◆but I want him to be a thoughtful, strong boy.
+;jpn:◆えらいひとや おかねもちに↓
+;jpn: ならなくてもいいけど‥‥@KEY()↓
 ;jpn:◆おもいやりのある↓
-;jpn:　つよいこに　そだってほしいわ。
+;jpn: つよいこに そだってほしいわ。
 @KEY()↓
 @CLOSEALL()
 @WI( 60 )
 @WI( 60 )
 @WI( 60 )
 @OPEN(1)
-◆Ｔｈａｔ’ｓ　ｏｄｄ．．．ｔｈｅ　ｂａｂｙ　ｂｏｔｔｌｅ　ｔｈａｔ　ｈｅ　ｐｏｉｎｔｅｄ　ａｔ　ｓｅｅｍｅｄ　ｔｏ　ｍｏｖｅ　ａ　ｌｉｔｔｌｅ　ｂｉｔ．．．@KEY()↓
-◆Ｈｍｍｍ．．．
-;jpn:◆あら@WI(30)　このこが↓
-;jpn:　ゆびさした　ほにゅうびん↓
-;jpn:　ちょっと　うごいたみたいよ。@KEY()↓
+◆That’s odd...the baby bottle that he pointed at seemed to move a little bit...@KEY()↓
+◆Hmmm...
+;jpn:◆あら@WI(30) このこが↓
+;jpn: ゆびさした ほにゅうびん↓
+;jpn: ちょっと うごいたみたいよ。@KEY()↓
 ;jpn:◆‥‥ふしぎだわ。
 @KEYNP()@WI(15)
 @CLOSEALL()
 @WI(60)
 @GOSUB( MSG_SUB_BGM_FADEOUT_2SECOND )
-@SETF( FLG_BGM_MGKT_IN )		;マジカント突入ＢＧＭキー
+@SETF( FLG_BGM_MGKT_IN )		;マジカント突入BGMキー
 @MUSISTART()
 @WI(120)
 @WI(120)
@@ -227,8 +227,8 @@ MSG_FOLLOW_GOM_HIT_CHR_SUBR;
 ;横たわったネスをポーラ、ジェフ、プーが取り囲んで
 ;ネスの意識の戻るのを待っている。
 ;★起き上がるネスに、ポーラ、ジェフ、プーの順に話し掛け
-;（MSG_DKFK_POLA_NES、MSG_DKFD_JEFF_NES、MSG_DKFD_PU_NES）
-;プーのセリフでサターンバレーにテレポート（オートイベント）。
+;(MSG_DKFK_POLA_NES、MSG_DKFD_JEFF_NES、MSG_DKFD_PU_NES)
+;プーのセリフでサターンバレーにテレポート(オートイベント)。
 
 ;初回は黄金のオスカーを倒す、２回目は包囲網で以下
 MSG_EVT_106_MAGICANT_OUT;
@@ -236,17 +236,17 @@ MSG_EVT_106_MAGICANT_OUT;
 @SETF(FLG_SYS_MONSTER_OFF)	;ワンダリングモンスターを出現させない
 @WI(60)
 MSG_MGKT_MYSTICMAN;ふしぎな人
-;黄金のオスカーを倒した後（マジカント訪問２回目以降も）
+;黄金のオスカーを倒した後(マジカント訪問２回目以降も)
 ;オスカー像のあったあたりでナレーションとして聞こえる。
 @GOSUB( MSG_SUB_BGM_FADEOUT_LONG )
 @WI( 120 )
 @OPEN(1)
-◆Ｎｏｗ　ｙｏｕ　ｃａｎ　ｗａｋｅ　ｕｐ．↓
-　　Ｙｏｕｒ　ｆｒｉｅｎｄｓ　ａｒｅ　ｗａｉｔｉｎｇ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｉｔ　ｉｓ　ｔｉｍｅ　ｔｏ　ｇｅｔ　ｕｐ．
-;jpn:◆さぁ　めを　さましても　いいぞ。↓
-;jpn:　なかまが　まっている。↓
-;jpn:　さぁ　めを　さますんだ。
+◆Now you can wake up.↓
+  Your friends are waiting for you.@KEY()↓
+◆It is time to get up.
+;jpn:◆さぁ めを さましても いいぞ。↓
+;jpn: なかまが まっている。↓
+;jpn: さぁ めを さますんだ。
 @KEY()
 @CLOSEALL()
 @WI(1)
@@ -255,13 +255,13 @@ MSG_MGKT_MYSTICMAN;ふしぎな人
 @GOSUB(MSG_GLOBAL_DELIVERY_RESET)	;場面転換時に配達を中止
 ;-----
 @BGMSTART(0,BGM_fmagi);マジカントから帰る音
-@REMOVE_GOM_CHAR( GOM_NES, ANIM_KAITEN_NESS )　　　　　;回転ネス
+@REMOVE_GOM_CHAR( GOM_NES, ANIM_KAITEN_NESS )     ;回転ネス
 @WI(1)
-@SET_CAMERA_GOM_CHAR( GOM_NES )　　　　　　　　　　　　　　　　　　　　　　　　　　　;頂上へ
+@SET_CAMERA_GOM_CHAR( GOM_NES )                           ;頂上へ
 
 @FRESH_PLAYER(PC_ALL)
 @WAITSYS()
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_BG_CHANGE,OBJFX_SHOW_NONE)　　　;背景の切替え
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_BG_CHANGE,OBJFX_SHOW_NONE)   ;背景の切替え
 @WAITSYS()
 @SET_CAMERA_PARTY()
 @COLD_PLAYER(PC_ALL)
@@ -288,8 +288,8 @@ _MGKT_BACK_LLPT;リリパットステップに戻る
 @SHOW_MANPU_CHAR(PRSN_GRFD_LILIPUT_2_C,MANPU_BIKKURI)
 @SHOW_MANPU_CHAR(PRSN_GRFD_LILIPUT_2_D,MANPU_BIKKURI)
 @WI(90)
-@HIDE_CHAR(PRSN_GRFD_LILIPUT_2_A,OBJFX_HIDE_NONE)　　　　　　　　　;倒れたネスを消す
-@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)　　　　　　　　　　　　　　　　;プレーヤーネス再表示
+@HIDE_CHAR(PRSN_GRFD_LILIPUT_2_A,OBJFX_HIDE_NONE)         ;倒れたネスを消す
+@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)                ;プレーヤーネス再表示
 @WI(30)
 @HIDE_MANPU_CHAR(PRSN_GRFD_LILIPUT_2_B)
 @HIDE_MANPU_CHAR(PRSN_GRFD_LILIPUT_2_C)
@@ -322,7 +322,7 @@ _MGKT_BACK_LLPT;リリパットステップに戻る
 @HIDE_CHAR(PRSN_GRFD_LILIPUT_2_D,OBJFX_HIDE_NONE)
 @SHOW_PLAYER(PC_POO,OBJFX_SHOW_NONE)
 ;
-;テストです（松井）
+;テストです(松井)
 _MGKT_BACK_GO_DOSEI;
 ;@SETF(FLG_BGM_TELEPORT)
 ;@MUSISTART()
@@ -357,8 +357,8 @@ _MGKT_BACK_MLKY;ミルキーウェルに戻る
 @SHOW_MANPU_CHAR(PRSN_GPFT_MILKY_2_C,MANPU_BIKKURI)
 @SHOW_MANPU_CHAR(PRSN_GPFT_MILKY_2_D,MANPU_BIKKURI)
 @WI(90)
-@HIDE_CHAR(PRSN_GPFT_MILKY_2_A,OBJFX_HIDE_NONE)　　　　　　　　　;倒れたネスを消す
-@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)　　　　　　　　　　　　　　　　;プレーヤーネス再表示
+@HIDE_CHAR(PRSN_GPFT_MILKY_2_A,OBJFX_HIDE_NONE)         ;倒れたネスを消す
+@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)                ;プレーヤーネス再表示
 @WI(30)
 @HIDE_MANPU_CHAR(PRSN_GPFT_MILKY_2_B)
 @HIDE_MANPU_CHAR(PRSN_GPFT_MILKY_2_C)
@@ -409,8 +409,8 @@ _MGKT_BACK_MGNT;ピンククラウドに戻る
 @SHOW_MANPU_CHAR(PRSN_RAMA_PINK_5_C,MANPU_BIKKURI)
 @SHOW_MANPU_CHAR(PRSN_RAMA_PINK_5_D,MANPU_BIKKURI)
 @WI(90)
-@HIDE_CHAR(PRSN_RAMA_PINK_5_A,OBJFX_HIDE_NONE)　　　　　　　　　;倒れたネスを消す
-@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)　　　　　　　　　　　　　　　　;プレーヤーネス再表示
+@HIDE_CHAR(PRSN_RAMA_PINK_5_A,OBJFX_HIDE_NONE)         ;倒れたネスを消す
+@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)                ;プレーヤーネス再表示
 @WI(30)
 @HIDE_MANPU_CHAR(PRSN_RAMA_PINK_5_B)
 @HIDE_MANPU_CHAR(PRSN_RAMA_PINK_5_C)
@@ -462,8 +462,8 @@ _MGKT_BACK_FIRE;ファイアスプリングに戻る
 @SHOW_MANPU_CHAR(PRSN_CHKA_FIRE_9_C,MANPU_BIKKURI)
 @SHOW_MANPU_CHAR(PRSN_CHKA_FIRE_9_D,MANPU_BIKKURI)
 @WI(90)
-@HIDE_CHAR(PRSN_CHKA_FIRE_9_A,OBJFX_HIDE_NONE)　　　　　　　　　;倒れたネスを消す
-@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)　　　　　　　　　　　　　　　　;プレーヤーネス再表示
+@HIDE_CHAR(PRSN_CHKA_FIRE_9_A,OBJFX_HIDE_NONE)         ;倒れたネスを消す
+@SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)                ;プレーヤーネス再表示
 @WI(30)
 @HIDE_MANPU_CHAR(PRSN_CHKA_FIRE_9_B)
 @HIDE_MANPU_CHAR(PRSN_CHKA_FIRE_9_C)
@@ -504,10 +504,10 @@ MSG_DKFD_PAULA_NES;倒れているネスを囲んでオートでしゃべりだ�
 ;ポーラ
 @WAITSYS()
 @OPEN(1)
-◆Ｗｈａｔ　ｈａｐｐｅｎｅｄ，　@DSP_NAME(PC_NESS)？@KEY()↓
-◆Ｙｏｕ’ｖｅ　ｂｅｅｎ　ｕｎｃｏｎｓｃｉｏｕｓ　ｆｏｒ　ａ　ｌｏｎｇ　ｔｉｍｅ．．．
-;jpn:◆どうしてしまったの　@DSP_STS(STS_PC_NAME_NES)！↓
-;jpn:　ずっと　きを　うしなってたのよ。
+◆What happened, @DSP_NAME(PC_NESS)?@KEY()↓
+◆You’ve been unconscious for a long time...
+;jpn:◆どうしてしまったの @DSP_STS(STS_PC_NAME_NES)!↓
+;jpn: ずっと きを うしなってたのよ。
 @KEY()
 @CLOSEALL()
 @WI(30)
@@ -517,8 +517,8 @@ MSG_DKFD_JEFF_NES;
 ;ジェフ
 @WAITSYS()
 @OPEN(1)
-◆Ｙｏｕ　ｋｅｐｔ　ｓａｙｉｎｇ　ｓｏｍｅｔｈｉｎｇ．．．
-;jpn:◆ずっと　うわごとを　いってたよ。
+◆You kept saying something...
+;jpn:◆ずっと うわごとを いってたよ。
 @KEY()
 @CLOSEALL()
 @WI(30)
@@ -528,12 +528,12 @@ MSG_DKFD_POO_NES;
 ;プー
 @WAITSYS()
 @OPEN(1)
-◆．．．Ｓａｔｕｒｎ　Ｖａｌｌｅｙ？↓
-　　Ｗｈａｔ’ｓ　ｗａｉｔｉｎｇ　ｆｏｒ　ｕｓ　ｔｈｅｒｅ？@KEY()↓
-◆Ａｎｙｗａｙ，　ｗｅ　ｎｅｅｄ　ｔｏ　ｔｅｌｅｐｏｒｔ．．．
-;jpn:◆‥‥サターンバレー？！↓
-;jpn:　なにがまっているのか‥‥↓
-;jpn:　とにかくテレポーテーションだ！
+◆...Saturn Valley?↓
+  What’s waiting for us there?@KEY()↓
+◆Anyway, we need to teleport...
+;jpn:◆‥‥サターンバレー?!↓
+;jpn: なにがまっているのか‥‥↓
+;jpn: とにかくテレポーテーションだ!
 @KEY()
 @CLOSEALL()
 @WI(30)
@@ -559,12 +559,12 @@ _EVT_106_FMAN_END;
 ;---------------------------------------
 
 
-;#107	スペーストンネル1.5失敗（黒焦げ）
+;#107	スペーストンネル1.5失敗(黒焦げ)
 
 ;★マジカントで黄金のオスカーを倒してサターンバレーにテレポートしてくると、
 ;広場には完成したスペーストンネルが置いてある。
-;★プレイヤーキャラがスペーストンネルに接触したら一人ずつ乗り込んで、スタート！
-;しかしガタガタ揺れた後、「ボカン！」で、中から（テレポート失敗の）黒こげの
+;★プレイヤーキャラがスペーストンネルに接触したら一人ずつ乗り込んで、スタート!
+;しかしガタガタ揺れた後、「ボカン!」で、中から(テレポート失敗の)黒こげの
 ;プレイヤーパーティーを出現させる。
 ;★ここでアンドーナツ博士を近寄らせてセリフ MSG_EVENT_XYZ_ANDONUT を発行。
 ;メッセージ後暗転。ホテルのシークエンスを挿入して、プレイヤーパーティーを
@@ -581,9 +581,9 @@ MSG_EVT_SPACETUNNEL_KUROKOGE;
 ...;@COLD_PLAYER(PC_ALL)
 @HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
 @BGMSTART(0,BGM_sptn)
-@FRESH_CHAR(PRSN_DOSE_FIELD_3A);ＳＴ振動
+@FRESH_CHAR(PRSN_DOSE_FIELD_3A);ST振動
 @WAITSYS()
-@BGMSTART(0,BGM_msc8);ボカン！
+@BGMSTART(0,BGM_msc8);ボカン!
 
 @WI( 100 )
 @SET_SPECIAL(PC_NESS,8,2);黒こげへ
@@ -609,41 +609,41 @@ MSG_EVENT_XYZ_ANDONUT;
 ;アンドーナツ博士のオートメッセージ
 ;メッセージ後暗転して病院で目覚める
 @OPEN(1)
-◆Ｈｍｍｍ．．．ｉｔ　ｄｏｅｓｎ’ｔ　ｗｏｒｋ．↓
-　　Ｏｎｅ　ｔｈｉｎｇ　ｉｓ　ｍｉｓｓｉｎｇ．．．@KEY()↓
-◆Ｂｕｔ　ｔｈａｔ　ｏｎｅ　ｍａｔｅｒｉａｌ　ｃａｎｎｏｔ　ｎｏｒｍａｌｌｙ　ｂｅ　ｆｏｕｎｄ　ｏｎ　ｔｈｅ　ｅａｒｔｈ．@KEY()↓
-◆Ｔｈｅ　ｍａｔｅｒｉａｌ　Ｉ’ｍ　ｔｈｉｎｋｉｎｇ　ｏｆ　ｃａｍｅ　ｆｒｏｍ　ａ　ｍｅｔｅｏｒｉｔｅ@KEY()↓
-◆ｔｈａｔ　ｆｅｌｌ　ｗｈｅｎ　Ｉ　ｗａｓ　ｍｕｃｈ　ｙｏｕｎｇｅｒ．
+◆Hmmm...it doesn’t work.↓
+  One thing is missing...@KEY()↓
+◆But that one material cannot normally be found on the earth.@KEY()↓
+◆The material I’m thinking of came from a meteorite@KEY()↓
+◆that fell when I was much younger.
 ;jpn:◆うーむ。やっぱりだめか。↓
-;jpn:　ざいりょうが　ひとつ↓
-;jpn:　たりなかった。@KEY()↓
+;jpn: ざいりょうが ひとつ↓
+;jpn: たりなかった。@KEY()↓
 ;jpn:◆しかしそれは↓
-;jpn:　この　ちきゅうじょうの↓
-;jpn:　ぶっしつではないんだ。@KEY()↓
-;jpn:◆あれは　わしが　まだわかいころ‥@KEY()↓
-;jpn:◆おちてきた　いんせきから↓
-;jpn:　さいしゅしたものなんだ。
+;jpn: この ちきゅうじょうの↓
+;jpn: ぶっしつではないんだ。@KEY()↓
+;jpn:◆あれは わしが まだわかいころ‥@KEY()↓
+;jpn:◆おちてきた いんせきから↓
+;jpn: さいしゅしたものなんだ。
 @KEY()↓
 _EVENT_ANDONUT_MAIN;
-◆Ｈａｖｅ　ｙｏｕ　ｓｅｅｎ　ａ　ｍｅｔｅｏｒｉｔｅ　ａｎｙｗｈｅｒｅ　ｒｅｃｅｎｔｌｙ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆さいきん　どこかで　いんせきを↓
-;jpn:　みなかったかね？@KEY()↓
-;jpn:　　<みた>　　<みなかった>
+◆Have you seen a meteorite anywhere recently?↓
+<Yes> <No>
+;jpn:◆さいきん どこかで いんせきを↓
+;jpn: みなかったかね?@KEY()↓
+;jpn:  <みた>  <みなかった>
 @DSP_ITEM(2)
 @SELGOTO(_EVENT_XYZ_ANDONUT_YES,_EVENT_XYZ_ANDONUT_NO)
 
 _EVENT_XYZ_ANDONUT_NO;
-◆Ｈｍｍｍ．．．ｓｏ　ａｒｅ　ｗｅ　ｊｕｓｔ　ｇｏｉｎｇ　ｔｏ　ｗａｉｔ　ｆｏｒ　ａ　ｍｅｔｅｏｒｉｔｅ@KEY()↓
-◆ｔｏ　ｓｕｄｄｅｎｌｙ　ｆａｌｌ　ｆｒｏｍ　ｔｈｅ　ｓｋｙ？@KEY()↓
-◆Ｍｍｍ．．．ｙｏｕ　ｈａｖｅｎ’ｔ　ｓｅｅｎ　ａ　ｍｅｔｅｏｒｉｔｅ．．．Ｈｍ．．．ｔｈｉｎｋ　ｆｏｒ　ａ　ｍｉｎｕｔｅ．．．
-;jpn:◆うーむ。それでは　いつか↓
-;jpn:　いんせきがおちるまで　きながに↓
-;jpn:　まつとしようか。@KEY()↓
+◆Hmmm...so are we just going to wait for a meteorite@KEY()↓
+◆to suddenly fall from the sky?@KEY()↓
+◆Mmm...you haven’t seen a meteorite...Hm...think for a minute...
+;jpn:◆うーむ。それでは いつか↓
+;jpn: いんせきがおちるまで きながに↓
+;jpn: まつとしようか。@KEY()↓
 ;jpn:◆‥‥そうか‥‥@WI(60)↓
-;jpn:　みなかったのか‥‥。@KEY()↓
+;jpn: みなかったのか‥‥。@KEY()↓
 ;jpn:◆うーむ。@WI(20)↓
-;jpn:　‥‥まてよ‥‥
+;jpn: ‥‥まてよ‥‥
 @KEY()↓
 @GOTO(_EVENT_ANDONUT_MAIN)
 
@@ -654,39 +654,39 @@ _EVENT_XYZ_ANDONUT_NO;
 ;』
 
 _EVENT_XYZ_ANDONUT_YES;
-◆Ｅｕｒｅｋａ！　　Ｔｈａｔ’ｓ　ｉｔ！@KEY()↓
-◆Ｗｉｔｈ　ｅｖｅｎ　ｊｕｓｔ　ａ　ｐｉｅｃｅ　ｏｆ　ｔｈｅ　ｍｅｔｅｏｒｉｔｅ，　Ｉ　ｃａｎ　ｓｙｎｔｈｅｓｉｚｅ　ｔｈｅ　ｍａｔｅｒｉａｌ　Ｚｅｘｏｎｙｔｅ．@KEY()↓
-◆Ｉ　ｄｏｕｂｔ　ｔｈａｔ　ｙｏｕｒ　ｍｏｒｔａｌ　ｅｎｅｍｙ　Ｇｉｙｇａｓ@KEY()↓
-◆ｏｒ　ｗｈａｔｅｖｅｒ　ｗｉｌｌ　ａｌｌｏｗ　ｙｏｕ　ｔｏ　ｇｏ　ｔｏ　Ｏｎｅｔｔ　ａｎｄ　ｇｅｔ　ａ　ｐｉｅｃｅ　ｏｆ　ｔｈｅ　ｍｅｔｅｏｒｉｔｅ．@KEY()↓
-◆Ｂｙ　ｎｏｗ，　Ｏｎｅｔｔ　ｉｓ　ｉｎ　ｈｉｓ　ｅｖｉｌ　ｈａｎｄｓ．@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｇｏ，　ｔｈｏｕｇｈ，　ｓｏ　ｔａｋｅ　ｅｖｅｒｙ　ｐｏｓｓｉｂｌｅ　ｐｒｅｃａｕｔｉｏｎ．@KEY()↓
-◆Ｔｈｅ　Ｓａｔｕｒｎｉａｎｓ　ｈａｖｅ　ｉｎｔｒｏｄｕｃｅｄ　ｓｏｍｅ　ｏｆ　ｔｈｅｉｒ　ｎｅｗ　ｄｅｖｅｌｏｐｍｅｎｔｓ　ａｔ　ｔｈｅｉｒ　ｓｈｏｐ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｃｈｅｃｋ　ｔｈｅｍ　ｏｕｔ　ｂｅｆｏｒｅ　ｙｏｕ　ｌｅａｖｅ．@KEY()↓
-◆．．．Ｉ　ｗｏｎｄｅｒ　ｗｈａｔ　Ｏｎｅｔｔ　ｉｓ　ｌｉｋｅ　ａｔ　ｔｈｉｓ　ｐｏｉｎｔ　ｉｎ　ｔｉｍｅ？．．．
-;jpn:◆それだ！@KEY()↓
+◆Eureka!  That’s it!@KEY()↓
+◆With even just a piece of the meteorite, I can synthesize the material Zexonyte.@KEY()↓
+◆I doubt that your mortal enemy Giygas@KEY()↓
+◆or whatever will allow you to go to Onett and get a piece of the meteorite.@KEY()↓
+◆By now, Onett is in his evil hands.@KEY()↓
+◆You must go, though, so take every possible precaution.@KEY()↓
+◆The Saturnians have introduced some of their new developments at their shop.@KEY()↓
+◆Please check them out before you leave.@KEY()↓
+◆...I wonder what Onett is like at this point in time?...
+;jpn:◆それだ!@KEY()↓
 ;jpn:◆そのいんせきの↓
-;jpn:　かけらでもあれば@KEY()↓
-;jpn:◆ぶっしつＸＹＺを↓
-;jpn:　ごうせいできるぞ。@KEY()↓
-;jpn:◆‥‥しかし　きみたちが↓
-;jpn:　オネットに　いんせきのかけらを↓
-;jpn:　とりにいくことを@KEY()↓
-;jpn:◆ギーグとかいう　てきが↓
-;jpn:　かんたんに　ゆるすとは↓
-;jpn:　おもえない。@KEY()↓
-;jpn:◆おそらく　オネットは↓
-;jpn:　すでに　やつらのてに↓
-;jpn:　おちているにちがいない。@KEY()↓
-;jpn:◆ちゅういの　うえにも↓
-;jpn:　ちゅういを　かさねて↓
-;jpn:　オネットに　むかってくれ。@KEY()↓
-;jpn:◆どせいさんの　かいはつした↓
-;jpn:　きょうりょくな　そうびが↓
-;jpn:　「しんはつばい」された。@KEY()↓
-;jpn:◆ぜひ　それを↓
-;jpn:　みにつけていってくれ。@KEY()↓
+;jpn: かけらでもあれば@KEY()↓
+;jpn:◆ぶっしつXYZを↓
+;jpn: ごうせいできるぞ。@KEY()↓
+;jpn:◆‥‥しかし きみたちが↓
+;jpn: オネットに いんせきのかけらを↓
+;jpn: とりにいくことを@KEY()↓
+;jpn:◆ギーグとかいう てきが↓
+;jpn: かんたんに ゆるすとは↓
+;jpn: おもえない。@KEY()↓
+;jpn:◆おそらく オネットは↓
+;jpn: すでに やつらのてに↓
+;jpn: おちているにちがいない。@KEY()↓
+;jpn:◆ちゅういの うえにも↓
+;jpn: ちゅういを かさねて↓
+;jpn: オネットに むかってくれ。@KEY()↓
+;jpn:◆どせいさんの かいはつした↓
+;jpn: きょうりょくな そうびが↓
+;jpn: 「しんはつばい」された。@KEY()↓
+;jpn:◆ぜひ それを↓
+;jpn: みにつけていってくれ。@KEY()↓
 ;jpn:◆‥‥オネットのまちは↓
-;jpn:　どんなようすなのか‥‥。
+;jpn: どんなようすなのか‥‥。
 @KEYNP()
 @CLOSEALL()
 @SETF(FLG_INFO_XYZ)
@@ -712,7 +712,7 @@ _EVENT_XYZ_ANDONUT_YES;
 ;---------------------------------------------------------
 
 
-;#109	スペーストンネル２（ワープ）	16.1
+;#109	スペーストンネル２(ワープ)	16.1
 
 ;★スペーストンネルの瞬間空間移動の演出。
 
@@ -721,7 +721,7 @@ MSG_EVT_ST2;
 @SETF(FLG_SYS_DIS_2H_PAPA)		;以降二時間パパ出ない。
 @GOSUB(MSG_GLOBAL_DELIVERY_RESET)	;場面転換時に配達を中止
 ;-----
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_INTO_ST2,OBJFX_SHOW_NONE)　　;乗り込む
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_INTO_ST2,OBJFX_SHOW_NONE)  ;乗り込む
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
 ...;@WI(1)
 ...;@SET_CAMERA_GOM_CHAR(GOM_HIT_CHR)
@@ -737,14 +737,14 @@ MSG_EVT_ST2;
 ;-------
 @HIDE_CHAR( PRSN_DOSE_FIELD_3A, OBJFX_HIDE_VSTRIPE )
 @WI( 180 )	;OBJFX_HIDE_VSTRIPEの処理終了待ちウェイト
-@WARP(WARP_ST2_DKFD)　　　　　　　　　　　　;現在の最低国へワープ
+@WARP(WARP_ST2_DKFD)            ;現在の最低国へワープ
 @WI( 100 )
 @MOVE_CHAR( PRSN_CHKA_SAITEI_3B, ANIM_CHKA_ST2_STILL, OBJFX_SHOW_VSTRIPE )
 @WI( 80 )
 ;---------
-@GOSUB( MSG_SUB_BGM_FADEOUT_LONG )	;ＢＧＭフェードアウト長め
+@GOSUB( MSG_SUB_BGM_FADEOUT_LONG )	;BGMフェードアウト長め
 @RESF( FLG_BGM_PUBL_WARP )
-@MUSISTART()	;現在の最低国フィールドＢＧＭ
+@MUSISTART()	;現在の最低国フィールドBGM
 ;---------
 @SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_OUT_ST2,OBJFX_SHOW_NONE)
@@ -769,7 +769,7 @@ MSG_DKFD_HRECT_ST3_A;
 』
 
 ;#110	ネスたち機械化	-	-
-;#111	スペーストンネル３（タイムワープ）
+;#111	スペーストンネル３(タイムワープ)
 
 ;★現在の最低国。つの状のマップオブジェクトへの接近をきっかけに
 ;スペーストンネル３を出現させる。空間移動で登場の演出。
@@ -786,12 +786,12 @@ MSG_DKFD_HRECT_ST3_B;２つ目のHRECTに入ったところで以下を発行
 @BGMSTART(0,BGM_msc9)
 ;@WI(120)
 ;@WI(60)
-@MOVE_CHAR(PRSN_CHKA_SAITEI_3C,ANIM_ST_ST3,OBJFX_SHOW_VSTRIPE)　　　　　　　;ＳＴ登場
+@MOVE_CHAR(PRSN_CHKA_SAITEI_3C,ANIM_ST_ST3,OBJFX_SHOW_VSTRIPE)       ;ST登場
 @WI(120)
 @WI(60)
-@MOVE_CHAR(PRSN_CHKA_SAITEI_F,ANIM_DOSEI_ST3,OBJFX_SHOW_NONE)　　　　　　　　;土星さん
+@MOVE_CHAR(PRSN_CHKA_SAITEI_F,ANIM_DOSEI_ST3,OBJFX_SHOW_NONE)        ;土星さん
 @MOVE_CHAR(PRSN_CHKA_SAITEI_C,ANIM_AND_ST3_1,OBJFX_SHOW_NONE);アンドーナツ博士
-@MOVE_CHAR(PRSN_CHKA_SAITEI_E,ANIM_KID_ST3,OBJFX_SHOW_NONE)　　;アップルキッド
+@MOVE_CHAR(PRSN_CHKA_SAITEI_E,ANIM_KID_ST3,OBJFX_SHOW_NONE)  ;アップルキッド
 @WAITSYS()
 @MUSISTART()
 @GET_CHAR_DIR( PRSN_CHKA_SAITEI_C, 1, PC_ALL )
@@ -810,24 +810,24 @@ MSG_DKFD_END_ANDONUT_1;
 ;現在の最低国にスペーストンネルで登場の博士たち
 @CHKFGOTO(FLG_DKFD_END_GET_READY,MSG_DKFD_END_ANDONUT_2)
 @OPEN(1)
-◆Ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ　ｈａｓ　ｂｅｅｎ　ｃｏｍｐｌｅｔｅｄ．@KEY()↓
-◆Ｗｅ　ｃｏｕｌｄ　ｆｉｎｉｓｈ　ｉｔ　ｑｕｉｃｋｌｙ　ｂｅｃａｕｓｅ　ｏｆ　Ｍｒ．　Ｓａｔｕｒｎ’ｓ　ｉｎｃｒｅｄｉｂｌｅ　ｓｃｉｅｎｔｉｆｉｃ　ｓｋｉｌｌ．．．@KEY()↓
-◆Ｇｉｙｇａｓ　ｉｓ　ａｔｔａｃｋｉｎｇ　ｆｒｏｍ　ｏｕｒ　ｅｘａｃｔ　ｌｏｃａｔｉｏｎ，@KEY()↓
-◆ｂｕｔ　ｈｅ　ｉｓ　ａｔｔａｃｋｉｎｇ　ｆｒｏｍ　ｍａｎｙ　ｙｅａｒｓ　ｉｎ　ｔｈｅ　ｐａｓｔ．
+◆The Phase Distorter has been completed.@KEY()↓
+◆We could finish it quickly because of Mr. Saturn’s incredible scientific skill...@KEY()↓
+◆Giygas is attacking from our exact location,@KEY()↓
+◆but he is attacking from many years in the past.
 ;jpn:◆あっというまに↓
-;jpn:　「スペーストンネル３」が↓
-;jpn:　かんせいしたぞ。@KEY()↓
+;jpn: 「スペーストンネル３」が↓
+;jpn: かんせいしたぞ。@KEY()↓
 ;jpn:◆どせいさんたちの↓
-;jpn:　かがくぎじゅつは　すごいぞ！@KEY()↓
-;jpn:◆ギーグは　このおなじばしょから↓
-;jpn:　つまり　かこの　このばしょから↓
-;jpn:　こうげきを　しかけているんだ。
+;jpn: かがくぎじゅつは すごいぞ!@KEY()↓
+;jpn:◆ギーグは このおなじばしょから↓
+;jpn: つまり かこの このばしょから↓
+;jpn: こうげきを しかけているんだ。
 @KEY()
 @CLOSEALL()
 』
 
 MSG_DKFD_ANDONUT_A;
-◆Ｔｈｉｓ　ｉｓ　ｖｅｒｙ　ｈａｒｄ　ｆｏｒ　ｍｅ　ｔｏ　ｔｅｌｌ　ｙｏｕ，　ｂｕｔ．．．
+◆This is very hard for me to tell you, but...
 ;jpn:◆いいにくいのだが‥‥。
 @KEY()
 @CHKFGOTO(FLG_DKFD_END_GET_READY,_DKFD_ANDONUT_A_READY)
@@ -844,98 +844,98 @@ _DKFD_ANDONUT_A_READY;
 』
 
 MSG_DKFD_END_ANDONUT_2;
-◆Ｉｎ　ｏｒｄｅｒ　ｔｏ　ｄｅｆｅａｔ　Ｇｉｙｇａｓ，@KEY()↓
-◆ｗｈｏ　ｉｓ　ａｔｔａｃｋｉｎｇ　ｆｒｏｍ　ｔｈｅ　ｐａｓｔ，　ｙｏｕ　ｍｕｓｔ　ｗａｒｐ　ｔｏ　ｔｈｅ　ｐａｓｔ．@KEY()↓
-◆Ｔｈｉｓ　ｃａｎ　ｏｎｌｙ　ｂｅ　ｄｏｎｅ　ｂｙ　ｗａｙ　ｏｆ　ｔｈｅ　”Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ　３．”@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｍａｃｈｉｎｅ　ｃａｎｎｏｔ　ｗａｒｐ　ｌｉｖｉｎｇ　ｔｈｉｎｇｓ，　Ｉ　ｍｅａｎ　ｌｉｆｅｆｏｒｍｓ．@KEY()↓
-◆Ｌｉｆｅ　ｉｓ　ｄｅｍｏｌｉｓｈｅｄ　ｉｎ　ｔｈｅ　ｐｒｏｃｅｓｓ　ｏｆ　ｗａｒｐｉｎｇ．@KEY()↓
-◆Ｔｈｅ　ｏｎｌｙ　ｗａｙ　ｔｏ　ａｃｃｏｍｐｌｉｓｈ　ｔｈｅ　ｔｉｍｅ　ｔｒａｖｅｌ　ｉｓ@KEY()↓
-◆ｔｏ　ｔｒａｎｓｆｅｒ　ｙｏｕｒ　ｂｒａｉｎ　”ｐｒｏｇｒａｍ”　ｉｎｔｏ　ａ　ｒｏｂｏｔ，@KEY()↓
-◆ａｎｄ　ｓｅｎｄ　ｔｈｅ　ｒｏｂｏｔ　ｔｏ　ｔｈｅ　ｐａｓｔ．@KEY()↓
-◆．．．Ｔｈｅ　ｔｒａｎｓｆｅｒ　ｍｅａｎｓ　ｔｈａｔ　ｙｏｕｒ　ｓｐｉｒｉｔ　ｗｉｌｌ　ｇｏ　ｗｉｔｈ　ｔｈｅ　ｒｏｂｏｔ@KEY()↓
-◆ｗｈｉｌｅ　ｙｏｕｒ　ｂｏｄｙ　ｉｓ　ｌｅｆｔ　ｂｅｈｉｎｄ．．．@KEY()↓
-◆Ｉ　ｃａｎｎｏｔ　ｐｒｏｍｉｓｅ　ｔｈａｔ　ｙｏｕｒ　ｓｐｉｒｉｔ　ｗｉｌｌ　ｃｏｍｅ　ｂａｃｋ　ａｆｔｅｒ　ｔｈｅ　ｂａｔｔｌｅ　ｉｎ　ｔｈｅ　ｐａｓｔ．@KEY()↓
-◆Ｙｅｔ，　ｙｏｕ　ｍｕｓｔ　ｕｎｄｅｒｓｔａｎｄ　ｔｈａｔ　ｔｈｅ　ｆｏｕｒ　ｏｆ　ｙｏｕ　ａｒｅ　ｔｈｅ　ｃｈｏｓｅｎ　ｏｎｅｓ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｓｔｉｌｌ　ｗｉｓｈ　ｔｏ　ｆａｃｅ　Ｇｉｙｇａｓ　ｂｙ　ｔｒａｖｅｌｉｎｇ　ｔｏ　ｔｈｅ　ｐａｓｔ？@KEY()↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)！↓
-;jpn:　かこから　こうげきをしてくる↓
-;jpn:　ギーグをたおすには@KEY()↓
+◆In order to defeat Giygas,@KEY()↓
+◆who is attacking from the past, you must warp to the past.@KEY()↓
+◆This can only be done by way of the ”Phase Distorter ３.”@KEY()↓
+◆However, the machine cannot warp living things, I mean lifeforms.@KEY()↓
+◆Life is demolished in the process of warping.@KEY()↓
+◆The only way to accomplish the time travel is@KEY()↓
+◆to transfer your brain ”program” into a robot,@KEY()↓
+◆and send the robot to the past.@KEY()↓
+◆...The transfer means that your spirit will go with the robot@KEY()↓
+◆while your body is left behind...@KEY()↓
+◆I cannot promise that your spirit will come back after the battle in the past.@KEY()↓
+◆Yet, you must understand that the four of you are the chosen ones.@KEY()↓
+◆Do you still wish to face Giygas by traveling to the past?@KEY()↓
+<Yes> <No>
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)!↓
+;jpn: かこから こうげきをしてくる↓
+;jpn: ギーグをたおすには@KEY()↓
 ;jpn:◆かこにワープすることが↓
-;jpn:　ひつようだ。　むろん‥‥@KEY()↓
+;jpn: ひつようだ。 むろん‥‥@KEY()↓
 ;jpn:◆それは「スペーストンネル３」で↓
-;jpn:　できることなんだが‥‥@KEY()↓
-;jpn:◆‥‥このそうちは　いきものを‥‥↓
-;jpn:　「せいめいたい」を↓
-;jpn:　ワープさせることが　できない。@KEY()↓
-;jpn:◆ワープのプロセスで　いのちは↓
-;jpn:　きえさってしまうんだ。@KEY()↓
-;jpn:◆ほうほうは　ただ　ひとつ。@KEY()↓
-;jpn:◆きみたちの　ずのうプログラムを↓
-;jpn:　ロボットに　いしょくして↓
-;jpn:　かこへ　ゆくしかない。@KEY()↓
+;jpn: できることなんだが‥‥@KEY()↓
+;jpn:◆‥‥このそうちは いきものを‥‥↓
+;jpn: 「せいめいたい」を↓
+;jpn: ワープさせることが できない。@KEY()↓
+;jpn:◆ワープのプロセスで いのちは↓
+;jpn: きえさってしまうんだ。@KEY()↓
+;jpn:◆ほうほうは ただ ひとつ。@KEY()↓
+;jpn:◆きみたちの ずのうプログラムを↓
+;jpn: ロボットに いしょくして↓
+;jpn: かこへ ゆくしかない。@KEY()↓
 ;jpn:◆‥‥そのばあい↓
-;jpn:　きみたちのスピリットは↓
-;jpn:　ロボットのほうに　いってしまう。@KEY()↓
+;jpn: きみたちのスピリットは↓
+;jpn: ロボットのほうに いってしまう。@KEY()↓
 ;jpn:◆きみたちのにくたいは↓
-;jpn:　ただのぬけがらに　なるわけだ。@KEY()↓
-;jpn:◆‥‥かこでの　たたかいがおわって↓
-;jpn:　スピリットがもどってくるという↓
-;jpn:　かのうせいは　よそくできない。@KEY()↓
-;jpn:◆えらばれた４にんのしょくん！↓
-;jpn:　それでも　かこのせかいに↓
-;jpn:　いってくれるか？@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: ただのぬけがらに なるわけだ。@KEY()↓
+;jpn:◆‥‥かこでの たたかいがおわって↓
+;jpn: スピリットがもどってくるという↓
+;jpn: かのうせいは よそくできない。@KEY()↓
+;jpn:◆えらばれた４にんのしょくん!↓
+;jpn: それでも かこのせかいに↓
+;jpn: いってくれるか?@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_DKFD_END_ANDONUT_2_YES,_DKFD_END_ANDONUT_2_NO)
 
 _DKFD_END_ANDONUT_2_NO;
-◆Ｙｅｓ，　Ｉ　ｇａｖｅ　ｙｏｕ　ｔｈｅ　ｃｈａｎｃｅ　ｔｏ　ｒｅｆｕｓｅ．．．ｉｔ’ｓ　ｎａｔｕｒａｌ　ｔｏ　ｆｅｅｌ　ａｓ　ｙｏｕ　ｄｏ．@KEY()↓
-◆Ｔｈｅ　ｏｎｌｙ　ｔｈｉｎｇ　ｌｅｆｔ　ｉｓ　ｔｈｅ　ｄｅｓｔｒｕｃｔｉｏｎ　ｏｆ　ｏｕｒ　ｐｌａｎｅｔ．．．
-;jpn:◆それも　ひとつの　こたえだ。@WI(20)↓
-;jpn:　このまま　すべてが　ほろびるのを↓
-;jpn:　‥‥まっていようか。
+◆Yes, I gave you the chance to refuse...it’s natural to feel as you do.@KEY()↓
+◆The only thing left is the destruction of our planet...
+;jpn:◆それも ひとつの こたえだ。@WI(20)↓
+;jpn: このまま すべてが ほろびるのを↓
+;jpn: ‥‥まっていようか。
 @KEYNP()
 』
 
 _DKFD_END_ANDONUT_2_YES;
-◆．．．Ｈｍｍｍ．．．ｙｏｕ　ｋｎｏｗ　ｔｈａｔ　ｙｏｕ　ｍａｙ　ｎｏｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｒｅｔｕｒｎ　ｔｏ　ｙｏｕｒ　ｃｕｒｒｅｎｔ　ｆｏｒｍ，@KEY()↓
-◆ｒｉｇｈｔ？↓
-<Ｙｅｓ>　<Ｎｏ>
+◆...Hmmm...you know that you may not be able to return to your current form,@KEY()↓
+◆right?↓
+<Yes> <No>
 ;jpn:◆‥‥‥@WI(20)わかった。@KEY()↓
-;jpn:◆もう　いままでの↓
-;jpn:　きみたちの　すがたに↓
-;jpn:　もどれないかもしれないんだが@KEY()↓
-;jpn:◆‥‥ほんとうに　それでも@WI(20)↓
-;jpn:　‥‥‥いいか？@WI(30)↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆もう いままでの↓
+;jpn: きみたちの すがたに↓
+;jpn: もどれないかもしれないんだが@KEY()↓
+;jpn:◆‥‥ほんとうに それでも@WI(20)↓
+;jpn: ‥‥‥いいか?@WI(30)↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_DKFD_END_ANDONUT_YES_YES,_DKFD_END_ANDONUT_2_NO)
 @GOTO(_DKFD_END_ANDONUT_2_NO)
 
 _DKFD_END_ANDONUT_YES_YES;
-◆．．．Ｙｅｓ．．．Ｉ　ｓｅｅ．．．@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｒｅａｌｌｙ　ｓｅｔ　ｙｏｕｒ　ｍｉｎｄ　ｏｎ　ｔｈｉｓ．．．@KEY()↓
-◆Ｌｅｔ　ｍｅ　ｔａｋｅ　ａ　ｇｏｏｄ　ｌｏｏｋ　ａｔ　ｙｏｕ　ｎｏｗ．．．@KEY()↓
-◆@DSP_NAME(PC_NESS)，　ｐｌｅａｓｅ　ｇｉｖｅ　ｍｅ　ｔｈａｔ　ｒｅｄ　ｃａｐ．．．
+◆...Yes...I see...@KEY()↓
+◆You have really set your mind on this...@KEY()↓
+◆Let me take a good look at you now...@KEY()↓
+◆@DSP_NAME(PC_NESS), please give me that red cap...
 ;jpn:◆‥‥‥@WI(20)そうか。@WI(30)↓
-;jpn:　そこまでの‥‥@KEY()↓
-;jpn:◆きみたち　せめて　わたしに↓
-;jpn:　いまの　きみたちの　すがたを↓
-;jpn:　よくみせてくれ。@KEY()↓
+;jpn: そこまでの‥‥@KEY()↓
+;jpn:◆きみたち せめて わたしに↓
+;jpn: いまの きみたちの すがたを↓
+;jpn: よくみせてくれ。@KEY()↓
 ;jpn:◆‥‥@DSP_STS(STS_PC_NAME_NES)@WI(20)↓
-;jpn:　そのぼうしを　わたしに‥‥
+;jpn: そのぼうしを わたしに‥‥
 @KEY()↓
 @WI(60)↓
-◆Ｒｅａｄｙ．．．ｓｔａｎｄ　ｂｙ．．．
-;jpn:◆よし　スタンバイだ！
+◆Ready...stand by...
+;jpn:◆よし スタンバイだ!
 @KEY()
 @CLOSEALL()
 @WI(1)
 ;-----
 @GOSUB(MSG_GLOBAL_DELIVERY_RESET)	;場面転換時に配達を中止
 ;-----
-;改造人間手術（ショッカーではない）
+;改造人間手術(ショッカーではない)
 @BGM_EFFECT( 3 )		;BGMフェードアウト長め
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_INTO_NIGHT, OBJFX_SHOW_NONE )
 @WAITSYS()
@@ -945,7 +945,7 @@ _DKFD_END_ANDONUT_YES_YES;
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_REMODEL_OPERATION, OBJFX_SHOW_NONE )
 @WAITSYS()
 @COLD_CHAR( GOM_HIT_CHR )
-@BGMSTART( 0, BGM_mm01 )	;「ちゅいーん　ガガガ…」
+@BGMSTART( 0, BGM_mm01 )	;「ちゅいーん ガガガ…」
 @FRESH_CHAR( GOM_HIT_CHR )
 @WAITSYS()
 @BGMSTOP( 0 )
@@ -956,71 +956,71 @@ _DKFD_END_ANDONUT_YES_YES;
 @HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
 MSG_DKFD_END_ANDONUT_3;
 @OPEN(1)
-◆@DSP_NAME(PC_NESS)！@KEY()↓
-◆@DSP_NAME(PC_PAULA)！@KEY()↓
-◆@DSP_NAME(PC_POO)！@KEY()↓
-◆@DSP_NAME(PC_JEFF)！．．．ｍｙ　ｓｏｎ．．．@KEY()↓
-◆Ｔｈｅｒｅ　ｉｓ　ｎｏ　ｔｕｒｎｉｎｇ　ｂａｃｋ　ｎｏｗ．@KEY()↓
-◆@DSP_NAME(PC_NESS)，　ａｃｔｉｖａｔｅ　ｔｈｅ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ　３　ｂｙ　ｙｏｕｒ　ｏｗｎ　ｈａｎｄ，@KEY()↓
-◆ｔｈｅｒｅｂｙ　ｆｏｌｌｏｗｉｎｇ　ｙｏｕｒ　ｏｗｎ　ｄｅｓｔｉｎｙ．．．ｗｉｌｌ　ｙｏｕ　ｄｏ　ｓｏ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)！↓
-;jpn:　@DSP_STS(STS_PC_NAME_PAULA)！↓
-;jpn:　@DSP_STS(STS_PC_NAME_POO)！@KEY()↓
+◆@DSP_NAME(PC_NESS)!@KEY()↓
+◆@DSP_NAME(PC_PAULA)!@KEY()↓
+◆@DSP_NAME(PC_POO)!@KEY()↓
+◆@DSP_NAME(PC_JEFF)!...my son...@KEY()↓
+◆There is no turning back now.@KEY()↓
+◆@DSP_NAME(PC_NESS), activate the Phase Distorter ３ by your own hand,@KEY()↓
+◆thereby following your own destiny...will you do so?↓
+<Yes> <No>
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)!↓
+;jpn: @DSP_STS(STS_PC_NAME_PAULA)!↓
+;jpn: @DSP_STS(STS_PC_NAME_POO)!@KEY()↓
 ;jpn:◆そして‥‥わたしのむすこ↓
-;jpn:　‥‥@DSP_STS(STS_PC_NAME_JEFF)！@KEY()↓
+;jpn: ‥‥@DSP_STS(STS_PC_NAME_JEFF)!@KEY()↓
 ;jpn:◆‥‥コクピットに↓
-;jpn:　‥‥すわってくれ。@KEY()↓
-;jpn:◆もう　あともどりは　できないぞ。@WI(30)↓
-;jpn:　‥‥‥せめて　@DSP_STS(STS_PC_NAME_NES)くん@WI(15)↓
-;jpn:　「スペーストンネル」のスイッチを@KEY()↓
-;jpn:◆じぶんのてで　おしてくれ。@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: ‥‥すわってくれ。@KEY()↓
+;jpn:◆もう あともどりは できないぞ。@WI(30)↓
+;jpn: ‥‥‥せめて @DSP_STS(STS_PC_NAME_NES)くん@WI(15)↓
+;jpn: 「スペーストンネル」のスイッチを@KEY()↓
+;jpn:◆じぶんのてで おしてくれ。@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_DKFD_END_ANDONUT_3_YES,_DKFD_END_ANDONUT_3_NO)
 @GOTO(_DKFD_END_ANDONUT_3_NO)
 
 _DKFD_END_ANDONUT_3_NO;
-◆．．．Ｉ　ｓｅｅ．．．@KEY()↓
-◆@DSP_STS(STS_PC_NAME_JEFF)！　　Ｙｏｕ　ｄｏ　ｉｔ！↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆‥‥そうか@WI(20)　そうだろう。@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)！@WI(20)↓
-;jpn:　‥‥おまえが　おしなさい。@WI(30)↓
-;jpn:　　<はい>　　<いいえ>
+◆...I see...@KEY()↓
+◆@DSP_STS(STS_PC_NAME_JEFF)!  You do it!↓
+<Yes> <No>
+;jpn:◆‥‥そうか@WI(20) そうだろう。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)!@WI(20)↓
+;jpn: ‥‥おまえが おしなさい。@WI(30)↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_DKFD_END_ANDONUT_3_YES,_DKFD_END_ANDONUT_3_NO_NO)
 @GOTO(_DKFD_END_ANDONUT_3_NO_NO)
 
 _DKFD_END_ANDONUT_3_NO_NO;
-◆Ｏｈ，　ｙｏｕ　ｌｏｓｔ　ｙｏｕｒ　ｎｅｒｖｅ．．．@KEY()↓
-◆@DSP_NAME(PC_NESS)！　　Ｉｔ　ｉｓ　ｕｐ　ｔｏ　ｙｏｕ．．．↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆‥‥よ@WI(15)　よわむしめ！@WI(30)↓
-;jpn:　やっぱり　@DSP_STS(STS_PC_NAME_NES)くん@WI(15)↓
-;jpn:　きみが‥‥@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+◆Oh, you lost your nerve...@KEY()↓
+◆@DSP_NAME(PC_NESS)!  It is up to you...↓
+<Yes> <No>
+;jpn:◆‥‥よ@WI(15) よわむしめ!@WI(30)↓
+;jpn: やっぱり @DSP_STS(STS_PC_NAME_NES)くん@WI(15)↓
+;jpn: きみが‥‥@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_DKFD_END_ANDONUT_3_YES,_DKFD_END_ANDONUT_3_NO)
 
 _DKFD_END_ANDONUT_3_YES;
-◆Ｏｎｌｙ　ａ　ｆｅｗ　ｐｅｏｐｌｅ　ｋｎｏｗ　ｏｆ　ｙｏｕｒ　ａｍａｚｉｎｇ　ｃｏｕｒａｇｅ，@KEY()↓
-◆ｂｕｔ　ｔｈｅ　ｎｕｍｂｅｒ　ｏｆ　ｐｅｏｐｌｅ　ｙｏｕ　ｓａｖｅ　ｔｈｒｏｕｇｈ　ｔｈａｔ　ｂｒａｖｅｒｙ　ｉｓ　ｉｍｍｅｎｓｅ．@KEY()↓
-◆Ｉ　ｆｅｅｌ　ｖｅｒｙ　ｆｏｒｔｕｎａｔｅ@KEY()↓
-◆ｔｏ　ｂｅ　ｐｒｅｓｅｎｔ　ａｔ　ｔｈｅ　ｂｅｇｉｎｎｉｎｇ　ｏｆ　ｔｈｉｓ　ｍｏｎｕｍｅｎｔａｌ　ｕｎｄｅｒｔａｋｉｎｇ．．．
-;jpn:◆きみたちの　しんの　ゆうきを↓
-;jpn:　しっている　にんげんの　かずは↓
-;jpn:　ほんの　ひとにぎりだが‥‥@KEY()↓
-;jpn:◆きみたちが　その　ゆうきで↓
-;jpn:　すくう　ひとびとの　かずは↓
-;jpn:　はかりしれない。@KEY()↓
-;jpn:◆‥‥こんな　ばめんに↓
-;jpn:　いあわせることのできた　わたしは@WI(30)↓
-;jpn:　‥‥‥@WI(20)しあわせものだ。
+◆Only a few people know of your amazing courage,@KEY()↓
+◆but the number of people you save through that bravery is immense.@KEY()↓
+◆I feel very fortunate@KEY()↓
+◆to be present at the beginning of this monumental undertaking...
+;jpn:◆きみたちの しんの ゆうきを↓
+;jpn: しっている にんげんの かずは↓
+;jpn: ほんの ひとにぎりだが‥‥@KEY()↓
+;jpn:◆きみたちが その ゆうきで↓
+;jpn: すくう ひとびとの かずは↓
+;jpn: はかりしれない。@KEY()↓
+;jpn:◆‥‥こんな ばめんに↓
+;jpn: いあわせることのできた わたしは@WI(30)↓
+;jpn: ‥‥‥@WI(20)しあわせものだ。
 @KEY()
 @BGMSTART(0,BGM_sptn);虫を無視
 @CLOSEALL()
-@SETF(FLG_STEP_PAST)	;祈る人々ＳＴ２出現用
+@SETF(FLG_STEP_PAST)	;祈る人々ST２出現用
 @WI(1)
 @WARP(WARP_ST3_PAST)
 @COLD_PLAYER( PC_ALL )
@@ -1049,10 +1049,10 @@ _DKFD_END_ANDONUT_3_YES;
 』
 
 MSG_DKFD_END_APPLEKID;
-◆Ｙｏｕ　ｍｕｓｔ　ｗａｒｐ　ｔｏ　ｔｈｅ　ｐａｓｔ　ａｎｄ　ｆｉｇｈｔ，　ｂｕｔ．．．
+◆You must warp to the past and fight, but...
 ;jpn:◆「スペーストンネル３」で↓
-;jpn:　かこへ　ワープして↓
-;jpn:　たたかわなくては‥‥@KEY()↓
+;jpn: かこへ ワープして↓
+;jpn: たたかわなくては‥‥@KEY()↓
 ;jpn:◆でも‥‥
 @KEYNP()
 @SETF(FLG_DKFD_END_GET_READY)
@@ -1060,9 +1060,9 @@ MSG_DKFD_END_APPLEKID;
 
 MSG_DKFD_END_DOSEI;
 @FONTBAKA()
-◆Ｗｅ　ｈｅｒｅ　ｔｏｏ．@KEY()↓
-◆Ｂｏｉｎｇ！
-;jpn:◆わしらも　きたです。@KEY()↓
+◆We here too.@KEY()↓
+◆Boing!
+;jpn:◆わしらも きたです。@KEY()↓
 ;jpn:◆ポエーン
 @KEYNP()
 @FONTSTD()
@@ -1077,11 +1077,11 @@ MSG_EVT_112_LASTBATTLE;
 @WI(180)
 @BGMSTART(0,BGM_gegu2)
 ;------------
-@MOVE_GOM_CHAR( GOM_HIT_CHR2, ANIM_STAGE_PARTY, OBJFX_SHOW_NONE )　;固まるプレーヤー
+@MOVE_GOM_CHAR( GOM_HIT_CHR2, ANIM_STAGE_PARTY, OBJFX_SHOW_NONE ) ;固まるプレーヤー
 @WI( 1 )	;GOM_HIT_CHR2の登録待ち
 @SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
 @FRESH_PLAYER( PC_ALL )
-;画面が揺れる　＆　虚像マシン→ネスの顔に変化
+;画面が揺れる ＆ 虚像マシン→ネスの顔に変化
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_LAST_BATTLE, OBJFX_SHOW_NONE )
 @WAITSYS()	;ANIM_LAST_BATTLEより
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_LAST_BATTLE, OBJFX_SHOW_NONE )
@@ -1125,7 +1125,7 @@ MSG_EVT_112_LASTBATTLE;
 @SETF(FLG_DOG_LATER_APPEAR)	;うろつきイヌに変更
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF);最終戦闘後は敵を出さない
-;@DIS_HPDEC();ＨＰは減少しない
+;@DIS_HPDEC();HPは減少しない
 @FUNC(5)			;毒死配達禁止
 ;-----
 ;@GOSUB(MSG_DEBUG_EVENT_112)
@@ -1136,7 +1136,7 @@ MSG_EVT_112_LASTBATTLE;
 ;@DIS_BGMCHG();虫を無視
 @BGMSTOP(0)
 ;-----
-@GOSUB(MSG_GLOBAL_DELIVERY_RESET)	;場面転換時に配達を中止（念の為）
+@GOSUB(MSG_GLOBAL_DELIVERY_RESET)	;場面転換時に配達を中止(念の為)
 ;-----
 @GOSUB(MSG_SUB_ALLHEAL_POWR)	;全回復しておく
 ;-----------
@@ -1145,7 +1145,7 @@ MSG_EVT_112_LASTBATTLE;
 @WAITSYS()
 @WARP(WARP_PAST_RETURN)
 @COLD_PLAYER(PC_ALL)
-;---					;脱退前に記念撮影（隠し撮り）
+;---					;脱退前に記念撮影(隠し撮り)
 @SETF(FLG_PHOTO_SATURN);撮り頃フラグ	;隠し撮り用に変更;おじさん隠し撮り
 @GOSUB(MSG_GLOBAL_PHOTO_32)		;撮影
 ;---
@@ -1155,7 +1155,7 @@ MSG_EVT_112_LASTBATTLE;
 @WI(180)
 @MESSAGE_SOUND(3)
 @OPEN(14)
-;jpn:　@DSP_STS(STS_PC_NAME_NES)たちの　たたかいは@WI(15)　おわった。@KEYNP()@WI(30)
+;jpn: @DSP_STS(STS_PC_NAME_NES)たちの たたかいは@WI(15) おわった。@KEYNP()@WI(30)
 @CLOSEALL()
 @MESSAGE_SOUND(1)
 @WI(30)
@@ -1279,8 +1279,8 @@ MSG_EVT_112_LASTBATTLE;
 ;@HIDE_MANPU_GOM_CHAR(GOM_POO)
 @WI(60)
 @OPEN(1)
-◆Ｉ’ｌｌ　ｓｅｅ　ｙｏｕ　ａｇａｉｎ　ｓｏｍｅｄａｙ！
-;jpn:◆また　いつか　あおう！
+◆I’ll see you again someday!
+;jpn:◆また いつか あおう!
 @KEYNP()
 @CLOSEALL()
 @WI(30)
@@ -1415,13 +1415,13 @@ MSG_EVT_112_LASTBATTLE;
 ;----------------------------------------
 ;#115	エンディング・シークエンス
 ;----------------------------------------
-;	●（青から元に戻っている）
-;	●（「ちょっとかぎマシン」を使う）
-;	●（魔テント出現）
+;	●(青から元に戻っている)
+;	●(「ちょっとかぎマシン」を使う)
+;	●(魔テント出現)
 
 ;-------------------------------------------------
 
-MSG_EVT_POLADAD_CLAMOR;松（ぽ、ぽがない？）
+MSG_EVT_POLADAD_CLAMOR;松(ぽ、ぽがない?)
 ;娘を探して走るポーラの父
 ;ツーソンホテルからフィールドへのドアで、予約メッセージとして発行される
 ;メッセージを発行しながらキャラが動くという掟破りをしている
@@ -1432,18 +1432,18 @@ MSG_EVT_POLADAD_CLAMOR;松（ぽ、ぽがない？）
 ;ホテル前で周りを見るポーラ父
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_POLA_FATHER )	;西画面外への移動ちょっと待て
-;セリフ「◆ポォーーーラァーーー！！」を表示しながら
-;　※３０文字以内に納めること！！
+;セリフ「◆ポォーーーラァーーー!!」を表示しながら
+; ※３０文字以内に納めること!!
 @SET_LOOPREG(1)
 @GET_PLAYER_NAME(PC_PAULA)
 @SET_REG(0)
 @OPEN( 1 )
 @WI(10)
-◆@DSP_CHAR(0)@WI(10)　@DSP_CHAR(0)@WI(10)　@DSP_STS(STS_PC_NAME_PAULA)！！@WI(20)　　Ｗｈｅｒｅ　ａｒｅ　ｙｏｕ！@WI(20)　　Ｉｔ’ｓ　ｔｉｍｅ　ｆｏｒ　ａ　ｙｕｍｍｙ　ｐｉｅｃｅ　ｏｆ　ｐｉｅ！
-;jpn:◆@DSP_CHAR(0)@WI(10)　@DSP_CHAR(0)@WI(10)　@DSP_STS(STS_PC_NAME_PAULA)ーーー！！
+◆@DSP_CHAR(0)@WI(10) @DSP_CHAR(0)@WI(10) @DSP_STS(STS_PC_NAME_PAULA)!!@WI(20)  Where are you!@WI(20)  It’s time for a yummy piece of pie!
+;jpn:◆@DSP_CHAR(0)@WI(10) @DSP_CHAR(0)@WI(10) @DSP_STS(STS_PC_NAME_PAULA)ーーー!!
 @WI(20)↓
-;jpn:　ど　どこにいるんだー！↓
-;jpn:　お　お　おやつの　じかんだぞー！
+;jpn: ど どこにいるんだー!↓
+;jpn: お お おやつの じかんだぞー!
 ;西画面外へ走り去る父
 @FRESH_GOM_CHAR( GOM_POLA_FATHER )	;うむ、行ってよし
 @WAITSYS()
@@ -1462,11 +1462,11 @@ MSG_EVT_CHIKA_GUMIDORIAN;
 @WAITSYS()		;扉まで来るのを待つ
 @COLD_CHAR( PRSN_CHKA_FIELD_B )
 @OPEN(1)
-◆Ｙｏｕ　ｇｕｙｓ　ｓｍｅｌｌ　ｒｅａｌｌｙ　ｇｏｏｄ！　　＊ｓｎｉｆｆ，　ｓｎｉｆｆ，　ｓｎｉｆｆ＊@KEY()↓
-◆Ｗｈｏ　ａｍ　Ｉ？　　Ｉ’ｍ　ａ　　Ｔｅｎｄａ！
-;jpn:◆おまえら　けっこう　すっげえ↓
-;jpn:　いいにおいするじゃん！@WI(15)クンクン@KEY()↓
-;jpn:◆あっ　オレ？　おれもグミぞくよ。
+◆You guys smell really good!  ＊sniff, sniff, sniff＊@KEY()↓
+◆Who am I?  I’m a  Tenda!
+;jpn:◆おまえら けっこう すっげえ↓
+;jpn: いいにおいするじゃん!@WI(15)クンクン@KEY()↓
+;jpn:◆あっ オレ? おれもグミぞくよ。
 @KEYNP()
 @CLOSE()
 @WI(10)
@@ -1475,13 +1475,13 @@ MSG_EVT_CHIKA_GUMIDORIAN;
 @WAITSYS()
 @COLD_CHAR( PRSN_CHKA_FIELD_C )
 @OPEN(1)
-◆Ｈｅｙ！　　Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｄｏｉｎｇ　ｉｎｓｉｄｅ　ｏｕｒ　ｄｉｎｏｓａｕｒ　ｃａｇｅ？@KEY()↓
-◆Ｉ’ｍ　ｇｏｉｎｇ　ｔｏ　ｏｐｅｎ　ｔｈｅ　ｄｏｏｒ，　ａｎｄ　ｙｏｕ　ｇｅｔ　ｏｕｔ　ｏｆ　ｔｈｅｒｅ　ｒｉｇｈｔ　ｎｏｗ！
-;jpn:◆きょうりゅうの　オリのなかで↓
-;jpn:　なにやってるんだ？！@KEY()↓
-;jpn:◆いりぐちを　あけてやるから↓
-;jpn:　はやく　こっちに　でてこい。@WI(20)↓
-;jpn:　ボスの　オレが　ゆるすから。
+◆Hey!  What are you doing inside our dinosaur cage?@KEY()↓
+◆I’m going to open the door, and you get out of there right now!
+;jpn:◆きょうりゅうの オリのなかで↓
+;jpn: なにやってるんだ?!@KEY()↓
+;jpn:◆いりぐちを あけてやるから↓
+;jpn: はやく こっちに でてこい。@WI(20)↓
+;jpn: ボスの オレが ゆるすから。
 @KEYNP()
 @CLOSE()
 @FRESH_CHAR( PRSN_CHKA_FIELD_C )
@@ -1490,20 +1490,20 @@ MSG_EVT_CHIKA_GUMIDORIAN;
 @HIDE_CHAR(PRSN_CHKA_FIELD_3B,OBJFX_HIDE_NONE)	;扉消す
 @SETF(FLG_DKFD_DOOR_DISAPPEAR)			;扉もう出ない
 @OPEN(1)
-◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｔｈｅ　Ｔｅｎｄａｋｒａｕｔ．
-;jpn:◆‥‥グミドリアン　ありがとよ。
+◆Thank you for the Tendakraut.
+;jpn:◆‥‥グミドリアン ありがとよ。
 @KEY()↓
 @SE(SE_se76_my_give)
 @GOODSOUT(PC_ALL,GDS_TOOL_KEY_GUMIDORIAN)
-@SETF(FLG_DKFD_GUMI_BOSS);セリフ替え用（でもいまは使ってない）
+@SETF(FLG_DKFD_GUMI_BOSS);セリフ替え用(でもいまは使ってない)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆（@DSP_NAME(0)’ｓ　Ｔｅｎｄａｋｒａｕｔ　ｗａｓ　ｓｔｏｌｅｎ．）@KEY()↓
-◆（Ｔｈｅ　ａｗｆｕｌ　ｓｍｅｌｌ　ｓｕｒｒｏｕｎｄｉｎｇ　ｔｈｅ　ｇｒｏｕｐ　ｉｓ　ｎｏｗ　ｇｏｎｅ．）
-;jpn:◆（@DSP_NAME(0)は↓
-;jpn:　「グミドリアン」を↓
-;jpn:　とられてしまった）@KEY()↓
-;jpn:◆（もう　くさく　なくなった）
+◆(@DSP_NAME(0)’s Tendakraut was stolen.)@KEY()↓
+◆(The awful smell surrounding the group is now gone.)
+;jpn:◆(@DSP_NAME(0)は↓
+;jpn: 「グミドリアン」を↓
+;jpn: とられてしまった)@KEY()↓
+;jpn:◆(もう くさく なくなった)
 @KEY()
 @CLOSEALL()
 ;@WI(1)
@@ -1532,7 +1532,7 @@ MSG_EVT_TO_BE_CONTINUED;＠
 @WAITSYS()
 @WI(1)
 @HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )		;パーティ消す
-;真っ暗画面へワープ（暗闇でポーキーの「扉どんどん」ＢＧＭを鳴らすため）
+;真っ暗画面へワープ(暗闇でポーキーの「扉どんどん」BGMを鳴らすため)
 @WARP( WARP_PUBLIC_BLACKSCREEN )
 @WI( 180 )
 ;ネスの寝室へワープ
@@ -1544,10 +1544,10 @@ MSG_EVT_TO_BE_CONTINUED;＠
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )		;パーティ表示
 @WI(1)
 @SETF(FLG_SYS_DIS_2H_PAPA)	;二時間パパ禁止
-@SETF(FLG_SYS_MONSTER_OFF)	;ワンダリングモンスター禁止（念のため）
+@SETF(FLG_SYS_MONSTER_OFF)	;ワンダリングモンスター禁止(念のため)
 』
 
-MSG_EVT_KNOCK_TO_BE;続く！イベント２
+MSG_EVT_KNOCK_TO_BE;続く!イベント２
 @BGMSTOP(0)
 @SE(SE_se08_door_in)
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_NESS_TOBINOKU,OBJFX_SHOW_NONE)
@@ -1575,34 +1575,34 @@ MSG_EVT_KNOCK_TO_BE;続く！イベント２
 ;@MUSISTART();ファンファーレ終了で曲終わりにする。
 @OPEN(1)
 @WI(20)
-◆Ａ　ｌｅｔｔｅｒ　ａｒｒｉｖｅｄ　ｆｒｏｍ　ｍｙ　ｂｒｏｔｈｅｒ，　Ｐｏｋｅｙ．．．ｉｔ　ｉｓ　ａｄｄｒｅｓｓｅｄ　ｔｏ　@DSP_NAME(PC_NESS)．@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ｎｏ　ｓｔａｍｐ，　ａｎｄ　ｉｔ’ｓ　ｎｏｔ　ｔｉｍｅ　ｆｏｒ　ｔｈｅ　ｍａｉｌｍａｎ　ｔｏ　ｃｏｍｅ．．．@KEY()↓
-◆Ａｎｙｗａｙ，　Ｉ　ｂｒｏｕｇｈｔ　ｉｔ　ｏｖｅｒ．@KEY()↓
-◆Ｉｔ　ｓａｙｓ，　”ｃｏｍｅ　ａｎｄ　ｇｅｔ　ｍｅ，　ｌｏｓｅｒ！@KEY()↓
-◆Ｓｐａｎｋｅｔｙ，　ｓｐａｎｋｅｔｙ，　ｓｐａｎｋｅｔｙ．”@KEY()↓
-◆．．．Ｉ　ｗｏｎｄｅｒ　ｗｈｅｒｅ　ｈｅ　ｉｓ？
+◆A letter arrived from my brother, Pokey...it is addressed to @DSP_NAME(PC_NESS).@KEY()↓
+◆There’s no stamp, and it’s not time for the mailman to come...@KEY()↓
+◆Anyway, I brought it over.@KEY()↓
+◆It says, ”come and get me, loser!@KEY()↓
+◆Spankety, spankety, spankety.”@KEY()↓
+◆...I wonder where he is?
 ;jpn:◆ポーキーにいちゃんから↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)あての↓
-;jpn:　てがみが　とどいていたんだ！@KEY()↓
-;jpn:◆スタンプも　ないし↓
-;jpn:　ゆうびんやさんが　くるような↓
-;jpn:　じかんじゃ　ないし‥‥@KEY()↓
-;jpn:◆でも　とにかく↓
-;jpn:　もってきたよ。@KEY()↓
-;jpn:◆「ここまで　おいで！@WI(20)↓
-;jpn:　おしりペンペーン」@WI(30)‥‥だって。@KEY()↓
-;jpn:◆‥‥どこにいるんだろう？@KEYNP()@WI(20)
-;◆とつぜん　トカゲが↓
-;　たずねてきて@KEY()↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)あての↓
+;jpn: てがみが とどいていたんだ!@KEY()↓
+;jpn:◆スタンプも ないし↓
+;jpn: ゆうびんやさんが くるような↓
+;jpn: じかんじゃ ないし‥‥@KEY()↓
+;jpn:◆でも とにかく↓
+;jpn: もってきたよ。@KEY()↓
+;jpn:◆「ここまで おいで!@WI(20)↓
+;jpn: おしりペンペーン」@WI(30)‥‥だって。@KEY()↓
+;jpn:◆‥‥どこにいるんだろう?@KEYNP()@WI(20)
+;◆とつぜん トカゲが↓
+; たずねてきて@KEY()↓
 ;◆ポーキーにいちゃんの↓
-;　てがみを　おいてったんだ。@KEY()↓
-;◆「ここまで　おいで！@WI(20)↓
-;　おしりペンペーン」@WI(30)‥‥だって。@KEY()↓
-;◆‥‥どこにいるんだろう？
+; てがみを おいてったんだ。@KEY()↓
+;◆「ここまで おいで!@WI(20)↓
+; おしりペンペーン」@WI(30)‥‥だって。@KEY()↓
+;◆‥‥どこにいるんだろう?
 @KEYNP()@WI(20)
 @CLOSEALL()
 @WI(1)
-@SETF(FLG_TLPT_ONET)			;曲設定用（無音化）
+@SETF(FLG_TLPT_ONET)			;曲設定用(無音化)
 ;楕円ウィンドウ閉じる
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_TOBECONT_OVALCLOSE,OBJFX_SHOW_NONE)
 @WAITSYS()

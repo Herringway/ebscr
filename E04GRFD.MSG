@@ -1,5 +1,5 @@
 ;-------------------------------------
-;@Habitat:Ｇデッド谷／谷の小屋／監視室
+;@Habitat:Gデッド谷／谷の小屋／監視室
 ;@Person:鉄格子越しのポーラ
 ;@Figure:ドア
 ;@AppearanceKey:MSG_POLA_GRFD/off
@@ -10,58 +10,58 @@
 MSG_GRFD_POLA;
 ;ポーラ
 ;幼いころから、「ふしぎなちからを持つ少女」として、ツーソンの
-;まちでは有名。幼稚園を経営する両親の手伝いをしているが、「ＮＥＳ」
+;まちでは有名。幼稚園を経営する両親の手伝いをしているが、「NES」
 ;に助けられて後、共に冒険の旅に出る。
 @CHKFGOTO(FLG_WIN_CARPAINTER,_GRFD_POLA_LATER)
 @CHKFGOTO(FLG_ITEM_FRANKLINBADGE,_GRFD_POLA_1)
 @CHKFGOTO(FLG_TEMP_9,_GRFD_POLA_TMP)
-◆．．．Ｗｈｏ？．．．@KEY()↓
-◆．．．Ａｒｅ　ｙｏｕ　@DSP_NAME(PC_NESS)？@KEY()↓
+◆...Who?...@KEY()↓
+◆...Are you @DSP_NAME(PC_NESS)?@KEY()↓
 
-◆@DSP_NAME(PC_NESS)！　　Ｉ’ｍ　ｓｏ　ｇｌａｄ　ｉｔ’ｓ　ｙｏｕ．@KEY()↓
-◆Ｉ　ｈａｄ　ａ　ｄｒｅａｍ　ｔｈａｔ　ａ　ｂｏｙ　ｎａｍｅｄ　@DSP_NAME(PC_NESS)　ｗａｓ　ｍｙ　ｄｅｓｔｉｎｙ．@KEY()↓
-◆Ｉ　ｋｎｏｗ　ｉｔ’ｓ　ｈａｒｄ　ｔｏ　ｂｅｌｉｅｖｅ．
+◆@DSP_NAME(PC_NESS)!  I’m so glad it’s you.@KEY()↓
+◆I had a dream that a boy named @DSP_NAME(PC_NESS) was my destiny.@KEY()↓
+◆I know it’s hard to believe.
 @KEY()↓
-;jpn:◆‥@WI(20)‥@WI(20)だれ？@KEY()↓
-;jpn:◆‥@WI(20)‥@WI(20)@DSP_STS(STS_PC_NAME_NES)じゃない？@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)ね！@WI(30)↓
-;jpn:　ああ　よかった。↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)というなの　ひとが@KEY()↓
-;jpn:◆わたしと　うんめいを↓
-;jpn:　ともにするって‥‥@WI(30)そんなゆめを↓
-;jpn:　たしかに　みたの。@KEY()↓
+;jpn:◆‥@WI(20)‥@WI(20)だれ?@KEY()↓
+;jpn:◆‥@WI(20)‥@WI(20)@DSP_STS(STS_PC_NAME_NES)じゃない?@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)ね!@WI(30)↓
+;jpn: ああ よかった。↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)というなの ひとが@KEY()↓
+;jpn:◆わたしと うんめいを↓
+;jpn: ともにするって‥‥@WI(30)そんなゆめを↓
+;jpn: たしかに みたの。@KEY()↓
 _GRFD_POLA_TMP;
-◆Ｔｈａｎｋ　ｙｏｕ．@WI(15)　　Ｉ　ｋｎｅｗ　ｙｏｕ　ｗｏｕｌｄ　ｒｅｓｃｕｅ　ｍｅ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｄｉｄｎ’ｔ　ｃｏｍｅ，@WI(15)　Ｉ　ｗｏｕｌｄ　ｈａｖｅ　ｈａｄ　ｔｏ　ｔｒｙ　ｔｏ　ｂｕｓｔ　ｏｕｔ　ｏｆ　ｈｅｒｅ．
+◆Thank you.@WI(15)  I knew you would rescue me.@KEY()↓
+◆If you didn’t come,@WI(15) I would have had to try to bust out of here.
 @KEY()↓
 ;jpn:◆ありがとう‥‥@WI(20)↓
-;jpn:　やっぱり↓
-;jpn:　たすけにきてくれたのね。@KEY()↓
-;jpn:◆あなたが　きてくれなかったら@WI(20)↓
-;jpn:　わたし‥‥@WI(60)↓
-;jpn:　なきだしちゃうところだった。@KEY()↓
+;jpn: やっぱり↓
+;jpn: たすけにきてくれたのね。@KEY()↓
+;jpn:◆あなたが きてくれなかったら@WI(20)↓
+;jpn: わたし‥‥@WI(60)↓
+;jpn: なきだしちゃうところだった。@KEY()↓
 ;jpn:◆‥‥‥。@KEY()↓
-◆Ｙｏｕ　ｃａｎ’ｔ　ｏｐｅｎ　ｔｈｅ　ｄｏｏｒ．@KEY()↓
-◆Ｙｏｕ’ｌｌ　ｈａｖｅ　ｔｏ　ｇｅｔ　ｔｈｅ　ｋｅｙ　ｆｒｏｍ　Ｃａｒｐａｉｎｔｅｒ．　　Ｈｅ’ｓ　ｇｏｔ　ｉｔ　ｈｉｄｄｅｎ　ａｗａｙ．@KEY()↓
-◆Ｉ　ｈｅａｒｄ　Ｃａｒｐａｉｎｔｅｒ　ｃａｎ　ｃｏｎｔｒｏｌ　ｌｉｇｈｔｎｉｎｇ．@KEY()↓
-◆Ｉｎ　ｔｈａｔ　ｃａｓｅ，@WI(15)　ｙｏｕ　ｓｈｏｕｌｄ　ｗｅａｒ　ｔｈｉｓ　@DSP_GOODS(GDS_HAVE_FRANKLIN_BADGE)，　ｏｋａｙ？
+◆You can’t open the door.@KEY()↓
+◆You’ll have to get the key from Carpainter.  He’s got it hidden away.@KEY()↓
+◆I heard Carpainter can control lightning.@KEY()↓
+◆In that case,@WI(15) you should wear this @DSP_GOODS(GDS_HAVE_FRANKLIN_BADGE), okay?
 ;◆ここのカギをもった↓;こちらに変更したいけど複雑
-;　わるいひとが↓
-;　さっき　あわててでていったわ。@KEY()↓
-;◆まだ　そのへんに↓
-;　いるかもしれない。@WI(20)↓
-;　きをつけて！@KEYNP()
+; わるいひとが↓
+; さっき あわててでていったわ。@KEY()↓
+;◆まだ そのへんに↓
+; いるかもしれない。@WI(20)↓
+; きをつけて!@KEYNP()
 ;』
 ;jpn:◆ここのカギは↓
-;jpn:　いまの　わたしたちじゃ↓
-;jpn:　あけられないわ。@KEY()↓
+;jpn: いまの わたしたちじゃ↓
+;jpn: あけられないわ。@KEY()↓
 ;jpn:◆カーペインターが↓
-;jpn:　かくしもっているカギを↓
-;jpn:　とってこないと‥‥。@KEY()↓
-;jpn:◆でも　カーペインターは↓
-;jpn:　カミナリを　あやつるらしいの。@KEY()↓
+;jpn: かくしもっているカギを↓
+;jpn: とってこないと‥‥。@KEY()↓
+;jpn:◆でも カーペインターは↓
+;jpn: カミナリを あやつるらしいの。@KEY()↓
 ;jpn:◆このフランクリンバッジを↓
-;jpn:　つけていくと　いいわ。@KEY()↓
+;jpn: つけていくと いいわ。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_GRFD_POLA_ITEMFULL)
 @GOODSIN_PLAYER(0,GDS_HAVE_FRANKLIN_BADGE)
@@ -71,90 +71,90 @@ _GRFD_POLA_TMP;
 @SETF(FLG_GRFD_POKEY_APPEAR)
 @CLRF(FLG_ONET_POLA_TELEPATHY);ポーラに会ったらテレパシーは聞けない
 @CLRF(FLG_TWSN_POLA_TELEPATHY)
-◆Ｉ’ｌｌ　ｗａｉｔ　ｈｅｒｅ　ｕｎｔｉｌ　ｙｏｕ　ｒｅｔｕｒｎ．@KEY()↓
-◆Ｃｏｍｅ　ｂａｃｋ　ｈｅｒｅ　ａｎｄ　ｇｅｔ　ｍｅ　ｏｕｔ　ｏｎｃｅ　ｙｏｕ　ｄｅｆｅａｔ　Ｃａｒｐａｉｎｔｅｒ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｗｏｒｒｙ　ａｂｏｕｔ　ｍｅ，　ｊｕｓｔ　ｋｉｃｋ　ｂｕｔｔ　ｌｉｋｅ　Ｉ　ｋｎｏｗ　ｙｏｕ　ｃａｎ！
+◆I’ll wait here until you return.@KEY()↓
+◆Come back here and get me out once you defeat Carpainter.@KEY()↓
+◆Don’t worry about me, just kick butt like I know you can!
 @KEYNP()
-;jpn:◆わたし　ここでまってるから@KEY()↓
-;jpn:◆きっと　あいつをたおして↓
-;jpn:　むかえにきてね。@KEY()↓
-;jpn:◆わたし　いつまでだって↓
-;jpn:　まっていられるわ。@KEY()↓
+;jpn:◆わたし ここでまってるから@KEY()↓
+;jpn:◆きっと あいつをたおして↓
+;jpn: むかえにきてね。@KEY()↓
+;jpn:◆わたし いつまでだって↓
+;jpn: まっていられるわ。@KEY()↓
 ;jpn:◆あなたのちから↓
-;jpn:　しんじているもの。@KEY()↓
+;jpn: しんじているもの。@KEY()↓
 ;jpn:◆しんぱいしないで↓
-;jpn:　がんばってね。@KEYNP()
+;jpn: がんばってね。@KEYNP()
 @SETF( FLG_SYS_MONSTER_OFF )	;モンスター出現禁止
 @FUNC(5)			;マップ上での全滅禁止
 』
 
 _GRFD_POLA_ITEMFULL;
 @SE(SE_se05_undo)
-◆Ｗｈａｔ−−@WI(15)ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｅｔ　ｆｒｉｅｄ　ｂｙ　ｌｉｇｈｔｎｉｎｇ？@KEY()↓
-◆Ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ　ｓｏ　Ｉ　ｃａｎ　ｇｉｖｅ　ｙｏｕ　ｔｈｅ　@DSP_GOODS(GDS_HAVE_FRANKLIN_BADGE)．
+◆What−−@WI(15)do you want to get fried by lightning?@KEY()↓
+◆Get rid of something so I can give you the @DSP_GOODS(GDS_HAVE_FRANKLIN_BADGE).
 @KEYNP()↓
-;jpn:◆もちものが　いっぱいで↓
-;jpn:　「フランクリンバッジ」を↓
-;jpn:　もてないのね。@KEY()↓
-;jpn:◆なにか　うるか　つかうかして↓
-;jpn:　もちものを　へらしてくると↓
-;jpn:　いいとおもう。@KEYNP()
+;jpn:◆もちものが いっぱいで↓
+;jpn: 「フランクリンバッジ」を↓
+;jpn: もてないのね。@KEY()↓
+;jpn:◆なにか うるか つかうかして↓
+;jpn: もちものを へらしてくると↓
+;jpn: いいとおもう。@KEYNP()
 @SETF(FLG_TEMP_9)
 』
 
 _GRFD_POLA_1;
-◆Ｉｆ　ｙｏｕ　ｄｉｄｎ’ｔ　ｃｏｍｅ，@WI(15)　Ｉ　ｗｏｕｌｄ　ｈａｖｅ　ｈａｄ　ｔｏ　ｔｒｙ　ｔｏ　ｂｕｓｔ　ｏｕｔ　ｏｆ　ｈｅｒｅ．@KEY()↓
-;jpn:◆あなたが　きてくれなかったら@WI(20)↓
-;jpn:　わたし‥‥@WI(60)↓
-;jpn:　なきだしちゃうところだった。@KEY()↓
+◆If you didn’t come,@WI(15) I would have had to try to bust out of here.@KEY()↓
+;jpn:◆あなたが きてくれなかったら@WI(20)↓
+;jpn: わたし‥‥@WI(60)↓
+;jpn: なきだしちゃうところだった。@KEY()↓
 ;jpn:◆‥‥‥。@KEYNP()
 ;
-;◆Ｔｈｅｒｅ　ｗａｓ　ａ　ｂａｄ　ｌｏｏｋｉｎｇ　ｐｅｒｓｏｎ
-;　　ｒｕｓｈｉｎｇ　ｏｕｔ　ｏｆ　ｈｅｒｅ　ｗｉｔｈ　
-;　　ａ　ｋｅｙ　ｏｆ　ｔｈｉｓ　ｒｏｏｍ．
-;◆Ｈｅ　ｍｉｇｈｔ　ｂｅ　ｓｔｉｌｌ　ａｒｏｕｎｄ　ｈｅｒｅ．
-;　　Ｂｅ　ｃａｒｅｆｕｌ！
+;◆There was a bad looking person
+;  rushing out of here with 
+;  a key of this room.
+;◆He might be still around here.
+;  Be careful!
 
 ;◆ここのカギをもった↓
-;　わるいひとが↓
-;　さっき　あわててでていったわ。@KEY()↓
-;◆まだ　そのへんに↓
-;　いるかもしれない。@WI(20)↓
-;　きをつけて！@KEYNP()
+; わるいひとが↓
+; さっき あわててでていったわ。@KEY()↓
+;◆まだ そのへんに↓
+; いるかもしれない。@WI(20)↓
+; きをつけて!@KEYNP()
 』
 
 _GRFD_POLA_LATER;
-;◆@DSP_STS(STS_PC_NAME_NES)！
+;◆@DSP_STS(STS_PC_NAME_NES)!
 ;
 ;◆@DSP_STS(STS_PC_NAME_NES)↓
-;jpn:　カギを　とってきてくれたのね！@KEY()↓
+;jpn: カギを とってきてくれたのね!@KEY()↓
 _GRFD_POLA_LATER_TMP;
-◆@DSP_NAME(PC_NESS)！　　Ｙｏｕ　ｇｏｔ　ｔｈｅ　ｋｅｙ！@KEY()↓
-◆Ａｒｅ　ｙｏｕ　ｈｕｒｔ？↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆けがは　ない？@WI(20)↓
-;jpn:　だいじょうぶ？↓
-;jpn:　　<はい>　　<いいえ>
+◆@DSP_NAME(PC_NESS)!  You got the key!@KEY()↓
+◆Are you hurt?↓
+<Yes> <No>
+;jpn:◆けがは ない?@WI(20)↓
+;jpn: だいじょうぶ?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_GRFD_POLA_LATER_YES,_GRFD_POLA_LATER_NO)
 
 _GRFD_POLA_LATER_NO;
 _GRFD_POLA_LATER_YES;
-◆Ｉ’ｍ　ｓｏｒｒｙ　ｆｏｒ　ａｌｌ　ｔｈｅ　ｔｒｏｕｂｌｅ　Ｉ’ｖｅ　ｃａｕｓｅｄ　ｙｏｕ．
+◆I’m sorry for all the trouble I’ve caused you.
 @KEYNP()
 ;jpn:◆わたしのために‥‥↓
-;jpn:　ごめんなさい。@KEYNP()
+;jpn: ごめんなさい。@KEYNP()
 』
-;◆Ｇｒｅａｔ！
-;◆Ｉ’ｖｅ　ｂｅｅｎ　ｂｅｌｉｅｖｉｎｇ　ｙｏｕ．
-;◆Ｓｏ，　ｌｅｔ　ｍｅ　ｏｕｔ　ｏｆ　ｈｅｒｅ　ｑｕｉｃｋｌｙ！
-;◆やったー！@WI(15)↓
-;　わたし　しんじてたわ。@WI(15)↓
-;　はやくここから　だして！@KEYNP()
+;◆Great!
+;◆I’ve been believing you.
+;◆So, let me out of here quickly!
+;◆やったー!@WI(15)↓
+; わたし しんじてたわ。@WI(15)↓
+; はやくここから だして!@KEYNP()
 ;』
 
 
-;@Habitat:Ｇデッド谷／谷の小屋／牢や
+;@Habitat:Gデッド谷／谷の小屋／牢や
 ;@Person:ポーラ
 ;@Figure:ポーラ
 ;@AppearanceKey:MSG_POLA_GRFD/off
@@ -164,13 +164,13 @@ _GRFD_POLA_LATER_YES;
 ;@Message:MSG_GRFD_POLA_LATER_USEKEY
 ;MSG_GRFD_POLA_LATER_USEKEY;
 ;牢内のポーラ
-;◆Ｉ’ｍ　ｓｏ　ｈａｐｐｙ！
-;◆Ｙｏｕ’ｒｅ　ｓｏｍｅｏｎｅ　ａｓ　Ｉ　ｅｘｐｅｃｔｅｄ．
-;◆Ｌｅｔ’ｓ　ｒｅｔｕｒｎ　ｔｏ　Ｔｗｏｓｏｎ．
-;◆うれしいっ！@WI(15)↓
-;　わたしの　おもったとおりの↓
-;　ひとだった。@KEY()↓
-;◆さぁ　ツーソンに　もどりましょ。@KEY()
+;◆I’m so happy!
+;◆You’re someone as I expected.
+;◆Let’s return to Twoson.
+;◆うれしいっ!@WI(15)↓
+; わたしの おもったとおりの↓
+; ひとだった。@KEY()↓
+;◆さぁ ツーソンに もどりましょ。@KEY()
 ;@SETF(FLG_POLA_GRFD)
 ;@SE(SE_se10_present_open)
 ;@GOSUB(MSG_ADD_PAULA)
@@ -179,7 +179,7 @@ _GRFD_POLA_LATER_YES;
 
 ；----------------------------------------
 
-;@Habitat:Ｇデッド谷／フィールド／谷の小屋の前
+;@Habitat:Gデッド谷／フィールド／谷の小屋の前
 ;@Person:ポーキー
 ;@Figure:ポーキー
 ;@AppearanceKey:FLG_GRFD_POKEY_APPEAR/on
@@ -188,8 +188,8 @@ _GRFD_POLA_LATER_YES;
 ;@CheckMessage:0
 ;@Message:MSG_GRFD_POKEY
 
-;@Habitat:Ｇデッド谷／フィールド／谷の小屋の前
-;@Person:ポーキー子分Ａ
+;@Habitat:Gデッド谷／フィールド／谷の小屋の前
+;@Person:ポーキー子分A
 ;@Figure:HH教信者
 ;@AppearanceKey:FLG_GRFD_POKEY_APPEAR/on
 ;@ActionScript:◆ポーキーの合図でネスにケンカ売る
@@ -197,8 +197,8 @@ _GRFD_POLA_LATER_YES;
 ;@CheckMessage:0
 ;@Message:0
 
-;@Habitat:Ｇデッド谷／フィールド／谷の小屋の前
-;@Person:ポーキー子分Ｂ
+;@Habitat:Gデッド谷／フィールド／谷の小屋の前
+;@Person:ポーキー子分B
 ;@Figure:HH教信者
 ;@AppearanceKey:FLG_GRFD_POKEY_APPEAR/on
 ;@ActionScript:◆ポーキーの合図でネスにケンカ売る
@@ -211,24 +211,24 @@ _GRFD_POLA_LATER_YES;
 MSG_GRFD_SIGNPOST_A;
 ;ポーキーがセットした偽標識
 ;フランクリンバッジを手に入れた後は消滅する
-◆（Ｃｒｏｓｓ　ｂｒｉｄｇｅ　ｔｏ　Ｈａｐｐｙ−Ｈａｐｐｙ　Ｖｉｌｌａｇｅ）
+◆(Cross bridge to Happy−Happy Village)
 @KEYNP()
-;jpn:◆（ハッピーハッピーむらへ↓
-;jpn:　おいでのかたは　このはしを↓
-;jpn:　わたってください）@KEYNP()
+;jpn:◆(ハッピーハッピーむらへ↓
+;jpn: おいでのかたは このはしを↓
+;jpn: わたってください)@KEYNP()
 
-;◆Ｌｅｆｔ
-;　　Ｓｈｏｒｔ　ｃｕｔ．
-;◆（Ｉｔ　ａｐｐｅａｒｓ　ｔｏ　ｂｅ
-;　　ｖｅｒｙ　ｂａｄ　ｈａｎｄ　ｗｒｉｔｉｎｇ．）
+;◆Left
+;  Short cut.
+;◆(It appears to be
+;  very bad hand writing.)
 
 ;◆ひだり↓
-;　ちかみちでございませ。@KEY()↓
-;◆（なにやら　ずいぶん↓
-;　　ヘタクソな　もじだ）@KEYNP()
+; ちかみちでございませ。@KEY()↓
+;◆(なにやら ずいぶん↓
+;  ヘタクソな もじだ)@KEYNP()
 』
 
-;@Habitat:Ｇデッド谷／リリパットステップのダンジョン／大広間
+;@Habitat:Gデッド谷／リリパットステップのダンジョン／大広間
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_LLPT_BOSS/off
@@ -242,14 +242,14 @@ MSG_GRFD_LLPT_BOSS;
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(MSG_GLOBAL_BOSS_NG);ネス死んでたらダメ
 @BGMSTART(0,BGM_msc24);ボスのセリフ曲
-◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｇｏｔ　ｈｅｒｅ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｓｅｃｏｎｄ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ”　ｌｏｃａｔｉｏｎ．@WI(20)　　Ｂｕｔ　ｉｔ’ｓ　ｍｉｎｅ　ｎｏｗ．@KEY()↓
-◆Ｔａｋｅ　ｉｔ　ｆｒｏｍ　ｍｅ，@WI(30)　ｉｆ　ｙｏｕ　ｄａｒｅ．．．
+◆You finally got here.@KEY()↓
+◆This is the second ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
+◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは　２ばんめの↓
+;jpn:◆ここは ２ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
-;jpn:◆しかし　いまは↓
-;jpn:　わたしのばしょだ。@KEY()↓
+;jpn:◆しかし いまは↓
+;jpn: わたしのばしょだ。@KEY()↓
 ;jpn:◆うばいかえせばよい。@KEY()↓
 ;jpn:◆‥‥できるものなら。
 @KEY()
@@ -266,62 +266,62 @@ MSG_GRFD_KINOKO_GIRL;
 ;---------------------------------------------------
 
 MSG_GRFD_SHINTO_A;壊れた橋の信者
-◆Ｉ　ｗｏｎｄｅｒ　ｗｈｏ　ｍａｄｅ　ｔｈｅ　ｂｒｉｄｇｅ　ｉｍｐａｓｓａｂｌｅ？@KEY()↓
-◆Ｗｈｙ　ｗｏｕｌｄ　ｓｏｍｅｏｎｅ　ｄｏ　ｔｈｉｓ？@WI(15)　　Ｃｒｕｄ．．．
+◆I wonder who made the bridge impassable?@KEY()↓
+◆Why would someone do this?@WI(15)  Crud...
 @KEYNP()
-;jpn:◆だれかが　はしを↓
-;jpn:　とおれなくしちまったんだよぅ。@KEY()↓
-;jpn:◆どーして　こんなことを↓
-;jpn:　するんだろう‥‥まったく。@KEYNP()
+;jpn:◆だれかが はしを↓
+;jpn: とおれなくしちまったんだよぅ。@KEY()↓
+;jpn:◆どーして こんなことを↓
+;jpn: するんだろう‥‥まったく。@KEYNP()
 』
 ;---------------------------------------------------
 
 MSG_GRFD_SYSMSG_GUTS;＄β
-◆（Ｉ’ｍ　ｎｏｔ　ａｎ　ｅｎｅｍｙ．@KEY()↓
-◆Ｉ’ｍ　ｊｕｓｔ　ａ　ｒｅｇｕｌａｒ　ｍｏｌｅ．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｋｎｏｗ　ａｂｏｕｔ　ｈｏｗ　ｔｏ　ｓｕｒｖｉｖｅ　ｂａｔｔｌｅｓ．）@KEY()↓
-<Ｙｅｓ>　<Ｎｏ>
-;jpn:◆（おれは　てきじゃない。↓
-;jpn:　ただの　もぐらさ。@KEY()↓
+◆(I’m not an enemy.@KEY()↓
+◆I’m just a regular mole.@KEY()↓
+◆Would you like to know about how to survive battles.)@KEY()↓
+<Yes> <No>
+;jpn:◆(おれは てきじゃない。↓
+;jpn: ただの もぐらさ。@KEY()↓
 ;jpn:◆「ガッツ」について↓
-;jpn:　おれのしってることを↓
-;jpn:　ぜんぶ　はなそうか？）@KEY()↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: おれのしってることを↓
+;jpn: ぜんぶ はなそうか?)@KEY()↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_GRFD_SYSMSG_GUTS_YES,_GRFD_SYSMSG_GUTS_NO)
 _GRFD_SYSMSG_GUTS_NO;
-◆（Ｗｅｌｌ，　ｙｏｕ　ｓｅｅｍ　ｔｏ　ｋｎｏｗ　ａ　ｌｏｔ　ａｌｒｅａｄｙ，　ｅｖｅｎ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｌｏｏｋ　ｌｉｋｅ　ｉｔ．）
+◆(Well, you seem to know a lot already, even if you don’t look like it.)
 @KEYNP()
-;jpn:◆（おまえって　いがいと↓
-;jpn:　ガッツありそうだもんな）@KEYNP()
+;jpn:◆(おまえって いがいと↓
+;jpn: ガッツありそうだもんな)@KEYNP()
 』
 _GRFD_SYSMSG_GUTS_YES;
-◆（Ｙｏｕ　ｍａｙ　ｈａｖｅ　ｎｏｔｉｃｅｄ　ｔｈａｔ，　ｗｈｅｎ　ｙｏｕ　ｈａｖｅ　ｂｅｅｎ　ｂａｄｌｙ　ｈｕｒｔ　ｉｎ　ｂａｔｔｌｅ，@KEY()↓
-◆ｙｏｕ　ｍａｙ　ｓｕｒｖｉｖｅ　ａ　ｍｏｒｔａｌ　ａｔｔａｃｋ　ａｎｄ　ｓｔｉｌｌ　ｈａｖｅ　１　ＨＰ．　　Ｉｆ　ｔｈｉｓ　ｈａｓ　ｈａｐｐｅｎｅｄ，@KEY()↓
-◆ｉｔ　ｗａｓ　ｂｅｃａｕｓｅ　ｏｆ　ｙｏｕｒ　Ｇｕｔｓ．　　Ｙｏｕｒ　ｓｕｒｖｉｖａｌ　ｍａｙ　ｄｅｐｅｎｄ　ｏｎ　ｙｏｕｒ　Ｇｕｔｓ　ｌｅｖｅｌ．@KEY()↓
-◆Ａｌｓｏ，　ｍｏｒｅ　Ｇｕｔｓ　ｈｅｌｐｓ　ｙｏｕ　ｇｅｔ　ｍｏｒｅ　ＳＭＡＡＡＡＡＳＨｉｎｇ　ｈｉｔｓ．@KEY()↓
-◆Ｂｅｙｏｎｄ　Ｇｕｔｓ，　ｙｏｕ　ｓｈｏｕｌｄ　ｈａｖｅ　ｎｏｔｉｃｅｄ　ｔｈａｔ　ｉｔ　ｔａｋｅｓ　ｓｏｍｅ　ｔｉｍｅ@KEY()↓
-◆ｆｏｒ　ｄａｍａｇｅ　ｔｏ　ｂｅ　ｔａｋｅｎ　ｆｒｏｍ　ｙｏｕ．
-◆Ｔｈｉｓ　ｉｓ　ｂｅｃａｕｓｅ　ｏｆ　ｔｈｅ　ｒｏｌｌｉｎｇ　ａｃｔｉｏｎ　ｏｆ　ｙｏｕｒ　ＨＰ　ｍｅｔｅｒ．　　Ｏｏｐｓ！　Ｉ　ｍｅａｎ　ｙｏｕｒ　ｌｉｆｅ．
-◆Ｉｆ　ａｎ　ｅｎｅｍｙ　ｄｅａｌｓ　ｍｏｒｔａｌ　ｄａｍａｇｅ　ｔｏ　ｙｏｕ，　ｂｕｔ　ｙｏｕ　ｄｅｆｅａｔ　ａｌｌ　ｅｎｅｍｉｅｓ@KEY()↓
-◆ｂｅｆｏｒｅ　ｙｏｕｒ　ｌｉｆｅ　ｉｓ　ｇｏｎｅ，　ｙｏｕ　ｓｕｒｖｉｖｅ．　　Ｔｈｉｓ　ｉｓ　ａｌｌ　Ｉ　ｋｎｏｗ．）
+◆(You may have noticed that, when you have been badly hurt in battle,@KEY()↓
+◆you may survive a mortal attack and still have １ HP.  If this has happened,@KEY()↓
+◆it was because of your Guts.  Your survival may depend on your Guts level.@KEY()↓
+◆Also, more Guts helps you get more SMAAAAASHing hits.@KEY()↓
+◆Beyond Guts, you should have noticed that it takes some time@KEY()↓
+◆for damage to be taken from you.
+◆This is because of the rolling action of your HP meter.  Oops! I mean your life.
+◆If an enemy deals mortal damage to you, but you defeat all enemies@KEY()↓
+◆before your life is gone, you survive.  This is all I know.)
 @KEYNP()
-;jpn:◆（たたかいのなかで↓
-;jpn:　きぜつするほどの↓
-;jpn:　ダメージをうけたはずなのに@KEY()↓
+;jpn:◆(たたかいのなかで↓
+;jpn: きぜつするほどの↓
+;jpn: ダメージをうけたはずなのに@KEY()↓
 ;jpn:◆たいりょくが「１」で↓
-;jpn:　ふみとどまった　‥‥なんて↓
-;jpn:　けいけん　あるかい？@KEY()↓
-;jpn:◆もし　あったとしたら↓
-;jpn:　それは　おまえの「ガッツ」が↓
-;jpn:　すごかったからだよ。@KEY()↓
+;jpn: ふみとどまった ‥‥なんて↓
+;jpn: けいけん あるかい?@KEY()↓
+;jpn:◆もし あったとしたら↓
+;jpn: それは おまえの「ガッツ」が↓
+;jpn: すごかったからだよ。@KEY()↓
 ;jpn:◆どたんばで↓
-;jpn:　ふんばりがきくかどうか。↓
-;jpn:　それは「ガッツ」しだいってこと。@KEY()↓
-;jpn:◆それとね　「ガッツ」が↓
-;jpn:　たくさんあるやつは‥‥@KEY()↓
-;◆@WI(20)ＳＭＡＡＡＡＡＳＨ！！↓
-;jpn:　@WI(30)‥‥が　でやすくなるんだ。@KEY()↓
-;jpn:◆しってることは　それだけさ）@KEYNP()
+;jpn: ふんばりがきくかどうか。↓
+;jpn: それは「ガッツ」しだいってこと。@KEY()↓
+;jpn:◆それとね 「ガッツ」が↓
+;jpn: たくさんあるやつは‥‥@KEY()↓
+;◆@WI(20)SMAAAAASH!!↓
+;jpn: @WI(30)‥‥が でやすくなるんだ。@KEY()↓
+;jpn:◆しってることは それだけさ)@KEYNP()
 』
 ;---------------------------------------------------

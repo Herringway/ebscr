@@ -5,26 +5,26 @@
 MSG_INSEKI_CHECK;marcus
 @CHKFGOTO(FLG_ITEM_XYZ,_INSEKI_CHECK_AFTER)
 @CHKFGOTO(FLG_INFO_XYZ,_INSEKI_CHECK_LATER)
-;◆（おおきな　いんせきが↓;＄
-;　おちた　あと　らしい。@KEY()↓
-◆（Ｃａｕｔｉｏｎ！@WI(20)　　Ｔｈｅｒｅ　ａｒｅ　ｓｔｉｌｌ　ｌｏｔｓ　ｏｆ　ｆｉｒｅｓ　ｂｕｒｎｉｎｇ　ｈｅｒｅ　ａｎｄ　ｔｈｅｒｅ．@KEY()↓
-◆Ｉｔ’ｓ　ＨＯＴ！）
-;jpn:◆（まだ　あちこちで↓
-;jpn:　ほのおが　もえている。@KEY()↓
-;jpn:◆あつい！）
+;◆(おおきな いんせきが↓;＄
+; おちた あと らしい。@KEY()↓
+◆(Caution!@WI(20)  There are still lots of fires burning here and there.@KEY()↓
+◆It’s HOT!)
+;jpn:◆(まだ あちこちで↓
+;jpn: ほのおが もえている。@KEY()↓
+;jpn:◆あつい!)
 @KEYNP()
 』
 
 _INSEKI_CHECK_LATER;marcus
-◆Ｔｈｅｒｅ　ｉｓ　ｓｏｍｅｔｈｉｎｇ　ｓｈｉｎｙ　ｔｈａｔ　ｙｏｕ　ｃａｎ　ｒｅａｃｈ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｔｒｙ　ａｎｄ　ｇｅｔ　ｉｔ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆There is something shiny that you can reach.@KEY()↓
+◆Do you want to try and get it?↓
+<Yes>
+<No>
 
-;jpn:◆ての　とどきそうなところに↓
-;jpn:　キラキラ　ひかるものがある。@KEY()↓
-;jpn:◆とりますか？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆ての とどきそうなところに↓
+;jpn: キラキラ ひかるものがある。@KEY()↓
+;jpn:◆とりますか?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_INSEKI_CHECK_LATER_YES,_INSEKI_CHECK_LATER_NO)
 
@@ -43,15 +43,15 @@ _INSEKI_CHECK_LATER_YES;
 』
 
 _INSEKI_CHECK_ITEMFULL;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｒｅ　ｓｐａｃｅ．
-;jpn:◆にもつが　いっぱいです。
+◆You don’t have any more space.
+;jpn:◆にもつが いっぱいです。
 @KEYNP()
 』
 
 _INSEKI_CHECK_AFTER;@MiuraAdapted
-◆（Ｓｅｅｍｓ　ｌｉｋｅ　ａ　ｂｉｇ　ｍｅｔｅｏｒｉｔｅ　ｌａｎｄｅｄ　ｈｅｒｅ　ｎｏｔ　ｔｏｏ　ｌｏｎｇ　ａｇｏ．）
-;jpn:◆（おおきな　いんせきが↓
-;jpn:　おちた　あと　らしい）
+◆(Seems like a big meteorite landed here not too long ago.)
+;jpn:◆(おおきな いんせきが↓
+;jpn: おちた あと らしい)
 @KEYNP()
 』
 
@@ -59,120 +59,120 @@ _INSEKI_CHECK_AFTER;@MiuraAdapted
 ;-------------------------------------------------
 
 MSG_ONET_KANBAN_1;marcus
-◆Ｅｖｅｎ　ｉｆ　ｙｏｕ’ｒｅ　ｐｏｏｒ，　ｃｏｍｅ　ａｎｄ　ｓｅｅ　ｈｏｗ　ｅａｓｙ　ｉｔ　ｉｓ　ｔｏ　ｏｗｎ　ａ　ｌｕｘｕｒｉｏｕｓ　ｓｅｃｏｎｄ　ｈｏｍｅ！@KEY()↓
-◆”Ｂｅａｋ　Ｐｏｉｎｔ　Ｒｅａｌ　Ｅｓｔａｔｅ”
+◆Even if you’re poor, come and see how easy it is to own a luxurious second home!@KEY()↓
+◆”Beak Point Real Estate”
 ;jpn:◆プアなあなたも↓
-;jpn:　リッチな　セカンドハウスを！↓
-;jpn:　「くちばしみさき　ふどうさん」
+;jpn: リッチな セカンドハウスを!↓
+;jpn: 「くちばしみさき ふどうさん」
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_2;marcus
-◆”Ｂｕｓｈ　Ｈｏｓｐｉｔａｌ”@KEY()↓
-◆Ｔｈｅ　ｂｅｓｔ　ｈｏｓｐｉｔａｌ　ｃａｒｅ　ｉｎ　Ｏｎｅｔｔ！@WI(15)　　Ｗｅ　ｐｕｔ　ｏｕｒ　ｌｉｆｅ　ｉｎｔｏ　ｏｐｅｒａｔｉｎｇ　ｏｎ　ｙｏｕ！
+◆”Bush Hospital”@KEY()↓
+◆The best hospital care in Onett!@WI(15)  We put our life into operating on you!
 ;jpn:◆「ブッシュ・ホスピタル」↓
-;jpn:　オネットでいちばんのうでまえ！↓
-;jpn:　いのちをかけて　しゅじゅつする。
+;jpn: オネットでいちばんのうでまえ!↓
+;jpn: いのちをかけて しゅじゅつする。
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_4;marcus
-◆（Ｔｈｅ　ｆｌｏｗｅｒｓ　ｉｎ　ｔｈｅ　ｇａｒｄｅｎ　ａｒｅ　ｒｅｓｐｒｅｓｅｎｔａｔｉｖｅ　ｏｆ　ｔｈｏｓｅ　ｉｎ　ｙｏｕｒ　ｈｅａｒｔ．@KEY()↓
-◆Ｔｒｅａｔ　ｔｈｅｍ　ｂｏｔｈ　ｎｉｃｅ．）
-;jpn:◆（かだんの　はなは↓
-;jpn:　みんなの　こころにさいてます。@WI(20)↓
-;jpn:　たいせつにしましょう）
+◆(The flowers in the garden are respresentative of those in your heart.@KEY()↓
+◆Treat them both nice.)
+;jpn:◆(かだんの はなは↓
+;jpn: みんなの こころにさいてます。@WI(20)↓
+;jpn: たいせつにしましょう)
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_6;marcus
-◆Ｔｒａｖｅｌｉｎｇ　ｅｎｔｅｒｔａｉｎｅｒ’ｓ　ｓｈａｃｋ．
-;jpn:◆たびげいにんの　こや。
+◆Traveling entertainer’s shack.
+;jpn:◆たびげいにんの こや。
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_8;marcus
-◆”Ｇｉａｎｔ　Ｓｔｅｐ”@KEY()↓
-◆Ｎｏｒｔｈ，　ａｔ　ｔｈｅ　ｔｏｐ　ｏｆ　ｔｈｅ　ｍｏｕｎｔａｉｎ↓
-　　Ｄａｎｇｅｒ！　　Ｄｏ　Ｎｏｔ　Ｅｎｔｅｒ！
-;jpn:◆この　きたのやまのうえ↓
-;jpn:　「ジャイアントステップ」↓
-;jpn:　きけん　たちいりをきんしする。
+◆”Giant Step”@KEY()↓
+◆North, at the top of the mountain↓
+  Danger!  Do Not Enter!
+;jpn:◆この きたのやまのうえ↓
+;jpn: 「ジャイアントステップ」↓
+;jpn: きけん たちいりをきんしする。
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_9;
-◆Ｏｎｅｔｔ　Ｃｉｔｙ　Ｈａｌｌ
+◆Onett City Hall
 ;jpn:◆オネットしやくしょ
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_10;marcus
-◆Ｒｏａｄ　ｔｏ　Ｔｗｏｓｏｎ．
-;jpn:◆このみち　ツーソンに　つづく。
+◆Road to Twoson.
+;jpn:◆このみち ツーソンに つづく。
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_11;
-◆Ｍｏｍ’ｓ　ｒｅａｌｌｙ　ｃｏｏｋｉｎｇ　ｎｏｗ．
-　　”Ｄｏｗｎ　Ｈｏｍｅ　Ｂｕｒｇｅｒｓ”
-;jpn:◆おふくろの　あじ。↓
-;jpn:　（おふくろって　ウシか？）↓
-;jpn:　「ママメイド・ハンバーガー」
+◆Mom’s really cooking now.
+  ”Down Home Burgers”
+;jpn:◆おふくろの あじ。↓
+;jpn: (おふくろって ウシか?)↓
+;jpn: 「ママメイド・ハンバーガー」
 @KEYNP()
 』
 ;◆オネットのみなみから↓
-;　おいしい　かおり。↓
-;　「スマイルベーカリー」@KEYNP()
+; おいしい かおり。↓
+; 「スマイルベーカリー」@KEYNP()
 ;』
 
 ;-------------------------------
 
 MSG_ONET_KANBAN_13;marcus
-◆Ｂｒｅａｋ　ｔｈｅ　ｃｏｕｒｓｅ　ｏｆ　ｖｉｏｌｅｎｃｅ．　　Ｄｏｎ’ｔ　ｂｒｅａｋ　ｔｈｅ　ｗｉｎｄ　ｏｆ　ｃｈａｎｇｅ．@KEY()↓
-◆”Ｆｒｅｓｈ　Ｂｒｅｅｚｅ　Ｍｏｖｅｍｅｎｔ”
+◆Break the course of violence.  Don’t break the wind of change.@KEY()↓
+◆”Fresh Breeze Movement”
 ;DAN:I forgot how I translated the name of this group.  Sorry!!
-;jpn:◆こきゅうを　とめるな↓
-;jpn:　けんかを　とめろ。↓
-;jpn:　「そよかぜうんどうの　かい」
+;jpn:◆こきゅうを とめるな↓
+;jpn: けんかを とめろ。↓
+;jpn: 「そよかぜうんどうの かい」
 @KEYNP()
 』
-;◆こどもたちを　よいこにするために↓
-;　たまりばを　ぶっつぶそう！↓
-;　「そよかぜうんどうの　かい」@KEYNP()
+;◆こどもたちを よいこにするために↓
+; たまりばを ぶっつぶそう!↓
+; 「そよかぜうんどうの かい」@KEYNP()
 ;』
 
 
 MSG_ONET_KANBAN_14;
-◆”Ｏｎｅｔｔ　Ｐｕｂｌｉｃ　Ｌｉｂｒａｒｙ”@WI(20)↓
-　　Ｕｓｅ　ｔｈｅ　ｌｉｂｒａｒｙ　ｍｏｒｅ！
+◆”Onett Public Library”@WI(20)↓
+  Use the library more!
 ;jpn:◆「オネットしりつとしょかん」@WI(20)↓
-;jpn:　　　としょかんを　もっと↓
-;jpn:　　　　　　　　　りようしよう。
+;jpn:   としょかんを もっと↓
+;jpn:         りようしよう。
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_17;
-◆Ｓｏｕｔｈ　ｔｏ　ｔｈｅ　ｓｕｂｕｒｂｓ　ｏｆ　Ｏｎｅｔｔ．
-;jpn:◆みなみ　オネットしがい。
+◆South to the suburbs of Onett.
+;jpn:◆みなみ オネットしがい。
 @KEYNP()
 』
 
 
 MSG_ONET_KANBAN_18;
-◆Ｄｏｎ’ｔ　ｗａｎｄｅｒ　ｔｈｉｓ　ｆａｒ　ａｗａｙ　ｆｒｏｍ　ｔｏｗｎ．↓
-　　”Ｆｒｅｓｈ　Ｂｒｅｅｚｅ　Ｍｏｖｅｍｅｎｔ”
-;jpn:◆こんな　まちはずれまで↓
-;jpn:　あそびにくるのは　やめよう。↓
-;jpn:　「そよかぜうんどうの　かい」
+◆Don’t wander this far away from town.↓
+  ”Fresh Breeze Movement”
+;jpn:◆こんな まちはずれまで↓
+;jpn: あそびにくるのは やめよう。↓
+;jpn: 「そよかぜうんどうの かい」
 @KEYNP()
 』
 
@@ -181,119 +181,119 @@ MSG_ONET_KANBAN_18;
 
 ;MSG_HAPPY_MUZIN_SHOP;
 ;@OPEN(1)
-;◆（ＨＨむらのの↓
-;　　いえその１のとびらの↓
-;　　メッセージです）@KEYNP()
+;◆(HHむらのの↓
+;  いえその１のとびらの↓
+;  メッセージです)@KEYNP()
 ;@CLOSE()
 ;@!
 
 MSG_HAPPY_SIGN1;
-◆Ｗｅｌｃｏｍｅ　ｔｏ　Ｈａｐｐｙ　ｈａｐｐｙ　Ｖｉｌｌａｇｅ！
+◆Welcome to Happy happy Village!
 ;jpn:◆ようこそ↓
-;jpn:　ハッピーハッピーむらへ！
+;jpn: ハッピーハッピーむらへ!
 @KEYNP()
 』
 
 MSG_HAPPY_SIGN2;marcus
-◆”Ｍｅａｇｅｒ　Ｌｉｖｉｎ’　Ｆａｒｍ”↓
-　　（Ｌｏｄｇｉｎｇｓ　ａｖａｉｌａｂｌｅ）
+◆”Meager Livin’ Farm”↓
+  (Lodgings available)
 ;jpn:◆「セマイケンドぼくじょう」@WI(20)↓
-;jpn:　（しゅくはくも　できます）
+;jpn: (しゅくはくも できます)
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_TWSN_SIGN3;marcus
-◆”Ｅｎｔｒａｎｃｅ　ｔｏ　Ｂｕｒｇｌｉｎ　Ｐａｒｋ”@KEY()↓
-◆Ｎｏ　ａｄｍｉｔｔａｎｃｅ　ｔｏ　ｇｏｏｄ　ｋｉｄｓ　ｏｒ　ｐｏｌｉｃｅ　ｏｆｆｉｃｅｒｓ．
-;jpn:◆「ヌスットひろば　いりぐち」@WI(20)↓
-;jpn:　よいこと　けいさつかんは↓
-;jpn:　はいってはいけません。
+◆”Entrance to Burglin Park”@KEY()↓
+◆No admittance to good kids or police officers.
+;jpn:◆「ヌスットひろば いりぐち」@WI(20)↓
+;jpn: よいこと けいさつかんは↓
+;jpn: はいってはいけません。
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN1;marcus
-◆Ｔｗｏｓｏｎ−−↓
-　　ｗｅ　ｇｏｔ　ｔｈｉｓ　ｎａｍｅ　ｂｅｃａｕｓｅ　ｗｅ　ｗｅｒｅｎ’ｔ　ｆｉｒｓｔ．
+◆Twoson−−↓
+  we got this name because we weren’t first.
 ;jpn:◆２ばんめのまちだから↓
-;　ＴＷＯＳＯＮ@WI(30)↓
-;jpn:　おきづきでしたか？
+; TWOSON@WI(30)↓
+;jpn: おきづきでしたか?
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN4;marcusヌスット広場の看板
-◆Ｉｆ　ｙｏｕ　ｓｅｅ　ａ　ｓｕｓｐｉｃｉｏｕｓ　ｆｅｌｌｏｗ，@WI(15)　ｊｕｓｔ　ｐｒｅｔｅｎｄ　ｎｏｔ　ｔｏ　ｓｅｅ　ｈｉｍ．
-;jpn:◆あやしいひとを　みかけたら@WI(15)↓
-;jpn:　まよわず　みないふりをしよう。
+◆If you see a suspicious fellow,@WI(15) just pretend not to see him.
+;jpn:◆あやしいひとを みかけたら@WI(15)↓
+;jpn: まよわず みないふりをしよう。
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN8;marcus
-◆Ｉｆ　ｙｏｕ　ｈａｖｅ　ｔｉｍｅ　ｔｏ　ｒｅａｄ　ｔｈｉｓ，　ｇｏ　ｔｏ　ｔｈｅ　Ｃｈａｏｓ　Ｔｈｅａｔｅｒ　ｉｍｍｅｄｉａｔｅｌｙ．
-;jpn:◆こんなかんばん　よむひまあるなら@WI(15)↓
-;jpn:　いますぐいこう　カオスげきじょう
+◆If you have time to read this, go to the Chaos Theater immediately.
+;jpn:◆こんなかんばん よむひまあるなら@WI(15)↓
+;jpn: いますぐいこう カオスげきじょう
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN2;marcus
-◆”Ｓｅｃｒｅｔ　Ｅｎｔｒａｎｃｅ　ｔｏ　Ｂｕｒｇｌｉｎ　Ｐａｒｋ”
-;jpn:◆「ヌスットひろば　うらぐち」
+◆”Secret Entrance to Burglin Park”
+;jpn:◆「ヌスットひろば うらぐち」
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN9;
-◆Ａｒｅ　ｙｏｕ　ｈａｐｐｙ　ｎｏｗ？@WI(20)↓
-　　”Ｈａｐｐｙ　Ｈａｐｐｙ　Ｒｅｌｉｇｉｏｕｓ　Ｇｒｏｕｐ”
-;jpn:◆あなたはいま　ハッピーですか？@WI(15)↓
-;jpn:　「ハッピーハッピーきょうだん」
+◆Are you happy now?@WI(20)↓
+  ”Happy Happy Religious Group”
+;jpn:◆あなたはいま ハッピーですか?@WI(15)↓
+;jpn: 「ハッピーハッピーきょうだん」
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_TWSN_SIGN10;marcus
-◆”Ｔｗｏ−Ｔｈｒｅｅ　Ｔｕｎｎｅｌ”@WI(20)↓
-　　Ｔｏ　ｔｈｅ　ｔｏｗｎ　ｏｆ　Ｔｈｒｅｅｄ．
+◆”Two−Three Tunnel”@WI(20)↓
+  To the town of Threed.
 ;jpn:◆「ツースリー・トンネル」@WI(15)↓
-;jpn:　スリークのまちに　つづく
+;jpn: スリークのまちに つづく
 @KEYNP()
 』
 
 MSG_TWSN_KANBAN_ORANGE;marcus
-◆（Ｈｏｍｅ　ｏｆ　Ｏｒａｎｇｅ　Ｋｉｄ，　ｉｎｖｅｎｔｏｒ）
-;jpn:◆（はつめいか↓
-;jpn:　オレンジキッドのいえ）
+◆(Home of Orange Kid, inventor)
+;jpn:◆(はつめいか↓
+;jpn: オレンジキッドのいえ)
 @KEYNP()
 @!
 
 MSG_TWSN_KANBAN_APPLE;marcus
-◆（Ｈｏｍｅ　ｏｆ　Ａｐｐｌｅ　Ｋｉｄ，　ｉｎｖｅｎｔｏｒ）
-;jpn:◆（はつめいか↓
-;jpn:　アップルキッドのいえ）
+◆(Home of Apple Kid, inventor)
+;jpn:◆(はつめいか↓
+;jpn: アップルキッドのいえ)
 @KEYNP()
 @!
 
 ;-------------------------------------------------
 ;
 ;MSG_READ_THRK_GRAVESTONE1;marcus
-;◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ　ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ　ｒｅａｄ　ｔｈｅ　ｔｏｍｂｓｔｏｎｅ．
+;◆Nothing happened even though you read the tombstone.
 ;
-;jpn:◆はかいしの　もじをよんでも↓
-;jpn:　なにもない。
+;jpn:◆はかいしの もじをよんでも↓
+;jpn: なにもない。
 ;@KEYNP()
 ;』
 ;
 ;MSG_READ_THRK_GRAVESTONE2;marcus
-;◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ　ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ　ｒｅａｄ　ｔｈｅ　ｔｏｍｂｓｔｏｎｅ．@KEY()↓
-;◆Ａｔ　ｌｅａｓｔ　ｔｈａｔ’ｓ　ｗｈａｔ　Ｉ　ｔｈｏｕｇｈｔ．．．@KEY()↓
-;◆Ｂｕｔ．．．↓
-;　ａｃｔｕａｌｌｙ　ｙｏｕ　ｐｉｃｋｅｄ　ｕｐ　ａ　@DSP_GOODS(0)．
+;◆Nothing happened even though you read the tombstone.@KEY()↓
+;◆At least that’s what I thought...@KEY()↓
+;◆But...↓
+; actually you picked up a @DSP_GOODS(0).
 ;	
-;jpn:◆はかいしの　もじをよんでも↓
-;jpn:　なにもない‥‥@KEY()↓
-;jpn:◆と　おもったら↓
-;jpn:　@DSP_GOODS(0)を　ひろった。
+;jpn:◆はかいしの もじをよんでも↓
+;jpn: なにもない‥‥@KEY()↓
+;jpn:◆と おもったら↓
+;jpn: @DSP_GOODS(0)を ひろった。
 ;@Q_GOODSFULL(PC_ALL)
 ;@FALSE_GOTO(_THRK_TOMB_GOODS_ABANDON)
 ;@GOODSIN_PLAYER(0,0)
@@ -303,26 +303,26 @@ MSG_TWSN_KANBAN_APPLE;marcus
 ;
 ;_THRK_TOMB_GOODS_ABANDON;marcus@MiuraAppended
 ;←
-;◆Ｈｏｗ　ｕｎｆｏｒｔｕｎａｔｅ！@KEY()↓
-;◆Ｙｏｕ　ｃａｎ’ｔ　ｃａｒｒｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｂｅｃａｕｓｅ　ｙｏｕｒ　ｂａｃｋ−ｐａｋ　ｉｓ　ｆｕｌｌ．
+;◆How unfortunate!@KEY()↓
+;◆You can’t carry anything else because your back−pak is full.
 ;
-;jpn:◆しかし　ざんねん。↓
-;jpn:　にもつがいっぱいで↓
-;jpn:　もてない。
+;jpn:◆しかし ざんねん。↓
+;jpn: にもつがいっぱいで↓
+;jpn: もてない。
 ;@KEYNP()
 ;』
 ;
 ;
 ;MSG_READ_THRK_GRAVESTONE3;
-;◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ　ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ　ｒｅａｄ　ｔｈｅ　ｔｏｍｂｓｔｏｎｅ．@KEY()↓
-;◆Ｂｕｔ　ｙｏｕ　ｍｉｇｈｔ　ｗａｎｔ　ｔｏ　ｔｒｙ　ｄｏｉｎｇ　ｕｓｅｌｅｓｓ　ｔｈｉｎｇｓ．@KEY()↓
-;◆．．．Ｔｈａｔ’ｓ　ａｌｌ　Ｉ　ｗａｎｎａ　ｓａｙ．
+;◆Nothing happened even though you read the tombstone.@KEY()↓
+;◆But you might want to try doing useless things.@KEY()↓
+;◆...That’s all I wanna say.
 ;
-;jpn:◆はかいしの　もじをよんでも↓
-;jpn:　なにもない。@KEY()↓
-;jpn:◆しかし　むだなことでも↓
-;jpn:　してみるもんだ。↓
-;jpn:　‥‥ただ　それだけ。
+;jpn:◆はかいしの もじをよんでも↓
+;jpn: なにもない。@KEY()↓
+;jpn:◆しかし むだなことでも↓
+;jpn: してみるもんだ。↓
+;jpn: ‥‥ただ それだけ。
 ;@KEYNP()
 ;』
 ;
@@ -336,80 +336,80 @@ MSG_TWSN_KANBAN_APPLE;marcus
 ;MSG_READ_THRK_GRAVESTONE10;
 ;MSG_READ_THRK_GRAVESTONE11;
 ;MSG_READ_THRK_GRAVESTONE12;
-;◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ　ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ　ｒｅａｄ　ｔｈｅ　ｔｏｍｂｓｔｏｎｅ．
+;◆Nothing happened even though you read the tombstone.
 ;
-;jpn:◆はかいしの　もじをよんでも↓
-;jpn:　なにもない。
+;jpn:◆はかいしの もじをよんでも↓
+;jpn: なにもない。
 ;@KEYNP()
 ;』
 
 
 MSG_READ_THRK_SIGN9;marcus
-;◆Ｆｏｒｔｙ　ｙｅａｒｓ　ｉｎ　ｔｈｅ　ｈｉｎｔ　ｂｕｓｉｎｅｓｓ．@WI(20)↓
-　　”Ｈｉｎｔ　Ｓｈｏｐ　Ｒｅａｌｉｚａｔｉｏｎ”
+;◆Forty years in the hint business.@WI(20)↓
+  ”Hint Shop Realization”
 ;DAN:NARUHODO is used when we understand something or discover something new and it makes sense.  I guess "I see" is the best translation??
-;jpn:◆ヒントをだして　４０ねん↓
-;jpn:　「ヒントショップ　なるほど」
+;jpn:◆ヒントをだして ４０ねん↓
+;jpn: 「ヒントショップ なるほど」
 @KEYNP()
 』
 
 MSG_READ_THRK_SIGN8;marcus
-◆（”Ｔｈｉｓ　Ｂｕｌｌｅｔｉｎ　Ｂｏａｒｄ↓
-　　ｇｒｅｅｔｓ　ｙｏｕ　ｔｈｉｓ　ｅｖｅｎｉｎｇ．↓
-　　Ａｌｌ　ｉｓ　ｗｅｌｌ，　Ｇｏｏｄ　Ｎｉｇｈｔ．）
-;jpn:◆（「かんばんは↓
-;jpn:　　　　　よるのあいさつ↓
-;jpn:　　　　　　　　　こんばんは」@KEY()↓
-;jpn:◆５・７・５でまとめてみました）
+◆(”This Bulletin Board↓
+  greets you this evening.↓
+  All is well, Good Night.)
+;jpn:◆(「かんばんは↓
+;jpn:     よるのあいさつ↓
+;jpn:         こんばんは」@KEY()↓
+;jpn:◆５・７・５でまとめてみました)
 @KEYNP()
 』
 
 ;MSG_READ_THRK_GRAVESTONE13;
 ;MSG_READ_THRK_GRAVESTONE14;
 ;MSG_READ_THRK_GRAVESTONE15;
-;◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｅｄ　ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ　ｒｅａｄ　ｔｈｅ　ｔｏｍｂｓｔｏｎｅ．
-;jpn:◆はかいしの　もじをよんでも↓
-;jpn:　なにもない。
+;◆Nothing happened even though you read the tombstone.
+;jpn:◆はかいしの もじをよんでも↓
+;jpn: なにもない。
 @KEYNP()
 @!
 
 MSG_READ_THRK_SIGN1;marcus
-◆（Ｗａｎｔ　ｔｏ　ｅｓｃａｐｅ　ｔｏ　ｔｈｅ　Ｂｅａｃｈ？@WI(15)　　Ｉｆ　ｔｈｉｓ　ｉｓ　ｙｏｕｒ　ｂｉｇ　ｄｒｅａｍ　．．．@KEY()↓
-◆Ｃｏｍｅ　ｔｏ　Ｃａｒｒｉｌｌｏｎ　Ｂｅａｃｈ　ｉｎ　Ｓｕｍｍｅｒｓ！@WI(20)↓
-　　Ｓｕｍｍｅｒｓ　Ｔｏｕｒｉｓｍ　Ｂｕｒｅａｕ．）
+◆(Want to escape to the Beach?@WI(15)  If this is your big dream ...@KEY()↓
+◆Come to Carrillon Beach in Summers!@WI(20)↓
+  Summers Tourism Bureau.)
 
-;jpn:◆（うみへ　いきたい。↓
-;jpn:　そんな　しばいがかったことを↓
-;jpn:　おもいついたら‥‥@KEY()↓
-;jpn:◆サマーズのカリヨンビーチへ！↓
-;jpn:　　サマーズかんこうきょうかい）
+;jpn:◆(うみへ いきたい。↓
+;jpn: そんな しばいがかったことを↓
+;jpn: おもいついたら‥‥@KEY()↓
+;jpn:◆サマーズのカリヨンビーチへ!↓
+;jpn:  サマーズかんこうきょうかい)
 @KEYNP()
 』
 
 MSG_READ_THRK_SIGN5;marcus
-◆Ｉｆ　ｙｏｕ　ｍｉｓｓ　ａ　ｎｉｃｅ，　ｃｏｚｙ　ｂｅｄ，　ｗａｌｋ　ｔｏ　ｔｈｅ　Ｗｅｓｔ．．．Ｗｅ’ｒｅ　ｒｉｇｈｔ　ｔｈｅｒｅ！@KEY()↓
-◆”Ｔｈｒｅｅｄ　Ｓｕｎｓｅｔ　Ｈｏｔｅｌ”
-;jpn:◆ベッドが　こいしいあなたに。@WI(20)↓
-;jpn:　にしへあるけば　すぐ↓
-;jpn:　「スリークサンセットホテル」
+◆If you miss a nice, cozy bed, walk to the West...We’re right there!@KEY()↓
+◆”Threed Sunset Hotel”
+;jpn:◆ベッドが こいしいあなたに。@WI(20)↓
+;jpn: にしへあるけば すぐ↓
+;jpn: 「スリークサンセットホテル」
 @KEYNP()
 』
 
-MSG_READ_THRK_SIGN6;松（シャレになってる？）
-◆（”Ｈｏｒｓｅｓ　ｓａｙ　”ｎｅｉｇｈ，”　ｂｕｔ　ｔｈｅ　Ｈｉｎｔ　Ｓｈｏｐ　ｓａｙｓ　”ｙｅａ”　ｔｏ　ｇｉｖｉｎｇ　ｙｏｕ　ａ　ｈｉｎｔ．”@KEY()↓
-◆ＥａｇｌｅＬａｎｄ　Ｈｉｎｔ　Ｕｎｉｏｎ）
+MSG_READ_THRK_SIGN6;松(シャレになってる?)
+◆(”Horses say ”neigh,” but the Hint Shop says ”yea” to giving you a hint.”@KEY()↓
+◆EagleLand Hint Union)
 ;DAN:Apparently, horse say "hin" in Japan.  What about in the US?
-;jpn:◆（「ヒンとなくのは　うまだけど↓
-;jpn:　ヒントだすのはヒントや　だ」↓
-;jpn:　イーグルランド・ヒントくみあい）
+;jpn:◆(「ヒンとなくのは うまだけど↓
+;jpn: ヒントだすのはヒントや だ」↓
+;jpn: イーグルランド・ヒントくみあい)
 @KEYNP()
 』
 
 MSG_READ_THRK_SIGN3;marcus
-◆Ｎｏ　ｐｉｔｃｈｉｎｇ　ｏｆ　ｔｅｎｔｓ　ｉｎ　ｔｈｉｓ　ａｒｅａ　ｗｉｔｈｏｕｔ　ｐｅｒｍｉｓｓｉｏｎ．
+◆No pitching of tents in this area without permission.
 ;jpn:◆このあきちに@WI(20)↓
-;jpn:　むだんでテントを↓
-;jpn:　はらないでください。
+;jpn: むだんでテントを↓
+;jpn: はらないでください。
 @KEYNP()
 』
 
@@ -417,16 +417,16 @@ MSG_READ_THRK_SIGN3;marcus
 MSG_CHECK_THRK_HOSP_ROOM1_SHELF;＄
 @GET_ORDER_PLAYER(1)
 @XCHG()
-◆@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｄｒａｗｅｒｓ．@KEY()↓
+◆@DSP_NAME(0) checked the drawers.@KEY()↓
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　ひきだしを　しらべた。@KEY()↓
+;jpn: ひきだしを しらべた。@KEY()↓
 @CHKFGOTO(FLG_ITEM_TAISHITA,_HOSP_ROOM1_SHELF_AFTER)
 @GET_ORDER_PLAYER(1)
 @XCHG()
-◆Ｔｈｅｒｅ　ｗａｓ　ａ　@DSP_GOODS(GDS_TOOL_NOT_SO_GOOD)　ｉｎ　ｔｈｅ　ｄｒａｗｅｒ．@KEY()↓
-;jpn:◆ひきだしの　なかには↓
-;jpn:　@DSP_GOODS(GDS_TOOL_NOT_SO_GOOD)があった。@KEY()↓
+◆There was a @DSP_GOODS(GDS_TOOL_NOT_SO_GOOD) in the drawer.@KEY()↓
+;jpn:◆ひきだしの なかには↓
+;jpn: @DSP_GOODS(GDS_TOOL_NOT_SO_GOOD)があった。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_HOSP_ROOM1_SHELF_GOODSFULL)
 @GOODSIN_PLAYER(0,GDS_TOOL_NOT_SO_GOOD)
@@ -436,103 +436,103 @@ MSG_CHECK_THRK_HOSP_ROOM1_SHELF;＄
 @!
 
 _HOSP_ROOM1_SHELF_AFTER;＄
-◆Ｂｕｔ　ｔｈｅｒｅ　ｗａｓ　ｎｏｔｈｉｎｇ．
-;jpn:◆しかし　なにもなかった。
+◆But there was nothing.
+;jpn:◆しかし なにもなかった。
 @KEYNP()
 @!
 
 _HOSP_ROOM1_SHELF_GOODSFULL;＄
-◆Ｂｕｔ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｒｅ　ｓｐａｃｅ．
-;jpn:◆しかし　もちものが
-;jpn:　いっぱいだった。
+◆But you don’t have any more space.
+;jpn:◆しかし もちものが
+;jpn: いっぱいだった。
 @KEYNP()
 @!
 
 ;-------------------------------------------------
 
 MSG_READ_FOUR_SIGN1;
-◆（Ｔｈｅｒｅ　ｉｓ　ｌｏｔｓ　ｏｆ　ｊｕｎｋ　ｌｉｋｅ　ｔｈｉｓ　ｂｕｌｌｅｔｉｎ　ｂｏａｒｄ　ａｔ　ｔｈｅ　ｊｕｎｋ　ｓｈｏｐ　”Ｂｕｓｔｅｄ　Ｕｐ，”@KEY()↓
-◆ｌｏｃａｔｅｄ　ｉｎ　ｔｈｅ　ｂａｃｋ　ａｌｌｅｙ　ｏｆ　ｔｈｅ　ｄｅｐａｒｔｍｅｎｔ　ｓｔｏｒｅ．）
-;jpn:◆（このカンバンのような↓
-;jpn:　ガラクタが　いっぱいあるぜ！@KEY()↓
+◆(There is lots of junk like this bulletin board at the junk shop ”Busted Up,”@KEY()↓
+◆located in the back alley of the department store.)
+;jpn:◆(このカンバンのような↓
+;jpn: ガラクタが いっぱいあるぜ!@KEY()↓
 ;jpn:◆フリーなジャンクや↓
-;jpn:　ブリッキー・ハンダーは↓
-;jpn:　デパートのうらの　ろじ）
+;jpn: ブリッキー・ハンダーは↓
+;jpn: デパートのうらの ろじ)
 @KEYNP()
 』
 
 MSG_READ_FOUR_SIGN2;marcus
-◆（Ｐｌａｎｎｉｎｇ　Ｍｅｅｔｉｎｇ　ｆｏｒ　ＥａｒｔｈＢｏｕｎｄ　２．@KEY()↓
-◆Ｏｎｌｙ　ｔｈｏｓｅ　ｗｈｏ　ａｒｅ　ｒｅｌａｔｅｄ　ｔｏ　ｔｈｉｓ　ｐｒｏｊｅｃｔ　ａｒｅ　ａｌｌｏｗｅｄ　ｔｏ　ｅｎｔｅｒ．@KEY()↓
-◆ＡＰＥ　Ｓｏｆｔｗａｒｅ　Ｄｅｖｅｌｏｐｍｅｎｔ　Ｔｅａｍ）
-;jpn:◆（マザー３　プランかいぎちゅう@WI(20)↓
-;jpn:　むかんけいしゃの↓
-;jpn:　たちいりを　きんしします。@KEY()↓
-;jpn:◆　エイプ　かんだかいはつしつ）
+◆(Planning Meeting for EarthBound ２.@KEY()↓
+◆Only those who are related to this project are allowed to enter.@KEY()↓
+◆APE Software Development Team)
+;jpn:◆(マザー３ プランかいぎちゅう@WI(20)↓
+;jpn: むかんけいしゃの↓
+;jpn: たちいりを きんしします。@KEY()↓
+;jpn:◆ エイプ かんだかいはつしつ)
 @KEYNP()
 』
 
 MSG_READ_FOUR_SIGN3;
-◆Ｆｉｒｓｔ　Ｆｌｏｏｒ　”Ｆｏｕｒｓｉｄｅ　Ｂａｋｅｒｙ”@KEY()↓
-◆Ｓｅｃｏｎｄ　Ｆｌｏｏｒ　”２Ｆ　ｏｆ　ｔｈｅ　Ｂａｋｅｒｙ”
+◆First Floor ”Fourside Bakery”@KEY()↓
+◆Second Floor ”２F of the Bakery”
 ;jpn:◆１かい「フォーサイドベーカリー」↓
-;jpn:　２かい「ベーカリーの２かい」
+;jpn: ２かい「ベーカリーの２かい」
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_MOON_SIGN1;
-◆（Ｉ　ｃａｎ　ｓｅｎｓｅ．．．↓
-　　ｔｈａｔ．．．　ｙｏｕ　ｈａｖｅ　ａ　ｃｏｎｔｒｏｌｌｅｒ．．．　ｉｎ　ｙｏｕｒ．．．　ｈａｎｄｓ．．．）
-;jpn:◆（わたしには　みえる。@WI(20)↓
-;jpn:　きみが　コントローラーを↓
-;jpn:　もっているのが‥‥）
+◆(I can sense...↓
+  that... you have a controller... in your... hands...)
+;jpn:◆(わたしには みえる。@WI(20)↓
+;jpn: きみが コントローラーを↓
+;jpn: もっているのが‥‥)
 @KEYNP()
 』
 ;-------------------------------------------------
 
 MSG_READ_MGKT_SIGN1;marcus
-◆Ｈｅｙ！　　Ｉｔ’ｓ　Ｍａｇｉｃａｎｔ！
-;jpn:◆ここが　マジカントだよ。
+◆Hey!  It’s Magicant!
+;jpn:◆ここが マジカントだよ。
 @KEYNP()
 』
 
 
 MSG_READ_MGKT_SIGN2;marcus
-◆Ｃｏｍｅ　ｏｎ　ｉｎ　ｔｏ　Ｍａｇｉｃａｎｔ！
+◆Come on in to Magicant!
 ;jpn:◆マジカントへ↓
-;jpn:　いらしゃーい。
+;jpn: いらしゃーい。
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_SUMMERS_SIGN4;marcus
-◆Ｓｃａｒａｂａ　Ｃｕｌｔｕｒａｌ　Ｍｕｓｅｕｍ@KEY()↓
-◆（Ｈｉｅｒｏｇｌｙｐｈ　ｅｘｈｉｂｉｔｉｏｎ　ｃｕｒｒｅｎｔｌｙ　ｕｎｄｅｒ　ｒｅ−ｃｏｎｓｔｒｕｃｔｉｏｎ．）
+◆Scaraba Cultural Museum@KEY()↓
+◆(Hieroglyph exhibition currently under re−construction.)
 
 ;jpn:◆スカラビぶんかはくぶつかん↓
-;jpn:　（ヒエログリフてんじしつは↓
-;jpn:　　かいそうこうじちゅう）
+;jpn: (ヒエログリフてんじしつは↓
+;jpn:  かいそうこうじちゅう)
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_FOUR_HOSP_FRONT_SGN1;marcus
-◆（Ｒｅｃｅｎｔｌｙ，　ａ　ｓｔｒａｎｇｅ　ｆｅｌｌｏｗ　ｈａｓ　ｂｅｅｎ　ｗａｎｄｅｒｉｎｇ　ａｒｏｕｎｄ　ｔｈｉｓ　ｈｏｓｐｉｔａｌ　ｓａｙｉｎｇ@KEY()↓
-◆ｈｅ　ｃａｎ　ｃｕｒｅ　ｙｏｕ　ｏｆ　ｔｈｅ　ａｆｆｌｉｃｔｉｏｎｓ　ｔｈａｔ　ｗｅ　ｃａｎ’ｔ　ｔｒｅａｔ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｂｅ　ｉｎｆｏｒｍｅｄ　ｔｈａｔ　ｈｅ　ｈａｓ　ｎｏ　ｃｏｎｎｅｃｔｉｏｎ　ｔｏ　ｔｈｅ　ｈｏｓｐｉｔａｌ．@KEY()↓
-◆Ｆｏｕｒｓｉｄｅ　Ｈｏｓｐｉｔａｌ　Ｍａｎａｇｅｍｅｎｔ）
-;jpn:◆（さいきん　びょういんないに↓
-;jpn:　いしゃで　なおらないやまいを↓
-;jpn:　なおすと　ふれまわる@KEY()↓
-;jpn:◆あやしい　じんぶつが↓
-;jpn:　うろついていますが@KEY()↓
+◆(Recently, a strange fellow has been wandering around this hospital saying@KEY()↓
+◆he can cure you of the afflictions that we can’t treat.@KEY()↓
+◆Please be informed that he has no connection to the hospital.@KEY()↓
+◆Fourside Hospital Management)
+;jpn:◆(さいきん びょういんないに↓
+;jpn: いしゃで なおらないやまいを↓
+;jpn: なおすと ふれまわる@KEY()↓
+;jpn:◆あやしい じんぶつが↓
+;jpn: うろついていますが@KEY()↓
 ;jpn:◆とうびょういんとは↓
-;jpn:　いっさいかんけいありません。↓
-;jpn:　　　　フォーサイドびょういん）
+;jpn: いっさいかんけいありません。↓
+;jpn:    フォーサイドびょういん)
 @KEYNP()
 』
 
@@ -540,131 +540,131 @@ MSG_READ_NO_DOCUMENT;
 』
 
 MSG_READ_FOUR_HOSP_PSSG_SGN2;marcus
-◆Ｔｈｉｓ　ｉｓ　ｎｏｔ　ａ　ｈｏｔｅｌ．↓
-　　Ｓｔａｙｉｎｇ　ｆｏｒ　ｔｈｅ　ｎｉｇｈｔ　ｉｓ　ｎｏｔ　ｐｅｒｍｉｔｔｅｄ．
-;jpn:◆ここは　ホテルではありません。@WI(15)↓
-;jpn:　たんなる　しゅくはくは↓
-;jpn:　おことわりします。
+◆This is not a hotel.↓
+  Staying for the night is not permitted.
+;jpn:◆ここは ホテルではありません。@WI(15)↓
+;jpn: たんなる しゅくはくは↓
+;jpn: おことわりします。
 @KEYNP()
 』
 
 
 MSG_READ_ONET_HALL_FRONT_SGN1;marcus市庁舎の貼り紙
-◆（Ａｒｅｎ’ｔ　ｙｏｕ　ｓｔｕｃｋ？@WI(20)　　Ｉｆ　ｙｏｕ　ｗａｎｔ　ａ　ｈｉｎｔ，　ｃｏｍｅ　ａｎｄ　ｇｅｔ　ｉｔ！@KEY()↓
-◆ＥａｇｌｅＬａｎｄ　Ｈｉｎｔ　Ｕｎｉｏｎ）
-;jpn:◆（きみは　つまっていないか？@WI(30)↓
-;jpn:　ヒントのことなら　バッチグー！@WI(15)↓
-;jpn:　イーグルランド・ヒントくみあい）
+◆(Aren’t you stuck?@WI(20)  If you want a hint, come and get it!@KEY()↓
+◆EagleLand Hint Union)
+;jpn:◆(きみは つまっていないか?@WI(30)↓
+;jpn: ヒントのことなら バッチグー!@WI(15)↓
+;jpn: イーグルランド・ヒントくみあい)
 @KEYNP()
 』
 
 MSG_READ_ONET_HOSP_PSSG_SGN3;marcus
-◆（”Ｔｏｍｂｓｔｏｎｅ　Ｂｌｏｗ−ｏｕｔ　Ｓａｌｅ”↓
-　　Ｗｅ　ｈａｖｅ　ａ　ｓｐｅｃｉａｌ　ｄｉｓｃｏｕｎｔ@KEY()↓
-◆ｆｏｒ　ｔｈｏｓｅ　ｗｈｏ　ｈａｖｅ　ｐａｓｓｅｄ　ｏｎ　ｉｎ　ｔｈｉｓ　ｈｏｓｐｉｔａｌ．@KEY()↓
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｏｎ　ｙｏｕｒ　ｔｏｍｂｓｔｏｎｅ？@KEY()↓
-◆Ｏｎｅｔｔ　Ｈｏｓｐｉｔａｌ　Ｓｕｒｇｅｒｙ　Ｔｅａｍ）
-;jpn:◆（「はかいし　かくやすセール」↓
-;jpn:　とうびょういんで↓
-;jpn:　なくなったかたには@KEY()↓
-;jpn:◆とくべつ　わりびきで↓
-;jpn:　すてきなはかいし　を↓
-;jpn:　おうりいたします。@KEY()↓
-;jpn:◆　オネットびょういん↓
-;jpn:　　　　しゅじゅつどうこうかい）
+◆(”Tombstone Blow−out Sale”↓
+  We have a special discount@KEY()↓
+◆for those who have passed on in this hospital.@KEY()↓
+◆What would you like on your tombstone?@KEY()↓
+◆Onett Hospital Surgery Team)
+;jpn:◆(「はかいし かくやすセール」↓
+;jpn: とうびょういんで↓
+;jpn: なくなったかたには@KEY()↓
+;jpn:◆とくべつ わりびきで↓
+;jpn: すてきなはかいし を↓
+;jpn: おうりいたします。@KEY()↓
+;jpn:◆ オネットびょういん↓
+;jpn:    しゅじゅつどうこうかい)
 @KEYNP()
 』
 
 MSG_READ_ONET_GAME_1F_SGN2;
-◆（”Ｍｅｍｂｅｒｓ　ｎｅｅｄｅｄ”↓
-　　Ｐｏｐｕｌａｒ　Ｍｕｓｉｃ　Ｃｌｕｂ．@KEY()↓
-◆Ｔｈｏｓｅ　ｗｈｏ　ｈａｖｅ　ａ　ｇｕｉｔａｒ，　ｂａｓｓ　ｏｒ　ｄｒｕｍｓ，　ａｐｐｌｙ　ｎｏｗ．@KEY()↓
-◆Ｃａｒａｃａｓ　Ｃａｔｈｅｄｒａｌ，↓
-　　Ｎａｐａｌｍ　ｗｏｕｎｄ，↓
-　　Ｍｉｎｋｙ　Ｃａｄｉｌｌａｃ，@KEY()↓
-◆Ｓｕｎ　Ｂｕｎｎｉｅｓ，↓
-　　ｔｈｅ　Ｃｒｅｅｐｓ，@KEY()↓
-◆Ｒｕｎ　Ａｒｏｕｎｄ　ＴｏｗｎＫｉｎｋｙ　Ｋｉｄｓ，↓
-　　Ｂｊｏｒｋ，@KEY()↓
-◆Ｔａｋａｓｈｉ　Ｈｏｓｏｋａｗａ↓
-　　ｏｒ　Ｈｏｒｅｎｓｏ．@KEY()↓
-◆Ｗｅ　ｗｅｌｃｏｍｅ　ａｎｙｏｎｅ　ｗｈｏ　ｌｉｋｅｓ　ｔｏ　ｌｉｓｔｅｎ　ｔｏ　ｔｈｅｓｅ　ｂａｎｄｓ．@KEY()↓
-◆Ｏｎｌｙ　ｓｅｒｉｏｕｓ，　ｍａｔｕｒｅ　ｆａｎｓ　ｎｅｅｄ　ａｐｐｌｙ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｃｏｎｔａｃｔ　Ｌｏｕ．
+◆(”Members needed”↓
+  Popular Music Club.@KEY()↓
+◆Those who have a guitar, bass or drums, apply now.@KEY()↓
+◆Caracas Cathedral,↓
+  Napalm wound,↓
+  Minky Cadillac,@KEY()↓
+◆Sun Bunnies,↓
+  the Creeps,@KEY()↓
+◆Run Around TownKinky Kids,↓
+  Bjork,@KEY()↓
+◆Takashi Hosokawa↓
+  or Horenso.@KEY()↓
+◆We welcome anyone who likes to listen to these bands.@KEY()↓
+◆Only serious, mature fans need apply.@KEY()↓
+◆Please contact Lou.
 ;DAN:The name of the bands seem to be existed (at least some), if you have a question, please call me.  Also, "Koji" should be changed to American name.
-;jpn:◆（「メンバーぼしゅう」↓
-;jpn:　けいおんがく　どうこうかい@KEY()↓
-;jpn:◆ギター　ベース　ドラムなどを↓
-;jpn:　じぶんで　おもちのかた@KEY()↓
-;jpn:◆カーカス　カテドラル↓
-;jpn:　ナパームデス　にしかわみねこ↓
-;jpn:　ムーンライダース　スチャダラパー@KEY()↓
-;jpn:◆キンキーキッズ　ビョーク↓
-;jpn:　ほそかわたかし　ホウレンソウなど↓
-;jpn:　きくかた　かんげい。@KEY()↓
-;jpn:◆かんぜん　プロしこう。↓
-;jpn:　れんらくは　コウジまで。
+;jpn:◆(「メンバーぼしゅう」↓
+;jpn: けいおんがく どうこうかい@KEY()↓
+;jpn:◆ギター ベース ドラムなどを↓
+;jpn: じぶんで おもちのかた@KEY()↓
+;jpn:◆カーカス カテドラル↓
+;jpn: ナパームデス にしかわみねこ↓
+;jpn: ムーンライダース スチャダラパー@KEY()↓
+;jpn:◆キンキーキッズ ビョーク↓
+;jpn: ほそかわたかし ホウレンソウなど↓
+;jpn: きくかた かんげい。@KEY()↓
+;jpn:◆かんぜん プロしこう。↓
+;jpn: れんらくは コウジまで。
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_SUMS_HOSP_PSSG_SGN1;marcus
-◆（Ｒｅｌａｘ，　ｔａｋｅ　ｉｔ　ｅａｓｙ！↓
-　　Ｉｔ’ｓ　ａｌｌ　ｉｎ　ｙｏｕｒ　ｈｅａｄ．．．@KEY()↓
-◆Ａ　ｈｅａｌｔｈｙ　ｍｉｎｄ　ｉｓ　ａ　ｈｅａｌｔｈｙ　ｂｏｄｙ．）
+◆(Relax, take it easy!↓
+  It’s all in your head...@KEY()↓
+◆A healthy mind is a healthy body.)
 ;DAN:"Sickness comes from your thought" is a proverb.  I don't know the right translation of this proverb. Sorry!
-;jpn:◆（テイク　イット　イージー！↓
-;jpn:　「やまいは　き　から」です。@WI(20)↓
-;jpn:　くよくよしないで　いきましょう）
+;jpn:◆(テイク イット イージー!↓
+;jpn: 「やまいは き から」です。@WI(20)↓
+;jpn: くよくよしないで いきましょう)
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_THRK_HOSP_PSSG_SGN1;marcus
-◆（Ｔｈｅｒｅ　ｉｓ　ａ　ｗｅｌｌ−ｋｎｏｗｎ　ｔｈｅｏｒｙ　ｔｈａｔ　ｉｆ　ｙｏｕ　ａｒｅ　ｂｉｔｔｅｎ　ｂｙ　ｚｏｍｂｉｅｓ，@KEY()↓
-◆ｂｉｔｅ　ｂａｃｋ　ａｎｄ　ｙｏｕ　ｃａｎ　ｒｅｃｏｖｅｒ．@KEY()↓
-◆Ｏｆ　ｃｏｕｒｓｅ，　ｔｈｅｒｅ　ｉｓ　ｎｏ　ｓｃｉｅｎｔｉｆｉｃ　ｅｖｉｄｅｎｃｅ　ｔｏ　ｓｕｐｐｏｒｔ　ｔｈｉｓ　ｔｈｅｏｒｙ．）
-;jpn:◆（ゾンビにかまれたら↓
-;jpn:　かみかえせば　なおる。@WI(20)↓
-;jpn:　という　ぞくせつが　ありますが@KEY()↓
+◆(There is a well−known theory that if you are bitten by zombies,@KEY()↓
+◆bite back and you can recover.@KEY()↓
+◆Of course, there is no scientific evidence to support this theory.)
+;jpn:◆(ゾンビにかまれたら↓
+;jpn: かみかえせば なおる。@WI(20)↓
+;jpn: という ぞくせつが ありますが@KEY()↓
 ;jpn:◆かがくてきな↓
-;jpn:　こんきょは　ありません）
+;jpn: こんきょは ありません)
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_TWSN_HOSP_FRONT_SGN1;marcus
-◆（Ｔｏ　ｒｅｃｏｖｅｒ　ｏｒ　ｎｏｔ　ｄｅｐｅｎｄｓ　ｏｎ　ｌｕｃｋ．@KEY()↓
-◆Ｂｅｌｉｅｖｅ　ｉｎ　ｙｏｕｒ　ｌｕｃｋ．　　Ｂｅｌｉｅｖｅ　ｙｏｕｒ　ｄｏｃｔｏｒ　ａｌｓｏ．@KEY()↓
-◆Ｔｈｅ　Ｄｏｃｔｏｒ　ｂｅｌｉｅｖｅｓ　ｉｎ　ｈｉｓ　ｌｕｃｋ．）
-;jpn:◆（なおるなおらぬは　ときのうん。@WI(15)↓
-;jpn:　うんを　しんじ↓
-;jpn:　いしゃをしんじましょう。@KEY()↓
-;jpn:◆いしゃも　じぶんを　しんじます）
+◆(To recover or not depends on luck.@KEY()↓
+◆Believe in your luck.  Believe your doctor also.@KEY()↓
+◆The Doctor believes in his luck.)
+;jpn:◆(なおるなおらぬは ときのうん。@WI(15)↓
+;jpn: うんを しんじ↓
+;jpn: いしゃをしんじましょう。@KEY()↓
+;jpn:◆いしゃも じぶんを しんじます)
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_FOUR_MUSE_EXHI_SGN1;marcus恐竜前の解説版
-◆（Ｄｉｎｏｓａｕｒ　ｂｏｎｅｓ　ｂｅｌｉｅｖｅｄ　ｔｏ　ｂｅ　ｆｒｏｍ　ｓｏｕｔｈｅｒｎ　Ｓｃａｒａｂａ．@KEY()↓
-◆Ｄｏｎ’ｔ　ａｓｋ　ｆｏｒ　ａｎｙ　ｄｅｔａｉｌｓ．　　Ｏｕｒ　ｒｅｓｅａｒｃｈ　ｉｓ　ｃｏｎｔｉｎｕｉｎｇ．）
-;jpn:◆（スカラビみなみで↓
-;jpn:　はっけんされた↓
-;jpn:　きょうりゅうの　ほね。@KEY()↓
+◆(Dinosaur bones believed to be from southern Scaraba.@KEY()↓
+◆Don’t ask for any details.  Our research is continuing.)
+;jpn:◆(スカラビみなみで↓
+;jpn: はっけんされた↓
+;jpn: きょうりゅうの ほね。@KEY()↓
 ;jpn:◆くわしいことは↓
-;jpn:　けんきゅうちゅうにつき↓
-;jpn:　あまり　きかないでください）
+;jpn: けんきゅうちゅうにつき↓
+;jpn: あまり きかないでください)
 @KEYNP()
 』
 
 MSG_SEARCH_FOUR_BRGS_BAR_SDOR;marcus
 @CHKFGOTO(FLG_WIN_MANIMANI,_BRGS_BAR_SDOR_3)
 @CHKFGOTO(FLG_FOUR_TONCHIKI,_BRGS_BAR_SDOR_2)
-◆Ｎｏ　ｐｒｏｂｌｅｍ　ｈｅｒｅ．
+◆No problem here.
 ;jpn:◆もんだいなし。
 @KEYNP()
 @!
@@ -675,15 +675,15 @@ _BRGS_BAR_SDOR_2;
 ;-----
 @GET_ORDER_PLAYER(1)
 @XCHG()
-;◆？　　？　　？
-◆？@WI(30)？@WI(30)？@KEYNP()
+;◆?  ?  ?
+◆?@WI(30)?@WI(30)?@KEYNP()
 @KEYNP()
 @WARP(WARP_MOON_ENTERANCE)
 @SET_COMEBACK_POS(0)
 @!
 
 _BRGS_BAR_SDOR_3;marcus
-◆Ｎｏ　ｐｒｏｂｌｅｍ　ｈｅｒｅ．
+◆No problem here.
 ;jpn:◆もんだいなし。
 @KEYNP()
 @SET_COMEBACK_POS(TLPT_FOURSIDE)
@@ -691,66 +691,66 @@ _BRGS_BAR_SDOR_3;marcus
 
 ;MSG_READ_MOON_BUILDING;
 ;@OPEN(1)
-;◆（モノトリービルいりぐちです。↓
-;　　ポーラがモノトリーに↓
-;　　つかまっています）@KEYNP()
+;◆(モノトリービルいりぐちです。↓
+;  ポーラがモノトリーに↓
+;  つかまっています)@KEYNP()
 ;@CLOSE()
 ;』
 
 ;-------------------------------------------------
 
 MSG_READ_SUMS_HIER_EXHI2_SGN1;marcus
-@SET_LOOPREG(PC_POO)			;プーのＩＤを主レジに格納
+@SET_LOOPREG(PC_POO)			;プーのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
 @TRUE_GOTO(_READ_SUMS_HIERO_DEAD)
 @CHKFGOTO(FLG_WIN_GIEGU,_READ_SUMS_HIERO_DEAD_2);プーが帰っていたら
 @CHKFGOTO(FLG_PU_0,_READ_SUMS_HIERO_DEAD);プーが連れ去られていたら
 _READ_SUMS_HIERO_MAIN;
-◆（@DSP_STS(STS_PC_NAME_POO)　ｒｅａｄ　ｔｈｅ　Ｈｉｅｒｏｇｌｙｐｈｓ！）@KEY()↓
-◆”Ｗｅ　ｂｕｉｌｔ　ａ　ｑｕａｄｒａｎｇｕｌａｒ　ｐｙｒａｍｉｄ　ａｓ　ａ　ｆｏｒｔｒｅｓｓ@KEY()↓
-◆ｔｏ　ｆｉｇｈｔ　ａｇａｉｎｓｔ　ｉｎｖａｄｅｒｓ　ｆｒｏｍ　ｔｈｅ　ｓｋｙ．@KEY()↓
-◆Ｗｅ’ｖｅ　ｌｏｓｔ．@KEY()↓
-◆Ｂｕｔ　ｏｕｒ　ｆｏｒｔｒｅｓｓ　ｗａｓ　ｐｒｏｔｅｃｔｅｄ　ｂｙ　ｔｈｅ　ｇｏｄｓ　ｏｆ　Ｓｃａｒａｂａ．@KEY()↓
-◆Ｔｈｅ　ｉｎｖａｄｅｒ　ｆｒｏｍ　ｔｈｅ　ｓｋｙ　ｉｓ　ｒｅｂｏｒｎ　ｅｖｅｒｙ　１０００　ｙｅａｒｓ　ａｎｄ　ｃｏｍｅｓ　ｔｏ　ａｔｔａｃｋ　ｕｓ．@KEY()↓
-◆Ｈｅ　ｈｉｄｅｓ　ｉｎ　ｔｈｅ　Ｄｉｍｅｎｓｉｏｎ@KEY()↓
-◆Ｔｈａｔ　Ｃｒｏｓｓｅｓ　Ｔｉｍｅ　ａｎｄ　ｗａｉｔｓ　ｆｏｒ　ｈｉｓ　ｅｖｉｌ　ｐｌａｎ　ｔｏ　ｃｏｎｔｉｎｕｅ．@KEY()↓
-◆Ｔｈｅ　Ｄｉｍｅｎｓｉｏｎ　Ｔｈａｔ　Ｃｒｏｓｓｅｓ　Ｔｉｍｅ　ｉｓ　ｆａｒ　ｂｅｙｏｎｄ　ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ．@KEY()↓
-◆Ｇｏ　ｉｎｔｏ　ｔｈｅ　ｔｈｅ　ｌｏｗｅｒ　ｒｅａｃｈｅｓ　ｏｆ　ｔｈｅ　ｌａｎｄ．　　Ｔｈｅ　Ｄｅｅｐ　Ｄａｒｋｎｅｓｓ　ｉｓ　ｔｈｅｒｅ．@KEY()↓
-◆Ｏｎｌｙ　ｗｉｔｈ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_EAGLE_EYE)　ｃａｎ　ｙｏｕ　ｓｅｅ．@KEY()↓
-◆Ｔｈｅ　Ｓｐｈｉｎｘ　ｐｒｏｔｅｃｔｓ　ｅｖｅｒｙｔｈｉｎｇ　ａｎｄ　ｗａｉｔｓ　ｆｏｒ　ｏｕｒ　ｔｒｕｅ　ｗａｒｒｉｏｒｓ．@KEY()↓
-◆　　　．　↓
-　　４　　　３↓
-　　２　　　５@KEY()↓
-◆Ｄａｎｃｅ　ｉｎ　ｆｒｏｎｔ　ｏｆ　ｔｈｅ　Ｓｐｈｉｎｘ．
-;jpn:◆（@DSP_STS(STS_PC_NAME_POO)が↓
-;jpn:　ヒエログリフをよんだ！）@KEY()↓
-;jpn:◆「てんよりの　しんりゃくしゃに↓
-;jpn:　われわれは　しかくすいの↓
-;jpn:　ようさいを　けんぞうし@KEY()↓
-;jpn:◆たたかいに　そなえた。↓
-;jpn:　しかし　われわれは　やぶれた。@KEY()↓
-;jpn:◆だが　われわれの　ようさいは↓
-;jpn:　スカラビの　かみがみによって↓
-;jpn:　まもられた。@KEY()↓
-;jpn:◆てんからきた　しんりゃくしゃは↓
-;jpn:　１０００ねんごとに　うまれかわり↓
-;jpn:　おそってくるという。@KEY()↓
+◆(@DSP_STS(STS_PC_NAME_POO) read the Hieroglyphs!)@KEY()↓
+◆”We built a quadrangular pyramid as a fortress@KEY()↓
+◆to fight against invaders from the sky.@KEY()↓
+◆We’ve lost.@KEY()↓
+◆But our fortress was protected by the gods of Scaraba.@KEY()↓
+◆The invader from the sky is reborn every １０００ years and comes to attack us.@KEY()↓
+◆He hides in the Dimension@KEY()↓
+◆That Crosses Time and waits for his evil plan to continue.@KEY()↓
+◆The Dimension That Crosses Time is far beyond the Deep Darkness.@KEY()↓
+◆Go into the the lower reaches of the land.  The Deep Darkness is there.@KEY()↓
+◆Only with the @DSP_GOODS(GDS_TOOL_EAGLE_EYE) can you see.@KEY()↓
+◆The Sphinx protects everything and waits for our true warriors.@KEY()↓
+◆   . ↓
+  ４   ３↓
+  ２   ５@KEY()↓
+◆Dance in front of the Sphinx.
+;jpn:◆(@DSP_STS(STS_PC_NAME_POO)が↓
+;jpn: ヒエログリフをよんだ!)@KEY()↓
+;jpn:◆「てんよりの しんりゃくしゃに↓
+;jpn: われわれは しかくすいの↓
+;jpn: ようさいを けんぞうし@KEY()↓
+;jpn:◆たたかいに そなえた。↓
+;jpn: しかし われわれは やぶれた。@KEY()↓
+;jpn:◆だが われわれの ようさいは↓
+;jpn: スカラビの かみがみによって↓
+;jpn: まもられた。@KEY()↓
+;jpn:◆てんからきた しんりゃくしゃは↓
+;jpn: １０００ねんごとに うまれかわり↓
+;jpn: おそってくるという。@KEY()↓
 ;jpn:◆しんりゃくしゃは↓
-;jpn:　ときの　かなたにかくれ↓
-;jpn:　あくの「すばこ」を　おいた。@KEY()↓
-;jpn:◆ときの　かなたは↓
-;jpn:　まきょうの　はるか　さき。↓
-;jpn:　ちのそこの　むこう。@KEY()↓
-;jpn:◆まきょうは　くらき　やみ。↓
-;jpn:　「@DSP_GOODS(GDS_TOOL_EAGLE_EYE)」だけが　みる。@KEY()↓
+;jpn: ときの かなたにかくれ↓
+;jpn: あくの「すばこ」を おいた。@KEY()↓
+;jpn:◆ときの かなたは↓
+;jpn: まきょうの はるか さき。↓
+;jpn: ちのそこの むこう。@KEY()↓
+;jpn:◆まきょうは くらき やみ。↓
+;jpn: 「@DSP_GOODS(GDS_TOOL_EAGLE_EYE)」だけが みる。@KEY()↓
 ;jpn:◆スフィンクスが↓
-;jpn:　すべてを　まもり@KEY()↓
-;jpn:◆しんの　ゆうしゃの↓
-;jpn:　おとずれを　まつ。@KEY()↓
-;◆　　　・↓
-;　　４　　　３↓
-;　　　２　５@KEY()↓
-;jpn:◆スフィンクスのまえで　おどれ」
+;jpn: すべてを まもり@KEY()↓
+;jpn:◆しんの ゆうしゃの↓
+;jpn: おとずれを まつ。@KEY()↓
+;◆   ・↓
+;  ４   ３↓
+;   ２ ５@KEY()↓
+;jpn:◆スフィンクスのまえで おどれ」
 @CHKFGOTO(FLG_SUMS_HIEROGLYPH,_SUMS_HIER_EXHI2_SGN1_2)
 @KEY()
 @CLOSEALL()
@@ -771,11 +771,11 @@ MSG_SUMS_MUSEUM_PU_HIEROGLYPH;
 @OPEN( 1 )
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)！　　Ｌｅｔ’ｓ　ｇｏ　ｔｏ　Ｓｃａｒａｂａ．@WI(15)　　Ｔｈｅ　ｐｙｒａｍｉｄ　ｉｓ　ｔｈｅ　ｋｅｙ！
-;◆@DSP_NAME(0)！@WI(20)↓
-;jpn:　なんとか　スカラビに↓
-;jpn:　いってみよう。@KEY()↓
-;jpn:◆ピラミッドが　カギだ！
+◆@DSP_NAME(0)!  Let’s go to Scaraba.@WI(15)  The pyramid is the key!
+;◆@DSP_NAME(0)!@WI(20)↓
+;jpn: なんとか スカラビに↓
+;jpn: いってみよう。@KEY()↓
+;jpn:◆ピラミッドが カギだ!
 @KEYNP()
 @SETF(FLG_SUMS_HIEROGLYPH)
 @SET_HIT_RECT(1,HRECT_SUMS_OMAR,MSG_SUMS_OMAR_B_EVT)
@@ -796,8 +796,8 @@ _SUMS_HIER_EXHI2_SGN1_2;
 ;@GOODSIN_PLAYER(0,GDS_TOOL_HIEROGLYPH_COPY)
 ;@XCHG()
 ;◆@DSP_NAME(0)は↓
-;　ヒエログリフのコピーを↓
-;　てにいれた。
+; ヒエログリフのコピーを↓
+; てにいれた。
 ;@KEYNP()
 ;@SE(SE_se74_my_get)
 ;@SETF(FLG_ITEM_HIEROGLYPH)
@@ -807,8 +807,8 @@ _SUMS_HIER_EXHI2_SGN1_2;
 ;
 ;_HIER_GOODS_GODSFULL;
 ;◆もちものがいっぱいで↓
-;　ヒエログリフのコピーは↓
-;　てにはいらない。
+; ヒエログリフのコピーは↓
+; てにはいらない。
 ;@KEYNP()
 ;@!
 
@@ -820,49 +820,49 @@ _SUMS_HIER_EXHI2_SGN1_END;
 _READ_SUMS_HIERO_DEAD;
 @CHKFGOTO(FLG_WIN_GEROPP,_READ_SUMS_HIERO_MAIN);プーが合流してたら
 _READ_SUMS_HIERO_DEAD_2;marcus
-◆（Ｔｈｉｓ　ｓｅｔ　ｏｆ　ｈｉｅｒｏｇｌｙｐｈｓ　ｉｓ　ｂｅｌｉｅｖｅｄ　ｔｏ　ｈａｖｅ　ｂｅｅｎ　ｍａｄｅ　ａｒｏｕｎｄ　４０００　Ｂ．Ｃ．@KEY()↓
-◆Ｎｏ　ｏｎｅ　ｈａｓ　ｅｖｅｒ　ｕｎｄｅｒｓｔｏｏｄ　ｔｈｅ　ｃｏｎｔｅｎｔｓ@KEY()↓
-◆ｂｅｃａｕｓｅ　ｉｔ’ｓ　ｗｒｉｔｔｅｎ　ｉｎ　ａｎ　ｕｎｕｓｕａｌ　ｓｔｙｌｅ　ｗｉｔｈ　ｕｎｕｓｕａｌ　ｃｈａｒａｃｔｅｒｓ．@KEY()↓
-◆Ｗｏｎ’ｔ　ｙｏｕ　ｃｏｍｅ　ｃｌｏｓｅｒ　ａｎｄ　ｔｒｙ　ｔｏ　ｓｏｌｖｅ　ｔｈｅ　ｐｕｚｚｌｅ　ｏｆ　ｔｈｅ　ａｎｃｉｅｎｔ　ｓｔｏｎｅ　ｔａｂｌｅｔｓ？）
-;jpn:◆（きげんぜん４０００ねんころの↓
-;jpn:　ものとされている↓
-;jpn:　このヒエログリフは@KEY()↓
-;jpn:◆とくしゅな　もじと　げんごで↓
-;jpn:　しるされているため↓
-;jpn:　いまだ　かいどくされていない。@KEY()↓
+◆(This set of hieroglyphs is believed to have been made around ４０００ B.C.@KEY()↓
+◆No one has ever understood the contents@KEY()↓
+◆because it’s written in an unusual style with unusual characters.@KEY()↓
+◆Won’t you come closer and try to solve the puzzle of the ancient stone tablets?)
+;jpn:◆(きげんぜん４０００ねんころの↓
+;jpn: ものとされている↓
+;jpn: このヒエログリフは@KEY()↓
+;jpn:◆とくしゅな もじと げんごで↓
+;jpn: しるされているため↓
+;jpn: いまだ かいどくされていない。@KEY()↓
 ;jpn:◆ちかくによって↓
-;jpn:　クリアなめで　よんでみて↓
-;jpn:　かいどくに　ちょうせんしよう！）
+;jpn: クリアなめで よんでみて↓
+;jpn: かいどくに ちょうせんしよう!)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN1;marcus
-◆（Ｒａｍ　Ｒａｉｓｉｎ　ｔｈｅ　ｆｉｆｔｈ’ｓ　ｔｒａｉｎｉｎｇ　ｐｏｔ．）
-;jpn:◆（ラムレーズン５せいの　おまる）
+◆(Ram Raisin the fifth’s training pot.)
+;jpn:◆(ラムレーズン５せいの おまる)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN2;marcus
-◆（Ｒａｍ　Ｒａｉｓｉｎ　ｔｈｅ　ｆｏｕｒｔｈ’ｓ　ｃａｓｋｅｔ．）
-;jpn:◆（ラムレーズン４せいの　ひつぎ）
+◆(Ram Raisin the fourth’s casket.)
+;jpn:◆(ラムレーズン４せいの ひつぎ)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN3;marcus
-◆（Ｒａｍ　Ｒａｉｓｉｎ　ｔｈｅ　ｔｈｉｒｄ’ｓ　ｃａｓｋｅｔ．）
-;jpn:◆（ラムレーズン３せいの　ひつぎ）
+◆(Ram Raisin the third’s casket.)
+;jpn:◆(ラムレーズン３せいの ひつぎ)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN4;marcus
-◆（Ｔｏｔｅｎ　Ｋａｒｍｅｎ’ｓ　ｌｕｎｃｈ　ｂｏｘ）
-;jpn:◆（トタンカーメンのべんとうばこ）
+◆(Toten Karmen’s lunch box)
+;jpn:◆(トタンカーメンのべんとうばこ)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN5;marcus
-◆（Ｔｏｔｅｎ　Ｋａｒｍｅｎ’ｓ　ｐｅｎｃｉｌ　ｂｏｘ．）
-;jpn:◆（トタンカーメンのふでばこ）
+◆(Toten Karmen’s pencil box.)
+;jpn:◆(トタンカーメンのふでばこ)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN6;marcus
-◆（Ｔｏｔｅｎ　Ｋａｒｍｅｎ’ｓ　ｃａｓｋｅｔ．）
-;jpn:◆（トタンカーメンのひつぎ）
+◆(Toten Karmen’s casket.)
+;jpn:◆(トタンカーメンのひつぎ)
 @KEYNP()
 』
 
@@ -875,7 +875,7 @@ MSG_SKRB_SPHINX;@MiuraAdapted
 @CHKFGOTO(FLG_SPHINX_OK,MSG_SKRB_SPHINX_OK)
 @CHKFGOTO(FLG_SUMS_HIEROGLYPH,_SKRB_SPHINX_HIEROGLYPH)
 @OPEN(1)
-◆．．．．．
+◆.....
 
 ;jpn:◆‥‥‥。
 @KEYNP()
@@ -884,14 +884,14 @@ MSG_SKRB_SPHINX;@MiuraAdapted
 
 _SKRB_SPHINX_HIEROGLYPH;marcus
 @OPEN(1)
-◆Ａｒｅ　ｙｏｕ　ａ　ｔｈｉｅｆ，　ａ　ｗａｒｒｉｏｒ，　ｏｒ　ｏｎｅ　ｗｈｏ　ｈａｓ　ｃｏｍｅ　ｔｏ　ｓｅｅ　ｍｙ　ｍａｊｅｓｔｙ？@KEY()↓
-◆Ｙｏｕ　ｍｕｓｔ　ｄｅｃｉｄｅ　ｗｈａｔ　ｙｏｕ　ｒｅａｌｌｙ　ａｒｅ．　　Ｔｈｅｒｅｆｏｒｅ，　ｗｈａｔ　ｗｉｌｌ　ｙｏｕ　ｄｏ？
-;jpn:◆ぬすびとか？@WI(15)↓
-;jpn:　ゆうしゃか？↓
-;jpn:　ただの　とおりすがりのものか？@KEY()↓
+◆Are you a thief, a warrior, or one who has come to see my majesty?@KEY()↓
+◆You must decide what you really are.  Therefore, what will you do?
+;jpn:◆ぬすびとか?@WI(15)↓
+;jpn: ゆうしゃか?↓
+;jpn: ただの とおりすがりのものか?@KEY()↓
 ;jpn:◆いずれのものかは↓
-;jpn:　おのずから　わかる。@WI(20)↓
-;jpn:　さて　どうするのだ？
+;jpn: おのずから わかる。@WI(20)↓
+;jpn: さて どうするのだ?
 @KEYNP()
 @CLOSEALL()
 @SETF(FLG_TEMP_6);スイッチ踏んだ時セリフは一度だけ用
@@ -900,297 +900,297 @@ _SKRB_SPHINX_HIEROGLYPH;marcus
 
 MSG_SKRB_SPHINX_OK;marcus
 @OPEN(1)
-◆Ｗａｒｒｉｏｒｓ，　ｅｎｔｅｒ　ｎｏｗ．@WI(20)↓
-　　Ｓｅａｒｃｈ　ｆｏｒ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_EAGLE_EYE)．
+◆Warriors, enter now.@WI(20)↓
+  Search for the @DSP_GOODS(GDS_TOOL_EAGLE_EYE).
 @KEY()
 ;jpn:◆ゆうしゃたちよ。@WI(15)↓
-;jpn:　はいれ。@WI(20)↓
-;jpn:　@DSP_GOODS(GDS_TOOL_EAGLE_EYE)を　さがしだすのだ。@KEY()
+;jpn: はいれ。@WI(20)↓
+;jpn: @DSP_GOODS(GDS_TOOL_EAGLE_EYE)を さがしだすのだ。@KEY()
 @CLOSEALL()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_DDMM1_SIGN19;marcus
-◆Ｂｒｏｋｅｎ　ｄｏｗｎ，　ｏｌｄ　ｓｕｂｍａｒｉｎｅ．　　Ｔｈｅ　ｙｅｌｌｏｗ　ｃｏｌｏｒ　ｉｓ　ｐｕｒｅｌｙ　ｃｏｉｎｃｉｄｅｎｔａｌ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Broken down, old submarine.  The yellow color is purely coincidental.@KEY()↓
+◆...Brick Road
 
-;jpn:◆くたびれた　サブマリン。↓
-;jpn:　きいろいのは　たまたまである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆くたびれた サブマリン。↓
+;jpn: きいろいのは たまたまである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN21;marcus
-◆Ｒｕｓｔｙ　Ｂｉｃｙｃｌｅ．↓
-　　Ｒｕｓｔ　ｉｓ　ｔｈｅ　ｐｅｒｆｅｃｔ　ｂｒａｋｅ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Rusty Bicycle.↓
+  Rust is the perfect brake.@KEY()↓
+◆...Brick Road
 
-;jpn:◆さびついた　じてんしゃ。↓
-;jpn:　さびこそ　かんぜんなるブレーキ。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆さびついた じてんしゃ。↓
+;jpn: さびこそ かんぜんなるブレーキ。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN20;
-◆Ｔａｘｉ　ｗｉｔｈ　ｎｏ　ｅｎｇｉｎｅ．↓
-　　Ｂｅａｕｔｉｆｕｌ，　ｅｖｅｎ　ｔｈｏｕｇｈ　ｔｈｅ　ｔｈｉｎｇ　ｄｏｅｓｎ’ｔ　ｒｕｎ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Taxi with no engine.↓
+  Beautiful, even though the thing doesn’t run.@KEY()↓
+◆...Brick Road
 
-;jpn:◆エンジンのない　タクシー。↓
-;jpn:　はしらぬものも　うつくしい。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆エンジンのない タクシー。↓
+;jpn: はしらぬものも うつくしい。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN18;marcus
 ;潜水艦、タクシー、自転車のコレクション置き場に
-◆Ｏｌｄ　Ｖｅｈｉｃｌｅ　Ｃｏｌｌｅｃｔｉｏｎ．↓
-　　Ｔｈｉｓ　ｉｓ　ｍｙ　ｓｅｃｒｅｔ　ｈｏｂｂｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Old Vehicle Collection.↓
+  This is my secret hobby.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ふるいのりものの　コレクション。↓
-;jpn:　それは　わたしの　しられざる↓
-;jpn:　しゅみである。‥ブリック・ロード
+;jpn:◆ふるいのりものの コレクション。↓
+;jpn: それは わたしの しられざる↓
+;jpn: しゅみである。‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN10;marcus
-◆Ｉ　ｂｕｉｌｔ　ａ　ｂｕｌｌｅｔｉｎ　ｂｏａｒｄ　ｗｉｔｈｏｕｔ　ａ　ｍｅｓｓａｇｅ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆I built a bulletin board without a message.@KEY()↓
+◆...Brick Road
 
 ;jpn:◆メッセージのないかんばんを↓
-;jpn:　たててみたのだ。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn: たててみたのだ。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN11;marcus
 ;垂れ下がる４本のロープの登り口すべてに
-◆Ｔｈｅ　ｇｒａｓｓ　ｉｓ　ａｌｗａｙｓ　ｇｒｅｅｎｅｒ　ｏｎ　ｔｈｅ　ｏｔｈｅｒ　ｒｏｐｅ．．．　　Ｉ　ｗｏｎｄｅｒ　ｗｈｙ　ｔｈａｔ　ｉｓ．．．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆The grass is always greener on the other rope...  I wonder why that is...@KEY()↓
+◆...Brick Road
 ;DAN:It's like a proverb "the neighbor's grass is always green" or something.
 
-;jpn:◆となりのロープのほうが　なぜか↓
-;jpn:　あやしくみえるものである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆となりのロープのほうが なぜか↓
+;jpn: あやしくみえるものである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
-MSG_READ_DDMM1_SIGN12;marcusこのセリフでよい？
+MSG_READ_DDMM1_SIGN12;marcusこのセリフでよい?
 ;４本ロープのはずれのロープ
-◆Ｉ　ｐｕｔ　ｏｕｔ　ａ　ｂｕｌｌｅｔｉｎ　ｂｏａｒｄ，　ｂｕｔ　ｉｔ’ｓ　ｐｒｏｂａｂｌｙ　ｕｎｎｅｃｅｓｓａｒｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆I put out a bulletin board, but it’s probably unnecessary.@KEY()↓
+◆...Brick Road
 
-;jpn:◆かんばんを　たててはみたが↓
-;jpn:　いらなかったかな。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆かんばんを たててはみたが↓
+;jpn: いらなかったかな。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
-;◆（このさきは　はずれの↓
-;　　かんばん）@KEYNP()
+;◆(このさきは はずれの↓
+;  かんばん)@KEYNP()
 ;』
 
 
 MSG_READ_DDMM1_SIGN17;marcus
-◆Ｔｈｅｒｅ　ｉｓ　ａ　ｕｓｅｆｕｌ　ｉｔｅｍ　ａｔ　ｔｈｅ　ｄｅａｄ−ｅｎｄ　ａｆｔｅｒ　ｙｏｕ　ｍａｋｅ　ｑｕｉｔｅ　ａ　ｌｏｎｇ　ｗａｌｋ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆There is a useful item at the dead−end after you make quite a long walk.@KEY()↓
+◆...Brick Road
 
-;jpn:◆かなりあるいた　ゆきどまりには↓
-;jpn:　かなりべんりな　アイテムがある。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆かなりあるいた ゆきどまりには↓
+;jpn: かなりべんりな アイテムがある。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN16;marcus
 ;トイレのドアのそばに
-◆Ｗｈｉｌｅ　ｙｏｕ　ｅｘｐｌｏｒｅ　ｔｈｅ　ｄｕｎｇｅｏｎ，　ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｍａｋｅ　ａ　ｐｉｔ　ｓｔｏｐ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆ダンジョンに　トライするときは↓
-;jpn:　みもこころも　きよらかにすべし。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+◆While you explore the dungeon, why don’t you make a pit stop.@KEY()↓
+◆...Brick Road
+;jpn:◆ダンジョンに トライするときは↓
+;jpn: みもこころも きよらかにすべし。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN14;marcus
-◆Ｄｏｎ’ｔ　ｂｅ　ａ　ｓｌａｃｋｅｒ．．．　　Ｉｆ　ｙｏｕ　ｗｏｒｋ　ｈａｒｄ，　ｙｏｕ’ｌｌ　ｇｅｔ　ｇｏｏｄ　ｓｔｕｆｆ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆ろうりょくを　おしむなかれ。↓
-;jpn:　されば　よきアイテムが↓
-;jpn:　えられよう。　‥ブリック・ロード
+◆Don’t be a slacker...  If you work hard, you’ll get good stuff.@KEY()↓
+◆...Brick Road
+;jpn:◆ろうりょくを おしむなかれ。↓
+;jpn: されば よきアイテムが↓
+;jpn: えられよう。 ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN15;marcus
 ;看板１５の左どなりに
-◆Ｉ　ｃｏｕｌｄｎ’ｔ　ａｇｒｅｅ　ｍｏｒｅ　ｗｉｔｈ　ｔｈｅ　ｏｐｉｎｉｏｎ　ｏｎ　ｔｈｅ　ｌｅｆｔ　ｂｉｌｌ　ｂｏａｒｄ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆I couldn’t agree more with the opinion on the left bill board.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ひだりのかんばんの　いけんには↓
-;jpn:　まったく　どうかんである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ひだりのかんばんの いけんには↓
+;jpn: まったく どうかんである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN22;marcus
 ;電話ボックスのそばに
-◆Ｉ　ｓｅｔ　ｕｐ　ａ　ｔｅｌｅｐｈｏｎｅ　ｌｉｎｅ　ｉｎ　ｔｈｅ　ｄｕｎｇｅｏｎ．　　Ｉ　ｗｏｎｄｅｒ　ｉｆ　ｔｈａｔ’ｓ　ｃｏｎｔｒｏｖｅｒｓｉａｌ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆I set up a telephone line in the dungeon.  I wonder if that’s controversial.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ダンジョンにこそ　でんわをひく。↓
-;jpn:　さんぴりょうろん　あるであろう。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ダンジョンにこそ でんわをひく。↓
+;jpn: さんぴりょうろん あるであろう。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 ;MSG_READ_DDMM1_UNKNOWN;
-;◆（こうこく　ぼしゅうちゅう↓;
-;　オネットみさき　ふどうさん）@KEYNP()
+;◆(こうこく ぼしゅうちゅう↓;
+; オネットみさき ふどうさん)@KEYNP()
 ;』
 
 
 MSG_READ_DDMM1_SIGN13;marcus
 ;体力回復ベンチのそばに
-◆Ｙｏｕ　ｈａｖｅ　ａ　ｌｏｎｇ　ｗａｙ　ｔｏ　ｇｏ．　　Ｇｅｔｔｉｎｇ　ｓｏｍｅ　ｒｅｓｔ　ａｎｄ　ｒｅｌａｘａｔｉｏｎ　ｍａｙ　ｓａｖｅ　ｙｏｕ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆You have a long way to go.  Getting some rest and relaxation may save you.@KEY()↓
+◆...Brick Road
 
-;jpn:◆まだまだ　さきは　ながいのだ。↓
-;jpn:　ひとやすみする　よゆうが↓
-;jpn:　みをたすける。‥ブリック・ロード
+;jpn:◆まだまだ さきは ながいのだ。↓
+;jpn: ひとやすみする よゆうが↓
+;jpn: みをたすける。‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN8;marcus
-◆Ｏｎｃｅ　ａ　ｄｕｎｇｅｏｎ　ｉｓ　ｂｕｉｌｔ，　ｍｏｎｓｔｅｒｓ　ａｌｗａｙｓ　ｓｔａｒｔ　ｍｏｖｉｎｇ　ｉｎ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Once a dungeon is built, monsters always start moving in.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ダンジョンを　つくると　やがては↓
-;jpn:　モンスターが　すみつくものだ。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ダンジョンを つくると やがては↓
+;jpn: モンスターが すみつくものだ。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN7;marcus
-◆Ｐｌａｃｅ　ａｎ　ｉｔｅｍ　ａｔ　ｔｈｅ　ｄｅａｄ　ｅｎｄ．　　Ｙｏｕ　ａｒｅ　ｆｒｅｅ　ｔｏ　ｔａｋｅ　ｉｔ　ｗｈｅｎｅｖｅｒ　ｙｏｕ　ｗａｎｔ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Place an item at the dead end.  You are free to take it whenever you want.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ゆきどまりには　アイテムをおく。↓
-;jpn:　じゆうかってに　もちさるべし。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ゆきどまりには アイテムをおく。↓
+;jpn: じゆうかってに もちさるべし。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN9;marcus
 ;近くのプレゼントボックスに期待外れのアイテムを
-◆Ｉｔｅｍｓ　ｔｈａｔ　ａｒｅ　ｅａｓｙ　ｔｏ　ｇｅｔ　ｔｏ　ａｒｅ　ｕｓｕａｌｌｙ　ｄｉｓａｐｐｏｉｎｔｉｎｇ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Items that are easy to get to are usually disappointing.@KEY()↓
+◆...Brick Road
 
-;jpn:◆らくなところにある　アイテムは↓
-;jpn:　きたいはずれのばあいが　おおい。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆らくなところにある アイテムは↓
+;jpn: きたいはずれのばあいが おおい。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN3;marcus
-◆Ｉｔ　ｉｓ　ａ　ｄｕｎｇｅｏｎ　ｏｗｎｅｒ’ｓ　ｏｂｌｉｇａｔｉｏｎ　ｔｏ　ｈｉｒｅ　ａ　ｄｏｃｔｏｒ　ａｎｄ　ａ　ｎｕｒｓｅ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆It is a dungeon owner’s obligation to hire a doctor and a nurse.@KEY()↓
+◆...Brick Road
 
-;jpn:◆いしゃと　かんごふをやとうのは↓
-;jpn:　ダンジョンもちぬしの↓
-;jpn:　ぎむである。　‥ブリック・ロード
+;jpn:◆いしゃと かんごふをやとうのは↓
+;jpn: ダンジョンもちぬしの↓
+;jpn: ぎむである。 ‥ブリック・ロード
 @KEYNP()
 』
-;◆（せかいダンジョンきょうかい↓
-;　ほんぶ　けんせつよていち）@KEY()↓
-;　　　　　　　　‥ブリック・ロード@KEYNP()
+;◆(せかいダンジョンきょうかい↓
+; ほんぶ けんせつよていち)@KEY()↓
+;        ‥ブリック・ロード@KEYNP()
 ;』
 ;◆くわしくは↓
-;　ぼきんばこの　せつめいを↓
-;　およみください）@KEYNP()
+; ぼきんばこの せつめいを↓
+; およみください)@KEYNP()
 ;』
 ;看板２の統計のウラをかこうと考えた人へ
-;◆ウラのウラを　かく。これこそ↓
-;　ダンジョンづくりの　ごくいなり。↓
-;　　　　　　　　‥ブリック・ロード@KEYNP()
+;◆ウラのウラを かく。これこそ↓
+; ダンジョンづくりの ごくいなり。↓
+;        ‥ブリック・ロード@KEYNP()
 ;』
 
 
 MSG_READ_DDMM1_SIGN4;marcus
 ;後でこの看板のそばに落ちてくることになるので
-◆Ｋｅｅｐ　ｔｈｉｓ　ｂｏａｒｄ　ｉｎ　ｍｉｎｄ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Keep this board in mind.@KEY()↓
+◆...Brick Road
 
-;jpn:◆この　かんばんは　ぜひとも↓
-;jpn:　きおくに　とどめおくべきだろう。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆この かんばんは ぜひとも↓
+;jpn: きおくに とどめおくべきだろう。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN2;marcus
 ;最初の岐路
-◆Ｍｙ　ｓｔａｔｉｓｔｉｃｓ　ｓｈｏｗ　ａｂｏｕｔ　７０％　ｏｆ　ｔｈｅ　ｐｅｏｐｌｅ　ｇｏ　ｔｏ　ｔｈｅ　ｒｉｇｈｔ　ｆｉｒｓｔ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆My statistics show about ７０％ of the people go to the right first.@KEY()↓
+◆...Brick Road
 
-;jpn:◆わたしの　とうけいによれば↓
-;jpn:　やく７０パーセントのひとは　まず↓
-;jpn:　みぎをえらぶ。‥ブリック・ロード
+;jpn:◆わたしの とうけいによれば↓
+;jpn: やく７０パーセントのひとは まず↓
+;jpn: みぎをえらぶ。‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN6;marcus
-◆Ｙｏｕｒ　ｆｉｒｓｔ　ｇｏａｌ　ｉｓ　ｔｏ　ｒｅａｃｈ　ｔｈｅ　ｆｏｕｒ　ｒｏｐｅｓ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Your first goal is to reach the four ropes.@KEY()↓
+◆...Brick Road
 
-;jpn:◆まず　さいしょに　めざすべきは↓
-;jpn:　４ほんのロープなり。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆まず さいしょに めざすべきは↓
+;jpn: ４ほんのロープなり。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 ;MSG_BRICK_SIGN_6;大きなヒントをあえて与える
-;◆あそぶゆとりが　まったくなければ↓
-;　３ぼんのうちの　ひだりのみちを↓
-;　ゆくがよい。　‥ブリック・ロード@KEYNP()
+;◆あそぶゆとりが まったくなければ↓
+; ３ぼんのうちの ひだりのみちを↓
+; ゆくがよい。 ‥ブリック・ロード@KEYNP()
 ;』
 
 
 MSG_READ_DDMM1_SIGN5;marcus
 ;崖の上にプレゼントボックスが見える場所
-◆Ｅｖｅｎ　ｔｈｏｕｇｈ　ｙｏｕ　ｃａｎ’ｔ　ｇｅｔ　ｕｐ　ｔｈｅｒｅ　ｎｏｗ，　ｙｏｕ　ｍｉｇｈｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｌａｔｅｒ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Even though you can’t get up there now, you might be able to later.@KEY()↓
+◆...Brick Road
 
-;jpn:◆いまは　ゆけなくとも　いずれ↓
-;jpn:　たどりつくばしょも　ある。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆いまは ゆけなくとも いずれ↓
+;jpn: たどりつくばしょも ある。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM1_SIGN1;
 ;最初にチェックする看板
-◆Ｗｅｌｃｏｍｅ．↓
-　　Ｙｏｕ　ａｒｅ　ｉｎｓｉｄｅ　ｏｆ　ｍｙ　ｂｏｄｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Welcome.↓
+  You are inside of my body.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ようこそ　あるいは　ウエルカム。↓
-;jpn:　ここは　わたしの　からだのなか。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ようこそ あるいは ウエルカム。↓
+;jpn: ここは わたしの からだのなか。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
@@ -1198,159 +1198,159 @@ MSG_READ_DDMM1_SIGN1;
 
 MSG_READ_DDMM2_SIGN23;marcus
 ;はずれロープを選んだ人に
-◆Ｉｆ　ｙｏｕ　ｗｏｒｋ　ｈａｒｄ，　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｉｍｅ　ｔｏ　ｇｅｔ　ｂｕｒｎｅｄ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆せいだせば　こおるまもなし↓
-;jpn:　みずぐるま。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+◆If you work hard, you don’t have time to get burned.@KEY()↓
+◆...Brick Road
+;jpn:◆せいだせば こおるまもなし↓
+;jpn: みずぐるま。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN24;marcus
 ;はずれロープを選んだ人に
-◆Ｌｅａｒｎ　ｆｒｏｍ　ｙｏｕｒ　ｍｉｓｔａｋｅｓ．@KEY()↓
-◆Ｆｏｌｌｏｗ　ｔｈｉｓ，　ａｎｄ　ｙｏｕ’ｒｅ　ｂｏｕｎｄ　ｔｏ　ｂｅ　ｓｕｃｃｅｓｓｆｕｌ　ｉｎ　ＥａｒｔｈＢｏｕｎｄ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆しっぱいは　せいこうの↓
-;jpn:　マザー２である。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+◆Learn from your mistakes.@KEY()↓
+◆Follow this, and you’re bound to be successful in EarthBound.@KEY()↓
+◆...Brick Road
+;jpn:◆しっぱいは せいこうの↓
+;jpn: マザー２である。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN25;marcus
 ;はずれロープを選んだ人に
-◆Ｙｏｕ　ｈａｖｅ　ａ　ｓｔｒｏｎｇ−ｌｏｏｋｉｎｇ　ｂｏｄｙ．　　Ｗｏｕｌｄｎ’ｔ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｂｅ　ａ　ｄｕｎｇｅｏｎ　ｗｏｒｋｅｒ？@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆You have a strong−looking body.  Wouldn’t you like to be a dungeon worker?@KEY()↓
+◆...Brick Road
 
-;jpn:◆いいからだを　しておるな。↓
-;jpn:　きみも　ダンジョンしょくにんに↓
-;jpn:　ならぬか？　　‥ブリック・ロード
+;jpn:◆いいからだを しておるな。↓
+;jpn: きみも ダンジョンしょくにんに↓
+;jpn: ならぬか?  ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN35;marcus
 ;３階に登るロープの下に
-◆Ｔｈｅｒｅ　ａｒｅ　ｌｏｔｓ　ｏｆ　ｍｏｎｓｔｅｒｓ　ｕｐ　ｔｈｅｒｅ，　ｂｕｔ　ｄｏｎ’ｔ　ｓｔｒｅｓｓ　ｏｕｔ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆There are lots of monsters up there, but don’t stress out.@KEY()↓
+◆...Brick Road
 
-;jpn:◆このうえには　モンスターが↓
-;jpn:　うようよいるであろう。しんぱいは↓
-;jpn:　いらぬ。　　　‥ブリック・ロード
+;jpn:◆このうえには モンスターが↓
+;jpn: うようよいるであろう。しんぱいは↓
+;jpn: いらぬ。   ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN34;marcus
-◆Ｄｕｎｇｅｏｎ　ｅｘｐｌｏｒａｔｉｏｎ　ｉｓ　ｔｏｕｇｈ，　ｂｕｔ　ｉｔ’ｓ　ａｌｓｏ　ｆｕｎ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Dungeon exploration is tough, but it’s also fun.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ダンジョンとは　つらいものなり。↓
-;jpn:　そして　また　たのしいものなり。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ダンジョンとは つらいものなり。↓
+;jpn: そして また たのしいものなり。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN29;marcus
 ;後になって利用する穴を先に見せておく
-◆Ｔｈａｔ’ｓ　ａ　ｈｏｌｅ　ｄｏｗｎ　ｂｅｌｏｗ．　　Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｏ　ｗｏｒｒｙ　ａｂｏｕｔ　ｔｈｉｓ　ｆｏｒ　ｎｏｗ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆したにみえるのは　あなである。↓
-;jpn:　いまは　ふかく　かんがえなくとも↓
-;jpn:　よいであろう。‥ブリック・ロード
+◆That’s a hole down below.  You don’t have to worry about this for now.@KEY()↓
+◆...Brick Road
+;jpn:◆したにみえるのは あなである。↓
+;jpn: いまは ふかく かんがえなくとも↓
+;jpn: よいであろう。‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN26;
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｓｅｃｏｎｄ　ｆｌｏｏｒ　ｏｆ　ｍｙ　ｂｏｄｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆This is the second floor of my body.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ここは　わたしのからだの↓
-;jpn:　２かいである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ここは わたしのからだの↓
+;jpn: ２かいである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN27;marcus
-◆Ｗｈａｔ’ｓ　ａ　ｄｕｎｇｅｏｎ？　　Ｔｈａｔ　ｉｓ　ｍｙ　ｅｔｅｒｎａｌ　ｑｕｅｓｔｉｏｎ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆What’s a dungeon?  That is my eternal question.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ダンジョンとは　なんぞや？↓
-;jpn:　わたしの　えいえんのもんだい。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ダンジョンとは なんぞや?↓
+;jpn: わたしの えいえんのもんだい。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN33;marcus
 ;アイテムのない行き止まりに
-◆Ｔｈｅｒｅ　ｉｓ　ａｎ　ｉｔｅｍ　ａｔ　ｔｈｅ　ｄｅａｄ　ｅｎｄ，@KEY()↓
-◆ｂｕｔ　Ｉ　ｈａｖｅ　ｂｅｅｎ　ｋｎｏｗｎ　ｔｏ　ｂｅ　ｗｒｏｎｇ　ｏｃｃａｓｉｏｎａｌｌｙ．　　Ｓｏｒｒｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆There is an item at the dead end,@KEY()↓
+◆but I have been known to be wrong occasionally.  Sorry.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ゆきどまりには　アイテムがある。↓
-;jpn:　ただし　れいがいもあるであろう。↓
-;jpn:　すまぬ。　　　‥ブリック・ロード
+;jpn:◆ゆきどまりには アイテムがある。↓
+;jpn: ただし れいがいもあるであろう。↓
+;jpn: すまぬ。   ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN32;marcus
-◆Ｈｅｒｅ　ｉｔ　ｓｍｅｌｌｓ　ｌｉｋｅ　ｆｌｏｗｅｒｓ．　　Ｉｆ　ｙｏｕ　ｃａｎ’ｔ　ｓｍｅｌｌ　ｉｔ，　ｙｏｕｒ　ｎｏｓｅ　ｍｕｓｔ　ｂｅ　ｓｔｕｆｆｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Here it smells like flowers.  If you can’t smell it, your nose must be stuffy.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ここに　ただよう　フローラルの↓
-;jpn:　かおり。におわぬものは　はなが↓
-;jpn:　つまっておる。‥ブリック・ロード
+;jpn:◆ここに ただよう フローラルの↓
+;jpn: かおり。におわぬものは はなが↓
+;jpn: つまっておる。‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN31;marcus
-◆Ｔｈｉｓ　ｍｕｓｉｃ　ｉｓ　ｏｎｅ　ｏｆ　ｍｙ　ｇｒｅａｔｅｓｔ　ａｃｃｏｍｐｌｉｓｈｍｅｎｔｓ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆ここに　ながれる　おんがくは↓
-;jpn:　わたしの　じしんさくである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+◆This music is one of my greatest accomplishments.@KEY()↓
+◆...Brick Road
+;jpn:◆ここに ながれる おんがくは↓
+;jpn: わたしの じしんさくである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN28;marcus
-◆Ｉｎｓｉｄｅ　ｔｈｅ　ｄｕｎｇｅｏｎ，　ｆｌａｓｈ　ｐｈｏｔｏｇｒａｐｈｙ　ｉｓ　ｐｒｏｈｉｂｉｔｅｄ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Inside the dungeon, flash photography is prohibited.@KEY()↓
+◆...Brick Road
 
 ;jpn:◆ダンジョンない↓
-;jpn:　フラッシュさつえい　おことわり。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn: フラッシュさつえい おことわり。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM2_SIGN30;marcus
-◆Ｙｏｕ　ａｒｅ　ｓｔａｎｄｉｎｇ　ｒｉｇｈｔ　ａｒｏｕｎｄ　ｍｙ　ｂｅｌｌｙ　ｂｕｔｔｏｎ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆You are standing right around my belly button.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ここは　ちょうど　わたしの↓
-;jpn:　へその　あたりである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ここは ちょうど わたしの↓
+;jpn: へその あたりである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_DDMM3_SIGN36;
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｔｈｉｒｄ　ｆｌｏｏｒ　ｏｆ　ｍｙ　ｂｏｄｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆This is the third floor of my body.@KEY()↓
+◆...Brick Road
 
-;jpn:◆ここは　わたしのからだの↓
-;jpn:　３かいである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ここは わたしのからだの↓
+;jpn: ３かいである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
@@ -1358,13 +1358,13 @@ MSG_READ_DDMM3_SIGN36;
 MSG_READ_DDMM3_SIGN39;＠モンスター名確認marcus
 ;いわば「モンスター動物園」
 ;◆「ダックダック」↓
-◆”Ｃｒａｚｅｄ　Ｄｕｃｋ”↓
-　　Ｔｈｅｙ　ｃａｎ　ｂｅ　ａ　ｎｉｃｅ　ｐｅｔ　ｉｆ　ｔｈｅｙ　ｓｔａｙ　ｆａｒ　ａｗａｙ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆”Crazed Duck”↓
+  They can be a nice pet if they stay far away.@KEY()↓
+◆...Brick Road
 
 ;jpn:◆「つっぱりダック」↓
-;jpn:　はなれてさえいれば　よきペット。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn: はなれてさえいれば よきペット。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
@@ -1372,60 +1372,60 @@ MSG_READ_DDMM3_SIGN39;＠モンスター名確認marcus
 MSG_READ_DDMM3_SIGN37;＠モンスター名確認marcus
 ;いわば「モンスター動物園」
 ;◆「あばれやぎ」↓
-◆”Ｒｏｗｄｙ　Ｇｏａｔ”↓
-　　Ｔｈｅｙ　ａｒｅ　ａ　ｒｅａｌｌｙ　ｒｏｗｄｙ　ｋｉｎｄ　ｏｆ　ｇｏａｔ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆”Rowdy Goat”↓
+  They are a really rowdy kind of goat.@KEY()↓
+◆...Brick Road
 
 ;jpn:◆「あばれゴート」↓
-;jpn:　あばれるタイプの　やぎである。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn: あばれるタイプの やぎである。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM3_SIGN41;marcus
 ;４階に登るロープの下に
-◆”Ｇｏｏｄ　Ｊｏｂ，　ｙｏｕ　ｆｉｎａｌｌｙ　ｍａｄｅ　ｉｔ！”@KEY()↓
-◆Ｔｈｅｒｅ　ｉｓ　ａ　ｂｏａｒｄ　ｕｐｓｔａｉｒｓ　ｔｈａｔ　ｓａｙｓ　ｔｈａｔ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆よくぞ　ここまで　たどりついた。↓
-;jpn:　というかんばんが　うえのかいに↓
-;jpn:　あるであろう。‥ブリック・ロード
+◆”Good Job, you finally made it!”@KEY()↓
+◆There is a board upstairs that says that.@KEY()↓
+◆...Brick Road
+;jpn:◆よくぞ ここまで たどりついた。↓
+;jpn: というかんばんが うえのかいに↓
+;jpn: あるであろう。‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM3_SIGN40;marcus
 ;回復ベンチ、プレゼントボックスなどがある一角に
-◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｔａｋｅ　ａ　ｎｉｃｅ，　ｌｉｔｔｌｅ　ｒｅｓｔ　ｈｅｒｅ？@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
-;jpn:◆しばし　いこいの　ひとときを↓
-;jpn:　すごされたし。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+◆Why don’t you take a nice, little rest here?@KEY()↓
+◆...Brick Road
+;jpn:◆しばし いこいの ひとときを↓
+;jpn: すごされたし。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
 MSG_READ_DDMM3_SIGN38;marcus＠モンスター名
 ;いわば「モンスター動物園」
-◆”Ｓｌｉｍｙ　ｌｉｔｔｌｅ　ｐｉｌｅ”↓
-　　Ｈｅ　ｈａｓ　ａ　ｂａｄ　ｈａｂｉｔ　ｏｆ　ｂｕｒｐｉｎｇ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆”Slimy little pile”↓
+  He has a bad habit of burping.@KEY()↓
+◆...Brick Road
 ;jpn:◆「ぐちゃぐちゃ」↓
-;jpn:　ときどき　ちいさなゲップをする。↓;コゲップ音？
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn: ときどき ちいさなゲップをする。↓;コゲップ音?
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_DDMM4_SIGN42;marcus
-◆Ｇｏｏｄ　Ｊｏｂ．↓
-　　Ｙｏｕ　ｆｉｎａｌｌｙ　ｍａｄｅ　ｉｔ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Good Job.↓
+  You finally made it.@KEY()↓
+◆...Brick Road
 
-;jpn:◆よくぞ　ここまで　たどりついた。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆よくぞ ここまで たどりついた。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
@@ -1433,34 +1433,34 @@ MSG_READ_DDMM4_SIGN42;marcus
 MSG_READ_DDMM4_SIGN43;marcusβ＄
 ;１回目の帰路となる穴
 ;◆ひとつめのあな。↓
-◆”Ｒｅｔｕｒｎ　Ｈｏｌｅ”↓
-　　Ｊｕｍｐ　ｉｎ　ｗｉｔｈ　ａｌｌ　ｙｏｕｒ　ｃｏｕｒａｇｅ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆”Return Hole”↓
+  Jump in with all your courage.@KEY()↓
+◆...Brick Road
 
 ;jpn:◆「おかえりあな」↓
-;jpn:　ゆうきをだして　とびこむべし。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn: ゆうきをだして とびこむべし。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 ;-------------------------------------------------
 
 MSG_BRICK_SIGN_46;marcus		←入り口を入ってすぐの場所に
-◆Ｗｅｌｃｏｍｅ　ｔｏ　ｍｙ　ｍｏｄｅｓｔ　ｄｕｎｇｅｏｎ！@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Welcome to my modest dungeon!@KEY()↓
+◆...Brick Road
 
-;jpn:◆ようこそ　わたしの↓
-;jpn:　ていよさんダンジョンに！↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆ようこそ わたしの↓
+;jpn: ていよさんダンジョンに!↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 MSG_BRICK_SIGN_47;marcus＄β
-◆Ｗａｔｃｈ　ｆｏｒ　ｆａｌｌｉｎｇ　ｍａｔｅｒｉａｌｓ！@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Watch for falling materials!@KEY()↓
+◆...Brick Road
 
-;jpn:◆らっかぶつに　ちゅうい！↓
+;jpn:◆らっかぶつに ちゅうい!↓
 ↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 @CLOSEALL()
 @CHKFGOTO(FLG_PHOTO_8,MSG_END)
@@ -1469,121 +1469,121 @@ MSG_BRICK_SIGN_47;marcus＄β
 』
 ;MSG_BRICK_SIGN_47;		←回復ベンチ、プレゼントボックス
 ;◆いこいのひろば。↓
-;　どうぞ　ごりようください。↓;		　などがある一角に
-;　　　　　　　　‥ブリック・ロード@KEYNP()
+; どうぞ ごりようください。↓;		 などがある一角に
+;        ‥ブリック・ロード@KEYNP()
 ;』
 
 MSG_BRICK_SIGN_48;marcus		←出口の直前に
-◆Ｗａｙ　ｔｏ　ｇｏ．↓
-　　Ｐｌｅａｓｅ　ｃｏｍｅ　ｂａｃｋ　ａｇａｉｎ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆Way to go.↓
+  Please come back again.@KEY()↓
+◆...Brick Road
 
-;jpn:◆たいへん　よく　できました。↓
-;jpn:　どうぞ　また　おこしください。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn:◆たいへん よく できました。↓
+;jpn: どうぞ また おこしください。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 ;-------------------------------------------------
 
 MSG_READ_DGPM1_SIGN1;marcus
-◆（”Ｓａｆｅｔｙ　Ｆｉｒｓｔ”↓
-　　Ｄｏｎ’ｔ　ｇｅｔ　ｉｎｊｕｒｅｄ！　　Ｂｕｒｐ！）
+◆(”Safety First”↓
+  Don’t get injured!  Burp!)
 
-;jpn:◆（「あんぜん　だいいち」↓
-;jpn:　ケガをするな！　ゲップをしろ！）
+;jpn:◆(「あんぜん だいいち」↓
+;jpn: ケガをするな! ゲップをしろ!)
 @KEYNP()
 』
-;◆「ゲップーは　まんぞくのしるし」
-;　（ひんしつ　だいいち。↓
-;　ハエミツせいさんしゃ　くみあい）@KEYNP()
+;◆「ゲップーは まんぞくのしるし」
+; (ひんしつ だいいち。↓
+; ハエミツせいさんしゃ くみあい)@KEYNP()
 ;』
 
 ;-------------------------------------------------
 
 MSG_READ_GMIM0_SIGN3;marcus
 ;道具屋グミの看板
-◆（Ｉｔｅｍ　ｓｈｏｐ　ｈｅｒｅ．）
+◆(Item shop here.)
 ;＠テンダ風に
-;jpn:◆（どうぐや　ここ）
+;jpn:◆(どうぐや ここ)
 @KEYNP()
 』
 
 MSG_READ_GMIM0_SIGN2;marcus
 ;温泉の看板
-◆（Ｈｏｔ　Ｓｐｒｉｎｇｓ．　　Ｇｏｏｄ　ａｌｌ　ｏｖｅｒ）
-;jpn:◆（おんせん。@WI(20)きく　なんでも）
+◆(Hot Springs.  Good all over)
+;jpn:◆(おんせん。@WI(20)きく なんでも)
 @KEYNP()
 』
 ;蘇生グミの看板
-;◆ヒーラー　ここ。@KEYNP()
+;◆ヒーラー ここ。@KEYNP()
 ;』
 
 MSG_READ_GMIM0_SIGN1;
 ;宿グミの看板
-◆（Ｈｏｔｅｌ　ｈｅｒｅ．）
+◆(Hotel here.)
 
-;jpn:◆（やどや　ここ）
+;jpn:◆(やどや ここ)
 @KEYNP()
 』
 
 MSG_READ_GMIM0_SIGN4;marcus
 ;電話脇の看板
-◆（Ｗｅｉｒｄ　ｊｕｎｋ．）
+◆(Weird junk.)
 
-;jpn:◆（わからないガラクタ）
+;jpn:◆(わからないガラクタ)
 @KEYNP()
 』
-;◆ひだり　でんわいわ。↓
-;　グミぞく　つかわない　おれたち。@KEYNP()
+;◆ひだり でんわいわ。↓
+; グミぞく つかわない おれたち。@KEYNP()
 ;』
 ;-------------------------------------------------
 ;MSG_TEST_PRESENTBOX;
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＰＲＥＳＥＮＴＢＯＸです。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  PRESENTBOXです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_ANNOUNCE_U
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＡＮＮＯＵＮＣＥ　Ｕです。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  ANNOUNCE Uです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_ANNOUNCE_D
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＡＮＮＯＵＮＣＥ　Ｄです。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  ANNOUNCE Dです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_KANBAN_1
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＫＡＮＢＡＮ　１です。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  KANBAN １です。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_KANBAN_2L
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＫＡＮＢＡＮ　２Ｌです。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  KANBAN ２Lです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_KANBAN_2R
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＫＡＮＢＡＮ　２Ｒです。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  KANBAN ２Rです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_TALKWOOD_L
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＴＡＬＫＷＯＯＤ　Ｌです。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  TALKWOOD Lです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_TALKWOOD_R
-;◆（メッセージの　テスト↓
-;　　ラベルは↓
-;　　ＴＡＬＫＷＯＯＤ　Ｒです。）@KEYNP()
+;◆(メッセージの テスト↓
+;  ラベルは↓
+;  TALKWOOD Rです。)@KEYNP()
 ;@!
 ;-------------------------------------------------
 
@@ -1592,116 +1592,116 @@ MSG_READ_GMIM0_SIGN4;marcus
 ;追加看板
 
 MSG_ONET_KANBAN_3;marcus
-◆（Ｗｅｌｃｏｍｅ　ｔｏ　ｂｅａｕｔｉｆｕｌ　Ｏｎｅｔｔ，　ｔｈｅ　ｗｉｌｄ　ｆｌｏｗｅｒ　ｏｆ　ＥａｇｌｅＬａｎｄ．）
-;jpn:◆（ようこそ↓
-;jpn:　イーグルランドにさく　ののはな↓
-;jpn:　ビューティフル　オネットへ）
+◆(Welcome to beautiful Onett, the wild flower of EagleLand.)
+;jpn:◆(ようこそ↓
+;jpn: イーグルランドにさく ののはな↓
+;jpn: ビューティフル オネットへ)
 @KEYNP()
 』
 MSG_ONET_KANBAN_5;marcus
-◆（Ｃｌｅａｎ，　ｑｕｉｅｔ　ａｎｄ　ｂｅａｕｔｉｆｕｌ　Ｏｎｅｔｔ−−　ｒｕｎ　ｂｙ　Ｍａｙｏｒ　Ｐｉｒｋｌｅ．．．）
-;jpn:◆（せいけつで　しずかなまち↓
-;jpn:　ビューティフル　オネットは↓
-;jpn:　ピカールしちょうとともに‥‥）
+◆(Clean, quiet and beautiful Onett−− run by Mayor Pirkle...)
+;jpn:◆(せいけつで しずかなまち↓
+;jpn: ビューティフル オネットは↓
+;jpn: ピカールしちょうとともに‥‥)
 @KEYNP()
 』
 MSG_ONET_KANBAN_7;marcus
-◆（Ｉｆ　ｙｏｕ　ｈａｖｅ　ａｎｙ　ｔｒｏｕｂｌｅ，　ｃｏｎｓｕｌｔ　ｙｏｕｒ　ｋｉｎｄ−ｈｅａｒｔｅｄ　ｍａｙｏｒ！）
-;jpn:◆（こまったことが　あったら↓
-;jpn:　いつでも　やさしい　しちょうに↓
-;jpn:　そうだんしようね！）
+◆(If you have any trouble, consult your kind−hearted mayor!)
+;jpn:◆(こまったことが あったら↓
+;jpn: いつでも やさしい しちょうに↓
+;jpn: そうだんしようね!)
 @KEYNP()
 』
 MSG_ONET_KANBAN_12;marcus
-◆（Ｇｏｏｄ　ａｎｄ　Ｓｔｒｏｎｇ，　ｔｈｅ　ｋｉｄｓ　ｏｆ　Ｏｎｅｔｔ．．．↓
-　　Ｂ．Ｈ．　Ｐｉｒｋｌｅ）
-;jpn:◆（よいこ　つよいこ↓
-;jpn:　オネットのこ‥‥。↓
-;jpn:　　　　　　　Ｇ・Ｈ・ピカール　）
+◆(Good and Strong, the kids of Onett...↓
+  B.H. Pirkle)
+;jpn:◆(よいこ つよいこ↓
+;jpn: オネットのこ‥‥。↓
+;jpn:       G・H・ピカール )
 @KEYNP()
 』
 MSG_ONET_KANBAN_15;marcus
-◆（Ｔｈｅ　ｐｅｏｐｌｅ　ｏｆ　Ｏｎｅｔｔ　ａｒｅ　ｐｒｏｕｄ　ｏｆ　Ｂ．Ｈ．　Ｐｉｒｋｌｅ！@KEY()↓
-◆Ｔｈｅ　Ｍａｙｏｒ　ｉｓ　ｐｒｏｕｄ　ｏｆ　ｔｈｅ　ｐｅｏｐｌｅ　ｏｆ　Ｏｎｅｔｔ．）
-;jpn:◆（オネットしみんは↓
-;jpn:　しちょうの　ほこり。@KEY()↓
-;jpn:◆Ｇ・Ｈ・ピカール↓
-;jpn:　しみんの　ほこり！）
+◆(The people of Onett are proud of B.H. Pirkle!@KEY()↓
+◆The Mayor is proud of the people of Onett.)
+;jpn:◆(オネットしみんは↓
+;jpn: しちょうの ほこり。@KEY()↓
+;jpn:◆G・H・ピカール↓
+;jpn: しみんの ほこり!)
 @KEYNP()
 』
 MSG_ONET_KANBAN_16;marcus
-◆（Ｈｅｌｐ　Ｗａｎｔｅｄ　−　Ｐｏｌｉｃｅｍｅｎ　ｔｏ　ｃｌｏｓｅ　ｒｏａｄｓ．↓
-　　Ｏｎｅｔｔ　Ｐｏｌｉｃｅ　Ｄｅｐｔ．）
-;jpn:◆（「どうろふうさ」よう↓
-;jpn:　けいさつかん　ぼしゅうちゅう。↓
-;jpn:　　　　　　オネットけいさつ　）
+◆(Help Wanted − Policemen to close roads.↓
+  Onett Police Dept.)
+;jpn:◆(「どうろふうさ」よう↓
+;jpn: けいさつかん ぼしゅうちゅう。↓
+;jpn:      オネットけいさつ )
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN5;marcus
-◆（Ｔｗｏｓｏｎ　ｉｓ　ｄｉｆｆｅｒｅｎｔ　ｆｒｏｍ　Ｏｎｅｔｔ．　　Ｗｅ　ｈａｖｅ　Ｂｕｒｇｌｉｎ　Ｐａｒｋ．）
-;jpn:◆（ツーソンは　オネットとちがう。@WI(20)↓
-;jpn:　ヌスットひろばも　ゆるしてる）
+◆(Twoson is different from Onett.  We have Burglin Park.)
+;jpn:◆(ツーソンは オネットとちがう。@WI(20)↓
+;jpn: ヌスットひろばも ゆるしてる)
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN6;marcus
-◆（Ｔｏｎｉｇｈｔ，　ｔｈｅ　ｂｏｏｇｉｅ　ｉｓ　ｂａｃｋ！↓
-　　Ｉｔ’ｓ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ’ｓ　ｎｉｇｈｔ！）
-;jpn:◆（こんやはブギーバックなかんじ。@WI(20)↓
-;jpn:　　トンズラブラザーズナイト！）
+◆(Tonight, the boogie is back!↓
+  It’s the Runaway Five’s night!)
+;jpn:◆(こんやはブギーバックなかんじ。@WI(20)↓
+;jpn:  トンズラブラザーズナイト!)
 @KEYNP()
 』
 
 MSG_READ_TWSN_SIGN7;marcus
-◆（Ｄｏ　ｙｏｕ　ｐｌａｙ　ｓｏｍｅ　ｓｐｏｒｔｓ？　　．．．Ｉｆ　ｙｏｕ　ｄｏ，　ｔｈａｔ’ｓ　ｆｉｎｅ　ｂｙ　ｕｓ．@KEY()↓
-◆”Ｔｗｏｓｏｎ　Ａｔｈｌｅｔｉｃ　Ｃｏｍｍｉｔｔｅｅ”）
-;jpn:◆（きみは　スポーツもしてるか？@WI(20)↓
-;jpn:　‥‥してるならいい。@WI(30)↓
-;jpn:　「ツーソンたいいくきょうかい」）
+◆(Do you play some sports?  ...If you do, that’s fine by us.@KEY()↓
+◆”Twoson Athletic Committee”)
+;jpn:◆(きみは スポーツもしてるか?@WI(20)↓
+;jpn: ‥‥してるならいい。@WI(30)↓
+;jpn: 「ツーソンたいいくきょうかい」)
 @KEYNP()
 』
 
 MSG_READ_THRK_SIGN2;marcus
-◆（Ｉ　ｗｏｎ’ｔ　ｓａｙ　ａｎｙｔｈｉｎｇ　ｔｏ　ｙｏｕ　ａｄｕｌｔｓ，@KEY()↓
-◆ｂｕｔ　Ｉ　ｗｏｕｌｄ　ｓｔｒｅｓｓ　ｔｏ　ｙｏｕ　ｙｏｕｎｇ　ｋｉｄｓ，　ｄｏｎ’ｔ　ｐｌａｙ　ｆｏｒ　ｍｏｒｅ　ｔｈａｎ　ｔｗｏ　ｈｏｕｒｓ．@KEY()↓
-◆Ａｎｙｔｈｉｎｇ　ｅｘｃｅｓｓｉｖｅ　ｉｓ　ｎｏ　ｇｏｏｄ．@KEY()↓
-◆Ｐａｒｅｎｔｓ　Ｏｐｐｏｓｉｎｇ　Ｏｂｓｅｓｓｉｏｎ　Ｐｌａｎ）
+◆(I won’t say anything to you adults,@KEY()↓
+◆but I would stress to you young kids, don’t play for more than two hours.@KEY()↓
+◆Anything excessive is no good.@KEY()↓
+◆Parents Opposing Obsession Plan)
 ;DAN:Please name the better one for this group.
 
-;jpn:◆（アダルトな　きみには↓
-;jpn:　いわないけれど@KEY()↓
-;jpn:◆ヤングな　きみは↓
-;jpn:　２じかんいじょうゲームを↓
-;jpn:　しないようにしよう。@KEY()↓
-;jpn:◆なんでも　やりすぎは↓
-;jpn:　よくないぞ。↓
-;jpn:　　　おやごころうんどうのかい）
+;jpn:◆(アダルトな きみには↓
+;jpn: いわないけれど@KEY()↓
+;jpn:◆ヤングな きみは↓
+;jpn: ２じかんいじょうゲームを↓
+;jpn: しないようにしよう。@KEY()↓
+;jpn:◆なんでも やりすぎは↓
+;jpn: よくないぞ。↓
+;jpn:   おやごころうんどうのかい)
 @KEYNP()
 』
 MSG_READ_THRK_SIGN4;marcus
-◆Ｔｈｅｒｅ’ｓ　ｇｒａｆｆｉｔｉ　ｈｅｒｅ．@KEY()↓
-◆（．．．Ｊｕｓｔ　ｐｌａｙ　ｉｔ！）
+◆There’s graffiti here.@KEY()↓
+◆(...Just play it!)
 ;jpn:◆かんばんには↓
-;jpn:　らくがきが　されていた。@KEY()↓
-;jpn:◆（おとなも　こどもも↓
-;jpn:　おねーさんも）
+;jpn: らくがきが されていた。@KEY()↓
+;jpn:◆(おとなも こどもも↓
+;jpn: おねーさんも)
 @KEYNP()
 』
-;◆（４５さいを　すぎても↓
-;　ゲームをつくっている↓
-;　ひとがいます。@KEY()↓
-;◆なまえは　いいません）@KEY()↓
+;◆(４５さいを すぎても↓
+; ゲームをつくっている↓
+; ひとがいます。@KEY()↓
+;◆なまえは いいません)@KEY()↓
 ;◆かんばんには↓
-;　らくがきが　されていた。
+; らくがきが されていた。
 
 MSG_READ_THRK_SIGN7;marcus
-◆Ｔｈｅｒｅ’ｓ　ｇｒａｆｆｉｔｉ　ｈｅｒｅ．@KEY()↓
-◆（Ｓｏｆｔｗａｒｅ　Ｄｅｖｅｌｏｐｍｅｎｔ　Ｈｏｕｓｅ　ｗｈｅｒｅ　ｙｏｕ　ｃａｎ　ｓｅｅ　Ｍｔ．　Ｆｕｊｉ　−　ＨＡＬ　Ｌａｂｏｒａｔｏｒｙ）
+◆There’s graffiti here.@KEY()↓
+◆(Software Development House where you can see Mt. Fuji − HAL Laboratory)
 ;jpn:◆かんばんには↓
-;jpn:　らくがきが　されていた。@KEY()↓
-;jpn:◆（ふじさんのみえるソフトハウス↓
-;jpn:　　　　　ＨＡＬけんきゅうじょ）
+;jpn: らくがきが されていた。@KEY()↓
+;jpn:◆(ふじさんのみえるソフトハウス↓
+;jpn:     HALけんきゅうじょ)
 @KEYNP()
 』
 
@@ -1718,11 +1718,11 @@ MSG_CHECK_BOOKSHELF6;
 @!
 ;無口を直す本
 _BOOKSHELF_OTHER;marcus
-◆（Ｔｈｅｒｅ　ａｒｅ　ｂｏｏｋｓ　ｂｅｓｉｄｅｓ　”Ｏｖｅｒｃｏｍｉｎｇ　ｓｈｙｎｅｓｓ．”）
+◆(There are books besides ”Overcoming shyness.”)
 
-;jpn:◆（このへんは↓
-;jpn:　「むくちをなおすほん」↓
-;jpn:　いがいのほんが　ならんでいる）
+;jpn:◆(このへんは↓
+;jpn: 「むくちをなおすほん」↓
+;jpn: いがいのほんが ならんでいる)
 @KEYNP()
 @!
 MSG_CHECK_BOOKSHELF4;
@@ -1732,10 +1732,10 @@ MSG_CHECK_BOOKSHELF4;
 @KEYNP()
 @!
 _BOOKSHELF_MUKUCHI;marcus
-◆（Ｙｏｕ　ｆｏｕｎｄ　ｔｈｅ　ｂｏｏｋ，↓
-　　”Ｏｖｅｒｃｏｍｉｎｇ　Ｓｈｙｎｅｓｓ”！）
-;jpn:◆（@DSP_GOODS(GDS_TOOL_BOOK_CHAT)を↓
-;jpn:　みつけた！）
+◆(You found the book,↓
+  ”Overcoming Shyness”!)
+;jpn:◆(@DSP_GOODS(GDS_TOOL_BOOK_CHAT)を↓
+;jpn: みつけた!)
 @KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_BOOKSHELF_MUKUCHI_GOODSFULL)
@@ -1749,38 +1749,38 @@ _BOOKSHELF_MUKUCHI;marcus
 @!
 
 _BOOKSHELF_MUKUCHI_GOODSFULL;marcus
-◆（Ｂｕｔ　ｌｏｏｋ，　ａｔ　ｔｈｉｓ　ｇｌｏｒｉｏｕｓ　ｍｏｍｅｎｔ　ｙｏｕ　ｈａｖｅ　ｎｏ　ｍｏｒｅ　ｒｏｏｍ．）
-;jpn:◆（しかし　このだいじなときに↓
-;jpn:　もちものがいっぱいなのであった）
+◆(But look, at this glorious moment you have no more room.)
+;jpn:◆(しかし このだいじなときに↓
+;jpn: もちものがいっぱいなのであった)
 @KEY()↓
 @!
 
 ;-------------------------------------------------
 
 MSG_CHECK_GAME_MACHINE;marcusゲームマシンをチェック共通
-◆Ｎｏ　ｐｒｏｂｌｅｍ　ｈｅｒｅ．
-;jpn:◆ノー　プロブレム。@KEYNP()
+◆No problem here.
+;jpn:◆ノー プロブレム。@KEYNP()
 』
 ;-------------------------------------------------
 MSG_READ_DDMM1_SIGN44;marcus
-◆Ｔｈｉｓ　ｉｓ　ａ　ｇｉｆｔ　ｆｒｏｍ　Ｄｒ．　Ａｎｄｏｎｕｔｓ．　　Ｂｅ　ｃａｒｅｆｕｌ　ｈｏｗ　ｙｏｕ　ｕｓｅ　ｉｔ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆This is a gift from Dr. Andonuts.  Be careful how you use it.@KEY()↓
+◆...Brick Road
 
 ;jpn:◆アンドーナッツはかせからの↓
-;jpn:　いただきもの。だいじにつかおう。↓
-;jpn:　　　　　　　　‥ブリック・ロード
+;jpn: いただきもの。だいじにつかおう。↓
+;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
-;　ダンジョンかんせいきねんとして。↓
+; ダンジョンかんせいきねんとして。↓
 ;-------------------------------------------------
 
 MSG_BRICK_SIGN_45;marcus＄β
-◆Ｉｆ　ｙｏｕ　ｃｈｅｃｋ　ｉｎｔｏ　ｔｈｉｓ　ｂｅｎｃｈ，　ｉｔ’ｓ　ｊｕｓｔ　ｌｉｋｅ　ｃｈｅｃｋｉｎｇ　ｉｎｔｏ　ａ　ｈｏｔｅｌ．@KEY()↓
-◆．．．Ｂｒｉｃｋ　Ｒｏａｄ
+◆If you check into this bench, it’s just like checking into a hotel.@KEY()↓
+◆...Brick Road
 
-;jpn:◆このベンチを　チェックすることは↓
-;jpn:　ホテルに　チェックインすることに↓
-;jpn:　にている。　　‥ブリック・ロード
+;jpn:◆このベンチを チェックすることは↓
+;jpn: ホテルに チェックインすることに↓
+;jpn: にている。  ‥ブリック・ロード
 @KEYNP()
 』
 ;-------------------------------------------------

@@ -14,13 +14,13 @@
 ;akm
 MSG_EXPL_GDS_FRANKLIN_BADGE;marcus
 ←
-◆Ｂｙ　ｋｅｅｐｉｎｇ　ｉｔ　ａｓ　ｏｎｅ　ｏｆ　ｙｏｕｒ　ｉｔｅｍｓ，@KEY()↓
-◆ｉｔ　ｄｅｆｌｅｃｔｓ　ａ　ｌｉｇｈｔｎｉｎｇ　ａｔｔａｃｋ　ｂａｃｋ　ａｔ　ｔｈｅ　ａｔｔａｃｋｅｒ．
+◆By keeping it as one of your items,@KEY()↓
+◆it deflects a lightning attack back at the attacker.
 
 ;jpn:◆グッズとして↓
-;jpn:　もっているだけで@KEY()↓
+;jpn: もっているだけで@KEY()↓
 ;jpn:◆かみなりこうげきを↓
-;jpn:　はねかえす。
+;jpn: はねかえす。
 @KEYNP()
 @!
 
@@ -36,7 +36,7 @@ MSG_EXPL_GDS_NUIGURUMI;
 ;akm
 MSG_EXPL_GDS_NUIGURUMI_SUPER;
 ←
-;◆Ｖｅｒｙ　
+;◆Very 
 @GOSUB(_GDS_NUIGURUMI)
 
 ;jpn:◆とても@GOSUB(_GDS_NUIGURUMI)
@@ -47,12 +47,12 @@ MSG_EXPL_GDS_NUIGURUMI_SUPER;
 ;akm
 MSG_EXPL_GDS_BROKEN_GADGET;marcus
 ←
-◆Ｔｈｅｒｅ’ｓ　ｎｏ　ｗａｙ　ｏｆ　ｋｎｏｗｉｎｇ　ｉｔｓ　ｏｒｉｇｉｎａｌ　ｕｓｅ．@KEY()↓
-◆Ｉｔ’ｓ　ｊｕｓｔ　ｓｏｍｅ　ｋｉｎｄ　ｏｆ　ｂｒｏｋｅｎ　ｇａｄｇｅｔ．@KEY()↓
+◆There’s no way of knowing its original use.@KEY()↓
+◆It’s just some kind of broken gadget.@KEY()↓
 
 ;jpn:◆もとはなんだか↓
-;jpn:　わからないが↓
-;jpn:　こわれたきかいだ。@KEY()↓
+;jpn: わからないが↓
+;jpn: こわれたきかいだ。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -61,12 +61,12 @@ MSG_EXPL_GDS_BROKEN_GADGET;marcus
 ;akm
 MSG_EXPL_GDS_BROKEN_MECHANISM;
 ←
-◆Ｔｈｅｒｅ’ｓ　ｎｏ　ｗａｙ　ｏｆ　ｋｎｏｗｉｎｇ　ｉｔｓ　ｏｒｉｇｉｎａｌ　ｕｓｅ．@KEY()↓
-◆Ｉｔ’ｓ　ｊｕｓｔ　ｓｏｍｅ　ｋｉｎｄ　ｏｆ　ｂｒｏｋｅｎ　ｍｅｃｈａｎｉｓｍ．@KEY()↓
+◆There’s no way of knowing its original use.@KEY()↓
+◆It’s just some kind of broken mechanism.@KEY()↓
 
 ;jpn:◆もとはなんだか↓
-;jpn:　わからないが↓
-;jpn:　こわれたメカだ。@KEY()↓
+;jpn: わからないが↓
+;jpn: こわれたメカだ。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -75,10 +75,10 @@ MSG_EXPL_GDS_BROKEN_MECHANISM;
 ;akm
 MSG_EXPL_GDS_BROKEN_AIRGUN;
 ←
-◆Ａ　ｂｒｏｋｅｎ　ａｉｒ　ｇｕｎ．@KEY()↓
+◆A broken air gun.@KEY()↓
 
 ;jpn:◆こわれている↓
-;jpn:　エアガン。@KEY()↓
+;jpn: エアガン。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -87,10 +87,10 @@ MSG_EXPL_GDS_BROKEN_AIRGUN;
 ;akm
 MSG_EXPL_GDS_BROKEN_SPRAY;
 ←
-◆Ａ　ｂｒｏｋｅｎ　ｓｐｒａｙ　ｃａｎ．@KEY()↓
+◆A broken spray can.@KEY()↓
 
 ;jpn:◆こわれている↓
-;jpn:　スプレーかん。@KEY()↓
+;jpn: スプレーかん。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -99,10 +99,10 @@ MSG_EXPL_GDS_BROKEN_SPRAY;
 ;akm
 MSG_EXPL_GDS_BROKEN_LASER;
 ←
-◆Ａ　ｂｒｏｋｅｎ　ｌａｓｅｒ　ｇｕｎ．@KEY()↓
+◆A broken laser gun.@KEY()↓
 
 ;jpn:◆こわれている↓
-;jpn:　レーザーほう。@KEY()↓
+;jpn: レーザーほう。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -111,10 +111,10 @@ MSG_EXPL_GDS_BROKEN_LASER;
 ;akm
 MSG_EXPL_GDS_BROKEN_GARAKUTA;marcus
 ←
-◆Ａ　ｃｏｎｔｒａｐｔｉｏｎ　ｔｈａｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａｎ　ｉｒｏｎ．@KEY()↓
+◆A contraption that looks like an iron.@KEY()↓
 
-;jpn:◆アイロンのような　かたちをした↓
-;jpn:　きかい。@KEY()↓
+;jpn:◆アイロンのような かたちをした↓
+;jpn: きかい。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -123,10 +123,10 @@ MSG_EXPL_GDS_BROKEN_GARAKUTA;marcus
 ;akm
 MSG_EXPL_GDS_BROKEN_KINZOKUBO;marcus
 ←
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｂｕｓｔｅｄ　ｗａｔｅｒ　ｐｉｐｅ．@KEY()↓
+◆It looks like a busted water pipe.@KEY()↓
 
 ;jpn:◆こわれている↓
-;jpn:　すいどうかんのような　メカ。@KEY()↓
+;jpn: すいどうかんのような メカ。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -135,10 +135,10 @@ MSG_EXPL_GDS_BROKEN_KINZOKUBO;marcus
 ;akm
 MSG_EXPL_GDS_BROKEN_BEAM;
 ←
-◆Ａ　ｂｒｏｋｅｎ　ｂｅａｍ　ｃａｎｎｏｎ．@KEY()↓
+◆A broken beam cannon.@KEY()↓
 
 ;jpn:◆こわれている↓
-;jpn:　ビームほう。@KEY()↓
+;jpn: ビームほう。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -147,10 +147,10 @@ MSG_EXPL_GDS_BROKEN_BEAM;
 ;akm
 MSG_EXPL_GDS_BROKEN_TSUTSU;marcus
 ←
-◆Ａ　ｂｒｏｋｅｎ　ｔｕｂｅ−ｓｈａｐｅｄ　ｉｔｅｍ．@KEY()↓
+◆A broken tube−shaped item.@KEY()↓
 
 ;jpn:◆こわれている↓
-;jpn:　つつがたの　メカ。@KEY()↓
+;jpn: つつがたの メカ。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -159,10 +159,10 @@ MSG_EXPL_GDS_BROKEN_TSUTSU;marcus
 ;akm
 MSG_EXPL_GDS_BROKEN_BAZOOKA;
 ←
-◆Ａ　ｂｒｏｋｅｎ　ｂａｚｏｏｋａ．@KEY()↓
+◆A broken bazooka.@KEY()↓
 
 ;jpn:◆こわれている↓
-;jpn:　バズーカほう。@KEY()↓
+;jpn: バズーカほう。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -171,10 +171,10 @@ MSG_EXPL_GDS_BROKEN_BAZOOKA;
 ;akm
 MSG_EXPL_GDS_BROKEN_RAPPA;
 ←
-◆Ａ　ｂｒｏｋｅｎ　ａｐｐａｒａｔｕｓ　ｔｈａｔ　ｉｓ　ｓｈａｐｅｄ　ｌｉｋｅ　ａ　ｔｒｕｍｐｅｔ．@KEY()↓
+◆A broken apparatus that is shaped like a trumpet.@KEY()↓
 
-;jpn:◆ラッパのような　かたちの↓
-;jpn:　こわれている　きかい。@KEY()↓
+;jpn:◆ラッパのような かたちの↓
+;jpn: こわれている きかい。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -183,10 +183,10 @@ MSG_EXPL_GDS_BROKEN_RAPPA;
 ;akm
 MSG_EXPL_GDS_BROKEN_TESUKZ;
 ←
-◆Ａ　ｂｒｏｋｅｎ　ｄｅｖｉｃｅ　ｔｈａｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｈａｒｍｏｎｉｃａ．@KEY()↓
+◆A broken device that looks like a harmonica.@KEY()↓
 
-;jpn:◆ハーモニカのように　みえる↓
-;jpn:　こわれた　きかい。@KEY()↓
+;jpn:◆ハーモニカのように みえる↓
+;jpn: こわれた きかい。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -195,10 +195,10 @@ MSG_EXPL_GDS_BROKEN_TESUKZ;
 ;akm
 MSG_EXPL_GDS_BROKEN_PARABPLA;marcus
 ←
-◆Ａ　ｐｉｅｃｅ　ｏｆ　ｂｒｏｋｅｎ　ｅｑｕｉｐｍｅｎｔ　ｔｈａｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｓａｔｅｌｌｉｔｅ　ｄｉｓｈ．@KEY()↓
+◆A piece of broken equipment that looks like a satellite dish.@KEY()↓
 
-;jpn:◆パラボラアンテナに　にた↓
-;jpn:　こわれた　きかい。@KEY()↓
+;jpn:◆パラボラアンテナに にた↓
+;jpn: こわれた きかい。@KEY()↓
 @GOSUB(_GDS_JEFF_REPAIR)
 @KEYNP()
 @!
@@ -249,10 +249,10 @@ MSG_EXPL_GDS_BAT_KOUKYU;marcus
 ←
 @GOSUB(_GDS_NESS_WEAPON)
 @KEY()↓
-◆Ｔｈｉｓ　ｉｔｅｍ　ｌｏｏｋｓ　ｌｉｋｅ　ｉｔ　ｃｏｕｌｄ　ｈａｖｅ　ｈａｄ　ｃｏｒｋ　ｐｕｔ　ｉｎｔｏ　ｔｈｅ　ｃｏｒｅ！
+◆This item looks like it could have had cork put into the core!
 
 ;jpn:◆キラリ↓
-;jpn:　かざりもついてる。
+;jpn: かざりもついてる。
 @KEYNP()
 @!
 
@@ -287,10 +287,10 @@ MSG_EXPL_GDS_BAT_GUTS;marcus
 @GOSUB(_GDS_NESS_WEAPON)
 @KEY()
 ↓
-◆Ｗｈｅｎ　ｅｑｕｉｐｐｅｄ，　ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　ｇｕｔｓ．
+◆When equipped, it increases your guts.
 
 ;jpn:◆そうびすると↓
-;jpn:　ガッツが　あがる。
+;jpn: ガッツが あがる。
 @KEYNP()
 @!
 
@@ -301,12 +301,12 @@ MSG_EXPL_GDS_BAT_KARBURI;marcus
 @GOSUB(_GDS_NESS_WEAPON)
 @KEY()
 ↓
-◆Ｙｏｕ　ｃａｎ’ｔ　ｈｅｌｐ　ｂｕｔ　ｓｗｉｎｇ　ｔｈｉｓ　ｂａｔ　ｗｉｔｈ　ａｌｌ　ｙｏｕｒ　ｍｉｇｈｔ．@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ａ　ｇｏｏｄ　ｃｈａｎｃｅ　ｔｈａｔ　ｙｏｕ　ｍａｙ　ｊｕｓｔ　ｗｈｉｆｆ．
+◆You can’t help but swing this bat with all your might.@KEY()↓
+◆There’s a good chance that you may just whiff.
 
-;jpn:◆ちからいっぱい　ふりまわさずには↓
-;jpn:　いられない。@KEY()↓
-;jpn:◆からぶりに　きをつけよう。
+;jpn:◆ちからいっぱい ふりまわさずには↓
+;jpn: いられない。@KEY()↓
+;jpn:◆からぶりに きをつけよう。
 @KEYNP()
 @!
 
@@ -372,7 +372,7 @@ MSG_EXPL_GDS_SWORD_KING;
 ←
 @GOSUB(_GDS_POO_WEAPON)
 @KEY()↓
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　ｏｆｆｅｎｓｅ．
+◆It increases your offense.
 
 ;jpn:◆こうげきりょくアップだ。
 @KEYNP()
@@ -486,7 +486,7 @@ MSG_EXPL_GDS_BEAM_GAIA;
 ;akm
 MSG_EXPL_GDS_EQUIP_YOYO;marcus
 ←
-◆Ａ　ｓｏ−ｓｏ　ｗｅａｐｏｎ．
+◆A so−so weapon.
 
 ;jpn:◆ちょっといいぶき。
 @KEYNP()
@@ -496,7 +496,7 @@ MSG_EXPL_GDS_EQUIP_YOYO;marcus
 ;akm
 MSG_EXPL_GDS_EQUIP_SLING;marcus
 ←
-◆Ａ　ｄｅｃｅｎｔ　ｌｉｔｔｌｅ　ｗｅａｐｏｎ．
+◆A decent little weapon.
 
 ;jpn:◆まあまあいいぶき。
 @KEYNP()
@@ -506,9 +506,9 @@ MSG_EXPL_GDS_EQUIP_SLING;marcus
 ;akm
 MSG_EXPL_GDS_EQUIP_SLING_SUPER;marcus
 ←
-◆Ａ　ｐｒｅｔｔｙ　ｐｏｗｅｒｆｕｌ　ｗｅａｐｏｎ．
+◆A pretty powerful weapon.
 
-;jpn:◆わりといい　ぶき。
+;jpn:◆わりといい ぶき。
 @KEYNP()
 @!
 
@@ -516,7 +516,7 @@ MSG_EXPL_GDS_EQUIP_SLING_SUPER;marcus
 ;akm
 MSG_EXPL_GDS_EQUIP_YOYO_SUPER;marcus
 ←
-◆Ａ　ｔｏｕｇｈ，　ｓｔｒｏｎｇ　ｗｅａｐｏｎ！
+◆A tough, strong weapon!
 
 ;jpn:◆けっこういいぶき。
 @KEYNP()
@@ -526,7 +526,7 @@ MSG_EXPL_GDS_EQUIP_YOYO_SUPER;marcus
 ;akm
 MSG_EXPL_GDS_EQUIP_KILLER;marcus
 ←
-◆Ｔｈｉｓ　ｏｎｅ　ｒｏｃｋｓ，　ｆｏｒ　ｓｕｒｅ．
+◆This one rocks, for sure.
 
 ;jpn:◆なるほどいいぶき。
 @KEYNP()
@@ -545,10 +545,10 @@ MSG_EXPL_GDS_AMULET_ABI;
 MSG_EXPL_GDS_AMULET_OOKINA;marcus
 ←
 @GOSUB(_GDS_AMULET)@KEY()↓
-◆Ａｌｓｏ，　ｉｔ　ａｄｄｓ　ａ　ｂｉｔ　ｏｆ　ｓｐｅｅｄ．
+◆Also, it adds a bit of speed.
 
 ;jpn:◆スピードも↓
-;jpn:　ちょっとだけ　あがる。
+;jpn: ちょっとだけ あがる。
 @KEYNP()
 @!
 
@@ -557,10 +557,10 @@ MSG_EXPL_GDS_AMULET_OOKINA;marcus
 MSG_EXPL_GDS_AMULET_KAGAYAKU;marcus
 ←
 @GOSUB(_GDS_AMULET)@KEY()↓
-◆Ｉｔ　ａｌｓｏ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　ｓｐｅｅｄ．
+◆It also increases your speed.
 
 ;jpn:◆スピードも↓
-;jpn:　あがる。	
+;jpn: あがる。	
 @KEYNP()
 @!
 
@@ -569,10 +569,10 @@ MSG_EXPL_GDS_AMULET_KAGAYAKU;marcus
 MSG_EXPL_GDS_AMULET_USAGI;marcus
 ←
 @GOSUB(_GDS_AMULET)@KEY()↓
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　ｓｐｅｅｄ　ｉｎ　ａ　ｂｉｇ　ｗａｙ．
+◆It increases your speed in a big way.
 
 ;jpn:◆スピードも↓
-;jpn:　おおきく　あがる。
+;jpn: おおきく あがる。
 @KEYNP()
 @!
 
@@ -581,10 +581,10 @@ MSG_EXPL_GDS_AMULET_USAGI;marcus
 MSG_EXPL_GDS_PENDANT_HONOO;marcus
 ←
 @GOSUB(_GDS_EQUIP_BODY)
-◆Ｉｔ　ｐｒｏｔｅｃｔｓ　ｙｏｕ　ｆｒｏｍ　ｆｉｒｅ　ａｔｔａｃｋｓ．
+◆It protects you from fire attacks.
 
 ;jpn:◆ファイアーこうげきから↓
-;jpn:　みをまもる。
+;jpn: みをまもる。
 @KEYNP()
 @!
 
@@ -593,10 +593,10 @@ MSG_EXPL_GDS_PENDANT_HONOO;marcus
 MSG_EXPL_GDS_PENDANT_SHIZUKU;marcus
 ←
 @GOSUB(_GDS_EQUIP_BODY)
-◆Ｉｔ　ｐｒｏｔｅｃｔｓ　ｙｏｕ　ｆｒｏｍ　ｆｒｅｅｚｅ　ａｔｔａｃｋｓ．
+◆It protects you from freeze attacks.
 
 ;jpn:◆フリーズこうげきから↓
-;jpn:　みをまもる。
+;jpn: みをまもる。
 @KEYNP()
 @!
 
@@ -605,11 +605,11 @@ MSG_EXPL_GDS_PENDANT_SHIZUKU;marcus
 MSG_EXPL_GDS_PENDANT_YAMI;marcus
 ←
 @GOSUB(_GDS_EQUIP_BODY)
-◆Ｉｔ　ａｂｓｏｒｂｓ　ｔｈｅ　ｌｉｇｈｔ　ｏｆ　ａ　ｆｌａｓｈ　ａｔｔａｃｋ．
+◆It absorbs the light of a flash attack.
 
 ;jpn:◆フラッシュこうげきの↓
-;jpn:　ひかりを↓
-;jpn:　きゅうしゅうしてしまう。
+;jpn: ひかりを↓
+;jpn: きゅうしゅうしてしまう。
 @KEYNP()
 @!
 
@@ -618,12 +618,12 @@ MSG_EXPL_GDS_PENDANT_YAMI;marcus
 MSG_EXPL_GDS_PENDANT_UMI;marcus
 ←
 @GOSUB(_GDS_EQUIP_BODY)
-◆Ｉｔ　ｐｒｏｔｅｃｔｓ　ｙｏｕ　ｆｒｏｍ　ｆｉｒｅ，　ｆｒｅｅｚｅ　ａｎｄ　ｆｌａｓｈ　ａｔｔａｃｋｓ．
+◆It protects you from fire, freeze and flash attacks.
 
 ;jpn:◆ファイアー↓
-;jpn:　フリーズ@KEY()↓
-;jpn:◆そして　フラッシュこうげきから↓
-;jpn:　みをまもる。
+;jpn: フリーズ@KEY()↓
+;jpn:◆そして フラッシュこうげきから↓
+;jpn: みをまもる。
 @KEYNP()
 @!
 
@@ -632,13 +632,13 @@ MSG_EXPL_GDS_PENDANT_UMI;marcus
 MSG_EXPL_GDS_PENDANT_HOSHI;marcus
 ←
 @GOSUB(_GDS_EQUIP_BODY)
-◆Ｉｔ　ｐｒｏｔｅｃｔｓ　ｙｏｕ　ｆｒｏｍ　ｆｉｒｅ，　ｆｒｅｅｚｅ，　ｆｌａｓｈ　ａｎｄ　ｐａｒａｌｙｓｉｓ　ａｔｔａｃｋｓ．
+◆It protects you from fire, freeze, flash and paralysis attacks.
 
 ;jpn:◆ファイアー↓
-;jpn:　フリーズ↓
-;jpn:　フラッシュ@KEY()↓
-;jpn:◆そして　パラライシスこうげきから↓
-;jpn:　かんぜんに　みをまもる。
+;jpn: フリーズ↓
+;jpn: フラッシュ@KEY()↓
+;jpn:◆そして パラライシスこうげきから↓
+;jpn: かんぜんに みをまもる。
 @KEYNP()
 @!
 
@@ -646,11 +646,11 @@ MSG_EXPL_GDS_PENDANT_HOSHI;marcus
 ;akm
 MSG_EXPL_GDS_CLOAK_KING;marcus
 ←
-◆@DSP_NAME(PC_POO)’ｓ　ｂｏｄｙ　ｅｑｕｉｐｍｅｎｔ．@KEY()↓
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｈｉｓ　Ｄｅｆｅｎｓｅ．
+◆@DSP_NAME(PC_POO)’s body equipment.@KEY()↓
+◆It increases his Defense.
 
 ;jpn:◆@DSP_NAME(PC_POO)の↓
-;jpn:　ボディそうび。@KEY()↓
+;jpn: ボディそうび。@KEY()↓
 ;jpn:◆しゅびりょくアップだ。
 @KEYNP()
 @!
@@ -734,14 +734,14 @@ MSG_EXPL_GDS_BLACELET_MEGAMI;
 ;akm
 MSG_EXPL_GDS_BRACERET_KING;marcus
 ←
-◆Ｔｏ　ｂｅ　ｅｑｕｉｐｐｅｄ　ｏｎ　@DSP_NAME(PC_POO)’ｓ　ａｒｍ．@KEY()↓
+◆To be equipped on @DSP_NAME(PC_POO)’s arm.@KEY()↓
 
 ;jpn:◆@DSP_NAME(PC_POO)の↓
-;jpn:　うでそうび。@KEY()↓
+;jpn: うでそうび。@KEY()↓
 
-◆Ｈｅｌｐｓ　ｐｒｏｔｅｃｔ　ｆｒｏｍ　ｂｅｉｎｇ　ｈｙｐｎｏｔｉｚｅｄ，　ａｎｄ　Ｌｕｃｋ　ｇｏｅｓ　ｕｐ．
+◆Helps protect from being hypnotized, and Luck goes up.
 
-◆Ｏｆ　ｃｏｕｒｓｅ，　Ｄｅｆｅｎｓｅ　ａｌｓｏ　ｇｏｅｓ　ｕｐ．
+◆Of course, Defense also goes up.
 
 ;jpn:◆しゅびりょくアップだ。
 @KEYNP()
@@ -752,11 +752,11 @@ MSG_EXPL_GDS_BRACERET_KING;marcus
 MSG_EXPL_GDS_CAP_YAKYU;marcus
 ←
 @GOSUB(_GDS_EQUIP_MISC)@KEY()↓
-◆Ｉｔ　ｈａｓ　ｔｈｅ　ｌｏｇｏ　ｏｆ　ｙｏｕｒ　ｆａｖｏｒｉｔｅ　ｂａｓｅｂａｌｌ　ｔｅａｍ．
+◆It has the logo of your favorite baseball team.
 
 ;jpn:◆おきにいりの↓
-;jpn:　きゅうだんの↓
-;jpn:　マークがはいってる。
+;jpn: きゅうだんの↓
+;jpn: マークがはいってる。
 @KEYNP()
 @!
 
@@ -765,10 +765,10 @@ MSG_EXPL_GDS_CAP_YAKYU;marcus
 MSG_EXPL_GDS_CAP_HOLMS;marcus
 ←
 @GOSUB(_GDS_EQUIP_MISC)@KEY()↓
-◆Ｉｔ　ｍａｋｅｓ　ｙｏｕ　ｆｅｅｌ　ｌｉｋｅ　ｔｈｅ　ｇｒｅａｔ　ｄｅｔｅｃｔｉｖｅ，　Ｓｈｅｒｌｏｃｋ　Ｈｏｌｍｅｓ，　ｗｈｅｎ　ｅｑｕｉｐｐｅｄ．
-;jpn:◆かぶると　めいたんてい↓
-;jpn:　シャーロックホームズの↓
-;jpn:　きぶんだ。
+◆It makes you feel like the great detective, Sherlock Holmes, when equipped.
+;jpn:◆かぶると めいたんてい↓
+;jpn: シャーロックホームズの↓
+;jpn: きぶんだ。
 @KEYNP()
 @!
 
@@ -777,11 +777,11 @@ MSG_EXPL_GDS_CAP_HOLMS;marcus
 MSG_EXPL_GDS_CAP_MISTER;marcus
 ←
 @GOSUB(_GDS_EQUIP_MISC)@KEY()↓
-◆Ｉｔ　ｉｓ　ｓａｉｄ　ｔｏ　ｈａｖｅ　ｂｅｅｎ　ｇｉｖｅｎ　ｔｏ　ｙｏｕｒ　ｆｒｉｅｎｄ　ｂｙ　ａ　ｆａｍｏｕｓ　ｐｌａｙｅｒ　ａｔ　ｔｈｅ　ｂａｌｌｐａｒｋ．
+◆It is said to have been given to your friend by a famous player at the ballpark.
 
-;jpn:◆あこがれの　せんしゅに↓
-;jpn:　やきゅうじょうで↓
-;jpn:　もらったものだという。
+;jpn:◆あこがれの せんしゅに↓
+;jpn: やきゅうじょうで↓
+;jpn: もらったものだという。
 @KEYNP()
 @!
 
@@ -790,11 +790,11 @@ MSG_EXPL_GDS_CAP_MISTER;marcus
 MSG_EXPL_GDS_CAP_NANIRO;marcus
 ←
 @GOSUB(_GDS_EQUIP_MISC)↓
-◆Ｓｈｏｕｌｄ　ｂｅ　ｗｏｒｎ　ｗｈｅｎ　ｓｅａｒｃｈｉｎｇ　ｆｏｒ　ｂｕｒｉｅｄ　ｔｒｅａｓｕｒｅ，@KEY()↓
-◆ｏｒ　ｗｈｉｌｅ　ｙｏｕ　ａｒｅ　ａｔ　ｔｈｅ　ｃｏｎｓｔｒｕｃｔｉｏｎ　ｓｉｔｅ．
+◆Should be worn when searching for buried treasure,@KEY()↓
+◆or while you are at the construction site.
 
-;jpn:◆まいぞうきんさがし　や↓
-;jpn:　こうじげんば　などに。
+;jpn:◆まいぞうきんさがし や↓
+;jpn: こうじげんば などに。
 @KEYNP()
 @!
 
@@ -875,7 +875,7 @@ MSG_EXPL_GDS_COIN_CHISAN;
 MSG_EXPL_GDS_BANDANNA_KING;marcus
 ←
 @GOSUB(_GDS_POO_EQUIP_MISC)@KEY()↓
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｈｉｓ　Ｄｅｆｅｎｓｅ．
+◆It increases his Defense.
 
 ;jpn:◆しゅびりょくアップだ。
 @KEYNP()
@@ -909,7 +909,7 @@ MSG_EXPL_GDS_HAMBURGER;
 ５０
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
-◆１００％　ｂｅｅｆ．
+◆１００％ beef.
 
 ;jpn:◆ビーフ１００パーセント。
 @KEYNP()
@@ -933,7 +933,7 @@ MSG_EXPL_GDS_EGG_RAW;marcus
 ８０
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
-◆Ｓｏ　ｆｒｅｓｈ，　ｉｔ’ｓ　ｓｔｉｌｌ　ｗａｒｍ！
+◆So fresh, it’s still warm!
 
 ;jpn:◆うみたてのホヤホヤ。
 @KEYNP()
@@ -947,10 +947,10 @@ MSG_EXPL_GDS_LUNCH;marcus
 ８０
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ｅｖｅｎ　ａ　ｓｌｉｃｅ　ｏｆ　ｙｏｕｒ　ｆａｖｏｒｉｔｅ　ｃａｋｅ！
+◆There’s even a slice of your favorite cake!
 
 ;jpn:◆たこウインナーも↓
-;jpn:　はいってる。
+;jpn: はいってる。
 @KEYNP()
 @!
 
@@ -958,31 +958,31 @@ MSG_EXPL_GDS_LUNCH;marcus
 ;akm
 MSG_EXPL_GDS_PASTA_SUMMERS;marcus
 ←
-◆Ｔｈｉｓ　ｉｓ　ａ　ｐａｓｔａ　ｄｉｓｈ　ｗｈｉｃｈ　ｌｅｇｅｎｄ　ｈｏｌｄｓ　ｗａｓ　ａ　ｆａｖｏｒｉｔｅ　ｏｆ　Ｋｉｎｇ　Ｓｕｍｍｅｒｓ　ｔｈｅ　Ｔｈｉｒｄ@KEY()↓
-◆ｉｎ　ｔｈｅ　１６ｔｈ　ｃｅｎｔｕｒｙ．　Ｂａｃｋ　ｔｈｅｎ，　ｔｈｅｒｅ　ｗｅｒｅ　ｍａｎｙ　ｇｒｅａｔ　ｃｈｅｆｓ，　ｃｏｎｆｉｄｅｎｔ　ｏｆ　ｔｈｅｉｒ@KEY()↓
-◆ｃｕｌｉｎａｒｙ　ｓｋｉｌｌｓ，　ａｌｗａｙｓ　ｇｏｉｎｇ　ｔｏ　ａｎｄ　ｆｒｏｍ　Ｓｕｍｍｅｒ’ｓ　Ｐａｌａｃｅ．@KEY()↓
-◆Ｏｎｃｅ　ｄａｙ，　Ｋｉｎｇ　Ｓｕｍｍｅｒｓ　ｗｉｆｅ，　Ａｎｎａ　Ｓｕｍｍｅｒｓ，　ｓａｉｄ，@KEY()↓
-◆”Ｏｈ　ｗｈａｔ　Ｉ　ｗｏｕｌｄｎ’ｔ　ｇｉｖｅ　ｆｏｒ　ｓｏｍｅ　ｒｅａｌｌｙ　ｄｅｌｉｃｉｏｕｓ　ｐａｓｔａ！”　
-．．．　．．．　．．．@KEY()↓
-◆．．．Ｗｅｌｌ，　ｌｅｔ’ｓ　ｊｕｓｔ　ｌｅａｖｅ　ｉｔ　ａｔ　ｔｈａｔ．　Ｔｈｅ　ｓｔｏｒｙ　ｉｓ　ｔｏｏ　ｌｏｎｇ　ｔｏ　ｇｏ　ｔｈｒｏｕｇｈ　ｃｏｍｐｌｅｔｅｌｙ．．．@KEY()↓
-◆ｂｕｔ　ｉｔ　ｒｅａｌｌｙ　ｉｓ　ａ　ｂｅａｕｔｉｆｕｌ，　ｔｏｕｃｈｉｎｇ　ｔａｌｅ．．．
+◆This is a pasta dish which legend holds was a favorite of King Summers the Third@KEY()↓
+◆in the １６th century. Back then, there were many great chefs, confident of their@KEY()↓
+◆culinary skills, always going to and from Summer’s Palace.@KEY()↓
+◆Once day, King Summers wife, Anna Summers, said,@KEY()↓
+◆”Oh what I wouldn’t give for some really delicious pasta!” 
+... ... ...@KEY()↓
+◆...Well, let’s just leave it at that. The story is too long to go through completely...@KEY()↓
+◆but it really is a beautiful, touching tale...
 
-;jpn:◆１６せいきの　サマーズおう↓
-;jpn:　サマーズ３せいが↓
-;jpn:　このんだといわれているパスタだ。@KEY()↓
+;jpn:◆１６せいきの サマーズおう↓
+;jpn: サマーズ３せいが↓
+;jpn: このんだといわれているパスタだ。@KEY()↓
 ;jpn:◆とうじのサマーズきゅうでんには↓
-;jpn:　うでにおぼえのある↓
-;jpn:　りょうりにんが@KEY()↓
-;jpn:◆たすう　でいりしていた。↓
-;jpn:◆ある　なつのひのこと↓
-;jpn:　サマーズおうの　きさき@KEY()↓
+;jpn: うでにおぼえのある↓
+;jpn: りょうりにんが@KEY()↓
+;jpn:◆たすう でいりしていた。↓
+;jpn:◆ある なつのひのこと↓
+;jpn: サマーズおうの きさき@KEY()↓
 ;jpn:◆アンナ・サマーズが↓
-;jpn:　「ああ　おいしいパスタが↓
-;jpn:　たべたい！」と‥‥。@KEY()↓
+;jpn: 「ああ おいしいパスタが↓
+;jpn: たべたい!」と‥‥。@KEY()↓
 ;jpn:◆‥‥‥‥‥‥‥‥‥。@KEY()↓
 ;jpn:◆‥‥‥‥‥せつめいが↓
-;jpn:　ながくなりそうなので↓
-;jpn:　けつろんをいおう。
+;jpn: ながくなりそうなので↓
+;jpn: けつろんをいおう。
 @KEY()
 ↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
@@ -1005,30 +1005,30 @@ MSG_EXPL_GDS_PIZZA;
 ;akm
 MSG_EXPL_GDS_VOUCHED_CHEF;marcus
 ←
-◆Ｔｈｉｓ　ｉｓ　ｔｏｄａｙ’ｓ　ｓｐｅｃｉａｌ．　Ｉｔ　ｉｓ　ｈｉｇｈｌｙ　ｒｅｃｏｍｍｅｎｄｅｄ　ｂｙ　ｏｕｒ　ｃｈｅｆ，@KEY()↓
-◆ｗｈｏ　ｔｒａｉｎｅｄ　ａｔ　ａ　ｆｉｖｅ−ｓｔａｒ　ｒｅｓｔａｕｒａｎｔ　ｉｎ　Ｐａｒｉｓ．@KEY()↓
+◆This is today’s special. It is highly recommended by our chef,@KEY()↓
+◆who trained at a five−star restaurant in Paris.@KEY()↓
 
-;jpn:◆パリの５つぼし　レストランで↓
-;jpn:　しゅぎょうした↓
-;jpn:　サマーズレストランの@KEY()↓
+;jpn:◆パリの５つぼし レストランで↓
+;jpn: しゅぎょうした↓
+;jpn: サマーズレストランの@KEY()↓
 ;jpn:◆シェフがすすめる↓
-;jpn:　ひがわり　りょうり。@KEY()↓
+;jpn: ひがわり りょうり。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ２００
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
 
-;97 ピザ（Ｌサイズ）
+;97 ピザ(Lサイズ)
 ;akm
 MSG_EXPL_GDS_PIZZA_LARGE;
 ←
-◆Ｓｉｎｃｅ　ｉｔ’ｓ　ａ　ｒｅａｌｌｙ　ｂｉｇ　ｐｉｚｚａ，　ｅｖｅｒｙｏｎｅ　ｃａｎ　ｒｅｃｏｖｅｒ　ａｂｏｕｔ　２４０　ＨＰ　ｗｈｅｎ　ｅａｔｅｎ．
+◆Since it’s a really big pizza, everyone can recover about ２４０ HP when eaten.
 
-;jpn:◆Ｌサイズなので↓
-;jpn:　たべると　ぜんいんのたいりょくが@KEY()↓
+;jpn:◆Lサイズなので↓
+;jpn: たべると ぜんいんのたいりょくが@KEY()↓
 ;jpn:◆それぞれ↓
-;jpn:　やく２４０
+;jpn: やく２４０
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1037,11 +1037,11 @@ MSG_EXPL_GDS_PIZZA_LARGE;
 ;akm
 MSG_EXPL_GDS_PSYCHO_CARAMEL;
 ←
-◆Ｉｎｃｒｅａｓｅｓ　ＰＰ　ｂｙ　２０．
+◆Increases PP by ２０.
 
 ;jpn:◆たべると↓
-;jpn:　ＰＰが↓
-;jpn:　やく２０
+;jpn: PPが↓
+;jpn: やく２０
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1050,17 +1050,17 @@ MSG_EXPL_GDS_PSYCHO_CARAMEL;
 ;akm
 MSG_EXPL_GDS_MAGIC_TRUFFLE;marcus
 ←
-◆Ａ　ｄｒｅａｍ−ｌｉｋｅ　ｄｅｌｉｃａｃｙ↓
-　　ｔｈａｔ　ｉｓ　ｓａｉｄ　ｔｏ　ｇｒｏｗ　ａｔ　ｔｈｅ　ｂａｓｅ　ｏｆ　ｔｒｅｅｓ@KEY()↓
-◆ｉｎ　ｗｅｔ，　ｍｕｄｄｙ　ｐｌａｃｅｓ．@KEY()↓
-◆Ｉｔ　ｒｅｓｔｏｒｅｓ　ａｂｏｕｔ　８０　ＰＰ．
+◆A dream−like delicacy↓
+  that is said to grow at the base of trees@KEY()↓
+◆in wet, muddy places.@KEY()↓
+◆It restores about ８０ PP.
 
-;jpn:◆じめじめ　どろどろした　ばしょの↓
-;jpn:　きの　ねもとにある　といわれる↓
-;jpn:　まぼろしの　ちんみ。@KEY()↓
+;jpn:◆じめじめ どろどろした ばしょの↓
+;jpn: きの ねもとにある といわれる↓
+;jpn: まぼろしの ちんみ。@KEY()↓
 ;jpn:◆たべると↓
-;jpn:　ＰＰが↓
-;jpn:　やく８０
+;jpn: PPが↓
+;jpn: やく８０
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1070,10 +1070,10 @@ MSG_EXPL_GDS_MAGIC_TRUFFLE;marcus
 MSG_EXPL_GDS_LUNCH_KING;marcus
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-５０　ＰＰ．
+５０ PP.
 
-;jpn:◆ＰＰが↓
-;jpn:　やく５０
+;jpn:◆PPが↓
+;jpn: やく５０
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1082,11 +1082,11 @@ MSG_EXPL_GDS_LUNCH_KING;marcus
 ;akm
 MSG_EXPL_GDS_MYSTIC_ANDY;marcus
 ←
-◆Ｗｈｅｎ　ｙｏｕ　ｅａｔ　ｔｈｉｓ，　ｉｔ　ｗｉｌｌ　ｉｎｃｒｅａｓｅ　ｅｉｔｈｅｒ　Ｓｐｅｅｄ，　Ｇｕｔｓ，　Ｖｉｔａｌｉｔｙ，　ＩＱ　ｏｒ　Ｌｕｃｋ．
+◆When you eat this, it will increase either Speed, Guts, Vitality, IQ or Luck.
 
-;jpn:◆たべると　スピード　ガッツ↓
-;jpn:　バイタリティ　ＩＱ　ラックの↓
-;jpn:　どれかが　あがる。
+;jpn:◆たべると スピード ガッツ↓
+;jpn: バイタリティ IQ ラックの↓
+;jpn: どれかが あがる。
 @KEYNP()
 @!
 
@@ -1114,18 +1114,18 @@ MSG_EXPL_GDS_BREAD;
 ;akm
 MSG_EXPL_GDS_BUBBLE_GUM;marcus
 ←
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　Ｂａｌｌｏｏｎ　Ｍｏｎｋｅｙ’ｓ　ｆａｖｏｒｉｔｅ．@KEY()↓
-◆Ｉｔ　ｗｉｌｌ　ｎｏｔ　ｈｅｌｐ　ｙｏｕ　ｒｅｃｏｖｅｒ，　ｂｕｔ@KEY()↓
-◆Ｙｏｕ’ｌｌ　ａｌｓｏ　ｎｅｖｅｒ　ｒｕｎ　ｏｕｔ，　’ｃａｕｓｅ　ｉｔ’ｓ　ａ　ｓｕｐｅｒ　ｊｕｍｂｏ　ｐａｃｋ！
+◆This is the Balloon Monkey’s favorite.@KEY()↓
+◆It will not help you recover, but@KEY()↓
+◆You’ll also never run out, ’cause it’s a super jumbo pack!
 
 ;jpn:◆バルーンモンキーの↓
-;jpn:　だいこうぶつ。@KEY()↓
+;jpn: だいこうぶつ。@KEY()↓
 ;jpn:◆たべても
-;jpn:　たいりょくは↓
-;jpn:　かいふくしない。@KEY()↓
-;jpn:◆たくさん　はいっているので↓
-;jpn:　なんまい　たべても↓
-;jpn:　なくならない。
+;jpn: たいりょくは↓
+;jpn: かいふくしない。@KEY()↓
+;jpn:◆たくさん はいっているので↓
+;jpn: なんまい たべても↓
+;jpn: なくならない。
 @KEYNP()
 @!
 
@@ -1133,13 +1133,13 @@ MSG_EXPL_GDS_BUBBLE_GUM;marcus
 ;akm
 MSG_EXPL_GDS_HAEMITSU;marcus
 ←
-◆Ｇｅｐｐｕ’ｓ　ｍｏｓｔ　ｆａｖｏｒｉｔｅ　ｆｏｏｄ　ｉｎ　ｔｈｅ　ｗｈｏｌｅ　ｗｏｒｌｄ．@KEY()↓
-◆Ｈｏｗｅｖｅｒ．．．　ｉｔ　ｓｍｅｌｌｓ　ＲＥＡＬＬＹ，　ｒｅａｌｌｙ　ｎａｓｔｙ！　Ｗｅ’ｒｅ　ｔａｌｋｉｎ’　ｍａｊｏｒ　ｓｔｉｎｋａｇｅ　ｈｅｒｅ！
+◆Geppu’s most favorite food in the whole world.@KEY()↓
+◆However... it smells REALLY, really nasty! We’re talkin’ major stinkage here!
 
 ;jpn:◆ゲップーの↓
-;jpn:　だいこうぶつ。@KEY()↓
+;jpn: だいこうぶつ。@KEY()↓
 ;jpn:◆ちょっと‥‥↓
-;jpn:　く　くさい‥‥。
+;jpn: く くさい‥‥。
 @KEYNP()
 @!
 
@@ -1157,20 +1157,20 @@ MSG_EXPL_GDS_JUICE_ORANGE;
 ;akm
 MSG_EXPL_GDS_ICE_TEA;marcus
 ←
-◆Ｔｈｅ　ｈｉｇｈｅｓｔ　ｑｕａｌｉｔｙ　ｔｅａ，　ｐｒｏｄｕｃｅｄ　ｂｙ　ｔｅａ　ｅｘｐｅｒｔ　Ｍｒ．　Ｙ．　Ｔｏｄａａｒ，@KEY()↓
-◆ｗｈｏ　ｃａｒｅｆｕｌｌｙ　ｓｅｌｅｃｔｓ　ｏｎｌｙ　ｈａｎｄ−ｐｉｃｋｅｄ　ｔｅａ　ｌｅａｖｅｓ．@KEY()↓
-◆Ｌｏｎｇ　ａｇｏ，　ｏｎｌｙ　ａｒｉｓｔｏｃｒａｔｓ　ａｔ　ａ　ｋｉｎｇ’ｓ　ｃｏｕｒｔ　ｗｅｒｅ　ａｌｌｏｗｅｄ　ｔｏ　ｄｒｉｎｋ　ｔｈｉｓ　ｔｅａ．
-;akm◆Ｏｒｄｉｎａry folks never had it...
+◆The highest quality tea, produced by tea expert Mr. Y. Todaar,@KEY()↓
+◆who carefully selects only hand−picked tea leaves.@KEY()↓
+◆Long ago, only aristocrats at a king’s court were allowed to drink this tea.
+;akm◆Ordinary folks never had it...
 
 
-;jpn:◆こうちゃ　かんていにんの↓
-;jpn:　トダールさんが@KEY()↓
-;jpn:◆てづみリーフを　げんせんして↓
-;jpn:　つくった↓
-;jpn:　さいこうきゅうの　こうちゃ。@KEY()↓
+;jpn:◆こうちゃ かんていにんの↓
+;jpn: トダールさんが@KEY()↓
+;jpn:◆てづみリーフを げんせんして↓
+;jpn: つくった↓
+;jpn: さいこうきゅうの こうちゃ。@KEY()↓
 ;jpn:◆かつては↓
-;jpn:　きゅうていの　きぞくしか↓
-;jpn:　のむことができなかった。@KEY()↓
+;jpn: きゅうていの きぞくしか↓
+;jpn: のむことができなかった。@KEY()↓
 ;jpn:◆いっぱんしみんでも
 @KEY()
 ↓
@@ -1184,12 +1184,12 @@ MSG_EXPL_GDS_ICE_TEA;marcus
 ;akm
 MSG_EXPL_GDS_DRINK_ADULT;marcus
 ←
-◆Ｆｏｒ　ｂｕｉｌｄｉｎｇ　ａ　ｓｔｒｏｎｇｅｒ，　ｈｅａｌｔｈｉｅｒ　ｂｏｄｙ．@KEY()↓
-◆Ｉｔ　ｇｉｖｅｓ　ｙｏｕ　ａ　ｂｌａｓｔ　ｏｆ　ｎｏｕｒｉｓｈｍｅｎｔ　ｗｈｅｎ　ｙｏｕ　ａｒｅ　ｆａｔｉｇｕｅｄ．
+◆For building a stronger, healthier body.@KEY()↓
+◆It gives you a blast of nourishment when you are fatigued.
 
 ;jpn:◆じようきょうそう↓
-;jpn:　にくたいひろうじの↓
-;jpn:　えいようほきゅうに。
+;jpn: にくたいひろうじの↓
+;jpn: えいようほきゅうに。
 @KEY()
 ↓
 @GOSUB(_GDS_DRINK_HP_RECOVER)
@@ -1202,19 +1202,19 @@ MSG_EXPL_GDS_DRINK_ADULT;marcus
 ;akm
 MSG_EXPL_GDS_SOUP_KRAKEN;marcus
 ←
-◆Ｓｏｕｐ　ｍａｄｅ　ｆｒｏｍ　ｔｈｅ　ｆｉｎ　ｏｆ　ｔｈｅ　ｓｅａ　ｍｏｎｓｔｅｒ　ｋｎｏｗｎ　ａｓ　Ｋｒａｋｅｎ．@KEY()↓
-◆Ｔｈｉｓ　ｂｅａｓｔ　ｌｉｖｅｓ　ｉｎ　ｔｈｅ　ｏｃｅａｎ　ｏｆｆ　ｔｈｅ　ｓｈｏｒｅ　ｏｆ　Ｓｕｍｍｅｒｓ．
+◆Soup made from the fin of the sea monster known as Kraken.@KEY()↓
+◆This beast lives in the ocean off the shore of Summers.
 
 ;jpn:◆サマーズのうみにすむ↓
-;jpn:　かいぶつクラーケンの↓
-;jpn:　ヒレのスープ。
+;jpn: かいぶつクラーケンの↓
+;jpn: ヒレのスープ。
 @KEY()
 ↓
-◆Ｖｅｒｙ　ｅｘｐｅｎｓｉｖｅ，　ｂｕｔ　ａ　ｓｉｚａｂｌｅ　ｐｏｗｅｒ　ｂｏｏｓｔ　ｉｓ　ｇｕａｒａｎｔｅｅｄ．
+◆Very expensive, but a sizable power boost is guaranteed.
 
 ;jpn:◆とてもこうかだが↓
-;jpn:　そのぶんの　たいりょくＵＰは↓
-;jpn:　まちがいなし。
+;jpn: そのぶんの たいりょくUPは↓
+;jpn: まちがいなし。
 @KEYNP()
 @!
 
@@ -1222,11 +1222,11 @@ MSG_EXPL_GDS_SOUP_KRAKEN;marcus
 ;akm
 MSG_EXPL_GDS_WATER;marcus
 ←
-◆Ｗｈｅｎ　ｙｏｕ　ｄｒｉｎｋ　ｉｔ，　ｙｏｕｒ　ＰＰ　ｓｌｉｇｈｔｌｙ　ｉｎｃｒｅａｓｅｓ．
+◆When you drink it, your PP slightly increases.
 
 ;jpn:◆のむと↓
-;jpn:　ＰＰが↓
-;jpn:　わずかに
+;jpn: PPが↓
+;jpn: わずかに
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1235,10 +1235,10 @@ MSG_EXPL_GDS_WATER;marcus
 ;akm
 MSG_EXPL_GDS_COLD_PILL;marcus
 ←
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｍｏｓｔ　ｅｆｆｅｃｔｉｖｅ　ｔｈｉｎｇ　ｔｏ　ｔａｋｅ　ｗｈｅｎ　ｙｏｕ　ｃａｔｃｈ　ａ　ｃｏｌｄ．
+◆This is the most effective thing to take when you catch a cold.
 
-;jpn:◆かぜを　ひいたら↓
-;jpn:　このくすり。
+;jpn:◆かぜを ひいたら↓
+;jpn: このくすり。
 @KEYNP()
 @!
 
@@ -1246,22 +1246,22 @@ MSG_EXPL_GDS_COLD_PILL;marcus
 ;akm
 MSG_EXPL_GDS_SERUM;marcus
 ←
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｂｅｓｔ　ｔｈｉｎｇ　ｔｏ　ｔａｋｅ　ｗｈｅｎ　ｙｏｕ　ｇｅｔ　ｐｏｉｓｏｎｅｄ．
+◆This is the best thing to take when you get poisoned.
 
 ;jpn:◆どくに↓
-;jpn:　おかされたら↓
-;jpn:　これ。
+;jpn: おかされたら↓
+;jpn: これ。
 @KEYNP()
 @!
 
-;113ＩＱカプセル
+;113IQカプセル
 ;akm
 MSG_EXPL_GDS_CAPSULE_IQ;marcus
 ←
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　ＩＱ　ｗｈｅｎ　ｔａｋｅｎ．
+◆It increases your IQ when taken.
 
 ;jpn:◆のむと↓
-;jpn:　ＩＱがあがる。
+;jpn: IQがあがる。
 @KEYNP()
 @!
 
@@ -1269,10 +1269,10 @@ MSG_EXPL_GDS_CAPSULE_IQ;marcus
 ;akm
 MSG_EXPL_GDS_CAPSULE_GUTS;marcus
 ←
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｇｕｔｓ　ｗｈｅｎ　ｔａｋｅｎ．
+◆It increases your Guts when taken.
 
 ;jpn:◆のむと↓
-;jpn:　ガッツがあがる。
+;jpn: ガッツがあがる。
 @KEYNP()
 @!
 
@@ -1280,10 +1280,10 @@ MSG_EXPL_GDS_CAPSULE_GUTS;marcus
 ;akm
 MSG_EXPL_GDS_CAPSULE_SPEED;marcus
 ←
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｓｐｅｅｄ　ｗｈｅｎ　ｔａｋｅｎ．
+◆It increases your Speed when taken.
 
 ;jpn:◆のむと↓
-;jpn:　スピードがあがる。
+;jpn: スピードがあがる。
 @KEYNP()
 @!
 
@@ -1291,10 +1291,10 @@ MSG_EXPL_GDS_CAPSULE_SPEED;marcus
 ;akm
 MSG_EXPL_GDS_CAPSULE_VITAL;marcus
 ←
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｖｉｔａｌｉｔｙ　ｗｈｅｎ　ｔａｋｅｎ．
+◆It increases your Vitality when taken.
 
 ;jpn:◆のむと↓
-;jpn:　バイタリティがあがる。
+;jpn: バイタリティがあがる。
 @KEYNP()
 @!
 
@@ -1302,10 +1302,10 @@ MSG_EXPL_GDS_CAPSULE_VITAL;marcus
 ;akm
 MSG_EXPL_GDS_CAPSULE_LUCK;marcus
 ←
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｌｕｃｋ　ｗｈｅｎ　ｔａｋｅｎ．
+◆It increases your Luck when taken.
 
 ;jpn:◆のむと↓
-;jpn:　ラックがあがる。
+;jpn: ラックがあがる。
 @KEYNP()
 @!
 
@@ -1369,14 +1369,14 @@ MSG_EXPL_GDS_GOMASHIO;
 ;akm
 MSG_EXPL_GDS_BACKSTAGE_PASS;marcus
 ←
-◆Ｉｔ　ａｌｌｏｗｓ　ｙｏｕ　ｇｏ　ｂａｃｋ　ｓｔａｇｅ　ａｔ　ｔｈｅ　Ｃｈａｏｓ　Ｔｈｅａｔｅｒ．@KEY()↓
-◆Ｏｆ　ｃｏｕｒｓｅ，　ｙｏｕ　ｃａｎ　ａｌｓｏ　ｗａｔｃｈ　ｔｈｅ　ｓｈｏｗ　ｕｓｉｎｇ　ｔｈｅ　ｐａｓｓ．
+◆It allows you go back stage at the Chaos Theater.@KEY()↓
+◆Of course, you can also watch the show using the pass.
 
 ;jpn:◆カオスげきじょうの↓
-;jpn:　がくやに　はいれる↓
-;jpn:　きょかしょう。@KEY()↓
-;jpn:◆もちろん　ステージも↓
-;jpn:　みほうだい。
+;jpn: がくやに はいれる↓
+;jpn: きょかしょう。@KEY()↓
+;jpn:◆もちろん ステージも↓
+;jpn: みほうだい。
 @KEYNP()
 @!
 
@@ -1384,15 +1384,15 @@ MSG_EXPL_GDS_BACKSTAGE_PASS;marcus
 ;akm
 MSG_EXPL_GDS_TOPPING_KING;marcus
 ←
-◆Ｕｓｅ　ｂｙ　ｓｐｒｉｎｋｌｉｎｇ　ｉｔ　ｏｖｅｒ　ｆｏｏｄ．@KEY()↓
-◆Ｉｔ　ｔａｓｔｅｓ　ｇｏｏｄ　ｗｉｔｈ　ａｎｙ　ｋｉｎｄ　ｏｆ　ｆｏｏｄ，　ｔｈｅｒｅｂｙ@KEY()↓
-◆ｉｎｃｒｅａｓｉｎｇ　ｔｈｅ　ｒｅｃｏｖｅｒｙ　ｐｏｗｅｒ　ｏｆ　ｔｈｅ　ｆｏｏｄ．
+◆Use by sprinkling it over food.@KEY()↓
+◆It tastes good with any kind of food, thereby@KEY()↓
+◆increasing the recovery power of the food.
 
 ;jpn:◆たべものに↓
-;jpn:　かけてつかう。@KEY()↓
-;jpn:◆どんな　たべものにも↓
-;jpn:　よくあう。@KEY()↓
-;jpn:◆かいふくりょく　アップだ。
+;jpn: かけてつかう。@KEY()↓
+;jpn:◆どんな たべものにも↓
+;jpn: よくあう。@KEY()↓
+;jpn:◆かいふくりょく アップだ。
 @KEYNP()
 @!
 
@@ -1400,11 +1400,11 @@ MSG_EXPL_GDS_TOPPING_KING;marcus
 ;akm
 MSG_EXPL_GDS_WET_TOWEL;marcus
 ←
-◆Ｉｔ’ｓ　ｇｒｅａｔ　ｆｏｒ　ｔｈｏｓｅ　ｔｉｍｅｓ　ｔｈａｔ　ｙｏｕ　ｇｅｔ　ｓｕｎｓｔｒｏｋｅ．
+◆It’s great for those times that you get sunstroke.
 
 ;jpn:◆にっしゃびょうに↓
-;jpn:　かかったら↓
-;jpn:　これ。
+;jpn: かかったら↓
+;jpn: これ。
 @KEYNP()
 @!
 
@@ -1412,14 +1412,14 @@ MSG_EXPL_GDS_WET_TOWEL;marcus
 ;akm
 MSG_EXPL_GDS_ANGEL_SEED;marcus
 ←
-◆Ｉｔ　ｈｅｌｐｓ　ｗｈｅｎ　ｙｏｕ　ｈａｖｅ　ｂｅｅｎ　ｐｏｉｓｏｎｅｄ，　ｏｒ　ｙｏｕ　ａｒｅ　ｆｅｅｌｉｎｇ　ｎａｕｓｅｏｕｓ．@KEY()↓
-◆Ｉｔ　ａｌｓｏ　ｈａｓ　ｏｔｈｅｒ　ｕｓｅｓ．．．@KEY()↓
+◆It helps when you have been poisoned, or you are feeling nauseous.@KEY()↓
+◆It also has other uses...@KEY()↓
 
-;akm◆Ａｌｓｏ　ｈａｓ　ｏｔｈｅｒ　ｕｓｅａｇｅ．@KEY()↓
+;akm◆Also has other useage.@KEY()↓
  
-;jpn:◆どくに　おかされたり↓
-;jpn:　きもちがわるくなったら↓
-;jpn:　これ。@KEY()↓
+;jpn:◆どくに おかされたり↓
+;jpn: きもちがわるくなったら↓
+;jpn: これ。@KEY()↓
 ;jpn:◆そのほかにも↓
 @GOSUB(_GDS_HEAL_B)
 @GOSUB(_GDS_HEAL_C1)
@@ -1431,12 +1431,12 @@ MSG_EXPL_GDS_ANGEL_SEED;marcus
 MSG_EXPL_GDS_DIAMOND_CRASHER;marcus
 ←
 ;◆ダイヤモンドになってしまったり↓
-;　しびれてしまったら↓
-;　これ。@KEY()↓
-◆Ｍａｙ　ｒｅｖｉｖｅ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　ｉｓ　ｕｎｃｏｎｓｃｉｏｕｓ．@KEY()↓
+; しびれてしまったら↓
+; これ。@KEY()↓
+◆May revive a friend who is unconscious.@KEY()↓
 
-;jpn:◆きぜつした　なかまを↓
-;jpn:　カムバックさせることが　ある。@KEY()↓
+;jpn:◆きぜつした なかまを↓
+;jpn: カムバックさせることが ある。@KEY()↓
 @GOSUB(_GDS_HEAL_A)
 @GOSUB(_GDS_HEAL_B)
 @GOSUB(_GDS_HEAL_C1)
@@ -1449,10 +1449,10 @@ MSG_EXPL_GDS_DIAMOND_CRASHER;marcus
 ;akm
 MSG_EXPL_GDS_LIFE_HORN;marcus
 ←
-◆Ｒｅｖｉｖｅｓ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　ｉｓ　ｕｎｃｏｎｓｃｉｏｕｓ．@KEY()↓
+◆Revives a friend who is unconscious.@KEY()↓
 
-;jpn:◆きぜつした　なかまを↓
-;jpn:　カムバックさせる。@KEY()↓
+;jpn:◆きぜつした なかまを↓
+;jpn: カムバックさせる。@KEY()↓
 @GOSUB(_GDS_HEAL_A)
 @GOSUB(_GDS_HEAL_B)
 @GOSUB(_GDS_HEAL_C2)
@@ -1461,15 +1461,15 @@ MSG_EXPL_GDS_LIFE_HORN;marcus
 @KEYNP()
 @!
 
-;131アンチＰＳＩマシン
+;131アンチPSIマシン
 ;akm
 MSG_EXPL_GDS_ANTI_PSI;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｃｏｎｔａｉｎｓ　ｔｈｅ　ｅｎｅｍｙ’ｓ　ＰＳＩ　ｄｕｒｉｎｇ　ａ　ｂａｔｔｌｅ．@KEY()↓
+◆Contains the enemy’s PSI during a battle.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　てきのＰＳＩを　ふうじこめる。@KEY()↓
+;jpn: てきのPSIを ふうじこめる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1479,10 +1479,10 @@ MSG_EXPL_GDS_ANTI_PSI;marcus
 MSG_EXPL_GDS_SHIELD_KILLER;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｂｒｅａｋｓ　ｔｈｒｏｕｇｈ　ｔｈｅ　ｅｎｅｍｙ’ｓ　ｓｈｉｅｌｄ　ｄｕｒｉｎｇ　ａ　ｂａｔｔｌｅ．@KEY()↓
+◆Breaks through the enemy’s shield during a battle.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　てきのシールドを　きりさく。@KEY()↓
+;jpn: てきのシールドを きりさく。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1494,12 +1494,12 @@ MSG_EXPL_GDS_BAZOOKA;marcus
 @GOSUB(_GDS_FOR_JEFF)
 @GOSUB(_GDS_DAMAGE)
 @KEY()↓
-◆Ｂｅｃａｕｓｅ　ｏｆ　ｉｔｓ　ｅｘｐｌｏｓｉｖｅ　ｐｏｗｅｒ，@KEY()↓
-◆ｉｔ　ｍａｙ　ｅｆｆｅｃｔ　ｏｔｈｅｒｓ　ｂｅｓｉｄｅｓ　ｔｈｅ　ｔａｒｇｅｔ　ｃｒｅａｔｕｒｅ．@KEY()↓
+◆Because of its explosive power,@KEY()↓
+◆it may effect others besides the target creature.@KEY()↓
 
-;jpn:◆ばくはつりょくが　あるので↓
-;jpn:　ねらったてき　いがいにも↓
-;jpn:　こうかが　ある。@KEY()↓
+;jpn:◆ばくはつりょくが あるので↓
+;jpn: ねらったてき いがいにも↓
+;jpn: こうかが ある。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1509,18 +1509,18 @@ MSG_EXPL_GDS_BAZOOKA;marcus
 MSG_EXPL_GDS__BAZOOKA_SUPER;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｒｅａｌｌｙ　ｄｉｓｈｅｓ　ｏｕｔ　ａ　ｌｏｔ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ｔｈｅ　ｅｎｅｍｙ　ｄｕｒｉｎｇ　ａ　ｂａｔｔｌｅ．
+◆Really dishes out a lot of damage to the enemy during a battle.
 
 ;jpn:◆せんとうじ↓
-;jpn:　てきに　おおきなダメージを↓
-;jpn:　あたえる。
+;jpn: てきに おおきなダメージを↓
+;jpn: あたえる。
 @KEY()↓
-◆Ｂｅｃａｕｓｅ　ｏｆ　ｉｔｓ　ｅｘｐｌｏｓｉｖｅ　ｐｏｗｅｒ，@KEY()↓
-◆ｉｔ　ｍａｙ　ｅｆｆｅｃｔ　ｏｔｈｅｒｓ　ｂｅｓｉｄｅｓ　ｔｈｅ　ｔａｒｇｅｔ　ｃｒｅａｔｕｒｅ．@KEY()↓
+◆Because of its explosive power,@KEY()↓
+◆it may effect others besides the target creature.@KEY()↓
 
-;jpn:◆ばくはつりょくが　あるので↓
-;jpn:　ねらったてき　いがいにも↓
-;jpn:　こうかが　ある。@KEY()↓
+;jpn:◆ばくはつりょくが あるので↓
+;jpn: ねらったてき いがいにも↓
+;jpn: こうかが ある。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1530,14 +1530,14 @@ MSG_EXPL_GDS__BAZOOKA_SUPER;marcus
 MSG_EXPL_GDS_SUCK;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｓｕｃｋｓ　ｕｐ　ｓｏｍｅ　ＨＰ　ｆｒｏｍ　ｔｈｅ　ｔａｒｇｅｔ　ｃｒｅａｔｕｒｅ．@KEY()↓
-◆Ｔｈｅ　ｍｏｒｅ　ＨＰ　ａｎ　ｅｎｅｍｙ　ｈａｓ，　ｔｈｅ　ｍｏｒｅ　ｙｏｕ　ｇｅｔ．@KEY()↓
+◆Sucks up some HP from the target creature.@KEY()↓
+◆The more HP an enemy has, the more you get.@KEY()↓
 
 ;jpn:◆ねらったてきの↓
-;jpn:　たいりょくを　すいとる。@KEY()↓
+;jpn: たいりょくを すいとる。@KEY()↓
 ;jpn:◆てきのたいりょくが↓
-;jpn:　おおきいほど↓
-;jpn:　たくさん　すいとることができる。@KEY()↓
+;jpn: おおきいほど↓
+;jpn: たくさん すいとることができる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1547,14 +1547,14 @@ MSG_EXPL_GDS_SUCK;marcus
 MSG_EXPL_GDS_SUCK_SUPER;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｓｕｃｋｓ　ｕｐ　ｓｏｍｅ　ＨＰ　ｆｒｏｍ　ａｌｌ　ｔｈｅ　ｅｎｅｍｉｅｓ．@KEY()↓
-◆Ｔｈｅ　ｍｏｒｅ　ＨＰ　ｔｈｅ　ｅｎｅｍｉｅｓ　ｈａｖｅ，　ｔｈｅ　ｍｏｒｅ　ｙｏｕ　ｇｅｔ．@KEY()↓
+◆Sucks up some HP from all the enemies.@KEY()↓
+◆The more HP the enemies have, the more you get.@KEY()↓
 
 ;jpn:◆てきぜんいんから↓
-;jpn:　たいりょくをすいとる。@KEY()↓
+;jpn: たいりょくをすいとる。@KEY()↓
 ;jpn:◆てきのたいりょくが↓
-;jpn:　おおきいほど↓
-;jpn:　たくさん　すいとることができる。@KEY()↓
+;jpn: おおきいほど↓
+;jpn: たくさん すいとることができる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1563,11 +1563,11 @@ MSG_EXPL_GDS_SUCK_SUPER;marcus
 ;akm
 MSG_EXPL_GDS_SPRAY_SUPER;marcus
 ←
-◆Ｄｅａｌｓ　２００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ａｎｙ　ｂｕｇ　ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｃｏｍｂａｔ．@KEY()↓
+◆Deals ２００ points of damage to any bug when used during combat.@KEY()↓
 
-;jpn:◆せんとうじ　ムシたちに↓
-;jpn:　それぞれ　やく２００ポイントの↓
-;jpn:　ダメージをあたえる。@KEY()↓
+;jpn:◆せんとうじ ムシたちに↓
+;jpn: それぞれ やく２００ポイントの↓
+;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1577,11 +1577,11 @@ MSG_EXPL_GDS_SPRAY_SUPER;marcus
 MSG_EXPL_GDS_NEBANEBA_MACHINE;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｓｐｒａｙｓ　ａ　ｓｔｉｃｋｙ　ｓｕｂｓｔａｎｃｅ　ｔｈａｔ　ｓｔｏｐｓ　ｔｈｅ　ｅｎｅｍｙ　ｆｒｏｍ　ｍｏｖｉｎｇ．@KEY()↓
+◆Sprays a sticky substance that stops the enemy from moving.@KEY()↓
 
-;jpn:◆せんとうじ　なかから↓
-;jpn:　ねばーっ　としたものが↓
-;jpn:　とびだして@KEY()↓
+;jpn:◆せんとうじ なかから↓
+;jpn: ねばーっ としたものが↓
+;jpn: とびだして@KEY()↓
 ;jpn:◆てきのうごきをとめる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
@@ -1592,16 +1592,16 @@ MSG_EXPL_GDS_NEBANEBA_MACHINE;marcus
 MSG_EXPL_GDS_TOOL_ICHIGO_TOFU;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｉｎｖｅｎｔｅｄ　ｂｙ　Ａｐｐｌｅ　Ｋｉｄ．@KEY()↓
-;akm◆Ｄｕｒｉｎｇ　ｔｈｅ　ｂａｔｔｌｅ，　ｎｏｔ　ｑｕｉｔｅ　ｓｕｒｅ　ｗｈａｔ　ｉｔ　ｉｓ，　ｂｕｔ　ｇｉｖｅｓ　ｅｎｅｍｙ　ｓｏｍｅ　ｄａｍａｇｅ．
+◆Invented by Apple Kid.@KEY()↓
+;akm◆During the battle, not quite sure what it is, but gives enemy some damage.
 
-◆Ｉｆ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｃｏｍｂａｔ，　ｓｏｍｅ　ｄａｍａｇｅ　ｗｉｌｌ　ｂｅ　ｄｅａｌｔ　ｔｏ　ｔｈｅ　ｅｎｅｍｙ，@KEY()↓
-◆ｔｈｏｕｇｈ　ｉｔ’ｓ　ｎｏｔ　ｕｎｄｅｒｓｔｏｏｄ　ｗｈｙ　ｔｈｉｓ　ｈａｐｐｅｎｓ．．．　ｉｔ’ｓ　ｊｕｓｔ　ｙｏｇｕｒｔ　ａｆｔｅｒ　ａｌｌ．．．@KEY()↓
+◆If used during combat, some damage will be dealt to the enemy,@KEY()↓
+◆though it’s not understood why this happens... it’s just yogurt after all...@KEY()↓
 
-;jpn:◆アップルキッドの　はつめいひん。@KEY()↓
+;jpn:◆アップルキッドの はつめいひん。@KEY()↓
 ;jpn:◆せんとうじ‥‥↓
-;jpn:　よくわからないが↓
-;jpn:　てきにダメージを　あたえる。@KEY()↓
+;jpn: よくわからないが↓
+;jpn: てきにダメージを あたえる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1610,10 +1610,10 @@ MSG_EXPL_GDS_TOOL_ICHIGO_TOFU;marcus
 ;akm
 MSG_EXPL_GDS_MONSASHI;marcus
 ←
-◆Ｙｏｕ　ｃａｎ　ｅｖｅｎ　ｕｓｅ　ｔｈｉｓ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ！@KEY()↓
+◆You can even use this during battle!@KEY()↓
 
 ;jpn:◆せんとうじに↓
-;jpn:　つかうことすら　できる。@KEY()↓
+;jpn: つかうことすら できる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1622,19 +1622,19 @@ MSG_EXPL_GDS_MONSASHI;marcus
 ;akm
 MSG_EXPL_GDS_SNAKE_BAG;marcus
 ←
-◆Ｄｕｒｉｎｇ　ｂａｔｔｌｅ，　ａ　ｓｎａｋｅ　ｐｏｐｓ　ｏｕｔ　ｏｆ　ｔｈｅ　ｂａｇ　ａｎｄ　ｂｉｔｅｓ　ｔｈｅ　ｅｎｅｍｙ．@KEY()↓
-◆Ｔｈｅｒｅ　ａｒｅ　ｔｈｏｕｓａｎｄｓ　ｏｆ　ｓｍａｌｌ　ｓｎａｋｅｓ　ｌｉｖｉｎｇ　ｉｎ　ｔｈｅ　ｂａｇ，@KEY()↓
-◆ｓｏ　ｙｏｕ　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｕｓｅ　ｉｔ　ｏｖｅｒ　ａｎｄ　ｏｖｅｒ　ａｇａｉｎ．@KEY()↓
-◆Ｉｔ　ｃａｎ　ｐｏｓｓｉｂｌｙ　ｐｏｉｓｏｎ　ｔｈｅ　ｅｎｅｍｙ，　ｔｏｏ．
+◆During battle, a snake pops out of the bag and bites the enemy.@KEY()↓
+◆There are thousands of small snakes living in the bag,@KEY()↓
+◆so you should be able to use it over and over again.@KEY()↓
+◆It can possibly poison the enemy, too.
 
-;jpn:◆せんとうじ　なかから↓
-;jpn:　へびが　とびだして↓
-;jpn:　てきに　かみつく。@KEY()↓
-;jpn:◆ふくろには　ちいさな　へびが↓
-;jpn:　むすうに　いるので↓
-;jpn:　なんどでも　つかえる。@KEY()↓
+;jpn:◆せんとうじ なかから↓
+;jpn: へびが とびだして↓
+;jpn: てきに かみつく。@KEY()↓
+;jpn:◆ふくろには ちいさな へびが↓
+;jpn: むすうに いるので↓
+;jpn: なんどでも つかえる。@KEY()↓
 ;jpn:◆てきに↓
-;jpn:　どくを　あたえることも　ある。
+;jpn: どくを あたえることも ある。
 @KEYNP()
 @!
 
@@ -1642,14 +1642,14 @@ MSG_EXPL_GDS_SNAKE_BAG;marcus
 ;akm
 MSG_EXPL_GDS_BANDAGE_MUMMY;
 ←
-◆Ｉｆ　ｕｓｅｄ　ａｓ　ａ　ｗｈｉｐ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ，　ｔｈｅ　ｅｎｅｍｙ　ｗｉｌｌ　ｔａｋｅ　ｓｏｍｅ　ｄａｍａｇｅ@KEY()↓
-◆ａｎｄ　ｓｔｏｐ　ｍｏｖｉｎｇ　ｆｏｒ　ａ　ｗｈｉｌｅ．
+◆If used as a whip during battle, the enemy will take some damage@KEY()↓
+◆and stop moving for a while.
 
 ;jpn:◆せんとうじ↓
-;jpn:　むちのように　つかうと↓
-;jpn:　てきにダメージを　あたえ@KEY()↓
+;jpn: むちのように つかうと↓
+;jpn: てきにダメージを あたえ@KEY()↓
 ;jpn:◆すこしのあいだ↓
-;jpn:　うごきを　とめることができる。
+;jpn: うごきを とめることができる。
 @KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
@@ -1659,10 +1659,10 @@ MSG_EXPL_GDS_BANDAGE_MUMMY;
 ;akm
 MSG_EXPL_GDS_BUNDOKI;marcus
 ←
-◆Ｙｏｕ　ｃａｎ　ｅｖｅｎ　ｕｓｅ　ｔｈｉｓ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ！@KEY()↓
+◆You can even use this during battle!@KEY()↓
 
 ;jpn:◆せんとうじに↓
-;jpn:　つかうことさえ　できる。@KEY()↓
+;jpn: つかうことさえ できる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1679,14 +1679,14 @@ MSG_EXPL_GDS_PENCIL_ROCKET;
 @!
 
 ;145ペンシルロケット５
-ａｋｍ
+akm
 MSG_EXPL_GDS_PENCIL_ROCKET5;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｆｉｒｅｓ　ａ　ｆａｓｔ，　ｐｏｗｅｒｆｕｌ　ｂｏｔｔｌｅ　ｒｏｃｋｅｔ．@KEY()↓
+◆Fires a fast, powerful bottle rocket.@KEY()↓
  
 ;jpn:◆ペンシルロケットを↓
-;jpn:　いちどに５はつ　はっしゃする。@KEY()↓
+;jpn: いちどに５はつ はっしゃする。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1696,10 +1696,10 @@ MSG_EXPL_GDS_PENCIL_ROCKET5;marcus
 MSG_EXPL_GDS_PENCIL_ROCKET20;
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｐｏｓｓｉｂｌｙ　ｔｈｅ　ｓｔｒｏｎｇｅｓｔ　ｗｅａｐｏｎ　ａｒｏｕｎｄ，　ｉｔ　ｄｏｅｓ　ａ　ｌｏｔ　ｏｆ　ｄａｍａｇｅ　ｄｕｅ　ｔｏ　ｉｔｓ　ｍａｓｓｉｖｅ　ｗａｒｈｅａｄ．@KEY()↓
+◆Possibly the strongest weapon around, it does a lot of damage due to its massive warhead.@KEY()↓
  
 ;jpn:◆ペンシルロケットを↓
-;jpn:　いちどに２０ぱつ　はっしゃする。@KEY()↓
+;jpn: いちどに２０ぱつ はっしゃする。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1710,12 +1710,12 @@ MSG_EXPL_GDS_BOMB;
 ←
 @GOSUB(_GDS_DAMAGE)
 @KEY()↓
-◆Ｂｅｃａｕｓｅ　ｏｆ　ｉｔｓ　ｅｘｐｌｏｓｉｖｅ　ｐｏｗｅｒ，@KEY()↓
-◆ｉｔ　ｍａｙ　ｅｆｆｅｃｔ　ｏｔｈｅｒｓ　ｂｅｓｉｄｅｓ　ｔｈｅ　ｔａｒｇｅｔ　ｃｒｅａｔｕｒｅ．　@KEY()↓
+◆Because of its explosive power,@KEY()↓
+◆it may effect others besides the target creature. @KEY()↓
 
-;jpn:◆ばくはつりょくが　あるので↓
-;jpn:　ねらったてき　いがいにも↓
-;jpn:　こうかが　ある。@KEY()↓
+;jpn:◆ばくはつりょくが あるので↓
+;jpn: ねらったてき いがいにも↓
+;jpn: こうかが ある。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1724,16 +1724,16 @@ MSG_EXPL_GDS_BOMB;
 ;akm
 MSG_EXPL_GDS_BOMB_SUPER;marcus
 ←
-◆Ａｂｌｅ　ｔｏ　ｄｉｓｈ　ｏｕｔ　ｓｏｍｅ　ｈｅａｖｙ−ｄｕｔｙ　ｄｅｓｔｒｕｃｔｉｏｎ　ｉｎ　ｃｏｍｂａｔ．　　@KEY()↓
-◆Ｂｅｃａｕｓｅ　ｏｆ　ｉｔｓ　ｅｘｐｌｏｓｉｖｅ　ｐｏｗｅｒ，@KEY()↓
-◆ｉｔ　ｍａｙ　ｅｆｆｅｃｔ　ｏｔｈｅｒｓ　ｂｅｓｉｄｅｓ　ｔｈｅ　ｔａｒｇｅｔ　ｃｒｅａｔｕｒｅ．@KEY()↓
+◆Able to dish out some heavy−duty destruction in combat.  @KEY()↓
+◆Because of its explosive power,@KEY()↓
+◆it may effect others besides the target creature.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　てきに　おおきなダメージを↓
-;jpn:　あたえる。@KEY()↓
-;jpn:◆ばくはつりょくが　あるので↓
-;jpn:　ねらったてき　いがいにも↓
-;jpn:　こうかが　ある。@KEY()↓
+;jpn: てきに おおきなダメージを↓
+;jpn: あたえる。@KEY()↓
+;jpn:◆ばくはつりょくが あるので↓
+;jpn: ねらったてき いがいにも↓
+;jpn: こうかが ある。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1742,12 +1742,12 @@ MSG_EXPL_GDS_BOMB_SUPER;marcus
 ;akm
 MSG_EXPL_GDS_SPRAY;marcus
 ←
-◆Ｄｅａｌｓ　１００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ａｎｙ　ｂｕｇ　ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｃｏｍｂａｔ．@KEY()↓
-;◆Ｄｅａｌｓ　ａｂｏｕｔ　１００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ａ　ｂｕｇ　ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｃｏｍｂａｔ．@KEY()↓
+◆Deals １００ points of damage to any bug when used during combat.@KEY()↓
+;◆Deals about １００ points of damage to a bug when used during combat.@KEY()↓
 
-;jpn:◆せんとうじ　ムシたちに↓
-;jpn:　それぞれ　やく１００ポイントの↓
-;jpn:　ダメージをあたえる。@KEY()↓
+;jpn:◆せんとうじ ムシたちに↓
+;jpn: それぞれ やく１００ポイントの↓
+;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1756,13 +1756,13 @@ MSG_EXPL_GDS_SPRAY;marcus
 ;akm
 MSG_EXPL_GDS_ORIGIN_RUST;marcus
 ←
-◆Ｑｕｉｃｋｌｙ　ｒｕｓｔｓ　ｍｅｔａｌｌｉｃ　ｅｎｅｍｉｅｓ　ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．@KEY()↓
-◆Ｔｈｅ　ｅｎｅｍｙ　ｗｉｌｌ　ｔａｋｅ　ａｂｏｕｔ　２００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．@KEY()↓
+◆Quickly rusts metallic enemies when used during battle.@KEY()↓
+◆The enemy will take about ２００ points of damage.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　きんぞくのてきを　さびさせて@KEY()↓
-;jpn:◆それぞれ　やく２００ポイントの↓
-;jpn:　ダメージをあたえる。@KEY()↓
+;jpn: きんぞくのてきを さびさせて@KEY()↓
+;jpn:◆それぞれ やく２００ポイントの↓
+;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1771,13 +1771,13 @@ MSG_EXPL_GDS_ORIGIN_RUST;marcus
 ;akm
 MSG_EXPL_GDS_ORIGIN_RUST_SUPER;marcus
 ←
-◆Ｃａｕｓｅｓ　ａｌｍｏｓｔ　ｉｎｓｔａｎｔａｎｅｏｕｓ　ｒｕｓｔｉｎｇ　ｗｈｅｎ　ｕｓｅｄ　ｏｎ　ｍｅｔａｌｌｉｃ　ｅｎｅｍｉｅｓ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．@KEY()↓
-◆Ｔｈｅ　ｅｎｅｍｙ　ｔａｋｅｓ　ａｂｏｕｔ　４００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．@KEY()↓
+◆Causes almost instantaneous rusting when used on metallic enemies during battle.@KEY()↓
+◆The enemy takes about ４００ points of damage.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　きんぞくのてきを　さびさせて@KEY()↓
-;jpn:◆それぞれ　やく４００ポイントの↓
-;jpn:　ダメージをあたえる。@KEY()↓
+;jpn: きんぞくのてきを さびさせて@KEY()↓
+;jpn:◆それぞれ やく４００ポイントの↓
+;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1786,12 +1786,12 @@ MSG_EXPL_GDS_ORIGIN_RUST_SUPER;marcus
 ;akm
 MSG_EXPL_GDS_SOCKS_STINK;marcus
 ←
-◆Ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ，　ｔｈｅ　ｅｎｅｍｙ　ｇｅｔｓ　ｓｏ　ｎａｕｓｅｏｕｓ　ｆｒｏｍ　ｔｈｅ　ｒｉｐｅ　ｏｄｏｒ，@KEY()↓
-◆ｔｈｅｙ　ｃａｎｎｏｔ　ｆｉｇｈｔ．@KEY()↓
+◆When used during battle, the enemy gets so nauseous from the ripe odor,@KEY()↓
+◆they cannot fight.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　てきはそのくささに　たじろぎ↓
-;jpn:　かたまってしまう。@KEY()↓
+;jpn: てきはそのくささに たじろぎ↓
+;jpn: かたまってしまう。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1800,12 +1800,12 @@ MSG_EXPL_GDS_SOCKS_STINK;marcus
 ;akm
 MSG_EXPL_GDS_KUWAGT;marcus
 ←
-◆Ｂｙ　ｔｈｒｏｗｉｎｇ　ｔｈｉｓ　ａｔ　ｔｈｅ　ｅｎｅｍｙ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ，@KEY()↓
-◆ｔｈｅ　ｅｎｅｍｙ　ｉｓ　ｓｈｏｃｋｅｄ　ａｎｄ　ｓｔｏｐｓ　ｍｏｖｉｎｇ．@KEY()↓
+◆By throwing this at the enemy during battle,@KEY()↓
+◆the enemy is shocked and stops moving.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　なげつけると　てきがおどろき↓
-;jpn:　うごきがとまる。@KEY()↓
+;jpn: なげつけると てきがおどろき↓
+;jpn: うごきがとまる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1814,10 +1814,10 @@ MSG_EXPL_GDS_KUWAGT;marcus
 ;akm
 MSG_EXPL_GDS_TOOTHBRUSH;marcus
 ←
-◆Ｃａｎ　ｂｅ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．@KEY()↓
+◆Can be used during battle.@KEY()↓
  
 ;jpn:◆せんとうじに↓
-;jpn:　つかうことが　できる。@KEY()↓
+;jpn: つかうことが できる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1826,14 +1826,14 @@ MSG_EXPL_GDS_TOOTHBRUSH;marcus
 ;akm
 MSG_EXPL_GDS_BELT_HANDBAG;marcus
 ←
-◆Ｗｈｅｎ　ｕｓｅｄ　ａｓ　ａ　ｗｈｉｐ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ，@KEY()↓
-◆ｔｈｅ　ｅｎｅｍｙ　ｔａｋｅｓ　ｅｎｏｕｇｈ　ｄａｍａｇｅ　ｔｏ　ｓｔｏｐ　ｍｏｖｉｎｇ　ｆｏｒ　ａ　ｓｈｏｒｔ　ｔｉｍｅ．@KEY()↓
+◆When used as a whip during battle,@KEY()↓
+◆the enemy takes enough damage to stop moving for a short time.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　むちのように　つかうと↓
-;jpn:　てきにダメージを　あたえ@KEY()↓
+;jpn: むちのように つかうと↓
+;jpn: てきにダメージを あたえ@KEY()↓
 ;jpn:◆すこしのあいだ↓
-;jpn:　うごきを　とめることができる。@KEY()↓
+;jpn: うごきを とめることができる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1842,16 +1842,16 @@ MSG_EXPL_GDS_BELT_HANDBAG;marcus
 ;akm
 MSG_EXPL_GDS_CURSE_PHARAOH;marcus
 ←
-◆Ａｎ　ｅｃｔｏｐｌａｓｍｉｃ　ｏｏｚｅ　ｉｓ　ｄｉｓｇｏｒｇｅｄ　ｏｕｔ　ｏｆ　ｔｈｅ　ｄｒｅａｄｆｕｌ　ｂｏｘ，@KEY()↓
-◆ａｎｄ　ｔｈｅ　ｅｎｅｍｙ　ｍａｙ　ｂｅ　ｐｏｉｓｏｎｅｄ．@KEY()↓
+◆An ectoplasmic ooze is disgorged out of the dreadful box,@KEY()↓
+◆and the enemy may be poisoned.@KEY()↓
 
 ;jpn:◆おどろおどろしい↓
-;jpn:　もんようが　えがかれた↓
-;jpn:　はこの　なかから@KEY()↓
+;jpn: もんようが えがかれた↓
+;jpn: はこの なかから@KEY()↓
 ;jpn:◆エクトプラズムのようなものが↓
-;jpn:　とびだし@KEY()↓
+;jpn: とびだし@KEY()↓
 ;jpn:◆てきに↓
-;jpn:　どくを　あたえることも　ある。@KEY()↓
+;jpn: どくを あたえることも ある。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1860,11 +1860,11 @@ MSG_EXPL_GDS_CURSE_PHARAOH;marcus
 ;akm
 MSG_EXPL_GDS__SHOWER_DEFNCE;marcus
 ←
-◆Ｉｎｃｒｅａｓｅｓ　ｔｈｅ　Ｄｅｆｅｎｓｅ　ｏｆ　ａｌｌ　ｔｈｅ　ｆｒｉｅｎｄｓ．@KEY()↓
+◆Increases the Defense of all the friends.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　みかたぜんいんの↓
-;jpn:　しゅびりょくが　あがる。@KEY()↓
+;jpn: みかたぜんいんの↓
+;jpn: しゅびりょくが あがる。@KEY()↓
 @GOSUB(_PSI_USE_PILE)
 @KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
@@ -1875,10 +1875,10 @@ MSG_EXPL_GDS__SHOWER_DEFNCE;marcus
 ;akm
 MSG_EXPL_GDS_LETTER_MAMA
 ←
-◆Ａ　ｌｅｔｔｅｒ　ｆｒｏｍ　Ｍａｍａ　ｔｏ　@DSP_NAME(PC_NESS)．
+◆A letter from Mama to @DSP_NAME(PC_NESS).
 
 ;jpn:◆ママが↓
-;jpn:　@DSP_NAME(PC_NESS)にあてた　てがみ。
+;jpn: @DSP_NAME(PC_NESS)にあてた てがみ。
 @KEYNP()
 @!
 
@@ -1886,13 +1886,13 @@ MSG_EXPL_GDS_LETTER_MAMA
 ;akm
 MSG_EXPL_GDS_DOUBLE_GUTS;marcus
 ←
-◆Ｄｏｕｂｌｅｓ　ｙｏｕｒ　ｇｕｔｓ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．@KEY()↓
-◆Ｈｏｗｅｖｅｒ，　ａｆｔｅｒ　ａ　ｂａｔｔｌｅ，　ｙｏｕｒ　ｇｕｔｓ　ｒｅｔｕｒｎ　ｔｏ　ｎｏｒｍａｌ．　@KEY()↓
+◆Doubles your guts during battle.@KEY()↓
+◆However, after a battle, your guts return to normal. @KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　ガッツが　２ばいになる。@KEY()↓
-;jpn:◆ただし　せんとうが　おわると↓
-;jpn:　もとにもどる。@KEY()↓
+;jpn: ガッツが ２ばいになる。@KEY()↓
+;jpn:◆ただし せんとうが おわると↓
+;jpn: もとにもどる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1901,14 +1901,14 @@ MSG_EXPL_GDS_DOUBLE_GUTS;marcus
 ;akm
 MSG_EXPL_GDS_DRAGON_POWDER;marcus
 ←
-◆Ｉｆ　ｙｏｕ　ｓｐｒｉｎｋｌｅ　ｔｈｅ　ｐｏｗｄｅｒ　ｏｎ　ｏｎｅ　ｏｆ　ｙｏｕｒ　ｆｒｉｅｎｄｓ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ，　@KEY()↓
-◆ｔｈａｔ　ｆｒｉｅｎｄ　ｔｕｒｎｓ　ｉｎｔｏ　ａ　ｄｒａｇｏｎ　ａｎｄ　ａｔｔａｃｋｓ　ａｌｌ　ｅｎｅｍｉｅｓ．@KEY()↓
+◆If you sprinkle the powder on one of your friends during battle, @KEY()↓
+◆that friend turns into a dragon and attacks all enemies.@KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn:　みかたに　ふりかけると↓
-;jpn:　ドラゴンに　へんしんして@KEY()↓
+;jpn: みかたに ふりかけると↓
+;jpn: ドラゴンに へんしんして@KEY()↓
 ;jpn:◆てきぜんいんに↓
-;jpn:　ダメージを　あたえる。@KEY()↓
+;jpn: ダメージを あたえる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1917,11 +1917,11 @@ MSG_EXPL_GDS_DRAGON_POWDER;marcus
 ;akm
 MSG_EXPL_GDS_SPRAY_DEFNCE;marcus
 ←
-◆Ｉｎｃｒｅａｓｅ　ｏｎｅ　ｏｆ　ｔｈｅ　ｆｒｉｅｎｄｓ　Ｄｅｆｅｎｓｅ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．
+◆Increase one of the friends Defense during battle.
 
 ;jpn:◆せんとうじ↓
-;jpn:　みかたひとりの↓
-;jpn:　しゅびりょくが　あがる。
+;jpn: みかたひとりの↓
+;jpn: しゅびりょくが あがる。
 @KEY()
 ↓
 @GOSUB(_PSI_USE_PILE)
@@ -1934,37 +1934,37 @@ MSG_EXPL_GDS_SPRAY_DEFNCE;marcus
 ;akm
 MSG_EXPL_GDS_NOSE_PIG;marcus
 ←
-◆Ｉｆ　ｙｏｕ　ｗｅａｒ　ｔｈｉｓ　ｏｎ　ｙｏｕｒ　ｎｏｓｅ，　ｙｏｕ　ｃａｎ　ｆｉｎｄ　ａｎｄ　ｒｏｏｔ　ｏｕｔ　ｍａｇｉｃ　ｔｒｕｆｆｌｅｓ．@KEY()↓
+◆If you wear this on your nose, you can find and root out magic truffles.@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)@KEY()↓
-◆．．．ｌｅｔ　ｍｅ　ｅｘｐｌａｉｎ　ａ　ｂｉｔ　ａｂｏｕｔ　ｍａｇｉｃ　ｔｒｕｆｆｌｅｓ．@KEY()↓
-◆Ｔｈｅｙ　ａｒｅ　ａ　ｋｉｎｄ　ｏｆ　ｍｕｓｈｒｏｏｍ　ｔｈａｔ　ｇｒｏｗ　ｉｎ　ｄａｍｐ　ｐｌａｃｅｓ，　ｌｉｋｅ　ａｔ　ｔｈｅ　ｂａｓｅ　ｏｆ　ｂｉｇ　ｔｒｅｅｓ．@KEY()↓
-◆Ｔｈｅｙ　ａｒｅ　ａｌｍｏｓｔ　ａｌｗａｙｓ　ｂｕｒｉｅｄ，　@KEY()↓
-◆ｓｏ　ｔｈｅｙ　ｃａｎｎｏｔ　ｂｅ　ｓｅｅｎ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｆｉｎｄ　ｏｎｅ　ａｎｄ　ｅａｔ　ｉｔ，　ｉｔ　ｉｓ　ｓａｉｄ　ｔｏ　ｇｒｅａｔｌｙ　ｒｅｃｏｖｅｒ　ａ　ｐｅｒｓｏｎ’ｓ　ＰＰ！@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｓｅｅ　ｍｏｒｅ　ｉｎｆｏ　ａｂｏｕｔ　ｔｈｅ　ｗｏｎｄｒｏｕｓ　Ｍａｇｉｃ　Ｔｒｕｆｆｌｅ　ａｆｔｅｒ　ｙｏｕ　ｈａｖｅ　ｏｂｔａｉｎｅｄ　ｏｎｅ．
+◆...let me explain a bit about magic truffles.@KEY()↓
+◆They are a kind of mushroom that grow in damp places, like at the base of big trees.@KEY()↓
+◆They are almost always buried, @KEY()↓
+◆so they cannot be seen.@KEY()↓
+◆If you find one and eat it, it is said to greatly recover a person’s PP!@KEY()↓
+◆You can see more info about the wondrous Magic Truffle after you have obtained one.
 
-;jpn:◆はなに　はりつけると↓
-;jpn:　マジックトリフの　においを↓
-;jpn:　かぎわけることができる。@KEY()↓
+;jpn:◆はなに はりつけると↓
+;jpn: マジックトリフの においを↓
+;jpn: かぎわけることができる。@KEY()↓
 
 ;jpn:◆‥‥ついでだから↓
-;jpn:　マジックトリフのせつめいを↓
-;jpn:　ざっと　しておこう。@KEY()↓
+;jpn: マジックトリフのせつめいを↓
+;jpn: ざっと しておこう。@KEY()↓
 ;jpn:◆マジックトリフとは↓
-;jpn:　じめじめしたばしょの@KEY()↓
-;jpn:◆たいぼくの　ねもとなどに↓
-;jpn:　はえている↓
-;jpn:　キノコのいっしゅ。@KEY()↓
+;jpn: じめじめしたばしょの@KEY()↓
+;jpn:◆たいぼくの ねもとなどに↓
+;jpn: はえている↓
+;jpn: キノコのいっしゅ。@KEY()↓
 ;jpn:◆はえているといっても↓
-;jpn:　じめんのなかに↓
-;jpn:　うもれていることがほとんどで@KEY()↓
-;jpn:◆めで　みてさがすのは↓
-;jpn:　とてもムリらしい。@KEY()↓
-;jpn:◆たべると　サイコパワーが↓
-;jpn:　どーん！　とかいふくする@KEY()↓
+;jpn: じめんのなかに↓
+;jpn: うもれていることがほとんどで@KEY()↓
+;jpn:◆めで みてさがすのは↓
+;jpn: とてもムリらしい。@KEY()↓
+;jpn:◆たべると サイコパワーが↓
+;jpn: どーん! とかいふくする@KEY()↓
 ;jpn:◆らしい。@KEY()↓
 ;jpn:◆くわしくはマジックトリフの↓
-;jpn:　せつめいをごらんください。
+;jpn: せつめいをごらんください。
 @KEYNP()
 @!
 
@@ -1972,11 +1972,11 @@ MSG_EXPL_GDS_NOSE_PIG;marcus
 ;akm
 MSG_EXPL_GDS_SIGNBOARD_PAWNSHOP;marcus
 ←
-◆Ｉｔ　ｉｎｖｉｔｅｓ　ｐｅｏｐｌｅ　ｔｏ　ｃｏｍｅ　ａｎｄ　ｂｕｙ　ｙｏｕｒ　ｕｎｎｅｃｅｓｓａｒｙ　ｇｏｏｄｓ．@KEY()↓
+◆It invites people to come and buy your unnecessary goods.@KEY()↓
 
 ;jpn:◆つかうと↓
-;jpn:　いらないグッズを　かいに↓
-;jpn:　おきゃくさんが　やってくる。@KEY()↓
+;jpn: いらないグッズを かいに↓
+;jpn: おきゃくさんが やってくる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
 @!
@@ -1984,10 +1984,10 @@ MSG_EXPL_GDS_SIGNBOARD_PAWNSHOP;marcus
 ;164むくちをなおすほん
 MSG_EXPL_GDS_BOOK_CHAT;marcus
 ←
-◆Ａｓ　ｔｈｅ　ｔｉｔｌｅ　ｓａｙｓ，　ｉｔ　ｈｅｌｐｓ　ｏｎｅ　ｏｖｅｒｃｏｍｅ　ｓｈｙｎｅｓｓ．
+◆As the title says, it helps one overcome shyness.
 
 ;jpn:◆そのなのとおり↓
-;jpn:　むくちをなおすほんだ。
+;jpn: むくちをなおすほんだ。
 @KEYNP()
 @!
 
@@ -1995,13 +1995,13 @@ MSG_EXPL_GDS_BOOK_CHAT;marcus
 ;akm
 MSG_EXPL_GDS_POSTCARD;marcus
 ←
-◆Ｎｏｔ　ｒｅａｌｌｙ　ｈｏｒｒｉｂｌｅ，　ｂｕｔ　ｔｈｅ　ｓｃｅｎｅ　ｏｎ　ｔｈｅ　ｆｒｏｎｔ　ｄｏｅｓｎ’ｔ　ｍａｋｅ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｇｏ　ｔｈｅｒｅ．　　
+◆Not really horrible, but the scene on the front doesn’t make you want to go there.  
 
 ;jpn:◆あたりさわりのない↓
-;jpn:　しかし↓
-;jpn:　かんじのわるい@KEY()↓
+;jpn: しかし↓
+;jpn: かんじのわるい@KEY()↓
 ;jpn:◆ふうけいが↓
-;jpn:　えがかれている。
+;jpn: えがかれている。
 @KEYNP()
 @!
 
@@ -2009,11 +2009,11 @@ MSG_EXPL_GDS_POSTCARD;marcus
 ;akm
 MSG_EXPL_GDS_DRY_MEAT_SPECIAL;marcus
 ←
-◆Ａ　ｋｉｎｇ−ｓｉｚｅｄ　ｂａｎａｎａ．↓
-　　Ｎｏｔ　ｅｄｉｂｌｅ．
+◆A king−sized banana.↓
+  Not edible.
 
-;jpn:◆キングサイズの　バナナ。↓
-;jpn:　しょくように　てきさない。
+;jpn:◆キングサイズの バナナ。↓
+;jpn: しょくように てきさない。
 @KEYNP()
 @!
 
@@ -2021,10 +2021,10 @@ MSG_EXPL_GDS_DRY_MEAT_SPECIAL;marcus
 ;akm
 MSG_EXPL_GDS_LETTER_TONY
 ←
-◆Ａ　ｌｅｔｔｅｒ　ｆｒｏｍ　Ｔｏｎｙ　ｔｏ　@DSP_NAME(PC_JEFF)．
+◆A letter from Tony to @DSP_NAME(PC_JEFF).
 
 ;jpn:◆トニーが↓
-;jpn:　@DSP_NAME(PC_JEFF)にあてた　てがみ。
+;jpn: @DSP_NAME(PC_JEFF)にあてた てがみ。
 @KEYNP()
 @!
 
@@ -2032,10 +2032,10 @@ MSG_EXPL_GDS_LETTER_TONY
 ;akm
 MSG_EXPL_GDS_HIYOK;marcus
 ←
-◆Ａ　ｃｈｉｃｋ　ｔｈａｔ　ｊｕｓｔ　ｈａｔｃｈｅｄ．
+◆A chick that just hatched.
 
 ;jpn:◆うまれたばかりの↓
-;jpn:　ヒヨコです。
+;jpn: ヒヨコです。
 @KEYNP()
 @!
 
@@ -2043,8 +2043,8 @@ MSG_EXPL_GDS_HIYOK;marcus
 ;akm
 MSG_EXPL_GDS_NIWATORI;marcus
 ←
-◆Ａ　ｒｅａｌ，　ｌｉｖｅ　ｃｈｉｃｋｅｎ．@KEY()↓
-◆Ｄｏｎ’ｔ　ｅａｔ　ｉｔ，　ｐｌｅａｓｅ．
+◆A real, live chicken.@KEY()↓
+◆Don’t eat it, please.
 
 ;jpn:◆にわとり。↓
 ;jpn:◆たべないでくださいね。
@@ -2055,10 +2055,10 @@ MSG_EXPL_GDS_NIWATORI;marcus
 ;akm
 MSG_EXPL_GDS_KEY_TABIGOYA;marcus
 ←
-◆Ａ　ｋｅｙ　ｔｏ　ｔｈｅ　ｔｒａｖｅｌｉｎｇ　ｅｎｔｅｒｔａｉｎｅｒ’ｓ　ｓｈａｃｋ．
+◆A key to the traveling entertainer’s shack.
 
 ;jpn:◆たびげいにんの↓
-;jpn:　こやのカギ。
+;jpn: こやのカギ。
 @KEYNP()
 @!
 
@@ -2066,10 +2066,10 @@ MSG_EXPL_GDS_KEY_TABIGOYA;marcus
 ;akm
 MSG_EXPL_GDS_KEY_PRISON;marcus
 ←
-◆Ａ　ｋｅｙ　ｔｏ　ａ　ｈｏｌｄｉｎｇ　ｃｅｌｌ　ｍａｄｅ　ｓｐｅｃｉａｌｌｙ　ｆｏｒ　@DSP_NAME(PC_PAULA)．
+◆A key to a holding cell made specially for @DSP_NAME(PC_PAULA).
 
-;jpn:◆@DSP_NAME(PC_PAULA)が　つかまっている↓
-;jpn:　ろうやのカギ。
+;jpn:◆@DSP_NAME(PC_PAULA)が つかまっている↓
+;jpn: ろうやのカギ。
 @KEYNP()
 @!
 
@@ -2077,11 +2077,11 @@ MSG_EXPL_GDS_KEY_PRISON;marcus
 ;akm
 MSG_EXPL_GDS_CHOTTO;marcus
 ←
-◆Ｔｈｅ　”Ｍａｃｈｉｎｅ　ｔｈａｔ　Ｏｐｅｎｓ　Ｄｏｏｒｓ，　ｅｓｐｅｃｉａｌｌｙ　ｗｈｅｎ　ｙｏｕ　ｈａｖｅ　ａ　ｓｌｉｇｈｔｌｙ　ｂａｄ　ｋｅｙ”　ｍａｃｈｉｎｅ．
+◆The ”Machine that Opens Doors, especially when you have a slightly bad key” machine.
 
 ;jpn:◆「ちょっとしたカギなら↓
-;jpn:　いがいとカンタンに↓
-;jpn:　あけられる」マシン。
+;jpn: いがいとカンタンに↓
+;jpn: あけられる」マシン。
 @KEYNP()
 @!
 
@@ -2089,10 +2089,10 @@ MSG_EXPL_GDS_CHOTTO;marcus
 ;akm
 MSG_EXPL_GDS_MONTLY;marcus
 ←
-◆Ａ　ｋｅｙ　ｇｉｖｅｎ　ｔｏ　ｙｏｕ　ｂｙ　ａ　ｍａｉｄ　ｗｈｏ　ｗｏｒｋｓ　ａｔ　ｔｈｅ　Ｍｏｎｏｔｏｌｉ　ｂｕｉｌｄｉｎｇ．
+◆A key given to you by a maid who works at the Monotoli building.
 
 ;jpn:◆モノトリービルの↓
-;jpn:　メイドさんがくれたカギ。
+;jpn: メイドさんがくれたカギ。
 @KEYNP()
 @!
 
@@ -2100,13 +2100,13 @@ MSG_EXPL_GDS_MONTLY;marcus
 ;akm
 MSG_EXPL_GDS_ZOMBIE_HOIHOI;marcus
 ←
-◆Ａｐｐｌｅ　Ｋｉｄ’ｓ　ｉｎｖｅｎｔｉｏｎ．@KEY()↓
-◆Ｌａｙ　ｔｈｉｓ　ｏｕｔ　ｉｎ　ｔｈｅ　ｔｅｎｔ，　ａｎｄ　ｔｈｅ　ｎｅｘｔ　ｄａｙ，　ａ　ｌｏｔ　ｏｆ　ｚｏｍｂｉｅｓ　ｍａｙ　ｂｅ　ｓｔｕｃｋ　ｔｏ　ｉｔ．
+◆Apple Kid’s invention.@KEY()↓
+◆Lay this out in the tent, and the next day, a lot of zombies may be stuck to it.
 
-;jpn:◆アップルキッドの　はつめいひん。@KEY()↓
+;jpn:◆アップルキッドの はつめいひん。@KEY()↓
 ;jpn:◆テントにしかけて↓
-;jpn:　ひとばん　たてば↓
-;jpn:　ゾンビが　あつまってくる。
+;jpn: ひとばん たてば↓
+;jpn: ゾンビが あつまってくる。
 @KEYNP()
 @!
 
@@ -2114,11 +2114,11 @@ MSG_EXPL_GDS_ZOMBIE_HOIHOI;marcus
 ;akm
 MSG_EXPL_GDS_EAGLE_EYE;marcus
 ←
-◆Ｗｈａｔ　ａ　ｍｉｒａｃｌｅ！　Ｎｏｗ　ｙｏｕ　ｃａｎ　ｓｅｅ　ｉｎ　ｔｈｅ　ｄａｒｋ！
+◆What a miracle! Now you can see in the dark!
 
 ;jpn:◆くらやみのなかでも↓
-;jpn:　あらふしぎ↓
-;jpn:　めが　みえるようになる。
+;jpn: あらふしぎ↓
+;jpn: めが みえるようになる。
 @KEYNP()
 @!
 
@@ -2126,14 +2126,14 @@ MSG_EXPL_GDS_EAGLE_EYE;marcus
 ;akm
 MSG_EXPL_GDS_BICYCLE;marcus
 ←
-◆Ｒｉｄｉｎｇ　ｔｈｉｓ　ｍａｋｅｓ　ｙｏｕ　ｆｅｅｌ　ｌｉｋｅ　ｗｈｉｓｔｌｉｎｇ！@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｅｖｅｎ　ｒｉｎｇ　ｔｈｅ　ｂｅｌｌ　ｂｙ　ｐｒｅｓｓｉｎｇ　ｔｈｅ　Ｒ　ｂｕｔｔｏｎ．
+◆Riding this makes you feel like whistling!@KEY()↓
+◆You can even ring the bell by pressing the R button.
 
 ;jpn:◆こぐと↓
-;jpn:　おもわず↓
-;jpn:　くちぶえが　ふきたくなる。@KEY()↓
-;jpn:◆Ｒボタンを　おすと↓
-;jpn:　ベルがなる。
+;jpn: おもわず↓
+;jpn: くちぶえが ふきたくなる。@KEY()↓
+;jpn:◆Rボタンを おすと↓
+;jpn: ベルがなる。
 @KEYNP()
 @!
 
@@ -2141,13 +2141,13 @@ MSG_EXPL_GDS_BICYCLE;marcus
 ;akm
 MSG_EXPL_GDS_CASHCARD;marcus
 ←
-;akm◆Ｄｏｎ’ｔ　ｆｏｒｇｅｔ　this ｗｈｅｎ　ｙｏｕ　leave！
+;akm◆Don’t forget this when you leave!
 
-◆Ｙｏｕ　ｋｎｏｗ，　ｙｏｕ　ｓｈｏｕｌｄｎ’ｔ　ｌｅａｖｅ　ｈｏｍｅ　ｗｉｔｈｏｕｔ．．．@KEY()↓
-◆Ｉｔ　ｅｖｅｎ　ｗｏｒｋｓ　ｏｖｅｒｓｅａｓ！
+◆You know, you shouldn’t leave home without...@KEY()↓
+◆It even works overseas!
 
-;jpn:◆でかけるときは　わすれずに。↓
-;jpn:　かいがいでも　つかえます。
+;jpn:◆でかけるときは わすれずに。↓
+;jpn: かいがいでも つかえます。
 @KEYNP()
 @!
 
@@ -2155,10 +2155,10 @@ MSG_EXPL_GDS_CASHCARD;marcus
 ;akm
 MSG_EXPL_GDS_THEATER_TICKET;marcus
 ←
-◆Ｉｔ　ｓａｙｓ，　”Ｓｅｃｔｉｏｎ　Ｂ，　ｓｅａｔ　３Ｄ．”
+◆It says, ”Section B, seat ３D.”
 
-;jpn:◆「Ｓせき　３ばん」と↓
-;jpn:　かいてある。
+;jpn:◆「Sせき ３ばん」と↓
+;jpn: かいてある。
 @KEYNP()
 @!
 
@@ -2166,11 +2166,11 @@ MSG_EXPL_GDS_THEATER_TICKET;marcus
 ;akm
 MSG_EXPL_GDS_LETTER_CHILD;marcus
 ←
-◆Ａ　ｌｅｔｔｅｒ　ｆｒｏｍ　ｔｈｅ　ｐｒｅ−ｓｃｈｏｏｌ　ｋｉｄｓ　ｔｏ　@DSP_NAME(PC_PAULA)．
+◆A letter from the pre−school kids to @DSP_NAME(PC_PAULA).
 
 ;jpn:◆ポーラスターようちえんの↓
-;jpn:　おともだちが↓
-;jpn:　@DSP_NAME(PC_PAULA)にあてた　てがみ。
+;jpn: おともだちが↓
+;jpn: @DSP_NAME(PC_PAULA)にあてた てがみ。
 @KEYNP()
 @!
 
@@ -2178,11 +2178,11 @@ MSG_EXPL_GDS_LETTER_CHILD;marcus
 ;akm
 MSG_EXPL_GDS_SATSUTABA;marcus
 ←
-◆Ａ　ｂｕｎｄｌｅ　ｏｆ　ｂｒａｎｄ　ｎｅｗ，　ｃｒｉｓｐ　ｂｉｌｌｓ．
+◆A bundle of brand new, crisp bills.
 
-;jpn:◆てが　きれそうな↓
-;jpn:　しんぴんの↓
-;jpn:　おさつのたばだ。
+;jpn:◆てが きれそうな↓
+;jpn: しんぴんの↓
+;jpn: おさつのたばだ。
 @KEYNP()
 @!
 
@@ -2190,13 +2190,13 @@ MSG_EXPL_GDS_SATSUTABA;marcus
 ;akm
 MSG_EXPL_GDS_PHONE_RECIVER;marcus
 ←
-◆Ａｐｐｌｅ　ｋｉｄ’ｓ　ｉｎｖｅｎｔｉｏｎ．@KEY()↓
-◆Ｎｏｗ，　ｙｏｕ　ｃａｎ　ｒｅｃｅｉｖｅ　ｉｍｐｏｒｔａｎｔ　ｃａｌｌｓ．
+◆Apple kid’s invention.@KEY()↓
+◆Now, you can receive important calls.
 
-;jpn:◆アップルキッドの　はつめいひん。@KEY()↓
+;jpn:◆アップルキッドの はつめいひん。@KEY()↓
 ;jpn:◆だれかから↓
-;jpn:　だいじな　でんわが↓
-;jpn:　かかってくるかもしれない。
+;jpn: だいじな でんわが↓
+;jpn: かかってくるかもしれない。
 @KEYNP()
 @!
 
@@ -2204,11 +2204,11 @@ MSG_EXPL_GDS_PHONE_RECIVER;marcus
 ;akm
 MSG_EXPL_GDS_DIAMOND;marcus
 ←
-◆Ａ　ｂｉｇ，　ｂｅａｕｔｉｆｕｌ，　ａｎｄ　ｅｘｐｅｎｓｉｖｅ−ｌｏｏｋｉｎｇ　ｇｅｍ．
+◆A big, beautiful, and expensive−looking gem.
  
 ;jpn:◆おおきくて↓
-;jpn:　うつくしくて↓
-;jpn:　こうかそうな　ほうせき。
+;jpn: うつくしくて↓
+;jpn: こうかそうな ほうせき。
 @KEYNP()
 @!
 
@@ -2216,11 +2216,11 @@ MSG_EXPL_GDS_DIAMOND;marcus
 ;akm
 MSG_EXPL_GDS_BANN_SIGNED;
 ←
-◆Ａ　ｂａｎａｎａ　ｓｋｉｎ　ｗｉｔｈ　Ｖｅｎｕｓ’ｓ　ａｕｔｏｇｒａｐｈ．
+◆A banana skin with Venus’s autograph.
 
 ;jpn:◆ビーナスのサインが↓
-;jpn:　はいっている↓
-;jpn:　バナナのかわ。
+;jpn: はいっている↓
+;jpn: バナナのかわ。
 @KEYNP()
 @!
 
@@ -2228,15 +2228,15 @@ MSG_EXPL_GDS_BANN_SIGNED;
 ;akm
 MSG_EXPL_GDS_KEY_TAKOKESHI;marcus
 ←
-◆Ａｐｐｌｅ　Ｋｉｄ’ｓ　ｉｎｖｅｎｔｉｏｎ．@KEY()↓
-◆Ｉｔ　ｍａｋｅｓ　ｓｏｍｅｔｈｉｎｇ　ｂｌｏｃｋｉｎｇ　ｙｏｕｒ　ｗａｙ@KEY()↓
-◆ｔｈａｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａｎ　ｐｅｎｃｉｌ　ｄｉｓａｐｐｅａｒ　ｉｎ　ｊｕｓｔ　ａ　ｓｅｃｏｎｄ．
-;jpn:◆アップルキッドの　はつめいひん。@KEY()↓
+◆Apple Kid’s invention.@KEY()↓
+◆It makes something blocking your way@KEY()↓
+◆that looks like an pencil disappear in just a second.
+;jpn:◆アップルキッドの はつめいひん。@KEY()↓
 ;jpn:◆めのまえの↓
-;jpn:　タコの　かたちを↓
-;jpn:　したものを@KEY()↓
+;jpn: タコの かたちを↓
+;jpn: したものを@KEY()↓
 ;jpn:◆あっというまに↓
-;jpn:　けしてしまうマシン。
+;jpn: けしてしまうマシン。
 @KEYNP()
 @!
 
@@ -2244,12 +2244,12 @@ MSG_EXPL_GDS_KEY_TAKOKESHI;marcus
 ;akm
 MSG_EXPL_GDS_HIEROGLYPH_COPY;marcus
 ←
-◆Ａ　ｃｏｐｙ　ｏｆ　ａ　ｈｉｅｒｏｇｌｙｐｈ．@KEY()↓
-◆Ｓｏｍｅｔｈｉｎｇ　ｉｍｐｏｒｔａｎｔ　ｉｓ　ｒｅｃｏｒｄｅｄ　ｉｎ　ｔｈｅ　ａｎｃｉｅｎｔ　ｃｈａｒａｃｔｅｒｓ．
+◆A copy of a hieroglyph.@KEY()↓
+◆Something important is recorded in the ancient characters.
 
-;jpn:◆ヒエログリフの　うつし。↓
+;jpn:◆ヒエログリフの うつし。↓
 ;jpn:◆こだいのもじで↓
-;jpn:　なにやら　かいてある。
+;jpn: なにやら かいてある。
 @KEYNP()
 @!
 
@@ -2257,16 +2257,16 @@ MSG_EXPL_GDS_HIEROGLYPH_COPY;marcus
 ;akm
 MSG_EXPL_GDS_PRECIOUS_METAL_B;marcus
 ←
-◆Ｉｔ　ｃａｎ　ｂｅ　ｓｏｌｄ　ｆｏｒ　ａ　ｖｅｒｙ　ｈｉｇｈ　ｐｒｉｃｅ．@KEY()↓
-◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｓ　ｉｆ　ｙｏｕ　ｕｓｅ　ｉｔ．@KEY()↓
-◆Ａ　ｇｏｏｄ　ｅｘｐｌａｎａｔｉｏｎ　ｉｓ　ｋｉｎｄ　ｏｆ　ｔｏｕｇｈ．．．
+◆It can be sold for a very high price.@KEY()↓
+◆Nothing happens if you use it.@KEY()↓
+◆A good explanation is kind of tough...
 
 ;jpn:◆こうかなねだんで↓
-;jpn:　かいとって　もらえそう。@KEY()↓
+;jpn: かいとって もらえそう。@KEY()↓
 ;jpn:◆つかっても↓
-;jpn:　なにも　おこらない。@KEY()↓
-;jpn:◆なかなか　せつめいしにくい↓
-;jpn:　ぶっしつ。
+;jpn: なにも おこらない。@KEY()↓
+;jpn:◆なかなか せつめいしにくい↓
+;jpn: ぶっしつ。
 @KEYNP()
 @!
 
@@ -2274,9 +2274,9 @@ MSG_EXPL_GDS_PRECIOUS_METAL_B;marcus
 ;akm
 MSG_EXPL_GDS_CONTACT_LENS;marcus
 ←
-◆Ｉｔ　ｍｕｓｔ　ｂｅｌｏｎｇ　ｔｏ　ｓｏｍｅｏｎｅ．
+◆It must belong to someone.
 
-;jpn:◆だれかの　おとしものらしい。
+;jpn:◆だれかの おとしものらしい。
 @KEYNP()
 @!
 
@@ -2284,14 +2284,14 @@ MSG_EXPL_GDS_CONTACT_LENS;marcus
 ;akm
 MSG_EXPL_GDS_HAND_AID;marcus
 ←
-◆Ａ　ｈａｎｄ−ｍａｄｅ　Ｂａｎｄ　Ａｉｄ．@KEY()↓
-◆Ｉｔ　ｈｅａｌｓ　ｙｏｕｒ　ｗｏｕｎｄｅｄ　ｂｏｄｙ．@KEY()↓
+◆A hand−made Band Aid.@KEY()↓
+◆It heals your wounded body.@KEY()↓
 
-;jpn:◆ハンドメイドの　バンドエイド↓
-;jpn:　りゃくして「ハンドエイド」。@KEY()↓
+;jpn:◆ハンドメイドの バンドエイド↓
+;jpn: りゃくして「ハンドエイド」。@KEY()↓
 ;jpn:◆つかうと↓
-;jpn:　からだじゅうの　きずが↓
-;jpn:　かんぜんに　なおる。@KEY()↓
+;jpn: からだじゅうの きずが↓
+;jpn: かんぜんに なおる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -2300,11 +2300,11 @@ MSG_EXPL_GDS_HAND_AID;marcus
 ;akm
 MSG_EXPL_GDS_ICHIGO_TOFU;
 ←
-◆Ａ　ｆａｓｈｉｏｎａｂｌｅ　ｔｒｅａｔ　ｆｏｒ　ｓｎｏｂｂｙ，　ｈａｕｔｅ　ｃｕｉｓｉｎｅ　ｐｅｏｐｌｅ　ｉｎ　ｓｏｍｅ　ｂｉｇ　ｃｉｔｉｅｓ．@KEY()↓
+◆A fashionable treat for snobby, haute cuisine people in some big cities.@KEY()↓
 
-;jpn:◆だいとかいで　にんきの↓
-;jpn:　ファッショナブルな↓
-;jpn:　デザート。@KEY()↓
+;jpn:◆だいとかいで にんきの↓
+;jpn: ファッショナブルな↓
+;jpn: デザート。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ３０
 @GOSUB(_GDS_HP_RECOVER)
@@ -2335,24 +2335,24 @@ MSG_EXPL_GDS_CALORIE_BLOCK;
 ;akm
 MSG_EXPL_GDS_KEY_DUNGEONMAN;
 ←
-◆Ａｎ　ｏｌｄ　ｋｅｙ．
+◆An old key.
 
 ;jpn:◆ふるぼけたカギ。
 @KEYNP()
 @!
 
-;193ぶっしつＸＹＺ
+;193ぶっしつXYZ
 ;akm
 MSG_EXPL_GDS_OBJECT_XYZ;marcus
 ←
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｐｌａｉｎ　ｏｌｄ　ｒｏｃｋ，@KEY()↓
-◆ｂｕｔ　ｆｏｒ　ｓｏｍｅｏｎｅ　ｗｈｏ　ｋｎｏｗｓ　ａｂｏｕｔ　ｉｔ，　ｉｔ　ｉｓ　ａｃｔｕａｌｌｙ　ａ　ｖｅｒｙ　ｐｒｅｃｉｏｕｓ，　ｕｎｕｓｕａｌ　ｅｌｅｍｅｎｔ．
+◆It looks like a plain old rock,@KEY()↓
+◆but for someone who knows about it, it is actually a very precious, unusual element.
 
 ;jpn:◆いっけん↓
-;jpn:　ただの　いしのようだが‥‥。@KEY()↓
+;jpn: ただの いしのようだが‥‥。@KEY()↓
 ;jpn:◆みるひとがみれば↓
-;jpn:　すごく　とくしゅな↓
-;jpn:　ぶっしつだ。
+;jpn: すごく とくしゅな↓
+;jpn: ぶっしつだ。
 @KEYNP()
 @!
 
@@ -2361,12 +2361,12 @@ MSG_EXPL_GDS_OBJECT_XYZ;marcus
 MSG_EXPL_GDS_PENDANT_DAICHI;marcus
 ←
 @GOSUB(_GDS_EQUIP_BODY)
-◆Ｉｔ　ｐｒｏｔｅｃｔｓ　ｙｏｕ　ｆｒｏｍ　ｆｉｒｅ，　ｆｒｅｅｚｅ，　ａｎｄ　ｆｌａｓｈ　ａｔｔａｃｋｓ．
+◆It protects you from fire, freeze, and flash attacks.
 
 ;jpn:◆ファイアー↓
-;jpn:　フリーズ@KEY()↓
-;jpn:◆そして　フラッシュこうげきから↓
-;jpn:　みをまもる。
+;jpn: フリーズ@KEY()↓
+;jpn:◆そして フラッシュこうげきから↓
+;jpn: みをまもる。
 @KEYNP()
 @!
 
@@ -2375,25 +2375,25 @@ MSG_EXPL_GDS_PENDANT_DAICHI;marcus
 MSG_EXPL_GDS_NEUTRALIZER;marcus
 ←
 @GOSUB(_GDS_FOR_JEFF)
-◆Ｔｈｉｓ　ｉｔｅｍ　ｒｅｓｅｔｓ　ｔｈｅ　ａｂｉｌｉｔｉｅｓ　ｏｆ　ａｌｌ　ｃｒｅａｔｕｒｅｓ　（ｆｒｉｅｎｄ　ｏｒ　ｅｎｅｍｙ）@KEY()↓
-◆ｔｏ　ｔｈｅｉｒ　ｎｏｒｍａｌ　ｌｅｖｅｌｓ．@KEY()↓
-◆Ａｎｙ　ｃｈａｎｇｅｓ　ｔｈａｔ　ｈａｄ　ｔａｋｅｎ　ｐｌａｃｅ　ｄｕｅ　ｔｏ　ＰＳＩ　ａｎｄ　ｓｕｃｈ　ｉｓ　ｎｅｕｔｒａｌｉｚｅｄ．@KEY()↓
-◆Ｉｔ　ａｌｓｏ　ｎｅｕｔｒａｌｉｚｅｓ　ａｌｌ　ｓｈｉｅｌｄｓ　（ｆｒｉｅｎｄ　ｏｒ　ｅｎｅｍｙ）　ｔｈａｔ　ｗｅｒｅ　ｉｎ　ｅｆｆｅｃｔ．@KEY()↓
-◆（Ｒｅｍｅｍｂｅｒ，　ｔｈｅ　ａｂｉｌｉｔｉｅｓ@KEY()↓
-◆ｔｈａｔ　Ｉ　ａｍ　ｔａｌｋｉｎｇ　ａｂｏｕｔ　ａｒｅ　Ｏｆｆｅｎｓｅ，　Ｄｅｆｅｎｓｅ，　Ｇｕｔｓ，　ｅｔｃ．）
+◆This item resets the abilities of all creatures (friend or enemy)@KEY()↓
+◆to their normal levels.@KEY()↓
+◆Any changes that had taken place due to PSI and such is neutralized.@KEY()↓
+◆It also neutralizes all shields (friend or enemy) that were in effect.@KEY()↓
+◆(Remember, the abilities@KEY()↓
+◆that I am talking about are Offense, Defense, Guts, etc.)
 
-;jpn:◆せんとうじに　へんかしている↓
-;jpn:　パラメーターを@KEY()↓
+;jpn:◆せんとうじに へんかしている↓
+;jpn: パラメーターを@KEY()↓
 ;jpn:◆てきみかたをとわず↓
-;jpn:　すべて　もとにもどす。@KEY()↓
+;jpn: すべて もとにもどす。@KEY()↓
 ;jpn:◆かかっているシールドを↓
-;jpn:　てきみかたをとわず↓
-;jpn:　かいじょする　こうかもある。@KEY()↓
-;jpn:◆（パラメーターとは↓
-;jpn:　オフェンスや↓
-;jpn:　ディフェンスや@KEY()↓
-;jpn:◆ガッツなどを　あらわす↓
-;jpn:　すうちのことです）
+;jpn: てきみかたをとわず↓
+;jpn: かいじょする こうかもある。@KEY()↓
+;jpn:◆(パラメーターとは↓
+;jpn: オフェンスや↓
+;jpn: ディフェンスや@KEY()↓
+;jpn:◆ガッツなどを あらわす↓
+;jpn: すうちのことです)
 @KEYNP()
 @!
 
@@ -2401,14 +2401,14 @@ MSG_EXPL_GDS_NEUTRALIZER;marcus
 ;akm
 MSG_EXPL_GDS_SOUND_STONE;marcus
 ←
-◆Ｉｆ　ｙｏｕ　ｔｏｕｃｈ　ｔｈｉｓ　ｔｏ　ｙｏｕｒ　ｆｏｒｅｈｅａｄ　ａｎｄ　ｃｏｎｃｅｎｔｒａｔｅ　ｏｎ　ｙｏｕｒ　ｔｈｏｕｇｈｔｓ，@KEY()↓
+◆If you touch this to your forehead and concentrate on your thoughts,@KEY()↓
 
-◆Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ　ｍｅｌｏｄｉｅｓ　ｃａｎ　ｂｅ　ｈｅａｒｄ．
+◆Your Sanctuary melodies can be heard.
 
 ;jpn:◆ひたいにあて↓
-;jpn:　いしきを　しゅうちゅうすると@KEY()↓
-;jpn:◆おぼえた　メロディが↓
-;jpn:　きこえてくる。
+;jpn: いしきを しゅうちゅうすると@KEY()↓
+;jpn:◆おぼえた メロディが↓
+;jpn: きこえてくる。
 @KEYNP()
 @!
 
@@ -2416,13 +2416,13 @@ MSG_EXPL_GDS_SOUND_STONE;marcus
 ;akm
 MSG_EXPL_GDS_ESCAPE_MOUSE;marcus
 ←
-◆Ｉｆ　ｙｏｕ　ｕｓｅ　ｔｈｉｓ　ｉｎ　ａ　ｄｕｎｇｅｏｎ　ｏｒ　ｓｏｍｅ　ｓｕｃｈ　ｐｌａｃｅ，@KEY()↓
-◆ｔｈｅ　ｍｏｕｓｅ　ｂｒｉｎｇｓ　ｙｏｕ　ｂａｃｋ　ｔｏ　ｔｈｅ　ｐｌａｃｅ　ｗｈｅｒｅ　ｙｏｕ　ｅｎｔｅｒｅｄ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｖｅｒｙ　ｓｍａｒｔ　ｍｏｕｓｅ．
+◆If you use this in a dungeon or some such place,@KEY()↓
+◆the mouse brings you back to the place where you entered.@KEY()↓
+◆It’s a very smart mouse.
 
 ;jpn:◆ダンジョンのなかでつかうと↓
-;jpn:　はいってきたばしょまで↓
-;jpn:　つれもどしてくれる@KEY()↓
+;jpn: はいってきたばしょまで↓
+;jpn: つれもどしてくれる@KEY()↓
 ;jpn:◆かしこいネズミ。
 @KEYNP()
 @!
@@ -2431,11 +2431,11 @@ MSG_EXPL_GDS_ESCAPE_MOUSE;marcus
 ;akm
 MSG_EXPL_GDS_ICE_CANDY;marcus
 ←
-◆Ｉｃｅ　ｃｒｅａｍ　ｔｈａｔ　ｉｓ　ａｌｌ　ｔｈｅ　ｒａｇｅ　ａｍｏｎｇ　ｆａｓｈｉｏｎａｂｌｅ，　ｙｏｕｎｇ　ｗｏｍｅｎ．@KEY()↓
+◆Ice cream that is all the rage among fashionable, young women.@KEY()↓
 
-;jpn:◆オシャレな　おねーさんなどに↓
-;jpn:　にんきがある↓
-;jpn:　アイスクリーム。@KEY()↓
+;jpn:◆オシャレな おねーさんなどに↓
+;jpn: にんきがある↓
+;jpn: アイスクリーム。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ３０
 @GOSUB(_GDS_HP_RECOVER)
@@ -2446,14 +2446,14 @@ MSG_EXPL_GDS_ICE_CANDY;marcus
 ;akm
 MSG_EXPL_GDS_SNAKE;marcus
 ←
-◆Ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ，　ｉｔ　ｂｉｔｅｓ　ｔｈｅ　ｅｎｅｍｙ　ａｎｄ　ｄｉｓａｐｐｅａｒｓ．@KEY()↓
-◆Ｉｔ　ｍａｙ　ａｌｓｏ　ｐｏｉｓｏｎ　ｔｈｅ　ｅｎｅｍｙ．
+◆When used during battle, it bites the enemy and disappears.@KEY()↓
+◆It may also poison the enemy.
 
-;jpn:◆せんとうじに　つかうと↓
-;jpn:　てきに　かみついて↓
-;jpn:　どこかへ　いってしまう。@KEY()↓
+;jpn:◆せんとうじに つかうと↓
+;jpn: てきに かみついて↓
+;jpn: どこかへ いってしまう。@KEY()↓
 ;jpn:◆てきに↓
-;jpn:　どくを　あたえることも　ある。
+;jpn: どくを あたえることも ある。
 @KEYNP()
 @!
 
@@ -2461,14 +2461,14 @@ MSG_EXPL_GDS_SNAKE;marcus
 ;akm
 MSG_EXPL_GDS_SNAKE_POISON;marcus
 ←
-◆Ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ，　ｉｔ　ｂｉｔｅｓ　ｔｈｅ　ｅｎｅｍｙ　ａｎｄ　ｄｉｓａｐｐｅａｒｓ．@KEY()↓
-◆Ｉｔ　ａｌｗａｙｓ　ｐｏｉｓｏｎｓ　ｔｈｅ　ｅｎｅｍｙ．
+◆When used during battle, it bites the enemy and disappears.@KEY()↓
+◆It always poisons the enemy.
 
-;jpn:◆せんとうじに　つかうと↓
-;jpn:　てきに　かみついて↓
-;jpn:　どこかへ　いってしまう。@KEY()↓
-;jpn:◆てきに　かくじつに↓
-;jpn:　どくを　あたえる。
+;jpn:◆せんとうじに つかうと↓
+;jpn: てきに かみついて↓
+;jpn: どこかへ いってしまう。@KEY()↓
+;jpn:◆てきに かくじつに↓
+;jpn: どくを あたえる。
 @KEYNP()
 @!
 
@@ -2476,20 +2476,20 @@ MSG_EXPL_GDS_SNAKE_POISON;marcus
 ;akm
 MSG_EXPL_GDS_FUUIN_STONE;marcus
 ←
-◆Ａ　ｍｉｒａｃｕｌｏｕｓ　ｓｔｏｎｅ　ｔｈａｔ　ｅｎａｂｌｅｓ　ｙｏｕ　ｔｏ　”ｃｏｎｃｅｎｔｒａｔｅ”@KEY()↓
-◆ｗｉｔｈｏｕｔ　ｕｓｉｎｇ　ｙｏｕｒ　ｏｗｎ　ｂｒａｉｎ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ａｃｃｏｍｐｌｉｓｈｅｄ　ｊｕｓｔ　ｂｙ　ｙｏｕｒ　ｋｅｅｐｉｎｇ　ｔｈｉｓ　ｉｔｅｍ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｇｒｅａｔ　ｂｅｃａｕｓｅ　ｉｆ　ｙｏｕ　ｃａｎ’ｔ　ｃｏｎｃｅｎｔｒａｔｅ，　ｙｏｕ　ｃａｎ’ｔ　ｕｓｅ　ＰＳＩ．
+◆A miraculous stone that enables you to ”concentrate”@KEY()↓
+◆without using your own brain.@KEY()↓
+◆This is accomplished just by your keeping this item.@KEY()↓
+◆This is great because if you can’t concentrate, you can’t use PSI.
 
 ;jpn:◆もっているだけで↓
-;jpn:　コンセントレーションを↓
-;jpn:　みだされなくなる@KEY()↓
-;jpn:◆ふしぎな　いし。@KEY()↓
+;jpn: コンセントレーションを↓
+;jpn: みだされなくなる@KEY()↓
+;jpn:◆ふしぎな いし。@KEY()↓
 ;jpn:◆コンセントレーションできないと↓
-;jpn:　ＰＳＩは　つかえない。
+;jpn: PSIは つかえない。
 ;@KEY()
-;◆（コンセントレーションとは↓
-;　しゅうちゅうりょくのことです）
+;◆(コンセントレーションとは↓
+; しゅうちゅうりょくのことです)
 @KEYNP()
 @!
 
@@ -2497,15 +2497,15 @@ MSG_EXPL_GDS_FUUIN_STONE;marcus
 ;akm
 MSG_EXPL_GDS_TOWN_MAP;marcus
 ←
-◆Ａ　ｈａｎｄｙ　ｔｏｗｎ　ｍａｐ．
-　Ｉｔ　ｃａｎ　ｂｅ　ｕｓｅｄ　ｉｎ　Ｏｎｅｔｔ，　ａｓ　ｗｅｌｌ　ａｓ　ｏｔｈｅｒ　ｔｏｗｎｓ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｖｉｅｗ　ｔｈｅ　ｍａｐ　ｑｕｉｃｋｌｙ，　ｓｉｍｐｌｙ　ｂｙ　ｐｒｅｓｓｉｎｇ　ｔｈｅ　Ｘ　ｂｕｔｔｏｎ．
+◆A handy town map.
+ It can be used in Onett, as well as other towns.@KEY()↓
+◆You can view the map quickly, simply by pressing the X button.
 
 ;jpn:◆べんりなタウンマップ。↓
-;jpn:　オネットをはじめ↓
-;jpn:　いろいろな　まちで　つかえる。@KEY()↓
-;jpn:◆Ｘボタンをおせば↓
-;jpn:　すぐに　みることができる。
+;jpn: オネットをはじめ↓
+;jpn: いろいろな まちで つかえる。@KEY()↓
+;jpn:◆Xボタンをおせば↓
+;jpn: すぐに みることができる。
 @KEYNP()
 @!
 
@@ -2513,9 +2513,9 @@ MSG_EXPL_GDS_TOWN_MAP;marcus
 ;akm
 MSG_EXPL_GDS_VIDEO_DRUG;marcus
 ←
-◆Ｗｈａｔ　ｔｈｅ　ｈｅｙ　ｉｓ　ｔｈｉｓ？
+◆What the hey is this?
 
-;jpn:◆なんなんだ　これは？
+;jpn:◆なんなんだ これは?
 @KEYNP()
 @!
 
@@ -2523,12 +2523,12 @@ MSG_EXPL_GDS_VIDEO_DRUG;marcus
 ;akm
 MSG_EXPL_GDS_GREORE_MACHINE;marcus
 ←
-◆Ｏｒａｎｇｅ　Ｋｉｄ’ｓ　ｉｎｖｅｎｔｉｏｎ．@KEY()↓
-◆Ｔｈｅ　ｆｕｌｌ　ｎａｍｅ　ｉｓ　ｔｈｅ　”Ｓｕｐｅｒ　Ｏｒａｎｇｅ　Ｍａｃｈｉｎｅ．”
+◆Orange Kid’s invention.@KEY()↓
+◆The full name is the ”Super Orange Machine.”
 
-;jpn:◆オレンジキッドの　はつめいひん。@KEY()↓
+;jpn:◆オレンジキッドの はつめいひん。@KEY()↓
 ;jpn:◆せいしきめいしょうは↓
-;jpn:　「グレートオレンジマシーン」。
+;jpn: 「グレートオレンジマシーン」。
 @KEYNP()
 @!
 
@@ -2536,10 +2536,10 @@ MSG_EXPL_GDS_GREORE_MACHINE;marcus
 ;akm
 MSG_EXPL_GDS_KEY_LOCKER;marcus
 ←
-◆Ａ　ｋｅｙ　ｔｏ　ａ　ｒｅｇｕｌａｒ　ｌｏｃｋｅｒ．
+◆A key to a regular locker.
 
 ;jpn:◆ふつうの↓
-;jpn:　ロッカーのカギ。
+;jpn: ロッカーのカギ。
 @KEYNP()
 @!
 
@@ -2547,11 +2547,11 @@ MSG_EXPL_GDS_KEY_LOCKER;marcus
 ;akm
 MSG_EXPL_GDS_NOT_SO_GOOD;marcus
 ←
-◆Ｉｔ　ｄｏｅｓｎ’ｔ　ｌｏｏｋ　ｌｉｋｅ　ｉｔ　ｗｏｕｌｄ　ｄｏ　ｍｕｃｈ　ｏｆ　ａｎｙｔｈｉｎｇ，　ｂｕｔ．．．
+◆It doesn’t look like it would do much of anything, but...
 
 ;jpn:◆ほんとに↓
-;jpn:　たいしたことの　なさそうな↓
-;jpn:　ものだが‥‥。
+;jpn: たいしたことの なさそうな↓
+;jpn: ものだが‥‥。
 @KEYNP()
 @!
 
@@ -2559,11 +2559,11 @@ MSG_EXPL_GDS_NOT_SO_GOOD;marcus
 ;akm
 MSG_EXPL_GDS_MAGIC_TORTE;marcus
 ←
-◆Ｒｅｃｏｖｅｒｓ　ａｂｏｕｔ　２０　ＰＰ．
+◆Recovers about ２０ PP.
 
 ;jpn:◆たべると↓
-;jpn:　ＰＰが↓
-;jpn:　やく２０
+;jpn: PPが↓
+;jpn: やく２０
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2572,11 +2572,11 @@ MSG_EXPL_GDS_MAGIC_TORTE;marcus
 ;akm
 MSG_EXPL_GDS_TINY_RUBY;marcus
 ←
-◆Ａｎ　ｏｌｄ　ｔｒｅａｓｕｒｅ　ｆｒｏｍ　Ｄａｌａａｍ．
+◆An old treasure from Dalaam.
 
 ;jpn:◆ランマのくにに↓
-;jpn:　ふるくから　ある↓
-;jpn:　たからもの。
+;jpn: ふるくから ある↓
+;jpn: たからもの。
 @KEYNP()
 @!
 
@@ -2584,12 +2584,12 @@ MSG_EXPL_GDS_TINY_RUBY;marcus
 ;akm
 MSG_EXPL_GDS_MONKY_MIND;marcus
 ←
-◆Ａ　ｇｉｆｔ　ｆｒｏｍ　ａ　ｍｏｎｋｅｙ．@KEY()↓
-◆Ｉｔ　ｃａｎ　ｂｅ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．
+◆A gift from a monkey.@KEY()↓
+◆It can be used during battle.
 
-;jpn:◆サルからの　おくりもの。↓
+;jpn:◆サルからの おくりもの。↓
 ;jpn:◆せんとうで↓
-;jpn:　つかうことが　できる。
+;jpn: つかうことが できる。
 @KEYNP()
 @!
 
@@ -2597,15 +2597,15 @@ MSG_EXPL_GDS_MONKY_MIND;marcus
 ;akm
 MSG_EXPL_GDS_KEY_KOKESHIKESHI;
 ←
-◆Ａｐｐｌｅ　ｋｉｄ’ｓ　ｉｎｖｅｎｔｉｏｎ．@KEY()↓
-◆Ｉｔ　ｅｒａｓｅｓ　ｓｏｍｅｔｈｉｎｇ　ｔｈａｔ　ｌｏｏｋｓ　ｌｉｋｅ　ａ　ｅｒａｓｅｒ@KEY()↓
-◆ｔｈａｔ　ａｌｓｏ　ｍｉｇｈｔ　ｂｅ　ｂｌｏｃｋｉｎｇ　ｙｏｕｒ　ｗａｙ．
-;jpn:◆アップルキッドの　はつめいひん。@KEY()↓
+◆Apple kid’s invention.@KEY()↓
+◆It erases something that looks like a eraser@KEY()↓
+◆that also might be blocking your way.
+;jpn:◆アップルキッドの はつめいひん。@KEY()↓
 ;jpn:◆めのまえの↓
-;jpn:　こけしの　かたちを↓
-;jpn:　したものを@KEY()↓
+;jpn: こけしの かたちを↓
+;jpn: したものを@KEY()↓
 ;jpn:◆あっというまに↓
-;jpn:　けしてしまうマシン。
+;jpn: けしてしまうマシン。
 @KEYNP()
 @!
 
@@ -2613,12 +2613,12 @@ MSG_EXPL_GDS_KEY_KOKESHIKESHI;
 ;akm
 MSG_EXPL_GDS_KEY_GUMIDORIAN;marcus
 ←
-◆Ａ　ｖｅｒｙ　ｓｔｒｏｎｇ−ｓｍｅｌｌｉｎｇ　ｄｉｓｈ．@KEY()↓
-◆Ｔｈｏｓｅ　ｗｈｏ　ｌｉｋｅ　ｉｔ　ｇｏ　ｎｕｔｓ　ｆｏｒ　ｉｔ．．．
+◆A very strong−smelling dish.@KEY()↓
+◆Those who like it go nuts for it...
 
-;jpn:◆ひじょうにつよい　においの↓
-;jpn:　くだもの。↓
-;jpn:◆すきなひとには　たまらない。
+;jpn:◆ひじょうにつよい においの↓
+;jpn: くだもの。↓
+;jpn:◆すきなひとには たまらない。
 @KEYNP()
 @!
 
@@ -2636,10 +2636,10 @@ MSG_EXPL_GDS_BAT_KOUKYU_E;marcus
 ←
 @GOSUB(_GDS_NESS_WEAPON)
 @KEY()↓
-◆Ｗｏｗ！　Ｌｏｏｋ　ａｔ　ｔｈｅ　ｐｉｎｅ　ｔａｒ！　Ｉｔ’ｓ　ａｌｍｏｓｔ　ａｌｌ　ｔｈｅ　ｗａｙ　ｔｏ　ｔｈｅ　ｅｎｄ！
+◆Wow! Look at the pine tar! It’s almost all the way to the end!
 
 ;jpn:◆キラリ↓
-;jpn:　かざりもついてる。
+;jpn: かざりもついてる。
 @KEYNP()
 @!
 
@@ -2682,7 +2682,7 @@ MSG_EXPL_GDS_RIBBON_MAMORI
 @GOSUB(_GDS_PAULA_EQUIP_MISC)
 @KEY()↓			;added 0716
 
-◆Ｗｈｅｎ　ｅｑｕｉｐｐｅｄ，　Ｌｕｃｋ　ｉｓ　ｉｎｃｒｅａｓｅｄ．
+◆When equipped, Luck is increased.
 ;@GOSUB(_GDS_EQUIP_LUCK_UP)	;added 0716
 @KEYNP()
 @!
@@ -2694,7 +2694,7 @@ MSG_EXPL_GDS_RIBBON_MAFUJI
 @GOSUB(_GDS_PAULA_EQUIP_MISC)
 @KEY()↓			;added 0716
 
-◆Ｗｈｅｎ　ｅｑｕｉｐｐｅｄ，　Ｌｕｃｋ　ｉｓ　ｉｎｃｒｅａｓｅｄ．
+◆When equipped, Luck is increased.
 ;@GOSUB(_GDS_EQUIP_LUCK_UP)	;added 0716
 @KEYNP()
 @!
@@ -2706,14 +2706,14 @@ MSG_EXPL_GDS_RIBBON_DOSEI;marcus
 @GOSUB(_GDS_PAULA_EQUIP_MISC)
 @KEY()↓			;added 0716
 
-◆Ｗｈｅｎ　ｅｑｕｉｐｐｅｄ，　Ｌｕｃｋ　ｉｓ　ｉｎｃｒｅａｓｅｄ．
+◆When equipped, Luck is increased.
 ;@GOSUB(_GDS_EQUIP_LUCK_UP)	;added 0716
 @KEY()↓
-◆Ｓａｍｅ　ａｓ　ｔｈｅ　ｏｎｅ　ｔｈａｔ　Ｍｒ．　Ｓａｔｕｒｎ　ｗｅａｒｓ　ｏｎ　ｈｉｓ　ｈｅａｄ．@KEYNP()↓
+◆Same as the one that Mr. Saturn wears on his head.@KEYNP()↓
 
 ;jpn:◆どせいさんの↓
-;jpn:　あたまのうえに　みえるものと↓
-;jpn:　おなじ。@KEYNP()
+;jpn: あたまのうえに みえるものと↓
+;jpn: おなじ。@KEYNP()
 @!
 
 ;221しずけさのコイン
@@ -2736,7 +2736,7 @@ MSG_EXPL_GDS_COIN_MAYOKE_E
 ;akm
 MSG_EXPL_GDS_CUP_RAMEN;marcus
 ←
-◆Ｙｏｕ　ｋｎｏｗ　ｗｈａｔ　ｔｈｉｓ　ｉｓ．．．@KEY()↓
+◆You know what this is...@KEY()↓
 
 ;jpn:◆ごぞんじのとおりのもの。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
@@ -2749,14 +2749,14 @@ MSG_EXPL_GDS_CUP_RAMEN;marcus
 ;akm
 MSG_EXPL_GDS_SKIP_SAND;marcus
 ←
-◆Ｇｉｖｅｓ　ｙｏｕ　ａ　ｓｐｒｉｎｇ　ｉｎ　ｙｏｕｒ　ｓｔｅｐ　ｆｏｒ　ａｂｏｕｔ　１０　ｓｅｃｏｎｄｓ．@KEY()↓
-◆Ｉｔ　ａｌｓｏ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ　ａ　ｂｉｔ．
+◆Gives you a spring in your step for about １０ seconds.@KEY()↓
+◆It also helps you recover your power a bit.
 
 ;jpn:◆たべると↓
-;jpn:　１０びょうほど↓
-;jpn:　あしどりが　かるくなる。@KEY()↓
+;jpn: １０びょうほど↓
+;jpn: あしどりが かるくなる。@KEY()↓
 ;jpn:◆たいりょくも↓
-;jpn:　すこし　かいふくする。
+;jpn: すこし かいふくする。
 @KEYNP()
 @!
 
@@ -2764,14 +2764,14 @@ MSG_EXPL_GDS_SKIP_SAND;marcus
 ;akm
 MSG_EXPL_GDS_SKIP_SAND_SP;marcus
 ←
-◆Ｇｉｖｅｓ　ｙｏｕ　ａ　ｓｐｒｉｎｇ　ｉｎ　ｙｏｕｒ　ｓｔｅｐ　ｆｏｒ　ａｂｏｕｔ　２０　ｓｅｃｏｎｄｓ．@KEY()↓
-◆Ｉｔ　ａｌｓｏ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ　ａ　ｂｉｔ．
+◆Gives you a spring in your step for about ２０ seconds.@KEY()↓
+◆It also helps you recover your power a bit.
 
 ;jpn:◆たべると↓
-;jpn:　２０びょうほど↓
-;jpn:　あしどりが　かるくなる。@KEY()↓
+;jpn: ２０びょうほど↓
+;jpn: あしどりが かるくなる。@KEY()↓
 ;jpn:◆たいりょくも↓
-;jpn:　すこし　かいふくする。
+;jpn: すこし かいふくする。
 @KEYNP()
 @!
 
@@ -2779,15 +2779,15 @@ MSG_EXPL_GDS_SKIP_SAND_SP;marcus
 ;akm
 MSG_EXPL_GDS_FOOD_LUCKY_SAND_A;marcus
 ←
-◆Ｉｔ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ．．．@KEY()↓
-◆Ｈｏｗ　ｍｕｃｈ　ａｎｄ　ｗｈａｔ　ｙｏｕ　ｅｘａｃｔｌｙ　ｒｅｃｏｖｅｒ　ｄｅｐｅｎｄｓ　ｏｎ　ｙｏｕｒ　ｌｕｃｋ！
+◆It helps you recover your power...@KEY()↓
+◆How much and what you exactly recover depends on your luck!
 
 ;jpn:◆たべると↓
-;jpn:　たいりょくなどが↓
-;jpn:　かいふくする。@KEY()↓
-;jpn:◆なにが　どのくらい↓
-;jpn:　かいふくするか　は↓
-;jpn:　うんしだい。
+;jpn: たいりょくなどが↓
+;jpn: かいふくする。@KEY()↓
+;jpn:◆なにが どのくらい↓
+;jpn: かいふくするか は↓
+;jpn: うんしだい。
 ;０５０１γ
 @KEYNP()
 @!
@@ -2796,15 +2796,15 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_A;marcus
 ;akm
 MSG_EXPL_GDS_FOOD_LUCKY_SAND_B;
 ←
-◆Ｉｔ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ．．．@KEY()↓
-◆Ｈｏｗ　ｍｕｃｈ　ａｎｄ　ｗｈａｔ　ｙｏｕ　ｅｘａｃｔｌｙ　ｒｅｃｏｖｅｒ　ｄｅｐｅｎｄｓ　ｏｎ　ｙｏｕｒ　ｌｕｃｋ！
+◆It helps you recover your power...@KEY()↓
+◆How much and what you exactly recover depends on your luck!
 
 ;jpn:◆たべると↓
-;jpn:　たいりょくなどが↓
-;jpn:　かいふくする。@KEY()↓
-;jpn:◆なにが　どのくらい↓
-;jpn:　かいふくするか　は↓
-;jpn:　うんしだい。
+;jpn: たいりょくなどが↓
+;jpn: かいふくする。@KEY()↓
+;jpn:◆なにが どのくらい↓
+;jpn: かいふくするか は↓
+;jpn: うんしだい。
 ;０５０２γ
 @KEYNP()
 @!
@@ -2813,15 +2813,15 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_B;
 ;akm
 MSG_EXPL_GDS_FOOD_LUCKY_SAND_C;
 ←
-◆Ｉｔ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ．．．@KEY()↓
-◆Ｈｏｗ　ｍｕｃｈ　ａｎｄ　ｗｈａｔ　ｙｏｕ　ｅｘａｃｔｌｙ　ｒｅｃｏｖｅｒ　ｄｅｐｅｎｄｓ　ｏｎ　ｙｏｕｒ　ｌｕｃｋ！
+◆It helps you recover your power...@KEY()↓
+◆How much and what you exactly recover depends on your luck!
 
 ;jpn:◆たべると↓
-;jpn:　たいりょくなどが↓
-;jpn:　かいふくする。@KEY()↓
-;jpn:◆なにが　どのくらい↓
-;jpn:　かいふくするか　は↓
-;jpn:　うんしだい。
+;jpn: たいりょくなどが↓
+;jpn: かいふくする。@KEY()↓
+;jpn:◆なにが どのくらい↓
+;jpn: かいふくするか は↓
+;jpn: うんしだい。
 ;０５０３γ
 @KEYNP()
 @!
@@ -2830,15 +2830,15 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_C;
 ;akm
 MSG_EXPL_GDS_FOOD_LUCKY_SAND_D;
 ←
-◆Ｉｔ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ．．．@KEY()↓
-◆Ｈｏｗ　ｍｕｃｈ　ａｎｄ　ｗｈａｔ　ｙｏｕ　ｅｘａｃｔｌｙ　ｒｅｃｏｖｅｒ　ｄｅｐｅｎｄｓ　ｏｎ　ｙｏｕｒ　ｌｕｃｋ！
+◆It helps you recover your power...@KEY()↓
+◆How much and what you exactly recover depends on your luck!
 
 ;jpn:◆たべると↓
-;jpn:　たいりょくなどが↓
-;jpn:　かいふくする。@KEY()↓
-;jpn:◆なにが　どのくらい↓
-;jpn:　かいふくするか　は↓
-;jpn:　うんしだい。
+;jpn: たいりょくなどが↓
+;jpn: かいふくする。@KEY()↓
+;jpn:◆なにが どのくらい↓
+;jpn: かいふくするか は↓
+;jpn: うんしだい。
 ;０５０４γ
 @KEYNP()
 @!
@@ -2847,15 +2847,15 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_D;
 ;akm
 MSG_EXPL_GDS_FOOD_LUCKY_SAND_E;
 ←
-◆Ｉｔ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ．．．@KEY()↓
-◆Ｈｏｗ　ｍｕｃｈ　ａｎｄ　ｗｈａｔ　ｙｏｕ　ｅｘａｃｔｌｙ　ｒｅｃｏｖｅｒ　ｄｅｐｅｎｄｓ　ｏｎ　ｙｏｕｒ　ｌｕｃｋ！
+◆It helps you recover your power...@KEY()↓
+◆How much and what you exactly recover depends on your luck!
 
 ;jpn:◆たべると↓
-;jpn:　たいりょくなどが↓
-;jpn:　かいふくする。@KEY()↓
-;jpn:◆なにが　どのくらい↓
-;jpn:　かいふくするか　は↓
-;jpn:　うんしだい。
+;jpn: たいりょくなどが↓
+;jpn: かいふくする。@KEY()↓
+;jpn:◆なにが どのくらい↓
+;jpn: かいふくするか は↓
+;jpn: うんしだい。
 ;０５０５γ
 @KEYNP()
 @!
@@ -2864,15 +2864,15 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_E;
 ;akm
 MSG_EXPL_GDS_FOOD_LUCKY_SAND_F;
 ←
-◆Ｉｔ　ｈｅｌｐｓ　ｙｏｕ　ｒｅｃｏｖｅｒ　ｙｏｕｒ　ｐｏｗｅｒ．．．@KEY()↓
-◆Ｈｏｗ　ｍｕｃｈ　ａｎｄ　ｗｈａｔ　ｙｏｕ　ｅｘａｃｔｌｙ　ｒｅｃｏｖｅｒ　ｄｅｐｅｎｄｓ　ｏｎ　ｙｏｕｒ　ｌｕｃｋ！
+◆It helps you recover your power...@KEY()↓
+◆How much and what you exactly recover depends on your luck!
 
 ;jpn:◆たべると↓
-;jpn:　たいりょくなどが↓
-;jpn:　かいふくする。@KEY()↓
-;jpn:◆なにが　どのくらい↓
-;jpn:　かいふくするか　は↓
-;jpn:　うんしだい。
+;jpn: たいりょくなどが↓
+;jpn: かいふくする。@KEY()↓
+;jpn:◆なにが どのくらい↓
+;jpn: かいふくするか は↓
+;jpn: うんしだい。
 ;０５０６γ
 @KEYNP()
 @!
@@ -2885,9 +2885,9 @@ MSG_EXPL_GDS_COFFEE;marcus
 １２
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
-◆Ｉ　ｇｕｅｓｓ　ｉｔ　ｔａｓｔｅｓ　ｇｏｏｄ　ｔｏ　ａｄｕｌｔｓ．
+◆I guess it tastes good to adults.
 
-;jpn:◆おとなの　あじ。
+;jpn:◆おとなの あじ。
 @KEYNP()
 @!
 
@@ -2899,7 +2899,7 @@ MSG_EXPL_GDS_HAMBURGER_DOUBLE
 ９０
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
-◆１００％　ｂｅｅｆ．
+◆１００％ beef.
 
 ;jpn:◆ビーフ１００パーセント。
 @KEYNP()
@@ -2909,11 +2909,11 @@ MSG_EXPL_GDS_HAMBURGER_DOUBLE
 ;akm
 MSG_EXPL_GDS_CANDY_SOUR;marcus
 ←
-◆Ｉｔ’ｓ　ｏｎｅ　ｏｆ　Ｍｒ　Ｓａｔｕｒｎ’ｓ　ｆａｖｏｒｉｔｅ　ｆｏｏｄｓ．@KEY()↓
-◆Ｉｔ　ｔａｓｔｅｓ　ｐｒｅｔｔｙ　ｙｕｍｍｙ．@KEY()↓
+◆It’s one of Mr Saturn’s favorite foods.@KEY()↓
+◆It tastes pretty yummy.@KEY()↓
 
-;jpn:◆どせいさんの　だいこうぶつ。↓
-;jpn:◆わりと　おいしかったです。@KEY()↓
+;jpn:◆どせいさんの だいこうぶつ。↓
+;jpn:◆わりと おいしかったです。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 １００
 @GOSUB(_GDS_HP_RECOVER)
@@ -2924,11 +2924,11 @@ MSG_EXPL_GDS_CANDY_SOUR;marcus
 ;akm
 MSG_EXPL_GDS_CANDY_BITTER;marcus
 ←
-◆Ｉｔ’ｓ　ｏｎｅ　ｏｆ　Ｍｒ．　Ｓａｔｕｒｎ’ｓ　ｆａｖｏｒｉｔｅ　ｆｏｏｄｓ．@KEY()↓
-◆Ｉｔ　ｔａｓｔｅｓ　ａｌｌ　ｒｉｇｈｔ．@KEY()↓
+◆It’s one of Mr. Saturn’s favorite foods.@KEY()↓
+◆It tastes all right.@KEY()↓
 
-;jpn:◆どせいさんの　だいこうぶつ。↓
-;jpn:◆けっこう　おいしかったです。@KEY()↓
+;jpn:◆どせいさんの だいこうぶつ。↓
+;jpn:◆けっこう おいしかったです。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ３００
 @GOSUB(_GDS_HP_RECOVER)
@@ -2939,10 +2939,10 @@ MSG_EXPL_GDS_CANDY_BITTER;marcus
 ;akm
 MSG_EXPL_GDS_OKAYU;
 ←
-◆Ａｎ　ｅｖｅｒｙｄａｙ　ｄｉｓｈ　ｉｎ　Ｄａｌａａｍ．@KEY()↓
+◆An everyday dish in Dalaam.@KEY()↓
 
-;jpn:◆ランマの　いっぱんてきな↓
-;jpn:　しょくじ。@KEY()↓
+;jpn:◆ランマの いっぱんてきな↓
+;jpn: しょくじ。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ２００
 @GOSUB(_GDS_HP_RECOVER)
@@ -2953,18 +2953,18 @@ MSG_EXPL_GDS_OKAYU;
 ;akm
 MSG_EXPL_GDS_BEANS_CROQUETTE;marcus
 ←
-◆Ａ　ｃｒｏｑｕｅｔｔｅ　ｍａｄｅ　ｗｉｔｈ　ｍａｓｈｅｄ　ｃｈｉｃｋ　ｐｅａｓ，　ｔｈｅｎ　ｂｒｅａｄｅｄ　ａｎｄ　ｄｅｅｐ　ｆｒｉｅｄ．@KEY()↓
-◆Ｇｅｎ−ｓａｎ　ｉｎ　Ｓｃａｒａｂａ　ｌｏｖｅｓ　ｔｏ　ｃｏｏｋ　ｔｈｉｓ．@KEY()↓
-◆Ｓａｌｔ　ｉｍｐｒｏｖｅｓ　ｉｔ　ａｎｄ　ｔｈｅ　ｏｌｉｖｅ　ｏｉｌ　ｇｉｖｅｓ　ｉｔ　ａ　ｗｏｎｄｅｒｆｕｌ↓
+◆A croquette made with mashed chick peas, then breaded and deep fried.@KEY()↓
+◆Gen−san in Scaraba loves to cook this.@KEY()↓
+◆Salt improves it and the olive oil gives it a wonderful↓
 ;改行しました(三浦兄)
-　　ｆｌａｖｏｒ．@KEY()↓
+  flavor.@KEY()↓
 
 ;jpn:◆スカラビげんさんの↓
-;jpn:　ひよこまめを　すりつぶし↓
-;jpn:　コロモをつけて　あげたコロッケ。@KEY()↓
-;jpn:◆しおあじが　きいていて‥‥@KEY()↓
-;jpn:◆ふるいアブラが　また↓
-;jpn:　いいあじを　だしている。@KEY()↓
+;jpn: ひよこまめを すりつぶし↓
+;jpn: コロモをつけて あげたコロッケ。@KEY()↓
+;jpn:◆しおあじが きいていて‥‥@KEY()↓
+;jpn:◆ふるいアブラが また↓
+;jpn: いいあじを だしている。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ４０
 @GOSUB(_GDS_HP_RECOVER)
@@ -2975,16 +2975,16 @@ MSG_EXPL_GDS_BEANS_CROQUETTE;marcus
 ;akm
 MSG_EXPL_GDS_MOLOKHEIYA_SOUP;marcus
 ←
-◆Ｍｏｌｏｋｈｅｉｙａ　ｉｓ　ａ　ｓｕｍｍｅｒ　ｖｅｇｅｔａｂｌｅ　ｆｒｏｍ　Ｓｃａｒａｂａ．@KEY()↓
-◆Ｉｔ’ｓ　ｈｉｇｈ　ｉｎ　ｎｕｔｒｉｅｎｔｓ，　ａｎｄ　ｉｔ　ｈａｓ　ａ　ｌｉｇｈｔ　ｆｌａｖｏｒ　ｔｈａｔ　Ｓｃａｒａｂａｎｓ　ｌｏｖｅ．@KEY()↓
+◆Molokheiya is a summer vegetable from Scaraba.@KEY()↓
+◆It’s high in nutrients, and it has a light flavor that Scarabans love.@KEY()↓
 
 ;jpn:◆モロヘイヤは↓
-;jpn:　スカラビめいさんの↓
-;jpn:　なつやさい。@KEY()↓
-;jpn:◆たかい　えいようと↓
-;jpn:　あっさりあじが@KEY()↓
+;jpn: スカラビめいさんの↓
+;jpn: なつやさい。@KEY()↓
+;jpn:◆たかい えいようと↓
+;jpn: あっさりあじが@KEY()↓
 ;jpn:◆スカラビのひとびとに↓
-;jpn:　このまれている。@KEY()↓
+;jpn: このまれている。@KEY()↓
 @GOSUB(_GDS_DRINK_HP_RECOVER)
 ８０
 @GOSUB(_GDS_HP_RECOVER)
@@ -2995,11 +2995,11 @@ MSG_EXPL_GDS_MOLOKHEIYA_SOUP;marcus
 ;akm
 MSG_EXPL_GDS_GUMI_BREAD;marcus
 ←
-◆Ｉ　ｄｏｎ’ｔ　ｈａｖｅ　ａ　ｌｏｔ　ｔｏ　ｓａｙ　ａｂｏｕｔ　ｔｈｉｓ．@KEY()↓
-◆Ｉ　ｇｕｅｓｓ　ｔｈｅｒｅ　ａｒｅ　ｓｏｍｅ　ｐｅｏｐｌｅ　ｗｈｏ　ｔｈｉｎｋ　ｉｔ’ｓ　ｇｏｏｄ．@KEY()↓
+◆I don’t have a lot to say about this.@KEY()↓
+◆I guess there are some people who think it’s good.@KEY()↓
 
-;jpn:◆あまり　せつめいしたくない。@KEY()↓
-;jpn:◆うまいという　ひともいる。@KEY()↓
+;jpn:◆あまり せつめいしたくない。@KEY()↓
+;jpn:◆うまいという ひともいる。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ８０
 @GOSUB(_GDS_HP_RECOVER)
@@ -3010,16 +3010,16 @@ MSG_EXPL_GDS_GUMI_BREAD;marcus
 ;akm
 MSG_EXPL_GDS_MUTTON_ON_SKEWERS;marcus
 ←
-◆Ｂｒｏｉｌｅｄ　ｌａｍｂ’ｓ　ｌｉｖｅｒ，　ｅｔｃ．　ａｌｌ　ｓｅｒｖｅｄ　ｏｎ　ａ　ｓｋｅｗｅｒ．@KEY()↓
-◆Ｓｏｍｅｔｉｍｅｓ　ｍｅａｔ　ｏｔｈｅｒ　ｔｈａｎ　ｌａｍｂ　ｉｓ　ｉｎｃｌｕｄｅｄ．．．．．@KEY()↓
-◆ｔｈａｔ’ｓ　ｗｈａｔ　ｓｏｍｅｏｎｅ　ｔｏｌｄ　ｍｅ．．．@KEY()↓
+◆Broiled lamb’s liver, etc. all served on a skewer.@KEY()↓
+◆Sometimes meat other than lamb is included.....@KEY()↓
+◆that’s what someone told me...@KEY()↓
 
 ;jpn:◆ヒツジのレバーなどを↓
-;jpn:　てつのくしに　さして↓
-;jpn:　コンガリやいたもの。@KEY()↓
-;jpn:◆たまに　ヒツジいがいの↓
-;jpn:　にくが　まざっている@KEY()↓
-;jpn:◆‥‥という　ウワサもある。@KEY()↓
+;jpn: てつのくしに さして↓
+;jpn: コンガリやいたもの。@KEY()↓
+;jpn:◆たまに ヒツジいがいの↓
+;jpn: にくが まざっている@KEY()↓
+;jpn:◆‥‥という ウワサもある。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 １２０
 @GOSUB(_GDS_HP_RECOVER)
@@ -3030,9 +3030,9 @@ MSG_EXPL_GDS_MUTTON_ON_SKEWERS;marcus
 ;akm
 MSG_EXPL_GDS_GUMI_YOGURT;
 ←
-◆Ｔａｓｔｅｓ　ｏｋａｙ　ｉｎ　ｓｏｍｅ　ｒｅｓｐｅｃｔｓ．@KEY()↓
+◆Tastes okay in some respects.@KEY()↓
 
-;jpn:◆あるいみで　おいしい。@KEY()↓
+;jpn:◆あるいみで おいしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 １６０
 @GOSUB(_GDS_HP_RECOVER)
@@ -3043,19 +3043,19 @@ MSG_EXPL_GDS_GUMI_YOGURT;
 ;akm
 MSG_EXPL_GDS_DRY_MEAT;
 ←
-◆Ｒｅｃｉｐｅ　ｆｏｒ　ｍａｋｉｎｇ　ｊｅｒｋｙ．@KEY()↓
-◆Ｏｂｔａｉｎ　ｓｏｍｅ　ｔｙｐｅ　ｏｆ　ｍｅａｔ，　ｓｌｉｃｅ　ｉｔ　ｉｎｔｏ　ｐｉｅｃｅｓ　ａｂｏｕｔ　ａ　ｈａｌｆ　ｏｆ　ａｎ　ｉｎｃｈ　ｔｈｉｃｋ．@KEY()↓
-◆Ｈａｎｇ　ｔｈｅ　ｐｉｅｃｅｓ　ｏｎ　ａ　ｌａｕｎｄｒｙ　ｌｉｎｅ　ｏｒ　ｓｏｍｅｔｈｉｎｇ　ｌｉｋｅ　ｉｔ@KEY()↓
-◆ａｎｄ　ｌｅａｖｅ　ｏｕｔ　ｉｎ　ｔｈｅ　ｓｕｎ　ｆｏｒ　ｍａｙｂｅ　６　ｍｏｎｔｈｓ．．．@KEY()↓
-◆Ｗｅｌｌ，　ｔｈａｔ’ｓ　ｗｈａｔ　ｍｙ　ｒｅｃｉｐｅ　ｓａｙｓ．@KEY()↓
+◆Recipe for making jerky.@KEY()↓
+◆Obtain some type of meat, slice it into pieces about a half of an inch thick.@KEY()↓
+◆Hang the pieces on a laundry line or something like it@KEY()↓
+◆and leave out in the sun for maybe ６ months...@KEY()↓
+◆Well, that’s what my recipe says.@KEY()↓
 
-;jpn:◆ほしにくの　つくりかた。@KEY()↓
-;jpn:◆そのへんにある　にくを↓
-;jpn:　１ミリのうすさに　きる。@KEY()↓
+;jpn:◆ほしにくの つくりかた。@KEY()↓
+;jpn:◆そのへんにある にくを↓
+;jpn: １ミリのうすさに きる。@KEY()↓
 ;jpn:◆そこらへんにある↓
-;jpn:　ものほしざおに　かけ@KEY()↓
+;jpn: ものほしざおに かけ@KEY()↓
 ;jpn:◆はんとしかん↓
-;jpn:　おひさまに　あてる。@KEY()↓
+;jpn: おひさまに あてる。@KEY()↓
 ;jpn:◆らしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 １５０
@@ -3077,26 +3077,26 @@ MSG_EXPL_GDS_HAMBURGER_MAMMOTH
 ;akm
 MSG_EXPL_GDS_DRY_MEAT_GREAT
 ←
-◆Ｒｅｃｉｐｅ　ｆｏｒ　ｍａｋｉｎｇ　ｓｐｉｃｙ↓
+◆Recipe for making spicy↓
 ;改行しました(三浦兄)
-　　ｊｅｒｋｙ．@KEY()↓
-◆Ｏｂｔａｉｎ　ｓｏｍｅ　ｔｙｐｅ　ｏｆ　ｍｅａｔ，@KEY()↓
-◆ｓｌｉｃｅ　ｉｔ　ｉｎｔｏ　ｐｉｅｃｅｓ　ａｂｏｕｔ　ａ　ｈａｌｆ　ｏｆ　ａｎ　ｉｎｃｈ　ｔｈｉｃｋ．@KEY()↓
-◆Ｓｅａｓｏｎ　ｔｈｅ　ｐｉｅｃｅｓ　ａｓ　ｍｕｃｈ　ａｓ　ｐｏｓｓｉｂｌｅ，@KEY()↓
-◆ｈａｎｇ　ｔｈｅ　ｐｉｅｃｅｓ　ｏｎ　ａ　ｌａｕｎｄｒｙ　ｌｉｎｅ　ｏｒ　ｓｏｍｅｔｈｉｎｇ　ｌｉｋｅ　ｉｔ@KEY()↓
-◆ａｎｄ　ｌｅａｖｅ　ｏｕｔ　ｉｎ　ｔｈｅ　ｓｕｎ　ｆｏｒ　ｍａｙｂｅ　８　ｍｏｎｔｈｓ．．．@KEY()↓
-◆Ｗｅｌｌ，　ｔｈａｔ’ｓ　ｗｈａｔ　ｍｙ　ｒｅｃｉｐｅ　ｓａｙｓ．．．@KEY()↓
+  jerky.@KEY()↓
+◆Obtain some type of meat,@KEY()↓
+◆slice it into pieces about a half of an inch thick.@KEY()↓
+◆Season the pieces as much as possible,@KEY()↓
+◆hang the pieces on a laundry line or something like it@KEY()↓
+◆and leave out in the sun for maybe ８ months...@KEY()↓
+◆Well, that’s what my recipe says...@KEY()↓
 
 ;jpn:◆スパイシーほしにくの↓
-;jpn:　つくりかた。@KEY()↓
-;jpn:◆そのへんにある　にくを↓
-;jpn:　１ミリのうすさに　きる。@KEY()↓
+;jpn: つくりかた。@KEY()↓
+;jpn:◆そのへんにある にくを↓
+;jpn: １ミリのうすさに きる。@KEY()↓
 ;jpn:◆いやになるほど↓
-;jpn:　カライあじつけを　する。@KEY()↓
+;jpn: カライあじつけを する。@KEY()↓
 ;jpn:◆そこらへんにある↓
-;jpn:　ものほしざおに　かけ@KEY()↓
+;jpn: ものほしざおに かけ@KEY()↓
 ;jpn:◆はんとしかん↓
-;jpn:　おひさまに　あてる。@KEY()↓
+;jpn: おひさまに あてる。@KEY()↓
 ;jpn:◆らしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ２５０
@@ -3108,19 +3108,19 @@ MSG_EXPL_GDS_DRY_MEAT_GREAT
 ;akm
 MSG_EXPL_GDS_DRY_MEAT_SP;marcus
 ←
-◆Ａ　ｇｏｕｒｍｅｔ　ｖｅｒｓｉｏｎ　ｏｆ　ｊｅｒｋｙ　ｔｈａｔ　ｉｓ　ｃｏｎｓｉｄｅｒｅｄ　ａ　ｄｅｌｉｃａｃｙ．@KEY()↓
-◆Ｉｔ　ｉｓ　ｃｒｅａｔｅｄ　ｂｙ　ａ　ｓｋｉｌｌｆｕｌ　ａｒｔｉｓａｎ@KEY()↓
-◆ｗｈｏ　ｈａｓ　ｂｅｅｎ　ｍａｋｉｎｇ　ｊｅｒｋｙ　ｆｏｒ　ｏｖｅｒ　６０　ｙｅａｒｓ．@KEY()↓
-◆Ｊｅｒｋｙ　ｆａｎｓ　ｃｏｎｓｉｄｅｒ　ｔｈｉｓ　ｔｈｅ　ｃａｖｉａｒ　ｏｆ　ａｌｌ　ｊｅｒｋｙｓ．@KEY()↓
-◆Ｉ　ｕｎｄｅｒｓｔａｎｄ　ｔｈａｔ　ｔｈｅｙ　ｄｏｎ’ｔ　ｄｒｙ　ｇｏｕｒｍｅｔ　ｊｅｒｋｙ　ｏｎ　ａ　ｌａｕｎｄｒｙ　ｌｉｎｅ．．．@KEY()↓
+◆A gourmet version of jerky that is considered a delicacy.@KEY()↓
+◆It is created by a skillful artisan@KEY()↓
+◆who has been making jerky for over ６０ years.@KEY()↓
+◆Jerky fans consider this the caviar of all jerkys.@KEY()↓
+◆I understand that they don’t dry gourmet jerky on a laundry line...@KEY()↓
 
-;jpn:◆ほしにく　ひとすじ　６０ねんの↓
-;jpn:　しょくにんさんが　つくった↓
-;jpn:　ゼイタクな　いっぴん。@KEY()↓
-;jpn:◆ほしにくずき　には↓
-;jpn:　たまらない。@KEY()↓
-;jpn:◆ほすときに　ものほしざおは↓
-;jpn:　つかわない@KEY()↓
+;jpn:◆ほしにく ひとすじ ６０ねんの↓
+;jpn: しょくにんさんが つくった↓
+;jpn: ゼイタクな いっぴん。@KEY()↓
+;jpn:◆ほしにくずき には↓
+;jpn: たまらない。@KEY()↓
+;jpn:◆ほすときに ものほしざおは↓
+;jpn: つかわない@KEY()↓
 ;jpn:◆らしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
 ３００
@@ -3132,16 +3132,16 @@ MSG_EXPL_GDS_DRY_MEAT_SP;marcus
 ;akm
 MSG_EXPL_GDS_WATER_HI;marcus
 ←
-◆Ｖｅｒｙ　ｅｘｐｅｎｓｉｖｅ　ｗａｔｅｒ，@KEY()↓
-◆ｂｕｔ　ａｌｍｏｓｔ　ｔｈｅ　ｓａｍｅ　ａｓ　ｔｈｅ　ｗａｔｅｒ　ｙｏｕ　ｄｒｉｎｋ　ｉｎ　ｔｏｗｎ．@KEY()↓
-◆Ｉｔ　ｒｅｃｏｖｅｒｓ　ＰＰ　ａ　ｌｉｔｔｌｅ　ｂｉｔ．
+◆Very expensive water,@KEY()↓
+◆but almost the same as the water you drink in town.@KEY()↓
+◆It recovers PP a little bit.
 
-;jpn:◆すごくねだんが　たかいみず。@KEY()↓
-;jpn:◆まちでのむ　みずと↓
-;jpn:　ほとんど　かわりはない。@KEY()↓
+;jpn:◆すごくねだんが たかいみず。@KEY()↓
+;jpn:◆まちでのむ みずと↓
+;jpn: ほとんど かわりはない。@KEY()↓
 ;jpn:◆のむと↓
-;jpn:　ＰＰが↓
-;jpn:　わずかに
+;jpn: PPが↓
+;jpn: わずかに
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3150,11 +3150,11 @@ MSG_EXPL_GDS_WATER_HI;marcus
 ;akm
 MSG_EXPL_GDS_MAGIC_PUDDING;marcus
 ←
-◆Ｒｅｃｏｖｅｒｓ　ａｂｏｕｔ　４０　ＰＰ．
+◆Recovers about ４０ PP.
 
 ;jpn:◆たべると↓
-;jpn:　ＰＰが↓
-;jpn:　やく４０
+;jpn: PPが↓
+;jpn: やく４０
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3173,10 +3173,10 @@ MSG_EXPL_GDS_COIN_DOSEI;marcus
 ←
 @GOSUB(_GDS_COIN)
 @KEY()↓
-◆Ｉｔ’ｓ　ｎｏｔ　ｍｏｎｅｙ　ｅｖｅｎ　ｔｈｏｕｇｈ　ｉｔ’ｓ　ｃａｌｌｅｄ　ａ　ｃｏｉｎ．
+◆It’s not money even though it’s called a coin.
 
 ;jpn:◆コインといっても↓
-;jpn:　おかねでは　ないらしい。
+;jpn: おかねでは ないらしい。
 @KEYNP()
 @!
 
@@ -3184,16 +3184,16 @@ MSG_EXPL_GDS_COIN_DOSEI;marcus
 ;akm
 MSG_EXPL_GDS_PRECIOUS_METAL
 ←
-◆Ｉｔ　ｃａｎ　ｂｅ　ｓｏｌｄ　ｆｏｒ　ａ　ｖｅｒｙ　ｈｉｇｈ　ｐｒｉｃｅ．@KEY()↓
-◆Ｎｏｔｈｉｎｇ　ｈａｐｐｅｎｓ　ｉｆ　ｙｏｕ　ｕｓｅ　ｉｔ．@KEY()↓
-◆Ａ　ｇｏｏｄ　ｅｘｐｌａｎａｔｉｏｎ　ｉｓ　ｋｉｎｄ　ｏｆ　ｔｏｕｇｈ．．．
+◆It can be sold for a very high price.@KEY()↓
+◆Nothing happens if you use it.@KEY()↓
+◆A good explanation is kind of tough...
 
 ;jpn:◆こうかなねだんで↓
-;jpn:　かいとって　もらえそう。@KEY()↓
+;jpn: かいとって もらえそう。@KEY()↓
 ;jpn:◆つかっても↓
-;jpn:　なにも　おこらない。@KEY()↓
-;jpn:◆なかなか　せつめいしにくい↓
-;jpn:　ぶっしつ。
+;jpn: なにも おこらない。@KEY()↓
+;jpn:◆なかなか せつめいしにくい↓
+;jpn: ぶっしつ。
 @KEYNP()
 @!
 
@@ -3212,8 +3212,8 @@ MSG_EXPL_GDS_ICE_CANDY_E
 MSG_EXPL_GDS_LIFE_HORN_E
 @GOTO(MSG_EXPL_GDS_LIFE_HORN)		;同じ効用
 ;←
-;◆きぜつした　なかまを↓
-;　カムバックさせる。@KEY()↓
+;◆きぜつした なかまを↓
+; カムバックさせる。@KEY()↓
 ;@GOSUB(_GDS_HEAL_A)
 ;@GOSUB(_GDS_HEAL_B)
 ;@GOSUB(_GDS_HEAL_C2)
@@ -3224,10 +3224,10 @@ MSG_EXPL_GDS_LIFE_HORN_E
 ;akm
 MSG_EXPL_GDS_KEY_CARROT;marcus
 ←
-◆Ａ　ｓｐｅｃｉａｌ　ｔｙｐｅ　ｏｆ　ｂｕｎｎｙ’ｓ　ｆａｖｏｒｉｔｅ　ｃａｒｒｏｔ．
+◆A special type of bunny’s favorite carrot.
 
 ;jpn:◆うさぎさんのすきな↓
-;jpn:　ニンジン。
+;jpn: ニンジン。
 @KEYNP()
 @!
 
@@ -3242,51 +3242,51 @@ MSG_EXPL_GDS_KEY_CARROT;marcus
 ;★ひっさつ
 ;akm
 _PSI_HISSATSU;marcus
-◆Ａ　ｄｅａｄｌｙ　ＰＳＩ　ａｔｔａｃｋ　ｗｈｉｃｈ　ｏｎｌｙ　@DSP_NAME(PC_NESS)　ｃａｎ　ｕｓｅ．↓
-◆Ｉｔ’ｓ　ａ　ｐｓｙｃｈｏｋｉｎｅｔｉｃ　ｗａｖｅ　ｇｅｎｅｒａｔｅｄ　ｂｙ　ｃｏｎｃｅｎｔｒａｔｉｏｎ　ｔｈａｔ　ｄｅａｌｓ
+◆A deadly PSI attack which only @DSP_NAME(PC_NESS) can use.↓
+◆It’s a psychokinetic wave generated by concentration that deals
 
-;jpn:◆@DSP_NAME(PC_NESS)だけがつかいこなせる　ひっさつＰＫ。↓
-;jpn:◆せいしんしゅうちゅうによる　ねんどうは　が
+;jpn:◆@DSP_NAME(PC_NESS)だけがつかいこなせる ひっさつPK。↓
+;jpn:◆せいしんしゅうちゅうによる ねんどうは が
 @!
 
 ;★ファイアー
 ;akm
 _PSI_FIRE;marcus
-;akm◆Ｆｉｒｅ　ｂｕｒｓｔｓ　from ｔｈｅ　ｆｉｎｇｅｒs　ａｎｄ　a row of enemies take 
+;akm◆Fire bursts from the fingers and a row of enemies take 
 
-◆Ｆｉｒｅ　ｂｕｒｓｔｓ　ｆｒｏｍ　ｔｈｅ　ｆｉｎｇｅｒｓ　ａｎｄ　ａ　ｒｏｗ　ｏｆ　ｅｎｅｍｉｅｓ　ｔａｋｅ
+◆Fire bursts from the fingers and a row of enemies take
 
-;jpn:◆ゆびさきから　ほのおがとびだし↓
-;jpn:　いちれつにならんだ　てき　ぜんいんに
+;jpn:◆ゆびさきから ほのおがとびだし↓
+;jpn: いちれつにならんだ てき ぜんいんに
 @!
 
 ;★フリーズ
 ;akm
 _PSI_FREEZ;marcus
-;akm◆Ｃａｕｓｅｓ　ｖｅｒｙ　ｃｏｌｄ　ｗｉｎｄ　ａｒｏｕｎｄ　ｔｈｅ　ｅｎｅｍｙ　ａｎｄ
+;akm◆Causes very cold wind around the enemy and
 
-◆Ｃａｕｓｅｓ　ａ　ｖｅｒｙ　ｃｏｌｄ　ｗｉｎｄ　ｔｏ　ｓｗｉｒｌ　ａｒｏｕｎｄ　ｏｎｅ　ｅｎｅｍｙ，
+◆Causes a very cold wind to swirl around one enemy,
 
-;jpn:◆てきのまわりに　つめたいかぜをまきおこし
+;jpn:◆てきのまわりに つめたいかぜをまきおこし
 @!
 
 _PSI_FREEZ_2;
-◆Ｍａｙ　ｆｒｅｅｚｅ　ｔｈｅ　ｅｎｅｍｙ　ｃｏｍｐｌｅｔｅｌｙ．
+◆May freeze the enemy completely.
 
-;jpn:◆てきをこおりづけにして　かたまらせることもある。
+;jpn:◆てきをこおりづけにして かたまらせることもある。
 @!
 
 ;★サンダー
 ;akm
 _PSI_THUNDER;marcus
-◆Ｙｏｕ　ｍａｙ　ｍｉｓｓ　ｗｈｅｎ　ｔｈｅｒｅ　ａｒｅ　ｆｅｗ　ｅｎｅｍｉｅｓ．↓
+◆You may miss when there are few enemies.↓
 
-;akm◆Ｙｏｕ　ｍａｙ　ｍｉｓｓ　ｔｈｅ　ｔａｒｇｅｔ　ｉｆ　ｔｈｅｒｅ　ａｒｅ　ｎｏｔ　ｅｎｏｕｇｈ　ｎｕｍｂｅｒ　ｏｆ　ｅｎｅｍｉｅｓ．
+;akm◆You may miss the target if there are not enough number of enemies.
 
-◆Ｅｌｉｍｉｎａｔｅｓ　ａ　ｐｓｙｃｈｉｃ　ｏｒ　ｐｓｙｃｈｉｃ　ｐｏｗｅｒ　ｓｈｉｅｌｄ．
+◆Eliminates a psychic or psychic power shield.
 
-;jpn:◆てきのかずがすくないと　はずれてしまう。↓
-;jpn:◆サイコシールドや　はんげきのサイコシールドをきりさく。
+;jpn:◆てきのかずがすくないと はずれてしまう。↓
+;jpn:◆サイコシールドや はんげきのサイコシールドをきりさく。
 @!
 
 ;★フラッシュ
@@ -3299,121 +3299,121 @@ _PSI_THUNDER;marcus
 ;オメガ  3/8 気絶        3/8 涙止まらず  1/8 しびれ      1/8 変
 
 _PSI_FLUSH_1;marcus
-◆Ｉｔ　ｇｅｎｅｒａｔｅｓ　ａ　ｓｔｒｏｎｇ　ｆｌａｓｈ　ａｎｄ　ｃａｎ　ｍａｋｅ　ｔｈｅ　ｅｎｅｍｙ
+◆It generates a strong flash and can make the enemy
 
-;akm◆Ｇｅｎｅｒａｔｅｓ　ｓｔｒｏｎｇ　ｆｌａｓｈ　ａｎｄ　ｍａｋｅｓ　ａｌｌ　ｔｈｅ　ｅｎｅｍｙ　ａｔ　ｔｈｅ　ｓｃｅｎｅ
+;akm◆Generates strong flash and makes all the enemy at the scene
 
-;jpn:◆はげしいひかりを　はなち　てきぜんいんを
+;jpn:◆はげしいひかりを はなち てきぜんいんを
 @!
 
 _PSI_FLUSH_2
-　ｓｔａｒｔ　ｃｒｙｉｎｇ　ｕｎｃｏｎｔｒｏｌｌａｂｌｙ
+ start crying uncontrollably
 
-;jpn:　「なみだがとまらない」じょうたいにする。
+;jpn: 「なみだがとまらない」じょうたいにする。
 @!
 
 ;★スターストーム
 ;akm
 _PSI_STARSTORM_1;marcus
-◆Ｔｈｅ　ｍｅｔｈｏｄ　ｏｆ　”ｓｈａｋｉｎｇ　ｏｆｆ　ｔｈｅ　ｓｔａｒｓ”　ｗｈｉｃｈ　@DSP_NAME(PC_POO)　ｌｅａｒｎｅｄ　ｉｎ　ｈｉｓ　ｔｒａｉｎｉｎｇ．
+◆The method of ”shaking off the stars” which @DSP_NAME(PC_POO) learned in his training.
 
-;jpn:◆@DSP_NAME(PC_POO)が　しゅぎょうによりおぼえた↓
-;jpn:　「ほしを　おとす　ほうほう」。
+;jpn:◆@DSP_NAME(PC_POO)が しゅぎょうによりおぼえた↓
+;jpn: 「ほしを おとす ほうほう」。
 @!
 
 ;★シールド
 ;akm
 _PSI_SHIELD_HALVE;marcus
-◆Ｄｅｃｒｅａｓｅｓ　ｂｙ　ｏｎｅ　ｈａｌｆ　ｔｈｅ　ａｍｏｕｎｔ　ｏｆ　ｄａｍａｇｅ　ｃａｕｓｅｄ　ｂｙ　ａｎ　ｅｎｅｍｙ’ｓ　ｈｉｔ．
+◆Decreases by one half the amount of damage caused by an enemy’s hit.
 
-;jpn:◆てきからうける　だげきこうげきのダメージが↓
-;jpn:　はんぶんになる。
+;jpn:◆てきからうける だげきこうげきのダメージが↓
+;jpn: はんぶんになる。
 @!
 
 _PSI_SHIELD_HALVE_REPEL;marcus
-◆Ｄｅｃｒｅａｓｅｓ　ｂｙ　ｏｎｅ　ｈａｌｆ　ｔｈｅ　ｄａｍａｇｅ　ｃａｕｓｅｄ　ｂｙ　ａｎ　ｅｎｅｍｙ’ｓ　ｈｉｔ．　　Ｔｈｅ　ｄａｍａｇｅ　ｔｈａｔ　ｗａｓ　ｂｌｏｃｋｅｄ　ｉｓ　ｔｈｅｎ　ｄｅａｌｔ　ｂａｃｋ　ｔｏ　ｔｈｅ　ｅｎｅｍｙ．
+◆Decreases by one half the damage caused by an enemy’s hit.  The damage that was blocked is then dealt back to the enemy.
 
 ;jpn:◆だげきこうげきのダメージが↓
-;jpn:　はんぶんになり　のこりを　はねかえす。
+;jpn: はんぶんになり のこりを はねかえす。
 @!
 
 ;★サイコシールド
 ;akm
 _PSI_PSI_SHIELD_HALVE;marcus
-◆Ｉｔ　ｃａｎ　ｂｌｏｃｋ　ａｎ　ｅｎｅｍｙ’ｓ　ＰＳＩ　ａｔｔａｃｋ．
+◆It can block an enemy’s PSI attack.
 
-;jpn:◆てきからうける　ＰＳＩこうげきを↓
-;jpn:　むこうにする。
+;jpn:◆てきからうける PSIこうげきを↓
+;jpn: むこうにする。
 @!
 
 _PSI_PSI_SHIELD_REPEL;marcus
-◆Ｉｔ　ｒｅｆｌｅｃｔｓ　ａｎ　ｅｎｅｍｙ’ｓ　ＰＳＩ　ａｔｔａｃｋ　ｂａｃｋ　ｔｏ　ｔｈｅ　ａｔｔａｃｋｅｒ．
+◆It reflects an enemy’s PSI attack back to the attacker.
 
-;jpn:◆てきからうける　ＰＳＩこうげきを↓
-;jpn:　そのままはねかえす。
+;jpn:◆てきからうける PSIこうげきを↓
+;jpn: そのままはねかえす。
 @!
 
 ;★さいみんじゅつ
 ;akm
 _PSI_SAIMIN_SUPPLEMENT
-;◆てきの　ちのうが↓
-;　たかいほど　かかりにくい。
+;◆てきの ちのうが↓
+; たかいほど かかりにくい。
 @!
 
 ;★サイマグネット
 ;akm
 _PSI_PSI_MAGNET_BASIC;marcus
-;akm　　Ｇｒａｂｓ　２−８　ｐｏｉｎｔｓ　ｆｒｏｍ　ｔｈｅ　ｅnｅｍｙ　ａｎｄ　ａｄｄｓ　it ｔｏ　your ｏｗｎ．
+;akm  Grabs ２−８ points from the enemy and adds it to your own.
 
-;jpn:　２〜８ポイント　うばいとり↓
-;jpn:　じぶんのものにする。
+;jpn: ２〜８ポイント うばいとり↓
+;jpn: じぶんのものにする。
 @!
 
 ;★パラライシス
 ;akm
 _PSI_PARALYSIS_BASIC;marcus
-;akm　　Ｍａｋｅｓ　ｔｈｅ　ｏｂｊｅｃｔ　”ｎｕｍｂｅｄ”　ｃｏｎｄｉｔｉｏｎ．
+;akm  Makes the object ”numbed” condition.
 
-　”ｎｕｍｂｅｄ”　ｃｏｎｄｉｔｉｏｎ．
+ ”numbed” condition.
 
-;jpn:　「しびれ」じょうたいにする。
+;jpn: 「しびれ」じょうたいにする。
 @!
 
 ;★ブレインショック
 ;akm
 _PSI_BRAIN_SHOCK_BASIC;marcus
-;akm　　Ｍａｋｅｓ　ｔｈｅ　ｏｂｊｅｃｔ　”ｕｎｕｓｕｓｌ”　ｃｏｎｄｉｔｉｏｎ．
+;akm  Makes the object ”unususl” condition.
 
-　Ｍａｋｅｓ　ｔｈｅ　ｔａｒｇｅｔ　ｆｅｅｌ　ｓｔｒａｎｇｅ．
+ Makes the target feel strange.
 
-;jpn:　「へん」じょうたいにする。↓
-;◆てきの　ちのうしすうが↓
-;　たかいほど　かかりやすい。
+;jpn: 「へん」じょうたいにする。↓
+;◆てきの ちのうしすうが↓
+; たかいほど かかりやすい。
 @!
 
 ;★テレポート
 ;akm
 _PSI_TELEPORT_BASIC;marcus
-◆Ａｌｌｏｗｓ　ｙｏｕ　ｔｏ　ｉｍｍｅｄｉａｔｅｌｙ　ｒｅｔｕｒｎ　ｔｏ　ａ　ｐｌａｃｅ　ｗｈｅｒｅ　ｙｏｕ　ｈａｖｅ　ａｌｒｅａｄｙ　ｂｅｅｎ．
+◆Allows you to immediately return to a place where you have already been.
 
-;jpn:◆いままでに　いったことがあるばしょへ↓
-;jpn:　しゅんかんに　いどうできる。
+;jpn:◆いままでに いったことがあるばしょへ↓
+;jpn: しゅんかんに いどうできる。
 @!
 
 
 ;★グローバル
 ;akm
 _PSI_USE_PILE;marcus
-◆Ｉｔ　ｉｓ　ｍｏｓｔ　ｅｆｆｅｃｔｉｖｅ　ｉｆ　ｙｏｕ　ｕｓｅ　ｔｈｉｓ　ｐｏｗｅｒ　ｍｕｌｔｉｐｌｅ　ｔｉｍｅｓ　ｔｏ　”ｌａｙｅｒ”　ｔｈｅ　ｅｆｆｅｃｔ．
+◆It is most effective if you use this power multiple times to ”layer” the effect.
 
-;jpn:◆かさねて　つかうと　こうかてき。
+;jpn:◆かさねて つかうと こうかてき。
 ;１２３４５６７８９０１２３４５６７８９
 @!
 
 _PSI_NOT_EFFECTIVE_ON_SOME;marcus
-◆Ｉｔ　ｍａｙ　ｎｏｔ　ｂｅ　ｓｏ　ｅｆｆｅｃｔｉｖｅ　ａｇａｉｎｓｔ　ｓｏｍｅ　ｅｎｅｍｉｅｓ．
+◆It may not be so effective against some enemies.
 
-;jpn:◆あまり　こうかのない　てきもいる。
+;jpn:◆あまり こうかのない てきもいる。
 @!
 
 ;::::::::::::::::::::::::::::::::
@@ -3423,21 +3423,21 @@ _PSI_NOT_EFFECTIVE_ON_SOME;marcus
 ;★ぬいぐるみ
 ;akm
 _GDS_NUIGURUMI
-Ａ　ｃｕｔｅ　ｔｅｄｄｙ　ｂｅａｒ！
+A cute teddy bear!
 
 ;jpn:かわいい↓
-;jpn:　クマの↓
-;jpn:　ぬいぐるみだ。
+;jpn: クマの↓
+;jpn: ぬいぐるみだ。
 @!
 
 ;★こわれた××全般
 ;akm
 _GDS_JEFF_REPAIR;marcus
-◆Ｔｈａｔ　ｇｅｎｉｕｓ　@DSP_NAME(PC_JEFF)　ｓｈｏｕｌｄ　ｂｅ　ａｂｌｅ　ｔｏ　ｆｉｘ　ｉｔ　ｓｏｍｅｔｉｍｅ．
+◆That genius @DSP_NAME(PC_JEFF) should be able to fix it sometime.
 
 ;jpn:◆てんさい@DSP_NAME(PC_JEFF)が↓
-;jpn:　いつかかならず↓
-;jpn:　なおしてくれる。
+;jpn: いつかかならず↓
+;jpn: なおしてくれる。
 @!
 
 ;★××がそうびできるぶき
@@ -3467,172 +3467,172 @@ _GDS_POO_WEAPON
 @GOTO(_GDS_WEAPON)
 
 _GDS_WEAPON
-　ｃａｎ　ｅｑｕｉｐ　ｔｈｉｓ　ｗｅａｐｏｎ．
+ can equip this weapon.
 
-;jpn:　そうびできる↓
-;jpn:　ぶき。
+;jpn: そうびできる↓
+;jpn: ぶき。
 @!
 
 ;★おまもり
 ;akm
 _GDS_AMULET;marcus
 @GOSUB(_GDS_EQUIP_BODY)
-◆Ｉｔ　ｐｒｏｔｅｃｔｓ　ｙｏｕ　ｆｒｏｍ　ｐａｒａｌｙｓｉｓ　ａｔｔａｃｋｓ．
+◆It protects you from paralysis attacks.
 
 ;jpn:◆パラライシスこうげきから↓
-;jpn:　みをまもる。
+;jpn: みをまもる。
 @!
 
 ;★ボディそうび
 ;akm
 _GDS_EQUIP_BODY;marcus
-;◆ボディに　みにつけるもの。
+;◆ボディに みにつけるもの。
 ;次のように変えました/上野
-◆Ｍｕｓｔ　ｂｅ　ｅｑｕｉｐｐｅｄ　ｏｎ　ｙｏｕｒ　ｂｏｄｙ．
+◆Must be equipped on your body.
 
-;jpn:◆ボディに　そうびするもの。
+;jpn:◆ボディに そうびするもの。
 @KEY()↓
 @!
 
 ;★うでそうび
 ;akm
 _GDS_EQUIP_ARM;marcus
-◆Ｍｕｓｔ　ｂｅ　ｅｑｕｉｐｐｅｄ　ｏｎ　ｙｏｕｒ　ａｒｍ．@KEY()↓
-◆Ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｄｅｆｅｎｓｅ．
+◆Must be equipped on your arm.@KEY()↓
+◆It increases your Defense.
 
-;jpn:◆うでに　つけるもの。↓
-;jpn:◆ぼうぎょりょく　アップ。
+;jpn:◆うでに つけるもの。↓
+;jpn:◆ぼうぎょりょく アップ。
 @!
 
 _GDS_EQUIP_ARM_B;marcus
-◆Ｈｅｌｐｓ　ｋｅｅｐ　ｙｏｕ　ｆｒｏｍ　ｂｅｉｎｇ　ｈｙｐｎｏｔｉｚｅｄ，　ａｎｄ　ｉｔ　ａｌｓｏ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｌｕｃｋ．
+◆Helps keep you from being hypnotized, and it also increases your Luck.
 
 ;jpn:◆さいみんじゅつに↓
-;jpn:　かかりにくくなって↓
-;jpn:　ラックも　あがる。
+;jpn: かかりにくくなって↓
+;jpn: ラックも あがる。
 @!
 
 ;★そのたそうび
 ;akm
 _GDS_EQUIP_MISC;
-◆Ｍｕｓｔ　ｂｅ　ｅｑｕｉｐｐｅｄ　ａｓ　”ｏｔｈｅｒ．”
+◆Must be equipped as ”other.”
 
-;jpn:◆いわゆる　そのたそうび。
+;jpn:◆いわゆる そのたそうび。
 @!
 
 ;★コイン
 ;akm
 _GDS_COIN
 @GOSUB(_GDS_EQUIP_MISC)@KEY()↓
-◆Ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｄｅｆｅｎｓｅ　ａｎｄ　Ｌｕｃｋ．
+◆Increases your Defense and Luck.
 
 ;jpn:◆みにつけると↓
-;jpn:　ぼうぎょりょくが　あがり↓
-;jpn:　ラックも　あがる。
+;jpn: ぼうぎょりょくが あがり↓
+;jpn: ラックも あがる。
 @!
 
 ;★××のそのたそうび
 ;akm
 _GDS_PAULA_EQUIP_MISC;marcus
-◆Ｍｉｓｃｅｌｌａｎｅｏｕｓ　ｅｑｕｉｐｍｅｎｔ　ｔｈａｔ　ｃａｎ　ｏｎｌｙ　ｂｅ　ｕｓｅｄ　ｂｙ　@DSP_NAME(PC_PAULA)．
+◆Miscellaneous equipment that can only be used by @DSP_NAME(PC_PAULA).
 
 ;jpn:◆@DSP_NAME(PC_PAULA)せんようの↓
-;jpn:　そのたそうび。
+;jpn: そのたそうび。
 @!
 
 _GDS_POO_EQUIP_MISC
-◆Ｍｉｓｃｅｌｌａｎｅｏｕｓ　ｅｑｕｉｐｍｅｎｔ　ｔｈａｔ　ｃａｎ　ｏｎｌｙ　ｂｅ　ｕｓｅｄ　ｂｙ　@DSP_NAME(PC_POO)．
+◆Miscellaneous equipment that can only be used by @DSP_NAME(PC_POO).
 
 ;jpn:◆@DSP_NAME(PC_POO)せんようの↓
-;jpn:　そのたそうび。
+;jpn: そのたそうび。
 @!
 
 ;★たいりょくがかいふくする
 ;akm
 _GDS_EAT_HP_RECOVER;marcus
-◆Ｗｈｅｎ　ｅａｔｅｎ，　ｙｏｕ　ｒｅｃｏｖｅｒ　ａｂｏｕｔ
+◆When eaten, you recover about
 
 ;jpn:◆たべると↓
-;jpn:　たいりょくが↓
-;jpn:　やく
+;jpn: たいりょくが↓
+;jpn: やく
 @!
 
 _GDS_DRINK_HP_RECOVER;marcus
-◆Ｉｆ　ｙｏｕ　ｄｒｉｎｋ　ｔｈｉｓ，　ｙｏｕ　ｒｅｃｏｖｅｒ　ａｂｏｕｔ　
+◆If you drink this, you recover about 
 ;jpn:◆のむと↓
-;jpn:　たいりょくが↓
-;jpn:　やく
+;jpn: たいりょくが↓
+;jpn: やく
 @!
 
 _GDS_HP_RECOVER
 
-　ＨＰ．
-;jpn:　かいふくする。
+ HP.
+;jpn: かいふくする。
 @!
 
 _GDS_HEAL_A;
-◆Ｉｎ　ａｄｄｉｔｉｏｎ，　ｉｔ　ａｌｓｏ　ｗｏｒｋｓ　ｗｅｌｌ　ｏｎ　ｐｏｉｓｏｎ，　ｎａｕｓｅａ，@KEY()↓
+◆In addition, it also works well on poison, nausea,@KEY()↓
 ;jpn:◆そのほかにも↓
-;jpn:　どく　きもちわるい@KEY()↓
+;jpn: どく きもちわるい@KEY()↓
 @!
 
 _GDS_HEAL_B;marcus
-◆ｃｏｌｄｓ，　ｓｕｎｓｔｒｏｋｅ，　ｆａｌｌｉｎｇ　ａｓｌｅｅｐ，　ｕｎｃｏｎｔｒｏｌｌａｂｌｅ　ｃｒｙｉｎｇ，　ａｎｄ　ｆｅｅｌｉｎｇ　ｓｔｒａｎｇｅ．
+◆colds, sunstroke, falling asleep, uncontrollable crying, and feeling strange.
 
-;jpn:◆かぜ　にっしゃびょう　いねむり↓
-;jpn:　なみだがとまらない　へん@KEY()↓
+;jpn:◆かぜ にっしゃびょう いねむり↓
+;jpn: なみだがとまらない へん@KEY()↓
 @!
 
 _GDS_HEAL_C1;marcus
-;akmｗｏｒｋｓ　ｗｅｌｌ　on
+;akmworks well on
 
-;jpn:◆に　よくききます。
+;jpn:◆に よくききます。
 @!
 
 _GDS_HEAL_C2
-;akmｃｕｒｅｓ
+;akmcures
 
-;jpn:◆も　なおります。
+;jpn:◆も なおります。
 @!
 
 _GDS_HEAL_D;marcus
-◆Ｔｈｉｓ　ｉｓ　ｅｆｆｅｃｔｉｖｅ　ｗｈｅｎ　ｙｏｕ　ｈａｖｅ　ｐａｒａｌｙｓｉｓ，　ｏｒ　ｙｏｕ　ｈａｖｅ　ｂｅｅｎ　ｄｉａｍｏｎｄｉｚｅｄ．
+◆This is effective when you have paralysis, or you have been diamondized.
 
 ;jpn:◆ダイヤモンドになってしまったり↓
-;jpn:　しびれたときも↓
-;jpn:　これ。
+;jpn: しびれたときも↓
+;jpn: これ。
 @!
 
 _GDS_TOPPING_HP_RECOVER;marcus
-◆Ｔｏ　ｕｓｅ，　ｓｐｒｉｎｋｌｅ　ｏｖｅｒ　ｆｏｏｄ．@KEY()↓
-◆Ａ　ｇｏｏｄ　ｃｏｍｂｉｎａｔｉｏｎ　ｉｎｃｒｅａｓｅｓ　ｔｈｅ　ｓｔｒｅｎｇｔｈ　ｏｆ　ｙｏｕｒ　ｒｅｃｏｖｅｒｙ．
+◆To use, sprinkle over food.@KEY()↓
+◆A good combination increases the strength of your recovery.
 
 ;jpn:◆たべものに↓
-;jpn:　かけてつかう。@KEY()↓
-;jpn:◆おいしい　くみあわせで↓
-;jpn:　かいふくりょく　アップ。
+;jpn: かけてつかう。@KEY()↓
+;jpn:◆おいしい くみあわせで↓
+;jpn: かいふくりょく アップ。
 @!
 
 ;★何度でもつかえる
 ;akm
 _GDS_USE_MANY_TIMES
-◆Ｃａｎ　ｂｅ　ｕｓｅｄ　ｍａｎｙ　ｔｉｍｅｓ．
+◆Can be used many times.
 
-;jpn:◆なんどでも　つかえる。
+;jpn:◆なんどでも つかえる。
 @!
 
 ;★一度使うとなくなる
 ;akm
 _GDS_USE_ONCE;marcus
-◆Ｇｏｎｅ　ａｆｔｅｒ　ｏｎｅ　ｕｓｅ．
+◆Gone after one use.
  
-;jpn:◆いちどつかうと　なくなる。
+;jpn:◆いちどつかうと なくなる。
 @!
 
 ;★××のグッズ
 ;akm
 _GDS_FOR_JEFF;marcus
-◆Ｉｔｅｍｓ　ｆｏｒ　@DSP_NAME(PC_JEFF)．@KEY()↓
+◆Items for @DSP_NAME(PC_JEFF).@KEY()↓
 
 ;jpn:◆@DSP_NAME(PC_JEFF)のグッズ。@KEY()↓
 @!
@@ -3640,16 +3640,16 @@ _GDS_FOR_JEFF;marcus
 ;★敵にダメージを与える
 ;akm
 _GDS_DAMAGE;marcus
-◆Ｄａｍａｇｅｓ　ａｎ　ｅｎｅｍｙ　ｗｈｅｎ　ｕｓｅｄ　ｄｕｒｉｎｇ　ｂａｔｔｌｅ．
+◆Damages an enemy when used during battle.
 
 ;jpn:◆せんとうじ↓
-;jpn:　てきにダメージを　あたえる。
+;jpn: てきにダメージを あたえる。
 @!
 
 _GDS_EQUIP_LUCK_UP;marcus
-◆Ｗｈｅｎ　ｅｑｕｉｐｐｅｄ，　ｉｔ　ｉｎｃｒｅａｓｅｓ　ｙｏｕｒ　Ｌｕｃｋ．
+◆When equipped, it increases your Luck.
 ;jpn:◆みにつけると↓
-;jpn:　ラックも　あがる。
+;jpn: ラックも あがる。
 @!
 
 ;1 2 3 4 5 6 7 8 91011121314151617

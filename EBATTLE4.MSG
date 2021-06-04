@@ -6,53 +6,53 @@
 
 MSG_BTL_DAIYA_STAT;
 ←
-◆@DSP_ACTOR()　ｃａｎｎｏｔ　ｍｏｖｅ！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　うごくことが　できない！
+◆@DSP_ACTOR() cannot move!
+;jpn: @DSP_ACTOR()は↓
+;jpn: うごくことが できない!
 @KEY()
 @!
 
 MSG_BTL_SHIBIRE_STAT;
 ←
-◆@DSP_ACTOR()’ｓ　ｂｏｄｙ　ｉｓ↓
-　　ｎｕｍｂ　ａｎｄ　@GOSUB(MSG_ESUB_HE_SHE_GACT)　ｃａｎ’ｔ　ｍｏｖｅ！
-;jpn:　@DSP_ACTOR()の　からだは↓
-;jpn:　しびれて　うごけない！
+◆@DSP_ACTOR()’s body is↓
+  numb and @GOSUB(MSG_ESUB_HE_SHE_GACT) can’t move!
+;jpn: @DSP_ACTOR()の からだは↓
+;jpn: しびれて うごけない!
 @KEY()
 @!
 
 MSG_BTL_KIMOCHI_STAT;
 ←
-◆@DSP_ACTOR()　ｆｅｅｌｓ↓
-　　ｔｏｏ　ｓｉｃｋ　ｔｏ　ｍｏｖｅ．．．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　きもちがわるくて　うごけない‥‥。
+◆@DSP_ACTOR() feels↓
+  too sick to move...
+;jpn: @DSP_ACTOR()は↓
+;jpn: きもちがわるくて うごけない‥‥。
 @KEY()
 @!
 
 MSG_BTL_MODOKU_STAT;
 ←
 ◆@DSP_ACTOR()↓
-　　ｉｓ　ｐｏｉｓｏｎｅｄ！
-;jpn:　@DSP_OBJECT()の　からだは↓
-;jpn:　どくに　おかされている！
+  is poisoned!
+;jpn: @DSP_OBJECT()の からだは↓
+;jpn: どくに おかされている!
 @KEY()
 @!
 
 MSG_BTL_NEMURI_STAT;
 ←
-◆@DSP_ACTOR()　ｈａｓ↓
-　　ｆａｌｌｅｎ　ａｓｌｅｅｐ！
-;jpn:　@DSP_ACTOR()は　ねむっている！
+◆@DSP_ACTOR() has↓
+  fallen asleep!
+;jpn: @DSP_ACTOR()は ねむっている!
 @KEY()
 @!
 
 MSG_BTL_SHIBARA_STAT;
 ←
-◆@DSP_ACTOR()　ｃａｎｎｏｔ↓
-　　ｍｏｖｅ　ａｒｏｕｎｄ！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　みうごきが　できない！
+◆@DSP_ACTOR() cannot↓
+  move around!
+;jpn: @DSP_ACTOR()は↓
+;jpn: みうごきが できない!
 @KEY()
 @!
 
@@ -71,35 +71,35 @@ _PSI_FUUIN_PLAYER_SIDE
 ;
 _SIDE_QUIT2
 ◆@DSP_ACTOR()
-;jpn:　@DSP_ACTOR()は↓
+;jpn: @DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　ｔｒｉｅｄ↓
-　　@DSP_PSI(0)！
-;jpn:　@DSP_PSI(0)を　こころみた！
+ tried↓
+  @DSP_PSI(0)!
+;jpn: @DSP_PSI(0)を こころみた!
 @SE(SE_se57_foe_ferformance)
 @KEY()↓
-◆Ｂｕｔ　ｉｔ　ｄｉｄｎ’ｔ　ｗｏｒｋ　ｖｅｒｙ　ｗｅｌｌ！
-;jpn:　しかし　うまくいかない！
+◆But it didn’t work very well!
+;jpn: しかし うまくいかない!
 @KEY()
 @!
 
 MSG_BTL_GARD_ON;
 ←
-◆@DSP_OBJECT()　ｉｓ↓
-　　ｏｎ　ｇｕａｒｄ！
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　ガードしている！
+◆@DSP_OBJECT() is↓
+  on guard!
+;jpn: @DSP_OBJECT()は↓
+;jpn: ガードしている!
 @KEY()
 @!
 
 MSG_BTL_HAEMITU_KUU;
 ←
-◆@DSP_OBJECT()　ｌｏｓｔ↓
-　　ｈｉｓ　ｍｉｎｄ　ｂｙ　ｗｏｌｆｉｎｇ　ｄｏｗｎ　”Ｆｌｙ　Ｈｏｎｅｙ”！
+◆@DSP_OBJECT() lost↓
+  his mind by wolfing down ”Fly Honey”!
 ;NOTE: Mr. Fukuda said "Haemitsu" might mean honey. DAN
-;jpn:　@DSP_ACTOR()は　すべてを　わすれて↓
-;jpn:　はえみつを　むさぼりくっている！
+;jpn: @DSP_ACTOR()は すべてを わすれて↓
+;jpn: はえみつを むさぼりくっている!
 @KEY()
 @!
 
@@ -116,35 +116,35 @@ MSG_BTL_HOME_STAT;
 @ONGOTO(MSG_BTL_HOME_STAT_B,MSG_BTL_HOME_STAT_C,MSG_BTL_HOME_STAT_D)
 MSG_BTL_HOME_STAT_A;
 ←
-◆@DSP_ACTOR()　ｍｉｓｓｅｓ　ｈｏｍｅ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　いえが　こいしくなった。
+◆@DSP_ACTOR() misses home.
+;jpn: @DSP_ACTOR()は↓
+;jpn: いえが こいしくなった。
 @KEY()
 @!
 
 MSG_BTL_HOME_STAT_B;
 ←
-◆@DSP_ACTOR()　ｓｕｄｄｅｎｌｙ　ｔｈｏｕｇｈｔ　ａｂｏｕｔ　ｈｉｓ　Ｍｏｍ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　ママを　おもいだしてしまった。
+◆@DSP_ACTOR() suddenly thought about his Mom.
+;jpn: @DSP_ACTOR()は↓
+;jpn: ママを おもいだしてしまった。
 @KEY()
 @!
 
 MSG_BTL_HOME_STAT_C;
 ←
-◆@DSP_ACTOR()　ｔｈｏｕｇｈｔ　ａｂｏｕｔ　ｅａｔｉｎｇ　ｓｏｍｅ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)↓
-　　ａｎｄ　ｓｔａｒｔｅｄ　ｃｒａｖｉｎｇ　ｉｔ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　@DSP_STS(STS_PARTY_FAVORITE_FOODS)が　たべたくなった。
+◆@DSP_ACTOR() thought about eating some @DSP_STS(STS_PARTY_FAVORITE_FOODS)↓
+  and started craving it.
+;jpn: @DSP_ACTOR()は↓
+;jpn: @DSP_STS(STS_PARTY_FAVORITE_FOODS)が たべたくなった。
 @KEY()
 @!
 
 MSG_BTL_HOME_STAT_D;
 ←
-◆@DSP_ACTOR()　ｌｏｓｔ　ａｌｌ　ｍｏｔｉｖａｔｉｏｎ↓
-　　ｉｎ　ｂａｔｔｌｅ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　たたかうのが　むなしくなった。
+◆@DSP_ACTOR() lost all motivation↓
+  in battle.
+;jpn: @DSP_ACTOR()は↓
+;jpn: たたかうのが むなしくなった。
 @KEY()
 @!
 
@@ -155,31 +155,31 @@ MSG_BTL_HOME_STAT_D;
 MSG_BTL_TONZURA_BREAK_IN;
 ;@SE(SE_)
 ;←
-;　@DSP_ACTOR()の　からだが↓
-;　ガタピシと　おとを　たてはじめた！
+; @DSP_ACTOR()の からだが↓
+; ガタピシと おとを たてはじめた!
 ;@FKEY()
 @!
 
 ;ユダンロボの死亡時の行動 続き (トンズラを助けていない場合)
 MSG_BTL_TONZURA_BREAK_IN_NG;
 ←
-◆Ｂｌａｃｋ　ｓｍｏｋｅ　ｐｏｕｒｅｄ　ｆｒｏｍ↓
-　　@DSP_ACTOR()’ｓ　ｂｏｄｙ！
-;jpn:　@DSP_ACTOR()の　ボディから↓
-;jpn:　まっくろなけむりが↓
+◆Black smoke poured from↓
+  @DSP_ACTOR()’s body!
+;jpn: @DSP_ACTOR()の ボディから↓
+;jpn: まっくろなけむりが↓
 @FKEY()
 ;↓
-;;jpn:　もくもくと　たちのぼった！
+;;jpn: もくもくと たちのぼった!
 ;@FKEY()
 ↓
-◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｗａｓ↓
-　　ｏｖｅｒｃｏｍｅ　ｂｙ　ｔｈｅ　ｓｍｏｋｅ！
-;jpn:　@DSP_LCNAME()は↓
-;jpn:　けむりに　まきこまれてしまった！
+◆@GOSUB(MSG_ESUB_DSP_PARTY) was↓
+  overcome by the smoke!
+;jpn: @DSP_LCNAME()は↓
+;jpn: けむりに まきこまれてしまった!
 @FKEY()
 ↓
-◆Ｙｏｕ　ｃａｎ’ｔ　ｓｅｅ　ａ　ｔｈｉｎｇ！
-;jpn:　なにも　みえない！
+◆You can’t see a thing!
+;jpn: なにも みえない!
 @FKEY()
 ;【ここでグッズテレポートが実行されます】
 @!
@@ -188,16 +188,16 @@ MSG_BTL_TONZURA_BREAK_IN_NG;
 MSG_BTL_TONZURA_BREAK_IN_OK;
 ;@SE(SE_)
 ←
-◆Ａｌｌ　ｏｆ　ａ　ｓｕｄｄｅｎ，↓
-　　ｓｏｍｅ　ｇｕｙｓ　ｒｕｓｈｅｄ　ｉｎｔｏ　ｔｈｅ　ｒｏｏｍ！
-;jpn:　とつぜん！↓
-;jpn:　おとこたちが　へやに　なだれこんできた！
+◆All of a sudden,↓
+  some guys rushed into the room!
+;jpn: とつぜん!↓
+;jpn: おとこたちが へやに なだれこんできた!
 @FKEY()
 @BGMSTART(0,BGM_msc18)
 @WI(60)
 ←
-◆Ｉｔ　ｗａｓ　ｔｈｅ　Ｒｕｎａｗａｙ　Ｆｉｖｅ！
-;jpn:　トンズラブラザーズ！@WI(30)　だった！@WI(10)
+◆It was the Runaway Five!
+;jpn: トンズラブラザーズ!@WI(30) だった!@WI(10)
 @FKEY()
 @CLOSE()
 @WI(30)
@@ -205,25 +205,25 @@ MSG_BTL_TONZURA_BREAK_IN_OK;
 ←
 @SET_BTL_MSG(0)		;バトルメッセージ機能をリセットする
 ;@MESSAGE_SOUND(2)
-◆Ｌｕｃｋｙ　ｑｕｉｃｋｌｙ　ｄｕｃｋｅｄ　ｂｅｈｉｎｄ　ｔｈｅ　ｒｏｂｏｔ！
-;jpn:◆ラッキーは　ユダンロボのうしろに↓
-;jpn:　すばやく　まわりこんだ！@WI(40)
+◆Lucky quickly ducked behind the robot!
+;jpn:◆ラッキーは ユダンロボのうしろに↓
+;jpn: すばやく まわりこんだ!@WI(40)
 @FKEY()
 @SE(SE_se0b_tel_put)
 @WI(60)
 @CLS()
-◆”Ｉ　ｆｌｉｐｐｅｄ　ｔｈｅ　ｓｗｉｔｃｈ，　ａｎｄ　ｉｔ　ｓｔｏｐｐｅｄ．　”@KEY()↓
-◆”Ｈａ　ｈａ　ｈａ　ｈａｈ．．．↓
-　　Ｇｅｅｚ，　ｗｈａｔ　ａ　ｌｏｓｅｒ　ｒｏｂｏｔ．　　Ｉｔ　ｗａｓ　ｓｏ　ｅａｓｙ　ｔｏ　ｓｔｏｐ！”
-;jpn:◆スイッチを　きったら↓
-;jpn:　とまったぜ！@FKEY()↓
+◆”I flipped the switch, and it stopped. ”@KEY()↓
+◆”Ha ha ha hah...↓
+  Geez, what a loser robot.  It was so easy to stop!”
+;jpn:◆スイッチを きったら↓
+;jpn: とまったぜ!@FKEY()↓
 ;jpn:◆ははははは‥‥↓
-;jpn:　わかりやすいやつだ！
+;jpn: わかりやすいやつだ!
 @WI(20)
 @FKEY()
 @CLS()
-◆”Ｔｈａｔ　ｗａｓ　ｑｕｉｃｋ　ｔｈｉｎｋｉｎｇ！”
-；jpn:◆おまえ　あたまいいな。
+◆”That was quick thinking!”
+；jpn:◆おまえ あたまいいな。
 @FKEY()
 @WI(60)
 ;@MESSAGE_SOUND(1)
@@ -239,115 +239,115 @@ MSG_BTL_POO_BREAK_IN;
 ;@SE(SE_)
 @ADD_PSI(PC_POO,2)
 ←
-◆Ｓｕｄｄｅｎｌｙ，　@DSP_NAME(PC_POO)　ｓｗｏｏｐｅｄ　ｄｏｗｎ↓
-　　ｆｒｏｍ　ｔｈｅ　ｓｋｙ！
-;jpn:　とつぜん↓
-;jpn:　@DSP_NAME(PC_POO)が　そらから　まいおりてきた！@FKEY()
+◆Suddenly, @DSP_NAME(PC_POO) swooped down↓
+  from the sky!
+;jpn: とつぜん↓
+;jpn: @DSP_NAME(PC_POO)が そらから まいおりてきた!@FKEY()
 @!
 
 MSG_BTL_POO_BREAK_IN_2;
 ;【メッセージコマンドでプーをパーティに参加させ、プーのステイタスパネルを表示する】
 ←
-◆@DSP_NAME(PC_POO)　ｕｓｅｄ　ｈｉｓ　ｎｅｗ　ｐｏｗｅｒ，@FKEY()↓
-　　ＰＳＩ　Ｓｔａｒｓｔｏｒｍ！
-;jpn:　@DSP_NAME(PC_POO)は　みにつけた↓
-;jpn:　ほしをおとす　ほうほうを　ためした！
+◆@DSP_NAME(PC_POO) used his new power,@FKEY()↓
+  PSI Starstorm!
+;jpn: @DSP_NAME(PC_POO)は みにつけた↓
+;jpn: ほしをおとす ほうほうを ためした!
 @FKEY()
 ↓
 @!
 
 
-;////////////////////////////////ＮＰＣ/////////////////////////////////////
+;////////////////////////////////NPC/////////////////////////////////////
 
 MSG_BTL_POKEY_TALK_A;
 @RAND(8)
 @ONGOTO(MSG_BTL_POKEY_TALK_B,MSG_BTL_POKEY_TALK_C,MSG_BTL_POKEY_TALK_D,MSG_BTL_POKEY_TALK_E,MSG_BTL_POKEY_TALK_F,MSG_BTL_POKEY_TALK_G,MSG_BTL_POKEY_TALK_H,MSG_BTL_POKEY_TALK_I)
 ←
-◆Ｐｏｋｅｙ　ｕｓｅｄ　@DSP_STS(STS_PC_NAME_NES)↓
-　　ａｓ　ａ　ｓｈｉｅｌｄ！
-;jpn:　ポーキーは　@DSP_STS(STS_PC_NAME_NES)を　たてにした！
-;　ポーキーは　わめいている！↓
+◆Pokey used @DSP_STS(STS_PC_NAME_NES)↓
+  as a shield!
+;jpn: ポーキーは @DSP_STS(STS_PC_NAME_NES)を たてにした!
+; ポーキーは わめいている!↓
 ;@MESSAGE_SOUND(2)
-;　「ひー@DSP_STS(STS_PC_NAME_NES)！　なんとか　しておくれよー！」
+; 「ひー@DSP_STS(STS_PC_NAME_NES)! なんとか しておくれよー!」
 ;@MESSAGE_SOUND(1)
 @KEY()
 @!
 MSG_BTL_POKEY_TALK_B;
 ←
-◆Ｐｏｋｅｙ　ｐｌａｙｅｄ　ｄｅａｄ！
-;jpn:　ポーキーは　しんだふりをした！
+◆Pokey played dead!
+;jpn: ポーキーは しんだふりをした!
 @KEY()
-;　ポーキーは　わめいている！↓
+; ポーキーは わめいている!↓
 ;@MESSAGE_SOUND(2)
-;　「だれか　たすけてくれぇ！」
+; 「だれか たすけてくれぇ!」
 ;@MESSAGE_SOUND(1)
 @!
 MSG_BTL_POKEY_TALK_C;
 ←
-◆Ｐｏｋｅｙ　ｐｒｅｔｅｎｄｅｄ↓
-　　ｔｏ　ｃｒｙ！
-;jpn:　ポーキーは　なきまねをした！
-;　ポーキーは　わめいている！↓
+◆Pokey pretended↓
+  to cry!
+;jpn: ポーキーは なきまねをした!
+; ポーキーは わめいている!↓
 ;@MESSAGE_SOUND(2)
-;　「わー！　わー！　わー！」
+; 「わー! わー! わー!」
 ;@MESSAGE_SOUND(1)
 @KEY()
 @!
 MSG_BTL_POKEY_TALK_D;
 ←
-◆Ｐｏｋｅｙ　ａｐｏｌｏｇｉｚｅｄ↓
-　　ｐｒｏｆｕｓｅｌｙ！
-;jpn:　ポーキーは　とにかくあやまった！
-;　ポーキーは　わめいている！↓
+◆Pokey apologized↓
+  profusely!
+;jpn: ポーキーは とにかくあやまった!
+; ポーキーは わめいている!↓
 ;@MESSAGE_SOUND(2)
-;　「うひー！　かんべんしてくれぇ！」
+; 「うひー! かんべんしてくれぇ!」
 ;@MESSAGE_SOUND(1)
 @KEY()
 @!
 MSG_BTL_POKEY_TALK_E;
 ←
-◆Ｐｏｋｅｙ　ｔｈｏｕｇｈｔ↓
-　　ｔｏ　ｈｉｍｓｅｌｆ！
-;jpn:　ポーキーは　とにかくはんせいした！
+◆Pokey thought↓
+  to himself!
+;jpn: ポーキーは とにかくはんせいした!
 @KEY()
 』
 MSG_BTL_POKEY_TALK_F;
 ←
-◆Ｐｏｋｅｙ　ａｃｔｅｄ↓
-　　ａｌｌ　ｉｎｎｏｃｅｎｔ！
-;jpn:　ポーキーは　むかんけいを　よそおった！
+◆Pokey acted↓
+  all innocent!
+;jpn: ポーキーは むかんけいを よそおった!
 @KEY()
 』
 MSG_BTL_POKEY_TALK_G;
 ←
-◆Ｐｏｋｅｙ　ｓｍｉｌｅｄ↓
-　　ｉｎｓｉｎｃｅｒｅｌｙ！
-;jpn:　ポーキーは　おあいそわらいをした！
+◆Pokey smiled↓
+  insincerely!
+;jpn: ポーキーは おあいそわらいをした!
 @KEY()
 』
 MSG_BTL_POKEY_TALK_H;
 ←
-◆Ｐｏｋｅｙ　ｃｏｍｐｌａｉｎｅｄ↓
-　　ｔｏ　@DSP_STS(STS_PC_NAME_NES)！
-;jpn:　ポーキーは　@DSP_STS(STS_PC_NAME_NES)に　もんくをいった！
+◆Pokey complained↓
+  to @DSP_STS(STS_PC_NAME_NES)!
+;jpn: ポーキーは @DSP_STS(STS_PC_NAME_NES)に もんくをいった!
 @KEY()
 』
 MSG_BTL_POKEY_TALK_I;
 ←
-◆Ｐｏｋｅｙ　ｔｒｉｅｄ　ｔｏ↓
-　　ｅｄｇｅ　ｃｌｏｓｅｒ　ｔｏ　ｔｈｅ　ｅｎｅｍｙ！
-;jpn:　ポーキーは　てきの　みかたになろうとした！
+◆Pokey tried to↓
+  edge closer to the enemy!
+;jpn: ポーキーは てきの みかたになろうとした!
 @KEY()
 』
 
 
 MSG_BTL_MYDOG_HOWLING;
 ←
-◆@DSP_ACTOR()　ｉｓ↓
-　　ｂａｒｋｉｎｇ！
-;jpn:　@DSP_ACTOR()は　ほえている！↓
+◆@DSP_ACTOR() is↓
+  barking!
+;jpn: @DSP_ACTOR()は ほえている!↓
 ;@MESSAGE_SOUND(2)
-;　「ワンワンワンワン！」
+; 「ワンワンワンワン!」
 ;@MESSAGE_SOUND(1)
 @KEY()
 @!
@@ -355,35 +355,35 @@ MSG_BTL_MYDOG_HOWLING;
 
 MSG_BTL_PICKEY_TALK;
 ←
-◆@DSP_ACTOR()　ｉｓ↓
-　　ｃｈａｎｔｉｎｇ　ａ　ｍａｇｉｃ　ｓｐｅｌｌ！
-;jpn:　@DSP_ACTOR()は　おまじないを　となえている！
-;　@DSP_ACTOR()は　おおごえでさけんだ！↓
+◆@DSP_ACTOR() is↓
+  chanting a magic spell!
+;jpn: @DSP_ACTOR()は おまじないを となえている!
+; @DSP_ACTOR()は おおごえでさけんだ!↓
 ;@MESSAGE_SOUND(2)
-;　「おいポーキー！　ちゃんと　たたかえよ！」
+; 「おいポーキー! ちゃんと たたかえよ!」
 ;@MESSAGE_SOUND(1)
 @KEY()
 @!
 
 MSG_BTL_TONY_TALK;
 ←
-;　@DSP_ACTOR()は　さけんだ！↓
+; @DSP_ACTOR()は さけんだ!↓
 ;@MESSAGE_SOUND(2)
-;　「@DSP_STS(STS_PC_NAME_JEFF)！　だいじょうぶかい？」
+; 「@DSP_STS(STS_PC_NAME_JEFF)! だいじょうぶかい?」
 ;@MESSAGE_SOUND(1)
 ;@KEY()
 @!
 
 MSG_BTL_BALMON_TALK;
 ←
-◆@DSP_ACTOR()　ｉｓ↓
-　　ｐａｔｔｉｎｇ　ｈｉｓ　ｂｅｈｉｎｄ！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　おしりペンペンを　している！
+◆@DSP_ACTOR() is↓
+  patting his behind!
+;jpn: @DSP_ACTOR()は↓
+;jpn: おしりペンペンを している!
 @KEY()
 @!
 
-;		バトル用メッセージスクリプト（効果時）
+;		バトル用メッセージスクリプト(効果時)
 
 ;/////////////////////////////直接タメージ///////////////////////////////////
 
@@ -391,10 +391,10 @@ MSG_BTL_BALMON_TALK;
 MSG_BTL_DAMAGE;
 ←
 @SE(SE_se2e_b_my_damage1)
-◆@DSP_CNUM()　ＨＰ　ｏｆ　ｄａｍａｇｅ↓
-　　ｔｏ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()に↓
-;jpn:　@DSP_CNUM()のダメージ！
+◆@DSP_CNUM() HP of damage↓
+  to @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()に↓
+;jpn: @DSP_CNUM()のダメージ!
 @KEY()
 @!
 
@@ -402,10 +402,10 @@ MSG_BTL_DAMAGE;
 MSG_BTL_DAMAGE_M;
 ←
 @SE(SE_se1e_b_foe_damage1)
-◆@DSP_CNUM()　ＨＰ　ｏｆ　ｄａｍａｇｅ↓
-　　ｔｏ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()に↓
-;jpn:　@DSP_CNUM()のダメージ！
+◆@DSP_CNUM() HP of damage↓
+  to @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()に↓
+;jpn: @DSP_CNUM()のダメージ!
 @KEY()
 @!
 
@@ -413,11 +413,11 @@ MSG_BTL_DAMAGE_M;
 MSG_BTL_DAMAGE_SMASH;
 ←
 @SE(SE_se2e_b_my_damage1)
-◆@DSP_CNUM()　ＨＰ　ｏｆ　ｄａｍａｇｅ↓
-　　ｔｏ　@DSP_OBJECT()！
+◆@DSP_CNUM() HP of damage↓
+  to @DSP_OBJECT()!
 ;@SE(SE_se2f_b_my_damage2)
-;jpn:　@DSP_OBJECT()に↓
-;jpn:　@DSP_CNUM()のダメージ！
+;jpn: @DSP_OBJECT()に↓
+;jpn: @DSP_CNUM()のダメージ!
 @KEY()
 @!
 
@@ -426,10 +426,10 @@ MSG_BTL_DAMAGE_SMASH_M;
 
 @SE(SE_se1e_b_foe_damage1)
 ;@SE(SE_se1f_b_foe_damage2)
-◆@DSP_CNUM()　ＨＰ　ｏｆ　ｄａｍａｇｅ↓
-　　ｔｏ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()に↓
-;jpn:　@DSP_CNUM()のダメージ！
+◆@DSP_CNUM() HP of damage↓
+  to @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()に↓
+;jpn: @DSP_CNUM()のダメージ!
 @KEY()
 @!
 
@@ -437,10 +437,10 @@ MSG_BTL_DAMAGE_SMASH_M;
 MSG_BTL_DAMAGE_TO_DEATH;
 ←
 @SE(SE_se2f_b_my_damage2)
-◆@DSP_CNUM()　ＨＰ　ｏｆ　ｍｏｒｔａｌ　ｄａｍａｇｅ↓
-　　ｔｏ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()に↓
-;jpn:　@DSP_CNUM()のちめいてきな　ダメージ！
+◆@DSP_CNUM() HP of mortal damage↓
+  to @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()に↓
+;jpn: @DSP_CNUM()のちめいてきな ダメージ!
 @KEY()
 @!
 
@@ -461,82 +461,82 @@ MSG_BTL_SMASH_MONSTER;
 MSG_BTL_UTU_YOKETA;
 ←
 @SE(SE_se23_b_hit_dodge)
-◆@DSP_OBJECT()　ｄｏｄｇｅｄ↓
-　　ｑｕｉｃｋｌｙ！
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　すばやく　よけた！
+◆@DSP_OBJECT() dodged↓
+  quickly!
+;jpn: @DSP_OBJECT()は↓
+;jpn: すばやく よけた!
 @KEY()
 @!
 
 MSG_BTL_TATAKU_YOKETA;
 ←
 @SE(SE_se23_b_hit_dodge)
-◆@DSP_OBJECT()　ｄｏｄｇｅｄ↓
-　　ｑｕｉｃｋｌｙ！
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　すばやく　よけた！
+◆@DSP_OBJECT() dodged↓
+  quickly!
+;jpn: @DSP_OBJECT()は↓
+;jpn: すばやく よけた!
 @KEY()
 @!
 
 MSG_BTL_KIKANAI;
 ←
-◆Ｉｔ　ｄｉｄ　ｎｏｔ　ｗｏｒｋ↓
-　　ｏｎ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()には↓
-;jpn:　こうかが　なかった！
+◆It did not work↓
+  on @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()には↓
+;jpn: こうかが なかった!
 @KEY()
 @!
 
-MSG_BTL_KIKANAI_B;（仮）
+MSG_BTL_KIKANAI_B;(仮)
 ←
-◆Ｉｔ　ｄｉｄ　ｎｏｔ　ｗｏｒｋ↓
-　　ｏｎ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()には↓
-;jpn:　こうかが　なかった！
+◆It did not work↓
+  on @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()には↓
+;jpn: こうかが なかった!
 @KEY()
 @!
 
 MSG_BTL_HEAL_NG;
 ←
-◆Ｉｔ　ｈａｄ　ｎｏ　ｖｉｓｉｂｌｅ　ｅｆｆｅｃｔ↓
-　　ｏｎ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()には↓
-;jpn:　こうかが　あらわれなかった！
+◆It had no visible effect↓
+  on @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()には↓
+;jpn: こうかが あらわれなかった!
 @KEY()
 @!
 
-MSG_BTL_KIKANAI_C;（仮）
+MSG_BTL_KIKANAI_C;(仮)
 ←
-　Ｉｔ　ｄｉｄ　ｎｏｔ　ｗｏｒｋ↓
-　　ｏｎ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()には↓
-;jpn:　こうかが　なかった！
+ It did not work↓
+  on @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()には↓
+;jpn: こうかが なかった!
 @KEY()
 @!
 
 MSG_BTL_KARABURI;
 ←
 @SE(SE_se22_b_hit_miss)
-◆Ｊｕｓｔ　ｍｉｓｓｅｄ！
-;jpn:　からぶりー！
+◆Just missed!
+;jpn: からぶりー!
 @KEY()
 @!
 
 MSG_BTL_KARABURI_UTSU;
 ←
 @SE(SE_se22_b_hit_miss)
-◆．．．ｎａｒｒｏｗｌｙ　ｍｉｓｓｅｄ↓
-　　ｈｉｔｔｉｎｇ　ｔｈｅ　ｔａｒｇｅｔ！
-;jpn:　‥‥はずれた！
+◆...narrowly missed↓
+  hitting the target!
+;jpn: ‥‥はずれた!
 @KEY()
 @!
 
 MSG_BTL_NOT_EXIST;
 ←
-◆Ｂｕｔ　@DSP_OBJECT()　ｗａｓ↓
-　　ａｌｒｅａｄｙ　ｇｏｎｅ．．．
-;jpn:　しかし　@DSP_OBJECT()は↓
-;jpn:　すでに　いなかった‥‥。
+◆But @DSP_OBJECT() was↓
+  already gone...
+;jpn: しかし @DSP_OBJECT()は↓
+;jpn: すでに いなかった‥‥。
 @KEY()
 @!
 
@@ -545,75 +545,75 @@ MSG_BTL_NOT_EXIST;
 
 MSG_BTL_HPSUCK_ME;
 ←
-◆@DSP_ACTOR()　ｄｒａｉｎｅｄ　@GOSUB(MSG_ESUB_HIS_HER_GACT)　ｏｗｎ　ＨＰ！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　じぶんのＨＰを　すいとった！
+◆@DSP_ACTOR() drained @GOSUB(MSG_ESUB_HIS_HER_GACT) own HP!
+;jpn: @DSP_ACTOR()は↓
+;jpn: じぶんのHPを すいとった!
 @KEY()
 @!
 
 MSG_BTL_HPSUCK_ON;
 ←
-◆Ｄｒａｉｎｅｄ　@DSP_CNUM()　ＨＰ↓
-　　ｆｒｏｍ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()から↓
-;jpn:　@DSP_CNUM()のＨＰを　すいとった！
+◆Drained @DSP_CNUM() HP↓
+  from @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()から↓
+;jpn: @DSP_CNUM()のHPを すいとった!
 @KEY()
 @!
 
 MSG_BTL_PPSUCK;
 ←
-◆Ｄｒａｉｎｅｄ　@DSP_CNUM()　ＰＰ↓
-　　ｆｒｏｍ　@DSP_OBJECT()！
-;jpn:　@DSP_OBJECT()のＰＰを↓
-;jpn:　@DSP_CNUM()すいとった！
+◆Drained @DSP_CNUM() PP↓
+  from @DSP_OBJECT()!
+;jpn: @DSP_OBJECT()のPPを↓
+;jpn: @DSP_CNUM()すいとった!
 @KEY()
 @!
 
 MSG_BTL_PPSUCK_OBJ;
 ←
-◆@DSP_OBJECT()　ｄｒａｉｎｅｄ↓
-　　@DSP_CNUM()　ＰＰ！
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　@DSP_CNUM()のＰＰを　すいとられた！
+◆@DSP_OBJECT() drained↓
+  @DSP_CNUM() PP!
+;jpn: @DSP_OBJECT()は↓
+;jpn: @DSP_CNUM()のPPを すいとられた!
 @KEY()
 』
 
 MSG_BTL_KIMOCHI_DAMAGE;
 ←
-◆@DSP_ACTOR()　ｆｅｌｔ　ｓｉｃｋ↓
-　　ａｎｄ　ｔｏｏｋ　@DSP_CNUM()　ＨＰ　ｄａｍａｇｅ！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　きもちがわるくて　@DSP_CNUM()のダメージ！
+◆@DSP_ACTOR() felt sick↓
+  and took @DSP_CNUM() HP damage!
+;jpn: @DSP_ACTOR()は↓
+;jpn: きもちがわるくて @DSP_CNUM()のダメージ!
 @KEY()
 @!
 
 ;「猛毒」状態のとき
 MSG_BTL_MODOKU_DAMAGE;
 ←
-◆@DSP_ACTOR()　ｆｅｌｔ　ｐａｉｎ　ｆｒｏｍ　ｔｈｅ　ｐｏｉｓｏｎ↓
-　　ａｎｄ　ｔｏｏｋ　@DSP_CNUM()　ＨＰ　ｄａｍａｇｅ．
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　どくで　@DSP_CNUM()のダメージ！
+◆@DSP_ACTOR() felt pain from the poison↓
+  and took @DSP_CNUM() HP damage.
+;jpn: @DSP_OBJECT()は↓
+;jpn: どくで @DSP_CNUM()のダメージ!
 @KEY()
 @!
 
 ;「日射病」のとき
 MSG_BTL_NISSHA_DAMAGE;
 ←
-◆@DSP_ACTOR()　ｆｅｌｔ　ｄｉｚｚｙ　ａｎｄ　ｗｅａｋ↓
-　　ａｎｄ　ｒｅｃｅｉｖｅｄ　@DSP_CNUM()　ＨＰ　ｄａｍａｇｅ！
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　にっしゃびょうで　@DSP_CNUM()のダメージ！
+◆@DSP_ACTOR() felt dizzy and weak↓
+  and received @DSP_CNUM() HP damage!
+;jpn: @DSP_OBJECT()は↓
+;jpn: にっしゃびょうで @DSP_CNUM()のダメージ!
 @KEY()
 @!
 
 ;「かぜ」のとき
 MSG_BTL_KAZE_DAMAGE;
 ←
-◆@DSP_ACTOR()　ｓｎｅｅｚｅｄ↓
-　　ａｎｄ　ｒｅｃｅｉｖｅｄ　@DSP_CNUM()　ＨＰ　ｄａｍａｇｅ！
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　かぜで　@DSP_CNUM()のダメージ！
+◆@DSP_ACTOR() sneezed↓
+  and received @DSP_CNUM() HP damage!
+;jpn: @DSP_OBJECT()は↓
+;jpn: かぜで @DSP_CNUM()のダメージ!
 @KEY()
 @!
 

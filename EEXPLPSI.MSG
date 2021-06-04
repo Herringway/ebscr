@@ -10,195 +10,195 @@
 ;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-; １ＰＫ（ひっさつ）α
+; １PK(ひっさつ)α
 ;akm
 MSG_EXPL_PSI_HISSATSU_ALFA;marcus
 @GOSUB(_PSI_HISSATSU)
-;akm◆Ｐｓｙｃｈｏｋｉｎｅｓｉｓ　ｗａｖｅ　ｂｙ　ｍｉｎｄ　ｃｏｎｓｅｎｔｒａｔｉｏｎ
+;akm◆Psychokinesis wave by mind consentration
 
-;akm　　Ｅａｃｈ　ｅｎｅｍｙ　ｔｏｏｋ　ａｂｏｕｔ　５０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．　
+;akm  Each enemy took about ５０ points of damage. 
 
-　ｅａｃｈ　ｅｎｅｍｙ　ａｂｏｕｔ　５０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+ each enemy about ５０ points of damage.
 
-;jpn:　てきぜんいんに↓
-;jpn:　やく５０ポイントずつ　ダメージをあたえる。
+;jpn: てきぜんいんに↓
+;jpn: やく５０ポイントずつ ダメージをあたえる。
 @!
 
-; ２ＰＫ（ひっさつ）β
+; ２PK(ひっさつ)β
 ;akm
 MSG_EXPL_PSI_HISSATSU_BETA;marcus
 @GOSUB(_PSI_HISSATSU)
-;akm　Ｅａｃｈ　ｅｎｅｍｙ　ｔｏｏｋ　ａｂｏｕｔ　ａｂｏｕｔ　１８０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+;akm Each enemy took about about １８０ points of damage.
 
-　ｅａｃｈ　ｅｎｅｍｙ　ａｂｏｕｔ　１８０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+ each enemy about １８０ points of damage.
 
 ;jpn:  てきぜんいんに↓
-;jpn:　やく１８０ポイントずつ　ダメージをあたえる。
+;jpn: やく１８０ポイントずつ ダメージをあたえる。
 @!
 
-; ３ＰＫ（ひっさつ）γ
+; ３PK(ひっさつ)γ
 ;akm
 MSG_EXPL_PSI_HISSATSU_GAMMA;marcus
 @GOSUB(_PSI_HISSATSU)
-;akm　　Ｅａｃｈ　ｅｎｅｍｙ　ｔｏｏｋ　ａｂｏｕｔ　５０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+;akm  Each enemy took about ５０ points of damage.
 
-　ｅａｃｈ　ｅｎｅｍｙ　ａｂｏｕｔ　３２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+ each enemy about ３２０ points of damage.
 
-;jpn:　てきぜんいんに↓
-;jpn:　やく３２０ポイントずつ　ダメージをあたえる。
+;jpn: てきぜんいんに↓
+;jpn: やく３２０ポイントずつ ダメージをあたえる。
 @!
 
-; ４ＰＫ（ひっさつ）Ω
+; ４PK(ひっさつ)Ω
 ;akm
 MSG_EXPL_PSI_HISSATSU_OMEGA;marcus
 @GOSUB(_PSI_HISSATSU)
-;akm　　Ｅａｃｈ　ｅｎｅｍｙ　ｔｏｏｋ　ａｂｏｕｔ　６４０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+;akm  Each enemy took about ６４０ points of damage.
 
-　ｅａｃｈ　ｅｎｅｍｙ　ａｂｏｕｔ　６４０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+ each enemy about ６４０ points of damage.
 
-;jpn:　てきぜんいんに↓
-;jpn:　やく６４０ポイントずつ　ダメージをあたえる。
+;jpn: てきぜんいんに↓
+;jpn: やく６４０ポイントずつ ダメージをあたえる。
 @!
 
-; ５ＰＫファイアーα
+; ５PKファイアーα
 ;akm
 MSG_EXPL_PSI_FIRE_ALFA;marcus 
 @GOSUB(_PSI_FIRE)
-;akm　　Ｅａｃｈ　ｔａｒｇｅｔ　ｔｏｏｋ　ａｂｏｕｔ　８０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+;akm  Each target took about ８０ points of damage.
 
-　ａｂｏｕｔ　８０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｅａｃｈ．
+ about ８０ points of damage each.
 
-;jpn:　それぞれ　やく８０ポイントのダメージを　あたえる。
+;jpn: それぞれ やく８０ポイントのダメージを あたえる。
 @!
 
-; ６ＰＫファイアーβ
+; ６PKファイアーβ
 ;akm
 MSG_EXPL_PSI_FIRE_BETA;marcus 
 @GOSUB(_PSI_FIRE)
-;akm　　Ｇａｖｅ　ｅａｃｈ　ｔａｒｇｅｔ　ａｂｏｕｔ　８０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+;akm  Gave each target about ８０ points of damage.
 
-　ａｂｏｕｔ　１６０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｅａｃｈ．
+ about １６０ points of damage each.
 
-;jpn:　それぞれ　やく１６０ポイントのダメージを　あたえる。
+;jpn: それぞれ やく１６０ポイントのダメージを あたえる。
 @!
 
-; ７ＰＫファイアーγ
+; ７PKファイアーγ
 ;akm
 MSG_EXPL_PSI_FIRE_GAMMA;marcus
 @GOSUB(_PSI_FIRE)
-;akm　　Ｇａｖｅ　ｅａｃｈ　ｔａｒｇｅｔ　ａｂｏｕｔ　２４０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+;akm  Gave each target about ２４０ points of damage.
 
-　ａｂｏｕｔ　２４０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｅａｃｈ．
+ about ２４０ points of damage each.
 
-;jpn:　それぞれ　やく２４０ポイントのダメージを　あたえる。
+;jpn: それぞれ やく２４０ポイントのダメージを あたえる。
 @!
 
-; ８ＰＫファイアーΩ
+; ８PKファイアーΩ
 ;akm
 MSG_EXPL_PSI_FIRE_OMEGA;marcus
 @GOSUB(_PSI_FIRE)
-;akm　　Ｇａｖｅ　ｅａｃｈ　ｔａｒｇｅｔ　ａｂｏｕｔ　３２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．
+;akm  Gave each target about ３２０ points of damage.
 
-　ａｂｏｕｔ　３２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｅａｃｈ．
+ about ３２０ points of damage each.
 
-;jpn:　それぞれ　やく３２０ポイントのダメージを　あたえる。
+;jpn: それぞれ やく３２０ポイントのダメージを あたえる。
 @!
 
-; ９ＰＫフリーズα
+; ９PKフリーズα
 ;akm!
 MSG_EXPL_PSI_FREEZ_ALFA; marcus
 @GOSUB(_PSI_FREEZ)
-;akm　　Ｉｎｆｌｉｃｔｅｄ　ａｂｏｕｔ　１８０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+;akm  Inflicted about １８０ points of damage.↓
 
-　ｉｎｆｌｉｃｔｉｎｇ　ａｂｏｕｔ　１８０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+ inflicting about １８０ points of damage.↓
 
-;jpn:　やく１８０ポイントのダメージを　あたえる。↓
+;jpn: やく１８０ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)←
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
 
-;10 ＰＫフリーズβ
+;10 PKフリーズβ
 ;akm!
 MSG_EXPL_PSI_FREEZ_BETA;marcus 
 @GOSUB(_PSI_FREEZ)
-;akm　　Ｉｎｆｌｉｃｔｅｄ　ａｂｏｕｔ　３６０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+;akm  Inflicted about ３６０ points of damage.↓
 
-　ｉｎｆｌｉｃｔｉｎｇ　ａｂｏｕｔ　３６０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+ inflicting about ３６０ points of damage.↓
 
-;jpn:　やく３６０ポイントのダメージを　あたえる。↓
+;jpn: やく３６０ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)←
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
 
-;11 ＰＫフリーズγ
+;11 PKフリーズγ
 ;akm!
 MSG_EXPL_PSI_FREEZ_GAMMA;marcus
 @GOSUB(_PSI_FREEZ)
-;akm　　Ｉｎｆｌｉｃｔｅｄ　ａｂｏｕｔ　５４０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+;akm  Inflicted about ５４０ points of damage.↓
 
-　ｉｎｆｌｉｃｔｉｎｇ　ａｂｏｕｔ　５４０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+ inflicting about ５４０ points of damage.↓
 
-;jpn:　やく５４０ポイントのダメージを　あたえる。↓
+;jpn: やく５４０ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)←
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
-　
-;12 ＰＫフリーズΩ
+ 
+;12 PKフリーズΩ
 ;akm!
 MSG_EXPL_PSI_FREEZ_OMEGA;marcus
 @GOSUB(_PSI_FREEZ)
-;akm　　Ｉｎｆｌｉｃｔｅｄ　ａｂｏｕｔ　７２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+;akm  Inflicted about ７２０ points of damage.↓
 
-　ｉｎｆｌｉｃｔｉｎｇ　ａｂｏｕｔ　７２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+ inflicting about ７２０ points of damage.↓
 
-;jpn:　やく７２０ポイントのダメージを　あたえる。↓
+;jpn: やく７２０ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)↓
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
 
-;13 ＰＫサンダーα
+;13 PKサンダーα
 ;akm!
 MSG_EXPL_PSI_THUNDER_ALFA;marcus
-◆Ｔｈｅ　ｅｎｅｍｙ　ｉｓ　ｔｈｕｎｄｅｒ　ｓｔｒｕｃｋ　ｆｏｒ　ａｂｏｕｔ　１２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+◆The enemy is thunder struck for about １２０ points of damage.↓
 
-;jpn:◆ダメージ　やく１２０ポイントの↓
-;jpn:　かみなりを　おとす。↓
+;jpn:◆ダメージ やく１２０ポイントの↓
+;jpn: かみなりを おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
 
-;14 ＰＫサンダーβ
+;14 PKサンダーβ
 ;akm!
 MSG_EXPL_PSI_THUNDER_BETA;marcus
-;akm◆Ｔｈｕｎｄｅｒ　ｓｔｒｕｃｋ　ｆｏｒ　ａｂｏｕｔ　１２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+;akm◆Thunder struck for about １２０ points of damage.↓
 
-◆Ｔｈｅ　ｅｎｅｍｙ　ｉｓ　ｔｈｕｎｄｅｒ　ｓｔｒｕｃｋ　ｆｏｒ　ａｂｏｕｔ　１２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｗｏ　ｓｅｐａｒａｔｅ　ｔｉｍｅｓ．↓
+◆The enemy is thunder struck for about １２０ points of damage two separate times.↓
 
-;jpn:◆ダメージ　やく１２０ポイントの↓
-;jpn:　かみなりを　２はつ　おとす。↓
+;jpn:◆ダメージ やく１２０ポイントの↓
+;jpn: かみなりを ２はつ おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
 
-;15 ＰＫサンダーγ
+;15 PKサンダーγ
 ;akm!
 MSG_EXPL_PSI_THUNDER_GAMMA;marcus
-;akm◆The enemy is tｈｕｎｄｅｒ　ｓｔｒｕｃｋ　ｆｏｒ　ａｂｏｕｔ　２００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+;akm◆The enemy is thunder struck for about ２００ points of damage.↓
 
-◆Ｔｈｅ　ｅｎｅｍｙ　ｉｓ　ｔｈｕｎｄｅｒ　ｓｔｒｕｃｋ　ｆｏｒ　ａｂｏｕｔ　２００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｈｒｅｅ　ｓｅｐａｒａｔｅ　ｔｉｍｅｓ．↓
+◆The enemy is thunder struck for about ２００ points of damage three separate times.↓
 
-;jpn:◆ダメージ　やく２００ポイントの↓
-;jpn:　かみなりを　３ぱつ　おとす。↓
+;jpn:◆ダメージ やく２００ポイントの↓
+;jpn: かみなりを ３ぱつ おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
 
-;16 ＰＫサンダーΩ
+;16 PKサンダーΩ
 ;akm!
 MSG_EXPL_PSI_THUNDER_OMEGA;
-;akm◆Ｔｈｕｎｄｅｒ　ｓｔｒｕｃｋ　ｆｏｒ　ａｂｏｕｔ　２００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ．↓
+;akm◆Thunder struck for about ２００ points of damage.↓
 
-◆Ｔｈｅ　ｅｎｅｍｙ　ｉｓ　ｔｈｕｎｄｅｒ　ｓｔｒｕｃｋ　ｆｏｒ　ａｂｏｕｔ　２００　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｆｏｕｒ　ｓｅｐａｒａｔｅ　ｔｉｍｅｓ．↓
+◆The enemy is thunder struck for about ２００ points of damage four separate times.↓
 
-;jpn:◆ダメージ　やく２００ポイントの↓
-;jpn:　かみなりを　４ぱつ　おとす。↓
+;jpn:◆ダメージ やく２００ポイントの↓
+;jpn: かみなりを ４ぱつ おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
 
@@ -209,170 +209,170 @@ MSG_EXPL_PSI_THUNDER_OMEGA;
 ;ガンマ  2/8 気絶        4/8 涙止まらず  1/8 しびれ      1/8 変
 ;オメガ  3/8 気絶        3/8 涙止まらず  1/8 しびれ      1/8 変
 
-;17 ＰＫフラッシュα
+;17 PKフラッシュα
 ;akm!
 MSG_EXPL_PSI_FLASH_ALFA;marcus
 @GOSUB(_PSI_FLUSH_1)
 @GOSUB(_PSI_FLUSH_2)
-;akm◆Ｉｎ　ｃｅｒｔａｉｎ　ｃｉｒｃｕｍｓｔａｎｃｅｓ，　ｉｔ　ｍａｋｅｓ　ａｎ　ｏｂｊｅｃｔ　”ｕｎｕｓｕａｌ．”
+;akm◆In certain circumstances, it makes an object ”unusual.”
 
-，　ｉｎ　ｓｏｍｅ　ｃｉｒｃｕｍｓｔａｎｃｅｓ，　ｆｅｅｌ　ｓｔｒａｎｇｅ．
+, in some circumstances, feel strange.
 
-;jpn:◆「へん」にすることも　まれに　ある。
+;jpn:◆「へん」にすることも まれに ある。
 @!
 
-;18 ＰＫフラッシュβ
+;18 PKフラッシュβ
 ;akm!
 MSG_EXPL_PSI_FLASH_BETA;marcus
 @GOSUB(_PSI_FLUSH_1)
 @GOSUB(_PSI_FLUSH_2)
-;akm◆Ｏｔｈｅｒｗｉｓｅ，　ｉｔ　ｍａｋｅｓ　ａｎ　ｏｂｊｅｃｔ　”ｕｎｕｓｕａｌ，”　”ｎｕｍｂｅｄ”　ｏｒ　ｄｅｓｔｒｏｙｓ　ｉｔ　ｗｉｔｈ　ａ　ｓｉｎｇｌｅ　ｓｔｒｉｋｅ．
+;akm◆Otherwise, it makes an object ”unusual,” ”numbed” or destroys it with a single strike.
 
-，　ａｎｄ　ｉｎ　ｓｏｍｅ　ｃｉｒｃｕｍｓｔａｎｃｅｓ，　ｃａｎ　ｍａｋｅ　ｔｈｅ　ｅｎｅｍｙ　ｆｅｅｌ　ｓｔｒａｎｇｅ，　ｂｅｃｏｍｅ　ｎｕｍｂ，　ｏｒ　ｅｖｅｎ　ｂｅ　ｄｅｓｔｒｏｙｅｄ．
+, and in some circumstances, can make the enemy feel strange, become numb, or even be destroyed.
 
-;jpn:◆そのほかにも　「へん」にしたり　「しびれ」させたり↓
-;jpn:　いちげきで　たおすことも　ある。
+;jpn:◆そのほかにも 「へん」にしたり 「しびれ」させたり↓
+;jpn: いちげきで たおすことも ある。
 @!
 
-;19 ＰＫフラッシュγ
+;19 PKフラッシュγ
 ;akm!
 MSG_EXPL_PSI_FLASH_GAMMA;marcus
 @GOSUB(_PSI_FLUSH_1)
 @GOSUB(_PSI_FLUSH_2)
-;akm◆Ｏｆｔｅｎ，　ｉｔ　ｗｉｌｌ　ｄｅｓｔｒｏｙ　ａｎ　ｏｂｊｅｃｔ　ｗｉｔｈ　ａ　ｓｉｎｇｌｅ　ｓｔｒｉｋｅ．　
+;akm◆Often, it will destroy an object with a single strike. 
 
-．↓
-◆Ｏｆｔｅｎ，　ｉｔ　ｗｉｌｌ　ｄｅｓｔｒｏｙ　ａｎ　ｅｎｅｍｙ　ｉｎ　ａ　ｓｉｎｇｌｅ　ｓｔｒｉｋｅ．
+.↓
+◆Often, it will destroy an enemy in a single strike.
 
-;jpn:◆いちげきで　たおすことも　かなりある。
+;jpn:◆いちげきで たおすことも かなりある。
 @!
 
-;20 ＰＫフラッシュΩ
+;20 PKフラッシュΩ
 ;akm!
 MSG_EXPL_PSI_FLASH_OMEGA;marcus
-◆Ｉｔ　ｇｅｎｅｒａｔｅｓ　ｇｌｏｒｉｏｕｓ　ｒａｙｓ　ｔｈａｔ　ｈａｖｅ　ａ　ｈｉｇｈ　ｐｒｏｂａｂｉｌｉｔｙ　ｏｆ　ｄｅｓｔｒｏｙｉｎｇ　ａｌｌ　ｔｈｅ　ｅｎｅｍｉｅｓ　ｏｎ　ｔｈｅ　ｓｃｅｎｅ　ｉｎ　ａ　ｓｉｎｇｌｅ　ｓｔｒｉｋｅ．
+◆It generates glorious rays that have a high probability of destroying all the enemies on the scene in a single strike.
 
-;jpn:◆はげしいひかりを　はなち↓
-;jpn:　てきぜんいんを　かなりの　かくりつで↓
-;jpn:　いちげきで　たおすことが　できる。
+;jpn:◆はげしいひかりを はなち↓
+;jpn: てきぜんいんを かなりの かくりつで↓
+;jpn: いちげきで たおすことが できる。
 @!
 
-;21 ＰＫスターストームα
+;21 PKスターストームα
 ;akm
-MSG_EXPL_PSI_STARSTOM_ALFA;　marcus
+MSG_EXPL_PSI_STARSTOM_ALFA; marcus
 @GOSUB(_PSI_STARSTORM_1)←
-;akm◆It dｅａｌｓ　ａｂｏｕｔ　３６０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ｅａｃｈ　ｅｎｅｍｙ．
+;akm◆It deals about ３６０ points of damage to each enemy.
 
-◆Ｉｔ　ｄｅａｌｓ　ａｂｏｕｔ　３６０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ｅａｃｈ　ｅｎｅｍｙ．
+◆It deals about ３６０ points of damage to each enemy.
 
 ;jpn:◆てきぜんいんに↓
-;jpn:　やく３６０ポイントずつ　ダメージをあたえる。
+;jpn: やく３６０ポイントずつ ダメージをあたえる。
 @!
 
-;22 ＰＫスターストームΩ
+;22 PKスターストームΩ
 ;akm
 MSG_EXPL_PSI_STARSTORM_OMEGA;marcus
 @GOSUB(_PSI_STARSTORM_1)←
-;akm◆Ｄｅａｌｓ　ａｂｏｕｔ　７２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ｅａｃｈ　ｅｎｅｍｙ．
+;akm◆Deals about ７２０ points of damage to each enemy.
 
-◆Ｉｔ　ｄｅａｌｓ　ａｂｏｕｔ　７２０　ｐｏｉｎｔｓ　ｏｆ　ｄａｍａｇｅ　ｔｏ　ｅａｃｈ　ｅｎｅｍｙ．
+◆It deals about ７２０ points of damage to each enemy.
 
 ;jpn:◆てきぜんいんに↓
-;jpn:　やく７２０ポイントずつ　ダメージをあたえる。
+;jpn: やく７２０ポイントずつ ダメージをあたえる。
 @!
 
 ;23 ライフアップα
 ;akm
 MSG_EXPL_PSI_LIFEUP_ALFA;
-;akm◆Ｒｅｓｔｏｒｅｓ　１００　ＨＰ　ｆｏｒ　ａ　ｆｒｉｅｎｄ．
+;akm◆Restores １００ HP for a friend.
 
-◆Ｒｅｓｔｏｒｅｓ　１００　ＨＰ　ｔｏ　ｏｎｅ　ｐｅｒｓｏｎ．
+◆Restores １００ HP to one person.
 
-;jpn:◆なかまひとりのＨＰを↓
-;jpn:　やく１００ポイント　かいふくする。
+;jpn:◆なかまひとりのHPを↓
+;jpn: やく１００ポイント かいふくする。
 @!
 
 ;24 ライフアップβ
 ;akm
 MSG_EXPL_PSI_LIFEUP_BETA;marcus
-◆Ｒｅｓｔｏｒｅｓ　３００　ＨＰ　ｔｏ　ｏｎｅ　ｐｅｒｓｏｎ．
+◆Restores ３００ HP to one person.
 
-;jpn:◆なかまひとりのＨＰを↓
-;jpn:　やく３００ポイント　かいふくする。
+;jpn:◆なかまひとりのHPを↓
+;jpn: やく３００ポイント かいふくする。
 @!
 
 ;25 ライフアップγ
 ;akm
 MSG_EXPL_PSI_LIFEUP_GAMMA;marcus
-◆Ｃｏｍｐｌｅｔｅｌｙ　ｒｅｓｔｏｒｅｓ　ｔｈｅ　ＨＰ　ｏｆ　ｏｎｅ　ｐｅｒｓｏｎ．
+◆Completely restores the HP of one person.
 
-;jpn:◆なかまひとりのＨＰを↓
-;jpn:　かんぜんに　かいふくする。
+;jpn:◆なかまひとりのHPを↓
+;jpn: かんぜんに かいふくする。
 @!
 
 ;26 ライフアップΩ
 ;akm
 MSG_EXPL_PSI_LIFEUP_OMEGA;marcus
-◆Ｒｅｓｔｏｒｅｓ　４００　ＨＰ　ｔｏ　ｅｖｅｒｙｏｎｅ．
+◆Restores ４００ HP to everyone.
 
-;jpn:◆なかまぜんいんのＨＰを↓
-;jpn:　やく４００ずつ　かいふくする。
+;jpn:◆なかまぜんいんのHPを↓
+;jpn: やく４００ずつ かいふくする。
 @!
 
 ;27 ヒーリングα
 ;akm
 MSG_EXPL_PSI_HEALING_ALFA;marcus
-◆Ｃｕｒｅｓ　ａ　ｃｏｌｄ，　ｓｕｎｓｔｒｏｋｅ　ｏｒ　ｓｌｅｅｐ　ｃｏｎｄｉｔｉｏｎｓ．
+◆Cures a cold, sunstroke or sleep conditions.
 
 ;jpn:◆なかまの「かぜ」「にっしゃびょう」↓
-;jpn:　「ねむり」じょうたいを　かいふくする。
+;jpn: 「ねむり」じょうたいを かいふくする。
 @!
 
 ;28 ヒーリングβ
 ;akm
 MSG_EXPL_PSI_HEALING_BETA;marcus
-◆Ｉｎ　ａｄｄｉｔｉｏｎ　ｔｏ　ｔｈｅ　ｅｆｆｅｃｔｓ　ｏｆ　Ｈｅａｌｉｎｇ　α，　ｔｈｉｓ　ｃｕｒｅｓ　ｐｏｉｓｏｎｉｎｇｓ，　ｎａｕｓｅａ，　ｆｅｅｌｉｎｇ　ｓｔｒａｎｇｅ　ａｎｄ　ｕｎｃｏｎｔｒｏｌｌａｂｌｅ　ｃｒｙｉｎｇ．
+◆In addition to the effects of Healing α, this cures poisonings, nausea, feeling strange and uncontrollable crying.
 
 ;jpn:◆ヒーリングαのこうかにくわえ↓
-;jpn:　「どく」「きもちわるい」「へん」↓
-;jpn:　「なみだがとまらない」じょうたいを　かいふくする。
+;jpn: 「どく」「きもちわるい」「へん」↓
+;jpn: 「なみだがとまらない」じょうたいを かいふくする。
 @!
 
 ;29 ヒーリングγ
 ;akm
 MSG_EXPL_PSI_HEALING_GAMMA;marcus
-◆Ｉｎ　ａｄｄｉｔｉｏｎ　ｔｏ　ｔｈｅ　ｅｆｆｅｃｔｓ　ｏｆ　Ｈｅａｌｉｎｇ　β，　ｔｈｉｓ　ｃｕｒｅｓ　ｂｅｉｎｇ　ｄｉａｍｏｎｄｉｚｅｄ　ａｎｄ　ｐａｒａｌｙｓｉｓ．↓
-◆Ｉｔ　ａｌｓｏ　ｒｅｖｉｖｅｓ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　ｈａｓ　ｂｅｃｏｍｅ　ｕｎｃｏｎｓｃｉｏｕｓ，　ｔｈｏｕｇｈ　ＨＰ　ｉｓ　ｎｏｔ　ｍａｘｅｄ　ｏｕｔ．
+◆In addition to the effects of Healing β, this cures being diamondized and paralysis.↓
+◆It also revives a friend who has become unconscious, though HP is not maxed out.
 
 ;jpn:◆ヒーリングβのこうかにくわえ↓
-;jpn:　「ダイヤ」「しびれ」じょうたいを　かいふくする。↓
-;jpn:◆「きぜつ」しているなかまを　カムバックさせる↓
-;jpn:　こともあるが　そのときＨＰは　まんタンに　ならない。
+;jpn: 「ダイヤ」「しびれ」じょうたいを かいふくする。↓
+;jpn:◆「きぜつ」しているなかまを カムバックさせる↓
+;jpn: こともあるが そのときHPは まんタンに ならない。
 @!
 
 ;30 ヒーリングΩ
 ;akm
 MSG_EXPL_PSI_HEALING_OMEGA;marcus
-◆Ｉｎ　ａｄｄｉｔｉｏｎ　ｔｏ　ｔｈｅ　ｅｆｆｅｃｔｓ　ｏｆ　Ｈｅａｌｉｎｇ　γ，　ｔｈｉｓ　ｒｅｖｉｖｅｓ　ａ　ｆｒｉｅｎｄ　ｗｈｏ　ｈａｓ　ｂｅｃｏｍｅ　ｕｎｃｏｎｓｃｉｏｕｓ，　ａｎｄ　ｉｔ　ｃｏｍｐｌｅｔｅｌｙ　ｍａｘｅｓ　ｏｕｔ　ｔｈａｔ　ｐｅｒｓｏｎ’ｓ　ＨＰ　ｗｈｅｎ　ｒｅｖｉｖｅｄ．
+◆In addition to the effects of Healing γ, this revives a friend who has become unconscious, and it completely maxes out that person’s HP when revived.
 
 ;jpn:◆ヒーリングγのこうかにくわえ↓
-;jpn:　「きぜつ」しているなかまを　かくじつに↓
-;jpn:　ＨＰまんタンで　カムバックさせる。
+;jpn: 「きぜつ」しているなかまを かくじつに↓
+;jpn: HPまんタンで カムバックさせる。
 @!
 
 ;31 シールドα
 ;akm
 MSG_EXPL_PSI_SHIELD_ALFA;marcus
-◆Ｐｒｏｔｅｃｔ　ｏｎｅ　ｐｅｒｓｏｎ　ｗｉｔｈ　ｔｈｅ　ｓｈｉｅｌｄ　ｏｆ　ｌｉｇｈｔ．↓
-◆Ｉｔ　ｒｅｄｕｃｅｓ　ｔｈｅ　ｄａｍａｇｅ　ｃａｕｓｅｄ　ｂｙ　ａｎ　ｅｎｅｍｙ’ｓ　ａｔｔａｃｋ　ｂｙ　５０％．↓
-;akm◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｅｆｆｅｃｔ　ｗｉｌｌ　ｂｅ　ｌｏｓｔ　ｉｆ　ａｎｏｔｈｅｒ　ｓｈｉｅｌｄ　ｉｓ　ｐｕｔ　ｏｎ　ｏｖｅｒ　ｉｔ．↓
+◆Protect one person with the shield of light.↓
+◆It reduces the damage caused by an enemy’s attack by ５０％.↓
+;akm◆However, the effect will be lost if another shield is put on over it.↓
 
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Using a different shield will cancel these effects.
  
 ;jpn:◆なかまひとりに「ひかりのシールド」をかける。↓
-;jpn:◆てきからうける　だげきこうげきのダメージが↓
-;jpn:　はんぶんになる。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn:◆てきからうける だげきこうげきのダメージが↓
+;jpn: はんぶんになる。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆なかまひとりに「シールド」をかける。↓
 ;@GOSUB(_PSI_SHIELD_HALVE)
@@ -381,17 +381,17 @@ MSG_EXPL_PSI_SHIELD_ALFA;marcus
 ;33 シールドΣ
 ;akm
 MSG_EXPL_PSI_SHIELD_SIGMA;marcus
-◆Ｐｒｏｔｅｃｔ　ｅｖｅｒｙｏｎｅ　ｗｉｔｈ　ｔｈｅ　ｓｈｉｅｌｄ　ｏｆ　ｌｉｇｈｔ．↓
-◆Ｉｔ　ｒｅｄｕｃｅｓ　ｔｈｅ　ｄａｍａｇｅ　ｃａｕｓｅｄ　ｂｙ　ａｎ　ｅｎｅｍｙ’ｓ　ａｔｔａｃｋ　ｂｙ　５０％．↓
-;akm◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｅｆｆｅｃｔ　ｗｉｌｌ　ｂｅ　ｌｏｓｔ　ｉｆ　ａｎｏｔｈｅｒ　ｓｈｉｅｌｄ　ｉｓ　ｐｕｔ　ｏｎ　ｏｖｅｒ　ｉｔ．
+◆Protect everyone with the shield of light.↓
+◆It reduces the damage caused by an enemy’s attack by ５０％.↓
+;akm◆However, the effect will be lost if another shield is put on over it.
 
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Using a different shield will cancel these effects.
 
 
 ;jpn:◆みかたぜんいんに「ひかりのシールド」をかける。↓
-;jpn:◆てきからうける　だげきこうげきのダメージが↓
-;jpn:　はんぶんになる。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn:◆てきからうける だげきこうげきのダメージが↓
+;jpn: はんぶんになる。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆みかたぜんいんに「シールド」をかける。↓
 ;@GOSUB(_PSI_SHIELD_HALVE)
@@ -400,16 +400,16 @@ MSG_EXPL_PSI_SHIELD_SIGMA;marcus
 ;32 シールドβ
 ;akm
 MSG_EXPL_PSI_SHIELD_BETA;marcus
-◆Ｐｒｏｔｅｃｔｓ　ｏｎｅ　ｐｅｒｓｏｎ　ｗｉｔｈ　ａ　ｐｏｗｅｒ　ｓｈｉｅｌｄ．↓
+◆Protects one person with a power shield.↓
 
-◆Ｃｕｔｓ　ｄａｍａｇｅ　ｉｎ　ｈａｌｆ　ａｎｄ　ｓｏｍｅ　ｏｆ　ｔｈｅ　ｂｌｏｃｋｅｄ　ｄａｍａｇｅ　ｉｓ　ｄｅａｌｔ　ｂａｃｋ　ｔｏ　ｔｈｅ　ｅｎｅｍｙ．↓
+◆Cuts damage in half and some of the blocked damage is dealt back to the enemy.↓
 
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Using a different shield will cancel these effects.
 
 ;jpn:◆なかまひとりに「はんげきのシールド」をかける。↓
 ;jpn:◆だげきこうげきのダメージが↓
-;jpn:　はんぶんになり　のこりを　はねかえす。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn: はんぶんになり のこりを はねかえす。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆なかまひとりに「パワーシールド」をかける。↓
 ;@GOSUB(_PSI_SHIELD_HALVE_REPEL)
@@ -418,21 +418,21 @@ MSG_EXPL_PSI_SHIELD_BETA;marcus
 ;34 シールドΩ
 ;akm
 MSG_EXPL_PSI_SHIELD_OMEGA;marcus
-◆Ｐｒｏｔｅｃｔｓ　ｅｖｅｒｙｏｎｅ　ｗｉｔｈ　ａ　ｐｏｗｅｒ　ｓｈｉｅｌｄ．↓
+◆Protects everyone with a power shield.↓
 
-;akm◆Ｉｔ　ｒｅｄｕｃｅｓ　ｔｈｅ　ｄａｍａｇｅ　ｃａｕｓｅｄ　ｂｙ　ｔｈｅ　ｅｎｅｍｙ’ｓ　ａｔｔａｃｋ　ｂｙ　５０％　ａｎｄ　ｒｅｔｕｒｎｓ　ｔｈｅ　ｒｅｓｔ　ｔｏ　ａｔｔａｃｋｅｒ．↓
+;akm◆It reduces the damage caused by the enemy’s attack by ５０％ and returns the rest to attacker.↓
 
-◆Ｃｕｔｓ　ｄａｍａｇｅ　ｉｎ　ｈａｌｆ　ａｎｄ　ｓｏｍｅ　ｏｆ　ｔｈｅ　ｂｌｏｃｋｅｄ　ｄａｍａｇｅ　ｉｓ　ｄｅａｌｔ　ｂａｃｋ　ｔｏ　ｔｈｅ　ｅｎｅｍｙ．↓
+◆Cuts damage in half and some of the blocked damage is dealt back to the enemy.↓
 
-;akm◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｅｆｆｅｃｔ　ｗｉｌｌ　ｂｅ　ｌｏｓｔ　ｉｆ　ａｎｏｔｈｅｒ　ｓｈｉｅｌｄ　ｉｓ　ｐｕｔ　ｏｎ　ｏｖｅｒ　ｉｔ．
+;akm◆However, the effect will be lost if another shield is put on over it.
 
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Using a different shield will cancel these effects.
 
 
 ;jpn:◆みかたぜんいんに「はんげきのシールド」をかける。↓
 ;jpn:◆だげきこうげきのダメージが↓
-;jpn:　はんぶんになり　のこりを　はねかえす。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn: はんぶんになり のこりを はねかえす。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆みかたぜんいんに「パワーシールド」をかける。↓
 ;@GOSUB(_PSI_SHIELD_HALVE_REPEL)
@@ -441,17 +441,17 @@ MSG_EXPL_PSI_SHIELD_OMEGA;marcus
 ;35 サイコシールドα
 ;akm
 MSG_EXPL_PSI_P_SHIELD_ALFA;marcus
-◆Ｐｒｏｔｅｃｔｓ　ｏｎｅ　ｐｅｒｓｏｎ　ｗｉｔｈ　ａ　ｐｓｙｃｈｉｃ　ｓｈｉｅｌｄ．↓
-◆Ｉｔ　ｂｌｏｃｋｓ　ａｎ　ｅｎｅｍｙ’ｓ　ＰＳＩ　ａｔｔａｃｋ．↓
+◆Protects one person with a psychic shield.↓
+◆It blocks an enemy’s PSI attack.↓
 
-;akm◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｅｆｆｅｃｔ　ｗｉｌｌ　ｂｅ　ｌｏｓｔ　ｉｆ　ａｎｏｔｈｅｒ　ｓｈｉｅｌｄ　ｉｓ　ｐｕｔ　ｏｎ　ｏｖｅｒ　ｉｔ．
+;akm◆However, the effect will be lost if another shield is put on over it.
 
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Using a different shield will cancel these effects.
 
 ;jpn:◆みかたひとりに「サイコシールド」をかける。↓
-;jpn:◆てきからうける　ＰＳＩこうげきを↓
-;jpn:　むこうにする。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn:◆てきからうける PSIこうげきを↓
+;jpn: むこうにする。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆みかたひとりに「サイコシールド」をかける。↓
 ;@GOSUB(_PSI_PSI_SHIELD_HALVE)
@@ -460,18 +460,18 @@ MSG_EXPL_PSI_P_SHIELD_ALFA;marcus
 ;36 サイコシールドΣ
 ;akm
 MSG_EXPL_PSI_P_SHIELD_SIGMA;marcus
-◆Ｐｒｏｔｅｃｔｓ　ｅｖｅｒｙｏｎｅ　ｗｉｔｈ　ａ　ｐｓｙｃｈｉｃ　ｓｈｉｅｌｄ．↓
+◆Protects everyone with a psychic shield.↓
 
-◆Ｉｔ　ｂｌｏｃｋｓ　ａｎ　ｅｎｅｍｙ’ｓ　ＰＳＩ　ａｔｔａｃｋ．↓
+◆It blocks an enemy’s PSI attack.↓
 
-;akm◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｅｆｆｅｃｔ　ｗｉｌｌ　ｂｅ　ｌｏｓｔ　ｉｆ　ａｎｏｔｈｅｒ　ｓｈｉｅｌｄ　ｉｓ　ｐｕｔ　ｏｎ　ｏｖｅｒ　ｉｔ．
+;akm◆However, the effect will be lost if another shield is put on over it.
 
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Using a different shield will cancel these effects.
 
 ;jpn:◆みかたぜんいんに「サイコシールド」をかける。↓
-;jpn:◆てきからうける　ＰＳＩこうげきを↓
-;jpn:　むこうにする。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn:◆てきからうける PSIこうげきを↓
+;jpn: むこうにする。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆みかたぜんいんに「サイコシールド」をかける。↓
 ;@GOSUB(_PSI_PSI_SHIELD_HALVE)
@@ -480,16 +480,16 @@ MSG_EXPL_PSI_P_SHIELD_SIGMA;marcus
 ;37 サイコシールドβ
 ;akm
 MSG_EXPL_PSI_P_SHIELD_BETA;marcus
-◆Ｐｒｏｔｅｃｔｓ　ｏｎｅ　ｐｅｒｓｏｎ　ｗｉｔｈ　ａ　ｐｓｙｃｈｉｃ　ｐｏｗｅｒ　ｓｈｉｅｌｄ．↓
-◆Ｉｔ　ｒｅｆｌｅｃｔｓ　ａｎ　ｅｎｅｍｙ’ｓ　ＰＳＩ　ａｔｔａｃｋ　ｂａｃｋ　ａｔ　ｔｈｅ　ａｔｔａｃｋｅｒ．↓
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Protects one person with a psychic power shield.↓
+◆It reflects an enemy’s PSI attack back at the attacker.↓
+◆Using a different shield will cancel these effects.
 
-;akm◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｅｆｆｅｃｔ　ｗｉｌｌ　ｂｅ　ｌｏｓｔ　ｉｆ　ａｎｏｔｈｅｒ　ｓｈｉｅｌｄ　ｉｓ　ｐｕｔ　ｏｎ　ｏｖｅｒ　ｉｔ．
+;akm◆However, the effect will be lost if another shield is put on over it.
 
 ;jpn:◆みかたひとりに「はんげきのサイコシールド」をかける。↓
-;jpn:◆てきからうける　ＰＳＩこうげきを↓
-;jpn:　そのままはねかえす。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn:◆てきからうける PSIこうげきを↓
+;jpn: そのままはねかえす。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆みかたひとりに「サイパワーシールド」をかける。↓
 ;@GOSUB(_PSI_PSI_SHIELD_REPEL)
@@ -498,17 +498,17 @@ MSG_EXPL_PSI_P_SHIELD_BETA;marcus
 ;38 サイコシールドΩ
 ;akm
 MSG_EXPL_PSI_P_SHIELD_OMEGA;marcus
-◆Ｐｒｏｔｅｃｔｓ　ｅｖｅｒｙｏｎｅ　ｗｉｔｈ　ａ　ｐｓｙｃｈｉｃ　ｐｏｗｅｒ　ｓｈｉｅｌｄ．↓
-◆Ｉｔ　ｒｅｆｌｅｃｔｓ　ａｎ　ｅｎｅｍｙ’ｓ　ＰＳＩ　ａｔｔａｃｋ　ｂａｃｋ　ａｔ　ｔｈｅ　ａｔｔａｃｋｅｒ．↓
-◆Ｕｓｉｎｇ　ａ　ｄｉｆｆｅｒｅｎｔ　ｓｈｉｅｌｄ　ｗｉｌｌ　ｃａｎｃｅｌ　ｔｈｅｓｅ　ｅｆｆｅｃｔｓ．
+◆Protects everyone with a psychic power shield.↓
+◆It reflects an enemy’s PSI attack back at the attacker.↓
+◆Using a different shield will cancel these effects.
 
 
-;akm◆Ｈｏｗｅｖｅｒ，　ｔｈｅ　ｅｆｆｅｃｔ　ｗｉｌｌ　ｂｅ　ｌｏｓｔ　ｉｆ　ａｎｏｔｈｅｒ　ｓｈｉｅｌｄ　ｉｓ　ｐｕｔ　ｏｎ　ｏｖｅｒ　ｉｔ．
+;akm◆However, the effect will be lost if another shield is put on over it.
 
 ;jpn:◆みかたぜんいんに「はんげきのサイコシールド」をかける。↓
-;jpn:◆てきからうける　ＰＳＩこうげきを↓
-;jpn:　そのままはねかえす。↓
-;jpn:◆べつのシールドをかけると　うちけされてしまう。
+;jpn:◆てきからうける PSIこうげきを↓
+;jpn: そのままはねかえす。↓
+;jpn:◆べつのシールドをかけると うちけされてしまう。
 @!
 ;◆みかたぜんいんに「サイパワーシールド」をかける。↓
 ;@GOSUB(_PSI_PSI_SHIELD_REPEL)
@@ -517,87 +517,87 @@ MSG_EXPL_PSI_P_SHIELD_OMEGA;marcus
 ;39 オフェンスアップα
 ;akm
 MSG_EXPL_PSI_OFFENSE_UP_ALFA;marcus
-◆Ｉｎｃｒｅａｓｅ　ｏｎｅ　ｐｅｒｓｏｎ’ｓ　Ｏｆｆｅｎｓｅ　ｆｏｒ　ｔｈｅ　ｄｕｒａｔｉｏｎ　ｏｆ　ｔｈｅ　ｃｕｒｒｅｎｔ　ｂａｔｔｌｅ．↓
+◆Increase one person’s Offense for the duration of the current battle.↓
 
-;jpn:◆みかたひとりの　こうげきりょくを↓
-;jpn:　せんとうじにかぎって　アップする。↓
+;jpn:◆みかたひとりの こうげきりょくを↓
+;jpn: せんとうじにかぎって アップする。↓
 @GOSUB(_PSI_USE_PILE)
 @!
 
 ;40 オフェンスアップΩ
 ;akm
 MSG_EXPL_PSI_OFFENSE_UP_OMEGA;marcus
-◆Ｉｎｃｒｅａｓｅ　ｅｖｅｒｙｏｎｅ’ｓ　Ｏｆｆｅｎｓｅ　ｆｏｒ　ｔｈｅ　ｄｕｒａｔｉｏｎ　ｏｆ　ｔｈｅ　ｃｕｒｒｅｎｔ　ｂａｔｔｌｅ．↓
+◆Increase everyone’s Offense for the duration of the current battle.↓
 
-;jpn:◆みかたぜんいんの　こうげきりょくを↓
-;jpn:　せんとうじにかぎって　アップする。↓
+;jpn:◆みかたぜんいんの こうげきりょくを↓
+;jpn: せんとうじにかぎって アップする。↓
 @GOSUB(_PSI_USE_PILE)
 @!
 
 ;41 ディフェンスダウンα
 ;akm
 MSG_EXPL_PSI_DEFENSE_DOWN_ALFA;marcus
-◆Ｄｅｃｒｅａｓｅｓ　ｔｈｅ　Ｄｅｆｅｎｓｅ　ｏｆ　ｏｎｅ　ｅｎｅｍｙ　ｆｏｒ　ｔｈｅ　ｄｕｒａｔｉｏｎ　ｏｆ　ｔｈｅ　ｃｕｒｒｅｎｔ　ｂａｔｔｌｅ．↓
+◆Decreases the Defense of one enemy for the duration of the current battle.↓
 
-;jpn:◆てきひとりの　しゅびりょくを↓
-;jpn:　せんとうじにかぎって　ダウンさせる。↓
+;jpn:◆てきひとりの しゅびりょくを↓
+;jpn: せんとうじにかぎって ダウンさせる。↓
 @GOSUB(_PSI_USE_PILE)
 @!
 
 ;42 ディフェンスダウンΩ
 ;akm
 MSG_EXPL_PSI_DEFENSE_DOWN_OMEGA;
-◆Ｄｅｃｒｅａｓｅｓ　ｔｈｅ　Ｄｅｆｅｎｓｅ　ｏｆ　ａｌｌ　ｅｎｅｍｉｅｓ　ｆｏｒ　ｔｈｅ　ｄｕｒａｔｉｏｎ　ｏｆ　ｔｈｅ　ｃｕｒｒｅｎｔ　ｂａｔｔｌｅ．↓
+◆Decreases the Defense of all enemies for the duration of the current battle.↓
 
-;jpn:◆てきぜんいんの　しゅびりょくを↓
-;jpn:　せんとうじにかぎって　ダウンさせる。↓
+;jpn:◆てきぜんいんの しゅびりょくを↓
+;jpn: せんとうじにかぎって ダウンさせる。↓
 @GOSUB(_PSI_USE_PILE)
 @!
 
 ;43 さいみんじゅつα
 ;akm
 MSG_EXPL_PSI_SAIMIN_ALFA;marcus
-◆Ｐｕｔｓ　ｏｎｅ　ｅｎｅｍｙ　ｔｏ　ｓｌｅｅｐ．↓
+◆Puts one enemy to sleep.↓
  
-;jpn:◆てきひとりを　ねむらせる。↓
+;jpn:◆てきひとりを ねむらせる。↓
 @GOSUB(_PSI_SAIMIN_SUPPLEMENT)
 @!
 
 ;44 さいみんじゅつΩ
 ;akm
 MSG_EXPL_PSI_SAIMIN_OMEGA;
-◆Ｐｕｔｓ　ａｌｌ　ｏｆ　ｔｈｅ　ｅｎｅｍｉｅｓ　ｔｏ　ｓｌｅｅｐ．↓
+◆Puts all of the enemies to sleep.↓
 
-;jpn:◆てきぜんいんを　ねむらせる。↓
+;jpn:◆てきぜんいんを ねむらせる。↓
 @GOSUB(_PSI_SAIMIN_SUPPLEMENT)
 @!
 
 ;45 サイマグネットα
 ;akm
 MSG_EXPL_PSI_P_MAGNET_ALFA;marcus
-;akm◆Ｏｎｅ　ｏｆ　ｔｈｅ　ｅｎｅｍｙ’ｓ　ＰＰ
+;akm◆One of the enemy’s PP
 
-◆Ｇｒａｂｓ　２−８　ｐｏｉｎｔｓ　ｏｆ　ＰＰ　ｆｒｏｍ　ｏｎｅ　ｅｎｅｍｙ　ａｎｄ　ａｄｄｓ　ｉｔ　ｔｏ　ｙｏｕｒ　ｏｗｎ．
+◆Grabs ２−８ points of PP from one enemy and adds it to your own.
 
-;jpn:◆てきひとりの　ＰＰを↓
+;jpn:◆てきひとりの PPを↓
 ;akm@GOSUB(_PSI_PSI_MAGNET_BASIC)
 @!
 
 ;46 サイマグネットΩ
 ;akm
 MSG_EXPL_PSI_P_MAGNET_OMEGA;marcus
-;akm◆Ｅａｃｈ　ｅｎｅｍｙ’ｓ　ＰＰ　
+;akm◆Each enemy’s PP 
 
-◆Ｇｒａｂｓ　２−８　ｐｏｉｎｔｓ　ｏｆ　ＰＰ　ｆｒｏｍ　ｅａｃｈ　ｅｎｅｍｙ　ａｎｄ　ａｄｄｓ　ｉｔ　ｔｏ　ｙｏｕｒ　ｏｗｎ．
+◆Grabs ２−８ points of PP from each enemy and adds it to your own.
 
-;jpn:◆てきぜんいんの　ＰＰを↓
-;jpn:　それぞれ@GOSUB(_PSI_PSI_MAGNET_BASIC)
+;jpn:◆てきぜんいんの PPを↓
+;jpn: それぞれ@GOSUB(_PSI_PSI_MAGNET_BASIC)
 @!
 
 ;47 パラライシスα
 ;akm
 MSG_EXPL_PSI_PARALYSIS_ALFA;marcus
-◆Ｆｏｒｃｅｓ　ｏｎｅ　ｅｎｅｍｙ　ｉｎｔｏ
+◆Forces one enemy into
 ;jpn:◆てきひとりを↓
 @GOSUB(_PSI_PARALYSIS_BASIC)
 @!
@@ -605,7 +605,7 @@ MSG_EXPL_PSI_PARALYSIS_ALFA;marcus
 ;48 パラライシスΩ
 ;akm
 MSG_EXPL_PSI_PARALYSIS_OMEGA;marcus
-◆Ｆｏｒｃｅｓ　ａｌｌ　ｅｎｅｍｉｅｓ　ｉｎｔｏ
+◆Forces all enemies into
 ;jpn:◆てきぜんいんを↓
 @GOSUB(_PSI_PARALYSIS_BASIC)
 @!
@@ -613,7 +613,7 @@ MSG_EXPL_PSI_PARALYSIS_OMEGA;marcus
 ;49 ブレインショックα
 ;akm
 MSG_EXPL_PSI_BRAIN_SHOCK_ALFA;marcus
-◆Ｍａｋｅｓ　ｏｎｅ　ｅｎｅｍｙ　ｆｅｅｌｓ　ｓｔｒａｎｇｅ．
+◆Makes one enemy feels strange.
 
 ;jpn:◆てきひとりを
 ;@GOSUB(_PSI_BRAIN_SHOCK_BASIC)
@@ -622,7 +622,7 @@ MSG_EXPL_PSI_BRAIN_SHOCK_ALFA;marcus
 ;50 ブレインショックΩ
 ;akm
 MSG_EXPL_PSI_BRAIN_SHOCK_OMEGA;marcus
-◆Ｍａｋｅｓ　ａｌｌ　ｏｆ　ｔｈｅ　ｅｎｅｍｉｅｓ　ｆｅｅｌ　ｓｔｒａｎｇｅ．
+◆Makes all of the enemies feel strange.
 
 ;jpn:◆てきぜんいんを
 ;@GOSUB(_PSI_BRAIN_SHOCK_BASIC)
@@ -632,19 +632,19 @@ MSG_EXPL_PSI_BRAIN_SHOCK_OMEGA;marcus
 ;akm
 MSG_EXPL_PSI_TELEPORT_ALFA;marcus
 @GOSUB(_PSI_TELEPORT_BASIC)←
-◆Ｙｏｕ　ｎｅｅｄ　ａ　ｇｏｏｄ　ｒｕｎｎｉｎｇ　ａｐｐｒｏａｃｈ　ｆｏｒ　ｔｈｉｓ　ｔｏ　ｗｏｒｋ．
+◆You need a good running approach for this to work.
 
-;jpn:◆ながいじょそうが　ひつようだ。
+;jpn:◆ながいじょそうが ひつようだ。
 @!
 
 ;52 テレポートβ
 ;akm
 MSG_EXPL_PSI_TELEPORT_BETA;
 @GOSUB(_PSI_TELEPORT_BASIC)←
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｎｅｅｄ　ａ　ｒｕｎｎｉｎｇ　ａｐｐｒｏａｃｈ　ｔｏ　ｕｓｅ　ｔｈｉｓ．↓
-◆Ｉｔ　ｉｓ　ａｌｓｏ　ｃａｌｌｅｄ　ｔｈｅ　”Ｔｏｒｎａｄｏ　Ｔｅｌｅｐｏｒｔ．”
+◆You don’t need a running approach to use this.↓
+◆It is also called the ”Tornado Teleport.”
 
-;jpn:◆ながいじょそうは　いらない。↓
+;jpn:◆ながいじょそうは いらない。↓
 ;jpn:◆「たつまきテレポート」ともいう。
 @!
 

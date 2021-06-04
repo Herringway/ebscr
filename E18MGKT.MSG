@@ -1,7 +1,7 @@
 ;---------------------------------------
 
 ;@Habitat:マジカント／ショップ／ショップ
-;@Person:マジｂ道具屋
+;@Person:マジb道具屋
 ;@Figure:マジカントの人
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて固定
@@ -71,86 +71,86 @@ MSG_SUB_FLYINGMAN_ADD;
 @CHKFGOTO(FLG_SYS_FLYINGMAN_DEAD_C,_MGKT_FLYINGMAN_4)
 @CHKFGOTO(FLG_SYS_FLYINGMAN_DEAD_B,_MGKT_FLYINGMAN_3)
 @CHKFGOTO(FLG_SYS_FLYINGMAN_DEAD_A,_MGKT_FLYINGMAN_2)
-◆Ｉ　ａｍ　ｙｏｕｒ　ｃｏｕｒａｇｅ．@KEY()↓
-◆Ｉ　ｆｏｌｌｏｗ　ｙｏｕ　ｈｅｒｅ　ｉｎ　Ｍａｇｉｃａｎｔ．@KEY()↓
-◆．．．Ｍｙ　ｎａｍｅ？@KEY()↓
-◆Ｌｅｔ’ｓ　ｓａｙ　Ｆｌｙｉｎｇ　Ｍａｎ．
+◆I am your courage.@KEY()↓
+◆I follow you here in Magicant.@KEY()↓
+◆...My name?@KEY()↓
+◆Let’s say Flying Man.
 @KEY()
-;jpn:◆わたしは　あなたの　ゆうき。@WI(20)↓
-;jpn:　あなたについて　ゆきます。@WI(30)↓
-;jpn:　‥‥‥なまえ？@KEY()↓
+;jpn:◆わたしは あなたの ゆうき。@WI(20)↓
+;jpn: あなたについて ゆきます。@WI(30)↓
+;jpn: ‥‥‥なまえ?@KEY()↓
 ;jpn:◆フライングマンとでも↓
-;jpn:　いっておきましょうか。@KEY()
+;jpn: いっておきましょうか。@KEY()
 』
 
 _MGKT_FLYINGMAN_2;フライングマン２
-◆Ｉ’ｌｌ　ｂｅ　ｙｏｕｒ　ｃｏｕｒａｇｅ．@KEY()↓
-◆Ｉ’ｌｌ　ｒｅｍａｉｎ　ｕｎｌｅｓｓ　ｙｏｕ　ｌｏｓｅ　ｙｏｕｒ　ｃｏｕｒａｇｅ．@KEY()↓
-◆Ｃａｌｌ　ｍｅ　Ｆｌｙｉｎｇ　Ｍａｎ　２．
+◆I’ll be your courage.@KEY()↓
+◆I’ll remain unless you lose your courage.@KEY()↓
+◆Call me Flying Man ２.
 @KEY()
-;jpn:◆わたしは　あなたの　ゆうき。@WI(20)↓
-;jpn:　あなたが　ゆうきを↓
-;jpn:　うしなわぬかぎり@KEY()↓
-;jpn:◆わたしは　うまれます。@KEY()↓
-;jpn:◆フライングマン２　とでも↓
-;jpn:　よんでください。@KEY()
+;jpn:◆わたしは あなたの ゆうき。@WI(20)↓
+;jpn: あなたが ゆうきを↓
+;jpn: うしなわぬかぎり@KEY()↓
+;jpn:◆わたしは うまれます。@KEY()↓
+;jpn:◆フライングマン２ とでも↓
+;jpn: よんでください。@KEY()
 』
 
 _MGKT_FLYINGMAN_3;フライングマン３
-◆Ｉ’ｍ　Ｆｌｙｉｎｇ　Ｍａｎ　３．@KEY()↓
-◆Ｙｏｕｒ　ｃｏｕｒａｇｅ　ｈａｓｎ’ｔ　ｄｉｅｄ　ｙｅｔ．@KEY()↓
-◆Ｌｅｔ’ｓ　ｇｏ！@KEY()
-;jpn:◆フライングマン３　です。@WI(20)↓
-;jpn:　あなたのゆうきは↓
-;jpn:　まだまだ　かれていない。@KEY()↓
-;jpn:◆いきましょう！@KEY()
+◆I’m Flying Man ３.@KEY()↓
+◆Your courage hasn’t died yet.@KEY()↓
+◆Let’s go!@KEY()
+;jpn:◆フライングマン３ です。@WI(20)↓
+;jpn: あなたのゆうきは↓
+;jpn: まだまだ かれていない。@KEY()↓
+;jpn:◆いきましょう!@KEY()
 』
 
 _MGKT_FLYINGMAN_4;帰ってきたフライングマン
-◆Ｉ’ｍ　ａｌｓｏ　ｙｏｕｒ　ｃｏｕｒａｇｅ．@KEY()↓
-◆Ｃａｌｌ　ｍｅ　Ｒｅｔｕｒｎ　ｏｆ　ｔｈｅ　Ｆｌｙｉｎｇ　Ｍａｎ！@KEY()↓
-◆．．．Ｈｏｗ’ｓ　ｔｈａｔ？@KEY()↓
-◆Ｈｏｗｅｖｅｒ．．．ｄｏｎ’ｔ　ｔｒｅａｔ　ｕｓ　ｌｉｋｅ　ｔｒａｓｈ．@KEY()
-;jpn:◆わたしも　あなたの　ゆうき。@WI(20)↓
-;jpn:　もしも　なを　よぶなら↓
-;jpn:　かえってきたフライングマン！@KEY()↓
-;jpn:◆‥‥とでも　よんでください。@WI(30)↓
-;jpn:　ただ‥‥@WI(15)あんまり　わたしたちを↓
-;jpn:　そまつに　あつかわないように。@KEY()
+◆I’m also your courage.@KEY()↓
+◆Call me Return of the Flying Man!@KEY()↓
+◆...How’s that?@KEY()↓
+◆However...don’t treat us like trash.@KEY()
+;jpn:◆わたしも あなたの ゆうき。@WI(20)↓
+;jpn: もしも なを よぶなら↓
+;jpn: かえってきたフライングマン!@KEY()↓
+;jpn:◆‥‥とでも よんでください。@WI(30)↓
+;jpn: ただ‥‥@WI(15)あんまり わたしたちを↓
+;jpn: そまつに あつかわないように。@KEY()
 』
 
 _MGKT_FLYINGMAN_5;さいごのフライングマン
-◆Ｏｆ　ｃｏｕｒｓｅ，　ｗｅ’ｒｅ　ｙｏｕｒ　ｃｏｕｒａｇｅ．@KEY()↓
-◆Ｂｕｔ　Ｉ　ｗａｒｎｅｄ　ｙｏｕ　ｎｏｔ　ｔｏ　ｔｒｅａｔ　ｕｓ　ｌｉｋｅ　ｔｒａｓｈ！@KEY()↓
-◆Ｄｉｄｎ’ｔ　ｙｏｕ　ｇｅｔ　ｉｔ？！@KEY()↓
-◆Ｔｈｉｓ　ｉｓｎ’ｔ　ｃｏｕｒａｇｅ，　ｉｔ’ｓ　ｄｅｓｐｅｒａｔｉｏｎ．@KEY()↓
-◆Ｉｆ　ｙｏ　ｄｏｎ’ｔ　ｕｎｄｅｒｓｔａｎｄ　”ｃｏｕｒａｇｅ，”　ｌｏｏｋ　ｉｔ　ｕｐ　ｉｎ　ｔｈｅ　ｄｉｃｔｉｏｎａｒｙ．@KEY()↓
-◆Ｏｋａｙ？@KEY()↓
-◆Ｍｙ　ｎａｍｅ’ｓ　Ｔｈｅ　Ｆｉｎａｌ　Ｆｌｙｉｎｇ　Ｍａｎ．@KEY()
-;jpn:◆むろん　わたしたちは↓
-;jpn:　あなたの　ゆうき　ですが↓
-;jpn:　そまつに　しないようにと@KEY()↓
-;jpn:◆ちゅうこくしたでしょう？！@WI(20)↓
-;jpn:　これでは　ゆうきではなく↓
-;jpn:　「ばんゆう」です。@KEY()↓
+◆Of course, we’re your courage.@KEY()↓
+◆But I warned you not to treat us like trash!@KEY()↓
+◆Didn’t you get it?!@KEY()↓
+◆This isn’t courage, it’s desperation.@KEY()↓
+◆If yo don’t understand ”courage,” look it up in the dictionary.@KEY()↓
+◆Okay?@KEY()↓
+◆My name’s The Final Flying Man.@KEY()
+;jpn:◆むろん わたしたちは↓
+;jpn: あなたの ゆうき ですが↓
+;jpn: そまつに しないようにと@KEY()↓
+;jpn:◆ちゅうこくしたでしょう?!@WI(20)↓
+;jpn: これでは ゆうきではなく↓
+;jpn: 「ばんゆう」です。@KEY()↓
 ;jpn:◆「ばんゆう」のいみが↓
-;jpn:　わからなかったら↓
-;jpn:　じしょを　ひいてください。@KEY()↓
+;jpn: わからなかったら↓
+;jpn: じしょを ひいてください。@KEY()↓
 ;jpn:◆いいですね。@KEY()↓
 ;jpn:◆わたしのなは@WI(15)↓
-;jpn:　さいごのフライングマン。@KEY()
+;jpn: さいごのフライングマン。@KEY()
 』
 
 MSG_MGKT_FLYINGMAN_ALREADY;
-◆Ｄｉｄ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｔａｌｋ　ｔｏ　ｍｅ？@KEY()↓
-◆Ｉ’ｍ　ｓｏｒｒｙ，　ｔｈｅｒｅ’ｓ　ｒｅａｌｌｙ　ｎｏｔ　ｍｕｃｈ　ｔｏ　ｓａｙ．．．
+◆Did you want to talk to me?@KEY()↓
+◆I’m sorry, there’s really not much to say...
 @KEYNP()
 
-;jpn:◆わたしと　なにか↓
-;jpn:　はなしが　したかったのですね。@KEY()↓
-;jpn:◆わたしは　あいにく↓
-;jpn:　わだいが　すくないもので‥‥@WI(20)↓
-;jpn:　もうしわけ　ありません。@KEYNP()
+;jpn:◆わたしと なにか↓
+;jpn: はなしが したかったのですね。@KEY()↓
+;jpn:◆わたしは あいにく↓
+;jpn: わだいが すくないもので‥‥@WI(20)↓
+;jpn: もうしわけ ありません。@KEYNP()
 』
 
 
@@ -183,11 +183,11 @@ _Q_FLY_END;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_PENDANT
 MSG_MGKT_PENDANT;
-;◆Ｈｅｙ，　@DSP_STS(STS_PC_NAME_NES)！
-;　　Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ？
+;◆Hey, @DSP_STS(STS_PC_NAME_NES)!
+;  What do you want?
 
-;jpn:◆やあ　@DSP_STS(STS_PC_NAME_NES)くん！↓
-;jpn:　ほしいものは　なんだね？@KEY()
+;jpn:◆やあ @DSP_STS(STS_PC_NAME_NES)くん!↓
+;jpn: ほしいものは なんだね?@KEY()
 ;@GOSUB(MSG_SHOP_MGKT_PENDANT)
 』
 
@@ -230,7 +230,7 @@ MSG_MGKT_PENDANT;
 
 ；----------------------------------------
 ;@Habitat:マジカント／ホテル／ホテル
-;@Person:マジｃ宿主
+;@Person:マジc宿主
 ;@Figure:マジカントのトリ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -239,51 +239,51 @@ MSG_MGKT_PENDANT;
 ;@Message:MSG_MGKT_C
 MSG_MGKT_C;
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_MGKT_C_AFTER)
-◆Ｐｌｅａｓｅ　ｒｅｓｔ．@KEY()↓
-◆Ｔｈｅ　ｄｒｅａｍ　ｙｏｕ’ｌｌ　ｈａｖｅ　ｈｅｒｅ　ｉｓ　ａ　ｄｒｅａｍ　ｗｉｔｈｉｎ　ａ　ｄｒｅａｍ．@KEY()↓
-◆Ｙｏｕｒ　ｈｅａｒｔ　ｋｎｏｗｓ　ｔｈｉｎｇｓ　ｙｏｕ　ａｒｅｎ’ｔ　ａｗａｒｅ　ｏｆ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｌｅｅｐ？↓
-<Ｙｅｓ>
-<Ｎｏ>
+◆Please rest.@KEY()↓
+◆The dream you’ll have here is a dream within a dream.@KEY()↓
+◆Your heart knows things you aren’t aware of.@KEY()↓
+◆Do you want to sleep?↓
+<Yes>
+<No>
 
-;jpn:◆ゆっくり　やすんでいっておくれ。↓
-;jpn:　ここでみるゆめは↓
-;jpn:　ゆめの　また　ゆめ。@KEY()↓
+;jpn:◆ゆっくり やすんでいっておくれ。↓
+;jpn: ここでみるゆめは↓
+;jpn: ゆめの また ゆめ。@KEY()↓
 ;jpn:◆じぶんのこころは↓
-;jpn:　じぶんでも　しらないことを↓
-;jpn:　しってるんだよ。@KEY()↓
-;jpn:◆ねむるかい？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn: じぶんでも しらないことを↓
+;jpn: しってるんだよ。@KEY()↓
+;jpn:◆ねむるかい?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MGKT_C_YES,_MGKT_C_NO)
 
 _MGKT_C_NO;
-◆Ｏｋａｙ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｗａｌｋ　ｏｕｔｓｉｄｅ，　ｂｅｗａｒｅ　ｏｆ　ｔｈｅ　ｍｏｎｓｔｅｒｓ．
+◆Okay.@KEY()↓
+◆If you walk outside, beware of the monsters.
 @KEYNP()
 ;jpn:◆そうかい。@WI(20)↓
-;jpn:　そとをあるくなら　ばけものに↓
-;jpn:　きをつけておくれ。@KEYNP()
+;jpn: そとをあるくなら ばけものに↓
+;jpn: きをつけておくれ。@KEYNP()
 』
 
 _MGKT_C_YES;
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_YADOYA_MGKT)
 @!
 
 _MGKT_C_AFTER;
-◆Ｉｆ　ｙｏｕ　ｗａｌｋ　ｏｕｔｓｉｄｅ，　ｂｅｗａｒｅ　ｏｆ　ｔｈｅ　ｍｏｎｓｔｅｒｓ．
+◆If you walk outside, beware of the monsters.
 @KEYNP()
 
-;jpn:◆そとをあるくなら　ばけものに↓
-;jpn:　きをつけておくれ。@KEYNP()
+;jpn:◆そとをあるくなら ばけものに↓
+;jpn: きをつけておくれ。@KEYNP()
 @!
 
 
 ；----------------------------------------
 ;@Habitat:マジカント／マイホーム／部屋１
-;@Person:マジｅママ
+;@Person:マジeママ
 ;@Figure:ネスのママ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -291,24 +291,24 @@ _MGKT_C_AFTER;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_E
 MSG_MGKT_E;
-◆Ｏｈ　@DSP_NAME(PC_NESS)，　ａｒｅ　ｙｏｕ　ｔｉｒｅｄ　ｆｒｏｍ　ｔｒａｖｅｌｉｎｇ　ｏｎ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ？@KEY()↓
-<Ｙｅｓ>
-<Ｎｏ>
-;jpn:◆まぁ　@DSP_STS(STS_PC_NAME_NES)↓
-;jpn:　ぼうけんのたびに　つかれたの？↓
-;jpn:　　<はい>　　<いいえ>
+◆Oh @DSP_NAME(PC_NESS), are you tired from traveling on your adventure?@KEY()↓
+<Yes>
+<No>
+;jpn:◆まぁ @DSP_STS(STS_PC_NAME_NES)↓
+;jpn: ぼうけんのたびに つかれたの?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_MGKT_E_YES,_MGKT_E_NO)
 
 _MGKT_E_NO;
-◆Ｙｅａｈ，　ｔｈａｔ’ｓ　ｒｉｇｈｔ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ’ｔ　ｅｖｅｎ　ｔｈｉｎｋ　ａｂｏｕｔ　ｂｅｉｎｇ　ｔｉｒｅｄ　ａｔ　ａ　ｔｉｍｅ　ｌｉｋｅ　ｔｈｉｓ．@KEY()↓
-◆Ｂｅ　ｓｔｒｏｎｇ！
+◆Yeah, that’s right.@KEY()↓
+◆You can’t even think about being tired at a time like this.@KEY()↓
+◆Be strong!
 @KEY()
 ;jpn:◆そうね。つかれたなんて↓
-;jpn:　いってられないわね。@WI(20)↓
-;jpn:　しっかり！@WI(20)　@DSP_STS(STS_PC_NAME_NES)。@KEY()
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
+;jpn: いってられないわね。@WI(20)↓
+;jpn: しっかり!@WI(20) @DSP_STS(STS_PC_NAME_NES)。@KEY()
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
 ;@GOSUB(MSG_SUB_ALLHEAL_POWR)
 ;@GOSUB(MSG_GLOBAL_MYHOME)
 ;@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
@@ -317,13 +317,13 @@ _MGKT_E_NO;
 』
 
 _MGKT_E_YES;
-◆Ｉｆ　ｙｏｕ　ｗｉｓｈ，　ｙｏｕ　ｃａｎ　ｓｔａｙ　ｈｅｒｅ　ｆｏｒｅｖｅｒ．@KEY()↓
-◆Ｉ’ｌｌ　ｍａｋｅ　ｓｏｍｅ　@DSP_STS(STS_PARTY_FAVORITE_FOODS)　ｆｏｒ　ｙｏｕ．@KEY()
+◆If you wish, you can stay here forever.@KEY()↓
+◆I’ll make some @DSP_STS(STS_PARTY_FAVORITE_FOODS) for you.@KEY()
 
-;jpn:◆それなら　いつまでも↓
-;jpn:　ここにいていいのよ。@WI(20)↓
-;jpn:　@DSP_STS(STS_PARTY_FAVORITE_FOODS)も　つくるわ。@KEY()
-;体力回復（暗転ワープあり、ＢＧＭ２、夜鍋あり、セリフ替えなし）
+;jpn:◆それなら いつまでも↓
+;jpn: ここにいていいのよ。@WI(20)↓
+;jpn: @DSP_STS(STS_PARTY_FAVORITE_FOODS)も つくるわ。@KEY()
+;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
 @GOSUB(MSG_SUB_ALLHEAL_POWR)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
@@ -333,7 +333,7 @@ _MGKT_E_YES;
 
 
 ;@Habitat:マジカント／マイホーム／部屋２
-;@Person:マジｆ妹トレーシー
+;@Person:マジf妹トレーシー
 ;@Figure:トレーシー
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -341,25 +341,25 @@ _MGKT_E_YES;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_F
 MSG_MGKT_F;
-◆Ｂｒｏｔｈｅｒ　@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｔｈｅ　”Ｓｅａ　ｏｆ　Ｅｄｅｎ”　ｉｓ　ａｔ　ｔｈｅ　ｅｎｄ　ｏｆ　Ｍａｇｉｃａｎｔ．@KEY()↓
-◆Ｏｔｈｅｒ　ｐｅｏｐｌｅ　ｃａｎ’ｔ　ｇｅｔ　ｃｌｏｓｅ　ｔｏ　ｉｔ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｓｔｒａｎｇｅ　ｐｌａｃｅ．@KEY()↓
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)おにいちゃん！@WI(20)↓
-;jpn:　マジカントの　ずっとおくに↓
-;jpn:　「エデンのうみ」があるわよ。@KEY()↓
-;jpn:◆ほかのひとには　ちかよれない↓
-;jpn:　ふしぎなばしょなのよ。@KEY()↓
+◆Brother @DSP_NAME(PC_NESS)!@KEY()↓
+◆The ”Sea of Eden” is at the end of Magicant.@KEY()↓
+◆Other people can’t get close to it.@KEY()↓
+◆It’s a strange place.@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)おにいちゃん!@WI(20)↓
+;jpn: マジカントの ずっとおくに↓
+;jpn: 「エデンのうみ」があるわよ。@KEY()↓
+;jpn:◆ほかのひとには ちかよれない↓
+;jpn: ふしぎなばしょなのよ。@KEY()↓
 @SET_PALLETSET(5,0,60);ノーマル
-◆Ｉｓ　ｔｈｅｒｅ　ａｎｙｔｈｉｎｇ　Ｉ　ｃａｎ　ｄｏ　ｆｏｒ　ｙｏｕ？
+◆Is there anything I can do for you?
 @KEY()↓
 ;jpn:◆わたしに↓
-;jpn:　してあげられることは　ある？@KEY()↓
-@GOTO(MSG_TRACY_GLOBAL_START);汎用のトレーシー呼び出し（三浦）
+;jpn: してあげられることは ある?@KEY()↓
+@GOTO(MSG_TRACY_GLOBAL_START);汎用のトレーシー呼び出し(三浦)
 
 
 ;@Habitat:マジカント／マイホーム／部屋２
-;@Person:マジｉ
+;@Person:マジi
 ;@Figure:ネスの犬
 ;@AppearanceKey:0
 ;@ActionScript:◆中範囲うろつき
@@ -367,21 +367,21 @@ MSG_MGKT_F;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_I
 MSG_MGKT_I;
-◆Ｗｈｉｍｐｅｒ．．．ｗｈｉｎｅ．@KEY()↓
-◆（Ｉ　ｌｉｖｅｄ　ｉｎ　ｙｏｕｒ　ｈｏｕｓｅ　ｂｅｆｏｒｅ　ｙｏｕ　ｗｅｒｅ　ｂｏｒｎ．．．@KEY()↓
-◆@DSP_NAME(PC_NESS)　ｕｓｅｄ　ｔｏ　ｂｅ　ｓｍａｌｌ　ａｎｄ　ｗｅａｋ．）
+◆Whimper...whine.@KEY()↓
+◆(I lived in your house before you were born...@KEY()↓
+◆@DSP_NAME(PC_NESS) used to be small and weak.)
 @KEYNP()
-;jpn:◆クン　クーン。↓
-;jpn:　（ぼくは　きみが↓
-;jpn:　うまれるまえから@KEY()↓
-;jpn:◆きみの　うちに　いたんだよ。↓
-;jpn:　むかしは　@DSP_STS(STS_PC_NAME_NES)って↓
-;jpn:　もっと　よわむしだったんだ）@KEYNP()
+;jpn:◆クン クーン。↓
+;jpn: (ぼくは きみが↓
+;jpn: うまれるまえから@KEY()↓
+;jpn:◆きみの うちに いたんだよ。↓
+;jpn: むかしは @DSP_STS(STS_PC_NAME_NES)って↓
+;jpn: もっと よわむしだったんだ)@KEYNP()
 』
 
 ；----------------------------------------
-;@Habitat:マジカント／電話ＣＤの部屋／電話ＣＤの部屋
-;@Person:鳥Ａ
+;@Habitat:マジカント／電話CDの部屋／電話CDの部屋
+;@Person:鳥A
 ;@Figure:ヒヨコ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -389,29 +389,29 @@ MSG_MGKT_I;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_BIRD_A
 MSG_MGKT_BIRD_A;
-◆Ｐｉ　ｐｉ　ｐｉ　ｐｉ　ｐｉ@KEY()↓
-◆（Ｉ’ｍ　ｊｕｓｔ　ａ　ｆａｉｎｔ　ｍｅｍｏｒｙ．@KEY()↓
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｕｓｕａｌｌｙ　ｒｅｍｅｍｂｅｒ　ｍｅ．@KEY()↓
-◆Ｂｕｔ　ｙｏｕ’ｖｅ　ｈｅａｒｄ　ｍｙ　ｓｏｎｇ　ｉｎ　ｔｈｅ　ｂａｃｋ　ｏｆ　ｙｏｕｒ　ｍｉｎｄ．）
+◆Pi pi pi pi pi@KEY()↓
+◆(I’m just a faint memory.@KEY()↓
+◆You don’t usually remember me.@KEY()↓
+◆But you’ve heard my song in the back of your mind.)
 @KEYNP()
 ;jpn:◆ピピピピピ↓
-;jpn:　（わたしは　あなたの↓
-;jpn:　おもいでの　かたすみにいる@KEY()↓
-;jpn:◆ふだんは　おもいださないけど↓
-;jpn:　わたしのさえずりを↓
-;jpn:　いつも　きいていたのよ）@KEYNP()
+;jpn: (わたしは あなたの↓
+;jpn: おもいでの かたすみにいる@KEY()↓
+;jpn:◆ふだんは おもいださないけど↓
+;jpn: わたしのさえずりを↓
+;jpn: いつも きいていたのよ)@KEYNP()
 』
 
-;@Habitat:マジカント／電話ＣＤの部屋／電話ＣＤの部屋
+;@Habitat:マジカント／電話CDの部屋／電話CDの部屋
 ;@Person:キャッシュディスペンサ
-;@Figure:ＣＤ
+;@Figure:CD
 ;@AppearanceKey:0
 ;@ActionScript:◆固定
 ;@GoodsMessage:MSG_GLOBAL_CD_RECEIVE
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-;@Habitat:マジカント／電話ＣＤの部屋／電話ＣＤの部屋
+;@Habitat:マジカント／電話CDの部屋／電話CDの部屋
 ;@Person:公衆電話
 ;@Figure:電話ボックス
 ;@AppearanceKey:0
@@ -422,7 +422,7 @@ MSG_MGKT_BIRD_A;
 
 ；----------------------------------------
 ;@Habitat:マジカント／フィールド／初めて会う所
-;@Person:マジａ
+;@Person:マジa
 ;@Figure:マジカントの人
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -430,19 +430,19 @@ MSG_MGKT_BIRD_A;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_A
 MSG_MGKT_A;
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｒｅａｌｍ　ｏｆ　Ｍａｇｉｃａｎｔ，　ｗｈｉｃｈ　ｙｏｕｒ　ｍｉｎｄ　ｃｒｅａｔｅｄ．@KEY()↓
-◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｅｘｐｌｏｒｅ　ｙｏｕｒ　ｍｉｎｄ．@KEY()↓
-◆Ｔａｋｅ　ｙｏｕｒ　ｔｉｍｅ，　@DSP_NAME(PC_NESS)．
+◆This is the realm of Magicant, which your mind created.@KEY()↓
+◆Why don’t you explore your mind.@KEY()↓
+◆Take your time, @DSP_NAME(PC_NESS).
 @KEYNP()
-;jpn:◆ここは　マジカントのくに。↓
-;jpn:　きみのこころが　うみだしたくに。@KEY()↓
-;jpn:◆ゆっくりと　じぶんのこころを↓
-;jpn:　たんけんしてみなよ　@DSP_STS(STS_PC_NAME_NES)。@KEYNP()
+;jpn:◆ここは マジカントのくに。↓
+;jpn: きみのこころが うみだしたくに。@KEY()↓
+;jpn:◆ゆっくりと じぶんのこころを↓
+;jpn: たんけんしてみなよ @DSP_STS(STS_PC_NAME_NES)。@KEYNP()
 @SET_PALLETSET(31,5,60);黄色黒
 』
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:マジｄ幼いネス
+;@Person:マジd幼いネス
 ;@Figure:キャップ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -450,24 +450,24 @@ MSG_MGKT_A;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_D
 MSG_MGKT_D;
-◆Ｉｔ’ｓ　ｍｅ．．．@KEY()↓
-◆Ｉ’ｍ　ｙｏｕ　ｗｈｅｎ　ｙｏｕ　ｗｅｒｅ　ｙｏｕｎｇｅｒ．@KEY()↓
-◆Ｈｅｙ，　ｌｅｔ’ｓ　ｐｌａｙ　ｂａｌｌ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｐｒｅｆｅｒ　ｒｅａｄｉｎｇ　ｃｏｍｉｃｓ　ｏｒ　ｐｌａｙｉｎｇ　ｇａｍｅｓ？@KEY()↓
-◆Ｗｈａｔ？@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｂｕｓｙ？．．．
+◆It’s me...@KEY()↓
+◆I’m you when you were younger.@KEY()↓
+◆Hey, let’s play ball.@KEY()↓
+◆Do you prefer reading comics or playing games?@KEY()↓
+◆What?@KEY()↓
+◆You’re busy?...
 @KEYNP()
-;jpn:◆ぼく　きみのちいさいころの‥‥↓
-;jpn:　ぼくだよ。↓
-;jpn:　ねぇ　キャッチボールしようよ。@KEY()↓
-;jpn:◆それとも　まんがをよんだり↓
-;jpn:　ゲームをしたりするかい？↓
-;jpn:　えっ？　いそがしいのかぁ‥‥。@KEYNP()
+;jpn:◆ぼく きみのちいさいころの‥‥↓
+;jpn: ぼくだよ。↓
+;jpn: ねぇ キャッチボールしようよ。@KEY()↓
+;jpn:◆それとも まんがをよんだり↓
+;jpn: ゲームをしたりするかい?↓
+;jpn: えっ? いそがしいのかぁ‥‥。@KEYNP()
 @SET_PALLETSET(31,3,60);オレンジ
 』
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:マジｇ敵キャラ
+;@Person:マジg敵キャラ
 ;@Figure:ゾンビ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -475,17 +475,17 @@ MSG_MGKT_D;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_G
 MSG_MGKT_G;
-◆Ｙｏｕ　ｋｉｃｋｅｄ　ｍｙ　ｂｕｔｔ　ｂａｄｌｙ．．．@KEY()↓
-◆Ｉ　ｗｏｎ’ｔ　ｆｏｒｇｅｔ！
+◆You kicked my butt badly...@KEY()↓
+◆I won’t forget!
 @KEYNP()
-;jpn:◆おまえには　ずいぶん↓
-;jpn:　いためつけられたけど‥‥↓
-;jpn:　@WI(20)‥‥おぼえてるぜ！@KEYNP()
+;jpn:◆おまえには ずいぶん↓
+;jpn: いためつけられたけど‥‥↓
+;jpn: @WI(20)‥‥おぼえてるぜ!@KEYNP()
 @SET_PALLETSET(31,2,60);こげ茶黒
-』　　　　　　　　
+』        
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:マジｈ敵キャラ
+;@Person:マジh敵キャラ
 ;@Figure:大ムッド
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -493,17 +493,17 @@ MSG_MGKT_G;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_H
 MSG_MGKT_H;
-◆Ｙｏｕ　ｄｅｓｔｒｏｙｅｄ　ｍｙ　ｐｒｉｄｅ．．．@KEY()↓
-◆ＡＡａａａａｒｇｈ！
+◆You destroyed my pride...@KEY()↓
+◆AAaaaargh!
 @KEYNP()
-;jpn:◆おれのプライドは　ズタズタだ。↓
-;jpn:　おまえに　やられてからな‥‥。↓
-;jpn:　チェッ。@KEYNP()
+;jpn:◆おれのプライドは ズタズタだ。↓
+;jpn: おまえに やられてからな‥‥。↓
+;jpn: チェッ。@KEYNP()
 @SET_PALLETSET(31,6,60);ピンク青
 』
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:マジｊ敵キャラ
+;@Person:マジj敵キャラ
 ;@Figure:半魚人
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -512,16 +512,16 @@ MSG_MGKT_H;
 ;@Message:MSG_MGKT_J
 MSG_MGKT_J;
 ◆@DSP_NAME(PC_NESS)@KEY()↓
-◆Ｉ　ｓｔｉｌｌ　ｆｅｅｌ　ｐａｉｎ　ｗｈｅｒｅ　ｙｏｕ　ｗｏｕｎｄｅｄ　ｍｅ．
+◆I still feel pain where you wounded me.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)さん↓
-;jpn:　あんたに　やられた　キズが↓
-;jpn:　いまでも　シクシクいたみますぜ。@KEYNP()
+;jpn: あんたに やられた キズが↓
+;jpn: いまでも シクシクいたみますぜ。@KEYNP()
 @SET_PALLETSET(31,6,60);ピンク青
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ1
+;@Person:マジk1
 ;@Figure:ヘルメット
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -530,15 +530,15 @@ MSG_MGKT_J;
 ;@Message:MSG_MGKT_K_1
 MSG_MGKT_K_1;
 ;幼稚園児の列
-◆Ｗａａａａ，　@DSP_NAME(PC_NESS)，　ｌｅｔ’ｓ　ｐｌａｙ．
+◆Waaaa, @DSP_NAME(PC_NESS), let’s play.
 @KEYNP()
 ;jpn:◆ワイワイ↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)ちゃん　あそぼう。@KEYNP()
+;jpn: @DSP_STS(STS_PC_NAME_NES)ちゃん あそぼう。@KEYNP()
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ2
+;@Person:マジk2
 ;@Figure:ハット
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -546,16 +546,16 @@ MSG_MGKT_K_1;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_K_2
 MSG_MGKT_K_2;
-◆Ｇｙａａａ．@KEY()↓
-◆Ｌｏｎｇ　ｔｉｍｅ　ｎｏ　ｓｅｅ　@DSP_NAME(PC_NESS)！
+◆Gyaaa.@KEY()↓
+◆Long time no see @DSP_NAME(PC_NESS)!
 @KEYNP()
 ;jpn:◆ガヤガヤ↓
-;jpn:　ひさしぶりだね　@DSP_STS(STS_PC_NAME_NES)！@KEYNP()
+;jpn: ひさしぶりだね @DSP_STS(STS_PC_NAME_NES)!@KEYNP()
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ3
+;@Person:マジk3
 ;@Figure:ダンゴ
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -563,17 +563,17 @@ MSG_MGKT_K_2;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_K_3
 MSG_MGKT_K_3;0
-◆Ｌａ　ｌａｌａｌａ．@KEY()↓
-◆Ｍｙ　ｎａｍｅ’ｓ　Ｎｉｃｏ．．．Ｌｅｔ’ｓ　ｒｕｎ　ａｎｄ　ｓｉｎｇ　ａｎｄ　ｄａｎｃｅ！
+◆La lalala.@KEY()↓
+◆My name’s Nico...Let’s run and sing and dance!
 @KEYNP()
 ;jpn:◆ランララン↓
-;jpn:　いっしょに　うたを↓
-;jpn:　うたいましょ！@KEYNP()
+;jpn: いっしょに うたを↓
+;jpn: うたいましょ!@KEYNP()
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ4
+;@Person:マジk4
 ;@Figure:ピッキー
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -581,17 +581,17 @@ MSG_MGKT_K_3;0
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_K_4
 MSG_MGKT_K_4;
-◆@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｐｏｋｅｙ　ｔｏｏｋ　ｍｙ　ｓｎａｃｋ！
+◆@DSP_NAME(PC_NESS)!@KEY()↓
+◆Pokey took my snack!
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)ちゃーん↓
-;jpn:　ポーキーにいちゃんに↓
-;jpn:　おかしを　とられたよーん。@KEYNP()
+;jpn: ポーキーにいちゃんに↓
+;jpn: おかしを とられたよーん。@KEYNP()
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ5
+;@Person:マジk5
 ;@Figure:リボン
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -599,14 +599,14 @@ MSG_MGKT_K_4;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_K_5
 MSG_MGKT_K_5;
-◆Ｆｒｅｓｈ！
+◆Fresh!
 @KEYNP()
-;jpn:◆エッチー！@KEYNP()
+;jpn:◆エッチー!@KEYNP()
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ6
+;@Person:マジk6
 ;@Figure:さる
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -614,14 +614,14 @@ MSG_MGKT_K_5;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_K_6
 MSG_MGKT_K_6;
-◆Ｋｙａ　Ｋｙａ．
+◆Kya Kya.
 @KEYNP()
-;jpn:◆キャッ　キャ@KEYNP()
+;jpn:◆キャッ キャ@KEYNP()
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ7
+;@Person:マジk7
 ;@Figure:インディー
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -629,17 +629,17 @@ MSG_MGKT_K_6;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_K_7
 MSG_MGKT_K_7;
-◆Ｐｅａｃｅ！@KEY()↓
-◆Ｗｅ　ｈａｖｅｎ’ｔ　ｐｌａｙｅｄ　ｔｏｇｅｔｈｅｒ　ｌａｔｅｌｙ．
+◆Peace!@KEY()↓
+◆We haven’t played together lately.
 @KEYNP()
-;jpn:◆ピース！↓
-;jpn:　さいきん　いっしょに↓
-;jpn:　あそんでないな。@KEYNP()
+;jpn:◆ピース!↓
+;jpn: さいきん いっしょに↓
+;jpn: あそんでないな。@KEYNP()
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／団体幼児
-;@Person:マジｋ8
+;@Person:マジk8
 ;@Figure:マジカントの人
 ;@AppearanceKey:0
 ;@ActionScript:◆列になってうろつき
@@ -647,17 +647,17 @@ MSG_MGKT_K_7;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_K_8
 MSG_MGKT_K_8;
-◆Ｉ’ｄ　ｌｉｋｅ　ｙｏｕ　ｔｏ　ｔａｋｅ　ｙｏｕｒ　ｔｉｍｅ，@KEY()↓
-◆’ｃａｕｓｅ　ｔｈｉｓ　ｃｏｕｎｔｒｙ　ｗｉｌｌ　ｄｉｓａｐｐｅａｒ　ｗｈｅｎ　ｙｏｕ　ｗａｋｅ　ｕｐ．
+◆I’d like you to take your time,@KEY()↓
+◆’cause this country will disappear when you wake up.
 @KEYNP()
-;jpn:◆ゆっくりしてけと　いいたいけれど↓
-;jpn:　このくには　おまえが　めざめたら↓
-;jpn:　きえちゃうんだよ。@KEYNP()
+;jpn:◆ゆっくりしてけと いいたいけれど↓
+;jpn: このくには おまえが めざめたら↓
+;jpn: きえちゃうんだよ。@KEYNP()
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:マジｌネス自身
+;@Person:マジlネス自身
 ;@Figure:ネス
 ;@AppearanceKey:0
 ;@ActionScript:◆その場でうろうろ
@@ -666,11 +666,11 @@ MSG_MGKT_K_8;
 ;@Message:MSG_MGKT_L
 MSG_MGKT_L;
 @CHKFGOTO(FLG_MGKT_GETITEM_CAP,_MGKT_L_LATER)
-◆Ｈｅｙ　ｍｅ！@KEY()↓
-◆Ｉ　ｆｏｕｎｄ　ｍｙ　ｃａｐ　ｔｈａｔ　ｙｏｕ　ｌｏｓｔ．@KEY()↓
-;jpn:◆やぁ　ぼく！↓
-;jpn:　ぼくがむかしなくした↓
-;jpn:　あのぼうしが　みつかったよ！@KEY()
+◆Hey me!@KEY()↓
+◆I found my cap that you lost.@KEY()↓
+;jpn:◆やぁ ぼく!↓
+;jpn: ぼくがむかしなくした↓
+;jpn: あのぼうしが みつかったよ!@KEY()
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_MGKT_L_ITEMFULL)
 @GOODSIN_PLAYER(0,GDS_EQUIP_CAP_NANAIRO)
@@ -681,28 +681,28 @@ MSG_MGKT_L;
 
 _MGKT_L_ITEMFULL;
 ←
-◆Ｉ’ｍ　ｓｏ　ｓｔｕｐｉｄ！@KEY()↓
-◆Ｔｈｅｒｅ’ｓ　ｌｏｔｓ　ｏｆ　ｊｕｎｋ　ｉｎ　ｍｙ　ｂａｃｋｐａｃｋ　ａｔ　ａ　ｔｉｍｅ　ｌｉｋｅ　ｔｈｉｓ．@KEY()↓
-◆Ｗｈｙ　ｄｏｎ’ｔ　Ｉ　ｇｅｔ　ｒｉｄ　ｏｆ　ｓｏｍｅｔｈｉｎｇ　Ｉ　ｄｏｎ’ｔ　ｕｓｅ．
+◆I’m so stupid!@KEY()↓
+◆There’s lots of junk in my backpack at a time like this.@KEY()↓
+◆Why don’t I get rid of something I don’t use.
 @KEYNP()
-;jpn:◆おまぬけな　ぼく！↓
-;jpn:　こんな　だいじなときに↓
-;jpn:　つまらないにもつが　いっぱい！@KEY()↓
-;jpn:◆なにか　すてるか　つかうか↓
-;jpn:　してこなきゃ↓
-;jpn:　だめだよ。@KEYNP()
+;jpn:◆おまぬけな ぼく!↓
+;jpn: こんな だいじなときに↓
+;jpn: つまらないにもつが いっぱい!@KEY()↓
+;jpn:◆なにか すてるか つかうか↓
+;jpn: してこなきゃ↓
+;jpn: だめだよ。@KEYNP()
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
 _MGKT_L_LATER;
-◆Ｈｅｙ　ｍｅ！
+◆Hey me!
 @KEYNP()
-;jpn:◆やぁ　ぼく！@KEYNP()
+;jpn:◆やぁ ぼく!@KEYNP()
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:鳥Ｂ
+;@Person:鳥B
 ;@Figure:ヒヨコ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -710,12 +710,12 @@ _MGKT_L_LATER;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_BIRD_B
 MSG_MGKT_BIRD_B;
-◆Ｃｈｉ　ｃｈｉ　ｃｈｉ　ｃｈｉ　ｃｈｉ@KEY()↓
-◆（Ｏｎｅｔｔ　ｗａｓ　ａ　ｑｕｉｅｔ，　ｓｍａｌｌ　ｔｏｗｎ，　ｗａｓｎ’ｔ　ｉｔ？）
+◆Chi chi chi chi chi@KEY()↓
+◆(Onett was a quiet, small town, wasn’t it?)
 @KEYNP()
 ;jpn:◆チチチチチ@WI(20)↓
-;jpn:　（オネットは↓
-;jpn:　おだやかな　まちだったわね）@KEYNP()
+;jpn: (オネットは↓
+;jpn: おだやかな まちだったわね)@KEYNP()
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
@@ -729,12 +729,12 @@ MSG_MGKT_BIRD_B;
 ;@Message:SG_MGKT_FLOWER
 MSG_MGKT_FLOWER;
 ;複数配置して賑やかにしたい
-◆Ｌｏｏｋ　ａｔ　ｔｈｅ　ｓｕｎ．@KEY()↓
-◆Ｆａｃｅ　ｔｈｅ　ｓｕｎ　ａｎｄ　ｓｍｉｌｅ．．．
+◆Look at the sun.@KEY()↓
+◆Face the sun and smile...
 @KEYNP()
-;jpn:◆音おひさまに　むかおう↓
-;jpn:　おひさまに　かおを　むけて↓
-;jpn:　音えがおを　つくろう　音@KEYNP()
+;jpn:◆音おひさまに むかおう↓
+;jpn: おひさまに かおを むけて↓
+;jpn: 音えがおを つくろう 音@KEYNP()
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
@@ -747,12 +747,12 @@ MSG_MGKT_FLOWER;
 ;@CheckMessage:MSG_MGKT_TOMB1
 ;@Message:0
 MSG_MGKT_TOMB1;
-◆@DSP_NAME(PC_NESS)’ｓ　ｃｏｕｒａｇｅ　ｉｓ　ｒｅｓｔｉｎｇ　ｈｅｒｅ．@KEY()↓
-◆Ｈｅ　ｆｏｕｇｈｔ　ｗｅｌｌ　ａｎｄ　ｄｉｅｄ．
+◆@DSP_NAME(PC_NESS)’s courage is resting here.@KEY()↓
+◆He fought well and died.
 @KEYNP()
-;jpn:◆ここに　ねむるは↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)の　ゆうき。↓
-;jpn:　よくたたかい　きずつきたおれた。@KEYNP()
+;jpn:◆ここに ねむるは↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)の ゆうき。↓
+;jpn: よくたたかい きずつきたおれた。@KEYNP()
 』
 
 ;@Habitat:マジカント／フィールド／フライング家の前
@@ -764,15 +764,15 @@ MSG_MGKT_TOMB1;
 ;@CheckMessage:MSG_MGKT_TOMB2
 ;@Message:0
 MSG_MGKT_TOMB2;
-◆Ａｎｏｔｈｅｒ　ｏｎｅ　ｏｆ　@DSP_NAME(PC_NESS)’ｓ　ｃｏｕｒａｇｅ　ｉｓ　ｒｅｓｔｉｎｇ　ｈｅｒｅ．@KEY()↓
-◆Ｈｅ　ｄａｍａｇｅｄ　ｅｖｉｌ　ｔｅｒｒｉｂｌｙ，　ａｎｄ　ｆｉｎａｌｌｙ　ｄｉｅｄ．
+◆Another one of @DSP_NAME(PC_NESS)’s courage is resting here.@KEY()↓
+◆He damaged evil terribly, and finally died.
 @KEYNP()
 
-;jpn:◆ここに　ねむるは↓
-;jpn:　さらなる　@DSP_STS(STS_PC_NAME_NES)の　ゆうき。@KEY()↓
+;jpn:◆ここに ねむるは↓
+;jpn: さらなる @DSP_STS(STS_PC_NAME_NES)の ゆうき。@KEY()↓
 ;jpn:◆じゃあくなるものに↓
-;jpn:　おおきな　だげきをあたえ↓
-;jpn:　ついに　たおれた。@KEYNP()
+;jpn: おおきな だげきをあたえ↓
+;jpn: ついに たおれた。@KEYNP()
 』
 
 ;@Habitat:マジカント／フィールド／フライング家の前
@@ -784,12 +784,12 @@ MSG_MGKT_TOMB2;
 ;@CheckMessage:MSG_MGKT_TOMB3
 ;@Message:0
 MSG_MGKT_TOMB3;
-◆Ｈｅｒｅ　ｈｅ　ｒｅｓｔｓ．．．@KEY()↓
-◆Ｉ　ｄｉｄｎ’ｔ　ｈａｖｅ　ｔｉｍｅ　ｔｏ　ｈａｖｅ　ｈｉｓ　ｎａｍｅ　ｃｈｉｓｅｌｅｄ　ｉｎｔｏ　ｔｈｅ　ｔｏｍｂｓｔｏｎｅ．
+◆Here he rests...@KEY()↓
+◆I didn’t have time to have his name chiseled into the tombstone.
 @KEYNP()
-;jpn:◆ここに　ねむるは‥‥↓
-;jpn:　いそがしくて　はかにもじを↓
-;jpn:　きざむひまもなかった。@KEYNP()
+;jpn:◆ここに ねむるは‥‥↓
+;jpn: いそがしくて はかにもじを↓
+;jpn: きざむひまもなかった。@KEYNP()
 』
 
 ;@Habitat:マジカント／フィールド／フライング家の前
@@ -801,9 +801,9 @@ MSG_MGKT_TOMB3;
 ;@CheckMessage:MSG_MGKT_TOMB4
 ;@Message:0
 MSG_MGKT_TOMB4;
-◆Ｓｏｍｅｏｎｅ’ｓ　ｔｏｍｂｓｔｏｎｅ．
+◆Someone’s tombstone.
 @KEYNP()
-;jpn:◆だれかの　はか。@KEYNP()
+;jpn:◆だれかの はか。@KEYNP()
 』
 
 ;@Habitat:マジカント／フィールド／フライング家の前
@@ -815,7 +815,7 @@ MSG_MGKT_TOMB4;
 ;@CheckMessageMSG_MGKT_TOMB5
 ;@Message:0
 MSG_MGKT_TOMB5;
-◆Ｔｏｍｂｓｔｏｎｅ．
+◆Tombstone.
 @KEYNP()
 ;jpn:◆はか。@KEYNP()
 @SETF(FLG_MGKT_TOMB6)
@@ -830,18 +830,18 @@ MSG_MGKT_TOMB5;
 ;@CheckMessage:MSG_MGKT_TOMB6
 ;@Message:0
 MSG_MGKT_TOMB6;
-◆Ｔｈｉｓ　ｉｓ　Ｂｕｚｚ　Ｂｕｚｚ’ｓ　ｔｏｍｂｓｔｏｎｅ．@KEY()↓
-◆Ｈｅ　ａｐｐｅａｒｅｄ　ｅａｒｌｉｅｒ　ｉｎ　ｔｈｅ　ｇａｍｅ　ａｎｄ　ｇａｖｅ　ｕｐ　ｔｈｅ　ｇｈｏｓｔ@KEY()↓
-◆ｂｅｆｏｒｅ　ｈｅ　ａｃｈｉｅｖｅｄ　ｈｉｓ　ｇｏａｌ．
+◆This is Buzz Buzz’s tombstone.@KEY()↓
+◆He appeared earlier in the game and gave up the ghost@KEY()↓
+◆before he achieved his goal.
 @KEYNP()
-;jpn:◆ゲームのはじめに　とうじょうして↓
-;jpn:　こころざし　なかばにして↓
-;jpn:　たおれた　ブンブーンのはか。@KEYNP()
+;jpn:◆ゲームのはじめに とうじょうして↓
+;jpn: こころざし なかばにして↓
+;jpn: たおれた ブンブーンのはか。@KEYNP()
 』
 
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:老人Ａ
+;@Person:老人A
 ;@Figure:マジカントの老人
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止まったまま
@@ -849,27 +849,27 @@ MSG_MGKT_TOMB6;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_OLDMAN_A
 MSG_MGKT_OLDMAN_A;
-◆Ｔｈｅ　Ｓｅａ　ｏｆ　Ｅｄｅｎ　ｉｓ　ｆｉｌｌｅｄ　ｗｉｔｈ　ｕｌｔｉｍａｔｅ　ｉｎｔｅｌｌｉｇｅｎｃｅ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ’ｔ　ｇｏ　ｔｈｅｒｅ　ｕｎｌｅｓｓ　ｙｏｕ’ｒｅ　ｔｒｕｌｙ　ｒｅａｄｙ．@KEY()↓
-◆Ｉｔ’ｓ　ａ　ｐｌａｃｅ　ｗｈｅｒｅ　ｙｏｕ　ｃａｎ　ｔｏｕｃｈ　ｔｈｅ　ｔｒｕｔｈ　ｏｆ　ｔｈｅ　ｕｎｖｅｒｓｅ．@KEY()↓
-◆Ｇｏｉｎｇ　ｔｈｅｒｅ　ｍａｙ　ｂｒｉｎｇ　ｓｏｒｒｏｗ．
+◆The Sea of Eden is filled with ultimate intelligence.@KEY()↓
+◆You can’t go there unless you’re truly ready.@KEY()↓
+◆It’s a place where you can touch the truth of the unverse.@KEY()↓
+◆Going there may bring sorrow.
 @KEYNP()
 ;jpn:◆「エデンのうみ」は↓
-;jpn:　きゅうきょくの「ちえ」が↓
-;jpn:　うずまいている　ところ。@KEY()↓
+;jpn: きゅうきょくの「ちえ」が↓
+;jpn: うずまいている ところ。@KEY()↓
 ;jpn:◆なみたいていのことでは↓
-;jpn:　そこへは　ゆけぬ。@KEY()↓
-;jpn:◆うちゅうの　しんりに↓
-;jpn:　いっしゅんだけ↓
-;jpn:　ふれることが　できる　ばしょだ。@KEY()↓
-;jpn:◆そこへ　ゆくことが↓
-;jpn:　おまえのふこうに↓
-;jpn:　なるかも　しれぬぞ。@KEYNP()
+;jpn: そこへは ゆけぬ。@KEY()↓
+;jpn:◆うちゅうの しんりに↓
+;jpn: いっしゅんだけ↓
+;jpn: ふれることが できる ばしょだ。@KEY()↓
+;jpn:◆そこへ ゆくことが↓
+;jpn: おまえのふこうに↓
+;jpn: なるかも しれぬぞ。@KEYNP()
 @SET_PALLETSET(31,5,60);黄色黒
 』
 
 ;@Habitat:マジカント／フィールド／適当なところ
-;@Person:老人Ｂ
+;@Person:老人B
 ;@Figure:マジカントの老人
 ;@AppearanceKey:0
 ;@ActionScript:◆
@@ -877,31 +877,31 @@ MSG_MGKT_OLDMAN_A;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_OLDMAN_B
 MSG_MGKT_OLDMAN_B;
-;老人Ａよりも先に、この人に会うようにしてください。
+;老人Aよりも先に、この人に会うようにしてください。
 ;例えば、宿屋にうろうろしるとか。
-◆@DSP_NAME(PC_NESS)，　ｙｏｕ’ｖｅ　ｓｔｏｏｄ　ｏｎ　ｔｈｅ　ｅｉｇｈｔ　ｐｏｗｅｒ　ｓｐｏｔｓ　ｏｆ　ｔｈｅ　ｅａｒｔｈ．@KEY()↓
-◆Ｆｒｏｍ　ｔｈｅｓｅ　ｃｏｎｄｉｔｉｏｎｓ，　ｙｏｕ　ｃｒｅａｔｅｄ　Ｍａｇｉｃａｎｔ，　ｔｈｅ　ｒｅａｌｍ　ｏｆ　ｙｏｕｒ　ｍｉｎｄ．@KEY()↓
-◆Ｉｎ　Ｍａｇｉｃａｎｔ，　ｔｈｅｒｅ’ｓ　ｂｅａｕｔｙ，　ｋｉｎｄｎｅｓｓ，　ｓｏｒｒｏｗ，　ａｎｄ　ｈａｔｒｅｄ．@KEY()↓
-◆Ｏｆ　ｃｏｕｒｓｅ，　ｔｈｅｒｅ’ｓ　ａｎ　ｅｖｉｌ　ａｎｄ　ｖｉｏｌｅｎｔ　ｓｉｄｅ　ｏｆ　ｙｏｕ．@KEY()↓
-◆Ｔｈｅ　Ｓｅａ　ｏｆ　Ｅｄｅｎ　ｓｉｔｓ　ａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　ｔｈｏｓｅ　ｆｅｅｌｉｎｇｓ．@KEY()↓
-◆Ｉｔ　ｔａｋｅｓ　ｙｏｕ　ｔｏ　ｔｈｅ　ｔｒｕｔｈ　ａｂｏｕｔ　ｙｏｕｒｓｅｌｆ．
+◆@DSP_NAME(PC_NESS), you’ve stood on the eight power spots of the earth.@KEY()↓
+◆From these conditions, you created Magicant, the realm of your mind.@KEY()↓
+◆In Magicant, there’s beauty, kindness, sorrow, and hatred.@KEY()↓
+◆Of course, there’s an evil and violent side of you.@KEY()↓
+◆The Sea of Eden sits at the center of those feelings.@KEY()↓
+◆It takes you to the truth about yourself.
 @KEYNP()
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)　おまえは↓
-;jpn:　ちきゅうの８つのパワースポット↓
-;jpn:　すべてに　たった。@KEY()↓
-;jpn:◆そのことが　この　こころのくに↓
-;jpn:　マジカントを　うみだす↓
-;jpn:　じょうけんだったのじゃよ。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES) おまえは↓
+;jpn: ちきゅうの８つのパワースポット↓
+;jpn: すべてに たった。@KEY()↓
+;jpn:◆そのことが この こころのくに↓
+;jpn: マジカントを うみだす↓
+;jpn: じょうけんだったのじゃよ。@KEY()↓
 ;jpn:◆このマジカントには↓
-;jpn:　おまえのこころのなかにある↓
-;jpn:　うつくしさも　やさしさも@KEY()↓
-;jpn:◆かなしみも　にくしみも@KEY()↓
-;jpn:◆むろん　じゃあくなものや↓
-;jpn:　きょうぼうなものも　あるのだ。@KEY()↓
-;jpn:◆そして　そのちゅうしんに↓
-;jpn:　しんりにつながる‥‥@KEY()↓
+;jpn: おまえのこころのなかにある↓
+;jpn: うつくしさも やさしさも@KEY()↓
+;jpn:◆かなしみも にくしみも@KEY()↓
+;jpn:◆むろん じゃあくなものや↓
+;jpn: きょうぼうなものも あるのだ。@KEY()↓
+;jpn:◆そして そのちゅうしんに↓
+;jpn: しんりにつながる‥‥@KEY()↓
 ;jpn:◆「エデンのうみ」が↓
-;jpn:　そんざいしているのだ。@KEYNP()
+;jpn: そんざいしているのだ。@KEYNP()
 @SET_PALLETSET(31,6,60);雪
 』
 
@@ -914,18 +914,18 @@ MSG_MGKT_OLDMAN_B;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_OSCAR
 MSG_MGKT_OSCAR;@MiuraAppended
-;「@DSP_STS(STS_PC_NAME_NES)の　あくま」
-;または「マジカントの　あくま」
+;「@DSP_STS(STS_PC_NAME_NES)の あくま」
+;または「マジカントの あくま」
 @CHKFGOTO(FLG_WIN_OSCAR,MSG_SYS_HANASU_NG)
-◆（Ｉ’ｍ　ｔｈｅ　ｅｖｉｌ　ｐａｒｔ　ｏｆ　ｙｏｕｒ　ｂｒａｉｎ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ’ｔ　ｂｅａｔ　ｍｅ．@KEY()↓
-◆Ｂｅｃａｕｓｅ　ｙｏｕ　ａｒｅ　ｔｈｅ　ｏｎｅ　ｆｏｒｃｅｄ　ｍｅ　ｉｎｔｏ　ｂｅｉｎｇ．．．）
-;jpn:◆（ワタシハ↓
-;jpn:　オマエノ　ココロノナカノ↓
-;jpn:　ジャアク。@KEY()↓
-;jpn:◆タオスコトハ　デキマイ。@KEY()↓
-;jpn:◆オマエガ　ソダテタ↓
-;jpn:　ワタシナノダカラ‥‥）
+◆(I’m the evil part of your brain.@KEY()↓
+◆You can’t beat me.@KEY()↓
+◆Because you are the one forced me into being...)
+;jpn:◆(ワタシハ↓
+;jpn: オマエノ ココロノナカノ↓
+;jpn: ジャアク。@KEY()↓
+;jpn:◆タオスコトハ デキマイ。@KEY()↓
+;jpn:◆オマエガ ソダテタ↓
+;jpn: ワタシナノダカラ‥‥)
 @KEY()
 @GOSUB(MSG_BATTLE_OSCAR)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
@@ -937,119 +937,119 @@ MSG_MGKT_OSCAR;@MiuraAppended
 @REMOVE_CHAR(PRSN_MGCT_EDEN_4A,ANIM_BLINK_SUICIDE)
 @WI( 40 )
 ;背景の明度が揺れ出し、徐々に暗くなる
-;※　アニメとの絡みがあるので、簡単に変更しないこと！！
+;※ アニメとの絡みがあるので、簡単に変更しないこと!!
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_EVT_FLUCTUATE_MAGICANT, OBJFX_SHOW_NONE )
 @WAITSYS()					;(Start)
 @COLD_GOM_CHAR( GOM_HIT_CHR )
 MSG_MGKT_WIN_OSCAR_THEVOICE;「声」
 ;オスカーとの戦闘後のメッセージ
 @OPEN(1)
-◆（@DSP_NAME(PC_NESS)　ｈｅａｒｄ　ａ　ｆａｍｉｌｉａｒ　ｖｏｉｃｅ　ａｔ　ｔｈｅ　ｃｅｎｔｅｒ　ｏｆ　ｔｈｅ　Ｓｅａ　ｏｆ　Ｅｄｅｎ．）@KEY()↓
-;jpn:◆（@DSP_STS(STS_PC_NAME_NES)は↓
-;jpn:　エデンのうみの　ちゅうしんで↓
-;jpn:　ききおぼえのあるこえを　きいた）@KEY()↓
+◆(@DSP_NAME(PC_NESS) heard a familiar voice at the center of the Sea of Eden.)@KEY()↓
+;jpn:◆(@DSP_STS(STS_PC_NAME_NES)は↓
+;jpn: エデンのうみの ちゅうしんで↓
+;jpn: ききおぼえのあるこえを きいた)@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(1)
-◆Ｇｉｙｇａｓ’　ｇｏａｌ　ｉｓ　ｔｏ　ｄｅｓｔｒｏｙ　ｙｏｕ．@KEY()↓
-;jpn:◆@WI(20)「ギーグの　ねらいは↓
-;jpn:　きみを　まっさつすることにある。@KEY()↓
+◆Giygas’ goal is to destroy you.@KEY()↓
+;jpn:◆@WI(20)「ギーグの ねらいは↓
+;jpn: きみを まっさつすることにある。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(2)
-◆Ｌｉｓｔｅｎ　ｃａｒｅｆｕｌｌｙ！@KEY()↓
+◆Listen carefully!@KEY()↓
 
-;jpn:◆いいか。よく　きけ！@KEY()↓
+;jpn:◆いいか。よく きけ!@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(3)
-◆Ｅｖｅｒｙｔｈｉｎｇ　ｉｎ　ｔｈｅ　ｕｎｉｖｅｒｓｅ　ｃｏｕｌｄ　ｂｅ　ｄｅｓｔｒｏｙｅｄ　ａｔ　ｔｈｅ　ｈａｎｄｓ　ｏｆ　Ｇｉｙｇａｓ．@KEY()↓
-;jpn:◆ぎんがけいうちゅう　すべてが↓
-;jpn:　ギーグというやつの　てに↓
-;jpn:　おちるかも　しれないんだ。@KEY()↓
+◆Everything in the universe could be destroyed at the hands of Giygas.@KEY()↓
+;jpn:◆ぎんがけいうちゅう すべてが↓
+;jpn: ギーグというやつの てに↓
+;jpn: おちるかも しれないんだ。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(4)
-◆Ｂｕｔ　ｈｅ　ａｎｄ　ｈｉｓ　ｆｏｌｌｏｗｅｒｓ　ａｒｅ　ａｌｓｏ　ｉｎ　ｔｒｏｕｂｌｅ．@KEY()↓
+◆But he and his followers are also in trouble.@KEY()↓
 
-;jpn:◆でも　やつらも　こまっている。@KEY()↓
+;jpn:◆でも やつらも こまっている。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(5)
-◆Ｔｈｅ　Ａｐｐｌｅ　ｏｆ　Ｅｎｌｉｇｈｔｅｎｍｅｎｔ　ｈａｓ　ｆｏｒｅｔｏｌｄ@KEY()↓
+◆The Apple of Enlightenment has foretold@KEY()↓
 ;jpn:◆ギーグのもっている↓
-;jpn:　よげんマシン「ちえのリンゴ」は@KEY()↓;「よげんマシン＝ちえのリンゴ」は
+;jpn: よげんマシン「ちえのリンゴ」は@KEY()↓;「よげんマシン＝ちえのリンゴ」は
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(6)
-◆ｔｈａｔ　Ｇｉｙｇａｓ’　ａｔｔｅｍｐｔ　ｗｉｌｌ　ｆａｉｌ．@KEY()↓
+◆that Giygas’ attempt will fail.@KEY()↓
 ;jpn:◆ギーグのたくらみが↓
-;jpn:　しっぱいにおわると　つげたんだ。@KEY()↓
+;jpn: しっぱいにおわると つげたんだ。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(7)
-◆Ｉｔ　ｉｓ　ｂｅｃａｕｓｅ　ｏｆ　ｔｈｅ　ｅｘｉｓｔａｎｃｅ　ｏｆ　ａ　ｂｏｙ　ｎａｍｅｄ　@DSP_NAME(PC_NESS)．@KEY()↓
-;jpn:◆その　りゆうが‥‥@KEY()↓
+◆It is because of the existance of a boy named @DSP_NAME(PC_NESS).@KEY()↓
+;jpn:◆その りゆうが‥‥@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(8)
-◆．．．Ｔｈａｔ’ｓ　ｍｅ！@KEY()↓
+◆...That’s me!@KEY()↓
  
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)というなの　じゃまな↓
-;jpn:　しょうねんの　そんざいなんだ。@WI(30)↓
-;jpn:　‥‥ぼくだ！@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)というなの じゃまな↓
+;jpn: しょうねんの そんざいなんだ。@WI(30)↓
+;jpn: ‥‥ぼくだ!@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(9)
-◆Ｌｉｓｔｅｎ．@KEY()↓
+◆Listen.@KEY()↓
 
 ;jpn:◆いいかい。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(10)
-◆Ｆｒｅｅ　ｙｏｕｒ　ｍｉｎｄ　ａｎｄ　ＫＮＯＷ　ｗｈａｔ　ｙｏｕ　ｍｕｓｔ　ｄｏ！@KEY()↓
+◆Free your mind and KNOW what you must do!@KEY()↓
 
-;jpn:◆こころを　とぎすませて↓
-;jpn:　いま　きみが　どうするべきかを↓
-;jpn:　「わかる」んだ！@KEY()↓
+;jpn:◆こころを とぎすませて↓
+;jpn: いま きみが どうするべきかを↓
+;jpn: 「わかる」んだ!@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(11)
-◆Ｙｏｕｒ　ｄｅｓｔｉｎｙ　ｈａｓ　ａｌｒｅａｄｙ　ｂｅｅｎ　ｄｅｃｉｄｅｄ．@KEY()↓
+◆Your destiny has already been decided.@KEY()↓
 
-;jpn:◆すでに　うんめいは　きまってる。@KEY()↓
+;jpn:◆すでに うんめいは きまってる。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(12)
-◆Ｙｏｕ．．．Ｉ．．．ｗｈｅｒｅ　ｓｈｏｕｌｄ　ｗｅ　ｇｏ？@KEY()↓
+◆You...I...where should we go?@KEY()↓
 
 
-;jpn:◆きみは‥‥@WI(30)　ぼくは‥‥@WI(20)↓
-;jpn:　どこに　いけば　いいのか？@KEY()↓
+;jpn:◆きみは‥‥@WI(30) ぼくは‥‥@WI(20)↓
+;jpn: どこに いけば いいのか?@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(13)
-◆Ｙｏｕ　ｋｎｏｗ　ｄｅｅｐ　ｗｉｔｈｉｎ　ｔｈｅ　ｒｅａｃｈｅｓ　ｏｆ　ｙｏｕｒ　ｍｉｎｄ．@KEY()↓
+◆You know deep within the reaches of your mind.@KEY()↓
 
-;jpn:◆こころのおくで　わかってるんだ。@KEY()↓
+;jpn:◆こころのおくで わかってるんだ。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(14)
-◆　．．．Ｓ．．．Ｓａｔ．．．@KEY()↓
-◆．．．Ｓａｔｕｒｎ@KEY()↓
-◆．．．@KEY()↓
+◆ ...S...Sat...@KEY()↓
+◆...Saturn@KEY()↓
+◆...@KEY()↓
 
 ;jpn:◆‥‥サ@WI(20)タ@WI(20)↓
-;jpn:　‥‥サターン@WI(20)↓
-;jpn:　‥‥‥@KEY()↓
+;jpn: ‥‥サターン@WI(20)↓
+;jpn: ‥‥‥@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(15)
-◆Ｓａｔｕｒｎ　Ｖａｌｌｅｙ．．．ｙｅｓ．．．@KEY()↓
+◆Saturn Valley...yes...@KEY()↓
 
 ;jpn:◆サターンバレー‥‥@WI(20)そうだ。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(16)
-◆Ｇｏ　ｔｏ　ｔｈｅ　ｖａｌｌｅｙ　ｗｈｅｒｅ　ｔｈｅ　Ｍｒ．Ｓａｔｕｒｎ　ｌｉｖｅ．@KEY()↓
+◆Go to the valley where the Mr.Saturn live.@KEY()↓
 
 ;jpn:◆どせいさんたちのいた↓
-;jpn:　あのたにに　むかうんだ。@KEY()↓
+;jpn: あのたにに むかうんだ。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(17)
-◆．．．Ｙｏｕ’ｌｌ　ｇｅｔ　ｓｏｍｅｔｈｉｎｇ　ｎｅｗ　ｔｈｅｒｅ．@KEY()↓
+◆...You’ll get something new there.@KEY()↓
 
-;jpn:◆‥‥そこで　あたらしいなにかが↓
-;jpn:　つかめる。@KEY()↓
+;jpn:◆‥‥そこで あたらしいなにかが↓
+;jpn: つかめる。@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(18)
-◆Ｓｏｏｎ，　Ｍａｇｉｃａｎｔ　ｗｉｌｌ　ｂｅ　ｎｏ　ｍｏｒｅ．@KEY()↓
-◆Ｗｅ　ｍｕｓｔ　ｂｅ　ｑｕｉｃｋ！@KEY()
+◆Soon, Magicant will be no more.@KEY()↓
+◆We must be quick!@KEY()
 
-;jpn:◆もうすぐ　このマジカントは↓
-;jpn:　‥‥しょうめつする。@WI(20)↓
-;jpn:　いそがなければ！」@KEY()↓
+;jpn:◆もうすぐ このマジカントは↓
+;jpn: ‥‥しょうめつする。@WI(20)↓
+;jpn: いそがなければ!」@KEY()↓
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(19)
 @CLOSE()
 @WI(120)
 @OPEN( 1 )
-◆（@DSP_NAME(PC_NESS)　ｒｅａｌｌｙ　ｈｅａｒｄ　ｈｉｓ　ｏｗｎ　ｖｏｉｃｅ．@KEY()↓
-◆Ｇｏ　ｔｏ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ！@KEY()↓
-◆Ｇｏ　ｔｏ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ　ｎｏｗ！）
+◆(@DSP_NAME(PC_NESS) really heard his own voice.@KEY()↓
+◆Go to Saturn Valley!@KEY()↓
+◆Go to Saturn Valley now!)
 @KEYNP()
 
-;jpn:◆（@DSP_STS(STS_PC_NAME_NES)は　たしかに↓
-;jpn:　じぶんじしんのこえを　きいた。@KEY()↓
-;jpn:◆サターンバレーへ！@KEY()↓
-;jpn:◆サターンバレーへ！）@KEYNP()
+;jpn:◆(@DSP_STS(STS_PC_NAME_NES)は たしかに↓
+;jpn: じぶんじしんのこえを きいた。@KEY()↓
+;jpn:◆サターンバレーへ!@KEY()↓
+;jpn:◆サターンバレーへ!)@KEYNP()
 @CLOSE()
-@BGM_EFFECT( 3 )	;ＢＧＭフェードアウト長め
+@BGM_EFFECT( 3 )	;BGMフェードアウト長め
 ;次で完全に真っ暗に
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(Final)
 @WI( 60 )
@@ -1064,82 +1064,82 @@ MSG_FRESH_WSYS_COLD;
 ;-------------------------------------------------
 
 MSG_CHECK_MGKT_CLOCK;
-◆@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｄｉｄ　ｙｏｕ　ｌｅａｒｎ　ｈｏｗ　ｔｏ　ｔｅｌｌ　ｗｈａｔ　ｔｉｍｅ　Ｉ’ｍ　ｉｎｄｉｃａｔｉｎｇ？
+◆@DSP_NAME(PC_NESS)!@KEY()↓
+◆Did you learn how to tell what time I’m indicating?
 @KEYNP()
 
-;◆@DSP_STS(STS_PC_NAME_NES)！↓
-;jpn:　ぼくが　なんじなんぷんを↓
-;jpn:　しめしているか@KEY()↓
-;jpn:◆よめるようになったかい？@KEYNP()
+;◆@DSP_STS(STS_PC_NAME_NES)!↓
+;jpn: ぼくが なんじなんぷんを↓
+;jpn: しめしているか@KEY()↓
+;jpn:◆よめるようになったかい?@KEYNP()
 』
 
 MSG_CHECK_MGKT_SNOWMAN_1;
-◆Ｗｅ　ｈａｄ　ｆｕｎ　ｏｎｅ　ｓｎｏｗｙ　ｄａｙ．@KEY()↓
-◆Ｉ　ｍｅｌｔｅｄ，　ｂｕｔ　Ｉ　ａｍ　ｓｔｉｌｌ　ｒｅａｌ　ｉｎ　ｙｏｕｒ　ｍｅｍｏｒｙ．
+◆We had fun one snowy day.@KEY()↓
+◆I melted, but I am still real in your memory.
 @KEYNP()
-;jpn:◆ふゆのひに　あそんだね。↓
-;jpn:　ぼくは　とけて↓
-;jpn:　きえてしまったけれど@KEY()↓
-;jpn:◆きみの　おもいでのなかに↓
-;jpn:　まだ　のこっているんだよ。@KEYNP()
+;jpn:◆ふゆのひに あそんだね。↓
+;jpn: ぼくは とけて↓
+;jpn: きえてしまったけれど@KEY()↓
+;jpn:◆きみの おもいでのなかに↓
+;jpn: まだ のこっているんだよ。@KEYNP()
 』
 MSG_CHECK_MGKT_SNOWMAN_2;
-◆Ｉ　ｋｎｏｗ　ｔｈｅ　ｎａｍｅ　ｏｆ　ｔｈｅ　ｇｉｒｌ　ｙｏｕ　ｕｓｅｄ　ｔｏ　ｌｉｋｅ．
+◆I know the name of the girl you used to like.
 @KEYNP()
 
-;jpn:◆ぼく　きみが　むかし↓
-;jpn:　すきだった　おんなのコのなまえ↓
-;jpn:　しってるよ。@KEYNP()
+;jpn:◆ぼく きみが むかし↓
+;jpn: すきだった おんなのコのなまえ↓
+;jpn: しってるよ。@KEYNP()
 』
 MSG_CHECK_MGKT_SNOWMAN_3;
-◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｒｅｍｅｍｂｅｒｉｎｇ　ｍｅ．
+◆Thank you for remembering me.
 @KEYNP()
 ;jpn:◆ぼくのことを↓
-;jpn:　おぼえててくれて↓
-;jpn:　ありがとう@KEYNP()
+;jpn: おぼえててくれて↓
+;jpn: ありがとう@KEYNP()
 』
 ;-------------------------------------------------
 
 MSG_MGKT_POKEY;マジカントのポーキー
-◆@DSP_NAME(PC_NESS)，　ｙｏｕ’ｒｅ　ｓｏ　ｌｕｃｋｙ．．．@KEY()↓
-◆Ｉ　ｅｎｖｙ　ｙｏｕ．@KEY()↓
-◆．．．@KEY()↓
-◆Ｉ　ｈａｖｅ　ｎｏ　ｌｕｃｋ．@KEY()↓
+◆@DSP_NAME(PC_NESS), you’re so lucky...@KEY()↓
+◆I envy you.@KEY()↓
+◆...@KEY()↓
+◆I have no luck.@KEY()↓
 ;◆@DSP_STS(STS_PC_NAME_NES)↓
-;jpn:　おまえは　いいよな‥‥。@KEY()↓
-;jpn:◆なんか　おまえのこと↓
-;jpn:　うらやましいよ。@KEY()↓
+;jpn: おまえは いいよな‥‥。@KEY()↓
+;jpn:◆なんか おまえのこと↓
+;jpn: うらやましいよ。@KEY()↓
 ;jpn:◆‥‥‥。@KEY()↓
-;jpn:◆おれなんか　ダメさ。↓
+;jpn:◆おれなんか ダメさ。↓
 @WI(60)↓
-◆Ｂｕｔ，　@DSP_NAME(PC_NESS)．．．ｗｅｌｌ，　ｏｋａｙ．．．@KEY()↓
+◆But, @DSP_NAME(PC_NESS)...well, okay...@KEY()↓
 
-;jpn:◆だけど　@DSP_STS(STS_PC_NAME_NES)↓
+;jpn:◆だけど @DSP_STS(STS_PC_NAME_NES)↓
 @WI(60)↓
-◆Ｌｅｔ’ｓ　ｂｅ　ｆｒｉｅｎｄｓ　ｆｏｒｅｖｅｒ，　ａｌｌ　ｒｉｇｈｔ？
+◆Let’s be friends forever, all right?
 @KEYNP()
-;jpn:◆‥‥ま@WI(30)　いいよ。@KEY()↓
-;jpn:◆いつまでも　なかよく↓
-;jpn:　やっていこうぜ@WI(30)　な。@KEYNP()
+;jpn:◆‥‥ま@WI(30) いいよ。@KEY()↓
+;jpn:◆いつまでも なかよく↓
+;jpn: やっていこうぜ@WI(30) な。@KEYNP()
 』
 
 MSG_MGKT_TONCHIKI;マジカントのトンチキさん
-◆@DSP_NAME(PC_NESS)！@KEY()↓
-◆Ｍａｙｂｅ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｎａ　ｈｅａｒ　ｔｈｉｓ，@KEY()↓
-◆ｂｕｔ　ｙｏｕ　ｒｅｍｉｎｄ　ｍｅ　ｏｆ　ｍｙｓｅｌｆ　ｗｈｅｎ　Ｉ　ｗａｓ　ｙｏｕｎｇ．@KEY()↓
-◆Ｉ　ｃａｎ’ｔ　ｄｏ　ａｎｙｔｈｉｎｇ　ｍｏｒｅ　ｆｏｒ　ｙｏｕ．@KEY()↓
-◆Ｇｏｏｄ　ｌｕｃｋ，　@DSP_NAME(PC_NESS)！
+◆@DSP_NAME(PC_NESS)!@KEY()↓
+◆Maybe you don’t wanna hear this,@KEY()↓
+◆but you remind me of myself when I was young.@KEY()↓
+◆I can’t do anything more for you.@KEY()↓
+◆Good luck, @DSP_NAME(PC_NESS)!
 @KEYNP()
-;◆@DSP_STS(STS_PC_NAME_NES)！@WI(20)↓
-;jpn:　おまえは‥‥↓
-;jpn:　いやがるかもしれないけれど@KEY()↓
-;jpn:◆おまえって　わかいときの↓
-;jpn:　オレににてたんだ。@KEY()↓
-;jpn:◆オレは　もう↓
-;jpn:　なにすることも　できないけどさ。@KEY()↓
+;◆@DSP_STS(STS_PC_NAME_NES)!@WI(20)↓
+;jpn: おまえは‥‥↓
+;jpn: いやがるかもしれないけれど@KEY()↓
+;jpn:◆おまえって わかいときの↓
+;jpn: オレににてたんだ。@KEY()↓
+;jpn:◆オレは もう↓
+;jpn: なにすることも できないけどさ。@KEY()↓
 ;◆@DSP_STS(STS_PC_NAME_NES)@WI(20)↓
-;jpn:　がんばってくれ！@KEYNP()
+;jpn: がんばってくれ!@KEYNP()
 @CLOSEALL()
 @WI(1)
 @SET_PALLETSET(31,4,60)
@@ -1164,12 +1164,12 @@ MSG_CHECK_MGKT_DOKAN_B;
 @WARP(WARP_MGKT_DOKAN_MGKT)
 @!
 ;------------------------------------------------
-MSG_MGKT_SOUNDSTONE_BROKE;＄音の石消える（マジカント後）
+MSG_MGKT_SOUNDSTONE_BROKE;＄音の石消える(マジカント後)
 @OPEN(1)
-◆Ｔｈｅ　@DSP_GOODS(GDS_TOOL_SOUND_STONE)　ｔｈａｔ　@DSP_NAME(PC_NESS)　ｕｓｅｄ　ｔｏ　ｈａｖｅ　ｉｓ　ｎｏｗ　ｇｏｎｅ．
+◆The @DSP_GOODS(GDS_TOOL_SOUND_STONE) that @DSP_NAME(PC_NESS) used to have is now gone.
 @KEYNP()
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)が　もっていた↓
-;jpn:　おとのいしは　きえてしまった。@KEYNP()
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)が もっていた↓
+;jpn: おとのいしは きえてしまった。@KEYNP()
 @CLOSEALL()
 @GOODSOUT(PC_ALL,GDS_TOOL_SOUND_STONE)
 』

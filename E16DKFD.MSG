@@ -14,14 +14,14 @@ MSG_DKFD_FIRE_BOSS;marcus
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(MSG_GLOBAL_BOSS_NG);ネス死んでたらダメ
 @BGMSTART(0,BGM_msc24);ボスのセリフ曲
-◆Ｙｏｕ　ｆｉｎａｌｌｙ　ｇｏｔ　ｈｅｒｅ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｔｈｅ　ｅｉｇｈｔｈ　”Ｙｏｕｒ　Ｓａｎｃｔｕａｒｙ”　ｌｏｃａｔｉｏｎ．@WI(20)　　Ｂｕｔ　ｉｔ’ｓ　ｍｉｎｅ　ｎｏｗ．@KEY()↓
-◆Ｔａｋｅ　ｉｔ　ｆｒｏｍ　ｍｅ，@WI(30)　ｉｆ　ｙｏｕ　ｄａｒｅ．．．
+◆You finally got here.@KEY()↓
+◆This is the eighth ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
+◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは　８ばんめの↓
+;jpn:◆ここは ８ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
-;jpn:◆しかし　いまは↓
-;jpn:　わたしのばしょだ。@KEY()↓
+;jpn:◆しかし いまは↓
+;jpn: わたしのばしょだ。@KEY()↓
 ;jpn:◆うばいかえせばよい。@KEY()↓
 ;jpn:◆‥‥できるものなら。
 @KEY()
@@ -44,23 +44,23 @@ MSG_DKFD_FIRE_BOSS;marcus
 ;@Message:MSG_DKFD_DOSEI
 MSG_DKFD_DOSEI;marcus
 @FONTBAKA()
-;◆あっち　スペーストンネルの↓
-;　ぬすまれた　が　こわれて　ある。@KEYNP()
-◆Ｋｉｄｎａｐｐｅｄ．　　Ｉ　ｗａｓ．　　Ｂｏｉｎｇ！@KEY()↓
-◆Ｋｉｄｎａｐｐｅｒ．　　Ｂａｄ　ｇｕｙ．@KEY()↓
-◆Ｂａｄ　ｇｕｙ　ｇｏｎｅ．　　Ｚｏｏｍ！@KEY()↓
-◆Ｗｈｅｒｅ？↓
-　　Ｔｏ　ｔｈｅ　ｐａｓｔ．@KEY()↓
-◆Ｄｉｎｇ，　ｄｉｎｇ！
+;◆あっち スペーストンネルの↓
+; ぬすまれた が こわれて ある。@KEYNP()
+◆Kidnapped.  I was.  Boing!@KEY()↓
+◆Kidnapper.  Bad guy.@KEY()↓
+◆Bad guy gone.  Zoom!@KEY()↓
+◆Where?↓
+  To the past.@KEY()↓
+◆Ding, ding!
 
 ;jpn:◆さらわれたよ↓
-;jpn:　ぼく。@KEY()↓
+;jpn: ぼく。@KEY()↓
 ;jpn:◆さらったよ↓
-;jpn:　わるいやつ。@KEY()↓
+;jpn: わるいやつ。@KEY()↓
 ;jpn:◆いっちゃったよ↓
-;jpn:　わるいやつ。@KEY()↓
-;jpn:◆どこへ？@WI(30)↓
-;jpn:　むかしへ。@KEY()↓
+;jpn: わるいやつ。@KEY()↓
+;jpn:◆どこへ?@WI(30)↓
+;jpn: むかしへ。@KEY()↓
 ;jpn:◆ぷー。
 @KEYNP()
 @FONTSTD()
@@ -78,12 +78,12 @@ MSG_DKFD_SKYWALKER;marcus@MiuraAdapted
 @CHKFGOTO(FLG_BOX_DKFD_1,MSG_BOX_EMPTY)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(0)　ｃｈｅｃｋｅｄ　ｔｈｅ　ｂｒｏｋｅｎ　Ｐｈａｓｅ　Ｄｉｓｔｏｒｔｅｒ．@KEY()↓
-◆Ｔｈｅｒｅ　ｗａｓ　ａ　@DSP_GOODS(GDS_TOOL_LIFE_HORN)．@KEY()↓
+◆@DSP_NAME(0) checked the broken Phase Distorter.@KEY()↓
+◆There was a @DSP_GOODS(GDS_TOOL_LIFE_HORN).@KEY()↓
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　こわれた　スペーストンネルを↓
-;jpn:　しらべた。@KEY()↓
-;jpn:◆いのちのつのぶえが　あった。@KEY()↓
+;jpn: こわれた スペーストンネルを↓
+;jpn: しらべた。@KEY()↓
+;jpn:◆いのちのつのぶえが あった。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(MSG_BOX_ITEMFULL)
 @GOODSIN_PLAYER(0,GDS_TOOL_LIFE_HORN)
@@ -101,7 +101,7 @@ MSG_DKFD_SKYWALKER;marcus@MiuraAdapted
 ;@CheckMessage:0
 ;@Message:MSG_DKFD_OLDMAN
 MSG_DKFD_OLDMAN;@MiuraAppended
-;ＰＫスターストームΩを教える老人
+;PKスターストームΩを教える老人
 ;----------
 @SE(SE_se63_teleport_appear)
 ;----------
@@ -131,26 +131,26 @@ MSG_DKFD_OLDMAN;@MiuraAppended
 @WI(8)
 @SET_GOM_CHAR_DIR(GOM_MAGICANTO_OLDMAN,DIR_M_LEFT)
 @OPEN(1)
-◆Ｇｒｅｅｔｉｎｇｓ！@WI(20)　　Ｓｏ，　ｙｏｕ　ａｒｅ　ｆｉｎａｌｌｙ　ｈｅｒｅ！
-;jpn:◆よーくぞ　ここまで↓
-;jpn:　たどりつかれた！
+◆Greetings!@WI(20)  So, you are finally here!
+;jpn:◆よーくぞ ここまで↓
+;jpn: たどりつかれた!
 @KEY()
 @CLOSEALL()
 @GOSUB(MSG_SUB_ALLHEAL_POWR)    ;全回復しておく
 @SE(SE_se25_b_healing)
 @WI(90)
 @OPEN(1)
-◆Ｅｘｃｅｌｌｅｎｔ！　　Ｙｏｕ　ａｒｅ　ｔｒｕｌｙ　ｅｘｃｅｌｌｅｎｔ！@KEY()↓
-◆Ｔｈｅｒｅ　ｉｓ　ｏｎｌｙ　ａ　ｌｉｔｔｌｅ　ｔｉｍｅ　ｌｅｆｔ！@WI(15)　　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ｔｈｅ　ｌａｓｔ　ｐｏｗｅｒ．@KEY()↓
-◆Ｉ　ｍｕｓｔ　ｇｏ　ｎｏｗ．．．@KEY()
-;jpn:◆りっぱ　りっぱ！↓
-;jpn:　ごりっぱな　しょうねんたち！@KEY()↓
-;jpn:◆のこされた　ときは↓
-;jpn:　わずか！@KEY()↓
-;jpn:◆さいごの　ちからを↓
-;jpn:　さずけましょう！@KEY()↓
-;jpn:◆では　わたしは↓
-;jpn:　いそいでいるので‥‥@KEY()
+◆Excellent!  You are truly excellent!@KEY()↓
+◆There is only a little time left!@WI(15)  I’ll give you the last power.@KEY()↓
+◆I must go now...@KEY()
+;jpn:◆りっぱ りっぱ!↓
+;jpn: ごりっぱな しょうねんたち!@KEY()↓
+;jpn:◆のこされた ときは↓
+;jpn: わずか!@KEY()↓
+;jpn:◆さいごの ちからを↓
+;jpn: さずけましょう!@KEY()↓
+;jpn:◆では わたしは↓
+;jpn: いそいでいるので‥‥@KEY()
 @CLOSEALL()
 @ADD_PSI(PC_POO,3)
 @HIDE_GOM_CHAR(GOM_MAGICANTO_OLDMAN,OBJFX_HIDE_NONE)
@@ -161,10 +161,10 @@ MSG_DKFD_OLDMAN;@MiuraAppended
 @WAITSYS()
 @ADD_PSI(PC_POO,3)
 @OPEN(1)
-◆（@DSP_STS(STS_PC_NAME_POO)　ｂｅｃａｍｅ　ｃｏｎｓｃｉｏｕｓ　ｏｆ　ＰＳＩ　Ｓｔａｒｓｔｏｒｍ　Ω！）
-;jpn:◆（@DSP_STS(STS_PC_NAME_POO)は↓;
-;jpn:　ＰＫスターストームΩを↓
-;jpn:　みにつけた！）
+◆(@DSP_STS(STS_PC_NAME_POO) became conscious of PSI Starstorm Ω!)
+;jpn:◆(@DSP_STS(STS_PC_NAME_POO)は↓;
+;jpn: PKスターストームΩを↓
+;jpn: みにつけた!)
 @SE(SE_se67_elevator_stop)
 @KEYNP()
 @CLOSEALL()
@@ -177,81 +177,81 @@ MSG_DKFD_OLDMAN;@MiuraAppended
 MSG_DKFD_GUMI_A;グミドリアンを持っていたら寄ってくる人
 @CHKFGOTO(FLG_INFO_POWR,_DKFD_GUMI_A_END)
 ;@CHKFGOTO(FLG_DKFD_GUMI_BOSS,_DKFD_GUMI_A_AFTER)
-;◆おまえら　けっこう　すっげえ↓
-;　いいにおいするじゃん！@WI(15)クンクン@KEY()↓
-;◆あっ　オレ？　おれもグミぞくよ。@KEYNP()
+;◆おまえら けっこう すっげえ↓
+; いいにおいするじゃん!@WI(15)クンクン@KEY()↓
+;◆あっ オレ? おれもグミぞくよ。@KEYNP()
 ;』
 ;_DKFD_GUMI_A_AFTER;marcus＃
-◆Ｅｖｅｎ　ｔｈｏｕｇｈ　Ｉ　ｌｉｓｔｅｎｅｄ　ｔｏ　ｔｈｅ　ｔａｌｋａｔｉｖｅ　Ｍｙｓｔｅｒｙ　Ｒｏｃｋ’ｓ　ｓｔｏｒｙ，@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｕｎｄｅｒｓｔａｎｄ　ｗｈａｔ　ｈｅ’ｓ　ｔａｌｋｉｎｇ　ａｂｏｕｔ．
-;jpn:◆しんぴのいわの　はなしを↓
-;jpn:　きいても　オレには↓
-;jpn:　なにいってるのか@KEY()↓
+◆Even though I listened to the talkative Mystery Rock’s story,@KEY()↓
+◆I don’t understand what he’s talking about.
+;jpn:◆しんぴのいわの はなしを↓
+;jpn: きいても オレには↓
+;jpn: なにいってるのか@KEY()↓
 ;jpn:◆じぇーんじぇん↓
-;jpn:　わかりましぇーん。
+;jpn: わかりましぇーん。
 @KEYNP()
 』
 _DKFD_GUMI_A_END;marcus＆
-◆Ｔｈｅ　ｒｏｃｋ　ｓｕｄｄｅｎｌｙ　ｓｔｏｐｐｅｄ　ｔａｌｋｉｎｇ．@KEY()↓
-◆Ｉｎ　ｏｔｈｅｒ　ｗｏｒｄｓ．．．@KEY()↓
-◆ｉｔ’ｓ　ｎｏｔ　ｓａｙｉｎｇ　ａｎｙｔｈｉｎｇ．
-;jpn:◆いつのまにやら　いわが↓
-;jpn:　しゃべらなくなった。@KEY()↓
-;jpn:◆つまり　なにも‥‥@KEY()↓
+◆The rock suddenly stopped talking.@KEY()↓
+◆In other words...@KEY()↓
+◆it’s not saying anything.
+;jpn:◆いつのまにやら いわが↓
+;jpn: しゃべらなくなった。@KEY()↓
+;jpn:◆つまり なにも‥‥@KEY()↓
 ;jpn:◆いわない。
 @KEYNP()
 』
 
 MSG_DKFD_GUMI_A_RECEIVE;marcusこの人物の前でグミドリアンを使うと
 ;みんな集まれー
-◆．．．Ｙｏｕ　ｈａｖｅ　ａ　ｎｉｃｅ　ｉｔｅｍ．@KEY()↓
-◆Ｓｉｎｃｅ　Ｉ　ｃａｍｅ　ｔｏ　ｔｈｅ　Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ，　Ｉ　ｈａｖｅｎ’ｔ　ｓｅｅｎ　ｏｒ　ｓｍｅｌｌｅｄ　@DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN)．
+◆...You have a nice item.@KEY()↓
+◆Since I came to the Lost Underworld, I haven’t seen or smelled @DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN).
 ;＠地名確認
-;jpn:◆‥‥いいもん　もってるなぁ。↓
-;jpn:　したの　せかいに　おちてきてから@KEY()↓
+;jpn:◆‥‥いいもん もってるなぁ。↓
+;jpn: したの せかいに おちてきてから@KEY()↓
 ;jpn:◆グミドリアンなんて↓
-;jpn:　おめに　かかれなかったもんなぁ
+;jpn: おめに かかれなかったもんなぁ
 @KEYNP()
 』
 
 MSG_DKFD_GUMI_BOSS;marcus
 @CHKFGOTO(FLG_INFO_POWR,_DKFD_GUMI_BOSS_END)
 @CHKFGOTO(FLG_DKFD_GUMI_BOSS,_DKFD_GUMI_BOSS_AFTER)
-◆Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｄｏｉｎｇ　ｉｎ　ｔｈｅ　ｄｉｎｏｓａｕｒ’ｓ　ｃａｇｅ？@KEY()↓
-◆Ｉ’ｌｌ　ｏｐｅｎ　ｔｈｅ　ｄｏｏｒ　ｆｏｒ　ｙｏｕ，　ａｎｄ　ｙｏｕ　ｇｅｔ　ｏｕｔ　ｏｆ　ｔｈｅ　ｃａｇｅ　ｑｕｉｃｋ．@KEY()↓
-◆Ｔｈａｔ’ｓ　ａｎ　ｏｒｄｅｒ　ｆｒｏｍ　ｔｈｅ　ｂｏｓｓ．@WI(15)　　．．．Ｂｙ　ｔｈｅ　ｗａｙ，　ｔｈａｎｋｓ　ｆｏｒ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN)．
-;jpn:◆きょうりゅうの　オリのなかで↓
-;jpn:　なにやってるんだ？！@KEY()↓
-;jpn:◆いりぐちを　あけてやるから↓
-;jpn:　はやく　こっちに　でてこい。@KEY()↓
-;jpn:◆ボスの　オレが　ゆるすから。@WI(30)↓
-;jpn:　‥‥グミドリアン　ありがとよ。
+◆What are you doing in the dinosaur’s cage?@KEY()↓
+◆I’ll open the door for you, and you get out of the cage quick.@KEY()↓
+◆That’s an order from the boss.@WI(15)  ...By the way, thanks for the @DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN).
+;jpn:◆きょうりゅうの オリのなかで↓
+;jpn: なにやってるんだ?!@KEY()↓
+;jpn:◆いりぐちを あけてやるから↓
+;jpn: はやく こっちに でてこい。@KEY()↓
+;jpn:◆ボスの オレが ゆるすから。@WI(30)↓
+;jpn: ‥‥グミドリアン ありがとよ。
 @KEY()↓
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆（@DSP_NAME(0)’ｓ　@DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN)　ｗａｓ　ｔａｋｅｎ．）@KEY()↓
-◆（Ｔｈａｔ　ｎａｓｔｙ　ｓｍｅｌｌ　ｌｅｆｔ　ｙｏｕ　ａｔ　ｔｈｅ　ｓａｍｅ　ｔｉｍｅ！）
-;jpn:◆（@DSP_NAME(0)は↓
-;jpn:　「グミドリアン」を↓
-;jpn:　とられてしまった）@KEY()↓
-;jpn:◆（もう　くさく　なくなった）
+◆(@DSP_NAME(0)’s @DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN) was taken.)@KEY()↓
+◆(That nasty smell left you at the same time!)
+;jpn:◆(@DSP_NAME(0)は↓
+;jpn: 「グミドリアン」を↓
+;jpn: とられてしまった)@KEY()↓
+;jpn:◆(もう くさく なくなった)
 @KEYNP()
-;門開く（恐竜が入れない大きさなら空きっぱなし）
+;門開く(恐竜が入れない大きさなら空きっぱなし)
 @SETF(FLG_DKFD_GUMI_BOSS)
 』
 _DKFD_GUMI_BOSS_AFTER;marcus＃ボスのセリフその後
-◆Ｗｈｙ　ｄｏｎ’ｔ　ｙｏｕ　ｓｅｅ　ｔｈｅ　ｔａｌｋａｔｉｖｅ　ｍｙｓｔｅｒｙ　ｒｏｃｋ．@KEY()↓
-◆Ｔｈａｔ　ｒｏｃｋ　ｒｅａｌｌｙ　ｊａｂｂｅｒｓ　ａｗａｙ！！
+◆Why don’t you see the talkative mystery rock.@KEY()↓
+◆That rock really jabbers away!!
 
-;jpn:◆しんぴのいわを　おがんでいけよ。↓
-;jpn:　いわもまた　よくしゃべるぜ。
+;jpn:◆しんぴのいわを おがんでいけよ。↓
+;jpn: いわもまた よくしゃべるぜ。
 @KEYNP()
 』
 _DKFD_GUMI_BOSS_END;marcus＆
-◆Ａ　ｒｏｃｋ　ｔｈａｔ　ｄｏｅｓｎ’ｔ　ｔａｌｋ　ｉｓ　ｎｏ　ｆｕｎ　ａｔ　ａｌｌ．
+◆A rock that doesn’t talk is no fun at all.
 
 ;jpn:◆しゃべらないいわって‥‥@WI(30)↓
-;jpn:　おもしろくもなんともないな。
+;jpn: おもしろくもなんともないな。
 @KEYNP()
 』
 
@@ -259,157 +259,157 @@ _DKFD_GUMI_BOSS_END;marcus＆
 ;その他
 MSG_DKFD_GUMI_C;marcus＃
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_C_END)
-◆Ｗｅ　ａｒｅ　ｔｈｅ　ｓａｍｅ　Ｔｅｎｄａ　ａｓ　ｔｈｏｓｅ　ａｂｏｖｅ　ｇｒｏｕｎｄ．@KEY()↓
-◆．．．Ｗｅ　ｓｅｅｍ　ｄｉｆｆｅｒｅｎｔ？@KEY()↓
-◆Ｙｅａｈ，@WI(15)　ｙｏｕ　ｋｎｏｗ，　ｔｈｅ　Ｔｅｎｄａ　ｕｐ　ｔｈｅｒｅ　ａｒｅ　ｓｈｙ　ａｎｄ　ｄｏｎ’ｔ　ｌｉｋｅ　ｔｏ　ｔａｌｋ．
+◆We are the same Tenda as those above ground.@KEY()↓
+◆...We seem different?@KEY()↓
+◆Yeah,@WI(15) you know, the Tenda up there are shy and don’t like to talk.
 
-;jpn:◆オレたちは　うえのやつらと↓
-;jpn:　おんなじ　グミぞくなんだ。@KEY()↓
-;jpn:◆‥‥ちがうって？@KEY()↓
-;jpn:◆だからぁ　うえのやつらは↓
-;jpn:　むくちなんだよ。
+;jpn:◆オレたちは うえのやつらと↓
+;jpn: おんなじ グミぞくなんだ。@KEY()↓
+;jpn:◆‥‥ちがうって?@KEY()↓
+;jpn:◆だからぁ うえのやつらは↓
+;jpn: むくちなんだよ。
 @KEYNP()
 』
 _DKFD_GUMI_C_END;marcus＆
-◆Ｉｔ　ｍａｙ　ｂｅ　ｍｙ　ｉｍａｇｉｎａｔｉｏｎ，　ｂｕｔ　Ｉ　ｔｈｉｎｋ　Ｉ　ｈｅａｒ　ｔｈｅ　ｓｏｕｎｄ　ｏｆ　ｏｔｈｅｒ　Ｔｅｎｄａ　ｔａｌｋｉｎｇ　ｕｐ　ａｂｏｖｅ．@KEY()↓
-◆Ｉ　ｗｏｎｄｅｒ．．．ｈａｖｅ　ｔｈｅｙ　ｏｖｅｒｃｏｍｅ　ｔｈｅｉｒ　ｓｈｙｎｅｓｓ？
-;jpn:◆きのせいか　うえのほうから↓
-;jpn:　はなしごえが　きこえるときが↓
-;jpn:　あるんだ。@KEY()↓
+◆It may be my imagination, but I think I hear the sound of other Tenda talking up above.@KEY()↓
+◆I wonder...have they overcome their shyness?
+;jpn:◆きのせいか うえのほうから↓
+;jpn: はなしごえが きこえるときが↓
+;jpn: あるんだ。@KEY()↓
 ;jpn:◆あいつら‥‥@WI(30)↓
-;jpn:　もしかしたら　おしゃべりに↓
-;jpn:　なったのかなぁ。
+;jpn: もしかしたら おしゃべりに↓
+;jpn: なったのかなぁ。
 @KEYNP()
 』
 
 MSG_DKFD_GUMI_D;marcus＃
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_D_END)
-◆Ｄｉｄｎ’ｔ　ｙｏｕ　ｔｈｉｎｋ　ｔｈａｔ　ｔｈｅ　Ｔｅｎｄａ　ｕｐ　ａｂｏｖｅ　ｈａｖｅ　ｓｏｍｅ　ｐａｒｔｉｃｕｌａｒｌｙ　ｂｅａｕｔｉｆｕｌ　ｗｏｍｅｎ？@KEY()↓
-◆Ｔｈｅｙ’ｒｅ　ｓｔｉｌｌ　ｓｈｙ，　ｔｈｏｕｇｈ．
+◆Didn’t you think that the Tenda up above have some particularly beautiful women?@KEY()↓
+◆They’re still shy, though.
 ;jpn:◆うえのグミぞくにゃ↓
-;jpn:　びじんが　おおかっただろ？@KEY()↓
-;jpn:　‥‥むくち　だけどな。
+;jpn: びじんが おおかっただろ?@KEY()↓
+;jpn: ‥‥むくち だけどな。
 @KEYNP()
 』
 _DKFD_GUMI_D_END;marcus＆
-◆Ｔｅｎｄａ　ｗｏｍｅｎ　ｕｐ　ａｂｏｖｅ　ｇｒｏｕｎｄ　ａｒｅ　ｐｒｅｔｔｙ，　ｂｕｔ　ｔｈｅ　ｍｅｎ　ｓｅｅｍ　ｋｉｎｄ　ｏｆ　ｒｕｎ　ｄｏｗｎ．
+◆Tenda women up above ground are pretty, but the men seem kind of run down.
  ;jpn:◆うえのグミぞくにゃ↓
-;jpn:　たしかに　びじんがおおいけど@WI(20)↓
-;jpn:　おとこは　さえないよな。
+;jpn: たしかに びじんがおおいけど@WI(20)↓
+;jpn: おとこは さえないよな。
 @KEYNP()
 』
 
 MSG_DKFD_GUMI_E;marcus
 @CHKFGOTO(FLG_DKFD_GUMI_E_READED,_DKFD_GUMI_E_B)
 @SETF(FLG_DKFD_GUMI_E_READED)
-;◆きょうりゅうの　オリのなかに↓
-;　おんせんが　ふきでるんだ。@KEY()↓
-;◆じしんの　たびに↓
-;　ドピューン！　とな。@KEY()↓
-;◆あおい　おんせんは↓
-;　たいりょくかいふくに　きく。@KEY()↓
-;◆あかい　おんせんは↓
-;　しびれやら　どくやらを↓
-;　とってくれるんだ。@KEYNP()
+;◆きょうりゅうの オリのなかに↓
+; おんせんが ふきでるんだ。@KEY()↓
+;◆じしんの たびに↓
+; ドピューン! とな。@KEY()↓
+;◆あおい おんせんは↓
+; たいりょくかいふくに きく。@KEY()↓
+;◆あかい おんせんは↓
+; しびれやら どくやらを↓
+; とってくれるんだ。@KEYNP()
 ;
-◆Ｙｏｕ’ｒｅ　ｓｔｒａｎｇｅ，　ｂｕｔ　ｙｏｕ　ｓｍｅｌｌ　ｇｏｏｄ．　　Ｓｏ　Ｉ’ｌｌ　ｔｅｌｌ　ｙｏｕ　ａ　ｓｅｃｒｅｔ．@KEY()↓
-◆Ｄｉｄ　ｙｏｕ　ｆｅｅｌ　ｔｈｅ　ｅａｒｔｈｑｕａｋｅ　ａ　ｌｉｔｔｌｅ　ｗｈｉｌｅ　ａｇｏ？@KEY()↓
-◆．．．Ｙｏｕ　ｋｎｏｗ，　ｗｅ　ｈａｖｅ　ｅａｒｔｈｑｕａｋｅｓ　ａｌｌ　ｔｈｅ　ｔｉｍｅ　ｈｅｒｅ．@KEY()↓
-◆Ａｆｔｅｒ　ａｎ　ｅａｒｔｈｑｕａｋｅ，　ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇｓ　ｗｉｌｌ　ｅｒｕｐｔ．@KEY()↓
-◆Ｔｈｅ　ｂｌｕｅ　ｓｐｒｉｎｇｓ　ａｒｅ　ｇｒｅａｔ　ｆｏｒ　ｒｅｃｏｖｅｒｉｎｇ　ｈｅａｌｔｈ．@KEY()↓
-◆Ｔｈｅ　Ｒｅｄ　ｓｐｒｉｎｇｓ　ａｒｅ　ｐｅｒｆｅｃｔ　ｆｏｒ　ｈｅａｌｉｎｇ　ｐａｒａｌｙｓｉｓ　ｏｒ　ｄｒａｗｉｎｇ　ｏｕｔ　ｐｏｉｓｏｎ．
-;jpn:◆おまえ　へんなやつだけど↓
-;jpn:　なんか　いいにおいだから↓
-;jpn:　いいこと　おしえてやる。@KEY()↓
-;jpn:◆さっき　じしん　あったろ？↓
-;jpn:　@WI(30)‥‥っていうか　ここでは↓
-;jpn:　じしんは　しょっちゅうある。@KEY()↓
-;jpn:◆じしんのあと　じめんのあなから↓
-;jpn:　おんせんが　ふきでるんだ。@KEY()↓
-;jpn:◆あおい　おんせんは↓
-;jpn:　たいりょくかいふくに　きく。@KEY()↓
-;jpn:◆あかい　おんせんは↓
-;jpn:　しびれやら　どくやらを↓
-;jpn:　とってくれるみたいよ。
+◆You’re strange, but you smell good.  So I’ll tell you a secret.@KEY()↓
+◆Did you feel the earthquake a little while ago?@KEY()↓
+◆...You know, we have earthquakes all the time here.@KEY()↓
+◆After an earthquake, the hot springs will erupt.@KEY()↓
+◆The blue springs are great for recovering health.@KEY()↓
+◆The Red springs are perfect for healing paralysis or drawing out poison.
+;jpn:◆おまえ へんなやつだけど↓
+;jpn: なんか いいにおいだから↓
+;jpn: いいこと おしえてやる。@KEY()↓
+;jpn:◆さっき じしん あったろ?↓
+;jpn: @WI(30)‥‥っていうか ここでは↓
+;jpn: じしんは しょっちゅうある。@KEY()↓
+;jpn:◆じしんのあと じめんのあなから↓
+;jpn: おんせんが ふきでるんだ。@KEY()↓
+;jpn:◆あおい おんせんは↓
+;jpn: たいりょくかいふくに きく。@KEY()↓
+;jpn:◆あかい おんせんは↓
+;jpn: しびれやら どくやらを↓
+;jpn: とってくれるみたいよ。
 @KEYNP()
 』
 
 _DKFD_GUMI_E_B;marcus
-◆Ｈｅｙ！　Ｓｔｒａｎｇｅ　ｆｅｌｌｏｗ．@KEY()↓
-◆Ａｆｔｅｒ　ａｎ　ｅａｒｔｈｑｕａｋｅ，　ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇｓ　ｅｒｕｐｔ　ｏｕｔ　ｏｆ　ｔｈｅ　ｇｒｏｕｎｄ．@KEY()↓
-◆Ｈａｖｅ　ｙｏｕ　ｅｖｅｒ　ｎｏｔｉｃｅｄ　ｔｈａｔ？@KEY()↓
-◆Ｔｈｅ　ｂｌｕｅ　ｓｐｒｉｎｇｓ　ａｒｅ　ｇｒｅａｔ　ｆｏｒ　ｒｅｃｏｖｅｒｉｎｇ　ｈｅａｌｔｈ．@KEY()↓
-◆Ｔｈｅ　ｒｅｄ　ｓｐｒｉｎｇｓ　ａｒｅ　ｐｅｒｆｅｃｔ　ｆｏｒ　ｈｅａｌｉｎｇ　ｐａｒａｌｙｓｉｓ　ｏｒ　ｄｒａｗｉｎｇ　ｏｕｔ　ｐｏｉｓｏｎ．
-;jpn:◆やあ！　へんなやつ。@KEY()↓
-;jpn:◆じしんのあと　じめんのあなから↓
-;jpn:　おんせんが　ふきでるんだけど@KEY()↓
-;jpn:◆もう　みたことあるかな。@KEY()↓
-;jpn:◆あおい　おんせんは↓
-;jpn:　たいりょくかいふくに　きく。@KEY()↓
-;jpn:◆あかい　おんせんは↓
-;jpn:　しびれやら　どくやらを↓
-;jpn:　とってくれるみたいよ。
+◆Hey! Strange fellow.@KEY()↓
+◆After an earthquake, the hot springs erupt out of the ground.@KEY()↓
+◆Have you ever noticed that?@KEY()↓
+◆The blue springs are great for recovering health.@KEY()↓
+◆The red springs are perfect for healing paralysis or drawing out poison.
+;jpn:◆やあ! へんなやつ。@KEY()↓
+;jpn:◆じしんのあと じめんのあなから↓
+;jpn: おんせんが ふきでるんだけど@KEY()↓
+;jpn:◆もう みたことあるかな。@KEY()↓
+;jpn:◆あおい おんせんは↓
+;jpn: たいりょくかいふくに きく。@KEY()↓
+;jpn:◆あかい おんせんは↓
+;jpn: しびれやら どくやらを↓
+;jpn: とってくれるみたいよ。
 @KEYNP()
 』
 
 
 MSG_DKFD_GUMI_F;marcus＃
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_F_END)
-◆Ｔｅｎｄａ　ｗｈｏ　ｌｉｋｅ　ｔｏ　ｔａｌｋ　ｃａｍｅ　ｔｏ　ｔｈｅ　Ｌｏｓｔ　Ｕｎｄｅｒｗｏｒｌｄ@KEY()↓
-◆ｂｅｃａｕｓｅ　ｗｅ　ｃｏｕｌｄｎ’ｔ　ｓｔａｎｄ　ｔｈｅ　ｑｕｉｅｔ　ｕｐ　ａｂｏｖｅ．@KEY()↓
-◆Ｓｏ，　ｗｅ　ｅｓｔａｂｌｉｓｈｅｄ　ａ　ｓｅｐａｒａｔｅ　ｔｒｉｂｅ．@KEY()↓
-◆Ｉ　ｈｏｐｅ　ｗｅ　ｃａｎ　ｂｅ　ｆｒｉｅｎｄｌｙ　ａｇａｉｎ　ｓｏｍｅ　ｄａｙ．@KEY()↓
-◆．．．Ｙｅａｈ，　ｉｔ　ｗａｓ　ａ　ｌｏｔ　ｅａｓｉｅｒ　ｔｏ　ｌｉｖｅ　ｕｐ　ａｂｏｖｅ．
+◆Tenda who like to talk came to the Lost Underworld@KEY()↓
+◆because we couldn’t stand the quiet up above.@KEY()↓
+◆So, we established a separate tribe.@KEY()↓
+◆I hope we can be friendly again some day.@KEY()↓
+◆...Yeah, it was a lot easier to live up above.
 
-;jpn:◆わしら　おしゃべりな　グミぞくは↓
-;jpn:　うえの　やつらの　むくちに↓
-;jpn:　たえられなくて　したにおりてきて@KEY()↓
-;jpn:◆べつのくにを　つくってしまったが↓
-;jpn:　いずれは　なかよく↓
-;jpn:　なりたいもんだ。@KEY()↓
-;jpn:◆‥‥うえの　ほうが↓
-;jpn:　すみやすかったよ。
+;jpn:◆わしら おしゃべりな グミぞくは↓
+;jpn: うえの やつらの むくちに↓
+;jpn: たえられなくて したにおりてきて@KEY()↓
+;jpn:◆べつのくにを つくってしまったが↓
+;jpn: いずれは なかよく↓
+;jpn: なりたいもんだ。@KEY()↓
+;jpn:◆‥‥うえの ほうが↓
+;jpn: すみやすかったよ。
 @KEYNP()
 』
 _DKFD_GUMI_F_END;marcus＆
-◆Ｙｏｕ　ｇｕｙｓ　ｈｅｌｐｅｄ　ｔｈｅ　ｕｐｐｅｒ　ｔｒｉｂｅ　ａｎｄ　ｔｈｅ　ｌｏｗｅｒ　ｔｒｉｂｅ　ｇａｉｎ　ｕｎｉｔｙ　ａｇａｉｎ．@KEY()↓
-◆Ｓｏｏｎ，　ｗｅ’ｌｌ　ｂｅ　ｏｎｅ　ｖｉｌｌａｇｅ　ａｇａｉｎ！　　Ｔｈａｎｋ　ｙｏｕ．
-;jpn:◆きみたちの　おかげで↓
-;jpn:　ちかいうちに↓
-;jpn:　うえのむらと　したのむらが@KEY()↓
+◆You guys helped the upper tribe and the lower tribe gain unity again.@KEY()↓
+◆Soon, we’ll be one village again!  Thank you.
+;jpn:◆きみたちの おかげで↓
+;jpn: ちかいうちに↓
+;jpn: うえのむらと したのむらが@KEY()↓
 ;jpn:◆ひとつのむらに↓
-;jpn:　まとまりそうじゃ。@WI(30)↓
-;jpn:　ありがとう。
+;jpn: まとまりそうじゃ。@WI(30)↓
+;jpn: ありがとう。
 @KEYNP()
 』
 
 MSG_DKFD_GUMI_G;
-◆Ｗｅ　ｍａｄｅ　ａ　ｃａｇｅ　ｆｏｒ　ｄｉｎｏｓａｕｒｓ　ａｎｄ　ｌｏｃｋｅｄ　ｔｈｅｍ　ｕｐ．．．@KEY()↓
-◆Ｔｈａｔ’ｓ　ｗｈａｔ　ｍｙ　ｂｒｏｔｈｅｒ　ｔｅｌｌｓ　ｍｅ．@KEY()↓
-◆Ｂｕｔ　Ｉ　ｄｏｎ’ｔ　ｂｅｌｉｅｖｅ　ｉｔ．．．　　Ｈｅ’ｓ　ｊｕｓｔ　ｓｐｅｗｉｎｇ　ｏｕｔ　ｏｆ　ｈｉｓ　ｃａｋｅ　ｈｏｌｅ．
-;jpn:◆きょうりゅうの　オリをつくって↓
-;jpn:　とじこめた‥‥@WI(15)と↓
-;jpn:　アニキはいうけど@KEY()↓
-;jpn:◆それって　つよがりだと↓
-;jpn:　おもうなぁ。
+◆We made a cage for dinosaurs and locked them up...@KEY()↓
+◆That’s what my brother tells me.@KEY()↓
+◆But I don’t believe it...  He’s just spewing out of his cake hole.
+;jpn:◆きょうりゅうの オリをつくって↓
+;jpn: とじこめた‥‥@WI(15)と↓
+;jpn: アニキはいうけど@KEY()↓
+;jpn:◆それって つよがりだと↓
+;jpn: おもうなぁ。
 @KEYNP()
 』
 
 MSG_DKFD_GUMI_H;＃間欠泉で遊ぶコドモ
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_H_END)
-◆Ａ　ｃｈｕｂｂｙ，　ｏｂｎｏｘｉｏｕｓ　ｋｉｄ　ｆｒｏｍ　ｓｏｍｅ　ｆｏｒｅｉｇｎ　ｃｏｕｎｔｒｙ　ｓａｉｄ　ｓｏｍｅｔｈｉｎｇ　ｈｅａｒｔｒｅｎｄｉｎｇ．．．@KEY()↓
-◆Ｓｏ，　Ｉ’ｍ　ｈｅａｌｉｎｇ　ｍｙ　ｗｏｕｎｄｓ　ｉｎ　ｔｈｅ　ｈｏｔ　ｓｐｒｉｎｇｓ．
-;jpn:◆どっかの　クニからきた↓
-;jpn:　いけすかないデブに@KEY()↓
-;jpn:◆こころが　はりさけそうなこと↓
-;jpn:　いわれちゃって‥‥@KEY()↓
-;jpn:◆おんせんで　そのキズを↓
-;jpn:　いやしてるんだ。
+◆A chubby, obnoxious kid from some foreign country said something heartrending...@KEY()↓
+◆So, I’m healing my wounds in the hot springs.
+;jpn:◆どっかの クニからきた↓
+;jpn: いけすかないデブに@KEY()↓
+;jpn:◆こころが はりさけそうなこと↓
+;jpn: いわれちゃって‥‥@KEY()↓
+;jpn:◆おんせんで そのキズを↓
+;jpn: いやしてるんだ。
 @KEYNP()
 』
 _DKFD_GUMI_H_END;marcus＆
-◆Ｈｏｔ　ｓｐｒｉｎｇｓ　ｒｏｃｋ！
-;jpn:◆おんせんって　いいよなぁ。
+◆Hot springs rock!
+;jpn:◆おんせんって いいよなぁ。
 @KEYNP()
 』
 
@@ -417,111 +417,111 @@ MSG_DKFD_GUMI_I;
 @GOSUB(MSG_SUB_DKFD_EGO)
 @!
 ;キャッシュディスペンサー機能のグミ
-;外国留学経験者？
+;外国留学経験者?
 ;ディ・スペンサー氏とは別人
-;◆がいこくの　かたですね？@KEY()↓
-;◆ボクは　あるけいざいたいこくに↓
-;　りゅうがく　けいけんのある↓
-;　はなしのわかる　グミです。@KEY()↓
-;◆なまえは　エーゴ・ステッキです。@KEY()↓
-;◆おやくにたてることが　あったら↓
-;　いつでも　いってください。@KEY()↓
+;◆がいこくの かたですね?@KEY()↓
+;◆ボクは あるけいざいたいこくに↓
+; りゅうがく けいけんのある↓
+; はなしのわかる グミです。@KEY()↓
+;◆なまえは エーゴ・ステッキです。@KEY()↓
+;◆おやくにたてることが あったら↓
+; いつでも いってください。@KEY()↓
 ;_DKFD_GUMI_I_MAIN;１
 ;◆おかねを↓
-;　ごようだて　しましょうか？@KEY()↓
+; ごようだて しましょうか?@KEY()↓
 ;＜＞＜＞
 ;◆わたしは↓
-;　きをわるくしたりなんかしません。@WI(20)↓
-;　また　いつでも　どうぞ。@KEYNP()
+; きをわるくしたりなんかしません。@WI(20)↓
+; また いつでも どうぞ。@KEYNP()
 ;』
-;◆あつかいきんがくと　どうがくの↓
-;　てすうりょうを　いただきますが↓
-;　よろしいですね？@KEY()↓
+;◆あつかいきんがくと どうがくの↓
+; てすうりょうを いただきますが↓
+; よろしいですね?@KEY()↓
 ;;＜＞＜＞
-;◆まだ　ほんとうに　このせかいで↓
-;　こまっては　いないようですね。@KEYNP()
+;◆まだ ほんとうに このせかいで↓
+; こまっては いないようですね。@KEYNP()
 ;』
 ;◆＜アズケル＞＜ヒキダス＞
 ;
-;◆おたがいに　とてもいい↓
-;　チャンスでしたね。@WI(20)↓
-;　また　よろしく　おねがいします。@KEYNP()
+;◆おたがいに とてもいい↓
+; チャンスでしたね。@WI(20)↓
+; また よろしく おねがいします。@KEYNP()
 ;』
-;◆ハーイ！　エーゴです。@KEY()↓
+;◆ハーイ! エーゴです。@KEY()↓
 ;１に続く
 
 ;MSG_DKFD_GUMI_J;物売り地底グミ
-;◆ともだちの　エーゴに↓
-;　たのまれて↓
-;　おみせやさんゴッコをしてるだよ。@KEY()↓
+;◆ともだちの エーゴに↓
+; たのまれて↓
+; おみせやさんゴッコをしてるだよ。@KEY()↓
 ;◆いらっしゃいませ。@KEY()↓
 
 
 ;以下ショップ
-;◆あんたから　もらった↓
-;　えはがき　みてぇなもの↓
-;　（おさつのことらしい）は↓
-;◆エーゴに　わたしとくだよ。@KEY()↓
+;◆あんたから もらった↓
+; えはがき みてぇなもの↓
+; (おさつのことらしい)は↓
+;◆エーゴに わたしとくだよ。@KEY()↓
 ;◆じゃーな。@WI(20)↓
-;　また　あそぼうぜ。@KEYNP()
+; また あそぼうぜ。@KEYNP()
 ;』
 
 ;お金が足りないと
 ;◆えはがきみてぇなの↓
-;（おさつのことらしい）が↓
-;　たりねぇと↓
-;◆エーゴに　おこられちまうだよ。@KEYNP()
+;(おさつのことらしい)が↓
+; たりねぇと↓
+;◆エーゴに おこられちまうだよ。@KEYNP()
 ;』
-;◆にもつが　いっぺぇで↓
-;　わたせねぇだよ。@KEYNP()
+;◆にもつが いっぺぇで↓
+; わたせねぇだよ。@KEYNP()
 ;』
 
-MSG_DKFD_GUMI_K;避難所Ａのグミ
-;電話鳥について？
-◆Ｔｈｅ　ｂｉｒｄ　ｒｉｇｈｔ　ｔｈｅｒｅ　ｓａｙｓ　ｓｔｒａｎｇｅ　ｗｏｒｄｓ　ｌｉｋｅ　”Ｈｅｌｌｏ？”　ａｎｄ　”ｃｌｉｃｋ　ｂｅｅｐ　ｂｅｅｐ　ｂｅｅｐ．”
+MSG_DKFD_GUMI_K;避難所Aのグミ
+;電話鳥について?
+◆The bird right there says strange words like ”Hello?” and ”click beep beep beep.”
 ;jpn:◆そこにいるトリは↓
-;jpn:　「もしもし」とか↓
-;jpn:　「ガチャン　ツーツーツー」とか@KEY()↓
-;jpn:◆へんなことを　いうのだ。
+;jpn: 「もしもし」とか↓
+;jpn: 「ガチャン ツーツーツー」とか@KEY()↓
+;jpn:◆へんなことを いうのだ。
 @KEYNP()
 』
 
-MSG_DKFD_GUMI_L;＃避難所Ｂのグミ
+MSG_DKFD_GUMI_L;＃避難所Bのグミ
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_L_END)
-◆Ｈｅｒｅ，　ｔｈｅ　ｄｉｎｏｓａｕｒｓ　ｄｏｎ’ｔ　ｃｏｍｅ　ａｎｄ　ａｔｔａｃｋ　ｍｅ．　　Ｓｏ，　Ｉ　ｃａｎ　ｒｅｌａｘ．@KEY()↓
-◆．．．Ｅｘｃｅｐｔ　ｎｏｗ　Ｉ　ｃａｎ’ｔ　ｇｅｔ　ｏｕｔ．
-;jpn:◆ここにいると　きょうりゅうが↓
-;jpn:　おそってこられなくて↓
-;jpn:　あんしんなんだけど@KEY()↓
+◆Here, the dinosaurs don’t come and attack me.  So, I can relax.@KEY()↓
+◆...Except now I can’t get out.
+;jpn:◆ここにいると きょうりゅうが↓
+;jpn: おそってこられなくて↓
+;jpn: あんしんなんだけど@KEY()↓
 ;jpn:◆‥‥でられなく↓
-;jpn:　なっちゃったんだよぉ。
+;jpn: なっちゃったんだよぉ。
 @KEYNP()
 』
 _DKFD_GUMI_L_END;marcus＆
-◆Ｗｉｔｈｏｕｔ　ｄｉｎｏｓａｕｒｓ，　ｔｈｉｓ　ｐｌａｃｅ　ｓｅｅｍｓ　ｌｉｋｅ　ｉｔ　ｉｓ　ｍｉｓｓｉｎｇ　ｓｏｍｅｔｈｉｎｇ　ｂｉｇ．
+◆Without dinosaurs, this place seems like it is missing something big.
 ;jpn:◆きょうりゅうがいないと↓
-;jpn:　ここのけしきって↓
-;jpn:　なんか　さみしいな。
+;jpn: ここのけしきって↓
+;jpn: なんか さみしいな。
 @KEYNP()
 』
 
 MSG_DKFD_BIRD_PHONE;marcus仮設定
 ;電話鳥のあいさつ
-◆Ｒｉｎｇ，　ｒｉｎｇ，　ｒｒｒｉｉｉｎｇ！！
+◆Ring, ring, rrriiing!!
 ;DAN:This is sound of telephone ringing but the bird is saying instead of real telephone.  The bird is like a phone bird.
-;jpn:◆チュルッ　チュルッチュ　ルー
+;jpn:◆チュルッ チュルッチュ ルー
 @KEY()↓
 @GOSUB(MSG_TEL)
 』
-;◆ああ　おもいだすぜ↓;
-;　グミドリアンの　あの↓
-;　あじ‥‥かおり！@KEY()↓
-;◆きょうりゅうの　オリの↓
-;　（洞窟の方角）のほうに↓
-;　どうくつが　あいてて@KEY()↓
-;◆ほのかに　グミドリアンの↓
-;　かおりがしたが　あんがい↓
-;　あんなところに　あったのかなぁ。@KEYNP()
+;◆ああ おもいだすぜ↓;
+; グミドリアンの あの↓
+; あじ‥‥かおり!@KEY()↓
+;◆きょうりゅうの オリの↓
+; (洞窟の方角)のほうに↓
+; どうくつが あいてて@KEY()↓
+;◆ほのかに グミドリアンの↓
+; かおりがしたが あんがい↓
+; あんなところに あったのかなぁ。@KEYNP()
 ;』
 
 ;グミの扉で「グミドリアン」をつかう。
@@ -536,46 +536,46 @@ MSG_DKFD_GUMI_DOOR_RECEIVE;
 ;@LOAD_GLOBAL_REG()
 ;@GOODSOUT_PLAYER(0,0)
 ;←
-;◆（グミぞくは　とびらを↓
-;　あけてくれた）
+;◆(グミぞくは とびらを↓
+; あけてくれた)
 ;@KEYNP()
 ;@SE(SE_se4a_foe_explosion)
 ;@HIDE_CHAR(PRSN_CHKA_FIELD_3B,OBJFX_HIDE_HSTRIPE)
 ;@SETF(FLG_DKFD_DOOR_DISAPPEAR)
 ;@!
 ;_GUMI_DOOR_RECEIVE_NG;
-;◆（そういうものでは↓
-;　グミぞくは　よろこばない）
+;◆(そういうものでは↓
+; グミぞくは よろこばない)
 ;@KEYNP()
 @!
 
 ;---------------------------------
 
 MSG_READ_DKFD_GUMI_1;marcus看板
-◆（Ｄｏｎ’ｔ　ｆｅｅｄ　ｔｈｅ　ｄｉｎｏｓａｕｒｓ　ｉｎ　ｔｈｅ　ｃａｇｅ！↓
-　　Ｔｈｅ　Ｂｏｓｓ）
+◆(Don’t feed the dinosaurs in the cage!↓
+  The Boss)
 
-;jpn:◆（オリのなかの　きょうりゅうに↓
-;jpn:　エサを　やるな！↓
-;jpn:　　　　　　　　　　　　　ボス　）
+;jpn:◆(オリのなかの きょうりゅうに↓
+;jpn: エサを やるな!↓
+;jpn:             ボス )
 @KEYNP()
 』
 
 MSG_READ_DKFD_GUMI_2;
-◆（Ｄｏｎ’ｔ　ｔａｌｋ　ｔｏ　ｔｈｅ　ｒｏｃｋ　ｉｆ　ｙｏｕ　ｈａｖｅ　ｎｏｔｈｉｎｇ　ｔｏ　ｓａｙ．@WI(20)　　Ｔｈｅ　Ｂｏｓｓ）
-;jpn:◆（ようも　ないのに↓
-;jpn:　いわに　はなしかけるな！↓
-;jpn:　　　　　　　　　　　　　ボス　）
+◆(Don’t talk to the rock if you have nothing to say.@WI(20)  The Boss)
+;jpn:◆(ようも ないのに↓
+;jpn: いわに はなしかけるな!↓
+;jpn:             ボス )
 @KEYNP()
 』
 
 MSG_READ_DKFD_GUMI_3;
-◆（Ｉｎ　ｃａｓｅ　ｏｆ　ｄａｎｇｅｒ，　ｅｖａｃｕａｔｅ　ｈｅｒｅ！↓
-　　Ｔｈｅ　Ｂｏｓｓ）
+◆(In case of danger, evacuate here!↓
+  The Boss)
 
-;jpn:◆（あぶないときには　ここに↓
-;jpn:　ひなんしよう！↓
-;jpn:　　　　　　　　　　　　　ボス　）
+;jpn:◆(あぶないときには ここに↓
+;jpn: ひなんしよう!↓
+;jpn:             ボス )
 @KEYNP()
 』
 

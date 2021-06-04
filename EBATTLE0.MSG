@@ -5,7 +5,7 @@
 ;1 2 3 4 5 6 7 8 91011121314151617
 ;1 2 3 4 5 6 7 8 910111213141516171819202122
 ;------------------------------------------------------------------------
-;		バトル用メッセージスクリプト（行動時）
+;		バトル用メッセージスクリプト(行動時)
 
 ;##### 先頭開始時のモンスター特殊状態お知らせメッセージ #####
 ;	1: サイコシールド状態に
@@ -22,36 +22,36 @@ MSG_BTL_AT_START_NEMURI; *for_force_param=5
 MSG_BTL_AT_START_FUUIN; *for_force_param=6
 ;くれさんの要望により、変更。0713
 ;←
-;　@DSP_OBJECT()は↓
-;　コンセントレーションできなくなっている！
+; @DSP_OBJECT()は↓
+; コンセントレーションできなくなっている!
 ;@KEY()
 @!
 
 MSG_BTL_AT_START_HEN; *for_force_param=7
 ←
-◆@DSP_OBJECT()　ｉｓ　ａｃｔｉｎｇ↓
-　　ａ　ｌｉｔｔｌｅ　ｂｉｔ　ｓｔｒａｎｇｅ．
-;jpn:　@DSP_OBJECT()は↓
-;jpn:　すこし　ヘンになっている‥‥。
+◆@DSP_OBJECT() is acting↓
+  a little bit strange.
+;jpn: @DSP_OBJECT()は↓
+;jpn: すこし ヘンになっている‥‥。
 @KEY()
 @!
 
 ;##### ランダムターゲット選択時のお知らせメッセージ #####
 MSG_BTL_RND_ACT_HEN;
 ←
-◆@DSP_ACTOR()　ｉｓ　ａｃｔｉｎｇ↓
-　　ａ　ｂｉｔ　ｕｎｕｓｕａｌ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　すこし　ヘンになっている‥‥。
+◆@DSP_ACTOR() is acting↓
+  a bit unusual.
+;jpn: @DSP_ACTOR()は↓
+;jpn: すこし ヘンになっている‥‥。
 @KEY()
 @!
 
 MSG_BTL_RND_ACT_KINOKO;
 ←
-◆@DSP_ACTOR()　ｉｓ↓
-　　ｆｅｅｌｉｎｇ　ｆｕｎｋｙ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　ふしぎな　きもちになっている‥‥。
+◆@DSP_ACTOR() is↓
+  feeling funky.
+;jpn: @DSP_ACTOR()は↓
+;jpn: ふしぎな きもちになっている‥‥。
 @KEY()
 @!
 
@@ -66,8 +66,8 @@ MSG_BTL_TATAKU;
 
 ;#モンスター側攻撃
 @SE(SE_se19_b_foe_hitsign)
-◆@DSP_ACTOR()　ｉｓ　ａｔｔａｃｋｉｎｇ！
-;jpn:　@DSP_ACTOR()のこうげき！
+◆@DSP_ACTOR() is attacking!
+;jpn: @DSP_ACTOR()のこうげき!
 @SE(SE_se1a_b_my_hit)
 @KEY()
 ;@WI(1)
@@ -76,8 +76,8 @@ MSG_BTL_TATAKU;
 ;#プレーヤー側打撃系攻撃
 _TATAKU_PLAYER_SIDE;
 @SE(SE_se18_b_my_hitsign)
-◆@DSP_ACTOR()　ａｔｔａｃｋｓ！
-;jpn:　@DSP_ACTOR()のこうげき！
+◆@DSP_ACTOR() attacks!
+;jpn: @DSP_ACTOR()のこうげき!
 @SE(SE_se1a_b_my_hit)
 @KEY()
 ;@WI(1)
@@ -87,8 +87,8 @@ _TATAKU_PLAYER_SIDE;
 MSG_BTL_UTU;
 ←
 @SE(SE_se18_b_my_hitsign)
-◆@DSP_ACTOR()　ａｔｔａｃｋｓ！
-;jpn:　@DSP_ACTOR()のこうげき！
+◆@DSP_ACTOR() attacks!
+;jpn: @DSP_ACTOR()のこうげき!
 @SE(SE_se1b_b_my_shot)
 @KEY()
 ;@WI(1)
@@ -97,58 +97,58 @@ MSG_BTL_UTU;
 ;#「ガード」
 MSG_BTL_MAMORU;
 ←
-◆@DSP_ACTOR()　ｉｓ　ｏｎ　ｇｕａｒｄ．
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　ガードしている@KEY()
+◆@DSP_ACTOR() is on guard.
+;jpn: @DSP_ACTOR()は↓
+;jpn: ガードしている@KEY()
 @!
 
 
 MSG_BTL_METAMORPHOSE;●(akm0616 w/itoi)
 ←
-◆@DSP_ACTOR()　ｒｅｌａｘｅｄ↓
-　　ａｎｄ　ｔｏｏｋ　ａ　ｄｅｅｐ　ｂｒｅａｔｈ．
-;jpn:　@DSP_ACTOR()は　ぜんしんの　ちからをぬき↓
-;jpn:　すべてのいきを　はきだした！
+◆@DSP_ACTOR() relaxed↓
+  and took a deep breath.
+;jpn: @DSP_ACTOR()は ぜんしんの ちからをぬき↓
+;jpn: すべてのいきを はきだした!
 @KEY()
 @!
 
 MSG_BTL_PLAYER_FLEE;●(akm0616 w/itoi)
 ←
-◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｔｒｉｅｄ　ｔｏ　ｇｅｔ　ａｗａｙ，
-;jpn:　@DSP_LCNAME()は↓
-;jpn:　にげだした！
+◆@GOSUB(MSG_ESUB_DSP_PARTY) tried to get away,
+;jpn: @DSP_LCNAME()は↓
+;jpn: にげだした!
 @WI(60)
 @KEY()↓
-◆ａｎｄ　ｄｉｄ！
-;jpn:　うまくいった！
+◆and did!
+;jpn: うまくいった!
 @KEY()
 @!
 
 MSG_BTL_PLAYER_FLEE_NG;●(akm0616 w/itoi)
 ←
-◆@GOSUB(MSG_ESUB_DSP_PARTY)　ｔｒｉｅｄ　ｔｏ　ｇｅｔ　ａｗａｙ，
-;jpn:　@DSP_LCNAME()は↓
-;jpn:　にげだした！
+◆@GOSUB(MSG_ESUB_DSP_PARTY) tried to get away,
+;jpn: @DSP_LCNAME()は↓
+;jpn: にげだした!
 @WI(60)
 @KEY()↓
-◆ｂｕｔ　ｃｏｕｌｄｎ’ｔ！
-;jpn:　しっぱいした！
+◆but couldn’t!
+;jpn: しっぱいした!
 @KEY()
 @!
 
-;//////////////////////////////ＰＳＩ系////////////////////////////////
+;//////////////////////////////PSI系////////////////////////////////
 
 ;#モンスターの能力チェック
 MSG_BTL_CHECK;
 ←
-◆@DSP_ACTOR()　ｓｐｉｅｓ　ｏｎ　↓
-　　@DSP_OBJECT()！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　@DSP_OBJECT()を　チェックした！
+◆@DSP_ACTOR() spies on ↓
+  @DSP_OBJECT()!
+;jpn: @DSP_ACTOR()は↓
+;jpn: @DSP_OBJECT()を チェックした!
 @KEY()
 @!
 
-;#ＰＳＩを試みる
+;#PSIを試みる
 MSG_BTL_PSI;
 ←
 ;;
@@ -158,24 +158,24 @@ MSG_BTL_PSI;
 @FALSE_GOTO(_PSI_PLAYER_SIDE)
 ;; モンスターサイド SE
 @SE(SE_se37_b_pk_fire4)
-◆@DSP_ACTOR()　ｔｒｉｅｄ↓
+◆@DSP_ACTOR() tried↓
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-;jpn:　@DSP_PSI(0)をこころみた！
-　　@DSP_PSI(0)！
+;jpn: @DSP_PSI(0)をこころみた!
+  @DSP_PSI(0)!
 @KEY()
 @GOTO(_SIDE_QUIT)
 ;
 _PSI_PLAYER_SIDE
 ;; プレーヤーサイド SE
 @SE(SE_se1d_b_my_psi)
-◆@DSP_ACTOR()　ｔｒｉｅｄ↓
+◆@DSP_ACTOR() tried↓
 ;jpn:◆@DSP_ACTOR()は↓
 @GET_CITEM()
 @XCHG()
-　　@DSP_PSI(0)！
-;jpn:　@DSP_PSI(0)をこころみた！
+  @DSP_PSI(0)!
+;jpn: @DSP_PSI(0)をこころみた!
 @KEY()
 ;
 _SIDE_QUIT
@@ -185,7 +185,7 @@ _SIDE_QUIT
 @!
 
 ;------- (akimiura) -------
-;◆ＰＫひっさつα
+;◆PKひっさつα
 _PBFX_1;
 @BTLFX(BFX_NULL,BFX_PSI_HISSATSU_ALFA)
 @WI(10)
@@ -201,7 +201,7 @@ _PBFX_1;
 @SE(SE_se5b)
 @!
 
-;◆ＰＫひっさつβ
+;◆PKひっさつβ
 _PBFX_2;
 @SE(SE_se30_b_pk_miso1)
 @BTLFX(BFX_NULL,BFX_PSI_HISSATSU_BETA)
@@ -220,7 +220,7 @@ _PBFX_2;
 @SE(SE_se5b)
 @!
 
-;◆ＰＫひっさつγ
+;◆PKひっさつγ
 _PBFX_3;
 @BTLFX(BFX_NULL,BFX_PSI_HISSATSU_GAMMA)
 @WI(5)
@@ -252,7 +252,7 @@ _PBFX_3;
 @SE(SE_se5b)
 @!
 
-;◆ＰＫひっさつΩ
+;◆PKひっさつΩ
 _PBFX_4;
 @BTLFX(BFX_NULL,BFX_PSI_HISSATSU_OMEGA)
 @WI(30)
@@ -299,7 +299,7 @@ _PBFX_4;
 @SE(SE_se5b)
 @!
 
-;◆ＰＫファイアα
+;◆PKファイアα
 _PBFX_5;
 @SE(SE_se33_b_pk_miso4)
 @BTLFX(BFX_NULL,BFX_PSI_FIRE_ALFA)
@@ -310,7 +310,7 @@ _PBFX_5;
 @WI(30)
 @!
 
-;◆ＰＫファイアβ
+;◆PKファイアβ
 _PBFX_6;
 @SE(SE_se33_b_pk_miso4)
 @BTLFX(BFX_NULL,BFX_PSI_FIRE_BETA)
@@ -322,7 +322,7 @@ _PBFX_6;
 @WI(30)
 @!
 
-;◆ＰＫファイアγ
+;◆PKファイアγ
 _PBFX_7;
 @SE(SE_se33_b_pk_miso4)
 @BTLFX(BFX_NULL,BFX_PSI_FIRE_GAMMA)
@@ -334,7 +334,7 @@ _PBFX_7;
 @WI(35)
 @!
 
-;◆ＰＫファイアΩ
+;◆PKファイアΩ
 _PBFX_8;
 @SE(SE_se33_b_pk_miso4)
 @BTLFX(BFX_NULL,BFX_PSI_FIRE_OMEGA)
@@ -349,7 +349,7 @@ _PBFX_8;
 @WI(55)
 @!
 
-;◆ＰＫフリーズα
+;◆PKフリーズα
 _PBFX_9;
 @SE(SE_se38_b_pk_freeze1)
 @BTLFX(BFX_NULL,BFX_PSI_FREEZE_ALFA)
@@ -362,7 +362,7 @@ _PBFX_9;
 @WI(27)
 @!
 
-;◆ＰＫフリーズβ
+;◆PKフリーズβ
 _PBFX_10;
 @SE(SE_se38_b_pk_freeze1)
 @BTLFX(BFX_NULL,BFX_PSI_FREEZE_BETA)
@@ -375,7 +375,7 @@ _PBFX_10;
 @WI(27)
 @!
 
-;◆ＰＫフリーズγ
+;◆PKフリーズγ
 _PBFX_11;
 @SE(SE_se38_b_pk_freeze1)
 @BTLFX(BFX_NULL,BFX_PSI_FREEZE_GAMMA)
@@ -388,7 +388,7 @@ _PBFX_11;
 @WI(42)
 @!
 
-;◆ＰＫフリーズΩ
+;◆PKフリーズΩ
 _PBFX_12;
 @SE(SE_se38_b_pk_freeze1)
 @BTLFX(BFX_NULL,BFX_PSI_FREEZE_OMEGA)
@@ -403,17 +403,17 @@ _PBFX_12;
 @WI(20)
 @!
 
-;◆ＰＫサンダーα
+;◆PKサンダーα
 _PBFX_13;
-;◆ＰＫサンダーβ
+;◆PKサンダーβ
 _PBFX_14;
-;◆ＰＫサンダーγ
+;◆PKサンダーγ
 _PBFX_15;
-;◆ＰＫサンダーΩ
+;◆PKサンダーΩ
 _PBFX_16;
 @!
 
-;ＰＫサンダー用の小さい稲妻
+;PKサンダー用の小さい稲妻
 MSG_BTL_THUNDER_SMALL;
 @SE(SE_se3d_b_pk_thunder2)
 @BTLFX(BFX_PSI_THUNDER_M,BFX_PSI_THUNDER_SMALL)
@@ -422,7 +422,7 @@ MSG_BTL_THUNDER_SMALL;
 @WI(30)
 @!
 
-;ＰＫサンダー用の大きい稲妻
+;PKサンダー用の大きい稲妻
 MSG_BTL_THUNDER_LARGE;
 @SE(SE_se3e_b_pk_thunder3)
 @BTLFX(BFX_PSI_THUNDER_M,BFX_PSI_THUNDER_LARGE)
@@ -433,27 +433,27 @@ MSG_BTL_THUNDER_LARGE;
 @WI(30)
 @!
 
-;ＰＫサンダー用のハズレ稲妻
+;PKサンダー用のハズレ稲妻
 MSG_BTL_THUNDER_MISS_SE;
 @SE(SE_se3c_b_pk_thunder1)
 @WI(60)
 @!
 
-;◆ＰＫフラッシュα
+;◆PKフラッシュα
 _PBFX_17;
 @SE(SE_se41_b_pk_starstorm2)
 @BTLFX(BFX_PSI_FLASH_M,BFX_PSI_FLASH_ALFA)
 @WI(30)
 @!
 
-;◆ＰＫフラッシュβ
+;◆PKフラッシュβ
 _PBFX_18;
 @SE(SE_se41_b_pk_starstorm2)
 @BTLFX(BFX_PSI_FLASH_M,BFX_PSI_FLASH_BETA)
 @WI(30)
 @!
 
-;◆ＰＫフラッシュγ
+;◆PKフラッシュγ
 _PBFX_19;
 @SE(SE_se43_b_pk_starstorm4)
 @WI(10)
@@ -465,7 +465,7 @@ _PBFX_19;
 @WI(26)
 @!
 
-;◆ＰＫフラッシュΩ
+;◆PKフラッシュΩ
 _PBFX_20;
 @SE(SE_se43_b_pk_starstorm4)
 @BTLFX(BFX_NULL,BFX_PSI_FLASH_OMEGA)
@@ -478,7 +478,7 @@ _PBFX_20;
 @WI(14)
 @!
 
-;◆ＰＫスターストームα
+;◆PKスターストームα
 _PBFX_21;
 @BTLFX(BFX_NULL,BFX_PSI_STARSTORM_ALFA)
 @WI(10)
@@ -502,7 +502,7 @@ _PBFX_21;
 @SE(SE_se5b)
 @!
 
-;◆ＰＫスターストームΩ
+;◆PKスターストームΩ
 _PBFX_22;
 @BTLFX(BFX_NULL,BFX_PSI_STARSTORM_OMEGA)
 @WI(20)
@@ -702,10 +702,10 @@ _PBFX_50;
 MSG_BTL_INORU;
 ←
 @SE(SE_se1c_b_my_pray)
-◆@DSP_ACTOR()　ｐｒａｙｅｄ↓
-　　ｗｉｔｈ　ｈｅｒ　ｗｈｏｌｅ　ｈｅａｒｔ！
-;jpn:　@DSP_ACTOR()は↓
-;jpn:　こころをこめて　いのった！
+◆@DSP_ACTOR() prayed↓
+  with her whole heart!
+;jpn: @DSP_ACTOR()は↓
+;jpn: こころをこめて いのった!
 @KEY()
 @!
 

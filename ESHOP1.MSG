@@ -1,2046 +1,2046 @@
 ;スカラビ南部のオアシスの武器密売人
-;（ｗｅａｐｏｎ　ｓｍｕｇｇｌｅｒ　ｉｎ　ｔｈｅ　ｏａｓｉｓ　ａｔ
-;　　ｓｏｕｔｈ　ｏｆ　Ｓｃａｒａｂｉ）
+;(weapon smuggler in the oasis at
+;  south of Scarabi)
 MSG_SUB_SHOPMES_MITUBAI_1;
-◆Ｓｉｎｃｅ　Ｉ’ｍ　ｄｅａｌｉｎｇ　ｉｎ　ｓｏｍｅ　ｐｒｅｔｔｙ　ｒｏｕｇｈ　ｓｔｕｆｆ，@KEY()↓
-◆Ｉ　ｃａｎ’ｔ　ｒｕｎ　ｍｙ　ｂｕｓｉｎｅｓｓ　ｉｎ　ｔｏｗｎ．
+◆Since I’m dealing in some pretty rough stuff,@KEY()↓
+◆I can’t run my business in town.
 ;jpn:◆ヤバイものあつかってるから↓
-;jpn:　まちじゃ↓
-;jpn:　しょうばいできないんだ。
+;jpn: まちじゃ↓
+;jpn: しょうばいできないんだ。
 @KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_2;
-◆Ｓｅｅ　ｙｏｕ　ｌａｔｅｒ．
+◆See you later.
 
 ;jpn:◆それじゃあな。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_MITUBAI_3;
-◆Ｓｅｅ　ｙｏｕ．．．　ｌａｔｅｒ．
+◆See you... later.
 
 ;jpn:◆それじゃあな。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_MITUBAI_4;
-◆Ｉ’ｖｅ　ｇｏｔ　ａ　ｗｉｄｅ　ｓｅｌｅｃｔｉｏｎ．　　Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｌｏｏｋｉｎｇ　ｆｏｒ？
+◆I’ve got a wide selection.  What are you looking for?
 
 ;jpn:◆いろいろあるよ↓
-;jpn:　なんにする？
+;jpn: なんにする?
 @KEY()
 @!
 MSG_SUB_SHOPMES_MITUBAI_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_6;
 
-◆Ｗｈｏ’ｓ　ｇｏｉｎｇ　ｔｏ　ｇｅｔ　ｔｈｉｓ？
+◆Who’s going to get this?
 @KEY()
 
-;jpn:◆だれが　もつんだい？@KEY()
+;jpn:◆だれが もつんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_MITUBAI_7;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｅｑｕｉｐ　ｉｔ　ｈｅｒｅ？↓
+◆Do you want to equip it here?↓
 
 ;jpn:◆そいつを↓
-;jpn:　ここでそうびするかい？↓
+;jpn: ここでそうびするかい?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_8;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｍｅ　ｔｏ　ｂｕｙ↓
-　　ｙｏｕｒ　@DSP_GOODS(0)@KEY()↓
-◆ｆｏｒ　@XCHG()＄@DSP_NUM(0)？↓
+◆Would you like me to buy↓
+  your @DSP_GOODS(0)@KEY()↓
+◆for @XCHG()＄@DSP_NUM(0)?↓
  
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルでかいあげようか？↓
+;jpn: @DSP_NUM(0)ドルでかいあげようか?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_9;
-◆@DSP_NAME(0)　　ｃａｎ’ｔ　ｅｑｕｉｐ　ｔｈｉｓ．
+◆@DSP_NAME(0)  can’t equip this.
 @KEY()↓
-◆Ａｒｅ　ｙｏｕ　ｓｔｉｌｌ　ｉｎｔｅｒｅｓｔｅｄ　ｉｎ　ｂｕｙｉｎｇ　ｉｔ？↓
+◆Are you still interested in buying it?↓
  
 ;jpn:◆@DSP_NAME(0)には↓
-;jpn:　そうびできないけど↓
-;jpn:◆それでもかうかい？↓
+;jpn: そうびできないけど↓
+;jpn:◆それでもかうかい?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_10;
-◆Ａｉｎ’ｔ　ｔｈａｔ　ｔｈｅ　ｐｉｔｓ．．．@KEY()↓
-◆Ｉ’ｍ　ａｃｔｕａｌｌｙ　ｇｏｎｎａ　ｈａｖｅ　ｔｏ　ｗａｉｔ　ｆｏｒ　ａｎｏｔｈｅｒ　ｃｕｓｔｏｍｅｒ　ｉｎ　ｔｈｉｓ　ｃｒａｚｙ　ｈｅａｔ？@KEY()↓
-◆Ｔｈａｔ’ｓ　ｈａｒｓｈ．．．
+◆Ain’t that the pits...@KEY()↓
+◆I’m actually gonna have to wait for another customer in this crazy heat?@KEY()↓
+◆That’s harsh...
 @KEY()↓
 
 ;jpn:◆なんだ‥‥↓
-;jpn:　このくそあついなか@KEY()↓
+;jpn: このくそあついなか@KEY()↓
 ;jpn:◆つぎのきゃくをまたなけりゃ↓
-;jpn:　いけないのか。↓
-;jpn:　つらいなー。@KEY()↓
+;jpn: いけないのか。↓
+;jpn: つらいなー。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_11;
-◆Ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ，@KEY()↓
-◆ｉｔ’ｓ　ａ　ｗａｓｔｅ　ｏｆ　ｍｙ　ｔｉｍｅ　ｔｏ　ｅｖｅｎ　ｔａｌｋ　ａｂｏｕｔ　ｄｅａｌｉｎｇ　ｗｉｔｈ　ｙｏｕ．
+◆If you don’t have enough money,@KEY()↓
+◆it’s a waste of my time to even talk about dealing with you.
 @KEY()↓
 
 ;jpn:◆おかねもってなけりゃ↓
-;jpn:　はなしになんないよ。@KEY()↓
+;jpn: はなしになんないよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_12;
-◆Ｙｏｕ　ｇｕｙｓ　ａｒｅ　ｃｏｍｐｌｅｔｅｌｙ　ｏｖｅｒｌｏａｄｅｄ．
+◆You guys are completely overloaded.
 @KEY()↓
-◆Ｈｏｗｅｖｅｒ，　Ｉ　ｃａｎ　ｂｕｙ　ｔｈｅ　ｓｔｕｆｆ　ｙｏｕ　ｄｏｎ’ｔ　ｎｅｅｄ．
+◆However, I can buy the stuff you don’t need.
 @KEY()↓
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｄｏ？↓
+◆What do you want to do?↓
  
 ;jpn:◆にもつがいっぱいだよ。@KEY()↓
 ;jpn:◆いらないにもつを↓
-;jpn:　かいとってもいいぜ。@KEY()↓
-;jpn:◆どうする？↓
+;jpn: かいとってもいいぜ。@KEY()↓
+;jpn:◆どうする?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_13;
-◆Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｇｏｉｎｇ　ｔｏ　ｓｅｌｌ　ｍｅ？↓
+◆What are you going to sell me?↓
 
 ;jpn:◆なにを↓
-;jpn:　うってくれるんだい？↓
+;jpn: うってくれるんだい?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_14;
-◆@DSP_GOODS(0)？↓
-　　Ｌｅｔ’ｓ　ｓｅｅ．．．@KEY()↓
-◆Ｈｏｗ　ａｂｏｕｔ　@XCHG()＄@DSP_NUM(0)？↓
+◆@DSP_GOODS(0)?↓
+  Let’s see...@KEY()↓
+◆How about @XCHG()＄@DSP_NUM(0)?↓
 
 ;jpn:◆@DSP_GOODS(0)だね。↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルでどうだい？↓
+;jpn: @DSP_NUM(0)ドルでどうだい?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_15;
-◆ＯＫ．　　Ｉ　ｔｈｏｕｇｈｔ　ｍｙ　ｏｆｆｅｒ　ｗａｓ　ｍｏｒｅ　ｔｈａｎ　ｆａｉｒ．
+◆OK.  I thought my offer was more than fair.
 @KEY()↓
 
 ;jpn:◆そうか。↓
-;jpn:　そんなら　そうしな。@KEY()↓
+;jpn: そんなら そうしな。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_16;
-◆Ａｒｅ　ｙｏｕ　ｔｒｙｉｎｇ　ｔｏ　ｃｏｎ　ｍｅ？　　Ｙｏｕ’ｖｅ　ｇｏｔ　ｎｏｔｈｉｎｇ　ｔｏ　ｓｅｌｌ！！
+◆Are you trying to con me?  You’ve got nothing to sell!!
 @KEY()↓
-;jpn:◆なんだ　うるもの↓
-;jpn:　もってないじゃないか。@KEY()↓
+;jpn:◆なんだ うるもの↓
+;jpn: もってないじゃないか。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_17;
-◆Ｓｏｒｒｙ，　ｔｈａｔ　ｉｓ　ａｎ　ｉｔｅｍ　Ｉ　ｊｕｓｔ　ｄｏｎ’ｔ　ｄｅａｌ　ｉｎ．
+◆Sorry, that is an item I just don’t deal in.
 @KEY()↓
  
 ;jpn:◆わるいな。↓
-;jpn:　そいつは　うちじゃ↓
-;jpn:　あつかってないんだよ。@KEY()↓
+;jpn: そいつは うちじゃ↓
+;jpn: あつかってないんだよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_18;
-◆Ｈｅｙ，　ｔｈａｎｋｓ！@KEY()↓
+◆Hey, thanks!@KEY()↓
 
 ;jpn:◆ありがとよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_19;
-◆Ｈｅｙ，ｔｈａｎｋｓ！@KEY()↓
+◆Hey,thanks!@KEY()↓
 
 ;jpn:◆ありがとよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_20
-◆Ｉｓ　ｔｈｅｒｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｙｏｕ　ｎｅｅｄ？↓
+◆Is there anything else you need?↓
 
 ;jpn:◆ほかにも↓
-;jpn:　なにかようはあるかい？↓
+;jpn: なにかようはあるかい?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_21;
-◆Ｓｏ　ｗｈａｔ’ｓ　ｔｈｅ　ｄｅａｌ？↓
+◆So what’s the deal?↓
 
-;jpn:◆どうしたいんだい？↓
+;jpn:◆どうしたいんだい?↓
 @!
 MSG_SUB_SHOPMES_MITUBAI_22;
-◆@DSP_NAME(0)　ｈａｓ　ｗａｙ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ　ａｎｄ　ｃａｎ’ｔ　ｃａｒｒｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) has way too much stuff and can’t carry anything else.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　にもつがいっぱいで↓
-;jpn:　もてないよ。@KEY()↓
-;jpn:◆ほかのやつが　もつかい？↓
+;jpn: にもつがいっぱいで↓
+;jpn: もてないよ。@KEY()↓
+;jpn:◆ほかのやつが もつかい?↓
 @!
-;レゲエジャンク（ｒｅｇｇａｅ ｊｕｎｋ）
+;レゲエジャンク(reggae junk)
 
 MSG_SUB_SHOPMES_JUNK1_1;
-◆Ｈｅｙ　ｍｏｎ！　　Ｙｏｕ　ｇｏｔ　ｔｏ　ｅｘｐａｎｄ　ｙｏｕｒ　ｍｉｎｄ　ａｎ’　ｕｓｅ　ｔｈｉｓ　ｓｔｕｆｆ　ｃｒｅａｔｉｖｅｌｙ．@KEY()↓
-◆Ｃ’ｍｏｎ，　ｂｕｙ　ｓｏｍｅ　ｏｆ　ｍｙ　ｊｕｎｋ！↓
+◆Hey mon!  You got to expand your mind an’ use this stuff creatively.@KEY()↓
+◆C’mon, buy some of my junk!↓
 
 ;jpn:◆なんにつかえるかは↓
-;jpn:　あなたのくふうしだい。@KEY()↓
-;jpn:◆ガラクタを　かってってくれ。↓
+;jpn: あなたのくふうしだい。@KEY()↓
+;jpn:◆ガラクタを かってってくれ。↓
 @!
 MSG_SUB_SHOPMES_JUNK1_2;
-◆Ｔａｋｅ　ｃａｒｅ，　ｍｏｎ！
+◆Take care, mon!
 
-;jpn:◆またな！
+;jpn:◆またな!
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_JUNK1_3;
-◆Ａ　ｓｃｉｅｎｔｉｆｉｃ　ｍｏｎ　ｍｉｇｈｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｍａｋｅ　ｇｏｏｄ　ａ　ｕｓｅ　ｏｆ　ｔｈｉｓ　ｈｅｒｅ　ｔｈｉｎｇ．．．
+◆A scientific mon might be able to make good a use of this here thing...
 
 ;jpn:◆サイエンスかんけいにつよい↓
-;jpn:　ひとだったら↓
-;jpn:　やくにたてられるんだけどなぁ。
+;jpn: ひとだったら↓
+;jpn: やくにたてられるんだけどなぁ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_JUNK1_4;
-◆Ｓｏ，　ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ，　ｍｏｎ？@KEY()
+◆So, what would you like, mon?@KEY()
  
-;jpn:◆なんにする？@KEY()
+;jpn:◆なんにする?@KEY()
 @!
 MSG_SUB_SHOPMES_JUNK1_5;
 
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_6;
-◆Ｗｈｏ’ｓ　ｇｏｉｎ’　ｔｏ　ｔａｋｅ　ｉｔ？@KEY()
+◆Who’s goin’ to take it?@KEY()
 
-;jpn:◆だれがもつんだい？@KEY()
+;jpn:◆だれがもつんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_JUNK1_7;
-◆Ｔｈａｎｋ　ｙｏｕ，　ｍｏｎ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｅｑｕｉｐ　ｔｈａｔ　ｈｅｒｅ　ｔｈｅｎ？↓
+◆Thank you, mon.@KEY()↓
+◆Do you want to equip that here then?↓
 
 ;jpn:◆ありがとう。@KEY()↓
-;jpn:◆ここでそうびするかい？↓
+;jpn:◆ここでそうびするかい?↓
 @!
 MSG_SUB_SHOPMES_JUNK1_8;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｂｅ　ｌｉｋｉｎｇ　ｍｅ　ｔｏ　ｂｕｙ↓
-　　ｙｏｕｒ　@DSP_GOODS(0)↓
-　　ｆｏｒ　@XCHG()＄@DSP_NUM(0)？@KEY()↓
+◆Would you be liking me to buy↓
+  your @DSP_GOODS(0)↓
+  for @XCHG()＄@DSP_NUM(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルで　かおうか？↓
+;jpn: @DSP_NUM(0)ドルで かおうか?↓
 @!
 MSG_SUB_SHOPMES_JUNK1_9;
-◆@DSP_NAME(0)　ｃａｎｎｏｔ　ｅｑｕｉｐ　ｔｈｉｓ　ｈｅｒｅ　ｔｈｉｎｇ．　　Ａｒｅ　ｙｏｕ　ｓｔｉｌｌ　ｗｉｌｌｉｎｇ　ｔｏ　ｂｕｙ　ｉｔ？↓
+◆@DSP_NAME(0) cannot equip this here thing.  Are you still willing to buy it?↓
  
 ;jpn:◆@DSP_NAME(0)にはそうび↓
-;jpn:　できないけど　それでもかう？↓
+;jpn: できないけど それでもかう?↓
 @!
 MSG_SUB_SHOPMES_JUNK1_10;
-◆Ａｈ，　Ｉ　ｓｅｅ　ｍｏｎ．　　Ｔｈａｔ’ｓ　ｔｏｏ　ｂａｄ．@KEY()↓
+◆Ah, I see mon.  That’s too bad.@KEY()↓
 
-;jpn:◆そうかい　ざんねんだなぁ。@KEY()↓
+;jpn:◆そうかい ざんねんだなぁ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_11;
-◆Ａｈ，　ｍｏｎ，　ｙｏｕ　ａｒｅ　ｓｈｏｒｔ　ｏｆ　ｔｈｅ　ｇｒｅｅｎ　ｓｔｕｆｆ，　ｉｆ　ｙｏｕ　ｋｎｏｗ　ｗｈａｔ　Ｉ　ｍｅａｎ，　ｍｏｎ．@KEY()↓
+◆Ah, mon, you are short of the green stuff, if you know what I mean, mon.@KEY()↓
 
-;jpn:◆おかねが　たんないよ。@KEY()↓
+;jpn:◆おかねが たんないよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_12;
-◆Ｗｅｌｌ，　ｙｏｕ’ｒｅ　ｓｔｒａｉｎｉｎｇ　ｗｉｔｈ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ｎｏｗ．@KEY()↓
-◆Ｉ’ｌｌ　ｂｕｙ　ｔｈｅ　ｔｈｉｎｇｓ　ｙｏｕ　ｄｏｎ’ｔ　ｎｅｅｄ，　ｍｏｎ．↓
+◆Well, you’re straining with too many things now.@KEY()↓
+◆I’ll buy the things you don’t need, mon.↓
 
-;jpn:◆もちものが　いっぱいだよ。@KEY()↓
+;jpn:◆もちものが いっぱいだよ。@KEY()↓
 ;jpn:◆いらないにもつを↓
-;jpn:　かいとってやろうか？↓
+;jpn: かいとってやろうか?↓
 @!
 MSG_SUB_SHOPMES_JUNK1_13;
-◆Ｗｈａｔ　ｉｓ　ｉｔ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｅｌｌ？@KEY()
-;jpn:◆なにを　うるんだい？@KEY()
+◆What is it you want to sell?@KEY()
+;jpn:◆なにを うるんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_JUNK1_14;
-◆@DSP_GOODS(0)？↓
-　　Ｏｈ，　Ｉ　ｃａｎ　ｇｉｖｅ　ｙｏｕ↓
-　　ａｂｏｕｔ　@XCHG()＄@DSP_NUM(0)，　ＯＫ？@KEY()↓
+◆@DSP_GOODS(0)?↓
+  Oh, I can give you↓
+  about @XCHG()＄@DSP_NUM(0), OK?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルでどうだ？↓
+;jpn: @DSP_NUM(0)ドルでどうだ?↓
 @!
 MSG_SUB_SHOPMES_JUNK1_15;
-◆Ｎｏｔ　ｇｏｉｎ’　ｔｏ　ｇｏ　ｆｏｒ　ｉｔ，　ｅｈ　ｍｏｎ？　　Ｎｏ　ｐｒｏｂｌｅｍ．
+◆Not goin’ to go for it, eh mon?  No problem.
 @KEY()↓
 
-;jpn:◆そうかい　やめるかい。@KEY()↓
+;jpn:◆そうかい やめるかい。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_16;
-◆Ｂｕｔ　ｌｏｏｋ，　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｔｈｉｎｇｓ　ｔｏ　ｓｅｌｌ！@KEY()↓
+◆But look, you don’t have any things to sell!@KEY()↓
 
-;jpn:◆なんだ　うるものが↓
-;jpn:　ないじゃないか。@KEY()↓
+;jpn:◆なんだ うるものが↓
+;jpn: ないじゃないか。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_17;
-◆Ｈｏｌｄ　ｏｎ，　ｍｏｎ．　　Ｗｅ　ｄｏｎ’ｔ　ｃａｒｒｙ　ｔｈａｔ　ｋｉｎｄ　ｏｆ　ｓｔｕｆｆ．@KEY()↓
+◆Hold on, mon.  We don’t carry that kind of stuff.@KEY()↓
 
-;jpn:◆おっと　そいつは↓
-;jpn:　ひきとれないんだ。@KEY()↓
+;jpn:◆おっと そいつは↓
+;jpn: ひきとれないんだ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_18;
-◆Ｔｈａｎｋｓ　ａ　ｌｏｔ，　ｍｏｎ．@KEY()↓
+◆Thanks a lot, mon.@KEY()↓
 
 ;jpn:◆ありがとうね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_19;
-◆Ｔｈｅｒｅ　ｙｏｕ　ｇｏ．↓
-　　Ｔｈａｎｋｓ　ａ　ｌｏｔ，　ｍｏｎ．@KEY()↓
+◆There you go.↓
+  Thanks a lot, mon.@KEY()↓
  
-;jpn:◆はい　ありがとうね。@KEY()↓
+;jpn:◆はい ありがとうね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK1_20;
-◆Ｉｓ　ｔｈｅｒｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｙｏｕ　ｎｅｅｄ，　ｍｏｎ？↓
+◆Is there anything else you need, mon?↓
 
-;jpn:◆ほかにようじはあるかい？↓
+;jpn:◆ほかにようじはあるかい?↓
 @!
 MSG_SUB_SHOPMES_JUNK1_21;
-◆Ｌａｙ　ｉｔ　ｏｎ　ｍｅ．↓
+◆Lay it on me.↓
 
-;jpn:◆ようはなんだい？↓
+;jpn:◆ようはなんだい?↓
 @!
 MSG_SUB_SHOPMES_JUNK1_22;
-◆Ｏｈ，　@DSP_NAME(0)　ｈａｓ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｗｏｎ’ｔ　ｏｎｅ　ｏｆ　ｙｏｕｒ　ｆｒｉｅｎｄｓ　ｃａｒｒｙ　（ｉｔ／ｔｈｅｍ）　ｆｏｒ　ｙｏｕ？↓
+◆Oh, @DSP_NAME(0) has too many things already.@KEY()↓
+◆Won’t one of your friends carry (it／them) for you?↓
  
-;jpn:◆あらま　@DSP_NAME(0)は↓
-;jpn:　にもつが　いっぱいだよ。@KEY()↓
-;jpn:◆ほかのひとが　もつかい？↓
+;jpn:◆あらま @DSP_NAME(0)は↓
+;jpn: にもつが いっぱいだよ。@KEY()↓
+;jpn:◆ほかのひとが もつかい?↓
 @!
-;マジカントの黒ウサギ（ｂｌａｃｋ ｒａｂｂｉｔ ｉｎ Ｍａｇｉｃａｎｔ）
+;マジカントの黒ウサギ(black rabbit in Magicant)
 MSG_SUB_SHOPMES_RABBIT_1;
-◆Ｈｉ！　　Ｔｈｉｓ　ｓｈｏｐ　ｓｐｅｃｉａｌｉｚｅｓ　ｉｎ　ｐｕｄｄｉｎｇｓ　ａｎｄ　ｐｅｎｄａｎｔｓ！@KEY()↓
-◆Ｙｏｕ’ｄ　ｌｉｋｅ　ｔｏ　ｂｕｙ　ｓｏｍｅ，　ｗｏｕｌｄｎ’ｔ　ｙｏｕ？↓
+◆Hi!  This shop specializes in puddings and pendants!@KEY()↓
+◆You’d like to buy some, wouldn’t you?↓
   
 ;jpn:◆こんにちは↓
-;jpn:　プリンとペンダントの↓
-;jpn:　おみせだよ。@KEY()↓
-;jpn:◆どうするつもり？↓
+;jpn: プリンとペンダントの↓
+;jpn: おみせだよ。@KEY()↓
+;jpn:◆どうするつもり?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_2;
-◆Ｔｈａｎｋ　ｙｏｕ　ｓｏ　ｍｕｃｈ！
+◆Thank you so much!
 
 ;jpn:◆どうもありがとう。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_RABBIT_3;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ｂａｃｋ　ｓｏｏｎ！
+◆Please come back soon!
 
 ;jpn:◆またよろしく。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_RABBIT_4;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｂｕｙ？！@KEY()↓
+◆What do you want buy?!@KEY()↓
 
-;jpn:◆なにを　かう？@KEY()
+;jpn:◆なにを かう?@KEY()
 @!
 MSG_SUB_SHOPMES_RABBIT_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_6;
-◆ＯＫ，　ｗｈｏ’ｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？！@KEY()
+◆OK, who’s going to carry it?!@KEY()
 
-;jpn:◆だれが　もつんだい？@KEY()
+;jpn:◆だれが もつんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_RABBIT_7;
-◆Ｏｈ，　ｔｈａｎｋ　ｙｏｕ！　　Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｅｑｕｉｐ　ｉｔ　ｉｎ　ｔｈｅ　ｓｔｏｒｅ？！↓
+◆Oh, thank you!  Do you want to equip it in the store?!↓
 
 ;jpn:◆ありがとう↓
-;jpn:　ここで　そうびしてみる？↓
+;jpn: ここで そうびしてみる?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_8;
-◆Ｓｈａｌｌ　Ｉ　ｂｕｙ↓
-　　ｙｏｕｒ　@DSP_GOODS(0)↓
-　　ｆｏｒ　@XCHG()＄@DSP_NUM(0)？@KEY()↓
+◆Shall I buy↓
+  your @DSP_GOODS(0)↓
+  for @XCHG()＄@DSP_NUM(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルで@KEY()↓
-;jpn:◆かいあげようか？↓
+;jpn: @DSP_NUM(0)ドルで@KEY()↓
+;jpn:◆かいあげようか?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_9;
-◆Ｂｕｔ　@DSP_NAME(0)　ｗｉｌｌ　ｎｏｔ　ｂｅ　ａｂｌｅ　ｔｏ　ｅｑｕｉｐ　ｔｈｉｓ？！@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｓｔｉｌｌ　ｗａｎｔ　ｔｏ　ｂｕｙ　ｉｔ？！↓
+◆But @DSP_NAME(0) will not be able to equip this?!@KEY()↓
+◆Do you still want to buy it?!↓
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　そうびできないけど@KEY()↓
-;jpn:◆それでもかいますか？↓
+;jpn: そうびできないけど@KEY()↓
+;jpn:◆それでもかいますか?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_10;
-◆Ｐｌｅａｓｅ　ｈｕｒｒｙ　ｂａｃｋ！@KEY()↓
+◆Please hurry back!@KEY()↓
 
 ;jpn:◆またよろしくね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_11;
-◆Ｓｈａｍｅ　ｏｎ　ｙｏｕ！　　Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ！@KEY()↓
+◆Shame on you!  You don’t have enough money!@KEY()↓
  
-;jpn:◆おかねが　たりないみたいだね。@KEY()↓
+;jpn:◆おかねが たりないみたいだね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_12;
 
-◆Ｙｏｕ’ｖｅ　ｇｏｔ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ　ａｌｒｅａｄｙ！@KEY()↓
-◆Ｈｏｗ　ａｂｏｕｔ　ｓｅｌｌｉｎｇ　ｍｅ　ｓｏｍｅ　ｏｆ　ｔｈｅ　ｔｈｉｎｇｓ　ｙｏｕ　ｄｏｎ’ｔ　ｎｅｅｄ？！↓
+◆You’ve got too much stuff already!@KEY()↓
+◆How about selling me some of the things you don’t need?!↓
 
 ;jpn:◆にもつがいっぱいだね。@KEY()↓
-;jpn:◆いらないにもつを　うる？↓
+;jpn:◆いらないにもつを うる?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_13;
-◆ＯＫ，　ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｅｌｌ？！@KEY()
+◆OK, what do you want to sell?!@KEY()
 
-;jpn:◆なにを　うる？@KEY()
+;jpn:◆なにを うる?@KEY()
 @!
 MSG_SUB_SHOPMES_RABBIT_14;
-◆@DSP_GOODS(0)？@KEY()↓
-◆Ｉ　ｃａｎ　ｂｕｙ　ｔｈａｔ↓
-　　ｆｏｒ　@XCHG()＄@DSP_NUM(0)．↓
-　　Ｉｓ　ｉｔ　ａ　ｄｅａｌ？！@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
+◆I can buy that↓
+  for @XCHG()＄@DSP_NUM(0).↓
+  Is it a deal?!@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
 ;@XCHG()
 ;jpn:◆@DSP_NUM(0)ドルで↓
-;jpn:　かってあげるけど　いいかな？↓
+;jpn: かってあげるけど いいかな?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_15;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ！@KEY()↓
+◆Please come again!@KEY()↓
 
-;jpn:◆また　よろしくね。@KEY()↓
+;jpn:◆また よろしくね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_16;
-◆Ｕｈｈｈ，　ｗｈａｔ’ｓ　ｔｈｅ　ｄｅａｌ？！↓
-　　Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｔｏ　ｓｅｌｌ！@KEY()↓
+◆Uhhh, what’s the deal?!↓
+  You don’t have anything to sell!@KEY()↓
 
-;jpn:◆うるものが　ないみたいだね。@KEY()↓
+;jpn:◆うるものが ないみたいだね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_17;
-◆Ｄｏｎ’ｔ　ｍｅａｎ　ｔｏ　ｒａｉｎ　ｏｎ　ｙｏｕｒ　ｐａｒａｄｅ，@KEY()↓
-◆ｂｕｔ　ｔｈｅｒｅ’ｓ　ｎｏ　ｐｏｓｓｉｂｌｅ　ｗａｙ　Ｉ　ｃａｎ　ｂｕｙ↓
-　　ｙｏｕｒ　@DSP_GOODS(0)！@KEY()↓
+◆Don’t mean to rain on your parade,@KEY()↓
+◆but there’s no possible way I can buy↓
+  your @DSP_GOODS(0)!@KEY()↓
  
 ;jpn:◆わるいけど↓
-;jpn:　@DSP_GOODS(0)は↓
-;jpn:　ひきとれないんだ。@KEY()↓
+;jpn: @DSP_GOODS(0)は↓
+;jpn: ひきとれないんだ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_18;
-◆Ｔｈａｎｋ　ｙｏｕ！@KEY()↓
+◆Thank you!@KEY()↓
 
 ;jpn:◆ありがとうね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_19;
-◆Ｔｈａｎｋ　ｙｏｕ！@KEY()↓
+◆Thank you!@KEY()↓
 ;jpn:◆ありがとうね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_RABBIT_20;
-◆Ｃａｎ　Ｉ　ｄｏ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｆｏｒ　ｙｏｕ？↓
+◆Can I do anything else for you?↓
 
-;jpn:◆ほかにも　ようはある？↓
+;jpn:◆ほかにも ようはある?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_21;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｄｏ　ｎｏｗ？！↓
+◆What do you want to do now?!↓
 
-;jpn:◆こんどのようは　なに？↓
+;jpn:◆こんどのようは なに?↓
 @!
 MSG_SUB_SHOPMES_RABBIT_22;
-◆@DSP_NAME(0)　　ｈａｓ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ！@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0)  has too much stuff!@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　にもつが　いっぱいだよ。@KEY()↓
-;jpn:◆ほかのひとが　もつかい？↓
+;jpn: にもつが いっぱいだよ。@KEY()↓
+;jpn:◆ほかのひとが もつかい?↓
 @!
 ;
-;ショップタイプＢのメッセージ
+;ショップタイプBのメッセージ
 ;(1,2,3,4,5,6,10,11,12,18,19,20)
 ;
-;パン屋（ｂａｋｅｒｙ）
+;パン屋(bakery)
 MSG_SUB_SHOPMES_BAKERY1_1;
-◆Ｈｅｌｌｏ．　Ｍａｙ　Ｉ　ｈｅｌｐ　ｙｏｕ？@KEY()↓
+◆Hello. May I help you?@KEY()↓
 
 ;jpn:◆いらっしゃいませ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_2;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．
+◆Thank you very much.
 
 ;jpn:◆ありがとうございました。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BAKERY1_3;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．
+◆Please come again.
 
-;jpn:◆また　よろしく。
+;jpn:◆また よろしく。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BAKERY1_4;
-◆Ｗｈａｔ　ｓｈａｌｌ　Ｉ　ｇｅｔ　ｙｏｕ？@KEY()
+◆What shall I get you?@KEY()
 
-;jpn:◆なにに　しますか？@KEY()
+;jpn:◆なにに しますか?@KEY()
 @!
 MSG_SUB_SHOPMES_BAKERY1_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()↓
+◆Who is going to carry it?@KEY()↓
 
-;jpn:◆どなたが　おもちになりますか？@KEY()↓
+;jpn:◆どなたが おもちになりますか?@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_10;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．@KEY()↓
+◆Please come again.@KEY()↓
 
-;jpn:◆また　よろしく。@KEY()↓
+;jpn:◆また よろしく。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_11;
-◆Ｉｔ　ｓｅｅｍｓ　ｌｉｋｅ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆It seems like you don’t have enough money.@KEY()↓
 
 ;jpn:◆おかねたりないようですよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_12;
-◆Ｙｏｕ　ｈａｖｅ　ｓｏ　ｍａｎｙ　ｂｅｌｏｎｇｉｎｇｓ．．．　　Ｙｏｕ　ｊｕｓｔ　ｃａｎ’ｔ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ！
+◆You have so many belongings...  You just can’t carry any more!
 
 ;jpn:◆にもつ‥‥↓
-;jpn:　いっぱいですよ。
+;jpn: いっぱいですよ。
 @KEYNP()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございます。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_19;
 
-◆Ｔｈａｎｋ　ｙｏｕ　ｓｏ　ｍｕｃｈ．@KEY()↓
+◆Thank you so much.@KEY()↓
 
-;jpn:◆まいどあり！@KEY()↓
+;jpn:◆まいどあり!@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_20;
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙ　ｏｔｈｅｒ　ｏｒｄｅｒｓ？↓
+◆Do you have any other orders?↓
 
-;jpn:◆ほかに　ごちゅうもんは？↓
+;jpn:◆ほかに ごちゅうもんは?↓
 @!
 MSG_SUB_SHOPMES_BAKERY1_22;
-◆@DSP_NAME(0)　ｄｏｅｓｎ’ｔ　ｓｅｅｍ　ｔｏ　ｂｅ　ａｂｌｅ　ｔｏ　ａｃｃｅｐｔ　ａｎｙ　ｍｏｒｅ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) doesn’t seem to be able to accept any more things.@KEY()↓
+◆Can someone else carry it?↓
 
-;jpn:◆@DSP_NAME(0)さんは　これいじょう↓
-;jpn:　にもつがもてないようです。@KEY()↓
+;jpn:◆@DSP_NAME(0)さんは これいじょう↓
+;jpn: にもつがもてないようです。@KEY()↓
 ;jpn:◆ほかのかたが↓
-;jpn:　おもちに　なりますか？↓
+;jpn: おもちに なりますか?↓
 @!
-;ハンバーガー店員（ｈｕｍｂｅｒｇｅｒ ｓｈｏｐ）
+;ハンバーガー店員(humberger shop)
 
 MSG_SUB_SHOPMES_BURGER_1;
-◆Ｈｅｌｌｏ，　ｍａｙ　Ｉ　ｔａｋｅ　ｙｏｕｒ　ｏｒｄｅｒ？↓
-　　（ｓｍｉｌｅ，　ｓｍｉｌｅ）@KEY()↓
+◆Hello, may I take your order?↓
+  (smile, smile)@KEY()↓
 
 ;jpn:◆いらっしゃいませ。↓
-;jpn:　　（ニコニコ）@KEY()↓
+;jpn:  (ニコニコ)@KEY()↓
 @!
 MSG_SUB_SHOPMES_BURGER_2;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．↓
-　　（ｓｍｉｌｅ，　ｓｍｉｌｅ）
+◆Thank you very much.↓
+  (smile, smile)
 
 ;jpn:◆ありがとうございました。↓
-;jpn:　　（ニコニコ）
+;jpn:  (ニコニコ)
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BURGER_3;
-◆Ｈａｖｅ　ａ　ｎｉｃｅ　ｄａｙ！↓
-　　（ｓｍｉｌｅ，　ｓｍｉｌｅ）
+◆Have a nice day!↓
+  (smile, smile)
 
-;jpn:◆また　よろしくおねがいしまーす。↓
-;jpn:　　（ニコニコ）
+;jpn:◆また よろしくおねがいしまーす。↓
+;jpn:  (ニコニコ)
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BURGER_4;
-◆Ｗｈａｔ　ｃａｎ　Ｉ　ｇｅｔ　ｆｏｒ　ｙｏｕ？@KEY()↓
+◆What can I get for you?@KEY()↓
 
-;jpn:◆なにに　いたしましょうか？@KEY()↓
+;jpn:◆なにに いたしましょうか?@KEY()↓
 @!
 MSG_SUB_SHOPMES_BURGER_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BURGER_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｔａｋｅ　ｔｈｉｓ？@KEY()↓
+◆Who is going to take this?@KEY()↓
 
-;jpn:◆どなたが　おもちになりますか？@KEY()
+;jpn:◆どなたが おもちになりますか?@KEY()
 @!
 MSG_SUB_SHOPMES_BURGER_10;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．@KEY()↓
+◆Please come again.@KEY()↓
 
 ;jpn:◆またよろしくおねがいします。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BURGER_11;
-◆Ｗｈｏｏｐｓ！　　Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆Whoops!  You don’t have enough money.@KEY()↓
 
 ;jpn:◆あっ↓
-;jpn:　おかねがたりないですね。@KEY()↓
+;jpn: おかねがたりないですね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BURGER_12;
-◆Ｏｏｏｐｓ！　Ｙｏｕ　ａｌｒｅａｄｙ　ｈａｖｅ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．
+◆Ooops! You already have too much stuff.
  
-;jpn:◆あっ　おにもつがいっぱいですね。
+;jpn:◆あっ おにもつがいっぱいですね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BURGER_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございます。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BURGER_19;
-◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｓｈｏｐｐｉｎ　ｈｅｒｅ．@KEY()↓
+◆Thank you for shoppin here.@KEY()↓
 
-;jpn:◆いつも　ありがとうございます！@KEY()↓
+;jpn:◆いつも ありがとうございます!@KEY()↓
 @!
 MSG_SUB_SHOPMES_BURGER_20;
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙ　ｏｔｈｅｒ　ｏｒｄｅｒｓ？↓
+◆Do you have any other orders?↓
 
-;jpn:◆ほかに　ごちゅうもんは↓
-;jpn:　ございますか？↓
+;jpn:◆ほかに ごちゅうもんは↓
+;jpn: ございますか?↓
 @!
 MSG_SUB_SHOPMES_BURGER_22;
-◆@DSP_NAME(0)　ｓｅｅｍｓ　ｔｏ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｄｏｅｓ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｗａｎｔ　ｔｏ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) seems to have too many things.@KEY()↓
+◆Does someone else want to carry it?↓
 
 ;jpn:◆@DSP_NAME(0)さんは↓
-;jpn:　にもつがいっぱいのようですね。@KEY()↓
+;jpn: にもつがいっぱいのようですね。@KEY()↓
 ;jpn:◆ほかのひとが↓
-;jpn:　おもちになりますか？↓
+;jpn: おもちになりますか?↓
 @!
-;アカンベーカリー（Ａｋａｎ−ｂｅ［ｍａｋｉｎｇ ｆａｃｅ］−ｋｅｒｙ）
+;アカンベーカリー(Akan−be［making face］−kery)
 MSG_SUB_SHOPMES_BAKERY2_1;
-◆Ｉ　ｌｉｋｅ　ｔｏ　ｓｅｌｌ　ｍｙ　ｇｏｏｄｉｅｓ　ｏｎ　ｔｈｅ　ｓｔｒｅｅｔ．@KEY()↓
-◆Ｓｕｒｅ，　ｆｌｉｅｓ　ｌａｎｄ　ｏｎ　ｔｈｅｍ，　ｂｕｔ　ｉｎ　ｍｙ　ｏｐｉｎｉｏｎ，　ｉｔ　ｍａｋｅｓ　ｔｈｅｍ　ｔａｓｔｅ　ｅｖｅｎ　ｂｅｔｔｅｒ！@KEY()↓
+◆I like to sell my goodies on the street.@KEY()↓
+◆Sure, flies land on them, but in my opinion, it makes them taste even better!@KEY()↓
 ;jpn:◆ろじょうはんばいなので↓
-;jpn:　ハエもたかったりして↓
-;jpn:　いいあじに　しあがってるよ。@KEY()↓
+;jpn: ハエもたかったりして↓
+;jpn: いいあじに しあがってるよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_2;
-◆Ｔｈａｎｋｓ　ａ　ｌｏｔ．
+◆Thanks a lot.
 
 ;jpn:◆まいどありー。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BAKERY2_3;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．
+◆Please come again.
 
 ;jpn:◆またよろしくね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BAKERY2_4;
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ？@KEY()
+◆What would you like?@KEY()
 
-;jpn:◆なんにしますか？@KEY()
+;jpn:◆なんにしますか?@KEY()
 @!
 MSG_SUB_SHOPMES_BAKERY2_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｔｈｉｓ？@KEY()↓
+◆Who is going to carry this?@KEY()↓
 
-;jpn:◆だれがもちますか？@KEY()↓
+;jpn:◆だれがもちますか?@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_10;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．@KEY()↓
+◆Please come again.@KEY()↓
 
 ;jpn:◆またよろしくね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_11;
-◆Ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆It looks like you don’t have enough money.@KEY()↓
 
 ;jpn:◆おかねが↓
-;jpn:　たりないみたいですよ。@KEY()↓
+;jpn: たりないみたいですよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_12;
-◆Ｙｏｕ　ａｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｓｅｌｌ　ｓｏｍｅ　ｔｈｉｎｇｓ，　ｏｒ　ｔｈｒｏｗ　ｔｈｅｍ　ａｗａｙ，　ｏｒ　ｊｕｓｔ　ｌｅａｖｅ　ｔｈｅｍ　ｓｏｍｅｗｈｅｒｅ．
+◆You are already carrying too much stuff.@KEY()↓
+◆You should sell some things, or throw them away, or just leave them somewhere.
  
 ;jpn:◆にもつがいっぱいですよ。@KEY()↓
 ;jpn:◆どこかでうるか↓
-;jpn:　すてるか　あずけるか↓
-;jpn:　してくださいよ。
+;jpn: すてるか あずけるか↓
+;jpn: してくださいよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BAKERY2_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆どうもありがとう。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_19;
-◆Ｔｈａｎｋｓ．@KEY()↓
+◆Thanks.@KEY()↓
 
 ;jpn:◆まいどありー。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_20;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you want to buy anything else?↓
 
-;jpn:◆ほかに　なにか↓
-;jpn:　かいますか？↓
+;jpn:◆ほかに なにか↓
+;jpn: かいますか?↓
 @!
 MSG_SUB_SHOPMES_BAKERY2_22;
-◆@DSP_NAME(0)　ｉｓ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｃａｎ　ａｎｙｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ　ｆｏｒ　ｈｉｍ？↓
+◆@DSP_NAME(0) is carrying too many things already.@KEY()↓
+◆Can anyone else carry it for him?↓
 
 ;jpn:◆@DSP_NAME(0)くんは↓
-;jpn:　にもつがいっぱいですね。@KEY()↓
-;jpn:◆ほかのひとが　もちますか？↓
+;jpn: にもつがいっぱいですね。@KEY()↓
+;jpn:◆ほかのひとが もちますか?↓
 @!
-;サマーズレストラン（Ｓｕｍｍｅｒ’ｓ ｒｅｓｔａｕｒａｎｔ）
+;サマーズレストラン(Summer’s restaurant)
 
 MSG_SUB_SHOPMES_REST_1;
-◆Ｓｏ，　ｗｈｅｒｅ’ｓ　ｙｏｕｒ　ｍｏｍ　ａｎｄ　ｄａｄ？@KEY()↓
-◆Ｙｏｕ　ｍｅａｎ　ｙｏｕ　ｋｉｄｓ　ｃａｍｅ　ｉｎ　ｈｅｒｅ　ａｌｌ　ｂｙ　ｙｏｕｒｓｅｌｖｅｓ．．．？@KEY()↓
-◆Ｗｅｌｌ，　Ｉ　ｃａｎ　ｍａｋｅ　ｙｏｕｒ　ｏｒｄｅｒ　ｔｏ　ｇｏ．@KEY()↓
+◆So, where’s your mom and dad?@KEY()↓
+◆You mean you kids came in here all by yourselves...?@KEY()↓
+◆Well, I can make your order to go.@KEY()↓
 
-;jpn:◆あれ　パパかママは↓
-;jpn:　いっしょじゃないのかな？@KEY()↓
-;jpn:◆こどもだけで　きたのか‥‥。@WI(20)↓
-;jpn:　じゃ　テイクアウトに↓
-;jpn:　してあげようね。@KEY()↓
+;jpn:◆あれ パパかママは↓
+;jpn: いっしょじゃないのかな?@KEY()↓
+;jpn:◆こどもだけで きたのか‥‥。@WI(20)↓
+;jpn: じゃ テイクアウトに↓
+;jpn: してあげようね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_REST_2;
-◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
-◆Ｂｅ　ｃａｒｅｆｕｌ　ｎｏｔ　ｔｏ　ｄｒｏｐ　ｏｒ　ｓｐｉｌｌ　ｉｔ．
+◆Thank you.@KEY()↓
+◆Be careful not to drop or spill it.
 
 ;jpn:◆どうもありがとう。@KEY()↓
 ;jpn:◆おとしたり↓
-;jpn:　こぼしたりしないように↓
-;jpn:　きをつけるんだよ。
+;jpn: こぼしたりしないように↓
+;jpn: きをつけるんだよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_REST_3;
-◆Ｗｅ　ａｒｅ　ｌｏｏｋｉｎｇ　ｆｏｒｗａｒｄ　ｔｏ　ｓｅｅｉｎｇ　ｙｏｕ　ａｇａｉｎ．
+◆We are looking forward to seeing you again.
 
-;jpn:◆またの　ごらいてんを↓
-;jpn:　おまちしております。
+;jpn:◆またの ごらいてんを↓
+;jpn: おまちしております。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_REST_4;
-◆Ｗｈａｔ　ｃａｎ　Ｉ　ｇｅｔ　ｆｏｒ　ｙｏｕ？@KEY()
+◆What can I get for you?@KEY()
 
-;jpn:◆なんにしますか？@KEY()
+;jpn:◆なんにしますか?@KEY()
 @!
 MSG_SUB_SHOPMES_REST_5;
-◆Ｙｏｕ　ｗａｎｔ↓
-　　ａ　@DSP_GOODS(0)？@KEY()↓
+◆You want↓
+  a @DSP_GOODS(0)?@KEY()↓
 
 ;◆@DSP_GOODS(0)↓
-;jpn:　にするんだね。@KEY()↓
+;jpn: にするんだね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_REST_6;
-◆Ｗｈｏｓｅ　ｏｒｄｅｒ　ｉｓ　ｔｈｉｓ？@KEY()
+◆Whose order is this?@KEY()
 
 ;jpn:◆だれの↓
-;jpn:　ちゅうもんかな？@KEY()
+;jpn: ちゅうもんかな?@KEY()
 @!
 MSG_SUB_SHOPMES_REST_10;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．@KEY()↓
+◆Please come again.@KEY()↓
 
-;jpn:◆また　よろしくね。@KEY()↓
+;jpn:◆また よろしくね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_REST_11;
-◆Ｓｏｒｒｙ，　ｂｕｔ　ｙｏｕ　ｈａｖｅｎ’ｔ　ｇｏｔ　ｅｎｏｕｇｈｔ　ｔｏ　ｃｏｖｅｒ　ｔｈｅ　ｃｈｅｃｋ．@KEY()↓
+◆Sorry, but you haven’t got enought to cover the check.@KEY()↓
 
 ;jpn:◆おかねが↓
-;jpn:　たりないみたいだよ。@KEY()↓
+;jpn: たりないみたいだよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_REST_12;
-◆Ｙｏｕ　ａｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｓｅｌｌ　ｙｏｕｒ　ｓｔｕｆｆ，　ｔｈｒｏｗ　ｓｏｍｅｔｈｉｎｇ　ａｗａｙ，　ｏｒ　ｊｕｓｔ　ａｂａｎｄｏｎ　ｉｔ．@KEY()↓
-◆Ｔｈｅｎ，　ｃｏｍｅ　ａｇａｉｎ．
+◆You are already carrying too much stuff.@KEY()↓
+◆You can sell your stuff, throw something away, or just abandon it.@KEY()↓
+◆Then, come again.
 
 ;jpn:◆にもつがいっぱいだね。@KEY()↓
-;jpn:◆どこかで　うるか↓
-;jpn:　すてるか　あずけるか↓
-;jpn:　してから　またおいで。
+;jpn:◆どこかで うるか↓
+;jpn: すてるか あずけるか↓
+;jpn: してから またおいで。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_REST_18;
-◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you.@KEY()↓
 
 ;jpn:◆ありがとう。@KEY()↓
 @!
 MSG_SUB_SHOPMES_REST_19;
-◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you.@KEY()↓
 
 ;jpn:◆ありがとう。@KEY()↓
 @!
 MSG_SUB_SHOPMES_REST_20;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｏｒｄｅｒ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you want to order anything else?↓
 
 ;jpn:◆ほかにちゅうもんは↓
-;jpn:　あるかな？↓
+;jpn: あるかな?↓
 @!
 MSG_SUB_SHOPMES_REST_22;
-◆@DSP_NAME(0)　ｉｓ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　（ｉｔ／ｔｈｅｍ）　ｆｏｒ　ｈｉｍ？↓
+◆@DSP_NAME(0) is already carrying too many things.@KEY()↓
+◆Can someone else carry (it／them) for him?↓
 
 ;jpn:◆@DSP_NAME(0)くんは↓
-;jpn:　にもつがいっぱいだね。@KEY()↓
-;jpn:◆ほかのひとが　もつかい？↓
+;jpn: にもつがいっぱいだね。@KEY()↓
+;jpn:◆ほかのひとが もつかい?↓
 @!
-;フリカケ売り（ｓｅａｓｏｎｉｎｇ ｓｈｏｐ）
+;フリカケ売り(seasoning shop)
 MSG_SUB_SHOPMES_FURI1_1;
-◆Ｈｅｌｌｏ！　　Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｓｏｍｅ　ｓｅａｓｏｎｉｎｇｓ　ｔｏ　ａｄｄ　ｔｏ　ｙｏｕｒ　ｆｏｏｄｓ　ａｔ　ｍｅａｌ　ｔｉｍｅ？@KEY()↓
-◆Ｔｈｅｙ　ａｒｅ　ｒｅａｌｌｙ　ｑｕｉｔｅ　ｍｉｒａｃｕｌｏｕｓ！@KEY()↓
-◆Ｗｈｅｎｅｖｅｒ　ｙｏｕ　ｅａｔ　ｓｏｍｅｔｈｉｎｇ，　ｔｈｅ　ｓｅａｓｏｎｉｎｇｓ　ｗｉｌｌ　ｓｐｒｉｎｋｌｅ　ａｕｔｏｍａｔｉｃａｌｌｙ．@KEY()↓
-◆Ｔｈｅｙ　ｃｏｍｅ　ｉｎ　ｔｈｅｓｅ　ｃｕｔｅ　ｌｉｔｔｌｅ　ｐａｃｋｅｔｓ　ａｎｄ　ｊａｒｓ．@KEY()↓
+◆Hello!  Would you like some seasonings to add to your foods at meal time?@KEY()↓
+◆They are really quite miraculous!@KEY()↓
+◆Whenever you eat something, the seasonings will sprinkle automatically.@KEY()↓
+◆They come in these cute little packets and jars.@KEY()↓
   
-;jpn:◆こんにちわ！@KEY()↓
-;jpn:◆しょくじには　かかせない↓
-;jpn:　あじつけ　こもの↓
-;jpn:　いかがですか。@KEY()↓
-;jpn:◆あらふしぎ！@KEY()↓
-;jpn:◆なにかを　たべようとすると↓
-;jpn:　じどうてきに　ふりかけちゃう↓
-;jpn:　ふしぎなこびんに　はいってるよ。@KEY()↓
+;jpn:◆こんにちわ!@KEY()↓
+;jpn:◆しょくじには かかせない↓
+;jpn: あじつけ こもの↓
+;jpn: いかがですか。@KEY()↓
+;jpn:◆あらふしぎ!@KEY()↓
+;jpn:◆なにかを たべようとすると↓
+;jpn: じどうてきに ふりかけちゃう↓
+;jpn: ふしぎなこびんに はいってるよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI1_2;
-◆Ｃｏｍｅ　ａｇａｉｎ．
+◆Come again.
 
-;jpn:◆また　こいよ。
+;jpn:◆また こいよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_FURI1_3;
-◆Ｃｏｍｅ　ａｇａｉｎ．
+◆Come again.
 
-;jpn:◆また　こいよ。
+;jpn:◆また こいよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_FURI1_4;
-◆Ｗｈａｔ　ｋｉｎｄ　ｄｏ　ｙｏｕ　ｌｉｋｅ？@KEY()
+◆What kind do you like?@KEY()
 
-;jpn:◆なんにする？@KEY()
+;jpn:◆なんにする?@KEY()
 @!
 MSG_SUB_SHOPMES_FURI1_5;
-◆Ｙｏｕ　ｗａｎｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)？@KEY()↓
+◆You want↓
+  the @DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI1_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｔａｋｅ　ｉｔ？@KEY()↓
+◆Who is going to take it?@KEY()↓
 
-;jpn:◆だれが　もつんだい？@KEY()↓
+;jpn:◆だれが もつんだい?@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI1_10;
-◆Ｃｏｍｅ　ａｇａｉｎ．@KEY()↓
+◆Come again.@KEY()↓
 
-;jpn:◆また　こいよ。@KEY()↓
+;jpn:◆また こいよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI1_11;
-◆Ｏｈ，ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆Oh,you don’t have enough money.@KEY()↓
 
-;jpn:◆あれ　おかねが↓
-;jpn:　たんないよ。@KEY()↓
+;jpn:◆あれ おかねが↓
+;jpn: たんないよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI1_12;
-◆Ｙｏｕ　ａｌｒｅａｄｙ　ｈａｖｅ　ｔｈｅ　ｍａｘｉｍｕｍ　ｎｕｍｂｅｒ　ｏｆ　ｔｈｉｎｇｓ　ｙｏｕ　ｃａｎ　ｃａｒｒｙ．@KEY()↓
-◆Ｙｏｕ’ｒｅ　ｇｏｉｎｇ　ｔｏ　ｈａｖｅ　ｔｏ　ｓｅｌｌ　ｓｏｍｅ　ｔｈｉｎｇｓ，　ｏｒ　ｊｕｓｔ　ｔｈｒｏｗ　ｔｈｅｍ　ａｗａｙ．@KEY()↓
-◆Ｔｈｅｎ　ｃｏｍｅ　ａｇａｉｎ．
+◆You already have the maximum number of things you can carry.@KEY()↓
+◆You’re going to have to sell some things, or just throw them away.@KEY()↓
+◆Then come again.
 
-;jpn:◆にもつが　いっぱいだね。@KEY()↓
-;jpn:◆どこかで　うるか↓
-;jpn:　すてるか　あずけるかして↓
-;jpn:　また　こいよ。
+;jpn:◆にもつが いっぱいだね。@KEY()↓
+;jpn:◆どこかで うるか↓
+;jpn: すてるか あずけるかして↓
+;jpn: また こいよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_FURI1_18;
-◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you.@KEY()↓
 
 ;jpn:◆ありがとうね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI1_19;
-◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you.@KEY()↓
 
 ;jpn:◆ありがとうね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI1_20;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you want to buy anything else?↓
 
 ;jpn:◆ほかに↓
-;jpn:　なにか　かうかい？↓
+;jpn: なにか かうかい?↓
 @!
 MSG_SUB_SHOPMES_FURI1_22;
 
-◆@DSP_NAME(0)　ｉｓ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) is already carrying too many things.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　にもつが　いっぱいで↓
-;jpn:　もてないようだね。@KEY()↓
-;jpn:◆ほかのひとが　もつかい？↓
+;jpn: にもつが いっぱいで↓
+;jpn: もてないようだね。@KEY()↓
+;jpn:◆ほかのひとが もつかい?↓
 @!
-;レッドスネーク（ｒｅｄ ｓｎａｋｅ）
+;レッドスネーク(red snake)
 
 MSG_SUB_SHOPMES_SNAKE_1;
-◆Ｈｉｓｓｓｓ，　Ｉ’ｍ　Ｒｅｄ　Ｓｎａｋｅ．．．　ｃｏｍｅ　ｏｎ　ｉｎ！@KEY()↓
-◆Ｋｉｓｓｓｓ　ｏｆ　Ｆｉｒｅ！　Ａｒｍｐｉｔ　ｈａｉｒ　ｆｅｒｔｉｌｉｚｅｒ！↓
-　　Ｙｅｓｓｓｓｓｓｓ！@KEY()↓
+◆Hissss, I’m Red Snake... come on in!@KEY()↓
+◆Kissss of Fire! Armpit hair fertilizer!↓
+  Yesssssss!@KEY()↓
 
-;jpn:◆ハイ　レッドスネーク　カモン！↓
-;jpn:　キッス　オブ　ファイア↓
-;jpn:　わきげのエサ‥‥はくしゅー！@KEY()↓
+;jpn:◆ハイ レッドスネーク カモン!↓
+;jpn: キッス オブ ファイア↓
+;jpn: わきげのエサ‥‥はくしゅー!@KEY()↓
 @!
 MSG_SUB_SHOPMES_SNAKE_2;
-◆Ｙｅｓｓｓｓｓ，　ｙｏｕ　ｇｏｔ　ｓｓｓｓｏｍｅ　ｇｏｏｄ　ｓｓｓｓｔｕｆｆ！
+◆Yesssss, you got ssssome good sssstuff!
 
 ;jpn:◆おきゃくさん↓
-;jpn:　いいものかったね。
+;jpn: いいものかったね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_SNAKE_3;
-◆Ｏｈ，　ｎｏ．．．@KEY()↓
-◆Ｙｏｕ　ｄｉｓｓｓｓａｐｐｏｉｎｔ　ｍｅ．．．
+◆Oh, no...@KEY()↓
+◆You dissssappoint me...
 
 ;jpn:◆おきゃくさん‥‥↓
-;jpn:　がっかりだな‥‥。
+;jpn: がっかりだな‥‥。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_SNAKE_4;
-◆Ｗｈａｔ　ｉｓｓｓｓ　ｉｔ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ？@KEY()
+◆What issss it you want to buy?@KEY()
 
-;jpn:◆おきゃくさん　なにをかう？@KEY()
+;jpn:◆おきゃくさん なにをかう?@KEY()
 @!
 MSG_SUB_SHOPMES_SNAKE_5;
-◆Ｈｉｓｓｓｓｓ，　ｈｅｒｅ　ｉｓｓｓｓｓ↓
-　　ｙｏｕｒ　@DSP_GOODS(0)！@KEY()↓
+◆Hisssss, here isssss↓
+  your @DSP_GOODS(0)!@KEY()↓
 
-;jpn:◆はいよ！↓
-;jpn:　@DSP_GOODS(0)いっちょう！@KEY()↓
+;jpn:◆はいよ!↓
+;jpn: @DSP_GOODS(0)いっちょう!@KEY()↓
 @!
 MSG_SUB_SHOPMES_SNAKE_6;
-◆Ｗｈｏ　ｉｓｓｓｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｔｈｉｓｓｓｓｓ？@KEY()
+◆Who issss going to carry thisssss?@KEY()
 
-;jpn:◆だれがもつんだい？@KEY()
+;jpn:◆だれがもつんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_SNAKE_10;
-◆Ｏｈ，　ｎｏ．．．@KEY()↓
-◆Ｙｏｕ　ｄｉｓｓｓｓａｐｐｏｉｎｔ　ｍｅ．．．@KEY()↓
+◆Oh, no...@KEY()↓
+◆You dissssappoint me...@KEY()↓
 
 ;jpn:◆おきゃくさん‥‥↓
-;jpn:　がっかりだな‥‥。@KEY()↓
+;jpn: がっかりだな‥‥。@KEY()↓
 @!
 MSG_SUB_SHOPMES_SNAKE_11;
-◆Ｏｈ，　ｎｏ．．．@KEY()↓
-◆Ｙｏｕ　ｄｉｓｓｓｓａｐｐｏｉｎｔ　ｍｅ．．．　　Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．．．@KEY()↓
+◆Oh, no...@KEY()↓
+◆You dissssappoint me...  You don’t have enough money...@KEY()↓
  
 ;jpn:◆おきゃくさん‥‥↓
-;jpn:　がっかりだな‥‥↓
-;jpn:　おかねがたりないですよ。@KEY()↓
+;jpn: がっかりだな‥‥↓
+;jpn: おかねがたりないですよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_SNAKE_12;
-◆Ｙｏｕ　ａｒｅ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ　ｓｓｓｓｓｔｕｆｆ@KEY()↓
-◆Ｓｓｓｓｅｌｌ　ｉｔ，　ｏｒ　ｔｏｓｓｓｓ　ｉｔ，　ａｎｄ　ｃｏｍｅ　ａｇａｉｎ！
+◆You are carrying too much ssssstuff@KEY()↓
+◆Ssssell it, or tossss it, and come again!
 
 ;jpn:◆うーん↓
-;jpn:　にもつがいっぱいだね。@KEY()↓
-;jpn:◆どこかで　うるか↓
-;jpn:　すてるか　あずけるかして↓
-;jpn:　またきてちょー。
+;jpn: にもつがいっぱいだね。@KEY()↓
+;jpn:◆どこかで うるか↓
+;jpn: すてるか あずけるかして↓
+;jpn: またきてちょー。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_SNAKE_18;
-◆Ｔｈａｎｋｓｓｓｓｓｓ！@KEY()↓
+◆Thankssssss!@KEY()↓
 
-;jpn:◆まいどありっ！@KEY()↓
+;jpn:◆まいどありっ!@KEY()↓
 @!
 MSG_SUB_SHOPMES_SNAKE_19;
-◆Ｔｈａｎｋｓｓｓｓｓ！@KEY()↓
+◆Thanksssss!@KEY()↓
 
-;jpn:◆まいどありっ！@KEY()↓
+;jpn:◆まいどありっ!@KEY()↓
 @!
 MSG_SUB_SHOPMES_SNAKE_20;
-◆Ｃａｎ　Ｉ　ｄｏ　ａｎｙｔｈｉｎｇ　ｅｌｓｓｓｓｅ　ｆｏｒ　ｙｏｕ？↓
+◆Can I do anything elsssse for you?↓
 
-;jpn:◆ほかにごようは？↓
+;jpn:◆ほかにごようは?↓
 @!
 MSG_SUB_SHOPMES_SNAKE_22;
-◆Ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓｓｓｓ　ｔｏ　ｃａｒｒｙ．@KEY()↓
-◆Ｃａｎ　ａｎｙｏｎｅ　ｅｌｓｓｓｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆You have too many thingssss to carry.@KEY()↓
+◆Can anyone elsssse carry it?↓
 
 ;jpn:◆おきゃくさん↓
-;jpn:　もちものがいっぱいだよ。@KEY()↓
-;jpn:◆ほかのひとがもつかい？↓
+;jpn: もちものがいっぱいだよ。@KEY()↓
+;jpn:◆ほかのひとがもつかい?↓
 @!
-;パンクジャンク（ｐｕｎｋ ｊｕｎｋ）
+;パンクジャンク(punk junk)
 
 MSG_SUB_SHOPMES_JUNK2_1;
-◆Ｃ’ｍｏｎ　ｉｎ！↓
-　　Ｗｅ’ｖｅ　ｇｏｔ　ｔｈｅ　ｇｏｏｄｓ，　ｇ！@KEY()↓
+◆C’mon in!↓
+  We’ve got the goods, g!@KEY()↓
 
-;jpn:◆オーケー　ウェルカム！↓
-;jpn:　いいものあるよ。@KEY()↓
+;jpn:◆オーケー ウェルカム!↓
+;jpn: いいものあるよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK2_2;
-◆Ｔｈａｎｋｓ　ａ　ｌｏｔ，　ｂｒｏ！
+◆Thanks a lot, bro!
 
-;jpn:◆センキュー　センキュー↓
-;jpn:　ありがとよっ。
+;jpn:◆センキュー センキュー↓
+;jpn: ありがとよっ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_JUNK2_3;
-◆Ｍｏｄ−ｂｏｙ　Ｊｅｒｋ！↓
-　　Ｙｏｕ　ｃａｎ’ｔ　ｄｏ　ｍｅ　ｌｉｋｅ　ｔｈａｔ！
+◆Mod−boy Jerk!↓
+  You can’t do me like that!
   
-;jpn:◆ガッデム！↓
-;jpn:　そりゃあないぜ　あんちゃん！
+;jpn:◆ガッデム!↓
+;jpn: そりゃあないぜ あんちゃん!
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_JUNK2_4;
-◆Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｌｏｏｋｉｎｇ　ｆｏｒ？！@KEY()↓
+◆What are you looking for?!@KEY()↓
 
-;jpn:◆ワット　ドゥー　ユー　ウォント↓
-;jpn:　なんに　するんだ　あんちゃん？@KEY()↓
+;jpn:◆ワット ドゥー ユー ウォント↓
+;jpn: なんに するんだ あんちゃん?@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK2_5;
-◆Ｏｋａｙ，　ｍａｎ．　　Ｙｏｕ　ｗａｎｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)？@KEY()↓
+◆Okay, man.  You want↓
+  the @DSP_GOODS(0)?@KEY()↓
 
-;jpn:◆オーケー　オーケー↓
-;jpn:　@DSP_GOODS(0)だな。@KEY()↓
+;jpn:◆オーケー オーケー↓
+;jpn: @DSP_GOODS(0)だな。@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK2_6;
-◆Ｈｅｙ　ｇｕｙｓ，　ｗｈｏ’ｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｔｈｉｓ？@KEY()↓
+◆Hey guys, who’s going to carry this?@KEY()↓
 
-;jpn:◆ヘイ　ボーイズ！↓
-;jpn:　だれが　もつんだい？@KEY()↓
+;jpn:◆ヘイ ボーイズ!↓
+;jpn: だれが もつんだい?@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK2_10;
-◆Ｉ’ｍ　ｗｉｔｈ　ｙｏｕ．↓
-　　Ｌｏｏｋｉｎ’　ｆｏｒ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？@KEY()↓
+◆I’m with you.↓
+  Lookin’ for anything else?@KEY()↓
 
-;jpn:◆オーケー　わかった↓
-;jpn:　ほかに　ようはあるかい？@KEY()↓
+;jpn:◆オーケー わかった↓
+;jpn: ほかに ようはあるかい?@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK2_11;
-◆Ｈｅｙ　ｈｏｍｉｅｅ！↓
-　　Ｙｏｕ　ａｉｎ’ｔ　ｇｏｔ　ｔｈｅ　ｄｏｕｇｈ　ｆｏｒ　ｔｈｉｓ　ｐｕｒｃｈａｓｅ！@KEY()
+◆Hey homiee!↓
+  You ain’t got the dough for this purchase!@KEY()
 
-;jpn:◆オウ　マイ　ゴッド！↓
-;jpn:　マネー　たんないよ。@KEY()
+;jpn:◆オウ マイ ゴッド!↓
+;jpn: マネー たんないよ。@KEY()
 @!
 MSG_SUB_SHOPMES_JUNK2_12;
-◆Ｍｏｓｔ　ｕｎｆｏｒｔｕｎａｔｅｌｙ　ｆｏｒ　ｙｏｕ，↓
-　　ｙｏｕ’ｒｅ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．
+◆Most unfortunately for you,↓
+  you’re carrying too much stuff.
 
-;jpn:◆オウ　なんてこったい！↓
-;jpn:　にもつ　もちすぎだぜ。
+;jpn:◆オウ なんてこったい!↓
+;jpn: にもつ もちすぎだぜ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_JUNK2_18;
-◆Ｔｈａｎｋ　ｙｏｕ，ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you,thank you.@KEY()↓
 
-;jpn:◆センキュー　センキュー↓
-;jpn:　ありがとよ！@KEY()↓
+;jpn:◆センキュー センキュー↓
+;jpn: ありがとよ!@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK2_19;
-◆Ｔｈａｎｋ　ｙｏｕ，ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you,thank you.@KEY()↓
 
-;jpn:◆センキュー　センキュー↓
-;jpn:　まいどあり！@KEY()↓
+;jpn:◆センキュー センキュー↓
+;jpn: まいどあり!@KEY()↓
 @!
 MSG_SUB_SHOPMES_JUNK2_20;
-◆Ｄｏ　ｙｏｕ　ｎｅｅｄ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you need anything else?↓
 
-;jpn:◆ほかにも　ようはあるかい？↓
+;jpn:◆ほかにも ようはあるかい?↓
 @!
 MSG_SUB_SHOPMES_JUNK2_22;
-◆Ｓｏｒｒｙ，　ｂｕｄｄｙ！↓
-　　@DSP_NAME(0)　ｈａｓ　ｇｏｔ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｏｎｅ　ｏｆ　ｙｏｕ　ｏｔｈｅｒ　ｇｕｙｓ　ｗａｎｔ　ｔｏ　ｈａｕｌ　ｉｔ　ｆｏｒ　ｈｉｍ？↓
+◆Sorry, buddy!↓
+  @DSP_NAME(0) has got too much stuff already.@KEY()↓
+◆One of you other guys want to haul it for him?↓
 
-;jpn:◆オウ　ノー！↓
-;jpn:　@DSP_NAME(0)は↓
-;jpn:　にもつが　いっぱいだぜ。@KEY()↓
-;jpn:◆ほかのやつが　もつかい？↓
+;jpn:◆オウ ノー!↓
+;jpn: @DSP_NAME(0)は↓
+;jpn: にもつが いっぱいだぜ。@KEY()↓
+;jpn:◆ほかのやつが もつかい?↓
 @!
-;墓守（ｇｒａｖｅ ｙａｒｄ ｋｅｅｐｅｒ）
+;墓守(grave yard keeper)
 
 MSG_SUB_SHOPMES_GRAVE_1;
-;◆あんたたち　おハカのしたを↓
-;　ぬけてきたのか？！@KEY()↓
+;◆あんたたち おハカのしたを↓
+; ぬけてきたのか?!@KEY()↓
 ;◆むてっぽうなことするねぇ。@WI(20)↓
-;　‥‥ハラもへったことだろう。↓
-;◆あ@WI(15)　ちょうどいい。@WI(20)↓
-;　おじさん　たべものをもってたよ。@KEY()↓
+; ‥‥ハラもへったことだろう。↓
+;◆あ@WI(15) ちょうどいい。@WI(20)↓
+; おじさん たべものをもってたよ。@KEY()↓
 
-◆Ｙｏｕ　ｍｕｓｔ　ｈａｖｅ　ａ　ｌｏｎｇ，　ｔｏｕｇｈ　ｒｏａｄ　ａｈｅａｄ　ｏｆ　ｙｏｕ，　ｄｏ　ｙｏｕ　ｎｏｔ？@KEY()↓
-◆Ｎｏ，　ｔｈｅｒｅ　ｉｓ　ｎｏ　ｎｅｅｄ　ｔｏ　ｅｘｐｌａｉｎ．　　Ｉ　ａｌｒｅａｄｙ　ｋｎｏｗ．．．　ｙｏｕ　ｍｕｓｔ　ｂｅ　ｈｕｎｇｒｙ．@KEY()↓
-◆Ｔｈｉｓ　ｉｓ　ｇｏｏｄ　ｔｉｍｉｎｇ　ｆｏｒ　ｙｏｕ．　　Ｉ　ｈａｐｐｅｎ　ｔｏ　ｂｅ　ｃａｒｒｙｉｎｇ　ｓｏｍｅｔｈｉｎｇ　ｔｏ　ｅａｔ．@KEY()↓
+◆You must have a long, tough road ahead of you, do you not?@KEY()↓
+◆No, there is no need to explain.  I already know... you must be hungry.@KEY()↓
+◆This is good timing for you.  I happen to be carrying something to eat.@KEY()↓
 
-;jpn:◆あんたたち　いろいろ↓
-;jpn:　たいへんみたいだね。@KEY()↓
-;jpn:◆いや　いわなくてもわかる。↓
-;jpn:　‥‥ハラもへったことだろう。@KEY()↓
-;jpn:◆あ　ちょうどいい。↓
-;jpn:　おじさん　たべものをもってたよ。@KEY()↓
+;jpn:◆あんたたち いろいろ↓
+;jpn: たいへんみたいだね。@KEY()↓
+;jpn:◆いや いわなくてもわかる。↓
+;jpn: ‥‥ハラもへったことだろう。@KEY()↓
+;jpn:◆あ ちょうどいい。↓
+;jpn: おじさん たべものをもってたよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_GRAVE_2;
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｆｕｌｌｙ　ｒｅｃｏｖｅｒ，　ｔｈｅｒｅ　ｉｓ　ａ　ｖｉｌｌａｇｅ　ｆｕｌｌ　ｏｆ．．．@KEY()↓
-◆ｉｎｔｅｒｅｓｔｉｎｇ　ｐｅｏｐｌｅ．．．　ｊｕｓｔ　ａｈｅａｄ．　　Ｇｏ　ｔｈｅｒｅ　ａｎｄ　ｔａｋｅ　ａ　ｇｏｏｄ　ｒｅｓｔ．@KEY()↓
-◆Ｉ　ｈａｖｅ　ｈｅａｒｄ　ｔｈａｔ　ｔｈｅ　ｎａｍｅ　ｏｆ　ｔｈｉｓ　ｖｉｌｌａｇｅ　ｉｓ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ，↓
-◆ｂｕｔ　ｉｔ　ｃａｎｎｏｔ　ｂｅ　ｆｏｕｎｄ　ｏｎ　ａｎｙ　ｍａｐ．@KEY()↓
-◆Ｉ　ｅｎｊｏｙ　ｈｅｌｐｉｎｇ　ｔｈｏｓｅ　ｗｈｏ　ａｒｅ　ｉｎ　ｔｒｏｕｂｌｅ．@KEY()↓
-◆．．．ｔｈｏｕｇｈ　Ｉ　ｃｈａｒｇｅ　ｔｈｅｍ　ｆｏｒ　ｍｙ　ｔｒｏｕｂｌｅ．
+◆If you want to fully recover, there is a village full of...@KEY()↓
+◆interesting people... just ahead.  Go there and take a good rest.@KEY()↓
+◆I have heard that the name of this village is Saturn Valley,↓
+◆but it cannot be found on any map.@KEY()↓
+◆I enjoy helping those who are in trouble.@KEY()↓
+◆...though I charge them for my trouble.
 
 ;jpn:◆ぜんめんてきに↓
-;jpn:　つかれを　いやしたいなら@KEY()↓
-;jpn:◆このさきに　おもろいひとたちの↓
-;jpn:　むらがあるから↓
-;jpn:　そっちで　やすめばいい。@KEY()↓
+;jpn: つかれを いやしたいなら@KEY()↓
+;jpn:◆このさきに おもろいひとたちの↓
+;jpn: むらがあるから↓
+;jpn: そっちで やすめばいい。@KEY()↓
 ;jpn:◆そのむらのなまえは↓
-;jpn:　サターンバレーというらしいけど↓
-;jpn:　ちずには　のっていないんだよ。@KEY()↓
+;jpn: サターンバレーというらしいけど↓
+;jpn: ちずには のっていないんだよ。@KEY()↓
 ;jpn:◆おじさんは↓
-;jpn:　こまったひとたちを　たすけるのが↓
-;jpn:　ほんとに　すきなんだ。@KEY()↓
-;jpn:◆‥‥おかねは　とるけどね。
+;jpn: こまったひとたちを たすけるのが↓
+;jpn: ほんとに すきなんだ。@KEY()↓
+;jpn:◆‥‥おかねは とるけどね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_GRAVE_3;
-◆Ｐｌｅａｓｅ，　ｂｙ　ａｌｌ　ｍｅａｎｓ，　ｃｏｍｅ　ａｇａｉｎ．　　．．．　Ａｈ，　Ｉ　ｊｕｓｔ　ｒｅｍｅｍｂｅｒｅｄ．．．@KEY()↓
-◆Ｔｈｅｒｅ　ｉｓ　ａ　ｖｉｌｌａｇｅ　ｗｉｔｈ　ｍａｎｙ．．．　ｉｎｔｅｒｅｓｔｉｎｇ　ｐｅｏｐｌｅ．．．　ｊｕｓｔ　ａｈｅａｄ．@KEY()↓
-◆Ｙｏｕ　ｓｈｏｕｌｄ　ｇｏ　ｔｈｅｒｅ　ａｎｄ　ｖｉｓｉｔ．@KEY()↓
-◆Ｉ　ｈｅａｒｄ　ｔｈａｔ　ｔｈｅ　ｎａｍｅ　ｏｆ　ｔｈｅ　ｖｉｌｌａｇｅ　ｉｓ　Ｓａｔｕｒｎ　Ｖａｌｌｅｙ，@KEY()↓
-◆ｂｕｔ　ｉｔ　ｃａｎｎｏｔ　ｂｅ　ｆｏｕｎｄ　ｏｎ　ａｎｙ　ｍａｐ．
+◆Please, by all means, come again.  ... Ah, I just remembered...@KEY()↓
+◆There is a village with many... interesting people... just ahead.@KEY()↓
+◆You should go there and visit.@KEY()↓
+◆I heard that the name of the village is Saturn Valley,@KEY()↓
+◆but it cannot be found on any map.
   
-;jpn:◆また　よろしくね。↓
-;jpn:　‥‥あ　そうそう@KEY()↓
-;jpn:◆このさきに　おもろいひとたちの↓
-;jpn:　むらがあるから↓
-;jpn:　たずねてみると　いい。@KEY()↓
+;jpn:◆また よろしくね。↓
+;jpn: ‥‥あ そうそう@KEY()↓
+;jpn:◆このさきに おもろいひとたちの↓
+;jpn: むらがあるから↓
+;jpn: たずねてみると いい。@KEY()↓
 ;jpn:◆そのむらのなまえは↓
-;jpn:　サターンバレーというらしいけど↓
-;jpn:　ちずには　のっていないんだよ。
+;jpn: サターンバレーというらしいけど↓
+;jpn: ちずには のっていないんだよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_GRAVE_4;
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ？@KEY()
+◆What would you like?@KEY()
 
-;jpn:◆なんにする？@KEY()
+;jpn:◆なんにする?@KEY()
 @!
 MSG_SUB_SHOPMES_GRAVE_5;
-◆Ｙｏｕ　ｗａｎｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)？@KEY()↓
+◆You want↓
+  the @DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_GRAVE_6;
 
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｔｈｉｓ？@KEY()↓
+◆Who is going to carry this?@KEY()↓
 
-;jpn:◆だれがもつんだい？@KEY()↓
+;jpn:◆だれがもつんだい?@KEY()↓
 @!
 MSG_SUB_SHOPMES_GRAVE_10;
 
-◆Ｉ　ｓｅｅ．　Ｔｈａｔ’ｓ．．．　ｔｏｏ　ｂａｄ．@KEY()
+◆I see. That’s... too bad.@KEY()
 
-;jpn:◆そうかい　ざんねんだな。@KEY()
+;jpn:◆そうかい ざんねんだな。@KEY()
 @!
 MSG_SUB_SHOPMES_GRAVE_11;
-◆Ｙｏｕ．．．ｄｏ　ｎｏ　ｓｅｅｍ　ｔｏ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆You...do no seem to have enough money.@KEY()↓
 
 ;jpn:◆おかね‥‥↓
-;jpn:　ないみたいだね。@KEY()↓
+;jpn: ないみたいだね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_GRAVE_12;
-◆Ｙｏｕ’ｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．@KEY()↓
-◆Ｓｅｌｌ　ｓｏｍｅｔｈｉｎｇ，　ｏｒ　ｊｕｓｔ　ａｂａｎｄｏｎ　ｓｏｍｅｔｈｉｎｇ，　ａｎｄ　ｃｏｍｅ　ａｇａｉｎ．
+◆You’re already carrying too much stuff.@KEY()↓
+◆Sell something, or just abandon something, and come again.
 
-;jpn:◆きみたちは　にもつが↓
-;jpn:　いっぱいだね。@KEY()↓
-;jpn:◆どこかで　うるか↓
-;jpn:　すてるか　あずけるかして↓
-;jpn:　また　きてね。
+;jpn:◆きみたちは にもつが↓
+;jpn: いっぱいだね。@KEY()↓
+;jpn:◆どこかで うるか↓
+;jpn: すてるか あずけるかして↓
+;jpn: また きてね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_GRAVE_18;
-◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you.@KEY()↓
 
 ;jpn:◆ありがとね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_GRAVE_19;
-◆Ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you.@KEY()↓
 
 ;jpn:◆ありがとね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_GRAVE_20;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you want to buy anything else?↓
 
 ;jpn:◆ほかに↓
-;jpn:　なんか　かう？↓
+;jpn: なんか かう?↓
 @!
 MSG_SUB_SHOPMES_GRAVE_22;
-◆@DSP_NAME(0)　ｈａｓ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｃａｎ　ａｎｙｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) has too many things already.@KEY()↓
+◆Can anyone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)ちゃんは↓
-;jpn:　にもつが　いっぱいだね。@KEY()↓
-;jpn:◆ほかの　だれかが　もつかい？↓
+;jpn: にもつが いっぱいだね。@KEY()↓
+;jpn:◆ほかの だれかが もつかい?↓
 @!
-;スカラビ食品（Ｓｃａｒａｂｉ ｇｒｏｃｅｒ）
+;スカラビ食品(Scarabi grocer)
 MSG_SUB_SHOPMES_SKFOOD_1;
-◆Ｈｅｌｌｏ　ｔｈｅｒｅ！　　Ｗｅｌｃｏｍｅ　ｔｏ　ｍｙ　ｈｕｍｂｌｅ　ｓｈｏｐ！@KEY()↓
-◆Ｈｏｗ　ａｂｏｕｔ　ｓｏｍｅ　ｏｆ　ｏｕｒ　ｆａｍｏｕｓ　Ｓｃａｒａｂａ　ｄｅｌｉｃａｃｉｅｓ？@KEY()↓
+◆Hello there!  Welcome to my humble shop!@KEY()↓
+◆How about some of our famous Scaraba delicacies?@KEY()↓
 
-;jpn:◆はい　いらっしゃい！↓
-;jpn:　とうてんじまんの↓
-;jpn:　スカラビちんみ！@KEY()↓
+;jpn:◆はい いらっしゃい!↓
+;jpn: とうてんじまんの↓
+;jpn: スカラビちんみ!@KEY()↓
 @!
 MSG_SUB_SHOPMES_SKFOOD_2;
-◆Ｏｈ　ｗｅｌｌ，　ｐｌｅａｓｅ　ｆｉｎｄ　ａ　ｗａｙ　ｔｏ　ｃｏｍｅ　ａｇａｉｎ．
+◆Oh well, please find a way to come again.
 
-;jpn:◆じゃあ　おげんきでー。
+;jpn:◆じゃあ おげんきでー。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_SKFOOD_3;
-◆Ｔｈｅ　ｓｕｎ　ｉｓ　ｍｅｒｃｉｌｅｓｓ　ｔｏｄａｙ，　ｓｏ　ｐｌｅａｓｅ　ｔａｋｅ　ｃａｒｅ　ｏｆ　ｙｏｕｒｓｅｌｆ．
+◆The sun is merciless today, so please take care of yourself.
  
 ;jpn:◆ひざしがきついから↓
-;jpn:　カラダにきをつけてな。
+;jpn: カラダにきをつけてな。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_SKFOOD_4;
-◆Ｗｅ　ｃａｒｒｙ　ａ　ｖａｒｉｅｔｙ　ｏｆ　ｔｈｉｎｇｓ．　　Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ？@KEY()
+◆We carry a variety of things.  What would you like?@KEY()
 
 ;jpn:◆いろいろあるよ↓
-;jpn:　なんにする？@KEY()
+;jpn: なんにする?@KEY()
 @!
 MSG_SUB_SHOPMES_SKFOOD_5;
-◆Ｈｅｒｅ　ｙｏｕ　ｇｏ！↓
-　　Ｙｏｕｒ　@DSP_GOODS(0)！@KEY()↓
+◆Here you go!↓
+  Your @DSP_GOODS(0)!@KEY()↓
  
-;jpn:◆@DSP_GOODS(0)いっちょう！@KEY()↓
+;jpn:◆@DSP_GOODS(0)いっちょう!@KEY()↓
 @!
 MSG_SUB_SHOPMES_SKFOOD_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｔｈｉｓ？@KEY()
+◆Who is going to carry this?@KEY()
 
-;jpn:◆だれが　もつんだい？@KEY()
+;jpn:◆だれが もつんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_SKFOOD_10;
-◆Ｏｈ？　　Ｙｏｕ’ｒｅ　ｎｏｔ　ｇｏｉｎｇ　ｔｏ　ｂｕｙ　ａｆｔｅｒ　ａｌｌ？　　Ｉｓ　ｔｈａｔ　ｒｉｇｈｔ？@KEY()↓
+◆Oh?  You’re not going to buy after all?  Is that right?@KEY()↓
 
-;jpn:◆えっ　やめんの？↓
-;jpn:　やめんのかー。@KEY()↓
+;jpn:◆えっ やめんの?↓
+;jpn: やめんのかー。@KEY()↓
 @!
 MSG_SUB_SHOPMES_SKFOOD_11;
-◆Ｏｈ，　ｍｙ！　　Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆Oh, my!  You don’t have enough money.@KEY()↓
  
 ;jpn:◆あらら↓
-;jpn:　おかねがたんないよ。@KEY()↓
+;jpn: おかねがたんないよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_SKFOOD_12;
-◆Ｆｏｒ　ｈｅａｖｅｎ’ｓ　ｓａｋｅ！　　Ｙｏｕ’ｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．@KEY()↓
-◆Ｓｅｌｌ　ｓｏｍｅｔｈｉｎｇ，　ｏｒ　ｔｈｒｏｗ　ｓｏｍｅｔｈｉｎｇ　ａｗａｙ，　ａｎｄ　ｃｏｍｅ　ａｇａｉｎ．
+◆For heaven’s sake!  You’re already carrying too much stuff.@KEY()↓
+◆Sell something, or throw something away, and come again.
 
-;jpn:◆ガガーン！↓
-;jpn:　にもつがいっぱいだよ。@KEY()↓
-;jpn:◆うるか　すてるか↓
-;jpn:　あずけるかして↓
-;jpn:　また　きてよ。
+;jpn:◆ガガーン!↓
+;jpn: にもつがいっぱいだよ。@KEY()↓
+;jpn:◆うるか すてるか↓
+;jpn: あずけるかして↓
+;jpn: また きてよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_SKFOOD_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ，　ｖｅｒｙ　ｍｕｃｈ！@KEY()↓
+◆Thank you very, very much!@KEY()↓
 ;jpn:◆あーりがーとさーん。@KEY()↓
 @!
 MSG_SUB_SHOPMES_SKFOOD_19;
-◆Ｔｈａｎｋｓ　ｆｏｒ　ｓｈｏｐｐｉｎｇ　ｈｅｒｅ！@KEY()↓
+◆Thanks for shopping here!@KEY()↓
 
 ;jpn:◆まいどありー。@KEY()↓
 @!
 MSG_SUB_SHOPMES_SKFOOD_20;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you want to buy anything else?↓
 
-;jpn:◆ほかに　なんか　かうかい？↓
+;jpn:◆ほかに なんか かうかい?↓
 @!
 MSG_SUB_SHOPMES_SKFOOD_22;
-◆Ｆｏｒ　ｈｅａｖｅｎ’ｓ　ｓａｋｅ！↓
-　　@DSP_NAME(0)　ａｌｒｅａｄｙ　ｈａｓ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ！@KEY()↓
-◆Ｃａｎ　ａｎｙｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆For heaven’s sake!↓
+  @DSP_NAME(0) already has too many things!@KEY()↓
+◆Can anyone else carry it?↓
 
-;jpn:◆ガガーン！↓
-;jpn:　@DSP_NAME(0)ちゃんは↓
-;jpn:　にもつもちきれないみたいだよ。@KEY()↓
-;jpn:◆ほかのだれかが　もつかい？↓
+;jpn:◆ガガーン!↓
+;jpn: @DSP_NAME(0)ちゃんは↓
+;jpn: にもつもちきれないみたいだよ。@KEY()↓
+;jpn:◆ほかのだれかが もつかい?↓
 @!
-;ドコドコ砂漠の弁当売り（ｂｅｎｔｏ ｖｅｎｄｏｒ ｉｎ Ｄｏｋｏ Ｄｏｋｏ　ｄｅｓｅｒｔ）
+;ドコドコ砂漠の弁当売り(bento vendor in Doko Doko desert)
 MSG_SUB_SHOPMES_BENTO_1
-◆Ｏｕｔ　ｗａｌｋｉｎｇ　ｉｎ　ｔｈｅ　ｄｅｓｅｒｔ　ｍｕｓｔ　ｍａｋｅ　ｙｏｕ　ｖｅｒｙ　ｈｕｎｇｒｙ　ａｎｄ　ｔｈｉｒｓｔｙ！@KEY()↓
+◆Out walking in the desert must make you very hungry and thirsty!@KEY()↓
   
-;jpn:◆さばくを　あるいて↓
-;jpn:　おなかも　へったろ？↓
-;jpn:　のども　かわいたろ？@KEY()↓
+;jpn:◆さばくを あるいて↓
+;jpn: おなかも へったろ?↓
+;jpn: のども かわいたろ?@KEY()↓
 @!
 MSG_SUB_SHOPMES_BENTO_2;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．
+◆Thank you very much.
 
 ;jpn:◆ありがとうございました。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BENTO_3;
-◆Ｓｏ，　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ？　
+◆So, you don’t want to buy anything? 
 
-;jpn:◆なんだ　ひやかしかい。
+;jpn:◆なんだ ひやかしかい。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BENTO_4;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ？@KEY()↓
+◆What do you want?@KEY()↓
 
-;jpn:◆なんにするんだい？@KEY()↓
+;jpn:◆なんにするんだい?@KEY()↓
 @!
 MSG_SUB_SHOPMES_BENTO_5;
-◆Ｙｏｕ　ｗａｎｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)？@KEY()↓
+◆You want↓
+  the @DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BENTO_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is going to carry it?@KEY()
 
-;jpn:◆だれが　もつ？@KEY()
+;jpn:◆だれが もつ?@KEY()
 @!
 MSG_SUB_SHOPMES_BENTO_10;
-◆Ｏｈ？　　Ｓｏ　ｙｏｕ　ｃｈａｎｇｅｄ　ｙｏｕｒ　ｍｉｎｄ　ａｎｄ　ｄｏｎ’ｔ　ｗａｎｔ　ａｎｙｔｈｉｎｇ　ａｆｔｅｒ　ａｌｌ？@KEY()↓
+◆Oh?  So you changed your mind and don’t want anything after all?@KEY()↓
 
 ;jpn:◆なあんだ。↓
-;jpn:　かうのをやめるのかい。@KEY()↓
+;jpn: かうのをやめるのかい。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BENTO_11;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆You don’t have enough money.@KEY()↓
 
-;jpn:◆おかね　たんないよ。@KEY()↓
+;jpn:◆おかね たんないよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BENTO_12;
-◆Ｙｏｕ’ｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍｕｃｈ　ｓｔｕｆｆ．@KEY()↓
-◆Ｓｅｌｌ　ｓｏｍｅｔｈｉｎｇ，　ｏｒ　ｊｕｓｔ　ｔｈｒｏｗ　ｓｏｍｅｔｈｉｎｇ　ａｗａｙ，　ａｎｄ　ｔｈｅｎ　ｃｏｍｅ　ｂａｃｋ　ｔｏ　ｓｅｅ　ｍｅ．
+◆You’re already carrying too much stuff.@KEY()↓
+◆Sell something, or just throw something away, and then come back to see me.
 
 ;jpn:◆にもつがいっぱいだよ。↓
-;jpn:　うるか　すてるか↓
-;jpn:　あずけるかしてきなよ。
+;jpn: うるか すてるか↓
+;jpn: あずけるかしてきなよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BENTO_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございました。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BENTO_19;
-◆Ｔｈａｎｋｓ　ａ　ｌｏｔ．@KEY()↓
+◆Thanks a lot.@KEY()↓
 
-;jpn:◆まいど　あり。@KEY()↓
+;jpn:◆まいど あり。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BENTO_20;
-◆Ｄｏ　ｙｏｕ　ｎｅｅｄ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you need anything else?↓
 
-;jpn:◆ほかに　ようはあるかい？↓
+;jpn:◆ほかに ようはあるかい?↓
 @!
 MSG_SUB_SHOPMES_BENTO_22;
-◆@DSP_NAME(0)　ｓｅｅｍｓ　ｔｏ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｈｅ　ｃａｎ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓　
+◆@DSP_NAME(0) seems to have too many things already.@KEY()↓
+◆I don’t think he can carry any more.@KEY()↓
+◆Can someone else carry it?↓ 
 
 ;jpn:◆@DSP_NAME(0)くんは↓
-;jpn:　にもつがいっぱいで↓
-;jpn:　もてないみたいだよ。@KEY()↓
-;jpn:◆ほかのだれかが　もつかい？↓
+;jpn: にもつがいっぱいで↓
+;jpn: もてないみたいだよ。@KEY()↓
+;jpn:◆ほかのだれかが もつかい?↓
 @!
 ;ランマのお粥専門店
-;（Ｒａｎｍａ’ｓ　ｒｉｃｅ　ｇｒｕｅｌ　ｓｐｅｃｉａｌｉｔｙ　ｓｈｏｐ）
+;(Ranma’s rice gruel speciality shop)
 MSG_SUB_SHOPMES_OKAYU_1
-◆Ｗｅ　ｓｅｒｖｅ　ｗａｔｅｒ，　ｒｉｃｅ　ｇｒｕｅｌ　ａｎｄ　ｔｈｏｓｅ　ｓｏｒｔｓ　ｏｆ　ｔｈｉｎｇｓ．@KEY()↓
+◆We serve water, rice gruel and those sorts of things.@KEY()↓
 
-;jpn:◆みずとか　おかゆなどが↓
-;jpn:　あります。@KEY()↓
+;jpn:◆みずとか おかゆなどが↓
+;jpn: あります。@KEY()↓
 @!
 MSG_SUB_SHOPMES_OKAYU_2;
-◆Ｇｏｏｄ−ｂｙｅ．
+◆Good−bye.
 
 ;jpn:◆さようなら。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_OKAYU_3;
-◆Ｇｏｏｄ−ｂｙｅ．　　Ｐｌｅａｓｅ　ｔａｋｅ　ｃａｒｅ．
+◆Good−bye.  Please take care.
 
 ;jpn:◆さようなら↓
-;jpn:　おきをつけて。
+;jpn: おきをつけて。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_OKAYU_4
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｄｏ？@KEY()
+◆What would you like to do?@KEY()
 
-;jpn:◆どうしますか？@KEY()
+;jpn:◆どうしますか?@KEY()
 @!
 MSG_SUB_SHOPMES_OKAYU_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_OKAYU_6;
-◆Ｗｈｏ　ｉｓ　　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is  going to carry it?@KEY()
 
-;jpn:◆だれが　おもちになりますか？@KEY()
+;jpn:◆だれが おもちになりますか?@KEY()
 @!
 MSG_SUB_SHOPMES_OKAYU_10;
-◆Ｙｏｕ　ａｒｅ　ｎｏｔ　ｉｎｔｅｒｅｓｔｅｄ　ｉｎ　ｏｕｒ　ｍｅｎｕ？　　Ｉ　ｓｅｅ．@KEY()↓
+◆You are not interested in our menu?  I see.@KEY()↓
 
 ;jpn:◆そうですか。↓
-;jpn:　かうのをやめますか。@KEY()↓
+;jpn: かうのをやめますか。@KEY()↓
 @!
 MSG_SUB_SHOPMES_OKAYU_11;
-◆Ｙｏｕ　ｄｏ　ｎｏｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆You do not have enough money.@KEY()↓
 
 ;jpn:◆おかねがたりませんね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_OKAYU_12;
-◆Ｙｏｕ’ｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｓｅｌｌ　ｓｏｍｅｔｈｉｎｇ，　ｏｒ　ｔｈｒｏｗ　ｓｏｍｅｔｈｉｎｇ　ａｗａｙ，@KEY()↓
-◆ｏｒ　ｊｕｓｔ　ｌｅａｖｅ　ｓｏｍｅｔｈｉｎｇ　ｓｏｍｅｗｈｅｒｅ，　ａｎｄ　ｃｏｍｅ　ａｇａｉｎ．
+◆You’re already carrying too many things.@KEY()↓
+◆Sell something, or throw something away,@KEY()↓
+◆or just leave something somewhere, and come again.
 
 ;jpn:◆にもつがいっぱいです。@KEY()↓
-;jpn:◆うるか　すてるか↓
-;jpn:　あずけるかして↓
-;jpn:　また　きてください。
+;jpn:◆うるか すてるか↓
+;jpn: あずけるかして↓
+;jpn: また きてください。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_OKAYU_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございました。@KEY()↓
 @!
 MSG_SUB_SHOPMES_OKAYU_19;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございました。@KEY()↓
 @!
 MSG_SUB_SHOPMES_OKAYU_20;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Do you want to buy anything else?↓
 
 ;jpn:◆ほかにも↓
-;jpn:　なにかかいますか？↓
+;jpn: なにかかいますか?↓
 @!
 MSG_SUB_SHOPMES_OKAYU_22;
-◆@DSP_NAME(0)　ｓｅｅｍｓ　ｔｏ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｈｅ　ｃａｎ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) seems to have too many things already.@KEY()↓
+◆I don’t think he can carry any more.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)さんは↓
-;jpn:　にもつがいっぱいで↓
-;jpn:　もてないみたいですね。@KEY()↓
-;jpn:◆ほかのだれかが　もちますか？↓
+;jpn: にもつがいっぱいで↓
+;jpn: もてないみたいですね。@KEY()↓
+;jpn:◆ほかのだれかが もちますか?↓
 @!
 ;ホテル・ダークムーンの回復グッズ売り
-;（Ｒｅｃｏｖｅｒｙ　ｇｏｏｄｓ　ｖｅｎｄｏｒ　ｉｎ　Ｈｏｔｅｌ　Ｄａｒｋ↓
-;　　Ｍｏｏｎ）
+;(Recovery goods vendor in Hotel Dark↓
+;  Moon)
 
 MSG_SUB_SHOPMES_MOON_1;
-◆Ｈｉ，　ｈｏｗ　ａｒｅ　ｙｏｕ　ｄｏｉｎｇ？　　Ｆｒｏｍ　ｔｈｅ　ｌｏｏｋ　ｏｆ　ｔｈｉｎｇｓ，@KEY()↓
-◆Ｉ　ｗｏｕｌｄ　ｓａｙ，　ｎｏｔ　ｓｏ　ｇｏｏｄ．@KEY()↓
+◆Hi, how are you doing?  From the look of things,@KEY()↓
+◆I would say, not so good.@KEY()↓
 
-;jpn:◆どうだい　ちょうしは？↓
-;jpn:　よくは　なさそうだな。@KEY()↓
+;jpn:◆どうだい ちょうしは?↓
+;jpn: よくは なさそうだな。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MOON_2;
-◆Ｓｅｅ　ｙａ！
+◆See ya!
 
 ;jpn:◆じゃあな。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_MOON_3;
-◆Ｓｅｅ　ｙａ！
+◆See ya!
 
 ;jpn:◆じゃあな。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_MOON_4;
-◆Ｄｏ　ｙｏｕ　ｎｅｅｄ　ａｎｙｔｈｉｎｇ？@KEY()
+◆Do you need anything?@KEY()
 
-;jpn:◆なにか　いるかい？@KEY()
+;jpn:◆なにか いるかい?@KEY()
 @!
 MSG_SUB_SHOPMES_MOON_5;
-◆Ｔｈｅ　@DSP_GOODS(0)．．．．．？@KEY()↓
+◆The @DSP_GOODS(0).....?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)‥‥ね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MOON_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is going to carry it?@KEY()
 
-;jpn:◆だれが　もつんだい？@KEY()
+;jpn:◆だれが もつんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_MOON_10;
-◆Ｓｏ　ｙｏｕ’ｒｅ　ｓａｙｉｎｇ　ｙｏｕ　ｄｏｎ’ｔ　ｗａｎｔ　ｉｔ　ａｆｔｅｒ　ａｌｌ．．．？@KEY()↓
+◆So you’re saying you don’t want it after all...?@KEY()↓
 
 ;jpn:◆‥‥いらないわけね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MOON_11;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆You don’t have enough money.@KEY()↓
 
 ;jpn:◆おかねがたんないよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MOON_12;
-◆Ｙｏｕ’ｒｅ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．
+◆You’re carrying too many things already.
 
 ;jpn:◆にもつがいっぱいだよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_MOON_18;
-◆Ｔｈａｎｋｓ．@KEY()↓
+◆Thanks.@KEY()↓
 
 ;jpn:◆ありがとよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MOON_19;
-◆Ｔｈａｎｋｓ．@KEY()↓
+◆Thanks.@KEY()↓
 
 ;jpn:◆ありがとよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_MOON_20;
-◆Ａｒｅ　ｙｏｕ　ｇｏｉｎｇ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Are you going to buy anything else?↓
 
-;jpn:◆ほかに　なんか　かうわけ？↓
+;jpn:◆ほかに なんか かうわけ?↓
 @!
 MSG_SUB_SHOPMES_MOON_22;
-◆@DSP_NAME(0)ｓｅｅｍｓ　ｔｏ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｈｅ　ｃａｎ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0)seems to have too many things already.@KEY()↓
+◆I don’t think he can carry any more.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　にもつがいっぱいで↓
-;jpn:　もてないよ。@KEY()↓
-;jpn:◆ほかのだれかが　もつかい？↓
+;jpn: にもつがいっぱいで↓
+;jpn: もてないよ。@KEY()↓
+;jpn:◆ほかのだれかが もつかい?↓
 @!
-;サマーズのマジックタルト売り（Ｍａｇｉｇ ｔａｒｔ ｖｅｎｄｏｒ ｉｎ 
-;Ｓｕｍｍｅｒｓ）
+;サマーズのマジックタルト売り(Magig tart vendor in 
+;Summers)
 MSG_SUB_SHOPMES_WIFE_1;
-◆Ｉ　ｃａｎ　ｎｏ　ｌｏｎｇｅｒ　ｍａｋｅ　Ｍａｇｉｃ　Ｃａｋｅｓ．．．@KEY()↓
-◆Ｂｕｔ　ｉｔ　ｄｏｅｓｎ’ｔ　ｍａｔｔｅｒ　ｂｅｃａｕｓｅ　ｎｏｗ　Ｉ’ｍ　ｓｅｌｌｉｎｇ　Ｍａｇｉｃ　Ｔａｒｔｓ，@KEY()↓
-◆ｗｈｉｃｈ　ｔａｓｔｅ　ｅｖｅｎ　ｂｅｔｔｅｒ　ｔｈａｎ　Ｍａｇｉｃ　Ｃａｋｅｓ！@KEY()↓
+◆I can no longer make Magic Cakes...@KEY()↓
+◆But it doesn’t matter because now I’m selling Magic Tarts,@KEY()↓
+◆which taste even better than Magic Cakes!@KEY()↓
 
 ;jpn:◆マジックケーキは↓
-;jpn:　もうつくれないけど↓
-;jpn:　おいしさなら　それいじょうの‥‥@KEY()↓
+;jpn: もうつくれないけど↓
+;jpn: おいしさなら それいじょうの‥‥@KEY()↓
 ;jpn:◆「マジックタルト」を↓
-;jpn:　うってるわ。@KEY()↓
+;jpn: うってるわ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WIFE_2;
-◆Ｙｏｕ　ｒｅｍｉｎｄｅｄ　ｍｅ　ｈｏｗ　ｍｕｃｈ　Ｉ　ｌｏｖｅ　ｔｈｉｓ　ｊｏｂ！
+◆You reminded me how much I love this job!
 
-;jpn:◆しごとの　たのしさを↓
-;jpn:　あんたたちが↓
-;jpn:　おもいださせてくれたわ。
+;jpn:◆しごとの たのしさを↓
+;jpn: あんたたちが↓
+;jpn: おもいださせてくれたわ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WIFE_3;
-◆Ｙｏｕ　ｒｅｍｉｎｄｅｄ　ｍｅ　ｈｏｗ　ｍｕｃｈ　Ｉ　ｌｏｖｅ　ｔｈｉｓ　ｊｏｂ！
+◆You reminded me how much I love this job!
 
-;jpn:◆しごとの　たのしさを↓
-;jpn:　あんたたちが↓
-;jpn:　おもいださせてくれたわ。
+;jpn:◆しごとの たのしさを↓
+;jpn: あんたたちが↓
+;jpn: おもいださせてくれたわ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WIFE_4;
-◆Ｉ　ｏｎｌｙ　ｈａｖｅ　ｔｈｉｓ．．．．．．．．@KEY()↓
+◆I only have this........@KEY()↓
 
 ;jpn:◆これしかうってないけれど‥‥。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WIFE_5;
-◆Ｙｏｕ　ａｒｅ　ｇｏｉｎｇ　ｔｏ　ｂｕｙ↓
-　　ｍｙ　@DSP_GOODS(0)？@KEY()↓
+◆You are going to buy↓
+  my @DSP_GOODS(0)?@KEY()↓
 
 ;◆@DSP_GOODS(0)↓
-;jpn:　かってくれるのね。@KEY()↓
+;jpn: かってくれるのね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WIFE_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is going to carry it?@KEY()
 
-;jpn:◆どなたが　おもちになるの？@KEY()
+;jpn:◆どなたが おもちになるの?@KEY()
 @!
 MSG_SUB_SHOPMES_WIFE_10;
-◆Ｔｈａｔ’ｓ　ｔｏｏ　ｂａｄ．
+◆That’s too bad.
 
-;jpn:◆それは　ざんねんだわ‥‥。
+;jpn:◆それは ざんねんだわ‥‥。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WIFE_11;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．
+◆You don’t have enough money.
 
-;jpn:◆おかねが　たりないわね。
+;jpn:◆おかねが たりないわね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WIFE_12;
-◆Ｙｏｕ　ａｒｅ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｃｏｍｅ　ａｇａｉｎ　ｗｈｅｎ　ｙｏｕ　ｒｅｄｕｃｅ　ｔｈｅ　ｎｕｍｂｅｒ　ｏｆ　ｔｈｉｎｇｓ　ｙｏｕ　ａｒｅ　ｃａｒｒｉｎｇ．
+◆You are carrying too many things.@KEY()↓
+◆Come again when you reduce the number of things you are carring.
  
-;jpn:◆もちものが　いっぱいよ↓
-;jpn:　にもつを　へらしてから↓
-;jpn:　またきてね。
+;jpn:◆もちものが いっぱいよ↓
+;jpn: にもつを へらしてから↓
+;jpn: またきてね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WIFE_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
-;jpn:◆どうも　ありがとう。@KEY()↓
+;jpn:◆どうも ありがとう。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WIFE_19;
-◆Ｔｈａｎｋ　ｙｏｕ　ａｇａｉｎ．@KEY()↓
+◆Thank you again.@KEY()↓
 
-;jpn:◆いつも　ありがとう。@KEY()↓
+;jpn:◆いつも ありがとう。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WIFE_20;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Would you like to buy anything else?↓
 
-;jpn:◆ほかにも　なにかかう？↓
+;jpn:◆ほかにも なにかかう?↓
 @!
 MSG_SUB_SHOPMES_WIFE_22;
-◆@DSP_NAME(0)ｓｅｅｍｓ　ｔｏ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｈｅ　ｃａｎ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0)seems to have too many things already.@KEY()↓
+◆I don’t think he can carry any more.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)さんは↓
-;jpn:　もちものが　いっぱいみたいよ。@KEY()↓
-;jpn:◆ほかのだれかが　もつのかしら？↓
+;jpn: もちものが いっぱいみたいよ。@KEY()↓
+;jpn:◆ほかのだれかが もつのかしら?↓
 @!
-;スカラビの水売り（ｗａｔｅｒ ｖｅｎｄｏｒ ｉｎ Ｓｃａｒａｂｉ）
+;スカラビの水売り(water vendor in Scarabi)
 MSG_SUB_SHOPMES_WATER_1;
-◆Ｉ　ｓｅｌｌ　ｗａｔｅｒ　ｔｏ　ｔｈｏｓｅ　ｗｈｏ　ａｒｅ　ｔｈｉｒｓｔｙ．@KEY()↓
+◆I sell water to those who are thirsty.@KEY()↓
 
-;jpn:◆のどの　かわいたたびびとに↓
-;jpn:　みずを　うってあげましょう。@KEY()↓
+;jpn:◆のどの かわいたたびびとに↓
+;jpn: みずを うってあげましょう。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WATER_2;
-◆Ｔｈｅ　ｐｒｉｃｅ　ｏｆ　ｔｈｉｎｇｓ　ｉｓ　ｄｅｔｅｒｍｉｎｅｄ　ｂｙ　ｔｈｅ　ｒｅｌａｔｉｏｎｓｈｉｐ　ｂｅｔｗｅｅｎ　ｓｕｐｐｌｙ　ａｎｄ　ｄｅｍａｎｄ．@KEY()↓
-◆Ｙｏｕ　ｋｉｄｓ　ａｒｅ　ｐｒｅｔｔｙ　ｓｈａｒｐ　ｔｏ　ｂｅ　ａｂｌｅ　ｔｏ　ｕｎｄｅｒｓｔａｎｄ　ｔｈｉｓ　ｔｈｅｏｒｙ　ｓｏ　ｗｅｌｌ！
+◆The price of things is determined by the relationship between supply and demand.@KEY()↓
+◆You kids are pretty sharp to be able to understand this theory so well!
 
 ;jpn:◆もののねだんというものは↓
-;jpn:　じゅようと　きょうきゅうの↓
-;jpn:　かんけいできまる。@KEY()↓
-;jpn:◆そのことを　よくわかっている↓
-;jpn:　ぼうやたちは　えらい！
+;jpn: じゅようと きょうきゅうの↓
+;jpn: かんけいできまる。@KEY()↓
+;jpn:◆そのことを よくわかっている↓
+;jpn: ぼうやたちは えらい!
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WATER_3;
-◆Ｗｅｌｌ，　ｙｏｕ’ｌｌ　ｄｉｅ　ｂｙ　ｄｅｈｙｄｒａｔｉｏｎ！　　Ｉ’ｍ　ｗａｒｎｉｎｇ　ｙｏｕ！
+◆Well, you’ll die by dehydration!  I’m warning you!
 
 ;jpn:◆ひからびちゃうよー。↓
-;jpn:　しらないよー。
+;jpn: しらないよー。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WATER_4;
-◆Ｉｔ’ｓ　ｅｘｐｅｎｓｉｖｅ，　ｔｈｏｕｇｈ！@KEY()↓
+◆It’s expensive, though!@KEY()↓
 
 ;jpn:◆たかいよー。@KEY()
 @!
 MSG_SUB_SHOPMES_WATER_5;
-◆Ｙｏｕ’ｖｅ　ｃｈａｎｇｅｄ　ｙｏｕｒ　ｍｉｎｄ　ａｎｄ　ｗａｎｔ　ｔｏ　ｂｕｙ　ｓｏｍｅ↓
-　　@DSP_GOODS(0)？@KEY()↓
+◆You’ve changed your mind and want to buy some↓
+  @DSP_GOODS(0)?@KEY()↓
 
 ;◆@DSP_GOODS(0)↓
-;jpn:　かうきになったんだね。@KEY()↓
+;jpn: かうきになったんだね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WATER_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is going to carry it?@KEY()
 
-;jpn:◆だれがもつんだい？@KEY()
+;jpn:◆だれがもつんだい?@KEY()
 @!
 MSG_SUB_SHOPMES_WATER_10;
-◆Ｙｏｕ’ｌｌ　ｂｅ　ｄｅａｄ　ｏｆ　ｄｅｈｙｄｒａｔｉｏｎ！　　Ｉ’ｍ　ｗａｒｎｉｎｇ　ｙｏｕ！
+◆You’ll be dead of dehydration!  I’m warning you!
 
 ;jpn:◆ひからびちゃうよー。↓
-;jpn:　しらないよー。
+;jpn: しらないよー。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WATER_11;
-◆Ｉｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．
+◆Idon’t think you have enough money.
 
-;jpn:◆おかねが　たりないみたいだね。
+;jpn:◆おかねが たりないみたいだね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WATER_12;
-◆Ｙｏｕ　ｃａｎｎｏｔ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．
+◆You cannot carry any more.
 
-;jpn:◆にもつが　いっぱいだよ。
+;jpn:◆にもつが いっぱいだよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_WATER_18;
-◆Ｉ　ｔｈｉｎｋ　ｉｔ　ｗａｓ　ａ　ｇｏｏｄ　ｂｕｙ！@KEY()↓
+◆I think it was a good buy!@KEY()↓
 
 ;jpn:◆おきゃくさん↓
-;jpn:　いいかいものをしたねぇ。@KEY()↓
+;jpn: いいかいものをしたねぇ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WATER_19;
-◆Ｉ　ｔｈｉｎｋ　ｉｔ　ｗａｓ　ａ　ｇｏｏｄ　ｂｕｙ！@KEY()↓
+◆I think it was a good buy!@KEY()↓
 
 ;jpn:◆おきゃくさん↓
-;jpn:　いいかいものをしたねぇ。@KEY()↓
+;jpn: いいかいものをしたねぇ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_WATER_20;
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ　ｓｏｍｅ　ｍｏｒｅ？↓
+◆Do you want to buy some more?↓
 
-;jpn:◆もっとかう？↓
+;jpn:◆もっとかう?↓
 @!
 MSG_SUB_SHOPMES_WATER_22;
-◆@DSP_NAME(0)　ｉｓ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) is already carrying too many things.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)さんは↓
-;jpn:　もちものが　いっぱいだよ。@KEY()↓
-;jpn:◆ほかのだれかが　もつのかな？↓
+;jpn: もちものが いっぱいだよ。@KEY()↓
+;jpn:◆ほかのだれかが もつのかな?↓
 @!
-;バナナババア（ｏｌｄ ｗｏｍａｎ ｓｅｌｌｉｎｇ ｂａｎａｎａ） 
+;バナナババア(old woman selling banana) 
 MSG_SUB_SHOPMES_BANANA_1;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｓｏｍｅ　ｂａｎａｎａｓ？@KEY()↓
+◆Would you like some bananas?@KEY()↓
 
 ;jpn:◆バナナいらんかえー。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BANANA_2;
-◆Ｔｈａｎｋ　ｙｏｕ．
+◆Thank you.
 
 ;jpn:◆ありがとよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BANANA_3;
-◆Ｗｅｌｌ，　ｗｈｅｎ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｅａｔ　ｂａｎａｎａｓ，　Ｉ’ｌｌ　ｂｅ　ｈｅｒｅ，　ｓｅｌｌｉｎｇ　ｔｈｅｍ！
+◆Well, when you want to eat bananas, I’ll be here, selling them!
 
 ;jpn:◆それじゃあ↓
-;jpn:　バナナがたべたくなったら↓
-;jpn:　おいでなさい。
+;jpn: バナナがたべたくなったら↓
+;jpn: おいでなさい。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BANANA_4;
-◆Ｈｅｙ　ｋｉｄ！↓
-　　Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｂｕｙ　ｓｏｍｅ？@KEY()↓
+◆Hey kid!↓
+  Do you want to buy some?@KEY()↓
 
-;jpn:◆ぼうや　どうじゃ↓
-;jpn:　かっていくかね？@KEY()
+;jpn:◆ぼうや どうじゃ↓
+;jpn: かっていくかね?@KEY()
 @!
 MSG_SUB_SHOPMES_BANANA_5;
-◆Ｙｏｕ　ｗａｎｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)？@KEY()↓
+◆You want↓
+  the @DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)じゃな。@KEY()
 @!
 MSG_SUB_SHOPMES_BANANA_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is going to carry it?@KEY()
 
-;jpn:◆だれがもつのじゃ？@KEY()
+;jpn:◆だれがもつのじゃ?@KEY()
 @!
 MSG_SUB_SHOPMES_BANANA_10;
-◆Ｙｏｕ　ｄｏｎｔ’　ｗａｎｔ　ａｎｙ？　　Ｗｈａｔｅｖｅｒ　ｙｏｕ　ｓａｙ．
+◆You dont’ want any?  Whatever you say.
 
 ;jpn:◆そうか。↓
-;jpn:　いらんのか‥‥。
+;jpn: いらんのか‥‥。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BANANA_11;
 @LOAD_REG()
-◆Ｙｏｕ　ｃａｎ’ｔ　ｂｕｙ　ｔｈｅ　ｂａｎａｎａｓ　ｉｆ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．
+◆You can’t buy the bananas if you don’t have enough money.
 
 ;jpn:◆かねがないんじゃ↓
-;jpn:　バナナはかえんぞ。
+;jpn: バナナはかえんぞ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BANANA_12;
-◆Ｙｏｕ　ｃａｎｎｏｔ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．
+◆You cannot carry any more.
 
 ;jpn:◆にもつがいっぱいじゃな。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_BANANA_18;
-◆Ｔｈａｎｋ　ｙｏｕ，　ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you, thank you.@KEY()↓
 
 ;jpn:◆ありがとよ↓
-;jpn:　ありがとよ。@KEY()↓
+;jpn: ありがとよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BANANA_19;
-◆Ｔｈａｎｋ　ｙｏｕ，　ｔｈａｎｋ　ｙｏｕ．@KEY()↓
+◆Thank you, thank you.@KEY()↓
 
 ;jpn:◆ありがとよ↓
-;jpn:　ありがとよ。@KEY()↓
+;jpn: ありがとよ。@KEY()↓
 ;◆そうかそうか↓
-;　むりには　すすめん。@KEY()↓
+; むりには すすめん。@KEY()↓
 @!
 MSG_SUB_SHOPMES_BANANA_20;
-◆Ｉ　ｈａｖｅ　ｍｏｒｅ　ｂａｎａｎａｓ．．．　　Ｄｏ　ｙｏｕ　ｗａｎｔ　ｓｏｍｅ　ｍｏｒｅ？↓
+◆I have more bananas...  Do you want some more?↓
 
 ;jpn:◆まだまだバナナは↓
-;jpn:　あるんじゃが‥‥。@KEY()↓
-;jpn:◆どうする？↓
+;jpn: あるんじゃが‥‥。@KEY()↓
+;jpn:◆どうする?↓
 @!
 MSG_SUB_SHOPMES_BANANA_22;
-◆@DSP_NAME(0)　ｈａｓ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ｔｏ　ｃａｒｒｙ　ａ　ｂａｎａｎａ．@KEY()↓
-◆Ｗｉｌｌ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ　ｆｏｒ　ｈｉｍ？↓
+◆@DSP_NAME(0) has too many things to carry a banana.@KEY()↓
+◆Will someone else carry it for him?↓
 
 ;jpn:◆@DSP_NAME(0)は↓
-;jpn:　にもつがいっぱいで↓
-;jpn:　バナナがもてんな。@KEY()↓
+;jpn: にもつがいっぱいで↓
+;jpn: バナナがもてんな。@KEY()↓
 ;jpn:◆ほかのだれかが↓
-;jpn:　もつのじゃな？↓
+;jpn: もつのじゃな?↓
 @!
-;フリカケワゴン（ｓｅａｓｏｎｉｎｇ ｗａｇｏｎ）
+;フリカケワゴン(seasoning wagon)
 MSG_SUB_SHOPMES_FURI2_1;
-◆Ｈｅｌｌｏ　ｔｈｅｒｅ！@KEY()↓
-◆Ｈｏｗ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｂｕｙ　ｓｏｍｅ　ｓｅａｓｏｎｉｎｇｓ@KEY()↓
-◆ｔｈａｔ　ｇｏ　ｇｒｅａｔ　ｏｎ　ｙｏｕｒ　ｆｏｏｄ　ａｔ　ｍｅａｌ　ｔｉｍｅ？@KEY()↓
-◆Ｔｈｅｓｅ　ａｒｅ　ｎｏｔ　ｊｕｓｔ　ｙｏｕｒ　ａｖｅｒａｇｅ　ｓｅａｓｏｎｉｎｇｓ！@KEY()↓
-◆Ｗｈｅｎｅｖｅｒ　ｙｏｕ　ｔｒｙ　ｔｏ　ｅａｔ　ｓｏｍｅｔｈｉｎｇ，　ｔｈｅ　ｓｅａｓｏｎｉｎｇ　ｗｉｌｌ　ａｕｔｏｍａｔｉｃａｌｌｙ　ｓｐｒｉｎｋｌｅ@KEY()↓
-◆ｏｎ　ｙｏｕｒ　ｆｏｏｄ．　　Ｉｔ’ｓ　ｒｅａｌｌｙ　ａｌｍｏｓｔ　ｍａｇｉｃａｌ！@KEY()↓
+◆Hello there!@KEY()↓
+◆How would you like to buy some seasonings@KEY()↓
+◆that go great on your food at meal time?@KEY()↓
+◆These are not just your average seasonings!@KEY()↓
+◆Whenever you try to eat something, the seasoning will automatically sprinkle@KEY()↓
+◆on your food.  It’s really almost magical!@KEY()↓
 
 ;jpn:◆いらっしゃいませ。↓
-;jpn:　おしょくじには　かかせない。@KEY()↓
-;jpn:◆あじつけ　こもの↓
-;jpn:　いかがですか？@KEY()↓
-;jpn:◆あらふしぎ！↓
-;jpn:　なにかを　たべようとすると@KEY()↓
-;jpn:◆じどうてきに　ふりかけちゃう↓
-;jpn:　ふしぎな　こびんに↓
-;jpn:　はいってまーす。@KEY()
+;jpn: おしょくじには かかせない。@KEY()↓
+;jpn:◆あじつけ こもの↓
+;jpn: いかがですか?@KEY()↓
+;jpn:◆あらふしぎ!↓
+;jpn: なにかを たべようとすると@KEY()↓
+;jpn:◆じどうてきに ふりかけちゃう↓
+;jpn: ふしぎな こびんに↓
+;jpn: はいってまーす。@KEY()
 @!
 MSG_SUB_SHOPMES_FURI2_2;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．
+◆Please come again.
 
-;jpn:◆また　きてくださいね。
+;jpn:◆また きてくださいね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_FURI2_3;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．
+◆Please come again.
 
-;jpn:◆また　きてくださいね。
+;jpn:◆また きてくださいね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_FURI2_4;
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ？@KEY()↓
+◆What would you like?@KEY()↓
 
-;jpn:◆なんに　なさいますか？@KEY()
+;jpn:◆なんに なさいますか?@KEY()
 @!
 MSG_SUB_SHOPMES_FURI2_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI2_6;
 
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is going to carry it?@KEY()
 
-;jpn:◆どなたがおもちになりますか？@KEY()
+;jpn:◆どなたがおもちになりますか?@KEY()
 @!
 MSG_SUB_SHOPMES_FURI2_10;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．@KEY()↓
+◆Please come again.@KEY()↓
 
-;jpn:◆また　よろしくおねがいします。@KEY()↓
+;jpn:◆また よろしくおねがいします。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI2_11;
-◆Ｏｈ，　ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
+◆Oh, it looks like you don’t have enough money.@KEY()↓
 
-;jpn:◆あら　おかねが↓
-;jpn:　たりないようですよ。@KEY()↓
+;jpn:◆あら おかねが↓
+;jpn: たりないようですよ。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI2_12;
-◆Ｏｈ，　Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．
+◆Oh, I don’t think you can carry any more.
 
 ;jpn:◆あら↓
-;jpn:　もちものが　いっぱいで↓
-;jpn:　もてないようですよ。
+;jpn: もちものが いっぱいで↓
+;jpn: もてないようですよ。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_FURI2_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございます。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI2_19;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございます。@KEY()↓
 @!
 MSG_SUB_SHOPMES_FURI2_20;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆Would you like to buy anything else?↓
 
-;jpn:◆ほかに　なにか↓
-;jpn:　おかいあげになりますか？↓
+;jpn:◆ほかに なにか↓
+;jpn: おかいあげになりますか?↓
 @!
 MSG_SUB_SHOPMES_FURI2_22;
-◆@DSP_NAME(0)　ｉｓ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) is already carrying too many things.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)さんは↓
-;jpn:　にもつがいっぱいですね。@KEY()↓
-;jpn:◆ほかのひとがもちますか？↓
+;jpn: にもつがいっぱいですね。@KEY()↓
+;jpn:◆ほかのひとがもちますか?↓
 @!
-;ひしょちのジェラート売り（ｇｅｌａｒｔ？ ｓｅｌｌｅｒ ｉｎ ｓｕｍｍｅｒ 
-　ｒｅｓｏｒｔ）
+;ひしょちのジェラート売り(gelart? seller in summer 
+ resort)
 MSG_SUB_SHOPMES_HISYO_1;
-◆Ｗｅ’ｖｅ　ｇｏｔ　ｓｏｍｅ　ｒｅａｌｌｙ　ｓｐｅｃｔａｃｕｌａｒ　ｔｈｉｎｇｓ！@KEY()↓
+◆We’ve got some really spectacular things!@KEY()↓
 
 ;jpn:◆いいものありまーす。@KEY()↓
 @!
 MSG_SUB_SHOPMES_HISYO_2;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．
+◆Please come again.
 
-;jpn:◆また　よろしくね。
+;jpn:◆また よろしくね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_HISYO_3;
-◆Ｙｏｕ　ｒｅａｌｌｙ　ｓｈｏｕｌｄ　ｅａｔ　ｈｅｒｅ！　
+◆You really should eat here! 
 
 ;jpn:◆たべていけばいいのに。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_HISYO_4;
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ？@KEY()
+◆What would you like?@KEY()
 
-;jpn:◆なんにしますか？@KEY()
+;jpn:◆なんにしますか?@KEY()
 @!
 MSG_SUB_SHOPMES_HISYO_5;
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。@KEY()↓
 @!
 MSG_SUB_SHOPMES_HISYO_6;
-◆Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？@KEY()
+◆Who is going to carry it?@KEY()
 
-;jpn:◆だれがもちますか？@KEY()
+;jpn:◆だれがもちますか?@KEY()
 @!
 MSG_SUB_SHOPMES_HISYO_10;
-◆Ｄｏ　ｙｏｕ　ｍｅａｎ　ｔｏ　ｔｅｌｌ　ｍｅ　ｙｏｕ　ａｒｅ　ｎｏｔ　ｇｏｉｎｇ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ．．．？
+◆Do you mean to tell me you are not going to buy anything...?
 
 ;jpn:◆やめるんですか‥‥。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_HISYO_11;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．
+◆You don’t have enough money.
 
-;jpn:◆おかねが　たりないですね。
+;jpn:◆おかねが たりないですね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_HISYO_12;
-◆Ｙｏｕ　ａｒｅ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ　ａｌｒｅａｄｙ．@KEY()↓
-◆Ｓｅｌｌ　ｓｏｍｅｔｈｉｎｇ，　ｏｒ　ｔｈｒｏｗ　ｓｏｍｅｔｈｉｎｇ　ａｗａｙ，　ａｎｄ　ｃｏｍｅ　ｂａｃｋ．
+◆You are carrying too many things already.@KEY()↓
+◆Sell something, or throw something away, and come back.
 
-;jpn:◆もちものが　いっぱいですね。↓
-;jpn:　うるかすてるかして↓
-;jpn:　もういちど　きてね。
+;jpn:◆もちものが いっぱいですね。↓
+;jpn: うるかすてるかして↓
+;jpn: もういちど きてね。
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_HISYO_18;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()
+◆Thank you very much.@KEY()
 
 ;jpn:◆ありがとうございます。@KEY()
 @!
 MSG_SUB_SHOPMES_HISYO_19;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()
+◆Thank you very much.@KEY()
 
 ;jpn:◆まいどありがとうございます。@KEY()
 @!
 MSG_SUB_SHOPMES_HISYO_20;
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｂｕｙ　ｏｎｅ　ｍｏｒｅ？↓
+◆Would you like to buy one more?↓
 
-;jpn:◆もういっこ　かいますか？↓
+;jpn:◆もういっこ かいますか?↓
 @!
 MSG_SUB_SHOPMES_HISYO_22;
-◆@DSP_NAME(0)　ｉｓ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｃａｒｒｙ　ｉｔ？↓
+◆@DSP_NAME(0) is already carrying too many things.@KEY()↓
+◆Can someone else carry it?↓
 
 ;jpn:◆@DSP_NAME(0)さんは↓
-;jpn:　にもつが　いっぱいですね。@KEY()↓
-;jpn:◆ほかのひとが　もちますか？↓
+;jpn: にもつが いっぱいですね。@KEY()↓
+;jpn:◆ほかのひとが もちますか?↓
 @!
-;原人（ｐｒｉｍｉｔｉｖｅ ｍａｎ）
+;原人(primitive man)
 MSG_SUB_SHOPMES_GORI_1;
-◆Ｏｏｏｇａ　ｂｏｏｏｇａ．↓
-　　（Ｍａｙ　Ｉ　ｈｅｌｐ　ｙｏｕ？）@KEY()↓
+◆Oooga boooga.↓
+  (May I help you?)@KEY()↓
 
 ;jpn:◆ウホウホ。↓
-;jpn:　（いらっしゃいませ）@KEY()↓
+;jpn: (いらっしゃいませ)@KEY()↓
 @!
 MSG_SUB_SHOPMES_GORI_2;
-◆Ｕｎｇａｗａ　ｇｏｏｎｇａｌｏｏ！↓
-　　（Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．）
+◆Ungawa goongaloo!↓
+  (Thank you very much.)
 
 ;jpn:◆ウホホホ。↓
-;jpn:　（ありがとうございました）
+;jpn: (ありがとうございました)
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_GORI_3;
-◆Ｗｏｏｎｇｕ　Ｇｏｏｎｇａｒｅｅ！↓
-　　（Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．）
+◆Woongu Goongaree!↓
+  (Please come again.)
 
 ;jpn:◆ウホウホホ。↓
-;jpn:　（またよろしく）
+;jpn: (またよろしく)
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_GORI_4;
-◆Ｗａｋｋａ　ｕｎｇａｗａ？↓
-　　（Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ？）@KEY()↓
+◆Wakka ungawa?↓
+  (What would you like?)@KEY()↓
 
-;jpn:◆ウホ？↓
-;jpn:　（なんにしますか？）@KEY()↓
+;jpn:◆ウホ?↓
+;jpn: (なんにしますか?)@KEY()↓
 @!
 MSG_SUB_SHOPMES_GORI_5;
-◆Ｗｕｎｇａ　Ｄｉｎ？↓
-　　（@DSP_GOODS(0)？）@KEY()↓
+◆Wunga Din?↓
+  (@DSP_GOODS(0)?)@KEY()↓
 
 ;jpn:◆ウホー。↓
-;jpn:　（@DSP_GOODS(0)ですね）@KEY()↓
+;jpn: (@DSP_GOODS(0)ですね)@KEY()↓
 @!
 MSG_SUB_SHOPMES_GORI_6;
-◆Ｓｐｏｏｎｇａｗａ　ｇｏｏｎｇａ　ｕｇｈ！？↓
-　　（Ｗｈｏ　ｉｓ　ｇｏｉｎｇ　ｔｏ　ｃａｒｒｙ　ｉｔ？）@KEY()
+◆Spoongawa goonga ugh!?↓
+  (Who is going to carry it?)@KEY()
 
-;jpn:◆ウホホ？↓
-;jpn:　（どなたがおもちになりますか？）@KEY()
+;jpn:◆ウホホ?↓
+;jpn: (どなたがおもちになりますか?)@KEY()
 @!
 MSG_SUB_SHOPMES_GORI_10;
-◆Ｇｏｏｎｇｏｏ，　ｗｏｏ　ｗｏｏ！↓
-　　（Ｃｏｍｅ　ａｇａｉｎ．）@KEY()↓
+◆Goongoo, woo woo!↓
+  (Come again.)@KEY()↓
 
 ;jpn:◆ウホウホホ。↓
-;jpn:　（またよろしく）@KEY()↓
+;jpn: (またよろしく)@KEY()↓
 @!
 MSG_SUB_SHOPMES_GORI_11;
-◆Ｗｕｎｇａ　ｗｏｏ　ｇｕｎ　ｗｏｏｎｇａ　ｗａｋｋａ！！↓
-　　（Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．）@KEY()↓
+◆Wunga woo gun woonga wakka!!↓
+  (You don’t have enough money.)@KEY()↓
 
-;jpn:◆ウホ！↓
-;jpn:　（おかねがたりません！）@KEY()↓
+;jpn:◆ウホ!↓
+;jpn: (おかねがたりません!)@KEY()↓
 @!
 MSG_SUB_SHOPMES_GORI_12;
-◆Ｗｈｏａ！　　Ｗｏｏｎ　ｗｏｏｎｇａ　ｗａｋｋａ　ｗｏｏ！↓
-　　（Ｙｏｕ　ａｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．）
+◆Whoa!  Woon woonga wakka woo!↓
+  (You are already carrying too many things.)
 
-;jpn:◆ウッホー！↓
-;jpn:　（にもつがいっぱいです！）
+;jpn:◆ウッホー!↓
+;jpn: (にもつがいっぱいです!)
 @KEYNP()
 @!
 MSG_SUB_SHOPMES_GORI_18;
-◆Ｕｎｇａａｈ，　ｇｏｏｎ　ｗａｋｋａｗｏｏ！↓
-　　（Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．）@KEY()↓
+◆Ungaah, goon wakkawoo!↓
+  (Thank you very much.)@KEY()↓
 
 ;jpn:◆ウホホホ。↓
-;jpn:　（ありがとうございました）@KEY()↓
+;jpn: (ありがとうございました)@KEY()↓
 @!
 MSG_SUB_SHOPMES_GORI_19;
-◆Ｗａｎｇａ　ｗｏｏｎ　ｇａｗａ　ｄｉｎ　ｇｏｏ！↓
-　　（Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｓｈｏｐｐｉｎｇ　ｈｅｒｅ．）@KEY()↓
+◆Wanga woon gawa din goo!↓
+  (Thank you for shopping here.)@KEY()↓
 
 ;jpn:◆ウーホウホ。↓
-;jpn:　（まいどあり）@KEY()↓
+;jpn: (まいどあり)@KEY()↓
 @!
 MSG_SUB_SHOPMES_GORI_20;
-◆Ｗａｋｋａ　ｇｏｗｏｏｎ　ｄｉｎ　ｗｏｏ？！↓
-　　（Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？）↓
+◆Wakka gowoon din woo?!↓
+  (Would you like anything else?)↓
 
-;jpn:◆ウホウホ？↓
-;jpn:　（ほかに　ちゅうもんは？）↓
+;jpn:◆ウホウホ?↓
+;jpn: (ほかに ちゅうもんは?)↓
 @!
 MSG_SUB_SHOPMES_GORI_22;
-◆Ｕｎｇａｗａ　ｕｎｇａｗａ　ｕｎｇａｗａ　ｗｏｏ！　　Ｗｏｎｇａ　ｗａｋｋａ　ｗｏｏｎｇａ！↓
-　　（@DSP_NAME(0)　ｉｓ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
-◆　　Ｃａｎ　ｓｏｍｅｏｎｅ　ｅｌｓｅ　ｈｅｌｐ　ｈｉｍ　ｏｕｔ？）↓
+◆Ungawa ungawa ungawa woo!  Wonga wakka woonga!↓
+  (@DSP_NAME(0) is already carrying too many things.@KEY()↓
+◆  Can someone else help him out?)↓
 
-;jpn:◆ウホー！　ウホウホ？↓
-;jpn:　（@DSP_NAME(0)さんはこれいじょう↓
-;jpn:　にもつがもてません！@KEY()↓
-;jpn:　ほかのひとが　もちますか？）↓
+;jpn:◆ウホー! ウホウホ?↓
+;jpn: (@DSP_NAME(0)さんはこれいじょう↓
+;jpn: にもつがもてません!@KEY()↓
+;jpn: ほかのひとが もちますか?)↓
 @!
 
 ;
@@ -2823,239 +2823,239 @@ MSG_SUB_CUSTMES_6;
 @CHKFGOTO(FLG_SHOP_04,_SUB_CUSTMES_D_6)
 @!
 
-;看板の客（おじさん）（ｅｌｄｅｒｌｙ ｍａｍ）
+;看板の客(おじさん)(elderly mam)
 _SUB_CUSTMES_A_1;
-◆Ｈｕｆｆ，　ｐｕｆｆ，　ｈｕｆｆ．．．　　ｗｈｅｅｅｅｚｅ！　　Ｉ　ｒａｎ　ｈｅｒｅ　ａｓ　ｆａｓｔ　ａｓ　Ｉ　ｃｏｕｌｄ．@KEY()↓
-◆Ｉ’ｍ　ｐｌｕｍ　ｔｕｃｋｅｒｅｄ　ｏｕｔ．@KEY()↓
-◆Ｗｈａｔ　ｈａｖｅ　ｙｏｕ　ｇｏｔ　ｆｏｒ　ｓａｌｅ？@KEY()
+◆Huff, puff, huff...  wheeeeze!  I ran here as fast as I could.@KEY()↓
+◆I’m plum tuckered out.@KEY()↓
+◆What have you got for sale?@KEY()
 
-;jpn:◆はあ　はあ　はあ↓
-;jpn:　ぜんりょくで　はしって↓
-;jpn:　きたんで　アセかいちゃったよ。@KEY()↓
-;jpn:◆なにを　うってくれるのかね。@KEY()
+;jpn:◆はあ はあ はあ↓
+;jpn: ぜんりょくで はしって↓
+;jpn: きたんで アセかいちゃったよ。@KEY()↓
+;jpn:◆なにを うってくれるのかね。@KEY()
 @!
 _SUB_CUSTMES_A_2;
-◆Ｔｈａｎｋｓ，　ｓｏｎｎｙ．@KEY()↓
-◆Ｙｏｕ　ｃｅｒｔａｉｎｌｙ　ｍａｄｅ　ｉｔ　ｗｏｒｔｈ　ｍｙ　ｗｈｉｌｅ　ｔｏ　ｃｏｍｅ　ａｌｌ　ｔｈｉｓ　ｗａｙ！
+◆Thanks, sonny.@KEY()↓
+◆You certainly made it worth my while to come all this way!
 
 ;jpn:◆ありがとう↓
-;jpn:　とおくからきた↓
-;jpn:　かいが　あったよ。
+;jpn: とおくからきた↓
+;jpn: かいが あったよ。
 @KEYNP()
 @!
 _SUB_CUSTMES_A_3;
 ←
-◆Ｏｈ，　ｓａｙ　ｉｔ　ａｉｎ’ｔ　ｓｏ！　　Ａｎｄ　ａｆｔｅｒ　Ｉ　ｒａｎ　ｈｅｒｅ　ａｓ　ｆａｓｔ　ａｓ　Ｉ　ｃｏｕｌｄ！
+◆Oh, say it ain’t so!  And after I ran here as fast as I could!
 
-;jpn:◆せっかく　ぜんりょくで↓
-;jpn:　はしってきたのに！
+;jpn:◆せっかく ぜんりょくで↓
+;jpn: はしってきたのに!
 @KEYNP()
 @!
 _SUB_CUSTMES_A_4;
 @LOAD_GLOBAL_REG()
 ←
-◆@DSP_GOODS(0)？↓
-　　Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　@XCHG()＄@DSP_NUM(0)．@KEY()↓
-◆Ｈｏｗ’ｓ　ｔｈａｔ　ｆｏｒ　ａ　ｆａｉｒ　ｏｆｆｅｒ？↓
+◆@DSP_GOODS(0)?↓
+  I’ll give you @XCHG()＄@DSP_NUM(0).@KEY()↓
+◆How’s that for a fair offer?↓
 
-;◆@DSP_GOODS(0)？↓
+;◆@DSP_GOODS(0)?↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルで　どうかね？@KEY()↓
-;jpn:◆それで　いいかね？↓
+;jpn: @DSP_NUM(0)ドルで どうかね?@KEY()↓
+;jpn:◆それで いいかね?↓
 @!
 _SUB_CUSTMES_A_5;
-◆Ｔｈａｔ’ｓ　ｔｏｏ　ｂａｄ．．．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｅｌｌ？@KEY()
+◆That’s too bad...@KEY()↓
+◆Do you have anything else you want to sell?@KEY()
 
 ;jpn:◆それはざんねんだ‥‥↓
-;jpn:　ほかになにか↓
-;jpn:　うるものはあるのかね？@KEY()
+;jpn: ほかになにか↓
+;jpn: うるものはあるのかね?@KEY()
 @!
 _SUB_CUSTMES_A_6;
 ←
-◆Ｏｈ，　ｊｕｍｐｉｎ’　ｊｅｈｏｓａｐｈａｔ！　　Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　Ｉ　ｃａｎ　ｂｕｙ　ｔｈａｔ．@KEY()↓
-◆Ｗｈａｔ　ｅｌｓｅ　ｃａｎ　ｙｏｕ　ｓｅｌｌ　ｍｅ？@KEY()
+◆Oh, jumpin’ jehosaphat!  I don’t think I can buy that.@KEY()↓
+◆What else can you sell me?@KEY()
 
-;jpn:◆あいたッ　それはちょっと↓
-;jpn:　かえないねぇ。@KEY()↓
-;jpn:◆なにを　うってくれるのかね。@KEY()
+;jpn:◆あいたッ それはちょっと↓
+;jpn: かえないねぇ。@KEY()↓
+;jpn:◆なにを うってくれるのかね。@KEY()
 @!
 
-;看板の客（おばさん）（ｅｌｄｅｒｌｙ ｌａｄｙ）
+;看板の客(おばさん)(elderly lady)
 _SUB_CUSTMES_B_1;
-◆Ｉ　ｓａｗ　ｙｏｕｒ　ｓｉｇｎ．　　Ｓｏ，　Ｉ　ｔｈｏｕｇｈｔ　Ｉ’ｄ　ｓｔｏｐ　ｂｙ．@KEY()↓
-◆Ｗｈａｔ’ｒｅ　ｙｏｕ　ｐｅｄｄｌｉｎ’？@KEY()
+◆I saw your sign.  So, I thought I’d stop by.@KEY()↓
+◆What’re you peddlin’?@KEY()
 
-;jpn:◆かんばんが　みえたから↓
-;jpn:　ちょっと　よってみたの。@KEY()↓
-;jpn:◆なにを　うってくれるの？@KEY()
+;jpn:◆かんばんが みえたから↓
+;jpn: ちょっと よってみたの。@KEY()↓
+;jpn:◆なにを うってくれるの?@KEY()
 @!
 _SUB_CUSTMES_B_2;
 ←
-◆Ｏｈ，　ｔｈａｎｋ　ｙｏｕ　ｓｏ　ｍｕｃｈ！　　Ｉｔ　ｗａｓ　ｗｅｌｌ　ｗｏｒｔｈ　ｔｈｅ　ｔｒｉｐ！
+◆Oh, thank you so much!  It was well worth the trip!
 
-;jpn:◆サンキュー！↓
-;jpn:　とおくからきた↓
-;jpn:　かいが　あったわ。
+;jpn:◆サンキュー!↓
+;jpn: とおくからきた↓
+;jpn: かいが あったわ。
 @KEYNP()
 @!
 _SUB_CUSTMES_B_3;
 ←
-◆Ｉ　ｃａｎ’ｔ　ｂｅｌｉｅｖｅ　ｉｔ！@KEY()↓
-◆Ａｆｔｅｒ　Ｉ　ｔｏｏｋ　ａｌｌ　ｔｈｅ　ｔｒｏｕｂｌｅ　ｔｏ　ｇｅｔ　ｏｕｔ　ｈｅｒｅ！
+◆I can’t believe it!@KEY()↓
+◆After I took all the trouble to get out here!
 
 ;jpn:◆せっかくきたのに↓
-;jpn:　ひどいわ！
+;jpn: ひどいわ!
 @KEYNP()
 @!
 _SUB_CUSTMES_B_4;
 @LOAD_GLOBAL_REG()
 ←
-◆Ｔｈｅ　@DSP_GOODS(0)？↓
-　　Ｈｍｍｍ．．．　　Ｈｏｗ　ａｂｏｕｔ↓
-　　@XCHG()＄@DSP_NUM(0)？@KEY()↓
-◆Ｈｏｗ　ｄｏｅｓ　ｔｈａｔ　ｏｆｆｅｒ　ｓｔｒｉｋｅ　ｙｏｕ？↓
+◆The @DSP_GOODS(0)?↓
+  Hmmm...  How about↓
+  @XCHG()＄@DSP_NUM(0)?@KEY()↓
+◆How does that offer strike you?↓
 
-;◆@DSP_GOODS(0)？↓
+;◆@DSP_GOODS(0)?↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルね。@KEY()↓
-;jpn:◆それで　いい？↓
+;jpn: @DSP_NUM(0)ドルね。@KEY()↓
+;jpn:◆それで いい?↓
 @!
 _SUB_CUSTMES_B_5;
 ←
-◆Ｍｙ，　ｍｙ！↓
-　　Ｙｏｕ　ｃａｎ’ｔ　ｄｏ　ｔｈａｔ　ｔｏ　ｍｅ！@KEY()↓
-◆Ｗｅｌｌ，　ｈａｖｅ　ｙｏｕ　ｇｏｔ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｆｏｒ　ｓａｌｅ？@KEY()
+◆My, my!↓
+  You can’t do that to me!@KEY()↓
+◆Well, have you got anything else for sale?@KEY()
 
-;jpn:◆えーっ　こまったわ。↓
-;jpn:　じゃあ　ほかにはなにか↓
-;jpn:　うるものはあるの？@KEY()
+;jpn:◆えーっ こまったわ。↓
+;jpn: じゃあ ほかにはなにか↓
+;jpn: うるものはあるの?@KEY()
 @!
 _SUB_CUSTMES_B_6;
 ←
-◆Ａｌｒｅａｄｙ　ｇｏｔ　ｍｅ　ｏｎｅ　ｏｆ　ｔｈｏｓｅ．@KEY()↓
-◆Ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｗｏｒｔｈｗｈｉｌｅ　ｆｏｒ　ｓａｌｅ？@KEY()
+◆Already got me one of those.@KEY()↓
+◆Anything else worthwhile for sale?@KEY()
 
-;jpn:◆それは　まにあってるわ！@KEY()↓
-;jpn:◆なにを　うってくれるの？@KEY()
+;jpn:◆それは まにあってるわ!@KEY()↓
+;jpn:◆なにを うってくれるの?@KEY()
 @!
 
-;看板の客（子供）（ｋｉｄ）
+;看板の客(子供)(kid)
 _SUB_CUSTMES_C_1;
-◆Ｈｉ！↓
-　　Ｉｓ　ｔｈｉｓ　ａ　ｔｏｏｌ　ｓｈｏｐ？　　Ｃｏｏｌ！@KEY()↓
-◆Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｓｅｌｌｉｎｇ？@KEY()
+◆Hi!↓
+  Is this a tool shop?  Cool!@KEY()↓
+◆What are you selling?@KEY()
 
-;jpn:◆こんちわ！↓
-;jpn:　どうぐやは　ここですよね。@KEY()↓
-;jpn:◆なにを　うってくれますか？@KEY()
+;jpn:◆こんちわ!↓
+;jpn: どうぐやは ここですよね。@KEY()↓
+;jpn:◆なにを うってくれますか?@KEY()
 @!
 _SUB_CUSTMES_C_2;
 ←
-◆Ｔｈａｎｋｓ　ａ　ｌｏｔ！↓
-　　Ｉｔ　ｓｕｒｅ　ｗａｓ　ｗｏｒｔｈ　ｉｔ　ｔｏ　ｃｏｍｅ　ａｌｌ　ｔｈｅ　ｗａｙ　ｏｕｔ　ｈｅｒｅ！
+◆Thanks a lot!↓
+  It sure was worth it to come all the way out here!
 
 ;jpn:◆ありがとうございます。↓
-;jpn:　とおくからきた↓
-;jpn:　かいが　ありました。
+;jpn: とおくからきた↓
+;jpn: かいが ありました。
 @KEYNP()
 @!
 _SUB_CUSTMES_C_3;
 ←
-◆Ｏｈ，　ｃ’ｍｏｎ！@KEY()↓
-◆Ｙｏｕ　ｈａｖｅ　ｎｏ　ｉｄｅａ　ｈｏｗ　ｍｕｃｈ　ｔｒｏｕｂｌｅ　ｉｔ　ｗａｓ　ｆｏｒ　ｍｅ　ｔｏ　ｇｅｔ　ｈｅｒｅ！
+◆Oh, c’mon!@KEY()↓
+◆You have no idea how much trouble it was for me to get here!
 
 ;jpn:◆せっかくきたのに↓
-;jpn:　ひどいや！
+;jpn: ひどいや!
 @KEYNP()
 @!
 _SUB_CUSTMES_C_4;
 @LOAD_GLOBAL_REG()
 ←
-◆Ｔｈｅ　@DSP_GOODS(0)？↓
-　　Ｈｏｗ　ａｂｏｕｔ　@XCHG()＄@DSP_NUM(0)．．．@KEY()↓
-◆Ｉｓ　ｔｈａｔ　ａ　ｆａｉｒ　ｔｒａｄｅ？↓
+◆The @DSP_GOODS(0)?↓
+  How about @XCHG()＄@DSP_NUM(0)...@KEY()↓
+◆Is that a fair trade?↓
 
 ;jpn:◆@DSP_GOODS(0)ですか。↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルですね。@KEY()↓
-;jpn:◆それで　いいですか？↓
+;jpn: @DSP_NUM(0)ドルですね。@KEY()↓
+;jpn:◆それで いいですか?↓
 @!
 _SUB_CUSTMES_C_5;
 ←
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｓｏ？　　ＯＫ，　ｈａｖｅ　ｙｏｕ　ｇｏｔ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｔｈｅｎ？@KEY()
+◆You don’t think so?  OK, have you got anything else then?@KEY()
 
-;jpn:◆ああ　そうですか。↓
-;jpn:　ほかになにか↓
-;jpn:　うるものはありますか？@KEY()
+;jpn:◆ああ そうですか。↓
+;jpn: ほかになにか↓
+;jpn: うるものはありますか?@KEY()
 @!
 _SUB_CUSTMES_C_6;
 ←
-◆Ｕｈｈｈ，　Ｉ　ｃａｎ’ｔ　ｂｕｙ　ｔｈａｔ．．．@KEY()↓
-◆Ｇｏｔ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？@KEY()
+◆Uhhh, I can’t buy that...@KEY()↓
+◆Got anything else?@KEY()
 
-;jpn:◆それは　ぼくには↓
-;jpn:　かえません！@KEY()↓
-;jpn:◆なにを　うってくれますか？@KEY()
+;jpn:◆それは ぼくには↓
+;jpn: かえません!@KEY()↓
+;jpn:◆なにを うってくれますか?@KEY()
 @!
 
-;看板の客（江戸っ子）
+;看板の客(江戸っ子)
 _SUB_CUSTMES_D_1;
-◆Ｈｉ，　ｈｏｗ　ａｒｅ　ｙａ？　　Ｉｓ　ｔｈｉｓ　ａ　ｔｏｏｌ　ｓｈｏｐ　ｏｒ　ｓｏｍｅｔｈｉｎｇ？@KEY()↓
-◆Ｗｈａｔ　ａｒｅ　ｙｏｕ　ｓｅｌｌｉｎｇ，　ａｎｙｗａｙ？@KEY()
+◆Hi, how are ya?  Is this a tool shop or something?@KEY()↓
+◆What are you selling, anyway?@KEY()
 
-;jpn:◆ごめんよ！↓
-;jpn:　どうぐやは　ここかい？@KEY()↓
-;jpn:◆なにを　うってくれるんでい？@KEY()
+;jpn:◆ごめんよ!↓
+;jpn: どうぐやは ここかい?@KEY()↓
+;jpn:◆なにを うってくれるんでい?@KEY()
 @!
 _SUB_CUSTMES_D_2;
 ←
-◆Ｔｈａｎｋｓ！　　Ｉ　ｈａｖｅ　ｔｏ　ｓａｙ，　ｉｔ　ｗａｓ　ｗｅｌｌ　ｗｏｒｔｈ　ｍｙ　ｔｒｏｕｂｌｅ　ｔｏ　ｃｏｍｅ　ｏｕｔ　ｈｅｒｅ．
+◆Thanks!  I have to say, it was well worth my trouble to come out here.
 
-;jpn:◆ありがとよ！↓
-;jpn:　とおくからきた↓
-;jpn:　かいが　あったってぇもんだ。
+;jpn:◆ありがとよ!↓
+;jpn: とおくからきた↓
+;jpn: かいが あったってぇもんだ。
 @KEYNP()
 @!
 _SUB_CUSTMES_D_3;
 ←
-◆Ｔｈａｔ’ｓ　ｊｕｓｔ　ｇｒｅａｔ！↓
-　　Ｙｏｕ　ｃａｎ’ｔ　ｄｏ　ｔｈｉｓ　ｔｏ　ｍｅ！
-;jpn:◆おっと　そいつは　あんまりだ！
+◆That’s just great!↓
+  You can’t do this to me!
+;jpn:◆おっと そいつは あんまりだ!
 @KEYNP()
 @!
 _SUB_CUSTMES_D_4;
 @LOAD_GLOBAL_REG()
 ←
-◆Ｔｈｅ　@DSP_GOODS(0)？↓
-　　Ｉ’ｄ　ｏｆｆｅｒ　ａｂｏｕｔ↓
-　　@XCHG()＄@DSP_NUM(0)　ｆｏｒ　ｔｈａｔ．@KEY()↓
-◆Ｉｓ　ｉｔ　ａ　ｄｅａｌ？↓
+◆The @DSP_GOODS(0)?↓
+  I’d offer about↓
+  @XCHG()＄@DSP_NUM(0) for that.@KEY()↓
+◆Is it a deal?↓
 
-;jpn:◆@DSP_GOODS(0)かい？↓
+;jpn:◆@DSP_GOODS(0)かい?↓
 ;@XCHG()
-;jpn:　@DSP_NUM(0)ドルだな。@KEY()↓
-;jpn:◆それで　いいかい？↓
+;jpn: @DSP_NUM(0)ドルだな。@KEY()↓
+;jpn:◆それで いいかい?↓
 @!
 _SUB_CUSTMES_D_5;
 ←
-◆Ｈａｖｅ　ｉｔ　ｙｏｕｒ　ｗａｙ．@KEY()↓
-◆Ｄｉｄ　ｙｏｕ　ｓａｙ　ｙｏｕ　ｈａｖｅ　ｓｏｍｅ　ｏｔｈｅｒ　ｔｈｉｎｇｓ　ｆｏｒ　ｓａｌｅ？@KEY()
+◆Have it your way.@KEY()↓
+◆Did you say you have some other things for sale?@KEY()
 
-;jpn:◆ああ　そうかい。↓
-;jpn:　そんなら　ほかになにか↓
-;jpn:　うるものは　あるってぇのかい？@KEY()
+;jpn:◆ああ そうかい。↓
+;jpn: そんなら ほかになにか↓
+;jpn: うるものは あるってぇのかい?@KEY()
 @!
 _SUB_CUSTMES_D_6;
 ←
-◆Ｉ’ｍ　ｎｏｔ　ｉｎｔｅｒｅｓｔｅｄ　ｉｎ　ｏｎｅ　ｏｆ　ｔｈｏｓｅ．@KEY()↓
-◆Ｃａｎ　ｙｏｕ　ｓｈｏｗ　ｍｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？@KEY()
+◆I’m not interested in one of those.@KEY()↓
+◆Can you show me anything else?@KEY()
 
-;jpn:◆そいつぁ　かえねえな！@KEY()↓
-;jpn:◆なにを　うってくれるんでい？@KEY()
+;jpn:◆そいつぁ かえねえな!@KEY()↓
+;jpn:◆なにを うってくれるんでい?@KEY()
 @!
 
-;タイムオーバー（ｔｉｍｅ ｏｖｅｒ）
+;タイムオーバー(time over)
 MSG_CUSTOMER_RETRY_OVER;
 @GOSUB(MSG_SUB_ZYUSHIN_CALL)
 @CLRF(FLG_DELIVERY_CUSTOMER)
@@ -3063,23 +3063,23 @@ MSG_CUSTOMER_RETRY_OVER;
 @CLRF(FLG_DELIVERY_CUSTOMER_C)
 @CLRF(FLG_DELIVERY_CUSTOMER_D)
 @OPEN(1)
-◆Ｈｅｌｌｏ！↓
-　　（ｇａｓｐ．．．　ｐａｎｔ．．．）@KEY()↓
-◆Ｉ　ｓａｗ　ｙｏｕｒ　ｓｉｇｎ↓
-　　（ｇａｓｐ．．．　ｐａｎｔ．．．），@KEY()↓
-◆ａｎｄ　ｔｈｏｕｇｈｔ　Ｉ　ｓｈｏｕｌｄ　ｓｔｏｐ　ａｎｄ　ｂｕｙ　ｓｏｍｅｔｈｉｎｇ．@KEY()↓
-◆Ｉ　ｔｒｉｅｄ　ａｎｄ　ｔｒｉｅｄ　ｔｏ　ｆｉｎｄ　ｉｔ↓
-　　（ｇａｓｐ．．．　ｐａｎｔ．．．）↓
-　　ｂｕｔ　ｎｏ　ｓｕｃｈ　ｌｕｃｋ．@KEY()↓
-◆Ｉ　ｔｈｉｎｋ　ｙｏｕ　ｓｈｏｕｌｄ　ｇｉｖｅ　ｔｈｉｓ　ｕｐ　ａｎｄ　ｇｏ　ｈｏｍｅ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｔｏｏｋ　ｙｏｕｒ　ｂｕｓｉｎｅｓｓ　ｍｏｒｅ　ｓｅｒｉｏｕｓｌｙ，@KEY()↓
-◆ｙｏｕ　ｗｏｕｌｄ　ｂｅ　ｍｏｒｅ　ｃｏｎｓｉｄｅｒａｔｅ　ｏｆ　ｙｏｕｒ　ｃｕｓｔｏｍｅｒｓ！@KEY()
+◆Hello!↓
+  (gasp... pant...)@KEY()↓
+◆I saw your sign↓
+  (gasp... pant...),@KEY()↓
+◆and thought I should stop and buy something.@KEY()↓
+◆I tried and tried to find it↓
+  (gasp... pant...)↓
+  but no such luck.@KEY()↓
+◆I think you should give this up and go home.@KEY()↓
+◆If you took your business more seriously,@KEY()↓
+◆you would be more considerate of your customers!@KEY()
 @GOSUB(MSG_SUB_ZYUSHIN_PUT)
 @CLRF(FLG_SYS_DISTLPT);テレポート許可
 @!
 
 ;
-;ショップＡ（売る、買う）
+;ショップA(売る、買う)
 ;
 
 MSG_SUB_SHOP_A;
@@ -3087,8 +3087,8 @@ MSG_SUB_SHOP_A;
 @GOSUB(MSG_SUB_SHOPMES_1)
 ;@WINR_MONEY()
 _SHOP_A_MAIN;
-<Ｂｕｙ>
-<Ｓｅｌｌ>
+<Buy>
+<Sell>
 ;<かいにきた>
 ;<うりにきた>
 @DSP_ITEM(2)
@@ -3157,7 +3157,7 @@ _SHOP_A_SELL_GDSEMP;
 @GOTO(_SHOP_A_OTHER)
 
 ;
-;ショップＢ（売る）
+;ショップB(売る)
 ;
 
 MSG_SUB_SHOP_B;
@@ -3330,8 +3330,8 @@ _GDS_TAKE_NO;
 _GDS_TAKE_SEL_GOODSFULL;
 ←
 ;◆@DSP_NAME(0)はこれいじょう↓
-;　にもつを　もてません。@KEY()↓;
-;◆ほかのひとが　もちますか？↓
+; にもつを もてません。@KEY()↓;
+;◆ほかのひとが もちますか?↓
 @GOSUB(MSG_SUB_SHOPMES_22)
 @GOSUB(MSG_SUB_YESNO)
 @GOSUB(MSG_SUB_SELQ_FORMOON)
@@ -3382,7 +3382,7 @@ _GDS_SELL_UNABLE;
 @GOTO(_GDS_SELL_END)
 
 ;
-;サブルーチン（ローカル）
+;サブルーチン(ローカル)
 ;
 
 _SUB_SHOP_PART_1;
@@ -3412,86 +3412,86 @@ _SUB_SHOP_PART_3;
 @LOAD_REG()
 @SET_REG(0)
 
-◆（@DSP_NAME(0)’ｓ@CHKFGOTO(FLG_SHOPTEMP_3,_PART_3_2)
+◆(@DSP_NAME(0)’s@CHKFGOTO(FLG_SHOPTEMP_3,_PART_3_2)
 
-;jpn:◆（@DSP_NAME(0)の
+;jpn:◆(@DSP_NAME(0)の
 @CHKFGOTO(FLG_SHOPTEMP_3,_PART_3_2)
-　ｄｅｆｅｎｓｅ↓
-　　ｃｈａｎｇｅｄ　
+ defense↓
+  changed 
 ;jpn:しゅびりょくが↓
 
 @ONGOTO(_PART_3_NESS,_PART_3_PAULA,_PART_3_JEFF,_PART_3_POO)
 _PART_3_NESS;
-　@DSP_STS(STS_PC_DEFENSE_NES)
+ @DSP_STS(STS_PC_DEFENSE_NES)
 @!
 _PART_3_PAULA;
-　@DSP_STS(STS_PC_DEFENSE_PAULA)
+ @DSP_STS(STS_PC_DEFENSE_PAULA)
 @!
 _PART_3_JEFF;
-　@DSP_STS(STS_PC_DEFENSE_JEFF)
+ @DSP_STS(STS_PC_DEFENSE_JEFF)
 @!
 _PART_3_POO;
-　@DSP_STS(STS_PC_DEFENSE_POO)
+ @DSP_STS(STS_PC_DEFENSE_POO)
 @!
 _PART_3_2;
-　ｏｆｆｅｎｓｅ↓
-　　ｃｈａｎｇｅｄ　
+ offense↓
+  changed 
 ;jpn:こうげきりょくが↓
 
 @ONGOTO(_PART_3_2_NESS,_PART_3_2_PAULA,_PART_3_2_JEFF,_PART_3_2_POO)
 _PART_3_2_NESS;
-　@DSP_STS(STS_PC_OFFENSE_NES)
+ @DSP_STS(STS_PC_OFFENSE_NES)
 @!
 _PART_3_2_PAULA;
-　@DSP_STS(STS_PC_OFFENSE_PAULA)
+ @DSP_STS(STS_PC_OFFENSE_PAULA)
 @!
 _PART_3_2_JEFF;
-　@DSP_STS(STS_PC_OFFENSE_JEFF)
+ @DSP_STS(STS_PC_OFFENSE_JEFF)
 @!
 _PART_3_2_POO;
-　@DSP_STS(STS_PC_OFFENSE_POO)
+ @DSP_STS(STS_PC_OFFENSE_POO)
 @!
 
 _SUB_SHOP_PART_3B;
-　ｔｏ
+ to
 ;jpn:から
 @SET_REG(0)
 @CHKFGOTO(FLG_SHOPTEMP_3,_PART_3B_2)
 @ONGOTO(_PART_3B_NESS,_PART_3B_PAULA,_PART_3B_JEFF,_PART_3B_POO)
 _PART_3B_NESS;
-　　@DSP_STS(STS_PC_DEFENSE_NES)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_DEFENSE_NES)になった。）@KEY()↓
+  @DSP_STS(STS_PC_DEFENSE_NES))@KEY()↓
+;jpn:@DSP_STS(STS_PC_DEFENSE_NES)になった。)@KEY()↓
 @!
 _PART_3B_PAULA;
-　　@DSP_STS(STS_PC_DEFENSE_PAULA)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_DEFENSE_PAULA)になった。）@KEY()↓
+  @DSP_STS(STS_PC_DEFENSE_PAULA))@KEY()↓
+;jpn:@DSP_STS(STS_PC_DEFENSE_PAULA)になった。)@KEY()↓
 @!
 _PART_3B_JEFF;
-　　@DSP_STS(STS_PC_DEFENSE_JEFF)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_DEFENSE_JEFF)になった。）@KEY()↓
+  @DSP_STS(STS_PC_DEFENSE_JEFF))@KEY()↓
+;jpn:@DSP_STS(STS_PC_DEFENSE_JEFF)になった。)@KEY()↓
 @!
 _PART_3B_POO;
-　　@DSP_STS(STS_PC_DEFENSE_POO)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_DEFENSE_POO)になった。）@KEY()↓
+  @DSP_STS(STS_PC_DEFENSE_POO))@KEY()↓
+;jpn:@DSP_STS(STS_PC_DEFENSE_POO)になった。)@KEY()↓
 @!
 
 _PART_3B_2;
 @ONGOTO(_PART_3B_2_NESS,_PART_3B_2_PAULA,_PART_3B_2_JEFF,_PART_3B_2_POO)
 _PART_3B_2_NESS;
-　　@DSP_STS(STS_PC_OFFENSE_NES)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_OFFENSE_NES)になった。）@KEY()↓
+  @DSP_STS(STS_PC_OFFENSE_NES))@KEY()↓
+;jpn:@DSP_STS(STS_PC_OFFENSE_NES)になった。)@KEY()↓
 @!
 _PART_3B_2_PAULA;
-　　@DSP_STS(STS_PC_OFFENSE_PAULA)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_OFFENSE_PAULA)になった。）@KEY()↓
+  @DSP_STS(STS_PC_OFFENSE_PAULA))@KEY()↓
+;jpn:@DSP_STS(STS_PC_OFFENSE_PAULA)になった。)@KEY()↓
 @!
 _PART_3B_2_JEFF;
-　　@DSP_STS(STS_PC_OFFENSE_JEFF)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_OFFENSE_JEFF)になった。）@KEY()↓
+  @DSP_STS(STS_PC_OFFENSE_JEFF))@KEY()↓
+;jpn:@DSP_STS(STS_PC_OFFENSE_JEFF)になった。)@KEY()↓
 @!
 _PART_3B_2_POO;
-　　@DSP_STS(STS_PC_OFFENSE_POO)）@KEY()↓
-;jpn:@DSP_STS(STS_PC_OFFENSE_POO)になった。）@KEY()↓
+  @DSP_STS(STS_PC_OFFENSE_POO))@KEY()↓
+;jpn:@DSP_STS(STS_PC_OFFENSE_POO)になった。)@KEY()↓
 @!
 
 _SUB_SHOP_PART_4;
@@ -3585,7 +3585,7 @@ _LUCKY_SAND_A;
 @!
 
 ;
-;サブルーチン（グローバル）
+;サブルーチン(グローバル)
 ;
 
 MSG_SUB_Q_GOODSEMPTY;
@@ -3700,7 +3700,7 @@ MSG_SEL_GOODSIN;
 ;@XCHG()
 ;←
 ;◆@DSP_NAME(0)はこれいじょう↓
-;　にもつを　もてません。@KEY()↓;
+; にもつを もてません。@KEY()↓;
 ;@XCHG()
 ;@GOTO(MSG_SEL_GOODSIN)
 
@@ -3728,7 +3728,7 @@ MSG_SEL_GOODSIN_T;
 ;@SAVE_GLOBAL_REG()
 @XCHG()
 ;◆@DSP_NAME(0)はこれいじょう↓
-;　にもつを　もてません。@KEY()↓;
+; にもつを もてません。@KEY()↓;
 ;@XCHG()
 @GOTO(MSG_SEL_GOODSIN_T)
 

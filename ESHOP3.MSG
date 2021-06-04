@@ -8,14 +8,14 @@ MSG_CD;
 @SET_LOOPREG(0)
 @SET_REG(1)
 ;
-◆Ｗｅｌｃｏｍｅ　ｔｏ　ｔｈｅ　Ａｕｔｏｍａｔｉｃ　Ｔｅｌｌｅｒ　Ｍａｃｈｉｎｅ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｓｅｌｅｃｔ　ａ　ｔｒａｎｓａｃｔｉｏｎ：↓
+◆Welcome to the Automatic Teller Machine.@KEY()↓
+◆Please select a transaction：↓
 
 ;@SAVE_WIN()
 ;@DSP_PL()
 ;@OPEN(37)
-<Ｗｉｔｈｄｒａｗａｌ>
-<Ｄｅｐｏｓｉｔ>
+<Withdrawal>
+<Deposit>
 @DSP_ITEM(2)
 ;@SELQ()
 ;@SAVE_GLOBAL_REG()
@@ -30,7 +30,7 @@ MSG_CD;
 ;jpn:<アズケル>
 ;@DSP_ITEM(2)
 _CD_NO;
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．
+◆Thank you very much.
 
 ;jpn:◆アリガトウゴザイマシタ
 _CD_END;
@@ -51,37 +51,37 @@ _CD_OAZUKE;
 @WINR_MONEY()
 @SE(SE_se76_my_give)
 @WI(10)
-◆Ｙｏｕｒ　ａｃｃｏｕｎｔ　ｗｉｌｌ　ｂｅ　ｃｒｅｄｉｔｅｄ↓
-　　＄@DSP_NUM(0)．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．
+◆Your account will be credited↓
+  ＄@DSP_NUM(0).@KEY()↓
+◆Thank you very much.
 
 ;◆＄@DSP_NUM(0)↓
-;jpn:　オアズカリシマシタ@KEY()↓
+;jpn: オアズカリシマシタ@KEY()↓
 ;jpn:◆アリガトウゴザイマシタ
 @GOTO(_CD_END)
 
-_CD_OA_NOMONEY;				;所持金　＜　入力した金額
-◆Ｉｎｖａｌｉｄ　ｉｎｓｔｒｕｃｔｉｏｎ　ｉｎｐｕｔ．　　Ｐｌｅａｓｅ　ｔｒｙ　ａｇａｉｎ．@KEY()↓
+_CD_OA_NOMONEY;				;所持金 ＜ 入力した金額
+◆Invalid instruction input.  Please try again.@KEY()↓
 
-;jpn:◆ニュウリョク　ミス！↓
-;jpn:　ニュウリョク↓
-;jpn:　シナオシテクダサイ@KEY()↓
+;jpn:◆ニュウリョク ミス!↓
+;jpn: ニュウリョク↓
+;jpn: シナオシテクダサイ@KEY()↓
 @GOTO(_CD_OAZUKE)
 
-_CD_OA_OVER;				;銀行預金限界越える（未使用）
-◆Ｙｏｕ　ｄｏ　ｎｏｔ　ｈａｖｅ　ｔｈａｔ
-　　ｍｕｃｈ　ｍｏｎｅｙ　ｆｏｒ　ａ　ｄｅｐｏｓｉｔ．@KEY()↓
+_CD_OA_OVER;				;銀行預金限界越える(未使用)
+◆You do not have that
+  much money for a deposit.@KEY()↓
 
-;jpn:◆ソンナニ　アズカレマセン@KEY()↓
+;jpn:◆ソンナニ アズカレマセン@KEY()↓
 @GOTO(_CD_OAZUKE)
 
 _CD_OA_FULL;				;銀行預金MAX
-◆Ｔｈｉｓ　ｍａｃｈｉｎｅ　ｃａｎｎｏｔ　ａｃｃｅｐｔ　ａ　ｄｅｐｏｓｉｔ　ｇｒｅａｔｅｒ　ｔｈａｎ↓
-　　＄９，９９９，９９９．@KEY()↓
+◆This machine cannot accept a deposit greater than↓
+  ＄９,９９９,９９９.@KEY()↓
  
 ;◆＄９９９９９９９↓
-;jpn:　ヲコエテハ↓
-;jpn:　アズカレナイキマリデス@KEY()↓
+;jpn: ヲコエテハ↓
+;jpn: アズカレナイキマリデス@KEY()↓
 @GOTO(_CD_NO)
 
 _CD_HIKIDASHI;
@@ -97,59 +97,59 @@ _CD_HIKIDASHI;
 @SAVE_REG()
 @DRAW_MONEY_BANK(0)
 @MONEYIN(0)
-@Q_MONEY(100000)			;バグ？
-@FALSE_GOTO(_CD_HIKI_OVER)		;機能していない（バグ？）
+@Q_MONEY(100000)			;バグ?
+@FALSE_GOTO(_CD_HIKI_OVER)		;機能していない(バグ?)
 @WINR_MONEY()
 @SE(SE_se74_my_get)
 @WI(10)
-◆Ｙｏｕｒ　ａｃｃｏｕｎｔ　ｈａｓ　ｂｅｅｎ　ｄｅｂｉｔｅｄ↓
-　　＄@DSP_NUM(0)．@KEY()↓
-◆Ｐｌｅａｓｅ　ｔａｋｅ　ｙｏｕｒ　ｃａｓｈ．
+◆Your account has been debited↓
+  ＄@DSP_NUM(0).@KEY()↓
+◆Please take your cash.
 
-;jpn:◆＄@DSP_NUM(0)　ノ↓
-;jpn:　オヒキダシデスネ@KEY()↓
+;jpn:◆＄@DSP_NUM(0) ノ↓
+;jpn: オヒキダシデスネ@KEY()↓
 ;jpn:◆アリガトウゴザイマシタ
 @GOTO(_CD_END)
 
-_CD_HIKI_NOMONEY;			;銀行預金　＜　入力した金額
-◆Ｔｈｅ　ｒｅｑｕｅｓｔｅｄ　ａｍｏｕｎｔ　ｉｓ　ｉｎ　ｅｘｃｅｓｓ　ｏｆ　ｙｏｕｒ　ａｃｃｏｕｎｔ　ｂａｌａｎｃｅ．@KEY()↓
+_CD_HIKI_NOMONEY;			;銀行預金 ＜ 入力した金額
+◆The requested amount is in excess of your account balance.@KEY()↓
 
 ;jpn:◆オアズカリキンガクヲ↓
-;jpn:　コエテイマス@KEY()↓
+;jpn: コエテイマス@KEY()↓
 @GOTO(_CD_HIKIDASHI)
 
 _CD_HIKI_OVER;				;所持金限界越える
 @LOAD_REG()
 @DEPOSIT_MONEY_BANK(0)
-◆Ｙｏｕ　ａｒｅ　ｎｏｔ　ａｌｌｏｗｅｄ　ｔｏ　ｃａｒｒｙ　ｍｏｒｅ　ｔｈａｎ↓
-　　＄９９，９９９．@KEY()↓
+◆You are not allowed to carry more than↓
+  ＄９９,９９９.@KEY()↓
 
 ;◆＄９９９９９↓
-;jpn:　イジョウノモチアルキハ↓
-;jpn:　キンジラレテイマス@KEY()↓
+;jpn: イジョウノモチアルキハ↓
+;jpn: キンジラレテイマス@KEY()↓
 @GOTO(_CD_HIKIDASHI)
 
 _CD_HIKI_EMPTY;				;銀行預金$0
-◆Ｙｏｕｒ　ａｃｃｏｕｎｔ　ｉｓ　ｃｕｒｒｅｎｔｌｙ　ｓｈｏｗｉｎｇ　ａ　ｚｅｒｏ　ｂａｌａｎｃｅ．@KEY()↓
+◆Your account is currently showing a zero balance.@KEY()↓
 
-;jpn:◆ゲンザイ　オアズカリキンハ↓
-;jpn:　アリマセン@KEY()↓
+;jpn:◆ゲンザイ オアズカリキンハ↓
+;jpn: アリマセン@KEY()↓
 @GOTO(_CD_NO)
 
 _CD_HIKI_MAX;				;所持金MAX
-◆Ｙｏｕ　ａｒｅ　ｎｏｔ　ａｌｌｏｗｅｄ　ｔｏ　ｃａｒｒｙ　ｍｏｒｅ　ｔｈａｎ↓
-　　＄９９，９９９．@KEY()↓
+◆You are not allowed to carry more than↓
+  ＄９９,９９９.@KEY()↓
 
 ;◆＄９９９９９↓
-;jpn:　イジョウノモチアルキハ↓
-;jpn:　キンジラレテイマス@KEY()↓
+;jpn: イジョウノモチアルキハ↓
+;jpn: キンジラレテイマス@KEY()↓
 @GOTO(_CD_NO)
 
 _CD_INPUT;
 @GOSUB(_CD_NOWMONEY)
-◆Ｐｌｅａｓｅ　ｅｎｔｅｒ　ｔｈｅ　ａｍｏｕｎｔ　ｏｆ　ｙｏｕｒ　ｗｉｔｈｄｒａｗａｌ．↓
+◆Please enter the amount of your withdrawal.↓
 
-;jpn:◆オヒキダシ　キンガクハ？↓
+;jpn:◆オヒキダシ キンガクハ?↓
 _CD_INPUT_2;
 @WINR_MONEY()
 _CD_HOWMUCH;
@@ -162,18 +162,18 @@ _CD_HOWMUCH;
 
 _CD_INPUT_B;
 @GOSUB(_CD_NOWMONEY)
-◆Ｐｌｅａｓｅ　ｅｎｔｅｒ　ｔｈｅ　ａｍｏｕｎｔ　ｏｆ　ｙｏｕｒ　ｄｅｐｏｓｉｔ．↓
+◆Please enter the amount of your deposit.↓
 
-;jpn:◆オアズケ　キンガクハ？↓
+;jpn:◆オアズケ キンガクハ?↓
 @GOTO(_CD_INPUT_2)
 
 _CD_NOWMONEY;
-◆Ｙｏｕｒ　ａｃｃｏｕｎｔ　ｃｕｒｒｅｎｔｌｙ　ｓｈｏｗｓ　ａ　ｂａｌａｎｃｅ　ｏｆ↓
-　　＄@DSP_STS(STS_PARTY_BANK_MONEY)．@KEY()↓
+◆Your account currently shows a balance of↓
+  ＄@DSP_STS(STS_PARTY_BANK_MONEY).@KEY()↓
 
 ;jpn:◆ゲンザイノ↓
-;jpn:　オアズカリキンガクハ↓
-;jpn:　＄@DSP_STS(STS_PARTY_BANK_MONEY)デス@KEY()↓
+;jpn: オアズカリキンガクハ↓
+;jpn: ＄@DSP_STS(STS_PARTY_BANK_MONEY)デス@KEY()↓
 @!
 
 ;
@@ -201,15 +201,15 @@ _TEL_2END;
 ;
 
 MSG_SPACETNL;
-◆ＩＮＰＵＴ　ＹＯＵＲ　ＣＯＭＭＡＮＤ．↓
+◆INPUT YOUR COMMAND.↓
 ;@SAVE_WIN()
 @DSP_PL()
 ;@OPEN(37)
 @CHKFGOTO(FLG_STEP_PAST,_SPACE_01)
-<Ｌｉｆｅ−ｕｐ>
-<Ｃｏｍｍｕｎｉｃａｔｅ>
+<Life−up>
+<Communicate>
 
-;jpn:◆こまんどヲ　ニュウリョクセヨ↓
+;jpn:◆こまんどヲ ニュウリョクセヨ↓
 ;jpn:<カイフク>
 ;jpn:<ツウシン>
 @DSP_ITEM(2)
@@ -226,8 +226,8 @@ _SPACE_02;
 @!
 
 _SPACE_01;
-<Ｒｅｐａｉｒ>
-<Ｃｏｍｍｕｎｉｃａｔｅ>
+<Repair>
+<Communicate>
 
 ;jpn:<シュウリ>
 ;jpn:<ツウシン>
@@ -241,7 +241,7 @@ _SPACE_01;
 @GOTO(_SPACE_02)
 
 _SPACE_MUSEN;
-@GOSUB(MSG_PAPA)			;サブルーチン「電話（テレパパ？）」
+@GOSUB(MSG_PAPA)			;サブルーチン「電話(テレパパ?)」
 					;に飛ぶ。
 @!
 
@@ -251,34 +251,34 @@ _SPACE_MUSEN;
 
 MSG_TEL_GAUS;
 @CHKFGOTO(FLG_ITEM_GAUS,_GAUS_AFTER)
-◆（Ｂｅｅｐ−ｂｅｅｐ−ｂｅｅｐ．．．）
+◆(Beep−beep−beep...)
 
 ;jpn:◆ツーツーツー↓
-;jpn:　ツーツーツー
+;jpn: ツーツーツー
 @KEYNP()
 @!
 _GAUS_AFTER;
 @SET_REG(1)
 @SAVE_GLOBAL_REG()
-◆Ｈｅｌｌｏ！　　Ｈｅｌｌｏ！↓
-　　Ｍａｘｗｅｌｌ　Ｌａｂｓ　ｈｅｒｅ．@KEY()↓
-◆Ｏｈ，　ｈｅｌｌｏ　@DSP_STS(STS_PC_NAME_JEFF)！@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｍｅ　ｔｏ　ｋｅｅｐ　ａ　ｒｅｃｏｒｄ　ｏｆ　ｙｏｕｒ　ｊｏｕｒｎｅｙ？↓
+◆Hello!  Hello!↓
+  Maxwell Labs here.@KEY()↓
+◆Oh, hello @DSP_STS(STS_PC_NAME_JEFF)!@KEY()↓
+◆Would you like me to keep a record of your journey?↓
 
-;jpn:◆はい　はい↓
-;jpn:　ガウスの　けんきゅうしつ。@KEY()↓
-;jpn:◆なんだ　@DSP_STS(STS_PC_NAME_JEFF)か。@KEY()↓
+;jpn:◆はい はい↓
+;jpn: ガウスの けんきゅうしつ。@KEY()↓
+;jpn:◆なんだ @DSP_STS(STS_PC_NAME_JEFF)か。@KEY()↓
 ;jpn:◆ぼうけんのきろくを↓
-;jpn:　つけてほしいんだな？@KEY()↓
+;jpn: つけてほしいんだな?@KEY()↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_GAUS_SAVE,_GAUS_BYE)
 _GAUS_BYE;
-◆Ｙｏｕ　ｊｕｓｔ　ｗａｎｔｅｄ　ｔｏ　ｈｅａｒ　ｍｙ　ｖｏｉｃｅ？↓
-　　Ｇｗａｈａｈａｈａｈａｈａｈａｈ！@KEY()↓
+◆You just wanted to hear my voice?↓
+  Gwahahahahahahah!@KEY()↓
 
 ;jpn:◆おれのこえが↓
-;jpn:　ききたかったってか‥‥↓
-;jpn:　ガハハハハハ！@KEY()↓
+;jpn: ききたかったってか‥‥↓
+;jpn: ガハハハハハ!@KEY()↓
 _GAUS_HANGUP;
 @GOTO(_PAPA_HANGUP)
 @!
@@ -286,40 +286,40 @@ _GAUS_HANGUP;
 _GAUS_SAVE;
 @LOAD_GLOBAL_REG()
 @SET_COMEBACK_POS(0)
-@CHKFGOTO(FLG_THRK_URBAN_ZOMBI_GONE,_GAUS_SAVE_B)	;ＣＥＳ用セーブ禁止
+@CHKFGOTO(FLG_THRK_URBAN_ZOMBI_GONE,_GAUS_SAVE_B)	;CES用セーブ禁止
 @SAVE_GAME()
 _GAUS_SAVE_B;
-◆Ａｌｌ　ｒｉｇｈｔ，　Ｉ　ｈａｖｅ　ｅｖｅｒｙｔｈｉｎｇ　ｗｒｉｔｔｅｎ　ｄｏｗｎ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｔａｋｅ　ａ　ｂｒｅａｋ　ｎｏｗ？↓
-<Ｃｏｎｔｉｎｕｅ>
-<Ｅｎｄ>
-;jpn:◆よし　つけたぞ。@KEY()↓
-;jpn:◆もう　やすむのか？↓
+◆All right, I have everything written down.@KEY()↓
+◆Do you want to take a break now?↓
+<Continue>
+<End>
+;jpn:◆よし つけたぞ。@KEY()↓
+;jpn:◆もう やすむのか?↓
 ;jpn:<つづける>
 ;jpn:<おわる>
 @DSP_ITEM(2)
 @SELGOTO(_GAUS_GOON,_GAUS_END)
 _GAUS_GOON;
-◆Ｙｏｕ’ｖｅ　ｂｅｃｏｍｅ　ｓｕｃｈ　ａ　ｈａｒｄ　ｗｏｒｋｅｒ！@KEY()↓
-◆Ｉ’ｖｅ　ｇｏｔ　ｔｏ　ｇｅｔ　ｂａｃｋ　ｔｏ　ｗｏｒｋ　ｍｙｓｅｌｆ！@KEY()↓
-◆Ｇｏ　ｆｏｒ　ｉｔ，　ｂａｄ　ｂｏｙ！@KEY()↓
+◆You’ve become such a hard worker!@KEY()↓
+◆I’ve got to get back to work myself!@KEY()↓
+◆Go for it, bad boy!@KEY()↓
   
-;jpn:◆おまえ　ずいぶん↓
-;jpn:　がんばりやになったなぁ。@KEY()↓
-;jpn:◆おれも　もうすこし↓
-;jpn:　がんばってみるよ。@KEY()↓
-;jpn:◆ファイト！@KEY()↓
+;jpn:◆おまえ ずいぶん↓
+;jpn: がんばりやになったなぁ。@KEY()↓
+;jpn:◆おれも もうすこし↓
+;jpn: がんばってみるよ。@KEY()↓
+;jpn:◆ファイト!@KEY()↓
 @GOTO(_GAUS_HANGUP)
 
 _GAUS_END;
-◆Ｉ　ｄｏｎ’ｔ　ｋｎｏｗ　ｗｈｅｒｅ　ｙｏｕ　ａｒｅ　ｐｌａｎｎｉｎｇ　ｏｎ　ｓｌｅｅｐｉｎｇ，　ｂｕｔ　ｈａｖｅ　ａ　ｇｏｏｄ　ｒｅｓｔ！@KEY()↓
-◆Ｇｏ　ａｈｅａｄ　ａｎｄ　ｔｕｒｎ　ｔｈｅ　ｐｏｗｅｒ　ＯＦＦ，　ａｎｄ　ｈａｖｅ　ａ　ｇｏｏｄ　ｎｉｇｈｔ．
+◆I don’t know where you are planning on sleeping, but have a good rest!@KEY()↓
+◆Go ahead and turn the power OFF, and have a good night.
 
-;jpn:◆どこでねるのか　しらないが↓
-;jpn:　ゆっくり　からだを↓
-;jpn:　やすめろよ。@KEY()↓
-;jpn:◆それじゃ　でんげんを↓
-;jpn:　ＯＦＦにして　おやすみ‥‥。
+;jpn:◆どこでねるのか しらないが↓
+;jpn: ゆっくり からだを↓
+;jpn: やすめろよ。@KEY()↓
+;jpn:◆それじゃ でんげんを↓
+;jpn: OFFにして おやすみ‥‥。
 @DISKEY()
 @KEYNP()
 @!
@@ -333,52 +333,52 @@ MSG_PAPA;
 @GET_ORDER_PLAYER(1)
 @EQ(PC_NESS)
 @TRUE_GOTO(_PAPA_NESS)
-◆Ｈｅｌｌｏ？@KEY()↓
-◆．．．Ｉｓ　ｔｈａｔ　ｙｏｕ，　@DSP_STS(STS_PC_NAME_NES)@WI(10)？@KEY()↓
-◆Ｗｈｙ　ａｒｅ　ｙｏｕ　ｄｉｓｇｕｉｓｉｎｇ　ｙｏｕｒ　ｖｏｉｃｅ　ｌｉｋｅ　ｔｈａｔ？@KEY()↓
-◆Ｗｈｏ　ａｒｅ　ｙｏｕ　ｐｒｅｔｅｎｄｉｎｇ　ｔｏ　ｂｅ？@KEY()↓
-◆Ｏｈ，　ｗｅｌｌ．　　Ｉｔ’ｓ　ｎｏｔ　ａ　ｂｉｇ　ｄｅａｌ．@KEY()↓
-◆Ｉ　ｓｕｐｐｏｓｅ　ｙｏｕ　ｎｅｅｄ　ｔｏ　ｈａｖｅ　ａ　ｓｅｎｓｅ　ｏｆ　ｈｕｍｏｒ↓　ａｔ　ａ　ｔｉｍｅ　ｌｉｋｅ　ｔｈｉｓ．@KEY()↓
-;◆Ｏｋａｙ，　ｅｖｅｎ　ｔｈｏｕｇｈ　Ｉ’ｍ　ｎｏｔ　ｓｕｒｅ　ｗｈｏ　ｔｈｉｓ　ｉｓ，　ｂｕｔ　ｉｆ　ｙｏｕ’ｒｅ　ｃａｌｌｉｎｇ　ｍｅ@KEY()↓
-;◆ａｂｏｕｔ　ｋｅｅｐｉｎｇ　ａ　ｒｅｃｏｒｄ　ｏｆ　ｙｏｕｒ　ｊｏｕｒｎｅｙ，　Ｉ’ｌｌ　ｇｌａｄｌｙ　ｄｏ　ｉｔ　ｆｏｒ　ｙｏｕ．@KEY()↓ 
+◆Hello?@KEY()↓
+◆...Is that you, @DSP_STS(STS_PC_NAME_NES)@WI(10)?@KEY()↓
+◆Why are you disguising your voice like that?@KEY()↓
+◆Who are you pretending to be?@KEY()↓
+◆Oh, well.  It’s not a big deal.@KEY()↓
+◆I suppose you need to have a sense of humor↓ at a time like this.@KEY()↓
+;◆Okay, even though I’m not sure who this is, but if you’re calling me@KEY()↓
+;◆about keeping a record of your journey, I’ll gladly do it for you.@KEY()↓ 
 ;jpn:◆もしもし‥‥。@KEY()↓
-;jpn:◆‥‥おいおい　@DSP_STS(STS_PC_NAME_NES)@WI(10)↓
-;jpn:　そんなこえを　だして↓
-;jpn:　いったい　だれのモノマネだ？@KEY()↓
-;jpn:◆‥‥ま　そのままつづけなさい。@WI(15)↓
-;jpn:　こんなときこそ↓
-;jpn:　ユーモアは　だいじだからな。@KEY()↓
+;jpn:◆‥‥おいおい @DSP_STS(STS_PC_NAME_NES)@WI(10)↓
+;jpn: そんなこえを だして↓
+;jpn: いったい だれのモノマネだ?@KEY()↓
+;jpn:◆‥‥ま そのままつづけなさい。@WI(15)↓
+;jpn: こんなときこそ↓
+;jpn: ユーモアは だいじだからな。@KEY()↓
 ;◆もしもし。@KEY()↓
 ;◆どなたかぞんじませんが↓
-;　ぼうけんのきろくでしたら↓
-;　わたしが　つけておきましょう。@KEY()↓
+; ぼうけんのきろくでしたら↓
+; わたしが つけておきましょう。@KEY()↓
 @GOTO(_PAPA_BANK)
 _PAPA_NESS;
-◆@DSP_NAME(PC_NESS)？　　Ｉｔ’ｓ　ｙｏｕｒ　ｄａｄ．@KEY()↓
-;jpn:◆あ　パパだ。@KEY()↓
+◆@DSP_NAME(PC_NESS)?  It’s your dad.@KEY()↓
+;jpn:◆あ パパだ。@KEY()↓
 @CHKF(FLG_STEP_PAST)			;ロボ状態だったら
 @ONGOSUB(_PAPA_ROBO)			;「風邪か?」メッセージ
 _PAPA_BANK;
 @Q_FIGHT_MONEY(1)
 @FALSE_GOTO(_PAPA_LEVEL)
 @XCHG()
-◆Ｉ　ｄｅｐｏｓｉｔｅｄ　＄@DSP_NUM(0)↓
-　　ｉｎｔｏ　ｙｏｕｒ　ｂａｎｋ　ａｃｃｏｕｎｔ．@KEY()↓
-◆Ｔａｋｉｎｇ　ａｗａｙ　ｗｈａｔ　ｙｏｕ’ｖｅ　ｓｐｅｎｔ，　ｙｏｕ　ｓｈｏｕｌｄ　ｎｏｗ　ｈａｖｅ@KEY()↓
-◆＄@DSP_STS(STS_PARTY_BANK_MONEY)　ｉｎ　ｔｈｅ　ｂａｎｋ．@KEY()↓
+◆I deposited ＄@DSP_NUM(0)↓
+  into your bank account.@KEY()↓
+◆Taking away what you’ve spent, you should now have@KEY()↓
+◆＄@DSP_STS(STS_PARTY_BANK_MONEY) in the bank.@KEY()↓
 
-;jpn:◆おまえの　ぎんこうこうざに↓
-;jpn:　@DSP_NUM(0)ドル↓
-;jpn:　ふりこんでおいたからね。@KEY()↓
-;jpn:◆つかったぶんと　さしひきで↓
-;jpn:　@DSP_STS(STS_PARTY_BANK_MONEY)ドル↓
-;jpn:　ぎんこうに　はいっているはずだ。@KEY()↓
+;jpn:◆おまえの ぎんこうこうざに↓
+;jpn: @DSP_NUM(0)ドル↓
+;jpn: ふりこんでおいたからね。@KEY()↓
+;jpn:◆つかったぶんと さしひきで↓
+;jpn: @DSP_STS(STS_PARTY_BANK_MONEY)ドル↓
+;jpn: ぎんこうに はいっているはずだ。@KEY()↓
 @Q_FIGHT_MONEY(2)
 _PAPA_LEVEL;
 @SET_LOOPREG(1)				;全プレーヤーの次のレベルまでの	loopR <- 1
-◆Ｗｅｌｌ，　ｔｏ　ｇｅｔ　ｔｏ　ｎｅｘｔ　ｌｅｖｅｌ，@KEY()
+◆Well, to get to next level,@KEY()
 
-;jpn:◆えーと　つぎのレベルまで‥‥
+;jpn:◆えーと つぎのレベルまで‥‥
 _PAPA_NEXT;				;経験値表示
 @SET_REG(1)				;subR <- loopR
 @Q_MEMBER(0)				;compare party(without npc) with subR
@@ -390,13 +390,13 @@ _PAPA_NEXT;				;経験値表示
 @FALSE_GOTO(_PAPA_LEVEL_MAX)		;if !nextLevel[subR] _papa_next_inc
 					;この時点で、mainRには次のレベルに必要な経験値が
 					;subRにはプレイヤーIDが入っている
-;@XCHG()				;いらない！削除
+;@XCHG()				;いらない!削除
 ←
-◆@DSP_NAME(0)．．．．
+◆@DSP_NAME(0)....
 
-;jpn:◆@DSP_NAME(0)は　
+;jpn:◆@DSP_NAME(0)は 
 @XCHG()					;xchg subR,mainR
-@DSP_NUM(0)．@KEY()
+@DSP_NUM(0).@KEY()
 ;jpn:@DSP_NUM(0)。@KEY()
 _PAPA_NEXT_INC;
 @INC()					;loopR++
@@ -404,31 +404,31 @@ _PAPA_NEXT_INC;
 
 _PAPA_LEVEL_MAX;
 ←
-◆@DSP_NAME(0)．．．↓
-　　ｈａｓ　ａｌｒｅａｄｙ　ｒｅａｃｈｅｄ　（ｈｉｓ／ｈｅｒ）　ｍａｘｉｍｕｍ　ｌｅｖｅｌ．@KEY()↓
-◆Ｔｈａｔ’ｓ　ｊｕｓｔ　ｆｉｎｅ，　ｂｕｔ．．．@KEY()↓
+◆@DSP_NAME(0)...↓
+  has already reached (his／her) maximum level.@KEY()↓
+◆That’s just fine, but...@KEY()↓
 
 ;jpn:◆@DSP_NAME(0)は‥‥
 @KEY()↓
 ;jpn:◆もうすでに↓
-;jpn:　いきつくところまで↓
-;jpn:　いってしまったみたいだな。
+;jpn: いきつくところまで↓
+;jpn: いってしまったみたいだな。
 @KEY()↓
-;jpn:◆それは　それで↓
-;jpn:　@WI(20)ま　@WI(20)いいとして‥‥
+;jpn:◆それは それで↓
+;jpn: @WI(20)ま @WI(20)いいとして‥‥
 ;@KEY()↓
 @GOTO(_PAPA_NEXT_INC)
 
 _PAPA_SEL;
 ←
-◆Ａｎｙｗａｙ，　ｗｈａｔ　ｄｏ　ｙｏｕ　ｎｅｅｄ　ｆｒｏｍ　ｍｅ？↓
+◆Anyway, what do you need from me?↓
 ;@SAVE_WIN()
 ;@DSP_PL()
 ;@OPEN(37)
-<Ｒｅｃｏｒｄ>
-<Ｎｏｔｈｉｎｇ，　ｒｅａｌｌｙ>
+<Record>
+<Nothing, really>
 
-;jpn:◆それはそうと　なんのようだい？↓
+;jpn:◆それはそうと なんのようだい?↓
 ;jpn:<きろくする>
 ;jpn:<とくにない>
 @DSP_ITEM(2)
@@ -442,7 +442,7 @@ _PAPA_SEL;
 @SELGOTO(_PAPA_SAVE,_PAPA_CANCEL)
 
 _PAPA_CANCEL;				;キャンセル
-◆Ｇｏｏｄ　ｌｕｃｋ！@KEY()↓
+◆Good luck!@KEY()↓
 
 ;jpn:◆がんばれよ。@KEY()↓
 @GOTO(_PAPA_HANGUP)
@@ -450,19 +450,19 @@ _PAPA_CANCEL;				;キャンセル
 _PAPA_SAVE;				;記録する。
 @LOAD_GLOBAL_REG()
 @SET_COMEBACK_POS(0)
-;@CHKFGOTO(FLG_THRK_URBAN_ZOMBI_GONE,_PAPA_SAVE_B)	;ＣＥＳ用セーブ禁止（解除）
+;@CHKFGOTO(FLG_THRK_URBAN_ZOMBI_GONE,_PAPA_SAVE_B)	;CES用セーブ禁止(解除)
 @SAVE_GAME()
 _PAPA_SAVE_B;
-◆Ａｌｌ　ｄｏｎｅ．@KEY()↓
-◆Ｙｏｕｒ　ｄｅａｒ　ｏｌｄ　ｄａｄ　ｗａｓ　ａｌｓｏ　ｔｈｉｎｋｉｎｇ　ａｂｏｕｔ　ｈｉｔｔｉｎｇ　ｔｈｅ　ｈａｙ　ｆｏｒ　ｔｈｅ　ｎｉｇｈｔ．@KEY()↓
-◆Ｉ　ｈａｖｅ　ｃｒｅａｔｅｄ　ａ　ｒｅｃｏｒｄ　ｏｆ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅ　ｔｏ　ｔｈｉｓ　ｐｏｉｎｔ．@KEY()↓
-◆Ｇｏｏｄ　ｎｉｇｈｔ，　ｓｌｅｅｐ　ｔｉｇｈｔ．↓
+◆All done.@KEY()↓
+◆Your dear old dad was also thinking about hitting the hay for the night.@KEY()↓
+◆I have created a record of your adventure to this point.@KEY()↓
+◆Good night, sleep tight.↓
 
 ;jpn:◆そうか。↓
-;jpn:　パパも　もう　きょうは↓
-;jpn:　やすもうと　おもってたところだ。@KEY()↓
+;jpn: パパも もう きょうは↓
+;jpn: やすもうと おもってたところだ。@KEY()↓
 ;jpn:◆ぼうけんのきろくは↓
-;jpn:　つけといたよ。@KEY()↓
+;jpn: つけといたよ。@KEY()↓
 ;jpn:◆おやすみ‥‥↓
 @GET_ORDER_PLAYER(1)			;先頭プレイヤーがネスじゃなければ
 @EQ(PC_NESS)
@@ -470,8 +470,8 @@ _PAPA_SAVE_B;
 @CHKF(FLG_STEP_PAST)
 @ONGOSUB(_PAPA_ROBO_2)			;ロボなら「風邪直せよ」。ホームシック直す。
 _PAPA_SEL_CONT;
-<Ｃｏｎｔｉｎｕｅ>
-<Ｅｎｄ>
+<Continue>
+<End>
 
 ;jpn:<つづける>
 ;jpn:<おわる>
@@ -479,52 +479,52 @@ _PAPA_SEL_CONT;
 @SELGOTO(_PAPA_GOON,_PAPA_END)
 
 _PAPA_GOON;				;続ける。
-◆@DSP_STS(STS_PC_NAME_NES)，　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｗｏｒｋ　ｈａｒｄ，　ｊｕｓｔ　ｌｉｋｅ　ｙｏｕｒ　ｍｏｔｈｅｒ．@KEY()↓
-◆Ｂｕｔ，　Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｉｔ’ｓ　ｇｏｏｄ　ｔｏ　ｗｏｒｋ　ｔｏｏ　ｈａｒｄ．@KEY()↓
+◆@DSP_STS(STS_PC_NAME_NES), you like to work hard, just like your mother.@KEY()↓
+◆But, I don’t think it’s good to work too hard.@KEY()↓
 
-;jpn:◆@DSP_STS(STS_PC_NAME_NES)も　ママににて↓
-;jpn:　がんばりやだなあ。@KEY()↓
+;jpn:◆@DSP_STS(STS_PC_NAME_NES)も ママににて↓
+;jpn: がんばりやだなあ。@KEY()↓
 ;jpn:◆むりするなよ。@KEY()↓
 
 _PAPA_HANGUP;
 ←
 @SE(SE_se0b_tel_put)
-◆（Ｃｌｉｃｋ！　　Ｂｅｅｐ−ｂｅｅｐ−ｂｅｅｐ．．．）
+◆(Click!  Beep−beep−beep...)
 
-;jpn:◆ガチャン　ツーツーツー
+;jpn:◆ガチャン ツーツーツー
 @KEYNP()
 @!
 
 _PAPA_END;				;ゲーム終了
-◆Ｗｅ’ｒｅ　ａ　ｇｒｅａｔ　ｔｅａｍ，　ａｒｅｎ’ｔ　ｗｅ？@KEY()↓
-◆Ｗｅｌｌ，　ｙｏｕ　ｓｈｏｕｌｄ　ｔｕｒｎ　ｔｈｅ　ｐｏｗｅｒ　ＯＦＦ　ｉｎｓｔｅａｄ　ｏｆ　ｊｕｓｔ　ｐｒｅｓｓｉｎｇ　ＲＥＳＥＴ．@KEY()↓
-◆Ａｌｌ　ｒｉｇｈｔ？
+◆We’re a great team, aren’t we?@KEY()↓
+◆Well, you should turn the power OFF instead of just pressing RESET.@KEY()↓
+◆All right?
 
-;jpn:◆おたがい　よくやったよな。@KEY()↓
-;jpn:◆それじゃ　リセットボタンを↓
-;jpn:　おさないで　でんげんを　ＯＦＦに↓
-;jpn:　しなさい。　わかったね。
+;jpn:◆おたがい よくやったよな。@KEY()↓
+;jpn:◆それじゃ リセットボタンを↓
+;jpn: おさないで でんげんを OFFに↓
+;jpn: しなさい。 わかったね。
 @DISKEY()
 @KEYNP()
 @!
 
 _PAPA_ROBO;
-◆Ｗｈｏ　ｉｓ　ｔｈｉｓ？！　　@DSP_STS(STS_PC_NAME_NES)？！↓
-　　Ｄｏ　ｙｏｕ　ｈａｖｅ　ａ　ｃｏｌｄ　ｏｒ　ｓｏｍｅｔｈｉｎｇ？@KEY()↓
-◆Ｙｏｕｒ　ｖｏｉｃｅ　ｓｏｕｎｄｓ　ｋｉｎｄ　ｏｆ　ｆｕｎｎｙ．@KEY()↓
-◆Ｏｈ，　ｗｅｌｌ．　　Ｔｈａｔ’ｓ　ＯＫ．@KEY()↓
+◆Who is this?!  @DSP_STS(STS_PC_NAME_NES)?!↓
+  Do you have a cold or something?@KEY()↓
+◆Your voice sounds kind of funny.@KEY()↓
+◆Oh, well.  That’s OK.@KEY()↓
 
-;jpn:◆あれ！？　@DSP_STS(STS_PC_NAME_NES)！？↓
-;jpn:　カゼでもひいてるのか。↓
-;jpn:　こえが　へんだぞ@KEY()↓
-;jpn:◆ま　いいか@KEY()↓
+;jpn:◆あれ!? @DSP_STS(STS_PC_NAME_NES)!?↓
+;jpn: カゼでもひいてるのか。↓
+;jpn: こえが へんだぞ@KEY()↓
+;jpn:◆ま いいか@KEY()↓
 @!
 
 ;以下、ネスが先頭でない場合は呼ばれないようにした(上野)
 _PAPA_ROBO_2;
-◆Ｉ　ｈｏｐｅ　ｙｏｕ　ｇｅｔ　ｏｖｅｒ　ｙｏｕｒ　ｃｏｌｄ　ｓｏｏｎ．
-;jpn:　はやくかぜをなおせよ。↓
-@Q_SPECIAL(PC_NESS,6,2);ホームシック？
+◆I hope you get over your cold soon.
+;jpn: はやくかぜをなおせよ。↓
+@Q_SPECIAL(PC_NESS,6,2);ホームシック?
 @TRUE_GOTO(_PAPA_ROBO_HOMESICK)
 @!
 _PAPA_ROBO_HOMESICK;
@@ -533,61 +533,61 @@ _PAPA_ROBO_HOMESICK;
 ;@WI(30)
 ;@OPEN(1)
 ;◆@DSP_STS(STS_PC_NAME_NES)は↓
-;　ホームシックを　こくふくした。
+; ホームシックを こくふくした。
 @SET_SPECIAL(PC_NESS,6,1);ホームシック解除
 @SE(SE_se25_b_healing)
 ;@KEY()↓
 @!
 
 _PAPA_PHONE_END;
-◆Ｈｉ，　ｉｔ’ｓ　ｙｏｕｒ　ｄａｄ！↓
-　　Ｔｏ　ｇｅｔ　ｔｏ　ｔｈｅ　ｎｅｘｔ　ｌｅｖｅｌ．．．@KEY()↓
-◆Ｈａ　ｈａｈ　ｈａ　ｈａｈ！↓
-　　Ｉ　ｇｕｅｓｓ　Ｉ　ｄｏｎ’ｔ　ｎｅｅｄ　ｔｏ　ｔｅｌｌ　ｙｏｕ　ｔｈｉｓ　ａｎｙ　ｍｏｒｅ！@KEY()↓
-◆．．．　Ｎｅｘｔ　ｗｅｅｋ　ｗｉｌｌ　ｂｅ　ｙｏｕｒ　ｂｉｒｔｈｄａｙ，　@DSP_STS(STS_PC_NAME_NES)．@KEY()↓
-◆Ｉ’ｍ　ｔｒｙｉｎｇ　ｖｅｒｙ　ｈａｒｄ　ｔｏ　ｂｅ　ｈｏｍｅ　ｆｏｒ　ｔｈａｔ　ｂｉｇ　ｄａｙ！@KEY()↓
-◆Ｉ’ｌｌ　ｂｅ　ｓｕｒｅ　ｔｏ　ｇｅｔ　ｙｏｕ　ａ　ｇｏｏｄ　ｐｒｅｓｅｎｔ！@KEY()↓
-◆Ｉ’ｖｅ　ｂｅｅｎ　ｆｏｌｌｏｗｉｎｇ　ｙｏｕｒ　ａｄｖｅｎｔｕｒｅｓ　ｃｌｏｓｅｌｙ，@KEY()↓
-◆ｂｕｔ　Ｉ　ｗａｎｔ　ｔｏ　ｈｅａｒ　ａｂｏｕｔ　ｔｈｅｍ　ｆｒｏｍ　ｙｏｕ，　ｉｎ　ｐｅｒｓｏｎ．@KEY()↓
-◆Ｙｏｕ　ｓｏｕｎｄ　ａ　ｌｏｔ　ｍｏｒｅ．．．　ｍａｔｕｒｅ　ｏｖｅｒ　ｔｈｅ　ｐｈｏｎｅ．@KEY()↓
-◆．．．Ｗｅｌｌ，　Ｉ’ｌｌ　ｓｅｅ　ｙｏｕ　ａｔ　ｈｏｍｅ，　ｔｈｅｎ．@KEY()↓
-◆Ｂｙｅ！↓
+◆Hi, it’s your dad!↓
+  To get to the next level...@KEY()↓
+◆Ha hah ha hah!↓
+  I guess I don’t need to tell you this any more!@KEY()↓
+◆... Next week will be your birthday, @DSP_STS(STS_PC_NAME_NES).@KEY()↓
+◆I’m trying very hard to be home for that big day!@KEY()↓
+◆I’ll be sure to get you a good present!@KEY()↓
+◆I’ve been following your adventures closely,@KEY()↓
+◆but I want to hear about them from you, in person.@KEY()↓
+◆You sound a lot more... mature over the phone.@KEY()↓
+◆...Well, I’ll see you at home, then.@KEY()↓
+◆Bye!↓
   
-;jpn:◆あ　パパだ。↓
-;jpn:　つぎの　レベルまで‥‥@KEY()↓
-;jpn:◆ハハハハハ！@WI(20)↓
-;jpn:　もう　そんなことをいう↓
-;jpn:　ひつようも　ないな。@KEY()↓
-;jpn:◆‥‥らいしゅうは　たしか↓
-;jpn:　@DSP_STS(STS_PC_NAME_NES)の↓
-;jpn:　たんじょうび　だったろう？@KEY()↓
-;jpn:◆なんとか　パパも↓
-;jpn:　それに　まにあうように↓
-;jpn:　かえるから。@KEY()↓
-;jpn:◆おみやげを　たのしみに↓
-;jpn:　まっていておくれ。@KEY()↓
-;jpn:◆いつも　ぼうけんのきろくを↓
-;jpn:　つけていたけれど@KEY()↓
-;jpn:◆おまえに　ちょくせつ↓
-;jpn:　いろんなはなしを　ききたいよ。@KEY()↓
-;jpn:◆でんわのこえも　ちょっと↓
-;jpn:　おとなっぽくなったけど‥‥@KEY()↓
+;jpn:◆あ パパだ。↓
+;jpn: つぎの レベルまで‥‥@KEY()↓
+;jpn:◆ハハハハハ!@WI(20)↓
+;jpn: もう そんなことをいう↓
+;jpn: ひつようも ないな。@KEY()↓
+;jpn:◆‥‥らいしゅうは たしか↓
+;jpn: @DSP_STS(STS_PC_NAME_NES)の↓
+;jpn: たんじょうび だったろう?@KEY()↓
+;jpn:◆なんとか パパも↓
+;jpn: それに まにあうように↓
+;jpn: かえるから。@KEY()↓
+;jpn:◆おみやげを たのしみに↓
+;jpn: まっていておくれ。@KEY()↓
+;jpn:◆いつも ぼうけんのきろくを↓
+;jpn: つけていたけれど@KEY()↓
+;jpn:◆おまえに ちょくせつ↓
+;jpn: いろんなはなしを ききたいよ。@KEY()↓
+;jpn:◆でんわのこえも ちょっと↓
+;jpn: おとなっぽくなったけど‥‥@KEY()↓
 ;jpn:◆きっと↓
-;jpn:　おおきくなったんだろうなぁ。@KEY()↓
-;jpn:◆‥‥じゃ　こんどは↓
-;jpn:　いえで　ゆっくりな。@KEY()↓
-;jpn:◆バーイ！@WI(20)↓
+;jpn: おおきくなったんだろうなぁ。@KEY()↓
+;jpn:◆‥‥じゃ こんどは↓
+;jpn: いえで ゆっくりな。@KEY()↓
+;jpn:◆バーイ!@WI(20)↓
 @SE(SE_se0b_tel_put)
-　　（Ｃｌｉｃｋ！↓
-　　Ｂｅｅｐ−ｂｅｅｐ−ｂｅｅｐ．．．）
+  (Click!↓
+  Beep−beep−beep...)
 
-;jpn:　ガチャン　ツーツーツー
+;jpn: ガチャン ツーツーツー
 @KEYNP()
 @SETF(FLG_PHONE_PAPA_FINAL)
 』
 
 ;
-;エスカルゴ運送（電話）
+;エスカルゴ運送(電話)
 ;
 
 MSG_UNSOU_TEL;
@@ -605,10 +605,10 @@ MSG_UNSOU_TEL;
 @CHKFGOTO(FLG_GLOBAL_LOST_TAKANOME,MSG_UNSOU_TEL_TAKA)
 ;-----
 @GOSUB(_UNSOU_TEL_MES_1)
-_UNSOU_TEL_SEL_MAIN;			;要件？
+_UNSOU_TEL_SEL_MAIN;			;要件?
 @GOSUB(_UNSOU_TEL_MES_2)
-<Ｐｉｃｋ−ｕｐ>
-<Ｄｅｌｉｖｅｒｙ>
+<Pick−up>
+<Delivery>
 
 ;jpn:<おあずかり>
 ;jpn:<おとどけ>
@@ -639,7 +639,7 @@ _UNSOU_TEL_LEAVE_FULL;			;預かれない。
 _UNSOU_TEL_SEND;			;届ける選択。
 @SET_LOOPREG(1)				
 @GET_TRACY()
-@FALSE_GOTO(_UNSOU_TEL_EMPTY)		;空？
+@FALSE_GOTO(_UNSOU_TEL_EMPTY)		;空?
 @GOSUB(_UNSOU_TEL_MES_6)
 _UNSOU_TEL_SEND_1;
 @SAVE_WIN()
@@ -653,13 +653,13 @@ _UNSOU_TEL_SEND_1;
 @SAVE_REG()				;副レ=選択された預り所のグッズの位置
 @GET_TRACY_GOODS(0)
 @XCHG()
-◆@DSP_GOODS(0)？↓
-　　Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆@DSP_GOODS(0)?↓
+  Do you have anything else?↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。↓
 @LOAD_REG()
 @SET_TRANS_GOODS(255,0)
-;jpn:　ほかにまだありますか？↓
+;jpn: ほかにまだありますか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_TEL_SEND_2,_UNSOU_TEL_Q_OK)
 @GOTO(_UNSOU_TEL_Q_OK)
@@ -667,10 +667,10 @@ _UNSOU_TEL_SEND_2;
 @SET_LOOPREG(1)
 @GET_TRACY()
 @FALSE_GOTO(_UNSOU_TEL_EMPTY_2)
-◆Ｓｅｌｅｃｔ　ａｎ　ｉｔｅｍ．@KEY()
+◆Select an item.@KEY()
 
-;jpn:◆では　グッズを↓
-;jpn:　せんたくしてください。@KEY()
+;jpn:◆では グッズを↓
+;jpn: せんたくしてください。@KEY()
 @SAVE_WIN()
 @SEL_TRACY_OUT()
 @SELECT_WIN(13)
@@ -682,13 +682,13 @@ _UNSOU_TEL_SEND_2;
 @SAVE_REG()
 @GET_TRACY_GOODS(0)
 @XCHG()
-◆@DSP_GOODS(0)？↓
-　Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+◆@DSP_GOODS(0)?↓
+ Do you have anything else?↓
  
 ;jpn:◆@DSP_GOODS(0)ですね。↓
 @LOAD_REG()
 @SET_TRANS_GOODS(255,0)
-;jpn:　ほかに　ありますか？↓
+;jpn: ほかに ありますか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_TEL_SEND_3,_UNSOU_TEL_Q_OK)
 @GOTO(_UNSOU_TEL_Q_OK)
@@ -696,10 +696,10 @@ _UNSOU_TEL_SEND_3;
 @SET_LOOPREG(1)
 @GET_TRACY()
 @FALSE_GOTO(_UNSOU_TEL_EMPTY_2)
-◆Ｓｅｌｅｃｔ　ａｎ　ｉｔｅｍ．@KEY()
+◆Select an item.@KEY()
 
-;jpn:◆では　グッズを↓
-;jpn:　せんたくしてください。@KEY()
+;jpn:◆では グッズを↓
+;jpn: せんたくしてください。@KEY()
 @SAVE_WIN()
 @SEL_TRACY_OUT()
 @SELECT_WIN(13)
@@ -711,39 +711,39 @@ _UNSOU_TEL_SEND_3;
 @SAVE_REG()
 @GET_TRACY_GOODS(0)
 @XCHG()
-◆@DSP_GOODS(0)？@KEY()↓
+◆@DSP_GOODS(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。@KEY()↓
 @LOAD_REG()
 @SET_TRANS_GOODS(255,0)
 
 _UNSOU_TEL_Q_OK;			
-◆Ｊｕｓｔ　ｔｏ　ｃｏｎｆｉｒｍ，　ｙｏｕ’ｒｅ　ｅｘｐｅｃｔｉｎｇ　ｄｅｌｉｖｅｒｙ　ｏｆ　ｔｈｅ@KEY()↓
+◆Just to confirm, you’re expecting delivery of the@KEY()↓
  
 ;jpn:◆かくにんします。↓
-;jpn:　おとどけするのは@KEY()↓
+;jpn: おとどけするのは@KEY()↓
 @GET_TRANS_GOODS(1,0)
 ◆@DSP_GOODS(0)
 @GET_TRANS_GOODS(2,0)
 @FALSE_GOTO(_UNSOU_TEL_Q_OK_2)
 ↓
-　　@DSP_GOODS(0)
+  @DSP_GOODS(0)
 @GET_TRANS_GOODS(3,0)
 @FALSE_GOTO(_UNSOU_TEL_Q_OK_2)
 ↓
-　　ａｎｄ　@DSP_GOODS(0)．
-;jpn:　あと　@DSP_GOODS(0)
+  and @DSP_GOODS(0).
+;jpn: あと @DSP_GOODS(0)
 _UNSOU_TEL_Q_OK_2;
 @KEY()
 ←
-◆Ｉｓ　ｔｈａｔ　ｃｏｒｒｅｃｔ？↓
+◆Is that correct?↓
 
-;jpn:◆いじょうで　よろしいでしょうか？↓
+;jpn:◆いじょうで よろしいでしょうか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_TEL_SEND_OK,_UNSOU_TEL_SEND_ONEMORE)
 @GOTO(_UNSOU_TEL_SEND_ONEMORE)
 
-_UNSOU_TEL_SEND_OK;			;届けにくる。（バッファに保存）
+_UNSOU_TEL_SEND_OK;			;届けにくる。(バッファに保存)
 @GOSUB(_UNSOU_TEL_MES_7)
 @SETF(FLG_DELIVERY_UNSOU)
 @DELIVERY(DELIVERY_UNSOU_DELIVER)
@@ -751,25 +751,25 @@ _UNSOU_TEL_SEND_OK;			;届けにくる。（バッファに保存）
 @SETF(FLG_SYS_DISTLPT);テレポート禁止
 @!
 
-_UNSOU_TEL_EMPTY;				;預り所カラ（終了へ）
+_UNSOU_TEL_EMPTY;				;預り所カラ(終了へ)
 @GOSUB(_UNSOU_TEL_MES_8)
 @GOTO(_UNSOU_TEL_BYE)
 
-_UNSOU_TEL_EMPTY_2;				;預り所カラ（確認へ）
+_UNSOU_TEL_EMPTY_2;				;預り所カラ(確認へ)
 @GET_ORDER_PLAYER(1)
 @XCHG()
-◆Ｗｅ’ｒｅ　ｎｏｔ　ｓｔｏｒｉｎｇ　ａｎｙ　ｏｆ　@DSP_NAME(0)’ｓ　ｓｔｕｆｆ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
-;jpn:◆げんざい　@DSP_NAME(0)さまからは↓
-;jpn:　これいじょう　おにもつを↓
-;jpn:　あずかっておりません。@KEY()↓
+◆We’re not storing any of @DSP_NAME(0)’s stuff right now.@KEY()↓
+;jpn:◆げんざい @DSP_NAME(0)さまからは↓
+;jpn: これいじょう おにもつを↓
+;jpn: あずかっておりません。@KEY()↓
 @GOTO(_UNSOU_TEL_Q_OK)
 
-_UNSOU_TEL_SEND_ONEMORE;			;やり直し（バッファをクリア）
+_UNSOU_TEL_SEND_ONEMORE;			;やり直し(バッファをクリア)
 @GOSUB(_SUB_UNSOU_TRANS_RETURN_TRACY)
-◆Ｗｅｌｌ，　ｐｌｅａｓｅ　ｓｔａｒｔ　ｏｖｅｒ　ａｇａｉｎ．@KEY()↓
+◆Well, please start over again.@KEY()↓
 
-;jpn:◆では　もういちど↓
-;jpn:　あらためて　おねがいします。@KEY()↓
+;jpn:◆では もういちど↓
+;jpn: あらためて おねがいします。@KEY()↓
 @GOTO(_UNSOU_TEL_SEND_1)
 
 _UNSOU_NOW_DELIVERY;
@@ -780,185 +780,185 @@ _UNSOU_NOW_DELIVERY;
 ;
 
 _UNSOU_TEL_MES_1;
-◆Ｈｅｌｌｏ！　　Ｔｈｉｓ　ｉｓ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
+◆Hello!  This is Escargo Express.@KEY()↓
 
 ;jpn:◆こんにちは↓
-;jpn:　エスカルゴうんそうでーす。@KEY()
+;jpn: エスカルゴうんそうでーす。@KEY()
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(_UNSOU_TEL_MES_1_END)
 ←
-◆Ｏｈ，　ｉｓ　ｔｈａｔ　ｙｏｕ，　@DSP_STS(STS_PC_NAME_NES)？↓
-　　Ｂｉｇ　Ｂｒｏ！@KEY()↓
-◆Ｉｔ’ｓ　ｍｅ，　Ｔｒａｃｙ．@KEY()↓
-◆Ｉ’ｍ　ｗｏｒｋｉｎｇ　ｐａｒｔ−ｔｉｍｅ　ｆｏｒ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
+◆Oh, is that you, @DSP_STS(STS_PC_NAME_NES)?↓
+  Big Bro!@KEY()↓
+◆It’s me, Tracy.@KEY()↓
+◆I’m working part−time for Escargo Express.@KEY()↓
 
-;jpn:◆あ@WI(10)　@DSP_STS(STS_PC_NAME_NES)おにいちゃん？@KEY()↓
-;jpn:◆わたしよ　トレーシーよ。@KEY()↓
+;jpn:◆あ@WI(10) @DSP_STS(STS_PC_NAME_NES)おにいちゃん?@KEY()↓
+;jpn:◆わたしよ トレーシーよ。@KEY()↓
 ;jpn:◆エスカルゴうんそうで↓
-;jpn:　アルバイトしてるの。@KEY()
+;jpn: アルバイトしてるの。@KEY()
 _UNSOU_TEL_MES_1_END;
 @!
 _UNSOU_TEL_MES_1B;最終戦闘後
-◆Ｈｅｌｌｏ！　Ｔｈｉｓ　ｉｓ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
-◆Ｔｒａｃｙ　ｄｏｅｓｎ’ｔ　ｗｏｒｋ　ｈｅｒｅ　ａｎｙ　ｍｏｒｅ．　　Ｙｅａｈ，　ｓｈｅ　ｕｓｅｄ　ｔｏ　ｗｏｒｋ　ｈｅｒｅ，　ｐａｒｔ−ｔｉｍｅ．@KEY()↓
-◆Ｈｕｎｈ？　　Ｔｈｉｓ　ｉｓ　@DSP_STS(STS_PC_NAME_NES)？↓
-　　Ｔｒａｃｙ’ｓ　ｂｉｇ　ｂｒｏｔｈｅｒ？@KEY()↓
-◆Ｉ’ｖｅ　ｈｅａｒｄ　ａｂｏｕｔ　ｔｈｅ　ｇｒｅａｔ　ｗｏｒｋ　ｙｏｕ’ｒｅ　ｄｏｉｎｇ．@KEY()↓
-◆Ｉｔ’ｓ　ａｎ　ｈｏｎｏｒ　ｔｏ　ｔａｌｋ　ｔｏ　ｙｏｕ，　ｓｉｒ！@KEY()↓
-◆Ｏｈ，　ｙｏｕ’ｒｅ　ｃａｌｌｉｎｇ　ｆｏｒ　ａ　ｄｅｌｉｖｅｒｙ？↓
-　　Ｉ’ｍ　ｖｅｒｙ　ｓｏｒｒｙ．@KEY()↓
-◆Ｍｙ　ｗｉｆｅ　ｉｓ　ｏｕｔ　ｏｎ　ｍａｔｅｒｎｉｔｙ　ｌｅａｖｅ，　ｓｏ　Ｉ’ｍ　ｔａｋｉｎｇ　ｃａｒｅ　ｏｆ　ｍｙ　ｏｔｈｅｒ　ｋｉｄ．@KEY()↓
-◆Ｉ　ｄｅｃｉｄｅｄ　ｔｏ　ｔａｋｅ　ｓｏｍｅ　ｔｉｍｅ　ｏｆｆ　ｆｒｏｍ　ｔｈｅ　ｄｅｌｉｖｅｒｙ　ｂｕｓｉｎｅｓｓ．@KEY()↓
-◆Ｉｔ’ｓ　ｒｉｇｈｔ　ｎｅｘｔ　ｔｏ　ｔｈｅ　ｆｒｉｄｇｅ！　　Ｐｕｔ　ｉｔ　ｉｎｔｏ　ｔｈｅ　ｍｉｃｒｏｗａｖｅ．．．　　．．．ｔｈａｔ’ｓ　ｉｔ．@KEY()↓
-◆．．．Ｓｏｒｒｙ　ａｂｏｕｔ　ｔｈａｔ．@KEY()↓
-◆Ｉ’ｍ　ａ　ｌｉｔｔｌｅ　ｂｕｓｙ　ｒｉｇｈｔ　ｎｏｗ，　ａｓ　ｙｏｕ　ｈｅａｒｄ．@KEY()↓
-◆Ｉ　ｒｅａｌｌｙ　ｗｏｕｌｄ　ｌｉｋｅ　ｔｏ　ｈｅａｒ　ｓｏｍｅ　ｏｆ　ｙｏｕｒ　ｓｔｏｒｉｅｓ．@KEY()↓
-◆Ｚｏｉｃｋｓ！　　Ｔｈａｔ　ｗａｓ　ｔｈｅ　ｄｏｇ’ｓ　ｆｏｏｄ！@KEY()↓
-◆＊Ｃｒａｓｈ！＊　Ｈｅｙ，　ｈｅｙ！　　Ｎｏｗ　ｌｏｏｋ　ｗｈａｔ　ｙｏｕ’ｖｅ　ｄｏｎｅ！@KEY()↓
-◆．．．Ｉ’ｍ　ｓｏｒｒｙ．↓
-　　Ｉ　ｈａｖｅ　ｔｏ　ｇｏ．　　Ｇｏｏｄ　ｂｙｅ．↓
-;jpn:◆はい@WI(20)　エスカルゴうんそうでーす！@WI(30)↓
-;jpn:　アルバイトのトレーシーちゃんなら↓
-;jpn:　もう　やめましたよ。@KEY()↓
-;jpn:◆えっ？@WI(15)　あんた　@DSP_STS(STS_PC_NAME_NES)とかって↓
-;jpn:　トレーシーのおにいさん？@KEY()↓
-;jpn:◆なんだか　たいそう↓
-;jpn:　ごりっぱな　かつやくをした↓
-;jpn:　そうじゃないか。@KEY()↓
+◆Hello! This is Escargo Express.@KEY()↓
+◆Tracy doesn’t work here any more.  Yeah, she used to work here, part−time.@KEY()↓
+◆Hunh?  This is @DSP_STS(STS_PC_NAME_NES)?↓
+  Tracy’s big brother?@KEY()↓
+◆I’ve heard about the great work you’re doing.@KEY()↓
+◆It’s an honor to talk to you, sir!@KEY()↓
+◆Oh, you’re calling for a delivery?↓
+  I’m very sorry.@KEY()↓
+◆My wife is out on maternity leave, so I’m taking care of my other kid.@KEY()↓
+◆I decided to take some time off from the delivery business.@KEY()↓
+◆It’s right next to the fridge!  Put it into the microwave...  ...that’s it.@KEY()↓
+◆...Sorry about that.@KEY()↓
+◆I’m a little busy right now, as you heard.@KEY()↓
+◆I really would like to hear some of your stories.@KEY()↓
+◆Zoicks!  That was the dog’s food!@KEY()↓
+◆＊Crash!＊ Hey, hey!  Now look what you’ve done!@KEY()↓
+◆...I’m sorry.↓
+  I have to go.  Good bye.↓
+;jpn:◆はい@WI(20) エスカルゴうんそうでーす!@WI(30)↓
+;jpn: アルバイトのトレーシーちゃんなら↓
+;jpn: もう やめましたよ。@KEY()↓
+;jpn:◆えっ?@WI(15) あんた @DSP_STS(STS_PC_NAME_NES)とかって↓
+;jpn: トレーシーのおにいさん?@KEY()↓
+;jpn:◆なんだか たいそう↓
+;jpn: ごりっぱな かつやくをした↓
+;jpn: そうじゃないか。@KEY()↓
 ;jpn:◆わざわざ↓
-;jpn:　でんわもらっちゃうなんて↓
-;jpn:　こうえいだなぁ。@KEY()↓
-;jpn:◆えっ　はいたつですか？@WI(20)↓
-;jpn:　いやぁ@WI(15)　ざんねんだなあ。@KEY()↓
-;jpn:◆にょうぼが　しゅっさんで↓
-;jpn:　さとがえりしましてね。@KEY()↓
-;jpn:◆うえのコの　めんどうを↓
-;jpn:　みなきゃならないんで@KEY()↓
-;jpn:◆しばらく　やすみを↓
-;jpn:　とることにしたんですよ。@KEY()↓
-;jpn:◆そこの　れいぞうこの↓
-;jpn:　よこに　あるから！↓
-;jpn:　チンして‥‥@WI(15)そうそう。@KEY()↓
-;jpn:◆‥‥あ@WI(15)　しつれいしました。@WI(20)↓
-;jpn:　というふうに↓
-;jpn:　いそがしいんですよ。@KEY()↓
-;jpn:◆また　ゆっくり↓
-;jpn:　おはなしきかせてください。@KEY()↓
+;jpn: でんわもらっちゃうなんて↓
+;jpn: こうえいだなぁ。@KEY()↓
+;jpn:◆えっ はいたつですか?@WI(20)↓
+;jpn: いやぁ@WI(15) ざんねんだなあ。@KEY()↓
+;jpn:◆にょうぼが しゅっさんで↓
+;jpn: さとがえりしましてね。@KEY()↓
+;jpn:◆うえのコの めんどうを↓
+;jpn: みなきゃならないんで@KEY()↓
+;jpn:◆しばらく やすみを↓
+;jpn: とることにしたんですよ。@KEY()↓
+;jpn:◆そこの れいぞうこの↓
+;jpn: よこに あるから!↓
+;jpn: チンして‥‥@WI(15)そうそう。@KEY()↓
+;jpn:◆‥‥あ@WI(15) しつれいしました。@WI(20)↓
+;jpn: というふうに↓
+;jpn: いそがしいんですよ。@KEY()↓
+;jpn:◆また ゆっくり↓
+;jpn: おはなしきかせてください。@KEY()↓
 ;jpn:◆そりゃ↓
-;jpn:　イヌのメシだってーの！@WI(20)↓
-;jpn:　（ガチャン）オラオラ！@KEY()↓
-;jpn:◆‥‥じゃ　すいません↓
-;jpn:　しつれいします。@WI(20)↓
+;jpn: イヌのメシだってーの!@WI(20)↓
+;jpn: (ガチャン)オラオラ!@KEY()↓
+;jpn:◆‥‥じゃ すいません↓
+;jpn: しつれいします。@WI(20)↓
 @SE(SE_se0b_tel_put)
-　　（Ｃｌｉｃｋ！）
-;jpn:　ガチャン　ツーツーツー
+  (Click!)
+;jpn: ガチャン ツーツーツー
 @KEYNP()
 @SETF(FLG_PHONE_ESCARGO_FINAL)
 』
-;◆あんただったら　タダでいいよ。@KEY()
+;◆あんただったら タダでいいよ。@KEY()
 ;@!
 
 _UNSOU_TEL_MES_2;
 ←
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_TEL_MES_2B)
-◆Ｗｈａｔ　ｃａｎ　Ｉ　ｄｏ　ｆｏｒ　ｙｏｕ？↓
+◆What can I do for you?↓
 
-;jpn:◆どんなごようけんでしょうか？↓
+;jpn:◆どんなごようけんでしょうか?↓
 @!
 _UNSOU_TEL_MES_2B;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｎｅｅｄ？↓
+◆What do you need?↓
 
-;jpn:◆ごようけんは？↓
+;jpn:◆ごようけんは?↓
 @!
 _UNSOU_TEL_MES_3;
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_TEL_MES_3B)
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(_UNSOU_TEL_BYE_NESS_DEAD)
-◆Ｃｏｍｅ　ａｇａｉｎ．@KEY()
+◆Come again.@KEY()
 
-;jpn:◆また　よろしくね。@KEY()
+;jpn:◆また よろしくね。@KEY()
 @!
 _UNSOU_TEL_BYE_NESS_DEAD;
-◆Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．@KEY()
+◆Please come again.@KEY()
 
-;jpn:◆また　よろしくおねがいします。@KEY()
+;jpn:◆また よろしくおねがいします。@KEY()
 @!
 _UNSOU_TEL_MES_3B;
-◆Ｗｅｌｌ，　ｃｏｍｅ　ａｇａｉｎ．@KEY()
+◆Well, come again.@KEY()
 
-;jpn:◆じゃ@WI(15)　また　よろしく。@KEY()
+;jpn:◆じゃ@WI(15) また よろしく。@KEY()
 @!
 
 _UNSOU_TEL_MES_4;
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_TEL_MES_4B)
-◆Ｙｏｕ　ｗａｎｔ　ｕｓ　ｔｏ　ｓｔｏｒｅ　ｓｏｍｅｔｈｉｎｇ　ｆｏｒ　ｙｏｕ？@KEY()↓
-◆Ｗｅ’ｌｌ　ｓｅｎｄ　ｓｏｍｅｏｎｅ　ｏｖｅｒ　ｉｍｍｅｄｉａｔｅｌｙ　ｔｏ　ｐｉｃｋ　ｉｔ　ｕｐ．@KEY()
+◆You want us to store something for you?@KEY()↓
+◆We’ll send someone over immediately to pick it up.@KEY()
 
 ;jpn:◆おあずかりですね。↓
-;jpn:　かかりのものが　すぐ↓
-;jpn:　そちらに　まいりまーす。@KEY()
+;jpn: かかりのものが すぐ↓
+;jpn: そちらに まいりまーす。@KEY()
 @!
 _UNSOU_TEL_MES_4B;
-◆Ｗｅｌｌ，　Ｉ’ｌｌ　ｐｉｃｋ　ｉｔ　ｕｐ　ｐｅｒｓｏｎａｌｌｙ．↓
-　　Ｗｈｏ　ａｍ　Ｉ？↓
-　　Ｉ’ｍ　ｔｈｅ　ｐｒｅｓｉｄｅｎｔ！@KEY()
+◆Well, I’ll pick it up personally.↓
+  Who am I?↓
+  I’m the president!@KEY()
  
-;jpn:◆じゃ@WI(20)　しゃちょうのわたしが↓
-;jpn:　ちょくせつ　とりにいきましょう！@KEY()
+;jpn:◆じゃ@WI(20) しゃちょうのわたしが↓
+;jpn: ちょくせつ とりにいきましょう!@KEY()
 @!
 
 _UNSOU_TEL_MES_5;
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_TEL_MES_5B)
-◆Ｉ’ｍ　ｖｅｒｙ　ｓｏｒｒｙ．↓
-　　Ｏｕｒ　ｓｔｏｒａｇｅ　ｌｏｃｋｅｒｓ　ａｒｅ　ａｌｌ　ｆｕｌｌ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
+◆I’m very sorry.↓
+  Our storage lockers are all full right now.@KEY()↓
 
 ;jpn:◆もうしわけありません。↓
-;jpn:　ただいまロッカールームが↓
-;jpn:　いっぱいなんです。@KEY()↓
+;jpn: ただいまロッカールームが↓
+;jpn: いっぱいなんです。@KEY()↓
 @!
 _UNSOU_TEL_MES_5B;
-◆Ｉ’ｍ　ｓｏｒｒｙ．↓
-　　Ｏｕｒ　ｓｔｏｒａｇｅ　ｌｏｃｋｅｒｓ　ａｒｅ　ａｌｌ　ｆｕｌｌ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
+◆I’m sorry.↓
+  Our storage lockers are all full right now.@KEY()↓
 
 ;jpn:◆もうしわけありませんね。↓
-;jpn:　いまロッカールームが↓
-;jpn:　いっぱいなんですよ。@KEY()↓
+;jpn: いまロッカールームが↓
+;jpn: いっぱいなんですよ。@KEY()↓
 @!
 
 _UNSOU_TEL_MES_6;
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_TEL_MES_6B)
-◆Ｙｏｕ　ｗｏｕｌｄ　ｌｉｋｅ　ｕｓ　ｔｏ　ｄｅｌｉｖｅｒ　ｓｏｍｅｔｈｉｎｇ？　　Ｗｅ　ｃａｎ　ｄｅｌｉｖｅｒ　ｕｐ　ｔｏ　ｔｈｒｅｅ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｓｅｌｅｃｔ　ｔｈｅ　ｇｏｏｄｓ　ｙｏｕ　ｗａｎｔ．@KEY()
+◆You would like us to deliver something?  We can deliver up to three things.@KEY()↓
+◆Please select the goods you want.@KEY()
   
 ;jpn:◆おとどけですね↓
-;jpn:　３つまで　おとどけできます。@KEY()↓
-;jpn:◆では　グッズを↓
-;jpn:　せんたくしてください。@KEY()
+;jpn: ３つまで おとどけできます。@KEY()↓
+;jpn:◆では グッズを↓
+;jpn: せんたくしてください。@KEY()
 @!
 _UNSOU_TEL_MES_6B;
-◆Ｙｏｕ　ｗｏｕｌｄ　ｌｉｋｅ　ｕｓ　ｔｏ　ｄｅｌｉｖｅｒ　ｓｏｍｅｔｈｉｎｇ？　　Ｗｅ　ｃａｎ　ｄｅｌｉｖｅｒ　ｕｐ　ｔｏ　ｔｈｒｅｅ　ｔｈｉｎｇｓ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｓｅｌｅｃｔ　ｔｈｅ　ｇｏｏｄｓ　ｙｏｕ　ｗａｎｔ．@KEY()
+◆You would like us to deliver something?  We can deliver up to three things.@KEY()↓
+◆Please select the goods you want.@KEY()
 
 ;jpn:◆おとどけですね↓
-;jpn:　３つまで　おとどけできますよ。@KEY()↓
-;jpn:◆さっそく　グッズを↓
-;jpn:　せんたくしてください。@KEY()
+;jpn: ３つまで おとどけできますよ。@KEY()↓
+;jpn:◆さっそく グッズを↓
+;jpn: せんたくしてください。@KEY()
 @!
 
 _UNSOU_TEL_MES_7;
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_TEL_MES_7B)
-◆Ｗｅ’ｌｌ　ｓｅｎｄ　ｓｏｍｅｏｎｅ　ｏｖｅｒ　ｒｉｇｈｔ　ａｗａｙ！@KEY()
+◆We’ll send someone over right away!@KEY()
  
 ;jpn:◆かかりのものが↓
-;jpn:　すぐ　うかがいます。@KEY()
+;jpn: すぐ うかがいます。@KEY()
 @!
 _UNSOU_TEL_MES_7B;
-◆Ｉ’ｌｌ　ｃｏｍｅ　ａｎｄ　ｈｅｌｐ　ｙｏｕ　ｐｅｒｓｏｎａｌｌｙ！@KEY()↓
+◆I’ll come and help you personally!@KEY()↓
 
-;jpn:◆わたくし　みずから↓
-;jpn:　うかがいます！@KEY()↓
+;jpn:◆わたくし みずから↓
+;jpn: うかがいます!@KEY()↓
 @!
 
 _UNSOU_TEL_MES_8;
@@ -966,60 +966,60 @@ _UNSOU_TEL_MES_8;
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(_UNSOU_TEL_EMPTY_NESS_DEAD)
-◆Ｈｅｙ　ｂｉｇ　ｂｒｏｔｈｅｒ　@DSP_STS(STS_PC_NAME_NES)，↓
-　　ｗｅ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｏｆ　ｙｏｕｒ　ｓｔｕｆｆ　ｉｎ　ｓｔｏｒａｇｅ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
+◆Hey big brother @DSP_STS(STS_PC_NAME_NES),↓
+  we don’t have any of your stuff in storage right now.@KEY()↓
 
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)おにいちゃん↓
-;jpn:　にもつなんか↓
-;jpn:　あずかってないわよ。@KEY()↓
+;jpn: にもつなんか↓
+;jpn: あずかってないわよ。@KEY()↓
 @!
 _UNSOU_TEL_EMPTY_NESS_DEAD;
 @GET_ORDER_PLAYER(1)
 @XCHG()
-;＠ポーラだったらマアム？
-◆Ｓｉｒ，　ｗｅ　ｄｏ　ｎｏｔ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｓｔｏｒｅｄ　ｆｏｒ　ａ　ａ　ｓｏｍｅｏｎｅ@KEY()↓
-◆ｂｙ　ｔｈｅ　ｎａｍｅ　ｏｆ　@DSP_NAME(0)．@KEY()↓
+;＠ポーラだったらマアム?
+◆Sir, we do not have anything stored for a a someone@KEY()↓
+◆by the name of @DSP_NAME(0).@KEY()↓
 
-;jpn:◆げんざい　@DSP_NAME(0)さまからは↓
-;jpn:　おにもつを↓
-;jpn:　あずかっておりませんが。@KEY()↓
+;jpn:◆げんざい @DSP_NAME(0)さまからは↓
+;jpn: おにもつを↓
+;jpn: あずかっておりませんが。@KEY()↓
 @!
 _UNSOU_TEL_MES_8B;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｗｅ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｏｆ　ｙｏｕｒｓ　ｉｎ　ｓｔｏｒａｇｅ．@KEY()↓
+◆I don’t think we have anything of yours in storage.@KEY()↓
 
-;jpn:◆どうも　おたくのにもつは↓
-;jpn:　あずかってないようですねぇ。@KEY()↓
+;jpn:◆どうも おたくのにもつは↓
+;jpn: あずかってないようですねぇ。@KEY()↓
 @!
 
 _UNSOU_TEL_MES_9;
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_TEL_MES_9B)
-◆Ｈｅｌｌｏ！↓
-　　Ｔｈｉｓ　ｉｓ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
-◆Ｉ’ｍ　ｖｅｒｙ　ｓｏｒｒｙ，　ｂｕｔ　ａｌｌ　ｏｕｒ　ｄｅｌｉｖｅｒｙ　ｐｅｏｐｌｅ　ａｒｅ　ｏｕｔ，　ｓｅｒｖｉｎｇ　ｏｔｈｅｒ　ｃｕｓｔｏｍｅｒｓ．@KEY()↓
-◆Ｗｅ　ｃａｎ’ｔ　ｔａｋｅ　ａｎｙ　ｄｅｌｉｖｅｒｙ　ｏｒｄｅｒｓ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｃａｌｌ　ｂａｃｋ　ａ　ｌｉｔｔｌｅ　ｌａｔｅｒ．@KEY()
+◆Hello!↓
+  This is Escargo Express.@KEY()↓
+◆I’m very sorry, but all our delivery people are out, serving other customers.@KEY()↓
+◆We can’t take any delivery orders right now.@KEY()↓
+◆Please call back a little later.@KEY()
 
 ;jpn:◆こんにちは↓
-;jpn:　エスカルゴうんそうでーす。@KEY()↓
+;jpn: エスカルゴうんそうでーす。@KEY()↓
 ;jpn:◆もうしわけありませんが‥‥@KEY()↓
-;jpn:◆ただいま　はいたついんが↓
-;jpn:　ではらっておりますので↓
-;jpn:　うけつけられないんです。@KEY()↓
-;jpn:◆また　おかけなおしください。@KEY()
+;jpn:◆ただいま はいたついんが↓
+;jpn: ではらっておりますので↓
+;jpn: うけつけられないんです。@KEY()↓
+;jpn:◆また おかけなおしください。@KEY()
 @!
 _UNSOU_TEL_MES_9B;
-◆Ｈｅｌｌｏ，　ｙｏｕ　ｈａｖｅ　ｒｅａｃｈｅｄ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
-◆Ａｌｌ　ｏｆ　ｏｕｒ　ｓｔａｆｆ　ｍｅｍｂｅｒｓ　ａｒｅ　ｃｕｒｒｅｎｔｌｙ　ｏｕｔ　ｏｆ　ｔｈｅ　ｏｆｆｉｃｅ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｃａｌｌ　ａｇａｉｎ．↓
-　　Ｔｈｉｓ　ｉｓ　ａ　ｒｅｃｏｒｄｉｎｇ．@KEY()
+◆Hello, you have reached Escargo Express.@KEY()↓
+◆All of our staff members are currently out of the office.@KEY()↓
+◆Please call again.↓
+  This is a recording.@KEY()
  
 ;jpn:◆こちらは↓
-;jpn:　エスカルゴうんそうです。@KEY()↓
+;jpn: エスカルゴうんそうです。@KEY()↓
 ;jpn:◆このでんわは↓
-;jpn:　るすばんでんわです。@KEY()↓
-;jpn:◆げんざい　しゃいんぜんいん↓
-;jpn:　がいしゅつしておりますので↓
-;jpn:　あらためておかけなおしください。@KEY()
+;jpn: るすばんでんわです。@KEY()↓
+;jpn:◆げんざい しゃいんぜんいん↓
+;jpn: がいしゅつしておりますので↓
+;jpn: あらためておかけなおしください。@KEY()
 @!
 
 ;
@@ -1033,22 +1033,22 @@ MSG_UNSOU_LEAVE;
 @CMP(2,0)
 @TRUE_GOTO(_UNSOU_LEAVE_GOODSFULL)
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_LEAVE_WINGIEGU)	;ギーグに勝った後
-◆Ｈｅｌｌｏ，　ｔｈｉｓ　ｉｓ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ！@KEY()↓
-◆Ｙｏｕｒ　ｄｅｌｉｖｅｒｙ　ｃｈａｒｇｅ　ｉｓ　＄１８．@KEY()↓
-◆Ｙｏｕ　ｃａｎ　ｃｏｖｅｒ　ｔｈｅ　ｂｉｌｌ，　ｒｉｇｈｔ？↓
+◆Hello, this is Escargo Express!@KEY()↓
+◆Your delivery charge is ＄１８.@KEY()↓
+◆You can cover the bill, right?↓
 
-;jpn:◆エスカルゴうんそうでーす！↓
-;jpn:　おあずかりりょうきんは↓
-;jpn:　１８ドルです。@KEY()↓
-;jpn:◆おかね　もってますよね？↓
+;jpn:◆エスカルゴうんそうでーす!↓
+;jpn: おあずかりりょうきんは↓
+;jpn: １８ドルです。@KEY()↓
+;jpn:◆おかね もってますよね?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_UNSOU_LEAVE_MONEY_CHK,_UNSOU_LEAVE_NO)
 _UNSOU_LEAVE_NO;
-◆Ｏｈ，　Ｉ　ｓｅｅ．↓
-　　Ｐｌｅａｓｅ　ｔｒｙ　ｕｓ　ａｇａｉｎ．
+◆Oh, I see.↓
+  Please try us again.
 
 ;jpn:◆そうですか。↓
-;jpn:　また　よろしく。
+;jpn: また よろしく。
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
@@ -1056,124 +1056,124 @@ _UNSOU_LEAVE_NO;
 @!
 
 _UNSOU_LEAVE_WINGIEGU;
-◆Ｈｉ，　Ｉ’ｍ　ｆｒｏｍ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．@KEY()↓
-◆Ｉ’ｍ　ｈｅｒｅ　ｔｏ　ｐｉｃｋ　ｕｐ　ｙｏｕｒ　ｓｔｕｆｆ．@KEY()↓
+◆Hi, I’m from Escargo Express.@KEY()↓
+◆I’m here to pick up your stuff.@KEY()↓
 
-;jpn:◆エスカルゴうんそうでーす！↓
-;jpn:　にもつをうけとりにきました。@KEY()↓
+;jpn:◆エスカルゴうんそうでーす!↓
+;jpn: にもつをうけとりにきました。@KEY()↓
 @GOTO(_UNSOU_LEAVE_SEL)
 
 _UNSOU_LEAVE_MONEY_CHK;
 @Q_MONEY(18)
 @TRUE_GOTO(_UNSOU_LEAVE_NOMONEY)
 _UNSOU_LEAVE_SEL;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｔａｋｅ？@KEY()↓
-◆Ｉ　ｃａｎ　ｔａｋｅ　ｕｐ　ｔｏ　ｔｈｒｅｅ　ｔｈｉｎｇｓ．@KEY()
+◆What do you want me to take?@KEY()↓
+◆I can take up to three things.@KEY()
 
-;jpn:◆どれをおあずかりしましょう？↓
-;jpn:　３つまでならＯＫですよ。@KEY()
+;jpn:◆どれをおあずかりしましょう?↓
+;jpn: ３つまでならOKですよ。@KEY()
 @DSP_PL()
 _UNSOU_LEAVE_SEL_1;
 @GOSUB(MSG_SEL_GOODS)			;グッズ選択
 ←
-@FALSE_GOTO(_UNSOU_LEAVE_NO)	;キャンセル？
+@FALSE_GOTO(_UNSOU_LEAVE_NO)	;キャンセル?
 @SAVE_REG()
 @Q_TRACY(0,0)
 @TRUE_GOTO(_UNSOU_LEAVE_UNABLE_1)
 @LOAD_REG()
 @SET_TRANS_GOODS(0,0)
 @GET_TRANS_GOODS(1,0)
-◆@DSP_GOODS(0)？
+◆@DSP_GOODS(0)?
 @Q_TRACY(PC_NESS,1)
 @CMP(2,0)
 @TRUE_GOTO(_UNSOU_LEAVE_GOODSFULL_2)
 ←
-　　Ｗｉｌｌ　ｔｈｅｒｅ　ｂｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+  Will there be anything else?↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。
 ;@Q_TRACY(PC_NESS,1)
 ;@CMP(2,0)
 ;@TRUE_GOTO(_UNSOU_LEAVE_GOODSFULL_2)
 ;←
-;jpn:　まだ　ほかに　ありますか？↓
+;jpn: まだ ほかに ありますか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_LEAVE_SEL_2,_UNSOU_LEAVE_Q_OK)
 @GOTO(_UNSOU_LEAVE_Q_OK)
 _UNSOU_LEAVE_SEL_2;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｔａｋｅ？↓
+◆What do you want me to take?↓
 
-;jpn:◆どれをおあずかりしましょう？↓
+;jpn:◆どれをおあずかりしましょう?↓
 _UNSOU_LEAVE_SEL_2B;
 @GOSUB(MSG_SEL_GOODS)			;グッズ選択
 ←
-@FALSE_GOTO(_UNSOU_LEAVE_Q_OK)	;キャンセル？
+@FALSE_GOTO(_UNSOU_LEAVE_Q_OK)	;キャンセル?
 @SAVE_REG()
 @Q_TRACY(0,0)
 @TRUE_GOTO(_UNSOU_LEAVE_UNABLE_2)
 @LOAD_REG()
 @SET_TRANS_GOODS(0,0)
 @GET_TRANS_GOODS(2,0)
-◆@DSP_GOODS(0)？↓
+◆@DSP_GOODS(0)?↓
 @Q_TRACY(PC_NESS,1)
 @CMP(2,0)
 @TRUE_GOTO(_UNSOU_LEAVE_GOODSFULL_2)
 ←
-　　Ｗｉｌｌ　ｔｈｅｒｅ　ｂｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+  Will there be anything else?↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。
 ;@Q_TRACY(PC_NESS,1)
 ;@CMP(2,0)
 ;@TRUE_GOTO(_UNSOU_LEAVE_GOODSFULL_2)
 ;←
-;jpn:　まだ　ほかに　ありますか？↓
+;jpn: まだ ほかに ありますか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_LEAVE_SEL_3,_UNSOU_LEAVE_Q_OK)
 @GOTO(_UNSOU_LEAVE_Q_OK)
 _UNSOU_LEAVE_SEL_3;
-◆Ｗｈｉｃｈ　ｏｎｅ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｔａｋｅ？↓
+◆Which one do you want me to take?↓
 
-;jpn:◆どれをおあずかりしましょう？↓
+;jpn:◆どれをおあずかりしましょう?↓
 _UNSOU_LEAVE_SEL_3B;
 @GOSUB(MSG_SEL_GOODS)			;グッズ選択
 ←
-@FALSE_GOTO(_UNSOU_LEAVE_Q_OK)	;キャンセル？
+@FALSE_GOTO(_UNSOU_LEAVE_Q_OK)	;キャンセル?
 @SAVE_REG()
 @Q_TRACY(0,0)
 @TRUE_GOTO(_UNSOU_LEAVE_UNABLE_3)
 @LOAD_REG()
 @SET_TRANS_GOODS(0,0)
 @GET_TRANS_GOODS(3,0)
-◆@DSP_GOODS(0)？
+◆@DSP_GOODS(0)?
 
 ;jpn:◆@DSP_GOODS(0)ですね。
 @KEY()↓
 _UNSOU_LEAVE_Q_OK;
-◆Ｌｅｔ　ｍｅ　ｊｕｓｔ　ｃｏｎｆｉｒｍ　ｙｏｕｒ　ｒｅｑｕｅｓｔ．　　Ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｔａｋｅ@KEY()↓
+◆Let me just confirm your request.  You want me to take@KEY()↓
 ;◆@DSP_GOODS(0)
-;　　@DSP_GOODS(0)
-;　　ａｎｄ　　@DSP_GOODS(0)．
-;◆Ｉｓ　ｔｈｉｓ　ｃｏｒｒｅｃｔ？　
+;  @DSP_GOODS(0)
+;  and  @DSP_GOODS(0).
+;◆Is this correct? 
 
 ;jpn:◆かくにんします↓
-;jpn:　おあずかりするのは@KEY()↓
+;jpn: おあずかりするのは@KEY()↓
 @GET_TRANS_GOODS(1,0)
-◆ｔｈｅ　@DSP_GOODS(0)
-;◆@DSP_GOODS(0)，
+◆the @DSP_GOODS(0)
+;◆@DSP_GOODS(0),
 @GET_TRANS_GOODS(2,0)
 @FALSE_GOTO(_UNSOU_LEAVE_Q_OK_2)
 ↓
-　　ｔｈｅ　@DSP_GOODS(0)
-;　@DSP_GOODS(0)
+  the @DSP_GOODS(0)
+; @DSP_GOODS(0)
 @GET_TRANS_GOODS(3,0)
 @FALSE_GOTO(_UNSOU_LEAVE_Q_OK_2)
 ↓
-;jpn:　あと　@DSP_GOODS(0)
-　　ａｎｄ　ｔｈｅ　@DSP_GOODS(0)．
+;jpn: あと @DSP_GOODS(0)
+  and the @DSP_GOODS(0).
 _UNSOU_LEAVE_Q_OK_2;
 @KEY()↓
-◆Ｉｓ　ｔｈｉｓ　ｃｏｒｒｅｃｔ？↓
+◆Is this correct?↓
 
-;jpn:◆いじょうで　よろしいですか？↓
+;jpn:◆いじょうで よろしいですか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_LEAVE_OK,_UNSOU_LEAVE_ONEMORE)
 @GOTO(_UNSOU_LEAVE_ONEMORE)
@@ -1184,11 +1184,11 @@ _UNSOU_LEAVE_OK;
 @WINR_MONEY()
 @SE(SE_se76_my_give)
 @GOSUB(_SUB_UNSOU_TRANS_RETURN_TRACY)
-◆Ａｌｌ　ｒｉｇｈｔ，　ｃｅｒｔａｉｎｌｙ，↓
-　　ｔｈａｎｋｓ　ａ　ｌｏｔ！
+◆All right, certainly,↓
+  thanks a lot!
 
-;jpn:◆はい　たしかに↓
-;jpn:　ありやと　あんしたー。
+;jpn:◆はい たしかに↓
+;jpn: ありやと あんしたー。
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
@@ -1205,10 +1205,10 @@ _UNSOU_LEAVE_ONEMORE;
 @FALSE_GOTO(_UNSOU_LEAVE_ONEMORE_2)
 @GOODSIN_PLAYER(0,0)
 _UNSOU_LEAVE_ONEMORE_2;
-◆Ｗｅｌｌ，　ｌｅｔ’ｓ　ｓｔａｒｔ　ａｇａｉｎ，　ｓｈａｌｌ　ｗｅ？@KEY()
+◆Well, let’s start again, shall we?@KEY()
 
-;jpn:◆では　もういっぺん↓
-;jpn:　おねがいします。@KEY()
+;jpn:◆では もういっぺん↓
+;jpn: おねがいします。@KEY()
 @GOTO(_UNSOU_LEAVE_SEL_1)
 
 _UNSOU_LEAVE_UNABLE_1;
@@ -1224,16 +1224,16 @@ _UNSOU_LEAVE_UNABLE_3;
 @GOTO(_UNSOU_LEAVE_SEL_3B)
 
 _UNSOU_LEAVE_GOODSFULL;
-◆Ｅｘｃｕｓｅ　ｍｅ．@KEY()↓
-◆Ｗｅ　ｃｈｅｃｋｅｄ　ｙｏｕｒ　ｒｅｃｏｒｄｓ　ａｎｄ　ｆｏｕｎｄ@KEY()↓
-◆ｔｈａｔ　ｗｅ　ａｒｅ　ａｌｒｅａｄｙ　ｓｔｏｒｉｎｇ　ｔｏｏ　ｍａｎｙ　ｏｆ　ｙｏｕｒ　ｉｔｅｍｓ．@KEY()↓
-◆Ｗｅ　ｃａｎｎｏｔ　ａｃｃｅｐｔ　ａｎｙ　ｍｏｒｅ　ｇｏｏｄｓ　ｆｒｏｍ　ｙｏｕ　ａｔ　ｔｈｉｓ　ｔｉｍｅ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｃｏｎｔａｃｔ　ｕｓ　ｌａｔｅｒ　ｗｈｅｎ　ｗｅ　ｍａｙ　ｈａｖｅ　ｓｐａｃｅ　ｆｏｒ　ｙｏｕｒ　ｉｔｅｍｓ．
+◆Excuse me.@KEY()↓
+◆We checked your records and found@KEY()↓
+◆that we are already storing too many of your items.@KEY()↓
+◆We cannot accept any more goods from you at this time.@KEY()↓
+◆Please contact us later when we may have space for your items.
 
 ;jpn:◆すいません。↓
-;jpn:　あずかりしょを　しらべなおしたら↓
-;jpn:　いっぱいでした。@KEY()↓
-;jpn:◆じゃ　また　よろしくー。
+;jpn: あずかりしょを しらべなおしたら↓
+;jpn: いっぱいでした。@KEY()↓
+;jpn:◆じゃ また よろしくー。
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
@@ -1242,18 +1242,18 @@ _UNSOU_LEAVE_GOODSFULL;
 
 _UNSOU_LEAVE_GOODSFULL_2;
 @KEY()↓
-◆Ｗｅ’ｒｅ　ｓｏｒｒｙ，　ｗｅ　ｃａｎｎｏｔ　ｃａｒｒｙ　ｍｏｒｅ　ｔｈａｎ　ｔｈｒｅｅ　ｉｔｅｍｓ．@KEY()↓
-◆Ｐｌｅａｓｅ　ｕｎｄｅｒｓｔａｎｄ　ｏｕｒ　ｐｏｌｉｃｙ．@KEY()↓
-;jpn:◆あ　もうこれいじょう↓
-;jpn:　あずかれないんで↓
-;jpn:　ここまでにしてください。@KEY()↓
+◆We’re sorry, we cannot carry more than three items.@KEY()↓
+◆Please understand our policy.@KEY()↓
+;jpn:◆あ もうこれいじょう↓
+;jpn: あずかれないんで↓
+;jpn: ここまでにしてください。@KEY()↓
 @GOTO(_UNSOU_LEAVE_Q_OK)
 
 _UNSOU_LEAVE_NOMONEY;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．@KEY()↓
-◆Ｃａｌｌ　ｕｓ　ａｔ　ａｎｏｔｈｅｒ　ｔｉｍｅ．
-;jpn:◆おかね　たりないですね。↓
-;jpn:　また　よろしく。
+◆You don’t have enough money.@KEY()↓
+◆Call us at another time.
+;jpn:◆おかね たりないですね。↓
+;jpn: また よろしく。
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
@@ -1267,64 +1267,64 @@ _UNSOU_LEAVE_NOMONEY;
 MSG_UNSOU_SEND;
 @GOSUB(MSG_SUB_BGM_PIZZASTART)
 @RESF(FLG_DELIVERY_UNSOU)
-◆Ｉ’ｍ　ｆｒｏｍ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ！！@KEY()↓
-;jpn:◆エスカルゴうんそうでーっす！@KEY()↓
-◆Ｉ’ｍ　ｈｅｒｅ　ｔｏ　ｄｅｌｉｖｅｒ　ｙｏｕｒ@KEY()↓
+◆I’m from Escargo Express!!@KEY()↓
+;jpn:◆エスカルゴうんそうでーっす!@KEY()↓
+◆I’m here to deliver your@KEY()↓
 @GET_TRANS_GOODS(1,0)
-;　　@DSP_GOODS(0)，
-;　　@DSP_GOODS(0)，　
-;　　ａｎｄ　@DSP_GOODS(0)．
+;  @DSP_GOODS(0),
+;  @DSP_GOODS(0), 
+;  and @DSP_GOODS(0).
 
-◆@DSP_GOODS(0)，
+◆@DSP_GOODS(0),
 @GET_TRANS_GOODS(2,0)
 @FALSE_GOTO(_UNSOU_SEND_2)
 ;jpn:と↓
 ↓
-　　@DSP_GOODS(0)，
+  @DSP_GOODS(0),
 
-;　@DSP_GOODS(0)
+; @DSP_GOODS(0)
 @GET_TRANS_GOODS(3,0)
 @FALSE_GOTO(_UNSOU_SEND_2)
 ↓
-;jpn:　あと　@DSP_GOODS(0)
-　　ａｎｄ　@DSP_GOODS(0)
+;jpn: あと @DSP_GOODS(0)
+  and @DSP_GOODS(0)
 _UNSOU_SEND_2;
-．@KEY()↓
+.@KEY()↓
 ;jpn:◆いじょうを↓
-;jpn:　おとどけに　まいりましたー。@KEY()↓
+;jpn: おとどけに まいりましたー。@KEY()↓
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_SEND_GOODS_1)	;ギーグ倒した後
-◆Ｙｏｕｒ　ｃｈａｒｇｅ　ｉｓ　＄１８．↓
-　　Ｙｏｕ　ｃａｎ　ｐａｙ　ｆｏｒ　ｔｈｉｓ，　ｒｉｇｈｔ？@KEY()↓
+◆Your charge is ＄１８.↓
+  You can pay for this, right?@KEY()↓
 
-;jpn:◆りょうきんは　１８ドルです。↓
-;jpn:　おかね　もってますよね？↓
+;jpn:◆りょうきんは １８ドルです。↓
+;jpn: おかね もってますよね?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_UNSOU_SEND_YES,_UNSOU_SEND_NO_1)
 _UNSOU_SEND_NO_1;			;キャンセル
-◆Ｗｅｌｌ，　Ｉ　ｎｅｅｄ　ｔｏ　ｔａｋｅ　ｔｈｅｓｅ　ｔｈｉｎｇｓ　ｂａｃｋ　ｔｈｅｎ．@KEY()↓
-◆Ｉｓ　ｔｈａｔ　ＯＫ？↓
+◆Well, I need to take these things back then.@KEY()↓
+◆Is that OK?↓
 
-;jpn:◆じゃ　にもつは↓
-;jpn:　もってかえりますけど@KEY()↓
-;jpn:◆いいすか？↓
+;jpn:◆じゃ にもつは↓
+;jpn: もってかえりますけど@KEY()↓
+;jpn:◆いいすか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_SEND_BYE,_UNSOU_SEND_NO_2)
 _UNSOU_SEND_NO_2;
-◆Ｈｍｍｍ，　ｗｈａｔ　ｓｈｏｕｌｄ　Ｉ　ｄｏ？@KEY()↓
-◆Ｙｏｕ　ａｃｔｕａｌｌｙ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ，　ｒｉｇｈｔ？↓
+◆Hmmm, what should I do?@KEY()↓
+◆You actually don’t have any money, right?↓
 
 ;jpn:◆こまったなー。@KEY()↓
-;jpn:◆おかね　ほんとは↓
-;jpn:　あるんでしょ？↓
+;jpn:◆おかね ほんとは↓
+;jpn: あるんでしょ?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_UNSOU_SEND_YES,_UNSOU_SEND_NO_1)
 @GOTO(_UNSOU_SEND_NO_1)
 _UNSOU_SEND_BYE;
-◆Ｏｋａｙ．↓
-　　Ｃａｌｌ　ｕｓ　ａｇａｉｎ　ｌａｔｅｒ．
+◆Okay.↓
+  Call us again later.
 
 ;jpn:◆そうですか。↓
-;jpn:　また　よろしくー。
+;jpn: また よろしくー。
 @KEYNP()
 _UNSOU_SEND_END;
 @GOSUB(_SUB_UNSOU_TRANS_RETURN_TRACY)
@@ -1362,12 +1362,12 @@ _UNSOU_SEND_ALLOK;
 @!
 
 _UNSOU_SEND_GOODSFULL;			;グッズ欄いっぱい
-◆Ｏｈ，　ｙｏｕ　ｈａｖｅ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．↓
-　　Ｐｌｅａｓｅ　ｃａｌｌ　ｕｓ　ａｇａｉｎ　ｌａｔｅｒ．
+◆Oh, you have too many things.↓
+  Please call us again later.
 
-;jpn:◆あれ　にもつが↓
-;jpn:　いっぱいですね。↓
-;jpn:　じゃ　また　よろしくー。
+;jpn:◆あれ にもつが↓
+;jpn: いっぱいですね。↓
+;jpn: じゃ また よろしくー。
 @KEYNP()
 @GOSUB(_SUB_UNSOU_TRANS_RETURN_TRACY)
 @CLOSEALL()
@@ -1376,16 +1376,16 @@ _UNSOU_SEND_GOODSFULL;			;グッズ欄いっぱい
 @!
 
 _UNSOU_SEND_GOODSFULL_2;		;グッズ欄いっぱい
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｃａｒｒｙ　ｅｖｅｒｙｔｈｉｎｇ．@KEY()↓
+◆I don’t think you can carry everything.@KEY()↓
 
-;jpn:◆あれ　ぜんぶは↓
-;jpn:　もてないみたいですね。@KEY()↓
+;jpn:◆あれ ぜんぶは↓
+;jpn: もてないみたいですね。@KEY()↓
 @GET_TRANS_GOODS(1,1)
-◆Ｗｅｌｌ，　　Ｉ’ｌｌ　ｌｅａｖｅ　ｊｕｓｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)．@KEY()↓
+◆Well,  I’ll leave just↓
+  the @DSP_GOODS(0).@KEY()↓
 
-;jpn:◆じゃ　@DSP_GOODS(0)だけ↓
-;jpn:　おわたししておきます。@KEY()↓
+;jpn:◆じゃ @DSP_GOODS(0)だけ↓
+;jpn: おわたししておきます。@KEY()↓
 @GOSUB(_SUB_UNSOU_SEND_OK_MES)
 @GET_TRANS_GOODS(2,1)
 @TRACY_IN(0)
@@ -1396,32 +1396,32 @@ _SUB_UNSOU_GOODSFULL_2_END;
 @!
 
 _UNSOU_SEND_GOODSFULL_3;		;グッズ欄いっぱい
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｃａｒｒｙ　ｅｖｅｒｙｔｈｉｎｇ．@KEY()↓
+◆I don’t think you can carry everything.@KEY()↓
 
-;jpn:◆あれ　ぜんぶは↓
-;jpn:　もてないみたいですね。@KEY()↓
+;jpn:◆あれ ぜんぶは↓
+;jpn: もてないみたいですね。@KEY()↓
 @GET_TRANS_GOODS(1,1)
-◆Ｗｅｌｌ，　Ｉ’ｌｌ　ｌｅａｖｅ　ｊｕｓｔ↓
-　　ｔｈｅ　@DSP_GOODS(0)↓
-　　ａｎｄ
+◆Well, I’ll leave just↓
+  the @DSP_GOODS(0)↓
+  and
 @GET_TRANS_GOODS(2,1)
-　ｔｈｅ　@DSP_GOODS(0)．@KEY()↓
+ the @DSP_GOODS(0).@KEY()↓
 
-;jpn:◆じゃ　@DSP_GOODS(0)と↓
+;jpn:◆じゃ @DSP_GOODS(0)と↓
 ;@GET_TRANS_GOODS(2,1)
-;jpn:　@DSP_GOODS(0)だけ↓
-;jpn:　おわたししておきます。@KEY()↓
+;jpn: @DSP_GOODS(0)だけ↓
+;jpn: おわたししておきます。@KEY()↓
 @GOSUB(_SUB_UNSOU_SEND_OK_MES)
 @GET_TRANS_GOODS(3,1)
 @TRACY_IN(0)
 @!
 
 _UNSOU_SEND_NOMONEY;			;お金足りない。
-◆Ａｈ，　Ｉ　ｓｅｅ．．．Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ．↓
-　　Ｃａｌｌ　ｕｓ　ａｇａｉｎ　ｌａｔｅｒ．
+◆Ah, I see...You don’t have enough money.↓
+  Call us again later.
 @KEYNP()
-;jpn:◆あれ？　おかね　たりないですね。↓
-;jpn:　じゃ　また　よろしく。
+;jpn:◆あれ? おかね たりないですね。↓
+;jpn: じゃ また よろしく。
 @GOSUB(_SUB_UNSOU_TRANS_RETURN_TRACY)
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
@@ -1435,28 +1435,28 @@ MSG_UNSOU_LEAVE_RETRY_OVER;
 @CLRF(FLG_DELIVERY_UNSOU_B)
 @GOSUB(MSG_SUB_ZYUSHIN_CALL)
 @OPEN(1)
-◆Ｈｅｌｌｏ！↓
-　　Ｔｈｉｓ　ｉｓ　Ｅｓｃａｒｇｏ　Ｅｘｐｒｅｓｓ．↓
-　（ｈｅｅ，ｈａ，ｈｅ，ｈａ）@KEY()↓
-◆Ｉ　ｊｕｓｔ　（ｈｅｅ，ｈａ，ｈｅ，ｈａ）ｃｏｕｌｄｎ’ｔ　ｆｉｎｄ　ｙｏｕｒ　ｌｏｃａｔｉｏｎ．．．@KEY()↓
-◆．．．Ｙｏｕ　ｍｕｓｔ　ｂｅ　ｓｏｍｅｗｈｅｒｅ　ｒｅａｌｌｙ　ｓｔｒａｎｇｅ．（ｈｅｅ，ｈａ，ｈｅ，ｈａ）@KEY()↓
-◆Ｉ’ｖｅ　ｄｅｃｉｄｅｄ，　ｈｏｎｅｓｔｌｙ，　ｔｈａｔ．．．Ｉ　ｓｈｏｕｌｄ　ｇｉｖｅ　ｕｐ．@KEY()↓
-◆Ｉ’ｍ　ｏｕｔｔａ　ｈｅｒｅ．（ｈｅｅ，ｈａ，ｈｅ，ｈａ）@KEY()↓
-◆Ｓｏｍｅｔｉｍｅｓ　ｃｒａｐ　ｌｉｋｅ　ｔｈｉｓ　ｈａｐｐｅｎｓ，　ｙｏｕ　ｋｎｏｗ？@KEY()
+◆Hello!↓
+  This is Escargo Express.↓
+ (hee,ha,he,ha)@KEY()↓
+◆I just (hee,ha,he,ha)couldn’t find your location...@KEY()↓
+◆...You must be somewhere really strange.(hee,ha,he,ha)@KEY()↓
+◆I’ve decided, honestly, that...I should give up.@KEY()↓
+◆I’m outta here.(hee,ha,he,ha)@KEY()↓
+◆Sometimes crap like this happens, you know?@KEY()
 ;jpn:◆もしもーし↓
-;jpn:　エスカルゴうんそうでーす。@WI(20)↓
-;jpn:　（ハアハア）@KEY()↓
-;jpn:◆おたくさまが（ハアハア）↓
-;jpn:　おいでになるばしょが@WI(15)↓
-;jpn:　みつからなくて‥‥@KEY()↓
-;jpn:◆‥‥きっと　へんなところに↓
-;jpn:　いるんでしょうねぇ。@WI(20)↓
-;jpn:　（ハアハア）@KEY()↓
-;jpn:◆わたし　もう　まごころこめて↓
-;jpn:　‥‥あきらめましたから。@WI(20)↓
-;jpn:　かえります。（ハアハア）@KEY()↓
+;jpn: エスカルゴうんそうでーす。@WI(20)↓
+;jpn: (ハアハア)@KEY()↓
+;jpn:◆おたくさまが(ハアハア)↓
+;jpn: おいでになるばしょが@WI(15)↓
+;jpn: みつからなくて‥‥@KEY()↓
+;jpn:◆‥‥きっと へんなところに↓
+;jpn: いるんでしょうねぇ。@WI(20)↓
+;jpn: (ハアハア)@KEY()↓
+;jpn:◆わたし もう まごころこめて↓
+;jpn: ‥‥あきらめましたから。@WI(20)↓
+;jpn: かえります。(ハアハア)@KEY()↓
 ;jpn:◆こういうことも↓
-;jpn:　たまには　あるんですねぇ。@KEY()
+;jpn: たまには あるんですねぇ。@KEY()
 @GOSUB(MSG_SUB_ZYUSHIN_PUT)
 ;@CLRF(FLG_SYS_DISTLPT);テレポート許可
 @GOSUB(MSG_SUB_TLPTOK_OTHEREVENT)	;イベント中以外ならテレポート許可
@@ -1465,9 +1465,9 @@ MSG_UNSOU_LEAVE_RETRY_OVER;
 _SUB_HANGUP_MES;
 ←
 @SE(SE_se0b_tel_put)
-◆（Ｃｌｉｃｋ！）
+◆(Click!)
 
-;jpn:◆ガチャン　ツーツーツー。
+;jpn:◆ガチャン ツーツーツー。
 @KEYNP()
 @!
 
@@ -1476,11 +1476,11 @@ _SUB_UNSOU_SEND_OK_MES;
 @ONGOSUB(_UNSOU_OK_WINGIEGU)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆ＯＫ，　ｈｅｒｅ　ｗｅ　ａｒｅ．↓
-　　Ｔｈａｎｋ　ｙｏｕ！
+◆OK, here we are.↓
+  Thank you!
 
-;jpn:◆ハイ　たしかに。↓
-;jpn:　ありやと　やんしたー。
+;jpn:◆ハイ たしかに。↓
+;jpn: ありやと やんしたー。
 @KEYNP()
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
@@ -1491,12 +1491,12 @@ _UNSOU_OK_WINGIEGU;
 @!
 
 _SUB_UNSOU_LEAVE_UNABLE_MES;
-◆Ｉ　ｔｈｉｎｋ　ｙｏｕ　ｓｈｏｕｌｄ　ｋｅｅｐ　ｉｔ．@KEY()↓
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｔａｋｅ？@KEY()
+◆I think you should keep it.@KEY()↓
+◆Do you have anything else you want me to take?@KEY()
 
-;jpn:◆それは　もっていたほうが↓
-;jpn:　いいと　おもいますが。↓
-;jpn:　ほかに　ありますか。@KEY()
+;jpn:◆それは もっていたほうが↓
+;jpn: いいと おもいますが。↓
+;jpn: ほかに ありますか。@KEY()
 @!
 
 MSG_SUB_UNSOU_TRANS_RETURN_TRACY;
@@ -1517,30 +1517,30 @@ _TRANS_RETRA_END;
 ;
 
 MSG_TRACY;
-◆Ｏｈ，　ｉｔ’ｓ　ｍｙ　ｌｉｎｅ　ｎｏｗ？　Ｏｏｏｐｓ！↓
+◆Oh, it’s my line now? Ooops!↓
 
-;jpn:◆あ　わたしの　でばんね？↓
-MSG_TRACY_GLOBAL_START;汎用のトレーシー呼び出し（三浦）
+;jpn:◆あ わたしの でばんね?↓
+MSG_TRACY_GLOBAL_START;汎用のトレーシー呼び出し(三浦)
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_TRACY_YES,_TRACY_NO)
 _TRACY_NO;
-◆Ｗｈａｔ　ｔｈｅ　ｈｅｙ？↓
-　　Ｗｅｌｌ，　ｓｅｅ　ｙｏｕ！
+◆What the hey?↓
+  Well, see you!
 ;jpn:◆なーんだ。@WI(15)↓
-;jpn:　じゃ　またね！
+;jpn: じゃ またね!
 @KEYNP()
 』
 MSG_TRACY_GLOBAL_START2;最終戦闘後
 _TRACY_YES;
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｄｏ？↓
+◆What do you want me to do?↓
 
-;jpn:◆ごようは　なーに？↓
+;jpn:◆ごようは なーに?↓
 _TRACY_SEL;
 ;@SAVE_WIN()
 ;@DSP_PL()
 ;@OPEN(37)
-<ｓｔｏｒｅ>
-<ｃｈｅｃｋ　ｏｕｔ>
+<store>
+<check out>
 ;jpn:<あずける>
 ;jpn:<もちだす>
 @DSP_ITEM(2)
@@ -1555,20 +1555,20 @@ _TRACY_SEL;
 
 _TRACY_END;
 @CHKFGOTO(FLG_WIN_GIEGU,_TRACY_END_FINAL)
-◆Ｗｅｌｌ，　ｔａｋｅ　ｃａｒｅ　ａｎｄ　Ｉ’ｌｌ　ｔａｌｋ　ｔｏ　ｙｏｕ　ｌａｔｅｒ！
+◆Well, take care and I’ll talk to you later!
 
-;jpn:◆じゃ　きをつけてね！
+;jpn:◆じゃ きをつけてね!
 @KEYNP()
 @!
 _TRACY_END_FINAL;最終戦闘後
-◆Ｗｅｌｌ，　ｔａｋｅ　ｃａｒｅ　ａｎｄ　ｔａｌｋ　ｔｏ　ｙｏｕ　ｌａｔｅｒ！@KEY()↓
-◆Ｏｈ，　Ｉ　ｓａｉｄ　”ｔａｋｅ　ｃａｒｅ”！@KEY()↓
-◆Ｉｔ　ｊｕｓｔ　ｓｌｉｐｐｅｄ　ｏｕｔ　ｏｆ　ｍｙ　ｍｏｕｔｈ，@KEY()↓
-◆ｊｕｓｔ　ｌｉｋｅ　Ｉ　ｗａｓ　ｔａｌｋｉｎｇ　ｔｏ　ｙｏｕ　ｗｈｅｎ　ｙｏｕ　ｗｅｒｅ　ｇｏｎｅ．．．
-;jpn:◆じゃ　きをつけてね！@KEY()↓
-;jpn:◆あら@WI(10)　いままでのくせで↓
-;jpn:　きをつけてね‥‥@WI(15)なんて↓
-;jpn:　いっちゃった。
+◆Well, take care and talk to you later!@KEY()↓
+◆Oh, I said ”take care”!@KEY()↓
+◆It just slipped out of my mouth,@KEY()↓
+◆just like I was talking to you when you were gone...
+;jpn:◆じゃ きをつけてね!@KEY()↓
+;jpn:◆あら@WI(10) いままでのくせで↓
+;jpn: きをつけてね‥‥@WI(15)なんて↓
+;jpn: いっちゃった。
 @KEYNP()
 』
 
@@ -1577,14 +1577,14 @@ MSG_TRACY_AZUKERU;				;預ける
 @FALSE_GOTO(_TRACY_GDSEMP)
 @Q_TRACY(PC_NESS,1)			;預り所チェック
 @CMP(2,0)
-@TRUE_GOTO(_TRACY_TRACYFULL)		;預り所いっぱい？
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｓｔｏｒｅ？@KEY()
+@TRUE_GOTO(_TRACY_TRACYFULL)		;預り所いっぱい?
+◆What do you want to store?@KEY()
 
-;jpn:◆なにを　あずける？@KEY()
+;jpn:◆なにを あずける?@KEY()
 @DSP_PL()
 @GOSUB(MSG_SEL_GOODS)			;グッズ選択
 ←
-@FALSE_GOTO(_TRACY_OTHER)		;キャンセル？
+@FALSE_GOTO(_TRACY_OTHER)		;キャンセル?
 _TRACY_AZUKERU_OK;
 @SAVE_REG()
 @Q_TRACY(0,0)
@@ -1593,21 +1593,21 @@ _TRACY_AZUKERU_OK;
 @GET_PLAYER_GOODS(0,0)
 @SE(SE_se76_my_give)
 ←
-◆Ｔｈｅ　@DSP_GOODS(0)？↓
-　　Ｄｏｎ’ｔ　ｗｏｒｒｙ，　Ｉ’ｌｌ　ｋｅｅｐ　ｉｔ　ｓａｆｅ．@KEY()↓
+◆The @DSP_GOODS(0)?↓
+  Don’t worry, I’ll keep it safe.@KEY()↓
  
 ;jpn:◆@DSP_GOODS(0)ね。↓
-;jpn:　だいじに　しまっとくわ。@WI(15)@KEY()↓
+;jpn: だいじに しまっとくわ。@WI(15)@KEY()↓
 @LOAD_REG()				;主レ=PLAYER_ID:副レ=GOODSの位置
 @TRACY_IN_GOODS(0,0)			;預ける。
 
 _TRACY_AZUKERU_NEXT;
 ←
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｔｈａｔ　ｙｏｕ　ｗａｎｔ　ｍｅ　ｔｏ　ｓｔｏｒｅ？↓
-<ｙｅｓ>
-<ｎｏ>
+◆Do you have anything else that you want me to store?↓
+<yes>
+<no>
 
-;jpn:◆ほかに　あずけるものは　ある？↓
+;jpn:◆ほかに あずけるものは ある?↓
 ;jpn:<ある>
 ;jpn:<ない>
 @DSP_ITEM(2)
@@ -1616,39 +1616,39 @@ _TRACY_AZUKERU_NEXT;
 
 _TRACY_TRACYFULL;			;預り所いっぱい
 ←
-◆Ｉ’ｍ　ｓｏｒｒｙ．↓
-　　Ｍｙ　ｌｏｃｋｅｒ　ｉｓ　ｆｕｌｌ．@KEY()
+◆I’m sorry.↓
+  My locker is full.@KEY()
 
 ;jpn:◆ごめんなさい。@WI(15)↓
-;jpn:　ロッカールームが↓
-;jpn:　いっぱいになっちゃったの。@KEY()
+;jpn: ロッカールームが↓
+;jpn: いっぱいになっちゃったの。@KEY()
 @GOTO(_TRACY_OTHER)
 
 _TRACY_GDSEMP;
 ←
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｔｏ　ｓｔｏｒｅ．@KEY()
+◆I don’t think you have anything to store.@KEY()
 
-;jpn:◆あずけるものが　ないみたい。@KEY()
+;jpn:◆あずけるものが ないみたい。@KEY()
 @GOTO(_TRACY_OTHER)
 
 _TRACY_AZU_UNABLE;
 ←
-◆Ｉ　ｔｈｉｎｋ　ｙｏｕ　ｓｈｏｕｌｄ　ｈａｎｇ　ｏｎ　ｔｏ　ｔｈａｔ．@KEY()↓
-;jpn:◆それは　もっていたほうが↓
-;jpn:　いいと　おもうわ。@KEY()↓
+◆I think you should hang on to that.@KEY()↓
+;jpn:◆それは もっていたほうが↓
+;jpn: いいと おもうわ。@KEY()↓
 @GOTO(_TRACY_AZUKERU_NEXT)
 
 _TRACY_MOTIDASU;			;もちだす。
 @SET_LOOPREG(1)				;空チェック
 @GET_TRACY()
-@FALSE_GOTO(_TRACY_EMPTY)		;空？
+@FALSE_GOTO(_TRACY_EMPTY)		;空?
 @Q_GOODSFULL(PC_ALL)			;全員のグッズ欄チェック。
-@FALSE_GOTO(_TRACY_GOODSFULL)		;全員グッズ欄いっぱい？
+@FALSE_GOTO(_TRACY_GOODSFULL)		;全員グッズ欄いっぱい?
 ←
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ↓
-　　ｒｅｔｕｒｎｅｄ？@KEY()
+◆What would you like↓
+  returned?@KEY()
 
-;jpn:◆なにを　もっていくの？@KEY()
+;jpn:◆なにを もっていくの?@KEY()
 _TRACY_MOTIDASU_SEL;
 ;グッズ選択
 @DSP_PL()
@@ -1673,17 +1673,17 @@ _TRACY_MOTIDASU_SELB;
 @SE(SE_se74_my_get)
 @TRACY_OUT_GOODS(0,0)
 @GET_PLAYER_GOODS(0,0)
-◆Ｔｈｅ　@DSP_GOODS(0)？↓
-　　Ｔａｋｅ　ｇｏｏｄ　ｃａｒｅ　ｏｆ　ｉｔ．@KEY()↓
+◆The @DSP_GOODS(0)?↓
+  Take good care of it.@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)ね。@WI(15)↓
-;jpn:　だいじに　してね。@WI(15)@KEY()↓
+;jpn: だいじに してね。@WI(15)@KEY()↓
 _TRACY_MOTIDASU_OTHER;
-◆Ｉｓ　ｔｈｅｒｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｙｏｕ　ｗａｎｔ　ｒｅｔｕｒｎｅｄ？↓
-<ｙｅｓ>
-<ｎｏ>
+◆Is there anything else you want returned?↓
+<yes>
+<no>
 
-;jpn:◆ほかに　もっていくものは　ある？↓
+;jpn:◆ほかに もっていくものは ある?↓
 ;jpn:<ある>
 ;jpn:<ない>
 @DSP_ITEM(2)
@@ -1698,59 +1698,59 @@ _TRACY_MOTIDASU_SEL_2;
 
 _TRACY_EMPTY;
 ←
-◆Ｉ’ｍ　ｎｏｔ　ｓｔｏｒｉｎｇ　ａｎｙ　ｏｆ　ｙｏｕｒ　ｓｔｕｆｆ．@KEY()↓
+◆I’m not storing any of your stuff.@KEY()↓
 
-;jpn:◆なにも　あずかってないわよ。@KEY()↓
-@GOTO(_TRACY_OTHER)			;キャンセル？
+;jpn:◆なにも あずかってないわよ。@KEY()↓
+@GOTO(_TRACY_OTHER)			;キャンセル?
 
 _TRACY_GOODSFULL;			;もちものいっぱい
 ←
-◆Ｉ　ｔｈｉｎｋ　ｙｏｕ　ａｒｅ　ａｌｒｅａｄｙ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()↓
+◆I think you are already carrying too many things.@KEY()↓
 
-;jpn:◆もちものが　いっぱいみたいね。@KEY()↓
+;jpn:◆もちものが いっぱいみたいね。@KEY()↓
 @GOTO(_TRACY_OTHER)
 
 _TRACY_OTHER_PRE;
 @SELECT_WIN(13)
 @CLOSE()
 @SELECT_WIN(1)
-_TRACY_OTHER;				;他の用事ある？
+_TRACY_OTHER;				;他の用事ある?
 ←
-◆Ｄｏ　ｙｏｕ　ｎｅｅｄ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ　ｆｒｏｍ　ｍｅ？↓
+◆Do you need anything else from me?↓
 
-;jpn:◆ほかにも　ようじはある？↓
+;jpn:◆ほかにも ようじはある?↓
 @GOTO(_TRACY_SEL)
 
 _TRACY_SELPLAYER_GOODSFULL;
 ←
-◆Ｉ　ｔｈｉｎｋ　@DSP_NAME(0)　ｉｓ　ｃａｒｒｙｉｎｇ　ｔｏｏ　ｍａｎｙ　ｔｈｉｎｇｓ．@KEY()
+◆I think @DSP_NAME(0) is carrying too many things.@KEY()
 
 ;jpn:◆@DSP_NAME(0)さんは↓
-;jpn:　もちものが　いっぱいみたいよ。@KEY()
+;jpn: もちものが いっぱいみたいよ。@KEY()
 @!
 
 ;-------------------------------------------------
 MSG_UNSOU_TEL_TACO;
-◆Ａｒｅ　ｙｏｕ　ｃａｌｌｉｎｇ　ａｂｏｕｔ　ｔｈｅ　ｄｅｌｉｖｅｒｙ　ｏｆ　ｔｈｅ　”Ｐｅｎｃｉｌ　Ｅｒａｓｅｒ”？↓
-<ｙｅｓ>
-<ｎｏ>
+◆Are you calling about the delivery of the ”Pencil Eraser”?↓
+<yes>
+<no>
 
-;jpn:◆あ　「タコけしマシン」の↓
-;jpn:　おとどけね？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆あ 「タコけしマシン」の↓
+;jpn: おとどけね?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_UNSOU_TEL_TACO_YES,_UNSOU_TEL_TACO_NO)
 _UNSOU_TEL_TACO_NO;
-◆Ｏｈ，　ｔｈａｔ’ｓ　ｎｏｔ　ｗｈａｔ　ｙｏｕ　ｗａｎｔ？@KEY()↓
+◆Oh, that’s not what you want?@KEY()↓
 
-;jpn:◆あら　ちがうの？@KEY()↓
+;jpn:◆あら ちがうの?@KEY()↓
 @GOTO(_UNSOU_TEL_SEL_MAIN)
 
 _UNSOU_TEL_TACO_YES;
-◆Ｗｅ’ｌｌ　ｓｅｎｄ　ｓｏｍｅｏｎｅ　ｒｉｇｈｔ　ａｗａｙ．@KEY()↓
+◆We’ll send someone right away.@KEY()↓
 
-;jpn:◆それでは　かかりのものが↓
-;jpn:　すぐ　うかがいまーす。@KEY()↓
+;jpn:◆それでは かかりのものが↓
+;jpn: すぐ うかがいまーす。@KEY()↓
 @GOSUB(_SUB_HANGUP_MES)
 @SETF(FLG_DELIVERY_UNSOU_TAKOKESHI)
 @DELIVERY(DELIVERY_UNSOU_TAKOKESHI)
@@ -1758,26 +1758,26 @@ _UNSOU_TEL_TACO_YES;
 』
 
 MSG_UNSOU_TEL_TAKA;
-◆Ｔｈｉｓ　ｉｓ　ａｂｏｕｔ　ｔｈｅ　ｄｅｌｉｖｅｒｙ　ｏｆ　ｔｈｅ　”Ｈａｗｋ　Ｅｙｅ”？↓
-<ｙｅｓ>
-<ｎｏ>
+◆This is about the delivery of the ”Hawk Eye”?↓
+<yes>
+<no>
 
-;jpn:◆あ　「タカのめ」の↓
-;jpn:　おとどけね？↓
-;jpn:　　<はい>　　<いいえ>
+;jpn:◆あ 「タカのめ」の↓
+;jpn: おとどけね?↓
+;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_UNSOU_TEL_TAKA_YES,_UNSOU_TEL_TAKA_NO)
 _UNSOU_TEL_TAKA_NO;
-◆Ｏｈ，　ｔｈａｔ’ｓ　ｎｏｔ　ｗｈａｔ　ｙｏｕ　ｗａｎｔ？@KEY()↓
+◆Oh, that’s not what you want?@KEY()↓
 
-;jpn:◆あら　ちがうの？@KEY()↓
+;jpn:◆あら ちがうの?@KEY()↓
 @GOTO(_UNSOU_TEL_SEL_MAIN)
 
 _UNSOU_TEL_TAKA_YES;
-◆Ｗｅ’ｌｌ　ｓｅｎｄ　ｓｏｍｅｏｎｅ　ｒｉｇｈｔ　ａｗａｙ．@KEY()↓
+◆We’ll send someone right away.@KEY()↓
 
-;jpn:◆それでは　かかりのものが↓
-;jpn:　すぐ　うかがいまーす。@KEY()↓
+;jpn:◆それでは かかりのものが↓
+;jpn: すぐ うかがいまーす。@KEY()↓
 @GOSUB(_SUB_HANGUP_MES)
 @SETF(FLG_DELIVERY_UNSOU_TAKANOME)
 @DELIVERY(DELIVERY_UNSOU_TAKANOME)
@@ -1785,11 +1785,11 @@ _UNSOU_TEL_TAKA_YES;
 』
 ;-------------------------------------------------
 ;
-;マッハピザ（電話）
+;マッハピザ(電話)
 ;
 
 MSG_TEL_PIZZA;
-◆Ｈｅｌｌｏ！　Ｔｈｉｓ　ｉｓ　Ｍａｃｈ　Ｐｉｚｚａ！
+◆Hello! This is Mach Pizza!
 
 ;jpn:◆マッハピザでーす。
 @CHKFGOTO(FLG_WIN_GIEGU,_PIZZA_PHONE_END)
@@ -1798,14 +1798,14 @@ MSG_TEL_PIZZA;
 @CHKFGOTO(FLG_DELIVERY_PIZZA,_PIZZA_NOW_DELIVERY)
 
 _TEL_PIZZA_ORDER
-　　Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｏｒｄｅｒ？@KEY()↓
+  What would you like to order?@KEY()↓
 ←
-;jpn:　ごちゅうもんは？@KEY()↓
+;jpn: ごちゅうもんは?@KEY()↓
 @SAVE_WIN()
 @OPEN(37)
-<ｓｍａｌｌ>
-<ｍｅｄｉｕｍ>
-<ｌａｒｇｅ>
+<small>
+<medium>
+<large>
 
 ;jpn:<スモール>
 ;jpn:<ミディアム>
@@ -1819,90 +1819,90 @@ _TEL_PIZZA_ORDER
 @ONGOTO(_TEL_PIZZA_SMALL,_TEL_PIZZA_MED,_TEL_PIZZA_LARGE)
 
 _PIZZA_NO;				;キャンセル
-◆Ｃａｌｌ　ａｇａｉｎ！@KEY()↓
+◆Call again!@KEY()↓
 
 ;jpn:◆また↓
-;jpn:　おねがいしまーす。@KEY()↓
+;jpn: おねがいしまーす。@KEY()↓
 @GOTO(_TEL_PIZZA_END)
 
-_TEL_PIZZA_MED;				;ミディアム（売り切れ）
-◆Ｓｏｒｒｙ，　ｔｈｅｙ　ａｒｅ　ａｌｌ　ｓｏｌｄ　ｏｕｔ．↓
+_TEL_PIZZA_MED;				;ミディアム(売り切れ)
+◆Sorry, they are all sold out.↓
 
 ;jpn:◆すいません。↓
-;jpn:　いま　うりきれなんです。↓
+;jpn: いま うりきれなんです。↓
 @GOTO(_TEL_PIZZA_ORDER)
 
 _TEL_PIZZA_SMALL;			;スモール
-◆Ｙｏｕ　ｗａｎｔ　ｏｎｅ　ｓｍａｌｌ　ｐｉｚｚａ？↓
+◆You want one small pizza?↓
 
 ;jpn:◆スモールサイズひとつですね。↓
 @GOTO(_TEL_PIZZA_BYE)
 
 _TEL_PIZZA_LARGE;			;ラージ
-◆Ｙｏｕ　ｗａｎｔ　ｏｎｅ　ｌａｒｇｅ　ｐｉｚｚａ？↓
+◆You want one large pizza?↓
 
 ;jpn:◆ラージサイズひとつですね。↓
 @SETF(FLG_PIZZA_SIZE)
 
 _TEL_PIZZA_BYE;
 @SET_REG(0)				;副レジ=GOODS_ID
-　　Ｗｅ’ｌｌ　ｄｅｌｉｖｅｒ　ｉｔ　ｗｉｔｈｉｎ　３　ｍｉｎｕｔｅｓ．@KEY()↓
+  We’ll deliver it within ３ minutes.@KEY()↓
 
-;jpn:　３ぷんいないに　おとどけに↓
-;jpn:　あがりまーす。@KEY()↓
+;jpn: ３ぷんいないに おとどけに↓
+;jpn: あがりまーす。@KEY()↓
 @SETF(FLG_DELIVERY_PIZZA)
 @DELIVERY(DELIVERY_PIZZA)
 @SETF(FLG_SYS_DISTLPT);テレポート禁止
 
 _TEL_PIZZA_END;				;終了
 @SE(SE_se0b_tel_put)
-◆（Ｃｌｉｃｋ！）
+◆(Click!)
 
-;jpn:◆ガチャン　ツー　ツー　ツー
+;jpn:◆ガチャン ツー ツー ツー
 @KEYNP()
 @!
 
 _PIZZA_NOW_DELIVERY;
 @KEY()↓
-◆Ｏｕｒ　ｄｅｌｉｖｅｒｌｙｍｅｎ　ａｒｅ　ｎｏｔ　ａｖａｉｌａｂｌｅ　ｒｉｇｈｔ　ｎｏｗ．@KEY()↓
-◆Ｗｅ　ｃａｎ’ｔ　ｄｅｌｉｖｅｒ　ａｎｙ　ｐｉｚｚａ　ｆｏｒ　ｔｈｅ　ｔｉｍｅ　ｂｅｉｎｇ．@KEY()↓
+◆Our deliverlymen are not available right now.@KEY()↓
+◆We can’t deliver any pizza for the time being.@KEY()↓
 
-;jpn:◆ただいま　じゅうぎょういんが↓
-;jpn:　ではらって　おりますので↓
-;jpn:　はいたつが　できないんですよ。@KEY()↓
+;jpn:◆ただいま じゅうぎょういんが↓
+;jpn: ではらって おりますので↓
+;jpn: はいたつが できないんですよ。@KEY()↓
 @GOTO(_PIZZA_NO)
 
 _PIZZA_PHONE_END;
 @KEY()↓
-◆Ｏｕｒ　ｄｅｌｉｖｅｒｙ　ｍｅｎ　ｇｏｔ　ｔｉｒｅｄ　ａｎｄ　ｑｕｉｔ．@KEY()↓
-◆Ｓｏ，　ｗｅ　ｄｅｃｉｄｅｄ　ｔｏ　ｃｌｏｓｅ　ｔｈｅ　ｓｈｏｐ．@KEY()↓
-◆Ｔｈａｎｋ　ｙｏｕ　ｆｏｒ　ｃｏｎｓｉｓｔｅｎｔｌｙ　ｕｓｉｎｇ　ｕｓ　ｆｏｒ　ａｌｌ　ｏｆ　ｙｏｕｒ　ｐｉｚｚａ　ｎｅｅｄｓ．@KEY()↓
+◆Our delivery men got tired and quit.@KEY()↓
+◆So, we decided to close the shop.@KEY()↓
+◆Thank you for consistently using us for all of your pizza needs.@KEY()↓
 
 ;jpn:◆はいたつがかりが↓
-;jpn:　つかれちゃって↓
-;jpn:　やめちゃいましてね。@KEY()↓
-;jpn:◆いっそ　みせを↓
-;jpn:　たたむことに　したんですよ。@KEY()↓
+;jpn: つかれちゃって↓
+;jpn: やめちゃいましてね。@KEY()↓
+;jpn:◆いっそ みせを↓
+;jpn: たたむことに したんですよ。@KEY()↓
 ;jpn:◆ながいあいだ↓
-;jpn:　ありがとうございました。@WI(20)↓
+;jpn: ありがとうございました。@WI(20)↓
 @SE(SE_se0b_tel_put)
-　　（Ｃｌｉｃｋ！）
+  (Click!)
 
-;jpn:　ガチャン　ツーツーツー
+;jpn: ガチャン ツーツーツー
 @KEYNP()
 』
 ;
-;マッハピザ（届け屋）
+;マッハピザ(届け屋)
 ;
 
 MSG_PIZZA_SEND;
 @GOSUB(MSG_SUB_BGM_PIZZASTART)
 @RESF(FLG_DELIVERY_PIZZA)
-◆Ｈｅｌｌｏ！　Ｍａｃｈ　Ｐｉｚｚａ　ｄｅｌｉｖｅｒｙ！↓
-　　Ｈｅｒｅ　ｉｓ　ｙｏｕｒ　ｐｉｚｚａ　ｐｉｅ，　ｓｉｒ．@KEY()↓
+◆Hello! Mach Pizza delivery!↓
+  Here is your pizza pie, sir.@KEY()↓
 
 ;jpn:◆マッハピザでーす。↓
-;jpn:　ピザを　とどけにきました。@KEY()↓
+;jpn: ピザを とどけにきました。@KEY()↓
 
 _PIZZA_CHK_GOODSFULL;
 @Q_GOODSFULL(PC_ALL)
@@ -1915,20 +1915,20 @@ _PIZZA_MONEY;
 @SET_REG(1)
 @GOODS_TAKE_MONEY(0)			;主レジ=GOODSの値段:副レジ=GOODS_ID
 @XCHG()
-◆Ｔｈａｔ’ｌｌ　ｂｅ　＄@DSP_NUM(0)．↓
-　　Ｙｏｕ　ｈａｖｅ　ｔｈｅ　ｍｏｎｅｙ，ｄｏｎ’ｔ　ｙｏｕ？↓
+◆That’ll be ＄@DSP_NUM(0).↓
+  You have the money,don’t you?↓
 
 ;jpn:◆@DSP_NUM(0)ドルです。↓
 @SAVE_REG()
-;jpn:　おかね　もってますよね？↓
+;jpn: おかね もってますよね?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_PIZZA_MONEY_YES,_PIZZA_MONEY_NO)
 _PIZZA_MONEY_NO;				;キャンセル
-◆Ｉ　ｓｅｅ．↓
-　　Ｃａｌｌ　ｕｓ　ａｇａｉｎ．
+◆I see.↓
+  Call us again.
 
 ;jpn:◆そうですか。↓
-;jpn:　じゃ　また　よろしくー。
+;jpn: じゃ また よろしくー。
 _PIZZA_END;				;終了。
 @KEYNP()
 @CLOSEALL()
@@ -1944,37 +1944,37 @@ _PIZZA_LARGE;				;ラージサイズ時の処理
 _PIZZA_MONEY_YES;
 _PIZZA_CHK;
 @Q_MONEY(0)
-@TRUE_GOTO(_PIZZA_NOMONEY)		;所持金足りる？
+@TRUE_GOTO(_PIZZA_NOMONEY)		;所持金足りる?
 @LOAD_REG()
 @XCHG()
-@Q_GOODSFULL(PC_ALL)			;持ち物いっぱい？
+@Q_GOODSFULL(PC_ALL)			;持ち物いっぱい?
 @FALSE_GOTO(_PIZZA_GOODSFULL)
 @GOODSIN_PLAYER(0,0)			;グッズ欄に
 @LOAD_REG()
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．
+◆Thank you very much.
  
-;jpn:◆はい　たしかに。↓
-;jpn:　ありやと　やんしたー。
+;jpn:◆はい たしかに。↓
+;jpn: ありやと やんしたー。
 @GOTO(_PIZZA_END)
 
 _PIZZA_GOODSFULL;			;持ち物いっぱい。
 @CLRF(FLG_PIZZA_SIZE)			;フラグリセット
-◆Ｏｈ，　ｉｔ　ｌｏｏｋｓ　ｌｉｋｅ　ｙｏｕ　ｃａｎ　ｎｏｔ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ．↓
-　　Ｃａｌｌ　ｕｓ　ａｇａｉｎ　ｓｏｍｅ　ｏｔｈｅｒ　ｔｉｍｅ．
+◆Oh, it looks like you can not carry any more.↓
+  Call us again some other time.
 
-;jpn:◆あれっ　にもつが　いっぱい↓
-;jpn:　みたいですね。↓
-;jpn:　じゃ　また　よろしくー。
+;jpn:◆あれっ にもつが いっぱい↓
+;jpn: みたいですね。↓
+;jpn: じゃ また よろしくー。
 @GOTO(_PIZZA_END)
 
 _PIZZA_NOMONEY;				;所持金不足。
-◆Ｏｈ？　Ｙｏｕ　ａｒｅ　ａ　ｌｉｔｔｌｅ　ｓｈｏｒｔ　ｏｆ　ｃａｓｈ．　　Ｗｅｌｌ，　ｃａｌｌ　ｕｓ　ａｇａｉｎ　ｓｏｍｅ　ｏｔｈｅｒ　ｔｉｍｅ．
+◆Oh? You are a little short of cash.  Well, call us again some other time.
   
-;jpn:◆あれ？　たりないですね。↓
-;jpn:　じゃ　また　よろしくー。
+;jpn:◆あれ? たりないですね。↓
+;jpn: じゃ また よろしくー。
 @GOTO(_PIZZA_END)
 
 MSG_PIZZA_SEND_RETRY_OVER;
@@ -1982,27 +1982,27 @@ MSG_PIZZA_SEND_RETRY_OVER;
 @CLRF(FLG_PIZZA_SIZE)
 @GOSUB(MSG_SUB_ZYUSHIN_CALL)
 @OPEN(1)
-◆Ｈｅｌｌｏ！↓
-　　Ｔｈｉｓ　ｉｓ　Ｍａｃｈ　Ｐｉｚｚａ．↓
-　（ｈｅｅ，ｈａ，ｈｅ，ｈａ）@KEY()↓
-◆．．．．Ｙｏｕ　ｍｕｓｔ　ｂｅ　ａｔ　ｓｏｍｅｗｈｅｒｅ　ｒｅａｌｌｙ　ｓｔｒａｎｇｅ，（ｈｅｅ，ｈａ，ｈｅ，ｈａ）．．．@KEY()↓
-◆Ｉ　ｃｏｕｌｄｎ’ｔ　ｄｅｌｉｖｅｒ　ｔｈｅ　ｐｉｚｚａ．↓
-　　Ｔｈｅ　ｐｉｚｚａ　ｇｏｔ　ｒｅａｌｌｙ　ｃｏｌｄ　ａｎｄ　ｈａｒｄ，　ａｎｄ　ｍｙ　ｌｅｇｓ　ａｒｅ　ｔｉｒｅｄ．．．@KEY()↓
-◆Ｉ　ａｍ　ｇｏｉｎｇ　ｔｏ　ｇｉｖｅ　ｕｐ　ａｎｄ　ｇｏ　ｂａｃｋ．@KEY()↓
-◆．．．Ｉ　ｈｏｐｅ　Ｉ　ｃａｎ　ｆｉｎｄ　ｔｈｅ　ｗａｙ　ｈｏｍｅ．．．↓
-　（ｈｅｅ，ｈａ，ｈｅ，ｈａ）@KEY()
-;jpn:◆もしもーし！↓
-;jpn:　マッハピザでーす。（ハアハア）@KEY()↓
-;jpn:◆どうやら　おきゃくさまが↓
-;jpn:　とんでもない　ところに↓
-;jpn:　いらっしゃるらしくて（ハアハア）@KEY()↓
+◆Hello!↓
+  This is Mach Pizza.↓
+ (hee,ha,he,ha)@KEY()↓
+◆....You must be at somewhere really strange,(hee,ha,he,ha)...@KEY()↓
+◆I couldn’t deliver the pizza.↓
+  The pizza got really cold and hard, and my legs are tired...@KEY()↓
+◆I am going to give up and go back.@KEY()↓
+◆...I hope I can find the way home...↓
+ (hee,ha,he,ha)@KEY()
+;jpn:◆もしもーし!↓
+;jpn: マッハピザでーす。(ハアハア)@KEY()↓
+;jpn:◆どうやら おきゃくさまが↓
+;jpn: とんでもない ところに↓
+;jpn: いらっしゃるらしくて(ハアハア)@KEY()↓
 ;jpn:◆はいたつできませんでした。↓
-;jpn:　ピザは　かちかちになっちゃうし↓
-;jpn:　あしは　くたびれるし‥‥@KEY()↓
-;jpn:◆こんかいは　あきらめて↓
-;jpn:　かえらせていただきます。@KEY()↓
-;jpn:◆‥‥か　かえれるかなぁ。↓
-;jpn:　（ハアハア）@KEY()
+;jpn: ピザは かちかちになっちゃうし↓
+;jpn: あしは くたびれるし‥‥@KEY()↓
+;jpn:◆こんかいは あきらめて↓
+;jpn: かえらせていただきます。@KEY()↓
+;jpn:◆‥‥か かえれるかなぁ。↓
+;jpn: (ハアハア)@KEY()
 @GOSUB(MSG_SUB_ZYUSHIN_PUT)
 ;@CLRF(FLG_SYS_DISTLPT);テレポート許可
 @GOSUB(MSG_SUB_TLPTOK_OTHEREVENT)	;イベント中以外ならテレポート許可
@@ -2014,52 +2014,52 @@ MSG_PIZZA_SEND_RETRY_OVER;
 
 MSG_DP_HENPIN;
 ←
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｒｅｔｕｒｎ　ｓｏｍｅｔｈｉｎｇ？↓
+◆Would you like to return something?↓
 
-;jpn:◆ごへんぴんですか？↓
+;jpn:◆ごへんぴんですか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_DP_HENPIN_YES,_DP_HENPIN_NO1)
 
 _DP_HENPIN_NO1;				;返品しない。
-◆Ｏｈ，　ｔｈａｔ’ｓ　ｇｏｏｄ．@KEY()↓
+◆Oh, that’s good.@KEY()↓
 
-;jpn:◆ああ　よかった。@KEY()↓
+;jpn:◆ああ よかった。@KEY()↓
 _DP_HENPIN_NO2;
-◆Ｐｌｅａｓｅ　ｓｔｏｐ　ｂｙ　ａｇａｉｎ．
+◆Please stop by again.
 
-;jpn:◆これからも　とうデパートを↓
-;jpn:　よろしくおひきたて↓
-;jpn:　くださいませね。@KEY()↓
+;jpn:◆これからも とうデパートを↓
+;jpn: よろしくおひきたて↓
+;jpn: くださいませね。@KEY()↓
 ;jpn:◆うっふん。
 _DP_HENPIN_END;				;終了。
 @KEYNP()
 @!
 
 _DP_HENPIN_YES;				;返品する。
-◆Ｗｈａｔ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｒｅｔｕｒｎ？
+◆What do you want to return?
 
-;jpn:◆なにを　へんぴん？
+;jpn:◆なにを へんぴん?
 _DP_HENPIN_SEL;
 @KEY()
 @WINR_MONEY()
 @GOSUB(MSG_SEL_GOODS)			;グッ選択
 ↓
-@FALSE_GOTO(_DP_HENPIN_NO1)		;キャンセル？
+@FALSE_GOTO(_DP_HENPIN_NO1)		;キャンセル?
 @SAVE_REG()				;主レジ=PLAYER_ID・副レ=GOODSの位置
 @GET_PLAYER_GOODS(0,0)
 @GOODS_SELL_MONEY(0)			;主レジ=GOODS_IDの金額
 @FALSE_GOTO(_DP_HENPIN_UNABLE)
-◆Ｔｈｅ　@DSP_GOODS(0)？↓
-　　Ｗｅ　ｃａｎ　ｇｉｖｅ　ｙｏｕ
-　　ｂａｃｋ　@XCHG()＄@DSP_NUM(0)．@KEY()↓
-◆Ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｄｏ　ｔｈａｔ？↓
+◆The @DSP_GOODS(0)?↓
+  We can give you
+  back @XCHG()＄@DSP_NUM(0).@KEY()↓
+◆Would you like to do that?↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。↓		;グッズ名表示
 ;@XCHG()					;副レジ=GOODS_IDの金額
-;jpn:　@DSP_NUM(0)ドルで↓
-;jpn:　おひきとりしますが‥‥
+;jpn: @DSP_NUM(0)ドルで↓
+;jpn: おひきとりしますが‥‥
 ;@KEY()↓				;売り値表示
-;jpn:◆よろしゅうございますか？↓
+;jpn:◆よろしゅうございますか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_DP_HENPIN_MONEY_YES,_DP_HENPIN_MONEY_NO)
 
@@ -2072,24 +2072,24 @@ _DP_HENPIN_MONEY_YES;			;売る。
 @SE(SE_se76_my_give)
 @LOAD_REG()				;主レ=PLAYER_ID・副レ=GOODSの位置
 @GOODSOUT_PLAYER(0,0)			;アイテム欄から削除。
-◆Ｔｈａｎｋ　ｙｏｕ　ｖｅｒｙ　ｍｕｃｈ．@KEY()↓
+◆Thank you very much.@KEY()↓
 
 ;jpn:◆ありがとうございます。@KEY()↓
 
-_DP_HENPIN_OTHER;			;他に返品は？
-◆Ｄｏ　ｙｏｕ　ｈａｖｅ　ａｎｙｔｈｉｎｇ　ｅｌｓｅ？↓
+_DP_HENPIN_OTHER;			;他に返品は?
+◆Do you have anything else?↓
 
-;jpn:◆ほかにも　ございますか？↓
+;jpn:◆ほかにも ございますか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_DP_HENPIN_YES,_DP_HENPIN_NO2)
 @GOTO(_DP_HENPIN_NO2)
 
 _DP_HENPIN_UNABLE;				;売ることができない。
-◆Ｗｅ’ｒｅ　ｖｅｒｙ　ｓｏｒｒｙ，ｂｕｔ　ｗｅ　ｄｏｎ’ｔ　ｄｅａｌ　ｗｉｔｈ　ｔｈａｔ　ｐｒｏｄｕｃｔ．@KEY()↓
+◆We’re very sorry,but we don’t deal with that product.@KEY()↓
 
 ;jpn:◆おそれいります。↓
-;jpn:　とうてんでは↓
-;jpn:　あつかっておりません。@KEY()↓
+;jpn: とうてんでは↓
+;jpn: あつかっておりません。@KEY()↓
 @GOTO(_DP_HENPIN_OTHER)
 
 
@@ -2098,13 +2098,13 @@ _DP_HENPIN_UNABLE;				;売ることができない。
 ;
 
 MSG_SHOP_HAPPY_AUTOSHOP;
-◆（Ｗｅ　ｔｒｕｓｔ　ｙｏｕ．Ｆｅｅｌ　ｆｒｅｅ　ｔｏ　ｓｈｏｐ　ｈｅｒｅ．）@KEY()↓
-◆Ｗｈａｔ　ｗｏｕｌｄ　ｙｏｕ　ｌｉｋｅ　ｔｏ　ｂｕｙ？@KEY()
+◆(We trust you.Feel free to shop here.)@KEY()↓
+◆What would you like to buy?@KEY()
 
-;jpn:◆（あなたを　しんようします。@WI(20)↓
-;jpn:　ごじゆうに　おかいもの↓
-;jpn:　してください）@KEY()↓
-;jpn:◆なにをかう？@KEY()
+;jpn:◆(あなたを しんようします。@WI(20)↓
+;jpn: ごじゆうに おかいもの↓
+;jpn: してください)@KEY()↓
+;jpn:◆なにをかう?@KEY()
 @WINR_MONEY()
 @DSP_PL()
 @SEL_SHOP_TAKE(SHOP_HAPPY_AUTOSHOP)
@@ -2115,9 +2115,9 @@ _AUTO_X;
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_AUTO_GOODSFULL)
 @SAVE_REG()
-◆Ｈｏｗ　ｍｕｃｈ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｐａｙ？↓
+◆How much do you want to pay?↓
 
-;jpn:◆いくらしはらう？↓
+;jpn:◆いくらしはらう?↓
 @LOC(9,2)
 ＆
 @LOC(4,2)
@@ -2146,11 +2146,11 @@ _AUTO_PAY;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆@DSP_NAME(PC_NESS)　ｐａｉｄ　＄@DSP_NUM(0)　ａｔ　ｔｈｅ　ｓｅｌｆ−ｓｅｒｖｉｃｅ　ｓｔａｎｄ．
+◆@DSP_NAME(PC_NESS) paid ＄@DSP_NUM(0) at the self−service stand.
 
 ;jpn:◆@DSP_NAME(PC_NESS)は↓
-;jpn:　むじんはんばいじょに↓
-;jpn:　@DSP_NUM(0)ドルしはらった。
+;jpn: むじんはんばいじょに↓
+;jpn: @DSP_NUM(0)ドルしはらった。
 @KEYNP()
 _AUTO_GOODSIN;
 @LOAD_REG()
@@ -2166,38 +2166,38 @@ _AUTO_FOUL;
 
 
 _AUTO_NOTTAKE;
-◆@DSP_NAME(PC_NESS)　ｄｅｃｉｄｅｄ　ｎｏｔ　ｔｏ　ｂｕｙ　ａｎｙｔｈｉｎｇ．
+◆@DSP_NAME(PC_NESS) decided not to buy anything.
 
 ;jpn:◆@DSP_NAME(PC_NESS)は↓
-;jpn:　かうのをやめた。
+;jpn: かうのをやめた。
 @KEYNP()
 @!
 
 _AUTO_PAY0;
-◆@DSP_NAME(PC_NESS)　ｄｉｄ　ｎｏｔ　ｐａｙ．
+◆@DSP_NAME(PC_NESS) did not pay.
 
 ;jpn:◆@DSP_NAME(PC_NESS)は↓
-;jpn:　おかねを　はらわなかった。
+;jpn: おかねを はらわなかった。
 @KEYNP()
 @SETF(FLG_HAPPY_AUTOSHOP_FOUL)
 @GOTO(_AUTO_GOODSIN)
 
 _AUTO_GOODSFULL;
-◆@DSP_NAME(PC_NESS)　ｃｏｕｌｄ　ｎｏｔ
-　　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ　ｓｔｕｆｆ．
+◆@DSP_NAME(PC_NESS) could not
+  carry any more stuff.
 
 ;jpn:◆@DSP_NAME(PC_NESS)は↓
-;jpn:　もちものがいっぱいだった。
+;jpn: もちものがいっぱいだった。
 @KEYNP()
 @!
 
 _AUTO_NOMONEY;
-◆@DSP_NAME(PC_NESS)　ｄｉｄ　ｎｏｔ　ｈａｖｅ
-　　ｔｈａｔ　ｍｕｃｈ　ｍｏｎｅｙ．
+◆@DSP_NAME(PC_NESS) did not have
+  that much money.
 
 ;jpn:◆@DSP_NAME(PC_NESS)は↓
-;jpn:　そんなにおかねを↓
-;jpn:　もっていなかった。
+;jpn: そんなにおかねを↓
+;jpn: もっていなかった。
 @KEYNP()
 @!
 
@@ -2268,60 +2268,60 @@ MSG_DSRT_BENTOU_WAGON;
 
 MSG_SUB_GUMI_BUTUBUTU;
 @CHKFGOTO(FLG_GUMI_7_BOOK,_BUTUBUTU_AFTER)
-◆Ｉ　ｗｏｕｌｄ　ｌｉｋｅ　ｔｈｅ　@DSP_GOODS(GDS_TOOL_LIFE_HORN)．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｇｉｖｅ　ｍｅ↓
-　　ｔｈｅ　@DSP_GOODS(GDS_TOOL_LIFE_HORN)，@KEY()↓
-◆Ｉ’ｌｌ　ｇｉｖｅ　ｙｏｕ　ｓｏｍｅｔｈｉｎｇ　ｉｎ　ｒｅｔｕｒｎ．@KEY()↓
-◆Ｌｏｏｋ　ａｔ　ｍｙ　ｌｉｓｔ．
-;　<ｐｏｏｒ　ｑｕａｌｉｔｉｙ　ｂｒｅａｄ>
-;　<ｓｉｍｐｌｅ　ｙｏｇｕｌｔ>
-;　<ｐｏｏｒ　ｑｕａｌｉｔｉｙ　ｂｒｅａｄ>
-;　<ｓｐｉｃｙ　ｊｅｒｋｅｙ>
-;　<ｄｒａｇｏｎ　ｐｏｗｄｅｒ>
-;　<ｍａｇｉｃａｌ　ｐｏｗｅｒ　ｓｅａｌｉｎｇ　ｃｏｉｎ>
-;　　ｎｏｔｅ：　ｔｈｉｓ　ｉｓ　ｏｎｅ　ｏｆ　ｔｈｅ　ｄｅｆｅｎｓｅ　ｇｏｏｄｓ．
-;　<ｔｈｅ　ｂｅｓｔ　ｂａｔ>
+◆I would like the @DSP_GOODS(GDS_TOOL_LIFE_HORN).@KEY()↓
+◆If you give me↓
+  the @DSP_GOODS(GDS_TOOL_LIFE_HORN),@KEY()↓
+◆I’ll give you something in return.@KEY()↓
+◆Look at my list.
+; <poor qualitiy bread>
+; <simple yogult>
+; <poor qualitiy bread>
+; <spicy jerkey>
+; <dragon powder>
+; <magical power sealing coin>
+;  note： this is one of the defense goods.
+; <the best bat>
  
 ;jpn:◆おれ↓
-　@DSP_GOODS(GDS_TOOL_LIFE_HORN)↓
-;jpn:　ほしい。@KEY()↓
+ @DSP_GOODS(GDS_TOOL_LIFE_HORN)↓
+;jpn: ほしい。@KEY()↓
 ◆@DSP_GOODS(GDS_TOOL_LIFE_HORN)↓
-;jpn:　くれれば@KEY()↓
-;jpn:◆おれいに　ものやる。@KEY()↓
-;jpn:◆やるもの　リスト
-;jpn:　みろ。@KEY()
+;jpn: くれれば@KEY()↓
+;jpn:◆おれいに ものやる。@KEY()↓
+;jpn:◆やるもの リスト
+;jpn: みろ。@KEY()
 @OPEN(7)
 @CHKFGOTO(FLG_GUMI_1_BOOK,_BUTUBUTU_GOODS2)
-<Ｐｌａｉｎ　ｒｏｌｌ>
+<Plain roll>
 
 ;jpn:<そまつなパン>
 _BUTUBUTU_GOODS2;
 @CHKFGOTO(FLG_GUMI_2_BOOK,_BUTUBUTU_GOODS3)
-<Ｐｌａｉｎ　ｙｏｇｕｒｔ>
+<Plain yogurt>
 
 ;jpn:<そぼくなヨーグルト>
 _BUTUBUTU_GOODS3;
 @CHKFGOTO(FLG_GUMI_3_BOOK,_BUTUBUTU_GOODS4)
-<Ｐｌａｉｎ　ｒｏｌｌ>
+<Plain roll>
 
 ;jpn:<そまつなパン>
 _BUTUBUTU_GOODS4;
 @CHKFGOTO(FLG_GUMI_4_BOOK,_BUTUBUTU_GOODS5)
-<ｓｐｉｃｙ　ｊｅｒｋｙ>
+<spicy jerky>
 
 ;jpn:<スパイシーなほしにく>
 _BUTUBUTU_GOODS5;
 @CHKFGOTO(FLG_GUMI_5_BOOK,_BUTUBUTU_GOODS6)
-<Ｄｒａｇｏｎ　Ｐｏｗｄｅｒ>
+<Dragon Powder>
 
 ;jpn:<ドラゴンパウダー>
 _BUTUBUTU_GOODS6;
 @CHKFGOTO(FLG_GUMI_6_BOOK,_BUTUBUTU_GOODS7)
-<Ｔａｌｉｓｍａｎ　ｃｏｉｎ>
+<Talisman coin>
 
 ;jpn:<まふうじのコイン>
 _BUTUBUTU_GOODS7;
-<Ａｌｌ−Ｓｔａｒ　ｂａｔ>
+<All−Star bat>
 
 ;jpn:<さいこうのバット>
 @DSP_ITEML(1)
@@ -2329,11 +2329,11 @@ _BUTUBUTU_GOODS7;
 @CLOSE()
 @SELECT_WIN(1)
 ←
-◆Ｗｉｌｌ　ｙｏｕ　ｇｉｖｅ　ｍｅ↓
-　　ｔｈｅ　@DSP_GOODS(GDS_TOOL_LIFE_HORN)？@KEY()
+◆Will you give me↓
+  the @DSP_GOODS(GDS_TOOL_LIFE_HORN)?@KEY()
 
 ;◆@DSP_GOODS(GDS_TOOL_LIFE_HORN)↓
-;jpn:　くれるか？@KEY()
+;jpn: くれるか?@KEY()
 @GOSUB(MSG_SEL_GOODS)
 @FALSE_GOTO(_BUTUBUTU_NO)
 @SAVE_REG()
@@ -2346,15 +2346,15 @@ _BUTUBUTU_GOODS7;
 @GOSUB(_SUB_BUTUBUTU_SELGOODS)
 @SET_REG(1)
 ←
-◆Ｏｋａｙ．↓
-　　Ｉ　ｇｉｖｅ　ｙｏｕ　ｔｈｅ　@DSP_GOODS(0)．@KEY()↓
-◆Ｙｏｕ　ｈａｐｐｙ．↓
-　　Ｉ　ｈａｐｐｙ．@KEY()
+◆Okay.↓
+  I give you the @DSP_GOODS(0).@KEY()↓
+◆You happy.↓
+  I happy.@KEY()
  
 ;jpn:◆よし。↓
-;jpn:　@DSP_GOODS(0)やる。@KEY()↓
-;jpn:◆うれしい　おまえ。↓
-;jpn:　うれしい　おれ。@KEY()
+;jpn: @DSP_GOODS(0)やる。@KEY()↓
+;jpn:◆うれしい おまえ。↓
+;jpn: うれしい おれ。@KEY()
 ←
 @Q_GOODSFULL(PC_ALL)
 @SAVE_REG()
@@ -2364,28 +2364,28 @@ _BUTUBUTU_GOODS7;
 @!
 _BUTUBUTU_NO;
 ←
-◆Ｙｏｕ　ｎｏｔ　ｗａｎｔ？　Ｉｔ　Ｏｋａｙ．↓
-　　Ｃｏｍｅ　ａｇａｉｎ．
+◆You not want? It Okay.↓
+  Come again.
 
-;jpn:◆いやなら　いいんだ。↓
-;jpn:　またこい。
+;jpn:◆いやなら いいんだ。↓
+;jpn: またこい。
 @KEYNP()
 @!
 _BUTUBUTU_MISS;
 ←
-◆Ｔｈａｔ　ｎｏｔ　ｔｈｅ　ｏｎｅ．
+◆That not the one.
  
-;jpn:◆それ　ちがう。
+;jpn:◆それ ちがう。
 @KEYNP()
 @!
 _BUTUBUTU_AFTER;
-◆Ｍｏｒｅ　@DSP_GOODS(GDS_TOOL_LIFE_HORN)？@KEY()↓
-◆Ｉ　ｓａｔｉｓｆｉｅｄ．@KEY()↓
-◆Ｓｅｅ　ｙａ！
+◆More @DSP_GOODS(GDS_TOOL_LIFE_HORN)?@KEY()↓
+◆I satisfied.@KEY()↓
+◆See ya!
  
 ;◆@DSP_GOODS(GDS_TOOL_LIFE_HORN)↓
-;jpn:　たまった。@KEY()↓
-;jpn:◆まんぞくした　おれ。@KEY()↓
+;jpn: たまった。@KEY()↓
+;jpn:◆まんぞくした おれ。@KEY()↓
 ;jpn:◆じゃあな。
 @KEYNP()
 @!
@@ -2428,43 +2428,43 @@ _BUTUBUTU_SELGOODS_7;
 
 ;魔境のキャッシュディスペンサー男
 MSG_SUB_MAKYO_CDMAN;
-◆Ｓｈｈｈｈｈ！　Ｂｅ　ｑｕｉｅｔ！↓
-　　Ｉ　ｌｏｏｋ　ｖｅｒｙ　ｉｍｐｏｒｔａｎｔ，　ｂｕｔ　Ｉ’ｍ　ｎｏｔ　ｒｅａｌｌｙ．．．．．．．@KEY()↓
-◆Ｉ’ｍ　ａ　ｃａｓｈ　ｄｉｓｐｅｎｓｅｒ　ｍａｎ．@KEY()↓
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｗｉｔｈｄｒａｗ　ｃａｓｈ．．．．．@KEY()↓
-◆Ｉ’ｌｌ　ｃｈａｒｇｅ　ｙｏｕ　ａ　ｈａｎｄｌｉｎｇ　ｆｅｅ，@KEY()↓
-◆ｗｈｉｃｈ　ｉｓ　ｔｈｅ　ｓａｍｅ　ａｍｏｕｎｔ　ａｓ　ｙｏｕｒ　ｗｉｔｈｄｒａｗａｌ．@KEY()↓
-◆Ｓｏ，　ｄｏ　ｙｏｕ　ｗａｎｔ　ａ　ｗｉｔｈｄｒａｗａｌ？↓
-;jpn:◆しっ！　しずかに！@WI(20)↓
-;jpn:　わたしは　じゅうようそうだけど↓
-;jpn:　そうでもない‥‥@KEY()↓
+◆Shhhhh! Be quiet!↓
+  I look very important, but I’m not really.......@KEY()↓
+◆I’m a cash dispenser man.@KEY()↓
+◆If you want to withdraw cash.....@KEY()↓
+◆I’ll charge you a handling fee,@KEY()↓
+◆which is the same amount as your withdrawal.@KEY()↓
+◆So, do you want a withdrawal?↓
+;jpn:◆しっ! しずかに!@WI(20)↓
+;jpn: わたしは じゅうようそうだけど↓
+;jpn: そうでもない‥‥@KEY()↓
 ;jpn:◆キャッシュディスペンサーおとこ↓
-;jpn:　‥‥です。@KEY()↓
+;jpn: ‥‥です。@KEY()↓
 ;jpn:◆‥‥ひきだすばあい↓
-;jpn:　あつかいきんがくと@KEY()↓
+;jpn: あつかいきんがくと@KEY()↓
 ;jpn:◆どうがくの↓
-;jpn:　てすうりょうを↓
-;jpn:　いただきますが‥‥@KEY()↓
-;jpn:◆ごりように　なりますか？↓
+;jpn: てすうりょうを↓
+;jpn: いただきますが‥‥@KEY()↓
+;jpn:◆ごりように なりますか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_CDMAN_YES,_CDMAN_NO)
 _CDMAN_NO;
 ←
-◆．．．．Ｉ’ｌｌ　ｂｅ　ｈｅｒｅ，　ｓｏ．．．↓
-　　Ｃｏｍｅ　ｂａｃｋ　ａｎｙ　ｔｉｍｅ．
+◆....I’ll be here, so...↓
+  Come back any time.
 
-;jpn:◆‥‥わたしは　いつも↓
-;jpn:　ここにいますから‥‥@WI(15)↓
-;jpn:　いつでも　どうぞ。
+;jpn:◆‥‥わたしは いつも↓
+;jpn: ここにいますから‥‥@WI(15)↓
+;jpn: いつでも どうぞ。
 @KEYNP()
 @!
 _CDMAN_YES;
-◆Ｙｏｕ　ｈａｖｅ　＄@DSP_STS(STS_PARTY_BANK_MONEY)　ｉｎ　ｙｏｕｒ　ａｃｃｏｕｎｔ　ｎｏｗ．↓
-<Ｗｉｔｈｄｒａｗａｌ>
-<Ｄｅｐｏｓｉｔ>
+◆You have ＄@DSP_STS(STS_PARTY_BANK_MONEY) in your account now.↓
+<Withdrawal>
+<Deposit>
 
-;jpn:◆いま　ぎんこうよきんは↓
-;jpn:　@DSP_STS(STS_PARTY_BANK_MONEY)ドルです。↓
+;jpn:◆いま ぎんこうよきんは↓
+;jpn: @DSP_STS(STS_PARTY_BANK_MONEY)ドルです。↓
 ;jpn:<ひきだす>
 ;jpn:<あずける>
 @DSP_ITEM(2)
@@ -2483,11 +2483,11 @@ _CDMAN_AZU;
 @WINR_MONEY()
 @SE(SE_se76_my_give)
 @WI(10)
-◆Ｉ　ｈａｖｅ　ｒｅｇｉｓｔｅｒｅｄ　ｙｏｕｒ　ｄｅｐｏｓｉｔ↓
-　　ｏｆ　＄@DSP_NUM(0)．@KEY()↓
+◆I have registered your deposit↓
+  of ＄@DSP_NUM(0).@KEY()↓
 
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
-;jpn:　たしかにおあずかりしました。
+;jpn: たしかにおあずかりしました。
 ;@KEY()↓
 @GOTO(_CDMAN_THANKS)
 
@@ -2504,18 +2504,18 @@ _CDMAN_HIKI;
 @DRAW_MONEY_BANK(0)
 @Q_BANK_MONEY(0)
 @TRUE_GOTO(_CDMAN_HIKI_NOMONEY_2)
-◆Ｙｏｕｒ　ｃａｓｈ　ｗｉｔｈｄｒａｗａｌ↓
-　　ｉｓ　＄@DSP_NUM(0)，@KEY()↓
-◆ａｎｄ　ｔｈｅ　ｈａｎｄｌｉｎｇ　ｃｈａｒｇｅ↓
-　　ｉｓ　＄@DSP_NUM(0)．@KEY()↓
-◆Ｉ　ｗｉｌｌ　ｓｕｂｔｒａｃｔ　ｔｈｉｓ　ａｍｏｕｎｔ　ｆｒｏｍ　ｙｏｕｒ　ａｃｃｏｕｎｔ．@KEY()↓
-◆Ｉｓ　ｔｈａｔ　ｏｋａｙ　ｗｉｔｈ　ｙｏｕ？↓
+◆Your cash withdrawal↓
+  is ＄@DSP_NUM(0),@KEY()↓
+◆and the handling charge↓
+  is ＄@DSP_NUM(0).@KEY()↓
+◆I will subtract this amount from your account.@KEY()↓
+◆Is that okay with you?↓
 ;jpn:◆おわたしするぶんが↓
-;jpn:　　@DSP_NUM(0)ドル@KEY()↓
+;jpn:  @DSP_NUM(0)ドル@KEY()↓
 ;jpn:◆てすうりょうが↓
-;jpn:　　@DSP_NUM(0)ドル@KEY()↓
-;jpn:◆これだけ　ひきだしますが↓
-;jpn:　よろしいですか？↓
+;jpn:  @DSP_NUM(0)ドル@KEY()↓
+;jpn:◆これだけ ひきだしますが↓
+;jpn: よろしいですか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_CDMAN_HIKI_YES,_CDMAN_HIKI_NO)
 _CDMAN_HIKI_NO;
@@ -2528,149 +2528,149 @@ _CDMAN_HIKI_YES;
 @WINR_MONEY()
 @SE(SE_se74_my_get)
 @WI(10)
-◆Ｙｏｕｒ　ｗｉｔｈｄｒａｗａｌ↓
-　　ｉｓ　＄@DSP_NUM(0)．@KEY()
+◆Your withdrawal↓
+  is ＄@DSP_NUM(0).@KEY()
 
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
-;jpn:　たしかにおひきだししました。
+;jpn: たしかにおひきだししました。
 ;@KEY()↓
 @GOTO(_CDMAN_THANKS)
 
 
 _CDMAN_THANKS;
 ←
-◆Ｏｋａｙ．．．@KEY()↓
-◆Ｐｌｅａｓｅ　ｄｏｎ’ｔ　ｂｏｔｈｅｒ　ｙｏｕｒｓｅｌｆ　ｗｉｔｈ　ｍｅ．．．ｙｏｕ　ｓｈｏｕｌｄ　ｃｏｎｔｉｎｕｅ　ｙｏｕｒ　ｊｏｕｒｎｅｙ．
+◆Okay...@KEY()↓
+◆Please don’t bother yourself with me...you should continue your journey.
 
 ;jpn:◆じゃ‥‥↓
-;jpn:　わたしのことは　わすれて↓
-;jpn:　たびを　おつづけください。
+;jpn: わたしのことは わすれて↓
+;jpn: たびを おつづけください。
 @KEYNP()
 @!
 
 _CDMAN_AZU_FULL;
 ←
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｄｅｐｏｓｉｔ　ａｎｙ　ｍｏｒｅ　ｍｏｎｅｙ．@KEY()↓
+◆I don’t think you can deposit any more money.@KEY()↓
 
 ;jpn:◆これいじょうは↓
-;jpn:　おかねを　あずけられない↓
-;jpn:　みたいですね。@KEY()↓
+;jpn: おかねを あずけられない↓
+;jpn: みたいですね。@KEY()↓
 @GOTO(_CDMAN_NO)
 _CDMAN_AZU_NOMONEY;
 ←
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｈａｖｅ　ｔｈａｔ　ｍｕｃｈ　ｍｏｎｅｙ．@KEY()↓
+◆I don’t think you have that much money.@KEY()↓
 
-;jpn:◆あなたは　そんなに↓
-;jpn:　おかねを　もっていない↓
-;jpn:　みたいですが‥‥@KEY()↓
+;jpn:◆あなたは そんなに↓
+;jpn: おかねを もっていない↓
+;jpn: みたいですが‥‥@KEY()↓
 @GOTO(_CDMAN_AZU)
 _CDMAN_HIKI_EMPTY;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｈａｖｅ　ａｎｙ　ｓａｖｉｎｇｓ　ｉｎ　ｔｈｅ　ｂａｎｋ．@KEY()
+◆I don’t think you have any savings in the bank.@KEY()
 
-;jpn:◆あなたは　ぎんこうに↓
-;jpn:　よきんをして　おられない↓
-;jpn:　みたいですが‥‥@KEY()
+;jpn:◆あなたは ぎんこうに↓
+;jpn: よきんをして おられない↓
+;jpn: みたいですが‥‥@KEY()
 @GOTO(_CDMAN_NO)
 _CDMAN_HIKI_MAX;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｗｉｔｈｄｒａｗ　ａｎｙ　ｍｏｒｅ　ｍｏｎｅｙ．@KEY()↓
+◆I don’t think you can withdraw any more money.@KEY()↓
 
-;jpn:◆あなたは　これいじょう↓
-;jpn:　おかねをひきだせない↓
-;jpn:　みたいですが‥‥@KEY()↓
+;jpn:◆あなたは これいじょう↓
+;jpn: おかねをひきだせない↓
+;jpn: みたいですが‥‥@KEY()↓
 @GOTO(_CDMAN_NO)
 _CDMAN_HIKI_NOMONEY;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｈａｖｅ　ｔｈａｔ　ｍｕｃｈ　ｍｏｎｅｙ　ｉｎ　ｙｏｕｒ　ａｃｃｏｕｎｔ．@KEY()↓
+◆I don’t think you have that much money in your account.@KEY()↓
 
-;jpn:◆あなたは　そんなに↓
-;jpn:　ぎんこうに　あずけておられない↓
-;jpn:　みたいですが‥‥@KEY()↓
+;jpn:◆あなたは そんなに↓
+;jpn: ぎんこうに あずけておられない↓
+;jpn: みたいですが‥‥@KEY()↓
 @GOTO(_CDMAN_HIKI)
 _CDMAN_HIKI_NOMONEY_2;
 @DEPOSIT_MONEY_BANK(0)
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｈａｖｅ　ｅｎｏｕｇｈ　ｍｏｎｅｙ　ｆｏｒ　ｍｙ　ｈａｎｄｌｉｎｇ　ｆｅｅ．@KEY()↓
+◆I don’t think you have enough money for my handling fee.@KEY()↓
 
 ;jpn:◆わたしのぶんが↓
-;jpn:　たりないみたい↓
-;jpn:　なんですが‥‥@KEY()↓
+;jpn: たりないみたい↓
+;jpn: なんですが‥‥@KEY()↓
 @GOTO(_CDMAN_HIKI)
 
 
 _CDMAN_AZU_INPUT;
 ←
-◆Ｈｏｗ　ｍｕｃｈ　ｗｉｌｌ　ｙｏｕ　ｄｅｐｏｓｉｔ？↓
+◆How much will you deposit?↓
 
-;jpn:◆いくらあずけますか？↓
+;jpn:◆いくらあずけますか?↓
 @GOSUB(_CD_INPUT_2)
 @!
 _CDMAN_HIKI_INPUT;
 ←
-◆Ｈｏｗ　ｍｕｃｈ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｗｉｔｈｄｒａｗ？↓
+◆How much do you want to withdraw?↓
 
-;jpn:◆いくらひきだしますか？↓
+;jpn:◆いくらひきだしますか?↓
 @GOSUB(_CD_INPUT_2)
 @!
-　　
+  
 
 ;キャッシュディスペンサー機能の地底グミ
-;外国留学経験者？
+;外国留学経験者?
 MSG_SUB_DKFD_EGO;
 @CHKFGOTO(FLG_TEMP_1,_EGO_TMP)
 @SETF(FLG_TEMP_1)
-◆Ｙｏｕ’ｒｅ　ａ　ｆｏｒｅｉｇｎｅｒ，　ａｒｅｎ’ｔ　ｙｏｕ？@KEY()↓
-◆Ｉ　ａｍ　ａ　ｗｏｒｌｄ−ｗｉｓｅ　Ｔｅｎｄａ．@KEY()↓
-◆Ｉ　ｗａｓ　ａｎ　ｅｘｃｈａｎｇｅ　ｓｔｕｄｅｎｔ　ｗｈｏ　ｔｒａｖｅｌｅｄ　ｔｏ　ａ　ｃｏｕｎｔｒｙ@KEY()↓
-◆ｔｈａｔ　ｉｓ　ｋｎｏｗｎ　ａｓ　ａｎ　ｅｃｏｎｏｍｉｃ　ｓｕｐｅｒｐｏｗｅｒ．@KEY()↓
-◆Ｍｙ　ｎａｍｅ　ｉｓ　Ａｙ−ｇｏ　Ｓｔｉｋｋｅ．@KEY()↓
-◆Ｌｅｔ　ｍｅ　ｋｎｏｗ　ｉｆ　Ｉ　ｃａｎ　ｄｏ　ａｎｙｔｈｉｎｇ　ｆｏｒ　ｙｏｕ．@KEY()↓
+◆You’re a foreigner, aren’t you?@KEY()↓
+◆I am a world−wise Tenda.@KEY()↓
+◆I was an exchange student who traveled to a country@KEY()↓
+◆that is known as an economic superpower.@KEY()↓
+◆My name is Ay−go Stikke.@KEY()↓
+◆Let me know if I can do anything for you.@KEY()↓
 
-;jpn:◆がいこくの　かたですね？@KEY()↓
-;jpn:◆ボクは　あるけいざいたいこくに↓
-;jpn:　りゅうがく　けいけんのある↓
-;jpn:　はなしのわかる　グミです。@KEY()↓
-;jpn:◆なまえは　エーゴ・ステッキです。@KEY()↓
-;jpn:◆おやくにたてることが　あったら↓
-;jpn:　いつでも　いってください。@KEY()↓
+;jpn:◆がいこくの かたですね?@KEY()↓
+;jpn:◆ボクは あるけいざいたいこくに↓
+;jpn: りゅうがく けいけんのある↓
+;jpn: はなしのわかる グミです。@KEY()↓
+;jpn:◆なまえは エーゴ・ステッキです。@KEY()↓
+;jpn:◆おやくにたてることが あったら↓
+;jpn: いつでも いってください。@KEY()↓
 _EGO_1;
-◆Ｓｈａｌｌ　Ｉ　ｌｏａｎ　ｙｏｕ　ｓｏｍｅ　ｍｏｎｅｙ？↓
+◆Shall I loan you some money?↓
 
 ;jpn:◆おかねを↓
-;jpn:　ごようだて　しましょうか？@KEY()↓
+;jpn: ごようだて しましょうか?@KEY()↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_EGO_YES_1,_EGO_NO_1)
 _EGO_NO_1;
-◆Ｉ　ｄｏｎ’ｔ　ｆｅｅｌ　ｓｔｒａｎｇｅ　ａｂｏｕｔ　ｉｔ　ａｔ　ａｌｌ．↓
-　　Ｐｌｅａｓｅ　ａｓｋ　ｍｅ　ａｎｙ　ｔｉｍｅ．
+◆I don’t feel strange about it at all.↓
+  Please ask me any time.
 
 ;jpn:◆わたしは↓
-;jpn:　きをわるくしたりなんかしません。@WI(20)↓
-;jpn:　また　いつでも　どうぞ。
+;jpn: きをわるくしたりなんかしません。@WI(20)↓
+;jpn: また いつでも どうぞ。
 @KEYNP()
 @!
 _EGO_YES_1;
-◆Ｉｆ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｗｉｔｈｄｒａｗ．．．．．@KEY()↓
-◆Ｉ　ｗｉｌｌ　ｃｈａｒｇｅ　ｙｏｕ　ａ　ｈａｎｄｌｉｎｇ　ｆｅｅ@KEY()↓
-◆ｔｈａｔ　ｉｓ　ｅｑｕａｌ　ｔｏ　ｔｈｅ　ａｍｏｕｎｔ　ｏｆ　ｙｏｕｒ　ｗｉｔｈｄｒａｗａｌ．@KEY()↓
-◆Ｉｓ　ｔｈａｔ　ｏｋａｙ　ｗｉｔｈ　ｙｏｕ？↓
+◆If you want to withdraw.....@KEY()↓
+◆I will charge you a handling fee@KEY()↓
+◆that is equal to the amount of your withdrawal.@KEY()↓
+◆Is that okay with you?↓
 ;jpn:◆おかねのおひきだしには↓
-;jpn:　あつかいきんがくと　どうがくの↓
-;jpn:　てすうりょうを　いただきますが@KEY()↓
-;jpn:◆よろしいですね？↓
+;jpn: あつかいきんがくと どうがくの↓
+;jpn: てすうりょうを いただきますが@KEY()↓
+;jpn:◆よろしいですね?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_EGO_YES_2,_EGO_NO_2)
 _EGO_NO_2;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ’ｖｅ　ｅｖｅｒ　ｒｅａｌｌｙ　ｇｏｔｔｅｎ　ｉｎｔｏ　ｂａｄ　ｔｒｏｕｂｌｅ．
+◆I don’t think you’ve ever really gotten into bad trouble.
 
-;jpn:◆まだ　ほんとうに　このせかいで↓
-;jpn:　こまっては　いないようですね。
+;jpn:◆まだ ほんとうに このせかいで↓
+;jpn: こまっては いないようですね。
 @KEYNP()
 @!
 _EGO_YES_2;
-◆Ｙｏｕ　ｈａｖｅ　＄@DSP_STS(STS_PARTY_BANK_MONEY)　ｉｎ　ｙｏｕｒ　ａｃｃｏｕｎｔ　ｎｏｗ．↓
-<Ｗｉｔｈｄｒａｗａｌ>
-<Ｄｅｐｏｓｉｔ>
+◆You have ＄@DSP_STS(STS_PARTY_BANK_MONEY) in your account now.↓
+<Withdrawal>
+<Deposit>
 
 ;jpn:◆あなたのぎんこうよきんは↓
-;jpn:　いま@DSP_STS(STS_PARTY_BANK_MONEY)ドルです。↓
+;jpn: いま@DSP_STS(STS_PARTY_BANK_MONEY)ドルです。↓
 ;jpn:<ひきだす>
 ;jpn:<あずける>
 @DSP_ITEM(2)
@@ -2690,11 +2690,11 @@ _EGO_AZU;
 @WINR_MONEY()
 @SE(SE_se76_my_give)
 @WI(10)
-◆Ｉ　ｈａｖｅ　ｒｅｇｉｓｔｅｒｅｄ　ｙｏｕｒ　ｄｅｐｏｓｉｔ↓
-　　ｏｆ　＄@DSP_NUM(0)．@KEY()↓
+◆I have registered your deposit↓
+  of ＄@DSP_NUM(0).@KEY()↓
     
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
-;jpn:　たしかにおあずかりしました。
+;jpn: たしかにおあずかりしました。
 ;@KEY()↓
 @GOTO(_EGO_THANKS)
 
@@ -2711,18 +2711,18 @@ _EGO_HIKI;
 @DRAW_MONEY_BANK(0)
 @Q_BANK_MONEY(0)
 @TRUE_GOTO(_EGO_HIKI_NOMONEY_2)
-◆Ｙｏｕｒ　ｗｉｔｈｄｒａｗａｌ↓
-　　ｉｓ　＄@DSP_NUM(0)，@KEY()↓
-◆ａｎｄ　ｔｈｅ　ｈａｎｄｌｉｎｇ　ｆｅｅ↓
-　　ｉｓ　＄@DSP_NUM(0)．@KEY()↓
-◆Ｉｓ　ｉｔ　ｏｋａｙ　ｉｆ　Ｉ　ｓｕｂｔｒａｃｔ　ｔｈｉｓ　ａｍｏｕｎｔ　ｆｒｏｍ　ｙｏｕｒ　ａｃｃｏｕｎｔ？↓
+◆Your withdrawal↓
+  is ＄@DSP_NUM(0),@KEY()↓
+◆and the handling fee↓
+  is ＄@DSP_NUM(0).@KEY()↓
+◆Is it okay if I subtract this amount from your account?↓
 
 ;jpn:◆おわたしするぶんが↓
-;jpn:　　@DSP_NUM(0)ドル@KEY()↓
+;jpn:  @DSP_NUM(0)ドル@KEY()↓
 ;jpn:◆てすうりょうが↓
-;jpn:　　@DSP_NUM(0)ドル@KEY()↓
-;jpn:◆これだけ　ひきだしますが↓
-;jpn:　いいですか？↓
+;jpn:  @DSP_NUM(0)ドル@KEY()↓
+;jpn:◆これだけ ひきだしますが↓
+;jpn: いいですか?↓
 @GOSUB(MSG_SUB_YESNO)
 @SELGOTO(_EGO_HIKI_YES,_EGO_HIKI_NO)
 _EGO_HIKI_NO;
@@ -2735,81 +2735,81 @@ _EGO_HIKI_YES;
 @WINR_MONEY()
 @SE(SE_se74_my_get)
 @WI(10)
-◆Ｙｏｕｒ　ｗｉｔｈｄｒａｗａｌ↓
-　ｉｓ　＄@DSP_NUM(0)．@KEY()↓
+◆Your withdrawal↓
+ is ＄@DSP_NUM(0).@KEY()↓
 
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
-;jpn:　たしかにおひきだししました。
+;jpn: たしかにおひきだししました。
 ;@KEY()↓
 @GOTO(_EGO_THANKS)
 
 _EGO_THANKS;
 ←
-◆Ｉｔ　ｗａｓ　ａ　ｖｅｒｙ　ｇｏｏｄ　ｏｐｐｏｒｔｕｎｉｔｙ　ｆｏｒ　ｔｈｅ　ｂｏｔｈ　ｏｆ　ｕｓ．↓
-　　Ｐｌｅａｓｅ　ｃｏｍｅ　ａｇａｉｎ．
+◆It was a very good opportunity for the both of us.↓
+  Please come again.
 
-;jpn:◆おたがいに　とてもいい↓
-;jpn:　チャンスでしたね。@WI(20)↓
-;jpn:　また　よろしく　おねがいします。
+;jpn:◆おたがいに とてもいい↓
+;jpn: チャンスでしたね。@WI(20)↓
+;jpn: また よろしく おねがいします。
 @KEYNP()
 』
 
 _EGO_AZU_FULL;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｄｅｐｏｓｉｔ　ａｎｙ　ｍｏｒｅ　ｍｏｎｅｙ．@KEY()↓
+◆I don’t think you can deposit any more money.@KEY()↓
 
 ;jpn:◆これいじょう↓
-;jpn:　あずけられないみたいですね。@KEY()↓
+;jpn: あずけられないみたいですね。@KEY()↓
 @GOTO(_EGO_NO_1)
 _EGO_AZU_NOMONEY;
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｈａｖｅ　ｔｈａｔ　ｍｕｃｈ　ｍｏｎｅｙ．@KEY()↓
+◆I don’t think you have that much money.@KEY()↓
 
-;jpn:◆あなたは　そんなに↓
-;jpn:　おかねを　もっていませんよ。@KEY()↓
+;jpn:◆あなたは そんなに↓
+;jpn: おかねを もっていませんよ。@KEY()↓
 @GOTO(_EGO_AZU)
 _EGO_HIKI_EMPTY;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ａｎｙ　ｍｏｎｅｙ　ｉｎ　ｙｏｕｒ　ａｃｃｏｕｎｔ．@KEY()↓
+◆You don’t have any money in your account.@KEY()↓
 
-;jpn:◆あなたは　まったく↓
-;jpn:　ちょきんをしていませんね。@KEY()↓
+;jpn:◆あなたは まったく↓
+;jpn: ちょきんをしていませんね。@KEY()↓
 @GOTO(_EGO_NO_1)
 _EGO_HIKI_MAX;
-◆Ｉ　ｔｈｉｎｋ　ｉｔ’ｓ　ｉｍｐｏｓｓｉｂｌｅ　ｆｏｒ　ｙｏｕ　ｔｏ　ｃａｒｒｙ　ａｎｙ　ｍｏｒｅ　ｍｏｎｅｙ．@KEY()↓
+◆I think it’s impossible for you to carry any more money.@KEY()↓
 
-;jpn:◆あなたは　これいじょう↓
-;jpn:　おかねをもっていても↓
-;jpn:　しょうがないですよ。@KEY()↓
+;jpn:◆あなたは これいじょう↓
+;jpn: おかねをもっていても↓
+;jpn: しょうがないですよ。@KEY()↓
 @GOTO(_EGO_NO_1)
 _EGO_HIKI_NOMONEY;
-◆Ｙｏｕ　ｄｏｎ’ｔ　ｈａｖｅ　ｔｈａｔ　ｍｕｃｈ　ｍｏｎｅｙ　ｉｎ　ｙｏｕｒ　ａｃｃｏｕｎｔ．@KEY()↓
+◆You don’t have that much money in your account.@KEY()↓
 
-;jpn:◆あなたは　そんなに↓
-;jpn:　ちょきんをしていませんね。@KEY()↓
+;jpn:◆あなたは そんなに↓
+;jpn: ちょきんをしていませんね。@KEY()↓
 @GOTO(_EGO_HIKI)
 _EGO_HIKI_NOMONEY_2;
 @DEPOSIT_MONEY_BANK(0)
-◆Ｉ　ｄｏｎ’ｔ　ｔｈｉｎｋ　ｙｏｕ　ｃａｎ　ｃｏｖｅｒ　ｍｙ　ｈａｎｄｌｉｎｇ　ｃｈａｒｇｅ．@KEY()↓
+◆I don’t think you can cover my handling charge.@KEY()↓
 
 ;jpn:◆わたしのてすうりょうが↓
-;jpn:　もらえないみたいてす。@KEY()↓
+;jpn: もらえないみたいてす。@KEY()↓
 @GOTO(_EGO_HIKI)
 
 _EGO_TMP;
-◆Ｈｉ！　　Ｉ’ｍ　Ａｙ−ｇｏ．@KEY()↓
+◆Hi!  I’m Ay−go.@KEY()↓
 
-;jpn:◆ハーイ！　エーゴです。@KEY()↓
+;jpn:◆ハーイ! エーゴです。@KEY()↓
 @GOTO(_EGO_1)
 _EGO_AZU_INPUT;
 ←
-◆Ｈｏｗ　ｍｕｃｈ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｄｅｐｏｓｉｔ？↓
+◆How much do you want to deposit?↓
 
-;jpn:◆いくらあずけますか？↓
+;jpn:◆いくらあずけますか?↓
 @GOSUB(_CD_INPUT_2)
 @!
 _EGO_HIKI_INPUT;
 ←
-◆Ｈｏｗ　ｍｕｃｈ　ｄｏ　ｙｏｕ　ｗａｎｔ　ｔｏ　ｗｉｔｈｄｒａｗ？↓
+◆How much do you want to withdraw?↓
 
-;jpn:◆いくらひきだしますか？↓
+;jpn:◆いくらひきだしますか?↓
 @GOSUB(_CD_INPUT_2)
 @!
 
