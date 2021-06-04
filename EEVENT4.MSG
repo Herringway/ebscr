@@ -5,19 +5,19 @@
 ;
 ;-------------------------------------------------
 
-;ˆÈ‰ºs_event2
+;ä»¥ä¸‹s_event2
 
 
-;	iƒ]ƒ“ƒrƒzƒCƒzƒC”z’B(ƒ}ƒbƒnƒsƒU)j
+;	ï¼ˆã‚¾ãƒ³ãƒ“ãƒ›ã‚¤ãƒ›ã‚¤é…é”(ãƒžãƒƒãƒãƒ”ã‚¶)ï¼‰
 
-MSG_THRK_SET_HRECT_HOIHOI;ƒzƒCƒzƒC“d˜bŒŸ¸
+MSG_THRK_SET_HRECT_HOIHOI;ãƒ›ã‚¤ãƒ›ã‚¤é›»è©±æ¤œæŸ»
 @SET_HIT_RECT(1,HRECT_THRK_HOIHOI,MSG_THRK_TELE_APPLEKID)
-x
+ã€
 
 MSG_THRK_TELE_APPLEKID;
-@GOSUB(MSG_SUB_Q_NOW_DELIVERY)		;”z’Bƒtƒ‰ƒO‚ª—§‚Á‚Ä‚½‚ç
-@TRUE_GOTO(MSG_THRK_SET_HRECT_HOIHOI)	;‚â‚è‚È‚¨‚µ
-;ƒAƒbƒvƒ‹ƒLƒbƒh‚Ì‚s‚d‚k
+@GOSUB(MSG_SUB_Q_NOW_DELIVERY)		;é…é”ãƒ•ãƒ©ã‚°ãŒç«‹ã£ã¦ãŸã‚‰
+@TRUE_GOTO(MSG_THRK_SET_HRECT_HOIHOI)	;ã‚„ã‚ŠãªãŠã—
+;ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã®ï¼´ï¼¥ï¼¬
 @BGMSTART(0,BGM_msc1)
 @WI(60)
 @KEYNP()
@@ -25,132 +25,132 @@ MSG_THRK_TELE_APPLEKID;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_kowa4)
 @OPEN(1)
-Ÿ‚g‚…‚Œ‚Œ‚C@‚”‚ˆ‚‰‚“@‚‰‚“@‚`‚‚‚Œ‚…@‚j‚‰‚„D@KEY()«
-Ÿ‚h@‚Š‚•‚“‚”@‚—‚‚Ž‚”‚…‚„@‚”‚@‚Œ‚…‚”@‚™‚‚•@‚‹‚Ž‚‚—@‚”‚ˆ‚‚”@‚h@‚†‚‰‚Ž‚‰‚“‚ˆ‚…‚„@‚@‚‚’‚…‚”‚”‚™@‚•‚Ž‚‰‚‘‚•‚…@‚‰‚Ž‚–‚…‚Ž‚”‚‰‚‚ŽD@KEY()«
-Ÿ‚hf‚@‚Ž‚‚”@‚“‚•‚’‚…@‚‰‚†@‚‰‚”@‚—‚‰‚Œ‚Œ@‚ˆ‚…‚Œ‚@‚™‚‚•@‚‚’@‚Ž‚‚”DDD@KEY()«
-Ÿ‚h‚”f‚“@‚ƒ‚‚Œ‚Œ‚…‚„@h‚y‚‚‚‚‚‰‚…@‚o‚‚‚…‚’Ch@‚‚Ž‚„@‚‰‚”@‚ƒ‚‚Ž@‚‚‚…@‚•‚“‚…‚„@‚”‚@‚”‚’‚‚@‚š‚‚‚‚‚‰‚…‚“D@KEY()«
-Ÿ‚h‚”@‚—‚‚’‚‹‚“@‚‹‚‰‚Ž‚„@‚‚†@‚Œ‚‰‚‹‚…@‚†‚Œ‚™@‚‚‚‚…‚’DDD@KEY()«
-Ÿ‚`‚Œ‚Œ@‚™‚‚•@‚Ž‚…‚…‚„@‚”‚@‚„‚@‚‰‚“@‚‚Œ‚‚ƒ‚…@‚”‚ˆ‚…@‚‚‚‚…‚’@‚‚Ž@‚”‚ˆ‚…@‚†‚Œ‚‚‚’@‚‚†@‚@‚”‚…‚Ž‚”@‚‚’@‚“‚‚‚…‚”‚ˆ‚‰‚Ž‚‡DDD@KEY()«
-Ÿ‚x‚‚•f‚–‚…@‚“‚…‚…‚Ž@‚‚”@‚Œ‚…‚‚“‚”@‚‚Ž‚…@‚”‚…‚Ž‚”@‚‚’‚‚•‚Ž‚„C@‚’‚‰‚‡‚ˆ‚”HDDDD@KEY()«
-Ÿ‚‚Ž‚„@‚”‚ˆ‚…‚Ž@‚”‚ˆ‚…@‚š‚‚‚‚‚‰‚…‚“@‚‡‚…‚”@‚“‚”‚•‚ƒ‚‹@‚”‚@‚”‚ˆ‚…@‚‚‚‚…‚’@KEY()«
-Ÿ‚—‚ˆ‚…‚Ž@‚”‚ˆ‚…‚™@‚‚‚–‚…@‚‚’‚‚•‚Ž‚„@‚‰‚Ž‚“‚‰‚„‚…@‚”‚ˆ‚…@‚”‚…‚Ž‚”D@KEY()«
-Ÿ‚x‚‚•@‚ƒ‚‚Ž@‚ƒ‚‚”‚ƒ‚ˆ@‚@‚Œ‚‚”@‚‚†@‚š‚‚‚‚‚‰‚…‚“@‚”‚ˆ‚‰‚“@‚—‚‚™DDD‚h‚Ž@‚†‚‚ƒ‚”C@KEY()«
-Ÿ‚h@‚‚‚…‚”@‚™‚‚•@‚ƒ‚‚•‚Œ‚„@‚‡‚…‚”@‚’‚‰‚„@‚‚†@‚‚Œ‚Œ@‚”‚ˆ‚…@‚š‚‚‚‚‚‰‚…‚“@KEY()«
-Ÿ‚”‚ˆ‚‚”@‚‚’‚…@‚”‚…‚’‚’‚‚’‚‰‚š‚‰‚Ž‚‡@‚”‚ˆ‚…@‚‚’‚…‚@‚—‚‰‚”‚ˆ@‚”‚ˆ‚‰‚“@‚‚‚‚…‚’I
-;jpn:Ÿ‚à‚µ‚à‚µ@ƒAƒbƒvƒ‹ƒLƒbƒh‚Å‚·B@WI(20)«
-;jpn:@‚Ö‚ñ‚È‚à‚Ì‚ª@‚Å‚«‚½‚ñ‚Å‚·‚ª«
-;jpn:@‚â‚­‚É‚½‚Â‚©‚Ç‚¤‚©dd@KEY()«
-;jpn:Ÿuƒ]ƒ“ƒrƒzƒCƒzƒCv‚Á‚Ä‚¢‚Á‚Ä«
-;jpn:@‚±‚ê‚ð@‚Â‚©‚¤‚Æ@ƒ]ƒ“ƒr‚ª«
-;jpn:@‚ ‚Â‚Ü‚é@ƒ}ƒVƒ“‚Å‚·B@KEY()«
-;jpn:Ÿ‚±‚Ìuƒ]ƒ“ƒrƒzƒCƒzƒCv‚Í«
-;jpn:@ƒeƒ“ƒg‚Ì‚æ‚¤‚È‚Î‚µ‚å‚Ì«
-;jpn:@‚Ü‚ñ‚È‚©‚É@‚¨‚«‚Ü‚·B@KEY()«
-;jpn:Ÿƒeƒ“ƒg‚Í@‚Ç‚±‚©‚É‚ ‚è‚Ü‚·‚æ‚ËB@KEY()«
-;jpn:Ÿdd‚¨‚¢‚Ä‚¨‚¯‚Î«
-;jpn:@‚¨‚à‚µ‚ë‚¢‚æ‚¤‚É«
-;jpn:@ƒ]ƒ“ƒr‚Ç‚à‚ª@‚­‚Á‚Â‚«‚Ü‚·‚©‚çB@KEY()«
-;jpn:Ÿ‚¢‚Á‚Ï‚¢@‚Æ‚Á‚Ä‚­‚¾‚³‚¢B@KEY()«
-;jpn:Ÿ‚¿‚¶‚å‚¤‚É‚¢‚é@ƒ]ƒ“ƒr‚Í«
-;jpn:@‚½‚Ô‚ñ@‚±‚ê‚Å@‚º‚ñ‚Ô«
-;jpn:@‚½‚¢‚¶‚Å‚«‚é‚Æ@‚¨‚à‚¢‚Ü‚·B
-@KEY()«
-@WI(60)«
-Ÿ‚`‚Ž‚™‚—‚‚™C@‚h@‚Š‚•‚“‚”@‚‚“‚‹‚…‚„@‚”‚ˆ‚…@‚l‚‚ƒ‚ˆ@‚o‚‰‚š‚š‚@‚„‚…‚Œ‚‰‚–‚…‚’‚™@‚‚‚Ž@KEY()«
-Ÿ‚”‚@‚„‚…‚Œ‚‰‚–‚…‚’@‚”‚ˆ‚…@‚y‚‚‚‚‚‰‚…@‚o‚‚‚…‚’@‚”‚@‚™‚‚•C@@DSP_NAME(PC_NESS)D@KEY()«
-Ÿ‚x‚‚•@‚“‚ˆ‚‚•‚Œ‚„@‚‡‚…‚”@‚‰‚”@‚‚’‚…‚”‚”‚™@‚“‚‚‚ŽD@KEY()«
-Ÿ‚hf‚–‚…@‚Ž‚…‚–‚…‚’@‚‚ƒ‚”‚•‚‚Œ‚Œ‚™@‚“‚…‚…‚Ž@‚@‚š‚‚‚‚‚‰‚…C@‚‚‚•‚”@‚‰‚†@‚”‚ˆ‚…‚’‚…@‚’‚…‚‚Œ‚Œ‚™@‚‚’‚…@‚‚Ž‚™C@KEY()«
-Ÿ‚y‚‚‚‚‚‰‚…@‚o‚‚‚…‚’@‚—‚‚•‚Œ‚„@‚‚‚…@‚–‚…‚’‚™@‚•‚“‚…‚†‚•‚ŒDDD@KEY()«
-Ÿ‚hf‚Œ‚Œ@‚‚‚…@‚ƒ‚‚Œ‚Œ‚‰‚Ž‚‡@‚™‚‚•@‚‰‚†@‚h@‚ƒ‚‚‚…@‚•‚@‚—‚‰‚”‚ˆ@‚‚Ž‚™‚”‚ˆ‚‰‚Ž‚‡@‚…‚Œ‚“‚…DDD@KEY()«
-Ÿ–‚b‚Œ‚‰‚ƒ‚‹I–@‚a‚…‚…‚…‚…‚…‚I
-;jpn:Ÿ‚³‚Á‚«@ƒ}ƒbƒnƒsƒU‚Ì‚Ð‚Æ‚É«
-;jpn: @DSP_STS(STS_PC_NAME_NES)‚³‚ñ‚É@‚Æ‚Ç‚¯‚é‚æ‚¤«
-;jpn:@‚½‚Ì‚ñ‚¾‚Ì‚Å@KEY()«
-;jpn:Ÿ‚¿‚©‚¢‚¤‚¿‚É@‚Â‚­‚Æ‚¨‚à‚¢‚Ü‚·B@WI(30)«
-;jpn:@ƒ]ƒ“ƒr‚È‚ñ‚Ä@‚Ý‚½‚±‚Æ‚È‚¢‚¯‚Ç«
-;jpn:@‚à‚µ@‚Ù‚ñ‚Æ‚É‚¢‚é‚Æ‚µ‚½‚ç@KEY()«
-;jpn:Ÿ‚±‚Ìƒ}ƒVƒ“‚Í@‚«‚Á‚Æ«
-;jpn:@‚Â‚©‚¦‚é‚Í‚¸‚Å‚·B@KEY()«
-;jpn:Ÿ‚Ü‚½@‚È‚ñ‚©‚ ‚Á‚½‚ç«
-;jpn:@‚Å‚ñ‚í‚µ‚Ü‚·B@WI(20)«
-;jpn:@ƒKƒ`ƒƒƒ“@ƒc[ƒc[ƒc[
+â—†ï¼¨ï½…ï½Œï½Œï½ï¼Œã€€ï½”ï½ˆï½‰ï½“ã€€ï½‰ï½“ã€€ï¼¡ï½ï½ï½Œï½…ã€€ï¼«ï½‰ï½„ï¼Ž@KEY()â†“
+â—†ï¼©ã€€ï½Šï½•ï½“ï½”ã€€ï½—ï½ï½Žï½”ï½…ï½„ã€€ï½”ï½ã€€ï½Œï½…ï½”ã€€ï½™ï½ï½•ã€€ï½‹ï½Žï½ï½—ã€€ï½”ï½ˆï½ï½”ã€€ï¼©ã€€ï½†ï½‰ï½Žï½‰ï½“ï½ˆï½…ï½„ã€€ï½ã€€ï½ï½’ï½…ï½”ï½”ï½™ã€€ï½•ï½Žï½‰ï½‘ï½•ï½…ã€€ï½‰ï½Žï½–ï½…ï½Žï½”ï½‰ï½ï½Žï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½Žï½ï½”ã€€ï½“ï½•ï½’ï½…ã€€ï½‰ï½†ã€€ï½‰ï½”ã€€ï½—ï½‰ï½Œï½Œã€€ï½ˆï½…ï½Œï½ã€€ï½™ï½ï½•ã€€ï½ï½’ã€€ï½Žï½ï½”ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼©ï½”â€™ï½“ã€€ï½ƒï½ï½Œï½Œï½…ï½„ã€€â€ï¼ºï½ï½ï½‚ï½‰ï½…ã€€ï¼°ï½ï½ï½…ï½’ï¼Œâ€ã€€ï½ï½Žï½„ã€€ï½‰ï½”ã€€ï½ƒï½ï½Žã€€ï½‚ï½…ã€€ï½•ï½“ï½…ï½„ã€€ï½”ï½ã€€ï½”ï½’ï½ï½ã€€ï½šï½ï½ï½‚ï½‰ï½…ï½“ï¼Ž@KEY()â†“
+â—†ï¼©ï½”ã€€ï½—ï½ï½’ï½‹ï½“ã€€ï½‹ï½‰ï½Žï½„ã€€ï½ï½†ã€€ï½Œï½‰ï½‹ï½…ã€€ï½†ï½Œï½™ã€€ï½ï½ï½ï½…ï½’ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼¡ï½Œï½Œã€€ï½™ï½ï½•ã€€ï½Žï½…ï½…ï½„ã€€ï½”ï½ã€€ï½„ï½ã€€ï½‰ï½“ã€€ï½ï½Œï½ï½ƒï½…ã€€ï½”ï½ˆï½…ã€€ï½ï½ï½ï½…ï½’ã€€ï½ï½Žã€€ï½”ï½ˆï½…ã€€ï½†ï½Œï½ï½ï½’ã€€ï½ï½†ã€€ï½ã€€ï½”ï½…ï½Žï½”ã€€ï½ï½’ã€€ï½“ï½ï½ï½…ï½”ï½ˆï½‰ï½Žï½‡ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼¹ï½ï½•â€™ï½–ï½…ã€€ï½“ï½…ï½…ï½Žã€€ï½ï½”ã€€ï½Œï½…ï½ï½“ï½”ã€€ï½ï½Žï½…ã€€ï½”ï½…ï½Žï½”ã€€ï½ï½’ï½ï½•ï½Žï½„ï¼Œã€€ï½’ï½‰ï½‡ï½ˆï½”ï¼Ÿï¼Žï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï½ï½Žï½„ã€€ï½”ï½ˆï½…ï½Žã€€ï½”ï½ˆï½…ã€€ï½šï½ï½ï½‚ï½‰ï½…ï½“ã€€ï½‡ï½…ï½”ã€€ï½“ï½”ï½•ï½ƒï½‹ã€€ï½”ï½ã€€ï½”ï½ˆï½…ã€€ï½ï½ï½ï½…ï½’@KEY()â†“
+â—†ï½—ï½ˆï½…ï½Žã€€ï½”ï½ˆï½…ï½™ã€€ï½ï½ï½–ï½…ã€€ï½ï½’ï½ï½•ï½Žï½„ã€€ï½‰ï½Žï½“ï½‰ï½„ï½…ã€€ï½”ï½ˆï½…ã€€ï½”ï½…ï½Žï½”ï¼Ž@KEY()â†“
+â—†ï¼¹ï½ï½•ã€€ï½ƒï½ï½Žã€€ï½ƒï½ï½”ï½ƒï½ˆã€€ï½ã€€ï½Œï½ï½”ã€€ï½ï½†ã€€ï½šï½ï½ï½‚ï½‰ï½…ï½“ã€€ï½”ï½ˆï½‰ï½“ã€€ï½—ï½ï½™ï¼Žï¼Žï¼Žï¼©ï½Žã€€ï½†ï½ï½ƒï½”ï¼Œ@KEY()â†“
+â—†ï¼©ã€€ï½‚ï½…ï½”ã€€ï½™ï½ï½•ã€€ï½ƒï½ï½•ï½Œï½„ã€€ï½‡ï½…ï½”ã€€ï½’ï½‰ï½„ã€€ï½ï½†ã€€ï½ï½Œï½Œã€€ï½”ï½ˆï½…ã€€ï½šï½ï½ï½‚ï½‰ï½…ï½“@KEY()â†“
+â—†ï½”ï½ˆï½ï½”ã€€ï½ï½’ï½…ã€€ï½”ï½…ï½’ï½’ï½ï½’ï½‰ï½šï½‰ï½Žï½‡ã€€ï½”ï½ˆï½…ã€€ï½ï½’ï½…ï½ã€€ï½—ï½‰ï½”ï½ˆã€€ï½”ï½ˆï½‰ï½“ã€€ï½ï½ï½ï½…ï½’ï¼
+;jpn:â—†ã‚‚ã—ã‚‚ã—ã€€ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã§ã™ã€‚@WI(20)â†“
+;jpn:ã€€ã¸ã‚“ãªã‚‚ã®ãŒã€€ã§ããŸã‚“ã§ã™ãŒâ†“
+;jpn:ã€€ã‚„ãã«ãŸã¤ã‹ã©ã†ã‹â€¥â€¥@KEY()â†“
+;jpn:â—†ã€Œã‚¾ãƒ³ãƒ“ãƒ›ã‚¤ãƒ›ã‚¤ã€ã£ã¦ã„ã£ã¦â†“
+;jpn:ã€€ã“ã‚Œã‚’ã€€ã¤ã‹ã†ã¨ã€€ã‚¾ãƒ³ãƒ“ãŒâ†“
+;jpn:ã€€ã‚ã¤ã¾ã‚‹ã€€ãƒžã‚·ãƒ³ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã“ã®ã€Œã‚¾ãƒ³ãƒ“ãƒ›ã‚¤ãƒ›ã‚¤ã€ã¯â†“
+;jpn:ã€€ãƒ†ãƒ³ãƒˆã®ã‚ˆã†ãªã°ã—ã‚‡ã®â†“
+;jpn:ã€€ã¾ã‚“ãªã‹ã«ã€€ãŠãã¾ã™ã€‚@KEY()â†“
+;jpn:â—†ãƒ†ãƒ³ãƒˆã¯ã€€ã©ã“ã‹ã«ã‚ã‚Šã¾ã™ã‚ˆã­ã€‚@KEY()â†“
+;jpn:â—†â€¥â€¥ãŠã„ã¦ãŠã‘ã°â†“
+;jpn:ã€€ãŠã‚‚ã—ã‚ã„ã‚ˆã†ã«â†“
+;jpn:ã€€ã‚¾ãƒ³ãƒ“ã©ã‚‚ãŒã€€ãã£ã¤ãã¾ã™ã‹ã‚‰ã€‚@KEY()â†“
+;jpn:â—†ã„ã£ã±ã„ã€€ã¨ã£ã¦ãã ã•ã„ã€‚@KEY()â†“
+;jpn:â—†ã¡ã˜ã‚‡ã†ã«ã„ã‚‹ã€€ã‚¾ãƒ³ãƒ“ã¯â†“
+;jpn:ã€€ãŸã¶ã‚“ã€€ã“ã‚Œã§ã€€ãœã‚“ã¶â†“
+;jpn:ã€€ãŸã„ã˜ã§ãã‚‹ã¨ã€€ãŠã‚‚ã„ã¾ã™ã€‚
+@KEY()â†“
+@WI(60)â†“
+â—†ï¼¡ï½Žï½™ï½—ï½ï½™ï¼Œã€€ï¼©ã€€ï½Šï½•ï½“ï½”ã€€ï½ï½“ï½‹ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï¼­ï½ï½ƒï½ˆã€€ï¼°ï½‰ï½šï½šï½ã€€ï½„ï½…ï½Œï½‰ï½–ï½…ï½’ï½™ã€€ï½ï½ï½Ž@KEY()â†“
+â—†ï½”ï½ã€€ï½„ï½…ï½Œï½‰ï½–ï½…ï½’ã€€ï½”ï½ˆï½…ã€€ï¼ºï½ï½ï½‚ï½‰ï½…ã€€ï¼°ï½ï½ï½…ï½’ã€€ï½”ï½ã€€ï½™ï½ï½•ï¼Œã€€@DSP_NAME(PC_NESS)ï¼Ž@KEY()â†“
+â—†ï¼¹ï½ï½•ã€€ï½“ï½ˆï½ï½•ï½Œï½„ã€€ï½‡ï½…ï½”ã€€ï½‰ï½”ã€€ï½ï½’ï½…ï½”ï½”ï½™ã€€ï½“ï½ï½ï½Žï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½–ï½…ã€€ï½Žï½…ï½–ï½…ï½’ã€€ï½ï½ƒï½”ï½•ï½ï½Œï½Œï½™ã€€ï½“ï½…ï½…ï½Žã€€ï½ã€€ï½šï½ï½ï½‚ï½‰ï½…ï¼Œã€€ï½‚ï½•ï½”ã€€ï½‰ï½†ã€€ï½”ï½ˆï½…ï½’ï½…ã€€ï½’ï½…ï½ï½Œï½Œï½™ã€€ï½ï½’ï½…ã€€ï½ï½Žï½™ï¼Œ@KEY()â†“
+â—†ï¼ºï½ï½ï½‚ï½‰ï½…ã€€ï¼°ï½ï½ï½…ï½’ã€€ï½—ï½ï½•ï½Œï½„ã€€ï½‚ï½…ã€€ï½–ï½…ï½’ï½™ã€€ï½•ï½“ï½…ï½†ï½•ï½Œï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½Œï½Œã€€ï½‚ï½…ã€€ï½ƒï½ï½Œï½Œï½‰ï½Žï½‡ã€€ï½™ï½ï½•ã€€ï½‰ï½†ã€€ï¼©ã€€ï½ƒï½ï½ï½…ã€€ï½•ï½ã€€ï½—ï½‰ï½”ï½ˆã€€ï½ï½Žï½™ï½”ï½ˆï½‰ï½Žï½‡ã€€ï½…ï½Œï½“ï½…ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼Šï¼£ï½Œï½‰ï½ƒï½‹ï¼ï¼Šã€€ï¼¢ï½…ï½…ï½…ï½…ï½…ï½ï¼
+;jpn:â—†ã•ã£ãã€€ãƒžãƒƒãƒãƒ”ã‚¶ã®ã²ã¨ã«â†“
+;jpn: @DSP_STS(STS_PC_NAME_NES)ã•ã‚“ã«ã€€ã¨ã©ã‘ã‚‹ã‚ˆã†â†“
+;jpn:ã€€ãŸã®ã‚“ã ã®ã§@KEY()â†“
+;jpn:â—†ã¡ã‹ã„ã†ã¡ã«ã€€ã¤ãã¨ãŠã‚‚ã„ã¾ã™ã€‚@WI(30)â†“
+;jpn:ã€€ã‚¾ãƒ³ãƒ“ãªã‚“ã¦ã€€ã¿ãŸã“ã¨ãªã„ã‘ã©â†“
+;jpn:ã€€ã‚‚ã—ã€€ã»ã‚“ã¨ã«ã„ã‚‹ã¨ã—ãŸã‚‰@KEY()â†“
+;jpn:â—†ã“ã®ãƒžã‚·ãƒ³ã¯ã€€ãã£ã¨â†“
+;jpn:ã€€ã¤ã‹ãˆã‚‹ã¯ãšã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã¾ãŸã€€ãªã‚“ã‹ã‚ã£ãŸã‚‰â†“
+;jpn:ã€€ã§ã‚“ã‚ã—ã¾ã™ã€‚@WI(20)â†“
+;jpn:ã€€ã‚¬ãƒãƒ£ãƒ³ã€€ãƒ„ãƒ¼ãƒ„ãƒ¼ãƒ„ãƒ¼
 @KEYNP()
 @SE(SE_se0b_tel_put)
 @CLOSEALL()
 ;-----------
 @MUSISTART()
 ;-----------
-@DELIVERY(DELIVERY_HOIHOI);”z’BI
+@DELIVERY(DELIVERY_HOIHOI);é…é”ï¼
 @SETF(FLG_DELIVERY_HOIHOI)
-@SETF(FLG_SYS_DISTLPT);ƒeƒŒƒ|[ƒg‹ÖŽ~
-x
+@SETF(FLG_SYS_DISTLPT);ãƒ†ãƒ¬ãƒãƒ¼ãƒˆç¦æ­¢
+ã€
 
 
 MSG_THRK_MACH;
-;ƒ}ƒbƒnƒsƒU‚Ì“Xˆõ
+;ãƒžãƒƒãƒãƒ”ã‚¶ã®åº—å“¡
 @OPEN(1)
-Ÿ‚v‚ˆ‚‰‚Œ‚…@‚„‚…‚Œ‚‰‚–‚…‚’‚‰‚Ž‚‡@‚‚‰‚š‚š‚C@‚”‚ˆ‚‰‚“@‚—‚…‚‰‚’‚„@‚‡‚•‚™@‚‚“‚‹‚…‚„@‚‚…@‚”‚@‚ˆ‚…‚Œ‚@‚ˆ‚‰‚@‚‚•‚”DDD@KEY()«
-Ÿ‚g‚…@‚—‚‚Ž‚”‚…‚„@‚‚…@‚”‚@‚„‚…‚Œ‚‰‚–‚…‚’@‚”‚ˆ‚‰‚“@‚”‚@‚“‚‚‚…‚‚Ž‚…@‚Ž‚‚‚…‚„@@DSP_NAME(PC_NESS)@KEY()«
-Ÿ‚—‚ˆ‚@‚‰‚“@‚—‚‚Ž‚„‚…‚’‚‰‚Ž‚‡@‚‚’‚‚•‚Ž‚„@‚s‚ˆ‚’‚…‚…‚„D@KEY()«
-Ÿ‚m‚@‚‚Ž‚…@‚…‚Œ‚“‚…@‚‹‚Ž‚‚—‚“@‚‚‚‚‚•‚”@‚”‚ˆ‚‰‚“C@‚’‚‰‚‡‚ˆ‚”H@KEY()«
-Ÿ‚k‚…‚”f‚“@‚Š‚•‚“‚”@‚‚’‚…‚”‚…‚Ž‚„@‚”‚ˆ‚‚”@‚™‚‚•f‚’‚…@@DSP_NAME(PC_NESS)C«
-@@‚‚Ž‚„@‚hf‚Œ‚Œ@‚‡‚‰‚–‚…@‚”‚ˆ‚‰‚“@‚”‚@‚™‚‚•D@KEY()«
-Ÿ‚n‚ˆI@@‚g‚…‚Œ‚Œ‚C@@DSP_NAME(PC_NESS)I@KEY()«
-Ÿ‚i‚•‚“‚”@‚‡‚@‚‚Œ‚‚Ž‚‡@‚—‚‰‚”‚ˆ@‚‚…@‚‚Ž@‚”‚ˆ‚‰‚“@‚‚Ž‚…C@‚‚‹‚‚™D@KEY()«
-Ÿ‚h@‚‚‚„‚…@‚”‚ˆ‚…@‚„‚…‚ƒ‚‰‚“‚‰‚‚Ž@‚”‚ˆ‚‚”@‚™‚‚•f‚’‚…@@DSP_NAME(PC_NESS)C@‚Ž‚@‚‚‚”‚”‚…‚’@‚—‚ˆ‚‚”DDD
-;jpn:ŸƒsƒU‚Ì‚Í‚¢‚½‚Â‚µ‚Ä‚½‚ç«
-;jpn:@‚Æ‚ñ‚Å‚à‚È‚¢@‚½‚Ì‚Ü‚ê‚²‚Æ‚ð«
-;jpn:@‚µ‚¿‚Ü‚Á‚Ädd@KEY()«
-;jpn:ŸƒXƒŠ[ƒN‚ ‚½‚è‚ð@‚¤‚ë‚Â‚¢‚Ä‚¢‚é«
-;jpn:@@DSP_STS(STS_PC_NAME_NES)‚Á‚Ä‚â‚Â‚É@KEY()«
-;jpn:Ÿ‚Æ‚Ç‚¯‚Ä‚­‚ê‚Á‚Ädd@WI(20)«
-;jpn:@‚Ý‚Â‚©‚è‚á‚µ‚È‚¢‚æ‚ÈB@KEY()«
-;jpn:Ÿ‚ ‚ñ‚½‚ª@DSP_STS(STS_PC_NAME_NES)‚¾‚Á‚Ä‚±‚Æ‚É«
-;jpn:@‚µ‚¿‚Ü‚Á‚Ä‚³@WI(15)«
-;jpn:@‚±‚¢‚Â‚ð@‚í‚½‚µ‚Ä@‚©‚¦‚é‚íB@KEY()«
-;jpn:Ÿ‚ ‚ñ‚½‚ª@DSP_STS(STS_PC_NAME_NES)‚¾I@WI(20)«
-;jpn:@‚±‚½‚¦‚È‚­‚Ä‚¢‚¢I«
-;jpn:@‚¨‚ê‚ª@‚»‚¤‚«‚ß‚½‚ñ‚¾II
-@KEY()«
+â—†ï¼·ï½ˆï½‰ï½Œï½…ã€€ï½„ï½…ï½Œï½‰ï½–ï½…ï½’ï½‰ï½Žï½‡ã€€ï½ï½‰ï½šï½šï½ï¼Œã€€ï½”ï½ˆï½‰ï½“ã€€ï½—ï½…ï½‰ï½’ï½„ã€€ï½‡ï½•ï½™ã€€ï½ï½“ï½‹ï½…ï½„ã€€ï½ï½…ã€€ï½”ï½ã€€ï½ˆï½…ï½Œï½ã€€ï½ˆï½‰ï½ã€€ï½ï½•ï½”ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼¨ï½…ã€€ï½—ï½ï½Žï½”ï½…ï½„ã€€ï½ï½…ã€€ï½”ï½ã€€ï½„ï½…ï½Œï½‰ï½–ï½…ï½’ã€€ï½”ï½ˆï½‰ï½“ã€€ï½”ï½ã€€ï½“ï½ï½ï½…ï½ï½Žï½…ã€€ï½Žï½ï½ï½…ï½„ã€€@DSP_NAME(PC_NESS)@KEY()â†“
+â—†ï½—ï½ˆï½ã€€ï½‰ï½“ã€€ï½—ï½ï½Žï½„ï½…ï½’ï½‰ï½Žï½‡ã€€ï½ï½’ï½ï½•ï½Žï½„ã€€ï¼´ï½ˆï½’ï½…ï½…ï½„ï¼Ž@KEY()â†“
+â—†ï¼®ï½ã€€ï½ï½Žï½…ã€€ï½…ï½Œï½“ï½…ã€€ï½‹ï½Žï½ï½—ï½“ã€€ï½ï½‚ï½ï½•ï½”ã€€ï½”ï½ˆï½‰ï½“ï¼Œã€€ï½’ï½‰ï½‡ï½ˆï½”ï¼Ÿ@KEY()â†“
+â—†ï¼¬ï½…ï½”â€™ï½“ã€€ï½Šï½•ï½“ï½”ã€€ï½ï½’ï½…ï½”ï½…ï½Žï½„ã€€ï½”ï½ˆï½ï½”ã€€ï½™ï½ï½•â€™ï½’ï½…ã€€@DSP_NAME(PC_NESS)ï¼Œâ†“
+ã€€ã€€ï½ï½Žï½„ã€€ï¼©â€™ï½Œï½Œã€€ï½‡ï½‰ï½–ï½…ã€€ï½”ï½ˆï½‰ï½“ã€€ï½”ï½ã€€ï½™ï½ï½•ï¼Ž@KEY()â†“
+â—†ï¼¯ï½ˆï¼ã€€ã€€ï¼¨ï½…ï½Œï½Œï½ï¼Œã€€@DSP_NAME(PC_NESS)ï¼@KEY()â†“
+â—†ï¼ªï½•ï½“ï½”ã€€ï½‡ï½ã€€ï½ï½Œï½ï½Žï½‡ã€€ï½—ï½‰ï½”ï½ˆã€€ï½ï½…ã€€ï½ï½Žã€€ï½”ï½ˆï½‰ï½“ã€€ï½ï½Žï½…ï¼Œã€€ï½ï½‹ï½ï½™ï¼Ž@KEY()â†“
+â—†ï¼©ã€€ï½ï½ï½„ï½…ã€€ï½”ï½ˆï½…ã€€ï½„ï½…ï½ƒï½‰ï½“ï½‰ï½ï½Žã€€ï½”ï½ˆï½ï½”ã€€ï½™ï½ï½•â€™ï½’ï½…ã€€@DSP_NAME(PC_NESS)ï¼Œã€€ï½Žï½ã€€ï½ï½ï½”ï½”ï½…ï½’ã€€ï½—ï½ˆï½ï½”ï¼Žï¼Žï¼Ž
+;jpn:â—†ãƒ”ã‚¶ã®ã¯ã„ãŸã¤ã—ã¦ãŸã‚‰â†“
+;jpn:ã€€ã¨ã‚“ã§ã‚‚ãªã„ã€€ãŸã®ã¾ã‚Œã”ã¨ã‚’â†“
+;jpn:ã€€ã—ã¡ã¾ã£ã¦â€¥â€¥@KEY()â†“
+;jpn:â—†ã‚¹ãƒªãƒ¼ã‚¯ã‚ãŸã‚Šã‚’ã€€ã†ã‚ã¤ã„ã¦ã„ã‚‹â†“
+;jpn:ã€€@DSP_STS(STS_PC_NAME_NES)ã£ã¦ã‚„ã¤ã«@KEY()â†“
+;jpn:â—†ã¨ã©ã‘ã¦ãã‚Œã£ã¦â€¥â€¥@WI(20)â†“
+;jpn:ã€€ã¿ã¤ã‹ã‚Šã‚ƒã—ãªã„ã‚ˆãªã€‚@KEY()â†“
+;jpn:â—†ã‚ã‚“ãŸãŒ@DSP_STS(STS_PC_NAME_NES)ã ã£ã¦ã“ã¨ã«â†“
+;jpn:ã€€ã—ã¡ã¾ã£ã¦ã•@WI(15)â†“
+;jpn:ã€€ã“ã„ã¤ã‚’ã€€ã‚ãŸã—ã¦ã€€ã‹ãˆã‚‹ã‚ã€‚@KEY()â†“
+;jpn:â—†ã‚ã‚“ãŸãŒ@DSP_STS(STS_PC_NAME_NES)ã ï¼@WI(20)â†“
+;jpn:ã€€ã“ãŸãˆãªãã¦ã„ã„ï¼â†“
+;jpn:ã€€ãŠã‚ŒãŒã€€ãã†ãã‚ãŸã‚“ã ï¼ï¼
+@KEY()â†“
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_THRK_MACH_ITEMFULL)
 _THRK_MACH_MAIN;
 @GOODSIN_PLAYER(0,GDS_TOOL_ZOMBI_HOIHOI)
-@GOSUB(MSG_SUB_GETGOODS_S)@KEY()«
-Ÿ‚s‚ˆ‚‚”f‚“@‚’‚‰‚‡‚ˆ‚”C@@DSP_NAME(PC_NESS)DDD–‚—‚‰‚Ž‚‹C@‚—‚‰‚Ž‚‹–@KEY()«
-Ÿ‚hf‚–‚…@‚„‚‚Ž‚…@‚‚™@‚„‚•‚”‚™@‚‚Ž‚„@‚‡‚‰‚–‚…‚Ž@‚™‚‚•@‚`‚‚‚Œ‚…@‚j‚‰‚„f‚“@‚”‚ˆ‚‰‚Ž‚‡‚‚‚‚Š‚‰‚‡DDD@KEY()«
-Ÿ‚v‚…‚Œ‚ŒC@‚‡‚‚‚„‚‚‚™‚…IDDD
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚³‚ñ«
-;jpn:@ƒAƒbƒvƒ‹ƒLƒbƒh‚©‚ç‚Ì@‚Æ‚Ç‚¯‚à‚Ì«
-;jpn:@‚½‚µ‚©‚É@‚í‚½‚µ‚½‚æI@KEY()«
-;jpn:Ÿ‚¶‚á@ƒTƒCƒiƒ‰[I
+@GOSUB(MSG_SUB_GETGOODS_S)@KEY()â†“
+â—†ï¼´ï½ˆï½ï½”â€™ï½“ã€€ï½’ï½‰ï½‡ï½ˆï½”ï¼Œã€€@DSP_NAME(PC_NESS)ï¼Žï¼Žï¼Žï¼Šï½—ï½‰ï½Žï½‹ï¼Œã€€ï½—ï½‰ï½Žï½‹ï¼Š@KEY()â†“
+â—†ï¼©â€™ï½–ï½…ã€€ï½„ï½ï½Žï½…ã€€ï½ï½™ã€€ï½„ï½•ï½”ï½™ã€€ï½ï½Žï½„ã€€ï½‡ï½‰ï½–ï½…ï½Žã€€ï½™ï½ï½•ã€€ï¼¡ï½ï½ï½Œï½…ã€€ï¼«ï½‰ï½„â€™ï½“ã€€ï½”ï½ˆï½‰ï½Žï½‡ï½ï½ï½ï½Šï½‰ï½‡ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼·ï½…ï½Œï½Œï¼Œã€€ï½‡ï½ï½ï½„ï½‚ï½™ï½…ï¼ï¼Žï¼Žï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã•ã‚“â†“
+;jpn:ã€€ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã‹ã‚‰ã®ã€€ã¨ã©ã‘ã‚‚ã®â†“
+;jpn:ã€€ãŸã—ã‹ã«ã€€ã‚ãŸã—ãŸã‚ˆï¼@KEY()â†“
+;jpn:â—†ã˜ã‚ƒã€€ã‚µã‚¤ãƒŠãƒ©ãƒ¼ï¼
 @KEY()
 @CLOSEALL()
 @CLRF(FLG_DELIVERY_HOIHOI)
 @SETF(FLG_ITEM_HOIHOI)
 @GOSUB(MSG_SUB_DELIVERY_BYE)
-@CLRF(FLG_SYS_DISTLPT);ƒeƒŒƒ|[ƒg‹–‰Â
-;@GOSUB(MSG_SUB_TLPTOK_OTHERDELIVERY)	;ƒfƒŠƒoƒŠ[’†ˆÈŠO‚È‚çƒeƒŒƒ|[ƒg‹–‰Â
-x
+@CLRF(FLG_SYS_DISTLPT);ãƒ†ãƒ¬ãƒãƒ¼ãƒˆè¨±å¯
+;@GOSUB(MSG_SUB_TLPTOK_OTHERDELIVERY)	;ãƒ‡ãƒªãƒãƒªãƒ¼ä¸­ä»¥å¤–ãªã‚‰ãƒ†ãƒ¬ãƒãƒ¼ãƒˆè¨±å¯
+ã€
 
 _THRK_MACH_ITEMFULL;@MaltaAppended
-Ÿ‚x‚‚•@‚ˆ‚‚–‚…@‚”‚‚@‚‚•‚ƒ‚ˆ@‚“‚”‚•‚†‚†C@‚“‚@‚h@‚ƒ‚‚Žf‚”@‚‡‚‰‚–‚…@‚”‚ˆ‚‰‚“@‚”‚@‚™‚‚•DDD@KEY()«
-Ÿ‚v‚ˆ‚™@‚„‚‚Žf‚”@‚™‚‚•@‚‡‚…‚”@‚’‚‰‚„@‚‚†@‚“‚‚‚…‚”‚ˆ‚‰‚Ž‚‡H«
-<‚x‚…‚“>@<‚m‚>
-;jpn:Ÿ‚à‚¿‚à‚Ì‚ª@‚¢‚Á‚Ï‚¢‚Å«
-;jpn:@‚í‚½‚¹‚È‚¢‚¶‚á‚È‚¢‚©I@KEY()«
-;jpn:Ÿ‚È‚ñ‚Æ‚©‚µ‚Ä@‚Ö‚ç‚µ‚Ä‚­‚êB«
-;jpn:@@<‚Í‚¢>@@<‚¢‚¢‚¦>
+â—†ï¼¹ï½ï½•ã€€ï½ˆï½ï½–ï½…ã€€ï½”ï½ï½ã€€ï½ï½•ï½ƒï½ˆã€€ï½“ï½”ï½•ï½†ï½†ï¼Œã€€ï½“ï½ã€€ï¼©ã€€ï½ƒï½ï½Žâ€™ï½”ã€€ï½‡ï½‰ï½–ï½…ã€€ï½”ï½ˆï½‰ï½“ã€€ï½”ï½ã€€ï½™ï½ï½•ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼·ï½ˆï½™ã€€ï½„ï½ï½Žâ€™ï½”ã€€ï½™ï½ï½•ã€€ï½‡ï½…ï½”ã€€ï½’ï½‰ï½„ã€€ï½ï½†ã€€ï½“ï½ï½ï½…ï½”ï½ˆï½‰ï½Žï½‡ï¼Ÿâ†“
+<ï¼¹ï½…ï½“>ã€€<ï¼®ï½>
+;jpn:â—†ã‚‚ã¡ã‚‚ã®ãŒã€€ã„ã£ã±ã„ã§â†“
+;jpn:ã€€ã‚ãŸã›ãªã„ã˜ã‚ƒãªã„ã‹ï¼@KEY()â†“
+;jpn:â—†ãªã‚“ã¨ã‹ã—ã¦ã€€ã¸ã‚‰ã—ã¦ãã‚Œã€‚â†“
+;jpn:ã€€ã€€<ã¯ã„>ã€€ã€€<ã„ã„ãˆ>
 @DSP_ITEM(2)
 @SELGOTO(_THRK_MACH_YES,_THRK_MACH_NO)
 
-_THRK_MACH_NO;‚»‚ê‚Å‚àƒCƒCƒG‚¾‚Á‚½‚ç
-Ÿ‚k‚‚‚‹C@‚”‚ˆ‚‰‚“@‚‰‚“@‚’‚…‚‚Œ‚Œ‚™@‚‰‚‚‚‚’‚”‚‚Ž‚”I@KEY()«
-Ÿ‚x‚‚•f‚–‚…@‚‡‚‚”@‚”‚@‚„‚•‚‚@‚“‚‚‚…‚”‚ˆ‚‰‚Ž‚‡II«
-<‚x‚…‚“>@<‚m‚>
-;jpn:Ÿ‚¾‚¢‚¶‚È‚±‚Æ‚¾‚¼I@KEY()«
-;jpn:Ÿ‚È‚ñ‚Æ‚©‚µ‚Ä@‚Ö‚ç‚µ‚Ä‚­‚êB«
-;jpn:@@<‚Í‚¢>@@<‚¢‚¢‚¦>
+_THRK_MACH_NO;ãã‚Œã§ã‚‚ã‚¤ã‚¤ã‚¨ã ã£ãŸã‚‰
+â—†ï¼¬ï½ï½ï½‹ï¼Œã€€ï½”ï½ˆï½‰ï½“ã€€ï½‰ï½“ã€€ï½’ï½…ï½ï½Œï½Œï½™ã€€ï½‰ï½ï½ï½ï½’ï½”ï½ï½Žï½”ï¼@KEY()â†“
+â—†ï¼¹ï½ï½•â€™ï½–ï½…ã€€ï½‡ï½ï½”ã€€ï½”ï½ã€€ï½„ï½•ï½ï½ã€€ï½“ï½ï½ï½…ï½”ï½ˆï½‰ï½Žï½‡ï¼ï¼â†“
+<ï¼¹ï½…ï½“>ã€€<ï¼®ï½>
+;jpn:â—†ã ã„ã˜ãªã“ã¨ã ãžï¼@KEY()â†“
+;jpn:â—†ãªã‚“ã¨ã‹ã—ã¦ã€€ã¸ã‚‰ã—ã¦ãã‚Œã€‚â†“
+;jpn:ã€€ã€€<ã¯ã„>ã€€ã€€<ã„ã„ãˆ>
 @DSP_ITEM(2)
 @SELGOTO(_THRK_MACH_YES,_THRK_MACH_NO_NO)
 @GOTO(_THRK_MACH_NO_NO)
@@ -167,32 +167,32 @@ _THRK_MACH_YES;
 @GOTO(_THRK_MACH_MAIN)
 
 _THRK_MACH_NO_NO;
-Ÿ‚`‚Œ‚Œ@‚’‚‰‚‡‚ˆ‚”‚™C@‚hf‚@‚Š‚•‚“‚”@‚‡‚‚‰‚Ž‚‡@‚”‚@‚ˆ‚‚Ž‚‡@‚‚•‚”@‚‚’‚‚•‚Ž‚„@‚ˆ‚…‚’‚…C@‚”‚ˆ‚…‚ŽD@KEY()«
-Ÿ‚x‚@‚‡‚‚”‚”‚@‚ˆ‚‚–‚…@‚“‚‚‚…@‚“‚‚‚ƒ‚…@‚†‚‚’@‚”‚ˆ‚‰‚“@‚”‚ˆ‚‰‚Ž‚‡@‚‚‚™@‚”‚ˆ‚…@‚”‚‰‚‚…@‚h@‚ƒ‚‚‚…@‚‚‚‚ƒ‚‹C@‚‚‹‚‚™H
-;jpn:Ÿ‚¶‚á‚ ‚³[@WI(20)@‚¨‚ê«
-;jpn:@‚»‚Ì‚Ö‚ñ‚ð«
-;jpn:@‚Ô‚ç‚Ô‚ç‚µ‚Ä‚­‚é‚©‚ç‚³[B@KEY()«
-;jpn:Ÿ‚È‚ñ‚©@‚Ö‚ç‚µ‚Æ‚¢‚Ä‚­‚ê‚æB@WI(60)«
-;jpn:@‚½‚Ì‚Þ‚æI
+â—†ï¼¡ï½Œï½Œã€€ï½’ï½‰ï½‡ï½ˆï½”ï½™ï¼Œã€€ï¼©â€™ï½ã€€ï½Šï½•ï½“ï½”ã€€ï½‡ï½ï½‰ï½Žï½‡ã€€ï½”ï½ã€€ï½ˆï½ï½Žï½‡ã€€ï½ï½•ï½”ã€€ï½ï½’ï½ï½•ï½Žï½„ã€€ï½ˆï½…ï½’ï½…ï¼Œã€€ï½”ï½ˆï½…ï½Žï¼Ž@KEY()â†“
+â—†ï¼¹ï½ã€€ï½‡ï½ï½”ï½”ï½ã€€ï½ˆï½ï½–ï½…ã€€ï½“ï½ï½ï½…ã€€ï½“ï½ï½ï½ƒï½…ã€€ï½†ï½ï½’ã€€ï½”ï½ˆï½‰ï½“ã€€ï½”ï½ˆï½‰ï½Žï½‡ã€€ï½‚ï½™ã€€ï½”ï½ˆï½…ã€€ï½”ï½‰ï½ï½…ã€€ï¼©ã€€ï½ƒï½ï½ï½…ã€€ï½‚ï½ï½ƒï½‹ï¼Œã€€ï½ï½‹ï½ï½™ï¼Ÿ
+;jpn:â—†ã˜ã‚ƒã‚ã•ãƒ¼@WI(20)ã€€ãŠã‚Œâ†“
+;jpn:ã€€ãã®ã¸ã‚“ã‚’â†“
+;jpn:ã€€ã¶ã‚‰ã¶ã‚‰ã—ã¦ãã‚‹ã‹ã‚‰ã•ãƒ¼ã€‚@KEY()â†“
+;jpn:â—†ãªã‚“ã‹ã€€ã¸ã‚‰ã—ã¨ã„ã¦ãã‚Œã‚ˆã€‚@WI(60)â†“
+;jpn:ã€€ãŸã®ã‚€ã‚ˆï¼
 @KEY()
 @CLOSEALL()
 @GOSUB(MSG_SUB_DELIVERY_BYE)
-@CLRF(FLG_SYS_DISTLPT);ƒeƒŒƒ|[ƒg‹–‰Â
-x
+@CLRF(FLG_SYS_DISTLPT);ãƒ†ãƒ¬ãƒãƒ¼ãƒˆè¨±å¯
+ã€
 _THRK_MACH_DROP_NG;
-Ÿ‚g‚‚Ž‚‡@‚‚ŽI@@‚s‚ˆ‚‚”f‚“@‚—‚‚™@‚”‚‚@‚ƒ‚‚‚Œ@‚”‚@‚Š‚•‚“‚”@‚”‚ˆ‚’‚‚—@‚‚—‚‚™I@KEY()«
-Ÿ‚j‚…‚…‚@‚‰‚”I
-;jpn:Ÿ‚¿‚å‚Á‚Æ‚Ü‚Á‚½I@WI(30)«
-;jpn:@‚»‚ê‚Í‚·‚Ä‚¿‚á‚¾‚ß‚¾‚æB
-@KEY()«
+â—†ï¼¨ï½ï½Žï½‡ã€€ï½ï½Žï¼ã€€ã€€ï¼´ï½ˆï½ï½”â€™ï½“ã€€ï½—ï½ï½™ã€€ï½”ï½ï½ã€€ï½ƒï½ï½ï½Œã€€ï½”ï½ã€€ï½Šï½•ï½“ï½”ã€€ï½”ï½ˆï½’ï½ï½—ã€€ï½ï½—ï½ï½™ï¼@KEY()â†“
+â—†ï¼«ï½…ï½…ï½ã€€ï½‰ï½”ï¼
+;jpn:â—†ã¡ã‚‡ã£ã¨ã¾ã£ãŸï¼@WI(30)â†“
+;jpn:ã€€ãã‚Œã¯ã™ã¦ã¡ã‚ƒã ã‚ã ã‚ˆã€‚
+@KEY()â†“
 @GOTO(_THRK_MACH_YES)
-x
-MSG_EVT_HOIHOI_RETRY;‚¾‚ß‚Å‚àƒŠƒgƒ‰ƒCƒzƒCƒzƒC
+ã€
+MSG_EVT_HOIHOI_RETRY;ã ã‚ã§ã‚‚ãƒªãƒˆãƒ©ã‚¤ãƒ›ã‚¤ãƒ›ã‚¤
 @DELIVERY(DELIVERY_HOIHOI)
-x
+ã€
 
 
-;	i‚®‚é‚ß‚Æ‚¤‚Óƒ}ƒVƒ“”z’B(ƒGƒXƒJƒ‹ƒS‰^‘—)j
+;	ï¼ˆãã‚‹ã‚ã¨ã†ãµãƒžã‚·ãƒ³é…é”(ã‚¨ã‚¹ã‚«ãƒ«ã‚´é‹é€)ï¼‰
 
 MSG_MOON_TELE_APPLE_TOFU;
 @BGMSTART(0,BGM_msc1)
@@ -202,192 +202,192 @@ MSG_MOON_TELE_APPLE_TOFU;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_fors)
 @OPEN(1)
-Ÿ‚g‚…‚Œ‚Œ‚C@‚”‚ˆ‚‰‚“@‚‰‚“@‚`‚‚‚Œ‚…@‚j‚‰‚„D@KEY()«
-Ÿ‚hf‚–‚…@‚ƒ‚‚‚…@‚•‚@‚—‚‰‚”‚ˆ@‚‚Ž‚‚”‚ˆ‚…‚’@‚—‚‚ƒ‚‹‚™@‚‰‚Ž‚–‚…‚Ž‚”‚‰‚‚Ž@‚”‚ˆ‚‚”@‚h@‚”‚ˆ‚‰‚Ž‚‹@‚ˆ‚‚“@‚’‚…‚‚Œ@‚‚‚”‚…‚Ž‚”‚‰‚‚ŒD@KEY()«
-Ÿ‚l‚‚™‚‚‚…@‚™‚‚•@‚—‚‚Žf‚”C@‚‚‚•‚”@‚‚Ž‚™‚—‚‚™DDD@KEY()«
-Ÿ‚‰‚”f‚“@‚ƒ‚‚Œ‚Œ‚…‚„@‚”‚ˆ‚…@h‚f‚‚•‚’‚‚…‚”@‚x‚‚‡‚•‚’‚”@‚l‚‚ƒ‚ˆ‚‰‚Ž‚…Dh@KEY()«
-Ÿ‚h‚”@‚‚‚‹‚…‚“@‚‚‚Ž‚™@‚„‚‰‚†‚†‚…‚’‚…‚Ž‚”@‚†‚Œ‚‚–‚‚’‚“@‚‚†@‚™‚‚‡‚•‚’‚”D@KEY()«
-Ÿ‚s‚ˆ‚…@‚‚Ž‚Œ‚™@‚‚’‚‚‚‚Œ‚…‚@‚‰‚“C@‚’‚‰‚‡‚ˆ‚”@‚Ž‚‚—C@KEY()«
-Ÿ‚‰‚”@‚ƒ‚‚Ž@‚‚Ž‚Œ‚™@‚‚‚‹‚…@‚”‚’‚‚•‚”|‚†‚Œ‚‚–‚‚’‚…‚„@‚™‚‚‡‚•‚’‚”DDD@KEY()«
-Ÿ‚r‚C@‚hf‚@‚ˆ‚‚–‚‰‚Ž‚‡@‚”‚ˆ‚…@‚‚‚ƒ‚ˆ‚‰‚Ž‚…@‚„‚…‚Œ‚‰‚–‚…‚’‚…‚„@‚”‚@‚™‚‚•@‚–‚‰‚@‚d‚“‚ƒ‚‚’‚‡‚@‚d‚˜‚‚’‚…‚“‚“D@KEY()«
-Ÿ‚h‚”f‚“@‚ƒ‚‚‚‰‚Ž‚‡@h‚m‚…‚‡‚Œ‚…‚ƒ‚”‚…‚„@‚b‚Œ‚‚“‚“Dh@KEY()«
-Ÿ‚g‚‚‚…‚†‚•‚Œ‚Œ‚™C@‚™‚‚•f‚Œ‚Œ@‚‡‚…‚”@‚‰‚”@‚“‚‚‚ŽD@KEY()«
-Ÿ‚x‚…‚‚ˆC@‚…‚–‚…‚’‚™‚”‚ˆ‚‰‚Ž‚‡@‚‰‚“DDD
-;jpn:Ÿ‚à‚µ‚à‚µ@ƒAƒbƒvƒ‹ƒLƒbƒh‚Å‚·B«
-;jpn:@‚Ö‚ñ‚È‚à‚Ì‚ª@‚Å‚«‚½‚ñ‚Å‚·‚ª«
-;jpn:@‚â‚­‚É‚½‚Â‚©‚Ç‚¤‚©ddB@KEY()«
-;jpn:Ÿu‚®‚é‚ß‚Æ‚¤‚Óƒ}ƒVƒ“v‚Á‚Ä‚¢‚Á‚Ä«
-;jpn:@‚¢‚ë‚ñ‚È‚¨‚¢‚µ‚³‚Ì@‚Æ‚¤‚Ó‚ª«
-;jpn:@‚Å‚«‚¿‚á‚¤‚ñ‚Å‚·B@KEY()«
-;jpn:Ÿ‚Å‚à@‚¢‚Ü‚Ì‚Æ‚±‚ë«
-;jpn:@u‚¢‚¿‚²‚Æ‚¤‚Óv‚µ‚©«
-;jpn:@‚¤‚Ü‚­‚¢‚©‚È‚­‚Á‚Ädd@KEY()«
-;jpn:Ÿ‚Ü@‚Æ‚É‚©‚­@KEY()«
-;jpn:ŸƒGƒXƒJƒ‹ƒS‚¤‚ñ‚»‚¤‚Ì«
-;jpn:@uƒEƒbƒJƒŠ‚Æ‚Á‚«‚ã‚¤‚Ñ‚ñv‚Å«
-;jpn:@‚Æ‚Ç‚¯‚Ä‚à‚ç‚¢‚Ü‚·‚©‚ç@KEY()«
-;jpn:Ÿ‚¿‚©‚¢‚¤‚¿‚É@‚Â‚­‚Æ‚¨‚à‚¢‚Ü‚·B«
-;jpn:@‚¨‚Á‚Æ@‚¯‚ñ‚«‚ã‚¤‚µ‚Â‚Ì‚Ù‚¤‚ª
-@KEY()«
-;—ƒhƒbƒJ[ƒ“
-Ÿi‚j‚‚‚‚‚‚‚‚Ij@KEY()«
-ŸDDD‚t‚ˆC@‚hf‚–‚…‚‡‚‚”‚“‚‚‚…‚‚’‚‚‚‚Œ‚…‚‚“‚ˆ‚…‚’‚…‚‡‚‚”‚”‚‚‡‚C@‚‚‚™‚…I
-;jpn:Ÿ‚¶‚á@‚¿‚å‚Á‚Æ«
-;jpn:@‚Æ‚è‚±‚ñ‚Å‚é‚ñ‚Å«
-;jpn:@‚µ‚Â‚ê‚¢‚µ‚Ü[‚·I
+â—†ï¼¨ï½…ï½Œï½Œï½ï¼Œã€€ï½”ï½ˆï½‰ï½“ã€€ï½‰ï½“ã€€ï¼¡ï½ï½ï½Œï½…ã€€ï¼«ï½‰ï½„ï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½–ï½…ã€€ï½ƒï½ï½ï½…ã€€ï½•ï½ã€€ï½—ï½‰ï½”ï½ˆã€€ï½ï½Žï½ï½”ï½ˆï½…ï½’ã€€ï½—ï½ï½ƒï½‹ï½™ã€€ï½‰ï½Žï½–ï½…ï½Žï½”ï½‰ï½ï½Žã€€ï½”ï½ˆï½ï½”ã€€ï¼©ã€€ï½”ï½ˆï½‰ï½Žï½‹ã€€ï½ˆï½ï½“ã€€ï½’ï½…ï½ï½Œã€€ï½ï½ï½”ï½…ï½Žï½”ï½‰ï½ï½Œï¼Ž@KEY()â†“
+â—†ï¼­ï½ï½™ï½‚ï½…ã€€ï½™ï½ï½•ã€€ï½—ï½ï½Žâ€™ï½”ï¼Œã€€ï½‚ï½•ï½”ã€€ï½ï½Žï½™ï½—ï½ï½™ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï½‰ï½”â€™ï½“ã€€ï½ƒï½ï½Œï½Œï½…ï½„ã€€ï½”ï½ˆï½…ã€€â€ï¼§ï½ï½•ï½’ï½ï½…ï½”ã€€ï¼¹ï½ï½‡ï½•ï½’ï½”ã€€ï¼­ï½ï½ƒï½ˆï½‰ï½Žï½…ï¼Žâ€@KEY()â†“
+â—†ï¼©ï½”ã€€ï½ï½ï½‹ï½…ï½“ã€€ï½ï½ï½Žï½™ã€€ï½„ï½‰ï½†ï½†ï½…ï½’ï½…ï½Žï½”ã€€ï½†ï½Œï½ï½–ï½ï½’ï½“ã€€ï½ï½†ã€€ï½™ï½ï½‡ï½•ï½’ï½”ï¼Ž@KEY()â†“
+â—†ï¼´ï½ˆï½…ã€€ï½ï½Žï½Œï½™ã€€ï½ï½’ï½ï½‚ï½Œï½…ï½ã€€ï½‰ï½“ï¼Œã€€ï½’ï½‰ï½‡ï½ˆï½”ã€€ï½Žï½ï½—ï¼Œ@KEY()â†“
+â—†ï½‰ï½”ã€€ï½ƒï½ï½Žã€€ï½ï½Žï½Œï½™ã€€ï½ï½ï½‹ï½…ã€€ï½”ï½’ï½ï½•ï½”âˆ’ï½†ï½Œï½ï½–ï½ï½’ï½…ï½„ã€€ï½™ï½ï½‡ï½•ï½’ï½”ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼³ï½ï¼Œã€€ï¼©â€™ï½ã€€ï½ˆï½ï½–ï½‰ï½Žï½‡ã€€ï½”ï½ˆï½…ã€€ï½ï½ï½ƒï½ˆï½‰ï½Žï½…ã€€ï½„ï½…ï½Œï½‰ï½–ï½…ï½’ï½…ï½„ã€€ï½”ï½ã€€ï½™ï½ï½•ã€€ï½–ï½‰ï½ã€€ï¼¥ï½“ï½ƒï½ï½’ï½‡ï½ã€€ï¼¥ï½˜ï½ï½’ï½…ï½“ï½“ï¼Ž@KEY()â†“
+â—†ï¼©ï½”â€™ï½“ã€€ï½ƒï½ï½ï½‰ï½Žï½‡ã€€â€ï¼®ï½…ï½‡ï½Œï½…ï½ƒï½”ï½…ï½„ã€€ï¼£ï½Œï½ï½“ï½“ï¼Žâ€@KEY()â†“
+â—†ï¼¨ï½ï½ï½…ï½†ï½•ï½Œï½Œï½™ï¼Œã€€ï½™ï½ï½•â€™ï½Œï½Œã€€ï½‡ï½…ï½”ã€€ï½‰ï½”ã€€ï½“ï½ï½ï½Žï¼Ž@KEY()â†“
+â—†ï¼¹ï½…ï½ï½ˆï¼Œã€€ï½…ï½–ï½…ï½’ï½™ï½”ï½ˆï½‰ï½Žï½‡ã€€ï½‰ï½“ï¼Žï¼Žï¼Ž
+;jpn:â—†ã‚‚ã—ã‚‚ã—ã€€ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã§ã™ã€‚â†“
+;jpn:ã€€ã¸ã‚“ãªã‚‚ã®ãŒã€€ã§ããŸã‚“ã§ã™ãŒâ†“
+;jpn:ã€€ã‚„ãã«ãŸã¤ã‹ã©ã†ã‹â€¥â€¥ã€‚@KEY()â†“
+;jpn:â—†ã€Œãã‚‹ã‚ã¨ã†ãµãƒžã‚·ãƒ³ã€ã£ã¦ã„ã£ã¦â†“
+;jpn:ã€€ã„ã‚ã‚“ãªãŠã„ã—ã•ã®ã€€ã¨ã†ãµãŒâ†“
+;jpn:ã€€ã§ãã¡ã‚ƒã†ã‚“ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã§ã‚‚ã€€ã„ã¾ã®ã¨ã“ã‚â†“
+;jpn:ã€€ã€Œã„ã¡ã”ã¨ã†ãµã€ã—ã‹â†“
+;jpn:ã€€ã†ã¾ãã„ã‹ãªãã£ã¦â€¥â€¥@KEY()â†“
+;jpn:â—†ã¾ã€€ã¨ã«ã‹ã@KEY()â†“
+;jpn:â—†ã‚¨ã‚¹ã‚«ãƒ«ã‚´ã†ã‚“ãã†ã®â†“
+;jpn:ã€€ã€Œã‚¦ãƒƒã‚«ãƒªã¨ã£ãã‚…ã†ã³ã‚“ã€ã§â†“
+;jpn:ã€€ã¨ã©ã‘ã¦ã‚‚ã‚‰ã„ã¾ã™ã‹ã‚‰@KEY()â†“
+;jpn:â—†ã¡ã‹ã„ã†ã¡ã«ã€€ã¤ãã¨ãŠã‚‚ã„ã¾ã™ã€‚â†“
+;jpn:ã€€ãŠã£ã¨ã€€ã‘ã‚“ãã‚…ã†ã—ã¤ã®ã»ã†ãŒ
+@KEY()â†“
+;ï¼ ãƒ‰ãƒƒã‚«ãƒ¼ãƒ³
+â—†ï¼ˆï¼«ï½ï½‚ï½ï½ï½ï½ï½ï¼ï¼‰@KEY()â†“
+â—†ï¼Žï¼Žï¼Žï¼µï½ˆï¼Œã€€ï¼©â€™ï½–ï½…ï½‡ï½ï½”ï½“ï½ï½ï½…ï½ï½’ï½ï½‚ï½Œï½…ï½ï½“ï½ˆï½…ï½’ï½…ï½‡ï½ï½”ï½”ï½ï½‡ï½ï¼Œã€€ï½‚ï½™ï½…ï¼
+;jpn:â—†ã˜ã‚ƒã€€ã¡ã‚‡ã£ã¨â†“
+;jpn:ã€€ã¨ã‚Šã“ã‚“ã§ã‚‹ã‚“ã§â†“
+;jpn:ã€€ã—ã¤ã‚Œã„ã—ã¾ãƒ¼ã™ï¼
 @KEYNP()
 @SE(SE_se0b_tel_put)
 @CLOSEALL()
 ;------------
 @MUSISTART()
 ;-----------
-x
+ã€
 
 MSG_FOUR_ESCARGO_TOFU;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-Ÿ–‚b‚’‚‚“‚ˆ–@KEY()«
-Ÿ‚n‚‚‚‚“I@KEY()«
-Ÿ–‚b‚’‚•‚Ž‚ƒ‚ˆ–@KEY()«
-Ÿ‚n‚‚‚‚“I@KEY()«
-ŸDDD‚f‚’‚…‚…‚”‚‰‚Ž‚‡‚“I@@i‚h‚”f‚“@‚d‚“‚ƒ‚‚’‚‡‚@‚d‚˜‚‚’‚…‚“‚“f‚“@‚Ž‚…‚‡‚Œ‚…‚ƒ‚”‚…‚„@‚ƒ‚Œ‚‚“‚“Dj
-;jpn:Ÿ‚¨‚Á‚ÆI@KEY()«
-;jpn:Ÿ‚¨‚¨[‚Á‚ÆI@‚Æ‚ÁI«
-;jpn:@uƒEƒbƒJƒŠ‚Æ‚Á‚«‚ã‚¤‚Ñ‚ñv«
-;jpn:@‚Å[‚·I
-@KEY()«
-;@WI(60)«
-Ÿ‚v‚ˆ‚…‚—I@@‚h@‚Š‚•‚“‚”@‚‡‚‚”@‚ˆ‚…‚’‚…@‚†‚’‚‚@‚”‚ˆ‚…@‚c‚•‚“‚”‚™@‚c‚•‚Ž‚…@‚„‚…‚“‚…‚’‚”D@KEY()«
-Ÿ‚s‚ˆ‚…‚’‚…@‚—‚‚“@‚”‚ˆ‚‰‚“@‚“‚•‚Ž‚‚‚‚”‚ˆ‚‰‚Ž‚‡@‚‡‚•‚™C@KEY()«
-Ÿ‚‚Ž‚„@‚ˆ‚…@‚”‚‚Œ‚„@‚‚…@‚‚‚‚‚•‚”@‚@‚ƒ‚‚–‚…@‚—‚‰‚”‚ˆ@‚Œ‚‚”‚“@‚‚†@‚‚‚Ž‚‹‚…‚™‚“DDD‚‚’@‚—‚‚“@‚‰‚”@‚‚’‚‚Ž‚‡‚•‚”‚‚Ž‚“H@KEY()«
-Ÿ‚`‚Ž‚™‚—‚‚™C@‚ˆ‚…@‚“‚‚‰‚„DDD‚—‚…‚Œ‚ŒDDD‚•‚ˆDDD‚h@‚†‚‚’‚‡‚‚”D@KEY()«
-Ÿ‚x‚…‚C@‚h@‚†‚‚’‚‡‚‚”DDD‚‚ƒ‚”‚•‚‚Œ‚Œ‚™@‚h@‚†‚‚’‚‡‚‚”@‚”‚ˆ‚…@‚“‚”‚•‚†‚†@‚h@‚—‚‚“@‚“‚•‚‚‚‚“‚…‚„@‚”‚@‚„‚…‚Œ‚‰‚–‚…‚’C@‚”‚‚D@KEY()«
-Ÿ‚h@‚”‚ˆ‚‰‚Ž‚‹@‚‰‚”@‚—‚‚“@‚“‚‚‚…@‚—‚…‚‰‚’‚„@‚‚‚ƒ‚ˆ‚‰‚Ž‚…@‚”‚@‚‚‚‹‚…@‚”‚’‚‚•‚”|@KEY()«
-Ÿ‚†‚Œ‚‚–‚‚’‚…‚„@‚™‚‚‡‚•‚’‚”D@KEY()«
-Ÿ‚x‚…‚‚ˆC@‚h@‚†‚‚’‚‡‚‚”@‚‰‚”@‚‚”@‚”‚ˆ‚…@‚„‚…‚“‚…‚’‚”DDD@KEY()«
-Ÿ‚hf‚@‚Ž‚‚”@‚‡‚‚‰‚Ž‚‡@‚‚‚‚ƒ‚‹@‚”‚ˆ‚‚”@‚—‚‚™C@‚“‚@‚„‚‚Žf‚”@‚‚“‚‹@‚‚…@‚”‚@‚‡‚…‚”@‚”‚ˆ‚…@‚‚‚ƒ‚‹‚‚‡‚…DDD@KEY()«
-Ÿ‚h@‚‚…‚‚ŽC@‚‰‚”f‚“@‚™‚‚•‚’@‚‚‚ƒ‚‹‚‚‡‚…C@‚’‚‰‚‡‚ˆ‚”H@KEY()«
-Ÿ‚r‚@‚x‚n‚t@‚‡‚@‚‡‚…‚”@‚‰‚”I@KEY()«
-Ÿ‚f‚@‚‚ŽC@‚‡‚…‚”@‚‚•‚”@‚‚†@‚ˆ‚…‚’‚…D@KEY()«
-Ÿ‚l‚‚™‚‚‚…@‚”‚ˆ‚‚”@‚”‚ˆ‚‰‚Ž‚‡@‚h@‚†‚‚’‚‡‚‚”@‚‰‚“@‚‰‚‚‚‚’‚”‚‚Ž‚”@‚”‚@‚™‚‚•DDD@KEY()«
-Ÿ‚r‚DDD‚ˆ‚‚–‚…@‚@‚‡‚‚‚„@‚”‚‰‚‚…@‚‰‚Ž@‚”‚ˆ‚…@‚„‚…‚“‚…‚’‚”IDDD
-;jpn:ŸƒhƒRƒhƒR‚³‚Î‚­‚Á‚Ä@ƒzƒ‰«
-;jpn:@‚ ‚é‚¶‚á‚È‚¢‚Å‚·‚©B@KEY()«
-;jpn:Ÿ‚ ‚»‚±‚Å@‚É‚Á‚±‚¤‚æ‚­‚µ‚Ä‚é«
-;jpn:@‚¨‚Æ‚±‚ª@‚¢‚Ü‚µ‚Ä‚Ëdd«
-;jpn:@‚»‚¢‚Â‚ª@ƒTƒ‹‚Ì‚¨‚¨‚¢‚Ç‚¤‚­‚Â‚ð@KEY()«
-;jpn:Ÿ‚¨‚µ‚¦‚Ä‚­‚ê‚Ü‚µ‚ÄddƒG[ƒg«
-;jpn:@‚Â‚Ü‚èdd@KEY()«
-;jpn:Ÿ‚í‚·‚ê‚Ä‚«‚¿‚á‚Á‚½@‚í‚¯‚Å‚·‚æB@KEY()«
-;jpn:Ÿ‚±‚Ì@KEY()«
-;jpn:Ÿ‚í‚½‚µ‚ªI@KEY()«
-;jpn:ŸƒAƒbƒvƒ‹ƒLƒbƒh‚³‚ñ‚©‚ç‚Ì«
-;jpn:@‚¨‚Æ‚Ç‚¯‚à‚Ì‚ð@‚ËB@KEY()«
-;jpn:Ÿ‚¢‚¿‚²‚Æ‚¤‚Ó‚ð@‚Â‚­‚é‚Æ‚©‚Ì«
-;jpn:@ƒ}ƒVƒ“‚Æ‚©‚ð@‚ËB@KEY()«
-;jpn:Ÿ‚í‚·‚ê‚Ä‚«‚½@‚ÆB@KEY()«
-;jpn:Ÿ‚í‚½‚µ‚ªI@KEY()«
-;jpn:Ÿ‚Å‚à@‚í‚½‚µ‚Í@‚Æ‚è‚É‚¢‚©‚È‚¢B@KEY()«
-;jpn:Ÿ‚È‚º‚È‚ç@‚ ‚È‚½‚Ì‚à‚Ì‚¾‚©‚çI@KEY()«
-;jpn:Ÿ‚ä‚¯I«
-;jpn:@‚ä‚«‚È‚³‚¢B«
-;jpn:@‚í‚·‚ê‚à‚Ì‚ð@‚Æ‚è‚ÉI@KEY()«
-;jpn:Ÿ‚·‚·‚ß@@DSP_NAME(0)«
-;jpn:@‚µ‚ã‚Á‚Ï‚Â‚¾[I
+â—†ï¼Šï¼£ï½’ï½ï½“ï½ˆï¼Š@KEY()â†“
+â—†ï¼¯ï½ï½ï½ï½“ï¼@KEY()â†“
+â—†ï¼Šï¼£ï½’ï½•ï½Žï½ƒï½ˆï¼Š@KEY()â†“
+â—†ï¼¯ï½ï½ï½ï½“ï¼@KEY()â†“
+â—†ï¼Žï¼Žï¼Žï¼§ï½’ï½…ï½…ï½”ï½‰ï½Žï½‡ï½“ï¼ã€€ã€€ï¼ˆï¼©ï½”â€™ï½“ã€€ï¼¥ï½“ï½ƒï½ï½’ï½‡ï½ã€€ï¼¥ï½˜ï½ï½’ï½…ï½“ï½“â€™ï½“ã€€ï½Žï½…ï½‡ï½Œï½…ï½ƒï½”ï½…ï½„ã€€ï½ƒï½Œï½ï½“ï½“ï¼Žï¼‰
+;jpn:â—†ãŠã£ã¨ï¼@KEY()â†“
+;jpn:â—†ãŠãŠãƒ¼ã£ã¨ï¼ã€€ã¨ã£ï¼â†“
+;jpn:ã€€ã€Œã‚¦ãƒƒã‚«ãƒªã¨ã£ãã‚…ã†ã³ã‚“ã€â†“
+;jpn:ã€€ã§ãƒ¼ã™ï¼
+@KEY()â†“
+;@WI(60)â†“
+â—†ï¼·ï½ˆï½…ï½—ï¼ã€€ã€€ï¼©ã€€ï½Šï½•ï½“ï½”ã€€ï½‡ï½ï½”ã€€ï½ˆï½…ï½’ï½…ã€€ï½†ï½’ï½ï½ã€€ï½”ï½ˆï½…ã€€ï¼¤ï½•ï½“ï½”ï½™ã€€ï¼¤ï½•ï½Žï½…ã€€ï½„ï½…ï½“ï½…ï½’ï½”ï¼Ž@KEY()â†“
+â—†ï¼´ï½ˆï½…ï½’ï½…ã€€ï½—ï½ï½“ã€€ï½”ï½ˆï½‰ï½“ã€€ï½“ï½•ï½Žï½‚ï½ï½”ï½ˆï½‰ï½Žï½‡ã€€ï½‡ï½•ï½™ï¼Œ@KEY()â†“
+â—†ï½ï½Žï½„ã€€ï½ˆï½…ã€€ï½”ï½ï½Œï½„ã€€ï½ï½…ã€€ï½ï½‚ï½ï½•ï½”ã€€ï½ã€€ï½ƒï½ï½–ï½…ã€€ï½—ï½‰ï½”ï½ˆã€€ï½Œï½ï½”ï½“ã€€ï½ï½†ã€€ï½ï½ï½Žï½‹ï½…ï½™ï½“ï¼Žï¼Žï¼Žï½ï½’ã€€ï½—ï½ï½“ã€€ï½‰ï½”ã€€ï½ï½’ï½ï½Žï½‡ï½•ï½”ï½ï½Žï½“ï¼Ÿ@KEY()â†“
+â—†ï¼¡ï½Žï½™ï½—ï½ï½™ï¼Œã€€ï½ˆï½…ã€€ï½“ï½ï½‰ï½„ï¼Žï¼Žï¼Žï½—ï½…ï½Œï½Œï¼Žï¼Žï¼Žï½•ï½ˆï¼Žï¼Žï¼Žï¼©ã€€ï½†ï½ï½’ï½‡ï½ï½”ï¼Ž@KEY()â†“
+â—†ï¼¹ï½…ï½ï¼Œã€€ï¼©ã€€ï½†ï½ï½’ï½‡ï½ï½”ï¼Žï¼Žï¼Žï½ï½ƒï½”ï½•ï½ï½Œï½Œï½™ã€€ï¼©ã€€ï½†ï½ï½’ï½‡ï½ï½”ã€€ï½”ï½ˆï½…ã€€ï½“ï½”ï½•ï½†ï½†ã€€ï¼©ã€€ï½—ï½ï½“ã€€ï½“ï½•ï½ï½ï½ï½“ï½…ï½„ã€€ï½”ï½ã€€ï½„ï½…ï½Œï½‰ï½–ï½…ï½’ï¼Œã€€ï½”ï½ï½ï¼Ž@KEY()â†“
+â—†ï¼©ã€€ï½”ï½ˆï½‰ï½Žï½‹ã€€ï½‰ï½”ã€€ï½—ï½ï½“ã€€ï½“ï½ï½ï½…ã€€ï½—ï½…ï½‰ï½’ï½„ã€€ï½ï½ï½ƒï½ˆï½‰ï½Žï½…ã€€ï½”ï½ã€€ï½ï½ï½‹ï½…ã€€ï½”ï½’ï½ï½•ï½”âˆ’@KEY()â†“
+â—†ï½†ï½Œï½ï½–ï½ï½’ï½…ï½„ã€€ï½™ï½ï½‡ï½•ï½’ï½”ï¼Ž@KEY()â†“
+â—†ï¼¹ï½…ï½ï½ˆï¼Œã€€ï¼©ã€€ï½†ï½ï½’ï½‡ï½ï½”ã€€ï½‰ï½”ã€€ï½ï½”ã€€ï½”ï½ˆï½…ã€€ï½„ï½…ï½“ï½…ï½’ï½”ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½Žï½ï½”ã€€ï½‡ï½ï½‰ï½Žï½‡ã€€ï½‚ï½ï½ƒï½‹ã€€ï½”ï½ˆï½ï½”ã€€ï½—ï½ï½™ï¼Œã€€ï½“ï½ã€€ï½„ï½ï½Žâ€™ï½”ã€€ï½ï½“ï½‹ã€€ï½ï½…ã€€ï½”ï½ã€€ï½‡ï½…ï½”ã€€ï½”ï½ˆï½…ã€€ï½ï½ï½ƒï½‹ï½ï½‡ï½…ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼©ã€€ï½ï½…ï½ï½Žï¼Œã€€ï½‰ï½”â€™ï½“ã€€ï½™ï½ï½•ï½’ã€€ï½ï½ï½ƒï½‹ï½ï½‡ï½…ï¼Œã€€ï½’ï½‰ï½‡ï½ˆï½”ï¼Ÿ@KEY()â†“
+â—†ï¼³ï½ã€€ï¼¹ï¼¯ï¼µã€€ï½‡ï½ã€€ï½‡ï½…ï½”ã€€ï½‰ï½”ï¼@KEY()â†“
+â—†ï¼§ï½ã€€ï½ï½Žï¼Œã€€ï½‡ï½…ï½”ã€€ï½ï½•ï½”ã€€ï½ï½†ã€€ï½ˆï½…ï½’ï½…ï¼Ž@KEY()â†“
+â—†ï¼­ï½ï½™ï½‚ï½…ã€€ï½”ï½ˆï½ï½”ã€€ï½”ï½ˆï½‰ï½Žï½‡ã€€ï¼©ã€€ï½†ï½ï½’ï½‡ï½ï½”ã€€ï½‰ï½“ã€€ï½‰ï½ï½ï½ï½’ï½”ï½ï½Žï½”ã€€ï½”ï½ã€€ï½™ï½ï½•ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼³ï½ï¼Žï¼Žï¼Žï½ˆï½ï½–ï½…ã€€ï½ã€€ï½‡ï½ï½ï½„ã€€ï½”ï½‰ï½ï½…ã€€ï½‰ï½Žã€€ï½”ï½ˆï½…ã€€ï½„ï½…ï½“ï½…ï½’ï½”ï¼ï¼Žï¼Žï¼Ž
+;jpn:â—†ãƒ‰ã‚³ãƒ‰ã‚³ã•ã°ãã£ã¦ã€€ãƒ›ãƒ©â†“
+;jpn:ã€€ã‚ã‚‹ã˜ã‚ƒãªã„ã§ã™ã‹ã€‚@KEY()â†“
+;jpn:â—†ã‚ãã“ã§ã€€ã«ã£ã“ã†ã‚ˆãã—ã¦ã‚‹â†“
+;jpn:ã€€ãŠã¨ã“ãŒã€€ã„ã¾ã—ã¦ã­â€¥â€¥â†“
+;jpn:ã€€ãã„ã¤ãŒã€€ã‚µãƒ«ã®ãŠãŠã„ã©ã†ãã¤ã‚’@KEY()â†“
+;jpn:â—†ãŠã—ãˆã¦ãã‚Œã¾ã—ã¦â€¥â€¥ã‚¨ãƒ¼ãƒˆâ†“
+;jpn:ã€€ã¤ã¾ã‚Šâ€¥â€¥@KEY()â†“
+;jpn:â—†ã‚ã™ã‚Œã¦ãã¡ã‚ƒã£ãŸã€€ã‚ã‘ã§ã™ã‚ˆã€‚@KEY()â†“
+;jpn:â—†ã“ã®@KEY()â†“
+;jpn:â—†ã‚ãŸã—ãŒï¼@KEY()â†“
+;jpn:â—†ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã•ã‚“ã‹ã‚‰ã®â†“
+;jpn:ã€€ãŠã¨ã©ã‘ã‚‚ã®ã‚’ã€€ã­ã€‚@KEY()â†“
+;jpn:â—†ã„ã¡ã”ã¨ã†ãµã‚’ã€€ã¤ãã‚‹ã¨ã‹ã®â†“
+;jpn:ã€€ãƒžã‚·ãƒ³ã¨ã‹ã‚’ã€€ã­ã€‚@KEY()â†“
+;jpn:â—†ã‚ã™ã‚Œã¦ããŸã€€ã¨ã€‚@KEY()â†“
+;jpn:â—†ã‚ãŸã—ãŒï¼@KEY()â†“
+;jpn:â—†ã§ã‚‚ã€€ã‚ãŸã—ã¯ã€€ã¨ã‚Šã«ã„ã‹ãªã„ã€‚@KEY()â†“
+;jpn:â—†ãªãœãªã‚‰ã€€ã‚ãªãŸã®ã‚‚ã®ã ã‹ã‚‰ï¼@KEY()â†“
+;jpn:â—†ã‚†ã‘ï¼â†“
+;jpn:ã€€ã‚†ããªã•ã„ã€‚â†“
+;jpn:ã€€ã‚ã™ã‚Œã‚‚ã®ã‚’ã€€ã¨ã‚Šã«ï¼@KEY()â†“
+;jpn:â—†ã™ã™ã‚ã€€@DSP_NAME(0)â†“
+;jpn:ã€€ã—ã‚…ã£ã±ã¤ã ãƒ¼ï¼
 @KEYNP()
 @CLOSEALL()
-x
+ã€
 
 ;---------------------------------
-;	œi–²¨ƒ‰ƒ“ƒ}¨ƒv[’‡ŠÔ‚Éj
-;	œi“y¯’J‚Éƒ[ƒvj
-;	u‚Ç‚¤‚®‚â‚Ì‚©‚ñ‚Î‚ñv‚ðŽg‚¤
-;	u‚È‚Ü‚½‚Ü‚²v‚ªu‚Ð‚æ‚±v‚É
-;	‚QŽžŠÔƒpƒp
-;	ƒGƒXƒJƒ‹ƒS‰^‘—‚Ì”z’B
-;	œƒvƒŒƒCƒ„[–¼‚Ì“ü—Í
-;	ƒ}ƒbƒnƒsƒU‚Ì”z’B
+;	â—ï¼ˆå¤¢â†’ãƒ©ãƒ³ãƒžâ†’ãƒ—ãƒ¼ä»²é–“ã«ï¼‰
+;	â—ï¼ˆåœŸæ˜Ÿè°·ã«ãƒ¯ãƒ¼ãƒ—ï¼‰
+;	ã€Œã©ã†ãã‚„ã®ã‹ã‚“ã°ã‚“ã€ã‚’ä½¿ã†
+;	ã€Œãªã¾ãŸã¾ã”ã€ãŒã€Œã²ã‚ˆã“ã€ã«
+;	ï¼’æ™‚é–“ãƒ‘ãƒ‘
+;	ã‚¨ã‚¹ã‚«ãƒ«ã‚´é‹é€ã®é…é”
+;	â—ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼åã®å…¥åŠ›
+;	ãƒžãƒƒãƒãƒ”ã‚¶ã®é…é”
 ;----------------------------------------------------
 
 
-;	ŽÊ^‰®“oê¨‹L”OŽÊ^ŽB‰e
+;	å†™çœŸå±‹ç™»å ´â†’è¨˜å¿µå†™çœŸæ’®å½±
 
-;ƒƒbƒZ[ƒWƒXƒNƒŠƒvƒg@TAKE_PHOTO‚©‚çˆÈ‰º‚ªŽÀs‚³‚ê‚é
+;ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¹ã‚¯ãƒªãƒ—ãƒˆ@TAKE_PHOTOã‹ã‚‰ä»¥ä¸‹ãŒå®Ÿè¡Œã•ã‚Œã‚‹
 MSG_EVT_PHOTOGRAPHER;
-@CHKFGOTO(FLG_PHOTO_SATURN,MSG_END);ÅŒã‚ÌŽÊ^‚Í‚±‚Á‚»‚è
+@CHKFGOTO(FLG_PHOTO_SATURN,MSG_END);æœ€å¾Œã®å†™çœŸã¯ã“ã£ãã‚Š
 @GOSUB(MSG_SUB_BGM_FADEOUT_05SECOND)
 @BGMSTART(0,BGM_came1)
 @WI(180)
 @WI(60)
-@MOVE_GOM_CHAR(GOM_PHOTO,ANIM_PHOTOGRAPHER,OBJFX_SHOW_NONE)@@@@@@@@@@;ŽÊ^‰®
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;—Ž‰º‘Ò‚¿
-@MOVE_GOM_CHAR(GOM_SHADOW_FALL,ANIM_PHOTOGRAPHER_S,OBJFX_SHOW_NONE)@@;‰e
+@MOVE_GOM_CHAR(GOM_PHOTO,ANIM_PHOTOGRAPHER,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;å†™çœŸå±‹
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;è½ä¸‹å¾…ã¡
+@MOVE_GOM_CHAR(GOM_SHADOW_FALL,ANIM_PHOTOGRAPHER_S,OBJFX_SHOW_NONE)ã€€ã€€;å½±
 @WAITSYS()
 @COLD_GOM_CHAR(GOM_PHOTO)
 @GET_ORDER_PLAYER(1)
 @GET_PLAYER_DIR(0,3,GOM_PHOTO)
 @SET_PARTY_DIR(0)
 @OPEN(1)
-@FUNC(18)	;Ž©“]ŽÔ‚©‚ç~‚ë‚·
-Ÿ‚o‚‰‚ƒ‚”‚•‚’‚…‚“@‚”‚‚‹‚…‚Ž@‚‰‚Ž‚“‚”‚‚Ž‚”‚‚Ž‚…‚‚•‚“‚Œ‚™I@KEY()«
-Ÿ‚hf‚@‚@‚‚ˆ‚‚”‚‚‡‚’‚‚‚ˆ‚‰‚ƒ@‚‡‚…‚Ž‚‰‚•‚“C@‚‰‚†@‚h@‚„‚@‚“‚‚™@‚“‚@‚‚™‚“‚…‚Œ‚†I@KEY()«
-Ÿ‚n‚‹‚‚™C@‚‡‚…‚”@‚’‚…‚‚„‚™@‚†‚‚’@‚‚Ž@‚‰‚Ž‚“‚”‚‚Ž‚”@‚‚…‚‚‚’‚™I@KEY()«
-Ÿ‚k‚‚‚‹@‚‚”@‚”‚ˆ‚…@‚ƒ‚‚‚…‚’‚DDD@KEY()«
-Ÿ‚q‚…‚‚„‚™DDD@KEY()«
-Ÿ‚r‚‚™C@h‚†‚•‚š‚š‚™@‚‚‰‚ƒ‚‹‚Œ‚…‚“Dh
-;jpn:Ÿ‚©‚¯‚Â‚¯‚é‚Ì‚à@‚Í‚â‚¢«
-;jpn:@‚Æ‚é‚Ì‚à@‚Í‚â‚¢B@KEY()«
-;jpn:Ÿ‚Ä‚ñ‚³‚¢‚µ‚á‚µ‚ñ‚©‚Å[‚·B@KEY()«
-;jpn:Ÿ‚¨‚à‚¢‚Å‚Ì@‚µ‚á‚µ‚ñ‚ð«
-;jpn:@‚Æ‚è‚Ü‚·‚©‚ç‚Ë[B@KEY()«
-;jpn:Ÿ‚³‚ @‚±‚Á‚¿‚Þ‚¢‚Ä«
-;jpn:@‚Æ‚è‚Ü‚·‚æ[‚ÁI@KEY()«
-;jpn:Ÿƒ`[@WI(10)ƒY@WI(15)@ƒTƒ“ƒhƒCƒbƒ`I
-@KEY()«
+@FUNC(18)	;è‡ªè»¢è»Šã‹ã‚‰é™ã‚ã™
+â—†ï¼°ï½‰ï½ƒï½”ï½•ï½’ï½…ï½“ã€€ï½”ï½ï½‹ï½…ï½Žã€€ï½‰ï½Žï½“ï½”ï½ï½Žï½”ï½ï½Žï½…ï½ï½•ï½“ï½Œï½™ï¼@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½ã€€ï½ï½ˆï½ï½”ï½ï½‡ï½’ï½ï½ï½ˆï½‰ï½ƒã€€ï½‡ï½…ï½Žï½‰ï½•ï½“ï¼Œã€€ï½‰ï½†ã€€ï¼©ã€€ï½„ï½ã€€ï½“ï½ï½™ã€€ï½“ï½ã€€ï½ï½™ï½“ï½…ï½Œï½†ï¼@KEY()â†“
+â—†ï¼¯ï½‹ï½ï½™ï¼Œã€€ï½‡ï½…ï½”ã€€ï½’ï½…ï½ï½„ï½™ã€€ï½†ï½ï½’ã€€ï½ï½Žã€€ï½‰ï½Žï½“ï½”ï½ï½Žï½”ã€€ï½ï½…ï½ï½ï½’ï½™ï¼@KEY()â†“
+â—†ï¼¬ï½ï½ï½‹ã€€ï½ï½”ã€€ï½”ï½ˆï½…ã€€ï½ƒï½ï½ï½…ï½’ï½ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼²ï½…ï½ï½„ï½™ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼³ï½ï½™ï¼Œã€€â€ï½†ï½•ï½šï½šï½™ã€€ï½ï½‰ï½ƒï½‹ï½Œï½…ï½“ï¼Žâ€
+;jpn:â—†ã‹ã‘ã¤ã‘ã‚‹ã®ã‚‚ã€€ã¯ã‚„ã„â†“
+;jpn:ã€€ã¨ã‚‹ã®ã‚‚ã€€ã¯ã‚„ã„ã€‚@KEY()â†“
+;jpn:â—†ã¦ã‚“ã•ã„ã—ã‚ƒã—ã‚“ã‹ã§ãƒ¼ã™ã€‚@KEY()â†“
+;jpn:â—†ãŠã‚‚ã„ã§ã®ã€€ã—ã‚ƒã—ã‚“ã‚’â†“
+;jpn:ã€€ã¨ã‚Šã¾ã™ã‹ã‚‰ã­ãƒ¼ã€‚@KEY()â†“
+;jpn:â—†ã•ã‚ã€€ã“ã£ã¡ã‚€ã„ã¦â†“
+;jpn:ã€€ã¨ã‚Šã¾ã™ã‚ˆãƒ¼ã£ï¼@KEY()â†“
+;jpn:â—†ãƒãƒ¼@WI(10)ã‚º@WI(15)ã€€ã‚µãƒ³ãƒ‰ã‚¤ãƒƒãƒï¼
+@KEY()â†“
 @CLOSEALL()
 @HIDE_PLAYER(PC_NESS,OBJFX_HIDE_NONE)
 @CHKFGOTO( FLG_PHOTO_GUMI, _EVT_PHOTOGRAPH_FOR_GUMI )
-@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE,OBJFX_SHOW_NONE)@;ƒs[ƒX
+@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE,OBJFX_SHOW_NONE)ã€€;ãƒ”ãƒ¼ã‚¹
 @GOTO( _EVT_PHOTOGRAPH_FOR_GUMI_EXIT )
-_EVT_PHOTOGRAPH_FOR_GUMI;ƒOƒ~‘ºŽB‰eê—pÅ‹­ƒvƒ‰ƒCƒIƒŠƒeƒBƒs[ƒXƒlƒX
-@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE_SAIKYOU,OBJFX_SHOW_NONE)@;ƒs[ƒX
+_EVT_PHOTOGRAPH_FOR_GUMI;ã‚°ãƒŸæ‘æ’®å½±å°‚ç”¨æœ€å¼·ãƒ—ãƒ©ã‚¤ã‚ªãƒªãƒ†ã‚£ãƒ”ãƒ¼ã‚¹ãƒã‚¹
+@MOVE_GOM_CHAR(GOM_NES_PEACE,ANIM_NES_PEACE_SAIKYOU,OBJFX_SHOW_NONE)ã€€;ãƒ”ãƒ¼ã‚¹
 _EVT_PHOTOGRAPH_FOR_GUMI_EXIT;
 @WI(64)
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_CAMERA_EYE,OBJFX_SHOW_NONE)@@;ƒVƒƒƒbƒ^[
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_CAMERA_EYE,OBJFX_SHOW_NONE)ã€€ã€€;ã‚·ãƒ£ãƒƒã‚¿ãƒ¼
 @WAITSYS()
-@HIDE_GOM_CHAR(GOM_NES_PEACE,OBJFX_HIDE_NONE)@@@@@@@@;ƒs[ƒXÁ‚·
+@HIDE_GOM_CHAR(GOM_NES_PEACE,OBJFX_HIDE_NONE)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ãƒ”ãƒ¼ã‚¹æ¶ˆã™
 @SHOW_PLAYER(PC_NESS,OBJFX_SHOW_NONE)
 
 @OPEN(1)
-Ÿ‚v‚‚—C@‚—‚ˆ‚‚”@‚@‚‡‚’‚…‚‚”@‚‚ˆ‚‚”‚‚‡‚’‚‚‚ˆI@KEY()«
-Ÿ‚h‚”@‚—‚‰‚Œ‚Œ@‚‚Œ‚—‚‚™‚“@‚‚‚’‚‰‚Ž‚‡@‚‚‚‚ƒ‚‹@‚”‚ˆ‚…@‚†‚‚Ž‚„‚…‚“‚”@‚‚†@‚‚…‚‚‚’‚‰‚…‚“DDD
-;jpn:Ÿ‚¨[@‚¢‚¢‚µ‚á‚µ‚ñ‚ª‚Æ‚ê‚½B@KEY()«
-;jpn:Ÿ‚±‚Ì‚µ‚á‚µ‚ñ‚Í@‚«‚Á‚Æ«
-;jpn:@‚³‚¢‚±‚¤‚Ì«
-;jpn:@‚¨‚à‚¢‚Å‚É‚È‚è‚Ü‚·‚æB
-@KEY()«
+â—†ï¼·ï½ï½—ï¼Œã€€ï½—ï½ˆï½ï½”ã€€ï½ã€€ï½‡ï½’ï½…ï½ï½”ã€€ï½ï½ˆï½ï½”ï½ï½‡ï½’ï½ï½ï½ˆï¼@KEY()â†“
+â—†ï¼©ï½”ã€€ï½—ï½‰ï½Œï½Œã€€ï½ï½Œï½—ï½ï½™ï½“ã€€ï½‚ï½’ï½‰ï½Žï½‡ã€€ï½‚ï½ï½ƒï½‹ã€€ï½”ï½ˆï½…ã€€ï½†ï½ï½Žï½„ï½…ï½“ï½”ã€€ï½ï½†ã€€ï½ï½…ï½ï½ï½’ï½‰ï½…ï½“ï¼Žï¼Žï¼Ž
+;jpn:â—†ãŠãƒ¼ã€€ã„ã„ã—ã‚ƒã—ã‚“ãŒã¨ã‚ŒãŸã€‚@KEY()â†“
+;jpn:â—†ã“ã®ã—ã‚ƒã—ã‚“ã¯ã€€ãã£ã¨â†“
+;jpn:ã€€ã•ã„ã“ã†ã®â†“
+;jpn:ã€€ãŠã‚‚ã„ã§ã«ãªã‚Šã¾ã™ã‚ˆã€‚
+@KEY()â†“
 @CLOSEALL()
 
-@FRESH_GOM_CHAR(GOM_PHOTO)@@@@@@@@@@@@@@@@@@@@@@;ŽÊ^‰®‹A‚é
+@FRESH_GOM_CHAR(GOM_PHOTO)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;å†™çœŸå±‹å¸°ã‚‹
 @WAITSYS()
-@HIDE_GOM_CHAR(GOM_SHADOW_FALL,OBJFX_HIDE_NONE)@@@@@@;‰e‚ðÁ‚·
+@HIDE_GOM_CHAR(GOM_SHADOW_FALL,OBJFX_HIDE_NONE)ã€€ã€€ã€€ã€€ã€€ã€€;å½±ã‚’æ¶ˆã™
 @WAITSYS()
 ;-----
 @BGM_EFFECT(3)
 @WI(60)
 ;-----
 @MUSISTART()
-x
+ã€
 
 ;----------------------------------------------------
 
 
-;	ƒOƒ~‚Ì‘º‚ÉŠ|‚©‚Á‚Ä‚­‚é“d˜b
+;	ã‚°ãƒŸã®æ‘ã«æŽ›ã‹ã£ã¦ãã‚‹é›»è©±
 
 MSG_PHONE_GUMI_ORANGE;
-;ƒAƒbƒvƒ‹ƒLƒbƒh‚ðƒXƒg[ƒ“ƒwƒ“ƒW‚Ìƒ_ƒ“ƒWƒ‡ƒ“‚©‚ç
-;‹~o‚µ‚Ä‚¢‚È‚©‚Á‚½‚çƒIƒŒƒ“ƒW‚©‚çŠ|‚©‚Á‚Ä‚­‚é
+;ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã‚’ã‚¹ãƒˆãƒ¼ãƒ³ãƒ˜ãƒ³ã‚¸ã®ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã‹ã‚‰
+;æ•‘å‡ºã—ã¦ã„ãªã‹ã£ãŸã‚‰ã‚ªãƒ¬ãƒ³ã‚¸ã‹ã‚‰æŽ›ã‹ã£ã¦ãã‚‹
 @BGMSTART(0,BGM_msc1)
 @WI(60)
 @KEYNP()
@@ -398,62 +398,62 @@ MSG_PHONE_GUMI_ORANGE;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)C@‚h@‚ˆ‚‚–‚…‚Žf‚”@‚”‚‚Œ‚‹‚…‚„@‚—‚‰‚”‚ˆ@‚™‚‚•@‚‰‚Ž@‚‚‡‚…‚“I@KEY()«
-Ÿ‚s‚ˆ‚‰‚“@‚‰‚“@‚n‚’‚‚Ž‚‡‚…@‚j‚‰‚„D@KEY()«
-Ÿ‚v‚…f‚’‚…@‚†‚‰‚Ž‚‚Œ‚Œ‚™@‚ƒ‚‚‚‰‚Ž‚‡@‚Ž‚…‚‚’@‚”‚@‚”‚ˆ‚…@‚…‚Ž‚„@‚‚†@‚‚•‚’@‚’‚…‚“‚…‚‚’‚ƒ‚ˆ@‚‚Ž@KEY()«
-Ÿ‚ˆ‚‚—@‚”‚@‚ƒ‚ˆ‚‚Ž‚‡‚…@‚@‚‚‚‚‰‚Œ‚…‚„@‚…‚‡‚‡@‚‚‚‚ƒ‚‹@‚‰‚Ž‚”‚@‚@‚’‚‚—@‚…‚‡‚‡D@KEY()«
-Ÿ‚a‚™@‚”‚ˆ‚…@‚—‚‚™C@‚`‚‚‚Œ‚…@‚j‚‰‚„@‚‰‚“@‚‚‰‚“‚“‚‰‚Ž‚‡D@KEY()«
-Ÿ‚g‚…@‚Œ‚…‚†‚”@‚ˆ‚…‚’‚…@‚“‚‚™‚‰‚Ž‚‡@‚”‚ˆ‚‚”@‚ˆ‚…@‚—‚‚“@‚‡‚‚‰‚Ž‚‡@‚”‚@‚“‚…‚…@‚c‚’D@‚`‚Ž‚„‚‚Ž‚•‚”‚“@‚‰‚Ž@‚v‚‰‚Ž‚”‚…‚’‚“C@KEY()«
-Ÿ‚‚Ž‚„@‚ˆ‚…@‚Ž‚…‚–‚…‚’@‚ƒ‚‚‚…@‚‚‚‚ƒ‚‹D@KEY()«
-Ÿ‚h@‚—‚‚“@‚ˆ‚‚‚‰‚Ž‚‡@‚”‚@‚‚‚‚’‚’‚‚—@‚”‚ˆ‚…@‚‚‚‚‚‹@h‚n‚–‚…‚’‚ƒ‚‚‚‰‚Ž‚‡@‚r‚ˆ‚™‚Ž‚…‚“‚“h@‚†‚’‚‚@‚ˆ‚‰‚C@KEY()«
-Ÿ‚‚‚•‚”@‚“‚•‚„‚„‚…‚Ž‚Œ‚™C@‚ˆ‚…@‚„‚‰‚“‚‚‚‚…‚‚’‚…‚„DDD@KEY()«
-Ÿ‚h@‚ˆ‚‚–‚…‚Žf‚”@‚’‚…‚‚„@‚”‚ˆ‚…@‚‚‚‚‚‹C@‚“‚@‚hf‚@‚Ž‚‚”@‚–‚…‚’‚™@‚‡‚‚‚„@‚‚”@‚”‚‚Œ‚‹‚‰‚Ž‚‡DDD‚“‚‚’‚’‚™D@KEY()«
-Ÿ‚hf‚@‚‚Œ‚“‚@‚—‚‚’‚‹‚‰‚Ž‚‡@‚ˆ‚‚’‚„@‚‚Ž@‚‚™@‚‰‚Ž‚–‚…‚Ž‚”‚‰‚‚ŽC@KEY()«
-Ÿ‚“‚@‚h@‚ˆ‚‚‚…@‚™‚‚•f‚Œ‚Œ@‚•‚Ž‚„‚…‚’‚“‚”‚‚Ž‚„D@KEY()«
-Ÿ‚r‚‚™@‚ˆ‚…‚Œ‚Œ‚@‚”‚@‚™‚‚•‚’@‚†‚’‚‰‚…‚Ž‚„‚“@‚†‚‚’@‚‚…I@KEY()«
-Ÿ–‚ƒ‚Œ‚‰‚ƒ‚‹–
-;jpn:Ÿ@DSP_NAME(0)‚³‚ñ@‚¨‚Ð‚³‚µ‚Ô‚è‚Å‚·B«
-;jpn:@ƒIƒŒƒ“ƒWƒLƒbƒh‚Å‚·B@KEY()«
-;jpn:Ÿ‚ä‚Å‚½‚Ü‚²‚ð@‚È‚Ü‚½‚Ü‚²‚É«
-;jpn:@‚à‚Ç‚·‚¯‚ñ‚«‚ã‚¤‚à@‚¢‚æ‚¢‚æ«
-;jpn:@‚¨‚¨‚Ã‚ß‚ð‚Þ‚©‚¦‚Ü‚µ‚½B@KEY()«
-;jpn:Ÿ‚Æ‚±‚ë‚Å«
-;jpn:@ƒAƒbƒvƒ‹ƒLƒbƒh‚È‚ñ‚Å‚·‚ª«
-;jpn:@dd‚ä‚­‚¦‚Ó‚ß‚¢‚È‚ñ‚Å‚·B@KEY()«
-;jpn:ŸƒEƒBƒ“ƒ^[ƒY‚Ì«
-;jpn:@ƒAƒ“ƒh[ƒiƒbƒc‚Í‚©‚¹‚É«
-;jpn:@‚ ‚¢‚É‚¢‚­‚Æ‚¢‚Á‚½‚«‚è@KEY()«
-;jpn:Ÿ‚©‚¦‚Á‚Ä‚±‚È‚¢‚ñ‚Å‚·B@KEY()«
-;jpn:Ÿ‚©‚ê‚Éu‚Þ‚­‚¿‚ð‚È‚¨‚·‚Ù‚ñv‚ð«
-;jpn:@‚©‚è‚æ‚¤‚Æ@‚¨‚à‚Á‚Ä‚½‚Ì‚É@KEY()«
-;jpn:Ÿdd‚Æ‚Â‚º‚ñ@‚ä‚­‚¦‚Ó‚ß‚¢‚É«
-;jpn:@‚È‚Á‚¿‚á‚¤‚È‚ñ‚Ädd@KEY()«
-;jpn:Ÿ‚¨‚©‚°‚Å@‚Ú‚­@‚­‚¿‚×‚½‚Ådd«
-;jpn:@‚Ü‚±‚Æ‚É@‚à‚¤‚µ‚í‚¯‚ ‚è‚Ü‚¹‚ñB@KEY()«
-;jpn:Ÿ‚¯‚ñ‚«‚ã‚¤‚Í@‚¢‚Ì‚¿‚ð‚©‚¯‚Ä«
-;jpn:@‚ª‚ñ‚Î‚Á‚Ä‚Ü‚·‚©‚çdd‚Ç‚¤‚©«
-;jpn:@‚æ‚ë‚µ‚­@‚¨‚Ë‚ª‚¢‚µ‚Ü‚·I@KEY()«
-;jpn:Ÿ‚»‚ê‚Å‚Í«
-;jpn:@‚Ý‚È‚³‚Ü‚É‚à@‚æ‚ë‚µ‚­B@WI(20)«
-;jpn:@ƒKƒ`ƒƒƒ“@ƒc[ƒc[ƒc[@KEY()
-;Ÿ‚Þ‚©‚µ‚Ìuƒ}ƒU[v‚Á‚Ä‚¢‚¤«
-;@ƒQ[ƒ€ƒ\ƒtƒg‚ð@‚©‚µ‚Ä‚½‚ñ‚Å«
-;@‚©‚¦‚µ‚Ä‚à‚ç‚¨‚¤‚Æ@‚¨‚à‚Á‚Ädd@KEY()«
-;Ÿ‚¶‚á@‚»‚±‚É‚Í@‚¢‚È‚¢‚ñ‚Å‚·‚ËB«
-;@‚µ‚Â‚ê‚¢‚µ‚Ü‚µ‚½B@KEY()«
-;ŸƒKƒ`ƒƒƒ“@ƒc[ƒc[ƒc[
+â—†@DSP_NAME(PC_NESS)ï¼Œã€€ï¼©ã€€ï½ˆï½ï½–ï½…ï½Žâ€™ï½”ã€€ï½”ï½ï½Œï½‹ï½…ï½„ã€€ï½—ï½‰ï½”ï½ˆã€€ï½™ï½ï½•ã€€ï½‰ï½Žã€€ï½ï½‡ï½…ï½“ï¼@KEY()â†“
+â—†ï¼´ï½ˆï½‰ï½“ã€€ï½‰ï½“ã€€ï¼¯ï½’ï½ï½Žï½‡ï½…ã€€ï¼«ï½‰ï½„ï¼Ž@KEY()â†“
+â—†ï¼·ï½…â€™ï½’ï½…ã€€ï½†ï½‰ï½Žï½ï½Œï½Œï½™ã€€ï½ƒï½ï½ï½‰ï½Žï½‡ã€€ï½Žï½…ï½ï½’ã€€ï½”ï½ã€€ï½”ï½ˆï½…ã€€ï½…ï½Žï½„ã€€ï½ï½†ã€€ï½ï½•ï½’ã€€ï½’ï½…ï½“ï½…ï½ï½’ï½ƒï½ˆã€€ï½ï½Ž@KEY()â†“
+â—†ï½ˆï½ï½—ã€€ï½”ï½ã€€ï½ƒï½ˆï½ï½Žï½‡ï½…ã€€ï½ã€€ï½‚ï½ï½‰ï½Œï½…ï½„ã€€ï½…ï½‡ï½‡ã€€ï½‚ï½ï½ƒï½‹ã€€ï½‰ï½Žï½”ï½ã€€ï½ã€€ï½’ï½ï½—ã€€ï½…ï½‡ï½‡ï¼Ž@KEY()â†“
+â—†ï¼¢ï½™ã€€ï½”ï½ˆï½…ã€€ï½—ï½ï½™ï¼Œã€€ï¼¡ï½ï½ï½Œï½…ã€€ï¼«ï½‰ï½„ã€€ï½‰ï½“ã€€ï½ï½‰ï½“ï½“ï½‰ï½Žï½‡ï¼Ž@KEY()â†“
+â—†ï¼¨ï½…ã€€ï½Œï½…ï½†ï½”ã€€ï½ˆï½…ï½’ï½…ã€€ï½“ï½ï½™ï½‰ï½Žï½‡ã€€ï½”ï½ˆï½ï½”ã€€ï½ˆï½…ã€€ï½—ï½ï½“ã€€ï½‡ï½ï½‰ï½Žï½‡ã€€ï½”ï½ã€€ï½“ï½…ï½…ã€€ï¼¤ï½’ï¼Žã€€ï¼¡ï½Žï½„ï½ï½Žï½•ï½”ï½“ã€€ï½‰ï½Žã€€ï¼·ï½‰ï½Žï½”ï½…ï½’ï½“ï¼Œ@KEY()â†“
+â—†ï½ï½Žï½„ã€€ï½ˆï½…ã€€ï½Žï½…ï½–ï½…ï½’ã€€ï½ƒï½ï½ï½…ã€€ï½‚ï½ï½ƒï½‹ï¼Ž@KEY()â†“
+â—†ï¼©ã€€ï½—ï½ï½“ã€€ï½ˆï½ï½ï½‰ï½Žï½‡ã€€ï½”ï½ã€€ï½‚ï½ï½’ï½’ï½ï½—ã€€ï½”ï½ˆï½…ã€€ï½‚ï½ï½ï½‹ã€€â€ï¼¯ï½–ï½…ï½’ï½ƒï½ï½ï½‰ï½Žï½‡ã€€ï¼³ï½ˆï½™ï½Žï½…ï½“ï½“â€ã€€ï½†ï½’ï½ï½ã€€ï½ˆï½‰ï½ï¼Œ@KEY()â†“
+â—†ï½‚ï½•ï½”ã€€ï½“ï½•ï½„ï½„ï½…ï½Žï½Œï½™ï¼Œã€€ï½ˆï½…ã€€ï½„ï½‰ï½“ï½ï½ï½ï½…ï½ï½’ï½…ï½„ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼©ã€€ï½ˆï½ï½–ï½…ï½Žâ€™ï½”ã€€ï½’ï½…ï½ï½„ã€€ï½”ï½ˆï½…ã€€ï½‚ï½ï½ï½‹ï¼Œã€€ï½“ï½ã€€ï¼©â€™ï½ã€€ï½Žï½ï½”ã€€ï½–ï½…ï½’ï½™ã€€ï½‡ï½ï½ï½„ã€€ï½ï½”ã€€ï½”ï½ï½Œï½‹ï½‰ï½Žï½‡ï¼Žï¼Žï¼Žï½“ï½ï½’ï½’ï½™ï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½ï½Œï½“ï½ã€€ï½—ï½ï½’ï½‹ï½‰ï½Žï½‡ã€€ï½ˆï½ï½’ï½„ã€€ï½ï½Žã€€ï½ï½™ã€€ï½‰ï½Žï½–ï½…ï½Žï½”ï½‰ï½ï½Žï¼Œ@KEY()â†“
+â—†ï½“ï½ã€€ï¼©ã€€ï½ˆï½ï½ï½…ã€€ï½™ï½ï½•â€™ï½Œï½Œã€€ï½•ï½Žï½„ï½…ï½’ï½“ï½”ï½ï½Žï½„ï¼Ž@KEY()â†“
+â—†ï¼³ï½ï½™ã€€ï½ˆï½…ï½Œï½Œï½ã€€ï½”ï½ã€€ï½™ï½ï½•ï½’ã€€ï½†ï½’ï½‰ï½…ï½Žï½„ï½“ã€€ï½†ï½ï½’ã€€ï½ï½…ï¼@KEY()â†“
+â—†ï¼Šï½ƒï½Œï½‰ï½ƒï½‹ï¼Š
+;jpn:â—†@DSP_NAME(0)ã•ã‚“ã€€ãŠã²ã•ã—ã¶ã‚Šã§ã™ã€‚â†“
+;jpn:ã€€ã‚ªãƒ¬ãƒ³ã‚¸ã‚­ãƒƒãƒ‰ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã‚†ã§ãŸã¾ã”ã‚’ã€€ãªã¾ãŸã¾ã”ã«â†“
+;jpn:ã€€ã‚‚ã©ã™ã‘ã‚“ãã‚…ã†ã‚‚ã€€ã„ã‚ˆã„ã‚ˆâ†“
+;jpn:ã€€ãŠãŠã¥ã‚ã‚’ã‚€ã‹ãˆã¾ã—ãŸã€‚@KEY()â†“
+;jpn:â—†ã¨ã“ã‚ã§â†“
+;jpn:ã€€ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ãªã‚“ã§ã™ãŒâ†“
+;jpn:ã€€â€¥â€¥ã‚†ããˆãµã‚ã„ãªã‚“ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã‚¦ã‚£ãƒ³ã‚¿ãƒ¼ã‚ºã®â†“
+;jpn:ã€€ã‚¢ãƒ³ãƒ‰ãƒ¼ãƒŠãƒƒãƒ„ã¯ã‹ã›ã«â†“
+;jpn:ã€€ã‚ã„ã«ã„ãã¨ã„ã£ãŸãã‚Š@KEY()â†“
+;jpn:â—†ã‹ãˆã£ã¦ã“ãªã„ã‚“ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã‹ã‚Œã«ã€Œã‚€ãã¡ã‚’ãªãŠã™ã»ã‚“ã€ã‚’â†“
+;jpn:ã€€ã‹ã‚Šã‚ˆã†ã¨ã€€ãŠã‚‚ã£ã¦ãŸã®ã«@KEY()â†“
+;jpn:â—†â€¥â€¥ã¨ã¤ãœã‚“ã€€ã‚†ããˆãµã‚ã„ã«â†“
+;jpn:ã€€ãªã£ã¡ã‚ƒã†ãªã‚“ã¦â€¥â€¥@KEY()â†“
+;jpn:â—†ãŠã‹ã’ã§ã€€ã¼ãã€€ãã¡ã¹ãŸã§â€¥â€¥â†“
+;jpn:ã€€ã¾ã“ã¨ã«ã€€ã‚‚ã†ã—ã‚ã‘ã‚ã‚Šã¾ã›ã‚“ã€‚@KEY()â†“
+;jpn:â—†ã‘ã‚“ãã‚…ã†ã¯ã€€ã„ã®ã¡ã‚’ã‹ã‘ã¦â†“
+;jpn:ã€€ãŒã‚“ã°ã£ã¦ã¾ã™ã‹ã‚‰â€¥â€¥ã©ã†ã‹â†“
+;jpn:ã€€ã‚ˆã‚ã—ãã€€ãŠã­ãŒã„ã—ã¾ã™ï¼@KEY()â†“
+;jpn:â—†ãã‚Œã§ã¯â†“
+;jpn:ã€€ã¿ãªã•ã¾ã«ã‚‚ã€€ã‚ˆã‚ã—ãã€‚@WI(20)â†“
+;jpn:ã€€ã‚¬ãƒãƒ£ãƒ³ã€€ãƒ„ãƒ¼ãƒ„ãƒ¼ãƒ„ãƒ¼@KEY()
+;â—†ã‚€ã‹ã—ã®ã€Œãƒžã‚¶ãƒ¼ã€ã£ã¦ã„ã†â†“
+;ã€€ã‚²ãƒ¼ãƒ ã‚½ãƒ•ãƒˆã‚’ã€€ã‹ã—ã¦ãŸã‚“ã§â†“
+;ã€€ã‹ãˆã—ã¦ã‚‚ã‚‰ãŠã†ã¨ã€€ãŠã‚‚ã£ã¦â€¥â€¥@KEY()â†“
+;â—†ã˜ã‚ƒã€€ãã“ã«ã¯ã€€ã„ãªã„ã‚“ã§ã™ã­ã€‚â†“
+;ã€€ã—ã¤ã‚Œã„ã—ã¾ã—ãŸã€‚@KEY()â†“
+;â—†ã‚¬ãƒãƒ£ãƒ³ã€€ãƒ„ãƒ¼ãƒ„ãƒ¼ãƒ„ãƒ¼
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
 ;-------------
 @MUSISTART()
 ;-----------
-x
+ã€
 
 
 MSG_PHONE_GUMI_APPLE;
-;Šù‚ÉƒAƒbƒvƒ‹‚ðƒXƒg[ƒ“ƒwƒ“ƒW‚©‚ç‹~o‚µ‚Ä‚¢‚½‚ç
-;ƒAƒbƒvƒ‹‚©‚çŠ|‚©‚Á‚Ä‚­‚é
+;æ—¢ã«ã‚¢ãƒƒãƒ—ãƒ«ã‚’ã‚¹ãƒˆãƒ¼ãƒ³ãƒ˜ãƒ³ã‚¸ã‹ã‚‰æ•‘å‡ºã—ã¦ã„ãŸã‚‰
+;ã‚¢ãƒƒãƒ—ãƒ«ã‹ã‚‰æŽ›ã‹ã£ã¦ãã‚‹
 @BGMSTART(0,BGM_msc1)
 @WI(60)
 @KEYNP()
@@ -463,53 +463,53 @@ MSG_PHONE_GUMI_APPLE;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-Ÿ‚g‚…‚Œ‚Œ‚C@‚‰‚”f‚“@‚‚‚…‚…‚Ž@‚@‚—‚ˆ‚‰‚Œ‚…@‚“‚‰‚Ž‚ƒ‚…@‚—‚…@‚”‚‚Œ‚‹‚…‚„DDD‚”‚ˆ‚‰‚“@‚‰‚“@‚`‚‚‚Œ‚…@‚j‚‰‚„D@KEY()«
-Ÿ‚v‚…f‚’‚…@‚ˆ‚‚–‚‰‚Ž‚‡@‚‚‚…‚‚•‚”‚‰‚†‚•‚Œ@‚—‚…‚‚”‚ˆ‚…‚’@‚ˆ‚…‚’‚…DDD@KEY()«
-Ÿ‚hf‚@‚Ž‚‚—@‚‚”@‚c‚’D@‚`‚Ž‚„‚‚Ž‚•‚”‚“@‚Œ‚‚‚@‚‰‚Ž@‚v‚‰‚Ž‚”‚…‚’‚“D@KEY()«
-Ÿ‚s‚ˆ‚…@‚„‚‚ƒ‚”‚‚’@‚„‚‚…‚“‚Žf‚”@‚“‚…‚…‚@‚”‚@‚‚‚…@‚‚’‚‚•‚Ž‚„@‚’‚‰‚‡‚ˆ‚”@‚Ž‚‚—C@KEY()«
-Ÿ‚‚‚•‚”@‚hf‚@‚Š‚•‚“‚”@‚—‚‚’‚‹‚‰‚Ž‚‡@‚‚Ž@‚‚™@‚d‚’‚‚“‚…‚’@‚d‚’‚‚“‚…‚’@‚l‚‚ƒ‚ˆ‚‰‚ŽDDD@KEY()«
+â—†ï¼¨ï½…ï½Œï½Œï½ï¼Œã€€ï½‰ï½”â€™ï½“ã€€ï½‚ï½…ï½…ï½Žã€€ï½ã€€ï½—ï½ˆï½‰ï½Œï½…ã€€ï½“ï½‰ï½Žï½ƒï½…ã€€ï½—ï½…ã€€ï½”ï½ï½Œï½‹ï½…ï½„ï¼Žï¼Žï¼Žï½”ï½ˆï½‰ï½“ã€€ï½‰ï½“ã€€ï¼¡ï½ï½ï½Œï½…ã€€ï¼«ï½‰ï½„ï¼Ž@KEY()â†“
+â—†ï¼·ï½…â€™ï½’ï½…ã€€ï½ˆï½ï½–ï½‰ï½Žï½‡ã€€ï½‚ï½…ï½ï½•ï½”ï½‰ï½†ï½•ï½Œã€€ï½—ï½…ï½ï½”ï½ˆï½…ï½’ã€€ï½ˆï½…ï½’ï½…ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½Žï½ï½—ã€€ï½ï½”ã€€ï¼¤ï½’ï¼Žã€€ï¼¡ï½Žï½„ï½ï½Žï½•ï½”ï½“ã€€ï½Œï½ï½‚ã€€ï½‰ï½Žã€€ï¼·ï½‰ï½Žï½”ï½…ï½’ï½“ï¼Ž@KEY()â†“
+â—†ï¼´ï½ˆï½…ã€€ï½„ï½ï½ƒï½”ï½ï½’ã€€ï½„ï½ï½…ï½“ï½Žâ€™ï½”ã€€ï½“ï½…ï½…ï½ã€€ï½”ï½ã€€ï½‚ï½…ã€€ï½ï½’ï½ï½•ï½Žï½„ã€€ï½’ï½‰ï½‡ï½ˆï½”ã€€ï½Žï½ï½—ï¼Œ@KEY()â†“
+â—†ï½‚ï½•ï½”ã€€ï¼©â€™ï½ã€€ï½Šï½•ï½“ï½”ã€€ï½—ï½ï½’ï½‹ï½‰ï½Žï½‡ã€€ï½ï½Žã€€ï½ï½™ã€€ï¼¥ï½’ï½ï½“ï½…ï½’ã€€ï¼¥ï½’ï½ï½“ï½…ï½’ã€€ï¼­ï½ï½ƒï½ˆï½‰ï½Žï¼Žï¼Žï¼Ž@KEY()â†“
 @BGMSTART(0,BGM_poky0)
-@WI(160)«
-ŸI@WI(30)@@I@WI(10)I@WI(10)I@WI(10)I@WI(10)I
+@WI(160)â†“
+â—†ï¼@WI(30)ã€€ã€€ï¼@WI(10)ï¼@WI(10)ï¼@WI(10)ï¼@WI(10)ï¼
 @BGMSTART(0,BGM_msc22)
-@KEY()«
-@WI(60)«
-Ÿ‚g‚…‚™I@@‚n‚ˆ@‚Ž‚I@@‚v‚ˆ‚‚”@‚‚’‚…@‚™‚‚•@‚„‚‚‰‚Ž‚‡@‚”‚@‚‚…H@KEY()«
-@WI(60)«
-Ÿ‚v‚ˆ‚@‚‚’‚…@‚™‚‚•@HIIIDDD–‚ƒ‚Œ‚‰‚ƒ‚‹–
-;jpn:Ÿ‚à‚µ‚à‚µ@‚¨‚Ð‚³‚µ‚Ô‚è‚Å‚·«
-;jpn:@ƒAƒbƒvƒ‹ƒLƒbƒh‚Å‚·B«
-;jpn:@‚±‚Á‚¿‚Í@‚¢‚¢‚¨‚Ä‚ñ‚«‚Å‚·‚æB@KEY()«
-;jpn:Ÿ‚¢‚Ü@ƒEƒBƒ“ƒ^[ƒY‚Ì«
-;jpn:@ƒAƒ“ƒh[ƒiƒbƒc‚Í‚©‚¹‚Ì«
-;jpn:@‚¯‚ñ‚«‚ã‚¤‚¶‚å‚É@‚«‚Ä‚é‚ñ‚Å‚·B@KEY()«
-;jpn:Ÿdd‚Í‚©‚¹‚Í@‚é‚·‚Ì‚æ‚¤‚Å‚·‚ª«
-;jpn:@‚Ú‚­@‚©‚Á‚Ä‚É@‚±‚±‚Å«
-;jpn:@‚±‚¯‚µ‚¯‚µƒ}@WI(20)@I@WI(10)I@WI(10)I@WI(10)I@WI(10)I@KEY()«
+@KEY()â†“
+@WI(60)â†“
+â—†ï¼¨ï½…ï½™ï¼ã€€ã€€ï¼¯ï½ˆã€€ï½Žï½ï¼ã€€ã€€ï¼·ï½ˆï½ï½”ã€€ï½ï½’ï½…ã€€ï½™ï½ï½•ã€€ï½„ï½ï½‰ï½Žï½‡ã€€ï½”ï½ã€€ï½ï½…ï¼Ÿ@KEY()â†“
+@WI(60)â†“
+â—†ï¼·ï½ˆï½ã€€ï½ï½’ï½…ã€€ï½™ï½ï½•ã€€ï¼Ÿï¼ï¼ï¼ï¼Žï¼Žï¼Žï¼Šï½ƒï½Œï½‰ï½ƒï½‹ï¼Š
+;jpn:â—†ã‚‚ã—ã‚‚ã—ã€€ãŠã²ã•ã—ã¶ã‚Šã§ã™â†“
+;jpn:ã€€ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã§ã™ã€‚â†“
+;jpn:ã€€ã“ã£ã¡ã¯ã€€ã„ã„ãŠã¦ã‚“ãã§ã™ã‚ˆã€‚@KEY()â†“
+;jpn:â—†ã„ã¾ã€€ã‚¦ã‚£ãƒ³ã‚¿ãƒ¼ã‚ºã®â†“
+;jpn:ã€€ã‚¢ãƒ³ãƒ‰ãƒ¼ãƒŠãƒƒãƒ„ã¯ã‹ã›ã®â†“
+;jpn:ã€€ã‘ã‚“ãã‚…ã†ã˜ã‚‡ã«ã€€ãã¦ã‚‹ã‚“ã§ã™ã€‚@KEY()â†“
+;jpn:â—†â€¥â€¥ã¯ã‹ã›ã¯ã€€ã‚‹ã™ã®ã‚ˆã†ã§ã™ãŒâ†“
+;jpn:ã€€ã¼ãã€€ã‹ã£ã¦ã«ã€€ã“ã“ã§â†“
+;jpn:ã€€ã“ã‘ã—ã‘ã—ãƒž@WI(20)ã€€ï¼@WI(10)ï¼@WI(10)ï¼@WI(10)ï¼@WI(10)ï¼@KEY()â†“
 ;jpn:@BGMSTART(0,BGM_poky0)
-;jpn:@WI(160)«
-;jpn:ŸI@WI(30)@@I@WI(10)I@WI(10)I@WI(10)I@WI(10)I
+;jpn:@WI(160)â†“
+;jpn:â—†ï¼@WI(30)ã€€ã€€ï¼@WI(10)ï¼@WI(10)ï¼@WI(10)ï¼@WI(10)ï¼
 ;jpn:@BGMSTART(0,BGM_msc22)
-;jpn:@KEY()«
-;jpn:@WI(60)«
-;jpn:@‚È‚É‚·‚é‚ñ‚¾I@KEY()«
-;jpn:@WI(60)«
-;jpn:Ÿ‚¾@‚¾‚ê‚¾IIIƒKƒ`ƒƒƒ“I@WI(30)«
+;jpn:@KEY()â†“
+;jpn:@WI(60)â†“
+;jpn:ã€€ãªã«ã™ã‚‹ã‚“ã ï¼@KEY()â†“
+;jpn:@WI(60)â†“
+;jpn:â—†ã ã€€ã ã‚Œã ï¼ï¼ï¼ã‚¬ãƒãƒ£ãƒ³ï¼@WI(30)â†“
 ;jpn:@GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
-;jpn:@ƒc[ƒc[ƒc[dd
+;jpn:ã€€ãƒ„ãƒ¼ãƒ„ãƒ¼ãƒ„ãƒ¼â€¥â€¥
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
-@SETF(FLG_WINS_LABO_MOUSE_APPEAR);Œ¤‹†Šƒ}ƒEƒXoŒ»
-x
+@SETF(FLG_WINS_LABO_MOUSE_APPEAR);ç ”ç©¶æ‰€ãƒžã‚¦ã‚¹å‡ºç¾
+ã€
 ;-------------------------------------------------
 
 
-;	ƒ‚ƒmƒgƒŠ[ƒrƒ‹‚ÉŠ|‚©‚Á‚Ä‚­‚é“d˜b
+;	ãƒ¢ãƒŽãƒˆãƒªãƒ¼ãƒ“ãƒ«ã«æŽ›ã‹ã£ã¦ãã‚‹é›»è©±
 
 MSG_FOUR_TELE_APPLEKID;
-;ƒAƒbƒvƒ‹ƒLƒbƒh‚s‚d‚k
-;ƒ‚ƒmƒgƒŠ[ƒrƒ‹‚ÉŠ|‚©‚Á‚Ä‚­‚é
+;ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ï¼´ï¼¥ï¼¬
+;ãƒ¢ãƒŽãƒˆãƒªãƒ¼ãƒ“ãƒ«ã«æŽ›ã‹ã£ã¦ãã‚‹
 @BGMSTART(0,BGM_msc1)
 @WI(60)
 @KEYNP()
@@ -517,54 +517,54 @@ MSG_FOUR_TELE_APPLEKID;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_child)
 @OPEN(1)
-Ÿ‚g‚…‚Œ‚Œ‚I@@‚g‚‚—@‚‚’‚…@‚™‚‚•H@KEY()«
-Ÿ‚s‚ˆ‚‰‚“@‚‰‚“@‚`‚‚‚Œ‚…@‚j‚‰‚„D@KEY()«
-Ÿ‚h@‚”‚ˆ‚‰‚Ž‚‹@‚hf‚@‚@‚’‚…‚‚Œ@‚‡‚…‚Ž‚‰‚•‚“DDD‚h‚Ž@‚†‚‚ƒ‚”C@‚h@‚‹‚Ž‚‚—@‚hf‚@‚@‚‡‚…‚Ž‚‰‚•‚“D@KEY()«
-Ÿ‚v‚ˆ‚™H@@‚v‚…‚Œ‚ŒC@‚h@‚ˆ‚‚–‚…@‚„‚‰‚“‚ƒ‚‚–‚…‚’‚…‚„@‚”‚ˆ‚…@‚‚’‚‰‚‚‚’‚™@‚…‚Ž‚…‚‚™@‚‚†@@DSP_NAME(PC_NESS)@‚‚Ž‚„@‚‚†@‚‚Œ‚Œ@‚ˆ‚•‚‚‚Ž‚‰‚”‚™D@KEY()«
-Ÿ‚v‚…@‚ˆ‚‚–‚…@‚”‚@‚†‚‰‚‡‚ˆ‚”@‚‚Ž‚„@‚„‚…‚†‚…‚‚”@‚”‚ˆ‚‰‚“@‚‚‚…‚‰‚Ž‚‡DDD@KEY()«
-Ÿ‚s‚@‚„‚@‚“‚C@‚—‚…@‚Ž‚…‚…‚„@‚”‚@‚‰‚Ž‚–‚…‚Ž‚”@‚@‚‚‚ƒ‚ˆ‚‰‚Ž‚…@‚ƒ‚‚Œ‚Œ‚…‚„@‚”‚ˆ‚…@h‚o‚ˆ‚‚“‚…@‚c‚‰‚“‚”‚‚’‚”‚…‚’Dh@KEY()«
-Ÿ‚hf‚–‚…@‚‡‚‚”@‚”‚@‚†‚‰‚Ž‚„@‚”‚ˆ‚…@‚—‚‚Ž‚„‚…‚’‚‰‚Ž‚‡@‚“‚ƒ‚‰‚…‚Ž‚”‚‰‚“‚”C@KEY()«
-Ÿ‚c‚’D@‚`‚Ž‚„‚‚Ž‚•‚”‚“C@‚‚Ž‚„@‚‚‚‹‚…@‚”‚ˆ‚…@‚„‚‰‚“‚”‚‚’‚”‚…‚’D@KEY()«
-Ÿ‚r‚C@‚h@‚‚‚™@‚‚‚…@‚‡‚‚Ž‚…@‚†‚‚’@‚@‚—‚ˆ‚‰‚Œ‚…D@KEY()«
-Ÿ‚k‚‚”‚…‚’DDD–‚ƒ‚Œ‚‰‚ƒ‚‹–
-;jpn:Ÿ‚à‚µ‚à‚µ@‚Ð‚³‚µ‚Ô‚èB«
-;jpn:@ƒAƒbƒvƒ‹ƒLƒbƒh‚Å‚·B«
-;jpn:@‚â‚Á‚Ï‚è@‚Ú‚­‚Í@‚Ä‚ñ‚³‚¢‚Å‚·B@KEY()«
-;jpn:Ÿ‚Ä‚ñ‚³‚¢‚¾‚Á‚Ä‚±‚Æ‚ª«
-;jpn:@ƒnƒbƒLƒŠ‚µ‚Ü‚µ‚½‚æB«
-;jpn:@@DSP_STS(STS_PC_NAME_NES)‚³‚ñ‚½‚¿‚Æ@KEY()«
-;jpn:Ÿ‚·‚×‚Ä‚Ì@‚¶‚ñ‚é‚¢‚Ì«
-;jpn:@‚Ä‚«‚ª@‚È‚ñ‚Å‚ ‚é‚©‚ª«
-;jpn:@‚í‚©‚è‚Ü‚µ‚½B@KEY()«
-;jpn:Ÿ‚»‚ê‚Å‚Å‚·‚Ë«
-;jpn:@‚È‚ñ‚Æ‚©@‚±‚Ì‚Ä‚«‚Æ‚Ì‚½‚½‚©‚¢‚É«
-;jpn:@‚©‚½‚È‚«‚á@‚¢‚¯‚È‚¢‚í‚¯‚Å@KEY()«
-;jpn:ŸuƒXƒy[ƒXƒgƒ“ƒlƒ‹v‚Æ‚¢‚¤‚à‚Ì‚ð«
-;jpn:@‚Â‚­‚é‚Ð‚Â‚æ‚¤‚ª@‚ ‚é‚ñ‚Å‚·B«
-;jpn:@‚¾‚©‚ç@‚Ú‚­‚Í@‚±‚ê‚©‚ç@KEY()«
-;jpn:Ÿ‚³‚·‚ç‚¢‚Ì@‚©‚ª‚­‚µ‚á«
-;jpn:@ƒAƒ“ƒh[ƒiƒbƒc‚Í‚©‚¹‚ð@‚³‚ª‚µ‚Ä«
-;jpn:@‚¢‚Á‚µ‚å‚É@KEY()«
-;jpn:ŸuƒXƒy[ƒXƒgƒ“ƒlƒ‹v‚ð«
-;jpn:@‚Â‚­‚é‚ñ‚Å‚·‚æB«
-;jpn:@‚Â‚Ü‚è@KEY()«
-;jpn:Ÿ‚µ‚Î‚ç‚­@‚é‚·‚É‚·‚é‚ñ‚Å«
-;jpn:@‚æ‚ë‚µ‚­I«
-;jpn:@ƒKƒ`ƒƒƒ“@ƒc[@ƒc[@ƒc[
+â—†ï¼¨ï½…ï½Œï½Œï½ï¼ã€€ã€€ï¼¨ï½ï½—ã€€ï½ï½’ï½…ã€€ï½™ï½ï½•ï¼Ÿ@KEY()â†“
+â—†ï¼´ï½ˆï½‰ï½“ã€€ï½‰ï½“ã€€ï¼¡ï½ï½ï½Œï½…ã€€ï¼«ï½‰ï½„ï¼Ž@KEY()â†“
+â—†ï¼©ã€€ï½”ï½ˆï½‰ï½Žï½‹ã€€ï¼©â€™ï½ã€€ï½ã€€ï½’ï½…ï½ï½Œã€€ï½‡ï½…ï½Žï½‰ï½•ï½“ï¼Žï¼Žï¼Žï¼©ï½Žã€€ï½†ï½ï½ƒï½”ï¼Œã€€ï¼©ã€€ï½‹ï½Žï½ï½—ã€€ï¼©â€™ï½ã€€ï½ã€€ï½‡ï½…ï½Žï½‰ï½•ï½“ï¼Ž@KEY()â†“
+â—†ï¼·ï½ˆï½™ï¼Ÿã€€ã€€ï¼·ï½…ï½Œï½Œï¼Œã€€ï¼©ã€€ï½ˆï½ï½–ï½…ã€€ï½„ï½‰ï½“ï½ƒï½ï½–ï½…ï½’ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½’ï½‰ï½ï½ï½’ï½™ã€€ï½…ï½Žï½…ï½ï½™ã€€ï½ï½†ã€€@DSP_NAME(PC_NESS)ã€€ï½ï½Žï½„ã€€ï½ï½†ã€€ï½ï½Œï½Œã€€ï½ˆï½•ï½ï½ï½Žï½‰ï½”ï½™ï¼Ž@KEY()â†“
+â—†ï¼·ï½…ã€€ï½ˆï½ï½–ï½…ã€€ï½”ï½ã€€ï½†ï½‰ï½‡ï½ˆï½”ã€€ï½ï½Žï½„ã€€ï½„ï½…ï½†ï½…ï½ï½”ã€€ï½”ï½ˆï½‰ï½“ã€€ï½‚ï½…ï½‰ï½Žï½‡ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼´ï½ã€€ï½„ï½ã€€ï½“ï½ï¼Œã€€ï½—ï½…ã€€ï½Žï½…ï½…ï½„ã€€ï½”ï½ã€€ï½‰ï½Žï½–ï½…ï½Žï½”ã€€ï½ã€€ï½ï½ï½ƒï½ˆï½‰ï½Žï½…ã€€ï½ƒï½ï½Œï½Œï½…ï½„ã€€ï½”ï½ˆï½…ã€€â€ï¼°ï½ˆï½ï½“ï½…ã€€ï¼¤ï½‰ï½“ï½”ï½ï½’ï½”ï½…ï½’ï¼Žâ€@KEY()â†“
+â—†ï¼©â€™ï½–ï½…ã€€ï½‡ï½ï½”ã€€ï½”ï½ã€€ï½†ï½‰ï½Žï½„ã€€ï½”ï½ˆï½…ã€€ï½—ï½ï½Žï½„ï½…ï½’ï½‰ï½Žï½‡ã€€ï½“ï½ƒï½‰ï½…ï½Žï½”ï½‰ï½“ï½”ï¼Œ@KEY()â†“
+â—†ï¼¤ï½’ï¼Žã€€ï¼¡ï½Žï½„ï½ï½Žï½•ï½”ï½“ï¼Œã€€ï½ï½Žï½„ã€€ï½ï½ï½‹ï½…ã€€ï½”ï½ˆï½…ã€€ï½„ï½‰ï½“ï½”ï½ï½’ï½”ï½…ï½’ï¼Ž@KEY()â†“
+â—†ï¼³ï½ï¼Œã€€ï¼©ã€€ï½ï½ï½™ã€€ï½‚ï½…ã€€ï½‡ï½ï½Žï½…ã€€ï½†ï½ï½’ã€€ï½ã€€ï½—ï½ˆï½‰ï½Œï½…ï¼Ž@KEY()â†“
+â—†ï¼¬ï½ï½”ï½…ï½’ï¼Žï¼Žï¼Žï¼Šï½ƒï½Œï½‰ï½ƒï½‹ï¼Š
+;jpn:â—†ã‚‚ã—ã‚‚ã—ã€€ã²ã•ã—ã¶ã‚Šã€‚â†“
+;jpn:ã€€ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã§ã™ã€‚â†“
+;jpn:ã€€ã‚„ã£ã±ã‚Šã€€ã¼ãã¯ã€€ã¦ã‚“ã•ã„ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã¦ã‚“ã•ã„ã ã£ã¦ã“ã¨ãŒâ†“
+;jpn:ã€€ãƒãƒƒã‚­ãƒªã—ã¾ã—ãŸã‚ˆã€‚â†“
+;jpn:ã€€@DSP_STS(STS_PC_NAME_NES)ã•ã‚“ãŸã¡ã¨@KEY()â†“
+;jpn:â—†ã™ã¹ã¦ã®ã€€ã˜ã‚“ã‚‹ã„ã®â†“
+;jpn:ã€€ã¦ããŒã€€ãªã‚“ã§ã‚ã‚‹ã‹ãŒâ†“
+;jpn:ã€€ã‚ã‹ã‚Šã¾ã—ãŸã€‚@KEY()â†“
+;jpn:â—†ãã‚Œã§ã§ã™ã­â†“
+;jpn:ã€€ãªã‚“ã¨ã‹ã€€ã“ã®ã¦ãã¨ã®ãŸãŸã‹ã„ã«â†“
+;jpn:ã€€ã‹ãŸãªãã‚ƒã€€ã„ã‘ãªã„ã‚ã‘ã§@KEY()â†“
+;jpn:â—†ã€Œã‚¹ãƒšãƒ¼ã‚¹ãƒˆãƒ³ãƒãƒ«ã€ã¨ã„ã†ã‚‚ã®ã‚’â†“
+;jpn:ã€€ã¤ãã‚‹ã²ã¤ã‚ˆã†ãŒã€€ã‚ã‚‹ã‚“ã§ã™ã€‚â†“
+;jpn:ã€€ã ã‹ã‚‰ã€€ã¼ãã¯ã€€ã“ã‚Œã‹ã‚‰@KEY()â†“
+;jpn:â—†ã•ã™ã‚‰ã„ã®ã€€ã‹ãŒãã—ã‚ƒâ†“
+;jpn:ã€€ã‚¢ãƒ³ãƒ‰ãƒ¼ãƒŠãƒƒãƒ„ã¯ã‹ã›ã‚’ã€€ã•ãŒã—ã¦â†“
+;jpn:ã€€ã„ã£ã—ã‚‡ã«@KEY()â†“
+;jpn:â—†ã€Œã‚¹ãƒšãƒ¼ã‚¹ãƒˆãƒ³ãƒãƒ«ã€ã‚’â†“
+;jpn:ã€€ã¤ãã‚‹ã‚“ã§ã™ã‚ˆã€‚â†“
+;jpn:ã€€ã¤ã¾ã‚Š@KEY()â†“
+;jpn:â—†ã—ã°ã‚‰ãã€€ã‚‹ã™ã«ã™ã‚‹ã‚“ã§â†“
+;jpn:ã€€ã‚ˆã‚ã—ãï¼â†“
+;jpn:ã€€ã‚¬ãƒãƒ£ãƒ³ã€€ãƒ„ãƒ¼ã€€ãƒ„ãƒ¼ã€€ãƒ„ãƒ¼
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
-@CLRF(FLG_TWSN_CHAOSAPPLE_APPEAR);ƒc[ƒ\ƒ“‚ÌƒAƒbƒvƒ‹Á‚¦‚é
+@CLRF(FLG_TWSN_CHAOSAPPLE_APPEAR);ãƒ„ãƒ¼ã‚½ãƒ³ã®ã‚¢ãƒƒãƒ—ãƒ«æ¶ˆãˆã‚‹
 ;------------
 @MUSISTART()
 ;------------
-@CHKF(FLG_TWSN_ORANGE_THANKS)@FALSE_GOTO(MSG_END)	;“ŠŽ‘‚µ‚Ä‚½‚ç
-@SET_HIT_RECT(1,HRECT_PHONE_MONO_B,MSG_FOUR_TELE_ORANGEKID);ƒIƒŒƒ“ƒW‚©‚ç“d˜b
-x
+@CHKF(FLG_TWSN_ORANGE_THANKS)@FALSE_GOTO(MSG_END)	;æŠ•è³‡ã—ã¦ãŸã‚‰
+@SET_HIT_RECT(1,HRECT_PHONE_MONO_B,MSG_FOUR_TELE_ORANGEKID);ã‚ªãƒ¬ãƒ³ã‚¸ã‹ã‚‰é›»è©±
+ã€
 
 MSG_FOUR_TELE_ORANGEKID;
-;ƒIƒŒƒ“ƒWƒLƒbƒh‚s‚d‚k
-;‚±‚ê‚àƒ‚ƒmƒgƒŠ[ƒrƒ‹‚ÉŠ|‚©‚Á‚Ä‚­‚é
+;ã‚ªãƒ¬ãƒ³ã‚¸ã‚­ãƒƒãƒ‰ï¼´ï¼¥ï¼¬
+;ã“ã‚Œã‚‚ãƒ¢ãƒŽãƒˆãƒªãƒ¼ãƒ“ãƒ«ã«æŽ›ã‹ã£ã¦ãã‚‹
 @BGMSTART(0,BGM_msc1)
 @WI(60)
 @KEYNP()
@@ -572,48 +572,48 @@ MSG_FOUR_TELE_ORANGEKID;
 @SE(SE_se0b_tel_put)
 ;@BGMSTART(0,BGM_child)
 @OPEN(1)
-Ÿ‚g‚…‚Œ‚Œ‚I@@‚s‚ˆ‚‰‚“@‚‰‚“@‚n‚’‚‚Ž‚‡‚…@‚j‚‰‚„D@KEY()«
-Ÿ‚r‚‚’‚’‚™@‚h@‚ˆ‚‚–‚…‚Žf‚”@‚ƒ‚‚Œ‚Œ‚…‚„@‚Œ‚‚”‚…‚Œ‚™D@KEY()«
-Ÿ‚hf‚@‚“‚”‚‰‚Œ‚Œ@‚—‚‚’‚‹‚‰‚Ž‚‡@‚‚Ž@‚”‚ˆ‚…@‚—‚‚™@‚”‚@‚ƒ‚ˆ‚‚Ž‚‡‚…@‚‚‚‚‰‚Œ‚…‚„@‚…‚‡‚‡‚“@‚‰‚Ž‚”‚@‚’‚‚—@‚…‚‡‚‡‚“D@KEY()«
-Ÿ‚h‚”f‚“@‚”‚‚‹‚‰‚Ž‚‡@‚Œ‚‚Ž‚‡‚…‚’@‚”‚ˆ‚‚Ž@‚h@‚”‚ˆ‚‚•‚‡‚ˆ‚”DDD@KEY()«
-Ÿ‚hf‚@‚‡‚‚‰‚Ž‚‡@‚”‚@‚’‚…‚‚Œ‚Œ‚™@‚—‚‚’‚‹@‚‚”@‚‰‚”C@‚”‚ˆ‚‚•‚‡‚ˆDDD‚”‚‚Œ‚‹@‚”‚@‚‚…@‚Œ‚‚”‚…‚’D@KEY()«
-Ÿ–‚ƒ‚Œ‚‰‚ƒ‚‹–
-;jpn:Ÿ‚à‚µ‚à‚µ@‚ê‚ñ‚ç‚­‚Å‚«‚È‚­‚Ä«
-;jpn:@‚·‚Ý‚Ü‚¹‚ñ‚Å‚µ‚½B«
-;jpn:@ƒIƒŒƒ“ƒWƒLƒbƒh‚Å‚·B@KEY()«
-;jpn:Ÿ‚ä‚Å‚½‚Ü‚²‚ð@‚È‚Ü‚½‚Ü‚²‚É«
-;jpn:@‚à‚Ç‚·‚¯‚ñ‚«‚ã‚¤‚ð@‚µ‚Ä‚Ü‚µ‚ÄB@KEY()«
-;jpn:Ÿ‚Ü‚¾@‚à‚¤‚¿‚å‚Á‚Æ«
-;jpn:@‚¶‚©‚ñ‚ª@‚©‚©‚è‚»‚¤‚È‚ñ‚Å‚·B@KEY()«
-;jpn:Ÿ‚ª‚ñ‚Î‚è‚Ü‚·‚Ì‚Å@‚Ç‚¤‚©«
-;jpn:@‚Ð‚Æ‚Â‚æ‚ë‚µ‚­‚¨‚Ë‚ª‚¢‚µ‚Ü‚·‚ËB@KEY()«
-;jpn:Ÿ‚Å‚Ídd‚µ‚Â‚ê‚¢‚µ‚Ü‚·B«
-;jpn:@ƒKƒ`ƒƒƒ“@ƒc[@ƒc[@ƒc[
+â—†ï¼¨ï½…ï½Œï½Œï½ï¼ã€€ã€€ï¼´ï½ˆï½‰ï½“ã€€ï½‰ï½“ã€€ï¼¯ï½’ï½ï½Žï½‡ï½…ã€€ï¼«ï½‰ï½„ï¼Ž@KEY()â†“
+â—†ï¼³ï½ï½’ï½’ï½™ã€€ï¼©ã€€ï½ˆï½ï½–ï½…ï½Žâ€™ï½”ã€€ï½ƒï½ï½Œï½Œï½…ï½„ã€€ï½Œï½ï½”ï½…ï½Œï½™ï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½“ï½”ï½‰ï½Œï½Œã€€ï½—ï½ï½’ï½‹ï½‰ï½Žï½‡ã€€ï½ï½Žã€€ï½”ï½ˆï½…ã€€ï½—ï½ï½™ã€€ï½”ï½ã€€ï½ƒï½ˆï½ï½Žï½‡ï½…ã€€ï½‚ï½ï½‰ï½Œï½…ï½„ã€€ï½…ï½‡ï½‡ï½“ã€€ï½‰ï½Žï½”ï½ã€€ï½’ï½ï½—ã€€ï½…ï½‡ï½‡ï½“ï¼Ž@KEY()â†“
+â—†ï¼©ï½”â€™ï½“ã€€ï½”ï½ï½‹ï½‰ï½Žï½‡ã€€ï½Œï½ï½Žï½‡ï½…ï½’ã€€ï½”ï½ˆï½ï½Žã€€ï¼©ã€€ï½”ï½ˆï½ï½•ï½‡ï½ˆï½”ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½‡ï½ï½‰ï½Žï½‡ã€€ï½”ï½ã€€ï½’ï½…ï½ï½Œï½Œï½™ã€€ï½—ï½ï½’ï½‹ã€€ï½ï½”ã€€ï½‰ï½”ï¼Œã€€ï½”ï½ˆï½ï½•ï½‡ï½ˆï¼Žï¼Žï¼Žï½”ï½ï½Œï½‹ã€€ï½”ï½ã€€ï½ï½…ã€€ï½Œï½ï½”ï½…ï½’ï¼Ž@KEY()â†“
+â—†ï¼Šï½ƒï½Œï½‰ï½ƒï½‹ï¼Š
+;jpn:â—†ã‚‚ã—ã‚‚ã—ã€€ã‚Œã‚“ã‚‰ãã§ããªãã¦â†“
+;jpn:ã€€ã™ã¿ã¾ã›ã‚“ã§ã—ãŸã€‚â†“
+;jpn:ã€€ã‚ªãƒ¬ãƒ³ã‚¸ã‚­ãƒƒãƒ‰ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã‚†ã§ãŸã¾ã”ã‚’ã€€ãªã¾ãŸã¾ã”ã«â†“
+;jpn:ã€€ã‚‚ã©ã™ã‘ã‚“ãã‚…ã†ã‚’ã€€ã—ã¦ã¾ã—ã¦ã€‚@KEY()â†“
+;jpn:â—†ã¾ã ã€€ã‚‚ã†ã¡ã‚‡ã£ã¨â†“
+;jpn:ã€€ã˜ã‹ã‚“ãŒã€€ã‹ã‹ã‚Šãã†ãªã‚“ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ãŒã‚“ã°ã‚Šã¾ã™ã®ã§ã€€ã©ã†ã‹â†“
+;jpn:ã€€ã²ã¨ã¤ã‚ˆã‚ã—ããŠã­ãŒã„ã—ã¾ã™ã­ã€‚@KEY()â†“
+;jpn:â—†ã§ã¯â€¥â€¥ã—ã¤ã‚Œã„ã—ã¾ã™ã€‚â†“
+;jpn:ã€€ã‚¬ãƒãƒ£ãƒ³ã€€ãƒ„ãƒ¼ã€€ãƒ„ãƒ¼ã€€ãƒ„ãƒ¼
 @KEYNP()
 @CLOSEALL()
 @SE(SE_se0b_tel_put)
 ;------------
 @MUSISTART()
 ;------------
-x
+ã€
 
 ;-------------------------------------------------
 
 
-;”Ž•¨ŠÙ‚ÌŽó•tì
+;åšç‰©é¤¨ã®å—ä»˜å¬¢
 
-;HRECT_FOUR_MUSEUM‚æ‚èŒÄ‚Î‚ê‚éƒƒbƒZ[ƒW
+;HRECT_FOUR_MUSEUMã‚ˆã‚Šå‘¼ã°ã‚Œã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 MSG_EVT_MUSEUM_AS_HRECT;
-;@[ –Ÿ•„(I)”­s ]
+;@[ æ¼«ç¬¦(ï¼)ç™ºè¡Œ ]
 @SHOW_MANPU_CHAR(PRSN_FRSD_MUSEUM_FRONT_A,MANPU_BIKKURI)
 @WI(30)
-;@[ –Ÿ•„íœ ]
+;@[ æ¼«ç¬¦å‰Šé™¤ ]
 @HIDE_MANPU_CHAR(PRSN_FRSD_MUSEUM_FRONT_A)
 @OPEN(1)
-Ÿ‚g‚…‚™C@‚™‚‚•I@@‚n‚–‚…‚’@‚”‚ˆ‚…‚’‚…I@KEY()«
-Ÿ‚f‚…‚”@‚‚–‚…‚’@‚ˆ‚…‚’‚…I
-;jpn:Ÿ‚ ‚ç@‚¢‚â[‚Ë«
-;jpn:@‚»‚±‚Ì@‚Ú‚­I
+â—†ï¼¨ï½…ï½™ï¼Œã€€ï½™ï½ï½•ï¼ã€€ã€€ï¼¯ï½–ï½…ï½’ã€€ï½”ï½ˆï½…ï½’ï½…ï¼@KEY()â†“
+â—†ï¼§ï½…ï½”ã€€ï½ï½–ï½…ï½’ã€€ï½ˆï½…ï½’ï½…ï¼
+;jpn:â—†ã‚ã‚‰ã€€ã„ã‚„ãƒ¼ã­â†“
+;jpn:ã€€ãã“ã®ã€€ã¼ãï¼
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_FOUR_MUSEUM_BILK )
@@ -621,33 +621,33 @@ MSG_EVT_MUSEUM_AS_HRECT;
 @COLD_CHAR( PRSN_FRSD_MUSEUM_FRONT_A )
 @GET_ORDER_PLAYER(1)
 @XCHG()
-@GET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,1,0);[ æ“ª‚Ì•û‚ðŒü‚©‚¹‚é ]
+@GET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,1,0);[ å…ˆé ­ã®æ–¹ã‚’å‘ã‹ã›ã‚‹ ]
 @SET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,0)
 @OPEN(1);[ window open ]
-Ÿ‚s‚ˆ‚…@‚‚„‚‚‰‚“‚“‚‰‚‚Ž@‚†‚…‚…@‚‰‚“@‚TD‚O‚O@‚‚…‚’@‚‚…‚’‚“‚‚ŽD@KEY()«
-Ÿ‚h‚“@‚”‚ˆ‚‚”@‚‚‹‚‚™@‚—‚‰‚”‚ˆ@‚™‚‚•H«
-<‚x‚…‚“>@<‚m‚>
+â—†ï¼´ï½ˆï½…ã€€ï½ï½„ï½ï½‰ï½“ï½“ï½‰ï½ï½Žã€€ï½†ï½…ï½…ã€€ï½‰ï½“ã€€ï¼„ï¼•ï¼Žï¼ï¼ã€€ï½ï½…ï½’ã€€ï½ï½…ï½’ï½“ï½ï½Žï¼Ž@KEY()â†“
+â—†ï¼©ï½“ã€€ï½”ï½ˆï½ï½”ã€€ï½ï½‹ï½ï½™ã€€ï½—ï½‰ï½”ï½ˆã€€ï½™ï½ï½•ï¼Ÿâ†“
+<ï¼¹ï½…ï½“>ã€€<ï¼®ï½>
 @WINR_MONEY()
-;jpn:Ÿ‚É‚ã‚¤‚¶‚å‚¤‚è‚å‚¤«
-;jpn:@‚Ð‚Æ‚è‚Tƒhƒ‹‚Å‚·B«
-;jpn:@‚æ‚ë‚µ‚¢‚Å‚·‚©H
-;jpn:@@<‚Í‚¢>@@<‚¢‚¢‚¦>
+;jpn:â—†ã«ã‚…ã†ã˜ã‚‡ã†ã‚Šã‚‡ã†â†“
+;jpn:ã€€ã²ã¨ã‚Šï¼•ãƒ‰ãƒ«ã§ã™ã€‚â†“
+;jpn:ã€€ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ
+;jpn:ã€€ã€€<ã¯ã„>ã€€ã€€<ã„ã„ãˆ>
 @DSP_ITEM(2)
 @SELGOTO(_EVT_MUSEUM_AS_HRECT_YES,_EVT_MUSEUM_AS_HRECT_NO)
 
 _EVT_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(5)
 @XCHG()
-Ÿ‚x‚‚•@‚ƒ‚‚Žf‚”@‚‚†‚†‚‚’‚„«
-@@‚”‚@‚“‚‚…‚Ž‚„@@DSP_NUM(0)HC@KEY()«
-Ÿ‚‚’@‚‚’‚…@‚™‚‚•@‚Š‚•‚“‚”@‚Ž‚‚”@‚‰‚Ž‚”‚@‚„‚‰‚Ž‚‚“‚‚•‚’‚“H@@‚x‚‚•@‚‚•‚“‚”@‚‚‚…@‚Ž‚•‚”‚“DDD
-;jpn:Ÿ@DSP_NUM(0)ƒhƒ‹‚ª@‚¨‚µ‚¢‚Ì‚©‚µ‚çB«
-;jpn:@‚«‚å‚¤‚è‚ã‚¤‚É@‚«‚å‚¤‚Ý‚ª«
-;jpn:@‚È‚¢‚Ì‚©‚µ‚çH@‚©‚í‚Á‚½‚Ð‚ÆI
+â—†ï¼¹ï½ï½•ã€€ï½ƒï½ï½Žâ€™ï½”ã€€ï½ï½†ï½†ï½ï½’ï½„â†“
+ã€€ã€€ï½”ï½ã€€ï½“ï½ï½…ï½Žï½„ã€€ï¼„@DSP_NUM(0)ï¼Ÿï¼Œ@KEY()â†“
+â—†ï½ï½’ã€€ï½ï½’ï½…ã€€ï½™ï½ï½•ã€€ï½Šï½•ï½“ï½”ã€€ï½Žï½ï½”ã€€ï½‰ï½Žï½”ï½ã€€ï½„ï½‰ï½Žï½ï½“ï½ï½•ï½’ï½“ï¼Ÿã€€ã€€ï¼¹ï½ï½•ã€€ï½ï½•ï½“ï½”ã€€ï½‚ï½…ã€€ï½Žï½•ï½”ï½“ï¼Žï¼Žï¼Ž
+;jpn:â—†@DSP_NUM(0)ãƒ‰ãƒ«ãŒã€€ãŠã—ã„ã®ã‹ã—ã‚‰ã€‚â†“
+;jpn:ã€€ãã‚‡ã†ã‚Šã‚…ã†ã«ã€€ãã‚‡ã†ã¿ãŒâ†“
+;jpn:ã€€ãªã„ã®ã‹ã—ã‚‰ï¼Ÿã€€ã‹ã‚ã£ãŸã²ã¨ï¼
 @KEYNP()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_FOUR_MUSEUM_RID )
-@MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_FOUR_FOLLOW_MUSEUM_A, OBJFX_SHOW_NONE );Žó•tì‚É‚Â‚¢‚Ä‚¢‚­
+@MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_FOUR_FOLLOW_MUSEUM_A, OBJFX_SHOW_NONE );å—ä»˜å¬¢ã«ã¤ã„ã¦ã„ã
 @WI(1)
 @SET_CAMERA_GOM_CHAR( GOM_HIT_CHR )
 @FRESH_CHAR( PRSN_FRSD_MUSEUM_FRONT_A )
@@ -658,18 +658,18 @@ _EVT_MUSEUM_AS_HRECT_NO
 @COLD_CHAR( PRSN_FRSD_MUSEUM_FRONT_A )
 @GET_ORDER_PLAYER(1)
 @XCHG()
-@GET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,1,0);[ æ“ª‚Ì•û‚ðŒü‚©‚¹‚é ]
+@GET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,1,0);[ å…ˆé ­ã®æ–¹ã‚’å‘ã‹ã›ã‚‹ ]
 @SET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,0)
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(5)
 @XCHG()
-Ÿ‚x‚‚•@‚„‚‚Žf‚”@‚…‚–‚…‚Ž«
-@@‚ˆ‚‚–‚…@@DSP_NUM(0)HC@KEY()«
-Ÿ‚`‚Ž@‚•‚Ž‚•‚“‚•‚‚Œ@‚“‚‚…‚ƒ‚‰‚‚…‚Ž@‚Œ‚‰‚‹‚…@‚™‚‚•@‚“‚ˆ‚‚•‚Œ‚„@‚‚‚…@‚‚Ž@‚„‚‰‚“‚‚Œ‚‚™@‚‰‚Ž@‚”‚ˆ‚…@‚‚•‚“‚…‚•‚D
-;jpn:Ÿ‚½‚Á‚½@DSP_NUM(0)ƒhƒ‹‚à«
-;jpn:@‚à‚Á‚Ä‚¢‚È‚¢‚È‚ñ‚Ä@KEY()«
-;jpn:Ÿ‚ ‚È‚½‚ª@‚Í‚­‚Ô‚Â‚©‚ñ‚¢‚è«
-;jpn:@‚·‚é‚×‚«‚¶‚á‚È‚¢‚©‚µ‚çB
+â—†ï¼¹ï½ï½•ã€€ï½„ï½ï½Žâ€™ï½”ã€€ï½…ï½–ï½…ï½Žâ†“
+ã€€ã€€ï½ˆï½ï½–ï½…ã€€ï¼„@DSP_NUM(0)ï¼Ÿï¼Œ@KEY()â†“
+â—†ï¼¡ï½Žã€€ï½•ï½Žï½•ï½“ï½•ï½ï½Œã€€ï½“ï½ï½…ï½ƒï½‰ï½ï½…ï½Žã€€ï½Œï½‰ï½‹ï½…ã€€ï½™ï½ï½•ã€€ï½“ï½ˆï½ï½•ï½Œï½„ã€€ï½‚ï½…ã€€ï½ï½Žã€€ï½„ï½‰ï½“ï½ï½Œï½ï½™ã€€ï½‰ï½Žã€€ï½”ï½ˆï½…ã€€ï½ï½•ï½“ï½…ï½•ï½ï¼Ž
+;jpn:â—†ãŸã£ãŸ@DSP_NUM(0)ãƒ‰ãƒ«ã‚‚â†“
+;jpn:ã€€ã‚‚ã£ã¦ã„ãªã„ãªã‚“ã¦@KEY()â†“
+;jpn:â—†ã‚ãªãŸãŒã€€ã¯ãã¶ã¤ã‹ã‚“ã„ã‚Šâ†“
+;jpn:ã€€ã™ã‚‹ã¹ãã˜ã‚ƒãªã„ã‹ã—ã‚‰ã€‚
 @KEY()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_HIT_CHR,OBJFX_HIDE_NONE)
@@ -677,7 +677,7 @@ _EVT_MUSEUM_AS_HRECT_NO
 @WAITSYS()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_MAPOBJTBACK )
 @SET_HIT_RECT(1,HRECT_FOUR_MUSEUM,MSG_EVT_MUSEUM_AS_HRECT)
-x
+ã€
 
 _EVT_MUSEUM_AS_HRECT_YES
 @MUL_ACTIVE_PLAYER(5)
@@ -687,34 +687,34 @@ _EVT_MUSEUM_AS_HRECT_YES
 @SE(SE_se76_my_give)
 @MONEYOUT(0)
 @WINR_MONEY()
-Ÿ‚o‚Œ‚…‚‚“‚…@‚‡‚@‚‰‚ŽD@KEY()«
-Ÿ‚x‚‚•f‚Œ‚Œ@‚†‚‰‚Ž‚„@‚‚Ž@‚…‚˜‚‚…‚’‚”@‚‰‚Ž@‚”‚ˆ‚…@‚‚’‚…‚@‚‚†@‚`‚’‚”‚“@‚‚Ž‚„@‚r‚ƒ‚‰‚…‚Ž‚ƒ‚…‚“D
-;jpn:Ÿ‚¶‚á@‚Ç‚¤‚¼B«
-;jpn:@‚È‚©‚É@‚ª‚­‚¶‚ã‚Â‚¯‚ñ‚«‚ã‚¤‚¢‚ñ«
-;jpn:@‚ª@‚¨‚è‚Ü‚·B
+â—†ï¼°ï½Œï½…ï½ï½“ï½…ã€€ï½‡ï½ã€€ï½‰ï½Žï¼Ž@KEY()â†“
+â—†ï¼¹ï½ï½•â€™ï½Œï½Œã€€ï½†ï½‰ï½Žï½„ã€€ï½ï½Žã€€ï½…ï½˜ï½ï½…ï½’ï½”ã€€ï½‰ï½Žã€€ï½”ï½ˆï½…ã€€ï½ï½’ï½…ï½ã€€ï½ï½†ã€€ï¼¡ï½’ï½”ï½“ã€€ï½ï½Žï½„ã€€ï¼³ï½ƒï½‰ï½…ï½Žï½ƒï½…ï½“ï¼Ž
+;jpn:â—†ã˜ã‚ƒã€€ã©ã†ãžã€‚â†“
+;jpn:ã€€ãªã‹ã«ã€€ãŒãã˜ã‚…ã¤ã‘ã‚“ãã‚…ã†ã„ã‚“â†“
+;jpn:ã€€ãŒã€€ãŠã‚Šã¾ã™ã€‚
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_FOUR_MUSEUM_RETURN )
 @WAITSYS()
 @REMOVE_CHAR( PRSN_FRSD_MUSEUM_FRONT_A, ANIM_MAPOBJTBACK )
 @SETF(FLG_GLOBAL_MUSEUM_PAID)
-x
+ã€
 ;
 ;
-;ƒTƒ}[ƒYƒqƒGƒƒOƒŠƒt”Ž•¨ŠÙ‚ÌŽó•tì
+;ã‚µãƒžãƒ¼ã‚ºãƒ’ã‚¨ãƒ­ã‚°ãƒªãƒ•åšç‰©é¤¨ã®å—ä»˜å¬¢
 ;
-;HRECT_SUMS_MUSEUM‚æ‚èŒÄ‚Î‚ê‚éƒƒbƒZ[ƒW
+;HRECT_SUMS_MUSEUMã‚ˆã‚Šå‘¼ã°ã‚Œã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 MSG_EVT_SUMS_MUSEUM_AS_HRECT;
-;@[ –Ÿ•„(I)”­s ]
+;@[ æ¼«ç¬¦(ï¼)ç™ºè¡Œ ]
 @SHOW_MANPU_CHAR(PRSN_SUMS_HIERO_FRONT_A,MANPU_BIKKURI)
 @WI(30)
-;@[ –Ÿ•„íœ ]
+;@[ æ¼«ç¬¦å‰Šé™¤ ]
 @HIDE_MANPU_CHAR(PRSN_SUMS_HIERO_FRONT_A)
 @OPEN(1)
-Ÿ‚s‚“‚‹C@‚”‚“‚‹C@‚”‚“‚‹DDD@KEY()«
-Ÿ‚x‚‚•@‚“‚ˆ‚‚•‚Œ‚„@‚‹‚Ž‚‚—@‚‚‚…‚”‚”‚…‚’DDD
-;jpn:Ÿ‚Æ‚Á‚Æ‚Á‚Æ‚Á‚Ædd«
-;jpn:@‚¿‚¢‚³‚¢@‚µ‚ñ‚µ‚Ì‚Ý‚È‚³‚ñB
+â—†ï¼´ï½“ï½‹ï¼Œã€€ï½”ï½“ï½‹ï¼Œã€€ï½”ï½“ï½‹ï¼Žï¼Žï¼Ž@KEY()â†“
+â—†ï¼¹ï½ï½•ã€€ï½“ï½ˆï½ï½•ï½Œï½„ã€€ï½‹ï½Žï½ï½—ã€€ï½‚ï½…ï½”ï½”ï½…ï½’ï¼Žï¼Žï¼Ž
+;jpn:â—†ã¨ã£ã¨ã£ã¨ã£ã¨â€¥â€¥â†“
+;jpn:ã€€ã¡ã„ã•ã„ã€€ã—ã‚“ã—ã®ã¿ãªã•ã‚“ã€‚
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR(PRSN_SUMS_HIERO_FRONT_A,ANIM_SUMS_MUSEUM_BILK)
@@ -722,36 +722,36 @@ MSG_EVT_SUMS_MUSEUM_AS_HRECT;
 @COLD_CHAR(PRSN_SUMS_HIERO_FRONT_A)
 @GET_ORDER_PLAYER(1)
 @XCHG()
-@GET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,1,0);[ æ“ª‚Ì•û‚ðŒü‚©‚¹‚é ]
+@GET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,1,0);[ å…ˆé ­ã®æ–¹ã‚’å‘ã‹ã›ã‚‹ ]
 @SET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,0)
 @OPEN(1);[ window open ]
-Ÿ‚x‚‚•@‚ƒ‚‚Ž‚Ž‚‚”@‚‡‚…‚”@‚‰‚Ž@‚—‚‰‚”‚ˆ‚‚•‚”@‚‚‚™‚‰‚Ž‚‡@‚‚„‚‚‰‚“‚“‚‰‚‚ŽD@@‚h‚”f‚“@‚R@‚‚…‚’@‚‚…‚’‚“‚‚ŽD@KEY()«
-Ÿ‚x‚‚•f‚Œ‚Œ@‚‚‚™C@‚—‚‚Žf‚”@‚™‚‚•H«
+â—†ï¼¹ï½ï½•ã€€ï½ƒï½ï½Žï½Žï½ï½”ã€€ï½‡ï½…ï½”ã€€ï½‰ï½Žã€€ï½—ï½‰ï½”ï½ˆï½ï½•ï½”ã€€ï½ï½ï½™ï½‰ï½Žï½‡ã€€ï½ï½„ï½ï½‰ï½“ï½“ï½‰ï½ï½Žï¼Žã€€ã€€ï¼©ï½”â€™ï½“ã€€ï¼„ï¼“ã€€ï½ï½…ï½’ã€€ï½ï½…ï½’ï½“ï½ï½Žï¼Ž@KEY()â†“
+â—†ï¼¹ï½ï½•â€™ï½Œï½Œã€€ï½ï½ï½™ï¼Œã€€ï½—ï½ï½Žâ€™ï½”ã€€ï½™ï½ï½•ï¼Ÿâ†“
 @WINR_MONEY()
-<‚x‚…‚“>@<‚m‚>
-;jpn:Ÿ‚É‚ã‚¤‚¶‚å‚¤‚è‚å‚¤‚ð«
-;jpn:@‚Í‚ç‚í‚È‚¢‚Å@‚Í‚¢‚Á‚Ä‚Í«
-;jpn:@‚¢‚¯‚È‚©‚Á‚½‚í‚ËB@KEY()«
-;jpn:Ÿ‚Ð‚Æ‚è‚Rƒhƒ‹‚Å‚·B@WI(20)«
-;jpn:@‚¨‚µ‚Í‚ç‚¢‚É‚È‚é‚í‚ËH@KEY()«
+<ï¼¹ï½…ï½“>ã€€<ï¼®ï½>
+;jpn:â—†ã«ã‚…ã†ã˜ã‚‡ã†ã‚Šã‚‡ã†ã‚’â†“
+;jpn:ã€€ã¯ã‚‰ã‚ãªã„ã§ã€€ã¯ã„ã£ã¦ã¯â†“
+;jpn:ã€€ã„ã‘ãªã‹ã£ãŸã‚ã­ã€‚@KEY()â†“
+;jpn:â—†ã²ã¨ã‚Šï¼“ãƒ‰ãƒ«ã§ã™ã€‚@WI(20)â†“
+;jpn:ã€€ãŠã—ã¯ã‚‰ã„ã«ãªã‚‹ã‚ã­ï¼Ÿ@KEY()â†“
 ;jpn:@WINR_MONEY()
-;jpn:@@<‚Í‚¢>@@<‚¢‚¢‚¦>
+;jpn:ã€€ã€€<ã¯ã„>ã€€ã€€<ã„ã„ãˆ>
 @DSP_ITEM(2)
 @SELGOTO(_EVT_SUMS_MUSEUM_AS_HRECT_YES,_EVT_SUMS_MUSEUM_AS_HRECT_NO)
 
 _EVT_SUMS_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(3)
 @XCHG()
-Ÿ‚h‚“@@DSP_NUM(0)@‚”‚‚@‚…‚˜‚‚…‚Ž‚“‚‰‚–‚…«
-@@‚†‚‚’@‚™‚‚•H@KEY()«
-Ÿ‚n‚’@‚‚’‚…@‚™‚‚•@‚Š‚•‚“‚”@‚Ž‚‚”@‚‰‚Ž‚”‚…‚’‚…‚“‚”‚…‚„@‚‰‚Ž@‚‚Ž‚ƒ‚‰‚…‚Ž‚”@‚ƒ‚•‚Œ‚”‚•‚’‚…H
-;jpn:Ÿ@DSP_NUM(0)ƒhƒ‹‚Í@‚½‚©‚©‚Á‚½‚Ì‚©‚µ‚çB«
-;jpn:@‚»‚ê‚Æ‚à@‚±‚¾‚¢‚Ô‚ñ‚©‚É«
-;jpn:@‚«‚å‚¤‚Ý‚ª‚È‚¢‚Ì‚©‚µ‚çB
+â—†ï¼©ï½“ã€€ï¼„@DSP_NUM(0)ã€€ï½”ï½ï½ã€€ï½…ï½˜ï½ï½…ï½Žï½“ï½‰ï½–ï½…â†“
+ã€€ã€€ï½†ï½ï½’ã€€ï½™ï½ï½•ï¼Ÿ@KEY()â†“
+â—†ï¼¯ï½’ã€€ï½ï½’ï½…ã€€ï½™ï½ï½•ã€€ï½Šï½•ï½“ï½”ã€€ï½Žï½ï½”ã€€ï½‰ï½Žï½”ï½…ï½’ï½…ï½“ï½”ï½…ï½„ã€€ï½‰ï½Žã€€ï½ï½Žï½ƒï½‰ï½…ï½Žï½”ã€€ï½ƒï½•ï½Œï½”ï½•ï½’ï½…ï¼Ÿ
+;jpn:â—†@DSP_NUM(0)ãƒ‰ãƒ«ã¯ã€€ãŸã‹ã‹ã£ãŸã®ã‹ã—ã‚‰ã€‚â†“
+;jpn:ã€€ãã‚Œã¨ã‚‚ã€€ã“ã ã„ã¶ã‚“ã‹ã«â†“
+;jpn:ã€€ãã‚‡ã†ã¿ãŒãªã„ã®ã‹ã—ã‚‰ã€‚
 @KEYNP()
 @CLOSEALL()
 @REMOVE_CHAR(PRSN_SUMS_HIERO_FRONT_A,ANIM_SUMS_MUSEUM_RID)
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_SUMS_FOLLOW_MUSEUM_A, OBJFX_SHOW_NONE);Žó•tì‚É‚Â‚¢‚Ä‚¢‚­
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_SUMS_FOLLOW_MUSEUM_A, OBJFX_SHOW_NONE);å—ä»˜å¬¢ã«ã¤ã„ã¦ã„ã
 @WI(1)
 @SET_CAMERA_GOM_CHAR( GOM_HIT_CHR )
 @FRESH_CHAR( PRSN_SUMS_HIERO_FRONT_A )
@@ -762,18 +762,18 @@ _EVT_SUMS_MUSEUM_AS_HRECT_NO
 @COLD_CHAR( PRSN_SUMS_HIERO_FRONT_A )
 @GET_ORDER_PLAYER(1)
 @XCHG()
-@GET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,1,0);[ æ“ª‚Ì•û‚ðŒü‚©‚¹‚é ]
+@GET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,1,0);[ å…ˆé ­ã®æ–¹ã‚’å‘ã‹ã›ã‚‹ ]
 @SET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,0)
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(3)
 @XCHG()
-Ÿ‚x‚‚•@‚„‚‚Žf‚”@‚…‚–‚…‚Ž«
-@@‚ˆ‚‚–‚…@@DSP_NUM(0)H@KEY()«
-Ÿ‚h‚†@‚‰‚”@‚—‚…‚’‚…@‚•‚@‚”‚@‚‚…C@‚‚Ž@‚‚„‚„‚‰‚”‚™@‚Œ‚‰‚‹‚…@‚™‚‚•@‚—‚‚•‚Œ‚„@‚‚‚…@‚…‚˜‚ˆ‚‰‚‚‚‰‚”‚…‚„@‚‰‚Ž@‚”‚ˆ‚…@‚‚•‚“‚…‚•‚DDD
-;jpn:Ÿ‚½‚Á‚½@DSP_NUM(0)ƒhƒ‹‚à«
-;jpn:@‚à‚Á‚Ä‚¢‚È‚¢‚È‚ñ‚Ä@KEY()«
-;jpn:Ÿ‚ ‚È‚½‚ª@‚Í‚­‚Ô‚Â‚©‚ñ‚¢‚è«
-;jpn:@‚·‚é‚×‚«‚¶‚á‚È‚¢‚©‚µ‚çB
+â—†ï¼¹ï½ï½•ã€€ï½„ï½ï½Žâ€™ï½”ã€€ï½…ï½–ï½…ï½Žâ†“
+ã€€ã€€ï½ˆï½ï½–ï½…ã€€ï¼„@DSP_NUM(0)ï¼Ÿ@KEY()â†“
+â—†ï¼©ï½†ã€€ï½‰ï½”ã€€ï½—ï½…ï½’ï½…ã€€ï½•ï½ã€€ï½”ï½ã€€ï½ï½…ï¼Œã€€ï½ï½Žã€€ï½ï½„ï½„ï½‰ï½”ï½™ã€€ï½Œï½‰ï½‹ï½…ã€€ï½™ï½ï½•ã€€ï½—ï½ï½•ï½Œï½„ã€€ï½‚ï½…ã€€ï½…ï½˜ï½ˆï½‰ï½‚ï½‰ï½”ï½…ï½„ã€€ï½‰ï½Žã€€ï½”ï½ˆï½…ã€€ï½ï½•ï½“ï½…ï½•ï½ï¼Žï¼Žï¼Ž
+;jpn:â—†ãŸã£ãŸ@DSP_NUM(0)ãƒ‰ãƒ«ã‚‚â†“
+;jpn:ã€€ã‚‚ã£ã¦ã„ãªã„ãªã‚“ã¦@KEY()â†“
+;jpn:â—†ã‚ãªãŸãŒã€€ã¯ãã¶ã¤ã‹ã‚“ã„ã‚Šâ†“
+;jpn:ã€€ã™ã‚‹ã¹ãã˜ã‚ƒãªã„ã‹ã—ã‚‰ã€‚
 @KEY()
 @CLOSEALL()
 @HIDE_GOM_CHAR(GOM_HIT_CHR,OBJFX_HIDE_NONE)
@@ -781,7 +781,7 @@ _EVT_SUMS_MUSEUM_AS_HRECT_NO
 @WAITSYS()
 @REMOVE_CHAR( PRSN_SUMS_HIERO_FRONT_A, ANIM_MAPOBJTBACK )
 @SET_HIT_RECT(1,HRECT_SUMS_MUSEUM,MSG_EVT_SUMS_MUSEUM_AS_HRECT)
-x
+ã€
 
 _EVT_SUMS_MUSEUM_AS_HRECT_YES
 @MUL_ACTIVE_PLAYER(3)
@@ -791,296 +791,296 @@ _EVT_SUMS_MUSEUM_AS_HRECT_YES
 @SE(SE_se76_my_give)
 @MONEYOUT(0)
 @WINR_MONEY()
-Ÿ‚o‚Œ‚…‚‚“‚…@‚‡‚@‚’‚‰‚‡‚ˆ‚”@‚‰‚ŽD@KEY()«
-Ÿ‚`‚“‚‹@‚“‚‚‚…‚‚Ž‚…@‚‰‚Ž‚“‚‰‚„‚…@‚†‚‚’@‚‚‚’‚…@‚„‚…‚”‚‚‰‚Œ‚…‚„@‚‰‚Ž‚†‚‚’‚‚‚”‚‰‚‚ŽD
-;jpn:Ÿ‚¶‚á@‚Ç‚¤‚¼B«
-;jpn:@‚­‚í‚µ‚¢@‚¹‚Â‚ß‚¢‚Í«
-;jpn:@‚È‚©‚Ì‚Ð‚Æ‚É@‚«‚¢‚Ä‚ËB
+â—†ï¼°ï½Œï½…ï½ï½“ï½…ã€€ï½‡ï½ã€€ï½’ï½‰ï½‡ï½ˆï½”ã€€ï½‰ï½Žï¼Ž@KEY()â†“
+â—†ï¼¡ï½“ï½‹ã€€ï½“ï½ï½ï½…ï½ï½Žï½…ã€€ï½‰ï½Žï½“ï½‰ï½„ï½…ã€€ï½†ï½ï½’ã€€ï½ï½ï½’ï½…ã€€ï½„ï½…ï½”ï½ï½‰ï½Œï½…ï½„ã€€ï½‰ï½Žï½†ï½ï½’ï½ï½ï½”ï½‰ï½ï½Žï¼Ž
+;jpn:â—†ã˜ã‚ƒã€€ã©ã†ãžã€‚â†“
+;jpn:ã€€ãã‚ã—ã„ã€€ã›ã¤ã‚ã„ã¯â†“
+;jpn:ã€€ãªã‹ã®ã²ã¨ã«ã€€ãã„ã¦ã­ã€‚
 @KEY()
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_SUMS_HIERO_FRONT_A, ANIM_SUMS_MUSEUM_RETURN )
 @WAITSYS()
 @REMOVE_CHAR( PRSN_SUMS_HIERO_FRONT_A, ANIM_MAPOBJTBACK )
 @SETF(FLG_GLOBAL_MUSEUM_PAID)
-x
+ã€
 ;---------------------------------------------------------
 
-;‘•â
+;å¢—è£œ
 
-;š‰®ª‚©‚ç”ò‚Ñ~‚è‚éƒgƒ“ƒ`ƒL
+;â˜…å±‹æ ¹ã‹ã‚‰é£›ã³é™ã‚Šã‚‹ãƒˆãƒ³ãƒã‚­
 MSG_EVT_ROOF_TONCHIKI;
-;–Ÿ•„o‚·
+;æ¼«ç¬¦å‡ºã™
 @GET_CHAR_DIR( PRSN_TWSN_FIELD_1I, 1, PC_NESS )
-@SET_CHAR_DIR( PRSN_TWSN_FIELD_1I, 0 )	;ƒgƒ“ƒ`ƒL‚ðƒlƒX‚ÉŒü‚¯‚é
+@SET_CHAR_DIR( PRSN_TWSN_FIELD_1I, 0 )	;ãƒˆãƒ³ãƒã‚­ã‚’ãƒã‚¹ã«å‘ã‘ã‚‹
 @SHOW_MANPU_CHAR( PRSN_TWSN_FIELD_1I, MANPU_BIKKURI )
 @WI(60)
 @HIDE_MANPU_CHAR( PRSN_TWSN_FIELD_1I )
-;”ò‚Ñ~‚èƒgƒ“ƒ`ƒL‚ÆŒðŠ·
+;é£›ã³é™ã‚Šãƒˆãƒ³ãƒã‚­ã¨äº¤æ›
 @HIDE_CHAR( PRSN_TWSN_FIELD_1I, OBJFX_HIDE_NONE )
 @MOVE_GOM_CHAR( GOM_TONCIKI, ANIM_JUMP_TONCHIKI, OBJFX_SHOW_NONE )
 @MOVE_GOM_CHAR( GOM_SHADOW_FALL, ANIM_JUMP_TONCHIKI_SHADOW, OBJFX_SHOW_NONE )
 @WAITSYS()
-;‹ß‚Ã‚­ƒgƒ“ƒ`ƒL‚ÆŒðŠ·
+;è¿‘ã¥ããƒˆãƒ³ãƒã‚­ã¨äº¤æ›
 @HIDE_GOM_CHAR( GOM_TONCIKI, OBJFX_HIDE_NONE )
 @MOVE_CHAR( PRSN_TWSN_FIELD_1I, ANIM_APPROACH_CONT_SCRIPT, OBJFX_SHOW_NONE )
 @WAITSYS()
 @WI( 10 )
 @OPEN(1)
-@GOSUB(MSG_TWSN_TONCHIKI);’‚éƒgƒ“ƒ`ƒL;ƒZƒŠƒtFŸ•‰‚¾I
+@GOSUB(MSG_TWSN_TONCHIKI);å–‹ã‚‹ãƒˆãƒ³ãƒã‚­;ã‚»ãƒªãƒ•ï¼šå‹è² ã ï¼
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_TWSN_FIELD_1I, ANIM_TONCHIKI_ENTER_HOUSE )
 @WAITSYS()
-@SETF(FLG_TWSN_TONCHIKI_R_DISAPPEAR);‰®ªƒgƒ“ƒ`ƒLoŒ» ‚µ‚È‚¢‚æ‚¤‚É‚·‚é
-@SETF(FLG_TWSN_TONCHIKI_APPEAR);Žº“àƒgƒ“ƒ`ƒLoŒ» ‚·‚é‚æ‚¤‚É‚·‚é
-x
+@SETF(FLG_TWSN_TONCHIKI_R_DISAPPEAR);å±‹æ ¹ãƒˆãƒ³ãƒã‚­å‡ºç¾ ã—ãªã„ã‚ˆã†ã«ã™ã‚‹
+@SETF(FLG_TWSN_TONCHIKI_APPEAR);å®¤å†…ãƒˆãƒ³ãƒã‚­å‡ºç¾ ã™ã‚‹ã‚ˆã†ã«ã™ã‚‹
+ã€
 ;---------------------------------------------------------
 
-;‚Ô‚Â‚©‚è•‚±‚°ƒTƒ‹;
+;ã¶ã¤ã‹ã‚Šé»’ã“ã’ã‚µãƒ«;
 
 MSG_EVT_BUTUKARIZARU
-;ƒTƒ‹‚É–Ÿ•„o‚·
+;ã‚µãƒ«ã«æ¼«ç¬¦å‡ºã™
 @SHOW_MANPU_CHAR(PRSN_FRSD_FIELD_1B,MANPU_BIKKURI)
 @WI(60)
 @HIDE_MANPU_CHAR( PRSN_FRSD_FIELD_1B )
 @REMOVE_CHAR( PRSN_FRSD_FIELD_1B, ANIM_BUTUKARIZARU )
 @WAITSYS()
-;u•‚±‚°ƒUƒ‹v‚ÆŒðŠ·
+;ã€Œé»’ã“ã’ã‚¶ãƒ«ã€ã¨äº¤æ›
 @HIDE_CHAR( PRSN_FRSD_FIELD_1B, OBJFX_HIDE_NONE )
 @MOVE_CHAR( PRSN_FRSD_FIELD_1C, ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE )
-@SETF(FLG_FOUR_SARU_K_APPEAR);•‚±‚°ƒUƒ‹•\Ž¦ƒtƒ‰ƒO—§‚Ä‚é
-@CLRF(FLG_FOUR_SARU_B_APPEAR);‚Ô‚Â‚©‚èƒUƒ‹•\Ž¦ƒtƒ‰ƒO~‚ë‚·
-x
+@SETF(FLG_FOUR_SARU_K_APPEAR);é»’ã“ã’ã‚¶ãƒ«è¡¨ç¤ºãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@CLRF(FLG_FOUR_SARU_B_APPEAR);ã¶ã¤ã‹ã‚Šã‚¶ãƒ«è¡¨ç¤ºãƒ•ãƒ©ã‚°é™ã‚ã™
+ã€
 
 MSG_EVT_KUROKOGEZARU
-;u‹Ž‚éƒTƒ‹v‚ÆŒðŠ·
+;ã€ŒåŽ»ã‚‹ã‚µãƒ«ã€ã¨äº¤æ›
 @HIDE_CHAR( PRSN_FRSD_FIELD_1C, OBJFX_HIDE_NONE )
 @MOVE_CHAR( PRSN_FRSD_FIELD_1B, ANIM_MAPOBJSTILL,OBJFX_SHOW_NONE )
 @GET_CHAR_DIR( PRSN_FRSD_FIELD_1B, 1, PC_ALL )
-@SET_CHAR_DIR( PRSN_FRSD_FIELD_1B, 0 );‚Ô‚Â‚©‚èƒUƒ‹‚ðƒlƒX‚Ì•û‚ÉŒü‚©‚¹‚é]
-;ƒWƒƒƒu‚ªŒÄ‚ñ‚Å‚¢‚é
+@SET_CHAR_DIR( PRSN_FRSD_FIELD_1B, 0 );ã¶ã¤ã‹ã‚Šã‚¶ãƒ«ã‚’ãƒã‚¹ã®æ–¹ã«å‘ã‹ã›ã‚‹]
+;ã‚¸ãƒ£ãƒ–ãŒå‘¼ã‚“ã§ã„ã‚‹
 @OPEN(1)
-Ÿ‚j‚‰‚‹‚™‚…@‚•‚‹‚…@‚‹‚™‚«
-@@i‚hf‚@‚Ž‚‚”@‚@‚„‚…‚Œ‚‰‚–‚…‚’‚™@‚‚‚ŽDj@KEY()«
-Ÿ‚j‚…‚‹‚…@‚‹‚•@‚‰‚‚‹‚‹‚‰@‚‹‚‚‹‚™‚«
-@@i‚h@‚ƒ‚‚Žf‚”@‚’‚…‚‚…‚‚‚‚…‚’@‚‰‚†@‚—‚…f‚–‚…@‚‚…‚”Dj@KEY()«
-Ÿ‚j‚™‚•@‚•‚‹‚‹‚‰@‚•‚‹‚‹‚‰@‚‹‚«
-@@i‚s‚…‚’‚’‚@‚i‚‰‚‚Ž@‚Š‚•‚“‚”@‚†‚‰‚Ž‚‰‚“‚ˆ‚…‚„@‚†‚‚“‚”‚‰‚Ž‚‡j@KEY()«
-Ÿ‚j‚™‚•@‚•‚‹‚™‚@‚•‚‹‚‰«
-@@i‚‚Ž‚„@‚Ž‚‚—@‚—‚‚Ž‚”‚“@‚”‚@‚‚…‚…‚”@‚™‚‚•j@KEY()«
-Ÿ‚t‚‹‚@‚•‚‹‚…@‚‹‚‚•‚‰‚‹‚…«
-@@i‚‚”@‚”‚ˆ‚…@‚—‚…‚“‚”@‚…‚Ž‚„@‚‚†@‚c‚•‚“‚”‚™@‚c‚•‚Ž‚…‚“@‚„‚…‚“‚…‚’‚”j@KEY()«
-Ÿ‚j‚…‚‹‚‚‰@‚‹‚‰‚‹‚@‚•‚‹‚‹‚…‚‹‚…«
-@@i‚‰‚Ž@‚@‚ƒ‚‚–‚…@‚—‚‰‚”‚ˆ@‚Œ‚‚”‚“@‚‚†@‚‚‚Ž‚‹‚…‚™‚“Dj@KEY()«
-Ÿ‚j‚‚‹‚™‚•@‚•‚‹‚…@‚‹‚•@‚‚‹‚‹‚‰«
-@@i‚hf‚Œ‚Œ@‚•‚“‚…@‚‚™@‚”‚…‚Œ‚…‚‚‚’‚”‚‚”‚‰‚‚Ž@‚”‚DDDj@KEY()«
-Ÿ‚j‚™‚«
-@@i‚a‚™‚…Ij
-;jpn:ŸƒLƒƒƒLƒƒ[ƒLƒƒ«
-;jpn:@i‚í‚½‚µ‚Í@‚½‚Á‚«‚ã‚¤‚Ñ‚ñ‚Å‚Í«
-;jpn:@‚ ‚è‚Ü‚¹[‚ñj@KEY()«
-;jpn:ŸƒLƒƒƒbƒLƒ…ƒLƒ‡«
-;jpn:@i‚Ü‚¦‚É@‚ ‚È‚½‚Æ«
-;jpn:@‚ ‚Á‚½‚©@‚ ‚í‚È‚©‚Á‚½‚©@KEY()«
-;jpn:Ÿ‚¨‚Ú‚¦‚Ä‚¢‚Ü‚¹‚ñ‚ªj@KEY()«
-;jpn:ŸƒLƒƒƒ“ƒLƒbƒL«
-;jpn:@i‚¾‚ñ‚¶‚«‚ð@‚¨‚¦‚½«
-;jpn:@ƒ^ƒ‰ƒCƒWƒƒƒu‚³‚Ü‚ªj@KEY()«
-;jpn:ŸƒLƒbƒL@ƒLƒL[«
-;jpn:@i‚ ‚È‚½‚É@‚ ‚¢‚½‚ª‚Á‚Ä‚¢‚Ü‚·j@KEY()«
-;jpn:ŸƒEƒbƒLƒbƒL[«
-;jpn:@i‚Î‚µ‚å‚Í@ƒhƒRƒhƒR‚³‚Î‚­‚Ì«
-;jpn:@‚É‚µ‚Ì@‚Í‚¶‚Ì‚Ù‚¤j@KEY()«
-;jpn:ŸƒL[ƒLƒL[ƒLƒL«
-;jpn:@i‚¢‚í‚ä‚é«
-;jpn:@uƒTƒ‹‚Ì‚¨‚¨‚¢‚Ç‚¤‚­‚Âv‚Å‚·j@KEY()«
-;jpn:ŸƒLƒ“ƒLƒL@ƒLƒLƒ“@ƒL[ƒL[«
-;jpn:@i‚¶‚á@‚í‚½‚­‚µ‚Í«
-;jpn:@ƒeƒŒƒ|[ƒe[ƒVƒ‡ƒ“‚Åddj@KEY()«
-;jpn:ŸƒLƒƒI«
-;jpn:@i‚µ‚Â‚ê‚¢‚µ‚Ü‚·j
-@KEY()«
+â—†ï¼«ï½‰ï½‹ï½™ï½…ã€€ï½•ï½‹ï½…ã€€ï½‹ï½™ï½â†“
+ã€€ã€€ï¼ˆï¼©â€™ï½ã€€ï½Žï½ï½”ã€€ï½ã€€ï½„ï½…ï½Œï½‰ï½–ï½…ï½’ï½™ã€€ï½ï½ï½Žï¼Žï¼‰@KEY()â†“
+â—†ï¼«ï½…ï½‹ï½…ã€€ï½‹ï½•ã€€ï½‰ï½ï½‹ï½‹ï½‰ã€€ï½‹ï½ï½‹ï½™ï½â†“
+ã€€ã€€ï¼ˆï¼©ã€€ï½ƒï½ï½Žâ€™ï½”ã€€ï½’ï½…ï½ï½…ï½ï½‚ï½…ï½’ã€€ï½‰ï½†ã€€ï½—ï½…â€™ï½–ï½…ã€€ï½ï½…ï½”ï¼Žï¼‰@KEY()â†“
+â—†ï¼«ï½™ï½•ã€€ï½•ï½‹ï½‹ï½‰ã€€ï½•ï½‹ï½‹ï½‰ã€€ï½‹ï½â†“
+ã€€ã€€ï¼ˆï¼´ï½…ï½’ï½’ï½ã€€ï¼ªï½‰ï½ï½Žã€€ï½Šï½•ï½“ï½”ã€€ï½†ï½‰ï½Žï½‰ï½“ï½ˆï½…ï½„ã€€ï½†ï½ï½“ï½”ï½‰ï½Žï½‡ï¼‰@KEY()â†“
+â—†ï¼«ï½™ï½•ã€€ï½•ï½‹ï½™ï½ã€€ï½•ï½‹ï½‰â†“
+ã€€ã€€ï¼ˆï½ï½Žï½„ã€€ï½Žï½ï½—ã€€ï½—ï½ï½Žï½”ï½“ã€€ï½”ï½ã€€ï½ï½…ï½…ï½”ã€€ï½™ï½ï½•ï¼‰@KEY()â†“
+â—†ï¼µï½‹ï½ã€€ï½•ï½‹ï½…ã€€ï½‹ï½ï½•ï½‰ï½‹ï½…â†“
+ã€€ã€€ï¼ˆï½ï½”ã€€ï½”ï½ˆï½…ã€€ï½—ï½…ï½“ï½”ã€€ï½…ï½Žï½„ã€€ï½ï½†ã€€ï¼¤ï½•ï½“ï½”ï½™ã€€ï¼¤ï½•ï½Žï½…ï½“ã€€ï½„ï½…ï½“ï½…ï½’ï½”ï¼‰@KEY()â†“
+â—†ï¼«ï½…ï½‹ï½ï½‰ã€€ï½‹ï½‰ï½‹ï½ã€€ï½•ï½‹ï½‹ï½…ï½‹ï½…â†“
+ã€€ã€€ï¼ˆï½‰ï½Žã€€ï½ã€€ï½ƒï½ï½–ï½…ã€€ï½—ï½‰ï½”ï½ˆã€€ï½Œï½ï½”ï½“ã€€ï½ï½†ã€€ï½ï½ï½Žï½‹ï½…ï½™ï½“ï¼Žï¼‰@KEY()â†“
+â—†ï¼«ï½ï½‹ï½™ï½•ã€€ï½•ï½‹ï½…ã€€ï½‹ï½•ã€€ï½ï½‹ï½‹ï½‰â†“
+ã€€ã€€ï¼ˆï¼©â€™ï½Œï½Œã€€ï½•ï½“ï½…ã€€ï½ï½™ã€€ï½”ï½…ï½Œï½…ï½ï½ï½’ï½”ï½ï½”ï½‰ï½ï½Žã€€ï½”ï½ï¼Žï¼Žï¼Žï¼‰@KEY()â†“
+â—†ï¼«ï½™ï½â†“
+ã€€ã€€ï¼ˆï¼¢ï½™ï½…ï¼ï¼‰
+;jpn:â—†ã‚­ãƒ£ã‚­ãƒ£ãƒ¼ã‚­ãƒ£â†“
+;jpn:ã€€ï¼ˆã‚ãŸã—ã¯ã€€ãŸã£ãã‚…ã†ã³ã‚“ã§ã¯â†“
+;jpn:ã€€ã‚ã‚Šã¾ã›ãƒ¼ã‚“ï¼‰@KEY()â†“
+;jpn:â—†ã‚­ãƒ£ãƒƒã‚­ãƒ¥ã‚­ãƒ§â†“
+;jpn:ã€€ï¼ˆã¾ãˆã«ã€€ã‚ãªãŸã¨â†“
+;jpn:ã€€ã‚ã£ãŸã‹ã€€ã‚ã‚ãªã‹ã£ãŸã‹@KEY()â†“
+;jpn:â—†ãŠã¼ãˆã¦ã„ã¾ã›ã‚“ãŒï¼‰@KEY()â†“
+;jpn:â—†ã‚­ãƒ£ãƒ³ã‚­ãƒƒã‚­â†“
+;jpn:ã€€ï¼ˆã ã‚“ã˜ãã‚’ã€€ãŠãˆãŸâ†“
+;jpn:ã€€ã‚¿ãƒ©ã‚¤ã‚¸ãƒ£ãƒ–ã•ã¾ãŒï¼‰@KEY()â†“
+;jpn:â—†ã‚­ãƒƒã‚­ã€€ã‚­ã‚­ãƒ¼â†“
+;jpn:ã€€ï¼ˆã‚ãªãŸã«ã€€ã‚ã„ãŸãŒã£ã¦ã„ã¾ã™ï¼‰@KEY()â†“
+;jpn:â—†ã‚¦ãƒƒã‚­ãƒƒã‚­ãƒ¼â†“
+;jpn:ã€€ï¼ˆã°ã—ã‚‡ã¯ã€€ãƒ‰ã‚³ãƒ‰ã‚³ã•ã°ãã®â†“
+;jpn:ã€€ã«ã—ã®ã€€ã¯ã˜ã®ã»ã†ï¼‰@KEY()â†“
+;jpn:â—†ã‚­ãƒ¼ã‚­ã‚­ãƒ¼ã‚­ã‚­â†“
+;jpn:ã€€ï¼ˆã„ã‚ã‚†ã‚‹â†“
+;jpn:ã€€ã€Œã‚µãƒ«ã®ãŠãŠã„ã©ã†ãã¤ã€ã§ã™ï¼‰@KEY()â†“
+;jpn:â—†ã‚­ãƒ³ã‚­ã‚­ã€€ã‚­ã‚­ãƒ³ã€€ã‚­ãƒ¼ã‚­ãƒ¼â†“
+;jpn:ã€€ï¼ˆã˜ã‚ƒã€€ã‚ãŸãã—ã¯â†“
+;jpn:ã€€ãƒ†ãƒ¬ãƒãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã§â€¥â€¥ï¼‰@KEY()â†“
+;jpn:â—†ã‚­ãƒ£ï¼â†“
+;jpn:ã€€ï¼ˆã—ã¤ã‚Œã„ã—ã¾ã™ï¼‰
+@KEY()â†“
 @CLOSEALL()
-;“¹˜H‚Ü‚Å•à‚¢‚ÄA•‘–—p‚ ‚Æ‚¸‚³‚è
+;é“è·¯ã¾ã§æ­©ã„ã¦ã€åŠ©èµ°ç”¨ã‚ã¨ãšã•ã‚Š
 @REMOVE_CHAR( PRSN_FRSD_FIELD_1B, ANIM_LEAVE_BUTUKARIZARU )
 @WAITSYS()
-;ƒeƒŒƒ|[ƒgƒ_ƒbƒVƒ…
+;ãƒ†ãƒ¬ãƒãƒ¼ãƒˆãƒ€ãƒƒã‚·ãƒ¥
 @WI(1)
 @BGMSTART( 0, BGM_telep )
 @WAITSYS()
-;ƒTƒ‹‚ª‰æ–ÊŠO‚Öo‚½Œã
+;ã‚µãƒ«ãŒç”»é¢å¤–ã¸å‡ºãŸå¾Œ
 @BGMSTART( 0, BGM_expu )
 @WI(60)
 @BGMSTART( 0, BGM_telep )
 @WI(60)
-@BGM_EFFECT( 3 )	;ƒtƒF[ƒhƒAƒEƒg’·‚ß
+@BGM_EFFECT( 3 )	;ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆé•·ã‚
 @WI(60)
-@CLRF(FLG_FOUR_SARU_K_APPEAR);•‚±‚°ƒUƒ‹•\Ž¦ƒtƒ‰ƒO~‚ë‚·
+@CLRF(FLG_FOUR_SARU_K_APPEAR);é»’ã“ã’ã‚¶ãƒ«è¡¨ç¤ºãƒ•ãƒ©ã‚°é™ã‚ã™
 @MOVE_GOM_CHAR( GOM_SALARYMAN_D, ANIM_UKKARI_CARRIER, OBJFX_SHOW_NONE )
 @WAITSYS()
 @MUSISTART()
 @GET_ORDER_PLAYER(1)
 @GET_PLAYER_DIR(0,3,GOM_SALARYMAN_D)
-@SET_PLAYER_DIR(0,0);ƒlƒX‚ð GOM_SALARYMAN_D‚ÉŒü‚¯‚é
+@SET_PLAYER_DIR(0,0);ãƒã‚¹ã‚’ GOM_SALARYMAN_Dã«å‘ã‘ã‚‹
 @SHOW_MANPU_GOM_CHAR( GOM_SALARYMAN_D, MANPU_BIKKURI )
 @WI(60)
 @HIDE_MANPU_GOM_CHAR( GOM_SALARYMAN_D )
 @REMOVE_GOM_CHAR( GOM_SALARYMAN_D, ANIM_APPROACH_CONT_SCRIPT )
 @WAITSYS()
 @WI( 10 )
-@GOSUB(MSG_FOUR_ESCARGO_TOFU);“Í‚¯•¨‚ðƒTƒ‹ŒŠ‚É‚¤‚Á‚©‚è–Y‚ê‚¿‚á‚¢‚Ü‚µ‚Ä‚ËB‚¶‚áA‚³‚¢‚È‚çB
+@GOSUB(MSG_FOUR_ESCARGO_TOFU);å±Šã‘ç‰©ã‚’ã‚µãƒ«ç©´ã«ã†ã£ã‹ã‚Šå¿˜ã‚Œã¡ã‚ƒã„ã¾ã—ã¦ã­ã€‚ã˜ã‚ƒã€ã•ã„ãªã‚‰ã€‚
 @REMOVE_GOM_CHAR( GOM_SALARYMAN_D, ANIM_LEAVE_UKKARI_CARRIER )
 @WAITSYS()
-@SETF(FLG_DSRT_TJAB_MOVE);Ç‚¬ƒ^ƒ‰ƒCƒWƒƒƒu‚ªÁ‚¦‚éB
-;ƒƒCƒh‚ª‹ßŠñ‚Á‚Ä‚­‚é
+@SETF(FLG_DSRT_TJAB_MOVE);å¡žãŽã‚¿ãƒ©ã‚¤ã‚¸ãƒ£ãƒ–ãŒæ¶ˆãˆã‚‹ã€‚
+;ãƒ¡ã‚¤ãƒ‰ãŒè¿‘å¯„ã£ã¦ãã‚‹
 @MOVE_GOM_CHAR( GOM_MAID, ANIM_EAVES_MAID, OBJFX_SHOW_NONE )
 @WAITSYS()
-@COLD_GOM_CHAR( GOM_MAID )	;uƒƒCƒh‚ª‹Ž‚év‚Ì‚ð“€Œ‹
+@COLD_GOM_CHAR( GOM_MAID )	;ã€Œãƒ¡ã‚¤ãƒ‰ãŒåŽ»ã‚‹ã€ã®ã‚’å‡çµ
 @OPEN( 1 )
-Ÿ‚g‚…‚Œ‚Œ‚I@KEY()«
-Ÿ‚h@‚ˆ‚…‚‚’‚„@‚™‚‚•@‚”‚‚Œ‚‹‚‰‚Ž‚‡@‚‚‚‚‚•‚”@‚”‚’‚‚•‚”|‚†‚Œ‚‚–‚‚’‚…‚„@‚™‚‚‡‚•‚’‚”D@KEY()«
-Ÿ‚hf‚@‚@‚‚‚‰‚„@‚—‚ˆ‚@‚“‚…‚’‚–‚…‚“@‚l‚’D@‚l‚‚Ž‚‚”‚‚Œ‚‰C@KEY()«
-Ÿ‚‚Ž‚„@‚hf‚@‚Œ‚‚‚‹‚‰‚Ž‚‡@‚†‚‚’@‚”‚’‚‚•‚”|‚†‚Œ‚‚–‚‚’‚…‚„@‚™‚‚‡‚•‚’‚”@‚”‚@‚‡‚‰‚–‚…@‚”‚@‚‚•‚’@‚“‚‚…‚ƒ‚‰‚‚Œ@‚‡‚•‚…‚“‚”D@KEY()«
-Ÿ‚h‚†@‚™‚‚•@‚‹‚Ž‚‚—@‚‚Ž‚™‚”‚ˆ‚‰‚Ž‚‡@‚‚‚‚‚•‚”@‚‰‚”C@‚‚Œ‚…‚‚“‚…@‚”‚…‚Œ‚Œ@‚‚…I@KEY()«
-Ÿ‚hf‚–‚…@‚‚‚…‚…‚Ž@‚“‚…‚‚’‚ƒ‚ˆ‚‰‚Ž‚‡@‚‚Ž‚„@‚“‚…‚‚’‚ƒ‚ˆ‚‰‚Ž‚‡DDD
-;jpn:Ÿ‚à‚µ‚à‚µI«
-;jpn:@‚¢‚Ü@u‚¢‚¿‚²‚Æ‚¤‚Óv‚Æ‚©«
-;jpn:@‚Í‚È‚µ‚Ä@‚¢‚½‚Å‚µ‚å‚¤H@KEY()«
-;jpn:Ÿ‚í‚½‚µ‚Í@ƒ‚ƒmƒgƒŠ[‚³‚Ü‚É«
-;jpn:@‚Â‚©‚¦‚Ä‚¢‚é@ƒƒCƒh‚Å‚·‚ªdd@KEY()«
-;jpn:Ÿ‚½‚¢‚¹‚Â‚È@‚¨‚«‚á‚­‚³‚Ü‚Ì«
-;jpn:@‚²‚«‚Ú‚¤‚Å@u‚¢‚¿‚²‚Æ‚¤‚Óv‚ð«
-;jpn:@‚³‚ª‚µ‚Ä‚¢‚é‚ñ‚Å‚·B@KEY()«
-;jpn:Ÿ‚ ‚È‚½@‚²‚¼‚ñ‚¶‚Å‚µ‚½‚ç«
-;jpn:@‚¨‚µ‚¦‚Ä‚­‚¾‚³‚¢B«
-;jpn:@‚¨‚Ë‚ª‚¢‚Å‚·B@KEY()«
-;jpn:Ÿ‚í‚½‚µ‚à@‚¢‚Á‚µ‚å‚¤‚¯‚ñ‚ß‚¢«
-;jpn:@‚³‚ª‚µ‚Ü‚·‚©‚çdd
-@KEY()«
-;‘–‚è‹Ž‚é
+â—†ï¼¨ï½…ï½Œï½Œï½ï¼@KEY()â†“
+â—†ï¼©ã€€ï½ˆï½…ï½ï½’ï½„ã€€ï½™ï½ï½•ã€€ï½”ï½ï½Œï½‹ï½‰ï½Žï½‡ã€€ï½ï½‚ï½ï½•ï½”ã€€ï½”ï½’ï½ï½•ï½”âˆ’ï½†ï½Œï½ï½–ï½ï½’ï½…ï½„ã€€ï½™ï½ï½‡ï½•ï½’ï½”ï¼Ž@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½ã€€ï½ï½ï½‰ï½„ã€€ï½—ï½ˆï½ã€€ï½“ï½…ï½’ï½–ï½…ï½“ã€€ï¼­ï½’ï¼Žã€€ï¼­ï½ï½Žï½ï½”ï½ï½Œï½‰ï¼Œ@KEY()â†“
+â—†ï½ï½Žï½„ã€€ï¼©â€™ï½ã€€ï½Œï½ï½ï½‹ï½‰ï½Žï½‡ã€€ï½†ï½ï½’ã€€ï½”ï½’ï½ï½•ï½”âˆ’ï½†ï½Œï½ï½–ï½ï½’ï½…ï½„ã€€ï½™ï½ï½‡ï½•ï½’ï½”ã€€ï½”ï½ã€€ï½‡ï½‰ï½–ï½…ã€€ï½”ï½ã€€ï½ï½•ï½’ã€€ï½“ï½ï½…ï½ƒï½‰ï½ï½Œã€€ï½‡ï½•ï½…ï½“ï½”ï¼Ž@KEY()â†“
+â—†ï¼©ï½†ã€€ï½™ï½ï½•ã€€ï½‹ï½Žï½ï½—ã€€ï½ï½Žï½™ï½”ï½ˆï½‰ï½Žï½‡ã€€ï½ï½‚ï½ï½•ï½”ã€€ï½‰ï½”ï¼Œã€€ï½ï½Œï½…ï½ï½“ï½…ã€€ï½”ï½…ï½Œï½Œã€€ï½ï½…ï¼@KEY()â†“
+â—†ï¼©â€™ï½–ï½…ã€€ï½‚ï½…ï½…ï½Žã€€ï½“ï½…ï½ï½’ï½ƒï½ˆï½‰ï½Žï½‡ã€€ï½ï½Žï½„ã€€ï½“ï½…ï½ï½’ï½ƒï½ˆï½‰ï½Žï½‡ï¼Žï¼Žï¼Ž
+;jpn:â—†ã‚‚ã—ã‚‚ã—ï¼â†“
+;jpn:ã€€ã„ã¾ã€€ã€Œã„ã¡ã”ã¨ã†ãµã€ã¨ã‹â†“
+;jpn:ã€€ã¯ãªã—ã¦ã€€ã„ãŸã§ã—ã‚‡ã†ï¼Ÿ@KEY()â†“
+;jpn:â—†ã‚ãŸã—ã¯ã€€ãƒ¢ãƒŽãƒˆãƒªãƒ¼ã•ã¾ã«â†“
+;jpn:ã€€ã¤ã‹ãˆã¦ã„ã‚‹ã€€ãƒ¡ã‚¤ãƒ‰ã§ã™ãŒâ€¥â€¥@KEY()â†“
+;jpn:â—†ãŸã„ã›ã¤ãªã€€ãŠãã‚ƒãã•ã¾ã®â†“
+;jpn:ã€€ã”ãã¼ã†ã§ã€€ã€Œã„ã¡ã”ã¨ã†ãµã€ã‚’â†“
+;jpn:ã€€ã•ãŒã—ã¦ã„ã‚‹ã‚“ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã‚ãªãŸã€€ã”ãžã‚“ã˜ã§ã—ãŸã‚‰â†“
+;jpn:ã€€ãŠã—ãˆã¦ãã ã•ã„ã€‚â†“
+;jpn:ã€€ãŠã­ãŒã„ã§ã™ã€‚@KEY()â†“
+;jpn:â—†ã‚ãŸã—ã‚‚ã€€ã„ã£ã—ã‚‡ã†ã‘ã‚“ã‚ã„â†“
+;jpn:ã€€ã•ãŒã—ã¾ã™ã‹ã‚‰â€¥â€¥
+@KEY()â†“
+;èµ°ã‚ŠåŽ»ã‚‹
 @FRESH_GOM_CHAR( GOM_MAID )
 @WAITSYS()
 @WI( 30 )
-x
+ã€
 ;--------------------------------
 
-x
+ã€
 ;-------------------------------------------------
 
-;’n’ê‘å—¤‚ÌŠÔŒ‡ò
+;åœ°åº•å¤§é™¸ã®é–“æ¬ æ³‰
 
-;“Œ‚Ì‰ñ•œ•¬…‚n‚a‚i‚ÌƒAƒjƒ‚©‚çŒÄ‚Î‚ê‚éƒXƒNƒŠƒvƒg
+;æ±ã®å›žå¾©å™´æ°´ï¼¯ï¼¢ï¼ªã®ã‚¢ãƒ‹ãƒ¡ã‹ã‚‰å‘¼ã°ã‚Œã‚‹ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
 MSG_EVT_FOUNTAIN_A;
-@GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;ˆê’èŽžŠÔ’nk
-@CHKF( FLG_ANIM_PORT_4 )		;•¬…Œû‚`‹ß‚­‚¶‚á
-@FALSE_GOTO( _EVT_FOUTAIN_A_NOLIFT )	;@@@‚È‚©‚Á‚½‚ç•ªŠò
-;ƒlƒX‚½‚¿‚ª•¬…Œû‚É‹ß‚Ã‚­
+@GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;ä¸€å®šæ™‚é–“åœ°éœ‡
+@CHKF( FLG_ANIM_PORT_4 )		;å™´æ°´å£ï¼¡è¿‘ãã˜ã‚ƒ
+@FALSE_GOTO( _EVT_FOUTAIN_A_NOLIFT )	;ã€€ã€€ã€€ãªã‹ã£ãŸã‚‰åˆ†å²
+;ãƒã‚¹ãŸã¡ãŒå™´æ°´å£ã«è¿‘ã¥ã
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_TO_FOUNTAIN_A, OBJFX_SHOW_NONE )
-@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;“§–¾ŒN‚É‚Â‚¢‚Äs‚­
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;ƒp[ƒeƒBÁ‚·
-;•¬…ˆ—
-@FRESH_CHAR( PRSN_CHKA_FIELD_4A )	;•¬…¸‚é
-@GOSUB( MSG_EVT_FOUNTAIN_LIFT_NES_SUBR );ƒlƒX¸‚é‹¤—LƒTƒuƒ‹[ƒ`ƒ“
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;é€æ˜Žå›ã«ã¤ã„ã¦è¡Œã
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;ãƒ‘ãƒ¼ãƒ†ã‚£æ¶ˆã™
+;å™´æ°´å‡¦ç†
+@FRESH_CHAR( PRSN_CHKA_FIELD_4A )	;å™´æ°´æ˜‡ã‚‹
+@GOSUB( MSG_EVT_FOUNTAIN_LIFT_NES_SUBR );ãƒã‚¹æ˜‡ã‚‹å…±æœ‰ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
 @COLD_CHAR( PRSN_CHKA_FIELD_4A )
 @WI( 1 )
 @OPEN( 1 )
-;‘Ì—Í‰ñ•œ‚ÌƒƒbƒZ[ƒW
-Ÿi‚s‚ˆ‚…@‚ˆ‚‚”@‚“‚‚’‚‰‚Ž‚‡@‚…‚Ž‚…‚’‚‡‚‰‚š‚…‚„@‚™‚‚•@‚ƒ‚‚‚‚Œ‚…‚”‚…‚Œ‚™Dj
-;jpn:Ÿi‚¨‚ñ‚¹‚ñ‚Ì@‚¨‚©‚°‚Å«
-;jpn:@‚·‚Á‚©‚è@‚°‚ñ‚«‚É‚È‚Á‚½j
+;ä½“åŠ›å›žå¾©ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+â—†ï¼ˆï¼´ï½ˆï½…ã€€ï½ˆï½ï½”ã€€ï½“ï½ï½’ï½‰ï½Žï½‡ã€€ï½…ï½Žï½…ï½’ï½‡ï½‰ï½šï½…ï½„ã€€ï½™ï½ï½•ã€€ï½ƒï½ï½ï½ï½Œï½…ï½”ï½…ï½Œï½™ï¼Žï¼‰
+;jpn:â—†ï¼ˆãŠã‚“ã›ã‚“ã®ã€€ãŠã‹ã’ã§â†“
+;jpn:ã€€ã™ã£ã‹ã‚Šã€€ã’ã‚“ãã«ãªã£ãŸï¼‰
 @KEYNP()
 @CLOSEALL()
-@GOSUB(MSG_SUB_HOTEL_LIFEUP);‰ñ•œ‚Ì‚Ý
+@GOSUB(MSG_SUB_HOTEL_LIFEUP);å›žå¾©ã®ã¿
 @FRESH_CHAR( PRSN_CHKA_FIELD_4A )
 @FRESH_PLAYER( PC_ALL )
-x
+ã€
 
 _EVT_FOUTAIN_A_NOLIFT
-@FRESH_CHAR( PRSN_CHKA_FIELD_4A )	;•¬…¸‚é
+@FRESH_CHAR( PRSN_CHKA_FIELD_4A )	;å™´æ°´æ˜‡ã‚‹
 @WI( 1 )
-x
+ã€
 
-;–k‚ÌŽ¡—Ã•¬…‚n‚a‚i‚ÌƒAƒjƒ‚©‚çŒÄ‚Î‚ê‚éƒXƒNƒŠƒvƒg
+;åŒ—ã®æ²»ç™‚å™´æ°´ï¼¯ï¼¢ï¼ªã®ã‚¢ãƒ‹ãƒ¡ã‹ã‚‰å‘¼ã°ã‚Œã‚‹ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
 MSG_EVT_FOUNTAIN_B;
-@GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;ˆê’èŽžŠÔ’nk
-@CHKF( FLG_ANIM_PORT_5 )		;•¬…Œû‚a‹ß‚­‚¶‚á
-@FALSE_GOTO( _EVT_FOUTAIN_B_NOLIFT )	;@@@‚È‚©‚Á‚½‚ç•ªŠò
-;ƒlƒX‚½‚¿‚ª•¬…Œû‚É‹ß‚Ã‚­
+@GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;ä¸€å®šæ™‚é–“åœ°éœ‡
+@CHKF( FLG_ANIM_PORT_5 )		;å™´æ°´å£ï¼¢è¿‘ãã˜ã‚ƒ
+@FALSE_GOTO( _EVT_FOUTAIN_B_NOLIFT )	;ã€€ã€€ã€€ãªã‹ã£ãŸã‚‰åˆ†å²
+;ãƒã‚¹ãŸã¡ãŒå™´æ°´å£ã«è¿‘ã¥ã
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_TO_FOUNTAIN_B, OBJFX_SHOW_NONE )
-@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;“§–¾ŒN‚É‚Â‚¢‚Äs‚­
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;ƒp[ƒeƒBÁ‚·
-;•¬…ˆ—
-@FRESH_CHAR( PRSN_CHKA_FIELD_4B )	;•¬…¸‚é
-@GOSUB( MSG_EVT_FOUNTAIN_LIFT_NES_SUBR );ƒlƒX¸‚é‹¤—LƒTƒuƒ‹[ƒ`ƒ“
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;é€æ˜Žå›ã«ã¤ã„ã¦è¡Œã
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;ãƒ‘ãƒ¼ãƒ†ã‚£æ¶ˆã™
+;å™´æ°´å‡¦ç†
+@FRESH_CHAR( PRSN_CHKA_FIELD_4B )	;å™´æ°´æ˜‡ã‚‹
+@GOSUB( MSG_EVT_FOUNTAIN_LIFT_NES_SUBR );ãƒã‚¹æ˜‡ã‚‹å…±æœ‰ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
 @COLD_CHAR( PRSN_CHKA_FIELD_4B )
 @WI( 1 )
 @OPEN( 1 )
-;‘S‰ñ•œi“ÁŽêó‘Ô‚©‚çj‚ÌƒƒbƒZ[ƒW
-Ÿi‚s‚ˆ‚…@‚ˆ‚‚”@‚“‚‚’‚‰‚Ž‚‡@‚ƒ‚•‚’‚…‚„@‚™‚‚•@‚ƒ‚‚‚‚Œ‚…‚”‚…‚Œ‚™Dj
-;jpn:Ÿi‚¨‚ñ‚¹‚ñ‚Ì@‚¨‚©‚°‚Å«
-;jpn:@‚·‚Á‚©‚è@‚æ‚­‚È‚Á‚½j
+;å…¨å›žå¾©ï¼ˆç‰¹æ®ŠçŠ¶æ…‹ã‹ã‚‰ï¼‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+â—†ï¼ˆï¼´ï½ˆï½…ã€€ï½ˆï½ï½”ã€€ï½“ï½ï½’ï½‰ï½Žï½‡ã€€ï½ƒï½•ï½’ï½…ï½„ã€€ï½™ï½ï½•ã€€ï½ƒï½ï½ï½ï½Œï½…ï½”ï½…ï½Œï½™ï¼Žï¼‰
+;jpn:â—†ï¼ˆãŠã‚“ã›ã‚“ã®ã€€ãŠã‹ã’ã§â†“
+;jpn:ã€€ã™ã£ã‹ã‚Šã€€ã‚ˆããªã£ãŸï¼‰
 @KEYNP()
 @CLOSEALL()
-@GOSUB(MSG_SUB_ZENKAI)			;©Ž¡—Ãˆ—
+@GOSUB(MSG_SUB_ZENKAI)			;â†æ²»ç™‚å‡¦ç†
 @FRESH_CHAR( PRSN_CHKA_FIELD_4B )
 @FRESH_PLAYER( PC_ALL )
 @GOSUB(MSG_SUB_ZENKAI)
-x
+ã€
 
 _EVT_FOUTAIN_B_NOLIFT
-@FRESH_CHAR( PRSN_CHKA_FIELD_4B )	;•¬…¸‚é
+@FRESH_CHAR( PRSN_CHKA_FIELD_4B )	;å™´æ°´æ˜‡ã‚‹
 @WI( 1 )
-x
+ã€
 
-;•¬…‚n‚a‚i‚ÌƒAƒjƒ‚©‚çŒÄ‚Î‚ê‚éƒXƒNƒŠƒvƒg
+;å™´æ°´ï¼¯ï¼¢ï¼ªã®ã‚¢ãƒ‹ãƒ¡ã‹ã‚‰å‘¼ã°ã‚Œã‚‹ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
 MSG_EVT_FOUNTAIN_C;
-@GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;ˆê’èŽžŠÔ’nk
-@CHKF( FLG_ANIM_PORT_6 )		;•¬…Œû‚`‹ß‚­‚¶‚á
-@FALSE_GOTO( _EVT_FOUTAIN_C_NOLIFT )	;@@@‚È‚©‚Á‚½‚ç•ªŠò
-;ƒlƒX‚½‚¿‚ª•¬…Œû‚É‹ß‚Ã‚­
+@GOSUB( MSG_EVT_FOUNTAIN_QUAKE_SUBR )		;ä¸€å®šæ™‚é–“åœ°éœ‡
+@CHKF( FLG_ANIM_PORT_6 )		;å™´æ°´å£ï¼¡è¿‘ãã˜ã‚ƒ
+@FALSE_GOTO( _EVT_FOUTAIN_C_NOLIFT )	;ã€€ã€€ã€€ãªã‹ã£ãŸã‚‰åˆ†å²
+;ãƒã‚¹ãŸã¡ãŒå™´æ°´å£ã«è¿‘ã¥ã
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_TO_FOUNTAIN_C, OBJFX_SHOW_NONE )
-@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;“§–¾ŒN‚É‚Â‚¢‚Äs‚­
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;ƒp[ƒeƒBÁ‚·
-;•¬…ˆ—
-@FRESH_CHAR( PRSN_CHKA_FIELD_4C )	;•¬…¸‚é
-@GOSUB( MSG_EVT_FOUNTAIN_LIFT_NES_SUBR );ƒlƒX¸‚é‹¤—LƒTƒuƒ‹[ƒ`ƒ“
+@GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;é€æ˜Žå›ã«ã¤ã„ã¦è¡Œã
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;ãƒ‘ãƒ¼ãƒ†ã‚£æ¶ˆã™
+;å™´æ°´å‡¦ç†
+@FRESH_CHAR( PRSN_CHKA_FIELD_4C )	;å™´æ°´æ˜‡ã‚‹
+@GOSUB( MSG_EVT_FOUNTAIN_LIFT_NES_SUBR );ãƒã‚¹æ˜‡ã‚‹å…±æœ‰ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
 @COLD_CHAR( PRSN_CHKA_FIELD_4C )
 @WI( 1 )
 @OPEN( 1 )
-;‘Ì—Í‰ñ•œ‚ÌƒƒbƒZ[ƒW
-Ÿi‚s‚ˆ‚…@‚ˆ‚‚”@‚“‚‚’‚‰‚Ž‚‡@‚…‚Ž‚…‚’‚‡‚‰‚š‚…‚“@‚™‚‚•@‚ƒ‚‚‚‚Œ‚…‚”‚…‚Œ‚™Dj
-;jpn:Ÿi‚¨‚ñ‚¹‚ñ‚Ì@‚¨‚©‚°‚Å«
-;jpn:@‚·‚Á‚©‚è@‚°‚ñ‚«‚É‚È‚Á‚½j
+;ä½“åŠ›å›žå¾©ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+â—†ï¼ˆï¼´ï½ˆï½…ã€€ï½ˆï½ï½”ã€€ï½“ï½ï½’ï½‰ï½Žï½‡ã€€ï½…ï½Žï½…ï½’ï½‡ï½‰ï½šï½…ï½“ã€€ï½™ï½ï½•ã€€ï½ƒï½ï½ï½ï½Œï½…ï½”ï½…ï½Œï½™ï¼Žï¼‰
+;jpn:â—†ï¼ˆãŠã‚“ã›ã‚“ã®ã€€ãŠã‹ã’ã§â†“
+;jpn:ã€€ã™ã£ã‹ã‚Šã€€ã’ã‚“ãã«ãªã£ãŸï¼‰
 @KEYNP()
 @CLOSEALL()
-@GOSUB(MSG_SUB_HOTEL_LIFEUP);‰ñ•œ‚Ì‚Ý
+@GOSUB(MSG_SUB_HOTEL_LIFEUP);å›žå¾©ã®ã¿
 @FRESH_CHAR( PRSN_CHKA_FIELD_4C )
 @FRESH_PLAYER( PC_ALL )
-x
+ã€
 
 _EVT_FOUTAIN_C_NOLIFT
-@FRESH_CHAR( PRSN_CHKA_FIELD_4C )	;•¬…¸‚é
+@FRESH_CHAR( PRSN_CHKA_FIELD_4C )	;å™´æ°´æ˜‡ã‚‹
 @WI( 1 )
-x
+ã€
 
 ;-------------------------------------------------
 
 MSG_EVT_FOUNTAIN_QUAKE_SUBR;
-;ˆê’èŽžŠÔ’nk‚ð‹N‚±‚·ƒTƒuƒ‹[ƒ`ƒ“( ‚Ç‚±‚Å‚àŽg‚¦‚é‚Ì‚æ)
-@BGM_EFFECT( 25 )	;’nkŒø‰ÊƒXƒ^[ƒgI
-@MOVE_GOM_CHAR(GOM_HIT_CHR2,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE);ƒvƒŒƒCƒ„[“B•t‚¯
-@WI( 1 )	;GOM_HIT_CHR2‚Ì“o˜^‘Ò‚¿
+;ä¸€å®šæ™‚é–“åœ°éœ‡ã‚’èµ·ã“ã™ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³( ã©ã“ã§ã‚‚ä½¿ãˆã‚‹ã®ã‚ˆ)
+@BGM_EFFECT( 25 )	;åœ°éœ‡åŠ¹æžœã‚¹ã‚¿ãƒ¼ãƒˆï¼
+@MOVE_GOM_CHAR(GOM_HIT_CHR2,ANIM_STAGE_PARTY,OBJFX_SHOW_NONE);ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼é‡˜ä»˜ã‘
+@WI( 1 )	;GOM_HIT_CHR2ã®ç™»éŒ²å¾…ã¡
 @SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
 @FRESH_PLAYER( PC_ALL )
-@MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_CHITEI_QUAKE, OBJFX_SHOW_NONE );U“®
+@MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_CHITEI_QUAKE, OBJFX_SHOW_NONE );æŒ¯å‹•
 @WAITSYS()
-@BGM_EFFECT( 26 )	;’nkŒø‰ÊI—¹I
+@BGM_EFFECT( 26 )	;åœ°éœ‡åŠ¹æžœçµ‚äº†ï¼
 @SET_CAMERA_PARTY()
 @COLD_PLAYER( PC_ALL )
 @HIDE_GOM_CHAR( GOM_HIT_CHR2, OBJFX_HIDE_NONE )
-x
+ã€
 
 MSG_EVT_FOUNTAIN_LIFT_NES_SUBR;
-;æ“ªƒƒ“ƒo‚ð’²‚×‚ÄA‘Î‰ž‚·‚é‚f‚n‚l‚ÉƒAƒjƒ‚ð—^‚¦‚éƒTƒuƒ‹[ƒ`ƒ“
+;å…ˆé ­ãƒ¡ãƒ³ãƒã‚’èª¿ã¹ã¦ã€å¯¾å¿œã™ã‚‹ï¼§ï¼¯ï¼­ã«ã‚¢ãƒ‹ãƒ¡ã‚’ä¸Žãˆã‚‹ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
 @GET_ORDER_PLAYER(1)
 @ONGOTO(_EVT_FOUNTAIN_A_NES,_EVT_FOUNTAIN_A_POLA,_EVT_FOUNTAIN_A_JEFF,_EVT_FOUNTAIN_A_PU)
 _EVT_FOUNTAIN_A_NES;
@@ -1096,247 +1096,247 @@ _EVT_FOUNTAIN_A_PU;
 @MOVE_GOM_CHAR( GOM_POO_SMALL, ANIM_LIFT_BY_FOUNTAIN, OBJFX_SHOW_NONE )
 @GOTO(_EVT_FOUNTAIN_MAIN)
 _EVT_FOUNTAIN_MAIN;
-@WAITSYS()	;•¬…‚ªÁ‚¦A‚f‚n‚l‚ª’…’n‚·‚é‚Ì‚ð‚¶‚Á‚Æ‘Ò‚Â
-@SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )		;ƒp[ƒeƒBo‚·
-x
+@WAITSYS()	;å™´æ°´ãŒæ¶ˆãˆã€ï¼§ï¼¯ï¼­ãŒç€åœ°ã™ã‚‹ã®ã‚’ã˜ã£ã¨å¾…ã¤
+@SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )		;ãƒ‘ãƒ¼ãƒ†ã‚£å‡ºã™
+ã€
 ;-------------------------------------------------
 
 MSG_EVT_GUMI_ONSEN_HEAL;
-;ƒOƒ~‰·ò‚Å‚ÌŽ¡–üˆ—
-;‰·ò‚É“ü‚Á‚½‚±‚Æ‚ÅAŠÅ”Â‚ÌƒAƒjƒ‚©‚çŒÄ‚Î‚ê‚é
+;ã‚°ãƒŸæ¸©æ³‰ã§ã®æ²»ç™’å‡¦ç†
+;æ¸©æ³‰ã«å…¥ã£ãŸã“ã¨ã§ã€çœ‹æ¿ã®ã‚¢ãƒ‹ãƒ¡ã‹ã‚‰å‘¼ã°ã‚Œã‚‹
 @COLD_CHAR( PRSN_GUMI_FIELD_3F )
 @GET_ORDER_PLAYER( 1 )
 @SET_REG( 0 )
 @OPEN( 1 )
-Ÿi‚q‚…‚“‚”‚‰‚Ž‚‡@‚—‚…‚Œ‚Œ@‚‰‚Ž@‚”‚ˆ‚…@‚ˆ‚‚”@‚“‚‚’‚‰‚Ž‚‡@‚ˆ‚…‚‚Œ‚…‚„@‚™‚‚•Dj
-;jpn:Ÿi‚¨‚ñ‚¹‚ñ‚Å@‚ä‚Á‚­‚è‚µ‚½‚Ì‚Å«
-;jpn:@@DSP_NAME(0)@GOSUB(MSG_SUB_TATI_ONSEN)‚Í«
-;jpn:@‚¢‚«‚©‚¦‚Á‚½‚æ‚¤‚É‚È‚Á‚½j
+â—†ï¼ˆï¼²ï½…ï½“ï½”ï½‰ï½Žï½‡ã€€ï½—ï½…ï½Œï½Œã€€ï½‰ï½Žã€€ï½”ï½ˆï½…ã€€ï½ˆï½ï½”ã€€ï½“ï½ï½’ï½‰ï½Žï½‡ã€€ï½ˆï½…ï½ï½Œï½…ï½„ã€€ï½™ï½ï½•ï¼Žï¼‰
+;jpn:â—†ï¼ˆãŠã‚“ã›ã‚“ã§ã€€ã‚†ã£ãã‚Šã—ãŸã®ã§â†“
+;jpn:ã€€@DSP_NAME(0)@GOSUB(MSG_SUB_TATI_ONSEN)ã¯â†“
+;jpn:ã€€ã„ãã‹ãˆã£ãŸã‚ˆã†ã«ãªã£ãŸï¼‰
 @KEYNP()
-;				@‚±‚±‚ÅƒpƒŒƒbƒg‘€ì‚Íâ‘Î‚É‚µ‚È‚¢‚±‚ÆI
+;				ã€€ã“ã“ã§ãƒ‘ãƒ¬ãƒƒãƒˆæ“ä½œã¯çµ¶å¯¾ã«ã—ãªã„ã“ã¨ï¼
 @GOSUB(MSG_SUB_ZENKAI)
 @CLOSEALL()
 @FRESH_CHAR( PRSN_GUMI_FIELD_3F )
-x
+ã€
 ;-------------------------------------------------
 
-;ÅIí“¬‚©‚çŒÄ‚Î‚ê‚éƒƒbƒZ[ƒW
+;æœ€çµ‚æˆ¦é—˜ã‹ã‚‰å‘¼ã°ã‚Œã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 MSG_EVT_PRAY_1_NES_MAMA;
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF)
 ;-----
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;©‚±‚ê‚Í‚à‚Á‚ÆŽ–‘O‚É‚µ‚Ä‚¨‚­‚Ì‚©‚àB
-;‘È‰~ƒEƒBƒ“ƒhƒEƒ}ƒXƒNŠÇ—‚Ì“§–¾ŒN
-@RESF( FLG_ANIM_PORT_0 )		;ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒgƒŠƒK‰Šú‰»
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;â†ã“ã‚Œã¯ã‚‚ã£ã¨äº‹å‰ã«ã—ã¦ãŠãã®ã‹ã‚‚ã€‚
+;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒžã‚¹ã‚¯ç®¡ç†ã®é€æ˜Žå›
+@RESF( FLG_ANIM_PORT_0 )		;ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒˆãƒªã‚¬åˆæœŸåŒ–
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;ƒ}ƒCƒz[ƒ€‚PŠK‚Éƒ[ƒv
+;ãƒžã‚¤ãƒ›ãƒ¼ãƒ ï¼‘éšŽã«ãƒ¯ãƒ¼ãƒ—
 @WARP( WARP_EVT_INORU_MYHOME )
 @WI( 120 )
 @COLD_PLAYER(PC_ALL)
-;ƒ}ƒ}‚ª¼‚ÌŠK’i‚©‚ç“Œ‚Ö•à‚­
-@SE( SE_se12_foot_stairs )	;ŠK’i‰¹u‚½‚Á‚½‚Á‚½cv
+;ãƒžãƒžãŒè¥¿ã®éšŽæ®µã‹ã‚‰æ±ã¸æ­©ã
+@SE( SE_se12_foot_stairs )	;éšŽæ®µéŸ³ã€ŒãŸã£ãŸã£ãŸâ€¦ã€
 @WI( 80 )			
 @MOVE_GOM_CHAR( GOM_MAMA, ANIM_EVT_PRAY_1_MAMA, OBJFX_SHOW_NONE )
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_MAMA )
-;“r’†‚Å‰½‚©‚ðŽ@’mi–Ÿ•„•\Ž¦j
+;é€”ä¸­ã§ä½•ã‹ã‚’å¯ŸçŸ¥ï¼ˆæ¼«ç¬¦è¡¨ç¤ºï¼‰
 @SHOW_MANPU_GOM_CHAR( GOM_MAMA, MANPU_BIKKURI )
 @WI(60)
 @HIDE_MANPU_GOM_CHAR( GOM_MAMA )
-;‚«‚å‚ë‚«‚å‚ë‚µ‚Ä‘‹Û‚ÉŒü‚©‚¤ƒ}ƒ}
+;ãã‚‡ã‚ãã‚‡ã‚ã—ã¦çª“éš›ã«å‘ã‹ã†ãƒžãƒž
 @FRESH_GOM_CHAR( GOM_MAMA )
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_MAMA )
 @WI( 120 )
-;¼‚ÌŠK’i‚ÉƒgƒŒ[ƒV[“oê
-@SE( SE_se09_door_out )	;ƒhƒA‰¹uƒoƒ^ƒ“v
+;è¥¿ã®éšŽæ®µã«ãƒˆãƒ¬ãƒ¼ã‚·ãƒ¼ç™»å ´
+@SE( SE_se09_door_out )	;ãƒ‰ã‚¢éŸ³ã€Œãƒã‚¿ãƒ³ã€
 @WI( 30 )
-@SE( SE_se61_escape )	;‘¬‚¢ŠK’i‰¹u‚½‚½‚½cv
-@WI( 20 )		;ŠK’i‰¹‘Ò‚¿
-;ƒ}ƒ}¶Œü‚­
+@SE( SE_se61_escape )	;é€Ÿã„éšŽæ®µéŸ³ã€ŒãŸãŸãŸâ€¦ã€
+@WI( 20 )		;éšŽæ®µéŸ³å¾…ã¡
+;ãƒžãƒžå·¦å‘ã
 @SET_GOM_CHAR_DIR( GOM_MAMA, DIR_M_LEFT )
-@WI( 20 )		;ŠK’i‰¹‘Ò‚¿
-;ƒ}ƒ}•ƒgƒŒ[ƒV[’†‰›‚ÉŠñ‚é
+@WI( 20 )		;éšŽæ®µéŸ³å¾…ã¡
+;ãƒžãƒžï¼†ãƒˆãƒ¬ãƒ¼ã‚·ãƒ¼ä¸­å¤®ã«å¯„ã‚‹
 @MOVE_GOM_CHAR( GOM_TRACY, ANIM_EVT_PRAY_1_TRACY, OBJFX_SHOW_NONE )
 @FRESH_GOM_CHAR( GOM_MAMA )
 @WAITSYS()
 @WI( 60 )
-;‰æ–ÊŠO“Œ‚©‚çŒ¢‚ª“ñl‚ÉÚ‹ßiŒ¢‚ð–Ú‚Å’Ç‚¤ƒ}ƒ}•ƒgƒŒ[ƒV[j
+;ç”»é¢å¤–æ±ã‹ã‚‰çŠ¬ãŒäºŒäººã«æŽ¥è¿‘ï¼ˆçŠ¬ã‚’ç›®ã§è¿½ã†ãƒžãƒžï¼†ãƒˆãƒ¬ãƒ¼ã‚·ãƒ¼ï¼‰
 @MOVE_GOM_CHAR( GOM_MYDOG, ANIM_EVT_PRAY_1_DOG, OBJFX_SHOW_NONE )
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_MAMA )
 @COLD_GOM_CHAR( GOM_TRACY )
 @COLD_GOM_CHAR( GOM_MYDOG )
 @WI( 30 )
-@GOSUB(MSG_BTL_INORU_BACK_TO_PC_1);ƒZƒŠƒtu`‚Í‹F‚Á‚½v
-@SETF( FLG_ANIM_PORT_0 )	;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒtƒ‰ƒO—§‚Ä‚é
-@WAITSYS()			;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‘Ò‚¿i‚±‚ÌŒãŽ©ŽEj
+@GOSUB(MSG_BTL_INORU_BACK_TO_PC_1);ã‚»ãƒªãƒ•ã€Œã€œã¯ç¥ˆã£ãŸã€
+@SETF( FLG_ANIM_PORT_0 )	;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@WAITSYS()			;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜å¾…ã¡ï¼ˆã“ã®å¾Œè‡ªæ®ºï¼‰
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
 ;-----
-x
+ã€
 
 MSG_EVT_PRAY_2_TONZURA;
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF)
 ;-----
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;©‚±‚ê‚Í‚Ü‚Æ‚ß‚Ä‚à‚Á‚ÆŽ–‘O‚É‚µ‚Ä‚¨‚­‚Ì‚©‚àB
-;‘È‰~ƒEƒBƒ“ƒhƒEƒ}ƒXƒNŠÇ—‚Ì“§–¾ŒN
-@RESF( FLG_ANIM_PORT_0 )		;ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒgƒŠƒK‰Šú‰»
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;â†ã“ã‚Œã¯ã¾ã¨ã‚ã¦ã‚‚ã£ã¨äº‹å‰ã«ã—ã¦ãŠãã®ã‹ã‚‚ã€‚
+;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒžã‚¹ã‚¯ç®¡ç†ã®é€æ˜Žå›
+@RESF( FLG_ANIM_PORT_0 )		;ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒˆãƒªã‚¬åˆæœŸåŒ–
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;ƒTƒ}[ƒY‚Éƒ[ƒv
+;ã‚µãƒžãƒ¼ã‚ºã«ãƒ¯ãƒ¼ãƒ—
 @WARP( WARP_EVT_INORU_SUMMERS )
 @COLD_PLAYER(PC_ALL)
 @WI( 120 )
-;ƒS[ƒWƒƒƒX‚É–Ÿ•„•\Ž¦
+;ã‚´ãƒ¼ã‚¸ãƒ£ã‚¹ã«æ¼«ç¬¦è¡¨ç¤º
 @WI( 60 )
 @SHOW_MANPU_CHAR( PRSN_SUMS_FIELD_X, MANPU_BIKKURI )
 @WI( 40 )
-;ƒS[ƒWƒƒƒX‚Ì•û‚ðŒü‚­ƒ‰ƒbƒL[
+;ã‚´ãƒ¼ã‚¸ãƒ£ã‚¹ã®æ–¹ã‚’å‘ããƒ©ãƒƒã‚­ãƒ¼
 @SET_CHAR_DIR( PRSN_SUMS_FIELD_W, DIR_M_RIGHT )
 @WI( 1 )
-;ƒS[ƒWƒƒƒX‚Ì•û‚ðŒü‚­ƒiƒCƒX
+;ã‚´ãƒ¼ã‚¸ãƒ£ã‚¹ã®æ–¹ã‚’å‘ããƒŠã‚¤ã‚¹
 @SET_CHAR_DIR( PRSN_SUMS_FIELD_Y, DIR_M_RIGHT )
 @WI( 10 )
-;‰æ–ÊŠO‚É‹Ž‚éƒrƒLƒj—
+;ç”»é¢å¤–ã«åŽ»ã‚‹ãƒ“ã‚­ãƒ‹å¥³
 @REMOVE_CHAR( PRSN_SUMS_FIELD_Z, ANIM_EVT_PRAY_2_BIKINI )
 @WI( 10 )
 @HIDE_MANPU_CHAR( PRSN_SUMS_FIELD_X )
-;ƒS[ƒWƒƒƒX‚ÉŠñ‚éƒiƒCƒX
+;ã‚´ãƒ¼ã‚¸ãƒ£ã‚¹ã«å¯„ã‚‹ãƒŠã‚¤ã‚¹
 @REMOVE_CHAR( PRSN_SUMS_FIELD_Y, ANIM_EVT_PRAY_2_NICE )
-;ŠÔ‚ð’u‚­
+;é–“ã‚’ç½®ã
 @WI( 30 )
-;ƒVƒ‡ƒbƒv‚Ì“üŒû‚©‚ç‘–‚èŠñ‚éƒIƒbƒP[
+;ã‚·ãƒ§ãƒƒãƒ—ã®å…¥å£ã‹ã‚‰èµ°ã‚Šå¯„ã‚‹ã‚ªãƒƒã‚±ãƒ¼
 @MOVE_GOM_CHAR( GOM_OK, ANIM_EVT_PRAY_2_OKAY, OBJFX_SHOW_NONE )
-;ŠÔ‚ð’u‚­
+;é–“ã‚’ç½®ã
 @WI( 100 )
-;¼‰æ–ÊŠO‚©‚ç‘–‚èŠñ‚éƒOƒ‹[ƒr[
+;è¥¿ç”»é¢å¤–ã‹ã‚‰èµ°ã‚Šå¯„ã‚‹ã‚°ãƒ«ãƒ¼ãƒ“ãƒ¼
 @MOVE_GOM_CHAR( GOM_GROOVE, ANIM_EVT_PRAY_2_GROOVY, OBJFX_SHOW_NONE )
 @WAITSYS()
 @WI( 30 )
-;‘Sˆõ“ìŒü‚­iƒS[ƒWƒƒƒX‚ÍÅ‰‚©‚ç“ìŒü‚«j
-;ƒ‰ƒbƒL[
+;å…¨å“¡å—å‘ãï¼ˆã‚´ãƒ¼ã‚¸ãƒ£ã‚¹ã¯æœ€åˆã‹ã‚‰å—å‘ãï¼‰
+;ãƒ©ãƒƒã‚­ãƒ¼
 @SET_CHAR_DIR( PRSN_SUMS_FIELD_W, DIR_M_DOWN )
 @WI( 20 )
-;ƒOƒ‹[ƒr[
+;ã‚°ãƒ«ãƒ¼ãƒ“ãƒ¼
 @SET_GOM_CHAR_DIR( GOM_GROOVE, DIR_M_RIGHT )
 @WI( 8 )
 @SET_GOM_CHAR_DIR( GOM_GROOVE, DIR_M_DOWN )	
 @WI( 14 )
-;ƒIƒbƒP[
+;ã‚ªãƒƒã‚±ãƒ¼
 @SET_GOM_CHAR_DIR( GOM_OK, DIR_M_RIGHT )
 @WI( 8 )
 @SET_GOM_CHAR_DIR( GOM_OK, DIR_M_DOWN )
 @WI( 14 )
-;ƒiƒCƒX
+;ãƒŠã‚¤ã‚¹
 @SET_CHAR_DIR( PRSN_SUMS_FIELD_Y, DIR_M_RIGHT )
 @WI( 8 )
 @SET_CHAR_DIR( PRSN_SUMS_FIELD_Y, DIR_M_DOWN )
 @WI( 60 )
-@GOSUB(MSG_BTL_INORU_BACK_TO_PC_2);ƒZƒŠƒtu`‚Í‹F‚Á‚½v
-@SETF( FLG_ANIM_PORT_0 )	;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒtƒ‰ƒO—§‚Ä‚é
-@WAITSYS()			;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‘Ò‚¿i‚±‚ÌŒãŽ©ŽEj
+@GOSUB(MSG_BTL_INORU_BACK_TO_PC_2);ã‚»ãƒªãƒ•ã€Œã€œã¯ç¥ˆã£ãŸã€
+@SETF( FLG_ANIM_PORT_0 )	;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@WAITSYS()			;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜å¾…ã¡ï¼ˆã“ã®å¾Œè‡ªæ®ºï¼‰
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
 ;-----
-x
+ã€
 
 MSG_EVT_PRAY_3_PAULA_PAPA;
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF)
 ;-----
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;©‚±‚ê‚Í‚à‚Á‚ÆŽ–‘O‚É‚µ‚Ä‚¨‚­‚Ì‚©‚àB
-;‘È‰~ƒEƒBƒ“ƒhƒEƒ}ƒXƒNŠÇ—‚Ì“§–¾ŒN
-@RESF( FLG_ANIM_PORT_0 )		;ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒgƒŠƒK‰Šú‰»
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;â†ã“ã‚Œã¯ã‚‚ã£ã¨äº‹å‰ã«ã—ã¦ãŠãã®ã‹ã‚‚ã€‚
+;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒžã‚¹ã‚¯ç®¡ç†ã®é€æ˜Žå›
+@RESF( FLG_ANIM_PORT_0 )		;ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒˆãƒªã‚¬åˆæœŸåŒ–
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;ƒ|[ƒ‰ƒXƒ^[—c’t‰€‘O‚Éƒ[ƒv
+;ãƒãƒ¼ãƒ©ã‚¹ã‚¿ãƒ¼å¹¼ç¨šåœ’å‰ã«ãƒ¯ãƒ¼ãƒ—
 @WARP( WARP_EVT_INORU_POLASTAR )
 @COLD_PLAYER(PC_ALL)
 @WI( 120 )
-;¼‰æ–ÊŠO‚©‚ç•à‚¢‚Ä‚­‚éƒ|[ƒ‰•ƒ
+;è¥¿ç”»é¢å¤–ã‹ã‚‰æ­©ã„ã¦ãã‚‹ãƒãƒ¼ãƒ©çˆ¶
 @MOVE_GOM_CHAR( GOM_POLA_FATHER, ANIM_EVT_PRAY_3_POLAPAPA, OBJFX_SHOW_NONE )
 @WAITSYS()
-;ƒ|[ƒ‰•ƒ‚É–Ÿ•„•\Ž¦
+;ãƒãƒ¼ãƒ©çˆ¶ã«æ¼«ç¬¦è¡¨ç¤º
 @COLD_GOM_CHAR( GOM_POLA_FATHER )
 @SHOW_MANPU_GOM_CHAR( GOM_POLA_FATHER, MANPU_BIKKURI )
 @WI(60)
 @HIDE_MANPU_GOM_CHAR( GOM_POLA_FATHER )
-;‚«‚å‚ë‚«‚å‚ë‚µ‚Ä—c’t‰€‚É‘–‚èÁ‚¦A‚Ü‚½o‚Ä‚­‚éƒ|[ƒ‰•ƒ
+;ãã‚‡ã‚ãã‚‡ã‚ã—ã¦å¹¼ç¨šåœ’ã«èµ°ã‚Šæ¶ˆãˆã€ã¾ãŸå‡ºã¦ãã‚‹ãƒãƒ¼ãƒ©çˆ¶
 @FRESH_GOM_CHAR( GOM_POLA_FATHER )
 @WAITSYS()
-;­‚µŠÔ‚ð’u‚­
+;å°‘ã—é–“ã‚’ç½®ã
 @WI( 30 )
-;—c’t‰€‚©‚ço‚Ä‚­‚éƒ|[ƒ‰•ê
+;å¹¼ç¨šåœ’ã‹ã‚‰å‡ºã¦ãã‚‹ãƒãƒ¼ãƒ©æ¯
 @MOVE_GOM_CHAR( GOM_POLA_MOTHER, ANIM_EVT_PRAY_3_POLAMAMA, OBJFX_SHOW_NONE )
-;­‚µŠÔ‚ð’u‚­
+;å°‘ã—é–“ã‚’ç½®ã
 @WI( 30 )
-;—c’t‰€‚©‚ço‚Ä‚­‚é‰€Ž™‚`
+;å¹¼ç¨šåœ’ã‹ã‚‰å‡ºã¦ãã‚‹åœ’å…ï¼¡
 @MOVE_GOM_CHAR( GOM_CAP, ANIM_EVT_PRAY_3_CHILDA, OBJFX_SHOW_NONE )
-;­‚µŠÔ‚ð’u‚­
+;å°‘ã—é–“ã‚’ç½®ã
 @WI( 30 )
-;—c’t‰€‚©‚ço‚Ä‚­‚é‰€Ž™‚a
+;å¹¼ç¨šåœ’ã‹ã‚‰å‡ºã¦ãã‚‹åœ’å…ï¼¢
 @MOVE_GOM_CHAR( GOM_RIBBON, ANIM_EVT_PRAY_3_CHILDB, OBJFX_SHOW_NONE )
-;­‚µŠÔ‚ð’u‚­
+;å°‘ã—é–“ã‚’ç½®ã
 @WI( 30 )
-;—c’t‰€‚©‚ço‚Ä‚­‚é‰€Ž™‚c
+;å¹¼ç¨šåœ’ã‹ã‚‰å‡ºã¦ãã‚‹åœ’å…ï¼¤
 @MOVE_GOM_CHAR( GOM_DANGO, ANIM_EVT_PRAY_3_CHILDD, OBJFX_SHOW_NONE )
 @WAITSYS()
-;­‚µŠÔ‚ð’u‚­
+;å°‘ã—é–“ã‚’ç½®ã
 @WI( 30 )
-@GOSUB(MSG_BTL_INORU_BACK_TO_PC_3);ƒZƒŠƒtu`‚Í‹F‚Á‚½v
-@SETF( FLG_ANIM_PORT_0 )	;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒtƒ‰ƒO—§‚Ä‚é
-@WAITSYS()			;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‘Ò‚¿i‚±‚ÌŒãŽ©ŽEj
+@GOSUB(MSG_BTL_INORU_BACK_TO_PC_3);ã‚»ãƒªãƒ•ã€Œã€œã¯ç¥ˆã£ãŸã€
+@SETF( FLG_ANIM_PORT_0 )	;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@WAITSYS()			;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜å¾…ã¡ï¼ˆã“ã®å¾Œè‡ªæ®ºï¼‰
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
 ;-----
-x
+ã€
 
 MSG_EVT_PRAY_4_TONY;
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF)
 ;-----
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;©‚±‚ê‚Í‚à‚Á‚ÆŽ–‘O‚É‚µ‚Ä‚¨‚­‚Ì‚©‚àB
-;‘È‰~ƒEƒBƒ“ƒhƒEƒ}ƒXƒNŠÇ—‚Ì“§–¾ŒN
-@RESF( FLG_ANIM_PORT_0 )		;ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒgƒŠƒK‰Šú‰»
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;â†ã“ã‚Œã¯ã‚‚ã£ã¨äº‹å‰ã«ã—ã¦ãŠãã®ã‹ã‚‚ã€‚
+;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒžã‚¹ã‚¯ç®¡ç†ã®é€æ˜Žå›
+@RESF( FLG_ANIM_PORT_0 )		;ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒˆãƒªã‚¬åˆæœŸåŒ–
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;ŠñhŽÉ‚QŠK‚Éƒ[ƒv
-@WARP( WARP_EVT_INORU_DORMITORY )	;ŠñhŽÉ‚Q‚e‚Éƒ[ƒv
+;å¯„å®¿èˆŽï¼’éšŽã«ãƒ¯ãƒ¼ãƒ—
+@WARP( WARP_EVT_INORU_DORMITORY )	;å¯„å®¿èˆŽï¼’ï¼¦ã«ãƒ¯ãƒ¼ãƒ—
 @COLD_PLAYER(PC_ALL)
 @WI( 120 )
-;ƒgƒj[‚ªƒhƒA‚©‚ç•”‰®‚Ì’†‰›‚É‘–‚é
+;ãƒˆãƒ‹ãƒ¼ãŒãƒ‰ã‚¢ã‹ã‚‰éƒ¨å±‹ã®ä¸­å¤®ã«èµ°ã‚‹
 @MOVE_GOM_CHAR( GOM_TONY, ANIM_EVT_PRAY_4_TONY, OBJFX_SHOW_NONE )
 @WI( 5 )
-;ƒgƒj[‚ðŒ©‚Â‚ß‚é¶“k‚Sl
+;ãƒˆãƒ‹ãƒ¼ã‚’è¦‹ã¤ã‚ã‚‹ç”Ÿå¾’ï¼”äºº
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_A, ANIM_EVT_PRAY_4_GAZE_TONY )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_B, ANIM_EVT_PRAY_4_GAZE_TONY )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_C, ANIM_EVT_PRAY_4_GAZE_TONY )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_D, ANIM_EVT_PRAY_4_GAZE_TONY )
-;‚«‚å‚ë‚«‚å‚ë‚·‚éƒgƒj[
-;¼‰æ–ÊŠO‚ÉÁ‚¦‚éƒgƒj[
+;ãã‚‡ã‚ãã‚‡ã‚ã™ã‚‹ãƒˆãƒ‹ãƒ¼
+;è¥¿ç”»é¢å¤–ã«æ¶ˆãˆã‚‹ãƒˆãƒ‹ãƒ¼
 @WAITSYS()
-;•”‰®’†‰›‚ÉW‚Ü‚é¶“k‚Sl
-@COLD_GOM_CHAR( GOM_TONY )	;ƒgƒj[‰æ–ÊŠO‚Å‹xŽ~
+;éƒ¨å±‹ä¸­å¤®ã«é›†ã¾ã‚‹ç”Ÿå¾’ï¼”äºº
+@COLD_GOM_CHAR( GOM_TONY )	;ãƒˆãƒ‹ãƒ¼ç”»é¢å¤–ã§ä¼‘æ­¢
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_A, ANIM_EVT_PRAY_4_PUPIL_A )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_B, ANIM_EVT_PRAY_4_PUPIL_B )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_C, ANIM_EVT_PRAY_4_PUPIL_C )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_D, ANIM_EVT_PRAY_4_PUPIL_D )
 @WAITSYS()
-;ŠÔ‚ð’u‚­
+;é–“ã‚’ç½®ã
 @WI( 100 )
-;Ä‚Ñƒgƒj[‚ª’†‰›‚É‘–‚è‚æ‚é
+;å†ã³ãƒˆãƒ‹ãƒ¼ãŒä¸­å¤®ã«èµ°ã‚Šã‚ˆã‚‹
 @FRESH_GOM_CHAR( GOM_TONY )
 @WI( 70 )
-;‰æ–ÊŠO‚©‚ç’Ç‚Á‚ÄƒKƒEƒX‚ª’†‰›‚É
+;ç”»é¢å¤–ã‹ã‚‰è¿½ã£ã¦ã‚¬ã‚¦ã‚¹ãŒä¸­å¤®ã«
 @MOVE_GOM_CHAR( GOM_ZIMI, ANIM_EVT_PRAY_4_GAUS, OBJFX_SHOW_NONE )
 @WAITSYS()
-;ŠF‚Éà–¾‚ð‚·‚éƒgƒj[
+;çš†ã«èª¬æ˜Žã‚’ã™ã‚‹ãƒˆãƒ‹ãƒ¼
 @REMOVE_GOM_CHAR( GOM_TONY, ANIM_EVT_PRAY_4_EXPLAIN )
 @WAITSYS()
 @WI( 20 )
-;‘Sˆõ“ìŒü‚­
+;å…¨å“¡å—å‘ã
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_A, ANIM_EVT_PRAY_4_DIR_DOWN )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_B, ANIM_EVT_PRAY_4_DIR_RIGHT )
 @WI( 20 )
@@ -1349,656 +1349,656 @@ MSG_EVT_PRAY_4_TONY;
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_B, ANIM_EVT_PRAY_4_DIR_DOWN )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_C, ANIM_EVT_PRAY_4_DIR_DOWN )
 @WI( 60 )
-@GOSUB(MSG_BTL_INORU_BACK_TO_PC_4);ƒZƒŠƒtu`‚Í‹F‚Á‚½v
-@SETF( FLG_ANIM_PORT_0 )	;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒtƒ‰ƒO—§‚Ä‚é
-@WAITSYS()			;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‘Ò‚¿i‚±‚ÌŒãŽ©ŽEj
+@GOSUB(MSG_BTL_INORU_BACK_TO_PC_4);ã‚»ãƒªãƒ•ã€Œã€œã¯ç¥ˆã£ãŸã€
+@SETF( FLG_ANIM_PORT_0 )	;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@WAITSYS()			;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜å¾…ã¡ï¼ˆã“ã®å¾Œè‡ªæ®ºï¼‰
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
 ;-----
-x
+ã€
 
 MSG_EVT_PRAY_5_RAMA;
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF)
 ;-----
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;©‚±‚ê‚Í‚à‚Á‚ÆŽ–‘O‚É‚µ‚Ä‚¨‚­‚Ì‚©‚àB
-;‘È‰~ƒEƒBƒ“ƒhƒEƒ}ƒXƒNŠÇ—‚Ì“§–¾ŒN
-@RESF( FLG_ANIM_PORT_0 )		;ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒgƒŠƒK‰Šú‰»
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;â†ã“ã‚Œã¯ã‚‚ã£ã¨äº‹å‰ã«ã—ã¦ãŠãã®ã‹ã‚‚ã€‚
+;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒžã‚¹ã‚¯ç®¡ç†ã®é€æ˜Žå›
+@RESF( FLG_ANIM_PORT_0 )		;ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒˆãƒªã‚¬åˆæœŸåŒ–
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;ƒ‰ƒ“ƒ}‹{“a‚Ì¼‚É‚Éƒ[ƒv
+;ãƒ©ãƒ³ãƒžå®®æ®¿ã®è¥¿ã«ã«ãƒ¯ãƒ¼ãƒ—
 @WARP( WARP_EVT_INORU_RAMMA )
-@COLD_PLAYER( PC_ALL )		;ƒ[ƒvŒã‚ÍŽ©“®‰ð“€‚µ‚Ä‚¢‚é‚Ì‚¾‚æƒ`ƒ~
-;ŠÔ‚ð’u‚­
+@COLD_PLAYER( PC_ALL )		;ãƒ¯ãƒ¼ãƒ—å¾Œã¯è‡ªå‹•è§£å‡ã—ã¦ã„ã‚‹ã®ã ã‚ˆãƒãƒŸ
+;é–“ã‚’ç½®ã
 @WI( 120 )
-;–Ÿ•„•\Ž¦‚ð–º‚`‚É
+;æ¼«ç¬¦è¡¨ç¤ºã‚’å¨˜ï¼¡ã«
 @SHOW_MANPU_CHAR( PRSN_RAMA_FIELD_L, MANPU_BIKKURI )
 @WI( 60 )
 @HIDE_MANPU_CHAR( PRSN_RAMA_FIELD_L )
-;‚«‚å‚ë‚«‚å‚ë‚·‚é–º‚`
-;“ìŒü‚­–º‚`
+;ãã‚‡ã‚ãã‚‡ã‚ã™ã‚‹å¨˜ï¼¡
+;å—å‘ãå¨˜ï¼¡
 @REMOVE_CHAR( PRSN_RAMA_FIELD_L, ANIM_EVT_PRAY_5_GIRL_A )
 @WAITSYS()
 @WI( 50 )
-;‹{“a‚©‚ço‚Ä‚­‚é–º‚a
-;‹{“a‘O‚Å‚«‚å‚ë‚«‚å‚ë‚·‚é–º‚a
-;–º‚a‚ðŒ©‚Â‚ß‚é–º‚`
-;–º‚`‚Ì—×‚ÉˆÚ“®‚·‚é–º‚a
-;–º‚`‚Ì•û‚ðŒü‚­–º‚a
+;å®®æ®¿ã‹ã‚‰å‡ºã¦ãã‚‹å¨˜ï¼¢
+;å®®æ®¿å‰ã§ãã‚‡ã‚ãã‚‡ã‚ã™ã‚‹å¨˜ï¼¢
+;å¨˜ï¼¢ã‚’è¦‹ã¤ã‚ã‚‹å¨˜ï¼¡
+;å¨˜ï¼¡ã®éš£ã«ç§»å‹•ã™ã‚‹å¨˜ï¼¢
+;å¨˜ï¼¡ã®æ–¹ã‚’å‘ãå¨˜ï¼¢
 @MOVE_GOM_CHAR( GOM_INDIAN_WOMAN, ANIM_EVT_PRAY_5_GIRL_B, OBJFX_SHOW_NONE )
 @WAITSYS()
-;–º‚a‚Ì•û‚ðŒü‚­–º‚`
-; ŽŽ‚µ‚É@SET_CHAR_DIR( PRSN_RAMA_FIELD_L, DIR_M_RIGHT )
+;å¨˜ï¼¢ã®æ–¹ã‚’å‘ãå¨˜ï¼¡
+; è©¦ã—ã«@SET_CHAR_DIR( PRSN_RAMA_FIELD_L, DIR_M_RIGHT )
 @WI( 30 )
-;“ìŒü‚­–º‚`‚Æ‚a
+;å—å‘ãå¨˜ï¼¡ã¨ï¼¢
 @REMOVE_CHAR( PRSN_RAMA_FIELD_L, ANIM_EVT_PRAY_4_DIR_DOWN )
 @REMOVE_GOM_CHAR( GOM_INDIAN_WOMAN, ANIM_EVT_PRAY_4_DIR_DOWN )
-;ŠÔ‚ð’u‚­
+;é–“ã‚’ç½®ã
 @WI( 50 )
-;–º‚b‚ª“Œ‰æ–ÊŠO‚©‚ç“oê
-;–º‚b‚ðŒ©‚Â‚ß‚é–º‚`•‚a
-;–º‚`‚a‚Ì“ì‚ÉˆÚ“®‚·‚é–º‚b
-;‘Sˆõ“ìŒü‚­
+;å¨˜ï¼£ãŒæ±ç”»é¢å¤–ã‹ã‚‰ç™»å ´
+;å¨˜ï¼£ã‚’è¦‹ã¤ã‚ã‚‹å¨˜ï¼¡ï¼†ï¼¢
+;å¨˜ï¼¡ï¼¢ã®å—ã«ç§»å‹•ã™ã‚‹å¨˜ï¼£
+;å…¨å“¡å—å‘ã
 @REMOVE_CHAR( PRSN_RAMA_FIELD_M, ANIM_EVT_PRAY_5_GIRL_C )
 @WAITSYS()
-;ŠÔ‚ð’u‚­
+;é–“ã‚’ç½®ã
 @WI( 60 )
-@GOSUB(MSG_BTL_INORU_BACK_TO_PC_5);ƒZƒŠƒtu`‚Í‹F‚Á‚½v
-@SETF( FLG_ANIM_PORT_0 )	;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒtƒ‰ƒO—§‚Ä‚é
-@WAITSYS()			;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‘Ò‚¿i‚±‚ÌŒãŽ©ŽEj
+@GOSUB(MSG_BTL_INORU_BACK_TO_PC_5);ã‚»ãƒªãƒ•ã€Œã€œã¯ç¥ˆã£ãŸã€
+@SETF( FLG_ANIM_PORT_0 )	;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@WAITSYS()			;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜å¾…ã¡ï¼ˆã“ã®å¾Œè‡ªæ®ºï¼‰
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
 ;-----
-x
+ã€
 
 MSG_EVT_PRAY_6_FRANK;
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF)
 ;-----
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;©‚±‚ê‚Í‚à‚Á‚ÆŽ–‘O‚É‚µ‚Ä‚¨‚­‚Ì‚©‚àB
-;‘È‰~ƒEƒBƒ“ƒhƒEƒ}ƒXƒNŠÇ—‚Ì“§–¾ŒN
-@RESF( FLG_ANIM_PORT_0 )		;ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒgƒŠƒK‰Šú‰»
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;â†ã“ã‚Œã¯ã‚‚ã£ã¨äº‹å‰ã«ã—ã¦ãŠãã®ã‹ã‚‚ã€‚
+;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒžã‚¹ã‚¯ç®¡ç†ã®é€æ˜Žå›
+@RESF( FLG_ANIM_PORT_0 )		;ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒˆãƒªã‚¬åˆæœŸåŒ–
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;ƒIƒlƒbƒgƒo[ƒK[ƒVƒ‡ƒbƒv‚Éƒ[ƒv
-@WARP( WARP_EVT_INORU_BURGER )		;ƒIƒlƒbƒgƒo[ƒK[ƒVƒ‡ƒbƒv‚Éƒ[ƒv
-@COLD_PLAYER(PC_ALL)		;ƒ[ƒvŒã‚ÍŽ©“®‰ð“€‚µ‚Ä‚¢‚é‚Ì‚¾‚æƒ`ƒ~
-;ŠÔ‚ð’u‚­
+;ã‚ªãƒãƒƒãƒˆãƒãƒ¼ã‚¬ãƒ¼ã‚·ãƒ§ãƒƒãƒ—ã«ãƒ¯ãƒ¼ãƒ—
+@WARP( WARP_EVT_INORU_BURGER )		;ã‚ªãƒãƒƒãƒˆãƒãƒ¼ã‚¬ãƒ¼ã‚·ãƒ§ãƒƒãƒ—ã«ãƒ¯ãƒ¼ãƒ—
+@COLD_PLAYER(PC_ALL)		;ãƒ¯ãƒ¼ãƒ—å¾Œã¯è‡ªå‹•è§£å‡ã—ã¦ã„ã‚‹ã®ã ã‚ˆãƒãƒŸ
+;é–“ã‚’ç½®ã
 @WI( 120 )
-;ƒtƒ‰ƒ“ƒN‚É–Ÿ•„•\Ž¦
+;ãƒ•ãƒ©ãƒ³ã‚¯ã«æ¼«ç¬¦è¡¨ç¤º
 @SHOW_MANPU_CHAR( PRSN_ONET_BURGER_G, MANPU_BIKKURI )
 @WI( 60 )
 @HIDE_MANPU_CHAR( PRSN_ONET_BURGER_G )
-;‚«‚å‚ë‚«‚å‚ë‚·‚éƒtƒ‰ƒ“ƒN
-;‚¿‚å‚Á‚Æ“ì‚ÉˆÚ“®‚·‚éƒtƒ‰ƒ“ƒN
+;ãã‚‡ã‚ãã‚‡ã‚ã™ã‚‹ãƒ•ãƒ©ãƒ³ã‚¯
+;ã¡ã‚‡ã£ã¨å—ã«ç§»å‹•ã™ã‚‹ãƒ•ãƒ©ãƒ³ã‚¯
 @REMOVE_CHAR( PRSN_ONET_BURGER_G, ANIM_EVT_PRAY_6_FRANK )
 @WAITSYS()
-;ŠÔ‚ð’u‚­
+;é–“ã‚’ç½®ã
 @WI( 30 )
-@GOSUB(MSG_BTL_INORU_BACK_TO_PC_6);ƒZƒŠƒtu`‚Í‹F‚Á‚½v
-@SETF( FLG_ANIM_PORT_0 )	;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒtƒ‰ƒO—§‚Ä‚é
-@WAITSYS()			;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‘Ò‚¿i‚±‚ÌŒãŽ©ŽEj
+@GOSUB(MSG_BTL_INORU_BACK_TO_PC_6);ã‚»ãƒªãƒ•ã€Œã€œã¯ç¥ˆã£ãŸã€
+@SETF( FLG_ANIM_PORT_0 )	;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@WAITSYS()			;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜å¾…ã¡ï¼ˆã“ã®å¾Œè‡ªæ®ºï¼‰
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
 ;-----
-x
+ã€
 
 MSG_EVT_PRAY_7_DOSEI;
-@CLRF(FLG_TLPT_DKFD);”ŽŽm‚½‚¿‚ðÁ‚µ‚Ä‚¨‚­
-@CLRF(FLG_WIN_OSCAR);ƒXƒy[ƒXƒgƒ“ƒlƒ‹‚ðÁ‚µ‚Ä‚¨‚­ˆ×
+@CLRF(FLG_TLPT_DKFD);åšå£«ãŸã¡ã‚’æ¶ˆã—ã¦ãŠã
+@CLRF(FLG_WIN_OSCAR);ã‚¹ãƒšãƒ¼ã‚¹ãƒˆãƒ³ãƒãƒ«ã‚’æ¶ˆã—ã¦ãŠãç‚º
 ;-----
 @SETF(FLG_SYS_MONSTER_OFF)
 ;-----
-@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;©‚±‚ê‚Í‚à‚Á‚ÆŽ–‘O‚É‚µ‚Ä‚¨‚­‚Ì‚©‚àB
-;‘È‰~ƒEƒBƒ“ƒhƒEƒ}ƒXƒNŠÇ—‚Ì“§–¾ŒN
-@RESF( FLG_ANIM_PORT_0 )		;ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒgƒŠƒK‰Šú‰»
+@HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;â†ã“ã‚Œã¯ã‚‚ã£ã¨äº‹å‰ã«ã—ã¦ãŠãã®ã‹ã‚‚ã€‚
+;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒžã‚¹ã‚¯ç®¡ç†ã®é€æ˜Žå›
+@RESF( FLG_ANIM_PORT_0 )		;ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒˆãƒªã‚¬åˆæœŸåŒ–
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;“y¯’J‚Éƒ[ƒv
+;åœŸæ˜Ÿè°·ã«ãƒ¯ãƒ¼ãƒ—
 @WARP( WARP_EVT_INORU_DOSEI )
-@COLD_PLAYER( PC_ALL )		;ƒ[ƒvŒã‚ÍŽ©“®‰ð“€‚µ‚Ä‚¢‚é‚Ì‚¾‚æƒ`ƒ~
-;ƒ‚ƒbƒ`[‚ð‘«“¥‚ÝÃŽ~‚Ì“ŒŒü‚«‚É
+@COLD_PLAYER( PC_ALL )		;ãƒ¯ãƒ¼ãƒ—å¾Œã¯è‡ªå‹•è§£å‡ã—ã¦ã„ã‚‹ã®ã ã‚ˆãƒãƒŸ
+;ãƒ¢ãƒƒãƒãƒ¼ã‚’è¶³è¸ã¿é™æ­¢ã®æ±å‘ãã«
 @SET_CHAR_DIR( PRSN_DOSE_FIELD_L, DIR_M_RIGHT )
 @REMOVE_CHAR( PRSN_DOSE_FIELD_L, ANIM_PEOPLEWALK0 )
-;ŠÔ‚ð’u‚­
+;é–“ã‚’ç½®ã
 @WI( 180 )
-;ƒXƒy[ƒXƒgƒ“ƒlƒ‹‚ªŒ»‚ê‚é
+;ã‚¹ãƒšãƒ¼ã‚¹ãƒˆãƒ³ãƒãƒ«ãŒç¾ã‚Œã‚‹
 ;@BGMSTART(0,BGM_msc9)
 @MOVE_CHAR( PRSN_DOSE_FIELD_3A, ANIM_EVT_PRAY_7_STUNNEL, OBJFX_SHOW_VSTRIPE )
 @WI(180)
-;ƒ‚ƒbƒ`[‚ª‘«“¥‚Ý‚â‚ß‚é
+;ãƒ¢ãƒƒãƒãƒ¼ãŒè¶³è¸ã¿ã‚„ã‚ã‚‹
 @REMOVE_CHAR( PRSN_DOSE_FIELD_L, ANIM_MAPOBJSTILL )
 @WI( 9 )
-;“y¯‚³‚ñ‚ª‘«“¥‚Ý‚â‚ß‚Ä‚r‚s‚ðŒ©‚é
+;åœŸæ˜Ÿã•ã‚“ãŒè¶³è¸ã¿ã‚„ã‚ã¦ï¼³ï¼´ã‚’è¦‹ã‚‹
 @SET_CHAR_DIR( PRSN_DOSE_FIELD_W, DIR_M_RIGHT )
 @WI( 1 )
 @REMOVE_CHAR( PRSN_DOSE_FIELD_W, ANIM_MAPOBJSTILL )
 @WI(120)
 @WI(30)
-;‚r‚s‚©‚çƒAƒ“ƒh[ƒiƒc”ŽŽm“oê
+;ï¼³ï¼´ã‹ã‚‰ã‚¢ãƒ³ãƒ‰ãƒ¼ãƒŠãƒ„åšå£«ç™»å ´
 @MOVE_CHAR( PRSN_DOSE_FIELD_K, ANIM_EVT_PRAY_7_ANDOUGHNUT, OBJFX_SHOW_NONE )
-;‚r‚s‚©‚çƒAƒbƒvƒ‹ƒLƒbƒh“oê
+;ï¼³ï¼´ã‹ã‚‰ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ç™»å ´
 @MOVE_CHAR( PRSN_DOSE_FIELD_J, ANIM_EVT_PRAY_7_APPLEKID, OBJFX_SHOW_NONE )
 @WAITSYS()
 ;@MUSI_START()
 
 @WI( 30 )
-;ƒ‚ƒbƒ`[‚É–•„•\Ž¦
+;ãƒ¢ãƒƒãƒãƒ¼ã«æ…¢ç¬¦è¡¨ç¤º
 @SHOW_MANPU_CHAR( PRSN_DOSE_FIELD_L, MANPU_BIKKURI )
-;ƒAƒbƒvƒ‹ƒLƒbƒh‚É–•„•\Ž¦
+;ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰ã«æ…¢ç¬¦è¡¨ç¤º
 @SHOW_MANPU_CHAR( PRSN_DOSE_FIELD_J, MANPU_BIKKURI )
-;”ŽŽm‚É–•„•\Ž¦
+;åšå£«ã«æ…¢ç¬¦è¡¨ç¤º
 @SHOW_MANPU_CHAR( PRSN_DOSE_FIELD_K, MANPU_BIKKURI )
 @WI( 60 )
 @HIDE_MANPU_CHAR( PRSN_DOSE_FIELD_L )
 @HIDE_MANPU_CHAR( PRSN_DOSE_FIELD_J )
 @HIDE_MANPU_CHAR( PRSN_DOSE_FIELD_K )
-;‚«‚å‚ë‚«‚å‚ë‚·‚éƒ‚ƒbƒ`[
+;ãã‚‡ã‚ãã‚‡ã‚ã™ã‚‹ãƒ¢ãƒƒãƒãƒ¼
 @REMOVE_CHAR( PRSN_DOSE_FIELD_L, ANIM_EVT_PRAY_7_KYOROKYORO )
-;‚«‚å‚ë‚«‚å‚ë‚·‚éƒAƒbƒvƒ‹ƒLƒbƒh
+;ãã‚‡ã‚ãã‚‡ã‚ã™ã‚‹ã‚¢ãƒƒãƒ—ãƒ«ã‚­ãƒƒãƒ‰
 @REMOVE_CHAR( PRSN_DOSE_FIELD_J, ANIM_EVT_PRAY_7_KYOROKYORO )
 @WI( 3 )
-;‚«‚å‚ë‚«‚å‚ë‚·‚é”ŽŽm
+;ãã‚‡ã‚ãã‚‡ã‚ã™ã‚‹åšå£«
 @REMOVE_CHAR( PRSN_DOSE_FIELD_K, ANIM_EVT_PRAY_7_KYOROKYORO )
-@WI( 70 )	;ƒAƒjƒ‘Ò‚¿‚È‚Ì‚Å•K‚¸‚U‚TƒtƒŒ[ƒ€ˆÈã‘Ò‚Â‚±‚Æ
-;ƒ‚ƒbƒ`[‚ªˆÚ“®‚µ“ŒŒü‚­
+@WI( 70 )	;ã‚¢ãƒ‹ãƒ¡å¾…ã¡ãªã®ã§å¿…ãšï¼–ï¼•ãƒ•ãƒ¬ãƒ¼ãƒ ä»¥ä¸Šå¾…ã¤ã“ã¨
+;ãƒ¢ãƒƒãƒãƒ¼ãŒç§»å‹•ã—æ±å‘ã
 @REMOVE_CHAR( PRSN_DOSE_FIELD_L, ANIM_EVT_PRAY_7_MOTCHY )
-;”ŽŽm‚ªˆÚ“®‚µ¼Œü‚­
+;åšå£«ãŒç§»å‹•ã—è¥¿å‘ã
 @REMOVE_CHAR( PRSN_DOSE_FIELD_K, ANIM_EVT_PRAY_7_ANDOUGHNUT2 )
-;“y¯‚³‚ñ‚ªˆÚ“®‚·‚é
+;åœŸæ˜Ÿã•ã‚“ãŒç§»å‹•ã™ã‚‹
 @REMOVE_CHAR( PRSN_DOSE_FIELD_W, ANIM_EVT_PRAY_7_DOSEI )
 @WAITSYS()
-;“y¯‚³‚ñ‚Sl‚ª‰æ–ÊŠO‚©‚ç”ŽŽm‚½‚¿‚ÌŒ³‚Ö
+;åœŸæ˜Ÿã•ã‚“ï¼”äººãŒç”»é¢å¤–ã‹ã‚‰åšå£«ãŸã¡ã®å…ƒã¸
 @MOVE_GOM_CHAR( GOM_DOSEI, ANIM_EVT_PRAY_7_DOSEI_A, OBJFX_SHOW_NONE )
 @MOVE_GOM_CHAR( GOM_DOSEI, ANIM_EVT_PRAY_7_DOSEI_B, OBJFX_SHOW_NONE )
 @MOVE_GOM_CHAR( GOM_DOSEI, ANIM_EVT_PRAY_7_DOSEI_C, OBJFX_SHOW_NONE )
 @MOVE_GOM_CHAR( GOM_DOSEI, ANIM_EVT_PRAY_7_DOSEI_D, OBJFX_SHOW_NONE )
 @WAITSYS()
-;ƒ‚ƒbƒ`[“ìŒü‚­
+;ãƒ¢ãƒƒãƒãƒ¼å—å‘ã
 @REMOVE_CHAR( PRSN_DOSE_FIELD_L, ANIM_EVT_PRAY_4_DIR_DOWN )
 @WI( 30 )
-;ƒAƒbƒvƒ‹“ìŒü‚­
+;ã‚¢ãƒƒãƒ—ãƒ«å—å‘ã
 @REMOVE_CHAR( PRSN_DOSE_FIELD_J, ANIM_EVT_PRAY_4_DIR_DOWN )
 @WI( 40 )
-;”ŽŽm“ìŒü‚­
+;åšå£«å—å‘ã
 @REMOVE_CHAR( PRSN_DOSE_FIELD_K, ANIM_EVT_PRAY_4_DIR_DOWN )
 @WI( 50 )
-@GOSUB(MSG_BTL_INORU_BACK_TO_PC_7);ƒZƒŠƒtu`‚Í‹F‚Á‚½v
-@SETF( FLG_ANIM_PORT_0 )	;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‚é—pƒtƒ‰ƒO—§‚Ä‚é
-@WAITSYS()			;‘È‰~ƒEƒBƒ“ƒhƒE•Â‚¶‘Ò‚¿i‚±‚ÌŒãŽ©ŽEj
+@GOSUB(MSG_BTL_INORU_BACK_TO_PC_7);ã‚»ãƒªãƒ•ã€Œã€œã¯ç¥ˆã£ãŸã€
+@SETF( FLG_ANIM_PORT_0 )	;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜ã‚‹ç”¨ãƒ•ãƒ©ã‚°ç«‹ã¦ã‚‹
+@WAITSYS()			;æ¥•å††ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦é–‰ã˜å¾…ã¡ï¼ˆã“ã®å¾Œè‡ªæ®ºï¼‰
 @SHOW_PLAYER( PC_ALL, OBJFX_SHOW_NONE )
 ;-----
 @CLRF(FLG_SYS_MONSTER_OFF)
 ;-----
-@SETF(FLG_TLPT_DKFD);”ŽŽm‚½‚¿Œ³‚É–ß‚·
-@SETF(FLG_WIN_OSCAR);ƒXƒy[ƒXƒgƒ“ƒlƒ‹‚ðŒ³‚É–ß‚·
-x
+@SETF(FLG_TLPT_DKFD);åšå£«ãŸã¡å…ƒã«æˆ»ã™
+@SETF(FLG_WIN_OSCAR);ã‚¹ãƒšãƒ¼ã‚¹ãƒˆãƒ³ãƒãƒ«ã‚’å…ƒã«æˆ»ã™
+ã€
 ;-------------------------------------------------
 
 MSG_EVT_HELIPOKEY;
-;ƒ‚ƒmƒgƒŠ[ƒrƒ‹‚ÌƒwƒŠƒ|[ƒg‚Åƒ|[ƒL[‚ªƒwƒŠƒRƒvƒ^[‚ð’D‚Á‚Ä“¦‘–‚·‚é
-;ƒwƒŠƒRƒvƒ^[“·‘Ì‚ª”ÍˆÍ“à‚ÌƒlƒX‚ðŠ´’m‚µ‚Ä”­s‚·‚é
-@CLRF( FLG_ANIM_PORT_0 )		;ƒwƒŠ‚Ì•ûŒüƒtƒ‰ƒO‰Šú‰»(¶Œü‚«)
-;ƒwƒŠ‘D“ª“§–¾ŒN‚Ì“o˜^
+;ãƒ¢ãƒŽãƒˆãƒªãƒ¼ãƒ“ãƒ«ã®ãƒ˜ãƒªãƒãƒ¼ãƒˆã§ãƒãƒ¼ã‚­ãƒ¼ãŒãƒ˜ãƒªã‚³ãƒ—ã‚¿ãƒ¼ã‚’å¥ªã£ã¦é€ƒèµ°ã™ã‚‹
+;ãƒ˜ãƒªã‚³ãƒ—ã‚¿ãƒ¼èƒ´ä½“ãŒç¯„å›²å†…ã®ãƒã‚¹ã‚’æ„ŸçŸ¥ã—ã¦ç™ºè¡Œã™ã‚‹
+@CLRF( FLG_ANIM_PORT_0 )		;ãƒ˜ãƒªã®æ–¹å‘ãƒ•ãƒ©ã‚°åˆæœŸåŒ–(å·¦å‘ã)
+;ãƒ˜ãƒªèˆ¹é ­é€æ˜Žå›ã®ç™»éŒ²
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_EVT_MONO_HELI_BOATMAN, OBJFX_SHOW_NONE )
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_HIT_CHR )
 ;------------------
-@BGM_EFFECT( 3 )	;’·‚¢ƒtƒF[ƒhƒAƒEƒg
-@WI( 120 )		;‚a‚f‚l‚ªÁ‚¦‚é‚Ì‚ð‘Ò‚Â
+@BGM_EFFECT( 3 )	;é•·ã„ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆ
+@WI( 120 )		;ï¼¢ï¼§ï¼­ãŒæ¶ˆãˆã‚‹ã®ã‚’å¾…ã¤
 ;------------------
-;ƒvƒƒyƒ‰‰ñ“]ƒXƒ^[ƒg
-@BGMSTART( 0, BGM_heli )	;ƒvƒƒyƒ‰‰¹uƒoƒb@ƒoƒb@ƒoƒ‰ƒoƒ‰ƒoƒ‰EEEv
+;ãƒ—ãƒ­ãƒšãƒ©å›žè»¢ã‚¹ã‚¿ãƒ¼ãƒˆ
+@BGMSTART( 0, BGM_heli )	;ãƒ—ãƒ­ãƒšãƒ©éŸ³ã€Œãƒãƒƒã€€ãƒãƒƒã€€ãƒãƒ©ãƒãƒ©ãƒãƒ©ãƒ»ãƒ»ãƒ»ã€
 @REMOVE_CHAR( PRSN_FRSD_FIELD_3S, ANIM_EVT_HELI_FWING_START )
 @REMOVE_CHAR( PRSN_FRSD_FIELD_3T, ANIM_EVT_HELI_RWING_START )
-@FRESH_CHAR( PRSN_FRSD_FIELD_3R )	;“·‘Ì‰ð•ú
+@FRESH_CHAR( PRSN_FRSD_FIELD_3R )	;èƒ´ä½“è§£æ”¾
 @WAITSYS()
-;”ò‚Ñ—§‚ÂƒwƒŠ
+;é£›ã³ç«‹ã¤ãƒ˜ãƒª
 @FRESH_GOM_CHAR( GOM_HIT_CHR )
-@REMOVE_CHAR( PRSN_FRSD_FIELD_3U, ANIM_EVT_MONO_HELI_SHADOW );“_–Å‚µ‚ÄŽ©ŽE
+@REMOVE_CHAR( PRSN_FRSD_FIELD_3U, ANIM_EVT_MONO_HELI_SHADOW );ç‚¹æ»…ã—ã¦è‡ªæ®º
 @WAITSYS()
-;ƒ|[ƒL[Šç‚Ì–Ÿ•„•\Ž¦
+;ãƒãƒ¼ã‚­ãƒ¼é¡”ã®æ¼«ç¬¦è¡¨ç¤º
 @COLD_GOM_CHAR( GOM_HIT_CHR )
 @COLD_CHAR( PRSN_FRSD_FIELD_3R )
 @COLD_CHAR( PRSN_FRSD_FIELD_3S )
 @COLD_CHAR( PRSN_FRSD_FIELD_3T )
-;@SHOW_MANPU_CHAR( PRSN_ONET_FIELD_3R, MANPU_HELI );ƒ|[ƒL[Šç–Ÿ•„•\Ž¦
+;@SHOW_MANPU_CHAR( PRSN_ONET_FIELD_3R, MANPU_HELI );ãƒãƒ¼ã‚­ãƒ¼é¡”æ¼«ç¬¦è¡¨ç¤º
 @MOVE_GOM_CHAR( GOM_POKEY_FACE, ANIM_HELI_POKEY_FACE, OBJFX_SHOW_NONE )
 @WI(60)
 @OPEN( 1 )
-Ÿ@DSP_NAME(PC_NESS)C@‚™‚‚•@‚‚‰‚Ž|‚ˆ‚…‚‚„‚…‚„@‚‰‚„‚‰‚‚”C«
-@@‚™‚‚•f‚’‚…@‚Š‚•‚“‚”@‚@‚ˆ‚‚Œ‚†|‚“‚”‚…‚@‚”‚‚@‚“‚Œ‚‚—I@KEY()«
-Ÿ‚hf‚@‚‡‚…‚”‚”‚‰‚Ž‚‡@‚‚•‚”‚”‚@‚ˆ‚…‚’‚…I@KEY()«
-Ÿ‚r‚‰‚Ž‚ƒ‚…@‚l‚‚Ž‚‚”‚‚Œ‚‰@‚ˆ‚‚“@‚‚‚…‚ƒ‚‚‚…@‚@‚‚Œ‚‚‰‚ŽC@KEY()«
-Ÿ‚‚Œ‚„@‚‚‚Ž@‚‚‡‚‚‰‚ŽC@‚h@‚ˆ‚‚–‚…@‚Ž‚@‚‚‚’‚…@‚•‚“‚…@‚†‚‚’@‚ˆ‚‰‚D@KEY()«
-Ÿ‚s‚ˆ‚‰‚“@‚ˆ‚…‚Œ‚‰‚ƒ‚‚‚”‚…‚’@‚—‚‰‚Œ‚Œ@‚’‚…‚‚Œ‚Œ‚™@‚ƒ‚‚‚…@‚‰‚Ž@‚ˆ‚‚Ž‚„‚™D@KEY()«
-Ÿ‚k‚‚‚‹‚“@‚Œ‚‰‚‹‚…@‚™‚‚•f‚’‚…@‚”‚ˆ‚…@‚—‚‚’‚Œ‚„|‚ƒ‚Œ‚‚“‚“@‚Œ‚‚“‚…‚’@‚‚‡‚‚‰‚ŽI
-;jpn:Ÿ‚Æ‚ñ‚Ü‚â‚ë‚¤‚Ì@@DSP_STS(STS_PC_NAME_NES)I«
-;jpn:@‚¶‚½‚Î‚½‚µ‚Ä‚à@‚¨‚»‚¢‚ºI«
-;jpn:@ƒoƒCƒoƒCI@KEY()«
-;jpn:Ÿ‚¨‚Ð‚Æ‚æ‚µ‚É@‚à‚Ç‚Á‚¿‚Ü‚Á‚½«
-;jpn:@ƒ‚ƒmƒgƒŠ[‚¶‚¢‚³‚ñ‚É‚Í«
-;jpn:@‚à‚¤@‚æ‚¤‚Í@‚È‚¢‚ËB@KEY()«
-;jpn:Ÿ‚¨‚ê@ƒwƒŠƒRƒvƒ^[‚É‚Ì‚ê‚Ä«
-;jpn:@‚¤‚ê‚µ‚¢‚ºI@KEY()«
-;jpn:Ÿ‚¨‚µ‚è@ƒyƒ“ƒy[ƒ“I@KEY()«
-;jpn:ŸƒAƒbƒJƒ“@ƒxƒƒxƒƒx[I
+â—†@DSP_NAME(PC_NESS)ï¼Œã€€ï½™ï½ï½•ã€€ï½ï½‰ï½Žâˆ’ï½ˆï½…ï½ï½„ï½…ï½„ã€€ï½‰ï½„ï½‰ï½ï½”ï¼Œâ†“
+ã€€ã€€ï½™ï½ï½•â€™ï½’ï½…ã€€ï½Šï½•ï½“ï½”ã€€ï½ã€€ï½ˆï½ï½Œï½†âˆ’ï½“ï½”ï½…ï½ã€€ï½”ï½ï½ã€€ï½“ï½Œï½ï½—ï¼@KEY()â†“
+â—†ï¼©â€™ï½ã€€ï½‡ï½…ï½”ï½”ï½‰ï½Žï½‡ã€€ï½ï½•ï½”ï½”ï½ã€€ï½ˆï½…ï½’ï½…ï¼@KEY()â†“
+â—†ï¼³ï½‰ï½Žï½ƒï½…ã€€ï¼­ï½ï½Žï½ï½”ï½ï½Œï½‰ã€€ï½ˆï½ï½“ã€€ï½‚ï½…ï½ƒï½ï½ï½…ã€€ï½ã€€ï½ï½Œï½ï½‰ï½Žï¼Œ@KEY()â†“
+â—†ï½ï½Œï½„ã€€ï½ï½ï½Žã€€ï½ï½‡ï½ï½‰ï½Žï¼Œã€€ï¼©ã€€ï½ˆï½ï½–ï½…ã€€ï½Žï½ã€€ï½ï½ï½’ï½…ã€€ï½•ï½“ï½…ã€€ï½†ï½ï½’ã€€ï½ˆï½‰ï½ï¼Ž@KEY()â†“
+â—†ï¼´ï½ˆï½‰ï½“ã€€ï½ˆï½…ï½Œï½‰ï½ƒï½ï½ï½”ï½…ï½’ã€€ï½—ï½‰ï½Œï½Œã€€ï½’ï½…ï½ï½Œï½Œï½™ã€€ï½ƒï½ï½ï½…ã€€ï½‰ï½Žã€€ï½ˆï½ï½Žï½„ï½™ï¼Ž@KEY()â†“
+â—†ï¼¬ï½ï½ï½‹ï½“ã€€ï½Œï½‰ï½‹ï½…ã€€ï½™ï½ï½•â€™ï½’ï½…ã€€ï½”ï½ˆï½…ã€€ï½—ï½ï½’ï½Œï½„âˆ’ï½ƒï½Œï½ï½“ï½“ã€€ï½Œï½ï½“ï½…ï½’ã€€ï½ï½‡ï½ï½‰ï½Žï¼
+;jpn:â—†ã¨ã‚“ã¾ã‚„ã‚ã†ã®ã€€@DSP_STS(STS_PC_NAME_NES)ï¼â†“
+;jpn:ã€€ã˜ãŸã°ãŸã—ã¦ã‚‚ã€€ãŠãã„ãœï¼â†“
+;jpn:ã€€ãƒã‚¤ãƒã‚¤ï¼@KEY()â†“
+;jpn:â—†ãŠã²ã¨ã‚ˆã—ã«ã€€ã‚‚ã©ã£ã¡ã¾ã£ãŸâ†“
+;jpn:ã€€ãƒ¢ãƒŽãƒˆãƒªãƒ¼ã˜ã„ã•ã‚“ã«ã¯â†“
+;jpn:ã€€ã‚‚ã†ã€€ã‚ˆã†ã¯ã€€ãªã„ã­ã€‚@KEY()â†“
+;jpn:â—†ãŠã‚Œã€€ãƒ˜ãƒªã‚³ãƒ—ã‚¿ãƒ¼ã«ã®ã‚Œã¦â†“
+;jpn:ã€€ã†ã‚Œã—ã„ãœï¼@KEY()â†“
+;jpn:â—†ãŠã—ã‚Šã€€ãƒšãƒ³ãƒšãƒ¼ãƒ³ï¼@KEY()â†“
+;jpn:â—†ã‚¢ãƒƒã‚«ãƒ³ã€€ãƒ™ãƒ­ãƒ™ãƒ­ãƒ™ãƒ¼ï¼
 @KEYNP()
 @CLOSEALL()
 @WI( 20 )
 @HIDE_GOM_CHAR( GOM_POKEY_FACE, OBJFX_HIDE_NONE )
-;“Œã•û‚Ö”ò‚Ñ‹Ž‚éƒwƒŠ
+;æ±ä¸Šæ–¹ã¸é£›ã³åŽ»ã‚‹ãƒ˜ãƒª
 @FRESH_GOM_CHAR( GOM_HIT_CHR )
 @FRESH_CHAR( PRSN_FRSD_FIELD_3R )
 @FRESH_CHAR( PRSN_FRSD_FIELD_3S )
 @FRESH_CHAR( PRSN_FRSD_FIELD_3T )
-@BGM_EFFECT( 3 )	;’·‚¢ƒtƒF[ƒhƒAƒEƒg
+@BGM_EFFECT( 3 )	;é•·ã„ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆ
 @WAITSYS()
-@HIDE_GOM_CHAR( GOM_HIT_CHR, OBJFX_HIDE_NONE )		;ƒwƒŠƒRƒvƒ^[ŽEƒX
+@HIDE_GOM_CHAR( GOM_HIT_CHR, OBJFX_HIDE_NONE )		;ãƒ˜ãƒªã‚³ãƒ—ã‚¿ãƒ¼æ®ºã‚¹
 @HIDE_CHAR( PRSN_FRSD_FIELD_3R,OBJFX_HIDE_NONE )	
 @HIDE_CHAR( PRSN_FRSD_FIELD_3S,OBJFX_HIDE_NONE )	
 @HIDE_CHAR( PRSN_FRSD_FIELD_3T,OBJFX_HIDE_NONE )	
-@WI( 12 )		;‚a‚f‚l‚ªÁ‚¦‚é‚Ì‚ð‘Ò‚Â
-;@MUSISTART()			;ƒtƒH[ƒTƒCƒh‚a‚f‚lÄŠJi“c’†‚³‚ñ‚Ì—v–]‚Å‚È‚µj
+@WI( 12 )		;ï¼¢ï¼§ï¼­ãŒæ¶ˆãˆã‚‹ã®ã‚’å¾…ã¤
+;@MUSISTART()			;ãƒ•ã‚©ãƒ¼ã‚µã‚¤ãƒ‰ï¼¢ï¼§ï¼­å†é–‹ï¼ˆç”°ä¸­ã•ã‚“ã®è¦æœ›ã§ãªã—ï¼‰
 @SETF(FLG_FOUR_HELI_DISAPPEAR)
-@CLRF(FLG_SYS_MONSTER_OFF);ƒ‚ƒ“ƒXƒ^[o‚·
-x
-F|||||||||||||||||||||
+@CLRF(FLG_SYS_MONSTER_OFF);ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼å‡ºã™
+ã€
+ï¼šâˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’âˆ’
 
 
-;#101	’n’ê‘å—¤‚Ö—Ž‰º
+;#101	åœ°åº•å¤§é™¸ã¸è½ä¸‹
 
-;š—Ž‰ºiƒ‹ƒ~ƒlƒz[ƒ‹‚Ìƒ_ƒ“ƒWƒ‡ƒ“oŒû‚©‚ç’n’ê‘å—¤‚Ö‚Ìƒ[ƒvj‚Ì‰‰oB
-;’·‚¢ˆÃ“]Bê—pŒø‰Ê‰¹‚ ‚èB
+;â˜…è½ä¸‹ï¼ˆãƒ«ãƒŸãƒãƒ›ãƒ¼ãƒ«ã®ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³å‡ºå£ã‹ã‚‰åœ°åº•å¤§é™¸ã¸ã®ãƒ¯ãƒ¼ãƒ—ï¼‰ã®æ¼”å‡ºã€‚
+;é•·ã„æš—è»¢ã€‚å°‚ç”¨åŠ¹æžœéŸ³ã‚ã‚Šã€‚
 
 ;-------------------------------------------------------------------
 
 
-;#102	‚W‚Â‚ÌƒTƒEƒ“ƒhW‚Ü‚éiƒTƒEƒ“ƒhŠm”F‰æ–Êj
+;#102	ï¼˜ã¤ã®ã‚µã‚¦ãƒ³ãƒ‰é›†ã¾ã‚‹ï¼ˆã‚µã‚¦ãƒ³ãƒ‰ç¢ºèªç”»é¢ï¼‰
 
-;š“ÁŽêƒCƒxƒ“ƒg‚Q‚O”Ô‚Æ“¯‚¶B
-;šê—p‚ÌuƒTƒEƒ“ƒhŠm”F‰æ–Êv•\Ž¦B
+;â˜…ç‰¹æ®Šã‚¤ãƒ™ãƒ³ãƒˆï¼’ï¼ç•ªã¨åŒã˜ã€‚
+;â˜…å°‚ç”¨ã®ã€Œã‚µã‚¦ãƒ³ãƒ‰ç¢ºèªç”»é¢ã€è¡¨ç¤ºã€‚
 
 MSG_POWR_GIAN;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy1)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_GIAN_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚f‚‰‚‚Ž‚”@‚r‚”‚…‚
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼§ï½‰ï½ï½Žï½”ã€€ï¼³ï½”ï½…ï½
 @GOSUB(_POWR_MINAGIRU)
-;jpn:ŸƒWƒƒƒCƒAƒ“ƒgƒXƒeƒbƒv
+;jpn:â—†ã‚¸ãƒ£ã‚¤ã‚¢ãƒ³ãƒˆã‚¹ãƒ†ãƒƒãƒ—
 ;jpn:@GOSUB(_POWR_MINAGIRU)
 _POWR_GIAN_10;
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 @GOSUB(_POWR_ALLHEAL_POWR)
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_GIAN,_POWR_GIAN_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚ƒ‚‚•‚‡‚ˆ‚”@‚@‚‡‚Œ‚‰‚‚‚“‚…@‚‚†@‚@‚“‚‚‚Œ‚ŒC@‚ƒ‚•‚”‚…@‚‚•‚‚‚™D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚ß‚É@‚¢‚Á‚µ‚ã‚ñ«
-;jpn:@‚¿‚¢‚³‚È@‚Þ‚­‚¢‚Ê‚Ì«
-;jpn:@‚·‚ª‚½‚ª‚Ý‚¦‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½ƒï½ï½•ï½‡ï½ˆï½”ã€€ï½ã€€ï½‡ï½Œï½‰ï½ï½ï½“ï½…ã€€ï½ï½†ã€€ï½ã€€ï½“ï½ï½ï½Œï½Œï¼Œã€€ï½ƒï½•ï½”ï½…ã€€ï½ï½•ï½ï½ï½™ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚ã«ã€€ã„ã£ã—ã‚…ã‚“â†“
+;jpn:ã€€ã¡ã„ã•ãªã€€ã‚€ãã„ã¬ã®â†“
+;jpn:ã€€ã™ãŒãŸãŒã¿ãˆãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚”‚ˆ‚…@‚f‚‰‚‚Ž‚”@‚r‚”‚…‚D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:ŸƒWƒƒƒCƒAƒ“ƒgƒXƒeƒbƒv‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï½”ï½ˆï½…ã€€ï¼§ï½‰ï½ï½Žï½”ã€€ï¼³ï½”ï½…ï½ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ã‚¸ãƒ£ã‚¤ã‚¢ãƒ³ãƒˆã‚¹ãƒ†ãƒƒãƒ—ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_GIAN)
 @SETF(FLG_ONET_KANBANCOP_APPEAR)
 @SETF(FLG_POLICE_STRONG_B_APPEAR)
 @SETF(FLG_POLICE_STRONG_DISAPPEAR)
-@SETF(FLG_ONET_POLA_TELEPATHY);ƒ|[ƒ‰‚ÌƒeƒŒƒpƒV[ƒZƒbƒg
+@SETF(FLG_ONET_POLA_TELEPATHY);ãƒãƒ¼ãƒ©ã®ãƒ†ãƒ¬ãƒ‘ã‚·ãƒ¼ã‚»ãƒƒãƒˆ
 @CLOSE()
 ;@CHKFGOTO(FLG_PHOTO_GIANTSTEP,MSG_END)
 ;@SET_HIT_RECT(2,HRECT_PHOTO_3_GIAN,MSG_GLOBAL_PHOTO_3)
 _POWR_GIAN_2;
-x
+ã€
 
 MSG_POWR_LLPT;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy2)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_LLPT_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚k‚‰‚Œ‚‰‚‚‚”@‚“‚”‚…‚
-;jpn:ŸƒŠƒŠƒpƒbƒgƒXƒeƒbƒv
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼¬ï½‰ï½Œï½‰ï½ï½ï½”ã€€ï½“ï½”ï½…ï½
+;jpn:â—†ãƒªãƒªãƒ‘ãƒƒãƒˆã‚¹ãƒ†ãƒƒãƒ—
 @GOSUB(_POWR_MINAGIRU)
 _POWR_LLPT_10;
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 @GOSUB(_POWR_ALLHEAL_POWR)
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_LLPT,_POWR_LLPT_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚‚‚’‚‰‚…‚†‚Œ‚™@‚ˆ‚‚„@‚@‚–‚‰‚“‚‰‚‚Ž@‚‚†@‚@‚‚‚‚‚‚™@‚‰‚Ž@‚@‚’‚…‚„@‚ƒ‚‚D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Í«
-;jpn:@‚ ‚©‚¢‚Ú‚¤‚µ‚ð@‚©‚Ô‚Á‚½«
-;jpn:@‚ ‚©‚¿‚á‚ñ‚Ì@‚Ü‚Ú‚ë‚µ‚ð‚Ý‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½‚ï½’ï½‰ï½…ï½†ï½Œï½™ã€€ï½ˆï½ï½„ã€€ï½ã€€ï½–ï½‰ï½“ï½‰ï½ï½Žã€€ï½ï½†ã€€ï½ã€€ï½‚ï½ï½‚ï½™ã€€ï½‰ï½Žã€€ï½ã€€ï½’ï½…ï½„ã€€ï½ƒï½ï½ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã¯â†“
+;jpn:ã€€ã‚ã‹ã„ã¼ã†ã—ã‚’ã€€ã‹ã¶ã£ãŸâ†“
+;jpn:ã€€ã‚ã‹ã¡ã‚ƒã‚“ã®ã€€ã¾ã¼ã‚ã—ã‚’ã¿ãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚”‚ˆ‚…@‚k‚‰‚Œ‚Œ‚‰‚‚•‚”@‚r‚”‚…‚‚“D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:ŸƒŠƒŠƒpƒbƒgƒXƒeƒbƒv‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï½”ï½ˆï½…ã€€ï¼¬ï½‰ï½Œï½Œï½‰ï½ï½•ï½”ã€€ï¼³ï½”ï½…ï½ï½“ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ãƒªãƒªãƒ‘ãƒƒãƒˆã‚¹ãƒ†ãƒƒãƒ—ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_LLPT)
 @CLOSE()
 _POWR_LLPT_2;
 @GOSUB(MSG_SUB_ALLHEAL_POWR)
-;‘S•”Šl“¾‚µ‚½‚çƒ}ƒWƒJƒ“ƒg‚Öƒ[ƒv‚ÌƒCƒxƒ“ƒg‚Í‚±‚±‚©‚ç’Ç‰Á‚Ì—\’è
+;å…¨éƒ¨ç²å¾—ã—ãŸã‚‰ãƒžã‚¸ã‚«ãƒ³ãƒˆã¸ãƒ¯ãƒ¼ãƒ—ã®ã‚¤ãƒ™ãƒ³ãƒˆã¯ã“ã“ã‹ã‚‰è¿½åŠ ã®äºˆå®š
 @GOSUB(MSG_CHK_ALLSOUND)
 @CHKFGOTO(FLG_POWR_ALL,_POWR_LLPT_2B)
 ;@CHKFGOTO(FLG_PHOTO_LILIPUTSTEP,MSG_END)
 ;@SET_HIT_RECT(2,HRECT_PHOTO_6_LLPT,MSG_GLOBAL_PHOTO_6)
-x
+ã€
 _POWR_LLPT_2B;
 @SETF(FLG_MGKT_BACK_LLPT)
 @!
 
 
 MSG_POWR_RAIN;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy3)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_RAIN_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚q‚‚‰‚Ž‚™@‚ƒ‚‰‚’‚ƒ‚Œ‚…
-;jpn:ŸƒŒƒCƒj[ƒT[ƒNƒ‹
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼²ï½ï½‰ï½Žï½™ã€€ï½ƒï½‰ï½’ï½ƒï½Œï½…
+;jpn:â—†ãƒ¬ã‚¤ãƒ‹ãƒ¼ã‚µãƒ¼ã‚¯ãƒ«
 @GOSUB(_POWR_MINAGIRU)
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 _POWR_RAIN_10;
 @GOSUB(_POWR_ALLHEAL_POWR)
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_RAIN,_POWR_RAIN_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚ƒ‚‚•‚‡‚ˆ‚”@‚@‚—‚ˆ‚‰‚†‚†@‚‚†@@DSP_STS(STS_PARTY_FAVORITE_FOODS)C@‚‚‚•‚”@‚Š‚•‚“‚”@‚†‚‚’@‚@‚“‚…‚ƒ‚‚Ž‚„D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Í@‚¢‚Á‚µ‚ã‚ñ«
-;jpn:@@DSP_STS(STS_PARTY_FAVORITE_FOODS)‚Ì«
-;jpn:@‚É‚¨‚¢‚ð@‚©‚ñ‚¶‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½ƒï½ï½•ï½‡ï½ˆï½”ã€€ï½ã€€ï½—ï½ˆï½‰ï½†ï½†ã€€ï½ï½†ã€€@DSP_STS(STS_PARTY_FAVORITE_FOODS)ï¼Œã€€ï½‚ï½•ï½”ã€€ï½Šï½•ï½“ï½”ã€€ï½†ï½ï½’ã€€ï½ã€€ï½“ï½…ï½ƒï½ï½Žï½„ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã¯ã€€ã„ã£ã—ã‚…ã‚“â†“
+;jpn:ã€€@DSP_STS(STS_PARTY_FAVORITE_FOODS)ã®â†“
+;jpn:ã€€ã«ãŠã„ã‚’ã€€ã‹ã‚“ã˜ãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚”‚ˆ‚…@‚q‚‚‰‚Ž‚™@‚b‚‰‚’‚ƒ‚Œ‚…D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:ŸƒŒƒCƒj[ƒT[ƒNƒ‹‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï½”ï½ˆï½…ã€€ï¼²ï½ï½‰ï½Žï½™ã€€ï¼£ï½‰ï½’ï½ƒï½Œï½…ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ãƒ¬ã‚¤ãƒ‹ãƒ¼ã‚µãƒ¼ã‚¯ãƒ«ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_RAIN)
 @CLOSE()
 ;@CHKFGOTO(FLG_PHOTO_RAINYCIRCLE,_POWR_RAIN_2)
-;@GOSUB(MSG_GLOBAL_PHOTO_22);ŽÊ^ŽB‰e
-x
+;@GOSUB(MSG_GLOBAL_PHOTO_22);å†™çœŸæ’®å½±
+ã€
 _POWR_RAIN_2;
 @!
 
 MSG_POWR_MLKY;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy4)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_MLKY_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚l‚‰‚Œ‚‹‚…‚™@‚—‚…‚Œ‚Œ
-;jpn:Ÿƒ~ƒ‹ƒL[ƒEƒFƒ‹
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼­ï½‰ï½Œï½‹ï½…ï½™ã€€ï½—ï½…ï½Œï½Œ
+;jpn:â—†ãƒŸãƒ«ã‚­ãƒ¼ã‚¦ã‚§ãƒ«
 @GOSUB(_POWR_MINAGIRU)
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 _POWR_MLKY_10;
 @GOSUB(_POWR_ALLHEAL_POWR)
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_MLKY,_POWR_MLKY_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚”‚ˆ‚‚•‚‡‚ˆ‚”@‚ˆ‚…@‚ˆ‚…‚‚’‚„@‚ˆ‚‰‚“@‚‚‚”‚ˆ‚…‚’@‚†‚’‚‚@‚†‚‚’@‚‚—‚‚™DDD‚“‚ˆ‚…@‚“‚‚‰‚„@KEY()«
-Ÿh‚a‚…@‚@‚”‚ˆ‚‚•‚‡‚ˆ‚”‚†‚•‚ŒC@‚“‚”‚’‚‚Ž‚‡@‚‚‚‚™DDDh
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Í@‚Æ‚¨‚­‚É«
-;jpn:@ƒ}ƒ}‚Ì‚±‚¦‚ª@‚µ‚½‚æ‚¤‚É«
-;jpn:@‚¨‚à‚Á‚½B@KEY()«
-;jpn:Ÿ‚¨‚à‚¢‚â‚è‚Ì‚ ‚é«
-;jpn:@‚Â‚æ‚¢‚±‚Édd‚Æ@‚«‚±‚¦‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½”ï½ˆï½ï½•ï½‡ï½ˆï½”ã€€ï½ˆï½…ã€€ï½ˆï½…ï½ï½’ï½„ã€€ï½ˆï½‰ï½“ã€€ï½ï½ï½”ï½ˆï½…ï½’ã€€ï½†ï½’ï½ï½ã€€ï½†ï½ï½’ã€€ï½ï½—ï½ï½™ï¼Žï¼Žï¼Žï½“ï½ˆï½…ã€€ï½“ï½ï½‰ï½„@KEY()â†“
+â—†â€ï¼¢ï½…ã€€ï½ã€€ï½”ï½ˆï½ï½•ï½‡ï½ˆï½”ï½†ï½•ï½Œï¼Œã€€ï½“ï½”ï½’ï½ï½Žï½‡ã€€ï½‚ï½ï½™ï¼Žï¼Žï¼Žâ€
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã¯ã€€ã¨ãŠãã«â†“
+;jpn:ã€€ãƒžãƒžã®ã“ãˆãŒã€€ã—ãŸã‚ˆã†ã«â†“
+;jpn:ã€€ãŠã‚‚ã£ãŸã€‚@KEY()â†“
+;jpn:â—†ãŠã‚‚ã„ã‚„ã‚Šã®ã‚ã‚‹â†“
+;jpn:ã€€ã¤ã‚ˆã„ã“ã«â€¥â€¥ã¨ã€€ãã“ãˆãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚”‚ˆ‚…@‚l‚‰‚Œ‚‹‚™@‚v‚…‚Œ‚ŒD
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:Ÿƒ~ƒ‹ƒL[ƒEƒFƒ‹‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï½”ï½ˆï½…ã€€ï¼­ï½‰ï½Œï½‹ï½™ã€€ï¼·ï½…ï½Œï½Œï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ãƒŸãƒ«ã‚­ãƒ¼ã‚¦ã‚§ãƒ«ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_MLKY)
 @CLOSE()
 ;@CHKFGOTO(FLG_PHOTO_MILKYWELL,_POWR_MLKY_2)
-;@GOSUB(MSG_GLOBAL_PHOTO_13);ŽÊ^ŽB‰e
+;@GOSUB(MSG_GLOBAL_PHOTO_13);å†™çœŸæ’®å½±
 _POWR_MLKY_2;
-;‘S•”Šl“¾‚µ‚½‚çƒ}ƒWƒJƒ“ƒg‚Öƒ[ƒv‚ÌƒCƒxƒ“ƒg‚Í‚±‚±‚©‚ç’Ç‰Á‚Ì—\’è
+;å…¨éƒ¨ç²å¾—ã—ãŸã‚‰ãƒžã‚¸ã‚«ãƒ³ãƒˆã¸ãƒ¯ãƒ¼ãƒ—ã®ã‚¤ãƒ™ãƒ³ãƒˆã¯ã“ã“ã‹ã‚‰è¿½åŠ ã®äºˆå®š
 @GOSUB(MSG_CHK_ALLSOUND)
 @CHKFGOTO(FLG_POWR_ALL,_POWR_MLKY_2B)
-x
+ã€
 _POWR_MLKY_2B;
 @SETF(FLG_MGKT_BACK_MLKY)
 @!
 
 MSG_POWR_MGNT;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy5)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_MGNT_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚l‚‚‡‚Ž‚…‚”@‚ˆ‚‰‚Œ‚Œ
-;jpn:Ÿƒ}ƒOƒlƒbƒgƒqƒ‹
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼­ï½ï½‡ï½Žï½…ï½”ã€€ï½ˆï½‰ï½Œï½Œ
+;jpn:â—†ãƒžã‚°ãƒãƒƒãƒˆãƒ’ãƒ«
 @GOSUB(_POWR_MINAGIRU)
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 _POWR_MGNT_10;
 @GOSUB(_POWR_ALLHEAL_POWR)
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_MGNT,_POWR_MGNT_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚“‚‚—@‚@‚‚‚‚‚‚™f‚“@‚‚‚‚”‚”‚Œ‚…C@‚‚‚•‚”@‚Š‚•‚“‚”@‚†‚‚’@‚‚Ž@‚‰‚Ž‚“‚”‚‚Ž‚”D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚ß‚É@‚¢‚Á‚µ‚ã‚ñ«
-;jpn:@‚Ù‚É‚ã‚¤‚Ñ‚ñ‚ª@‚Ý‚¦‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½“ï½ï½—ã€€ï½ã€€ï½‚ï½ï½‚ï½™â€™ï½“ã€€ï½‚ï½ï½”ï½”ï½Œï½…ï¼Œã€€ï½‚ï½•ï½”ã€€ï½Šï½•ï½“ï½”ã€€ï½†ï½ï½’ã€€ï½ï½Žã€€ï½‰ï½Žï½“ï½”ï½ï½Žï½”ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚ã«ã€€ã„ã£ã—ã‚…ã‚“â†“
+;jpn:ã€€ã»ã«ã‚…ã†ã³ã‚“ãŒã€€ã¿ãˆãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚l‚‚‡‚Ž‚…‚”@‚g‚‰‚Œ‚ŒD
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:Ÿƒ}ƒOƒlƒbƒgƒqƒ‹‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï¼­ï½ï½‡ï½Žï½…ï½”ã€€ï¼¨ï½‰ï½Œï½Œï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ãƒžã‚°ãƒãƒƒãƒˆãƒ’ãƒ«ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_MGNT)
-@SETF(FLG_PHOTO_DINO_MUSEUM);ŽB‚è ƒtƒ‰ƒO
+@SETF(FLG_PHOTO_DINO_MUSEUM);æ’®ã‚Šé ƒãƒ•ãƒ©ã‚°
 @CLOSE()
 _POWR_MGNT_2;
-x
+ã€
 
 MSG_POWR_PINK;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy6)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_PINK_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚o‚‰‚Ž‚‹@‚ƒ‚Œ‚‚•‚„
-;jpn:Ÿƒsƒ“ƒNƒNƒ‰ƒEƒh
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼°ï½‰ï½Žï½‹ã€€ï½ƒï½Œï½ï½•ï½„
+;jpn:â—†ãƒ”ãƒ³ã‚¯ã‚¯ãƒ©ã‚¦ãƒ‰
 @GOSUB(_POWR_MINAGIRU)
 _POWR_PINK_10;
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 @GOSUB(_POWR_ALLHEAL_POWR)
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
 @CHKFGOTO(FLG_POWR_PINK,_POWR_PINK_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚ˆ‚‚„@‚@‚“‚ˆ‚‚’‚”@‚–‚‰‚“‚‰‚‚Ž@‚‚†@‚“‚…‚…‚‰‚Ž‚‡@‚ˆ‚‰‚“@‚‚‚”‚ˆ‚…‚’@‚—‚ˆ‚…‚Ž@‚“‚ˆ‚…@‚—‚‚“@‚™‚‚•‚Ž‚‡D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Í@‚í‚©‚¢‚Æ‚«‚Ì«
-;jpn:@@DSP_STS(STS_PC_NAME_NES)‚Ìƒ}ƒ}‚ð«
-;jpn:@‚Ý‚½‚æ‚¤‚È@‚«‚ª‚µ‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½ˆï½ï½„ã€€ï½ã€€ï½“ï½ˆï½ï½’ï½”ã€€ï½–ï½‰ï½“ï½‰ï½ï½Žã€€ï½ï½†ã€€ï½“ï½…ï½…ï½‰ï½Žï½‡ã€€ï½ˆï½‰ï½“ã€€ï½ï½ï½”ï½ˆï½…ï½’ã€€ï½—ï½ˆï½…ï½Žã€€ï½“ï½ˆï½…ã€€ï½—ï½ï½“ã€€ï½™ï½ï½•ï½Žï½‡ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã¯ã€€ã‚ã‹ã„ã¨ãã®â†“
+;jpn:ã€€@DSP_STS(STS_PC_NAME_NES)ã®ãƒžãƒžã‚’â†“
+;jpn:ã€€ã¿ãŸã‚ˆã†ãªã€€ããŒã—ãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚”‚ˆ‚…@‚o‚‰‚Ž‚‹@‚b‚Œ‚‚•‚„D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:Ÿƒsƒ“ƒNƒNƒ‰ƒEƒh‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï½”ï½ˆï½…ã€€ï¼°ï½‰ï½Žï½‹ã€€ï¼£ï½Œï½ï½•ï½„ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ãƒ”ãƒ³ã‚¯ã‚¯ãƒ©ã‚¦ãƒ‰ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_PINK)
 @CLOSE()
 ;@CHKFGOTO(FLG_PHOTO_PINKCLOUD,_POWR_PINK_2)
-;@GOSUB(MSG_GLOBAL_PHOTO_21);ŽÊ^ŽB‰e
+;@GOSUB(MSG_GLOBAL_PHOTO_21);å†™çœŸæ’®å½±
 _POWR_PINK_2;
 
-;‘S•”Šl“¾‚µ‚½‚çƒ}ƒWƒJƒ“ƒg‚Öƒ[ƒv‚ÌƒCƒxƒ“ƒg‚Í‚±‚±‚©‚ç’Ç‰Á‚Ì—\’è
+;å…¨éƒ¨ç²å¾—ã—ãŸã‚‰ãƒžã‚¸ã‚«ãƒ³ãƒˆã¸ãƒ¯ãƒ¼ãƒ—ã®ã‚¤ãƒ™ãƒ³ãƒˆã¯ã“ã“ã‹ã‚‰è¿½åŠ ã®äºˆå®š
 @GOSUB(MSG_CHK_ALLSOUND)
 @CHKFGOTO(FLG_POWR_ALL,_POWR_PINK_2B)
-x
+ã€
 _POWR_PINK_2B;
 @SETF(FLG_MGKT_BACK_MGNT)
 @!
 
 MSG_POWR_LUMI;
-;ƒ‹ƒ~ƒlƒz[ƒ‹‚Å‚ÍˆÈ‰º‚àŽÀs
+;ãƒ«ãƒŸãƒãƒ›ãƒ¼ãƒ«ã§ã¯ä»¥ä¸‹ã‚‚å®Ÿè¡Œ
 @CHKFGOTO(FLG_POWR_LUMI,_POWR_LUMI_1)
-@GOSUB(_POWR_ALLHEAL_POWR)	;ŒõƒRƒP‚Ì‘O‚É
-@WI(1)				;”O‚Ì‚½‚ß
-@SET_PALLETSET( 26, 2, 60 )	;ƒpƒŒƒbƒgƒAƒjƒ‚µ‚Ä‚¢‚é‚Ì‚ÅF‚ðŒÅ’è‚·‚é
+@GOSUB(_POWR_ALLHEAL_POWR)	;å…‰ã‚³ã‚±ã®å‰ã«
+@WI(1)				;å¿µã®ãŸã‚
+@SET_PALLETSET( 26, 2, 60 )	;ãƒ‘ãƒ¬ãƒƒãƒˆã‚¢ãƒ‹ãƒ¡ã—ã¦ã„ã‚‹ã®ã§è‰²ã‚’å›ºå®šã™ã‚‹
 @SET_PARTY_DIR(DIR_M_UP)
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_KOKE,OBJFX_SHOW_NONE)@@@@@@@;ŒõƒSƒP
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;I—¹‘Ò‚¿
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_KOKE,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€ã€€ã€€ã€€;å…‰ã‚´ã‚±
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;çµ‚äº†å¾…ã¡
 _POWR_LUMI_1;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy7)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_LUMI_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚k‚•‚Ž‚‰‚‚…@‚g‚‚Œ‚Œ
-;jpn:Ÿƒ‹ƒ~ƒlƒz[ƒ‹
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼¬ï½•ï½Žï½‰ï½ï½…ã€€ï¼¨ï½ï½Œï½Œ
+;jpn:â—†ãƒ«ãƒŸãƒãƒ›ãƒ¼ãƒ«
 @GOSUB(_POWR_MINAGIRU)
 _POWR_LUMI_10;
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
-@GOSUB(_POWR_ALLHEAL_POWR);ŒõƒRƒP‚Ì‘O‚É‚à’Ç‰Á
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
+@GOSUB(_POWR_ALLHEAL_POWR);å…‰ã‚³ã‚±ã®å‰ã«ã‚‚è¿½åŠ 
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 @CHKFGOTO(FLG_POWR_LUMI,_POWR_LUMI_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚“‚‚—@‚@‚–‚‰‚“‚‰‚‚Ž@‚‚†@‚ˆ‚‰‚“@‚†‚‚”‚ˆ‚…‚’@‚ˆ‚‚Œ‚„‚‰‚Ž‚‡@‚ˆ‚‰‚D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Í@‚¶‚Ô‚ñ‚ð‚¾‚¢‚Ä‚¢‚é«
-;jpn:@ƒpƒp‚Ì@‚Ü‚Ú‚ë‚µ‚ð@‚Ý‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½“ï½ï½—ã€€ï½ã€€ï½–ï½‰ï½“ï½‰ï½ï½Žã€€ï½ï½†ã€€ï½ˆï½‰ï½“ã€€ï½†ï½ï½”ï½ˆï½…ï½’ã€€ï½ˆï½ï½Œï½„ï½‰ï½Žï½‡ã€€ï½ˆï½‰ï½ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã¯ã€€ã˜ã¶ã‚“ã‚’ã ã„ã¦ã„ã‚‹â†“
+;jpn:ã€€ãƒ‘ãƒ‘ã®ã€€ã¾ã¼ã‚ã—ã‚’ã€€ã¿ãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚k‚•‚‚‰‚Ž‚…@‚g‚‚Œ‚ŒD
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:Ÿƒ‹ƒ~ƒlƒz[ƒ‹‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï¼¬ï½•ï½ï½‰ï½Žï½…ã€€ï¼¨ï½ï½Œï½Œï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ãƒ«ãƒŸãƒãƒ›ãƒ¼ãƒ«ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_LUMI)
 @CLOSE()
 ;@CHKFGOTO(FLG_PHOTO_LUMINEHALL,_POWR_LUMI_2)
-;@GOSUB(MSG_GLOBAL_PHOTO_28);ŽÊ^ŽB‰e
+;@GOSUB(MSG_GLOBAL_PHOTO_28);å†™çœŸæ’®å½±
 _POWR_LUMI_2;
-x
+ã€
 
 MSG_POWR_FIRE;
-;ŠeXŒÅ—L‚a‚f‚lÝ’è
-@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)@@@@;–¾ˆÃƒAƒjƒ
-@RESF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒO‰Šú‰»
+;å„ã€…å›ºæœ‰ï¼¢ï¼§ï¼­è¨­å®š
+@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_POWSPOT,OBJFX_SHOW_NONE)ã€€ã€€ã€€ã€€;æ˜Žæš—ã‚¢ãƒ‹ãƒ¡
+@RESF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°åˆæœŸåŒ–
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @BGMSTART(0,BGM_meldy8)
 @GOSUB(_SUB_WAIT_14SECOND)
-@SETF(FLG_TEMP_1)@@@@@@@@@@@@@@@;‹ÈI—¹ƒtƒ‰ƒOÝ’è
-@WAITSYS()@@@@@@@@@@@@@@@@@@@@@@;‰æ–Ê‚Ì³í‰»‘Ò‚¿
+@SETF(FLG_TEMP_1)ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;æ›²çµ‚äº†ãƒ•ãƒ©ã‚°è¨­å®š
+@WAITSYS()ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€;ç”»é¢ã®æ­£å¸¸åŒ–å¾…ã¡
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @FALSE_GOTO(_POWR_FIRE_10)
 @OPEN(1)
-Ÿ‚s‚ˆ‚…@‚‚‚—‚…‚’@‚‚†@‚e‚‰‚’‚…@‚r‚‚’‚‰‚Ž‚‡
-;jpn:Ÿƒtƒ@ƒCƒAƒXƒvƒŠƒ“ƒO
+â—†ï¼´ï½ˆï½…ã€€ï½ï½ï½—ï½…ï½’ã€€ï½ï½†ã€€ï¼¦ï½‰ï½’ï½…ã€€ï¼³ï½ï½’ï½‰ï½Žï½‡
+;jpn:â—†ãƒ•ã‚¡ã‚¤ã‚¢ã‚¹ãƒ—ãƒªãƒ³ã‚°
 @GOSUB(_POWR_MINAGIRU)
 _POWR_FIRE_10;
-@SETF(FLG_TEMP_3);Šl“¾‚Ì‹ÈÝ’è—p
+@SETF(FLG_TEMP_3);ç²å¾—ã®æ›²è¨­å®šç”¨
 @GOSUB(_POWR_ALLHEAL_POWR)
 @MUSISTART()
 ;@BGMSTART(0,BGM_power2)
-;ƒTƒEƒ“ƒhŠl“¾‚µ‚Ü‚µ‚½B
+;ã‚µã‚¦ãƒ³ãƒ‰ç²å¾—ã—ã¾ã—ãŸã€‚
 @CHKFGOTO(FLG_POWR_FIRE,_POWR_FIRE_2)
 @OPEN(1)
-Ÿ@DSP_NAME(PC_NESS)@‚ˆ‚‚„@‚”‚ˆ‚…@‚†‚…‚…‚Œ‚‰‚Ž‚‡@‚”‚ˆ‚‚”@‚ˆ‚…@‚—‚‚“@‚‚‚…‚‰‚Ž‚‡@‚—‚‚”‚ƒ‚ˆ‚…‚„@‚‚‚™@‚ˆ‚‰‚‚“‚…‚Œ‚†@‚‚“@‚@‚‚‚‚‚‚™D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Í«
-;jpn:@‚¨‚³‚È‚¢‚±‚ë‚Ì@‚¶‚Ô‚ñ‚É@KEY()«
-;jpn:Ÿ‚Ý‚Â‚ß‚ç‚ê‚Ä‚¢‚é‚æ‚¤‚É«
-;jpn:@‚©‚ñ‚¶‚½B
+â—†@DSP_NAME(PC_NESS)ã€€ï½ˆï½ï½„ã€€ï½”ï½ˆï½…ã€€ï½†ï½…ï½…ï½Œï½‰ï½Žï½‡ã€€ï½”ï½ˆï½ï½”ã€€ï½ˆï½…ã€€ï½—ï½ï½“ã€€ï½‚ï½…ï½‰ï½Žï½‡ã€€ï½—ï½ï½”ï½ƒï½ˆï½…ï½„ã€€ï½‚ï½™ã€€ï½ˆï½‰ï½ï½“ï½…ï½Œï½†ã€€ï½ï½“ã€€ï½ã€€ï½‚ï½ï½‚ï½™ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã¯â†“
+;jpn:ã€€ãŠã•ãªã„ã“ã‚ã®ã€€ã˜ã¶ã‚“ã«@KEY()â†“
+;jpn:â—†ã¿ã¤ã‚ã‚‰ã‚Œã¦ã„ã‚‹ã‚ˆã†ã«â†“
+;jpn:ã€€ã‹ã‚“ã˜ãŸã€‚
 @KEY()
-@WI(60)«
-Ÿ@DSP_NAME(PC_NESS)f‚“@‚r‚‚•‚Ž‚„@‚r‚”‚‚Ž‚…@‚’‚…‚ƒ‚‚’‚„‚…‚„@‚”‚ˆ‚…@‚‚…‚Œ‚‚„‚™@‚‚†@‚”‚ˆ‚…@‚e‚‰‚’‚…@‚r‚‚’‚‰‚Ž‚‡D
-;jpn:Ÿ@DSP_STS(STS_PC_NAME_NES)‚Ì‚à‚Á‚Ä‚¢‚é«
-;jpn:@u‚¨‚Æ‚Ì‚¢‚µv‚ª@KEY()«
-;jpn:Ÿƒtƒ@ƒCƒAƒXƒvƒŠƒ“ƒO‚Ì‚¨‚Æ‚ð«
-;jpn:@‚«‚¨‚­‚µ‚½B
+@WI(60)â†“
+â—†@DSP_NAME(PC_NESS)â€™ï½“ã€€ï¼³ï½ï½•ï½Žï½„ã€€ï¼³ï½”ï½ï½Žï½…ã€€ï½’ï½…ï½ƒï½ï½’ï½„ï½…ï½„ã€€ï½”ï½ˆï½…ã€€ï½ï½…ï½Œï½ï½„ï½™ã€€ï½ï½†ã€€ï½”ï½ˆï½…ã€€ï¼¦ï½‰ï½’ï½…ã€€ï¼³ï½ï½’ï½‰ï½Žï½‡ï¼Ž
+;jpn:â—†@DSP_STS(STS_PC_NAME_NES)ã®ã‚‚ã£ã¦ã„ã‚‹â†“
+;jpn:ã€€ã€ŒãŠã¨ã®ã„ã—ã€ãŒ@KEY()â†“
+;jpn:â—†ãƒ•ã‚¡ã‚¤ã‚¢ã‚¹ãƒ—ãƒªãƒ³ã‚°ã®ãŠã¨ã‚’â†“
+;jpn:ã€€ããŠãã—ãŸã€‚
 @KEYNP()
 @SETF(FLG_POWR_FIRE)
 @CLOSE()
 ;@CHKFGOTO(FLG_PHOTO_FIRESPRINGS,_POWR_FIRE_2)
-;@GOSUB(MSG_GLOBAL_PHOTO_29);ŽÊ^ŽB‰e
+;@GOSUB(MSG_GLOBAL_PHOTO_29);å†™çœŸæ’®å½±
 _POWR_FIRE_2;
-;‘S•”Šl“¾‚µ‚½‚çƒ}ƒWƒJƒ“ƒg‚Öƒ[ƒv‚ÌƒCƒxƒ“ƒg‚Í‚±‚±‚©‚ç’Ç‰Á‚Ì—\’è
+;å…¨éƒ¨ç²å¾—ã—ãŸã‚‰ãƒžã‚¸ã‚«ãƒ³ãƒˆã¸ãƒ¯ãƒ¼ãƒ—ã®ã‚¤ãƒ™ãƒ³ãƒˆã¯ã“ã“ã‹ã‚‰è¿½åŠ ã®äºˆå®š
 @GOSUB(MSG_CHK_ALLSOUND)
 @CHKFGOTO(FLG_POWR_ALL,_POWR_FIRE_2B)
 @!
@@ -2011,27 +2011,27 @@ _SUB_WAIT_14SECOND;
 @WI(120)
 @!
 
-MSG_SYSMSG_POWR_GIAN;’Ž–³Œø‘g
+MSG_SYSMSG_POWR_GIAN;è™«ç„¡åŠ¹çµ„
 MSG_SYSMSG_POWR_RAIN;
 MSG_SYSMSG_POWR_MGNT;
 MSG_SYSMSG_POWR_FIRE;
 ;
-MSG_SYSMSG_POWR_LLPT;’Ž—LŒ÷‘g
+MSG_SYSMSG_POWR_LLPT;è™«æœ‰åŠŸçµ„
 MSG_SYSMSG_POWR_MLKY;
 MSG_SYSMSG_POWR_PINK;
 MSG_SYSMSG_POWR_LUMI;
 @SETF(FLG_TEMP_2)
 @CLRF(FLG_ANIM_PORT_2)
-x
+ã€
 
-_POWR_MINAGIRU;¼i
-@‚†‚Œ‚‚—‚…‚„@‚‰‚Ž‚”‚@@DSP_NAME(PC_NESS)D@KEY()«
-Ÿ@DSP_NAME(PC_NESS)@‚—‚‚“@‚’‚…‚–‚‰‚–‚…‚„D
-;f‚“@‚‚‚—‚…‚’@‚‰‚“@‚†‚‰‚Œ‚Œ‚…‚„@‚‰‚Ž‚“‚‰‚„‚…@‚‚†@@DSP_NAME(PC_NESS)D@KEY()«
-;Ÿ@DSP_NAME(PC_NESS)@‚‰‚“@‚†‚•‚Œ‚Œ‚™@‚’‚…‚ƒ‚‚–‚…‚’‚…‚„D
-;jpn:‚Ìƒpƒ[‚ª«
-;jpn:@@DSP_NAME(PC_NESS)‚É@‚Ý‚È‚¬‚Á‚½B@KEY()«
-;jpn:Ÿ@DSP_NAME(PC_NESS)‚Í@ƒJƒ€ƒoƒbƒN‚µ‚½B
+_POWR_MINAGIRU;æ¾ï¼ˆ
+ã€€ï½†ï½Œï½ï½—ï½…ï½„ã€€ï½‰ï½Žï½”ï½ã€€@DSP_NAME(PC_NESS)ï¼Ž@KEY()â†“
+â—†@DSP_NAME(PC_NESS)ã€€ï½—ï½ï½“ã€€ï½’ï½…ï½–ï½‰ï½–ï½…ï½„ï¼Ž
+;â€™ï½“ã€€ï½ï½ï½—ï½…ï½’ã€€ï½‰ï½“ã€€ï½†ï½‰ï½Œï½Œï½…ï½„ã€€ï½‰ï½Žï½“ï½‰ï½„ï½…ã€€ï½ï½†ã€€@DSP_NAME(PC_NESS)ï¼Ž@KEY()â†“
+;â—†@DSP_NAME(PC_NESS)ã€€ï½‰ï½“ã€€ï½†ï½•ï½Œï½Œï½™ã€€ï½’ï½…ï½ƒï½ï½–ï½…ï½’ï½…ï½„ï¼Ž
+;jpn:ã®ãƒ‘ãƒ¯ãƒ¼ãŒâ†“
+;jpn:ã€€@DSP_NAME(PC_NESS)ã«ã€€ã¿ãªãŽã£ãŸã€‚@KEY()â†“
+;jpn:â—†@DSP_NAME(PC_NESS)ã¯ã€€ã‚«ãƒ ãƒãƒƒã‚¯ã—ãŸã€‚
 @KEY()
 @CLOSEALL()
 @!
