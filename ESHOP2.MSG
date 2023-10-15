@@ -135,10 +135,10 @@ MSG_SUB_GRFD_KINOKOGIRL;
 ;jpn: わたし キノコがりにきてるの。@KEY()↓
 @GOSUB(_SUB_KINOKO_CHK)
 @FALSE_GOTO(_KINOKOGIRL_KENKO)
-◆Hey!  Would you be willing to sell that mushroom on your head for ＄５０?@KEY()↓
+◆Hey!  Would you be willing to sell that mushroom on your head for $50?@KEY()↓
 
 ;jpn:◆あなたの あたまにのってるキノコ↓
-;jpn: ５０ドルで ゆずって?@WI(30)↓
+;jpn: 50ドルで ゆずって?@WI(30)↓
 @GOSUB(MSG_SUB_YESNO_MONEY_PANEL)
 @SELGOTO(_KINOKOGIRL_YES,_KINOKOGIRL_NO)
 _KINOKOGIRL_NO;
@@ -269,9 +269,9 @@ MSG_GUMI_HEAL;
 ;地底大陸の岩 
 
 MSG_DKFD_HEALSTONE;
-◆(This is a ＄healstone.)
+◆(This is a $healstone.)
 
-;jpn:◆(＄かいふくいわです。)
+;jpn:◆($かいふくいわです。)
 @KEYNP()
 @GOSUB(MSG_SPACE_KAIHUKU)
 @!
@@ -343,7 +343,7 @@ MSG_HOTEL_HAPPY;
 ◆We’re all like one big, happy family here in Happy Happy Village!@KEY()↓
 ◆Basically, our policy is to only allow family members to stay here in the village.@KEY()↓
 ◆However, if you are interested in learning about Happy Happyism,@KEY()↓
-◆we may make an exception and let you stay for ＄@DSP_NUM(0).↓ 
+◆we may make an exception and let you stay for $@DSP_NUM(0).↓ 
 ;jpn:◆ハッピーハッピーむらは↓
 ;jpn: みんな ひとつの↓
 ;jpn: かぞくみたいなものなんだ。@KEY()↓
@@ -435,7 +435,7 @@ _HOTEL_HAPPY_AFTER_YES;
 ;jpn: シーツはブルー‥‥@WI(30)じゃないよ。↓
 ;jpn: ハハハハ。↓
 @KEYNP()
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_HAPPY_BED)
 @!
@@ -490,7 +490,7 @@ MSG_HOTEL_DSRT;
 @MUL_ACTIVE_PLAYER(70)          ;一人分の宿泊費を記入してください。
 @XCHG()
 ◆We are also running an inn, mister.@KEY()↓
-◆It’s ＄@DSP_NUM(0) a night if you want to stay here.@KEY()↓
+◆It’s $@DSP_NUM(0) a night if you want to stay here.@KEY()↓
 ◆Do you want to stay?↓
  
 ;jpn:◆うちは やどやも↓
@@ -511,7 +511,7 @@ _DSRT_HOTEL_NO;
 @KEYNP()
 @!
 _DSRT_HOTEL_YES;
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 @Q_MONEY(0)
 @TRUE_GOTO(_DSRT_HOTEL_NOMONEY)
 @MONEYOUT(0)
@@ -531,7 +531,7 @@ _DSRT_HOTEL_NOMONEY;
 ;jpn:◆おかね‥‥もってないんですね。
 @KEYNP()
 @!
-_HOTEL_DSRT_MORNING;＠wet wash cloth三浦
+_HOTEL_DSRT_MORNING;@wet wash cloth三浦
 ;◆そとは あついですから
 ; きをつけて。
 ◆When you travel though the desert, you may be hit by sunstroke.@KEY()↓
@@ -601,7 +601,7 @@ MSG_HOTEL_SUMS;
 ◆and I am the assistant manager.@KEY()↓
 ◆I’m sorry @GET_ORDER_PLAYER(1)@GOSUB(MSG_ESUB_SIR_MAAM), but I’m afraid↓
   that we do not have any reservation under your name.@KEY()↓
-◆However, we can offer you a room at ＄@DSP_NUM(0) a night.@KEY()↓
+◆However, we can offer you a room at $@DSP_NUM(0) a night.@KEY()↓
 ◆Would you be interested in a room?↓
 
 ;jpn:◆オテル@WI(5)・ド@WI(5)・サマーズに↓
@@ -680,10 +680,10 @@ MSG_HOTEL_SKRB;
   from
 @MUL_ACTIVE_PLAYER(15)
 @XCHG()
-  ＄@DSP_NUM(0)
+  $@DSP_NUM(0)
 @MUL_ACTIVE_PLAYER(100)         ;一人分の宿泊費を記入してください。
 @XCHG()
- to ＄@DSP_NUM(0)↓
+ to $@DSP_NUM(0)↓
   a night.@KEY()↓
 ◆Right now, though, we only have our super deluxe suite available.@KEY()↓
 ◆Would you like to stay?↓
@@ -754,7 +754,7 @@ MSG_HOTEL_MOON;
 @MUL_ACTIVE_PLAYER(75)          ;一人分の宿泊費を記入してください。
 @XCHG()
 ◆This is the Dark Moon Hotel.@KEY()↓
-◆One sleep period is ＄@DSP_NUM(0).@KEY()↓
+◆One sleep period is $@DSP_NUM(0).@KEY()↓
 ◆Do you want to sleep?↓
 ;jpn:◆ホテル・ダークムーンです。@KEY()↓
 ;jpn:◆ひとねむり@WI(10) @DSP_NUM(0)ドルです。@KEY()↓
@@ -821,7 +821,7 @@ _HOTEL_MAKYO_NO;
 @KEYNP()
 @!
 _HOTEL_MAKYO_YES;
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 ◆You’re sure to have fond memories of the monkey’s inn after your trip...
 
 ;jpn:◆たびの おもいでに‥‥↓
@@ -865,7 +865,7 @@ _HOTEL_GUMI_NO;
 @KEYNP()
 』
 _HOTEL_GUMI_YES;
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 ◆Okay. You stay.
 
 ;jpn:◆じゃ やすめ。
@@ -890,7 +890,7 @@ MSG_DKFD_GUMI_HOTEL;
 ◆Thank you for coming all the way into this primitive country.@KEY()↓
 ◆You must be tired.↓
   To stay,↓
-  it’ll run you ＄@DSP_NUM(0).@KEY()↓
+  it’ll run you $@DSP_NUM(0).@KEY()↓
 ◆You are going to stay,aren’t you?↓
 
 ;jpn:◆こんな いなかまで↓
@@ -920,7 +920,7 @@ _DKFD_HOTEL_YES;
 ;jpn:◆それじゃあ ごゆっくり。
 @KEYNP()
 @CLOSEALL()
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えあり)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えあり)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_YADOYA_DKFD)
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
@@ -937,7 +937,7 @@ _DKFD_HOTEL_NOMONEY;
 ;ホテル用サブルーチン
 ;金額表示と選択
 _SUB_HOTEL_SELECT;
-◆A one night stay will cost you ＄@DSP_NUM(0).@KEY()↓
+◆A one night stay will cost you $@DSP_NUM(0).@KEY()↓
 ◆Would you like to stay?↓
  
 ;jpn:◆ごしゅくはくは↓
@@ -985,7 +985,7 @@ _SUB_HOTEL_NO;
 ;お金がない。
 _SUB_HOTEL_NOMONEY;
 ◆It looks like you don’t have↓
-  ＄@DSP_NUM(0)...
+  $@DSP_NUM(0)...
 
 ;jpn:◆@DSP_NUM(0)ドル↓
 ;jpn: おもちになって↓
@@ -1015,7 +1015,7 @@ _SUB_HOTEL_MORNING;
 _SUB_DOCTOR_1;
 @SET_REG(1)
 @SAVE_REG()
-◆I can examine each one of you for ＄@DSP_NUM(0).↓
+◆I can examine each one of you for $@DSP_NUM(0).↓
 @SAVE_WIN()
 @DSP_PL()
 @OPEN(37)
@@ -1067,14 +1067,14 @@ _DCTR_WHO;
 @FALSE_GOTO(_DCTR_NO)           ;キャンセル?
 _DCTR_OK;
 @SAVE_REG()
-@GET_SPECIAL(0,1)           ;特殊状態＃１のIDを得る。
+@GET_SPECIAL(0,1)           ;特殊状態#1のIDを得る。
 @ONGOTO(_DCTR_NEXTCHK,_DCTR_KIZETSU,_DCTR_DAIYA,_DCTR_SIBIRE,_DCTR_KIMO,_DCTR_POISON,_DCTR_NISSYA,_DCTR_KAZE)
 
 _DCTR_ONE;              ;一人パーティーの処理。
 @GET_ORDER_PLAYER(1)
 @GOTO(_DCTR_OK)
 
-_DCTR_NOMONEY;          ；お金足りない。
+_DCTR_NOMONEY;          ;お金足りない。
 ◆You don’t have enough money.↓
   Go home, and then come again.
 
@@ -1210,7 +1210,7 @@ _NURSE_SEL_CURE;
 ;jpn: はこびこまれました↓
 ;jpn: いしきが もどらないんですが。@KEY()↓
 @XCHG()
-◆Please pay ＄@DSP_NUM(0) for the doctor’s fee.↓
+◆Please pay $@DSP_NUM(0) for the doctor’s fee.↓
 <Yes>
 <No>
 
@@ -1666,7 +1666,7 @@ _HEALER_0_YES;
 @FALSE_GOTO(_HEALER_NO)
 @ONGOSUB(_HEALER_SEL_DIA,_HEALER_SEL_SIBIRE,_HEALER_SEL_OHARAI)
 @SET_REG(1)
-◆I need to charge you ＄@DSP_NUM(0).↓
+◆I need to charge you $@DSP_NUM(0).↓
 
 ;jpn:◆@DSP_NUM(0)ドル いただいて↓
 ;jpn: おこうか。↓
@@ -1848,12 +1848,12 @@ _HEALER_KINOKO_NO;
 ;jpn:◆そうか‥‥↓
 ;jpn: それは ざんねん@KEY()
 @!
-_HEALER_KINOKO_YES;５００→５０ドルに修正
+_HEALER_KINOKO_YES;500→50ドルに修正
 ◆Thanks.↓
-  I’ll pay you ＄５０ for each mushroom.@KEY()↓
+  I’ll pay you $50 for each mushroom.@KEY()↓
 ◆All right, let’s do it!@KEY()
 ;jpn:◆ありがとう。↓
-;jpn: じゃ ひとつ５０ドルで かうよ。↓
+;jpn: じゃ ひとつ50ドルで かうよ。↓
 ;jpn: そらっ。@KEY()
 @GOSUB(_SUB_HEAL_KINOKO)
 @!

@@ -1,6 +1,6 @@
 ;-------------------------------------------------
 
-;@Habitat:スカラビ／ドラッグストア／ドラッグストア
+;@Habitat:スカラビ/ドラッグストア/ドラッグストア
 ;@Person:店員
 ;@Figure:スカラビ男C
 ;@AppearanceKey:0
@@ -12,8 +12,8 @@ MSG_SKRB_DRUG;@MiuraAppended
 @GOSUB(MSG_SHOP_SKRB_DRUG)
 』
 
-；----------------------------------------
-;@Habitat:スカラビ／ホテル／ホテル
+;----------------------------------------
+;@Habitat:スカラビ/ホテル/ホテル
 ;@Person:フロント
 ;@Figure:スカラビ男A
 ;@AppearanceKey:0
@@ -27,7 +27,7 @@ MSG_SKRB_DRUG;@MiuraAppended
 ;@GOSUB(MSG_GLOBAL_HOTEL)
 ;』
 
-;@Habitat:スカラビ／ホテル／ホテル
+;@Habitat:スカラビ/ホテル/ホテル
 ;@Person:キャッシュディスペンサ
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -36,7 +36,7 @@ MSG_SKRB_DRUG;@MiuraAppended
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-;@Habitat:スカラビ／ホテル／ホテル
+;@Habitat:スカラビ/ホテル/ホテル
 ;@Person:武器専門男
 ;@Figure:武器男
 ;@AppearanceKey:0
@@ -48,8 +48,8 @@ MSG_SKRB_WEAPON;@MiuraAppended
 @GOSUB(MSG_SHOP_SKRB_WEAPON)
 』
 
-；----------------------------------------
-;@Habitat:スカラビ／住人の家B／住人の家B
+;----------------------------------------
+;@Habitat:スカラビ/住人の家B/住人の家B
 ;@Person:住人
 ;@Figure:スカラビ女
 ;@AppearanceKey:0
@@ -66,7 +66,7 @@ MSG_SKRB_HOUSE_B;
 ;jpn: おしうりおことわり!@KEYNP()
 』
 
-;@Habitat:スカラビ／住人の家C／住人の家C
+;@Habitat:スカラビ/住人の家C/住人の家C
 ;@Person:住人
 ;@Figure:おじいさん
 ;@AppearanceKey:0
@@ -84,8 +84,8 @@ MSG_SKRB_HOUSE_C;
 ;jpn: わしのほうからは ようはないよ。@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:スカラビ／病院／受付
+;----------------------------------------
+;@Habitat:スカラビ/病院/受付
 ;@Person:受付嬢
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -99,7 +99,7 @@ MSG_SKRB_HOSPITAL_USHER;@MiuraAppended
 ;@GOSUB(MSG_SHOP_SKRB_HOSPITAL)
 』
 
-;@Habitat:スカラビ／病院／病院
+;@Habitat:スカラビ/病院/病院
 ;@Person:医者
 ;@Figure:医者
 ;@AppearanceKey:0
@@ -113,8 +113,8 @@ MSG_SKRB_HOSPITAL_DOCTOR;@MiuraAppended
 @GOSUB(MSG_DOCTOR_SKRB)
 』
 
-；----------------------------------------
-;@Habitat:スカラビ／フィールド／港の付近
+;----------------------------------------
+;@Habitat:スカラビ/フィールド/港の付近
 ;@Person:港の人
 ;@Figure:スカラビ男C
 ;@AppearanceKey:0
@@ -137,7 +137,7 @@ MSG_SKRB_HARBOR;
 ;jpn: どっちにしても たいしたものだ。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／蛇屋付近
+;@Habitat:スカラビ/フィールド/蛇屋付近
 ;@Person:蛇屋の人集りA
 ;@Figure:スカラビ男A
 ;@AppearanceKey:0
@@ -156,7 +156,7 @@ MSG_SKRB_SNAKESHOP_A;
 ;jpn: わかんないや。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／蛇屋付近
+;@Habitat:スカラビ/フィールド/蛇屋付近
 ;@Person:蛇屋の人集りB
 ;@Figure:スカラビ男C
 ;@AppearanceKey:0
@@ -173,7 +173,7 @@ MSG_SKRB_SNAKESHOP_B;
 ;jpn: ちょっと ヘビーかな。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／蛇屋付近
+;@Habitat:スカラビ/フィールド/蛇屋付近
 ;@Person:蛇屋の人集りC
 ;@Figure:スカラビ女
 ;@AppearanceKey:0
@@ -184,14 +184,14 @@ MSG_SKRB_SNAKESHOP_B;
 MSG_SKRB_SNAKESHOP_C;
 ◆Poisonous snakes cost more.@KEY()↓
 ◆Why would a fine young man like you need one?
-;＠ポーラだったら「lady」
+;@ポーラだったら「lady」
 @KEYNP()
 ;jpn:◆どくへびのほうが↓
 ;jpn: ねだんが たかいのねぇ↓
 ;jpn: なんにつかうのかしら。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／蛇屋付近
+;@Habitat:スカラビ/フィールド/蛇屋付近
 ;@Person:へび袋売り
 ;@Figure:スカラビ男B
 ;@AppearanceKey:0
@@ -224,11 +224,11 @@ _SKRB_SNAKESHOP_D_NO;
 _SKRB_SNAKESHOP_D_YES;
 @Q_GOODSFULL(PC_ALL)
 @FALSE_GOTO(_SKRB_SNAKESHOP_D_ITEMFULL)
-◆That is ２９０ dollars, kind @XCHG()@GOSUB(MSG_ESUB_SIR_MAAM).↓
+◆That is 290 dollars, kind @XCHG()@GOSUB(MSG_ESUB_SIR_MAAM).↓
 @WINR_MONEY()
 <Yes>
 <No>
-;jpn:◆２９０ドルだ。↓
+;jpn:◆290ドルだ。↓
 ;jpn:<はい>
 ;jpn:<いいえ>
 @DSP_ITEM(2)
@@ -245,13 +245,13 @@ _SKRB_SNAKESHOP_D_BUY;
 @WINR_MONEY()
 @SE(SE_se78_my_open_rock)
 ◆I’ll give you a discount as the sack has a hole in it.@KEY()↓
-◆(Snake sack dealer marked the price down to ９８ dollars from ２９０ dollars.)
+◆(Snake sack dealer marked the price down to 98 dollars from 290 dollars.)
 @KEYNP()
 ;jpn:◆あなが あいてるから↓
 ;jpn: やすくしておいたよ。@KEY()↓
 ;jpn:◆(ヘビぶくろうりは↓
-;jpn: ２９０ドルを↓
-;jpn: ９８ドルにしてくれた)
+;jpn: 290ドルを↓
+;jpn: 98ドルにしてくれた)
 @KEYNP()
 』
 
@@ -273,7 +273,7 @@ _SKRB_SNAKESHOP_D_ITEMFULL;
 
 
 
-;@Habitat:スカラビ／フィールド／蛇屋
+;@Habitat:スカラビ/フィールド/蛇屋
 ;@Person:へび屋(パンチョ)
 ;@Figure:へび屋のパンチョ
 ;@AppearanceKey:0
@@ -288,7 +288,7 @@ MSG_SKRB_SNAKESHOP_PANCHO;
 @GOSUB(MSG_SHOP_SKRB_SNAKE)
 』
 
-;@Habitat:スカラビ／フィールド／バザールの場
+;@Habitat:スカラビ/フィールド/バザールの場
 ;@Person:バザールの男(ゴザールさん)
 ;@Figure:スカラビ男C
 ;@AppearanceKey:0
@@ -304,7 +304,7 @@ MSG_SKRB_GOZAR;
 @GOSUB(MSG_SHOP_SKRB_BAZAR)
 』
 
-;@Habitat:スカラビ／フィールド／バザールの場
+;@Habitat:スカラビ/フィールド/バザールの場
 ;@Person:バザールのヤジ馬A
 ;@Figure:スカラビ男A
 ;@AppearanceKey:0
@@ -312,7 +312,7 @@ MSG_SKRB_GOZAR;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_BAZAR_A
-MSG_SKRB_BAZAR_A;＄β
+MSG_SKRB_BAZAR_A;$β
 ◆I bought a ”@DSP_GOODS(GDS_TOOL_NOSE_PIG).”@KEY()↓
 ◆This will help out a large amount@KEY()↓
 ◆while I am humbly searching for the Magic truffle in the Deep Darkness.@KEY()↓
@@ -337,7 +337,7 @@ MSG_SKRB_BAZAR_A;＄β
 ; みつけるのには これはべんりさ。@KEYNP()
 ;』
 
-;@Habitat:スカラビ／フィールド／バザールの場
+;@Habitat:スカラビ/フィールド/バザールの場
 ;@Person:占師
 ;@Figure:ロープマジック男
 ;@AppearanceKey:0
@@ -345,7 +345,7 @@ MSG_SKRB_BAZAR_A;＄β
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SKRB_FORTUNETELLER
-MSG_SKRB_FORTUNETELLER;＃
+MSG_SKRB_FORTUNETELLER;#
 @CHKFGOTO(FLG_WIN_GIEGU,_SKRB_FORTUNETELLER_END)
 ◆Oh, you have the mark of bad luck on your face...@KEY()↓
 ◆No...Don’t worry...@KEY()↓
@@ -363,7 +363,7 @@ MSG_SKRB_FORTUNETELLER;＃
 ;jpn:◆しかし そんなことは↓
 ;jpn: ぜーんぜん ないかも しれない。@KEYNP()
 』
-_SKRB_FORTUNETELLER_END;＆
+_SKRB_FORTUNETELLER_END;&
 ◆Oh!@KEY()↓
 ◆You have the mark of bad luck on your face...@KEY()↓
 ◆Yet, I could be wrong, as you didn’t wash your face lately.
@@ -373,7 +373,7 @@ _SKRB_FORTUNETELLER_END;＆
 ;jpn: たぶん よごれてるだけだろうが。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／街のなか
+;@Habitat:スカラビ/フィールド/街のなか
 ;@Person:いい夢情報の人
 ;@Figure:スカラビ女
 ;@AppearanceKey:FLG_PU/off
@@ -406,7 +406,7 @@ MSG_SKRB_C;
 ; なかなかチャンスがないのよ。@KEYNP()
 ;』
 
-;@Habitat:スカラビ／フィールド／街のなか
+;@Habitat:スカラビ/フィールド/街のなか
 ;@Person:町の人A
 ;@Figure:スカラビ男C
 ;@AppearanceKey:0
@@ -427,7 +427,7 @@ MSG_SKRB_A;
 ;jpn: まだ いるんだろうかねぇ。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／街を出たところ
+;@Habitat:スカラビ/フィールド/街を出たところ
 ;@Person:町の人B
 ;@Figure:スカラビ男A
 ;@AppearanceKey:0
@@ -443,7 +443,7 @@ MSG_SKRB_B;
 ;jpn: かなり かくごして いきなよ。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／スフィンクス付近
+;@Habitat:スカラビ/フィールド/スフィンクス付近
 ;@Person:水売り
 ;@Figure:スカラビ男B
 ;@AppearanceKey:0
@@ -456,10 +456,10 @@ MSG_SKRB_WATERSHOP;
 』
 ;◆のどの かわいたたびびとに↓
 ; みずを うってあげましょう。↓
-; たかいよ １００ドル。@KEY()
+; たかいよ 100ドル。@KEY()
 ;』
 
-;@Habitat:スカラビ／フィールド／ピラミッド出口
+;@Habitat:スカラビ/フィールド/ピラミッド出口
 ;@Person:幻の老人
 ;@Figure:幻の老人
 ;@AppearanceKey:FLG_PU_0/off
@@ -470,7 +470,7 @@ MSG_SKRB_WATERSHOP;
 MSG_SKRB_OLDMAN;
 ;ピラミッドで「たかのめ」をとって帰ると、こんなふうな
 ;ものがいる。はなしかけると
-;１５００才くらいの老人があらわれる。
+;1500才くらいの老人があらわれる。
 @OPEN(1)
 ◆Well done.@KEY()↓
 ◆You have made it!@KEY()
@@ -580,7 +580,7 @@ MSG_SKRB_OLDMAN_OK_1;
 ;』
 
 
-;@Habitat:スカラビ／フィールド／街のなか
+;@Habitat:スカラビ/フィールド/街のなか
 ;@Person:ロープの上の男ププカ
 ;@Figure:ロープマジック男
 ;@AppearanceKey:0
@@ -664,7 +664,7 @@ _SKRB_PUPUKA_AFTER;
 ;』
 
 
-;@Habitat:スカラビ／フィールド／ピラミッド出口付近
+;@Habitat:スカラビ/フィールド/ピラミッド出口付近
 ;@Person:ヤリを持った男
 ;@Figure:ヤリ男
 ;@AppearanceKey:0
@@ -723,7 +723,7 @@ _SKRB_YARIMAN_GOODSFULL;
 ;jpn: もちものが いっぱいか。@KEYNP()
 』
 
-;@Habitat:スカラビ／フィールド／砂漠南部
+;@Habitat:スカラビ/フィールド/砂漠南部
 ;@Person:ダンジョン男
 ;@Figure:ダンジョン男
 ;@AppearanceKey:FLG_SKRB_BRICKROAD_DISAPPEAR/off
@@ -795,7 +795,7 @@ _SKRB_DMAN_ALREADY;
 @KEYNP()
 @!
 
-;@Habitat:スカラビ／フィールド／最南部
+;@Habitat:スカラビ/フィールド/最南部
 ;@Person:潜水艦情報の人
 ;@Figure:ヤリ男
 ;@AppearanceKey:0
@@ -832,7 +832,7 @@ _SKRB_YARIMAN_2_NO;
 ;jpn: 「まきょう」にしずむ↓
 ;jpn: ゆうひでも みよう。@KEYNP()
 』
-_SKRB_YARIMAN_2_YES;＃
+_SKRB_YARIMAN_2_YES;#
 ◆The swamp is bottomless.@KEY()↓
 ◆Even if you’re swimming, you’ll be dragged in.@KEY()↓
 ◆It is a different story if you have a submarine.
@@ -845,7 +845,7 @@ _SKRB_YARIMAN_2_YES;＃
 @SETF(FLG_SKRB_YARIMAN)
 @SETF(FLG_DSRT_KANBAN_44_MOVE);カンバン移動サブマリンコースオープン
 』
-_SKRB_YARIMAN_2_LATER;＆
+_SKRB_YARIMAN_2_LATER;&
 ◆You returned from exploring the Deep Darkness?@KEY()↓
 ◆I cannot believe you made it back alive.
 @KEYNP()
@@ -857,9 +857,9 @@ _SKRB_YARIMAN_2_LATER;＆
 
 ;▼▲▼▲▼▲▼▲ スカラビ ▼▲▼▲▼▲▼▲
 
-;^^^^^^^^ダンジョン男内部：４階^^^^^^^^
+;^^^^^^^^ダンジョン男内部:4階^^^^^^^^
 
-;@Habitat:スカラビ／ダンジョン男内部／洞窟４F最北部
+;@Habitat:スカラビ/ダンジョン男内部/洞窟4F最北部
 ;@Person:ブリックの顔
 ;@Figure:ダンジョン職人の顔
 ;@AppearanceKey:0
@@ -926,7 +926,7 @@ _SKRB_BRICKROAD_MAKYO_2;
 ;jpn: ありやす。@KEY()↓
 ;jpn:◆そいつで むこうぎしに↓
 ;jpn: わたってくだせえやし。@KEY()↓
-;jpn:◆このおくにある「さらばあな」@KEY()↓;＄追加
+;jpn:◆このおくにある「さらばあな」@KEY()↓;$追加
 ;jpn:◆‥‥という なまえのあなが↓
 ;jpn: サブマリンのばしょへ↓
 ;jpn: つうじているでやんす。@KEY()↓
@@ -936,7 +936,7 @@ _SKRB_BRICKROAD_MAKYO_2;
 ;jpn:◆えんが あったら↓
 ;jpn: また あいやしょう!@KEYNP()
 』
-MSG_SKRB_DUNGEONMAN_END;＆動けなくなったままのダンジョン男
+MSG_SKRB_DUNGEONMAN_END;&動けなくなったままのダンジョン男
 ◆I don’t know how, but my homemade dungeon helped you out.@KEY()↓
 ◆I’m glad.
 @KEYNP()
@@ -948,8 +948,8 @@ MSG_SKRB_DUNGEONMAN_END;＆動けなくなったままのダンジョン男
 ;-------------------------------------------------
 
 
-;@Habitat:スカラビ／ダンジョン男内部／洞窟４F南東
-;@Person:看板４４
+;@Habitat:スカラビ/ダンジョン男内部/洞窟4F南東
+;@Person:看板44
 ;@Figure:立札
 ;@AppearanceKey:FLG_SKRB_YARIMAN/off
 ;@ActionScript:◆固定
@@ -957,8 +957,8 @@ MSG_SKRB_DUNGEONMAN_END;＆動けなくなったままのダンジョン男
 ;@CheckMessage;0
 ;@Message:MSG_SKRB_BRICKROAD
 MSG_BRICK_SIGN_44;
-;２回目の帰路(潜水艦の場所へ)
-;１回目クリア前は看板で通路を封じ、クリア後は看板を消す
+;2回目の帰路(潜水艦の場所へ)
+;1回目クリア前は看板で通路を封じ、クリア後は看板を消す
 @CHKFGOTO(FLG_TLPT_MAKY,_BRICK_SIGN_44_LATER)
 ◆”Goodbye Exit”@KEY()↓
 ◆Some day, you should enter with courage.@KEY()↓
@@ -1045,9 +1045,9 @@ _DMAN_BENCH_MES_2;
 @!
 
 
-;^^^^^^^^ダンジョン男内部：１階^^^^^^^^
+;^^^^^^^^ダンジョン男内部:1階^^^^^^^^
 
-;@Habitat:スカラビ／ダンジョン男内部／洞窟中２階最北部
+;@Habitat:スカラビ/ダンジョン男内部/洞窟中2階最北部
 ;@Person:壊れたサブマリン
 ;@Figure:潜水艦
 ;@AppearanceKey:0
@@ -1135,10 +1135,10 @@ _SKRB_INFO_HIERO_YES;
 
 MSG_SKRB_CHECK_SHOP;スカラビショップのカンバン
 ◆Hassan’s Shop@KEY()↓
-◆(＄ dollars acceptable.)
+◆($ dollars acceptable.)
 @KEYNP()
 ;jpn:◆ハッサンさんの みせ↓
-;jpn: (＄ドルも つかえるよ)@KEYNP()
+;jpn: ($ドルも つかえるよ)@KEYNP()
 』
 ;-------------------------------------------------
 

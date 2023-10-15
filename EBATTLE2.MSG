@@ -1,4 +1,4 @@
-;///////////////////////モンスターの特殊攻撃(２／３)////////////////////////
+;///////////////////////モンスターの特殊攻撃(2/3)////////////////////////
 
 MSG_BTL_PPDOWN;
 ←
@@ -289,11 +289,11 @@ MSG_BTL_TUBUYAKI1;
 @SE(SE_se19_b_foe_hitsign)
 ◆@DSP_ACTOR() muttered↓
 @MESSAGE_SOUND(2)
-  ”１...”
+  ”1...”
 @MESSAGE_SOUND(1)
 ;;jpn: @DSP_ACTOR()は↓
 ;@MESSAGE_SOUND(2)
-;;jpn: 「１‥‥」
+;;jpn: 「1‥‥」
 ;@MESSAGE_SOUND(1)
 ;;jpn:とつぶやいた。
 @KEY()
@@ -304,11 +304,11 @@ MSG_BTL_TUBUYAKI2;
 @SE(SE_se19_b_foe_hitsign)
 ◆@DSP_ACTOR() murmured↓
 @MESSAGE_SOUND(2)
-  ”２...”
+  ”2...”
 @MESSAGE_SOUND(1)
 ;;jpn: @DSP_ACTOR()は↓
 ;@MESSAGE_SOUND(2)
-;;jpn: 「２‥‥」
+;;jpn: 「2‥‥」
 ;@MESSAGE_SOUND(1)
 ;;jpn:とつぶやいた。
 @KEY()
@@ -319,11 +319,11 @@ MSG_BTL_TUBUYAKI3;
 @SE(SE_se19_b_foe_hitsign)
 ◆@DSP_ACTOR() whispered↓
 @MESSAGE_SOUND(2)
-  ”３...”
+  ”3...”
 @MESSAGE_SOUND(1)
 ;;jpn: @DSP_ACTOR()は↓
 ;@MESSAGE_SOUND(2)
-;;jpn: 「３‥‥」
+;;jpn: 「3‥‥」
 ;@MESSAGE_SOUND(1)
 ;;jpn:とつぶやいた。
 @KEY()

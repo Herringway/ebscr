@@ -63,7 +63,7 @@ MSG_GLOBAL_TELEPHONE_2;
 _TEL_2_NOMONEY;
 ◆(The pay phone costs one dollar.)
 ;◆(こうしゅうでんわは↓
-; りょうきん １ドルです)
+; りょうきん 1ドルです)
 @KEYNP()
 @!
 
@@ -499,7 +499,7 @@ MSG_BATTLE_FRANK;
 
 MSG_BATTLE_STEIN2;
 ←
-;◆(フランキースタイン２との↓
+;◆(フランキースタイン2との↓
 ; たたかい!)@KEY()↓
 @CLOSEALL()
 @BATTLE(MSET_FIX_FRANKEE2)
@@ -611,7 +611,7 @@ MSG_BATTLE_CARPAINTER;
 @CLOSEALL()
 @WI(1)
 @BGMSTART(0,BGM_msc6)
-;稲妻BG３アニメ(１２０フレーム弱)
+;稲妻BG3アニメ(120フレーム弱)
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_CARPAINTER_THUNDER, OBJFX_SHOW_NONE )
 @WI( 80 )
 @HIDE_PLAYER( PC_ALL, OBJFX_HIDE_NONE )	;←OBJFXを使わないこと!!
@@ -628,7 +628,7 @@ _BATTLE_CARPAINTER_HAVE;
 @CLOSEALL()
 @WI(1)
 @BGMSTART(0,BGM_msc6)
-;稲妻落ちて跳ね返すBG３アニメ
+;稲妻落ちて跳ね返すBG3アニメ
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_CARPAINTER_THUNDERHEAD, OBJFX_SHOW_NONE )
 @WAITSYS()
 @BGM_EFFECT( 2 )
@@ -657,7 +657,7 @@ _CARPAINTER_HAVE_MAIN;
 MSG_BATTLE_BELIEVER_1;
 ←
 ;◆(ハッピーハッピーきょう↓
-; しんじゃ１ との↓
+; しんじゃ1 との↓
 ; たたかい!)@KEY()
 ;◆(YOU WIN!)@KEY()
 @CLOSEALL()
@@ -667,7 +667,7 @@ MSG_BATTLE_BELIEVER_1;
 MSG_BATTLE_BELIEVER_2;
 ←
 ;◆(ハッピーハッピーきょう↓
-; しんじゃ２ との↓
+; しんじゃ2 との↓
 ; たたかい!)@KEY()
 ;◆(YOU WIN!)@KEY()
 @CLOSEALL()
@@ -677,7 +677,7 @@ MSG_BATTLE_BELIEVER_2;
 MSG_BATTLE_BELIEVER_3;
 ←
 ;◆(ハッピーハッピーきょう↓
-; しんじゃ３ との↓
+; しんじゃ3 との↓
 ; たたかい!)@KEY()
 ;◆(YOU WIN!)@KEY()
 @CLOSEALL()
@@ -687,7 +687,7 @@ MSG_BATTLE_BELIEVER_3;
 MSG_BATTLE_BELIEVER_4;
 ←
 ;◆(ハッピーハッピーきょう↓
-; しんじゃ４ との↓
+; しんじゃ4 との↓
 ; たたかい!)@KEY()
 ;◆(YOU WIN!)@KEY()
 @CLOSEALL()
@@ -697,7 +697,7 @@ MSG_BATTLE_BELIEVER_4;
 MSG_BATTLE_BELIEVER_W1;
 ←
 ;◆(ハッピーハッピーきょう↓
-; うろつきしんじゃ１ との↓
+; うろつきしんじゃ1 との↓
 ; たたかい!)@KEY()
 ;◆(YOU WIN!)@KEY()
 @CLOSEALL()
@@ -707,7 +707,7 @@ MSG_BATTLE_BELIEVER_W1;
 MSG_BATTLE_BELIEVER_W2;
 ←
 ;◆(ハッピーハッピーきょう↓
-; うろつきしんじゃ２ との↓
+; うろつきしんじゃ2 との↓
 ; たたかい!)@KEY()
 ;◆(YOU WIN!)@KEY()
 @CLOSEALL()
@@ -962,7 +962,7 @@ _GLOBAL_POWERSAVE_NO;
 ◆@DSP_NAME(PC_NESS), you are a hard worker.@KEY()↓
 ◆I’ve made a record of your adventure.@KEY()↓
 ◆Don’t work too hard, though...@KEY()↓
-◆＊Click!＊
+◆*Click!*
 ;◆@DSP_NAME(0)も ママににて↓
 ; がんばりやだなあ。@KEY()↓
 ;◆ぼうけんのきろくは↓
@@ -997,7 +997,7 @@ _POWERSAVE_CONTINUE;
 @SET_REG(0)
 ◆@DSP_NAME(0), you’re a hard worker, just like your mom.@KEY()↓
 ◆Don’t work too hard, though...@KEY()↓
-◆＊Click＊
+◆*Click*
 ;◆@DSP_NAME(0)も ママににて↓
 ; がんばりやだなあ。@KEY()↓
 ;◆むりするなよ。@KEY()↓
@@ -1190,7 +1190,7 @@ MSG_GLOBAL_PHOTO_32;
 ;@CHKFGOTO(FLG_TEMP_1,_HINT_YES_TEMP)
 ;@CHKFGOTO(FLG_ONET_GATEOPEN,MSG_TEMP_HINT)
 ;◆ちょっとまった!ヤングマン@KEY()↓
-;◆たった５ドルで↓
+;◆たった5ドルで↓
 ; すばらしいヒントを↓
 ; あげよう。@KEY()↓
 ;◆ヒントが ほしいだろう?↓
@@ -1200,7 +1200,7 @@ MSG_GLOBAL_PHOTO_32;
 ;MSG_HINT_NO;
 ;◆ヒントは いらないって?@KEY()↓
 ;◆きがつよいのか↓
-; ５ドルが おしいのか@KEY()↓
+; 5ドルが おしいのか@KEY()↓
 ;◆いまどき めずらしい↓
 ; わかものだ。@KEY()↓
 ;◆でぐちは↓
@@ -1325,7 +1325,7 @@ MSG_GLOBAL_PHOTO_32;
 ; あったかな?@KEY()↓
 ;◆ピカールしちょうは↓
 ; しちょうしゃの↓
-; ２かいにいるよ。@KEY()↓
+; 2かいにいるよ。@KEY()↓
 ;◆きょうは ここまで。@KEYNP()
 ;』
 ;MSG_TEMP_HINT;仮
@@ -1444,7 +1444,7 @@ _INPUT_PLAYER_NAME_MAIN;
 @KEY()↓
 _INPUT_PLAYER_NAME_JEFF_MAIN2;
 ◆I hope that I can see you again when you are feeling up to it...@KEY()↓
-◆From T＊O＊N＊Y＊...@KEY()↓
+◆From T*O*N*Y*...@KEY()↓
 ◆You got that?@KEY()↓
 ◆Well I’ve been on the phone too long...@KEY()↓
 ◆Gotta go...@KEY()↓
@@ -1453,7 +1453,7 @@ _INPUT_PLAYER_NAME_JEFF_MAIN2;
 ◆So long...@KEY()↓
 ◆This time, I’m really gonna hang up.@KEY()↓
 ◆Goodbye.@KEY()↓
-◆＊Beeeeep＊
+◆*Beeeeep*
 ;◆また げんきなすがたの↓
 ; きみに あえることを@KEY()↓
 ;◆こころから↓
@@ -1649,7 +1649,7 @@ MSG_SUMS_PHONE_RICEBOWL;博物館の電話(ライスボウル)
 ◆I’m telling you...@KEY()↓
 ◆It’s fantastic!.....@KEY()↓
 ◆It’s outrageous!...@KEY()↓
-◆＊Click＊  Beeeeep
+◆*Click*  Beeeeep
 ;◆もしもし!@WI(10)↓
 ; 「スカラビぶんかはくぶつかん」の↓
 ; チャップスティックくんかい!?@KEY()↓
@@ -1899,7 +1899,7 @@ _TWSN_HOTEL_A_15;
 』
 _TWSN_HOTEL_A_16;
 ◆Here, get yourself a juice or something...@KEY()↓
-◆＊Ka−ching＊
+◆*Ka−ching*
 ;◆これで@WI(20)(ジャラジャラ)@WI(20)↓
 ; ジュースでもかいなよ。
 @KEY()↓
@@ -1909,9 +1909,9 @@ _TWSN_HOTEL_A_16;
 @WI(60)
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
-◆@DSP_NAME(PC_NESS) got ５０ dollars.
+◆@DSP_NAME(PC_NESS) got 50 dollars.
 ;◆(@DSP_NAME(0)は↓
-; ５０ドル もらった)
+; 50ドル もらった)
 @KEYNP()
 @SETF(FLG_TWSN_HOTEL_A_END)
 』
@@ -1959,7 +1959,7 @@ _PHONE_TRACY_LOSTITEM_MAIN;
 ◆If you need it, I’ll deliver it to you anytime you want.@KEY()↓
 ◆Oh yeah, big bro...@KEY()↓
 ◆I’m glad that I could help out you and your friends.@KEY()↓
-◆＊Click＊
+◆*Click*
 ; あずかったんだけど‥‥↓
 ; いたずらかなぁと おもって。@KEY()↓
 ;◆もし ほんとなら↓
@@ -2066,12 +2066,12 @@ _DELIVERY_TAKA_ITEMFULL;
 @GOSUB(MSG_SUB_TLPTOK_OTHEREVENT)	;イベント中以外ならテレポート許可
 』
 ;-------------------------------------------------
-MSG_TAKOKESHI_RETRY_OVER;＄
+MSG_TAKOKESHI_RETRY_OVER;$
 @CLRF(FLG_DELIVERY_UNSOU_TAKOKESHI)
 @CLRF(FLG_SYS_DISTLPT);テレポート許可
 』
 
-MSG_TAKANOME_RETRY_OVER;＄
+MSG_TAKANOME_RETRY_OVER;$
 @CLRF(FLG_DELIVERY_UNSOU_TAKANOME)
 @CLRF(FLG_SYS_DISTLPT);テレポート許可
 』
@@ -2094,8 +2094,8 @@ MSG_GLOBAL_CHECK_HOMESICK;ホームシック検査
 
 ;【回復グッズ・移動スピードが一定時間早くなるものについて・スキップサンド】
 
-;配置場所：ツーソンデパート・パン売り場近く(並んでいる感じ)
-;配置オブジェ：(女の子)
+;配置場所:ツーソンデパート・パン売り場近く(並んでいる感じ)
+;配置オブジェ:(女の子)
 
 MSG_TWSN_SYSINFO_SKIP;
 ◆Yum yum...mmm...I’m eating a skip sandwich.@KEY()↓
@@ -2116,8 +2116,8 @@ MSG_TWSN_SYSINFO_SKIP;
 
 ;【回復グッズ・ラッキーサンドについて】
 
-;配置場所：オネット・パン屋(あるいはツーソン)
-;配置オブジェ：(女性＆男性)
+;配置場所:オネット・パン屋(あるいはツーソン)
+;配置オブジェ:(女性&男性)
 
 MSG_ONET_SYSINFO_LUCKY;
 ◆It seems like every bakery has been making lucky sandwiches these days.@KEY()↓
@@ -2140,17 +2140,17 @@ MSG_ONET_SYSINFO_LUCKY;
 
 ;【たべものは基本的に値段の高いものほど良く回復する、と覚えておけば良いことの説明】
 
-;配置場所：オネット・ハンバーガー屋
-;配置オブジェ：(キャップ)
+;配置場所:オネット・ハンバーガー屋
+;配置オブジェ:(キャップ)
 
 MSG_ONET_SYSINFO_PRICE;
-;１２３４５６７８９０１２３４５６７８９
-◆Don’t you think you get more food value out of １４ bucks worth of burgers@KEY()↓
-◆than ８ bucks worth of french fries?@KEY()↓
+;1234567890123456789
+◆Don’t you think you get more food value out of 14 bucks worth of burgers@KEY()↓
+◆than 8 bucks worth of french fries?@KEY()↓
 ◆You’ll feel better and more energetic if you eat better foods.@KEY()↓
 ◆You know−−you’ll recover more health if you eat more expensive food.
-;◆８ドルのポテトフライより↓
-; １４ドルのハンバーガーのほうが↓
+;◆8ドルのポテトフライより↓
+; 14ドルのハンバーガーのほうが↓
 ; たべたきに なるわよね。@KEY()↓
 ;◆そのぶんだけ たくさんげんきに↓
 ; なるってことかな。
@@ -2161,11 +2161,11 @@ MSG_ONET_SYSINFO_PRICE;
 
 ;【すっきりハーブの説明】
 
-;配置場所：HP村のドラッグストア
-;配置オブジェ：(ビーナスの母)
+;配置場所:HP村のドラッグストア
+;配置オブジェ:(ビーナスの母)
 
 MSG_HAPPY_SYSINFO_HERB;
-◆The information on the back of the ”refreshing herb” reads as follows：@KEY()↓
+◆The information on the back of the ”refreshing herb” reads as follows:@KEY()↓
 ◆If you catch a cold, if you’re ill, or if you can’t seem to heal,@KEY()↓
 ◆if you’re poisoned, if you’re depressed, a refreshing herb is the real deal.@KEY()↓
 ◆I know, it seems pretty iffy, but you should give it a try!
@@ -2185,20 +2185,20 @@ MSG_HAPPY_SYSINFO_HERB;
 
 ;`````````````````````````````````````````````````````````````````````````
 
-;【うらカンポー＆いのちのつのぶえの説明】
+;【うらカンポー&いのちのつのぶえの説明】
 
-;配置場所：土星谷のドラッグストア下の洞窟内
-;配置オブジェ：(土星さん)
+;配置場所:土星谷のドラッグストア下の洞窟内
+;配置オブジェ:(土星さん)
 
-MSG_DOSEI_SYSMSG_COMEBACKITEM;＠
+MSG_DOSEI_SYSMSG_COMEBACKITEM;@
 @FONTBAKA()
-◆So Boing!  You have ３８０ dollars, we trade ”@DSP_GOODS(GDS_TOOL_DIAMOND_CRASHER).”
-;◆３８０ どる あったら↓		;どせいさん数字
+◆So Boing!  You have 380 dollars, we trade ”@DSP_GOODS(GDS_TOOL_DIAMOND_CRASHER).”
+;◆380 どる あったら↓		;どせいさん数字
 ; うらカンポー↓
 ; かえるのになー。
 @KEY()↓
-◆So Boing!  You have １７８０ dollars, we trade ”@DSP_GOODS(GDS_TOOL_LIFE_HORN).”
-;◆１７８０ どる あったら↓		;どせいさん数字
+◆So Boing!  You have 1780 dollars, we trade ”@DSP_GOODS(GDS_TOOL_LIFE_HORN).”
+;◆1780 どる あったら↓		;どせいさん数字
 ; いのちのつのぶえ↓
 ; かえるのになー。
 @KEYNP()
@@ -2209,8 +2209,8 @@ MSG_DOSEI_SYSMSG_COMEBACKITEM;＠
 
 ;【ぬいぐるみが魅力的なグッズであること】
 
-;配置場所：ツーソン・デパート
-;配置オブジェ：(ボロ)
+;配置場所:ツーソン・デパート
+;配置オブジェ:(ボロ)
 
 MSG_TWSN_SYSMSG_NUIGURUMI;
 ◆That teddy bear they sell over there...I heard it helps in battle.@KEY()↓
@@ -2231,8 +2231,8 @@ MSG_TWSN_SYSMSG_NUIGURUMI;
 
 ;【装備系グッズの装備時のドラムの点滅の説明】
 
-;配置場所：オネットのドラッグストア
-;配置オブジェ：(イヌ)
+;配置場所:オネットのドラッグストア
+;配置オブジェ:(イヌ)
 
 MSG_ONET_SYSMSG_EQUIP;
 @CHKFGOTO(FLG_WIN_GIEGU,_ONET_SYSMSG_EQUIP_END)
@@ -2247,7 +2247,7 @@ MSG_ONET_SYSMSG_EQUIP;
 ◆If the item’s power is equal to, or less than you current equipped item,@KEY()↓
 ◆the window looks normal.@KEY()↓
 ◆If you can’t equip an item, the window is black.@KEY()↓
-◆＊Ruff＊  I thought you’d like to know.@KEY()↓
+◆*Ruff*  I thought you’d like to know.@KEY()↓
 ◆Now it’s time to become a regular dog again...)
 ;◆(う う わしは‥‥@WI(20)↓
 ; イタコ・ドッグじゃ。@KEY()↓
@@ -2277,7 +2277,7 @@ MSG_ONET_SYSMSG_EQUIP;
 ;◆もとのイヌに もどろう)
 @KEYNP()
 』
-_ONET_SYSMSG_EQUIP_END;＆
+_ONET_SYSMSG_EQUIP_END;&
 ◆Woof! Woof!@KEY()↓
 ◆I’m Ruffini the dog.@KEY()↓
 ◆Here comes the spirit of the game designer again...@KEY()↓
@@ -2304,7 +2304,7 @@ _ONET_SYSMSG_EQUIP_END;＆
 ;◆パッケージに↓
 ; じゅうしょのかいてある↓
 ; にんてんどう の@KEY()↓
-;◆マザー２ イタコ・ドッグがかりに↓
+;◆マザー2 イタコ・ドッグがかりに↓
 ; おくってくださいね。@KEY()↓
 ;◆さあ あとはエンディングを↓
 ; みるばかりですね。@WI(20)↓
@@ -2332,10 +2332,10 @@ _ONET_SYSMSG_EQUIP_END;＆
 
 ;`````````````````````````````````````````````````````````````````````````
 
-;【復活後はPPが０になっていることの説明】
+;【復活後はPPが0になっていることの説明】
 
-;配置場所：図書館の客
-;配置オブジェ：(OL＿F)
+;配置場所:図書館の客
+;配置オブジェ:(OL_F)
 
 MSG_LIBRARY_SYSMSG_PP_0;
 ◆I’m cramming for the big test tomorrow.@KEY()↓
@@ -2352,9 +2352,9 @@ MSG_LIBRARY_SYSMSG_PP_0;
 ; HP PPともにまんたんである。@KEY()↓
 ;◆「カムバックのほうそく」↓
 ; ‥‥カムバックは むりょうだが↓
-; PPは０である。@KEY()↓
+; PPは0である。@KEY()↓
 ;◆‥‥うーん カムバックの あと↓
-; PPが０ ってところが↓
+; PPが0 ってところが↓
 ; しけんにでそうね。
 @KEYNP()
 』
@@ -2362,8 +2362,8 @@ MSG_LIBRARY_SYSMSG_PP_0;
 
 ;【CD設置場所の説明】
 
-;配置場所：図書館の客
-;配置オブジェ：(少年A)
+;配置場所:図書館の客
+;配置オブジェ:(少年A)
 
 MSG_LIBRARY_SYSMSG_CD_PLACE;
 ◆I recently read a book titled ”Our Convenient Society.”@KEY()↓
@@ -2391,8 +2391,8 @@ MSG_LIBRARY_SYSMSG_CD_PLACE;
 
 ;【電話の説明】
 
-;配置場所：図書館の客
-;配置オブジェ：(少女A差し替え)
+;配置場所:図書館の客
+;配置オブジェ:(少女A差し替え)
 
 MSG_LIBRARY_SYSMSG_TEL_PLACE;
 ◆I read the book called ”Our Society is Convenient.”@KEY()↓
@@ -2409,7 +2409,7 @@ MSG_LIBRARY_SYSMSG_TEL_PLACE;
 ; かいてあったわ。@KEY()↓
 ;◆それに みどりいろの↓
 ; こうしゅうでんわは↓
-; １ドルかかるけど@KEY()↓
+; 1ドルかかるけど@KEY()↓
 ;◆そのほかの くろでんわとかは↓
 ; おかねが かからないって。@KEY()↓
 ;◆このことを しらなかったら↓
@@ -2425,8 +2425,8 @@ MSG_LIBRARY_SYSMSG_TEL_PLACE;
 
 ;【マジックバタフライの説明】
 
-;配置場所：図書館の２階窓際の客
-;配置オブジェ：(サラリーマンD)
+;配置場所:図書館の2階窓際の客
+;配置オブジェ:(サラリーマンD)
 
 MSG_LIBRARY_SYSMSG_BUTTERFLY;
 ◆I can’t believe I saw it with my own eyes.@KEY()↓
@@ -2464,8 +2464,8 @@ MSG_LIBRARY_SYSMSG_BUTTERFLY;
 
 ;【敵との接触の向きによって有利不利があることの説明(緑色と赤色の意味)】
 
-;配置場所：オネット
-;配置オブジェ：現状のホリー(現状のセリフはツーソン入ってスグのホリーに移植)
+;配置場所:オネット
+;配置オブジェ:現状のホリー(現状のセリフはツーソン入ってスグのホリーに移植)
 
 MSG_ONET_SYSMSG_ENCOUNTER;
 ◆(I am not your enemy.@KEY()↓
@@ -2528,8 +2528,8 @@ _SYSMSG_ENCOUNTER_YES;
 
 ;【レベル差がついたときの無条件勝ちの説明】
 
-;配置場所：HP村入ってすぐ
-;配置オブジェ：ホリー
+;配置場所:HP村入ってすぐ
+;配置オブジェ:ホリー
 
 MSG_HAPPY_SYSMSG_EASY_BATTLE;
 ◆I am not your enemy.@KEY()↓
@@ -2559,8 +2559,8 @@ MSG_HAPPY_SYSMSG_EASY_BATTLE;
 
 ;【ヒーラーと医者の違いの説明】
 
-;配置場所：オネット病院
-;配置オブジェ：ボルヘスママ
+;配置場所:オネット病院
+;配置オブジェ:ボルヘスママ
 
 MSG_ONET_SYSMSG_HEALER;
 ◆Hello...and you are...?@KEY()↓
@@ -2621,8 +2621,8 @@ MSG_ONET_SYSMSG_HEALER;
 
 ;【プーにのみ効果的・非効果的なグッズがあることの説明】
 
-;配置場所：ランマのショップ
-;配置オブジェ：(女)
+;配置場所:ランマのショップ
+;配置オブジェ:(女)
 
 MSG_RAMA_SYSMSG_PU_ITEM;
 ◆I wish I could recover my PP just by drinking water...@KEY()↓
@@ -2648,8 +2648,8 @@ MSG_RAMA_SYSMSG_PU_ITEM;
 
 ;【ふりかけシステムの説明】
 
-;配置場所：ヌスット広場のふりかけ屋(ふりかけ屋のお兄さんと向き合う)
-;配置オブジェ：(女)
+;配置場所:ヌスット広場のふりかけ屋(ふりかけ屋のお兄さんと向き合う)
+;配置オブジェ:(女)
 
 MSG_TWSN_SYSMSG_FURIKAKE;
 ◆I came to buy condiments...@KEY()↓
@@ -2675,8 +2675,8 @@ MSG_TWSN_SYSMSG_FURIKAKE;
 
 ;【あなぬけねずみの説明】
 
-;配置場所：オネットの穴抜けねずみの家
-;配置オブジェ：(ボロ)
+;配置場所:オネットの穴抜けねずみの家
+;配置オブジェ:(ボロ)
 
 MSG_ONET_SYSMSG_ESCAPE_MOUSE;
 ◆I live rent−free in the mouse’s house.@KEY()↓
@@ -2696,10 +2696,10 @@ MSG_ONET_SYSMSG_ESCAPE_MOUSE;
 』
 ;-------------------------------------------------
 
-;【ホームシックの説明２】追加
+;【ホームシックの説明2】追加
 
-;配置場所：ツーソンバスステーション電話のそば
-;配置オブジェ：(ツッパリ)
+;配置場所:ツーソンバスステーション電話のそば
+;配置オブジェ:(ツッパリ)
 
 
 MSG_TWSN_SYSINFO_HOMESICK;
@@ -2724,8 +2724,8 @@ MSG_TWSN_SYSINFO_HOMESICK;
 ;```````````````````````````````````````````````````````````````````
 ;【ガラクタと修理の関係のヒント】追加
 
-;配置場所：ツーソン・猫しかいない家
-;配置オブジェ：(男)
+;配置場所:ツーソン・猫しかいない家
+;配置オブジェ:(男)
 
 
 MSG_TWSN_SYSINFO_REPAIR;
@@ -2756,9 +2756,9 @@ MSG_TWSN_SYSINFO_REPAIR;
 ;```````````````````````````````````````````````````````````````````
 ;【シャーク団が強いなーと思ったらドラッグストアで買い物をしろ」と言う人】追加(丸ちゃん)
 
-;配置場所：ゲーセン２階
-;配置オブジェ：(シャーク団)
-;検査フラグ：FLG_ONET_SHARK_2F_DISAPPEAR /OFF
+;配置場所:ゲーセン2階
+;配置オブジェ:(シャーク団)
+;検査フラグ:FLG_ONET_SHARK_2F_DISAPPEAR /OFF
 
 MSG_ONET_SHARK_SYSINFO_BTL;
 @OPEN(1)
@@ -2805,69 +2805,69 @@ MSG_BUTTERFLY_HIT;
 ;-------------------------------------------------
 MSG_ONET_CHECK_HOTEL_KANBAN;
 ◆”Hotel Onett”@KEY()↓
-◆３５ dollars per night for a single room.
+◆35 dollars per night for a single room.
 ;◆「ホテルオネット」↓
 ; ごしゅくはく↓
-; おひとり ３５ドル
+; おひとり 35ドル
 @KEYNP()
 』
 MSG_TWSN_CHECK_HOTEL_KANBAN;
 ◆”Twoson Hotel”@KEY()↓
-◆５０ dollars per night for a single room.
+◆50 dollars per night for a single room.
 ;◆「ツーソンホテル」↓
 ; ごしゅくはく↓
-; おひとり ５０ドル
+; おひとり 50ドル
 @KEYNP()
 』
 MSG_THRK_CHECK_HOTEL_KANBAN;
 ◆”Threed Sunset Hotel”@KEY()↓
-◆６０ dollars per night for a single room.
+◆60 dollars per night for a single room.
 ;◆「スリーク・サンセットホテル」↓
 ; ごしゅくはく↓
-; おひとり ６０ドル
+; おひとり 60ドル
 @KEYNP()
 』
 MSG_SUMS_CHECK_HOTEL_KANBAN;
 ◆”L’hotel du Summer”@KEY()↓
-◆１５０ dollars per night for a single room.
+◆150 dollars per night for a single room.
 ;◆「オテル・ド・サマーズ」↓
 ; ごしゅくはく↓
-; おひとり １５０ドル
+; おひとり 150ドル
 @KEYNP()
 』
 MSG_FOUR_CHECK_HOTEL_KANBAN;
 @CHKFGOTO(FLG_WIN_GIEGU,_FOUR_HOTEL_KANBAN_LATER)
 ◆”Monotoly Grand Hotel”@KEY()↓
-◆７５ dollars per night for a single room.
+◆75 dollars per night for a single room.
 ;◆「モノトリーグランドホテル」↓
 ; ごしゅくはく↓
-; おひとり ７５ドル
+; おひとり 75ドル
 @KEYNP()
 』
 _FOUR_HOTEL_KANBAN_LATER;
 ◆”Enrich Grand Hotel”@KEY()↓
-◆７５ dollars per night for a single room.
+◆75 dollars per night for a single room.
 ;◆「エンリッチ・グランドホテル」↓
 ; ごしゅくはく↓
-; おひとり ７５ドル
+; おひとり 75ドル
 @KEYNP()
 』
 
 MSG_MOON_CHECK_HOTEL_KANBAN;
 ◆”Hotel Dark Moon”@KEY()↓
-◆７５ dollars for one sleep period for a single room.
+◆75 dollars for one sleep period for a single room.
 ;◆「ホテル・ダークムーン」↓
 ; ひとねむり↓
-; おひとり ７５ドル
+; おひとり 75ドル
 @KEYNP()
 』
 MSG_SKRB_CHECK_HOTEL_KANBAN;
 ◆”Great Southern International Resort Hotel”@KEY()↓
-◆１００ dollars per night for a single room.
+◆100 dollars per night for a single room.
 ;◆「グレート・サザーン・↓
 ; こくさい・かんこうホテル」↓@KEY()
 ;◆ごしゅくはく↓
-; おひとり １００ドル
+; おひとり 100ドル
 @KEYNP()
 』
 ;-------------------------------------------------
@@ -2950,7 +2950,7 @@ _FOUR_HOSP_OLDWOMAN_YES;
 ;MSG_CES_SORRY;デモ版につきあしからず(新規)
 ;@OPEN(1)
 ;◆This is as far as you can go in this version.@KEY()↓
-;◆Look for the final version in Spring of １９９５!@KEYNP()
+;◆Look for the final version in Spring of 1995!@KEYNP()
 ;@WI(20)
 ;@CLOSEALL()
 ;@MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_SoftReset,OBJFX_SHOW_NONE);リセット
@@ -2972,9 +2972,9 @@ _FOUR_HOSP_OLDWOMAN_YES;
 
 ;MSG_CES_PSI_SORRY;CES版PSI説明(新規)
 ;MSG_EXPL_PSI_LIFEUP_ALFA;
-;◆One of your friends recovered about １００ HP!
+;◆One of your friends recovered about 100 HP!
 ;jpn:◆なかまひとりのHPを↓
-;jpn: やく１００ポイント かいふくする。
+;jpn: やく100ポイント かいふくする。
 ;@!
 
 ;------------------------------------------------

@@ -1,5 +1,5 @@
 ;-------------------------------------
-;@Habitat:Gデッド谷／谷の小屋／監視室
+;@Habitat:Gデッド谷/谷の小屋/監視室
 ;@Person:鉄格子越しのポーラ
 ;@Figure:ドア
 ;@AppearanceKey:MSG_POLA_GRFD/off
@@ -154,7 +154,7 @@ _GRFD_POLA_LATER_YES;
 ;』
 
 
-;@Habitat:Gデッド谷／谷の小屋／牢や
+;@Habitat:Gデッド谷/谷の小屋/牢や
 ;@Person:ポーラ
 ;@Figure:ポーラ
 ;@AppearanceKey:MSG_POLA_GRFD/off
@@ -177,9 +177,9 @@ _GRFD_POLA_LATER_YES;
 ;』
 
 
-；----------------------------------------
+;----------------------------------------
 
-;@Habitat:Gデッド谷／フィールド／谷の小屋の前
+;@Habitat:Gデッド谷/フィールド/谷の小屋の前
 ;@Person:ポーキー
 ;@Figure:ポーキー
 ;@AppearanceKey:FLG_GRFD_POKEY_APPEAR/on
@@ -188,7 +188,7 @@ _GRFD_POLA_LATER_YES;
 ;@CheckMessage:0
 ;@Message:MSG_GRFD_POKEY
 
-;@Habitat:Gデッド谷／フィールド／谷の小屋の前
+;@Habitat:Gデッド谷/フィールド/谷の小屋の前
 ;@Person:ポーキー子分A
 ;@Figure:HH教信者
 ;@AppearanceKey:FLG_GRFD_POKEY_APPEAR/on
@@ -197,7 +197,7 @@ _GRFD_POLA_LATER_YES;
 ;@CheckMessage:0
 ;@Message:0
 
-;@Habitat:Gデッド谷／フィールド／谷の小屋の前
+;@Habitat:Gデッド谷/フィールド/谷の小屋の前
 ;@Person:ポーキー子分B
 ;@Figure:HH教信者
 ;@AppearanceKey:FLG_GRFD_POKEY_APPEAR/on
@@ -228,7 +228,7 @@ MSG_GRFD_SIGNPOST_A;
 ;  ヘタクソな もじだ)@KEYNP()
 』
 
-;@Habitat:Gデッド谷／リリパットステップのダンジョン／大広間
+;@Habitat:Gデッド谷/リリパットステップのダンジョン/大広間
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_LLPT_BOSS/off
@@ -246,7 +246,7 @@ MSG_GRFD_LLPT_BOSS;
 ◆This is the second ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは ２ばんめの↓
+;jpn:◆ここは 2ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓
@@ -276,7 +276,7 @@ MSG_GRFD_SHINTO_A;壊れた橋の信者
 』
 ;---------------------------------------------------
 
-MSG_GRFD_SYSMSG_GUTS;＄β
+MSG_GRFD_SYSMSG_GUTS;$β
 ◆(I’m not an enemy.@KEY()↓
 ◆I’m just a regular mole.@KEY()↓
 ◆Would you like to know about how to survive battles.)@KEY()↓
@@ -297,7 +297,7 @@ _GRFD_SYSMSG_GUTS_NO;
 』
 _GRFD_SYSMSG_GUTS_YES;
 ◆(You may have noticed that, when you have been badly hurt in battle,@KEY()↓
-◆you may survive a mortal attack and still have １ HP.  If this has happened,@KEY()↓
+◆you may survive a mortal attack and still have 1 HP.  If this has happened,@KEY()↓
 ◆it was because of your Guts.  Your survival may depend on your Guts level.@KEY()↓
 ◆Also, more Guts helps you get more SMAAAAASHing hits.@KEY()↓
 ◆Beyond Guts, you should have noticed that it takes some time@KEY()↓
@@ -309,7 +309,7 @@ _GRFD_SYSMSG_GUTS_YES;
 ;jpn:◆(たたかいのなかで↓
 ;jpn: きぜつするほどの↓
 ;jpn: ダメージをうけたはずなのに@KEY()↓
-;jpn:◆たいりょくが「１」で↓
+;jpn:◆たいりょくが「1」で↓
 ;jpn: ふみとどまった ‥‥なんて↓
 ;jpn: けいけん あるかい?@KEY()↓
 ;jpn:◆もし あったとしたら↓

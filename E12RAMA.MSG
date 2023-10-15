@@ -1,5 +1,5 @@
 ;-------------------------------
-;@Habitat:ランマ／宮殿／玉座の間
+;@Habitat:ランマ/宮殿/玉座の間
 ;@Person:老師・イースーチー
 ;@Figure:師匠
 ;@AppearanceKey:0
@@ -60,10 +60,10 @@ _RAMA_MASTER_OK;修行後のセリフとして
 ;jpn:◆れきしじょう さいだいの↓
 ;jpn: たたかいを いどんでおりまする。@KEY()↓
 ;jpn:◆これを うけてたてるものは↓
-;jpn: たった４にんの しょうねんたち。@KEY()↓
+;jpn: たった4にんの しょうねんたち。@KEY()↓
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)というものが↓
 ;jpn: その かしらになりまする。@KEY()↓
-;jpn:◆４にんのうちの ひとりが↓
+;jpn:◆4にんのうちの ひとりが↓
 ;jpn: @DSP_STS(STS_PC_NAME_POO)おうじ‥‥あなたです。@KEY()↓
 ;jpn:◆さいごの しれんに うちかった↓
 ;jpn: いま!@KEY()↓
@@ -110,7 +110,7 @@ _RAMA_MASTER_PU;
 @WI(90)
 @WARP(WARP_RAMA_147)
 』
-_RAMA_MASTER_END;＆
+_RAMA_MASTER_END;&
 ◆As I thought, the prophecy foretold of our only chance for success.@KEY()↓
 ◆Please enjoy the life ahead of you as a regular boy.
 @KEYNP()
@@ -123,7 +123,7 @@ _RAMA_MASTER_END;＆
 』
 
 
-;@Habitat:ランマ／宮殿／玉座の間
+;@Habitat:ランマ/宮殿/玉座の間
 ;@Person:仕え人A
 ;@Figure:ランマ男B
 ;@AppearanceKey:0
@@ -152,7 +152,7 @@ _RAMA_A_LATER;
 ;jpn: この へいわなくに にも↓
 ;jpn: よからぬ ことが‥‥@KEYNP()
 』
-_RAMA_A_END;＆
+_RAMA_A_END;&
 ◆We understand that you’ve experienced hardship in the past.@KEY()↓
 ◆No one could fight the evil entity, except you.@KEY()↓
 ◆We are proud.@KEY()↓
@@ -170,7 +170,7 @@ _RAMA_A_END;＆
 』
 
 
-;@Habitat:ランマ／宮殿／玉座の間
+;@Habitat:ランマ/宮殿/玉座の間
 ;@Person:電話行者
 ;@Figure:電話行者
 ;@AppearanceKey:0
@@ -184,7 +184,7 @@ MSG_RAMA_PHONEMASTER;
 @GOTO(MSG_PAPA)
 』
 
-;@Habitat:ランマ／宮殿／玉座の間
+;@Habitat:ランマ/宮殿/玉座の間
 ;@Person:プーの準備品箱
 ;@Figure:東洋風プレゼント箱
 ;@AppearanceKey:0
@@ -216,7 +216,7 @@ MSG_RAMA_PHONEMASTER;
 @SETF(FLG_BOX_RAMA_1)
 』
 
-;@Habitat:ランマ／宮殿／廊下
+;@Habitat:ランマ/宮殿/廊下
 ;@Person:仕え人B
 ;@Figure:ランマ女
 ;@AppearanceKey:0
@@ -224,7 +224,7 @@ MSG_RAMA_PHONEMASTER;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_RAMA_B
-MSG_RAMA_B;＆
+MSG_RAMA_B;&
 @CHKFGOTO(FLG_WIN_GIEGU,_RAMA_B_END)
 @SET_LOOPREG(1)
 _RAMA_B_Q_LOOP;
@@ -259,7 +259,7 @@ _RAMA_B_POO_NO;ネスと共に
 ;jpn:◆さみしさを かみころして↓
 ;jpn: いきておりますわ。@KEYNP()
 』
-_RAMA_B_END;＆
+_RAMA_B_END;&
 ◆Prince @DSP_NAME(PC_POO) has returned, so everyone is extremely happy.@KEY()↓
 ◆Please stay and relax.
 @KEYNP()
@@ -270,7 +270,7 @@ _RAMA_B_END;＆
 』
 
 ;----------------------------------------
-;@Habitat:ランマ／住人の家A／住人の家A
+;@Habitat:ランマ/住人の家A/住人の家A
 ;@Person:住人A
 ;@Figure:ランマ男A
 ;@AppearanceKey:0
@@ -288,7 +288,7 @@ MSG_RAMA_HOUSE_A;
 ;jpn: ごらんください。@KEYNP()
 』
 
-;@Habitat:ランマ／住人の家A／住人の家A
+;@Habitat:ランマ/住人の家A/住人の家A
 ;@Person:プレゼント箱
 ;@Figure:東洋風プレゼント箱
 ;@AppearanceKey:0
@@ -319,7 +319,7 @@ MSG_RAMA_HOUSE_A;
 @SETF(FLG_BOX_RAMA_2)
 』
 
-;@Habitat:ランマ／住人の家B／住人の家B
+;@Habitat:ランマ/住人の家B/住人の家B
 ;@Person:住人B
 ;@Figure:ランマ女
 ;@AppearanceKey:0
@@ -343,7 +343,7 @@ _RAMA_HOUSE_B_LATER;
 ;jpn: へやのなかが くさくない。@KEYNP()
 』
 
-;@Habitat:ランマ／住人の家C／住人の家C
+;@Habitat:ランマ/住人の家C/住人の家C
 ;@Person:住人C
 ;@Figure:ランマ男B
 ;@AppearanceKey:0
@@ -389,7 +389,7 @@ _RAMA_HOUSE_C_TMP;
 ;jpn: がいこくの かたには↓
 ;jpn: うまく はなしができないんです。@KEYNP()
 』
-_RAMA_HOUSE_C_END;＆
+_RAMA_HOUSE_C_END;&
 ◆Hello.@KEY()↓
 ◆Congratulations.@KEY()↓
 ◆Thank you...@KEY()↓
@@ -402,7 +402,7 @@ _RAMA_HOUSE_C_END;＆
 』
 
 ;----------------------------------------
-;@Habitat:ランマ／フィールド／フィールドの適当なところ
+;@Habitat:ランマ/フィールド/フィールドの適当なところ
 ;@Person:外のランマ人A
 ;@Figure:ロープマジック男
 ;@AppearanceKey:0
@@ -420,7 +420,7 @@ MSG_RAMA_FIELD_A;
 ;jpn: ‥‥‥@WI(20)プピー‥‥。@KEYNP()
 』
 
-;@Habitat:ランマ／フィールド／フィールドの適当なところ
+;@Habitat:ランマ/フィールド/フィールドの適当なところ
 ;@Person:外のランマ人B
 ;@Figure:ランマ男A
 ;@AppearanceKey:0
@@ -439,7 +439,7 @@ MSG_RAMA_FIELD_B;
 ;jpn: そんざいの たえられないかるさ。↓
 ;jpn: うーむ うーむ。@KEYNP()
 』
-_RAMA_FIELD_B_LATER;＃
+_RAMA_FIELD_B_LATER;#
 ◆What’s the difference between ”existing” and ”exiting”@KEY()↓
 ◆.....Nothing?@KEY()↓
 ◆Mmmmm Mmmmm
@@ -449,7 +449,7 @@ _RAMA_FIELD_B_LATER;＃
 ;jpn:◆‥‥ないのではないか?↓
 ;jpn: うーむ うーむ。@KEYNP()
 』
-_RAMA_FIELD_B_END;＆
+_RAMA_FIELD_B_END;&
 ◆I’m a little embarrassed to say it, but I’ll tell you anyway...@KEY()↓
 ◆I thought ”Philosophy” was the study of stones.@KEY()↓
 ◆I now realize it’s about studying all night...@KEY()↓
@@ -468,7 +468,7 @@ _RAMA_FIELD_B_END;＆
 ;jpn:◆‥‥えっ ちがうの?@KEYNP()
 』
 
-;@Habitat:ランマ／フィールド／フィールドの適当なところ
+;@Habitat:ランマ/フィールド/フィールドの適当なところ
 ;@Person:外のランマ人C
 ;@Figure:ランマ女
 ;@AppearanceKey:0
@@ -502,7 +502,7 @@ _RAMA_FIELD_C_LATER;
 ;jpn: わたしを みつめてほしかった。@KEYNP()
 』
 
-;@Habitat:ランマ／フィールド／無の場所
+;@Habitat:ランマ/フィールド/無の場所
 ;@Person:無の場所の立て札
 ;@Figure:立て札
 ;@AppearanceKey:0
@@ -526,7 +526,7 @@ MSG_RAMA_CHECK_MU;
 ;@GOSUB(MSG_DEBUG_EVENT_79)
 』
 
-;@Habitat:ランマ／フィールド／ピンククラウド入り口
+;@Habitat:ランマ/フィールド/ピンククラウド入り口
 ;@Person:ピンククラウド番人
 ;@Figure:ランマ男B
 ;@AppearanceKey:FLG_PU/off
@@ -557,7 +557,7 @@ _RAMA_GUARD_LATER;ウサギバリアを消した後
 ;jpn: みたかった。@KEYNP()
 』
 
-;@Habitat:ランマ／ピンククラウド／大部屋
+;@Habitat:ランマ/ピンククラウド/大部屋
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_PINK_BOSS/off
@@ -575,7 +575,7 @@ MSG_RAMA_PINK_BOSS;
 ◆This is the sixth ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは ６ばんめの↓
+;jpn:◆ここは 6ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓
@@ -652,7 +652,7 @@ _RAMA_GIRL_B_LATER;その後
 ◆(weep)
 @KEYNP()
 』
-_RAMA_GIRL_B_END;＆
+_RAMA_GIRL_B_END;&
 ◆Prince @DSP_NAME(PC_POO) is so cool, but you’re also young and tough.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまも↓
@@ -664,7 +664,7 @@ MSG_RAMA_GIRL_C;松(後半メッセージなし)
 @CHKFGOTO(FLG_PU,_RAMA_GIRL_C_LATER)
 ◆Prince @DSP_NAME(PC_POO)...(blush).@KEY()↓
 ◆He is such a hunk.
-;＠プーがいたら「You are」
+;@プーがいたら「You are」
 ;jpn:◆@DSP_STS(STS_PC_NAME_POO)おうじさまって↓
 ;jpn: ‥‥ポ@KEY()↓
 ;jpn:◆このごろ とても↓
@@ -771,9 +771,9 @@ _RABBIT_RECEIVE_NG;
 
 MSG_RAMA_CHECK_SHOP;ランマショップのカンバン
 ◆Dalaama Restaurant.@KEY()↓
-◆(We accept ＄ dollars.)
+◆(We accept $ dollars.)
 @KEYNP()
 ;jpn:◆ランマりょうりの みせ↓
-;jpn: (＄ドルも つかえます)@KEYNP()
+;jpn: ($ドルも つかえます)@KEYNP()
 』
 ;-------------------------------------------------

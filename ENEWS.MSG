@@ -240,7 +240,7 @@ _PAPER_ONET_09;marcus
 @GOSUB(_PAPER_ONET_PARTS_3)
 ◆”Isn’t it about time for a fantastic vacation to the dream resort of Summers?@KEY()↓
 ◆Someday, we’ll see you there...”
-；jpn:◆「ゆめの ビーチリゾート↓
+;jpn:◆「ゆめの ビーチリゾート↓
 ;jpn: サマーズで バカンスはいかが?↓
 ;jpn: あなたも いつか きっと‥‥」
 @KEYNP()
@@ -327,7 +327,7 @@ _PAPER_ONET_22;marcus
 @GOSUB(_PAPER_ONET_PARTS_2)
 ◆”Onett Police chief still not through playing EarthBound!”
 ;jpn:◆「オネットけいさつしょちょう↓
-;jpn: マザー２ まだ おわらず」
+;jpn: マザー2 まだ おわらず」
 @KEYNP()
 @!
 
@@ -356,7 +356,7 @@ _PAPER_ONET_24;marcus
 _PAPER_ONET_25;marcus
 @GOSUB(_PAPER_ONET_PARTS_1)
 @GOSUB(_PAPER_ONET_PARTS_2)
-◆”International news：  Pyramid in Scaraba vandalized”
+◆”International news:  Pyramid in Scaraba vandalized”
 ;jpn:◆「かいがいの ニュースより。↓
 ;jpn: スカラビの ピラミッド↓
 ;jpn: なにものかに あらされる!?」
@@ -380,7 +380,7 @@ _PAPER_ONET_27;marcus
 ◆”Local survey shows most popular career among kids in Onett is adventurer”
 ;jpn:◆「オネットの こどもたちの↓
 ;jpn: あこがれの しょくぎょう。↓
-;jpn: ナンバー１は ぼうけんか」
+;jpn: ナンバー1は ぼうけんか」
 @KEYNP()
 @!
 
@@ -398,8 +398,8 @@ _PAPER_ONET_29;marcus
 @GOSUB(_PAPER_ONET_PARTS_2)
 ◆”Onett police chief finishes EarthBound, asks, ”Where is the sequel?”
 ;jpn:◆「オネットけいさつしょちょう↓
-;jpn: マザー２ ついに おわらせる!↓
-;jpn: そして ひとこと ３はまだか!」
+;jpn: マザー2 ついに おわらせる!↓
+;jpn: そして ひとこと 3はまだか!」
 @KEYNP()
 @!
 
@@ -523,7 +523,7 @@ _PAPER_TWSN_18;marcus
 @GOSUB(_PAPER_TWSN_PART_2)
 ◆”Explosion heard recently caused by unknown craft crashing @KEY()↓
 ◆into the graveyard in Threed”
-；jpn:◆「せんじつの ばくはつおんは↓
+;jpn:◆「せんじつの ばくはつおんは↓
 ;jpn: スリークの きょうどうぼちに↓
 ;jpn: おちた へんなものが げんいん」
 @KEYNP()
@@ -706,7 +706,7 @@ _PAPER_THRK_13;marcus
 ;jpn: そとは いやなおてんきですよ。
 @KEY()↓
 @GOSUB(_PAPER_THRK_PART_2)
-◆”Today’s weather： thick, gray clouds all day”↓
+◆”Today’s weather: thick, gray clouds all day”↓
 ;jpn:◆「てんきよほう↓
 ;jpn: きょうも どんよりとした↓
 ;jpn: じつによい くもりぞらでしょう」
@@ -720,7 +720,7 @@ _PAPER_THRK_14;marcus
 @KEY()↓
 @GOSUB(_PAPER_THRK_PART_2)
 ◆”Two human kids escape by somehow opening their cage”
-;jpn:◆「にんげんのこども ２ひき↓
+;jpn:◆「にんげんのこども 2ひき↓
 ;jpn: オリのカギをあけて にげだす!」
 @KEYNP()
 @!
@@ -847,7 +847,7 @@ _PAPER_THRK_25;marcus
 @GOSUB(_PAPER_THRK_PART_4)
 ◆”Pyramid mysteriously opens in distant Scaraba.↓
 ◆Is this a good portent?”
-；jpn:◆「はるか スカラビのくにの↓
+;jpn:◆「はるか スカラビのくにの↓
 ;jpn: ピラミッドのとびら ひらく!↓
 ;jpn: こううんの きざしか?」
 @KEYNP()
@@ -918,7 +918,7 @@ _PAPER_FOUR_PART_1;marcus
 
 _PAPER_FOUR_PART_2;marcus
 ◆On the front page of the Fourside Post...
-;jpn: フォーサイドポスト だい１めん
+;jpn: フォーサイドポスト だい1めん
 @KEY()↓
 @!
 
@@ -941,33 +941,33 @@ _PAPER_FOUR_16;
 _PAPER_FOUR_17;
 @GOSUB(_PAPER_FOUR_PART_1)
 @GOSUB(_PAPER_FOUR_PART_2)
-◆”Over ７０％ of Fourside citizens support Monotoli”
+◆”Over 70% of Fourside citizens support Monotoli”
 ;jpn:◆「フォーサイドしみんによる↓
 ;jpn: モノトリーしの しじりつ↓
-;jpn: ７０パーセントを こえる!」
+;jpn: 70パーセントを こえる!」
 @KEYNP()
 @!
 
 _PAPER_FOUR_18;marcus
 @GOSUB(_PAPER_FOUR_PART_1)
 @GOSUB(_PAPER_FOUR_PART_2)
-◆”Over ８０％ of Fourside citizens support Monotoli”
+◆”Over 80% of Fourside citizens support Monotoli”
 ;jpn:◆「フォーサイドしみんによる↓
 ;jpn: モノトリーしの しじりつ↓
-;jpn: ８０パーセントを こえる!」
+;jpn: 80パーセントを こえる!」
 @KEYNP()
 @!
 
 _PAPER_FOUR_19;marcus
 @GOSUB(_PAPER_FOUR_PART_1)
 @GOSUB(_PAPER_FOUR_PART_2)
-◆”Over ９０％ of Fourside citizens support Monotoli”@KEY()↓
-◆Then on page １７, @KEY()↓
+◆”Over 90% of Fourside citizens support Monotoli”@KEY()↓
+◆Then on page 17, @KEY()↓
 ◆”Mysterious department store blackout caused by mouse”
 ;jpn:◆「フォーサイドしみんによる↓
 ;jpn: モノトリーしの しじりつ↓
-;jpn: ９０パーセントを こえる!」@KEY()↓
-;jpn:◆フォーサイドポスト だい１７めん@KEY()↓
+;jpn: 90パーセントを こえる!」@KEY()↓
+;jpn:◆フォーサイドポスト だい17めん@KEY()↓
 ;jpn:◆「デパートの なぞのていでん↓
 ;jpn: げんいんは ネズミのイタズラ」
 @KEYNP()
@@ -976,14 +976,14 @@ _PAPER_FOUR_19;marcus
 _PAPER_FOUR_20;marcus
 @GOSUB(_PAPER_FOUR_PART_1)
 @GOSUB(_PAPER_FOUR_PART_2)
-◆”Over ５０％ of Fourside citizens now support Anti−Monotoli campaign”@KEY()↓
-◆And on page ２３ of the Fourside Post.@KEY()↓
+◆”Over 50% of Fourside citizens now support Anti−Monotoli campaign”@KEY()↓
+◆And on page 23 of the Fourside Post.@KEY()↓
 ◆”Lonely demise in the city.  Long−haired man with beard,@KEY()↓
 ◆sunglasses and aloha shirt found in street”
 ;jpn:◆「フォーサイドしみんによる↓
 ;jpn: モノトリーしの しじりつ↓
-;jpn: ５０パーセントを したまわる!」@KEY()↓
-;jpn:◆フォーサイドポスト だい２３めん@KEY()↓
+;jpn: 50パーセントを したまわる!」@KEY()↓
+;jpn:◆フォーサイドポスト だい23めん@KEY()↓
 ;jpn:◆「とかいの こどくな し。↓
 ;jpn: サングラス ひげ ちょうはつ↓
 ;jpn: アロハシャツの だんせい」
@@ -1028,10 +1028,10 @@ _PAPER_FOUR_23;marcus
 
 _PAPER_FOUR_24;marcus
 @GOSUB(_PAPER_FOUR_PART_1)
-◆On page ２５ of the Fourside Post...@KEY()↓
+◆On page 25 of the Fourside Post...@KEY()↓
 ◆”Venus becomes toast of Fourside Autograph hunters creating problems for famed singer”
-；jpn： フォーサイドポスト だい２５めん@KEY()↓
-；jpn：◆「いま フォーサイドで↓
+;jpn: フォーサイドポスト だい25めん@KEY()↓
+;jpn:◆「いま フォーサイドで↓
 ;jpn: ビーナスにんき ふっとうちゅう!↓
 ;jpn: まいにちが サインぜめ」
 @KEYNP()
@@ -1039,10 +1039,10 @@ _PAPER_FOUR_24;marcus
 
 _PAPER_FOUR_25;marcus
 @GOSUB(_PAPER_FOUR_PART_1)
-◆On page ３ of the Fourside Post...@KEY()↓
+◆On page 3 of the Fourside Post...@KEY()↓
 ◆”Criminal activity in Scaraba?@KEY()↓
 ◆Sacred treasure of pyramid, the @DSP_GOODS(GDS_TOOL_EAGLE_EYE) stolen”
-;jpn: フォーサイドポスト だい３めん@KEY()↓
+;jpn: フォーサイドポスト だい3めん@KEY()↓
 ;jpn:◆「スカラビに せっとうだん?!↓
 ;jpn: ピラミッドの ひほう @DSP_GOODS(GDS_TOOL_EAGLE_EYE)が↓
 ;jpn: なにものかに もちさられる」
@@ -1067,11 +1067,11 @@ _PAPER_FOUR_26;marcus
 
 _PAPER_FOUR_27;marcus
 @GOSUB(_PAPER_FOUR_PART_1)
-◆on page １３ of the Fourside Post...@KEY()↓
+◆on page 13 of the Fourside Post...@KEY()↓
 ◆”Newspaper reading by bellboys is not exclusive to Fourside only@KEY()↓
 ◆Do not be taken in by bellboys just looking for a tip”@KEY()↓
 ◆...I’m so ashamed...
-;jpn: フォーサイドポスト だい１３めん@KEY()↓
+;jpn: フォーサイドポスト だい13めん@KEY()↓
 ;jpn:◆「しんぶん よみあげサービスは↓
 ;jpn: いまどき どこでも あたりまえ。↓
 ;jpn: だまされないよう ちゅうい」@KEY()↓
@@ -1225,7 +1225,7 @@ _PAPER_SUMS_28;marcus
 ◆”Stop doing anything complicated.@KEY()↓
 ◆Forget about solving mysteries and completing stages!@KEY()↓
 ◆Welcome to the easy life in Summers!”
-；jpn：◆けさの デイリーサマーズに↓
+;jpn:◆けさの デイリーサマーズに↓
 ;jpn: すてきな こうこくがのってます。@KEY()↓
 ;jpn:◆「ややこしいこと やめましょう。↓
 ;jpn: ナゾとか クリアとか かんがえず↓
@@ -1298,9 +1298,9 @@ _PAPER_SKRB_23;
 
 _PAPER_SKRB_24;marcus
 @GOSUB(_PAPER_SKRB_PART_1)
-◆”Activity at pyramid the first in ３００ years”@KEY()↓
+◆”Activity at pyramid the first in 300 years”@KEY()↓
 ;jpn:◆「さばくの ピラミッド↓
-;jpn: ３００ねんぶりにトビラがひらいた
+;jpn: 300ねんぶりにトビラがひらいた
 @GOSUB(_PAPER_SKRB_PART_2)
 @!
 
@@ -1340,7 +1340,7 @@ _PAPER_SKRB_29;marcus
 @GOSUB(_PAPER_SKRB_PART_1)
 ◆”Terrible sound recently heard@KEY()↓
 ◆Possibly the sound of evil being destroyed beyond our time and space”@KEY()↓
-；jpn:◆「せんじつ じくうをこえて↓
+;jpn:◆「せんじつ じくうをこえて↓
 ;jpn: あくが ほろびる おとがした。
 @GOSUB(_PAPER_SKRB_PART_2)
 @!

@@ -2,11 +2,11 @@
 
 ;「ボルヘスの酒場」を出ると、ムーンサイドの「怪しい酒場」の裏に出る。
 
-;@Habitat:ムーンサイド／フィールド／ムーンサイドボルヘス近く
+;@Habitat:ムーンサイド/フィールド/ムーンサイドボルヘス近く
 ;@Person:通行人A
 ;@Figure:サラリーマンC
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_A
@@ -22,15 +22,15 @@ MSG_MOON_A;
 @KEYNP()
 』
 
-；----------------------------------------
+;----------------------------------------
 ;「怪しい酒場」の中
-;「マスターもどき」「ママもどき」「客１」「客２」の４人がいる。
+;「マスターもどき」「ママもどき」「客1」「客2」の4人がいる。
 
-;@Habitat:ムーンサイド／ムーンサイドボルヘス／ムーンサイドボルヘス
+;@Habitat:ムーンサイド/ムーンサイドボルヘス/ムーンサイドボルヘス
 ;@Person:マスターもどき
 ;@Figure:酒場のマスター
 ;@AppearanceKey:0
-;@ActionScript:＊止ったまま
+;@ActionScript:*止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_MASTER
@@ -45,11 +45,11 @@ MSG_MOON_BAR_MASTER;
 』
 
 
-;@Habitat:ムーンサイド／ムーンサイドボルヘス／ムーンサイドボルヘス
+;@Habitat:ムーンサイド/ムーンサイドボルヘス/ムーンサイドボルヘス
 ;@Person:ママもどき
 ;@Figure:おばさんC
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_BETTY
@@ -64,11 +64,11 @@ MSG_MOON_BAR_BETTY;
 』
 
 
-;@Habitat:ムーンサイド／ムーンサイドボルヘス／ムーンサイドボルヘス
+;@Habitat:ムーンサイド/ムーンサイドボルヘス/ムーンサイドボルヘス
 ;@Person:客A
 ;@Figure:酒場の客
 ;@AppearanceKey:0
-;@ActionScript:＊背面向いて止ったまま
+;@ActionScript:*背面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_A
@@ -85,11 +85,11 @@ MSG_MOON_BAR_A;
 』
 
 
-;@Habitat:ムーンサイド／ムーンサイドボルヘス／ムーンサイドボルヘス
+;@Habitat:ムーンサイド/ムーンサイドボルヘス/ムーンサイドボルヘス
 ;@Person:客B
 ;@Figure:OLC
 ;@AppearanceKey:0
-;@ActionScript:＊背面向いて止ったまま
+;@ActionScript:*背面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_BAR_B
@@ -108,12 +108,12 @@ MSG_MOON_BAR_B;
 ;以上の「酒場の人たち」のセリフにより
 ;ムーンサイドでの受け応え(はいor いいえ)は
 ;「逆さまが正しい」ことがわかる。
-；----------------------------------------
-;@Habitat:ムーンサイド／フィールド／どこか
+;----------------------------------------
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人B
 ;@Figure:リゾート男
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_B
@@ -211,11 +211,11 @@ MSG_MOON_Z;
 @WARP(WARP_MOON_Z)
 』
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人C
 ;@Figure:リゾート女
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_C
@@ -231,11 +231,11 @@ MSG_MOON_C;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人D
 ;@Figure:ツッパリ
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_D
@@ -255,11 +255,11 @@ MSG_MOON_D;
 』
 
 
-;@Habitat:ムーンサイド／病院／部屋
+;@Habitat:ムーンサイド/病院/部屋
 ;@Person:通行人E
 ;@Figure:OLG
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_E
@@ -293,11 +293,11 @@ _MOON_E_YES;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人F
 ;@Figure:サラリーマンB
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_F
@@ -340,11 +340,11 @@ _MOON_F_YES;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人G
 ;@Figure:ジミな男
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_G
@@ -368,11 +368,11 @@ MSG_MOON_G;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人H
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_H
@@ -406,11 +406,11 @@ _MOON_H_YES;
 』
 
 
-;@Habitat:ムーンサイド／ホテル／受け付け
+;@Habitat:ムーンサイド/ホテル/受け付け
 ;@Person:通行人I
 ;@Figure:レゲエ
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_I
@@ -429,11 +429,11 @@ MSG_MOON_I;
 @KEYNP()
 』
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人J(数字男B案)
 ;@Figure:ボロ
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_J_NUMBERMAN_B
@@ -441,46 +441,46 @@ MSG_MOON_J_NUMBERMAN_B;
 @CHKFGOTO(FLG_MOON_NUMBERMAN_B3,_MOON_I_NUMBERMAN_B_AFTER3)
 @CHKFGOTO(FLG_MOON_NUMBERMAN_B2,_MOON_I_NUMBERMAN_B_AFTER2)
 @CHKFGOTO(FLG_MOON_NUMBERMAN_B1,_MOON_I_NUMBERMAN_B_AFTER1)
-◆２５７  ２５６  ２５５  ２５４  ２５３...@KEY()↓
+◆257  256  255  254  253...@KEY()↓
 ◆So what’s your problem?↓
   If you don’t want anything, get outta here.@KEY()↓
 ◆I’m counting backwards.@KEY()↓
-◆２５２  ２５１  ２５０...
+◆252  251  250...
 
-;◆２５７@WI(20) ２５６@WI(20) ２５５@WI(20)↓
-;jpn: ２５４@WI(20) ２５３‥‥@KEY()↓
+;◆257@WI(20) 256@WI(20) 255@WI(20)↓
+;jpn: 254@WI(20) 253‥‥@KEY()↓
 ;jpn:◆なにか ようか?@WI(20)↓
 ;jpn: なにも ようじがないんなら↓
 ;jpn: あっち いけ。@KEY()↓
 ;jpn:◆いま おれは すうじを↓
 ;jpn: へらしているところなんだ。@KEY()↓
-;jpn:◆２５２@WI(20) ２５１@WI(20) ２５０‥‥
+;jpn:◆252@WI(20) 251@WI(20) 250‥‥
 @KEYNP()
 @SETF(FLG_MOON_NUMBERMAN_B1)
 』
 
 _MOON_I_NUMBERMAN_B_AFTER1;
-◆６９  ６８  ６７  ６６  ６５  ６４  ６３...@KEY()↓
+◆69  68  67  66  65  64  63...@KEY()↓
 ◆What?  Is this a special hobby of yours?  You like watching people count backwards?@KEY()↓
-◆６２  ６１  ６０  ５９...
+◆62  61  60  59...
 
-◆６９@WI(15) ６８@WI(15) ６７@WI(15) ６６@WI(15)↓
-;jpn: ６５@WI(15) ６４@WI(15) ６３‥‥@KEY()↓
+◆69@WI(15) 68@WI(15) 67@WI(15) 66@WI(15)↓
+;jpn: 65@WI(15) 64@WI(15) 63‥‥@KEY()↓
 ;jpn:◆おまえは すうじを↓
 ;jpn: へらしているとこを みるのが↓
 ;jpn: しゅみなのか?@KEY()↓
-;jpn:◆６２@WI(15) ６１@WI(15) ６０@WI(15) ５９‥‥
+;jpn:◆62@WI(15) 61@WI(15) 60@WI(15) 59‥‥
 @KEYNP()
 @SETF(FLG_MOON_NUMBERMAN_B2)
 』
 
 _MOON_I_NUMBERMAN_B_AFTER2;
-◆９  ８  ７  ６  ５  ４  ３  ２  １  ０...↓
+◆9  8  7  6  5  4  3  2  1  0...↓
   Baboooooooom!!@KEY()↓
 ◆Wow!  I scared myself.
 
-;◆９ ８ ７ ６ ５ ４↓
-;jpn: ３ ２ １ ０‥‥↓
+;◆9 8 7 6 5 4↓
+;jpn: 3 2 1 0‥‥↓
 ;jpn: ドッカアーーーーン!!@KEY()↓
 ;jpn:◆‥‥ああ@WI(20) びっくりした!
 @KEYNP()
@@ -494,11 +494,11 @@ _MOON_I_NUMBERMAN_B_AFTER3;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人K
 ;@Figure:ランマ女
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_K
@@ -520,11 +520,11 @@ MSG_MOON_K;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人L
 ;@Figure:パンク青年
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_L
@@ -558,11 +558,11 @@ _MOON_L_YES;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人M
 ;@Figure:用心棒
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_M
@@ -571,8 +571,8 @@ MSG_MOON_M;
 ◆I will send the first and the second...@KEY()↓
 ◆to the hospital.
 
-;jpn:◆おまえ その１と↓
-;jpn: おまえ その２を‥‥@KEY()↓
+;jpn:◆おまえ その1と↓
+;jpn: おまえ その2を‥‥@KEY()↓
 ;jpn:◆びょういんおくりに してやる!
 @KEY()
 @CLOSEALL()
@@ -581,32 +581,32 @@ MSG_MOON_M;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人N
 ;@Figure:マスク
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_N
 MSG_MOON_N;
 ;(驚かすだけ。HPはそのまま)
-◆@DSP_STS(STS_PC_NAME_NES)’s HP drops to ０!@KEY()↓
-◆@DSP_STS(STS_PC_NAME_JEFF)’s HP drops to ０!
+◆@DSP_STS(STS_PC_NAME_NES)’s HP drops to 0!@KEY()↓
+◆@DSP_STS(STS_PC_NAME_JEFF)’s HP drops to 0!
 
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)のHPは↓
-;jpn: ０になった!@KEY()↓
+;jpn: 0になった!@KEY()↓
 ;jpn:◆@DSP_STS(STS_PC_NAME_JEFF)のHPは↓
-;jpn: ０になった!
+;jpn: 0になった!
 @KEYNP()
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人O
 ;@Figure:サラリーマンA
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_O
@@ -621,11 +621,11 @@ MSG_MOON_O;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人P
 ;@Figure:ゴロツキ
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_P
@@ -646,11 +646,11 @@ MSG_MOON_P;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人Q
 ;@Figure:アーティスト
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_Q
@@ -669,12 +669,12 @@ MSG_MOON_Q;
 @KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:ムーンサイド／ドアのない部屋／どこか
+;----------------------------------------
+;@Habitat:ムーンサイド/ドアのない部屋/どこか
 ;@Person:不透明人間
 ;@Figure:モヒカン
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_VISIBLEMAN
@@ -715,11 +715,11 @@ _MOON_VISIBLEMAN_AFTER;
 』
 
 
-;@Habitat:ムーンサイド／ドアのない部屋／どこか
+;@Habitat:ムーンサイド/ドアのない部屋/どこか
 ;@Person:透明人間
 ;@Figure:ヒットくん
 ;@AppearanceKey:FLG_MOON_INVISIBLEMAN/off
-;@ActionScript:＊固定
+;@ActionScript:*固定
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_INVISIBLEMAN
@@ -766,12 +766,12 @@ _MOON_INVISIBLEMAN_YES;
 』
 
 
-；----------------------------------------
-;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:透明人間の声１
+;----------------------------------------
+;@Habitat:ムーンサイド/フィールド/どこか
+;@Person:透明人間の声1
 ;@Figure:ヒットくん
 ;@AppearanceKey:FLG_MOON_INVISIBLE_1/on
-;@ActionScript:＊オートメッセージ
+;@ActionScript:*オートメッセージ
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_INVISIBLE_1
@@ -800,11 +800,11 @@ MSG_MOON_INVISIBLE_1;
 @CLOSE()
 』
 
-;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:透明人間の声２
+;@Habitat:ムーンサイド/フィールド/どこか
+;@Person:透明人間の声2
 ;@Figure:ヒットくん
 ;@AppearanceKey:FLG_MOON_INVISIBLE_2/on
-;@ActionScript:＊オートメッセージ
+;@ActionScript:*オートメッセージ
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_INVISIBLE_2
@@ -821,11 +821,11 @@ MSG_MOON_INVISIBLE_2;
 @CLOSE()
 』
 
-;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:透明人間の声３
+;@Habitat:ムーンサイド/フィールド/どこか
+;@Person:透明人間の声3
 ;@Figure:ヒットくん
 ;@AppearanceKey:FLG_MOON_INVISIBLE_3/on
-;@ActionScript:＊オートメッセージ
+;@ActionScript:*オートメッセージ
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_INVISIBLE_3
@@ -847,18 +847,18 @@ MSG_MOON_INVISIBLE_3;
 @CLOSE()
 』
 
-;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:透明人間の声４
+;@Habitat:ムーンサイド/フィールド/どこか
+;@Person:透明人間の声4
 ;@Figure:ヒットくん
 ;@AppearanceKey:FLG_MOON_INVISIBLE_4/on
-;@ActionScript:＊オートメッセージ
+;@ActionScript:*オートメッセージ
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_INVISIBLE_4
 MSG_MOON_INVISIBLE_4;
 MSG_MOON_INVISIBLE_4_A;
 @OPEN(1)
-◆＊Grin＊Grin＊.@KEY()↓
+◆*Grin*Grin*.@KEY()↓
 ◆Heh heh.
 
 ;jpn:◆にかっ にかっ。@KEY()↓
@@ -871,7 +871,7 @@ MSG_MOON_INVISIBLE_4_A;
 
 MSG_MOON_INVISIBLE_4_B;
 @OPEN(1)
-◆＊Smile＊Smile＊@KEY()↓
+◆*Smile*Smile*@KEY()↓
 ◆Heh heh.
 
 ;jpn:◆にかっ にかっ。@KEY()↓
@@ -882,11 +882,11 @@ MSG_MOON_INVISIBLE_4_B;
 @CLOSE()
 』
 
-;@Habitat:ムーンサイド／フィールド／どこか
-;@Person:透明人間の声５
+;@Habitat:ムーンサイド/フィールド/どこか
+;@Person:透明人間の声5
 ;@Figure:ヒットくん
 ;@AppearanceKey:FLG_MOON_INVISIBLE_5/on
-;@ActionScript:＊オートメッセージ
+;@ActionScript:*オートメッセージ
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_INVISIBLE_5
@@ -908,11 +908,11 @@ MSG_MOON_INVISIBLE_5;
 』
 
 
-;@Habitat:ムーンサイド／フィールド／どこか
+;@Habitat:ムーンサイド/フィールド/どこか
 ;@Person:通行人R
 ;@Figure:若い船乗り
 ;@AppearanceKey:FLG_MOON_R_DISAPPEAR/off
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_R
@@ -957,11 +957,11 @@ _MOON_R_AFTER;
 @SETF(FLG_MOON_R_DISAPPEAR)
 』
 
-;@Habitat:ムーンサイド／フィールド／モノトリービル前
+;@Habitat:ムーンサイド/フィールド/モノトリービル前
 ;@Person:幻影マシン
 ;@Figure:黄金のオスカー
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:MSG_MOON_MANIMANI
 ;@Message:0
@@ -1000,11 +1000,11 @@ MSG_CHECK_FOUR_MANIMANI;壊れたマニマニチェック時
 』
 
 ;-------------------------------------------------
-;@Habitat:ムーンサイド／ムーンサイド博物館／どこか
+;@Habitat:ムーンサイド/ムーンサイド博物館/どこか
 ;@Person:館員A
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_MUSEUM_A
@@ -1040,11 +1040,11 @@ _MOON_MUSEUM_A_YES;
 』
 
 
-;@Habitat:ムーンサイド／ムーンサイド博物館／どこか
+;@Habitat:ムーンサイド/ムーンサイド博物館/どこか
 ;@Person:館員B
 ;@Figure:コモリター
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_MUSEUM_B
@@ -1065,12 +1065,12 @@ MSG_MOON_MUSEUM_B;
 @KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:ムーンサイドホテル／フロント
+;----------------------------------------
+;@Habitat:ムーンサイドホテル/フロント
 ;@Person:フロントマン
 ;@Figure:おじさんB
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_HOTEL_DESK
@@ -1079,11 +1079,11 @@ MSG_MOON_HOTEL_DESK;
 @GOSUB(MSG_GLOBAL_HOTEL)
 』
 
-;@Habitat:ムーンサイド／ホテル／フロント
+;@Habitat:ムーンサイド/ホテル/フロント
 ;@Person:ボーイ
 ;@Figure:ホテルボーイ
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_HOTELPORTER
@@ -1103,21 +1103,21 @@ MSG_MOON_HOTELPORTER;
 @KEYNP()
 』
 
-;@Habitat:ムーンサイド／ホテル／フロント
+;@Habitat:ムーンサイド/ホテル/フロント
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
-;@ActionScript:＊固定
+;@ActionScript:*固定
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
 ;----------------------------------------
-;@Habitat:ムーンサイド／病院／受付
+;@Habitat:ムーンサイド/病院/受付
 ;@Person:受付係
 ;@Figure:看護婦
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_HOSPITAL_USHER
@@ -1126,11 +1126,11 @@ MSG_MOON_HOSPITAL_USHER;@MiuraAppended
 @GOSUB(MSG_NURSE_MOON)
 』
 
-;@Habitat:ムーンサイド／病院／診察室
+;@Habitat:ムーンサイド/病院/診察室
 ;@Person:お医者さん
 ;@Figure:医者
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MOON_HOSPITAL_DOCTOR

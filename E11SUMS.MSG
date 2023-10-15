@@ -1,6 +1,6 @@
 ;-----------------------------------------------------
 
-;@Habitat:サマーズ／クラブストイック／クラブストイック
+;@Habitat:サマーズ/クラブストイック/クラブストイック
 ;@Person:客A
 ;@Figure:ジミな男
 ;@AppearanceKey:0
@@ -21,7 +21,7 @@ MSG_SUMS_CLUB_A;
 @KEYNP()
 』
 
-;@Habitat:サマーズ／クラブストイック／クラブストイック
+;@Habitat:サマーズ/クラブストイック/クラブストイック
 ;@Person:客B♀
 ;@Figure:OLC
 ;@AppearanceKey:0
@@ -43,7 +43,7 @@ MSG_SUMS_CLUB_B;
 ;jpn: ねむってたわ。@KEYNP()
 』
 
-;@Habitat:サマーズ／クラブストイック／クラブストイック
+;@Habitat:サマーズ/クラブストイック/クラブストイック
 ;@Person:客C
 ;@Figure:青年
 ;@AppearanceKey:0
@@ -63,7 +63,7 @@ MSG_SUMS_CLUB_C;
 ;jpn: いきてるわけ?!@KEYNP()
 』
 
-;@Habitat:サマーズ／クラブストイック／クラブストイック
+;@Habitat:サマーズ/クラブストイック/クラブストイック
 ;@Person:客D
 ;@Figure:おじさんD
 ;@AppearanceKey:0
@@ -127,7 +127,7 @@ _SUMS_CLUB_B_LATER;
 ;』
 
 
-;@Habitat:サマーズ／クラブストイック／クラブストイック
+;@Habitat:サマーズ/クラブストイック/クラブストイック
 ;@Person:オーナー(アーシー)
 ;@Figure:モヒカン
 ;@AppearanceKey:0
@@ -155,7 +155,7 @@ MSG_SUMS_CLUB_OWNER;
 ;jpn: メニューは みずだけだけど‥‥。@KEYNP()
 』
 
-;@Habitat:サマーズ／クラブストイック／クラブストイック
+;@Habitat:サマーズ/クラブストイック/クラブストイック
 ;@Person:ウェイトレス(ジョシー)
 ;@Figure:ウェートレスB
 ;@AppearanceKey:0
@@ -189,8 +189,8 @@ _SUMS_CLUB_WAITRESS_PU;
 ;jpn: やすく うってるわよ。@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:サマーズ／トトの住宅A／トトの住宅A
+;----------------------------------------
+;@Habitat:サマーズ/トトの住宅A/トトの住宅A
 ;@Person:住人
 ;@Figure:スペイン人
 ;@AppearanceKey:0
@@ -208,8 +208,8 @@ MSG_TOTO_HOUSE_A;
 ;jpn: しんぴのまち。あこがれのまち。@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:サマーズ／トトの住宅C／トトの住宅C
+;----------------------------------------
+;@Habitat:サマーズ/トトの住宅C/トトの住宅C
 ;@Person:街の人B
 ;@Figure:スペイン人
 ;@AppearanceKey:0
@@ -231,8 +231,8 @@ MSG_TOTO_B;
 ;jpn: このめでみたのは じまんでしょ。@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:サマーズ／トトの住宅D／トトの住宅D
+;----------------------------------------
+;@Habitat:サマーズ/トトの住宅D/トトの住宅D
 ;@Person:住人
 ;@Figure:レゲエ
 ;@AppearanceKey:0
@@ -240,7 +240,7 @@ MSG_TOTO_B;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_TOTO_D
-MSG_TOTO_D;＃
+MSG_TOTO_D;#
 @CHKFGOTO(FLG_SUMS_STOIC_WIFE_DISAPPEAR,_TOTO_D_LATER)
 ◆Do you know the Stoic Club, in Summers?@KEY()↓
 ◆You need to call a secret number for a reservation if you want to get in.@KEY()↓
@@ -262,7 +262,7 @@ MSG_TOTO_D;＃
 @SETF(FLG_SYS_PHONE_STOIC)
 @FUNC(5)			;毒死配達禁止
 』
-_TOTO_D_LATER;＆
+_TOTO_D_LATER;&
 ◆I think this is a nice town.@KEY()↓
 ◆Come back when you grow up!
 @KEYNP()
@@ -272,7 +272,7 @@ _TOTO_D_LATER;＆
 』
 
 ;----------------------------------------
-;@Habitat:サマーズ／トトの住宅G／トトの住宅G
+;@Habitat:サマーズ/トトの住宅G/トトの住宅G
 ;@Person:住人
 ;@Figure:トランペッター
 ;@AppearanceKey:0
@@ -290,7 +290,7 @@ MSG_TOTO_HOUSE_G;
 ;jpn: まだ ふけないんだけどさ。@KEYNP()
 』
 
-;@Habitat:サマーズ／トトの住宅G／トトの住宅G
+;@Habitat:サマーズ/トトの住宅G/トトの住宅G
 ;@Person:ペット
 ;@Figure:チリドッグ
 ;@AppearanceKey:0
@@ -310,7 +310,7 @@ MSG_TOTO_HOUSE_GDOG;
 ;』
 
 ;----------------------------------------
-;@Habitat:サマーズ／雑貨屋／雑貨屋
+;@Habitat:サマーズ/雑貨屋/雑貨屋
 ;@Person:店員
 ;@Figure:若い船乗り
 ;@AppearanceKey:0
@@ -322,8 +322,8 @@ MSG_SUMS_GROCER;
 @GOSUB(MSG_SHOP_SUMS_GROCER)
 』
 
-；----------------------------------------
-;@Habitat:サマーズ／ドラッグストア／ドラッグストア
+;----------------------------------------
+;@Habitat:サマーズ/ドラッグストア/ドラッグストア
 ;@Person:店員
 ;@Figure:リゾート男
 ;@AppearanceKey:0
@@ -335,7 +335,7 @@ MSG_SUMS_DRUGSTORE;@MiuraAppended
 @GOSUB(MSG_SHOP_SUMS_DRUG)
 』
 
-;@Habitat:サマーズ／ドラッグストア／ドラッグストア
+;@Habitat:サマーズ/ドラッグストア/ドラッグストア
 ;@Person:客A
 ;@Figure:Tシャツ
 ;@AppearanceKey:0
@@ -353,11 +353,11 @@ MSG_SUMS_SOUVENIR_A;
 ;jpn: しゃしんでみたことあるのよね。@KEYNP()
 』
 
-;@Habitat:サマーズ／ドラッグストア／ドラッグストア
+;@Habitat:サマーズ/ドラッグストア/ドラッグストア
 ;@Person:客B
 ;@Figure:アーティスト
 ;@AppearanceKey:0
-;@ActionScript:◆足踏み＆方向転換
+;@ActionScript:◆足踏み&方向転換
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_SOUVENIR_B
@@ -396,8 +396,8 @@ _SUMS_SOUVENIR_B_TMP;
 ; いたんだけど みつからなくて。@KEYNP()
 ;』
 
-；----------------------------------------
-;@Habitat:サマーズ／ホテル／廊下ロビー
+;----------------------------------------
+;@Habitat:サマーズ/ホテル/廊下ロビー
 ;@Person:客A
 ;@Figure:ジミな男
 ;@AppearanceKey:0
@@ -419,7 +419,7 @@ MSG_SUMS_HOTEL_A;
 ;jpn: してるんですよ。 きっと。@KEYNP()
 』
 
-;@Habitat:サマーズ／ホテル／廊下ロビー
+;@Habitat:サマーズ/ホテル/廊下ロビー
 ;@Person:客B
 ;@Figure:OLC
 ;@AppearanceKey:0
@@ -433,7 +433,7 @@ MSG_SUMS_HOTEL_B;
 @KEYNP()
 』
 
-;@Habitat:サマーズ／ホテル／廊下ロビー
+;@Habitat:サマーズ/ホテル/廊下ロビー
 ;@Person:客C
 ;@Figure:おばさんB
 ;@AppearanceKey:0
@@ -441,7 +441,7 @@ MSG_SUMS_HOTEL_B;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_HOTEL_C
-MSG_SUMS_HOTEL_C;＃
+MSG_SUMS_HOTEL_C;#
 @CHKFGOTO(FLG_ITEM_HIEROGLYPH,_SUMS_HOTEL_C_END)
 ◆I heard the security guard in the Scaraba Cultural Museum isn’t very nice.@KEY()↓
 ◆But he can be helpful.
@@ -452,7 +452,7 @@ MSG_SUMS_HOTEL_C;＃
 ;jpn: よくないって はなしだけど@WI(20)↓
 ;jpn: りようできるおとこ らしいわ。@KEYNP()
 』
-_SUMS_HOTEL_C_END;＆
+_SUMS_HOTEL_C_END;&
 ◆Forget about the adventure,@KEY()↓
 ◆Come back again!
 @KEYNP()
@@ -490,7 +490,7 @@ MSG_SUMS_HOTEL_D
 
 
 
-;@Habitat:サマーズ／ホテル／受付
+;@Habitat:サマーズ/ホテル/受付
 ;@Person:フロントマン
 ;@Figure:おじさんB
 ;@AppearanceKey:0
@@ -503,7 +503,7 @@ MSG_SUMS_HOTEL_DESK;@MiuraAppended
 @GOSUB(MSG_GLOBAL_HOTEL)
 』
 
-;@Habitat:サマーズ／ホテル／受付
+;@Habitat:サマーズ/ホテル/受付
 ;@Person:ボーイ
 ;@Figure:ホテルボーイ
 ;@AppearanceKey:0
@@ -518,11 +518,11 @@ MSG_SUMS_HOTELPORTER;
 ◆Thank you again, Poke...@KEY()↓
 ◆Uhhh, Mr. @DSP_NAME(0).
 @KEYNP()
-;＠ポーラだったら変える「Miss」
+;@ポーラだったら変える「Miss」
 ;jpn: いえ @WI(20)@DSP_NAME(0)さま。@KEYNP()
 』
 
-;@Habitat:サマーズ／ホテル／キャッシュディスペンサ
+;@Habitat:サマーズ/ホテル/キャッシュディスペンサ
 ;@Person:キャッシュディスペンサ
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -531,8 +531,8 @@ MSG_SUMS_HOTELPORTER;
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-；----------------------------------------
-;@Habitat:サマーズ／レストラン／レストラン
+;----------------------------------------
+;@Habitat:サマーズ/レストラン/レストラン
 ;@Person:店員
 ;@Figure:コック
 ;@AppearanceKey:0
@@ -547,7 +547,7 @@ MSG_SUMS_DINER;
 ;処理後
 』
 
-;@Habitat:サマーズ／レストラン／レストラン
+;@Habitat:サマーズ/レストラン/レストラン
 ;@Person:ウェートレス
 ;@Figure:ウェートレスB
 ;@AppearanceKey:0
@@ -563,7 +563,7 @@ MSG_SUMS_RESTAURANT_WAITRESS;
 ;jpn: うちのメニューには ないわ。@KEYNP()
 』
 
-;@Habitat:サマーズ／レストラン／レストラン
+;@Habitat:サマーズ/レストラン/レストラン
 ;@Person:客A
 ;@Figure:おじさんB
 ;@AppearanceKey:0
@@ -590,7 +590,7 @@ MSG_SUMS_RESTAURANT_A;
 ;jpn: しかたがないけど ね。@KEYNP()
 』
 
-;@Habitat:サマーズ／レストラン／レストラン
+;@Habitat:サマーズ/レストラン/レストラン
 ;@Person:客B
 ;@Figure:おばさんA
 ;@AppearanceKey:0
@@ -607,7 +607,7 @@ MSG_SUMS_RESTAURANT_B;
 ;jpn: おりょうりが すばらしいわ。@KEYNP()
 』
 
-;@Habitat:サマーズ／レストラン／レストラン
+;@Habitat:サマーズ/レストラン/レストラン
 ;@Person:客C
 ;@Figure:おじさんD
 ;@AppearanceKey:0
@@ -624,7 +624,7 @@ MSG_SUMS_RESTAURANT_C;
 ;jpn: おっと みせのひとじゃないのか。@KEYNP()
 』
 
-;@Habitat:サマーズ／レストラン／レストラン
+;@Habitat:サマーズ/レストラン/レストラン
 ;@Person:客D
 ;@Figure:おばあさん
 ;@AppearanceKey:0
@@ -643,8 +643,8 @@ MSG_SUMS_RESTAURANT_D;
 ;jpn: いわとか いしは かたくって。@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:サマーズ／博物館／受付
+;----------------------------------------
+;@Habitat:サマーズ/博物館/受付
 ;@Person:受付嬢(オードリー)
 ;@Figure:OLG
 ;@AppearanceKey:0
@@ -677,7 +677,7 @@ _SUMS_MUSEUM_AUDREY_NO;
 _SUMS_MUSEUM_AUDREY_YES;
 ◆Three dollars per person.@KEY()↓
 ◆Study hard.↓
-;jpn:◆では おひとり３ドルです。↓
+;jpn:◆では おひとり3ドルです。↓
 ;jpn: しっかり べんきょうしてね。↓
 @WINR_MONEY()
 <Yes>
@@ -724,7 +724,7 @@ _SUMS_MUSEUM_PAID;
 ;jpn: はいらないんですよ。@KEYNP()
 』
 
-;@Habitat:サマーズ／博物館／展示室大
+;@Habitat:サマーズ/博物館/展示室大
 ;@Person:係員(オマール)
 ;@Figure:スカラビ男C
 ;@AppearanceKey:0
@@ -772,7 +772,7 @@ MSG_SUMS_MUSEUM_OMAR_PU;
 @TRUE_GOTO(_SUMS_MUSEUM_OMAR_PU_DEAD)
 ◆Oh, the samurai kid is here.@KEY()↓
 ◆Will he be giving me that gem?↓
-;＠プーだけだったら「you」
+;@プーだけだったら「you」
 <Yes>
 <No>
 ;jpn:◆おっと そっちのべんぱつのひと↓
@@ -785,7 +785,7 @@ _SUMS_MUSEUM_OMAR_PU_NO;
 @SE(SE_se76_my_give)
 ◆Excuse me?@KEY()↓
 ◆So, what he just handed me is not a gem.@KEY()↓
-;＠プーだけだったら「you」
+;@プーだけだったら「you」
 ◆Hah ha ha.@KEY()↓
 ◆I’m going to really enjoy the ”cookie” that I just got.@KEY()↓
 ◆Let’s pretend this conversation never took place...@KEY()↓
@@ -944,7 +944,7 @@ _SUMS_OMAR_B_ITEMFULL;
 』
 
 
-;@Habitat:サマーズ／博物館／展示室大
+;@Habitat:サマーズ/博物館/展示室大
 ;@Person:学芸員
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
@@ -952,7 +952,7 @@ _SUMS_OMAR_B_ITEMFULL;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_MUSEUM_KOMORITA
-MSG_SUMS_MUSEUM_KOMORITA;＃
+MSG_SUMS_MUSEUM_KOMORITA;#
 @CHKFGOTO(FLG_WIN_GIEGU,_SUMS_MUSEUM_KOMORITA_END)
 @CHKFGOTO(FLG_FOUR_KOMORITA_APPEAR,_SUMS_MUSEUM_KOMORITA_LATER)
 ◆What?  Mr. Spoon is calling from the Fourside museum?@KEY()↓
@@ -960,7 +960,7 @@ MSG_SUMS_MUSEUM_KOMORITA;＃
 ◆Let him say what he wants!@KEY()↓
 ◆I wonder what he wants to tell me?@KEY()↓
 ◆I dare him to try and upstage me...@KEY()↓
-◆Oh, sorry...I was just talking to myself...＊cough＊
+◆Oh, sorry...I was just talking to myself...*cough*
 @KEYNP()
 ;jpn:◆「フォーサイド↓
 ;jpn: しぜんはくぶつかん」の↓
@@ -986,7 +986,7 @@ _SUMS_MUSEUM_KOMORITA_LATER;
 ;jpn:◆ぼくは あんまり↓
 ;jpn: しりたくないな。@KEYNP()
 』
-_SUMS_MUSEUM_KOMORITA_END;＆
+_SUMS_MUSEUM_KOMORITA_END;&
 ◆You have a good reputaiton.@KEY()↓
 ◆Wouldn’t you like to focus your hard working energy@KEY()↓
 ◆in the exciting field of archaeology?
@@ -999,7 +999,7 @@ _SUMS_MUSEUM_KOMORITA_END;＆
 』
 
 
-;@Habitat:サマーズ／博物館／展示室大
+;@Habitat:サマーズ/博物館/展示室大
 ;@Person:客
 ;@Figure:リゾート男
 ;@AppearanceKey:0
@@ -1007,7 +1007,7 @@ _SUMS_MUSEUM_KOMORITA_END;＆
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_SUMS_MUSEUM_A
-MSG_SUMS_MUSEUM_A;＃
+MSG_SUMS_MUSEUM_A;#
 @CHKFGOTO(FLG_WIN_GIEGU,_SUMS_MUSEUM_A_END)
 ◆I saw a chubby kid about your age here.@KEY()↓
 ◆He looked like he was awfully wealthy.  He was being extravagant!
@@ -1018,7 +1018,7 @@ MSG_SUMS_MUSEUM_A;＃
 ;jpn:◆やたらに かねまわりの↓
 ;jpn: よさそうな ガキだった。@KEYNP()
 』
-_SUMS_MUSEUM_A_END;＆
+_SUMS_MUSEUM_A_END;&
 ◆It’s nice seeing you in such good shape.@KEY()↓
 ◆I wonder what porky Pokey’s doing.@KEY()↓
 ◆Yeah, that’s the boy I met before.
@@ -1029,7 +1029,7 @@ _SUMS_MUSEUM_A_END;＆
 ;jpn:◆どうしてるだろうなぁ。@KEYNP()
 』
 ;----------------------------------------
-;@Habitat:サマーズ／病院／受付
+;@Habitat:サマーズ/病院/受付
 ;@Person:受付嬢
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -1043,7 +1043,7 @@ MSG_SUMS_HOSPITAL_USHER;@MiuraAppended
 ;@GOSUB(MSG_SHOP_SUMS_HOSPITAL)
 』
 
-;@Habitat:サマーズ／病院／診察室
+;@Habitat:サマーズ/病院/診察室
 ;@Person:医者
 ;@Figure:医者
 ;@AppearanceKey:0
@@ -1057,7 +1057,7 @@ MSG_SUMS_HOSPITAL_DOCTOR;@MiuraAppended
 @GOSUB(MSG_DOCTOR_SUMS)
 』
 
-;@Habitat:サマーズ／病院／診察室
+;@Habitat:サマーズ/病院/診察室
 ;@Person:付き添い
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -1075,8 +1075,8 @@ MSG_SUMS_HOSP_GIRL;
 ;jpn: ちゅうしゃがへたで いたいのよ。@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:サマーズ／フィールド／ビーチ
+;----------------------------------------
+;@Habitat:サマーズ/フィールド/ビーチ
 ;@Person:水着の男A
 ;@Figure:海パンB
 ;@AppearanceKey:0
@@ -1097,7 +1097,7 @@ MSG_SUMS_SWIMSUITMAN_A;
 ;jpn: ぼくの のぞみ。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／ビーチ
+;@Habitat:サマーズ/フィールド/ビーチ
 ;@Person:水着の女A
 ;@Figure:ビキニA
 ;@AppearanceKey:0
@@ -1114,7 +1114,7 @@ MSG_SUMS_SWIMSUITGAL_A;
 ;jpn: しつこく ついてくるの。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／ビーチ
+;@Habitat:サマーズ/フィールド/ビーチ
 ;@Person:水着の男B
 ;@Figure:海パンA
 ;@AppearanceKey:0
@@ -1135,7 +1135,7 @@ MSG_SUMS_SWIMSUITMAN_B;
 ;jpn: ふんいき こわしちゃうなぁ。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／道路
+;@Habitat:サマーズ/フィールド/道路
 ;@Person:水着の男C(元サーファー)
 ;@Figure:リゾート男
 ;@AppearanceKey:0
@@ -1156,7 +1156,7 @@ MSG_SUMS_SWIMSUITMAN_C;
 ;jpn: にもつはこびでも やるか。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／ビーチ
+;@Habitat:サマーズ/フィールド/ビーチ
 ;@Person:水着の男D
 ;@Figure:海パンB
 ;@AppearanceKey:0
@@ -1177,7 +1177,7 @@ MSG_SUMS_SWIMSUITMAN_D;
 ;jpn: わたるんだな。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／ビーチ
+;@Habitat:サマーズ/フィールド/ビーチ
 ;@Person:水着の女B
 ;@Figure:ビキニB
 ;@AppearanceKey:0
@@ -1210,7 +1210,7 @@ _SUMS_SWIMSUITGAL_B_TMP;
 』
 
 
-;@Habitat:サマーズ／フィールド／ビーチ
+;@Habitat:サマーズ/フィールド/ビーチ
 ;@Person:オイルマッサージ
 ;@Figure:マッサージ師
 ;@AppearanceKey:FLG_SUMS_MASSAGE_APPEAR/on
@@ -1292,7 +1292,7 @@ _SUMS_WIFE_GOODSFULL;
 ;』
 
 
-;@Habitat:サマーズ／フィールド／ビーチ(スカイウォーカーそば)
+;@Habitat:サマーズ/フィールド/ビーチ(スカイウォーカーそば)
 ;@Person:リゾート客A
 ;@Figure:リゾート女
 ;@AppearanceKey:0
@@ -1313,7 +1313,7 @@ MSG_SUMS_RESORT_A;
 ;jpn: らくに しなさいよ。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／道路
+;@Habitat:サマーズ/フィールド/道路
 ;@Person:リゾート客B
 ;@Figure:リゾート男
 ;@AppearanceKey:0
@@ -1331,8 +1331,8 @@ MSG_SUMS_RESORT_B;
 ;jpn: たかい! サマーズって まちは。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／道路
-;@Person:街の人１
+;@Habitat:サマーズ/フィールド/道路
+;@Person:街の人1
 ;@Figure:Tシャツ
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -1352,8 +1352,8 @@ MSG_SUMS_1;
 ;jpn: あるらしいしさ。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／道路
-;@Person:街の人２
+;@Habitat:サマーズ/フィールド/道路
+;@Person:街の人2
 ;@Figure:アーティスト
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -1369,7 +1369,7 @@ MSG_SUMS_2;
 ;jpn: いつも いいおてんきなのよ。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／道路
+;@Habitat:サマーズ/フィールド/道路
 ;@Person:アイス売り
 ;@Figure:スロットブラザース
 ;@AppearanceKey:0
@@ -1385,7 +1385,7 @@ MSG_SUMS_ICELOLLY;
 』
 
 
-;@Habitat:サマーズ／フィールド／街の至るところ
+;@Habitat:サマーズ/フィールド/街の至るところ
 ;@Person:九官鳥
 ;@Figure:九官鳥
 ;@AppearanceKey:0
@@ -1405,7 +1405,7 @@ MSG_SUMS_BIRD;
 』
 
 
-;@Habitat:サマーズ／フィールド／トトの街の辺り
+;@Habitat:サマーズ/フィールド/トトの街の辺り
 ;@Person:街の人A
 ;@Figure:若い船乗り
 ;@AppearanceKey:0
@@ -1413,7 +1413,7 @@ MSG_SUMS_BIRD;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_TOTO_A
-MSG_TOTO_A;＃
+MSG_TOTO_A;#
 @CHKFGOTO(FLG_TLPT_SKRB,_TOTO_A_LATER)
 ◆To go to Scaraba, you need to cross the sea.@KEY()↓
 ◆However a monster named Kraken lives in the open sea.@KEY()↓
@@ -1443,7 +1443,7 @@ _TOTO_A_LATER;
 ;jpn: つくってるところなんだ。@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／トトの街の辺り
+;@Habitat:サマーズ/フィールド/トトの街の辺り
 ;@Person:街の人C
 ;@Figure:スペイン人
 ;@AppearanceKey:0
@@ -1467,7 +1467,7 @@ MSG_TOTO_C;
 ;jpn: しんじてくでーっ!@KEYNP()
 』
 
-;@Habitat:サマーズ／フィールド／トトの波止場
+;@Habitat:サマーズ/フィールド/トトの波止場
 ;@Person:船乗りA
 ;@Figure:若い船乗り
 ;@AppearanceKey:0
@@ -1511,7 +1511,7 @@ _TOTO_SAILOR_A_YES;
 ◆These days she spends her time hanging out in a strange club.@KEY()↓
 ◆We no longer have any mutual interests to discuss.@KEY()↓
 ◆Is our relationship over?@KEY()↓
-◆...＊Sigh＊
+◆...*Sigh*
 @KEYNP()
 ;jpn:◆‥‥‥。@KEY()↓
 ;jpn:◆にょうぼが↓
@@ -1551,7 +1551,7 @@ _TOTO_SAILOR_AFTER;
 ;jpn:◆さぁ!@WI(15) おれも はりきるぞ!@KEY()↓
 @SETF(FLG_TOTO_SAILOR_MSGCHG)
 ;
-_TOTO_SAILOR_AFTER_MAIN;２度目以降
+_TOTO_SAILOR_AFTER_MAIN;2度目以降
 ◆If you’re courageous, get on this boat.@KEY()↓
 ◆You’ll probably see the Kraken and experience getting seasick!@KEY()↓
 ◆After all, it could only cost you your life, and you got that for free!@KEY()↓
@@ -1566,7 +1566,7 @@ _TOTO_SAILOR_AFTER_MAIN;２度目以降
 ;jpn: スカラビに わたるかね?@KEY()↓
 _TOTO_SAILOR_LATER_MAIN;;
 ◆Twenty bucks per person is fine with me.↓
-;jpn:◆ひとり ２０ドルで いいぜ。↓
+;jpn:◆ひとり 20ドルで いいぜ。↓
 @WINR_MONEY()
 <Yes>
 <No>

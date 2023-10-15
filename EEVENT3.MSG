@@ -9,7 +9,7 @@
 
 ;★スカイウォーカーはオートでウィンタースへ飛行。専用音楽有り。
 ;★マップとマップのつなぎに、雲の上を飛行する場面を挿入する。
-;(イベント５３に同じ。)
+;(イベント53に同じ。)
 
 MSG_THRK_JEFF_FIX;
 @SET_LOOPREG(PC_JEFF)			;ジェフのIDを主レジに格納
@@ -482,7 +482,7 @@ MSG_EVT_78_RAMA_START;
 ;★プーの修行というのは、ただメッセージを最後まで読む
 ;ということにつきます。
 ;イベント終了前に「無の場所」を離れてしまったり、
-;「はい／いいえ」の選択で「いいえ」を選んでしまったら
+;「はい/いいえ」の選択で「いいえ」を選んでしまったら
 ;その場でイベント終了(失敗やり直し)となります。
 ;★まず、無の場所に立つと「老師の使い」が登場し、接近してセリフ
 ;MSG_RAMA_MESSENGER を発行し、元の方向に消えます。
@@ -492,10 +492,10 @@ MSG_EVT_78_RAMA_START;
 ;FLG_RAMA_OK が ON になるまえにメッセージを終了させてしまったら、
 ;このイベントは振り出しに戻ります。
 ;★MSG_RAMA_OK が ON の状態でメッセージを終了したら
-;(経験地獲・レベルアップ／PSI修得後)マップ画面に戻ります。
+;(経験地獲・レベルアップ/PSI修得後)マップ画面に戻ります。
 ;★マップ画面にはプーの隣に老師が登場していて、
 ;セリフ MSG_RAMA_MASTER_OK 発行後、テレポートの演出でランマ編終了。
-;(イベント８０番へ。)
+;(イベント80番へ。)
 
 MSG_EVT_79_MU;包囲枠Aにかかったら以下を発行
 @SETF(FLG_SYS_MONSTER_OFF)				;モンスターカット
@@ -550,9 +550,9 @@ MSG_EVT_79_MU;包囲枠Aにかかったら以下を発行
 @RESF(FLG_TEMP_2)               ;修行終了フラグ初期化
 @RESF(FLG_TEMP_4)               ;目潰し状態トリガ初期化
 ;フェードイン
-@GOSUB(MSG_RAMA_GHOST_1);メータを１／３にする処理追加
+@GOSUB(MSG_RAMA_GHOST_1);メータを1/3にする処理追加
 @CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
-@GOSUB(MSG_RAMA_GHOST_2);メータを１にする処理追加
+@GOSUB(MSG_RAMA_GHOST_2);メータを1にする処理追加
 @CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
 @GOSUB(MSG_RAMA_GHOST_3);BGM消す処理追加
 @CHKFGOTO(FLG_TEMP_1,MSG_EVT_POO_SYUGYOU_SIPPAI_2)      ;失敗?
@@ -643,7 +643,7 @@ _EVT_80_ADD_PU_MAIN_MAIN;
 』
 
 
-;失敗その１
+;失敗その1
 MSG_EVT_POO_SYUGYOU_SIPPAI_1
 @SHOW_PLAYER(PC_ALL,OBJFX_SHOW_NONE)         ;プレーヤー再表示
 @HIDE_GOM_CHAR(GOM_POO_MEDITATION,OBJFX_HIDE_NONE)
@@ -654,7 +654,7 @@ MSG_EVT_POO_SYUGYOU_SIPPAI_1
 』
 
 
-;失敗その２
+;失敗その2
 MSG_EVT_POO_SYUGYOU_SIPPAI_2
 @HP_UP(PC_POO,100);HP回復
 @MESSAGE_SOUND(1);メッセージ表示音通常に
@@ -1002,9 +1002,9 @@ _SUMS_PU_DEAD;
 ;----------------------------------
 
 
-;#81	ビーナスのステージ(２回目)
+;#81	ビーナスのステージ(2回目)
 
-;★特殊イベント３２番の「トンズラステージ」と基本的には同じ。
+;★特殊イベント32番の「トンズラステージ」と基本的には同じ。
 ;ビーナスが登場して歌い、袖に引っ込む。
 ;★ステージ中はプレイヤーキャラは移動出来ない。
 
@@ -1021,7 +1021,7 @@ _SUMS_PU_DEAD;
 ;---------------------------------------------------------------------------
 
 
-;#83	●タッシー(２回目)
+;#83	●タッシー(2回目)
 
 ;バルモンとの会話で以下を実行
 
@@ -1359,7 +1359,7 @@ _EVT_SAILOR_CHKF;プーいる?
 
 ;#87	星型に石を踏む
 
-;★スカラビ／スフィンクス前の５つの石を一定の順番で踏むと
+;★スカラビ/スフィンクス前の5つの石を一定の順番で踏むと
 ;ピラミッドの扉が開く。
 
 ;@SE(SE_se69_pyramid_1)
@@ -1397,8 +1397,8 @@ _SKRB_SWITCH_OK;
 @CLOSE()
 @WI(1)
 @SE(SE_se79_my_open_fanfare);扉開く
-@REMOVE_CHAR(PRSN_SCRB_FIELD_J,ANIM_BLINK_SUICIDE);ピラミッドの扉１
-@REMOVE_CHAR(PRSN_SCRB_FIELD_U,ANIM_BLINK_SUICIDE);ピラミッドの扉２
+@REMOVE_CHAR(PRSN_SCRB_FIELD_J,ANIM_BLINK_SUICIDE);ピラミッドの扉1
+@REMOVE_CHAR(PRSN_SCRB_FIELD_U,ANIM_BLINK_SUICIDE);ピラミッドの扉2
 @!
 
 MSG_SKRB_SWITCH_02;
@@ -1563,7 +1563,7 @@ MSG_SKRB_PRYAMID_BIGCOFFIN;	;下に落とし穴のある棺
 ;クリアしてなかったらプレイヤーパーティーを
 ;スカラビのバザールまでテレポートさせる(フラグで設定済み)。
 
-;★２つのパワースポットをクリアしていたら _SKRB_OLDMAN_OK で
+;★2つのパワースポットをクリアしていたら _SKRB_OLDMAN_OK で
 ;画面を「ビカビカ」っと光らせて、プーをプレイヤーパーティーから外して
 ;幻の老人の後ろに付け、その後でメッセージ _SKRB_OLDMAN_OK_1 を続ける。
 ;★老人のセリフ後、(老人の後ろに付いた)プーが前に出て、

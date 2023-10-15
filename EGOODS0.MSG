@@ -18,7 +18,7 @@ MSG_BTL_GUTS4;
 MSG_BTL_SPEED4;
 MSG_BTL_VITA4;
 MSG_BTL_LUCK4;
-MSG_BTL_EAT_ONE;＠＄
+MSG_BTL_EAT_ONE;@$
 
 @GET_CITEM()
 @XCHG()
@@ -54,7 +54,7 @@ _BTL_EAT_SELF;
 @WI(1)
 @!
 
-_BTL_SPICE;＠＄
+_BTL_SPICE;@$
 @XCHG()
 @SAVE_REG()
 @Q_SELF()
@@ -79,7 +79,7 @@ _BTL_SPICE;＠＄
 @KEY()
 @!
 
-_BTL_SPICE_SELF;＠＄
+_BTL_SPICE_SELF;@$
 ←
 ◆@DSP_ACTOR()
 ;jpn:◆@DSP_ACTOR()は↓
@@ -98,7 +98,7 @@ _BTL_SPICE_SELF;＠＄
 @KEY()
 @!
 
-_BTL_DRINK;＠＄
+_BTL_DRINK;@$
 @Q_SELF()
 @TRUE_GOTO(_BTL_DRINK_SELF)
 ←
@@ -272,7 +272,7 @@ MSG_BTL_ROCKET5;
 ;◆@DSP_ACTOR() fired↓
 ;  the five pencil rockets!
 ;jpn: @DSP_ACTOR()は↓
-;jpn: ペンシルロケットを ５はつ はっしゃした!
+;jpn: ペンシルロケットを 5はつ はっしゃした!
 @SE(SE_se46_b_rocket)
 @WI(8)
 @SE(SE_se46_b_rocket)
@@ -298,7 +298,7 @@ MSG_BTL_ROCKET20;
 ;◆@DSP_ACTOR() fired↓
 ;  the twenty pencil rockets!
 ;jpn: @DSP_ACTOR()は↓
-;jpn: ペンシルロケットを ２０ぱつ はっしゃした!
+;jpn: ペンシルロケットを 20ぱつ はっしゃした!
 @SE(SE_se46_b_rocket)
 @WI(4)
 @SE(SE_se46_b_rocket)

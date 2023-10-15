@@ -1,6 +1,6 @@
 ;-------------------------------------------------------------
 
-;@Habitat:グレープフルーツの滝／フィールド／ゲップー基地入り口
+;@Habitat:グレープフルーツの滝/フィールド/ゲップー基地入り口
 ;@Person:合言葉の敵
 ;@Figure:ヒットくん
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -9,7 +9,7 @@
 ;@CheckMessage:0
 ;@Message:MSG_GPFT_PASSWORD
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／入り口付近
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/入り口付近
 ;@Person:ゲップー手下A(ハエ蜜検査)
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -71,7 +71,7 @@ _GPFT_MINIGEPPU_A_YES;
 』
 
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/どこか
 ;@Person:ゲップー手下B
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -89,7 +89,7 @@ MSG_GPFT_MINIGEPPU_B;
 ;jpn: きたならしいおとが でないなぁ。@KEYNP()
 』
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/どこか
 ;@Person:ゲップー手下C
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -108,7 +108,7 @@ MSG_GPFT_MINIGEPPU_C;
 ;jpn: かんがえられねぇよなぁ‥‥。@KEYNP()
 』
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/どこか
 ;@Person:ゲップー手下D
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -142,7 +142,7 @@ MSG_GPFT_MINIGEPPU_D;
 @SETF(FLG_GPFT_MINIGEPPU_D_DISAPPEAR)
 』
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／どこか
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/どこか
 ;@Person:ゲップー手下E
 ;@Figure:ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -166,7 +166,7 @@ MSG_GPFT_MINIGEPPU_E;
 @SETF(FLG_GPFT_MINIGEPPU_E_DISAPPEAR)
 』
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／ベルトコンベア付近
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/ベルトコンベア付近
 ;@Person:囚われの土星さんA
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -185,7 +185,7 @@ MSG_GPFT_DOSEI_A;
 @FONTSTD()
 』
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／ベルトコンベア付近
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/ベルトコンベア付近
 ;@Person:囚われの土星さんB
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -205,7 +205,7 @@ MSG_GPFT_DOSEI_B;
 @FONTSTD()
 』
 
-;@Habitat:グレープフルーツの滝／ゲップーダンジョン／出口前
+;@Habitat:グレープフルーツの滝/ゲップーダンジョン/出口前
 ;@Person:ゲップー
 ;@Figure:大ムッド
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -213,7 +213,7 @@ MSG_GPFT_DOSEI_B;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_GPFT_GEPPU
-MSG_GPFT_GEPPU;＄
+MSG_GPFT_GEPPU;$
 ;とにもかくにも、でかい、強い、汚い。
 ;ギーグの部下のなかでも最悪のモンスター。
 ;ギーグ自身も気持ちわるがっているらしく、出世コースからは
@@ -345,7 +345,7 @@ _GPFT_GEPPU_DEAD;
 @GOTO(_GPFT_GEPPU_MAIN);合流点へ
 
 
-;@Habitat:グレープフルーツの滝／ミルキーウェル／3通路
+;@Habitat:グレープフルーツの滝/ミルキーウェル/3通路
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_MLKY_BOSS/off
@@ -363,7 +363,7 @@ MSG_GPFT_MLKY_BOSS;
 ◆This is the third ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは ３ばんめの↓
+;jpn:◆ここは 3ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓

@@ -15,8 +15,8 @@ _GUMI_1_RECEIVE_OK;グミドリアン使うと When Gumidorian is used
 』
 ;-------------------------------------------------
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族１
+;@Habitat:グミ族の村/フィールド/村の適当なところ
+;@Person:グミ族1
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -63,8 +63,8 @@ _GUMI_1_AFTER;
 ;@KEYNP()
 ;@!
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族２(宿係)
+;@Habitat:グミ族の村/フィールド/村の適当なところ
+;@Person:グミ族2(宿係)
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -84,7 +84,7 @@ MSG_GUMI_2;
 @GOSUB(MSG_HOTEL_GUMI)
 』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
+;@Habitat:グミ族の村/フィールド/村の適当なところ
 ;@Person:グミ族(長老)
 ;@Figure:グミの長老
 ;@AppearanceKey:0
@@ -151,7 +151,7 @@ _GUMI_OLDMAN_LATER;松(メッセージ来てない)
 @REMOVE_CHAR(PRSN_GUMI_FIELD_C,ANIM_PEOPLEWALK1);暗転で重なる危険ないので自由
 』
 
-_GUMI_OLDMAN_END;＆ギーグを倒したあとの長老のセリフ
+_GUMI_OLDMAN_END;&ギーグを倒したあとの長老のセリフ
 @CHKFGOTO(FLG_GUMI_OLDMAN_END,_GUMI_OLDMAN_END_FINAL)
 ◆The book ”Overcoming Shyness” was very helpful to us!@KEY()↓
 ◆We’ve kept it for a long time, but I’ll return it now.@KEY()↓
@@ -260,7 +260,7 @@ _GUMI_OLDMAN_RECEIVE_BOOK;
 @SE(SE_se74_my_get)
 @WI(60)
 @OPEN(1)
-;＠先頭に
+;@先頭に
 ◆@DSP_NAME(PC_NESS) lends the leader of the Tenda tribe the book ”Overcoming Shyness.”
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)は↓
 ;jpn: グミぞくの ちょうろうに@KEY()↓
@@ -274,13 +274,13 @@ _GUMI_OLDMAN_RECEIVE_BOOK;
 @WI(60)
 @SETF(FLG_PHOTO_GUMI)		;プラオリティー変更用?
 @GOSUB(MSG_GLOBAL_PHOTO_31);写真撮影
-@GOSUB(MSG_GUMI_OLDMAN_KANA);＠プレイヤーの名前入力
+@GOSUB(MSG_GUMI_OLDMAN_KANA);@プレイヤーの名前入力
 @FRESH_PLAYER(PC_ALL)
 @FUNC(6)			;配達許可
 』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族３
+;@Habitat:グミ族の村/フィールド/村の適当なところ
+;@Person:グミ族3
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -300,8 +300,8 @@ _GUMI_3_AFTER;
 @KEYNP()
 』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族４(道具)
+;@Habitat:グミ族の村/フィールド/村の適当なところ
+;@Person:グミ族4(道具)
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -322,8 +322,8 @@ _GUMI_4_AFTER;
 ; もってけ ともだち@KEYNP()
 』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族５
+;@Habitat:グミ族の村/フィールド/村の適当なところ
+;@Person:グミ族5
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -355,8 +355,8 @@ _GUMI_5_AFTER;
 ;jpn: いし ある おしゃべりな@KEYNP()
 』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
-;@Person:グミ族６
+;@Habitat:グミ族の村/フィールド/村の適当なところ
+;@Person:グミ族6
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆小範囲うろつき
@@ -378,8 +378,8 @@ _GUMI_6_AFTER;
 ;jpn: まちがえたか おとこと@KEYNP()
 』
 
-;@Habitat:グミ族の村／フィールド／ティータイムの場所
-;@Person:グミ族７
+;@Habitat:グミ族の村/フィールド/ティータイムの場所
+;@Person:グミ族7
 ;@Figure:グミ族
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いて止ったまま
@@ -498,7 +498,7 @@ _GUMI_TEATIME;松(メッセージ来てない)
 ; ほほえみかけて くれるように‥。@KEYNP()
 ;』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
+;@Habitat:グミ族の村/フィールド/村の適当なところ
 ;@Person:おしゃべり男
 ;@Figure:グミ族
 ;@AppearanceKey:0
@@ -549,12 +549,12 @@ MSG_GUMI_SPEAKER_NEW;
 ;jpn:◆あいつの むくちをなおさないと。@KEYNP()
 @SETF(FLG_TEMP_1)
 』
-_GUMI_SPEAKER_NEW_TEMP;＃
+_GUMI_SPEAKER_NEW_TEMP;#
 ◆Oh, I wanna talk...
 @KEYNP()
 ;jpn:◆ああ なんかしゃべりたいなぁ‥。@KEYNP()
 』
-_GUMI_SPEAKER_NEW_AFTER;＆
+_GUMI_SPEAKER_NEW_AFTER;&
 ◆Recently, everyone is able to talk a lot, so I’ve lost my identity.
 @KEYNP()
 ;jpn:◆さいきん みんなが↓
@@ -572,7 +572,7 @@ _GUMI_SPEAKER_NEW_AFTER;＆
 ;@SETF(FLG_TEMP_1)
 ;』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
+;@Habitat:グミ族の村/フィールド/村の適当なところ
 ;@Person:グミ族(蘇生)
 ;@Figure:グミ族
 ;@AppearanceKey:0
@@ -593,7 +593,7 @@ _GUMI_8_AFTER;
 ; だいすきよー@KEYNP()
 』
 
-;@Habitat:グミ族の村／フィールド／村の適当なところ
+;@Habitat:グミ族の村/フィールド/村の適当なところ
 ;@Person:電話石
 ;@Figure:喋る岩
 ;@AppearanceKey:0
@@ -603,7 +603,7 @@ _GUMI_8_AFTER;
 ;@Message:MSG_GLOBAL_TELEPHONE
 ;----------------------------------------
 
-;@Habitat:グミ族の村／フィールド／喋る岩の部屋
+;@Habitat:グミ族の村/フィールド/喋る岩の部屋
 ;@Person:喋る岩A
 ;@Figure:喋る岩
 ;@AppearanceKey:0
@@ -623,7 +623,7 @@ MSG_DKFD_ROCK_A;
 ;jpn: ありがとよ。@KEYNP()
 』
 
-;@Habitat:グミ族の村／フィールド／喋る岩の部屋
+;@Habitat:グミ族の村/フィールド/喋る岩の部屋
 ;@Person:喋る岩B
 ;@Figure:喋る岩
 ;@AppearanceKey:0
@@ -646,7 +646,7 @@ MSG_DKFD_ROCK_B;
 ;◆いしに そうだんして↓
 ; よかったな。@KEYNP()
 
-;@Habitat:グミ族の村／フィールド／喋る岩の部屋
+;@Habitat:グミ族の村/フィールド/喋る岩の部屋
 ;@Person:喋る岩C
 ;@Figure:喋る岩
 ;@AppearanceKey:0
@@ -732,7 +732,7 @@ MSG_DKFD_ROCK_INFO_POWER;
 ;jpn: いて そのばを まもっている。@KEY()↓
 ;jpn:◆しかし それらを おまえは↓
 ;jpn: たおしてきたはずだ。@KEY()↓
-;jpn:◆おまえが このせかいに８つある↓
+;jpn:◆おまえが このせかいに8つある↓
 ;jpn: パワースポットのすべてに↓
 ;jpn: たったとき‥‥@KEY()↓
 ;jpn:◆「おとのいし」が↓
@@ -745,53 +745,53 @@ _DKFD_ROCK_INFO_POWER_TEMP;
 
 ;jpn:◆すべてを おしえておこう。↓
 @WI(60)↓
-◆１. ”Giant Step” in Onett.@KEY()↓
+◆1. ”Giant Step” in Onett.@KEY()↓
 
-;jpn:◆１ オネットの↓
+;jpn:◆1 オネットの↓
 ;jpn:  「ジャイアントステップ」@KEY()↓
 @WI(30)↓
-◆２. ”Lilliput Steps” in Grateful Dead Valley near Twoson.@KEY()↓
+◆2. ”Lilliput Steps” in Grateful Dead Valley near Twoson.@KEY()↓
 
-;jpn:◆２ ツーソンからゆく↓
+;jpn:◆2 ツーソンからゆく↓
 ;jpn:   グレートフルデッドのたにの↓
 ;jpn:  「リリパットステップ」@KEY()↓
 @WI(30)↓
-◆３. ”Milky Well” in Grapefruit Falls in Saturn Valley.@KEY()↓
+◆3. ”Milky Well” in Grapefruit Falls in Saturn Valley.@KEY()↓
  
-;jpn:◆３ グレープフルーツのたきから↓
+;jpn:◆3 グレープフルーツのたきから↓
 ;jpn:   ゆく サターンバレーの↓
 ;jpn:  「ミルキーウェル」@KEY()↓
 @WI(30)↓
-◆４. ”Rainy Circle” found by @DSP_NAME(PC_JEFF) in Winters.@KEY()↓
+◆4. ”Rainy Circle” found by @DSP_NAME(PC_JEFF) in Winters.@KEY()↓
 
-;jpn:◆４ ウィンターズで↓
+;jpn:◆4 ウィンターズで↓
 ;jpn:   @DSP_STS(STS_PC_NAME_JEFF)が みつけた↓
 ;jpn:  「レイニーサークル」@KEY()↓
 @WI(30)↓
-◆５. ”Magnet Hill” at the edge of the city of Fourside.@KEY()↓
+◆5. ”Magnet Hill” at the edge of the city of Fourside.@KEY()↓
 
-;jpn:◆５ フォーサイドの↓
+;jpn:◆5 フォーサイドの↓
 ;jpn:   まちはずれにある↓
 ;jpn:  「マグネットヒル」@KEY()↓
 @WI(30)↓
-◆６. ”Pink Cloud” which @DSP_NAME(PC_POO) knows.@KEY()↓
+◆6. ”Pink Cloud” which @DSP_NAME(PC_POO) knows.@KEY()↓
 
-;jpn:◆６ ランマの↓
+;jpn:◆6 ランマの↓
 ;jpn:   @DSP_STS(STS_PC_NAME_POO)も しっている↓
 ;jpn:  「ピンククラウド」@KEY()↓
 @WI(30)↓
-◆７. and...”Lumine Hole” where the shining lichen lives in the cave.@KEY()↓
+◆7. and...”Lumine Hole” where the shining lichen lives in the cave.@KEY()↓
 
-;jpn:◆７‥‥そして あの↓
+;jpn:◆7‥‥そして あの↓
 ;jpn:   ひかりごけの どうくつ↓
 ;jpn:  「ルミネホール」@KEY↓
 @WI(30)↓
-◆８. A new place is now going to be opened up to you.@KEY()↓
+◆8. A new place is now going to be opened up to you.@KEY()↓
 ◆”Fire Spring,” located southwest of here.@KEY()↓
 
-;jpn:◆８ さらに これから↓
+;jpn:◆8 さらに これから↓
 ;jpn:   とびらが ひらこうとしている@KEY()↓
-;jpn:◆ ここより にしみなみの↓;＠
+;jpn:◆ ここより にしみなみの↓;@
 ;jpn:  パワースポットが↓
 ;jpn: 「ファイアスプリング」だ。@KEY()↓
 @WI(60)↓
@@ -803,7 +803,7 @@ _DKFD_ROCK_INFO_POWER_TEMP;
 ◆It is fast approaching.
 @KEYNP()
 
-;jpn:◆この８つのパワースポットの↓
+;jpn:◆この8つのパワースポットの↓
 ;jpn: すべての おとを きくのだ。@KEY()↓
 ;jpn:◆それを せぬうちは↓
 ;jpn: ギーグの おもわくを↓
@@ -831,7 +831,7 @@ _DKFD_ROCK_INFO_POWER_LATER;
 』
 
 
-;@Habitat:魔境／ルミネホール／1大広間
+;@Habitat:魔境/ルミネホール/1大広間
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_LUMI_BOSS/off
@@ -849,7 +849,7 @@ MSG_MAKYO_LUMI_BOSS;
 ◆This is the seventh ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは ７ばんめの↓
+;jpn:◆ここは 7ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓

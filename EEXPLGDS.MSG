@@ -886,7 +886,7 @@ MSG_EXPL_GDS_BANDANNA_KING;marcus
 MSG_EXPL_GDS_COOKIE;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-６
+6
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -896,7 +896,7 @@ MSG_EXPL_GDS_COOKIE;
 MSG_EXPL_GDS_POTATO_FRIED;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-２４
+24
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -906,12 +906,12 @@ MSG_EXPL_GDS_POTATO_FRIED;
 MSG_EXPL_GDS_HAMBURGER;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-５０
+50
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
-◆１００％ beef.
+◆100% beef.
 
-;jpn:◆ビーフ１００パーセント。
+;jpn:◆ビーフ100パーセント。
 @KEYNP()
 @!
 
@@ -920,7 +920,7 @@ MSG_EXPL_GDS_HAMBURGER;
 MSG_EXPL_GDS_EGG_BOILD;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-４０
+40
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -930,7 +930,7 @@ MSG_EXPL_GDS_EGG_BOILD;
 MSG_EXPL_GDS_EGG_RAW;marcus
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-８０
+80
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
 ◆So fresh, it’s still warm!
@@ -944,7 +944,7 @@ MSG_EXPL_GDS_EGG_RAW;marcus
 MSG_EXPL_GDS_LUNCH;marcus
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-８０
+80
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
 ◆There’s even a slice of your favorite cake!
@@ -959,7 +959,7 @@ MSG_EXPL_GDS_LUNCH;marcus
 MSG_EXPL_GDS_PASTA_SUMMERS;marcus
 ←
 ◆This is a pasta dish which legend holds was a favorite of King Summers the Third@KEY()↓
-◆in the １６th century. Back then, there were many great chefs, confident of their@KEY()↓
+◆in the 16th century. Back then, there were many great chefs, confident of their@KEY()↓
 ◆culinary skills, always going to and from Summer’s Palace.@KEY()↓
 ◆Once day, King Summers wife, Anna Summers, said,@KEY()↓
 ◆”Oh what I wouldn’t give for some really delicious pasta!” 
@@ -967,8 +967,8 @@ MSG_EXPL_GDS_PASTA_SUMMERS;marcus
 ◆...Well, let’s just leave it at that. The story is too long to go through completely...@KEY()↓
 ◆but it really is a beautiful, touching tale...
 
-;jpn:◆１６せいきの サマーズおう↓
-;jpn: サマーズ３せいが↓
+;jpn:◆16せいきの サマーズおう↓
+;jpn: サマーズ3せいが↓
 ;jpn: このんだといわれているパスタだ。@KEY()↓
 ;jpn:◆とうじのサマーズきゅうでんには↓
 ;jpn: うでにおぼえのある↓
@@ -986,7 +986,7 @@ MSG_EXPL_GDS_PASTA_SUMMERS;marcus
 @KEY()
 ↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-１１０
+110
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -996,7 +996,7 @@ MSG_EXPL_GDS_PASTA_SUMMERS;marcus
 MSG_EXPL_GDS_PIZZA;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-１２０
+120
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1008,13 +1008,13 @@ MSG_EXPL_GDS_VOUCHED_CHEF;marcus
 ◆This is today’s special. It is highly recommended by our chef,@KEY()↓
 ◆who trained at a five−star restaurant in Paris.@KEY()↓
 
-;jpn:◆パリの５つぼし レストランで↓
+;jpn:◆パリの5つぼし レストランで↓
 ;jpn: しゅぎょうした↓
 ;jpn: サマーズレストランの@KEY()↓
 ;jpn:◆シェフがすすめる↓
 ;jpn: ひがわり りょうり。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-２００
+200
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1023,12 +1023,12 @@ MSG_EXPL_GDS_VOUCHED_CHEF;marcus
 ;akm
 MSG_EXPL_GDS_PIZZA_LARGE;
 ←
-◆Since it’s a really big pizza, everyone can recover about ２４０ HP when eaten.
+◆Since it’s a really big pizza, everyone can recover about 240 HP when eaten.
 
 ;jpn:◆Lサイズなので↓
 ;jpn: たべると ぜんいんのたいりょくが@KEY()↓
 ;jpn:◆それぞれ↓
-;jpn: やく２４０
+;jpn: やく240
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1037,11 +1037,11 @@ MSG_EXPL_GDS_PIZZA_LARGE;
 ;akm
 MSG_EXPL_GDS_PSYCHO_CARAMEL;
 ←
-◆Increases PP by ２０.
+◆Increases PP by 20.
 
 ;jpn:◆たべると↓
 ;jpn: PPが↓
-;jpn: やく２０
+;jpn: やく20
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1053,14 +1053,14 @@ MSG_EXPL_GDS_MAGIC_TRUFFLE;marcus
 ◆A dream−like delicacy↓
   that is said to grow at the base of trees@KEY()↓
 ◆in wet, muddy places.@KEY()↓
-◆It restores about ８０ PP.
+◆It restores about 80 PP.
 
 ;jpn:◆じめじめ どろどろした ばしょの↓
 ;jpn: きの ねもとにある といわれる↓
 ;jpn: まぼろしの ちんみ。@KEY()↓
 ;jpn:◆たべると↓
 ;jpn: PPが↓
-;jpn: やく８０
+;jpn: やく80
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1070,10 +1070,10 @@ MSG_EXPL_GDS_MAGIC_TRUFFLE;marcus
 MSG_EXPL_GDS_LUNCH_KING;marcus
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-５０ PP.
+50 PP.
 
 ;jpn:◆PPが↓
-;jpn: やく５０
+;jpn: やく50
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1095,7 +1095,7 @@ MSG_EXPL_GDS_MYSTIC_ANDY;marcus
 MSG_EXPL_GDS_BREAD_UGLY;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-６０
+60
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1105,7 +1105,7 @@ MSG_EXPL_GDS_BREAD_UGLY;
 MSG_EXPL_GDS_BREAD;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-３０
+30
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1148,7 +1148,7 @@ MSG_EXPL_GDS_HAEMITSU;marcus
 MSG_EXPL_GDS_JUICE_ORANGE;
 ←
 @GOSUB(_GDS_DRINK_HP_RECOVER)
-６
+6
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1175,7 +1175,7 @@ MSG_EXPL_GDS_ICE_TEA;marcus
 @KEY()
 ↓
 @GOSUB(_GDS_DRINK_HP_RECOVER)
-６０
+60
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1193,7 +1193,7 @@ MSG_EXPL_GDS_DRINK_ADULT;marcus
 @KEY()
 ↓
 @GOSUB(_GDS_DRINK_HP_RECOVER)
-８０
+80
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -1563,10 +1563,10 @@ MSG_EXPL_GDS_SUCK_SUPER;marcus
 ;akm
 MSG_EXPL_GDS_SPRAY_SUPER;marcus
 ←
-◆Deals ２００ points of damage to any bug when used during combat.@KEY()↓
+◆Deals 200 points of damage to any bug when used during combat.@KEY()↓
 
 ;jpn:◆せんとうじ ムシたちに↓
-;jpn: それぞれ やく２００ポイントの↓
+;jpn: それぞれ やく200ポイントの↓
 ;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_MANY_TIMES)
 @KEYNP()
@@ -1678,7 +1678,7 @@ MSG_EXPL_GDS_PENCIL_ROCKET;
 @KEYNP()
 @!
 
-;145ペンシルロケット５
+;145ペンシルロケット5
 akm
 MSG_EXPL_GDS_PENCIL_ROCKET5;marcus
 ←
@@ -1686,12 +1686,12 @@ MSG_EXPL_GDS_PENCIL_ROCKET5;marcus
 ◆Fires a fast, powerful bottle rocket.@KEY()↓
  
 ;jpn:◆ペンシルロケットを↓
-;jpn: いちどに５はつ はっしゃする。@KEY()↓
+;jpn: いちどに5はつ はっしゃする。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
 
-;146ペンシルロケット２０
+;146ペンシルロケット20
 ;akm
 MSG_EXPL_GDS_PENCIL_ROCKET20;
 ←
@@ -1699,7 +1699,7 @@ MSG_EXPL_GDS_PENCIL_ROCKET20;
 ◆Possibly the strongest weapon around, it does a lot of damage due to its massive warhead.@KEY()↓
  
 ;jpn:◆ペンシルロケットを↓
-;jpn: いちどに２０ぱつ はっしゃする。@KEY()↓
+;jpn: いちどに20ぱつ はっしゃする。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
 @!
@@ -1742,11 +1742,11 @@ MSG_EXPL_GDS_BOMB_SUPER;marcus
 ;akm
 MSG_EXPL_GDS_SPRAY;marcus
 ←
-◆Deals １００ points of damage to any bug when used during combat.@KEY()↓
-;◆Deals about １００ points of damage to a bug when used during combat.@KEY()↓
+◆Deals 100 points of damage to any bug when used during combat.@KEY()↓
+;◆Deals about 100 points of damage to a bug when used during combat.@KEY()↓
 
 ;jpn:◆せんとうじ ムシたちに↓
-;jpn: それぞれ やく１００ポイントの↓
+;jpn: それぞれ やく100ポイントの↓
 ;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
@@ -1757,11 +1757,11 @@ MSG_EXPL_GDS_SPRAY;marcus
 MSG_EXPL_GDS_ORIGIN_RUST;marcus
 ←
 ◆Quickly rusts metallic enemies when used during battle.@KEY()↓
-◆The enemy will take about ２００ points of damage.@KEY()↓
+◆The enemy will take about 200 points of damage.@KEY()↓
 
 ;jpn:◆せんとうじ↓
 ;jpn: きんぞくのてきを さびさせて@KEY()↓
-;jpn:◆それぞれ やく２００ポイントの↓
+;jpn:◆それぞれ やく200ポイントの↓
 ;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
@@ -1772,11 +1772,11 @@ MSG_EXPL_GDS_ORIGIN_RUST;marcus
 MSG_EXPL_GDS_ORIGIN_RUST_SUPER;marcus
 ←
 ◆Causes almost instantaneous rusting when used on metallic enemies during battle.@KEY()↓
-◆The enemy takes about ４００ points of damage.@KEY()↓
+◆The enemy takes about 400 points of damage.@KEY()↓
 
 ;jpn:◆せんとうじ↓
 ;jpn: きんぞくのてきを さびさせて@KEY()↓
-;jpn:◆それぞれ やく４００ポイントの↓
+;jpn:◆それぞれ やく400ポイントの↓
 ;jpn: ダメージをあたえる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
 @KEYNP()
@@ -1890,7 +1890,7 @@ MSG_EXPL_GDS_DOUBLE_GUTS;marcus
 ◆However, after a battle, your guts return to normal. @KEY()↓
 
 ;jpn:◆せんとうじ↓
-;jpn: ガッツが ２ばいになる。@KEY()↓
+;jpn: ガッツが 2ばいになる。@KEY()↓
 ;jpn:◆ただし せんとうが おわると↓
 ;jpn: もとにもどる。@KEY()↓
 @GOSUB(_GDS_USE_ONCE)
@@ -2155,9 +2155,9 @@ MSG_EXPL_GDS_CASHCARD;marcus
 ;akm
 MSG_EXPL_GDS_THEATER_TICKET;marcus
 ←
-◆It says, ”Section B, seat ３D.”
+◆It says, ”Section B, seat 3D.”
 
-;jpn:◆「Sせき ３ばん」と↓
+;jpn:◆「Sせき 3ばん」と↓
 ;jpn: かいてある。
 @KEYNP()
 @!
@@ -2306,7 +2306,7 @@ MSG_EXPL_GDS_ICHIGO_TOFU;
 ;jpn: ファッショナブルな↓
 ;jpn: デザート。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-３０
+30
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2316,7 +2316,7 @@ MSG_EXPL_GDS_ICHIGO_TOFU;
 MSG_EXPL_GDS_BANN;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-２５
+25
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2326,7 +2326,7 @@ MSG_EXPL_GDS_BANN;
 MSG_EXPL_GDS_CALORIE_BLOCK;
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-６０
+60
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2437,7 +2437,7 @@ MSG_EXPL_GDS_ICE_CANDY;marcus
 ;jpn: にんきがある↓
 ;jpn: アイスクリーム。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-３０
+30
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2559,11 +2559,11 @@ MSG_EXPL_GDS_NOT_SO_GOOD;marcus
 ;akm
 MSG_EXPL_GDS_MAGIC_TORTE;marcus
 ←
-◆Recovers about ２０ PP.
+◆Recovers about 20 PP.
 
 ;jpn:◆たべると↓
 ;jpn: PPが↓
-;jpn: やく２０
+;jpn: やく20
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2740,7 +2740,7 @@ MSG_EXPL_GDS_CUP_RAMEN;marcus
 
 ;jpn:◆ごぞんじのとおりのもの。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-４０
+40
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2749,11 +2749,11 @@ MSG_EXPL_GDS_CUP_RAMEN;marcus
 ;akm
 MSG_EXPL_GDS_SKIP_SAND;marcus
 ←
-◆Gives you a spring in your step for about １０ seconds.@KEY()↓
+◆Gives you a spring in your step for about 10 seconds.@KEY()↓
 ◆It also helps you recover your power a bit.
 
 ;jpn:◆たべると↓
-;jpn: １０びょうほど↓
+;jpn: 10びょうほど↓
 ;jpn: あしどりが かるくなる。@KEY()↓
 ;jpn:◆たいりょくも↓
 ;jpn: すこし かいふくする。
@@ -2764,11 +2764,11 @@ MSG_EXPL_GDS_SKIP_SAND;marcus
 ;akm
 MSG_EXPL_GDS_SKIP_SAND_SP;marcus
 ←
-◆Gives you a spring in your step for about ２０ seconds.@KEY()↓
+◆Gives you a spring in your step for about 20 seconds.@KEY()↓
 ◆It also helps you recover your power a bit.
 
 ;jpn:◆たべると↓
-;jpn: ２０びょうほど↓
+;jpn: 20びょうほど↓
 ;jpn: あしどりが かるくなる。@KEY()↓
 ;jpn:◆たいりょくも↓
 ;jpn: すこし かいふくする。
@@ -2788,7 +2788,7 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_A;marcus
 ;jpn:◆なにが どのくらい↓
 ;jpn: かいふくするか は↓
 ;jpn: うんしだい。
-;０５０１γ
+;0501γ
 @KEYNP()
 @!
 
@@ -2805,7 +2805,7 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_B;
 ;jpn:◆なにが どのくらい↓
 ;jpn: かいふくするか は↓
 ;jpn: うんしだい。
-;０５０２γ
+;0502γ
 @KEYNP()
 @!
 
@@ -2822,7 +2822,7 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_C;
 ;jpn:◆なにが どのくらい↓
 ;jpn: かいふくするか は↓
 ;jpn: うんしだい。
-;０５０３γ
+;0503γ
 @KEYNP()
 @!
 
@@ -2839,7 +2839,7 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_D;
 ;jpn:◆なにが どのくらい↓
 ;jpn: かいふくするか は↓
 ;jpn: うんしだい。
-;０５０４γ
+;0504γ
 @KEYNP()
 @!
 
@@ -2856,7 +2856,7 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_E;
 ;jpn:◆なにが どのくらい↓
 ;jpn: かいふくするか は↓
 ;jpn: うんしだい。
-;０５０５γ
+;0505γ
 @KEYNP()
 @!
 
@@ -2873,7 +2873,7 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_F;
 ;jpn:◆なにが どのくらい↓
 ;jpn: かいふくするか は↓
 ;jpn: うんしだい。
-;０５０６γ
+;0506γ
 @KEYNP()
 @!
 
@@ -2882,7 +2882,7 @@ MSG_EXPL_GDS_FOOD_LUCKY_SAND_F;
 MSG_EXPL_GDS_COFFEE;marcus
 ←
 @GOSUB(_GDS_DRINK_HP_RECOVER)
-１２
+12
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
 ◆I guess it tastes good to adults.
@@ -2896,12 +2896,12 @@ MSG_EXPL_GDS_COFFEE;marcus
 MSG_EXPL_GDS_HAMBURGER_DOUBLE
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-９０
+90
 @GOSUB(_GDS_HP_RECOVER)
 @KEY()↓
-◆１００％ beef.
+◆100% beef.
 
-;jpn:◆ビーフ１００パーセント。
+;jpn:◆ビーフ100パーセント。
 @KEYNP()
 @!
 
@@ -2915,7 +2915,7 @@ MSG_EXPL_GDS_CANDY_SOUR;marcus
 ;jpn:◆どせいさんの だいこうぶつ。↓
 ;jpn:◆わりと おいしかったです。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-１００
+100
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2930,7 +2930,7 @@ MSG_EXPL_GDS_CANDY_BITTER;marcus
 ;jpn:◆どせいさんの だいこうぶつ。↓
 ;jpn:◆けっこう おいしかったです。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-３００
+300
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2944,7 +2944,7 @@ MSG_EXPL_GDS_OKAYU;
 ;jpn:◆ランマの いっぱんてきな↓
 ;jpn: しょくじ。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-２００
+200
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2966,7 +2966,7 @@ MSG_EXPL_GDS_BEANS_CROQUETTE;marcus
 ;jpn:◆ふるいアブラが また↓
 ;jpn: いいあじを だしている。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-４０
+40
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -2986,7 +2986,7 @@ MSG_EXPL_GDS_MOLOKHEIYA_SOUP;marcus
 ;jpn:◆スカラビのひとびとに↓
 ;jpn: このまれている。@KEY()↓
 @GOSUB(_GDS_DRINK_HP_RECOVER)
-８０
+80
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3001,7 +3001,7 @@ MSG_EXPL_GDS_GUMI_BREAD;marcus
 ;jpn:◆あまり せつめいしたくない。@KEY()↓
 ;jpn:◆うまいという ひともいる。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-８０
+80
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3021,7 +3021,7 @@ MSG_EXPL_GDS_MUTTON_ON_SKEWERS;marcus
 ;jpn: にくが まざっている@KEY()↓
 ;jpn:◆‥‥という ウワサもある。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-１２０
+120
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3034,7 +3034,7 @@ MSG_EXPL_GDS_GUMI_YOGURT;
 
 ;jpn:◆あるいみで おいしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-１６０
+160
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3046,19 +3046,19 @@ MSG_EXPL_GDS_DRY_MEAT;
 ◆Recipe for making jerky.@KEY()↓
 ◆Obtain some type of meat, slice it into pieces about a half of an inch thick.@KEY()↓
 ◆Hang the pieces on a laundry line or something like it@KEY()↓
-◆and leave out in the sun for maybe ６ months...@KEY()↓
+◆and leave out in the sun for maybe 6 months...@KEY()↓
 ◆Well, that’s what my recipe says.@KEY()↓
 
 ;jpn:◆ほしにくの つくりかた。@KEY()↓
 ;jpn:◆そのへんにある にくを↓
-;jpn: １ミリのうすさに きる。@KEY()↓
+;jpn: 1ミリのうすさに きる。@KEY()↓
 ;jpn:◆そこらへんにある↓
 ;jpn: ものほしざおに かけ@KEY()↓
 ;jpn:◆はんとしかん↓
 ;jpn: おひさまに あてる。@KEY()↓
 ;jpn:◆らしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-１５０
+150
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3068,7 +3068,7 @@ MSG_EXPL_GDS_DRY_MEAT;
 MSG_EXPL_GDS_HAMBURGER_MAMMOTH
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-２００
+200
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3084,13 +3084,13 @@ MSG_EXPL_GDS_DRY_MEAT_GREAT
 ◆slice it into pieces about a half of an inch thick.@KEY()↓
 ◆Season the pieces as much as possible,@KEY()↓
 ◆hang the pieces on a laundry line or something like it@KEY()↓
-◆and leave out in the sun for maybe ８ months...@KEY()↓
+◆and leave out in the sun for maybe 8 months...@KEY()↓
 ◆Well, that’s what my recipe says...@KEY()↓
 
 ;jpn:◆スパイシーほしにくの↓
 ;jpn: つくりかた。@KEY()↓
 ;jpn:◆そのへんにある にくを↓
-;jpn: １ミリのうすさに きる。@KEY()↓
+;jpn: 1ミリのうすさに きる。@KEY()↓
 ;jpn:◆いやになるほど↓
 ;jpn: カライあじつけを する。@KEY()↓
 ;jpn:◆そこらへんにある↓
@@ -3099,7 +3099,7 @@ MSG_EXPL_GDS_DRY_MEAT_GREAT
 ;jpn: おひさまに あてる。@KEY()↓
 ;jpn:◆らしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-２５０
+250
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3110,11 +3110,11 @@ MSG_EXPL_GDS_DRY_MEAT_SP;marcus
 ←
 ◆A gourmet version of jerky that is considered a delicacy.@KEY()↓
 ◆It is created by a skillful artisan@KEY()↓
-◆who has been making jerky for over ６０ years.@KEY()↓
+◆who has been making jerky for over 60 years.@KEY()↓
 ◆Jerky fans consider this the caviar of all jerkys.@KEY()↓
 ◆I understand that they don’t dry gourmet jerky on a laundry line...@KEY()↓
 
-;jpn:◆ほしにく ひとすじ ６０ねんの↓
+;jpn:◆ほしにく ひとすじ 60ねんの↓
 ;jpn: しょくにんさんが つくった↓
 ;jpn: ゼイタクな いっぴん。@KEY()↓
 ;jpn:◆ほしにくずき には↓
@@ -3123,7 +3123,7 @@ MSG_EXPL_GDS_DRY_MEAT_SP;marcus
 ;jpn: つかわない@KEY()↓
 ;jpn:◆らしい。@KEY()↓
 @GOSUB(_GDS_EAT_HP_RECOVER)
-３００
+300
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3150,11 +3150,11 @@ MSG_EXPL_GDS_WATER_HI;marcus
 ;akm
 MSG_EXPL_GDS_MAGIC_PUDDING;marcus
 ←
-◆Recovers about ４０ PP.
+◆Recovers about 40 PP.
 
 ;jpn:◆たべると↓
 ;jpn: PPが↓
-;jpn: やく４０
+;jpn: やく40
 ;@GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3202,7 +3202,7 @@ MSG_EXPL_GDS_PRECIOUS_METAL
 MSG_EXPL_GDS_ICE_CANDY_E
 ←
 @GOSUB(_GDS_EAT_HP_RECOVER)
-１８
+18
 @GOSUB(_GDS_HP_RECOVER)
 @KEYNP()
 @!
@@ -3363,9 +3363,9 @@ _PSI_SAIMIN_SUPPLEMENT
 ;★サイマグネット
 ;akm
 _PSI_PSI_MAGNET_BASIC;marcus
-;akm  Grabs ２−８ points from the enemy and adds it to your own.
+;akm  Grabs 2−8 points from the enemy and adds it to your own.
 
-;jpn: ２〜８ポイント うばいとり↓
+;jpn: 2〜8ポイント うばいとり↓
 ;jpn: じぶんのものにする。
 @!
 
@@ -3407,7 +3407,7 @@ _PSI_USE_PILE;marcus
 ◆It is most effective if you use this power multiple times to ”layer” the effect.
 
 ;jpn:◆かさねて つかうと こうかてき。
-;１２３４５６７８９０１２３４５６７８９
+;1234567890123456789
 @!
 
 _PSI_NOT_EFFECTIVE_ON_SOME;marcus

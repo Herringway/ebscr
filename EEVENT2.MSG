@@ -74,7 +74,7 @@ MSG_EVT_46_BMONKEY_FLOAT_FIRST;
 
 ;#47    タッシー登場
 
-;★ウィンタース／フィールド／タッシー隊テントAから外に出ると
+;★ウィンタース/フィールド/タッシー隊テントAから外に出ると
 ;タッシーが水中から?登場する。
 ;●フラグで曲切り替え。
 
@@ -200,9 +200,9 @@ MSG_EVT_47_BMONKEY_FLOAT;
 
 ;#51    バルーンモンキーロープを降ろす 8.6 T
 
-;★ウィンタース／レイニーサークルのダンジョンの行き止まりで
+;★ウィンタース/レイニーサークルのダンジョンの行き止まりで
 ;「フーセンガム」を「つかう」とバルーンモンキーは空中に浮遊して
-;歩いては行けなかった２階部分に降りて、
+;歩いては行けなかった2階部分に降りて、
 ;そこからロープを降ろす(BG書換?)。
 
 ;「ガム」「つかう」で以下を実行
@@ -281,7 +281,7 @@ MSG_EVT_52_BMONKEY_BYE;
 ;スカイウォーカーと接触するとプレイヤーキャラは消える(乗る)。
 ;★その後、決定ボタンが押されたらスカイウォーカー発進。
 ;(振動して画面上方向に消える。)
-;★スカイウォーカーに乗り込んで５秒経過しても決定ボタンが押されなかったら
+;★スカイウォーカーに乗り込んで5秒経過しても決定ボタンが押されなかったら
 ;メッセージ MSG_WINS_ANDONUT_GO を表示する。
 
 ;★スカイウォーカーがアンドーナツ博士の研究所内から
@@ -620,10 +620,10 @@ MSG_EVT_THRK_WIN_MATENT;
 
 ;#55    ゾンビホイホイ使用   ゝ
 
-;★スリーク／対策本部のテントでグッズ「ゾンビホイホイ」使用し
+;★スリーク/対策本部のテントでグッズ「ゾンビホイホイ」使用し
 ;ホテルに宿泊すると、テントの檻にゾンビが捕まる。
 ;★ホテルでの宿泊中に、ゾンビがゾロゾロ集まってくるシーンを数カット挿入したい。
-;(この夜のシーン以外は、通常のフラグによるオブジェクトの出現／消去で可能。)
+;(この夜のシーン以外は、通常のフラグによるオブジェクトの出現/消去で可能。)
 
 ;宿屋のメッセージ中に以下を追加
 MSG_EVT_55_HOIHOI;
@@ -706,7 +706,7 @@ MSG_EVT_55_HOIHOI;
 
 ;★グレープフルーツの滝の根元にセットしたワープ時のメッセージ
 ;MSG_EXAMINE_GEPPU_PASSWORD を聞いた後、
-;３分間キー入力がなかったら MSG_GPFT_PASSWORD_LATER を発行する。
+;3分間キー入力がなかったら MSG_GPFT_PASSWORD_LATER を発行する。
 
 MSG_GPFT_PASSWORD;
 @CHKFGOTO(FLG_DOSEI_SECRETCODE,_GPFT_PASSWORD_AFTER)
@@ -717,7 +717,7 @@ MSG_GPFT_PASSWORD;
 
 _GPFT_PASSWORD_AFTER;
 ;「ANIM_GEPPU_PASS」
-;３分間キーを見続け、キー入力があれば自殺。３分たてば、メッセージ発行
+;3分間キーを見続け、キー入力があれば自殺。3分たてば、メッセージ発行
 ◆Say the password!
 ;jpn:◆あいことばを いえ!
 @WI(120)
@@ -726,7 +726,7 @@ _GPFT_PASSWORD_AFTER;
 』
 
 MSG_GPFT_PASSWORD_LATER;
-;基地入口３分後
+;基地入口3分後
 @OPEN(1)
 ◆Okay...you may enter.
 ;jpn:◆よーし はいれ!
@@ -851,9 +851,9 @@ MSG_EVT_62_CARROT_D;
 ;----------------------------------------
 
 
-;#63    ビーナスのステージ(１回目)
+;#63    ビーナスのステージ(1回目)
 
-;★トポロ劇場／ホールに入るといつもビーナスがステージに立って
+;★トポロ劇場/ホールに入るといつもビーナスがステージに立って
 ;歌っている。(曲もビーナスの曲)
 ;★一曲歌い終わったら舞台の袖に引っ込む。
 
@@ -923,7 +923,7 @@ MSG_EVT_TOPOLO_VENUS_MC;ビーナスのステージ
 ◆Baby!!  Venus!@KEY()↓
 ◆Just sing I can die a happy man!...Baby!!...@KEY()↓
 ◆I wanna hold you tight!...Venus!...Baby!...@KEY()↓
-◆＊Boo, hoo, hoo＊...Venus!...＊sob＊ ＊sob＊
+◆*Boo, hoo, hoo*...Venus!...*sob* *sob*
 ;jpn:◆オー ベイビーベイビーベイビー!@WI(30)↓
 ;jpn: おれを そんなに↓
 ;jpn: なかせないでくれよん。@KEY()↓
@@ -942,9 +942,9 @@ MSG_EVT_TOPOLO_VENUS_MC;ビーナスのステージ
 ;------------------------------------------------------------
 
 
-;#64    トンズラのステージ(２回目)
+;#64    トンズラのステージ(2回目)
 
-;       トンズラの解放その２
+;       トンズラの解放その2
 
 
 ;グッズ−つかうで以下を実行
@@ -959,8 +959,8 @@ MSG_EVT_64_TONZURA_FREE_2;
 @MOVE_GOM_CHAR(GOM_NICE,ANIM_NICE_FREE_2A,OBJFX_SHOW_NONE)
 @MOVE_GOM_CHAR(GOM_OK,ANIM_OK_FREE_2A,OBJFX_SHOW_NONE)
 @MOVE_GOM_CHAR(GOM_GROOVE,ANIM_GROOVE_FREE_2A,OBJFX_SHOW_NONE)
-@WAITSYS()                                              ;５人の正列待つ
-;ここで５人の向きを北向きに
+@WAITSYS()                                              ;5人の正列待つ
+;ここで5人の向きを北向きに
 ;
 @REMOVE_GOM_CHAR(GOM_GORGEOUS,ANIM_TONZURA_FREE_2B)     ;机に移動
 @WAITSYS()
@@ -1048,7 +1048,7 @@ MSG_EVT_64_TONZURA_FREE_2;
 @MOVE_GOM_CHAR(GOM_GORGEOUS,ANIM_GORGEOUS_FREE_2C,OBJFX_SHOW_NONE)   ;ゴージャス
 @WAITSYS()
 @FRESH_GOM_CHAR(GOM_GROOVE)
-@WAITSYS()                                      ;２人ドアへ
+@WAITSYS()                                      ;2人ドアへ
 』
 
 
@@ -1163,7 +1163,7 @@ MSG_EVT_TOPOLO_TONZURA_MC;トポロのアナウンス(トンズラ)
 ;jpn: ぶっとばしてくれい!↓
 ;jpn: トンズラ ブラザーズ バーンド!
 @KEY()↓
-◆３・・@WI(30)２・・@WI(30)１・・@WI(30)GO!
+◆3・・@WI(30)2・・@WI(30)1・・@WI(30)GO!
 @KEY()
 @CLOSEALL()
 』
@@ -1323,7 +1323,7 @@ _DSRT_SHIGE_ITEMFULL;
 ;--------------------------------------
 
 
-;#69    トンズラ最後のステージ(３回目)
+;#69    トンズラ最後のステージ(3回目)
 
 ;★基本的に一回目二回目と同じ。その豪華版。
 ;メッセージ予約で以下を発行
@@ -1456,7 +1456,7 @@ MSG_EVT_TSTAGE3_B
 @HIDE_GOM_CHAR(GOM_MIKE,OBJFX_HIDE_NONE)    ;2
 』
 
-;       ビーナスステージ２
+;       ビーナスステージ2
 
 ;@BGMSTART(0,BGM_vins2)
 ;予約メッセージで以下を実行
@@ -1532,7 +1532,7 @@ MSG_EVT_70_POKEY;
 MSG_FOUR_POKEYGUARD;
 @OPEN(1)
 ◆You must never show your face around Master Pokey.  You got that?
-;jpn:◆いいか? ２どと↓
+;jpn:◆いいか? 2どと↓
 ;jpn: ポーキーぼっちゃまのまえに↓
 ;jpn: すがたを みせるんじゃねぇぜ。
 @KEY()
@@ -1556,7 +1556,7 @@ MSG_FOUR_POKEYGUARD;
 ;★以下の MSG_FOUR_DEPT_ANNOUNCE_1 〜 3 をエスカレータにセットする。
 ;(踏むと何度でも表示される)
 
-;★デパート／４階・事務室の暗闇デパートのモンスターを倒す
+;★デパート/4階・事務室の暗闇デパートのモンスターを倒す
 ;(FLG_FOUR_DEPT_BOSS_APPEAR /off)と、デパートは
 ;平常通りに戻る。(ポーラは帰ってこない。)
 
@@ -1620,13 +1620,13 @@ MSG_FOUR_DEPT_ANNOUNCE_1;
 ◆Your attention please,@KEY()↓
 ◆would the customer from Onett, Mr. @DSP_NAME(PC_NESS),@KEY()↓
 ◆please proceed to the office on the fourth floor.@KEY()↓
-◆That was customer @DSP_NAME(PC_NESS), ４th floor office...@KEY()↓
+◆That was customer @DSP_NAME(PC_NESS), 4th floor office...@KEY()↓
 ◆Gwaaaaaaaaagh!
 ;jpn:◆およびだしを もうしあげます。↓
 ;jpn: オネットから おこしの↓
 ;jpn: @DSP_STS(STS_PC_NAME_NES)さま‥‥@KEY()↓
 ;jpn:◆おともだちの@DSP_STS(STS_PC_NAME_PAULA)さまが↓
-;jpn: ４かいのじむしょで↓
+;jpn: 4かいのじむしょで↓
 ;jpn: おまちです。‥‥クケッ。
 @KEYNP()
 @CLOSEALL()
@@ -1812,7 +1812,7 @@ MSG_FOUR_BLDG_NICE;
 ;★モノトリーはブルブル震えている。
 
 ;★モノトリーのセリフを聞くこと、ポーラと話して再び仲間にすること
-;の２点がクリアされるまでは、プレイヤーキャラを部屋の外に出さない。
+;の2点がクリアされるまでは、プレイヤーキャラを部屋の外に出さない。
 ;(ワープメッセージ MSG_WARP_FOUR_MONOROOM_OUT で設定。
 ;外に出ようとするとポーラが駆け寄ってきてセリフ。)
 
@@ -1904,14 +1904,14 @@ MSG_FOUR_PAULA_MONOROOM;
 ;----------------------------------
 
 
-;#76    トンズラバスに乗る(２回目)
+;#76    トンズラバスに乗る(2回目)
 
 ;★モノトリーの部屋のイベント終了(ジェフのセリフを聞いた)後
 ;廊下の外に出ると、トンズラが待ち構えていて
 ;MSG_FOUR_TONZURA_MONOTOLY を発行して出口に消える。
 
 ;★一階に降りてモノトリービルの外に出ると、
-;トンズラたちがバスに乗り込んでいる。(特殊イベント４１番と同様)
+;トンズラたちがバスに乗り込んでいる。(特殊イベント41番と同様)
 ;プレイヤーキャラがバスに接触したらプレイヤーパーティーを順に消して出発!
 ;★到着したらゴージャスがまず出現して、順にプレイヤーパーティー出現。
 ;ゴージャスは MSG_THRK_TONZURA_GOODLUCK を発行し、再びバスに乗って消える。

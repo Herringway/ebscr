@@ -54,7 +54,7 @@ MSG_SUB_HINTSHOP;marcus
 @SET_REG(1)
 @CHKFGOTO(FLG_TEMP_7,_HINTSHOP_ONEMORE)
 @GOSUB(_HINT_CHOTTO)
-◆I could give you a great hint for just ＄@DSP_NUM(0).@KEY()↓
+◆I could give you a great hint for just $@DSP_NUM(0).@KEY()↓
 ◆You’d like a hint, wouldn’t you?↓
 
 ;jpn: たった@DSP_NUM(0)ドルで↓
@@ -65,7 +65,7 @@ MSG_SUB_HINTSHOP;marcus
 _HINT_NO;
 ;@CHKFGOTO(FLG_SHOPTEMP_1,_HINT_NO_FIELD)
 ◆So you’re telling me that you don’t want a hint?@KEY()↓
-◆You’re either awfully confident or ＄@DSP_NUM(0) is too much to pay.@KEY()↓
+◆You’re either awfully confident or $@DSP_NUM(0) is too much to pay.@KEY()↓
 ◆Anyway, a young man like you is very unusual these days.@KEY()↓
 ◆If you happen to need a hint, c’mon back!@KEY()↓
 ◆I’m here all the time...
@@ -82,7 +82,7 @@ _HINT_NO;
 @!
 _HINT_NO_FIELD;marcus
 ◆So you’re telling me that you don’t want a hint?@KEY()↓
-◆You’re either awfully confident or ＄@DSP_NUM(0) is too much to pay.@KEY()↓
+◆You’re either awfully confident or $@DSP_NUM(0) is too much to pay.@KEY()↓
 ◆Anyway, a young man like you is very unusual these days.@KEY()↓
 ◆You say that you don’t want any hint?@KEY()↓
 ◆Well, so long.
@@ -139,11 +139,11 @@ _HINT_ONEMORE;
 @CHKFGOTO(FLG_FOUR_TONCHIKI,_HINT_MOON)		;ボルヘスの酒場付近、瀕死のトンチキからムーンサイド情報を聞いた
 @CHKFGOTO(FLG_FOUR_TONCHIKI_APPEAR,_HINT_FOUR_TONCHIKI)	;フォーサイドのボルヘスの酒場付近に瀕死のトンチキが出現
 @CHKFGOTO(FLG_FOUR_DEPT_OK,_HINT_BRGS)		;フォーサイド、デパート・ダンジョンのボスを倒した
-@CHKFGOTO(FLG_FOUR_DEPT_BOSS_APPEAR,_HINT_DEPT_BOSS)	;フォーサイドデパート４階の事務所にデパートダンジョンのボスが出現
+@CHKFGOTO(FLG_FOUR_DEPT_BOSS_APPEAR,_HINT_DEPT_BOSS)	;フォーサイドデパート4階の事務所にデパートダンジョンのボスが出現
 @CHKFGOTO(FLG_FOUR_TONZURA_THANKS,_HINT_FOUR_DEPT)	;フォーサイドのトポロ劇場の楽屋にトンズラたちが出現しない
 @CHKFGOTO(FLG_DSRT_ITEM_DIA,_HINT_FOUR_TONZURA_FREE)	;ドコドコ砂漠で発掘されたグッズ「ダイヤモンド」を入手した
 @CHKFGOTO(FLG_DSRT_YUMBO_SHIGE_APPEAR,_HINT_DSRT_DIA)	;フォーサイドへ続く橋にユンボに乗ったシゲちゃんが登場
-@CHKFGOTO(FLG_DSRT_DUNGEON_OK,_HINT_DSRT_SYOZI2)	;ドコドコ砂漠のモッチーダンジョンのボス５匹をすべて退治した
+@CHKFGOTO(FLG_DSRT_DUNGEON_OK,_HINT_DSRT_SYOZI2)	;ドコドコ砂漠のモッチーダンジョンのボス5匹をすべて退治した
 @CHKFGOTO(FLG_DSRT_SWITCH,_HINT_DSRT_DUNGEON)		;ドコドコ砂漠の埋蔵金発掘現場に大穴が出来ている
 @CHKFGOTO(FLG_FOUR_MISSFAKE,_HINT_GOHOTEL_FORDSRT)	;トポロオーナーと話をした
 @CHKFGOTO(FLG_TLPT_FOUR,_HINT_TOPOLO)			;テレポート先のリストにフォーサイドが加わる
@@ -205,7 +205,7 @@ _HINT_PICARL;marcus
 ;jpn: あったかな?@KEY()↓
 ;jpn:◆ピカールしちょうは↓
 ;jpn: しちょうしゃの↓
-;jpn: ２かいにいるよ。
+;jpn: 2かいにいるよ。
 @GOSUB(_HINT_KOKOMADE)
 @!
 
@@ -214,7 +214,7 @@ _HINT_PICARL;marcus
 _HINT_TABIGOYA;marcus
 ◆Go northeast.@KEY()↓
 ◆A wandering entertainer is having some trouble getting into a locked shack...
-;＠travering?
+;@travering?
 ;jpn:◆ほくせいに すすみなさい。@KEY()↓
 ;jpn:◆たびげいにんが↓
 ;jpn: カギが あかないって↓
@@ -228,7 +228,7 @@ _HINT_GIAN;marcus
 ◆You’re on your way to Giant Step, aren’t you?@KEY()↓
 ◆Just be careful, the police are pretty touchy about people,@KEY()↓
 ◆not to mention kids, going up there...
-;＠改行?
+;@改行?
 ;jpn:◆ジャイアントステップに↓
 ;jpn: ゆくんだろ?@KEY()↓
 ;jpn:◆だったら けいかんを↓
@@ -237,7 +237,7 @@ _HINT_GIAN;marcus
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;警官５人抜き成功後
+;警官5人抜き成功後
 ;(ポーラを仲間にするため)ツーソンに行きなさい	
 _HINT_POLICE;marcus
 ;◆あらら けいさつかんに↓
@@ -255,7 +255,7 @@ _HINT_POLICE;marcus
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;警官５人抜き成功後
+;警官5人抜き成功後
 ;(ポーラを仲間にするため)ツーソンに行きなさい
 _HINT_TOTWSN;marcus
 ◆Have you heard of a girl named @DSP_NAME(PC_PAULA)?@KEY()↓
@@ -332,10 +332,10 @@ _HINT_HH;marcus
 ;アップルキッドに会いに行きなさい
 _HINT_APPLEPHONE;marcus
 ◆You got a call from Apple Kid on your portable phone?@KEY()↓
-;＠受信電話
+;@受信電話
 ◆What are you doing here, so far away from home?@KEY()↓
-;＠アップルキッドから遠く
-◆I can’t give you any hints, but I’ll keep your ＄@DSP_NUM(0).
+;@アップルキッドから遠く
+◆I can’t give you any hints, but I’ll keep your $@DSP_NUM(0).
 ;jpn:◆アップルキッドに↓
 ;jpn: じゅしんでんわで↓
 ;jpn: よばれたんだろ?@KEY()↓
@@ -420,8 +420,8 @@ _HINT_FRANKRIN;marcus
 _HINT_CARPAINTER;marcus
 ◆This is my business, so I’m happy to have customers.@KEY()↓
 ◆But this is not the time to be talking about business!@KEY()↓
-;＠こんなところに来ている場合じゃないだろう?
-◆Anyway, I’ll keep your ＄@DSP_NUM(0).
+;@こんなところに来ている場合じゃないだろう?
+◆Anyway, I’ll keep your $@DSP_NUM(0).
 ;jpn:◆おじさんも↓
 ;jpn: しょうばいだから@KEY()↓
 ;jpn:◆きゃくがくるのは↓
@@ -632,7 +632,7 @@ _HINT_GET_PASSWORD;marcus
 ;jpn:◆サターンバレーで↓
 ;jpn: することが↓
 ;jpn: わからないようだね。@KEY()↓
-;jpn:◆ほらあなの２かいにいる↓
+;jpn:◆ほらあなの2かいにいる↓
 ;jpn: どせいさんが@KEY()↓
 ;jpn:◆ひみつきちに はいる↓
 ;jpn: あいことばを↓
@@ -659,7 +659,7 @@ _HINT_GO_GEPPUBASE;marcus
 ◆Then, wait patiently for three minutes.
 
 ;jpn:◆たきのまえで↓
-;jpn: ３ぷんかん まてと↓
+;jpn: 3ぷんかん まてと↓
 ;jpn: どせいさんは いったはずだ。@KEY()↓
 ;jpn:◆たきのばしょがわからない?@KEY()↓
 ;jpn:◆たきとは↓
@@ -679,7 +679,7 @@ _HINT_GO_GEPPUBASE;marcus
 ;jpn:◆グレープフルーツのたき↓
 ;jpn: ‥‥で‥‥@KEY()↓
 ;jpn:◆ございませ。@KEY()↓
-;jpn:◆そこで３ぷんかん↓
+;jpn:◆そこで3ぷんかん↓
 ;jpn: じっとまつのだ。
 @GOSUB(_HINT_KOKOMADE)
 @!
@@ -799,7 +799,7 @@ _HINT_TOPOLO;
 @!
 
 ;ミスフェイクに会った後(モッチー援助したが穴が開いていない)
-;どこかで１泊しなさい(砂漠に穴があく)
+;どこかで1泊しなさい(砂漠に穴があく)
 _HINT_GOHOTEL_FORDSRT;marcus
 @CHKF(FLG_DSRT_SYOZI_1)
 @FALSE_GOTO(_HINT_SYOZI_FOOD)
@@ -815,7 +815,7 @@ _HINT_GOHOTEL_FORDSRT;marcus
 @!
 
 ;ミスフェイクに会った後(モッチー援助した、砂漠に穴が開いた)
-;砂漠に穴が開いたので埋蔵金を掘りに行きなさい(砂漠の５匹のボスを倒しなさい)
+;砂漠に穴が開いたので埋蔵金を掘りに行きなさい(砂漠の5匹のボスを倒しなさい)
 _HINT_DSRT_DUNGEON;
 @CHKF(FLG_DSRT_SYOZI_1)
 @FALSE_GOTO(_HINT_SYOZI_FOOD)
@@ -854,7 +854,7 @@ _HINT_DSRT_SYOZI2;marcus
 
 ;jpn:◆さばくのダンジョンの↓
 ;jpn: ショージ・モッチーさんに@KEY()↓
-;jpn:◆５ひきのボスたちを↓
+;jpn:◆5ひきのボスたちを↓
 ;jpn: たおしたことを ちゃんと↓
 ;jpn: ほうこくしたかい?@KEY()↓
 ;jpn:◆おじさんはむかし↓
@@ -1049,7 +1049,7 @@ _HINT_FOUR_MAID;marcus
 @!
 
 ;メイドにぐるめどうふマシンわたした後
-;モノトリービル４８Fに誰か(ポーラ)がいるので行きなさい	○
+;モノトリービル48Fに誰か(ポーラ)がいるので行きなさい	○
 _HINT_FOUR_PAULA;marcus
 ◆I heard that you were asked to dinner@KEY()↓
 ◆by the cute maid at the Monotoli Building.@KEY()↓
@@ -1211,7 +1211,7 @@ _HINT_HIEROGLYPH_B;marcus
 
 ;jpn:◆サマーズにある↓
 ;jpn: スカラビぶんかはくぶつかんの↓
-;jpn: ２かいには いったかい?@KEY()↓
+;jpn: 2かいには いったかい?@KEY()↓
 ;jpn:◆ひょっとしたら‥‥@KEY()↓
 ;jpn:◆ヒエログリフを↓
 ;jpn: みることができる↓
@@ -1532,7 +1532,7 @@ _HINT_GO_DOSEI2;marcus
 @GOSUB(_HINT_KOKOMADE)
 @!
 
-;スペーストンネル１、５失敗後
+;スペーストンネル1、5失敗後
 ;オネットで物質XYZ手に入れなさい
 _HINT_ITEM_XYZ;marcus
 ◆A very special substance is necessary to complete the Phase Distorter.@KEY()↓
@@ -1717,7 +1717,7 @@ _HINT_WARUINE;marcus
 @!
 
 _HINT_NOMONEY;marcus
-;＜はい＞でおかねがない場合
+;<はい>でおかねがない場合
 ◆Oh, you don’t have any money.↓
   Don’t you understand?@KEY()↓
 ◆This is how I make my living...I can’t just give you a hint for free,

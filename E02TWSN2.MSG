@@ -1,5 +1,5 @@
 ;----------------------------------------
-;@Habitat:ツーソン／フィールド／街入り口付近
+;@Habitat:ツーソン/フィールド/街入り口付近
 ;@Person:観光案内役シェリー
 ;@Figure:OLG
 ;@AppearanceKey:0
@@ -7,7 +7,7 @@
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_SHERRY
-MSG_TWSN_SHERRY;＃
+MSG_TWSN_SHERRY;#
 ;ツーソンの観光案内所「シェリー」
 ◆Welcome!
 ;jpn:◆ハーイ ウェルカム!
@@ -67,7 +67,7 @@ _TWSN_SHERRY_YES;
 ;jpn:◆されても こまります。
 @KEYNP()
 』
-_TWSN_SHERRY_END;＆
+_TWSN_SHERRY_END;&
 ◆I’ve been giving out info about Twoson for years now.@KEY()↓
 ◆I’ll quit this job and I’ll, tee hee,@WI(15) get married.
 ;jpn:◆ツーソンのまちのあんないを↓
@@ -78,7 +78,7 @@ _TWSN_SHERRY_END;＆
 』
 
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:チケットの弱男
 ;@Figure:ジミな男
 ;@AppearanceKey:0
@@ -132,7 +132,7 @@ _TWSN_SHERRY_END;＆
 ;』
 
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:街の人A
 ;@Figure:おじさんA
 ;@AppearanceKey:0
@@ -150,7 +150,7 @@ MSG_TWSN_N;
 』
 
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:街の人B
 ;@Figure:インディー
 ;@AppearanceKey:0
@@ -191,7 +191,7 @@ _TWSN_PO_B_PAULA_DEAD;
 @KEYNP()
 @!
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:街の人C
 ;@Figure:モヒカン
 ;@AppearanceKey:0
@@ -226,7 +226,7 @@ _TWSN_P_AFTER;
 ;』
 
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:街の人D
 ;@Figure:おばあさん
 ;@AppearanceKey:0
@@ -290,7 +290,7 @@ _TWSN_A_NESS_PAULA_DEAD;
 ◆He’s now talking to a plain,@WI(15) old lady in Twoson.@KEY()↓
 ◆I heard that the game has some messages that are just there for fun.
 ;jpn:◆うちの まごは↓
-;jpn: 「マザー２」っていう↓
+;jpn: 「マザー2」っていう↓
 ;jpn: ゲームをやってるんだけど@KEY()↓
 ;jpn:◆いま @DSP_NAME(0)が@KEY()↓
 ;jpn:◆ツーソンのまちの↓
@@ -306,7 +306,7 @@ _TWSN_A_NESS_PAULA_DEAD;
 @KEYNP()
 』
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:街の人E
 ;@Figure:おじさんD
 ;@AppearanceKey:0
@@ -315,7 +315,7 @@ _TWSN_A_NESS_PAULA_DEAD;
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_HAPPY_1
 MSG_TWSN_HAPPY_1;@MiuraAdapted
-;通行人TH１♂
+;通行人TH1♂
 ;ツーソンからハッピーハッピー村への案内がわりの人
 @CHKFGOTO(FLG_WIN_CARPAINTER,_TWSN_HAPPY_1_LATER)
 ◆If you go to the East,@WI(15) you could run into trouble.@KEY()↓
@@ -340,7 +340,7 @@ _TWSN_HAPPY_1_LATER;
 』
 
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:街の人F
 ;@Figure:少女A
 ;@AppearanceKey:0
@@ -349,7 +349,7 @@ _TWSN_HAPPY_1_LATER;
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_HAPPY_2
 MSG_TWSN_HAPPY_2;
-;通行人TH２♀
+;通行人TH2♀
 @CHKFGOTO(FLG_WIN_CARPAINTER,_TWSN_HAPPY_2_LATER)
 ◆People in Happy−Happy Village are fanatical about a strange religion.@KEY()↓
 ◆Maybe they’ve got some sort of bad fever.@WI(20)  Be careful.
@@ -368,7 +368,7 @@ _TWSN_HAPPY_2_LATER;
 』
 
 
-;@Habitat:ツーソン／フィールド／街の適当な所
+;@Habitat:ツーソン/フィールド/街の適当な所
 ;@Person:街の犬
 ;@Figure:チリドッグ
 ;@AppearanceKey:0
@@ -401,7 +401,7 @@ _TWSN_STRAY_DOG_AFTER;
 ;』
 
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:ガラクタ屋
 ;@Figure:レゲエ
 ;@AppearanceKey:0
@@ -414,8 +414,8 @@ MSG_TWSN_GARAKUTA;
 』
 
 ;ガラクタ屋
-; １キロ  ０００ドル
-; １トン ００００ドル
+; 1キロ  000ドル
+; 1トン 0000ドル
 ;◆なんにつかえるかは↓
 ;jpn:: あんたのくふうしだい。@KEY()↓
 ;◆ガラクタを かってってくれ。↓
@@ -435,7 +435,7 @@ MSG_TWSN_GARAKUTA;
 ; また きてくれよ。@KEYNP()
 
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:古道具屋オガタ
 ;@Figure:ボロ
 ;@AppearanceKey:0
@@ -449,13 +449,13 @@ MSG_TWSN_OGATA;
 ◆I own an antique shop.@KEY()↓
 ◆No one is buying or selling anything,@KEY()↓
 ◆so I was thinking of selling the ”For Sale” Sign that sits in front of me.@KEY()↓
-◆It’s only ９８ dollars.@WI(20)  Please buy it.↓
+◆It’s only 98 dollars.@WI(20)  Please buy it.↓
 ;jpn:◆おれは ふるどうぐやなんだけど↓
 ;jpn: うったりかったり するものが↓
 ;jpn: いまは ないんだよ。@KEY()↓
 ;jpn:◆だからよー@WI(20) ふるどうぐやの↓
 ;jpn: カンバンを うろうとおもうんだ。@KEY()↓
-;jpn:◆たった９８ドル。@WI(20)かってくれよ。↓
+;jpn:◆たった98ドル。@WI(20)かってくれよ。↓
 @WINR_MONEY()
   <Yes>  <No>
 ;jpn:  <はい>  <いいえ>
@@ -512,7 +512,7 @@ _TWSN_OGATA_AFTER;
 @KEYNP()
 @!
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:ものさし売り
 ;@Figure:マスク
 ;@AppearanceKey:0
@@ -594,7 +594,7 @@ _TWSN_MONOSASI_ITEMFULL;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:卵屋エッグマン
 ;@Figure:リゾート男
 ;@AppearanceKey:0
@@ -641,7 +641,7 @@ _TWSN_EGGMAN_YES;
 ◆That’ll be @DSP_NUM(0) big ones.@KEY()↓
 ;jpn:◆@GOSUB(_SUB_NIICHAN_NEECHAN) わかいのに↓
 ;jpn: カラダのことを かんがえてるね。@KEY()↓
-;jpn:◆１こが たったの@DSP_NUM(0)ドルだ。↓
+;jpn:◆1こが たったの@DSP_NUM(0)ドルだ。↓
 @SAVE_REG()
 @WINR_MONEY()
 @DSP_PL()
@@ -667,7 +667,7 @@ _TWSN_EGGMAN_BUY;@MiuraAppended
 ;◆@GOSUB(_SUB_NIICHAN_NEECHAN)@KEY()↓
 ◆Okay,@WI(15) here you are...one egg to go!
 ;jpn:◆はい お@GOSUB(_SUB_NIICHAN_NEECHAN)↓
-;jpn: たまご １こ おもちかえり!
+;jpn: たまご 1こ おもちかえり!
 @KEY()
 』
 ;
@@ -705,7 +705,7 @@ _TWSN_EGGMAN_ITEMFULL;@MaltaAppended
 ;jpn:ねえちゃん
 ;@!
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:チンピラ
 ;@Figure:ツッパリ
 ;@AppearanceKey:0
@@ -754,10 +754,10 @@ _TWSN_CHINPIRA_LATER;
 @KEYNP()
 』
 _TWSN_CHINPIRA_LATER_NESS_DEAD;
-◆Will you give me １,０００ dollars?@KEY()↓
+◆Will you give me 1,000 dollars?@KEY()↓
 ◆I’ll give you all my support.↓
 <Yes> <No>
-;jpn:◆１０００ドルくれますか?@KEY()↓
+;jpn:◆1000ドルくれますか?@KEY()↓
 ;jpn:◆あなたの こころづよい↓
 ;jpn: みかたになりますよ。↓
 ;jpn:  <はい>  <いいえ>
@@ -775,11 +775,11 @@ _TWSN_CHINPIRA_DEAD_NO;
 @KEYNP()
 』
 _TWSN_CHINPIRA_DEAD_YES;
-◆You shouldn’t give away １,０００ dollars so easily.@KEY()↓
+◆You shouldn’t give away 1,000 dollars so easily.@KEY()↓
 ◆Let me give it back to you.@KEY()↓
 ◆Do you think I’m really an honest, reliable person?
 ;jpn:◆そんなに すなおに↓
-;jpn: １０００ドルも↓
+;jpn: 1000ドルも↓
 ;jpn: だしちゃ いけねえよ。@KEY()↓
 ;jpn:◆かえす!@KEY()↓
 ;jpn:◆おれが そんなに↓
@@ -788,7 +788,7 @@ _TWSN_CHINPIRA_DEAD_YES;
 @KEYNP()
 』
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:アカンベーカリー
 ;@Figure:コック
 ;@AppearanceKey:0
@@ -802,7 +802,7 @@ MSG_TWSN_AKANBAKERY;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:壷屋
 ;@Figure:ヘビ屋のパンチョ
 ;@AppearanceKey:0
@@ -845,7 +845,7 @@ _TWSN_URN_SHOP_LATER;道具屋のカンバンを手に入れてたら上で終�
 ;』
 
 
-;@Habitat:ツーソン／フィールド／ヌスット広場
+;@Habitat:ツーソン/フィールド/ヌスット広場
 ;@Person:くだもの屋
 ;@Figure:おばあさん
 ;@AppearanceKey:0
@@ -859,7 +859,7 @@ MSG_TWSN_FRUIT_SHOP;
 』
 
 
-;@Habitat:ツーソン／フィールド／オレンジハウスの前
+;@Habitat:ツーソン/フィールド/オレンジハウスの前
 ;@Person:ドア前オレンジキッド
 ;@Figure:オレンジキッド
 ;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/on
@@ -888,7 +888,7 @@ MSG_TWSN_ORANGE_DOOR;
 
 ;----------------------------------------
 
-;@Habitat:ツーソン／スリークへのトンネル／Threekへのトンネル
+;@Habitat:ツーソン/スリークへのトンネル/Threekへのトンネル
 ;@Person:トンネルを塞ぐ幽霊
 ;@Figure:ゾンビゴースト
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -910,7 +910,7 @@ MSG_TWSN_TUNNELGHOST;
 』
 
 
-;@Habitat:ツーソン／スリークへのトンネル／Threekへのトンネル
+;@Habitat:ツーソン/スリークへのトンネル/Threekへのトンネル
 ;@Person:その他大勢の幽霊
 ;@Figure:ゾンビゴースト
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -1226,7 +1226,7 @@ _TWSN_INFORMER_A_LATER;
 
 ;(うろつき犬も誘拐情報に)
 
-;アップルオレンジの家周辺に２名を新配置
+;アップルオレンジの家周辺に2名を新配置
 MSG_TWSN_INFORMER_B;
 @CHKFGOTO(FLG_TLPT_THRK,_TWSN_INFORMER_B_LATER)
 ◆I’m nuts about this one kid inventor.@KEY()↓
@@ -1297,7 +1297,7 @@ _TWSN_INFORMER_D_LATER;
 @KEYNP()
 』
 
-MSG_TWSN_HPTL_2F_A;ツーソンの病院２階に配置
+MSG_TWSN_HPTL_2F_A;ツーソンの病院2階に配置
 @CHKFGOTO(FLG_WIN_GEPPU,_TWSN_HPTL_2F_A_LATER)
 ◆I got bit by zombies in Threed,@WI(15) the next town over,@WI(15) so I’m stuck in this hospital.@KEY()↓
 ◆I left something good at the Threed Hospital,@KEY()↓
@@ -1315,7 +1315,7 @@ MSG_TWSN_HPTL_2F_A;ツーソンの病院２階に配置
 』
 _TWSN_HPTL_2F_A_LATER;
 ◆I’m in perfect, tip−top health now.@WI(20)  I just wish I had more visitors.@KEY()↓
-◆＊cough＊ ＊hack, hack＊ ＊cough＊
+◆*cough* *hack, hack* *cough*
 ;jpn:◆わたしは もう↓
 ;jpn: どこも わるくないんだけどね@KEY()↓
 ;jpn:◆だれかが おみまいにでも↓
@@ -1565,11 +1565,11 @@ MSG_TWSN_CHAOS_HALL_K;怪しい男
 』
 ;◆「テングになる」と↓
 ; おなじいみのことばを↓
-; したの ３つのなかから えらべ。@KEY()↓
-;◆１：@WI(20)すっかりつかれる。↓
-; ２：@WI(20)ゆめをうしなう。↓
-; ３：@WI(20)うぬぼれる。@KEY()↓
-;  <１><２><３>
+; したの 3つのなかから えらべ。@KEY()↓
+;◆1:@WI(20)すっかりつかれる。↓
+; 2:@WI(20)ゆめをうしなう。↓
+; 3:@WI(20)うぬぼれる。@KEY()↓
+;  <1><2><3>
 ;@DSP_ITEM(3)
 ;@SELGOTO(_CHAOS_HALL_K_1,_CHAOS_HALL_K_2,_CHAOS_HALL_K_3)
 ;

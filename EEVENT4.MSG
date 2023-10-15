@@ -62,7 +62,7 @@ MSG_THRK_TELE_APPLEKID;
 ◆I’ve never actually seen a zombie, but if there really are any,@KEY()↓
 ◆Zombie Paper would be very useful...@KEY()↓
 ◆I’ll be calling you if I come up with anything else...@KEY()↓
-◆＊Click!＊ Beeeeep!
+◆*Click!* Beeeeep!
 ;jpn:◆さっき マッハピザのひとに↓
 ;jpn: @DSP_STS(STS_PC_NAME_NES)さんに とどけるよう↓
 ;jpn: たのんだので@KEY()↓
@@ -117,7 +117,7 @@ MSG_THRK_MACH;
 _THRK_MACH_MAIN;
 @GOODSIN_PLAYER(0,GDS_TOOL_ZOMBI_HOIHOI)
 @GOSUB(MSG_SUB_GETGOODS_S)@KEY()↓
-◆That’s right, @DSP_NAME(PC_NESS)...＊wink, wink＊@KEY()↓
+◆That’s right, @DSP_NAME(PC_NESS)...*wink, wink*@KEY()↓
 ◆I’ve done my duty and given you Apple Kid’s thingamajig...@KEY()↓
 ◆Well, goodbye!...
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)さん↓
@@ -229,7 +229,7 @@ MSG_MOON_TELE_APPLE_TOFU;
 ;jpn:◆ちかいうちに つくとおもいます。↓
 ;jpn: おっと けんきゅうしつのほうが
 @KEY()↓
-;＠ドッカーン
+;@ドッカーン
 ◆(Kaboooom!)@KEY()↓
 ◆...Uh, I’vegotsomeproblemsheregottago, bye!
 ;jpn:◆じゃ ちょっと↓
@@ -247,9 +247,9 @@ MSG_FOUR_ESCARGO_TOFU;
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN(1)
-◆＊Crash＊@KEY()↓
+◆*Crash*@KEY()↓
 ◆Ooops!@KEY()↓
-◆＊Crunch＊@KEY()↓
+◆*Crunch*@KEY()↓
 ◆Ooops!@KEY()↓
 ◆...Greetings!  (It’s Escargo Express’s neglected class.)
 ;jpn:◆おっと!@KEY()↓
@@ -304,7 +304,7 @@ MSG_FOUR_ESCARGO_TOFU;
 ;	●(土星谷にワープ)
 ;	「どうぐやのかんばん」を使う
 ;	「なまたまご」が「ひよこ」に
-;	２時間パパ
+;	2時間パパ
 ;	エスカルゴ運送の配達
 ;	●プレイヤー名の入力
 ;	マッハピザの配達
@@ -411,7 +411,7 @@ MSG_PHONE_GUMI_ORANGE;
 ◆I’m also working hard on my invention,@KEY()↓
 ◆so I hope you’ll understand.@KEY()↓
 ◆Say hello to your friends for me!@KEY()↓
-◆＊click＊
+◆*click*
 ;jpn:◆@DSP_NAME(0)さん おひさしぶりです。↓
 ;jpn: オレンジキッドです。@KEY()↓
 ;jpn:◆ゆでたまごを なまたまごに↓
@@ -476,7 +476,7 @@ MSG_PHONE_GUMI_APPLE;
 @WI(60)↓
 ◆Hey!  Oh no!  What are you doing to me?@KEY()↓
 @WI(60)↓
-◆Who are you ?!!!...＊click＊
+◆Who are you ?!!!...*click*
 ;jpn:◆もしもし おひさしぶりです↓
 ;jpn: アップルキッドです。↓
 ;jpn: こっちは いいおてんきですよ。@KEY()↓
@@ -526,7 +526,7 @@ MSG_FOUR_TELE_APPLEKID;
 ◆I’ve got to find the wandering scientist,@KEY()↓
 ◆Dr. Andonuts, and make the distorter.@KEY()↓
 ◆So, I may be gone for a while.@KEY()↓
-◆Later...＊click＊
+◆Later...*click*
 ;jpn:◆もしもし ひさしぶり。↓
 ;jpn: アップルキッドです。↓
 ;jpn: やっぱり ぼくは てんさいです。@KEY()↓
@@ -577,7 +577,7 @@ MSG_FOUR_TELE_ORANGEKID;
 ◆I’m still working on the way to change boiled eggs into raw eggs.@KEY()↓
 ◆It’s taking longer than I thought...@KEY()↓
 ◆I’m going to really work at it, though...talk to me later.@KEY()↓
-◆＊click＊
+◆*click*
 ;jpn:◆もしもし れんらくできなくて↓
 ;jpn: すみませんでした。↓
 ;jpn: オレンジキッドです。@KEY()↓
@@ -624,12 +624,12 @@ MSG_EVT_MUSEUM_AS_HRECT;
 @GET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,1,0);[ 先頭の方を向かせる ]
 @SET_CHAR_DIR(PRSN_FRSD_MUSEUM_FRONT_A,0)
 @OPEN(1);[ window open ]
-◆The admission fee is ＄５.００ per person.@KEY()↓
+◆The admission fee is $5.00 per person.@KEY()↓
 ◆Is that okay with you?↓
 <Yes> <No>
 @WINR_MONEY()
 ;jpn:◆にゅうじょうりょう↓
-;jpn: ひとり５ドルです。↓
+;jpn: ひとり5ドルです。↓
 ;jpn: よろしいですか?
 ;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
@@ -639,7 +639,7 @@ _EVT_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(5)
 @XCHG()
 ◆You can’t afford↓
-  to spend ＄@DSP_NUM(0)?,@KEY()↓
+  to spend $@DSP_NUM(0)?,@KEY()↓
 ◆or are you just not into dinosaurs?  You must be nuts...
 ;jpn:◆@DSP_NUM(0)ドルが おしいのかしら。↓
 ;jpn: きょうりゅうに きょうみが↓
@@ -664,7 +664,7 @@ _EVT_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(5)
 @XCHG()
 ◆You don’t even↓
-  have ＄@DSP_NUM(0)?,@KEY()↓
+  have $@DSP_NUM(0)?,@KEY()↓
 ◆An unusual specimen like you should be on display in the museum.
 ;jpn:◆たった@DSP_NUM(0)ドルも↓
 ;jpn: もっていないなんて@KEY()↓
@@ -725,14 +725,14 @@ MSG_EVT_SUMS_MUSEUM_AS_HRECT;
 @GET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,1,0);[ 先頭の方を向かせる ]
 @SET_CHAR_DIR(PRSN_SUMS_HIERO_FRONT_A,0)
 @OPEN(1);[ window open ]
-◆You cannot get in without paying admission.  It’s ＄３ per person.@KEY()↓
+◆You cannot get in without paying admission.  It’s $3 per person.@KEY()↓
 ◆You’ll pay, won’t you?↓
 @WINR_MONEY()
 <Yes> <No>
 ;jpn:◆にゅうじょうりょうを↓
 ;jpn: はらわないで はいっては↓
 ;jpn: いけなかったわね。@KEY()↓
-;jpn:◆ひとり３ドルです。@WI(20)↓
+;jpn:◆ひとり3ドルです。@WI(20)↓
 ;jpn: おしはらいになるわね?@KEY()↓
 ;jpn:@WINR_MONEY()
 ;jpn:  <はい>  <いいえ>
@@ -742,7 +742,7 @@ MSG_EVT_SUMS_MUSEUM_AS_HRECT;
 _EVT_SUMS_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(3)
 @XCHG()
-◆Is ＄@DSP_NUM(0) too expensive↓
+◆Is $@DSP_NUM(0) too expensive↓
   for you?@KEY()↓
 ◆Or are you just not interested in ancient culture?
 ;jpn:◆@DSP_NUM(0)ドルは たかかったのかしら。↓
@@ -768,7 +768,7 @@ _EVT_SUMS_MUSEUM_AS_HRECT_NO
 @MUL_ACTIVE_PLAYER(3)
 @XCHG()
 ◆You don’t even↓
-  have ＄@DSP_NUM(0)?@KEY()↓
+  have $@DSP_NUM(0)?@KEY()↓
 ◆If it were up to me, an oddity like you would be exhibited in the museum...
 ;jpn:◆たった@DSP_NUM(0)ドルも↓
 ;jpn: もっていないなんて@KEY()↓
@@ -826,7 +826,7 @@ MSG_EVT_ROOF_TONCHIKI;
 @WAITSYS()
 @WI( 10 )
 @OPEN(1)
-@GOSUB(MSG_TWSN_TONCHIKI);喋るトンチキ;セリフ：勝負だ!
+@GOSUB(MSG_TWSN_TONCHIKI);喋るトンチキ;セリフ:勝負だ!
 @CLOSEALL()
 @REMOVE_CHAR( PRSN_TWSN_FIELD_1I, ANIM_TONCHIKI_ENTER_HOUSE )
 @WAITSYS()
@@ -1129,7 +1129,7 @@ MSG_EVT_PRAY_1_NES_MAMA;
 ;楕円ウィンドウマスク管理の透明君
 @RESF( FLG_ANIM_PORT_0 )		;ウィンドウ閉じる用トリガ初期化
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;マイホーム１階にワープ
+;マイホーム1階にワープ
 @WARP( WARP_EVT_INORU_MYHOME )
 @WI( 120 )
 @COLD_PLAYER(PC_ALL)
@@ -1156,12 +1156,12 @@ MSG_EVT_PRAY_1_NES_MAMA;
 ;ママ左向く
 @SET_GOM_CHAR_DIR( GOM_MAMA, DIR_M_LEFT )
 @WI( 20 )		;階段音待ち
-;ママ＆トレーシー中央に寄る
+;ママ&トレーシー中央に寄る
 @MOVE_GOM_CHAR( GOM_TRACY, ANIM_EVT_PRAY_1_TRACY, OBJFX_SHOW_NONE )
 @FRESH_GOM_CHAR( GOM_MAMA )
 @WAITSYS()
 @WI( 60 )
-;画面外東から犬が二人に接近(犬を目で追うママ＆トレーシー)
+;画面外東から犬が二人に接近(犬を目で追うママ&トレーシー)
 @MOVE_GOM_CHAR( GOM_MYDOG, ANIM_EVT_PRAY_1_DOG, OBJFX_SHOW_NONE )
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_MAMA )
@@ -1302,14 +1302,14 @@ MSG_EVT_PRAY_4_TONY;
 ;楕円ウィンドウマスク管理の透明君
 @RESF( FLG_ANIM_PORT_0 )		;ウィンドウ閉じる用トリガ初期化
 @MOVE_GOM_CHAR( GOM_HIT_CHR3, ANIM_EVT_PRAY_OVALWINDOW, OBJFX_AFTER_WARP )
-;寄宿舎２階にワープ
-@WARP( WARP_EVT_INORU_DORMITORY )	;寄宿舎２Fにワープ
+;寄宿舎2階にワープ
+@WARP( WARP_EVT_INORU_DORMITORY )	;寄宿舎2Fにワープ
 @COLD_PLAYER(PC_ALL)
 @WI( 120 )
 ;トニーがドアから部屋の中央に走る
 @MOVE_GOM_CHAR( GOM_TONY, ANIM_EVT_PRAY_4_TONY, OBJFX_SHOW_NONE )
 @WI( 5 )
-;トニーを見つめる生徒４人
+;トニーを見つめる生徒4人
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_A, ANIM_EVT_PRAY_4_GAZE_TONY )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_B, ANIM_EVT_PRAY_4_GAZE_TONY )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_C, ANIM_EVT_PRAY_4_GAZE_TONY )
@@ -1317,7 +1317,7 @@ MSG_EVT_PRAY_4_TONY;
 ;きょろきょろするトニー
 ;西画面外に消えるトニー
 @WAITSYS()
-;部屋中央に集まる生徒４人
+;部屋中央に集まる生徒4人
 @COLD_GOM_CHAR( GOM_TONY )	;トニー画面外で休止
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_A, ANIM_EVT_PRAY_4_PUPIL_A )
 @REMOVE_CHAR( PRSN_WINS_DORM_PASS_B, ANIM_EVT_PRAY_4_PUPIL_B )
@@ -1396,7 +1396,7 @@ MSG_EVT_PRAY_5_RAMA;
 ;間を置く
 @WI( 50 )
 ;娘Cが東画面外から登場
-;娘Cを見つめる娘A＆B
+;娘Cを見つめる娘A&B
 ;娘ABの南に移動する娘C
 ;全員南向く
 @REMOVE_CHAR( PRSN_RAMA_FIELD_M, ANIM_EVT_PRAY_5_GIRL_C )
@@ -1500,7 +1500,7 @@ MSG_EVT_PRAY_7_DOSEI;
 @WI( 3 )
 ;きょろきょろする博士
 @REMOVE_CHAR( PRSN_DOSE_FIELD_K, ANIM_EVT_PRAY_7_KYOROKYORO )
-@WI( 70 )	;アニメ待ちなので必ず６５フレーム以上待つこと
+@WI( 70 )	;アニメ待ちなので必ず65フレーム以上待つこと
 ;モッチーが移動し東向く
 @REMOVE_CHAR( PRSN_DOSE_FIELD_L, ANIM_EVT_PRAY_7_MOTCHY )
 ;博士が移動し西向く
@@ -1508,7 +1508,7 @@ MSG_EVT_PRAY_7_DOSEI;
 ;土星さんが移動する
 @REMOVE_CHAR( PRSN_DOSE_FIELD_W, ANIM_EVT_PRAY_7_DOSEI )
 @WAITSYS()
-;土星さん４人が画面外から博士たちの元へ
+;土星さん4人が画面外から博士たちの元へ
 @MOVE_GOM_CHAR( GOM_DOSEI, ANIM_EVT_PRAY_7_DOSEI_A, OBJFX_SHOW_NONE )
 @MOVE_GOM_CHAR( GOM_DOSEI, ANIM_EVT_PRAY_7_DOSEI_B, OBJFX_SHOW_NONE )
 @MOVE_GOM_CHAR( GOM_DOSEI, ANIM_EVT_PRAY_7_DOSEI_C, OBJFX_SHOW_NONE )
@@ -1603,7 +1603,7 @@ MSG_EVT_HELIPOKEY;
 @SETF(FLG_FOUR_HELI_DISAPPEAR)
 @CLRF(FLG_SYS_MONSTER_OFF);モンスター出す
 』
-：−−−−−−−−−−−−−−−−−−−−−
+:−−−−−−−−−−−−−−−−−−−−−
 
 
 ;#101	地底大陸へ落下
@@ -1614,9 +1614,9 @@ MSG_EVT_HELIPOKEY;
 ;-------------------------------------------------------------------
 
 
-;#102	８つのサウンド集まる(サウンド確認画面)
+;#102	8つのサウンド集まる(サウンド確認画面)
 
-;★特殊イベント２０番と同じ。
+;★特殊イベント20番と同じ。
 ;★専用の「サウンド確認画面」表示。
 
 MSG_POWR_GIAN;

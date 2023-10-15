@@ -1,6 +1,6 @@
 ;-----------------------------------------------------
 
-;@Habitat:ドコドコ砂漠／ドラッグストア／ドラッグストア
+;@Habitat:ドコドコ砂漠/ドラッグストア/ドラッグストア
 ;@Person:道具売り
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
@@ -13,7 +13,7 @@ MSG_DSRT_SHOP;@MiuraAppended
 』
 
 
-;@Habitat:ドコドコ砂漠／ドラッグストア／ドラッグストア
+;@Habitat:ドコドコ砂漠/ドラッグストア/ドラッグストア
 ;@Person:宿係
 ;@Figure:ジミな男
 ;@AppearanceKey:0
@@ -21,7 +21,7 @@ MSG_DSRT_SHOP;@MiuraAppended
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DSRT_MOTEL
-MSG_DSRT_MOTEL;＠ポーラだったらマアム→松
+MSG_DSRT_MOTEL;@ポーラだったらマアム→松
 ◆Sir, we also have motel facilities.
 ;jpn:◆うちは やどやも↓
 ;jpn: やってるんですけどねぇ@WI(20)↓
@@ -30,7 +30,7 @@ MSG_DSRT_MOTEL;＠ポーラだったらマアム→松
 』
 
 
-;@Habitat:ドコドコ砂漠／ドラッグストア／ドラッグストア
+;@Habitat:ドコドコ砂漠/ドラッグストア/ドラッグストア
 ;@Person:CD
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -39,8 +39,8 @@ MSG_DSRT_MOTEL;＠ポーラだったらマアム→松
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-；----------------------------------------
-;@Habitat:ドコドコ砂漠／モッチーの家／モッチーの家
+;----------------------------------------
+;@Habitat:ドコドコ砂漠/モッチーの家/モッチーの家
 ;@Person:宿泊係
 ;@Figure:しげちゃん
 ;@AppearanceKey:0
@@ -96,7 +96,7 @@ _DSRT_HOTEL_SHIGE_ITEMFULL;
 』
 ;----------------------------------------
 
-;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Habitat:ドコドコ砂漠/フィールド/西の交通渋滞
 ;@Person:渋滞被害者A
 ;@Figure:OLC
 ;@AppearanceKey:FLG_DSRT_CLEAR/off
@@ -113,7 +113,7 @@ MSG_DSRT_HIGHWAY_A;
 ;jpn: ‥‥ああ おしっこしたい。@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Habitat:ドコドコ砂漠/フィールド/西の交通渋滞
 ;@Person:渋滞被害者B
 ;@Figure:青年
 ;@AppearanceKey:FLG_DSRT_CLEAR/off
@@ -131,7 +131,7 @@ MSG_DSRT_HIGHWAY_B;
 ;jpn:◆これじゃ すすめないよなぁ。@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Habitat:ドコドコ砂漠/フィールド/西の交通渋滞
 ;@Person:渋滞被害者C
 ;@Figure:リゾート男
 ;@AppearanceKey:FLG_DSRT_CLEAR/off
@@ -151,7 +151,7 @@ MSG_DSRT_HIGHWAY_C;
 ;jpn: イライラするぜー!@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／西の交通渋滞
+;@Habitat:ドコドコ砂漠/フィールド/西の交通渋滞
 ;@Person:渋滞被害者D
 ;@Figure:ツッパリ
 ;@AppearanceKey:FLG_DSRT_CLEAR/off
@@ -161,17 +161,17 @@ MSG_DSRT_HIGHWAY_C;
 ;@Message:MSG_DSRT_HIGHWAY_D
 MSG_DSRT_HIGHWAY_D;
 ◆I was going to see my girlfriend in Fourside...@KEY()↓
-◆At this pace I’ll be a １００ years old by the time I get there!
+◆At this pace I’ll be a 100 years old by the time I get there!
 @KEYNP()
 ;jpn:◆フォーサイドの かのじょに↓
 ;jpn: あいたくて はしってたのに↓
 ;jpn: このままじゃ‥‥@KEY()↓
 ;jpn:◆おれも かのじょも↓
-;jpn: １００さいに なっちまうよォ!@KEYNP()
+;jpn: 100さいに なっちまうよォ!@KEYNP()
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／ドラッグストア前
+;@Habitat:ドコドコ砂漠/フィールド/ドラッグストア前
 ;@Person:電話
 ;@Figure:電話ボックス
 ;@AppearanceKey:0
@@ -180,7 +180,7 @@ MSG_DSRT_HIGHWAY_D;
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠の西
+;@Habitat:ドコドコ砂漠/フィールド/砂漠の西
 ;@Person:日光浴好きの男
 ;@Figure:寝ている男
 ;@AppearanceKey:0
@@ -207,7 +207,7 @@ MSG_DSRT_SUNTANMAN;
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠の西
+;@Habitat:ドコドコ砂漠/フィールド/砂漠の西
 ;@Person:日光浴好きの女
 ;@Figure:寝ている女
 ;@AppearanceKey:0
@@ -228,7 +228,7 @@ MSG_DSRT_SUNTANGAL;
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠の西ハイウェイの脇
+;@Habitat:ドコドコ砂漠/フィールド/砂漠の西ハイウェイの脇
 ;@Person:コンタクトの立て札
 ;@Figure:立札
 ;@AppearanceKey:0
@@ -236,7 +236,7 @@ MSG_DSRT_SUNTANGAL;
 ;@GoodsMessage:0
 ;@CheckMessage:MSG_DSRT_CHECK_CONTACTLENS
 ;@Message:0
-MSG_DSRT_CHECK_CONTACTLENS;＃
+MSG_DSRT_CHECK_CONTACTLENS;#
 ◆(I lost a pair of contact lenses here in the Dusty Dunes Desert.@KEY()↓
 ◆They were a momento from my grandma, and very important to me.@KEY()↓
 ◆If you find them,  bring them to me and I’ll give you a reward.@KEY()↓
@@ -250,7 +250,7 @@ MSG_DSRT_CHECK_CONTACTLENS;＃
 ;jpn: なので@KEY()↓
 ;jpn:◆みつけて とどけてくださったら↓
 ;jpn: おれいを します。@KEY()↓
-;jpn:◆フォーサイド パンやの２かい↓
+;jpn:◆フォーサイド パンやの2かい↓
 ;jpn: ペテネラ・ジョバンニ)
 @CHKFGOTO(FLG_FOUR_PETENERA,_DSRT_CONTACTLENS_LATER)
 @KEYNP()
@@ -265,7 +265,7 @@ _DSRT_CONTACTLENS_LATER;上に続けて
 ;jpn: ありがとうございました)@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／モッチーの家の前
+;@Habitat:ドコドコ砂漠/フィールド/モッチーの家の前
 ;@Person:ショージ・モッチー
 ;@Figure:ショージ・モッチー
 ;@AppearanceKey:FLG_DSRT_SYOZI_DISAPPEAR/off
@@ -397,7 +397,7 @@ _DSRT_SYOZI_END;
 @!
 
 
-;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Habitat:ドコドコ砂漠/フィールド/埋蔵金発掘現場
 ;@Person:見物人A
 ;@Figure:OLG
 ;@AppearanceKey:FLG_DSRT_SWITCH/on
@@ -423,7 +423,7 @@ MSG_DSRT_A_LATER;
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Habitat:ドコドコ砂漠/フィールド/埋蔵金発掘現場
 ;@Person:見物人B
 ;@Figure:少女A
 ;@AppearanceKey:FLG_DSRT_SWITCH/on
@@ -441,7 +441,7 @@ MSG_DSRT_B;
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Habitat:ドコドコ砂漠/フィールド/埋蔵金発掘現場
 ;@Person:見物人C
 ;@Figure:ツッパリ
 ;@AppearanceKey:FLG_DSRT_SWITCH/on
@@ -458,7 +458,7 @@ MSG_DSRT_C;
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／埋蔵金発掘現場
+;@Habitat:ドコドコ砂漠/フィールド/埋蔵金発掘現場
 ;@Person:見物人D
 ;@Figure:サラリーマンC
 ;@AppearanceKey:FLG_DSRT_SWITCH/on
@@ -478,7 +478,7 @@ MSG_DSRT_D;
 ;jpn:◆こまったもんだ。@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Habitat:ドコドコ砂漠/フィールド/ハイウェイ中央の脇
 ;@Person:スロットマシン
 ;@Figure:スロットマシン
 ;@AppearanceKey:0
@@ -515,12 +515,12 @@ _SLOTMACHINE_FRONT
 ;jpn:◆でもね‥‥ぼくのうしろにいる↓
 ;jpn: パンチョ ピンチョきょうだいと↓
 ;jpn: そのともだち‥‥@KEY()↓
-;jpn:◆ようきな ３にんぐみが@KEY()↓
+;jpn:◆ようきな 3にんぐみが@KEY()↓
 ;jpn:◆きみ@GOSUB(MSG_SUB_TATI)を ハッピーにして↓
 ;jpn: くれるはずさ)@KEY()↓
-;２回め以降
+;2回め以降
 ◆(Would you like to insert a buck?)↓
-;jpn:◆(１ドル いれてみますか?)@KEY()↓
+;jpn:◆(1ドル いれてみますか?)@KEY()↓
 ;はいいいえ
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_SLOT_START,_SLOT_CANCEL)
@@ -862,7 +862,7 @@ _SLOTBROS_EXIT
 @REMOVE_CHAR(PRSN_DEST_FIELD_N,ANIM_MAPOBJSTILL)
 @!
 
-;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Habitat:ドコドコ砂漠/フィールド/ハイウェイ中央の脇
 ;@Person:スロットBros.兄
 ;@Figure:スロットブラザース
 ;@AppearanceKey:0
@@ -877,7 +877,7 @@ MSG_DSRT_SLOTBROS_A;@MiuraAppended
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Habitat:ドコドコ砂漠/フィールド/ハイウェイ中央の脇
 ;@Person:スロットBros.弟
 ;@Figure:スロットブラザース
 ;@AppearanceKey:0
@@ -892,7 +892,7 @@ MSG_DSRT_SLOTBROS_B;@MiuraAppended
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／ハイウェイ中央の脇
+;@Habitat:ドコドコ砂漠/フィールド/ハイウェイ中央の脇
 ;@Person:スロットBros.友
 ;@Figure:スロットブラザース
 ;@AppearanceKey:0
@@ -907,7 +907,7 @@ MSG_DSRT_SLOTBROS_C;@MiuraAppended
 ;jpn: おおしおへいはちろうです。@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Habitat:ドコドコ砂漠/フィールド/砂漠中央付近
 ;@Person:うまのほね
 ;@Figure:骨
 ;@AppearanceKey:0
@@ -923,7 +923,7 @@ MSG_DSRT_HORSEBONE;
 ;jpn: しゃべらないよ)@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Habitat:ドコドコ砂漠/フィールド/砂漠中央付近
 ;@Person:うしのほね
 ;@Figure:骨
 ;@AppearanceKey:0
@@ -940,7 +940,7 @@ MSG_DSRT_COWBONE;
 ;jpn: さみしいものだね)@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Habitat:ドコドコ砂漠/フィールド/砂漠中央付近
 ;@Person:くろゴマ
 ;@Figure:黒ゴマ
 ;@AppearanceKey:0
@@ -982,7 +982,7 @@ _DSRT_BLACKSESAME_1;
 @GOSUB(MSG_GLOBAL_PHOTO_13);撮影
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Habitat:ドコドコ砂漠/フィールド/砂漠中央付近
 ;@Person:しろゴマ
 ;@Figure:白ゴマ
 ;@AppearanceKey:0
@@ -1018,7 +1018,7 @@ _DSRT_WHITESESAME_1;
 ;御褒美?
 』
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠中央付近
+;@Habitat:ドコドコ砂漠/フィールド/砂漠中央付近
 ;@Person:コンタクトレンズ
 ;@Figure:光
 ;@AppearanceKey:0
@@ -1052,7 +1052,7 @@ _DSRT_CONTACTLENS_ITEMFULL;
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠中央オアシス
+;@Habitat:ドコドコ砂漠/フィールド/砂漠中央オアシス
 ;@Person:デザートモンキー
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -1078,7 +1078,7 @@ MSG_DSRT_MONKEY_A;
 』
 
 
-;@Habitat:ドコドコ砂漠／フィールド／砂漠中央オアシス
+;@Habitat:ドコドコ砂漠/フィールド/砂漠中央オアシス
 ;@Person:武器専門男
 ;@Figure:武器男
 ;@AppearanceKey:0
@@ -1093,9 +1093,9 @@ MSG_DSRT_WEAPON;
 
 ;▼▲▼▲▼▲▼▲ ドコドコ砂漠 ▼▲▼▲▼▲▼▲
 
-;^^^^^^^^ドコドコ砂漠：サルダンジョン^^^^^^^^
+;^^^^^^^^ドコドコ砂漠:サルダンジョン^^^^^^^^
 
-;@Habitat:ドコドコ砂漠／サルダンジョン／どこか
+;@Habitat:ドコドコ砂漠/サルダンジョン/どこか
 ;@Person:タライ・ジャブ
 ;@Figure:タライジャブ
 ;@AppearanceKey:0
@@ -1147,7 +1147,7 @@ MSG_DSRT_TARAIJAB;チベット僧(タライ・ジャブ)
   Proceed as you wish.@KEY()↓
 ◆Open the treasure box and take what is inside with you.@KEY()↓
 ;jpn: そして@DSP_STS(STS_PC_NAME_POO)@WI(30)↓
-;jpn: ４つのちからが であうとき@KEY()↓
+;jpn: 4つのちからが であうとき@KEY()↓
 ;jpn:◆ねじれようとしている↓
 ;jpn: うちゅうは‥‥やすらかな↓
 ;jpn: こきゅうを とりもどす。@KEY()↓
@@ -1246,7 +1246,7 @@ _DSRT_TARAIJAB_GOODSFULL;
 ;------------
 』
 
-_DSRT_TARAIJAB_AFTER;＄
+_DSRT_TARAIJAB_AFTER;$
 ◆The truth of space and time moves through the universe like a wave...@KEY()↓
 ◆Truth speaks through space and matter and makes itself known to human beings.@KEY()↓
 ◆I was waiting for you,@WI(15) and you came.@WI(20)  This was destined to happen.@KEY()↓
@@ -1262,7 +1262,7 @@ _DSRT_TARAIJAB_AFTER;＄
 ;jpn: すべて さだめられた しんり。@KEYNP()
 』
 
-_DSRT_TARAIJAB_LATER;＆
+_DSRT_TARAIJAB_LATER;&
 ◆You’ve been exceedingly patient.@KEY()↓
 ◆You’ve overcome many hardships.@KEY()↓
 ◆I praise all of you for your courage.
@@ -1275,9 +1275,9 @@ _DSRT_TARAIJAB_LATER;＆
 
 ;▼▲▼▲▼▲▼▲ ドコドコ砂漠 ▼▲▼▲▼▲▼▲
 
-;^^^^^^^^ドコドコ砂漠：モッチーダンジョン^^^^^^^^
+;^^^^^^^^ドコドコ砂漠:モッチーダンジョン^^^^^^^^
 
-;@Habitat:ドコドコ砂漠／モッチーダンジョン／入口付近
+;@Habitat:ドコドコ砂漠/モッチーダンジョン/入口付近
 ;@Person:ショージ・モッチー
 ;@Figure:ショージ・モッチー
 ;@AppearanceKey:FLG_DSRT_SYOZI_DUNGEON_APPEAR/on
@@ -1288,7 +1288,7 @@ _DSRT_TARAIJAB_LATER;＆
 MSG_DSRT_SYOZI_DUNGEON;
 ◆I didn’t have a problem digging until this...I found a maze.@KEY()↓
 ◆Lots of monsters appeared, so I couldn’t proceed.@KEY()↓
-◆There’s ５ big moles...!@KEY()↓
+◆There’s 5 big moles...!@KEY()↓
 ◆If I beat the monsters, I can continue on.@KEY()↓
 ◆I think I have a bleeding ulcer from worrying too much.@KEY()↓
 ◆I’m helpless to really do anything.
@@ -1300,7 +1300,7 @@ MSG_DSRT_SYOZI_DUNGEON;
 ;jpn: さきに すすめなく↓
 ;jpn: なっちまったんさね。@KEY()↓
 ;jpn:◆でっけー モグラが↓
-;jpn: ‥‥どうやら ５ひきもいる!@KEY()↓
+;jpn: ‥‥どうやら 5ひきもいる!@KEY()↓
 ;jpn:◆ばけものさえ のしちまえば↓
 ;jpn: もっと さきまで↓
 ;jpn: すすめるんだいね。@KEY()↓
@@ -1309,7 +1309,7 @@ MSG_DSRT_SYOZI_DUNGEON;
 ;jpn: フー まいったいねぇ。@KEYNP()
 』
 
-;@Habitat:ドコドコ砂漠／モッチーダンジョン／1大迷路
+;@Habitat:ドコドコ砂漠/モッチーダンジョン/1大迷路
 ;@Person:巨大モグラA
 ;@Figure:モグラ
 ;@AppearanceKey:FLG_WIN_DSRT_BOSS_A/off
@@ -1330,7 +1330,7 @@ MSG_DSRT_DSRT_BOSS_A;
 @GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
 』
 
-;@Habitat:ドコドコ砂漠／モッチーダンジョン／1大迷路
+;@Habitat:ドコドコ砂漠/モッチーダンジョン/1大迷路
 ;@Person:巨大モグラB
 ;@Figure:モグラ
 ;@AppearanceKey:FLG_WIN_DSRT_BOSS_B/off
@@ -1350,7 +1350,7 @@ MSG_DSRT_DSRT_BOSS_B;
 @GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
 』
 
-;@Habitat:ドコドコ砂漠／モッチーダンジョン／1大迷路
+;@Habitat:ドコドコ砂漠/モッチーダンジョン/1大迷路
 ;@Person:巨大モグラC
 ;@Figure:モグラ
 ;@AppearanceKey:FLG_WIN_DSRT_BOSS_C/off
@@ -1370,7 +1370,7 @@ MSG_DSRT_DSRT_BOSS_C;
 @GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
 』
 
-;@Habitat:ドコドコ砂漠／モッチーダンジョン／2小迷路
+;@Habitat:ドコドコ砂漠/モッチーダンジョン/2小迷路
 ;@Person:巨大モグラD
 ;@Figure:モグラ
 ;@AppearanceKey:FLG_WIN_DSRT_BOSS_D/off
@@ -1390,7 +1390,7 @@ MSG_DSRT_DSRT_BOSS_D;
 @GOSUB(_SUB_DSRT_CHK_WIN_ALLBOSS)
 』
 
-;@Habitat:ドコドコ砂漠／モッチーダンジョン／3中迷路
+;@Habitat:ドコドコ砂漠/モッチーダンジョン/3中迷路
 ;@Person:巨大モグラE
 ;@Figure:モグラ
 ;@AppearanceKey:FLG_WIN_DSRT_BOSS_E/off
@@ -1426,15 +1426,15 @@ _DSRT_BOSS_MESS_1;
 ;jpn: このあなの↓
 ;jpn: ぬしだ。@KEY()↓
 ;jpn:◆このあなには↓
-;jpn: ５にんの↓
+;jpn: 5にんの↓
 ;jpn: ぬしがいる。@KEY()↓
-;jpn:◆５にんといっても↓
+;jpn:◆5にんといっても↓
 ;jpn: もぐらだから@KEY()↓
 ;jpn:◆せいかくには↓
-;jpn: ５ひきだ。@KEY()↓
+;jpn: 5ひきだ。@KEY()↓
 ;jpn:◆おれがおもうには↓
 ;jpn: おれは そのうちで↓
-;jpn: ３ばんめに つよい。@KEY()↓
+;jpn: 3ばんめに つよい。@KEY()↓
 ;jpn:◆どこからでも↓
 ;jpn: かかってこい!
 @KEY()
@@ -1445,7 +1445,7 @@ _DSRT_BOSS_MESS_2;
 ◆I’m really the third strongest master.@KEY()↓
 ◆I’ll destroy you now!@KEY()
 ;jpn:◆おれが ほんとうに↓
-;jpn: ３ばんめに つよい↓
+;jpn: 3ばんめに つよい↓
 ;jpn: このあなのぬしだ。@KEY()↓
 ;jpn:◆しょうぶしてやる!@KEY()
 @CLOSEALL()
@@ -1455,9 +1455,9 @@ _DSRT_BOSS_MESS_3;
 ◆My strength falls between the second and fourth strongest masters.@KEY()↓
 ◆Do you wanna test me?@KEY()↓
 ;jpn:◆おれは↓
-;jpn: ２ばんめにつよい↓
+;jpn: 2ばんめにつよい↓
 ;jpn: あなのぬしより よわいが@KEY()↓
-;jpn:◆４ばんめのやつより
+;jpn:◆4ばんめのやつより
 ;jpn: つよい。@KEY()↓
 ;jpn:◆おれの うでを↓
 ;jpn: ためしてみるか?@KEY()↓
@@ -1490,19 +1490,19 @@ _DSRT_BOSS_MESS_5;
 @KEY()
 ;jpn:◆ふっふっふ。@KEY()↓
 ;jpn:◆おまえは いままでに↓
-;jpn: １ばんつよい↓
+;jpn: 1ばんつよい↓
 ;jpn: このあなのぬしと@KEY()↓
-;jpn:◆２ばんめに つよい↓
+;jpn:◆2ばんめに つよい↓
 ;jpn: このあなのぬしと@KEY()↓
-;jpn:◆４ばんめにつよい↓
+;jpn:◆4ばんめにつよい↓
 ;jpn: このあなのぬしと@KEY()↓
-;jpn:◆１ばんよわい↓
+;jpn:◆1ばんよわい↓
 ;jpn: このあなのぬしと↓
 ;jpn: たたかったはずだ!@KEY()↓
 ;jpn:◆おれが!@KEY()↓
 ;jpn:◆おれが!@KEY()↓
 ;jpn:◆しんの↓
-;jpn: ３ばんめにつよい↓
+;jpn: 3ばんめにつよい↓
 ;jpn: このあなのぬしなのだ!@KEY()↓
 ;jpn:◆いくぞ!@KEY()
 @CLOSEALL()
@@ -1542,7 +1542,7 @@ _DSRT_BOSS_SETF_4;
 _DSRT_BOSS_SETF_5;
 @!
 
-;▼部屋１(右のさる)▼▼▼▼▼▼▼▼(スキップサンド)
+;▼部屋1(右のさる)▼▼▼▼▼▼▼▼(スキップサンド)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_A;
 @CHKFGOTO(FLG_SARUDUNGEON_A_OK,_SARUD_A_AFTER)
@@ -1602,7 +1602,7 @@ _SARUD_A_AFTER;
 ;jpn:(ラッキー)
 @KEYNP()
 』
-;▼部屋１(左のさる)▼▼▼▼▼▼▼▼(えんそくランチ)
+;▼部屋1(左のさる)▼▼▼▼▼▼▼▼(えんそくランチ)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_B;
 @CHKFGOTO(FLG_SARUDUNGEON_B_OK,_SARUD_B_AFTER)
@@ -1663,7 +1663,7 @@ _SARUD_B_AFTER;
 ;jpn:(えへへ)
 ;@KEYNP()
 』
-;▼部屋２(右のさる)▼▼▼▼▼▼▼▼(ぬれタオル)
+;▼部屋2(右のさる)▼▼▼▼▼▼▼▼(ぬれタオル)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_C;
 @CHKFGOTO(FLG_SARUDUNGEON_C_OK,_SARUD_C_AFTER)
@@ -1729,7 +1729,7 @@ _SARUD_C_AFTER;
 ;jpn: むしますよねえ)
 @KEYNP()
 』
-;▼部屋２(左のさる)▼▼▼▼▼▼▼▼(ピザ・ピザ(Lサイズ))
+;▼部屋2(左のさる)▼▼▼▼▼▼▼▼(ピザ・ピザ(Lサイズ))
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_D;
 @CHKFGOTO(FLG_SARUDUNGEON_D_OK,_SARUD_D_AFTER)
@@ -1792,7 +1792,7 @@ _SARUD_D_AFTER;
 ;jpn:(うっふ〜ん)
 @KEYNP()
 』
-;▼部屋３(右のさる)▼▼▼▼▼▼▼▼(おとなのドリンク)
+;▼部屋3(右のさる)▼▼▼▼▼▼▼▼(おとなのドリンク)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_E;
 @CHKFGOTO(FLG_SARUDUNGEON_E_OK,_SARUD_E_AFTER)
@@ -1847,7 +1847,7 @@ _SARUD_E_AFTER;
 ;jpn:(きゃっきゃっ)
 @KEYNP()
 』
-;▼部屋３(左のさる)▼▼▼▼▼▼▼▼(ピザ・ピザ(Lサイズ))
+;▼部屋3(左のさる)▼▼▼▼▼▼▼▼(ピザ・ピザ(Lサイズ))
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_F;
 @CHKFGOTO(FLG_SARUDUNGEON_F_OK,_SARUD_F_AFTER)
@@ -1906,7 +1906,7 @@ _SARUD_F_AFTER;
 ;jpn: ことばで しゃべっちゃった)
 @KEYNP()
 』
-;▼部屋５(右のさる)▼▼▼▼▼▼▼▼(ハンバーガー・ダブルバーガー)
+;▼部屋5(右のさる)▼▼▼▼▼▼▼▼(ハンバーガー・ダブルバーガー)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_G;
 @CHKFGOTO(FLG_SARUDUNGEON_G_OK,_SARUD_G_AFTER)
@@ -1965,7 +1965,7 @@ _SARUD_G_AFTER;
 ;jpn: ふたごのかんけいなんだ)
 @KEYNP()
 』
-;▼部屋５(左のさる)▼▼▼▼▼▼▼▼(ハンバーガー・ダブルバーガー)
+;▼部屋5(左のさる)▼▼▼▼▼▼▼▼(ハンバーガー・ダブルバーガー)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_H;
 @CHKFGOTO(FLG_SARUDUNGEON_H_OK,_SARUD_H_AFTER)
@@ -2027,7 +2027,7 @@ _SARUD_H_AFTER;
 ;jpn: ふたごのかんけいなんだ)
 @KEYNP()
 』
-;▼部屋６(右のさる)▼▼▼▼▼▼▼▼(キングバナナ)
+;▼部屋6(右のさる)▼▼▼▼▼▼▼▼(キングバナナ)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_I;
 @CHKFGOTO(FLG_SARUDUNGEON_I_OK,_SARUD_I_AFTER)
@@ -2090,7 +2090,7 @@ _SARUD_I_AFTER;
 ;jpn:(ぼく やまださるおです)
 @KEYNP()
 』
-;▼部屋６(左のさる)▼▼▼▼▼▼▼▼(ハンバーガー・ダブルバーガー)
+;▼部屋6(左のさる)▼▼▼▼▼▼▼▼(ハンバーガー・ダブルバーガー)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_J;
 @CHKFGOTO(FLG_SARUDUNGEON_J_OK,_SARUD_J_AFTER)
@@ -2141,7 +2141,7 @@ _SARUD_J_AFTER;
 ;jpn:(よろしくどうぞ)
 @KEYNP()
 』
-;▼部屋７(右のさる)▼▼▼▼▼▼▼▼(うみたてたまご)
+;▼部屋7(右のさる)▼▼▼▼▼▼▼▼(うみたてたまご)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_K;
 @CHKFGOTO(FLG_SARUDUNGEON_K_OK,_SARUD_K_AFTER)
@@ -2204,7 +2204,7 @@ _SARUD_K_AFTER;
 ;jpn:(さるほんらいの なきごえ!)
 @KEYNP()
 』
-;▼部屋７(左のさる)▼▼▼▼▼▼▼▼(ものさし)
+;▼部屋7(左のさる)▼▼▼▼▼▼▼▼(ものさし)
 ;A〔入口ふさいでる状態のさるに話すと〕
 MSG_SARUDUNGEON_L;
 @CHKFGOTO(FLG_SARUDUNGEON_L_OK,_SARUD_L_AFTER)
@@ -2302,7 +2302,7 @@ _SARUD_Q_SKIP;
 _Q_SKIP_END;
 @!
 
-;▼部屋８(差し替え)▼▼▼▼▼▼▼▼
+;▼部屋8(差し替え)▼▼▼▼▼▼▼▼
 ;〔初めてはなすと〕
 MSG_SARUDUNGEON_M;
 @CHKFGOTO(FLG_SARUDUNGEON_M_OK,_SARUD_M_AFTER)
@@ -2347,7 +2347,7 @@ _SARUD_M_GOODSFULL;
 @KEYNP()
 @!
 _SARUD_M_AFTER;
-;〔２回目以降〕
+;〔2回目以降〕
 ◆Ukyako kyakki?@KEY()↓
 ◆(Did you find a @DSP_GOODS(GDS_EQUIP_PENDANT_HONOO)?)@KEY()↓
 ◆Ukyakki Kokekyakya?@KEY()↓
@@ -2368,7 +2368,7 @@ _SARUD_M_AFTER;
 @GOSUB(MSG_SUB_GETGOODS)
 @KEYNP()
 』
-;▼部屋１１(差し替え)▼▼▼▼▼▼▼▼(キングバナナくれる)
+;▼部屋11(差し替え)▼▼▼▼▼▼▼▼(キングバナナくれる)
 ;〔初めてはなすと〕
 MSG_SARUDUNGEON_N;
 @CHKFGOTO(FLG_SARUDUNGEON_N_OK,_SARUD_N_AFTER)
@@ -2411,7 +2411,7 @@ _SARUD_N_GOODSFULL;
 @KEYNP()
 @!
 _SARUD_N_AFTER;
-;〔２回目以降〕
+;〔2回目以降〕
 ◆Kyu Kyuii@KEY()↓
 ◆(We’re born in the desert.)@KEY()↓
 ◆Kyu?  Kyuikki?@KEY()↓
@@ -2437,7 +2437,7 @@ _SARUD_N_AFTER;
 @KEYNP()
 』
 
-;▼部屋１３▼▼▼▼▼▼▼▼
+;▼部屋13▼▼▼▼▼▼▼▼
 
 ;〔初めてはなすと〕
 MSG_SARUDUNGEON_O;
@@ -2474,7 +2474,7 @@ MSG_SARUDUNGEON_O;
 ;@SETF(FLG_SARUDUNGEON_O_OK)
 ;』
 ;
-;〔２回目以降〕
+;〔2回目以降〕
 ;_SARUD_O_AFTER;
 ;◆ウー‥‥↓
 ;(どうやら そなたたち‥‥)@KEY()↓
@@ -2488,7 +2488,7 @@ MSG_SARUDUNGEON_O;
 
 
 
-;▼部屋１４▼▼▼▼▼▼▼▼
+;▼部屋14▼▼▼▼▼▼▼▼
 
 MSG_SARUDUNGEON_P;
 @CHKFGOTO(FLG_MASTER_TLPT,_SARUDUNGEON_P_LATER);同じセリフ
@@ -2509,7 +2509,7 @@ _SARUDUNGEON_P_AFTER;テレポートを教えるサル
 ;jpn:(テレポーテーションを↓
 ;jpn: おしえます)@KEY()↓
 ;jpn:◆キャキャキャ↓
-;(さあ ひろいところに↓;＄
+;(さあ ひろいところに↓;$
 ;jpn:(さあ ちじょうに↓
 ;jpn: でましょう)
 @KEYNP()
@@ -2520,7 +2520,7 @@ _SARUDUNGEON_P_AFTER;テレポートを教えるサル
 @SETF(FLG_DSRT_TSARU_DISAPPEAR)
 @SETF(FLG_DSRT_TSARU_A_APPEAR);サルセンセイA表示
 』
-_SARUDUNGEON_P_LATER;＄テレポート修得後のサル先生
+_SARUDUNGEON_P_LATER;$テレポート修得後のサル先生
 ◆Kyakya kyekyi?@KEY()↓
 ◆(So...how ’ve you been?)
 ;jpn:◆キャキャキャーキャ?↓
@@ -2574,7 +2574,7 @@ _EVT_SARUSENSEI_TRYAGAIN_YES;
 ;jpn: いけるようになります)@KEY()↓
 ;jpn:◆キャッキ キャキ↓
 ;jpn:(ちかや へやのなかでは↓
-;jpn: このちからは つかえません)@KEY()↓;＄
+;jpn: このちからは つかえません)@KEY()↓;$
 @CLOSEALL()
 ;お手本見せるアニメ
 @REMOVE_CHAR( PRSN_DEST_FIELD_T, ANIM_TELEPORT_SARUSENSEI )
@@ -2603,7 +2603,7 @@ _EVT_SARUSENSEI_TRYAGAIN_YES;
 @KEYNP()
 ;jpn:◆ウッキー↓
 ;jpn:(フォーサイドのまちにいって↓
-;jpn: すぐに もどってきました)@KEY()↓;＄
+;jpn: すぐに もどってきました)@KEY()↓;$
 ;jpn:◆キャーキャッキャ↓
 ;jpn:(せんせいは きほんてきな↓
 ;jpn: まっすぐコースで やったけれど@KEY()↓
@@ -2774,7 +2774,7 @@ MSG_DSRT_CHECK_SYOZI;
 』
 ;-------------------------------------------------
 
-MSG_CHECK_DESERT_SIGN;＄
+MSG_CHECK_DESERT_SIGN;$
 ◆(East to Fourside.)
 @KEYNP()
 ;jpn:◆(ひがし↓

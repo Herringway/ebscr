@@ -47,7 +47,7 @@ MSG_BTL_TIMESTOP_RET;
 ;//////////////////////////バトル開始////////////////////////////////////
 
 ;#モンスター出現
-MSG_BTL_AP_OSOWARETA;＠
+MSG_BTL_AP_OSOWARETA;@
 MSG_BTL_APPEAR;
 ←
 ◆@GOSUB(_SUB_GACTOR_1) attacked!
@@ -56,7 +56,7 @@ MSG_BTL_APPEAR;
 @KEY()
 @!
 
-MSG_BTL_AP_FUSAGARETA;＠
+MSG_BTL_AP_FUSAGARETA;@
 ←
 ◆@GOSUB(_SUB_GACTOR_1) blocked the way!
 ;jpn: @DSP_ACTOR()に↓
@@ -64,7 +64,7 @@ MSG_BTL_AP_FUSAGARETA;＠
 @KEY()
 @!
 
-MSG_BTL_AP_ATTESHIMATTA;＠
+MSG_BTL_AP_ATTESHIMATTA;@
 ←
 ◆@GOSUB(_SUB_GACTOR_1) came↓
   after you!
@@ -73,7 +73,7 @@ MSG_BTL_AP_ATTESHIMATTA;＠
 @KEY()
 @!
 
-MSG_BTL_AP_TSUKAMATTA;＠
+MSG_BTL_AP_TSUKAMATTA;@
 ←
 ◆@GOSUB(_SUB_GACTOR_1)
   trapped you!
@@ -325,7 +325,7 @@ _SUB_NANTO3;
 @FALSE_GOTO(_NANTO3_END)
 Baby!↓  
 ;*akimiura
-;(＊−cannottranslate.too short：yuka)
+;(*−cannottranslate.too short:yuka)
 ;jpn:なんと
 _NANTO3_END;
 @LOAD_REG()

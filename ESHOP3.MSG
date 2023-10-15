@@ -9,7 +9,7 @@ MSG_CD;
 @SET_REG(1)
 ;
 ◆Welcome to the Automatic Teller Machine.@KEY()↓
-◆Please select a transaction：↓
+◆Please select a transaction:↓
 
 ;@SAVE_WIN()
 ;@DSP_PL()
@@ -52,15 +52,15 @@ _CD_OAZUKE;
 @SE(SE_se76_my_give)
 @WI(10)
 ◆Your account will be credited↓
-  ＄@DSP_NUM(0).@KEY()↓
+  $@DSP_NUM(0).@KEY()↓
 ◆Thank you very much.
 
-;◆＄@DSP_NUM(0)↓
+;◆$@DSP_NUM(0)↓
 ;jpn: オアズカリシマシタ@KEY()↓
 ;jpn:◆アリガトウゴザイマシタ
 @GOTO(_CD_END)
 
-_CD_OA_NOMONEY;				;所持金 ＜ 入力した金額
+_CD_OA_NOMONEY;				;所持金 < 入力した金額
 ◆Invalid instruction input.  Please try again.@KEY()↓
 
 ;jpn:◆ニュウリョク ミス!↓
@@ -77,9 +77,9 @@ _CD_OA_OVER;				;銀行預金限界越える(未使用)
 
 _CD_OA_FULL;				;銀行預金MAX
 ◆This machine cannot accept a deposit greater than↓
-  ＄９,９９９,９９９.@KEY()↓
+  $9,999,999.@KEY()↓
  
-;◆＄９９９９９９９↓
+;◆$9999999↓
 ;jpn: ヲコエテハ↓
 ;jpn: アズカレナイキマリデス@KEY()↓
 @GOTO(_CD_NO)
@@ -103,15 +103,15 @@ _CD_HIKIDASHI;
 @SE(SE_se74_my_get)
 @WI(10)
 ◆Your account has been debited↓
-  ＄@DSP_NUM(0).@KEY()↓
+  $@DSP_NUM(0).@KEY()↓
 ◆Please take your cash.
 
-;jpn:◆＄@DSP_NUM(0) ノ↓
+;jpn:◆$@DSP_NUM(0) ノ↓
 ;jpn: オヒキダシデスネ@KEY()↓
 ;jpn:◆アリガトウゴザイマシタ
 @GOTO(_CD_END)
 
-_CD_HIKI_NOMONEY;			;銀行預金 ＜ 入力した金額
+_CD_HIKI_NOMONEY;			;銀行預金 < 入力した金額
 ◆The requested amount is in excess of your account balance.@KEY()↓
 
 ;jpn:◆オアズカリキンガクヲ↓
@@ -122,9 +122,9 @@ _CD_HIKI_OVER;				;所持金限界越える
 @LOAD_REG()
 @DEPOSIT_MONEY_BANK(0)
 ◆You are not allowed to carry more than↓
-  ＄９９,９９９.@KEY()↓
+  $99,999.@KEY()↓
 
-;◆＄９９９９９↓
+;◆$99999↓
 ;jpn: イジョウノモチアルキハ↓
 ;jpn: キンジラレテイマス@KEY()↓
 @GOTO(_CD_HIKIDASHI)
@@ -138,9 +138,9 @@ _CD_HIKI_EMPTY;				;銀行預金$0
 
 _CD_HIKI_MAX;				;所持金MAX
 ◆You are not allowed to carry more than↓
-  ＄９９,９９９.@KEY()↓
+  $99,999.@KEY()↓
 
-;◆＄９９９９９↓
+;◆$99999↓
 ;jpn: イジョウノモチアルキハ↓
 ;jpn: キンジラレテイマス@KEY()↓
 @GOTO(_CD_NO)
@@ -154,9 +154,9 @@ _CD_INPUT_2;
 @WINR_MONEY()
 _CD_HOWMUCH;
 @LOC(10,2)
-＆
+&
 @LOC(4,2)
-＄@INPUT(5)
+$@INPUT(5)
 @CLRLINE()
 @!
 
@@ -169,11 +169,11 @@ _CD_INPUT_B;
 
 _CD_NOWMONEY;
 ◆Your account currently shows a balance of↓
-  ＄@DSP_STS(STS_PARTY_BANK_MONEY).@KEY()↓
+  $@DSP_STS(STS_PARTY_BANK_MONEY).@KEY()↓
 
 ;jpn:◆ゲンザイノ↓
 ;jpn: オアズカリキンガクハ↓
-;jpn: ＄@DSP_STS(STS_PARTY_BANK_MONEY)デス@KEY()↓
+;jpn: $@DSP_STS(STS_PARTY_BANK_MONEY)デス@KEY()↓
 @!
 
 ;
@@ -362,10 +362,10 @@ _PAPA_BANK;
 @Q_FIGHT_MONEY(1)
 @FALSE_GOTO(_PAPA_LEVEL)
 @XCHG()
-◆I deposited ＄@DSP_NUM(0)↓
+◆I deposited $@DSP_NUM(0)↓
   into your bank account.@KEY()↓
 ◆Taking away what you’ve spent, you should now have@KEY()↓
-◆＄@DSP_STS(STS_PARTY_BANK_MONEY) in the bank.@KEY()↓
+◆$@DSP_STS(STS_PARTY_BANK_MONEY) in the bank.@KEY()↓
 
 ;jpn:◆おまえの ぎんこうこうざに↓
 ;jpn: @DSP_NUM(0)ドル↓
@@ -405,7 +405,7 @@ _PAPA_NEXT_INC;
 _PAPA_LEVEL_MAX;
 ←
 ◆@DSP_NAME(0)...↓
-  has already reached (his／her) maximum level.@KEY()↓
+  has already reached (his/her) maximum level.@KEY()↓
 ◆That’s just fine, but...@KEY()↓
 
 ;jpn:◆@DSP_NAME(0)は‥‥
@@ -815,7 +815,7 @@ _UNSOU_TEL_MES_1B;最終戦闘後
 ◆I’m a little busy right now, as you heard.@KEY()↓
 ◆I really would like to hear some of your stories.@KEY()↓
 ◆Zoicks!  That was the dog’s food!@KEY()↓
-◆＊Crash!＊ Hey, hey!  Now look what you’ve done!@KEY()↓
+◆*Crash!* Hey, hey!  Now look what you’ve done!@KEY()↓
 ◆...I’m sorry.↓
   I have to go.  Good bye.↓
 ;jpn:◆はい@WI(20) エスカルゴうんそうでーす!@WI(30)↓
@@ -933,7 +933,7 @@ _UNSOU_TEL_MES_6;
 ◆Please select the goods you want.@KEY()
   
 ;jpn:◆おとどけですね↓
-;jpn: ３つまで おとどけできます。@KEY()↓
+;jpn: 3つまで おとどけできます。@KEY()↓
 ;jpn:◆では グッズを↓
 ;jpn: せんたくしてください。@KEY()
 @!
@@ -942,7 +942,7 @@ _UNSOU_TEL_MES_6B;
 ◆Please select the goods you want.@KEY()
 
 ;jpn:◆おとどけですね↓
-;jpn: ３つまで おとどけできますよ。@KEY()↓
+;jpn: 3つまで おとどけできますよ。@KEY()↓
 ;jpn:◆さっそく グッズを↓
 ;jpn: せんたくしてください。@KEY()
 @!
@@ -976,7 +976,7 @@ _UNSOU_TEL_MES_8;
 _UNSOU_TEL_EMPTY_NESS_DEAD;
 @GET_ORDER_PLAYER(1)
 @XCHG()
-;＠ポーラだったらマアム?
+;@ポーラだったらマアム?
 ◆Sir, we do not have anything stored for a a someone@KEY()↓
 ◆by the name of @DSP_NAME(0).@KEY()↓
 
@@ -1023,7 +1023,7 @@ _UNSOU_TEL_MES_9B;
 @!
 
 ;
-;エスカルゴ運送＿預かり
+;エスカルゴ運送_預かり
 ;
 
 MSG_UNSOU_LEAVE;
@@ -1034,12 +1034,12 @@ MSG_UNSOU_LEAVE;
 @TRUE_GOTO(_UNSOU_LEAVE_GOODSFULL)
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_LEAVE_WINGIEGU)	;ギーグに勝った後
 ◆Hello, this is Escargo Express!@KEY()↓
-◆Your delivery charge is ＄１８.@KEY()↓
+◆Your delivery charge is $18.@KEY()↓
 ◆You can cover the bill, right?↓
 
 ;jpn:◆エスカルゴうんそうでーす!↓
 ;jpn: おあずかりりょうきんは↓
-;jpn: １８ドルです。@KEY()↓
+;jpn: 18ドルです。@KEY()↓
 ;jpn:◆おかね もってますよね?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_UNSOU_LEAVE_MONEY_CHK,_UNSOU_LEAVE_NO)
@@ -1071,7 +1071,7 @@ _UNSOU_LEAVE_SEL;
 ◆I can take up to three things.@KEY()
 
 ;jpn:◆どれをおあずかりしましょう?↓
-;jpn: ３つまでならOKですよ。@KEY()
+;jpn: 3つまでならOKですよ。@KEY()
 @DSP_PL()
 _UNSOU_LEAVE_SEL_1;
 @GOSUB(MSG_SEL_GOODS)			;グッズ選択
@@ -1261,7 +1261,7 @@ _UNSOU_LEAVE_NOMONEY;
 @!
 
 ;
-;エスカルゴ運送＿お届け
+;エスカルゴ運送_お届け
 ;
 
 MSG_UNSOU_SEND;
@@ -1293,10 +1293,10 @@ _UNSOU_SEND_2;
 ;jpn:◆いじょうを↓
 ;jpn: おとどけに まいりましたー。@KEY()↓
 @CHKFGOTO(FLG_WIN_GIEGU,_UNSOU_SEND_GOODS_1)	;ギーグ倒した後
-◆Your charge is ＄１８.↓
+◆Your charge is $18.↓
   You can pay for this, right?@KEY()↓
 
-;jpn:◆りょうきんは １８ドルです。↓
+;jpn:◆りょうきんは 18ドルです。↓
 ;jpn: おかね もってますよね?↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_UNSOU_SEND_YES,_UNSOU_SEND_NO_1)
@@ -1846,9 +1846,9 @@ _TEL_PIZZA_LARGE;			;ラージ
 
 _TEL_PIZZA_BYE;
 @SET_REG(0)				;副レジ=GOODS_ID
-  We’ll deliver it within ３ minutes.@KEY()↓
+  We’ll deliver it within 3 minutes.@KEY()↓
 
-;jpn: ３ぷんいないに おとどけに↓
+;jpn: 3ぷんいないに おとどけに↓
 ;jpn: あがりまーす。@KEY()↓
 @SETF(FLG_DELIVERY_PIZZA)
 @DELIVERY(DELIVERY_PIZZA)
@@ -1915,7 +1915,7 @@ _PIZZA_MONEY;
 @SET_REG(1)
 @GOODS_TAKE_MONEY(0)			;主レジ=GOODSの値段:副レジ=GOODS_ID
 @XCHG()
-◆That’ll be ＄@DSP_NUM(0).↓
+◆That’ll be $@DSP_NUM(0).↓
   You have the money,don’t you?↓
 
 ;jpn:◆@DSP_NUM(0)ドルです。↓
@@ -2009,7 +2009,7 @@ MSG_PIZZA_SEND_RETRY_OVER;
 @!
 
 ;
-;デパート＿返品
+;デパート_返品
 ;
 
 MSG_DP_HENPIN;
@@ -2051,7 +2051,7 @@ _DP_HENPIN_SEL;
 @FALSE_GOTO(_DP_HENPIN_UNABLE)
 ◆The @DSP_GOODS(0)?↓
   We can give you
-  back @XCHG()＄@DSP_NUM(0).@KEY()↓
+  back @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆Would you like to do that?↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。↓		;グッズ名表示
@@ -2094,7 +2094,7 @@ _DP_HENPIN_UNABLE;				;売ることができない。
 
 
 ;
-;ハッピー村／フィールド／無人販売所
+;ハッピー村/フィールド/無人販売所
 ;
 
 MSG_SHOP_HAPPY_AUTOSHOP;
@@ -2119,9 +2119,9 @@ _AUTO_X;
 
 ;jpn:◆いくらしはらう?↓
 @LOC(9,2)
-＆
+&
 @LOC(4,2)
-＄@INPUT(4)
+$@INPUT(4)
 @CLRLINE()
 @XCHG()					;主レ=GOODS_ID:副レ=支払い額
 @FALSE_GOTO(_AUTO_NOTTAKE)
@@ -2146,7 +2146,7 @@ _AUTO_PAY;
 @MONEYOUT(0)
 @WINR_MONEY()
 @SE(SE_se76_my_give)
-◆@DSP_NAME(PC_NESS) paid ＄@DSP_NUM(0) at the self−service stand.
+◆@DSP_NAME(PC_NESS) paid $@DSP_NUM(0) at the self−service stand.
 
 ;jpn:◆@DSP_NAME(PC_NESS)は↓
 ;jpn: むじんはんばいじょに↓
@@ -2279,7 +2279,7 @@ MSG_SUB_GUMI_BUTUBUTU;
 ; <spicy jerkey>
 ; <dragon powder>
 ; <magical power sealing coin>
-;  note： this is one of the defense goods.
+;  note: this is one of the defense goods.
 ; <the best bat>
  
 ;jpn:◆おれ↓
@@ -2459,7 +2459,7 @@ _CDMAN_NO;
 @KEYNP()
 @!
 _CDMAN_YES;
-◆You have ＄@DSP_STS(STS_PARTY_BANK_MONEY) in your account now.↓
+◆You have $@DSP_STS(STS_PARTY_BANK_MONEY) in your account now.↓
 <Withdrawal>
 <Deposit>
 
@@ -2484,7 +2484,7 @@ _CDMAN_AZU;
 @SE(SE_se76_my_give)
 @WI(10)
 ◆I have registered your deposit↓
-  of ＄@DSP_NUM(0).@KEY()↓
+  of $@DSP_NUM(0).@KEY()↓
 
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
 ;jpn: たしかにおあずかりしました。
@@ -2505,9 +2505,9 @@ _CDMAN_HIKI;
 @Q_BANK_MONEY(0)
 @TRUE_GOTO(_CDMAN_HIKI_NOMONEY_2)
 ◆Your cash withdrawal↓
-  is ＄@DSP_NUM(0),@KEY()↓
+  is $@DSP_NUM(0),@KEY()↓
 ◆and the handling charge↓
-  is ＄@DSP_NUM(0).@KEY()↓
+  is $@DSP_NUM(0).@KEY()↓
 ◆I will subtract this amount from your account.@KEY()↓
 ◆Is that okay with you?↓
 ;jpn:◆おわたしするぶんが↓
@@ -2529,7 +2529,7 @@ _CDMAN_HIKI_YES;
 @SE(SE_se74_my_get)
 @WI(10)
 ◆Your withdrawal↓
-  is ＄@DSP_NUM(0).@KEY()
+  is $@DSP_NUM(0).@KEY()
 
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
 ;jpn: たしかにおひきだししました。
@@ -2665,7 +2665,7 @@ _EGO_NO_2;
 @KEYNP()
 @!
 _EGO_YES_2;
-◆You have ＄@DSP_STS(STS_PARTY_BANK_MONEY) in your account now.↓
+◆You have $@DSP_STS(STS_PARTY_BANK_MONEY) in your account now.↓
 <Withdrawal>
 <Deposit>
 
@@ -2691,7 +2691,7 @@ _EGO_AZU;
 @SE(SE_se76_my_give)
 @WI(10)
 ◆I have registered your deposit↓
-  of ＄@DSP_NUM(0).@KEY()↓
+  of $@DSP_NUM(0).@KEY()↓
     
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
 ;jpn: たしかにおあずかりしました。
@@ -2712,9 +2712,9 @@ _EGO_HIKI;
 @Q_BANK_MONEY(0)
 @TRUE_GOTO(_EGO_HIKI_NOMONEY_2)
 ◆Your withdrawal↓
-  is ＄@DSP_NUM(0),@KEY()↓
+  is $@DSP_NUM(0),@KEY()↓
 ◆and the handling fee↓
-  is ＄@DSP_NUM(0).@KEY()↓
+  is $@DSP_NUM(0).@KEY()↓
 ◆Is it okay if I subtract this amount from your account?↓
 
 ;jpn:◆おわたしするぶんが↓
@@ -2736,7 +2736,7 @@ _EGO_HIKI_YES;
 @SE(SE_se74_my_get)
 @WI(10)
 ◆Your withdrawal↓
- is ＄@DSP_NUM(0).@KEY()↓
+ is $@DSP_NUM(0).@KEY()↓
 
 ;jpn:◆@DSP_NUM(0)ドルですね。↓
 ;jpn: たしかにおひきだししました。

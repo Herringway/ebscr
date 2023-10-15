@@ -1,4 +1,4 @@
-;@Habitat:ツーソン／カオス劇場／楽屋
+;@Habitat:ツーソン/カオス劇場/楽屋
 ;@Person:ミーハーのミチコ
 ;@Figure:少女A
 ;@AppearanceKey:MSG_TWSN_MICHIKO_APPEAR/off
@@ -16,7 +16,7 @@ MSG_TWSN_MICHIKO_EXCITED;
 』
 
 
-;@Habitat:ツーソン／カオス劇場／楽屋
+;@Habitat:ツーソン/カオス劇場/楽屋
 ;@Person:ゴージャス
 ;@Figure:ゴージャス
 ;@AppearanceKey:FLG_TWSN_TONZURA_FREE/off
@@ -30,12 +30,12 @@ MSG_TWSN_TONZURA_GORGEOUS;
 @CHKFGOTO(FLG_TWSN_CHAOS_STAGE_START,_TWSN_GORGEOUS_AFTER)
 ◆Shaba do wap, diddly dee da.@WI(20)  Shaba di doo bee, bop wah.@KEY()↓
 ◆I got those debt blues, hm mm mm.@KEY()↓
-◆If I had １０,０００ dollars,@WI(15) I could pay off my debts and move on to the next town.@KEY()↓
+◆If I had 10,000 dollars,@WI(15) I could pay off my debts and move on to the next town.@KEY()↓
 ◆I wonder if our bus still runs.@WI(20)  It may be rusted out...
 ;jpn:◆音 シャバドゥワ ダディダ↓
 ;jpn: シャバドゥビ ダー音@WI(20)↓
 ;jpn: しゃっきんブルース @WI(15)イエイ@KEY()↓
-;jpn:◆１まんドルあれば↓
+;jpn:◆1まんドルあれば↓
 ;jpn: しゃっきんも かえせて↓
 ;jpn: つぎのまちへ いける。@KEY()↓
 ;jpn:◆トラベリング・バスも もう↓
@@ -67,7 +67,7 @@ MSG_TWSN_GORGEOUS_RECEIVE;
 @KEYNP()
 』
 
-;@Habitat:ツーソン／カオス劇場／楽屋
+;@Habitat:ツーソン/カオス劇場/楽屋
 ;@Person:ラッキー
 ;@Figure:ラッキー
 ;@AppearanceKey:FLG_TWSN_TONZURA_FREE/off
@@ -149,7 +149,7 @@ MSG_TWSN_LUCKY_RECEIVE;
 』
 
 
-;@Habitat:ツーソン／カオス劇場／楽屋
+;@Habitat:ツーソン/カオス劇場/楽屋
 ;@Person:ナイス
 ;@Figure:ナイス
 ;@AppearanceKey:FLG_TWSN_TONZURA_FREE/off
@@ -193,7 +193,7 @@ MSG_TWSN_NICE_RECEIVE;
 @KEYNP()
 』
 
-;@Habitat:ツーソン／カオス劇場／楽屋
+;@Habitat:ツーソン/カオス劇場/楽屋
 ;@Person:オッケー
 ;@Figure:オッケー
 ;@AppearanceKey:FLG_TWSN_TONZURA_FREE/off
@@ -244,12 +244,12 @@ MSG_TWSN_OKEY_RECEIVE;
 @XCHG()
 @EQ(GDS_TOOL_SATSUTABA)
 @FALSE_GOTO(MSG_SYS_GOODS_USE_NG)
-◆Wow!  １０,０００ dollars!@WI(20)↓
+◆Wow!  10,000 dollars!@WI(20)↓
   I can make another song now.@KEY()↓
 ◆Ten G’s,@WI(20)  ten G’s.@WI(20)↓
   That’s dollars,@WI(20) baby, dollars.@WI(20)↓
   Yeah yeah yeah.
-;jpn:◆おお １まんドルか!↓
+;jpn:◆おお 1まんドルか!↓
 ;jpn: これは また うたになるなぁ。@KEY()↓
 ;jpn:◆いっちまんー@WI(20) ドルドル音↓
 ;jpn: イェイ イェイ@WI(20) イェイ音
@@ -261,7 +261,7 @@ MSG_TWSN_OKEY_RECEIVE;
 
 
 
-;@Habitat:ツーソン／カオス劇場／楽屋
+;@Habitat:ツーソン/カオス劇場/楽屋
 ;@Person:グルービー
 ;@Figure:グルービー
 ;@AppearanceKey:FLG_TWSN_TONZURA_FREE/off
@@ -303,7 +303,7 @@ MSG_TWSN_GROOVY_RECEIVE;
 @KEYNP()
 』
 
-;@Habitat:ツーソン／カオス劇場／支配人の部屋
+;@Habitat:ツーソン/カオス劇場/支配人の部屋
 ;@Person:カオス支配人
 ;@Figure:カオス支配人
 ;@AppearanceKey:0
@@ -318,12 +318,12 @@ _TWSN_CHAOS_MAIN;
 @CHKFGOTO(FLG_TWSN_TONZURA_FREE,_TWSN_CHAOS_LATER)
 ◆The Runaway Five owe me a lot of money.@KEY()↓
 ◆They’ll stay here until they pay me back.@KEY()↓
-◆They might be here for １００ years,@KEY()↓
+◆They might be here for 100 years,@KEY()↓
 ◆unless you decide to pay off their debt...  Heh, heh, heh.
 ;jpn:◆トンズラブラザーズのやつらにゃ↓
 ;jpn: たいへんなかねを かしてるんだ。@KEY()↓
 ;jpn:◆かえしてもらえるまでは↓
-;jpn: １００ねんでも ２００ねんでも↓
+;jpn: 100ねんでも 200ねんでも↓
 ;jpn: ここで はたらいてもらうさ。@KEY()↓
 ;jpn:◆それとも あんたが かわりに↓
 ;jpn: かえしてくれるってのかい?↓
@@ -407,7 +407,7 @@ _TWSN_DOGFOOD_STAGE;
 』
 
 ;----------------------------------------
-;@Habitat:ツーソン／トンチキの家／トンチキの家
+;@Habitat:ツーソン/トンチキの家/トンチキの家
 ;@Person:トンチキさん
 ;@Figure:ヌスットヌシ
 ;@AppearanceKey:FLG_TWSN_TONZURA_FREE/off
@@ -531,7 +531,7 @@ _TWSN_TONCHIKI_OK;
 ◆but I know you’ll refuse.@WI(20)  It’s written all over your face.@KEY()↓
 ◆If you accepted,@WI(15) I was going to give you some money.@KEY()↓
 ◆Actually, I can’t keep the money now anyway.@WI(20)  Let me give you this Briefcase.@KEY()↓
-◆Inside is １０,０００ dollars.@KEY()↓
+◆Inside is 10,000 dollars.@KEY()↓
 ◆Use the money any way you like.@WI(20)  You cannot refuse my generosity.@WI(20)  Just accept it.@KEY()↓
 ◆Now I plan on looking for the evil Mani Mani Statue@KEY()↓
 ◆that Lier X. Agerate unearthed in Onett.@KEY()↓
@@ -545,7 +545,7 @@ _TWSN_TONCHIKI_OK;
 ;jpn:◆ひっこめるわけにも↓
 ;jpn: いかねぇ。↓
 ;jpn: このトランクは おまえにやる。@KEY()↓
-;jpn:◆なかに １まんドルの↓
+;jpn:◆なかに 1まんドルの↓
 ;jpn: さつたばが はいっている。@KEY()↓
 ;jpn:◆いいことにでも わるいことにでも↓
 ;jpn: おもいっきり つかってくれ。@KEY()↓
@@ -595,9 +595,9 @@ _TWSN_TONCHIKI_LATER;@MiuraAdapted
 @SET_LOOPREG(PC_NESS)
 @GOSUB(MSG_SUB_Q_DEAD)
 @TRUE_GOTO(_TWSN_TONCHIKI_OK_NESS_DEAD)
-◆Please use the １０,０００ dollars any way you wish.@KEY()↓
+◆Please use the 10,000 dollars any way you wish.@KEY()↓
 ◆You cannot refuse my generosity,@WI(15) just accept it.
-;jpn:◆１まんドルの さつたばは↓
+;jpn:◆1まんドルの さつたばは↓
 ;jpn: いちばん おまえにふさわしい↓
 ;jpn: つかいかたを すればいい。@KEY()↓
 ;jpn:◆かえそうとしても ムリだ。↓
@@ -606,7 +606,7 @@ _TWSN_TONCHIKI_LATER;@MiuraAdapted
 』
 
 ;----------------------------------------
-;@Habitat:ツーソン／マッハピザ／マッハピザ
+;@Habitat:ツーソン/マッハピザ/マッハピザ
 ;@Person:店員
 ;@Figure:ウェートレスA
 ;@AppearanceKey:0
@@ -620,7 +620,7 @@ MSG_TWSN_MACH;
 ◆Welcome to Mach Pizza!@KEY()↓
 ◆We don’t sell pizza here.@WI(20)  We only deliver.@KEY()↓
 ◆Let me give you our number so you can place an order sometime.@KEY()↓
-◆The best pizza is Mach Pizza.@WI(20)  The number is...＊psst psst psst＊.@KEY()↓
+◆The best pizza is Mach Pizza.@WI(20)  The number is...*psst psst psst*.@KEY()↓
 ◆You got that?
 ;DAN:Hiso,hiso is sound of whispering.
 ;jpn:◆マッハピザでーす。@KEY()↓
@@ -638,7 +638,7 @@ MSG_TWSN_MACH;
 』
 _TWSN_MACH_LATER;
 @CHKFGOTO(FLG_TEMP_9,_TWSN_MACH_TMP)
-◆＊Munch＊@WI(30)munch＊@WI(30)gulp＊@KEY()↓
+◆*Munch*@WI(30)munch*@WI(30)gulp*@KEY()↓
 ◆Uh...no,@WI(15) I didn’t take a piece of pizza.@WI(20)  I would never think of doing that!@KEY()↓
 ◆It was delicious, though.@WI(20)  Enjoy!
 ;jpn:◆ムグムグ@WI(30) ゴックン@KEY()↓
@@ -670,7 +670,7 @@ _TWSN_MACH_END;
 @KEYNP()
 』
 ;----------------------------------------
-;@Habitat:ツーソン／ホテル／受付
+;@Habitat:ツーソン/ホテル/受付
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
@@ -679,7 +679,7 @@ _TWSN_MACH_END;
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-;@Habitat:ツーソン／ホテル／受付
+;@Habitat:ツーソン/ホテル/受付
 ;@Person:フロントマン
 ;@Figure:おじさんB
 ;@AppearanceKey:0
@@ -692,7 +692,7 @@ MSG_TWSN_HOTELMAN;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／ホテル／受付
+;@Habitat:ツーソン/ホテル/受付
 ;@Person:ボーイ
 ;@Figure:ホテルボーイ
 ;@AppearanceKey:0
@@ -759,7 +759,7 @@ _TWSN_HOTEL_KINOKO_YES_2
 
 
 
-;@Habitat:ツーソン／ホテル／CDルーム
+;@Habitat:ツーソン/ホテル/CDルーム
 ;@Person:キャッシュディスペンサ
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -769,7 +769,7 @@ _TWSN_HOTEL_KINOKO_YES_2
 ;@Message:0
 
 ;----------------------------------------
-;@Habitat:ツーソン／病院／受付
+;@Habitat:ツーソン/病院/受付
 ;@Person:受付嬢
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -782,7 +782,7 @@ MSG_TWSN_HOSPITAL_USHER;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／病院／診察室
+;@Habitat:ツーソン/病院/診察室
 ;@Person:医者
 ;@Figure:医者
 ;@AppearanceKey:0
@@ -795,7 +795,7 @@ MSG_TWSN_HOSPITAL_DOCTOR;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／病院／診察室
+;@Habitat:ツーソン/病院/診察室
 ;@Person:付き添い
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -815,7 +815,7 @@ MSG_TWSN_HOSP_GIRL;
 
 
 ;----------------------------------------
-;@Habitat:ツーソン／バスステーション／バスステーション
+;@Habitat:ツーソン/バスステーション/バスステーション
 ;@Person:待ち人
 ;@Figure:サラリーマンC
 ;@AppearanceKey:0
@@ -844,7 +844,7 @@ _TWSN_BUS_B_LATER;
 』
 
 
-;@Habitat:ツーソン／バスステーション／バスステーション
+;@Habitat:ツーソン/バスステーション/バスステーション
 ;@Person:待ち人
 ;@Figure:ゴロツキ
 ;@AppearanceKey:0
@@ -873,7 +873,7 @@ _TWSN_BUS_BU_LATER;
 』
 
 
-;@Habitat:ツーソン／バスステーション／バスステーション
+;@Habitat:ツーソン/バスステーション/バスステーション
 ;@Person:待ち人
 ;@Figure:おじいさん
 ;@AppearanceKey:0
@@ -894,7 +894,7 @@ MSG_TWSN_BUS_C;
 』
 
 
-;@Habitat:ツーソン／バスステーション／バスステーション
+;@Habitat:ツーソン/バスステーション/バスステーション
 ;@Person:バス案内係
 ;@Figure:おじさんA
 ;@AppearanceKey:0
@@ -915,7 +915,7 @@ MSG_TWSN_BUS_INFO;
 』
 
 
-;@Habitat:ツーソン／バスステーション／バスステーション
+;@Habitat:ツーソン/バスステーション/バスステーション
 ;@Person:バス運転手
 ;@Figure:おじさんA
 ;@AppearanceKey:0
@@ -977,7 +977,7 @@ _BUS_POO;
 @!
 
 ;----------------------------------------
-;@Habitat:ツーソン／ビーナス母の家／母の部屋
+;@Habitat:ツーソン/ビーナス母の家/母の部屋
 ;@Person:ビーナス母
 ;@Figure:ビーナスの母
 ;@AppearanceKey:0
@@ -1015,7 +1015,7 @@ _TWSN_VENUSMOM_LATER;
 』
 
 ;----------------------------------------
-;@Habitat:ツーソン／住宅A／２階
+;@Habitat:ツーソン/住宅A/2階
 ;@Person:住人
 ;@Figure:キャップ
 ;@AppearanceKey:0
@@ -1024,7 +1024,7 @@ _TWSN_VENUSMOM_LATER;
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_HOUSE_A
 MSG_TWSN_HOUSE_A;
-;住宅A２階住人
+;住宅A2階住人
 @CHKFGOTO(FLG_WIN_GIEGU,_TWSN_HOUSE_A_END)
 @CHKFGOTO(FLG_WIN_CARPAINTER,_TWSN_HOUSE_A_AFTER)
 ◆Dad and mom have left for Happy−Happy Village.@KEY()↓
@@ -1035,7 +1035,7 @@ MSG_TWSN_HOUSE_A;
 ;jpn:◆でかけてるんだ。
 @KEYNP()
 』
-_TWSN_HOUSE_A_AFTER;＃
+_TWSN_HOUSE_A_AFTER;#
 ◆Dad and mom said they won’t go to Happy−Happy Village.@KEY()↓
 ◆I’m not sure why, but now I’m happy.
 ;jpn:◆パパもママも↓
@@ -1071,7 +1071,7 @@ _TWSN_HOUSE_A_END;
 』
 
 
-;@Habitat:ツーソン／住宅B／２階
+;@Habitat:ツーソン/住宅B/2階
 ;@Person:住人
 ;@Figure:少女D
 ;@AppearanceKey:0
@@ -1079,8 +1079,8 @@ _TWSN_HOUSE_A_END;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_HOUSE_B
-MSG_TWSN_HOUSE_B;＃
-;住宅B２階住人
+MSG_TWSN_HOUSE_B;#
+;住宅B2階住人
 @CHKFGOTO(FLG_ITEM_TACO_ERASER,_TWSN_HOUSE_B_LATER)
 ◆Did you know that two young inventors live in this town?@KEY()↓
 ◆I want to invent something, too.
@@ -1100,7 +1100,7 @@ _TWSN_HOUSE_B_LATER;
 』
 
 
-;@Habitat:ツーソン／住宅E／住宅E
+;@Habitat:ツーソン/住宅E/住宅E
 ;@Person:飼い猫
 ;@Figure:ヒントキャット
 ;@AppearanceKey:0
@@ -1117,7 +1117,7 @@ MSG_TWSN_HOUSE_E_CAT;
 
 
 ;----------------------------------------
-;@Habitat:ツーソン／デパート／１階.返品コーナー
+;@Habitat:ツーソン/デパート/1階.返品コーナー
 ;@Person:CD
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -1126,7 +1126,7 @@ MSG_TWSN_HOUSE_E_CAT;
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-;@Habitat:ツーソン／デパート／１階.返品コーナー
+;@Habitat:ツーソン/デパート/1階.返品コーナー
 ;@Person:公衆電話
 ;@Figure:電話ボックス
 ;@AppearanceKey:0
@@ -1135,7 +1135,7 @@ MSG_TWSN_HOUSE_E_CAT;
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-;@Habitat:ツーソン／デパート／１階.返品コーナー
+;@Habitat:ツーソン/デパート/1階.返品コーナー
 ;@Person:返品係
 ;@Figure:女店員A
 ;@AppearanceKey:0
@@ -1148,7 +1148,7 @@ MSG_TWSN_DEPART_RETURNGOODS;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／デパート／１階.返品コーナー
+;@Habitat:ツーソン/デパート/1階.返品コーナー
 ;@Person:カオスチケット係
 ;@Figure:OLA
 ;@AppearanceKey:0
@@ -1176,11 +1176,11 @@ _TWSN_DEPART_TICKETPIA_NO;
 
 _TWSN_DEPART_TICKETPIA_YES;
 ◆The main floor and balcony seats are sold out.@KEY()↓
-◆We only have box seats, which cost ２０ dollars.@WI(20)  Would that be okay?@KEY()↓
+◆We only have box seats, which cost 20 dollars.@WI(20)  Would that be okay?@KEY()↓
 ◆Oh, wait...the box seats sold out a long time ago.  Oops.@WI(20)  My mistake.@KEY()↓
 ◆The box seats are the most popular.
 ;jpn:◆Aせき Bせきは うりきれで↓
-;jpn: Sせきは １２ドルです。@WI(15)↓
+;jpn: Sせきは 12ドルです。@WI(15)↓
 ;jpn: よろしいですか?@KEY()↓
 ;jpn:◆あ Sせきも もう↓
 ;jpn: とっくに うりきれだったわ。↓
@@ -1199,7 +1199,7 @@ _TWSN_DEPART_TICKETPIA_LATER;
 』
 
 
-;@Habitat:ツーソン／デパート／１階.返品コーナー
+;@Habitat:ツーソン/デパート/1階.返品コーナー
 ;@Person:客A
 ;@Figure:青年
 ;@AppearanceKey:0
@@ -1236,7 +1236,7 @@ _TWSN_DEPT_A_LATER;
 』
 
 
-;@Habitat:ツーソン／デパート／２階.食品売り場
+;@Habitat:ツーソン/デパート/2階.食品売り場
 ;@Person:食料店員A
 ;@Figure:ウェートレスB
 ;@AppearanceKey:0
@@ -1249,7 +1249,7 @@ MSG_TWSN_DEPART_GROCERY_A;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／デパート／２階.食品売り場
+;@Habitat:ツーソン/デパート/2階.食品売り場
 ;@Person:食料店員B
 ;@Figure:ウェートレスB
 ;@AppearanceKey:0
@@ -1262,7 +1262,7 @@ MSG_TWSN_DEPART_GROCERY_B;@MaltaAppended
 』
 
 
-;@Habitat:ツーソン／デパート／２階.食品売り場
+;@Habitat:ツーソン/デパート/2階.食品売り場
 ;@Person:客B
 ;@Figure:おばあさん
 ;@AppearanceKey:0
@@ -1271,7 +1271,7 @@ MSG_TWSN_DEPART_GROCERY_B;@MaltaAppended
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_DEPT_B
 MSG_TWSN_DEPT_B;
-;デパート２階食品売り場客B
+;デパート2階食品売り場客B
 @CHKFGOTO(FLG_ITEM_GREATORANGE,_TWSN_DEPT_B_LATER)
 ◆I think that my grandchild is older than you.@WI(20)  He’s a famous inventor.@KEY()↓
 ◆He lives here, and people call him Orange Kid.@KEY()↓
@@ -1298,7 +1298,7 @@ _TWSN_DEPT_B_LATER;
 』
 
 
-;@Habitat:ツーソン／デパート／２階.食品売り場
+;@Habitat:ツーソン/デパート/2階.食品売り場
 ;@Person:客C
 ;@Figure:アーティスト
 ;@AppearanceKey:0
@@ -1307,7 +1307,7 @@ _TWSN_DEPT_B_LATER;
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_DEPT_C
 MSG_TWSN_DEPT_C;
-;デパート２階食品売り場客C
+;デパート2階食品売り場客C
 @CHKFGOTO(FLG_TLPT_SUMS,_TWSN_DEPT_C_LATER)
 ◆I heard a meteorite crashed onto a hilltop near Onett.@KEY()↓
 ◆That must have been exciting!
@@ -1328,7 +1328,7 @@ _TWSN_DEPT_C_LATER;
 』
 
 
-;@Habitat:ツーソン／デパート／３階.ドラッグストア
+;@Habitat:ツーソン/デパート/3階.ドラッグストア
 ;@Person:店員
 ;@Figure:女店員A
 ;@AppearanceKey:0
@@ -1340,7 +1340,7 @@ MSG_TWSN_DEPT_DRUG1;@MaltaAppended
 @GOSUB(MSG_SHOP_TWSN_DRUG1)
 』
 
-;@Habitat:ツーソン／デパート／３階.ドラッグストア
+;@Habitat:ツーソン/デパート/3階.ドラッグストア
 ;@Person:店員
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
@@ -1352,7 +1352,7 @@ MSG_TWSN_DEPT_DRUG2;@MaltaAppended
 @GOSUB(MSG_SHOP_TWSN_DRUG2)
 』
 
-;@Habitat:ツーソン／デパート／３階.ドラッグストア
+;@Habitat:ツーソン/デパート/3階.ドラッグストア
 ;@Person:客D
 ;@Figure:少女C
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -1361,7 +1361,7 @@ MSG_TWSN_DEPT_DRUG2;@MaltaAppended
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_DEPT_D
 MSG_TWSN_DEPT_D;
-;デパート３階ドラッグストア＆ゲームセンター客D
+;デパート3階ドラッグストア&ゲームセンター客D
 ◆I wanna visit my boyfriend in Threed ’cept the bus won’t go there.@KEY()↓
 ◆I wonder why.
 ;jpn:◆スリークにすんでる こいびとに↓
@@ -1372,7 +1372,7 @@ MSG_TWSN_DEPT_D;
 』
 
 
-;@Habitat:ツーソン／デパート／３階.ドラッグストア
+;@Habitat:ツーソン/デパート/3階.ドラッグストア
 ;@Person:客E
 ;@Figure:少年A
 ;@AppearanceKey:0
@@ -1381,7 +1381,7 @@ MSG_TWSN_DEPT_D;
 ;@CheckMessage:0
 ;@Message:MSG_TWSN_DEPT_E
 MSG_TWSN_DEPT_E;
-;デパート３階ドラッグストア＆ゲームセンター客E
+;デパート3階ドラッグストア&ゲームセンター客E
 @CHKFGOTO(FLG_WIN_GIEGU,_TWSN_DEPT_E_END)
 @CHKFGOTO(FLG_TLPT_THRK,_TWSN_DEPT_E_LATER)
 @CHKFGOTO(FLG_WIN_CARPAINTER,_TWSN_DEPT_E_AFTER)
@@ -1416,13 +1416,13 @@ _TWSN_DEPT_E_NO;いいえ
 ;jpn: いいのかも しれないね。
 @KEYNP()
 』
-_TWSN_DEPT_E_YES;はい］
+_TWSN_DEPT_E_YES;はい]
 ◆Hmm.@WI(30)  I wouldn’t have believed it...
 ;jpn:◆へーえ。@WI(30)↓
 ;jpn: そいつは いがいだった。
 @KEYNP()
 』
-_TWSN_DEPT_E_END;＆
+_TWSN_DEPT_E_END;&
 ◆Hey, it’s the boy who wears the same outfit all the time!@KEY()↓
 ◆You seem happy enough,@WI(15) but who knows?
 ;jpn:◆おお いつもおなじふくの↓

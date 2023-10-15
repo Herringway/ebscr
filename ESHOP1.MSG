@@ -49,7 +49,7 @@ MSG_SUB_SHOPMES_MITUBAI_7;
 MSG_SUB_SHOPMES_MITUBAI_8;
 ◆Would you like me to buy↓
   your @DSP_GOODS(0)@KEY()↓
-◆for @XCHG()＄@DSP_NUM(0)?↓
+◆for @XCHG()$@DSP_NUM(0)?↓
  
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
@@ -105,7 +105,7 @@ MSG_SUB_SHOPMES_MITUBAI_13;
 MSG_SUB_SHOPMES_MITUBAI_14;
 ◆@DSP_GOODS(0)?↓
   Let’s see...@KEY()↓
-◆How about @XCHG()＄@DSP_NUM(0)?↓
+◆How about @XCHG()$@DSP_NUM(0)?↓
 
 ;jpn:◆@DSP_GOODS(0)だね。↓
 ;@XCHG()
@@ -212,7 +212,7 @@ MSG_SUB_SHOPMES_JUNK1_7;
 MSG_SUB_SHOPMES_JUNK1_8;
 ◆Would you be liking me to buy↓
   your @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0)?@KEY()↓
+  for @XCHG()$@DSP_NUM(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
@@ -249,7 +249,7 @@ MSG_SUB_SHOPMES_JUNK1_13;
 MSG_SUB_SHOPMES_JUNK1_14;
 ◆@DSP_GOODS(0)?↓
   Oh, I can give you↓
-  about @XCHG()＄@DSP_NUM(0), OK?@KEY()↓
+  about @XCHG()$@DSP_NUM(0), OK?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。↓
 ;@XCHG()
@@ -296,7 +296,7 @@ MSG_SUB_SHOPMES_JUNK1_21;
 @!
 MSG_SUB_SHOPMES_JUNK1_22;
 ◆Oh, @DSP_NAME(0) has too many things already.@KEY()↓
-◆Won’t one of your friends carry (it／them) for you?↓
+◆Won’t one of your friends carry (it/them) for you?↓
  
 ;jpn:◆あらま @DSP_NAME(0)は↓
 ;jpn: にもつが いっぱいだよ。@KEY()↓
@@ -348,7 +348,7 @@ MSG_SUB_SHOPMES_RABBIT_7;
 MSG_SUB_SHOPMES_RABBIT_8;
 ◆Shall I buy↓
   your @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0)?@KEY()↓
+  for @XCHG()$@DSP_NUM(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
@@ -389,7 +389,7 @@ MSG_SUB_SHOPMES_RABBIT_13;
 MSG_SUB_SHOPMES_RABBIT_14;
 ◆@DSP_GOODS(0)?@KEY()↓
 ◆I can buy that↓
-  for @XCHG()＄@DSP_NUM(0).↓
+  for @XCHG()$@DSP_NUM(0).↓
   Is it a deal?!@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)だね。@KEY()↓
@@ -605,7 +605,7 @@ MSG_SUB_SHOPMES_BURGER_22;
 ;jpn:◆ほかのひとが↓
 ;jpn: おもちになりますか?↓
 @!
-;アカンベーカリー(Akan−be［making face］−kery)
+;アカンベーカリー(Akan−be[making face]−kery)
 MSG_SUB_SHOPMES_BAKERY2_1;
 ◆I like to sell my goodies on the street.@KEY()↓
 ◆Sure, flies land on them, but in my opinion, it makes them taste even better!@KEY()↓
@@ -773,7 +773,7 @@ MSG_SUB_SHOPMES_REST_20;
 @!
 MSG_SUB_SHOPMES_REST_22;
 ◆@DSP_NAME(0) is already carrying too many things.@KEY()↓
-◆Can someone else carry (it／them) for him?↓
+◆Can someone else carry (it/them) for him?↓
 
 ;jpn:◆@DSP_NAME(0)くんは↓
 ;jpn: にもつがいっぱいだね。@KEY()↓
@@ -2855,7 +2855,7 @@ _SUB_CUSTMES_A_4;
 @LOAD_GLOBAL_REG()
 ←
 ◆@DSP_GOODS(0)?↓
-  I’ll give you @XCHG()＄@DSP_NUM(0).@KEY()↓
+  I’ll give you @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆How’s that for a fair offer?↓
 
 ;◆@DSP_GOODS(0)?↓
@@ -2913,7 +2913,7 @@ _SUB_CUSTMES_B_4;
 ←
 ◆The @DSP_GOODS(0)?↓
   Hmmm...  How about↓
-  @XCHG()＄@DSP_NUM(0)?@KEY()↓
+  @XCHG()$@DSP_NUM(0)?@KEY()↓
 ◆How does that offer strike you?↓
 
 ;◆@DSP_GOODS(0)?↓
@@ -2973,7 +2973,7 @@ _SUB_CUSTMES_C_4;
 @LOAD_GLOBAL_REG()
 ←
 ◆The @DSP_GOODS(0)?↓
-  How about @XCHG()＄@DSP_NUM(0)...@KEY()↓
+  How about @XCHG()$@DSP_NUM(0)...@KEY()↓
 ◆Is that a fair trade?↓
 
 ;jpn:◆@DSP_GOODS(0)ですか。↓
@@ -3029,7 +3029,7 @@ _SUB_CUSTMES_D_4;
 ←
 ◆The @DSP_GOODS(0)?↓
   I’d offer about↓
-  @XCHG()＄@DSP_NUM(0) for that.@KEY()↓
+  @XCHG()$@DSP_NUM(0) for that.@KEY()↓
 ◆Is it a deal?↓
 
 ;jpn:◆@DSP_GOODS(0)かい?↓

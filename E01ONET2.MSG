@@ -1,8 +1,8 @@
-;@Habitat:オネット／フィールド／街の至る所		
+;@Habitat:オネット/フィールド/街の至る所		
 ;@Person:街の人C
 ;@Figure:ボロ
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_D
@@ -17,22 +17,22 @@ MSG_ONET_D;
 』
 
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:街の人D
 ;@Figure:サラリーマンB
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_B
-MSG_ONET_B;＃
+MSG_ONET_B;#
 @CHKFGOTO(FLG_WIN_GIEGU,_ONET_B_END)
 ◆You look so helpless.@WI(15)  Are you okay?
 ;jpn: たよりないかお してるなあ。↓
 ;jpn: だいじょうぶかな。
 @KEYNP()
 』
-_ONET_B_END;＆
+_ONET_B_END;&
 ◆You used to look much more helpless.
 ;jpn:◆おまえ むかしは もっと↓
 ;jpn: たよりないかお してたよな。
@@ -40,11 +40,11 @@ _ONET_B_END;＆
 』
 
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:街の人E
 ;@Figure:少年A
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_A
@@ -64,7 +64,7 @@ _ONET_A_LATER;
 ;jpn: ‥‥じゃ ないんだよな。
 @KEYNP()
 』
-_ONET_A_END;＆
+_ONET_A_END;&
 ◆Frank’s not in the arcade.@KEY()↓
 ◆He’s in the hamburger shop smiling away...
 @KEYNP()
@@ -75,11 +75,11 @@ _ONET_A_END;＆
 』
 
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:街の人F
 ;@Figure:おばさんA
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_E
@@ -106,7 +106,7 @@ _ONET_E_LATER;
 ;jpn: まだまだ きけんをかんじるわ。
 @KEYNP()
 』
-_ONET_E_END;＆
+_ONET_E_END;&
 ◆In this town, you’re famous.@KEY()↓
 ◆I heard you asked a Twoson girl out on a date.@WI(20)  What’s her name?@KEY()↓
 ◆You know, you have one of those baby faces that really attracts the girls,@KEY()↓
@@ -136,11 +136,11 @@ _ONET_E_END;＆
 ;;jpn: ならせるんだよね。いいなぁ。
 
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:蘇生解説お婆さん
 ;@Figure:おばあさん
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_OLDWOMAN
@@ -158,11 +158,11 @@ MSG_ONET_OLDWOMAN;
 』
 
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:街の犬
 ;@Figure:チリドッグ
 ;@AppearanceKey:0
-;@ActionScript:＊広範囲うろつき
+;@ActionScript:*広範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_STRAYDOG
@@ -220,17 +220,17 @@ _ONET_STRAYDOG_LATER;
 ;』
 
 
-;@Habitat:オネット／フィールド／岬
+;@Habitat:オネット/フィールド/岬
 ;@Person:ドア前の不動産屋
 ;@Figure:おじさんA
 ;@AppearanceKey:FLG_GOT_CAPEESTATE/off
-;@ActionScript:＊演出コンテ#1.8.5
+;@ActionScript:*演出コンテ#1.8.5
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_CAPEESTATE
 MSG_ONET_CAPEESTATE;@MaltaAdapted
 @CHKFGOTO(FLG_GOT_CAPEESTATE,_ONET_CAPEESTATE_BOUGHT)
-◆Doesn’t this house look good?@WI(20)  You can buy it for only ＄７５００!@KEY()↓
+◆Doesn’t this house look good?@WI(20)  You can buy it for only $7500!@KEY()↓
 ◆It has an ocean view,@WI(15) and the sunsets are beautiful.@KEY()↓
 ◆Folks should have a place of their own.@KEY()↓
 ◆Do you want to buy it?↓
@@ -239,7 +239,7 @@ MSG_ONET_CAPEESTATE;@MaltaAdapted
 ;jpn:◆ちょっと いいでしょ。↓
 ;jpn: このいえ。↓
 ;jpn: うりますよ。@KEY()↓
-;jpn:◆たった ７５００ドル!@KEY()↓
+;jpn:◆たった 7500ドル!@KEY()↓
 ;jpn:◆うみはみえるし ゆうひはキレイ。@WI(15)↓
 ;jpn: おとこのしろは ひつようですよ。@KEY()
 ;jpn:◆かってみませんか?↓
@@ -249,8 +249,8 @@ MSG_ONET_CAPEESTATE;@MaltaAdapted
 @SELGOTO(_ONET_CAPEESTATE_YES,_ONET_CAPEESTATE_NO)
 
 _ONET_CAPEESTATE_NO;@MaltaAdapted
-◆You can’t afford ＄７５００?@WI(20)  It was a waste of time talking to you.
-;jpn:◆たった ７５００ドルをはらえない@WI(15)↓
+◆You can’t afford $7500?@WI(20)  It was a waste of time talking to you.
+;jpn:◆たった 7500ドルをはらえない@WI(15)↓
 ;jpn: そんなあなたに はなした↓
 ;jpn: わたしが バカだった。
 @KEYNP()
@@ -284,11 +284,11 @@ _ONET_CAPEESTATE_BOUGHT
 』
 
 
-;@Habitat:オネット／フィールド／岬
+;@Habitat:オネット/フィールド/岬
 ;@Person:にげる不動産屋
 ;@Figure:おじさんA
 ;@AppearanceKey:FLG_GOT_CAPEESTATE/on
-;@ActionScript:＊演出コンテ#1.8.5
+;@ActionScript:*演出コンテ#1.8.5
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_REALTOR
@@ -309,11 +309,11 @@ _ONET_REALTOR2;
 』
 
 
-;@Habitat:オネット／フィールド／岬
+;@Habitat:オネット/フィールド/岬
 ;@Person:トランペッター
 ;@Figure:トランペッター
 ;@AppearanceKey:0
-;@ActionScript:＊左向いて止ったまま
+;@ActionScript:*左向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TRUMPETER
@@ -332,11 +332,11 @@ MSG_ONET_TRUMPETER;
 』
 
 
-;@Habitat:オネット／フィールド／街をうろついている
+;@Habitat:オネット/フィールド/街をうろついている
 ;@Person:シャーク団A
 ;@Figure:シャーク団
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_A
@@ -362,11 +362,11 @@ _ONET_SHARK_A2;
 』
 
 
-;@Habitat:オネット／フィールド／街をうろついている
+;@Habitat:オネット/フィールド/街をうろついている
 ;@Person:シャーク団B
 ;@Figure:シャーク団
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_B
@@ -392,11 +392,11 @@ _ONET_SHARK_B2;
 』
 
 
-;@Habitat:オネット／フィールド／道路封鎖前
+;@Habitat:オネット/フィールド/道路封鎖前
 ;@Person:封鎖警官A
 ;@Figure:警官
 ;@AppearanceKey:0
-;@ActionScript:＊演出コンテ#1.11
+;@ActionScript:*演出コンテ#1.11
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_GATE_A
@@ -425,11 +425,11 @@ _ONET_GATE_B2;
 』
 
 
-;@Habitat:オネット／フィールド／道路封鎖前
+;@Habitat:オネット/フィールド/道路封鎖前
 ;@Person:封鎖警官B
 ;@Figure:警官
 ;@AppearanceKey:0
-;@ActionScript:＊演出コンテ#1.11
+;@ActionScript:*演出コンテ#1.11
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_GATE_B
@@ -457,11 +457,11 @@ _ONET_GATE_A2;
 』
 
 
-;@Habitat:オネット／フィールド／ゲームセンター裏
+;@Habitat:オネット/フィールド/ゲームセンター裏
 ;@Person:フランク
 ;@Figure:フランク
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_FRANK
@@ -488,19 +488,19 @@ MSG_ONET_FRANK;
 MSG_ONET_FRANK_WIN;
 ◆”Fail−proof” Frank can’t be beaten.@KEY()↓
 ◆Puff,@WI(10) puff,@WI(10) puff↓
-  And this is@WI(15) ”Frankystein the ２nd.”
+  And this is@WI(15) ”Frankystein the 2nd.”
 ;jpn:◆むてきのフランクが↓
 ;jpn: まけるわけには いかねぇんだ。@WI(15)↓
 ;jpn: ハァ@WI(10) ハァ@WI(10) ハァ@KEY()↓
-;jpn:◆「フランキースタイン２ごう」だ!
+;jpn:◆「フランキースタイン2ごう」だ!
 @KEY()
 @SETF(FLG_WIN_FRANK_ONLY)
 @GOSUB(MSG_BATTLE_STEIN2)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
-;２号さん消滅
+;2号さん消滅
 @REMOVE_CHAR( PRSN_ONET_FIELD_4J, ANIM_BLINK_SUICIDE )
 @WI( 30 )	;消滅待ち
-@SETF( FLG_WIN_FRANK )	;２度と出さないぜ
+@SETF( FLG_WIN_FRANK )	;2度と出さないぜ
 @OPEN(1)
 
 MSG_ONET_STEIN2_WIN;
@@ -628,11 +628,11 @@ _ONET_FRANK2_NESS_DEAD;
 
 _ONET_FRANK_TRYAGAIN;
 ◆It’s you again...@KEY()↓
-◆Do you really think you can beat Franky’s ”Frankystein the ２nd”?@KEY()↓
+◆Do you really think you can beat Franky’s ”Frankystein the 2nd”?@KEY()↓
 <Yes> <No>
 ;jpn:◆また おまえか‥‥@WI(20)↓
 ;jpn: このフランキーさまの↓
-;jpn: 「フランキースタイン２ごう」に@KEY()↓
+;jpn: 「フランキースタイン2ごう」に@KEY()↓
 ;jpn:◆かてると おもってるのか?↓
 ;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
@@ -644,9 +644,9 @@ _ONET_FRANK_AGAIN_NO;
 ;jpn: また やってきたのか?@KEY()↓
 ;jpn:◆なめたまねしやがって‥‥@KEY()↓
 _ONET_FRANK_AGAIN_MAIN;
-◆Go!@WI(20)  ”Frankystein the ２nd”!@KEY()↓
+◆Go!@WI(20)  ”Frankystein the 2nd”!@KEY()↓
 ;jpn:◆いけ!@WI(60)↓
-;jpn: 「フランキースタイン２ごう」!@KEY()↓
+;jpn: 「フランキースタイン2ごう」!@KEY()↓
 @GOSUB(MSG_BATTLE_STEIN2)
 @TRUE_GOTO(MSG_BATTLE_LOSE)
 @OPEN(1)
@@ -659,7 +659,7 @@ _ONET_FRANK_AGAIN_YES;
 
 ;-------------------------------------------------
 
-MSG_ONET_FRANK_LATER;＆最終戦闘後のフランク
+MSG_ONET_FRANK_LATER;&最終戦闘後のフランク
 @CHKFGOTO(FLG_TEMP_3,_ONET_FRANK_LATER_MAIN)
 ◆Hello sir, how may I help you?@WI(30)  ...Uh...@WI(20)Aren’t you @DSP_NAME(PC_NESS)?@KEY()↓
 ◆After our battle I became serious,@WI(15) and have been working very hard.@KEY()↓
@@ -695,11 +695,11 @@ _ONET_FRANK_LATER_MAIN;
 』
 ;----------------
 
-;@Habitat:オネット／フィールド／ジャイアントステップ
+;@Habitat:オネット/フィールド/ジャイアントステップ
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_GIAN_BOSS/off
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_GIAN_BOSS
@@ -717,7 +717,7 @@ MSG_ONET_GIAN_BOSS;
 ◆This is the first ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは １ばんめの↓
+;jpn:◆ここは 1ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓
@@ -731,17 +731,17 @@ MSG_ONET_GIAN_BOSS;
 @SETF(FLG_WIN_GIAN_BOSS)
 』
 
-;1２３４５６７８９０１２３４５６７
+;12345678901234567
 
 ;▼▲▼▲▼▲▼▲ オネット ▼▲▼▲▼▲▼▲
 
-;^^^^^^^^オネット：水野家の地下洞窟^^^^^^^^
+;^^^^^^^^オネット:水野家の地下洞窟^^^^^^^^
 
-;@Habitat:オネット／水野家の地下洞窟／洞窟２
+;@Habitat:オネット/水野家の地下洞窟/洞窟2
 ;@Person:水野さん
 ;@Figure:水野さん
 ;@AppearanceKey:FLG_B1MIZUNO_APPEAR/on
-;@ActionScript:＊右向いて止ったまま
+;@ActionScript:*右向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_INSEKI_MIZUNO_B1
@@ -767,11 +767,11 @@ MSG_INSEKI_MIZUNO_B1;
 』
 
 
-;@Habitat:オネット／水野家の地下洞窟／洞窟４
+;@Habitat:オネット/水野家の地下洞窟/洞窟4
 ;@Person:水野さん
 ;@Figure:水野さん
 ;@AppearanceKey:FLG_B2MIZUNO_APPEAR/on
-;@ActionScript:＊右向いて止ったまま
+;@ActionScript:*右向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_INSEKI_MIZUNO_B2
@@ -879,11 +879,11 @@ _MIZUNO_B2_LATER_NESS_DEAD;
 @KEY()↓
 』
 
-;@Habitat:オネット／水野家の地下洞窟／洞窟４
+;@Habitat:オネット/水野家の地下洞窟/洞窟4
 ;@Person:黄金の像
 ;@Figure:黄金のオスカー
 ;@AppearanceKey:FLG_B2MIZUNO_APPEAR/on
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:MSG_ONET_CHECK_MANIMANI
 ;@Message:0
@@ -1112,7 +1112,7 @@ _GENKAN_MAMA_YES;
 @SETF(FLG_MYHOME_KNOCK_APPEAR)
 @SETF(FLG_YAZIUMA_DISAPPEAR)
 @SETF(FLG_MYHOME_TRACY_DISAPPEAR)
-@CLRF(FLG_GENKAN_MAMA_APPEAR)	;お迎えママ消す ＆ 暗闇でノック音鳴らす(MUSI)
+@CLRF(FLG_GENKAN_MAMA_APPEAR)	;お迎えママ消す & 暗闇でノック音鳴らす(MUSI)
 @SETF(FLG_KAIDAN_TRACY_APPEAR)
 @SETF(FLG_ONET_POKEY_DOOR_CLOSE)
 @SETF(FLG_MYHOME_NES_CHANGE)			;パジャマ着る
@@ -1146,7 +1146,7 @@ _GENKAN_MAMA_YES;
 ;』
 ;
 ;-------------------------------------------------
-;警官１
+;警官1
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP1;
 ◆Don’t you know what time it is?!@WI(20)  Get yer butt home,@WI(15) pronto!
@@ -1157,7 +1157,7 @@ MSG_YAZIUMA_COP1;
 』
 
 ;-------------------------------------------------
-;男１
+;男1
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_MAN1;
 ◆I want to return home,@WI(15) but the road is closed.@KEY()↓
@@ -1170,7 +1170,7 @@ MSG_YAZIUMA_MAN1;
 』
 
 ;-------------------------------------------------
-;警官２
+;警官2
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP2;
 ◆Don’t panic!@WI(20)  It’s just a...@WI(20)what?!...meteorite that...@WI(20)who?!...fell.@KEY()↓
@@ -1185,7 +1185,7 @@ MSG_YAZIUMA_COP2;
 』
 
 ;-------------------------------------------------
-;警官３
+;警官3
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP3;
 ◆Onett police are infamous for closing roads if something is going on.@KEY()↓
@@ -1199,7 +1199,7 @@ MSG_YAZIUMA_COP3;
 』
 
 ;-------------------------------------------------
-;男２
+;男2
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_MAN2;
 ◆Did you hear the big bang?@WI(20)  I think a meteorite landed nearby.@KEY()↓
@@ -1217,7 +1217,7 @@ MSG_YAZIUMA_MAN2;
 』
 
 ;-------------------------------------------------
-;警官４
+;警官4
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP4;
 ◆A meteorite has landed,@WI(15) the Sharks are running wild in town,@KEY()↓
@@ -1235,7 +1235,7 @@ MSG_YAZIUMA_COP4;
 』
 
 ;-------------------------------------------------
-;警官５
+;警官5
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP5;
 @CHKFGOTO(FLG_YAZIUMA_POKEY,_YAZIUMA_COP5_B)
@@ -1264,7 +1264,7 @@ _YAZIUMA_COP5_B;	;ポーキーと話した後
 
 
 ;-------------------------------------------------
-;警官６
+;警官6
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP6;
 ◆Hey, you!@WI(15)  Don’t you know what time it is?
@@ -1274,7 +1274,7 @@ MSG_YAZIUMA_COP6;
 』
 
 ;-------------------------------------------------
-;警官７
+;警官7
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP7;
 ◆Clear out. Get out of my way.@KEY()↓
@@ -1291,7 +1291,7 @@ MSG_YAZIUMA_COP7;
 』
 
 ;-------------------------------------------------
-;警官８
+;警官8
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP8;
 ◆Shh.@WI(15)  Shh!
@@ -1300,7 +1300,7 @@ MSG_YAZIUMA_COP8;
 』
 
 ;-------------------------------------------------
-;警官９
+;警官9
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP9;
 ◆Nice timing,@WI(15) @DSP_NAME(PC_NESS).@WI(20)  Will you do something about Pokey?@KEY()↓
@@ -1330,7 +1330,7 @@ _YAZIUMA_COP9_YES;
 』
 
 ;-------------------------------------------------
-;警官１０
+;警官10
 ;FLG_YAZIUMA_DISAPPEAR/offで出現
 MSG_YAZIUMA_COP10;
 ◆That meteorite looks different than usual.@KEY()↓
@@ -1449,7 +1449,7 @@ MSG_INSEKI_STARMAN;松
 @FRESH_GOM_CHAR(GOM_BUN)
 @OPEN(1)					;ブンブーンのセリフ
 ◆Whew!...@WI(20)  I was taking a big chance there...@KEY()↓
-◆He came from １０−years in the future to kill me,@WI(15) so we can’t relax yet!@KEY()↓
+◆He came from 10−years in the future to kill me,@WI(15) so we can’t relax yet!@KEY()↓
 ◆From now on,@WI(15) you’ll be fighting enemies sent by Giygas,@KEY()↓
 ◆as well as humans who think evil thoughts.@KEY()↓
 ◆They’ll definitely make trouble during your adventure!@KEY()↓
@@ -1459,7 +1459,7 @@ MSG_INSEKI_STARMAN;松
 ;jpn:◆ふう‥‥@WI(30)↓
 ;jpn: あぶないところじゃった。@KEY()↓
 ;jpn:◆やつは わしをけすために↓
-;jpn: １０ねんごのみらいから↓
+;jpn: 10ねんごのみらいから↓
 ;jpn: やってきた ころしや@KEY()↓
 ;jpn:◆じゃ!@KEY()↓
 ;jpn:◆だが まだ↓
@@ -1803,14 +1803,14 @@ _CHECK_FUDOUSAN_SHELF_NO;(いいえの場合)
 
 _CHECK_FUDOUSAN_SHELF_YES;(はいの場合)
 ;jpn:◆「わが ひみつの しょうがい」↓
-;jpn: だい３しょう。↓
+;jpn: だい3しょう。↓
 @KEY()↓
 ◆”My Secret Life,@WI(15) chapter three.”@WI(20) (Story from the previous chapter.)@KEY()↓
 ◆I was neither a murder suspect,@KEY()↓
 ◆nor a target for an international spy organization.@KEY()↓
-◆But I drove a car down the Jersey Turnpike at ８０ mph.@KEY()↓
+◆But I drove a car down the Jersey Turnpike at 80 mph.@KEY()↓
 ◆...A police officer pulled me over and asked for my driver’s license.@KEY()↓
-◆He said I was going ２０ mph over the speed limit.@KEY()↓
+◆He said I was going 20 mph over the speed limit.@KEY()↓
 ◆I instantly pointed to my wife and said ”I’m in a hurry,@WI(15) my wife is in labor.”@KEY()↓
 ◆Fortunately,@WI(15) my wife actually had a big stomach.@KEY()↓
 ◆I hoped he’d let me go with this excuse.@KEY()↓
@@ -1826,12 +1826,12 @@ _CHECK_FUDOUSAN_SHELF_YES;(はいの場合)
 ;jpn: いのちを ねらわれている↓
 ;jpn: わけでもない わたしは@KEY()↓
 ;jpn:◆こうしゅうかいどうを↓
-;jpn: じそく８０キロで はしっていた。@KEY()↓
+;jpn: じそく80キロで はしっていた。@KEY()↓
 ;jpn:◆‥‥パトカーから おりてきた↓
 ;jpn: けいかんは めんきょしょうの↓
 ;jpn: ていじを もとめ@KEY()↓
 ;jpn:◆わたしの はしっていた そくどが↓
-;jpn: ２０キロの スピードいはんで↓
+;jpn: 20キロの スピードいはんで↓
 ;jpn: あることを つげた。@KEY()↓
 ;jpn:◆わたしは とっさに↓
 ;jpn: じょしゅせきの つまを↓

@@ -74,11 +74,11 @@ _DBG_MP10;
 <TN−>
 <BR−NMNK−>
 <DNZyNMN>
-<FRINGMN１>
-<FRINGMN２>
-<FRINGMN３>
-<FRINGMN４>
-<FRINGMN５>
+<FRINGMN1>
+<FRINGMN2>
+<FRINGMN3>
+<FRINGMN4>
+<FRINGMN5>
 @DSP_ITEML(3)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -117,7 +117,7 @@ _MKP_DEL_END;
 @GOTO(MSG_DEBUG_00)
 
 _MKP_DEL_UNABLE;
-◆０NNNHDKMSN.@KEYNP()
+◆0NNNHDKMSN.@KEYNP()
 @GOTO(MSG_DEBUG_00)
 
 _DBG_GOODS;
@@ -755,7 +755,7 @@ _DBG_MONEY;
 <GNKU  MNTN>
 <SyZKN MNTN>
 <SyZKN StTI>
-<SyZKN ０DR>
+<SyZKN 0DR>
 @DSP_ITEML(1)
 @SELQ()
 @SAVE_GLOBAL_REG()
@@ -768,7 +768,7 @@ _DBG_MONEY;
 
 _BANK_FULL;
 ◆GNKUYKNW↓
- ９９９９９９９DRNSMS.@KEYNP()
+ 9999999DRNSMS.@KEYNP()
 @SET_LOOPREG(1)
 _OT05_LOOP;
 @SET_REG(1)
@@ -785,7 +785,7 @@ _OT05_END;
 
 _MONEY_FULL;
 ◆SyZKNW↓
- ９９９９９DRNSMS.@KEYNP()
+ 99999DRNSMS.@KEYNP()
 @MONEYIN(60000)
 @MONEYIN(40000)
 @WINR_MONEY()
@@ -796,9 +796,9 @@ _SET_MONEY;
 ◆KNGKW StTIST↓
  KDSI↓
 @LOC(4,10)
-＆
+&
 @LOC(4,2)
-＄@INPUT(5)
+$@INPUT(5)
 @CLRLINE()
 @FALSE_GOTO(_SETMONEY_END)
 @SAVE_REG()
@@ -817,7 +817,7 @@ _SETMONEY_END;
 _ZERO_MONEY;
 @GOSUB(_SUB_MONEY_ZERO)
 ◆PR−Y−NSyZKNW↓
- ０DRN SMST.@KEYNP()
+ 0DRN SMST.@KEYNP()
 @GOTO(MSG_DEBUG_00)
 @!
 
@@ -1007,11 +1007,11 @@ MSG_DEBUG03;
 _DBG_AREA1;
 @OPEN(7)
 ;◆ シーン↓
-;<１ ポーキーなかまに>
-;<２ ブンブーンあらわる>
-;<３ ブンブーンしす>
-;<４ フランクたおす>
-;<５ オネットクリア>
+;<1 ポーキーなかまに>
+;<2 ブンブーンあらわる>
+;<3 ブンブーンしす>
+;<4 フランクたおす>
+;<5 オネットクリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1027,10 +1027,10 @@ _DBG_SCENEEND;
 _DBG_AREA2;
 @OPEN(6)
 ;◆ シーン↓
-;<１ ポーラゆうかい>
-;<２ フラバッジもらう>
-;<３ ポーラきゅうしゅつ>
-;<４ ツーソンクリア>
+;<1 ポーラゆうかい>
+;<2 フラバッジもらう>
+;<3 ポーラきゅうしゅつ>
+;<4 ツーソンクリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1041,12 +1041,12 @@ _DBG_AREA2;
 _DBG_AREA3;
 @OPEN(6)
 ;◆ シーン↓
-;<１ ゾンビにつかまる>
-;<２ タスこのタッシー>
-;<３ アンドナはかせ>
-;<４ ジェフなかまに>
-;<５ ゾンビぜんめつ>
-;<６ スリーククリア>
+;<1 ゾンビにつかまる>
+;<2 タスこのタッシー>
+;<3 アンドナはかせ>
+;<4 ジェフなかまに>
+;<5 ゾンビぜんめつ>
+;<6 スリーククリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1057,11 +1057,11 @@ _DBG_AREA3;
 _DBG_AREA4;
 @OPEN(6)
 ;◆ シーン↓
-;<１ モッチーおおあな>
-;<２ トンズラかいほう>
-;<３ とんちきしす>
-;<４ マニマニたおす>
-;<５ フォーサイドクリア>
+;<1 モッチーおおあな>
+;<2 トンズラかいほう>
+;<3 とんちきしす>
+;<4 マニマニたおす>
+;<5 フォーサイドクリア>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1072,10 +1072,10 @@ _DBG_AREA4;
 _DBG_AREA5;
 @OPEN(6)
 ;◆ シーン↓
-;<１ マッサージでランマ>
-;<２ ピンクとマグネ>
-;<３ ストヘンでスカラビ>
-;<４ ダンジョンおとこ>
+;<1 マッサージでランマ>
+;<2 ピンクとマグネ>
+;<3 ストヘンでスカラビ>
+;<4 ダンジョンおとこ>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1086,11 +1086,11 @@ _DBG_AREA5;
 _DBG_AREA6;
 @OPEN(6)
 ;◆ シーン↓
-;<１ ゲロップでプー>
-;<２ ルミネホール>
-;<３ サウンドそろう>
-;<４ マジカント>
-;<５ さいご>
+;<1 ゲロップでプー>
+;<2 ルミネホール>
+;<3 サウンドそろう>
+;<4 マジカント>
+;<5 さいご>
 @DSP_ITEML(1)
 @GOSUB(_SUB_SELWIN)
 @FALSE_GOTO(_DBG_SCENEEND)
@@ -1944,7 +1944,7 @@ _DEVT_02;
 
 _DEVT_03;
  IBNT↓
- KIKN５NNNK↓
+ KIKN5NNNK↓
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(13)
@@ -2166,7 +2166,7 @@ _DEVT_17;
 
 _DEVT_18;
  IBNT↓
- SKIUo−K−２
+ SKIUo−K−2
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(44)
@@ -2207,7 +2207,7 @@ _DEVT_20;
 
 _DEVT_21;
  IBNT↓
- B−NSST−ZSN２
+ B−NSST−ZSN2
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(50)
@@ -2223,7 +2223,7 @@ _DEVT_21;
 
 _DEVT_22;
  IBNT↓
- TtS−SN２
+ TtS−SN2
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(51)
@@ -2318,7 +2318,7 @@ _DEVT_29;
 
 _DEVT_30;
  IBNT↓
- SP−STNNR１・５
+ SP−STNNR1・5
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(63)
@@ -2329,7 +2329,7 @@ _DEVT_30;
 
 _DEVT_31;
  IBNT↓
- SP−STNNR２T３
+ SP−STNNR2T3
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(63)
@@ -2727,7 +2727,7 @@ _DEVT_58;
 
 _DEVT_59;
  IBNT↓
- SIGNINRSN１↓
+ SIGNINRSN1↓
 ; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
@@ -2741,7 +2741,7 @@ _DEVT_59;
 
 _DEVT_60;
  IBNT↓
- SIGNINRSN２↓
+ SIGNINRSN2↓
 ; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
@@ -2755,7 +2755,7 @@ _DEVT_60;
 
 _DEVT_61;
  IBNT↓
- SIGNINRSN３↓
+ SIGNINRSN3↓
 ; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
@@ -2769,7 +2769,7 @@ _DEVT_61;
 
 _DEVT_62;
  IBNT↓
- SIGNINRSN４↓
+ SIGNINRSN4↓
 ; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
@@ -2783,7 +2783,7 @@ _DEVT_62;
 
 _DEVT_63;
  IBNT↓
- SIGNINRSN５↓
+ SIGNINRSN5↓
 ; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
@@ -2797,7 +2797,7 @@ _DEVT_63;
 
 _DEVT_64;
  IBNT↓
- SIGNINRSN６↓
+ SIGNINRSN6↓
 ; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
@@ -2811,7 +2811,7 @@ _DEVT_64;
 
 _DEVT_65;
  IBNT↓
- SIGNINRSN７↓
+ SIGNINRSN7↓
 ; (テストちゅう)
 @KEYNP()
 @CLOSEALL()
@@ -2825,7 +2825,7 @@ _DEVT_65;
 
 _DEVT_66;
  IBNT↓
- SKIUo−K−３
+ SKIUo−K−3
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(44)
@@ -2867,7 +2867,7 @@ _DEVT_68;
 
 _DEVT_69;
  IBNT↓
- ３HTDK
+ 3HTDK
 @KEYNP()
 @CLOSEALL()
 @SET_LOOPREG(11)
@@ -2927,7 +2927,7 @@ MSG_DEBUG_SCENE_13;
 @CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_SCENE_END)
 @OPEN(1)
 @SETF(FLG_ITEM_HOIHOI)
-;◆イベント５５↓
+;◆イベント55↓
 ; アップルキッドから↓
 ; でんわが かかってきます@KEY()↓
 ; アップルキッドから↓

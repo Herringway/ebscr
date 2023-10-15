@@ -3,17 +3,17 @@
 ; 他ファイルにも使用箇所あり。変更時には注意/上野
 
 
-;@Habitat:土星さん谷／土星さん宿屋／土星さん宿屋
+;@Habitat:土星さん谷/土星さん宿屋/土星さん宿屋
 ;@Person:宿主土星さん
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_HOTEL
 MSG_DOSEI_HOTEL;@MiuraAppended
 ;◆おやすみなさい。@KEY()
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 @FONTBAKA()
 @CHKFGOTO(FLG_TEMP_9,_DOSEI_HOTEL_TMP)
 ◆Do you want↓
@@ -55,21 +55,21 @@ _DOSEI_HOTEL_TMP;宿泊後
 』
 
 ;----------------------------------------
-;@Habitat:土星さん谷／土星さん宿屋／土星さん宿屋
+;@Habitat:土星さん谷/土星さん宿屋/土星さん宿屋
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
-;@ActionScript:＊固定
+;@ActionScript:*固定
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-；----------------------------------------
-;@Habitat:土星さん谷／土星さん医者／土星さん医者
+;----------------------------------------
+;@Habitat:土星さん谷/土星さん医者/土星さん医者
 ;@Person:医者土星さん
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_HOSPITAL
@@ -78,12 +78,12 @@ MSG_DOSEI_HOSPITAL;@MiuraAppended
 @GOSUB(MSG_DOCTOR_DOSEI)
 』
 
-；----------------------------------------
-;@Habitat:土星さん谷／土星さん道具屋／土星さん道具屋
+;----------------------------------------
+;@Habitat:土星さん谷/土星さん道具屋/土星さん道具屋
 ;@Person:道具屋土星さん
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:
 ;@Message:MSG_DOSEI_SHOP
@@ -92,12 +92,12 @@ MSG_DOSEI_SHOP;@MiuraAppended
 @GOSUB(MSG_SHOP_DOSEI_BAKA)
 』
 
-；----------------------------------------
-;@Habitat:土星さん谷／フィールド／土星さんに始めて会うような位置
-;@Person:土星さん１
+;----------------------------------------
+;@Habitat:土星さん谷/フィールド/土星さんに始めて会うような位置
+;@Person:土星さん1
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_1
@@ -141,7 +141,7 @@ _DOSEI_1_LATER;
 @FONTSTD()
 』
 
-_DOSEI_END_A;＃どせいさんA
+_DOSEI_END_A;#どせいさんA
 ◆I do↓
   What I say...↓
   Cross heart...
@@ -151,11 +151,11 @@ _DOSEI_END_A;＃どせいさんA
 』
 
 
-;@Habitat:土星さん谷／フィールド／適当な所
-;@Person:土星さん２
+;@Habitat:土星さん谷/フィールド/適当な所
+;@Person:土星さん2
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_2
@@ -206,18 +206,18 @@ _DOSEI_2_LATER;
 @FONTSTD()
 』
 
-_DOSEI_END_B;＃
+_DOSEI_END_B;#
 ◆Zoom!
 ;jpn:◆ふー。
 @KEYNP()
 @FONTSTD()
 』
 
-;@Habitat:土星さん谷／フィールド／温泉近く
-;@Person:土星さん３
+;@Habitat:土星さん谷/フィールド/温泉近く
+;@Person:土星さん3
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_3
@@ -256,7 +256,7 @@ _DOSEI_3_LATER;
 @FONTSTD()
 』
 
-_DOSEI_END_C;＃
+_DOSEI_END_C;#
 ◆Sweet fresh↓
   feel.
 ;jpn:◆えーなー。
@@ -264,11 +264,11 @@ _DOSEI_END_C;＃
 @FONTSTD()
 』
 
-;@Habitat:土星さん谷／フィールド／適当な所
-;@Person:土星さん４
+;@Habitat:土星さん谷/フィールド/適当な所
+;@Person:土星さん4
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_4_GOODS
@@ -399,7 +399,7 @@ _DOSEI_4_END;
 @KEYNP()
 @!
 
-_DOSEI_END_D;＠ユーリカ!(三浦)
+_DOSEI_END_D;@ユーリカ!(三浦)
 ◆Eureka!↓
   Ding!@KEYNP()
 ;jpn:◆ユーレイカ!@KEYNP()
@@ -407,11 +407,11 @@ _DOSEI_END_D;＠ユーリカ!(三浦)
 』
 
 
-;@Habitat:土星さん谷／フィールド／適当な所
-;@Person:土星さん５
+;@Habitat:土星さん谷/フィールド/適当な所
+;@Person:土星さん5
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_5
@@ -448,7 +448,7 @@ _DOSEI_5_LATER;
 @FONTSTD()
 』
 
-_DOSEI_END_E;＃
+_DOSEI_END_E;#
 ◆Make↓
  new thing!@KEY()↓
 ◆Must make!↓
@@ -461,11 +461,11 @@ _DOSEI_END_E;＃
 』
 
 
-;@Habitat:土星さん谷／フィールド／適当な所
-;@Person:土星さん６
+;@Habitat:土星さん谷/フィールド/適当な所
+;@Person:土星さん6
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_6
@@ -497,24 +497,24 @@ _DOSEI_6_LATER;
 @FONTSTD()
 』
 
-_DOSEI_END_F;＃
+_DOSEI_END_F;#
 ◆Dakota!
 ;jpn:◆ぐんまけん!
 @KEYNP()
 @FONTSTD()
 』
-;＆＠
+;&@
 ◆Chattanooga!
 ;jpn:◆とっとりけん!
 @KEYNP()
 @FONTSTD()
 』
 
-;@Habitat:土星さん谷／フィールド／適当な所
-;@Person:土星さん７
+;@Habitat:土星さん谷/フィールド/適当な所
+;@Person:土星さん7
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_7
@@ -546,28 +546,28 @@ _DOSEI_7_LATER;
 @FONTSTD()
 』
 
-_DOSEI_END_G;＃
+_DOSEI_END_G;#
 ◆Dance is over...
 ;jpn:◆ダンスがスンダ。
 @KEYNP()
 @FONTSTD()
 』
-_DOSEI_G_END;＆
+_DOSEI_G_END;&
 ◆Healthfull!
 ;jpn:◆げんき!
 @KEYNP()
 @FONTSTD()
 』
 
-;@Habitat:土星さん谷／フィールド／適当な所
-;@Person:土星さん８(秘密基地情報)
+;@Habitat:土星さん谷/フィールド/適当な所
+;@Person:土星さん8(秘密基地情報)
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_8
-MSG_DOSEI_8;＠３分待つのは自分(三浦)
+MSG_DOSEI_8;@3分待つのは自分(三浦)
 @FONTBAKA()
 @CHKFGOTO(FLG_WIN_GIEGU,_DOSEI_8_END)
 @CHKFGOTO(FLG_WIN_GEPPU,_DOSEI_8_LATER)
@@ -596,7 +596,7 @@ MSG_DOSEI_8;＠３分待つのは自分(三浦)
 ;jpn: と いう。@KEY()↓
 ;jpn:◆そしたら↓
 ;jpn: そのまま だまって↓
-;jpn: ３ ぷん まつんだ。
+;jpn: 3 ぷん まつんだ。
 ;どせいさん数字
 @SE(SE_se72);あやしい音
 @WI( 120 )
@@ -605,8 +605,8 @@ MSG_DOSEI_8;＠３分待つのは自分(三浦)
 @FONTSTD()
 』
 
-_DOSEI_8_LATER;＃
-;合言葉を教えてくれた土星さん８
+_DOSEI_8_LATER;#
+;合言葉を教えてくれた土星さん8
 ◆You wait three↓
   minutes!@KEY()↓
 ◆Zoom!@KEY()↓
@@ -616,14 +616,14 @@ _DOSEI_8_LATER;＃
 ◆three↓
   minutes?↓
   No?
-;jpn:◆３ ぷん まって よかったな。@KEY()↓	;どせいさん数字
-;jpn:◆また ３ ぷん まちに↓			;どせいさん数字
+;jpn:◆3 ぷん まって よかったな。@KEY()↓	;どせいさん数字
+;jpn:◆また 3 ぷん まちに↓			;どせいさん数字
 ;jpn: きたか。↓
 ;jpn: そうでもないか。
 @KEYNP()
 @FONTSTD()
 』
-_DOSEI_8_END;＆
+_DOSEI_8_END;&
 ◆I wish↓
   fall in↓
   love...
@@ -633,11 +633,11 @@ _DOSEI_8_END;＆
 』
 
 
-;@Habitat:土星さん谷／フィールド／テーブル
+;@Habitat:土星さん谷/フィールド/テーブル
 ;@Person:コーヒータイム
 ;@Figure:土星さん
 ;@AppearanceKey:0
-;@ActionScript:＊東を向いて固定
+;@ActionScript:*東を向いて固定
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DPFT_CAFE
@@ -682,7 +682,7 @@ _GPFT_DOSEICAFE_YES;
 @CLOSEALL()
 _GPFT_DOSEICAFE_MAIN;
 @CHKFGOTO(FLG_TLPT_DKFD,MSG_END)
-@GOSUB(MSG_SUB_BGM_FADEOUT_05SECOND);＄
+@GOSUB(MSG_SUB_BGM_FADEOUT_05SECOND);$
 @BGMSTART(0,BGM_time)
 @FUNC(1)
 ;@GOSUB(MSG_COFFEETIME)
@@ -763,11 +763,11 @@ _GPFT_DOSEICAFE_MAIN;
 ;』
 
 
-;@Habitat:土星さん谷／フィールド／(ゲップーを倒した後)適当な位置
+;@Habitat:土星さん谷/フィールド/(ゲップーを倒した後)適当な位置
 ;@Person:開放後の土星さんA
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GEPPU/on
-;@ActionScript:＊小範囲あわて
+;@ActionScript:*小範囲あわて
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_A
@@ -795,18 +795,18 @@ _DOSEI_A_LATER;
 @FONTSTD()
 』
 
-;@Habitat:土星さん谷／フィールド／(ゲップーを倒した後)適当な位置
+;@Habitat:土星さん谷/フィールド/(ゲップーを倒した後)適当な位置
 ;@Person:開放後の土星さんB
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GEPPU/on
-;@ActionScript:＊小範囲あわて
+;@ActionScript:*小範囲あわて
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_B
 MSG_DOSEI_B;
 @FONTBAKA()
 ◆Oh!  Oh!↓
-  ＊wheeze＊@KEY()↓
+  *wheeze*@KEY()↓
 ◆Breathe is↓
   sooooo↓
   good!
@@ -816,11 +816,11 @@ MSG_DOSEI_B;
 @FONTSTD()
 』
 
-;@Habitat:土星さん谷／フィールド／(ゲップーを倒した後)適当な位置
+;@Habitat:土星さん谷/フィールド/(ゲップーを倒した後)適当な位置
 ;@Person:開放後の土星さんC
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GEPPU/on
-;@ActionScript:＊小範囲あわて
+;@ActionScript:*小範囲あわて
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_C
@@ -838,11 +838,11 @@ MSG_DOSEI_C;
 @FONTSTD()
 』
 
-;@Habitat:土星さん谷／フィールド／広場
+;@Habitat:土星さん谷/フィールド/広場
 ;@Person:アップルキッド
 ;@Figure:有望青年B
 ;@AppearanceKey:FLG_CAPSULE_OK/on
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_APPLE
@@ -858,25 +858,25 @@ MSG_DOSEI_APPLE;@MiuraAdapted
 ◆Ah, @DSP_NAME(0).@KEY()↓
 ;jpn:◆あ @DSP_NAME(0)さん。@KEY()↓
 ;jpn:: せかいはひろいですねえ‥‥え?@KEY()↓
-;：@CHKFGOTO(FLG_LIBRARY_INFO_MUKUCHI,_DOSEI_APPLE_BOOK)
+;:@CHKFGOTO(FLG_LIBRARY_INFO_MUKUCHI,_DOSEI_APPLE_BOOK)
 ;jpn::◆むくちをなおすほん ですか?@KEY()↓
 ;jpn::◆そのほんなら↓
 ;jpn:: オネットの としょかんに↓
 ;jpn:: あったはずです。@KEYNP()
-;：@SETF(FLG_TEMP_1)
-;：』
-;：_DOSEI_APPLE_BOOK
+;:@SETF(FLG_TEMP_1)
+;:』
+;:_DOSEI_APPLE_BOOK
 ;jpn::◆むくちをなおすほんを ぼくが?@KEY()↓
 ;jpn::◆ほんとうだ。うっかりしてました。↓
 ;jpn:: どうぞ。‥‥またがしは↓
 ;jpn:: いけないんですけどね。@KEYNP()
-;：@Q_GOODSFULL(PC_ALL)
-;：@FALSE_GOTO(_DOSEI_APPLE_ITEMFULL)
-;：@GOODSIN_PLAYER(0,GDS_TOOL_BOOK_CHAT)
-;：@GOSUB(MSG_SUB_GETGOODS_S)
+;:@Q_GOODSFULL(PC_ALL)
+;:@FALSE_GOTO(_DOSEI_APPLE_ITEMFULL)
+;:@GOODSIN_PLAYER(0,GDS_TOOL_BOOK_CHAT)
+;:@GOSUB(MSG_SUB_GETGOODS_S)
 ;jpn::@SETF(FLG_ITEM_MUKUCHI)図書館で?
-;：@KEYNP()
-;：』
+;:@KEYNP()
+;:』
 ;_DOSEI_APPLE_ITEMFULL;
 ;@KEY()
 ;←
@@ -927,16 +927,16 @@ _DOSEI_END_APPLEKID_2;
 @CHKFGOTO(FLG_DAY_AFTER,_DOSEI_APPLE_LATER)
 @GOTO(_DOSEI_END_APPLEKID)
 
-_DOSEI_END_APPLEKID_LATER;＆
-◆The chance of Giygas gaining victory with his monstrous plan is ９９％.@KEY()↓
-◆However, your courage has produced a １％ chance that Giygas fails.@KEY()↓
+_DOSEI_END_APPLEKID_LATER;&
+◆The chance of Giygas gaining victory with his monstrous plan is 99%.@KEY()↓
+◆However, your courage has produced a 1% chance that Giygas fails.@KEY()↓
 ◆I must try to come to a deeper understanding of this trait called ”courage.”
 ;jpn:◆‥‥ギーグとの たたかいは↓
 ;jpn: かくりつてきには↓
-;jpn: ９９パーセント やぶれる@KEY()↓
+;jpn: 99パーセント やぶれる@KEY()↓
 ;jpn:◆ということだったんですが‥‥@KEY()↓
 ;jpn:◆あなたがたの ゆうきが↓
-;jpn: １パーセントの すきまを↓
+;jpn: 1パーセントの すきまを↓
 ;jpn: こじあけたんですね。@KEY()↓
 ;jpn:◆ぼくも にんげんの↓
 ;jpn: 「ゆうき」とかについて↓
@@ -945,11 +945,11 @@ _DOSEI_END_APPLEKID_LATER;＆
 』
 
 
-;@Habitat:土星さん谷／フィールド／広場
+;@Habitat:土星さん谷/フィールド/広場
 ;@Person:アンドーナツ博士
 ;@Figure:アンドーナッツ博士
 ;@AppearanceKey:FLG_PU/on
-;@ActionScript:＊小範囲あわて
+;@ActionScript:*小範囲あわて
 ;@GoodsMessage:MSG_EVENT_XYZ_ANDONUT_RECEIVE
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_ANDONUT_0
@@ -1037,7 +1037,7 @@ MSG_DOSEI_END_ANDONUT_GO;
 <Yes>
 <No>
 ;jpn:◆いま ついに かんせいした!@KEY()↓
-;jpn:◆スペーストンネル２には↓
+;jpn:◆スペーストンネル2には↓
 ;jpn: たいりょくかいふく と↓
 ;jpn: ぼうけんのデータきおく‥‥@KEY()↓
 ;jpn:◆このふたつの きのうが↓
@@ -1055,7 +1055,7 @@ MSG_DOSEI_END_ANDONUT_GO;
 @SELGOTO(_DOSEI_END_ANDONUT_GO_YES,_DOSEI_END_ANDONUT_GO_NO)
 _DOSEI_END_ANDONUT_GO_NO;
 _DOSEI_END_ANDONUT_GO_YES;
-◆Even if you’re not １００％, perfectly, completely ready...@KEY()↓
+◆Even if you’re not 100%, perfectly, completely ready...@KEY()↓
 ◆Well, you should be as prepared as possible.@KEY()↓
 ◆It would be for the best.@KEY()↓
 ◆Without careful preparation, you would be in big trouble.@KEY()↓
@@ -1088,11 +1088,11 @@ _DOSEI_END_ANDONUT_GOGO;
 @SELGOTO(_DOSEI_END_ANDONUT_GOGO_YES,_DOSEI_END_ANDONUT_GO_NO)
 @GOTO(_DOSEI_END_ANDONUT_GO_NO)
 _DOSEI_END_ANDONUT_GOGO_YES;
-◆Remember, the Phase Distorter, version ２, is equipped with two new features.@KEY()↓
+◆Remember, the Phase Distorter, version 2, is equipped with two new features.@KEY()↓
 ◆First, it can repair your biological functions.@KEY()↓
 ◆Second, it can save your progress.@KEY()↓
 ◆Don’t be afraid!  Get right in!
-;jpn:◆スペーストンネル２には↓
+;jpn:◆スペーストンネル2には↓
 ;jpn: たいりょくかいふく と↓
 ;jpn: ぼうけんのデータきおく‥‥@KEY()↓
 ;jpn:◆このふたつの きのうが↓
@@ -1114,7 +1114,7 @@ _DOSEI_END_ANDONUT_WAIT;
 @KEYNP()
 』
 
-MSG_DKFD_END_ANDONUT_4;＆
+MSG_DKFD_END_ANDONUT_4;&
 ◆It’s a miracle!@KEY()↓
 ◆A miracle that has only happened because of your great courage!@KEY()↓
 ◆...Believe me, I went through a lifetime’s worth of stress while you were gone...@KEY()↓
@@ -1135,7 +1135,7 @@ MSG_DKFD_END_ANDONUT_4;＆
 ;jpn:◆スペーストンネルに↓
 ;jpn: のりこむべきだったんじゃないか@WI(30)↓
 ;jpn: ‥‥そんなことも かんがえた。@KEY()↓
-;jpn:◆４にんの こどもたちと↓
+;jpn:◆4にんの こどもたちと↓
 ;jpn: ひとりの おじさんで↓
 ;jpn: ちきゅうをすくう‥‥@KEY()↓
 ;jpn:◆そんな はなしも↓
@@ -1145,11 +1145,11 @@ MSG_DKFD_END_ANDONUT_4;＆
 』
 
 
-;@Habitat:土星さん谷／フィールド／広場
+;@Habitat:土星さん谷/フィールド/広場
 ;@Person:ショージ・モッチー
 ;@Figure:ショージ・モッチー
 ;@AppearanceKey:FLG_WIN_OSCAR/on
-;@ActionScript:＊正面向いてそのまま
+;@ActionScript:*正面向いてそのまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_DOSEI_END_SYOZI
@@ -1187,7 +1187,7 @@ _DOSEI_END_SYOZI_LATER;
 ;jpn: だいじにするもんなんだいね。
 @KEYNP()
 』
-_DOSEI_END_SYOZI_END;＆
+_DOSEI_END_SYOZI_END;&
 ◆Incredible!↓
  Excellent!@KEY()↓
 ◆I’m not quite sure what for, but congratulations on a job well done!@KEY()↓
@@ -1206,21 +1206,21 @@ _DOSEI_END_SYOZI_END;＆
 』
 
 
-;@Habitat:土星さん谷／フィールド／広場
+;@Habitat:土星さん谷/フィールド/広場
 ;@Person:スペーストンネル
 ;@Figure:スペーストンネル
 ;@AppearanceKey:FLG_WIN_OSCAR/on
-;@ActionScript:＊演出コンテ#16.1(未完)
+;@ActionScript:*演出コンテ#16.1(未完)
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:0
 
 
-;@Habitat:土星さん谷／フィールド／温泉場
+;@Habitat:土星さん谷/フィールド/温泉場
 ;@Person:温泉の立て札
 ;@Figure:立て札
 ;@AppearanceKey:0
-;@ActionScript:＊固定
+;@ActionScript:*固定
 ;@GoodsMessage:0
 ;@CheckMessage:MSG_DOSEI_KANBAN_ONSEN
 ;@Message:0
@@ -1309,7 +1309,7 @@ MSG_DOSEI_POO;
 ;jpn:◆さいごにみせるよ。@KEY()↓
 ;jpn:◆PK サヨナラ! だ!
 @KEY()
-;＠これで消える。ランマに会いにいったら無言の行をしている。
+;@これで消える。ランマに会いにいったら無言の行をしている。
 @CLOSEALL()
 @SETF(FLG_RAMA_PU_APPEAR)	;ランマのプー出現
 』
@@ -1361,7 +1361,7 @@ MSG_DOSEI_JEFF;
 ;jpn: ようなことがあったら@KEY()↓
 ;jpn:◆でんきせいひんの↓
 ;jpn: しゅうりは↓
-;jpn: ぼくに まかせてくれ。@KEY()↓;＠ポーラ赤くなる?二人に汗の漫符
+;jpn: ぼくに まかせてくれ。@KEY()↓;@ポーラ赤くなる?二人に汗の漫符
 ;jpn:◆‥‥‥。@KEY()↓
 ;jpn:◆ぼくは しばらく↓
 ;jpn: ここにのこって@KEY()↓
@@ -1475,7 +1475,7 @@ _POLA_POLASTAR_BYE_R
 @GOTO(MSG_POLA_POLASTAR_ENTER)
 
 ;
-;＠(↓幼稚園の前の“別れポイント”で)
+;@(↓幼稚園の前の“別れポイント”で)
 MSG_POLA_POLASTAR_BYE;
 @COLD_PLAYER(PC_ALL)
 ;@SHOW_MANPU_PLAYER(PC_PAULA,MANPU_SURPRISE);「毛」漫符出さない
@@ -1558,7 +1558,7 @@ MSG_POLA_POLASTAR_ENTER;
 ;MSG_POLA_ONET_TLPT_BYE;
 ;
 
-;＠(↓ネスの家の前の“別れポイント”で)
+;@(↓ネスの家の前の“別れポイント”で)
 MSG_POLA_NESHOME_BYE;
 @GET_PLAYER_DIR(PC_NESS,1,PC_PAULA);ネスからポーラの方向を調べる
 @SET_PLAYER_DIR(PC_NESS,0);ネスをその方向に向ける
@@ -1612,7 +1612,7 @@ _POLA_NESHOME_BYE_NO;
 ;』
 
 
-;(↓その他４ヶ所の“別れポイント”で)ポーラのメッセージは両家の前
+;(↓その他4ヶ所の“別れポイント”で)ポーラのメッセージは両家の前
 ;MSG_POLA_BYE;
 ;◆たのしかったけど↓
 ; @DSP_STS(STS_PC_NAME_NES)‥‥。@KEY()↓
@@ -1647,7 +1647,7 @@ _POLA_NESHOME_BYE_NO;
 ;』
 ;-------------------------------------------------
 
-MSG_DOSEI_11;＄
+MSG_DOSEI_11;$
 @FONTBAKA()
 ◆You worn↓
   down?@KEY()↓
@@ -1674,7 +1674,7 @@ _DOSEI_11_TMP;
 @FONTSTD()
 』
 
-MSG_DOSEI_12;＃
+MSG_DOSEI_12;#
 @FONTBAKA()
 @CHKFGOTO(FLG_WIN_GIEGU,_DOSEI_12_END)
 ◆Longer↓
@@ -1688,7 +1688,7 @@ MSG_DOSEI_12;＃
 @FONTSTD()
 』
 
-_DOSEI_12_END;＆
+_DOSEI_12_END;&
 ◆Bell rings↓
   ding, ding.
   Boing!

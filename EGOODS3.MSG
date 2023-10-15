@@ -1,4 +1,4 @@
-;/////////////////////////マップ専用グッズ(３／３)////////////////////////
+;/////////////////////////マップ専用グッズ(3/3)////////////////////////
 
 ;寄宿舎のロッカー
 MSG_WINS_LOCKER;
@@ -123,7 +123,7 @@ _SUB_WINS_LOCKER_PART3;●(akm0616 w/itoi)
 @XCHG()
  got↓
   the @DSP_GOODS(0).
-;＠it?三浦
+;@it?三浦
 ;jpn: @DSP_GOODS(0)を↓
 ;jpn: てにいれた。
 @KEYNP()
@@ -160,7 +160,7 @@ _WINS_LOCKER_GOODSFULL;
 ;jpn:◆@DSP_NAME(0)は↓
 @XCHG()
  left the @DSP_GOODS(0) in the locker.
-;＠it?
+;@it?
 ;jpn: @DSP_GOODS(0)を↓
 ;jpn: ロッカーにもどした。
 @KEYNP()

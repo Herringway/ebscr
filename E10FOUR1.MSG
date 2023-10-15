@@ -1,4 +1,4 @@
-;@Habitat:フォーサイド／恐竜博物館／受付
+;@Habitat:フォーサイド/恐竜博物館/受付
 ;@Person:キャサリン
 ;@Figure:OLG
 ;@AppearanceKey:0
@@ -17,14 +17,14 @@ MSG_FOUR_MUSEUM_RECEPTION;
 ;jpn: すべて レプリカです。↓
 ;jpn: あたりまえのことですけどね。@KEY()↓
 ;◆それでもいいなら↓
-; にゅうじょうりょう ５ドルです。↓
+; にゅうじょうりょう 5ドルです。↓
 ; よろしいですか?@KEY()↓
 ◆If you still want to go see the dinosaurs,@KEY()↓
-◆pay ５ dollars a piece for the entrance fee.@KEY()↓
+◆pay 5 dollars a piece for the entrance fee.@KEY()↓
 ◆Is that okay?↓
 ;jpn:◆それでもいいなら↓
 ;jpn: にゅうじょうりょう↓
-;jpn: ひとり ５ドルです。@KEY()↓;人数分の料金を請求する為に変更
+;jpn: ひとり 5ドルです。@KEY()↓;人数分の料金を請求する為に変更
 ;jpn:◆よろしいですか?@KEY()↓
 @WINR_MONEY()
 <Yes>
@@ -41,7 +41,7 @@ _FOUR_MUSEUM_RECEPTION_NO;
 ◆You’re strange, kid!
 @KEYNP()
 ;jpn:◆@DSP_NUM(0)ドルが おしいのかしら。↓
-;◆５ドルが おしいのかしら。↓
+;◆5ドルが おしいのかしら。↓
 ;jpn: きょうりゅうに きょうみが↓
 ;jpn: ないのかしら? かわったひと!@KEYNP()
 』
@@ -74,7 +74,7 @@ _FOUR_MUSEUM_RECEPTION_NOMONEY;
 ◆You don’t deserve to go in the museum.
 @KEYNP()
 ;jpn:◆たった@DSP_NUM(0)ドルも↓
-;◆たった５ドルも↓
+;◆たった5ドルも↓
 ;jpn: もっていないなんて@KEY()↓
 ;jpn:◆あなたが はくぶつかんいり↓
 ;jpn: するべきじゃないかしら。@KEYNP()
@@ -92,7 +92,7 @@ _FOUR_MUSEUM_RECEPTION_PAID;
 』
 
 
-;@Habitat:フォーサイド／恐竜博物館／展示室
+;@Habitat:フォーサイド/恐竜博物館/展示室
 ;@Person:部屋への扉を塞ぐコモリターさん
 ;@Figure:コモリター
 ;@AppearanceKey:FLG_FOUR_KOMORITA_APPEAR/off
@@ -233,7 +233,7 @@ _FOUR_KOMORITA_RECEIVE_BANANA;
 @SETF(FLG_TEMP_1)
 』
 
-;@Habitat:フォーサイド／恐竜博物館／展示室
+;@Habitat:フォーサイド/恐竜博物館/展示室
 ;@Person:コモリターさん
 ;@Figure:コモリター
 ;@AppearanceKey:FLG_FOUR_KOMORITA_APPEAR/on
@@ -259,7 +259,7 @@ _FOUR_MUSEUM_KOMORITA_B_LATER;
 』
 
 
-;@Habitat:フォーサイド／恐竜博物館／展示室
+;@Habitat:フォーサイド/恐竜博物館/展示室
 ;@Person:客A
 ;@Figure:おじいさん
 ;@AppearanceKey:0
@@ -281,7 +281,7 @@ MSG_FOUR_MUSEUM_A;
 ;jpn: いちど みてみたいものだ。@KEYNP()
 』
 
-;@Habitat:フォーサイド／恐竜博物館／展示室
+;@Habitat:フォーサイド/恐竜博物館/展示室
 ;@Person:客B
 ;@Figure:少女C
 ;@AppearanceKey:0
@@ -298,7 +298,7 @@ MSG_FOUR_MUSEUM_B;
 ;jpn: きょうりゅうのほねが ね。@KEYNP()
 』
 
-;@Habitat:フォーサイド／恐竜博物館／展示室
+;@Habitat:フォーサイド/恐竜博物館/展示室
 ;@Person:客C
 ;@Figure:Tシャツ
 ;@AppearanceKey:0
@@ -314,8 +314,8 @@ MSG_FOUR_MUSEUM_C;
 ;jpn: うればいいと おもうんだよな。@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:フォーサイド／病院／受付
+;----------------------------------------
+;@Habitat:フォーサイド/病院/受付
 ;@Person:受付係
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -329,7 +329,7 @@ MSG_FOUR_HOSPITAL_USHER;@MiuraAppended
 ;@GOSUB(MSG_SHOP_FOUR_HOSPITAL)
 』
 
-;@Habitat:フォーサイド／病院／診察室
+;@Habitat:フォーサイド/病院/診察室
 ;@Person:お医者さん
 ;@Figure:医者
 ;@AppearanceKey:0
@@ -343,7 +343,7 @@ MSG_FOUR_HOSPITAL_DOCTOR;@MiuraAppended
 @GOSUB(MSG_DOCTOR_FOUR)
 』
 
-;@Habitat:フォーサイド／病院／診察室
+;@Habitat:フォーサイド/病院/診察室
 ;@Person:助手
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -378,7 +378,7 @@ MSG_FOUR_DEPT_HUMBURGER;フォーサイドデパートのハンバーガーシ�
 @GOTO(MSG_SHOP_FOUR_HAMBURGER)
 』
 
-;@Habitat:フォーサイド／デパート／１階.返品コーナー
+;@Habitat:フォーサイド/デパート/1階.返品コーナー
 ;@Person:キャッシュディスペンサ
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -387,7 +387,7 @@ MSG_FOUR_DEPT_HUMBURGER;フォーサイドデパートのハンバーガーシ�
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-;@Habitat:フォーサイド／デパート／１階.返品コーナー
+;@Habitat:フォーサイド/デパート/1階.返品コーナー
 ;@Person:公衆電話
 ;@Figure:電話ボックス
 ;@AppearanceKey:0
@@ -396,7 +396,7 @@ MSG_FOUR_DEPT_HUMBURGER;フォーサイドデパートのハンバーガーシ�
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-;@Habitat:フォーサイド／デパート／１階.返品コーナー
+;@Habitat:フォーサイド/デパート/1階.返品コーナー
 ;@Person:返品係
 ;@Figure:OLF
 ;@AppearanceKey:0
@@ -408,7 +408,7 @@ MSG_FOUR_DEPT_HENPIN;@MiuraAppended
 @GOSUB(MSG_DP_HENPIN)
 』
 
-;@Habitat:フォーサイド／デパート／１階.返品コーナー
+;@Habitat:フォーサイド/デパート/1階.返品コーナー
 ;@Person:チケット係
 ;@Figure:OLF
 ;@AppearanceKey:0
@@ -437,12 +437,12 @@ _FOUR_DEPART_TICKETPIA_NO;
 _FOUR_DEPART_TICKETPIA_YES;
 ◆Orchestra seats and balcony seats are sold out.@KEY()↓
 ◆Now, there’s ”standing room only” left.@KEY()↓
-◆It’s ＄３０ per person.@KEY()↓
+◆It’s $30 per person.@KEY()↓
 ◆Is that okay with you?↓
 ;DAN:I said standing seat, I mean standing and no seat.
 
 ;jpn:◆Sせき ABせきは うりきれで↓
-;jpn: ３０ドルの たちみせきしか↓
+;jpn: 30ドルの たちみせきしか↓
 ;jpn: のこっていません。@KEY()↓
 ;jpn:◆よろしいですか?↓
 @WINR_MONEY()
@@ -474,11 +474,11 @@ _FOUR_DEPART_TICKETPIA_BUY;
 』
 
 _FOUR_DEPART_TICKETPIA_NOMONEY;
-◆I’ve never heard of anyone who doesn’t even have ＄３０!@KEY()↓
+◆I’ve never heard of anyone who doesn’t even have $30!@KEY()↓
 ◆Ho ho ho ho ho ho ho ho ho.@KEY()↓
 ◆Oh, excuse me for my laughing in your face.
 @KEYNP()
-;jpn:◆３０ドルも↓
+;jpn:◆30ドルも↓
 ;jpn: もってないひとなんて↓
 ;jpn: いまどき ほんとにいるのね!@KEY()↓
 ;jpn:◆ホーホほホホホほほーホホほホホホ↓
@@ -496,7 +496,7 @@ _FOUR_DEPART_TICKETPIA_ITEMFULL;
 』
 
 
-;@Habitat:フォーサイド／デパート／２階.ドラッグストア
+;@Habitat:フォーサイド/デパート/2階.ドラッグストア
 ;@Person:店員A
 ;@Figure:OLF
 ;@AppearanceKey:0
@@ -508,7 +508,7 @@ MSG_FOUR_DEPT_DRUG1;
 @GOSUB(MSG_SHOP_FOUR_DRUG1)
 』
 
-;@Habitat:フォーサイド／デパート／２階.ドラッグストア
+;@Habitat:フォーサイド/デパート/2階.ドラッグストア
 ;@Person:店員B
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
@@ -520,7 +520,7 @@ MSG_FOUR_DEPT_DRUG2;
 @GOSUB(MSG_SHOP_FOUR_DRUG2)
 』
 
-;@Habitat:フォーサイド／デパート／２階.ドラッグストア
+;@Habitat:フォーサイド/デパート/2階.ドラッグストア
 ;@Person:客A
 ;@Figure:用心棒
 ;@AppearanceKey:0
@@ -547,7 +547,7 @@ _FOUR_DEPT_A_TMP;
 ;jpn: しゃがんでましたよ。@KEYNP()
 』
 
-;@Habitat:フォーサイド／デパート／２階.食料品店
+;@Habitat:フォーサイド/デパート/2階.食料品店
 ;@Person:食料店員
 ;@Figure:ウェートレスB
 ;@AppearanceKey:0
@@ -559,7 +559,7 @@ MSG_FOUR_DEPT_FOOD;@MiuraAppended
 @GOSUB(MSG_SHOP_FOUR_FOOD)
 』
 
-;@Habitat:フォーサイド／デパート／３階.食料品売り場
+;@Habitat:フォーサイド/デパート/3階.食料品売り場
 ;@Person:ふりかけ店員
 ;@Figure:ウェートレスB
 ;@AppearanceKey:0
@@ -571,7 +571,7 @@ MSG_FOUR_DEPT_FURIKAKE;@MiuraAppended
 @GOSUB(MSG_SHOP_FOUR_FURIKAKE)
 』
 
-;@Habitat:フォーサイド／デパート／３階.食料品売り場
+;@Habitat:フォーサイド/デパート/3階.食料品売り場
 ;@Person:客B
 ;@Figure:おばさんA
 ;@AppearanceKey:0
@@ -601,7 +601,7 @@ _FOUR_DEPT_B_TMP;
 』
 
 
-;@Habitat:フォーサイド／デパート／４階.ゲームセンター
+;@Habitat:フォーサイド/デパート/4階.ゲームセンター
 ;@Person:客C
 ;@Figure:少女D
 ;@AppearanceKey:0
@@ -625,7 +625,7 @@ _FOUR_DEPT_C_TMP;
 ;jpn: ドタバタさわがしかったけど‥‥@KEY()↓
 ;jpn:◆けんかでも あったのかしら?@KEYNP()
 』
-;@Habitat:フォーサイド／デパート／４階.ゲームセンター
+;@Habitat:フォーサイド/デパート/4階.ゲームセンター
 ;@Person:客D
 ;@Figure:ヘルメット
 ;@AppearanceKey:0
@@ -668,7 +668,7 @@ _FOUR_DEPT_D_TMP;
 ;jpn: コインを そんしちゃったよ。@KEYNP()
 』
 
-;@Habitat:フォーサイド／デパート／４階.ゲームセンター
+;@Habitat:フォーサイド/デパート/4階.ゲームセンター
 ;@Person:客E
 ;@Figure:マスク
 ;@AppearanceKey:0
@@ -691,7 +691,7 @@ _FOUR_DEPT_E_TMP;
 ;jpn: ぶっそうだよな。@KEYNP()
 』
 
-;@Habitat:フォーサイド／デパート／４階.事務室
+;@Habitat:フォーサイド/デパート/4階.事務室
 ;@Person:暗闇デパートのモンスター
 ;@Figure:HH教信者
 ;@AppearanceKey:FLG_FOUR_DEPT_BOSS_APPEAR/on
@@ -744,7 +744,7 @@ MSG_FOUR_DEPT_BOSS;
 』
 
 ;----------------------------------------
-;@Habitat:フォーサイド／フィールド／街の至る所
+;@Habitat:フォーサイド/フィールド/街の至る所
 ;@Person:街の人A
 ;@Figure:おじさんA
 ;@AppearanceKey:0
@@ -766,13 +766,13 @@ MSG_FOUR_A;
 ;jpn: わたしは よかったと おもうよ。@KEYNP()
 』
 
-_FOUR_A_LATER;＃
+_FOUR_A_LATER;#
 ◆That Mr. Monotoli has lost quite a bit of his resources...
 @KEYNP()
 ;jpn:◆あの モノトリーさんは↓
 ;jpn: すっかり おちぶれたらしいねぇ。@KEYNP()
 』
-_FOUR_A_END;＆
+_FOUR_A_END;&
 ◆In the future, you will build cities and even create a country...@KEY()↓
 ◆...I’m counting on you.
 @KEYNP()
@@ -783,7 +783,7 @@ _FOUR_A_END;＆
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
+;@Habitat:フォーサイド/フィールド/街の至る所
 ;@Person:街の人B
 ;@Figure:OLA
 ;@AppearanceKey:0
@@ -806,14 +806,14 @@ MSG_FOUR_B;
 ;jpn: ゆずりうけたとか‥‥ね。@KEYNP()
 』
 
-_FOUR_B_LATER;＃
+_FOUR_B_LATER;#
 ◆Just as I thought, Monotoli has a portion of Evil’s power.
 @KEYNP()
 ;jpn:◆やっぱりモノトリーって↓
 ;jpn: あくまに ちからを↓
 ;jpn: かりてたらしいわねぇ。@KEYNP()
 』
-_FOUR_B_END;＆
+_FOUR_B_END;&
 ◆My grandpa told me that everyone has at least one outstanding skill.@KEY()↓
 ◆When I look at you, I know he’s right.
 @KEYNP()
@@ -825,7 +825,7 @@ _FOUR_B_END;＆
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
+;@Habitat:フォーサイド/フィールド/街の至る所
 ;@Person:街の人C
 ;@Figure:トランペッター
 ;@AppearanceKey:0
@@ -863,7 +863,7 @@ _FOUR_C_LATER;
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
+;@Habitat:フォーサイド/フィールド/街の至る所
 ;@Person:街の人D
 ;@Figure:サラリーマンC
 ;@AppearanceKey:0
@@ -893,7 +893,7 @@ _FOUR_D_LATER;
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
+;@Habitat:フォーサイド/フィールド/街の至る所
 ;@Person:街の人E
 ;@Figure:Tシャツ
 ;@AppearanceKey:0
@@ -924,7 +924,7 @@ _FOUR_E_LATER;
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
+;@Habitat:フォーサイド/フィールド/街の至る所
 ;@Person:街の人F
 ;@Figure:ツッパリ
 ;@AppearanceKey:0
@@ -949,7 +949,7 @@ MSG_FOUR_F;
 ;jpn: こそこそと さ。@KEYNP()
 』
 
-_FOUR_F_LATER;＃
+_FOUR_F_LATER;#
 ◆Jackie’s Cafe was where the deal with the evil entity took place.@KEY()↓
 ◆I can’t believe it...can you?
 @KEYNP()
@@ -957,7 +957,7 @@ _FOUR_F_LATER;＃
 ;jpn: あくまとの とりひきばしょだった↓
 ;jpn: なんて‥‥ねぇ。@KEYNP()
 』
-_FOUR_F_END;＆
+_FOUR_F_END;&
 ◆You boys are young, but you did a great job here and out there.
 @KEYNP()
 ;jpn:◆きみたち ちっちゃいけど↓
@@ -966,7 +966,7 @@ _FOUR_F_END;＆
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
+;@Habitat:フォーサイド/フィールド/街の至る所
 ;@Person:街の人G(酔っ払い)
 ;@Figure:おじさんB
 ;@AppearanceKey:0
@@ -1020,8 +1020,8 @@ _FOUR_G_LATER;
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
-;@Person:警官１
+;@Habitat:フォーサイド/フィールド/街の至る所
+;@Person:警官1
 ;@Figure:警官
 ;@AppearanceKey:0
 ;@ActionScript:◆尾行
@@ -1045,7 +1045,7 @@ MSG_FOUR_COP_1;
 ;jpn: ここは そういうまちさ。へっへ。@KEYNP()
 』
 
-_FOUR_COP_1_LATER;＃
+_FOUR_COP_1_LATER;#
 ◆It was stupid of me to let Monotoli do whatever he wanted.@KEY()↓
 ◆We’ll do our best to create a safe environment in which people can live safely.
 @KEYNP()
@@ -1056,7 +1056,7 @@ _FOUR_COP_1_LATER;＃
 ;jpn: あんぜんに いきられるように↓
 ;jpn: おれたちは がんばるよ。@KEYNP()
 』
-_FOUR_COP_1_END;＆
+_FOUR_COP_1_END;&
 ◆You’re getting in better shape every time I see you.@KEY()↓
 ◆Don’t you wanna be a police officer?
 @KEYNP()
@@ -1066,8 +1066,8 @@ _FOUR_COP_1_END;＆
 』
 
 
-;@Habitat:フォーサイド／フィールド／街の至る所
-;@Person:警官２
+;@Habitat:フォーサイド/フィールド/街の至る所
+;@Person:警官2
 ;@Figure:警官
 ;@AppearanceKey:0
 ;@ActionScript:◆正面向いてそのまま
@@ -1096,7 +1096,7 @@ MSG_FOUR_COP_2;
 ;jpn: とっくに しらべてあるさ。@KEYNP()
 』
 
-_FOUR_COP_2_LATER;＃
+_FOUR_COP_2_LATER;#
 ◆Oh, that rude comment was a slip of the tongue.@KEY()↓
 ◆Now I feel like Monotoli should eat my shorts.@KEY()↓
 ;jpn:◆おっと いつぞやは↓
@@ -1110,7 +1110,7 @@ _FOUR_COP_2_LATER;＃
 ◆@DSP_NAME(0), @XCHG()@GOSUB(MSG_ESUB_SIR_MAAM).
 @KEYNP()
 』
-_FOUR_COP_2_END;＆
+_FOUR_COP_2_END;&
 ◆I misjudged you guys.@KEY()↓
 ◆I thought you were little snot−nosed punks.@KEY()↓
 ◆...I know better now.
@@ -1122,7 +1122,7 @@ _FOUR_COP_2_END;＆
 ;jpn: ‥‥みなおしましたです。@KEYNP()
 』
 
-;@Habitat:フォーサイド／フィールド／モノトリービル付近
+;@Habitat:フォーサイド/フィールド/モノトリービル付近
 ;@Person:おつかいのメイド
 ;@Figure:ウェートレスB
 ;@AppearanceKey:FLG_FOUR_MAID_APPEAR/on
@@ -1157,7 +1157,7 @@ _FOUR_MAID_THANKS;
 ◆(Before you could answer, she took the ”@DSP_GOODS(GDS_TOOL_ICHIGO_TOFU).”)@KEY()↓
 ◆Now I can make Trout−flavored yogurt for my guests.@KEY()↓
 ◆...You are so kind, I’ll make some for you.@KEY()↓
-◆My room’s on the ４８th floor.@KEY()↓
+◆My room’s on the 48th floor.@KEY()↓
 ◆Don’t forget to drop by!
 @KEYNP()
 ;jpn:◆(「ぐるめとうふマシン」を↓;←(仮)追加 
@@ -1167,7 +1167,7 @@ _FOUR_MAID_THANKS;
 ;jpn: つくってさしあげられるわ!@KEY()↓
 ;jpn:◆‥‥なんてしんせつなひと↓
 ;jpn: あなたにも ごちそうするわね。@KEY()↓
-;jpn:◆わたしのへやは ４８かいよ。↓
+;jpn:◆わたしのへやは 48かいよ。↓
 ;jpn: きっと きてね!@KEY()↓
 @CLOSEALL()
 @GOODSOUT( PC_ALL, GDS_TOOL_ICHIGO_TOFU )
@@ -1180,10 +1180,10 @@ _FOUR_MAID_THANKS;
 @SET_CHAR_DIR( PRSN_FRSD_FIELD_J, 0 )
 @WI( 20 )
 @OPEN( 1 )
-◆My room’s on the ４８th floor.@KEY()↓
+◆My room’s on the 48th floor.@KEY()↓
 ◆Don’t forget to drop by!
 @KEYNP()
-;jpn:◆わたしのへやは ４８かいよ。↓
+;jpn:◆わたしのへやは 48かいよ。↓
 ;jpn: きっと きてね!@KEY()↓
 @CLOSEALL()
 @FRESH_CHAR( PRSN_FRSD_FIELD_J )
@@ -1214,12 +1214,12 @@ _FOUR_MAID_THANKS;
 ;@SETF(FLG_FOUR_MAID_THANKS)
 ;
 ;_FOUR_MAID_THANKS_2;
-;◆わたしのへやは ４８かいよ。↓
+;◆わたしのへやは 48かいよ。↓
 ; きっと きてね!@KEYNP()
 ;@CLRF(FLG_FOUR_MAID_APPEAR)
 ;』
 
-;@Habitat:フォーサイド／フィールド／ボルヘス酒場付近
+;@Habitat:フォーサイド/フィールド/ボルヘス酒場付近
 ;@Person:やられトンチキ
 ;@Figure:倒れているトンチキ
 ;@AppearanceKey:FLG_FOUR_TONCHIKI_APPEAR/on
@@ -1231,7 +1231,7 @@ MSG_FOUR_TONCHIKI;
 ;@SET_LOOPREG(PC_NESS)
 ;@TRUE_GOTO(_FOUR_TONCHIKI_NESS_DEAD)
 ◆...@KEY()↓
-◆＊Wheeze, wheeze＊...@KEY()↓
+◆*Wheeze, wheeze*...@KEY()↓
 ◆... ...@KEY()↓
 ◆Aren’t you @DSP_NAME(PC_NESS)...?@KEY()↓
 ◆...I can’t see too well...@KEY()↓
@@ -1242,11 +1242,11 @@ MSG_FOUR_TONCHIKI;
 ◆You must remember.@KEY()↓
 ◆I’m the best thief around.@KEY()↓
 ◆That... Carpainter in Happy Happy Village was hiding something...@KEY()↓
-◆＊wheeze, wheeze＊... strange.@KEY()↓
+◆*wheeze, wheeze*... strange.@KEY()↓
 ◆I stole it, and thought about selling it in the big city...@KEY()↓
 ◆An old, city−wise man called it Mani Mani.@KEY()↓
 ◆It’s a strange−colored, doll−looking thing.@KEY()↓
-◆...Ohh... ＊wheeze＊, I’m in pain.@KEY()↓
+◆...Ohh... *wheeze*, I’m in pain.@KEY()↓
 ◆...and@KEY()↓
 ◆...@KEY()↓
 ◆Monotoli tricked me and stole it... from me!@KEY()↓
@@ -1256,7 +1256,7 @@ MSG_FOUR_TONCHIKI;
 ◆...Listen!@KEY()↓
 ◆I’ll tell you only once.@KEY()↓
 ◆At the cafe, check... behind... the counter...@KEY()↓
-◆...＊Gasp＊...@KEY()↓
+◆...*Gasp*...@KEY()↓
 ;jpn:◆‥‥‥@KEY()↓
 ;jpn:◆ゼイ ゼイ@KEY()↓
 ;jpn:◆‥‥‥‥‥‥‥‥‥@DSP_STS(STS_PC_NAME_NES)↓
@@ -1302,7 +1302,7 @@ MSG_FOUR_TONCHIKI;
 @SETF(FLG_TEMP_8)
 ◆I said I’d tell you only once...@KEY()↓
 ◆But if you insist, I’ll tell you once more...@KEY()↓
-◆...＊gasp, gasp＊@KEY()↓
+◆...*gasp, gasp*@KEY()↓
 ◆Do do do you wanna hear it again?↓
 <Yes>
 <No>
@@ -1344,7 +1344,7 @@ _FOUR_TONCHIKI_YES2;
 ;jpn:◆ほんとに しにそうなんだ。@KEY()↓
 
 _FOUR_TONCHIKI_NO;
-◆...Before I go, here’s my last haiku poem：@KEY()↓
+◆...Before I go, here’s my last haiku poem:@KEY()↓
 ◆When on your way out@KEY()↓
 ◆Be sure that you say goodbye@KEY()↓
 ◆then lock the door tight.@KEY()↓
@@ -1374,7 +1374,7 @@ _FOUR_TONCHIKI_NO;
 ;@KEYNP()
 ;@!
 
-;@Habitat:フォーサイド／フィールド／ボルヘス酒場付近
+;@Habitat:フォーサイド/フィールド/ボルヘス酒場付近
 ;@Person:人集りA
 ;@Figure:アーティスト
 ;@AppearanceKey:FLG_FOUR_TONCHIKI_APPEAR/on
@@ -1399,7 +1399,7 @@ _FOUR_CROWD_A_TMP;
 ;jpn:◆‥‥でも しにそうだったな。@KEYNP()
 』
 
-;@Habitat:フォーサイド／フィールド／ボルヘス酒場付近
+;@Habitat:フォーサイド/フィールド/ボルヘス酒場付近
 ;@Person:人集りB
 ;@Figure:OLG
 ;@AppearanceKey:FLG_FOUR_TONCHIKI_APPEAR/on
@@ -1421,7 +1421,7 @@ _FOUR_CROWD_B_TMP;
 ;jpn: いけばいいのにねぇ。@KEYNP()
 』
 
-;@Habitat:フォーサイド／フィールド／ボルヘス酒場付近
+;@Habitat:フォーサイド/フィールド/ボルヘス酒場付近
 ;@Person:人集りC
 ;@Figure:ゴロツキ
 ;@AppearanceKey:FLG_FOUR_TONCHIKI_APPEAR/on
@@ -1450,7 +1450,7 @@ _FOUR_CROWD_C_TMP;
 ;jpn: いくのかい?@KEYNP()
 』
 
-;@Habitat:フォーサイド／フィールド／ボルヘス酒場付近
+;@Habitat:フォーサイド/フィールド/ボルヘス酒場付近
 ;@Person:人集りD(道を塞ぐ)
 ;@Figure:ボロ
 ;@AppearanceKey:FLG_FOUR_TONCHIKI_APPEAR/on
@@ -1546,7 +1546,7 @@ _FOUR_CROWD_D_TMP;
 ;jpn: よかったな。@KEYNP()
 』
 
-;@Habitat:フォーサイド／フィールド／ボルヘス酒場付近
+;@Habitat:フォーサイド/フィールド/ボルヘス酒場付近
 ;@Person:人集りE
 ;@Figure:おばさんA
 ;@AppearanceKey:FLG_FOUR_TONCHIKI_APPEAR/on
@@ -1571,7 +1571,7 @@ _FOUR_CROWD_E_TMP;
 ;jpn: しんじゃうのかしらね。@KEYNP()
 』
 
-;@Habitat:フォーサイド／フィールド／ボルヘス酒場付近
+;@Habitat:フォーサイド/フィールド/ボルヘス酒場付近
 ;@Person:人集りF
 ;@Figure:おばさんB
 ;@AppearanceKey:FLG_FOUR_TONCHIKI_APPEAR/on
@@ -1600,7 +1600,7 @@ _FOUR_CROWD_F_TMP;
 ;』
 
 
-;@Habitat:フォーサイド／フィールド／
+;@Habitat:フォーサイド/フィールド/
 ;@Person:武器専門男
 ;@Figure:武器男
 ;@AppearanceKey:0
@@ -1612,7 +1612,7 @@ MSG_FOUR_WEAPON;@MiuraAppended
 @GOSUB(MSG_SHOP_FOUR_WEAPON)
 』
 
-;@Habitat:フォーサイド／フィールド／
+;@Habitat:フォーサイド/フィールド/
 ;@Person:ジャンク屋
 ;@Figure:パンク青年
 ;@AppearanceKey:0
@@ -1629,7 +1629,7 @@ MSG_FOUR_JUNK;@MiuraAppended
 
 ;--------------------------------------------------
 
-;@Habitat:フォーサイド／マグネットヒル／7下水道
+;@Habitat:フォーサイド/マグネットヒル/7下水道
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_MGNT_BOSS/off
@@ -1647,7 +1647,7 @@ MSG_FOUR_MGNT_BOSS;
 ◆This is the fifth ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは ５ばんめの↓
+;jpn:◆ここは 5ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓
@@ -1684,7 +1684,7 @@ MSG_FOUR_INFORMER_A;
 ;jpn: ニッポンへ いって@KEY()↓
 ;jpn:◆トーキョーの「かつまん」の↓
 ;jpn: ヒレカツていしょくを↓
-;jpn: ３かいくらい くっちゃうね。@KEYNP()
+;jpn: 3かいくらい くっちゃうね。@KEYNP()
 』
 _FOUR_INFORMER_A_LATER;
 ◆I heard they couldn’t find the buried gold.@KEY()↓
@@ -1765,7 +1765,7 @@ _FOUR_BRGS_WARE_RAT_LATER;
 』
 ;-------------------------------------------------
 
-MSG_FOUR_MONOTOLY_END;＆最終戦闘後のモノトリー(エレベーターボーイ)
+MSG_FOUR_MONOTOLY_END;&最終戦闘後のモノトリー(エレベーターボーイ)
 ◆Oh, @DSP_STS(STS_PC_NAME_NES)@KEY()↓
 
 ;jpn:◆おお @DSP_STS(STS_PC_NAME_NES)くん@KEY()↓
@@ -1803,7 +1803,7 @@ _FOUR_MONOTOLY_END_MAIN;
 
 ;-------------------------------------------------
 
-MSG_FOUR_BORGES_AMBRAMI;＆ポーキーの父アンブラミ
+MSG_FOUR_BORGES_AMBRAMI;&ポーキーの父アンブラミ
 ◆Wheeee!@KEY()↓
 ◆Hic!@KEY()↓
 ◆@DSP_NAME(PC_NESS).@KEY()↓
@@ -1831,7 +1831,7 @@ MSG_FOUR_BORGES_AMBRAMI;＆ポーキーの父アンブラミ
 
 ;トポロ劇場受付の客
 ;ステージ後に現れ消える?
-MSG_FOUR_THEATER_VISITOR_A;＄
+MSG_FOUR_THEATER_VISITOR_A;$
 ◆I heard Venus made an appearance at the Runaway Five show.@KEY()↓
 ◆I missed her ’cause I went to the bathroom.@KEY()↓
 ◆I’ll hate bathrooms for the rest of my life.
@@ -1844,7 +1844,7 @@ MSG_FOUR_THEATER_VISITOR_A;＄
 ;jpn:◆‥‥トイレを うらむぜ。@KEYNP()
 』
 
-MSG_FOUR_THEATER_VISITOR_B;＄
+MSG_FOUR_THEATER_VISITOR_B;$
 ◆Oh, I can’t see the Runaway Five here anymore...?@KEY()↓
 ◆I should dump this sorry excuse of a man and become a Runaway Five groupie.
 @KEYNP()
@@ -1857,7 +1857,7 @@ MSG_FOUR_THEATER_VISITOR_B;＄
 』
 ;-------------------------------------------------
 
-MSG_FOUR_FIELD_KOZIKI;＄
+MSG_FOUR_FIELD_KOZIKI;$
 ◆I’m very punctual about time and careful with money.@KEY()↓
 ◆I don’t look like it, though.
 @KEYNP()

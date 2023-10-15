@@ -111,7 +111,7 @@ MSG_BTL_HAEMITU_KUU;
 ;ホームシック時にバトルで表示されるメッセージの変更
 
 MSG_BTL_HOME_STAT;
-;以下の_A～_Dのうち、どれかをランダムに表示するようにして下さい。
+;以下の_A~_Dのうち、どれかをランダムに表示するようにして下さい。
 @RAND(3)
 @ONGOTO(MSG_BTL_HOME_STAT_B,MSG_BTL_HOME_STAT_C,MSG_BTL_HOME_STAT_D)
 MSG_BTL_HOME_STAT_A;
@@ -223,7 +223,7 @@ MSG_BTL_TONZURA_BREAK_IN_OK;
 @FKEY()
 @CLS()
 ◆”That was quick thinking!”
-；jpn:◆おまえ あたまいいな。
+;jpn:◆おまえ あたまいいな。
 @FKEY()
 @WI(60)
 ;@MESSAGE_SOUND(1)

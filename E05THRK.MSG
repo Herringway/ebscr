@@ -1,6 +1,6 @@
 ;-----------------------------------------------------
 
-;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Habitat:スリーク/対策本部のテント/対策本部のテント
 ;@Person:避難民D
 ;@Figure:OLC
 ;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
@@ -9,7 +9,7 @@
 ;@CheckMessage:0
 ;@Message:MSG_THRK_TENT_1
 MSG_THRK_TENT_1;
-;テントのなかの人１
+;テントのなかの人1
 @CHKFGOTO(FLG_TLPT_FOUR,_THRK_TENT_1_END)
 @CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_1_LATER)
 @CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_1_HOIHOI)
@@ -31,7 +31,7 @@ _THRK_TENT_1_HOI;
 _THRK_TENT_1_HOIHOI;
 ;ゾンビホイホイをセットした直後のセリフ
 ◆Just imagine...when we wake up tomorrow morning...@KEY()↓
-◆Ugh! ＊shiver＊ It’ll be really gross.
+◆Ugh! *shiver* It’ll be really gross.
 ;DAN:"BuruBuru" is sound of shivering.
 ;jpn:◆これでひとばんたてば‥‥@WI(20)↓
 ;jpn: ああ きもちわるっ‥‥ブルブル。
@@ -39,18 +39,18 @@ _THRK_TENT_1_HOIHOI;
 』
 MSG_THRK_TENT_1_CAPTURED;
 ;ゾンビホイホイ作戦が成功した後
-◆Yuck!@WI(15)  We caught a lot zombies!@WI(20)  Ugh! ＊shiver＊ It’s really gross.
+◆Yuck!@WI(15)  We caught a lot zombies!@WI(20)  Ugh! *shiver* It’s really gross.
 ;jpn:◆ゾンビを いっぱいつかまえたわ!@WI(20)↓
 ;jpn: ああ きもちわるっ‥‥ブルブル。
 @KEYNP()
 』
-_THRK_TENT_1_LATER;＃
+_THRK_TENT_1_LATER;#
 ◆The monsters are no longer in the tunnel!
 ;jpn:◆トンネルのモンスターも↓
 ;jpn: いなくなったのね!
 @KEYNP()
 』
-_THRK_TENT_1_END;＆
+_THRK_TENT_1_END;&
 ◆Since the tunnel was cleared,@WI(15) many cars have started driving through it.@KEY()↓
 ◆It’s incredibly noisy.
 ;jpn:◆トンネルが とおれるようになって↓
@@ -59,7 +59,7 @@ _THRK_TENT_1_END;＆
 @KEYNP()
 』
 
-;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Habitat:スリーク/対策本部のテント/対策本部のテント
 ;@Person:避難民B
 ;@Figure:サラリーマンD
 ;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
@@ -68,7 +68,7 @@ _THRK_TENT_1_END;＆
 ;@CheckMessage:0
 ;@Message:MSG_THRK_TENT_2
 MSG_THRK_TENT_2;
-;テントのなかの人２
+;テントのなかの人2
 @CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_2_LATER)
 @CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_2_HOIHOI)
 @CHKFGOTO(FLG_ITEM_HOIHOI,_THRK_TENT_2_HOI)
@@ -119,7 +119,7 @@ _THRK_TENT_2_LATER;
 』
 
 
-;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Habitat:スリーク/対策本部のテント/対策本部のテント
 ;@Person:避難民C
 ;@Figure:OLA
 ;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
@@ -128,7 +128,7 @@ _THRK_TENT_2_LATER;
 ;@CheckMessage:0
 ;@Message:MSG_THRK_TENT_3
 MSG_THRK_TENT_3;
-;テントのなかの人３
+;テントのなかの人3
 @CHKFGOTO(FLG_TLPT_FOUR,_THRK_TENT_3_END)
 @CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_3_LATER)
 @CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_3_HOIHOI)
@@ -162,13 +162,13 @@ MSG_THRK_TENT_3_CAPTURED;
 ;jpn:◆なんだか ゾンビもかわいそうね。
 @KEYNP()
 』
-_THRK_TENT_3_LATER;＃
+_THRK_TENT_3_LATER;#
 ◆Now you can go through the tunnel anytime you want!
 ;jpn:◆もう トンネルも↓
 ;jpn: とおりほうだいね!
 @KEYNP()
 』
-_THRK_TENT_3_END;＆
+_THRK_TENT_3_END;&
 ◆Actually, I’m kind of glad I got to see real zombies.
 ;jpn:◆‥‥でも@WI(20) ほんもののゾンビを↓
 ;jpn: みたりできたなんて↓
@@ -176,7 +176,7 @@ _THRK_TENT_3_END;＆
 @KEYNP()
 』
 
-;@Habitat:スリーク／対策本部のテント／対策本部のテント
+;@Habitat:スリーク/対策本部のテント/対策本部のテント
 ;@Person:避難民A
 ;@Figure:おじさんD
 ;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
@@ -185,7 +185,7 @@ _THRK_TENT_3_END;＆
 ;@CheckMessage:0
 ;@Message:MSG_THRK_TENT_4
 MSG_THRK_TENT_4;
-;テントのなかの人４
+;テントのなかの人4
 @CHKFGOTO(FLG_TLPT_FOUR,_THRK_TENT_4_END)
 @CHKFGOTO(FLG_WIN_GEPPU,_THRK_TENT_4_LATER)
 @CHKFGOTO(FLG_PUT_ZOMBI_HOIHOI,_THRK_TENT_4_HOIHOI)
@@ -232,7 +232,7 @@ MSG_THRK_TENT_4_CAPTURED;
 ;jpn:◆おもいしったか ゾンビどもめ!
 @KEYNP()
 』
-_THRK_TENT_4_LATER;＃
+_THRK_TENT_4_LATER;#
 ;◆Seems like the monsters in the tunnel disappeared.
 ;◆トンネルの ばけものも↓
 ; きえたらしいな。
@@ -269,7 +269,7 @@ _THRK_TENT_4_LATER_NO
 @KEYNP()
 』
 
-_THRK_TENT_4_END;＆
+_THRK_TENT_4_END;&
 ◆I didn’t like fighting the zombies,@WI(15) but those days were never dull!
 ;jpn:◆ゾンビと たたかってたときって↓
 ;jpn: いやだったけど↓
@@ -280,7 +280,7 @@ _THRK_TENT_4_END;＆
 
 ;----------------------------------------
 
-;@Habitat:スリーク／地下牢／地下牢
+;@Habitat:スリーク/地下牢/地下牢
 ;@Person:SkyWalker見送り人A
 ;@Figure:おじさんD
 ;@AppearanceKey:FLG_THRK_FIXED_SKYW_APPEAR/on
@@ -300,7 +300,7 @@ MSG_THRK_SENDOFF_A;
 』
 
 
-;@Habitat:スリーク／地下牢／地下牢
+;@Habitat:スリーク/地下牢/地下牢
 ;@Person:SkyWalker見送り人B
 ;@Figure:サラリーマンD
 ;@AppearanceKey:FLG_THRK_FIXED_SKYW_APPEAR/on
@@ -323,7 +323,7 @@ MSG_THRK_SENDOFF_B;
 』
 
 
-;@Habitat:スリーク／地下牢／地下牢
+;@Habitat:スリーク/地下牢/地下牢
 ;@Person:修理済みSkyWalker
 ;@Figure:スカイウォーカー
 ;@AppearanceKey:FLG_THRK_FIXED_SKYW_APPEAR/on
@@ -334,7 +334,7 @@ MSG_THRK_SENDOFF_B;
 
 ;----------------------------------------
 
-;@Habitat:スリーク／ホテル／フロント
+;@Habitat:スリーク/ホテル/フロント
 ;@Person:ホテルマン
 ;@Figure:ホテルボーイ
 ;@AppearanceKey:0
@@ -352,7 +352,7 @@ MSG_THRK_HOTELMAN;@MaltaAppended
 』
 
 
-;@Habitat:スリーク／ホテル／フロント
+;@Habitat:スリーク/ホテル/フロント
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
@@ -361,7 +361,7 @@ MSG_THRK_HOTELMAN;@MaltaAppended
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-;@Habitat:スリーク／ホテル／CDルーム
+;@Habitat:スリーク/ホテル/CDルーム
 ;@Person:キャッシュディスペンサ
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -370,7 +370,7 @@ MSG_THRK_HOTELMAN;@MaltaAppended
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-;@Habitat:スリーク／ホテル／部屋２
+;@Habitat:スリーク/ホテル/部屋2
 ;@Person:ホテル客
 ;@Figure:サラリーマンA
 ;@AppearanceKey:0
@@ -399,7 +399,7 @@ _THRK_HOTEL_A_LATER;
 』
 
 ;----------------------------------------
-;@Habitat:スリーク／病院／受付
+;@Habitat:スリーク/病院/受付
 ;@Person:受付係
 ;@Figure:看護婦
 ;@AppearanceKey:0
@@ -415,7 +415,7 @@ MSG_THRK_HOSPITAL_USHER;@MaltaAppended
 』
 
 
-;@Habitat:スリーク／病院／受付
+;@Habitat:スリーク/病院/受付
 ;@Person:ケガ人(おじさん)
 ;@Figure:おじさんB
 ;@AppearanceKey:0
@@ -444,7 +444,7 @@ _THRK_HOSP_A_LATER;
 』
 
 
-;@Habitat:スリーク／病院／部屋２
+;@Habitat:スリーク/病院/部屋2
 ;@Person:ケガ人
 ;@Figure:マスク
 ;@AppearanceKey:0
@@ -476,7 +476,7 @@ _THRK_HOSP_B_LATER;
 』
 
 
-;@Habitat:スリーク／病院／診察室
+;@Habitat:スリーク/病院/診察室
 ;@Person:医者
 ;@Figure:医者
 ;@AppearanceKey:0
@@ -493,7 +493,7 @@ MSG_THRK_HOSPITAL_DOCTOR;@MaltaAppended
 
 ;----------------------------------------
 
-;@Habitat:スリーク／ドラッグストア／ドラッグストア
+;@Habitat:スリーク/ドラッグストア/ドラッグストア
 ;@Person:ドラッグストア店員
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
@@ -507,7 +507,7 @@ MSG_THRK_DRUG1;@MaltaAppeded
 @GOSUB(MSG_SHOP_THRK_DRUG1)
 』
 
-;@Habitat:スリーク／ドラッグストア／ドラッグストア
+;@Habitat:スリーク/ドラッグストア/ドラッグストア
 ;@Person:ドラッグストア店員
 ;@Figure:おじいさん
 ;@AppearanceKey:0
@@ -523,7 +523,7 @@ MSG_THRK_DRUG2;@MaltaAppeded
 
 ;----------------------------------------
 
-;@Habitat:スリーク／マッハピザ／マッハピザ
+;@Habitat:スリーク/マッハピザ/マッハピザ
 ;@Person:ピザ屋店員
 ;@Figure:ウェートレスA
 ;@AppearanceKey:0
@@ -534,7 +534,7 @@ MSG_THRK_DRUG2;@MaltaAppeded
 
 ;----------------------------------------
 
-;@Habitat:スリーク／ベーカリー／ベーカリー
+;@Habitat:スリーク/ベーカリー/ベーカリー
 ;@Person:ベーカリー店員
 ;@Figure:コック
 ;@AppearanceKey:0
@@ -550,7 +550,7 @@ MSG_THRK_BAKERY_CLERK;@MiuraAppended
 
 ;----------------------------------------
 
-;@Habitat:スリーク／ヒントショップ／ヒントショップ
+;@Habitat:スリーク/ヒントショップ/ヒントショップ
 ;@Person:ヒント屋
 ;@Figure:ヒント屋
 ;@AppearanceKey:0
@@ -558,7 +558,7 @@ MSG_THRK_BAKERY_CLERK;@MiuraAppended
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_THRK_HINTMAN
-;MSG_THRK_HINTMAN;しょっぷ２へ
+;MSG_THRK_HINTMAN;しょっぷ2へ
 ;@GOTO(MSG_HINT);グローバルのヒントメッセージへ
 ;◆Wait a second! Young man.
 ;  I’d like to give you a hint.
@@ -572,7 +572,7 @@ MSG_THRK_BAKERY_CLERK;@MiuraAppended
 
 ;----------------------------------------
 
-;@Habitat:スリーク／フィールド／街に入りたての所
+;@Habitat:スリーク/フィールド/街に入りたての所
 ;@Person:通行人Z
 ;@Figure:マスク
 ;@AppearanceKey:0
@@ -603,7 +603,7 @@ _THRK_Z_LATER;
 』
 
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行人A
 ;@Figure:ジミな男
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -646,7 +646,7 @@ _THRK_A_LATER;
 @KEYNP()
 』
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行人K
 ;@Figure:少年B
 ;@AppearanceKey:0
@@ -679,11 +679,11 @@ _THRK_K_LATER;
 』
 
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行人G
 ;@Figure:少女D
 ;@AppearanceKey:0
-;@ActionScript:◆中範囲うろつき＋逃げ
+;@ActionScript:◆中範囲うろつき+逃げ
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_THRK_G
@@ -706,7 +706,7 @@ _THRK_G_LATER;
 @EQ(PC_PAULA)
 ;@TRUE_GOTO(_THRK_G_PAULA)
 ◆I’m so glad you wiped out the zombies.@WI(15)  Let me give you a kiss.@KEY()↓
-◆＊smooch＊  Tee hee hee...  I’m blushing.
+◆*smooch*  Tee hee hee...  I’m blushing.
 @KEYNP()
 ;jpn:◆ゾンビを やっつけてもらって↓
 ;jpn: ほんとに うれしいわ。@WI(15)↓
@@ -722,7 +722,7 @@ _THRK_G_LATER;
 ;@KEYNP()
 ;@!
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行人M
 ;@Figure:おじさんB
 ;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
@@ -765,7 +765,7 @@ _THRK_M_LATER;
 @KEYNP()
 』
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:墓場情報の人
 ;@Figure:少年A
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -803,7 +803,7 @@ _THRK_GRAVE_LATER;
 』
 
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:魔テント情報の人
 ;@Figure:OLF
 ;@AppearanceKey:FLG_JEFF/on
@@ -842,7 +842,7 @@ _THRK_MATENT_LATER;
 @KEYNP()
 』
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行幼児
 ;@Figure:キャップ
 ;@AppearanceKey:0
@@ -891,7 +891,7 @@ MSG_THRK_FIELD_KID_LATER;どこかの家に入れておく
 』
 
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行ねずみ
 ;@Figure:ねずみ
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -909,7 +909,7 @@ MSG_THRK_FIELD_MOUSE;
 』
 
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行犬
 ;@Figure:チリドッグ
 ;@AppearanceKey:0
@@ -935,7 +935,7 @@ MSG_THRK_FIELD_STRAYDOG;
 ;◆ワン!@KEY()
 ;』
 
-;@Habitat:スリーク／フィールド／街の至る所
+;@Habitat:スリーク/フィールド/街の至る所
 ;@Person:通行老婆
 ;@Figure:おばあさん
 ;@AppearanceKey:0
@@ -963,7 +963,7 @@ _THRK_FIELD_OLDWOMAN_LATER;
 』
 
 
-;@Habitat:スリーク／フィールド／ハイウェイ寄り
+;@Habitat:スリーク/フィールド/ハイウェイ寄り
 ;@Person:ハイウェイ情報の人
 ;@Figure:船長
 ;@AppearanceKey:FLG_WIN_GEPPU/off
@@ -1000,7 +1000,7 @@ _THRK_HIGHWAY_LATER;
 』
 
 
-;@Habitat:スリーク／フィールド／偽テント付近
+;@Habitat:スリーク/フィールド/偽テント付近
 ;@Person:ゾンビ派のバッチー
 ;@Figure:ボロ
 ;@AppearanceKey:FLG_JEFF/on
@@ -1050,7 +1050,7 @@ _THRK_BATCHY_AFTER;
 @KEYNP()
 』
 
-_THRK_BATCHY_LATER;＃
+_THRK_BATCHY_LATER;#
 ;バッチーその後
 ◆I heard that you beat the zombie leader@KEY()↓
 ◆after you got some important info from me.@KEY()↓
@@ -1070,7 +1070,7 @@ _THRK_BATCHY_LATER;＃
 ;jpn:◆ってやんでぇ!@WI(15) ペッ!
 @KEYNP()
 』
-_THRK_BATCHY_END;＆
+_THRK_BATCHY_END;&
 ◆...Since then, I’ve really matured.@KEY()↓
 ◆I am doing well in the health food business.@KEY()↓
 ◆People can get over any illness they might catch.@KEY()↓
@@ -1099,7 +1099,7 @@ _THRK_BATCHY_END_YES;はい
 』
 
 
-;@Habitat:スリーク／フィールド／大通りの南
+;@Habitat:スリーク/フィールド/大通りの南
 ;@Person:ツ-ソンデパ-トの彼女
 ;@Figure:少女C
 ;@AppearanceKey:FLG_WIN_GEPPU/on
@@ -1108,7 +1108,7 @@ _THRK_BATCHY_END_YES;はい
 ;@CheckMessage:0
 ;@Message:MSG_THRK_DEPTD
 MSG_THRK_DEPTD;
-;デパート３階客Dがクリア後のスリークに出現
+;デパート3階客Dがクリア後のスリークに出現
 ◆After the busses started running again,@KEY()↓
 ◆I decided to come see my boyfriend...I really shouldn’t have, though.
 ;jpn:◆バスがうごくようになったので↓
@@ -1118,7 +1118,7 @@ MSG_THRK_DEPTD;
 』
 
 
-;@Habitat:スリーク／フィールド／大通りの南
+;@Habitat:スリーク/フィールド/大通りの南
 ;@Person:デパ-ト彼女の元彼氏
 ;@Figure:ゴロツキ
 ;@AppearanceKey:FLG_WIN_GEPPU/on
@@ -1127,7 +1127,7 @@ MSG_THRK_DEPTD;
 ;@CheckMessage:0
 ;@Message:MSG_THRK_DEPTD_BF
 MSG_THRK_DEPTD_BF;
-;デパート３階客Dの恋人(スリーク)
+;デパート3階客Dの恋人(スリーク)
 ◆Wo!  Dude!@WI(15)  Like,@WI(15) my old girlfriend from Twoson hunted me down, man.@KEY()↓
 ◆I’m totally bummed, ’cause I have another girlfriend here in Threed.
 ;jpn:◆むかしの ノカジョが↓
@@ -1139,7 +1139,7 @@ MSG_THRK_DEPTD_BF;
 』
 
 
-;@Habitat:スリーク／フィールド／大通りの南
+;@Habitat:スリーク/フィールド/大通りの南
 ;@Person:彼氏の新彼女
 ;@Figure:少女A
 ;@AppearanceKey:FLG_WIN_GEPPU/on
@@ -1158,7 +1158,7 @@ MSG_THRK_DEPTD_GF;
 』
 
 
-;@Habitat:スリーク／フィールド／魔テント地点
+;@Habitat:スリーク/フィールド/魔テント地点
 ;@Person:魔テントの左眼
 ;@Figure:魔テント眼
 ;@AppearanceKey:FLG_THRK_MATENT_APPEAR/on
@@ -1167,7 +1167,7 @@ MSG_THRK_DEPTD_GF;
 ;@CheckMessage:0
 ;@Message:0
 
-;@Habitat:スリーク／フィールド／魔テント地点
+;@Habitat:スリーク/フィールド/魔テント地点
 ;@Person:魔テントの右眼
 ;@Figure:魔テント眼
 ;@AppearanceKey:FLG_THRK_MATENT_APPEAR/on
@@ -1176,7 +1176,7 @@ MSG_THRK_DEPTD_GF;
 ;@CheckMessage:0
 ;@Message:0
 
-;@Habitat:スリーク／フィールド／魔テント地点
+;@Habitat:スリーク/フィールド/魔テント地点
 ;@Person:魔テントの牙
 ;@Figure:魔テント牙
 ;@AppearanceKey:FLG_THRK_MATENT_APPEAR/on
@@ -1219,7 +1219,7 @@ _THRK_MATENT_GAO_LOSE;負けた時はフラグを戻す
 @SETF(FLG_THRK_MATENT_APPEAR)
 』
 
-;@Habitat:スリーク／フィールド／地下墓地への細道
+;@Habitat:スリーク/フィールド/地下墓地への細道
 ;@Person:封鎖ゾンビA
 ;@Figure:ゾンビ
 ;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
@@ -1277,7 +1277,7 @@ MSG_THRK_GATEKEEPER_AB;
 』
 
 
-;@Habitat:スリーク／フィールド／地下墓地への細道
+;@Habitat:スリーク/フィールド/地下墓地への細道
 ;@Person:封鎖ゾンビB
 ;@Figure:ゾンビ
 ;@AppearanceKey:FLG_THRK_ZOMBI_CAPTURED/off
@@ -1298,7 +1298,7 @@ MSG_THRK_GATEKEEPER_B;
 』
 
 
-;@Habitat:スリーク／フィールド／中西部
+;@Habitat:スリーク/フィールド/中西部
 ;@Person:武器専門男
 ;@Figure:武器男
 ;@AppearanceKey:0
@@ -1312,7 +1312,7 @@ MSG_THRK_WEAPON;
 
 ;-------------------------------------------------
 
-;@Habitat:スリーク／フィールド／ホテル付近
+;@Habitat:スリーク/フィールド/ホテル付近
 ;@Person:ビキニゾンビ情報の男
 ;@Figure:
 ;@AppearanceKey:FLG_THRK_BIKINIZOMBI_APPEAR/on
@@ -1347,7 +1347,7 @@ MSG_THRK_INFORMER_A;スリークのゾンビ復活情報009_A
 ;jpn: きっと わるのおやだまの↓
 ;jpn: ゲロゲロやろうなのよね。@KEYNP()
 』
-_THRK_INFORMER_A_AFTER;クリア後＃
+_THRK_INFORMER_A_AFTER;クリア後#
 ◆Like I told you, there was a barfy bad guy named Belch.@KEY()↓
 ◆Thank you for giving him the big flush.
 ;jpn:◆やっぱり ゲップーっていう↓
@@ -1356,7 +1356,7 @@ _THRK_INFORMER_A_AFTER;クリア後＃
 ;jpn: よく たおしてくれたわ。
 @KEYNP()
 』
-_THRK_INFORMER_A_END;＆
+_THRK_INFORMER_A_END;&
 ◆This town has completely changed from the first time you were here.@KEY()↓
 ◆Can you feel the love?
 ;jpn:◆あなたが はじめてきたときと↓
@@ -1381,7 +1381,7 @@ MSG_THRK_INFORMER_B;
 ;jpn: わるいやつにしても。
 @KEYNP()
 』
-_THRK_INFORMER_B_AFTER;クリア後＃
+_THRK_INFORMER_B_AFTER;クリア後#
 ◆Bu@WI(5)u@WI(5)u@WI(5)u@WI(5)rp!@KEY()↓
 ◆Oops...now I’ll get ”Belch” for a nickname.  Hee hee hee...uh...crud.
 ;DAN:Kya, ha, ha, ha is shy laugh.
@@ -1393,7 +1393,7 @@ _THRK_INFORMER_B_AFTER;クリア後＃
 ;jpn: キャハハハ。
 @KEYNP()
 』
-_THRK_INFORMER_B_END;＆
+_THRK_INFORMER_B_END;&
 ◆Isn’t your backpack worn out?@WI(20)  Oh, if only those straps could talk...
 ;jpn:◆そのリュック だいぶボロに↓
 ;jpn: なったんじゃない?@KEY()↓
@@ -1595,7 +1595,7 @@ MSG_THRK_THANKS_A;ゲップークリア後に墓場で出迎え018_B
 ;jpn: ラブ!↓
 ;jpn: ピース!
 @KEYNP()
-;◆When I have a kid, I will have him／her wear a red cap.
+;◆When I have a kid, I will have him/her wear a red cap.
 ;◆わたし こどもがうまれたら↓
 ; あかいぼうしを↓
 ; かぶらせるわ。@KEYNP()
@@ -1726,7 +1726,7 @@ _THRK_INFORMER_F_LATER;
 』
 
 
-MSG_THRK_INFORMER_G;砂漠の埋蔵金情報＃
+MSG_THRK_INFORMER_G;砂漠の埋蔵金情報#
 @CHKFGOTO(FLG_WIN_GIEGU,_THRK_INFORMER_G_END)
 ◆I heard there is a guy who is digging for buried treasure in Dusty Dunes desert.@KEY()↓
 ◆A share of that treasure ”share” would be nice.
@@ -1737,7 +1737,7 @@ MSG_THRK_INFORMER_G;砂漠の埋蔵金情報＃
 ;jpn: わけてもらいたいよね。
 @KEYNP()
 』
-_THRK_INFORMER_G_END;＆
+_THRK_INFORMER_G_END;&
 ◆Hey!  I heard you got a share of the treasure found in the desert.@KEY()↓
 ◆It didn’t seem to change you at all, though.
 ;jpn:◆きみ‥‥@WI(30)↓
@@ -1813,7 +1813,7 @@ MSG_THRK_TENT_ZOMBI_F;
 @KEYNP()
 』
 MSG_THRK_TENT_ZOMBI_G;
-◆＊Gasp＊ ＊Gasp＊
+◆*Gasp* *Gasp*
 ;jpn:◆ムギュー。
 @KEYNP()
 』

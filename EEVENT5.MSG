@@ -1,10 +1,10 @@
 
 ;#103	マジカントへ	13.13
 
-;★８つのパワースポットのサウンドをすべて集めるとマジカントが出現する。
+;★8つのパワースポットのサウンドをすべて集めるとマジカントが出現する。
 ;(マジカントへ次元スリップする。)
-;★このとき、どこが８つめのパワースポットになっても、共通の演出で、
-;ジャイアントステップからファイアスプリングまで８つのパワースポットを
+;★このとき、どこが8つめのパワースポットになっても、共通の演出で、
+;ジャイアントステップからファイアスプリングまで8つのパワースポットを
 ;順々に巡って行くシーンが挿入される。
 ;(つまり、どのパワースポットをトリガーとしても、
 ;マジカントへは必ずファイアスプリングから行くこととなる。)
@@ -79,17 +79,17 @@ _POWR_OK_2;
 @HIDE_GOM_CHAR( GOM_NES_MO, OBJFX_HIDE_DOTS )	;モノクロネス消す
 @WI( 180 )		;OBJFX効果の間
 
-;自己意識内マイホーム１階
+;自己意識内マイホーム1階
 @WARP( WARP_PSYCHO_MYHOME_1F_E )
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_EVT_PSYCHO_MYHOME_1F, OBJFX_SHOW_NONE )
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )
 
-;自己意識内マイホーム２階廊下
+;自己意識内マイホーム2階廊下
 @WARP( WARP_PSYCHO_MYHOME_PASS_W )
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_EVT_PSYCHO_MYHOME_ROUKA, OBJFX_SHOW_NONE )
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )
 
-;自己意識内マイホーム２階ネスの部屋
+;自己意識内マイホーム2階ネスの部屋
 @WARP( WARP_PSYCHO_MYHOME_NES_W )
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_EVT_PSYCHO_MYROOM, OBJFX_SHOW_NONE )
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )
@@ -211,7 +211,7 @@ MSG_FOLLOW_GOM_HIT_CHR_SUBR;
 ;#105	フライングマンの墓	14.2
 
 ;★墓石のオブジェクトのシナリオフラグ FLG_SYS_FLYINGMAN_DEAD_A〜E までを、
-;それぞれフライングマン１〜５が死んだ時に ON にしたい。
+;それぞれフライングマン1〜5が死んだ時に ON にしたい。
 ;次のフライングマンを連れているいないにかかわらず、死んだら墓を出現させる。
 
 ;---------------------------------------------------------------------------
@@ -230,13 +230,13 @@ MSG_FOLLOW_GOM_HIT_CHR_SUBR;
 ;(MSG_DKFK_POLA_NES、MSG_DKFD_JEFF_NES、MSG_DKFD_PU_NES)
 ;プーのセリフでサターンバレーにテレポート(オートイベント)。
 
-;初回は黄金のオスカーを倒す、２回目は包囲網で以下
+;初回は黄金のオスカーを倒す、2回目は包囲網で以下
 MSG_EVT_106_MAGICANT_OUT;
 @FUNC(5)			;マップ上での全滅・配達禁止
 @SETF(FLG_SYS_MONSTER_OFF)	;ワンダリングモンスターを出現させない
 @WI(60)
 MSG_MGKT_MYSTICMAN;ふしぎな人
-;黄金のオスカーを倒した後(マジカント訪問２回目以降も)
+;黄金のオスカーを倒した後(マジカント訪問2回目以降も)
 ;オスカー像のあったあたりでナレーションとして聞こえる。
 @GOSUB( MSG_SUB_BGM_FADEOUT_LONG )
 @WI( 120 )
@@ -703,7 +703,7 @@ _EVENT_XYZ_ANDONUT_YES;
 
 ;------------------------------------------------
 
-;#108	●スペーストンネル２完成	16.1	-
+;#108	●スペーストンネル2完成	16.1	-
 
 ;●FLG_XYZ_OK が立っていて FLG_DAY_AFTER が下りていれば
 ;スペーストンネルが完成している。
@@ -712,7 +712,7 @@ _EVENT_XYZ_ANDONUT_YES;
 ;---------------------------------------------------------
 
 
-;#109	スペーストンネル２(ワープ)	16.1
+;#109	スペーストンネル2(ワープ)	16.1
 
 ;★スペーストンネルの瞬間空間移動の演出。
 
@@ -769,20 +769,20 @@ MSG_DKFD_HRECT_ST3_A;
 』
 
 ;#110	ネスたち機械化	-	-
-;#111	スペーストンネル３(タイムワープ)
+;#111	スペーストンネル3(タイムワープ)
 
 ;★現在の最低国。つの状のマップオブジェクトへの接近をきっかけに
-;スペーストンネル３を出現させる。空間移動で登場の演出。
-;★スペーストンネル３からは、アンドーナッツ博士、
+;スペーストンネル3を出現させる。空間移動で登場の演出。
+;★スペーストンネル3からは、アンドーナッツ博士、
 ;アップルキッド、土星さんが降りてくる。それぞれ MSG_DKFD_END_ANDONUT_1 、
 ;MSG_DKFD_END_APPLEKID 、MSG_DKFD_END_DOSEI 。
-;●上記の３つのメッセージを聞くと、FLG_DKFD_END_GET_READY が ON になる。
+;●上記の3つのメッセージを聞くと、FLG_DKFD_END_GET_READY が ON になる。
 
 ;★博士のセリフ分岐先の_DKFD_END_ANDONUT_2_YES でフェイドアウト。
 
 ;★時間移動の演出。戦闘背景に使用しているサイクル画面を重ねる。
 
-MSG_DKFD_HRECT_ST3_B;２つ目のHRECTに入ったところで以下を発行
+MSG_DKFD_HRECT_ST3_B;2つ目のHRECTに入ったところで以下を発行
 @BGMSTART(0,BGM_msc9)
 ;@WI(120)
 ;@WI(60)
@@ -815,7 +815,7 @@ MSG_DKFD_END_ANDONUT_1;
 ◆Giygas is attacking from our exact location,@KEY()↓
 ◆but he is attacking from many years in the past.
 ;jpn:◆あっというまに↓
-;jpn: 「スペーストンネル３」が↓
+;jpn: 「スペーストンネル3」が↓
 ;jpn: かんせいしたぞ。@KEY()↓
 ;jpn:◆どせいさんたちの↓
 ;jpn: かがくぎじゅつは すごいぞ!@KEY()↓
@@ -846,7 +846,7 @@ _DKFD_ANDONUT_A_READY;
 MSG_DKFD_END_ANDONUT_2;
 ◆In order to defeat Giygas,@KEY()↓
 ◆who is attacking from the past, you must warp to the past.@KEY()↓
-◆This can only be done by way of the ”Phase Distorter ３.”@KEY()↓
+◆This can only be done by way of the ”Phase Distorter 3.”@KEY()↓
 ◆However, the machine cannot warp living things, I mean lifeforms.@KEY()↓
 ◆Life is demolished in the process of warping.@KEY()↓
 ◆The only way to accomplish the time travel is@KEY()↓
@@ -863,7 +863,7 @@ MSG_DKFD_END_ANDONUT_2;
 ;jpn: ギーグをたおすには@KEY()↓
 ;jpn:◆かこにワープすることが↓
 ;jpn: ひつようだ。 むろん‥‥@KEY()↓
-;jpn:◆それは「スペーストンネル３」で↓
+;jpn:◆それは「スペーストンネル3」で↓
 ;jpn: できることなんだが‥‥@KEY()↓
 ;jpn:◆‥‥このそうちは いきものを‥‥↓
 ;jpn: 「せいめいたい」を↓
@@ -882,7 +882,7 @@ MSG_DKFD_END_ANDONUT_2;
 ;jpn:◆‥‥かこでの たたかいがおわって↓
 ;jpn: スピリットがもどってくるという↓
 ;jpn: かのうせいは よそくできない。@KEY()↓
-;jpn:◆えらばれた４にんのしょくん!↓
+;jpn:◆えらばれた4にんのしょくん!↓
 ;jpn: それでも かこのせかいに↓
 ;jpn: いってくれるか?@KEY()↓
 ;jpn:  <はい>  <いいえ>
@@ -961,7 +961,7 @@ MSG_DKFD_END_ANDONUT_3;
 ◆@DSP_NAME(PC_POO)!@KEY()↓
 ◆@DSP_NAME(PC_JEFF)!...my son...@KEY()↓
 ◆There is no turning back now.@KEY()↓
-◆@DSP_NAME(PC_NESS), activate the Phase Distorter ３ by your own hand,@KEY()↓
+◆@DSP_NAME(PC_NESS), activate the Phase Distorter 3 by your own hand,@KEY()↓
 ◆thereby following your own destiny...will you do so?↓
 <Yes> <No>
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)!↓
@@ -1020,7 +1020,7 @@ _DKFD_END_ANDONUT_3_YES;
 @KEY()
 @BGMSTART(0,BGM_sptn);虫を無視
 @CLOSEALL()
-@SETF(FLG_STEP_PAST)	;祈る人々ST２出現用
+@SETF(FLG_STEP_PAST)	;祈る人々ST2出現用
 @WI(1)
 @WARP(WARP_ST3_PAST)
 @COLD_PLAYER( PC_ALL )
@@ -1050,7 +1050,7 @@ _DKFD_END_ANDONUT_3_YES;
 
 MSG_DKFD_END_APPLEKID;
 ◆You must warp to the past and fight, but...
-;jpn:◆「スペーストンネル３」で↓
+;jpn:◆「スペーストンネル3」で↓
 ;jpn: かこへ ワープして↓
 ;jpn: たたかわなくては‥‥@KEY()↓
 ;jpn:◆でも‥‥
@@ -1081,7 +1081,7 @@ MSG_EVT_112_LASTBATTLE;
 @WI( 1 )	;GOM_HIT_CHR2の登録待ち
 @SET_CAMERA_GOM_CHAR( GOM_HIT_CHR2 )
 @FRESH_PLAYER( PC_ALL )
-;画面が揺れる ＆ 虚像マシン→ネスの顔に変化
+;画面が揺れる & 虚像マシン→ネスの顔に変化
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_LAST_BATTLE, OBJFX_SHOW_NONE )
 @WAITSYS()	;ANIM_LAST_BATTLEより
 @MOVE_GOM_CHAR( GOM_HIT_CHR, ANIM_LAST_BATTLE, OBJFX_SHOW_NONE )
@@ -1433,7 +1433,7 @@ MSG_EVT_POLADAD_CLAMOR;松(ぽ、ぽがない?)
 @WAITSYS()
 @COLD_GOM_CHAR( GOM_POLA_FATHER )	;西画面外への移動ちょっと待て
 ;セリフ「◆ポォーーーラァーーー!!」を表示しながら
-; ※３０文字以内に納めること!!
+; ※30文字以内に納めること!!
 @SET_LOOPREG(1)
 @GET_PLAYER_NAME(PC_PAULA)
 @SET_REG(0)
@@ -1462,7 +1462,7 @@ MSG_EVT_CHIKA_GUMIDORIAN;
 @WAITSYS()		;扉まで来るのを待つ
 @COLD_CHAR( PRSN_CHKA_FIELD_B )
 @OPEN(1)
-◆You guys smell really good!  ＊sniff, sniff, sniff＊@KEY()↓
+◆You guys smell really good!  *sniff, sniff, sniff*@KEY()↓
 ◆Who am I?  I’m a  Tenda!
 ;jpn:◆おまえら けっこう すっげえ↓
 ;jpn: いいにおいするじゃん!@WI(15)クンクン@KEY()↓
@@ -1512,7 +1512,7 @@ MSG_EVT_CHIKA_GUMIDORIAN;
 』
 
 ;-------------------------------------------------
-MSG_EVT_TO_BE_CONTINUED;＠
+MSG_EVT_TO_BE_CONTINUED;@
 @DEL_PARTY(PC_PAULA)	;ポーラ脱退
 @FUNC(15)		;すべてのフラグクリア
 @FUNC(5)		;配達毒死禁止
@@ -1547,7 +1547,7 @@ MSG_EVT_TO_BE_CONTINUED;＠
 @SETF(FLG_SYS_MONSTER_OFF)	;ワンダリングモンスター禁止(念のため)
 』
 
-MSG_EVT_KNOCK_TO_BE;続く!イベント２
+MSG_EVT_KNOCK_TO_BE;続く!イベント2
 @BGMSTOP(0)
 @SE(SE_se08_door_in)
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_NESS_TOBINOKU,OBJFX_SHOW_NONE)

@@ -3,7 +3,7 @@
 ;
 ;-----------------------------------------------------
 ;            at the bicycle shop
-;@Habitat:ツーソン／サイクルショップ／サイクルショップ
+;@Habitat:ツーソン/サイクルショップ/サイクルショップ
 ;@Person:チャーリー
 ;@Figure:パンク青年
 ;@AppearanceKey:0
@@ -111,7 +111,7 @@ _TWSN_CYCLE_ITEMFULL;
 _TWSN_CYCLE_KARITERU;
 ←
 ◆Didn’t you already borrow a bicycle?@WI(20)  We don’t have any more right now...
-;jpn:◆もう １だい かしてるだろ。@WI(20)↓
+;jpn:◆もう 1だい かしてるだろ。@WI(20)↓
 ;jpn: うちには もうのこってないよ。
 @KEYNP()
 』
@@ -140,7 +140,7 @@ _TWSN_CYCLE_NOTHAVE;
 ←
 ◆Yeah,@WI(10) yeah,@WI(5) sure, sure.@WI(20)  You’ve already borrowed a bicycle.
 ;jpn:◆そうだよな。↓
-;jpn: １だい かしてるもんな。
+;jpn: 1だい かしてるもんな。
 @KEYNP()
 』
 
@@ -201,7 +201,7 @@ _TWSN_CYCLE_NESS_DEAD;
 』
 
 ;----------------------------------------
-;@Habitat:ツーソン／幼稚園／遊技室
+;@Habitat:ツーソン/幼稚園/遊技室
 ;@Person:ポーラ母
 ;@Figure:ポーラ母
 ;@AppearanceKey:0
@@ -375,7 +375,7 @@ _TWSN_ISABELLA_LATER1;
 @GOSUB(MSG_SUB_HOTEL_LIFEUP)
 』
 
-_TWSN_ISABELLA_END;＆最終戦闘後のママ
+_TWSN_ISABELLA_END;&最終戦闘後のママ
 ◆You’ve lost some weight since I saw you last, @DSP_NAME(PC_NESS).@KEY()↓
 ◆@DSP_NAME(PC_PAULA) must have had quite an adventure!@WI(20)  I’m glad you live so close to us.@KEY()↓
 ◆Why don’t you drop by more often?@WI(20)  I’m working at making better @DSP_STS(STS_PARTY_FAVORITE_FOODS).
@@ -395,7 +395,7 @@ _TWSN_ISABELLA_END;＆最終戦闘後のママ
 @KEYNP()
 』
 
-;@Habitat:ツーソン／幼稚園／遊技室
+;@Habitat:ツーソン/幼稚園/遊技室
 ;@Person:園児A
 ;@Figure:少年A
 ;@AppearanceKey:0
@@ -430,7 +430,7 @@ _TWSN_POLESTAR_A_DEAD;
 @KEYNP()
 』
 
-;@Habitat:ツーソン／幼稚園／遊技室
+;@Habitat:ツーソン/幼稚園/遊技室
 ;@Person:園児B
 ;@Figure:リボン
 ;@AppearanceKey:0
@@ -481,7 +481,7 @@ _TWSN_POLESTAR_B_PAULA;
 』
  
 
-;@Habitat:ツーソン／幼稚園／遊技室
+;@Habitat:ツーソン/幼稚園/遊技室
 ;@Person:園児C
 ;@Figure:ヘルメット
 ;@AppearanceKey:0
@@ -567,7 +567,7 @@ _TWSN_POLESTAR_D_PAULA_LATER;通常
 @KEYNP()
 』
 
-;@Habitat:ツーソン／幼稚園／両親の部屋
+;@Habitat:ツーソン/幼稚園/両親の部屋
 ;@Person:ポーラ父
 ;@Figure:ポーラ父
 ;@AppearanceKey:0
@@ -766,7 +766,7 @@ _TWSN_PAUL_LATER_BOTH_DEAD;
 @WARP(WARP_PAULASTAR_BED)
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
 』
-_TWSN_PAUL_END;＆
+_TWSN_PAUL_END;&
 ◆You’re a very strong, young man.@WI(20)  My opinion of you has changed.@KEY()↓
 ◆Perhaps you should continue dating @DSP_NAME(PC_PAULA).@KEY()↓
 ◆Just treat her right...@KEY()↓
@@ -790,7 +790,7 @@ _TWSN_PAUL_END;＆
 』
 
 ;----------------------------------------
-;@Habitat:ツーソン／有望青年Aの家／有望青年Aの家
+;@Habitat:ツーソン/有望青年Aの家/有望青年Aの家
 ;@Person:オレンジキッド
 ;@Figure:有望青年A
 ;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/off
@@ -846,10 +846,10 @@ _TWSN_ORANGE_NO;
 』
 
 _TWSN_ORANGE_YES;
-◆Oh goody!@WI(20)  Would it be okay to get ＄２００ to buy materials?↓
+◆Oh goody!@WI(20)  Would it be okay to get $200 to buy materials?↓
 <Yes> <No>
 ;jpn:◆そしたら ざいりょうひってことで↓
-;jpn: ２００ドル↓
+;jpn: 200ドル↓
 ;jpn: おねがいします。@KEY()↓
 @WINR_MONEY()
 ;jpn:  <はい>  <いいえ>
@@ -942,7 +942,7 @@ _TWSN_ORANGE_LATER_2;
 _TWSN_ORANGE_2;
 ◆You didn’t invest any money in my venture,@KEY()↓
 ◆but someone else donated a few million bucks,@WI(15) so everything is great.@KEY()↓
-◆So would you like to invest,@WI(10) say,@WI(15) ５０ bucks?↓
+◆So would you like to invest,@WI(10) say,@WI(15) 50 bucks?↓
 <Yes> <No>
 ;jpn:◆あなたは ぼくに↓
 ;jpn: とうし してくれませんでしたが@KEY()↓
@@ -950,7 +950,7 @@ _TWSN_ORANGE_2;
 ;jpn:◆なんびゃくまんおくドルの↓
 ;jpn: きふの もうしこみが↓
 ;jpn: あったんですよ!@KEY()↓
-;jpn:◆あなたも ５０ドルばかり↓
+;jpn:◆あなたも 50ドルばかり↓
 ;jpn: とうし しますか?↓
 ;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
@@ -958,7 +958,7 @@ _TWSN_ORANGE_2;
 
 _TWSN_ORANGE_2_NO;
 ◆Oh,@WI(15) I’m sorry to hear that.@KEY()↓
-◆...And you never heard how much money I got, too.@WI(15)  Right? ＊wink＊ ＊wink＊...
+◆...And you never heard how much money I got, too.@WI(15)  Right? *wink* *wink*...
 ;jpn:◆あ ごめんなさい↓
 ;jpn: おたがい きかなかったことに↓
 ;jpn: しましょう。
@@ -973,12 +973,12 @@ _TWSN_ORANGE_2_YES;
 @WINR_MONEY()
 @GOTO(_TWSN_ORANGE_THANKS_THANKS)
 
-_TWSN_ORANGE_END_A;＆
+_TWSN_ORANGE_END_A;&
 ;投資していない
 @CHKFGOTO(FLG_TWSN_ORANGE_THANKS,_TWSN_ORANGE_END_B)
 ◆Well, you never invested in my genius,@WI(15) did you?@KEY()↓
 ◆You had no idea of what I could do...@KEY()↓
-◆＊chortle＊@KEY()↓
+◆*chortle*@KEY()↓
 ◆You sorry loser.
 ;jpn:◆ぼくという てんさいを↓
 ;jpn: いちども しえんしなかった↓
@@ -1009,7 +1009,7 @@ _TWSN_ORANGE_END_B;投資した
 』
 
 ;----------------------------------------
-;@Habitat:ツーソン／有望青年Bの家／有望青年Bの家
+;@Habitat:ツーソン/有望青年Bの家/有望青年Bの家
 ;@Person:アップルキッド
 ;@Figure:有望青年B
 ;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/off
@@ -1095,9 +1095,9 @@ _TWSN_APPLE_FOOD_MAIN;
 
 _TWSN_APPLE_OK;
 ◆Yes!  Yes!  Yes!  Oh.  Excuse me.  I mean thank you!@KEY()↓
-◆By the way, I could really use ＄２００.
+◆By the way, I could really use $200.
 ;jpn:◆そうか。やったなぁ。いいぞ。@KEY()↓
-;jpn:◆さっそくですけど ２００ドル↓
+;jpn:◆さっそくですけど 200ドル↓
 ;jpn: おねがいします!↓
 @GOSUB(MSG_SUB_YESNO_MONEY)
 @SELGOTO(_TWSN_APPLE_PAYOK,_TWSN_APPLE_NO)
@@ -1146,7 +1146,7 @@ _TWSN_APPLE_FOOD;
 @GOTO(_TWSN_APPLE_FOOD_MAIN)
 
 
-;@Habitat:ツーソン／有望青年Bの家／有望青年Bの家
+;@Habitat:ツーソン/有望青年Bの家/有望青年Bの家
 ;@Person:ペット
 ;@Figure:ねずみ
 ;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/off
@@ -1192,7 +1192,7 @@ _TWSN_MOUSE;
 
 _TWSN_MOUSE_BYE;
 @KEY()↓
-◆Oh! @WI(20) I must be bothering you!@WI(10) ＊zziipp!＊
+◆Oh! @WI(20) I must be bothering you!@WI(10) *zziipp!*
 ;DAN:"Sasa"is sound of moving fast.
 ;jpn:◆‥‥あ↓
 ;jpn: わがはいが ここにいたら↓
@@ -1233,7 +1233,7 @@ _SUB_MOUSE_SETF;
 @!
 
 ;----------------------------------------
-;@Habitat:ツーソン／カオス劇場／受付
+;@Habitat:ツーソン/カオス劇場/受付
 ;@Person:切符きり(キャロットちゃん)
 ;@Figure:アーティスト
 ;@AppearanceKey:FLG_TWSN_CARROT_B_APPEAR/off
@@ -1342,7 +1342,7 @@ _TWSN_CARROT_RECEIVE_TEMP;
 』
 
 
-;@Habitat:ツーソン／カオス劇場／受付
+;@Habitat:ツーソン/カオス劇場/受付
 ;@Person:(チケットを渡した後の)切符きり(キャロット)B
 ;@Figure:アーティスト
 ;@AppearanceKey:FLG_TWSN_CARROT_B_APPEAR/on
@@ -1358,7 +1358,7 @@ MSG_TWSN_CARROT_B;
 @KEY()
 』
 
-;@Habitat:ツーソン／カオス劇場／受付
+;@Habitat:ツーソン/カオス劇場/受付
 ;@Person:客
 ;@Figure:青年
 ;@AppearanceKey:0
@@ -1378,14 +1378,14 @@ MSG_TWSN_CHAOS_F;
 @KEYNP()
 』
 _TWSN_CHAOS_F_TMP;トンズラ解放時のメッセージ
-◆＊Sniff＊@WI(15) I suppose I’ll never see the Runaway Five’s show again.
+◆*Sniff*@WI(15) I suppose I’ll never see the Runaway Five’s show again.
 ;DAN:He's sad.
 ;jpn:◆ぼく いっしょう↓
 ;jpn: トンズラブラザーズの↓
 ;jpn: ステージを みられないのか‥‥。
 @KEYNP()
 』
-MSG_TWSN_CHAOS_E_LATER;＆
+MSG_TWSN_CHAOS_E_LATER;&
 ◆Didn’t I see you at the Topolla Theater in Fourside?@KEY()↓
 ◆So you’re a Runaway Five groupie, too!
 ;DAN:I'm not sure about spelling of groopy.Also,groopy may be slightly different in the US.and Japan.Let’s discuss.
@@ -1397,7 +1397,7 @@ MSG_TWSN_CHAOS_E_LATER;＆
 @KEYNP()
 』
 
-;@Habitat:ツーソン／フィールド
+;@Habitat:ツーソン/フィールド
 ;@Person:アップルマウス
 ;@Figure:ねずみ
 ;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/on
@@ -1425,7 +1425,7 @@ MSG_TWSN_CHAOS_MOUSE;
 ;』
 
 
-;@Habitat:ツーソン／カオス劇場／ホール
+;@Habitat:ツーソン/カオス劇場/ホール
 ;@Person:ミーハーのミチコ
 ;@Figure:少女A
 ;@AppearanceKey:MSG_TWSN_MICHIKO_APPEAR/on
@@ -1487,7 +1487,7 @@ MSG_TWSN_MICHIKO_LATER;
 』
 
 
-;@Habitat:ツーソン／カオス劇場／ホール
+;@Habitat:ツーソン/カオス劇場/ホール
 ;@Person:客A
 ;@Figure:ツッパリ
 ;@AppearanceKey:0
@@ -1505,7 +1505,7 @@ MSG_TWSN_CHAOS_A;
 』
 
 
-;@Habitat:ツーソン／カオス劇場／ホール
+;@Habitat:ツーソン/カオス劇場/ホール
 ;@Person:客B
 ;@Figure:インディ
 ;@AppearanceKey:0
@@ -1546,7 +1546,7 @@ _TWSN_CHAOS_B_YES_POLA;ポーラの時「ハイ」
 @KEYNP()
 』
 
-;@Habitat:ツーソン／カオス劇場／ホール
+;@Habitat:ツーソン/カオス劇場/ホール
 ;@Person:客C
 ;@Figure:ゴロツキ
 ;@AppearanceKey:0
@@ -1567,7 +1567,7 @@ MSG_TWSN_CHAOS_C;
 』
 
 
-;@Habitat:ツーソン／カオス劇場／ホール
+;@Habitat:ツーソン/カオス劇場/ホール
 ;@Person:客D
 ;@Figure:OLG
 ;@AppearanceKey:0
@@ -1585,7 +1585,7 @@ MSG_TWSN_CHAOS_D;
 』
 
 
-;@Habitat:ツーソン／カオス劇場／ホール
+;@Habitat:ツーソン/カオス劇場/ホール
 ;@Person:アップルキッド
 ;@Figure:有望青年B
 ;@AppearanceKey:FLG_TWSN_CHAOSAPPLE_APPEAR/on

@@ -305,7 +305,7 @@ MSG_BTL_YUDAN_4;
 @KEY()
 @!
 
-MSG_BTL_YUDAN_LIFEUP;＄
+MSG_BTL_YUDAN_LIFEUP;$
 ←
 ◆@DSP_ACTOR() ate a↓
   bologne sandwich!
@@ -471,7 +471,7 @@ MSG_BTL_BAD_SMELL_GAS;
 @!
 
 MSG_BTL_LIGHTNING;●(akm0616 w/itoi)
-@GOSUB(MSG_BTL_GYIYYIG);＠ギーグの声ランダムで
+@GOSUB(MSG_BTL_GYIYYIG);@ギーグの声ランダムで
 @WI(40)
 ;@OPEN(14)	←三浦兄による修正
 @CLS()
@@ -486,7 +486,7 @@ MSG_BTL_LIGHTNING;●(akm0616 w/itoi)
 @SE(SE_se51_foe_haku)
 @!
 
-MSG_BTL_LIGHTNING_B;＠
+MSG_BTL_LIGHTNING_B;@
 @GOSUB(MSG_BTL_GYIYYIG_TALK_A)
 @CLS()
 ◆You cannot grasp the true form↓
@@ -501,13 +501,13 @@ MSG_BTL_LIGHTNING_B;＠
 @!
 
 MSG_BTL_LIGHTNING_C
-@GOSUB(MSG_BTL_GYIYYIG);＠ギーグの声ランダムで
+@GOSUB(MSG_BTL_GYIYYIG);@ギーグの声ランダムで
 @WI(40)
 @CLS()
-@GOSUB(MSG_BTL_GYIYYIG);＠ギーグの声ランダムで
+@GOSUB(MSG_BTL_GYIYYIG);@ギーグの声ランダムで
 @WI(40)
 @CLS()
-@GOSUB(MSG_BTL_GYIYYIG);＠ギーグの声ランダムで
+@GOSUB(MSG_BTL_GYIYYIG);@ギーグの声ランダムで
 @WI(40)
 @CLS()
 ◆You cannot grasp the true form↓
@@ -522,13 +522,13 @@ MSG_BTL_LIGHTNING_C
 @!
 
 MSG_BTL_GYIYYIG_3
-@GOSUB(MSG_BTL_GYIYYIG);＠ギーグの声ランダムで
+@GOSUB(MSG_BTL_GYIYYIG);@ギーグの声ランダムで
 @WI(40)
 @CLS()
-@GOSUB(MSG_BTL_GYIYYIG);＠ギーグの声ランダムで
+@GOSUB(MSG_BTL_GYIYYIG);@ギーグの声ランダムで
 @WI(40)
 @CLS()
-@GOSUB(MSG_BTL_GYIYYIG);＠ギーグの声ランダムで
+@GOSUB(MSG_BTL_GYIYYIG);@ギーグの声ランダムで
 @WI(40)
 @CLS()
 @!

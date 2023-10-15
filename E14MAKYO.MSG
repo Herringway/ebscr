@@ -1,6 +1,6 @@
 ;-----------------------------------------------
 
-;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Habitat:魔境/フィールド/フィールドの適当な所
 ;@Person:テレポートザル
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -66,7 +66,7 @@ _MAKYO_MONKEY_TELEPORT_YES;
 ◆I’ll never give up!@KEY()↓
 ◆I wanna try again.@KEY()
 ;jpn:◆ま まけないぞ!↓
-;jpn: もう１かい やってみるよ。@KEY()
+;jpn: もう1かい やってみるよ。@KEY()
 @CLOSEALL()
 @FRESH_CHAR(PRSN_MKYO_FIELD_A)
 @WAITSYS()
@@ -150,7 +150,7 @@ _MAKYO_MONKEY_TELEPORT_LATER;
 ;』
 ;
 ;
-;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Habitat:魔境/フィールド/フィールドの適当な所
 ;@Person:たかのめ情報ザル
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -158,7 +158,7 @@ _MAKYO_MONKEY_TELEPORT_LATER;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MAKYO_MONKEY_A
-MSG_MAKYO_MONKEY_A;＃タカのめ使用後を‥‥
+MSG_MAKYO_MONKEY_A;#タカのめ使用後を‥‥
 @CHKFGOTO(FLG_MAKYO_USE_TAKANOME,_SKRB_MAKYO_MONKEY_A_LATER)
 ◆It’s really dark here in the Deep Darkness, isn’t it?@KEY()↓
 ◆It’s pretty creepy, don’t you think?@KEY()↓
@@ -169,7 +169,7 @@ MSG_MAKYO_MONKEY_A;＃タカのめ使用後を‥‥
 ;jpn:◆@DSP_GOODS(GDS_TOOL_EAGLE_EYE) ってのがないと↓
 ;jpn: だめなんだよね。@KEYNP()
 』
-_SKRB_MAKYO_MONKEY_A_LATER;＆
+_SKRB_MAKYO_MONKEY_A_LATER;&
 ◆I was born in this dark, creepy area.@KEY()↓
 ◆I live, grow up...and die here.@KEY()↓
 ◆That’s my entire life as a monkey!...
@@ -183,7 +183,7 @@ _SKRB_MAKYO_MONKEY_A_LATER;＆
 』
 
 
-;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Habitat:魔境/フィールド/フィールドの適当な所
 ;@Person:宿ザル
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -210,7 +210,7 @@ MSG_MAKYO_MONKEY_INN;
 ;』
 
 
-;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Habitat:魔境/フィールド/フィールドの適当な所
 ;@Person:病院ザル
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -225,7 +225,7 @@ MSG_MAKYO_MONKEY_INN;
 ;@GOSUB(MSG_DOCTOR_MAKYO)
 ;』
 
-;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Habitat:魔境/フィールド/フィールドの適当な所
 ;@Person:道具屋ザル
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -237,7 +237,7 @@ MSG_MAKYO_MONKEY_INN;
 ;@GOSUB(MSG_SHOP_MAKYO_DRUG)
 ;』
  
-;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Habitat:魔境/フィールド/フィールドの適当な所
 ;@Person:電話ザル
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -251,9 +251,9 @@ MSG_MAKYO_MONKEY_INN;
 ;@GOTO(MSG_GLOBAL_TELEPHONE)
 ;』
 
-;@Habitat:魔境／フィールド／魔境出口付近
+;@Habitat:魔境/フィールド/魔境出口付近
 ;@Person:魔境のボス、ゲロップ
-;@Figure:大ムッド２
+;@Figure:大ムッド2
 ;@AppearanceKey:FLG_WIN_GEROPP/off
 ;@ActionScript:◆正面向いて止ったまま
 ;@GoodsMessage:0
@@ -262,7 +262,7 @@ MSG_MAKYO_MONKEY_INN;
 MSG_MAKYO_GEROPP;
 @CHKFGOTO(FLG_WIN_GEROPP,MSG_SYS_HANASU_NG)
 @BGMSTART(0,BGM_msc10);ゲロ入り曲
-◆You may have forgotten, but ＊Buuuuurp!＊...@KEY()↓
+◆You may have forgotten, but *Buuuuurp!*...@KEY()↓
 ◆I’m the return of Belch!@KEY()↓
 ◆I’ve fought you before.@KEY()↓
 ;jpn:◆おまえは わすれたかも↓
@@ -301,7 +301,7 @@ MSG_MAKYO_GEROPP;
 @REMOVE_CHAR(PRSN_MKYO_FIELD_G,ANIM_BLINK_SUICIDE)
 』
 
-;@Habitat:魔境／フィールド／フィールドの適当な所
+;@Habitat:魔境/フィールド/フィールドの適当な所
 ;@Person:魔境の九官鳥
 ;@Figure:九官鳥
 ;@AppearanceKey:0
@@ -406,8 +406,8 @@ MSG_MAKYO_TRADER;
 ◆for the best opportunities.@KEY()↓
 ◆...and I’m a tough businessman, yessir!@KEY()↓
 ◆I also a representative of the doctor over there.@KEY()↓
-◆A： Do you want to buy...?@KEY()↓
-◆B： Do you want to heal...?@KEY()↓
+◆A: Do you want to buy...?@KEY()↓
+◆B: Do you want to heal...?@KEY()↓
 <A>
 <B>
 ;jpn:◆あ ドーモ。@WI(20)↓
@@ -419,8 +419,8 @@ MSG_MAKYO_TRADER;
 ;jpn:◆そっちにいる センセイの↓
 ;jpn: エージェンシーも↓
 ;jpn: やってましてね。@KEY()↓
-;jpn:◆A：かいもの‥‥ですか?↓
-;jpn: B：ちりょう‥‥ですか?↓
+;jpn:◆A:かいもの‥‥ですか?↓
+;jpn: B:ちりょう‥‥ですか?↓
 @DSP_ITEM(2)
 @SELGOTO(_MAKYO_TRADER_SHOP,_MAKYO_TRADER_DOCTOR)
 @GOTO(_MAKYO_TRADER_NO)
@@ -467,13 +467,13 @@ _MAKYO_TRADER_DOCTOR_YES;はい
 ;@SET_REG(1)
 ◆It’s a special treatment.@KEY()↓
 ◆You’ll be in perfect health with just one treament.@KEY()↓
-◆The fee for one treament is ＄５００.@KEY()↓
+◆The fee for one treament is $500.@KEY()↓
 ◆Do you agree to the fee?↓
 ;jpn:◆とくしゅちりょうですので↓
 ;jpn: いちどに なんにんでも↓
 ;jpn: ピンピンのシャンシャンにします。@KEY()↓
 ;jpn:◆しんさつりょうは↓
-;jpn: いちりつ ５００ドルです。@KEY()↓
+;jpn: いちりつ 500ドルです。@KEY()↓
 ;jpn:◆よろしいですね?↓
 @GOSUB(MSG_SUB_YESNO_MONEY_PANEL)
 @SELGOTO(_TRADER_DOCTOR_YES_1,_MAKYO_TRADER_NO)
@@ -526,7 +526,7 @@ _TRADER_DOCTOR_HEAL;
 @REMOVE_CHAR( PRSN_MKYO_FIELD_Q, ANIM_MAKYO_DOCTOR_APPROACH )
 @WAITSYS()
 @COLD_CHAR( PRSN_MKYO_FIELD_Q )	;元の位置に帰ろうとする医者を抑制
-;セリフ：治療メッセージ
+;セリフ:治療メッセージ
 @GET_ORDER_PLAYER(1)
 @SET_REG(0)
 @OPEN( 1 )
@@ -547,7 +547,7 @@ _TRADER_DOCTOR_HEAL;
 @GET_CHAR_DIR( PRSN_MKYO_FIELD_P, 1, PC_ALL )
 @SET_CHAR_DIR( PRSN_MKYO_FIELD_P, 0 )	;商社マン、ネスの方を向く
 @WI( 10 )
-;セリフ：「また来て下さい。」
+;セリフ:「また来て下さい。」
 @OPEN( 1 )
 ◆I’m happy to do business with men outside of the monkey realm.@KEY()↓
 ◆Please come back again.
@@ -615,7 +615,7 @@ _MAKYO_HELI_MAIN;
 
 ;電話鳥
 MSG_MAKYO_BIRD_PHONE;
-◆＊Ring＊ ＊ring＊@KEY()↓
+◆*Ring* *ring*@KEY()↓
 ;DAN:Sound of phone's ringing.
 
 ;jpn:◆トゥルルルル@KEY()↓
@@ -625,7 +625,7 @@ MSG_MAKYO_BIRD_PHONE;
 
 ;新規配置
 ;(女さる)
-MSG_MAKYO_MONKEY_B;＄β
+MSG_MAKYO_MONKEY_B;$β
 ◆This is the Deep Darkness.@KEY()↓
 ◆When you walk through the swamp, you endanger you health.@KEY()↓
 ◆You can’t help it.@KEY()↓
@@ -639,7 +639,7 @@ MSG_MAKYO_MONKEY_B;＄β
 ;jpn: まきょうならではなのよ。@KEYNP()
 』
 ;(男さる)
-MSG_MAKYO_MONKEY_C;＄β
+MSG_MAKYO_MONKEY_C;$β
 ◆I wanna become a pig.@KEY()↓
 ◆If I become a pig, I can find the mushrooms called Magic truffles.@KEY()↓
 ◆They’re located in the swamp and can be found by scent.@KEY()↓

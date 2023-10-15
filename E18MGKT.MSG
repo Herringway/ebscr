@@ -1,6 +1,6 @@
 ;---------------------------------------
 
-;@Habitat:マジカント／ショップ／ショップ
+;@Habitat:マジカント/ショップ/ショップ
 ;@Person:マジb道具屋
 ;@Figure:マジカントの人
 ;@AppearanceKey:0
@@ -13,8 +13,8 @@ MSG_MGKT_B;
 』
 
 ;----------------------------------------
-;@Habitat:マジカント／フライングマンの家／フライングマンの家
-;@Person:フライングマン１
+;@Habitat:マジカント/フライングマンの家/フライングマンの家
+;@Person:フライングマン1
 ;@Figure:フライングマン
 ;@AppearanceKey:FLG_FLYINGMAN_1/off
 ;@ActionScript:◆小範囲うろつき
@@ -83,24 +83,24 @@ MSG_SUB_FLYINGMAN_ADD;
 ;jpn: いっておきましょうか。@KEY()
 』
 
-_MGKT_FLYINGMAN_2;フライングマン２
+_MGKT_FLYINGMAN_2;フライングマン2
 ◆I’ll be your courage.@KEY()↓
 ◆I’ll remain unless you lose your courage.@KEY()↓
-◆Call me Flying Man ２.
+◆Call me Flying Man 2.
 @KEY()
 ;jpn:◆わたしは あなたの ゆうき。@WI(20)↓
 ;jpn: あなたが ゆうきを↓
 ;jpn: うしなわぬかぎり@KEY()↓
 ;jpn:◆わたしは うまれます。@KEY()↓
-;jpn:◆フライングマン２ とでも↓
+;jpn:◆フライングマン2 とでも↓
 ;jpn: よんでください。@KEY()
 』
 
-_MGKT_FLYINGMAN_3;フライングマン３
-◆I’m Flying Man ３.@KEY()↓
+_MGKT_FLYINGMAN_3;フライングマン3
+◆I’m Flying Man 3.@KEY()↓
 ◆Your courage hasn’t died yet.@KEY()↓
 ◆Let’s go!@KEY()
-;jpn:◆フライングマン３ です。@WI(20)↓
+;jpn:◆フライングマン3 です。@WI(20)↓
 ;jpn: あなたのゆうきは↓
 ;jpn: まだまだ かれていない。@KEY()↓
 ;jpn:◆いきましょう!@KEY()
@@ -174,7 +174,7 @@ _SUB_Q_FLYINGMAN;
 _Q_FLY_END;
 @!
 
-;@Habitat:マジカント／ショップ／ショップ
+;@Habitat:マジカント/ショップ/ショップ
 ;@Person:ペンダント売り
 ;@Figure:ミンチ
 ;@AppearanceKey:0
@@ -192,8 +192,8 @@ MSG_MGKT_PENDANT;
 』
 
 
-;@Habitat:マジカント／フライングマンの家／フライングマンの家
-;@Person:フライングマン２
+;@Habitat:マジカント/フライングマンの家/フライングマンの家
+;@Person:フライングマン2
 ;@Figure:フライングマン
 ;@AppearanceKey:FLG_FLYINGMAN_2/off
 ;@ActionScript:◆小範囲うろつき
@@ -201,8 +201,8 @@ MSG_MGKT_PENDANT;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_FLYINGMAN_2
 
-;@Habitat:マジカント／フライングマンの家／フライングマンの家
-;@Person:フライングマン３
+;@Habitat:マジカント/フライングマンの家/フライングマンの家
+;@Person:フライングマン3
 ;@Figure:フライングマン
 ;@AppearanceKey:FLG_FLYINGMAN_3/off
 ;@ActionScript:◆小範囲うろつき
@@ -210,8 +210,8 @@ MSG_MGKT_PENDANT;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_FLYINGMAN_3
 
-;@Habitat:マジカント／フライングマンの家／フライングマンの家
-;@Person:フライングマン４
+;@Habitat:マジカント/フライングマンの家/フライングマンの家
+;@Person:フライングマン4
 ;@Figure:フライングマン
 ;@AppearanceKey:FLG_FLYINGMAN_4/off
 ;@ActionScript:◆小範囲うろつき
@@ -219,8 +219,8 @@ MSG_MGKT_PENDANT;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_FLYINGMAN_4
 
-;@Habitat:マジカント／フライングマンの家／フライングマンの家
-;@Person:フライングマン５
+;@Habitat:マジカント/フライングマンの家/フライングマンの家
+;@Person:フライングマン5
 ;@Figure:フライングマン
 ;@AppearanceKey:FLG_FLYINGMAN_5/off
 ;@ActionScript:◆小範囲うろつき
@@ -228,8 +228,8 @@ MSG_MGKT_PENDANT;
 ;@CheckMessage:0
 ;@Message:MSG_MGKT_FLYINGMAN_5
 
-；----------------------------------------
-;@Habitat:マジカント／ホテル／ホテル
+;----------------------------------------
+;@Habitat:マジカント/ホテル/ホテル
 ;@Person:マジc宿主
 ;@Figure:マジカントのトリ
 ;@AppearanceKey:0
@@ -267,7 +267,7 @@ _MGKT_C_NO;
 』
 
 _MGKT_C_YES;
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @WARP(WARP_YADOYA_MGKT)
 @!
@@ -281,8 +281,8 @@ _MGKT_C_AFTER;
 @!
 
 
-；----------------------------------------
-;@Habitat:マジカント／マイホーム／部屋１
+;----------------------------------------
+;@Habitat:マジカント/マイホーム/部屋1
 ;@Person:マジeママ
 ;@Figure:ネスのママ
 ;@AppearanceKey:0
@@ -308,7 +308,7 @@ _MGKT_E_NO;
 ;jpn:◆そうね。つかれたなんて↓
 ;jpn: いってられないわね。@WI(20)↓
 ;jpn: しっかり!@WI(20) @DSP_STS(STS_PC_NAME_NES)。@KEY()
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 ;@GOSUB(MSG_SUB_ALLHEAL_POWR)
 ;@GOSUB(MSG_GLOBAL_MYHOME)
 ;@CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
@@ -323,7 +323,7 @@ _MGKT_E_YES;
 ;jpn:◆それなら いつまでも↓
 ;jpn: ここにいていいのよ。@WI(20)↓
 ;jpn: @DSP_STS(STS_PARTY_FAVORITE_FOODS)も つくるわ。@KEY()
-;体力回復(暗転ワープあり、BGM２、夜鍋あり、セリフ替えなし)
+;体力回復(暗転ワープあり、BGM2、夜鍋あり、セリフ替えなし)
 @GOSUB(MSG_SUB_ALLHEAL_POWR)
 @GOSUB(MSG_GLOBAL_MYHOME)
 @CLRF(FLG_HOTEL_PAPERBOY_APPEAR)
@@ -332,7 +332,7 @@ _MGKT_E_YES;
 』
 
 
-;@Habitat:マジカント／マイホーム／部屋２
+;@Habitat:マジカント/マイホーム/部屋2
 ;@Person:マジf妹トレーシー
 ;@Figure:トレーシー
 ;@AppearanceKey:0
@@ -358,7 +358,7 @@ MSG_MGKT_F;
 @GOTO(MSG_TRACY_GLOBAL_START);汎用のトレーシー呼び出し(三浦)
 
 
-;@Habitat:マジカント／マイホーム／部屋２
+;@Habitat:マジカント/マイホーム/部屋2
 ;@Person:マジi
 ;@Figure:ネスの犬
 ;@AppearanceKey:0
@@ -379,8 +379,8 @@ MSG_MGKT_I;
 ;jpn: もっと よわむしだったんだ)@KEYNP()
 』
 
-；----------------------------------------
-;@Habitat:マジカント／電話CDの部屋／電話CDの部屋
+;----------------------------------------
+;@Habitat:マジカント/電話CDの部屋/電話CDの部屋
 ;@Person:鳥A
 ;@Figure:ヒヨコ
 ;@AppearanceKey:0
@@ -402,7 +402,7 @@ MSG_MGKT_BIRD_A;
 ;jpn: いつも きいていたのよ)@KEYNP()
 』
 
-;@Habitat:マジカント／電話CDの部屋／電話CDの部屋
+;@Habitat:マジカント/電話CDの部屋/電話CDの部屋
 ;@Person:キャッシュディスペンサ
 ;@Figure:CD
 ;@AppearanceKey:0
@@ -411,7 +411,7 @@ MSG_MGKT_BIRD_A;
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-;@Habitat:マジカント／電話CDの部屋／電話CDの部屋
+;@Habitat:マジカント/電話CDの部屋/電話CDの部屋
 ;@Person:公衆電話
 ;@Figure:電話ボックス
 ;@AppearanceKey:0
@@ -420,8 +420,8 @@ MSG_MGKT_BIRD_A;
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-；----------------------------------------
-;@Habitat:マジカント／フィールド／初めて会う所
+;----------------------------------------
+;@Habitat:マジカント/フィールド/初めて会う所
 ;@Person:マジa
 ;@Figure:マジカントの人
 ;@AppearanceKey:0
@@ -441,7 +441,7 @@ MSG_MGKT_A;
 @SET_PALLETSET(31,5,60);黄色黒
 』
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:マジd幼いネス
 ;@Figure:キャップ
 ;@AppearanceKey:0
@@ -466,7 +466,7 @@ MSG_MGKT_D;
 @SET_PALLETSET(31,3,60);オレンジ
 』
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:マジg敵キャラ
 ;@Figure:ゾンビ
 ;@AppearanceKey:0
@@ -484,7 +484,7 @@ MSG_MGKT_G;
 @SET_PALLETSET(31,2,60);こげ茶黒
 』        
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:マジh敵キャラ
 ;@Figure:大ムッド
 ;@AppearanceKey:0
@@ -502,7 +502,7 @@ MSG_MGKT_H;
 @SET_PALLETSET(31,6,60);ピンク青
 』
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:マジj敵キャラ
 ;@Figure:半魚人
 ;@AppearanceKey:0
@@ -520,7 +520,7 @@ MSG_MGKT_J;
 @SET_PALLETSET(31,6,60);ピンク青
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk1
 ;@Figure:ヘルメット
 ;@AppearanceKey:0
@@ -537,7 +537,7 @@ MSG_MGKT_K_1;
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk2
 ;@Figure:ハット
 ;@AppearanceKey:0
@@ -554,7 +554,7 @@ MSG_MGKT_K_2;
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk3
 ;@Figure:ダンゴ
 ;@AppearanceKey:0
@@ -572,7 +572,7 @@ MSG_MGKT_K_3;0
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk4
 ;@Figure:ピッキー
 ;@AppearanceKey:0
@@ -590,7 +590,7 @@ MSG_MGKT_K_4;
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk5
 ;@Figure:リボン
 ;@AppearanceKey:0
@@ -605,7 +605,7 @@ MSG_MGKT_K_5;
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk6
 ;@Figure:さる
 ;@AppearanceKey:0
@@ -620,7 +620,7 @@ MSG_MGKT_K_6;
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk7
 ;@Figure:インディー
 ;@AppearanceKey:0
@@ -638,7 +638,7 @@ MSG_MGKT_K_7;
 ;@SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／団体幼児
+;@Habitat:マジカント/フィールド/団体幼児
 ;@Person:マジk8
 ;@Figure:マジカントの人
 ;@AppearanceKey:0
@@ -656,7 +656,7 @@ MSG_MGKT_K_8;
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:マジlネス自身
 ;@Figure:ネス
 ;@AppearanceKey:0
@@ -701,7 +701,7 @@ _MGKT_L_LATER;
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:鳥B
 ;@Figure:ヒヨコ
 ;@AppearanceKey:0
@@ -719,7 +719,7 @@ MSG_MGKT_BIRD_B;
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:花々
 ;@Figure:マジカントの花
 ;@AppearanceKey:0
@@ -738,8 +738,8 @@ MSG_MGKT_FLOWER;
 @SET_PALLETSET(5,0,60);ノーマル
 』
 
-;@Habitat:マジカント／フィールド／フライング家の前
-;@Person:フライング墓１
+;@Habitat:マジカント/フィールド/フライング家の前
+;@Person:フライング墓1
 ;@Figure:フライングマンの墓
 ;@AppearanceKey:FLG_SYS_FLYINGMAN_DEAD_A
 ;@ActionScript:◆固定
@@ -755,8 +755,8 @@ MSG_MGKT_TOMB1;
 ;jpn: よくたたかい きずつきたおれた。@KEYNP()
 』
 
-;@Habitat:マジカント／フィールド／フライング家の前
-;@Person:フライング墓２
+;@Habitat:マジカント/フィールド/フライング家の前
+;@Person:フライング墓2
 ;@Figure:フライングマンの墓
 ;@AppearanceKey:FLG_SYS_FLYINGMAN_DEAD_B
 ;@ActionScript:◆固定
@@ -775,8 +775,8 @@ MSG_MGKT_TOMB2;
 ;jpn: ついに たおれた。@KEYNP()
 』
 
-;@Habitat:マジカント／フィールド／フライング家の前
-;@Person:フライング墓３
+;@Habitat:マジカント/フィールド/フライング家の前
+;@Person:フライング墓3
 ;@Figure:フライングマンの墓
 ;@AppearanceKey:FLG_SYS_FLYINGMAN_DEAD_C
 ;@ActionScript:◆固定
@@ -792,8 +792,8 @@ MSG_MGKT_TOMB3;
 ;jpn: きざむひまもなかった。@KEYNP()
 』
 
-;@Habitat:マジカント／フィールド／フライング家の前
-;@Person:フライング墓４
+;@Habitat:マジカント/フィールド/フライング家の前
+;@Person:フライング墓4
 ;@Figure:フライングマンの墓
 ;@AppearanceKey:FLG_SYS_FLYINGMAN_DEAD_D
 ;@ActionScript:◆固定
@@ -806,8 +806,8 @@ MSG_MGKT_TOMB4;
 ;jpn:◆だれかの はか。@KEYNP()
 』
 
-;@Habitat:マジカント／フィールド／フライング家の前
-;@Person:フライング墓５
+;@Habitat:マジカント/フィールド/フライング家の前
+;@Person:フライング墓5
 ;@Figure:フライングマンの墓
 ;@AppearanceKey:FLG_SYS_FLYINGMAN_DEAD_E
 ;@ActionScript:◆固定
@@ -821,8 +821,8 @@ MSG_MGKT_TOMB5;
 @SETF(FLG_MGKT_TOMB6)
 』
 
-;@Habitat:マジカント／フィールド／フライング家の前
-;@Person:ブンブーンの墓６
+;@Habitat:マジカント/フィールド/フライング家の前
+;@Person:ブンブーンの墓6
 ;@Figure:フライングマンの墓
 ;@AppearanceKey:FLG_MGKT_TOMB6
 ;@ActionScript:◆固定
@@ -840,7 +840,7 @@ MSG_MGKT_TOMB6;
 』
 
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:老人A
 ;@Figure:マジカントの老人
 ;@AppearanceKey:0
@@ -868,7 +868,7 @@ MSG_MGKT_OLDMAN_A;
 @SET_PALLETSET(31,5,60);黄色黒
 』
 
-;@Habitat:マジカント／フィールド／適当なところ
+;@Habitat:マジカント/フィールド/適当なところ
 ;@Person:老人B
 ;@Figure:マジカントの老人
 ;@AppearanceKey:0
@@ -887,7 +887,7 @@ MSG_MGKT_OLDMAN_B;
 ◆It takes you to the truth about yourself.
 @KEYNP()
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES) おまえは↓
-;jpn: ちきゅうの８つのパワースポット↓
+;jpn: ちきゅうの8つのパワースポット↓
 ;jpn: すべてに たった。@KEY()↓
 ;jpn:◆そのことが この こころのくに↓
 ;jpn: マジカントを うみだす↓
@@ -905,7 +905,7 @@ MSG_MGKT_OLDMAN_B;
 @SET_PALLETSET(31,6,60);雪
 』
 
-;@Habitat:マジカント／フィールド／エデンの塔
+;@Habitat:マジカント/フィールド/エデンの塔
 ;@Person:黄金のオスカー像
 ;@Figure:黄金のオスカー
 ;@AppearanceKey:FLG_WIN_OSCAR/off
@@ -968,7 +968,7 @@ MSG_MGKT_WIN_OSCAR_THEVOICE;「声」
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(5)
 ◆The Apple of Enlightenment has foretold@KEY()↓
 ;jpn:◆ギーグのもっている↓
-;jpn: よげんマシン「ちえのリンゴ」は@KEY()↓;「よげんマシン＝ちえのリンゴ」は
+;jpn: よげんマシン「ちえのリンゴ」は@KEY()↓;「よげんマシン=ちえのリンゴ」は
 @GOSUB( MSG_FRESH_WSYS_COLD );			;(6)
 ◆that Giygas’ attempt will fail.@KEY()↓
 ;jpn:◆ギーグのたくらみが↓
@@ -1164,7 +1164,7 @@ MSG_CHECK_MGKT_DOKAN_B;
 @WARP(WARP_MGKT_DOKAN_MGKT)
 @!
 ;------------------------------------------------
-MSG_MGKT_SOUNDSTONE_BROKE;＄音の石消える(マジカント後)
+MSG_MGKT_SOUNDSTONE_BROKE;$音の石消える(マジカント後)
 @OPEN(1)
 ◆The @DSP_GOODS(GDS_TOOL_SOUND_STONE) that @DSP_NAME(PC_NESS) used to have is now gone.
 @KEYNP()

@@ -1103,7 +1103,7 @@ MSG_SUB_SHOPMES_DRUG1_8;
 MSG_SUB_SHOPMES_TOYSHOP_8;
 ◆Would you like me to buy↓
   the @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0)?@KEY()↓
+  for @XCHG()$@DSP_NUM(0)?@KEY()↓
 
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
@@ -1155,7 +1155,7 @@ MSG_SUB_SHOPMES_DRUG1_14;
 MSG_SUB_SHOPMES_TOYSHOP_14;
 ◆@DSP_GOODS(0)?↓
   I can buy it↓
-  for @XCHG()＄@DSP_NUM(0).@KEY()↓
+  for @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆Would you like to do that?↓
 
 ;jpn:◆@DSP_GOODS(0)ですね。↓
@@ -1264,7 +1264,7 @@ MSG_SUB_SHOPMES_DRUG2_7;
 MSG_SUB_SHOPMES_DRUG2_8;
 ◆I can buy your↓
   @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0).@KEY()↓
+  for @XCHG()$@DSP_NUM(0).@KEY()↓
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
 ;jpn: @DSP_NUM(0)ドルで@KEY()↓
@@ -1312,7 +1312,7 @@ MSG_SUB_SHOPMES_DRUG2_13;
 @!
 MSG_SUB_SHOPMES_DRUG2_14;
 ◆The @DSP_GOODS(0)?↓
-  I’ll buy it for @XCHG()＄@DSP_NUM(0).@KEY()↓
+  I’ll buy it for @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆Do you wanna sell it?↓
 ;jpn:◆@DSP_GOODS(0)ね。↓
 ;@XCHG()
@@ -1420,7 +1420,7 @@ MSG_SUB_SHOPMES_DRUG3_7;
 MSG_SUB_SHOPMES_DRUG3_8;
 ◆Can I buy your↓
   @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0)?↓
+  for @XCHG()$@DSP_NUM(0)?↓
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
 ;jpn: @DSP_NUM(0)ドルでかいあげようか?↓
@@ -1466,7 +1466,7 @@ MSG_SUB_SHOPMES_DRUG3_13;
 @!
 MSG_SUB_SHOPMES_DRUG3_14;
 ◆The @DSP_GOODS(0)?↓
-  I’ll buy it for @XCHG()＄@DSP_NUM(0).@KEY()↓
+  I’ll buy it for @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆You positive you want to sell it?↓
 ;jpn:◆@DSP_GOODS(0)だねー!@KEY()↓
 ;@XCHG()
@@ -1567,7 +1567,7 @@ MSG_SUB_SHOPMES_DRUG4_7;
 MSG_SUB_SHOPMES_DRUG4_8;
 ◆Do you want me to buy↓
   your @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0)?@KEY()↓
+  for @XCHG()$@DSP_NUM(0)?@KEY()↓
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
 ;jpn: @DSP_NUM(0)ドルで@KEY()↓
@@ -1609,7 +1609,7 @@ MSG_SUB_SHOPMES_DRUG4_13;
 @!
 MSG_SUB_SHOPMES_DRUG4_14;
 ◆@DSP_GOODS(0)?↓
-  I’ll pay @XCHG()＄@DSP_NUM(0) for it.@KEY()↓
+  I’ll pay @XCHG()$@DSP_NUM(0) for it.@KEY()↓
 ◆Is that okay?↓
 ;jpn:◆@DSP_GOODS(0)ね。@KEY()↓
 ;@XCHG()
@@ -1709,7 +1709,7 @@ MSG_SUB_SHOPMES_DRUG5_7;
 MSG_SUB_SHOPMES_DRUG5_8;
 ◆I’ll buy↓
   your @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0).↓
+  for @XCHG()$@DSP_NUM(0).↓
 ;jpn:◆@DSP_GOODS(0)なら↓
 ;@XCHG()
 ;jpn: @DSP_NUM(0)ドルでひきとるけど?↓
@@ -1750,7 +1750,7 @@ MSG_SUB_SHOPMES_DRUG5_13;
 @!
 MSG_SUB_SHOPMES_DRUG5_14;
 ◆@DSP_GOODS(0)?↓
-  I’ll give you @XCHG()＄@DSP_NUM(0).@KEY()↓
+  I’ll give you @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆How would that be?↓
 ;jpn:◆@DSP_GOODS(0)か‥‥@KEY()↓
 ;@XCHG()
@@ -1855,7 +1855,7 @@ MSG_SUB_SHOPMES_DRUG6_7;
 MSG_SUB_SHOPMES_DRUG6_8;
 ◆Would ye like it if I bought yer↓
   @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0)?↓
+  for @XCHG()$@DSP_NUM(0)?↓
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
 ;jpn: @DSP_NUM(0)ドルでひきとろうか?↓
@@ -1896,7 +1896,7 @@ MSG_SUB_SHOPMES_DRUG6_13;
 @!
 MSG_SUB_SHOPMES_DRUG6_14;
 ◆@DSP_GOODS(0)?
-  I would pay @XCHG()＄@DSP_NUM(0).@KEY()↓
+  I would pay @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆Are ye happy with my offer?↓
 ;jpn:◆@DSP_GOODS(0)か。↓
 ;@XCHG()
@@ -1996,7 +1996,7 @@ MSG_SUB_SHOPMES_DRUG7_7;
 @!
 MSG_SUB_SHOPMES_DRUG7_8;
 ◆Would you be interested in selling your @DSP_GOODS(0)@KEY()↓
-◆for @XCHG()＄@DSP_NUM(0)?↓
+◆for @XCHG()$@DSP_NUM(0)?↓
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
 ;jpn: @DSP_NUM(0)ドルで↓
@@ -2037,7 +2037,7 @@ MSG_SUB_SHOPMES_DRUG7_13;
 MSG_SUB_SHOPMES_DRUG7_14;
 ◆@DSP_GOODS(0)?↓
   Ahhh, I would pay you...↓
-  @XCHG()＄@DSP_NUM(0) for that.@KEY()↓
+  @XCHG()$@DSP_NUM(0) for that.@KEY()↓
 ◆A trifle, I realize, but do you accept?↓
 ;jpn:◆@DSP_GOODS(0)ですね。↓
 ;@XCHG()
@@ -2148,7 +2148,7 @@ MSG_SUB_SHOPMES_DRUG8_7;
 MSG_SUB_SHOPMES_DRUG8_8;
 ◆I can buy your↓
   @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0).@KEY()↓
+  for @XCHG()$@DSP_NUM(0).@KEY()↓
 ;jpn:◆@DSP_GOODS(0)を↓
 ;@XCHG()
 ;jpn: @DSP_NUM(0)ドルでかいあげましょか?↓
@@ -2191,7 +2191,7 @@ MSG_SUB_SHOPMES_DRUG8_13;
 MSG_SUB_SHOPMES_DRUG8_14;
 ◆@DSP_GOODS(0)?↓
   I’d say it’s worth about...↓
-  @XCHG()＄@DSP_NUM(0).@KEY()↓
+  @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆Whaddya say, partner?↓
 ;jpn:◆@DSP_GOODS(0)でっか↓
 ;@XCHG()
@@ -2318,7 +2318,7 @@ MSG_SUB_SHOPMES_WEAPON_7;
 @!
 MSG_SUB_SHOPMES_WEAPON_8;
 ◆The @DSP_GOODS(0)....?↓
-  I’d say about @XCHG()＄@DSP_NUM(0).↓
+  I’d say about @XCHG()$@DSP_NUM(0).↓
   Take it or leave it.@KEY()↓
 ;jpn:◆@DSP_GOODS(0)か‥‥↓
 ;@XCHG()
@@ -2363,7 +2363,7 @@ MSG_SUB_SHOPMES_WEAPON_13;
 @!
 MSG_SUB_SHOPMES_WEAPON_14;
 ◆@DSP_GOODS(0)?↓
-  I’ll give you @XCHG()＄@DSP_NUM(0), and not a penny more.@KEY()↓
+  I’ll give you @XCHG()$@DSP_NUM(0), and not a penny more.@KEY()↓
 ◆Take it or leave it.↓
 ;jpn:◆@DSP_GOODS(0)か。@WI(20)↓
 ;@XCHG()
@@ -2506,7 +2506,7 @@ MSG_SUB_SHOPMES_DOSEI_8;
 ◆@DSP_GOODS(0)?@KEY()↓
 ◆Uhh,↓
   that one is↓
-  @XCHG()＄@DSP_NUM(0).@KEY()↓
+  @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆What think you about@KEY()↓
 ◆that price...zoom?↓
 ;◆@DSP_GOODS(0)↓
@@ -2592,7 +2592,7 @@ MSG_SUB_SHOPMES_DOSEI_14;
 ;akimiura
 ◆The most↓
   us pay that↓
-  is @XCHG()＄@DSP_NUM(0).@KEY()↓
+  is @XCHG()$@DSP_NUM(0).@KEY()↓
 ◆That kay−o↓
   on you?@KEY()↓
 ◆Ding! Ding!↓
@@ -2750,7 +2750,7 @@ MSG_SUB_SHOPMES_GUMI_7
 MSG_SUB_SHOPMES_GUMI_8;
 ◆Do you want me to buy
   your @DSP_GOODS(0)↓
-  for @XCHG()＄@DSP_NUM(0)?↓
+  for @XCHG()$@DSP_NUM(0)?↓
 
 ;jpn:◆@DSP_GOODS(0)を↓			;7/26に修正
 ;@XCHG()
@@ -2773,8 +2773,8 @@ MSG_SUB_SHOPMES_GUMI_10;
 @KEY()↓
 @!
 ;※
-MSG_SUB_SHOPMES_GUMI_11;＠
-◆(Sir／Ma’am), it appears you do not have the money necessary for this transaction.@KEY()↓
+MSG_SUB_SHOPMES_GUMI_11;@
+◆(Sir/Ma’am), it appears you do not have the money necessary for this transaction.@KEY()↓
 ;jpn:◆おかね たりないだよ。@KEY()↓
 ;◆えはがきみてぇなの↓
 ; (おさつのことらしい)が↓
@@ -2804,7 +2804,7 @@ MSG_SUB_SHOPMES_GUMI_13;
 @!
 MSG_SUB_SHOPMES_GUMI_14;
 ◆@DSP_GOODS(0)?↓
-  I’m authorized to pay up to @XCHG()＄@DSP_NUM(0) for that.@KEY()↓
+  I’m authorized to pay up to @XCHG()$@DSP_NUM(0) for that.@KEY()↓
 ◆How about it?↓
 
 ;jpn:◆@DSP_GOODS(0)だな。↓
@@ -2828,7 +2828,7 @@ MSG_SUB_SHOPMES_GUMI_17;
 ;jpn:◆わりいね。↓
 ;jpn: それは ひきとれないんだーよ。@KEY()↓
 @!
-MSG_SUB_SHOPMES_GUMI_18;＠三浦
+MSG_SUB_SHOPMES_GUMI_18;@三浦
 ◆Thank you very much, sir.@KEY()↓
 
 ;jpn:◆ありがとな。@KEY()↓

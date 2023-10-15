@@ -1,6 +1,6 @@
 ;-----------------------------------------
 
-;@Habitat:ウィンタース／寄宿舎／Tonyの部屋
+;@Habitat:ウィンタース/寄宿舎/Tonyの部屋
 ;@Person:寝ているトニー
 ;@Figure:寝ているトニー
 ;@AppearanceKey:FLG_WINS_TONY/off
@@ -21,7 +21,7 @@ MSG_WINS_TONY_IN_BED;
 』
 
 
-;@Habitat:ウィンタース／寄宿舎／Tonyの部屋
+;@Habitat:ウィンタース/寄宿舎/Tonyの部屋
 ;@Person:寝ているジェフ
 ;@Figure:寝ているジェフ
 ;@AppearanceKey:FLG_WINS_START/off
@@ -30,7 +30,7 @@ MSG_WINS_TONY_IN_BED;
 ;@CheckMessage:0
 ;@Message:0
 
-;@Habitat:ウィンタース／寄宿舎／サイエンスクラブ室
+;@Habitat:ウィンタース/寄宿舎/サイエンスクラブ室
 ;@Person:ガウス
 ;@Figure:ジミな男
 ;@AppearanceKey:FLG_PU/off
@@ -92,7 +92,7 @@ MSG_WINS_GAUS;
 @CLOSEALL()
 』
 
-_WINS_GAUS_CHOTTO;ガウスさんのメッセージ２回目
+_WINS_GAUS_CHOTTO;ガウスさんのメッセージ2回目
 @GOODSOUT(PC_ALL,GDS_TOOL_KEY_LOCKER)
 ◆Hah, ha, ha.  The key didn’t work, did it?@KEY()↓
 ◆I thought that might be the case.@WI(15)  So I just invented@WI(10) the...@KEY()↓
@@ -163,7 +163,7 @@ _WINS_GAUS_LATER_2;
 』
 
 
-;@Habitat:ウィンタース／寄宿舎／ロビー
+;@Habitat:ウィンタース/寄宿舎/ロビー
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
@@ -172,8 +172,8 @@ _WINS_GAUS_LATER_2;
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-；----------------------------------------
-;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;----------------------------------------
+;@Habitat:ウィンタース/ドラッグストア/ドラッグストア
 ;@Person:コンビニ店員A
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
@@ -186,7 +186,7 @@ MSG_WINS_DRUGSTORE;@MiuraAppended
 @GOSUB(MSG_SHOP_WINS_DRUG)
 』
 
-;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Habitat:ウィンタース/ドラッグストア/ドラッグストア
 ;@Person:コンビニ店員B
 ;@Figure:OLG
 ;@AppearanceKey:0
@@ -208,7 +208,7 @@ MSG_WINS_NANCY;ガムはガウスさんにもらう形に変更したし(現金�
 ;jpn: うるさいから あげますよ。@KEY()↓
 ;jpn:◆フーセンガムを かってくれたら↓;
 ;jpn: おまけに さしあげます。@KEY()↓
-;jpn:◆１ドルですが↓
+;jpn:◆1ドルですが↓
 ;jpn: かってくれますか?↓
 ;jpn:<はい>
 ;jpn:<いいえ>
@@ -244,7 +244,7 @@ _WINS_NANCY_NOMONEY;
 ◆What?@WI(20)  You don’t even have a buck?@KEY()↓
 ◆Then, I’ll let you have the monkey for free.@KEY()↓
 ;jpn:◆あららっ おかね↓
-;jpn: １ドルも もってないんですか?@KEY()↓
+;jpn: 1ドルも もってないんですか?@KEY()↓
 ;jpn:◆ならば とくべつに↓
 ;jpn: ただで あげるわよ。@KEY()↓
 @Q_GOODSFULL(PC_ALL)
@@ -279,7 +279,7 @@ _WINS_NANCY_2;
 』
 
 
-;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Habitat:ウィンタース/ドラッグストア/ドラッグストア
 ;@Person:コンビニの客
 ;@Figure:
 ;@AppearanceKey:0
@@ -287,7 +287,7 @@ _WINS_NANCY_2;
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_WINS_A
-MSG_WINS_A;＃
+MSG_WINS_A;#
 ;コンビニの客
 @CHKFGOTO(FLG_ITEM_BUBBLE_GUM,_WINS_A_LATER)
 ◆The bubble gum here is incredible.@KEY()↓
@@ -296,13 +296,13 @@ MSG_WINS_A;＃
 ;jpn:◆ここでうってる フーセンガムは↓
 ;jpn: よくふくらむんだよねー。@KEYNP()
 』
-_WINS_A_LATER;＆
+_WINS_A_LATER;&
 ◆Is it cold outside?
 ;jpn:◆そと@WI(15) さむい?@KEYNP()
 @KEYNP()
 』
 
-;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Habitat:ウィンタース/ドラッグストア/ドラッグストア
 ;@Person:バルーンモンキー
 ;@Figure:バルーンモンキー
 ;@AppearanceKey:FLG_BALLOONMONKEY/off
@@ -324,7 +324,7 @@ _WINS_BALLOONMONKEY_GUM;
 ◆(The monkey got a piece of bubble gum from @DSP_NAME(PC_JEFF) and blew a bubble!)@KEY()
 ;jpn:◆キャッキャッ(ガムくれ)。@KEY()↓
 ;jpn:◆(サルは @DSP_STS(STS_PC_NAME_JEFF)の↓
-;jpn: フーセンガムを １まい↓
+;jpn: フーセンガムを 1まい↓
 ;jpn: うばいとって ふくらませた)@KEY()↓
 @CLOSEALL()
 @SETF(FLG_WINS_BMONKEY_DISAPPEAR)
@@ -335,7 +335,7 @@ _WINS_BALLOONMONKEY_GUM;
 』
 
 
-;@Habitat:ウィンタース／ドラッグストア／ドラッグストア
+;@Habitat:ウィンタース/ドラッグストア/ドラッグストア
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
@@ -344,8 +344,8 @@ _WINS_BALLOONMONKEY_GUM;
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-；----------------------------------------
-;@Habitat:ウィンタース／タッシー隊テントA／タッシー隊テントA
+;----------------------------------------
+;@Habitat:ウィンタース/タッシー隊テントA/タッシー隊テントA
 ;@Person:食事係の隊員
 ;@Figure:タッシー隊A
 ;@AppearanceKey:0
@@ -427,7 +427,7 @@ MSG_WINS_MONKEY_GUM;食事の後入り江に近づくとサルがしゃべりだ
 
 
 
-;@Habitat:ウィンタース／タッシー隊テントC／タッシー隊テントC
+;@Habitat:ウィンタース/タッシー隊テントC/タッシー隊テントC
 ;@Person:名もない隊員
 ;@Figure:タッシー隊A
 ;@AppearanceKey:0
@@ -440,7 +440,7 @@ MSG_WINS_WATCHERS_D;
 @CHKFGOTO(FLG_SEBASTIAN_DISAPPEAR,_WINS_WATCHERS_D_AFTER)
 @CHKFGOTO(FLG_WINS_TASCO_ACROSS,_WINS_WATCHERS_D_LATER)
 ◆If I find Tessie, do you think I’ll get in the newspaper?@KEY()↓
-◆I’m looking for my １５ minutes of fame...
+◆I’m looking for my 15 minutes of fame...
 ;jpn:◆タッシーをはっけんしたら↓
 ;jpn: しんぶんにでますかねぇ‥‥。@WI(15)↓
 ;jpn: わたしは めだちたくないもので。
@@ -464,7 +464,7 @@ _WINS_WATCHERS_D_AFTER;
 』
 
 
-;@Habitat:ウィンタース／タッシー隊テントC／タッシー隊テントC
+;@Habitat:ウィンタース/タッシー隊テントC/タッシー隊テントC
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
@@ -473,8 +473,8 @@ _WINS_WATCHERS_D_AFTER;
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-；----------------------------------------
-;@Habitat:ウィンタース／アンドーナッツ研究所／１階
+;----------------------------------------
+;@Habitat:ウィンタース/アンドーナッツ研究所/1階
 ;@Person:アンドーナッツ博士
 ;@Figure:アンドーナッツ博士
 ;@AppearanceKey:FLG_PU/off
@@ -491,7 +491,7 @@ MSG_WINS_ANDONUT;
 @CHKFGOTO(FLG_WINS_ANDONUT,_WINS_ANDONUT_2B)
 ◆Mr. Brickroad, the dungeon maker referred you, right?@KEY()↓
 ◆And not only that...What?@WI(15)  Who?@WI(15)  My son?@WI(20)  Oh...I...can’t... I can’t believe it...@KEY()↓
-◆You’re @DSP_NAME(PC_JEFF), my son.@WI(15)  It’s been maybe １０ years since I last saw you.@KEY()↓
+◆You’re @DSP_NAME(PC_JEFF), my son.@WI(15)  It’s been maybe 10 years since I last saw you.@KEY()↓
 ◆I’m so glad you’re such a healthy boy.@KEY()↓
 ◆Uh, those glasses look good on you.@KEY()↓
 ◆How about a donut?↓
@@ -502,7 +502,7 @@ MSG_WINS_ANDONUT;
 ;jpn:◆?@WI(20) それだけじゃない‥‥と。@WI(15)↓
 ;jpn: むすこ?@WI(15) むすこって‥‥あの‥‥↓
 ;jpn: あ@WI(15) そうか @DSP_STS(STS_PC_NAME_JEFF)か。@KEY()↓
-;jpn:◆１０ねんくらいぶりだな。@WI(15)↓
+;jpn:◆10ねんくらいぶりだな。@WI(15)↓
 ;jpn: おたがい よくいきていたもんだ。↓
 ;jpn: めがねが にあうな。@KEY()↓
 ;jpn:◆ドーナッツが たべたいか?↓
@@ -564,7 +564,7 @@ _WINS_ANDONUT_2;
 ;jpn: あてにしていたに ちがいない。@WI(15)↓
 ;jpn: よし。なんとかしてみよう。@KEY()↓
 ;jpn:◆わたしが けんきゅうしているのは↓
-;jpn: じくうかんの にんいの２てんを↓
+;jpn: じくうかんの にんいの2てんを↓
 ;jpn: つなげてしまう@KEY()↓
 ;jpn:◆スペーストンネルなのだが‥‥↓
 ;jpn: それは まだ みかんせいなのだ。@KEY()↓
@@ -579,9 +579,9 @@ _WINS_ANDONUT_2;
 ;jpn:◆どうだ カッコイイだろう。@WI(15)↓
 ;jpn: のりなさい。@KEY()↓
 _WINS_ANDONUT_2B;
-◆Let’s get together again in １０ years or so.
+◆Let’s get together again in 10 years or so.
 @KEYNP()
-;jpn:◆１０ねんいないに またあおう!@KEYNP()
+;jpn:◆10ねんいないに またあおう!@KEYNP()
 @REMOVE_CHAR(PRSN_WINS_LABO_1F_4A,ANIM_SW_WINS)
 @SETF(FLG_WINS_ANDONUT)
 』
@@ -708,7 +708,7 @@ _WINS_ANDONUT_RAIN_FIXED;レイニーサークルのボスを倒したら
 ;jpn: いくことが できるぞ。@KEY()↓
 ;jpn:◆こんどは‥‥@WI(15)たぶん‥‥@WI(20)↓
 ;jpn: ‥‥こわれないとおもう。@KEYNP()
-;スカイウォーカー２に乗れる
+;スカイウォーカー2に乗れる
 @REMOVE_CHAR(PRSN_WINS_LABO_1F_4A,ANIM_SW2_WINS)
 』
 ;_DOSEI_ANDONUT_3;
@@ -719,7 +719,7 @@ _WINS_ANDONUT_RAIN_FIXED;レイニーサークルのボスを倒したら
 ;』
 ;-----------------------------------------------
 
-;@Habitat:ウィンタース／アンドーナッツ研究所／１階
+;@Habitat:ウィンタース/アンドーナッツ研究所/1階
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
@@ -728,7 +728,7 @@ _WINS_ANDONUT_RAIN_FIXED;レイニーサークルのボスを倒したら
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-;@Habitat:ウィンタース／アンドーナッツ研究所／１階
+;@Habitat:ウィンタース/アンドーナッツ研究所/1階
 ;@Person:スカイウォーカー
 ;@Figure:スカイウォーカー
 ;@AppearanceKey:0
@@ -737,8 +737,8 @@ _WINS_ANDONUT_RAIN_FIXED;レイニーサークルのボスを倒したら
 ;@CheckMessage;0
 ;@Message:0
 
-；----------------------------------------
-;@Habitat:ウィンタース／フィールド／寄宿舎前
+;----------------------------------------
+;@Habitat:ウィンタース/フィールド/寄宿舎前
 ;@Person:トニーを探すガウス
 ;@Figure:ジミな男
 ;@AppearanceKey:FLG_PU/on
@@ -790,7 +790,7 @@ _WINS_GAUS_B_JEFF_DEAD;
 ;jpn: かのうせいも あるなぁ。@KEYNP()
 』
 
-;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Habitat:ウィンタース/フィールド/タッシー隊テント付近
 ;@Person:隊員A
 ;@Figure:タッシー隊B
 ;@AppearanceKey:0
@@ -817,7 +817,7 @@ MSG_WINS_WATCHERS_A;
 』
 _WINS_WATCHERS_A_TMP;
 ◆This is what we’ve been waiting for!@WI(15)  Finally...it’s coming out!@KEY()↓
-◆...@WI(30)＊fart＊...@WI(15)’scuse me...@KEY()↓
+◆...@WI(30)*fart*...@WI(15)’scuse me...@KEY()↓
 ◆Tessie is emerging!
 @KEYNP()
 ;jpn:◆これは‥‥@WI(20)いよいよ‥‥↓
@@ -832,7 +832,7 @@ _WINS_WATCHERS_A_TMP;
 ; たーしかに いた!@KEY()↓
 ;◆あれが「タスこ」の↓
 ; でんせつの タッシーですよ!@WI(15)↓
-; わたしは １０ねんも まって‥‥@KEY()↓
+; わたしは 10ねんも まって‥‥@KEY()↓
 ;◆まって‥‥まちつづけて@WI(15)↓
 ; やっと このめで みた!@WI(20)↓
 ; なみだが でてきましたよ。@KEYNP()
@@ -861,7 +861,7 @@ _WINS_WATCHERS_A3;
 ;トニー等救出後
 ◆I’m so glad I finally saw it.@KEY()↓
 ◆I’m so happy, it brings tears to my eyes and makes my nose run.@KEY()↓
-◆Boo hoo hoo.@WI(20) ＊snort＊ Boo hoo...
+◆Boo hoo hoo.@WI(20) *snort* Boo hoo...
 @KEYNP()
 ;jpn:◆かんどうです。↓
 ;jpn: ついにみたんですよ。@KEY()↓
@@ -871,7 +871,7 @@ _WINS_WATCHERS_A3;
 』
 
 
-;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Habitat:ウィンタース/フィールド/タッシー隊テント付近
 ;@Person:隊員B
 ;@Figure:タッシー隊A
 ;@AppearanceKey:0
@@ -924,7 +924,7 @@ _WINS_WATCHERS_B2;
 @KEYNP()
 ;jpn:◆さらわれた@WI(15)↓
 ;jpn: なかまのなまえは セバスチャン。@WI(15)↓
-;jpn: ５・７・５で いってみました。@KEYNP()
+;jpn: 5・7・5で いってみました。@KEYNP()
 』
 
 _WINS_WATCHERS_B3;松(Haikuの意味通じない?)
@@ -936,10 +936,10 @@ _WINS_WATCHERS_B3;松(Haikuの意味通じない?)
 @KEYNP()
 ;jpn:◆セバスチャン@WI(15)↓
 ;jpn: たすけられても セバスチャン。@WI(15)↓
-;jpn: ５・７・５で いってみました。@KEYNP()
+;jpn: 5・7・5で いってみました。@KEYNP()
 』
 
-;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Habitat:ウィンタース/フィールド/タッシー隊テント付近
 ;@Person:セバスチャン
 ;@Figure:タッシー隊A
 ;@AppearanceKey:FLG_SEBASTIAN_DISAPPEAR/off
@@ -985,7 +985,7 @@ _WINS_WATCHERS_GUM_LATER;
 』
 
 
-;@Habitat:ウィンタース／フィールド／タッシー隊テント付近
+;@Habitat:ウィンタース/フィールド/タッシー隊テント付近
 ;@Person:バルーンモンキー
 ;@Figure:バルーンモンキー
 ;@AppearanceKey:FLG_PU/on
@@ -1006,7 +1006,7 @@ MSG_WINS_BALLOONMONKEY_WATCHERS;
 ;@GOSUB(MSG_DEBUG_EVENT_83)
 @GOTO(MSG_EVT_83_TASSI_2)
 』
-_WINS_BMONKEY_END;＆
+_WINS_BMONKEY_END;&
 ◆Kya ke ke kiya.↓
   (In the monkey community,@WI(15) @DSP_NAME(PC_NESS) is famous.@KEY()↓
 ◆You’re such a great man.)
@@ -1019,7 +1019,7 @@ _WINS_BMONKEY_END;＆
 』
 
 
-;@Habitat:ウィンタース／フィールド／職人ダンジョンの前
+;@Habitat:ウィンタース/フィールド/職人ダンジョンの前
 ;@Person:ブリックロード氏
 ;@Figure:ダンジョン職人
 ;@AppearanceKey:FLG_WINS_BRICK_BARKER_DISAPPEAR/off
@@ -1044,7 +1044,7 @@ _WINS_BMONKEY_END;＆
 ;』
 
 
-;@Habitat:ウィンタース／フィールド／職人ダンジョンの出口
+;@Habitat:ウィンタース/フィールド/職人ダンジョンの出口
 ;@Person:ブリックロード氏
 ;@Figure:ダンジョン職人
 ;@AppearanceKey:FLG_WINS_BRICK_THANKS_APPEAR/on
@@ -1116,7 +1116,7 @@ _WINS_BRICKROAD_OK_YES;
 ;』
 
 
-;@Habitat:ウィンタース／フィールド／Rainy-Circle出口
+;@Habitat:ウィンタース/フィールド/Rainy-Circle出口
 ;@Person:バルーンモンキー彼女
 ;@Figure:バルーンモンキー彼女
 ;@AppearanceKey:FLG_BALLOONMONKEY/on
@@ -1128,7 +1128,7 @@ MSG_WINS_BALLOONSHE;
 @!
 
 
-;@Habitat:ウィンタース／フィールド／StoneHenge付近
+;@Habitat:ウィンタース/フィールド/StoneHenge付近
 ;@Person:StoneHenge解説者
 ;@Figure:おじさんD
 ;@AppearanceKey:0
@@ -1158,7 +1158,7 @@ MSG_WINS_STONEHENGE_A;基地クリアしたら消してしまう
 
 ;----------------------------------------
 
-;@Habitat:ウィンタース／レイニーサークル／大広間
+;@Habitat:ウィンタース/レイニーサークル/大広間
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_RAIN_BOSS/off
@@ -1179,7 +1179,7 @@ MSG_WINS_RAIN_BOSS;
 ◆This is the fourth ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは ４ばんめの↓
+;jpn:◆ここは 4ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓
@@ -1194,7 +1194,7 @@ MSG_WINS_RAIN_BOSS;
 』
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:捕われアップルキッド
 ;@Figure:アップルキッド
 ;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
@@ -1209,7 +1209,7 @@ MSG_WINS_CAPSULE_NO_RESPONSE;
 』
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:開放アップルキッド
 ;@Figure:アップルキッド
 ;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
@@ -1222,7 +1222,7 @@ MSG_WINS_CAPSULE_APPLE;
 ◆I expected there to be about a seven percent chance that you would rescue me.@KEY()↓
 ◆I just thought it was a good opportunity to meet Mr. Saturn.@KEY()↓
 ◆I also got to meet Dr. Andonuts...@WI(20)  See you.@KEY()↓
-;jpn:◆かくりつ ７パーセントくらいで↓
+;jpn:◆かくりつ 7パーセントくらいで↓
 ;jpn: たすけてもらえると↓
 ;jpn: おもっていました。@KEY()↓
 ;jpn:◆でも ここで どせいさんに↓
@@ -1271,7 +1271,7 @@ MSG_WINS_CAPSULE_APPLE;
 ; そちらにむかいます。@KEY()↓
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:捕われ土星さん
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
@@ -1281,7 +1281,7 @@ MSG_WINS_CAPSULE_APPLE;
 ;@Message:MSG_WINS_CAPSULE_NO_RESPONSE
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:開放土星さん
 ;@Figure:土星さん
 ;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
@@ -1321,7 +1321,7 @@ _WINS_CAPSULE_DOSEI_GOODSFULL;
 @FONTSTD()
 』
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:捕われトニー
 ;@Figure:トニー
 ;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
@@ -1331,7 +1331,7 @@ _WINS_CAPSULE_DOSEI_GOODSFULL;
 ;@Message:MSG_WINS_CAPSULE_NO_RESPONSE
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:開放トニー
 ;@Figure:トニー
 ;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
@@ -1413,7 +1413,7 @@ _WINS_CAPSULE_TONY_JEFF_DEAD;
 ;jpn: ゆうじょうを かえせ!!@KEYNP()
 @!
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:捕われセバスチャン
 ;@Figure:タッシー隊A
 ;@AppearanceKey:FLG_WIN_GANSEKIMAN/off
@@ -1423,7 +1423,7 @@ _WINS_CAPSULE_TONY_JEFF_DEAD;
 ;@Message:MSG_WINS_CAPSULE_NO_RESPONSE
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:開放セバスチャン
 ;@Figure:タッシー隊A
 ;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
@@ -1450,7 +1450,7 @@ MSG_WINS_CAPSULE_WATCHERS;
 』
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:開放民間人A
 ;@Figure:モヒカン
 ;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
@@ -1471,7 +1471,7 @@ MSG_WINS_CAPSULE_A;
 』
 
 
-;@Habitat:ウィンタース／Stonehengeダンジョン／カプセルの部屋
+;@Habitat:ウィンタース/Stonehengeダンジョン/カプセルの部屋
 ;@Person:開放民間人B
 ;@Figure:ジミな男
 ;@AppearanceKey:FLG_WINS_CAPSULE_PEOPLE_APPEAR
@@ -1487,7 +1487,7 @@ MSG_WINS_CAPSULE_B;
 @KEYNP()
 ;jpn:◆いままで いきてきて↓
 ;jpn: いちばん うれしいです。@KEY()↓
-;jpn:◆あと１まんねんくらい↓
+;jpn:◆あと1まんねんくらい↓
 ;jpn: いきて いきて いきて いきて↓
 ;jpn: いきぬいてやるつもりです。@KEY()↓
 ;jpn:◆ありがとうございました。@KEYNP()
@@ -1637,7 +1637,7 @@ MSG_WINS_PUPIL_E;012_B
 ;jpn: ウロウロしてるからな。@KEYNP()
 』
 
-MSG_WINS_PUPIL_F;＃テントの学生A(ギーグ倒したら出ない)
+MSG_WINS_PUPIL_F;#テントの学生A(ギーグ倒したら出ない)
 @CHKFGOTO(FLG_POLA_1,_WINS_PUPIL_F_B)
 ◆The tame animals have become wild.@WI(20)  Something evil is going on.
 @KEYNP()
@@ -1661,7 +1661,7 @@ _WINS_PUPIL_F_B;	ストーンヘンジ攻略後
 ;jpn: ぼくらは かまわないからさ。@KEYNP()
 』
 
-MSG_WINS_PUPIL_G;＃テントの学生B
+MSG_WINS_PUPIL_G;#テントの学生B
 @CHKFGOTO(FLG_HOTEL_PAPERBOY_APPEAR,_PUPIL_B_AFTER)
 ◆So, why don’t you rest here for a short while...@WI(15)  Have something to drink,@KEY()↓
 ◆perhaps some tea?↓
@@ -1849,7 +1849,7 @@ _WINS_KANAI_LATER;
 ;jpn:◆タッシーのり をして↓
 ;jpn: あそんでるんですの。まーったく)@KEYNP()
 』
-_WINS_KANAI_END;＆
+_WINS_KANAI_END;&
 ◆Kyakkro ki kyokke↓
   (Ah, @DSP_NAME(PC_NESS),@KEY()↓
 ◆my husband has been returning home late these days.@WI(20)  He says he’s busy.)@KEY()↓
@@ -1998,7 +1998,7 @@ MSG_WINS_CAPSULE_ANDONUT;
 』
 ;-----------------------------------------------
 
-MSG_WINS_GAUS_END;＆ガウスさん(金網ごし?)
+MSG_WINS_GAUS_END;&ガウスさん(金網ごし?)
 ◆@DSP_NAME(PC_JEFF) just called.@WI(20)  He’s with Dr. Andonuts.@KEY()↓
 ◆The two of them may be able to develop a new scientific theory.@KEY()↓
 ◆You’ve helped make a beautiful life for everyone...
@@ -2014,7 +2014,7 @@ MSG_WINS_GAUS_END;＆ガウスさん(金網ごし?)
 ;jpn: なったとおもうよ‥‥。@KEYNP()
 』
 
-MSG_WINS_TONY_END;＆トニー
+MSG_WINS_TONY_END;&トニー
 ◆...@DSP_NAME(PC_JEFF) doesn’t call me.@KEY()↓
 ◆Maybe he thinks I’m too annoying...@KEY()↓
 ◆But I don’t think so.@KEY()↓
@@ -2040,10 +2040,10 @@ MSG_WINS_TONY_END;＆トニー
 
 MSG_WINS_STARMAN;基地のスターマンのセリフ
 @OPEN(1)
-◆You’re much stronger ＊whirrr＊ than our intelligence indicated...@KEY()↓
-◆We were not ＊beep＊ prepared for that eventuality...@KEY()↓
-◆The Prophecy from the ＊click＊ Apple of Enlightenment may be true...@KEY()↓
-◆but you must not ＊whirrr＊ underestimate us.
+◆You’re much stronger *whirrr* than our intelligence indicated...@KEY()↓
+◆We were not *beep* prepared for that eventuality...@KEY()↓
+◆The Prophecy from the *click* Apple of Enlightenment may be true...@KEY()↓
+◆but you must not *whirrr* underestimate us.
 @KEY()
 ;jpn:◆ホウコクデ キイテイタヨリ↓
 ;jpn: ズット テゴワイ コドモダ。@WI(20)↓
@@ -2072,7 +2072,7 @@ MSG_WINS_CHECK_DRUG;
 
 ;(おにいさん用)
 MSG_WINS_CAPSULE_IN_B;
-◆＊Bloop＊ ＊Glub＊↓
+◆*Bloop* *Glub*↓
   Can’t...@WI(15) last...@WI(15) much...@WI(15) longer...
 ;jpn:◆も @WI(20)もう(ブクブク)@WI(20)だめ‥‥。
 @KEYNP()
@@ -2081,8 +2081,8 @@ MSG_WINS_CAPSULE_IN_B;
 
 ;(アップルキッド用)
 MSG_WINS_CAPSULE_IN_APPLE;
-◆Next ＊Bloop＊@WI(20)↓
-  Next ＊Bloop＊@WI(15)
+◆Next *Bloop*@WI(20)↓
+  Next *Bloop*@WI(15)
   Room...
 ;jpn:◆となり(ブクブク)‥‥↓
 ;jpn: @WI(20)となりの(ブクブク)‥‥↓
@@ -2093,7 +2093,7 @@ MSG_WINS_CAPSULE_IN_APPLE;
 
 ;(モヒカン用)
 MSG_WINS_CAPSULE_IN_A;
-◆＊Glub＊ ...can’t breathe...
+◆*Glub* ...can’t breathe...
 ;jpn:◆く@WI(20)(ブクブク)@WI(20)くるし‥‥。
 @KEYNP()
 』
@@ -2103,7 +2103,7 @@ MSG_WINS_CAPSULE_IN_A;
 MSG_WINS_CAPSULE_IN_DOSEI;
 @FONTBAKA()
 ◆Kay−o.@WI(15)  Can breathe...@KEY()↓
-◆＊Bloop＊@WI(15) ＊Bloop＊@WI(15) ＊Bloop＊@WI(30)↓
+◆*Bloop*@WI(15) *Bloop*@WI(15) *Bloop*@WI(30)↓
   Oh, no!
 ;jpn:◆へーき↓
 ;jpn: いき できる。↓
@@ -2115,12 +2115,12 @@ MSG_WINS_CAPSULE_IN_DOSEI;
 
 ;(トニー用)
 MSG_WINS_CAPSULE_IN_TONY;
-◆Oh, no... ＊Bloop＊ ＊Glub＊@WI(20)↓
+◆Oh, no... *Bloop* *Glub*@WI(20)↓
   Can’t see anything...@KEY()↓
-◆＊Bloop＊ ＊Glub＊↓
-  @DSP_NAME(PC_JEFF)!...@WI(15) ＊Bloop＊...
+◆*Bloop* *Glub*↓
+  @DSP_NAME(PC_JEFF)!...@WI(15) *Bloop*...
 ◆Where...@WI(15) is...@WI(15) @DSP_NAME(PC_JEFF)...
-  ＊Bloop＊
+  *Bloop*
 ;jpn:◆もう(ブクブク)@WI(20)なにも↓
 ;jpn: @WI(20)み @WI(20)みえないよ(ブクブク)‥‥↓
 ;jpn: @WI(30)@DSP_NAME(PC_JEFF)@WI(10)は @WI(10)ど @WI(10)こ‥‥。

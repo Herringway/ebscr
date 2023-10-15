@@ -10,109 +10,109 @@
 ;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-; １PK(ひっさつ)α
+; 1PK(ひっさつ)α
 ;akm
 MSG_EXPL_PSI_HISSATSU_ALFA;marcus
 @GOSUB(_PSI_HISSATSU)
 ;akm◆Psychokinesis wave by mind consentration
 
-;akm  Each enemy took about ５０ points of damage. 
+;akm  Each enemy took about 50 points of damage. 
 
- each enemy about ５０ points of damage.
+ each enemy about 50 points of damage.
 
 ;jpn: てきぜんいんに↓
-;jpn: やく５０ポイントずつ ダメージをあたえる。
+;jpn: やく50ポイントずつ ダメージをあたえる。
 @!
 
-; ２PK(ひっさつ)β
+; 2PK(ひっさつ)β
 ;akm
 MSG_EXPL_PSI_HISSATSU_BETA;marcus
 @GOSUB(_PSI_HISSATSU)
-;akm Each enemy took about about １８０ points of damage.
+;akm Each enemy took about about 180 points of damage.
 
- each enemy about １８０ points of damage.
+ each enemy about 180 points of damage.
 
 ;jpn:  てきぜんいんに↓
-;jpn: やく１８０ポイントずつ ダメージをあたえる。
+;jpn: やく180ポイントずつ ダメージをあたえる。
 @!
 
-; ３PK(ひっさつ)γ
+; 3PK(ひっさつ)γ
 ;akm
 MSG_EXPL_PSI_HISSATSU_GAMMA;marcus
 @GOSUB(_PSI_HISSATSU)
-;akm  Each enemy took about ５０ points of damage.
+;akm  Each enemy took about 50 points of damage.
 
- each enemy about ３２０ points of damage.
+ each enemy about 320 points of damage.
 
 ;jpn: てきぜんいんに↓
-;jpn: やく３２０ポイントずつ ダメージをあたえる。
+;jpn: やく320ポイントずつ ダメージをあたえる。
 @!
 
-; ４PK(ひっさつ)Ω
+; 4PK(ひっさつ)Ω
 ;akm
 MSG_EXPL_PSI_HISSATSU_OMEGA;marcus
 @GOSUB(_PSI_HISSATSU)
-;akm  Each enemy took about ６４０ points of damage.
+;akm  Each enemy took about 640 points of damage.
 
- each enemy about ６４０ points of damage.
+ each enemy about 640 points of damage.
 
 ;jpn: てきぜんいんに↓
-;jpn: やく６４０ポイントずつ ダメージをあたえる。
+;jpn: やく640ポイントずつ ダメージをあたえる。
 @!
 
-; ５PKファイアーα
+; 5PKファイアーα
 ;akm
 MSG_EXPL_PSI_FIRE_ALFA;marcus 
 @GOSUB(_PSI_FIRE)
-;akm  Each target took about ８０ points of damage.
+;akm  Each target took about 80 points of damage.
 
- about ８０ points of damage each.
+ about 80 points of damage each.
 
-;jpn: それぞれ やく８０ポイントのダメージを あたえる。
+;jpn: それぞれ やく80ポイントのダメージを あたえる。
 @!
 
-; ６PKファイアーβ
+; 6PKファイアーβ
 ;akm
 MSG_EXPL_PSI_FIRE_BETA;marcus 
 @GOSUB(_PSI_FIRE)
-;akm  Gave each target about ８０ points of damage.
+;akm  Gave each target about 80 points of damage.
 
- about １６０ points of damage each.
+ about 160 points of damage each.
 
-;jpn: それぞれ やく１６０ポイントのダメージを あたえる。
+;jpn: それぞれ やく160ポイントのダメージを あたえる。
 @!
 
-; ７PKファイアーγ
+; 7PKファイアーγ
 ;akm
 MSG_EXPL_PSI_FIRE_GAMMA;marcus
 @GOSUB(_PSI_FIRE)
-;akm  Gave each target about ２４０ points of damage.
+;akm  Gave each target about 240 points of damage.
 
- about ２４０ points of damage each.
+ about 240 points of damage each.
 
-;jpn: それぞれ やく２４０ポイントのダメージを あたえる。
+;jpn: それぞれ やく240ポイントのダメージを あたえる。
 @!
 
-; ８PKファイアーΩ
+; 8PKファイアーΩ
 ;akm
 MSG_EXPL_PSI_FIRE_OMEGA;marcus
 @GOSUB(_PSI_FIRE)
-;akm  Gave each target about ３２０ points of damage.
+;akm  Gave each target about 320 points of damage.
 
- about ３２０ points of damage each.
+ about 320 points of damage each.
 
-;jpn: それぞれ やく３２０ポイントのダメージを あたえる。
+;jpn: それぞれ やく320ポイントのダメージを あたえる。
 @!
 
-; ９PKフリーズα
+; 9PKフリーズα
 ;akm!
 MSG_EXPL_PSI_FREEZ_ALFA; marcus
 @GOSUB(_PSI_FREEZ)
-;akm  Inflicted about １８０ points of damage.↓
+;akm  Inflicted about 180 points of damage.↓
 
- inflicting about １８０ points of damage.↓
+ inflicting about 180 points of damage.↓
 
-;jpn: やく１８０ポイントのダメージを あたえる。↓
+;jpn: やく180ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)←
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
@@ -121,11 +121,11 @@ MSG_EXPL_PSI_FREEZ_ALFA; marcus
 ;akm!
 MSG_EXPL_PSI_FREEZ_BETA;marcus 
 @GOSUB(_PSI_FREEZ)
-;akm  Inflicted about ３６０ points of damage.↓
+;akm  Inflicted about 360 points of damage.↓
 
- inflicting about ３６０ points of damage.↓
+ inflicting about 360 points of damage.↓
 
-;jpn: やく３６０ポイントのダメージを あたえる。↓
+;jpn: やく360ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)←
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
@@ -134,11 +134,11 @@ MSG_EXPL_PSI_FREEZ_BETA;marcus
 ;akm!
 MSG_EXPL_PSI_FREEZ_GAMMA;marcus
 @GOSUB(_PSI_FREEZ)
-;akm  Inflicted about ５４０ points of damage.↓
+;akm  Inflicted about 540 points of damage.↓
 
- inflicting about ５４０ points of damage.↓
+ inflicting about 540 points of damage.↓
 
-;jpn: やく５４０ポイントのダメージを あたえる。↓
+;jpn: やく540ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)←
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
@@ -147,11 +147,11 @@ MSG_EXPL_PSI_FREEZ_GAMMA;marcus
 ;akm!
 MSG_EXPL_PSI_FREEZ_OMEGA;marcus
 @GOSUB(_PSI_FREEZ)
-;akm  Inflicted about ７２０ points of damage.↓
+;akm  Inflicted about 720 points of damage.↓
 
- inflicting about ７２０ points of damage.↓
+ inflicting about 720 points of damage.↓
 
-;jpn: やく７２０ポイントのダメージを あたえる。↓
+;jpn: やく720ポイントのダメージを あたえる。↓
 @GOSUB(_PSI_FREEZ_2)↓
 @GOSUB(_PSI_NOT_EFFECTIVE_ON_SOME)
 @!
@@ -159,9 +159,9 @@ MSG_EXPL_PSI_FREEZ_OMEGA;marcus
 ;13 PKサンダーα
 ;akm!
 MSG_EXPL_PSI_THUNDER_ALFA;marcus
-◆The enemy is thunder struck for about １２０ points of damage.↓
+◆The enemy is thunder struck for about 120 points of damage.↓
 
-;jpn:◆ダメージ やく１２０ポイントの↓
+;jpn:◆ダメージ やく120ポイントの↓
 ;jpn: かみなりを おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
@@ -169,36 +169,36 @@ MSG_EXPL_PSI_THUNDER_ALFA;marcus
 ;14 PKサンダーβ
 ;akm!
 MSG_EXPL_PSI_THUNDER_BETA;marcus
-;akm◆Thunder struck for about １２０ points of damage.↓
+;akm◆Thunder struck for about 120 points of damage.↓
 
-◆The enemy is thunder struck for about １２０ points of damage two separate times.↓
+◆The enemy is thunder struck for about 120 points of damage two separate times.↓
 
-;jpn:◆ダメージ やく１２０ポイントの↓
-;jpn: かみなりを ２はつ おとす。↓
+;jpn:◆ダメージ やく120ポイントの↓
+;jpn: かみなりを 2はつ おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
 
 ;15 PKサンダーγ
 ;akm!
 MSG_EXPL_PSI_THUNDER_GAMMA;marcus
-;akm◆The enemy is thunder struck for about ２００ points of damage.↓
+;akm◆The enemy is thunder struck for about 200 points of damage.↓
 
-◆The enemy is thunder struck for about ２００ points of damage three separate times.↓
+◆The enemy is thunder struck for about 200 points of damage three separate times.↓
 
-;jpn:◆ダメージ やく２００ポイントの↓
-;jpn: かみなりを ３ぱつ おとす。↓
+;jpn:◆ダメージ やく200ポイントの↓
+;jpn: かみなりを 3ぱつ おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
 
 ;16 PKサンダーΩ
 ;akm!
 MSG_EXPL_PSI_THUNDER_OMEGA;
-;akm◆Thunder struck for about ２００ points of damage.↓
+;akm◆Thunder struck for about 200 points of damage.↓
 
-◆The enemy is thunder struck for about ２００ points of damage four separate times.↓
+◆The enemy is thunder struck for about 200 points of damage four separate times.↓
 
-;jpn:◆ダメージ やく２００ポイントの↓
-;jpn: かみなりを ４ぱつ おとす。↓
+;jpn:◆ダメージ やく200ポイントの↓
+;jpn: かみなりを 4ぱつ おとす。↓
 @GOSUB(_PSI_THUNDER)
 @!
 
@@ -261,44 +261,44 @@ MSG_EXPL_PSI_FLASH_OMEGA;marcus
 ;akm
 MSG_EXPL_PSI_STARSTOM_ALFA; marcus
 @GOSUB(_PSI_STARSTORM_1)←
-;akm◆It deals about ３６０ points of damage to each enemy.
+;akm◆It deals about 360 points of damage to each enemy.
 
-◆It deals about ３６０ points of damage to each enemy.
+◆It deals about 360 points of damage to each enemy.
 
 ;jpn:◆てきぜんいんに↓
-;jpn: やく３６０ポイントずつ ダメージをあたえる。
+;jpn: やく360ポイントずつ ダメージをあたえる。
 @!
 
 ;22 PKスターストームΩ
 ;akm
 MSG_EXPL_PSI_STARSTORM_OMEGA;marcus
 @GOSUB(_PSI_STARSTORM_1)←
-;akm◆Deals about ７２０ points of damage to each enemy.
+;akm◆Deals about 720 points of damage to each enemy.
 
-◆It deals about ７２０ points of damage to each enemy.
+◆It deals about 720 points of damage to each enemy.
 
 ;jpn:◆てきぜんいんに↓
-;jpn: やく７２０ポイントずつ ダメージをあたえる。
+;jpn: やく720ポイントずつ ダメージをあたえる。
 @!
 
 ;23 ライフアップα
 ;akm
 MSG_EXPL_PSI_LIFEUP_ALFA;
-;akm◆Restores １００ HP for a friend.
+;akm◆Restores 100 HP for a friend.
 
-◆Restores １００ HP to one person.
+◆Restores 100 HP to one person.
 
 ;jpn:◆なかまひとりのHPを↓
-;jpn: やく１００ポイント かいふくする。
+;jpn: やく100ポイント かいふくする。
 @!
 
 ;24 ライフアップβ
 ;akm
 MSG_EXPL_PSI_LIFEUP_BETA;marcus
-◆Restores ３００ HP to one person.
+◆Restores 300 HP to one person.
 
 ;jpn:◆なかまひとりのHPを↓
-;jpn: やく３００ポイント かいふくする。
+;jpn: やく300ポイント かいふくする。
 @!
 
 ;25 ライフアップγ
@@ -313,10 +313,10 @@ MSG_EXPL_PSI_LIFEUP_GAMMA;marcus
 ;26 ライフアップΩ
 ;akm
 MSG_EXPL_PSI_LIFEUP_OMEGA;marcus
-◆Restores ４００ HP to everyone.
+◆Restores 400 HP to everyone.
 
 ;jpn:◆なかまぜんいんのHPを↓
-;jpn: やく４００ずつ かいふくする。
+;jpn: やく400ずつ かいふくする。
 @!
 
 ;27 ヒーリングα
@@ -364,7 +364,7 @@ MSG_EXPL_PSI_HEALING_OMEGA;marcus
 ;akm
 MSG_EXPL_PSI_SHIELD_ALFA;marcus
 ◆Protect one person with the shield of light.↓
-◆It reduces the damage caused by an enemy’s attack by ５０％.↓
+◆It reduces the damage caused by an enemy’s attack by 50%.↓
 ;akm◆However, the effect will be lost if another shield is put on over it.↓
 
 ◆Using a different shield will cancel these effects.
@@ -382,7 +382,7 @@ MSG_EXPL_PSI_SHIELD_ALFA;marcus
 ;akm
 MSG_EXPL_PSI_SHIELD_SIGMA;marcus
 ◆Protect everyone with the shield of light.↓
-◆It reduces the damage caused by an enemy’s attack by ５０％.↓
+◆It reduces the damage caused by an enemy’s attack by 50%.↓
 ;akm◆However, the effect will be lost if another shield is put on over it.
 
 ◆Using a different shield will cancel these effects.
@@ -420,7 +420,7 @@ MSG_EXPL_PSI_SHIELD_BETA;marcus
 MSG_EXPL_PSI_SHIELD_OMEGA;marcus
 ◆Protects everyone with a power shield.↓
 
-;akm◆It reduces the damage caused by the enemy’s attack by ５０％ and returns the rest to attacker.↓
+;akm◆It reduces the damage caused by the enemy’s attack by 50% and returns the rest to attacker.↓
 
 ◆Cuts damage in half and some of the blocked damage is dealt back to the enemy.↓
 
@@ -577,7 +577,7 @@ MSG_EXPL_PSI_SAIMIN_OMEGA;
 MSG_EXPL_PSI_P_MAGNET_ALFA;marcus
 ;akm◆One of the enemy’s PP
 
-◆Grabs ２−８ points of PP from one enemy and adds it to your own.
+◆Grabs 2−8 points of PP from one enemy and adds it to your own.
 
 ;jpn:◆てきひとりの PPを↓
 ;akm@GOSUB(_PSI_PSI_MAGNET_BASIC)
@@ -588,7 +588,7 @@ MSG_EXPL_PSI_P_MAGNET_ALFA;marcus
 MSG_EXPL_PSI_P_MAGNET_OMEGA;marcus
 ;akm◆Each enemy’s PP 
 
-◆Grabs ２−８ points of PP from each enemy and adds it to your own.
+◆Grabs 2−8 points of PP from each enemy and adds it to your own.
 
 ;jpn:◆てきぜんいんの PPを↓
 ;jpn: それぞれ@GOSUB(_PSI_PSI_MAGNET_BASIC)

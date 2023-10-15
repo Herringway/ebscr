@@ -1,9 +1,9 @@
 ;----------------------------------------
-;@Habitat:オネット／市役所／受付
+;@Habitat:オネット/市役所/受付
 ;@Person:客
 ;@Figure:おじさんD
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TOWNHALL_OZISAN_A
@@ -21,11 +21,11 @@ MSG_ONET_TOWNHALL_OZISAN_A;市庁舎
 』
 
 
-;@Habitat:オネット／市役所／部屋１
+;@Habitat:オネット/市役所/部屋1
 ;@Person:役人A
 ;@Figure:サラリーマンA
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TOWNHALL_A
@@ -41,11 +41,11 @@ MSG_ONET_TOWNHALL_A;
 』
 
 
-;@Habitat:オネット／市役所／部屋１
+;@Habitat:オネット/市役所/部屋1
 ;@Person:役人B
 ;@Figure:サラリーマンB
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TOWNHALL_C
@@ -57,11 +57,11 @@ MSG_ONET_TOWNHALL_C;
 』
 
 
-;@Habitat:オネット／市役所／部屋１
+;@Habitat:オネット/市役所/部屋1
 ;@Person:客A
 ;@Figure:おじいさん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TOWNHALL_OLDMAN
@@ -79,11 +79,11 @@ MSG_ONET_TOWNHALL_OLDMAN;
 』
 
 
-;@Habitat:オネット／市役所／部屋１
+;@Habitat:オネット/市役所/部屋1
 ;@Person:客B
 ;@Figure:OL・D
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TOWNHALL_WOMAN
@@ -112,11 +112,11 @@ MSG_ONET_TOWNHALL_WOMAN;
 』
 
 
-;@Habitat:オネット／市役所／部屋２
+;@Habitat:オネット/市役所/部屋2
 ;@Person:役人
 ;@Figure:サラリーマンA
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TOWNHALL_B
@@ -124,22 +124,22 @@ MSG_ONET_TOWNHALL_B;職員B
 ◆I’m really in a foul mood.@KEY()↓
 ◆Why?@WI(20)  Because the Mayor doesn’t like me.@KEY()↓
 ◆I think I’ll just kick back for a while.@KEY()↓
-◆It just may take me a couple of hours to sign this paper. ＊snicker＊ ＊snort＊
+◆It just may take me a couple of hours to sign this paper. *snicker* *snort*
 ;jpn:◆しちょうに きらわれてるので↓
 ;jpn: わたしは すねている。@KEY()↓
 ;jpn:◆てっていてきに サボッてやる。@KEY()↓
 ;jpn:◆はんこひとつ おすのに↓
-;jpn: ２じかんくらい かけたりして‥。↓
+;jpn: 2じかんくらい かけたりして‥。↓
 ;jpn: ヒッヒッヒ。
 @KEYNP()
 』
 
 
-;@Habitat:オネット／市役所／部屋２
+;@Habitat:オネット/市役所/部屋2
 ;@Person:客
 ;@Figure:おじさんA
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_TOWNHALL_OZISAN_B
@@ -162,11 +162,11 @@ MSG_ONET_TOWNHALL_OZISAN_B;
 』
 
 
-;@Habitat:オネット／市役所／秘書室
+;@Habitat:オネット/市役所/秘書室
 ;@Person:秘書
 ;@Figure:OL・A
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_DONNA
@@ -176,7 +176,7 @@ MSG_ONET_DONNA;
 ◆The Mayor’s office is on the second floor.@KEY()↓
 ◆You need an appointment before you visit.@KEY()↓
 ◆I’m going to have to stop you if you try to see the Mayor.
-;jpn:◆２かいは しちょうしつですから↓
+;jpn:◆2かいは しちょうしつですから↓
 ;jpn: かってに はいっては こまるわ。@KEY()↓
 ;jpn:◆きっと あなたは↓
 ;jpn: わたしが とめても↓
@@ -199,13 +199,13 @@ _ONET_DONNA2;
 @KEYNP()
 』
 
-_ONET_DONNA3;＃
+_ONET_DONNA3;#
 ◆You look like someone who’s going to do something big.
 ;jpn:◆あなたって なんかやりそうね。
 @CHKFGOTO(FLG_WIN_GIEGU,_ONET_DONNA_END)
 @KEYNP()
 』
-_ONET_DONNA_END;＆
+_ONET_DONNA_END;&
 @KEY()↓
 ◆What am I saying−−@WI(15)you did something big!
 ;jpn:◆‥‥というより なんか↓
@@ -214,11 +214,11 @@ _ONET_DONNA_END;＆
 @KEYNP()
 』
 
-;@Habitat:オネット／市役所／市長室
+;@Habitat:オネット/市役所/市長室
 ;@Person:市長
 ;@Figure:ゲーハーピカール
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_PIKARL
@@ -325,7 +325,7 @@ _ONET_PIKARL2;
 ;jpn: おあいてしてられないんですよ。
 @KEYNP()
 』
-_ONET_PIKARL_END;＆
+_ONET_PIKARL_END;&
 ◆Oh,@WI(15) @DSP_STS(STS_PC_NAME_NES)@KEY()↓
 ◆I saw a picture in the international newspaper of someone who looks like you,@KEY()↓
 ◆but there’s no way it was you.@KEY()↓
@@ -359,8 +359,8 @@ _ONET_PIKARL_END_NO;
 』
 _ONET_PIKARL_END_YES;
 ◆Thanks a lot.@KEY()↓
-◆From this day forward...  until the day I die...＊sniff＊@KEY()↓
-◆I will dedicate my life ＊sniff＊ to peace in Onett...＊boo hoo＊
+◆From this day forward...  until the day I die...*sniff*@KEY()↓
+◆I will dedicate my life *sniff* to peace in Onett...*boo hoo*
 ;jpn:◆いや ありがとう。@KEY()↓
 ;jpn:◆これからも しぬまで↓
 ;jpn: オネットのために↓
@@ -369,15 +369,15 @@ _ONET_PIKARL_END_YES;
 』
 
 
-;@Habitat:オネット／市役所／市長室
+;@Habitat:オネット/市役所/市長室
 ;@Person:側近
 ;@Figure:おじさんB
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_MAYOR_OZISAN
-MSG_ONET_MAYOR_OZISAN;＃
+MSG_ONET_MAYOR_OZISAN;#
 @CHKFGOTO(FLG_WIN_GIEGU,_ONET_MAYOR_OZISAN_END)
 ◆In the next election please give a speech supporting Mayor Pirkle.@KEY()↓
 ◆Hee hee hee.
@@ -388,7 +388,7 @@ MSG_ONET_MAYOR_OZISAN;＃
 ;jpn:◆エッヘッヘ。
 @KEYNP()
 』
-_ONET_MAYOR_OZISAN_END;＆
+_ONET_MAYOR_OZISAN_END;&
 ◆Since way,@WI(10) way back,@WI(15) you and I been very tight.@WI(20)  Pals basically.@KEY()↓
 ◆Ya ha ha ha ha.
 ;jpn:◆むかしから ずいぶん↓
@@ -398,21 +398,21 @@ _ONET_MAYOR_OZISAN_END;＆
 @KEYNP()
 』
 
-;@Habitat:オネット／市役所／市長室
+;@Habitat:オネット/市役所/市長室
 ;@Person:ガードマン
 ;@Figure:警官
 ;@AppearanceKey:0
-;@ActionScript:＊演出コンテ#1.8(FLG_WIN_FRANKによって変化)
+;@ActionScript:*演出コンテ#1.8(FLG_WIN_FRANKによって変化)
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_MAYOR_COP
 
 ;----------------------------------------
-;@Habitat:オネット／住宅B／住宅B
+;@Habitat:オネット/住宅B/住宅B
 ;@Person:住人
 ;@Figure:青年
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOUSE_B
@@ -425,11 +425,11 @@ MSG_ONET_HOUSE_B;
 』
 
 
-;@Habitat:オネット／住宅C／住宅C
+;@Habitat:オネット/住宅C/住宅C
 ;@Person:住人
 ;@Figure:ダンゴ
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOUSE_C
@@ -461,11 +461,11 @@ _ONET_HOUSE_C_LATER;
 』
 
 
-;@Habitat:オネット／住宅E／住宅E
+;@Habitat:オネット/住宅E/住宅E
 ;@Person:住人
 ;@Figure:おじさんD
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOUSE_E
@@ -495,11 +495,11 @@ _ONET_HOUSE_E_YES;
 』
 
 
-;@Habitat:オネット／住宅G／住宅G
+;@Habitat:オネット/住宅G/住宅G
 ;@Person:住人
 ;@Figure:ハット
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOUSE_G
@@ -524,11 +524,11 @@ _ONET_HOUSE_G_LATER;
 』
 
 
-;@Habitat:オネット／住宅H／住宅H
+;@Habitat:オネット/住宅H/住宅H
 ;@Person:住人
 ;@Figure:少女C
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOUSE_H
@@ -536,25 +536,25 @@ MSG_ONET_HOUSE_H;
 @CHKFGOTO(FLG_WIN_GIEGU,_ONET_HOUSE_H_AFTER)
 ◆I wonder if ”EarthBound” has been released yet.
 ;◆It’s been delayed for a long time.
-;jpn:◆「マザー２」って↓
+;jpn:◆「マザー2」って↓
 ;jpn: もう はつばいになったのかな。↓
 ;jpn: ずいぶん おくれてたけど‥‥。
 @KEYNP()
 』
-_ONET_HOUSE_H_AFTER;＆
+_ONET_HOUSE_H_AFTER;&
 ◆Listen to this!@WI(20)  I finished EarthBound!
 ;jpn:◆ねぇ きいてきいて↓
-;jpn: わたし 「マザー２」↓
+;jpn: わたし 「マザー2」↓
 ;jpn: エンディングまで いったのよ。
 @KEYNP()
 』
 
 ;----------------------------------------
-;@Habitat:オネット／図書館／受付
+;@Habitat:オネット/図書館/受付
 ;@Person:受付嬢
 ;@Figure:OL・G
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LIBRARY_LUCY
@@ -623,11 +623,11 @@ _LIBRARY_LUCY_MAP_GOODSFULL;
 』
 _LIBRARY_LUCY_2;
 ◆It’s not necessary to return the map now.@KEY()↓
-◆Come back in the year ２００１ to return it.
+◆Come back in the year 2001 to return it.
 ;jpn:◆まちのちずは↓
 ;jpn: まだ かえさなくっても↓
 ;jpn: だいじょうぶよ。@KEY()↓
-;jpn:◆２００１ねんくらいになったら↓
+;jpn:◆2001ねんくらいになったら↓
 ;jpn: かえしにきてちょうだいね!
 @KEYNP()
 』
@@ -663,11 +663,11 @@ _LUCY_RECEIVE_CHU;
 @SETF(FLG_ONET_LUCY_CHU)
 』
 
-;@Habitat:オネット／図書館／受付
+;@Habitat:オネット/図書館/受付
 ;@Person:客
 ;@Figure:船長
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_LIBRARY_OLDMAN
@@ -687,11 +687,11 @@ MSG_ONET_LIBRARY_OLDMAN;図書館の老人
 』
 
 
-;@Habitat:オネット／図書館／受付
+;@Habitat:オネット/図書館/受付
 ;@Person:無口の本情報の人
 ;@Figure:マスク
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LIBRARY_MUKUCHI
@@ -710,7 +710,7 @@ MSG_LIBRARY_MUKUCHI;
 @KEYNP()
 』
 
-_LIBRARY_MUKUCHI_LATER;＃
+_LIBRARY_MUKUCHI_LATER;#
 @CHKFGOTO(FLG_ITEM_MUKUCHI,_LIBRARY_MUKUCHI_END)
 @SET_LOOPREG(PC_NESS)			;ネスのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
@@ -752,11 +752,11 @@ _LIBRARY_MUKUCHI_END;無口を直す本を手に入れた後
 @KEYNP()
 』
 
-;@Habitat:オネット／図書館／ブックルーム１
+;@Habitat:オネット/図書館/ブックルーム1
 ;@Person:無口A
 ;@Figure:少女A
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LIBRARY_PEOPLE_A
@@ -790,15 +790,15 @@ MSG_LIBRARY_A_RECEIVE;無口を
 @KEYNP()
 』
 
-;@Habitat:オネット／図書館／ブックルーム１
+;@Habitat:オネット/図書館/ブックルーム1
 ;@Person:UFO情報の人
 ;@Figure:Tシャツ
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LIBRARY_PEOPLE_C
-MSG_LIBRARY_PEOPLE_C;＃
+MSG_LIBRARY_PEOPLE_C;#
 @CHKFGOTO(FLG_WIN_GIEGU,_LIBRARY_PEOPLE_C_END)
 ◆Recently,@WI(15) I sensed the presence of UFO’s flying around...@KEY()↓
 ◆or am I just dreaming?
@@ -808,7 +808,7 @@ MSG_LIBRARY_PEOPLE_C;＃
 ;jpn:◆めの さっかくかなぁ。
 @KEYNP()
 』
-_LIBRARY_PEOPLE_C_END;＆
+_LIBRARY_PEOPLE_C_END;&
 ◆These days have been peaceful.@KEY()↓
 ◆I miss the UFO’s and monsters,@WI(15) ’cause they haven’t been around recently.
 ;jpn:◆このところ しばらく↓
@@ -820,11 +820,11 @@ _LIBRARY_PEOPLE_C_END;＆
 』
 
 
-;@Habitat:オネット／図書館／ブックルーム２
+;@Habitat:オネット/図書館/ブックルーム2
 ;@Person:無口B
 ;@Figure:少年B
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LIBRARY_PEOPLE_D
@@ -853,25 +853,25 @@ MSG_LIBRARY_D_RECEIVE;無口を直す本を
 @KEYNP()
 』
 
-;@Habitat:オネット／図書館／ブックルーム２
+;@Habitat:オネット/図書館/ブックルーム2
 ;@Person:無口C
 ;@Figure:OL・F
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LIBRARY_PEOPLE_A
 
 
-;@Habitat:オネット／図書館／ビデオルーム
+;@Habitat:オネット/図書館/ビデオルーム
 ;@Person:Gステップ情報の人
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LIBRARY_PEOPLE_B
-MSG_LIBRARY_PEOPLE_B;＃
+MSG_LIBRARY_PEOPLE_B;#
 @CHKFGOTO(FLG_WIN_GIEGU,_LIBRARY_PEOPLE_B_END)
 ◆I’m researching ”Giant Step.”@WI(15)  It’s located in the Northwest position of Onett.@KEY()↓
 ◆I heard it possesses a special power!
@@ -883,7 +883,7 @@ MSG_LIBRARY_PEOPLE_B;＃
 ;jpn: ばしょらしいんだよ。
 @KEYNP()
 』
-_LIBRARY_PEOPLE_B_END;＆
+_LIBRARY_PEOPLE_B_END;&
 ◆Clap,@WI(10) clap,@WI(10) clap.@KEY()↓
 ◆When I see you,@WI(15) I get the urge to give you a hand.
 ;jpn:◆パチ パチ パチ。@WI(20)↓
@@ -893,11 +893,11 @@ _LIBRARY_PEOPLE_B_END;＆
 』
 
 ;----------------------------------------
-;@Habitat:オネット／病院／受付
+;@Habitat:オネット/病院/受付
 ;@Person:受付嬢
 ;@Figure:看護婦
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOSPITAL_USHER
@@ -906,11 +906,11 @@ MSG_ONET_HOSPITAL_USHER;@MaltaAppended
 』
 
 
-;@Habitat:オネット／病院／診察室
+;@Habitat:オネット/病院/診察室
 ;@Person:医者
 ;@Figure:医者
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOSPITAL_DOCTOR
@@ -919,28 +919,28 @@ MSG_ONET_HOSPITAL_DOCTOR;@MaltaAppended
 』
 
 
-;@Habitat:オネット／病院／診察室
+;@Habitat:オネット/病院/診察室
 ;@Person:付き添い
 ;@Figure:看護婦
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOSPITAL_NURSE
 MSG_ONET_HOSPITAL_NURSE;
-◆I heard that around here,@WI(15) our doctor is No. １.  Hee hee hee...
+◆I heard that around here,@WI(15) our doctor is No. 1.  Hee hee hee...
 ;jpn:◆うちの せんせいって↓
-;jpn: このへんじゃ ピカ１のうでまえ@KEY()↓
+;jpn: このへんじゃ ピカ1のうでまえ@KEY()↓
 ;jpn:◆らしいのよね。うふふ‥‥
 @KEYNP()
 』
 
 
-;@Habitat:オネット／病院／廊下
+;@Habitat:オネット/病院/廊下
 ;@Person:ケガ人
 ;@Figure:おじいさん
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOSPITAL_PATIENT
@@ -962,11 +962,11 @@ MSG_ONET_HOSPITAL_PATIENT;
 
 
 ;----------------------------------------
-;@Habitat:オネット／水野さんの家／１階
+;@Habitat:オネット/水野さんの家/1階
 ;@Person:水野さん
 ;@Figure:水野さん
 ;@AppearanceKey:FLG_1FMIZUNO_APPEAR/on
-;@ActionScript:＊ドア塞いで正面向き
+;@ActionScript:*ドア塞いで正面向き
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_INSEKI_MIZUNO_1F
@@ -1020,7 +1020,7 @@ _INSEKI_MIZUNO_1F2;
 ;jpn: いいんだ。
 @KEYNP()
 』
-MSG_ONET_MIZUNO_END;＆
+MSG_ONET_MIZUNO_END;&
 ◆You’re being vain, @DSP_STS(STS_PC_NAME_NES).@KEY()↓
 ◆Life is...@WI(20)  Not that easy.@KEY()↓
 ◆You just saved the Earth from a crisis...@WI(15)  Don’t act so stuck up.@KEY()↓
@@ -1078,15 +1078,15 @@ _INSEKI_MIZUNO_1F2_NESS_DEAD;
 』
 
 ;----------------------------------------
-;@Habitat:オネット／隠れ家／隠れ家
+;@Habitat:オネット/隠れ家/隠れ家
 ;@Person:ひみつ基地隊員A
 ;@Figure:ハット
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_KAKUREGA_A
-MSG_KAKUREGA_A;＆
+MSG_KAKUREGA_A;&
 @CHKFGOTO(FLG_WIN_GIEGU,_KAKUREGA_A_END)
 @CHKFGOTO(FLG_TEMP_1,_KAKUREGA_A2)
 @SET_LOOPREG(PC_NESS)			;ネスのIDを主レジに格納
@@ -1125,7 +1125,7 @@ _KAKUREGA_A_NESS_DEAD;
 ;jpn: そばに いそうな さ。
 @KEYNP()
 』
-_KAKUREGA_A_END;＆
+_KAKUREGA_A_END;&
 ◆Hi, @DSP_STS(STS_PC_NAME_NES)!@WI(20)  It’s starting to get crowded in this hide out.@KEY()↓
 ◆I was considering moving to Beak’s Point.@KEY()↓
 ◆What do you think?↓
@@ -1155,11 +1155,11 @@ _KAKUREGA_A_YES;
 @KEYNP()
 』
 
-;@Habitat:オネット／隠れ家／隠れ家
+;@Habitat:オネット/隠れ家/隠れ家
 ;@Person:ひみつ基地隊員B
 ;@Figure:インディー
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_KAKUREGA_B
@@ -1198,7 +1198,7 @@ _KAKUREGA_B_PAULA_DEAD;
 ;jpn:◆きのせいかなあ‥‥
 @KEYNP()
 @!
-_KAKUREGA_B_END;＆
+_KAKUREGA_B_END;&
 ◆You...@WI(20)seem to be gaining self confidence or something...@KEY()↓
 ◆During your trip,@WI(15) were you popular at your destinations?@KEY()↓
 ◆...I’m jealous.@WI(15)  I wish I was popular like you...
@@ -1222,11 +1222,11 @@ _KAKUREGA_B_NESS_DEAD;
 @KEYNP()
 @!
 
-;@Habitat:オネット／隠れ家／隠れ家
+;@Habitat:オネット/隠れ家/隠れ家
 ;@Person:ひみつ基地隊員C
 ;@Figure:ヘルメット
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_KAKUREGA_C
@@ -1296,7 +1296,7 @@ _KAKUREGA_C_DEAD_B;
 ;jpn:  <はい>  <いいえ>
 @DSP_ITEM(2)
 @SELGOTO(_KAKUREGA_C_DEAD_B_YES,_KAKUREGA_C_DEAD_B_NO)
-_KAKUREGA_C_DEAD_B_NO;＠
+_KAKUREGA_C_DEAD_B_NO;@
 ◆Maybe he didn’t talk much about his friends.
 ;jpn:◆おとこどうしの↓
 ;jpn: ゆうじょうについては↓
@@ -1309,7 +1309,7 @@ _KAKUREGA_C_DEAD_B_YES;
 ;jpn: @DSP_STS(STS_PC_NAME_NES)のやつー!
 @KEYNP()
 』
-_KAKUREGA_C_END;＆
+_KAKUREGA_C_END;&
 ◆@DSP_STS(STS_PC_NAME_NES),@WI(15) I’ve been thinking about our gang’s name.@KEY()↓
 ◆It’s ”We’ll laugh about it tomorrow.”@KEY()↓
 ◆How do you like it?↓
@@ -1348,21 +1348,21 @@ _KAKUREGA_C_END_YES;いい
 @KEYNP()
 』
 ;----------------------------------------
-;@Habitat:オネット／フィールド／隕石跡
+;@Habitat:オネット/フィールド/隕石跡
 ;@Person:はぐれたピッキー
 ;@Figure:ピッキー
 ;@AppearanceKey:FLG_INSEKI/off
-;@ActionScript:＊ネスに近寄って台詞MSG_INSEKI_PICKEY発行
+;@ActionScript:*ネスに近寄って台詞MSG_INSEKI_PICKEY発行
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_INSEKI_PICKEY
 ;★特殊イベントメッセージ(S_EVENT.MSG)へ
 
-;@Habitat:オネット／フィールド／水野さんの家の前
+;@Habitat:オネット/フィールド/水野さんの家の前
 ;@Person:水野さん
 ;@Figure:水野さん
 ;@AppearanceKey:FLG_ONET_AMBRAMI/off
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_INSEKI_MIZUNO
@@ -1440,11 +1440,11 @@ _INSEKI_MIZUNO_LATER;
 』
 
 
-;@Habitat:オネット／フィールド／GiantStep入り口
+;@Habitat:オネット/フィールド/GiantStep入り口
 ;@Person:GiantStep見張り警官
 ;@Figure:警官
 ;@AppearanceKey:FLG_ONET_KANBANCOP_APPEAR/on
-;@ActionScript:＊ネスに近寄って台詞MSG_ONET_POLICE_KANBAN発行
+;@ActionScript:*ネスに近寄って台詞MSG_ONET_POLICE_KANBAN発行
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_POLICE_KANBAN
@@ -1482,15 +1482,15 @@ _ONET_POLICE_KANBAN_YES;
 』
 
 
-;@Habitat:オネット／フィールド／隠れ家
+;@Habitat:オネット/フィールド/隠れ家
 ;@Person:見張り役
 ;@Figure:ボロ
 ;@AppearanceKey:0
-;@ActionScript:＊いったりきたり
+;@ActionScript:*いったりきたり
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_KAKUREGA_GUARD
-MSG_KAKUREGA_GUARD;＆
+MSG_KAKUREGA_GUARD;&
 @CHKFGOTO(FLG_WIN_GIEGU,_KAKUREGA_GUARD_END)
 @SET_LOOPREG(PC_NESS)			;ネスのIDを主レジに格納
 @GOSUB(MSG_SUB_Q_DEAD)			;気絶チェック
@@ -1547,7 +1547,7 @@ _KAKUREGA_GUARD_DEAD_YES;
 ;jpn: なっちゃったのかなぁ。
 @KEYNP()
 』
-_KAKUREGA_GUARD_END;＆
+_KAKUREGA_GUARD_END;&
 ◆@DSP_STS(STS_PC_NAME_NES), that rocks!@KEY()↓
 ◆Yesterday,@WI(15) I finally became a hideout member.@WI(20)  Please come back and visit.
 ;jpn:◆@DSP_STS(STS_PC_NAME_NES)さん↓
@@ -1560,11 +1560,11 @@ _KAKUREGA_GUARD_END;＆
 @KEYNP()
 』
 
-;@Habitat:オネット／フィールド／旅芸人の小屋前
+;@Habitat:オネット/フィールド/旅芸人の小屋前
 ;@Person:旅芸人プリッツ
 ;@Figure:芸人
 ;@AppearanceKey:FLG_ITEM_PRETZ/off
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_PRETZ
@@ -1659,11 +1659,11 @@ _ONET_PRETZ2;
 』
 
 
-;@Habitat:オネット／フィールド／図書館近く
+;@Habitat:オネット/フィールド/図書館近く
 ;@Person:図書館行った女の子
 ;@Figure:少女D
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_GIRL
@@ -1677,7 +1677,7 @@ _ONET_GIRL_MAIN;
 ◆You can borrow maps for nothing!
 ;jpn:◆としょかんに いくと↓
 ;jpn: べんきょうになるわぁ!@KEY()↓
-;jpn:◆「マザー２」のこととかも↓
+;jpn:◆「マザー2」のこととかも↓
 ;jpn: いっろいろ わかっちゃった。@KEY()↓
 ;jpn:◆いまなら むりょうで↓
 ;jpn: ちずも かりられるのよ!
@@ -1701,7 +1701,7 @@ _ONET_GIRL_AFTER;
 ;jpn: いいとおもうわ。
 @KEYNP()
 』
-_ONET_GIRL_END;＆
+_ONET_GIRL_END;&
 @CHKFGOTO(FLG_ONET_LUCY_CHU,_ONET_GIRL_END_2)
 ◆If she’s is a good mood,@WI(15) a lady in the library will kiss you.
 ;jpn:◆としょかんの おねえさんって↓
@@ -1709,7 +1709,7 @@ _ONET_GIRL_END;＆
 ;jpn: チューしてくれるのよね。
 @KEYNP()
 』
-_ONET_GIRL_END_2;＃
+_ONET_GIRL_END_2;#
 ◆Hey!@WI(15)  You have lipstick on your cheek.
 ;jpn:◆あ@WI(15) ほっぺに くちべにが↓
 ;jpn: ついてるわよ。
@@ -1717,11 +1717,11 @@ _ONET_GIRL_END_2;＃
 』
 
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:モグラのホリー
 ;@Figure:モグラのホリー
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_MOLEHOLLY
@@ -1746,7 +1746,7 @@ MSG_ONET_MOLEHOLLY;
 ;jpn: つよくは なれないよ)
 @KEYNP()
 』
-;＆
+;&
 _ONET_MOLEHOLLY_END;
 ◆(You listened to my advise and fought courageously.@WI(15)  You rock!)
 ;jpn:◆(おれの ちゅうこくをまもって↓
@@ -1756,11 +1756,11 @@ _ONET_MOLEHOLLY_END;
 @KEYNP()
 』
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:街の人A
 ;@Figure:Tシャツ
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_C
@@ -1785,11 +1785,11 @@ _ONET_C_LATER;
 』
 
 
-;@Habitat:オネット／フィールド／街の至る所
+;@Habitat:オネット/フィールド/街の至る所
 ;@Person:街の人B
 ;@Figure:レゲエ
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_F

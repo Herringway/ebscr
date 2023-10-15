@@ -37,7 +37,7 @@ MSG_TWSN_BUSDRIVER;
 @XCHG()
 ◆Yep, this is the bus to Threed,@KEY()↓
 ◆but,...I’m not sure if we can get there or not.@KEY()↓
-◆The fare is ＄@DSP_NUM(0).@KEY()↓
+◆The fare is $@DSP_NUM(0).@KEY()↓
 ◆...do you want to go?↓
 <Yes> <No>
 ;jpn:◆スリークゆきのバスだども↓
@@ -92,7 +92,7 @@ _TWSN_BUSDRIVER_LATER;
 ;@KEY()↓
 ;@GOSUB(MSG_EVT_BUS_MES_B)		;メッセージのサブルーチンへ
 ◆...This bus goes to Fourside via Threed.@KEY()↓
-◆If you don’t pay ＄@DSP_NUM(0) for the fare, I can’t take you there.@KEY()↓
+◆If you don’t pay $@DSP_NUM(0) for the fare, I can’t take you there.@KEY()↓
 ◆...Do you want to go?↓
 <Yes> <No>
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
@@ -307,7 +307,7 @@ MSG_THRK_HIGHWAYBUS_HURRY_T;
 _EVT_RIDE_BUS_THRK_TWSN_LATER;松(NOAのコメント)
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆To Twoson, it’s going to cost ＄@DSP_NUM(0).@KEY()↓
+◆To Twoson, it’s going to cost $@DSP_NUM(0).@KEY()↓
 ◆(for the lot of you).@KEY()↓
 ;◆Moshi_party_ga_futari_izyou_dattara_kono_gyouwo_tasu.@KEY()↓
 ◆Do you want to go?↓
@@ -434,7 +434,7 @@ MSG_EVT_RIDE_BUS_DSRT_THRK;松(NOAのコメント)
 @OPEN(1)
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆To Threed, it’s going to cost ＄@DSP_NUM(0).@KEY()↓
+◆To Threed, it’s going to cost $@DSP_NUM(0).@KEY()↓
 ◆(for the lot of you.)@KEY()↓
 ;◆Moshi_party_ga_futari_izyou_dattara_kono_gyouwo_tasu.@KEY()↓
 ◆Do you want to go?↓
@@ -511,7 +511,7 @@ MSG_EVT_RIDE_BUS_DSRT_FOUR
 ;jpn: フォーサイドに いぐけんども
 @KEY()↓
 ;@GOSUB(MSG_EVT_BUS_MES_B)		;メッセージのサブルーチンへ
-◆I can’t let you on if you don’t pay ＄@DSP_NUM(0) for the fare.@KEY()↓
+◆I can’t let you on if you don’t pay $@DSP_NUM(0) for the fare.@KEY()↓
 ◆Do you want to go?↓
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
 ;jpn: のせてやらねぇだよ。@KEY()↓
@@ -563,7 +563,7 @@ MSG_THRK_HIGHWAYBUS_HURRY;
 ;jpn:◆このバスは↓
 ;jpn: フォーサイドに いぐけんども
 @KEY()↓
-◆I can’t let you on if you don’t pay ＄@DSP_NUM(0) for the fare.@KEY()↓
+◆I can’t let you on if you don’t pay $@DSP_NUM(0) for the fare.@KEY()↓
 ◆Do you want to go?↓
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
 ;jpn: のせてやらねぇだよ。@KEY()↓
@@ -779,7 +779,7 @@ MSG_FOUR_HIGHWAYBUS_HURRY;松(NOAのコメント)
 @KEY()↓
 @MUL_ACTIVE_PLAYER(2)
 @XCHG()
-◆It is going to cost ＄@DSP_NUM(0).@KEY()↓
+◆It is going to cost $@DSP_NUM(0).@KEY()↓
 ◆(for the lot of you).@KEY()↓
 ;◆Moshi_party_ga_futari_izyou_dattara_kono_gyouwo_tasu.@KEY()↓
 ◆Do you want to go?↓
@@ -968,7 +968,7 @@ _THROUGH_THRK_TO_TWSN_YES;
 』
 
 MSG_EVT_BUS_MES_A;
-◆It is going to cost ＄@DSP_NUM(0) for the lot of you.@KEY()↓
+◆It is going to cost $@DSP_NUM(0) for the lot of you.@KEY()↓
 ◆Do you want to go?↓
 ;jpn: みんなで@DSP_NUM(0)ドルになるけど↓
 ;jpn: のってくかい?↓
@@ -1004,7 +1004,7 @@ _BUS_MES_A_NOMONEY;
 
 
 MSG_EVT_BUS_MES_B;
-◆I can’t let you on if you don’t pay ＄@DSP_NUM(0) for the fare.@KEY()↓
+◆I can’t let you on if you don’t pay $@DSP_NUM(0) for the fare.@KEY()↓
 ◆Do you want to go?↓
 ;jpn:◆@DSP_NUM(0)ドルはらわねぇやつは↓
 ;jpn: のせてやらねぇだよ。@KEY()↓
@@ -1112,7 +1112,7 @@ MSG_EVT_GHOST_WARP_THRK;
 ;jpn: (も〜どれ〜〜。も〜どれ〜)
 @KEY()
 @CLOSEALL()
-@MOVE_GOM_CHAR(GOM_ZOMBIGHOST,ANIM_GHOST_THRK_PLUS1,OBJFX_SHOW_NONE);２匹追加
+@MOVE_GOM_CHAR(GOM_ZOMBIGHOST,ANIM_GHOST_THRK_PLUS1,OBJFX_SHOW_NONE);2匹追加
 @MOVE_GOM_CHAR(GOM_ZOMBIGHOST,ANIM_GHOST_THRK_PLUS2,OBJFX_SHOW_NONE)
 @WAITSYS()
 @WARP(WARP_THRK_GHOSTTUNNEL_R)
@@ -1130,7 +1130,7 @@ MSG_EVT_GHOST_WARP_THRK;
 ;★アップルキッドに食べ物をあげて FLG_TWSN_APPLE_THANKS が ON に
 ;なったらマウスをドアの前に移動させる。
 ;(フラグを見て自分で移動するのか、強制的に移動させるのかどちらがよいの?)
-;●答え：この場合は強制的に移動させるのがよい。
+;●答え:この場合は強制的に移動させるのがよい。
 ;    ダイレクトに命令を下せる場合は、命令する原則でいこう。
 ;★マウスはネスに話し掛けられたら MSG_TWSN_MOUSE_0 を発行する。
 
@@ -1516,7 +1516,7 @@ _TWSN_CHAOS_HALL_F_TEMP;
 
 ;#34	雷を落とされる(外に飛ばされる)
 
-;●ハッピー村／HH教団の館／祭壇の間のカーペインターと話した時、
+;●ハッピー村/HH教団の館/祭壇の間のカーペインターと話した時、
 ;プレイヤーパーティーが「フランクリンバッジ」を所持していなかったら
 ;_BATTLE_CARPAINTER_NOTHAVE が呼ばれる。
 ;★ここで雷を落とされた効果
@@ -1563,7 +1563,7 @@ MSG_GRFD_POKEY;
 @KEY()
 @CLOSEALL()
 @CLRF(FLG_SYS_MONSTER_OFF)	;モンスター出現許可(勝っても負けても)
-@CLRF(FLG_GRFD_POKEY_APPEAR)	;ポーキー＆手下出現禁止
+@CLRF(FLG_GRFD_POKEY_APPEAR)	;ポーキー&手下出現禁止
 ;ポーキー去る
 @FRESH_CHAR( PRSN_GRFD_FIELD_A )
 @WAITSYS()
@@ -1752,7 +1752,7 @@ _TWSN_PAULA_PAPA_WAKARE_MAIN;
 ;jpn:◆たぶん つぎのスリークのまちで↓
 ;jpn: もうひとりの なかまにも↓
 ;jpn: あえるはずよ。@KEY()↓
-;jpn:◆この ３にんで↓
+;jpn:◆この 3にんで↓
 ;jpn: ちからを あわせれば@KEY()↓
 ;jpn:◆きっと どんなことにも↓
 ;jpn: まけないわ。@KEY()↓
@@ -1772,7 +1772,7 @@ MSG_TWSN_PAUL_OK1;
 ;jpn: パパ@WI(20) ないてなんかいないぞ。
 @KEYNP()
 @CLOSEALL()
-;２度話したらパパをうろうろ動きに(ハマり防止)
+;2度話したらパパをうろうろ動きに(ハマり防止)
 @CHKFGOTO( FLG_TEMP_0, _TWSN_PAUL_OK1_2ND )
 _TWSN_PAUL_OK1_1ST
 @SETF( FLG_TEMP_0 )
@@ -1822,7 +1822,7 @@ _EVT_PAURA_FATHER_NES_DEAD;ネス気絶時
 
 ;#39	ミチコと楽屋潜入
 
-;★カオス劇場／ホールの「ミーハーのミチコ」のセリフ(MSG_TWSN_MICHIKO)
+;★カオス劇場/ホールの「ミーハーのミチコ」のセリフ(MSG_TWSN_MICHIKO)
 ;「一緒に来てくれる?」でプレイヤーキャラを牽引してホールから楽屋に移動する。
 
 MSG_EVT_39_MICHIKO;
@@ -1860,7 +1860,7 @@ MSG_EVT_39_MICHIKO;
 
 ;#40	トンズラの解放
 
-;★カオス劇場／支配人の部屋の「劇場支配人ドッグフード氏」に
+;★カオス劇場/支配人の部屋の「劇場支配人ドッグフード氏」に
 ;「さつたば」を「つかう」と _TWSN_CHAOS_RECEIVE_SATUTABA をきっかけに
 ;トンズラブラザーズが入り口から登場する(BGMも切り替える)。
 ;★ゴージャス、ラッキー、ナイス、オッケー、
@@ -2208,14 +2208,14 @@ MSG_EVT_BIKINIZOMBI_F;
 @SETF(FLG_THRK_BIKINIZOMBI_P_APPEAR)
 』
 ;★(後を追って)廊下に移動すると、
-;廊下にいたビキニゾンビは部屋１入り口に移動して消える。
+;廊下にいたビキニゾンビは部屋1入り口に移動して消える。
 
 MSG_EVT_BIKINIZOMBI_P;
 ;ネスが近づいたら左のドアに消える
 @CLRF(FLG_THRK_BIKINIZOMBI_P_APPEAR)
 @SETF(FLG_THRK_HOTELZOMBI_APPEAR)
 』
-;★その後プレイヤーキャラが部屋１に入ったら、
+;★その後プレイヤーキャラが部屋1に入ったら、
 ;フラグ FLG_THRK_HOTELZOMBI_APPEAR によりゾンビたち出現し、
 ;(ワープメッセージ中の予約でプレイヤーに驚きの漫符を表示する。)
 ;ゾンビ、接近しながら暗転。効果音「ポカッ!」で
@@ -2409,7 +2409,7 @@ MSG_EVT_PAULA_TELEPATHY_PRISON;牢屋の扉出ようとしたら‥‥ジェフ�
 
 ;★スリークでビキニゾンビの罠にはまったら、プレイヤーキャラを
 ;ウィンタースのジェフに交代する。
-;★ウィンタース／寄宿舎／ジェフの部屋からスタート。
+;★ウィンタース/寄宿舎/ジェフの部屋からスタート。
 ;★まず、MSG_WINS_POLANESS を発行。ジェフとトニーはベッドで寝ている。
 
 ;★MSG_WINS_POLANESS が終わった後で(FLG_WINS_START/on)
@@ -2427,7 +2427,7 @@ MSG_WINS_POLANESS;
 @SAVE_STORY()
 ;ジェフのストーリーへ移行する為の処理
 @ADD_PARTY(PC_JEFF)		;ジェフ加入
-@MONEYIN( 2 )			;２ドル持たせる
+@MONEYIN( 2 )			;2ドル持たせる
 @DEL_PARTY(PC_NESS)		;ネス脱退
 @DEL_PARTY(PC_PAULA)		;ポーラ脱退
 @CLRF(FLG_THRK_HOTELZOMBI_APPEAR)

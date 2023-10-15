@@ -1,11 +1,11 @@
 ;-------------------------------------------------
 
-;^^^^^^^^オネット：山岳の隕石跡^^^^^^^^
+;^^^^^^^^オネット:山岳の隕石跡^^^^^^^^
 
 MSG_INSEKI_CHECK;marcus
 @CHKFGOTO(FLG_ITEM_XYZ,_INSEKI_CHECK_AFTER)
 @CHKFGOTO(FLG_INFO_XYZ,_INSEKI_CHECK_LATER)
-;◆(おおきな いんせきが↓;＄
+;◆(おおきな いんせきが↓;$
 ; おちた あと らしい。@KEY()↓
 ◆(Caution!@WI(20)  There are still lots of fires burning here and there.@KEY()↓
 ◆It’s HOT!)
@@ -182,7 +182,7 @@ MSG_ONET_KANBAN_18;
 ;MSG_HAPPY_MUZIN_SHOP;
 ;@OPEN(1)
 ;◆(HHむらのの↓
-;  いえその１のとびらの↓
+;  いえその1のとびらの↓
 ;  メッセージです)@KEYNP()
 ;@CLOSE()
 ;@!
@@ -216,7 +216,7 @@ MSG_READ_TWSN_SIGN3;marcus
 MSG_READ_TWSN_SIGN1;marcus
 ◆Twoson−−↓
   we got this name because we weren’t first.
-;jpn:◆２ばんめのまちだから↓
+;jpn:◆2ばんめのまちだから↓
 ; TWOSON@WI(30)↓
 ;jpn: おきづきでしたか?
 @KEYNP()
@@ -348,7 +348,7 @@ MSG_READ_THRK_SIGN9;marcus
 ;◆Forty years in the hint business.@WI(20)↓
   ”Hint Shop Realization”
 ;DAN:NARUHODO is used when we understand something or discover something new and it makes sense.  I guess "I see" is the best translation??
-;jpn:◆ヒントをだして ４０ねん↓
+;jpn:◆ヒントをだして 40ねん↓
 ;jpn: 「ヒントショップ なるほど」
 @KEYNP()
 』
@@ -360,7 +360,7 @@ MSG_READ_THRK_SIGN8;marcus
 ;jpn:◆(「かんばんは↓
 ;jpn:     よるのあいさつ↓
 ;jpn:         こんばんは」@KEY()↓
-;jpn:◆５・７・５でまとめてみました)
+;jpn:◆5・7・5でまとめてみました)
 @KEYNP()
 』
 
@@ -414,7 +414,7 @@ MSG_READ_THRK_SIGN3;marcus
 』
 
 
-MSG_CHECK_THRK_HOSP_ROOM1_SHELF;＄
+MSG_CHECK_THRK_HOSP_ROOM1_SHELF;$
 @GET_ORDER_PLAYER(1)
 @XCHG()
 ◆@DSP_NAME(0) checked the drawers.@KEY()↓
@@ -435,13 +435,13 @@ MSG_CHECK_THRK_HOSP_ROOM1_SHELF;＄
 @KEYNP()
 @!
 
-_HOSP_ROOM1_SHELF_AFTER;＄
+_HOSP_ROOM1_SHELF_AFTER;$
 ◆But there was nothing.
 ;jpn:◆しかし なにもなかった。
 @KEYNP()
 @!
 
-_HOSP_ROOM1_SHELF_GOODSFULL;＄
+_HOSP_ROOM1_SHELF_GOODSFULL;$
 ◆But you don’t have any more space.
 ;jpn:◆しかし もちものが
 ;jpn: いっぱいだった。
@@ -462,10 +462,10 @@ MSG_READ_FOUR_SIGN1;
 』
 
 MSG_READ_FOUR_SIGN2;marcus
-◆(Planning Meeting for EarthBound ２.@KEY()↓
+◆(Planning Meeting for EarthBound 2.@KEY()↓
 ◆Only those who are related to this project are allowed to enter.@KEY()↓
 ◆APE Software Development Team)
-;jpn:◆(マザー３ プランかいぎちゅう@WI(20)↓
+;jpn:◆(マザー3 プランかいぎちゅう@WI(20)↓
 ;jpn: むかんけいしゃの↓
 ;jpn: たちいりを きんしします。@KEY()↓
 ;jpn:◆ エイプ かんだかいはつしつ)
@@ -474,9 +474,9 @@ MSG_READ_FOUR_SIGN2;marcus
 
 MSG_READ_FOUR_SIGN3;
 ◆First Floor ”Fourside Bakery”@KEY()↓
-◆Second Floor ”２F of the Bakery”
-;jpn:◆１かい「フォーサイドベーカリー」↓
-;jpn: ２かい「ベーカリーの２かい」
+◆Second Floor ”2F of the Bakery”
+;jpn:◆1かい「フォーサイドベーカリー」↓
+;jpn: 2かい「ベーカリーの2かい」
 @KEYNP()
 』
 
@@ -711,7 +711,7 @@ _READ_SUMS_HIERO_MAIN;
 ◆to fight against invaders from the sky.@KEY()↓
 ◆We’ve lost.@KEY()↓
 ◆But our fortress was protected by the gods of Scaraba.@KEY()↓
-◆The invader from the sky is reborn every １０００ years and comes to attack us.@KEY()↓
+◆The invader from the sky is reborn every 1000 years and comes to attack us.@KEY()↓
 ◆He hides in the Dimension@KEY()↓
 ◆That Crosses Time and waits for his evil plan to continue.@KEY()↓
 ◆The Dimension That Crosses Time is far beyond the Deep Darkness.@KEY()↓
@@ -719,8 +719,8 @@ _READ_SUMS_HIERO_MAIN;
 ◆Only with the @DSP_GOODS(GDS_TOOL_EAGLE_EYE) can you see.@KEY()↓
 ◆The Sphinx protects everything and waits for our true warriors.@KEY()↓
 ◆   . ↓
-  ４   ３↓
-  ２   ５@KEY()↓
+  4   3↓
+  2   5@KEY()↓
 ◆Dance in front of the Sphinx.
 ;jpn:◆(@DSP_STS(STS_PC_NAME_POO)が↓
 ;jpn: ヒエログリフをよんだ!)@KEY()↓
@@ -733,7 +733,7 @@ _READ_SUMS_HIERO_MAIN;
 ;jpn: スカラビの かみがみによって↓
 ;jpn: まもられた。@KEY()↓
 ;jpn:◆てんからきた しんりゃくしゃは↓
-;jpn: １０００ねんごとに うまれかわり↓
+;jpn: 1000ねんごとに うまれかわり↓
 ;jpn: おそってくるという。@KEY()↓
 ;jpn:◆しんりゃくしゃは↓
 ;jpn: ときの かなたにかくれ↓
@@ -748,8 +748,8 @@ _READ_SUMS_HIERO_MAIN;
 ;jpn:◆しんの ゆうしゃの↓
 ;jpn: おとずれを まつ。@KEY()↓
 ;◆   ・↓
-;  ４   ３↓
-;   ２ ５@KEY()↓
+;  4   3↓
+;   2 5@KEY()↓
 ;jpn:◆スフィンクスのまえで おどれ」
 @CHKFGOTO(FLG_SUMS_HIEROGLYPH,_SUMS_HIER_EXHI2_SGN1_2)
 @KEY()
@@ -820,11 +820,11 @@ _SUMS_HIER_EXHI2_SGN1_END;
 _READ_SUMS_HIERO_DEAD;
 @CHKFGOTO(FLG_WIN_GEROPP,_READ_SUMS_HIERO_MAIN);プーが合流してたら
 _READ_SUMS_HIERO_DEAD_2;marcus
-◆(This set of hieroglyphs is believed to have been made around ４０００ B.C.@KEY()↓
+◆(This set of hieroglyphs is believed to have been made around 4000 B.C.@KEY()↓
 ◆No one has ever understood the contents@KEY()↓
 ◆because it’s written in an unusual style with unusual characters.@KEY()↓
 ◆Won’t you come closer and try to solve the puzzle of the ancient stone tablets?)
-;jpn:◆(きげんぜん４０００ねんころの↓
+;jpn:◆(きげんぜん4000ねんころの↓
 ;jpn: ものとされている↓
 ;jpn: このヒエログリフは@KEY()↓
 ;jpn:◆とくしゅな もじと げんごで↓
@@ -837,17 +837,17 @@ _READ_SUMS_HIERO_DEAD_2;marcus
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN1;marcus
 ◆(Ram Raisin the fifth’s training pot.)
-;jpn:◆(ラムレーズン５せいの おまる)
+;jpn:◆(ラムレーズン5せいの おまる)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN2;marcus
 ◆(Ram Raisin the fourth’s casket.)
-;jpn:◆(ラムレーズン４せいの ひつぎ)
+;jpn:◆(ラムレーズン4せいの ひつぎ)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN3;marcus
 ◆(Ram Raisin the third’s casket.)
-;jpn:◆(ラムレーズン３せいの ひつぎ)
+;jpn:◆(ラムレーズン3せいの ひつぎ)
 @KEYNP()
 』
 MSG_READ_SUMS_HIER_EXHI1_SGN4;marcus
@@ -971,7 +971,7 @@ MSG_READ_DDMM1_SIGN10;marcus
 
 
 MSG_READ_DDMM1_SIGN11;marcus
-;垂れ下がる４本のロープの登り口すべてに
+;垂れ下がる4本のロープの登り口すべてに
 ◆The grass is always greener on the other rope...  I wonder why that is...@KEY()↓
 ◆...Brick Road
 ;DAN:It's like a proverb "the neighbor's grass is always green" or something.
@@ -984,7 +984,7 @@ MSG_READ_DDMM1_SIGN11;marcus
 
 
 MSG_READ_DDMM1_SIGN12;marcusこのセリフでよい?
-;４本ロープのはずれのロープ
+;4本ロープのはずれのロープ
 ◆I put out a bulletin board, but it’s probably unnecessary.@KEY()↓
 ◆...Brick Road
 
@@ -1031,7 +1031,7 @@ MSG_READ_DDMM1_SIGN14;marcus
 
 
 MSG_READ_DDMM1_SIGN15;marcus
-;看板１５の左どなりに
+;看板15の左どなりに
 ◆I couldn’t agree more with the opinion on the left bill board.@KEY()↓
 ◆...Brick Road
 
@@ -1123,7 +1123,7 @@ MSG_READ_DDMM1_SIGN3;marcus
 ; ぼきんばこの せつめいを↓
 ; およみください)@KEYNP()
 ;』
-;看板２の統計のウラをかこうと考えた人へ
+;看板2の統計のウラをかこうと考えた人へ
 ;◆ウラのウラを かく。これこそ↓
 ; ダンジョンづくりの ごくいなり。↓
 ;        ‥ブリック・ロード@KEYNP()
@@ -1144,11 +1144,11 @@ MSG_READ_DDMM1_SIGN4;marcus
 
 MSG_READ_DDMM1_SIGN2;marcus
 ;最初の岐路
-◆My statistics show about ７０％ of the people go to the right first.@KEY()↓
+◆My statistics show about 70% of the people go to the right first.@KEY()↓
 ◆...Brick Road
 
 ;jpn:◆わたしの とうけいによれば↓
-;jpn: やく７０パーセントのひとは まず↓
+;jpn: やく70パーセントのひとは まず↓
 ;jpn: みぎをえらぶ。‥ブリック・ロード
 @KEYNP()
 』
@@ -1159,13 +1159,13 @@ MSG_READ_DDMM1_SIGN6;marcus
 ◆...Brick Road
 
 ;jpn:◆まず さいしょに めざすべきは↓
-;jpn: ４ほんのロープなり。↓
+;jpn: 4ほんのロープなり。↓
 ;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 ;MSG_BRICK_SIGN_6;大きなヒントをあえて与える
 ;◆あそぶゆとりが まったくなければ↓
-; ３ぼんのうちの ひだりのみちを↓
+; 3ぼんのうちの ひだりのみちを↓
 ; ゆくがよい。 ‥ブリック・ロード@KEYNP()
 ;』
 
@@ -1213,7 +1213,7 @@ MSG_READ_DDMM2_SIGN24;marcus
 ◆Follow this, and you’re bound to be successful in EarthBound.@KEY()↓
 ◆...Brick Road
 ;jpn:◆しっぱいは せいこうの↓
-;jpn: マザー２である。↓
+;jpn: マザー2である。↓
 ;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
@@ -1232,7 +1232,7 @@ MSG_READ_DDMM2_SIGN25;marcus
 
 
 MSG_READ_DDMM2_SIGN35;marcus
-;３階に登るロープの下に
+;3階に登るロープの下に
 ◆There are lots of monsters up there, but don’t stress out.@KEY()↓
 ◆...Brick Road
 
@@ -1270,7 +1270,7 @@ MSG_READ_DDMM2_SIGN26;
 ◆...Brick Road
 
 ;jpn:◆ここは わたしのからだの↓
-;jpn: ２かいである。↓
+;jpn: 2かいである。↓
 ;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
@@ -1349,13 +1349,13 @@ MSG_READ_DDMM3_SIGN36;
 ◆...Brick Road
 
 ;jpn:◆ここは わたしのからだの↓
-;jpn: ３かいである。↓
+;jpn: 3かいである。↓
 ;jpn:        ‥ブリック・ロード
 @KEYNP()
 』
 
 
-MSG_READ_DDMM3_SIGN39;＠モンスター名確認marcus
+MSG_READ_DDMM3_SIGN39;@モンスター名確認marcus
 ;いわば「モンスター動物園」
 ;◆「ダックダック」↓
 ◆”Crazed Duck”↓
@@ -1369,7 +1369,7 @@ MSG_READ_DDMM3_SIGN39;＠モンスター名確認marcus
 』
 
 
-MSG_READ_DDMM3_SIGN37;＠モンスター名確認marcus
+MSG_READ_DDMM3_SIGN37;@モンスター名確認marcus
 ;いわば「モンスター動物園」
 ;◆「あばれやぎ」↓
 ◆”Rowdy Goat”↓
@@ -1384,7 +1384,7 @@ MSG_READ_DDMM3_SIGN37;＠モンスター名確認marcus
 
 
 MSG_READ_DDMM3_SIGN41;marcus
-;４階に登るロープの下に
+;4階に登るロープの下に
 ◆”Good Job, you finally made it!”@KEY()↓
 ◆There is a board upstairs that says that.@KEY()↓
 ◆...Brick Road
@@ -1406,7 +1406,7 @@ MSG_READ_DDMM3_SIGN40;marcus
 』
 
 
-MSG_READ_DDMM3_SIGN38;marcus＠モンスター名
+MSG_READ_DDMM3_SIGN38;marcus@モンスター名
 ;いわば「モンスター動物園」
 ◆”Slimy little pile”↓
   He has a bad habit of burping.@KEY()↓
@@ -1430,8 +1430,8 @@ MSG_READ_DDMM4_SIGN42;marcus
 』
 
 
-MSG_READ_DDMM4_SIGN43;marcusβ＄
-;１回目の帰路となる穴
+MSG_READ_DDMM4_SIGN43;marcusβ$
+;1回目の帰路となる穴
 ;◆ひとつめのあな。↓
 ◆”Return Hole”↓
   Jump in with all your courage.@KEY()↓
@@ -1454,7 +1454,7 @@ MSG_BRICK_SIGN_46;marcus		←入り口を入ってすぐの場所に
 @KEYNP()
 』
 
-MSG_BRICK_SIGN_47;marcus＄β
+MSG_BRICK_SIGN_47;marcus$β
 ◆Watch for falling materials!@KEY()↓
 ◆...Brick Road
 
@@ -1504,7 +1504,7 @@ MSG_READ_DGPM1_SIGN1;marcus
 MSG_READ_GMIM0_SIGN3;marcus
 ;道具屋グミの看板
 ◆(Item shop here.)
-;＠テンダ風に
+;@テンダ風に
 ;jpn:◆(どうぐや ここ)
 @KEYNP()
 』
@@ -1559,19 +1559,19 @@ MSG_READ_GMIM0_SIGN4;marcus
 ;MSG_TEST_KANBAN_1
 ;◆(メッセージの テスト↓
 ;  ラベルは↓
-;  KANBAN １です。)@KEYNP()
+;  KANBAN 1です。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_KANBAN_2L
 ;◆(メッセージの テスト↓
 ;  ラベルは↓
-;  KANBAN ２Lです。)@KEYNP()
+;  KANBAN 2Lです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_KANBAN_2R
 ;◆(メッセージの テスト↓
 ;  ラベルは↓
-;  KANBAN ２Rです。)@KEYNP()
+;  KANBAN 2Rです。)@KEYNP()
 ;@!
 ;
 ;MSG_TEST_TALKWOOD_L
@@ -1672,7 +1672,7 @@ MSG_READ_THRK_SIGN2;marcus
 ;jpn:◆(アダルトな きみには↓
 ;jpn: いわないけれど@KEY()↓
 ;jpn:◆ヤングな きみは↓
-;jpn: ２じかんいじょうゲームを↓
+;jpn: 2じかんいじょうゲームを↓
 ;jpn: しないようにしよう。@KEY()↓
 ;jpn:◆なんでも やりすぎは↓
 ;jpn: よくないぞ。↓
@@ -1688,7 +1688,7 @@ MSG_READ_THRK_SIGN4;marcus
 ;jpn: おねーさんも)
 @KEYNP()
 』
-;◆(４５さいを すぎても↓
+;◆(45さいを すぎても↓
 ; ゲームをつくっている↓
 ; ひとがいます。@KEY()↓
 ;◆なまえは いいません)@KEY()↓
@@ -1774,7 +1774,7 @@ MSG_READ_DDMM1_SIGN44;marcus
 ; ダンジョンかんせいきねんとして。↓
 ;-------------------------------------------------
 
-MSG_BRICK_SIGN_45;marcus＄β
+MSG_BRICK_SIGN_45;marcus$β
 ◆If you check into this bench, it’s just like checking into a hotel.@KEY()↓
 ◆...Brick Road
 

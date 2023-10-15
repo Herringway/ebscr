@@ -10,11 +10,11 @@ MSG_ONET_SHARK_INFO_FRANK;フランクを倒したら消える
 』
 
 ;
-;@Habitat:オネット／ゲームセンター／１階
+;@Habitat:オネット/ゲームセンター/1階
 ;@Person:裏口を塞ぐ団A
 ;@Figure:シャーク団
 ;@AppearanceKey:FLG_ONET_GUARDSHARK_DISAPPEAR/off
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_D
@@ -46,11 +46,11 @@ _ONET_SHARK_D2;
 』
 
 
-;@Habitat:オネット／ゲームセンター／１階
+;@Habitat:オネット/ゲームセンター/1階
 ;@Person:シャーク団A
 ;@Figure:シャーク団
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_C
@@ -77,11 +77,11 @@ _ONET_SHARK_C2;
 』
 
 
-;@Habitat:オネット／ゲームセンター／１階
+;@Habitat:オネット/ゲームセンター/1階
 ;@Person:シャーク団B
 ;@Figure:シャーク団
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_F
@@ -99,11 +99,11 @@ _ONET_SHARK_F2;
 』
 
 
-;@Habitat:オネット／ゲームセンター／２階
+;@Habitat:オネット/ゲームセンター/2階
 ;@Person:シャーク団C
 ;@Figure:シャーク団
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_E
@@ -116,15 +116,15 @@ MSG_ONET_SHARK_E;
 』
 
 
-;@Habitat:オネット／ゲームセンター／２階
+;@Habitat:オネット/ゲームセンター/2階
 ;@Person:シャーク団D
 ;@Figure:シャーク団
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_G
-MSG_ONET_SHARK_G;シャーク団３
+MSG_ONET_SHARK_G;シャーク団3
 ◆To tell you the truth,@KEY()↓
 ◆I like drinking tea and eating fresh vegetables,@KEY()↓
 ◆but that doesn’t fit my super cool image.@KEY()↓
@@ -133,15 +133,15 @@ MSG_ONET_SHARK_G;シャーク団３
 』
 
 
-;@Habitat:オネット／ゲームセンター／２階
+;@Habitat:オネット/ゲームセンター/2階
 ;@Person:シャーク団E
 ;@Figure:ゴロつき
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_SHARK_GOROTUKI
-MSG_ONET_SHARK_GOROTUKI;ゲームセンター４
+MSG_ONET_SHARK_GOROTUKI;ゲームセンター4
 @CHKFGOTO(FLG_WIN_FRANK,_ONET_SHARK_GOROTUKI_LATER)
 ◆Frank has an incredibly powerful weapon.@KEY()↓
 ◆If you get your hands on it, you can stand against any enemy.
@@ -156,11 +156,11 @@ _ONET_SHARK_GOROTUKI_LATER;
 
 
 ;----------------------------------------
-;@Habitat:オネット／ドラッグストア／ドラッグストア
+;@Habitat:オネット/ドラッグストア/ドラッグストア
 ;@Person:店員A
 ;@Figure:おじいさん
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_DRUG1
@@ -170,11 +170,11 @@ MSG_ONET_DRUG1;@MaltaAppeded
 @GOSUB(MSG_SHOP_ONET_DRUG1)
 』
 
-;@Habitat:オネット／ドラッグストア／ドラッグストア
+;@Habitat:オネット/ドラッグストア/ドラッグストア
 ;@Person:店員B
 ;@Figure:サラリーマンD
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_DRUG2
@@ -184,11 +184,11 @@ MSG_ONET_DRUG2;@MiuraAppeded
 @GOSUB(MSG_SHOP_ONET_DRUG2)
 』
 
-;@Habitat:オネット／ドラッグストア／ドラッグストア
+;@Habitat:オネット/ドラッグストア/ドラッグストア
 ;@Person:客
 ;@Figure:Tシャツ
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_DRUG_BOY
@@ -213,11 +213,11 @@ _ONET_DRUG_BOY_DEAD;
 ;◆Having supplies is always useful.@KEYNP()
 ;』
 ;----------------------------------------
-;@Habitat:オネット／ネスの家／１階リビング
+;@Habitat:オネット/ネスの家/1階リビング
 ;@Person:(階段塞ぐ)母親
 ;@Figure:ネスママ
 ;@AppearanceKey:FLG_MYHOME_MAMA_YEAH/off
-;@ActionScript:＊東向いて止まったまま
+;@ActionScript:*東向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MYHOME_MAMA_0
@@ -265,11 +265,11 @@ _MYHOME_MAMA_YEAH_BUT;ネス着替えてない
 @WARP(WARP_MYHOME_2ND);着替えてベッドから
 』
 
-;@Habitat:オネット／ネスの家／１階リビング
+;@Habitat:オネット/ネスの家/1階リビング
 ;@Person:(うろつく)母親
 ;@Figure:ネスママ
 ;@AppearanceKey:FLG_MYHOME_MAMA_YEAH/on
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MYHOME_MAMA1
@@ -356,7 +356,7 @@ _MYHOME_MAMA_TMP_PARTY_TMP;※メッセージなし
 ◆You are all so... cool!@WI(20)  Yes,@WI(10) you’re hip!@KEYNP()
 』
 
-_MYHOME_MAMA_XYZ;マジカント後：マイホーム夜(室内も暗くする)※()何?
+_MYHOME_MAMA_XYZ;マジカント後:マイホーム夜(室内も暗くする)※()何?
 @CHKFGOTO(FLG_TEMP_9,_MYHOME_MAMA_XYZ_TMP)
 ◆Oh,@WI(10) @DSP_NAME(PC_NESS)!@WI(20)  You finally showed up...@KEY()↓
 ◆There are plenty of creepy monsters running around Onett now.@KEY()↓
@@ -412,7 +412,7 @@ _MYHOME_MAMA_XYZ_TMP;繰りかえし点
 @GOSUB(MSG_GLOBAL_CHECK_HOMESICK);ホームシック検査
 』
 
-_MYHOME_MAMA_END;＆最終戦闘後のママのセリフ
+_MYHOME_MAMA_END;&最終戦闘後のママのセリフ
 @CHKFGOTO(FLG_MYHOME_PHONE_RING,_MYHOME_MAMA_END_RING);電話が鳴ってたら
 @CHKFGOTO(FLG_ONET_MYHOME_END_MAMA,_MYHOME_MAMA_END_LATER)
 ◆Wow,@WI(10) you’ve become such a strong,@WI(10) young man.@KEY()↓
@@ -561,11 +561,11 @@ _MSG_DEBUG_PHOTO;
 』
 
 
-;@Habitat:オネット／ネスの家／１階リビング
+;@Habitat:オネット/ネスの家/1階リビング
 ;@Person:スヌーピー
 ;@Figure:ネスの犬
 ;@AppearanceKey:FLG_DOG/off
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MYHOME_DOG
@@ -635,7 +635,7 @@ _MYHOME_DOG_LATER;
 ;jpn: いちばんつよいんじゃない?)
 @KEYNP()
 』
-_MYHOME_DOG_END;＆
+_MYHOME_DOG_END;&
 ◆(Other dogs haven’t figured it out yet,@KEY()↓
 ◆but I know that you guys saved the world!)
 ;jpn:◆(せかいじゅうの ほかのいぬは↓
@@ -655,11 +655,11 @@ _MYHOME_DOG_MED;連れてかなかった場合
 @KEYNP()
 』
 
-;@Habitat:オネット／ネスの家／１階リビング
+;@Habitat:オネット/ネスの家/1階リビング
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて固定
+;@ActionScript:*正面向いて固定
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_TELE_PAPA_MYHOME
@@ -687,11 +687,11 @@ _TELE_PAPA_MYHOME_1;
 ◆”Hello,@WI(10) it’s your dad.@KEY()↓
 ◆”Work to exhaustion when you’re young...”@KEY()↓
 ◆Have you ever heard of a weird saying like this?@KEY()↓
-◆Just remember,@WI(15) I’m always behind you １００％.  Don’t be afraid.@KEY()↓
+◆Just remember,@WI(15) I’m always behind you 100%.  Don’t be afraid.@KEY()↓
 ◆I know that you’re brave.@WI(20)  You can do it!@KEY()↓
 ◆Don’t forget to call me periodically during your adventure.@KEY()↓
 ◆I can make a record of your progress when you call me.@KEY()↓
-◆Oh yeah,@WI(15) I deposited ＄３０ into your bank account.@KEY()↓
+◆Oh yeah,@WI(15) I deposited $30 into your bank account.@KEY()↓
 ◆Do you have your ATM card?@KEY()↓
 ◆Withdraw your money from any cash machine and buy whatever you need.@KEY()↓
 ◆Good Luck,@WI(15) m’boy!@WI(20)  I feel like such a hero!@KEY()↓
@@ -711,7 +711,7 @@ _TELE_PAPA_MYHOME_1;
 ;jpn:◆ぼうけんのきろく を↓
 ;jpn: つけてあげるからね。@KEY()↓
 ;jpn:◆おまえの ぎんこうこうざに↓
-;jpn: ３０ドル↓
+;jpn: 30ドル↓
 ;jpn: ふりこんでおいたよ。@KEY()↓
 ;jpn:◆キャッシュカードを↓
 ;jpn: もっているだろう?@KEY()↓
@@ -780,11 +780,11 @@ _TELE_PAPA_MYHOME_END;ギーグ倒してたら
 』
 
 
-;@Habitat:オネット／ネスの家／１階リビング
+;@Habitat:オネット/ネスの家/1階リビング
 ;@Person:ドア塞ぐポーキー
 ;@Figure:ポーキー
 ;@AppearanceKey:FLG_MYHOME_POKEY_DISAPPEAR/off
-;@ActionScript:＊演出コンテ#1.1
+;@ActionScript:*演出コンテ#1.1
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MYHOME_POKEY
@@ -807,7 +807,7 @@ MSG_MYHOME_POKEY;
 @KEY()↓
 @GET_CHAR_DIR(PRSN_ONET_NES_1F_D,2,PRSN_ONET_NES_1F_A);ママの方を向く
 @SET_CHAR_DIR(PRSN_ONET_NES_1F_D,0)
-◆Oh!@WI(20)  Good evening ma’am.@WI(20)  You’re looking lovely as usual.  ＊snicker＊
+◆Oh!@WI(20)  Good evening ma’am.@WI(20)  You’re looking lovely as usual.  *snicker*
 ;jpn:◆あ@WI(15) おばさん こんばんは。@WI(20)↓
 ;jpn: いつも きれいですね へへへ。
 @KEY()↓
@@ -833,7 +833,7 @@ MSG_MYHOME_POKEY;
 ;jpn:◆でも とーちゃんが↓
 ;jpn: かえってきたら↓
 ;jpn: おれが おこられるだろ。@KEY()↓
-;jpn:◆けつたたき １００かいだ。@KEY()↓
+;jpn:◆けつたたき 100かいだ。@KEY()↓
 ;jpn:◆いっしょに ピッキーを さがしに↓
 ;jpn: いってくれるだろ?@KEY()↓
 ;jpn:◆しんゆうだって ことでさぁ。↓
@@ -962,11 +962,11 @@ _MYHOME_POKEY_LETSGO;
 』
 
 
-;@Habitat:オネット／ネスの家／トレーシーの部屋
+;@Habitat:オネット/ネスの家/トレーシーの部屋
 ;@Person:トレーシー
 ;@Figure:トレーシー
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_MYHOME_TRACY
@@ -1035,10 +1035,10 @@ _TRACY_STONE_GOODSFULL;
 ;jpn: もちものが いっぱいね!
 @KEYNP()
 』
-MSG_MYHOME_TRACY_END;＆
+MSG_MYHOME_TRACY_END;&
 @CHKFGOTO(FLG_MYHOME_TRACY_FINAL,_MYHOME_TRACY_END_FINAL)
 ◆Goody!@WI(20)  My brother is back!@KEY()↓
-◆You’ve got a lot of catching up to do with your schoolwork, ＊Hyork＊!@KEY()↓
+◆You’ve got a lot of catching up to do with your schoolwork, *Hyork*!@KEY()↓
 ◆If you have any problems with your assignments,@WI(15) I’ll help you.@KEY()↓
 ◆Don’t get freaked out.@KEY()↓
 ◆Did Escargot Express,@WI(15) my old company,@WI(15) help you?@KEY()↓
@@ -1148,11 +1148,11 @@ _MYHOME_TRACY_END_NO;いいえ
 
 ;----------------------------------------
 
-;@Habitat:オネット／バーガーショップ／バーガーショップ
+;@Habitat:オネット/バーガーショップ/バーガーショップ
 ;@Person:店員左手
 ;@Figure:ウェイトレスB
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HAMBURGER_WAITRESSA
@@ -1174,11 +1174,11 @@ MSG_ONET_HAMBURGER_TMP;
 @KEYNP()
 』
 
-;@Habitat:オネット／バーガーショップ／バーガーショップ
+;@Habitat:オネット/バーガーショップ/バーガーショップ
 ;@Person:店員右手
 ;@Figure:ウェイトレスB
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HAMBURGER_WAITRESSB
@@ -1191,11 +1191,11 @@ MSG_ONET_HAMBURGER_WAITRESSB;
 ;@SETF(FLG_TEMP_2);SHOP.MSGの買物後にセット
 』
 
-;@Habitat:オネット／バーガーショップ／バーガーショップ
+;@Habitat:オネット/バーガーショップ/バーガーショップ
 ;@Person:客A
 ;@Figure:おばさんB
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲でうろつく
+;@ActionScript:*小範囲でうろつく
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HAMBURGER_OBASAN
@@ -1208,11 +1208,11 @@ MSG_ONET_HAMBURGER_OBASAN;
 』
 
 
-;@Habitat:オネット／バーガーショップ／バーガーショップ
+;@Habitat:オネット/バーガーショップ/バーガーショップ
 ;@Person:客B
 ;@Figure:リボン
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲でうろつく
+;@ActionScript:*小範囲でうろつく
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HAMBURGER_GIRL
@@ -1227,15 +1227,15 @@ MSG_ONET_HAMBURGER_GIRL;
 
 
 ;----------------------------------------
-;@Habitat:オネット／ヒントショップ／ヒントショップ
+;@Habitat:オネット/ヒントショップ/ヒントショップ
 ;@Person:ヒントオヤジ
 ;@Figure:ヒント屋
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HINTMAN
-;MSG_ONET_HINTMAN;ショップ２へ移動
+;MSG_ONET_HINTMAN;ショップ2へ移動
 ;@MUL_ACTIVE_PLAYER(35)
 ;@GOTO(MSG_SUB_HINTSHOP)
 ;@GOTO(MSG_HINT);グローバルのヒントメッセージへ
@@ -1251,11 +1251,11 @@ MSG_ONET_HAMBURGER_GIRL;
 
 
 ;----------------------------------------
-;@Habitat:オネット／ベーカリー／ベーカリー
+;@Habitat:オネット/ベーカリー/ベーカリー
 ;@Person:店員
 ;@Figure:コック
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止まったまま
+;@ActionScript:*正面向いて止まったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_BAKERY_CLERK
@@ -1266,11 +1266,11 @@ MSG_ONET_BAKERY_CLERK;
 』
 
 
-;@Habitat:オネット／ベーカリー／ベーカリー
+;@Habitat:オネット/ベーカリー/ベーカリー
 ;@Person:客A
 ;@Figure:おばさんB
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_BAKERY_OBASAN
@@ -1326,7 +1326,7 @@ _ONET_BAKERY_OBASAN_3;
 ;jpn: そんなふうに こまめにね。
 @KEYNP()
 』
-_ONET_BAKERY_OBASAN_END;＆
+_ONET_BAKERY_OBASAN_END;&
 ◆Isn’t it nice to talk to so many people?
 ;jpn:◆たくさんの ひとと↓
 ;jpn: たくさんの かいわができて↓
@@ -1351,11 +1351,11 @@ _ONET_BAKERY_OBASAN_END_2;
 ;』
 
 
-;@Habitat:オネット／ベーカリー／ベーカリー
+;@Habitat:オネット/ベーカリー/ベーカリー
 ;@Person:客B
 ;@Figure:OL・G
 ;@AppearanceKey:0
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_BAKERY_MADAM
@@ -1372,22 +1372,22 @@ MSG_ONET_BAKERY_MADAM;パン屋 奥さん
 
 
 ;----------------------------------------
-;@Habitat:オネット／ポーキーの家／１階
+;@Habitat:オネット/ポーキーの家/1階
 ;@Person:ミンチ氏
 ;@Figure:ミンチ氏
 ;@AppearanceKey:FLG_ONET_MINCES_APPEAR/on
-;@ActionScript:＊演出コンテ#1.5
+;@ActionScript:*演出コンテ#1.5
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_AMBRAMI_MINCE
 ;★特殊イベントメッセージ(S_EVENT.MSG)へ
 
 
-;@Habitat:オネット／ポーキーの家／１階
+;@Habitat:オネット/ポーキーの家/1階
 ;@Person:ミンチ夫人
 ;@Figure:ラードナー
 ;@AppearanceKey:FLG_ONET_MINCES_APPEAR/on
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_LARDNA_MINCE
@@ -1408,7 +1408,7 @@ _LARDNA_MINCE_POKEY;
 ;jpn:◆おしおきだよ!
 @KEYNP()
 』
-_LARDNA_MINCE_END;＆松
+_LARDNA_MINCE_END;&松
 ◆As usual,@WI(15) you’re wearing your grubbies!@WI(20)  So,@WI(10) what do you want?@KEY()↓
 ◆My son isn’t at home now.@WI(20)  He’s walking around somewhere.@KEY()↓
 ◆My husband is also gone.@WI(30)  Oh yes,@WI(15) this is Mr. Prettyman.@KEY()↓
@@ -1431,7 +1431,7 @@ _LARDNA_MINCE_END;＆松
 @KEYNP()
 』
 
-MSG_ONET_MINCE_COLORMAN;＆カラーマン氏
+MSG_ONET_MINCE_COLORMAN;&カラーマン氏
 ◆Salutations!@WI(20)  You’re the boy living next door.@KEY()↓
 ◆I heard that your family is in debt.@WI(20)  Ms. Minch told me about it.@KEY()↓
 ◆Well live and learn.@WI(20)  You just have to keep plugging away.
@@ -1447,11 +1447,11 @@ MSG_ONET_MINCE_COLORMAN;＆カラーマン氏
 』
 
 
-;@Habitat:オネット／ポーキーの家／２階
+;@Habitat:オネット/ポーキーの家/2階
 ;@Person:しかられポーキー
 ;@Figure:ポーキー
 ;@AppearanceKey:FLG_ONET_2FPOKEY_APPEAR/on
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_POKEY
@@ -1465,11 +1465,11 @@ MSG_ONET_POKEY;
 』
 
 
-;@Habitat:オネット／ポーキーの家／２階
+;@Habitat:オネット/ポーキーの家/2階
 ;@Person:しかられピッキー
 ;@Figure:ピッキー
 ;@AppearanceKey:FLG_ONET_2FPICKEY_APPEAR/on
-;@ActionScript:＊小範囲うろつき
+;@ActionScript:*小範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_PICKEY
@@ -1480,7 +1480,7 @@ MSG_ONET_PICKEY;自宅ピッキー
 ;jpn: みに いきたくないよ。
 @KEYNP()
 』
-_ONET_PICKEY_LATER;＆
+_ONET_PICKEY_LATER;&
 ◆I haven’t seen you in a while.@WI(20)  You look cool.@KEY()↓
 ◆I’m nowhere near as cool as you.@WI(20)  I’m just average cool.@KEY()
 
@@ -1494,11 +1494,11 @@ _ONET_PICKEY_LATER;＆
 』
 ;-------------------------------------------------
 
-;@Habitat:オネット／ホテル／受付
+;@Habitat:オネット/ホテル/受付
 ;@Person:フロントマン
 ;@Figure:おじさんB
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOTELMAN
@@ -1516,11 +1516,11 @@ MSG_ONET_HOTELMAN;
 』
 
 
-;@Habitat:オネット／ホテル／受付
+;@Habitat:オネット/ホテル/受付
 ;@Person:ボーイ
 ;@Figure:ホテルボーイ
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOTELPORTER
@@ -1538,29 +1538,29 @@ MSG_ONET_HOTELPORTER;
 』
 
 
-;@Habitat:オネット／ホテル／受付
+;@Habitat:オネット/ホテル/受付
 ;@Person:電話
 ;@Figure:電話
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて固定
+;@ActionScript:*正面向いて固定
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_GLOBAL_TELEPHONE
 
-;@Habitat:オネット／ホテル／CDルーム
+;@Habitat:オネット/ホテル/CDルーム
 ;@Person:キャッシュディスペンサ
 ;@Figure:CD
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて固定
+;@ActionScript:*正面向いて固定
 ;@GoodsMessage:MSG_GLOBAL_CD_RECEIVE
 ;@CheckMessage:MSG_GLOBAL_CASHDISPENSER
 ;@Message:0
 
-;@Habitat:オネット／ホテル／廊下
+;@Habitat:オネット/ホテル/廊下
 ;@Person:客♀
 ;@Figure:OL・C
 ;@AppearanceKey:FLG_ONET_HOTELCOUPLE/off
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOTEL_WOMAN
@@ -1573,11 +1573,11 @@ MSG_ONET_HOTEL_WOMAN;
 』
 
 
-;@Habitat:オネット／ホテル／廊下
+;@Habitat:オネット/ホテル/廊下
 ;@Person:客♂
 ;@Figure:サラリーマンA
 ;@AppearanceKey:FLG_ONET_HOTELCOUPLE/off
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOTEL_MAN
@@ -1590,11 +1590,11 @@ MSG_ONET_HOTEL_MAN;
 』
 
 
-;@Habitat:オネット／ホテル／部屋１
+;@Habitat:オネット/ホテル/部屋1
 ;@Person:客♀
 ;@Figure:OL・C
 ;@AppearanceKey:FLG_ONET_HOTELCOUPLE/on
-;@ActionScript:＊広範囲あわてる
+;@ActionScript:*広範囲あわてる
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOTEL_WOMAN2
@@ -1606,11 +1606,11 @@ MSG_ONET_HOTEL_WOMAN2;
 』
 
 
-;@Habitat:オネット／ホテル／部屋１
+;@Habitat:オネット/ホテル/部屋1
 ;@Person:客♂
 ;@Figure:サラリーマンA
 ;@AppearanceKey:FLG_ONET_HOTELCOUPLE/on
-;@ActionScript:＊広範囲あわてる
+;@ActionScript:*広範囲あわてる
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_HOTEL_MAN2
@@ -1622,11 +1622,11 @@ MSG_ONET_HOTEL_MAN2;
 
 
 ;----------------------------------------
-;@Habitat:オネット／警察署／受付
+;@Habitat:オネット/警察署/受付
 ;@Person:警察署長
 ;@Figure:警察署長
 ;@AppearanceKey:FLG_ONET_5COP_APPEAR/off
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_POLICEOFFICER_A
@@ -1672,7 +1672,7 @@ _ONET_STRONG_NO;
 』
 
 _ONET_STRONG_YES;
-◆Okay, ＊chortle＊@WI(15)  Follow me.
+◆Okay, *chortle*@WI(15)  Follow me.
 ;jpn:◆そうか‥‥。@KEY()↓
 ;jpn:◆ふふふ‥‥それでは@WI(20)↓
 ;jpn: わたしに ついてきなさい。
@@ -1689,12 +1689,12 @@ _ONET_STRONG_YES;
 
 _ONET_STRONG_2;
 ◆I’ve been playing ”EarthBound” lately...@WI(20)  I’m having a tough time.
-;jpn:◆さいきん「マザー２」を↓
+;jpn:◆さいきん「マザー2」を↓
 ;jpn: やっているのだが なかなか↓
 ;jpn: くろうしてるよ。
 @KEYNP()
 』
-_ONET_STRONG_END;＆
+_ONET_STRONG_END;&
 ◆So you’ve traveled all over the world.@KEY()↓
 ◆I bet you haven’t met anyone stronger than I,@WI(10) did you?@KEY()↓
 ◆I know that you didn’t ...Wa ha ha ha!
@@ -1708,11 +1708,11 @@ _ONET_STRONG_END;＆
 @KEYNP()
 』
 
-;@Habitat:オネット／警察署／受付
+;@Habitat:オネット/警察署/受付
 ;@Person:受付嬢
 ;@Figure:女店員A
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_POLICEOFFICER_C
@@ -1739,11 +1739,11 @@ _ONET_POLICEOFFICER_C_LATER;
 』
 
 
-;@Habitat:オネット／警察署／受付
+;@Habitat:オネット/警察署/受付
 ;@Person:受付係♂
 ;@Figure:警官
 ;@AppearanceKey:0
-;@ActionScript:＊正面向いて止ったまま
+;@ActionScript:*正面向いて止ったまま
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_POLICEOFFICER_B
@@ -1765,11 +1765,11 @@ _ONET_POLICEOFFICER_B_LATER;
 』
 
 
-;@Habitat:オネット／警察署／受付
+;@Habitat:オネット/警察署/受付
 ;@Person:Gステップの見張り
 ;@Figure:警官
 ;@AppearanceKey:FLG_POLICE_KANBANCOP_APPEAR/on
-;@ActionScript:＊ネスに近寄って台詞MSG_ONET_POLICE_KANBAN_SCOLD発行
+;@ActionScript:*ネスに近寄って台詞MSG_ONET_POLICE_KANBAN_SCOLD発行
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_POLICE_KANBAN_LATER
@@ -1854,11 +1854,11 @@ MSG_ONET_POLICE_KANBAN_SCOLD;
 』
 
 
-;@Habitat:オネット／警察署／廊下
+;@Habitat:オネット/警察署/廊下
 ;@Person:刑事
 ;@Figure:サラリーマンC
 ;@AppearanceKey:0
-;@ActionScript:＊中範囲うろつき
+;@ActionScript:*中範囲うろつき
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_POLICE_GANG
@@ -1872,51 +1872,51 @@ MSG_ONET_POLICE_GANG;
 』
 
 
-;@Habitat:オネット／警察署／道場
+;@Habitat:オネット/警察署/道場
 ;@Person:五人抜きA
 ;@Figure:警官
 ;@AppearanceKey:FLG_ONET_COPA_DISAPPEAR/off
-;@ActionScript:＊演出コンテ#1.10
+;@ActionScript:*演出コンテ#1.10
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_COPA
 
 
-;@Habitat:オネット／警察署／道場
+;@Habitat:オネット/警察署/道場
 ;@Person:五人抜きB
 ;@Figure:警官
 ;@AppearanceKey:FLG_ONET_COPB_DISAPPEAR/off
-;@ActionScript:＊演出コンテ#1.10
+;@ActionScript:*演出コンテ#1.10
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_COPB
 
 
-;@Habitat:オネット／警察署／道場
+;@Habitat:オネット/警察署/道場
 ;@Person:五人抜きC
 ;@Figure:警官
 ;@AppearanceKey:FLG_ONET_COPC_DISAPPEAR/off
-;@ActionScript:＊演出コンテ#1.10
+;@ActionScript:*演出コンテ#1.10
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_COPC
 
 
-;@Habitat:オネット／警察署／道場
+;@Habitat:オネット/警察署/道場
 ;@Person:五人抜きD
 ;@Figure:警官
 ;@AppearanceKey:FLG_ONET_COPD_DISAPPEAR/off
-;@ActionScript:＊演出コンテ#1.10
+;@ActionScript:*演出コンテ#1.10
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_COPD
 
 
-;@Habitat:オネット／警察署／道場
+;@Habitat:オネット/警察署/道場
 ;@Person:五人抜きE
 ;@Figure:警官
 ;@AppearanceKey:FLG_ONET_COPE_DISAPPEAR/off
-;@ActionScript:＊演出コンテ#1.10
+;@ActionScript:*演出コンテ#1.10
 ;@GoodsMessage:0
 ;@CheckMessage:0
 ;@Message:MSG_ONET_COPE

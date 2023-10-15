@@ -2,7 +2,7 @@
 ;"E_system.msg"
 ;
 ;■ Text for "Earth Bound".
-;■ "＠"箇所は未完成。要チェック
+;■ "@"箇所は未完成。要チェック
 ;■ "*"は"◆"に変換予定
 ;-------------------------------------------------
 
@@ -21,21 +21,21 @@ MSG_SYS_NOPROBLEM;
 @KEYNP()
 @!
 
-;MSG_SYS_CARRY;＠
+;MSG_SYS_CARRY;@
 @GET_PLAYER_GOODS(0,0)
 @SAVE_REG()
 @GOSUB(MSG_SUB_Q_DEAD_GOODS)
 ;@TRUE_GOTO(_SYS_CARRY_DEAD)
 @LOAD_REG()
 @XCHG()
-;#;＊(no verb. cannot translate.yuka)
+;#;*(no verb. cannot translate.yuka)
 ;#◆@DSP_NAME(0)は↓
 ;#@XCHG()
 ;# @DSP_GOODS(0)を↓
 ;◆@DSP_NAME(0) gave the @XCHG()@DSP_GOODS(0) to (name)
 @!
 
-;_SYS_CARRY_DEAD;＠
+;_SYS_CARRY_DEAD;@
 @LOAD_REG()
 @XCHG()
 ;#◆@DSP_LCNAME() neatly arranged @DSP_NAME(0)'s @DSP_GOODS(0).
@@ -45,7 +45,7 @@ MSG_SYS_NOPROBLEM;
 ;松◆@DSP_LCNAME() took the @XCHG()@DSP_GOODS(0) from @DSP_NAME(0)’S stuff.  
 @!
 
-;MSG_SYS_CARRY_SELF;＠
+;MSG_SYS_CARRY_SELF;@
 ;#  きれいに せいとんした。
 himself.
 ;松rearrange own items
@@ -55,7 +55,7 @@ himself.
 @KEYNP()
 @!
 
-;MSG_SYS_CARRY_OTHER;＠
+;MSG_SYS_CARRY_OTHER;@
 @SAVE_REG()
 @GOSUB(MSG_SUB_Q_DEAD_GOODS)
 @TRUE_GOTO(_SYS_CARRY_OTHER_DEAD)
@@ -66,7 +66,7 @@ himself.
 ; handed to @DSP_NAME(0).@KEY()
 ;# @DSP_NAME(0)にわたした。@KEY()
 @!
-_SYS_CARRY_OTHER_DEAD;＠
+_SYS_CARRY_OTHER_DEAD;@
 @LOAD_REG()
 @XCHG()
 @DSP_NAME(0)’s belongings.
@@ -76,7 +76,7 @@ _SYS_CARRY_OTHER_DEAD;＠
 @KEY()
 @!
 
-;MSG_SYS_CARRY_OTHER_NG;＠
+;MSG_SYS_CARRY_OTHER_NG;@
 @XCHG()
 @DSP_NAME(0) ・・・failed.
 @KEY()
@@ -186,7 +186,7 @@ MSG_SYS_GOODS_EAT_NG;
 @GET_PLAYER_GOODS(0,0)
 ◆Why would you do that?↓
   The @DSP_GOODS(0) would probably make you barf.
-；◆やめてください。
+;◆やめてください。
 @KEYNP()
 @!
 
@@ -232,7 +232,7 @@ _DEAD_POISON_END;
 MSG_SYS_MAP_CRITICAL_SITUATION;
 ◆Alert!@KEY()↓
 ◆@DSP_ACTOR()’s condition is critical.@KEY()↓
-;＠
+;@
 ◆@GOSUB(MSG_ESUB_HE_SHE_GACT) will collapse if (his・her) condition isn’t treated.@KEY()↓
 ◆Be careful!
 ;◆CAUTION(ごちゅうい)!@KEY()↓
@@ -348,7 +348,7 @@ MSG_SYS_SRAM_CRASH;
 ;@!
 ;--------------------------------------------
 
-;^^^^^^^^電話：ストイッククラブ^^^^^^^^
+;^^^^^^^^電話:ストイッククラブ^^^^^^^^
 
 MSG_SYS_PHONE_STOIC;
 @CHKFGOTO(FLG_WIN_GIEGU,_SYS_PHONE_STOIC_END)
@@ -397,7 +397,7 @@ _SYS_PHONE_STOIC_END;
 』
 
 
-;^^^^^^^^電話：ママ^^^^^^^^
+;^^^^^^^^電話:ママ^^^^^^^^
 
 MSG_SYS_PHONE_MYHOME;@MiuraAppended
 @GET_ORDER_PLAYER(1)
@@ -424,7 +424,7 @@ MSG_SYS_PHONE_MYHOME;@MiuraAppended
 _SYS_PHONE_MYHOME_NES_A;
 ◆@DSP_STS(STS_PC_NAME_NES)?@KEY()↓
 ◆... ...@KEY()↓
-◆Don’t say a word；I know exactly what you’re thinking.@KEY()↓
+◆Don’t say a word;I know exactly what you’re thinking.@KEY()↓
 ◆My son, who’d have thought he was such a brave kid?@KEY()↓
   Oh, yeah...you’re a hero, honey!...@KEY()↓
 ◆Click!  Beep−beep−beep...@KEYNP()
@@ -608,7 +608,7 @@ _SYS_PHONE_MYHOME_NES_D;
 ◆Click! Beep−beep−beep...@KEY()↓
 ◆... No, no... I was just teasing...@KEY()↓
 ◆I wanted to see if my new impression would fool you.@KEY()↓
-◆Everyone here is doing just fine.  ＊puff＊@KEY()↓
+◆Everyone here is doing just fine.  *puff*@KEY()↓
 ◆Hope you’re doing all right, too.@KEY()↓
 ◆Well, I better go... I’m in the middle of my dance aerobics!@KEY()↓
 ◆Bye!↓
@@ -684,7 +684,7 @@ _SYS_PHONE_MYHOME_END_2;
 』
 ;------------------------------------------------------------------
 
-;２時間パパ
+;2時間パパ
 MSG_SYS_PAPA_2H;
 @CHKFGOTO(FLG_WIN_GIEGU,MSG_END);最終戦闘後はヤメ
 @BGMSTART(0,BGM_msc1)
@@ -801,12 +801,12 @@ _PAPA_2H_WINS;
 @OPEN(1)
 @GOSUB(_PAPA_2H_RAMA)
 ;◆ウィンタースへんでの↓
-; ２じかんパパです。@KEYNP()
+; 2じかんパパです。@KEYNP()
 @!
 
 _PAPA_2H_NESS_DEAD;
 ;◆ネスが きぜつのときの↓
-; ２じかんパパです。@KEYNP()
+; 2じかんパパです。@KEYNP()
 @OPEN(1)
 @GET_ORDER_PLAYER(1)
 ◆Hello, it’s your dad.@KEY()↓
@@ -1022,7 +1022,7 @@ _SUB_TBOXMES_7;
 ◆@GOSUB(MSG_ESUB_DSP_PARTY)
 @LOAD_REG()
  got↓
-  ＄@DSP_NUM(0) dollars.
+  $@DSP_NUM(0) dollars.
 ;◆@DSP_LCNAME()は↓
 ; @DSP_NUM(0)ドル てにいれた。
 @KEYNP()
@@ -1152,7 +1152,7 @@ _HAEMITU_RETURN;
 ;エンディングの手紙
 ;
 MSG_TBOX_PRESENT_LETTER1;
-;土星谷フィールド PKプレゼント１個目(ママの手紙)
+;土星谷フィールド PKプレゼント1個目(ママの手紙)
 @GET_ORDER_PLAYER(1)
 @XCHG()
 @GOSUB(_SUB_TBOXMES_PSNT_1)
@@ -1180,7 +1180,7 @@ _LETTER1_RETURN;
 @!
 
 MSG_TBOX_PRESENT_LETTER2;
-;土星谷フィールド PKプレゼント２個目(トニーの手紙)
+;土星谷フィールド PKプレゼント2個目(トニーの手紙)
 @GET_ORDER_PLAYER(1)
 @XCHG()
 @GOSUB(_SUB_TBOXMES_PSNT_1)
@@ -1208,7 +1208,7 @@ _LETTER2_RETURN;
 @!
 
 MSG_TBOX_PRESENT_LETTER3;
-;土星谷フィールド PKプレゼント３個目(園児の手紙)
+;土星谷フィールド PKプレゼント3個目(園児の手紙)
 @GET_ORDER_PLAYER(1)
 @XCHG()
 @GOSUB(_SUB_TBOXMES_PSNT_1)
@@ -1242,22 +1242,22 @@ _LETTER3_RETURN;
 ;#指定されたプレーヤーの性別によって「くん」「ちゃん」を返す。
 ;主レジにプレーヤーIDを入れること
 
-MSG_SUB_KUN_CHAN;＠
+MSG_SUB_KUN_CHAN;@
 @ONGOSUB(_SUB_KUN,_SUB_CHAN,_SUB_KUN,_SUB_CHAN)
 @!
 
-_SUB_KUN;＠
-;#＊kun(no translation：yuka)
+_SUB_KUN;@
+;#*kun(no translation:yuka)
 ;#くん
 @!
 
-_SUB_CHAN;＠
-;#＊chan(no translation：yuka)
+_SUB_CHAN;@
+;#*chan(no translation:yuka)
 ;#ちゃん
 @!
 
 ;#パーティーが複数だったら「たち」を返す。
-MSG_SUB_TATI;＠
+MSG_SUB_TATI;@
 @SET_LOOPREG(1)
 _TATI_LOOP;
 @INC()
@@ -1274,23 +1274,23 @@ _TATI_LOOP;
 @LOAD_REG()
 @Q_SPECIAL(0,1,3)
 @TRUE_GOTO(_TATI_LOOP)
-_TATI_END_1;＠
-;#＊tachi(no translation：yuka)
+_TATI_END_1;@
+;#*tachi(no translation:yuka)
 ;#たち
-_TATI_END_2;＠
+_TATI_END_2;@
 @!
 
-MSG_SUB_TATI_ONSEN;ポーラと別れてたら一人＠
+MSG_SUB_TATI_ONSEN;ポーラと別れてたら一人@
 @CHKFGOTO(FLG_TWSN_POLA_APPEAR,_TATI_ONSEN_END_2)
-_TATI_ONSEN_END_1;＠
-;#＊tachi(no translation：yuka)
+_TATI_ONSEN_END_1;@
+;#*tachi(no translation:yuka)
 ;#たち
-_TATI_ONSEN_END_2;＠
+_TATI_ONSEN_END_2;@
 @!
 
 
 ;#指定されたプレーヤーが会話出来ないかどうかをチェックする。
-;会話出来なければ１を主レジに返す。
+;会話出来なければ1を主レジに返す。
 ;ループレジにプレーヤーIDを入れること
 
 MSG_SUB_Q_DEAD;
@@ -1377,9 +1377,9 @@ _SUB_GETGOODS_DEAD;レジスタの使い方不明(三浦)←とりあえずな�
 ; @DSP_GOODS(0)をくわえた)
 @!
 
-;主レジ：%PLAYER_ID・副レジ：グッズの位置で
-;セーブレジ：%PLAYER_ID,%GOODS_ID・グローバルレジ：%PLAYER_ID,グッズの位置
-;主レジ：%GOODS_ID・副レジ：%PLAYER_IDを返す
+;主レジ:%PLAYER_ID・副レジ:グッズの位置で
+;セーブレジ:%PLAYER_ID,%GOODS_ID・グローバルレジ:%PLAYER_ID,グッズの位置
+;主レジ:%GOODS_ID・副レジ:%PLAYER_IDを返す
 MSG_SUB_GOODS_PRE;
 @SAVE_GLOBAL_REG()
 @GET_PLAYER_GOODS(0,0)
@@ -1388,7 +1388,7 @@ MSG_SUB_GOODS_PRE;
 @!
 
 ;グッズを使った時のメッセージ
-;主レジ：%PLAYER_ID・副レジ：%GOODS_IDを入れておく
+;主レジ:%PLAYER_ID・副レジ:%GOODS_IDを入れておく
 MSG_SUB_GOODS_TUKATTA;
 @XCHG()
 ◆@DSP_NAME(0) used↓
@@ -1423,7 +1423,7 @@ _SELQ_FORMOON_MOON;
 @NOT(1)
 @!
 
-;#３秒かけてBGMフェードアウト
+;#3秒かけてBGMフェードアウト
 MSG_SUB_BGM_FADEOUT_LONG;
 MSG_SUB_BGM_FADEOUT_2SECOND;
 @BGM_EFFECT(3)
@@ -1431,7 +1431,7 @@ MSG_SUB_BGM_FADEOUT_2SECOND;
 @BGMSTOP(0)
 @!
 
-;jpn:#０.５秒かけてBGMフェードアウト
+;jpn:#0.5秒かけてBGMフェードアウト
 MSG_SUB_BGM_FADEOUT_SHORT;
 MSG_SUB_BGM_FADEOUT_05SECOND;
 @BGM_EFFECT(2)
@@ -1439,19 +1439,19 @@ MSG_SUB_BGM_FADEOUT_05SECOND;
 @BGMSTOP(0)
 @!
 
-;#BGMフェードアウト３秒後ムシスタート
+;#BGMフェードアウト3秒後ムシスタート
 MSG_SUB_BGM_CHANGE_1;
 @GOSUB(MSG_SUB_BGM_FADEOUT_2SECOND)
 @MUSISTART()
 @!
 
-;#BGMフェードアウト０.５秒後ムシスタート
+;#BGMフェードアウト0.5秒後ムシスタート
 MSG_SUB_BGM_CHANGE_2;
 @GOSUB(MSG_SUB_BGM_FADEOUT_05SECOND)
 @MUSISTART()
 @!
 
-;#現在配達処理中なら１を返す
+;#現在配達処理中なら1を返す
 MSG_SUB_Q_NOW_DELIVERY;
 @CHKF(FLG_DELIVERY_PIZZA)@TRUE_GOTO(_Q_NOW_DELIVERY_END)
 @CHKF(FLG_DELIVERY_UNSOU)@TRUE_GOTO(_Q_NOW_DELIVERY_END)
@@ -1649,15 +1649,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆ジャイアントステップのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のスピードが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @SPEED_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s vitality increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s vitality increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のバイタリティが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @VITAL_UP_POINT(PC_NESS,5)
 @KEY()↓
@@ -1669,15 +1669,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆リリパットステップのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s guts increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s guts increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のガッツが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @GUTS_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のラックが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @LUCK_UP_POINT(PC_NESS,5)
 @KEY()↓
@@ -1689,15 +1689,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆ミルキーウェルのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のスピードが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @SPEED_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s IQ increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s IQ increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のIQが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @IQ_UP_POINT(PC_NESS,5)
 @KEY()↓
@@ -1709,15 +1709,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆マグネットヒルのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s vitality increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s vitality increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のバイタリティが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @VITAL_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のラックが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @LUCK_UP_POINT(PC_NESS,5)
 @KEY()↓
@@ -1729,15 +1729,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆レイニーサークルのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s guts increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s guts increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のガッツが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @GUTS_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s IQ increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s IQ increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のIQが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @IQ_UP_POINT(PC_NESS,5)
 @KEY()↓
@@ -1749,15 +1749,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆ピンククラウドのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のスピードが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @SPEED_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s guts increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s guts increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のガッツが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @GUTS_UP_POINT(PC_NESS,5)
 @KEY()↓
@@ -1769,15 +1769,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆ルミネホールのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のラックが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @LUCK_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s IQ increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s IQ increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のIQが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @IQ_UP_POINT(PC_NESS,5)
 @KEY()↓
@@ -1789,15 +1789,15 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;◆ファイアスプリングのパワーが↓
 ; @DSP_STS(STS_PC_NAME_NES)のなかに みなぎった!
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s speed increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のスピードが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @SPEED_UP_POINT(PC_NESS,5)
 @KEY()↓
-◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by ５!
+◆@DSP_STS(STS_PC_NAME_NES)’s luck increased by 5!
 ;◆@DSP_STS(STS_PC_NAME_NES)のラックが↓
-; ５ UPした!
+; 5 UPした!
 @SE(SE_se28_b_offence_up)
 @LUCK_UP_POINT(PC_NESS,5)
 @KEY()
@@ -1832,9 +1832,9 @@ MSG_SYS_MGKT_NES_POWER_UP;
 ;@SE(SE_se40_b_pk_starstorm1)
 
 @OPEN(14)
- @DSP_STS(STS_PC_NAME_NES) gained ２００,０００ exp.
+ @DSP_STS(STS_PC_NAME_NES) gained 200,000 exp.
 ; @DSP_STS(STS_PC_NAME_NES)は↓
-; ２０００００の けいけんちをえた。
+; 200000の けいけんちをえた。
 @KEY()
 @EXP_UP_POINT(PC_NESS,200000)
 ;↑自動的にバトル用メッセージウインドウを開き、経験値取得処理を行ってくれる

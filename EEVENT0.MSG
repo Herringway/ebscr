@@ -25,10 +25,10 @@
 ;#16	ホテルのカップル	1.7	T
 ;#17	市長室からつまみ出される	1.8	T
 ;#18	シャーク団を倒し中庭に	1.9	T
-;#19	VSフランク＆フランキー	-	-
+;#19	VSフランク&フランキー	-	-
 ;#20	サウンド確認画面(最初)
 ;#21	(立ち入り禁止について)警官に説教される	1.?	T
-;#22	警官５人抜き	1.1o	T
+;#22	警官5人抜き	1.1o	T
 ;#23	封鎖警官(車止めを移動)	1.11	T
 ;#24	スリーク行のバスを呼ぶ	2.8	T
 ;#25	スリーク行のバスに乗る	2.8	T
@@ -69,27 +69,27 @@
 ;#60	大渋滞	9.1	T
 ;#61	バスから降りる(大渋滞)	9.2	T
 ;#62	トポロ劇場に入場	-	-
-;#63	ビーナスのステージ(１回目)
-;#64	トンズラのステージ(２回目)
+;#63	ビーナスのステージ(1回目)
+;#64	トンズラのステージ(2回目)
 ;#65	トポロ劇場楽屋の係員	10.2	T
 ;#66	埋蔵金発掘現場(セル替え大穴)
 ;#67	発掘を開始するモッチーたち
 ;#68	シゲちゃんユンボで登場	9.4	T
-;#69	トンズラ最後のステージ(３回目)
+;#69	トンズラ最後のステージ(3回目)
 ;#70	ポーキーの子分に叩き出される	10.4	T
 ;#71	停電デパート	10.5	T
 ;#72	トンチキさんの最期	10.6	T
 ;#73	ムーンサイドに入る
 ;#74	フォーサイドに戻る(倉庫)
 ;#75	モノトリー氏の部屋
-;#76	トンズラバスに乗る(２回目)
+;#76	トンズラバスに乗る(2回目)
 ;#77	スカイウォーカーでサマーズ
 ;#78	マッサージの女(ランマへ)	11.1	T
 ;#79	プーの修業
 ;#80	プー登場	11.o	T
-;#81	ビーナスのステージ(２回目)
+;#81	ビーナスのステージ(2回目)
 ;#82	マグネットヒルへ続く下水の蓋を開ける	-	-
-;#83	タッシー(２回目)
+;#83	タッシー(2回目)
 ;#84	基地機能の破壊(人々の救出)
 ;#85	乗船→クラーケン	11.3	T
 ;#86	「ブタのはな」を使う(マジックトリフ探し)
@@ -108,16 +108,16 @@
 ;#99	話しかけてくる大岩	13.1o	T
 ;#100	ひかりごけ
 ;#101	地底大陸へ落下
-;#102	８つのサウンド集まる(サウンド確認画面)
+;#102	8つのサウンド集まる(サウンド確認画面)
 ;#103	マジカントへ	13.13
 ;#104	フライングマン	14.1	T
 ;#105	フライングマンの墓	14.2
 ;#106	マジカントを出る	14.3
 ;#107	スペーストンネル1.5失敗(黒焦げ)
-;#108	スペーストンネル２完成	16.1	-
-;#109	スペーストンネル２(ワープ)	16.1
+;#108	スペーストンネル2完成	16.1	-
+;#109	スペーストンネル2(ワープ)	16.1
 ;#110	ネスたち機械化	-	-
-;#111	スペーストンネル３(タイムワープ)
+;#111	スペーストンネル3(タイムワープ)
 ;#112	最終戦闘
 ;#113	ネスたちの魂の帰還
 ;#114	祝福
@@ -137,7 +137,7 @@
 ;	(土星谷にワープ)
 ;	「どうぐやのかんばん」を使う
 ;	「なまたまご」が「ひよこ」に
-;	２時間パパ
+;	2時間パパ
 ;	エスカルゴ運送の配達
 ;	プレイヤー名の入力
 ;	マッハピザの配達
@@ -163,7 +163,7 @@
 
 ;#2	デモ
 
-;       F−１  「トトの町」
+;       F−1  「トトの町」
 MSG_MD_TOTO
 @SETF(FLG_ONET_AMBRAMI);パレット替え用
 @SETF(FLG_MAKYO_USE_TAKANOME);パレット替え用
@@ -183,7 +183,7 @@ MSG_MD_TOTO_SENCHOU
 』
 
 ;-------------------------------------------------------
-;       F−２  「スリークの墓地」
+;       F−2  「スリークの墓地」
 MSG_MD_THRK
 @ADD_PARTY(PC_PAULA)
 @COLD_PLAYER(PC_ALL)
@@ -195,7 +195,7 @@ MSG_MD_THRK
 』
 
 ;-------------------------------------------------------
-;       F−３  「魔境」
+;       F−3  「魔境」
 MSG_MD_MAKYO
 @ADD_PARTY(PC_PAULA)
 @ADD_PARTY(PC_JEFF)
@@ -214,7 +214,7 @@ MSG_MD_MAKYO_RAFURESIA
 』
 
 ;-------------------------------------------------------
-;       F−４  「橋」
+;       F−4  「橋」
 MSG_MD_HASHI
 @COLD_PLAYER(PC_ALL)
 @HIDE_PLAYER(PC_ALL,OBJFX_HIDE_NONE)
@@ -227,7 +227,7 @@ MSG_MD_HASHI
 』
 
 ;-------------------------------------------------------
-;       F−５  「ピラミッドダンジョン」
+;       F−5  「ピラミッドダンジョン」
 MSG_MD_DUNG
 @ADD_PARTY(PC_PAULA)
 @ADD_PARTY(PC_JEFF)
@@ -241,7 +241,7 @@ MSG_MD_DUNG
 』
 
 ;-------------------------------------------------------
-;       F−６  「ツーソン」
+;       F−6  「ツーソン」
 MSG_MD_TWSN
 @COLD_PLAYER(PC_ALL)
 @WARP(WARP_DEMO_6)
@@ -254,7 +254,7 @@ MSG_MD_TWSN
 』
 
 ;-------------------------------------------------------
-;       F−７  「スカラビ」
+;       F−7  「スカラビ」
 MSG_MD_SKRB
 @ADD_PARTY(PC_PAULA)
 @ADD_PARTY(PC_JEFF)
@@ -267,7 +267,7 @@ MSG_MD_SKRB
 』
 
 ;-------------------------------------------------------
-;       F−８  「フォーサイド」
+;       F−8  「フォーサイド」
 MSG_MD_FRSD
 @SETF(FLG_FOUR_TONCHIKI_APPEAR)
 @ADD_PARTY(PC_JEFF)
@@ -285,7 +285,7 @@ MSG_MD_FRSD_YAJIUMA
 』
 
 ;-------------------------------------------------------
-;       F−９  「サマーズ(夕焼け)」
+;       F−9  「サマーズ(夕焼け)」
 MSG_MD_SUMS
 @ADD_PARTY(PC_PAULA)
 @ADD_PARTY(PC_JEFF)
@@ -298,7 +298,7 @@ MSG_MD_SUMS
 』
 
 ;-------------------------------------------------------
-;       F−１０  「オネット」
+;       F−10  「オネット」
 MSG_MD_ONET
 @COLD_PLAYER(PC_ALL)
 @WARP(WARP_DEMO_10)
@@ -389,7 +389,7 @@ MSG_EVT_PROLOGUE_NEW;
 ;#6	ポーキー登場他(オープニング)	1.1	T
 
 ;★ポーキーのノック「ノックさん」がネスを発見したら(ネスが近づいたら)
-;自分を消し(＆自分が消えるフラグを立て)「ドアを塞ぐポーキー」を出現させ
+;自分を消し(&自分が消えるフラグを立て)「ドアを塞ぐポーキー」を出現させ
 ;(そのフラグを立てて)FLG_MYHOME_POKEY_ENTER を ON にする。
 
 MSG_EVT_KNOCK;ノックを追加する(ネスのママのアニメーションから起動される)
@@ -401,7 +401,7 @@ MSG_EVT_KNOCK;ノックを追加する(ネスのママのアニメーション�
 』
 
 MSG_EVT_KNOCK_NEAR;ノックさんのアニメーションスクリプトから呼ばれるメッセージ
-@CHKFGOTO(FLG_MYHOME_TO_BE,MSG_EVT_KNOCK_TO_BE);続く!イベント２
+@CHKFGOTO(FLG_MYHOME_TO_BE,MSG_EVT_KNOCK_TO_BE);続く!イベント2
 @BGMSTOP(0)
 @SE(SE_se08_door_in)
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_NESS_TOBINOKU,OBJFX_SHOW_NONE)
@@ -481,7 +481,7 @@ MSG_EVT_5_MYDOG;
 ;★ポーキーを連れている間は、プレイヤーをオネット市街に入れないようにする。
 ;オネット市街に入ろうとすると(図書館脇の一本道で)
 ;MSG_INSEKI_POKEY_ONET を表示して、それ以上先に進めなくする。
-;●方法：セル替え。FLG_ONET_AMBRAMI / ON 時(ポーキー、ピッキーと別れた時)に
+;●方法:セル替え。FLG_ONET_AMBRAMI / ON 時(ポーキー、ピッキーと別れた時)に
 ;セル替えを行うまでは通れないようにしておく。
 ;(BGにオートメッセージを設定して MSG_INSEKI_POKEY_ONET を自動表示。)
 ;★メッセージ表示時、ネスに後ろを向かせて、
@@ -671,7 +671,7 @@ MSG_INSEKI_BUNBUN;
 @OPEN(1)
 ◆A bee I am@KEY()↓
 ◆not...@KEY()↓
-◆I’m from １０ years in the future.@KEY()↓
+◆I’m from 10 years in the future.@KEY()↓
 ◆And,@KEY()↓
 ◆in the future,@WI(15) all is devastation...@KEY()↓
 ◆Giygas, the universal cosmic destroyer,@KEY()↓
@@ -691,7 +691,7 @@ MSG_INSEKI_BUNBUN;
 ◆you may have time to counter the evil intentions of Giygas.@KEY()↓
 ;jpn:◆わしは カブトむし@KEY()↓
 ;jpn:◆では ない!@KEY()↓
-;jpn:◆１０ねんごの みらいから↓
+;jpn:◆10ねんごの みらいから↓
 ;jpn: やってきたもの@KEY()↓
 ;jpn:◆じゃ!@KEY()↓
 ;jpn:◆みらいは もう さんたんたる↓
@@ -737,7 +737,7 @@ MSG_INSEKI_BUNBUN;
 ;◆あんたの ぼうけんのたびを↓
 ; ぼうがいするじゃろう。@KEY()↓
 ;◆‥‥‥‥‥‥‥‥‥‥‥‥‥‥‥
-◆Three things are of the utmost importance：@WI(15) wisdom,@WI(15) courage,@WI(20) and friendship.@KEY()↓
+◆Three things are of the utmost importance:@WI(15) wisdom,@WI(15) courage,@WI(20) and friendship.@KEY()↓
 ◆...The legends from the ancient times tell of three boys and a girl@KEY()↓
 ◆who defeat Giygas.@KEY()↓
 ◆...I will tell you more later.@KEY()↓
@@ -748,7 +748,7 @@ MSG_INSEKI_BUNBUN;
 ;jpn:◆たいせつなのは@WI(20) ちえと ゆうき↓
 ;jpn: そして なかまたち。@KEY()↓
 ;jpn:◆‥‥いいつたえでは@KEY()↓
-;jpn:◆３にんの しょうねんと↓
+;jpn:◆3にんの しょうねんと↓
 ;jpn: ひとりの しょうじょが↓
 ;jpn: ギーグを たおすという。@KEY()↓
 ;jpn:◆くわしいことは↓
@@ -786,7 +786,7 @@ _INSEKI_BUNBUN_YES;
 @WI(120)
 @OPEN(1)
 ◆Buzz Buzz now joins you.
-;＠youじゃないほうがいい?三浦
+;@youじゃないほうがいい?三浦
 ;jpn:◆(ブンブーンが なかまになった)
 @KEY()
 @CLOSEALL()
@@ -812,7 +812,7 @@ MSG_INSEKI_POKEY2;
 ;◆@DSP_STS(STS_PC_NAME_NES)!@KEY()↓
 ;jpn:◆ずいぶん やっかいなことに↓
 ;jpn: まきこまれた みたいだな。@KEY()↓
-;jpn:◆３にんの しょうねん@WI(5)って@WI(30)↓
+;jpn:◆3にんの しょうねん@WI(5)って@WI(30)↓
 ;jpn: おれも はいってるのかなぁ。@WI(20)↓
 ;jpn: ‥‥いやだなぁ。@WI(20)ドキドキ
 @KEY()
@@ -968,7 +968,7 @@ _LARDNA_MINCE2;
 』
 
 _AMBRAMI_MINCE2;あらためて話し掛けると
-◆＊Sigh＊...I’m so tired...nag, nag, nag...
+◆*Sigh*...I’m so tired...nag, nag, nag...
 ;jpn:◆まったく もう‥‥ブツブツ。
 @KEYNP()
 』
@@ -992,7 +992,7 @@ MSG_BUNBUN_SINI;
 @SET_PLAYER_DIR(PC_NESS,0)
 @BGMSTOP(0)
 @OPEN(1)
-◆Agh! ＊Gasp＊@KEY()↓
+◆Agh! *Gasp*@KEY()↓
 ◆I was...@KEY()↓
 ◆much weaker than I thought...@KEY()↓
 ◆So you must now begin your adventure...@KEY()↓
@@ -1041,7 +1041,7 @@ _BUNBUN_SINI_MAIN;
 ;jpn: おまえのパワーを ゆりおこし↓
 ;jpn: つよめてくれる‥‥@KEY()↓
 ;jpn:◆「おまえだけのばしょ」が↓
-;jpn: ８かしょある。@WI(30)↓
+;jpn: 8かしょある。@WI(30)↓
 ;jpn: そこを すべて おとずれるのだ。@KEY()↓
 ;jpn:◆そのひとつのばしょは↓
 ;jpn: このオネットにある。@KEY()↓
@@ -1068,7 +1068,7 @@ _BUNBUN_SINI_MAIN_YES;
 ◆You are a very intelligent young man...↓
   and...@KEY()↓
 ◆Oh!  The Pain!...Everything is getting dark...@KEY()↓
-◆urgh!...＊Gasp＊...@KEY()↓
+◆urgh!...*Gasp*...@KEY()↓
 ◆Before I pass on, I want to give you something...@KEY()↓
 ◆It is the Sound Stone.@KEY()↓
 ◆You can record the melodies from the eight ”Your Sanctuary” locations@KEY()↓
@@ -1087,7 +1087,7 @@ _BUNBUN_SINI_MAIN_YES;
 ;jpn: なるまい。@KEY()↓
 ;jpn:◆「おとのいし」じゃ!@KEY()↓
 ;jpn:◆ちきゅうじょうに↓
-;jpn: ８かしょある↓
+;jpn: 8かしょある↓
 ;jpn: 「おまえだけのばしょ」の‥‥@KEY()↓
 ;jpn:◆おとを しみこませる↓
 ;jpn: グレートな アイテムじゃ。@WI(15)↓
@@ -1095,12 +1095,12 @@ _BUNBUN_SINI_MAIN_YES;
 ;jpn:◆あ さて‥‥@KEY()↓
 ;jpn:◆わしは もう しにそうじゃが↓
 ;jpn: あえて もういちど ききたいか?↓
-;◆ようけん その１@KEY()↓
+;◆ようけん その1@KEY()↓
 ;◆「おまえだけの ばしょ」を↓
 ; おとずれるの@KEY()↓
 ;◆じゃ!@KEY()↓
 ;◆「おまえだけの ばしょ」は↓
-; このちきゅうに ８かしょある。@KEY()↓
+; このちきゅうに 8かしょある。@KEY()↓
 ;◆そのうちのひとつが↓
 ; オネットのまちにある@KEY()↓
 ;◆「ジャイアントステップ」と↓
@@ -1114,7 +1114,7 @@ _BUNBUN_SINI_MAIN_YES;
 ; やりなさい。@KEY()↓
 ;@WI(60)↓
 ;@WI(60)↓
-;◆ようけん その２@KEY()↓
+;◆ようけん その2@KEY()↓
 ;◆わすれそうなら↓
 ; メモをとれ!@KEY()↓
 ;◆ジャイアントステップのつぎは↓
@@ -1124,14 +1124,14 @@ _BUNBUN_SINI_MAIN_YES;
 ;◆@WI(20)おんなじゃ!@KEY()↓
 ;@WI(60)↓
 ;@WI(60)↓
-;◆では ようけん その３!@KEY()↓
+;◆では ようけん その3!@KEY()↓
 ;◆ああ くるしい↓
 ; しにそうだ。@KEY()↓
 ;◆さて わしがしぬまえに↓
 ; ビッグな プレゼントじゃ!@KEY()↓
 ;◆「おとのいし」じゃ!@KEY()↓
 ;◆このいしは↓
-; ちきゅうじょう８かしょにある↓
+; ちきゅうじょう8かしょにある↓
 ; 「おまえだけのばしょ」の@KEY()↓
 ;◆おとを しみこませることが↓
 ; できるグレートな アイテムじゃ!@KEY()↓
@@ -1149,7 +1149,7 @@ _BUNBUN_SINI_NO;
 ◆It’s already dawn outside...@KEY()↓
 ◆But it doesn’t matter to me.↓
   I’m fading fast...@KEY()↓
-◆Argh!  ＊Gasp＊
+◆Argh!  *Gasp*
 ;jpn:◆もう そとは↓
 ;jpn: よあけに なったのう‥‥@KEY()↓
 ;jpn:◆しんでゆく わしには↓
@@ -1183,7 +1183,7 @@ _BUNBUN_SINI_GOODSFULL;
 ◆It’s already dawn outside...@KEY()↓
 ◆but it doesn’t matter to me.
   I’m fading fast...@KEY()↓
-◆Argh!  ＊Gasp＊
+◆Argh!  *Gasp*
 ;jpn:◆‥‥ん?@KEY()↓
 ;jpn:◆もちものが いっぱいの↓
 ;jpn: ようじゃな‥‥@KEY()↓
@@ -1208,12 +1208,12 @@ _BUNBUN_SINI_GOODSFULL;
 
 ;#13	●マニマニの悪魔を見せる水野さん		-
 
-;★オネット／水野さんの家／一階でスタート。
+;★オネット/水野さんの家/一階でスタート。
 ;水野さんのセリフ MSG_INSEKI_MIZUNO_1F 後、
 ;水野さんを地下へ続く穴に移動させ、消去する。
 ;(フラグ設定により、一階の水野さんは消え、
-;水野家の地下洞窟／洞窟２に別の水野さんが出現する。)
-;★洞窟２の水野さんも同様に、洞窟４に移動させる。
+;水野家の地下洞窟/洞窟2に別の水野さんが出現する。)
+;★洞窟2の水野さんも同様に、洞窟4に移動させる。
 
 MSG_EVT_13_MIZUNO_A;地下へ降りて行く水野さん
 @REMOVE_CHAR(PRSN_ONET_MIZUNO_A,ANIM_MIZUNO_A)
@@ -1272,7 +1272,7 @@ MSG_LIBRARY_TOILET_B;<イベント><ピープル>扉のメッセージ
 @CHKFGOTO(FLG_LIBRARY_TOILET,_LIBRARY_TOILET_BB)
 ◆’Scuse me!  Just ten more minutes, please!@KEY()↓
 ◆Show some self control, will ya!
-;jpn:◆あと １０ぷんくらいだ。↓
+;jpn:◆あと 10ぷんくらいだ。↓
 ;jpn: ガマンしろやい!
 @KEYNP()
 @SETF(FLG_LIBRARY_TOILET)
@@ -1282,12 +1282,12 @@ MSG_LIBRARY_TOILET_B;<イベント><ピープル>扉のメッセージ
 _LIBRARY_TOILET_TEMP;
 ◆’Scuse me!  Just ten more minutes, please!@KEY()↓
 ◆Show some self control, will ya!
-;jpn:◆あと １０ぷんくらいだ。↓
+;jpn:◆あと 10ぷんくらいだ。↓
 ;jpn: ガマンしろやい!
 @KEYNP()
 』
 
-_LIBRARY_TOILET_BB;＠不明(三浦)
+_LIBRARY_TOILET_BB;@不明(三浦)
 ;◆
 ;◆
 ;@ANIM(ANIM_EFFECTS_TOILET)
@@ -1310,7 +1310,7 @@ MSG_LIBRARY_TOILET_B2;
 
 ;#17	市長室からつまみ出される	1.8	T
 
-;★オネット／市役所／市長室のガードマンがプレイヤーを発見したら
+;★オネット/市役所/市長室のガードマンがプレイヤーを発見したら
 ;接近してきて MSG_ONET_MAYOR_COP を発行。
 ;★プレイヤーキャラを入り口まで押し戻す(不明)。
 
@@ -1367,7 +1367,7 @@ MSG_ONET_MAYOR_COP;
 
 ;--------------------------------------------------------------
 ;#18	●シャーク団を倒し中庭に	1.9	T
-;#19	●VSフランク＆フランキー	-	-
+;#19	●VSフランク&フランキー	-	-
 ;-----------------------------------------------
 
 
@@ -1394,15 +1394,15 @@ MSG_EVT_21_KANBANCOP;
 ;----------------------------------------------------------------
 
 
-;#22	警官５人抜き	1.1o	T
+;#22	警官5人抜き	1.1o	T
 
 ;★ジャイアントステップクリア後のオネット警察署長のセリフ
 ;_ONET_STRONG_YES の後、警察署長はプレイヤーキャラを引き連れて、
 ;受付→道場へ移動し MSG_ONET_5COP_START 発行。出口となる扉を塞ぐ。
 ;(ここで牽引終了でプレイヤーは自由動き。)
 
-;★道場内には警官が５人いて、イベント終了まで外には出られない。
-;(●FLG_ONET_GATEOPEN がオンになるまで＝５人抜きが終わるまで
+;★道場内には警官が5人いて、イベント終了まで外には出られない。
+;(●FLG_ONET_GATEOPEN がオンになるまで=5人抜きが終わるまで
 ;扉の中から外へのワープが出来ない設定にしました。)
 
 ;★警官たちのアニメーションスクリプトを「ネスにじりじりと近づく動き」
@@ -1412,12 +1412,12 @@ MSG_EVT_21_KANBANCOP;
 ;★警官を一人倒す毎にマップに戻ります。負けた警官は戦闘後のセリフの後、
 ;出口に移動して消える。
 
-;★４人目の警官を倒した後マップに戻ると(以降オートイベント)、
+;★4人目の警官を倒した後マップに戻ると(以降オートイベント)、
 ;今倒した警官が戦闘後のセリフをしゃべって逃げて行き、
 ;残りの一人も(AからEの誰であっても)捨てセリフ MSG_ONET_5COPS_HELPME
 ;を残して出口に逃げて行き、消えます。
 
-;★ネスだけになった道場に警察署長が警官５人を引き連れて入ってくる。
+;★ネスだけになった道場に警察署長が警官5人を引き連れて入ってくる。
 ;(署長は前に進み、警官たちは入口近くをフォーメーションを組んで陣取る。)
 
 ;★署長はプレイヤーキャラに接近して MSG_ONET_5COPS_STRONG を発行→戦闘へ。
@@ -1428,7 +1428,7 @@ MSG_EVT_21_KANBANCOP;
 ;MSG_ONET_5COPS_STRONG_PHONEを表示する。
 
 MSG_EVT_22_STRONG;
-@CLRF(FLG_POLICE_STRONG_B_APPEAR);５人抜き署長の出現禁止
+@CLRF(FLG_POLICE_STRONG_B_APPEAR);5人抜き署長の出現禁止
 @REMOVE_CHAR( PRSN_ONET_POLICE_FRONT_E, ANIM_SYOCHO_A )	;署長は西の門へ
 @MOVE_GOM_CHAR(GOM_HIT_CHR,ANIM_FOLLOW_TO_SYOCHO_A,OBJFX_SHOW_NONE);ついてく人
 @GOSUB( MSG_FOLLOW_GOM_HIT_CHR_SUBR )	;透明君について行く
@@ -1473,7 +1473,7 @@ MSG_ONET_5COP_START;
 @SETF( FLG_TEMP_5 )	;五人抜き用に
 @MUSISTART()		;      曲を変える
 ◆See if you can get past five of my best men...
-;jpn: ５にんぬきだ!
+;jpn: 5にんぬきだ!
 @KEY()
 @CLOSEALL()
 @FRESH_GOM_CHAR( GOM_POLICE );署長は入り口へ
@@ -1641,9 +1641,9 @@ MSG_ONET_5COPS_STRONG;警察署長
 @WI(60)
 MSG_ONET_5COPS_STRONG_PHONE;
 @OPEN(1)
-◆＊Beep, beep＊...＊Click＊...＊Rrrr＊@KEY()↓
-◆＊Click＊  Strong here...do you read me?@KEY()↓
-◆...＊Krrrr＊...Hey!...@KEY()↓
+◆*Beep, beep*...*Click*...*Rrrr*@KEY()↓
+◆*Click*  Strong here...do you read me?@KEY()↓
+◆...*Krrrr*...Hey!...@KEY()↓
 ◆...It’s me, Captain Strong!...@KEY()↓
 ◆Okay, listen, a kid named @DSP_NAME(PC_NESS) will be there in a few minutes...@KEY()↓
 ◆He’s a kid in a red cap...I want you to open the road to Twoson for him...@KEY()↓

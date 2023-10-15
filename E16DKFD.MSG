@@ -1,6 +1,6 @@
 ;----------------------------------
 
-;@Habitat:地底大陸／ファイアースプリングス／1大広間
+;@Habitat:地底大陸/ファイアースプリングス/1大広間
 ;@Person:ジャイアントステップのボス
 ;@Figure:ガーディアン
 ;@AppearanceKey:FLG_WIN_FIRE_BOSS/off
@@ -18,7 +18,7 @@ MSG_DKFD_FIRE_BOSS;marcus
 ◆This is the eighth ”Your Sanctuary” location.@WI(20)  But it’s mine now.@KEY()↓
 ◆Take it from me,@WI(30) if you dare...
 ;jpn:◆よくきた。@KEY()↓
-;jpn:◆ここは ８ばんめの↓
+;jpn:◆ここは 8ばんめの↓
 ;jpn:「おまえのばしょ」だ。@KEY()↓
 ;jpn:◆しかし いまは↓
 ;jpn: わたしのばしょだ。@KEY()↓
@@ -34,7 +34,7 @@ MSG_DKFD_FIRE_BOSS;marcus
 
 ;-----------------------------------
 
-;@Habitat:最低国／フィールド／どこか
+;@Habitat:最低国/フィールド/どこか
 ;@Person:さらわれた土星さん
 ;@Figure:土星さん
 ;@AppearanceKey:0
@@ -66,7 +66,7 @@ MSG_DKFD_DOSEI;marcus
 @FONTSTD()
 』
 
-;@Habitat:最低国／フィールド／どこか
+;@Habitat:最低国/フィールド/どこか
 ;@Person:壊れたスペーストンネル
 ;@Figure:壊れたスカイウォーカー
 ;@AppearanceKey:0
@@ -92,7 +92,7 @@ MSG_DKFD_SKYWALKER;marcus@MiuraAdapted
 @KEYNP()
 』
 
-;@Habitat:最低国／フィールド／どこか
+;@Habitat:最低国/フィールド/どこか
 ;@Person:幻の老人
 ;@Figure:幻の老人
 ;@AppearanceKey:0
@@ -181,7 +181,7 @@ MSG_DKFD_GUMI_A;グミドリアンを持っていたら寄ってくる人
 ; いいにおいするじゃん!@WI(15)クンクン@KEY()↓
 ;◆あっ オレ? おれもグミぞくよ。@KEYNP()
 ;』
-;_DKFD_GUMI_A_AFTER;marcus＃
+;_DKFD_GUMI_A_AFTER;marcus#
 ◆Even though I listened to the talkative Mystery Rock’s story,@KEY()↓
 ◆I don’t understand what he’s talking about.
 ;jpn:◆しんぴのいわの はなしを↓
@@ -191,7 +191,7 @@ MSG_DKFD_GUMI_A;グミドリアンを持っていたら寄ってくる人
 ;jpn: わかりましぇーん。
 @KEYNP()
 』
-_DKFD_GUMI_A_END;marcus＆
+_DKFD_GUMI_A_END;marcus&
 ◆The rock suddenly stopped talking.@KEY()↓
 ◆In other words...@KEY()↓
 ◆it’s not saying anything.
@@ -206,7 +206,7 @@ MSG_DKFD_GUMI_A_RECEIVE;marcusこの人物の前でグミドリアンを使う�
 ;みんな集まれー
 ◆...You have a nice item.@KEY()↓
 ◆Since I came to the Lost Underworld, I haven’t seen or smelled @DSP_GOODS(GDS_TOOL_KEY_GUMIDORIAN).
-;＠地名確認
+;@地名確認
 ;jpn:◆‥‥いいもん もってるなぁ。↓
 ;jpn: したの せかいに おちてきてから@KEY()↓
 ;jpn:◆グミドリアンなんて↓
@@ -239,7 +239,7 @@ MSG_DKFD_GUMI_BOSS;marcus
 ;門開く(恐竜が入れない大きさなら空きっぱなし)
 @SETF(FLG_DKFD_GUMI_BOSS)
 』
-_DKFD_GUMI_BOSS_AFTER;marcus＃ボスのセリフその後
+_DKFD_GUMI_BOSS_AFTER;marcus#ボスのセリフその後
 ◆Why don’t you see the talkative mystery rock.@KEY()↓
 ◆That rock really jabbers away!!
 
@@ -247,7 +247,7 @@ _DKFD_GUMI_BOSS_AFTER;marcus＃ボスのセリフその後
 ;jpn: いわもまた よくしゃべるぜ。
 @KEYNP()
 』
-_DKFD_GUMI_BOSS_END;marcus＆
+_DKFD_GUMI_BOSS_END;marcus&
 ◆A rock that doesn’t talk is no fun at all.
 
 ;jpn:◆しゃべらないいわって‥‥@WI(30)↓
@@ -257,7 +257,7 @@ _DKFD_GUMI_BOSS_END;marcus＆
 
 
 ;その他
-MSG_DKFD_GUMI_C;marcus＃
+MSG_DKFD_GUMI_C;marcus#
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_C_END)
 ◆We are the same Tenda as those above ground.@KEY()↓
 ◆...We seem different?@KEY()↓
@@ -270,7 +270,7 @@ MSG_DKFD_GUMI_C;marcus＃
 ;jpn: むくちなんだよ。
 @KEYNP()
 』
-_DKFD_GUMI_C_END;marcus＆
+_DKFD_GUMI_C_END;marcus&
 ◆It may be my imagination, but I think I hear the sound of other Tenda talking up above.@KEY()↓
 ◆I wonder...have they overcome their shyness?
 ;jpn:◆きのせいか うえのほうから↓
@@ -282,7 +282,7 @@ _DKFD_GUMI_C_END;marcus＆
 @KEYNP()
 』
 
-MSG_DKFD_GUMI_D;marcus＃
+MSG_DKFD_GUMI_D;marcus#
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_D_END)
 ◆Didn’t you think that the Tenda up above have some particularly beautiful women?@KEY()↓
 ◆They’re still shy, though.
@@ -291,7 +291,7 @@ MSG_DKFD_GUMI_D;marcus＃
 ;jpn: ‥‥むくち だけどな。
 @KEYNP()
 』
-_DKFD_GUMI_D_END;marcus＆
+_DKFD_GUMI_D_END;marcus&
 ◆Tenda women up above ground are pretty, but the men seem kind of run down.
  ;jpn:◆うえのグミぞくにゃ↓
 ;jpn: たしかに びじんがおおいけど@WI(20)↓
@@ -353,7 +353,7 @@ _DKFD_GUMI_E_B;marcus
 』
 
 
-MSG_DKFD_GUMI_F;marcus＃
+MSG_DKFD_GUMI_F;marcus#
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_F_END)
 ◆Tenda who like to talk came to the Lost Underworld@KEY()↓
 ◆because we couldn’t stand the quiet up above.@KEY()↓
@@ -371,7 +371,7 @@ MSG_DKFD_GUMI_F;marcus＃
 ;jpn: すみやすかったよ。
 @KEYNP()
 』
-_DKFD_GUMI_F_END;marcus＆
+_DKFD_GUMI_F_END;marcus&
 ◆You guys helped the upper tribe and the lower tribe gain unity again.@KEY()↓
 ◆Soon, we’ll be one village again!  Thank you.
 ;jpn:◆きみたちの おかげで↓
@@ -395,7 +395,7 @@ MSG_DKFD_GUMI_G;
 @KEYNP()
 』
 
-MSG_DKFD_GUMI_H;＃間欠泉で遊ぶコドモ
+MSG_DKFD_GUMI_H;#間欠泉で遊ぶコドモ
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_H_END)
 ◆A chubby, obnoxious kid from some foreign country said something heartrending...@KEY()↓
 ◆So, I’m healing my wounds in the hot springs.
@@ -407,7 +407,7 @@ MSG_DKFD_GUMI_H;＃間欠泉で遊ぶコドモ
 ;jpn: いやしてるんだ。
 @KEYNP()
 』
-_DKFD_GUMI_H_END;marcus＆
+_DKFD_GUMI_H_END;marcus&
 ◆Hot springs rock!
 ;jpn:◆おんせんって いいよなぁ。
 @KEYNP()
@@ -426,10 +426,10 @@ MSG_DKFD_GUMI_I;
 ;◆なまえは エーゴ・ステッキです。@KEY()↓
 ;◆おやくにたてることが あったら↓
 ; いつでも いってください。@KEY()↓
-;_DKFD_GUMI_I_MAIN;１
+;_DKFD_GUMI_I_MAIN;1
 ;◆おかねを↓
 ; ごようだて しましょうか?@KEY()↓
-;＜＞＜＞
+;<><>
 ;◆わたしは↓
 ; きをわるくしたりなんかしません。@WI(20)↓
 ; また いつでも どうぞ。@KEYNP()
@@ -437,18 +437,18 @@ MSG_DKFD_GUMI_I;
 ;◆あつかいきんがくと どうがくの↓
 ; てすうりょうを いただきますが↓
 ; よろしいですね?@KEY()↓
-;;＜＞＜＞
+;;<><>
 ;◆まだ ほんとうに このせかいで↓
 ; こまっては いないようですね。@KEYNP()
 ;』
-;◆＜アズケル＞＜ヒキダス＞
+;◆<アズケル><ヒキダス>
 ;
 ;◆おたがいに とてもいい↓
 ; チャンスでしたね。@WI(20)↓
 ; また よろしく おねがいします。@KEYNP()
 ;』
 ;◆ハーイ! エーゴです。@KEY()↓
-;１に続く
+;1に続く
 
 ;MSG_DKFD_GUMI_J;物売り地底グミ
 ;◆ともだちの エーゴに↓
@@ -486,7 +486,7 @@ MSG_DKFD_GUMI_K;避難所Aのグミ
 @KEYNP()
 』
 
-MSG_DKFD_GUMI_L;＃避難所Bのグミ
+MSG_DKFD_GUMI_L;#避難所Bのグミ
 @CHKFGOTO(FLG_WIN_GIEGU,_DKFD_GUMI_L_END)
 ◆Here, the dinosaurs don’t come and attack me.  So, I can relax.@KEY()↓
 ◆...Except now I can’t get out.
@@ -497,7 +497,7 @@ MSG_DKFD_GUMI_L;＃避難所Bのグミ
 ;jpn: なっちゃったんだよぉ。
 @KEYNP()
 』
-_DKFD_GUMI_L_END;marcus＆
+_DKFD_GUMI_L_END;marcus&
 ◆Without dinosaurs, this place seems like it is missing something big.
 ;jpn:◆きょうりゅうがいないと↓
 ;jpn: ここのけしきって↓
